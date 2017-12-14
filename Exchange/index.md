@@ -59,7 +59,7 @@ description: Exchange
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/exchange/exchange_online.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/exchange/hybrid_environment.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
