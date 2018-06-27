@@ -7,7 +7,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -16,10 +16,31 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "version": 0
+    },
+    {
+      "docset_name": "OfficeDocs-OutlookClient",
+      "build_source_folder": "Outlook",
+      "build_output_subfolder": "OfficeDocs-OutlookClient",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
+  "sync_notification_subscribers": [
+    "dstrome@microsoft.com"
+  ],
   "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/OfficeDocs-Exchange",
+  "git_repository_branch_open_to_public_contributors": "contribute",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "contribution_branch_mappings": {},
@@ -28,6 +49,12 @@
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "exchange/common",
+      "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr",
+      "branch": "live",
       "branch_mapping": {}
     }
   ],
@@ -38,6 +65,7 @@
     ]
   },
   "need_generate_pdf_url_template": true,
+  "targets": {},
   "need_generate_pdf": false,
   "need_generate_intellisense": false
 }
