@@ -1,5 +1,5 @@
 ---
-title: "Exchange Server 2016"
+title: "Exchange Server"
 ms.author: dstrome
 author: dstrome
 manager: serdars
@@ -10,14 +10,14 @@ ms.topic: landing-page
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: d2ce4e55-208e-46b0-a775-e7e266132100
-description: "Summary: All the information and resources you need to get started with Exchange Server 2016."
+description: "Summary: All the information and resources you need to get started with Exchange Server."
 ---
 
-# Exchange Server 2016
+# Exchange Server
 
- **Summary**: All the information and resources you need to get started with Exchange Server 2016.
+ **Summary**: All the information and resources you need to get started with Exchange Server 2016 or Exchange Server 2019.
 
-Welcome to Microsoft Exchange Server 2016! Here's some fundamental and essential information to help you dig in.
+Welcome to Microsoft Exchange Server! Here's some fundamental and essential information to help you dig in.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -132,7 +132,7 @@ Welcome to Microsoft Exchange Server 2016! Here's some fundamental and essential
 
 ---  
 <h2>Exchange Server Deployment Assistant</h2>
-<p>Have you heard about the Exchange Server Deployment Assistant? This free online tool helps you quickly deploy Exchange 2016 in your organization by asking you a few questions and creating a customized deployment checklist just for you. Try out the <a href="https://go.microsoft.com/fwlink/?linkid=626978">Exchange Server Deployment Assistant</a>.</p>
+<p>Have you heard about the Exchange Server Deployment Assistant? This free online tool helps you quickly deploy Exchange Server in your organization by asking you a few questions and creating a customized deployment checklist just for you. Try out the <a href="https://go.microsoft.com/fwlink/?linkid=626978">Exchange Server Deployment Assistant</a>.</p>
 
 <h2>Planning and deployment</h2>
 <ul class="panelContent cardsW">
@@ -141,8 +141,8 @@ Welcome to Microsoft Exchange Server 2016! Here's some fundamental and essential
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="/Exchange/plan-and-deploy/system-requirements">Exchange 2016 system requirements</a>
-                        <p><a href="/Exchange/plan-and-deploy/prerequisites">Exchange 2016 prerequisites</a>
+                        <p><a href="/Exchange/plan-and-deploy/system-requirements">Exchange Server system requirements</a>
+                        <p><a href="/Exchange/plan-and-deploy/prerequisites">Exchange Server prerequisites</a>
                         <p><a href="/Exchange/plan-and-deploy/prepare-ad-and-domains">Prepare Active Directory and domains</a>
                     </div>
                 </div>
@@ -154,9 +154,9 @@ Welcome to Microsoft Exchange Server 2016! Here's some fundamental and essential
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="/Exchange/plan-and-deploy/deploy-new-installations/install-mailbox-role">Install the Exchange 2016 Mailbox role using the Setup wizard</a>
-                        <p><a href="/Exchange/plan-and-deploy/deploy-new-installations/unattended-installs">Install Exchange 2016 using unattended mode</a>
-                        <p><a href="/Exchange/plan-and-deploy/deploy-new-installations/install-edge-transport-role">Install the Exchange 2016 Edge Transport role using the Setup wizard</a>
+                        <p><a href="/Exchange/plan-and-deploy/deploy-new-installations/install-mailbox-role">Install the Exchange Server Mailbox role using the Setup wizard</a>
+                        <p><a href="/Exchange/plan-and-deploy/deploy-new-installations/unattended-installs">Install Exchange Server using unattended mode</a>
+                        <p><a href="/Exchange/plan-and-deploy/deploy-new-installations/install-edge-transport-role">Install the Exchange Server Edge Transport role using the Setup wizard</a>
                     </div>
                 </div>
             </div>
@@ -167,8 +167,8 @@ Welcome to Microsoft Exchange Server 2016! Here's some fundamental and essential
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="/Exchange/plan-and-deploy/install-cumulative-updates">Upgrade Exchange 2016 to the latest cumulative update</a>
-                        <p><a href="/Exchange/plan-and-deploy/post-installation-tasks/post-installation-tasks">Exchange 2016 post-installation tasks</a>
+                        <p><a href="/Exchange/plan-and-deploy/install-cumulative-updates">Upgrade Exchange Server to the latest cumulative update</a>
+                        <p><a href="/Exchange/plan-and-deploy/post-installation-tasks/post-installation-tasks">Exchange Server post-installation tasks</a>
                         <p>Read <a href="/Exchange/release-notes">Release notes for Exchange 2016</a> before you begin deployment.
                     </div>
                 </div>
