@@ -14,7 +14,7 @@ description: "Summary: Learn about the architecture of Exchange Server 2016 and 
 
 # Exchange architecture
 
- **Summary**: Learn about the architecture of Exchange 2016 and Exchange 2019.
+ **Summary**: Learn about the architecture of Exchange Server 2016 and Exchange Server 2019.
 
 Exchange Server uses a single building block architecture that provides email services for deployments at all sizes, from small organizations to the largest multi-national corporations. This architecture is describe in the following diagram.
 
@@ -48,7 +48,7 @@ Exchange uses Mailbox servers and Edge Transport servers. These server roles are
 
 - Mailbox servers contain the transport services that are used to route mail. For more information, see [Mail flow and the transport pipeline](../mail-flow/mail-flow.md)
 
-- Mailbox servers contain mailbox databases that process, render, and store data. For more information, see [Manage mailbox databases in Exchange 2016](mailbox-servers/manage-databases.md).
+- Mailbox servers contain mailbox databases that process, render, and store data. For more information, see [Manage mailbox databases in Exchange Server](mailbox-servers/manage-databases.md).
 
 - Mailbox servers contain the client access services that accept client connections for all protocols. These frontend services are responsible for routing or *proxying* connections to the corresponding backend services on a Mailbox server. Clients don't connect directly to the backend services. For more information, see the [Client access protocol architecture](http://technet.microsoft.com/library/0dac9f83-efd2-4a2d-940a-c03310bf9c6a.aspx#ClientAccessProtocol) section later in this topic.
 
@@ -56,7 +56,7 @@ Exchange uses Mailbox servers and Edge Transport servers. These server roles are
   > [NOTE]
   > Unified Messaging is not available in Exchange 2019.
 
-- You manage Mailbox servers by using the Exchange admin center (EAC) and the Exchange Management Shell. For more information, see [Exchange admin center in Exchange 2016](client-access/exchange-admin-center.md) and [Using PowerShell with Exchange 2016 (Exchange Management Shell)](http://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx).
+- You manage Mailbox servers by using the Exchange admin center (EAC) and the Exchange Management Shell. For more information, see [Exchange admin center in Exchange Server](client-access/exchange-admin-center.md) and [Using PowerShell with Exchange 2016 (Exchange Management Shell)](http://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx).
 
 ### Edge Transport servers
 
@@ -64,7 +64,7 @@ Exchange uses Mailbox servers and Edge Transport servers. These server roles are
 
 - Edge Transport servers are typically installed in the perimeter network, and are subscribed to the internal Exchange organization. The EdgeSync synchronization process makes recipient and other configuration information available to the Edge Transport server as mail enters and leaves the Exchange organization.
 
-- Edge Transport servers provide antispam and mail flow rules as mail enters and leaves your Exchange organization. For more information, see [Antispam protection in Exchange 2016](../antispam-and-antimalware/antispam-protection/antispam-protection.md)
+- Edge Transport servers provide antispam and mail flow rules as mail enters and leaves your Exchange organization. For more information, see [Antispam protection in Exchange Server](../antispam-and-antimalware/antispam-protection/antispam-protection.md)
 
 - You manage Edge Transport servers by using the Exchange Management Shell. For more information, see [Using PowerShell with Exchange 2016 (Exchange Management Shell)](http://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx).
 
@@ -119,6 +119,6 @@ Telephony requests are different than other client connections. Instead of proxy
 
 - **Office Online Server Preview for Outlook on the web document preview**: In previous versions of Exchange, Outlook Web App included WebReady Document Viewing for the built-in preview of Office and PDF documents. In Exchange 2016 and 2019, Outlook on the web uses Office Online Server Preview to provide rich preview and editing capabilities for documents. While this provides a consistent document experience with other products like SharePoint and Skype for Business, it does require you to deploy Office Online Server Preview in your on-premises environment if you don't already have it. For more information, see [Install Office Online Server in an Exchange 2016 organization](../plan-and-deploy/install-office-online-server.md).
 
-- **MAPI over HTTP is the default for Outlook connections**: MAPI over HTTP was introduced in Exchange 2013 Service Pack 1, and offers improvements over the traditional Outlook Anywhere (RPC over HTTP) connection method. In Exchange 2016 and 2019, MAPI over HTTP is enabled by default, and offers additional controls, such as the ability to enable or disable MAPI over HTTP per user, and whether to advertise it to external clients. For more information, see [MAPI over HTTP in Exchange 2016](../clients/mapi-over-http/mapi-over-http.md).
+- **MAPI over HTTP is the default for Outlook connections**: MAPI over HTTP was introduced in Exchange 2013 Service Pack 1, and offers improvements over the traditional Outlook Anywhere (RPC over HTTP) connection method. In Exchange 2016 and 2019, MAPI over HTTP is enabled by default, and offers additional controls, such as the ability to enable or disable MAPI over HTTP per user, and whether to advertise it to external clients. For more information, see [MAPI over HTTP in Exchange Server](../clients/mapi-over-http/mapi-over-http.md).
 
 
