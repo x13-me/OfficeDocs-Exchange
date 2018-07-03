@@ -1,5 +1,5 @@
 ---
-title: "Exchange admin center in Exchange 2016"
+title: "Exchange admin center in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d
 
-description: "Summary: Learn about the Exchange admin center, the web-based management console that's available in Exchange 2016."
+description: "Summary: Learn about the Exchange admin center, the web-based management console that's available in Exchange Server."
 ---
 
-# Exchange admin center in Exchange 2016
+# Exchange admin center in Exchange Server
 
- **Summary**: Learn about the Exchange admin center, the web-based management console that's available in Exchange 2016.
+ **Summary**: Learn about the Exchange admin center, the web-based management console that's available in Exchange 2016 and Exchange 2019.
   
-The Exchange admin center (EAC) is the web-based management console in Exchange Server 2016 that's optimized for on-premises, online, and hybrid Exchange deployments. The EAC was introduced in Exchange Server 2013, and replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP), which were the two management interfaces in Exchange Server 2010.
+The Exchange admin center (EAC) is the web-based management console in Exchange Server that's optimized for on-premises, online, and hybrid Exchange deployments. The EAC was introduced in Exchange Server 2013, and replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP), which were the two management interfaces in Exchange Server 2010.
   
 Looking for the Exchange Online version of this topic? See [Exchange Administration Center in Exchange Online](http://technet.microsoft.com/library/ace44f6b-4084-4f9c-89b3-e0317962472b.aspx).
   
@@ -67,7 +67,7 @@ These examples show you how to find the internal and external URL values for the
 
 For more information, see [Get-EcpVirtualDirectory](http://technet.microsoft.com/library/afa04216-965d-4a6c-949c-170f916e8f4c.aspx).
   
-If you're in a coexistence environment with Exchange 2010, the location of your mailbox controls the default behavior for opening the EAC or ECP:
+In Exchange 2016, if you're in a coexistence environment with Exchange 2010, the location of your mailbox controls the default behavior for opening the EAC or ECP:
   
 - If your mailbox is located on the Exchange 2010 Mailbox server, you get the Exchange 2010 ECP by default. You can access the EAC by adding the Exchange version to the URL (which is 15 for both Exchange 2013 and Exchange 2016). For example, to access the EAC through the Client Access (frontend) services on the Mailbox server named Mailbox01, use the following URL: `https://Mailbox01/ecp/?ExchClientVer=15`.
     
@@ -90,7 +90,7 @@ The feature pane is the first level of navigation for most of the tasks that you
   
 - **Recipients**: Manage mailboxes, groups, resource mailboxes (room and equipment mailboxes), contacts, shared mailboxes, and mailbox migrations and moves. For more information, see the following topics:
     
-  - [Create user mailboxes in Exchange 2016](../../recipients/create-user-mailboxes.md) and [Manage user mailboxes](../../recipients/user-mailboxes/user-mailboxes.md)
+  - [Create user mailboxes in Exchange Server](../../recipients/create-user-mailboxes.md) and [Manage user mailboxes](../../recipients/user-mailboxes/user-mailboxes.md)
     
   - [Manage distribution groups](../../recipients/distribution-groups.md) and [Manage dynamic distribution groups](../../recipients/dynamic-distribution-groups/dynamic-distribution-groups.md)
     
@@ -108,15 +108,15 @@ The feature pane is the first level of navigation for most of the tasks that you
     
 - **Compliance management**: This is where you'll manage In-Place eDiscovery, In-Place Hold, auditing (mailbox audit logging and administrator audit logging), data loss prevention (DLP), retention policies, retention tags, and journal rules. For more information, see the following topics:
     
-  - [In-Place eDiscovery in Exchange 2016](../../policy-and-compliance/ediscovery/ediscovery.md) and [In-Place Hold and Litigation Hold in Exchange 2016](../../policy-and-compliance/holds/holds.md)
+  - [In-Place eDiscovery in Exchange Server](../../policy-and-compliance/ediscovery/ediscovery.md) and [In-Place Hold and Litigation Hold in Exchange Server](../../policy-and-compliance/holds/holds.md)
     
-  - [Mailbox audit logging in Exchange 2016](../../policy-and-compliance/mailbox-audit-logging/mailbox-audit-logging.md) and [Administrator audit logging in Exchange 2016](../../policy-and-compliance/admin-audit-logging/admin-audit-logging.md)
+  - [Mailbox audit logging in Exchange Server](../../policy-and-compliance/mailbox-audit-logging/mailbox-audit-logging.md) and [Administrator audit logging in Exchange Server](../../policy-and-compliance/admin-audit-logging/admin-audit-logging.md)
     
-  - [Data loss prevention in Exchange 2016](../../policy-and-compliance/data-loss-prevention/data-loss-prevention.md)
+  - [Data loss prevention in Exchange Server](../../policy-and-compliance/data-loss-prevention/data-loss-prevention.md)
     
   - [Retention policies](../../policy-and-compliance/mrm/retention-tags-and-retention-policies.md#Policies) and [Retention tags](../../policy-and-compliance/mrm/retention-tags-and-retention-policies.md#RT).
     
-  - [Journaling in Exchange 2016](../../policy-and-compliance/journaling/journaling.md)
+  - [Journaling in Exchange Server](../../policy-and-compliance/journaling/journaling.md)
     
 - **Organization**: Manage federated sharing, Outlook Apps, and address lists. For more information, see the following topics:
     
@@ -124,23 +124,23 @@ The feature pane is the first level of navigation for most of the tasks that you
     
   - [Install or Remove Apps for Outlook for Your Organization](http://technet.microsoft.com/library/112f3ef7-9943-4a1e-8a42-e08e8e9f67f4.aspx)
     
-  - [Address lists in Exchange 2016](../../email-addresses-and-address-books/address-lists/address-lists.md)
+  - [Address lists in Exchange Server](../../email-addresses-and-address-books/address-lists/address-lists.md)
     
-- **Protection**: Manage antimalware protection for your organization. For more information, see [Antimalware protection in Exchange 2016](../../antispam-and-antimalware/antimalware-protection/antimalware-protection.md).
+- **Protection**: Manage antimalware protection for your organization. For more information, see [Antimalware protection in Exchange Server](../../antispam-and-antimalware/antimalware-protection/antimalware-protection.md).
     
 - **Mail flow**: Manage mail flow rules (also known as transport rules), delivery reports, accepted domains, remote domains, email address policies, Receive connectors, and Send connectors. For more information, see the following topics:
     
-  - [Mail flow rules in Exchange 2016](../../policy-and-compliance/mail-flow-rules/mail-flow-rules.md)
+  - [Mail flow rules in Exchange Server](../../policy-and-compliance/mail-flow-rules/mail-flow-rules.md)
     
   - [Track messages with delivery reports](../../mail-flow/transport-logs/track-messages-with-delivery-reports.md)
     
-  - [Address lists in Exchange 2016](../../email-addresses-and-address-books/address-lists/address-lists.md)
+  - [Address lists in Exchange Server](../../email-addresses-and-address-books/address-lists/address-lists.md)
     
-  - [Accepted domains in Exchange 2016](../../mail-flow/accepted-domains/accepted-domains.md)
+  - [Accepted domains in Exchange Server](../../mail-flow/accepted-domains/accepted-domains.md)
     
   - [Remote Domains](http://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx)
     
-  - [Email address policies in Exchange 2016](../../email-addresses-and-address-books/email-address-policies/email-address-policies.md)
+  - [Email address policies in Exchange Server](../../email-addresses-and-address-books/email-address-policies/email-address-policies.md)
     
   - [Receive connectors](../../mail-flow/connectors/receive-connectors.md)
     
@@ -162,13 +162,13 @@ The feature pane is the first level of navigation for most of the tasks that you
     
 - **Servers**: View and manage server-specific settings, databases, database availability groups (DAGs), virtual directories, and certificates. For more information, see the following topics:
     
-  - [POP3 and IMAP4 in Exchange 2016](../../clients/pop3-and-imap4/pop3-and-imap4.md)
+  - [POP3 and IMAP4 in Exchange Server](../../clients/pop3-and-imap4/pop3-and-imap4.md)
     
   - [Configure the Startup Mode on a Client Access Server](http://technet.microsoft.com/library/71cc9061-9e3c-4b4a-8dbe-f590ca5bcee8.aspx) and [Configure the Startup Mode on a Mailbox Server](http://technet.microsoft.com/library/4457d6a0-52bd-4269-8cb5-d34d7fe9bfc3.aspx)
     
   - [Message retry, resubmit, and expiration intervals](../../mail-flow/queues/message-intervals.md)
     
-  - [Configure message tracking](../../mail-flow/transport-logs/configure-message-tracking.md) , [Configure connectivity logging in Exchange 2016](../../mail-flow/transport-logs/configure-connectivity-logging.md), and [Protocol logging](../../mail-flow/connectors/protocol-logging.md)
+  - [Configure message tracking](../../mail-flow/transport-logs/configure-message-tracking.md) , [Configure connectivity logging in Exchange Server](../../mail-flow/transport-logs/configure-connectivity-logging.md), and [Protocol logging](../../mail-flow/connectors/protocol-logging.md)
     
   - [Manage Outlook Anywhere](http://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx#managing)
     
@@ -178,7 +178,7 @@ The feature pane is the first level of navigation for most of the tasks that you
     
   - [Virtual Directory Management](http://technet.microsoft.com/library/1af30fd5-621c-4acb-b6df-d8fa64d719ba.aspx)
     
-  - [Certificate procedures in Exchange 2016](certificate-procedures.md)
+  - [Certificate procedures in Exchange Server](certificate-procedures.md)
     
 - **Hybrid**: Set up and configure a Hybrid organization.
     
@@ -242,7 +242,7 @@ Click the help icon (![Help icon](../../media/ITPro_EAC_HelpIcon.png)) to view t
     
 - **Performance console**: The Performance console displays many counters that relate to the performance of the EAC.
     
-- **Copyright** and **Privacy**: Click these links to read the copyright and privacy information for Exchange 2016.
+- **Copyright** and **Privacy**: Click these links to read the copyright and privacy information for Exchange Server.
     
 ## Supported browsers
 <a name="SB"> </a>
