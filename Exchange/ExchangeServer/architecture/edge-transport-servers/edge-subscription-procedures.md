@@ -3,7 +3,7 @@ title: "Procedures for Edge Subscriptions"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
@@ -30,7 +30,7 @@ After you've subscribed an Edge Transport server to an Active Directory site in 
 
 You may occasionally want to remove an Edge Subscription from the Exchange organization or from both the Exchange organization and the Edge Transport server. If you plan to later resubscribe the Edge Transport server to the Exchange organization, don't remove the Edge Subscription from the Edge Transport server. When you remove the Edge Subscription from an Edge Transport server, all replicated data is deleted from AD LDS. This can take a long time if you have lots of recipient data.
   
-To completely remove an Edge Subscription, you need to run this procedure on the Edge Transport server you wish to remove and on an Exchange 2016 Mailbox server in the Active Directory site where the Edge Transport server is subscribed.
+To completely remove an Edge Subscription, you need to run this procedure on the Edge Transport server you wish to remove and on an Exchange 2016 or Exchange 2019 Mailbox server in the Active Directory site where the Edge Transport server is subscribed.
   
 After you remove the Edge Subscription, synchronization of information from AD LDS stops. All accounts stored in AD LDS are removed, and the Edge Transport server is removed from the source server list of any Send connector. You will no longer be able to use Edge Transport server features that rely on Active Directory data.
   
@@ -120,7 +120,7 @@ Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <Edge
 
 The following example starts EdgeSync with the following options:
   
-- The synchronization is initiated from the Exchange 2016 Mailbox server named Mailbox01.
+- The synchronization is initiated from the Exchange Mailbox server named Mailbox01.
     
 - All Edge Transport servers are synchronized.
     
