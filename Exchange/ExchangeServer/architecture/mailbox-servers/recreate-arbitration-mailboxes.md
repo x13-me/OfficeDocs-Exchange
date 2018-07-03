@@ -16,7 +16,7 @@ description: "Summary: About arbitration mailboxes in Exchange Server and how to
 
  **Summary**: About arbitration mailboxes in Exchange 2016 or Exchange 2019 and how to re-create them.
   
-Exchange Server comes with five system mailboxes known as *arbitration mailboxes*. Arbitration mailboxes are used for storing different types of system data and for managing messaging approval workflow. The below chart lists each type of arbitration mailbox and their responsibilities.
+Exchange Server comes with five system mailboxes known as *arbitration mailboxes*. Arbitration mailboxes are used for storing different types of system data and for managing messaging approval workflow. The chart below lists each type of arbitration mailbox and their responsibilities.
   
 |**Arbitration mailbox Name**|**Display name**|**Persisted capabilities**|**Function**|
 |:-----|:-----|:-----|:-----|
