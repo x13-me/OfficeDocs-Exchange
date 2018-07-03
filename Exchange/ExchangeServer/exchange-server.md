@@ -3,7 +3,7 @@ title: "Exchange Server"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/3/2018
 ms.audience: ITPro
 layout: LandingPage
 ms.topic: landing-page

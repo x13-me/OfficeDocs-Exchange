@@ -3,7 +3,7 @@ title: "Exchange Server architecture"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/3/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: exchange-server-itpro
