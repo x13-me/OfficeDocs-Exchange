@@ -3,7 +3,7 @@ title: "Configure Internet mail flow through Edge Transport servers without usin
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
@@ -24,7 +24,7 @@ For more information about Send connectors, see [Send connectors](../../mail-flo
 
 - Estimated time to complete this task: 30 minutes.
     
-- On Edge Transport servers, you can only use the Exchange Management Shell to create Send connectors and Receive connectors. On Mailbox servers, you can use the Exchange admin center (EAC) or the Exchange Management Shell to create Send connectors. For information about opening and using the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- On Edge Transport servers, you can only use the Exchange Management Shell to create Send connectors and Receive connectors. On Mailbox servers, you can use the Exchange admin center (EAC) or the Exchange Management Shell to create Send connectors. For information about opening and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
     
 - This procedure uses Basic authentication over TLS to provide encryption and authentication. When you use Basic authentication over TLS, the receiving server must have an X.509 (SSL) server certificate that matches the fully qualified domain name (FQDN) on the Receive connector (by default, the FQDN of the server that contains the Receive connector).
     
@@ -228,7 +228,7 @@ This Send connector requires the following configuration:
     
 6. Back on the previous page, the **Scoped send connector** setting is important if your organization has Exchange servers installed in multiple Active Directory sites: 
     
-  - If you don't select **Scoped send connector**, the connector is usable by all transport servers (Exchange 2016 Mailbox servers, Exchange 2013 Mailbox servers, and Exchange 2010 Hub Transport servers) in the entire Active Directory forest. This is the default value.
+  - If you don't select **Scoped send connector**, the connector is usable by all transport servers (Exchange 2019 Mailbox servers, Exchange 2016 Mailbox servers, Exchange 2013 Mailbox servers, and Exchange 2010 Hub Transport servers) in the entire Active Directory forest. This is the default value.
     
   -  If you select **Scoped send connector**, the connector is only usable by other transport servers in the same Active Directory site.
     
