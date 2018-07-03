@@ -1,21 +1,21 @@
 ---
-title: "Manage on-premises mailbox moves in Exchange 2016"
+title: "Manage on-premises mailbox moves in Exchange Server"
 ms.author: chrisda
 author: chrisda
-ms.date: 6/8/2018
+ms.date: 7/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 1691b658-f5af-49c6-9170-5c3cb66c7306
-description: "Summary: Learn how to move the primary mailbox and the associated archive to the same database or to separate ones in Exchange 2016."
+description: "Summary: Learn how to move the primary mailbox and the associated archive to the same database or to separate ones in Exchange Server."
 ---
 
-# Manage on-premises mailbox moves in Exchange 2016
+# Manage on-premises mailbox moves in Exchange Server
 
- **Summary**: Learn how to move the primary mailbox and the associated archive to the same database or to separate ones in Exchange 2016.
+ **Summary**: Learn how to move the primary mailbox and the associated archive to the same database or to separate ones in Exchange 2016 or Exchange 2019.
   
-In Exchange 2016, users' primary mailboxes and archive mailboxes can reside on different databases. A *move request* is the process of moving a mailbox from one mailbox database to another. A *local move request* is a mailbox move that occurs within a single Active Directory forest (as opposed to a remote move request that occurs between Active Directory forests). You use the procedures in this topic for local move requests of primary mailboxes, archive mailboxes, or both in on-premises. Using the move request functionality, you can move the primary mailbox and the associated archive to the same database or to separate ones.
+In Exchange Server, users' primary mailboxes and archive mailboxes can reside on different databases. A *move request* is the process of moving a mailbox from one mailbox database to another. A *local move request* is a mailbox move that occurs within a single Active Directory forest (as opposed to a remote move request that occurs between Active Directory forests). You use the procedures in this topic for local move requests of primary mailboxes, archive mailboxes, or both in on-premises. Using the move request functionality, you can move the primary mailbox and the associated archive to the same database or to separate ones.
   
 The following two services process your move request to move mailboxes:
   
@@ -23,15 +23,15 @@ The following two services process your move request to move mailboxes:
     
 - Exchange Mailbox Replication Proxy
     
-The procedures in this topic will help you with on-premises mailbox moves. You can use theExchange Management Shell and the Exchange admin center (EAC) to move mailboxes in your on-premises organization.
+The procedures in this topic will help you with on-premises mailbox moves. You can use the Exchange Management Shell and the Exchange admin center (EAC) to move mailboxes in your on-premises organization.
   
-For more information about the Mailbox replication service and proxy, see [Learn more about MRS Proxy](https://technet.microsoft.com/library/jj156451.aspx). For more information about mailbox moves, see [Mailbox moves in Exchange 2016](../../recipients/mailbox-moves.md).
+For more information about the Mailbox replication service and proxy, see [Learn more about MRS Proxy](https://technet.microsoft.com/library/jj156451.aspx). For more information about mailbox moves, see [Mailbox moves in Exchange Server](../../recipients/mailbox-moves.md).
   
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 20 minutes
     
-- For more information about accessing and using the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox Move and Migration Permissions " entry in [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md).
     
