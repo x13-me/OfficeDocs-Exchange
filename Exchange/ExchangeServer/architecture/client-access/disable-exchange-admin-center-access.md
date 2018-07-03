@@ -9,26 +9,26 @@ ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 49f4fa77-1722-4703-81c9-8724ae0334fb
-description: "Summary: Learn how to disable access to the Exchange admin center on an Exchange 2016 server."
+description: "Summary: Learn how to disable access to the Exchange admin center on an Exchange server."
 ---
 
 # Turn off access to the Exchange admin center
 
- **Summary**: Learn how to disable access to the Exchange admin center on an Exchange 2016 server.
+ **Summary**: Learn how to disable access to the Exchange admin center on an Exchange 2016 or Exchange 2019 server.
   
-In Exchange Server 2016, the Exchange admin center is the primary management interface for Exchange. For more information, see [Exchange admin center in Exchange 2016](exchange-admin-center.md). By default, access to the EAC isn't restricted, and access to Outlook on the web (formally known as Outlook Web App) on an on an Internet-facing Exchange server also gives access to the EAC. You still need valid credentials to sign in to the EAC, but organizations may want to restrict access to the EAC for client connections from the Internet.
+In Exchange 2016 and Exchange 2019, the Exchange admin center is the primary management interface for Exchange. For more information, see [Exchange admin center in Exchange Server](exchange-admin-center.md). By default, access to the EAC isn't restricted, and access to Outlook on the web (formally known as Outlook Web App) on an on an Internet-facing Exchange server also gives access to the EAC. You still need valid credentials to sign in to the EAC, but organizations may want to restrict access to the EAC for client connections from the Internet.
   
-In Exchange 2016, the EAC virtual directory is named ECP, and is managed by the \*- **ECPVirtualDirectory** cmdlets. When you set the _AdminEnabled_ parameter to the value `$false` on the EAC virtual directory, you disable access to the EAC for internal and external client connections, without affecting access to the **Settings** \> **Options** page in Outlook on the web.
+In Exchange 2016 and Exchange 2019, the EAC virtual directory is named ECP, and is managed by the \*- **ECPVirtualDirectory** cmdlets. When you set the _AdminEnabled_ parameter to the value `$false` on the EAC virtual directory, you disable access to the EAC for internal and external client connections, without affecting access to the **Settings** \> **Options** page in Outlook on the web.
   
 ![Options menu location in Outlook on the web](../../media/f1227a01-7f83-4af9-abf5-2c3dec6cf3d0.png)
   
 But, this configuration introduces a new problem: access to the EAC is completely disabled on the server, even for administrators on the internal network. To fix this issue, you have two choices:
   
-- Configure a second Exchange 2016 server that's only accessible from the internal network to handle internal EAC connections.
+- Configure a second Exchange server that's only accessible from the internal network to handle internal EAC connections.
     
-- On the existing Exchange 2016, create a new Internet Information Services (IIS) web site with new virtual directories for the EAC and Outlook on the web that's only accessible from the internal network.
+- On the existing Exchange server, create a new Internet Information Services (IIS) web site with new virtual directories for the EAC and Outlook on the web that's only accessible from the internal network.
     
-    **Note**: You need to configure the EAC **and** Outlook Web App in the new web site, because the EAC requires the Outlook Web App authentication module from the same web site.
+    **Note**: You need to configure the EAC **and** Outlook on the web in the new web site, because the EAC requires the Outlook on the web authentication module from the same web site.
     
 ## What do you need to know before you begin?
 
@@ -71,7 +71,7 @@ When you open https://\<servername\>/ecp or from the internal network, your own 
 
 Choose either of the following options.
   
-### Option 1: Configure a second Exchange 2016 server that's only accessible from the internal network
+### Option 1: Configure a second Exchange server that's only accessible from the internal network
 
 The default value of the **AdminEnabled** property is `True` on the default EAC virtual directory. To confirm this value on the second server, replace _\<Server\>_ with the name of the server, and run the following command: 
   
@@ -85,7 +85,7 @@ If the value is `False`, replace _\<Server\>_ with the name of the server, and r
 Set-ECPVirtualDirectory -Identity "<Server>\ecp (Default Web Site)" -AdminEnabled $true
 ```
 
-### Option 2: Create a new web site on the existing Exchange 2016 server, and configure the EAC and Outlook Web App in the new web site for the internal network
+### Option 2: Create a new web site on the existing Exchange server, and configure the EAC and Outlook on the web in the new web site for the internal network
 
 The required steps are:
   
@@ -100,7 +100,7 @@ The required steps are:
 5. Restart IIS for the changes to take effect.
     
 > [!IMPORTANT]
-> When you install an Exchange 2016 Cumulative Update (CU), the CU won't update files in the new web site and virtual directories. After you apply the CU, you need to completely remove the new web site, virtual directories, and content in the folders and then re-create the new web site, virtual directories, and content in the folders.
+> When you install an Exchange Server Cumulative Update (CU), the CU won't update files in the new web site and virtual directories. After you apply the CU, you need to completely remove the new web site, virtual directories, and content in the folders and then re-create the new web site, virtual directories, and content in the folders.
   
 #### Step 2a: Add a second IP address to the Exchange server
 
