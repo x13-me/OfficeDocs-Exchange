@@ -1,28 +1,28 @@
 ---
-title: "Manage mailbox databases in Exchange 2016"
+title: "Manage mailbox databases in Exchange Server"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: ead4a96b-1717-435b-bcfc-9901ac4e3b58
-description: "Summary: Learn how to perform configuration tasks related to managing your mailbox databases in Exchange 2016."
+description: "Summary: Learn how to perform configuration tasks related to managing your mailbox databases in Exchange Server."
 ---
 
-# Manage mailbox databases in Exchange 2016
+# Manage mailbox databases in Exchange Server
 
- **Summary**: Learn how to perform configuration tasks related to managing your mailbox databases in Exchange 2016.
+ **Summary**: Learn how to perform configuration tasks related to managing your mailbox databases in Exchange 2016 and Exchange 2019.
   
-A mailbox database is a unit of granularity where mailboxes are created and stored. A mailbox database is stored as an Exchange database (.edb) file. In Exchange 2016, each mailbox database has its own properties that you can configure.
+A mailbox database is a unit of granularity where mailboxes are created and stored. A mailbox database is stored as an Exchange database (.edb) file. In Exchange 2016 and 2019, each mailbox database has its own properties that you can configure.
   
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 10 minutes
     
-- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox databases" entry in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
     
@@ -50,7 +50,7 @@ For an example of how to create a mailbox database, see Example 1 in [New-Mailbo
 
 To verify that you have successfully created a database, do the following:
   
-- From the EAC, verify that the mailbox database you created is listed in the **Databases** page.
+- From the EAC, verify that the mailbox database you created is listed on the **Databases** page.
     
 - From the Exchange Management Shell, verify that the database was created on server Mailbox01 by running the following command.
     
@@ -71,7 +71,7 @@ For an example of how to get mailbox database properties, see Example 2 in [New-
 
 To verify that you have successfully retrieved your mailbox database information, do the following:
   
-From the Exchange Management Shell, verify that all your mailbox database information is represented correctly.
+- From the Exchange Management Shell, verify that all your mailbox database information is represented correctly.
   
 ## Set mailbox database properties
 <a name="BKMK_Set"> </a>
@@ -86,7 +86,7 @@ From the Exchange Management Shell, verify that all your mailbox database inform
     
 4. Use the **General** tab to view status about the mailbox database, including the mailbox database path, last backup, and mailbox database status: 
     
-  - **Database path**: This read-only field displays the full path to the Exchange 2016 database (.edb) file for the selected mailbox database. To view the entire path, you may have to click the path and use the Right Arrow key. You can't use this field to change the path. To change the location of the database files, use the [Move-DatabasePath](http://technet.microsoft.com/library/d6873ded-d521-428f-821f-d10ea2c44b7e.aspx) cmdlet.
+  - **Database path**: This read-only field displays the full path to the Exchange database (.edb) file for the selected mailbox database. To view the entire path, you may have to click the path and use the Right Arrow key. You can't use this field to change the path. To change the location of the database files, use the [Move-DatabasePath](http://technet.microsoft.com/library/d6873ded-d521-428f-821f-d10ea2c44b7e.aspx) cmdlet.
     
   - **Last full backup**: This read-only field displays the date and time of the last complete backup of the mailbox database.
     
@@ -226,7 +226,7 @@ For detailed syntax and parameter information, see [Remove-MailboxDatabase](http
 
 2. When you're prompted about whether you're sure that you want to perform the action, type **Y**.
     
-3. When the dialog box appears stating that the database was removed successfully, note the location of the Exchange 2016 database (.edb) file. If you want to remove this file from the hard drive, you must remove it manually.
+3. When the dialog box appears stating that the database was removed successfully, note the location of the Exchange database (.edb) file. If you want to remove this file from the hard drive, you must remove it manually.
     
 ### How do you know this worked?
 
