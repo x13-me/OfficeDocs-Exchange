@@ -3,28 +3,28 @@ title: "Autodiscover service"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: b03c0f21-cbc2-4be8-ad03-73a7dac16ffc
-description: "Summary: Learn about the Autodiscover service in Exchange 2016, which lets client applications and users configure themselves with minimal input."
+description: "Summary: Learn about the Autodiscover service in Exchange Server, which lets client applications and users configure themselves with minimal input."
 ---
 
 # Autodiscover service
 
- **Summary**: Learn about the Autodiscover service in Exchange 2016, which lets client applications and users configure themselves with minimal input.
+ **Summary**: Learn about the Autodiscover service in Exchange 2016 and Exchange 2019, which lets client applications and users configure themselves with minimal input.
   
 The Autodiscover service minimizes user configuration and deployment steps by providing clients access to Exchange features. For Exchange Web Services (EWS) clients, Autodiscover is typically used to find the EWS endpoint URL. However, Autodiscover can also provide information to configure clients that use other protocols. Autodiscover works for client applications that are inside or outside firewalls and in resource forest and multiple forest scenarios.
   
-Exchange 2016 introduced changes to services previously handled by the multiple servers. The Mailbox server now provides Client Access services, so you can't configure a standalone Client Access server like you could in previous versions of Exchange. Autodiscover service in Exchange 2016 is possible because:
+Exchange 2016 introduced changes to services previously handled by the multiple servers. The Mailbox server now provides Client Access services, so you can't configure a standalone Client Access server like you could in previous versions of Exchange. Autodiscover service in Exchange 2016 and Exchange 2019 is possible because:
   
 - Exchange creates a virtual directory named `autodiscover` under the default web site in Internet Information Services (IIS). 
     
 - Active Directory stores and provides authoritative URLs for domain-joined computers.
     
-- Client Access services on Exchange 2016 Mailbox servers provide authentication and proxy services for internal and external client connections.
+- Client Access services on Exchange 2016 and Exchange 2019 Mailbox servers provide authentication and proxy services for internal and external client connections.
     
 - Outlook configures services with only the user name and password.
     
@@ -33,7 +33,7 @@ Exchange 2016 introduced changes to services previously handled by the multiple 
   
 ## Autodiscover services and Active Directory
 
-Exchange stores in Active Directory the configuration of Exchange servers in the organization as well as information about your users' mailboxes. Before you install Exchange Server 2016, you need to prepare your Active Directory forest and its domains. If you aren't familiar with Exchange 2016 forests or domains, see [3. Prepare Active Directory domains](../../plan-and-deploy/prepare-ad-and-domains.md#Step3).
+Exchange stores in Active Directory the configuration of Exchange servers in the organization as well as information about your users' mailboxes. Before you install Exchange Server, you need to prepare your Active Directory forest and its domains. If you aren't familiar with Exchange forests or domains, see [3. Prepare Active Directory domains](../../plan-and-deploy/prepare-ad-and-domains.md#Step3).
   
 Exchange automatically creates at installation the virtual directory `autodiscover` in IIS, the frontend Client Access services web site that clients connect to. This allows Outlook to discover the Exchange mailbox settings so that users don't have to deal with manually configuring advanced settings. 
   
@@ -41,7 +41,7 @@ Exchange automatically creates at installation the virtual directory `autodiscov
   
 The SCP object is also created in Active Directory at the same time as the Autodiscover service virtual directory. The SCP stores and provides authoritative URLs of the Autodiscover service for domain-joined computers.
   
- You need to update the SCP object to point to the Exchange 2016 server. This is necessary because Exchange 2016 servers provide additional Autodiscover information to clients to improve the discovery process. You can use the **Set-ClientAccessService** cmdlet to update the SCP object. For more information, see [Set-ClientAccessService](http://technet.microsoft.com/library/59440ef8-8ea4-4168-9b75-8f4d7aa6652d.aspx).
+ You need to update the SCP object to point to the Exchange server. This is necessary because Exchange servers provide additional Autodiscover information to clients to improve the discovery process. You can use the **Set-ClientAccessService** cmdlet to update the SCP object. For more information, see [Set-ClientAccessService](http://technet.microsoft.com/library/59440ef8-8ea4-4168-9b75-8f4d7aa6652d.aspx).
   
 > [!IMPORTANT]
 > You need to be assigned permissions before you can run the **Set-ClientAccessService** cmdlet. To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](http://technet.microsoft.com/library/5bcc46d3-8a07-4e9f-b1b0-e4cb0b0afc12.aspx). 
@@ -56,7 +56,7 @@ Exchange publishes two types of SCP objects for the Autodiscover service:
     
 The SCP object contains the authoritative list of Autodiscover service URLs for the forest. To learn more about locating Autodiscover service endpoints, see [Generate a list of Autodiscover endpoints](https://go.microsoft.com/fwlink/p/?linkId=843957).
   
-Client connectivity in Exchange 2016 is like Exchange 2013 and differs from Exchange 2010. In Exchange 2016, MAPI over HTTP is enabled by default, when previously Outlook clients used Outlook Anywhere (RPC over HTTP). Exchange 2016 requires fewer name spaces for site-resilient solutions than Exchange 2010, reducing to two from the previously required seven namespaces. To read more about namespace and Exchange 2016, see the blog [Namespace Planning in Exchange 2016](https://go.microsoft.com/fwlink/p/?linkId=843937).
+Client connectivity in Exchange 2016 and Exchange 2019 is like Exchange 2013 and differs from Exchange 2010. In Exchange 2016 and 2019, MAPI over HTTP is enabled by default, when previously Outlook clients used Outlook Anywhere (RPC over HTTP). Exchange 2016 and 2019 require fewer name spaces for site-resilient solutions than Exchange 2010, reducing to two from the previously required seven namespaces. To read more about namespace and Exchange Server, see the blog [Namespace Planning in Exchange 2016](https://go.microsoft.com/fwlink/p/?linkId=843937).
   
 Depending on whether you configured the Autodiscover service on a separate site, the Autodiscover service URL will be either of the following values, where `//<SMTP-address-domain>` is the primary SMTP domain address: 
   
@@ -98,7 +98,7 @@ Exchange introduced namespace requirements for Autodiscover in Exchange 2010, ce
     
 - Secondary datacenter RPC Client Access namespace
     
-Exchange 2016 simplifies this server resiliency scenario, reducing the five namespaces to two. This is because Exchange no longer needs the RPC Client Access namespaces and Client Access services proxy requests to the Mailbox server that is hosting the active Mailbox database. A Mailbox server in one Active Directory site can proxy a session to a another Active Directory site's Mailbox server.
+Exchange 2016 and 2019 simplify this server resiliency scenario, reducing the five namespaces to two. This is because Exchange no longer needs the RPC Client Access namespaces and Client Access services proxy requests to the Mailbox server that is hosting the active Mailbox database. A Mailbox server in one Active Directory site can proxy a session to a another Active Directory site's Mailbox server.
   
 What this means is that unique namespaces are no longer required for *each* datacenter. For example, instead of mail.contoso.com and mail2.contoso.com, you only need a single namespace, mail.contoso.com, for the datacenter pair. Additionally, failback namespaces are no longer needed in Database Availability Groups (DAG) activation scenarios. To learn more about namespaces, see [Exchange Server 2016 Database Availability Groups](https://go.microsoft.com/fwlink/p/?linkId=846392).
   
@@ -236,13 +236,13 @@ When a user's Exchange information changes, Outlook uses the Autodiscover servic
 
 Autodiscover works for client applications inside and outside firewalls and in resource forest and multiple forest scenarios. For EWS clients, Autodiscover is typically used to find the EWS endpoint URL, but Autodiscover can also provide information to configure clients that use other protocols.
   
-When you install Exchange 2016, a self-signed certificate that's created and signed by the Exchange server is automatically installed on the server. However, you can also create additional self-signed certificates that you can use for other services.
+When you install Exchange Server, a self-signed certificate that's created and signed by the Exchange server is automatically installed on the server. However, you can also create additional self-signed certificates that you can use for other services.
   
-Creating a certificate request is the first step in installing a new certificate on an Exchange 2016 server to configure Transport Layer Security (TLS) encryption for one or more Exchange services. You use a certificate request (also known as a certificate signing request or CSR) to obtain a certificate from a certification authority (CA). For more information, see the following topics:
+Creating a certificate request is the first step in installing a new certificate on an Exchange server to configure Transport Layer Security (TLS) encryption for one or more Exchange services. You use a certificate request (also known as a certificate signing request or CSR) to obtain a certificate from a certification authority (CA). For more information, see the following topics:
   
-- [Digital certificates and encryption in Exchange 2016](certificates.md)
+- [Digital certificates and encryption in Exchange Server](certificates.md)
     
-- [Create an Exchange 2016 certificate request for a certification authority](create-ca-certificate-requests.md)
+- [Create an Exchange Server certificate request for a certification authority](create-ca-certificate-requests.md)
     
 > [!NOTE]
 > You can confirm your Autodiscover service by using the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). When the connectivity is successful, also select and run the Outlook Connectivity test. If that fails, you may need to configure the external URLs in Exchange. The results from the Microsoft Remote Connectivity Analyzer should explain why connectivity failed. Generally, a connectivity failure means that you don't have the correct external URLs configured for the virtual directories of the various Outlook services. 
