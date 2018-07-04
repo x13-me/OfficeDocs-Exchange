@@ -1,5 +1,5 @@
 ---
-title: "Load balancing in Exchange 2016"
+title: "Load balancing in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: scotv
@@ -10,18 +10,18 @@ ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: f572c193-6f3a-400e-9085-a9d3e5e18c59
-description: "Summary: Learn about the ways load balancing in Exchange 2016 handles mail-enabled connections, resulting in improved availability and resiliency in your Exchange enterprise network."
+description: "Summary: Learn about the ways load balancing in Exchange Server handles mail-enabled connections, resulting in improved availability and resiliency in your Exchange enterprise network."
 ---
 
-# Load balancing in Exchange 2016
+# Load balancing in Exchange Server
 
- **Summary**: Learn about the ways load balancing in Exchange 2016 handles mail-enabled connections, resulting in improved availability and resiliency in your Exchange enterprise network.
+ **Summary**: Learn about the ways load balancing in Exchange 2016 and Exchange 2019 handles mail-enabled connections, resulting in improved availability and resiliency in your Exchange enterprise network.
   
-Load balancing in Exchange 2016 builds on the Microsoft high availability and network resiliency platform. In addition, Exchange 2016 features improvements to the Exchange architecture. When this is combined with the availability of third-party load balancing solutions (both hardware and software), there are multiple options for implementing load balancing in your Exchange organization.
+Load balancing in Exchange 2016 and Exchange 2019 build on the Microsoft high availability and network resiliency platform. In addition, Exchange 2016 and 2019 feature improvements to the Exchange architecture. When this is combined with the availability of third-party load balancing solutions (both hardware and software), there are multiple options for implementing load balancing in your Exchange organization.
   
 Exchange architecture changes introduced in Exchange 2013 brought about the Mailbox server and Client Access server roles. Compare this to Exchange 2010, where Client Access, Mailbox, Hub Transport, and Unified Messages ran on separate servers.
   
-Using minimal server roles, Exchange 2016 delivers:
+Using minimal server roles, Exchange 2016 and 2019 deliver:
   
 - Simplified deployment with the Mailbox server running Client Access services and Edge Transport server roles.
     
@@ -29,23 +29,23 @@ Using minimal server roles, Exchange 2016 delivers:
     
 - High availability by deploying load balancers to distribute client traffic.
     
-The HTTP protocol standard introduced with Exchange 2013 means that session affinity is no longer required in Exchange 2016. Session affinity allows a persistent connection for messaging-enabled services so that a user doesn't have to reenter their user name and password multiple times.
+The HTTP protocol standard introduced with Exchange 2013 means that session affinity is no longer required in Exchange 2016 and Exchange 2019. Session affinity allows a persistent connection for messaging-enabled services so that a user doesn't have to reenter their user name and password multiple times.
   
-Previously, Exchange 2007 and Exchange 2010 supported RPC over HTTP for Outlook Anywhere. Exchange 2013 introduced MAPI over HTTP, although it wasn't enabled by default. It's now enabled by default in Exchange 2016.
+Previously, Exchange 2007 and Exchange 2010 supported RPC over HTTP for Outlook Anywhere. Exchange 2013 introduced MAPI over HTTP, although it wasn't enabled by default. It's now enabled by default in Exchange 2016 and Exchange 2019.
   
-With the HTTP protocol in use, all native clients connect using HTTP and HTTPs in Exchange 2016. This standard protocol removes the need for affinity, which was previously required to avoid a new prompting for user credentials whenever load balancing redirected the connection to a different server.
+With the HTTP protocol in use, all native clients connect using HTTP and HTTPs in Exchange Server. This standard protocol removes the need for affinity, which was previously required to avoid a new prompting for user credentials whenever load balancing redirected the connection to a different server.
   
-## Server roles in Exchange 2016
+## Server roles in Exchange Server
 
-The reduced number of server roles for Exchange 2016 simplifies Exchange implementation and hardware requirements. The number of server roles in Exchange 2016 shrinks from seven to two: the Mailbox server and the Edge Transport server. The Mailbox server role includes Client Access services, while the Edge Transport server provides secure mail flow in Exchange 2016, just as it did in earlier versions of Exchange.
+The reduced number of server roles for Exchange 2016 and Exchange 2019 simplifies Exchange implementation and hardware requirements. The number of server roles in Exchange 2016 and 2019 shrinks from seven to two: the Mailbox server and the Edge Transport server. The Mailbox server role includes Client Access services, while the Edge Transport server provides secure mail flow in Exchange 2016 and Exchange 2019, just as it did in earlier versions of Exchange.
   
 ![Conceptual overview of the Exchange load balancing process](../../media/30bc24ea-a9df-42ca-82c6-54cd9f009003.png)
   
 In Exchange 2013, the Client Access server role made sure that when a user attempted to access their mailbox, the server proxied the request back to the Mailbox server actively serving the user's mailbox. This meant that services such as Outlook on the web (previously known as Outlook Web App) were rendered for the user on the Mailbox itself, removing any need for affinity.
   
-The same functionality remains in Exchange 2016. If two Mailbox servers host different mailboxes, they can proxy traffic for each other when necessary. The Mailbox server that hosts the active copy of the mailbox serves the user accessing it, even if the user connects to a different Mailbox server.
+The same functionality remains in Exchange 2016 and Exchange 2019. If two Mailbox servers host different mailboxes, they can proxy traffic for each other when necessary. The Mailbox server that hosts the active copy of the mailbox serves the user accessing it, even if the user connects to a different Mailbox server.
   
-Read more about the server role changes in Exchange 2016 in the topic, [Exchange 2016 architecture](../../architecture/architecture.md).
+Read more about the server role changes in Exchange Server in the topic, [Exchange Server architecture](../../architecture/architecture.md).
   
 |**Server Role**|**Services**|
 |:-----|:-----|
@@ -56,17 +56,17 @@ Although not required, the Edge Transport server sits in the perimeter network ,
   
 Read more about the transport service in the topic, [Understanding the Transport service on Edge Transport servers](../../mail-flow/mail-flow.md#EdgeTransportService).
   
-## Protocols in Exchange 2016
+## Protocols in Exchange Server
 
 Beginning with Exchange 2016, all native Exchange clients use the HTTP protocol to connect to a designated service, with HTTP cookies provided to the user at log in which are encrypted using the Client Access services SSL certificate. A logged in user can resume the session on a different Mailbox server running Client Access services without reauthenticating. Servers using the same SSL certificate can decrypt the client authentication cookie.
   
 HTTP makes possible the use of service or application health checks in your Exchange network. Depending on your load balancer solution, you can implement health probes to check different components of your system.
   
-The effect of HTTP-only access for clients is that load balancing is simpler, too. If you wanted, you could use DNS to load balance your Exchange traffic. You would simply provide the client with the IP address of every Mailbox server, and the HTTP client would handle the chores. If an Exchange server fails, the protocol attempts to connect to another server. However, there are drawbacks to load balancing to DNS, discussed in the following section *Load balancing options in Exchange 2016*.
+The effect of HTTP-only access for clients is that load balancing is simpler, too. If you wanted, you could use DNS to load balance your Exchange traffic. You would simply provide the client with the IP address of every Mailbox server, and the HTTP client would handle the chores. If an Exchange server fails, the protocol attempts to connect to another server. However, there are drawbacks to load balancing to DNS, discussed in the following section *Load balancing options in Exchange Server*.
   
-Read more about HTTP and Exchange 2016 in the topic [MAPI over HTTP in Exchange 2016](../../clients/mapi-over-http/mapi-over-http.md).
+Read more about HTTP and Exchange Server in the topic [MAPI over HTTP in Exchange Server](../../clients/mapi-over-http/mapi-over-http.md).
   
-## Load balancing options in Exchange 2016
+## Load balancing options in Exchange Server
 
 In the example shown here, multiple servers configured in a database availability group (DAG) host the Mailbox servers running Client Access services. This provides high availability with a small Exchange server footprint. The client connects to the load balancer rather than directly to the Exchange servers. There is no requirement for load balancer pairs, however we recommend deploying in clusters to improve network resilience.
   
@@ -125,9 +125,9 @@ The ports that need to be load balanced include some, such as those for IMAP4 or
 |993  <br/> |Mailbox  <br/> |Secure IMAP4 clients  <br/> |
 |995  <br/> |Mailbox  <br/> |Secure POP3 clients  <br/> |
    
-## Load balancing deployment scenarios in Exchange 2016
+## Load balancing deployment scenarios in Exchange Server
 
-Exchange 2016 introduces significant flexibility for your namespace and load balancing architecture. With many options for deploying load balancing in your Exchange organization, from simple DNS to sophisticated third-party Layer 4 and Layer 7 solution, we recommend that you review them all in light of your organization's needs.
+Exchange 2016 introduced significant flexibility for your namespace and load balancing architecture. With many options for deploying load balancing in your Exchange organization, from simple DNS to sophisticated third-party Layer 4 and Layer 7 solution, we recommend that you review them all in light of your organization's needs.
   
 The following scenarios come with benefits and limitations, and understanding each is key to implementing the solution that best fits your Exchange organization:
   
@@ -151,7 +151,7 @@ As long as the Outlook on the web health probe response is healthy, the load bal
   
 In this Layer 7 scenario, a single namespace, mail.contoso.com, is deployed for all the HTTP protocol clients. The load balancer doesn't maintain session affinity. Since the load balancer is configured for Layer 7, there is SSL termination and the load balancer knows the destination URL.
   
-We recommend this configuration for Exchange 2016. The load balancer is configured to check the health of the destination Mailbox servers in the load balancing pool, and a health probe is configured on each virtual directory.
+We recommend this configuration for Exchange 2016 and Exchange 2019. The load balancer is configured to check the health of the destination Mailbox servers in the load balancing pool, and a health probe is configured on each virtual directory.
   
 For example, as long as the Outlook on the web health probe response is healthy, the load balancer will keep the destination Mailbox server in the Outlook on the web load balancing pool. However, if the Outlook on the web health probe fails for any reason, then the load balancer removes the target Mailbox server from the load balancing pool for Outlook on the web requests. In this example, health is per-protocol, which means that if the health probe fails, only the affected client protocol is directed to another server.
   
@@ -169,11 +169,11 @@ This last scenario with multiple namespaces and no session affinity offers per-p
   
 This scenario provides per-protocol health checking while not requiring complex load-balancing logic. The load balancer uses Layer 4 and is not configured to maintain session affinity. The load balancer configuration checks the health of the destination Mailbox servers in the load balancing pool. In this setting, the health probes are configured to target the health of each virtual directory, as each virtual directory has a unique namespace. Because it's configured for Layer 4, the load balancer doesn't know the URL is being accessed, yet the result is as if it does know. Since health is per-protocol, if the health probe fails, only the affected client protocol is directed to another server.
   
-## Load balancing and managed availability in Exchange 2016
+## Load balancing and managed availability in Exchange Server
 
 Monitoring the available servers and services is key to high availability networks. Since some load balancing solutions have no knowledge of the target URL or the content of the request, this can introduce complexities for Exchange health probes.
   
-Exchange 2016 includes a built-in monitoring solution, known as Managed Availability. Managed availability, also known as Active Monitoring or Local Active Monitoring, is the integration of built-in monitoring and recovery actions with the Exchange high availability platform.
+Exchange 2016 and Exchange 2019 include a built-in monitoring solution, known as Managed Availability. Managed availability, also known as Active Monitoring or Local Active Monitoring, is the integration of built-in monitoring and recovery actions with the Exchange high availability platform.
   
 Managed Availability includes an offline responder. When the offline responder is invoked, the affected protocol (or server) is removed from service.
   
