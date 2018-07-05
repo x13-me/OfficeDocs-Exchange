@@ -3,18 +3,18 @@ title: "Manage distribution groups"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 8e98f141-81d3-4d07-b36e-fcd2dbcc9572
-description: "Summary: Learn about distribution groups, and also, how to create and manage them."
+description: "Summary: Learn about distribution groups and how to create and manage them."
 ---
 
 # Manage distribution groups
 
- **Summary**: Learn about distribution groups, and also, how to create and manage them.
+ **Summary**: Learn about distribution groups and how to create and manage them.
 
 Use the Exchange admin center (EAC) or the Exchange Management Shell to create a new distribution group in your Exchange organization or to mail-enable an existing group in Active Directory.
 
@@ -22,7 +22,7 @@ There are two types of groups that can be used to distribute messages:
 
 - *Mail-enabled universal distribution groups* (also called *distribution groups*) can be used only to distribute messages.
 
-- *Mail-enabled universal security groups* (also called *security groups*) can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see [Manage mail-enabled security groups in Exchange 2016](mail-enabled-security-groups.md).
+- *Mail-enabled universal security groups* (also called *security groups*) can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see [Manage mail-enabled security groups in Exchange Server](mail-enabled-security-groups.md).
 
 It's important to note the terminology differences between Active Directory and Exchange. In Active Directory, a distribution group refers to any group that doesn't have a security context, whether it's mail-enabled or not. In contrast, in Exchange, all mail-enabled groups are referred to as distribution groups, whether they have a security context or not.
 
