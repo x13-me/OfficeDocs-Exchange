@@ -9,12 +9,12 @@ ms.topic: overview
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: abad5939-8826-4df1-94bf-2d734f07e929
-description: "Summary: All about recipients, such as mailboxes and mail users, in Exchange Server 2016."
+description: "Summary: All about recipients, such as mailboxes and mail users, in Exchange Server."
 ---
 
 # Recipients
 
- **Summary**: All about recipients, such as mailboxes and mail users, in Exchange Server 2016.
+ **Summary**: All about recipients, such as mailboxes and mail users, in Exchange Server 2016 and Exchange Server 2019.
 
 The people and resources that send and receive messages are the core of any messaging and collaboration system. In an Exchange organization, these people and resources are referred to as *recipients*. A recipient is any mail-enabled object in Active Directory to which Microsoft Exchange can deliver or route messages.
 
@@ -199,7 +199,7 @@ The following table contains links to topics that will help you learn about and 
 
 |**Topic**|**Description**|
 |:-----|:-----|
-|[Create user mailboxes in Exchange 2016](create-user-mailboxes.md) <br/> |Learn how to create user mailboxes using the Exchange admin center or the Exchange Management Shell.  <br/> |
+|[Create user mailboxes in Exchange Server](create-user-mailboxes.md) <br/> |Learn how to create user mailboxes using the Exchange admin center or the Exchange Management Shell.  <br/> |
 |[Manage user mailboxes](user-mailboxes/user-mailboxes.md) <br/> |Learn how to create user mailboxes, change mailbox properties, and bulk-edit selected properties for multiple mailboxes.  <br/> |
 |[Manage distribution groups](distribution-groups.md) <br/> |Learn how to create and manage distribution groups, and create a group naming policy for your organization.  <br/> |
 |[Manage dynamic distribution groups](dynamic-distribution-groups/dynamic-distribution-groups.md) <br/> |Learn how to create dynamic distribution groups and manage dynamic distribution group properties, such as using custom attributes and other properties to determine group membership.  <br/> |
