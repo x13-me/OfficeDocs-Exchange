@@ -3,7 +3,7 @@ title: "Manage dynamic distribution groups"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -29,7 +29,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 - Estimated time to complete: 2 to 5 minutes.
     
-- To open the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Dynamic distribution groups" entry in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
     
