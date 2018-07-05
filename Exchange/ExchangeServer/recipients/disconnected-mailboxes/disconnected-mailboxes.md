@@ -3,7 +3,7 @@ title: "Disconnected mailboxes"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
@@ -93,7 +93,7 @@ You can perform two operations on a disconnected archive mailbox:
     > [!NOTE]
     > If you disable an archive mailbox for a user mailbox and then enable an archive mailbox for that same user, that user mailbox will get a new archive mailbox. While you can use the **Connect-Mailbox** cmdlet to connect a primary mailbox to a user, you must use the **Enable-Mailbox** cmdlet to connect a disabled archive mailbox to an existing mailbox.
   
-    For more information, see [Manage In-Place Archives in Exchange 2016](../../policy-and-compliance/in-place-archiving/manage-archives.md).
+    For more information, see [Manage In-Place Archives in Exchange Server](../../policy-and-compliance/in-place-archiving/manage-archives.md).
     
 - **Permanently delete it from the Exchange mailbox database**: Exchange retains disconnected archive mailboxes based on the deleted mailbox retention settings configured for the mailbox database. The default retention period is 30 days. After the specified mailbox retention period, a disconnected archive mailbox is purged from the Exchange mailbox database.
     
@@ -134,7 +134,7 @@ The following table contains links to topics that will help you manage disconnec
   
 |**Topic**|**Description**|
 |:-----|:-----|
-|[Disable or delete a mailbox in Exchange 2016](disable-or-delete-mailboxes.md) <br/> |Learn how to disable or delete mailboxes.  <br/> |
+|[Disable or delete a mailbox in Exchange Server](disable-or-delete-mailboxes.md) <br/> |Learn how to disable or delete mailboxes.  <br/> |
 |[Connect a disabled mailbox](connect-disabled-mailboxes.md) <br/> |Learn how to connect a disabled mailbox to an existing user account.  <br/> |
 |[Connect or restore a deleted mailbox](restore-deleted-mailboxes.md) <br/> |Learn how to connect a deleted mailbox to a user account or restore the contents of a deleted mailbox to an existing mailbox.  <br/> |
 |[Connect or Restore a Soft-Deleted Mailbox](http://technet.microsoft.com/library/4f3f5ce4-9d12-4ed8-9f70-d8a6aa8a1b2e.aspx) <br/> |Learn how to connect a soft-deleted mailbox to a user account or restore a soft-deleted mailbox to an existing mailbox.  <br/> |
