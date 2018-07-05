@@ -3,7 +3,7 @@ title: "Manage linked mailboxes"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
@@ -91,7 +91,7 @@ The following figure illustrates the relationship between the linked user accoun
 
   - **Mailbox database**: Use this option to specify a mailbox database instead of allowing Exchange to choose a database for you. Click **Browse** to open the **Select Mailbox Database** dialog box. This dialog box lists all the mailbox databases in your Exchange organization. By default, the mailbox databases are sorted by name. You can also click the title of the corresponding column to sort the databases by server name or version. Select the mailbox database you want to use, and then click **OK**.
 
-  - **Address book policy**: Use this option to specify an address book policy (ABP) for the linked mailbox. An ABP contains a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to users, an ABP provides them with access to a customized GAL in Outlook and Outlook on the web (formerly known as Outlook Web App). To learn more, see [Address book policies in Exchange 2016](../email-addresses-and-address-books/address-book-policies/address-book-policies.md).
+  - **Address book policy**: Use this option to specify an address book policy (ABP) for the linked mailbox. An ABP contains a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to users, an ABP provides them with access to a customized GAL in Outlook and Outlook on the web (formerly known as Outlook Web App). To learn more, see [Address book policies in Exchange Server](../email-addresses-and-address-books/address-book-policies/address-book-policies.md).
 
     In the drop-down list, select the policy that you want associated with this mailbox.
 
@@ -218,7 +218,7 @@ Use the **Email address** section to view or change the email addresses associat
 
   - **SMTP**: This is the default address type. Click this radio button and then type the new SMTP address in the **\* Email address** box.
 
-  - **EUM**: An EUM (Exchange Unified Messaging) address is used by the Exchange Unified Messaging service to locate UM-enabled users within an Exchange organization. EUM addresses consist of the extension number and the UM dial plan for the UM-enabled user. Click this radio button and type the extension number in the **Address/Extension** box. Then click **Browse** and select a dial plan for the user.
+  - **EUM**: An EUM (Exchange Unified Messaging) address is used by the Exchange Unified Messaging service to locate UM-enabled users within an Exchange organization. EUM addresses consist of the extension number and the UM dial plan for the UM-enabled user. Click this radio button and type the extension number in the **Address/Extension** box. Then click **Browse** and select a dial plan for the user. (Note: Unified Messaging is not available in Exchange 2019.)
 
   - **Custom address type**: Click this button and type one of the supported non-SMTP email address types in the **\* Email address** box.
 
@@ -240,7 +240,7 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
 
 - **Address Book policy**: This box shows the address book policy applied to the mailbox. An address book policy allows you to segment users into specific groups to provide customized views of the address book. To apply or change the address book policy that's applied to the mailbox, select one from the drop-down list.
 
-- **Unified Messaging**: This feature is disabled by default. When you enable Unified Messaging (UM) the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a User for Unified Messaging](http://technet.microsoft.com/library/ad027767-5e14-4cb1-9f8a-0791d9188db5.aspx).
+- **Unified Messaging**: This feature is disabled by default. When you enable Unified Messaging (UM) the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a User for Unified Messaging](http://technet.microsoft.com/library/ad027767-5e14-4cb1-9f8a-0791d9188db5.aspx). (Note: Unified Messaging is not available in Exchange 2019.)
 
     > [!NOTE]
     > A UM dial plan and a UM mailbox policy must exist before you can enable UM.
