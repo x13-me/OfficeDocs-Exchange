@@ -1,23 +1,23 @@
 ---
-title: "Assign certificates to Exchange 2016 services"
+title: "Assign certificates to Exchange Server services"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/12/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: f4c170cd-76d3-499d-a34e-8a2bc8724c52
-description: "Summary: Learn how to assign certificates to Exchange services in Exchange 2016."
+description: "Summary: Learn how to assign certificates to Exchange services in Exchange Server."
 ---
 
-# Assign certificates to Exchange 2016 services
+# Assign certificates to Exchange Server services
 
- **Summary**: Learn how to assign certificates to Exchange services in Exchange 2016.
+ **Summary**: Learn how to assign certificates to Exchange services in Exchange 2016 or Exchange 2019.
   
-After you install a certificate on an Exchange Server 2016 server, you need to assign the certificate to one or more Exchange services before the Exchange server is able to use the certificate for encryption. You can assign certificates to services in the Exchange admin center (EAC) or in the Exchange Management Shell. Once you assign a certificate to a service, you can't remove the assignment. If you no longer want to use a certificate for a specific service, you need to assign another certificate to the service, and then remove the certificate that you don't want to use.
+After you install a certificate on an Exchange Server 2016 or 2019 server, you need to assign the certificate to one or more Exchange services before the Exchange server is able to use the certificate for encryption. You can assign certificates to services in the Exchange admin center (EAC) or in the Exchange Management Shell. Once you assign a certificate to a service, you can't remove the assignment. If you no longer want to use a certificate for a specific service, you need to assign another certificate to the service, and then remove the certificate that you don't want to use.
   
 The available Exchange services are described in the following table.
   
