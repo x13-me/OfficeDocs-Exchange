@@ -3,18 +3,18 @@ title: "Unified Messaging permissions"
 ms.author: serdars
 author: SerdarSoysal
 manager: scotv
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: d326c3bc-8f33-434a-bf02-a83cc26a5498
-description: "Summary: Learn about permissions that are required manage Unified Messaging services and features in Exchange Server 2016."
+description: "Summary: Learn about permissions that are required to manage Unified Messaging services and features in Exchange Server."
 ---
 
 # Unified Messaging permissions
 
- **Summary**: Learn about permissions that are required manage Unified Messaging services and features in Exchange Server 2016.
+ **Summary**: Learn about permissions that are required to manage Unified Messaging services and features in Exchange Server 2016 or Exchange Server 2019.
   
 The permissions required to manage Unified Messaging services and features on Mailbox servers vary depending on the procedure being performed or the cmdlet you want to run.
   
