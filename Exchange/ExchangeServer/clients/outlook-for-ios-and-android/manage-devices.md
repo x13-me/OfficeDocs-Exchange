@@ -3,7 +3,7 @@ title: "Managing devices for Outlook for iOS and Android for Exchange Server"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-itpro
