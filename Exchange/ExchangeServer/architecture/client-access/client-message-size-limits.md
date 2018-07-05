@@ -3,20 +3,20 @@ title: "Configure client-specific message size limits"
 ms.author: chrisda
 author: chrisda
 manager: scotv
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: fef9ca78-b68f-4342-ada0-881ab985ce3c
-description: "Summary: Learn how to configure message size limits for Exchange ActiveSync, Exchange Web Services, and Outlook on the web (Outlook on the web) clients in Exchange 2016."
+description: "Summary: Learn how to configure message size limits for Exchange ActiveSync, Exchange Web Services, and Outlook on the web clients in Exchange Server."
 ---
 
 # Configure client-specific message size limits
 
- **Summary**: Learn how to configure message size limits for Exchange ActiveSync, Exchange Web Services, and Outlook on the web (Outlook on the web) clients in Exchange 2016.
+ **Summary**: Learn how to configure message size limits for Exchange ActiveSync, Exchange Web Services, and Outlook on the web clients in Exchange 2016 or Exchange 2019.
   
-In Exchange Server 2016, there are several different message size limits that apply to messages as they travel through your organization. For more information, see [Message size limits in Exchange 2016](../../mail-flow/message-size-limits.md).
+In Exchange Server, there are several different message size limits that apply to messages as they travel through your organization. For more information, see [Message size limits in Exchange Server](../../mail-flow/message-size-limits.md).
   
 However, there are client-specific message size limits you can configure for Outlook on the web (fornerly known as Outlook Web App) and email clients that use Exchange ActiveSync or Exchange Web Services (EWS). If you change the Exchange organizational, connector, or user message size limits, you likely need change the limits for Outlook on the web, ActiveSync, and EWS. These limits are described in the following tables. To change the message size limit for a specific client type, you need to change **all** the values that are described in the table.
   
