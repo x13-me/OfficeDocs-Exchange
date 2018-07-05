@@ -1,21 +1,21 @@
 ---
-title: "Procedures for mailbox imports from .pst files in Exchange 2016"
+title: "Procedures for mailbox imports from .pst files in Exchange Server"
 ms.author: chrisda
 author: chrisda
-ms.date: 6/7/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: d2edc746-6647-41c4-a99a-b086caf893fa
-description: "Summary: Learn how administrators can view, create, modify, delete, suspend and resume requests to import .pst files into mailboxes in Exchange 2016."
+description: "Summary: Learn how administrators can view, create, modify, delete, suspend and resume requests to import .pst files into mailboxes in Exchange Server."
 ---
 
-# Procedures for mailbox imports from .pst files in Exchange 2016
+# Procedures for mailbox imports from .pst files in Exchange Server
 
- **Summary**: Learn how administrators can view, create, modify, delete, suspend and resume requests to import .pst files into mailboxes in Exchange 2016.
+ **Summary**: Learn how administrators can view, create, modify, delete, suspend and resume requests to import .pst files into mailboxes in Exchange 2016 or Exchange 2019.
   
-Mailbox import requests use the Microsoft Exchange Mailbox Replication service (MRS) to import the contents of .pst files into mailboxes. For more information, see [Mailbox imports and exports in Exchange 2016](mailbox-import-and-export.md).
+Mailbox import requests use the Microsoft Exchange Mailbox Replication service (MRS) to import the contents of .pst files into mailboxes. For more information, see [Mailbox imports and exports in Exchange Server](mailbox-import-and-export.md).
   
 This topic shows you how to:
   
@@ -40,7 +40,7 @@ This topic shows you how to:
     
 - You need to import the .pst files from a UNC network share (\\ _\<Server\>_\ _\<Share\>_\ or \\ _\<LocalServerName\>_\c$\). The Exchange Trusted Subsystem security group requires the Read permission to the network share. If the share doesn't have this permission, you'll get errors when you try to import .pst files to mailboxes.
     
-- You can create mailbox import requests in the Exchange admin center (EAC) or in the Exchange Management Shell. All other procedures can only be done in the Exchange Management Shell. For more information about accessing and using the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- You can create mailbox import requests in the Exchange admin center (EAC) or in the Exchange Management Shell. All other procedures can only be done in the Exchange Management Shell. For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
