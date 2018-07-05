@@ -1,5 +1,5 @@
 ---
-title: "Digital certificates and encryption in Exchange 2016"
+title: "Digital certificates and encryption in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -9,21 +9,21 @@ ms.topic: overview
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: a9e2e08c-d46a-4135-a387-eb653212b676
-description: "Summary: Learn about SSL, TLS, encryption, and digital certificates in Exchange 2016."
+description: "Summary: Learn about SSL, TLS, encryption, and digital certificates in Exchange Server."
 ---
 
-# Digital certificates and encryption in Exchange 2016
+# Digital certificates and encryption in Exchange Server
 
- **Summary**: Learn about SSL, TLS, encryption, and digital certificates in Exchange 2016.
+ **Summary**: Learn about SSL, TLS, encryption, and digital certificates in Exchange 2016 and Exchange 2019.
   
-Encryption and digital certificates are important considerations in any organization. By default, Exchange Server 2016 is configured to use Transport Layer Security (TLS) to encrypt communication between internal Exchange servers, and between Exchange services on the local server. But, Exchange administrators need to consider their encryption requirements for communication with internal and external clients (computers and mobile devices), and external messaging servers.
+Encryption and digital certificates are important considerations in any organization. By default, Exchange Server is configured to use Transport Layer Security (TLS) to encrypt communication between internal Exchange servers, and between Exchange services on the local server. But, Exchange administrators need to consider their encryption requirements for communication with internal and external clients (computers and mobile devices), and external messaging servers.
   
 > [!NOTE]
 > Secure Sockets Layer (SSL) is being replaced by Transport Layer Security (TLS) as the protocol that's used to encrypt data sent between computer systems. They're so closely related that the terms "SSL" and "TLS" (without versions) are often used interchangeably. Because of this similarity, references to "SSL" in Exchange topics, the Exchange admin center, and the Exchange Management Shell have often been used to encompass both the SSL and TLS protocols. Typically, "SSL" refers to the actual SSL protocol only when a version is also provided (for example, SSL 3.0). To find out why you should disable the SSL protocol and switch to TLS, check out [Protecting you against the SSL 3.0 vulnerability](https://blogs.office.com/2014/10/29/protecting-ssl-3-0-vulnerability/).
   
 This topic describes the different types of certificates that are available, the default configuration for certificates in Exchange, and recommendations for additional certificates that you'll need to use with Exchange.
   
-For the procedures that are required for certificates in Exchange 2016, see [Certificate procedures in Exchange 2016](certificate-procedures.md).
+For the procedures that are required for certificates in Exchange Server, see [Certificate procedures in Exchange Server](certificate-procedures.md).
   
 ## Digital certificates overview
 <a name="Overview"> </a>
@@ -59,14 +59,14 @@ To prove that a certificate holder is who they claim to be, the certificate must
 ## Certificates in Exchange
 <a name="ExchangeCerts"> </a>
 
-When you install Exchange 2016 on a server, two self-signed certificates are created and installed by Exchange. A third self-signed certificate is created and installed by Microsoft Windows for the Web Management service in Internet Information Services (IIS). These three certificates are visible in the Exchange admin center (EAC) and the Exchange Management Shell, and are described in the following table:
+When you install Exchange 2016 or Exchange 2019 on a server, two self-signed certificates are created and installed by Exchange. A third self-signed certificate is created and installed by Microsoft Windows for the Web Management service in Internet Information Services (IIS). These three certificates are visible in the Exchange admin center (EAC) and the Exchange Management Shell, and are described in the following table:
   
 ****
 
 |**Name**|**Comments**|
 |:-----|:-----|
 |Microsoft Exchange  <br/> |This Exchange self-signed certificate has the following capabilities:  <br/> • The certificate is automatically trusted by all other Exchange servers in the organization. This includes any Edge Transport server subscribed to the Exchange organization.  <br/> • The certificate is automatically enabled for all Exchange services except Unified Messaging, and is used to encrypt internal communication between Exchange servers, Exchange services on the same computer, and client connections that are proxied from the Client Access services to the backend services on Mailbox servers.  <br/> • The certificate is automatically enabled for inbound connections from external SMTP messaging servers, and outbound connections to external SMTP messaging servers. This default configuration allows Exchange to provide *opportunistic TLS* on all inbound and outbound SMTP connections. Exchange attempts to encrypt the SMTP session with an external messaging server, but if the external server doesn't support TLS encryption, the session is unencrypted.  <br/> • The certificate doesn't provide encrypted communication with internal or external clients. Clients and servers don't trust the Exchange self-signed certificate, because the certificate isn't defined in their trusted root certification stores.  <br/> |
-|Microsoft Exchange Server Auth Certificate  <br/> |This Exchange self-signed certificate is used for server-to-server authentication and integration by using OAuth. For more information, see [Plan Exchange 2016 integration with SharePoint and Skype for Business](../../plan-and-deploy/integration-with-sharepoint-and-skype/integration-with-sharepoint-and-skype.md).  <br/> |
+|Microsoft Exchange Server Auth Certificate  <br/> |This Exchange self-signed certificate is used for server-to-server authentication and integration by using OAuth. For more information, see [Plan Exchange Server integration with SharePoint and Skype for Business](../../plan-and-deploy/integration-with-sharepoint-and-skype/integration-with-sharepoint-and-skype.md).  <br/> |
 |WMSVC  <br/> |This Windows self-signed certificate is used by the Web Management service in IIS to enable remote management of the web server and its associated web sites and applications.  <br/> If you remove this certificate, the Web Management service will fail to start if no valid certificate is selected. Having the service in this state can prevent you from installing Exchange updates, or uninstalling Exchange from the server. For instructions on how to correct this issue, see [Event ID 1007 — IIS Web Management Service Authentication](https://go.microsoft.com/fwlink/p/?LinkId=746383) <br/> |
    
 The properties of these self-signed certificates are described in the [Properties of the default self-signed certificates](certificates.md#DefaultCertificateProperties) section.
@@ -79,7 +79,7 @@ These are the key issues that you need to consider when it comes to certificates
     
 - You need additional certificates to force the encryption of SMTP connections between Exchange servers and external messaging servers.
     
-The following elements of planning and deployment for Exchange 2016 are important drivers for your certificate requirements:
+The following elements of planning and deployment for Exchange Server are important drivers for your certificate requirements:
   
 - **Load balancing**: Do you plan to terminate the encrypted channel at load balancer or reverse proxy server, use Layer 4 or Layer 7 load balancers, and use session affinity or no session affinity? For more information, see [Load Balancing in Exchange 2016](https://blogs.technet.com/b/exchange/archive/2015/10/08/load-balancing-in-exchange-2016.aspx).
     
@@ -134,11 +134,11 @@ Although the configuration of your organization's digital certificates will vary
     
   - Verify that the certificate's license allows you to use the certificate on the required number of servers. Some CAs only allow you to use the certificate on one server.
     
-- **Use the Exchange certificate wizard**: A common error when you create certificates is to forget one or more common names that are required for the services that you want to use. The certificate wizard in the Exchange admin center helps you include the correct list of common names in the certificate request. The wizard lets you specify the services that will use the certificate, and includes the common names that you need to have in the certificate for those services. Run the certificate wizard when you've deployed your initial set of Exchange 2016 servers and determined which host names to use for the different services for your deployment.
+- **Use the Exchange certificate wizard**: A common error when you create certificates is to forget one or more common names that are required for the services that you want to use. The certificate wizard in the Exchange admin center helps you include the correct list of common names in the certificate request. The wizard lets you specify the services that will use the certificate, and includes the common names that you need to have in the certificate for those services. Run the certificate wizard when you've deployed your initial set of Exchange 2016 or Exchange 2019 servers and determined which host names to use for the different services for your deployment.
     
 - **Use as few host names as possible**: Minimizing the number of host names in SAN certificates reduces the complexity that's involved in certificate management. Don't feel obligated to include the host names of individual Exchange servers in SAN certificates if the intended use for the certificate doesn't require it. Typically, you only need to include the DNS names that are presented to the internal clients, external clients, or external servers that use the certificate to connect to Exchange.
     
-    For a simple Exchange 2016 organization named Contoso, this is a hypothetical example of the minimum host names that would be required:
+    For a simple Exchange Server organization named Contoso, this is a hypothetical example of the minimum host names that would be required:
     
   - **mail.contoso.com**: This host name covers most connections to Exchange, including Outlook, Outlook on the web, OAB distribution, Exchange Web Services, POP3, IMAP4, SMTP, Exchange admin center, and Exchange ActiveSync.
     
