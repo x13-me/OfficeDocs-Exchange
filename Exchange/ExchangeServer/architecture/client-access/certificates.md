@@ -3,7 +3,7 @@ title: "Digital certificates and encryption in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/12/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-itpro
@@ -144,7 +144,7 @@ Although the configuration of your organization's digital certificates will vary
     
   - **autodiscover.contoso.com**: This specific host name is required by clients that support Autodiscover, including Outlook, Exchange ActiveSync, and Exchange Web Services clients. For more information, see [Autodiscover service](autodiscover.md).
     
-  - **legacy.contoso.com**: This host name is required in a coexistence scenario with Exchange 2010. If you'll have clients with mailboxes on Exchange 2010 servers, configuring a legacy host name prevents your users from having to learn a second URL during the upgrade process.
+  - **legacy.contoso.com**: (Applies to Exchange 2016 only) This host name is required in a coexistence scenario with Exchange 2010. If you'll have clients with mailboxes on Exchange 2010 servers, configuring a legacy host name prevents your users from having to learn a second URL during the upgrade process.
     
 ## Properties of the default self-signed certificates
 <a name="DefaultCertificateProperties"> </a>
