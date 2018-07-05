@@ -1,23 +1,23 @@
 ---
-title: "Complete a pending Exchange 2016 certificate request"
+title: "Complete a pending Exchange Server certificate request"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 3d2a8747-4afa-4db8-94d7-dcce6d90d21f
-description: "Summary: Learn how to complete a pending certificate request in Exchange 2016 after you receive the certificate from the certification authority."
+description: "Summary: Learn how to complete a pending certificate request in Exchange Server after you receive the certificate from the certification authority."
 ---
 
-# Complete a pending Exchange 2016 certificate request
+# Complete a pending Exchange Server certificate request
 
- **Summary**: Learn how to complete a pending certificate request in Exchange 2016 after you receive the certificate from the certification authority.
+ **Summary**: Learn how to complete a pending certificate request in Exchange 2016 or Exchange 2019 after you receive the certificate from the certification authority.
   
-Completing a pending certificate request (also known as a certificate signing request or CSR) is the next step in configuring Transport Layer Security (TLS) encryption in Exchange Server 2016. After you receive the certificate from the certification authority (CA), you install the certificate on the Exchange server to complete the pending certificate request.
+Completing a pending certificate request (also known as a certificate signing request or CSR) is the next step in configuring Transport Layer Security (TLS) encryption in Exchange Server. After you receive the certificate from the certification authority (CA), you install the certificate on the Exchange server to complete the pending certificate request.
   
 You can complete a pending certificate request in the Exchange admin center (EAC) or in the Exchange Management Shell. The procedures are the same for completing new certificate requests or certificate renewal requests. The procedures are also the same for certificates that were issued by an internal CA (for example, Active Directory Certificate Services), or a commercial CA.
   
@@ -31,7 +31,7 @@ You might receive one or more of the following types of certificate files CA:
 
 - Estimated time to complete: 5 minutes.
     
-- The procedures in this topic require you to have created a new certificate request on the Exchange server, sent the certificate request to the CA, and received the certificate from the CA. For more information, see [Create an Exchange 2016 certificate request for a certification authority](create-ca-certificate-requests.md).
+- The procedures in this topic require you to have created a new certificate request on the Exchange server, sent the certificate request to the CA, and received the certificate from the CA. For more information, see [Create an Exchange Server certificate request for a certification authority](create-ca-certificate-requests.md).
     
 - In the EAC, you need to retrieve the certificate file from a UNC path (`\\<Server>\<Share>` or `\\<LocalServerName>\c$\`). In the Exchange Management Shell, you can use a local file path.
     
@@ -115,6 +115,6 @@ To verify that you have successfully completed the certificate request and insta
 ## Next steps
 <a name="NextSteps"> </a>
 
-After you complete the pending certificate request by installing the certificate on the server, you need to assign the certificate to one or more Exchange services before the Exchange server is able to use the certificate for encryption. For more information, see [Assign certificates to Exchange 2016 services](assign-certificates-to-services.md).
+After you complete the pending certificate request by installing the certificate on the server, you need to assign the certificate to one or more Exchange services before the Exchange server is able to use the certificate for encryption. For more information, see [Assign certificates to Exchange services](assign-certificates-to-services.md).
   
 
