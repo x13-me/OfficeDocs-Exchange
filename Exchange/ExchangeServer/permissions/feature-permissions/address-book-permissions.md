@@ -3,20 +3,20 @@ title: "Email address and address book permissions"
 ms.author: serdars
 author: SerdarSoysal
 manager: scotv
-ms.date: 6/7/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 1c1de09d-16ef-4424-9bfb-eb7edffbc8c2
-description: "Summary: Learn about permissions that are required to manage email address and address book features in Exchange Server 2016."
+description: "Summary: Learn about permissions that are required to manage email address and address book features in Exchange Server."
 ---
 
 # Email address and address book permissions
 
- **Summary**: Learn about permissions that are required to manage email address and address book features in Exchange Server 2016.
+ **Summary**: Learn about permissions that are required to manage email address and address book features in Exchange Server 2016 or Exchange Server 2019.
   
-The permissions required to configure email address and address book features vary depending on the procedure being performed or the cmdlet you want to run. For more information about email addresses and address books, see [Email addresses and address books in Exchange 2016](../../email-addresses-and-address-books/email-addresses-and-address-books.md).
+The permissions required to configure email address and address book features vary depending on the procedure being performed or the cmdlet you want to run. For more information about email addresses and address books, see [Email addresses and address books in Exchange Server](../../email-addresses-and-address-books/email-addresses-and-address-books.md).
   
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:
   
