@@ -3,20 +3,20 @@ title: "Mobile device mailbox policies"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 9317b3bc-44a1-4e54-bc51-4f0b194b6a55
-description: "Summary: Learn about managing mobile device mailbox policies in Exchange 2016."
+description: "Summary: Learn about managing mobile device mailbox policies in Exchange Server."
 ---
 
 # Mobile device mailbox policies
 
- **Summary**: Learn about managing mobile device mailbox policies in Exchange 2016.
+ **Summary**: Learn about managing mobile device mailbox policies in Exchange 2016 and Exchange 2019.
   
-In Exchange 2016, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. After you deploy Exchange ActiveSync in your Exchange 2016 organization, you can create new mobile device mailbox policies or modify existing policies. When you install Exchange 2016, a default mobile device mailbox policy is created. All users are automatically assigned this default mobile device mailbox policy.
+In Exchange Server, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. After you deploy Exchange ActiveSync in your Exchange Server organization, you can create new mobile device mailbox policies or modify existing policies. When you install Exchange Server, a default mobile device mailbox policy is created. All users are automatically assigned this default mobile device mailbox policy.
   
 > [!CAUTION]
 > The iOS fingerprint reader is not supported as a device password. If you enable the fingerprint reader to secure your iOS device, you will still need to create and enter a password if your mobile device mailbox policies require a password.
@@ -39,7 +39,7 @@ For more information about all the settings you can configure, see Mobile device
   
 ## Exchange ActiveSync mailbox policies
 
-Exchange ActiveSync is a client protocol that lets you synchronize a mobile device with your Exchange mailbox. Exchange ActiveSync is enabled by default when you install Exchange 2016.
+Exchange ActiveSync is a client protocol that lets you synchronize a mobile device with your Exchange mailbox. Exchange ActiveSync is enabled by default when you install Exchange Server.
   
 > [!IMPORTANT]
 > Most Windows mobile phones support a subset of all Exchange ActiveSync mailbox policy settings. For a complete list, see [Windows Phone synchronization](#WindowsPhone7.md).
@@ -94,7 +94,7 @@ The following table summarizes the settings you can specify using mobile device 
 |Allow Internet Sharing  <br/> |This setting specifies whether the mobile device can be used as a modem for a desktop or a portable computer. The default value is `$true`.  <br/> |
 |AllowIrDA  <br/> |This setting specifies whether infrared connections are allowed to and from the mobile device.  <br/> |
 |Allow Mobile OTA Update  <br/> |This setting specifies whether the mobile device mailbox policy settings can be sent to the mobile device over a cellular data connection. The default value is `$true`.  <br/> |
-|Allow non-provisionable devices  <br/> |This setting specifies whether mobile devices that may not support application of all policy settings are allowed to connect to Exchange 2016 by using Exchange ActiveSync. Allowing non-provisionable mobile devices has security implications. For example, some non-provisionable devices may not be able to implement an organization's password requirements.  <br/> |
+|Allow non-provisionable devices  <br/> |This setting specifies whether mobile devices that may not support application of all policy settings are allowed to connect to Exchange Server by using Exchange ActiveSync. Allowing non-provisionable mobile devices has security implications. For example, some non-provisionable devices may not be able to implement an organization's password requirements.  <br/> |
 |Allow POPIMAPEmail  <br/> |This setting specifies whether the user can configure a POP3 or an IMAP4 email account on the mobile device. The default value is `$true`. This setting doesn't control access by third-party email programs.  <br/> |
 |Allow Remote Desktop  <br/> |This setting specifies whether the mobile device can initiate a remote desktop connection. The default value is `true`.  <br/> |
 |Allow simple password  <br/> |This setting enables or disables the ability to use a simple password such as 1111 or 1234. The default value is `$true`.  <br/> |
