@@ -3,7 +3,7 @@ title: "Change the assignment policy on a mailbox"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
@@ -16,7 +16,7 @@ description: "Summary: Learn how to change the management role assignment policy
 
  **Summary**: Learn how to change the management role assignment policy assigned to a mailbox.
 
-When you change a mailbox's assignment policy, the change takes effect as soon as the user refreshes the connection, such as the next time they log into their mailbox or open the mailbox options page. For more information about assignment policies in Exchange Server 2016, see [Understanding Management Role Assignment Policies](http://technet.microsoft.com/library/25913e43-326a-4371-90b5-021a35f100fe.aspx).
+When you change a mailbox's assignment policy, the change takes effect as soon as the user refreshes the connection, such as the next time they log into their mailbox or open the mailbox options page. For more information about assignment policies in Exchange Server, see [Understanding Management Role Assignment Policies](http://technet.microsoft.com/library/25913e43-326a-4371-90b5-021a35f100fe.aspx).
 
 Looking for other management tasks related to permissions? Check out [Permissions](permissions.md).
 
