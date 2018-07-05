@@ -3,7 +3,7 @@ title: "Configure message size limits for a mailbox"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
@@ -18,7 +18,7 @@ description: "Summary: How to use the Exchange admin center (EAC) and the Exchan
   
 Message size limits control the size of messages that a user can send and receive. By default, when a mailbox is created, there isn't a size limit for sent and received messages.
   
-Keep in mind that there are other settings in an Exchange organization that determine the maximum message size a mailbox can send and receive (for example, the maximum message size configured on a Mailbox server). To learn more about the message size restrictions in Exchange, including the types of message size limits, their scope, and the order of precedence, see [Message size limits in Exchange 2016](../../mail-flow/message-size-limits.md).
+Keep in mind that there are other settings in an Exchange organization that determine the maximum message size a mailbox can send and receive (for example, the maximum message size configured on a Mailbox server). To learn more about the message size restrictions in Exchange, including the types of message size limits, their scope, and the order of precedence, see [Message size limits in Exchange Server](../../mail-flow/message-size-limits.md).
   
 For additional management tasks related to user mailboxes, see [Manage user mailboxes](user-mailboxes.md).
   
@@ -29,7 +29,7 @@ For additional management tasks related to user mailboxes, see [Manage user mail
 
 - Estimated time to complete: 2 minutes.
     
-- To open the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
     
