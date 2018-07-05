@@ -3,7 +3,7 @@ title: "Connect a disabled mailbox"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
-ms.date: 6/12/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
@@ -24,7 +24,7 @@ To learn more about disconnected mailboxes and perform other related management 
   
 - [Disconnected mailboxes](disconnected-mailboxes.md)
     
-- [Disable or delete a mailbox in Exchange 2016](disable-or-delete-mailboxes.md)
+- [Disable or delete a mailbox in Exchange Server](disable-or-delete-mailboxes.md)
     
 - [Connect or restore a deleted mailbox](restore-deleted-mailboxes.md)
     
@@ -34,7 +34,7 @@ To learn more about disconnected mailboxes and perform other related management 
 
 - Estimated time to complete: 2 minutes.
     
-- To open the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
     
 - Run the **Get-User** cmdlet in theExchange Management Shell to verify that the Active Directoryuser account that you want to connect the disabled mailbox to exists and that it isn't already associated with another mailbox. To connect a disabled mailbox to a user account, the account must exist and the value for the _RecipientType_ property has to be `User`, which indicates that the account isn't already mailbox-enabled.
     
