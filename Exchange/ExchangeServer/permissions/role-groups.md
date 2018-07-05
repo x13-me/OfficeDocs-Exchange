@@ -3,7 +3,7 @@ title: "Manage role groups"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
