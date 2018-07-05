@@ -3,26 +3,26 @@ title: "Mail flow permissions"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: f49f4fb5-af75-43cb-900f-c5f7b8cfa143
-description: "The permissions required to perform tasks related to mail flow vary depending on the procedure being performed or the cmdlet you want to run. For more information about transport features, see Mail flow and the transport pipeline."
+description: "The permissions required to perform tasks related to mail flow vary depending on the procedure being performed or the cmdlet you want to run."
 ---
 
 # Mail flow permissions
 
 The permissions required to perform tasks related to mail flow vary depending on the procedure being performed or the cmdlet you want to run. For more information about transport features, see [Mail flow and the transport pipeline](../../mail-flow/mail-flow.md).
   
-This topic lists the permissions required to manage the mail flow features in Microsoft Exchange Server 2016. For information about how Office 365 permissions relate to Exchange permissions, see [Permissions in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=335814).
+This topic lists the permissions required to manage the mail flow features in Exchange Server 2016 and Exchange Server 2019. For information about how Office 365 permissions relate to Exchange permissions, see [Permissions in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=335814).
   
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:
   
 1. In the table below, find the feature that is most related to the procedure you want to perform or the cmdlet you want to run.
     
-2. Next, look at the permissions required for the feature. You must be assigned one of those role groups, an equivalent custom role group, or an equivalent management role. You can also click on a role group to see its management roles. If a feature lists more than one role group, you only need to be assigned one of the role groups to use the feature. For more information about role groups and management roles, see **Understanding Role Based Access Control**.
+2. Next, look at the permissions required for the feature. You must be assigned one of those role groups, an equivalent custom role group, or an equivalent management role. You can also click a role group to see its management roles. If a feature lists more than one role group, you need to be assigned to only one of the role groups to use the feature. For more information about role groups and management roles, see **Understanding Role Based Access Control**.
     
 3. Now, run the **Get-ManagementRoleAssignment** cmdlet to look at the role groups or management roles assigned to you to see if you have the permissions that are necessary to manage the feature.
     
