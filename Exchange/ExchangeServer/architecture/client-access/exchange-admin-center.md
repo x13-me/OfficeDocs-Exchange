@@ -154,7 +154,7 @@ The feature pane is the first level of navigation for most of the tasks that you
     
 - **Public folders**: Manage public folders and public folder mailboxes. For more information, see [Public folders](../../collaboration/public-folders/public-folders.md).
     
-- **Unified Messaging**: Manage UM dial plans and UM IP gateways. For more information, see the following topics:
+- **Unified Messaging**: Manage UM dial plans and UM IP gateways. (UM is not available in Exchange 2019.) For more information, see the following topics:
     
   - [UM Dial Plans](http://technet.microsoft.com/library/ed7afc03-94af-4b23-8745-6a61f203c149.aspx)
     
