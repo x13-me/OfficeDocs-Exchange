@@ -1,21 +1,21 @@
 ---
-title: "Procedures for mailbox exports to .pst files in Exchange 2016"
+title: "Procedures for mailbox exports to .pst files in Exchange Server"
 ms.author: chrisda
 author: chrisda
-ms.date: 6/7/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 8c578226-ce38-4f33-846a-9f47c0177def
-description: "Summary: Learn how administrators can view, create, modify, delete, suspend and resume requests to export mailboxes to .pst files in Exchange 2016."
+description: "Summary: Learn how administrators can view, create, modify, delete, suspend and resume requests to export mailboxes to .pst files in Exchange Server."
 ---
 
-# Procedures for mailbox exports to .pst files in Exchange 2016
+# Procedures for mailbox exports to .pst files in Exchange Server
 
- **Summary**: Learn how administrators can view, create, modify, delete, suspend and resume requests to export mailboxes to .pst files in Exchange 2016.
+ **Summary**: Learn how administrators can view, create, modify, delete, suspend and resume requests to export mailboxes to .pst files in Exchange 2016 or Exchange 2019.
   
-Mailbox export requests use the Microsoft Exchange Mailbox Replication service (MRS) to export the contents of mailboxes to .pst files. For more information, see [Mailbox imports and exports in Exchange 2016](mailbox-import-and-export.md).
+Mailbox export requests use the Microsoft Exchange Mailbox Replication service (MRS) to export the contents of mailboxes to .pst files. For more information, see [Mailbox imports and exports in Exchange Server](mailbox-import-and-export.md).
   
 This topic shows you how to:
   
@@ -40,7 +40,7 @@ This topic shows you how to:
     
 - You need to export mailboxes to .pst files on a UNC network share (\\ _\<Server\>_\ _\<Share\>_\ or \\ _\<LocalServerName\>_\c$\). The Exchange Trusted Subsystem security group requires the Read/Write permission to the network share. If the share doesn't have this permission, you'll get errors when you try to export mailboxes to .pst files.
     
-- You can create mailbox export requests in the Exchange admin center (EAC) or in the Exchange Management Shell. All other procedures can only be done in the Exchange Management Shell. For more information about accessing and using the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- You can create mailbox export requests in the Exchange admin center (EAC) or in the Exchange Management Shell. All other procedures can only be done in the Exchange Management Shell. For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
