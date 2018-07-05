@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: a5e6ac44-5901-4eab-9017-c6fae80a0f83
-description: "Summary: Learn how to use the Exchange admin center (EAC) or the Exchange Management Shell to connect a deleted mailbox to an Active Directory user account in Exchange 2016."
+description: "Summary: Learn how to use the Exchange admin center (EAC) or the Exchange Management Shell to connect a deleted mailbox to an Active Directory user account in Exchange Server."
 ---
 
 # Connect or restore a deleted mailbox
 
- **Summary**: Learn how to use the Exchange admin center (EAC) or the Exchange Management Shell to connect a deleted mailbox to an Active Directory user account in Exchange 2016.
+ **Summary**: Learn how to use the Exchange admin center (EAC) or the Exchange Management Shell to connect a deleted mailbox to an Active Directory user account in Exchange 2016 or Exchange 2019.
   
 When you delete a mailbox, Exchange retains the mailbox in the mailbox database and switches the mailbox to a disabled state. The associated Active Directory user account is also deleted. The mailbox is retained until the deleted mailbox retention period expires, which is 30 days by default, and then it's permanently deleted (or *purged*) from the mailbox database.
   
@@ -24,7 +24,7 @@ To learn more about disconnected mailboxes and perform other related management 
   
 - [Disconnected mailboxes](disconnected-mailboxes.md)
     
-- [Disable or delete a mailbox in Exchange 2016](disable-or-delete-mailboxes.md)
+- [Disable or delete a mailbox in Exchange Server](disable-or-delete-mailboxes.md)
     
 - [Connect a disabled mailbox](connect-disabled-mailboxes.md)
     
@@ -34,7 +34,7 @@ To learn more about disconnected mailboxes and perform other related management 
 
 - Estimated time to complete: 2 minutes.
     
-- To open the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
     
 - Create a new user account in Active Directory to connect the deleted mailbox to. Or use the **Get-User** cmdlet in the Exchange Management Shell to verify that the Active Directory user account that you want to connect the deleted mailbox to exists and that it isn't already associated with another mailbox. To connect a deleted mailbox to a user account, the account must exist and the value for the _RecipientType_ property has to be `User`, which indicates that the account isn't already mailbox-enabled.
     
