@@ -100,7 +100,9 @@ Exchange supports the following mailbox types:
 
 #### System mailboxes
 
-System mailboxes are created by Exchange in the root domain of the Active Directory forest during installation. Users or administrators can't sign in to these mailboxes. System mailboxes are created for Exchange features such as Unified Messaging (UM), migration, message approval, and In-Place eDiscovery. This table lists information about system mailboxes as they're displayed in Active Directory.
+System mailboxes are created by Exchange in the root domain of the Active Directory forest during installation. Users or administrators can't sign in to these mailboxes. System mailboxes are created for Exchange features such as Unified Messaging (UM), migration, message approval, and In-Place eDiscovery. This table lists information about system mailboxes as they're displayed in Active Directory. 
+> [NOTE]
+> UM is not available in Exchange 2019.
 
 |**Mailbox**|**Name**|
 |:-----|:-----|
