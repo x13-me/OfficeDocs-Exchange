@@ -3,7 +3,7 @@ title: "Create and manage room mailboxes"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
@@ -26,13 +26,13 @@ If you want to grant someone access to a room mailbox so they can directly manag
 > [!IMPORTANT]
 > Room mailboxes should never be set as the organizer of a meeting, nor should room mailboxes be accessed directly by users in order to make changes to a meeting. Rooms should only be added to meetings in the Attendee or Location fields. Otherwise you will override the Resource Booking Assistant (RBA), which manages and processes all calendar items sent to the room mailbox, and unexpected errors may occur. If your organization has one or more users who need to manage a room and its mailbox, then assign users to the room as resource delegates for the room mailbox, as described later in this article. When a delegate is assigned, all items sent to the room's mailbox will be directed to the booking delegate, who can then accept or decline from their own Inbox. If your organization wants to use a room mailbox like a team calendar, consider using Exchange's shared calendar features.
 
-If you want to learn about the types of recipients that are available in Exchange 2016, check out [Recipients](recipients.md). For info about another type of resource mailbox, check out [Manage equipment mailboxes](equipment-mailboxes.md).
+If you want to learn about the types of recipients that are available in Exchange Server, check out [Recipients](recipients.md). For info about another type of resource mailbox, check out [Manage equipment mailboxes](equipment-mailboxes.md).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 5 minutes.
 
-- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 2016](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Recipient Provisioning Permissions" section in the [Recipients Permissions](../permissions/feature-permissions/recipient-permissions.md) topic.
 
@@ -149,7 +149,7 @@ Click **More options** to view or change these additional properties:
 
 - **Company**: Use this box to specify a company that the room is associated with, if applicable. Like the Department property, you can use this property to create recipient conditions for dynamic distribution groups and address lists.
 
-- **Address book policy**: Use this option to specify an address book policy (ABP) for the room mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. To learn more, see [Address book policies in Exchange 2016](../email-addresses-and-address-books/address-book-policies/address-book-policies.md).
+- **Address book policy**: Use this option to specify an address book policy (ABP) for the room mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. To learn more, see [Address book policies in Exchange Server](../email-addresses-and-address-books/address-book-policies/address-book-policies.md).
 
     In the drop-down list, select the policy that you want associated with this mailbox.
 
@@ -172,7 +172,7 @@ Use the **Email Address** section to view or change the email addresses associat
 
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
-  - **EUM**: An EUM (Exchange Unified Messaging) address is used by the Microsoft Exchange Unified Messaging service to locate UM-enabled recipients within an Exchange organization. EUM addresses consist of the extension number and the UM dial plan for the UM-enabled user. Click this button and type the extension number in the **Address/Extension** box. Then click **Browse** and select a dial plan for the mailbox.
+  - **EUM**: An EUM (Exchange Unified Messaging) address is used by the Microsoft Exchange Unified Messaging service to locate UM-enabled recipients within an Exchange organization. EUM addresses consist of the extension number and the UM dial plan for the UM-enabled user. Click this button and type the extension number in the **Address/Extension** box. Then click **Browse** and select a dial plan for the mailbox. (Note: UM is not available on Exchange 2019.)
 
   - **Custom address type**: Click this button and type one of the supported non-SMTP email address types in the **\* Email address** box.
 
