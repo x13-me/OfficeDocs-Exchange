@@ -3,24 +3,24 @@ title: "Default settings for Exchange virtual directories"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: d2d89ce6-4721-4737-a325-fba5ad9422e0
-description: "Summary: Learn about default settings for Client Access services on Mailbox servers in Exchange 2016."
+description: "Summary: Learn about default settings for Client Access services on Mailbox servers in Exchange Server."
 ---
 
 # Default settings for Exchange virtual directories
 
- **Summary**: Learn about default settings for Client Access services on Mailbox servers in Exchange 2016.
+ **Summary**: Learn about default settings for Client Access services on Mailbox servers in Exchange 2016 and Exchange 2019.
 
-Exchange 2016 automatically configures multiple Internet Information Services (IIS) virtual directories during installation. The tables that follow show the Exchange 2016 settings for the Client Access services on Mailbox servers and the default IIS authentication and Secure Sockets Layer (SSL) settings.
+Exchange Server automatically configures multiple Internet Information Services (IIS) virtual directories during installation. The tables that follow show the Exchange Server settings for the Client Access services on Mailbox servers and the default IIS authentication and Secure Sockets Layer (SSL) settings.
 
 ## Client Access services on Mailbox servers
 
-The following table lists the default settings on a stand-alone Exchange 2016 Mailbox server running Client Access services.
+The following table lists the default settings on a stand-alone Exchange Mailbox server running Client Access services.
 
 **Default Mailbox server running Client Access services IIS authentication and SSL settings**
 
@@ -40,7 +40,7 @@ The following table lists the default settings on a stand-alone Exchange 2016 Ma
  
 ## Mailbox server
 
-The following table lists the default settings on a stand-alone Exchange 2016 Mailbox server.
+The following table lists the default settings on a stand-alone Exchange Mailbox server.
 
 **Default Mailbox server IIS authentication and SSL settings**
 
