@@ -1,24 +1,24 @@
 ---
-title: "Mailbox moves in Exchange 2016"
+title: "Mailbox moves in Exchange Server"
 ms.author: dmaguire
 author: msdmaguire
 manager: scotv
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 9c0a0bc9-2a39-4cf0-aa6e-6e5ef3fd38b5
-description: "Summary: Learn about moving and migrating mailboxes in Exchange 2016, and the enhanced capabilities in the batch move architecture."
+description: "Summary: Learn about moving and migrating mailboxes in Exchange Server, and the enhanced capabilities in the batch move architecture."
 ---
 
-# Mailbox moves in Exchange 2016
+# Mailbox moves in Exchange Server
 
- **Summary**: Learn about moving and migrating mailboxes in Exchange 2016, and the enhanced capabilities in the batch move architecture.
+ **Summary**: Learn about moving and migrating mailboxes in Exchange 2016 and Exchange 2019, and the enhanced capabilities in the batch move architecture.
   
 You use mailbox moves to move mailboxes to, from, and within your Exchange organization. These are the basic types of mailbox moves that are available:
   
-- **Local mailbox moves**: You move mailboxes from one mailbox database to another on Exchange servers within a single Active Directory forest. For instructions, see [Manage on-premises mailbox moves in Exchange 2016](../architecture/mailbox-servers/manage-mailbox-moves.md).
+- **Local mailbox moves**: You move mailboxes from one mailbox database to another on Exchange servers within a single Active Directory forest. For instructions, see [Manage on-premises mailbox moves in Exchange Server](../architecture/mailbox-servers/manage-mailbox-moves.md).
     
 - **Cross-forest mailbox moves**: You move mailboxes to Exchange servers in a different Active Directory forest. You can initiate the move from the target forest where you want to move the mailboxes (known as a *pull* move type), or from the source forest that currently hosts the mailboxes (known as a *push* move type). For more information, see [Prepare mailboxes for cross-forest move requests](../architecture/mailbox-servers/prep-mailboxes-for-cross-forest-moves.md).
     
@@ -26,7 +26,7 @@ You use mailbox moves to move mailboxes to, from, and within your Exchange organ
     
     **Note**: For more information about migrating on-premises Exchange organizations to Office 365, see [Ways to migrate multiple email accounts to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=524030).
     
-Mailbox moves in Exchange 2016 use the batch move architecture that was introduced in Exchange 2013. The batch move architecture gives you the ability to move mailboxes in large batches. The enhanced management capabilities in the batch move architecture includes:
+Mailbox moves in Exchange 2016 and Exchange 2019 use the batch move architecture that was introduced in Exchange 2013. The batch move architecture gives you the ability to move mailboxes in large batches. The enhanced management capabilities in the batch move architecture includes:
   
 - Email notification during move with reporting.
     
@@ -44,7 +44,7 @@ You can move mailboxes in the Exchange admin center (EAC), or by using the [New-
 
 These are some scenarios for local mailbox moves:
   
-- **Upgrade**: When you upgrade from an earlier version of Exchange, you move mailboxes from the existing Exchange servers to an Exchange 2016 Mailbox server.
+- **Upgrade**: When you upgrade from an earlier version of Exchange, you move mailboxes from the existing Exchange servers to an Exchange Mailbox server.
     
 - **Realignment**: For example, you might want to move a mailbox to a database that has a larger mailbox size limit.
     
