@@ -3,18 +3,18 @@ title: "Perform a remote wipe on a mobile phone"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 4/19/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 67ba838e-031d-4a98-b277-170683b6f520
-description: "Summary: Learn how to clear all data on a user's mobile phone in theExchange admin center inExchange 2016."
+description: "Summary: Learn how to clear all data on a user's mobile phone in the Exchange admin center."
 ---
 
 # Perform a remote wipe on a mobile phone
 
- **Summary**: Learn how to clear all data on a user's mobile phone in theExchange admin center inExchange 2016.
+ **Summary**: Learn how to clear all data on a user's mobile phone in the Exchange admin center in Exchange 2016 or Exchange 2019.
   
 Your users carry sensitive corporate information in their pockets every day. If one of them loses their mobile phone, your data can end up in the hands of another person. If one of your users loses their mobile phone, you can use the Exchange admin center (EAC) or the Exchange Management Shell to wipe their phone clean of all corporate and user information.
   
@@ -58,7 +58,7 @@ Clear-MobileDevice -Identity WM_TonySmith -NotificationEmailAddresses "admin@con
 
 ## Use Outlook on the web to wipe a user's phone
 
-Your users can wipe their own phone using Outlook on the web.
+Your users can use Outlook on the web to wipe their own phones.
   
 1. In Outlook on the web, select the **Settings** icon.
     
