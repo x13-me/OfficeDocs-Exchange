@@ -1,40 +1,40 @@
 ---
-title: "POP3 and IMAP4 in Exchange 2016"
+title: "POP3 and IMAP4 in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: a7dc91ee-2919-4db3-ae9c-cd665d2e09ea
-description: "Summary: Learn about support for POP3 and IMAP4 in Exchange 2016."
+description: "Summary: Learn about support for POP3 and IMAP4 in Exchange Server."
 ---
 
-# POP3 and IMAP4 in Exchange 2016
+# POP3 and IMAP4 in Exchange Server
 
- **Summary**: Learn about support for POP3 and IMAP4 in Exchange 2016.
+ **Summary**: Learn about support for POP3 and IMAP4 in Exchange 2016 and Exchange 2019.
   
-Although users typically access their Exchange mailboxes by using Outlook (MAPI), Outlook on the web (formerly known as Outlook Web App), and Exchange ActiveSync, POP3 and IMAP4 are available in Exchange Server 2016. To support clients that still rely on these protocols, you need to start the services, and configure the settings for POP3 and IMAP4. For detailed instructions, see the following topics:
+Although users typically access their Exchange mailboxes by using Outlook (MAPI), Outlook on the web (formerly known as Outlook Web App), and Exchange ActiveSync, POP3 and IMAP4 are available in Exchange Server 2016 and Exchange 2019. To support clients that still rely on these protocols, you need to start the services, and configure the settings for POP3 and IMAP4. For detailed instructions, see the following topics:
   
-- [Enable and configure POP3 on an Exchange 2016 server](configure-pop3.md)
+- [Enable and configure POP3 on an Exchange server](configure-pop3.md)
     
-- [Enable and configure IMAP4 on an Exchange 2016 server](configure-imap4.md)
+- [Enable and configure IMAP4 on an Exchange server](configure-imap4.md)
     
-- [Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange 2016](configure-authenticated-smtp.md)
+- [Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange Server](configure-authenticated-smtp.md)
     
-After you enable and configure POP3 or IMAP4 on the Exchange server, you can enable or disable POP3 or IMAP4 access to specific mailboxes. For more information, see [Enable or disable POP3 or IMAP4 access to mailboxes in Exchange 2016](configure-mailbox-access.md).
+After you enable and configure POP3 or IMAP4 on the Exchange server, you can enable or disable POP3 or IMAP4 access to specific mailboxes. For more information, see [Enable or disable POP3 or IMAP4 access to mailboxes in Exchange Server](configure-mailbox-access.md).
   
  **Note**: Clients connect to the POP3 and IMAP4 services in the Client Access (frontend) services on the Mailbox server. They never connect directly to the POP3 and IMAP4 backend services. For more information, see [Client access protocol architecture](../../architecture/architecture.md#ClientAccessProtocol).
   
-## POP3 and IMAP4 improvements in Exchange 2016
+## POP3 and IMAP4 improvements in Exchange Server
 
-POP3 and IMAP4 functionality in Exchange 2016 is basically unchanged from Exchange 2013. These are the improvements in POP3 and IMAP4 as compared to Exchange 2010:
+POP3 and IMAP4 functionality in Exchange 2016 and Exchange 2019 is basically unchanged from Exchange 2013. These are the improvements in POP3 and IMAP4 as compared to Exchange 2010:
   
-- By default, the Client Access (frontend) services in Exchange 2016 automatically proxy POP3 and IMAP4 client connections from one Active Directory site to the correct Mailbox server in a different Active Directory site. In previous versions of Exchange, you had to perform a manual configuration step to allow POP3 and IMAP4 clients to connect to their mailboxes from one site to another.
+- By default, the Client Access (frontend) services in Exchange 2016 and 2019 automatically proxy POP3 and IMAP4 client connections from one Active Directory site to the correct Mailbox server in a different Active Directory site. In previous versions of Exchange, you had to perform a manual configuration step to allow POP3 and IMAP4 clients to connect to their mailboxes from one site to another.
     
-- You can't use the Anonymous or Guest accounts to access an Exchange 2016 mailbox by using POP3 or IMAP4. Access is blocked to prevent security vulnerabilities when you use non-standard accounts for POP3 and IMAP4 access.
+- You can't use the Anonymous or Guest accounts to access an Exchange 2016 or Exchange 2019 mailbox by using POP3 or IMAP4. Access is blocked to prevent security vulnerabilities when you use non-standard accounts for POP3 and IMAP4 access.
     
 - You can't connect to the Administrator mailbox by using POP3 or IMAP4 (you can use Outlook or Outlook Web App). This limitation was intentionally included in Exchange 2016 to enhance security for the Administrator mailbox.
     
@@ -90,7 +90,7 @@ To configure a POP3 or IMAP4 client to connect to a mailbox, users need specific
     
 - **TCP port and encryption method**: 995 for always SSL/TLS encrypted connections, and 110 for unencrypted connections, or for opportunistic TLS (**STARTTLS**) that results in an encrypted connection after the initial plain text protocol handshake.
     
-To allow **external** POP3 clients to connect to mailboxes, you need to configure these settings for external connections. For more information, see [Enable and configure POP3 on an Exchange 2016 server](configure-pop3.md).
+To allow **external** POP3 clients to connect to mailboxes, you need to configure these settings for external connections. For more information, see [Enable and configure POP3 on an Exchange server](configure-pop3.md).
   
 By default, Exchange uses the following settings for **internal** IMAP4 connections: 
   
@@ -98,6 +98,6 @@ By default, Exchange uses the following settings for **internal** IMAP4 connecti
     
 - **TCP port and encryption method**: 993 for always SSL/TLS encrypted connections, and 143 for unencrypted connections, or for opportunistic TLS (**STARTTLS**) that results in an encrypted connection after the initial plain text protocol handshake.
     
-To allow **external** IMAP4 clients to connect to mailboxes, you need to configure these settings for external connections. For more information, see [Enable and configure IMAP4 on an Exchange 2016 server](configure-imap4.md).
+To allow **external** IMAP4 clients to connect to mailboxes, you need to configure these settings for external connections. For more information, see [Enable and configure IMAP4 on an Exchange server](configure-imap4.md).
   
 
