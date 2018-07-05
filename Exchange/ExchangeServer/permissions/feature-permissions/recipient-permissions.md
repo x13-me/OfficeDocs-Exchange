@@ -3,18 +3,18 @@ title: "Recipients Permissions"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/12/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 5b690bcb-c6df-4511-90e1-08ca91f43b37
-description: "Summary: Learn about permissions that are required to manage recipients in Exchange Server 2016."
+description: "Summary: Learn about permissions that are required to manage recipients in Exchange Server."
 ---
 
 # Recipients Permissions
 
- **Summary**: Learn about permissions that are required to manage recipients in Exchange Server 2016.
+ **Summary**: Learn about permissions that are required to manage recipients in Exchange Server 2016 and Exchange Server 2019.
   
 The permissions required to perform tasks to manage recipients vary depending on the procedure being performed or the cmdlet you want to run.
   
@@ -22,7 +22,7 @@ To find out what permissions you need to perform the procedure or run the cmdlet
   
 1. In the table below, find the feature that is most related to the procedure you want to perform or the cmdlet you want to run.
     
-2. Next, look at the permissions required for the feature. You must be assigned one of those role groups, an equivalent custom role group, or an equivalent management role. You can also click on a role group to see its management roles. If a feature lists more than one role group, you only need to be assigned one of the role groups to use the feature. For more information about role groups and management roles, see **Understanding Role Based Access Control**.
+2. Next, look at the permissions required for the feature. You must be assigned one of those role groups, an equivalent custom role group, or an equivalent management role. You can also click on a role group to see its management roles. If a feature lists more than one role group, you need to be assigned to only one of the role groups to use the feature. For more information about role groups and management roles, see **Understanding Role Based Access Control**.
     
 3. Now, run the **Get-ManagementRoleAssignment** cmdlet to look at the role groups or management roles assigned to you to see if you have the permissions that are necessary to manage the feature.
     
