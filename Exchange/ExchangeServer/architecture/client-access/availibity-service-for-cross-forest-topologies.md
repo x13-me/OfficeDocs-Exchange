@@ -3,20 +3,20 @@ title: "Configure the Availability service for cross-forest topologies"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: f1e7d407-f0d3-47a7-8cc3-03c5980445d5
-description: "Summary: Learn how to use and configure the Availability service in cross-forest topologies in Exchange 2016."
+description: "Summary: Learn how to use and configure the Availability service in cross-forest topologies in Exchange Server."
 ---
 
 # Configure the Availability service for cross-forest topologies
 
- **Summary**: Learn how to use and configure the Availability service in cross-forest topologies in Exchange 2016.
+ **Summary**: Learn how to use and configure the Availability service in cross-forest topologies in Exchange 2016 or Exchange 2019.
   
-The Availability service improves information workers' free/busy information by providing secure, consistent, and up-to-date free/busy information to clients that are running Outlook. By default, this service is installed with Exchange 2016. In cross-forest topologies where all connecting clients are running Outlook, the Availability service is the only method of retrieving free/busy information. You can use the Exchange Management Shell to configure the Availability service for cross-forest topologies.
+The Availability service improves information workers' free/busy information by providing secure, consistent, and up-to-date free/busy information to clients that are running Outlook. By default, this service is installed with Exchange Server. In cross-forest topologies where all connecting clients are running Outlook, the Availability service is the only method of retrieving free/busy information. You can use the Exchange Management Shell to configure the Availability service for cross-forest topologies.
   
 > [!NOTE]
 > You can't use the Exchange admin center (EAC) to configure the Availability service for cross-forest topologies.
