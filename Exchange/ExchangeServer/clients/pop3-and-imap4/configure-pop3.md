@@ -1,5 +1,5 @@
 ---
-title: "Enable and configure POP3 on an Exchange 2016 server"
+title: "Enable and configure POP3 on an Exchange server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: e226a5f1-429d-4046-b925-da6cc151709e
-description: "Summary: Learn how to enable and configure POP3 on an Exchange 2016 server for access by POP3 clients."
+description: "Summary: Learn how to enable and configure POP3 on an Exchange server for access by POP3 clients."
 ---
 
-# Enable and configure POP3 on an Exchange 2016 server
+# Enable and configure POP3 on an Exchange server
 
- **Summary**: Learn how to enable and configure POP3 on an Exchange 2016 server for access by POP3 clients.
+ **Summary**: Learn how to enable and configure POP3 on an Exchange 2016 or Exchange 2019 server for access by POP3 clients.
   
 By default, POP3 client connectivity isn't enabled in Exchange. To enable POP3 client connectivity, you need to perform the following steps:
   
@@ -150,7 +150,7 @@ Set-PopSettings -ExternalConnectionSettings "mail.contoso.com:995:SSL","mail.con
     
 - Although you can use a separate certificate for POP3, we recommend that you use the same certificate as the other Exchange IIS (HTTP) services, which is likely a wildcard certificate or a subject alternative name (SAN) certificate from a commercial certification authority that's automatically trusted by all clients. For more information, see [Certificate requirements for Exchange services](../../architecture/client-access/certificates.md#CertRequirements).
     
-- If you use a single subject certificate, or a SAN certificate, you also need to assign the certificate to the Exchange POP service. You don't need to assign a wildcard certificate to the Exchange POP service. For more information, see [Assign certificates to Exchange 2016 services](../../architecture/client-access/assign-certificates-to-services.md).
+- If you use a single subject certificate, or a SAN certificate, you also need to assign the certificate to the Exchange POP service. You don't need to assign a wildcard certificate to the Exchange POP service. For more information, see [Assign certificates to Exchange Server services](../../architecture/client-access/assign-certificates-to-services.md).
     
 ### How you do know this step worked?
 
@@ -217,10 +217,10 @@ To verify that you have enabled and configured POP3 on the Exchange server, perf
     
   - **External clients**: Use the **Exchange Server** \> **POP Email** test in the Microsoft Remote Connectivity Analyzer at [https://go.microsoft.com/fwlink/p/?LinkID=313839](https://go.microsoft.com/fwlink/p/?LinkID=313839).
     
-    **Note**: You can't use POP3 to connect to the Administrator mailbox. This limitation was intentionally included in Exchange 2016 to enhance the security of the Administrator mailbox.
+    **Note**: You can't use POP3 to connect to the Administrator mailbox. This limitation was intentionally included in Exchange 2016 and Exchange 2019 to enhance the security of the Administrator mailbox.
     
 ## Next steps
 
-To enabled or disable POP3 access to individual mailboxes, see [Enable or disable POP3 or IMAP4 access to mailboxes in Exchange 2016](configure-mailbox-access.md).
+To enabled or disable POP3 access to individual mailboxes, see [Enable or disable POP3 or IMAP4 access to mailboxes in Exchange Server](configure-mailbox-access.md).
   
 
