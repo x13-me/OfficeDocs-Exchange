@@ -1,30 +1,30 @@
 ---
-title: "Enable or disable POP3 or IMAP4 access to mailboxes in Exchange 2016"
+title: "Enable or disable POP3 or IMAP4 access to mailboxes in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 57e12f07-3b14-45bd-9a82-e6032d14214f
-description: "Summary: Learn how administrators can enable or disable POP3 and IMAP4 access to specific mailboxes in Exchange 2016."
+description: "Summary: Learn how administrators can enable or disable POP3 and IMAP4 access to specific mailboxes in Exchange Server."
 ---
 
-# Enable or disable POP3 or IMAP4 access to mailboxes in Exchange 2016
+# Enable or disable POP3 or IMAP4 access to mailboxes in Exchange Server
 
- **Summary**: Learn how administrators can enable or disable POP3 and IMAP4 access to specific mailboxes in Exchange 2016.
+ **Summary**: Learn how administrators can enable or disable POP3 and IMAP4 access to specific mailboxes in Exchange 2016 or Exchange 2019.
   
-After you enable and configure POP3 or IMAP4 on an Exchange 2016 server as described in [Enable and configure POP3 on an Exchange 2016 server](configure-pop3.md) and [Enable and configure IMAP4 on an Exchange 2016 server](configure-imap4.md), all user mailboxes (with the exception of the Administrator mailbox) can be accessed by using POP3 or IMAP4. You can use the procedures in this topic to disable POP3 and IMAP4 access to specific mailboxes.
+After you enable and configure POP3 or IMAP4 on an Exchange server as described in [Enable and configure POP3 on an Exchange server](configure-pop3.md) and [Enable and configure IMAP4 on an Exchange server](configure-imap4.md), all user mailboxes (with the exception of the Administrator mailbox) can be accessed by using POP3 or IMAP4. You can use the procedures in this topic to disable POP3 and IMAP4 access to specific mailboxes.
   
-For more information about POP3 and IMAP4, see [POP3 and IMAP4 in Exchange 2016](pop3-and-imap4.md).
+For more information about POP3 and IMAP4, see [POP3 and IMAP4 in Exchange Server](pop3-and-imap4.md).
   
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 5 minutes.
     
-- The procedures in this topic don't apply to the Administrator mailbox, because you can't use POP3 or IMAP4 to connect to the Administrator mailbox. This limitation was intentionally included in Exchange 2016 to enhance the security of the Administrator mailbox.
+- The procedures in this topic don't apply to the Administrator mailbox, because you can't use POP3 or IMAP4 to connect to the Administrator mailbox. This limitation was intentionally included in Exchange 2016 and Exchange 2019 to enhance the security of the Administrator mailbox.
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient provisioning permissions" section in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
     
