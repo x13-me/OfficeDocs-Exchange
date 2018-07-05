@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: df35765a-0bef-4561-9846-d91d69c0269c
-description: "Summary: Learn how to permanently delete a mailbox in Exchange 2016."
+description: "Summary: Learn how to permanently delete a mailbox in Exchange Server."
 ---
 
 # Permanently delete a mailbox
 
- **Summary**: Learn how to permanently delete a mailbox in Exchange 2016.
+ **Summary**: Learn how to permanently delete a mailbox in Exchange 2016 or Exchange 2019.
   
 When you permanently delete active mailboxes and disconnected mailboxes, all mailbox contents are purged from the Exchange mailbox database, and the data loss is permanent. When you permanently delete an active mailbox, the associated Active Directory user account is also deleted.
   
@@ -24,7 +24,7 @@ To learn more about disconnected mailboxes and perform other related management 
   
 - [Disconnected mailboxes](disconnected-mailboxes.md)
     
-- [Disable or delete a mailbox in Exchange 2016](disable-or-delete-mailboxes.md)
+- [Disable or delete a mailbox in Exchange Server](disable-or-delete-mailboxes.md)
     
 - [Connect a disabled mailbox](connect-disabled-mailboxes.md)
     
