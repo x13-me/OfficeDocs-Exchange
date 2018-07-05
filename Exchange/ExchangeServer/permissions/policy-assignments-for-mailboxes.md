@@ -49,7 +49,7 @@ To change the assignment policy that's assigned to a mailbox, use the following 
 Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
 ```
 
-This example sets the assignment policy to Unified Messaging Users on the mailbox Brian.
+This example sets the assignment policy to Unified Messaging Users on the mailbox Brian. (Note: Unified Messaging is not available on Exchange 2019.)
 
 ```
 Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
