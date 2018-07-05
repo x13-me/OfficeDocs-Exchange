@@ -1,22 +1,22 @@
 ---
-title: "Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange 2016"
+title: "Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: bd22bf7e-3bf7-45e6-8790-919b780166f6
-description: "Summary: Learn how to configure the authenticated SMTP settings on an Exchange 2016 server that are required by POP3 or IMAP4 clients to send email messages."
+description: "Summary: Learn how to configure the authenticated SMTP settings on an Exchange server that are required by POP3 or IMAP4 clients to send email messages."
 ---
 
-# Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange 2016
+# Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange Server
 
- **Summary**: Learn how to configure the authenticated SMTP settings on an Exchange 2016 server that are required by POP3 or IMAP4 clients to send email messages.
+ **Summary**: Learn how to configure the authenticated SMTP settings on an Exchange 2016 or Exchange 2019 server that are required by POP3 or IMAP4 clients to send email messages.
   
-After you enable and configure POP3 or IMAP4 on an Exchange 2016 server as described in [Enable and configure POP3 on an Exchange 2016 server](configure-pop3.md) and [Enable and configure IMAP4 on an Exchange 2016 server](configure-imap4.md), you need to configure the authenticated SMTP settings for POP3 and IMAP4 clients so they can send email messages.
+After you enable and configure POP3 or IMAP4 on an Exchange server as described in [Enable and configure POP3 on an Exchange server](configure-pop3.md) and [Enable and configure IMAP4 on an Exchange server](configure-imap4.md), you need to configure the authenticated SMTP settings for POP3 and IMAP4 clients so they can send email messages.
   
 The default Receive connector named "Client Frontend _\<Server name\>_" in the Client Access services on the Mailbox server listens for authenticated SMTP client submissions on port 587. By default, this connector uses the following settings for **internal and external** client (authenticated) SMTP connections: 
   
@@ -38,7 +38,7 @@ To configure the authenticated SMTP settings that are used by POP3 and IMAP4 cli
 
     ![SMTP settings in Outlook on the web](../../media/8a379ed6-18b4-4393-934f-e7e5eb5a2586.png)
   
-For more information about POP3 and IMAP4, see [POP3 and IMAP4 in Exchange 2016](pop3-and-imap4.md).
+For more information about POP3 and IMAP4, see [POP3 and IMAP4 in Exchange Server](pop3-and-imap4.md).
   
 ## What do you need to know before you begin?
 
@@ -105,7 +105,7 @@ To verify that you've successfully the FQDN on the "Client Frontend *\<Server na
 
 The certificate needs to match or contain the FQDN value that you specified in the previous step, and the POP3 and SMTP clients need to trust the certificate, which likely means a certificate from a commercial certification authority. For more information, see [Certificate requirements for Exchange services](../../architecture/client-access/certificates.md#CertRequirements).
   
-Also, you need to assign the certificate to the Exchange SMTP service. For more information, see [Assign certificates to Exchange 2016 services](../../architecture/client-access/assign-certificates-to-services.md).
+Also, you need to assign the certificate to the Exchange SMTP service. For more information, see [Assign certificates to Exchange Server services](../../architecture/client-access/assign-certificates-to-services.md).
   
 To specify the certificate that's used for authenticated SMTP client connections, use the following syntax:
   
@@ -185,6 +185,6 @@ To verify that you've configured the authenticated SMTP settings on the Exchange
     
 - Enable protocol logging on the "Client Frontend _\<Server name\>_" Receive connector, configure a POP3 or IMAP4 client to connect to a mailbox, send a test message from an internal network connection and/or an external Internet connection, and view the results in the protocol log. For more information, see [Protocol logging](../../mail-flow/connectors/protocol-logging.md).
     
-    **Note**: You can't use POP3 or IMAP4 to connect to the Administrator mailbox. This limitation was intentionally included in Exchange 2016 to enhance the security of the Administrator mailbox.
+    **Note**: You can't use POP3 or IMAP4 to connect to the Administrator mailbox. This limitation was intentionally included in Exchange 2016 and Exchange 2019 to enhance the security of the Administrator mailbox.
     
 
