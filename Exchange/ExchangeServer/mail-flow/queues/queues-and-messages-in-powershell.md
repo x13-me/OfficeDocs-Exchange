@@ -3,20 +3,20 @@ title: "Find queues and messages in queues in the Exchange Management Shell"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 5433c1d3-ad2e-4f82-b50d-b67964b32f26
-description: "Summary: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange 2016."
+description: "Summary: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange Server."
 ---
 
 # Find queues and messages in queues in the Exchange Management Shell
 
- **Summary**: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange 2016.
+ **Summary**: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange 2016 and Exchange 2019.
   
-As in previous versions of Exchange, you can use the Exchange Management Shell in Exchange Server 2016 to view information about queues and messages, and use that information to take action on queues and messages. Typically, an active Exchange contains a large number of queues and messages to be delivered, so it's important to understand how to identify the queues or messages that you want to manage.
+As in previous versions of Exchange, you can use the Exchange Management Shell in Exchange Server to view information about queues and messages, and use that information to take action on queues and messages. Typically, an active Exchange contains a large number of queues and messages to be delivered, so it's important to understand how to identify the queues or messages that you want to manage.
   
 Note that you can also use Queue Viewer in the Exchange Toolbox to manage queues and messages in queues. However, the queue and message viewing cmdlets in the Exchange Management Shell support more filterable properties and filter options than Queue Viewer. For more information about using Queue Viewer, see [Queue Viewer](queue-viewer.md).
   
@@ -104,7 +104,7 @@ The following table describes the filtering and sorting parameters that are avai
 |**Parameter**|**Description**|
 |:-----|:-----|
 | _Dag_, _Server_, or _Site_ <br/> |These parameters are mutually exclusive (can't be used in the same command), and set the scope for the cmdlet. You need to specify one of these parameters or the _Forest_ switch. Typically, you would use the name of the server, DAG or Active Directory site, but you can use any value that uniquely identifies the server, DAG, or site. You can specify multiple servers, DAGs, or sites separated by commas.  <br/> |
-| _Forest_ <br/> |This switch is required if you aren't using the _Dag_, _Server_, or _Site_ parameters. You don't specify a value with this switch. By using this switch, you get queues from all Exchange 2016 or Exchange 2013 Mailbox servers in the local Active Directory forest. You can't use this switch to view queues in remote Active Directory forests.  <br/> |
+| _Forest_ <br/> |This switch is required if you aren't using the _Dag_, _Server_, or _Site_ parameters. You don't specify a value with this switch. By using this switch, you get queues from all Exchange Mailbox servers in the local Active Directory forest. You can't use this switch to view queues in remote Active Directory forests.  <br/> |
 | _DetailsLevel_ <br/> | `Normal` is the default value. The following properties are returned in the results:  <br/> • **QueueIdentity** <br/> • **ServerIdentity** <br/> • **MessageCount** <br/> `Verbose` returns the following additional properties in the results:  <br/> • **DeferredMessageCount** <br/> • **LockedMessageCount\*** <br/> • **IncomingRate** <br/> • **OutgoingRate** <br/> • **Velocity** <br/> • **NextHopDomain** <br/> • **NextHopCategory** <br/> • **NextHopConnector** <br/> • **DeliveryType** <br/> • **Status** <br/> • **RiskLevel\*** <br/> • **OutboundIPPool\*** <br/> • **LastError** <br/> • **TlsDomain** <br/> `None` omits the queue name from the **Details** column in the results.  <br/> \* These properties are reserved for internal Microsoft use, and aren't used in on-premises Exchange organizations. For more information about all properties in this list, see [Queue properties](queue-properties.md).  <br/> |
 | _Filter_ <br/> |Filter queues based on the queue properties as described in the [Filter parameter on queue cmdlets](queues-and-messages-in-powershell.md#QueueFilterParam) section. You can use any of the filterable queue properties as described in the [Queue properties](queue-properties.md) topic.  <br/> |
 | _GroupBy_ <br/> |Groups the queue results. You can group the results by one of the following properties:  <br/> • **DeliveryType** <br/> • **LastError** <br/> • **NextHopCategory** <br/> • **NextHopDomain** <br/> • **NextHopKey** <br/> • **Status** <br/> • **ServerName** <br/> By default, the results are grouped by **NextHopDomain**. For information about these queue properties, see [Queue properties](queue-properties.md).  <br/> |
