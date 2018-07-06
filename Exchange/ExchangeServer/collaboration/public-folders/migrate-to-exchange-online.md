@@ -1,25 +1,25 @@
 ---
-title: "Use batch migration to migrate Exchange 2016 public folders to Exchange Online"
+title: "Use batch migration to migrate Exchange Server public folders to Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.collection: Strat_EX_EXOBlocker
 ms.assetid: 25a5234c-dd2c-487b-8541-3655fbeb030a
-description: "Summary: This article tells you how to move modern public folders from Exchange 2016 to Office 365."
+description: "Summary: This article tells you how to move modern public folders from Exchange Server to Office 365."
 ---
 
-# Use batch migration to migrate Exchange 2016 public folders to Exchange Online
+# Use batch migration to migrate Exchange Server public folders to Exchange Online
 
- **Summary**: This article tells you how to move modern public folders from Exchange 2016 to Office 365.
+ **Summary**: This article tells you how to move modern public folders from Exchange 2016 or Exchange 2019 to Office 365.
   
-Migrating your Exchange 2016 public folders to Exchange Online requires Exchange Server 2016 CU4 or later running in your on-premises environment.
+Migrating your Exchange Server public folders to Exchange Online requires Exchange Server 2016 CU4 or later running in your on-premises environment.
   
 > [!NOTE]
-> You can also use this article if you have a mixed environment of both Exchange 2013 and Exchange 2016 public folders in your organization, and you want to move them all to Exchange Online. Note that your Exchange 2013 servers need to have CU15 or later installed.
+> You can also use this article if you have a mixed environment of both Exchange 2013 and Exchange Server public folders in your organization, and you want to move them all to Exchange Online. Note that your Exchange 2013 servers need to have CU15 or later installed.
   
 ## What do you need to know before you begin?
 
@@ -27,7 +27,7 @@ Migrating your Exchange 2016 public folders to Exchange Online requires Exchange
     
 - In Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Office 365 or Exchange Online. For details about how to enable the Organization Management role group, see [Manage role groups](../../permissions/role-groups.md).
     
-- In Exchange Server 2016, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/p/?linkId=299212).
+- In Exchange Server, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/p/?linkId=299212).
     
 - Before you begin the public folder migration, if any single public folder in your organization is larger than 25 GB, we recommend that you delete content from that folder to make it smaller, or divide the public folder's content into multiple, smaller public folders. Note that the 25 GB limit cited here only applies to the public folder and not to any child or sub-folders the folder in question may have. If neither option is feasible, we recommend that you do not move your public folders to Exchange Online. See [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188) for more information.
     
@@ -40,9 +40,9 @@ Migrating your Exchange 2016 public folders to Exchange Online requires Exchange
     
 - MRS Proxy needs to be enabled on at least one Exchange server, a server that is also hosting public folder mailboxes. See [Enable the MRS Proxy endpoint for remote moves](https://go.microsoft.com/fwlink/p/?linkid=844909) for details.
     
-- To perform the migration procedures in this article, you can't use the Exchange admin center (EAC). Instead, you need to use the Exchange Management Shell on your Exchange 2016 servers. In Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=842801).
+- To perform the migration procedures in this article, you can't use the Exchange admin center (EAC). Instead, you need to use the Exchange Management Shell on your Exchange 2016 or Exchange 2019 servers. In Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=842801).
     
-- Migrating deleted items and deleted folders from Exchange 2016 to Exchange Online is supported. Before you begin your migration, we recommend that you review all deleted folders and folder items and permanently delete anything you won't need in Exchange Online. Note that once something is permanently deleted, it can't be recovered.
+- Migrating deleted items and deleted folders from Exchange Server to Exchange Online is supported. Before you begin your migration, we recommend that you review all deleted folders and folder items and permanently delete anything you won't need in Exchange Online. Note that once something is permanently deleted, it can't be recovered.
     
     You can use the following commands to list deleted public folders present in the Exchange dumpster (in your Exchange on-premises environment):
     
@@ -65,25 +65,25 @@ Migrating your Exchange 2016 public folders to Exchange Online requires Exchange
   
 ## Step 1: Download the migration scripts
 
-1. Download all scripts and supporting files from [Exchange 2013/2016 Public Folders Migration Scripts](https://go.microsoft.com/fwlink/p/?linkid=844893).
+1. Download all scripts and supporting files from [Exchange 2013/2016/2019 Public Folders Migration Scripts](https://go.microsoft.com/fwlink/p/?linkid=844893).
     
 2. Save the scripts to the local computer on which you'll be running PowerShell. For example, C:\PFScripts. Make sure all scripts are saved in the same location.
     
 The scripts and files you're downloading are:
   
-- `Sync-ModernMailPublicFolders.ps1` This script synchronizes mail-enabled public folder objects between your Exchange on-premises environment and Office 365. You'll run this script on an Exchange 2016 server.
+- `Sync-ModernMailPublicFolders.ps1` This script synchronizes mail-enabled public folder objects between your Exchange on-premises environment and Office 365. You'll run this script on an Exchange 2016 or Exchange 2019 server.
     
 - `SyncModernMailPublicFolders.strings.psd1` This support file is used by the Sync-ModernMailPublicFolders.ps1 script and should be downloaded to the same location.
     
-- `Export-ModernPublicFolderStatistics.ps1` This script creates the folder name-to-folder size and deleted item size mapping file. You'll run this script on the Exchange 2016 server.
+- `Export-ModernPublicFolderStatistics.ps1` This script creates the folder name-to-folder size and deleted item size mapping file. You'll run this script on the Exchange 2016 or Exchange 2019 server.
     
 - `Export-ModernPublicFolderStatistics.strings.psd1` This support file is used by the Export-ModernPublicFolderStatistics.ps1 script and should be downloaded to the same location.
     
-- `ModernPublicFolderToMailboxMapGenerator.ps1` This script creates the public folder-to-mailbox mapping file by using the output from the Export-ModernPublicFolderStatistics.ps1 script. You'll run this script on an Exchange 2016 server.
+- `ModernPublicFolderToMailboxMapGenerator.ps1` This script creates the public folder-to-mailbox mapping file by using the output from the Export-ModernPublicFolderStatistics.ps1 script. You'll run this script on an Exchange 2016 or Exchange 2019 server.
     
 - `ModernPublicFolderToMailboxMapGenerator.strings.psd1` This support file is used by the ModernPublicFolderToMailboxMapGenerator.ps1 script and should be downloaded to the same location.
     
-- `SetMailPublicFolderExternalAddress.ps1` This script updates the `ExternalEmailAddress` of mail-enabled public folders in your on-premises environment to that of their Exchange Online counterparts, so that emails addressed to your mail-enabled public folders post-migration are properly routed to Exchange Online. You need to run this script on an Exchange 2016 server.
+- `SetMailPublicFolderExternalAddress.ps1` This script updates the `ExternalEmailAddress` of mail-enabled public folders in your on-premises environment to that of their Exchange Online counterparts, so that emails addressed to your mail-enabled public folders post-migration are properly routed to Exchange Online. You need to run this script on an Exchange 2016 or Exchange 2019 server.
     
 - `SetMailPublicFolderExternalAddress.strings.psd1` This support file is used by the Create-PublicFolderMailboxesForMigration.ps1 script and should be downloaded to the same location.
     
@@ -102,7 +102,7 @@ For your migration to be successful, you should:
     
 - Confirm that there are no duplicate public folder objects in Active Directory. This is necessary to avoid having two or more Active Directory objects that are pointing to the same mail-enabled public folder.
     
- **Prerequisite steps in the on-premises Exchange 2016 server environment**
+ **Prerequisite steps in the on-premises Exchange 2016 or Exchange 2019 server environment**
   
 In Exchange Management Shell (on-premises) perform the following steps:
   
@@ -168,7 +168,7 @@ In Exchange Management Shell (on-premises) perform the following steps:
   Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false -PublicFolderMailboxesLockedForNewConnections:$false -PublicFolderMailboxesMigrationComplete:$false
   ```
 
-4. For the purpose of verifying the success of the migration upon its completion, we recommend that you run the following commands on all appropriate Exchange 2016 servers. This will take snapshots of your current public folder deployment that you can later use to compare with your newly migrated public folders.
+4. For the purpose of verifying the success of the migration upon its completion, we recommend that you run the following commands on all appropriate Exchange 2016 or Exchange 2019 servers. This will take snapshots of your current public folder deployment that you can later use to compare with your newly migrated public folders.
     
     > [!NOTE]
     > Depending on the size of your Exchange organization, it could take some time for these commands to run.
@@ -350,9 +350,9 @@ Next, in Exchange Online PowerShell, create the target public folder mailboxes t
 ## Step 5: Start the migration request
 <a name="Generatecsv"> </a>
 
-A number of commands now need to be run in your Exchange 2016 on-premises environment and in Exchange Online.
+A number of commands now need to be run in your Exchange 2016 or Exchange 2019 on-premises environment and in Exchange Online.
   
-1. From any of your Exchange 2016 servers hosting public folder mailboxes, execute the following script. This script will synchronize mail-enabled public folders from your local Active Directory to Exchange Online. Make sure that you have downloaded the latest version of this script and that you're running it from Exchange Management Shell.
+1. From any of your Exchange 2016 or Exchange 2019 servers hosting public folder mailboxes, execute the following script. This script will synchronize mail-enabled public folders from your local Active Directory to Exchange Online. Make sure that you have downloaded the latest version of this script and that you're running it from Exchange Management Shell.
     
   ```
   .\Sync-ModernMailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
@@ -362,17 +362,17 @@ A number of commands now need to be run in your Exchange 2016 on-premises enviro
     
   - `CsvSummaryFile` is the file path to where you want your log file of synchronization operations and errors located. The log will be in .csv format.
     
-2. On the Exchange 2016 server, find the MRS proxy endpoint server and make note of it. You will need this information to run the migration request. Save this information for step 3b below.
+2. On the Exchange 2016 or Exhange 2019 server, find the MRS proxy endpoint server and make note of it. You will need this information to run the migration request. Save this information for step 3b below.
     
 3. In Exchange Online PowerShell, run the following commands to pass credential information and the MRS information from the previous step to cmdlet variables that will be used in the migration request.
     
-1. Pass the credential of a user who has administrator permissions in the Exchange 2016 on-premises environment into the variable `$Source_Credential`. The migration request that you run in Exchange Online will use this credential to gain access to your on-premises Exchange 2016 servers to copy the public folder content over to Exchange Online.
+1. Pass the credential of a user who has administrator permissions in the Exchange 2016 or Exchange 2019 on-premises environment into the variable `$Source_Credential`. The migration request that you run in Exchange Online will use this credential to gain access to your on-premises Exchange servers to copy the public folder content over to Exchange Online.
     
   ```
   $Source_Credential = Get-Credential <source_domain>\<PublicFolder_Administrator_Account>
   ```
 
-2. Take the MRS Proxy Server information from the Exchange 2016 environment that you found in step 2 above and pass it into the variable:
+2. Take the MRS Proxy Server information from the Exchange Server environment that you found in step 2 above and pass it into the variable:
     
   ```
   $Source_RemoteServer = <paste the value here>
@@ -408,16 +408,16 @@ To go to the mailbox migration page:
     
 3. Select the migration request that was just created and then, on the **Details** pane, select **View Details**.
     
-Before moving on to *Step 6: Lock down the public folders on the Exchange 2016 server*, verify that all data has been copied and that there are no errors in the migration. Once you have confirmed that the batch has moved to the state of **Synced**, run the commands mentioned in *Step 2: Prepare for the migration*, in the final step under **Prerequisite steps in the on-premises Exchange 2016 server environment**, to take a snapshot of the public folders on-premises. Once these commands have run, you can proceed to the next step. Note that these commands could take a while to complete depending on the number of folders you have.
+Before moving on to *Step 6: Lock down the public folders on the Exchange 2016 or Exchange 2019 server*, verify that all data has been copied and that there are no errors in the migration. Once you have confirmed that the batch has moved to the state of **Synced**, run the commands mentioned in *Step 2: Prepare for the migration*, in the final step under **Prerequisite steps in the on-premises Exchange 2016 or Exchange 2019 server environment**, to take a snapshot of the public folders on-premises. Once these commands have run, you can proceed to the next step. Note that these commands could take a while to complete depending on the number of folders you have.
   
-## Step 6: Lock down the public folders in the Exchange 2016 environment for final migration (public folder downtime required)
+## Step 6: Lock down the public folders in the Exchange 2016 or Exchange 2019 environment for final migration (public folder downtime required)
 <a name="Generatecsv"> </a>
 
 Until this point in the migration process, users have been able to access your on-premises public folders. The following steps will now log off users off from Exchange 2016 public folders and then lock the folders as the migration process completes its final synchronization. Users won't be able to access public folders during this time, and any messages sent to these mail-enabled public folders will be queued and remain undelivered until the public folder migration is complete.
   
 Before you run the `PublicFolderMailboxesLockedForNewConnections` command as described below, make sure that all jobs are in the **Synced** state. You can do this by running the `Get-PublicFolderMailboxMigrationRequest` command. Continue with this step only after you've verified that all jobs are in the **Synced** state.
   
-In your on-premises environment, run the following command to lock the Exchange 2016 public folders for finalization.
+In your on-premises environment, run the following command to lock the Exchange Server public folders for finalization.
   
 ```
 Set-OrganizationConfig -PublicFolderMailboxesLockedForNewConnections $true
@@ -426,7 +426,7 @@ Set-OrganizationConfig -PublicFolderMailboxesLockedForNewConnections $true
 > [!NOTE]
 > If you aren't able to access the `-PublicFolderMailboxesLockedForNewConnections` parameter, it could be because your Active Directory was not prepared during the CU upgrade, as we advised above in *What do you need to know before you begin?* See [Prepare Active Directory and domains](../../plan-and-deploy/prepare-ad-and-domains.md) for more information. Also note that any users who need access to public folders should be migrated first, **before** you migrate the public folders themselves.
   
-If your organization has public folder mailboxes on multiple Exchange 2016 servers, you'll need to wait until AD replication is complete. Once complete, you can confirm that all public folder mailboxes have picked up the `PublicFolderMailboxesLockedForNewConnections` flag, and that any pending changes users recently made to their public folders have converged across the organization. All of this could take several hours.
+If your organization has public folder mailboxes on multiple Exchange 2016 or Exchange 2019 servers, you'll need to wait until AD replication is complete. Once complete, you can confirm that all public folder mailboxes have picked up the `PublicFolderMailboxesLockedForNewConnections` flag, and that any pending changes users recently made to their public folders have converged across the organization. All of this could take several hours.
   
 ## Step 7: Finalize the public folder migration (public folder downtime required)
 <a name="Generatecsv"> </a>
@@ -466,7 +466,7 @@ Once the public folder migration is complete, take the following steps to test t
     
 4. Post content to, and delete content from, a public folder.
     
-    If you run into any issues and determine you aren't ready to switch your organization's public folders entirely to Exchange Online, see [Roll back a public folder migration from Exchange 2016 to Exchange Online](roll-back-exchange-online-migration.md).
+    If you run into any issues and determine you aren't ready to switch your organization's public folders entirely to Exchange Online, see [Roll back a public folder migration from Exchange 2016 or Exchange 2019 to Exchange Online](roll-back-exchange-online-migration.md).
     
 3. Run the following command in Exchange Online PowerShell to unlock your public folders in Exchange Online. After you run the command, it may take approximately 15 to 30 minutes for the changes to take effect. Once Outlook is aware of the changes, it might prompt your users to restart Outlook a couple of times.
     
