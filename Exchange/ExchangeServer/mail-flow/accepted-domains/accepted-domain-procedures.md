@@ -1,24 +1,24 @@
 ---
-title: "Procedures for accepted domains in Exchange 2016"
+title: "Procedures for accepted domains in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 11801f73-4934-4025-a1c1-3935dada7e9b
-description: "Summary: Learn how to create, modify, and remove accepted domains in Exchange 2016."
+description: "Summary: Learn how to create, modify, and remove accepted domains in Exchange Server."
 ---
 
-# Procedures for accepted domains in Exchange 2016
+# Procedures for accepted domains in Exchange Server
 
- **Summary**: Learn how to create, modify, and remove accepted domains in Exchange 2016.
+ **Summary**: Learn how to create, modify, and remove accepted domains in Exchange 2016 or Exchange 2019.
   
-Accepted domains are the SMTP name spaces (also known as address spaces) that you configure in an Exchange organization to receive email messages. You use the Exchange admin center (EAC) or the Exchange Management Shell to configure accepted domains in Exchange Server 2016.
+Accepted domains are the SMTP name spaces (also known as address spaces) that you configure in an Exchange organization to receive email messages. You use the Exchange admin center (EAC) or the Exchange Management Shell to configure accepted domains in Exchange Server.
   
-For more information about accepted domains, see [Accepted domains in Exchange 2016](accepted-domains.md). The types of accepted domains are summarized in the following list:
+For more information about accepted domains, see [Accepted domains in Exchange Server](accepted-domains.md). The types of accepted domains are summarized in the following list:
   
 - **Authoritative domains**
     
