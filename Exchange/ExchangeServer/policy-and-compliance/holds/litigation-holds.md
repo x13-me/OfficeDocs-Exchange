@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
-description: "Place a mailbox on Litigation Hold to preserve all mailbox content, including deleted items and original versions of modified items. When you place a mailbox on Litigation Hold, the user's archive mailbox (if it's enabled) is also placed on hold. Deleted and modified items are preserved for a specified period or until you remove the mailbox from Litigation Hold. All such mailbox items are returned in an In-Place eDiscovery in Exchange 2016 or Exchange 2019 search."
+description: "Place a mailbox on Litigation Hold to preserve all mailbox content, including deleted items and original versions of modified items."
 ---
 
 # Place a mailbox on Litigation Hold
