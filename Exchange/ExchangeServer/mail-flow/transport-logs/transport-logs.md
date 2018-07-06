@@ -1,24 +1,24 @@
 ---
-title: "Transport logs in Exchange 2016"
+title: "Transport logs in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: f8cf635d-60c2-4aa3-9c06-244c29942cba
-description: "Summary: Learn about transport logging in Exchange 2016 and the kinds of logs and information that is logged."
+description: "Summary: Learn about transport logging in Exchange Server and the kinds of logs and information that is logged."
 ---
 
-# Transport logs in Exchange 2016
+# Transport logs in Exchange Server
 
- **Summary**: Learn about transport logging in Exchange 2016 and the kinds of logs and information that is logged.
+ **Summary**: Learn about transport logging in Exchange 2016 and Exchange 2019 and the kinds of logs and information that is logged.
   
 Transport logs provide information about what's happening in the transport pipeline. For more information about the transport pipeline, see [Mail flow and the transport pipeline](../../mail-flow/mail-flow.md).
   
-The transport logs in Exchange 2016 are described in the following sections.
+The transport logs in Exchange Server are described in the following sections.
   
 ## Agent logging
 
@@ -46,9 +46,9 @@ Agent logging records the actions that are performed on messages by specific ant
 
 Connectivity logging records outbound message transmission activity by the transport services on the Exchange server. For more information, see these topics:
   
-- [Connectivity logging in Exchange 2016](connectivity-logging.md)
+- [Connectivity logging in Exchange Server](connectivity-logging.md)
     
-- [Configure connectivity logging in Exchange 2016](configure-connectivity-logging.md)
+- [Configure connectivity logging in Exchange Server](configure-connectivity-logging.md)
     
  **Enabled by default?**: Yes
   
