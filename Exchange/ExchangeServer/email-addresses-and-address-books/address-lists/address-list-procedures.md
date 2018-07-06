@@ -1,21 +1,21 @@
 ---
-title: "Procedures for address lists in Exchange 2016"
+title: "Procedures for address lists in Exchange Server"
 ms.author: chrisda
 author: chrisda
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 236e8530-62dd-4c43-8a5d-8465623252e6
-description: "Summary: Learn the tasks that Exchange 2016 administrators need to know to manage address lists and global address lists (GAL)."
+description: "Summary: Learn the tasks that Exchange Server administrators need to know to manage address lists and global address lists (GAL)."
 ---
 
-# Procedures for address lists in Exchange 2016
+# Procedures for address lists in Exchange Server
 
- **Summary**: Learn the tasks that Exchange 2016 administrators need to know to manage address lists and global address lists (GAL).
+ **Summary**: Learn the tasks that Exchange 2016 and Exchange 2019 administrators need to know to manage address lists and global address lists (GAL).
   
-Address lists and global address lists (GALs) are collections of mail-enabled recipient objects from Active Directory. You can create or modify GALs, and update using the tools available in the Exchange admin center (EAC) and the Exchange Management Shell. For more information, see [Address lists in Exchange 2016](address-lists.md).
+Address lists and global address lists (GALs) are collections of mail-enabled recipient objects from Active Directory. You can create or modify GALs, and update using the tools available in the Exchange admin center (EAC) and the Exchange Management Shell. For more information, see [Address lists in Exchange Server](address-lists.md).
   
 These are the address list and GAL procedures that you'll find in this topic:
   
@@ -57,7 +57,7 @@ These are the address list and GAL procedures that you'll find in this topic:
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email address and address book permissions](../../permissions/feature-permissions/address-book-permissions.md) topic.
     
-- You can do some of the procedures in this topic by using the EAC. For more information about the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). Some procedures require the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- You can do some of the procedures in this topic by using the EAC. For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). Some procedures require the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
