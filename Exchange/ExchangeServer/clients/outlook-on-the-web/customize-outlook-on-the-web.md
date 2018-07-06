@@ -1,22 +1,22 @@
 ---
-title: "Customize the Outlook on the web sign-in, language selection, and error pages in Exchange 2016"
+title: "Customize the Outlook on the web sign-in, language selection, and error pages in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: scotv
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: d8d9f735-7181-428f-9049-b9886dce5159
-description: "Summary: Learn how to customize the color and images of the sign-in, language selection, and error pages for Outlook on the web in Exchange 2016."
+description: "Summary: Learn how to customize the color and images of the sign-in, language selection, and error pages for Outlook on the web in Exchange Server."
 ---
 
-# Customize the Outlook on the web sign-in, language selection, and error pages in Exchange 2016
+# Customize the Outlook on the web sign-in, language selection, and error pages in Exchange Server
 
- **Summary**: Learn how to customize the color and images of the sign-in, language selection, and error pages for Outlook on the web in Exchange 2016.
+ **Summary**: Learn how to customize the color and images of the sign-in, language selection, and error pages for Outlook on the web in Exchange 2016 or Exchange 2019.
   
-The Outlook on the web (formerly known as Outlook Web App) sign-in, language selection, and error pages are based on image and content style sheet (CSS) files in the themes resources folder in the Client Access (front end) services on an Exchange Server 2016 server. Outlook on the web uses only one set of sign-in, language selection, and error pages for all themes. Any modifications to those pages will be seen by all users who connect to the Exchange server for Outlook on the web.
+The Outlook on the web (formerly known as Outlook Web App) sign-in, language selection, and error pages are based on image and content style sheet (CSS) files in the themes resources folder in the Client Access (front end) services on an Exchange Server 2016 or Exchange 2019 server. Outlook on the web uses only one set of sign-in, language selection, and error pages for all themes. Any modifications to those pages will be seen by all users who connect to the Exchange server for Outlook on the web.
   
  **Notes**:
   
@@ -26,7 +26,7 @@ The Outlook on the web (formerly known as Outlook Web App) sign-in, language sel
     
 - If you use multiple Exchange servers for Outlook on the web connections, you need to copy the modified files to each server.
     
-For more information about Outlook on the web, see [Outlook on the web in Exchange 2016](outlook-on-the-web.md). For information about creating a custom theme, see [Create a theme for Outlook on the web in Exchange 2016](themes.md).
+For more information about Outlook on the web, see [Outlook on the web in Exchange Server](outlook-on-the-web.md). For information about creating a custom theme, see [Create a theme for Outlook on the web in Exchange Server](themes.md).
   
 ## What do you need to know before you begin?
 
