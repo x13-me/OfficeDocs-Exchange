@@ -3,28 +3,28 @@ title: "Create or remove an In-Place Hold"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 9d5d8d37-a053-4830-9cb1-6e1ede25e963
-description: "Summary: Learn how to create and remove an In-Place Hold in Exchange 2016."
+description: "Summary: Learn how to create and remove an In-Place Hold in Exchange Server."
 ---
 
 # Create or remove an In-Place Hold
 
- **Summary**: Learn how to create and remove an In-Place Hold in Exchange 2016.
+ **Summary**: Learn how to create and remove an In-Place Hold in Exchange 2016 and Exchange 2019.
   
 An In-Place Hold preserves all mailbox and public folder content, including deleted items and original versions of modified items. All such items can be returned in an In-Place eDiscovery search. When you place an In-Place Hold on a user's mailbox, the contents in the corresponding archive mailbox (if it's enabled) are also placed on hold and returned in a eDiscovery search.
   
-When you create an In-Place Hold, you can place all items in the source mailbox or public folder on hold or you can hold only the items that meet the search criteria specified for the hold. Similarly, you can hold items indefinitely or for a specific amount of time. For more information about In-Place Holds, see [In-Place Hold and Litigation Hold in Exchange 2016](holds.md).
+When you create an In-Place Hold, you can place all items in the source mailbox or public folder on hold or you can hold only the items that meet the search criteria specified for the hold. Similarly, you can hold items indefinitely or for a specific amount of time. For more information about In-Place Holds, see [In-Place Hold and Litigation Hold in Exchange Server](holds.md).
   
 You can create In-Place holds in the Exchange admin center (EAC) or in the Exchange Management Shell.
   
 ## Before you begin
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place Hold" entry in the [Messaging policy and compliance permissions in Exchange 2016](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place Hold" entry in the [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
     
 - Depending on your Active Directory topology and replication latency, it may take up to an hour for an In-Place Hold to take effect.
     
@@ -120,7 +120,7 @@ To verify that you have successfully created the In-Place Hold, do one of the fo
 
 ## Remove an In-Place Hold
 
-In Exchange 2016, eDiscovery searches are used to hold and search for content in on content sources. You can't remove an In-Place eDiscovery search that's used to place content sources on hold. You must first remove the In-Place Hold by clearing the **Place content matching the search query in selected sources on hold** check box on the **In-Place Hold** page or by setting the _InPlaceHoldEnabled_ parameter to `$false` in the Exchange Management Shell. Alternatively, you can remove mailboxes and public folders from an In-Place Hold by changing the value of the _SourceMailboxes_ or _AllPublicFolderSources_ parameters specified in the search.
+In Exchange Server, eDiscovery searches are used to hold and search for content in on content sources. You can't remove an In-Place eDiscovery search that's used to place content sources on hold. You must first remove the In-Place Hold by clearing the **Place content matching the search query in selected sources on hold** check box on the **In-Place Hold** page or by setting the _InPlaceHoldEnabled_ parameter to `$false` in the Exchange Management Shell. Alternatively, you can remove mailboxes and public folders from an In-Place Hold by changing the value of the _SourceMailboxes_ or _AllPublicFolderSources_ parameters specified in the search.
   
 ### Use the EAC to remove an In-Place Hold
 
