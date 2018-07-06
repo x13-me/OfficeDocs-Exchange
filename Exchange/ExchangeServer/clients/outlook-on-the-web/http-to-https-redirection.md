@@ -3,7 +3,7 @@ title: "Configure http to https redirection for Outlook on the web in Exchange S
 ms.author: chrisda
 author: chrisda
 manager: scotv
-ms.date:7/6/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
