@@ -1,30 +1,30 @@
 ---
-title: "Procedures for address book policies in Exchange 2016"
+title: "Procedures for address book policies in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 6359abaf-e6f6-4667-8c2b-3860728b39a9
-description: "Summary: Learn how to manage address book policies, how to assign address book policies to users, and how to install and enable the Address Book Policy Routing Agent in Exchange 2016."
+description: "Summary: Learn how to manage address book policies, how to assign address book policies to users, and how to install and enable the Address Book Policy Routing Agent in Exchange Server."
 ---
 
-# Procedures for address book policies in Exchange 2016
+# Procedures for address book policies in Exchange Server
 
- **Summary**: Learn how to manage address book policies, how to assign address book policies to users, and how to install and enable the Address Book Policy Routing Agent in Exchange 2016.
+ **Summary**: Learn how to manage address book policies, how to assign address book policies to users, and how to install and enable the Address Book Policy Routing Agent in Exchange 2016 or Exchange 2019.
 
-Address book policies (ABPs) allow you to segment users into specific groups to give them customized global address lists (GALs) in Outlook and Outlook on the web (formerly known as Outlook Web App). For more information about ABPs, see [Address book policies in Exchange 2016](address-book-policies.md).
+Address book policies (ABPs) allow you to segment users into specific groups to give them customized global address lists (GALs) in Outlook and Outlook on the web (formerly known as Outlook Web App). For more information about ABPs, see [Address book policies in Exchange Server](address-book-policies.md).
 
- **Note**: Implementing an ABP is a multi-step process that requires planning. For more information, see [Scenario: Deploying address book policies in Exchange 2016](abp-scenarios.md).
+ **Note**: Implementing an ABP is a multi-step process that requires planning. For more information, see [Scenario: Deploying address book policies in Exchange Server](abp-scenarios.md).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: Less than 5 minutes.
 
-- You can assign ABPs to mailboxes in the Exchange admin center (EAC), but all other ABP procedures require the Exchange Management Shell. For more information about accessing and using the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- You can assign ABPs to mailboxes in the Exchange admin center (EAC), but all other ABP procedures require the Exchange Management Shell. For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address book policies" entry in the [Email address and address book permissions](../../permissions/feature-permissions/address-book-permissions.md) topic.
 
@@ -195,7 +195,7 @@ To verify that you've successfully removed an ABP, use either of these procedure
 
 - Users aren't automatically assigned an ABP when you create mailboxes. If you don't assign an ABP to a mailbox, the GAL for your entire organization is visible to the user in Outlook and Outlook on the web.
 
-- To identify your virtual organizations for ABPs, we recommend that you use the CustomAttribute1-15 attributes on mailboxes, contacts, and groups, because these attributes are the most widely available and manageable for all recipient types. For more information, see [Scenario: Deploying address book policies in Exchange 2016](abp-scenarios.md).
+- To identify your virtual organizations for ABPs, we recommend that you use the CustomAttribute1-15 attributes on mailboxes, contacts, and groups, because these attributes are the most widely available and manageable for all recipient types. For more information, see [Scenario: Deploying address book policies in Exchange Server](abp-scenarios.md).
 
 - The procedures to assign ABPs to mailboxes or remove the ABP assignments from mailboxes are the same:
 
@@ -219,12 +219,12 @@ To verify that you've successfully removed an ABP, use either of these procedure
 
 3. On the mailbox properties page that opens, click **Mailbox features**.
 
-4. Click the drop down arrow in **Address book policy**, and select the ADP that you want to apply.
+4. Click the drop-down arrow in **Address book policy**, and select the ADP that you want to apply.
     ![Address book policy settings for a mailbox in the EAC at Recipients \> select mailbox \> Edit \> Mailbox features](../../media/2b219961-4664-40b3-873c-5892f1fcf2b6.png)
 
     When you're finished, click **Save**.
 
- **Note**: You can also assign an ABP when you create a user mailbox in the EAC by clicking **More options**, and clicking the drop down arrow in **Address book policy**.
+ **Note**: You can also assign an ABP when you create a user mailbox in the EAC by clicking **More options**, and clicking the drop-down arrow in **Address book policy**.
 
 ### Use the Exchange Management Shell to assign an address book policy to a single mailbox
 
@@ -256,7 +256,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](http://technet.
 
 3. Click **More options**, and then click **Add a condition**.
 
-4. In the **Select one** drop down box that appears, select the appropriate **Custom attribute 1** to **Custom attribute 15** values that defines your virtual organizations.
+4. In the **Select one** drop-down box that appears, select the appropriate **Custom attribute 1** to **Custom attribute 15** values that defines your virtual organizations.
 
 5. In the **Specify words or phrases** dialog that appears, enter the value that you want to search for, and then click **OK**.
 
@@ -274,7 +274,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](http://technet.
 4. In the details pane, scroll down and click **More options**, scroll down to **Address Book Policy**, and then click **Update**.
     ![Bulk select mailboxes in the EAC to assign an address book policy](../../media/6319f0ec-686d-48e2-9061-2337e30116d5.png)
 
-5. In the **Bulk assign address book policy** window that opens, select the ABP by clicking the drop down arrow in **Select Address Book Policy**, and then click **Save**.
+5. In the **Bulk assign address book policy** window that opens, select the ABP by clicking the drop-down arrow in **Select Address Book Policy**, and then click **Save**.
 
 ### Use the Exchange Management Shell to assign an address book policy to multiple mailboxes
 
