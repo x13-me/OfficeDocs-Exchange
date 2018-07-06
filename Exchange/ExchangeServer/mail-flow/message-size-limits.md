@@ -1,20 +1,20 @@
 ---
-title: "Message size limits in Exchange 2016"
+title: "Message size limits in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: b6a3840d-b821-4e53-877b-59c16be77206
-description: "Summary: Learn how administrators can apply limits to messages in an Exchange 2016 organization."
+description: "Summary: Learn how administrators can apply limits to messages in an Exchange Server organization."
 ---
 
-# Message size limits in Exchange 2016
+# Message size limits in Exchange Server
 
- **Summary**: Learn how administrators can apply limits to messages in an Exchange 2016 organization.
+ **Summary**: Learn how administrators can apply limits to messages in an Exchange 2016 or Exchange 2019 organization.
 
 You can apply limits to messages that move through your organization. You can set the maximum size of an entire message as a whole, or the size of individual parts of a message, or both. For example, you could restrict the maximum size of the message header or attachments, or set a maximum number of recipients that can be added to the message. You can apply these limits to your entire Exchange organization, to specific mail transport connectors, specific servers, and to individual mailboxes.
 
@@ -57,7 +57,7 @@ The following tables show the message limits at the Organization, Connector, Ser
 ### Organizational limits
 <a name="Organizational"> </a>
 
-Organizational limits apply to all Exchange 2016 servers, Exchange 2013 Mailbox servers, and Exchange 2010 Hub Transport servers that exist in your organization. On Edge Transport servers, any organizational limits that you configure are applied to the local server.
+Organizational limits apply to all Exchange 2019 servers, Exchange 2016 servers, Exchange 2013 Mailbox servers, and Exchange 2010 Hub Transport servers that exist in your organization. On Edge Transport servers, any organizational limits that you configure are applied to the local server.
 
 |**Size limit**|**Default value**|**EAC configuration**|**Exchange Management Shell configuration**|
 |:-----|:-----|:-----|:-----|
