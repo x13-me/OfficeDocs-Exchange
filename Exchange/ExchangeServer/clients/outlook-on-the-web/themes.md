@@ -1,22 +1,22 @@
 ---
-title: "Create a theme for Outlook on the web in Exchange 2016"
+title: "Create a theme for Outlook on the web in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: scotv
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 7e1fa13c-3de3-45c2-b1fa-e74fc8487bda
-description: "Summary: Learn how to create a custom theme for Outlook on the web in Exchange 2016."
+description: "Summary: Learn how to create a custom theme for Outlook on the web in Exchange Server."
 ---
 
-# Create a theme for Outlook on the web in Exchange 2016
+# Create a theme for Outlook on the web in Exchange Server
 
- **Summary**: Learn how to create a custom theme for Outlook on the web in Exchange 2016.
+ **Summary**: Learn how to create a custom theme for Outlook on the web in Exchange 2016 and Exchange 2019.
   
-A *theme* defines the colors, fonts, and images that are displayed to users in Outlook on the web (formerly known as Outlook Web App) in Exchange Server 2016. Each theme is a collection of files that are stored on the Exchange server. The built-in themes are described in the [Default Outlook on the web themes in Exchange 2016](themes.md#DefaultThemes) section at the end of this topic.
+A *theme* defines the colors, fonts, and images that are displayed to users in Outlook on the web (formerly known as Outlook Web App) in Exchange Server. Each theme is a collection of files that are stored on the Exchange server. The built-in themes are described in the [Default Outlook on the web themes in Exchange Server](themes.md#DefaultThemes) section at the end of this topic.
   
 The basic steps to create a new theme for Outlook on the web are:
   
@@ -32,7 +32,7 @@ The basic steps to create a new theme for Outlook on the web are:
     
 If you use multiple Exchange servers for Outlook on the web client connections, you need to copy the new theme to each server. You should also create a backup copy of the new theme so you can copy the files back after you reinstall or upgrade the Exchange server.
   
-After you create a theme, you may also want to customize elements that are common to all themes. For more information, see [Customize the Outlook on the web sign-in, language selection, and error pages in Exchange 2016](customize-outlook-on-the-web.md).
+After you create a theme, you may also want to customize elements that are common to all themes. For more information, see [Customize the Outlook on the web sign-in, language selection, and error pages in Exchange Server](customize-outlook-on-the-web.md).
   
 ## What do you need to know before you begin?
 
@@ -59,7 +59,7 @@ You can inspect the built-in themes by opening a mailbox in Outlook on the web, 
   
 ![Change theme menu location in Outlook on the web](../../media/a1b88a8c-2143-44c1-89dc-73b2acb944e8.png)
   
-You can use the information in the [Default Outlook on the web themes in Exchange 2016](themes.md#DefaultThemes) section at the end of this topic to match the display name of the theme in Outlook on the web to the name of the theme folder on the Exchange server.
+You can use the information in the [Default Outlook on the web themes in Exchange Server](themes.md#DefaultThemes) section at the end of this topic to match the display name of the theme in Outlook on the web to the name of the theme folder on the Exchange server.
   
 The theme files and folders are stored in the following locations:
   
@@ -99,7 +99,7 @@ You need to configure a unique display name and sort order for the new theme, be
     
     **Note**: The theme display name value `"__<ThemeName>__"` is a code string that's localized into different languages. The text value that you specify for the new theme isn't localized into different languages.
     
-3. Change the `sortorder="<CopiedThemeSortOrder>"` integer value to the unique value you want. A lower value appears earlier in the list of themes. You can use the information in the [Default Outlook on the web themes in Exchange 2016](themes.md#DefaultThemes) section at the end of this topic to find the sort order values for the built-in themes. The Default theme has `sortorder="0"`, and appears first in the list.
+3. Change the `sortorder="<CopiedThemeSortOrder>"` integer value to the unique value you want. A lower value appears earlier in the list of themes. You can use the information in the [Default Outlook on the web themes in Exchange Server](themes.md#DefaultThemes) section at the end of this topic to find the sort order values for the built-in themes. The Default theme has `sortorder="0"`, and appears first in the list.
     
   - If you want to insert your new theme among the list of built-in themes, change the number to a unique value that isn't already in use. For example, if you want your new theme to appear second in the list, you can use the value `sortorder="5"`.
     
@@ -189,7 +189,7 @@ To verify that you've successfully created an Outlook on the web theme, perform 
     
 3. If you don't see your changes after you restart IIS, clear your browsing history (delete temporary Internet files), and refresh the browser window.
     
-## Default Outlook on the web themes in Exchange 2016
+## Default Outlook on the web themes in Exchange Server
 <a name="DefaultThemes"> </a>
 
 The built-in Outlook on the web themes are located in the folder `%ExchangeInstallPath%ClientAccess\OWA\prem\<ExchangeVersion>\resources\themes`, and are described in the following table.
