@@ -3,26 +3,26 @@ title: "Place all mailboxes on hold"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
-ms.date: 4/19/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 4c141604-3210-44cc-b98e-f3e0f15613b8
-description: "Your organization may require all mailbox data to be preserved for a specific period. You can use Litigation Hold or In-Place Hold to meet this requirement. After you place a mailbox on Litigation Hold or In-Place Hold, mailbox items that are modified or that are permanently deleted are preserved in the Recoverable Items folder for the duration specified by the hold. For more information, see In-Place Hold and Litigation Hold in Exchange 2016."
+description: "Your organization may require all mailbox data to be preserved for a specific period. You can use Litigation Hold or In-Place Hold to meet this requirement. After you place a mailbox on Litigation Hold or In-Place Hold, mailbox items that are modified or that are permanently deleted are preserved in the Recoverable Items folder for the duration specified by the hold. For more information, see In-Place Hold and Litigation Hold in Exchange Server."
 ---
 
 # Place all mailboxes on hold
 
-Your organization may require all mailbox data to be preserved for a specific period. You can use Litigation Hold or In-Place Hold to meet this requirement. After you place a mailbox on Litigation Hold or In-Place Hold, mailbox items that are modified or that are permanently deleted are preserved in the Recoverable Items folder for the duration specified by the hold. For more information, see [In-Place Hold and Litigation Hold in Exchange 2016](holds.md).
+Your organization may require all mailbox data to be preserved for a specific period. You can use Litigation Hold or In-Place Hold to meet this requirement. After you place a mailbox on Litigation Hold or In-Place Hold, mailbox items that are modified or that are permanently deleted are preserved in the Recoverable Items folder for the duration specified by the hold. For more information, see [In-Place Hold and Litigation Hold in Exchange Server](holds.md).
   
 Before you place all mailboxes in an organization on Litigation Hold or In-Place Hold, consider the following:
   
 - When you place mailboxes on hold, content in a user's archive mailbox (if it's enabled) is also placed on hold.
     
-- Placing all mailboxes in an organization on hold can significantly impact mailbox sizes. In an Exchange 2016 deployment, plan for adequate storage to meet your organization's preservation requirements.
+- Placing all mailboxes in an organization on hold can significantly impact mailbox sizes. In an Exchange Server deployment, plan for adequate storage to meet your organization's preservation requirements.
     
-- Preserving mailbox data for a long duration will result in growth of the Recoverable Items folder in a user's primary mailbox and archive mailbox. The Recoverable Items folder has its own storage limit, so items in the folder don't count towards the mailbox storage limit. In Exchange 2016, the default storage limit for the Recoverable Items folder is 30 GB. We recommend that you periodically monitor the size of this folder to ensure it doesn't reach the limit. For more information, see [Recoverable Items folder in Exchange 2016](../../policy-and-compliance/recoverable-items-folder/recoverable-items-folder.md).
+- Preserving mailbox data for a long duration will result in growth of the Recoverable Items folder in a user's primary mailbox and archive mailbox. The Recoverable Items folder has its own storage limit, so items in the folder don't count towards the mailbox storage limit. In Exchange Server, the default storage limit for the Recoverable Items folder is 30 GB. We recommend that you periodically monitor the size of this folder to ensure it doesn't reach the limit. For more information, see [Recoverable Items folder in Exchange Server](../../policy-and-compliance/recoverable-items-folder/recoverable-items-folder.md).
     
 ## Choosing between Litigation Hold and In-Place Hold
 
