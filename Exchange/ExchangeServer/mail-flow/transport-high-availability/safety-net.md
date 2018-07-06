@@ -1,24 +1,24 @@
 ---
-title: "Safety Net in Exchange 2016"
+title: "Safety Net in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: d0abb807-3b12-4c7d-bc7e-769b87c84ccb
-description: "Summary: Learn how Safety Net is used in Exchange 2016 to protect against data loss by maintaining a queue of successfully delivered messages that have not replicated to the passive mailbox database copies."
+description: "Summary: Learn how Safety Net is used in Exchange Server to protect against data loss by maintaining a queue of successfully delivered messages that have not replicated to the passive mailbox database copies."
 ---
 
-# Safety Net in Exchange 2016
+# Safety Net in Exchange Server
 
- **Summary**: Learn how Safety Net is used in Exchange 2016 to protect against data loss by maintaining a queue of successfully delivered messages that have not replicated to the passive mailbox database copies.
+ **Summary**: Learn how Safety Net is used in Exchange 2016 and Exchange 2019 to protect against data loss by maintaining a queue of successfully delivered messages that have not replicated to the passive mailbox database copies.
   
 In Exchange 2010, the *transport dumpster* helped protect against data loss by maintaining a queue of successfully delivered messages that hadn't replicated to the passive mailbox database copies in the database availability group (DAG). When a mailbox database or server failure required the promotion of an out-of-date copy of the mailbox database, the messages in the transport dumpster were automatically resubmitted to the new active copy of the mailbox database.
   
-The transport dumpster was improved in Exchange 2013 and is now called *Safety Net*. Exchange 2016 has these same improvements.
+The transport dumpster was improved in Exchange 2013 and is now called *Safety Net*. Exchange 2016 and Exchange 2019 have these same improvements.
   
 Here's how Safety Net is similar to the transport dumpster in Exchange 2010:
   
@@ -36,7 +36,7 @@ Here's how Safety Net is improved from the transport dumpster in Exchange 2010:
     
 - **Safety Net tries to guarantee message redundancy**: Safety Net is more than just a best effort for message redundancy, so you can't specify a maximum size limit for Safety Net. You can only specify how long Safety Net stores messages before they're automatically deleted.
     
-For more information about transport high availability features in Exchange 2016, see [Transport high availability](transport-high-availability.md). For more information about message redundancy for messages in transit, see [Shadow redundancy in Exchange 2016](shadow-redundancy.md).
+For more information about transport high availability features in Exchange Server, see [Transport high availability](transport-high-availability.md). For more information about message redundancy for messages in transit, see [Shadow redundancy in Exchange 2016](shadow-redundancy.md).
   
 ## How Safety Net works
 <a name="How"> </a>
