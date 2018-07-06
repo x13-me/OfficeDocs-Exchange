@@ -1,19 +1,19 @@
 ---
-title: "Address lists in Exchange 2016"
+title: "Address lists in Exchange Server"
 ms.author: chrisda
 author: chrisda
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
-description: "Summary: Learn about address lists and global address lists (GALs) how administrators can use them to organize recipients in Exchange 2016."
+description: "Summary: Learn about address lists and global address lists (GALs) how administrators can use them to organize recipients in Exchange Server."
 ---
 
-# Address lists in Exchange 2016
+# Address lists in Exchange Server
 
- **Summary**: Learn about address lists and global address lists (GALs) how administrators can use them to organize recipients in Exchange 2016.
+ **Summary**: Learn about address lists and global address lists (GALs) how administrators can use them to organize recipients in Exchange 2016 and Exchange 2019.
 
 An *address list* is a collection of mail-enabled recipient objects from Active Directory. Address lists are based on recipient filters, and are basically unchanged from Exchange 2010. You can filter by recipient type (for example, mailboxes and mail contacts), recipient properties (for example, Company or State or Province), or both. Address lists aren't static; they're updated dynamically. When you create or modify recipients in your organization, they're automatically added to the appropriate address lists. These are the different types of address lists that are available: 
 
@@ -21,13 +21,13 @@ An *address list* is a collection of mail-enabled recipient objects from Active 
 
 - **Address lists**: Address lists are subsets of recipients that are grouped together in one list, which makes them easier to find by users. Exchange comes with several built-in address lists, and you can create more based on you organization's needs.
 
-- **Offline address books (OABs)**: OABs contain address lists and GALs. OABs are used by Outlook clients in cached Exchange mode to provide local access to address lists and GALs for recipient look-ups. For more information, see [Offline address books in Exchange 2016](../../email-addresses-and-address-books/offline-address-books/offline-address-books.md).
+- **Offline address books (OABs)**: OABs contain address lists and GALs. OABs are used by Outlook clients in cached Exchange mode to provide local access to address lists and GALs for recipient look-ups. For more information, see [Offline address books in Exchange Server](../../email-addresses-and-address-books/offline-address-books/offline-address-books.md).
 
 Users in your organization use address lists and the GAL to find recipients for email messages. Here's an example of what address lists look like in Outlook 2016:
 
 ![Global Address List (GAL)](../../media/54c5aa4b-fbd3-4b37-8642-9a52b9558641.png)
 
-For procedures related to address lists, see [Procedures for address lists in Exchange 2016](address-list-procedures.md).
+For procedures related to address lists, see [Procedures for address lists in Exchange Server](address-list-procedures.md).
 
 ## Recipient filters for address lists
 
@@ -53,7 +53,7 @@ Recipient filters identify the recipients that are included in address lists and
 ## Global address lists
 <a name="GALs"> </a>
 
-By default, a new installation of Exchange 2016 creates an GAL named Default Global Address List that's the primary repository of all recipients in the Exchange organization. Typically, most organizations have only one GAL, because users can only see and use one GAL in Outlook and Outlook on the web (formerly known as Outlook Web App). You might need to create multiple GALs if you want to prevent groups of recipients from seeing each other (for example, you single Exchange organization contains two separate companies). If you plan on creating additional GALs, consider the following issues:
+By default, a new installation of Exchange Server creates an GAL named Default Global Address List that's the primary repository of all recipients in the Exchange organization. Typically, most organizations have only one GAL, because users can only see and use one GAL in Outlook and Outlook on the web (formerly known as Outlook Web App). You might need to create multiple GALs if you want to prevent groups of recipients from seeing each other (for example, you single Exchange organization contains two separate companies). If you plan on creating additional GALs, consider the following issues:
 
 - You can only use the Exchange Management Shell to create, modify, remove, and update GALs.
 
@@ -61,7 +61,7 @@ By default, a new installation of Exchange 2016 creates an GAL named Default Glo
 
 - Users can only see a GAL that they belong to (the recipient filter of the GAL includes them). If a user belongs to multiple GALs, they'll still see only one GAL based on the following conditions:
 
-- The user needs permissions to view the GAL. You assign user permissions to GALs by using address book policies (ABPs). For more information, see [Address book policies in Exchange 2016](../../email-addresses-and-address-books/address-book-policies/address-book-policies.md).
+- The user needs permissions to view the GAL. You assign user permissions to GALs by using address book policies (ABPs). For more information, see [Address book policies in Exchange Server](../../email-addresses-and-address-books/address-book-policies/address-book-policies.md).
 
 - If a user is still eligible to see multiple GALs, only the largest GAL is used (the GAL that contains the most recipients).
 
@@ -107,7 +107,7 @@ Although address lists are useful tools for users, poorly planned address lists 
 
 - Use a naming convention and location hierarchy for your address lists so users can immediately tell what the list is for (which recipients are included in the list). If you have difficulty naming your address lists, create fewer lists and remind users that they can find anyone in your organization by using the GAL.
 
-For detailed instructions about creating address lists in Exchange 2016, see [Create address lists](address-list-procedures.md#CreateAddressList).
+For detailed instructions about creating address lists in Exchange Server, see [Create address lists](address-list-procedures.md#CreateAddressList).
 
 ## Update address lists
 <a name="BestPractices"> </a>
