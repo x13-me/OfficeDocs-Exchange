@@ -9,23 +9,23 @@ ms.topic: overview
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 14df5e1a-a5f7-4b0d-ba97-f53b76f0e7e0
-description: "Summary: Learn about mail flow and the transport pipeline in Exchange 2016."
+description: "Summary: Learn about mail flow and the transport pipeline in Exchange Server."
 ---
 
 # Mail flow and the transport pipeline
 
- **Summary**: Learn about mail flow and the transport pipeline in Exchange 2016.
+ **Summary**: Learn about mail flow and the transport pipeline in Exchange 2016 or Exchange 2019.
 
-In Exchange Server 2016, mail flow occurs through the transport pipeline. The *transport pipeline* is a collection of services, connections, components, and queues that work together to route all messages to the categorizer in the Transport service on an Exchange 2016 Mailbox server inside the organization.
+In Exchange Server, mail flow occurs through the transport pipeline. The *transport pipeline* is a collection of services, connections, components, and queues that work together to route all messages to the categorizer in the Transport service on an Exchange Mailbox server inside the organization.
 
-For information about how to configure mail flow in a new Exchange 2016 organization, see [Configure mail flow and client access](../plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access.md).
+For information about how to configure mail flow in a new Exchange 2016 or Exchange 2019 organization, see [Configure mail flow and client access](../plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access.md).
 
 ## Understanding the transport pipeline
 <a name="TransportPipeline"> </a>
 
 The transport pipeline consists of the following services:
 
-- **Front End Transport service on Mailbox servers**: This service acts as a stateless proxy for all inbound and (optionally) outbound external SMTP traffic for the Exchange 2016 organization. The Front End Transport service doesn't inspect message content, doesn't communicate with the Mailbox Transport service, and doesn't queue any messages locally.
+- **Front End Transport service on Mailbox servers**: This service acts as a stateless proxy for all inbound and (optionally) outbound external SMTP traffic for the Exchange Server organization. The Front End Transport service doesn't inspect message content, doesn't communicate with the Mailbox Transport service, and doesn't queue any messages locally.
 
 - **Transport service on Mailbox servers**: This service is virtually identical to the Hub Transport server role in Exchange Server 2010. The Transport service handles all SMTP mail flow for the organization, performs message categorization, and performs message content inspection. Unlike Exchange 2010, the Transport service never communicates directly with mailbox databases. That task is now handled by the Mailbox Transport service. The Transport service routes messages among the Mailbox Transport service, the Transport service, the Front End Transport service, and (depending on your configuration) the Transport service on Edge Transport servers. The Transport service on Mailbox servers is described in more detail later in this topic.
 
@@ -39,12 +39,12 @@ The transport pipeline consists of the following services:
 
 - **Transport service on Edge Transport servers**: This service is very similar to the Transport service on Mailbox servers. If you have an Edge Transport server installed in the perimeter network, all mail coming from the Internet or going to the Internet flows through the Transport service Edge Transport server. This service is described in more detail later in this topic.
 
-The following diagram shows the relationships among the components in the Exchange 2016 transport pipeline.
+The following diagram shows the relationships among the components in the Exchange transport pipeline.
 
 > [!NOTE]
-> Although the diagrams in this topic show the components on a single Exchange 2016 server, communication also occurs between those components on different Exchange 2016 servers. The only communication that always occurs on the local Exchange 2016 server is between the Mailbox Transport service and the local mailbox database.
+> Although the diagrams in this topic show the components on a single Exchange server, communication also occurs between those components on different Exchange servers. The only communication that always occurs on the local Exchange server is between the Mailbox Transport service and the local mailbox database.
 
-**Overview of the transport pipeline in Exchange 2016**
+**Overview of the transport pipeline in Exchange Server**
 
 ![Transport pipeline overview diagram](../media/Transport_PipelineOverview.png)
 
@@ -55,7 +55,7 @@ The way messages from outside the Exchange organization enter the transport pipe
 
 #### Inbound mail flow (no Edge Transport servers)
 
-The following diagram and list describe inbound mail flow with only Exchange 2016 Mailbox servers.
+The following diagram and list describe inbound mail flow with only Exchange Mailbox servers.
 
 ![Inbound mail flow in the transport pipleline (no Edge Transport servers)](../media/45f8e675-43b1-4e3f-ba14-5c9a0d1551bf.png)
 
@@ -102,7 +102,7 @@ The message is routed based on the routing destination or delivery group.
 
 #### Outbound mail flow (no Edge Transport servers)
 
-By default, in a new Exchange 2016 organization, there's no Send connector that's configured to send messages to the Internet. You need to create the Send connector yourself. After you do that, Outbound mail flow occurs as described in the following diagram and list.
+By default, in a new Exchange Server organization, there's no Send connector that's configured to send messages to the Internet. You need to create the Send connector yourself. After you do that, Outbound mail flow occurs as described in the following diagram and list.
 
 ![Outbound mail flow in the transport pipleline (no Edge Transport servers)](../media/a672122e-435c-4e81-bd03-8f1643829e59.png)
 
@@ -139,7 +139,7 @@ If you have an Edge Transport server installed in the perimeter network, outboun
 ## Understanding the Transport service on Mailbox servers
 <a name="TransportService"> </a>
 
-Every message that's sent or received in an Exchange 2016 organization must be categorized in the Transport service on a Mailbox server before it can be routed and delivered. After a message has been categorized, it's put in a delivery queue for delivery to the destination mailbox database, the destination database availability group (DAG), Active Directory site or Active Directory forest, or to the destination domain outside the organization.
+Every message that's sent or received in an Exchange Server organization must be categorized in the Transport service on a Mailbox server before it can be routed and delivered. After a message has been categorized, it's put in a delivery queue for delivery to the destination mailbox database, the destination database availability group (DAG), Active Directory site or Active Directory forest, or to the destination domain outside the organization.
 
 The Transport service on a Mailbox server consists of the following components and processes:
 
