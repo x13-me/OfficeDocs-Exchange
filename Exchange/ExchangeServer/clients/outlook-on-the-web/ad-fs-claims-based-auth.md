@@ -3,20 +3,20 @@ title: "Use AD FS claims-based authentication with Outlook on the web"
 ms.author: chrisda
 author: chrisda
 manager: scotv
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 919a9bfb-c6df-490a-b2c4-51796b0f0596
-description: "Summary: Learn how to configure AD FS claims-based authentication to connect to Outlook on the web and the Exchange admin center in Exchange 2016."
+description: "Summary: Learn how to configure AD FS claims-based authentication to connect to Outlook on the web and the Exchange admin center in Exchange Server."
 ---
 
 # Use AD FS claims-based authentication with Outlook on the web
 
- **Summary**: Learn how to configure AD FS claims-based authentication to connect to Outlook on the web and the Exchange admin center in Exchange 2016.
+ **Summary**: Learn how to configure AD FS claims-based authentication to connect to Outlook on the web and the Exchange admin center in Exchange 2016 or Exchange 2019.
   
-Installing and configuring Active Directory Federation Services (AD FS) in Exchange Server 2016 organizations allows clients to use AD FS claims-based authentication to connect to Outlook on the web (formerly known as Outlook Web App) and the Exchange admin center (EAC). Claims-based identity is another approach to authentication that removes authentication management from the application, and makes it easier for you to manage accounts by centralizing authentication. When claims-based authentication is enabled, Outlook on the web and the EAC aren't responsible for authenticating users, storing user accounts and passwords, looking up user identity details, or integrating with other identity systems. Centralizing authentication helps make it easier to upgrade authentication methods in the future.
+Installing and configuring Active Directory Federation Services (AD FS) in Exchange Server organizations allows clients to use AD FS claims-based authentication to connect to Outlook on the web (formerly known as Outlook Web App) and the Exchange admin center (EAC). Claims-based identity is another approach to authentication that removes authentication management from the application, and makes it easier for you to manage accounts by centralizing authentication. When claims-based authentication is enabled, Outlook on the web and the EAC aren't responsible for authenticating users, storing user accounts and passwords, looking up user identity details, or integrating with other identity systems. Centralizing authentication helps make it easier to upgrade authentication methods in the future.
   
 AD FS claims-based authentication replaces the traditional authentication methods that are available for Outlook on the web and the EAC. For example:
   
@@ -30,7 +30,7 @@ AD FS claims-based authentication replaces the traditional authentication method
     
 - Windows authentication
     
-Setting up AD FS claims-based authentication for Outlook on the web and the EAC in Exchange 2016 involves the following additional servers:
+Setting up AD FS claims-based authentication for Outlook on the web and the EAC in Exchange Server involves the following additional servers:
   
 - A Windows Server 2012 or later domain controller (Active Directory Domain Services server role).
     
@@ -916,7 +916,7 @@ On the AD FS server, the federation service functions as a security token servic
   
  **Co-existence with other versions of Exchange**
   
-You can use AD FS authentication for Outlook on the web and the EAC when you have more than one version of Exchange deployed in your organization. This scenario is supported only if all clients are connecting through or Exchange 2016 servers, **and** all of those servers have been configured for AD FS authentication.
+You can use AD FS authentication for Outlook on the web and the EAC when you have more than one version of Exchange deployed in your organization. This scenario is supported only if all clients are connecting through Exchange servers, **and** all of those servers have been configured for AD FS authentication.
   
 Users with mailboxes on Exchange 2010 servers can access their mailboxes through an Exchange 2016 server that's configured for AD FS authentication. The initial client connection to the or Exchange 2016 server uses AD FS authentication. However, the proxied connection to Exchange 2010 uses Kerberos. There's no supported way to configure Exchange 2010 for direct AD FS authentication.
   
