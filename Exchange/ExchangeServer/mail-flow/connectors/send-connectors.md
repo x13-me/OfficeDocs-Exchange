@@ -3,20 +3,20 @@ title: "Send connectors"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 6aa19a12-c7b2-4eac-a8dc-9a4d26919ac5
-description: "Summary: Learn about Send connectors in Exchange 2016, and how they control mail flow from your Exchange organization."
+description: "Summary: Learn about Send connectors in Exchange Server, and how they control mail flow from your Exchange organization."
 ---
 
 # Send connectors
 
- **Summary**: Learn about Send connectors in Exchange 2016, and how they control mail flow from your Exchange organization.
+ **Summary**: Learn about Send connectors in Exchange 2016 and Exchange 2019, and how they control mail flow from your Exchange organization.
   
-Exchange 2016 uses Send connectors for outbound SMTP connections from source Exchange servers to destination messaging servers. The Send connector that's used to route messages to a recipient is selected during the routing resolution phase of message categorization. For more information, see [Mail routing](../../mail-flow/mail-routing/mail-routing.md).
+Exchange Server uses Send connectors for outbound SMTP connections from source Exchange servers to destination messaging servers. The Send connector that's used to route messages to a recipient is selected during the routing resolution phase of message categorization. For more information, see [Mail routing](../../mail-flow/mail-routing/mail-routing.md).
   
 You can create Send connectors in the Transport service on Mailbox servers, and on Edge Transport servers. Send connectors are stored in Active Directory and are visible to all Mailbox and servers in the organization.
   
@@ -39,10 +39,10 @@ These are the important settings on Send connectors:
     
 On Mailbox servers, you can create and manage Send connectors in the Exchange admin center or in the Exchange Management Shell. On Edge Transport servers, you can only use the Exchange Management Shell.
   
-## Send connector changes in Exchange 2016
+## Send connector changes in Exchange Server
 <a name="WhatsNew"> </a>
 
-These are the notable changes to Send connectors in Exchange 2016 compared to Exchange 2010:
+These are the notable changes to Send connectors in Exchange 2016 or Exchange 2019 compared to Exchange 2010:
   
 - You can configure Send connectors to redirect or *proxy* outbound mail through the Front End Transport service. For more information, see [Configure Send connectors to proxy outbound mail](proxy-outbound-mail.md).
     
@@ -50,14 +50,14 @@ These are the notable changes to Send connectors in Exchange 2016 compared to Ex
     
 - The _LinkedReceiveConnector_ parameter is no longer available.
     
-- The default maximum message size is increased to 35 MB (approximately 25 MB due to Base64 encoding). For more information, see [Message size limits in Exchange 2016](../../mail-flow/message-size-limits.md).
+- The default maximum message size is increased to 35 MB (approximately 25 MB due to Base64 encoding). For more information, see [Message size limits in Exchange Server](../../mail-flow/message-size-limits.md).
     
 - The _TlsCertificateName_ parameter allows you to specify the certificate issuer and the certificate subject. This helps minimize the risk of fraudulent certificates.
     
 ## Implicit Send connectors
 <a name="ImplicitSendConnectors"> </a>
 
-Although no Send connectors are created during the installation of Exchange 2016 servers, a special *implicit Send connector* named the intra-organization Send connector is present. This implicit Send connector is automatically available, invisible, and requires no management. The intra-organization Send connector exists in the transport services to send mail, either internally between services on the local Exchange server, or to services on remote Exchange servers in the organization. For example: 
+Although no Send connectors are created during the installation of Exchange servers, a special *implicit Send connector* named the intra-organization Send connector is present. This implicit Send connector is automatically available, invisible, and requires no management. The intra-organization Send connector exists in the transport services to send mail, either internally between services on the local Exchange server, or to services on remote Exchange servers in the organization. For example: 
   
 - Front End Transport service to the Transport service.
     
