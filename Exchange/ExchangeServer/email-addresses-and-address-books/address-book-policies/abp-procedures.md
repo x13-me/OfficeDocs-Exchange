@@ -260,8 +260,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](http://technet.
 
 5. In the **Specify words or phrases** dialog that appears, enter the value that you want to search for, and then click **OK**.
 
-6. Back on the **Advanced search** window, click **OK**.
-    ![In the EAC at Recipients \> Mailboxes, click More Options \> Advanced search to find user mailboxes](../../media/b4677167-ffb1-4224-b7e8-db4e11d61072.png)
+6. Back on the **Advanced search** window, click **OK**. ![In the EAC at Recipients \> Mailboxes, click More Options \> Advanced search to find user mailboxes](../../media/b4677167-ffb1-4224-b7e8-db4e11d61072.png)
 
 3. In the list of mailboxes, select multiple mailboxes of the same type (for example, **User**) from the list. For example:
 
