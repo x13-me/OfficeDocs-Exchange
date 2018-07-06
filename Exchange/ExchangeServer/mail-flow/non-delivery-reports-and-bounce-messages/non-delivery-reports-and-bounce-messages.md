@@ -1,26 +1,26 @@
 ---
-title: "DSNs and NDRs in Exchange 2016"
+title: "DSNs and NDRs in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 8e91de84-76fa-49b2-898c-c5eface76560
-description: "Summary: Administrators can learn about how to read and interpret delivery status notifications (also known as DSNs, non-delivery reports, NDRs or bounce messages) in Exchange 2016."
+description: "Summary: Administrators can learn about how to read and interpret delivery status notifications (also known as DSNs, non-delivery reports, NDRs or bounce messages) in Exchange Server."
 ---
 
-# DSNs and NDRs in Exchange 2016
+# DSNs and NDRs in Exchange Server
 
- **Summary**: Administrators can learn about how to read and interpret delivery status notifications (also known as DSNs, non-delivery reports, NDRs or bounce messages) in Exchange 2016.
+ **Summary**: Administrators can learn about how to read and interpret delivery status notifications (also known as DSNs, non-delivery reports, NDRs or bounce messages) in Exchange 2016 and Exchange 2019.
   
 When there's a problem delivering a message, Exchange sends an NDR to the message sender that indicates there was a problem. NDRs include a code that indicates why the message wasn't delivered, and possible solutions to help get the message delivered.
   
 The information that's included in NDRs is designed to be easy to read and helpful for both users and administrators. In some cases, senders can identify and fix their own problems (for example, when there's a typo in the recipient's email address). In other cases, an administrator may need to fix an issue in the Exchange environment, or notify the administrators in the destination domain about problems in their messaging environment.
   
-For procedures related to NDRs in Exchange 2016, see [Procedures for DSNs and NDRs in Exchange 2016](ndr-procedures.md).
+For procedures related to NDRs in Exchange Server, see [Procedures for DSNs and NDRs in Exchange Server](ndr-procedures.md).
   
 If you need help with NDRs in Office 365 or Exchange Online, see [Email non-delivery reports in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=524931).
   
@@ -49,7 +49,7 @@ The information in an NDR is separated into two sections:
     
   - The enhanced status code determines the text that's displayed in the user information section (the code value isn't altered by Exchange).
     
-    You can use the **New-SystemMessage** cmdlet in the Exchange Management Shell to modify the text that appears in user information section for a given enhanced status code (including different text in different languages). By creating custom explanations, you can provide specific content for your environment, such as contact information for your help desk, or links to your Intranet for self-service support. For more information, see [Procedures for DSNs and NDRs in Exchange 2016](ndr-procedures.md).
+    You can use the **New-SystemMessage** cmdlet in the Exchange Management Shell to modify the text that appears in user information section for a given enhanced status code (including different text in different languages). By creating custom explanations, you can provide specific content for your environment, such as contact information for your help desk, or links to your Intranet for self-service support. For more information, see [Procedures for DSNs and NDRs in Exchange Server](ndr-procedures.md).
     
   - The [Common enhanced status codes](non-delivery-reports-and-bounce-messages.md#Codes) section in this topic explains what the numbers mean, the codes that you're likely to encounter, and suggestions to fix the underlying problem that prevented the message from being delivered.
     
@@ -125,16 +125,16 @@ The following tables contain the enhanced status codes that are returned in NDRs
 |5.2.2  <br/> | `Mailbox full` <br/> |The recipient's mailbox has exceeded its storage quota and is no longer able to accept new messages. For more information about configuring mailbox quotas, see [Configure storage quotas for a mailbox](../../recipients/user-mailboxes/storage-quotas.md).  <br/> |
 |5.2.3  <br/> | `RESOLVER.RST.RecipSizeLimit; message too large for this recipient` <br/> |The message is too large. Send the message again without any attachments, or configure a larger message size limit for the recipient. For more information, see [Recipient limits](../../mail-flow/message-size-limits.md#User).  <br/> |
 |5.3.0  <br/> | `Too many related errors` <br/> |The message was determined to be malformed, and was moved to the poison message queue. For more information, see [Types of queues](../../mail-flow/queues/queues.md#QueueTypes).  <br/> |
-|5.3.2  <br/> | `STOREDRV.Deliver: Missing or bad StoreDriver MDB properties` <br/> |You're using the ABP Routing agent, and the recipient isn't a member of the global address list that's specified in their address book policy (ABP). For more information, see [Install and Configure the Address Book Policy Routing Agent](http://technet.microsoft.com/library/20e8a43d-4508-4388-a2c9-aa3073593cc2.aspx) and [Address book policies in Exchange 2016](../../email-addresses-and-address-books/address-book-policies/address-book-policies.md).  <br/> |
+|5.3.2  <br/> | `STOREDRV.Deliver: Missing or bad StoreDriver MDB properties` <br/> |You're using the ABP Routing agent, and the recipient isn't a member of the global address list that's specified in their address book policy (ABP). For more information, see [Install and Configure the Address Book Policy Routing Agent](http://technet.microsoft.com/library/20e8a43d-4508-4388-a2c9-aa3073593cc2.aspx) and [Address book policies in Exchange Server](../../email-addresses-and-address-books/address-book-policies/address-book-policies.md).  <br/> |
 |5.3.3  <br/> | `Unrecognized command` <br/> |Receive connectors that are used for internal mail flow are missing the required Exchange Server authentication mechanism. For more information about authentication on Receive connectors, see [Receive connector authentication mechanisms](../../mail-flow/connectors/receive-connectors.md#AuthMechanisms).  <br/> |
-|5.3.4  <br/> | `Message size exceeds fixed maximum message size` <br/> |The message is too large. This error can be generated by the source or destination messaging system. Send the message again without any attachments, or configure a larger message size limit. For more information, see [Message size limits in Exchange 2016](../../mail-flow/message-size-limits.md).  <br/> |
+|5.3.4  <br/> | `Message size exceeds fixed maximum message size` <br/> |The message is too large. This error can be generated by the source or destination messaging system. Send the message again without any attachments, or configure a larger message size limit. For more information, see [Message size limits in Exchange Server](../../mail-flow/message-size-limits.md).  <br/> |
 |5.3.5  <br/> | `System incorrectly configured` <br/> |A mail loop was detected. Verify that the **FQDN** property on the Receive connector doesn't match the FQDN of another server, service, or device that's used in mail flow in your organization (by default, the Receive connector uses the FQDN of the Exchange server).  <br/> |
 |5.4.4  <br/> | `SMTPSEND.DNS.NonExistentDomain; nonexistent domain` <br/> |There's a DNS or network adapter configuration issue on the Exchange server.  <br/> • Verify the internal and external DNS lookup settings for the Exchange by running these commands in the Exchange Management Shell:  <br/> `Get-TransportService | Format-List Name,ExternalDNS*,InternalDNS*` <br/> `Get-FrontEndTransportService | Format-List Name,ExternalDNS*,InternalDNS*` <br/> You can configure these settings by using the _InternalDNS\*_ and _ExternalDNS\*_ parameters on the **Get-TransportService** and **Get-FrontEndTransportService** cmdlets.  <br/> By default, these settings are used by Send connectors (the default value of the _UseExternalDNSServersEnabled_ parameter value is `$false`).  <br/> • Check the priority (order) of the network adapters in the operating system of the Exchange server.  <br/> |
 |5.4.6  <br/> | `Hop count exceeded - possible mail loop` <br/> |A configuration error has caused an email loop. By default, after 20 iterations of an email loop, Exchange interrupts the loop and generates an NDR.  <br/> Verify that Inbox rules for the recipient and sender, or forwarding rules on the recipient 's mailbox aren't causing this (the message generates a message, which generates another message, and the process continues indefinitely).  <br/> Verify the mailbox doesn't have a **targetAddress** property value in Active Directory (this property corresponds to the _ExternalEmailAddress_ parameter for mail users in Exchange).  <br/> If you remove Exchange servers, or modify settings related to mail routing an mail flow, be sure to restart the Microsoft Exchange Transport and Exchange Frontend Transport services.  <br/> |
 |5.5.2  <br/> | `Send hello first` <br/> |SMTP commands are sent out of sequence (for example, a server sends an SMTP command like AUTH or MAIL FROM before identifying itself with the EHLO command). After establishing a connection to a messaging server, the first SMTP command must always be EHLO or HELO.  <br/> |
-|5.5.3  <br/> | `Too many recipients` <br/> |The combined total of recipients on the To, Cc, and Bcc lines of the message exceeds the total number of recipients allowed in a single message for the organization, Receive connector, or sender. For more information, see [Message size limits in Exchange 2016](../../mail-flow/message-size-limits.md).  <br/> |
+|5.5.3  <br/> | `Too many recipients` <br/> |The combined total of recipients on the To, Cc, and Bcc lines of the message exceeds the total number of recipients allowed in a single message for the organization, Receive connector, or sender. For more information, see [Message size limits in Exchange Server](../../mail-flow/message-size-limits.md).  <br/> |
 |5.7.1  <br/> | `Unable to relay` <br/> or  <br/> `Client was not authenticated` <br/> |You have an application server or device that's trying to relay messages through Exchange. For more information, see [Allow anonymous relay on Exchange servers](../../mail-flow/connectors/allow-anonymous-relay.md).  <br/> The recipient is configured to only accept messages from authenticated (typically, internal) senders. For more information, see [Configure message delivery restrictions for a mailbox](../../recipients/user-mailboxes/message-delivery-restrictions.md).  <br/> |
 |5.7.3  <br/> | `Cannot achieve Exchange Server authentication` <br/> or  <br/> `Not Authorized` <br/> |A firewall or other device is blocking the Extended SMTP command that's required for Exchange Server authentication (X-EXPS).  <br/> Internal email traffic is flowing through connectors that aren't configured to use the Exchange Server authentication method . Verify the remote IP address ranges on any custom Receive connectors.  <br/> |
-|5.7.900  <br/> to  <br/> 5.7.999  <br/> | `Delivery not authorized, message refused` <br/> |The message was rejected by a mail flow rule (also known as a transport rule). This enhanced status code range is available when the rule is configured to reject messages (otherwise, the default code that's used is 5.7.1). For more information, see [Mail flow rule actions in Exchange 2016](../../policy-and-compliance/mail-flow-rules/actions.md).  <br/> |
+|5.7.900  <br/> to  <br/> 5.7.999  <br/> | `Delivery not authorized, message refused` <br/> |The message was rejected by a mail flow rule (also known as a transport rule). This enhanced status code range is available when the rule is configured to reject messages (otherwise, the default code that's used is 5.7.1). For more information, see [Mail flow rule actions in Exchange Server](../../policy-and-compliance/mail-flow-rules/actions.md).  <br/> |
    
 
