@@ -3,20 +3,20 @@ title: "Modify the SMTP banner on Receive connectors"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: d667704e-fd69-4aca-9c35-eef7006944b2
-description: "Learn how to modify the connection response that messaging servers receive after connecting to an Exchange 2016 server."
+description: "Learn how to modify the connection response that messaging servers receive after connecting to an Exchange server."
 ---
 
 # Modify the SMTP banner on Receive connectors
 
-Learn how to modify the connection response that messaging servers receive after connecting to an Exchange 2016 server.
+Learn how to modify the connection response that messaging servers receive after connecting to an Exchange 2016 or Exchange 2019 server.
   
-The *SMTP banner* is the initial SMTP connection response that a messaging server receives after it connects to an Exchange server. Specifically, the messaging server connects to a Receive connector that's configured on the Exchange server. For Exchange 2016 Mailbox servers, external messaging servers connect through Receive connectors that are configured in the Front End Transport service. The default Receive connector that's configured to accept anonymous SMTP connections is named Default Frontend _\<ServerName\>_. For Edge Transport servers, the default Receive connector in the Transport service named Default internal receive connector _\<ServerName\>_\> is configured to accept anonymous SMTP connections. For more information, see [How messages from external senders enter the transport pipeline](../../mail-flow/mail-flow.md#Inbound) and [Default Receive connectors created during setup](receive-connectors.md#DefaultConnectors).
+The *SMTP banner* is the initial SMTP connection response that a messaging server receives after it connects to an Exchange server. Specifically, the messaging server connects to a Receive connector that's configured on the Exchange server. For Exchange Mailbox servers, external messaging servers connect through Receive connectors that are configured in the Front End Transport service. The default Receive connector that's configured to accept anonymous SMTP connections is named Default Frontend _\<ServerName\>_. For Edge Transport servers, the default Receive connector in the Transport service named Default internal receive connector _\<ServerName\>_\> is configured to accept anonymous SMTP connections. For more information, see [How messages from external senders enter the transport pipeline](../../mail-flow/mail-flow.md#Inbound) and [Default Receive connectors created during setup](receive-connectors.md#DefaultConnectors).
   
 By default, the connection response looks like this:
   
