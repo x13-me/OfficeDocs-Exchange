@@ -3,24 +3,24 @@ title: "Limits for public folders"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 709b075e-9584-484b-bcaa-e781c26497b4
-description: "Summary: Learn about supported limits for public folders in Exchange 2016."
+description: "Summary: Learn about supported limits for public folders in Exchange Server."
 ---
 
 # Limits for public folders
 
- **Summary**: Learn about supported limits for public folders in Exchange 2016.
+ **Summary**: Learn about supported limits for public folders in Exchange 2016 and Exchange 2019.
   
-In Exchange 2016, public folders are based on a mailbox architecture that allows public folders to benefit from things such as the resiliency of a Database Availability Group (DAG) and other mailbox enhancements. However, there are limits and performance considerations that should be taken into account.
+In Exchange Server, public folders are based on a mailbox architecture that allows public folders to benefit from things such as the resiliency of a Database Availability Group (DAG) and other mailbox enhancements. However, there are limits and performance considerations that should be taken into account.
   
 ## Limits
 
-The following table lists the limits for public folders in on-premises Exchange 2016. Unless the limits are specifically stated as recommended, the values listed in this table are the supported limits for public folders.
+The following table lists the limits for public folders in on-premises Exchange Server. Unless the limits are specifically stated as recommended, the values listed in this table are the supported limits for public folders.
   
 > [!IMPORTANT]
 > Looking for Exchange Online limits for Office 365? See [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188).
@@ -38,6 +38,6 @@ The following table lists the limits for public folders in on-premises Exchange 
 |Moved item retention  <br/> |14 days recommended  <br/> |Use the _DefaultPublicFolderMovedItemRetention_ parameter on the **Set-OrganizationConfig** cmdlet.  <br/> |
 |Age limit  <br/> |We recommend that you set this as the same default that you use for regular mailboxes.  <br/> |These settings can be set at the following levels:  <br/> **Organizational level**: The _DefaultPublicFolderAgeLimit_ parameter on the **Set-OrganizationConfig** cmdlet.  <br/> **Mailbox level**: The _AgeLimit_ parameter on the **Set-Mailbox** cmdlet.  <br/> **Folder level**: The _AgeLimit_ parameter on the **Set-PublicFolder** cmdlet.  <br/> |
 |Deleted item retention  <br/> |We recommend that you set this as the same default that you use for regular mailboxes.  <br/> |These settings can be set at the following levels:  <br/> **Organizational level**: The _DefaultPublicFolderMovedItemRetention_ parameter on the **Set-OrganizationConfig** cmdlet.  <br/> **Mailbox level**: The _RetainDeletedItemsFor_ on the **Set-Mailbox** cmdlet.  <br/> **Folder level:**: The _RetainDeleteItemsFor_ parameter on the **Set-PublicFolder** cmdlet.  <br/> |
-|Maximum number of public folders that can be migrated to Exchange 2016  <br/> |500,000  <br/> |This is the maximum number of public folders you can move to Exchange 2016 from a legacy version of Exchange in a single migration. For details on migrating public folders, see [Use batch migration to migrate public folders to Exchange 2016 from previous versions](batch-migration-from-previous-versions.md).  <br/> |
+|Maximum number of public folders that can be migrated to Exchange 2016 or Exchange 2019 <br/> |500,000  <br/> |This is the maximum number of public folders you can move to Exchange 2016 or Exchange 2019 from a legacy version of Exchange in a single migration. For details on migrating public folders, see [Use batch migration to migrate public folders to Exchange 2016 or Exchange 2019 from previous versions](batch-migration-from-previous-versions.md).  <br/> |
    
 
