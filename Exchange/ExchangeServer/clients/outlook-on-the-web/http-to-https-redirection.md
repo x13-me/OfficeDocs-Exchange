@@ -1,22 +1,22 @@
 ---
-title: "Configure http to https redirection for Outlook on the web in Exchange 2016"
+title: "Configure http to https redirection for Outlook on the web in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: scotv
-ms.date: 6/8/2018
+ms.date:7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 5fb6a873-f3cf-4f82-87d1-2ff6e47a0080
-description: "Summary: Learn how to configure redirection for Outlook on the web in Exchange 2016 so http requests are automatically redirected to https."
+description: "Summary: Learn how to configure redirection for Outlook on the web in Exchange Server so http requests are automatically redirected to https."
 ---
 
-# Configure http to https redirection for Outlook on the web in Exchange 2016
+# Configure http to https redirection for Outlook on the web in Exchange Server
 
- **Summary**: Learn how to configure redirection for Outlook on the web in Exchange 2016 so http requests are automatically redirected to https.
+ **Summary**: Learn how to configure redirection for Outlook on the web in Exchange 2016 or Exchange 2019 so http requests are automatically redirected to https.
   
-By default in Exchange Server 2016, the URL https:// _\<ServerName\>_ redirects users to https:// _\<ServerName\>_/owa. But, if anyone tries to access Outlook on the web (formerly known as Outlook Web App) by using http:// _\<ServerName\>_ or http:// _\<ServerName\>_/owa, they'll get an error.
+By default in Exchange Server, the URL https:// _\<ServerName\>_ redirects users to https:// _\<ServerName\>_/owa. But, if anyone tries to access Outlook on the web (formerly known as Outlook Web App) by using http:// _\<ServerName\>_ or http:// _\<ServerName\>_/owa, they'll get an error.
   
 You can configure http redirection for Outlook on the web so that requests for http:// _\<ServerName\>_ or http:// _\<ServerName\>_/owa are automatically redirected to https:// _\<ServerName\>_/owa. This requires the following configuration steps in Internet Information Services (IIS):
   
@@ -30,7 +30,7 @@ You can configure http redirection for Outlook on the web so that requests for h
     
 5. Reset IIS for the changes to take effect.
     
-For the default SSL and http redirect settings on all virtual directories in the default website, see the [Default Require SSL and HTTP Redirect settings in the default website on an Exchange 2016 server](http-to-https-redirection.md#DefaultValues) section at the end of this topic.
+For the default SSL and http redirect settings on all virtual directories in the default website, see the [Default Require SSL and HTTP Redirect settings in the default website on an Exchange server](http-to-https-redirection.md#DefaultValues) section at the end of this topic.
   
 ## What do you need to know before you begin?
 
@@ -73,7 +73,7 @@ For the default SSL and http redirect settings on all virtual directories in the
 
 When you change the **Require SSL** setting on a website in IIS, the setting is automatically inherited by all virtual directories in the website. Because we're only interested in configuring Outlook on the web, you need to restore the **Require SSL** setting for other virtual directories that had it enabled by default.
   
-Based on the information in the [Default Require SSL and HTTP Redirect settings in the default website on an Exchange 2016 server](http-to-https-redirection.md#DefaultValues) section, use the following procedure to restore the setting on the other virtual directories where **Require SSL** was enabled by default: 
+Based on the information in the [Default Require SSL and HTTP Redirect settings in the default website on an Exchange server](http-to-https-redirection.md#DefaultValues) section, use the following procedure to restore the setting on the other virtual directories where **Require SSL** was enabled by default: 
   
 1. In IIS Manager, expand the server, expand **Sites**, and expand **Default Web Site**.
     
@@ -125,7 +125,7 @@ Based on the information in the [Default Require SSL and HTTP Redirect settings 
 
 ## Step 4: Use IIS Manager to remove http redirection from all virtual directories in the default website
 
-When you enable redirection on a website in IIS, the setting is automatically inherited by all virtual directories in the website. Because we're only interested in configuring redirection for the default website, you need to remove the redirect setting from all virtual directories. By default, no directories or virtual directories in the default website are enabled for redirection. For more information, see the [Default Require SSL and HTTP Redirect settings in the default website on an Exchange 2016 server](http-to-https-redirection.md#DefaultValues) section 
+When you enable redirection on a website in IIS, the setting is automatically inherited by all virtual directories in the website. Because we're only interested in configuring redirection for the default website, you need to remove the redirect setting from all virtual directories. By default, no directories or virtual directories in the default website are enabled for redirection. For more information, see the [Default Require SSL and HTTP Redirect settings in the default website on an Exchange server](http-to-https-redirection.md#DefaultValues) section 
   
 Use the following procedure to remove the redirect setting from all virtual directories in the default website (including /owa):
   
@@ -181,10 +181,10 @@ To verify that you have successfully configured http to https redirection for Ou
     
 4.  Verify that you're redirected to Outlook on the web in https, and verify that you can log in successfully.
     
-## Default Require SSL and HTTP Redirect settings in the default website on an Exchange 2016 server
+## Default Require SSL and HTTP Redirect settings in the default website on an Exchange server
 <a name="DefaultValues"> </a>
 
-The default **Require SSL** and **HTTP Redirect** settings for the default website and all virtual directories in the default website on an Exchange 2016 server are described in the following table.
+The default **Require SSL** and **HTTP Redirect** settings for the default website and all virtual directories in the default website on an Exchange server are described in the following table.
   
 |**Website**|**Virtual directory**|**Require SSL**|**HTTP Redirect**|
 |:-----|:-----|:-----|:-----|
