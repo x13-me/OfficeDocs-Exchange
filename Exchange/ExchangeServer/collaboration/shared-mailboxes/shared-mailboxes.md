@@ -3,7 +3,7 @@ title: "Shared mailboxes"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 4/19/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-itpro
@@ -46,6 +46,6 @@ You can use the following permissions with a shared mailbox.
     
 ## Converting shared mailboxes
 
-In previous versions of Exchange, you could use a regular mailbox as a delegated mailbox. If you have delegated mailboxes, you can use the Exchange Management Shell to convert those delegate mailboxes to shared mailboxes. For details, see [Convert a mailbox in Exchange 2016](../../recipients/user-mailboxes/convert-mailboxes.md).
+In previous versions of Exchange, you could use a regular mailbox as a delegated mailbox. If you have delegated mailboxes, you can use the Exchange Management Shell to convert those delegate mailboxes to shared mailboxes. For details, see [Convert a mailbox in Exchange Server](../../recipients/user-mailboxes/convert-mailboxes.md).
   
 
