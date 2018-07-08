@@ -1,24 +1,24 @@
 ---
-title: "How retention age is calculated in Exchange 2016"
+title: "How retention age is calculated in Exchange Server"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: a7daf7aa-0411-4b26-a422-eefd1b113f9f
-description: "Summary: Learn how retention age is calculated in Exchange 2016."
+description: "Summary: Learn how retention age is calculated in Exchange Server."
 ---
 
-# How retention age is calculated in Exchange 2016
+# How retention age is calculated in Exchange Server
 
- **Summary**: Learn how retention age is calculated in Exchange 2016.
+ **Summary**: Learn how retention age is calculated in Exchange 2016 and Exchange 2019.
   
 The Managed Folder Assistant (MFA) is one of many mailbox assistant processes that runs on mailbox servers. Its job is to process mailboxes that have a Retention Policy applied, add the Retention Tags included in the policy to the mailbox, and process items in the mailbox. If the items have a retention tag, the assistant tests the age of those items. If an item has exceeded its retention age, it takes the specified retention action. Retention actions include moving an item to the user's archive, deleting the item and allowing recovery, or deleting the item permanently.
   
-See [Retention tags and retention policies in Exchange 2016](retention-tags-and-retention-policies.md) for more information.
+See [Retention tags and retention policies in Exchange Server](retention-tags-and-retention-policies.md) for more information.
   
 ## Determining the age of different types of items
 
@@ -48,7 +48,7 @@ Items in the Deleted Items folder and items which may have a start and end date,
 
 Items in mailboxes placed on Retention Hold aren't removed until the hold is removed.
   
-If a mailbox is placed on In-Place Hold or Litigation Hold, expiring items are removed from the Inbox but preserved in the Recoverable Items folder until the mailbox is removed from [In-Place Hold and Litigation Hold in Exchange 2016](../../policy-and-compliance/holds/holds.md).
+If a mailbox is placed on In-Place Hold or Litigation Hold, expiring items are removed from the Inbox but preserved in the Recoverable Items folder until the mailbox is removed from [In-Place Hold and Litigation Hold in Exchange Server](../../policy-and-compliance/holds/holds.md).
   
 In hybrid deployments, the same retention tags and retention policies must exist in your on-premises and Exchange Online organizations in order to consistently move and expire items across both organizations. See [Export and import retention tags](http://technet.microsoft.com/library/18405ea2-7ccc-475e-bd84-8b040e17bf44.aspx) for more information.
   
