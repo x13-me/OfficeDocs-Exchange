@@ -1,20 +1,20 @@
 ---
-title: "Mailbox audit logging in Exchange 2016"
+title: "Mailbox audit logging in Exchange Server"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 29b67d58-eef9-4ad4-863f-562405ea8794
-description: "Summary: Learn about the specific logon types and user actions that can be audited when you enable mailbox audit logging for user mailboxes in Exchange 2016."
+description: "Summary: Learn about the specific logon types and user actions that can be audited when you enable mailbox audit logging for user mailboxes in Exchange Server."
 ---
 
-# Mailbox audit logging in Exchange 2016
+# Mailbox audit logging in Exchange Server
 
- **Summary**: Learn about the specific logon types and user actions that can be audited when you enable mailbox audit logging for user mailboxes in Exchange 2016.
+ **Summary**: Learn about the specific logon types and user actions that can be audited when you enable mailbox audit logging for user mailboxes in Exchange 2016 and Exchange 2019.
   
 Because mailboxes can contain sensitive, high business impact (HBI) information and personally identifiable information (PII), it's important that you track who logs on to the mailboxes in your organization and what actions are taken. It's especially important to track access to mailboxes by users other than the mailbox owner. These users are referred to as *delegate users*.
   
