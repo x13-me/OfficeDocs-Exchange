@@ -1,24 +1,24 @@
 ---
-title: "Administrator audit logging in Exchange 2016"
+title: "Administrator audit logging in Exchange Server"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 22b17eb8-d8ee-4599-b202-d6a7928c20d9
-description: "Summary: Learn about administrator audit logging in Exchange 2016, and how you use the audit log to track changes to objects in your Exchange organization."
+description: "Summary: Learn about administrator audit logging in Exchange Server, and how you use the audit log to track changes to objects in your Exchange organization."
 ---
 
-# Administrator audit logging in Exchange 2016
+# Administrator audit logging in Exchange Server
 
- **Summary**: Learn about administrator audit logging in Exchange 2016, and how you use the audit log to track changes to objects in your Exchange organization.
+ **Summary**: Learn about administrator audit logging in Exchange 2016 and Exchange 2019, and how you use the audit log to track changes to objects in your Exchange organization.
   
-You can use administrator audit logging in Exchange Server 2016 to log when a user or administrator makes a change in your organization. By keeping a log of the changes, you can trace changes to the person who made the change, augment your change logs with detailed records of the change as it was implemented, comply with regulatory requirements and requests for discovery, and more.
+You can use administrator audit logging in Exchange Server to log when a user or administrator makes a change in your organization. By keeping a log of the changes, you can trace changes to the person who made the change, augment your change logs with detailed records of the change as it was implemented, comply with regulatory requirements and requests for discovery, and more.
   
-By default, administrator audit logging is enabled in new installations of Exchange 2016.
+By default, administrator audit logging is enabled in new installations of Exchange Server.
   
 ## What gets audited
 <a name="WhatGets"> </a>
@@ -167,14 +167,14 @@ You can use the same search criteria with the **New-AdminAuditLogSearch** cmdlet
 After you run the **New-AdminAuditLogSearch** cmdlet, Exchange may take up to 15 minutes to deliver the report to the specified recipient. The XML file attached report can be a maximum of 10 MB. The XML file contains the same information described in the table in [Audit log contents](#LogContents.md). For more information about the structure of the XML file, see [Administrator audit log structure](log-structure.md).
   
 > [!NOTE]
-> Outlook Web App doesn't allow you to open XML attachments by default. You can either configure Exchange to allow XML attachments to be viewed using Outlook Web App, or you can use another email client, such as Microsoft Outlook, to view the attachment. For information about how to configure Outlook Web App to allow you to view an XML attachment, see [View or configure Outlook on the web virtual directories in Exchange 2016](../../clients/outlook-on-the-web/virtual-directories.md).
+> Outlook Web App doesn't allow you to open XML attachments by default. You can either configure Exchange to allow XML attachments to be viewed using Outlook Web App, or you can use another email client, such as Microsoft Outlook, to view the attachment. For information about how to configure Outlook Web App to allow you to view an XML attachment, see [View or configure Outlook on the web virtual directories in Exchange Server](../../clients/outlook-on-the-web/virtual-directories.md).
   
 For information about how to use the **New-AdminAuditLogSearch** cmdlet, see [Search the Administrator Audit Log](http://technet.microsoft.com/library/c7188d53-e672-492b-b57d-cd711379ddb3.aspx).
   
 ## Manual admin audit log entries
 <a name="ManualAudit"> </a>
 
-In addition to logging Exchange cmdlets when they're run, Exchange 2016 enables you to manually write log entries to the audit log. Exchange 2016 supports this using the **Write-AdminAuditLog** cmdlet. Situations where you might want to add a manual log entry include the following: 
+In addition to logging Exchange cmdlets when they're run, Exchange Server enables you to manually write log entries to the audit log. Exchange Server supports this using the **Write-AdminAuditLog** cmdlet. Situations where you might want to add a manual log entry include the following: 
   
 - Custom script entry and exit
     
@@ -196,7 +196,7 @@ Administrator audit logging relies on Active Directory replication to replicate 
 ## Admin Audit Log agent
 <a name="Agent"> </a>
 
-The Admin Audit Log built-in cmdlet extension agent performs admin audit logging of cmdlet operations in Exchange 2016. This agent reads the audit log configuration and then performs an evaluation of each cmdlet run in your organization. If the criteria you've specified in the admin audit log configuration matches the cmdlet that's being run, the agent generates an audit log entry.
+The Admin Audit Log built-in cmdlet extension agent performs admin audit logging of cmdlet operations in Exchange Server. This agent reads the audit log configuration and then performs an evaluation of each cmdlet run in your organization. If the criteria you've specified in the admin audit log configuration matches the cmdlet that's being run, the agent generates an audit log entry.
   
 The Admin Audit Log agent is enabled by default, which is required for admin audit logging to function. It can't be disabled, and its priority can't be changed. For more information about cmdlet extension agents, see [Cmdlet Extension Agents](http://technet.microsoft.com/library/0257790d-3988-46c3-8882-25ca11559e84.aspx).
   
