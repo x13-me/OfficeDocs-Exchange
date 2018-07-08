@@ -1,22 +1,22 @@
 ---
-title: "Sensitive information types in Exchange 2016"
+title: "Sensitive information types in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: scotv
-ms.date: 6/8/2018
+ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: reference
 keywords:
-- 'data loss prevention in office 365,Data loss prevetion in Exchange,DLP,sensitive information types'
+- 'data loss prevention in office 365,Data loss prevention in Exchange,DLP,sensitive information types'
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 98b81f9c-87bb-4905-8e53-04621c3ae74d
-description: "Summary: Learn about the sensitive information types you can use when setting up DLP policies in your Exchange 2016 organization."
+description: "Summary: Learn about the sensitive information types you can use when setting up DLP policies in your Exchange Server organization."
 ---
 
-# Sensitive information types in Exchange 2016
+# Sensitive information types in Exchange Server
 
- **Summary**: Learn about the sensitive information types you can use when setting up DLP policies in your Exchange 2016 organization.
+ **Summary**: Learn about the sensitive information types you can use when setting up DLP policies in your Exchange 2016 or Exchange 2019 organization.
   
 Data loss prevention (DLP) includes 80 sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
   
