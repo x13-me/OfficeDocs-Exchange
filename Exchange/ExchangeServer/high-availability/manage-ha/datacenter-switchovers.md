@@ -156,7 +156,7 @@ Assuming that all appropriate configuration changes have been completed to defin
   
 ### Activating Unified Messaging Services
 
-> [NOTE]
+> [!NOTE]
 > Unified Messaging is not available in Exchange 2019.
 
 Unified Messaging (UM) services connect to an organization's PBX system and phone lines. The logical connection between the PBX system and the Unified Messaging service is provided by an IP gateway. IP gateways include high availability functionality and are able to switch between multiple Unified Messaging services when a failure is detected.
