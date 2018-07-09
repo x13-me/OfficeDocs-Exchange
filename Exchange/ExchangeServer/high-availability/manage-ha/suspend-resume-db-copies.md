@@ -3,18 +3,18 @@ title: "Suspend or resume a mailbox database copy"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/4/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 96aa1b82-3e15-4215-843e-3d583af9504b
-description: "Summary: How to suspend or resume a mailbox database copy in Exchange 2016."
+description: "Summary: How to suspend or resume a mailbox database copy in Exchange Server."
 ---
 
 # Suspend or resume a mailbox database copy
 
- **Summary**: How to suspend or resume a mailbox database copy in Exchange 2016.
+ **Summary**: How to suspend or resume a mailbox database copy in Exchange 2016 and Exchange 2019.
   
 You may need to suspend or resume a database copy for a variety of reasons, such as maintenance on the disk that contains the database copy. Or you may need to suspend an individual database copy from activation for disaster recovery purposes.
   
@@ -24,7 +24,7 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 - Estimated time to complete this task: 1 minute
     
-- To open the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](../../permissions/feature-permissions/ha-permissions.md) topic.
     
