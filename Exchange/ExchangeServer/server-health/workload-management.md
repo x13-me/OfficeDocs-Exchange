@@ -1,20 +1,20 @@
 ---
-title: "User workload management in Exchange 2016"
+title: "User workload management in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 276740c4-bdb7-49f1-9470-ae6f2bfd65aa
-description: "Summary: Learn about user workload management and throttling in Exchange 2016."
+description: "Summary: Learn about user workload management and throttling in Exchange Server."
 ---
 
-# User workload management in Exchange 2016
+# User workload management in Exchange Server
 
- **Summary**: Learn about user workload management and throttling in Exchange 2016.
+ **Summary**: Learn about user workload management and throttling in Exchange 2016 and Exchange 2019.
 
 User workload management allows you to control how Exchange system resources are consumed by users. This feature was available in Exchange 2010 (known as *user throttling*), and was expanded to its current level in Exchange 2013.
 
