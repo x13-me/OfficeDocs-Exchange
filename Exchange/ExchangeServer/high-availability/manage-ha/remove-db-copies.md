@@ -3,18 +3,18 @@ title: "Remove a mailbox database copy"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/4/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 99fecdde-b158-4dfc-9ca7-ff7c0ada7819
-description: "Summary: How to remove a copy of a mailbox database in Exchange 2016."
+description: "Summary: How to remove a copy of a mailbox database in Exchange Server."
 ---
 
 # Remove a mailbox database copy
 
- **Summary**: How to remove a copy of a mailbox database in Exchange 2016.
+ **Summary**: How to remove a copy of a mailbox database in Exchange 2016 or Exchange 2019.
   
 You can use these procedures to remove a copy of a mailbox database, but you can't use them to remove the **last** copy of a mailbox database. For detailed steps about how to remove the last copy of a mailbox database, see [Remove a mailbox database](../../architecture/mailbox-servers/manage-databases.md#BKMK_Remove) or [Remove-MailboxDatabase](http://technet.microsoft.com/library/4d07d736-1dd7-43af-9f54-37d7c648572e.aspx).
   
@@ -30,7 +30,7 @@ Looking for other management tasks related to mailbox database copies? Check out
     
 - After removing a database copy, you must manually delete any database and transaction log files from the server from which the database copy is being removed.
     
-- To open the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](../../permissions/feature-permissions/ha-permissions.md) topic.
     
