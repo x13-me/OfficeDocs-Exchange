@@ -3,20 +3,20 @@ title: "Managing high availability and site resilience"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: f9677392-88d2-457f-a488-245771a8c1f2
-description: "Summary: The operational tasks of managing DAGs, mailbox database copies, and other high availability elements of Exchange 2016."
+description: "Summary: The operational tasks of managing DAGs, mailbox database copies, and other high availability elements of Exchange Server."
 ---
 
 # Managing high availability and site resilience
 
- **Summary**: The operational tasks of managing DAGs, mailbox database copies, and other high availability elements of Exchange 2016.
+ **Summary**: The operational tasks of managing DAGs, mailbox database copies, and other high availability elements of Exchange 2016 and Exchange 2019.
   
-After you build, validate, and deploy a Microsoft Exchange Server 2016 high availability or site resilience solution, the solution transitions from the deployment phase to the operational phase of the overall solution lifecycle. The operational phase consists of several tasks, and all tasks are related to one of the following areas: database availability groups (DAGs), mailbox database copies, performing proactive monitoring, and managing switchovers and failovers.
+After you build, validate, and deploy a Microsoft Exchange Server high availability or site resilience solution, the solution transitions from the deployment phase to the operational phase of the overall solution lifecycle. The operational phase consists of several tasks, and all tasks are related to one of the following areas: database availability groups (DAGs), mailbox database copies, performing proactive monitoring, and managing switchovers and failovers.
   
 ## Database availability group management
 <a name="Da"> </a>
@@ -49,7 +49,7 @@ The operational management tasks associated with DAGs include:
     
   - **Network encryption**: By default, DAGs use encryption only between DAG networks on different subnets. You can enable encryption for all DAG networks or for seeding operations only, or you can disable encryption for all DAG networks.
     
-- **Shutting down DAG members**: The Exchange 2016 high availability solution is integrated with the Windows shutdown process. If an administrator or application initiates a shutdown of a Windows server in a DAG that has a mounted database that's replicated to one or more DAG members, the system will try to activate another copy of the mounted databases prior to allowing the shutdown process to complete. However, this new behavior doesn't guarantee that all of the databases on the server being shut down will experience a lossless activation. As a result, it's a best practice to perform a server switchover prior to shutting down a server that's a member of a DAG.
+- **Shutting down DAG members**: The Exchange Server high availability solution is integrated with the Windows shutdown process. If an administrator or application initiates a shutdown of a Windows server in a DAG that has a mounted database that's replicated to one or more DAG members, the system will try to activate another copy of the mounted databases prior to allowing the shutdown process to complete. However, this new behavior doesn't guarantee that all of the databases on the server being shut down will experience a lossless activation. As a result, it's a best practice to perform a server switchover prior to shutting down a server that's a member of a DAG.
     
 For detailed steps about how to create a DAG, see [Create a database availability group](create-dags.md). For detailed steps about how to configure DAGs and DAG properties, see [Configure database availability group properties](configure-dag-properties.md). For more information about each of the preceding management tasks, and about managing DAGs in general, see [Managing database availability groups](http://technet.microsoft.com/library/4abde67b-4995-4a57-894f-ba76aa72341c.aspx).
   
@@ -75,7 +75,7 @@ For detailed steps about how to add a mailbox database copy, see [Add a mailbox 
 ## Proactive monitoring
 <a name="Pr"> </a>
 
-Making sure that your servers are operating reliably and that your database copies are healthy are key objectives for daily messaging operations. Exchange 2016 includes a number of features that can be used to perform a variety of health monitoring tasks for DAGs and mailbox database copies, including:
+Making sure that your servers are operating reliably and that your database copies are healthy are key objectives for daily messaging operations. Exchange Server includes a number of features that can be used to perform a variety of health monitoring tasks for DAGs and mailbox database copies, including:
   
 - [Get-MailboxDatabaseCopyStatus](http://technet.microsoft.com/library/6ad690fb-3a23-41d4-b19d-666b34e62b26.aspx)
     
