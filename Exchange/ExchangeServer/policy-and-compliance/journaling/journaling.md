@@ -103,7 +103,7 @@ By default, if your organization uses Unified Messaging (UM) to consolidate the 
   
 To disable journaling for voice mail and missed call notifications, see [Enable or disable journaling for voice mail and missed call notifications](journaling-procedures.md#DisableJournalingForUMNotifications).
 
-> [NOTE]
+> [!NOTE]
 > Unified Messaging is not available in Exchange 2019.
   
 ### Journal rule scope
