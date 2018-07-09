@@ -12,8 +12,6 @@ ms.assetid: b3299a39-9663-41e4-b76e-9d2f7879d486
 description: "A custom data loss prevention (DLP) policy allows you to establish conditions, rules, and actions that can help meet the specific needs of your organization, and which may not be covered in one of the pre-existing DLP templates."
 ---
 
-# Create a custom DLP policy
-
 A custom data loss prevention (DLP) policy allows you to establish conditions, rules, and actions that can help meet the specific needs of your organization, and which may not be covered in one of the pre-existing DLP templates.
   
 The rule conditions that are available to you in a single policy include all the traditional transport rules in addition to the sensitive information types presented in [Sensitive Information Types Inventory](http://technet.microsoft.com/library/98b81f9c-87bb-4905-8e53-04621c3ae74d.aspx). For more information about transport rules, see [Transport Rules](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx) (Exchange 2016) or [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md).
@@ -34,7 +32,18 @@ For additional management tasks related to creating a custom DLP policy, see [DL
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
     
 > [!NOTE]
-> Due to the variances in customer environments, Microsoft Customer Support Services (CSS) cannot participate in the development or testing of custom Regular Expression scripts ("RegEx scripts"). For RegEX custom script development, testing and debugging, Office 365 customers will need to rely upon internal IT resources. Alternatively, Office 365 customers may choose to use an external consulting resource such as Microsoft Consulting Services (MCS). Regardless of the script development resource, CSS EXO and EOP support engineers are not available to assist customers with custom RegEx script inquiries. 
+> Due to the variances
+in customer environments and content match requirements, Microsoft Support cannot assist in providing custom content matching definitions – e.g. defining Custom Classifications and/or Regular Expression patterns (“RegEx”). For custom content matching development, testing, and debugging, Office 365 customers will need to rely upon internal IT resources, or use an external
+consulting resource such as Microsoft Consulting Services (MCS).  Support engineers can provide limited support for the
+feature, but cannot provide assurances that any custom content matching development will fulfill the customer’s requirements or
+obligations.  As an example of the type of support which can be provided, sample
+regular expression patterns may be provided for testing purposes. Or support can assist with troubleshooting an existing RegEx
+pattern which is not triggering as expected with a single specific content
+example. 
+
+For additional information on the .NET regex engine which is used for processing the text, see the following documentation: https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions.
+
+# Create a custom DLP policy 
   
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 

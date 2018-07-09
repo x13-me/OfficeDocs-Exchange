@@ -140,6 +140,8 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 
 - Outlook 2010 SP2 and updates KB2956191 and KB2965295
 
+- Outlook 2016 for Mac
+
 - Outlook for Mac for Office 365
 
 ## Exchange 2016 third-party clients
