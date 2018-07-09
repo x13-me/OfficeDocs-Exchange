@@ -3,18 +3,18 @@ title: "AutoReseed"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 61f9a8be-070e-4c62-b505-52644fcff0c5
-description: "Summary: Automatically restore a database in Exchange 2016 with pre-provisioned spare disks."
+description: "Summary: Automatically restore a database in Exchange Server with pre-provisioned spare disks."
 ---
 
 # AutoReseed
 
- **Summary**: Automatically restore a database in Exchange 2016 with pre-provisioned spare disks.
+ **Summary**: Automatically restore a database in Exchange 2016 or Exchange 2019 with pre-provisioned spare disks.
   
 Automatic Reseed, or AutoReseed, is a feature that replaces standard actions administrators take in response to a disk failure, or a database corruption event, or another issue that necessitates a reseed of a database copy.
   
@@ -38,7 +38,7 @@ Once all retries are exhausted, the workflow stops. If, after 3 days, the databa
   
 At this point, if the failure was a disk failure, it would require manual intervention by an operator or administrator to remove and replace the failed disk and reconfigure the replacement disk as a spare.
   
-AutoReseed is configured using three properties of the DAG. Two of the properties refer to the two mount points that are in use. Exchange 2016 leverages the fact that Windows Server allows multiple mount points per volume. The _AutoDagVolumesRootFolderPath_ property refers to the mount point that contains all of the available volumes. This includes volumes that host databases and spare volumes. The _AutoDagDatabasesRootFolderPath_ property refers to the mount point that contains the databases. A third DAG property, _AutoDagDatabaseCopiesPerVolume_, is used to configure the number of database copies per volume.
+AutoReseed is configured using three properties of the DAG. Two of the properties refer to the two mount points that are in use. Exchange Server leverages the fact that Windows Server allows multiple mount points per volume. The _AutoDagVolumesRootFolderPath_ property refers to the mount point that contains all of the available volumes. This includes volumes that host databases and spare volumes. The _AutoDagDatabasesRootFolderPath_ property refers to the mount point that contains the databases. A third DAG property, _AutoDagDatabaseCopiesPerVolume_, is used to configure the number of database copies per volume.
   
 An example AutoReseed configuration is illustrated below.
   
