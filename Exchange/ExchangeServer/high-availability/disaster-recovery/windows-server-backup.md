@@ -3,21 +3,21 @@ title: "Using Windows Server Backup to back up and restore Exchange data"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 4/19/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 0fac891a-5713-42b6-afd5-c91b2b88f966
-description: "Summary: An overview of using Windows Server Backup with Exchange Server 2016."
+description: "Summary: An overview of using Windows Server Backup with Exchange Server."
 ---
 
 # Using Windows Server Backup to back up and restore Exchange data
 
- **Summary**: An overview of using Windows Server Backup with Exchange Server 2016.
+ **Summary**: An overview of using Windows Server Backup with Exchange Server 2016 or Exchange Server 2019.
   
-Microsoft's [preferred architecture](https://blogs.technet.com/b/exchange/archive/2014/04/21/the-preferred-architecture.aspx) for Exchange Server 2016 leverages a concept known as Exchange Native Data Protection. Exchange Native Data Protection relies on native Exchange features to protect your mailbox data, without the use of traditional backups. But if you want to create backups, Exchange includes a plug-in for Windows Server Backup (WSB) that enables you to create Exchange-aware Volume Shadow Copy Service (VSS)-based backups of Exchange data. To take Exchange-aware backups, you must have the WSB feature installed.
+Microsoft's [preferred architecture](https://blogs.technet.com/b/exchange/archive/2014/04/21/the-preferred-architecture.aspx) for Exchange Server leverages a concept known as Exchange Native Data Protection. Exchange Native Data Protection relies on native Exchange features to protect your mailbox data, without the use of traditional backups. But if you want to create backups, Exchange includes a plug-in for Windows Server Backup (WSB) that enables you to create Exchange-aware Volume Shadow Copy Service (VSS)-based backups of Exchange data. To take Exchange-aware backups, you must have the WSB feature installed.
   
 The plug-in, WSBExchange.exe, runs as a service named Microsoft Exchange Server Extension for Windows Server Backup (the short name for this service is WSBExchange). This service is automatically installed and configured for manual startup on all Mailbox servers. The plug-in enables WSB to create Exchange-aware VSS backups.
   
@@ -39,7 +39,7 @@ Before using WSB to back up Exchange data, we recommend that you familiarize you
     
 - Bare metal restores are supported when using WSB; however, the recommended recovery approach for Exchange servers is to recover the Exchange server and then restore the data. If you're using a third-party backup application (e.g., non-Microsoft), then support for bare metal restores of Exchange may be available from your backup application vendor.
     
-The following table describes the supportability of the backup and recovery options available for Exchange 2016 with WSB.
+The following table describes the supportability of the backup and recovery options available for Exchange Server with WSB.
   
 |**If you…**|**Then…**|
 |:-----|:-----|
