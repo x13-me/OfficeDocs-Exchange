@@ -3,26 +3,26 @@ title: "Mailbox database copies"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: ce748bca-3e24-493b-b9e6-153157bffd6a
-description: "Summary: What you should know about mailbox database copies in Exchange 2016, and your options when creating them."
+description: "Summary: What you should know about mailbox database copies in Exchange Server, and your options when creating them."
 ---
 
 # Mailbox database copies
 
- **Summary**: What you should know about mailbox database copies in Exchange 2016, and your options when creating them.
+ **Summary**: What you should know about mailbox database copies in Exchange 2016 and Exchange 2019, and your options when creating them.
   
-Microsoft Exchange Server 2016 leverages the concept of database mobility, which is Exchange-managed database-level failovers. Database mobility disconnects databases from servers, adds support for up to 16 copies of a single database, and provides a native experience for adding database copies to a database.
+Microsoft Exchange Server leverages the concept of database mobility, which is Exchange-managed database-level failovers. Database mobility disconnects databases from servers, adds support for up to 16 copies of a single database, and provides a native experience for adding database copies to a database.
   
 ## Key characteristics
 
 The key characteristics of mailbox database copies are:
   
-- Up to 16 copies of an Exchange 2016 mailbox database can be created on multiple Mailbox servers, provided the servers are grouped into a database availability group (DAG), which is a boundary for continuous replication. Exchange 2016 mailbox databases can be replicated only to other Exchange 2016 Mailbox servers within a DAG. You can't replicate a database outside of a DAG, nor can you replicate an Exchange 2016 mailbox database to a server running Exchange 2013 or earlier. For detailed information about DAGs, see [Database availability groups](database-availability-groups.md).
+- Up to 16 copies of an Exchange Server mailbox database can be created on multiple Mailbox servers, provided the servers are grouped into a database availability group (DAG), which is a boundary for continuous replication. Exchange Server mailbox databases can be replicated only to the same version Exchange Mailbox servers within a DAG. You can't replicate a database outside of a DAG, nor can you replicate an Exchange 2016 or Exchange 2019 mailbox database to a server running Exchange 2013 or earlier. For detailed information about DAGs, see [Database availability groups](database-availability-groups.md).
     
 - All Mailbox servers in a DAG must be in the same Active Directory domain.
     
