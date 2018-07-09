@@ -3,20 +3,20 @@ title: "Manage database availability groups"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 74be3f97-ec0f-4d2a-b5d8-7770cc489919
-description: "Summary: Learn how to create, configure, and manage a database availability group (DAG) in Exchange 2016."
+description: "Summary: Learn how to create, configure, and manage a database availability group (DAG) in Exchange Server."
 ---
 
 # Manage database availability groups
 
- **Summary**: Learn how to create, configure, and manage a database availability group (DAG) in Exchange 2016.
+ **Summary**: Learn how to create, configure, and manage a database availability group (DAG) in Exchange 2016 and Exchange 2019.
   
-A database availability group (DAG) is a set of up to 16 Exchange 2016 Mailbox servers that provides automatic, database-level recovery from a database, server, or network failure. DAGs use continuous replication and a subset of Windows failover clustering technologies to provide high availability and site resilience. Mailbox servers in a DAG monitor each other for failures. When a Mailbox server is added to a DAG, that server works with the other servers in the DAG to provide automatic, database-level recovery from database failures.
+A database availability group (DAG) is a set of up to 16 Exchange Mailbox servers that provides automatic, database-level recovery from a database, server, or network failure. DAGs use continuous replication and a subset of Windows failover clustering technologies to provide high availability and site resilience. Mailbox servers in a DAG monitor each other for failures. When a Mailbox server is added to a DAG, that server works with the other servers in the DAG to provide automatic, database-level recovery from database failures.
   
 When you create a DAG, it's initially empty. When you add the first server to a DAG, a failover cluster is automatically created for the DAG. In addition, the infrastructure that monitors the servers for network or server failures is initiated. The failover cluster heartbeat mechanism and cluster database are then used to track and manage information about the DAG that can change quickly, such as database mount status, replication status, and last mounted location.
   
@@ -56,7 +56,7 @@ The requirements for the witness server are as follows:
 Regardless of what server is used as the witness server, if the Windows Firewall is enabled on the intended witness server, you must enable the Windows Firewall exception for File and Printer Sharing. The witness server uses SMB port 445.
   
 > [!IMPORTANT]
-> If the witness server you specify isn't an Exchange 2016 or Exchange 2010 server, you must add the Exchange Trusted Subsystem universal security group (USG) to the local Administrators group on the witness server prior to creating the DAG. These security permissions are necessary to ensure that Exchange can create a directory and share on the witness server as needed.
+> If the witness server you specify isn't an Exchange 2019, Exchange 2016, or Exchange 2010 server, you must add the Exchange Trusted Subsystem universal security group (USG) to the local Administrators group on the witness server prior to creating the DAG. These security permissions are necessary to ensure that Exchange can create a directory and share on the witness server as needed.
   
 Neither the witness server nor the witness directory needs to be fault tolerant or use any form of redundancy or high availability. There's no need to use a clustered file server for the witness server or employ any other form of resiliency for the witness server. There are several reasons for this. With larger DAGs (for example, six members or more), several failures are required before the witness server is needed. Because a six-member DAG can tolerate as many as two voter failures without losing quorum, it would take as many as three voters failing before the witness server would be needed to maintain a quorum. Also, if there's a failure that affects your current witness server (for example, you lose the witness server because of a hardware failure), you can use the [Set-DatabaseAvailabilityGroup](http://technet.microsoft.com/library/4353c3ab-75b7-485e-89ae-d4b09b44b646.aspx) cmdlet to configure a new witness server and witness directory (provided you have a quorum).
   
@@ -245,7 +245,7 @@ A DAG network is a collection of one or more subnets used for either replication
 > [!NOTE]
 > When using multiple replication networks, there's no way to specify an order of precedence for network use. Exchange randomly selects a replication network from the group of replication networks to use for log shipping.
   
-In Exchange 2010, manual configuration of DAG networks was necessary in many scenarios. By default in Exchange 2013, DAG networks are automatically configured by the system. Before you can create or modify DAG networks, you must first enable manual DAG network control by running the following command:
+In Exchange 2010, manual configuration of DAG networks was necessary in many scenarios. By default in Exchange 2013 and later, DAG networks are automatically configured by the system. Before you can create or modify DAG networks, you must first enable manual DAG network control by running the following command:
   
 ```
 Set-DatabaseAvailabilityGroup <DAGName> -ManualDagNetworkConfiguration $true
@@ -399,7 +399,7 @@ Set-MailboxServer -Identity EX1 -MaximumActiveDatabases 20
 ## Performing maintenance on DAG members
 <a name="Pm"> </a>
 
-Before performing any type of software or hardware maintenance on a DAG member, you should first put the DAG member in maintenance mode. The following scripts are provided with Exchange 2016 to assist with DAG maintenance procedures.
+Before performing any type of software or hardware maintenance on a DAG member, you should first put the DAG member in maintenance mode. The following scripts are provided with Exchange Server to assist with DAG maintenance procedures.
   
 - **StartDagServerMaintenanceScripts.ps1** Assists with moving all active databases off the server. It also moves all critical DAG support functionality, such as the Primary Active Manager (PAM) role, and blocks them from moving back to the server before maintenance is complete.
     
@@ -437,6 +437,7 @@ To begin maintenance procedures on a DAG member, including flushing the transpor
   ```
   Set-ServerComponentState <ServerName> -Component UMCallRouter -State Draining -Requester Maintenance
   ```
+  > [NOTE:] Unified Messaging is not available in Exchange 2019.
 
 4. To access the DAG maintenance scripts, run `CD $ExScripts`.
     
@@ -451,7 +452,7 @@ To begin maintenance procedures on a DAG member, including flushing the transpor
     > [!NOTE]
     > This script can take some time to execute, and during this time you may not see any activity on your screen.
   
-6. To redirect messages pending delivery in the local queues to the Exchange 2016 server specified by the Target parameter, run
+6. To redirect messages pending delivery in the local queues to the Exchange server specified by the Target parameter, run
     
   ```
   Redirect-Message -Server <ServerName> -Target <Server FQDN>
@@ -506,6 +507,7 @@ When you're ready to restore the DAG member to full production status, including
   ```
   Set-ServerComponentState <ServerName> -Component UMCallRouter -State Active -Requester Maintenance
   ```
+  > [NOTE:] Unified Messaging is not available in Exchange 2019. 
 
 3. To execute the StopDagMaintenance.ps1 script, run
     
