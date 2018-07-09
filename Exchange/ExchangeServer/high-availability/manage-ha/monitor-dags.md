@@ -3,18 +3,18 @@ title: "Monitor database availability groups"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: f5bdfd6e-e93c-4d96-8bc2-548750d51930
-description: "Summary: Resources and methods for monitoring the health and status of DAGs in Exchange 2016."
+description: "Summary: Resources and methods for monitoring the health and status of DAGs in Exchange Server."
 ---
 
 # Monitor database availability groups
 
- **Summary**: Resources and methods for monitoring the health and status of DAGs in Exchange 2016.
+ **Summary**: Resources and methods for monitoring the health and status of DAGs in Exchange 2016 and Exchange 2019.
   
 You can use the details in this topic for monitoring mailbox database copies for database availability groups (DAGs), for gathering diagnostic information, and for configuring the low disk space monitoring threshold.
   
@@ -117,7 +117,7 @@ Applications and Services logs are a new category of event logs. These logs stor
   
 The Applications and Services logs category includes four subtypes: Admin, Operational, Analytic, and Debug logs. Events in Admin logs are of particular interest if you use event log records to troubleshoot problems. Events in the Admin log should provide you with guidance about how to respond to the events. Events in the Operational log are also useful, but may require more interpretation. Admin and Debug logs aren't as user friendly. Analytic logs (which by default are hidden and disabled) store events that trace an issue, and often a high volume of events are logged. Debug logs are used by developers when debugging applications.
   
-Exchange 2016 logs events to crimson channels in the Applications and Services logs area. You can view these channels by performing these steps:
+Exchange Server logs events to crimson channels in the Applications and Services logs area. You can view these channels by performing these steps:
   
 1. Open Event Viewer.
     
@@ -136,7 +136,7 @@ The ManagedAvailability channel contains recovery action logs and results and re
 ## Low Disk Space Monitor
 <a name="Crimson"> </a>
 
-Exchange 2016 Managed Availability monitors hundreds of system metrics and components every minute, including the amount of free disk space on volumes used by the Mailbox server role. Prior to Exchange 2013 Service Pack 1 (SP1), Exchange monitored available space on all local volumes, including volumes that don't contain any databases or log files. In Exchange 2016, only volumes that contain Exchange databases and log files are monitored. The default threshold for the low volume space monitor is 180 GB. You can configure the threshold by adding the following DWORD registry value (in MB) on each Mailbox server that you want to customize:
+Exchange Server Managed Availability monitors hundreds of system metrics and components every minute, including the amount of free disk space on volumes used by the Mailbox server role. Prior to Exchange 2013 Service Pack 1 (SP1), Exchange monitored available space on all local volumes, including volumes that don't contain any databases or log files. In Exchange 2016 and Exchange 2019, only volumes that contain Exchange databases and log files are monitored. The default threshold for the low volume space monitor is 180 GB. You can configure the threshold by adding the following DWORD registry value (in MB) on each Mailbox server that you want to customize:
   
 Path: **HKEY_LOCAL_MACHINE\Software\Microsoft\ExchangeServer\v15\Replay\Parameters**
   
@@ -151,7 +151,7 @@ After configuring or modifying the above registry value, you must restart the Mi
 ## CollectOverMetrics.ps1 script
 <a name="CollectOver"> </a>
 
-Exchange 2016 includes a script called CollectOverMetrics.ps1, which can be found in the Scripts folder. CollectOverMetrics.ps1 reads DAG member event logs to gather information about database operations (such as database mounts, moves, and failovers) over a specific time period. For each operation, the script records the following information:
+Exchange Server includes a script called CollectOverMetrics.ps1, which can be found in the Scripts folder. CollectOverMetrics.ps1 reads DAG member event logs to gather information about database operations (such as database mounts, moves, and failovers) over a specific time period. For each operation, the script records the following information:
   
 - Identity of the database
     
@@ -211,7 +211,7 @@ CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter {($_.ActiveO
 ## CollectReplicationMetrics.ps1 script
 <a name="CollectRep"> </a>
 
-CollectReplicationMetrics.ps1 is another health metric script included in Exchange 2016. This script provides an active form of monitoring because it collects metrics in real time, while the script is running. CollectReplicationMetrics.ps1 collects data from performance counters related to database replication. The script gathers counter data from multiple Mailbox servers, writes each server's data to a .csv file, and then reports various statistics across all of this data (for example, the amount of time each copy was failed or suspended, the average copy or replay queue length, or the amount of time that copies were outside of their failover criteria).
+CollectReplicationMetrics.ps1 is another health metric script included in Exchange Server. This script provides an active form of monitoring because it collects metrics in real time, while the script is running. CollectReplicationMetrics.ps1 collects data from performance counters related to database replication. The script gathers counter data from multiple Mailbox servers, writes each server's data to a .csv file, and then reports various statistics across all of this data (for example, the amount of time each copy was failed or suspended, the average copy or replay queue length, or the amount of time that copies were outside of their failover criteria).
   
 You can either specify the servers individually, or you can specify entire DAGs. You can either run the script to first collect the data and then generate the report, or you can run it to just gather the data or to only report on data that's already been collected. You can specify the frequency at which data should be sampled and the total duration to gather data.
   
