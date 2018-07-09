@@ -17,7 +17,7 @@ description: "Summary: Learn about permissions that are required to manage Unifi
  **Summary**: Learn about permissions that are required to manage Unified Messaging services and features in Exchange Server  or Exchange Server 2016.
   
 The permissions required to manage Unified Messaging services and features on Mailbox servers vary depending on the procedure being performed or the cmdlet you want to run.
-> [NOTE]
+> [!NOTE]
 > Unified Messaging is not available in Exchange 2019.
   
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:
