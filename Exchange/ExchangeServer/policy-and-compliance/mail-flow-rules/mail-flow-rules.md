@@ -138,7 +138,7 @@ There are two mixed environment scenarios that are common:
 - **Coexistence with Exchange 2010**
     
     > [NOTE] 
-    > This applies to Exchange 2016 only.
+    > This section applies to Exchange 2016 only.
     
     When you coexist with Exchange 2010, all mail flow rules are stored in Active Directory and replicated across your organization regardless of the Exchange Server version you used to create the rules. However, all mail flow rules are associated with the Exchange server version that was used to create them and are stored in a version-specific container in Active Directory. When you first deploy Exchange 2016 in your organization, any existing rules are imported to Exchange 2016 as part of the setup process. However, any changes afterwards would need to be made with both versions. For example, if you change an existing rule in Exchange 2016 (Exchange Management Shell or the EAC), you need to make the same change in Exchange 2010 (Exchange Management Shell or the Exchange Management Console).
     
