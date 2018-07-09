@@ -3,18 +3,18 @@ title: "Datacenter switchovers"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: ac208c12-04d0-4809-bacd-72478ff14983
-description: "Summary: How to plan for, and then perform, a datacenter switchover in Exchange 2016."
+description: "Summary: How to plan for, and then perform, a datacenter switchover in Exchange Server."
 ---
 
 # Datacenter switchovers
 
- **Summary**: How to plan for, and then perform, a datacenter switchover in Exchange 2016.
+ **Summary**: How to plan for, and then perform, a datacenter switchover in Exchange 2016 or Exchange 2019.
   
 In a site resilient configuration, automatic recovery in response to a site-level failure can occur within a DAG, allowing the messaging system to remain in a functional state. This configuration requires at least three locations, as it requires deploying DAG members in two locations and the DAG's witness server in a third location.
   
@@ -140,7 +140,7 @@ Clients will then automatically connect to the new service endpoints in one of t
   
 - Clients will continue to try to connect, and should automatically connect after the TTL has expired for the original DNS entry, and after the entry is expired from the client's DNS cache. Users can also run the `ipconfig /flushdns` command from a command prompt to manually clear their DNS cache.
     
-- Clients starting or restarting will perform a DNS lookup on startup and will get the new IP address for the service endpoint, which will be an Exchange 2016 server running Client Access services, or a Client Access services array, in the second datacenter.
+- Clients starting or restarting will perform a DNS lookup on startup and will get the new IP address for the service endpoint, which will be an Exchange server running Client Access services, or a Client Access services array, in the second datacenter.
     
 Assuming that all appropriate configuration changes have been completed to define and configure the services in the second datacenter to function as they were in the primary datacenter, and assuming that the established DNS configuration is correct, no further changes should be needed to activate Client Access services.
   
@@ -155,6 +155,9 @@ Clients and other servers that submit messages typically identify those servers 
 Assuming that all appropriate configuration changes have been completed to define and configure the services in the second datacenter to function as they were in the primary datacenter, and assuming that the established DNS configuration is correct, no further changes should be needed to activate transport services.
   
 ### Activating Unified Messaging Services
+
+> [NOTE]
+> Unified Messaging is not available in Exchange 2019.
 
 Unified Messaging (UM) services connect to an organization's PBX system and phone lines. The logical connection between the PBX system and the Unified Messaging service is provided by an IP gateway. IP gateways include high availability functionality and are able to switch between multiple Unified Messaging services when a failure is detected.
   
