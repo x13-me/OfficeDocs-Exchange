@@ -20,7 +20,7 @@ description: "Summary: Learn about database availability groups (DAGs) in Exchan
 A database availability group (DAG) is the base component of the Mailbox server high availability and site resilience framework built into Microsoft Exchange Server. A DAG is a group of up to 16 Mailbox servers that hosts a set of databases and provides automatic database-level recovery from failures that affect individual servers or databases.
   
 > [!IMPORTANT]
-> All servers within a DAG must be running the same version of Exchange. You can't mix Exchange 2013 servers, Exchange 2016, or Exchange 2019 servers in the same DAG.
+> All servers within a DAG must be running the same version of Exchange. For example, you can't mix Exchange 2013 servers and Exchange 2016 servers in the same DAG.
   
 A DAG is a boundary for mailbox database replication, database and server switchovers and failovers, and an internal component called *Active Manager*. Active Manager, which runs on every Mailbox server, manages switchovers and failovers within DAGs. For more information about Active Manager, see [Active Manager](active-manager.md).
   
