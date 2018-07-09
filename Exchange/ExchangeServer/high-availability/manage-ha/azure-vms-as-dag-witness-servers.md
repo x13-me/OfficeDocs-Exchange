@@ -3,13 +3,13 @@ title: "Using a Microsoft Azure VM as a DAG witness server"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 03d1e215-518b-4b48-bfcd-8d187ff8f5ef
-description: "Summary: Learn how to configure a virtual machine (VM) as an Exchange 2016 DAG witness server in Azure."
+description: "Summary: Learn how to configure a virtual machine (VM) as an Exchange Server DAG witness server in Azure."
 ---
 
 # Using a Microsoft Azure VM as a DAG witness server
