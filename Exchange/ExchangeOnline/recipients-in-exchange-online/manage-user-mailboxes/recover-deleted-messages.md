@@ -3,13 +3,13 @@ title: "Recover deleted messages in a user's mailbox"
 ms.author: markjjo
 author: markjjo
 manager: scotv
-ms.date: 12/9/2016
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12
-description: "(This topic is intended for Exchange administrators.)"
+description: "Administrators can search for and recover deleted email messages in a user's mailbox."
 ---
 
 # Recover deleted messages in a user's mailbox
@@ -27,7 +27,7 @@ Administrators can search for and recover deleted email messages in a user's mai
     
 - Procedures in this topic require specific permissions. See each procedure for its permissions information.
     
-- Single item recovery must be enabled for a mailbox before the item you want to recover is deleted. In Exchange Online, single item recovery is enabled by default when a new mailbox is created. In Exchange 2013, single item recovery is disabled when a mailbox is created. For more information, see [Enable or disable single item recovery for a mailbox](enable-or-disable-single-item-recovery.md).
+- Single item recovery must be enabled for a mailbox before the item you want to recover is deleted. In Exchange Online, single item recovery is enabled by default when a new mailbox is created. In Exchange Server, single item recovery is disabled when a mailbox is created. For more information, see [Enable or disable single item recovery for a mailbox](enable-or-disable-single-item-recovery.md).
     
 - To search for and recover items, you must have the following information:
     
@@ -44,7 +44,7 @@ Administrators can search for and recover deleted email messages in a user's mai
     
 ## (Optional) Step 1: Connect to Exchange Online using remote PowerShell
 
-You only need to perform this step if you have an Exchange Online or Office 365 organization. If you have an Exchange 2013 organization, go to the next step and run the command in the Exchange Management Shell.
+You only need to perform this step if you have an Exchange Online or Office 365 organization. If you have an Exchange Server organization, go to the next step and run the command in the Exchange Management Shell.
   
 1. On your local computer, open Windows PowerShell and run the following command.
     
@@ -109,7 +109,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 > [!NOTE]
 > You can't use the EAC to restore recovered items. 
   
-After messages have been recovered to a discovery mailbox, you can restore them to the user's mailbox by using the **Search-Mailbox** cmdlet. In Exchange 2013, you can also use the **New-MailboxExportRequest** and **New-MailboxImportRequest** cmdlets to export the messages to or import the messages from a .pst file. 
+After messages have been recovered to a discovery mailbox, you can restore them to the user's mailbox by using the **Search-Mailbox** cmdlet. In Exchange Server, you can also use the **New-MailboxExportRequest** and **New-MailboxImportRequest** cmdlets to export the messages to or import the messages from a .pst file. 
   
 ### Use the Shell to restore messages
 
@@ -125,9 +125,9 @@ For detailed syntax and parameter information, see [Search-Mailbox](http://techn
   
 To verify that you have successfully recovered messages to the user's mailbox, have the user review messages in the target folder you specified in the above command. 
   
-### (Exchange 2013) Use the Shell to export and import messages from a .pst file
+### (Exchange Server) Use the Shell to export and import messages from a .pst file
 
-In Exchange 2013, you can export contents from a mailbox to a .pst file and import the contents of a .pst file to a mailbox. To learn more about mailbox import and export, see [Understanding Mailbox Import and Export Requests](http://technet.microsoft.com/library/157a7d88-d3aa-4056-9a50-df67451b14be.aspx). You can't perform this task in Exchange Online.
+In Exchange Server, you can export contents from a mailbox to a .pst file and import the contents of a .pst file to a mailbox. To learn more about mailbox import and export, see [Understanding Mailbox Import and Export Requests](http://technet.microsoft.com/library/157a7d88-d3aa-4056-9a50-df67451b14be.aspx). You can't perform this task in Exchange Online.
   
 This example uses the following settings to export messages from the folder April Stewart Recovery in the Discovery Search Mailbox to a .pst file:
   
@@ -167,7 +167,7 @@ To verify that you have successfully exported messages to a .pst file, use Outlo
 
 - The ability to recover deleted items is enabled by single item recovery, which lets an administrator recover a message that's been purged by a user or by retention policy as long as the deleted item retention period hasn't expired for that item. To learn more about single item recovery, see [Recoverable Items Folder](http://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx).
     
-- An Exchange Online mailbox is configured to retain deleted items for 14 days, by default. You can change this setting to a maximum of 30 days. In Exchange 2013, a mailbox database is configured to retain deleted items for 14 days, by default. You can configure deleted item retention settings for a mailbox or mailbox database. For more information, see:
+- An Exchange Online mailbox is configured to retain deleted items for 14 days, by default. You can change this setting to a maximum of 30 days. In Exchange Server, a mailbox database is configured to retain deleted items for 14 days, by default. You can configure deleted item retention settings for a mailbox or mailbox database. For more information, see:
     
   - [Change how long permanently deleted items are kept for an Exchange Online mailbox](change-deleted-item-retention.md)
     
