@@ -3,7 +3,7 @@ title: "Set up public folders in a new organization"
 ms.author: dmaguire
 author: msdmaguire
 manager: laurawi
-ms.date: 6/24/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -19,7 +19,7 @@ description: "Summary: How to set up public folders, including assigning permiss
 This topic shows you how to get public folders configured and running in a new organization or in an organization that has never previously had public folders.
   
 > [!NOTE]
->  For more information about the storage quotas and limits for public folders, see the following topics: >  For public folders in Office 365, see [Exchange Online Limits](https://go.microsoft.com/fwlink/?LinkID=391188). >  For public folders in on-premises Exchange Server 2013, see **Limits for public folders**. 
+>  For more information about the storage quotas and limits for public folders, see the following topics: >  For public folders in Office 365, see [Exchange Online Limits](https://go.microsoft.com/fwlink/?LinkID=391188). >  For public folders in on-premises Exchange Server, see [Limits for public folders](https://docs.microsoft.com/en-us/Exchange/collaboration/public-folders/limits). 
   
 ## What do you need to know before you begin?
 
@@ -27,7 +27,7 @@ This topic shows you how to get public folders configured and running in a new o
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](http://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic. 
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
