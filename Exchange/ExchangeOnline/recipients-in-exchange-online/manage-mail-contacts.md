@@ -3,7 +3,7 @@ title: "Manage mail contacts"
 ms.author: kwekua
 author: kwekua
 manager: scotv
-ms.date: 6/24/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -60,13 +60,13 @@ Mail contacts are mail-enabled directory service objects that contain informatio
     To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**. 
     
     > [!NOTE]
-    > The **Organizational unit** box is only available in Exchange Server 2013. It isn't available in Exchange Online. 
+    > The **Organizational unit** box is only available in Exchange Server. It isn't available in Exchange Online. 
   
 4. When you've finished, click **Save**.
     
 #### Use the Shell to create a mail contact
 
-This example creates a mail contact for Debra Garcia in Exchange Server 2013.
+This example creates a mail contact for Debra Garcia in Exchange Server.
   
 ```
 New-MailContact -Name "Debra Garcia" -ExternalEmailAddress dgarcia@tailspintoys.com -OrganizationalUnit Users
@@ -78,7 +78,7 @@ This example creates a mail contact for Alan Shen in Exchange Online.
 New-MailContact -Name "Alan Shen" -ExternalEmailAddress alans@fourthcoffee.com
 ```
 
-This example mail-enables an existing contact named Karen Toh in Exchange Server 2013.
+This example mail-enables an existing contact named Karen Toh in Exchange Server.
   
 ```
 Enable-MailContact -Identity "Karen Toh" -ExternalEmailAddress ktoh@tailspintoys.com
