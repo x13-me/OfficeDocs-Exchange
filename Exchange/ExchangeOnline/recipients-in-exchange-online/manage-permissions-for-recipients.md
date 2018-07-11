@@ -3,7 +3,7 @@ title: "Manage permissions for recipients"
 ms.author: kwekua
 author: kwekua
 manager: scotv
-ms.date: 4/20/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -178,12 +178,12 @@ For detailed syntax and parameter information, see the following topics:
     
 #### Manage the Send As permission
 
-The following examples show how to manage Send As permissions in Exchange Server 2013 and in Exchange Online. In Exchange 2013, you have to use the **Add-ADPermission** and **Remove-ADPermission** cmdlets; in Exchange Online, you have to use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets. In both cases, you use the  _Identity_ parameter to specify the name of the mailbox on which the Send As permission should be added or removed and the  _User_ or  _Trustee_ parameter to specify the delegate (for example, a user or group) that will be assigned or unassigned the Send As permission. 
+The following examples show how to manage Send As permissions in Exchange Server and in Exchange Online. In Exchange Server, you have to use the **Add-ADPermission** and **Remove-ADPermission** cmdlets; in Exchange Online, you have to use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets. In both cases, you use the  _Identity_ parameter to specify the name of the mailbox on which the Send As permission should be added or removed and the  _User_ or  _Trustee_ parameter to specify the delegate (for example, a user or group) that will be assigned or unassigned the Send As permission. 
   
 > [!TIP]
 > Use the **Get-Recipient** cmdlet to retrieve the  _Name_ property for the mailbox and the delegate. Use these values to assign the Send As permission. 
   
-#### Exchange Server 2013
+#### Exchange Server
 
 This example assigns the Send As permission to the Helpdesk group on the shared mailbox Helpdesk Support Team.
   
@@ -271,7 +271,7 @@ Or
 
   - **Send As**
     
-    In Exchange Server 2013, run the following command.
+    In Exchange Server, run the following command.
     
   ```
   Get-ADPermission -Identity <name of mailbox> -User <delegate>
@@ -315,12 +315,12 @@ The following sections show how to use the Shell to manage Send As and Send on B
   
 #### Manage the Send As permission
 
-The following examples show how to manage Send As permissions for groups in Exchange Server 2013 and in Exchange Online. In Exchange 2013, you have to use the **Add-ADPermission** and **Remove-ADPermission** cmdlets. In Exchange Online, you have to use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets. In both cases, you use the  _Identity_ parameter to specify the name of the group on which the Send As permission should be added or removed and the  _User_ or  _Trustee_ parameter to specify the delegate (for example, a user or group) that will be assigned or unassigned the Send As permission. 
+The following examples show how to manage Send As permissions for groups in Exchange Server and in Exchange Online. In Exchange Server, you have to use the **Add-ADPermission** and **Remove-ADPermission** cmdlets. In Exchange Online, you have to use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets. In both cases, you use the  _Identity_ parameter to specify the name of the group on which the Send As permission should be added or removed and the  _User_ or  _Trustee_ parameter to specify the delegate (for example, a user or group) that will be assigned or unassigned the Send As permission. 
   
 > [!TIP]
 > Use the **Get-Recipient** cmdlet to retrieve the  _Name_ property for the group and the delegate. Use these values to assign the Send As permission. 
   
-#### Exchange Server 2013
+#### Exchange Server
 
 This example assigns the Send As permission to the Sales Admins group for the group named Contoso Sales Info. This allows members of the sales admin group to send messages as the Contoso Sales Information group.
   
@@ -406,7 +406,7 @@ Or
     
   - **Send As**
     
-    In Exchange Server 2013, run the following command.
+    In Exchange Server, run the following command.
     
   ```
   Get-ADPermission -Identity <name of group> -User <delegate>
