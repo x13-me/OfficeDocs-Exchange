@@ -1,35 +1,35 @@
 ---
-title: "Roll back a public folder migration from Exchange 2013 to Exchange Online"
+title: "Roll back a public folder migration from Exchange Server to Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
 manager: laurawi
-ms.date: 3/20/2017
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: bcd54aa0-aa45-4c68-b504-1475842d4b96
-description: "Summary: Follow these steps to return your public folder infrastructure to its pre-migration state in your Exchange 2013 on-premises organization."
+description: "Summary: Follow these steps to return your public folder infrastructure to its pre-migration state in your Exchange Server on-premises organization."
 ---
 
-# Roll back a public folder migration from Exchange 2013 to Exchange Online
+# Roll back a public folder migration from Exchange Server to Exchange Online
 
- **Summary**: Follow these steps to return your public folder infrastructure to its pre-migration state in your Exchange 2013 on-premises organization.
+**Summary**: Follow these steps to return your public folder infrastructure to its pre-migration state in your Exchange Server on-premises organization.
   
-If you run into issues with your public folder migration to Exchange Online, or for any other reason need to reactivate your Exchange 2013 public folders, follow the steps below.
+If you run into issues with your public folder migration to Exchange Online, or for any other reason need to reactivate your Exchange Server public folders, follow the steps below.
   
 ## Roll back the migration
 <a name="Rollbackmigration"> </a>
 
 Note that if you roll back your migration, you will lose any content that was added to public folders in Exchange Online post-migration, either through clients or via email for mail-enabled public folders. To save this content, you can export the post-migration public folder content to a .pst file, which can then be imported into the on-premises public folders when the rollback is complete.
   
-1. In your Exchange on-premises environment, run the following command to unlock your Exchange 2013 public folders (note that the unlocking may take several hours):
+1. In your Exchange on-premises environment, run the following command to unlock your Exchange Server public folders (note that the unlocking may take several hours):
     
   ```
   Set-OrganizationConfig -PublicFolderMailboxesLockedForNewConnections:$false -PublicFolderMailboxesMigrationComplete:$false -PublicFoldersEnabled Local 
   ```
 
-2. In your Exchange on-premises environment, revert the  `ExternalEmailAddress` of any mail-enabled public folder that was updated by SetMailPublicFolderExternalAddress.ps1 (the script used in  *Step 8: Test and unlock public folders in Exchange Online*  of [Use batch migration to migrate Exchange 2013 public folders to Exchange Online](batch-migration-of-exchange-2013-public-folders.md)). You can refer to the summary file created by the script to identify the ones that were modified, or use the file OnPrem_MEPF.xml file generated earlier in the same batch migriont process to get the original properties for all mail-enabled public folders.
+2. In your Exchange on-premises environment, revert the  `ExternalEmailAddress` of any mail-enabled public folder that was updated by SetMailPublicFolderExternalAddress.ps1 (the script used in  *Step 8: Test and unlock public folders in Exchange Online*  of [Use batch migration to migrate Exchange Server public folders to Exchange Online](batch-migration-of-exchange-2013-public-folders.md)). You can refer to the summary file created by the script to identify the ones that were modified, or use the file OnPrem_MEPF.xml file generated earlier in the same batch migriont process to get the original properties for all mail-enabled public folders.
     
 3. In Exchange Online PowerShell, run the following commands to remove all Exchange Online public folders and mailboxes:
     
@@ -42,12 +42,12 @@ Note that if you roll back your migration, you will lose any content that was ad
   Get-Mailbox -PublicFolder -SoftDeletedMailbox | Remove-Mailbox -PublicFolder -PermanentlyDelete:$true
   ```
 
-4. Run the following command in your Exchange Online environment to redirect public folder traffic back to on-premises (Exchange 2013):
+4. Run the following command in your Exchange Online environment to redirect public folder traffic back to on-premises (Exchange Server):
     
   ```
   Set-OrganizationConfig -PublicFoldersEnabled Remote
   ```
 
-5. See [Configure Exchange 2013 public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md) for instructions on reconfiguring access to your on-premises public folders, so your Exchange Online users can access them. 
+5. See [Configure Exchange Server public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md) for instructions on reconfiguring access to your on-premises public folders, so your Exchange Online users can access them. 
     
 
