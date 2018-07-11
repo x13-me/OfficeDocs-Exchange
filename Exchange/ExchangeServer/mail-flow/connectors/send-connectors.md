@@ -1,29 +1,27 @@
 ---
-title: "Send connectors"
+title: "Send connectors in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 7/6/2018
+ms.date: 7/10/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 6aa19a12-c7b2-4eac-a8dc-9a4d26919ac5
-description: "Summary: Learn about Send connectors in Exchange Server, and how they control mail flow from your Exchange organization."
+description: "Learn about Send connectors in Exchange 2016 and Exchange 2019, and how they control mail flow from your Exchange organization."
 ---
 
 # Send connectors
 
- **Summary**: Learn about Send connectors in Exchange 2016 and Exchange 2019, and how they control mail flow from your Exchange organization.
+Exchange 2016 and Exchange 2019 use Send connectors for outbound SMTP connections from source Exchange servers to destination messaging servers. The Send connector that's used to route messages to a recipient is selected during the routing resolution phase of message categorization. For more information, see [Mail routing](../../mail-flow/mail-routing/mail-routing.md).
   
-Exchange Server uses Send connectors for outbound SMTP connections from source Exchange servers to destination messaging servers. The Send connector that's used to route messages to a recipient is selected during the routing resolution phase of message categorization. For more information, see [Mail routing](../../mail-flow/mail-routing/mail-routing.md).
-  
-You can create Send connectors in the Transport service on Mailbox servers, and on Edge Transport servers. Send connectors are stored in Active Directory and are visible to all Mailbox and servers in the organization.
+You can create Send connectors in the Transport service on Mailbox servers and on Edge Transport servers. Send connectors are stored in Active Directory and are visible to all Mailbox and servers in the organization.
   
 > [!IMPORTANT]
->  By default, no Send connectors exist for external mail flow when you install Exchange. To enable outbound Internet mail flow, you need to create a Send connector, or subscribe an Edge Transport server to your Exchange organization. For more information, see the following topics: > [Create a Send connector to send mail to the Internet](internet-mail-send-connectors.md)> [Edge Transport servers](../../architecture/edge-transport-servers/edge-transport-servers.md)
+>  By default, no Send connectors exist for external mail flow when you install Exchange. To enable outbound internet mail flow, you need to create a Send connector, or subscribe an Edge Transport server to your Exchange organization. For more information, see [Create a Send connector to send mail to the Internet](internet-mail-send-connectors.md) and [Edge Transport servers](../../architecture/edge-transport-servers/edge-transport-servers.md).
   
-You don't need to configure Send connectors to send mail between Exchange servers in the same Active Directory forest. Implicit and invisible Send connectors that are fully aware of the Exchange server topology are available for sending mail to internal Exchange servers. These connectors are described in the [Implicit Send connectors](send-connectors.md#ImplicitSendConnectors) section.
+You don't need to configure Send connectors to send mail between Exchange servers in the same Active Directory forest. Implicit and invisible Send connectors that are fully aware of the Exchange server topology are available for sending mail to internal Exchange servers. These connectors are described in the [Implicit Send connectors](#implicit-send-connectors) section.
   
 These are the important settings on Send connectors:
   
@@ -40,7 +38,6 @@ These are the important settings on Send connectors:
 On Mailbox servers, you can create and manage Send connectors in the Exchange admin center or in the Exchange Management Shell. On Edge Transport servers, you can only use the Exchange Management Shell.
   
 ## Send connector changes in Exchange Server
-<a name="WhatsNew"> </a>
 
 These are the notable changes to Send connectors in Exchange 2016 or Exchange 2019 compared to Exchange 2010:
   
@@ -55,7 +52,6 @@ These are the notable changes to Send connectors in Exchange 2016 or Exchange 20
 - The _TlsCertificateName_ parameter allows you to specify the certificate issuer and the certificate subject. This helps minimize the risk of fraudulent certificates.
     
 ## Implicit Send connectors
-<a name="ImplicitSendConnectors"> </a>
 
 Although no Send connectors are created during the installation of Exchange servers, a special *implicit Send connector* named the intra-organization Send connector is present. This implicit Send connector is automatically available, invisible, and requires no management. The intra-organization Send connector exists in the transport services to send mail, either internally between services on the local Exchange server, or to services on remote Exchange servers in the organization. For example: 
   
@@ -72,7 +68,6 @@ Although no Send connectors are created during the installation of Exchange serv
 For more information, see [Mail flow and the transport pipeline](../../mail-flow/mail-flow.md).
   
 ## Send connector usage types
-<a name="UsageTypes"> </a>
 
 For Send connectors, the usage type is basically a descriptive label that identifies what the Send connector is used for. All usage type values receive the same permissions.
   
@@ -90,7 +85,6 @@ The available usage type values are described in the following table.
 |Partner  <br/> |35 MB  <br/> |When you create a Send connector of this usage type in the EAC, you can't select **Route mail through smart hosts** or a smart host authentication mechanism. After you create the connector, you can go to the **Delivery** tab in the properties of the Send connector and select **Route mail through smart hosts** and the smart host authentication mechanism.  <br/> This same restriction doesn't exist in the Exchange Management Shell. You can use the _Partner_ switch and set the _DNSRoutingEnabled_ to `$false` and use the _SmartHosts_ and _SmartHostAuthMechanism_ parameters on the **New-SendConnector** cmdlet.  <br/> |
    
 ## Send connector network settings
-<a name="NetworkSettings"> </a>
 
 Every Send connector needs to be configured with one of these options:
   
@@ -129,7 +123,6 @@ An important part of smart host routing is the authentication mechanism that the
 |**Externally secured** (`ExternalAuthoritative`)  <br/> |The connection is presumed to be secured by using a security mechanism that's external to Exchange. The connection may be an Internet Protocol security (IPsec) association or a virtual private network (VPN). Alternatively, the servers may reside in a trusted, physically controlled network.  <br/> |
    
 ## Send connector address spaces
-<a name="AddressSpaces"> </a>
 
 The address space specifies the destination domains that are serviced by the Send connector. Mail is routed through a Send connector based on the domain of the recipient's email address.
   
@@ -153,7 +146,6 @@ The Send connector that's used to route messages to a recipient is selected duri
 For example, suppose the recipient is julia@marketing.contoso.com. If a Send connector is configured for \*.contoso.com, the message is routed through that connector. If no Send connector is configured for \*.contoso.com, the message is routed through the connector that's configured for \*. If multiple Send connectors in the same Active Directory site are configured for \*.contoso.com, the connector with the lower priority value is selected.
   
 ## Send connector scope
-<a name="Scope"> </a>
 
 The source servers for a Send connector determine the destination Exchange server for mail that needs to be routed through the Send connector. The Send connector scope controls the visibility of the connector within the Exchange organization.
   
@@ -162,7 +154,6 @@ The source servers for a Send connector determine the destination Exchange serve
 To configure scoped Send connectors in the EAC, you select **Scoped send connector** in the **Address space** section of the new Send connector wizard, or on the **Scoping** tab in the properties of existing Send connectors. In the Exchange Management Shell, you use the _IsScopedConnector_ parameter on the **New-SendConnector** and **Set-SendConnector** cmdlets.
   
 ## Send connector permissions
-<a name="Permissions"> </a>
 
 When the Send connector establishes a connection with the destination messaging server, the Send connector permissions determine the types of headers that can be sent in messages. If a message includes headers that aren't allowed by the permissions, those headers are removed from messages.
   
@@ -180,9 +171,7 @@ The available Send connector permissions are described in the following table.
 | `ms-Exch-SMTP-Send-Exch50` <br/> | `<Domain>\Exchange Servers` <br/> `MS Exchange\Edge Transport Servers` <br/> `MS Exchange\Externally Secured Servers` <br/> `MS Exchange\Hub Transport Servers` <br/> `MS Exchange\Legacy Exchange Servers` <br/> |Allows the source Exchange server to submit **XEXCH50** commands on the Send connector. The **X-EXCH50** binary large object (BLOB) was used by older versions of Exchange (Exchange 2003 and earlier) to store Exchange data in messages (for example, the spam confidence level or SCL).  <br/> If this permission isn't granted, and messages contain the **X-EXCH50** BLOB, the Exchange server sends the message without the **X-EXCH50** BLOB.  <br/> |
 | `ms-Exch-SMTP-Send-XShadow` <br/> | `<Domain>\Exchange Servers` <br/> `MS Exchange\Edge Transport Servers` <br/> `MS Exchange\Hub Transport Servers` <br/> |This permission is reserved for internal Microsoft use, and is presented here for reference purposes only.  <br/> |
    
- **Note**:
-  
-Permissions names that contain `ms-Exch-Send-Headers-` are part of the *header firewall* feature. For more information, see [Header firewall](https://technet.microsoft.com/library/bb232136.aspx).
+**Note**: Permissions names that contain `ms-Exch-Send-Headers-` are part of the *header firewall* feature. For more information, see [Header firewall](https://technet.microsoft.com/library/bb232136.aspx).
   
 ### Send connector permission procedures
 

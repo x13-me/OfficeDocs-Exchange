@@ -3,19 +3,18 @@ title: "Safety Net in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 7/6/2018
+ms.date: 7/10/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: d0abb807-3b12-4c7d-bc7e-769b87c84ccb
-description: "Summary: Learn how Safety Net is used in Exchange Server to protect against data loss by maintaining a queue of successfully delivered messages that have not replicated to the passive mailbox database copies."
+description: "Learn how Safety Net is used in Exchange 2016 and Exchange 2019 to protect against data loss by maintaining a queue of successfully delivered messages."
 ---
 
 # Safety Net in Exchange Server
 
- **Summary**: Learn how Safety Net is used in Exchange 2016 and Exchange 2019 to protect against data loss by maintaining a queue of successfully delivered messages that have not replicated to the passive mailbox database copies.
-  
+ 
 In Exchange 2010, the *transport dumpster* helped protect against data loss by maintaining a queue of successfully delivered messages that hadn't replicated to the passive mailbox database copies in the database availability group (DAG). When a mailbox database or server failure required the promotion of an out-of-date copy of the mailbox database, the messages in the transport dumpster were automatically resubmitted to the new active copy of the mailbox database.
   
 The transport dumpster was improved in Exchange 2013 and is now called *Safety Net*. Exchange 2016 and Exchange 2019 have these same improvements.
@@ -36,12 +35,11 @@ Here's how Safety Net is improved from the transport dumpster in Exchange 2010:
     
 - **Safety Net tries to guarantee message redundancy**: Safety Net is more than just a best effort for message redundancy, so you can't specify a maximum size limit for Safety Net. You can only specify how long Safety Net stores messages before they're automatically deleted.
     
-For more information about transport high availability features in Exchange Server, see [Transport high availability](transport-high-availability.md). For more information about message redundancy for messages in transit, see [Shadow redundancy in Exchange 2016](shadow-redundancy.md).
+For more information about transport high availability features in Exchange Server, see [Transport high availability in Exchange Server](transport-high-availability.md). For more information about message redundancy for messages in transit, see [Shadow redundancy in Exchange Server](shadow-redundancy.md).
   
 ## How Safety Net works
-<a name="How"> </a>
 
-Shadow redundancy keeps a redundant copy of the message while the message is in transit. Safety Net keeps a redundant copy of a message after the message is successfully processed. So, Safety Net begins where shadow redundancy ends. concepts in shadow redundancy, including the transport high availability boundary, primary messages, primary servers, shadow messages and shadow servers also apply to Safety Net. For more information, see [Shadow redundancy in Exchange 2016](shadow-redundancy.md).
+Shadow redundancy keeps a redundant copy of the message while the message is in transit. Safety Net keeps a redundant copy of a message after the message is successfully processed. So, Safety Net begins where shadow redundancy ends. concepts in shadow redundancy, including the transport high availability boundary, primary messages, primary servers, shadow messages and shadow servers also apply to Safety Net. For more information, see [Shadow redundancy in Exchange Server](shadow-redundancy.md).
   
 The Primary Safety Net exists on the Mailbox server that held the primary message before the message was successfully processed by the Transport service. This could mean the message was delivered to the Mailbox Transport Delivery service on the destination Mailbox server. Or, the message could have been relayed through the Mailbox server in an Active Directory site that's designated as a hub site on the way to the destination DAG or Active Directory site. After the primary server processes the primary message, the message is moved from the active delivery queue into the Primary Safety Net on the same server.
   
@@ -57,7 +55,6 @@ This table describes the parameters that are used by Safety Net.
 | _ShadowRedundancyEnabled_ on **Set-TransportConfig** <br/> | `$true` <br/> | `$true`: Shadow redundancy is enabled on all Mailbox servers in the organization.  <br/> `$false`: Shadow redundancy is disabled on all transport servers in the organization.  <br/> Redundancy for Safety Net requires shadow redundancy to be enabled.  <br/> |
    
 ## Message resubmission from Safety Net
-<a name="PrimaryResubmit"> </a>
 
 The Active Manager component of the Microsoft Exchange Replication service (MRS) manages DAGs and mailbox database copies. Message resubmissions from Safety Net require no manual actions, and are initiated by the Active Manager. For more information about Active Manager, see [Active Manager](../../high-availability/database-availability-groups/active-manager.md).
   
@@ -74,7 +71,6 @@ The only significant difference between the two scenarios is how far back in tim
 The main requirement for successful message resubmission from Safety Net for a lagged copy is: the length of time messages are stored in Safety Net must be greater than or equal to the lag time of the lagged copy. In other words, the value of _SafetyNetHoldTime_ on **Set-TransportConfig** must be greater than or equal to the value of the _ReplayLagTime_ on **Set-MailboxDatabaseCopy** for the lagged copy.
   
 ## Message resubmission from Shadow Safety Net
-<a name="ShadowResubmit"> </a>
 
 Message resubmission from Shadow Safety Net (like message resubmission from Primary Safety Net), is fully automated, and requires no manual intervention. This scenario describes the interaction of Primary Safety Net and Shadow Safety Net during message resubmission:
   

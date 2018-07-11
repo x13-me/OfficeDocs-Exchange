@@ -1,5 +1,5 @@
 ---
-title: "Transport high availability"
+title: "Transport high availability in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: e9ec6d05-f441-4cca-8592-8f7469948299
-description: "Summary: Learn about transport high availability in Exchange Server and the features that improve the reliability of message delivery."
+description: "Learn about transport high availability in Exchange 2016 and Exchange 2019 and the features that improve the reliability of message delivery."
 ---
 
-# Transport high availability
+# Transport high availability in Exchange Server
 
- **Summary**: Learn about transport high availability in Exchange 2016 and Exchange 2019 and the features that improve the reliability of message delivery.
-  
 In Exchange Server, transport high availability is responsible for keeping redundant copies of messages before and after the messages are successfully delivered. These features were introduced in Exchange 2013 as improvements to the transport high availability features in Exchange 2010 (for example, shadow redundancy and the transport dumpster) to help ensure messages aren't lost in transit.
   
 Key features that improve transport high availability in Exchange 2013, Exchange 2016, and Exchange 2019 over Exchange 2010 include:

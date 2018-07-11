@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 4a9ef08e-bd62-4c6b-8790-d24fb0f8f24b
-description: "Summary: Create a Send connector in Exchange Server that's configured to route outbound mail through a smart host."
+description: "Learn how to create a Send connector in Exchange 2016 and Exchange 2019 that's configured to route outbound mail through a smart host."
 ---
 
 # Create a Send connector to route outbound mail through a smart host
 
- **Summary**: Create a Send connector in Exchange 2016 or Exchange 2019 that's configured to route outbound mail through a smart host.
-  
 Instead of routing all outbound messages directly to the Internet, you may need to route your organization's outbound mail through a third-party smart host. For example, your organization may have an appliance that scans outbound mail for spam and malware.
   
 ## What do you need to know before you begin?
@@ -79,9 +77,9 @@ Instead of routing all outbound messages directly to the Internet, you may need 
     
 7. Back on the previous page, the **Scoped send connector** setting is important if your organization has Exchange servers installed in multiple Active Directory sites: 
     
-  - If you don't select **Scoped send connector**, the connector is usable by all transport servers (Exchange 2019 Mailbox servers, Exchange 2016 Mailbox servers, Exchange 2013 Mailbox servers, and Exchange 2010 Hub Transport servers) in the entire Active Directory forest. This is the default value.
+  - If you don't select **Scoped send connector**, the connector is usable by all transport servers (Exchange 2013 or later Mailbox servers and Exchange 2010 Hub Transport servers) in the entire Active Directory forest. This is the default value.
     
-  -  If you select **Scoped send connector**, the connector is only usable by other transport servers in the same Active Directory site.
+  - If you select **Scoped send connector**, the connector is only usable by other transport servers in the same Active Directory site.
     
     When you're finished, click **Next**.
     

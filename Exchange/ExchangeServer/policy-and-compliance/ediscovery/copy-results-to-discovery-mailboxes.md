@@ -28,7 +28,7 @@ After you create an In-Place eDiscovery search in Exchange Server, you can use t
     
 - It might take 5 minutes or longer to copy search results to a discovery mailbox, depending on the number of mailbox items returned in the results.
     
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
 ## Use the EAC to copy search results
 

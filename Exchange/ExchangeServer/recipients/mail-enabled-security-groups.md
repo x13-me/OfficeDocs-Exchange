@@ -24,7 +24,7 @@ You can use mail-enabled security groups to distribute messages as well as grant
 
 - For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md).
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 - If you add users to or remove users from a mail-enabled security group, the users need to log out and log in for the permission changes to take effect.
 

@@ -3,7 +3,7 @@ title: "Find queues and messages in queues in the Exchange Management Shell"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 7/6/2018
+ms.date: 7/10/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
@@ -43,7 +43,7 @@ The following table explains the _Identity_ parameter syntax on the queue manage
 |**Identity parameter value**|**Description**|
 |:-----|:-----|
 | `<Server>\<PersistentQueueName>` or `<PersistentQueueName>` <br/> |A persistent queue on the specified or local server.  <br/> `<PersistentQueueName>` is `Submission`, `Unreachable`, or `Poison`.  <br/> For more information about persistent queues, see [Types of queues](queues.md#QueueTypes).  <br/> |
-| `<Server>\<NextHopDomain>` or `<NextHopDomain>` <br/> |A delivery queue on the specified or local server.  <br/> `<NextHopDomain>` is the name of the queue from the value of the **NextHopDomain** property of the queue. For example, the address space of a Send connector, the name of an Active Directory site, or the name of a DAG. For more information, see [NextHopSolutionKey](queues.md#NextHopSolutionKey).  <br/> |
+| `<Server>\<NextHopDomain>` or `<NextHopDomain>` <br/> |A delivery queue on the specified or local server.  <br/> `<NextHopDomain>` is the name of the queue from the value of the **NextHopDomain** property of the queue. For example, the address space of a Send connector, the name of an Active Directory site, or the name of a DAG. For more information, see [NextHopSolutionKey](queues.md#nexthopsolutionkey).  <br/> |
 | `<Server>\<QueueInteger>` or `<QueueInteger>` <br/> |A delivery queue on the specified or local server.  <br/> `<QueueInteger>` is the unique integer value that's assigned to a delivery queue or a shadow queue in the queue database. However, you need to run the **Get-Queue** cmdlet to find this value in the **Identity** or **QueueIdentity** properties.  <br/> |
 | `<Server>\Shadow\<QueueInteger>` or `Shadow\<QueueInteger>` <br/> |A shadow queue on the specified or local server. For more information about shadow queues and shadow redundancy, see [Shadow redundancy in Exchange 2016](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |
 | `<Server>\*` or `*` <br/> |All queues on the specified or local server.  <br/> **Note**: _Identity_ is a positional parameter, which means you can specify the value without specifying the `-Identity` qualifier. For example, the following commands produce the same result:  <br/> `Get-Queue -Identity *` <br/> `Get-Queue *` <br/> `Get-Queue` <br/> |
@@ -76,9 +76,9 @@ The _Include_ and _Exclude_ parameters use the following queue properties to fil
   
 |**Value**|**Description**|**Example**|
 |:-----|:-----|:-----|
-| `DeliveryType` <br/> |Includes or excludes queues based on the **DeliveryType** property that defines how the message will be transmitted to the next hop. The valid values are described in [NextHopSolutionKey](queues.md#NextHopSolutionKey).  <br/> You can specify multiple values separated by commas.  <br/> |Returns all delivery queues on the local server where the next hop is a Send connector that's hosted on the local server and is configured for smart host routing.  <br/> `Get-Queue -Include SmartHostConnectorDelivery` <br/> |
+| `DeliveryType` <br/> |Includes or excludes queues based on the **DeliveryType** property that defines how the message will be transmitted to the next hop. The valid values are described in [NextHopSolutionKey](queues.md#nexthopsolutionkey).  <br/> You can specify multiple values separated by commas.  <br/> |Returns all delivery queues on the local server where the next hop is a Send connector that's hosted on the local server and is configured for smart host routing.  <br/> `Get-Queue -Include SmartHostConnectorDelivery` <br/> |
 | `Empty` <br/> |Includes or excludes empty queues. Empty queues have the value `0` in the **MessageCount** property.  <br/> |Returns all queues on the local server that contain messages.  <br/> `Get-Queue -Exclude Empty` <br/> |
-| `External` <br/> |Includes or excludes queues that have the value `External` in the **NextHopCategory** property.  <br/> External queues always have one of the following values for **DeliveryType**:  <br/> • `DeliveryAgent` <br/> • `DnsConnectorDelivery` <br/> • `NonSmtpGatewayDelivery` <br/> • `SmartHostConnectorDelivery` <br/> For more information, see [NextHopSolutionKey](queues.md#NextHopSolutionKey).  <br/> |Returns all internal queues on the local server.  <br/> `Get-Queue -Exclude External` <br/> |
+| `External` <br/> |Includes or excludes queues that have the value `External` in the **NextHopCategory** property.  <br/> External queues always have one of the following values for **DeliveryType**:  <br/> • `DeliveryAgent` <br/> • `DnsConnectorDelivery` <br/> • `NonSmtpGatewayDelivery` <br/> • `SmartHostConnectorDelivery` <br/> For more information, see [NextHopSolutionKey](queues.md#nexthopsolutionkey).  <br/> |Returns all internal queues on the local server.  <br/> `Get-Queue -Exclude External` <br/> |
 | `Internal` <br/> |This value includes or excludes queues that have the value `Internal` in the **NextHopCategory** property. Note that a message for an external recipient may require multiple internal hops before it reaches a gateway server where it's delivered externally.  <br/> |Returns all internal queues on the local server.  <br/> `Get-Queue -Include Internal` <br/> |
    
 Note that you can duplicate the functionality of the _Include_ and _Exclude_ parameters by using the _Filter_ parameter. For example, the following commands produce the same result: 
@@ -90,14 +90,13 @@ Note that you can duplicate the functionality of the _Include_ and _Exclude_ par
 However, as you can see, the syntax of the _Include_ and _Exclude_ parameters is simpler and easier to remember.
   
 ## Get-QueueDigest
-<a name="GetQueueDigest"> </a>
 
 The **Get-QueueDigest** cmdlet allows you to view information about some or all of the queues in your organization by using a single command. Specifically, the **Get-QueueDigest** cmdlet allows you to view information about queues based on their location on servers, in DAGs, in Active Directory sites, or in the whole Active Directory forest.
   
 Note that queues on a subscribed Edge Transport server aren't included in the results. Also, **Get-QueueDigest** is available on an Edge Transport server, but the results are restricted to local queues on the Edge Transport server.
   
 > [!NOTE]
-> By default, the **Get-QueueDigest** cmdlet displays delivery queues that contain ten or more messages, and the results are between one and two minutes old. For instructions on how to change these default values, see **Configure Get-QueueDigest**.
+> By default, the **Get-QueueDigest** cmdlet displays delivery queues that contain ten or more messages, and the results are between one and two minutes old. For instructions on how to change these default values, see [Configure Get-QueueDigest](https://technet.microsoft.com/library/dn505733.aspx).
   
 The following table describes the filtering and sorting parameters that are available on the **Get-QueueDigest** cmdlet.
   
@@ -118,7 +117,6 @@ Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude
 ```
 
 ## Message filtering parameters
-<a name="MessagesFilters"> </a>
 
 The following table summarizes the filtering parameters that are available on the message management cmdlets.
   
@@ -130,7 +128,6 @@ The following table summarizes the filtering parameters that are available on th
 |**Export-Message** <br/> | _Identity_ <br/> |This parameter isn't really a filter, because it uniquely identifies the message. To identify multiple messages for this cmdlet, use **Get-Message** and pipe the results to **Export-Message**. For more information and examples, see [Export messages from queues](export-messages.md).  <br/> |
    
 ### Message identity
-<a name="MessageIdentity"> </a>
 
 The _Identity_ parameter on the message management cmdlets uniquely identifies a message in one or more queues, so you can't use any other message filtering parameters. The _Identity_ parameter uses the basic syntax `<Server>\<Queue>\<MessageInteger>`.
   
@@ -142,7 +139,6 @@ The following table describes the syntax you can use with _Identity_ parameter o
 | `<Server>\*\<MessageInteger>` or `*\<MessageInteger>` or `<MessageInteger>` <br/> |All copies of the message in all queues in the queue database on the specified or local server.  <br/> |
    
 ### Filter parameter on message cmdlets
-<a name="MessageFilterParam"> </a>
 
 You can use the _Filter_ parameter with the **Get-Message**, **Remove-Message**, **Resume-Message**, and **Suspend-Message** cmdlets to identify one or more messages based on the properties of the messages. The _Filter_ parameter creates an OPath filter with comparison operators to restrict the command to messages that meet the filter criteria. You can use the logical operator `-and` to specify multiple conditions for the match. Here's a generic example of the syntax: 
   
@@ -155,12 +151,10 @@ For a list of comparison operators you can use with the _Filter_ parameter, see 
 For examples of procedures that use the _Filter_ parameter to view and manage messages, see [Procedures for messages in queues](message-procedures.md).
   
 ### Queue parameter
-<a name="QueueParam"> </a>
 
 The _Queue_ parameter is available only on the **Get-Message** cmdlet. You can use this parameter to get all messages in a specific queue, or all messages from multiple queues by using the wildcard character (\*). When you use the _Queue_ parameter, use the queue identity format `<Server>\<Queue>` as described in the [Queue identity](queues-and-messages-in-powershell.md#QueueIdentity) section in this topic.
   
 ## Comparison operators to use when filtering queues or messages
-<a name="ComparisonOperators"> </a>
 
 When you create a queue or message filter expression by using the _Filter_ parameter, you need to include an comparison operator for the property value to match. The comparison operators that you can use, and how each operator functions are described in the following table. For all operators, the values compared aren't case sensitive.
   
@@ -189,7 +183,6 @@ Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
 ```
 
 ## Advanced paging parameters
-<a name="PagingParameters"> </a>
 
 When you use the Exchange Management Shell to view queues and messages in queues, your query retrieves one page of information at a time. The advanced paging parameters control the size of the results, and the order that the results are displayed in. All advanced paging parameters are optional and can be used with or without other filtering parameters on the **Get-Queue** and **Get-Message** cmdlets. If you don't specify any advanced paging parameters, the query returns the results in ascending order of identity.
   
@@ -199,8 +192,6 @@ You can use the _BookmarkIndex_ and _BookmarkObject_ parameters to mark a positi
   
 The advanced paging parameters are described in the following table.
   
-**Advanced paging parameters**
-
 |**Parameter**|**Description**|
 |:-----|:-----|
 | _BookmarkIndex_ <br/> |Specifies the position in the results where the displayed results start. The value of this parameter is a 1-based index in the total results. If the value is less than or equal to zero, the first complete page of results is returned. If the value is set to `Int.MaxValue`, the last complete page of results is returned.  <br/> You can't use this parameter with the _BookmarkObject_ parameter.  <br/> |
