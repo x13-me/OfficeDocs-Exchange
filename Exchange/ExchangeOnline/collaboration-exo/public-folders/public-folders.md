@@ -3,7 +3,7 @@ title: "Public folders in Office 365 and Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
 manager: laurawi
-ms.date: 10/3/2017
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -18,7 +18,7 @@ description: "Public folders are designed for shared access and provide an easy 
 Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization. Public folders help organize content in a deep hierarchy that's easy to browse. Users will see the full hierarchy in Outlook, which makes it easy for them to browse for the content they're interested in.
   
 > [!NOTE]
-> Public folders are available in the following Outlook clients: Outlook Web App for Exchange 2013, Outlook 2007, Outlook 2010, Outlook 2013, and Outlook for Mac. 
+> Public folders are available in the following Outlook clients: Outlook Web App for Exchange, Outlook 2007, Outlook 2010, Outlook 2013, and Outlook for Mac. 
   
 Public folders can also be used as an archiving method for distribution groups. When you mail-enable a public folder and add it as a member of the distribution group, email sent to the group is automatically added to the public folder for later reference.
   
@@ -38,7 +38,7 @@ For a list of public folder management tasks, see [Public folder procedures in O
   
 For more information about the public folder limits in Office 365 and Exchange Online, see [Exchange Online Limits](https://go.microsoft.com/fwlink/?LinkID=391188).
   
-Looking for the Exchange Server 2013 version of this topic? See [Public Folders](http://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx).
+Looking for the Exchange Server version of this topic? See [Public Folders](http://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx).
   
 ## Public folder architecture
 <a name="PFArch"> </a>
@@ -113,7 +113,7 @@ Exchange supports moving your public folders to Office 365 and Exchange Online f
     
 - Exchange Server 2007 SP3 RU15 or later
     
-See [Use batch migration to migrate Exchange 2013 public folders to Exchange Online](batch-migration-of-exchange-2013-public-folders.md) to migrate your Exchange 2013 public folders. 
+See [Use batch migration to migrate Exchange 2013 public folders to Exchange Online](batch-migration-of-exchange-2013-public-folders.md) to migrate your Exchange Server public folders. 
   
 You can't migrate public folders directly from Exchange 2003. If you're running Exchange 2003 in your organization, you must move all public folder databases and replicas to Exchange 2007 SP3 RU15 or later. No public folder replicas can remain on Exchange 2003.
   
