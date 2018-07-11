@@ -1,5 +1,5 @@
 ---
-title: "FAQ Public folders"
+title: "FAQ: Public folders"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
@@ -9,13 +9,11 @@ ms.topic: reference
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 1cdcdcb7-f11b-45ca-ad23-7c38f640208c
-description: "Summary: A list of frequently asked questions regarding public folders in Exchange Server 2016."
+description: "A list of frequently asked questions regarding public folders in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # FAQ: Public folders
 
- **Summary**: A list of frequently asked questions regarding public folders in Exchange Server 2016.
-  
 To learn more about public folders, see [Public folders](public-folders.md).
   
 Have questions about public folders that aren't answered here? Send us an email at [Ex2013HelpFeedback@microsoft.com](mailto:Ex2013HelpFeedback@microsoft.com).
@@ -26,19 +24,21 @@ This section contains frequently asked questions about public folder migration. 
   
 ### What are the supported public folder migration scenarios?
 
-The following list details the available options for migrating public folders to Exchange Server 2016 or Exchange Online.
+The following list details the available options for migrating public folders to Exchange or Exchange Online.
   
 - Exchange 2010 public folders (SP3 RU8 or later) can be migrated to Exchange 2016 or Exchange Online.
     
-- Exchange 2013 public folders (CU15 or later) can be migrated to Exchange 2016 or Exchange Online.
+- Exchange 2013 public folders (CU15 or later) can be migrated to Exchange 2016, Exchange 2019, or Exchange Online.
     
 - Exchange 2016 public folders (CU4 or later) can be migrated to Exchange Online.
-    
-Currently only migrations to Exchange 2016 in the same Active Directory forest are supported. Cross-forest migrations will be supported in the future.
-  
-### After migration, what happens to the hierarchy on the source Exchange 2010 servers?
 
-During the finalization stage in migration, a lock is placed on the source server to make it inaccessible to user. This lock remains in place to prevent users from accessing the source public folders after migration completes. Although you can release this lock, we don't recommend doing so because the changes can't be synced to Exchange 2016.
+- Exchange 2019 public folders can be migrated to Exchange Online.
+    
+Currently only migrations to Exchange 2016 or Exchange 2019 in the same Active Directory forest are supported. Cross-forest migrations will be supported in the future.
+  
+### After migration to Exchange 2016, what happens to the hierarchy on the source Exchange 2010 servers?
+
+During the finalization stage in migration, a lock is placed on the source server to make it inaccessible to users. This lock remains in place to prevent users from accessing the source public folders after migration completes. Although you can release this lock, we don't recommend doing so because the changes can't be synced to Exchange 2016.
   
 ### When you migrate public folders, what happens to existing public folder rules?
 
@@ -48,9 +48,9 @@ Public folder rules are migrated along with the data and are kept as public fold
 
 The .csv file is used to determine the mapping between the source hierarchy and the destination mailbox. It contains only the top-level folders. Child folders under the top-level folders are automatically migrated. Therefore, if a new child folder is added, it's migrated during the process. If a new top-level folder is created, it will be created in the mailbox that contains the writable copy of the hierarchy.
   
-### During migration to Exchange 2016 public folders, if there's a long window of time between suspension and finalization, how can I force a delta sync so that users can access public folders during the final sync?
+### During a public folder migration, if there's a long window of time between suspension and finalization, how can I force a delta sync so that users can access public folders during the final sync?
 
-You can force a delta sync to occur before finalization (prior to locking the source) by running the following Shell command:
+You can force a delta sync to occur before finalization (prior to locking the source) by running the following Exchange PowerShell command:
   
 ```
 Resume-PublicFolderMigrationRequest \PublicFolderMigration
@@ -78,7 +78,7 @@ No. Public folders are great for Outlook integration, simple sharing scenarios, 
   
 ## Which clients support public folders?
 
-Outlook 2010 and later, Outlook 2011 for Mac, and Outlook 2016 for Mac users can access public folders. However, users whose mailboxes are on Exchange 2016 servers won't be able to connect to Exchange 2010 public folders from clients that use Exchange Web Services (EWS), such as Outlook for Mac. We recommend that you migrate legacy public folders to Exchange 2016 in order to maintain access for those users.
+The currently supported Outlook clients for [Exchange 2016](../../plan-and-deploy/system-requirements.md#supported-clients) and Exchange 2019 can access public folders. However, users with mailboxes on Exchange 2016 servers can't connect to Exchange 2010 public folders using Exchange Web Services (EWS) clients (for example, Outlook 2016 for Mac). We recommend that you migrate Exchange 2010 public folders to Exchange 2016 to maintain access for those users.
   
 ## Are there any limitations in the clients?
 
@@ -93,7 +93,11 @@ Outlook on the web (formerly known as Outlook Web App) is supported, but with so
 > [!NOTE]
 > You can only create public folder rules that contain the element **reply using a specific template** in mail-enabled public folders. It is possible that pre-existing rules containing **reply using a specific template** will continue to work on non-mail-enabled public folders, but on those folders you cannot create new rules with this template element, or edit existing rules with this element.
   
-In a hybrid scenario, Outlook on the web and Outlook 2011 for Mac aren't supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook on the web. Users of Outlook 2016 for Mac can access public folders in a hybrid scenario, if the procedures under [Hybrid Deployment procedures](https://technet.microsoft.com/library/jj200788%28v=exchg.150%29.aspx) are followed, and the April 2016 update for Outlook 2016 for Mac has been installed on all clients.
+In a hybrid scenario, Outlook on the web isn't supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook on the web. Outlook 2016 for Mac users can access public folders in a hybrid scenario if the following conditions are true:
+
+- You've followd the procedures at [Hybrid Deployment procedures](https://technet.microsoft.com/library/jj200788.aspx). 
+
+- The April 2016 update for Outlook 2016 for Mac has been installed on all clients.
   
 ## How can I store a very large hierarchy in a public folder mailbox?
 
@@ -119,17 +123,17 @@ New-Mailbox -PublicFolder -Name <name of public folder>
 
 For more detail, see [Create a public folder](create-public-folders.md).
   
-## In previous versions of Exchange, for each mailbox database there was an option to specify its public folder database. How will this work in Exchange 2016?
+## In Exchange 2010 there was an option for each mailbox database to specify its public folder database. How does this work now?
 
-There is no database-level setting in Exchange 2016. Exchange 2016 has a mailbox-level ability to specify the public folder mailbox, but by default Exchange auto-calculates the per-user hierarchy mailbox.
+There's no longer a database-level setting. Instead, Exchange has a mailbox-level ability to specify the public folder mailbox, but by default Exchange auto-calculates the per-user hierarchy mailbox.
   
-## How are public folder metric tools being used in Exchange 2016?
+## How are public folder metric tools being used in Exchange?
 
-In Exchange 2016, you can use [Get-PublicFolderStatistics](http://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx) and [Get-PublicFolderItemStatistics](http://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx) cmdlets to get public folder metrics data. This is the same solution that we had in Exchange 2013 and Exchange 2010, so nothing has changed here. Public folders don't require additional reporting add-ons.
+You can use [Get-PublicFolderStatistics](http://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx) and [Get-PublicFolderItemStatistics](http://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx) cmdlets to get public folder metrics data. This same solution hase been available since Exchange 2010, so nothing has changed here. Public folders don't require additional reporting add-ons.
   
 ## Can public folders distinguish between internal versus third-party access to public folders?
 
-In Exchange 2016, public folder permissions are managed by using Role Based Access Control (RBAC). Access control lists (ACLs) aren't used in Exchange 2016. You can use [Get-PublicFolderStatistics](http://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx) and [Get-PublicFolderItemStatistics](http://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](http://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx).
+Starting in Exchange 2013, public folder permissions are managed by using role-based access control (RBAC); access control lists (ACLs) no longer used. You can use [Get-PublicFolderStatistics](http://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx) and [Get-PublicFolderItemStatistics](http://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](http://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx).
   
 ## Does mailbox audit logging work against public folders?
 
@@ -149,7 +153,7 @@ Just like in previous versions of Exchange, you can set retention limits on item
   
 ## Can you specify which users can use a specific public folder mailbox?
 
-In Exchange 2010, you could specify which users had access to specific public folders. In Exchange 2016, you can set the default public folder mailbox per user. To do so, run the [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet with the _DefaultPublicFolderMailbox_ parameter.
+In Exchange 2010, you could specify which users had access to specific public folders. In Exchange 2013 or later, you can set the default public folder mailbox per user. To do so, run the [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet with the _DefaultPublicFolderMailbox_ parameter. For example:
   
 ```
 Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
@@ -165,6 +169,6 @@ No. If you try to change the master hierarchy mailbox, you'll receive an error.
   
 ## Do public folders have full text searching capabilities?
 
-Yes, full text search is available for public folders in Exchange 2016. However, you can't search across multiple public folders.
+Yes, full text search has been available for public folders since Exchange 2013. However, you can't search across multiple public folders.
   
 
