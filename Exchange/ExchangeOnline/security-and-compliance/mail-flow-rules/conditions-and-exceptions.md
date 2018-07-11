@@ -3,7 +3,7 @@ title: "Mail flow rule conditions and exceptions (predicates) in Exchange Online
 ms.author: stephow
 author: stephow-msft
 manager: scotv
-ms.date: 6/23/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -19,7 +19,7 @@ Most conditions and exceptions have one property that requires one or more value
   
 For more information about mail flow rules in Exchange Online, see [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md).
   
-For more information about conditions and exceptions in mail flow rules in Exchange Online Protection or Exchange 2013, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online Protection](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx) or [Mail flow rule conditions and exceptions (predicates) in Exchange 2013](http://technet.microsoft.com/library/c918ea00-1e68-4b8b-8d51-6966b4432e2d.aspx).
+For more information about conditions and exceptions in mail flow rules in Exchange Online Protection or Exchange Server, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online Protection](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx) or [Mail flow rule conditions and exceptions (predicates) in Exchange Server](http://technet.microsoft.com/library/c918ea00-1e68-4b8b-8d51-6966b4432e2d.aspx).
   
 ## Conditions and exceptions for mail flow rules in Exchange Online
 <a name="MBConditions"> </a>
@@ -262,7 +262,7 @@ The property types that are used in conditions and exceptions are described in t
   
 [Mail flow rule procedures in Exchange Online](mail-flow-rule-procedures.md)
   
-[Transport Rule Conditions (Predicates)](http://technet.microsoft.com/library/c918ea00-1e68-4b8b-8d51-6966b4432e2d.aspx) for Exchange 2013 
+[Transport Rule Conditions (Predicates)](http://technet.microsoft.com/library/c918ea00-1e68-4b8b-8d51-6966b4432e2d.aspx) for Exchange Server 
   
 [Transport Rule Conditions (Predicates)](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx) for Exchange Online Protection 
   
