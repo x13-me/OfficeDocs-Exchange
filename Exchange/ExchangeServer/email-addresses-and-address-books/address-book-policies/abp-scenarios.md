@@ -148,7 +148,7 @@ These are the important issues to consider when you use ABPs in your organizatio
 
 This section walks you through the deployment steps for [Scenario 2: Two companies sharing a CEO in one Exchange organization](abp-scenarios.md#shareCEO). If you recall, Fabrikam and Tailspin Toys are separate companies that share the same CEO.
   
-To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
   
 ### Step 1: Install and configure the Address Book Policy Routing Agent
 
