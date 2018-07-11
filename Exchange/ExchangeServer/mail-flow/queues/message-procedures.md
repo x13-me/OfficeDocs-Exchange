@@ -16,7 +16,7 @@ description: "Summary: Learn how to remove, suspend, resume, and redirect messag
 
  **Summary**: Learn how to remove, suspend, resume, and redirect messages in queues in Exchange 2016.
   
-In Exchange Server 2016, you can use the Queue Viewer in the Exchange Toolbox or the Exchange Management Shell to manage messages in queues. For more information about messages in queues, see [Message properties](queues.md#MessageProperties).
+In Exchange Server 2016, you can use the Queue Viewer in the Exchange Toolbox or the Exchange Management Shell to manage messages in queues. For more information about messages in queues, see [Message properties](queues.md#message-properties).
   
 This topic describes how to perform the following procedures on messages in queues:
   
@@ -66,7 +66,7 @@ For information about exporting messages from queues, see [Export messages from 
 
  **Notes**:
   
-- A message that's being sent to multiple recipients might be located in more than one queue. To remove a message from more than one queue in a single operation, you need to use a filter. For more information, see [Properties of messages in queues](message-properties.md) and [Message filtering parameters](queues-and-messages-in-powershell.md#MessagesFilters).
+- A message that's being sent to multiple recipients might be located in more than one queue. To remove a message from more than one queue in a single operation, you need to use a filter. For more information, see [Properties of messages in queues](message-properties.md) and [Message filtering parameters](queues-and-messages-in-powershell.md#message-filtering-parameters).
     
 - You can't remove messages from the Submission queue.
     
@@ -130,7 +130,7 @@ To verify that you have successfully removed messages from queues, use either of
 
  **Notes**:
   
-- A message that's being sent to multiple recipients might be located in more than one queue. To suspend a message in more than one queue in a single operation, you need to use a filter. For more information, see [Properties of messages in queues](message-properties.md) and [Message filtering parameters](queues-and-messages-in-powershell.md#MessagesFilters).
+- A message that's being sent to multiple recipients might be located in more than one queue. To suspend a message in more than one queue in a single operation, you need to use a filter. For more information, see [Properties of messages in queues](message-properties.md) and [Message filtering parameters](queues-and-messages-in-powershell.md#message-filtering-parameters).
     
 - If you suspend a message that's in the act of being transmitted to the next hop, delivery of the message will continue, and the message status will be **PendingSuspend**. If delivery fails, the message will re-enter the queue, and then the message will be suspended.
     
@@ -203,7 +203,7 @@ To verify that you have successfully suspended messages in queues, use either of
   
 - You can only resume messages that have a status of Suspended.
     
-- The status of the queue that holds the messages affects the delivery of the message. For example, if you resume suspended messages in a queue that has a status of Suspended, the messages can't be delivered until you resume the queue. For more information about resuming queues, see [Resume queues](queue-procedures.md#Resume).
+- The status of the queue that holds the messages affects the delivery of the message. For example, if you resume suspended messages in a queue that has a status of Suspended, the messages can't be delivered until you resume the queue. For more information about resuming queues, see [Resume queues](queue-procedures.md#resume-queues).
     
 ### Use Queue Viewer to resume messages
 

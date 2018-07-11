@@ -39,7 +39,7 @@ Instead of routing all outbound messages directly to the Internet, you may need 
     
   - **Name**: Enter a descriptive name for the Send connector, for example, Smart host to Internet.
     
-  - **Type**: Select a descriptive value. For example, **Internet** or **Custom**. For more information about Send connector usage types, see [Send connector usage types](send-connectors.md#UsageTypes).
+  - **Type**: Select a descriptive value. For example, **Internet** or **Custom**. For more information about Send connector usage types, see [Send connector usage types](send-connectors.md#send-connector-usage-types).
     
     When you're finished, click **Next**.
     
