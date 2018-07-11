@@ -3,18 +3,18 @@ title: "Manage journaling"
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/23/2018
+ms.date: 7/11/2018
 ms.audience: End User
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
-description: "Journaling can help your organization respond to legal, regulatory, and organizational compliance requirements by recording inbound and outbound email communications. This topic shows you how to perform basic tasks related to managing journaling in Exchange 2013 and Exchange Online."
+description: "Journaling can help your organization respond to legal, regulatory, and organizational compliance requirements by recording inbound and outbound email communications. This topic shows you how to perform basic tasks related to managing journaling in Exchange Server and Exchange Online."
 ---
 
 # Manage journaling
 
-Journaling can help your organization respond to legal, regulatory, and organizational compliance requirements by recording inbound and outbound email communications. This topic shows you how to perform basic tasks related to managing journaling in Exchange 2013 and Exchange Online.
+Journaling can help your organization respond to legal, regulatory, and organizational compliance requirements by recording inbound and outbound email communications. This topic shows you how to perform basic tasks related to managing journaling in Exchange Server and Exchange Online.
   
 Standard journaling is configured on a mailbox database. It enables the Journaling agent to journal all messages sent to and from mailboxes located on a specific mailbox database. You can also use premium journaling enables the Journaling agent to perform more granular journaling by using journal rules. Instead of journaling all mailboxes residing on a mailbox database, you can configure journal rules to match your organization's needs by journaling individual recipients or members of distribution groups. You must have an Exchange Enterprise client access license (CAL) to use premium journaling.
   
