@@ -3,7 +3,7 @@ title: "Manage mail flow with mailboxes in multiple locations (Office 365 and on
 ms.author: laurawi
 author: LauraWi
 manager: scotv
-ms.date: 1/26/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -125,7 +125,7 @@ If you have business or regulatory reasons for filtering mail in your on-premise
     
   - Mail that comes from Office 365 and is destined for the Internet is first sent to your on-premises servers, then comes back to Office 365, and is then delivered to the Internet. Line 4 represents this path in the scenario 2 diagram.
     
-  - To achieve this configuration, create connectors via the [Hybrid Configuration Wizard](http://technet.microsoft.com/library/2e6ed294-ee74-4038-8b71-b61786372ba4.aspx) or via cmdlets, and enable CMT. For details about CMT, see [Transport Options in Exchange 2013 Hybrid Deployments](http://technet.microsoft.com/library/da605a78-5429-4de8-8b04-bc4c45a41ba1.aspx).
+  - To achieve this configuration, create connectors via the [Hybrid Configuration Wizard](http://technet.microsoft.com/library/2e6ed294-ee74-4038-8b71-b61786372ba4.aspx) or via cmdlets, and enable CMT. For details about CMT, see [Transport Options in Exchange Hybrid Deployments](http://technet.microsoft.com/library/da605a78-5429-4de8-8b04-bc4c45a41ba1.aspx).
     
 You don't need connectors in the following scenarios unless one of your partners has special requirements, such as enforcing TLS with a bank.
   
