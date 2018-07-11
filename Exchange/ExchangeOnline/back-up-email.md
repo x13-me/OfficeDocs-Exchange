@@ -3,13 +3,13 @@ title: "Backing up email in Exchange Online"
 ms.author: kwekua
 author: kwekua
 manager: scotv
-ms.date: 6/25/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 94d2f62e-5d43-4200-b7ce-33b1f41f1d59
-description: "One of the questions we often hear isHow does Exchange Online back up my data?You may be asking this because you're concerned about how to recover your data if there is a failure. Or you may be wondering how to recover your data if it gets accidentally deleted. This topic answers these questions."
+description: "One of the questions we often hear is How does Exchange Online back up my data? You may be asking this because you're concerned about how to recover your data if there is a failure. Or you may be wondering how to recover your data if it gets accidentally deleted. This topic answers these questions."
 ---
 
 # Backing up email in Exchange Online
@@ -18,7 +18,7 @@ One of the questions we often hear is "How does Exchange Online back up my data?
   
 ## Backing up data in Exchange Online
 
-Lots of things can disrupt service availability, such as hardware failure, natural disasters, or human error. To ensure that your data is always available and that services continue, even when unexpected events occur, Exchange Online uses the same technologies found in Exchange 2013. For example, Exchange Online uses the Exchange 2013 feature known as Database Availability Groups to replicate Exchange Online mailboxes to multiple databases in separate Microsoft datacenters. As a result, you can readily access up-to-date mailbox data in the event of a failure that affects one of the database copies. In addition to having multiple copies of each mailbox database, the different datacenters back up data for one another. If one fails, the affected data are transferred to another datacenter with limited service interruption and users experience seamless connectivity.
+Lots of things can disrupt service availability, such as hardware failure, natural disasters, or human error. To ensure that your data is always available and that services continue, even when unexpected events occur, Exchange Online uses the same technologies found in Exchange Server. For example, Exchange Online uses the Exchange Server feature known as Database Availability Groups to replicate Exchange Online mailboxes to multiple databases in separate Microsoft datacenters. As a result, you can readily access up-to-date mailbox data in the event of a failure that affects one of the database copies. In addition to having multiple copies of each mailbox database, the different datacenters back up data for one another. If one fails, the affected data are transferred to another datacenter with limited service interruption and users experience seamless connectivity.
   
 > [!NOTE]
 > You can obtain the most current information related to a service interrupting event by logging into the Service Health Dashboard. For more information, see [View the status of your services](https://go.microsoft.com/fwlink/?LinkId=786661). 
@@ -34,7 +34,14 @@ Exchange Online service provides several options for Deleted item recovery, whic
 - **Retention tags and retention policies** These settings specify how long a message remains in a mailbox and the action to be taken when the message reaches the specified retention age. When a message reaches its retention age, it's moved to the user's In-Place Archive or deleted. For more information about Retention tags and policies, see [Retention tags and retention policies](security-and-compliance/messaging-records-management/retention-tags-and-policies.md).
     
 > [!IMPORTANT]
->  With all the previously mentioned options for Deleted item recovery, note that point in time restoration of mailbox items is out of the scope of the Exchange service. However, Exchange Online offers extensive retention and recovery support for an organization's email infrastructure, and your mailbox data is available when you need it, no matter what happens. >  You can find more details about additional options in the following topics: > [High Availability and Business Continuity](http://technet.microsoft.com/library/7b03465e-3b9c-4500-8956-a83377f4c2c3.aspx)> [Exchange Online Service Description](http://technet.microsoft.com/library/7a83da3c-3b6d-4f86-ad4d-6104707cd0ec.aspx)> [Create or remove an In-Place Hold](security-and-compliance/create-or-remove-in-place-holds.md)> [Place a mailbox on Litigation Hold](http://technet.microsoft.com/library/adee4621-3626-4aec-aa53-00b35ff0d0b0.aspx)> [Manage inactive mailboxes in Exchange Online](http://technet.microsoft.com/library/c60e9ae7-dd02-4c5f-9f5d-7626a9101094.aspx)
+>  With all the previously mentioned options for Deleted item recovery, note that point in time restoration of mailbox items is out of the scope of the Exchange service. However, Exchange Online offers extensive retention and recovery support for an organization's email infrastructure, and your mailbox data is available when you need it, no matter what happens.
+>
+>  You can find more details about additional options in the following topics:
+>  [High Availability and Business Continuity](http://technet.microsoft.com/library/7b03465e-3b9c-4500-8956-a83377f4c2c3.aspx)
+>  [Exchange Online Service Description](http://technet.microsoft.com/library/7a83da3c-3b6d-4f86-ad4d-6104707cd0ec.aspx)
+>  [Create or remove an In-Place Hold](security-and-compliance/create-or-remove-in-place-holds.md)
+>  [Place a mailbox on Litigation Hold](http://technet.microsoft.com/library/adee4621-3626-4aec-aa53-00b35ff0d0b0.aspx)
+> [Manage inactive mailboxes in Exchange Online](http://technet.microsoft.com/library/c60e9ae7-dd02-4c5f-9f5d-7626a9101094.aspx)
   
 ## How do users backup Outlook data?
 
