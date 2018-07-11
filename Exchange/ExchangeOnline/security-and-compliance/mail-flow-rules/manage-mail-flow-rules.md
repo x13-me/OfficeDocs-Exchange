@@ -3,7 +3,7 @@ title: "Manage mail flow rules"
 ms.author: chrisda
 author: chrisda
 manager: scotv
-ms.date: 6/23/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -21,9 +21,9 @@ You can use mail flow rules, also known as transport rules, to look for specific
   
 Interested in scenarios where these procedures are used? See the following topics:
   
-- **Organization-wide disclaimers, signatures, footers, or headers in Exchange 2013**
+- **Organization-wide disclaimers, signatures, footers, or headers in Exchange Server**
     
-- **Use transport rules to inspect message attachments in Exchange 2013**
+- **Use transport rules to inspect message attachments in Exchange Server**
     
 - [Common attachment blocking scenarios for mail flow rules](common-attachment-blocking-scenarios.md)
     
@@ -72,7 +72,7 @@ Each DLP policy is a collection of mail flow rules. After you create the DLP pol
   
 1. Create a DLP policy. For instructions, see:
     
-  - [Exchange Server 2013 DLP Procedures](http://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df%28Office.14%29.aspx)
+  - [Exchange Server DLP Procedures](http://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df%28Office.14%29.aspx)
     
   - [Exchange Online DLP procedures](http://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df%28Office.14%29.aspx)
     
