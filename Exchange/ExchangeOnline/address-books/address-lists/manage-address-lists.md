@@ -3,7 +3,7 @@ title: "Manage address lists in Exchange Online"
 ms.author: kwekua
 author: kwekua
 manager: scotv
-ms.date: 3/8/2016
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -18,7 +18,7 @@ Address lists are a collection of mail-enabled objects in your organization. Mai
   
 For additional management tasks related to manage address lists, see [Address list procedures in Exchange Online](address-list-procedures.md).
   
-Looking for the Exchange 2013 version of this topic? See [Create an Address List](http://technet.microsoft.com/library/e86ba1b7-c41c-4050-bc29-13996cf53c59.aspx).
+Looking for the Exchange Server version of this topic? See [Create an Address List](http://technet.microsoft.com/library/e86ba1b7-c41c-4050-bc29-13996cf53c59.aspx).
   
 ## What do you need to know before you begin?
 
