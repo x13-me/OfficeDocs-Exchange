@@ -3,7 +3,7 @@ title: "Create a custom DLP policy"
 ms.author: stephow
 author: stephow-msft
 manager: laurawi
-ms.date: 6/23/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -19,7 +19,7 @@ The rule conditions that are available to you in a single policy include all the
 > [!CAUTION]
 > You should enable your DLP policies in test mode before running them in your production environment. During such tests, it is recommended that you configure sample user mailboxes and send test messages that invoke your test policies in order to confirm the results. for more information about testing, see [Test a mail flow rule](../../security-and-compliance/mail-flow-rules/test-mail-flow-rules.md). 
   
-For additional management tasks related to creating a custom DLP policy, see [DLP Procedures](http://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df.aspx)(Exchange 2013) or [DLP Procedures](http://technet.microsoft.com/library/925290cc-f3b4-401e-b6c7-9a216a726f17.aspx) (Exchange Online). 
+For additional management tasks related to creating a custom DLP policy, see [DLP Procedures](http://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df.aspx)(Exchange Server) or [DLP Procedures](http://technet.microsoft.com/library/925290cc-f3b4-401e-b6c7-9a216a726f17.aspx) (Exchange Online). 
   
 ## What do you need to know before you begin?
 
