@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 645154a1-fd8a-4332-a306-5ce0b4be1a05
 description: "Summary: Learn about site mailboxes and how to use them."

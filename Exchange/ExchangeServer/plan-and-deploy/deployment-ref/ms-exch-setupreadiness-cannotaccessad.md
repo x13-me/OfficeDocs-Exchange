@@ -8,7 +8,7 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - 'ms.exch.setupreadiness.CannotAccessAD'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 56adb6fe-ecb8-4a7f-b440-89aa401c28b7
 description: "Microsoft Exchange Server 2016 Setup can't continue because it can't contact a valid Active Directory directory service site. Setup requires that the server you're installing Exchange on is able to locate the configuration naming context in Active Directory."

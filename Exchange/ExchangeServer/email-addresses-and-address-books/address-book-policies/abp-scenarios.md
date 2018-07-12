@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6ac3c87d-161f-447b-afb2-149ae7e3f1dc
 description: "Summary: Learn how to use address book polices to split single Exchange 2016 organizations into separate virtual organizations based on different requirements and scenarios."

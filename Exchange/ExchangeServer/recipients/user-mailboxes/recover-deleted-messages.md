@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/12/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12

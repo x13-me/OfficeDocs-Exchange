@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: de53c00b-091c-4a31-aacc-1bd40c756ce2
 description: "Summary: An overview of enhancements and additions to high availability and site resilience capabilities since the Exchange 2010 release."

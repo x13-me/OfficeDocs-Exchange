@@ -8,7 +8,7 @@ ms.audience: ITPro
 ms.topic: reference
 f1_keywords:
 - 'ms.exch.setupreadiness.ADAMDataPathExists'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: cf830dec-dd74-47b2-bee2-b8956f8023ce
 description: "Microsoft Exchange Server 2016 Setup can't continue because the attempt to install Active Directory Lightweight Directory Services (AD LDS) failed."

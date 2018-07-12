@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 14df5e1a-a5f7-4b0d-ba97-f53b76f0e7e0
 description: "Summary: Learn about mail flow and the transport pipeline in Exchange 2016."

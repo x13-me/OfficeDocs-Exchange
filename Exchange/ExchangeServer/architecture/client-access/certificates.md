@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/12/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: a9e2e08c-d46a-4135-a387-eb653212b676
 description: "Summary: Learn about SSL, TLS, encryption, and digital certificates in Exchange 2016."

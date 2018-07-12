@@ -7,7 +7,7 @@ ms.audience: Developer
 ms.topic: article
 f1_keywords:
 - 'ms.exch.setupreadiness.Win2k16LSARollupUpdateNotInstalled'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 0d64b18a-4198-4ddf-836a-1f4ab08fb9b8
 description: "Microsoft Exchange Server 2016 Setup can't continue because the local computer requires a software update. You'll need to install this update before Exchange 2016 Setup can continue."

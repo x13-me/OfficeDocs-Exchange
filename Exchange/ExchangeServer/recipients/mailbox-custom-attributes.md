@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 4/19/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 2b043878-0b34-4563-a9c2-28a9efa7447e
 description: "Summary: Learn to use the custom attributes in Exchange 2016 to add information about a mail recipient."

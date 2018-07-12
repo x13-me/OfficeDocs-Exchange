@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 23f1eaf6-247a-4671-ad72-aae19d9b511d
 description: "Summary: Learn how address rewriting on Edge Transport servers in Exchange 2016 can modify sender and recipient email addresses on email messages in transit."

@@ -8,7 +8,7 @@ ms.audience: ITPro
 ms.topic: reference
 f1_keywords:
 - 'ms.exch.setupreadiness.ForestLevelNotWin2003Native'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 45f45976-62ac-4b6c-889a-ebd449402009
 description: "Microsoft Exchange Server 2016 Setup can't continue because it detected that the forest functional level of the current Active Directory forest isn't Windows Server 2003 native or later. Before you can install Exchange 2016, you must raise the forest functional level to Windows Server 2003 or later."

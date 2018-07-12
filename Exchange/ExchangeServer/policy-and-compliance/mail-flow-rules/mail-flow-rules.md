@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/12/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c3d2031c-fb7b-4866-8ae1-32928d0138ef
 description: "Summary: Learn about mail flow rules (transport rules) and their components in Exchange 2016."

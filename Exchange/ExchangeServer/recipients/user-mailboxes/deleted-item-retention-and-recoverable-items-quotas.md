@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: de7d667a-1c93-4364-a4f9-2aa5e3678b12
 description: "Summary: Learn how to configure the deleted item retention period for a mailbox or mailbox database in Exchange 2016."

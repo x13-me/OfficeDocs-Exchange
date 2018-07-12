@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c1d9edbb-d87c-41e5-881b-cd612d83d7e4
 description: "Summary: Learn about the options that are available for message encoding in Exchange 2016."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/7/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 4a9ef08e-bd62-4c6b-8790-d24fb0f8f24b
 description: "Summary: Create a Send connector in Exchange 2016 that's configured to route outbound mail through a smart host."

@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: dbbef170-e726-4735-abf1-2857db9bb52d
 description: "Summary: Learn how to enable mailbox audit logging in Exchange so that you run reports on non-owner mailbox access."

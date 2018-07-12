@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bada2ea7-6d7c-4630-b7f1-67f56818f0ff
 description: "Summary: Learn about message tracking and the message tracking log in Exchange 2016."

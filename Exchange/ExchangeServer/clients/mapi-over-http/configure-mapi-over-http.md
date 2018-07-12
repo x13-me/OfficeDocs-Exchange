@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 2c07b1e6-8d07-4e73-8800-b306e2266c7d
 description: "Summary: How to enable or disable MAPI over HTTP in your Exchange 2016 organization."

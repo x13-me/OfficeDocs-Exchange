@@ -5,7 +5,7 @@ author: msdmaguire
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bcd54aa0-aa45-4c68-b504-1475842d4b96
 description: "Summary: Follow these steps to return your public folder infrastructure to its pre-migration state in your Exchange 2016 on-premises organization."

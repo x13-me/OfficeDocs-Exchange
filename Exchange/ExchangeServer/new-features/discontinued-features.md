@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Priority
 ms.assetid: 0ac0001c-b314-4108-b895-d9c0e271b489
 description: "This topic discusses the components, features, or functionality that have been removed, discontinued, or replaced in Exchange 2016."

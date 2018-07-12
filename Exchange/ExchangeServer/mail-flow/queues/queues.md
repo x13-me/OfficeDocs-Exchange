@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: e7ad0ba5-3789-4a2b-9825-6bb1b321609c
 description: "Summary: Learn about queues in Exchange 2016"

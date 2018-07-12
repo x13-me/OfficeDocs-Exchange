@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 74be3f97-ec0f-4d2a-b5d8-7770cc489919
 description: "Summary: Learn how to create, configure, and manage a database availability group (DAG) in Exchange 2016."

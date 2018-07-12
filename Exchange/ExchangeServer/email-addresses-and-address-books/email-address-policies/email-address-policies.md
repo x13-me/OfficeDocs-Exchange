@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/12/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b63b63bb-6faf-4337-8441-50bc64b49bb8
 description: "Summary: Learn about email address policies in Exchange 2016."

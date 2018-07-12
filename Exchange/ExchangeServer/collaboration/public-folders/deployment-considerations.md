@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 2e416eed-b88f-45db-a482-1232fd2610fa
 description: "Summary: Important considerations to read before you deploy public folders in your organization."

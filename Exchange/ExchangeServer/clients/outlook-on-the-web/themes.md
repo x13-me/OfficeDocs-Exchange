@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 7e1fa13c-3de3-45c2-b1fa-e74fc8487bda
 description: "Summary: Learn how to create a custom theme for Outlook on the web in Exchange 2016."
