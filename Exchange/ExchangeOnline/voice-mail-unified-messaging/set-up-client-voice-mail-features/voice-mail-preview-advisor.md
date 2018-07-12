@@ -3,7 +3,7 @@ title: "Voice Mail Preview advisor"
 ms.author: tonysmit
 author: tonysmit
 manager: scotv
-ms.date: 6/24/2018
+ms.date: 7/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -46,7 +46,7 @@ Most customers who use Unified Messaging find that the voice mail previews are a
 When you've signed up with a Voice Mail Preview partner, the Exchange servers in your organization redirect voice messages with the audio file attached to the Voice Mail Preview partner instead of generating voice mail preview text for voice messages and submitting the voice messages to the user's mailbox. The email message with the voice mail preview text produced by the Voice Mail Preview partner is then submitted to the Exchange servers in your organization for delivery to the recipient's mailbox. 
   
 > [!IMPORTANT]
-> We recommend that all customers who plan to deploy Unified Messaging obtain the assistance of a UM specialist. A UM specialist helps you ensure that there's a smooth transition to UM from a legacy voice mail system. Performing a new deployment or upgrading a legacy voice mail system requires significant knowledge about VoIP gateways, IP PBXs, PBXs, session border controllers (SBCs), and Unified Messaging. For more information about how to contact a UM specialist, see the [Microsoft Exchange Server 2013 Unified Messaging (UM) Specialists](http://go.microsoft.com/fwlink/p/?LinkId=262708) or [Microsoft Pinpoint for Unified Messaging](https://go.microsoft.com/fwlink/p/?LinkId=261951). 
+> We recommend that all customers who plan to deploy Unified Messaging obtain the assistance of a UM specialist. A UM specialist helps you ensure that there's a smooth transition to UM from a legacy voice mail system. Performing a new deployment or upgrading a legacy voice mail system requires significant knowledge about VoIP gateways, IP PBXs, PBXs, session border controllers (SBCs), and Unified Messaging. For more information about how to contact a UM specialist, see the [Microsoft Exchange Server Unified Messaging (UM) Specialists](http://go.microsoft.com/fwlink/p/?LinkId=262708) or [Microsoft Pinpoint for Unified Messaging](https://go.microsoft.com/fwlink/p/?LinkId=261951). 
   
 ## Exchange Unified Messaging Voice Mail Partner program
 <a name="program"> </a>
