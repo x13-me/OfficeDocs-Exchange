@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/25/2018
 ms.audience: Developer
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Hybrid
 ms.assetid: 696bddbc-d86b-4f43-8dc5-bf3d1f10a02c
