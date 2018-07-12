@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 5/2/2018
 ms.audience: Developer
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection:
 - Hybrid
