@@ -3,7 +3,7 @@ title: "Troubleshoot Office 365 mail flow"
 ms.author: tirich
 author: tirich
 manager: scotv
-ms.date: 12/9/2016
+ms.date: 7/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -28,7 +28,7 @@ Problems with mail delivery can be a very frustrating for both the user and the 
     
 - The sender's mailbox is hosted in Office 365, and the recipient's mailbox is located on an on-premise Exchange server, and both mailboxes are in the same organization.
     
-- The sender's mailbox is hosted on an on-premise Exchange Server server and the recipient's mailbox is hosted in Office 365, and both mailboxes are in the same organization.
+- The sender's mailbox is hosted on an on-premise Exchange server and the recipient's mailbox is hosted in Office 365, and both mailboxes are in the same organization.
     
 For instructions about using the mail flow troubleshooter and other troubleshooting options, see [Find and fix email delivery issues as an Office 365 for business admin](https://support.office.com/en-us/article/Find-and-fix-email-delivery-issues-as-an-Office-365-for-business-admin-e7758b99-1896-41db-bf39-51e2dba21de6).
   
