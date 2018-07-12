@@ -175,11 +175,11 @@ When you set these restrictions, all mail from your partner organization sent fr
 
 [Configure mail flow using connectors in Office 365](use-connectors-to-configure-mail-flow.md)
   
-[Mail flow best practices for Exchange Online and Office 365 (overview)](../../mail-flow-best-practices/mail-flow-best-practices.md)
+[Mail flow best practices for Exchange Online and Office 365 (overview)](../mail-flow-best-practices.md)
 
 [About fixing connector validation errors](http://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx)
   
-[Mail flow best practices for Exchange Online and Office 365 (overview)](../../mail-flow-best-practices/mail-flow-best-practices.md#BKMK_HostedMailFlowWithThirdPartyCloud)
+[Mail flow best practices for Exchange Online and Office 365 (overview)](../mail-flow-best-practices.md)
   
 [What happens when I have multiple connectors for the same scenario?](set-up-connectors-to-route-mail.md#multipleconnectors)
 
