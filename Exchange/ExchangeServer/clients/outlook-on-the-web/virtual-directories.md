@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
 description: "Summary: Learn how to view and configure the properties of Outlook on the web virtual directories in Exchange 2016"

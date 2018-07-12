@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: ac208c12-04d0-4809-bacd-72478ff14983
 description: "Summary: How to plan for, and then perform, a datacenter switchover in Exchange 2016."

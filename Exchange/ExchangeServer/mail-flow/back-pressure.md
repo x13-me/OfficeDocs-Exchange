@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 03003544-e802-4988-9427-5fc4da64dcb8
 description: "Summary: Learn how back pressure monitors system resources on Exchange 2016 servers to prevent servers from being overwhelmed by the volume of incoming messages."

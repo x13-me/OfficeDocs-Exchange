@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/7/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b6a3840d-b821-4e53-877b-59c16be77206
 description: "Summary: Learn how administrators can apply limits to messages in an Exchange 2016 organization."

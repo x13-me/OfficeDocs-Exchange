@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 4/19/2018
 ms.audience: ITPro
 ms.topic: conceptual
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Critical
 ms.collection: Strat_EX_Admin
 ms.assetid: 7e879e4e-1124-4a41-94d2-c64500beb24e

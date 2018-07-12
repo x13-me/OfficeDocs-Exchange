@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9ca7a32d-2436-462f-b71a-94129d05b6fa
 description: "Summary: Learn about public folders and how they work in Exchange 2016."

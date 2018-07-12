@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bff2ce89-9e6f-494a-bd6a-2f2011507845
 description: "Summary: Learn how to copy the results of an In-Place eDiscovery search to a discovery mailbox in Exchange 2016."

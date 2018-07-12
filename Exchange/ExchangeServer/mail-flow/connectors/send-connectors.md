@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6aa19a12-c7b2-4eac-a8dc-9a4d26919ac5
 description: "Summary: Learn about Send connectors in Exchange 2016, and how they control mail flow from your Exchange organization."

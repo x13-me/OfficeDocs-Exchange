@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: e45e33c9-e53b-427c-ada5-70901bc399b8
 description: "Summary: Learn about using mail flow rules (transport rules) to add disclaimers to email messages in Exchange 2016."

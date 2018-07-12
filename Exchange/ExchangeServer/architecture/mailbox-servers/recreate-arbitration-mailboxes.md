@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b9004562-b0f2-4460-a623-94883834f73f
 description: "Summary: About arbitration mailboxes in Exchange 2016 and how to re-create them."

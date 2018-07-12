@@ -8,7 +8,7 @@ ms.audience: ITPro
 ms.topic: get-started-article
 f1_keywords:
 - 'Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.OfflineAddressBookGeneralPage'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: d2b4d527-311e-442d-9f1f-54fac8371b80

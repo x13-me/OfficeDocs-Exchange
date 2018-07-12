@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: e226a5f1-429d-4046-b925-da6cc151709e
 description: "Summary: Learn how to enable and configure POP3 on an Exchange 2016 server for access by POP3 clients."

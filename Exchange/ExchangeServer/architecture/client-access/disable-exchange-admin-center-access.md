@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/7/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 49f4fa77-1722-4703-81c9-8724ae0334fb
 description: "Summary: Learn how to disable access to the Exchange admin center on an Exchange 2016 server."

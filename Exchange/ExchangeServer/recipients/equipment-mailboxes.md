@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18
 description: "Summary: Learn how to create an Exchange equipment mailbox, which is a resource mailbox assigned to a resource that isn't location-specific."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/12/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 4f7da774-b484-4312-b822-809dbeced5f8
 description: "Summary: How to use the Exchange admin center (EAC) or Exchange Management Shell to make changes to user mailboxes."

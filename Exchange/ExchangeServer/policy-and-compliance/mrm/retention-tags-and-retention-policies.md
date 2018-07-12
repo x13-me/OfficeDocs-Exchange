@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
 description: "Summary: Learn about how retention tags and retention policies in Exchange 2016 help manage the email life cycle."

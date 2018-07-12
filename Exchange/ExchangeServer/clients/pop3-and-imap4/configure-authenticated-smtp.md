@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bd22bf7e-3bf7-45e6-8790-919b780166f6
 description: "Summary: Learn how to configure the authenticated SMTP settings on an Exchange 2016 server that are required by POP3 or IMAP4 clients to send email messages."

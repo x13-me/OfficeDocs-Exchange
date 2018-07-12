@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6b37ed6e-2e36-4688-b485-8fdbb8193ec8
 description: "Summary: About activation policies in Exchange 2016, and how to configure them on mailbox database copies."

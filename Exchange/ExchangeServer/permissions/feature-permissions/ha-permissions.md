@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/7/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 66085107-4d4d-41c3-a425-82314acd9eee
 description: "Summary: Learn about permissions that are required to manage high availability in Exchange Server 2016."

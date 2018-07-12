@@ -8,7 +8,7 @@ ms.audience: ITPro
 ms.topic: reference
 f1_keywords:
 - 'ms.exch.setupreadiness.InstallOnDCInADSplitPermissionMode'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 977e3758-5e09-40a2-80c1-fe344b1d8a2a
 description: "Microsoft Exchange Server 2016 Setup has detected that you're attempting to run Setup on an Active Directory domain controller and one of the following is true:"

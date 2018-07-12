@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6fd39079-9655-4fd9-9269-c7462c76e0a7
 description: "Summary: Learn how mail is routed between Exchange servers in an Exchange 2016 organization."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9317b3bc-44a1-4e54-bc51-4f0b194b6a55
 description: "Summary: Learn about managing mobile device mailbox policies in Exchange 2016."

@@ -8,7 +8,7 @@ ms.audience: ITPro
 ms.topic: reference
 f1_keywords:
 - 'ms.exch.setupreadiness.UnwillingToRemoveMailboxDatabase'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5881e4c0-c2e2-48db-84b4-7f9ce3cf46a7
 description: "Microsoft Exchange Server 2016 Setup can't continue because it can't remove a user mailbox database from the local server without incurring potential data loss."

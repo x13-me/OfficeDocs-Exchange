@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f9677392-88d2-457f-a488-245771a8c1f2
 description: "Summary: The operational tasks of managing DAGs, mailbox database copies, and other high availability elements of Exchange 2016."

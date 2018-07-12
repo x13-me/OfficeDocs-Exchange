@@ -5,7 +5,7 @@ author: chrisda
 ms.date: 6/7/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 8c578226-ce38-4f33-846a-9f47c0177def
 description: "Summary: Learn how administrators can view, create, modify, delete, suspend and resume requests to export mailboxes to .pst files in Exchange 2016."

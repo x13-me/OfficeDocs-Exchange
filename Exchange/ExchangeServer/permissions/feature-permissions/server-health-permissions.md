@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 00b23fd3-6679-4b06-a3d4-51df3112b9cd
 description: "Summary: Learn about permissions that are required to manage workloads and event logs in Exchange Server 2016."

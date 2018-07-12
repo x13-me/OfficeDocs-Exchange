@@ -5,7 +5,7 @@ author: chrisda
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 236e8530-62dd-4c43-8a5d-8465623252e6
 description: "Summary: Learn the tasks that Exchange 2016 administrators need to know to manage address lists and global address lists (GAL)."

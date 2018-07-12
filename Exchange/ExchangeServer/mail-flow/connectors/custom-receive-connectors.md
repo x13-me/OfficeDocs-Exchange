@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/7/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 86f7d6e7-a869-4c90-a570-0239fd0e5872
 description: "Summary: Learn how and when to create custom Receive connectors in Exchange 2016."

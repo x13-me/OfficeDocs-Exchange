@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
 description: "Summary: Learn about protecting user account data in Exchange 2016 by using the Recoverable Items folder."

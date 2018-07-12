@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 03d1e215-518b-4b48-bfcd-8d187ff8f5ef
 description: "Summary: Learn how to configure a virtual machine (VM) as an Exchange 2016 DAG witness server in Azure."

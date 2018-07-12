@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b1704c87-5f5c-464e-9dc5-1bb1bdf9ac2a
 description: "Summary: Learn about the high availability and site resilience capabilities available in Exchange 2016."

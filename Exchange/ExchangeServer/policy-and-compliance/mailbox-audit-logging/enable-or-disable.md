@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c4bbfd52-6196-49c7-8c31-777fbbee11f2
 description: "Summary: Learn how to configure mailbox audit logging on mailboxes in Exchange 2016."

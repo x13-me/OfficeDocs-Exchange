@@ -8,7 +8,7 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - 'ms.exch.setupreadiness.RebootPending'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d5c73280-4e54-473a-b328-9673af11e2c0
 description: "Microsoft Exchange Server 2016 Setup can't continue because it detected that the local computer needs to be restarted to complete the installation of other programs or Windows updates."

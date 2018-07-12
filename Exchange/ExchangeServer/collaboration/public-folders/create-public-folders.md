@@ -8,7 +8,7 @@ ms.audience: ITPro
 ms.topic: article
 f1_keywords:
 - 'Microsoft.Exchange.Management.PublicFolders.NewPublicFolderWizardForm.NewPublicFolderWizardPage'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6d252e60-c8d0-4efd-b9d7-ba5284a6f8ab
 description: "Summary: Learn how to create a public folder with the Exchange admin center (EAC) or with the Exchange Management Shell."

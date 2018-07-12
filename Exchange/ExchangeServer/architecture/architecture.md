@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Critical
 ms.assetid: 1aacc1c9-c81b-47d4-b222-ee73956cf968
 description: "Summary: Learn about the architecture of Exchange 2016"

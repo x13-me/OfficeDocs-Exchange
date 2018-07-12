@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bead3cc5-7d50-446f-95b7-e432bcb7968e
 description: "Summary: How to update, or seed , a mailbox database copy in Exchange 2016."

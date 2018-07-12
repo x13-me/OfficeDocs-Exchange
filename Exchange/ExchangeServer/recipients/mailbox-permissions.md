@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52
 description: "Summary: Learn how to assign permissions for mailboxes and groups in Exchange 2016 so other users can open the mailbox, send mail from the mailbox, or send mail from the group."

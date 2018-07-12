@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/12/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 28cedf1d-365a-4e36-b2ba-6bf81af8684f
 description: "Summary: Learn about managing mailbox database copies in the Mailbox server in Exchange 2016."

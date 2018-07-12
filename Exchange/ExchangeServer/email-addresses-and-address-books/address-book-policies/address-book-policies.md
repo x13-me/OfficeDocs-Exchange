@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
 description: "Summary: Learn how to use address book policies (ABP) to create separate virtual organizations with a segmented global address list in Exchange 2016."
