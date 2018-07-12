@@ -58,7 +58,7 @@ The following options are available for the protocol logs of all Send connectors
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport Service", "Front End Transport service", "Mailbox Transport service", "Receive connectors" and "Send connectors" entries in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
     
-- You can use the Exchange admin center (EAC) to enable or disable protocol logging for Receive connectors and Send connectors on Mailbox servers. You can also use the EAC to configure the protocol log paths for the Transport service only. For all other protocol logging options, you need to use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- You can use the Exchange admin center (EAC) to enable or disable protocol logging for Receive connectors and Send connectors on Mailbox servers. You can also use the EAC to configure the protocol log paths for the Transport service only. For all other protocol logging options, you need to use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
 - You enable or disable protocol logging on each individual connector. You configure other protocol logging options for all Receive connectors or all Send connectors that affect each individual transport service on the Exchange server. All Receive connectors in a transport service share the same protocol log files and protocol log options. These files and options are separate from the Send connector protocol log files and protocol log options in the same transport service.
     
@@ -146,7 +146,7 @@ Set-ReceiveConnector "Connection to Internet" -ProtocolLoggingLevel None
 
 ### Use the Exchange Management Shell to enable or disable protocol logging on the intra-organization Send connector
 
-Use this procedure to enable or disable protocol logging on the implicit and invisible intra-organization Send connector that exists in the Transport service, the Front End Transport service, and the Mailbox Transport Submission service on Mailbox servers. For more information about these connectors, see [Implicit Send connectors](send-connectors.md#ImplicitSendConnectors).
+Use this procedure to enable or disable protocol logging on the implicit and invisible intra-organization Send connector that exists in the Transport service, the Front End Transport service, and the Mailbox Transport Submission service on Mailbox servers. For more information about these connectors, see [Implicit Send connectors](send-connectors.md#implicit-send-connectors).
   
 Protocol logging for the intra-organization Send connector occurs in the Send connector protocol logs for the specified transport service. Note that the Transport service setting controls protocol logging for the intra-organization Send connector in the Transport service and in the Mailbox Transport Submission service.
   
@@ -170,7 +170,7 @@ Set-FrontEndTransportService Mailbox01 -IntraOrgConnectorProtocolLoggingLevel No
 
 ### Use the Exchange Management Shell to enable or disable protocol logging on the mailbox delivery Receive connector
 
-Use this procedure to enable or disable protocol logging on the implicit and invisible mailbox delivery Receive connector that exists in the Mailbox Transport Delivery service. Protocol logging for this connector occurs in the Receive connector protocol logs for the Mailbox Transport Delivery service. For more information about this connector, see [Implicit Receive connectors in the Mailbox Transport Delivery service on Mailbox servers](receive-connectors.md#ImplicitReceiveConnectors).
+Use this procedure to enable or disable protocol logging on the implicit and invisible mailbox delivery Receive connector that exists in the Mailbox Transport Delivery service. Protocol logging for this connector occurs in the Receive connector protocol logs for the Mailbox Transport Delivery service. For more information about this connector, see [Implicit Receive connectors in the Mailbox Transport Delivery service on Mailbox servers](receive-connectors.md#implicit-receive-connectors-in-the-mailbox-transport-delivery-service-on-mailbox-servers).
   
 To enable or disable protocol logging on the mailbox delivery Receive connector, use the following syntax in the Exchange Management Shell:
   

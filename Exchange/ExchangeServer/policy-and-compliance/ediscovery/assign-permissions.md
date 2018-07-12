@@ -39,7 +39,7 @@ If you want users to be able to use Exchange Server 2016 In-Place eDiscovery, yo
     
   - Other role groups
     
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
 ## Use the EAC to add a user to the Discovery Management role group
 

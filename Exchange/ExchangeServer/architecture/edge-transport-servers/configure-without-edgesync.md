@@ -24,7 +24,7 @@ For more information about Send connectors, see [Send connectors](../../mail-flo
 
 - Estimated time to complete this task: 30 minutes.
     
-- On Edge Transport servers, you can only use the Exchange Management Shell to create Send connectors and Receive connectors. On Mailbox servers, you can use the Exchange admin center (EAC) or the Exchange Management Shell to create Send connectors. For information about opening and using the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- On Edge Transport servers, you can only use the Exchange Management Shell to create Send connectors and Receive connectors. On Mailbox servers, you can use the Exchange admin center (EAC) or the Exchange Management Shell to create Send connectors. For information about opening and using the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
 - This procedure uses Basic authentication over TLS to provide encryption and authentication. When you use Basic authentication over TLS, the receiving server must have an X.509 (SSL) server certificate that matches the fully qualified domain name (FQDN) on the Receive connector (by default, the FQDN of the server that contains the Receive connector).
     

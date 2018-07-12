@@ -34,7 +34,7 @@ You can create In-Place holds in the Exchange admin center (EAC) or in the Excha
     
 - See the [More information](#moreinfo.md) section for a description of the In-Place Hold workflow process.
     
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
 ## Create an In-Place Hold
 
