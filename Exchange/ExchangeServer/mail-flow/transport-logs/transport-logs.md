@@ -130,7 +130,7 @@ Protocol logging records the SMTP conversations that occur on Send connectors an
     
 - The implicit and invisible Send connector in the Front End Transport service on Mailbox servers.
     
-For more information about these connectors, see [Default Receive connectors created during setup](../../mail-flow/connectors/receive-connectors.md#DefaultConnectors) and [Implicit Send connectors](../../mail-flow/connectors/send-connectors.md#ImplicitSendConnectors).
+For more information about these connectors, see [Default Receive connectors created during setup](../connectors/receive-connectors.md#default-receive-connectors-created-during-setup) and [Implicit Send connectors](../connectors/send-connectors.md#implicit-send-connectors).
   
  **Default location of log files**:
   

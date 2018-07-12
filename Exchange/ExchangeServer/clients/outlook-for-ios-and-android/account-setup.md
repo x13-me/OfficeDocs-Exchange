@@ -43,9 +43,9 @@ If you're using Microsoft Intune as your mobile device management provider, the 
     
 5. On the **Add app configuration** blade, enter a **Name**, and optional **Description** for the app configuration settings.
     
-6. For ** Device enrollment ** type, choose **Managed devices**.
+6. For **Device enrollment type**, choose **Managed devices**.
     
-7. For **Platform**, choose **iOS** or **Android for Work**.
+7. For **Platform**, choose **iOS** or **Android**.
     
 8. Choose **Associated apps**, and then, on the **Targeted apps** blade, choose **Microsoft Outlook**.
     

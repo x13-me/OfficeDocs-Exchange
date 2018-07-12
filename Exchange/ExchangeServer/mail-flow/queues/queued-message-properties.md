@@ -87,7 +87,7 @@ For more information about queues, see [Queues and messages in queues](queues.md
     
   - **Unreachable**: Contains messages that can't be routed to their destinations. Typically, an unreachable destination is caused by configuration changes that have modified the routing path for delivery. Regardless of destination, all messages that have unreachable recipients reside in this queue.
     
-  - **Delivery queue name**: The value of the **NextHopDomain** property of the queue, which is effectively the name of the queue. For example, a domain name, Active Directory site name, or database availability group (DAG) name. For more information, see [NextHopSolutionKey](queues.md#NextHopSolutionKey).
+  - **Delivery queue name**: The value of the **NextHopDomain** property of the queue, which is effectively the name of the queue. For example, a domain name, Active Directory site name, or database availability group (DAG) name. For more information, see [NextHopSolutionKey](queues.md#nexthopsolutionkey).
     
   - **Message Source Name**: The Exchange component that submitted the message to the queue. For example, `SMTP:Default <ServerName>`.
     

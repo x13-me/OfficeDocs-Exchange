@@ -23,7 +23,7 @@ Every certificate has a built-in expiration date. In Exchange Server 2016, the d
 
 - Estimated time to complete: 5 minutes
     
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
 - For certificates that were issued by a CA, verify the certificate request requirements of the CA. Exchange generates a PKCS #10 request (.req) file that uses Base64 encoding (default) or Distinguished Encoding Rules (DER), with an RSA public key that's 1024, 2048 (default), or 4096 bits. Note that encoding and public key options are only available in the Exchange Management Shell.
     

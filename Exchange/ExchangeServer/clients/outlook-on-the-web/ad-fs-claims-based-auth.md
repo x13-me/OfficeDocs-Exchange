@@ -782,7 +782,7 @@ To use Windows PowerShell to publish the relying party trusts, follow these step
 ## Step 6: Configure the Exchange organization to use AD FS authentication
 <a name="ConfigExchangeOrg"> </a>
 
-To configure the Exchange organization to use AD FS authentication, you need to use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+To configure the Exchange organization to use AD FS authentication, you need to use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
   
 1. Run the following command to find the thumbprint value of the imported AD FS token signing certificate:
     
