@@ -34,7 +34,7 @@ Use an In-Place eDiscovery search to search for content across all mailboxes and
     
   - [Export eDiscovery search results to a PST file](export-results-to-pst.md)
     
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
 ## Use the EAC to create a search
 

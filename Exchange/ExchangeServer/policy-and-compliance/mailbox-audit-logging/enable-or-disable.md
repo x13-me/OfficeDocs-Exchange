@@ -27,7 +27,7 @@ With mailbox audit logging in Exchange Server 2016, you can track logons to a ma
     
 - Entries in the mailbox audit log are retained for 90 days, by default. See the [More information](enable-or-disable.md#moreinfo) section change how long entries are retained.
     
-- You can't use the Exchange admin center (EAC) to enable or disable mailbox audit logging. You have to use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- You can't use the Exchange admin center (EAC) to enable or disable mailbox audit logging. You have to use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
 - An administrator who has been assigned the Full Access permission to a user's mailbox is considered a delegate user.
     

@@ -24,7 +24,7 @@ In-Place Archiving helps you regain control of your organization's messaging dat
     
 - The procedures in this topic apply to on-premises archive mailboxes. For information about archive mailboxes in Exchange Online, see [Archive mailboxes in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=404421).
     
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
 - It's not supported to have a user's primary mailbox reside on a version of Exchange that's older than the user's archive. If the user's primary mailbox is still on Exchange 2010 or Exchange 2013, you need to move it to Exchange 2016 at the same time you move the archive mailbox to Exchange 2016.
     

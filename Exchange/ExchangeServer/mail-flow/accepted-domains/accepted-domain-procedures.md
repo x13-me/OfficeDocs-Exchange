@@ -50,7 +50,7 @@ For more information about accepted domains, see [Accepted domains in Exchange 2
     
 - You need to create a Send connector to route mail for non-existent recipients in internal or external relay domains. For more information, see [Create a Send connector to route outbound mail through a smart host](../../mail-flow/connectors/outbound-smart-host-routing.md).
     
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Exchange Management Shell**.
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     

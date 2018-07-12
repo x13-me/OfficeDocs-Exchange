@@ -33,7 +33,7 @@ The settings that are configured on connectors might eliminate an otherwise avai
 |Address space cost  <br/> |You use the cost value on the address space for mail flow optimization and fault tolerance when the same address space is configured on multiple connectors. A lower cost value indicates a preferred connector.  <br/> |
 |Source server  <br/> |At least one Mailbox server or Edge Transport server must be configured to host the connector. You can configure multiple source servers to provide load balancing and fault tolerance for the address spaces that are defined on the connector.  <br/> |
 |Scope  <br/> |The connector's scope controls its visibility within the Exchange organization.  <br/> By default, connectors are visible to all the Exchange servers in the entire Active Directory forest. However, you can limit the scope of a connector so that it's only visible to other Exchange servers in the local Active Directory site. The connector is invisible to Exchange servers in other Active Directory sites, and isn't used in their routing decisions. A connector that's restricted in this way is said to be *scoped*.  <br/> |
-|Message size limits  <br/> |A message size restriction on a connector can eliminate the connector from selection if the message is larger than the maximum size that's allowed on the connector.  <br/> For more information about message size limits on connectors, see [Connector limits](../../mail-flow/message-size-limits.md#Connector).  <br/> |
+|Message size limits  <br/> |A message size restriction on a connector can eliminate the connector from selection if the message is larger than the maximum size that's allowed on the connector.  <br/> For more information about message size limits on connectors, see [Connector limits](../message-size-limits.md#connector-limits).  <br/> |
    
 ## Selecting the connector for an external recipient
 <a name="Select"> </a>
@@ -71,7 +71,7 @@ For messages that are sent to external recipients, Exchange must select the best
 
 If no connector satisfies all of the selection criteria, one of the following actions occurs:
   
-- If there is no matching connector for an SMTP address space, the recipient is marked as unreachable and the message is routed to the Unreachable queue. For more information about the Unreachable queue, see [Types of queues](../../mail-flow/queues/queues.md#QueueTypes).
+- If there is no matching connector for an SMTP address space, the recipient is marked as unreachable and the message is routed to the Unreachable queue. For more information about the Unreachable queue, see [Types of queues](../queues/queues.md#types-of-queues).
     
 - If there is no matching connector for a non-SMTP address space, a non-delivery report (also known as an NDR or bounce message) is returned to the sender.
     

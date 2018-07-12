@@ -85,7 +85,7 @@ The different types of delivery groups that exist in Exchange 2016 are summarize
 
 From the perspective of the sending transport server, each message delivery queue represents the destination for a particular message. When the Transport service selects the destination for a message, the destination is stamped on the recipient as the **NextHopSolutionKey** attribute. If a single message is sent to more than one recipient, each recipient has the **NextHopSolutionKey** attribute. The receiving transport server also performs message categorization and queues the message for delivery. After a message is queued, you can examine the delivery type for a particular queue to determine whether a message will be relayed again when it reaches the next hop destination. Every unique value of the **NextHopSolutionKey** attribute corresponds to a separate message delivery queue.
   
-For more information, see [NextHopSolutionKey](../../mail-flow/queues/queues.md#NextHopSolutionKey).
+For more information, see [NextHopSolutionKey](../queues/queues.md#nexthopsolutionkey).
   
 ## Routing messages
 <a name="Routing"> </a>
@@ -190,7 +190,7 @@ When the Mailbox Transport Delivery service receives a message from the Transpor
 ### Routing in the Transport service on Edge Transport servers
 <a name="EdgeTransport"> </a>
 
-The Transport service on Edge Transport servers provides SMTP relay and smart host services for all Internet mail flow. Messages that come and go from the Internet are stored in message delivery queues on the Edge Transport server. The queues correspond to external domains or Send connectors. For more information, see [NextHopSolutionKey](../../mail-flow/queues/queues.md#NextHopSolutionKey).
+The Transport service on Edge Transport servers provides SMTP relay and smart host services for all Internet mail flow. Messages that come and go from the Internet are stored in message delivery queues on the Edge Transport server. The queues correspond to external domains or Send connectors. For more information, see [NextHopSolutionKey](../queues/queues.md#nexthopsolutionkey).
   
 Typically, when you install an Edge Transport server in your perimeter network, you subscribe the Edge Transport server to an Active Directory site. The Active Directory site contains the Mailbox servers that relay messages to and from the Edge Transport server. The Edge Subscription process creates an Active Directory site membership affiliation for the Edge Transport server. The site affiliation enables the Mailbox servers in the Active Directory site to relay messages to the Edge Transport server without having to configure explicit Send connectors.
   

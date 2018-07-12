@@ -251,6 +251,12 @@ The following features are not supported for on-premises mailboxes using hybrid 
     
 - Task management with Microsoft To-Do
     
+- Favorite Folders
+
+- Add-ins
+
+- Interesting Calendars
+    
 ## Connection Flow FAQ
 <a name="connectflow"> </a>
 
