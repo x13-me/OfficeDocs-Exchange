@@ -3,7 +3,7 @@ title: "Select the language for an auto attendant"
 ms.author: tonysmit
 author: tonysmit
 manager: scotv
-ms.date: 6/24/2018
+ms.date: 7/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -16,7 +16,7 @@ description: "You can configure the default prompt language setting on a Unified
 
 You can configure the default prompt language setting on a Unified Messaging (UM) auto attendant. The language setting available on a UM auto attendant enables you to configure the default prompt language on the auto attendant. When you're using the default system prompts for the auto attendant, this is the language that the caller hears when the auto attendant answers the incoming call. This language setting affects only the default system prompts that are provided after you have installed the Mailbox server that is running the Microsoft Exchange Unified Messaging service. This setting doesn't affect custom prompts that are configured on an auto attendant. The languages that are available are based on the Unified Messaging language packs that are installed on the Mailbox server.
   
-Each auto attendant you create will initially use English (en-US) as the default language. The English (en-US) language pack is installed by default on all versions of Microsoft Exchange 2013 and can't be removed. If you want to select another language, for example, German (de-DE), you must first download the German UM language pack .exe file from [Exchange Server 2013 UM Language Packs](https://go.microsoft.com/fwlink/?LinkId=266542) and install the UM language pack on the Mailbox server by using the UMLanguagePack.de-de.exe installation file. After you've installed the UM language pack, you can set the default language to a language other than English (en-US) on UM auto attendants. 
+Each auto attendant you create will initially use English (en-US) as the default language. The English (en-US) language pack is installed by default on all versions of Microsoft Exchange Server and can't be removed. If you want to select another language, for example, German (de-DE), you must first download the German UM language pack .exe file from [Exchange Server UM Language Packs](https://go.microsoft.com/fwlink/?LinkId=266542) and install the UM language pack on the Mailbox server by using the UMLanguagePack.de-de.exe installation file. After you've installed the UM language pack, you can set the default language to a language other than English (en-US) on UM auto attendants. 
   
 ## What do you need to know before you begin?
 

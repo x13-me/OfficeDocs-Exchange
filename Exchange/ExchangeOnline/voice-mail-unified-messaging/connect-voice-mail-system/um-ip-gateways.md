@@ -3,7 +3,7 @@ title: "UM IP gateways"
 ms.author: tonysmit
 author: tonysmit
 manager: scotv
-ms.date: 6/24/2018
+ms.date: 7/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
