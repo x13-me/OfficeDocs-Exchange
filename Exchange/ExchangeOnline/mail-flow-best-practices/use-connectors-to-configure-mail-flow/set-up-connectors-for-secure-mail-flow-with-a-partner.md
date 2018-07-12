@@ -20,7 +20,7 @@ You can create a connector to enforce encryption via transport layer security (T
   
 > [!NOTE]
 > Setting up a connector to exchange mail with a partner organization is optional; mail flows to and from your partner organization without connectors. 
-If you use a third-party cloud service for email filtering and need instructions for making this work with Office 365, see [Mail flow best practices for Exchange Online and Office 365 (overview)](../../mail-flow-best-practices/mail-flow-best-practices.md#BKMK_HostedMailFlowWithThirdPartyCloud). 
+If you use a third-party cloud service for email filtering and need instructions for making this work with Office 365, see [Mail flow best practices for Exchange Online and Office 365 (overview)](../../mail-flow-best-practices/mail-flow-best-practices.md). 
   
 ## Using connectors to exchange email with a partner organization
 
@@ -178,8 +178,6 @@ When you set these restrictions, all mail from your partner organization sent fr
 [Mail flow best practices for Exchange Online and Office 365 (overview)](../../mail-flow-best-practices/mail-flow-best-practices.md)
 
 [About fixing connector validation errors](http://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx)
-  
-[Mail flow best practices for Exchange Online and Office 365 (overview)](../../mail-flow-best-practices/mail-flow-best-practices.md#BKMK_HostedMailFlowWithThirdPartyCloud)
-  
+   
 [What happens when I have multiple connectors for the same scenario?](set-up-connectors-to-route-mail.md#multipleconnectors)
 
