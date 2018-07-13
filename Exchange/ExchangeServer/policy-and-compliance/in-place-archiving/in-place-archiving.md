@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/12/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b5e4c0e9-0558-4b90-bc12-f67adbfb59ac
 description: "Summary: Administrators can learn about In-Place Archiving and archive mailboxes in Exchange 2016."

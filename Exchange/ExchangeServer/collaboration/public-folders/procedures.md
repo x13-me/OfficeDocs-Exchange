@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 3/27/2017
 ms.audience: ITPro
 ms.topic: hub-page
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f5682d78-0cee-4def-ac45-64070798613a
 description: "Summary: Create and manage public folders with one or more of these articles."

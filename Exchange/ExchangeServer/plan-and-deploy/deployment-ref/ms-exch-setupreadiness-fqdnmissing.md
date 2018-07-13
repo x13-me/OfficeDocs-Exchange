@@ -8,7 +8,7 @@ ms.audience: ITPro
 ms.topic: reference
 f1_keywords:
 - 'ms.exch.setupreadiness.FqdnMissing'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 310765bf-a650-4a3d-a5e4-6173b559d4f6
 description: "Microsoft Exchange Server 2016 Setup can't continue because the primary domain name system (DNS) suffix for the computer you're installing Exchange on hasn't been configured."

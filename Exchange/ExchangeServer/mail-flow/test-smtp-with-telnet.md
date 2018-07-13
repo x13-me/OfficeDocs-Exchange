@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 8a5f6715-baa4-48dd-8600-02c6b3d1aa9d
 description: "Summary: Learn how to use Telnet to test SMTP connectivity and mail flow on Exchange servers."

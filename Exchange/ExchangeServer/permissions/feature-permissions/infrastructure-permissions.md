@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 3646a4e8-36b2-41fb-89a4-79b0963fcb11
 description: "Summary: Learn about permissions that are required to perform tasks to configure various components of Microsoft Exchange Server 2016."

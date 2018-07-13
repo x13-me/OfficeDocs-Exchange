@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5b675b4e-3a33-4191-91ce-44e1c0923517
 description: "Summary: Learn how to configure anonymous relay in Exchange 2016."

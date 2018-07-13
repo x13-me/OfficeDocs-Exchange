@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/7/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: a765ead1-43bc-4786-ae93-1835cacfc8fc
 description: "Summary: Database portability is a feature that enables an Exchange Server 2016 mailbox database to be moved to or mounted on any other Mailbox server in the same organization running Exchange 2016, provided the target Mailbox server has databases with the same database schema version."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: hub-page
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Priority
 ms.collection: Strat_EX_Admin
 ms.assetid: 692c59e3-f0b0-4cef-a66e-751aa740abae

@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5d11a955-b1cc-4150-a0b9-a8cc48ba9bde
 description: "Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange 2016."

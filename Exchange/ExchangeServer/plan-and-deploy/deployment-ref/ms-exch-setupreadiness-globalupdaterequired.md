@@ -8,7 +8,7 @@ ms.audience: ITPro
 ms.topic: reference
 f1_keywords:
 - 'ms.exch.setupreadiness.GlobalUpdateRequired'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 0530f3c6-6fa6-456b-a33a-f3d2f7eaa2ef
 description: "Microsoft Exchange Server 2016 Setup can't continue because the logged-on user doesn't have the account permissions that are required to make global updates to Active Directory."

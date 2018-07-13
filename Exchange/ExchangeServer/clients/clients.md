@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 4/19/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d67342e7-6ee0-4228-9f84-721b2a53fb4c
 description: "Summary: Learn about the clients and client access methods you can use to access your Exchange 2016 mailbox, and the topics available to assist you."

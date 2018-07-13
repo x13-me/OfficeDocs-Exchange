@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/7/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6deaefa8-1152-40d9-b1ba-9c19bdf8a928
 description: "Summary: Create the Send connector that's required to send mail to the internet."

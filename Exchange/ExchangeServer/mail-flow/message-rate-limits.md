@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: fba87902-2a79-42ac-b394-46a9016f667e
 description: "Summary: Learn how message rate limits affect mail flow and connections in Exchange 2016."

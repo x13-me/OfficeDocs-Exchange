@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c1ae10dd-14da-4400-b38d-2aeafde8abe6
 description: "Summary: Learn how to enable and configure IMAP4 on an Exchange 2016 server for access by IMAP4 clients."

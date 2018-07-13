@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 57e4bf22-eeae-42a5-beb3-d68d06489592
 description: "Summary: How DAC mode, a component of DAGs, works in Exchange 2016."

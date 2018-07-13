@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Critical
 ms.assetid: 97501135-2149-4590-8373-98e638ac8eb1
 description: "Summary: Learn about the new features that are available in Exchange 2016 when you upgrade from previous versions of Exchange."

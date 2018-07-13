@@ -5,7 +5,7 @@ author: chrisda
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 1691b658-f5af-49c6-9170-5c3cb66c7306
 description: "Summary: Learn how to move the primary mailbox and the associated archive to the same database or to separate ones in Exchange 2016."

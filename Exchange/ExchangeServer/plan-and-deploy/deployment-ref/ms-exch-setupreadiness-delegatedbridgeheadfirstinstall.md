@@ -8,7 +8,7 @@ ms.audience: ITPro
 ms.topic: reference
 f1_keywords:
 - 'ms.exch.setupreadiness.DelegatedBridgeheadFirstInstall'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bd1dbf09-5465-40fa-8668-ef99f753ba45
 description: "Microsoft Exchange Server 2016 Setup can't continue because the logged-on user doesn't have the account permissions that are required to install the first Exchange 2016 server in the organization."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: ceb99e6f-6dca-446d-abfb-3e6fc6a72704
 description: "Summary: Learn about monitoring your Exchange 2016 organization to quickly resolve issues for greater availability and reliability."

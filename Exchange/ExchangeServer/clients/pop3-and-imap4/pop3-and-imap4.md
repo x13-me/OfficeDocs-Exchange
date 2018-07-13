@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/7/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: a7dc91ee-2919-4db3-ae9c-cd665d2e09ea
 description: "Summary: Learn about support for POP3 and IMAP4 in Exchange 2016."

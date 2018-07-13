@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
 description: "Summary: Learn how to create, view, modify, delete, import, and export mail flow rules (transport rules) in Exchange 2016."

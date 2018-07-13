@@ -8,7 +8,7 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - 'ms.exch.setupreadiness.E16E12CoexistenceMinVersionRequirement'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 4e1b9510-3188-43eb-9252-7c64cb2bc0e3
 description: "Microsoft Exchange Server 2016 can't continue because one or more computers are running Exchange 2007 or older were found in the Active Directory forest. Before you can install Exchange 2016, all computers running Exchange 2007 or older must be removed from the forest. Mailboxes, public folders, and all other Exchange objects or components must be upgraded to the latest release of Exchange Server 2010."

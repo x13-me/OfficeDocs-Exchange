@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: a4f84312-6cfa-4f17-9707-676aadab1143
 description: "Summary: Exchange Management Shell cmdlets that can help you monitor the health of your Exchange organization."

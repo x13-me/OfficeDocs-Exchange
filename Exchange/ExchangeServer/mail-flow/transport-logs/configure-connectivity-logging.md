@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/7/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 24e46a79-33ea-44e9-b03c-549db1c86a6f
 description: "Summary: Learn how to configure connectivity logging for transport services in Exchange 2016."

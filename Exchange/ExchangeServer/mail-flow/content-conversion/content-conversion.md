@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bc367eb3-0306-4da9-9a84-4341caef77af
 description: "Summary: Learn about content conversion (message formatting and encoding options) in Exchange 2016"

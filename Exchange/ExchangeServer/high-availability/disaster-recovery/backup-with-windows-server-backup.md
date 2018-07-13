@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 188a8291-0a41-4ca2-b6d2-94242e2b1ffc
 description: "Summary: Step-by-step guidance for backing up your Exchange data."

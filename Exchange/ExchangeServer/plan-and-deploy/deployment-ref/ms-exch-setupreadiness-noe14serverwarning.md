@@ -8,7 +8,7 @@ ms.audience: ITPro
 ms.topic: reference
 f1_keywords:
 - 'ms.exch.setupreadiness.NoE14ServerWarning'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 789cabab-c769-4a16-a6c8-3db82cff8861
 description: "Microsoft Exchange Server 2016 Setup displayed this warning because no Exchange Server 2010 server roles exist in the organization."

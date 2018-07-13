@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 7/25/2017
 ms.audience: Developer
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection:
 - Ent_O365_Hybrid

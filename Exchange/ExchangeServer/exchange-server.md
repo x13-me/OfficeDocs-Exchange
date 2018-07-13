@@ -7,7 +7,7 @@ ms.date: 6/8/2018
 ms.audience: ITPro
 layout: LandingPage
 ms.topic: landing-page
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d2ce4e55-208e-46b0-a775-e7e266132100
 description: "Summary: All the information and resources you need to get started with Exchange Server 2016."

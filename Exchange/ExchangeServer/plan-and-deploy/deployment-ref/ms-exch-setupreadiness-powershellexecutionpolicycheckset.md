@@ -8,7 +8,7 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - 'ms.exch.setupreadiness.PowerShellExecutionPolicyCheckSet'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 63de83e2-9a6b-4f57-85b9-df445bea18dd
 description: "Microsoft Exchange Server 2016 Setup can't continue because it detected that the ExecutionPolicy Group Policy Object (GPO) defines one or both of the following policies:"

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 276740c4-bdb7-49f1-9470-ae6f2bfd65aa
 description: "Summary: Learn about user workload management and throttling in Exchange 2016."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 61f9a8be-070e-4c62-b505-52644fcff0c5
 description: "Summary: Automatically restore a database in Exchange 2016 with pre-provisioned spare disks."
