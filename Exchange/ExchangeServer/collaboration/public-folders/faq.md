@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 1cdcdcb7-f11b-45ca-ad23-7c38f640208c
 description: "A list of frequently asked questions regarding public folders in Exchange Server 2016 and Exchange Server 2019."

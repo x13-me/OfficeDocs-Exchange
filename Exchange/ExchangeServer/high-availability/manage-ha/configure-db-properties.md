@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: cf186561-ab2c-45c0-90f5-8d3ecfabeeac
 description: "Summary: How to configure the properties of a mailbox database copy in Exchange Server, and what those properties are."

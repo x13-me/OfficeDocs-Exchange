@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c918ea00-1e68-4b8b-8d51-6966b4432e2d
 description: "Summary: Learn about the conditions and exceptions that define when mail flow rules (transport rules) are applied to messages in Exchange Server."

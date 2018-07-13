@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 87e259c9-c884-4d53-bd78-d13f2300d73e
 description: "Summary: Learn about the contents of the administrator audit log in Exchange Server."

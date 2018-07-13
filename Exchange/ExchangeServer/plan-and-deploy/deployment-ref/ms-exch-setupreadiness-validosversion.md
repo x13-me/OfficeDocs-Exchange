@@ -8,7 +8,7 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - 'ms.exch.setupreadiness.ValidOSVersion'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: a3a948d9-4991-4088-9013-0a4c944295e4
 description: "Microsoft Exchange Server 2016 Setup can't continue because it detected an incompatible operating system. You must install a compatible operating system on this computer before you install Exchange 2016. The following table shows the operating systems that are compatible with Exchange 2016."

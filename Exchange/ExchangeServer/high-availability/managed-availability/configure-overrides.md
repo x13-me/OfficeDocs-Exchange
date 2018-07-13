@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c8f315b3-1d5e-4ad9-8bea-9c3a4a13ebfc
 description: "Summary: Learn how to configure local overrides (also known as server overrides) and global overrides for managed availability in Exchange Server."

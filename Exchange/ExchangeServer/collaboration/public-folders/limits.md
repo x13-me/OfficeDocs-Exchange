@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/12/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 709b075e-9584-484b-bcaa-e781c26497b4
 description: "Summary: Learn about supported limits for public folders in Exchange Server."

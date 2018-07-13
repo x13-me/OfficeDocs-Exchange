@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: fb2ea15e-96d5-4045-b75b-b0aa5fc60479
 description: "Summary: Add Exchange servers to, or remove them from, a database availability group (DAG)."

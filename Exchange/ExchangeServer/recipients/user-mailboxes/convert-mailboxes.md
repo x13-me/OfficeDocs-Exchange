@@ -5,7 +5,7 @@ author: chrisda
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79
 description: "Summary: Learn about changing a mailbox from one type to another in Exchange Server."

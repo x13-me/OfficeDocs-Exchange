@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6ea3a695-3ddd-4d53-b3c6-90041f44ef64
 description: "Summary: Learn how administrators can use Information Rights Management (IRM) in Exchange Server to help prevent the disclosure of sensitive information."

@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d8d9f735-7181-428f-9049-b9886dce5159
 description: "Summary: Learn how to customize the color and images of the sign-in, language selection, and error pages for Outlook on the web in Exchange Server."

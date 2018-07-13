@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 67ba838e-031d-4a98-b277-170683b6f520
 description: "Summary: Learn how to clear all data on a user's mobile phone in the Exchange admin center."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f4be27b7-1d7c-47b4-87ac-bfdfcc046f00
 description: "Summary: Learn about Active Manager in Exchange Server and how best copy and server selection (BCSS) works."

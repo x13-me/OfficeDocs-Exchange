@@ -5,7 +5,7 @@ author: chrisda
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d2edc746-6647-41c4-a99a-b086caf893fa
 description: "Summary: Learn how administrators can view, create, modify, delete, suspend and resume requests to import .pst files into mailboxes in Exchange Server."

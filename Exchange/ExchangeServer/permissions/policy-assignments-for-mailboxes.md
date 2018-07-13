@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 011690a5-233a-4c03-8842-92276f899a89
 description: "Summary: Learn how to change the management role assignment policy assigned to a mailbox."

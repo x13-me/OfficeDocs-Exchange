@@ -8,7 +8,7 @@ ms.audience: ITPro
 ms.topic: get-started-article
 f1_keywords:
 - 'Microsoft.Exchange.Management.ExSetupUI.SetupWizardForm.IntroductionPage'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Critical
 ms.collection: Strat_EX_Admin
 ms.assetid: da690d47-3384-4430-a69e-0cd4d3bf80a7

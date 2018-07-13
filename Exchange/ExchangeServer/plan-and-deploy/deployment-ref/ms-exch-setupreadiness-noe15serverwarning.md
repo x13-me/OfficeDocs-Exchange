@@ -8,7 +8,7 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - 'ms.exch.setupreadiness.NoE15ServerWarning'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 55274feb-e683-4447-a053-8650ef174667
 description: "Microsoft Exchange Server 2016 Setup displayed this warning because no Exchange Server 2013 server roles exist in the organization."

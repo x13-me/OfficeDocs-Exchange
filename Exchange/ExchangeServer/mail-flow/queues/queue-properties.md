@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: fbfbdcab-e0d2-4ed9-8f7f-e5fa2c87360d
 description: "Learn about queue properties to use in filters in Exchange Server."

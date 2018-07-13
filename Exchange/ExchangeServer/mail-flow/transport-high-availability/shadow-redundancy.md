@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/10/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: a40dbe61-2a18-48a8-b2e0-4e81a6678d11
 description: "Learn how shadow redundancy in Exchange 2016 and Exchange 2019 improves high availability for messages in the transport pipeline."

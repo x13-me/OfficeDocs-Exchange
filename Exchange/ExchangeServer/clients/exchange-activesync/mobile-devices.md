@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 93a949e7-b3ef-43ea-ae0c-6698826fc8d2
 description: "Summary: Learn about how Exchange ActiveSync lets enabled mobile devices access a user's Microsoft Exchange mailbox data any time, anywhere."

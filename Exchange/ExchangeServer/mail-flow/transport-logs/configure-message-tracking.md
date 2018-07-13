@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 50eb5213-cf27-4179-b427-38d751ee4a70
 description: "Summary: Learn how to configure message tracking in Exchange Server."

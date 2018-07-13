@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
 description: "Summary: Learn about In-Place eDiscovery in Exchange Server."

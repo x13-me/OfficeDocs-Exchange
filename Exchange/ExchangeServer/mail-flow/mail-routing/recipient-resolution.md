@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 09deda5a-d405-45b1-a3ff-fefd3d76cdea
 description: "Summary: Learn about recipient resolution in Exchange Server."

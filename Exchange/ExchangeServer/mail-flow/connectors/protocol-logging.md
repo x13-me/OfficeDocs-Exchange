@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 40da446b-bcc3-4a97-ace7-a54f6ddebd79
 description: "Summary: Learn how protocol logging records SMTP activity in Exchange Server."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4
 description: "Learn how administrators can enable or disable Exchange ActiveSync access to specific mailboxes in Exchange Server."

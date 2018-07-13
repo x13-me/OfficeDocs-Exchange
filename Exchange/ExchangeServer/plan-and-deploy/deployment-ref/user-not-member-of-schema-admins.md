@@ -8,7 +8,7 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - 'ms.exch.setupreadiness.SchemaUpdateRequired'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: a4a3f293-afb9-4c00-aa07-c438238b6a98
 description: "Microsoft Exchange Server 2016 Setup can't continue because the user account performing the Active Directory schema update process isn't a member of the Schema Admins and Enterprise Admins groups."

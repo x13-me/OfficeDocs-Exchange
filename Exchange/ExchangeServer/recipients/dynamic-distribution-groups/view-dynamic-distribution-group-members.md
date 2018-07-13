@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 40b100c6-864e-4c82-9f98-08dd5c83e378
 description: "Summary: Learn how to use the Exchange Management Shell to view dynamic distribution group membership."

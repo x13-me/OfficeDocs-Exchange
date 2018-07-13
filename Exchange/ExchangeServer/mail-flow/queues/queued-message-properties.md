@@ -8,7 +8,7 @@ ms.audience: ITPro
 ms.topic: article
 f1_keywords:
 - 'Microsoft.Exchange.Management.Edge.SystemManager.MessagePropertyPage'
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9d15d8b8-e061-4288-9354-df58e282fb6b
 description: "Summary: Learn how to use the Queue Viewer in the Exchange Toolbox to view message properties in Exchange 2016 and Exchange 2019."

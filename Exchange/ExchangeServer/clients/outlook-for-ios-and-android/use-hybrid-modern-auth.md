@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/10/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 0e701643-1f18-4cc3-8595-4fd4b15caf6c
 description: "Exchange 2016 and Exchange 2019 administrators can learn how to deploy hybrid Modern Authentication and Enterprise Mobility + Security features to enable support for Outlook for iOS and Android."

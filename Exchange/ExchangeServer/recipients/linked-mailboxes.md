@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 76e12d4a-1c3a-42e2-b64c-c09d36e81bd3
 description: "Summary: Linked mailboxes are mailboxes that users access in a separate, trusted forest. Learn how to create linked mailboxes in Exchange resource forests."

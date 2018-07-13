@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
 description: "Summary: How to use Kerberos authentication with load-balanced Exchange servers running Client Access services."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/3/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bd0942c6-9c66-4b4c-b9bc-2f5f783def76
 description: "Summary: Learn how to create or import email address rewriting in bulk in Exchange Server."

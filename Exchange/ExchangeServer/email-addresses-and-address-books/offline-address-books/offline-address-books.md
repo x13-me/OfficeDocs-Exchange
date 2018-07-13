@@ -5,7 +5,7 @@ author: chrisda
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: a6bcb072-4ab9-400e-a5d0-c05264629097
 description: "Summary: Learn how offline address books are created and distributed in Exchange Server."

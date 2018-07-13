@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c
 description: "Summary: Learn how to add, remove, copy, and view management role groups in Exchange Server."

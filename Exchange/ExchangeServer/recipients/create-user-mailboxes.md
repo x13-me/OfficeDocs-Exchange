@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
 description: "Summary: Learn how to create mailboxes for users in Exchange Server."

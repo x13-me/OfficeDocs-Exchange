@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6eaa753a-523a-4ae7-b174-a639b819e729
 description: "Summary: Configure Send connectors to proxy outbound mail through the Front End Transport service."

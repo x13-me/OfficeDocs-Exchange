@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5fb6a873-f3cf-4f82-87d1-2ff6e47a0080
 description: "Summary: Learn how to configure redirection for Outlook on the web in Exchange Server so http requests are automatically redirected to https."

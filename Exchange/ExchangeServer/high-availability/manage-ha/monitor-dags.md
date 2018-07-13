@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f5bdfd6e-e93c-4d96-8bc2-548750d51930
 description: "Summary: Resources and methods for monitoring the health and status of DAGs in Exchange Server."

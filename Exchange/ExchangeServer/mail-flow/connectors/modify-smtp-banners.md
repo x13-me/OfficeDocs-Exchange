@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d667704e-fd69-4aca-9c35-eef7006944b2
 description: "Learn how to modify the connection response that messaging servers receive after connecting to an Exchange server."

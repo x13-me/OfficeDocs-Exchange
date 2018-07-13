@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 description: "Summary: Learn how to use the Exchange admin center (EAC) to set up email forwarding."

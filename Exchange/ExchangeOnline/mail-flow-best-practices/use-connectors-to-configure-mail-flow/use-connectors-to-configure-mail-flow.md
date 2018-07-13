@@ -135,11 +135,9 @@ Want to help us improve connectors in Office 365? [Send us feedback](http://tech
 
 [Set up connectors to route mail between Office 365 and your own email servers](set-up-connectors-to-route-mail.md)
   
-[Mail flow best practices for Exchange Online and Office 365 (overview)](../../mail-flow-best-practices/mail-flow-best-practices.md)
+[Mail flow best practices for Exchange Online and Office 365 (overview)](../mail-flow-best-practices.md)
 
 [Set up connectors for secure mail flow with a partner organization](set-up-connectors-for-secure-mail-flow-with-a-partner.md)
-  
-[Mail flow best practices for Exchange Online and Office 365 (overview)](../../mail-flow-best-practices/mail-flow-best-practices.md#BKMK_HostedMailFlowWithThirdPartyCloud)
   
 [What happens when I have multiple connectors for the same scenario?](set-up-connectors-to-route-mail.md#multipleconnectors)
 

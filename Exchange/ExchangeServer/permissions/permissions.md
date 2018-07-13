@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d8dd605e-0af1-4e18-9ce6-e51d04e161ba
 description: "Summary: Learn about Role Based Access Control in Exchange Server."

@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
 description: "Summary: Learn how to create and manage mail-enabled security groups in Exchange Server."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9fcfb9b6-bd24-4218-a163-bc599cd5476a
 description: "Summary: Learn how to configure the Managed Folder Assistant in Exchange Server."

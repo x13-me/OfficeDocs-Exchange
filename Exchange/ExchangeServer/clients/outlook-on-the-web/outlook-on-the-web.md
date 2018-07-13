@@ -5,7 +5,7 @@ author: chrisda
 ms.date: 6/7/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 3814b665-01e8-4881-9a44-163f14789ee4
 description: "Summary: Learn about administrative tasks for managing Outlook on the web (Outlook Web App) in Exchange Server."

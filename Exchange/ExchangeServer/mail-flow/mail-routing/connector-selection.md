@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 579c6dc1-ece3-442a-bb8c-f55bcb543119
 description: "Summary: Learn how Exchange Server selects connectors (Send connectors, Delivery Agent connectors, or Foreign connectors) to deliver messages to external recipients."

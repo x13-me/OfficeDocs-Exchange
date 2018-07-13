@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/12/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: df35765a-0bef-4561-9846-d91d69c0269c
 description: "Summary: Learn how to permanently delete a mailbox in Exchange Server."

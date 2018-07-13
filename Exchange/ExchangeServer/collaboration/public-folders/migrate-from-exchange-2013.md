@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 2/16/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 0f98801d-ad5c-4109-a021-63645e9c9ca2
 description: "Learn how to migrate on-premises public folders from Exchange 2013 to Exchange 2016 or Exchange 2019."

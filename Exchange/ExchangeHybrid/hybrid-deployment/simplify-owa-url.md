@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 11/11/2016
 ms.audience: Developer
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Hybrid
 ms.assetid: 19449aee-3796-4298-90c6-c7579b8d2f7a

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: a7daf7aa-0411-4b26-a422-eefd1b113f9f
 description: "Summary: Learn how retention age is calculated in Exchange Server."

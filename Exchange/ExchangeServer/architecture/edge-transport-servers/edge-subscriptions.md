@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 3addd71a-4165-401f-a009-002bcd8baba6
 description: "Summary: Learn about subscribing an Edge Transport server to your internal Exchange Server 2016 or Exchange Server 2019 organization, which provides end-to-end mail flow, recipient look-up, and safelist aggregation."

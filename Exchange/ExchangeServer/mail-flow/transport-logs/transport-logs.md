@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f8cf635d-60c2-4aa3-9c06-244c29942cba
 description: "Summary: Learn about transport logging in Exchange Server and the kinds of logs and information that is logged."

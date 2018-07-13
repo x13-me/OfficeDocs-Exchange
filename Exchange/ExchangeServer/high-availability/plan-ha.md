@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: conceptual
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 29bb0358-fc8e-4437-8feb-d2959ed0f102
 description: "Summary: Learn about the elements of high availability and site resilience to incorporate in your Exchange Server deployment plan."

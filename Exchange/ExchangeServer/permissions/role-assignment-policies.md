@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f93d502e-5df4-4ba0-b68d-01a17ccffb4d
 description: "Summary: Learn how to manage and customize role assignment policies in Exchange Server."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/12/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: "Summary: Learn how to search for and purge messages from Exchange Server mailboxes."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: conceptual
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 4a124605-5824-472b-9865-3452c689be6d
 description: "Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android in an Exchange Server on-premises environment when the app uses Basic authentication."

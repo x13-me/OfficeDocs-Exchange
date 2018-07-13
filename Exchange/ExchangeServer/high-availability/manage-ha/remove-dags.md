@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 071296e9-31b0-40f4-9a02-177d97486ebd
 description: "Summary: How to remove a database availability group (DAG) in Exchange Server."

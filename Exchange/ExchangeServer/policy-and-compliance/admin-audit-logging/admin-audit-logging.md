@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 22b17eb8-d8ee-4599-b202-d6a7928c20d9
 description: "Summary: Learn about administrator audit logging in Exchange Server, and how you use the audit log to track changes to objects in your Exchange organization."

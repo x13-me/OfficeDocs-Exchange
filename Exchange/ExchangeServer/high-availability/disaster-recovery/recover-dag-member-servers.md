@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: eccd8f61-9706-4bb7-a62a-ec7c166f8019
 description: "Summary: How to recover an Exchange DAG member after a failure."

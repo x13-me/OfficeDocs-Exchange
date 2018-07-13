@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: fec09455-e99e-42eb-8b32-1ddc08d9a19e
 description: "Summary: Learn about network ports that are used by Exchange 2016 for client access and mail flow."

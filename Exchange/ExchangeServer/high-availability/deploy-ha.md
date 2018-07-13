@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 4c4e00a4-1f57-4fdb-b9b2-2779abf381a9
 description: "Summary: How to deploy Exchange Server with high availability and site resilience."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f170cb0c-04a9-4fa7-b594-206e3a787e14
 description: "Summary: Learn how to move or recreate the message queue database in Exchange Server."

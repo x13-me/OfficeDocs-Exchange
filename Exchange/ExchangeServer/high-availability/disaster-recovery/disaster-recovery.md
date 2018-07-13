@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 34351f2f-ab6c-4267-91be-4f9649338275
 description: "Summary: An overview of Exchange features you can use to protect your data."

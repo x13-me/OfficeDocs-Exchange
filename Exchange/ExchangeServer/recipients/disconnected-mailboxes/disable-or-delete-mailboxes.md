@@ -5,7 +5,7 @@ author: chrisda
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 31ad25d6-2942-4fd9-aecb-cdf9654163d2
 description: "Summary: Learn how to disable or delete a mailbox in Exchange Server."

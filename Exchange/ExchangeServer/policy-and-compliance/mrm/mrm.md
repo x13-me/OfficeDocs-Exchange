@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 0dd92e9c-881e-43c0-9bbf-f41fdc9dfd87
 description: "Summary: Learn about Messaging records management in Exchange Server."

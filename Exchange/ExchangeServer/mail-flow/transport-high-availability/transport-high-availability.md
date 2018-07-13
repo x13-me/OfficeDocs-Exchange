@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: e9ec6d05-f441-4cca-8592-8f7469948299
 description: "Learn about transport high availability in Exchange 2016 and Exchange 2019 and the features that improve the reliability of message delivery."

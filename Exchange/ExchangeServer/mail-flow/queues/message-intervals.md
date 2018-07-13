@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 03020e6f-4c01-4c6e-ae47-fd74d4c4f96a
 description: "Summary: Learn about the time intervals and settings in Exchange Server for messages that can't be successfully delivered."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 83358884-6036-4e91-87a8-35200541874d
 description: Learn how to remove, suspend, resume, and redirect messages in queues in Exchange 2016 and Exchange 2019."

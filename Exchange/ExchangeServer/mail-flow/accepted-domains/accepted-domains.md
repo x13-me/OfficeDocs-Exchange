@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c1839a5b-49f9-4c53-b247-f4e5d78efc45
 description: "Summary: Learn about the three types of accepted domains in Exchange Server: authoritative, internal relay, and external relay."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 57e12f07-3b14-45bd-9a82-e6032d14214f
 description: "Summary: Learn how administrators can enable or disable POP3 and IMAP4 access to specific mailboxes in Exchange Server."

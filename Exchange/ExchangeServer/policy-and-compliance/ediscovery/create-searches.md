@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/12/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
 description: "Summary: Learn how to create an In-Place eDiscovery search in Exchange Server."

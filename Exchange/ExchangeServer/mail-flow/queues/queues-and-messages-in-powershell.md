@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/10/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5433c1d3-ad2e-4f82-b50d-b67964b32f26
 description: "Summary: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange Server."

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 7c8ed3c1-ca91-4d9b-b16b-0a2b8ac89730
 description: "Summary: Learn about DLP policies in on-premises Exchange Server, including what they contain and how to test them."

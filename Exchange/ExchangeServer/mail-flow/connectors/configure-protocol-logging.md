@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/7/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c81cac9c-b990-492a-b899-5be8d08a6068
 description: "Summary: Learn how to configure protocol logging for Send connectors and Receive connectors in Exchange Server."

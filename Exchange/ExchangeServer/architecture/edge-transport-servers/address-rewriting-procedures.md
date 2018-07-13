@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/3/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 323a0b55-f921-425d-b1b0-18ad0fac315c
 description: "Summary: Learn how to configure address rewriting on an Edge Transport server in Exchange Server, and how to verify the address rewriting configuration."

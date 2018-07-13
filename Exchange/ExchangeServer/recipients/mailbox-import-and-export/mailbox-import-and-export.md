@@ -5,7 +5,7 @@ author: chrisda
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 157a7d88-d3aa-4056-9a50-df67451b14be
 description: "Summary: Learn about how administrators can import and export mailboxes to .pst files, and .pst files to mailboxes in Exchange Server."

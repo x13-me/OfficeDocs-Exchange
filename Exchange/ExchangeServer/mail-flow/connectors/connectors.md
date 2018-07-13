@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: hub-page
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 73559b0c-fc0e-41fd-84df-d07442137a0c
 description: "Summary: Learn how connectors are used in Exchange Server for incoming and outgoing mail flow in your organization."

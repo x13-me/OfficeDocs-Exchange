@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 85ff95d4-0aa4-4964-ac4b-5b07a5a1039f
 description: "Summary: Learn about different disconnected mailboxes and how to work with them."

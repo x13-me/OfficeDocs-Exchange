@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 8e6187c1-76f0-49da-bc24-2ab57cfb3c2c
 description: "Summary: Learn about the filterable properties for messages in queues in Exchange Server."

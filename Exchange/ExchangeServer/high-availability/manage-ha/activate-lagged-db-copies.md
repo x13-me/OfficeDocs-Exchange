@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 493d9c40-644d-49d6-9291-949acbcfdcb6
 description: "Summary: About lagged mailbox database copies and how to activate them in Exchange Server."

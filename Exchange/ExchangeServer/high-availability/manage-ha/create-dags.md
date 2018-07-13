@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d6b98299-e203-488b-af73-50753fe152c8
 description: "Summary: How to create a DAG in Exchange Server, through the Exchange admin center (EAC) or the Exchange Management Shell."

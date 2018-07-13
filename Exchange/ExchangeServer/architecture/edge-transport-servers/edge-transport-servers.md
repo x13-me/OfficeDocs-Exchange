@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/3/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: cfff9f59-afac-447c-8297-afcebe49a52d
 description: "Summary: Learn how Edge Transport servers provide Internet mail flow, antispam, and mail flow rules for your Exchange Server organization"

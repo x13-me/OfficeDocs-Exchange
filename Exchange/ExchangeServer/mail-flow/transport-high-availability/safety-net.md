@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/10/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d0abb807-3b12-4c7d-bc7e-769b87c84ccb
 description: "Learn how Safety Net is used in Exchange 2016 and Exchange 2019 to protect against data loss by maintaining a queue of successfully delivered messages."

@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
 description: "Summary: Learn how to export the results of In-Place eDiscovery searches to .PST files in Exchange Server."

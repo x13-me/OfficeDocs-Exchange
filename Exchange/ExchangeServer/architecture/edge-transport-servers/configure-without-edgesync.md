@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/3/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6bb98d10-6f12-4b08-a58e-36375f605d65
 description: "Summary: Learn how you can configure mail flow between your Exchange organization and an Edge Transport server without using an Edge Subscription."

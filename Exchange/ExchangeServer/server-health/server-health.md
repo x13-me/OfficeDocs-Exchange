@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9d1fdec8-8273-4c71-88f1-b4edfd542c4f
 description: "Summary: Learn about managed availability and workload management in Exchange Server."

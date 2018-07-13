@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
 description: "Learn how administrators can enable or disable MAPI access to specific mailboxes in Exchange Server."

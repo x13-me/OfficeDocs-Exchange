@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: exchange-server-itpro
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: ce748bca-3e24-493b-b9e6-153157bffd6a
 description: "Summary: What you should know about mailbox database copies in Exchange Server, and your options when creating them."
