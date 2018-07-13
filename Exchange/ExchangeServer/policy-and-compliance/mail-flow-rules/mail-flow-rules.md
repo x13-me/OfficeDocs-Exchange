@@ -3,22 +3,20 @@ title: "Mail flow rules in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 7/9/2018
+ms.date: 7/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c3d2031c-fb7b-4866-8ae1-32928d0138ef
-description: "Summary: Learn about mail flow rules (transport rules) and their components in Exchange Server."
+description: "Learn about mail flow rules (transport rules) and their components in Exchange 2016 and Exchange 2019."
 ---
 
 # Mail flow rules in Exchange Server
 
- **Summary**: Learn about mail flow rules (transport rules) and their components in Exchange 2016 and Exchange 2019.
+You can use mail flow rules (also known as transport rules) to identify and take action on messages that flow through the transport pipeline in your Exchange 2016 and Exchange 2019 organization. Transport rules are similar to the Inbox rules that are available in Outlook and Outlook on the web (formerly known as Outlook Web App). The main difference is transport rules take action on messages while they're in transit, and not after the message is delivered to the mailbox. Transport rules contain a richer set of conditions, exceptions, and actions, which provides you with the flexibility to implement many types of messaging policies.
   
-You can use mail flow rules (also known as transport rules) to identify and take action on messages that flow through the transport pipeline in your Exchange Server organization. Transport rules are similar to the Inbox rules that are available in Outlook and Outlook on the web (formerly known as Outlook Web App). The main difference is transport rules take action on messages while they're in transit, and not after the message is delivered to the mailbox. Transport rules contain a richer set of conditions, exceptions, and actions, which provides you with the flexibility to implement many types of messaging policies.
-  
-This article explains the [components](#components.md) of transport rules, and [how they work](#HowApplied.md).
+This article explains the [components](#mail-flow-rule-components) of transport rules, and [how they work](#how-mail-flow-rules-are-applied).
   
 You can use the Exchange admin center (EAC) or the Exchange Management Shell to manage mail flow rules. For instructions on how to manage transport rules, see [Procedures for mail flow rules in Exchange Server](mail-flow-rule-procedures.md).
   

@@ -17,7 +17,7 @@ description: "Summary: How to set up mail flow and client access in Exchange 201
 
  **Summary**: How to set up mail flow and client access in Exchange 2016.
   
-After you've installed Microsoft Exchange Server 2016 in your organization, you need to configure it for mail flow and client access. Without these additional steps, you won't be able to send mail to the Internet and external clients such as Microsoft Office Outlook, and Exchange ActiveSync devices won't be able to connect to your Exchange organization.
+After you've installed Microsoft Exchange Server 2016 in your organization, you need to configure it for mail flow and client access. Without these additional steps, you won't be able to send mail to the Internet and external clients such as Microsoft Outlook, and Exchange ActiveSync devices won't be able to connect to your Exchange organization.
   
 The steps in this topic assume a basic Exchange deployment with a single Active Directory site and a single simple mail transport protocol (SMTP) namespace.
   

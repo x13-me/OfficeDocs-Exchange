@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 276740c4-bdb7-49f1-9470-ae6f2bfd65aa
-description: "Summary: Learn about user workload management and throttling in Exchange Server."
+description: "Summary: Learn about user workload management and throttling in Exchange 2016 and Exchange 2019."
 ---
 
 # User workload management in Exchange Server
@@ -59,7 +59,7 @@ If you create custom throttling policies, the settings should be different than 
 > [!NOTE]
 > We strongly recommend that you don't modify the default throttling policy, because changes to the default policy could be overwritten by future Exchange updates. Instead, you should create custom throttling policies that contain customized settings.
 
-## User throttling in Exchange coexistence environments
+## User throttling in Exchange 2010 coexistence environments
 
 Users with mailboxes on Exchange 2016 servers are throttled using Exchange 2016 throttling features, even if you install Exchange 2016 in an Exchange 2010 organization. This list describes the important considerations for throttling in coexistence environments:
 

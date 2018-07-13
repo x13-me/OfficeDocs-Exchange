@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
-description: "Summary: Learn how to create, view, modify, delete, import, and export mail flow rules (transport rules) in Exchange Server."
+description: "Summary: Learn how to create, view, modify, delete, import, and export mail flow rules (transport rules) in Exchange 2016 and Exchange 2019"
 ---
 
 # Procedures for mail flow rules in Exchange Server
@@ -172,9 +172,10 @@ Mail flow rules that you create on a Mailbox server are stored in Active Directo
 1. In the EAC, go to **Mail flow** \> **Rules**.
     
 2. When you select a rule, information about the rule is displayed in the details pane. To see more information about the rule, click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
+
     ![In the EAC, go to Mail flow \> Rules and select a rule](../../media/37502067-8f3f-49d1-aaea-91c7f3eb8e8a.png)
   
-    In the EAC, the **Version** property is only visible in the details pane. This property indicates the compatibility of the rule with previous versions of Exchange (14. *n*. *n*. *n* is Exchange 2010, 15.0. *n*. *n* is Exchange 2013).
+    In the EAC, the **Version** property is only visible in the details pane. This property indicates the compatibility of the rule with previous versions of Exchange (14.*n*.*n*.*n* is Exchange 2010, 15.0.*n*.*n* is Exchange 2013).
     
 ### Use the Exchange Management Shell to view mail flow rules
 

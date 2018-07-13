@@ -20,9 +20,9 @@ description: "Summary: Learn about the Exchange admin center, the web-based mana
   
 The Exchange admin center (EAC) is the web-based management console in Exchange Server that's optimized for on-premises, online, and hybrid Exchange deployments. The EAC was introduced in Exchange Server 2013, and replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP), which were the two management interfaces in Exchange Server 2010.
   
-Looking for the Exchange Online version of this topic? See [Exchange Administration Center in Exchange Online](http://technet.microsoft.com/library/ace44f6b-4084-4f9c-89b3-e0317962472b.aspx).
+Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](http://technet.microsoft.com/library/ace44f6b-4084-4f9c-89b3-e0317962472b.aspx).
   
-Looking for the Exchange Online Protection version of this topic? See [Exchange Administration Center](http://technet.microsoft.com/library/97921f0e-832f-40c7-b56d-414faede5191.aspx).
+Looking for the Exchange Online Protection version of this topic? See [Exchange admin center](http://technet.microsoft.com/library/97921f0e-832f-40c7-b56d-414faede5191.aspx).
   
 ## Accessing the EAC
 <a name="access"> </a>
@@ -78,7 +78,7 @@ In Exchange 2016, if you're in a coexistence environment with Exchange 2010, the
 
 The section describes the user interface elements that are common across the EAC.
   
-![Exchange Administration Center](../../media/ExchangeAdministrationCenter.png)
+![Exchange admin center](../../media/ExchangeAdministrationCenter.png)
   
 ### 1: Cross-premises navigation
 

@@ -3,13 +3,13 @@ title: "Manage database availability groups"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 7/9/2018
+ms.date: 7/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 74be3f97-ec0f-4d2a-b5d8-7770cc489919
-description: "Summary: Learn how to create, configure, and manage a database availability group (DAG) in Exchange Server."
+description: "Summary: Learn how to create, configure, and manage database availability group (DAG) in Exchange 2016 and Exchange 2019."
 ---
 
 # Manage database availability groups
@@ -31,7 +31,7 @@ For detailed steps about how to create a DAG, see [Create a database availabilit
   
 When you create a DAG, an empty object representing the DAG with the name you specified and an object class of **msExchMDBAvailabilityGroup** is created in Active Directory.
   
-DAGs use a subset of Windows failover clustering technologies, such as the cluster heartbeat, cluster networks, and cluster database (for storing data that changes or can change quickly, such as database state changes from active to passive or the reverse, or from mounted to dismounted or the reverse). Because DAGs rely on Windows failover clustering, they can only be created on Exchange 2013 Mailbox servers running the Windows Server 2008 R2 Enterprise or Datacenter operating system, Windows Server 2012 Standard or Datacenter operating system, or Windows Server 2012 R2 Standard or Datacenter operating system.
+DAGs use a subset of Windows failover clustering technologies in Windows Server 2008 R2 or later, such as the cluster heartbeat, cluster networks, and cluster database (for storing data that changes or can change quickly, such as database state changes from active to passive or the reverse, or from mounted to dismounted or the reverse). Therefore you can create DAGs only on Exchange Mailbox servers installed on supported versions of Windows that include Windows failover clustering.
   
 > [!NOTE]
 > The failover cluster created and used by the DAG must be dedicated to the DAG. The cluster can't be used for any other high availability solution or for any other purpose. For example, the failover cluster can't be used to cluster other applications or services. Using a DAG's underlying failover cluster for purposes other than the DAG isn't supported.
@@ -56,7 +56,7 @@ The requirements for the witness server are as follows:
 Regardless of what server is used as the witness server, if the Windows Firewall is enabled on the intended witness server, you must enable the Windows Firewall exception for File and Printer Sharing. The witness server uses SMB port 445.
   
 > [!IMPORTANT]
-> If the witness server you specify isn't an Exchange 2019, Exchange 2016, or Exchange 2010 server, you must add the Exchange Trusted Subsystem universal security group (USG) to the local Administrators group on the witness server prior to creating the DAG. These security permissions are necessary to ensure that Exchange can create a directory and share on the witness server as needed.
+> If the witness server you specify isn't an Exchange 2010 or later server, you must add the Exchange Trusted Subsystem universal security group (USG) to the local Administrators group on the witness server prior to creating the DAG. These security permissions are necessary to ensure that Exchange can create a directory and share on the witness server as needed.
   
 Neither the witness server nor the witness directory needs to be fault tolerant or use any form of redundancy or high availability. There's no need to use a clustered file server for the witness server or employ any other form of resiliency for the witness server. There are several reasons for this. With larger DAGs (for example, six members or more), several failures are required before the witness server is needed. Because a six-member DAG can tolerate as many as two voter failures without losing quorum, it would take as many as three voters failing before the witness server would be needed to maintain a quorum. Also, if there's a failure that affects your current witness server (for example, you lose the witness server because of a hardware failure), you can use the [Set-DatabaseAvailabilityGroup](http://technet.microsoft.com/library/4353c3ab-75b7-485e-89ae-d4b09b44b646.aspx) cmdlet to configure a new witness server and witness directory (provided you have a quorum).
   
@@ -65,7 +65,7 @@ Neither the witness server nor the witness directory needs to be fault tolerant 
   
 #### Witness server placement considerations
 
-The placement of a DAG's witness server will depend on your business requirements and the options available to your organization. Exchange 2013 includes support for new DAG configuration options that are not recommended or not possible in previous versions of Exchange. These options include using a third location, such as a third datacenter, a branch office, or a Microsoft Azure virtual network.
+The placement of a DAG's witness server will depend on your business requirements and the options available to your organization. Exchange now includes support for new DAG configuration options that aren't recommended or aren't possible in Exchange 2010. These options include using a third location, such as a third datacenter, a branch office, or a Microsoft Azure virtual network.
   
 The following table lists general witness server placement recommendations for different deployment scenarios.
   
@@ -77,7 +77,7 @@ The following table lists general witness server placement recommendations for d
 |Multiple DAGs deployed across two datacenters  <br/> |Locate witness server on a Microsoft Azure virtual network to enable automatic datacenter failover, or  <br/> Locate witness server in the datacenter that is considered primary for each DAG. Additional options include:  <br/> • Using the same witness server for multiple DAGs  <br/> • Using a DAG member to act as a witness server for a different DAG  <br/> |
 |Single or Multiple DAGs deployed across more than two datacenters  <br/> |In this configuration, the witness server should be located in the datacenter where you want the majority of quorum votes to exist.  <br/> |
    
-When a DAG has been deployed across two datacenters, a new configuration option in Exchange 2013 is to use a third location for hosting the witness server. If your organization has a third location with a network infrastructure that is isolated from network failures that affect the two datacenters in which your DAG is deployed, then you can deploy the DAG's witness server in that third location, thereby configuring your DAG with the ability automatically failover databases to the other datacenter in response to a datacenter-level failure event. If your organization only has two physical locations, you can use a Microsoft Azure virtual network as a third location to place your witness server.
+When a DAG has been deployed across two datacenters, you can now use a third location for hosting the witness server. If your organization has a third location with a network infrastructure that is isolated from network failures that affect the two datacenters in which your DAG is deployed, then you can deploy the DAG's witness server in that third location, thereby configuring your DAG with the ability automatically failover databases to the other datacenter in response to a datacenter-level failure event. If your organization only has two physical locations, you can use a Microsoft Azure virtual network as a third location to place your witness server.
   
 #### Specifying a witness server and witness directory during DAG creation
 
@@ -245,7 +245,7 @@ A DAG network is a collection of one or more subnets used for either replication
 > [!NOTE]
 > When using multiple replication networks, there's no way to specify an order of precedence for network use. Exchange randomly selects a replication network from the group of replication networks to use for log shipping.
   
-In Exchange 2010, manual configuration of DAG networks was necessary in many scenarios. By default in Exchange 2013 and later, DAG networks are automatically configured by the system. Before you can create or modify DAG networks, you must first enable manual DAG network control by running the following command:
+In Exchange 2010, manual configuration of DAG networks was necessary in many scenarios. By default, in later versions of Exchange, DAG networks are automatically configured by the system. Before you can create or modify DAG networks, you must first enable manual DAG network control by running the following command:
   
 ```
 Set-DatabaseAvailabilityGroup <DAGName> -ManualDagNetworkConfiguration $true
@@ -401,14 +401,14 @@ Set-MailboxServer -Identity EX1 -MaximumActiveDatabases 20
 
 Before performing any type of software or hardware maintenance on a DAG member, you should first put the DAG member in maintenance mode. The following scripts are provided with Exchange Server to assist with DAG maintenance procedures.
   
-- **StartDagServerMaintenanceScripts.ps1** Assists with moving all active databases off the server. It also moves all critical DAG support functionality, such as the Primary Active Manager (PAM) role, and blocks them from moving back to the server before maintenance is complete.
+- **StartDagServerMaintenanceScripts.ps1**: Assists with moving all active databases off the server. It also moves all critical DAG support functionality, such as the Primary Active Manager (PAM) role, and blocks them from moving back to the server before maintenance is complete.
     
-- **StopDagServerMaintenanceScripts.ps1** Assists with taking the DAG member out of maintenance mode, and making it an active target for all databases and all critical DAG support functionality.
+- **StopDagServerMaintenanceScripts.ps1**: Assists with taking the DAG member out of maintenance mode, and making it an active target for all databases and all critical DAG support functionality.
     
-Both of the above scripts accept the `-ServerName` parameter (which can be either the host name or the fully qualified domain name (FQDN) of the DAG member) and the `-WhatIf` parameter. Both scripts can be run locally or remotely. The server on which the scripts are executed must have the Windows Failover Cluster Management tools installed (RSAT-Clustering).
+Both of the above scripts accept the _ServerName_ parameter (which can be either the host name or the fully qualified domain name (FQDN) of the DAG member) and the _WhatIf_ parameter. Both scripts can be run locally or remotely. The server on which the scripts are executed must have the Windows Failover Cluster Management tools installed (RSAT-Clustering).
   
 > [!NOTE]
-> There is another script available, RedistributeActiveDatabases.ps1, which assists with mounting mailbox databases on specific DAG members, as determined by the Activation Preference number on each database. However, in Exchange 2016 CU2 or later, there is a new DAG property called PreferenceMoveFrequency. This property automatically balances database copies across a DAG, so you will only need RedistributeActiveDatabases.ps1 if you have disabled this new functionality or want to balance database copies manually. For more information, see the section "PreferenceMoveFrequency DAG property" in [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx).
+> THe **RedistributeActiveDatabases.ps1** script is also avaialble, which assists with mounting mailbox databases on specific DAG members as inidicated by the Activation Preference number on each database. However, in Exchange 2016 CU2 or later, the new DAG property named _PreferenceMoveFrequency_ automatically balances database copies across a DAG. Therefore, you'll only need to use **RedistributeActiveDatabases.ps1** if you've disabled this functionality or if you want to balance database copies manually.
   
 The StartDagServerMaintenance.ps1 script performs the following tasks:
   
@@ -424,30 +424,37 @@ If any of the preceding tasks fails, all operations, except for successful datab
   
 To begin maintenance procedures on a DAG member, including flushing the transport queues and suspending client connectivity, perform the following tasks:
   
-1. To empty the transport queues, run
+1. To empty the transport queues, run the following command:
     
   ```
   Set-ServerComponentState <ServerName> -Component HubTransport -State Draining -Requester Maintenance
   ```
 
-2. To initiate the draining of the transport queues, run `Restart-Service MSExchangeTransport`
-    
-3. To begin the process of draining all Unified Messaging calls, run
-    
-  ```
-  Set-ServerComponentState <ServerName> -Component UMCallRouter -State Draining -Requester Maintenance
-  ```
-  > [NOTE:] Unified Messaging is not available in Exchange 2019.
+2. To initiate the draining of the transport queues, run the following command:
 
-4. To access the DAG maintenance scripts, run `CD $ExScripts`.
+    ```
+    Restart-Service MSExchangeTransport
+    ```
     
-5. To run the StartDagMaintenance.ps1 script, run
+3. To begin the process of draining all Unified Messaging calls (in Exchange 2016 only), run the following command:
+    
+    ```
+    Set-ServerComponentState <ServerName> -Component UMCallRouter -State Draining -Requester Maintenance
+    ```
+
+4. To access the DAG maintenance scripts, run the following command:
+
+    ```
+    CD $ExScripts
+    ```
+    
+5. To run the StartDagMaintenance.ps1 script, run the following command:
     
   ```
-  .\StartDagMaintenance.ps1 -serverName <ServerName> -MoveComment Maintenance
+  .\StartDagMaintenance.ps1 -ServerName <ServerName> -MoveComment Maintenance
   ```
 
-    After the `-MoveComment` parameter, you can make any notation you want. The above example uses "Maintenance." 
+    For the value of the _MoveComment_ parameter, you can make any notation you want. The above example uses "Maintenance." 
     
     > [!NOTE]
     > This script can take some time to execute, and during this time you may not see any activity on your screen.
@@ -458,33 +465,37 @@ To begin maintenance procedures on a DAG member, including flushing the transpor
   Redirect-Message -Server <ServerName> -Target <Server FQDN>
   ```
 
-7. To place the server into maintenance mode, run
+7. To place the server into maintenance mode, run:
     
-  ```
-  Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Inactive -Requester Maintenance
-  ```
+    ```
+    Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Inactive -Requester Maintenance
+    ```
 
 To verify that a server is ready for maintenance, perform the following tasks:
   
-1. To verify the server has been placed into maintenance mode, confirm that only `Monitoring` and `RecoveryActionsEnabled` are in an Active state when you run the following: 
+1. To verify the server has been placed into maintenance mode, confirm that only `Monitoring` and `RecoveryActionsEnabled` are in an Active state when you run the following command: 
     
-  ```
-  Get-ServerComponentState <ServerName> | Format-Table Component,State -Autosize
-  ```
+    ```
+    Get-ServerComponentState <ServerName> | Format-Table Component,State -Autosize
+    ```
 
-2. To verify the server is not hosting any active database copies, run
+2. To verify the server is not hosting any active database copies, run:
     
-  ```
-  Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
-  ```
+    ```
+    Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
+    ```
 
-3. To verify that the cluster node is paused, run
+3. To verify that the cluster node is paused, run:
     
-  ```
-  Get-ClusterNode <ServerName> | Format-List
-  ```
+    ```
+    Get-ClusterNode <ServerName> | Format-List
+    ```
 
-4. To verify that all transport queues have been emptied, run `Get-Queue`.
+4. To verify that all transport queues have been emptied, run:
+
+    ```
+    Get-Queue
+    ```
     
 After the maintenance is complete and the DAG member is ready to return to service, the StopDagServerMaintenance.ps1 script helps takes the DAG member out of maintenance mode and put it back into production. The StopDagServerMaintenance.ps1 script performs the following tasks:
   
@@ -496,32 +507,31 @@ After the maintenance is complete and the DAG member is ready to return to servi
     
 When you're ready to restore the DAG member to full production status, including resuming the transport queues and client connectivity, perform the following tasks:
   
-1. To configure the server as out of maintenance mode and ready to accept client connections, run
+1. To configure the server as out of maintenance mode and ready to accept client connections, run:
     
   ```
   Set-ServerComponentState <ServerName> -Component ServerWideOffline -State Active -Requester Maintenance
   ```
 
-2. To allow the server to accept Unified Messaging calls, run
+2. To allow the server to accept Unified Messaging calls (in Exchange 2016 only), run:
     
   ```
   Set-ServerComponentState <ServerName> -Component UMCallRouter -State Active -Requester Maintenance
   ```
-  > [NOTE:] Unified Messaging is not available in Exchange 2019. 
 
-3. To execute the StopDagMaintenance.ps1 script, run
+3. To execute the StopDagMaintenance.ps1 script, run:
     
   ```
   .\StopDagMaintenance.ps1 -serverName <ServerName> -MoveComment Maintenance
   ```
 
-4. To enable the transport queues to resume accepting and processing messages, run
+4. To enable the transport queues to resume accepting and processing messages, run:
     
   ```
   Set-ServerComponentState <ServerName> -Component HubTransport -State Active -Requester Maintenance
   ```
 
-5. To resume transport activity, run
+5. To resume transport activity, run:
     
   ```
   Restart-Service MSExchangeTransport
@@ -546,14 +556,14 @@ If you're installing an Exchange update, and the update process fails, it can le
 ## Shutting down DAG members
 <a name="Sh"> </a>
 
-The Exchange 2013 high availability solution is integrated with the Windows shutdown process. If an administrator or application initiates a shutdown of a Windows server in a DAG that has a mounted database that's replicated to one or more DAG members, the system attempts to activate another copy of the mounted database prior to allowing the shutdown process to complete.
+Exchange high availability solution is integrated with the Windows shutdown process. If an administrator or application initiates a shutdown of a Windows server in a DAG that has a mounted database that's replicated to one or more DAG members, the system attempts to activate another copy of the mounted database prior to allowing the shutdown process to complete.
   
 However, this new behavior doesn't guarantee that all of the databases on the server being shut down will experience a `lossless` activation. As a result, it's a best practice to perform a server switchover prior to shutting down a server that's a member of a DAG.
   
 ## Installing updates on DAG members
 <a name="In"> </a>
 
-Installing Microsoft Exchange Server 2013 updates on a server that's a member of a DAG is a relatively straightforward process. When you install an update on a server that's a member of a DAG, several services are stopped during the installation, including all Exchange services and the Cluster service. The general process for applying updates to a DAG member is as follows:
+Installing Exchange updates on a server that's a member of a DAG is a relatively straightforward process. When you install an update on a server that's a member of a DAG, several services are stopped during the installation, including all Exchange services and the Cluster service. The general process for applying updates to a DAG member is as follows:
   
 1. Use the steps described above to put the DAG member in maintenance mode.
     
@@ -563,6 +573,6 @@ Installing Microsoft Exchange Server 2013 updates on a server that's a member of
     
 4. Optionally, use the RedistributeActiveDatabases.ps1 script to rebalance the active database copies across the DAG.
     
-You can download the latest update for Exchange 2013 from the [Microsoft Download Center](http://www.microsoft.com/downloads).
+For more information about the latest Exchange updates, see [Exchange Server Updates: build numbers and release dates](https://technet.microsoft.com/library/hh135098.aspx).
   
 
