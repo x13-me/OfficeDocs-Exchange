@@ -1,25 +1,25 @@
 ---
-title: "Create a public folder mailbox"
+title: "Create a public folder mailbox in Exchange Server"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 4/19/2018
+ms.date: 7/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-itpro
 localization_priority: Normal
 ms.assetid: 64437ffd-231b-4c10-84df-232ccbe9538f
-description: "Summary: Learn how to create a public folder mailbox in Exchange Server."
+description: "Learn how to create a public folder mailbox in in Exchange 2016 or Exchange 2019."
 ---
 
-# Create a public folder mailbox
+# Create a public folder mailbox in Exchange Server
 
- **Summary**: Learn how to create a public folder mailbox in Exchange 2016 or Exchange 2019.
-  
-Before you can create a public folder in Exchange Server, you must first create a public folder mailbox. Public folder mailboxes contain the hierarchy information as well as the content for public folders. The first public folder mailbox you create will be the primary hierarchy mailbox, which contains the only writable copy of the hierarchy. Any additional public folder mailboxes you create will be secondary mailboxes, which contain a read-only copy of the hierarchy.
+Before you can create a public folder in Exchange 2016 or Exchange 2019, you must first create a public folder mailbox. Public folder mailboxes contain the hierarchy information as well as the content for public folders.
+
+The first public folder mailbox that you create in the organization is the primary hierarchy mailbox, which contains the only writable copy of the public folder hierarchy. Any additional public folder mailboxes that you create are secondary hierarchy mailboxes, which contain a read-only copy of the public folder hierarchy. You can create multiple public folder mailboxes for load balancing.
   
 > [!NOTE]
->  For more information about the storage quotas and limits for public folders, see the following topics: >  For public folders in Office 365, see [Exchange Online Limits](https://go.microsoft.com/fwlink/?LinkID=391188). >  For public folders in on-premises Exchange Server 2013, see [Limits for public folders](limits.md).
+>  For more information about the storage quotas and limits for public folders in on-premises Exchange, see [Limits for public folders](limits.md).
   
 For additional management tasks related to public folders in Exchange Server, see [Public folder procedures](procedures.md).
   
@@ -27,52 +27,83 @@ For additional management tasks related to public folders in Exchange Server, se
 
 - Estimated time to complete: less than 5 minutes.
     
-- Exchange 2016 or Exchange 2019 public folders and public folders on legacy Exchange servers can't exist in the same organization. If you try to create a public folder mailbox when you still have legacy public folders, you'll receive the error **An existing Public Folder deployment has been detected. To migrate existing Public Folder data, create new Public Folder mailbox using -HoldForMigration switch.**
+- Public folders on Exchange 2010 servers can't exist in the same organization with Exchange 2016 public folders. If you try to create a public folder mailbox when you still have legacy public folders, you'll receive the error **An existing Public Folder deployment has been detected. To migrate existing Public Folder data, create new Public Folder mailbox using -HoldForMigration switch.**
     
-    Before you can create public folders in Exchange 2016 or Exchange 2019, you need to migrate your legacy public folders to Exchange 2016 or 2019. To do this, follow the steps in [Use batch migration to migrate public folders to Exchange 2016 from previous versions](batch-migration-from-previous-versions.md) if you currently have Exchange 2010 public folders, or [Migrate public folders from Exchange 2013 to Exchange 2016](migrate-from-exchange-2013.md) if you currently have Exchange 2013 public folders.
-    
+    Before you can create public folders in Exchange 2016, you need to migrate your Exchange 2010 public folders to Exchange 2016 by following the steps in [Use batch migration to migrate public folders from Exchange 2010 to Exchange 2016](batch-migration-from-previous-versions.md)..
+
+- To move your public folder mailboxes from Exchange 2013 to Exchange 2016 or Exchange 2019, see [Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019](migrate-from-exchange-2013.md).
+
+- For more information about the Exchange admin center, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](../../permissions/feature-permissions/sharing-and-collaboration-permissions.md) topic.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
+
+[!TIP]
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
     
 ## Use the EAC to create a public folder mailbox
 
-In the Exchange admin center (EAC):
-  
-1. Navigate to **Public folders** \> **Public folder mailboxes**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
+1. In the EAC, go to **Public folders** \> **Public folder mailboxes**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png).
     
-2. In **Public Folder Mailbox**, provide a name for the public folder mailbox.
-    
-3. Click **Save**.
+2. In the **New public folder mailbox** page that opens, enter the following information:
+
+    - **Name**: Enter the name for the public folder mailbox.
+
+    - **Organizational unit**: Click **Browse** to select the location in Active Directory where the mailbox object is created.
+
+    - **Mailbox database**: Click **Browse** to select the mailbox database where the mailbox is created.
+
+    When you're finished, click **Save**.
+
     
 ## Use the Exchange Management Shell to create a public folder mailbox
 
-This shows how to create the primary public folder mailbox.
-  
+To create a public folder mailbox, use the following syntax:
+
 ```
-New-Mailbox -PublicFolder -Name MasterHierarchy
+New-Mailbox -PublicFolder -Name <Name>
 ```
 
-This example shows how to create a secondary public folder mailbox, in this case, one names Istanbul.
+This example creates the primary hierarchy public folder mailbox named Master Hierarchy, because this is the first public folder mailbox in the organization (the value of the _Name_ parameter doesn't determine whether the mailbox is the primary hierarchy public folder mailbox).
+  
+```
+New-Mailbox -PublicFolder -Name "Master Hierarchy"
+```
+
+This example creates a secondary hierarcy public folder mailbox named Istanbul, because this isn't the first public folder mailbox in the organization (the value of the _Name_ parameter doesn't determine whether the mailbox is a secondary hierarchy public folder mailbox).
   
 ```
 New-Mailbox -PublicFolder -Name Istanbul 
 ```
 
-The only difference between the primary hierarchy mailbox and a secondary hierarchy mailbox is that the primary mailbox is the first one created in the organization. You can create additional public folder mailboxes for load balancing.
-  
 For detailed syntax and parameter information, see [New-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
   
 ## How do you know this worked?
 
-To verify that you have successfully created the primary public folder mailbox, run the following Exchange Management Shell command:
-  
-```
-Get-OrganizationConfig | Format-List RootPublicFolderMailbox
-```
+To verify that you've successfully created the a public folder mailbox, do any of these steps:
 
-For detailed syntax and parameter information, see [Get-OrganizationConfig](http://technet.microsoft.com/library/3e07e5cc-5066-40e7-8642-845ad080f9a9.aspx).
+- In the EAC, go to **Public folders** \> **Public folder mailboxes** and verify the public folder mailbox is listed. The primary hierarcy public folder mailbox has the value **Primary Hierarchy** for the **Contains** property. All other public folder mailboxes have the value **Secondary Hierarchy** for the **Contains** property.
+
+- In the Exchange Management Shell, run the following command to verify the mailbox is listed, and check the value of the **IsRootPublicFolderMailbox** property to see if the mailbox is the primary hierarchy public folder mailbox (`True`) or a secondary hierarchy public folder mailbox (`False`):
+
+    ```
+    Get-Mailbox -PublicFolder | Format-Table -Auto Name,ServerName,Database,IsRootPublicFolderMailbox
+    ```
+
+- In the Exchange Management Shell, run the following commands to verify the primary hierarchy public folder mailbox:
+
+    1. Run the following command:
+
+      ```
+      Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+      ```
+
+    2. Use the GUID value returned by the first command with **Get-Mailbox** to confirm the mailbox name. You can copy the GUID value by right-clicking in the Exchange Management Shell window, selecting **Mark**, highlighting the GUID value, and then pressing ENTER.
   
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+      ```
+      Get-Mailbox -PublicFolder -Identity <GUID>
+      ```
+
   
 
