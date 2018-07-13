@@ -37,11 +37,11 @@ Exchange Online service provides several options for Deleted item recovery, whic
 >  With all the previously mentioned options for Deleted item recovery, note that point in time restoration of mailbox items is out of the scope of the Exchange service. However, Exchange Online offers extensive retention and recovery support for an organization's email infrastructure, and your mailbox data is available when you need it, no matter what happens.
 >
 >  You can find more details about additional options in the following topics:
->  [High Availability and Business Continuity](http://technet.microsoft.com/library/7b03465e-3b9c-4500-8956-a83377f4c2c3.aspx)
->  [Exchange Online Service Description](http://technet.microsoft.com/library/7a83da3c-3b6d-4f86-ad4d-6104707cd0ec.aspx)
->  [Create or remove an In-Place Hold](security-and-compliance/create-or-remove-in-place-holds.md)
->  [Place a mailbox on Litigation Hold](http://technet.microsoft.com/library/adee4621-3626-4aec-aa53-00b35ff0d0b0.aspx)
-> [Manage inactive mailboxes in Exchange Online](http://technet.microsoft.com/library/c60e9ae7-dd02-4c5f-9f5d-7626a9101094.aspx)
+>  - [High Availability and Business Continuity](http://technet.microsoft.com/library/7b03465e-3b9c-4500-8956-a83377f4c2c3.aspx)
+>  - [Exchange Online Service Description](http://technet.microsoft.com/library/7a83da3c-3b6d-4f86-ad4d-6104707cd0ec.aspx)
+>  - [Create or remove an In-Place Hold](security-and-compliance/create-or-remove-in-place-holds.md)
+>  - [Place a mailbox on Litigation Hold](http://technet.microsoft.com/library/adee4621-3626-4aec-aa53-00b35ff0d0b0.aspx)
+> - [Manage inactive mailboxes in Exchange Online](http://technet.microsoft.com/library/c60e9ae7-dd02-4c5f-9f5d-7626a9101094.aspx)
   
 ## How do users backup Outlook data?
 
