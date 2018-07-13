@@ -105,4 +105,4 @@ In addition to the ability to configure security options for communications betw
     
   - **Require encryption on storage cards** Select this check box to require encryption on the mobile device's removable storage card. This increases security by encrypting all information on the storage cards for the mobile device. 
     
-
+IMPORTANT: Though Exchange ActiveSync protocol provides support for the different features listed above, it is up to the mobile device operating system and manufacturers (OEMs) to build support for these features in their mobile operating system and email apps (default or third party). Not all EAS features listed above are supported by 3rd party mobile devices like iOS, Android, etc. Microsoft has no control over which EAS features are supported by these 3rd party mobile device manufacturers. Contact the manufactures directly for help with EAS features on 3rd party mobile devices.
