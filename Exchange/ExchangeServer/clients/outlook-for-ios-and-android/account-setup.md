@@ -16,7 +16,7 @@ description: "Summary: How users in your Exchange 2016 organization can quickly 
 
  **Summary**: How users in your Exchange 2016 organization can quickly set up their Outlook for iOS and Android accounts using Basic authentication.
   
-Outlook for iOS and Android offers Exchange administrators the ability to "push" account configurations to their on-premises users who use Basic authentication with the ActiveSync protocol. This capability works with any Mobile Device Management (MDM) provider who uses the [Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.mdl) channel for iOS or the [Android in the Enterprise](https://developer.android.com/samples/AppRestrictions/index.mdl) channel for Android.
+Outlook for iOS and Android offers Exchange administrators the ability to "push" account configurations to their on-premises users who use Basic authentication with the ActiveSync protocol. This capability works with any Mobile Device Management (MDM) provider who uses the [Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.mdl) channel for iOS or the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android.
   
 For on-premises users enrolled in Microsoft Intune, you can deploy the account configuration settings using Intune in the Azure Portal.
   
