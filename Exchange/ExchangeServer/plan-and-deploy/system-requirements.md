@@ -3,7 +3,6 @@ title: "Exchange 2016 system requirements"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.prod: exchange-server-it-pro
@@ -117,20 +116,11 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 > [!IMPORTANT]
 > **Releases of .NET Framework that aren't listed in the table below are not supported on any release of Exchange 2016**. This includes minor and patch-level releases of .NET Framework.
 
-|**Exchange version**|**.NET Framework 4.7.1**|**.NET Framework 4.6.2**|**.NET Framework 4.6.1**|**.NET Framework 4.5.2**|
-|:-----|:-----|:-----|:-----|:-----|
-|Exchange 2016 CU8  <br/> |X  <br/> |X  <br/> |||
-|Exchange 2016 CU5 - CU7  <br/> ||X  <br/> |||
-|Exchange 2016 CU4  <br/> ||X  <br/> |X<sup>3</sup> <br/> |X<sup>3</sup> <br/> |
-|Exchange 2016 CU3  <br/> ||X  <br/> |X  <br/> |X<br/> |
-|Exchange 2016 CU2<br/> |||X<sup>1,2</sup> <br/> |X<br/> |
-|Exchange 2016 RTM or CU1<br/> ||||X<br/> |
- 
-<sup>1</sup>.NET Framework 4.6.1 requires post-release fixes if you want to install it on a server running Exchange 2016 CU2. For more information. see [Exchange 2016 prerequisites](prerequisites.md).
-
-<sup>2</sup> If you're upgrading to Exchange 2016 CU4 from Exchange 2016 RTM, CU1, or CU2, we strongly recommend that you install Exchange 2016 CU4 before .NET Framework 4.6.2 or .NET Framework 4.6.1 and its related post-release fixes.
-
-<sup>3</sup> Starting with Exchange 2016 CU5, .NET Framework 4.6.1 and 4.5.2 will no longer be supported with Exchange 2016. While those versions of .NET Framework are supported by Exchange 2016 CU4, we strongly recommend that you upgrade servers running Exchange 2016 to .NET Framework 4.6.2.
+|**Exchange version**          |**.NET Framework 4.7.1**|**.NET Framework 4.6.2**|
+|:-----------------------------|:-----------------------|:-----------------------|
+|Exchange 2016 CU10            | X                      |                        |
+|Exchange 2016 CU8 & CU9       | X                      | X                      |
+|Exchange 2016 CU5 - CU7       |                        | X                      |
 
 ## Supported clients
 
