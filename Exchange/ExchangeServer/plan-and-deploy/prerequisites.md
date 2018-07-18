@@ -53,7 +53,7 @@ The computer you want to use to prepare Active Directory for Exchange 2016 has s
 
 First, install the following software on the computer that will be used to prepare Active Directory:
 
-- [.NET Framework 4.7.1 ](https://go.microsoft.com/fwlink/p/?linkid=866906)
+- [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
 
 - [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
 
@@ -89,10 +89,7 @@ Do the following to install the required Windows roles and features:
 
 After you've installed the operating system roles and features, install the following software in the order shown:
 
-1. [.NET Framework 4.7.1 ](https://go.microsoft.com/fwlink/p/?linkid=866906)
-
-    > [!IMPORTANT]
-    > Exchange 2016 CU5 and later **require**.NET Framework 4.6.2. Upgrade your servers to .NET Framework 4.6.2 before you install Exchange 2016 CU5 or you'll receive an error. If .NET Framework 4.5.2 is installed on your Exchange servers, upgrade your servers to Exchange 2016 CU4 before installing .NET Framework 4.6.2.
+1. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
 
 2. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
 
@@ -113,14 +110,11 @@ Do the following to install the required Windows roles and features:
   Install-WindowsFeature ADLDS
   ```
 
-After you've installed the operating system roles and features, the following software on the computer:
+After you've installed the operating system roles and features, install the following software in the order shown:
 
-- [.NET Framework 4.7.1 ](https://go.microsoft.com/fwlink/p/?linkid=866906)
+1. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
 
-- [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
-
-> [!IMPORTANT]
-> Exchange 2016 CU5 and later **require**.NET Framework 4.6.2. Upgrade your servers to .NET Framework 4.6.2 before you install Exchange 2016 CU5 or you'll receive an error. If .NET Framework 4.5.2 is installed on your Exchange servers, upgrade your servers to Exchange 2016 CU4 before installing .NET Framework 4.6.2.
+2. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
 
 ## Windows Server 2016 prerequisites
 <a name="WS2016"> </a>
@@ -147,11 +141,13 @@ Do the following to install the required Windows roles and features:
 
 After you've installed the operating system roles and features, install the following software in the order shown:
 
-1. [Microsoft Knowledge Base article KB3206632](https://go.microsoft.com/fwlink/p/?linkid=837748)
+1. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
 
-2. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+2. [Microsoft Knowledge Base article KB3206632](https://go.microsoft.com/fwlink/p/?linkid=837748)
 
-3. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
+3. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+
+4. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
 
 ### Edge Transport server role
 <a name="WS2016Edge"> </a>
@@ -168,12 +164,18 @@ Do the following to install the required Windows roles and features:
   Install-WindowsFeature ADLDS
   ```
 
+After you've installed the operating system roles and features, install the following software in the order shown:
+
+1. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
+
+2. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+
 ## Windows 8.1 and Windows 10 prerequisites (admin tools only)
 <a name="Windows8"> </a>
 
 Follow the instructions in this section to install the prerequisites on computers running Windows 8.1 or Windows 10 where you want to install the Exchange 2016 Admin Tools.
 
-On Windows 8.1 computers, install [.NET Framework 4.7.1 ](https://go.microsoft.com/fwlink/p/?linkid=866906).
+On Windows 8.1 computers, install [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906).
 
 On Windows 8.1 and Windows 10 computers, install [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913).
 
