@@ -43,6 +43,9 @@ You can use the following permissions with a shared mailbox.
 - **Send As**: The Send As permission lets a user impersonate the shared mailbox when sending mail. For example, if Kweku logs into the shared mailbox Marketing Department and sends an email, it will look like the Marketing Department sent the email.
     
 - **Send on Behalf**: The Send on Behalf permission lets a user send email on behalf of the shared mailbox. For example, if John logs into the shared mailbox Reception Building 32 and sends an email, it look like the mail was sent by "John on behalf of Reception Building 32". You can't use the EAC to grant Send on Behalf permissions, you must use **Set-Mailbox** cmdlet with the _GrantSendonBehalf_ parameter.
+
+> [!NOTE]
+> A shared mailbox is not designed for direct logon. The user account for the shared mailbox itself should stay in a Disabled (or “disconnected”) state.
     
 ## Converting shared mailboxes
 
