@@ -3,7 +3,6 @@ title: "Exchange 2016 system requirements"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.prod: exchange-server-it-pro

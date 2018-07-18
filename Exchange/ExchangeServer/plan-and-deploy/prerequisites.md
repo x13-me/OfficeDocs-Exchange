@@ -3,7 +3,6 @@ title: "Exchange 2016 prerequisites"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 6/19/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.prod: exchange-server-it-pro
