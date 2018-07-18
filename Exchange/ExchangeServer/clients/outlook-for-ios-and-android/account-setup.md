@@ -16,7 +16,7 @@ description: "Summary: How users in your Exchange 2016 organization can quickly 
 
  **Summary**: How users in your Exchange 2016 organization can quickly set up their Outlook for iOS and Android accounts using Basic authentication.
   
-Outlook for iOS and Android offers Exchange administrators the ability to "push" account configurations to their on-premises users who use Basic authentication with the ActiveSync protocol. This capability works with any Mobile Device Management (MDM) provider who uses the [Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.mdl) channel for iOS or the [Android in the Enterprise](https://developer.android.com/samples/AppRestrictions/index.mdl) channel for Android.
+Outlook for iOS and Android offers Exchange administrators the ability to "push" account configurations to their on-premises users who use Basic authentication with the ActiveSync protocol. This capability works with any Mobile Device Management (MDM) provider who uses the [Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.mdl) channel for iOS or the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android.
   
 For on-premises users enrolled in Microsoft Intune, you can deploy the account configuration settings using Intune in the Azure Portal.
   
@@ -47,7 +47,10 @@ If you're using Microsoft Intune as your mobile device management provider, the 
     
 7. For **Platform**, choose **iOS** or **Android**.
     
-8. Choose **Associated apps**, and then, on the **Targeted apps** blade, choose **Microsoft Outlook**.
+8. Choose **Associated apps**, and then, on the **Associated apps** blade, choose **Microsoft Outlook**.
+
+    > [!NOTE]
+    > If Outlook is not listed as an available app, then you must add it by following the instructions in [Add Android store apps to Microsoft Intune](https://docs.microsoft.com/en-us/intune/store-apps-android) and [How to add iOS store apps to Microsoft Intune](https://docs.microsoft.com/en-us/intune/store-apps-ios).
     
 9. Click **OK** to return to the **Add app configuration** blade.
     
@@ -58,7 +61,7 @@ If you're using Microsoft Intune as your mobile device management provider, the 
   
 11. When you're done, choose **OK**.
     
-12. On the **Add app configuration** blade, choose **Create**.
+12. On the **Add app configuration** blade, choose **Add**.
     
 The newly created configuration policy will be displayed on the **App configuration policies** blade.
   
@@ -67,13 +70,13 @@ The newly created configuration policy will be displayed on the **App configurat
 
 You assign the settings you created in the previous section to groups of users in Azure Active Directory. When a user has the Microsoft Outlook app installed, the app will be managed by the settings you have specified. To do this:
   
-1. On the **Mobile apps** blade of the Intune mobile application management dashboard, choose **App configuration policies**.
+1. From the Intune blade, on the **Mobile apps** blade of the Manage list, choose **App configuration policies**.
     
-2. From the list of app configuration policies, select the one you want to assign, and then choose **Assignments**.
+2. From the list of app configuration policies, select the one you want to assign.
     
-3. On the **Assignments** blade, choose **Select groups**.
+3. On the next blade, choose **Assignments**.
     
-4. On the **Select groups** blade, select the Azure AD group to which you want to assign the app configuration policy, then choose **Select**, and then **Save**.
+4. On the **Assignments** blade, select the Azure AD group to which you want to assign the app configuration policy, then choose **Select**, and then **OK**.
     
 ## Key value pairs
 <a name="kvp"> </a>
