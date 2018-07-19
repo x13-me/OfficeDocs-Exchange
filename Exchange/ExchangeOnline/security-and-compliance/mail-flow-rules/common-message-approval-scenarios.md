@@ -3,7 +3,7 @@ title: "Common message approval scenarios"
 ms.author: stephow
 author: stephow-msft
 manager: laurawi
-ms.date: 6/23/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -70,7 +70,7 @@ To create this type of multiple-level approval, create one transport rule for ea
     
 - If anyone in the approval chain selects **Reject** when they receive the approval request, the sender receives a rejection message. 
     
-- If any of the approval requests aren't approved within the expiration time (2 days for Exchange Online, 5 days for Exchange Server 2013), the sender receives an expiration message. 
+- If any of the approval requests aren't approved within the expiration time (2 days for Exchange Online, 5 days for Exchange Server), the sender receives an expiration message. 
     
 The following example assumes that you have a customer called Blue Yonder Airlines, and you want both the customer relationship manager and the compliance officer to approve all messages that go to this customer. You create two rules, one for each approver. The first rule goes to the first-level approver. The second rule goes to the second-level approver. 
   

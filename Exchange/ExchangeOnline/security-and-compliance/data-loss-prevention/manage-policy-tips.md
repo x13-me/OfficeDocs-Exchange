@@ -3,7 +3,7 @@ title: "Manage policy tips"
 ms.author: stephow
 author: stephow-msft
 manager: laurawi
-ms.date: 6/23/2018
+ms.date: 7/20/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online

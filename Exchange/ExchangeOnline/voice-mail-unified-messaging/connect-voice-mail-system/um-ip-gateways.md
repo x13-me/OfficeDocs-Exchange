@@ -3,7 +3,7 @@ title: "UM IP gateways"
 ms.author: tonysmit
 author: tonysmit
 manager: scotv
-ms.date: 6/24/2018
+ms.date: 7/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -56,7 +56,7 @@ A Mailbox server communicates only with VoIP gateways, IP PBXs, or SBCs listed a
 
 Internet Protocol version 6 (IPv6) is the most recent version of the Internet Protocol (IP). IPv6 is intended to correct many of the shortcomings of IPv4, which was the previous version of the IP. In Microsoft Exchange Server 2010 on-premises and hybrid deployments, IPv6 was supported only when IPv4 was also used.
   
-In Exchange 2013 on-premises and hybrid deployments, UM-related components and speech services run only on Client Access and Mailbox servers. Because the UM architecture has changed and now requires Unified Communications Managed API (UCMA) v4.0 to support both IPv4 and IPv6 as well as other Exchange features, the Client Access and Mailbox servers that have Unified Messaging components and services fully support IPv6 networks and doesn't require IPv4.
+In Exchange Server on-premises and hybrid deployments, UM-related components and speech services run only on Client Access and Mailbox servers. Because the UM architecture has changed and now requires Unified Communications Managed API (UCMA) v4.0 to support both IPv4 and IPv6 as well as other Exchange features, the Client Access and Mailbox servers that have Unified Messaging components and services fully support IPv6 networks and doesn't require IPv4.
   
 In on-premises, hybrid, and Exchange Online deployments, both enterprise and Exchange Online UM administrators can use IPv6 when they connect UM to IPv6-capable devices, including devices such as routers, IP gateways, IP PBXs, and Microsoft Office Communications Server 2007 R2 and Microsoft Lync servers. However, for interoperability and backward compatibility, IPv4 can be used instead without additional configuration changes if the  _IPAddressFamily_ parameter is set to  `Any` on UM IP gateways. 
   

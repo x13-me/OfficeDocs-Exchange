@@ -3,7 +3,7 @@ title: "Manage user access to add-ins for Outlook"
 ms.author: dmaguire
 author: msdmaguire
 manager: laurawi
-ms.date: 4/17/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -26,7 +26,7 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook.m
 
 - Estimated time to complete: 5 minutes.
     
-- For more information about the EAC, see [Exchange Admin Center in Exchange 2013](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx) or [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
+- For more information about the EAC, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
     
 - To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Shell**. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     

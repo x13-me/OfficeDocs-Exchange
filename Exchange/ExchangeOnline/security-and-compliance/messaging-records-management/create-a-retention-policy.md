@@ -3,18 +3,18 @@ title: "Create a Retention Policy"
 ms.author: markjjo
 author: markjjo
 manager: scotv
-ms.date: 12/9/2016
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: d8806c98-fea5-492f-906d-f514e25361b2
-description: "In Exchange Online and Exchange Server 2013, you can use retention policies to manage email lifecycle. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users."
+description: "In Exchange Online, you can use retention policies to manage email lifecycle. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users."
 ---
 
 # Create a Retention Policy
 
-In Exchange Online and Exchange Server 2013, you can use retention policies to manage email lifecycle. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users.
+In Exchange Online, you can use retention policies to manage email lifecycle. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users.
   
 Here's a [video](https://go.microsoft.com/fwlink/?LinkId=825854) that shows you how to create a retention policy and apply it to a mailbox in Exchange Online. 
   

@@ -2,8 +2,8 @@
 title: "Delete and re-create the default discovery mailbox in Exchange"
 ms.author: markjjo
 author: markjjo
-manager: scotv
-ms.date: 5/5/2016
+manager: laurawi
+ms.date: 7/11/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: exchange-online
@@ -18,13 +18,13 @@ You can use the Exchange Management Shell to delete the default discovery mailbo
   
 ## Why would I want to do this?
 
-In Exchange Server 2013 and Exchange Online, the maximum size of the default discovery mailbox is 50 GB. It's used to store In-Place eDiscovery search results. Before the size limit was changed, organizations could increase the storage quota to more than 50 GB. As a result, discovery mailboxes could grow to more than 50 GB. There are three issues with a default discovery mailbox that is larger than 50 GB:
+In Exchange Server and Exchange Online, the maximum size of the default discovery mailbox is 50 GB. It's used to store In-Place eDiscovery search results. Before the size limit was changed, organizations could increase the storage quota to more than 50 GB. As a result, discovery mailboxes could grow to more than 50 GB. There are three issues with a default discovery mailbox that is larger than 50 GB:
   
 - It's not supported.
     
 - It can't be migrated to Office 365.
     
-- If it's the default discovery mailbox in Exchange Server 2010, it can't be upgraded to Exchange Server 2013.
+- If it's the default discovery mailbox in Exchange Server 2010, it can't be upgraded to Exchange Server 2013 or later.
     
 How you resolve this depends on whether you want to save the search results from a default discovery mailbox that's exceeded 50 GB. 
   

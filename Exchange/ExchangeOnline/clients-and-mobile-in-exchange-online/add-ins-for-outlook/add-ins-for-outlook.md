@@ -3,7 +3,7 @@ title: "Add-ins for Outlook"
 ms.author: dmaguire
 author: msdmaguire
 manager: laurawi
-ms.date: 3/13/2017
+ms.date: 7/19/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -59,7 +59,7 @@ See [Specify the administrators and users who can install and manage add-ins for
   
 Next, use the  `Remove-App` cmdlet to remove any add-ins from one or more users. 
   
-For more information, see [Get-App](http://technet.microsoft.com/library/85dfb69d-d637-410e-931c-36685dda84c7.aspx) and [Remove-App](http://technet.microsoft.com/library/cfd1245f-dcd2-48c1-b753-a7ebedd2803f.aspx) for Exchange 2013. For Exchange Online or Exchange 2016, go [here](https://go.microsoft.com/fwlink/p/?linkid=844721). 
+For more information, go [here](https://go.microsoft.com/fwlink/p/?linkid=844721). 
   
 ## Allow administrators and users to install add-ins
 

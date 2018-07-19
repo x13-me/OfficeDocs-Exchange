@@ -3,7 +3,7 @@ title: "Set up connectors to route mail between Office 365 and your own email se
 ms.author: supotter
 author: supotter
 manager: scotv
-ms.date: 6/23/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -172,7 +172,7 @@ Next, you must prepare your email server to send mail to Office 365. This enable
   
 On your Exchange server, configure a Send connector to send email via a smart host to Office 365. For instructions on how to do this with Exchange Server, see [Create a Send connector to route outbound email through a smart host ](http://technet.microsoft.com/library/4a9ef08e-bd62-4c6b-8790-d24fb0f8f24b.aspx). For instructions on how to do this with Exchange Server 2010, see [Create an SMTP Send Connector](http://technet.microsoft.com/library/38ae9dc8-f11b-4f57-867a-4d74b453c9a3.aspx).
   
-To create the Send connector in Exchange 2013, use the following syntax in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Shell**. 
+To create the Send connector in Exchange Server, use the following syntax in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Shell**. 
   
 ```
 New-SendConnector -Name <DescriptiveName> -AddressSpaces * -CloudServicesMailEnabled $true -Fqdn <CertificateHostNameValue> -RequireTLS $true -DNSRoutingEnabled $false -SmartHosts  <YourDomain>-com.mail.protection.outlook.com -TlsAuthLevel  CertificateValidation
@@ -190,7 +190,7 @@ This example creates a new Send Connector with the following properties:
 New-SendConnector -Name "My company to Office 365" -AddressSpaces * -CloudServicesMailEnabled $true -Fqdn mail.contoso.com -RequireTLS $true -DNSRoutingEnabled $false -SmartHosts  contoso-com.mail.protection.outlook.com -TlsAuthLevel  CertificateValidation
 ```
 
-Here is an example **PowerShell** cmdlet to help you configure the Send connector in Exchange Server 2013: 
+Here is an example **PowerShell** cmdlet to help you configure the Send connector in Exchange Server: 
   
  `New-SendConnector -Name "My company to Office 365" -AddressSpaces * -CloudServicesMailEnabled $true -Fqdn "cert domain name, such as mail.contoso.com" -RequireTLS $true -SmartHosts yourdomain-com.mail.protection.outlook.com -TlsAuthLevel CertificateValidation`
   

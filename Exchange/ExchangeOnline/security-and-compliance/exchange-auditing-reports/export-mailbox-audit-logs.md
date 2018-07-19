@@ -3,7 +3,7 @@ title: "Export mailbox audit logs"
 ms.author: markjjo
 author: markjjo
 manager: scotv
-ms.date: 6/23/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -65,7 +65,7 @@ When you export the mailbox audit log, Microsoft Exchange attaches the audit log
   
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook Web App mailbox policies" entry in the [Client Access Permissions](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic. 
   
-Perform the following procedures to allow XML attachments in Outlook Web App. In Exchange Server 2013, use the value  `Default` for the  _Identity_ parameter. 
+Perform the following procedures to allow XML attachments in Outlook Web App. In Exchange Server, use the value  `Default` for the  _Identity_ parameter. 
   
 1. Run the following command to add XML to the list of allowed file types in Outlook Web App.
     

@@ -3,18 +3,18 @@ title: "Assign eDiscovery permissions in Exchange"
 ms.author: markjjo
 author: markjjo
 manager: scotv
-ms.date: 11/17/2014
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
-description: "If you want users to be able to use Microsoft Exchange Server 2013 In-Place eDiscovery, you must first authorize them by adding them to the Discovery Management role group. Members of the Discovery Management role group have Full Access mailbox permissions for the Discovery mailbox that's created by Exchange Setup."
+description: "If you want users to be able to use Microsoft Exchange Server In-Place eDiscovery, you must first authorize them by adding them to the Discovery Management role group. Members of the Discovery Management role group have Full Access mailbox permissions for the Discovery mailbox that's created by Exchange Setup."
 ---
 
 # Assign eDiscovery permissions in Exchange
 
-If you want users to be able to use Microsoft Exchange Server 2013 In-Place eDiscovery, you must first authorize them by adding them to the Discovery Management role group. Members of the Discovery Management role group have Full Access mailbox permissions for the Discovery mailbox that's created by Exchange Setup.
+If you want users to be able to use Microsoft Exchange Server In-Place eDiscovery, you must first authorize them by adding them to the Discovery Management role group. Members of the Discovery Management role group have Full Access mailbox permissions for the Discovery mailbox that's created by Exchange Setup.
   
 > [!CAUTION]
 > Members of the Discovery Management role group can access sensitive message content. Specifically, these members can use [In-Place eDiscovery](in-place-ediscovery.md) to search all mailboxes in your Exchange organization, preview messages (and other mailbox items), copy them to a Discovery mailbox and export the copied messages to a .pst file. In most organizations, this permission is granted to legal, compliance, or Human Resources personnel. > 
@@ -35,7 +35,7 @@ Interested in scenarios where this procedure is used? See the following topics:
     
 - By default, the Discovery Management role group doesn't contain any members. Administrators with the Organization Management role are also unable to create or manage discovery searches without being added to the Discovery Management role group. 
     
-- In Exchange 2013, members of the Organization Management role group can create an [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md) to place all mailbox content on hold. However, to create a query-based In-Place Hold, the user must be a member of the Discovery Management role group or have the Mailbox Search role assigned. 
+- In Exchange Server, members of the Organization Management role group can create an [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md) to place all mailbox content on hold. However, to create a query-based In-Place Hold, the user must be a member of the Discovery Management role group or have the Mailbox Search role assigned. 
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
     
