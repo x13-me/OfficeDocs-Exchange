@@ -61,7 +61,7 @@ The use of 64-bit Active Directory domain controllers increases directory servic
 
 ### Installing Exchange 2016 on directory servers
 
-For security and performance reasons, we recommend that you install Exchange 2016 only on member servers and not on Active Directory directory servers. To learn about the issues you can face when installing Exchange 2016 on a directory server, see [Installing Exchange on a domain controller is not recommended [WarningInstallExchangeRolesOnDomainController]](deployment-ref/ms-exch-setupreadiness-warninginstallexchangerolesondomaincontroller.md)After Exchange 2016 is installed, changing its role from a member server to a directory server, or vice versa, isn't supported.
+For security and performance reasons, we recommend that you install Exchange 2016 only on member servers and not on Active Directory directory servers. To learn about the issues you can face when installing Exchange 2016 on a directory server, see [Installing Exchange on a domain controller is not recommended [WarningInstallExchangeRolesOnDomainController]](deployment-ref/ms-exch-setupreadiness-warninginstallexchangerolesondomaincontroller.md). After Exchange 2016 is installed, changing its role from a member server to a directory server, or vice versa, isn't supported.
 
 ## Hardware
 

@@ -52,12 +52,8 @@ Exchange uses Mailbox servers and Edge Transport servers. These server roles are
 
 - Mailbox servers contain the Client Access services that accept client connections for all protocols. These frontend services are responsible for routing or *proxying* connections to the corresponding backend services on a Mailbox server. Clients don't connect directly to the backend services. For more information, see the [Client Access protocol architecture](#client-access-protocol-architecture) section later in this topic.
 
-<<<<<<< HEAD
 - In Exchange 2016, Mailbox servers contain the Unified Messaging (UM) services that provide voice mail and other telephony features to mailboxes.
 
-=======
-- Mailbox servers contain the Unified Messaging (UM) services that provide voice mail and other telephony features to mailboxes. 
->>>>>>> 13776b1f427738781d841a362485aa3938014eed
   > [!NOTE]
   > Unified Messaging is not available in Exchange 2019.
 

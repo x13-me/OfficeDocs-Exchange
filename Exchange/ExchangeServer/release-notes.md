@@ -9,13 +9,15 @@ ms.topic: get-started-article
 ms.prod: exchange-server-it-pro
 localization_priority: Critical
 ms.assetid: 1879fd5e-3d63-4264-9cc2-9c050c6ab3c5
-description: "Welcome to Microsoft Exchange Server 2016! This topic contains important information that you need to know to successfully deploy Exchange 2016. Please read this topic completely before beginning your deployment."
+description: "Summary: Important information that you need to know to successfully deploy Exchange Server 2016."
 ---
 
 # Release notes for Exchange 2016
 
+**Summary**: Important information that you need to know to successfully deploy Exchange Server 2016.
+
 > [!TIP]
-> Coming from the Exchange Deployment Assistant? Click [Release notes for Exchange 2013](https://technet.microsoft.com/library/jj150489%28v=exchg.150%29.aspx).
+> Coming from the Exchange Deployment Assistant? Click [Release notes for Exchange 2013](https://technet.microsoft.com/library/jj150489(v=exchg.150).aspx).
 
 Welcome to Microsoft Exchange Server 2016! This topic contains important information that you need to know to successfully deploy Exchange 2016. Please read this topic completely before beginning your deployment.
 

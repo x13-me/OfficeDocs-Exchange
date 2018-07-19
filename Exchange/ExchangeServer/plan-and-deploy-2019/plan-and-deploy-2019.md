@@ -1,40 +1,39 @@
 ---
-title: "Planning and deployment"
-ms.author: dstrome
-author: dstrome
+title: "Planning and deployment for Exchange 2019"
+ms.author: chrisda
+author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/18/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.prod: exchange-server-it-pro
 localization_priority: Priority
 ms.collection: Strat_EX_Admin
 ms.assetid: 692c59e3-f0b0-4cef-a66e-751aa740abae
-description: "Summary: Guidance for planning and deploying Exchange 2016."
+description: "Summary: Guidance for planning and deploying Exchange Server 2019."
 ---
 
 # Planning and deployment
 
- **Summary**: Guidance for planning and deploying Exchange 2016.
+ **Summary**: Guidance for planning and deploying Exchange Server 2019.
 
-The following sections contain links to information about planning for and then deploying Microsoft Exchange Server 2016.
-
-> [!IMPORTANT]
-> Make sure you read the [Release notes for Exchange 2016](../release-notes.md) topic before you begin your deployment. The release notes contain important information on issues you might encounter during and after your deployment.
-
-## Planning for Exchange 2016
-<a name="Planning"> </a>
-
- Use the following links to access information to help you plan the deployment of Exchange Server 2016 into your organization.
+The following sections contain links to information about planning for and then deploying Microsoft Exchange Server 2019.
 
 > [!IMPORTANT]
-> See [Establish a Test Environment](#test.md) later in this topic about installing Exchange 2016 in a test environment.
+> Make sure you read the [Release notes for Exchange 2019](../release-notes-2019.md) topic before you begin your deployment. The release notes contain important information on issues you might encounter during and after your deployment.
+
+## Planning for Exchange 2019
+
+ Use the information at following links to help plan your deployment of Exchange 2019 into your organization.
+
+> [!IMPORTANT]
+> See the [Establish a test environment](#establish-a-test-environment) section later in this topic for information about installing Exchange 2019 in a test environment.
 
 [Exchange architecture](../architecture/architecture.md)
 
-> Learn about the Mailbox and Edge Transport server roles, architecture improvements, and more, in Exchange 2016.
+> Learn about the Mailbox and Edge Transport server roles and more in Exchange 2019.
 
-[Exchange 2016 system requirements](system-requirements.md)
+[Exchange 2019 system requirements](system-requirements.md)
 
 > Understand the system requirements that need to be satisfied in your organization before you can install Exchange 2016.
 
