@@ -3,7 +3,6 @@ title: "Use Kerberos authentication with Outlook 2016 for Mac"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 9/24/2015
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: office-perpetual-itpro
@@ -40,9 +39,9 @@ When you set up your Exchange account in Outlook for Mac, you must click **Kerbe
   
 For new Exchange accounts, Kerberos protocol is disabled by default with **None** selected on the **Kerberos ID** pop-up menu. When you enable Kerberos protocol, Outlook for Mac allows the user to choose or create a valid Kerberos ID. If the account is created using auto-detect, the **Kerberos ID** pop-up menu is populated with the existing ID. Kerberos protocol attempts auto-detect against servers if there is at least one Kerberos ticket present in the Mac OS X credential cache or a _kerberos._tcp.\<domain\> record is available from the Domain Name Server (DNS). If the auto-detect process is successful, the ticket is populated on the account's **Kerberos ID** pop-up menu. If the auto-detect process does not include a successful Kerberos authentication, the account's Kerberos setting will be disabled and **Kerberos ID** pop-up menu is set to **None**.
   
-To create a new Kerberos ID, select **Create a New ID** on the **Kerberos ID** pop-up menu, and provide the user name and password of the new Kerberos ID when prompted as shown in the following image. 
+To create a new Kerberos ID, choose the **Create a new Kerberos ID** link. Provide the user name and password of the new Kerberos ID when prompted. 
   
-![Outlook 2016 for Mac Kerberos authentication prompt](images/kerberos-dialog.png)
+If the **Remember password in keychain** checkbox is selected, the provided credentials will be cached in the keychain and will be used to renew the ticket 15 minutes before it expires.
   
 ## Kerberos authentication for administrators
 
