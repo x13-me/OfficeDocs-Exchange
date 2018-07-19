@@ -3,7 +3,7 @@ title: "Outlook Web App mailbox policies"
 ms.author: dmaguire
 author: msdmaguire
 manager: laurawi
-ms.date: 6/25/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -19,7 +19,7 @@ Use Microsoft Outlook Web App mailbox policies to create organization-level poli
 ## Outlook Web App mailbox policies
 <a name="OWA"> </a>
 
-In Exchange 2013, you can create multiple Outlook Web App mailbox policies and apply them to individual mailboxes. When an Outlook Web App mailbox policy is applied to a mailbox, it will override the settings of the virtual directory.
+In Exchange Server, you can create multiple Outlook Web App mailbox policies and apply them to individual mailboxes. When an Outlook Web App mailbox policy is applied to a mailbox, it will override the settings of the virtual directory.
   
 Outlook Web App features can also be managed by configuring the Outlook Web App virtual directories. Virtual directory settings will be used for any mailbox that a mailbox policy hasn't been applied to.
   

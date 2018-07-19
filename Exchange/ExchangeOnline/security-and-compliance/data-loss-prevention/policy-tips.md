@@ -3,7 +3,7 @@ title: "Policy Tips"
 ms.author: stephow
 author: stephow-msft
 manager: laurawi
-ms.date: 7/22/2015
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -27,7 +27,9 @@ Any time you use either the notify sender action or an override action within a 
 If email senders in your organization who are in the act of composing a message are made aware of your organizational expectations and standards in real time through Policy Tip notifications, then they are less likely to violate standards that your organization wants to enforce.
   
 > [!NOTE]
->  Exchange Online: DLP is a premium feature that requires an Exchange Online Plan 2 subscription. For more information, see [Exchange Online Licensing](https://go.microsoft.com/fwlink/p/?linkid=286154). >  Exchange 2013: DLP is a premium feature that requires an Exchange Enterprise Client Access License (CAL). For more information about CALs and server licensing, see [Exchange Server Licensing](https://go.microsoft.com/fwlink/p/?linkid=237292). >  If your organization is using Exchange 2013 SP1 or Exchange Online, Policy Tips are available to people sending mail from Outlook 2013, Outlook Web App, or OWA for Devices. However, if your organization is currently using Exchange 2013, Policy Tips are only available to people sending email from Outlook 2013. > 
+>-  Exchange Online: DLP is a premium feature that requires an Exchange Online Plan 2 subscription. For more information, see [Exchange Online Licensing](https://go.microsoft.com/fwlink/p/?linkid=286154). 
+>-  Exchange Server: DLP is a premium feature that requires an Exchange Enterprise Client Access License (CAL). For more information about CALs and server licensing, see [Exchange Server Licensing](https://go.microsoft.com/fwlink/p/?linkid=237292). 
+>-  If your organization is using Exchange Server or Exchange Online, Policy Tips are available to people sending mail from Outlook 2013, Outlook Web App, or OWA for Devices. However, if your organization is currently using Exchange Server, Policy Tips are only available to people sending email from Outlook 2013. 
   
 ## Default text for Policy Tips and rule options
 

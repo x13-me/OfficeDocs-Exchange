@@ -3,7 +3,7 @@ title: "Outlook for iOS and Android in Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
 manager: laurawi
-ms.date: 4/2/2018
+ms.date: 7/12/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -23,7 +23,7 @@ The Outlook app for iOS and Android is designed to bring together email, calenda
   
 ## Outlook for iOS and Android architecture
 
-The Outlook app for iOS and Android is built to work natively with Exchange Server and Exchange Online. All data is protected by end-to-end, TLS-secured connections between the Outlook app and Office 365.
+The Outlook app for iOS and Android is built to work natively with Exchange Online. All data is protected by end-to-end, TLS-secured connections between the Outlook app and Office 365.
   
 Previous versions of Outlook for iOS and Android were based on code that came from Microsoft's acquisition of Acompli. While these earlier versions leveraged cloud components that ran in Amazon Web Services (AWS), that architecture has been replaced. The new architecture supports Exchange Online mailboxes natively, which means there is no mailbox data that is cached outside of Office 365. Data simply stays in its current Exchange Online mailbox, and is protected by TLS-secured connections between Outlook for iOS and Android and the mailbox. The Outlook app is now fully integrated with Microsoft services, providing the security, privacy, and compliance that organizations need.
   

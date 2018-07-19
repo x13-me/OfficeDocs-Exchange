@@ -3,7 +3,7 @@ title: "Public folder procedures in Office 365 and Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
 manager: laurawi
-ms.date: 3/27/2017
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -20,7 +20,7 @@ description: "Use batch migration to migrate legacy public folders to Office 365
   
 [Configure legacy on-premises public folders for a hybrid deployment](set-up-legacy-hybrid-public-folders.md)
   
-[Configure Exchange 2013 public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md)
+[Configure Exchange Server public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md)
   
 [Configure Exchange Online public folders for a hybrid deployment](set-up-exo-hybrid-public-folders.md)
   

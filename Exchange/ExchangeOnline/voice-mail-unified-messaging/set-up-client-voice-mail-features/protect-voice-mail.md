@@ -3,7 +3,7 @@ title: "Protect voice mail in Exchange Online"
 ms.author: tonysmit
 author: tonysmit
 manager: scotv
-ms.date: 6/24/2018
+ms.date: 7/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -21,7 +21,7 @@ When a voice message is protected, the recipient is not only blocked from forwar
 ## Overview of Protected Voice Mail
 <a name="overview"> </a>
 
-The Protected Voice Mail feature is available with Unified Messaging (UM). It can be configured on a UM mailbox policy, and all Protected Voice Mail settings can be configured by using the Exchange admin center (EAC) or cmdlets in the Exchange Management Shell in Exchange 2013.
+The Protected Voice Mail feature is available with Unified Messaging (UM). It can be configured on a UM mailbox policy, and all Protected Voice Mail settings can be configured by using the Exchange admin center (EAC) or cmdlets in the Exchange Management Shell in Exchange Server.
   
 Protected Voice Mail is implemented by applying Information Rights Management (IRM) to voice messages. When voice messages are protected by UM:
   

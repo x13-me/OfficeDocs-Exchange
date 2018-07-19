@@ -3,7 +3,7 @@ title: "Create and manage room mailboxes"
 ms.author: kwekua
 author: kwekua
 manager: scotv
-ms.date: 6/24/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -25,7 +25,7 @@ For info about another type of resource mailbox, check out [Manage equipment mai
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
     
 > [!IMPORTANT]
-> If you're running Exchange 2013 in a hybrid scenario, make sure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online side should be created in the cloud. 
+> If you're running Exchange Server in a hybrid scenario, make sure you create the room mailboxes in the appropriate place. Create your room mailboxes for your on-premises organization on-premises, and room mailboxes for Exchange Online side should be created in the cloud. 
   
 ### Create a room mailbox
 

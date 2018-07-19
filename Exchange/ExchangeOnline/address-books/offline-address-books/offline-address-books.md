@@ -1,9 +1,9 @@
 ---
 title: "Offline address books in Exchange Online"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 6/19/2017
+ms.author: dmaguire
+author: msdmaguire
+manager: serdars
+ms.date: 7/19/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -14,16 +14,14 @@ description: "Learn about offline address books in Exchange Online (Office 365 f
 
 # Offline address books in Exchange Online
 
-Learn about offline address books in Exchange Online (Office 365 for Business).
+**Summary**: Learn about offline address books in Exchange Online (Office 365 for Business).
   
 An offline address book (OAB) is a copy of an address list collection that's been downloaded so an Office 365 user can access the address book while disconnected from the on-premises server. Exchange generates the new OAB files and then compresses the files and places them on a local share. You can decide which address lists are made available to users who work offline, and you can also configure the method by which the address books are distributed.
   
 To learn more about address lists, see [Address lists](../../address-books/address-lists/address-lists.md).
   
-Looking for the Exchange 2016 version of this topic? See [Offline Address Books in Exchange 2016](http://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx). 
-  
-Looking for the Exchange Server 2013 topic? See [Offline Address Books in Exchange Server 2013](http://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx)
-  
+Looking for the Exchange Server version of this topic? See [Offline Address Books in Exchange 2016](http://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx). 
+    
 > [!NOTE]
 >  The Update-AddressList and Update-GlobalAddressList cmdlets aren't available in Exchange Online. 
   

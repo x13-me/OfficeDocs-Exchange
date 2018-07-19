@@ -2,7 +2,7 @@
 title: "Configure legacy on-premises public folders for a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
-manager: laurawi
+manager: serdars
 ms.date: 6/24/2018
 ms.audience: ITPro
 ms.topic: article
@@ -43,8 +43,6 @@ The following table describes the version and location combinations of user mail
 |On-Premises Exchange 2010 Public Folders  <br/> |Hybrid not applicable  <br/> |Hybrid not applicable  <br/> |Supported  <br/> |
 |On-Premises Exchange 2013 Public Folders  <br/> |Hybrid not applicable  <br/> |Hybrid not applicable  <br/> |Supported  <br/> |
 |Exchange Online Public Folders  <br/> |Not supported  <br/> |Supported  <br/> |Hybrid not applicable  <br/> |
-   
-A hybrid configuration with Exchange 2003 public folders is not supported. If you're running Exchange 2003 in your organization, you must move all public folder databases and replicas to Exchange 2010 SP3 or later. No public folder replicas can remain on Exchange 2003.
   
 > [!NOTE]
 > Outlook 2016 does not support accessing Exchange 2007 legacy public folders. If you have users who are using Outlook 2016, you must move your public folders to a more recent version of Exchange Server. More information about Outlook 2016 and Office 2016 compatibility with Exchange 2007 and earlier versions can be found in [this article](https://go.microsoft.com/fwlink/p/?linkid=849053). 
@@ -124,7 +122,7 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 ## Step 4: Configure directory synchronization
 <a name="dirsync"> </a>
 
-The Directory Synchronization service doesn't synchronize mail-enabled public folders. Running the following script will synchronize the mail-enabled public folders across premises. Special permissions assigned to mail-enabled public folders will need to be recreated in the cloud since cross-premise permission are not supported in Hybrid Deployment scenarios. For more information, see [Exchange Server 2013 Hybrid Deployment](http://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx#doc).
+The Directory Synchronization service doesn't synchronize mail-enabled public folders. Running the following script will synchronize the mail-enabled public folders across premises. Special permissions assigned to mail-enabled public folders will need to be recreated in the cloud since cross-premise permission are not supported in Hybrid Deployment scenarios. For more information, see [Exchange Server Hybrid Deployment](http://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx#doc).
   
 > [!NOTE]
 > Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be viewable in the Exchange admin center. See the Get-MailPublicFolder command. To recreate the SendAs permissions in the cloud, use the Add-RecipientPermission command. 

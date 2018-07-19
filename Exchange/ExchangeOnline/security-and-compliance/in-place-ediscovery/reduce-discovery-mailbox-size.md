@@ -3,7 +3,7 @@ title: "Reduce the size of a discovery mailbox in Exchange"
 ms.author: markjjo
 author: markjjo
 manager: scotv
-ms.date: 4/7/2015
+ms.date: 7/11/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: exchange-online
@@ -18,13 +18,13 @@ Have a discovery mailbox that's exceeded the 50 GB limit? You can fix this issue
   
 ## Why would I want to do this?
 
-In Exchange Server 2013 and Exchange Online, the maximum size of discovery mailboxes, which are used to store In-Place eDiscovery search results, is 50 GB. Prior to the current size limit, you were able to increase the storage quota to more than 50 GB, which resulted in having discovery mailboxes much larger than 50 GB. There are three issues with discovery mailboxes that are larger than 50 GB:
+In Exchange Server and Exchange Online, the maximum size of discovery mailboxes, which are used to store In-Place eDiscovery search results, is 50 GB. Prior to the current size limit, you were able to increase the storage quota to more than 50 GB, which resulted in having discovery mailboxes much larger than 50 GB. There are three issues with discovery mailboxes that are larger than 50 GB:
   
 - They're not supported.
     
 - They can't be migrated to Office 365.
     
-- If they're discovery mailboxes in Exchange Server 2010, they can't be upgraded to Exchange Server 2013.
+- If they're discovery mailboxes in Exchange Server 2010, they can't be upgraded to later versions.
     
 ## The process at a glance
 

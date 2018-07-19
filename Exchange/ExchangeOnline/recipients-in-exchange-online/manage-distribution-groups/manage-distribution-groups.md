@@ -3,7 +3,7 @@ title: "Create and manage distribution groups"
 ms.author: kwekua
 author: kwekua
 manager: scotv
-ms.date: 6/24/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -62,7 +62,7 @@ It's important to note the terminology differences between Active Directory and 
     
   - **\* Alias** Use this box to type the name of the alias for the group. The alias can't exceed 64 characters and must be unique in the forest. When a user types the alias in the To: line of an email message, it resolves to the group's display name. 
     
-  - **Organizational unit** (You'll only see this option in Exchange 2013 on-premises) You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the Active Directory domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default. 
+  - **Organizational unit** (You'll only see this option in Exchange Server on-premises) You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the Active Directory domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default. 
     
     To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
     

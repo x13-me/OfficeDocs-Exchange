@@ -3,7 +3,7 @@ title: "Exchange auditing reports"
 ms.author: markjjo
 author: markjjo
 manager: scotv
-ms.date: 6/23/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -90,7 +90,7 @@ $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 
 For more information about configuring which actions are logged, see:
   
-- **Exchange 2013**: [Enable or disable mailbox audit logging for a mailbox](http://technet.microsoft.com/library/c4bbfd52-6196-49c7-8c31-777fbbee11f2.aspx)
+- **Exchange Server**: [Enable or disable mailbox audit logging for a mailbox](http://technet.microsoft.com/library/c4bbfd52-6196-49c7-8c31-777fbbee11f2.aspx)
     
 - **Exchange Online**: [Enable mailbox auditing in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=626109)
     

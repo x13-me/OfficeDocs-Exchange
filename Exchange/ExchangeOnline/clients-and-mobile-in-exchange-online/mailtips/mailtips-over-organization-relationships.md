@@ -3,18 +3,18 @@ title: "MailTips over organization relationships"
 ms.author: dmaguire
 author: msdmaguire
 manager: laurawi
-ms.date: 3/9/2015
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 1784256f-abe1-4503-b8c4-26d544b73452
-description: "Microsoft Exchange Server 2013 allows you to configure organization relationships with Microsoft Exchange Online or other Exchange organizations. Establishing an organization relationship allows you to enhance the user experience when dealing with the other organization. For example, you can share free or busy data, configure secure message flow, and enable message tracking across both organizations."
+description: "Microsoft Exchange Server allows you to configure organization relationships with Microsoft Exchange Online or other Exchange organizations. Establishing an organization relationship allows you to enhance the user experience when dealing with the other organization. For example, you can share free or busy data, configure secure message flow, and enable message tracking across both organizations."
 ---
 
 # MailTips over organization relationships
 
-Microsoft Exchange Server 2013 allows you to configure organization relationships with Microsoft Exchange Online or other Exchange organizations. Establishing an organization relationship allows you to enhance the user experience when dealing with the other organization. For example, you can share free or busy data, configure secure message flow, and enable message tracking across both organizations.
+Microsoft Exchange Server allows you to configure organization relationships with Microsoft Exchange Online or other Exchange organizations. Establishing an organization relationship allows you to enhance the user experience when dealing with the other organization. For example, you can share free or busy data, configure secure message flow, and enable message tracking across both organizations.
   
 ## Controlling the MailTips access level
 

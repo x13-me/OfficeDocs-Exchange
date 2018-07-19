@@ -2,27 +2,27 @@
 title: "Use batch migration to migrate legacy public folders to Office 365 and Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
-manager: laurawi
-ms.date: 6/24/2018
+manager: serdars
+ms.date: 7/20/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.collection: Strat_EX_EXOBlocker
 ms.assetid: e8ab9309-7d12-4f02-bfc4-14e61a373958
-description: "Summary: Use these procedures to move your Exchange 2007 and Exchange 2010 public folders to Office 365."
+description: "Summary: Use these procedures to move your Exchange 2010 public folders to Office 365."
 ---
 
 # Use batch migration to migrate legacy public folders to Office 365 and Exchange Online
 
- **Summary**: Use these procedures to move your Exchange 2007 and Exchange 2010 public folders to Office 365.
+ **Summary**: Use these procedures to move your Exchange 2010 public folders to Office 365.
   
-This topic describes how to migrate your public folders in a cutover or staged migration from Update Rollup 8 for Exchange Server 2010 Service Pack 3 (SP3) or Update Rollup 15 for Exchange 2007 SP3 to Office 365 or Exchange Online.
+This topic describes how to migrate your public folders in a cutover or staged migration from Update Rollup 8 for Exchange Server 2010 Service Pack 3 (SP3) to Office 365 or Exchange Online.
   
-This topic refers to the Exchange 2010 SP3 RU8 and Exchange 2007 SP3 RU15 servers as the legacy Exchange server. Also, the steps in this topic apply to both Exchange Online and Office 365. The terms may be used interchangeably in this topic.
+This topic refers to the Exchange 2010 SP3 RU8 server as the legacy Exchange server. Also, the steps in this topic apply to both Exchange Online and Office 365. The terms may be used interchangeably in this topic.
   
 > [!NOTE]
-> The batch migration method described in this article is the only supported method for migrating legacy public folders to Office 365 and Exchange Online. The old serial migration method for migrating public folders is being deprecated and is no longer supported by Microsoft. 
+> The batch migration method described in this article is the only supported method for migrating legacy public folders to Office 365 and Exchange Online. The old serial migration method for migrating public folders is no longer supported by Microsoft. 
   
 We recommend that you don't use Outlook's PST export feature to migrate public folders to Office 365 or Exchange Online. Office 365 and Exchange online public folder mailbox growth is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders and you may have to wait for up to two weeks for auto-split to move the data from the primary mailbox. We recommend that you use the cmdlet-based instructions in this document to migrate public folders to Office 365 and Exchange Online. However, if you elect to migrate public folders using PST export, see the section [Migrate Public Folders to Office 365 by using Outlook PST export](batch-migration-of-legacy-public-folders.md#PSTMigrate) later in this topic. 
   
@@ -54,25 +54,17 @@ Exchange supports moving your public folders to Office 365 and Exchange Online f
   
 - Exchange 2010 SP3 RU8 or later
     
-- Exchange 2007 SP3 RU15 or later
-    
-If you need to move your public folders to Exchange Online but your on-premises servers aren't running the minimum support versions of Exchange 2010 or Exchange 2007, we strongly recommend that you upgrade your on-premises servers and use batch migration, which is the only supported public folder migration method.
+If you need to move your public folders to Exchange Online but your on-premises servers aren't running the minimum support versions of Exchange 2010, we strongly recommend that you upgrade your on-premises servers and use batch migration, which is the only supported public folder migration method.
   
-You can't migrate public folders directly from Exchange 2003. If you're running Exchange 2003 in your organization, you need to move all public folder databases and replicas to Exchange 2010 SP3 RU8 or later, or Exchange 2007 SP3 RU10 or later. No public folder replicas can remain on Exchange 2003. Additionally, mail destined for an Exchange 2013 public folder can't be routed through an Exchange 2003 server.
+You can't migrate public folders directly from Exchange 2003. If you're running Exchange 2003 in your organization, you need to move all public folder databases and replicas to Exchange 2010 SP3 RU8 or later. No public folder replicas can remain on Exchange 2003. Additionally, mail destined for an Exchange 2013 public folder can't be routed through an Exchange 2003 server.
   
 ## What do you need to know before you begin?
 
 - The Exchange 2010 server needs to be running Exchange 2010 SP3 RU8 or later.
     
-- The Exchange 2007 server needs to be running Exchange 2007 SP3 RU15 or later.
-    
 - In Office 365 and Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Office 365 or Exchange Online. For details about how to enable the Organization Management role group, see [Manage Role Groups](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx). 
     
-- In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/?LinkId=299212).
-    
-- In Exchange 2007, you need to be assigned the Exchange Organization Administrator role or the Exchange Server Administrator role. In addition, you need to be assigned the Public Folder Administrator role and local Administrators group for the target server. For details, see [How to Add a User or Group to an Administrator Role](https://go.microsoft.com/fwlink/p/?linkid=81779).
-    
-- On the Exchange 2007 server, upgrade to [Windows PowerShell 2.0 and WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkId=3052&amp;kbid=968930). 
+- In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/?LinkId=299212). 
     
 - Before migration, if any public folder in your organization is greater than 2 GB, we recommend either deleting content from that folder or splitting it up into multiple public folders. If either of these options isn't feasible, we recommend that you do not move your public folders to Office 365 and Exchange Online.
     
@@ -80,7 +72,7 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
     
 - Before you migrate your public folders, we recommend that you first move all user mailboxes to Office 365 and Exchange Online. For details, see [Ways to migrate multiple email accounts to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=524030).
     
-- Outlook Anywhere needs to be enabled on the legacy Exchange server. For details about enabling Outlook Anywhere on Exchange 2010 servers, see [Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=187249). For details about enabling Outlook Anywhere on Exchange 2007 servers, see [How to Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=167210).
+- Outlook Anywhere needs to be enabled on the legacy Exchange server. For details about enabling Outlook Anywhere on Exchange 2010 servers, see [Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=187249).
     
 - You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the legacy Exchange servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online Using Remote PowerShell](http://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
     
@@ -131,22 +123,15 @@ Perform the following prerequisite steps before you begin the migration.
   New-AcceptedDomain -Name "PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99" -DomainName contoso.onmicrosoft.com -DomainType InternalRelay 
   ```
 
-2. If the name of a public folder contains a backslash ( **\** ) or a forward slash ( **/** ), the public folders might be created in the parent public folder when migration occurs. Before you migrate, we recommend that you rename any public folders that have a backslash or a forward slash in the name. 
+If the name of a public folder contains a backslash ( **\** ) or a forward slash ( **/** ), the public folders might be created in the parent public folder when migration occurs. Before you migrate, we recommend that you rename any public folders that have a backslash or a forward slash in the name.
     
-1. In Exchange 2010, to locate public folders that have a backslash in the name, run the following command:
+In Exchange 2010, to locate public folders that have a backslash in the name, run the following command:
     
   ```
   Get-PublicFolderStatistics -ResultSize Unlimited | Where {($_.Name -like "*\*") -or ($_.Name -like "*/*") } | Format-List Name, Identity
   
   ```
-
-2. In Exchange 2007, to locate public folders that have a backslash in the name, run the following command: 
-    
-  ```
-  Get-PublicFolderDatabase | ForEach {Get-PublicFolderStatistics -Server $_.Server | Where {$_.Name -like "*\*"}}
-  ```
-
-3. If any public folders are returned, you can rename them by running the following command:
+2. If any public folders are returned, you can rename them by running the following command:
     
   ```
   Set-PublicFolder -Identity <public folder identity> -Name <new public folder name>
@@ -154,13 +139,13 @@ Perform the following prerequisite steps before you begin the migration.
 
 3. Make sure there isn't a previous record of a successful migration. If there is, you'll need to set that value to  `$false`. If the value is set to  `$true`, the migration request will fail. 
     
-1. The following example checks the public folder migration status.
+The following example checks the public folder migration status.
     
   ```
   Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete
   ```
 
-2. If the status of the  _PublicFoldersLockedforMigration_ or  _PublicFolderMigrationComplete_ properties is  `$true`, run the following command to set the value to  `$false`.
+4. If the status of the  _PublicFoldersLockedforMigration_ or  _PublicFolderMigrationComplete_ properties is  `$true`, run the following command to set the value to  `$false`.
     
   ```
   Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
@@ -169,21 +154,21 @@ Perform the following prerequisite steps before you begin the migration.
     > [!CAUTION]
     > After resetting these properties, you need to wait for Exchange to detect the new settings. This may take up to two hours to complete. 
   
-4. For verification purposes at the end of migration, we recommend that you first run the following Exchange Management Shell commands on the legacy Exchange server to take snapshots of your current public folder deployment.
+5. For verification purposes at the end of migration, we recommend that you first run the following Exchange Management Shell commands on the legacy Exchange server to take snapshots of your current public folder deployment.
     
-1. Run the following command to take a snapshot of the original source folder structure.
+Run the following command to take a snapshot of the original source folder structure.
     
   ```
   Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
   ```
 
-2. Run the following command to take a snapshot of public folder statistics such as item count, size, and owner.
+Run the following command to take a snapshot of public folder statistics such as item count, size, and owner.
     
   ```
   Get-PublicFolderStatistics -ResultSize Unlimited | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
   ```
 
-3. Run the following command to take a snapshot of the permissions.
+Run the following command to take a snapshot of the permissions.
     
   ```
   Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML C:\PFMigration\Legacy_PFPerms.xml
@@ -191,20 +176,20 @@ Perform the following prerequisite steps before you begin the migration.
 
     Save the information from the preceding commands for comparison at the end of the migration.
     
-5. If you are using Microsoft Azure Active Directory Connect (Azure AD Connect) to synchronize your on-premises directories with Azure Active Directory, you need to do the following (if you are not using Azure AD Connect, you can skip this step):
+6. If you are using Microsoft Azure Active Directory Connect (Azure AD Connect) to synchronize your on-premises directories with Azure Active Directory, you need to do the following (if you are not using Azure AD Connect, you can skip this step):
     
-1. On an on-premises computer, open Microsoft Azure Active Directory Connect, and then select **Configure**.
+a. On an on-premises computer, open Microsoft Azure Active Directory Connect, and then select **Configure**.
     
-2. On the **Additional tasks** screen, select **Customize synchronization options**, and then click **Next**.
+b. On the **Additional tasks** screen, select **Customize synchronization options**, and then click **Next**.
     
-3. On the **Connect to Azure AD** screen, enter the appropriate credentials, and then click **Next**. Once connected, keep clicking **Next** until you are on the **Optional Features** screen. 
+c. On the **Connect to Azure AD** screen, enter the appropriate credentials, and then click **Next**. Once connected, keep clicking **Next** until you are on the **Optional Features** screen. 
     
-4. Make sure that **Exchange Mail Public Folders** is not selected. If it isn't selected, you can continue to the next section,  *Prerequisite steps in Office 365 or Exchange Online*  . If it is selected, click to clear the check box, and then click **Next**.
+d. Make sure that **Exchange Mail Public Folders** is not selected. If it isn't selected, you can continue to the next section,  *Prerequisite steps in Office 365 or Exchange Online*  . If it is selected, click to clear the check box, and then click **Next**.
     
     > [!NOTE]
     > If you don't see **Exchange Mail Public Folders** as an option on the **Optional Features** screen, you can exit Microsoft Azure Active Directory Connect and proceed to the next section,  *Prerequisite steps in Office 365 or Exchange Online*  . 
   
-5. After you have cleared the **Exchange Mail Public Folders** selection, keep clicking **Next** until you are on the **Ready to configure** screen, and then click **Configure**.
+3. After you have cleared the **Exchange Mail Public Folders** selection, keep clicking **Next** until you are on the **Ready to configure** screen, and then click **Configure**.
     
 For detailed syntax and parameter information, see the following topics:
   
@@ -580,8 +565,6 @@ After the migration is complete, and you have verified that your Exchange Online
   
 > [!IMPORTANT]
 > Since all of your mailboxes have been migrated to Office 365 prior to the public folder migration, we strongly recommend that you route the traffic through Office 365 (decentralized mail flow) instead of centralized mail flow through your on-premises environment. If you choose to keep mail flow centralized, it could cause delivery issues to your public folders, since you've removed the public folder mailbox databases from your on-premises organization. 
-  
-- For details about how to remove public folder databases from Exchange 2007 servers, see [Removing Public Folder Databases](https://go.microsoft.com/fwlink/?LinkId=123678).
     
 - For details about how to remove public folder databases from Exchange 2010 servers, see [Remove Public Folder Databases](https://go.microsoft.com/fwlink/?LinkId=81409).
     

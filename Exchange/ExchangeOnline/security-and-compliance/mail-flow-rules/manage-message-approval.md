@@ -3,7 +3,7 @@ title: "Manage message approval"
 ms.author: stephow
 author: stephow-msft
 manager: laurawi
-ms.date: 6/23/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -60,7 +60,7 @@ The moderator receives an email with a request to approve or reject the message.
     
     ![Rejection notice, with comments from moderator](../../media/TA_Mod_Rejection.png)
   
-3. If the approver either deletes or ignores the approval message, an expiration message is sent to the sender. This happens after two days in Exchange Online, and after five days in Exchange Server 2013. (In Exchange Server 2013, you can change this time period).
+3. If the approver either deletes or ignores the approval message, an expiration message is sent to the sender. This happens after two days in Exchange Online, and after five days in Exchange Server. (In Exchange Server, you can change this time period).
     
 The message that's waiting for approval gets temporarily stored in a system mailbox called the arbitration mailbox. Until the moderator decides to approve or reject the message, deletes the approval message, or lets the approval message expire, the original message is kept in the arbitration mailbox.
   

@@ -3,7 +3,7 @@ title: "Address book policies"
 ms.author: kwekua
 author: kwekua
 manager: scotv
-ms.date: 6/24/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -45,7 +45,7 @@ In the following figure, Address Book Policy A consists of a subset of the vario
 |New  <br/> |[new-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx) cmdlet with the  _AddressBookPolicy_ parameter  <br/> |
 |Existing  <br/> |[Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet with the  _AddressBookPolicy_ parameter  <br/> |
    
-ABPs take effect when a user's client application connects to a Client Access server in Exchange 2013. If you change the ABP, the updated ABP doesn't take effect until the user restarts or reconnects their client or until you restart the RPC Client Access servers on the Exchange 2013 Mailbox server.
+ABPs take effect when a user's client application connects to a Client Access server in Exchange Server. If you change the ABP, the updated ABP doesn't take effect until the user restarts or reconnects their client or until you restart the RPC Client Access servers on the Exchange Mailbox server.
   
 ### Address book policy routing agent
 <a name="ABPTransport"> </a>
