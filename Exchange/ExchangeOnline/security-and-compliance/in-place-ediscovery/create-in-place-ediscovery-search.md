@@ -2,8 +2,8 @@
 title: "Create an In-Place eDiscovery search"
 ms.author: markjjo
 author: markjjo
-manager: scotv
-ms.date: 7/11/2017
+manager: laurawi
+ms.date: 7/20/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online

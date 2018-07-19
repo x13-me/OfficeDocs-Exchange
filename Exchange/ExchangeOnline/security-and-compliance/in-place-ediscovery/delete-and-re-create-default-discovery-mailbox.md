@@ -2,7 +2,7 @@
 title: "Delete and re-create the default discovery mailbox in Exchange"
 ms.author: markjjo
 author: markjjo
-manager: scotv
+manager: laurawi
 ms.date: 7/11/2018
 ms.audience: Admin
 ms.topic: article
@@ -24,7 +24,7 @@ In Exchange Server and Exchange Online, the maximum size of the default discover
     
 - It can't be migrated to Office 365.
     
-- If it's the default discovery mailbox in Exchange Server 2010, it can't be upgraded to Exchange Server 2013.
+- If it's the default discovery mailbox in Exchange Server 2010, it can't be upgraded to Exchange Server 2013 or later.
     
 How you resolve this depends on whether you want to save the search results from a default discovery mailbox that's exceeded 50 GB. 
   

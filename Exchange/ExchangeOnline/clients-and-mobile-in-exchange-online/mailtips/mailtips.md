@@ -2,9 +2,9 @@
 title: "MailTips"
 ms.author: dmaguire
 author: msdmaguire
-manager: laurawi
-ms.date: 7/11/2018
-ms.audience: Developer
+manager: serdars
+ms.date: 7/19/2018
+ms.audience: Admin
 ms.topic: overview
 ms.service: exchange-online
 localization_priority: Normal
@@ -19,7 +19,7 @@ MailTips are informative messages displayed to users while they're composing a m
   
 ## How MailTips work
 
-MailTips are implemented as a web service in Exchange Server. When a sender is composing a message, the client software makes an Exchange web service call to the Client Access server to get the list of MailTips. The server responds with the list of MailTips that apply to that message, and the client software displays the MailTips to the sender.
+MailTips are implemented as a web service in Exchange. When a sender is composing a message, the client software makes an Exchange web service call to the Client Access server to get the list of MailTips. The server responds with the list of MailTips that apply to that message, and the client software displays the MailTips to the sender.
   
 The following unproductive messaging scenarios are common in any messaging environment:
   
@@ -78,7 +78,7 @@ MailTips are subject to the following restrictions:
     
 - Custom MailTips are limited to 175 characters.
     
-- While Exchange 2010 would populate MailTips in their entirety, Exchange 2013 and later will only display up to 1000 characters.
+- While older versions of Exchange Server would populate MailTips in their entirety, Exchange Online will only display up to 1000 characters.
     
 - If the sender starts composing a message and leaves it open for an extended period of time, the Automatic Replies and Mailbox Full MailTips are evaluated every two hours.
     

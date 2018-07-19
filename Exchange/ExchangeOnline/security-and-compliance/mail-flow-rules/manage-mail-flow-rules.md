@@ -2,7 +2,7 @@
 title: "Manage mail flow rules"
 ms.author: chrisda
 author: chrisda
-manager: scotv
+manager: serdars
 ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article

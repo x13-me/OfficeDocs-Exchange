@@ -2,7 +2,7 @@
 title: "Fax advisor for Exchange UM"
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
+manager: serdars
 ms.date: 7/12/2018
 ms.audience: ITPro
 ms.topic: article

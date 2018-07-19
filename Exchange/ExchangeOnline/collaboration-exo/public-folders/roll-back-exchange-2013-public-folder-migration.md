@@ -2,8 +2,8 @@
 title: "Roll back a public folder migration from Exchange Server to Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
-manager: laurawi
-ms.date: 7/11/2018
+manager: serdars
+ms.date: 7/20/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online

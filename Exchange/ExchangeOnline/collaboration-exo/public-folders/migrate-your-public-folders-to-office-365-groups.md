@@ -3,7 +3,7 @@ title: "Migrate your public folders to Office 365 Groups"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 7/11/2018
+ms.date: 7/20/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online

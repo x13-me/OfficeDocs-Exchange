@@ -2,7 +2,7 @@
 title: "Manage mail flow with mailboxes in multiple locations (Office 365 and on-prem)"
 ms.author: laurawi
 author: LauraWi
-manager: scotv
+manager: serdars
 ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article

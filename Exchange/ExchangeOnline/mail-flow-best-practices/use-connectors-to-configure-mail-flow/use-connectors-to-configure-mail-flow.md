@@ -2,9 +2,9 @@
 title: "Configure mail flow using connectors in Office 365"
 ms.author: supotter
 author: supotter
-manager: scotv
+manager: serdars
 ms.date: 6/23/2018
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
 f1_keywords:
 - 'ms.exch.eac.ConnectorSelection'
@@ -43,7 +43,7 @@ Most organizations that use Office 365 don't need connectors. This topic helps y
 If you previously set up inbound and outbound connectors, they will still function in exactly the same way. The process for setting up connectors has changed; instead of using the terms "inbound" and "outbound", we ask you to specify the start and end points you want to use for a mail flow connector. The way connectors work in the background is the same as before.
   
 ## When do I need a connector?
-<a name="NeedConnector1"> </a>
+<a name="NeedConnector1"></a>
 
 Microsoft Exchange Online is ready to send and receive email from the Internet right away. You don't need to set up connectors unless you have EOP or other specific circumstances, which are described in the table below. Use this table to decide whether you need to set up connectors.
   

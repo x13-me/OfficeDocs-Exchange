@@ -111,11 +111,7 @@ Exchange supports moving your public folders to Office 365 and Exchange Online f
   
 - Exchange Server 2010 SP3 RU8 or later
     
-- Exchange Server 2007 SP3 RU15 or later
-    
 See [Use batch migration to migrate Exchange 2013 public folders to Exchange Online](batch-migration-of-exchange-2013-public-folders.md) to migrate your Exchange Server public folders. 
-  
-You can't migrate public folders directly from Exchange 2003. If you're running Exchange 2003 in your organization, you must move all public folder databases and replicas to Exchange 2007 SP3 RU15 or later. No public folder replicas can remain on Exchange 2003.
   
 We recommend that you use batch migration instead of Outlook's PST export feature to migrate public folders to Office 365 and Exchange Online. Office 365 public folder mailbox growth is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders and you might have to wait for up to two weeks for auto-split to move the data from the primary mailbox. We provide batch migration instructions in [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](batch-migration-of-legacy-public-folders.md) and [Use batch migration to migrate Exchange 2013 public folders to Exchange Online](batch-migration-of-exchange-2013-public-folders.md). However, if you've elected to do a PST migration and have run into an issue where the primary mailbox is full, you have two options for recovering the PST migration:
   
@@ -127,11 +123,5 @@ We recommend that you use batch migration instead of Outlook's PST export featur
   New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx
   ```
 
-## New to Office 365?
-<a name="Considerations"> </a>
-
-||
-|:-----|
-|![The short icon for LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Office 365?**         Discover free video courses for **Office 365 admins and IT pros**, brought to you by LinkedIn Learning. |
    
 
