@@ -3,7 +3,7 @@ title: "Create a DLP policy from a template"
 ms.author: stephow
 author: stephow-msft
 manager: laurawi
-ms.date: 6/23/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -24,7 +24,7 @@ In Microsoft Exchange, you can use data loss prevention (DLP) policy templates t
     
 You can customize any of these DLP templates or use them as-is. DLP policy templates are built on top of transport rules that include new conditions or predicates and actions. DLP policies support the full range of traditional transport rules, and you can add the additional rules after a DLP policy has been established. For more information about policy templates, see [DLP Policy Templates](http://technet.microsoft.com/library/c7b1a8e4-30d9-4409-85c5-f85ae023737d.aspx). To learn more about transport rule capabilities, see [Transport Rules](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx) (Exchange Server 2016) or [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md). Once you have started enforcing a policy, you can learn about how to observe the results by reviewing the following topics:
   
-Exchange 2013: [DLP Policy Detection Management](http://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx)
+Exchange Server: [DLP Policy Detection Management](http://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx)
   
 Exchange Online: [DLP policy detection reports](http://technet.microsoft.com/library/84295dda-5bf7-4fa5-a1ee-3f761501cfe8.aspx)
   
@@ -66,11 +66,11 @@ Exchange Online: [DLP policy detection reports](http://technet.microsoft.com/lib
 5. Click **Save** to finish creating the policy. 
     
 > [!NOTE]
-> In addition to the rules within a specific template, your organization may have additional expectations or company policies that apply to regulated data within your messaging environment. Exchange 2013 makes it easy for you to change the basic template in order to add actions so that your Exchange messaging environment complies with your own requirements. 
+> In addition to the rules within a specific template, your organization may have additional expectations or company policies that apply to regulated data within your messaging environment. Exchange Server makes it easy for you to change the basic template in order to add actions so that your Exchange messaging environment complies with your own requirements. 
   
-You can modify policies by editing the rules within them once the policy has been saved in your Exchange 2013 environment. An example rule change might include making specific people exempt from a policy or sending a notice and blocking message delivery if a message is found to have sensitive content. For more information about editing policies and rules, see [Manage DLP Policies](http://technet.microsoft.com/library/ba81fabd-7f7f-4ef7-968f-ce851ada9d70.aspx). 
+You can modify policies by editing the rules within them once the policy has been saved in your Exchange Server environment. An example rule change might include making specific people exempt from a policy or sending a notice and blocking message delivery if a message is found to have sensitive content. For more information about editing policies and rules, see [Manage DLP Policies](http://technet.microsoft.com/library/ba81fabd-7f7f-4ef7-968f-ce851ada9d70.aspx). 
   
-You have to navigate to the specific policy's rule set on the **Edit DLP policy** page and use the tools available on that page in order to change a DLP policy you have already created in Exchange 2013. 
+You have to navigate to the specific policy's rule set on the **Edit DLP policy** page and use the tools available on that page in order to change a DLP policy you have already created in Exchange Server. 
   
 Some policies allow the addition of rules that invoke RMS for messages. You must have RMS configured on the Exchange server before adding the actions to make use of these types of rules.
   

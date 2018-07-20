@@ -3,7 +3,7 @@ title: "Permissions in Exchange Online"
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 6/23/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -17,7 +17,7 @@ description: "Exchange Online in Office 365 includes a large set of predefined p
 
 Exchange Online in Office 365 includes a large set of predefined permissions, based on the Role Based Access Control (RBAC) permissions model, which you can use right away to easily grant permissions to your administrators and users. You can use the permissions features in Exchange Online so that you can get your new organization up and running quickly. 
   
-RBAC is also the permissions model that's used in Microsoft Exchange Server 2013. Most of the links in this topic refer to topics that reference Exchange 2013. The concepts in those topics also apply to Exchange Online.
+RBAC is also the permissions model that's used in Microsoft Exchange Server. Most of the links in this topic refer to topics that reference Exchange Server. The concepts in those topics also apply to Exchange Online.
   
 For information about permissions across Office 365, see [Permissions in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=263762)
   

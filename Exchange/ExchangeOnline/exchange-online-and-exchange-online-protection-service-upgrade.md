@@ -3,7 +3,7 @@ title: "Exchange Online and Exchange Online Protection service upgrade"
 ms.author: kwekua
 author: kwekua
 manager: scotv
-ms.date: 12/9/2016
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -22,7 +22,7 @@ Microsoft will upgrade all Office 365 customers, including Exchange Online custo
   
 [Service Upgrade Changes for Policy Rules](https://go.microsoft.com/fwlink/?LinkId=283969), which covers differences between FOPE policy rules in the current version of Office 365 and Exchange Transport rules in the new version.
   
-[Login to FOPE Administration Center After Service Upgrade](https://go.microsoft.com/fwlink/?LinkId=285359), which explains how to sign in to the FOPE Administration Center after your service upgrade, if you want to reference your settings.
+[Log in to FOPE Administration Center After Service Upgrade](https://go.microsoft.com/fwlink/?LinkId=285359), which explains how to sign in to the FOPE Administration Center after your service upgrade, if you want to reference your settings.
   
 > [!TIP]
 > If you would like more information about service upgrades, [Office 365 Service Upgrades and Service Updates](https://go.microsoft.com/fwlink/?LinkID=282327) is the best high-level source of information regarding service upgrades. 

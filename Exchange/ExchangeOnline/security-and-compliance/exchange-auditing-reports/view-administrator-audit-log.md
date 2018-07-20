@@ -3,18 +3,18 @@ title: "View the administrator audit log"
 ms.author: markjjo
 author: markjjo
 manager: scotv
-ms.date: 5/4/2016
+ms.date: 7/11/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 5c62072a-556d-4fea-9973-d668c6b9fd57
-description: "In Microsoft Exchange Online Protection (EOP), Microsoft Exchange Online, and Microsoft Exchange 2013, you can use the Exchange admin center (EAC) to search for and view entries in the administrator audit log. The administrator audit log records specific actions, based on Exchange Management Shell cmdlet, performed by administrators and users who have been assigned administrative privileges. Entries in the administrator audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected."
+description: "In Microsoft Exchange Online Protection (EOP), Microsoft Exchange Online, and Microsoft Exchange Server, you can use the Exchange admin center (EAC) to search for and view entries in the administrator audit log. The administrator audit log records specific actions, based on Exchange Management Shell cmdlet, performed by administrators and users who have been assigned administrative privileges. Entries in the administrator audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected."
 ---
 
 # View the administrator audit log
 
-In Microsoft Exchange Online Protection (EOP), Microsoft Exchange Online, and Microsoft Exchange 2013, you can use the Exchange admin center (EAC) to search for and view entries in the administrator audit log. The administrator audit log records specific actions, based on Exchange Management Shell cmdlet, performed by administrators and users who have been assigned administrative privileges. Entries in the administrator audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected.
+In Microsoft Exchange Online Protection (EOP), Microsoft Exchange Online, and Microsoft Exchange Server, you can use the Exchange admin center (EAC) to search for and view entries in the administrator audit log. The administrator audit log records specific actions, based on Exchange Management Shell cmdlet, performed by administrators and users who have been assigned administrative privileges. Entries in the administrator audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected.
   
 > [!NOTE]
 >  Administrator auditing logging is enabled by default. >  The administrator audit log doesn't record any action that is based on an Exchange Management Shell cmdlet that begins with the verbs **Get**, **Search**, or **Test**. >  Audit log entries are kept for 90 days. When an entry is older than 90 days, it's deleted. 
@@ -31,7 +31,7 @@ In Microsoft Exchange Online Protection (EOP), Microsoft Exchange Online, and Mi
   Get-AdminAuditLogConfig | FL AdminAuditLogEnabled
   ```
 
-    In Exchange 2013, you can enable administrator audit logging if it's disabled by running the following command.
+    In Exchange Server, you can enable administrator audit logging if it's disabled by running the following command.
     
   ```
   Set-AdminAuditLogConfig -AdminAuditLogEnabled $True

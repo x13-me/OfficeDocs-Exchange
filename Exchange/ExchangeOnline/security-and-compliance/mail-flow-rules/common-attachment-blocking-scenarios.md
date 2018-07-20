@@ -3,7 +3,7 @@ title: "Common attachment blocking scenarios for mail flow rules"
 ms.author: chrisda
 author: chrisda
 manager: laurawi
-ms.date: 6/23/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -18,7 +18,7 @@ Your organization might require that certain types of messages be blocked or rej
   
 For additional examples showing how to block specific attachments, see:
   
-- [Using transport rules to inspect message attachments](http://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx) (Exchange Server 2013) 
+- [Using transport rules to inspect message attachments](http://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx) (Exchange Server) 
     
 - [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md) (Exchange Online, Exchange Online Protection) 
     

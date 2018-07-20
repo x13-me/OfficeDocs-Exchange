@@ -2,8 +2,8 @@
 title: "Fax advisor for Exchange UM"
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 12/9/2016
+manager: serdars
+ms.date: 7/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -17,7 +17,7 @@ description: "Microsoft Unified Messaging (UM) relies on certified fax partner s
 Microsoft Unified Messaging (UM) relies on certified fax partner solutions for enhanced fax functionality such as outbound fax or fax routing. By default, users aren't configured to allow incoming fax messages to be delivered to a UM-enabled user. Exchange servers send the fax requests to a certified fax partner solution. The fax partner's server receives the fax data and then sends it to the recipient's mailbox in an email message with the fax included as a .tif attachment. For details, see [Enable Voice Mail Users to Receive Faxes](http://technet.microsoft.com/library/451ab0ea-21e1-4c1f-ae62-4ba7cdfd1e4d.aspx).
   
 > [!IMPORTANT]
-> We recommend that all customers who plan to deploy Unified Messaging obtain the assistance of a Unified Messaging specialist. A Unified Messaging specialist helps you ensure that there's a smooth transition to Unified Messaging from a legacy voice mail system. Performing a new deployment or upgrading a legacy voice mail system requires significant knowledge about PBXs and Unified Messaging. For more information about how to contact a Unified Messaging specialist, see the [Microsoft Exchange Server 2013 Unified Messaging (UM) Specialists](http://go.microsoft.com/fwlink/p/?LinkId=262708) or [Microsoft Pinpoint for Unified Messaging](https://go.microsoft.com/fwlink/p/?LinkId=261951). 
+> We recommend that all customers who plan to deploy Unified Messaging obtain the assistance of a Unified Messaging specialist. A Unified Messaging specialist helps you ensure that there's a smooth transition to Unified Messaging from a legacy voice mail system. Performing a new deployment or upgrading a legacy voice mail system requires significant knowledge about PBXs and Unified Messaging. For more information about how to contact a Unified Messaging specialist, see the [Microsoft Exchange Server Unified Messaging (UM) Specialists](http://go.microsoft.com/fwlink/p/?LinkId=262708) or [Microsoft Pinpoint for Unified Messaging](https://go.microsoft.com/fwlink/p/?LinkId=261951). 
   
 ## Exchange Unified Messaging Fax Partner Program
 

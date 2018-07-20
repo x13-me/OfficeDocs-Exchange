@@ -3,7 +3,7 @@ title: "Create a public folder"
 ms.author: dmaguire
 author: msdmaguire
 manager: laurawi
-ms.date: 6/24/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -21,7 +21,9 @@ Public folders are designed for shared access and provide an easy and effective 
 By default, a public folder inherits the settings of its parent folder, including the permissions settings.
   
 > [!NOTE]
->  For more information about the storage quotas and limits for public folders, see the following topics: >  For public folders in Office 365, see [Exchange Online Limits](https://go.microsoft.com/fwlink/?LinkID=391188). >  For public folders in on-premises Exchange Server 2013, see **Limits for public folders**. 
+>  For more information about the storage quotas and limits for public folders, see the following topics: 
+>  - For public folders in Office 365, see [Exchange Online Limits](https://go.microsoft.com/fwlink/?LinkID=391188). 
+>  - For public folders in on-premises Exchange Server, see [Limits for public folders](https://docs.microsoft.com/en-us/Exchange/collaboration/public-folders/limits). 
   
 ## What do you need to know before you begin?
 
@@ -29,9 +31,8 @@ By default, a public folder inherits the settings of its parent folder, includin
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](http://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic. 
     
-- You can't create a public folder unless you've first created a public folder mailbox. For more information about how to create a public folder mailbox, see [Create a public folder mailbox](create-public-folder-mailbox.md).
-    
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- You can't create a public folder unless you've first created a public folder mailbox. For more information about how to create a public folder mailbox, see [Create a public folder mailbox](create-public-folder-mailbox.md).    
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 ## What do you want to do?
 

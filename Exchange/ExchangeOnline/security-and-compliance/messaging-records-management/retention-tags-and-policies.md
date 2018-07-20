@@ -3,7 +3,7 @@ title: "Retention tags and retention policies"
 ms.author: markjjo
 author: markjjo
 manager: scotv
-ms.date: 6/23/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -22,7 +22,7 @@ Watch this [video](https://go.microsoft.com/fwlink/?LinkId=825854) for a quick o
 ## Messaging Records Management strategy
 <a name="MRM"> </a>
 
-MRM in Exchange 2013 and Exchange Online is accomplished by using retention tags and retention policies. Before discussing the details about each of these retention features, it's important to learn how the features are used in the overall MRM strategy. This strategy is based on:
+MRM in Exchange Server and Exchange Online is accomplished by using retention tags and retention policies. Before discussing the details about each of these retention features, it's important to learn how the features are used in the overall MRM strategy. This strategy is based on:
   
 - Assigning retention policy tags (RPTs) to default folders, such as the Inbox and Deleted Items. 
     

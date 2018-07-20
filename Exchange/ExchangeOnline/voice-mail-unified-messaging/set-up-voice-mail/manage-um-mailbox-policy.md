@@ -2,7 +2,7 @@
 title: "Manage a UM mailbox policy"
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
+manager: serdars
 ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
@@ -235,7 +235,7 @@ Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowDialPlanSubscribers $true 
 This example configures the text of voice messages sent to UM-enabled users and the text included in an email message sent to a user who has been UM-enabled.
   
 ```
-Set-UMMailboxPolicy -identity MyUMMailboxPolicy -UMEnabledText "You have been enabled for Unified Messaging." -VoiceMailText "You have received a voice message from Microsoft Exchange 2013 Unified Messaging." 
+Set-UMMailboxPolicy -identity MyUMMailboxPolicy -UMEnabledText "You have been enabled for Unified Messaging." -VoiceMailText "You have received a voice message from Microsoft Exchange Unified Messaging." 
 ```
 
 ### Use the Shell to view UM mailbox policy properties

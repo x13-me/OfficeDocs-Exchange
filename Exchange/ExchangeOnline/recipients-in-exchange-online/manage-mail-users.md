@@ -3,7 +3,7 @@ title: "Manage mail users"
 ms.author: kwekua
 author: kwekua
 manager: scotv
-ms.date: 6/24/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -71,14 +71,14 @@ Mail users are similar to mail contacts. Both have external email addresses and 
   - **\* Name** Use this box to type a name for the mail user. This is the name that's listed in the directory service. This box is also populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name because this box is required. This name also can't exceed 64 characters. 
     
     > [!NOTE]
-    > The **Name** box is only available in Exchange Server 2013. It isn't available in Exchange Online. 
+    > The **Name** box is only available in Exchange Server. It isn't available in Exchange Online. 
   
   - **Organizational unit** You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default. 
     
     To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
     
     > [!NOTE]
-    > The **Organizational unit** box is only available in Exchange Server 2013. It isn't available in Exchange Online. 
+    > The **Organizational unit** box is only available in Exchange Server. It isn't available in Exchange Online. 
   
   - **\* User logon name** Use this box to type the name that the mail user will use to log on to the domain. The user logon name consists of a user name on the left side of the at (@) symbol and a suffix on the right side. Typically, the suffix is the domain name the user account resides in. 
     
@@ -100,7 +100,7 @@ Mail users are similar to mail contacts. Both have external email addresses and 
     
 #### Use the Shell to create a mail user
 
-This example creates a mail-enabled user account for Jeffrey Zeng in Exchange Server 2013 with the following details:
+This example creates a mail-enabled user account for Jeffrey Zeng in Exchange Server with the following details:
   
 - The name and display name is Jeffrey Zeng.
     

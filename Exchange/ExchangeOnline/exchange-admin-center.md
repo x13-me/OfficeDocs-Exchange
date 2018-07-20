@@ -3,7 +3,7 @@ title: "Exchange admin center in Exchange Online"
 ms.author: kwekua
 author: kwekua
 manager: scotv
-ms.date: 6/23/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -103,7 +103,7 @@ See the following articles:
 ## Related articles
 <a name="SB"> </a>
 
-Are you using Exchange Server 2013? See [Exchange admin center in Exchange 2013](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
+Are you using Exchange Server? See [Exchange admin center in Exchange Server](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
   
 Are you using Exchange Online Protection? See [Exchange admin center in Exchange Online Protection](http://technet.microsoft.com/library/97921f0e-832f-40c7-b56d-414faede5191.aspx).
   

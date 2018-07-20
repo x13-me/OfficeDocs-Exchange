@@ -3,7 +3,7 @@ title: "Configure Exchange Online public folders for a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
 manager: laurawi
-ms.date: 6/24/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -12,16 +12,16 @@ ms.collection:
 - Ent_O365_Hybrid
 - Strat_EX_EXOBlocker
 ms.assetid: d979edb3-967b-4431-8beb-0c236bf7f56d
-description: "Summary: Instructions for enabling on-premises Exchange 2013 users to access public folders in Exchange Online."
+description: "Summary: Instructions for enabling on-premises Exchange Server users to access public folders in Exchange Online."
 ---
 
 # Configure Exchange Online public folders for a hybrid deployment
 
- **Summary**: Instructions for enabling on-premises Exchange 2013 users to access public folders in Exchange Online.
+ **Summary**: Instructions for enabling on-premises Exchange Server users to access public folders in Exchange Online.
   
-In a hybrid deployment, your users can be in Exchange Online, on-premises, or both, and your public folders are either in Exchange Online or on-premises. Sometimes your online users may need to access public folders in your Exchange Server 2013 on-premises environment. Similarly, Exchange 2013 users may need to access public folders in Office 365 or Exchange Online.
+In a hybrid deployment, your users can be in Exchange Online, on-premises, or both, and your public folders are either in Exchange Online or on-premises. Sometimes your online users may need to access public folders in your Exchange Server on-premises environment. Similarly, Exchange Server users may need to access public folders in Office 365 or Exchange Online.
   
-This article describes how to enable users in your Exchange 2013 on-premises environment to access Exchange Online/Office 365 public folders. To enable Exchange Online/Office 365 users to access on-premises Exchange 2013 public folders, see [Configure Exchange 2013 public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md).
+This article describes how to enable users in your Exchange Server on-premises environment to access Exchange Online/Office 365 public folders. To enable Exchange Online/Office 365 users to access on-premises Exchange Server public folders, see [Configure Exchange Server public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md).
   
 > [!NOTE]
 > If you have Exchange 2010 public folders, see [Configure legacy on-premises public folders for a hybrid deployment](set-up-legacy-hybrid-public-folders.md). 
@@ -63,12 +63,12 @@ This article describes how to enable users in your Exchange 2013 on-premises env
 ## Step 2: Configure directory synchronization
 <a name="dirsync"> </a>
 
-Running the script  `Sync-MailPublicFoldersCloudToOnprem.ps1` will synchronize the mail-enabled public folders between Exchange Online and your Exchange 2013 on-premises environment. Special permissions assigned to mail-enabled public folders will need to be recreated in the cloud since cross-premise permissions are not supported in Hybrid Deployment scenarios. For more information, see [Exchange Server 2013 Hybrid Deployment](http://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx#doc).
+Running the script  `Sync-MailPublicFoldersCloudToOnprem.ps1` will synchronize the mail-enabled public folders between Exchange Online and your Exchange Server on-premises environment. Special permissions assigned to mail-enabled public folders will need to be recreated in the cloud since cross-premise permissions are not supported in Hybrid Deployment scenarios. For more information, see [Exchange Server Hybrid Deployment](http://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx#doc).
   
 > [!NOTE]
 > Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be viewable in the Exchange Admin Center. See the Get-MailPublicFolder command. To recreate the SendAs permissions in the cloud, use the Add-RecipientPermission command. 
   
-1. On the Exchange 2013 server, run the following command to synchronize mail-enabled public folders from Exchange Online/Office 365 to your local on-premises Active Directory.
+1. On Exchange Server, run the following command to synchronize mail-enabled public folders from Exchange Online/Office 365 to your local on-premises Active Directory.
     
   ```
   Sync-MailPublicFoldersCloudToOnprem.ps1 -Credential (Get-Credential)
@@ -82,11 +82,11 @@ Running the script  `Sync-MailPublicFoldersCloudToOnprem.ps1` will synchronize t
 ## Step 3: Configure on-premises users to access Exchange Online public folders
 <a name="Access"> </a>
 
-The final step in this procedure is to configure the Exchange 2013 on-premises organization to allow access to Exchange Online public folders.
+The final step in this procedure is to configure the Exchange Server on-premises organization to allow access to Exchange Online public folders.
   
 Running the script  `Import-PublicFolderMailboxes.ps1` will import public folder mailbox objects from the cloud as mail-enabled users to your on-premises environment. The script will also configure the imported objects as remote public folder mailboxes. 
   
-1. On the Exchange 2013 server, run the following command to import public folder mailbox objects from the cloud to your on-premises Active Directory.
+1. On Exchange Server, run the following command to import public folder mailbox objects from the cloud to your on-premises Active Directory.
     
   ```
   Import-PublicFolderMailboxes.ps1 -Credential (Get-Credential)
