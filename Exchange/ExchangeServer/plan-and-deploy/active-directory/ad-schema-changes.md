@@ -1,5 +1,5 @@
 ---
-title: "Exchange 2016 Active Directory schema changes"
+title: "Active Directory schema changes in Exchange 2016"
 ms.author: dstrome
 author: dstrome
 manager: serdars
@@ -10,10 +10,10 @@ ms.prod: exchange-server-it-pro
 localization_priority: Critical
 ms.collection: Strat_EX_Admin
 ms.assetid: 7e879e4e-1124-4a41-94d2-c64500beb24e
-description: "Summary: What new schema classes and attributes Exchange Server 2016 adds to Active Directory, and which existing ones it modifies."
+description: "Summary: Learn about the new and modified schema classes and attributes that are added to Active Directory by Exchange 2016."
 ---
 
-# Exchange 2016 Active Directory schema changes
+# Active Directory schema changes in Exchange 2016
 
  **Summary**: What new schema classes and attributes Exchange Server 2016 adds to Active Directory, and which existing ones it modifies.
   

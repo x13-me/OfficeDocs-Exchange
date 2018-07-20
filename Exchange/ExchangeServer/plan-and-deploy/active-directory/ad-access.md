@@ -1,5 +1,5 @@
 ---
-title: "Access to Active Directory"
+title: "Access to Active Directory in Exchange 2016"
 ms.author: dstrome
 author: dstrome
 manager: serdars
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: exchange-server-it-pro
 localization_priority: Priority
 ms.assetid: 61080b45-8bce-4c23-b744-ed264d5f0b7d
-description: "Summary: How Exchange 2016 retrieves data from Active Directory, and how to recover deleted objects."
+description: "Summary: Learn how Exchange 2016 retrieves data from Active Directory, and how to recover deleted objects."
 ---
 
-# Access to Active Directory
+# Access to Active Directory in Exchange 2016
 
- **Summary**: How Exchange 2016 retrieves data from Active Directory, and how to recover deleted objects.
+ **Summary**: Learn how Exchange 2016 retrieves data from Active Directory, and how to recover deleted objects.
   
 Microsoft Exchange Server 2016 stores all configuration and recipient information in the Active Directory directory service database. When a computer running Exchange 2016 requires information about recipients and information about the configuration of the Exchange organization, it must query Active Directory to access the information. Active Directory servers must be available for Exchange 2016 to function correctly.
   

@@ -1,5 +1,5 @@
 ---
-title: "Active Directory"
+title: "Active Directory in Exchange 2016 organizations"
 ms.author: dstrome
 author: dstrome
 manager: serdars
@@ -10,10 +10,10 @@ ms.prod: exchange-server-it-pro
 localization_priority: Priority
 ms.collection: Strat_EX_Admin
 ms.assetid: 8e8464df-2d1d-4d68-82de-b0c158c549c3
-description: "Summary: How Exchange 2016 interacts with Active Directory."
+description: "Summary: Learn how Exchange 2016 interacts with Active Directory."
 ---
 
-# Active Directory
+# Active Directory in Exchange 2016 organizations
 
  **Summary**: How Exchange 2016 interacts with Active Directory.
   
@@ -31,7 +31,7 @@ Exchange 2016 adds new attributes to the Active Directory domain service schema 
   
 ## For more information
 
-To learn more about how Exchange 2016 stores and retrieves information in Active Directory so that you can plan access to it, see [Access to Active Directory](ad-access.md).
+To learn more about how Exchange 2016 stores and retrieves information in Active Directory so that you can plan access to it, see [Access to Active Directory in Exchange 2016](ad-access.md).
   
 For more information about Active Directory forest design, see [AD DS Design Guide](https://go.microsoft.com/fwlink/p/?LinkId=264957).
   

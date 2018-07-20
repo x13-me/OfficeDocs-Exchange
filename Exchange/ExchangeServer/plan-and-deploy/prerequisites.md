@@ -25,7 +25,7 @@ This topic provides the steps for installing the necessary Windows Server 2012, 
 <a name="prereq"> </a>
 
 > [!TIP]
-> Have you heard about the Exchange Server Deployment Assistant? It's a free online tool that helps you quickly deploy Exchange 2016 in your organization by asking you a few questions and creating a customized deployment checklist just for you. If you want to learn more about it, go to **Exchange Server Deployment Assistant**.
+> Have you heard about the Exchange Server Deployment Assistant? It's a free online tool that helps you quickly deploy Exchange 2016 in your organization by asking you a few questions and creating a customized deployment checklist just for you. If you want to learn more about it, go to [Microsoft Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/p/?linkid=626978).
 
 - Make sure that the functional level of your forest is at least Windows Server 2008 R2, and that the schema master is running Windows Server 2008 R2 or later. For more information about the Windows functional level, see [Understanding Active Directory Domain Services (AD DS) Functional Levels](https://go.microsoft.com/fwlink/p/?linkId=137037).
 

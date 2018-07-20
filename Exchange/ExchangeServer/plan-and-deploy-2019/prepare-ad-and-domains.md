@@ -1,5 +1,5 @@
 ---
-title: "Prepare Active Directory and domains for Exchange 2016"
+title: "Prepare Active Directory and domains for Exchange 2019"
 ms.author: dstrome
 author: dstrome
 manager: serdars
@@ -10,17 +10,17 @@ ms.prod: exchange-server-it-pro
 localization_priority: Critical
 ms.collection: Strat_EX_Admin
 ms.assetid: f895e1ce-d766-4352-ac46-ec959c9954a9
-description: "Summary: Learn how to prepare Active Directory for Exchange 2016."
+description: "Summary: Learn how to prepare Active Directory for Exchange 2019."
 ---
 
-# Prepare Active Directory and domains for Exchange 2016
+# Prepare Active Directory and domains for Exchange 2019
 
- **Summary**: Learn how to prepare Active Directory for Exchange 2016.
+ **Summary**: Learn how to prepare Active Directory for Exchange 2019.
 
-Before you install Microsoft Exchange Server 2016, you need to prepare your Active Directory forest and its domains. Exchange needs to prepare Active Directory so that it can store information about your users' mailboxes and the configuration of Exchange servers in the organization. If you aren't familiar with Active Directory forests or domains, check out [Active Directory Domain Services Overview](https://go.microsoft.com/fwlink/p/?LinkId=399226).
+Before you install Exchange Server 2019, you need to prepare your Active Directory forest and its domains. Exchange needs to prepare Active Directory so that it can store information about your users' mailboxes and the configuration of Exchange servers in the organization. If you aren't familiar with Active Directory forests or domains, check out [Active Directory Domain Services Overview](https://go.microsoft.com/fwlink/p/?LinkId=399226).
 
 > [!NOTE]
-> Whether this is the first installation of Exchange in your environment, or you already have earlier versions of Exchange Server running, you need to prepare Active Directory for Exchange 2016. You can see [Exchange 2016 Active Directory schema changes](active-directory/ad-schema-changes.md) for details on new schema classes and attributes that Exchange 2016 adds to Active Directory, including those made by Cumulative Updates (CUs).
+> Whether this is the first installation of Exchange in your environment, or you already have earlier versions of Exchange Server running, you need to prepare Active Directory for Exchange 2019. You can see [Exchange 2016 Active Directory schema changes](active-directory/ad-schema-changes.md) for details on new schema classes and attributes that Exchange 2016 adds to Active Directory, including those made by Cumulative Updates (CUs).
 
 There are a couple of ways you can prepare Active Directory for Exchange. The first is to let the Exchange 2016 Setup wizard do it for you. If you don't have a large Active Directory deployment, and you don't have a separate team that manages Active Directory, we recommend using the wizard. The account you use will need to be a member of both the Schema Admins and Enterprise Admins security groups. For more information about how to use the Setup wizard, check out [Install the Exchange 2016 Mailbox role using the Setup wizard](deploy-new-installations/install-mailbox-role.md).
 
@@ -29,7 +29,6 @@ If you have a large Active Directory deployment, or if a separate team manages A
 Curious about what's happening when Active Directory is being prepared for Exchange? Check out [What changes in Active Directory when Exchange 2016 is installed?](active-directory/ad-changes.md)
 
 ## What do you need to know before you begin?
-<a name="BYB"> </a>
 
 - Estimated time to complete: 10-15 minutes or more (not including Active Directory replication), depending on organization size and the number of child domains.
 
@@ -44,8 +43,7 @@ Curious about what's happening when Active Directory is being prepared for Excha
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
-## 1. Extend the Active Directory schema
-<a name="Step1"> </a>
+## Step 1: Extend the Active Directory schema
 
 The first step in getting your organization ready for Exchange 2016 is to extend the Active Directory schema. Exchange stores a lot of information in Active Directory but before it can do that, it needs to add and update classes, attributes, and other items. If you're curious about what's changed when your schema is extended, check out [Exchange 2016 Active Directory schema changes](active-directory/ad-schema-changes.md).
 
@@ -76,8 +74,7 @@ When you're ready, do the following to extend your Active Directory schema. If y
 
 After Setup finishes extending the schema, you'll need to wait while Active Directory replicates the changes to all of your domain controllers. If you want to check on how replication is going, you can use the `repadmin` tool. `Repadmin` is included as part of the Active Directory Domain Services Tools feature in Windows Server 2012 R2 and Windows Server 2012. For more information about how to use it, see [Repadmin](https://go.microsoft.com/fwlink/p/?LinkId=257879).
 
-## 2. Prepare Active Directory
-<a name="Step2"> </a>
+## Step 2: Prepare Active Directory
 
 Now that the Active Directory schema has been extended, you can prepare other parts of Active Directory for Exchange 2016. During this step, Exchange will create containers, objects, and other items in Active Directory that it'll use to store information. The collection of all of the Exchange containers, objects, attributes, and so on, is called the *Exchange organization*.
 
@@ -118,8 +115,7 @@ When you're ready, do the following to prepare Active Directory for Exchange. If
 
 After Setup finishes preparing Active Directory for Exchange, you'll need to wait while Active Directory replicates the changes to all of your domain controllers. If you want to check on how replication is going, you can use the `repadmin` tool. `repadmin` is included as part of the Active Directory Domain Services Tools feature in Windows Server 2012 R2 and Windows Server 2012. For more information about how to use the tool, see [Repadmin](https://go.microsoft.com/fwlink/p/?LinkId=257879).
 
-## 3. Prepare Active Directory domains
-<a name="Step3"> </a>
+## Step 3: Prepare Active Directory domains
 
 The final step to get Active Directory ready for Exchange is to prepare each of the Active Directory domains where Exchange will be installed or where mail-enabled users will be located. This step creates additional containers and security groups, and sets permissions so that Exchange can access them.
 
@@ -176,7 +172,6 @@ When you're ready, do the following to prepare an individual domain in your Acti
 3. Repeat the steps for each Active Directory domain where you'll install an Exchange server or where mail-enabled users will be located.
 
 ## How do you know this worked?
-<a name="Verify"> </a>
 
 Once you've done all the steps above, you can check to make sure everything's gone smoothly. To do so, you'll use a tool called Active Directory Service Interfaces Editor (ADSI Edit). ADSI Edit is included as part of the Active Directory Domain Services Tools feature in Windows Server 2012 R2 and Windows Server 2012. If you want to know more about it, check out [ADSI Edit (adsiedit.msc)](https://go.microsoft.com/fwlink/p/?LinkId=294644).
 
@@ -193,10 +188,9 @@ Once you've done all the steps above, you can check to make sure everything's go
 
 You can also check the Exchange setup log to verify that Active Directory preparation has completed successfully. For more information, see [Verify an Exchange 2016 installation](post-installation-tasks/verify-installation.md). You won't be able to use the **Get-ExchangeServer** cmdlet mentioned in the [Verify an Exchange 2016 installation](post-installation-tasks/verify-installation.md) topic until you've completed the installation of at least one Mailbox server role in an Active Directory site.
 
-### Exchange 2016 Active Directory versions
-<a name="ADversions"> </a>
+### Exchange 2019 Active Directory versions
 
-The following table shows you the Exchange 2016 objects in Active Directory that get updated each time you install a new version of Exchange 2016. You can compare the object versions you see with the values in the table below to verify that the version of Exchange 2016 you installed successfully updated Active Directory during installation.
+The following table shows you the Exchange 2019 objects in Active Directory that get updated each time you install a new version of Exchange 2019. You can compare the object versions you see with the values in the table below to verify that the version of Exchange 2019 you installed successfully updated Active Directory during installation.
 
 - **rangeUpper** is located in the **Schema** naming context in the **ms-Exch-Schema-Version-Pt** container.
 
@@ -206,17 +200,6 @@ The following table shows you the Exchange 2016 objects in Active Directory that
 
 |**Exchange version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
-|Exchange 2016 CU10  <br/> |15332  <br/> |13236  <br/> |16213  <br/> |
-|Exchange 2016 CU9  <br/> |15332  <br/> |13236  <br/> |16213  <br/> |
-|Exchange 2016 CU8  <br/> |15332  <br/> |13236  <br/> |16213  <br/> |
-|Exchange 2016 CU7  <br/> |15332  <br/> |13236  <br/> |16213  <br/> |
-|Exchange 2016 CU6  <br/> |15330  <br/> |13236  <br/> |16213  <br/> |
-|Exchange 2016 CU5  <br/> |15326  <br/> |13236  <br/> |16213  <br/> |
-|Exchange 2016 CU4  <br/> |15326  <br/> |13236  <br/> |16213  <br/> |
-|Exchange 2016 CU3  <br/> |15326  <br/> |13236  <br/> |16212  <br/> |
-|Exchange 2016 CU2  <br/> |15325  <br/> |13236  <br/> |16212  <br/> |
-|Exchange 2016 CU1  <br/> |15323  <br/> |13236  <br/> |16211  <br/> |
-|Exchange 2016 RTM  <br/> |15317  <br/> |13236  <br/> |16210  <br/> |
-|Exchange 2016 Preview  <br/> |15317  <br/> |13236  <br/> |16041  <br/> |
+|Exchange 2019 Preview||||
  
 

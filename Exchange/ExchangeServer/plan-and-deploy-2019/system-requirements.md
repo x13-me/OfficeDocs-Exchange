@@ -56,11 +56,11 @@ Active Directory domain controllers on 64-bit hardware with a 64-bit version of 
 
 For security and performance reasons, we don't recommend installing Exchange 2019 on Active Directory directory servers. Only install Exchange 2019 on member servers.
 
-To learn more about the issues that you'll encounter when you install Exchange on a directory server, see [Installing Exchange on a domain controller is not recommended [WarningInstallExchangeRolesOnDomainController]](deployment-ref/ms-exch-setupreadiness-warninginstallexchangerolesondomaincontroller.md). After Exchange is installed, changing the server role from a member server to a directory server or vice-versa isn't supported.
+To learn more about the issues that you'll encounter when you install Exchange on a directory server, see [Installing Exchange on a domain controller is not recommended [WarningInstallExchangeRolesOnDomainController]](../plan-and-deploy/deployment-ref/ms-exch-setupreadiness-warninginstallexchangerolesondomaincontroller.md). After Exchange is installed, changing the server role from a member server to a directory server or vice-versa isn't supported.
 
 ## Hardware
 
-For information about deploying Exchange in a virtualized environment, see [Exchange virtualization](virtualization.md).
+For information about deploying Exchange in a virtualized environment, see [Exchange Server virtualization](../plan-and-deploy/virtualization.md).
 
  |**Component**|**Requirement**|**Notes**|
 |:-----|:-----|:-----|
