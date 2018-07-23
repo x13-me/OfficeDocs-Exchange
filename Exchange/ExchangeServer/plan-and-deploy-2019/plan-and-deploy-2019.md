@@ -57,7 +57,7 @@ The following sections contain links to information about planning for and then 
 
 > Read this topic to help you with planning a hybrid deployment with Microsoft Office 365 and your on-premises Exchange 2019 organization.
 
-[Exchange 2016 virtualization](../plan-and-deploy/virtualization.md)
+[Exchange Server virtualization](../plan-and-deploy/virtualization.md)
 
 > Read this topic to learn more about how you can deploy Exchange 2019 in a virtualized environment.
 
@@ -87,7 +87,7 @@ Use the information at the following links to help you deploy Exchange 2019.
 
 [Install the Exchange 2019 Mailbox role using the Setup wizard](deploy-new-installations/install-mailbox-role.md)
 
-> Follow the steps in this topic to use the Exchange 2019 Setup wizard to install Exchange 2016 Mailbox servers into a new Exchange organization.
+> Follow the steps in this topic to use the Exchange 2019 Setup wizard to install Exchange 2019 Mailbox servers into a new Exchange organization.
 
 [Install Exchange 2019 using unattended mode](deploy-new-installations/unattended-installs.md)
 
@@ -95,7 +95,7 @@ Use the information at the following links to help you deploy Exchange 2019.
 
 [Install the Exchange 2019 Edge Transport role using the Setup wizard](deploy-new-installations/install-edge-transport-role.md)
 
-> Follow the steps in this topic to use the Exchange 2019 Setup wizard to install the Exchange 2016 Edge Transport server into a perimeter network.
+> Follow the steps in this topic to use the Exchange 2019 Setup wizard to install the Exchange 2019 Edge Transport server into a perimeter network.
 
 [Upgrade Exchange 2019 to the latest cumulative update](install-cumulative-updates.md)
 
@@ -109,7 +109,7 @@ Use the information at the following links to help you deploy Exchange 2019.
 
 > Learn about post-installation tasks to complete your Exchange 2019 installation.
 
-## Understanding Exchange 2016 Setup
+## Exchange 2019 Setup
 
 You can use different types and modes of Exchange 2019 Setup to install and maintain the various editions and versions of Exchange 2019.
 
@@ -119,7 +119,7 @@ Exchange 2019 is available in two server editions: Standard Edition and Enterpri
 
 ### Types of Exchange Setup
 
-You have the following options for Exchange 2016 Setup:
+You have the following options for Exchange 2019 Setup:
 
 - **Exchange Setup wizard**: Running Setup.exe without any command-line switches provides an interactive experience where you're guided by the Exchange 2019 Setup wizard.
 

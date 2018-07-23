@@ -109,7 +109,7 @@ Use the following links to access the information you need to help you with depl
 
 > Learn about post-installation tasks to complete your Exchange 2016 installation.
 
-## Understanding Exchange 2016 Setup
+## Exchange 2016 Setup
 
 You can use different types and modes of Exchange 2016 Setup to install and maintain the various editions and versions of Exchange 2016.
 
@@ -121,9 +121,9 @@ Exchange 2016 is available in two server editions: Standard Edition and Enterpri
 
 You have the following options for Exchange 2016 Setup:
 
-- **Exchange Setup wizard**: Running Setup.exe without any command-line switches provides an interactive experience where you're guided by the Exchange 2016 Setup wizard.
+- **Exchange Setup wizard**: Running Setup.exe without any command line switches provides an interactive experience where you're guided by the Exchange 2016 Setup wizard.
 
-- **Exchange Unattended Setup**: Running Setup.exe with command-line switches enables you to install Exchange from an interactive command line or through a script.
+- **Exchange Unattended Setup**: Running Setup.exe with command line switches enables you to install Exchange from an interactive command line or through a script.
 
 ### Modes of Exchange Setup
 

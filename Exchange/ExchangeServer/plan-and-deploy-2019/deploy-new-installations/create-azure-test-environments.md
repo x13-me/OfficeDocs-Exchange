@@ -1,9 +1,9 @@
 ---
-title: "Exchange 2019 dev/test environment in Azure"
+title: "Exchange 2016 dev/test environment in Azure"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: serdars
-ms.date: 7/23/2018
+ms.date: 6/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -11,32 +11,32 @@ localization_priority: Normal
 ms.collection:
 - Strat_EX_Admin
 - Ent_O365
-ms.assetid: 
-description: "Summary: Learn how to create a single-server Exchange 2019 dev/test environment in Microsoft Azure infrastructure services."
+ms.assetid: d9fbf253-b6f1-4bcd-8548-87ccf49259f1
+description: "Summary: Create a single-server Exchange 2016 dev/test environment in Microsoft Azure infrastructure services."
 ---
 
-# Exchange 2019 dev/test environment in Azure
+# Exchange 2016 dev/test environment in Azure
 
- **Summary:** Learn how to create a single-server Exchange 2019 dev/test environment in Microsoft Azure infrastructure services.
+ **Summary:** Create a single-server Exchange 2016 dev/test environment in Microsoft Azure infrastructure services.
   
-This article steps you through creating an Exchange 2019 dev/test deployment in Microsoft Azure. Here is the resulting configuration.
+This article steps you through creating an Exchange 2016 dev/test deployment in Microsoft Azure. Here is the resulting configuration.
   
-![The completed Exchange 2019 dev/test environment in Azure infrastructure services](../../media/9e1da4e3-f66e-483a-b5bb-d79829a29183.png)
+![The completed Exchange 2016 dev/test environment in Azure infrastructure services](../../media/9e1da4e3-f66e-483a-b5bb-d79829a29183.png)
   
-This configuration consists of a single Exchange server and a Windows Server Active Directory (AD) domain controller in a subnet of an Azure virtual network. This provides a basis and common starting point from which you can demonstrate Exchange 2019 and develop Exchange Server applications. This configuration is only for internal email and application testing on the Exchange server. No external email flow is configured.
+This configuration consists of a single Exchange server and a Windows Server Active Directory (AD) domain controller in a subnet of an Azure virtual network. This provides a basis and common starting point from which you can demonstrate Exchange 2016 and develop Exchange Server applications. This configuration is only for internal email and application testing on the Exchange server. No external email flow is configured.
   
 There are three major phases to setting up this dev/test environment:
   
 1. Set up the virtual network and domain controller (adVM).
     
-2. Add the Exchange 2019 server (exVM).
+2. Add the Exchange 2016 server (exVM).
     
-3. Configure Exchange 2019.
+3. Configure Exchange 2016.
     
-If you don't already have an Azure subscription, you can sign up for an [Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/). If you have an MSDN or Visual Studio subscription, see [Monthly Azure credit for Visual Studio subscribers](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
+If you do not already have an Azure subscription, you can sign up for an [Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/). If you have an MSDN or Visual Studio subscription, see [Monthly Azure credit for Visual Studio subscribers](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
   
 > [!NOTE]
-> Because Exchange 2019 makes changes to the schema in Windows Server AD, this configuration cannot use Azure Active Directory Domain Services.
+> Because Exchange 2016 makes changes to the schema in Windows Server AD, this configuration cannot use Azure Active Directory Domain Services.
   
 ## Phase 1: Deploy the virtual network and a domain controller
 
@@ -99,22 +99,22 @@ You can create a new Azure virtual network with a domain controller with Azure P
     New-AzureRMStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
     ```
 
-6. Create the EX2019Vnet Azure Virtual Network that will host the EX2019Subnet subnet and protect it with a network security group.
+6. Create the EX2016Vnet Azure Virtual Network that will host the EX2016Subnet subnet and protect it with a network security group.
   
     ```
     $rgName="<name of your new resource group>"
     $locName=(Get-AzureRmResourceGroup -Name $rgName).Location
-    $exSubnet=New-AzureRMVirtualNetworkSubnetConfig -Name EX2019Subnet -AddressPrefix 10.0.0.0/24
-    New-AzureRMVirtualNetwork -Name EX2019Vnet -ResourceGroupName $rgName -Location $locName -AddressPrefix 10.0.0.0/16 -Subnet $exSubnet -DNSServer 10.0.0.4
+    $exSubnet=New-AzureRMVirtualNetworkSubnetConfig -Name EX2016Subnet -AddressPrefix 10.0.0.0/24
+    New-AzureRMVirtualNetwork -Name EX2016Vnet -ResourceGroupName $rgName -Location $locName -AddressPrefix 10.0.0.0/16 -Subnet $exSubnet -DNSServer 10.0.0.4
     $rule1 = New-AzureRMNetworkSecurityRuleConfig -Name "RDPTraffic" -Description "Allow RDP to all VMs on the subnet" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 3389
     $rule2 = New-AzureRMNetworkSecurityRuleConfig -Name "ExchangeSecureWebTraffic" -Description "Allow HTTPS to the Exchange server" -Access Allow -Protocol Tcp -Direction Inbound -Priority 101 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix "10.0.0.5/32" -DestinationPortRange 443
-    New-AzureRMNetworkSecurityGroup -Name EX2019Subnet -ResourceGroupName $rgName -Location $locName -SecurityRules $rule1, $rule2
-    $vnet=Get-AzureRMVirtualNetwork -ResourceGroupName $rgName -Name EX2019Vnet
-    $nsg=Get-AzureRMNetworkSecurityGroup -Name EX2019Subnet -ResourceGroupName $rgName
-    Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name EX2019Subnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
+    New-AzureRMNetworkSecurityGroup -Name EX2016Subnet -ResourceGroupName $rgName -Location $locName -SecurityRules $rule1, $rule2
+    $vnet=Get-AzureRMVirtualNetwork -ResourceGroupName $rgName -Name EX2016Vnet
+    $nsg=Get-AzureRMNetworkSecurityGroup -Name EX2016Subnet -ResourceGroupName $rgName
+    Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name EX2016Subnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
     ```
 
-7. Create the adVM virtual machine in Azure. adVM is a domain controller for the corp.contoso.com Windows Server AD domain and a DNS server for the virtual machines of the EX2019Vnet virtual network.
+7. Create the adVM virtual machine in Azure. adVM is a domain controller for the corp.contoso.com Windows Server AD domain and a DNS server for the virtual machines of the EX2016Vnet virtual network.
   
     First, fill in the name of your resource group, Azure location, and storage account name and run these commands at the Azure PowerShell command prompt on your local computer to create an Azure virtual machine for adVM.
   
@@ -123,7 +123,7 @@ You can create a new Azure virtual network with a domain controller with Azure P
     # Create an availability set for domain controller virtual machines
     New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name dcAvailabilitySet -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
     # Create the domain controller virtual machine
-    $vnet=Get-AzureRMVirtualNetwork -Name EX2019Vnet -ResourceGroupName $rgName
+    $vnet=Get-AzureRMVirtualNetwork -Name EX2016Vnet -ResourceGroupName $rgName
     $pip = New-AzureRMPublicIpAddress -Name adVM-NIC -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
     $nic = New-AzureRMNetworkInterface -Name adVM-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress 10.0.0.4
     $avSet=Get-AzureRMAvailabilitySet -Name dcAvailabilitySet -ResourceGroupName $rgName 
@@ -155,7 +155,7 @@ It can take a few minutes for Azure to build the virtual machine.
   
 ### Connect to the domain controller virtual machine using local administrator account credentials
 
-1. In the [Azure portal](https://portal.azure.com), click **Resource Groups \> **\<your resource group name\>**\> adVM \> Connect**.
+1. In the [Azure portal](https://portal.azure.com), click **Resource Groups \>** \<your resource group name\> **\> adVM \> Connect**.
     
 2. Run the adVM.rdp file that is downloaded, and then click **Connect**.
     
@@ -206,13 +206,13 @@ After adVM restarts, reconnect to the adVM virtual machine.
 
 Here is the result of Phase 1.
   
-![Phase 1 of the Exchange 2019 dev/test environment in Azure infrastructure services](../../media/aed39f2c-76b4-4b2a-8f49-89d3999c3061.png)
+![Phase 1 of the Exchange 2016 dev/test environment in Azure infrastructure services](../../media/aed39f2c-76b4-4b2a-8f49-89d3999c3061.png)
   
-## Phase 2: Create the Exchange 2019 virtual machine
+## Phase 2: Create the Exchange 2016 virtual machine
 
-In this phase, you create an Exchange 2019 virtual machine in the EX2019VNet virtual network and make it a member of the CORP domain.
+In this phase, you create an Exchange 2016 virtual machine in the EX2016VNet virtual network and make it a member of the CORP domain.
   
-To create the Exchange 2019 virtual machine with Azure PowerShell, first log in to Azure with your Azure account from the Windows PowerShell command prompt (if needed).
+To create the Exchange 2016 virtual machine with Azure PowerShell, first log in to Azure with your Azure account from the Windows PowerShell command prompt (if needed).
   
 ```
 Login-AzureRmAccount
@@ -246,7 +246,7 @@ New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name exAvailabilitySet -L
 # Specify the virtual machine name and size
 $vmName="exVM"
 $vmSize="Standard_D3_v2"
-$vnet=Get-AzureRMVirtualNetwork -Name "EX2019Vnet" -ResourceGroupName $rgName
+$vnet=Get-AzureRMVirtualNetwork -Name "EX2016Vnet" -ResourceGroupName $rgName
 $avSet=Get-AzureRMAvailabilitySet -Name exAvailabilitySet -ResourceGroupName $rgName 
 $vm=New-AzureRMVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avSet.Id
 # Create the NIC for the virtual machine
@@ -264,7 +264,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> This command block uses a standard storage account created in phase 1 to reduce costs for this dev/test environment. For a production Exchange 2019 server, you must use a premium storage account.
+> This command block uses a standard storage account created in phase 1 to reduce costs for this dev/test environment. For a production Exchange 2016 server, you must use a premium storage account.
   
 From the Azure portal, connect to the exVM virtual machine using the credentials of the local administrator account.
   
@@ -279,11 +279,11 @@ Note that you must supply domain account credentials after entering the **Add-Co
   
 Here is the result of Phase 2.
   
-![The completed Exchange 2019 dev/test environment in Azure infrastructure services](../../media/9e1da4e3-f66e-483a-b5bb-d79829a29183.png)
+![The completed Exchange 2016 dev/test environment in Azure infrastructure services](../../media/9e1da4e3-f66e-483a-b5bb-d79829a29183.png)
   
-## Phase 3: Configure Exchange 2019
+## Phase 3: Configure Exchange 2016
 
-In this phase, you configure Exchange 2019 on exVM and test mail delivery between two mailboxes.
+In this phase, you configure Exchange 2016 on exVM and test mail delivery between two mailboxes.
   
 ### Prepare Windows Server AD
 
@@ -305,7 +305,7 @@ In this phase, you configure Exchange 2019 on exVM and test mail delivery betwee
     
 7. Close the remote desktop session with adVM.
     
-### Install Exchange 2019
+### Install Exchange 2016
 
 1. Connect to the exVM virtual machine with the Azure portal using the CORP\\<ADMIN_NAME\> account and password.
     
@@ -327,7 +327,7 @@ In this phase, you configure Exchange 2019 on exVM and test mail delivery betwee
     
 7. Click **I have read and accept the license terms**, and then click **Install**. On the **Installation is Complete** page, click **Finish**.
     
-8. From Internet Explorer, download the latest version of Exchange 2019 at [Updates for Exchange 2019](../../new-features/updates.md).
+8. From Internet Explorer, download the latest version of Exchange 2016 at [Updates for Exchange 2016](../../new-features/updates.md).
     
 9. Click **Save** to store the ISO file in the Downloads folder.
     
@@ -385,11 +385,11 @@ Wait until Exchange setup completes, which can take some time, and exVM restarts
     
 8. On the Outlook sign-in page, use the corp\chris account name with its password. Verify that the reply email message sent from Janet is in the inbox.
     
-You are now ready to test Exchange 2019 features or applications.
+You are now ready to test Exchange 2016 features or applications.
   
 ## Stop and start the virtual machines
 
-Azure virtual machines incur an ongoing cost when they are running. To help minimize the cost of your Exchange 2019 dev/test environment, use these commands to stop the virtual machines:
+Azure virtual machines incur an ongoing cost when they are running. To help minimize the cost of your Exchange 2016 dev/test environment, use these commands to stop the virtual machines:
   
 ```
 $rgName="<your resource group name>"
@@ -407,13 +407,13 @@ Start-AzureRMVM -Name exVM -ResourceGroupName $rgName
 
 ## See also
 
-[Deploy a new installation of Exchange 2019](deploy-new-installations.md)
+[Deploy a new installation of Exchange 2016](deploy-new-installations.md)
   
-[Exchange 2019 system requirements](../../plan-and-deploy/system-requirements.md)
+[Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md)
   
-[Exchange Server 2019](../../exchange-server.md)
+[Exchange Server 2016](../../exchange-server.md)
   
-[What's new in Exchange 2019](../../new-features/new-features.md)
+[What's new in Exchange 2016](../../new-features/new-features.md)
 
 [Cloud adoption Test Lab Guides (TLGs)](https://technet.microsoft.com/library/dn635308.aspx)
 
