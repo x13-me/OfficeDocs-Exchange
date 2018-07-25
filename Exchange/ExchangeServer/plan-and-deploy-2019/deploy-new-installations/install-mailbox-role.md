@@ -1,9 +1,9 @@
 ---
-title: "Install the Exchange 2016 Mailbox role using the Setup wizard"
-ms.author: dstrome
-author: dstrome
+title: "Install Exchange 2019 Mailbox servers using the Setup wizard"
+ms.author: chrisda
+author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/24/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 f1_keywords:
@@ -11,35 +11,33 @@ f1_keywords:
 ms.prod: exchange-server-it-pro
 localization_priority: Critical
 ms.collection: Strat_EX_Admin
-ms.assetid: da690d47-3384-4430-a69e-0cd4d3bf80a7
-description: "Summary: How to use the Exchange Server 2016 Setup wizard to install the Exchange 2016 Mailbox role on a computer"
+ms.assetid: 
+description: "Summary: Learn how to use the Setup wizard in Exchange 2019 to install the Edge Mailbox server role on a computer."
 ---
 
-# Install the Exchange 2016 Mailbox role using the Setup wizard
+# Install Exchange 2019 Mailbox servers using the Setup wizard
 
- **Summary**: How to use the Exchange Server 2016 Setup wizard to install the Exchange 2016 Mailbox role on a computer
+ **Summary**: Learn how to use the Setup wizard in Exchange 2019 to install the Mailbox server role on a computer.
   
-Before you install the Exchange Server 2016 Mailbox role, verify the following prerequisites:
+Before you install an Exchange Server 2019 Mailbox server, verify the following prerequisites:
   
-- Verify the Active Directory, network, computer hardware, operating system, and software requirements at [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites.md).
+- Verify the Active Directory, network, computer hardware, operating system, and software requirements at [Exchange 2019 prerequisites](../../plan-and-deploy-2019/prerequisites.md) and [Exchange 2019 prerequisites](../../plan-and-deploy-2019/prerequisites.md).
     
-- Verify the following permissions for the account that you're using to install Exchange 2016:
+- Verify the following permissions for the account that you're using to install Exchange 2019:
     
-  - **Enterprise Admins group membership**: Required if this is the first Exchange 2016 server in the organization.
+  - **Enterprise Admins group membership**: Required if this is the first Exchange 2019 server in the organization.
     
   - **Schema Admins group membership**: Required if you haven't previously prepared the Active Directory schema.
     
-  - **Exchange Organization role group membership**: Required if you've already prepared the Active Directory schema, or if other Exchange 2016 servers already exist in the organization.
+  - **Exchange Organization role group membership**: Required if you've already prepared the Active Directory schema, or if other Exchange 2019 servers already exist in the organization.
     
-    Note that members of the Delegated Setup role group can also deploy Exchange 2016 servers that have already been provisioned by members of the Organization Management role group.
+    Note that members of the Delegated Setup role group can also deploy Exchange 2019 servers that have already been provisioned by members of the Organization Management role group.
     
-- Verify that you've read the release notes at [Release notes for Exchange 2016](../../release-notes.md).
+- Verify that you've read the release notes at [Release notes for Exchange 2019](../../release-notes-2019.md).
     
-For more information about planning for Exchange 2016, see [Planning and deployment](../../plan-and-deploy/plan-and-deploy.md).
+For more information about planning for Exchange 2019, see [Planning and deployment for Exchange 2019](../../plan-and-deploy-2019/plan-and-deploy-2019.md).
   
-To install the Exchange 2016 Edge Transport role on a computer, see [Install the Exchange 2016 Edge Transport role using the Setup wizard](install-edge-transport-role.md). Note that you can't install the Edge Transport role on a Mailbox server.
-  
-For information about tasks to do after you've installed Exchange 2016, see [Exchange 2016 post-installation tasks](../../plan-and-deploy/post-installation-tasks/post-installation-tasks.md).
+To install the Edge Transport role on a computer, see [Install Exchange 2019 Edge Transport servers using the Setup wizard](install-edge-transport-role.md). Note that you can't install the Edge Transport role on a Mailbox server.
   
 ## What do you need to know before you begin?
 
@@ -48,17 +46,17 @@ For information about tasks to do after you've installed Exchange 2016, see [Exc
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
 > [!CAUTION]
-> After you install Exchange 2016 on a server, you must not change the server name. Renaming a server after you have installed an Exchange 2016 server role is not supported.
+> After you install Exchange on a server, you must not change the server name. Renaming a server after you have installed an Exchange server role is not supported.
   
-## Install Exchange Server 2016
+## Install Exchange Server 2019
 
-1. Use the information in [Updates for Exchange 2016](../../new-features/updates.md) to download the latest version of Exchange 2016 on the computer where you want to install Exchange.
+1. Use the information in [Updates for Exchange 2019](../../new-features-2019/updates.md) to download the latest version of Exchange 2019 on the computer where you want to install Exchange.
     
-2. In File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. In the resulting virtual DVD drive that appears, start Exchange 2016 Setup by double-clicking `Setup.exe`.
+2. In File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. In the resulting virtual DVD drive that appears, start Exchange 2019 Setup by double-clicking `Setup.exe`.
     
-3. The Exchange Server 2016 Setup wizard opens. On the **Check for Updates?** page, choose one of the following options, and then click **Next** to continue: 
+3. The Exchange Server 2019 Setup wizard opens. On the **Check for Updates?** page, choose one of the following options, and then click **Next** to continue: 
     
-  - **Connect to the Internet and check for updates**: We recommend this option, which searches for updates to the version of Exchange 2016 that you're installing (it doesn't detect newer Exchange 2016 Cumulative Updates). This option takes you to the **Downloading Updates** page that searches for updates. Click **Next** to continue.
+  - **Connect to the Internet and check for updates**: We recommend this option, which searches for updates to the version of Exchange 2019 that you're installing (it doesn't detect newer Exchange 2019 Cumulative Updates). This option takes you to the **Downloading Updates** page that searches for updates. Click **Next** to continue.
     
   - **Don't check for updates right now**
     
@@ -68,7 +66,7 @@ For information about tasks to do after you've installed Exchange 2016, see [Exc
 
     ![Exchange 2016 Setup, Copying Files page](../../media/78813be2-745d-4a58-8da8-883c43aa2650.png)
   
-5. On the **Introduction** page, we recommend that you visit the Exchange Server 2016 deployment planning links if you haven't already reviewed them. Click **Next** to continue.
+5. On the **Introduction** page, we recommend that you visit the Exchange Server 2019 deployment planning links if you haven't already reviewed them. Click **Next** to continue.
 
     ![Exchange 2016 Setup, Introduction page](../../media/9f605305-979a-4667-a042-38854677cf0b.png)
   
@@ -92,7 +90,7 @@ For information about tasks to do after you've installed Exchange 2016, see [Exc
     
     - **Automatically install Windows Server roles and features that are required to install Exchange**: Select this option to have the Setup wizard install the required Windows prerequisites. You might need to reboot the computer to complete the installation of some Windows features. If you don't select this option, you need to install the Windows features manually.
     
-      **Note**: Selecting this option installs only the Windows features that are required by Exchange. You need to install other prerequisites manually. For more information, see [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites.md).
+      **Note**: Selecting this option installs only the Windows features that are required by Exchange. You need to install other prerequisites manually. For more information, see [Exchange 2019 prerequisites](../../plan-and-deploy-2019/prerequisites.md).
     
     Click **Next** to continue.
 
@@ -128,8 +126,7 @@ For information about tasks to do after you've installed Exchange 2016, see [Exc
   
     After you resolve the errors, click **Retry** to run the prerequisite checks again. You can fix some errors without exiting Setup, while the fix for other errors requires you to restart the computer. If you restart the computer, you need to start over at Step 1.
     
-    When no more errors are detected on the **Readiness Checks** page, the **Retry** button changes to **Install** so you can continue. Be sure to review any warnings, and then click **Install** to install Exchange 2016.
-
+    When no more errors are detected on the **Readiness Checks** page, the **Retry** button changes to **Install** so you can continue. Be sure to review any warnings, and then click **Install** to install Exchange 2019.
 
     ![Exchange 2016 Setup, Readiness Check page with errors resolved](../../media/a9aca4d0-19ac-4783-8071-cdd435b1658d.png)
   
@@ -143,12 +140,8 @@ For information about tasks to do after you've installed Exchange 2016, see [Exc
   
 ## Next steps
 
-- To verify that you've successfully installed Exchange 2016, see [Verify an Exchange 2016 installation](../../plan-and-deploy/post-installation-tasks/verify-installation.md).
+- To verify that you've successfully installed Exchange 2019, see [Verify an Exchange 2019 installation](../../plan-and-deploy-2019/post-installation-tasks/verify-installation.md).
  
-- Complete your deployment by performing the tasks provided in [Exchange 2016 post-installation tasks](../../plan-and-deploy/post-installation-tasks/post-installation-tasks.md).
+- Complete your deployment by performing the tasks provided in [Exchange 2019 post-installation tasks](../../plan-and-deploy-2019/post-installation-tasks/post-installation-tasks.md).
 
 - Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-    
-- Did you find what you're looking for? Please take a minute to [send us feedback](mailto:ExchangeHelpFeedback@microsoft.com&subject=Exchange%202016%20help%20feedback&Body=Thanks%20for%20taking%20the%20time%20to%20send%20us%20feedback!%20We%20strive%20to%20respond%20to%20every%20message%20we%20receive,%20even%20though%20it%20might%20take%20us%20a%20while.%20Let%20us%20know%20what%20you%20think%20about%20Exchange%20content:%20What%20are%20we%20doing%20right%3F%20How%20can%20we%20make%20help%20better%3F%0APlease%20note%20that%20we're%20unable%20to%20respond%20to%20requests%20for%20support%20submitted%20via%20this%20email%20address.%20If%20you%20need%20help,%20please%20contact%20Exchange%20Server%20support%20at%20http://go.microsoft.com/fwlink/p/%3FLinkId=402506.%0AThanks!%0AThe%20Exchange%20Server%20Content%20Publishing%20team) about the information you were hoping to find.
-    
-

@@ -1,7 +1,7 @@
 ---
-title: "Install Exchange 2016 using unattended mode"
-ms.author: dstrome
-author: dstrome
+title: "Install Exchange 2019 using unattended mode"
+ms.author: chrisda
+author: chrisda
 manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
@@ -9,15 +9,15 @@ ms.topic: get-started-article
 ms.prod: exchange-server-it-pro
 localization_priority: Priority
 ms.collection: Strat_EX_Admin
-ms.assetid: 386465e9-41da-4e26-9816-b3b69be1f8bf
+ms.assetid:
 description: "Summary: Learn how to perform an unattended setup of Exchange Server 2016 from the command line."
 ---
 
-# Install Exchange 2016 using unattended mode
+# Install Exchange 2019 using unattended mode
 
- **Summary**: Learn how to perform an unattended setup of Exchange Server 2016 from the command line.
+ **Summary**: Learn how to perform an unattended setup of Exchange Server 2019 from the command line.
   
-For more information about planning for Exchange 2016, see [Planning and deployment](../../plan-and-deploy/plan-and-deploy.md).
+For more information about planning for Exchange 2019, see [Planning and deployment for Exchange 2019](../../plan-and-deploy-2019/plan-and-deploy-2019.md).
   
 We recommend that the Edge Transport role be installed in a perimeter network outside of your organization's internal Active Directory forest. While you can install the Edge Transport server role on a domain-joined computer, doing so will only enable domain management of Windows features and settings. The Edge Transport role itself doesn't use Active Directory. Instead, it uses the Active Directory Lightweight Directory Services (AD LDS) Windows feature to store configuration and recipient information. For more information about the Edge Transport role, see [Edge Transport servers](../../architecture/edge-transport-servers/edge-transport-servers.md).
   
@@ -39,7 +39,7 @@ The following information applies to both the Mailbox and Edge Transport server 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
 > [!CAUTION]
-> After you install Exchange 2016 on a server, you must not change the server name. Renaming a server after you have installed an Exchange 2016 server role is not supported.
+> After you install Exchange on a server, you must not change the server name. Renaming a server after you have installed an Exchange server role is not supported.
   
 The following information applies to the Exchange 2016 Mailbox server role.
   

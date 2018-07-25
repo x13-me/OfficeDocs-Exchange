@@ -108,7 +108,7 @@ Because this is a device management solution, there is no native capability to c
   
 An Office 365 global admin must complete the following steps to activate and set up MDM for Office 365. See [Set up Mobile Device Management (MDM) in Office 365](https://support.office.com/article/Set-up-Mobile-Device-Management-MDM-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include: 
   
-1. Activating MDM for Office 365 by following steps in the Security &amp; Compliance Center.
+1. Activating MDM for Office 365 by following steps in the Security & Compliance Center.
     
 2. Setting up MDM for Office 365 by, for example, creating an APNs certificate to manage iOS devices, and by adding a Domain Name System (DNS) record for your domain to support Windows phones.
     

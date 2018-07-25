@@ -1,9 +1,9 @@
 ---
 title: "Install the Exchange 2016 Mailbox role using the Setup wizard"
-ms.author: dstrome
-author: dstrome
+ms.author: chrisda
+author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/24/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 f1_keywords:
@@ -21,7 +21,7 @@ description: "Summary: How to use the Exchange Server 2016 Setup wizard to insta
   
 Before you install the Exchange Server 2016 Mailbox role, verify the following prerequisites:
   
-- Verify the Active Directory, network, computer hardware, operating system, and software requirements at [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites.md).
+- Verify the Active Directory, network, computer hardware, operating system, and software requirements at [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites.md) and [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites.md).
     
 - Verify the following permissions for the account that you're using to install Exchange 2016:
     
@@ -48,7 +48,7 @@ For information about tasks to do after you've installed Exchange 2016, see [Exc
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
 > [!CAUTION]
-> After you install Exchange 2016 on a server, you must not change the server name. Renaming a server after you have installed an Exchange 2016 server role is not supported.
+> After you install Exchange on a server, you must not change the server name. Renaming a server after you have installed an Exchange server role is not supported.
   
 ## Install Exchange Server 2016
 

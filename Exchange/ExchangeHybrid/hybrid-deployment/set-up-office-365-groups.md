@@ -74,7 +74,7 @@ Before you start, make sure that you've done the following:
 
 The primary SMTP domain of an Office 365 Group is called a group domain. By default, the default accepted domain in your organization is chosen as the group domain. If you want to add a dedicated groups domain, you can add a domain using the following steps. For more information about multi-domain support for Office 365 Groups, check out [Multi-domain support for Office 365 Groups](https://support.office.com/en-us/article/Multi-domain-support-for-Office-365-Groups-Admin-help-7cf5655d-e523-4bc3-a93b-3ccebf44a01a)
   
-1. Add your new domain to your Office 365 organization. If you need help adding a domain to Office 365, check out [Add users and domains to Office 365](https://support.office.com/en-us/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611?ui=en-US&amp;rs=en-US&amp;ad=US)
+1. Add your new domain to your Office 365 organization. If you need help adding a domain to Office 365, check out [Add users and domains to Office 365](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
     
 2. Add the group domain as an accepted domain in your on-premises Exchange organization using the following command. This is needed so that the hybrid Send connector can be used to deliver outbound mail to the group domain in Office 365.
     
@@ -88,7 +88,7 @@ The primary SMTP domain of an Office 365 Group is called a group domain. By defa
 |
 |**DNS record name**|**DNS record type**|**DNS record value**|
 |:-----|:-----|:-----|
-|groups.contoso.com  <br/> |MX  <br/> |groups-contoso-com.mail.protection.outlook.com  <br/> > [!NOTE]> The format of this DNS record value is  _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create Office 365 DNS records](https://support.office.com/en-us/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67?ui=en-US&amp;rs=en-US&amp;ad=US).           |
+|groups.contoso.com  <br/> |MX  <br/> |groups-contoso-com.mail.protection.outlook.com  <br/> > [!NOTE]> The format of this DNS record value is  _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create Office 365 DNS records](https://support.office.com/article/77f90d4a-dc7f-4f09-8972-c1b03ea85a67).           |
 |autodiscover.groups.contoso.com  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
    
     > [!CAUTION]

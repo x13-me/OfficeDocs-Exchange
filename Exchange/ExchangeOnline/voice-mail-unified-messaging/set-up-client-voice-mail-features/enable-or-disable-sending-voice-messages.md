@@ -43,7 +43,7 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
     
 3. On the **UM dial plan** page, click **Configure**.
     
-4. In **Transfer &amp; search**, under **Allow callers to**, select **Leave voice messages without ringing a user's phone** to allow sending voice messages. If you want to prevent sending voice messages for users, clear this setting. 
+4. In **Transfer & search**, under **Allow callers to**, select **Leave voice messages without ringing a user's phone** to allow sending voice messages. If you want to prevent sending voice messages for users, clear this setting. 
     
 5. Click **Save**.
     

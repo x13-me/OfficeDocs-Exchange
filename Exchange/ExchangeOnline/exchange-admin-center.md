@@ -42,7 +42,7 @@ Here are the features you'll find in the left-hand navigation.
 |**Dashboard** <br/> |An overview of the admin center.  <br/> |
 |**Recipients** <br/> |View and manage your mailboxes, groups, resource mailboxes, contacts, shared mailboxes, and mailbox migrations.  <br/> |
 |**Permissions** <br/> |Manage administrator roles, user roles, and Outlook Web App policies.  <br/> |
-|**Compliance management** <br/> |Manage In-Place eDiscovery &amp; Hold, auditing, data loss prevention (DLP), retention policies, retention tags, and journal rules.  <br/> |
+|**Compliance management** <br/> |Manage In-Place eDiscovery & Hold, auditing, data loss prevention (DLP), retention policies, retention tags, and journal rules.  <br/> |
 |**Organization** <br/> |Manage organization sharing and apps for Outlook  <br/> |
 |**Protection** <br/> |Manage malware filters, connection filters, content filters, outbound spam, and quarantine for your organization.  <br/> |
 |**Mail flow** <br/> |Manage rules, message tracing, accepted domains, remote domains, and connectors.  <br/> |

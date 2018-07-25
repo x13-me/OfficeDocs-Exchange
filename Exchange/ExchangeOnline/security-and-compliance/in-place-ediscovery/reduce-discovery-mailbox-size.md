@@ -111,7 +111,7 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
   Start-MailboxSearch "Search results from 2010"
   ```
 
-  - **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery &amp; hold**. Select the search created in the previous step, click **Search**![Search icon](../../media/ITPro_EAC_.gif), and then click **Estimate search results**.
+  - **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search created in the previous step, click **Search**![Search icon](../../media/ITPro_EAC_.gif), and then click **Estimate search results**.
     
 3. If necessary, adjust the date range to increase or decrease the amount of search results that are returned. If you change the date range, run the search again to get a new estimate of the results. Consider changing the name of the search to reflect the new date range.
     
@@ -127,7 +127,7 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
   Start-MailboxSearch "Search results from 2010"
   ```
 
-  - **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery &amp; hold**. Select the search, click **Search**![Search icon](../../media/ITPro_EAC_.gif), and then click **Copy search results**.
+  - **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search, click **Search**![Search icon](../../media/ITPro_EAC_.gif), and then click **Copy search results**.
     
     For more information, see [Copy eDiscovery Search Results to a Discovery Mailbox](http://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx).
     
@@ -152,7 +152,7 @@ You can use the Shell or the EAC to delete an eDiscovery search.
   Remove-MailboxSearch -Identity <name of search>
   ```
 
-- **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery &amp; hold**. Select the search that you want to delete, and then click **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+- **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search that you want to delete, and then click **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
     
 ## How do you know this worked?
 <a name="delete"> </a>
