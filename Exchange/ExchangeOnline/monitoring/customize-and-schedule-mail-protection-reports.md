@@ -32,3 +32,7 @@ To get started customizing and downloading reports, see the following resources:
 
 [Smart reports and insights in the Security & Compliance Center](https://support.office.com/article/e3e95f68-36e9-4256-bcca-78fe7fe5ea5d)
 
+[View email security reports in the Security & Compliance Center](https://support.office.com/article/3a137e28-1174-42d5-99af-f18868b43e86)
+
+[Mail flow insights in the Office 365 Security & Compliance Center](https://support.office.com/article/beb6acaa-6016-4d54-ba7e-3d6d035e2b46)
+
