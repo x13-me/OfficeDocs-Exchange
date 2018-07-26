@@ -10,16 +10,90 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: f2fc8680-0c7c-4a29-b8f5-d77404fec280
-description: "Summary: How to allow people who aren't members of the Organization Management role group to install Exchange."
+description: "Summary: Learn how to configure Exchange 2016 server objects in Active Directory so users who aren't Exchange administrators can install Exchange 2016 servers."
 ---
 
-# Delegate the installation of an Exchange 2016 server
+# Delegate the installation of Exchange 2016 servers
 
- **Summary**: How to allow people who aren't members of the Organization Management role group to install Exchange.
+ **Summary**: Learn how to configure Exchange 2016 server objects in Active Directory so users who aren't Exchange administrators can install Exchange 2016 servers.
   
-Exchange Server 2016 lets you delegate the installation of Exchange servers to people who aren't members of the Exchange 2016 Organization Management role group. This is often helpful in large companies where the people who install and set up servers aren't the same people who manage services, like Exchange. If this sounds like something you want to do, this topic's for you.
+In large companies, people who install and configure new Windows servers often aren't Exchange administrators. In Exchange 2016, these users can still install Exchange on Windows servers _after_ an Exchange administrator *provisions* the Exchange server in Active Directory. Provisioning an Exchange server makes all of the required changes to Active Directory independently of the actual installation of Exchange 2016 on a computer. An Exchange administrator can provision a new server in Active Directory hours or even days before Exchange is installed on the new computer.
+
+After an Exchange administrator provisions the server, the only requirement for the user that's installing Exchange is membership in the [Delegated Setup](https://technet.microsoft.com/library/dd876881(v=exchg.150).aspx) role group. The Delegated Setup role group only allows members to install the Exchange Server software on provisioned servers. If this sounds like something you want to do, then this topic is for you.
+    
+## What do you need to know before you begin?
+
+- Estimated time to complete this procedure: Less than 10 minutes.
+
+- You can only provision an Exchange 2016 server from the command line (Unattended Setup). You can't use the Setup Wizard.
+
+- You can't provision the first Exchange 2016 server in your organization for the installation of Exchange by a delegate. An Exchange administrator needs to install the first Exchange 2016 server in the organization. After that, you can provision _additional_ Exchange 2016 servers so users who aren't Exchange administrators can install _additional_ Exchange servers using delegated setup.
+
+- A delegated user can't uninstall an Exchange server. To uninstall an Exchange server, you need to be an Exchange administrator.
+
+- Download and use the latest available release of Exchange 2016 from [Updates for Exchange 2016](../../new-features/updates.md).
+
+- You need to be a member of the [Organization Management](https://technet.microsoft.com/library/dd335087(v=exchg.150).aspx) role group to provision an Exchange server.
+
+- Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+
+
+## Use the Command Prompt to provision Exchange 2016 servers
+
+You can do the following steps on the Windows server where the delegated user is eventually going to install Exchange, or from another computer that's a member of the domain.
+
+1. In File Explorer, right-click on the Exchange 2016 ISO image file that you downloaded, and then select **Mount**. Note the virtual DVD drive letter that's assigned.
   
-Normally, when Exchange is installed, the people installing it need to be members of the [Organization Management](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) role group. This is because when Exchange is installed, changes are made to Active Directory, and only Exchange administrators, who are members of the Organization Management role group, can make those changes. The following list shows the changes that are made: 
+2. Opwn a Windows Command Prompt window. For example:
+
+    - Press the Windows key + 'R' to open the **Run** dialog, type cmd.exe, and then press **OK**.
+
+    - Press **Start**. In the **Search** box, type **Command Prompt**, then in the list of results, select **Command Prompt**.
+
+3. In the Command Prompt window, run one of the following commands based on where you did the previous steps:
+    
+  - **You're running Setup on the computer that's being provisioned**:
+    
+    ```
+    <Virtual DVD drive letter>:\Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
+    ```
+
+    For example:
+
+    ```
+    E:\Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
+    ```
+
+  - **You're running Setup on another computer**:
+    
+    ```
+    <Virtual DVD drive letter>:\Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerms
+    ```
+
+    For example:
+
+    ```
+    E:\Setup.exe /NewProvisionedServer:Mailbox01.contoso.com /IAcceptExchangeServerLicenseTerms
+    ```
+
+4. Add the appropriate users to the Delegated Setup role group so they can install Exchange on the provisioned server. To add users to a role group, see [Add members to a role group](../../permissions/role-group-members.md#add).
+    
+  
+## How do you know this worked?
+
+After you've completed the previous steps, a delegate can install Exchange 2016 on the provisioned server as described in [Install the Exchange 2016 Mailbox role using the Setup wizard](install-mailbox-role.md).
+
+To verfiy that you've successfully provisioned an Exchange 2016 server for a delegate installation of Exchange, do the following steps:
+  
+1. Open Active Directory Users & Computers.
+    
+2. Select **Microsoft Exchange Security Groups**, double-click **Exchange Servers**, and then select the **Members** tab.
+    
+3. On the **Members** tab, verify the server that you provisioned is listed as a member of the security group. A member of the Delegated Setup role group can now install Exchange on the server.
+    
+## More information
+
+The changes in Active Directory that are made by the typical installation of or the provisioning of an Exchange server are desribed in the following list: 
   
 - A server object is created in the **CN=Servers,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=\<Organization Name\>,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\<Root Domain\>** configuration partition.
     
@@ -33,73 +107,10 @@ Normally, when Exchange is installed, the people installing it need to be member
     
   - Deny CreateChild and DeleteChild permissions for Exchange Public Folder Store objects
     
-    > [!NOTE]
-    > Public folders are administered at an organizational level; therefore, the creation and deletion of public folder stores is restricted to Exchange administrators.
+     **Note**: Public folders are administered at an organizational level; therefore, the creation and deletion of public folder stores is restricted to Exchange administrators.
   
 - The Active Directory computer account for the server is added to the Exchange Servers group.
     
-- The server is added as a provisioned server in the Exchange Admin Center.
-    
-In large companies, the people who install and set up new servers often aren't Exchange administrators. To enable them to install Exchange, an Exchange administrator can *provision* the server in Active Directory. When a server is provisioned, all of the changes needed for the new Exchange server to function are made to Active Directory separately from the actual installation of Exchange on a computer. An Exchange administrator can provision a new server in Active Directory hours or even days before Exchange is installed on the new computer. After a server has been provisioned, the person doing the installation needs only to be a member of the [Delegated Setup](http://technet.microsoft.com/library/49362059-e53f-4135-ad2b-9edfbfff9a1e.aspx) role group to install Exchange. The Delegated Setup role group only allows members to install provisioned servers.
-  
-Keep the following in mind when thinking about using delegated setup:
-  
-- At least one Exchange 2016 server has to already be installed before you can delegate the installation of additional servers. The person who installs the first server needs to be an Exchange administrator.
-    
-- A delegated user can't uninstall an Exchange server. To uninstall an Exchange server, you need to be an Exchange administrator.
-    
-## How do I provision an Exchange 2016 server?
+- The server is added as a provisioned server in the Exchange admin center (EAC).
 
-To provision a server for Exchange, you need to use Exchange 2016 command-line Setup. If you aren't very familiar with the Windows Command Prompt, don't worry. This topic steps you through exactly what you need to do. Before we start, here are a couple of things to keep in mind:
-  
-- You need to be a member of the Organization Management role group to provision a server.
-    
-- You should have the latest release of Exchange 2016. You can get the download link from [Install the Exchange 2016 Mailbox role using the Setup wizard](install-mailbox-role.md).
-    
-The command that you need to use to provision the server depends on whether you're running Setup from the computer you're provisioning or whether you're running it from another computer. Choose the command in the following steps that matches where you're running Setup:
-  
-1. Press the Windows key + 'R' to open the **Run** window.
-    
-2. In **Open**, typecmd.exe, and then press Enter to open a **Windows Command Prompt**.
-    
-3. Change directories to where you downloaded and expanded the Exchange 2016 install files. If the install files are located in  `C:\Downloads\Exchange 2016`, use the following command.
-    
-  ```
-  CD "C:\Downloads\Exchange 2016"
-  ```
-
-4. Choose the command that matches where you're running Setup:
-    
-  - **If you're running Setup on the computer that's being provisioned**, run the following command:
-    
-    ```
-    Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
-    ```
-
-  - **If you're running Setup on another computer**, run the following command:
-    
-    ```
-    Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerms
-    ```
-
-5. After you provision the server, you need to make sure that you've added the users who should be able to install Exchange on provisioned servers to the Delegated Setup role group. To see how to add users to a role group, see [Add members to a role group](../../permissions/role-group-members.md#add).
-    
-When you're done with these steps, the computer will be ready for Exchange to be installed. Exchange 2016 can be installed on a provisioned server by using the steps in [Install the Exchange 2016 Mailbox role using the Setup wizard](install-mailbox-role.md).
-  
-## How do I know this worked?
-
-To make sure the server was properly provisioned for Exchange, you can do the following:
-  
-1. Go to **Start** \> **Administrative Tools**, and then open **Active Directory Users and Computers**.
-    
-2. Select **Microsoft Exchange Security Groups**, double-click **Exchange Servers**, and then select the **Members** tab.
-    
-3. On the **Members** tab, check to see if the server you just provisioned is listed as a member of the security group.
-    
-If your server is listed as a member of the Exchange Servers security group, it was properly provisioned. Someone who's a member of the Delegated Setup role group can now install Exchange on that server.
-  
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-  
-Did you find what you're looking for? Please take a minute to [send us feedback](mailto:ExchangeHelpFeedback@microsoft.com&subject=Exchange%202016%20help%20feedback&Body=Thanks%20for%20taking%20the%20time%20to%20send%20us%20feedback!%20We%20strive%20to%20respond%20to%20every%20message%20we%20receive,%20even%20though%20it%20might%20take%20us%20a%20while.%20Let%20us%20know%20what%20you%20think%20about%20Exchange%20content:%20What%20are%20we%20doing%20right%3F%20How%20can%20we%20make%20help%20better%3F%0APlease%20note%20that%20we're%20unable%20to%20respond%20to%20requests%20for%20support%20submitted%20via%20this%20email%20address.%20If%20you%20need%20help,%20please%20contact%20Exchange%20Server%20support%20at%20http://go.microsoft.com/fwlink/p/%3FLinkId=402506.%0AThanks!%0AThe%20Exchange%20Server%20Content%20Publishing%20team) about the information you were hoping to find.
-  
-
+Only members of the Organization Management role group in Exchange have the permissions required to make these changes to Active Directory.

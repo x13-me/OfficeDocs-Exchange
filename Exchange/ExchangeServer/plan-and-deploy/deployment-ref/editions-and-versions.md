@@ -9,7 +9,7 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b563b543-fb3f-4465-9a54-cbfd680aee1f
-description: "Microsoft Exchange Server 2016 is available in two server editions: Standard Edition and Enterprise Edition. Enterprise Edition can scale to 100 mounted databases per server; Standard Edition is limited to 5 mounted databases per server. A mounted database is a database that is in use. A mounted database can be an active mailbox database that is mounted for use by clients, or a passive mailbox database that is mounted in recovery for log replication and replay. While you can create more databases than the limits described above, you can only mount the maximum number specified above. The recovery database does not count towards this limit."
+description: "Learn about the different versions of Exchange 2016."
 ---
 
 # Exchange 2016 editions and versions
@@ -26,11 +26,11 @@ As mentioned earlier, you can't use product keys to downgrade from Enterprise Ed
 
 For a list of Exchange 2016 versions and information on how to download and upgrade to the latest version of Exchange 2016, see the following topics:
   
-- [Exchange 2016 Build Numbers and Release Dates](http://technet.microsoft.com/library/6a8091d0-4f19-4ae7-9e44-fd1c9f5fbe19.aspx)
+- [Exchange Server Updates: build numbers and release dates](https://technet.microsoft.com/library/hh135098(v=exchg.150).aspx)
     
 - [Install the Exchange 2016 Mailbox role using the Setup wizard](../../plan-and-deploy/deploy-new-installations/install-mailbox-role.md)
     
-To view the build number for the version of Exchange 2016 that you're running, run the following command in the Exchange Management Shell.
+To view the build number for the version of Exchange 2016 that you're running, run the following command in the Exchange Management Shell:
   
 ```
 Get-ExchangeServer | Format-List name,edition,admindisplayversion

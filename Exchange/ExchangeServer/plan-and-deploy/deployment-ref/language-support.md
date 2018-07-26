@@ -9,7 +9,7 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 934686fb-53a2-4b13-aaf0-498e4011d61a
-description: "Microsoft Exchange Server 2016 has enhanced language support for both servers and clients. This topic lists the languages that are available for both servers and clients in Exchange 2016."
+description: "Learn about the languages that are supported for servers and clients in Exchange 2016."
 ---
 
 # Exchange 2016 language support

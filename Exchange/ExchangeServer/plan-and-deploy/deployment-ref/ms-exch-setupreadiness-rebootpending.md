@@ -34,5 +34,3 @@ If, after restarting your computer and reinstalling any recent programs or Windo
   
 > [!CAUTION]
 > Even though it can be tempting to do so, we strongly recommend that you don't attempt to work around this issue by manually deleting or changing keys or values in the Windows Registry. While doing so might fix this issue now, it might cause issues later on. This is especially important if the failed installation was a Windows update.
-  
-

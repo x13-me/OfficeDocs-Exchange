@@ -10,12 +10,12 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 
-description: "Summary: Learn how to configure Exchange 2019 server objects in Active Directory so users who aren't Exchange administrators can install additional Exchange 2019 servers"
+description: "Summary: Learn how to configure Exchange 2019 server objects in Active Directory so users who aren't Exchange administrators can install Exchange 2019 servers"
 ---
 
 # Delegate the installation of Exchange 2019 servers
 
- **Summary**: Learn how to configure Exchange 2019 server objects in Active Directory so users who aren't Exchange administrators can install additional Exchange 2019 servers.
+ **Summary**: Learn how to configure Exchange 2019 server objects in Active Directory so users who aren't Exchange administrators can install Exchange 2019 servers.
   
 In large companies, people who install and configure new Windows servers often aren't Exchange administrators. In Exchange 2019, these users can still install Exchange on Windows servers _after_ an Exchange administrator *provisions* the Exchange server in Active Directory. Provisioning an Exchange server makes all of the required changes to Active Directory independently of the actual installation of Exchange 2019 on a computer. An Exchange administrator can provision a new server in Active Directory hours or even days before Exchange is installed on the new computer.
 

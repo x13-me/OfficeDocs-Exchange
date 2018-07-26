@@ -1,5 +1,5 @@
 ---
-title: "Autodiscover service"
+title: "Autodiscover service in Exchange Server"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
@@ -9,10 +9,10 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b03c0f21-cbc2-4be8-ad03-73a7dac16ffc
-description: "Summary: Learn about the Autodiscover service in Exchange Server, which lets client applications and users configure themselves with minimal input."
+description: "Summary: Learn about the Autodiscover service in Exchange 2016 and Exchange 2019, which lets client applications and users configure themselves with minimal input."
 ---
 
-# Autodiscover service
+# Autodiscover service in Exchange Server
 
  **Summary**: Learn about the Autodiscover service in Exchange 2016 and Exchange 2019, which lets client applications and users configure themselves with minimal input.
   

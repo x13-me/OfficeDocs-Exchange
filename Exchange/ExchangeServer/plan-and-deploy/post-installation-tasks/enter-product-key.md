@@ -58,7 +58,7 @@ If you want to enter a product key on an Exchange 2016 server, you're in the rig
   
 ## Use the EAC to enter the product key
 
-1. Open the EAC by browsing to https://\< _Client Access server name_\>/ecp.
+1. Open the EAC by browsing to https://\<_Client Access server name_\>/ecp.
     
 2. Enter your user name and password in **Domain\user name** and **Password**, and then click **Sign in**.
     
