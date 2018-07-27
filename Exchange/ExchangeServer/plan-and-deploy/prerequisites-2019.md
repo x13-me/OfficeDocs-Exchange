@@ -48,7 +48,7 @@ After you've prepared your environment for Exchange 2019, use the Exchange Deplo
 
 ## Active Directory preparation
 
-You can use any member of the Active Directory domain to prepare Active Directory for Exchange 2019. The computer that you want to use has the following requirements:
+You can use any member of the Active Directory domain to prepare Active Directory for Exchange 2019. The computer has the following requirements:
 
 1. Depending on the version of Windows, the computer requires the following software:
 

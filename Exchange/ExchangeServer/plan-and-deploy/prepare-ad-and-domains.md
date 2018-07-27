@@ -1,31 +1,35 @@
 ---
 title: "Prepare Active Directory and domains for Exchange 2016"
-ms.author: dstrome
-author: dstrome
+ms.author: chrisda
+author: chrisda
 manager: serdars
-ms.date: 6/19/2018
+ms.date: 7/26/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: exchange-server-it-pro
 localization_priority: Critical
 ms.collection: Strat_EX_Admin
 ms.assetid: f895e1ce-d766-4352-ac46-ec959c9954a9
-description: "Summary: Learn how to prepare Active Directory for Exchange 2016."
+description: "Summary: Learn how to prepare Active Directory for Exchange 2016 or Exchange 2019."
 ---
 
-# Prepare Active Directory and domains for Exchange 2016
+# Prepare Active Directory and domains for Exchange
 
- **Summary**: Learn how to prepare Active Directory for Exchange 2016.
+ **Summary**: Learn how to prepare Active Directory for Exchange 2016 or Exchange 2019.
 
-Exchange uses Active Directory to store information about mailboxes and the configuration of Exchange servers in the organization. Before you install Exchange Server 2016 (even if you have earlier versions of Exchange Server installed in your organization), you need to prepare your Active Directory forest and its domains for Exchange 2016. There are two ways to do this:
+Exchange uses Active Directory to store information about mailboxes and the configuration of Exchange servers in the organization. Before you install Exchange Server 2016 or Exchange Server 2019 (even if you have earlier versions of Exchange installed in your organization), you need to prepare your Active Directory forest and its domains for the new version of Exchange. There are two ways to do this:
 
-- **Let the Exchange Setup wizard do it for you**: If you don't have a large Active Directory deployment, and you don't have a separate team that manages Active Directory, we recommend using the Setup wizard. Your account needs to be a member of both the Schema Admins and Enterprise Admins security groups. For more information about how to use the Setup wizard, check out [Install Exchange 2016 Mailbox servers using the Setup wizard](deploy-new-installations/install-mailbox-role.md).
+- **Let the Exchange Setup wizard do it for you**: If you don't have a large Active Directory deployment, and you don't have a separate team that manages Active Directory, we recommend using the Setup wizard. Your account needs to be a member of both the Schema Admins and Enterprise Admins security groups. For more information about how to use the Setup wizard, check out [Install Exchange 2019 Mailbox servers using the Setup wizard](deploy-new-installations/install-mailbox-role.md).
 
 - **Follow the steps in this topic**: If you have a large Active Directory deployment, or if a separate team manages Active Directory, this topic is for you. Following the steps in this topic gives you much more control over each stage of preparation, and who can do each step. For example, Exchange administrators might not have the required permissions to extend the Active Directory schema.
  
-For details on new schema classes and attributes that Exchange 2016 adds to Active Directory, including those made by Cumulative Updates (CUs), see [Exchange 2016 Active Directory schema changes](active-directory/ad-schema-changes.md).
+For details on new schema classes and attributes that Exchange 2019 adds to Active Directory, including those made by Cumulative Updates (CUs), see:
 
-For details about what's happening when Active Directory is being prepared for Exchange, see [What changes in Active Directory when Exchange 2016 is installed?](active-directory/ad-changes.md).
+- [Exchange 2016 Active Directory schema changes](active-directory/ad-schema-changes.md).
+
+- [Exchange 2019 Active Directory schema changes](active-directory/ad-schema-changes-2019.md).
+
+For details about what's happening when Active Directory is being prepared for Exchange, see [What changes in Active Directory when Exchange is installed?](active-directory/ad-changes.md).
 
  If you aren't familiar with Active Directory forests or domains, check out [Active Directory Domain Services Overview](https://go.microsoft.com/fwlink/p/?LinkId=399226).
 
@@ -33,7 +37,7 @@ For details about what's happening when Active Directory is being prepared for E
 
 - Estimated time to complete: 10-15 minutes or more (not including Active Directory replication), depending on organization size and the number of child domains.
 
-- The computer that you use for these procedures needs to meet the [Exchange 2016 system requirements](system-requirements.md). Also, your Active Directory needs to meet the requirements in the [Network and directory servers](system-requirements.md#network-and-directory-servers) section in that same topic.
+- The computer that you use for these procedures needs to meet the system requirements for [Exchange 2016](system-requirements.md) or [Exchange 2019](system-requirements-2019.md). Also, your Active Directory needs to meet the requirements in the "Network and directory servers" sections in those topics.
 
 - If your organization has multiple Active Directory domains, we recommend the following approach:
 
@@ -41,11 +45,11 @@ For details about what's happening when Active Directory is being prepared for E
 
   - Install the first Exchange server in an Active Directory site that contains a writeable global catalog server from every domain.
 
-- The computer that you use for all procedures in this topic requires access to Setup.exe in the Exchange 2016 installation files:
+- The computer that you use for all procedures in this topic requires access to Setup.exe in the Exchange 2019 installation files:
 
-    1. Use the information in [Updates for Exchange 2016](../../new-features/updates.md) to download the latest version of Exchange 2016.
+    1. Download the latest version of [Exchange 2016](../../new-features/updates.md) or [Exchange 2019](../../new-features-2019/updates.md).
     
-    2. In File Explorer, right-click on the Exchange 2016 ISO image file that you downloaded, and then select **Mount**. Note the virtual DVD drive letter that's assigned.
+    2. In File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. Note the virtual DVD drive letter that's assigned.
 
     3. Opwn a Windows Command Prompt window. For example:
 
@@ -67,20 +71,20 @@ When you extend the Active Directory schema for Exchange, the following requirem
 
 - The computer needs to be a member of the same Active Directory domain and site as the schema master.
 
-- If you use the _/DomainController:\<DomainControllerFQDN\>_ parameter, you need to specify the domain controller that's the schema master.
+- If you use the _/DomainController:\<DomainControllerFQDN\>_ switch, you need to specify the domain controller that's the schema master.
 
 - The only supported way to extend the schema for Exchange is to use Setup.exe with _/PrepareSchema_, _/PrepareAD_, or the Exchange Setup wizard. Other ways of extending the schema aren't supported.
 
 To extend the schema for Exchange, run the following command in a Windows Command Prompt window:
 
 ```
-<Virtual DVD drive letter>:\Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareSchema
 ```
 
 For example, if the Exchange installation files are available on drive E:, run the following command:
 
 ```
-E:\Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareSchema
 ```
 
 After Setup finishes extending the schema, you'll need to wait while Active Directory replicates the changes to all of your domain controllers before you proceed. To check the progress of the replication, you can use the `repadmin` tool in Windows Server. For more information about how to use the `repadmin` tool, see [Repadmin](https://go.microsoft.com/fwlink/p/?LinkId=257879).
@@ -108,17 +112,17 @@ When you prepare Active Directory for Exchange, the following requirements apply
 To prepare Active Directory for Exchange, run the following command in a Windows Command Prompt window:
 
 ```
-<Virtual DVD drive letter>:\Setup.exe /PrepareAD  /OrganizationName:"<Organization name>" /IAcceptExchangeServerLicenseTerms
+<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD  /OrganizationName:"<Organization name>"
 ```
 
 This example uses the Exchange installation files on drive E: and names the Exchange organization "Contoso Corporation".
 
 ```
-E:\Setup.exe /PrepareAD /OrganizationName:"Contoso Corporation" /IAcceptExchangeServerLicenseTerms
+E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD /OrganizationName:"Contoso Corporation"
 ```
 
 > [!IMPORTANT]
-> If you have a hybrid deployment configured between your on-premises organization and Exchange Online, you need to add the _/TenantOrganizationConfig_ switch to the command.
+> If you have a hybrid deployment configured between your on-premises organization and Exchange Online, add the _/TenantOrganizationConfig_ switch to the command.
 
 As in Step 1, you'll need to wait while Active Directory replicates the changes from this step to all of your domain controllers before you proceed, and you can use the `repadmin` tool to check the progress of the replication.
 
@@ -129,7 +133,7 @@ As in Step 1, you'll need to wait while Active Directory replicates the changes 
 
 The final step is to prepare the Active Directory domain where Exchange servers will be installed or where mail-enabled users will be located. This step creates additional containers and security groups, and sets the permissions so Exchange can access them.
 
-If you have multiple domains in your Active Directory forest, you choices in how to prepare them:
+If you have multiple domains in your Active Directory forest, you have the following choices in how to prepare them:
 
 - Prepare all domains in the Active Directory forest
 
@@ -144,19 +148,19 @@ When you prepare all domains in the Active Directory forest for Exchange, your a
 To prepare all domains in your Active Directory forest, run the following command in a Windows Command Prompt window:
 
 ```
-<Virtual DVD drive letter>:\Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAllDomains
 ```
 
 For example, if the Exchange installation files are available on drive E:, run the following command:
 
 ```
-E:\Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAllDomains
 ```
 
 ### Choose the Active Directory domains to prepare
 
 > [!TIP]
-> You don't need to do this step in the domain where you ran the _/PrepareAD_ command in Step 2, because the _/PrepareAD_ command automatically prepares that domain.
+> You don't need to do this step in the domain where you ran the _/PrepareAD_ command in Step 2, because the _/PrepareAD_ command has automatically prepared that domain for you.
 
 When you prepare specific domains in your Active Directory forest, the following requirements apply:
 
@@ -171,49 +175,57 @@ When you prepare specific domains in your Active Directory forest, the following
 To a prepare a specific domain in your Active Directory forest, run the following command in a Windows Command Prompt window:
 
 ```
-<Virtual DVD drive letter>:\Setup.exe /PrepareDomain[:<DomainFQDN>] /IAcceptExchangeServerLicenseTerms
+<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain[:<DomainFQDN>]
 ```
 
 **Notes**:
 
-- If the computer is a member of the domain that you want to prepare, you can use the _/PrepareDomain_ parameter by itself. Otherwise, you need to specify the FQDN of the domain. 
+- If the computer is a member of the domain that you want to prepare, you can use the _/PrepareDomain_ switch by itself. Otherwise, you need to specify the FQDN of the domain. 
 
 - You need to run this command for each Active Directory domain where you'll install an Exchange server or where mail-enabled users will be located.
 
 This example uses the Exchange installation files on drive E: to prepare the engineering.corp.contoso.com domain:
 
 ```
-E:\Setup.exe /PrepareDomain:engineering.corp.contoso.com /IAcceptExchangeServerLicenseTerms
+E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain:engineering.corp.contoso.com
 ```
 
 This is the same example, but run on a computer that's a member of the engineering.corp.contoso.com domain:
 
 ```
-E:\Setup.exe /PrepareDomain /IAcceptExchangeServerLicenseTerms
+E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain
 ```
 
 ## How do you know this worked?
 
-To verify that you successfully prepared Active Directory and domains for Exchange 2016, use any of the following steps
+To verify that you successfully prepared Active Directory and domains for Exchange, use any of the following steps:
 
-- Use ADSI Edit and the information from the table in the next section to verify that the specified objects have the correct values for the release of Exchange 2016 that you're installing. To learn more about ADSI Edit, see [ADSI Edit (adsiedit.msc)](https://go.microsoft.com/fwlink/p/?LinkId=294644).
+- Use ADSI Edit and the information from the tables in the next section to verify that the specified objects have the correct values for the release of Exchange that you're installing. To learn more about ADSI Edit, see [ADSI Edit (adsiedit.msc)](https://go.microsoft.com/fwlink/p/?LinkId=294644).
 
 > [!CAUTION]
 > Never change values in ADSI Edit unless you're told to do so by Microsoft Customer Service and Support. Changing values in ADSI Edit can cause irreparable damage to your Exchange organization and Active Directory.
 
-- Check the Exchange setup log to verify that Active Directory preparation has completed successfully. For more information, see [Verify an Exchange 2016 installation](post-installation-tasks/verify-installation.md). Note that you can't use the **Get-ExchangeServer** cmdlet as described in the topic until you've completed the installation of at least one Exchange 2016 Mailbox server in an Active Directory site.
+- Check the Exchange setup log to verify that Active Directory preparation has completed successfully. For more information, see [Verify an Exchange installation](post-installation-tasks/verify-installation.md). Note that you can't use the **Get-ExchangeServer** cmdlet as described in the topic until you've completed the installation of at least one Exchange Mailbox server in an Active Directory site.
 
-### Exchange 2016 Active Directory versions
+## Exchange Active Directory versions
 
-The following table shows you the Exchange 2016 objects in Active Directory that get updated each time you install a new version of Exchange 2016. You can compare the object versions you see with the values in the table to verify that Exchange successfully updated Active Directory during the installation.
+The tables in the following sections contain the Exchange objects in Active Directory that are updated each time you install a new version of Exchange (a new installation or a CU). You can compare the object versions you see with the values in the tables to verify that Exchange successfully updated Active Directory during the installation.
 
 - **rangeUpper** is located in the **Schema** naming context in the **ms-Exch-Schema-Version-Pt** container.
 
-- **objectVersion (Default)** is located in the **Default** naming context in the **Microsoft Exchange System Objects** container.
+- **objectVersion (Default)** is the **objectVersion** attribute located in the **Default** naming context in the **Microsoft Exchange System Objects** container.
 
-- **objectVersion (Configuration)** is located in the **Configuration** naming context in the **CN=\< _your organization_\>, CN=Microsoft Exchange, CN=Services, CN=Configuration, DC=\< _domain_\>** container.
+- **objectVersion (Configuration)** is the **objectVersion** attribute located in the **Configuration** naming context in the **CN=\<_your organization_\>, CN=Microsoft Exchange, CN=Services, CN=Configuration, DC=\<_domain_\>** container.
 
-|**Exchange version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
+### Exchange 2019 Active Directory versions
+
+|**Exchange 2019 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
+|:-----|:-----|:-----|:-----|
+|Exchange 2019 Preview||||
+
+### Exchange 2016 Active Directory versions
+
+|**Exchange 2016 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
 |Exchange 2016 CU10|15332|13236|16213|
 |Exchange 2016 CU9|15332|13236|16213|
@@ -227,5 +239,3 @@ The following table shows you the Exchange 2016 objects in Active Directory that
 |Exchange 2016 CU1|15323|13236|16211|
 |Exchange 2016 RTM|15317|13236|16210|
 |Exchange 2016 Preview|15317|13236|16041|
- 
-
