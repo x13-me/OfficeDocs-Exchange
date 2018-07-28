@@ -19,11 +19,11 @@ description: "Summary: Learn how to prepare Active Directory for Exchange 2016 o
 
 Exchange uses Active Directory to store information about mailboxes and the configuration of Exchange servers in the organization. Before you install Exchange Server 2016 or Exchange Server 2019 (even if you have earlier versions of Exchange installed in your organization), you need to prepare your Active Directory forest and its domains for the new version of Exchange. There are two ways to do this:
 
-- **Let the Exchange Setup wizard do it for you**: If you don't have a large Active Directory deployment, and you don't have a separate team that manages Active Directory, we recommend using the Setup wizard. Your account needs to be a member of both the Schema Admins and Enterprise Admins security groups. For more information about how to use the Setup wizard, check out [Install Exchange 2019 Mailbox servers using the Setup wizard](deploy-new-installations/install-mailbox-role.md).
+- **Let the Exchange Setup wizard do it for you**: If you don't have a large Active Directory deployment, and you don't have a separate team that manages Active Directory, we recommend using the Setup wizard. Your account needs to be a member of both the Schema Admins and Enterprise Admins security groups. For more information about how to use the Setup wizard, check out [Install Exchange Mailbox servers using the Setup wizard](deploy-new-installations/install-mailbox-role.md).
 
 - **Follow the steps in this topic**: If you have a large Active Directory deployment, or if a separate team manages Active Directory, this topic is for you. Following the steps in this topic gives you much more control over each stage of preparation, and who can do each step. For example, Exchange administrators might not have the required permissions to extend the Active Directory schema.
  
-For details on new schema classes and attributes that Exchange 2019 adds to Active Directory, including those made by Cumulative Updates (CUs), see:
+For details on new schema classes and attributes that Exchange adds to Active Directory, including those made by Cumulative Updates (CUs), see:
 
 - [Exchange 2016 Active Directory schema changes](active-directory/ad-schema-changes.md).
 
@@ -45,7 +45,7 @@ For details about what's happening when Active Directory is being prepared for E
 
   - Install the first Exchange server in an Active Directory site that contains a writeable global catalog server from every domain.
 
-- The computer that you use for all procedures in this topic requires access to Setup.exe in the Exchange 2019 installation files:
+- The computer that you use for all procedures in this topic requires access to Setup.exe in the Exchange installation files:
 
     1. Download the latest version of [Exchange 2016](../../new-features/updates.md) or [Exchange 2019](../../new-features-2019/updates.md).
     

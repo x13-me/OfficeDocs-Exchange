@@ -94,7 +94,7 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
     
 - To allow for the 33% increase in size due to Base64 encoding, multiply your desired new maximum size value in megabytes by 4/3. To convert the value into kilobytes, multiply by 1024. To convert the value into bytes, multiply by 1048756 (1024\*1024). Note that the size increase caused by Base64 encoding could be greater than 33%, and depends on several factors (for example, the attachment size, file type, compression, and the email client).
     
-- Any customized per-server Exchange or Internet Information Server settings you make in Exchange XML application configuration files (for example, web.config files or the EdgeTransport.exe.config file) will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so that you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
+- Any customized Exchange or Internet Information Server (IIS) settings that you made in Exchange XML application configuration files on the Exchange server (for example, web.config files or the EdgeTransport.exe.config file) **will be overwritten** when you install an Exchange CU. Be sure save this information so you can easily re-apply the settings after the install. After you install the Exchange CU, you need to re-configure these settings.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     

@@ -31,7 +31,7 @@ When a the Transport service on a Mailbox server or an Edge Transport server can
 The automatic message retry interval settings that are available in the `%ExchangeInstallPath%Bin\EdgeTransport.exe.config` XML application configuration file are described in the following table.
   
 > [!NOTE]
-> Any customized per-server Exchange or Internet Information Server settings you make in Exchange XML application configuration files (for example, web.config files or the EdgeTransport.exe.config file) will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so that you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
+> Any customized Exchange or Internet Information Server (IIS) settings that you made in Exchange XML application configuration files on the Exchange server (for example, web.config files or the EdgeTransport.exe.config file) **will be overwritten** when you install an Exchange CU. Be sure save this information so you can easily re-apply the settings after the install. After you install the Exchange CU, you need to re-configure these settings.
   
 ****
 
@@ -77,7 +77,7 @@ Message resubmission sends undelivered messages back to the Submission queue to 
 Undelivered messages in delivery queues are automatically resubmitted if the delivery queue is in the status of Retry and has been unable to successfully deliver any messages for a specified period of time. That period of time is controlled by the _MaxIdleTimeBeforeResubmit_ key in the `%ExchangeInstallPath%Bin\EdgeTransport.exe.config` XML application configuration file. The default value is `12:00:00` or 12 hours.
   
 > [!NOTE]
-> Any customized per-server Exchange or Internet Information Server settings you make in Exchange XML application configuration files (for example, web.config files or the EdgeTransport.exe.config file) will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so that you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
+> Any customized Exchange or Internet Information Server (IIS) settings that you made in Exchange XML application configuration files on the Exchange server (for example, web.config files or the EdgeTransport.exe.config file) **will be overwritten** when you install an Exchange CU. Be sure save this information so you can easily re-apply the settings after the install. After you install the Exchange CU, you need to re-configure these settings.
   
 ### Manual Message Resubmission
 

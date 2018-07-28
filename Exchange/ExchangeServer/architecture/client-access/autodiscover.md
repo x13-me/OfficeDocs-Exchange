@@ -33,7 +33,7 @@ Exchange 2016 introduced changes to services previously handled by the multiple 
   
 ## Autodiscover services and Active Directory
 
-Exchange stores in Active Directory the configuration of Exchange servers in the organization as well as information about your users' mailboxes. Before you install Exchange Server, you need to prepare your Active Directory forest and its domains. If you aren't familiar with Exchange forests or domains, see [3. Prepare Active Directory domains](../../plan-and-deploy/prepare-ad-and-domains.md#Step3).
+Exchange stores in Active Directory the configuration of Exchange servers in the organization as well as information about your users' mailboxes. Before you install Exchange Server, you need to prepare your Active Directory forest and its domains. If you aren't familiar with Exchange forests or domains, see [Step 3: Prepare Active Directory domains](../../plan-and-deploy/prepare-ad-and-domains.md#step-3-prepare-active-directory-domains).
   
 Exchange automatically creates at installation the virtual directory `autodiscover` in IIS, the frontend Client Access services web site that clients connect to. This allows Outlook to discover the Exchange mailbox settings so that users don't have to deal with manually configuring advanced settings. 
   

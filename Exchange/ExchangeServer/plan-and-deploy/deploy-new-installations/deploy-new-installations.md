@@ -1,5 +1,5 @@
 ---
-title: "Deploy new installations of Exchange 2016"
+title: "Deploy new installations of Exchange"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,12 +10,12 @@ ms.prod: exchange-server-it-pro
 localization_priority: Critical
 ms.collection: Strat_EX_Admin
 ms.assetid: 681835cf-79fe-4aa7-8a28-4a39944d0efc
-description: "Summary: A collection of topic links that explain how to install Exchange 2016 or Exchange 2019 in various scenarios."
+description: "Summary: A collection of topic links that contain the information that you need to install Exchange 2016 or Exchange 2019 in various scenarios."
 ---
 
-# Deploy new installations of Exchange Server
+# Deploy new installations of Exchange
 
- **Summary**: A collection of topic links that explain how to install Exchange 2016 or Exchange 2019 in various scenarios.
+ **Summary**: A collection of topic links that contain the information that you need to install Exchange 2016 or Exchange 2019 in various scenarios.
 
 Before you begin your installation of Exchange Server 2016 or Exchange Server 2019, see [Planning and deployment](../../plan-and-deploy/plan-and-deploy.md) for important planning information, and information about system requirements and prerequisites.
   

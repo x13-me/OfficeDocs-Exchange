@@ -30,7 +30,6 @@ The following terms are used in this discussion of Exchange virtualization:
   The key point of a planned migration is the Exchange virtual machine is operating normally and needs to be relocated for some reason. This relocation can be done via technology (for example, Live Migration or vMotion). However, if the Exchange virtual machine or the hypervisor host where the virtual machine is located experiences some sort of failure condition, the outcome isn't characterized as a planned migration.
 
 ## Requirements for hardware virtualization
-<a name="BKMK_Prereq"> </a>
 
 Microsoft supports Exchange 2016 and Exchange 2019 in production on hardware virtualization software only when all the following conditions are true:
 
@@ -68,7 +67,6 @@ For deployments of Exchange 2016 or Exchange 2019:
 - The only supported way to send emails to external domains from Azure compute resources is via an SMTP relay (also known as an SMTP smart host). The Azure compute resource sends the email to the SMTP relay and then the SMTP relay provider delivers the email to the external domain. Microsoft Exchange Online Protection is one provider of an SMTP relay, but there are a number of third party providers as well. For more information, see the Microsoft Azure Support Team Blog post [Sending E-mail from Azure Compute Resource to External Domains](https://go.microsoft.com/fwlink/p/?LinkId=799723).
 
 ## Host machine storage requirements
-<a name="BKMK_RootStorage"> </a>
 
 The minimum disk space requirements for each host machine are descrbed in the following list:
 
@@ -79,7 +77,6 @@ The minimum disk space requirements for each host machine are descrbed in the fo
 - If your host machine is running Windows Server 2012 Hyper-V or Hyper-V 2012, and you're configuring a host-based failover cluster that will host Exchange Mailbox servers in a DAG, we recommend following the guidance in [KB2872325](https://support.microsoft.com/kb/2872325).
 
 ## Exchange storage requirements
-<a name="BKMK_ExchangeStor"> </a>
 
 Requirements for storage connected to a virtualized Exchange server are as follows:
 
@@ -94,12 +91,10 @@ Requirements for storage connected to a virtualized Exchange server are as follo
 - Configuring iSCSI storage to use an iSCSI initiator inside an Exchange guest virtual machine is supported. However, there is reduced performance in this configuration if the network stack inside a virtual machine isn't full-featured (for example, not all virtual network stacks support jumbo frames).
 
 ## Exchange memory requirements and recommendations
-<a name="BKMK_ExchangeMemory"> </a>
 
 Some hypervisors have the ability to oversubscribe/overcommit or dynamically adjust the amount of memory available to a specific guest machine based on the perceived usage of memory in the guest machine as compared to the needs of other guest machines managed by the same hypervisor. This technology makes sense for workloads in which memory is needed for brief periods of time and then can be surrendered for other uses. However, it doesn't make sense for workloads that are designed to use memory on an ongoing basis. Exchange (like many server applications with optimizations for performance that involve caching of data in memory) is susceptible to poor system performance and an unacceptable client experience if it doesn't have full control over the memory allocated to the physical or virtual machine on which it's running. As a result, using dynamic memory or memory overcommit features for Exchange isn't supported.
 
 ## Host-based failover clustering and migration for Exchange
-<a name="BKMK_Failover"> </a>
 
 The following are answers to some frequently asked questions about host-based failover clustering and migration technology with Exchange DAGs:
 
@@ -114,5 +109,3 @@ The following are answers to some frequently asked questions about host-based fa
 - **What does Microsoft mean by migration support?**
 
     Migration technology refers to any technology that allows a planned move of a virtual machine from one host machine to another host machine. This move could also be an automated move that occurs as part of resource load balancing, but it isn't related to a failure in the system. Migrations are supported as long as the virtual machines never come up from a saved state that's persisted on disk. This means that technology that moves a virtual machine by transporting the state and virtual machine memory over the network with no perceived downtime is supported for use with Exchange. A third-party hypervisor vendor must provide support for the migration technology, while Microsoft provides support for Exchange when used in this configuration.
-
-

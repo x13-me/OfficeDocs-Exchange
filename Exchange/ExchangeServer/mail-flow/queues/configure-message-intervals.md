@@ -44,7 +44,7 @@ In Exchange 2016 and Exchange 2019, you can configure message retry, resubmit, a
 To configure these intervals, you modify keys in the %ExchangeInstallPath%Bin\EdgeTransport.exe.config XML application configuration file on Mailbox servers or Edge Transport servers. Changes you save to this file are applied after you restart the Exchange Transport service. When you restart this service, mail flow on the server is temporarily interrupted.
   
 > [!NOTE]
-> Any customized per-server Exchange or Internet Information Server settings you make in Exchange XML application configuration files (for example, web.config files or the EdgeTransport.exe.config file) will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so that you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
+> Any customized Exchange or Internet Information Server (IIS) settings that you made in Exchange XML application configuration files on the Exchange server (for example, web.config files or the EdgeTransport.exe.config file) **will be overwritten** when you install an Exchange CU. Be sure save this information so you can easily re-apply the settings after the install. After you install the Exchange CU, you need to re-configure these settings.
   
 1. In a Command prompt window on the Mailbox server or Edge Transport server, open the EdgeTransport.exe.config file in Notepad by running this command:
     
