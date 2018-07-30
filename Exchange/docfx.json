@@ -38,6 +38,22 @@
           "**/*.md",
           "**/**.yml"
         ],
+        "src": "ExchangeServer2013",
+        "dest": ".",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/**.yml"
+        ],
         "src": "ExchangeOnline",
         "dest": ".",
         "exclude": [
