@@ -13,7 +13,7 @@ ms.assetid: 36184b2f-4cd9-48f8-b100-867fe4c6b579
 description: "Summary: How to use hardware virtualization software with Exchange 2016 and Exchange 2019."
 ---
 
-# Exchange 2016 virtualization
+# Exchange Server virtualization
 
  **Summary**: How to use hardware virtualization software with Exchange 2016 and Exchange 2019.
 
@@ -46,7 +46,7 @@ Microsoft supports Exchange 2016 and Exchange 2019 in production on hardware vir
 
   - It's running Exchange 2016 or Exchange 2019.
 
-  - It's deployed on a supported version of Windows Server for [Exchange 2016](prerequisites.md) or [Exchange 2016 prerequisites](../plan-and-deploy-2019/prerequisites.md).
+  - It's deployed on a supported version of Windows Server for [Exchange 2016](prerequisites.md) or [Exchange 2016 prerequisites](prerequisites-2019.md).
 
 For deployments of Exchange 2016 or Exchange 2019:
 

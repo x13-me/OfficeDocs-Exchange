@@ -31,7 +31,7 @@ After an Exchange administrator provisions the Exchange server object, the only 
 
 - A delegated user can't uninstall an Exchange server. To uninstall an Exchange server, you need to be an Exchange administrator.
 
-- Download and use the latest available release of [Exchange 2016](../../new-features/updates.md) or [Exchange 2019](../../new-features/updates-2019.md).
+- Download and use the latest available release of [Exchange 2016](../../new-features/updates.md) or [Updates for Exchange 2019](../../new-features-2019/updates.md).
 
 - To provision an Exchange server object, you need to be a member of the [Organization Management](https://technet.microsoft.com/library/dd335087(v=exchg.150).aspx) role group.
 

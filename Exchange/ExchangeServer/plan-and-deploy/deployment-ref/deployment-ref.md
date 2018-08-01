@@ -15,14 +15,14 @@ description: "Exchange 2016 readiness checks"
 
 # Deployment reference
 
-[Exchange 2016 readiness checks](readiness-checks.md)
+[Exchange 2016 and Exchange 2019 readiness checks](readiness-checks.md)
   
-[Exchange 2016 editions and versions](editions-and-versions.md)
+[Exchange Server editions and versions](editions-and-versions.md)
   
-[Exchange 2016 language support](language-support.md)
+[Exchange Server language support](language-support.md)
   
 [Exchange 2016 storage configuration options](storage-configuration.md)
 
-[Network ports for clients and mail flow in Exchange 2016](network-ports.md)
+[Network ports for clients and mail flow in Exchange](network-ports.md)
 
-[Overview of Exchange 2016 services](services-overview.md)
+[Overview of Exchange services on Exchange servers](services-overview.md)

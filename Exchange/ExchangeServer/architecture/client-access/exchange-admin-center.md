@@ -33,7 +33,7 @@ The URL of the EAC is controlled by the Internet Information Services (IIS) virt
     
 - **External URL**: By default, this value is unconfigured. Before you can connect to the EAC from the Internet, you need to configure the following settings:
     
-  - The external URL value on the ECP virtual directory. For more information, see [Step 4: Configure external URLs](../../plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access.md#ConfigExternalURL).
+  - The external URL value on the ECP virtual directory. For more information, see [Step 4: Configure external URLs](../../plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access.md#step-4-configure-external-urls) in [Configure mail flow and client access on Exchange servers](../../plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access.md).
     
   - A corresponding record in your public DNS.
     

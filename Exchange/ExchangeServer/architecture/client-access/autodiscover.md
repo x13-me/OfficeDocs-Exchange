@@ -116,7 +116,7 @@ A typical CNAME record looks like this:
     
 - Target: The externally accessible FQDN of the Mailbox server (for example, mail.contoso.com)
     
-In this example, autodiscover.contoso.com resolves to mail.contoso.com. For more information, see [Step 4: Configure external URLs](../../plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access.md#ConfigExternalURL).
+In this example, autodiscover.contoso.com resolves to mail.contoso.com. For more information, see [Step 4: Configure external URLs](../../plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access.md#step-4-configure-external-urls) in [Configure mail flow and client access on Exchange servers](../../plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access.md).
   
 We recommend that you create an Autodiscover CNAME record for every domain on your account, including domain aliases and accepted domains. You need to create either a CNAME or SRV record where your domain is hosted. Only then can you synchronize your offline address book, show free/busy information and enable the Out of office feature in Outlook.
   
@@ -253,5 +253,5 @@ In deployments where clients connect to multiple Exchange servers, the Autodisco
   
 You can run the Exchange ActiveSync Autodiscover and Outlook Autodiscover tests in the Microsoft Remote Connectivity Analyzer. If the user is using a local wireless network to connect to Exchange Online, the user should run both tests to make sure that the local network allows for connections to the ActiveSync endpoints.
   
-You can get help for planning and deploying Autodiscover services as part of your Exchange 2016 deployment in [Deploying Exchange 2016](../../plan-and-deploy/plan-and-deploy.md#Deployment).
+You can get help for planning and deploying Autodiscover services as part of your Exchange deployment in [Deploy Exchange 2016 or Exchange 2019](../../plan-and-deploy/plan-and-deploy.md#deploy-exchange-2016-or-exchange-2019)[Deploying Exchange 2016](../../plan-and-deploy/plan-and-deploy.md#Deployment).
   

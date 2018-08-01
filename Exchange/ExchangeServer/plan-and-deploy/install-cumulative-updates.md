@@ -48,7 +48,7 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 
 ## Install an Exchange CU using the Setup wizard
 
-1. Download the latest version of [Exchange 2016](../../new-features/updates.md) or [Exchange 2019](../../new-features-2019/updates.md) on the computer where you want to install Exchange.
+1. Download the latest version of [Exchange 2016](../new-features/updates.md) or [Exchange 2019](../new-features-2019/updates.md) on the computer where you want to install Exchange.
     
 2. In File Explorer, right-click on the Exchange CU ISO image file that you downloaded, and then select **Mount**. In the resulting virtual DVD drive that appears, start Exchange Setup by double-clicking `Setup.exe`.
     
@@ -58,17 +58,17 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
     
   - **Don't check for updates right now**
     
-    ![Exchange Setup, Check for Updates page](../../media/f0ca225e-b88f-45e9-a8cb-21adaabe984e.png)
+    ![Exchange Setup, Check for Updates page](../media/f0ca225e-b88f-45e9-a8cb-21adaabe984e.png)
   
 4. The **Copying Files** page shows the progress of copying files to the local hard drive. Typically, the files are copied to `%WinDir%\Temp\ExchangeSetup`, but you can confirm the location in the Exchange Setup log at `C:\ExchangeSetupLogs\ExchangeSetup.log`.
 
-    ![Exchange Setup, Copying Files page](../../media/78813be2-745d-4a58-8da8-883c43aa2650.png)
+    ![Exchange Setup, Copying Files page](../media/78813be2-745d-4a58-8da8-883c43aa2650.png)
   
 5. The **Upgrade** page shows that Setup detected the existing installation of Exchange, so you're upgrading Exchange on the server (not installing a new Exchange server). Click **Next** to continue.
 
 6. On the **License Agreement** page, review the software license terms, select **I accept the terms in the license agreement**, and then click **Next** to continue.
 
-    ![Exchange Setup, License Agreement page](../../media/2bb6bfaa-1b39-4052-9420-a7a053b07d58.png)
+    ![Exchange Setup, License Agreement page](../media/2bb6bfaa-1b39-4052-9420-a7a053b07d58.png)
   
 7. On the **Readiness Checks** page, verify that the prerequisite checks completed successfully. If they haven't, the only option on the page is **Retry**, so you need to resolve the errors before you can continue.
 
@@ -78,15 +78,15 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
     
     When no more errors are detected on the **Readiness Checks** page, the **Retry** button changes to **Install** so you can continue. Be sure to review any warnings, and then click **Install** to install Exchange.
 
-    ![Exchange Setup, Readiness Check page with errors resolved](../../media/a9aca4d0-19ac-4783-8071-cdd435b1658d.png)
+    ![Exchange Setup, Readiness Check page with errors resolved](../media/a9aca4d0-19ac-4783-8071-cdd435b1658d.png)
   
 8. On the **Setup Progress** page, a progress bar indicates how the installation is proceeding.
 
-    ![Exchange Setup, Setup Progress page](../../media/8fddda28-6e29-44c1-b1bc-149fa7798460.png)
+    ![Exchange Setup, Setup Progress page](../media/8fddda28-6e29-44c1-b1bc-149fa7798460.png)
   
 9. On the **Setup Completed** page, click **Finish**, and then restart the computer.
 
-    ![Exchange Setup, Setup Completed page](../../media/b2646172-8088-4d8a-a7f0-888f786c29cf.png)
+    ![Exchange Setup, Setup Completed page](../media/b2646172-8088-4d8a-a7f0-888f786c29cf.png)
 
 ## Install an Exchange CU using unattended Setup from the command line
 
@@ -112,4 +112,4 @@ For more information about unattended Setup from the command line, see [Install 
 
 ## How do you know this worked?
 
-To verify that you've successfully installed an Exchange CU, see [Verify an Exchange installation](../../plan-and-deploy/post-installation-tasks/verify-installation.md).
+To verify that you've successfully installed an Exchange CU, see [Verify Exchange Server installations](post-installation-tasks/verify-installation.md).
