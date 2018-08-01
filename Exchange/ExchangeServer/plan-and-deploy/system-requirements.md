@@ -122,13 +122,13 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 |Exchange 2016 CU8 & CU9       | X                      | X                      |
 |Exchange 2016 CU5 - CU7       |                        | X                      |
 
-## Supported clients
+## Supported clients (with latest updates)
 
 - Outlook 2016
 
 - Outlook 2013
 
-- Outlook 2010 SP2 and updates KB2956191 and KB2965295
+- Outlook 2010 SP2
 
 - Outlook 2016 for Mac
 
