@@ -253,5 +253,5 @@ In deployments where clients connect to multiple Exchange servers, the Autodisco
   
 You can run the Exchange ActiveSync Autodiscover and Outlook Autodiscover tests in the Microsoft Remote Connectivity Analyzer. If the user is using a local wireless network to connect to Exchange Online, the user should run both tests to make sure that the local network allows for connections to the ActiveSync endpoints.
   
-You can get help for planning and deploying Autodiscover services as part of your Exchange deployment in [Deploy Exchange 2016 or Exchange 2019](../../plan-and-deploy/plan-and-deploy.md#deploy-exchange-2016-or-exchange-2019)[Deploying Exchange 2016](../../plan-and-deploy/plan-and-deploy.md#Deployment).
+You can get help for planning and deploying Autodiscover services as part of your Exchange deployment in [Deploy Exchange 2016 or Exchange 2019](../../plan-and-deploy/plan-and-deploy.md#deploy-exchange-2016-or-exchange-2019).
   

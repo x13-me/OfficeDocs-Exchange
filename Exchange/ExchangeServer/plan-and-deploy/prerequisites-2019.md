@@ -13,7 +13,7 @@ ms.assetid:
 description: "Summary: Windows operating system prerequisites for Exchange 2019 and Exchange management tools."
 ---
 
-# Exchange 2016 prerequisites
+# Exchange 2019 prerequisites
 
  **Summary**: Windows operating system prerequisites for Exchange 2019 and Exchange management tools.
 

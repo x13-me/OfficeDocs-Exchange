@@ -52,15 +52,15 @@ After an Exchange administrator provisions the Exchange server object, the only 
 3. In the Command Prompt window, use the following syntax:
 
     ```
-    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /NewProvisionedServer[:<ServerFQDN>]
+    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /NewProvisionedServer[:<ServerName>]
     ```
 
-    If you run the command on the target server, you can use the _/NewProvisionedServer_ switch by itself. Otherwise, you need to specify the FQDN of the server to provision.
+    If you run the command on the target server, you can use the _/NewProvisionedServer_ switch by itself. Otherwise, you need to specify the Name of the server to provision.
 
-    This example uses the Exchange installation files on drive E: to provision the server mailbox01.contoso.com:
+    This example uses the Exchange installation files on drive E: to provision the server Mailbox01:
 
     ```
-    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /NewProvisionedServer:mailbox01.contoso.com
+    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /NewProvisionedServer:Mailbox01
     ```
 
     This example uses the Exchange installation files on drive E: to provision the local server where you're running the command: 

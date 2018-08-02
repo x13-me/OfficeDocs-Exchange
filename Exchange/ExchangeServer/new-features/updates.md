@@ -9,7 +9,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9c1d8694-bd33-43af-a7ab-4caaada34745
-description: "Summary: Learn about the Cumulative Update strategy and delivery schedule in Exchange 2016.
+description: "Summary: Learn about the Cumulative Update strategy and delivery schedule in Exchange 2016."
 ---
 
 # Updates for Exchange 2016

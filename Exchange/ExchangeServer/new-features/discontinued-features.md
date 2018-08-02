@@ -2,7 +2,7 @@
 title: "What's discontinued in Exchange 2016"
 ms.author: dmaguire
 author: msdmaguire
-manager: scotv
+manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
 ms.topic: overview

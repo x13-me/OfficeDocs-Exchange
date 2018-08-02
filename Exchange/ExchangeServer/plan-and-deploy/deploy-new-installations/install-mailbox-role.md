@@ -27,6 +27,8 @@ Before you install an Exchange Server 2016 or Exchange Server 2019 Mailbox serve
   
   - [Exchange 2019 system requirements](../../plan-and-deploy/system-requirements-2019.md) and [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites-2019.md).
     
+ - The target server must be a member of an Active Directory domain.
+
 - The account that you use to install Exchange requires the following permissions<sup>*</sup>:
     
   - **Enterprise Admins group membership**: Required if this is the first Exchange server in the organization.
@@ -50,7 +52,7 @@ To install the Edge Transport role on a computer, see [Install Exchange Edge Tra
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
 > [!CAUTION]
-> After you install Exchange on a server, you must not change the server name. Renaming a server after you have installed an Exchange server role is not supported.
+> After you install Exchange on a server, you must not change the server name. Renaming a server after you've installed an Exchange server role is not supported.
   
 ## Install the Exchange Mailbox server role
 

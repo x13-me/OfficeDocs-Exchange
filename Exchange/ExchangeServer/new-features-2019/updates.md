@@ -8,7 +8,8 @@ ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
-description: "Summary: Learn about the Cumulative Update strategy and delivery schedule in Exchange 2019.
+ms.assetid: 
+description: "Summary: Learn about the Cumulative Update strategy and delivery schedule in Exchange 2019."
 ---
 
 # Updates for Exchange 2019
