@@ -118,11 +118,7 @@ The hybrid Modern Authentication architecture has the following technical requir
     
 4. **Intune setup**: Both cloud-only and hybrid deployments of Intune are supported (MDM for Office 365 is not supported).
     
-<<<<<<< HEAD
-5. **Office 365 licensing**<sup>*</sup>: Each user must have one of the following Office 365 licenses:
-=======
 5. **Office 365 licensing**: Each user must have one of the following Office 365 licenses:
->>>>>>> master
     
   - Commercial: Enterprise E3, Enterprise E5, ProPlus, or Business licenses
     
@@ -132,11 +128,7 @@ The hybrid Modern Authentication architecture has the following technical requir
     
     In addition, the licenses must include the Office client applications that are required for Outlook for iOS and Android commercial use.
     
-<<<<<<< HEAD
-6. **EMS licensing**<sup>*</sup>: Each on-premises user must have one of the following licenses:
-=======
 6. **EMS licensing**: Each on-premises user must have one of the following licenses:
->>>>>>> master
     
   - Intune standalone + Azure Active Directory Premium standalone
     
@@ -272,13 +264,7 @@ The following features are not supported for on-premises mailboxes using hybrid 
 - All Exchange Online FQDNs and IP subnet ranges as defined in [Office 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2). Be sure to include the AutoDetect FQDNs and IP subnet ranges defined in row 11 within the Exchange Online FQDNs table; this is required because the AutoDetect service establishes connections to the on-premises infrastructure, as outlined in [Connection flow](use-hybrid-modern-auth.md#connectflow).
     
 - All Outlook iOS and Android app FQDNs as defined in [Network requests in Office 365 ProPlus and Mobile](https://support.office.com/article/eb73fcd1-ca88-4d02-a74b-2dd3a9f3364d?).
-<<<<<<< HEAD
-    
-- All Azure US and EUR datacenter region IP subnets as defined in [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/download/details.aspx?id=41653). This is required because the AutoDetect service establishes connections to the on-premises infrastructure, as outlined in the [Connection flow](#connection-flow) section in this topic. Currently, the AutoDetect service does not leverage IP reservations within Azure.
-    
-=======
      
->>>>>>> master
 **Q**: My organization currently uses a third-party MDM solution to control mobile device connectivity. If I expose the Exchange ActiveSync namespace on the Internet, that introduces a way for users to bypass the third-party MDM solution during the co-existence period. How can I prevent this?
   
 **A**: There are three potential solutions to resolving this issue:
