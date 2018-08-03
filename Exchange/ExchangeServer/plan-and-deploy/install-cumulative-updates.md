@@ -72,7 +72,7 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
   
 7. On the **Readiness Checks** page, verify that the prerequisite checks completed successfully. If they haven't, the only option on the page is **Retry**, so you need to resolve the errors before you can continue.
 
-    ![Exchange Setup, Readiness Check page with errors detected](../../media/d4ee435a-a383-4be6-8233-da4cc2a19eea.png)
+    ![Exchange Setup, Readiness Check page with errors detected](../media/d4ee435a-a383-4be6-8233-da4cc2a19eea.png)
   
     After you resolve the errors, click **Retry** to run the prerequisite checks again. You can fix some errors without exiting Setup, while the fix for other errors requires you to restart the computer. If you restart the computer, you need to start over at Step 1.
     

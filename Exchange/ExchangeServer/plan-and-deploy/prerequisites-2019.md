@@ -72,9 +72,9 @@ The requirements to install Exchange 2019 on computers running Windows Server 20
 
 1. Run the following command in Windows PowerShell to install the required Windows components:
 
-  ```
-  Install-WindowsFeature AS-HTTP-Activation, Server-Media-Foundation, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
-  ```
+    ```
+    Install-WindowsFeature AS-HTTP-Activation, Server-Media-Foundation, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
+    ```
 
 2. Install the [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913).
 
@@ -82,13 +82,43 @@ The requirements to install Exchange 2019 on computers running Windows Server 20
 
 1. Run the following command in Windows PowerShell to install the required Windows components:
 
-  ```
-  Install-WindowsFeature ADLDS
-  ```
+    ```
+    Install-WindowsFeature ADLDS
+    ```
 
 2. Install the [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913).
 
-## Windows client prerequisites for the Exchange admin tools
+## Windows Server 2016 prerequisites
+
+The requirements to install Exchange 2019 on computers running Windows Server 2016 are described in the following sections.
+
+### Mailbox servers on Windows Server 2016
+
+1. Run the following command in Windows PowerShell to install the required Windows components:
+
+    ```
+    Install-WindowsFeature NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
+    ```
+
+2. Install the [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906).
+
+3. Install [KB3206632](https://go.microsoft.com/fwlink/p/?linkid=837748).
+
+4. Install the [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913).
+
+### Edge Transport servers on Windows Server 201
+
+1. Run the following command in Windows PowerShell to install the required Windows components:
+
+    ```
+    Install-WindowsFeature ADLDS
+    ```
+
+2. Install the [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906).
+
+3. Install the [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913).
+
+## Windows client prerequisites for the Exchange 2019 management tools
 
 The requirements to install the Exchange 2019 management tools on client computers running Windows 10 are described in the following steps:
 
@@ -96,8 +126,6 @@ The requirements to install the Exchange 2019 management tools on client compute
 
 2. Run the following command from an elevated Windows PowerShell session:
 
-```
-Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementScriptingTools,IIS-ManagementScriptingTools,IIS-IIS6ManagementCompatibility,IIS-LegacySnapIn,IIS-ManagementConsole,IIS-Metabase,IIS-WebServerManagementTools,IIS-WebServerRole
-```
-
-
+    ```
+    Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementScriptingTools,IIS-ManagementScriptingTools,IIS-IIS6ManagementCompatibility,IIS-LegacySnapIn,IIS-ManagementConsole,IIS-Metabase,IIS-WebServerManagementTools,IIS-WebServerRole
+    ```
