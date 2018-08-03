@@ -17,7 +17,7 @@ description: "Control the flow of email to and from your Office 365 organization
 
 # Configure mail flow using connectors in Office 365
 
-Control the flow of email to and from your Office 365 organization. Learn how to use connectors with either Microsoft Exchange Online or Exchange Online Protection. Connectors are a collection of instructions that customize the way your email flows.  Actually, most organizations that use Office 365 don't need connectors and this topic will help you decide which one, if needed.
+Learn how to use connectors with either Microsoft Exchange Online or Exchange Online Protection. Connectors are a collection of instructions that customize the way your email flows to and from your Office 365 organization.  Actually, most organizations that use Office 365 don't need connectors and this topic will help you decide which one, if needed.
   
 ## What do connectors do?
 <a name="connectorsdo1"> </a>
@@ -30,10 +30,10 @@ Set up connectors to:
     
 - Enable email notifications from a printer or other non-mailbox entity.
 
-- Avoid graylisting
+- Avoid graylisting/IP throttling
     
 > [!NOTE]
-> Graylisting is a practice used to protect email systems from spam. In Office 365, graylisting is done by basic IP throttling to limit senders from sending suspiciously large amounts of email. Office 365 responds to these abnormal influxes of mail by returning a temporary NDR error, resembling this range: 451 4.7.500-699 (ASxxx). For more details on these types of delivery issues, see [Fix email delivery issues for error code 451 4.7.500-699 (ASxxx) in Office 365](https://support.office.com/en-us/article/Fix-email-delivery-issues-for-error-code-451-5-7-500-699-ASxxx-in-Office-365-51356082-9fef-4639-a18a-fc7c5beae0c8). 
+> Graylisting is a practice used to protect email systems from spam. In Office 365, graylisting is done by throttling IPs to limit senders from sending suspiciously large amounts of email. Office 365 responds to these abnormal influxes of mail by returning a temporary NDR error, resembling this range: 451 4.7.500-699 (ASxxx). For more details on these types of delivery issues, see [Fix email delivery issues for error code 451 4.7.500-699 (ASxxx) in Office 365](https://support.office.com/en-us/article/Fix-email-delivery-issues-for-error-code-451-5-7-500-699-ASxxx-in-Office-365-51356082-9fef-4639-a18a-fc7c5beae0c8). 
   
 ## What happened to inbound and outbound connectors?
 <a name="InboundOutbound1"> </a>
