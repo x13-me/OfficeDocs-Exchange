@@ -135,10 +135,14 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
 
     ![In IIS Manager, select the server, and in the Actions pane, click Restart](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
   
-  - Run the following command from an elevated command prompt (a Command Prompt window you open by selecting **Run as administrator**):
+  - Run the following commands from an elevated command prompt (a Command Prompt window you open by selecting **Run as administrator**):
     
     ```
-    IISReset /noforce
+    net stop was /y
+    ```
+
+    ```
+    net start w3svc
     ```
 
 ## Configure client-specific message size limits from the command line

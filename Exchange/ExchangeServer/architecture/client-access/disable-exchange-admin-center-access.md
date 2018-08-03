@@ -224,10 +224,14 @@ New-OwaVirtualDirectory -Server <Server> -Role ClientAccess -WebSiteName EAC_Sec
     
 2. In the **Actions** pane, click **Restart**.
     
-**Note**: To restart IIS from the command line, open an elevated command prompt (a Command Prompt window that you opened by selecting **Run as administrator**) and run the following command:
+**Note**: To restart IIS from the command line, open an elevated command prompt (a Command Prompt window that you opened by selecting **Run as administrator**) and run the following commands:
   
 ```
-iisreset.exe /noforce
+net stop was /y
+```
+
+```
+net start w3svc
 ```
 
 ## How do you know this task worked?

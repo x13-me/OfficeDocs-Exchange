@@ -175,7 +175,7 @@ To verify that you've configured Outlook on the web to display the SMTP settings
 
     ![SMTP settings in Outlook on the web](../../media/8a379ed6-18b4-4393-934f-e7e5eb5a2586.png)
   
-    **Note**: If the SMTP settings that you configured don't appear as expected in Outlook on the web, run the command `iisreset.exe /noforce` to restart Internet Information Services (IIS).
+    **Note**: If the SMTP settings that you configured don't appear as expected in Outlook on the web, run the commands `net stop was /y` and `net start w3svc`to restart Internet Information Services (IIS).
     
 ## How do you know this task worked?
 

@@ -176,7 +176,11 @@ You need to restart Internet Information Services (IIS) for the changes to take 
 **Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following command:
   
 ```
-iisreset /noforce
+net stop was /y
+```
+
+```
+net start w3svc
 ```
 
 ## How do you know this worked?

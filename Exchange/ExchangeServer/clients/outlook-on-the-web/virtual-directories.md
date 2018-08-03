@@ -211,11 +211,15 @@ If an Outlook on the web virtual directory isn't working the way you expect, you
   
   - Command prompt:
     
-    Open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following command:
+    Open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following commands:
     
-  ```
-  iisreset /noforce
-  ```
+    ```
+    net stop was /y
+    ```
+
+    ```
+    net start w3svc
+    ```
 
 ## Use the Exchange Management Shell to view Outlook on the web virtual directory properties
 <a name="ExternalURL"> </a>

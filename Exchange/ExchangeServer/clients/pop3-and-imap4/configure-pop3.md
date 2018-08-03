@@ -207,7 +207,7 @@ To verify that you have enabled and configured POP3 on the Exchange server, perf
 
     ![POP settings in Outlook on the web](../../media/8c89500e-90ad-4fb5-9334-7013de6607a2.png)
   
-    **Note**: If you configured 995/SSL **and** 110/TLS values for the _ExternalConnectionSettings_ parameter on the **Set-PopSettings** cmdlet, only the 995/SSL value is displayed in Outlook on the web. Also, if the external POP3 settings that you configured don't appear as expected in Outlook on the web after you restart the POP3 services, run the command `iisreset.exe /noforce` to restart Internet Information Services (IIS).
+    **Note**: If you configured 995/SSL **and** 110/TLS values for the _ExternalConnectionSettings_ parameter on the **Set-PopSettings** cmdlet, only the 995/SSL value is displayed in Outlook on the web. Also, if the external POP3 settings that you configured don't appear as expected in Outlook on the web after you restart the POP3 services, run the commands `net stop was /y` and `net start w3svc` to restart Internet Information Services (IIS).
     
 3. You can test POP3 client connectivity to the Exchange server by using the following methods:
     

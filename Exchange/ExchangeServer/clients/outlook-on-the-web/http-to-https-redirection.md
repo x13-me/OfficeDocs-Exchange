@@ -163,10 +163,14 @@ Use the following procedure to remove the redirect setting from all virtual dire
 
     ![In IIS Manager, select the server, and in the Actions pane, click Restart](../../media/7d37436a-b89d-4010-bef4-f4276686d5ad.png)
   
-**Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server and run the following command:
+**Note**: To perform this procedure on the command line, open an elevated command prompt on the Exchange server and run the following commands:
   
 ```
-iisreset /noforce
+net stop was /y
+```
+
+```
+net start w3svc
 ```
 
 ## How do you know this worked?
