@@ -207,7 +207,7 @@ To verify that you have enabled and configured IMAP4 on the Exchange server, per
 
     ![IMAP settings in Outlook on the web](../../media/2fc6813d-0b2e-4813-8bbc-bc3dfaf4c261.png)
   
-    **Note**: If you configured 993/SSL **and** 143/TLS values for the _ExternalConnectionSettings_ parameter on the **Set-ImapSettings** cmdlet, only the 993/SSL value is displayed in Outlook on the web. Also, if the external IMAP4 settings that you configured don't appear as expected in Outlook on the web after you restart the IMAP4 services, run the command `iisreset.exe /noforce` to restart Internet Information Services (IIS).
+    **Note**: If you configured 993/SSL **and** 143/TLS values for the _ExternalConnectionSettings_ parameter on the **Set-ImapSettings** cmdlet, only the 993/SSL value is displayed in Outlook on the web. Also, if the external IMAP4 settings that you configured don't appear as expected in Outlook on the web after you restart the IMAP4 services, run the commands `net stop was /y` and `net start w3svc` to restart Internet Information Services (IIS).
     
 3. You can test IMAP4 client connectivity to the Exchange server by using the following methods:
     
