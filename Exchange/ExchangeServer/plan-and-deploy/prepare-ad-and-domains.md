@@ -221,7 +221,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |**Exchange 2019 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
-|Exchange 2019 Preview||||
+|Exchange 2019 Preview|15332|13236|16213|
 
 ### Exchange 2016 Active Directory versions
 

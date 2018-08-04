@@ -33,4 +33,6 @@ If you see this error after you've restarted the server more than two or three t
 If you *still* receive this error after multiple restarts and reinstalling recent programs or Windows updates, we recommend that you contact Microsoft Customer Serive and Support. They'll help you find the reason why Windows and other programs think your computer needs to be restarted. To contact Microsoft support, go to [Support for Microsoft Exchange Server](https://go.microsoft.com/fwlink/p/?LinkId=525940).
   
 > [!CAUTION]
-> Even though it's tempting, we strongly recommend that you don't attempt to work around this issue by manually deleting or changing registry keys or values. Although you might fix this issue now, manually modifying the registry might cause issues later on. This is especially important if the failed installation was a Windows update.
+> Although it's tempting, we strongly recommend that you don't attempt to work around this issue by manually deleting or changing registry keys or values. Although you might fix this issue now, manually modifying the registry might cause issues later on. This is especially important if the failed installation was a Windows update.
+
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

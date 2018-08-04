@@ -1,9 +1,9 @@
 ---
 title: "Primary DNS Suffix is missing [ms.exch.setupreadiness.FqdnMissing]"
-ms.author: dstrome
-author: dstrome
+ms.author: chrisda
+author: chrisda
 manager: serdars
-ms.date: 7/22/2015
+ms.date: 8/3/2018
 ms.audience: ITPro
 ms.topic: reference
 f1_keywords:
@@ -11,30 +11,24 @@ f1_keywords:
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 310765bf-a650-4a3d-a5e4-6173b559d4f6
-description: "Microsoft Exchange Server 2016 Setup can't continue because the primary domain name system (DNS) suffix for the computer you're installing Exchange on hasn't been configured."
+description: "Exchange Server 2016 or Exchange Server 2019 Setup can't continue because the primary DNS suffix hasn't been configured on the target server."
 ---
 
 # Primary DNS Suffix is missing [ms.exch.setupreadiness.FqdnMissing]
 
-Microsoft Exchange Server 2016 Setup can't continue because the primary domain name system (DNS) suffix for the computer you're installing Exchange on hasn't been configured.
+Exchange Setup can't continue because the primary DNS suffix (for example, contoso.com) hasn't been configured on the target server. Typically, you'll encounter this error when you're trying to install the Edge Transport server role.
   
-To resolve this issue, add a primary DNS suffix on the computer using the steps below and then run Setup again.
+To resolve this issue, add a primary DNS suffix on the computer and then run Setup again.
   
+1. Replace \<Value\> with the DNS suffix you want to use (for example, contoso.com), and run the following command in Winows Powershell on the target server:
+
+```
+Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters -Name 'NV Domain' -Value <Value>
+```
+
+2. Restart the computer and run Setup again.
+
 > [!IMPORTANT]
-> Changing the computer name or primary DNS suffix after you install Exchange 2016 isn't supported.
-  
-1. Log on to the computer where you want to install the Edge Transport role as a user that's a member of the local Administrators group.
-    
-2. Open the **Control Panel** and then double-click **System**.
-    
-3. In the **Computer name, domain, and workgroup settings** section, click **Change settings**.
-    
-4. In the **System Properties** window, make sure the **Computer Name** tab is selected and then click **Change…**.
-    
-5. In **Computer Name/Domain Changes**, click **More…**.
-    
-6. In **Primary DNS suffix of this computer**, enter the DNS domain name for the Edge Transport server. For example, contoso.com.
-    
-7. Click **OK** to close each window.
-    
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Changing the computer name or primary DNS suffix after you install Exchange isn't supported.
+
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
