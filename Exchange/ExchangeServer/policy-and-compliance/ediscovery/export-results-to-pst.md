@@ -81,6 +81,4 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
     
 - The name of the search is the first part of the filename for each file that is exported. Also, the date and time of the export request is appended to the filename of each PST file and the results log.
 
-- If you have enabled Multi Factor Authentication, you will be unable to use the PST export tool with your MFA-enabled credentials because it does not have support for MFA.  To use the PST export tool, create an app password ["Create an app password for Office 365"](https://support.office.com/en-us/article/create-an-app-password-for-office-365-3e7c860f-bda4-4441-a618-b53953ee1183)
-
-
+- You can't use the PST export tool with accounts that require mult-factor authentication (MFA). Instead, you need to create an app password for the PST export tool. For instructions, see [Create an app password for Office 365](https://support.office.com/article/3e7c860f-bda4-4441-a618-b53953ee1183).
