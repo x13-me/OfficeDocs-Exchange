@@ -2,6 +2,7 @@
 title: "Outlook for iOS and Android in Exchange Online FAQ"
 ms.author: dmaguire
 author: msdmaguire
+ms.reviewer: smithre4
 manager: laurawi
 ms.date: 6/25/2018
 ms.audience: ITPro
