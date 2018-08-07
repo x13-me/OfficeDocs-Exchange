@@ -116,7 +116,6 @@
         
     },
     "template": [],
-    "dest": "OfficeDocs-Exchange",
-    "markdownEngineName": "markdig"
+    "dest": "OfficeDocs-Exchange"
   }
 }
