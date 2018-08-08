@@ -2,6 +2,7 @@
 title: "Using Outlook for iOS and Android in the Government Community Cloud"
 ms.author: dmaguire
 author: msdmaguire
+ms.reviewer: smithre4
 manager: serdars
 ms.date: 4/2/2018
 ms.audience: ITPro
