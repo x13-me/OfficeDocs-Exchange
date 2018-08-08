@@ -218,7 +218,7 @@ Use the **Email address** section to view or change the email addresses associat
 
   - **SMTP**: This is the default address type. Click this radio button and then type the new SMTP address in the **\* Email address** box.
 
-  - **EUM**: An EUM (Exchange Unified Messaging) address is used by the Exchange Unified Messaging service to locate UM-enabled users within an Exchange organization. EUM addresses consist of the extension number and the UM dial plan for the UM-enabled user. Click this radio button and type the extension number in the **Address/Extension** box. Then click **Browse** and select a dial plan for the user. (Note: Unified Messaging is not available in Exchange 2019.)
+  - **EUM**: An EUM (Exchange Unified Messaging) address is used by the Exchange Unified Messaging service in Exchange 2016 to locate UM-enabled users within an Exchange organization. EUM addresses consist of the extension number and the UM dial plan for the UM-enabled user. Click this radio button and type the extension number in the **Address/Extension** box. Then click **Browse** and select a dial plan for the user. (**Note**: Unified Messaging is not available in Exchange 2019.)
 
   - **Custom address type**: Click this button and type one of the supported non-SMTP email address types in the **\* Email address** box.
 
@@ -240,7 +240,7 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
 
 - **Address Book policy**: This box shows the address book policy applied to the mailbox. An address book policy allows you to segment users into specific groups to provide customized views of the address book. To apply or change the address book policy that's applied to the mailbox, select one from the drop-down list.
 
-- **Unified Messaging**: This feature is disabled by default. When you enable Unified Messaging (UM) the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a User for Unified Messaging](http://technet.microsoft.com/library/ad027767-5e14-4cb1-9f8a-0791d9188db5.aspx). (Note: Unified Messaging is not available in Exchange 2019.)
+- **Unified Messaging**: This feature is disabled by default. When you enable Unified Messaging (UM) in Exchange 2016, the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a User for Unified Messaging](http://technet.microsoft.com/library/ad027767-5e14-4cb1-9f8a-0791d9188db5.aspx). (**Note**: Unified Messaging is not available in Exchange 2019.)
 
     > [!NOTE]
     > A UM dial plan and a UM mailbox policy must exist before you can enable UM.

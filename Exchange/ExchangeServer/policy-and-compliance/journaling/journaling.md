@@ -97,9 +97,9 @@ The *journal recipient* specifies who you want to journal. Messages that are sen
   
 By targeting specific recipients or groups of recipients, you can configure a journaling environment that helps you meet your organization's regulatory and legal requirements, while minimizing the storage and other costs that are associated with retaining large amounts of data.
   
- **Journal recipients that are enabled for Unified Messaging**
+ **Journal recipients that are enabled for Unified Messaging in Exchange 2016**
   
-By default, if your organization uses Unified Messaging (UM) to consolidate the email, voice mail, and fax infrastructure, Exchange is configured to journal voice mail notification and missed call notification messages. You can disable journaling for these types of messages, but messages that contain UM-generated faxes are always journaled.
+By default, if your Exchange 2016 organization uses Unified Messaging (UM) to consolidate the email, voice mail, and fax infrastructure, Exchange is configured to journal voice mail notification and missed call notification messages. You can disable journaling for these types of messages, but messages that contain UM-generated faxes are always journaled.
   
 To disable journaling for voice mail and missed call notifications, see [Enable or disable journaling for voice mail and missed call notifications](journaling-procedures.md#DisableJournalingForUMNotifications).
 
