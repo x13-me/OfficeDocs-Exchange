@@ -2,6 +2,7 @@
 title: "Using Basic authentication with Outlook for iOS and Android"
 ms.author: dmaguire
 author: msdmaguire
+ms.reviewer: smithre4
 manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro

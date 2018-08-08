@@ -2,6 +2,7 @@
 title: "Managing devices for Outlook for iOS and Android for Exchange Server"
 ms.author: dmaguire
 author: msdmaguire
+ms.reviewer: smithre4
 manager: serdars
 ms.date: 7/5/2018
 ms.audience: ITPro

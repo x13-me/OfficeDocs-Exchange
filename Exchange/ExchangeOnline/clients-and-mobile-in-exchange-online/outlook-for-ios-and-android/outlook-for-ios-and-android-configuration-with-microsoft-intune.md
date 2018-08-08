@@ -2,6 +2,7 @@
 title: "Manage Outlook for iOS and Android configuration with Microsoft Intune"
 ms.author: dmaguire
 author: msdmaguire
+ms.reviewer: smithre4
 manager: serdars
 ms.date: 6/1/2018
 ms.audience: ITPro

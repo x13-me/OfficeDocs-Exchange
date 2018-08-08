@@ -2,6 +2,7 @@
 title: "Passwords and security in Outlook for iOS and Android for Exchange Server"
 ms.author: dmaguire
 author: msdmaguire
+ms.reviewer: smithre4
 manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro
