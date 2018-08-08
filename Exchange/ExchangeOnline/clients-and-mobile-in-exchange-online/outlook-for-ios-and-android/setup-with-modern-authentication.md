@@ -2,6 +2,7 @@
 title: "Account setup with modern authentication in Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
+ms.reviewer: smithre4
 manager: serdars
 ms.date: 1/29/2018
 ms.audience: ITPro
