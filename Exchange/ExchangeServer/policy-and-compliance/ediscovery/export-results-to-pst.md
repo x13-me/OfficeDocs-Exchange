@@ -80,5 +80,5 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
   - A search results log (.csv file format) that contains an entry for each message returned in the search results. Each entry identifies the content source where the message is located. If you've enabled de-duplication, this helps you identify all mailboxes or public folders that contain a duplicate message.
     
 - The name of the search is the first part of the filename for each file that is exported. Also, the date and time of the export request is appended to the filename of each PST file and the results log.
-    
 
+- You can't use the PST export tool with accounts that require mult-factor authentication (MFA). Instead, you need to create an app password for the PST export tool. For instructions, see [Create an app password for Office 365](https://support.office.com/article/3e7c860f-bda4-4441-a618-b53953ee1183).
