@@ -244,7 +244,7 @@ To minimize the time it takes to activate a second datacenter, and allow the sec
 
 - The servers in the second datacenter must have sufficient capacity to host the combined user population of both datacenters.
 
-- The second datacenter must have all services enabled that are provided in the primary datacenter (unless the service isn't included as part of the site resilience SLA). This includes Active Directory, networking infrastructure (for example, DNS or TCP/IP), telephony services (if Unified Messaging is in use), and site infrastructure (such as power or cooling).
+- The second datacenter must have all services enabled that are provided in the primary datacenter (unless the service isn't included as part of the site resilience SLA). This includes Active Directory, networking infrastructure (for example, DNS or TCP/IP), telephony services (if Unified Messaging in Exchange 2016 is in use), and site infrastructure (such as power or cooling).
 
 - For some services to be able to service users from the failed datacenter, they must have the proper server certificates configured. Some services don't allow instancing (for example, POP3 and IMAP4) and only allow the use of a single certificate. In these cases, either the certificate must be a SAN certificate that includes multiple names, or the multiple names must be similar enough so that a wildcard certificate can be used (assuming the security policies of the organization allows the use of wildcard certificates).
 

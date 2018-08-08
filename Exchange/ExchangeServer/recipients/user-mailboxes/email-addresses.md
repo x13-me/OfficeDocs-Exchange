@@ -53,7 +53,7 @@ For additional management tasks related to managing recipients, see the "Recipie
 4. Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png), and then click **SMTP** to add an SMTP email address to this mailbox.
     
     > [!NOTE]
-    > SMTP is the default email address type. You can also add Exchange Unified Messaging (EUM) addresses or custom addresses to a mailbox in Exchange 2016. For more information, see "Change user mailbox properties" in the [Manage user mailboxes](user-mailboxes.md) topic. (**Note**: Unified Messaging is not available on Exchange 2019.)
+    > SMTP is the default email address type. You can also add Exchange Unified Messaging (EUM) addresses or custom addresses to a mailbox in Exchange 2016. For more information, see "Change user mailbox properties" in the [Manage user mailboxes](user-mailboxes.md) topic. (**Note**: Unified Messaging is not available in Exchange 2019.)
   
 5. Type the new SMTP address in the **Email address** box, and then click **OK**.
     

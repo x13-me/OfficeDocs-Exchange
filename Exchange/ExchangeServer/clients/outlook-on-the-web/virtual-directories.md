@@ -101,7 +101,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
     
   - **Text messaging**
     
-  - **Unified Messaging**: Not applicable to Exchange 2019.
+  - **Unified Messaging**: (In Exchange 2016 only; not available in Exchange 2019)
     
   - **Exchange ActiveSync**
     
