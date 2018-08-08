@@ -2,6 +2,7 @@
 title: "Managing Outlook for iOS and Android in Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
+ms.reviewer: smithre4
 manager: laurawi
 ms.date: 3/30/2018
 ms.audience: ITPro
