@@ -119,10 +119,10 @@ You can recover soft-deleted mailboxes using the PowerShell cmdlet below. The cm
   
 1. [Connect to Exchange PowerShell](https://go.microsoft.com/fwlink/?LinkID=785881)
     
-2. Run the **Undo- SoftDeletedMailbox** cmdlet. 
+2. Run the **Undo-SoftDeletedMailbox** cmdlet. 
     
   ```
-  Undo- SoftDeletedMailbox allieb@contoso.com -WindowsLiveID allieb@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) 
+  Undo-SoftDeletedMailbox allieb@contoso.com -WindowsLiveID allieb@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) 
   
   ```
 
@@ -137,7 +137,7 @@ To verify that you've successfully restored a mailbox, do one of the following:
 - In the Exchange Management Shell, use the following syntax to verify that the mailbox was restored.
     
   ```
-  Get-Mailbox <identity>
+  Get-Mailbox <Identity>
   ```
 
 ## Restoring a user in a hybrid scenario
@@ -150,7 +150,7 @@ For user mailboxes in a hybrid scenario, if the mailbox has been soft-deleted an
 2. Run the following cmdlet and retrieve the GUID for the soft-deleted mailbox that you want to restore.
     
   ```
-  Get-Mailbox -SoftDeletedMailbox
+  Get-Mailbox -SoftDeletedMailbox | Select-Object Name, ExchangeGuid
   ```
 
     This cmdlet will return a GUID of soft-deleted mailboxes.
