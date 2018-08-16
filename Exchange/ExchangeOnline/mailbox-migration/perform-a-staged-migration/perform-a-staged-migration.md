@@ -181,7 +181,7 @@ A migration endpoint contains the settings and credentials needed to connect the
   
  **To create a migration endpoint**
   
-1. Go to the [Exchange admin center](about-the-admin-center.md).
+1. Go to the Exchange admin center.
     
 2. In the Exchange admin center, go to **Recipients** \> **Migration**.
     
