@@ -8,10 +8,11 @@ ms.audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - 'O365E_ExchSetupMigrStepsCutover'
-ms.service: o365-administration
+ms.service: exchange-online
 localization_priority: Normal
 ms.custom: Adm_O365
 search.appverid:
+- MET150
 - MOE150
 - MED150
 - MBS150

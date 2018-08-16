@@ -13,7 +13,7 @@ f1_keywords:
 - 'O365M_MigrationsIMAPHotmailAppPass'
 - 'O365E_MigrationsIMAPOutlookAppPass'
 - 'O365E_MigrationsIMAPHotmailAppPass'
-ms.service: o365-administration
+ms.service: exchange-online
 localization_priority: Normal
 ms.custom: Adm_O365_Setup
 search.appverid:

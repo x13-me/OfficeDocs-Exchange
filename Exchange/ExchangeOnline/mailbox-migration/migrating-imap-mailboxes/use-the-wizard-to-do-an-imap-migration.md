@@ -3,14 +3,16 @@ title: "Use the Office 365 Setup wizard to perform an IMAP migration"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 8/28/2017
+ms.date: 8/16/2018
 ms.audience: Admin
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: exchange-online
 localization_priority: Normal
 ms.custom: Adm_O365
 search.appverid: BCS160
-ms.assetid: d0800530-22fa-4ec5-9a29-efe900f2e3d0
+ms.assetid: 
+- MET150
+- d0800530-22fa-4ec5-9a29-efe900f2e3d0
 description: "The advance setup wizard can run automated checks to discover how your current environment is set up and then, based on what is found, recommend a path to Office 365. If you tell Office 365 Setup wizard that your source email system uses IMAP, and you have fewer than 151 mailboxes, it recommends that you use the Office 365 Setup wizard to copy your users email to Office 365 by using IMAP migration."
 ---
 

@@ -6,10 +6,11 @@ manager: serdars
 ms.date: 8/15/2018
 ms.audience: Admin
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: exchange-online
 localization_priority: Normal
 ms.custom: Adm_O365
 search.appverid:
+- MET150
 - MOE150
 - MED150
 - BCS160

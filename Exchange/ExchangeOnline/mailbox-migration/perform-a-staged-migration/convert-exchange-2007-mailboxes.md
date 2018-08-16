@@ -3,13 +3,14 @@ title: "Convert Exchange 2007 mailboxes to mail-enabled users"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/30/2017
+ms.date: 8/15/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: exchange-online
 localization_priority: Normal
 ms.custom: Adm_O365
 search.appverid:
+- MET150
 - MOE150
 - MED150
 - GMA150

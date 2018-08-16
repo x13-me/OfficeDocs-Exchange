@@ -3,15 +3,16 @@ title: "Ways to migrate multiple email accounts to Office 365"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/29/2018
+ms.date: 8/15/2018
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: exchange-online
 localization_priority: Normal
 ms.custom:
 - Adm_O365
 - Adm_O365_Setup
 search.appverid:
+- MET150
 - MOE150
 - MED150
 - MBS150

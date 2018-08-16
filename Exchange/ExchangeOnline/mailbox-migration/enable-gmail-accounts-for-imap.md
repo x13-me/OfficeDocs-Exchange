@@ -3,12 +3,12 @@ title: "Enable your Gmail account for IMAP"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 3/1/2017
+ms.date: 8/15/2018
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - 'O365E_AdvSetupEnableGmailImap'
-ms.service: o365-administration
+ms.service: exchange-online
 localization_priority: Normal
 ms.custom: Adm_O365
 search.appverid:

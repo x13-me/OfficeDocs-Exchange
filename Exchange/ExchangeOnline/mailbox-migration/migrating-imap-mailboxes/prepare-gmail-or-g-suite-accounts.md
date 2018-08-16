@@ -10,7 +10,7 @@ f1_keywords:
 - 'O365P_MigrationsIMAPGmailAppPass'
 - 'O365M_MigrationsIMAPGmailAppPass'
 - 'O365E_MigrationsIMAPGmailAppPass'
-ms.prod: office-online-server
+ms.service: exchange-online
 localization_priority: Normal
 ms.custom: Adm_O365_Setup
 search.appverid:
