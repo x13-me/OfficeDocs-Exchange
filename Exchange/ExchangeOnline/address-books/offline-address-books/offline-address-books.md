@@ -27,9 +27,9 @@ Looking for the Exchange Server version of this topic? See [Offline Address Book
   
 ## Download an offline address book
 
-You can use Outlook Web App to download the GAL. 
+You can use Outlook to download the GAL. 
   
-1. Open Outlook Web App in Internet Explorer.
+1. Open Outlook.
     
 2. Click **Tools**, and then click **Send/Receive**.
     
@@ -45,7 +45,7 @@ You can use Outlook Web App to download the GAL.
     
 ### Conditions that cause a full download of the OAB
 
-There are circumstances in which Outlook Web App will perform a full OAB download. These include:
+There are circumstances in which Outlook will perform a full OAB download. These include:
   
 - There is no OAB on the client computer. This condition may occur if Outlook has not performed an initial complete synchronization.
     
