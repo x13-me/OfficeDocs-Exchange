@@ -35,22 +35,8 @@ The Outlook for iOS and Android app is fully powered by the Microsoft Cloud. All
   
 ![Outlook for iOS and Android architecture](../../media/4e9e00a8-e8af-4096-baf2-fee99ee5e192.png)
   
-Outlook for iOS and Android uses a stateless protocol translator component that is built and run in Azure. This component routes data and translates commands, but it doesn't cache user data. The app is coded with the Outlook device API, a proprietary API that syncs commands and data to and from the app. Exchange Online data is accessed via the publicly available REST APIs. The protocol translator enables communication between Outlook and Exchange Online.
-  
-### Q: All Office 365 Enterprise, Business, and Education accounts are supposed to be using the Office 365-based architecture and utilize the REST API, but I can still see some users connected via EAS. Why is that?
-
-Upon creating an account within Outlook for iOS and Android for Office 365, the first connection attempted by the app is to the Office 365-based architecture, which uses REST. However, if this first attempt fails, the app fails back to the older AWS-based infrastructure (EAS). Beginning in June of 2017, Office 365 accounts will not be able to fall back to the AWS-based architecture. 
-  
-Failure is caused by REST being actively blocked by the customer, who is using one of the three controls listed below. Note that customers who are using one of these controls to block REST will need to alter their setup by June 2017 if they want to continue accessing email from Outlook for iOS and Android.
-  
-1. Client Access rules are in place that block or restrict the REST protocol.
-    
-2. EWS application policies (EWS controls access to the REST API) are in place that restrict which applications can connect.
-    
-3. The customer has EWS disabled for the organization or for specific mailboxes.
-    
-For more information, see [Securing Outlook for iOS and Android in Exchange Online](secure-outlook-for-ios-and-android.md).
-  
+Outlook for iOS and Android uses a stateless protocol translator component that is built and run in Azure. This component routes data and translates commands, but it doesn't cache user data. The app is coded with the Outlook device API, a proprietary API that syncs commands and data to and from the app. Exchange Online data is accessed via the publicly available REST APIs. The protocol translator enables communication between Outlook and Exchange Online. 
+ 
 ### Q: Can I add two different Office 365 accounts from different Office 365 regions to Outlook for iOS and Android?
 
 Yes. However, customers with the Office 365 Government plan may only have accounts connected to Outlook for iOS and Android from a single Office 365 region. This means that Office 365 Government customers can't have both a mailbox that is located in European Office 365 datacenters and an Office 365 Government plan mailbox within the same Outlook for iOS and Android app on the same device.
@@ -178,7 +164,7 @@ Outlook for iOS and Android supports Intune for device and application managemen
   
 ### Q: Is a license required to use Outlook for iOS and Android?
 
-Outlook for iOS and Android is free for consumer usage from the iOS App store and from Google Play. However, commercial users require an Office 365 subscription that includes the Office applications: either Business, Business Premium, Enterprise E3, E5, ProPlus, or the corresponding versions of those plans for Government or Education. If you only have an Exchange Online license (without Office) or an Exchange on-premises (Exchange Server) license, you are not allowed to use the app.
+Outlook for iOS and Android is free for consumer usage from the iOS App store and from Google Play. However, commercial users require an Office 365 subscription that includes the Office desktop applications: Business, Business Premium, Enterprise E3, E5, and ProPlus, or the corresponding versions of those plans for Government or Education. Commercial users with the following subscriptions are allowed to use the Outlook mobile app on devices with integrated screens 10.1” diagonally or less: Office 365 Enterprise E1, Office 365 F1, Office 365 Business Essentials, Office 365 A1, and if you only have an Exchange Online license (without Office). If you only have an Exchange on-premises (Exchange Server) license, you are not licensed to use the app.
   
 ## Common questions from end-users
 
