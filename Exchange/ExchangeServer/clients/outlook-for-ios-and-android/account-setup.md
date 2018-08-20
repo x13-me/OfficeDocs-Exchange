@@ -2,6 +2,7 @@
 title: "Account setup in Outlook for iOS and Android using Basic authentication"
 ms.author: dmaguire
 author: msdmaguire
+ms.reviewer: smithre4
 manager: serdars
 ms.date: 6/8/2018
 ms.audience: ITPro

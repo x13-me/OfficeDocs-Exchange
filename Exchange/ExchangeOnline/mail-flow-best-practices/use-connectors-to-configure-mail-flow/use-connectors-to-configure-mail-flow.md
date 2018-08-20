@@ -17,7 +17,7 @@ description: "Control the flow of email to and from your Office 365 organization
 
 # Configure mail flow using connectors in Office 365
 
-Control the flow of email to and from your Office 365 organization. Learn how to use connectors with either Microsoft Exchange Online or Exchange Online Protection. Connectors are a collection of instructions that customize the way your email flows.  Actually, most organizations that use Office 365 don't need connectors and this topic will help you decide which one, if needed.
+Learn how to use connectors with either Microsoft Exchange Online or Exchange Online Protection. Connectors are a collection of instructions that customize the way your email flows to and from your Office 365 organization.  Actually, most organizations that use Office 365 don't need connectors and this topic will help you decide which one, if needed.
   
 ## What do connectors do?
 <a name="connectorsdo1"> </a>
@@ -30,10 +30,10 @@ Set up connectors to:
     
 - Enable email notifications from a printer or other non-mailbox entity.
 
-- Avoid graylisting
+- Avoid graylisting/IP throttling
     
 > [!NOTE]
-> Graylisting is a practice used to protect email systems from spam. In Office 365, graylisting is done by basic IP throttling to limit senders from sending suspiciously large amounts of email. Office 365 responds to these abnormal influxes of mail by returning a temporary NDR error, resembling this range: 451 4.7.500-699 (ASxxx). For more details on these types of delivery issues, see [Fix email delivery issues for error code 451 4.7.500-699 (ASxxx) in Office 365](https://support.office.com/en-us/article/Fix-email-delivery-issues-for-error-code-451-5-7-500-699-ASxxx-in-Office-365-51356082-9fef-4639-a18a-fc7c5beae0c8). 
+> Graylisting is a practice used to protect email systems from spam. In Office 365, graylisting is done by throttling IPs to limit senders from sending suspiciously large amounts of email. Office 365 responds to these abnormal influxes of mail by returning a temporary NDR error, resembling this range: 451 4.7.500-699 (ASxxx). For more details on these types of delivery issues, see [Fix email delivery issues for error code 451 4.7.500-699 (ASxxx) in Office 365](https://support.office.com/en-us/article/Fix-email-delivery-issues-for-error-code-451-5-7-500-699-ASxxx-in-Office-365-51356082-9fef-4639-a18a-fc7c5beae0c8). 
   
 ## What happened to inbound and outbound connectors?
 <a name="InboundOutbound1"> </a>
@@ -62,13 +62,13 @@ Microsoft Exchange Online is ready to send and receive email from the Internet r
 
 If you have EOP or Exchange Online and your own email servers (also called on-premises servers), you definitely need connectors. This is more complicated and has more options; here's a breakdown:
   
-|**Your mail servers that you manage (on-premises) are running:**|**Your service subscription is**|**Have you completed an Exchange hybrid deployment?**|**Do I need to set up connectors?**|
+|**You're running**|**Your service subscription is**|**Have you completed an Exchange hybrid deployment?**|**Do I need to set up connectors manually?**|
 |:-----|:-----|:-----|:-----|
-|Microsoft Exchange Server 2013 or Exchange Server 2010  <br/> |Exchange Online Protection  <br/> |Not available  <br/> |Yes.  <br/> Set them up by following the instructions in [Set up connectors to route mail between Office 365 and your own email servers](set-up-connectors-to-route-mail.md).  <br/> |
-|Office 365 with Exchange Online  <br/> |No  <br/> |Consider whether an Exchange hybrid deployment will better meet your organization's needs by reviewing the topic that matches your current situation, either [Exchange Server 2013 Hybrid Deployments](http://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx) or [Hybrid Deployments with Exchange 2010 SP3](http://technet.microsoft.com/library/a23b2c29-e334-4159-b802-bc54f5ae2633.aspx). If a hybrid deployment is the right option for your organization, use the Exchange [Hybrid Configuration wizard](http://technet.microsoft.com/library/2e6ed294-ee74-4038-8b71-b61786372ba4.aspx) to integrate Exchange Online with your on-premises Exchange Server. If you only want connectors that enable mail routing, follow the instructions in [Set up connectors to route mail between Office 365 and your own email servers](set-up-connectors-to-route-mail.md).  <br/> |
-|Yes  <br/> |No.  <br/> The Exchange Hybrid Configuration wizard creates connectors for you. To view or edit those connectors, go to the **connectors** page in the Exchange admin center (EAC), or rerun the Hybrid Configuration wizard.  <br/> |
+|Exchange 2013 or Exchange 2010  <br/> |Exchange Online Protection  <br/> |Not available  <br/> |Yes.  <br/> Set them up by following the instructions in [Set up connectors to route mail between Office 365 and your own email servers](set-up-connectors-to-route-mail.md).  <br/> |
+|Exchange 2013 or Exchange 2010  <br/> |Office 365 with Exchange Online  <br/> |No  <br/> |Consider whether an Exchange hybrid deployment will better meet your organization's needs by reviewing the topic that matches your current situation, either [Exchange Server 2013 Hybrid Deployments](http://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx) or [Hybrid Deployments with Exchange 2010 SP3](http://technet.microsoft.com/library/a23b2c29-e334-4159-b802-bc54f5ae2633.aspx). If a hybrid deployment is the right option for your organization, use the Exchange [Hybrid Configuration wizard](http://technet.microsoft.com/library/2e6ed294-ee74-4038-8b71-b61786372ba4.aspx) to integrate Exchange Online with your on-premises Exchange Server. If you only want connectors that enable mail routing, follow the instructions in [Set up connectors to route mail between Office 365 and your own email servers](set-up-connectors-to-route-mail.md).  <br/> |
+|Exchange 2013 or Exchange 2010  <br/> |Office 365 with Exchange Online  <br/> |Yes  <br/> |No.  <br/> The Exchange Hybrid Configuration wizard creates connectors for you. To view or edit those connectors, go to the **connectors** page in the Exchange admin center (EAC), or rerun the Hybrid Configuration wizard.  <br/> |
 |Exchange Server 2007 or earlier  <br/> |Exchange Online Protection  <br/> Office 365 with Exchange Online  <br/> |Not available  <br/> |Yes.  <br/> Set them up by following the instructions in [Set up connectors to route mail between Office 365 and your own email servers](set-up-connectors-to-route-mail.md).  <br/> In limited circumstances, you might have a hybrid configuration with Microsoft Exchange Server 2007 and Office 365. Check whether connectors are already set up for your organization. To check, go to the **connectors** page in the EAC.  <br/> |
-|Non-Microsoft SMTP server  <br/> |Exchange Online Protection  <br/> Office 365 with Exchange Online  <br/> |Not available  <br/> |Yes.  <br/> Set them up by following the instructions in [Set up connectors to route mail between Office 365 and your own email servers](set-up-connectors-to-route-mail.md).  <br/> |
+|Non-Microsoft SMTP server <br/> |Exchange Online Protection  <br/> Office 365 with Exchange Online  <br/> |Not available  <br/> |Yes.  <br/> Set them up by following the instructions in [Set up connectors to route mail between Office 365 and your own email servers](set-up-connectors-to-route-mail.md).  <br/> |
    
 ### How do connectors in EOP or Exchange Online work with my own email servers (also called on-premises servers)?
 <a name="HowDoConnectors1"> </a>

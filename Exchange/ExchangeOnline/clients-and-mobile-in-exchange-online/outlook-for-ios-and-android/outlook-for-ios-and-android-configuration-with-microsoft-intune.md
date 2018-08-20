@@ -2,6 +2,7 @@
 title: "Manage Outlook for iOS and Android configuration with Microsoft Intune"
 ms.author: dmaguire
 author: msdmaguire
+ms.reviewer: smithre4
 manager: serdars
 ms.date: 6/1/2018
 ms.audience: ITPro
@@ -92,7 +93,7 @@ The settings in the following table allow you to control the contact fields that
 |com.microsoft.outlook.ContactSync.NicknameAllowed  <br/> |This value specifies if the contact's nickname should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True  <br/> |
 |com.microsoft.outlook.ContactSync.NotesAllowed  <br/> |This value specifies if the contact's notes should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True  <br/> |
 |com.microsoft.outlook.ContactSync.PhoneHomeAllowed  <br/> |This value specifies if the contact's home phone number should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True  <br/> |
-|com.microsoft.outlook.ContactSync.PhoneHomeFaxAllowe  <br/> |This value specifies if the contact's home fax number should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True  <br/> |
+|com.microsoft.outlook.ContactSync.PhoneHomeFaxAllowed  <br/> |This value specifies if the contact's home fax number should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True  <br/> |
 |com.microsoft.outlook.ContactSync.PhoneMobileAllowed  <br/> |This value specifies if the contact's mobile phone number should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True  <br/> |
 |com.microsoft.outlook.ContactSync.PhoneOtherAllowed  <br/> |This value specifies if the contact's other phone number should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True  <br/> |
 |com.microsoft.outlook.ContactSync.PhonePagerAllowed  <br/> |This value specifies if the contact's pager phone number should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True  <br/> |
