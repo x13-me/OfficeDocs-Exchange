@@ -121,7 +121,7 @@ Before you migrate mailboxes to Office 365 by using a cutover migration, there a
     
     For instructions about how to set these permissions, see [Assign Exchange permissions to migrate mailboxes to Office 365](assign-permissions-for-migration.md).
     
-6. **Disable Unified Messaging (UM)** If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. Turn on UM or the mailboxes after migration is complete. For how-to steps, see [Create a list of mailboxes to migrate](perform-a-staged-migration/perform-a-staged-migration.md#BKMK_Step4).
+6. **Disable Unified Messaging (UM)** If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. Turn on UM or the mailboxes after migration is complete. 
     
 7. **Create security groups and clean up delegates** Because the email migration service can't detect whether on-premises Active Directory groups are security groups, it can't provision any migrated groups as security groups in Office 365. If you want to have security groups in Office 365, you must first provision an empty mail-enabled security group in Office 365 before starting the cutover migration. 
     
