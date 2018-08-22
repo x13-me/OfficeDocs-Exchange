@@ -1,149 +1,184 @@
 ---
-title: "Recreating arbitration mailboxes"
+title: "Recreate missing arbitration mailboxes"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 8/21/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b9004562-b0f2-4460-a623-94883834f73f
-description: "Summary: About arbitration mailboxes in Exchange 2016 and how to re-create them."
+description: "Summary: Lean about the built-in arbitration mailboxes in Exchange 2016 and how to recreate them."
 ---
 
-# Recreating arbitration mailboxes
+# Recreate missing arbitration mailboxes
 
- **Summary**: About arbitration mailboxes in Exchange 2016 and how to re-create them.
+ **Summary**: Lean about the built-in arbitration mailboxes in Exchange 2016 and how to recreate them.
   
-Exchange 2016 comes with five system mailboxes known as *arbitration mailboxes*. Arbitration mailboxes are used for storing different types of system data and for managing messaging approval workflow. The below chart lists each type of arbitration mailbox and their responsibilities.
+Exchange 2016 comes with five system mailboxes known as *arbitration mailboxes*. Arbitration mailboxes are used for storing different types of system data and for managing messaging approval workflow. The following table lists each type of arbitration mailbox and their responsibilities.
   
 |**Arbitration mailbox Name**|**Display name**|**Persisted capabilities**|**Function**|
 |:-----|:-----|:-----|:-----|
-|FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042  <br/> |Microsoft Exchange Federation Mailbox  <br/> |{}  <br/> |This mailbox stores data used to maintain federation between different Exchange organizations. This includes Rights Management Services, cross-premises mail-flow monitoring probes and responses, notifications, online archives, messaging records management, and cross-premises free/busy information.  <br/> |
-|SystemMailbox{1f05a927-9350-4efe-a823-5529c2d64109}  <br/> |Microsoft Exchange Approval Assistant  <br/> |{}  <br/> |This mailbox is provisioned for use by the Exchange approval framework for recipient moderation and auto group approval requests.  <br/> |
-|Migration.8f3e7716-2011-43e4-96b1-aba62d229136  <br/> |Microsoft Exchange Migration  <br/> |{OrganizationCapabilityManagement}  <br/> |Stores data for the Exchange migration service to use when moving mailboxes in batches.  <br/> |
-|SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}  <br/> |Microsoft Exchange  <br/> |{OrganizationCapabilityUMDataStorage}  <br/> |Discovery system mailbox.  <br/> Provisioned for use by e-Discovery feature, which is used by compliance officers to locate messages that match specified selection criteria. This mailbox is also used by Unified Messaging for storing UM console attending files and other information.  <br/> |
-|SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}  <br/> |Microsoft Exchange  <br/> |{OrganizationCapabilityUMGrammarReady, OrganizationCapabilityPstProvider, OrganizationCapabilityMessageTracking, OrganizationCapabilityMailRouting, OrganizationCapabilityClientExtensions, OrganizationCapabilityGMGen, OrganizationCapabilityOABGen, OrganizationCapabilityUMGrammar}  <br/> |This is known as an organization mailbox. It is used for creating offline address books (OABs). To load-balance OAB generation across your organization, including across geographically separate sites, you can create additional organization mailboxes.  <br/> |
+|FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042|Microsoft Exchange Federation Mailbox|{}|This mailbox stores data used to maintain federation between different Exchange organizations. This includes Rights Management Services, cross-premises mail-flow monitoring probes and responses, notifications, online archives, messaging records management, and cross-premises free/busy information.|
+|SystemMailbox{1f05a927-XXXX-XXXX-XXXX-XXXXXXXXXXXX} <br/> (for example, SystemMailbox{1f05a927-9350-4efe-a823-5529c2d64109}; most of the mailbox name is unique to your organization)|Microsoft Exchange Approval Assistant|{}|This mailbox is provisioned for use by the Exchange approval framework for recipient moderation and auto group approval requests.|
+|Migration.8f3e7716-2011-43e4-96b1-aba62d229136|Microsoft Exchange Migration|{OrganizationCapabilityManagement}|Stores data for the Exchange migration service to use when moving mailboxes in batches.|
+|SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}|Microsoft Exchange|{OrganizationCapabilityUMDataStorage}|Discovery system mailbox. <br/> Provisioned for use by e-Discovery feature, which is used by compliance officers to locate messages that match specified selection criteria. This mailbox is also used by Unified Messaging for storing UM console attending files and other information.|
+|SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}|Microsoft Exchange|{OrganizationCapabilityUMGrammarReady, OrganizationCapabilityPstProvider, OrganizationCapabilityMessageTracking, OrganizationCapabilityMailRouting, OrganizationCapabilityClientExtensions, OrganizationCapabilityGMGen, OrganizationCapabilityOABGen, OrganizationCapabilityUMGrammar}|This is known as an organization mailbox. It is used for creating offline address books (OABs). To load-balance OAB generation across your organization, including across geographically separate sites, you can create additional organization mailboxes.|
    
 If you need to re-create one of more of these arbitration mailboxes, see the instructions that follow.
   
-## What you should know before you begin
+## What do you need to know before you begin?
 
 - Estimated time to complete: 10 minutes per procedure.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
+- You need to be assigned permissions before you can perform these procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
+
+- To run Setup.exe /PrepareAD, your account needs to be a member of the Enterprise Admins security group.
+
+- The computer that you use to run Setup.exe /PrepareAD requires access to Setup.exe in the Exchange installation files:
+
+    1. Use your most recently downloaded copy of the Exchange ISO image file, or download an updated copy from [Updates for Exchange 2016](../../new-features/updates.md).
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
+    2. In File Explorer, right-click on the Exchange ISO image file and then select **Mount**. Note the virtual DVD drive letter that's assigned.
+
+    3. Opwn a Windows Command Prompt window. For example:
+
+      - Press the Windows key + 'R' to open the **Run** dialog, type cmd.exe, and then press **OK**.
+
+      - Press **Start**. In the **Search** box, type **Command Prompt**, then in the list of results, select **Command Prompt**.
+
+- For more information about opening the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+
+- For more information about running Exchange Setup in unattended mode, see [Install Exchange 2016 using unattended mode](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
     
-## Use Exchange Management Shell to re-create an arbitration mailbox
+## Re-create an arbitration mailbox
 
 Use the following instructions to re-create a particular type of arbitration mailbox.
   
-> [!NOTE]
-> All steps in the following sections must be run from the same directory where you extracted the Exchange installation media.
-  
 ### Re-create the Microsoft Exchange Federation Mailbox
 
-To re-create the arbitration mailbox FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042:
+To re-create the arbitration mailbox FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042, run the following commands:
   
-1. If any arbitration mailboxes are missing, run the following command:
+1. If the arbitration mailbox is missing, run the following command from a Windows Command Prompt window:
     
     ```
-    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
     ```
 
-2. In the Exchange Management Shell, run the following:
+  For example:
+
+    ```
+    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+    ```
+
+2. In the Exchange Management Shell, run the following command:
     
     ```
-    Enable-Mailbox -Arbitration -Identity   "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
+    Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
     ```
 
 ### Re-create the Microsoft Exchange Approval Assistant mailbox
 
-To re-create the arbitration mailbox SystemMailbox{1f05a927-9350-4efe-a823-5529c2d64109}:
+To re-create the arbitration mailbox SystemMailbox{1f05a927-XXXX-XXXX-XXXX-XXXXXXXXXXXX}, run the following commands:
   
-1. If any arbitration mailboxes are missing, run the following command:
+1. If the arbitration mailbox is missing, run the following command from a Windows Command Prompt window:
     
     ```
-    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
     ```
 
-2. In the Exchange Management Shell, run the following:
+  For example:
+
+    ```
+    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+    ```
+
+2. In the Exchange Management Shell, run the following command:
     
     ```
-    Get-User | Where-Object {$_.Name -like "SystemMailbox{1f05a927-7709-4e35-9dbe-d0f608fb781a}"} | Enable-Mailbox -Arbitration
+    Get-User | where {$_.Name -like "SystemMailbox{1f05a927*"} | Enable-Mailbox -Arbitration
     ```
 
 ### Re-create the Microsoft Exchange Migration mailbox
 
-To re-create the arbitration mailbox Migration.8f3e7716-2011-43e4-96b1-aba62d229136:
-  
-1. If any arbitration mailboxes are missing, run the following command:
+To re-create the arbitration mailbox Migration.8f3e7716-2011-43e4-96b1-aba62d229136, run the following commands in the Exchange Management Shell:
+
+1. If the arbitration mailbox is missing, run the following command from a Windows Command Prompt window:
     
     ```
-    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+    ```
+  
+    For example:
+
+    ```
+    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
     ```
 
-2. In the Exchange Management Shell, run the following:
+2. In the Exchange Management shell, run the following command:
     
     ```
     Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
     ```
 
-3. In the Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) by running the following command:
+3. In the Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) for the mailbox by running the following command:
     
     ```
-    Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management:$True -Force
+    Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management $true -Force
     ```
 
 ### Re-create the Microsoft Exchange Discovery system mailbox
 
-To re-create the arbitration mailbox SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}:
+To re-create the arbitration mailbox SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}, run the following command from a Windows Command Prompt window:
   
-1. Run the following command:
-    
-    ```
-    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
-    ```
+```
+<Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+```
+
+For example:
+
+```
+E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+```
 
 ### Re-create the Microsoft Exchange organization mailbox for OABs
 
-To re-create the arbitration mailbox SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}:
-  
-1. If any arbitration mailboxes are missing, run the following command:
+To re-create the arbitration mailbox SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}, run the following commands:
+
+1. If the arbitration mailbox is missing, run the following command from a Windows Command Prompt window:
     
     ```
-    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
     ```
 
-2. In the Exchange Management Shell, run the following:
+    For example:
+
+    ```
+    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+    ```
+
+2. In the Exchange Management Shell, run the following command:
     
     ```
     Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
     ```
 
-3. In the Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) by running the following command:
+3. In the Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) for the mailbox by running the following command:
     
     ```
-    Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration | Set-Mailbox -Arbitration -UMGrammar:$True -OABGen:$True -GMGen:$True -ClientExtensions:$True -MessageTracking:$True -PstProvider:$True -MaxSendSize 1GB -Force
+    Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration | Set-Mailbox -Arbitration -UMGrammar $true -OABGen $true -GMGen $true -ClientExtensions $true -MessageTracking $true -PstProvider $true -MaxSendSize 1GB -Force
     ```
 
-After you're finished, if you run the following command, you'll see that 46, 47, and 51 are missing.
+4. In the Exchange Management Shell, add the required capabilities to the mailbox by running the following commands:
 
-```
-$OABMBX = Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration (Get-ADUser $OABMBX.SamAccountName -Properties *).msExchCapabilityIdentifiers
-```
+    ```
+    $OABMBX = Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration; Set-ADUser $OABMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="40","42","43","44","47","51","52","46"}
+    ```
 
-Run the following command to add all of the capabilities back: 
-  
-```
-Set-ADUser $OABMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="40","42","43","44","47","51","52","46"}
-```
+## How do you know this worked?
 
-## How do I know this worked?
-
-To verify that you have successfully re-created the arbitration mailbox, use the **Get-Mailbox** cmdlet with the _Arbitration_ switch to retrieve system mailboxes.
+To verify that you've successfully re-created the arbitration mailbox, use the **Get-Mailbox** cmdlet with the _Arbitration_ switch to retrieve system mailboxes.
   
 ```
 Get-Mailbox -Arbitration | Format-Table Name, DisplayName
@@ -152,6 +187,4 @@ Get-Mailbox -Arbitration | Format-Table Name, DisplayName
 View the results of the command to verify that appropriate system mailbox, either by Name or Display Name from the above table, has been re-created.
   
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-  
-
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
