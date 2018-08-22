@@ -70,7 +70,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
 On a computer that is domain joined to your on-premises organization, sign in to your Office 365 account by using your global admin credentials, and start the Exchange Hybrid Configuration Wizard on the **Data migration** page of the Office 365 admin page. 
   
-1. In the Office 365 Admin center, go to **Users** \> **Data migration**.
+1. In the Office 365 Admin center, go to **Setup** \> **Data migration**.
     
     ![Go to Users \> Data migration on the Office 365 Admin page](media/95477fe8-d213-462d-bd77-a00e2354234b.png)
   
@@ -121,7 +121,7 @@ In the Admin center, go to **Users** \> **Active users** and follow these instru
 
 After you assign licences to your users you can go to the Data migration page to start migrating their mailboxes.
   
-1. Go to **Users** \> **Data migration**, and on the **Migration** page choose **Exchange** for your data service. 
+1. Go to **Setup** \> **Data migration**, and on the **Migration** page choose **Exchange** for your data service. 
     
 2. On the **Data migration** page, select the users whose mailboxes you want to migrate and then choose **Start migration**.
     
