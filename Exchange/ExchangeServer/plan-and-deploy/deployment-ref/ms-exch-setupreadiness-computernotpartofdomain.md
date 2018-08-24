@@ -20,7 +20,7 @@ Exchange Setup can't continue because it detected that the target server isn't a
   
 For more information, see the following topics:
 
-- [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md).
+- [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements-2016.md).
 
 - [Exchange 2019 system requirements](../system-requirements-2019.md)
   

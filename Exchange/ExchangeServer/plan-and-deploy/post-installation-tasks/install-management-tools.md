@@ -19,9 +19,9 @@ description: "Summary: Learn how to install the Exchange 2016 or Exchange 2019 m
   
 The management tools in Exchange Server 2016 and Exchange Server 2019 include the Exchange Management Shell and the Exchange Toolbox. You can install the management tools on other client computers or servers in the Active Directory domain to help you manage your Exchange organization. The management tools have similar operating system, .NET Framework, and Windows Management Framework (Windows PowerShell) requirements as an Exchange server. The notable exception is: you can install the management tools on client versions of Windows. For more information, see:
 
-- [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites.md).
+- [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements-2016.md) and [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites-2016.md).
 
-- [Exchange 2019 system requirements](../../plan-and-deploy/system-requirements-2019.md) and [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites-2019.md).
+- [Exchange 2019 system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites.md).
   
 > [!NOTE]
 > The management tools don't include the Exchange admin center (EAC). The EAC is a web-based console that's hosted on Exchange 2016 Mailbox servers, and like any web site, you can access the EAC from other computers. For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md).
@@ -79,7 +79,7 @@ For more information about the Exchange Management Shell and the Exchange Toolbo
     
     - **Automatically install Windows Server roles and features that are required to install Exchange**: Select this option to have the Setup wizard install the required Windows prerequisites. You might need to reboot the computer to complete the installation of some Windows features. If you don't select this option, you need to install the Windows features manually.
     
-      **Note**: Selecting this option installs only the _Windows features_ that are required by Exchange. You need to install other prerequisites manually. For more information, see [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites.md) or [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites-2019.md).
+      **Note**: Selecting this option installs only the _Windows features_ that are required by Exchange. You need to install other prerequisites manually. For more information, see [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites-2016.md) or [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites.md).
     
     Click **Next** to continue.
 

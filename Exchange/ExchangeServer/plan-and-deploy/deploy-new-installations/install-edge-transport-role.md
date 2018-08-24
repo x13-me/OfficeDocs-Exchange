@@ -23,9 +23,9 @@ Before you install an Exchange Server 2016 or Exchange Server 2019 Edge Transpor
 
 - Verify the network, computer hardware, operating system, and software requirements at:
 
-  - [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites.md).
+  - [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements-2016.md) and [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites-2016.md).
   
-  - [Exchange 2019 system requirements](../../plan-and-deploy/system-requirements-2019.md) and [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites-2019.md).
+  - [Exchange 2019 system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites.md).
 
 - Verify the local account on the targer computer is a member of the local Administrators group.
 
@@ -88,7 +88,7 @@ To install the Mailbox role on a computer, see [Install Exchange Mailbox servers
     
     - **Automatically install Windows Server roles and features that are required to install Exchange**: Select this option to have the Setup wizard install the required Windows prerequisites. You might need to reboot the computer to complete the installation of some Windows features. If you don't select this option, you need to install the Windows features manually.
     
-      **Note**: Selecting this option installs only the _Windows features_ that are required by Exchange. You need to install other prerequisites manually. For more information, see [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites.md) or [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites-2019.md).
+      **Note**: Selecting this option installs only the _Windows features_ that are required by Exchange. You need to install other prerequisites manually. For more information, see [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites-2016.md) or [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites.md).
     
     Click **Next** to continue.
 

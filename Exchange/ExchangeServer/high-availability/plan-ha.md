@@ -36,7 +36,7 @@ Before deploying a database availability group (DAG) and creating mailbox databa
 ## Hardware requirements
 <a name="HR"> </a>
 
-Generally, there are no special hardware requirements specific to DAGs or mailbox database copies. The servers used must meet all of the requirements set forth in [Exchange Server prerequisites](../plan-and-deploy/prerequisites.md)and [Exchange Server system requirements](../plan-and-deploy/system-requirements.md).
+Generally, there are no special hardware requirements specific to DAGs or mailbox database copies. The servers used must meet all of the requirements set forth in [Exchange Server prerequisites](../plan-and-deploy/prerequisites-2016.md)and [Exchange Server system requirements](../plan-and-deploy/system-requirements-2016.md).
 
 ## Storage requirements
 <a name="StoreReq"> </a>

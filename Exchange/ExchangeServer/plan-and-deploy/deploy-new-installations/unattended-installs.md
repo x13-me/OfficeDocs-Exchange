@@ -69,9 +69,9 @@ The optional (supporting) command line switches that are available in unattended
 
 - Verify the network, computer hardware, operating system, and software requirements at:
 
-  - [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites.md).
+  - [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements-2016.md) and [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites-2016.md).
   
-  - [Exchange 2019 system requirements](../../plan-and-deploy/system-requirements-2019.md) and [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites-2019.md).
+  - [Exchange 2019 system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites.md).
 
 - Verify that you've read the release notes at [Release notes for Exchange 2016](../../release-notes.md) or [Release notes for Exchange 2019](../../release-notes-2019.md).
 
