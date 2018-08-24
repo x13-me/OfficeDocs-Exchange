@@ -22,6 +22,6 @@ For more information, see the following topics:
 
 - [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements-2016.md).
 
-- [Exchange 2019 system requirements](../system-requirements-2019.md)
+- [Exchange 2019 system requirements](../system-requirements.md)
   
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

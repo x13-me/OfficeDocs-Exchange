@@ -33,11 +33,11 @@ This topi contains links to topics and information about planning for and then d
 
 > Learn about the Mailbox and Edge Transport server roles and more in Exchange.
 
-[Exchange 2016 system requirements](system-requirements.md) or [Exchange 2019 system requirements](system-requirements-2019.md)
+[Exchange 2016 system requirements](system-requirements-2016.md) or [Exchange 2019 system requirements](system-requirements.md)
 
 > Understand the system requirements that need to be satisfied in your organization before you can install Exchange.
 
-[Exchange 2016 prerequisites](prerequisites.md) or [Exchange 2019 prerequisites](prerequisites-2019.md)
+[Exchange 2016 prerequisites](prerequisites-2016.md) or [Exchange 2019 prerequisites](prerequisites.md)
 
 > Learn about the Windows Server features and the other software that needs to be installed for a successful installation of Exchange.
 

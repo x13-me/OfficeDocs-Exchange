@@ -49,7 +49,7 @@ Office Online Server requires the following to install:
 - Exchange 2016 Cumulative Update 1 (CU1) or later
 
     > [!NOTE]
-    > If you're running Windows Server 2016, you will need Exchange 2016 CU3 or later, as detailed in [Exchange 2016 prerequisites](prerequisites.md).
+    > If you're running Windows Server 2016, you will need Exchange 2016 CU3 or later, as detailed in [Exchange 2016 prerequisites](prerequisites-2016.md).
 
 - [Microsoft .NET Framework 4.5.2](https://go.microsoft.com/fwlink/p/?linkId=616890)
 

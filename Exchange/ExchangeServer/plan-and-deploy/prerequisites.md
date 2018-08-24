@@ -22,6 +22,8 @@ description: "Summary: Windows operating system prerequisites for Exchange 2019 
 
 This topic provides the steps for installing the necessary Windows Server operating system prerequisites for Exchange 2019 Mailbox servers and Edge Transport servers, and also the Windows prequisites for installing the Exchange 2019 management tools on Windows client computers.
 
+**Note**: For the Exchange 2016 prerequisites, see [Exchange 2016 prerequisites](prerequisites-2016.md).
+
 After you've prepared your environment for Exchange 2019, use the Exchange Deployment Assistant for the next steps in your actual deployment. For information on hybrid deployments, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581(v=exchg.150).aspx).
 
 > [!TIP]
