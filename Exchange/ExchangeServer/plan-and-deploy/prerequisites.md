@@ -66,27 +66,32 @@ For more information about preparing Active Directory, see [Prepare Active Direc
 
 ## Windows Server 2019 prerequisites
 
-The requirements to install Exchange 2019 on computers running Windows Server 2019 are described in the following sections.  Multiple options to install pre-requisites exist.  The easiest and recommend option is to simply use the /InstallWindowsComponents when invoking setup from the command line. The graphical setup program provides the option to Install Windows Prerequisites automatically as well.  Using either option you will no longer be required to restart your computer after the Windows components are added.  The option to specify individual features as specified below is also available.  
+The requirements to install Exchange 2019 on computers running Windows Server 2019 are described in the following sections.  Multiple options to install pre-requisites exist.  The recommended option is to simply use the setup parameter /InstallWindowsComponents when using the command line setup experience. The graphical setup program provides the option to install windows prerequisites automatically as well.  Using either of these options you will no longer be required to restart your computer after the Windows components are added.  The option to add individual Windows features as specified below is also available.  
 
 ### Mailbox servers on Windows Server 2019
 
-1. Run the following command in Windows PowerShell to install the required Windows components:
+1. Install the [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913).
+
+2. Run the following command in Windows PowerShell to install the required Windows components:
 
     ```
     Install-WindowsFeature AS-HTTP-Activation, Server-Media-Foundation, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
     ```
 
-2. Install the [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913).
+3. Install the [Unified Communications Managed API 4.0](https://www.microsoft.com/download/details.aspx?id=34992).  This package is available for download and in the \UCMARedist folder on the Exchange Server media.
+
+   > [!NOTE]
+    > When installing on Windows Server Core, you must use the package located in \UCMARedist on distributed media.
 
 ### Edge Transport servers on Windows Server 2019
 
-1. Run the following command in Windows PowerShell to install the required Windows components:
+1. Install the [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913).
+
+2. Run the following command in Windows PowerShell to install the required Windows components:
 
     ```
     Install-WindowsFeature ADLDS
     ```
-
-2. Install the [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913).
 
 ## Windows client prerequisites for the Exchange 2019 management tools
 
