@@ -119,7 +119,7 @@ We strongly recommend that you use the latest version of the .NET Framework that
 
 ## Skype For Business integration
 
-If integrating Skype for Business presence and instant messaging with Exchange Server, Skype for Business 2013 Service Pack 1 or later is required.
+If integrating Skype for Business presence and instant messaging with Exchange Server, Skype for Business 2013 Cumulative Update 1 or later is required.
 
 ## Exchange third-party clients
 
