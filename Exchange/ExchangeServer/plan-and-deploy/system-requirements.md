@@ -117,7 +117,7 @@ We strongly recommend that you use the latest version of the .NET Framework that
 
 ## Lync/Skype For Business Server integration
 
-If integrating Lync presence and instant messaging with Exchange Server, Lync Server 2013 Cumulative Update 10 or later is required.  If integrating Skype for Business presence and instant messaging with Exchange server, Skype for Business Server Cumulative Update 7 or later is required.
+If integrating Lync presence and instant messaging with Exchange Server, Lync Server 2013 Cumulative Update 10 or later is required.  If integrating Skype for Business presence and instant messaging with Exchange Server, Skype for Business Server Cumulative Update 7 or later is required.
 
 ## Exchange third-party clients
 
