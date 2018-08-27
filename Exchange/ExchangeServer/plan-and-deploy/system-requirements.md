@@ -86,9 +86,9 @@ The supported operating systems for Exchange 2019 are described in the following
 
 - Installing Exchange 2019 on a computer that's running Nano Server isn't supported. 
 
-**Supported Windows Management Framework versions for Exchange 2019 servers**
+**Supported Powershell versions for Exchange 2019 servers**
 
-Exchange 2019 servers support the version of Windows Management Framework (WMF; basically, Windows PowerShell) that's included in the release of Windows Server where Exchange is installed. Don't install stand-alone downloads of the WMF on Exchange servers.
+Exchange 2019 servers support the version of PowerShell that's included in the release of Windows Server where Exchange is installed. Don't install stand-alone downloads of WMF or PowerShell on Exchange servers.
 
  **Installing other software on Exchange 2019 servers**
 
@@ -101,7 +101,7 @@ We strongly recommend that you use the latest version of the .NET Framework that
 > [!IMPORTANT]
 > **Releases of .NET Framework that aren't listed in the table below aren't supported on any release of Exchange 2019**. This includes minor and patch-level releases of .NET Framework.
 
-|**Exchange version**|**.NET Framework 4.7.3**|
+|**Exchange version**|**.NET Framework 4.7.2**|
 |:-----|:-----|
 |Exchange 2019 RTM|Supported|
  
@@ -114,6 +114,10 @@ We strongly recommend that you use the latest version of the .NET Framework that
 - Outlook 2016 for Mac
 
 - Outlook for Mac for Office 365
+
+## Skype For Business integration
+
+If integrating Skype for Business presence and instant messaging with Exchange Server, Skype for Business 2013 Cumulative Update 1 or later is required.
 
 ## Exchange third-party clients
 
