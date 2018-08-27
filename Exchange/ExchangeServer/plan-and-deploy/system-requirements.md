@@ -18,11 +18,9 @@ description: "Summary: Learn about what you need to have in your environment bef
  **Summary**: Learn about what you need to have in your environment before installing Exchange Server 2019.
 
 > [!TIP]
-> Coming from the Exchange Deployment Assistant? Click [Exchange 2013 system requirements](https://technet.microsoft.com/library/aa996719(v=exchg.150).aspx).
+> Looking for requirements for previous versions? Click [Exchange 2016 system requirements](system-requirements-2016.md) or [Exchange 2013 system requirements](https://technet.microsoft.com/library/aa996719(v=exchg.150).aspx).
 
 Before you install Exchange Server 2019, we recommend that you review this topic to ensure your network, hardware, software, clients, and other elements meet the requirements for Exchange 2019. Also, make sure you understand the coexistence scenarios that are supported for Exchange 2019 and earlier versions of Exchange.
-
-**Note**: For the Exchange 2016 system requirements, see [Exchange 2016 system requirements](system-requirements-2016.md).
 
 ## Supported coexistence scenarios
 
