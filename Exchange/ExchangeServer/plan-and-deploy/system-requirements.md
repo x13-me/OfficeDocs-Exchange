@@ -115,9 +115,9 @@ We strongly recommend that you use the latest version of the .NET Framework that
 
 - Outlook for Mac for Office 365
 
-## Skype For Business integration
+## Lync/Skype For Business Server integration
 
-If integrating Skype for Business presence and instant messaging with Exchange Server, Skype for Business 2013 Cumulative Update 1 or later is required.
+If integrating Lync presence and instant messaging with Exchange Server, Lync 2013 Cumulative Update 10 or later is required.  If integrating Skype for Business presence and instant messaging with Exchange server, Skype for Business Cumulative Update 11 or later is required.
 
 ## Exchange third-party clients
 
