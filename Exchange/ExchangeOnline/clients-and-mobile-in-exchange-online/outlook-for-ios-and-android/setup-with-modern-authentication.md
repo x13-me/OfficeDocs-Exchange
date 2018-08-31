@@ -4,7 +4,7 @@ ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
 manager: serdars
-ms.date: 1/29/2018
+ms.date: 8/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -17,13 +17,13 @@ description: "Summary: How users with modern authentication-enabled accounts can
 
  **Summary**: How users with modern authentication-enabled accounts can quickly set up their Outlook for iOS and Android accounts in Exchange Online.
   
-There are two ways that users in your Exchange Online organization can set up their own Outlook for iOS and Android accounts: AutoDetect and single sign-on. Both methods leverage modern authentication.
+There are two ways that users in your Exchange Online organization can set up their own Outlook for iOS and Android accounts: AutoDetect and single sign-on. Both methods leverage modern authentication. In addition, Outlook for iOS and Android offers IT administrators the ability to "push" account configurations to their Office 365 users, as well as, control whether Outlook for iOS and Android supports personal accounts.
   
 ## AutoDetect
 
 Outlook for iOS and Android offers a solution called AutoDetect that helps end-users quickly setup their accounts. AutoDetect will first determine which type of account a user has, based on the SMTP domain. Account types that are covered by this service include Office 365, Outlook.com, Google, Yahoo, and iCloud. Next, AutoDetect will make the appropriate configurations to the app on the user's device based on that account type. This saves time for users and eliminates the need for manual input of configuration settings like hostname and port number.
   
-For modern authentication, which is used by all Office 365 accounts and [on-premises accounts that are part of a hybrid configuration](https://blogs.technet.microsoft.com/exchange/2017/09/27/tap-outlook-mobile-support-for-exchange-on-premises-with-microsoft-enterprise-mobility-security/), AutoDetect queries Exchange Online for a user's account information and then configures Outlook for iOS and Android on the user's device so that the app can connect to Exchange Online. During this process, the only information required from the user is their SMTP address and credentials.
+For modern authentication, which is used by all Office 365 accounts and [hybrid modern authenticated enabled on-premises accounts](https://docs.microsoft.com/en-us/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth), AutoDetect queries Exchange Online for a user's account information and then configures Outlook for iOS and Android on the user's device so that the app can connect to Exchange Online. During this process, the only information required from the user is their SMTP address and credentials.
   
 The following images show an example of account configuration via AutoDetect:
   
@@ -35,7 +35,7 @@ In the event that AutoDetect fails for a user, the following images show an alte
   
 ## Single sign-on
 
-For devices enrolled in Intune Company Portal, Outlook for iOS and Android supports single sign-on via authentication token re-use. If a user is already signed in to another Office 365 app on their device, like Word or Company Portal, Outlook for iOS for Android will detect that token and use it for its own authentication. When such a token is detected, users already enrolled in Outlook for iOS and Android will see their account available as "Found" under **Accounts** on the **Settings** menu. New users will see their account in the initial account setup screen. 
+Outlook for iOS and Android supports single sign-on via authentication token re-use. If a user is already signed in to another Microsoft app on their device, like Word or Company Portal, Outlook for iOS for Android will detect that token and use it for its own authentication. When such a token is detected, users already enrolled in Outlook for iOS and Android will see their account available as "Found" under **Accounts** on the **Settings** menu. New users will see their account in the initial account setup screen. 
   
 The following images show an example of account configuration via single sign-on for a first-time user:
   
@@ -45,4 +45,30 @@ If a user already has Outlook for iOS and Android, such as for a personal accoun
   
 ![Alternative single-sign on path for Outlook for iOS and Android](../../media/e24efc89-10e1-4a11-b80c-bbfc08033334.png)
   
+## Account setup configuration via enterprise mobility management
 
+Outlook for iOS and Android offers IT administrators the ability to "push" account configurations to their Office 365 users. This capability works with any Mobile Device Management (MDM) provider who uses the [Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) channel for iOS or the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android.
+
+For users enrolled in Microsoft Intune, you can deploy the account configuration settings using Intune in the Azure Portal.
+
+Once account setup configuration has been setup in the MDM provider and the user enrolls their device, Outlook for iOS and Android will detect that an account is "Found" and will then prompt the user to add the account. The only information the user needs to enter to complete the setup process is their password. Then, the user's mailbox content will load and the user can begin using the app.
+
+For more information on the account setup configuration configuration keys needed to enable this functionality, please see the Account setup configuration section in [Outlook for iOS and Android App Configuration Settings](https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+
+## Organization allowed accounts mode
+
+Respecting the data security and compliance policies of our largest and highly regulated customers is a key pillar to the Office 365 value. Some companies have a requirement to capture all communications information within their corporate environment, as well as, ensure the devices are only used for corporate communications. To support these requirements, Outlook for iOS and Android on corporate-managed devices can be configured to only allow a single, corporate account to be provisioned within Outlook for iOS and Android. Like with account setup configuration, this capability works with any Mobile Device Management (MDM) provider who uses the [Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) channel for iOS or the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android.
+
+For more information on the settings that need to be configured to deploy Organization Allowed Accounts mode, please see the Organization allowed accounts mode section in [Outlook for iOS and Android App Configuration Settings](https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+
+> [!NOTE]
+> Account setup configuration and Organization allowed accounts mode can be configured together to simplify account setup.
+
+In order to ensure Android Enterprise can only deploy the corporate account within the work profile’s Outlook for Android app, Azure Active Directory conditional access policies must be configured for the user population with the grant controls [Require devices to be marked as compliant](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-managed-devices#require-device-to-be-marked-as-compliant) and [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference). To do this, you will need two conditional access policies, with each policy targeting all potential users. Details on creating these polices can be found in [Azure Active Directory app-based conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-mam#exchange-online-policy).
+
+> [!IMPORTANT]
+> [Require devices to be marked as compliant](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-managed-devices#require-device-to-be-marked-as-compliant) grant control requires the device to be managed by Intune. 
+
+1. The first policy allows Outlook for iOS and Android, and it blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online. See "Step 1 - Configure an Azure AD conditional access policy for Exchange Online", but for the fifth step select  “Require device to be marked as compliant”, “Require approved client app”, and “Require all the selected controls”.
+
+2. The second policy prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online. See "Step 2 - Configure an Azure AD conditional access policy for Exchange Online with Active Sync (EAS)."
