@@ -15,9 +15,7 @@ description: "Summary: A collection of topic links that contain the information 
 
 # Deploy new installations of Exchange
 
- **Summary**: A collection of topic links that contain the information that you need to install Exchange 2016 or Exchange 2019 in various scenarios.
-
-Before you begin your installation of Exchange Server 2016 or Exchange Server 2019, see [Planning and deployment](../../plan-and-deploy/plan-and-deploy.md) for important planning information, and information about system requirements and prerequisites.
+Before you begin your installation of Exchange Server, see [Planning and deployment](../../plan-and-deploy/plan-and-deploy.md) for important planning information, and information about system requirements and prerequisites.
   
 The following topics provide information about deploying new installations of Exchange 2019 in your organization:
   
