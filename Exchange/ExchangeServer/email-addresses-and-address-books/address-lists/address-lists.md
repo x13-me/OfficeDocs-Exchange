@@ -53,7 +53,7 @@ Recipient filters identify the recipients that are included in address lists and
 ## Global address lists
 <a name="GALs"> </a>
 
-By default, a new installation of Exchange 2016 creates an GAL named Default Global Address List that's the primary repository of all recipients in the Exchange organization. Typically, most organizations have only one GAL, because users can only see and use one GAL in Outlook and Outlook on the web (formerly known as Outlook Web App). You might need to create multiple GALs if you want to prevent groups of recipients from seeing each other (for example, you single Exchange organization contains two separate companies). If you plan on creating additional GALs, consider the following issues:
+By default, a new installation of Exchange 2016 creates an GAL named Default Global Address List that's the primary repository of all recipients in the Exchange organization. Typically, most organizations have only one GAL, because users can only see and use one GAL in Outlook and Outlook on the web (formerly known as Outlook Web App). You might need to create multiple GALs if you want to prevent groups of recipients from seeing each other (for example, your single Exchange organization contains two separate companies). If you plan on creating additional GALs, consider the following issues:
 
 - You can only use the Exchange Management Shell to create, modify, remove, and update GALs.
 
