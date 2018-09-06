@@ -27,8 +27,6 @@
 #### [Create custom DLP policy](../security-and-compliance/data-loss-prevention/create-custom-dlp-policy.md)
 #### [Policy Tips](../security-and-compliance/data-loss-prevention/policy-tips.md)
 #### [Manage policy tips](../security-and-compliance/data-loss-prevention/manage-policy-tips.md)
-#### [Document Fingerprinting](../security-and-compliance/data-loss-prevention/document-fingerprinting.md)
-#### [Protect data with fingerprinting](../security-and-compliance/data-loss-prevention/protect-data-with-fingerprinting.md)
 ### [Exchange auditing reports](../security-and-compliance/exchange-auditing-reports/exchange-auditing-reports.md)
 #### [Export mailbox audit logs](../security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs.md)
 #### [Non-owner mailbox access report](../security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report.md)
