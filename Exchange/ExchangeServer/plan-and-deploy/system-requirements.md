@@ -15,8 +15,6 @@ description: "Summary: Learn about what you need to have in your environment bef
 
 # Exchange 2019 system requirements
 
- **Summary**: Learn about what you need to have in your environment before installing Exchange Server 2019.
-
 > [!TIP]
 > Looking for requirements for previous versions? Click [Exchange 2016 system requirements](system-requirements-2016.md) or [Exchange 2013 system requirements](https://technet.microsoft.com/library/aa996719(v=exchg.150).aspx).
 
@@ -30,7 +28,7 @@ The supported coexistence scenarios between Exchange 2019 and earlier versions o
 |:-----|:-----|
 |Exchange 2010 and earlier versions|Not supported|
 |Exchange 2013|Supported with Exchange 2013 Cumulative Update 21 (CU21) or later on all Exchange 2013 servers in the organization, including Edge Transport servers.|
-|Exchange 2016|Supported with Exchange 2016 CU10 or later on all Exchange 2016 servers in the organization, including Edge Transport servers.
+|Exchange 2016|Supported with Exchange 2016 CU11 or later on all Exchange 2016 servers in the organization, including Edge Transport servers.
 |Mixed Exchange 2013 and Exchange 2016 organization|Supported if all Exchange 2013 and Exchange 2016 servers in the organization meet the requirements as previously described in this table.|
  
 ## Supported hybrid deployment scenarios
@@ -45,8 +43,8 @@ The requirements for the network and the directory servers in your Exchange 2019
 |:-----|:-----|
 |Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <br/>• Windows Server 2019 Standard or Datacenter <br/>• Windows Server 2016 Standard or Datacenter <br/>• Windows Server 2012 R2 Standard or Datacenter|
 |Active Directory|The Active Directory forest functionality level needs to be **Windows Server 2012 R2** or higher.|
-|DNS namespace|Exchange 2010 or later supports the following DNS namespaces:  <br/> • Contiguous  <br/> • Noncontiguous  <br/> • Single label domains  <br/> • Disjoint  <br/> For more information about DNS namespaces that are supported by Exchange, see [KB2269838](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2269838).|
-|IPv6|Exchange 2013 or later supports IPv6 only when IPv4 is also installed and enabled on the Exchange server. <br/> If you deploy Exchange in this configuration, and your network supports IPv4 and IPv6, all Exchange 2013 or later servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](https://technet.microsoft.com/library/33543023-eb9a-4102-b990-84a818a52814.aspx).|
+|DNS namespace|Exchange 2019 supports the following DNS namespaces:  <br/> • Contiguous  <br/> • Noncontiguous  <br/> • Single label domains  <br/> • Disjoint  <br/> For more information about DNS namespaces that are supported by Exchange, see [KB2269838](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2269838).|
+|IPv6|Exchange 2013 and later support IPv6 only when IPv4 is also installed and enabled on the Exchange server. <br/> If you deploy Exchange in this configuration, and your network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](https://technet.microsoft.com/library/33543023-eb9a-4102-b990-84a818a52814.aspx).|
  
 ## Directory server architecture
 
