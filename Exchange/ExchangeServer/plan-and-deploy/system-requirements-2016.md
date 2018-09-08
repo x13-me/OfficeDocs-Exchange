@@ -14,8 +14,6 @@ description: "Summary: Learn about what you need to have in your environment bef
 
 # Exchange 2016 system requirements
 
- **Summary**: Learn about what you need to have in your environment before installing Exchange 2016.
-
 > [!TIP]
 > Coming from the Exchange Deployment Assistant? Click [Exchange 2013 system requirements](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx).
 
