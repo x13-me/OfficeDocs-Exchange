@@ -14,8 +14,6 @@ description: "Summary: Windows operating system prerequisites for Exchange 2016 
 
 # Exchange 2016 prerequisites
 
- **Summary**: Windows operating system prerequisites for Exchange 2016 and Exchange management tools.
-
 > [!TIP]
 > Coming from the Exchange Deployment Assistant? Click [Exchange 2013 prerequisites](https://technet.microsoft.com/library/bb691354%28v=exchg.150%29.aspx).
 
