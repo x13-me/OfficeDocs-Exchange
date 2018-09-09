@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
-description: "Summary: Learn how to view and configure the properties of Outlook on the web virtual directories in Exchange Server"
+description: "Summary: Learn how to view and configure the properties of Outlook on the web virtual directories in Exchange Server 2016 or 2019"
 ---
 
 # View or configure Outlook on the web virtual directories in Exchange Server
 
- **Summary**: Learn how to view and configure the properties of Outlook on the web virtual directories in Exchange 2016 or Exchange 2019.
-  
 You can use the Exchange admin center (EAC) or the Exchange Management Shell to view or modify the properties of an Outlook on the web (formerly known as Outlook Web App) virtual directory. Although the name has changed to Outlook on the web, the name of the virtual directory is still "owa".
   
 ## What do you need to know before you begin?
