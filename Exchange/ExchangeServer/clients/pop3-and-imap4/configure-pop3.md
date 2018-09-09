@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: e226a5f1-429d-4046-b925-da6cc151709e
-description: "Summary: Learn how to enable and configure POP3 on an Exchange server for access by POP3 clients."
+description: "Summary: Learn how to enable and configure POP3 on an Exchange server 2016 or 2019 for access by POP3 clients."
 ---
 
 # Enable and configure POP3 on an Exchange server
 
- **Summary**: Learn how to enable and configure POP3 on an Exchange 2016 or Exchange 2019 server for access by POP3 clients.
-  
 By default, POP3 client connectivity isn't enabled in Exchange. To enable POP3 client connectivity, you need to perform the following steps:
   
 1. Start the POP3 services, and configure the services to start automatically:
