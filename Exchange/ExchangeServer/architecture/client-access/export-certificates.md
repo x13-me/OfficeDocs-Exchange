@@ -10,13 +10,11 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 7e4c4013-8a2b-4c25-a287-b367c65e48aa
-description: "Summary: Learn how to export a certificate from an Exchange server."
+description: "Summary: Learn how to export a certificate from an Exchange server 2016 or 2019."
 ---
 
 # Export a certificate from an Exchange server
 
- **Summary**: Learn how to export a certificate from an Exchange 2016 or Exchange 2019 server.
-  
 You can export a certificate from an Exchange server as a backup or to import the certificate on other clients, devices or servers. You can export certificates in the Exchange admin center (EAC) or in the Exchange Management Shell. The resulting certificate file is a password-protected binary PKCS #12 file that contains the certificate's private key, and is suitable for importing (installing) on other servers.
   
 ## What do you need to know before you begin?
