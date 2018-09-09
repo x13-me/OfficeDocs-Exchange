@@ -14,9 +14,7 @@ description: "Summary: Learn about the Availability service in Exchange 2016 and
 
 # Availability service in Exchange Server
 
- **Summary**: Learn about the Availability service in Exchange 2016 and Exchange 2019.
-  
-The Availability service in Exchange 2016 and Exchange 2019 makes free/busy information available to Outlook and Outlook on the web (formerly known as Outlook Web App) clients. The Availability service improves information workers' calendaring and meeting scheduling experience by providing secure, consistent, and up-to-date free/busy information.
+The Availability service makes free/busy information available to Outlook and Outlook on the web (formerly known as Outlook Web App) clients. The Availability service improves information workers' calendaring and meeting scheduling experience by providing secure, consistent, and up-to-date free/busy information.
   
 Outlook and Outlook on the web use the Availability service to perform the following tasks:
   
