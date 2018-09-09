@@ -14,8 +14,6 @@ description: "Summary: Learn how you can configure mail flow between your Exchan
 
 # Configure Internet mail flow through Edge Transport servers without using EdgeSync
 
- **Summary**: Learn how you can configure mail flow between your Exchange organization and an Edge Transport server without using an Edge Subscription.
-  
 We recommend that you use the Edge Subscription process to establish mail flow between your Exchange organization and an Edge Transport server as described in [Edge Subscriptions](edge-subscriptions.md). However, certain situations may prevent you from subscribing the Edge Transport server to your Exchange organization. To manually establish mail flow between your Exchange organization and an Edge Transport server, you need to create the Send connectors and Receive connectors as described in this topic.
   
 For more information about Send connectors, see [Send connectors](../../mail-flow/connectors/send-connectors.md). For more information about Receive connectors, see [Receive connectors](../../mail-flow/connectors/receive-connectors.md).
