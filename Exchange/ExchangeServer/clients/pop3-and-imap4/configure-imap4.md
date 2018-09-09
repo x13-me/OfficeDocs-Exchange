@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c1ae10dd-14da-4400-b38d-2aeafde8abe6
-description: "Summary: Learn how to enable and configure IMAP4 on an Exchange server for access by IMAP4 clients."
+description: "Summary: Learn how to enable and configure IMAP4 on an Exchange server 2016 or 2019 for access by IMAP4 clients."
 ---
 
 # Enable and configure IMAP4 on an Exchange server
 
- **Summary**: Learn how to enable and configure IMAP4 on an Exchange 2016 or Exchange 2019 server for access by IMAP4 clients.
-  
 By default, IMAP4 client connectivity isn't enabled in Exchange. To enable IMAP4 client connectivity, you need to perform the following steps:
   
 1. Start the IMAP4 services, and configure the services to start automatically:
