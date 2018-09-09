@@ -8,13 +8,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 8c578226-ce38-4f33-846a-9f47c0177def
-description: "Summary: Learn how administrators can view, create, modify, delete, suspend and resume requests to export mailboxes to .pst files in Exchange Server."
+description: "Summary: Learn how administrators can view, create, modify, delete, suspend and resume requests to export mailboxes to .pst files in Exchange Server 2016 or 2019."
 ---
 
 # Procedures for mailbox exports to .pst files in Exchange Server
 
- **Summary**: Learn how administrators can view, create, modify, delete, suspend and resume requests to export mailboxes to .pst files in Exchange 2016 or Exchange 2019.
-  
 Mailbox export requests use the Microsoft Exchange Mailbox Replication service (MRS) to export the contents of mailboxes to .pst files. For more information, see [Mailbox imports and exports in Exchange Server](mailbox-import-and-export.md).
   
 This topic shows you how to:
