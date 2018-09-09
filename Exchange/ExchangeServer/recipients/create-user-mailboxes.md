@@ -9,12 +9,10 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
-description: "Summary: Learn how to create mailboxes for users in Exchange Server."
+description: "Summary: Learn how to create mailboxes for users in Exchange Server 2016 or 2019."
 ---
 
 # Create user mailboxes in Exchange Server
-
- **Summary**: Learn how to create mailboxes for users in Exchange 2016 or Exchange 2019.
 
 User mailboxes are Exchange mailboxes that are associated with people, typically one mailbox per person. Each user mailbox has an associated Active Directory account that gives the person access to the mailbox to send and receive email messages, and create meetings and appointments.
 
