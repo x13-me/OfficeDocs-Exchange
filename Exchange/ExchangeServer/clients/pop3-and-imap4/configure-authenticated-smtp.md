@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bd22bf7e-3bf7-45e6-8790-919b780166f6
-description: "Summary: Learn how to configure the authenticated SMTP settings on an Exchange server that are required by POP3 or IMAP4 clients to send email messages."
+description: "Summary: Learn how to configure the authenticated SMTP settings on an Exchange server 2016 or 2019 that are required by POP3 or IMAP4 clients to send email messages."
 ---
 
 # Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange Server
 
- **Summary**: Learn how to configure the authenticated SMTP settings on an Exchange 2016 or Exchange 2019 server that are required by POP3 or IMAP4 clients to send email messages.
-  
 After you enable and configure POP3 or IMAP4 on an Exchange server as described in [Enable and configure POP3 on an Exchange server](configure-pop3.md) and [Enable and configure IMAP4 on an Exchange server](configure-imap4.md), you need to configure the authenticated SMTP settings for POP3 and IMAP4 clients so they can send email messages.
   
 The default Receive connector named "Client Frontend _\<Server name\>_" in the Client Access services on the Mailbox server listens for authenticated SMTP client submissions on port 587. By default, this connector uses the following settings for **internal and external** client (authenticated) SMTP connections: 
