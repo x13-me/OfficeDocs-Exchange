@@ -14,8 +14,6 @@ description: "Summary: Learn how to create or import email address rewriting in 
 
 # Import address rewrite entries on Edge Transport servers
 
- **Summary**: Learn how to create or import email address rewriting in bulk in Exchange 2016 or Exchange 2019.
-  
 You can bulk-create or import address rewriting information into an Edge Transport server by using a comma-separated value (CSV) file. The following list describes common scenarios that require you to do this:
   
 - You are replacing an address rewriting solution with an Edge Transport server.
