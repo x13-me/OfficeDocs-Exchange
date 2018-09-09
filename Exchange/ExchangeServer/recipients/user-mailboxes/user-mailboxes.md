@@ -14,8 +14,6 @@ description: "Summary: How to use the Exchange admin center (EAC) or Exchange Ma
 
 # Manage user mailboxes
 
- **Summary**: How to use the Exchange admin center (EAC) or Exchange Management Shell to make changes to user mailboxes.
-  
 After you create a user mailbox, you can make changes and set additional properties by using the EAC or the Exchange Management Shell.
   
 You can also change properties for multiple user mailboxes at the same time. For more information, see [Bulk edit user mailboxes](#bulkedit.md).
