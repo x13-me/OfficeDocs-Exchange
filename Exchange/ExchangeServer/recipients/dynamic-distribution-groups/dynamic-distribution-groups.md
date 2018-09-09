@@ -16,8 +16,6 @@ description: "Summary: Learn about dynamic distribution groups and how to create
 
 # Manage dynamic distribution groups
 
- **Summary**: Learn about dynamic distribution groups and how to create and manage them.
-  
 Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
   
 Unlike regular distribution groups that contain a defined set of members, the membership list for dynamic distribution groups is calculated each time a message is sent to the group, based on the filters and conditions that you define. When an email message is sent to a dynamic distribution group, it's delivered to all recipients in the organization that match the criteria defined for that group.
