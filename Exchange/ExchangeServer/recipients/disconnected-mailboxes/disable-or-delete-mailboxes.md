@@ -8,13 +8,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 31ad25d6-2942-4fd9-aecb-cdf9654163d2
-description: "Summary: Learn how to disable or delete a mailbox in Exchange Server."
+description: "Summary: Learn how to disable or delete a mailbox in Exchange Server 2016 or 2019."
 ---
 
 # Disable or delete a mailbox in Exchange Server
 
- **Summary**: Learn how to disable or delete a mailbox in Exchange 2016 or Exchange 2019.
-  
 In Exchange Server, you can use the Exchange admin center (EAC) or the Exchange Management Shell to disable or delete mailboxes. Disabled or deleted mailboxes are also known as *disconnected mailboxes*. For more information about disconnected mailboxes, see [Disconnected mailboxes](disconnected-mailboxes.md).
   
  **Note**: If you need to delete a mailbox in Office 365, see [Delete or Restore User Mailboxes in Exchange Online](http://technet.microsoft.com/library/be7f59a5-bbc9-4b7a-a28b-f47b26dd33a7.aspx).
