@@ -9,12 +9,10 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
-description: "Learn how administrators can enable or disable MAPI access to specific mailboxes in Exchange Server."
+description: "Learn how administrators can enable or disable MAPI access to specific mailboxes in Exchange Server 2016 or 2019."
 ---
 
 # Enable or disable MAPI access to mailboxes in Exchange Server
-
-**Summary**: Learn how administrators can enable or disable MAPI access to specific mailboxes in Exchange 2016 or Exchange 2019.
 
 MAPI is a client protocol that lets users access their mailbox by using Outlook or other MAPI email clients. By default, MAPI access to a user mailbox is enabled. Disabling MAPI access to a mailbox prevents the user from using Outlook to access their mailbox in Exchange mode. It doesn't prevent the user from using Outlook on the web or Outlook using other protocols (for example, POP3, IMAP4, or Exchange ActiveSync) to access their mailbox.
 
