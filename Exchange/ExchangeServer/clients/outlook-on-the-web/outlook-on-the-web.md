@@ -8,13 +8,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 3814b665-01e8-4881-9a44-163f14789ee4
-description: "Summary: Learn about administrative tasks for managing Outlook on the web (Outlook Web App) in Exchange Server."
+description: "Summary: Learn about administrative tasks for managing Outlook on the web (Outlook Web App) in Exchange Server 2016 or 2019."
 ---
 
 # Outlook on the web in Exchange Server
 
- **Summary**: Learn about administrative tasks for managing Outlook on the web (Outlook Web App) in Exchange 2016 or Exchange 2019.
-  
 The user interface in Outlook on the web (formerly known as Outlook Web App) for Exchange Server has been optimized and simplified for use with phones and tablets. Supported web browsers give users access to more Outlook features. Unsupported web browsers give users the light version of Outlook on the web that has less features. For more information about features and supported web browsers, see [Outlook on the web (formerly Outlook Web App)](../../new-features/new-features.md#OutlookAppfrom2013) and [Outlook on the web (formerly Outlook Web App)](../../new-features/new-features.md#OutlookAppfrom2010).
   
 When you install Exchange Server, Outlook on the web is automatically available for internal users at `https://<ServerName>/owa` (for example, `https://mailbox01.contoso.com/owa`). But, you'll likely want to configure Outlook on the web for external access (for example, `https://mail.contoso.com/owa`). For more information, see [Step 4: Configure external URLs](../../plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access.md#step-4-configure-external-urls) in [Configure mail flow and client access on Exchange servers](../../plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access.md).
