@@ -15,9 +15,7 @@ description: "Summary: A list of certificate management tasks in Exchange Server
 
 # Certificate procedures in Exchange Server
 
- **Summary**: A list of certificate management tasks in Exchange 2016 and Exchange 2019.
-  
-Ensuring that certificates are installed and configured correctly is key to delivering a secure messaging infrastructure for the enterprise. In Exchange Server 2016 and Exchange 2019, you can manage certificates in the Exchange admin center (EAC), and in the Exchange Management Shell. Certificate management in the EAC has been improved over certificate management in the Exchange Management Console in Exchange Server 2010. Specifically, certificate management in the EAC can help administrators by:
+Ensuring that certificates are installed and configured correctly is key to delivering a secure messaging infrastructure for the enterprise. In Exchange Server you can manage certificates in the Exchange admin center (EAC), and in the Exchange Management Shell. Certificate management in the EAC has been improved over certificate management in the Exchange Management Console in Exchange Server 2010. Specifically, certificate management in the EAC can help administrators by:
   
 - Minimizing the number of certificates that are required.
     
@@ -25,7 +23,7 @@ Ensuring that certificates are installed and configured correctly is key to deli
     
 - Allowing the centralized installation and management of certificates on all Exchange servers in the organization.
     
-For more information about certificates in Exchange 2016 and Exchange 2019, see [Digital certificates and encryption in Exchange Server](certificates.md).
+For more information about certificates in Exchange, see [Digital certificates and encryption in Exchange Server](certificates.md).
   
 The tasks that are associated with certificate management in Exchange are described in the following table.
   
