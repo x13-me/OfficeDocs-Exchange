@@ -9,12 +9,10 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: abad5939-8826-4df1-94bf-2d734f07e929
-description: "Summary: All about recipients, such as mailboxes and mail users, in Exchange Server."
+description: "Summary: All about recipients, such as mailboxes and mail users, in Exchange Server 2016 and 2019."
 ---
 
 # Recipients
-
- **Summary**: All about recipients, such as mailboxes and mail users, in Exchange Server 2016 and Exchange Server 2019.
 
 The people and resources that send and receive messages are the core of any messaging and collaboration system. In an Exchange organization, these people and resources are referred to as *recipients*. A recipient is any mail-enabled object in Active Directory to which Microsoft Exchange can deliver or route messages.
 
