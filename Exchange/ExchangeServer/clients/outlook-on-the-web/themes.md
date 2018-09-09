@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 7e1fa13c-3de3-45c2-b1fa-e74fc8487bda
-description: "Summary: Learn how to create a custom theme for Outlook on the web in Exchange Server."
+description: "Summary: Learn how to create a custom theme for Outlook on the web in Exchange Server 2016 or 2019."
 ---
 
 # Create a theme for Outlook on the web in Exchange Server
 
- **Summary**: Learn how to create a custom theme for Outlook on the web in Exchange 2016 and Exchange 2019.
-  
 A *theme* defines the colors, fonts, and images that are displayed to users in Outlook on the web (formerly known as Outlook Web App) in Exchange Server. Each theme is a collection of files that are stored on the Exchange server. The built-in themes are described in the [Default Outlook on the web themes in Exchange Server](themes.md#DefaultThemes) section at the end of this topic.
   
 The basic steps to create a new theme for Outlook on the web are:
