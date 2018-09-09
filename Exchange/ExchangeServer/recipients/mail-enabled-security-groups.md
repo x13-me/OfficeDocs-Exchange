@@ -9,12 +9,10 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
-description: "Summary: Learn how to create and manage mail-enabled security groups in Exchange Server."
+description: "Summary: Learn how to create and manage mail-enabled security groups in Exchange Server 2016 or 2019."
 ---
 
 # Manage mail-enabled security groups in Exchange Server
-
- **Summary**: Learn how to create and manage mail-enabled security groups in Exchange 2016 and Exchange 2019.
 
 You can use mail-enabled security groups to distribute messages as well as grant access permissions to resources in Exchange and Active Directory. You can create, modify, and remove mail-enabled security groups in the Exchange admin center (EAC) or in the Exchange Management Shell. For more information about mail-enabled security groups, see [Recipients](http://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
 
