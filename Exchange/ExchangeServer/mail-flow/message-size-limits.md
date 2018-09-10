@@ -9,12 +9,10 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b6a3840d-b821-4e53-877b-59c16be77206
-description: "Summary: Learn how administrators can apply limits to messages in an Exchange Server organization."
+description: "Summary: Learn how administrators can apply limits to messages in an Exchange Server 2016 or 2019 organization."
 ---
 
 # Message size limits in Exchange Server
-
- **Summary**: Learn how administrators can apply limits to messages in an Exchange 2016 or Exchange 2019 organization.
 
 You can apply limits to messages that move through your organization. You can set the maximum size of an entire message as a whole, or the size of individual parts of a message, or both. For example, you could restrict the maximum size of the message header or attachments, or set a maximum number of recipients that can be added to the message. You can apply these limits to your entire Exchange organization, to specific mail transport connectors, specific servers, and to individual mailboxes.
 
