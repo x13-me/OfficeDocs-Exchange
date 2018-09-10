@@ -14,8 +14,6 @@ description: "Summary: Configure Send connectors to proxy outbound mail through 
 
 # Configure Send connectors to proxy outbound mail
 
- **Summary**: Configure Send connectors to proxy outbound mail through the Front End Transport service.
-  
 When you create Send connectors, outbound mail flows through the Send connector in the Transport service on the Mailbox server or servers you specify, as shown in the following diagram.
   
 ![Send connector created with default configuration](../../media/c43075b4-7254-417a-9a61-d735f4abac4f.png)
