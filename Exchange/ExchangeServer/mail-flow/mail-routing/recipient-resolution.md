@@ -9,14 +9,12 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 09deda5a-d405-45b1-a3ff-fefd3d76cdea
-description: "Summary: Learn about recipient resolution in Exchange Server."
+description: "Summary: Learn about recipient resolution in Exchange Server 2016 and 2019."
 ---
 
 # Recipient resolution in Exchange Server
 
- **Summary**: Learn about recipient resolution in Exchange 2016 and Exchange 2019.
-  
- *Recipient resolution* is when the Exchange server expands and resolves all recipients in a message. Recipient resolution is responsible for these actions: 
+*Recipient resolution* is when the Exchange server expands and resolves all recipients in a message. Recipient resolution is responsible for these actions: 
   
 - Matching the recipient to the corresponding Active Directory object.
     
