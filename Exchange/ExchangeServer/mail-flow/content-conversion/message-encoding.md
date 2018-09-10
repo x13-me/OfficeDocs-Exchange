@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c1d9edbb-d87c-41e5-881b-cd612d83d7e4
-description: "Summary: Learn about the options that are available for message encoding in Exchange Server."
+description: "Summary: Learn about the options that are available for message encoding in Exchange Server 2016 or 2019."
 ---
 
 # Message encoding options in Exchange Server
 
- **Summary**: Learn about the options that are available for message encoding in Exchange 2016 and Exchange 2019.
-  
 The message encoding options in Exchange Server let you specify message characteristics such as MIME and non-MIME character sets, binary encoding, and attachment formats. You can specify message encoding options in the following locations:
   
 - Remote domain settings
