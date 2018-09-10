@@ -9,14 +9,12 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c1839a5b-49f9-4c53-b247-f4e5d78efc45
-description: "Summary: Learn about the three types of accepted domains in Exchange Server: authoritative, internal relay, and external relay."
+description: "Summary: Learn about the three types of accepted domains in Exchange Server 2016 or 2019: authoritative, internal relay, and external relay."
 ---
 
 # Accepted domains in Exchange Server
 
- **Summary**: Learn about the three types of accepted domains in Exchange 2016 or Exchange 2019: authoritative, internal relay, and external relay.
-  
- *Accepted domains* are the SMTP name spaces (also known as address spaces) that you configure in an Exchange Server organization to receive email messages. For example, if your company registered the domain contoso.com, and you configured a mail exchanger (MX) record in your Internet DNS for contoso.com, you need to configure contoso.com as an accepted domain in your Exchange organization to accept messages that are addressed to @contoso.com recipients.
+*Accepted domains* are the SMTP name spaces (also known as address spaces) that you configure in an Exchange Server organization to receive email messages. For example, if your company registered the domain contoso.com, and you configured a mail exchanger (MX) record in your Internet DNS for contoso.com, you need to configure contoso.com as an accepted domain in your Exchange organization to accept messages that are addressed to @contoso.com recipients.
   
 Accepted domains in Exchange Server are basically unchanged from Exchange Server 2010, and consist of the following types:
   
