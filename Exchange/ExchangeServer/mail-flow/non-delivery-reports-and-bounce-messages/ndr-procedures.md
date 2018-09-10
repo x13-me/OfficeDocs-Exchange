@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 23c9d844-6fc7-44c9-a308-587338281611
-description: "Summary: Learn how to view default and custom NDRs, and how to create, modify, and delete custom NDRs in Exchange Server."
+description: "Summary: Learn how to view default and custom NDRs, and how to create, modify, and delete custom NDRs in Exchange Server 2016 or 2019."
 ---
 
 # Procedures for DSNs and NDRs in Exchange Server
 
- **Summary**: Learn how to view default and custom NDRs, and how to create, modify, and delete custom NDRs in Exchange 2016 or Exchange 2019.
-  
 Like previous versions of Exchange, Exchange Server uses delivery status notifications (also known as DSNs, non-delivery reports, NDRs, or bounce messages) to provide delivery status and failure notification messages to message senders. For more information about NDRs, see [DSNs and NDRs in Exchange Server](non-delivery-reports-and-bounce-messages.md).
   
 You can use the default NDRs that are included in Exchange, or you can use the Exchange Management Shell to create NDRs with custom text to meet the needs of your organization. The custom NDR text replaces the default text for a given enhanced status code or quota event. If you remove the custom NDR, the default NDR text is used (you can't completely remove a default NDR). You can also disable custom NDRs to preserve them, but not use them (the default NDR text is used).
