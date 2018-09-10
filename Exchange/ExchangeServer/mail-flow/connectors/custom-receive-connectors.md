@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 86f7d6e7-a869-4c90-a570-0239fd0e5872
-description: "Summary: Learn how and when to create custom Receive connectors in Exchange Server."
+description: "Summary: Learn how and when to create custom Receive connectors in Exchange Server 2016 or 2019."
 ---
 
 # Scenarios for custom Receive connectors in Exchange Server
 
- **Summary**: Learn how and when to create custom Receive connectors in Exchange 2016 or Exchange 2019.
-  
 By default, Exchange Server comes with many different Receive connectors that are configured for most common mail flow scenarios. For more information about these connectors, see [Default Receive connectors created during setup](receive-connectors.md#DefaultConnectors).
   
 However, you might need to process messages from another messaging system that's not running Exchange. Or, if you have a network appliance that performs policy checks and then routes messages to your Exchange server, you'll need to manually configure a Receive connector.
