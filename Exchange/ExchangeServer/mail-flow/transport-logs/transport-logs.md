@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f8cf635d-60c2-4aa3-9c06-244c29942cba
-description: "Summary: Learn about transport logging in Exchange Server and the kinds of logs and information that is logged."
+description: "Summary: Learn about transport logging in Exchange Server 2016 and 2019 and the kinds of logs and information that is logged."
 ---
 
 # Transport logs in Exchange Server
 
- **Summary**: Learn about transport logging in Exchange 2016 and Exchange 2019 and the kinds of logs and information that is logged.
-  
 Transport logs provide information about what's happening in the transport pipeline. For more information about the transport pipeline, see [Mail flow and the transport pipeline](../../mail-flow/mail-flow.md).
   
 The transport logs in Exchange Server are described in the following sections.
