@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5433c1d3-ad2e-4f82-b50d-b67964b32f26
-description: "Summary: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange Server."
+description: "Summary: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange Server 2016 and 2019."
 ---
 
 # Find queues and messages in queues in the Exchange Management Shell
 
- **Summary**: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange 2016 and Exchange 2019.
-  
 As in previous versions of Exchange, you can use the Exchange Management Shell in Exchange Server to view information about queues and messages, and use that information to take action on queues and messages. Typically, an active Exchange contains a large number of queues and messages to be delivered, so it's important to understand how to identify the queues or messages that you want to manage.
   
 Note that you can also use Queue Viewer in the Exchange Toolbox to manage queues and messages in queues. However, the queue and message viewing cmdlets in the Exchange Management Shell support more filterable properties and filter options than Queue Viewer. For more information about using Queue Viewer, see [Queue Viewer](queue-viewer.md).
