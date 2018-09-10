@@ -10,13 +10,11 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 17751a60-39fe-433f-84d2-bfc14ff4ba51
-description: "Summary: Learn about Receive connectors in Exchange Server, and how they control mail flow into your Exchange organization."
+description: "Summary: Learn about Receive connectors in Exchange Server 2016 or 2019, and how they control mail flow into your Exchange organization."
 ---
 
 # Receive connectors
 
- **Summary**: Learn about Receive connectors in Exchange 2016 and Exchange 2019, and how they control mail flow into your Exchange organization.
-  
 Exchange servers use Receive connectors to control inbound SMTP connections from:
   
 - Messaging servers that are external to the Exchange organization.
