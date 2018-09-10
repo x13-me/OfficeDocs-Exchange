@@ -9,13 +9,11 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bada2ea7-6d7c-4630-b7f1-67f56818f0ff
-description: "Summary: Learn about message tracking and the message tracking log in Exchange Server."
+description: "Summary: Learn about message tracking and the message tracking log in Exchange Server 2016 and 2019."
 ---
 
 # Message tracking
 
- **Summary**: Learn about message tracking and the message tracking log in Exchange 2016 and Exchange 2019.
-  
 The message tracking log is a detailed record of all activity as mail flows through the transport pipeline on Mailbox servers and Edge Transport servers. You can use message tracking for message forensics, mail flow analysis, reporting, and troubleshooting.
   
 By default, Exchange uses circular logging to limit the message tracking log based on file size and file age to help control the hard disk space that's used by the log files. To configure the message tracking log, see [Configure message tracking](configure-message-tracking.md).
