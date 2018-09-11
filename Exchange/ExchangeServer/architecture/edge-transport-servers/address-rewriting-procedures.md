@@ -14,8 +14,6 @@ description: "Summary: Learn how to configure address rewriting on an Edge Trans
 
 # Address rewriting procedures on Edge Transport servers
 
- **Summary**: Learn how to configure address rewriting on an Edge Transport server in Exchange 2016 or Exchange 2019, and how to verify the address rewriting configuration.
-  
 You can create address rewrite entries on Edge Transport servers that apply to a single recipient, a specific domain or subdomain, or multiple subdomains. Address rewriting can be outbound only, or inbound and outbound (bidirectional). When you create address rewrite entries, remember the following:
   
 - Verify that the resulting email addresses are unique in your organization.
