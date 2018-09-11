@@ -10,14 +10,12 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 356ca7cd-b9d4-487d-aa21-3b38e91bde58
-description: "Summary: Learn how to renew Exchange self-signed certificate or create certificate renewal requests for a certification authority in Exchange Server."
+description: "Summary: Learn how to renew Exchange self-signed certificate or create certificate renewal requests for a certification authority in Exchange Server 2016 or 2019."
 ---
 
 # Renew an Exchange Server certificate
 
- **Summary**: Learn how to renew Exchange self-signed certificate or create certificate renewal requests for a certification authority in Exchange 2016 or Exchange 2019.
-  
-Every certificate has a built-in expiration date. In Exchange Server 2016 and Exhange 2019, the default self-signed certificate that's installed on the Exchange server expires 5 years after Exchange was installed on the server. You can use the Exchange admin center (EAC) or the Exchange Management Shell to renew Exchange certificates. This includes Exchange self-signed certificates, and certificates that were issued by a certification authority (CA).
+Every certificate has a built-in expiration date. In Exchange Server, the default self-signed certificate that's installed on the Exchange server expires 5 years after Exchange was installed on the server. You can use the Exchange admin center (EAC) or the Exchange Management Shell to renew Exchange certificates. This includes Exchange self-signed certificates, and certificates that were issued by a certification authority (CA).
   
 ## What do you need to know before you begin?
 
