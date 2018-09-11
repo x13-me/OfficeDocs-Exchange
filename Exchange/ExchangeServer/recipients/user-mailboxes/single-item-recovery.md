@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 2e7f1bcd-8395-45ad-86ce-22868bd46af0
-description: "Summary: Learn how to enable or disable single item recovery for user mailboxes in Exchange Server"
+description: "Summary: Learn how to enable or disable single item recovery for user mailboxes in Exchange Server 2016 and 2019"
 ---
 
 # Enable or disable single item recovery for a mailbox
 
- **Summary**: Learn how to enable or disable single item recovery for user mailboxes in Exchange 2016 and Exchange 2019
-  
 You can use the Exchange Management Shell to enable or disable single item recovery on a mailbox. In Exchange Server, single item recovery is disabled when a mailbox is created. If single item recovery is enabled, messages that are purged (hard-deleted) by the user are retained in the Recoverable Items folder of the mailbox until the deleted item retention period expires. This lets an administrator recover messages purged by the user before the deleted item retention period expires. Also, if a message is changed by a user or a process, copies of the original item are also retained when single item recovery is enabled.
   
 ## What do you need to know before you begin?
