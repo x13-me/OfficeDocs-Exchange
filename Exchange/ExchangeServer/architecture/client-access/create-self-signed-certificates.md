@@ -10,13 +10,11 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: ae826efe-7558-4007-b255-7dfe5933bbbf
-description: "Summary: Learn how to create a new self-signed certificate in Exchange Server."
+description: "Summary: Learn how to create a new self-signed certificate in Exchange Server 2016 or 2019."
 ---
 
 # Create a new Exchange Server self-signed certificate
 
- **Summary**: Learn how to create a new self-signed certificate in Exchange 2016 or Exchange 2019.
-  
 When you install Exchange Server, a self-signed certificate that's created and signed by the Exchange server itself is automatically installed on the server. However, you can also create additional self-signed certificates that you can use.
   
 You can create self-signed certificates certificate in the Exchange admin center (EAC) or in the Exchange Management Shell.
