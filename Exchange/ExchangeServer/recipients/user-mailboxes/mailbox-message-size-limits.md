@@ -14,8 +14,6 @@ description: "Summary: How to use the Exchange admin center (EAC) and the Exchan
 
 # Configure message size limits for a mailbox
 
- **Summary**: How to use the Exchange admin center (EAC) and the Exchange Management Shell to set message size limits for a user mailbox.
-  
 Message size limits control the size of messages that a user can send and receive. By default, when a mailbox is created, there isn't a size limit for sent and received messages.
   
 Keep in mind that there are other settings in an Exchange organization that determine the maximum message size a mailbox can send and receive (for example, the maximum message size configured on a Mailbox server). To learn more about the message size restrictions in Exchange, including the types of message size limits, their scope, and the order of precedence, see [Message size limits in Exchange Server](../../mail-flow/message-size-limits.md).
