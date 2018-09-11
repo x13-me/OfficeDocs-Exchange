@@ -14,8 +14,6 @@ description: "Summary: Learn how to enable or disable MAPI over HTTP in your Exc
 
 # Configure MAPI over HTTP in Exchange Server
 
- **Summary**: Learn how to enable or disable MAPI over HTTP in your Exchange 2016 or Exchange 2019 organization.
-  
 In Exchange 2016 and Exchange 2019, you can configure MAPI over HTTP at the organization level or at the individual mailbox level. Mailbox-level settings always take precedence over organization-wide settings.
 
 The scenarios where MAPI over HTTP is enabled or disabled by default at the organization level are described in the following table:
