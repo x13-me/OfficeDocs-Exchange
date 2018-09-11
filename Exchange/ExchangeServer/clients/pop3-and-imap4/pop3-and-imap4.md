@@ -9,13 +9,11 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: a7dc91ee-2919-4db3-ae9c-cd665d2e09ea
-description: "Summary: Learn about support for POP3 and IMAP4 in Exchange Server."
+description: "Summary: Learn about support for POP3 and IMAP4 in Exchange Server 2016 and 2019."
 ---
 
 # POP3 and IMAP4 in Exchange Server
 
- **Summary**: Learn about support for POP3 and IMAP4 in Exchange 2016 and Exchange 2019.
-  
 Although users typically access their Exchange mailboxes by using Outlook (MAPI), Outlook on the web (formerly known as Outlook Web App), and Exchange ActiveSync, POP3 and IMAP4 are available in Exchange Server 2016 and Exchange 2019. To support clients that still rely on these protocols, you need to start the services, and configure the settings for POP3 and IMAP4. For detailed instructions, see the following topics:
   
 - [Enable and configure POP3 on an Exchange server](configure-pop3.md)
