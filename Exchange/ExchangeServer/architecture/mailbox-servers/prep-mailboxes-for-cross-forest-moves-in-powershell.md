@@ -14,9 +14,7 @@ description: "Summary: Learn how to manage cross-forest mailbox moves and migrat
 
 # Prepare mailboxes for cross-forest moves using the Exchange Management Shell
 
- **Summary**: Learn how to manage cross-forest mailbox moves and migrations in Exchange 2016 and Exchange 2019 by using the Prepare-MoveRequest.ps1 script in the Exchange Management Shell.
-  
-Exchange 2016 and Exchange 2019 support mailbox moves and migrations using the Exchange Management Shell **New-MoveRequest** and **New-MigrationBatch** cmdlets. You can also move the mailbox in the Exchange admin center (EAC).
+Exchange Server supports mailbox moves and migrations using the Exchange Management Shell **New-MoveRequest** and **New-MigrationBatch** cmdlets. You can also move the mailbox in the Exchange admin center (EAC).
 
 - In Exchange 2016, you can move an Exchange 2010, Exchange 2013, or Exchange 2016 mailbox from a source Exchange forest to a target Exchange 2016 forest.
 
