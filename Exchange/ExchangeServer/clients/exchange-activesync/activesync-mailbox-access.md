@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4
-description: "Learn how administrators can enable or disable Exchange ActiveSync access to specific mailboxes in Exchange Server."
+description: "Learn how administrators can enable or disable Exchange ActiveSync access to specific mailboxes in Exchange Server 2016 or 2019."
 ---
 
 # Enable or disable Exchange ActiveSync access to mailboxes in Exchange Server
 
-Learn how administrators can enable or disable Exchange ActiveSync access to specific mailboxes in Exchange 2016 or Exchange 2019.
-  
 ActiveSync is a client protocol that lets users synchronize their Exchange mailbox with a mobile device. By default, ActiveSync is enabled on new user mailboxes. Disabling ActiveSync on a mailbox prevents the user from synchronizing their mailbox with a mobile device (by using ActiveSync).
   
 Administrators can use the Exchange admin center (EAC) or the Exchange Management Shell to enable or disable Exchange ActiveSync access to a mailbox.
