@@ -8,13 +8,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d2edc746-6647-41c4-a99a-b086caf893fa
-description: "Summary: Learn how administrators can view, create, modify, delete, suspend and resume requests to import .pst files into mailboxes in Exchange Server."
+description: "Summary: Learn how administrators can view, create, modify, delete, suspend and resume requests to import .pst files into mailboxes in Exchange Server 2016 or 2019."
 ---
 
 # Procedures for mailbox imports from .pst files in Exchange Server
 
- **Summary**: Learn how administrators can view, create, modify, delete, suspend and resume requests to import .pst files into mailboxes in Exchange 2016 or Exchange 2019.
-  
 Mailbox import requests use the Microsoft Exchange Mailbox Replication service (MRS) to import the contents of .pst files into mailboxes. For more information, see [Mailbox imports and exports in Exchange Server](mailbox-import-and-export.md).
   
 This topic shows you how to:
