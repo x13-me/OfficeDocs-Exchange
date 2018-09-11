@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5fb6a873-f3cf-4f82-87d1-2ff6e47a0080
-description: "Summary: Learn how to configure redirection for Outlook on the web in Exchange Server so http requests are automatically redirected to https."
+description: "Summary: Learn how to configure redirection for Outlook on the web in Exchange Server 2016 or 2019 so http requests are automatically redirected to https."
 ---
 
 # Configure http to https redirection for Outlook on the web in Exchange Server
 
- **Summary**: Learn how to configure redirection for Outlook on the web in Exchange 2016 or Exchange 2019 so http requests are automatically redirected to https.
-  
 By default in Exchange Server, the URL https:// _\<ServerName\>_ redirects users to https:// _\<ServerName\>_/owa. But, if anyone tries to access Outlook on the web (formerly known as Outlook Web App) by using http:// _\<ServerName\>_ or http:// _\<ServerName\>_/owa, they'll get an error.
   
 You can configure http redirection for Outlook on the web so that requests for http:// _\<ServerName\>_ or http:// _\<ServerName\>_/owa are automatically redirected to https:// _\<ServerName\>_/owa. This requires the following configuration steps in Internet Information Services (IIS):
