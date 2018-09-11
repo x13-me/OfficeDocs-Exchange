@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5b675b4e-3a33-4191-91ce-44e1c0923517
-description: "Summary: Learn how to configure anonymous relay in Exchange Server."
+description: "Summary: Learn how to configure anonymous relay in Exchange Server 2016 or 2019."
 ---
 
 # Allow anonymous relay on Exchange servers
 
- **Summary**: Learn how to configure anonymous relay in Exchange 2016 and Exchange 2019.
-  
  *Open relay* is a very bad thing for messaging servers on the Internet. Messaging servers that are accidentally or intentionally configured as open relays allow mail from any source to be transparently re-routed through the open relay server. This behavior masks the original source of the messages, and makes it look like the mail originated from the open relay server. Open relay servers are eagerly sought out and used by spammers, so you never want your messaging servers to be configured for open relay.
   
 On the other hand, *anonymous relay* is a common requirement for many businesses that have internal web servers, database servers, monitoring applications, or other network devices that generate email messages, but are incapable of actually sending those messages.
