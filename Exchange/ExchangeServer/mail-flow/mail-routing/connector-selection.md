@@ -14,8 +14,6 @@ description: "Summary: Learn how Exchange Server selects connectors (Send connec
 
 # Connector selection in external message routing
 
- **Summary**: Learn how Exchange 2016 and Exchange 2019 select connectors (Send connectors, Delivery Agent connectors, or Foreign connectors) to deliver messages to external recipients.
-  
 Like previous versions of Exchange, Exchange Server 2016 and Exchange 2019 use connectors to deliver messages to external recipients (recipients that don't exist in the Exchange organization). Exchange uses Send connectors to route messages to external SMTP domains. If the external recipient isn't on an SMTP messaging system, Exchange uses Delivery Agent connectors or Foreign connectors.
   
  For more information about the different types of connectors, see [Connectors](../../mail-flow/connectors/connectors.md). For more information about how Exchange makes routing decisions, see [Mail routing](mail-routing.md).
