@@ -14,8 +14,6 @@ description: "Summary: Learn how to clear all data on a user's mobile phone in t
 
 # Perform a remote wipe on a mobile phone
 
- **Summary**: Learn how to clear all data on a user's mobile phone in the Exchange admin center in Exchange 2016 or Exchange 2019.
-  
 Your users carry sensitive corporate information in their pockets every day. If one of them loses their mobile phone, your data can end up in the hands of another person. If one of your users loses their mobile phone, you can use the Exchange admin center (EAC) or the Exchange Management Shell to wipe their phone clean of all corporate and user information.
   
 > [!NOTE]
