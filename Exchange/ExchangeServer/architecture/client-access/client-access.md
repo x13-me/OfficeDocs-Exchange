@@ -15,8 +15,6 @@ description: "Summary: Overview of the Client Access services on Mailbox servers
 
 # Client Access services
 
- **Summary**: Overview of the Client Access services on Mailbox servers in Exchange 2016 and Exchange 2019
-  
 In Exchange Server, the Client Access services on Mailbox servers provide authentication and proxy services for internal and external client connections. The Client Access services are stateless, so data isn't queued or stored in them. In Exchange Server, the Client Access services are part of the Mailbox server, so you can't configure a standalone Client Access server like you could in previous versions of Exchange. For more information, see [Client access protocol architecture](../../architecture/architecture.md#ClientAccessProtocol).
   
 Client connectivity in Exchange 2016 and Exchange 2019 is similar to Exchange 2013, but different from Exchange 2010:
