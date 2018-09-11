@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c31fd710-4ae4-4d9a-8936-d056e7ca2748
-description: "Summary: Learn about connectivity logging and how it records outbound connection activity for transmitting messages in Exchange Server."
+description: "Summary: Learn about connectivity logging and how it records outbound connection activity for transmitting messages in Exchange Server 2016 or 2019."
 ---
 
 # Connectivity logging in Exchange Server
 
- **Summary**: Learn about connectivity logging and how it records outbound connection activity for transmitting messages in Exchange 2016 or Exchange 2019.
-  
 Connectivity logging records the outbound connection activity that's used to transmit messages on Exchange servers. In Exchange Server, the following services transmit messages, so they have connectivity logs:
   
 - The Transport service on Mailbox servers and Edge Transport servers.
