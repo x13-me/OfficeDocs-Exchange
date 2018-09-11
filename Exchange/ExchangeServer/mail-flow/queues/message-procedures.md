@@ -14,7 +14,7 @@ description: Learn how to remove, suspend, resume, and redirect messages in queu
 
 # Procedures for messages in queues
 
-In Exchange Server 2016 and Exchange Server 2019, you can use the Queue Viewer in the Exchange Toolbox or the Exchange Management Shell to manage messages in queues. For more information about messages in queues, see [Message properties](queues.md#message-properties).
+In Exchange Server, you can use the Queue Viewer in the Exchange Toolbox or the Exchange Management Shell to manage messages in queues. For more information about messages in queues, see [Message properties](queues.md#message-properties).
   
 This topic describes how to perform the following procedures on messages in queues:
   
