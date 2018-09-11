@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 8e6187c1-76f0-49da-bc24-2ab57cfb3c2c
-description: "Summary: Learn about the filterable properties for messages in queues in Exchange Server."
+description: "Summary: Learn about the filterable properties for messages in queues in Exchange Server 2016 and 2019."
 ---
 
 # Properties of messages in queues
 
- **Summary**: Learn about the filterable properties for messages in queues in Exchange 2016 and Exchange 2019.
-  
 Filtering messages in queues by one or more message properties in Exchange Server allows you to quickly locate messages and take action on them. When an email message is sent to multiple recipients, the message might be located in multiple queues on the server. When you filter messages in queues by message properties, you can locate messages across all queues. The following scenarios are examples of how you might use message filtering to manage mail flow:
   
 - The Submission queue on the Mailbox server or Edge Transport server that receives email from the Internet has a high volume of messages that are queued for delivery. Many of the messages have the same subject. Therefore, you suspect that spam is being sent to your organization. You can create a filter to view all the messages that meet the subject criteria. If you determine that the messages are spam, you can select them all and delete them from the delivery queue without sending an NDR.
