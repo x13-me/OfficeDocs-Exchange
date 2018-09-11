@@ -15,8 +15,6 @@ description: "Summary: Learn how to complete a pending certificate request in Ex
 
 # Complete a pending Exchange Server certificate request
 
- **Summary**: Learn how to complete a pending certificate request in Exchange 2016 or Exchange 2019 after you receive the certificate from the certification authority.
-  
 Completing a pending certificate request (also known as a certificate signing request or CSR) is the next step in configuring Transport Layer Security (TLS) encryption in Exchange Server. After you receive the certificate from the certification authority (CA), you install the certificate on the Exchange server to complete the pending certificate request.
   
 You can complete a pending certificate request in the Exchange admin center (EAC) or in the Exchange Management Shell. The procedures are the same for completing new certificate requests or certificate renewal requests. The procedures are also the same for certificates that were issued by an internal CA (for example, Active Directory Certificate Services), or a commercial CA.
