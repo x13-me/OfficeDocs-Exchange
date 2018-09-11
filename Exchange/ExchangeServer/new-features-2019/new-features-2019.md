@@ -1,4 +1,4 @@
----
+--
 title: "What's new in Exchange 2019"
 ms.author: dmaguire
 author: msdmaguire
@@ -14,8 +14,6 @@ description: "Summary: Learn about the new features that are available in Exchan
 
 # What's new in Exchange 2019
 
- **Summary**: Learn about the new features that are available in Exchange 2019 when you upgrade from previous versions of Exchange.
-
 Exchange Server 2019 brings a new set of technologies, features, and services to Exchange Server, the messaging platform that provides email, scheduling, and tools for custom collaboration and messaging service applications. Its goal is to support people and organizations as their work habits evolve from a communication focus to a collaboration focus. At the same time, Exchange 2019 helps lower the total cost of ownership whether you deploy Exchange 2019 on-premises or provision your mailboxes in the cloud.
 
 Choose the section below that matches the version of Exchange that you're upgrading from. If you want to know about features that have been removed or replaced in Exchange 2019, see [What's discontinued in Exchange 2019](discontinued-features.md).
@@ -30,8 +28,6 @@ For more information about deploying Exchange 2019, see [Planning and deployment
 
 - **Block external access to Exchange admin center (EAC) and the Exchange Management Shell**: You can use Client Access Rules to only allow administration of Exchange from the internal network instead of using complex network and firewall rules.
 
-- **Security logging via enhanced auditing events**: Admin audit logging is now able to store security-related events for analysis and forensics.
-
 ### Performance 
 
 - **Improved search infrastructure**: The completely rebuilt search infrastructure for cloud scale and reliability in Exchange Online is now avaialble in Exchange 2019. This new search infrastructure allows for indexing of bigger files, simpler management, and better search performance.
@@ -40,19 +36,13 @@ For more information about deploying Exchange 2019, see [Planning and deployment
 
 - **Metacache database**: Improvements at the core of Exchange's database engine enable better overall performance and take advantage of the latest storage hardware, including larger disks and SSDs.
 
-- **Improved telemetry for support diagnostics**: Diagnosing and solving Exchange issues and client access problems is easier because of better telemetry. Whether you're troubleshooting the issues on your own or with help from Microsoft support, the process is easier because key data is now readily available.
+- **Modern hardware support**: Exchange now supports up to 256 GB of memory and 48 CPU cores.
 
-### Policy and compliance
-
-- **eDiscovery improvements**: The architectural improvements in search (for example, the indexing of very large files) result in benefits for eDiscovery.
-
-- **Improved retention tags**: Configuring email expiration policies that are applied manually by users or automatically to system folders has been enhanced to be more flexible and easier to manage.
+- **Dynamic database cache**: The information store process employs dynamic memory cache allocation optimizing memory usage to active database usage.
 
 ### Clients
 
 - **Calendar - Do Not Forward**: This is similar to Iformation Rights Managment (IRM) for caleindar items without the IRM deployment requirements. Attendees can't forward the invitation to other people, and only the organizer can invite additional attendees.
-
-- **Calendar - Simplified Calendar Sharing**: Simplifies the permission options and other workflows of calendar sharing. Share and accept in a single click, and easily see who else you're sharing the calendar with.
 
 - **Calendar - Better Out of Office**: Additional options when you won't be in the office. Key options include: add an event to your calendar that shows you as Away/Out of Office, and a quick option to cancel/decline meetings that will happen while you're away.
 
