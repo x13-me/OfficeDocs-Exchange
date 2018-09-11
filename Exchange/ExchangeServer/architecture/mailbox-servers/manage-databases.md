@@ -14,8 +14,6 @@ description: "Summary: Learn how to perform configuration tasks related to manag
 
 # Manage mailbox databases in Exchange Server
 
- **Summary**: Learn how to perform configuration tasks related to managing your mailbox databases in Exchange 2016 and Exchange 2019.
-  
 A mailbox database is a unit of granularity where mailboxes are created and stored. A mailbox database is stored as an Exchange database (.edb) file. In Exchange 2016 and 2019, each mailbox database has its own properties that you can configure.
   
 ## What do you need to know before you begin?
