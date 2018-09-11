@@ -10,13 +10,11 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12
-description: "Summary: Learn how administrators can search for and recover deleted email messages in a user's mailbox in Exchange Server"
+description: "Summary: Learn how administrators can search for and recover deleted email messages in a user's mailbox in Exchange Server 2016 or 2019"
 ---
 
 # Recover deleted messages in a user's mailbox
 
- **Summary**: Learn how administrators can search for and recover deleted email messages in a user's mailbox in Exchange 2016 or Exchange 2019.
-  
 Administrators can search for items that are purged (hard-deleted) by a user by using the Recover Deleted Items feature in Outlook or Outlook on the web. They can also search for items deleted by an automated process, such as the retention policy assigned to user mailboxes. In these situations, the purged items can't be recovered by a user. But administrators can recover purged messages if the deleted item retention period for the item hasn't expired.
   
 > [!NOTE]
