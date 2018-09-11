@@ -14,8 +14,6 @@ description: "Summary: Learn how use Exchange admin center (EAC) or the Exchange
 
 # Manage mail contacts
 
- **Summary**: Learn how use Exchange admin center (EAC) or the Exchange Management Shell to create and change mail contacts for people outside your organization.
-
 Mail contacts are essentially contacts for people outside your Exchange or organization. Each mail contact has an external email address. For more information about mail contacts, see [Recipients](recipients.md).
 
 ## What do you need to know before you begin?
