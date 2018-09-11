@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 03020e6f-4c01-4c6e-ae47-fd74d4c4f96a
-description: "Summary: Learn about the time intervals and settings in Exchange Server for messages that can't be successfully delivered."
+description: "Summary: Learn about the time intervals and settings in Exchange Server 2016 or 2019 for messages that can't be successfully delivered."
 ---
 
 # Message retry, resubmit, and expiration intervals
 
- **Summary**: Learn about the time intervals and settings in Exchange 2016 and Exhange 2019 for messages that can't be successfully delivered.
-  
 In Exchange Server, messages that can't be successfully delivered are subject to various retry, resubmit, and expiration deadlines based on the message's source and destination. *Retry* is a renewed connection attempt with the destination. *Resubmit* is the act of sending messages back to the Submission queue for the categorizer to reprocess. The message *expires* after all delivery efforts have failed over a specified period of time. After a message expires, the sender is notified of the delivery failure, and the message is deleted from the queue.
   
 In all three cases of retry, resubmit, or expire, you can manually intervene before the automatic actions are performed on the messages.
