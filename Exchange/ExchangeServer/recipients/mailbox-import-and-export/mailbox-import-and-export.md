@@ -8,13 +8,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 157a7d88-d3aa-4056-9a50-df67451b14be
-description: "Summary: Learn about how administrators can import and export mailboxes to .pst files, and .pst files to mailboxes in Exchange Server."
+description: "Summary: Learn about how administrators can import and export mailboxes to .pst files, and .pst files to mailboxes in Exchange Server 2016 and 2019."
 ---
 
 # Mailbox imports and exports in Exchange Server
 
- **Summary**: Learn about how administrators can import and export mailboxes to .pst files, and .pst files to mailboxes in Exchange 2016 and Exchange 2019.
-  
 Exchange Server uses the Microsoft Exchange Mailbox Replication service (MRS) to import .pst files to mailboxes, and export mailboxes to .pst files. The advantages of using MRS instead of Outlook to import and export mailboxes are:
   
 - Import and export requests are asynchronous (you can import and export multiple .pst files at the same time).
