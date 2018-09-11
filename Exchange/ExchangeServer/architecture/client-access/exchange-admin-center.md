@@ -16,8 +16,6 @@ description: "Summary: Learn about the Exchange admin center, the web-based mana
 
 # Exchange admin center in Exchange Server
 
- **Summary**: Learn about the Exchange admin center, the web-based management console that's available in Exchange 2016 and Exchange 2019.
-  
 The Exchange admin center (EAC) is the web-based management console in Exchange Server that's optimized for on-premises, online, and hybrid Exchange deployments. The EAC was introduced in Exchange Server 2013, and replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP), which were the two management interfaces in Exchange Server 2010.
   
 Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](http://technet.microsoft.com/library/ace44f6b-4084-4f9c-89b3-e0317962472b.aspx).
