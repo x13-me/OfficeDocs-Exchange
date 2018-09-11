@@ -14,8 +14,6 @@ description: "Summary: Learn about preparing mailboxes for cross-forest moves in
 
 # Prepare mailboxes for cross-forest move requests
 
- **Summary**: Learn about preparing mailboxes for cross-forest moves in Exchange 2016 and Exchange 2019.
-  
 Mailbox moves and mailbox migrations in Exchange 2016 and Exchange 2019 from one forest to another require that you prepare the destination forest, which is made easier by Exchange tools and cmdlets. Exchange 2016 supports mailbox moves and migrations using the Exchange Management Shell, specifically the **New-MoveRequest** and **New-MigrationBatch** cmdlets. You can also move the mailbox in the Exchange admin center (EAC).
 
 To move an Exchange mailbox from a source forest to the target Exchange 2016 or Exchange 2019 target forest, the target forest needs to contain a valid mail user (also known as a mail-enabled user) with a specified set of Active Directory attributes.
