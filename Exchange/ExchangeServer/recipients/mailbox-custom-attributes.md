@@ -9,12 +9,10 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 2b043878-0b34-4563-a9c2-28a9efa7447e
-description: "Summary: Learn to use the custom attributes in Exchange Server to add information about a mail recipient."
+description: "Summary: Learn to use the custom attributes in Exchange Server 2016 or 2019 to add information about a mail recipient."
 ---
 
 # Custom attributes
-
- **Summary**: Learn to use the custom attributes in Exchange 2016 or Exchange 2019 to add information about a mail recipient.
 
 Exchange Server includes 15 extension attributes that you can use to add information about a recipient, such as an employee ID, organizational unit (OU), or some other custom value for which there isn't an existing attribute.
 
