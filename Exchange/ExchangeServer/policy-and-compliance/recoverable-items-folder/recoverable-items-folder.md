@@ -183,7 +183,7 @@ When the Recoverable Items folder for a mailbox reaches the Recoverable Items qu
     
 For mailboxes that aren't placed on In-Place Hold or Litigation Hold, the Managed Folder Assistant automatically purges items from the Recoverable Items folder when the deleted item retention period expires. If the folder reaches the Recoverable Items warning quota, the assistant automatically purges items in first-in-first-out order.
   
-When the Recoverable Items folder reaches the soft and hard limit defaults, you aren'tified by means of an event log and a Microsoft System Center Operations Manager alert. This alert fires when the Recoverable Items folder first reaches the soft and hard limit defaults, and then once daily afterward.
+When the Recoverable Items folder reaches the soft and hard limit defaults, you are notified by means of the event log and a Microsoft System Center Operations Manager alert. This alert fires when the Recoverable Items folder first reaches the soft and hard limit defaults, and then once daily afterward.
   
 The following table lists the events logged when the Recoverable Items folder reaches the soft and hard limit defaults.
   

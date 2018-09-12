@@ -27,4 +27,4 @@ Download and install the 64-bit update from the following URL, and then click **
   
 Microsoft Knowledge Base article KB2884597, [ Virtual Disk Service or applications that use the Virtual Disk Service crash or freeze in Windows Server 2012 ](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2884597)
   
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

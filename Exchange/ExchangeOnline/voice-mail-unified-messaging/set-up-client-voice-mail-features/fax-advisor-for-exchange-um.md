@@ -21,7 +21,7 @@ Microsoft Unified Messaging (UM) relies on certified fax partner solutions for e
   
 ## Exchange Unified Messaging Fax Partner Program
 
-To become a fax partner certified for interoperability with Exchange UM, the partner must implement the requirements contained in the Fax Partner Interoperability Specification and the fax solution must be certified by an independent certification vendor. For more information about certifying a fax product to work with Exchange Unified Messaging, submit a request to [Fax Partners for Unified Messaging](mailto:fax-part@microsoft.com).
+To become a fax partner certified for interoperability with Exchange UM, the partner must implement the requirements contained in the Fax Partner Interoperability Specification and the fax solution must be certified by an independent certification vendor. 
   
 ## Fax partner solutions certified as interoperable with Unified Messaging
 
