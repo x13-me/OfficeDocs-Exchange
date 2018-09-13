@@ -6,14 +6,14 @@ manager: serdars
 ms.date: 9/12/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: exchange-online
+ms.service: exchange-server-it-pro
 localization_priority: Normal
 description: "Summary: Learn how to view, create, modify, delete, and test Client Access Rules in Exchange 2019."
 ---
 
 # Procedures for Client Access Rules in Exchange Server
 
-Client Access Rules allow or block client connections to your Exchange 2019 organization based on the properties of the connection. For more information about Client Access Rules, see [Client Access Rules in Exchange Server](client-access-rules.md).
+Client Access Rules allow or block Exchange admin center (EAC) or remote PowerShell connections to your Exchange 2019 organization based on the properties of the connection. For more information about Client Access Rules, see [Client Access Rules in Exchange Server](client-access-rules.md).
 
 > [!TIP]
 > Verify that your rules work the way you expect. Be sure to thoroughly test each rule and the interactions between rules. For more information, see the [Use the Exchange Management Shell to test Client Access Rules](#use-the-exchange-management-shell-to-test-client-access-rules) section later in this topic. 
@@ -68,7 +68,7 @@ New-ClientAccessRule -Name "<RuleName>" [-Priority <PriorityValue>] [-Enabled <$
 This example creates a new Client Access Rule named Block PowerShell that blocks remote PowerShell access, except for clients in the IP address range 192.168.10.1/24.
 
 ```
-New-ClientAccessRule -Name "Block PowerShell" -Action DenyAccess -AnyOfProtocols ExchangeActiveSync -ExceptAnyOfClientIPAddressesOrRanges 192.168.10.1/24
+New-ClientAccessRule -Name "Block PowerShell" -Action DenyAccess -AnyOfProtocols RemotePowerShell -ExceptAnyOfClientIPAddressesOrRanges 192.168.10.1/24
 ```
 
  **Notes**:
@@ -82,7 +82,7 @@ New-ClientAccessRule -Name "Block PowerShell" -Action DenyAccess -AnyOfProtocols
 This example creates a new Client Access Rule named Restrict EAC Access that blocks access for the Exchange admin center, except if the client is coming from an IP address in the 192.168.10.1/24 range or if the user account name contains "tanyas".
 
 ```
-New-ClientAccessRule -Name "Restrict EAC Access" -Action DenyAccess -AnyOfProtocols ExchangeAdminCenter -ExceptAnyOfClientIPAddressesOrRanges 192.168.10.1/24 -ExceptUsernameMatchesAnyOfPatterns *tanyas* -Priority 1
+New-ClientAccessRule -Name "Restrict EAC Access" -Action DenyAccess -AnyOfProtocols ExchangeAdminCenter -ExceptAnyOfClientIPAddressesOrRanges 192.168.10.1/24 -ExceptUsernameMatchesAnyOfPatterns *tanyas*
 ```
 
 For detailed syntax and parameter information, see [New-ClientAccessRule](http://technet.microsoft.com/library/f397cd16-dcd7-4929-8c9f-35415ca6b009.aspx).
@@ -103,7 +103,7 @@ To verify that you've successfully created a Client Access Rule, use any of thes
   Get-ClientAccessRule -Identity "<RuleName>" | Format-List
   ```
 
-- See which Client Access Rules would affect a specific client connection to Exchange Online by using the **Test-ClientAccessRule** cmdlet. For more information, see the [Use the Exchange Management Shell to test Client Access Rules](#use-the-exchange-management-shell-to-test-client-access-rules) section later in this topic. 
+- See which Client Access Rules would affect a specific client connection to Exchange by using the **Test-ClientAccessRule** cmdlet. For more information, see the [Use the Exchange Management Shell to test Client Access Rules](#use-the-exchange-management-shell-to-test-client-access-rules) section later in this topic. 
 
 ## Use the Exchange Management Shell to modify Client Access Rules
 
@@ -127,10 +127,10 @@ An important consideration when you modify Client Access Rules is modifying cond
 
 - To add or remove values without affecting other existing values, use this syntax: `@{Add="<Value1>","<Value2>"...; Remove="<Value1>","<Value2>"...}`
 
-This example adds the IP address range 172.17.17.27/16 to the existing Client Access Rule named Allow IMAP4 without affecting the existing IP address values.
+This example adds the IP address range 172.17.17.27/16 to the existing Client Access Rule named Allow EAC without affecting the existing IP address values.
 
 ```
-Set-ClientAccessRule "Allow EAC" -AnyOfClientIPAddressesOrRanges @{Add="172.17.17.27/16"}
+Set-ClientAccessRule -Identity "Allow EAC" -AnyOfClientIPAddressesOrRanges @{Add="172.17.17.27/16"}
 ```
 
 For detailed syntax and parameter information, see [Set-ClientAccessRule](http://technet.microsoft.com/library/a4ba8627-b774-460f-9793-3d741c115b2e.aspx).
@@ -145,7 +145,7 @@ To verify that you've successfully modified a Client Access Rule, use any of the
   Get-ClientAccessRule -Identity "<RuleName>" | Format-List
   ```
 
-- See which Client Access Rules would affect a specific client connection to Exchange Online by using the **Test-ClientAccessRule** cmdlet. For more information, see the [Use the Exchange Management Shell to test Client Access Rules](procedures-for-client-access-rules.md#TestCARs) section later in this topic. 
+- See which Client Access Rules would affect a specific client connection to Exchange by using the **Test-ClientAccessRule** cmdlet. For more information, see the [Use the Exchange Management Shell to test Client Access Rules](procedures-for-client-access-rules.md#TestCARs) section later in this topic. 
 
 ## Use the Exchange Management Shell to set the priority of Client Access Rules
 
@@ -159,7 +159,7 @@ To set the priority of a Client Access Rule in the Exchange Management Shell, us
 Set-ClientAccessRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-This example sets the priority of the rule named Disable PowerShell to 4. All existing rules that have a priority less than or equal to 4 are decreased by 1 (their priority numbers are increased by 1).
+This example sets the priority of the rule named Disable PowerShell to 3. All existing rules that have a priority less than or equal to 3 are decreased by 1 (their priority numbers are increased by 1).
 
 ```
 Set-ClientAccessRule -Identity "Disable PowerShell" -Priority 4
@@ -211,13 +211,13 @@ Get-ClientAccessRule
 
 ## Use the Exchange Management Shell to test Client Access Rules
 
-To see which Client Access Rules would affect a specific client connection to Exchange Online, use this syntax:
+To see which Client Access Rules would affect a specific client connection to Exchange, use this syntax:
 
 ```
 Test-ClientAccessRule -User <MailboxIdentity> -AuthenticationType <AuthenticationType> -Protocol <Protocol> -RemoteAddress <ClientIPAddress> -RemotePort <TCPPortNumber>
 ```
 
-This example returns the Client Access Rules that would match a client connection to Exchange Online that has these properties:
+This example returns the Client Access Rules that would match a client connection to Exchange that has these properties:
 
 - **Authentication type**: Basic
 

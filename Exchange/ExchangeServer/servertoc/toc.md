@@ -27,7 +27,7 @@
 ##### [Import address rewrite entries](../architecture/edge-transport-servers/import-address-rewrite-entries.md)
 ### [Client Access](../architecture/client-access/client-access.md)
 #### [Exchange admin center](../architecture/client-access/exchange-admin-center.md)
-##### [Disable Exchange admin center access](../architecture/client-access/disable-exchange-admin-center-access.md)
+##### [Disable Exchange admin center access in Exchange 2016](../architecture/client-access/disable-exchange-admin-center-access.md)
 #### [Autodiscover](../architecture/client-access/autodiscover.md)
 #### [Load Balancing](../architecture/client-access/load-balancing.md)
 #### [Kerberos auth for load balanced Client Access](../architecture/client-access/kerberos-auth-for-load-balanced-client-access.md)

@@ -19,7 +19,7 @@ description: "Summary: Learn how to view, create, modify, delete, and test Clien
 Client Access Rules allow or block client connections to your Exchange Online organization based on the properties of the connection. For more information about Client Access Rules, see [Client Access Rules in Exchange Online](client-access-rules.md).
 
 > [!TIP]
-> Verify that your rules work the way you expect. Be sure to thoroughly test each rule and the interactions between rules. For more information, see the [Use Exchange Online PowerShell to test Client Access Rules](procedures-for-client-access-rules.md#TestCARs) section later in this topic. 
+> Verify that your rules work the way you expect. Be sure to thoroughly test each rule and the interactions between rules. For more information, see the [Use Exchange Online PowerShell to test Client Access Rules](#use-exchange-online-powershell-to-test-client-access-rules) section later in this topic. 
 
 ## What do you need to know before you begin?
 
@@ -80,14 +80,14 @@ New-ClientAccessRule -Name "Block ActiveSync" -Action DenyAccess -AnyOfProtocols
  
 - As a best practice, create a Client Access Rule with the highest priority to preserve your administrator access to remote PowerShell. For example: `New-ClientAccessRule -Name "Always Allow Remote PowerShell" -Action Allow -AnyOfProtocols RemotePowerShell -Priority 1`.
 
-- The rule has the default priority value, because we didn't use the _Priority_ parameter. For more information, see the [Use Exchange Online PowerShell to set the priority of Client Access Rules](procedures-for-client-access-rules.md#CARPriority) section later in this topic. 
+- The rule has the default priority value, because we didn't use the _Priority_ parameter. For more information, see the [Use Exchange Online PowerShell to set the priority of Client Access Rules](#use-exchange-online-powershell-to-set-the-priority-of-client-access-rules)  section later in this topic. 
 
 - The rule is enabled, because we didn't use the _Enabled_ parameter, and the default value is `$true`.
 
 This example creates a new Client Access Rule named Restrict EAC Access that blocks access for the Exchange admin center, except if the client is coming from an IP address in the 192.168.10.1/24 range or if the user account name contains "tanyas".
 
 ```
-New-ClientAccessRule -Name "Restrict EAC Access" -Action DenyAccess -AnyOfProtocols ExchangeAdminCenter -ExceptAnyOfClientIPAddressesOrRanges 192.168.10.1/24 -ExceptUsernameMatchesAnyOfPatterns *tanyas* -Priority 1
+New-ClientAccessRule -Name "Restrict EAC Access" -Action DenyAccess -AnyOfProtocols ExchangeAdminCenter -ExceptAnyOfClientIPAddressesOrRanges 192.168.10.1/24 -ExceptUsernameMatchesAnyOfPatterns *tanyas*
 ```
 
 For detailed syntax and parameter information, see [New-ClientAccessRule](http://technet.microsoft.com/library/f397cd16-dcd7-4929-8c9f-35415ca6b009.aspx).
@@ -108,7 +108,7 @@ To verify that you've successfully created a Client Access Rule, use any of thes
   Get-ClientAccessRule -Identity "<RuleName>" | Format-List
   ```
 
-- See which Client Access Rules would affect a specific client connection to Exchange Online by using the **Test-ClientAccessRule** cmdlet. For more information, see the [Use Exchange Online PowerShell to test Client Access Rules](procedures-for-client-access-rules.md#TestCARs) section later in this topic. 
+- See which Client Access Rules would affect a specific client connection to Exchange Online by using the **Test-ClientAccessRule** cmdlet. For more information, see the [Use Exchange Online PowerShell to test Client Access Rules](#use-exchange-online-powershell-to-test-client-access-rules) section later in this topic. 
 
 ## Use Exchange Online PowerShell to modify Client Access Rules
 
@@ -135,7 +135,7 @@ An important consideration when you modify Client Access Rules is modifying cond
 This example adds the IP address range 172.17.17.27/16 to the existing Client Access Rule named Allow IMAP4 without affecting the existing IP address values.
 
 ```
-Set-ClientAccessRule "Allow IMAP4" -AnyOfClientIPAddressesOrRanges @{Add="172.17.17.27/16"}
+Set-ClientAccessRule -Identity "Allow IMAP4" -AnyOfClientIPAddressesOrRanges @{Add="172.17.17.27/16"}
 ```
 
 For detailed syntax and parameter information, see [Set-ClientAccessRule](http://technet.microsoft.com/library/a4ba8627-b774-460f-9793-3d741c115b2e.aspx).
@@ -150,10 +150,9 @@ To verify that you've successfully modified a Client Access Rule, use any of the
   Get-ClientAccessRule -Identity "<RuleName>" | Format-List
   ```
 
-- See which Client Access Rules would affect a specific client connection to Exchange Online by using the **Test-ClientAccessRule** cmdlet. For more information, see the [Use Exchange Online PowerShell to test Client Access Rules](procedures-for-client-access-rules.md#TestCARs) section later in this topic. 
+- See which Client Access Rules would affect a specific client connection to Exchange Online by using the **Test-ClientAccessRule** cmdlet. For more information, see the [Use Exchange Online PowerShell to test Client Access Rules](#use-exchange-online-powershell-to-test-client-access-rules) section later in this topic. 
 
 ## Use Exchange Online PowerShell to set the priority of Client Access Rules
-<a name="CARPriority"> </a>
 
 By default, Client Access Rules are given a priority that's based on the order they were created in (newer rules are lower priority than older rules). A lower priority number indicates a higher priority for the rule, and rules are processed in priority order (higher priority rules are processed before lower priority rules). No two rules can have the same priority.
 
@@ -190,7 +189,6 @@ To verify that you've successfully set the priority of a Client Access Rule, use
   ```
 
 ## Use Exchange Online PowerShell to remove Client Access Rules
-<a name="CARPriority"> </a>
 
 To remove Client Access Rules in Exchange Online PowerShell, use this syntax:
 
@@ -217,7 +215,6 @@ Get-ClientAccessRule
 ```
 
 ## Use Exchange Online PowerShell to test Client Access Rules
-<a name="TestCARs"> </a>
 
 To see which Client Access Rules would affect a specific client connection to Exchange Online, use this syntax:
 
