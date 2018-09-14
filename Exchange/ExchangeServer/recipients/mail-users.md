@@ -14,8 +14,6 @@ description: "Summary: Learn how to create mail users and how to change mail use
 
 # Manage mail users
 
- **Summary**: Learn how to create mail users and how to change mail user properties.
-
 Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange organization and can access resources. For more information, see [Recipients](recipients.md).
 
 ## What do you need to know before you begin?

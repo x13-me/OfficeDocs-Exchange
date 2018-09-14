@@ -14,8 +14,6 @@ description: "Summary: Learn about distribution groups and how to create and man
 
 # Manage distribution groups
 
- **Summary**: Learn about distribution groups and how to create and manage them.
-
 Use the Exchange admin center (EAC) or the Exchange Management Shell to create a new distribution group in your Exchange organization or to mail-enable an existing group in Active Directory.
 
 There are two types of groups that can be used to distribute messages:

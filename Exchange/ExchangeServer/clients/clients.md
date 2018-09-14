@@ -9,12 +9,10 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d67342e7-6ee0-4228-9f84-721b2a53fb4c
-description: "Summary: Learn about the clients and client access methods you can use to access your Exchange Server mailbox, and the topics available to assist you."
+description: "Summary: Learn about the clients and client access methods you can use to access your Exchange Server 2016 or 2019 mailbox, and the topics available to assist you."
 ---
 
 # Clients and mobile
-
- **Summary**: Learn about the clients and client access methods you can use to access your Exchange 2016 or Exchange 2019 mailbox, and the topics available to assist you.
 
 There are many different clients that you can use to access information in an Outlook 2016 mailbox. These clients include desktop programs such as Outlook 2016, Outlook on the web, and mobile clients such as mobile phones, tablets, and other mobile devices. Each of these clients offers a variety of features.
 

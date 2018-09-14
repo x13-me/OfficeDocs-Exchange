@@ -64,7 +64,7 @@ Looking for other management tasks related to backing up and restoring data? Che
     
 3. Join the server to the same domain as the lost server.
     
-4. Install the necessary prerequisites and operating system components on the target server. For details, see [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md) or [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites-2019.md).
+4. Install the necessary prerequisites and operating system components on the target server. For details, see [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements-2016.md) or [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites.md).
 
 5. On the target server, open File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. Note the virtual DVD drive letter that's assigned.
   

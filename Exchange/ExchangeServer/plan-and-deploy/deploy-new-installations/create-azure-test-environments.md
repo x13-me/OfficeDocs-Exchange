@@ -407,9 +407,9 @@ Start-AzureRMVM -Name exVM -ResourceGroupName $rgName
 
 [Deploy new installations of Exchange](deploy-new-installations.md)
 
-[Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md)
+[Exchange 2016 system requirements](../../plan-and-deploy/system-requirements-2016.md)
   
-[Exchange 2019 system requirements](../../plan-and-deploy/system-requirements-2019.md)
+[Exchange 2019 system requirements](../../plan-and-deploy/system-requirements.md)
   
 [Exchange Server](../../exchange-server.md)
 

@@ -8,14 +8,12 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79
-description: "Summary: Learn about changing a mailbox from one type to another in Exchange Server."
+description: "Summary: Learn about changing a mailbox from one type to another in Exchange Server 2016 or 2019."
 ---
 
 # Convert a mailbox in Exchange Server
 
- **Summary**: Learn about changing a mailbox from one type to another in Exchange 2016 or Exchange 2019.
-  
-In Exchange 2016 and Exchange 2019, converting a mailbox from one type of mailbox to another is mostly unchanged from the experience in Exchange 2010. You still need to use the **Set-Mailbox** cmdlet in the Exchange Management Shell to do the conversion.
+In Exchange Server 2013 or later, converting a mailbox from one type of mailbox to another is mostly unchanged from the experience in Exchange 2010. You still need to use the **Set-Mailbox** cmdlet in the Exchange Management Shell to do the conversion.
   
 You can convert the following mailboxes to a different type:
   

@@ -14,8 +14,6 @@ description: "Summary: Learn how to create an Exchange equipment mailbox, which 
 
 # Manage equipment mailboxes
 
- **Summary**: Learn how to create an Exchange equipment mailbox, which is a resource mailbox assigned to a resource that isn't location-specific.
-
 In Exchange Server, an *equipment mailbox* is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the Exchange admin center (EAC) and the Exchange Management Shell to create an equipment mailbox or change equipment mailbox properties. For more information, see [Recipients](http://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
 
 For information about another type of resource mailbox, a room mailbox, see [Create and manage room mailboxes](room-mailboxes.md).

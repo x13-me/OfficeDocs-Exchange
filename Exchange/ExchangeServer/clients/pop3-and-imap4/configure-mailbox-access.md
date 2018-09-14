@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 57e12f07-3b14-45bd-9a82-e6032d14214f
-description: "Summary: Learn how administrators can enable or disable POP3 and IMAP4 access to specific mailboxes in Exchange Server."
+description: "Summary: Learn how administrators can enable or disable POP3 and IMAP4 access to specific mailboxes in Exchange Server 2016 or 2019."
 ---
 
 # Enable or disable POP3 or IMAP4 access to mailboxes in Exchange Server
 
- **Summary**: Learn how administrators can enable or disable POP3 and IMAP4 access to specific mailboxes in Exchange 2016 or Exchange 2019.
-  
 After you enable and configure POP3 or IMAP4 on an Exchange server as described in [Enable and configure POP3 on an Exchange server](configure-pop3.md) and [Enable and configure IMAP4 on an Exchange server](configure-imap4.md), all user mailboxes (with the exception of the Administrator mailbox) can be accessed by using POP3 or IMAP4. You can use the procedures in this topic to disable POP3 and IMAP4 access to specific mailboxes.
   
 For more information about POP3 and IMAP4, see [POP3 and IMAP4 in Exchange Server](pop3-and-imap4.md).

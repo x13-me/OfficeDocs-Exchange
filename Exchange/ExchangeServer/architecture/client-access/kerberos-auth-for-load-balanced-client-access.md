@@ -14,8 +14,6 @@ description: "Summary: How to use Kerberos authentication with load-balanced Exc
 
 # Configure Kerberos authentication for load-balanced Client Access services
 
- **Summary:** How to use Kerberos authentication with load-balanced Exchange 2016 and Exchange 2019 servers running Client Access services.
-  
 In order for you to use Kerberos authentication with load-balanced Mailbox servers running Client Access services, you have to complete the configuration steps described in this article.
   
 ## Create the alternate service account credential in Active Directory Domain Services

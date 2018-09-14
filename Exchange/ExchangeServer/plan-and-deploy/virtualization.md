@@ -46,7 +46,7 @@ Microsoft supports Exchange 2016 and Exchange 2019 in production on hardware vir
 
   - It's running Exchange 2016 or Exchange 2019.
 
-  - It's deployed on a supported version of Windows Server for [Exchange 2016](prerequisites.md) or [Exchange 2016 prerequisites](prerequisites-2019.md).
+  - It's deployed on a supported version of Windows Server for [Exchange 2016](prerequisites-2016.md) or [Exchange 2019](prerequisites.md).
 
 For deployments of Exchange 2016 or Exchange 2019:
 

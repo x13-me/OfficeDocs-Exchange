@@ -9,14 +9,12 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: fba87902-2a79-42ac-b394-46a9016f667e
-description: "Summary: Learn how message rate limits affect mail flow and connections in Exchange Server."
+description: "Summary: Learn how message rate limits affect mail flow and connections in Exchange Server 2016 and 2019."
 ---
 
 # Message rate limits and throttling
 
- **Summary**: Learn how message rate limits affect mail flow and connections in Exchange 2016 and Exchange 2019.
-
- *Message throttling* refers to a group of limits that are set on the number of messages and connections that can be processed by an Exchange server. These limits include message processing rates, SMTP connection rates, and SMTP session timeout values. These limits work together to protect an Exchange server from being overwhelmed by accepting and delivering messages. Although a large backlog of messages and connections may be waiting to be processed, the message throttling limits enable the Exchange server to process the messages and connections in an orderly manner.
+*Message throttling* refers to a group of limits that are set on the number of messages and connections that can be processed by an Exchange server. These limits include message processing rates, SMTP connection rates, and SMTP session timeout values. These limits work together to protect an Exchange server from being overwhelmed by accepting and delivering messages. Although a large backlog of messages and connections may be waiting to be processed, the message throttling limits enable the Exchange server to process the messages and connections in an orderly manner.
 
 > [!NOTE]
 > *Back pressure* is another feature that helps to avoid overwhelming the system resources of an Exchange server. Key resources, such as available hard disk space and memory utilization are monitored, and when the utilization level exceeds the specified threshold, the server gradually stops accepting new connections and messages. For more information, see [Understanding back pressure](back-pressure.md). There are also static limits that are available on messages, such as the maximum message size, the size of individual attachments, and the number of recipients. For more information about message size limits, see [Message size limits in Exchange Server](message-size-limits.md).

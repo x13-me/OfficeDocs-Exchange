@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9c0a0bc9-2a39-4cf0-aa6e-6e5ef3fd38b5
-description: "Summary: Learn about moving and migrating mailboxes in Exchange Server, and the enhanced capabilities in the batch move architecture."
+description: "Summary: Learn about moving and migrating mailboxes in Exchange Server 2016 and 2019, and the enhanced capabilities in the batch move architecture."
 ---
 
 # Mailbox moves in Exchange Server
 
- **Summary**: Learn about moving and migrating mailboxes in Exchange 2016 and Exchange 2019, and the enhanced capabilities in the batch move architecture.
-  
 You use mailbox moves to move mailboxes to, from, and within your Exchange organization. These are the basic types of mailbox moves that are available:
   
 - **Local mailbox moves**: You move mailboxes from one mailbox database to another on Exchange servers within a single Active Directory forest. For instructions, see [Manage on-premises mailbox moves in Exchange Server](../architecture/mailbox-servers/manage-mailbox-moves.md).

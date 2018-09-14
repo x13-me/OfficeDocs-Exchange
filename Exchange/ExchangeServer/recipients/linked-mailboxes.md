@@ -14,8 +14,6 @@ description: "Summary: Linked mailboxes are mailboxes that users access in a sep
 
 # Manage linked mailboxes
 
- **Summary**: Linked mailboxes are mailboxes that users access in a separate, trusted forest. Learn how to create linked mailboxes in Exchange resource forests.
-
 Linked mailboxes may be necessary for organizations that deploy Exchange in a *resource forest*. The resource forest scenario lets an organization centralize Exchange in a single forest, while allowing access to the Exchange organization with user accounts that are located in one or more trusted forests (called *account forests*). The user account that accesses the linked mailbox doesn't exist in the forest where Exchange is deployed. Therefore, a disabled user account that exists in the same forest as Exchange is created and associated with the corresponding linked mailbox.
 
 The following figure illustrates the relationship between the linked user account used to access the linked mailbox (located in the account forest) and the disabled user account in the Exchange resource forest that's associated with the linked mailbox.

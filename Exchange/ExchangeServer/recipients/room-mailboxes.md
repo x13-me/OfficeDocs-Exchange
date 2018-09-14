@@ -15,8 +15,6 @@ description: "Summary: How to create a resource mailbox called a room mailbox, a
 
 # Create and manage room mailboxes
 
- **Summary**: How to create a resource mailbox called a room mailbox, a room list, and how to change room mailbox properties.
-
 A room mailbox is a resource mailbox that's assigned to a physical location, such as a conference room, an auditorium, or a training room. With room mailboxes, users can easily reserve these rooms by including room mailboxes in their meeting requests. When they do this, the room mailbox uses options you can configure to decide whether the invite should be accepted or denied.
 
 To create a room mailbox, you need to be an administrator who's a member of either the Organization Management or Recipient Management role groups.

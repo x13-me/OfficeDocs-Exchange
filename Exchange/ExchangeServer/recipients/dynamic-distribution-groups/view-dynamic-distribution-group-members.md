@@ -14,8 +14,6 @@ description: "Summary: Learn how to use the Exchange Management Shell to view dy
 
 # View members of a dynamic distribution group
 
- **Summary**: Learn how to use the Exchange Management Shell to view dynamic distribution group membership.
-  
 Dynamic distribution groups are distribution groups whose membership is based on specific recipient filters rather than a defined set of recipients. For more information, see [Manage dynamic distribution groups](dynamic-distribution-groups.md).
   
 You can't use the Exchange admin center (EAC) to view the members of a dynamic distribution group. You can only use the Exchange Management Shell.

@@ -14,8 +14,6 @@ description: "Summary: Learn about the Mailbox server role in Exchange Server"
 
 # Mailbox servers
 
- **Summary**: Learn about the Mailbox server role in Exchange 2016 and Exchange 2019.
-  
 In Microsoft Exchange Server 2010, the Mailbox server role hosted both mailbox and public folder databases and also provided email message storage. In Exchange Server 2016 and 2019, the Mailbox server role contains transport services for routing mail, mailbox databases, Client access services to accept client connections, and (in Exchange 2016 only) Unified Messaging (UM) components.
   
 For more information about Exchange mailbox servers and how they complement other server roles, see [Exchange architecture](../../architecture/architecture.md).

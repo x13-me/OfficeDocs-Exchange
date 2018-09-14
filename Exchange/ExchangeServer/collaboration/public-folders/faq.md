@@ -16,8 +16,6 @@ description: "A list of frequently asked questions regarding public folders in E
 
 To learn more about public folders, see [Public folders](public-folders.md).
   
-Have questions about public folders that aren't answered here? Send us an email at [Ex2013HelpFeedback@microsoft.com](mailto:Ex2013HelpFeedback@microsoft.com).
-  
 ## FAQ about public folder migration
 
 This section contains frequently asked questions about public folder migration. For more information, see [Use batch migration to migrate public folders to Exchange 2016 from previous versions](batch-migration-from-previous-versions.md), [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](http://technet.microsoft.com/library/e8ab9309-7d12-4f02-bfc4-14e61a373958.aspx), or [Use batch migration to migrate Exchange 2016 public folders to Exchange Online](migrate-to-exchange-online.md).
@@ -78,7 +76,7 @@ No. Public folders are great for Outlook integration, simple sharing scenarios, 
   
 ## Which clients support public folders?
 
-The currently supported Outlook clients for [Exchange 2016](../../plan-and-deploy/system-requirements.md#supported-clients-with-latest-updates) and [Exchange 2019](../../plan-and-deploy/system-requirements-2019.md#supported-clients) can access public folders. However, users with mailboxes on Exchange 2016 servers can't connect to Exchange 2010 public folders using Exchange Web Services (EWS) clients (for example, Outlook 2016 for Mac). We recommend that you migrate Exchange 2010 public folders to Exchange 2016 to maintain access for those users.
+The currently supported Outlook clients for [Exchange 2016](../../plan-and-deploy/system-requirements-2016.md#supported-clients-with-latest-updates) and [Exchange 2019](../../plan-and-deploy/system-requirements.md#supported-clients) can access public folders. However, users with mailboxes on Exchange 2016 servers can't connect to Exchange 2010 public folders using Exchange Web Services (EWS) clients (for example, Outlook 2016 for Mac). We recommend that you migrate Exchange 2010 public folders to Exchange 2016 to maintain access for those users.
   
 ## Are there any limitations in the clients?
 

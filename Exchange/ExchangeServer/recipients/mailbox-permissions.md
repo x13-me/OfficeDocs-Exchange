@@ -9,12 +9,10 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52
-description: "Summary: Learn how to assign permissions for mailboxes and groups in Exchange Server so other users can open the mailbox, send mail from the mailbox, or send mail from the group."
+description: "Summary: Learn how to assign permissions for mailboxes and groups in Exchange Server 2016 or 2019 so other users can open the mailbox, send mail from the mailbox, or send mail from the group."
 ---
 
 # Manage permissions for recipients
-
- **Summary**: Learn how to assign permissions for mailboxes and groups in Exchange 2016 or Exchange 2019 so other users can open the mailbox, send mail from the mailbox, or send mail from the group.
 
 In Exchange Server, you can use the Exchange admin center (EAC) or the Exchange Management Shell to assign permissions to a mailbox or group so that other users can access the mailbox (the Full Access permission), or send email messages that appear to come from the mailbox or group (the Send As or Send on Behalf permissions). The users that are assigned these permissions on other mailboxes or groups are called *delegates*.
 

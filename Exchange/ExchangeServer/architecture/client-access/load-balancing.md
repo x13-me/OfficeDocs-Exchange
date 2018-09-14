@@ -15,9 +15,7 @@ description: "Summary: Learn about the ways load balancing in Exchange Server ha
 
 # Load balancing in Exchange Server
 
- **Summary**: Learn about the ways load balancing in Exchange 2016 and Exchange 2019 handles mail-enabled connections, resulting in improved availability and resiliency in your Exchange enterprise network.
-  
-Load balancing in Exchange 2016 and Exchange 2019 build on the Microsoft high availability and network resiliency platform. In addition, Exchange 2016 and 2019 feature improvements to the Exchange architecture. When this is combined with the availability of third-party load balancing solutions (both hardware and software), there are multiple options for implementing load balancing in your Exchange organization.
+Load balancing in Exchange 2016 and later build on the Microsoft high availability and network resiliency platform delivered in Exchange 2013. When this is combined with the availability of third-party load balancing solutions (both hardware and software), there are multiple options for implementing load balancing in your Exchange organization.
   
 Exchange architecture changes introduced in Exchange 2013 brought about the Mailbox server and Client Access server roles. Compare this to Exchange 2010, where Client Access, Mailbox, Hub Transport, and Unified Messages ran on separate servers.
   

@@ -37,7 +37,7 @@ For details about what's happening when Active Directory is being prepared for E
 
 - Estimated time to complete: 10-15 minutes or more (not including Active Directory replication), depending on organization size and the number of child domains.
 
-- The computer that you use for these procedures needs to meet the system requirements for [Exchange 2016](system-requirements.md) or [Exchange 2019](system-requirements-2019.md). Also, your Active Directory needs to meet the requirements in the "Network and directory servers" sections in those topics.
+- The computer that you use for these procedures needs to meet the system requirements for [Exchange 2016](system-requirements-2016.md) or [Exchange 2019](system-requirements.md). Also, your Active Directory needs to meet the requirements in the "Network and directory servers" sections in those topics.
 
 - If your organization has multiple Active Directory domains, we recommend the following approach:
 

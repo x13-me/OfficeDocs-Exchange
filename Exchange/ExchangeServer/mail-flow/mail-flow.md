@@ -9,12 +9,10 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 14df5e1a-a5f7-4b0d-ba97-f53b76f0e7e0
-description: "Summary: Learn about mail flow and the transport pipeline in Exchange Server."
+description: "Summary: Learn about mail flow and the transport pipeline in Exchange Server 2016 or 2019."
 ---
 
 # Mail flow and the transport pipeline
-
- **Summary**: Learn about mail flow and the transport pipeline in Exchange 2016 or Exchange 2019.
 
 In Exchange Server, mail flow occurs through the transport pipeline. The *transport pipeline* is a collection of services, connections, components, and queues that work together to route all messages to the categorizer in the Transport service on an Exchange Mailbox server inside the organization.
 

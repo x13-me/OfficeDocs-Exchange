@@ -14,12 +14,10 @@ description: "Summary: Learn about SSL, TLS, encryption, and digital certificate
 
 # Digital certificates and encryption in Exchange Server
 
- **Summary**: Learn about SSL, TLS, encryption, and digital certificates in Exchange 2016 and Exchange 2019.
-  
 Encryption and digital certificates are important considerations in any organization. By default, Exchange Server is configured to use Transport Layer Security (TLS) to encrypt communication between internal Exchange servers, and between Exchange services on the local server. But, Exchange administrators need to consider their encryption requirements for communication with internal and external clients (computers and mobile devices), and external messaging servers.
   
 > [!NOTE]
-> Secure Sockets Layer (SSL) is being replaced by Transport Layer Security (TLS) as the protocol that's used to encrypt data sent between computer systems. They're so closely related that the terms "SSL" and "TLS" (without versions) are often used interchangeably. Because of this similarity, references to "SSL" in Exchange topics, the Exchange admin center, and the Exchange Management Shell have often been used to encompass both the SSL and TLS protocols. Typically, "SSL" refers to the actual SSL protocol only when a version is also provided (for example, SSL 3.0). To find out why you should disable the SSL protocol and switch to TLS, check out [Protecting you against the SSL 3.0 vulnerability](https://blogs.office.com/2014/10/29/protecting-ssl-3-0-vulnerability/).
+> Exchange Server 2019 includes important changes to improve the security of client and server connections.  The default configuration for encryption will enable TLS 1.2 only and disable support for older algorithms, namely; DES, 3DES, RC2, RC4 and MD5.  It will also configure elliptic curve key exchange algorithms with priority over non-elliptic curve algorithms.  In Exchange Server 2016 and later, all cryptography settings are inherited from the configuration specified in the operating system.  For additional information, see [Exchange Server TLS Guidance](https://blogs.technet.microsoft.com/exchange/2018/01/26/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/).
   
 This topic describes the different types of certificates that are available, the default configuration for certificates in Exchange, and recommendations for additional certificates that you'll need to use with Exchange.
   

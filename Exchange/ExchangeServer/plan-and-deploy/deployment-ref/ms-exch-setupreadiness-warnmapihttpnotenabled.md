@@ -24,4 +24,4 @@ Exchange Setup won't automatically enable MAPI over HTTP to avoid making unexpec
   
 For more information about MAPI over HTTP and how to enable it, see [MAPI over HTTP in Exchange 2016](../../clients/mapi-over-http/mapi-over-http.md).
   
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

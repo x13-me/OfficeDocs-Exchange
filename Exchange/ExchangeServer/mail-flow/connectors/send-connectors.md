@@ -14,7 +14,7 @@ description: "Learn about Send connectors in Exchange 2016 and Exchange 2019, an
 
 # Send connectors
 
-Exchange 2016 and Exchange 2019 use Send connectors for outbound SMTP connections from source Exchange servers to destination messaging servers. The Send connector that's used to route messages to a recipient is selected during the routing resolution phase of message categorization. For more information, see [Mail routing](../../mail-flow/mail-routing/mail-routing.md).
+Exchange 2016 and later use Send connectors for outbound SMTP connections from source Exchange servers to destination messaging servers. The Send connector that's used to route messages to a recipient is selected during the routing resolution phase of message categorization. For more information, see [Mail routing](../../mail-flow/mail-routing/mail-routing.md).
   
 You can create Send connectors in the Transport service on Mailbox servers and on Edge Transport servers. Send connectors are stored in Active Directory and are visible to all Mailbox and servers in the organization.
   

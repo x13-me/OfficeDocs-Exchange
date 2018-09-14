@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa
-description: "Summary: Learn how to configure Outlook on the web mailbox policies in Exchange Server."
+description: "Summary: Learn how to configure Outlook on the web mailbox policies in Exchange Server 2016 or 2019."
 ---
 
 # View or configure Outlook on the web mailbox policy properties
 
- **Summary**: Learn how to configure Outlook on the web mailbox policies in Exchange 2016 or Exchange 2019.
-  
 You can configure mailbox policies in Exchange Server for Outlook on the web through the Exchange admin center (EAC) or Exchange Management Shell. After you create an Outlook on the web mailbox policy, you can then configure a variety of options to control the features available to users in Outlook on the web. For example, you can enable or disable Inbox rules or create a list of allowed file types for attachments.
   
 ## What do you need to know before you begin?

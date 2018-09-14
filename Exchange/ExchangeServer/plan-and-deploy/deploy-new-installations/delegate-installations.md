@@ -80,7 +80,11 @@ To verfiy that you've successfully provisioned an Exchange server for a delegate
 1. In Active Directory Users & Computers, select **Microsoft Exchange Security Groups**, double-click **Exchange Servers**, and then select the **Members** tab.
     
 2. On the **Members** tab, verify that the provisioned server is a member of the security group. A member of the Delegated Setup role group can now install Exchange on the server.
-    
+
+If your server is listed as a member of the Exchange Servers security group, it was properly provisioned. Someone who's a member of the Delegated Setup role group can now install Exchange on that server.
+
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+
 ## More information
 
 The high-level Active Directory changes that are made when you provision an Exchange server object are desribed in the following list: 

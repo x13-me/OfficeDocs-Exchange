@@ -29,7 +29,10 @@ To successfully deploy Unified Messaging (UM), you must have a good understandin
 In an on-premises, hybrid, or Office 365 environment, connecting and configuring the required telephony components is the most complex and important step in successfully deploying UM, with or without Lync Server Enterprise Voice. You'll need to connect and configure VoIP gateways, advanced VoIP gateways, PBXs, IP PBXs, and session border controllers (SBCs) for a traditional telephony network and connect to a telephony network if you'll be using Microsoft Lync Server and UM.
   
 Planning and deploying a new deployment of UM or upgrading a legacy voice mail system can pose challenges for organizations. It requires significant knowledge about VoIP gateways, PBXs, IP PBXs, Microsoft Lync Server, and Unified Messaging. Depending on your technical experience with Exchange and voice mail systems, you might want to obtain the assistance of a Unified Messaging specialist. An Exchange Unified Messaging specialist will help make sure that there's a smooth transition from a legacy or third-party voice mail system to Exchange Unified Messaging. For more information about how to contact a Unified Messaging specialist, see [Microsoft Exchange Server 2013 Unified Messaging (UM) Specialists](http://go.microsoft.com/fwlink/p/?LinkId=262708).
-  
+
+    > [!NOTE]
+    > Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end in July 2018. Please see the Exchange team blog [Discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/) for more information.
+
 ## Integrating your telephony network
 
 Unified Messaging requires that you integrate your Exchange Server deployment with your existing telephony network or integrate UM with Microsoft Lync Server for your organization. To successfully deploy and manage UM voice mail you need to make a careful analysis of your existing telephony infrastructure or your Microsoft Lync Server Enterprise Voice deployment and complete the necessary planning steps.

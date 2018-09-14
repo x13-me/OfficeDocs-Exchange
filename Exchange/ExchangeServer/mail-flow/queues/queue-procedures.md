@@ -14,7 +14,7 @@ description: "Learn how to view, retry, resubmit, suspend, and resume queues in 
 
 # Procedures for queues
 
-In Exchange Server 2016 and Exchang 2019, you can use the Queue Viewer in the Exchange Toolbox or the Exchange Management Shell to manage queues. For more information about queues, see [Queues and messages in queues](queues.md).
+In Exchange Server, you can use the Queue Viewer in the Exchange Toolbox or the Exchange Management Shell to manage queues. For more information about queues, see [Queues and messages in queues](queues.md).
   
 This topic describes how to perform the following procedures on queues:
   
