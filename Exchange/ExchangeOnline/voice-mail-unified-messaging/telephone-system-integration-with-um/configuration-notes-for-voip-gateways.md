@@ -47,7 +47,7 @@ Microsoft is working with VoIP gateway partners, AudioCodes and Dialogic, to add
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Aastra MD110 (formerly Ericsson MD110)  <br/> |MX1 TSW R2A (aka BC13)  <br/> |Analog - Serial MD110  <br/> |Dialogic  <br/> |DMG1008LSW  <br/> |Dialogic  <br/> |[Download](https://www.dialogic.com/support/helpweb/mg/integration.md) <br/> |
 | Aastra MD110 (formerly Ericsson MD110)  <br/> |MX1 TSW R2A (aka BC13)  <br/> |E1 Q.SIG  <br/> |Dialogic  <br/> |DMG2030DTIQ  <br/> |Dialogic  <br/> |[Download](https://www.dialogic.com/support/helpweb/mg/integration.md) <br/> |
-| Aastra MX-ONE  <br/> |4.0  <br/> |Direct SIP Connection  <br/> |N.A.  <br/> |N.A.  <br/> |Aastra  <br/> |[Download](http://www.aastra.com/cps/rde/aareddownload?file_id=4384-14746-_P06_XML&amp;dsproject=aastra&amp;mtype=pdf) <br/> |
+| Aastra MX-ONE  <br/> |4.0  <br/> |Direct SIP Connection  <br/> |N.A.  <br/> |N.A.  <br/> |Aastra  <br/> |[Download](http://www.aastra.com/cps/rde/aareddownload?file_id=4384-14746-_P06_XML&dsproject=aastra&mtype=pdf) <br/> |
    
 ### Alcatel
 <a name="alcatel"> </a>
@@ -120,7 +120,7 @@ Microsoft is working with VoIP gateway partners, AudioCodes and Dialogic, to add
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Electra Elite 192  <br/> |SP034V4.5  <br/> |Analog - In-Band DTMF  <br/> |AudioCodes  <br/> |MP-11x FXO  <br/> |AudioCodes  <br/> |[Download](https://www.audiocodes.com/solutions/microsoft-unified-messaging) <br/> |
 |NEAX2400IMX  <br/> |version 7400  <br/> |T1 CAS - serial MCI  <br/> |Dialogic  <br/> |DMG2030DTIQ  <br/> |Dialogic  <br/> |[Download](https://www.dialogic.com/support/helpweb/mg/integration.md) <br/> |
-|NEAX2400IMX &amp; IPX  <br/> |version 7400  <br/> |Digital Set Emulation (DNIDtermIII)  <br/> |Dialogic  <br/> |DMG1008DNIW  <br/> |Dialogic  <br/> |[Download](https://www.dialogic.com/support/helpweb/mg/integration.md) <br/> |
+|NEAX2400IMX & IPX  <br/> |version 7400  <br/> |Digital Set Emulation (DNIDtermIII)  <br/> |Dialogic  <br/> |DMG1008DNIW  <br/> |Dialogic  <br/> |[Download](https://www.dialogic.com/support/helpweb/mg/integration.md) <br/> |
 |NEAX2400IPX  <br/> |Ver. R18.06.24.000  <br/> |T1 CAS - serial MCI  <br/> |AudioCodes  <br/> |Mediant 2000  <br/> |AudioCodes  <br/> |[Download](https://www.audiocodes.com/solutions/microsoft-unified-messaging) <br/> |
 |NEAX2400IPX  <br/> |Ver. R18.06.24.000  <br/> |Analog - serial MCI  <br/> |AudioCodes  <br/> |MP-11x FXO  <br/> |AudioCodes  <br/> |[Download](https://www.audiocodes.com/solutions/microsoft-unified-messaging) <br/> |
 |NEAX2400IPX  <br/> |Ver.17 Rel.03.46.001  <br/> |T1 Q.SIG - serial MCI  <br/> |Dialogic  <br/> |DMG2030DTIQ  <br/> |Dialogic  <br/> |[Download](https://www.dialogic.com/support/helpweb/mg/integration.md) <br/> |
@@ -137,7 +137,7 @@ Microsoft is working with VoIP gateway partners, AudioCodes and Dialogic, to add
 
 |**PBX model**|**PBX software release**|**Protocol**|**Gateway vendor**|**Gateway model**|**Configuration author**|**Configuration file download**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|CS1000  <br/> |3.0 &amp; 4.5  <br/> |E1 Q.SIG  <br/> |AudioCodes  <br/> |Mediant 1000/2000  <br/> |AudioCodes  <br/> |[Download](https://www.audiocodes.com/solutions/microsoft-unified-messaging) <br/> |
+|CS1000  <br/> |3.0 & 4.5  <br/> |E1 Q.SIG  <br/> |AudioCodes  <br/> |Mediant 1000/2000  <br/> |AudioCodes  <br/> |[Download](https://www.audiocodes.com/solutions/microsoft-unified-messaging) <br/> |
 |Meridian 81C  <br/> |4.5  <br/> |E1 Q.SIG  <br/> |AudioCodes  <br/> |Mediant 2000  <br/> |AudioCodes  <br/> |[Download](https://www.audiocodes.com/solutions/microsoft-unified-messaging) <br/> |
 |Meridian 81C  <br/> |4.5  <br/> |T1 Q.SIG  <br/> |AudioCodes  <br/> |Mediant 1000/2000  <br/> |AudioCodes  <br/> |[Download](https://www.audiocodes.com/solutions/microsoft-unified-messaging) <br/> |
 |Option11c  <br/> |Release 25  <br/> |Digital Set Emulation (DNI2616)  <br/> |Dialogic  <br/> |DMG1008DNIW  <br/> |Dialogic  <br/> |[Download](https://www.dialogic.com/support/helpweb/mg/integration.md) <br/> |
@@ -190,7 +190,7 @@ Microsoft is working with VoIP gateway partners, AudioCodes and Dialogic, to add
 
 |**VoIP gateway model**|**VoIP gateway software release**|**Supported protocols**|**Configuration author**|**Configuration file download**|
 |:-----|:-----|:-----|:-----|:-----|
-|SBC 1000/2000  <br/> |2.2.1 or later  <br/> | TDM Signaling (ISDN): AT&amp;T 4ESS/5ESS, Nortel DMS- 100, Euro ISDN (ETSI 300-102), QSIG, NTT InsNet (Japan), ANSI National ISDN-2 (NI-2)  <br/>  TDM Signaling (CAS): T1 CAS (E&amp;M, Loop start); E1 CAS (R2)  <br/> |Sonus  <br/> |[Download](http://www.sonus.net/sites/default/files/sonussbc1k2kconfigo365.pdf) <br/> |
+|SBC 1000/2000  <br/> |2.2.1 or later  <br/> | TDM Signaling (ISDN): AT&T 4ESS/5ESS, Nortel DMS- 100, Euro ISDN (ETSI 300-102), QSIG, NTT InsNet (Japan), ANSI National ISDN-2 (NI-2)  <br/>  TDM Signaling (CAS): T1 CAS (E&M, Loop start); E1 CAS (R2)  <br/> |Sonus  <br/> |[Download](http://www.sonus.net/sites/default/files/sonussbc1k2kconfigo365.pdf) <br/> |
    
 ### Tadiran
 <a name="tadiran"> </a>

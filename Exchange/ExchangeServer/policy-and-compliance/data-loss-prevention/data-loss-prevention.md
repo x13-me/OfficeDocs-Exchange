@@ -1,22 +1,22 @@
 ---
-title: "Data loss prevention in Exchange 2016"
+title: "Data loss prevention in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: laurawi
-ms.date: 6/12/2018
+ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 7c8ed3c1-ca91-4d9b-b16b-0a2b8ac89730
-description: "Summary: Learn about DLP policies in on-premises Exchange 2016, including what they contain and how to test them."
+description: "Summary: Learn about DLP policies in on-premises Exchange Server, including what they contain and how to test them."
 ---
 
-# Data loss prevention in Exchange 2016
+# Data loss prevention in Exchange Server
 
- **Summary**: Learn about DLP policies in on-premises Exchange 2016, including what they contain and how to test them.
+ **Summary**: Learn about DLP policies in on-premises Exchange 2016 and Exchange 2019, including what they contain and how to test them.
   
-Data loss prevention (DLP) is important in Exchange Server 2016 because business critical email communication often includes sensitive data. DLP features make managing sensitive data in email messages easier than ever before by balancing compliance requirements without unnecessarily hindering the productivity of workers. For a conceptual overview of DLP, watch the following video.
+Data loss prevention (DLP) is important in Exchange Server because business critical email communication often includes sensitive data. DLP features make managing sensitive data in email messages easier than ever before by balancing compliance requirements without unnecessarily hindering the productivity of workers. For a conceptual overview of DLP, watch the following video.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/31f2b48e-93ed-4be3-b46d-e7230c0fed8f?autoplay=false]
   
@@ -26,7 +26,7 @@ DLP policies are simple packages that are collections of mail flow rules (also k
   
 - [Document Fingerprinting](http://technet.microsoft.com/library/1e0c579c-26e0-462a-a1b0-d7506dfe05fa.aspx)
     
-- [Mail flow rules in Exchange 2016](../../policy-and-compliance/mail-flow-rules/mail-flow-rules.md)
+- [Mail flow rules in Exchange Server](../../policy-and-compliance/mail-flow-rules/mail-flow-rules.md)
     
 - [Integrating Classification Rules with Transport Rules](http://technet.microsoft.com/library/feb014a7-89dd-4f2d-a06d-52806ce435d4.aspx)
     
@@ -60,11 +60,11 @@ After you add a policy, you can review and change its rules, deactivate the poli
 ## Sensitive information types in DLP policies
 <a name="dlp_senstypes"> </a>
 
-When you create or change DLP policies, you can include rules that look for sensitive information. The sensitive information types that are listed in the topic [Sensitive information types in Exchange 2016](sensitive-information-types.md) are available for you to use in your policies. You can customize the conditions within a policy, such as how many times something has to be found before an action is taken, or the action to take. For more information about creating DLP policies see, [Create a Custom DLP Policy](http://technet.microsoft.com/library/b3299a39-9663-41e4-b76e-9d2f7879d486.aspx). For more information about mail flow rules, see [Mail flow rules in Exchange 2016](../../policy-and-compliance/mail-flow-rules/mail-flow-rules.md).
+When you create or change DLP policies, you can include rules that look for sensitive information. The sensitive information types that are listed in the topic [Sensitive information types in Exchange Server](sensitive-information-types.md) are available for you to use in your policies. You can customize the conditions within a policy, such as how many times something has to be found before an action is taken, or the action to take. For more information about creating DLP policies see, [Create a Custom DLP Policy](http://technet.microsoft.com/library/b3299a39-9663-41e4-b76e-9d2f7879d486.aspx). For more information about mail flow rules, see [Mail flow rules in Exchange Server](../../policy-and-compliance/mail-flow-rules/mail-flow-rules.md).
   
 To make it easy for you to use rules that look for sensitive information, Exchange comes with policy templates that already include some of the sensitive information types. You can't add conditions for all of the sensitive information types, because the templates are designed to help you focus on the most common types of compliance-related data within your organization. For more information about the pre-built templates, see [DLP Policy Templates Supplied in Exchange](http://technet.microsoft.com/library/7e1917ab-1920-4a52-97d1-7dfe2add6198.aspx).
   
- You can create many DLP policies for your organization, and enable them all so that many different types of information are looked for. You can also create a DLP policy that isn't based on an existing template. To create such a policy, see [Create a Custom DLP Policy](http://technet.microsoft.com/library/b3299a39-9663-41e4-b76e-9d2f7879d486.aspx). For more information about the available sensitive information types, see [Sensitive information types in Exchange 2016](sensitive-information-types.md).
+ You can create many DLP policies for your organization, and enable them all so that many different types of information are looked for. You can also create a DLP policy that isn't based on an existing template. To create such a policy, see [Create a Custom DLP Policy](http://technet.microsoft.com/library/b3299a39-9663-41e4-b76e-9d2f7879d486.aspx). For more information about the available sensitive information types, see [Sensitive information types in Exchange Server](sensitive-information-types.md).
   
 ## Detecting sensitive form data with Document Fingerprinting
 <a name="dlp_fingerprinting"> </a>
@@ -91,7 +91,7 @@ To see information about messages that contain DLP policy detections in your env
 ## For more information
 <a name="dlp_moreinfo"> </a>
 
-- [Messaging policy and compliance in Exchange 2016](../../policy-and-compliance/policy-and-compliance.md)
+- [Messaging policy and compliance in Exchange Server](../../policy-and-compliance/policy-and-compliance.md)
     
 - [DLP Procedures](http://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df.aspx)
     

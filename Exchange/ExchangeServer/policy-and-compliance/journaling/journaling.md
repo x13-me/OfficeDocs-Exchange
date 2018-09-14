@@ -1,22 +1,22 @@
 ---
-title: "Journaling in Exchange 2016"
+title: "Journaling in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6a20f207-4485-44ef-b010-ec760eb5165b
-description: "Summary: Learn about journaling in Exchange 2016."
+description: "Summary: Learn about journaling in Exchange Server."
 ---
 
-# Journaling in Exchange 2016
+# Journaling in Exchange Server
 
- **Summary**: Learn about journaling in Exchange 2016.
+ **Summary**: Learn about journaling in Exchange 2016 and Exchange 2019.
   
-Journaling in Exchange Server 2016 can help your organization respond to legal, regulatory, and organizational compliance requirements by recording all or targeted email messages. Journaling in Exchange 2016 is basically unchanged from Exchange Server 2010.
+Journaling in Exchange Server Server can help your organization respond to legal, regulatory, and organizational compliance requirements by recording all or targeted email messages. Journaling in Exchange Server is basically unchanged from Exchange Server 2010.
   
 Exchange provides the following journaling options:
   
@@ -24,7 +24,7 @@ Exchange provides the following journaling options:
     
 - **Premium journaling**: Use *journal rules* to journal messages based on recipients (all recipients or specified recipients), and scope (internal messages, external messages, or all messages). Premium journaling requires Exchange Enterprise client access licenses (CALs). For more information about CALs, see [Exchange Server Licensing](https://go.microsoft.com/fwlink/p/?linkid=237292).
     
-To configure journaling, see [Journaling procedures in Exchange 2016](journaling-procedures.md).
+To configure journaling, see [Journaling procedures in Exchange Server](journaling-procedures.md).
   
 When you plan for messaging retention and compliance, it's important to understand journaling, and how journaling fits in your organization's compliance policies.
   
@@ -97,11 +97,14 @@ The *journal recipient* specifies who you want to journal. Messages that are sen
   
 By targeting specific recipients or groups of recipients, you can configure a journaling environment that helps you meet your organization's regulatory and legal requirements, while minimizing the storage and other costs that are associated with retaining large amounts of data.
   
- **Journal recipients that are enabled for Unified Messaging**
+ **Journal recipients that are enabled for Unified Messaging in Exchange 2016**
   
-By default, if your organization uses Unified Messaging (UM) to consolidate the email, voice mail, and fax infrastructure, Exchange is configured to journal voice mail notification and missed call notification messages. You can disable journaling for these types of messages, but messages that contain UM-generated faxes are always journaled.
+By default, if your Exchange 2016 organization uses Unified Messaging (UM) to consolidate the email, voice mail, and fax infrastructure, Exchange is configured to journal voice mail notification and missed call notification messages. You can disable journaling for these types of messages, but messages that contain UM-generated faxes are always journaled.
   
 To disable journaling for voice mail and missed call notifications, see [Enable or disable journaling for voice mail and missed call notifications](journaling-procedures.md#DisableJournalingForUMNotifications).
+
+> [!NOTE]
+> Unified Messaging is not available in Exchange 2019.
   
 ### Journal rule scope
 <a name="scope"> </a>

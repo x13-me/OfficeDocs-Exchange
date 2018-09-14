@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
-description: "Summary: How to use Kerberos authentication with load-balanced Exchange 2016 servers running Client Access services."
+description: "Summary: How to use Kerberos authentication with load-balanced Exchange servers running Client Access services."
 ---
 
 # Configure Kerberos authentication for load-balanced Client Access services
 
- **Summary:** How to use Kerberos authentication with load-balanced Exchange 2016 servers running Client Access services.
-  
 In order for you to use Kerberos authentication with load-balanced Mailbox servers running Client Access services, you have to complete the configuration steps described in this article.
   
 ## Create the alternate service account credential in Active Directory Domain Services
@@ -24,7 +22,7 @@ In order for you to use Kerberos authentication with load-balanced Mailbox serve
 All Exchange servers that run Client Access services that share the same namespaces and URLs must use the same *alternate service account credential* or (ASA credential). In general, it's sufficient to have a single account for a forest for each version of Exchange.
   
 > [!IMPORTANT]
-> Exchange 2010 and Exchange 2016 can't share the same ASA credential. If your ASA credential was created for Exchange 2010, you have to create a new one for Exchange 2016.
+> Exchange 2010 and Exchange 2016 or Exchange 2019 can't share the same ASA credential. If your ASA credential was created for Exchange 2010, you have to create a new one for Exchange 2016 or 2019.
   
 > [!IMPORTANT]
 > While CNAME records are supported for shared namespaces, Microsoft recommends using A records. This ensures that the client correctly issues a Kerberos ticket request based on the shared name, and not the server FQDN.
@@ -138,20 +136,20 @@ After you've created the account, you have to verify that the account has replic
   
 You configure the ASA credential by using the Exchange Management Shell as described in one of these procedures:
   
-- Deploy the ASA credential to the first Exchange 2016 server running Client Access services
+- Deploy the ASA credential to the first Exchange server running Client Access services
     
-- Deploy the ASA credential to subsequent Exchange 2016 servers running Client Access services
+- Deploy the ASA credential to subsequent Exchange servers running Client Access services
     
 The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](http://technet.microsoft.com/library/6ac55aae-472a-4ed6-83df-2d0e7b48e05c.aspx). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
   
-### Deploy the ASA Credential to the first Exchange 2016 server running Client Access services
+### Deploy the ASA Credential to the first Exchange server running Client Access services
 <a name="DeployASACred"> </a>
 
-1. Open the Exchange Management Shell on an Exchange 2016 server.
+1. Open the Exchange Management Shell on an Exchange 2016 or Exchange 2019 server.
     
 2. Change directories to _\<Exchange 2016 installation directory\>_\V15\Scripts.
     
-3. Run the following command to deploy the ASA credential to the first Exchange 2016 server running Client Access services:
+3. Run the following command to deploy the ASA credential to the first Exchange 2016  or Exchange 2019 server running Client Access services:
     
   ```
   .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-1.corp.tailspintoys.com -GenerateNewPasswordFor tailspin\EXCH2016ASA$
@@ -177,7 +175,7 @@ tailspin\EXCH2016ASA$
 System.Security.SecureString
 Prior to pushing new credentials, all existing credentials that are invalid or no longer work will be removed from  the destination servers.
 Pushing credentials to server mbx-1
-Setting a new password on Alternate Serice Account in Active Directory
+Setting a new password on Alternate Service Account in Active Directory
 Password change
 Do you want to change password for tailspin\EXCH2016ASA$ in Active Directory at this time?
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
@@ -199,14 +197,14 @@ cas-1 Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
         THE SCRIPT HAS SUCCEEDED
 ```
 
-### Deploy the ASA credential to another Exchange 2016 server running Client Access services
+### Deploy the ASA credential to another Exchange server running Client Access services
 <a name="DeployASACred"> </a>
 
-1. Open the Exchange Management Shell on an Exchange 2016 server.
+1. Open the Exchange Management Shell on an Exchange 2016 or Exchange 2019 server.
     
 2. Change directories to _\<Exchange 2016 installation directory\>_\V15\Scripts.
     
-3. Run the following command to deploy the ASA credential to another Exchange 2016 server running Client Access services:
+3. Run the following command to deploy the ASA credential to another Exchange 2016 or Exchange 2019 server running Client Access services:
     
   ```
   .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-2.corp.tailspintoys.com -CopyFrom cas-1.corp.tailspintoys.com
@@ -249,7 +247,7 @@ cas-2 Latest: 1/12/2016 10:37:59 AM, tailspin\EXCH2016ASA$
 ### Verify the deployment of the ASA credential
 <a name="DeployASACred"> </a>
 
-- Open the Exchange Management Shell on an Exchange 2016 server.
+- Open the Exchange Management Shell on an Exchange 2016 or Exchange 2019 server.
     
 - Run the following command to check the settings on the server running Client Access services:
     
@@ -281,7 +279,7 @@ AlternateServiceAccountConfiguration : Latest: 1/12/2016 10:19:22 AM, tailspin\E
 <a name="associateSPN"> </a>
 
 > [!IMPORTANT]
-> Don't associate SPNs with an ASA credential until you have deployed that credential to at least one Exchange 2016 Server, as described earlier in [Deploy the ASA Credential to the first Exchange 2016 server running Client Access services](kerberos-auth-for-load-balanced-client-access.md#DeployASACred). Otherwise, you will experience Kerberos authentication errors.
+> Don't associate SPNs with an ASA credential until you have deployed that credential to at least one Exchange Server, as described earlier in [Deploy the ASA Credential to the first Exchange server running Client Access services](kerberos-auth-for-load-balanced-client-access.md#DeployASACred). Otherwise, you will experience Kerberos authentication errors.
   
 Before you associate the SPNs with the ASA credential, you have to verify that the target SPNs aren't already associated with a different account in the forest. The ASA credential must be the only account in the forest with which these SPNs are associated. You can verify that no other account in the forest is associated with the SPNs by running the **setspn** command from the command line.
   
@@ -342,21 +340,21 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
 ## Enable Kerberos authentication for Outlook clients
 <a name="associateSPN"> </a>
 
-1. Open the Exchange Management Shell on an Exchange 2016 server.
+1. Open the Exchange Management Shell on an Exchange 2016 or Exchange 2019 server.
     
-2. To enable Kerberos authentication for Outlook Anywhere clients, run the following command on your Exchange 2016 server that is running Client Access services:
+2. To enable Kerberos authentication for Outlook Anywhere clients, run the following command on your Exchange 2016 or Exchange 2019 server that is running Client Access services:
     
   ```
   Get-OutlookAnywhere -Server CAS-1 | Set-OutlookAnywhere -InternalClientAuthenticationMethod  Negotiate
   ```
 
-3. To enable Kerberos authentication for MAPI over HTTP clients, run the following on your Exchange 2016 server that is running Client Access services:
+3. To enable Kerberos authentication for MAPI over HTTP clients, run the following on your Exchange 2016 or Exchange 2019 server that is running Client Access services:
     
   ```
   Get-MapiVirtualDirectory -Server CAS-1 | Set-MapiVirtualDirectory -IISAuthenticationMethods Ntlm, Negotiate
   ```
 
-4. Repeat steps 2 and 3 for each Exchange 2016 server that is running Client Access services for whichyou want to enable Kerberos authentication.
+4. Repeat steps 2 and 3 for each Exchange 2016 or Exchange 2019 server that is running Client Access services for whichyou want to enable Kerberos authentication.
     
 ### Verify Exchange client Kerberos authentication
 <a name="Validateauthentication"> </a>
@@ -405,7 +403,7 @@ To configure your servers that are running Client Access services to stop using 
   
 ### To remove the ASA credential
 
-1. Open the Exchange Management Shell on an Exchange 2016 server and run the following command:
+1. Open the Exchange Management Shell on an Exchange 2016 or Exchange 2019 server, and run the following command:
     
   ```
   Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials

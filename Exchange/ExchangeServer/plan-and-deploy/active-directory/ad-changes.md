@@ -1,5 +1,5 @@
 ---
-title: "What changes in Active Directory when Exchange 2016 is installed?"
+title: "What changes in Active Directory when Exchange is installed?"
 ms.author: dstrome
 author: dstrome
 manager: serdars
@@ -10,44 +10,47 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 07386078-6103-49a2-8698-2d41db9cec95
-description: "Summary: How Exchange 2016 affects Active Directory."
+description: "Summary: Learn how installing Exchange 2016 or Exchange 2019 affects Active Directory."
 ---
 
-# What changes in Active Directory when Exchange 2016 is installed?
+# What changes in Active Directory when Exchange is installed??
 
- **Summary**: How Exchange 2016 affects Active Directory.
+ **Summary**: Learn how installing Exchange 2016 or Exchange 2019 affects Active Directory.
   
-When you install Exchange 2016, changes are made to your Active Directory forest and domains. Exchange does this so that it can store information about the Exchange servers, mailboxes, and other objects related to Exchange in your organization. These changes are made for you when you run the Exchange 2016 Setup wizard or when you run the _PrepareSchema_, _PrepareAD_, and _PrepareDomains_ commands (see how to use these commands in [Prepare Active Directory and domains](../../plan-and-deploy/prepare-ad-and-domains.md)) during Exchange 2016 command-line Setup. If you're curious about the changes that Exchange makes to Active Directory, this topic is for you. It explains what Exchange does at each step of Active Directory preparation.
+When you install Exchange Server 2016 or Exchange Server 2019, changes are made to your Active Directory forest and domains to store information about the Exchange servers, mailboxes, and other Exchange-related objects in your organization.
+
+Three steps are required to prepare Active Directory for Exchange:
   
-There are three steps that need to be done to prepare Active Directory for Exchange:
-  
-- [Extend the Active Directory schema](ad-changes.md#Extend)
+1. [Extend the Active Directory schema](#extend-the-active-directory-schema)
     
-- [Prepare Active Directory containers, objects, and other items](ad-changes.md#PrepAD)
+2. [Prepare Active Directory containers, objects, and other items](#prepare-active-directory-containers-objects-and-other-items)
     
-- [Prepare Active Directory domains](ad-changes.md#PrepDomains)
+3. [Prepare Active Directory domains](#prepare-active-directory-domains)
     
-After all three steps are done, your Active Directory forest is ready for Exchange 2016. You can find out more about how to install Exchange 2016 by reading [Install the Exchange 2016 Mailbox role using the Setup wizard](../../plan-and-deploy/deploy-new-installations/install-mailbox-role.md).
+After all three steps are done, your Active Directory forest is ready for Exchange. This topic explains what Exchange does at each step of Active Directory preparation.
+
+You can make these changes before you install the first Exchange 2016 or Exchange 2019 server in the organization by running the _/PrepareSchema_, _/PrepareAD_, and _/PrepareAllDomains_ or _/PrepareDomains_ commands using Exchange command line Setup. For instructions, see [Prepare Active Directory and domains for Exchange](../prepare-ad-and-domains.md). Or, these changes are automatically made for you during the installation of the first Exchange server using the Exchange Setup wizard. For instructions, see [Install Exchange Mailbox servers using the Setup wizard](../../plan-and-deploy/deploy-new-installations/install-mailbox-role.md). 
+
   
 ## Extend the Active Directory schema
-<a name="Extend"> </a>
 
-Extending the Active Directory schema adds and updates classes, attributes, and other items. These changes are needed so that Exchange can create containers and objects to store information about the Exchange organization. Because Exchange makes a lot of changes to the Active Directory schema, there's a topic dedicated to this step. To see all of the changes made to the schema, see [Exchange 2016 Active Directory schema changes](ad-schema-changes.md).
+Extending the Active Directory schema adds and updates classes, attributes, and other items. These changes are needed so that Exchange can create containers and objects to store information about the Exchange organization. Because Exchange makes a lot of changes to the Active Directory schema, there's a topic dedicated to this step. To see all of the changes made to the schema, see:
+
+- [Exchange 2016 Active Directory schema changes](ad-schema-changes.md).
+
+- [Exchange 2019 Active Directory schema changes](ad-schema-changes-2019.md).
   
-This step is done automatically when you run the Exchange 2016 Setup wizard on the first Exchange 2016 server in the Active Directory forest. It's also done when you run Exchange 2016 command line Setup with the _PrepareSchema_ command (or optionally with the _PrepareAD_ command) on the first Exchange 2016 server in the forest. If you want to find out more information about how to extend the schema, see [1. Extend the Active Directory schema](../../plan-and-deploy/prepare-ad-and-domains.md#Step1) in [Prepare Active Directory and domains](../../plan-and-deploy/prepare-ad-and-domains.md).
-  
-After Exchange is finished extending the schema, it sets the schema version, which is stored in the **ms-Exch-Schema-Version-Pt** attribute. If you want to make sure that the Active Directory schema was extended successfully, you can check the value stored in this attribute. If the value in the attribute matches the schema version listed for the release of Exchange 2016 you installed, extending the schema was successful. For a list of Exchange releases and how to check the value of this attribute, check out the [How do you know this worked?](../../plan-and-deploy/prepare-ad-and-domains.md#Verify) section in [Prepare Active Directory and domains](../../plan-and-deploy/prepare-ad-and-domains.md).
+After the schema has been extended by running the _/PrepareSchema_ command, the _/PrepareAD command, or installing the first Exchange server using the Exchange Setup wizard, the schema version is set in the **ms-Exch-Schema-Version-Pt** attribute. To verify that the Active Directory schema was extended successfully, you can check the value stored in this attribute. For more information, see [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions).
   
 ## Prepare Active Directory containers, objects, and other items
-<a name="PrepAD"> </a>
 
-With the schema extended, the next step is to add all of the containers, objects, attributes, and other items that Exchange uses to store information in Active Directory. Most of the changes made in this step are applied to the entire Active Directory forest. A smaller set of changes are made to the local Active Directory domain where the _PrepareAD_ command was run during Setup.
+With the schema extended, the next step is to add all of the containers, objects, attributes, and other items that Exchange uses to store information in Active Directory. Most of the changes made in this step are applied to the entire Active Directory forest. A smaller set of changes are made only to the local Active Directory domain where the _/PrepareAD_ command was run (or where the first Exchange server was installed using the Exchange Setup wizard).
   
-These are the changes that are made to the Active Directory forest:
+Exchange makes the following changes to the Active Directory forest:
   
-- The Microsoft Exchange container is created under CN=Services,CN=Configuration,DC=\< _root domain_\> if it doesn't already exist.
+- The Microsoft Exchange container is created under CN=Services,CN=Configuration,DC=\<_root domain_\> if it doesn't already exist.
     
-- The following containers and objects are created under CN=\< _organization name_\>,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\< _root domain_\> if they don't already exist:
+- The following containers and objects are created under CN=\<_organization name_\>,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\<_root domain_\> if they don't already exist:
     
   - CN=Address Lists Container
     
@@ -111,17 +114,17 @@ These are the changes that are made to the Active Directory forest:
     
   - CN=Transport Settings
     
-  - CN=UM AutoAttendant Container
+  - CN=UM AutoAttendant Container (Exchange 2016 only)
     
-  - CN=UM DialPlan Container
+  - CN=UM DialPlan Container (Exchange 2016 only)
     
-  - CN=UM IPGateway Container
+  - CN=UM IPGateway Container (Exchange 2016 only)
     
-  - CN=UM Mailbox Policies
+  - CN=UM Mailbox Policies (Exchange 2016 only)
     
   - CN=Workload Management Settings
     
-- The following containers and objects are created under CN=Transport Settings,CN=\< _Organization Name_\>,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\< _root domain_\> if they don't already exist:
+- The following containers and objects are created under CN=Transport Settings,CN=\<_Organization Name_\>,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\<_root domain_\> if they don't already exist:
     
   - CN=Accepted Domains
     
@@ -179,22 +182,19 @@ These are the changes that are made to the Active Directory forest:
     
   - Server Management
     
-  - UM Management
-    
   - View-Only Organization Management
     
-- The new management role groups (which appear as universal security groups (USGs) in Active Directory) that were created in the Microsoft Exchange Security Groups OU are added to the **otherWellKnownObjects** attribute stored on the CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\< _root domain_\> container.
+- The new management role groups (which appear as universal security groups (USGs) in Active Directory) that were created in the Microsoft Exchange Security Groups OU are added to the **otherWellKnownObjects** attribute stored on the CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\<_root domain_\> container.
     
-- The Unified Messaging Voice Originator contact is created in the Microsoft Exchange System Objects container of the root domain.
+- In Exchange 2016 only, the Unified Messaging Voice Originator contact is created in the Microsoft Exchange System Objects container of the root domain.
     
-- The domain where the _PrepareAD_ command was run is prepared for Exchange 2016. For information about what's done to prepare the Active Directory domain for Exchange, check out [Prepare Active Directory domains](ad-changes.md#PrepDomains).
+- Only the domain where the _/PrepareAD_ command was run (or where the first Exchange server was installed using the Exchange Setup wizard) is prepared for Exchange. For information about what's done to prepare an Active Directory domain for Exchange, see the next section.
     
 ## Prepare Active Directory domains
-<a name="PrepDomains"> </a>
 
-The final step of preparing Active Directory for Exchange is to prepare all of the Active Directory domains where Exchange servers will be installed or where mailbox-enabled users will be located. This step is done automatically in the domain where the _PrepareAD_ command was run.
+The final step of preparing Active Directory for Exchange is to prepare the Active Directory domains where Exchange servers will be installed or where mailbox-enabled users will be located (all domains in the forest using the _/PrepareAllDomains_ command, specific domains using the _/PrepareDomains_ command, or installing the first Exhange server using the Exchange Setup Wizard). This step is done automatically in the domain where the _PrepareAD_ command was run (or where the first Exchange server was installed using the Exchange Setup wizard).
   
-These are the changes that are made to the Active Directory domains:
+Exchange makes the follwing changes to the Active Directory domains:
   
 - The Microsoft Exchange System Objects container is created in the root domain partition in Active Directory if it doesn't already exist.
     
@@ -206,6 +206,4 @@ These are the changes that are made to the Active Directory domains:
     
 - Permissions are assigned at the domain level for the Exchange Servers USG and the Organization Management USG.
     
-- The **objectVersion** property in the Microsoft Exchange System Objects container under DC=\< _root domain_\> is set. If you want to make sure that the Active Directory schema was extended successfully, you can check the value stored in this property. If the value in the property matches the schema version listed for the release of Exchange 2016 you installed, extending the schema was successful. For a list of Exchange releases and how to check the value of this property, check out the [How do you know this worked?](../../plan-and-deploy/prepare-ad-and-domains.md#Verify) section in [Prepare Active Directory and domains](../../plan-and-deploy/prepare-ad-and-domains.md).
-    
-
+- The **objectVersion** property in the Microsoft Exchange System Objects container under DC=\<_root domain_\> is set. To verify that the Active Directory domains were successfully prepared, you can check the value stored in this attribute. For more information, see [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions).

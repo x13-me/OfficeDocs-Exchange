@@ -1,30 +1,33 @@
 ---
-title: "Exchange 2016 post-installation tasks"
-ms.author: dstrome
-author: dstrome
+title: "Exchange Server post-installation tasks"
+ms.author: chrisda
+author: chrisda
 manager: serdars
-ms.date: 3/28/2016
+ms.date: 7/27/2016
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: bd99aaa4-b82c-427c-ab65-b9230ff63fb2
-description: "Summary: After installing Exchange 2016, here's how to get it up and running."
+description: "Summary: Learn about tasks you'll need to do after you install Exchange 2016 or Exchange 2019."
 ---
 
-# Exchange 2016 post-installation tasks
+# Exchange Server post-installation tasks
 
- **Summary**: After installing Exchange 2016, here's how to get it up and running.
+ **Summary**: Learn about tasks you'll need to do after you install Exchange 2016 or Exchange 2019.
   
-Read the following topics to help you configure your new Exchange 2016 organization.
+Read the following topics to help you configure your new Exchange 2016 or Exchange 2016 organization.
   
 |**Topic**|**Description**|
 |:-----|:-----|
-|[Enter your Exchange 2016 product key](enter-product-key.md) <br/> |Read this topic to license your Exchange server.  <br/> |
-|[Configure mail flow and client access](configure-mail-flow-and-client-access.md) <br/> |Read this topic to configure mail flow to and from the Internet and configure Exchange to accept client connections from the Internet.  <br/> |
-|[Configure Internet Mail Flow Through a Subscribed Edge Transport Server](http://technet.microsoft.com/library/d12ea770-99ce-4ab4-a373-96f2554641fa.aspx) <br/> |Read this topic if you're installing an Edge Transport server and you want to configure an EdgeSync Subscription between that server and a Hub Transport server.  <br/> |
-|[Verify an Exchange 2016 installation](verify-installation.md) <br/> |Read this topic to verify that Exchange 2016 was installed successfully in your organization.  <br/> |
-|[Install the Exchange 2016 management tools](install-management-tools.md) <br/> |Read this topic to install the Exchange Management Shell and Exchange Toolbox on client workstations or other non-Exchange servers in your organization.  <br/> |
+|[Enter your Exchange product key](enter-product-key.md)|Learn how to to license your Exchange server.|
+|[Configure mail flow and client access on Exchange servers](configure-mail-flow-and-client-access.md)|Learn how to configure mail flow to and from the Internet and configure Exchange to accept client connections from the Internet.|
+|[Verify Exchange Server installations](verify-installation.md)|Learn how to verify that Exchange 2016 was installed successfully in your organization.|
+|[Install the Exchange management tools](install-management-tools.md)|Learn how to install the Exchange Management Shell and Exchange Toolbox on client workstations or other non-Exchange servers in your organization.|
+|[Configure instant messaging integration with Outlook on the web in Exchange](configure-im-integration-with-owa.md)|Learn how to configure instant messaging (IM) integration between Skype for Business Server and Outlook on the web (formerly known as Outlook Web App)|
+|[Change the offline address book generation schedule in Exchange](change-oab-generation-schedule.md)|Learn how to change the offline address book (OAB) generation schedule on specific Exchange servers or for the whole organization|
+|[Configure certificate based authentication in Exchange 2016](configure-certificate-based-auth.md)|Learn how to configure CBA in Exchange 2016 CU1 or later|
+|[Edge Subscriptions](../../architecture/edge-transport-servers/edge-subscriptions.md)|Learn how to configure an EdgeSync Subscription between a new Edge Transport server in the perimeter network and the Exchange Mailbox servers in an internal Active Directory site.|
    
 

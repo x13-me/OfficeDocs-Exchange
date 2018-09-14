@@ -1,24 +1,24 @@
 ---
-title: "Scenario Deploying address book policies in Exchange 2016"
+title: "Scenario Deploying address book policies in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6ac3c87d-161f-447b-afb2-149ae7e3f1dc
-description: "Summary: Learn how to use address book polices to split single Exchange 2016 organizations into separate virtual organizations based on different requirements and scenarios."
+description: "Summary: Learn how to use address book polices to split single Exchange Server organizations into separate virtual organizations based on different requirements and scenarios."
 ---
 
-# Scenario: Deploying address book policies in Exchange 2016
+# Scenario: Deploying address book policies in Exchange Server
 
- **Summary**: Learn how to use address book polices to split single Exchange 2016 organizations into separate virtual organizations based on different requirements and scenarios.
+ **Summary**: Learn how to use address book polices to split single Exchange 2016 or Exchange 2019 organizations into separate virtual organizations based on different requirements and scenarios.
   
 The scenarios in this topic describe the deployment solutions for address book policies (ABPs) in three of the most common organization types where multiple entities (companies, government agencies, school classrooms, etc.) share a common Exchange environment. In all scenarios, a recipient filter divides recipients into separate virtual organizations, which then defines the ABPs that are applied to users in those virtual organizations. For more information recipient filters and virtual organizations, see the [Considerations and best practices for address book policies](abp-scenarios.md#BKMK_bestpractices) section later in this topic.
   
-For more information about ABPs, see [Address book policies in Exchange 2016](address-book-policies.md). For ABP procedures, see [Procedures for address book policies in Exchange 2016](abp-procedures.md).
+For more information about ABPs, see [Address book policies in Exchange Server](address-book-policies.md). For ABP procedures, see [Procedures for address book policies in Exchange Server](abp-procedures.md).
   
 ## Scenario 1: Two separate companies in one Exchange organization
 
@@ -139,7 +139,7 @@ These are the important issues to consider when you use ABPs in your organizatio
   New-TransportRule -Name "Ethical Wall: Contoso-Fabrikam" -BetweenMemberOf1 "AllFabrikamEmployees" -BetweenMemberOf2 "AllContosoEmployees" -DeleteMessage -ExceptIfFrom seniorleadership@fabrikam.com
   ```
 
-    For more information about mail flow rules, see [Mail flow rules in Exchange 2016](../../policy-and-compliance/mail-flow-rules/mail-flow-rules.md).
+    For more information about mail flow rules, see [Mail flow rules in Exchange Server](../../policy-and-compliance/mail-flow-rules/mail-flow-rules.md).
     
 - To configure a feature that's similar to address book policies in the Skype for Business or Lync client, you can set the **msRTCSIP-GroupingID** attribute for specific users. For details, see [PartitionByOU Replaced with msRTCSIP-GroupingID](https://go.microsoft.com/fwlink/p/?LinkId=232306).
     
@@ -302,7 +302,7 @@ This example creates the ABP named ABP_CEO that contains the GAL, OAB, room list
 New-AddressBookPolicy -Name "ABP_CEO" -AddressLists "AL_FAB_Users_DGs"," AL_FAB_Contacts","AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\Default Offline Address Book" -GlobalAddressList "\Default Global Address List" -RoomList "\All Rooms"
 ```
 
-For more information, see [Procedures for address book policies in Exchange 2016](abp-procedures.md).
+For more information, see [Procedures for address book policies in Exchange Server](abp-procedures.md).
   
 ### Step 5: Assign the address book policies to mailboxes
 

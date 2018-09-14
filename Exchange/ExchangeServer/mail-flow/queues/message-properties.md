@@ -3,20 +3,18 @@ title: "Properties of messages in queues"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 8e6187c1-76f0-49da-bc24-2ab57cfb3c2c
-description: "Summary: Learn about the filterable properties for messages in queues in Exchange 2016."
+description: "Summary: Learn about the filterable properties for messages in queues in Exchange Server 2016 and 2019."
 ---
 
 # Properties of messages in queues
 
- **Summary**: Learn about the filterable properties for messages in queues in Exchange 2016.
-  
-Filtering messages in queues by one or more message properties in Exchange Server 2016 allows you to quickly locate messages and take action on them. When an email message is sent to multiple recipients, the message might be located in multiple queues on the server. When you filter messages in queues by message properties, you can locate messages across all queues. The following scenarios are examples of how you might use message filtering to manage mail flow:
+Filtering messages in queues by one or more message properties in Exchange Server allows you to quickly locate messages and take action on them. When an email message is sent to multiple recipients, the message might be located in multiple queues on the server. When you filter messages in queues by message properties, you can locate messages across all queues. The following scenarios are examples of how you might use message filtering to manage mail flow:
   
 - The Submission queue on the Mailbox server or Edge Transport server that receives email from the Internet has a high volume of messages that are queued for delivery. Many of the messages have the same subject. Therefore, you suspect that spam is being sent to your organization. You can create a filter to view all the messages that meet the subject criteria. If you determine that the messages are spam, you can select them all and delete them from the delivery queue without sending an NDR.
     
@@ -35,7 +33,7 @@ The following table describes the message properties that you can use as filters
 |n/a  <br/> | `AccountForest` <br/> |n/a  <br/> |This property is reserved for internal Microsoft use, and isn't used in on-premises Exchange organizations.  <br/> In on-premises Exchange, this property is the forest root domain where the mailbox resides (for example, contoso.com).  <br/> |
 |n/a  <br/> | `ComponentLatency` <br/> |n/a  <br/> |This property is reserved for internal Microsoft use, and isn't used in on-premises Exchange organizations.  <br/> |
 |**Date Received** <br/> | `DateReceived` <br/> |**Greater Than** (`-gt`)  <br/> **Greater Than or Equals** (`-ge`)  <br/> **Less Than** (`-lt`)  <br/> **Less Than or Equals** (`-le`)  <br/> |The date/time when the message was placed in the queue.  <br/> |
-|n/a  <br/> | `DeferReason` <br/> |Equals (`-eq`)  <br/> Does not equal (`-ne`)  <br/> Contains (`-like`)  <br/> |Indicates why the message was deferred. If the message wasn't deferred, this property has the value `None`. A deferred message is returned to the Submission queue because of transient errors that were encountered during recipient resolution. For more information about deferred messages, see [Recipient resolution in Exchange 2016](../../mail-flow/mail-routing/recipient-resolution.md). The possible values are:  <br/> `AD Transient Failure During Content Conversion` <br/> `AD Transient Failure During Resolve` <br/> `Agent` <br/> `Ambiguous Recipient` <br/> `Config Update` <br/> `Loop Detected` <br/> `Marked As Retry Delivery If Rejected` <br/> `Recipient does not have a mailbox database` <br/> `Recipient Thread Limit Exceeded` <br/> `Rerouted By Store Driver` <br/> `Storage Transient Failure During Content Conversion` <br/> `Target Site Inbound Mail Disabled` <br/> `Transient Accepted Domains Load Failure` <br/> `Transient Attribution Failure` <br/> `Transient Failure` <br/> |
+|n/a  <br/> | `DeferReason` <br/> |Equals (`-eq`)  <br/> Does not equal (`-ne`)  <br/> Contains (`-like`)  <br/> |Indicates why the message was deferred. If the message wasn't deferred, this property has the value `None`. A deferred message is returned to the Submission queue because of transient errors that were encountered during recipient resolution. For more information about deferred messages, see [Recipient resolution in Exchange Server](../../mail-flow/mail-routing/recipient-resolution.md). The possible values are:  <br/> `AD Transient Failure During Content Conversion` <br/> `AD Transient Failure During Resolve` <br/> `Agent` <br/> `Ambiguous Recipient` <br/> `Config Update` <br/> `Loop Detected` <br/> `Marked As Retry Delivery If Rejected` <br/> `Recipient does not have a mailbox database` <br/> `Recipient Thread Limit Exceeded` <br/> `Rerouted By Store Driver` <br/> `Storage Transient Failure During Content Conversion` <br/> `Target Site Inbound Mail Disabled` <br/> `Transient Accepted Domains Load Failure` <br/> `Transient Attribution Failure` <br/> `Transient Failure` <br/> |
 |n/a  <br/> | `Directionality` <br/> |Equals (`-eq`)  <br/> Does Not Equal (`-ne`)  <br/> |Valid values are `Incoming`, `Originating`, and `Undefined`.  <br/> |
 |**Expiration Time** <br/> | `ExpirationTime` <br/> |**Greater Than** (`-gt`)  <br/> **Greater Than or Equals** (`-ge`)  <br/> **Less Than** (`-lt`)  <br/> **Less Than or Equals** (`-le`)  <br/> |The date/time when the message will expire and be deleted from the queue if the message can't be delivered.  <br/> |
 |n/a  <br/> | `ExternalDirectoryOrganizationId` <br/> |n/a  <br/> |This property is reserved for internal Microsoft use, and isn't used in on-premises Exchange organizations.  <br/> In on-premises Exchange, the value is `00000000-0000-0000-0000-000000000000`.  <br/> |

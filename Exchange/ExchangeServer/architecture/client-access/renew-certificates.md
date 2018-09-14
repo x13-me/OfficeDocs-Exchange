@@ -1,5 +1,5 @@
 ---
-title: "Renew an Exchange 2016 certificate"
+title: "Renew an Exchange Server certificate"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,14 +10,12 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 356ca7cd-b9d4-487d-aa21-3b38e91bde58
-description: "Summary: Learn how to renew Exchange self-signed certificate or create certificate renewal requests for a certification authority in Exchange 2016."
+description: "Summary: Learn how to renew Exchange self-signed certificate or create certificate renewal requests for a certification authority in Exchange Server 2016 or 2019."
 ---
 
-# Renew an Exchange 2016 certificate
+# Renew an Exchange Server certificate
 
- **Summary**: Learn how to renew Exchange self-signed certificate or create certificate renewal requests for a certification authority in Exchange 2016.
-  
-Every certificate has a built-in expiration date. In Exchange Server 2016, the default self-signed certificate that's installed on the Exchange server expires 5 years after Exchange was installed on the server. You can use the Exchange admin center (EAC) or the Exchange Management Shell to renew Exchange certificates. This includes Exchange self-signed certificates, and certificates that were issued by a certification authority (CA).
+Every certificate has a built-in expiration date. In Exchange Server, the default self-signed certificate that's installed on the Exchange server expires 5 years after Exchange was installed on the server. You can use the Exchange admin center (EAC) or the Exchange Management Shell to renew Exchange certificates. This includes Exchange self-signed certificates, and certificates that were issued by a certification authority (CA).
   
 ## What do you need to know before you begin?
 
@@ -27,7 +25,7 @@ Every certificate has a built-in expiration date. In Exchange Server 2016, the d
     
 - For certificates that were issued by a CA, verify the certificate request requirements of the CA. Exchange generates a PKCS #10 request (.req) file that uses Base64 encoding (default) or Distinguished Encoding Rules (DER), with an RSA public key that's 1024, 2048 (default), or 4096 bits. Note that encoding and public key options are only available in the Exchange Management Shell.
     
-- To renew a certificate that was issued by a CA, you need to renew the certificate with the same CA that issued the certificate. If you're changing CAs, or if there's a problem with the original certificate when you try to renew it, you need to create a new certificate request (also known as a certificate signing request or CSR) for a new certificate. For more information, see [Create an Exchange 2016 certificate request for a certification authority](create-ca-certificate-requests.md).
+- To renew a certificate that was issued by a CA, you need to renew the certificate with the same CA that issued the certificate. If you're changing CAs, or if there's a problem with the original certificate when you try to renew it, you need to create a new certificate request (also known as a certificate signing request or CSR) for a new certificate. For more information, see [Create an Exchange Server certificate request for a certification authority](create-ca-certificate-requests.md).
     
 - If you renew or replace a certificate that was issued by a CA on a subscribed Edge Transport server, you need to remove the old certificate, and then delete and recreate the Edge Subscription. For more information, see [Edge Subscription process](../../architecture/edge-transport-servers/edge-subscriptions.md#Process).
     
@@ -42,7 +40,7 @@ Every certificate has a built-in expiration date. In Exchange Server 2016, the d
 
 The procedures are the same for certificates that were issued by an internal CA (for example, Active Directory Certificate Services), or a commercial CA.
   
-To renew a certificate that was issued by a CA, you create a certificate renewal request, and then you send the request to the CA. The CA then sends you the actual certificate file that you need to install on the Exchange server. The procedure is nearly identical to that of completing a new certificate request by installing the certificate on the server. For instructions, see [Complete a pending Exchange 2016 certificate request](complete-pending-certificate-requests.md).
+To renew a certificate that was issued by a CA, you create a certificate renewal request, and then you send the request to the CA. The CA then sends you the actual certificate file that you need to install on the Exchange server. The procedure is nearly identical to that of completing a new certificate request by installing the certificate on the server. For instructions, see [Complete a pending Exchange Server certificate request](complete-pending-certificate-requests.md).
   
 ### Use the EAC to create a certificate renewal request for a certification authority
 

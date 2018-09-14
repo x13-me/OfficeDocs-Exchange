@@ -3,18 +3,18 @@ title: "Pre-stage the cluster name object for a database availability group"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 4/19/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 51ebf2f6-8a02-44ef-a489-ca361cb0f63a
-description: "Summary: Pre-stage and provision a cluster name object (CNO) for an Exchange 2016 database availability group (DAG)."
+description: "Summary: Pre-stage and provision a cluster name object (CNO) for an Exchange Server database availability group (DAG)."
 ---
 
 # Pre-stage the cluster name object for a database availability group
 
- **Summary**: Pre-stage and provision a cluster name object (CNO) for an Exchange 2016 database availability group (DAG).
+ **Summary**: Pre-stage and provision a cluster name object (CNO) for an Exchange 2016 or Exchange 2019 database availability group (DAG).
   
 In environments where computer account creation is restricted, or where computer accounts are created in a container other than the default computers container, you can pre-stage the cluster name object (CNO) and then provision the CNO by assigning permissions to it.
   

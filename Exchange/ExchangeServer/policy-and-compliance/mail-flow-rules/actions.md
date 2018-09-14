@@ -1,28 +1,28 @@
 ---
-title: "Mail flow rule actions in Exchange 2016"
+title: "Mail flow rule actions in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: scotv
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5d11a955-b1cc-4150-a0b9-a8cc48ba9bde
-description: "Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange 2016."
+description: "Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange Server."
 ---
 
-# Mail flow rule actions in Exchange 2016
+# Mail flow rule actions in Exchange Server
 
- **Summary**: Learn about the actions that are available for mail flow rules (transport rules) in Exchange 2016.
+ **Summary**: Learn about the actions that are available for mail flow rules (transport rules) in Exchange 2016 and Exchange 2019.
   
 Actions in mail flow rules (also known as transport rules) specify what you want to do to messages that match conditions of the rule. For example, you can create a rule that forwards message from specific senders to a moderator, or adds a disclaimer or personalized signature to all outbound messages.
   
  Actions typically require additional properties. For example, when the rule redirects a message, you need to specify where to redirect the message. Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.
   
-For more information about mail flow rules in Exchange Server 2016, see [Mail flow rules in Exchange 2016](mail-flow-rules.md).
+For more information about mail flow rules in Exchange Server, see [Mail flow rules in Exchange Server](mail-flow-rules.md).
   
-For more information about conditions and exceptions in mail flow rules, see [Mail flow rule conditions and exceptions (predicates) in Exchange 2016](conditions-and-exceptions.md).
+For more information about conditions and exceptions in mail flow rules, see [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md).
   
 For more information about actions in mail flow rules in Exchange Online Protection or Exchange Online, see [Transport rule actions](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx) or [Transport rule actions](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx).
   
@@ -112,7 +112,7 @@ The property values that are used for actions in mail flow rules are described i
 ## For more information
 <a name="more"> </a>
 
-[Mail flow rule conditions and exceptions (predicates) in Exchange 2016](conditions-and-exceptions.md)
+[Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md)
   
 [Transport rule actions](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx) for Exchange Online 
   

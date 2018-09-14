@@ -1,22 +1,20 @@
 ---
-title: "Create a Send connector to send mail to the Internet"
+title: "Create a Send connector in Exchange Server to send mail to the internet"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6deaefa8-1152-40d9-b1ba-9c19bdf8a928
-description: "Summary: Create the Send connector that's required to send mail to the internet."
+description: "Learn how to create the Send connector that's required to send mail to the internet in Exchange 2016 and Exchange 2019."
 ---
 
-# Create a Send connector to send mail to the Internet
+# Create a Send connector in Exchange Server to send mail to the internet
 
- **Summary**: Create the Send connector that's required to send mail to the internet.
-  
-When install your first Exchange Server 2016 server, the server isn't able to send mail outside of your Exchange organization. To send mail outside your Exchange organization, you need to create a Send connector.
+When install your first Exchange Server 2016 or Exchange 2019 server, the server isn't able to send mail outside of your Exchange organization. To send mail outside your Exchange organization, you need to create a Send connector.
   
 ## What do you need to know before you begin?
 
@@ -59,7 +57,7 @@ See also [Send connectors](send-connectors.md) for more information about connec
     
   - The **Scoped send connector** setting is important if your organization has Exchange servers installed in multiple Active Directory sites: 
     
-  - If you don't select **Scoped send connector**, the connector is usable by all transport servers (Exchange 2016 Mailbox servers, Exchange 2013 Mailbox servers, and Exchange 2010 Hub Transport servers) in the entire Active Directory forest. This is the default value.
+  - If you don't select **Scoped send connector**, the connector is usable by all transport servers (Exchange 2013 or later Mailbox servers and Exchange 2010 Hub Transport servers) in the entire Active Directory forest. This is the default value.
     
   -  If you select **Scoped send connector**, the connector is only usable by other transport servers in the same Active Directory site.
     

@@ -3,18 +3,18 @@ title: "Plan for high availability and site resilience"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 29bb0358-fc8e-4437-8feb-d2959ed0f102
-description: "Summary: Learn about the elements of high availability and site resilience to incorporate in your Exchange 2016 deployment plan."
+description: "Summary: Learn about the elements of high availability and site resilience to incorporate in your Exchange Server deployment plan."
 ---
 
 # Plan for high availability and site resilience
 
- **Summary**: Learn about the elements of high availability and site resilience to incorporate in your Exchange 2016 deployment plan.
+ **Summary**: Learn about the elements of high availability and site resilience to incorporate in your Exchange 2016 or Exchange 2019 deployment plan.
 
 During the planning phase, the system architects, administrators, and other key stakeholders should identify the business requirements and the architectural requirements for the deployment; in particular, the requirements about high availability and site resilience.
 
@@ -29,33 +29,33 @@ Before deploying a database availability group (DAG) and creating mailbox databa
 
 - Each Mailbox server in a DAG must be a member server in the same domain.
 
-- Adding an Exchange 2016 Mailbox server that's also a directory server to a DAG isn't supported.
+- Adding an Exchange Mailbox server that's also a directory server to a DAG isn't supported.
 
 - The name you assign to the DAG must be a valid, available, and unique computer name of 15 characters or less.
 
 ## Hardware requirements
 <a name="HR"> </a>
 
-Generally, there are no special hardware requirements specific to DAGs or mailbox database copies. The servers used must meet all of the requirements set forth in [Exchange 2016 prerequisites](../plan-and-deploy/prerequisites.md)and [Exchange 2016 system requirements](../plan-and-deploy/system-requirements.md).
+Generally, there are no special hardware requirements specific to DAGs or mailbox database copies. The servers used must meet all of the requirements set forth in [Exchange Server prerequisites](../plan-and-deploy/prerequisites-2016.md)and [Exchange Server system requirements](../plan-and-deploy/system-requirements-2016.md).
 
 ## Storage requirements
 <a name="StoreReq"> </a>
 
-Generally, there are no special storage requirements specific to DAGs or mailbox database copies. DAGs don't require or use cluster-managed shared storage. Cluster-managed shared storage is supported for use in a DAG only when the DAG is configured to use a solution that leverages the Third Party Replication API built into Exchange 2016.
+Generally, there are no special storage requirements specific to DAGs or mailbox database copies. DAGs don't require or use cluster-managed shared storage. Cluster-managed shared storage is supported for use in a DAG only when the DAG is configured to use a solution that leverages the Third Party Replication API built into Exchange Server.
 
 ## Software requirements
 <a name="SoftReq"> </a>
 
-Each member of a DAG must be running the same operating system. Exchange 2016 is supported on the Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2 operating systems. Within a specific DAG, all members must be running the same supported operating system.
+Each member of a DAG must be running the same operating system. Exchange Server is supported on the Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2 operating systems. Within a specific DAG, all members must be running the same supported operating system.
 
-In addition to meeting the prerequisites for installing Exchange 2016, there are operating system requirements that must be met. DAGs use Windows Failover Clustering technology, and as a result, they require the Enterprise or Datacenter version of Windows Server 2008 R2, or the Standard or Datacenter version of the Windows Server 2012 or Windows Server 2012 R2 operating systems.
+In addition to meeting the prerequisites for installing Exchange Server, there are operating system requirements that must be met. DAGs use Windows Failover Clustering technology, and as a result, they require the Enterprise or Datacenter version of Windows Server 2008 R2, or the Standard or Datacenter version of the Windows Server 2012 or Windows Server 2012 R2 operating systems.
 
 ## Network requirements
 <a name="NR"> </a>
 
-There are specific networking requirements that must be met for each DAG and for each DAG member. Each DAG must have a single *MAPI network*, which is used by a DAG member to communicate with other servers (for example, other Exchange 2016 servers or directory servers), and zero or more *Replication networks*, which are networks dedicated to log shipping and seeding.
+There are specific networking requirements that must be met for each DAG and for each DAG member. Each DAG must have a single *MAPI network*, which is used by a DAG member to communicate with other servers (for example, other Exchange servers or directory servers), and zero or more *Replication networks*, which are networks dedicated to log shipping and seeding.
 
-In previous versions of Exchange, we recommended at least two networks (one MAPI network and one Replication network) for DAGs. In Exchange 2016, multiple networks are supported, but our recommendation depends on your physical network topology. If you have multiple physical networks between DAG members that are physically separate from one another, then using a separate MAPI and Replication network provides additional redundancy. If you have multiple networks that are partially physically separate but converge into a single physical network (for example, a single WAN link), then using a single network (preferably 10 gigabit Ethernet) for both MAPI and Replication traffic is recommended. This provides simplicity for the network and the network path.
+In previous versions of Exchange, we recommended at least two networks (one MAPI network and one Replication network) for DAGs. In Exchange 2016 and Exchange 2019, multiple networks are supported, but our recommendation depends on your physical network topology. If you have multiple physical networks between DAG members that are physically separate from one another, then using a separate MAPI and Replication network provides additional redundancy. If you have multiple networks that are partially physically separate but converge into a single physical network (for example, a single WAN link), then using a single network (preferably 10 gigabit Ethernet) for both MAPI and Replication traffic is recommended. This provides simplicity for the network and the network path.
 
 Consider the following when designing the network infrastructure for your DAG:
 
@@ -87,9 +87,9 @@ Consider the following when designing the network infrastructure for your DAG:
 
 - Round trip latency requirements may not be the most stringent network bandwidth and latency requirement for a multi-datacenter configuration. You must evaluate the total network load, which includes client access, Active Directory, transport, continuous replication, and other application traffic, to determine the necessary network requirements for your environment.
 
-- DAG networks support Internet Protocol version 4 (IPv4) and IPv6. IPv6 is supported only when IPv4 is also used; a pure IPv6 environment isn't supported. Using IPv6 addresses and IP address ranges is supported only when both IPv6 and IPv4 are enabled on that computer, and the network supports both IP address versions. If Exchange 2016 is deployed in this configuration, all server roles can send data to and receive data from devices, servers, and clients that use IPv6 addresses.
+- DAG networks support Internet Protocol version 4 (IPv4) and IPv6. IPv6 is supported only when IPv4 is also used; a pure IPv6 environment isn't supported. Using IPv6 addresses and IP address ranges is supported only when both IPv6 and IPv4 are enabled on that computer, and the network supports both IP address versions. If Exchange Server is deployed in this configuration, all server roles can send data to and receive data from devices, servers, and clients that use IPv6 addresses.
 
-- Automatic Private IP Addressing (APIPA) is a feature of Windows that automatically assigns IP addresses when no Dynamic Host Configuration Protocol (DHCP) server is available on the network. APIPA addresses (including manually assigned addresses from the APIPA address range) aren't supported for use by DAGs or by Exchange 2016.
+- Automatic Private IP Addressing (APIPA) is a feature of Windows that automatically assigns IP addresses when no Dynamic Host Configuration Protocol (DHCP) server is available on the network. APIPA addresses (including manually assigned addresses from the APIPA address range) aren't supported for use by DAGs or by Exchange Server.
 
 ### DAG name and IP address requirements
 
@@ -118,7 +118,7 @@ Each time the DAG's MAPI network is extended across an additional subnet, an add
 At any specific time, the cluster for the DAG will use only one of the assigned IP addresses. Windows Failover Clustering registers this IP address in DNS when the cluster IP address and Network Name resources are brought online. In addition to using an IP address and network name, a cluster name object (CNO) is created in Active Directory. The name, IP address, and CNO for the cluster are used internally by the system to secure the DAG and for internal communication purposes. Administrators and end users don't need to interface with or connect to the DAG name or IP address.
 
 > [!NOTE]
-> Although the cluster's IP address and network name are used internally by the system, there is no hard dependency in Exchange 2016 that these resources be available. Even if the underlying cluster's administrative access point (e.g., it's IP address and Network Name resources) is offline, internal communication still occurs within the DAG by using the DAG member server names. However, we recommend that you periodically monitor the availability of these resources to ensure that they aren't offline for more than 30 days. If the underlying cluster is offline for more than 30 days, the cluster CNO account may be invalidated by the garbage collection mechanism in Active Directory.
+> Although the cluster's IP address and network name are used internally by the system, there is no hard dependency in Exchange Server that these resources be available. Even if the underlying cluster's administrative access point (for example, its IP address and Network Name resources) is offline, internal communication still occurs within the DAG by using the DAG member server names. However, we recommend that you periodically monitor the availability of these resources to ensure that they aren't offline for more than 30 days. If the underlying cluster is offline for more than 30 days, the cluster CNO account may be invalidated by the garbage collection mechanism in Active Directory.
 
 ### Network adapter configuration for DAGs
 
@@ -222,7 +222,7 @@ For Outlook Anywhere clients, we recommend that you use a single subject alterna
 Set-OutlookProvider EXPR -CertPrincipalName "msstd:mail.contoso.com"
 ```
 
-Some applications that integrate with Exchange have specific certificate requirements that may require using additional certificates. Exchange 2016 can co-exist with Office Communications Server (OCS). OCS requires certificates with 1024-bit or greater certificates that use the OCS server name for the Certificate Principal Name. Because using an OCS server name for the Certificate Principal Name would prevent Outlook Anywhere from working properly, you would need to use an additional and separate certificate for the OCS environment.
+Some applications that integrate with Exchange have specific certificate requirements that may require using additional certificates. Exchange Server can co-exist with Office Communications Server (OCS). OCS requires certificates with 1024-bit or greater certificates that use the OCS server name for the Certificate Principal Name. Because using an OCS server name for the Certificate Principal Name would prevent Outlook Anywhere from working properly, you would need to use an additional and separate certificate for the OCS environment.
 
 ### Network planning
 
@@ -230,13 +230,13 @@ In addition to the specific networking requirements that must be met for each DA
 
 - **MAPI networks should be isolated from Replication networks**: Windows network policies, Windows firewall policies, or router access control lists (ACLs) should be used to block traffic between the MAPI network and the Replication networks. This configuration is necessary to prevent network heartbeat cross talk.
 
-- **Client-facing DNS records should have a Time to Live (TTL) value of 5 minutes**: The amount of downtime that clients experience is dependent not just on how quickly a switchover can occur, but also on how quickly DNS replication occurs and the clients query for updated DNS information. DNS records for all Exchange client services, including Microsoft Office Outlook Web App, Microsoft Exchange ActiveSync, Exchange Web services, Outlook Anywhere, SMTP, POP3, and IMAP4 in both the internal and external DNS servers should be set with a TTL of 5 minutes.
+- **Client-facing DNS records should have a Time to Live (TTL) value of 5 minutes**: The amount of downtime that clients experience is dependent not just on how quickly a switchover can occur, but also on how quickly DNS replication occurs and the clients query for updated DNS information. DNS records for all Exchange client services, including Outlook on the web (formerly known as Outlook Web App), Exchange ActiveSync, Exchange Web Services, Outlook Anywhere, SMTP, POP3, and IMAP4 in both the internal and external DNS servers should be set with a TTL of 5 minutes.
 
 - **Use static routes to configure connectivity across Replication networks**: To provide network connectivity between each of the Replication network adapters, use persistent static routes. This is a quick and one-time configuration that's performed on each DAG member when using static IP addresses. If you're using DHCP to obtain IP addresses for your Replication networks, you can also use it to assign static routes for the replication, thereby simplifying the configuration process.
 
 ### General site resilience planning
 
-In addition to the requirements listed above for high availability, there are other recommendations for deploying Exchange 2016 in a site resilient configuration (for example, extending a DAG across multiple datacenters). What you do during the planning phase will directly affect the success of your site resilience solution. For example, poor namespace design can cause difficulties with certificates, and an incorrect certificate configuration can prevent users from accessing services.
+In addition to the requirements listed above for high availability, there are other recommendations for deploying Exchange Server in a site resilient configuration (for example, extending a DAG across multiple datacenters). What you do during the planning phase will directly affect the success of your site resilience solution. For example, poor namespace design can cause difficulties with certificates, and an incorrect certificate configuration can prevent users from accessing services.
 
 To minimize the time it takes to activate a second datacenter, and allow the second datacenter to host the service endpoints of a failed datacenter, the appropriate planning must be completed. The following are examples:
 
@@ -244,7 +244,7 @@ To minimize the time it takes to activate a second datacenter, and allow the sec
 
 - The servers in the second datacenter must have sufficient capacity to host the combined user population of both datacenters.
 
-- The second datacenter must have all services enabled that are provided in the primary datacenter (unless the service isn't included as part of the site resilience SLA). This includes Active Directory, networking infrastructure (for example, DNS or TCP/IP), telephony services (if Unified Messaging is in use), and site infrastructure (such as power or cooling).
+- The second datacenter must have all services enabled that are provided in the primary datacenter (unless the service isn't included as part of the site resilience SLA). This includes Active Directory, networking infrastructure (for example, DNS or TCP/IP), telephony services (if Unified Messaging in Exchange 2016 is in use), and site infrastructure (such as power or cooling).
 
 - For some services to be able to service users from the failed datacenter, they must have the proper server certificates configured. Some services don't allow instancing (for example, POP3 and IMAP4) and only allow the use of a single certificate. In these cases, either the certificate must be a SAN certificate that includes multiple names, or the multiple names must be similar enough so that a wildcard certificate can be used (assuming the security policies of the organization allows the use of wildcard certificates).
 

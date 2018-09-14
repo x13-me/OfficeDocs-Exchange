@@ -1,31 +1,28 @@
 ---
-title: "Queues and messages in queues"
+title: "Queues and messages in queues in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/10/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: e7ad0ba5-3789-4a2b-9825-6bb1b321609c
-description: "Summary: Learn about queues in Exchange 2016"
+description: "Learn about queues and messages in queues in Exchange 2016 and Exchange 2019"
 ---
 
-# Queues and messages in queues
+# Queues and messages in queues in Exchange Server
 
- **Summary**: Learn about queues in Exchange 2016
+A *queue* is a temporary holding location for messages that are waiting to enter the next stage of processing or delivery to a destination. Each queue represents a logical set of messages that the Exchange server processes in a specific order. In Exchange 2016 and Exchange 2019, queues hold messages before, during, and after delivery. Queues exist in the Transport service on Mailbox servers and on Edge Transport servers. Mailbox servers and Edge Transport servers are called *transport servers* throughout this topic.
   
-A *queue* is a temporary holding location for messages that are waiting to enter the next stage of processing or delivery to a destination. Each queue represents a logical set of messages that the Exchange server processes in a specific order. In Exchange 2016, queues hold messages before, during and after delivery. Queues exist in the Transport service on Mailbox servers and on Edge Transport servers. Mailbox servers and Edge Transport servers are called *transport servers* throughout this topic.
-  
-Like all previous versions of Exchange, Exchange 2016 uses a single Extensible Storage Engine (ESE) database for queue storage.
+Like all previous versions of Exchange, a single Extensible Storage Engine (ESE) database is used for queue storage.
   
 You can manage queues and messages in queues by using the Exchange Management Shell and Queue Viewer in the Exchange Toolbox. You can use these interfaces to view the status and contents of queues and detailed message properties. You can also perform actions that modify queues or the messages in queues. For more information, see [Procedures for queues](queue-procedures.md) and [Procedures for messages in queues](message-procedures.md).
   
 ## Types of queues
-<a name="QueueTypes"> </a>
 
-The following types of queues are used in Exchange 2016, which are the same as Exchange 2013:
+The following types of queues are used in Exchange 2016 and Exchage 2019, which are the same as Exchange 2013:
   
 ****
 
@@ -33,12 +30,11 @@ The following types of queues are used in Exchange 2016, which are the same as E
 |:-----|:-----|:-----|
 |Delivery queues  <br/> |Mailbox servers and Edge Transport servers  <br/> |Holds messages that are being delivered to all internal and external destinations.  <br/> Delivery queues are dynamically created when they're required, and are automatically deleted when the queue is empty and the expiration time has passed. The queue expiration time is controlled by the _QueueMaxIdleTime_ parameter on the **Set-TransportService** cmdlet. The default value is three minutes.  <br/> On Edge Transport servers, there's a queue for every unique destination SMTP domain or smart host.  <br/> On Mailbox servers, there's a queue for every unique destination as indicated by the **NextHopSolutionKey** property. For more information, see the [NextHopSolutionKey](#nexthopsolutionkey) section later in this topic.  <br/>  All messages are transmitted between Exchange 2016 and Exchange 2013 servers by using SMTP. Non-SMTP destinations also use delivery queues if the destination is serviced by a Delivery Agent connector. For more information, see [Delivery Agents and Delivery Agent Connectors](http://technet.microsoft.com/library/38c942ee-b59d-47ec-87eb-bebad441ada5.aspx).  <br/> |
 |Poison message queue  <br/> |Mailbox servers and Edge Transport servers  <br/> |Isolates messages that contain errors and are determined to be harmful to Exchange after a server or service failure. The messages may be genuinely harmful in their content and format, or the messages might have been the victims of a poorly written transport agent or a software bug that crashed the Exchange server while it was processing the otherwise valid messages.  <br/> The poison message queue is typically empty. If the poison message queue contains no messages, then it doesn't appear in the queue management tools. Messages in the poison message queue are never automatically resumed or expired. Messages remain in the poison message queue until they're manually resumed or removed by an administrator.  <br/>  Every Mailbox server or Edge Transport server has only one poison message queue.  <br/> |
-|Shadow queues  <br/> |Mailbox servers  <br/> |Shadow queues hold redundant copies of messages while the messages are in transit. For more information, see [Shadow redundancy in Exchange 2016](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |
+|Shadow queues  <br/> |Mailbox servers  <br/> |Shadow queues hold redundant copies of messages while the messages are in transit. For more information, see [Shadow redundancy in Exchange Server](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |
 |Submission queue  <br/> |Mailbox servers and Edge Transport servers  <br/> |Holds messages that have been accepted by the Transport service, but haven't been processed. Messages in the Submission queue are either waiting to be processed, or are actively being processed.  <br/> On Mailbox servers, messages are received by a Receive connector, the Pickup or Replay directories, or the Mailbox Transport Submission service. On Edge Transport servers, messages are typically received by a Receive connector, but the Pickup and Replay directories are also available.  <br/> The categorizer retrieves messages from this queue and, among other things, determines the location of the recipient and the route to that location. After categorization, the message is moved to a delivery queue or to the Unreachable queue. For more information about the categorizer and the transport pipeline, see [Mail flow and the transport pipeline](../../mail-flow/mail-flow.md).  <br/>  Every Mailbox server or Edge Transport server has only one Submission queue.  <br/> |
 |Unreachable queue  <br/> |Mailbox servers and Edge Transport servers  <br/> |Contains messages that can't be routed to their destinations. Typically, an unreachable destination is caused by configuration changes that have modified the routing path for delivery. Regardless of destination, all messages that have unreachable recipients reside in this queue.  <br/>  Every Mailbox server or Edge Transport server has only one Unreachable queue.  <br/> |
    
 ## Queue database files
-<a name="QueueDBFiles"> </a>
 
 All the different queues are stored in a single ESE database. By default, this queue database is located on the transport server at `%ExchangeInstallPath%TransportRoles\data\Queue`.
   
@@ -56,7 +52,7 @@ The following table lists the files that constitute the queue database.
 |Trn.chk  <br/> |This checkpoint file tracks the transaction log entries that have been committed to the database. This file is always in the same location as the mail.que file.  <br/> |
 |Trnres00001.jrs  <br/> Trnres00002.jrs  <br/> |These reserve transaction log files act as placeholders. They're only used when the hard disk that contains the transaction log runs out of space to stop the queue database cleanly.  <br/> |
    
-Exchange 2016 uses *generation tables* for storage and clean-up of messages in the queue database. Instead of processing and deleting individual message records from one large table, the queue database stores messages in time-based tables, and only deletes the entire table after all the messages in the table have been successfully processed. For example, consider the following example: 
+Exchange uses *generation tables* for storage and clean-up of messages in the queue database. Instead of processing and deleting individual message records from one large table, the queue database stores messages in time-based tables, and only deletes the entire table after all the messages in the table have been successfully processed. For example, consider the following example: 
   
 - All messages queued from 1:00 PM to 2:00 PM, regardless of the queue or destination, are stored in the `1p-2p_msgs` table.
     
@@ -94,12 +90,10 @@ The keys for the queue database that are available in the EdgeTransport.exe.conf
 | _QueueDatabasePath_ <br/> | `%ExchangeInstallPath%TransportRoles\data\Queue` <br/> |Specifies the default directory for the queue database files. For instructions on how to change the location of the queue database, see [Change the location of the queue database](relocate-queue-database.md).  <br/> |
    
 ## Queue properties
-<a name="QueueProperties"> </a>
 
 A queue has many properties that describe the purpose and status of the queue. Some queue properties are applied to the queue when the queue is created, and don't change. Other properties contain status, size, time, or other indicators that are updated frequently.
   
 ### NextHopSolutionKey
-<a name="NextHopSolutionKey"> </a>
 
 The routing component of the categorizer in the Microsoft Exchange Transport service selects the destination for a message, and this destination is used to create the delivery queue. The destination is stamped on every recipient as the **NextHopSolutionKey** property. Every unique value of the **NextHopSolutionKey** property corresponds to a separate delivery queue.
   
@@ -129,29 +123,28 @@ The values of **DeliveryType**, **NextHopCategory**, **NextHopDomain** and **Nex
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |**Delivery Agent** <br/> | `DeliveryAgent` <br/> |The queue holds messages for delivery to recipients in a non-SMTP address space that's serviced by a delivery agent and a Delivery Agent connector. The connector has the local Mailbox server configured as a source server. For more information, see [Delivery Agents and Delivery Agent Connectors](http://technet.microsoft.com/library/38c942ee-b59d-47ec-87eb-bebad441ada5.aspx).  <br/> |External  <br/> |This value is the destination address space that's configured on the Delivery Agent connector. For example, `MOBILE`.  <br/> |This value is the GUID of the Delivery Agent connector. For example, `4520e633-d83d-411a-bbe4-6a84648674ee`.  <br/> |
 |**DnsConnectorDelivery** <br/> | `DnsConnectorDelivery` <br/> |The queue holds messages for delivery to recipients in an SMTP domain. The Send connector that services the domain has the local transport server configured as source server, and the Send connector is configured to use DNS routing.  <br/> |External  <br/> |This value is the destination address space that's configured on the Send connector. For example, `contoso.com`.  <br/> |This value is the GUID of the Send connector. For example, `4520e633-d83d-411a-bbe4-6a84648674ee`.  <br/> |
-|**Heartbeat** <br/> | `Heartbeat` <br/> |This value is reserved for internal Microsoft use. For more information about heartbeat, see [Shadow redundancy in Exchange 2016](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |n/a  <br/> |n/a  <br/> |n/a  <br/> |
-|**MapiDelivery** <br/> | `MapiDelivery` <br/> |**Note**: This value isn't used by Exchange 2016. It's included for backwards compatibility with Exchange 2010.  <br/> The queue holds messages for delivery by an Exchange 2010 Hub Transport server to a mailbox on an Exchange 2010 Mailbox server in the local Active Directory site.  <br/> |n/a  <br/> |n/a  <br/> |n/a  <br/> |
+|**Heartbeat** <br/> | `Heartbeat` <br/> |This value is reserved for internal Microsoft use. For more information about heartbeat, see [Shadow redundancy in Exchange Server](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |n/a  <br/> |n/a  <br/> |n/a  <br/> |
+|**MapiDelivery** <br/> | `MapiDelivery` <br/> |**Note**: This value isn't used by Exchange 2013 or later. It's included for backwards compatibility with Exchange 2010.  <br/> The queue holds messages for delivery by an Exchange 2010 Hub Transport server to a mailbox on an Exchange 2010 Mailbox server in the local Active Directory site.  <br/> |n/a  <br/> |n/a  <br/> |n/a  <br/> |
 |**NonSmtpGatewayDelivery** <br/> | `NonSmtpGatewayDelivery` <br/> |The queue holds messages for delivery to recipients in a non-SMTP address space that's serviced by a Foreign connector. The connector has the local Mailbox server configured as a source server. For more information, see [Foreign Connectors](http://technet.microsoft.com/library/21c6a7a9-f4d2-4359-9ac9-930701b63a4e.aspx).  <br/> |External  <br/> |This value is the destination address space that's configured on the Foreign connector. For example, `FAX`.  <br/> |This value is the GUID of the Foreign connector. For example, `4520e633-d83d-411a-bbe4-6a84648674ee`.  <br/> |
-|**Shadow Redundancy** <br/> | `ShadowRedundancy` <br/> |The queue holds messages in a shadow queue. A shadow queue holds redundant copies messages in transit in case the primary messages aren't successfully delivered. For more information, see [Shadow redundancy in Exchange 2016](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |Internal  <br/> |This value is the FQDN of the primary transport server for which the shadow queue is holding redundant copies of the primary messages. For example, `mailbox01.contoso.com`.  <br/> |This value is `00000000-0000-0000-0000-000000000000`.  <br/> |
+|**Shadow Redundancy** <br/> | `ShadowRedundancy` <br/> |The queue holds messages in a shadow queue. A shadow queue holds redundant copies messages in transit in case the primary messages aren't successfully delivered. For more information, see [Shadow redundancy in Exchange Server](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |Internal  <br/> |This value is the FQDN of the primary transport server for which the shadow queue is holding redundant copies of the primary messages. For example, `mailbox01.contoso.com`.  <br/> |This value is `00000000-0000-0000-0000-000000000000`.  <br/> |
 |**SmartHostConnectorDelivery** <br/> | `SmartHostConnectorDelivery` <br/> |The queue holds messages for delivery to recipients in an SMTP domain. The Send connector that services the domain has the local transport server configured as source server, and the Send connector is configured to use smart host routing.  <br/> |External  <br/> |This value is the list of smart hosts that are configured on the Send connector. Smart hosts can be configured as FQDNs, IP addresses or both. The values can be one of the following:  <br/> **FQDN**: The syntax is `<FQDN1,FQDN2,...>`. For example, `smarthost01.contoso.com` or `smarthost01.contoso.com,smarthost02.fabrikam.com`.  <br/> **IP address**: The syntax is `<[IPAddress1],[IPAddress2],...>`. For example, `[10.10.10.100]` or `[10.10.10.100],[10.10.10.101]`.  <br/> **FQDN and IP address**: The syntax is `<[IPAddress1],FQDN1,...>`, and depends on how the smart hosts are listed on the Send connector. For example, `[172.17.17.7],relay.tailspintoys.com` or `mail.contoso.com,[192.168.1.50]`.  <br/> |This value is the GUID of the Send connector. For example, `4520e633-d83d-411a-bbe4-6a84648674ee`.  <br/> |
 |**SMTP Delivery to Ex Online** <br/> | `SmtpDeliveryToExo` <br/> |This value isn't used in on-premises Exchange.  <br/> |n/a  <br/> |n/a  <br/> |n/a  <br/> |
-|**SMTP Delivery to Mailbox** <br/> | `SmtpDeliveryToMailbox` <br/> | The queue holds messages for delivery to Exchange 2016 or Exchange 2013 mailbox recipients. The destination mailbox database is in one of the following locations:  <br/>  The local Exchange 2016 Mailbox server or Exchange 2013 Mailbox server.  <br/>  An Exchange 2016 Mailbox server in the same Exchange 2016 DAG.  <br/>  An Exchange 2013 Mailbox server in the same Exchange 2013 DAG.  <br/>  An Exchange 2016 Mailbox server or an Exchange 2013 Mailbox server in the same Active Directory site in non-DAG environments.  <br/> |Internal  <br/> |This value is the name of the destination mailbox database. For example, `Mailbox Database 0471695037`.  <br/> |This value is the GUID of the target mailbox database. For example, `6dcb5a1e-0a88-4fc9-b8f9-634c34b1a123`.  <br/> |
-|**SMTP Relay to Send Connector Source Servers** <br/> | `SmtpRelayToConnectorSourceServers` <br/> |The queue holds messages for delivery to an SMTP or non-SMTP address space that's serviced by a Send connector, Delivery Agent connector, or Foreign connector. The connector has a remote transport server configured as a source server.  <br/>  The remote transport server could be an Exchange 2016 Mailbox server, an Exchange 2013 Mailbox server, or an Exchange 2010 Hub Transport server.  <br/> The remote transport server could be located in the local Active Directory site, or in a remote Active Directory site.  <br/> |Internal  <br/> |This value is the name of the destination Send connector, Delivery Agent connector, or Foreign connector. For example, `Contoso.com Send Connector`.  <br/> |This value is the GUID of the destination Send connector, Delivery Agent connector, or Foreign connector. For example, `4520e633-d83d-411a-bbe4-6a84648674ee`.  <br/> |
-|**SMTP Relay to Database Availability Group** <br/> | `SmtpRelayToDag` <br/> |The queue holds messages for delivery to Exchange 2016 or Exchange 2013 mailbox recipients, where the destination mailbox database is located in a remote DAG.  <br/> The remote DAG could be located in the local Active Directory site, or in a remote Active Directory site.  <br/> |Internal  <br/> |This value is the name of the destination DAG. For example, `DAG1`.  <br/> |This value is the GUID of the destination DAG. For example, `6dcb5a1e-0a88-4fc9-b8f9-634c34b1a123` <br/> |
+|**SMTP Delivery to Mailbox** <br/> | `SmtpDeliveryToMailbox` <br/> | The queue holds messages for delivery to Exchange 2013 or later mailbox recipients. The destination mailbox database is in one of the following locations:  <br/>  • The local Exchange 2013 or later Mailbox server. <br/>  • An Exchange 2019 Mailbox server in the same Exchange 2019 DAG. <br/>  • An Exchange 2016 Mailbox server in the same Exchange 2016 DAG.  <br/>  An Exchange 2013 Mailbox server in the same Exchange 2013 DAG.  <br/>  • An Exchange 2013 or later Mailbox server in the same Active Directory site in non-DAG environments.  <br/> |Internal  <br/> |This value is the name of the destination mailbox database. For example, `Mailbox Database 0471695037`.  <br/> |This value is the GUID of the target mailbox database. For example, `6dcb5a1e-0a88-4fc9-b8f9-634c34b1a123`.  <br/> |
+|**SMTP Relay to Send Connector Source Servers** <br/> | `SmtpRelayToConnectorSourceServers` <br/> |The queue holds messages for delivery to an SMTP or non-SMTP address space that's serviced by a Send connector, Delivery Agent connector, or Foreign connector. The connector has a remote transport server configured as a source server.  <br/>  The remote transport server could be an Exchange 2013 or later Mailbox server or an Exchange 2010 Hub Transport server.  <br/> The remote transport server could be located in the local Active Directory site, or in a remote Active Directory site.  <br/> |Internal  <br/> |This value is the name of the destination Send connector, Delivery Agent connector, or Foreign connector. For example, `Contoso.com Send Connector`.  <br/> |This value is the GUID of the destination Send connector, Delivery Agent connector, or Foreign connector. For example, `4520e633-d83d-411a-bbe4-6a84648674ee`.  <br/> |
+|**SMTP Relay to Database Availability Group** <br/> | `SmtpRelayToDag` <br/> |The queue holds messages for delivery to Exchange 2013 or later mailbox recipients, where the destination mailbox database is located in a remote DAG.  <br/> The remote DAG could be located in the local Active Directory site, or in a remote Active Directory site.  <br/> |Internal  <br/> |This value is the name of the destination DAG. For example, `DAG1`.  <br/> |This value is the GUID of the destination DAG. For example, `6dcb5a1e-0a88-4fc9-b8f9-634c34b1a123` <br/> |
 |**SMTP Relay to Mailbox Delivery Group** <br/> | `SmtpRelayToMailboxDeliveryGroup` <br/> |The queue holds messages for delivery to legacy mailbox recipients, where the destination mailbox is on an Exchange 2010 Mailbox server. The message is related to an Exchange 2010 Hub Transport server.  <br/>  The destination Exchange 2010 Hub Transport server could be in the local Active Directory site, or a remote Active Directory site.  <br/> |Internal  <br/> |The queue name uses the syntax: `Site:<ADSiteName>;Version:<ExchangeVersion>`, where _\<ADSiteName\>_ is the name of the destination Active Directory site, and _\<ExchangeVersion\>_ is the version of Exchange 2010 on the Mailbox server.  <br/> |This value is blank.  <br/> |
 |**SMTP Relay to Remote Active Directory Site** <br/> | `SmtpRelayToRemoteActiveDirectorySite` <br/> | The queue holds messages for delivery to a remote destination, and the routing topology requires the message to be routed through a specific Active Directory site. The site is an intermediate hop on the way to the final destination. This situation occurs under the following circumstances:  <br/>  The message needs to be routed through a hub site.  <br/>  The message requires delivery through a Send connector that's configured on an Edge Transport server that's subscribed to a remote Active Directory site.  <br/> |Internal  <br/> |This value is the target Active Directory site name. For example, `NorthAmericaSite`.  <br/> |This value is the GUID of the target Active Directory site. For example, `bfd6c3df-5b65-8bfb-53f1f2c0d55c`.  <br/> |
 |**SMTP Relay to specified remote forest** <br/> | `SmtpRelayToRemoteForest` <br/> |This value isn't used in on-premises Exchange  <br/> |n/a  <br/> |n/a  <br/> |n/a  <br/> |
-|**SMTP Relay to Specified Exchange Servers** <br/> | `SmtpRelayToServers` <br/> |The queue holds messages for delivery to a distribution group that's configured for a specific expansion server. The expansion server could be an Exchange 2016 Mailbox server, an Exchange 2013 Mailbox server, or an Exchange 2010 Hub Transport server.  <br/> The expansion server could be located in the local Active Directory site, or in a remote Active Directory site.  <br/> |Internal  <br/> |This value is the FQDN of the target expansion server. For example, `mailbox01.contoso.com`.  <br/> |This value is `0000000-0000-0000-0000-000000000000`.  <br/> |
-|**SmtpRelayToTiRg** <br/> | `SmtpRelayToTiRg` <br/> |**Note**: This value isn't used by Exchange 2016. It's included for backwards compatibility with Exchange 2010.  <br/> The queue holds messages for delivery by an Exchange 2010 Hub Transport server to an Exchange 2003 routing group.  <br/> |n/a  <br/> |n/a  <br/> |n/a  <br/> |
-|**Smtp Relay in Active Directory Site** <br/> | `SmtpRelayWithinAdSite` <br/> |**Note**: This value isn't used by Exchange 2016. It's included for backwards compatibility with Exchange 2010.  <br/> The queue holds messages for delivery by an Exchange 2010 Hub Transport server to another Hub Transport server in the same Active Directory site.  <br/> |n/a  <br/> |n/a  <br/> |n/a  <br/> |
+|**SMTP Relay to Specified Exchange Servers** <br/> | `SmtpRelayToServers` <br/> |The queue holds messages for delivery to a distribution group that's configured for a specific expansion server. The expansion server could be an Exchange 2013 or later Mailbox server or an Exchange 2010 Hub Transport server.  <br/> The expansion server could be located in the local Active Directory site, or in a remote Active Directory site.  <br/> |Internal  <br/> |This value is the FQDN of the target expansion server. For example, `mailbox01.contoso.com`.  <br/> |This value is `0000000-0000-0000-0000-000000000000`.  <br/> |
+|**SmtpRelayToTiRg** <br/> | `SmtpRelayToTiRg` <br/> |**Note**: This value isn't used by Exchange 2013 or later. It's included for backwards compatibility with Exchange 2010.  <br/> The queue holds messages for delivery by an Exchange 2010 Hub Transport server to an Exchange 2003 routing group.  <br/> |n/a  <br/> |n/a  <br/> |n/a  <br/> |
+|**Smtp Relay in Active Directory Site** <br/> | `SmtpRelayWithinAdSite` <br/> |**Note**: This value isn't used by Exchange 2013 or later. It's included for backwards compatibility with Exchange 2010.  <br/> The queue holds messages for delivery by an Exchange 2010 Hub Transport server to another Hub Transport server in the same Active Directory site.  <br/> |n/a  <br/> |n/a  <br/> |n/a  <br/> |
 |**SMTP Relay in Active Directory Site to Edge Transport Server** <br/> | `SmtpRelayWithinAdSiteToEdge` <br/> |The queue holds messages for delivery to an external SMTP domain that's serviced by a Send connector that's configured on an Edge Transport server. The Edge Transport server is subscribed to the local Active Directory site.  <br/> |Internal  <br/> |This value is the name of the Send connector that sends outbound Internet mail from the Edge Transport server to the Internet. This Send connector is automatically created by the Edge subscription, and is named EdgeSync - _\<ADSiteName\>_ to Internet.  <br/> |This value is the GUID of the Send connector. For example, `4520e633-d83d-411a-bbe4-6a84648674ee`.  <br/> |
 |**Undefined** <br/> | `Undefined` <br/> |This value is used only on the Submission queue and the poison message queue.  <br/> |Internal  <br/> |For the Submission queue, this value is `Submisssion`. For the poison message queue, this value is `Poison Message`.  <br/> |This value is `00000000-0000-0000-0000-000000000000`.  <br/> |
 |**Unreachable** <br/> | `Unreachable` <br/> |This value is used only on the Unreachable queue.  <br/> |Internal  <br/> |This value is `Unreachable Domain`.  <br/> |This value is `00000000-0000-0000-0000-000000000000`.  <br/> |
    
 ### IncomingRate, OutgoingRate, and Velocity
-<a name="RatesAndVelocity"> </a>
 
-Exchange 2016 measures the rate of messages entering and leaving a queue and stores these values in queue properties. You can use these rates as an indicator of queue and transport server health. The properties are described in the following table:
+Exchange measures the rate of messages entering and leaving a queue and stores these values in queue properties. You can use these rates as an indicator of queue and transport server health. The properties are described in the following table:
   
 ****
 
@@ -164,31 +157,30 @@ Exchange 2016 measures the rate of messages entering and leaving a queue and sto
 At a basic level, a positive value of **Velocity** indicates a healthy queue that's efficiently draining, and a negative value of **Velocity** indicates a queue that isn't efficiently draining. However, you also need to consider the values of **IncomingRate**, **OutgoingRate**, and **MessageCount**, as well as the magnitude of **Velocity**.
   
 For example, consider a queue that has the following property values.
-  
-- **Velocity**: -50 
-    
-- **MessageCount**: 1000 
-    
-- **OutgoingRate**: 10 
-    
-- **IncomingRate**: 60 
+
+- **Velocity**: -50
+
+- **MessageCount**: 1000
+
+- **OutgoingRate**: 10
+
+- **IncomingRate**: 60
     
  Based on the property values for this queue, the negative value for **Velocity** clearly indicates that the queue isn't draining properly.
   
 Now consider a queue that has the following property values.
   
-- **Velocity**: -0.85 
-    
-- **MessageCount**: 2 
-    
+- **Velocity**: -0.85
+
+- **MessageCount**: 2
+
 - **OutgoingRate**: 0.15 
-    
+
 - **IncomingRate**: 1 
     
  Although the value for **Velocity** is negative, it's very close to zero, and the values of the other properties are also very small. Therefore, a negative **Velocity** value for this queue doesn't indicate a problem with the queue.
   
 ### Queue status
-<a name="QueueStatus"> </a>
 
 The current status of a queue is stored in the **Status** property of the queue. A queue can have one of the status values that's described in the following table: 
   
@@ -201,19 +193,16 @@ The current status of a queue is stored in the **Status** property of the queue.
 |Suspended  <br/> | The queue has been manually suspended by an administrator to prevent message delivery. New messages can enter the queue, and messages that are in the act of being transmitted to the next hop will finish delivery and leave the queue. Otherwise, messages won't leave the queue until the queue is manually resumed by an administrator.  <br/> **Notes:** <br/>  You can suspend the following queues:  <br/>  Delivery queues that have any status.  <br/>  The Unreachable queue. When you suspend this queue, messages are no longer automatically resubmitted to the categorizer when configuration updates are detected. To automatically resubmit these messages, you need to manually resume the queue.  <br/>  The Submission queue. When you suspend this queue, messages aren't picked up by the categorizer until the queue is resumed.  <br/>  Suspending a queue doesn't change the status of the messages in the queue.  <br/> |
    
 ### Other queue properties
-<a name="OtherQueueProperties"> </a>
 
 There are other queue properties that are self-explanatory. You can use most of the queue properties as filter options. By specifying filter criteria, you can quickly locate queues and take action on them. For a complete description of the filterable queue properties, see [Queue properties](queue-properties.md).
   
 An important queue property that's also worth mentioning here is the **MessageCount** property that shows how many messages are in a queue. This property is an important indicator of queue health. For example, a delivery queue that contains a large number of messages that continues to grow and never decreases could indicate a routing or transport pipeline issue that requires your attention.
   
 ## Message properties
-<a name="MessageProperties"> </a>
 
 A message in a queue has many properties. Many of the properties reflect the information that was used to create the message. Some of the messages status and information properties are heavily influenced by corresponding properties on the queue. However, an individual message may have a different value than the corresponding property of the queue. Other properties contain status, time, or other indicators that are updated frequently.
   
 ### Message status
-<a name="MessageStatus"> </a>
 
 The current status of a message is stored in the **Status** property of the message. A message can have one of the status values that's described in the following table: 
   
@@ -228,16 +217,14 @@ The current status of a message is stored in the **Status** property of the mess
 |Suspended  <br/> |The message was manually suspended by an administrator.  <br/>  Any messages in the poison message queue are in a permanently suspended state.  <br/> |
    
 ### Other message properties
-<a name="OtherMessageProperties"> </a>
 
 There are other message properties that are self-explanatory. You can use most of the message properties as filter options. By specifying filter criteria, you can quickly locate messages and take action on them. For a complete description of the filterable message properties, see [Properties of messages in queues](message-properties.md).
   
 ## Manage queues and messages in queues
-<a name="ManageQueuesAndMessages"> </a>
 
 Queue Viewer and the historical queue and message management cmdlets in the Exchange Management Shell are restricted to a single Exchange server. You can view or operate on individual queues or messages, or multiple queues or messages, but only on a specific server.
   
-Exchange 2016 use the **Get-QueueDigest** cmdlet that was introduced in Exchange 2013 to provides a high-level, aggregate view of the state of queues on all servers within a specific scope. The scope could be a DAG, an Active Directory site, a list of servers, or the entire Active Directory forest. Note that queues on a subscribed Edge Transport server in the perimeter network aren't included in the results. Also, **Get-QueueDigest** is available on Edge Transport servers, but the results are restricted to queues on the Edge Transport server.
+The **Get-QueueDigest** cmdlet was introduced in Exchange 2013 to provide a high-level, aggregate view of the state of queues on all servers within a specific scope. The scope could be a DAG, an Active Directory site, a list of servers, or the entire Active Directory forest. Note that queues on a subscribed Edge Transport server in the perimeter network aren't included in the results. Also, **Get-QueueDigest** is available on Edge Transport servers, but the results are restricted to queues on the Edge Transport server.
   
 > [!NOTE]
 > By default, the **Get-QueueDigest** cmdlet displays delivery queues that contain ten or more messages, and the results are between one and two minutes old. For instructions on how to change these default values, see [Configure Get-QueueDigest](https://technet.microsoft.com/library/dn505733.aspx).

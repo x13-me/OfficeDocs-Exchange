@@ -1,22 +1,20 @@
 ---
-title: "Queue properties"
+title: "Queue properties in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: fbfbdcab-e0d2-4ed9-8f7f-e5fa2c87360d
-description: "Summary: Learn about queue properties to use in filters in Exchange 2016."
+description: "Learn about queue properties to use in filters in Exchange Server."
 ---
 
-# Queue properties
+# Queue properties in Exchange Server
 
- **Summary**: Learn about queue properties to use in filters in Exchange 2016.
-  
-Filtering queues by one or more queue properties in Exchange Server 2016 allows you to quickly find and take action on those queues. The following scenarios are examples of how you might use queue filtering to manage mail flow:
+Filtering queues by one or more queue properties in Exchange Server allows you to quickly find and take action on those queues. The following scenarios are examples of how you might use queue filtering to manage mail flow:
   
 - You receive a message from System Center Operations Manager that indicates a queue length has exceeded the established threshold. You want to investigate whether a server-wide mail flow problem exists.
     
@@ -36,7 +34,7 @@ For more information about Queue Viewer, see [Queue Viewer](queue-viewer.md). Fo
   
 |**Queue Viewer**|**Exchange Management Shell**|**Comparison operators**|**Description**|
 |:-----|:-----|:-----|:-----|
-|n/a  <br/> | `DeferredMessageCount` <br/> |Equals (`-eq`)  <br/> Does not equal (`-ne`)  <br/> Greater than (`-gt`)  <br/> Greater than or equal to (`-ge`)  <br/> Less than (`-lt`)  <br/> Less than or equal to (`-le`)  <br/> |The number of messages returned to the Submission queue because of transient errors that were encountered during recipient resolution. For more information about deferred messages, see [Recipient resolution in Exchange 2016](../../mail-flow/mail-routing/recipient-resolution.md).  <br/> |
+|n/a  <br/> | `DeferredMessageCount` <br/> |Equals (`-eq`)  <br/> Does not equal (`-ne`)  <br/> Greater than (`-gt`)  <br/> Greater than or equal to (`-ge`)  <br/> Less than (`-lt`)  <br/> Less than or equal to (`-le`)  <br/> |The number of messages returned to the Submission queue because of transient errors that were encountered during recipient resolution. For more information about deferred messages, see [Recipient resolution in Exchange Server](../../mail-flow/mail-routing/recipient-resolution.md).  <br/> |
 |n/a  <br/> | `DDeferredMessageCountsPerPriority` <br/> |Equals (`-eq`)  <br/> Does Not Equal (`-ne`)  <br/> Contains (`-like`)  <br/> |An array that shows the number of deferred messages in the queue by priority (importance) value. The **MessageCountsPerPriority** property shows what each number means.  <br/> For example, the value `{1, 5, 10, 0}` indicates the queue contains 1 deferred High priority message, 5 deferred Normal priority messages, 10 deferred Low priority messages, and no deferred messages that have the priority value None.  <br/> |
 |**Delivery Type** <br/> | `DeliveryType` <br/> |**Equals** (`-eq`)  <br/> **Does Not Equal** (`-ne`)  <br/> |The results of the categorization of the message, and how the Transport service intends to transmit the message to the next hop. For a list of the available **DeliveryType** values, see [NextHopSolutionKey](queues.md#nexthopsolutionkey).  <br/> |
 |n/a  <br/> | `FirstRetryTime` <br/> |Equals (`-eq`)  <br/> Does not equal (`-ne`)  <br/> Greater than (`-gt`)  <br/> Greater than or equal to (`-ge`)  <br/> Less than (`-lt`)  <br/> Less than or equal to (`-le`)  <br/> |The date/time of the first connection attempt for a queue that has a status of `Retry`. For more information, see [Message retry, resubmit, and expiration intervals](message-intervals.md).  <br/> |

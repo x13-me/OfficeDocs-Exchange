@@ -3,19 +3,17 @@ title: "Protocol logging"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 40da446b-bcc3-4a97-ace7-a54f6ddebd79
-description: "Summary: Learn how protocol logging records SMTP activity in Exchange 2016."
+description: "Summary: Learn how protocol logging records SMTP activity in Exchange Server 2016 and 2019."
 ---
 
 # Protocol logging
 
- **Summary**: Learn how protocol logging records SMTP activity in Exchange 2016.
-  
 Protocol logging records the SMTP conversations that occur between messaging servers and between Exchange services in the transport pipeline as part of message delivery. You can use protocol logging to diagnose mail flow problems. The SMTP conversations that can be recorded by protocol logging occur in the following locations:
   
 - Send connectors and Receive connectors in the Transport service on Mailbox servers.

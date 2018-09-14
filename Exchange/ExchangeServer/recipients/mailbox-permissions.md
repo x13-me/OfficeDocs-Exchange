@@ -3,22 +3,20 @@ title: "Manage permissions for recipients"
 ms.author: serdars
 author: SerdarSoysal
 manager: scotv
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52
-description: "Summary: Learn how to assign permissions for mailboxes and groups in Exchange 2016 so other users can open the mailbox, send mail from the mailbox, or send mail from the group."
+description: "Summary: Learn how to assign permissions for mailboxes and groups in Exchange Server 2016 or 2019 so other users can open the mailbox, send mail from the mailbox, or send mail from the group."
 ---
 
 # Manage permissions for recipients
 
- **Summary**: Learn how to assign permissions for mailboxes and groups in Exchange 2016 so other users can open the mailbox, send mail from the mailbox, or send mail from the group.
+In Exchange Server, you can use the Exchange admin center (EAC) or the Exchange Management Shell to assign permissions to a mailbox or group so that other users can access the mailbox (the Full Access permission), or send email messages that appear to come from the mailbox or group (the Send As or Send on Behalf permissions). The users that are assigned these permissions on other mailboxes or groups are called *delegates*.
 
-In Exchange Server 2016, you can use the Exchange admin center (EAC) or the Exchange Management Shell to assign permissions to a mailbox or group so that other users can access the mailbox (the Full Access permission), or send email messages that appear to come from the mailbox or group (the Send As or Send on Behalf permissions). The users that are assigned these permissions on other mailboxes or groups are called *delegates*.
-
-The permissions that you can assign to delegates for mailboxes and groups in Exchange 2016 are described in the following table:
+The permissions that you can assign to delegates for mailboxes and groups in Exchange Server are described in the following table:
 
  **Note**: Although you can use the Exchange Management Shell to assign some or all of these permissions to other delegate types on other kinds of recipient objects, this topic focuses on the delegate and recipient object types that produce useful results.
 

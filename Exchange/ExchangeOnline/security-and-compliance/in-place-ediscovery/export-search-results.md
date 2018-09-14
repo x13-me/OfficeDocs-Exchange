@@ -34,7 +34,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
     
     OR
     
-  - Mozilla Firefox or Google Chrome. If you use either of these browsers, be sure you install the ClickOnce extension. To install the ClickOnce add-in, see [Mozilla ClickOnce add-ons](https://addons.mozilla.org/en-US/firefox/search/?q=ClickOnce&amp;cat=1%2C0&amp;appver=&amp;platform=) or [ClickOnce for Google Chrome](https://chrome.google.com/webstore/search/clickonce?_category=extensions).
+  - Mozilla Firefox or Google Chrome. If you use either of these browsers, be sure you install the ClickOnce extension. To install the ClickOnce add-in, see [Mozilla ClickOnce add-ons](https://addons.mozilla.org/en-US/firefox/search/?q=ClickOnce&cat=1%2C0&appver=&platform=) or [ClickOnce for Google Chrome](https://chrome.google.com/webstore/search/clickonce?_category=extensions).
     
 - You need an active mailbox attached to the account you wish to export.
     
@@ -55,7 +55,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
   
 ## Use the Exchange admin center to export In-Place eDiscovery search results to a PST
 
-1. Go to **Compliance management** \> **In-place eDiscovery &amp; hold**.
+1. Go to **Compliance management** \> **In-place eDiscovery & hold**.
     
 2. In the list view, select the In-Place eDiscovery search you want to export the results of, and then click **Export to a PST file**.
     

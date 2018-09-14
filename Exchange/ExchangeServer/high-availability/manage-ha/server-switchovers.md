@@ -3,18 +3,18 @@ title: "Perform a server switchover"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: ffcefd56-b0a0-4229-9011-fff4197b7c74
-description: "Summary: How to move all active mailbox database copies from their current Mailbox server to one or more other Mailbox servers in an Exchange 2016 DAG."
+description: "Summary: How to move all active mailbox database copies from their current Mailbox server to one or more other Mailbox servers in an Exchange Server DAG."
 ---
 
 # Perform a server switchover
 
- **Summary**: How to move all active mailbox database copies from their current Mailbox server to one or more other Mailbox servers in an Exchange 2016 DAG.
+ **Summary**: How to move all active mailbox database copies from their current Mailbox server to one or more other Mailbox servers in an Exchange 2016 or Exchange 2019 DAG.
   
 A server switchover is part of preparing for a scheduled outage for the current Mailbox server.
   

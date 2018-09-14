@@ -3,7 +3,7 @@ title: "Configure mobile phones to access email"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -16,7 +16,7 @@ description: "Summary:How to configure a mobile phone or device to use Exchange 
 
  **Summary:**How to configure a mobile phone or device to use Exchange ActiveSync. For device-specific information about setting up Exchange-based email on a phone or tablet, see [Set up a mobile device using Office 365 for business](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
   
-This article is about enabling users in your organization to access their Exchange 2016 mailboxes with their mobile devices using Exchange ActiveSync.
+This article is about enabling users in your organization to access their Exchange 2016 or Exchange 2019 mailboxes with their mobile devices using Exchange ActiveSync.
   
 ## Prerequisites
 

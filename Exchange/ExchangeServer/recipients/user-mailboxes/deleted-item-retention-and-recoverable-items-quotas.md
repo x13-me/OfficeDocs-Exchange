@@ -3,19 +3,17 @@ title: "Configure Deleted Item retention and Recoverable Items quotas"
 ms.author: chrisda
 author: chrisda
 manager: scotv
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: de7d667a-1c93-4364-a4f9-2aa5e3678b12
-description: "Summary: Learn how to configure the deleted item retention period for a mailbox or mailbox database in Exchange 2016."
+description: "Summary: Learn how to configure the deleted item retention period for a mailbox or mailbox database in Exchange Server 2016 or 2019."
 ---
 
 # Configure Deleted Item retention and Recoverable Items quotas
 
- **Summary**: Learn how to configure the deleted item retention period for a mailbox or mailbox database in Exchange 2016.
-  
 When a user deletes items from the Deleted Items default folder by using the Delete, Shift+Delete, or **Empty Deleted Items Folder** actions, the items are moved to the **Recoverable Items\Deletions** folder. The duration that deleted items remain in this folder is based on the deleted item retention settings configured for the mailbox database or the mailbox. By default, a mailbox database is configured to retain deleted items for 14 days, and the recoverable items warning quota and recoverable items quota are set to 20 gigabytes (GB) and 30 GB respectively.
   
 > [!NOTE]
@@ -23,13 +21,13 @@ When a user deletes items from the Deleted Items default folder by using the Del
   
 You can use the Exchange Management Shell to configure deleted item retention settings and recoverable items quotas for a mailbox or mailbox database. Deleted item retention settings are ignored when a mailbox is placed on In-Place Hold or litigation hold.
   
-To learn more about deleted item retention, the Recoverable Items folder, In-Place Hold, and litigation hold, see [Recoverable Items folder in Exchange 2016](../../policy-and-compliance/recoverable-items-folder/recoverable-items-folder.md).
+To learn more about deleted item retention, the Recoverable Items folder, In-Place Hold, and litigation hold, see [Recoverable Items folder in Exchange Server](../../policy-and-compliance/recoverable-items-folder/recoverable-items-folder.md).
   
 ## What do you need to know before you begin?
 
 - Estimated time to completion: 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions in Exchange 2016](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     

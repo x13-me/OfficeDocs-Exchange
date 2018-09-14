@@ -9,14 +9,14 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 00b23fd3-6679-4b06-a3d4-51df3112b9cd
-description: "Summary: Learn about permissions that are required to manage workloads and event logs in Exchange Server 2016."
+description: "Summary: Learn about permissions that are required to manage workloads and event logs in Exchange Server."
 ---
 
 # Server health and performance permissions
 
- **Summary**: Learn about permissions that are required to manage workloads and event logs in Exchange Server 2016.
+ **Summary**: Learn about permissions that are required to manage workloads and event logs in Exchange Server 2016 or Exchange Server 2019.
   
-The permissions required to perform tasks to configure various components of Microsoft Exchange Server 2016 depend on the procedure being performed or the cmdlet you want to run. See each of the sections in this topic for more information about their respective features.
+The permissions required to perform tasks to configure various components of Exchange Server depend on the procedure being performed or the cmdlet you want to run. See each of the sections in this topic for more information about their respective features.
   
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:
   
@@ -36,7 +36,7 @@ If you want to delegate the ability to manage a feature to another user, see [De
   
 ## Exchange workload management permissions
 
-The following table lists the permissions required to perform tasks that manage the health and performance of your Exchange 2016 organization. For more information, see [User workload management in Exchange 2016](../../server-health/workload-management.md).
+The following table lists the permissions required to perform tasks that manage the health and performance of your Exchange Server organization. For more information, see [User workload management in Exchange Server](../../server-health/workload-management.md).
   
 Users who are assigned the View-Only Management role group can view the configuration of the features in the following table. For more information, see [View-only Organization Management](https://technet.microsoft.com/library/dd351130.aspx).
   

@@ -3,7 +3,7 @@ title: "Configure legacy on-premises public folders for a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/19/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -21,7 +21,7 @@ description: "Summary: Use the steps in this article to synchronize public folde
   
 In a hybrid deployment, your users can be in Exchange Online, Exchange on-premises, or both, and your public folders are either in Exchange Online or Exchange on-premises. Public folders can only reside in one place, so you must decide whether your public folders will be in Exchange Online or on-premises. They can't be in both locations. Public folder mailboxes are synchronized to Exchange Online by the Directory Synchronization service. However, mail-enabled public folders aren't synchronized across premises.
   
-This article describes how to synchronize mail-enabled public folders when your users are in Office 365 and your Exchange 2010 SP3 or later version public folders are on-premises. However, an Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy or Exchange 2016 on-premises public folders.
+This article describes how to synchronize mail-enabled public folders when your users are in Office 365 and your Exchange 2010 SP3 or later version public folders are on-premises. However, an Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy or Exchange on-premises public folders.
   
 > [!NOTE]
 > This topic refers to the Exchange 2010 SP3 or later servers as the *legacy Exchange server*.
@@ -41,7 +41,7 @@ The following table describes the supported version and location combinations of
 |**Scenario**|**On-Premises Exchange 2010 User Mailbox**|**On-Premises Exchange 2016 User Mailbox**|**Exchange Online User Mailbox**|
 |:-----|:-----|:-----|:-----|
 |On-Premises Exchange 2010 Public Folders  <br/> |Hybrid not applicable  <br/> |Hybrid not applicable  <br/> |Supported  <br/> |
-|On-Premises Exchange 2013 or Exchange 2016 Public Folders  <br/> |Hybrid not applicable  <br/> |Hybrid not applicable  <br/> |Supported  <br/> |
+|On-Premises Exchange 2013, Exchange 2016, or Exchange 2019 Public Folders  <br/> |Hybrid not applicable  <br/> |Hybrid not applicable  <br/> |Supported  <br/> |
 |Exchange Online Public Folders  <br/> |Not supported  <br/> |Supported  <br/> |Hybrid not applicable  <br/> |
    
 A hybrid configuration with Exchange 2003 public folders is not supported. If you're running Exchange 2003 in your organization, you must move all public folder databases and replicas to Exchange 2010 SP3 or later. No public folder replicas can remain on Exchange 2003.
@@ -165,7 +165,7 @@ Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes
 You must wait until Active Directory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to force directory synchronization, see [Force directory synchronization](https://technet.microsoft.com/library/jj151771.aspx). Office 365 randomly selects one of the public folder mailboxes that's supplied in this command.
   
 > [!IMPORTANT]
-> An Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy or Exchange 2016 on-premises public folders. See the Knowledge Base article [Exchange Online users can't access legacy on-premises public folders](https://go.microsoft.com/fwlink/p/?LinkId=699451) for a solution.
+> An Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy, Exchange 2016, or Exchange 2019 on-premises public folders. See the Knowledge Base article [Exchange Online users can't access legacy on-premises public folders](https://go.microsoft.com/fwlink/p/?LinkId=699451) for a solution.
   
 ## How do I know this worked?
 <a name="Access"> </a>

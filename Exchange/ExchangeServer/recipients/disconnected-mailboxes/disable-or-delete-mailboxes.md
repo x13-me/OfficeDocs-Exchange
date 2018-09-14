@@ -1,21 +1,19 @@
 ---
-title: "Disable or delete a mailbox in Exchange 2016"
+title: "Disable or delete a mailbox in Exchange Server"
 ms.author: chrisda
 author: chrisda
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 31ad25d6-2942-4fd9-aecb-cdf9654163d2
-description: "Summary: Learn how to disable or delete a mailbox in Exchange 2016."
+description: "Summary: Learn how to disable or delete a mailbox in Exchange Server 2016 or 2019."
 ---
 
-# Disable or delete a mailbox in Exchange 2016
+# Disable or delete a mailbox in Exchange Server
 
- **Summary**: Learn how to disable or delete a mailbox in Exchange 2016.
-  
-In Exchange 2016, you can use the Exchange admin center (EAC) or the Exchange Management Shell to disable or delete mailboxes. Disabled or deleted mailboxes are also known as *disconnected mailboxes*. For more information about disconnected mailboxes, see [Disconnected mailboxes](disconnected-mailboxes.md).
+In Exchange Server, you can use the Exchange admin center (EAC) or the Exchange Management Shell to disable or delete mailboxes. Disabled or deleted mailboxes are also known as *disconnected mailboxes*. For more information about disconnected mailboxes, see [Disconnected mailboxes](disconnected-mailboxes.md).
   
  **Note**: If you need to delete a mailbox in Office 365, see [Delete or Restore User Mailboxes in Exchange Online](http://technet.microsoft.com/library/be7f59a5-bbc9-4b7a-a28b-f47b26dd33a7.aspx).
   
@@ -23,7 +21,7 @@ In Exchange 2016, you can use the Exchange admin center (EAC) or the Exchange Ma
 
 - Estimated time to complete each procedure: 2 minutes.
     
-- For more information about accessing and using the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
     
@@ -218,6 +216,6 @@ When you delete the Active Directory user account that's associated with a mailb
     
 - Retain the mailbox until all data has been expunged, or until preserving the data is no longer required.
     
-For more information, see [In-Place Hold and Litigation Hold in Exchange 2016](../../policy-and-compliance/holds/holds.md).
+For more information, see [In-Place Hold and Litigation Hold in Exchange Server](../../policy-and-compliance/holds/holds.md).
   
 

@@ -3,26 +3,24 @@ title: "View or configure Outlook on the web mailbox policy properties"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa
-description: "Summary: Learn how to configure Outlook on the web mailbox policies in Exchange 2016."
+description: "Summary: Learn how to configure Outlook on the web mailbox policies in Exchange Server 2016 or 2019."
 ---
 
 # View or configure Outlook on the web mailbox policy properties
 
- **Summary**: Learn how to configure Outlook on the web mailbox policies in Exchange 2016.
-  
-You can configure mailbox policies in Exchange 2016 for Outlook on the web through the Exchange admin center (EAC) or Exchange Management Shell. After you create an Outlook on the web mailbox policy, you can then configure a variety of options to control the features available to users in Outlook on the web. For example, you can enable or disable Inbox rules or create a list of allowed file types for attachments.
+You can configure mailbox policies in Exchange Server for Outlook on the web through the Exchange admin center (EAC) or Exchange Management Shell. After you create an Outlook on the web mailbox policy, you can then configure a variety of options to control the features available to users in Outlook on the web. For example, you can enable or disable Inbox rules or create a list of allowed file types for attachments.
   
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 3 minutes.
     
-- To open the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook on the web mailbox policies" entry in the [Clients and mobile devices permissions](../../permissions/feature-permissions/client-and-mobile-device-permissions.md) topic.
     

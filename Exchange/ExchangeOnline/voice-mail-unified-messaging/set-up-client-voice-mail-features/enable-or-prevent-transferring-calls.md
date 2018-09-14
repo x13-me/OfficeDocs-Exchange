@@ -39,7 +39,7 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
     
 2. On the **UM Dial Plan** page, click **Configure**.
     
-3. In **transfer &amp; search**, under **Allow callers to**, select the check box next to **transfer to users** to enable callers to transfer calls to other users within the dial plan. If you want to prevent Outlook Voice Access users from transferring calls to users, clear this check box. 
+3. In **transfer & search**, under **Allow callers to**, select the check box next to **transfer to users** to enable callers to transfer calls to other users within the dial plan. If you want to prevent Outlook Voice Access users from transferring calls to users, clear this check box. 
     
 4. Click **Save**.
     

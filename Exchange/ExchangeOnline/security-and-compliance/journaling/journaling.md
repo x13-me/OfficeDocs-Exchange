@@ -35,7 +35,7 @@ The following list shows some of the more well-known U.S. and international regu
     
 - Security Exchange Commission Rule 17a-4 (SEC Rule 17 A-4)
     
-- National Association of Securities Dealers 3010 &amp; 3110 (NASD 3010 &amp; 3110)
+- National Association of Securities Dealers 3010 & 3110 (NASD 3010 & 3110)
     
 - Gramm-Leach-Bliley Act (Financial Modernization Act)
     

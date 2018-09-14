@@ -1,5 +1,5 @@
 ---
-title: "Use batch migration to migrate Exchange 2016 public folders to Office 365 Groups"
+title: "Use batch migration to migrate Exchange Server public folders to Office 365 Groups"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
@@ -10,32 +10,32 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_EXOBlocker
 ms.assetid: 1d800576-957d-4916-ae2a-55c08ca75be1
-description: "Summary: How to move your Exchange 2016 public folders to Office 365 Groups."
+description: "Summary: How to move your Exchange Server public folders to Office 365 Groups."
 ---
 
-# Use batch migration to migrate Exchange 2016 public folders to Office 365 Groups
+# Use batch migration to migrate Exchange Server public folders to Office 365 Groups
 
- **Summary**: How to move your Exchange 2016 public folders to Office 365 Groups.
+ **Summary**: How to move your Exchange 2016 or Exchange 2019 public folders to Office 365 Groups.
   
-Through a process known as *batch migration*, you can move some or all of your Exchange 2016 public folders to Office 365 Groups. Groups is a new collaboration offering from Microsoft that offers certain advantages over public folders. See [Migrate your public folders to Office 365 Groups](migrate-to-office-365-groups.md) for an overview of the differences between public folders and Groups, and reasons why your organization may or may not benefit from switching to Groups.
+Through a process known as *batch migration*, you can move some or all of your Exchange Server public folders to Office 365 Groups. Groups is a new collaboration offering from Microsoft that offers certain advantages over public folders. See [Migrate your public folders to Office 365 Groups](migrate-to-office-365-groups.md) for an overview of the differences between public folders and Groups, and reasons why your organization may or may not benefit from switching to Groups.
   
-This article contains the step-by-step procedures for performing the actual batch migration of your Exchange 2016 public folders.
+This article contains the step-by-step procedures for performing the actual batch migration of your Exchange Server public folders.
   
 ## What do you need to know before you begin?
 
 Ensure that all of the following conditions are met before you begin preparing your migration.
   
-- The Exchange 2016 server needs to be running **Exchange 2016 CU4** or later.
+- The Exchange server needs to be running **Exchange 2016 CU4** or later.
     
 - In Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Office 365 or Exchange Online. For details about how to enable the Organization Management role group, see [Manage role groups](../../permissions/role-groups.md).
     
-- In Exchange 2016, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/p/?linkId=299212).
+- In Exchange Server, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/p/?linkId=299212).
     
 - Before you migrate your public folders to Office 365 Groups, we recommend that you first move user mailboxes to Office365 for those users who need access to Office 365 Groups after migration. For more information, see [Ways to migrate multiple email accounts to Office 365](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842).
     
 - MRS Proxy needs to be enabled on at least one Exchange server, and that server must also be hosting public folder mailboxes. See [Enable the MRS Proxy endpoint for remote moves](../../architecture/mailbox-servers/mrs-proxy-endpoint.md) for details.
     
-- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2016 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
+- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2016 or Exchange 2019 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
     
 - Only public folders of type calendar and mail can be migrated to Office 365 Groups at this time; migration of other types of public folders is not supported. Also, the target groups in Office 365 are expected to be created prior to the migration.
     
@@ -129,18 +129,18 @@ One public folder should be migrated to only one group in one migration batch.
 
 In this step, you gather information from your Exchange environment, and then you use that information in Exchange Online PowerShell to create a migration batch. After that, you start the migration.
   
-1. On the Exchange 2016 server, find the MRS proxy endpoint server and make note of it. You will need this information later when you run the migration request.
+1. On the Exchange 2016 or Exchange 2019 server, find the MRS proxy endpoint server and make note of it. You will need this information later when you run the migration request.
     
 2. In Exchange Online PowerShell, use the information that was returned above in step 1 to run the following commands. The variables in these commands will be the values from step 1.
     
-1. Pass the credential of a user with administrator permissions in the Exchange 2016 environment into the variable `$Source_Credential`. When you eventually run the migration request in Exchange Online, you will use this credential to gain access to your Exchange 2016 servers in order to copy the content over to Exchange Online.
+1. Pass the credential of a user with administrator permissions in the Exchange Server environment into the variable `$Source_Credential`. When you eventually run the migration request in Exchange Online, you will use this credential to gain access to your Exchange 2016 or Exchange 2019 servers in order to copy the content over to Exchange Online.
     
   ```
   $Source_Credential = Get-Credential
   <source_domain>\<PublicFolder_Administrator_Account>
   ```
 
-2. Use the MRS proxy server information from your Exchange 2016 environment that you noted in Step 1 above and pass that value into the variable `$Source_RemoteServer`.
+2. Use the MRS proxy server information from your Exchange Server environment that you noted in Step 1 above and pass that value into the variable `$Source_RemoteServer`.
     
   ```
   $Source_RemoteServer = "<MRS proxy endpoint>"
@@ -186,7 +186,7 @@ When the batch status is **Completed**, you can move on to *Step 5: Add members 
   
 ## Step 5: Add members to Office 365 groups from public folders
 
-You can add members to the target group in Office 365 manually as required. However, if you want to add members to the group based on the permission entries in public folders, you need to do that by running the script `AddMembersToGroups.ps1` on the Exchange 2016 server as shown in the following command. User mailboxes must be synced to Exchange Online in order to be added as members of an Office 365 group. To know which public folder permissions are eligible to be added as members of a group in Office 365, see [Migration scripts](batch-migration-to-office-365-groups.md#scripts) later in this article.
+You can add members to the target group in Office 365 manually as required. However, if you want to add members to the group based on the permission entries in public folders, you need to do that by running the script `AddMembersToGroups.ps1` on the Exchange 2016 or Exchange 2019 server as shown in the following command. User mailboxes must be synced to Exchange Online in order to be added as members of an Office 365 group. To know which public folder permissions are eligible to be added as members of a group in Office 365, see [Migration scripts](batch-migration-to-office-365-groups.md#scripts) later in this article.
   
 In the following command:
   
@@ -206,7 +206,7 @@ Once users have been added to a group in Office 365, they can begin using it.
   
 ## Step 6: Lock down the public folders (public folder downtime required)
 
-When the majority of the data in your public folders has migrated to Office 365 Groups, you can run the script `LockAndSavePublicFolderProperties.ps1` on the Exchange 2016 server to make the public folders read-only. This step ensures that no new data is added to public folders before the migration completes.
+When the majority of the data in your public folders has migrated to Office 365 Groups, you can run the script `LockAndSavePublicFolderProperties.ps1` on the Exchange 2016  or Exchange 2019 server to make the public folders read-only. This step ensures that no new data is added to public folders before the migration completes.
   
 > [!NOTE]
 > If there are mail-enabled public folders (MEPFs) among the public folders being migrated, this step will copy some properties of MEPFs, such as SMTP addresses, to the corresponding group in Office 365 and then mail-disable the public folder. Because the migrating MEPFs will be mail-disabled after the execution of this script, you will start seeing emails sent to MEPFs instead being received in the corresponding groups. For more details, see [Migration scripts](batch-migration-to-office-365-groups.md#scripts) later in this article.
@@ -251,7 +251,7 @@ After the new batch is created, start the migration by running the following com
 Start-MigrationBatch PublicFolderToGroupMigration
 ```
 
-After you have finished this step (the batch status is **Completed**), verify that all data has been copied to Office 365 Groups. At that point, provided you're satisfied with the Groups experience, you can begin deleting the migrated public folders from your Exchange 2016 environment.
+After you have finished this step (the batch status is **Completed**), verify that all data has been copied to Office 365 Groups. At that point, provided you're satisfied with the Groups experience, you can begin deleting the migrated public folders from your Exchange Server environment.
   
 > [!IMPORTANT]
 > While there are supported procedures for rolling back your migration and returning to public folders, this isn't possible after the source public folders have been deleted. See [How do I roll back to public folders from Office 365 Groups?](batch-migration-to-office-365-groups.md#rollback) for more information.
@@ -370,7 +370,7 @@ This script will re-assign permissions back to public folders, based on the back
 
 In the event that you change your mind and want to return to using public folders after using Office 365 Groups, the command listed below will restore your environment to the state it was pre-migration. A roll back can be performed as long as the backup files exist and as long as you didn't delete the public folders post-migration.
   
-On your Exchange 2016 server, run the following command. In this command:
+On your Exchange 2016 or Exchange 2019 server, run the following command. In this command:
   
 - **BackupDir** is the directory where the backup files for permission entries, MEPF properties, and migration log files will be stored. Make sure you use the same location you specified in *Step 6: Lock down the public folders to cut-over (public folder downtime required)*.
     

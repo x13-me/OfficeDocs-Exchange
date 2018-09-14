@@ -3,18 +3,18 @@ title: "Configure managed availability overrides"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/4/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c8f315b3-1d5e-4ad9-8bea-9c3a4a13ebfc
-description: "Summary: Learn how to configure local overrides (also known as server overrides) and global overrides for managed availability in Exchange 2016."
+description: "Summary: Learn how to configure local overrides (also known as server overrides) and global overrides for managed availability in Exchange Server."
 ---
 
 # Configure managed availability overrides
 
- **Summary**: Learn how to configure local overrides (also known as server overrides) and global overrides for managed availability in Exchange 2016.
+ **Summary**: Learn how to configure local overrides (also known as server overrides) and global overrides for managed availability in Exchange 2016 and Exchange 2019.
   
 Managed availability performs continuous probing to detect possible problems with Exchange components or their dependencies, and it performs recovery actions to make sure the end user experience is not impacted due to a problem with any of these components. However, there may be scenarios where the out-of-box settings may not be suitable for your environment. Managed availability probes, monitors, and responders can be customized by creating an override.
   

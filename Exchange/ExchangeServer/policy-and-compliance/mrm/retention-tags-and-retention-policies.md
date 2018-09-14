@@ -1,27 +1,27 @@
 ---
-title: "Retention tags and retention policies in Exchange 2016"
+title: "Retention tags and retention policies in Exchange Server"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
-description: "Summary: Learn about how retention tags and retention policies in Exchange 2016 help manage the email life cycle."
+description: "Summary: Learn about how retention tags and retention policies in Exchange Server help manage the email life cycle."
 ---
 
-# Retention tags and retention policies in Exchange 2016
+# Retention tags and retention policies in Exchange Server
 
- **Summary**: Learn about how retention tags and retention policies in Exchange 2016 help manage the email life cycle.
+ **Summary**: Learn about how retention tags and retention policies in Exchange 2016 and Exchange 2019 help manage the email life cycle.
   
 Messaging records management (MRM) helps organizations to manage email lifecycle and reduce legal risks associated with email and other communications. MRM makes it easier to keep messages needed to comply with company policy, government regulations, or legal needs, and to remove content that has no legal or business value.
   
 ## Messaging records management strategy
 <a name="MRM"> </a>
 
-MRM in Exchange 2016 is accomplished by using *retention tags* and *retention policies*. Before discussing the details about each of these retention features, let's learn how the features are used in the overall MRM strategy: 
+MRM in Exchange Server is accomplished by using *retention tags* and *retention policies*. Before discussing the details about each of these retention features, let's learn how the features are used in the overall MRM strategy: 
   
 - Assigning *retention policy tags* (RPTs) to default folders, such as the Inbox and Deleted Items.
     
@@ -74,7 +74,7 @@ Users can also use the Exchange admin center (EAC) to select additional personal
 
 When you enable a retention tag, you must specify a retention age for the tag. This age indicates the number of days to retain a message after it arrives in the user's mailbox.
   
-The retention age for non-recurring items (such as email messages) is calculated differently than items that have an end date or recurring items (such as meetings and tasks). To learn how retention age is calculated for different types of items, see [How retention age is calculated in Exchange 2016](retention-age.md).
+The retention age for non-recurring items (such as email messages) is calculated differently than items that have an end date or recurring items (such as meetings and tasks). To learn how retention age is calculated for different types of items, see [How retention age is calculated in Exchange Server](retention-age.md).
   
 You can also create retention tags with retention disabled or disable tags after they're created. Because messages that have a disabled tag applied aren't processed, no retention action is taken. As a result, users can use a disabled personal tag as a **Never Move** tag or a **Never Delete** tag to override a DPT or RPT that would otherwise apply to the message.
   
@@ -84,12 +84,12 @@ When creating or configuring a retention tag, you can select one of the followin
   
 |**Retention action**|**Action taken…**|**Except…**|
 |:-----|:-----|:-----|
-|**Move to archive** <br/> |Moves the message to the user's archive mailbox  <br/> Only available for DPTs and personal tags  <br/> For details about archiving, see [In-Place Archiving in Exchange 2016](../../policy-and-compliance/in-place-archiving/in-place-archiving.md).  <br/> |If the user doesn't have an archive mailbox, no action is taken.  <br/> |
-|**Delete and allow recovery**:  <br/> |Emulates the behavior when the user empties the Deleted Items folder.  <br/> Items are moved to the [Recoverable Items folder in Exchange 2016](../../policy-and-compliance/recoverable-items-folder/recoverable-items-folder.md) in the mailbox and preserved until the *deleted item retention* period.  <br/> Provides the user a second chance to recover the item using the **Recover Deleted Items** dialog box in Outlook or Outlook on the web  <br/> |If you've set the deleted item retention period to zero days, items are permanently deleted. For details, see [Configure Deleted Item retention and Recoverable Items quotas](../../recipients/user-mailboxes/deleted-item-retention-and-recoverable-items-quotas.md).  <br/> |
-|**Permanently delete** <br/> |Permanently deletes messages.  <br/> You can't recover messages after they're permanently deleted.  <br/> |If mailbox is placed on [In-Place Hold and Litigation Hold in Exchange 2016](../../policy-and-compliance/holds/holds.md) or Litigation Hold, items are preserved in the Recoverable Items folder based on hold parameters. [In-Place eDiscovery in Exchange 2016](../../policy-and-compliance/ediscovery/ediscovery.md) will still return these items in search results.  <br/> |
+|**Move to archive** <br/> |Moves the message to the user's archive mailbox  <br/> Only available for DPTs and personal tags  <br/> For details about archiving, see [In-Place Archiving in Exchange Server](../../policy-and-compliance/in-place-archiving/in-place-archiving.md).  <br/> |If the user doesn't have an archive mailbox, no action is taken.  <br/> |
+|**Delete and allow recovery**:  <br/> |Emulates the behavior when the user empties the Deleted Items folder.  <br/> Items are moved to the [Recoverable Items folder in Exchange Server](../../policy-and-compliance/recoverable-items-folder/recoverable-items-folder.md) in the mailbox and preserved until the *deleted item retention* period.  <br/> Provides the user a second chance to recover the item using the **Recover Deleted Items** dialog box in Outlook or Outlook on the web  <br/> |If you've set the deleted item retention period to zero days, items are permanently deleted. For details, see [Configure Deleted Item retention and Recoverable Items quotas](../../recipients/user-mailboxes/deleted-item-retention-and-recoverable-items-quotas.md).  <br/> |
+|**Permanently delete** <br/> |Permanently deletes messages.  <br/> You can't recover messages after they're permanently deleted.  <br/> |If mailbox is placed on [In-Place Hold and Litigation Hold in Exchange Server](../../policy-and-compliance/holds/holds.md) or Litigation Hold, items are preserved in the Recoverable Items folder based on hold parameters. [In-Place eDiscovery in Exchange Server](../../policy-and-compliance/ediscovery/ediscovery.md) will still return these items in search results.  <br/> |
 |**Mark as past retention limit** <br/> |Marks a message as expired. In Outlook, and Outlook on the web, expired items are displayed with the notification stating 'This item has expired' and 'This item will expire in 0 days'.  <br/> |N. A.  <br/> |
    
-For details about how to create retention tags, see [Create a retention policy in Exchange 2016](create-retention-policies.md).
+For details about how to create retention tags, see [Create a retention policy in Exchange Server](create-retention-policies.md).
   
 ## Retention policies
 <a name="Policies"> </a>
@@ -128,7 +128,7 @@ The Managed Folder Assistant applies the retention policy by inspecting items in
   
 The Managed Folder Assistant is a throttle-based assistant. Throttle-based assistants are always running and don't need to be scheduled. The system resources they can consume are throttled. You can configure the Managed Folder Assistant to process all mailboxes on a Mailbox server within a certain period (known as a *work cycle*). Additionally, at a specified interval (known as the *work cycle checkpoint*), the assistant refreshes the list of mailboxes to be processed. During the refresh, the assistant adds newly created or moved mailboxes to the queue. It also reprioritizes existing mailboxes that haven't been processed successfully due to failures and moves them higher in the queue so they can be processed during the same work cycle.
   
-You can also use the [Start-ManagedFolderAssistant](http://technet.microsoft.com/library/75d840ea-5abc-44bb-b361-e81561fa1b04.aspx) cmdlet to manually trigger the assistant to process a specified mailbox. To learn more, see [Configure and run the Managed Folder Assistant in Exchange 2016](configure-managed-folder-assistant.md).
+You can also use the [Start-ManagedFolderAssistant](http://technet.microsoft.com/library/75d840ea-5abc-44bb-b361-e81561fa1b04.aspx) cmdlet to manually trigger the assistant to process a specified mailbox. To learn more, see [Configure and run the Managed Folder Assistant in Exchange Server](configure-managed-folder-assistant.md).
   
 > [!NOTE]
 > The Managed Folder Assistant doesn't take any action on messages that aren't subject to retention, specified by disabling the retention tag. You can also disable a retention tag to temporarily suspend items with that tag from being processed.

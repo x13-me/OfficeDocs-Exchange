@@ -3,21 +3,19 @@ title: "Receive connectors"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/12/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 17751a60-39fe-433f-84d2-bfc14ff4ba51
-description: "Summary: Learn about Receive connectors in Exchange 2016, and how they control mail flow into your Exchange organization."
+description: "Summary: Learn about Receive connectors in Exchange Server 2016 or 2019, and how they control mail flow into your Exchange organization."
 ---
 
 # Receive connectors
 
- **Summary**: Learn about Receive connectors in Exchange 2016, and how they control mail flow into your Exchange organization.
-  
-Exchange 2016 servers use Receive connectors to control inbound SMTP connections from:
+Exchange servers use Receive connectors to control inbound SMTP connections from:
   
 - Messaging servers that are external to the Exchange organization.
     
@@ -25,7 +23,7 @@ Exchange 2016 servers use Receive connectors to control inbound SMTP connections
     
 - Email clients that need to use authenticated SMTP to send messages.
     
-You can create Receive connectors in the Transport service on Mailbox servers, the Front End Transport service on Mailbox servers, and on Edge Transport servers. By default, the Receive connectors that are required for inbound mail flow are created automatically when you install an Exchange 2016 Mailbox server, and when you subscribe an Edge Transport server to your Exchange organization.
+You can create Receive connectors in the Transport service on Mailbox servers, the Front End Transport service on Mailbox servers, and on Edge Transport servers. By default, the Receive connectors that are required for inbound mail flow are created automatically when you install an Exchange Mailbox server, and when you subscribe an Edge Transport server to your Exchange organization.
   
 A Receive connector is associated with the Mailbox server or Edge Transport server where it's created, and determines how that specific server listens for SMTP connections. On Mailbox servers, the Receive connector is stored in Active Directory as a child object of the server. On Edge Transport servers, the Receive connector is stored in Active Directory Lightweight Directory Services (AD LDS).
   
@@ -49,10 +47,10 @@ Although the default Receive connectors are adequate in most cases, you can crea
     
 On Mailbox servers, you can create and manage Receive connectors in the Exchange admin center (EAC) or in the Exchange Management Shell. On Edge Transport servers, you can only use the Exchange Management Shell.
   
-## Receive connector changes in Exchange 2016
+## Receive connector changes in Exchange Server
 <a name="WhatsNew"> </a>
 
-These are the notable changes to Receive connectors in Exchange 2016 compared to Exchange 2010:
+These are the notable changes to Receive connectors in Exchange 2016 and Exchange 2019 compared to Exchange 2010:
   
 - The _TlsCertificateName_ parameter allows you to specify the certificate issuer and the certificate subject. This helps minimize the risk of fraudulent certificates.
     
@@ -99,7 +97,7 @@ The default Receive connector that's created in the Transport service on Edge Tr
 ### Implicit Receive connectors in the Mailbox Transport Delivery service on Mailbox servers
 <a name="ImplicitReceiveConnectors"> </a>
 
-In addition to the Receive connectors are created during the installation of Exchange 2016 servers, there's a special *implicit Receive connector* in the Mailbox Transport Delivery service on Mailbox servers. This implicit Receive connector is automatically available, invisible, and requires no management. The primary function of this connector is to accept mail from the Transport service on the local Mailbox server or remote Mailbox servers in your organization.
+In addition to the Receive connectors are created during the installation of Exchange servers, there's a special *implicit Receive connector* in the Mailbox Transport Delivery service on Mailbox servers. This implicit Receive connector is automatically available, invisible, and requires no management. The primary function of this connector is to accept mail from the Transport service on the local Mailbox server or remote Mailbox servers in your organization.
   
 The implicit Receive connector that exists in the Mailbox Transport Delivery service on Mailbox servers is described in the following table.
 

@@ -1,20 +1,20 @@
 ---
-title: "In-Place Hold and Litigation Hold in Exchange 2016"
+title: "In-Place Hold and Litigation Hold in Exchange Server"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
-description: "Summary: Learn about In-Place Hold and Litigation Hold in Exchange 2016."
+description: "Summary: Learn about In-Place Hold and Litigation Hold in Exchange Server."
 ---
 
-# In-Place Hold and Litigation Hold in Exchange 2016
+# In-Place Hold and Litigation Hold in Exchange Server
 
- **Summary**: Learn about In-Place Hold and Litigation Hold in Exchange 2016.
+ **Summary**: Learn about In-Place Hold and Litigation Hold in Exchange 2016 or Exchange 2019.
   
 When a reasonable expectation of litigation exists, organizations are required to preserve electronically stored information (ESI), including email that's relevant to the case. This expectation often exists before the specifics of the case are known, and preservation is often broad. Organizations may need to preserve all email related to a specific topic or all email for certain individuals. Depending on the organization's electronic discovery (eDiscovery) practices, the following measures can be adopted to preserve email:
   
@@ -29,7 +29,7 @@ Failure to preserve email can expose an organization to legal and financial risk
 ## Litigation Hold and In-Place Hold
 <a name="lithold"> </a>
 
-There are two types of holds available in Exchange Server 2016: Litigation Hold and In-Place Hold. Litigation Hold uses the **LitigationHoldEnabled** property of a mailbox. When Litigation Hold is enabled, all mailbox all items are placed on hold. In contrast, you can use an In-Place Hold to preserve only those items that meet that the criteria of a search query that you define by using the In-Place eDiscovery tool. You can place multiple In-Place Holds on a mailbox, but Litigation Hold is either enabled or disabled for a mailbox. For both types of holds, you can also specify the duration period to hold items. The duration is calculated from the date a mailbox item is received or created. If a duration isn't set, items are held indefinitely or until the hold is removed. If you remove a Litigation Hold from a mailbox, but one or more In-Place Holds are still placed on the mailbox, items matching the In-Place Hold criteria are held for the period specified in the hold settings.
+There are two types of holds available in Exchange Server: Litigation Hold and In-Place Hold. Litigation Hold uses the **LitigationHoldEnabled** property of a mailbox. When Litigation Hold is enabled, all mailbox all items are placed on hold. In contrast, you can use an In-Place Hold to preserve only those items that meet that the criteria of a search query that you define by using the In-Place eDiscovery tool. You can place multiple In-Place Holds on a mailbox, but Litigation Hold is either enabled or disabled for a mailbox. For both types of holds, you can also specify the duration period to hold items. The duration is calculated from the date a mailbox item is received or created. If a duration isn't set, items are held indefinitely or until the hold is removed. If you remove a Litigation Hold from a mailbox, but one or more In-Place Holds are still placed on the mailbox, items matching the In-Place Hold criteria are held for the period specified in the hold settings.
   
 You can use In-Place Hold to place a user on multiple holds. When a user is placed on multiple holds, the search queries from any query-based hold are combined (with **OR** operators). In this case, the maximum number of keywords in all query-based holds placed on a mailbox is 500. If there are more than 500 keywords, then all content in the mailbox is placed on hold (not just that content that matches the search criteria). All content is held until the total number of keywords is reduced to 500 or less.
   
@@ -61,7 +61,7 @@ You can use Litigation Hold and In-Place Hold to accomplish the following goals:
     
 - Use In-Place eDiscovery to search for items that are preserved by being placed on hold
     
-If you're upgrading from Exchange Server 2010, the notion of legal hold is to hold all mailbox data for a user indefinitely or until when hold is removed. In Exchange 2016, In-Place Hold introduces a different model that allows you to specify the following parameters:
+If you're upgrading from Exchange Server 2010, the notion of legal hold is to hold all mailbox data for a user indefinitely or until when hold is removed. In Exchange 2016, In-Place Hold introduced a different model that allows you to specify the following parameters:
   
 - **Query-based hold**: With Litigation Hold, all items in a mailbox are preserved. However, an In-Place Hold allows you to specify which items to hold by using search query parameters such as keywords, senders and recipients, start and end dates, and also specify the message types such as email messages, calendar items, and Skype for Business conversations that you want to place on hold. After you create a query-based In-Place Hold, all existing and future mailbox items (including messages received at a later date) that match the query parameters are preserved. Litigation Hold doesn't support query-based holds.
     
@@ -73,7 +73,7 @@ If you're upgrading from Exchange Server 2010, the notion of legal hold is to ho
 ## Placing a mailbox on hold
 <a name="MBX"> </a>
 
-The Legal Hold management role is required to place a mailbox on Litigation Hold or In-Place Hold. But to create a query-based In-Place Hold, you must also be assigned the Mailbox Search role. Users that have been added to the [Discovery Management](http://technet.microsoft.com/library/b8bc5922-a8c9-4707-906d-fa38bb87da8f.aspx) role-based access control (RBAC) role group (or assigned the Legal Hold and Mailbox Search roles) can place users hold and create a query-based In-Place Hold. To learn how to add members to the Discovery Management role group, see [Assign eDiscovery permissions in Exchange 2016](../../policy-and-compliance/ediscovery/assign-permissions.md).
+The Legal Hold management role is required to place a mailbox on Litigation Hold or In-Place Hold. But to create a query-based In-Place Hold, you must also be assigned the Mailbox Search role. Users that have been added to the [Discovery Management](http://technet.microsoft.com/library/b8bc5922-a8c9-4707-906d-fa38bb87da8f.aspx) role-based access control (RBAC) role group (or assigned the Legal Hold and Mailbox Search roles) can place users hold and create a query-based In-Place Hold. To learn how to add members to the Discovery Management role group, see [Assign eDiscovery permissions in Exchange Server](../../policy-and-compliance/ediscovery/assign-permissions.md).
   
 You can place a mailbox Litigation Hold on the **Recipients** page in the Exchange admin center or by using the `Set-Mailbox -LitigationHoldEnabled $true` command in the Exchange Management Shell.
   
@@ -84,14 +84,14 @@ The In-Place Hold functionality is integrated with In-Place eDiscovery searches.
 - [Create or remove an In-Place Hold](in-place-holds.md)
     
 > [!NOTE]
-> If you use Exchange Online Archiving to provision a cloud-based archive for your on-premises mailboxes, you must manage In-Place Holds from your on-premises Exchange 2016 organization. Hold settings are automatically propagated to the cloud-based archive using DirSync.
+> If you use Exchange Online Archiving to provision a cloud-based archive for your on-premises mailboxes, you must manage In-Place Holds from your on-premises Exchange Server organization. Hold settings are automatically propagated to the cloud-based archive using DirSync.
   
 Many organizations require that users be informed when they're placed on hold. Additionally, when a mailbox is on hold, any retention policies applicable to the mailbox user don't need to be suspended. Because messages continue to be deleted as expected, users may not notice they're on hold. If your organization requires that users on hold be informed, you can add a notification message to the mailbox user's by populating the **Retention Comment** property and using the **RetentionUrl** property to link to a web page for more information. Outlook 2010 and later versions display the retention comment and URL in the backstage area, which is located on the **Files** ribbon. You can use the **Set-Mailbox** cmdlet to add these properties.
   
 ## Holds and the Recoverable Items folder
 <a name="RIF"> </a>
 
-Litigation Hold and In-Place Hold use the Recoverable Items folder to preserve items. The Recoverable Items folder is hidden from the default view of Outlook, Outlook on the web, and other email clients. To learn more about the Recoverable Items folder, see [Recoverable Items folder in Exchange 2016](../../policy-and-compliance/recoverable-items-folder/recoverable-items-folder.md).
+Litigation Hold and In-Place Hold use the Recoverable Items folder to preserve items. The Recoverable Items folder is hidden from the default view of Outlook, Outlook on the web, and other email clients. To learn more about the Recoverable Items folder, see [Recoverable Items folder in Exchange Server](../../policy-and-compliance/recoverable-items-folder/recoverable-items-folder.md).
   
 By default, when a user deletes a message from a folder other than the Deleted Items folder, the message is moved to the Deleted Items folder. When a user *soft deletes* an item (by pressing SHIFT+DELETE) or deletes an item from the Deleted Items folder, the message is moved to the Recoverable Items folder, thereby disappearing from the user's view.
   
@@ -125,25 +125,25 @@ If a mailbox isn't placed on Litigation Hold or In-Place Hold, items in the Purg
 ## Holds and mailbox quotas
 <a name="quotas"> </a>
 
-Items in the Recoverable Items folder aren't calculated toward the user's mailbox quota. In Exchange, the Recoverable Items folder has its own quota. For Exchange, the default values for the _RecoverableItemsWarningQuota_ and _RecoverableItemsQuota_ mailbox properties are set to 20 GB and 30 GB respectively. To modify these values for a mailbox database for Exchange 2016, use the [Set-MailboxDatabase](http://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx) cmdlet. To modify them for individual mailboxes, use the [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet.
+Items in the Recoverable Items folder aren't calculated toward the user's mailbox quota. In Exchange, the Recoverable Items folder has its own quota. For Exchange, the default values for the _RecoverableItemsWarningQuota_ and _RecoverableItemsQuota_ mailbox properties are set to 20 GB and 30 GB respectively. To modify these values for a mailbox database for Exchange Server, use the [Set-MailboxDatabase](http://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx) cmdlet. To modify them for individual mailboxes, use the [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet.
   
 When a user's Recoverable Items folder exceeds the warning quota for recoverable items (as specified by the _RecoverableItemsWarningQuota_ parameter), an event is logged in the Application event log of the Mailbox server. When the folder exceeds the quota for recoverable items (as specified by the _RecoverableItemsQuota_ parameter), users won't be able to empty the Deleted Items folder or permanently delete mailbox items. Also copy-on-write won't be able to create copies of modified items. Therefore, it's critical that you monitor Recoverable Items quotas for mailbox users placed on In-Place Hold.
   
 ## Holds and email forwarding
 <a name="emailforwarding"> </a>
 
-Users with mailboxes on Exchange 2016 can use Outlook and Outlook on the web to set up email forwarding for their mailbox. Email forwarding lets users configure their mailbox to forward email messages sent to their mailbox to another mailbox located in or outside of their organization. Administrators can also set up transport rules to forward message to another mailbox. In both cases, email forwarding can be configured so that any message sent to the original mailbox isn't copied to that mailbox and is only sent to the forwarding address.
+Users with mailboxes on Exchange Server can use Outlook and Outlook on the web to set up email forwarding for their mailbox. Email forwarding lets users configure their mailbox to forward email messages sent to their mailbox to another mailbox located in or outside of their organization. Administrators can also set up transport rules to forward message to another mailbox. In both cases, email forwarding can be configured so that any message sent to the original mailbox isn't copied to that mailbox and is only sent to the forwarding address.
   
 If email forwarding is set up for a mailbox and message aren't copied, what happens if the mailbox is on hold? During the delivery process, the hold settings for the mailbox are checked. If the message meets the hold criteria for the mailbox, a copy of the message is saved to the Recoverable Items folder. That means you can use In-Place eDiscovery to search the original mailbox to find messages that were forwarded to another mailbox.
   
 ## Preserving archived Skype for Business content
 <a name="lync"> </a>
 
-Exchange 2016, Skype for Business, and SharePoint 2016 provide an integrated preservation and eDiscovery experience that allows you to preserve and search for items across the different data stores. Exchange 2016 allows you to archive Skype for Business content in Exchange, removing the requirement of having a separate SQL Server database to store archived Lync content. The integrated hold and eDiscovery capability in SharePoint 2016 allows you to preserve and search data across all stores from a single console.
+Exchange 2016 and Exchange 2019, Skype for Business, and SharePoint 2016 provide an integrated preservation and eDiscovery experience that allows you to preserve and search for items across the different data stores. Exchange 2016 and 2019 allow you to archive Skype for Business content in Exchange, removing the requirement of having a separate SQL Server database to store archived Lync content. The integrated hold and eDiscovery capability in SharePoint 2016 allows you to preserve and search data across all stores from a single console.
   
-When you place an Exchange 2016 mailbox on In-Place Hold or Litigation Hold, Skype for Business content (such as instant messaging conversations and files shared in an online meeting) are archived in the mailbox. If you search the mailbox using In-Place eDiscovery, any archived Skype for Business content matching the search query is also returned in search results. You can also restrict the search to Skype for Business content archived in the mailbox.
+When you place an Exchange Server mailbox on In-Place Hold or Litigation Hold, Skype for Business content (such as instant messaging conversations and files shared in an online meeting) are archived in the mailbox. If you search the mailbox using In-Place eDiscovery, any archived Skype for Business content matching the search query is also returned in search results. You can also restrict the search to Skype for Business content archived in the mailbox.
   
-To enable archiving of Skype for Business content in Exchange 2016 mailboxes, you must configure Skype for Business Server 2015 integration with Exchange 2016. For details, see the following topics:
+To enable archiving of Skype for Business content in Exchange Server mailboxes, you must configure Skype for Business Server 2015 integration with Exchange Server. For details, see the following topics:
   
 - [Planning for Archiving](https://technet.microsoft.com/library/jj205069%28v=ocs.15%29)
     
@@ -160,18 +160,18 @@ If you delete a user account that has a mailbox, the Exchange Information store 
     
 3. Retain the mailbox until all data has been removed or until preserving the data is no longer required.
     
-## Migrating mailboxes on hold from Exchange 2016 to Office 365
+## Migrating mailboxes on hold from Exchange Server to Office 365
 <a name="migration"> </a>
 
-If you have an Exchange hybrid deployment, the following conditions are true when you move (onboard) an on-premises Exchange 2016 mailbox to Exchange Online in Office 365:
+If you have an Exchange hybrid deployment, the following conditions are true when you move (onboard) an on-premises Exchange Server mailbox to Exchange Online in Office 365:
   
 - If the on-premises mailbox is on Litigation Hold or In-Place Hold, the hold settings are preserved after the mailbox is moved to Exchange Online.
     
 -  If the on-premises mailbox is on Litigation Hold or In-Place Hold, any content in the Recoverable Items folder is moved to the Exchange Online mailbox.
     
-Hold settings and content in the Recoverable Items folder are also preserved when you move (offboard) an Exchange Online mailbox to your on-premises Exchange 2016 organization.
+Hold settings and content in the Recoverable Items folder are also preserved when you move (offboard) an Exchange Online mailbox to your on-premises Exchange Server organization.
   
 > [!TIP]
-> For Exchange 2016, an Exchange hybrid deployment is the recommended way to migrate on-premises mailboxes to Office 365.
+> For Exchange Server, an Exchange hybrid deployment is the recommended way to migrate on-premises mailboxes to Office 365.
   
 

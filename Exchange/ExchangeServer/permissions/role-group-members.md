@@ -3,20 +3,20 @@ title: "Manage role group members"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c064729d-7cda-47fc-b105-acf4b300d430
-description: "Summary: Learn how to add, remove and view members of a management role group in Microsoft Exchange Server 2016."
+description: "Summary: Learn how to add, remove and view members of a management role group in Exchange Server."
 ---
 
 # Manage role group members
 
- **Summary**: Learn how to add, remove and view members of a management role group in Microsoft Exchange Server 2016.
+ **Summary**: Learn how to add, remove and view members of a management role group in Exchange 2016 or Exchange 2019.
 
- To learn about role groups in Exchange 2016, see [Understanding Management Role Groups](http://technet.microsoft.com/library/2a92e06c-523e-4fd4-a937-152562b7741d.aspx).
+ To learn about role groups in Exchange Server, see [Understanding Management Role Groups](http://technet.microsoft.com/library/2a92e06c-523e-4fd4-a937-152562b7741d.aspx).
 
 For additional management tasks related to role groups, see [Permissions](permissions.md).
 
@@ -24,7 +24,7 @@ For additional management tasks related to role groups, see [Permissions](permis
 
 - Estimated time to complete each procedure: 5 minutes
 
-- To open the EAC, see [Exchange admin center in Exchange 2016](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role groups" entry in the [Role management permissions](feature-permissions/rbac-permissions.md) topic.
 

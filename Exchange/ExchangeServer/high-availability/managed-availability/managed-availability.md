@@ -3,20 +3,20 @@ title: "Managed availability"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: ceb99e6f-6dca-446d-abfb-3e6fc6a72704
-description: "Summary: Learn about monitoring your Exchange 2016 organization to quickly resolve issues for greater availability and reliability."
+description: "Summary: Learn about monitoring your Exchange Server organization to quickly resolve issues for greater availability and reliability."
 ---
 
 # Managed availability
 
- **Summary**: Learn about monitoring your Exchange 2016 organization to quickly resolve issues for greater availability and reliability.
+ **Summary**: Learn about monitoring your Exchange 2016 or Exchange 2019 organization to quickly resolve issues for greater availability and reliability.
   
-Ensuring that users have a good email experience has always been the primary objective for messaging system administrators. In your Exchange Server 2016 organization, all aspects of the system must be actively monitored and any detected issues must be resolved quickly. To achieve this, a feature called *Managed Availability* provides built-in monitoring and recovery actions that preserve the end-user experience.
+Ensuring that users have a good email experience has always been the primary objective for messaging system administrators. In your Exchange Server organization, all aspects of the system must be actively monitored and any detected issues must be resolved quickly. To achieve this, a feature called *Managed Availability* provides built-in monitoring and recovery actions that preserve the end-user experience.
   
 ## Managed Availability
 
@@ -30,7 +30,7 @@ Managed availability, also known as *Active Monitoring* or *Local Active Monitor
     
 Managed availability provides a native health monitoring and recovery solution. It moves away from monitoring individual separate slices of the system to monitoring the end-to-end user experience, and protecting the end user's experience through recovery-oriented actions.
   
-Managed availability is an internal process that runs on every Exchange 2016 server. It polls and analyzes hundreds of health metrics every second. If something is found to be wrong, most of the time it will be fixed automatically. But there will always be issues that managed availability won't be able to fix on its own. In those cases, managed availability will escalate the issue to an administrator by means of event logging.
+Managed availability is an internal process that runs on every Exchange server. It polls and analyzes hundreds of health metrics every second. If something is found to be wrong, most of the time it will be fixed automatically. But there will always be issues that managed availability won't be able to fix on its own. In those cases, managed availability will escalate the issue to an administrator by means of event logging.
   
 Managed availability is implemented in the form of two services:
   
@@ -56,7 +56,7 @@ As illustrated in the following drawing, managed availability includes three mai
   
  **Managed Availability Components**
   
-![The components of Managed Availability in Exchange Server 2016](../../media/ITPro_Mailbox_MAArchitecture.png)
+![The components of Managed Availability in Exchange Server](../../media/ITPro_Mailbox_MAArchitecture.png)
   
  **Probes**
   
@@ -145,7 +145,7 @@ All responders include throttling behavior, which provide a built-in sequencing 
 
 From a reporting perspective, managed availability has two views of health, one internal and one external.
   
-The internal view uses *health sets*. Each component in Exchange 2016 (for example, Outlook on the web, Exchange ActiveSync, the Information Store service, content indexing, transport services, etc.) is monitored by managed availability using probes, monitors, and responders. A group of probes, monitors and responders for a given component is called a *health set*. A health set is a group of probes, monitors, and responders that determine if that component is healthy. The current state of a health set (e.g., whether it is healthy or unhealthy) is determined by using the state of the health set's monitors. If all of a health set's monitors are healthy, then the health set is in a healthy state. If any monitor is not in a healthy state, then the health set state will be determined by its least healthy monitor.
+The internal view uses *health sets*. Each component in Exchange Server (for example, Outlook on the web, Exchange ActiveSync, the Information Store service, content indexing, transport services, etc.) is monitored by managed availability using probes, monitors, and responders. A group of probes, monitors and responders for a given component is called a *health set*. A health set is a group of probes, monitors, and responders that determine if that component is healthy. The current state of a health set (e.g., whether it is healthy or unhealthy) is determined by using the state of the health set's monitors. If all of a health set's monitors are healthy, then the health set is in a healthy state. If any monitor is not in a healthy state, then the health set state will be determined by its least healthy monitor.
   
 For detailed steps to view server health or health sets state, see [Manage health sets and server health](health-sets.md).
   

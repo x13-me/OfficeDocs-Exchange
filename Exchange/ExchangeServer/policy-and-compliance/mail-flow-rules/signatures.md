@@ -1,24 +1,24 @@
 ---
-title: "Organization-wide disclaimers, signatures, footers, or headers in Exchange 2016"
+title: "Organization-wide disclaimers, signatures, footers, or headers in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: e45e33c9-e53b-427c-ada5-70901bc399b8
-description: "Summary: Learn about using mail flow rules (transport rules) to add disclaimers to email messages in Exchange 2016."
+description: "Summary: Learn about using mail flow rules (transport rules) to add disclaimers to email messages in Exchange Server."
 ---
 
-# Organization-wide disclaimers, signatures, footers, or headers in Exchange 2016
+# Organization-wide disclaimers, signatures, footers, or headers in Exchange Server
 
- **Summary**: Learn about using mail flow rules (transport rules) to add disclaimers to email messages in Exchange 2016.
+ **Summary**: Learn about using mail flow rules (transport rules) to add disclaimers to email messages in Exchange 2016 or Exchange 2019.
   
 You can add an email disclaimer, legal disclaimer, disclosure statement, signature, or other information to the top or bottom of email messages that enter or leave your organization. You might be required to do this for legal, business, or regulatory requirements, to identify potentially unsafe email messages, or for other reasons that are unique to your organization.
   
-To create a disclaimer, you create a mail flow rule (also known as transport rule) with an action that adds the specified text to email messages. You can configure the rule to apply the disclaimer to all messages (no conditions), or you can define conditions that determine when the disclaimer is added (for example, when the sender is a member of a specific group, when the message includes specific words or text patterns, or outgoing messages only). You can also define exceptions that prevent the disclaimer from being added to messages (for example, messages from specific senders, messages sent to specific recipients, or messages that already contain the disclaimer). To apply multiple disclaimers to the same message, you need to use multiple rules. For more information about mail flow rules, see [Mail flow rules in Exchange 2016](mail-flow-rules.md).
+To create a disclaimer, you create a mail flow rule (also known as transport rule) with an action that adds the specified text to email messages. You can configure the rule to apply the disclaimer to all messages (no conditions), or you can define conditions that determine when the disclaimer is added (for example, when the sender is a member of a specific group, when the message includes specific words or text patterns, or outgoing messages only). You can also define exceptions that prevent the disclaimer from being added to messages (for example, messages from specific senders, messages sent to specific recipients, or messages that already contain the disclaimer). To apply multiple disclaimers to the same message, you need to use multiple rules. For more information about mail flow rules, see [Mail flow rules in Exchange Server](mail-flow-rules.md).
   
 Looking for procedures? See [Configure a Disclaimer or Other Email Header or Footer](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx).
   
@@ -54,7 +54,7 @@ Here's the formatting that you can use in your disclaimer text.
 |Plain text  <br/> |The maximum length is 5,000 characters, including any HTML tags and inline Cascading Style Sheets (CSS).  <br/> |
 |HTML and inline CSS  <br/> |You can use HTML and inline CSS styles to format the text. For example, use the `<HR>` tag to add a line before the disclaimer.  <br/> HTML is ignored if the disclaimer is added to a plain text message.  <br/> |
 |Images  <br/> |Use the `<IMG>` tag to point to an image available on the Internet. For example, `<IMG src="http://contoso.com/images/companylogo.gif" alt="Contoso logo">`.  <br/> By default, Outlook and Outlook on the web (formerly known as Outlook Web App) block external web content, including images. Users need to acknowledge and download the blocked external content. We recommend that you test disclaimers that have `IMG` tags to verify they display the way you want.  <br/> |
-|User information for personalized signatures  <br/> |You can use tokens to add unique attributes from each user's Active Directory account, such as `DisplayName`, `FirstName`, `LastName`, `PhoneNumber`, `Email`, `FaxNumber`, and `Department`. The syntax is to enclose the attribute name in two percent signs (for example, `%%DisplayName%%`).  <br/> For a complete list of attributes that can be used in disclaimers and personalized signatures, see the description for the `ADAttribute` property in [Mail flow rule conditions and exceptions (predicates) in Exchange 2016](conditions-and-exceptions.md).  <br/> |
+|User information for personalized signatures  <br/> |You can use tokens to add unique attributes from each user's Active Directory account, such as `DisplayName`, `FirstName`, `LastName`, `PhoneNumber`, `Email`, `FaxNumber`, and `Department`. The syntax is to enclose the attribute name in two percent signs (for example, `%%DisplayName%%`).  <br/> For a complete list of attributes that can be used in disclaimers and personalized signatures, see the description for the `ADAttribute` property in [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md).  <br/> |
    
 Here's an example of an HTML disclaimer that includes a signature, an `IMG` tag, and embedded CSS.
   
@@ -106,14 +106,14 @@ Here are some examples of the conditions and exceptions you can use.
 |Every message that comes from an external sender to the sales discussion group  <br/> |Condition 1: **The sender is located** \> **Outside the organization** <br/> Condition 2: **The message** \> **To or Cc box contains this person** \> _group name_ <br/> | `-FromScope NotInOrganization -SentTo "Sales Discussion Group"` <br/> |
 |Prepend an advertisement to outgoing messages for one month  <br/> |Condition 1: **The recipient is located** \> **Outside the organization** <br/> Enter the dates in the **Activate this rule on the following date** and **Deactivate this rule on the following date** fields.  <br/> | `-ApplyHtmlDisclaimerLocation Prepend -SentToScope NotInOrganization -ActivationDate '03/1/2016' -ExpiryDate '03/31/2016'` <br/> |
    
-For a complete list of conditions and exceptions that you can use to target the disclaimer, see [Mail flow rule conditions and exceptions (predicates) in Exchange 2016](conditions-and-exceptions.md).
+For a complete list of conditions and exceptions that you can use to target the disclaimer, see [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md).
   
 ## For more information
 <a name="MoreInfo"> </a>
 
 [Configure a Disclaimer or Other Email Header or Footer](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
   
-[Mail flow rules in Exchange 2016](mail-flow-rules.md) (Exchange 2016) 
+[Mail flow rules in Exchange Server](mail-flow-rules.md) (Exchange 2016 and Exchange 2019) 
   
 [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) (Exchange Online) 
   

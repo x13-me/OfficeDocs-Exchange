@@ -3,18 +3,18 @@ title: "Manage database availability group membership"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/4/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: fb2ea15e-96d5-4045-b75b-b0aa5fc60479
-description: "Summary: Add Exchange 2016 servers to, or remove them from, a database availability group (DAG)."
+description: "Summary: Add Exchange servers to, or remove them from, a database availability group (DAG)."
 ---
 
 # Manage database availability group membership
 
- **Summary**: Add Exchange 2016 servers to, or remove them from, a database availability group (DAG).
+ **Summary**: Add Exchange 2016 or Exchange 2019 servers to, or remove them from, a database availability group (DAG).
   
 When you add a server to a DAG, the server works with the other DAG members to provide automatic database-level recovery from database, server, or network failures. When you remove a server from a DAG, the server is no longer automatically protected from failures.
   
@@ -24,7 +24,7 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
 - Estimated time to complete: 5 minutes per server
     
-- To open the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
     
 - DAGs use Windows Failover Clustering (WFC) technologies. Each Mailbox server that's a member of a DAG is also a node in the underlying cluster used by the DAG. As a result, at any specific time, a Mailbox server can be a member of only one DAG. Because DAGs use WFC technology, all servers added to a DAG must be running the same operating system: either Windows Server 2008 R2 Enterprise or Datacenter Edition, or the Standard or Datacenter Edition of Windows Server 2012 or Windows Server 2012 R2.
     

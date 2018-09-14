@@ -9,12 +9,10 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: abad5939-8826-4df1-94bf-2d734f07e929
-description: "Summary: All about recipients, such as mailboxes and mail users, in Exchange Server 2016."
+description: "Summary: All about recipients, such as mailboxes and mail users, in Exchange Server 2016 and 2019."
 ---
 
 # Recipients
-
- **Summary**: All about recipients, such as mailboxes and mail users, in Exchange Server 2016.
 
 The people and resources that send and receive messages are the core of any messaging and collaboration system. In an Exchange organization, these people and resources are referred to as *recipients*. A recipient is any mail-enabled object in Active Directory to which Microsoft Exchange can deliver or route messages.
 
@@ -34,23 +32,23 @@ The following table lists the available recipient types. All these recipient typ
 
 |**Recipient type**|**Description**|
 |:-----|:-----|
-|Dynamic distribution group  <br/> |A distribution group that uses recipient filters and conditions to derive its membership at the time messages are sent.  <br/> |
-|Equipment mailbox  <br/> |A resource mailbox that's assigned to a resource that's not location-specific, such as a portable computer, projector, microphone, or a company car. Equipment mailboxes can be included as resources in meeting requests, providing a simple and efficient way of using resources for your users.  <br/> |
-|Linked mailbox  <br/> |A mailbox that's assigned to an individual user in a separate, trusted forest.  <br/> |
-|Mail contact  <br/> |A mail-enabled Active Directory contact that contains information about people or organizations that exist outside the Exchange organization. Each mail contact has an external email address. All messages sent to the mail contact are routed to this external email address.  <br/> |
-|Mail forest contact  <br/> |A mail contact that represents a recipient object from another forest. Mail forest contacts are typically created by Microsoft Identity Integration Server (MIIS) synchronization.  <br/> **Note**: Mail forest contacts are read-only recipient objects that are updated only through MIIS or similar custom synchronization. You can't use the EAC or the Exchange Management Shell to remove or modify a mail forest contact.  <br/> |
-|Mail user  <br/> |A mail-enabled Active Directory user that represents a user outside the Exchange organization. Each mail user has an external email address. All messages sent to the mail user are routed to this external email address.  <br/> A mail user is similar to a mail contact, except that a mail user has Active Directory logon credentials and can access resources.  <br/> |
-|Mail-enabled non-universal group  <br/> |A mail-enabled Active Directory global or local group object. Mail-enabled non-universal groups were discontinued in Exchange Server 2007 and can exist only if they were migrated from Exchange 2003 or earlier versions of Exchange. You can't use Exchange Server 2013 to create non-universal distribution groups.  <br/> |
-|Mail-enabled public folder  <br/> |An Exchange public folder that's configured to receive messages.  <br/> |
-|Distribution groups  <br/> |A distribution group is a mail-enabled Active Directory distribution group object that can be used only to distribute messages to a group of recipients.  <br/> |
-|Mail-enabled security group  <br/> |A mail-enabled security group is an Active Directory universal security group object that can be used to assign access permissions to resources in Active Directory and can also be used to distribute messages.  <br/> |
-|Microsoft Exchange recipient  <br/> |A special recipient object that provides a unified and well-known message sender that differentiates system-generated messages from other messages. It replaces the System Administrator sender used for system-generated messages in earlier versions of Exchange.  <br/> |
-|Room mailbox  <br/> |A resource mailbox that's assigned to a meeting location, such as a conference room, auditorium, or training room. Room mailboxes can be included as resources in meeting requests, providing a simple and efficient way of organizing meetings for your users.  <br/> |
-|Shared mailbox  <br/> |A mailbox that's not primarily associated with a single user and is generally configured to allow access for multiple users.  <br/> |
-|Site mailbox  <br/> |A mailbox comprised of an Exchange mailbox to store email messages and a SharePoint site to store documents. Users can access both email messages and documents using the same client interface. For more information, see [Site mailboxes](../collaboration/site-mailboxes.md).  <br/> |
-|User mailbox  <br/> |A mailbox that's assigned to an individual user in your Exchange organization. It typically contains messages, calendar items, contacts, tasks, documents, and other important business data.  <br/> |
-|Office 365 mailbox  <br/> |In hybrid deployments, an Office 365 mailbox consists of a mail user that exists in Active Directory on-premises and an associated cloud mailbox that exists in Exchange Online.  <br/> |
-|Linked user  <br/> |A linked user is a user whose mailbox resides in a different forest than the forest in which the user resides.  <br/> |
+|Dynamic distribution group|A distribution group that uses recipient filters and conditions to derive its membership at the time messages are sent.|
+|Equipment mailbox|A resource mailbox that's assigned to a resource that's not location-specific, such as a portable computer, projector, microphone, or a company car. Equipment mailboxes can be included as resources in meeting requests, providing a simple and efficient way of using resources for your users.|
+|Linked mailbox|A mailbox that's assigned to an individual user in a separate, trusted forest.|
+|Mail contact|A mail-enabled Active Directory contact that contains information about people or organizations that exist outside the Exchange organization. Each mail contact has an external email address. All messages sent to the mail contact are routed to this external email address.|
+|Mail forest contact|A mail contact that represents a recipient object from another forest. Mail forest contacts are typically created by Microsoft Identity Integration Server (MIIS) synchronization. <br/> **Note**: Mail forest contacts are read-only recipient objects that are updated only through MIIS or similar custom synchronization. You can't use the EAC or the Exchange Management Shell to remove or modify a mail forest contact.|
+|Mail user|A mail-enabled Active Directory user that represents a user outside the Exchange organization. Each mail user has an external email address. All messages sent to the mail user are routed to this external email address. <br/> A mail user is similar to a mail contact, except that a mail user has Active Directory logon credentials and can access resources.|
+|Mail-enabled non-universal group|A mail-enabled Active Directory global or local group object. Mail-enabled non-universal groups were discontinued in Exchange Server 2007 and can exist only if they were migrated from Exchange 2003 or earlier versions of Exchange. You can't use Exchange Server 2013 to create non-universal distribution groups.|
+|Mail-enabled public folder|An Exchange public folder that's configured to receive messages.|
+|Distribution groups|A distribution group is a mail-enabled Active Directory distribution group object that can be used only to distribute messages to a group of recipients.|
+|Mail-enabled security group|A mail-enabled security group is an Active Directory universal security group object that can be used to assign access permissions to resources in Active Directory and can also be used to distribute messages.|
+|Microsoft Exchange recipient|A special recipient object that provides a unified and well-known message sender that differentiates system-generated messages from other messages. It replaces the System Administrator sender used for system-generated messages in earlier versions of Exchange.|
+|Room mailbox|A resource mailbox that's assigned to a meeting location, such as a conference room, auditorium, or training room. Room mailboxes can be included as resources in meeting requests, providing a simple and efficient way of organizing meetings for your users.|
+|Shared mailbox|A mailbox that's not primarily associated with a single user and is generally configured to allow access for multiple users.|
+|Site mailbox|A mailbox comprised of an Exchange mailbox to store email messages and a SharePoint site to store documents. Users can access both email messages and documents using the same client interface. For more information, see [Site mailboxes](../collaboration/site-mailboxes.md).|
+|User mailbox|A mailbox that's assigned to an individual user in your Exchange organization. It typically contains messages, calendar items, contacts, tasks, documents, and other important business data.|
+|Office 365 mailbox|In hybrid deployments, an Office 365 mailbox consists of a mail user that exists in Active Directory on-premises and an associated cloud mailbox that exists in Exchange Online.|
+|Linked user|A linked user is a user whose mailbox resides in a different forest than the forest in which the user resides.|
  
 ### Mailboxes
 
@@ -102,14 +100,17 @@ Exchange supports the following mailbox types:
 
 System mailboxes are created by Exchange in the root domain of the Active Directory forest during installation. Users or administrators can't sign in to these mailboxes. System mailboxes are created for Exchange features such as Unified Messaging (UM), migration, message approval, and In-Place eDiscovery. This table lists information about system mailboxes as they're displayed in Active Directory.
 
+>[!NOTE]
+>Unified Messaging is not available in Exchange 2019
+
 |**Mailbox**|**Name**|
 |:-----|:-----|
-|Organization  <br/> |SystemMailbox {bb558c35-97f1-4cb9-8ff7-d53741dc928c}  <br/> |
-|Message approval  <br/> |SystemMailbox {1f05a927- _xxxx_- _ xxxx _ - _ xxxx _ - _xxxxxxxxxxxx_}  <br/> where _x_ is a randomly assigned and unique number for each Exchange forest  <br/> |
-|UM data storage  <br/> |SystemMailbox {e0dc1c29-89c3-4034-b678-e6c29d823ed9}  <br/> |
-|Discovery  <br/> |DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852}  <br/> |
-|Federated email  <br/> |FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042  <br/> |
-|Migration  <br/> |Migration.8f3e7716-2011-43e4-96b1-aba62d229136  <br/> |
+|Organization|SystemMailbox {bb558c35-97f1-4cb9-8ff7-d53741dc928c}|
+|Message approval|SystemMailbox {1f05a927- _xxxx_- _ xxxx _ - _ xxxx _ - _xxxxxxxxxxxx_} <br/> where _x_ is a randomly assigned and unique number for each Exchange forest|
+|UM data storage|SystemMailbox {e0dc1c29-89c3-4034-b678-e6c29d823ed9} <br/>This mailbox exists in Exchange 2016, not in Exchange 2019|
+|Discovery|DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852}|
+|Federated email|FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042|
+|Migration|Migration.8f3e7716-2011-43e4-96b1-aba62d229136|
  
 If you want to decommission the last Mailbox server in your Exchange organization, you should first disable these system mailboxes by using the [Disable-Mailbox](http://technet.microsoft.com/library/33be55a3-1880-437d-a631-c1cca1736421.aspx) cmdlet. When you decommission a Mailbox server that contains these system mailboxes, you should move the system mailboxes to another Mailbox server to make sure that you don't lose functionality.
 
@@ -199,18 +200,18 @@ The following table contains links to topics that will help you learn about and 
 
 |**Topic**|**Description**|
 |:-----|:-----|
-|[Create user mailboxes in Exchange 2016](create-user-mailboxes.md) <br/> |Learn how to create user mailboxes using the Exchange admin center or the Exchange Management Shell.  <br/> |
-|[Manage user mailboxes](user-mailboxes/user-mailboxes.md) <br/> |Learn how to create user mailboxes, change mailbox properties, and bulk-edit selected properties for multiple mailboxes.  <br/> |
-|[Manage distribution groups](distribution-groups.md) <br/> |Learn how to create and manage distribution groups, and create a group naming policy for your organization.  <br/> |
-|[Manage dynamic distribution groups](dynamic-distribution-groups/dynamic-distribution-groups.md) <br/> |Learn how to create dynamic distribution groups and manage dynamic distribution group properties, such as using custom attributes and other properties to determine group membership.  <br/> |
-|[Manage mail contacts](mail-contacts.md) <br/> |Learn how to create and manage mail contacts.  <br/> |
-|[Manage mail users](mail-users.md) <br/> |Learn how to create and manage mail users.  <br/> |
-|[Create and manage room mailboxes](room-mailboxes.md) <br/> |Learn how to create room mailboxes and manage room mailbox properties, such as enabling recurring meetings and configuring booking and scheduling options.  <br/> |
-|[Manage equipment mailboxes](equipment-mailboxes.md) <br/> |Learn how to create equipment mailboxes, configure booking and scheduling options, and manage other mailbox properties.  <br/> |
-|[Disconnected mailboxes](disconnected-mailboxes/disconnected-mailboxes.md) <br/> |Learn about the two types of disconnected mailboxes and how to work with them.  <br/> |
-|[Custom attributes](mailbox-custom-attributes.md) <br/> |Learn how to add information about a recipient by using custom attributes.  <br/> |
-|[Filters in recipient Shell commands](http://technet.microsoft.com/library/fb4b1396-9aae-4037-be1a-b09e336b890e.aspx) <br/> |Learn how to use precanned or custom filters with commands to filter a set of recipients.  <br/> |
-|[Manage permissions for recipients](mailbox-permissions.md) <br/> |Learn how to use the EAC or the Exchange Management Shell to assign permissions to users and groups.  <br/> |
-|[Automatic Mailbox Distribution](http://technet.microsoft.com/library/f4db4636-948c-466b-839c-300c1a3a9544.aspx) <br/> |Learn about how automatic mailbox distribution works and how to control which mailbox databases are selected for new and moved mailboxes.  <br/> |
+|[Create user mailboxes in Exchange Server](create-user-mailboxes.md)|Learn how to create user mailboxes using the Exchange admin center or the Exchange Management Shell.|
+|[Manage user mailboxes](user-mailboxes/user-mailboxes.md)|Learn how to create user mailboxes, change mailbox properties, and bulk-edit selected properties for multiple mailboxes.|
+|[Manage distribution groups](distribution-groups.md)|Learn how to create and manage distribution groups, and create a group naming policy for your organization.|
+|[Manage dynamic distribution groups](dynamic-distribution-groups/dynamic-distribution-groups.md)|Learn how to create dynamic distribution groups and manage dynamic distribution group properties, such as using custom attributes and other properties to determine group membership.|
+|[Manage mail contacts](mail-contacts.md)|Learn how to create and manage mail contacts.|
+|[Manage mail users](mail-users.md)|Learn how to create and manage mail users.|
+|[Create and manage room mailboxes](room-mailboxes.md)|Learn how to create room mailboxes and manage room mailbox properties, such as enabling recurring meetings and configuring booking and scheduling options.|
+|[Manage equipment mailboxes](equipment-mailboxes.md)|Learn how to create equipment mailboxes, configure booking and scheduling options, and manage other mailbox properties.|
+|[Disconnected mailboxes](disconnected-mailboxes/disconnected-mailboxes.md)|Learn about the two types of disconnected mailboxes and how to work with them.|
+|[Custom attributes](mailbox-custom-attributes.md)|Learn how to add information about a recipient by using custom attributes.|
+|[Filters in recipient Shell commands](http://technet.microsoft.com/library/fb4b1396-9aae-4037-be1a-b09e336b890e.aspx)|Learn how to use precanned or custom filters with commands to filter a set of recipients.|
+|[Manage permissions for recipients](mailbox-permissions.md)|Learn how to use the EAC or the Exchange Management Shell to assign permissions to users and groups.|
+|[Automatic Mailbox Distribution](http://technet.microsoft.com/library/f4db4636-948c-466b-839c-300c1a3a9544.aspx)|Learn about how automatic mailbox distribution works and how to control which mailbox databases are selected for new and moved mailboxes.|
  
 

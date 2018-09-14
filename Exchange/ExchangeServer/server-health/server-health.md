@@ -1,22 +1,22 @@
 ---
-title: "Server health and performance in Exchange 2016"
+title: "Server health and performance in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9d1fdec8-8273-4c71-88f1-b4edfd542c4f
-description: "Summary: Learn about managed availability and workload management in Exchange 2016."
+description: "Summary: Learn about managed availability and workload management in Exchange Server."
 ---
 
-# Server health and performance in Exchange 2016
+# Server health and performance in Exchange Server
 
- **Summary**: Learn about managed availability and workload management in Exchange 2016.
+ **Summary**: Learn about managed availability and workload management in Exchange Server.
 
-Understanding server health and performance is critical to designing and maintaining a high-performance messaging infrastructure. Exchange 2016 continues the features that were introduced in Exchange 2013 to help you manage server health and performance.
+Understanding server health and performance is critical to designing and maintaining a high-performance messaging infrastructure. Exchange 2016 and Exchange 2019 continue the features that were introduced in Exchange 2013 to help you manage server health and performance.
 
 ## Managed availability
 
@@ -38,6 +38,6 @@ Workload management is made of these components:
 
 - *System workload management* automatically throttles specific Exchange workloads by monitoring the health of key server resources. These settings should be customized only under the direction of Microsoft Customer Service and Support.
 
-For more information about user workload management, see [User workload management in Exchange 2016](workload-management.md).
+For more information about user workload management, see [User workload management in Exchange Server](workload-management.md).
 
 

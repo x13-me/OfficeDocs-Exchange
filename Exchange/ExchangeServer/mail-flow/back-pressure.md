@@ -3,18 +3,16 @@ title: "Understanding back pressure"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 03003544-e802-4988-9427-5fc4da64dcb8
-description: "Summary: Learn how back pressure monitors system resources on Exchange 2016 servers to prevent servers from being overwhelmed by the volume of incoming messages."
+description: "Summary: Learn how back pressure monitors system resources on Exchange 2016 and 2019 servers to prevent servers from being overwhelmed by the volume of incoming messages."
 ---
 
 # Understanding back pressure
-
- **Summary**: Learn how back pressure monitors system resources on Exchange 2016 servers to prevent servers from being overwhelmed by the volume of incoming messages.
 
 Back pressure is a system resource monitoring feature of the Microsoft Exchange Transport service that exists on Mailbox servers and Edge Transport servers. Back pressure detects when vital system resources, such as hard drive space and memory, are overused, and takes action to prevent the server from becoming completely overwhelmed and unavailable. For example, when a system resource utilization level on the Exchange server is determined to be too high, the server delays accepting new messages. If the resource utilization gets worse, the server stops accepting new messages to work exclusively on processing all existing messages, and might even stop processing outgoing messages. When the system resource utilization returns to an acceptable level, the Exchange server resumes normal operation by accepting new messages and processing outgoing messages.
 

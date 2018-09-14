@@ -3,18 +3,18 @@ title: "Datacenter Activation Coordination mode"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 57e4bf22-eeae-42a5-beb3-d68d06489592
-description: "Summary: How DAC mode, a component of DAGs, works in Exchange 2016."
+description: "Summary: How DAC mode, a component of DAGs, works in Exchange Server."
 ---
 
 # Datacenter Activation Coordination mode
 
- **Summary**: How DAC mode, a component of DAGs, works in Exchange 2016.
+ **Summary**: How DAC mode, a component of DAGs, works in Exchange 2016 and Exchange 2019.
   
 Datacenter Activation Coordination (DAC) mode is a property of a database availability group (DAG). DAC mode is disabled by default but should be enabled for all DAGs with two or more members that use continuous replication. DAC mode shouldn't be enabled for DAGs that use third-party replication mode unless specified by the third-party vendor.
   

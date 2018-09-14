@@ -9,18 +9,16 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 2b043878-0b34-4563-a9c2-28a9efa7447e
-description: "Summary: Learn to use the custom attributes in Exchange 2016 to add information about a mail recipient."
+description: "Summary: Learn to use the custom attributes in Exchange Server 2016 or 2019 to add information about a mail recipient."
 ---
 
 # Custom attributes
 
- **Summary**: Learn to use the custom attributes in Exchange 2016 to add information about a mail recipient.
+Exchange Server includes 15 extension attributes that you can use to add information about a recipient, such as an employee ID, organizational unit (OU), or some other custom value for which there isn't an existing attribute.
 
-Exchange 2016 includes 15 extension attributes that you can use to add information about a recipient, such as an employee ID, organizational unit (OU), or some other custom value for which there isn't an existing attribute.
+In earlier versions of Exchange, if you wanted to store this information in Active Directory, you had to create an attribute by extending the Active Directory schema. Schema extension requires planning, procuring object identifiers (OIDs) for new attributes, and testing the extension process in a test environment before you implement it in a production environment. Exchange Server doesn't let you use schema extensions in recipient filters that are used by address lists, e-mail address policies, and dynamic distribution groups.
 
-In earlier versions of Exchange, if you wanted to store this information in Active Directory, you had to create an attribute by extending the Active Directory schema. Schema extension requires planning, procuring object identifiers (OIDs) for new attributes, and testing the extension process in a test environment before you implement it in a production environment. Exchange 2016 doesn't let you use schema extensions in recipient filters that are used by address lists, e-mail address policies, and dynamic distribution groups.
-
-The custom attributes available to Exchange 2016 are labeled in Active Directory as **ms-Exch-Extension-Attribute1** through **ms-Exch-Extension-Attribute15**. In the Exchange Management Shell, the corresponding parameters are _CustomAttribute1_ through _CustomAttribute15_. These attributes aren't used by any Exchange components. They can be used to store Active Directory data without having to extend the Active Directory schema.
+The custom attributes available to Exchange Server are labeled in Active Directory as **ms-Exch-Extension-Attribute1** through **ms-Exch-Extension-Attribute15**. In the Exchange Management Shell, the corresponding parameters are _CustomAttribute1_ through _CustomAttribute15_. These attributes aren't used by any Exchange components. They can be used to store Active Directory data without having to extend the Active Directory schema.
 
 ## Advantages of custom attributes
 <a name="AO"> </a>
@@ -37,7 +35,7 @@ There are several advantages to using custom attributes:
 
 ### Multivalued custom attributes
 
-Starting withExchange 2010 Service Pack 2 (SP2), five multivalued custom attributes were added to Exchange to allow you to store additional information for mail recipients if the traditional custom attributes didn't meet your needs. The _ExtensionCustomAttribute1_ to _ExtensionCustomAttribute5_ parameters can hold up to 1,300 values each. You can specify multiple values as a comma-delimited list. The following cmdlets support these new parameters: 
+Starting with Exchange 2010 Service Pack 2 (SP2), five multivalued custom attributes were added to Exchange to allow you to store additional information for mail recipients if the traditional custom attributes didn't meet your needs. The _ExtensionCustomAttribute1_ to _ExtensionCustomAttribute5_ parameters can hold up to 1,300 values each. You can specify multiple values as a comma-delimited list. The following cmdlets support these new parameters: 
 
 - [Set-DistributionGroup](http://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx)
 

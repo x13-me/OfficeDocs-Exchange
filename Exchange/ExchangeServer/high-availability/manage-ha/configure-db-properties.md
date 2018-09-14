@@ -3,18 +3,18 @@ title: "Configure mailbox database copy properties"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: cf186561-ab2c-45c0-90f5-8d3ecfabeeac
-description: "Summary: How to configure the properties of a mailbox database copy in Exchange 2016, and what those properties are."
+description: "Summary: How to configure the properties of a mailbox database copy in Exchange Server, and what those properties are."
 ---
 
 # Configure mailbox database copy properties
 
- **Summary**: How to configure the properties of a mailbox database copy in Exchange 2016, and what those properties are.
+ **Summary**: How to configure the properties of a mailbox database copy in Exchange 2016 and Exchange 2019, and what those properties are.
   
 Each mailbox database copy has its own properties, which you can configure. These properties include the amount of time, if any, for replay lag and truncation lag, and the activation preference number. For more information about replay lag, truncation lag and the activation preference number, see [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx).
   
@@ -22,7 +22,7 @@ Each mailbox database copy has its own properties, which you can configure. Thes
 
 - Estimated time to complete this task: 1 minute
     
-- To open the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](../../permissions/feature-permissions/ha-permissions.md) topic.
     

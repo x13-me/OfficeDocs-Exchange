@@ -1,5 +1,5 @@
 ---
-title: "Configure instant messaging integration with Outlook on the web in Exchange 2016"
+title: "Configure instant messaging integration with Outlook on the web in Exchange"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,14 +10,14 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 0eda267b-41e5-4a60-a209-70a8522a9f41
-description: "Summary: Learn how to configure IM integration with Outlook on the web in Exchange 2016."
+description: "Summary: Learn how to configure IM integration with Outlook on the web in Exchange 2016 or Exchange 2019."
 ---
 
-# Configure instant messaging integration with Outlook on the web in Exchange 2016
+# Configure instant messaging integration with Outlook on the web in Exchange
 
- **Summary**: Learn how to configure IM integration with Outlook on the web in Exchange 2016.
+ **Summary**: Learn how to configure IM integration with Outlook on the web in Exchange 2016 or Exchange 2019.
   
-To configure instant messaging (IM) integration between Skype for Business Server and Outlook on the web in Exchange 2016, you need to use the Exchange Management Shell. This is different than previous versions of Exchange where you needed to edit the web.config file. If you edit the web.config file instead of using the steps in this topic, the settings are ignored and Outlook on the web users receive the following error message:
+To configure instant messaging (IM) integration between Skype for Business Server and Outlook on the web (formerly known as Outlook Web App) in Exchange 2016 or Exchange 2019, you need to use the Exchange Management Shell. This is different than previous versions of Exchange where you needed to edit the web.config file. If you edit the web.config file instead of using the steps in this topic, the settings are ignored and Outlook on the web users receive the following error message:
   
  `There's a problem with instant messaging. Please try again later.`
   
@@ -29,7 +29,7 @@ Also, the following health set errors are generated on the Exchange server:
     
 - **Message**: `Owa InstantMessaging provider failed to initialize due to incorrect IM configuration on the server. Signin attempts to OWA IM will fail. Error Message: {Instant Messaging Certificate Thumbprint is null or empty on web.config).`
     
-Use the procedures in this topic to fix these errors and configure IM integration between Skype for Business Server and Exchange 2016. IM integration between Lync Server 2013 and Exchange 2016 isn't supported.
+Use the procedures in this topic to fix these errors and configure IM integration between Skype for Business Server and Exchange 2016 or Exchange 2019. IM integration between Lync Server 2013 and Exchange 2016 or later isn't supported.
   
 ## What do you need to know before you begin?
 
@@ -40,8 +40,6 @@ Use the procedures in this topic to fix these errors and configure IM integratio
 - You can only use PowerShell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access virtual directory settings" entry in the [Clients and mobile devices permissions](../../permissions/feature-permissions/client-and-mobile-device-permissions.md) topic.
-    
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
@@ -58,11 +56,11 @@ New-SettingOverride -Name "<UniqueOverrideName>" -Component OwaServer -Section I
 
  **Notes:**
   
-- To configure the same settings on all Exchange 2016 servers in the Active Directory forest, don't use the _Server_ parameter.
+- To configure the same settings on all Exchange 2016 and Exchange 2019 servers in the Active Directory forest, don't use the _Server_ parameter.
     
-- To configure the settings on a specific Exchange 2016 server, use the _Server_ parameter and the name of the server (don't use the fully qualified domain name or FQDN). This method is useful when you need to specify different settings on different Exchange servers.
+- To configure the settings on a specific Exchange 2016 or Exchange 2019 server, use the _Server_ parameter and the name of the server (don't use the fully qualified domain name or FQDN). This method is useful when you need to specify different settings on different Exchange servers.
     
-This example specifies the IM server and IM certificate thumbprint on all Exchange 2016 servers in the organization.
+This example specifies the IM server and IM certificate thumbprint on all Exchange 2016 and Exchange 2019 servers in the organization.
   
 - **Setting override name**: "IM Override" (must be unique)
     
@@ -84,7 +82,7 @@ New-SettingOverride -Name "Mailbox01 IM Override"  -Component OwaServer -Section
 
 ### Step 2: Refresh the IM settings on the Exchange server
 
-Use the following syntax in the Exchange Management Shell to refresh the IM settings on the server. You need to do this on every Exchange 2016 server that's used for Outlook on the web.
+Use the following syntax in the Exchange Management Shell to refresh the IM settings on the server. You need to do this on every Exchange 2016 or Exchange 2019 server that's used for Outlook on the web.
   
 ```
 Get-ExchangeDiagnosticInfo -Server <ServerName> -Process Microsoft.Exchange.Directory.TopologyService -Component VariantConfiguration -Argument Refresh
@@ -98,7 +96,7 @@ Get-ExchangeDiagnosticInfo -Server Mailbox01 -Process Microsoft.Exchange.Directo
 
 ### Step 3: Restart the Outlook on the web web pool on the Exchange server
 
-Run the following command in the Exchange Management Shell or in Windows PowerShell on the server. You need to do this on every Exchange 2016 server that's used for Outlook on the web.
+Run the following command in the Exchange Management Shell or in Windows PowerShell on the server. You need to do this on every Exchange 2016 or Exchange 2019 server that's used for Outlook on the web.
   
 ```
 Restart-WebAppPool MSExchangeOWAAppPool
@@ -119,5 +117,3 @@ To verify the values of the **IMServerName** and **IMCertificateThumbprint** pro
 - _Process_: `Microsoft.Exchange.Directory.TopologyService` (instead of `MSExchangeMailboxAssistants`).
     
 - _Argument_: `Config` (instead of `"Config,Component=OwaServer"`).
-    
-

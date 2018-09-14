@@ -3,20 +3,18 @@ title: "Configure client-specific message size limits"
 ms.author: chrisda
 author: chrisda
 manager: scotv
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: fef9ca78-b68f-4342-ada0-881ab985ce3c
-description: "Summary: Learn how to configure message size limits for Exchange ActiveSync, Exchange Web Services, and Outlook on the web (Outlook on the web) clients in Exchange 2016."
+description: "Summary: Learn how to configure message size limits for Exchange ActiveSync, Exchange Web Services, and Outlook on the web clients in Exchange Server 2016 or 2019."
 ---
 
 # Configure client-specific message size limits
 
- **Summary**: Learn how to configure message size limits for Exchange ActiveSync, Exchange Web Services, and Outlook on the web (Outlook on the web) clients in Exchange 2016.
-  
-In Exchange Server 2016, there are several different message size limits that apply to messages as they travel through your organization. For more information, see [Message size limits in Exchange 2016](../../mail-flow/message-size-limits.md).
+In Exchange Server, there are several different message size limits that apply to messages as they travel through your organization. For more information, see [Message size limits in Exchange Server](../../mail-flow/message-size-limits.md).
   
 However, there are client-specific message size limits you can configure for Outlook on the web (fornerly known as Outlook Web App) and email clients that use Exchange ActiveSync or Exchange Web Services (EWS). If you change the Exchange organizational, connector, or user message size limits, you likely need change the limits for Outlook on the web, ActiveSync, and EWS. These limits are described in the following tables. To change the message size limit for a specific client type, you need to change **all** the values that are described in the table.
   
@@ -94,7 +92,7 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
     
 - To allow for the 33% increase in size due to Base64 encoding, multiply your desired new maximum size value in megabytes by 4/3. To convert the value into kilobytes, multiply by 1024. To convert the value into bytes, multiply by 1048756 (1024\*1024). Note that the size increase caused by Base64 encoding could be greater than 33%, and depends on several factors (for example, the attachment size, file type, compression, and the email client).
     
-- Any customized per-server Exchange or Internet Information Server settings you make in Exchange XML application configuration files (for example, web.config files or the EdgeTransport.exe.config file) will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so that you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
+- Any customized Exchange or Internet Information Server (IIS) settings that you made in Exchange XML application configuration files on the Exchange server (for example, web.config files or the EdgeTransport.exe.config file) **will be overwritten** when you install an Exchange CU. Be sure save this information so you can easily re-apply the settings after the install. After you install the Exchange CU, you need to re-configure these settings.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     

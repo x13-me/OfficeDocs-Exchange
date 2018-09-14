@@ -94,7 +94,7 @@ Interoperability was verified for the following VoIP gateway vendors:
 |Dialogic  <br/> |DMG2000  <br/> | T1 CAS  <br/>  T1/E1 Q.SIG  <br/> |
 |Dialogic  <br/> |DMG3000  <br/> | BRI Q.SIG  <br/> |
 |NET  <br/> |VX1200  <br/> | T1 Q.SIG  <br/> |
-|Sonus  <br/> |SBC 1000/2000 2.2.1 or later  <br/> | TDM Signaling (ISDN): AT&amp;T 4ESS/5ESS, Nortel DMS- 100, Euro ISDN (ETSI 300-102), QSIG, NTT InsNet (Japan), ANSI National ISDN-2 (NI-2)  <br/>  TDM Signaling (CAS): T1 CAS (E&amp;M, Loop start); E1 CAS (R2)  <br/> |
+|Sonus  <br/> |SBC 1000/2000 2.2.1 or later  <br/> | TDM Signaling (ISDN): AT&T 4ESS/5ESS, Nortel DMS- 100, Euro ISDN (ETSI 300-102), QSIG, NTT InsNet (Japan), ANSI National ISDN-2 (NI-2)  <br/>  TDM Signaling (CAS): T1 CAS (E&M, Loop start); E1 CAS (R2)  <br/> |
 |Quintum  <br/> |Tenor DX Series  <br/> | T1 Q.SIG  <br/> |
    
 ## Supported PBXs when using an AudioCodes VoIP gateway
@@ -210,7 +210,7 @@ The DMG4000 series Media Gateway comes with several TDM interface options. The D
     
 - INS-64 (Japan)
     
-- 5ESS Custom (North America - AT&amp;T)
+- 5ESS Custom (North America - AT&T)
     
 - National ISDN (NI1 - North America)
     

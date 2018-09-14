@@ -1,22 +1,20 @@
 ---
-title: "Connectivity logging in Exchange 2016"
+title: "Connectivity logging in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c31fd710-4ae4-4d9a-8936-d056e7ca2748
-description: "Summary: Learn about connectivity logging and how it records outbound connection activity for transmitting messages in Exchange 2016."
+description: "Summary: Learn about connectivity logging and how it records outbound connection activity for transmitting messages in Exchange Server 2016 or 2019."
 ---
 
-# Connectivity logging in Exchange 2016
+# Connectivity logging in Exchange Server
 
- **Summary**: Learn about connectivity logging and how it records outbound connection activity for transmitting messages in Exchange 2016.
-  
-Connectivity logging records the outbound connection activity that's used to transmit messages on Exchange servers. In Exchange 2016, the following services transmit messages, so they have connectivity logs:
+Connectivity logging records the outbound connection activity that's used to transmit messages on Exchange servers. In Exchange Server, the following services transmit messages, so they have connectivity logs:
   
 - The Transport service on Mailbox servers and Edge Transport servers.
     
@@ -30,7 +28,7 @@ For more information about these transport services, and where they can transmit
   
  Connectivity logging doesn't track the transmission of individual messages. Instead, it tracks the number and size of messages that were transmitted over a connection, DNS resolution information for the destination, and informational messages that are related to the connection.
   
-By default, connectivity logging is enabled, and Exchange uses circular logging to limit the connectivity log files based on size and age to help control the hard disk space that's used. To configure connectivity logging, see [Configure connectivity logging in Exchange 2016](configure-connectivity-logging.md).
+By default, connectivity logging is enabled, and Exchange uses circular logging to limit the connectivity log files based on size and age to help control the hard disk space that's used. To configure connectivity logging, see [Configure connectivity logging in Exchange Server](configure-connectivity-logging.md).
   
  **Note**: If you're interested in a detailed record of the entire SMTP protocol conversation from start to finish, see [Protocol logging](../../mail-flow/connectors/protocol-logging.md).
   
