@@ -52,7 +52,7 @@ Set-Mailbox -Identity "Ben Smith" -AuditEnabled $true
 This example enables mailbox audit logging for all user mailboxes in your organization.
   
 ```
-Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -AuditEnabled $true
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Select PrimarySmtpAddress | ForEach {Set-Mailbox -Identity $_.PrimarySmtpAddress -AuditEnabled $true}
 ```
 
 This example disables mailbox audit logging for Ben Smith's mailbox.
