@@ -9,8 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: da808e27-d2b7-4fbd-915c-a600751f526c
+<<<<<<< HEAD
 description: "Summary: How to migrate Exchange 2010 public folders to Exchange 2016 or 2019."
 ---
+=======
+>>>>>>> upstream/Ex2019
 
 # Use batch migration to migrate public folders to from previous versions to Exchange 2016 or later
 
@@ -48,7 +51,11 @@ Exchange supports moving your public folders from the following legacy versions 
 If you need to move your public folders to Exchange 2016 or later but your on-premises servers aren't running the minimum support versions of Exchange 2010, check out [Use serial migration to migrate public folders to Exchange 2013 from previous versions](http://technet.microsoft.com/library/16773895-e9c3-4013-983f-683e5d14b221.aspx) (the steps for migrating to Exchange 2013 or later). While serial migration is an option, we strongly recommend that you upgrade your on-premises servers and use batch migration. Batch migration is significantly faster and, more important, provides greater reliability.
   
 You can't migrate public folders directly from Exchange 2003. If you're running Exchange 2003 in your organization, you need to move all public folder databases and replicas to Exchange 2010 SP3 RU8 or later. No public folder replicas can remain on Exchange 2003. Additionally, mail destined for an Exchange 2016 or later public folder can't be routed through an Exchange 2003 server.
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> upstream/Ex2019
 ## What do you need to know before you begin?
 
 - Before you begin, we recommend that you read this topic in its entirety as downtime is required for some steps.
