@@ -14,8 +14,6 @@ description: "Summary: Learn how to create, view, modify, delete, import, and ex
 
 # Procedures for mail flow rules in Exchange Server
 
- **Summary**: Learn how to create, view, modify, delete, import, and export mail flow rules (transport rules) in Exchange 2016 and Exchange 2019.
-  
 Mail flow rules (also known as transport rules) identify and take action on messages that flow through your Exchange organization. For more information about mail flow rules, see [Mail flow rules in Exchange Server](mail-flow-rules.md).
   
 On Mailbox servers, you can manage mail flow rules in the Exchange admin center (EAC) and in the Exchange Management Shell. On Edge Transport servers, you can only use the Exchange Management Shell.

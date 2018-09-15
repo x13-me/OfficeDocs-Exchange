@@ -9,13 +9,11 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 57eca42a-5a7f-4c65-89f0-7a84f2dbea19
-description: "Summary: Learn about permissions that are required to perform tasks for clients and mobile devices in Exchange Server."
+description: "Summary: Learn about permissions that are required to perform tasks for clients and mobile devices in Exchange Server 2016 or 2019."
 ---
 
 # Clients and mobile devices permissions
 
- **Summary**: Learn about permissions that are required to perform tasks for clients and mobile devices in Exchange Server 2016 or Exchange Server 2019.
-  
 The permissions required to perform tasks for clients and mobile devices vary depending on the procedure being performed or the cmdlet you want to run. For more information about client and mobile device features, see [Clients and mobile](../../clients/clients.md).
   
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:

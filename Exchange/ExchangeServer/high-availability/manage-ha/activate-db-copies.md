@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d948269b-c902-4d8d-8c2b-269473359baa
-description: "Summary: How to designate a passive copy of an Exchange Server mailbox database as the new active copy."
+description: "Summary: How to designate a passive copy of an Exchange Server 2016 or 2019 mailbox database as the new active copy."
 ---
 
 # Activate a mailbox database copy
 
- **Summary**: How to designate a passive copy of an Exchange 2016 or Exchange 2019 mailbox database as the new active copy.
-  
 Activating a mailbox database copy is the process of designating a specific passive copy as the new active copy of a mailbox database. This process is referred to as a *database switchover*. A database switchover involves dismounting the current active database and mounting the database copy on the specified server as the new active mailbox database copy. The database copy that will become the active mailbox database must be healthy and current.
   
 Looking for other management tasks related to mailbox database copies? Check out [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx).

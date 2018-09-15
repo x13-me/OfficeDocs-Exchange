@@ -9,13 +9,11 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
-description: "Summary: Learn about In-Place eDiscovery in Exchange Server."
+description: "Summary: Learn about In-Place eDiscovery in Exchange Server 2016 and 2019."
 ---
 
 # In-Place eDiscovery in Exchange Server
 
- **Summary**: Learn about In-Place eDiscovery in Exchange 2016 and Exchange 2019.
-  
 If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery in Exchange Server can help you perform discovery searches for relevant content within mailboxes. You can also use In-Place eDiscovery in an Exchange hybrid environment to search on-premises and cloud-based mailboxes in the same search.
   
 > [!IMPORTANT]

@@ -9,13 +9,11 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5b690bcb-c6df-4511-90e1-08ca91f43b37
-description: "Summary: Learn about permissions that are required to manage recipients in Exchange Server."
+description: "Summary: Learn about permissions that are required to manage recipients in Exchange Server 2016 and 2019."
 ---
 
 # Recipients Permissions
 
- **Summary**: Learn about permissions that are required to manage recipients in Exchange Server 2016 and Exchange Server 2019.
-  
 The permissions required to perform tasks to manage recipients vary depending on the procedure being performed or the cmdlet you want to run.
   
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:

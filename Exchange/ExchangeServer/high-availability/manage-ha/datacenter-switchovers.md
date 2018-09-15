@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: ac208c12-04d0-4809-bacd-72478ff14983
-description: "Summary: How to plan for, and then perform, a datacenter switchover in Exchange Server."
+description: "Summary: How to plan for, and then perform, a datacenter switchover in Exchange Server 2016 or 2019."
 ---
 
 # Datacenter switchovers
 
- **Summary**: How to plan for, and then perform, a datacenter switchover in Exchange 2016 or Exchange 2019.
-  
 In a site resilient configuration, automatic recovery in response to a site-level failure can occur within a DAG, allowing the messaging system to remain in a functional state. This configuration requires at least three locations, as it requires deploying DAG members in two locations and the DAG's witness server in a third location.
   
 If you don't have three locations, or even if you do have three locations but you want to control datacenter-level recovery actions, you can configure a DAG for manual recovery in the event of a site-level failure. In that event, you would perform a process called a *datacenter switchover*. As with many disaster recovery scenarios, prior planning and preparation for a datacenter switchover can simplify your recovery process and reduce the duration of your outage.

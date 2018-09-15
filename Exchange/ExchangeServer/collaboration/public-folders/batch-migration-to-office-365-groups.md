@@ -15,8 +15,6 @@ description: "Summary: How to move your Exchange Server public folders to Office
 
 # Use batch migration to migrate Exchange Server public folders to Office 365 Groups
 
- **Summary**: How to move your Exchange 2016 or Exchange 2019 public folders to Office 365 Groups.
-  
 Through a process known as *batch migration*, you can move some or all of your Exchange Server public folders to Office 365 Groups. Groups is a new collaboration offering from Microsoft that offers certain advantages over public folders. See [Migrate your public folders to Office 365 Groups](migrate-to-office-365-groups.md) for an overview of the differences between public folders and Groups, and reasons why your organization may or may not benefit from switching to Groups.
   
 This article contains the step-by-step procedures for performing the actual batch migration of your Exchange Server public folders.

@@ -9,12 +9,10 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c064729d-7cda-47fc-b105-acf4b300d430
-description: "Summary: Learn how to add, remove and view members of a management role group in Exchange Server."
+description: "Summary: Learn how to add, remove and view members of a management role group in Exchange Server 2016 and 2019."
 ---
 
 # Manage role group members
-
- **Summary**: Learn how to add, remove and view members of a management role group in Exchange 2016 or Exchange 2019.
 
  To learn about role groups in Exchange Server, see [Understanding Management Role Groups](http://technet.microsoft.com/library/2a92e06c-523e-4fd4-a937-152562b7741d.aspx).
 

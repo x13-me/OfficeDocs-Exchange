@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
-description: "Summary: Learn how to give users the permissions they need to use In-Place eDiscovery in Exchange Server."
+description: "Summary: Learn how to give users the permissions they need to use In-Place eDiscovery in Exchange Server 2016 and 2019."
 ---
 
 # Assign eDiscovery permissions in Exchange Server
 
- **Summary**: Learn how to give users the permissions they need to use In-Place eDiscovery in Exchange 2016 and Exchange 2019.
-  
 If you want users to be able to use Exchange Server In-Place eDiscovery, you first need to add them to the Discovery Management role group. Members of the Discovery Management role group have Full Access mailbox permissions to the default discovery mailbox, which is called **Discovery Search Mailbox**.
   
 > [!CAUTION]

@@ -9,13 +9,11 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5d11a955-b1cc-4150-a0b9-a8cc48ba9bde
-description: "Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange Server."
+description: "Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange Server 2016 and 2019."
 ---
 
 # Mail flow rule actions in Exchange Server
 
- **Summary**: Learn about the actions that are available for mail flow rules (transport rules) in Exchange 2016 and Exchange 2019.
-  
 Actions in mail flow rules (also known as transport rules) specify what you want to do to messages that match conditions of the rule. For example, you can create a rule that forwards message from specific senders to a moderator, or adds a disclaimer or personalized signature to all outbound messages.
   
  Actions typically require additional properties. For example, when the rule redirects a message, you need to specify where to redirect the message. Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.

@@ -15,8 +15,6 @@ description: "Summary: Learn how to recover a lost Exchange 2016 or Exchange 201
 
 # Recover Exchange servers
 
- **Summary**: Learn how to recover a lost Exchange 2016 or Exchange 2019 server.
-  
 You can recover a lost Exchange server by using the _Mode:RecoverServer_ switch in unattended mode (from the command line) of Exchange Setup. Since most Exchange server settings are stored in Active Directory, the `Setup.exe /Mode:RecoverServer` command uses that information during the installtion of Exchange on a new server with the same name.
   
 Recovering a lost Exchange server is often accomplished by using new hardware. However, you can also use an existing server that doesn't already have Exchange installed on it.

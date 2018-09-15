@@ -14,8 +14,6 @@ description: "Summary: Learn about user workload management and throttling in Ex
 
 # User workload management in Exchange Server
 
- **Summary**: Learn about user workload management and throttling in Exchange 2016 and Exchange 2019.
-
 User workload management allows you to control how Exchange system resources are consumed by users. This feature was available in Exchange 2010 (known as *user throttling*), and was expanded to its current level in Exchange 2013.
 
 A *workload* is a feature, protocol, or service that's been explicitly defined to manage system resources on Exchange servers. Each workload consumes system resources on the Exchange server (for example CPU, memory, network, and disk bandwidth). Examples of workloads include Outlook on the web (formerly known as Outlook Web App), Exchange ActiveSync, mailbox migration, and mailbox assistants.

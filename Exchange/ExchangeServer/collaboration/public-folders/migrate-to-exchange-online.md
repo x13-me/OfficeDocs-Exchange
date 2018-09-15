@@ -14,8 +14,6 @@ description: "Summary: This article tells you how to move modern public folders 
 
 # Use batch migration to migrate Exchange Server public folders to Exchange Online
 
- **Summary**: This article tells you how to move modern public folders from Exchange 2016 or Exchange 2019 to Office 365.
-  
 Migrating your Exchange Server public folders to Exchange Online requires Exchange Server 2016 CU4 or later running in your on-premises environment.
   
 > [!NOTE]

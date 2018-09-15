@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 493d9c40-644d-49d6-9291-949acbcfdcb6
-description: "Summary: About lagged mailbox database copies and how to activate them in Exchange Server."
+description: "Summary: About lagged mailbox database copies and how to activate them in Exchange Server 2016 or 2019."
 ---
 
 # Activate a lagged mailbox database copy
 
- **Summary**: About lagged mailbox database copies and how to activate them in Exchange 2016 and Exchange 2019.
-  
 A lagged mailbox database copy is a mailbox database copy configured with a replay lag time value greater than 0. If you want the database to replay all log files and make the database copy current, activating and recovering a lagged mailbox database copy is a simple process. However, if you want to replay log files up to a specific point in time, it's a more difficult operation because you have to manually manipulate log files and run Eseutil.
   
 Looking for other information related to lagged mailbox database copies? Check out [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx).

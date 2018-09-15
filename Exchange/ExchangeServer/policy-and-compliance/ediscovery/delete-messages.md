@@ -9,14 +9,12 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
-description: "Summary: Learn how to search for and purge messages from Exchange Server mailboxes."
+description: "Summary: Learn how to search for and purge messages from Exchange Server 2016 and 2019 mailboxes."
 ---
 
 # Search for and delete messages in Exchange Server
 
- **Summary**: Learn how to search for and purge messages from Exchange 2016 and Exchange 2019 mailboxes.
-  
-You can use the **New-ComplianceSearch** and **New-ComplianceSearchAction** cmdlets to search for and delete an email message from all mailboxes in your organization. This can help you find and remove potentially harmful or high-risk email, such as: 
+ You can use the **New-ComplianceSearch** and **New-ComplianceSearchAction** cmdlets to search for and delete an email message from all mailboxes in your organization. This can help you find and remove potentially harmful or high-risk email, such as: 
   
 - Messages that contain dangerous attachment or virus
     

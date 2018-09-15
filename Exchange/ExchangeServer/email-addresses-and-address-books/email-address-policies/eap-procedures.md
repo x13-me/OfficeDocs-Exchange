@@ -11,13 +11,11 @@ f1_keywords:
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: eb2bf42e-2058-4e17-85d5-97546433b40a
-description: "Summary: Learn how to create, modify, remove, and apply email address policies in Exchange Server."
+description: "Summary: Learn how to create, modify, remove, and apply email address policies in Exchange Server 2016 and 2019."
 ---
 
 # Procedures for email address policies in Exchange Server
 
- **Summary**: Learn how to create, modify, remove, and apply email address policies in Exchange 2016 and Exchange 2019.
-  
 Email address policies assign email addresses to recipients in your Exchange organization. You use the Exchange admin center (EAC) or the Exchange Management Shell to configure email address policies in Exchange Server.
   
 For more information about email address policies, see [Email address policies in Exchange Server](email-address-policies.md).

@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 28cedf1d-365a-4e36-b2ba-6bf81af8684f
-description: "Summary: Learn about managing mailbox database copies in the Mailbox server in Exchange Server."
+description: "Summary: Learn about managing mailbox database copies in the Mailbox server in Exchange Server 2016 or 2019."
 ---
 
 # Manage mailbox database copies
 
- **Summary**: Learn about managing mailbox database copies in the Mailbox server in Exchange 2016 or Exchange 2019.
-  
 In Exchange Server, you can use the Exchange Management Console (EAC) or the Exchange Management Shell to add mailbox database copies after a database availability group (DAG) has been created, configured, and populated with Mailbox server members.
   
 ## Managing database copies

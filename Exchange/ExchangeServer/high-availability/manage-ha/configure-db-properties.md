@@ -14,8 +14,6 @@ description: "Summary: How to configure the properties of a mailbox database cop
 
 # Configure mailbox database copy properties
 
- **Summary**: How to configure the properties of a mailbox database copy in Exchange 2016 and Exchange 2019, and what those properties are.
-  
 Each mailbox database copy has its own properties, which you can configure. These properties include the amount of time, if any, for replay lag and truncation lag, and the activation preference number. For more information about replay lag, truncation lag and the activation preference number, see [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx).
   
 ## What do you need to know before you begin?

@@ -14,8 +14,6 @@ description: "Summary: How to create a DAG in Exchange Server, through the Excha
 
 # Create a database availability group
 
- **Summary**: How to create a DAG in Exchange 2016 and Exchange 2019, through the Exchange admin center (EAC) or the Exchange Management Shell.
-  
 A database availability group (DAG) is a set of up to 16 Microsoft Exchange Server Mailbox servers that provide automatic database-level recovery from a database, server, or network failure. When a Mailbox server is added to a DAG, it works with the other servers in the DAG to provide automatic, database-level recovery from database, server, and network failures.
   
 > [!IMPORTANT]

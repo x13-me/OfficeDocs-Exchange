@@ -9,12 +9,10 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f93d502e-5df4-4ba0-b68d-01a17ccffb4d
-description: "Summary: Learn how to manage and customize role assignment policies in Exchange Server."
+description: "Summary: Learn how to manage and customize role assignment policies in Exchange Server 2016 and 2019."
 ---
 
 # Manage role assignment policies
-
- **Summary**: Learn how to manage and customize role assignment policies in Exchange Server 2016 or Exchange Server 2019.
 
 If you want to customize the permissions that you assign to a group of end users, create a new custom management role assignment policy. The assignment policy you create can be customized to suit your end user's specific requirements. For more information about assignment policies in Exchange Server, see [Understanding Management Role Assignment Policies](http://technet.microsoft.com/library/25913e43-326a-4371-90b5-021a35f100fe.aspx).
 

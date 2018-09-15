@@ -14,8 +14,6 @@ description: "Summary: Learn how to configure, enable, and disable administrator
 
 # Manage administrator audit logging
 
- **Summary**: Learn how to configure, enable, and disable administrator audit logging in Exchange 2016 and Exchange 2019, and how to view the admit audit log settings.
-  
 Administrator audit logging in Exchange Server enables you to create a log entry each time a specified cmdlet is run. Log entries provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected. For more information about administrator audit logging, see [Administrator audit logging in Exchange Server](admin-audit-logging.md).
   
 ## What do you need to know before you begin?

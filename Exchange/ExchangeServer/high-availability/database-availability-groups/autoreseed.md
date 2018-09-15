@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 61f9a8be-070e-4c62-b505-52644fcff0c5
-description: "Summary: Automatically restore a database in Exchange Server with pre-provisioned spare disks."
+description: "Summary: Automatically restore a database in Exchange Server 2016 or 2019 with pre-provisioned spare disks."
 ---
 
 # AutoReseed
 
- **Summary**: Automatically restore a database in Exchange 2016 or Exchange 2019 with pre-provisioned spare disks.
-  
 Automatic Reseed, or AutoReseed, is a feature that replaces standard actions administrators take in response to a disk failure, or a database corruption event, or another issue that necessitates a reseed of a database copy.
   
 ## Overview of Autoreseed

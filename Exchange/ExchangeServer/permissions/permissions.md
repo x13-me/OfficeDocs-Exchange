@@ -14,8 +14,6 @@ description: "Summary: Learn about Role Based Access Control in Exchange Server 
 
 # Exchange Server permissions
 
- **Summary**: Learn about Role Based Access Control in Exchange Server 2016 and Exchange 2019.
-
 Microsoft Exchange Server includes a large set of predefined permissions, based on the Role Based Access Control (RBAC) permissions model, which you can use right away to easily grant permissions to your administrators and users. You can use the permissions features in Exchange Server so that you can get your new organization up and running quickly.
 
 ## Role-based permissions

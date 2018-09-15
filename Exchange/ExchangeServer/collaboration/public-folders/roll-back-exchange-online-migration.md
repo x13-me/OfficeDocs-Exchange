@@ -13,8 +13,6 @@ description: "Summary: Follow these steps to return your public folder infrastru
 
 # Roll back a public folder migration from Exchange Server to Exchange Online
 
- **Summary**: Follow these steps to return your public folder infrastructure to its pre-migration state in your Exchange 2016 or Exchange 2019 on-premises organization.
-  
 If you run into issues with your public folder migration to Exchange Online, or for any other reason need to reactivate your Exchange Server public folders, follow the steps below.
   
 ## Roll back the migration

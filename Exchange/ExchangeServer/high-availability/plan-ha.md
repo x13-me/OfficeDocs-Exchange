@@ -9,12 +9,10 @@ ms.topic: conceptual
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 29bb0358-fc8e-4437-8feb-d2959ed0f102
-description: "Summary: Learn about the elements of high availability and site resilience to incorporate in your Exchange Server deployment plan."
+description: "Summary: Learn about the elements of high availability and site resilience to incorporate in your Exchange Server 2016 or 2019 deployment plan."
 ---
 
 # Plan for high availability and site resilience
-
- **Summary**: Learn about the elements of high availability and site resilience to incorporate in your Exchange 2016 or Exchange 2019 deployment plan.
 
 During the planning phase, the system architects, administrators, and other key stakeholders should identify the business requirements and the architectural requirements for the deployment; in particular, the requirements about high availability and site resilience.
 

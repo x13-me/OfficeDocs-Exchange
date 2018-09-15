@@ -8,13 +8,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: a6bcb072-4ab9-400e-a5d0-c05264629097
-description: "Summary: Learn how offline address books are created and distributed in Exchange Server."
+description: "Summary: Learn how offline address books are created and distributed in Exchange Server 2016 and 2019."
 ---
 
 # Offline address books in Exchange Server
 
- **Summary**: Learn how offline address books are created and distributed in Exchange 2016 and Exchange 2019.
-  
 An offline address book (OAB) is a local copy of an address list collection. OABs are used for address book queries by Outlook clients that are configured in cached Exchange mode. OABs are the only option for Outlook clients that are disconnected from the Exchange server, but they're also queried first by connected Outlook clients as a way to help reduce the workload on Exchange servers. You can configure which address lists are included in an OAB, access to specific OABs, how frequently the OABs are generated, and where the OABs are distributed from.
   
 By default, a new installation of Exchange creates an OAB named Default Offline Address Book on the server. This OAB is also the default OAB, which means it's the OAB that's used by mailboxes and mailbox databases that don't have an OAB assigned to them.

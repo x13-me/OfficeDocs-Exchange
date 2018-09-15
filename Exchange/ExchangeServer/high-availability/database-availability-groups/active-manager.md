@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f4be27b7-1d7c-47b4-87ac-bfdfcc046f00
-description: "Summary: Learn about Active Manager in Exchange Server and how best copy and server selection (BCSS) works."
+description: "Summary: Learn about Active Manager in Exchange Server 2016 and 2019 and how best copy and server selection (BCSS) works."
 ---
 
 # Active Manager
 
- **Summary**: Learn about Active Manager in Exchange 2016 and Exchange 2019, and how best copy and server selection (BCSS) works.
-  
 Microsoft Exchange Server includes a component called *Active Manager* that manages the high availability platform that includes the database availability group (DAG) and mailbox database copies. Active Manager runs inside the Microsoft Exchange Replication service (MSExchangeRepl.exe) on all Mailbox servers. On Mailbox servers that aren't members of a DAG, there is a single Active Manager role: *Standalone Active Manager*.
   
 On servers that are members of a DAG, there are two Active Manager roles: *Primary Active Manager* (PAM) and *Standby Active Manager* (SAM). PAM is the Active Manager role in a DAG that decides which copies will be active and passive. PAM is responsible for getting topology change notifications and reacting to server failures. The DAG member that holds the PAM role is always the member that currently owns the cluster quorum resource (default cluster group). If the server that owns the cluster quorum resource fails, the PAM role automatically moves to a surviving server that takes ownership of the cluster quorum resource. In addition, if you need to take the server that hosts the cluster quorum resource offline for maintenance or an upgrade, you must first move the PAM to another server in the DAG. The PAM controls all movement of the active designations between a database's copies. (Only one copy can be active at any specified time, and that copy may be mounted or dismounted.) The PAM also performs the functions of the SAM role on the local system (detecting local database and local Information Store failures).

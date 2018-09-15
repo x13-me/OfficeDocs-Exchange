@@ -9,16 +9,14 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 3311562b-8fd3-4d66-a5f7-8e65a38c6b39
-description: "Summary: An overview of the different collaboration methods available in Exchange: groups, site mailboxes, shared mailboxes, and public folders."
+description: "Summary: An overview of the different collaboration methods available in Exchange 2016 and 2019: groups, site mailboxes, shared mailboxes, and public folders."
 ---
 
 # Collaboration
 
- **Summary**: An overview of the different collaboration methods available in Exchange: groups, site mailboxes, shared mailboxes, and public folders.
+Exchange Server provides the following rich features that can help your end users collaborate in email:
 
-Exchange 2016 and Exchange 2019 provide the following rich features that can help your end users collaborate in email:
-
-- Site mailboxes
+- Site mailboxes (deprecated in SharePoint 2019)
 
 - Public folders
 
@@ -32,7 +30,7 @@ This topic compares these collaboration features to help you decide which featur
 
 ## Site mailboxes
 
-A site mailbox is functionally comprised of a SharePoint 2013 or later site membership (owners and members), shared storage through an Exchange 2016 or Exchange 2019 mailbox for email messages, and a SharePoint site to store and share. Essentially, site mailboxes bring Exchange email and SharePoint documents together. For users, a site mailbox serves as a central filing cabinet for the project, providing a place to file project email and documents that can be accessed and edited only by site members. In addition, site mailboxes have a specified lifecycle and are optimized to be used for projects that have set start and end dates. To fully implement site mailboxes, end users must use Outlook 2013 or later.
+A site mailbox is functionally comprised of a SharePoint 2013 or later site membership (owners and members), shared storage through an Exchange 2016 or later mailbox for email messages, and a SharePoint site to store and share information. Essentially, site mailboxes bring Exchange email and SharePoint documents together. For users, a site mailbox serves as a central filing cabinet for the project, providing a place to file project email and documents that can be accessed and edited only by site members. In addition, site mailboxes have a specified lifecycle and are optimized to be used for projects that have set start and end dates. To fully implement site mailboxes, end users must use Outlook 2013 or later.
 
 To learn more, see [Site mailboxes](site-mailboxes.md).
 

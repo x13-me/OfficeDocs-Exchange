@@ -14,8 +14,6 @@ description: "Summary: The operational tasks of managing DAGs, mailbox database 
 
 # Managing high availability and site resilience
 
- **Summary**: The operational tasks of managing DAGs, mailbox database copies, and other high availability elements of Exchange 2016 and Exchange 2019.
-  
 After you build, validate, and deploy a Microsoft Exchange Server high availability or site resilience solution, the solution transitions from the deployment phase to the operational phase of the overall solution lifecycle. The operational phase consists of several tasks, and all tasks are related to one of the following areas: database availability groups (DAGs), mailbox database copies, performing proactive monitoring, and managing switchovers and failovers.
   
 ## Database availability group management

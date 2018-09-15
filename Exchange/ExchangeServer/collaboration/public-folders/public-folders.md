@@ -9,7 +9,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9ca7a32d-2436-462f-b71a-94129d05b6fa
-description: "Learn about public folders and how they work in Exchange 2016 and Exchange 2016."
+description: "Learn about public folders and how they work in Exchange 2016 and Exchange 2019."
 ---
 
 # Public folders

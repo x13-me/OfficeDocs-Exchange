@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 7c8ed3c1-ca91-4d9b-b16b-0a2b8ac89730
-description: "Summary: Learn about DLP policies in on-premises Exchange Server, including what they contain and how to test them."
+description: "Summary: Learn about DLP policies in on-premises Exchange Server 2016 and 2019, including what they contain and how to test them."
 ---
 
 # Data loss prevention in Exchange Server
 
- **Summary**: Learn about DLP policies in on-premises Exchange 2016 and Exchange 2019, including what they contain and how to test them.
-  
 Data loss prevention (DLP) is important in Exchange Server because business critical email communication often includes sensitive data. DLP features make managing sensitive data in email messages easier than ever before by balancing compliance requirements without unnecessarily hindering the productivity of workers. For a conceptual overview of DLP, watch the following video.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/31f2b48e-93ed-4be3-b46d-e7230c0fed8f?autoplay=false]

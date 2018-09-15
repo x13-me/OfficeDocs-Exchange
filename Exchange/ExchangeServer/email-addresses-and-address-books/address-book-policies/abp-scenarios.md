@@ -14,8 +14,6 @@ description: "Summary: Learn how to use address book polices to split single Exc
 
 # Scenario: Deploying address book policies in Exchange Server
 
- **Summary**: Learn how to use address book polices to split single Exchange 2016 or Exchange 2019 organizations into separate virtual organizations based on different requirements and scenarios.
-  
 The scenarios in this topic describe the deployment solutions for address book policies (ABPs) in three of the most common organization types where multiple entities (companies, government agencies, school classrooms, etc.) share a common Exchange environment. In all scenarios, a recipient filter divides recipients into separate virtual organizations, which then defines the ABPs that are applied to users in those virtual organizations. For more information recipient filters and virtual organizations, see the [Considerations and best practices for address book policies](abp-scenarios.md#BKMK_bestpractices) section later in this topic.
   
 For more information about ABPs, see [Address book policies in Exchange Server](address-book-policies.md). For ABP procedures, see [Procedures for address book policies in Exchange Server](abp-procedures.md).

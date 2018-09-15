@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f5bdfd6e-e93c-4d96-8bc2-548750d51930
-description: "Summary: Resources and methods for monitoring the health and status of DAGs in Exchange Server."
+description: "Summary: Resources and methods for monitoring the health and status of DAGs in Exchange Server 2016 or 2019."
 ---
 
 # Monitor database availability groups
 
- **Summary**: Resources and methods for monitoring the health and status of DAGs in Exchange 2016 and Exchange 2019.
-  
 You can use the details in this topic for monitoring mailbox database copies for database availability groups (DAGs), for gathering diagnostic information, and for configuring the low disk space monitoring threshold.
   
 ## Get-MailboxDatabaseCopyStatus cmdlet

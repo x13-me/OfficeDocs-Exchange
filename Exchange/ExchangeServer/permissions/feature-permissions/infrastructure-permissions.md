@@ -9,13 +9,11 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 3646a4e8-36b2-41fb-89a4-79b0963fcb11
-description: "Summary: Learn about permissions that are required to perform tasks to configure various components of Exchange Server."
+description: "Summary: Learn about permissions that are required to perform tasks to configure various components of Exchange Server 2016 or 2019."
 ---
 
 # Exchange infrastructure and PowerShell permissions
 
- **Summary**: Learn about permissions that are required to perform tasks to configure various components of Exchange Server 2016 or Exchange Server 2019.
-  
 The permissions required to perform tasks to configure various components of Exchange Server depend on the procedure being performed or the cmdlet you want to run. See each of the sections in this topic for more information about their respective features.
   
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:

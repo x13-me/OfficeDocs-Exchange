@@ -9,14 +9,12 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
-description: "Summary: Learn how to export the results of In-Place eDiscovery searches to .PST files in Exchange Server."
+description: "Summary: Learn how to export the results of In-Place eDiscovery searches to .PST files in Exchange Server 2016 or 2019."
 ---
 
 # Export eDiscovery search results to a PST file
 
- **Summary**: Learn how to export the results of In-Place eDiscovery searches to .PST files in Exchange 2016 and Exchange 2019.
-  
-You can use the eDiscovery Export tool in the Exchange admin center (EAC) to export the results of an In-Place eDiscovery search to an Outlook Data File, which is also called a PST file. Search results will contain items from mailboxes and public folders, depending on the content sources from the eDiscovery search. This lets you distribute search results to other people within your organization, such as a human resources manager or records manager, or to opposing counsel in a legal case. After search results are exported to a PST file, you or other users can open them in Outlook to review or print messages returned in the search results. PST files can also be opened in third-party eDiscovery and reporting applications.
+ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to export the results of an In-Place eDiscovery search to an Outlook Data File, which is also called a PST file. Search results will contain items from mailboxes and public folders, depending on the content sources from the eDiscovery search. This lets you distribute search results to other people within your organization, such as a human resources manager or records manager, or to opposing counsel in a legal case. After search results are exported to a PST file, you or other users can open them in Outlook to review or print messages returned in the search results. PST files can also be opened in third-party eDiscovery and reporting applications.
   
 ## What do you need to know before you begin?
 

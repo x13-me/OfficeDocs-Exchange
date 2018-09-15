@@ -14,8 +14,6 @@ description: "Summary: Learn about administrator audit logging in Exchange Serve
 
 # Administrator audit logging in Exchange Server
 
- **Summary**: Learn about administrator audit logging in Exchange 2016 and Exchange 2019, and how you use the audit log to track changes to objects in your Exchange organization.
-  
 You can use administrator audit logging in Exchange Server to log when a user or administrator makes a change in your organization. By keeping a log of the changes, you can trace changes to the person who made the change, augment your change logs with detailed records of the change as it was implemented, comply with regulatory requirements and requests for discovery, and more.
   
 By default, administrator audit logging is enabled in new installations of Exchange Server.

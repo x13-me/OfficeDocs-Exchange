@@ -9,13 +9,11 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c918ea00-1e68-4b8b-8d51-6966b4432e2d
-description: "Summary: Learn about the conditions and exceptions that define when mail flow rules (transport rules) are applied to messages in Exchange Server."
+description: "Summary: Learn about the conditions and exceptions that define when mail flow rules (transport rules) are applied to messages in Exchange Server 2016 and 2019."
 ---
 
 # Mail flow rule conditions and exceptions (predicates) in Exchange Server
 
- **Summary**: Learn about the conditions and exceptions that define when mail flow rules (transport rules) are applied to messages in Exchange 2016 and Exchange 2019.
-  
 Conditions and exceptions in mail flow rules (also known as transport rules) identify the messages that the rule is applied to or not applied to. For example, if the rule adds a disclaimer to messages, you can configure the rule to only apply to messages that contain specific words, messages sent by specific users, or to all messages except those sent by the members of a specific group. Collectively, the conditions and exceptions in mail flow rules are also known as *predicates*, because for every condition, there's a corresponding exception that uses the exact same settings and syntax. The only difference is conditions specify messages to include, while exceptions specify messages to exclude.
   
 Most conditions and exceptions have one property that requires one or more values. For example, the **The sender is** condition requires the sender of the message. Some conditions have two properties. For example, the **A message header includes any of these words** condition requires one property to specify the message header field, and a second property to specify the text to look for in the header field. Some conditions or exceptions don't have any properties. For example, the **Any attachment has executable content** condition simply looks for attachments in messages that have executable content.

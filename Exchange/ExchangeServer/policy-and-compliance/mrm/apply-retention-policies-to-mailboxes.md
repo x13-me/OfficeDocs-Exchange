@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6ccc80db-d201-44f7-8d4b-473a89c14b2f
-description: "Summary: Learn how to use the Exchange Management Shell or the Exchange admin center apply a retention policy to mailboxes in Exchange Server."
+description: "Summary: Learn how to use the Exchange Management Shell or the Exchange admin center apply a retention policy to mailboxes in Exchange Server 2016 and 2019."
 ---
 
 # Apply a retention policy to mailboxes in Exchange Server
 
- **Summary**: Learn how to use the Exchange Management Shell or the Exchange admin center apply a retention policy to mailboxes in Exchange 2016 and Exchange 2019.
-  
 You can use retention policies to group one or more retention tags and apply them to mailboxes to enforce message retention settings. A mailbox can't have more than one retention policy.
   
 > [!CAUTION]

@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 75388645-cae1-402e-bf02-c4949d3e2c31
-description: "Summary: An overview of switchovers and failovers in Exchange Server."
+description: "Summary: An overview of switchovers and failovers in Exchange Server 2016 or 2019."
 ---
 
 # Switchovers and failovers
 
- **Summary**: An overview of switchovers and failovers in Exchange 2016 and Exchange 2019.
-  
 Switchovers and failovers are the two forms of outages in Microsoft Exchange Server:
   
 - A *switchover* is a scheduled outage of a database or server that's explicitly initiated by a cmdlet or by the managed availability system in Exchange Server. Switchovers are typically done to prepare for performing a maintenance operation. Switchovers involve moving the active mailbox database copy to another server in the database availability group (DAG). If no healthy target is found during a switchover, administrators will receive an error and the mailbox database will remain up, or mounted.
