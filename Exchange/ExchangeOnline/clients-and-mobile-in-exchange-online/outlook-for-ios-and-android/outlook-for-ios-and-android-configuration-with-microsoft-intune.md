@@ -43,7 +43,7 @@ Outlook for iOS and Android offers administrators the ability to restrict email 
 |:-----|:-----|:-----|:-----|
 |IntuneMAMAllowedAccountsOnly  <br/> |This value specifies the whether organization allowed account mode is active.  <br/> **Value type**: Boolean  <br/> **Accepted values**: True, False  <br/> **Required**: Yes  <br/> **Value**: True  <br/> |iOS  <br/> |Managed devices  <br/> |
 |IntuneMAMUPN  <br/> |This value specifies the User Principal Name for the account.  <br/> **Value type**: String  <br/> **Accepted values**: UPN Address  <br/> **Required**: Yes  <br/> **Example**: userupn@companyname.com  <br/> **Intune Token**<sup>*</sup>: {{userprincipalname}}  <br/>  |iOS  <br/> |Managed devices  <br/> |
-|com.microsoft.intune.mam.AllowedAccountUPNs  <br/> |This delimited value specifies the UPNs allowed for organization allowed account mode.  <br/> **Accepted values**: UPN Address  <br/> **Required**: Yes  <br/> **Example**: userupn@companyname.com  <br/> |Android  <br/> |Managed devices  <br/> |
+|com.microsoft.intune.mam.AllowedAccountUPNs  <br/> |This delimited value specifies the UPNs allowed for organization allowed account mode.  <br/> **Accepted values**: UPN Address  <br/> **Required**: Yes  <br/> **Example**: userupn@companyname.com  <br/> **Intune Token**<sup>*</sup>: {{userprincipalname}}  <br/> |Android  <br/> |Managed devices  <br/> |
 
 ## Data protection settings
 Outlook for iOS and Android supports app configuration policies for the following data protection settings when the app is managed by Intune:
