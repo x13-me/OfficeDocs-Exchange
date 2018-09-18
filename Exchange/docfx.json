@@ -23,7 +23,7 @@
           "**/**.yml"
         ],
         "src": "ExchangeServer",
-        "dest": ".",
+        "group": "exchangeserver",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -81,6 +81,12 @@
         ]
       }
     ],
+    "groups": {
+      "exchangeserver": {
+        "dest": ".",
+        "moniker_range": "=exchserver-2016 || =exchserver-2013"
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
