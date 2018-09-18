@@ -84,7 +84,7 @@ A hybrid deployment involves several different services and components:
     
     Learn more at [Hybrid Configuration wizard](hybrid-configuration-wizard.md).
     
-- ** Azure AD authentication system ** The Azure Active Directory (AD) authentication system is a free cloud-based service that acts as the trust broker between your on-premises Exchange 2016 organization and the Exchange Online organization. On-premises organizations configuring a hybrid deployment must have a federation trust with the Azure AD authentication system. The federation trust can either be created manually as part of configuring federated sharing features between an on-premises Exchange organization and other federated Exchange organizations or as part of configuring a hybrid deployment with the Hybrid Configuration wizard. A federation trust with the Azure AD authentication system for your Office 365 tenant is automatically configured when you activate your Office 365 service account. 
+- **Azure AD authentication system** The Azure Active Directory (AD) authentication system is a free cloud-based service that acts as the trust broker between your on-premises Exchange 2016 organization and the Exchange Online organization. On-premises organizations configuring a hybrid deployment must have a federation trust with the Azure AD authentication system. The federation trust can either be created manually as part of configuring federated sharing features between an on-premises Exchange organization and other federated Exchange organizations or as part of configuring a hybrid deployment with the Hybrid Configuration wizard. A federation trust with the Azure AD authentication system for your Office 365 tenant is automatically configured when you activate your Office 365 service account. 
     
     Learn more at: [Azure AD authentication system](https://go.microsoft.com/fwlink/p/?linkId=135986)
     
@@ -224,7 +224,7 @@ The following list provides you with definitions of the core components associat
   
 > An accepted domain added to the on-premises organization for hybrid mail flow and Autodiscover requests for the Office 365 service. This domain is added as a secondary proxy domain to any email address policies which have  _PrimarySmtpAddress_ templates for domains selected in the Hybrid Configuration wizard. By default, this domain is \<domain\>.mail.onmicrosoft.com. 
     
- ** _HybridConfiguration_ Active Directory object **
+ **_HybridConfiguration_ Active Directory object**
   
 > The Active Directory object in the on-premises organization that contains the desired hybrid deployment configuration parameters defined by the selections chosen in the Hybrid Configuration wizard. The Hybrid Configuration Engine uses these parameters when configuring on-premises and Exchange Online settings to enable hybrid features. The contents of the  _HybridConfiguration_ object are reset each time the Hybrid Configuration wizard is run. 
     
