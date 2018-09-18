@@ -9,14 +9,12 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
-description: "Summary: Learn how to create an In-Place eDiscovery search in Exchange Server."
+description: "Summary: Learn how to create an In-Place eDiscovery search in Exchange Server 2016 and 2019."
 ---
 
 # Create an In-Place eDiscovery search in Exchange Server
 
- **Summary**: Learn how to create an In-Place eDiscovery search in Exchange 2016 or Exchange 2019.
-  
-Use an In-Place eDiscovery search to search for content across all mailboxes and public folders in your Exchange Server organization. This includes searching permanently deleted items and original versions of modified items (in the Recoverable Items folder) for users placed on Litigation Hold or In-Place Hold. For more information about these searches, see [In-Place eDiscovery in Exchange Server](ediscovery.md).
+ Use an In-Place eDiscovery search to search for content across all mailboxes and public folders in your Exchange Server organization. This includes searching permanently deleted items and original versions of modified items (in the Recoverable Items folder) for users placed on Litigation Hold or In-Place Hold. For more information about these searches, see [In-Place eDiscovery in Exchange Server](ediscovery.md).
   
 ## Before you begin
 

@@ -14,8 +14,6 @@ description: "Summary: Learn how to use address book policies (ABP) to create se
 
 # Address book policies in Exchange Server
 
- **Summary**: Learn how to use address book policies (ABP) to create separate virtual organizations with a segmented global address list in Exchange 2016 or Exchange 2019.
-
 Address book policies (ABPs) lets administrators segment users into specific groups to provide customized views of the organization's global address list (GAL). The goal of an ABP is to provide a simpler mechanism for GAL segmentation (also known as *GAL segregation*) in on-premises organizations that require multiple GALs.
 
  An ABP contains these elements: 

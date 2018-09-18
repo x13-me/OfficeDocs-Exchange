@@ -14,8 +14,6 @@ description: "Summary: Learn about managed availability and workload management 
 
 # Server health and performance in Exchange Server
 
- **Summary**: Learn about managed availability and workload management in Exchange Server.
-
 Understanding server health and performance is critical to designing and maintaining a high-performance messaging infrastructure. Exchange 2016 and Exchange 2019 continue the features that were introduced in Exchange 2013 to help you manage server health and performance.
 
 ## Managed availability

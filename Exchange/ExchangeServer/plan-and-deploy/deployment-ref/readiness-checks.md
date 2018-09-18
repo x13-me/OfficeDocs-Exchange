@@ -9,7 +9,7 @@ ms.topic: hub-page
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 3b232ad3-01b1-4cdb-88c9-006bdc660f72
-description: "This topic is the home of the Exchange Server 2016 and Exchange Server 2016 readiness checks that you might encounter during the installation of Exchange 2016 or 2019
+description: "This topic is the home of the Exchange Server 2016 and Exchange Server 2016 readiness checks that you might encounter during the installation of Exchange 2016 or 2019"
 ---
 
 # Exchange Server readiness checks

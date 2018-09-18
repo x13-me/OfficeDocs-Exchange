@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 4a8bd779-b52a-40ed-8040-4d76eabeb41e
-description: "Summary: AutoReseed is a feature for quickly restoring database redundancy after a disk failure. If a disk fails, the database copies stored on that disk are automatically reseeded to a preconfigured spare disk on the Exchange server."
+description: "Summary: AutoReseed is a feature for quickly restoring database redundancy after a disk failure. If a disk fails, the database copies stored on that disk are automatically reseeded to a preconfigured spare disk on the Exchange Server 2016 or 2019."
 ---
 
 # Configure AutoReseed for a database availability group
 
- **Summary**: AutoReseed is a feature for quickly restoring database redundancy after a disk failure. If a disk fails, the database copies stored on that disk are automatically reseeded to a preconfigured spare disk on the Exchange 2016 or Exchange 2019 server.
-  
 Use the steps in this topic to configure AutoReseed for a database availability group (DAG) in Exchange Server.
   
 > [!CAUTION]

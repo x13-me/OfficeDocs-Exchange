@@ -14,8 +14,6 @@ description: "An overview of enhancements and additions to high availability and
 
 # Changes to high availability and site resilience over previous versions of Exchange Server
 
- **Summary**: An overview of enhancements and additions to high availability and site resilience capabilities since Exchange 2010.
-
 Exchange Server 2013 and later uses DAGs and mailbox database copies (along with other features such as single item recovery, retention policies, and lagged database copies) to provide high availability, site resilience, and Exchange native data protection. The high availability platform, Exchange Information Store and Extensible Storage Engine (ESE) have all been enhanced since Exchange 2010 to provide availability and less complex management, and to reduce costs. These enhancements include:
 
 - **Reduction in IOPS**: This enables you to leverage larger disks in terms of capacity and IOPS as efficiently as possible.

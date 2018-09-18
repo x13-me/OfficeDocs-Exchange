@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9fcfb9b6-bd24-4218-a163-bc599cd5476a
-description: "Summary: Learn how to configure the Managed Folder Assistant in Exchange Server."
+description: "Summary: Learn how to configure the Managed Folder Assistant in Exchange Server 2016 and 2019."
 ---
 
 # Configure and run the Managed Folder Assistant in Exchange Server
 
- **Summary**: Learn how to configure the Managed Folder Assistant in Exchange 2016 and Exchange 2019.
-  
 The *Managed Folder Assistant* (MFA) is an Exchange Mailbox Assistant that applies and processes the message retention settings that are configured in retention policies.
   
 As in Exchange 2013, the Managed Folder Assistant in Exchange 2016 and Exchange 2019 is a throttle-based assistant that's always running. The MFA doesn't need to be scheduled, and the system resources that are consumed by the MFA can be throttled. You can configure the Managed Folder Assistant to process all mailboxes on a Mailbox server within a certain time period that's known as a *work cycle*. By default, the work cycle for the MFA is one day (all mailboxes on the server are processed by the MFA every day).

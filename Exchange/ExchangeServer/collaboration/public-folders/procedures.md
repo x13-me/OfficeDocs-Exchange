@@ -14,8 +14,6 @@ description: "Summary: Create and manage public folders with one or more of thes
 
 # Public folder procedures
 
- **Summary**: Create and manage public folders with one or more of these articles.
-  
 Use one or more of the procedures listed below to get your public folder infrastructure up and running, and to perform other necessary tasks for managing public folders.
   
 [Set up public folders in a new organization](new-organizations.md)

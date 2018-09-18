@@ -9,13 +9,11 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 00b23fd3-6679-4b06-a3d4-51df3112b9cd
-description: "Summary: Learn about permissions that are required to manage workloads and event logs in Exchange Server."
+description: "Summary: Learn about permissions that are required to manage workloads and event logs in Exchange Server 2016 and 2019."
 ---
 
 # Server health and performance permissions
 
- **Summary**: Learn about permissions that are required to manage workloads and event logs in Exchange Server 2016 or Exchange Server 2019.
-  
 The permissions required to perform tasks to configure various components of Exchange Server depend on the procedure being performed or the cmdlet you want to run. See each of the sections in this topic for more information about their respective features.
   
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:

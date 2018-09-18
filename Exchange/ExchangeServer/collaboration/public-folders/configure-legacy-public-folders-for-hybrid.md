@@ -17,8 +17,6 @@ description: "Summary: Use the steps in this article to synchronize public folde
 
 # Configure legacy on-premises public folders for a hybrid deployment
 
- **Summary**: Use the steps in this article to synchronize public folders between Exchange Online and your on-premises Exchange deployment.
-  
 In a hybrid deployment, your users can be in Exchange Online, Exchange on-premises, or both, and your public folders are either in Exchange Online or Exchange on-premises. Public folders can only reside in one place, so you must decide whether your public folders will be in Exchange Online or on-premises. They can't be in both locations. Public folder mailboxes are synchronized to Exchange Online by the Directory Synchronization service. However, mail-enabled public folders aren't synchronized across premises.
   
 This article describes how to synchronize mail-enabled public folders when your users are in Office 365 and your Exchange 2010 SP3 or later version public folders are on-premises. However, an Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy or Exchange on-premises public folders.
@@ -38,7 +36,7 @@ When you complete this procedure your on-premises and Office 365 users will be a
 
 The following table describes the supported version and location combinations of user mailboxes and public folders. "Hybrid not applicable" is still a supported scenario, but is not considered a hybrid scenario because both the public folders and the users are residing in the same location.
   
-|**Scenario**|**On-Premises Exchange 2010 User Mailbox**|**On-Premises Exchange 2016 User Mailbox**|**Exchange Online User Mailbox**|
+|**Scenario**|**On-Premises Exchange 2010 User Mailbox**|**On-Premises Exchange 2016/2019 User Mailbox**|**Exchange Online User Mailbox**|
 |:-----|:-----|:-----|:-----|
 |On-Premises Exchange 2010 Public Folders  <br/> |Hybrid not applicable  <br/> |Hybrid not applicable  <br/> |Supported  <br/> |
 |On-Premises Exchange 2013, Exchange 2016, or Exchange 2019 Public Folders  <br/> |Hybrid not applicable  <br/> |Hybrid not applicable  <br/> |Supported  <br/> |

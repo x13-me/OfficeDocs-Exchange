@@ -9,13 +9,12 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: ceb99e6f-6dca-446d-abfb-3e6fc6a72704
-description: "Summary: Learn about monitoring your Exchange Server organization to quickly resolve issues for greater availability and reliability."
+description: "Summary: Learn about monitoring your Exchange Server 2016 or 2019 organization to quickly resolve issues for greater availability and reliability."
 ---
 
 # Managed availability
 
- **Summary**: Learn about monitoring your Exchange 2016 or Exchange 2019 organization to quickly resolve issues for greater availability and reliability.
-  
+
 Ensuring that users have a good email experience has always been the primary objective for messaging system administrators. In your Exchange Server organization, all aspects of the system must be actively monitored and any detected issues must be resolved quickly. To achieve this, a feature called *Managed Availability* provides built-in monitoring and recovery actions that preserve the end-user experience.
   
 ## Managed Availability

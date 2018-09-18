@@ -8,12 +8,10 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
-description: "Summary: Learn about address lists and global address lists (GALs) how administrators can use them to organize recipients in Exchange Server."
+description: "Summary: Learn about address lists and global address lists (GALs) how administrators can use them to organize recipients in Exchange Server 2016 and 2019."
 ---
 
 # Address lists in Exchange Server
-
- **Summary**: Learn about address lists and global address lists (GALs) how administrators can use them to organize recipients in Exchange 2016 and Exchange 2019.
 
 An *address list* is a collection of mail-enabled recipient objects from Active Directory. Address lists are based on recipient filters, and are basically unchanged from Exchange 2010. You can filter by recipient type (for example, mailboxes and mail contacts), recipient properties (for example, Company or State or Province), or both. Address lists aren't static; they're updated dynamically. When you create or modify recipients in your organization, they're automatically added to the appropriate address lists. These are the different types of address lists that are available: 
 

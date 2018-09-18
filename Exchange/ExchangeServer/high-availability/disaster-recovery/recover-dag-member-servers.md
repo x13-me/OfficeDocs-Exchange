@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: eccd8f61-9706-4bb7-a62a-ec7c166f8019
-description: "Summary: How to recover an Exchange DAG member after a failure."
+description: "Summary: How to recover an Exchange DAG member after a failure in Exchange Server 2016 and 2019."
 ---
 
 # Recover a database availability group member server
 
- **Summary**: How to recover an Exchange 2016 or Exchange 2019 DAG member after a failure.
-  
 If a Mailbox server that's a member of a database availability group (DAG) is lost or fails, and is unrecoverable and needs replacement, you can perform a server recovery operation. Microsoft Exchange Server Setup includes the switch _/m:RecoverServer_ that can be used to perform the server recovery operation. Running Setup with the _/m:RecoverServer_ switch causes Setup to read the server's configuration information from Active Directory for a server with the same name as the server from which you're running Setup. After the server's configuration information is gathered from Active Directory, the original Exchange files and services are then installed on the server, and the roles and settings that were stored in Active Directory are then applied to the server.
   
 Looking for other management tasks related to DAGs? Check out [Managing database availability groups](http://technet.microsoft.com/library/4abde67b-4995-4a57-894f-ba76aa72341c.aspx).

@@ -14,9 +14,7 @@ description: "Summary: Important considerations to read before you deploy public
 
 # Considerations when deploying public folders
 
- **Summary**: Important considerations to read before you deploy public folders in your organization.
-  
-Although there are many advantages to using Exchange 2016 and Exchange 2019 public folders, there are some things to consider before implementing them in your organization.
+Although there are many advantages to using Exchange public folders, there are some things to consider before implementing them in your organization.
   
 ## Deployment considerations for public folders
 

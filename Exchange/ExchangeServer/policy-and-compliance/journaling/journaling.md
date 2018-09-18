@@ -9,13 +9,11 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6a20f207-4485-44ef-b010-ec760eb5165b
-description: "Summary: Learn about journaling in Exchange Server."
+description: "Summary: Learn about journaling in Exchange Server 2016 and 2019."
 ---
 
 # Journaling in Exchange Server
 
- **Summary**: Learn about journaling in Exchange 2016 and Exchange 2019.
-  
 Journaling in Exchange Server Server can help your organization respond to legal, regulatory, and organizational compliance requirements by recording all or targeted email messages. Journaling in Exchange Server is basically unchanged from Exchange Server 2010.
   
 Exchange provides the following journaling options:

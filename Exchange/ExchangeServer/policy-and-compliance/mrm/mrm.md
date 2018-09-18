@@ -9,13 +9,11 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 0dd92e9c-881e-43c0-9bbf-f41fdc9dfd87
-description: "Summary: Learn about Messaging records management in Exchange Server."
+description: "Summary: Learn about Messaging records management in Exchange Server 2016 and 2019."
 ---
 
 # Messaging records management in Exchange Server
 
- **Summary**: Learn about Messaging records management in Exchange 2016 and Exchange 2019.
-  
 Users send and receive email every day. If left unmanaged, the volume of email generated and received each day can inundate users, impact user productivity, and expose your organization to risks. As a result, email lifecycle management is a critical component for most organizations.
   
 Messaging records management (MRM) is the records management technology in Exchange Server that helps organizations manage email lifecycle and reduce the legal risks associated with email. Deploying MRM can help your organization in several ways:

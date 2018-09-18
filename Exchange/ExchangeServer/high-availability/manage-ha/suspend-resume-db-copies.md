@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 96aa1b82-3e15-4215-843e-3d583af9504b
-description: "Summary: How to suspend or resume a mailbox database copy in Exchange Server."
+description: "Summary: How to suspend or resume a mailbox database copy in Exchange Server 2016 and 2019."
 ---
 
 # Suspend or resume a mailbox database copy
 
- **Summary**: How to suspend or resume a mailbox database copy in Exchange 2016 and Exchange 2019.
-  
 You may need to suspend or resume a database copy for a variety of reasons, such as maintenance on the disk that contains the database copy. Or you may need to suspend an individual database copy from activation for disaster recovery purposes.
   
 Looking for other management tasks related to mailbox database copies? Check out [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx).

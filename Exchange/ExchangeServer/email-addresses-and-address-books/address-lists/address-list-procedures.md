@@ -8,13 +8,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 236e8530-62dd-4c43-8a5d-8465623252e6
-description: "Summary: Learn the tasks that Exchange Server administrators need to know to manage address lists and global address lists (GAL)."
+description: "Summary: Learn the tasks that Exchange Server 2016 and 2019 administrators need to know to manage address lists and global address lists (GAL)."
 ---
 
 # Procedures for address lists in Exchange Server
 
- **Summary**: Learn the tasks that Exchange 2016 and Exchange 2019 administrators need to know to manage address lists and global address lists (GAL).
-  
 Address lists and global address lists (GALs) are collections of mail-enabled recipient objects from Active Directory. You can create or modify GALs, and update using the tools available in the Exchange admin center (EAC) and the Exchange Management Shell. For more information, see [Address lists in Exchange Server](address-lists.md).
   
 These are the address list and GAL procedures that you'll find in this topic:

@@ -14,8 +14,6 @@ description: "Summary: Learn about permissions that are required to manage Unifi
 
 # Unified Messaging permissions
 
- **Summary**: Learn about permissions that are required to manage Unified Messaging services and features in Exchange Server 2016.
-  
 The permissions required to manage Unified Messaging services and features on Exchange 2016 Mailbox servers vary depending on the procedure being performed or the cmdlet you want to run.
 
 > [!NOTE]

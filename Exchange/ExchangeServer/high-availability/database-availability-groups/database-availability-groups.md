@@ -10,13 +10,11 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: cdaf6096-f23e-4e18-8130-40127e4a97be
-description: "Summary: Learn about database availability groups (DAGs) in Exchange Server."
+description: "Summary: Learn about database availability groups (DAGs) in Exchange Server 2016 and 2019."
 ---
 
 # Database availability groups
 
- **Summary**: Learn about database availability groups (DAGs) in Exchange 2016 and Exchange 2019.
-  
 A database availability group (DAG) is the base component of the Mailbox server high availability and site resilience framework built into Microsoft Exchange Server. A DAG is a group of up to 16 Mailbox servers that hosts a set of databases and provides automatic database-level recovery from failures that affect individual servers or databases.
   
 > [!IMPORTANT]

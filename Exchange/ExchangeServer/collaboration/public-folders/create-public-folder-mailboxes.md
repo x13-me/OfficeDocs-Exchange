@@ -14,7 +14,7 @@ description: "Learn how to create a public folder mailbox in in Exchange 2016 or
 
 # Create a public folder mailbox in Exchange Server
 
-Before you can create a public folder in Exchange 2016 or Exchange 2019, you must first create a public folder mailbox. Public folder mailboxes contain the hierarchy information as well as the content for public folders.
+Before you can create a public folder in Exchange server, you must first create a public folder mailbox. Public folder mailboxes contain the hierarchy information as well as the content for public folders.
 
 The first public folder mailbox that you create in the organization is the primary hierarchy mailbox, which contains the only writable copy of the public folder hierarchy. Any additional public folder mailboxes that you create are secondary hierarchy mailboxes, which contain a read-only copy of the public folder hierarchy. You can create multiple public folder mailboxes for load balancing.
   
@@ -27,9 +27,9 @@ For additional management tasks related to public folders in Exchange Server, se
 
 - Estimated time to complete: less than 5 minutes.
     
-- Public folders on Exchange 2010 servers can't exist in the same organization with Exchange 2016 public folders. If you try to create a public folder mailbox when you still have legacy public folders, you'll receive the error **An existing Public Folder deployment has been detected. To migrate existing Public Folder data, create new Public Folder mailbox using -HoldForMigration switch.**
+- Public folders on Exchange 2010 servers can't exist in the same organization with Exchange 2016 or later public folders. If you try to create a public folder mailbox when you still have legacy public folders, you'll receive the error **An existing Public Folder deployment has been detected. To migrate existing Public Folder data, create new Public Folder mailbox using -HoldForMigration switch.**
     
-    Before you can create public folders in Exchange 2016, you need to migrate your Exchange 2010 public folders to Exchange 2016 by following the steps in [Use batch migration to migrate public folders from Exchange 2010 to Exchange 2016](batch-migration-from-previous-versions.md)..
+    Before you can create public folders in Exchange Server 2016 or later, you need to migrate your Exchange 2010 public folders by following the steps in [Use batch migration to migrate public folders from Exchange 2010 to Exchange 2016](batch-migration-from-previous-versions.md)..
 
 - To move your public folder mailboxes from Exchange 2013 to Exchange 2016 or Exchange 2019, see [Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019](migrate-from-exchange-2013.md).
 

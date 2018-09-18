@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 99fecdde-b158-4dfc-9ca7-ff7c0ada7819
-description: "Summary: How to remove a copy of a mailbox database in Exchange Server."
+description: "Summary: How to remove a copy of a mailbox database in Exchange Server 2016 or 2019."
 ---
 
 # Remove a mailbox database copy
 
- **Summary**: How to remove a copy of a mailbox database in Exchange 2016 or Exchange 2019.
-  
 You can use these procedures to remove a copy of a mailbox database, but you can't use them to remove the **last** copy of a mailbox database. For detailed steps about how to remove the last copy of a mailbox database, see [Remove a mailbox database](../../architecture/mailbox-servers/manage-databases.md#BKMK_Remove) or [Remove-MailboxDatabase](http://technet.microsoft.com/library/4d07d736-1dd7-43af-9f54-37d7c648572e.aspx).
   
 Looking for other management tasks related to mailbox database copies? Check out [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx).

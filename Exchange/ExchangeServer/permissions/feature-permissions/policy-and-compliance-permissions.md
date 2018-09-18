@@ -9,13 +9,11 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b
-description: "Summary: Learn about permissions that are required to manage policy and compliance features in Exchange Server."
+description: "Summary: Learn about permissions that are required to manage policy and compliance features in Exchange Server 2016 and 2019."
 ---
 
 # Messaging policy and compliance permissions in Exchange Server
 
- **Summary**: Learn about permissions that are required to manage policy and compliance features in Exchange Server 2016 or Exchange Server 2019.
-  
 The permissions required to configure messaging policy and compliance vary depending on the procedure being performed or the cmdlet you want to run. For more information about messaging policy and compliance, see [Messaging policy and compliance in Exchange Server](../../policy-and-compliance/policy-and-compliance.md).
   
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:

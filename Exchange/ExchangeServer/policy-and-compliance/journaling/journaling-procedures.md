@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
-description: "Summary: Learn how to configure journaling in Exchange Server."
+description: "Summary: Learn how to configure journaling in Exchange Server 2016 or 2019."
 ---
 
 # Journaling procedures in Exchange Server
 
- **Summary**: Learn how to configure journaling in Exchange 2016 and Exchange 2019.
-  
 Journaling in Exchange Server records inbound and outbound email messages. For more information, see [Journaling in Exchange Server](journaling.md).
   
 This topic shows you how to configure standard journaling (journal messages for all mailboxes on a mailbox database) and premium journaling (use journal rules to specify the recipients that are journaled). Some configuration settings are available in the Exchange admin center (EAC), while others are only available in the Exchange Management Shell.

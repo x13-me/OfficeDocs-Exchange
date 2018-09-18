@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
-description: "Summary: Learn about protecting user account data in Exchange Server by using the Recoverable Items folder."
+description: "Summary: Learn about protecting user account data in Exchange Server 2016 and 2019 by using the Recoverable Items folder."
 ---
 
 # Recoverable Items folder in Exchange Server
 
- **Summary**: Learn about protecting user account data in Exchange 2016 and Exchange 2019 by using the Recoverable Items folder.
-  
 To protect from accidental or malicious deletion and to facilitate discovery efforts commonly undertaken before or during litigation or investigations, Exchange Server and Exchange Online use the Recoverable Items folder. The Recoverable Items folder replaces the feature that was known as *the dumpster* in earlier versions of Exchange. The following Exchange features use the Recoverable Items folder: 
   
 - Deleted item retention

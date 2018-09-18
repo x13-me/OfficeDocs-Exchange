@@ -9,12 +9,10 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: dbbef170-e726-4735-abf1-2857db9bb52d
-description: "Summary: Learn how to enable mailbox audit logging in Exchange so that you run reports on non-owner mailbox access."
+description: "Summary: Learn how to enable mailbox audit logging in Exchange 2016 or 2019 so that you run reports on non-owner mailbox access."
 ---
 
 # Run a non-owner mailbox access report
-
- **Summary**: Learn how to enable mailbox audit logging in Exchange so that you run reports on non-owner mailbox access.
 
 The **Non-Owner Mailbox Access Report** in the Exchange admin center (EAC) lists the mailboxes that have been accessed by someone other than the person who owns the mailbox. When a non-owner accesses a mailbox, Exchange logs information about this action. Exchange stores this mailbox audit log as an email message in a hidden folder in the audited mailbox. The report displays entries from this log as search results and includes any mailboxes accessed by a non-owner, who accessed each mailbox and when, the actions performed by non-owners, and whether or not the actions were successful.
 

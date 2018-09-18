@@ -9,13 +9,11 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
-description: "Summary: Learn about In-Place Hold and Litigation Hold in Exchange Server."
+description: "Summary: Learn about In-Place Hold and Litigation Hold in Exchange Server 2016 or 2019."
 ---
 
 # In-Place Hold and Litigation Hold in Exchange Server
 
- **Summary**: Learn about In-Place Hold and Litigation Hold in Exchange 2016 or Exchange 2019.
-  
 When a reasonable expectation of litigation exists, organizations are required to preserve electronically stored information (ESI), including email that's relevant to the case. This expectation often exists before the specifics of the case are known, and preservation is often broad. Organizations may need to preserve all email related to a specific topic or all email for certain individuals. Depending on the organization's electronic discovery (eDiscovery) practices, the following measures can be adopted to preserve email:
   
 - End users may be asked to preserve email by not deleting any messages. However, users can still delete email knowingly or inadvertently.

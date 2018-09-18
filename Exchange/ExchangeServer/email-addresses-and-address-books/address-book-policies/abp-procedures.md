@@ -14,8 +14,6 @@ description: "Summary: Learn how to manage address book policies, how to assign 
 
 # Procedures for address book policies in Exchange Server
 
- **Summary**: Learn how to manage address book policies, how to assign address book policies to users, and how to install and enable the Address Book Policy Routing Agent in Exchange 2016 or Exchange 2019.
-
 Address book policies (ABPs) allow you to segment users into specific groups to give them customized global address lists (GALs) in Outlook and Outlook on the web (formerly known as Outlook Web App). For more information about ABPs, see [Address book policies in Exchange Server](address-book-policies.md).
 
  **Note**: Implementing an ABP is a multi-step process that requires planning. For more information, see [Scenario: Deploying address book policies in Exchange Server](abp-scenarios.md).

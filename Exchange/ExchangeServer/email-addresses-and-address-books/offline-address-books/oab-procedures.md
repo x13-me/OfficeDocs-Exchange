@@ -8,13 +8,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18
-description: "Summary: Learn the tasks that administrators need to know to manage offline address books in Exchange Server."
+description: "Summary: Learn the tasks that administrators need to know to manage offline address books in Exchange Server 2016 and 2019."
 ---
 
 # Procedures for offline address books in Exchange Server
 
- **Summary**: Learn the tasks that administrators need to know to manage offline address books in Exchange 2016 and Exchange 2019.
-  
 An offline address book (OAB) in Exchange Server allows Outlook users in cached Exchange mode to access address list and global address list information while they're disconnected from the server. For more information, see [Offline address books in Exchange Server](offline-address-books.md).
   
 Here's a list of OAB procedures that are covered in this topic:

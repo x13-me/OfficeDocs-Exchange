@@ -15,8 +15,6 @@ description: "Summary: Why you should or shouldn't migrate your Exchange public 
 
 # Migrate your public folders to Office 365 Groups
 
- **Summary**: Why you should or shouldn't migrate your Exchange 2016 or Exchange 2019 public folders to Office 365 Groups.
-  
 This article provides a comparison of public folders and Office 365 Groups, and how one or the other might be the best solution for your organization. Public folders have been around as long as Exchange, whereas Groups were introduced more recently. If you want to migrate some or all of your public folders to Groups, this article describes how the process works, and provides links to the articles that walk you through the process, step by step.
   
 ## What are public folders?

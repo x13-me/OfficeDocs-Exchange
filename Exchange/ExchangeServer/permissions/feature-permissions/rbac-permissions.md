@@ -9,13 +9,11 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: cb9591c4-fbb3-4199-8007-6bbfdfd5a2e9
-description: "Summary: Learn about permissions that are required to manage role management in Exchange Server."
+description: "Summary: Learn about permissions that are required to manage role management in Exchange Server 2016 and 2019."
 ---
 
 # Role management permissions
 
- **Summary**: Learn about permissions that are required to manage role management in Exchange Server 2016 or Exchange Server 2019.
-  
 The permissions required to perform tasks to configure management roles vary depending on the procedure being performed or the cmdlet you want to run. For more information about management roles, see [Understanding Management Roles](http://technet.microsoft.com/library/887b0a64-84b1-4b8c-9547-e456ea6f5dbd.aspx).
   
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:

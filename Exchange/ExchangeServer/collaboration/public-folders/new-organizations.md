@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 7b419906-8977-47f0-8687-a87911b5ebec
-description: "Summary: Learn how to get public folders configured and running in Exchange Server for a new organization or in an organization that has never previously had public folders."
+description: "Summary: Learn how to get public folders configured and running in Exchange Server 2016 or 2019 for a new organization or in an organization that has never previously had public folders."
 ---
 
 # Set up public folders in a new organization
 
- **Summary**: Learn how to get public folders configured and running in Exchange 2016 or Exchange 2019 for a new organization or in an organization that has never previously had public folders.
-  
 Public folders in Exchange are based on a mailbox architecture that allows public folders to benefit from things such as the resiliency of a Database Availability Group (DAG) and other mailbox features.
   
 For limits in on-premises Exchange Server, see [Limits for public folders](limits.md).

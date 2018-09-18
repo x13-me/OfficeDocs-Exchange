@@ -13,8 +13,6 @@ description: "Summary: Learn how to enable, disable, and re-enable archive mailb
 ---
 
 # Manage In-Place Archives in Exchange Server
-
- **Summary**: Learn how to enable, disable, and re-enable archive mailboxes in Exchange 2016 and Exchange 2019, and how to verify the archive mailbox settings for a user.
   
 In-Place Archiving helps you regain control of your organization's messaging data by eliminating the need for personal store (.pst) files and allowing you to meet your organization's message retention and eDiscovery requirements. With archiving enabled, users can store messages in an archive mailbox, which is accessible by using Microsoft Outlook and Outlook on the web.
   

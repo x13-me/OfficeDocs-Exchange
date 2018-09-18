@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: e45e33c9-e53b-427c-ada5-70901bc399b8
-description: "Summary: Learn about using mail flow rules (transport rules) to add disclaimers to email messages in Exchange Server."
+description: "Summary: Learn about using mail flow rules (transport rules) to add disclaimers to email messages in Exchange Server 2016 and 2019."
 ---
 
 # Organization-wide disclaimers, signatures, footers, or headers in Exchange Server
 
- **Summary**: Learn about using mail flow rules (transport rules) to add disclaimers to email messages in Exchange 2016 or Exchange 2019.
-  
 You can add an email disclaimer, legal disclaimer, disclosure statement, signature, or other information to the top or bottom of email messages that enter or leave your organization. You might be required to do this for legal, business, or regulatory requirements, to identify potentially unsafe email messages, or for other reasons that are unique to your organization.
   
 To create a disclaimer, you create a mail flow rule (also known as transport rule) with an action that adds the specified text to email messages. You can configure the rule to apply the disclaimer to all messages (no conditions), or you can define conditions that determine when the disclaimer is added (for example, when the sender is a member of a specific group, when the message includes specific words or text patterns, or outgoing messages only). You can also define exceptions that prevent the disclaimer from being added to messages (for example, messages from specific senders, messages sent to specific recipients, or messages that already contain the disclaimer). To apply multiple disclaimers to the same message, you need to use multiple rules. For more information about mail flow rules, see [Mail flow rules in Exchange Server](mail-flow-rules.md).

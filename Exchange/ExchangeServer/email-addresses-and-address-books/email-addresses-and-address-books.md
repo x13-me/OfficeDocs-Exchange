@@ -9,12 +9,10 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b97d0f68-691a-42af-9a6c-4dcc37b28a42
-description: "Summary: Learn about the different methods that Exchange Server uses to organize and configure email addresses."
+description: "Summary: Learn about the different methods that Exchange Server 2016 and 2019 uses to organize and configure email addresses."
 ---
 
 # Email addresses and address books in Exchange Server
-
- **Summary**: Learn about the different methods that Exchange 2016 and Exchange 2019 use to organize and configure email addresses.
 
 Exchange uses address books to organize and store email address information for recipients in the organization. The topics that will help you learn about and configure email addresses and address books in Exchange Server are described in the following table.
 

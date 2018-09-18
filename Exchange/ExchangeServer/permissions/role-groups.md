@@ -9,12 +9,10 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c
-description: "Summary: Learn how to add, remove, copy, and view management role groups in Exchange Server."
+description: "Summary: Learn how to add, remove, copy, and view management role groups in Exchange Server 2016 and 2019."
 ---
 
 # Manage role groups
-
- **Summary**: Learn how to add, remove, copy, and view management role groups in Exchange Server 2016 or Exchange Server 2019.
 
 A management role group is a universal security group (USG) used in the Role Based Access Control (RBAC) permissions model in Exchange Server. A management role group simplifies the assignment of management roles to a group of users. All members of a role group are assigned the same set of roles. For more information about role groups in Exchange Server, see [Understanding Management Role Groups](http://technet.microsoft.com/library/2a92e06c-523e-4fd4-a937-152562b7741d.aspx).
 

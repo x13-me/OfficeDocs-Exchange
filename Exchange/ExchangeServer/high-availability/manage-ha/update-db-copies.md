@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bead3cc5-7d50-446f-95b7-e432bcb7968e
-description: "Summary: How to update, or seed , a mailbox database copy in Exchange Server."
+description: "Summary: How to update, or seed , a mailbox database copy in Exchange Server 2016 or 2019."
 ---
 
 # Update a mailbox database copy
 
- **Summary**: How to update, or *seed*, a mailbox database copy in Exchange 2016 or Exchange 2019.
-  
 Updating, also known as *seeding*, is the process in which a copy of a mailbox database is added to another Mailbox server in a database availability group (DAG). The newly added copy becomes the baseline database for the passive copy into which log files copied from the active copy are replayed. Seeding is required under the following conditions: 
   
 - When a new passive copy of a database is created. Seeding can be postponed for a new mailbox database copy, but eventually each passive database copy must be seeded to function as a redundant database copy.

@@ -14,8 +14,6 @@ description: "Summary: Learn how to create, configure, and manage database avail
 
 # Manage database availability groups
 
- **Summary**: Learn how to create, configure, and manage a database availability group (DAG) in Exchange 2016 and Exchange 2019.
-  
 A database availability group (DAG) is a set of up to 16 Exchange Mailbox servers that provides automatic, database-level recovery from a database, server, or network failure. DAGs use continuous replication and a subset of Windows failover clustering technologies to provide high availability and site resilience. Mailbox servers in a DAG monitor each other for failures. When a Mailbox server is added to a DAG, that server works with the other servers in the DAG to provide automatic, database-level recovery from database failures.
   
 When you create a DAG, it's initially empty. When you add the first server to a DAG, a failover cluster is automatically created for the DAG. In addition, the infrastructure that monitors the servers for network or server failures is initiated. The failover cluster heartbeat mechanism and cluster database are then used to track and manage information about the DAG that can change quickly, such as database mount status, replication status, and last mounted location.

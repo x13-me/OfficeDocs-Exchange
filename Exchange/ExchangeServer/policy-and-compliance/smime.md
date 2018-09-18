@@ -14,8 +14,6 @@ description: "Summary: Learn about how S/MIME in Exchange Server adds S/MIME-bas
 
 # S/MIME for message signing and encryption
 
- **Summary**: Learn about how S/MIME in Exchange 2016 and Exchange 2019 add S/MIME-based security and lets you encrypt and digitally sign emails.
-
 As an administrator in Exchange Server, you can enable Secure/Multipurpose Internet Mail Extensions (S/MIME) for your organization. S/MIME is a widely accepted method (more precisely, a protocol) for sending digitally signed and encrypted messages. S/MIME allows you to encrypt emails and digitally sign them. When you use S/MIME, it helps the people who receive the message by:
 
 - Ensuring that the message in their inbox is the exact message that started with the sender.

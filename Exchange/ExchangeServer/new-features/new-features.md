@@ -14,8 +14,6 @@ description: "Summary: Learn about the new features that are available in Exchan
 
 # What's new in Exchange 2016
 
- **Summary**: Learn about the new features that are available in Exchange 2016 when you upgrade from previous versions of Exchange.
-
 Microsoft Exchange Server 2016 brings a new set of technologies, features, and services to Exchange Server, the messaging platform that provides email, scheduling, and tools for custom collaboration and messaging service applications. Its goal is to support people and organizations as their work habits evolve from a communication focus to a collaboration focus. At the same time, Exchange 2016 helps lower the total cost of ownership whether you deploy Exchange 2016 on-premises or provision your mailboxes in the cloud.
 
 Choose the section below that matches the version of Exchange that you're upgrading from. If you want to know about features that have been removed or replaced in Exchange 2016, see [What's discontinued in Exchange 2016](discontinued-features.md).

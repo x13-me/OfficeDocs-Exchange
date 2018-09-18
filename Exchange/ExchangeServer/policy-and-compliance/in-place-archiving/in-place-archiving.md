@@ -9,13 +9,11 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b5e4c0e9-0558-4b90-bc12-f67adbfb59ac
-description: "Summary: Administrators can learn about In-Place Archiving and archive mailboxes in Exchange Server."
+description: "Summary: Administrators can learn about In-Place Archiving and archive mailboxes in Exchange Server 2016 or 2019."
 ---
 
-# In-Place Archiving in Exchange 2016
+# In-Place Archiving in Exchange Server
 
- **Summary**: Administrators can learn about In-Place Archiving and archive mailboxes in Exchange 2016 and Exchange 2019.
-  
  *In-Place Archiving* in Exchange Server helps you regain control of your organization's messaging data by eliminating the need for personal store (.pst) files and allowing users to store messages in an *archive mailbox*. The archive mailbox is an additional mailbox that's enabled for a user's primary mailbox. The archive mailbox is accessible in Outlook and Outlook on the web. Users can view an archive mailbox and move or copy messages between their primary mailbox and their archive mailbox.
   
 You can provision a user's archive mailbox on the same mailbox database as the user's primary mailbox, a different mailbox database on the same Mailbox server, or on a mailbox database on a different Mailbox server in the same Active Directory site. In Exchange hybrid deployments, you can also provision a cloud-based archive mailbox for primary mailboxes located in your on-premises organization.

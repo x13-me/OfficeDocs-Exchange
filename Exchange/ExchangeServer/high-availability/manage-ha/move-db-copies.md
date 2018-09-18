@@ -14,8 +14,6 @@ description: "Summary: When moving a mailbox database that has been copied to at
 
 # Move the mailbox database path for a mailbox database copy
 
- **Summary**: When moving a mailbox database that has been copied to at least one other location, follow the procedures in this topic to move the path for the copy.
-  
 If the mailbox database being moved is replicated to one or more mailbox database copies, you must follow the procedure in this topic to move the mailbox database path. All copies of a mailbox database must be located in the same path on each server that hosts a copy. For example, if database DB1 is located at C:\mountpoints\DB1 on server EX1, copies of DB1 on servers EX2, EX3, and so on, must also be located at C:\mountpoints\DB1.
   
 > [!NOTE]

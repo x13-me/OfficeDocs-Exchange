@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: ce748bca-3e24-493b-b9e6-153157bffd6a
-description: "Summary: What you should know about mailbox database copies in Exchange Server, and your options when creating them."
+description: "Summary: What you should know about mailbox database copies in Exchange Server 2016 and 2019, and your options when creating them."
 ---
 
 # Mailbox database copies
 
- **Summary**: What you should know about mailbox database copies in Exchange 2016 and Exchange 2019, and your options when creating them.
-  
 Microsoft Exchange Server leverages the concept of database mobility, which is Exchange-managed database-level failovers. Database mobility disconnects databases from servers, adds support for up to 16 copies of a single database, and provides a native experience for adding database copies to a database.
   
 ## Key characteristics

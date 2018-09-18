@@ -9,12 +9,10 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 4c4e00a4-1f57-4fdb-b9b2-2779abf381a9
-description: "Summary: How to deploy Exchange Server with high availability and site resilience."
+description: "Summary: How to deploy Exchange Server 2016 or 2019 with high availability and site resilience."
 ---
 
 # Deploying high availability and site resilience
-
- **Summary**: How to deploy Exchange Server 2016 or Exhange 2019 with high availability and site resilience.
 
 Microsoft Exchange Server uses the concept known as *incremental deployment* for both high availability and site resilience. You simply install two or more Exchange Mailbox servers as stand-alone servers, and then incrementally configure them and mailbox databases for high availability and site resilience, as needed.
 

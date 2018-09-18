@@ -9,13 +9,11 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9d5d8d37-a053-4830-9cb1-6e1ede25e963
-description: "Summary: Learn how to create and remove an In-Place Hold in Exchange Server."
+description: "Summary: Learn how to create and remove an In-Place Hold in Exchange Server 2016 or 2019."
 ---
 
 # Create or remove an In-Place Hold
 
- **Summary**: Learn how to create and remove an In-Place Hold in Exchange 2016 and Exchange 2019.
-  
 An In-Place Hold preserves all mailbox and public folder content, including deleted items and original versions of modified items. All such items can be returned in an In-Place eDiscovery search. When you place an In-Place Hold on a user's mailbox, the contents in the corresponding archive mailbox (if it's enabled) are also placed on hold and returned in a eDiscovery search.
   
 When you create an In-Place Hold, you can place all items in the source mailbox or public folder on hold or you can hold only the items that meet the search criteria specified for the hold. Similarly, you can hold items indefinitely or for a specific amount of time. For more information about In-Place Holds, see [In-Place Hold and Litigation Hold in Exchange Server](holds.md).

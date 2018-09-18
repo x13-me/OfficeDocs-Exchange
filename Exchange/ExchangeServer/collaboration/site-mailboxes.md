@@ -14,13 +14,11 @@ description: "Summary: Learn about site mailboxes and how to use them."
 
 # Site mailboxes
 
- **Summary**: Learn about site mailboxes and how to use them.
-
 Email and documents are traditionally kept in two unique and separate data repositories. Most organizations collaborate using both mediums. The challenge is that both email and documents are accessed using different clients. This usually results in a reduction in user productivity and a degraded user experience.
 
 The *site mailbox*, first introduced in Exchange 2013, is a solution for this problem. Site mailboxes improve collaboration and user productivity by allowing access to both Microsoft SharePoint 2013 documents and Exchange email using the same client interface. A site mailbox is functionally comprised of SharePoint 2013 site membership (owners and members), shared storage through an Exchange 2016 or Exchange 2019 mailbox for email messages and a SharePoint 2013 site for documents, and a management interface that addresses provisioning and lifecycle needs.
 
-Site mailboxes require Exchange 2016 or Exchange 2019 and SharePoint Server 2013 integration and configuration. For more information about how to configure your Exchange Server organization to work with your SharePoint Server 2013 organization, see the following topics:
+Site mailboxes require Exchange 2016 or later and SharePoint Server 2013 integration and configuration. For more information about how to configure your Exchange Server organization to work with your SharePoint Server 2013 organization, see the following topics:
 
 - [Configure site mailboxes in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=258264).
 
@@ -51,7 +49,7 @@ For more information about how to configure site mailbox provisioning policies, 
 ## Lifecycle policy and retention
 <a name="policies"> </a>
 
-The lifecycle of a site mailbox is managed through a SharePoint. It is through SharePoint that you should perform all site mailbox tasks such as creating and removing site mailboxes. In addition, you can create a SharePoint Lifecycle policy to manage the lifecycle of a site mailbox. For example, you can create a lifecycle policy in SharePoint that automatically closes all site mailboxes after 6 months. If the user still requires the use of the site mailbox, the user can reactivate the site mailbox through SharePoint. We recommend that you use the Lifecycle application is in the farm. Manually deleting active site mailboxes from Exchange will result in orphaned site mailboxes. .
+The lifecycle of a site mailbox is managed through SharePoint. It is through SharePoint that you should perform all site mailbox tasks such as creating and removing site mailboxes. In addition, you can create a SharePoint Lifecycle policy to manage the lifecycle of a site mailbox. For example, you can create a lifecycle policy in SharePoint that automatically closes all site mailboxes after 6 months. If the user still requires the use of the site mailbox, the user can reactivate the site mailbox through SharePoint. We recommend that you use the Lifecycle application is in the farm. Manually deleting active site mailboxes from Exchange will result in orphaned site mailboxes. .
 
 When the lifecycle application in SharePoint closes a site mailbox, the site mailbox is retained for the period stated in the lifecycle policy in the closed state. The mailbox can then be reactivated by an end-user or by an administrator from SharePoint. After the retention period, the Exchange site mailbox that is housed in the mailbox database will have its name prepended with **MDEL:** to indicate that it has been marked for deletion. You will need to manually remove these site mailboxes from the mailbox database in order to free storage space and the alias. If you don't have the SharePoint Lifecycle Policy enabled, you'll lose the ability to determine which site mailboxes are marked for deletion. Until the site mailbox has been removed by an administrator, the content of the mailbox is still recoverable.
 
