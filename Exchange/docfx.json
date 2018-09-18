@@ -23,7 +23,6 @@
           "**/**.yml"
         ],
         "src": "ExchangeServer",
-        "dest": ".",
         "group": "exchangeserver",
         "exclude": [
           "**/obj/**",
@@ -84,7 +83,7 @@
     ],
     "groups": {
       "exchangeserver": {
-        "dest": ".",
+        "dest": "exchserver-dest",
         "moniker_range": "=exchserver-2016 || =exchserver-2013"
       }
     },
