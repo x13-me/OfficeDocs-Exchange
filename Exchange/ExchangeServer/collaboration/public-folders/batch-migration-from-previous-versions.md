@@ -9,11 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: da808e27-d2b7-4fbd-915c-a600751f526c
-<<<<<<< HEAD
 description: "Summary: How to migrate Exchange 2010 public folders to Exchange 2016 or 2019."
----
-=======
->>>>>>> upstream/Ex2019
 
 # Use batch migration to migrate public folders to from previous versions to Exchange 2016 or later
 
