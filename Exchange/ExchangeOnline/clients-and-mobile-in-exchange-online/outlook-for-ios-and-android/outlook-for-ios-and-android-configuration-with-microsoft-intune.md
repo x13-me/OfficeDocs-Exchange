@@ -41,7 +41,7 @@ Outlook for iOS and Android offers administrators the ability to restrict email 
 
 |**Key**|**Value**|**Platform**|**Device Enrollment Type**|
 |:-----|:-----|:-----|:-----|
-|IntuneMAMAllowedAccountsOnly  <br/> |This value specifies the whether organization allowed account mode is active.  <br/> **Value type**: Boolean  <br/> **Accepted values**: True, False  <br/> **Required**: Yes  <br/> **Value**: True  <br/> |iOS  <br/> |Managed devices  <br/> |
+|IntuneMAMAllowedAccountsOnly  <br/> |This value specifies the whether organization allowed account mode is active.  <br/> **Value type**: String  <br/> **Accepted values**: Enabled, Disabled  <br/> **Required**: Yes  <br/> **Value**: Enabled  <br/> |iOS  <br/> |Managed devices  <br/> |
 |IntuneMAMUPN  <br/> |This value specifies the User Principal Name for the account.  <br/> **Value type**: String  <br/> **Accepted values**: UPN Address  <br/> **Required**: Yes  <br/> **Example**: userupn@companyname.com  <br/> **Intune Token**<sup>*</sup>: {{userprincipalname}}  <br/>  |iOS  <br/> |Managed devices  <br/> |
 |com.microsoft.intune.mam.AllowedAccountUPNs  <br/> |This delimited value specifies the UPNs allowed for organization allowed account mode.  <br/> **Accepted values**: UPN Address  <br/> **Required**: Yes  <br/> **Example**: userupn@companyname.com  <br/> **Intune Token**<sup>*</sup>: {{userprincipalname}}  <br/> |Android  <br/> |Managed devices  <br/> |
 
@@ -95,6 +95,9 @@ If you are using Microsoft Intune as your mobile device management provider, the
 
 > [!NOTE]
 > Intune managed apps will check-in with an interval of 30 minutes for Intune App Configuration Policy status, when deployed in conjunction with an Intune App Protection Policy. If an Intune App Protection Policy isn't assigned to the user, then the Intune App Configuration Policy check-in interval is set to 720 minutes.
+
+> [!IMPORTANT]
+> When deploying app configuration policies to managed devices, issues can occur when multiple policies have different values for the same configuration key and are targeted for the same app and user. This is due to the lack of a conflict resolution mechanism for resolving the differing values. You can prevent this by ensuring only a single app configuration policy for managed devices is defined and targeted for the same app and user. 
 
 ### Create an app configuration policy for Outlook for iOS and Android
   
