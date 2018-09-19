@@ -11,6 +11,7 @@ localization_priority: Critical
 ms.collection: Strat_EX_Admin
 ms.assetid: 
 description: "Summary: Learn about what you need to have in your environment before installing Exchange Server 2019."
+monikerRange: "=exchserver-2019"
 ---
 
 # Exchange 2019 system requirements

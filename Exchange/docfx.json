@@ -84,7 +84,7 @@
     "groups": {
       "exchangeserver": {
         "dest": "exchserver-dest",
-        "moniker_range": "=exchserver-2016 || =exchserver-2013"
+        "moniker_range": "=exchserver-2016 || =exchserver-2019"
       }
     },
     "overwrite": [],

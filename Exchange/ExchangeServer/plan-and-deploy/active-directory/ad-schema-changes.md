@@ -11,6 +11,7 @@ localization_priority: Critical
 ms.collection: Strat_EX_Admin
 ms.assetid: 7e879e4e-1124-4a41-94d2-c64500beb24e
 description: "Summary: Learn about the new and modified schema classes and attributes that are added to Active Directory by Exchange 2016."
+monikerRange: "=exchserver-2016"
 ---
 
 # Active Directory schema changes in Exchange 2016

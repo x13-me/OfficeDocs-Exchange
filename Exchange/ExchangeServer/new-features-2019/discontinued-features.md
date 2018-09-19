@@ -10,6 +10,7 @@ ms.prod: exchange-server-it-pro
 localization_priority: Priority
 ms.assetid: 
 description: "This topic discusses the components, features, or functionality that have been removed, discontinued, or replaced in Exchange 2019."
+monikerRange: "=exchserver-2019"
 ---
 
 # What's discontinued in Exchange 2019

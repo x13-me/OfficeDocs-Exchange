@@ -10,6 +10,7 @@ localization_priority: Critical
 ms.collection: Strat_EX_Admin
 ms.assetid: 1e80857c-b870-4a6d-a0f4-ff7b3a7be037
 description: "Summary: Learn about what you need to have in your environment before installing Exchange 2016."
+monikerRange: "=exchserver-2016"
 ---
 
 # Exchange 2016 system requirements

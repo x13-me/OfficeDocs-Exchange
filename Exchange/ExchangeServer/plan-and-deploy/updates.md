@@ -1,5 +1,5 @@
 ---
-title: "Updates for Exchange 2016"
+title: "Updates for Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -9,16 +9,38 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9c1d8694-bd33-43af-a7ab-4caaada34745
-description: "Summary: Learn about the Cumulative Update strategy and delivery schedule in Exchange 2016."
+description: "Summary: Learn about the Cumulative Update strategy and delivery schedule in Exchange Server."
 ---
 
-# Updates for Exchange 2016
+# Updates for Exchange Server
+
+Exchange follows a quarterly delivery model to release Cumulative Updates (CUs) that address customer-reported issues and to possibly add new functionality and/or features. Critical product updates (packages that address a Microsoft-released security bulletin or contain a change in time zone definitions) are released as needed on a monthly basis for the most recently released CU and the preceeding CU.
+
+Because each CU is a full installation of Exchange that includes updates and changes from all previous CU's, you don't need to install any previously released CU's when installing a new Exchange server using the latest released CU.
+
+The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2019 CUs.
 
 Exchange 2016 follows a quarterly delivery model to release Cumulative Updates (CUs) that address customer-reported issues and to possibly add new functionality and/or features. Critical product updates (packages that address a Microsoft-released security bulletin or contain a change in time zone definitions) are released as needed on a monthly basis for the most recently released CU and the immediately previous CU.
 
+::: moniker range="exchserver-2016"
+
 To get the latest version of Exchange 2016, download and install [Cumulative Update 10 for Exchange Server 2016](https://go.microsoft.com/fwlink/p/?linkid=2002912). Because each CU is a full installation of Exchange that includes updates and changes from all previous CU's, you don't need to install any previous CU's or Exchange 2016 RTM first.
 
-The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2016 CUs.
+::: moniker-end
+
+The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange CUs.
+
+::: moniker range="exchserver-2019"
+
+**Version**|**Blog post**|
+|:-----|:-----|
+|Exchange 2019 RTM|
+
+- For information about the new features you'll get when you upgrade to Exchange 2019 from previous versions of Exchange, see [What's new in Exchange 2019](new-features-2019.md).
+
+::: moniker-end
+
+::: moniker range="exchserver-2016"
 
 |**Version**|**Blog post**|
 |:-----|:-----|
@@ -33,9 +55,10 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 |Exchange 2016 CU2|[Released: June 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?LinkId=808655)|
 |Exchange 2016 CU1|[Released: March 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?LinkId=747752)|
 |Exchange 2016 RTM|[Exchange Server 2016: Forged in the cloud. Now available on-premises](https://go.microsoft.com/fwlink/p/?LinkId=747751)|
- 
+
+- For information about the new features you'll get when you upgrade to Exchange 2016 from previous versions of Exchange, see [What's new in Exchange 2016](new-features.md).
+
+::: moniker-end
+
 - To upgrade to the latest CU after you've downloaded it, see [Upgrade Exchange to the latest Cumulative Update](../plan-and-deploy/install-cumulative-updates.md).
-
-- For information about the new features you'll get when you upgrade to Exchange 2016 from previous versions of Exchange, see [What's new in Exchange 2019](new-features.md).
-
 - For downloads and updates for other versions of Exchange, see [Exchange Server Updates: build numbers and release dates](https://go.microsoft.com/fwlink/p/?LinkId=512549).

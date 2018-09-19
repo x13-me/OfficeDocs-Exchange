@@ -10,6 +10,7 @@ ms.prod: exchange-server-it-pro
 localization_priority: Critical
 ms.assetid: 97501135-2149-4590-8373-98e638ac8eb1
 description: "Summary: Learn about the new features that are available in Exchange 2019 when you upgrade from previous versions of Exchange."
+monikerRange: "=exchserver-2019"
 ---
 
 # What's new in Exchange 2019
