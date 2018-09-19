@@ -10,6 +10,7 @@ ms.prod: exchange-server-it-pro
 localization_priority: Critical
 ms.assetid: 1879fd5e-3d63-4264-9cc2-9c050c6ab3c5
 description: "Summary: Important information that you need to know to successfully deploy Exchange Server 2016."
+monikerRange: "=exchserver-2016"
 ---
 
 # Release notes for Exchange 2016

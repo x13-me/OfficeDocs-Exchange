@@ -10,6 +10,7 @@ ms.prod: exchange-server-it-pro
 localization_priority: Critical
 ms.assetid: 
 description: "Summary: Important information that you need to know to successfully deploy Exchange Server 2019."
+monikerRange: "=exchserver-2019"
 ---
 
 # Release notes for Exchange 2019
