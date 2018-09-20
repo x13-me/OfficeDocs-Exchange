@@ -15,9 +15,7 @@ description: "Summary: Guidance for planning and deploying Exchange 2016 or Exch
 
 # Planning and deployment
 
- **Summary**: Guidance for planning and deploying Exchange 2016 or Exchange 2019.
-
-This topi contains links to topics and information about planning for and then deploying Exchange Server 2016 or Exchange Server 2019.
+This topic contains links to topics and information about planning for and then deploying Exchange Server 2016 or Exchange Server 2019.
 
 > [!IMPORTANT]
 > Make sure you read the [Release notes for Exchange 2016](../release-notes.md) or [Release notes for Exchange 2019](../release-notes-2019.md) topics before you begin your deployment. The release notes contain important information on issues you might encounter during and after your deployment.
