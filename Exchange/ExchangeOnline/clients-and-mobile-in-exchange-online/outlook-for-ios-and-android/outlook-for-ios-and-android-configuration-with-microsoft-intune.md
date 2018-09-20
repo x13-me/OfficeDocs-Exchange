@@ -48,6 +48,7 @@ Outlook for iOS and Android offers administrators the ability to restrict email 
 ## Data protection settings
 Outlook for iOS and Android supports app configuration policies for the following data protection settings when the app is managed by Intune:
 - Managing the use of wearable technology
+- Managing mail and calendar reminder notifications on iOS
 - Managing the contact fields synced to the native contacts app
 
 These settings can be deployed to the app regardless of device enrollment status.
