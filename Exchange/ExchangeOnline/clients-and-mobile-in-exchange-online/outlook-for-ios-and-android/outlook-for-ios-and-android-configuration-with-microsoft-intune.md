@@ -60,6 +60,19 @@ By default, Outlook for iOS and Android supports wearable technology, allowing t
 |:-----|:-----|:-----|
 |com.microsoft.intune.mam.areWearablesAllowed  <br/> |This value specifies if Outlook data can be synchronized to a wearable device. Setting the value to False disables wearable synchronization.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: False  <br/> |Managed apps  <br/> |
    
+### Configure Notifications for Outlook for iOS
+
+The Apple notification architecture ensures notifications are mirrored on iOS devices and WatchOS. Which device shows the notification depends on the device state – if the Apple Watch is unlocked and on a wrist, while the iOS device is locked, then WatchOS will alert the user with the notification. Apple does not provide a mechanism where you can administratively control and prevent notifications on WatchOS while still allowing them to be delivered on iOS devices. 
+
+The following configuration settings will disable notifications completely on iOS and WatchOS. The disadvantage is that the end user will never see new mail notifications or calendar reminders on iOS devices. The user will have to launch the Outlook for iOS in order to discover new mail or see calendar appointments.
+ 
+|**Key**|**Value**|**Device Enrollment Type**|
+|:-----|:-----|:-----|
+|com.microsoft.outlook.Mail.NotificationsEnabled  <br/> |This value specifies if Outlook will allow mail notifications. Setting the value to False disables mail notifications.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: False  <br/> |Managed apps  <br/> |
+|com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed <br/> |This value specifies if the user can adjust the mail notification setting within the app. Setting the value to False prevents the user from adjusting the mail notification setting.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: False  <br/> |Managed apps  <br/> |
+|com.microsoft.outlook.Calendar.NotificationsEnabled <br/> |This value specifies if Outlook will allow calendar reminder notifications. Setting the value to False disables calendar reminder notifications.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: False  <br/> |Managed apps  <br/> |
+|com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed <br/> |This value specifies if the user can adjust the calendar reminder notification setting within the app. Setting the value to False prevents the user from adjusting the calendar reminder notification setting.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: False  <br/> |Managed apps  <br/> |
+
 ### Configure Contact Field Sync to native Contacts for Outlook for iOS and Android
 <a name="contacts"> </a>
 
