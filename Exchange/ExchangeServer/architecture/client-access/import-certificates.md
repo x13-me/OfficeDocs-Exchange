@@ -10,7 +10,7 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 43fbe354-ccfc-45b0-9fbc-4b23c6c5ccf4
-description: "Summary: Learn how to import (install) a certificate on Exchange Server 2016 or 2019."
+description: "Summary: Learn how to import (install) a certificate on Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Import or install a certificate on an Exchange server

@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d64c18e7-16af-4bd8-a5c5-01206984d4d1
-description: "Summary: Step-by-step guidance for restoring a recovery database in Exchange Server 2016 or 2019."
+description: "Summary: Step-by-step guidance for restoring a recovery database in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Restore data using a recovery database

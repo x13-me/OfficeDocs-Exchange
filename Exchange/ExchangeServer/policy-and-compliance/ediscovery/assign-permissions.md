@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
-description: "Summary: Learn how to give users the permissions they need to use In-Place eDiscovery in Exchange Server 2016 and 2019."
+description: "Summary: Learn how to give users the permissions they need to use In-Place eDiscovery in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Assign eDiscovery permissions in Exchange Server

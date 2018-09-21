@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 87e259c9-c884-4d53-bd78-d13f2300d73e
-description: "Summary: Learn about the contents of the administrator audit log in Exchange Server 2016 and 2019."
+description: "Summary: Learn about the contents of the administrator audit log in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Administrator audit log structure

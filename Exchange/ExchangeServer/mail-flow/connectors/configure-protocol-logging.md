@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c81cac9c-b990-492a-b899-5be8d08a6068
-description: "Summary: Learn how to configure protocol logging for Send connectors and Receive connectors in Exchange Server 2016 or 2019."
+description: "Summary: Learn how to configure protocol logging for Send connectors and Receive connectors in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Configure protocol logging

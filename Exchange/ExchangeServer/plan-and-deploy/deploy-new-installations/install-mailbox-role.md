@@ -17,15 +17,9 @@ description: "Summary: Learn how to use the Setup wizard in Exchange 2016 or Exc
 
 # Install Exchange Mailbox servers using the Setup wizard
 
- **Summary**: Learn how to use the Setup wizard in Exchange 2016 or Exchange 2019 to install the Edge Mailbox server role on a computer.
-  
 Before you install an Exchange Server 2016 or Exchange Server 2019 Mailbox server, verify the following prerequisites:
   
-- Verify the network, computer hardware, operating system, and software requirements at:
-
-  - [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements-2016.md) and [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites-2016.md).
-  
-  - [Exchange 2019 system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites.md).
+- Verify the network, computer hardware, operating system, and software requirements at: [Exchange Server system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange Server prerequisites](../../plan-and-deploy/prerequisites.md).
     
  - The target server must be a member of an Active Directory domain.
 
@@ -39,7 +33,7 @@ Before you install an Exchange Server 2016 or Exchange Server 2019 Mailbox serve
     
     <sup>*</sup> Members of the **Delegated Setup** role group can install Exchange on servers that have already been provisioned in Active Directory by an Exchange administrator. For more information, see [Delegate the installation of Exchange servers](../../plan-and-deploy/deploy-new-installations/delegate-installations.md).
     
-- Verify that you've read the release notes at [Release notes for Exchange 2016](../../release-notes.md) or [Release notes for Exchange 2019](../../release-notes-2019.md).
+- Verify that you've read the release notes at [Release notes for Exchange Server](../../release-notes.md).
     
 For more information about planning and deploying Exchange, see [Planning and deployment for Exchange Server](../../plan-and-deploy/plan-and-deploy.md).
   
@@ -56,7 +50,7 @@ To install the Edge Transport role on a computer, see [Install Exchange Edge Tra
   
 ## Install the Exchange Mailbox server role
 
-1. Download the latest version of [Exchange 2016](../../new-features/updates.md) or [Exchange 2019](../../new-features-2019/updates.md) on the computer where you want to install Exchange.
+1. Download the latest version of [Exchange Server](../updates.md).
     
 2. In File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. In the resulting virtual DVD drive that appears, start Exchange Setup by double-clicking `Setup.exe`.
     
@@ -96,7 +90,7 @@ To install the Edge Transport role on a computer, see [Install Exchange Edge Tra
     
     - **Automatically install Windows Server roles and features that are required to install Exchange**: Select this option to have the Setup wizard install the required Windows prerequisites. You might need to reboot the computer to complete the installation of some Windows features. If you don't select this option, you need to install the Windows features manually.
     
-      **Note**: Selecting this option installs only the _Windows features_ that are required by Exchange. You need to install other prerequisites manually. For more information, see [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites-2016.md) or [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites.md).
+      **Note**: Selecting this option installs only the _Windows features_ that are required by Exchange. You need to install other prerequisites manually. For more information, see [Exchange Server prerequisites](../../plan-and-deploy/prerequisites.md).
     
     Click **Next** to continue.
 

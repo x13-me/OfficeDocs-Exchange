@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
-description: "Learn how administrators can enable or disable MAPI access to specific mailboxes in Exchange Server 2016 or 2019."
+description: "Learn how administrators can enable or disable MAPI access to specific mailboxes in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Enable or disable MAPI access to mailboxes in Exchange Server

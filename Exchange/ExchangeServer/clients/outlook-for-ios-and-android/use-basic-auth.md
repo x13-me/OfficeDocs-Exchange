@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 4a124605-5824-472b-9865-3452c689be6d
-description: "Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android in an Exchange Server 2016 or 2019 on-premises environment when the app uses Basic authentication."
+description: "Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android in an Exchange Server 2016 or Exchange Server 2019 on-premises environment when the app uses Basic authentication."
 ---
 
 # Using Basic authentication with Outlook for iOS and Android
@@ -63,7 +63,7 @@ You have three options for removing your information from the Outlook service.
     
 - Option 3: Have each user remove their account from the Outlook app, and then delete the app from their mobile devices. To remove an account, have users follow these steps:
     
-1.  In the Outlook app, in **Settings**, tap **Account Settings**.
+1. In the Outlook app, in **Settings**, tap **Account Settings**.
     
 2. Tap **Select an Account**, and then, with the account selected, tap **Remove Account**.
     

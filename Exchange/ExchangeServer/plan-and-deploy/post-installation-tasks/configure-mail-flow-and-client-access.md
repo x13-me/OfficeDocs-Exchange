@@ -15,9 +15,7 @@ description: "Summary: How to set up mail flow and client access in  and Exchang
 
 # Configure mail flow and client access on Exchange servers
 
- **Summary**: How to set up mail flow and client access in Exchange 2016 and Exchange 2019.
-  
-After you've installed Exchange Server 2016 or Exchange 2019 in your organization, you need to configure it for mail flow and client access. Without these additional steps, you won't be able to send mail to the internet and external clients (for example, Microsoft Outlook, and Exchange ActiveSync devices) won't be able to connect to your Exchange organization.
+After you've installed Exchange Server 2016 or Exchange 2019 in your organization, you need to configure Exchange for mail flow and client access. Without these additional steps, you won't be able to send mail to the internet and external clients (for example, Microsoft Outlook, and Exchange ActiveSync devices) won't be able to connect to your Exchange organization.
   
 The steps in this topic assume a basic Exchange deployment with a single Active Directory site and a single simple mail transport protocol (SMTP) namespace.
   

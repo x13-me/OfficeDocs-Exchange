@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 989a62fc-4bc1-448f-90c8-7c7b56fe1084
-description: "Summary: Learn about the TNEF message conversion and preservation options that are available in Exchange Server 2016 and 2019."
+description: "Summary: Learn about the TNEF message conversion and preservation options that are available in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # TNEF conversion options

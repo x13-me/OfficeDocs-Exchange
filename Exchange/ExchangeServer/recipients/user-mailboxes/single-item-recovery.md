@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 2e7f1bcd-8395-45ad-86ce-22868bd46af0
-description: "Summary: Learn how to enable or disable single item recovery for user mailboxes in Exchange Server 2016 and 2019"
+description: "Summary: Learn how to enable or disable single item recovery for user mailboxes in Exchange Server 2016 and Exchange Server 2019"
 ---
 
 # Enable or disable single item recovery for a mailbox

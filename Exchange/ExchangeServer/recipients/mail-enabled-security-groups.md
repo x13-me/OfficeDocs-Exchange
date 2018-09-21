@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
-description: "Summary: Learn how to create and manage mail-enabled security groups in Exchange Server 2016 or 2019."
+description: "Summary: Learn how to create and manage mail-enabled security groups in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Manage mail-enabled security groups in Exchange Server

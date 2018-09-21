@@ -9,7 +9,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: fba87902-2a79-42ac-b394-46a9016f667e
-description: "Summary: Learn how message rate limits affect mail flow and connections in Exchange Server 2016 and 2019."
+description: "Summary: Learn how message rate limits affect mail flow and connections in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Message rate limits and throttling

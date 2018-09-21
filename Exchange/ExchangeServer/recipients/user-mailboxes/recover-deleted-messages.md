@@ -10,7 +10,7 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12
-description: "Summary: Learn how administrators can search for and recover deleted email messages in a user's mailbox in Exchange Server 2016 or 2019"
+description: "Summary: Learn how administrators can search for and recover deleted email messages in a user's mailbox in Exchange Server 2016 or Exchange Server 2019"
 ---
 
 # Recover deleted messages in a user's mailbox

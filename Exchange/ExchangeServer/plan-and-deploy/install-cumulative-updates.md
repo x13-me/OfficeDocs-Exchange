@@ -3,7 +3,7 @@ title: "Upgrade Exchange to the latest Cumulative Update"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 7/27/2018
+ms.date: 9/20/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: exchange-server-it-pro
@@ -15,13 +15,7 @@ description: "Summary: Learn about installing Cumulative Updates (CUs) in Exchan
 
 # Upgrade Exchange to the latest Cumulative Update
 
- **Summary**: Learn about installing Cumulative Updates in Exchange 2016 or Exchange 2019.
-
-If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgrade the Exchange servers to the latest Cumulative Update (CU). Because each CU is a full installation of Exchange that includes updates and changes from all previous CU's, you don't need to install any previous CU's or Exchange 2016 RTM or Exchange 2019 RTM first. For more information about the latest available Exchange CUs, see:
-
-- [Updates for Exchange 2016](../new-features/updates.md)
-
-- [Updates for Exchange 2019](../new-features-2019/updates.md)
+If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgrade the Exchange servers to the latest Cumulative Update (CU). Because each CU is a full installation of Exchange that includes updates and changes from all previous CU's, you don't need to install any previous CU's or Exchange 2016 RTM or Exchange 2019 RTM first. For more information about the latest available Exchange CUs, see [Updates for Exchange Server](../new-features/updates.md).
 
 > [!CAUTION]
 > After you upgrade Exchange to a newer CU, you can't uninstall the new version to revert to the previous version. Uninstalling the new version completely removes Exchange from the server.
@@ -30,13 +24,9 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 
 - Estimated time to complete: 60 minutes
 
-- Check the release notes for [Exchange 2016](../release-notes.md) or [Exchange 2019](../release-notes-2019.md) before you install the CU.
+- Check the [Release notes](../release-notes.md) before you install the CU.
 
-- Verify the target server meets the potentially new system requirements and prerequisites for the CU. For more information, see:
-
-  - [Exchange 2016 system requirements](system-requirements-2016.md) and [Exchange 2016 prerequisites](prerequisites-2016.md).
-
-  - [Exchange 2019 system requirements](system-requirements.md) and [Exchange 2019 prerequisites](prerequisites.md).
+- Verify the target server meets the potentially new system requirements and prerequisites for the CU. For more information, see [Exchange Servr system requirements](system-requirements.md) and [Exchange Server prerequisites](prerequisites.md).
 
     > [!CAUTION]
     > Any customized Exchange or Internet Information Server (IIS) settings that you made in Exchange XML application configuration files on the Exchange server (for example, web.config files or the EdgeTransport.exe.config file) **will be overwritten** when you install an Exchange CU. Be sure save this information so you can easily re-apply the settings after the install. After you install the Exchange CU, you need to re-configure these settings.
@@ -48,7 +38,7 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 
 ## Install an Exchange CU using the Setup wizard
 
-1. Download the latest version of [Exchange 2016](../new-features/updates.md) or [Exchange 2019](../new-features-2019/updates.md) on the computer where you want to install Exchange.
+1. Download the latest version of [Exchange Server](updates.md) on the computer where you want to install Exchange.
     
 2. In File Explorer, right-click on the Exchange CU ISO image file that you downloaded, and then select **Mount**. In the resulting virtual DVD drive that appears, start Exchange Setup by double-clicking `Setup.exe`.
     

@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 61f9a8be-070e-4c62-b505-52644fcff0c5
-description: "Summary: Automatically restore a database in Exchange Server 2016 or 2019 with pre-provisioned spare disks."
+description: "Summary: Automatically restore a database in Exchange Server 2016 or Exchange Server 2019 with pre-provisioned spare disks."
 ---
 
 # AutoReseed

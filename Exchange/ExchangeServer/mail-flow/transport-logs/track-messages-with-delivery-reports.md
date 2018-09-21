@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: a14e4e62-08ca-4a7b-92e1-d39fe3e0a9e5
-description: "Learn how administrators use Delivery Reports to search for the delivery status of email messages in an Exchange Server 2016 or 2019 organization."
+description: "Learn how administrators use Delivery Reports to search for the delivery status of email messages in an Exchange Server 2016 or Exchange Server 2019 organization."
 ---
 
 # Track messages with delivery reports

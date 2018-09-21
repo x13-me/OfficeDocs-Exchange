@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4
-description: "Learn how administrators can enable or disable Exchange ActiveSync access to specific mailboxes in Exchange Server 2016 or 2019."
+description: "Learn how administrators can enable or disable Exchange ActiveSync access to specific mailboxes in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Enable or disable Exchange ActiveSync access to mailboxes in Exchange Server

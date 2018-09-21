@@ -9,7 +9,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: abad5939-8826-4df1-94bf-2d734f07e929
-description: "Summary: All about recipients, such as mailboxes and mail users, in Exchange Server 2016 and 2019."
+description: "Summary: All about recipients, such as mailboxes and mail users, in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Recipients

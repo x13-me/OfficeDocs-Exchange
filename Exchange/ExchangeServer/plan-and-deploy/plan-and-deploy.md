@@ -13,12 +13,12 @@ ms.assetid: 692c59e3-f0b0-4cef-a66e-751aa740abae
 description: "Summary: Guidance for planning and deploying Exchange 2016 or Exchange 2019."
 ---
 
-# Planning and deployment
+# Planning and deployment for Exchange Server
 
 This topic contains links to topics and information about planning for and then deploying Exchange Server 2016 or Exchange Server 2019.
 
 > [!IMPORTANT]
-> Make sure you read the [Release notes for Exchange 2016](../release-notes.md) or [Release notes for Exchange 2019](../release-notes-2019.md) topics before you begin your deployment. The release notes contain important information on issues you might encounter during and after your deployment.
+> Make sure you read the [Release notes for Exchange Server](../release-notes.md) topics before you begin your deployment. The release notes contain important information on issues you might encounter during and after your deployment.
 
 ## Plan for Exchange 2016 or Exchange 2019
 
@@ -31,11 +31,11 @@ This topic contains links to topics and information about planning for and then 
 
 > Learn about the Mailbox and Edge Transport server roles and more in Exchange.
 
-[Exchange 2016 system requirements](system-requirements-2016.md) or [Exchange 2019 system requirements](system-requirements.md)
+[Exchange Server system requirements](system-requirements.md)
 
 > Understand the system requirements that need to be satisfied in your organization before you can install Exchange.
 
-[Exchange 2016 prerequisites](prerequisites-2016.md) or [Exchange 2019 prerequisites](prerequisites.md)
+[Exchange Server prerequisites](prerequisites.md)
 
 > Learn about the Windows Server features and the other software that needs to be installed for a successful installation of Exchange.
 
@@ -87,7 +87,7 @@ Use the information at the following links to help you deploy Exchange.
 
 > Learn about using the Setup wizard to install Mailbox servers.
 
-[Install Exchange 2019 using unattended mode](deploy-new-installations/unattended-installs.md)
+[Use unattended mode in Exchange Setup](deploy-new-installations/unattended-installs.md)
 
 > Learn about using the unattended setup at the command line to install, remove, update, and recover Exchange servers.
 
@@ -103,11 +103,11 @@ Use the information at the following links to help you deploy Exchange.
 
 > Read this topic for information that will help you deploy Exchange in an existing hybrid deployment.
 
-[Exchange 2019 post-installation tasks](post-installation-tasks/post-installation-tasks.md)
+[Exchange Server post-installation tasks](post-installation-tasks/post-installation-tasks.md)
 
 > Learn about post-installation tasks to complete your Exchange installation.
 
-## Exchange 2016 or 2019 Setup
+## Exchange Setup
 
 You can use different types and modes of Exchange Setup to install and maintain the various editions and versions of Exchange.
 

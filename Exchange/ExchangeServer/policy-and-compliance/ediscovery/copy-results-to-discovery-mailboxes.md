@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bff2ce89-9e6f-494a-bd6a-2f2011507845
-description: "Summary: Learn how to copy the results of an In-Place eDiscovery search to a discovery mailbox in Exchange Server 2016 and 2019."
+description: "Summary: Learn how to copy the results of an In-Place eDiscovery search to a discovery mailbox in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Copy eDiscovery search results to a discovery mailbox

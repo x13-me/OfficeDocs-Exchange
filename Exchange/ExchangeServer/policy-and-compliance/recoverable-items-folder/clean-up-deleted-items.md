@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 82c310f8-de2f-46f2-8e1a-edb6055d6e69
-description: "Summary: Learn how administrators can use the Exchange Management Shell to clean up or delete items from the Recoverable Items folder in Exchange Server 2016 and 2019."
+description: "Summary: Learn how administrators can use the Exchange Management Shell to clean up or delete items from the Recoverable Items folder in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Clean up or delete items from the Recoverable Items folder

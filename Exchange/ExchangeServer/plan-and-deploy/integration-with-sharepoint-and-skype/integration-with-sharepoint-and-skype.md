@@ -10,13 +10,11 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 056b29f6-e0e9-4974-b763-002518857a93
-description: "Summary: Learn about ways to help enterprises meet compliance and regulatory requirements using Exchange 2016, SharePoint Server 2016, and Skype for Business."
+description: "Summary: Learn about ways to help enterprises meet compliance and regulatory requirements using Exchange 2016, SharePoint Server 2016, and Skype for Business Server."
 ---
 
 # Plan Exchange 2016 integration with SharePoint and Skype for Business
 
- **Summary**: Learn about ways to help enterprises meet compliance and regulatory requirements using Exchange 2016, SharePoint Server 2016, and Skype for Business.
-  
 Exchange 2016 integration with SharePoint Server 2016 and Skype for Business allow for services that provide the ability to preserve, archive, and then quickly search email, documents, and other content. Together, these enterprise applications make possible scenarios such as eDiscovery and collaboration using site mailboxes to let your organization preserve important data. Critical in most organizations these days is the ability to archive and then locate email and documents as required to meet compliance and regulatory requirements. You can use Exchange 2016 along with SharePoint 2016 and Skype for Business to:
   
 - Archive Exchange mailboxes

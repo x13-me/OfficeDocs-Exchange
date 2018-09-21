@@ -9,14 +9,12 @@ ms.topic: conceptual
 ms.prod: exchange-server-it-pro
 localization_priority: Priority
 ms.assetid: 61080b45-8bce-4c23-b744-ed264d5f0b7d
-description: "Summary: Learn how Exchange 2016 and Exchange 2019 retrieve data from Active Directory, and how to recover deleted objects."
+description: "Summary: Learn how Exchange 2016 and Exchange 2019 retrieve data from Active Directory and how to recover deleted objects."
 ---
 
 # Access to Active Directory by Exchange servers
 
- **Summary**: Learn how Exchange 2016 and Exchange 2019 retrieve data from Active Directory, and how to recover deleted objects.
-  
-Exchange Server 2019 and Exchange Server 2019 store all configuration and recipient information in the Active Directory directory service database. When an Exchange server requires information about recipients the configuration of the Exchange organization, it queries Active Directory. Active Directory servers must be available for Exchange to function correctly.
+Exchange Server 2016 and Exchange Server 2019 store all configuration and recipient information in the Active Directory directory service database. When an Exchange server requires information about recipients the configuration of the Exchange organization, it queries Active Directory. Active Directory servers must be available for Exchange to function correctly.
   
 This topic explains how Exchange stores and retrieves information in Active Directory so that you can plan access to Active Directory. This topic also discusses issues you should be aware of if you try to recover deleted Exchange Active Directory objects.
   
@@ -42,12 +40,8 @@ When you install the first Exchange server in the forest (or run the Active Dire
 
 Every domain controller and global catalog server in the forest contains a complete replica of the schema partition.
   
-For more information about schema modifications in Exchange, see:
+For more information about schema modifications in Exchange, see [Active Directory schema changes in Exchange Server](ad-schema-changes.md).
 
- - [Exchange 2016 Active Directory schema changes](ad-schema-changes.md).
-
- - [Exchange 2019 Active Directory schema changes](ad-schema-changes-2019.md).
-  
 ### Configuration partition
 
 The configuration partition stores information about the forest-wide configuration. This configuration information includes the configuration of Active Directory sites, Exchange global settings, transport settings, and mailbox policies. Each type of configuration information is stored in a container in the configuration partition. Exchange configuration information is stored in a subfolder under the configuration partition's Services container. The type of information that's stored in this container includes:

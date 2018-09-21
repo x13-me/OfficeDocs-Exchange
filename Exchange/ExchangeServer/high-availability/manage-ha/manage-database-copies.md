@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 28cedf1d-365a-4e36-b2ba-6bf81af8684f
-description: "Summary: Learn about managing mailbox database copies in the Mailbox server in Exchange Server 2016 or 2019."
+description: "Summary: Learn about managing mailbox database copies in the Mailbox server in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Manage mailbox database copies

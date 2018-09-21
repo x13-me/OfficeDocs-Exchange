@@ -1,5 +1,5 @@
 ---
-title: "Exchange 2016 storage configuration options"
+title: "Exchange Server storage configuration options"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
@@ -9,14 +9,12 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 37cdeacf-74f9-4399-9860-4d1dbec12bb1
-description: "Summary: Learn about storage options in Exchange Server 2016."
+description: "Summary: Learn about storage options in Exchange Server 2016 and Exchange Server 2019."
 ---
 
-# Exchange 2016 storage configuration options
-
- **Summary**: Learn about storage options in Exchange Server 2016.
+# Exchange Server storage configuration options
   
-Understanding storage options and requirements for the Mailbox server role in Microsoft Exchange Server 2016 is an important part of your Mailbox server storage design solution.
+Understanding the storage options and requirements for Mailbox servers in Exchange Server 2016 and Exchange Server 2019 is an important part of your Mailbox server storage design solution.
   
 ## Storage architectures
 
@@ -32,7 +30,7 @@ The following table describes supported storage architectures and provides best 
    
 A network-attached storage (NAS) unit is a self-contained computer connected to a network, with the sole purpose of supplying file-based data storage services to other devices on the network. The operating system and other software on the NAS unit provide the functionality of data storage, file systems, and access to files, and the management of these functions (for example, file storage).
   
-All storage used by Exchange for storage of Exchange data must be block-level storage because Exchange 2016 doesn't support the use of NAS volumes, other than in the SMB 3.0 scenario outlined in the topic [Exchange 2016 virtualization](../../plan-and-deploy/virtualization.md). Also, in a virtualized environment, NAS storage that's presented to the guest as block-level storage via the hypervisor isn't supported.
+All storage used by Exchange for storage of Exchange data must be block-level storage because Exchange 2016 doesn't support the use of NAS volumes, other than in the SMB 3.0 scenario outlined in the topic [Exchange Server virtualization](../../plan-and-deploy/virtualization.md). Also, in a virtualized environment, NAS storage that's presented to the guest as block-level storage via the hypervisor isn't supported.
   
 Using storage tiers is not recommended, as it could adversely affect system performance. For this reason, do not allow the storage controller to automatically move the most accessed files to "faster" storage.
   

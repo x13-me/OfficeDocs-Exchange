@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: eccd8f61-9706-4bb7-a62a-ec7c166f8019
-description: "Summary: How to recover an Exchange DAG member after a failure in Exchange Server 2016 and 2019."
+description: "Summary: How to recover an Exchange DAG member after a failure in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Recover a database availability group member server

@@ -15,8 +15,6 @@ description: "Summary: All the information and resources you need to get started
 
 # Exchange Server
 
- **Summary**: All the information and resources you need to get started with Exchange Server 2016 or Exchange Server 2019.
-
 Welcome to Microsoft Exchange Server! Here's some fundamental and essential information to help you dig in.
 
 <ul class="panelContent cardsFTitle">

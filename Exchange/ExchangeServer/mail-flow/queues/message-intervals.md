@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 03020e6f-4c01-4c6e-ae47-fd74d4c4f96a
-description: "Summary: Learn about the time intervals and settings in Exchange Server 2016 or 2019 for messages that can't be successfully delivered."
+description: "Summary: Learn about the time intervals and settings in Exchange Server 2016 or Exchange Server 2019 for messages that can't be successfully delivered."
 ---
 
 # Message retry, resubmit, and expiration intervals

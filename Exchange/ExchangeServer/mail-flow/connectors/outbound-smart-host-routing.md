@@ -51,7 +51,7 @@ Instead of routing all outbound messages directly to the Internet, you may need 
     
     When you're finished, click **Save**.
     
-4.  You can enter multiple smart hosts by repeating Step 3. When you're finished, click **Next**.
+4. You can enter multiple smart hosts by repeating Step 3. When you're finished, click **Next**.
     
 5. On the next page, in the **Route mail through smart hosts** section, select the authentication method that's required by the smart host. Valid values are: 
     

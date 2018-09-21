@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 4c4e00a4-1f57-4fdb-b9b2-2779abf381a9
-description: "Summary: How to deploy Exchange Server 2016 or 2019 with high availability and site resilience."
+description: "Summary: How to deploy Exchange Server 2016 or Exchange Server 2019 with high availability and site resilience."
 ---
 
 # Deploying high availability and site resilience

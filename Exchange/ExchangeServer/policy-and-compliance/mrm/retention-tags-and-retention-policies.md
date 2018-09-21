@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
-description: "Summary: Learn about how retention tags and retention policies in Exchange Server 2016 and 2019 help manage the email life cycle."
+description: "Summary: Learn about how retention tags and retention policies in Exchange Server 2016 and Exchange Server 2019 help manage the email life cycle."
 ---
 
 # Retention tags and retention policies in Exchange Server

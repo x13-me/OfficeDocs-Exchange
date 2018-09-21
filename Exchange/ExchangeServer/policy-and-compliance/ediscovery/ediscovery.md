@@ -9,7 +9,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
-description: "Summary: Learn about In-Place eDiscovery in Exchange Server 2016 and 2019."
+description: "Summary: Learn about In-Place eDiscovery in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # In-Place eDiscovery in Exchange Server

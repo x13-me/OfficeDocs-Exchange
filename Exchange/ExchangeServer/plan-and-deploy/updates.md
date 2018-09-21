@@ -32,7 +32,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 |:-----|:-----|
 |Exchange 2019 RTM|
 
-- For information about the new features you'll get when you upgrade to Exchange 2019 from previous versions of Exchange, see [What's new in Exchange 2019](new-features-2019.md).
+- For information about the new features you'll get when you upgrade to Exchange 2019 from previous versions of Exchange, see [What's new in Exchange Server](../new-features/new-features.md).
 
 ::: moniker-end
 

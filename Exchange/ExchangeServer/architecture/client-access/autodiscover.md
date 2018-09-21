@@ -16,13 +16,13 @@ description: "Summary: Learn about the Autodiscover service in Exchange 2016 and
 
 The Autodiscover service minimizes user configuration and deployment steps by providing clients access to Exchange features. For Exchange Web Services (EWS) clients, Autodiscover is typically used to find the EWS endpoint URL. However, Autodiscover can also provide information to configure clients that use other protocols. Autodiscover works for client applications that are inside or outside firewalls and in resource forest and multiple forest scenarios.
   
-Exchange 2016 introduced changes to services previously handled by the multiple servers. The Mailbox server now provides Client Access services, so you can't configure a standalone Client Access server like you could in previous versions of Exchange. Autodiscover service in Exchange 2016 and Exchange 2019 is possible because:
+Exchange 2016 introduced changes to services that were previously handled by the multiple servers. The Mailbox server now provides Client Access services, so you can't configure a standalone Client Access server like you could in previous versions of Exchange. Autodiscover service in Exchange 2016 and Exchange 2019 is possible because:
   
 - Exchange creates a virtual directory named `autodiscover` under the default web site in Internet Information Services (IIS). 
     
 - Active Directory stores and provides authoritative URLs for domain-joined computers.
     
-- Client Access services on Exchange 2016 and Exchange 2019 Mailbox servers provide authentication and proxy services for internal and external client connections.
+- Client Access services on Mailbox servers provide authentication and proxy services for internal and external client connections.
     
 - Outlook configures services with only the user name and password.
     
@@ -80,7 +80,7 @@ For more information about SCP objects, see [Publishing Services in Active Direc
   
 ## Autodiscover in DNS
 
-Exchange introduced namespace requirements for Autodiscover in Exchange 2010, certificates required several of them. In a server resilience scenario, this needed all of these.
+Exchange introduced namespace requirements for Autodiscover in Exchange 2010 and certificates required several of them. In a server resilience scenario, all of these elements were required:
   
 - Primary datacenter IP namespace
     
@@ -90,15 +90,15 @@ Exchange introduced namespace requirements for Autodiscover in Exchange 2010, ce
     
 - Secondary Outlook Web App failback namespace
     
-- Transport namespace ( for SMTP)
+- Transport namespace (for SMTP)
     
 - Primary datacenter RPC Client Access namespace
     
 - Secondary datacenter RPC Client Access namespace
     
-Exchange 2016 and 2019 simplify this server resiliency scenario, reducing the five namespaces to two. This is because Exchange no longer needs the RPC Client Access namespaces and Client Access services proxy requests to the Mailbox server that is hosting the active Mailbox database. A Mailbox server in one Active Directory site can proxy a session to a another Active Directory site's Mailbox server.
+Server resiliency scenarios have been improved, reducing the five namespaces to two. This is because Exchange no longer needs the RPC Client Access namespaces and Client Access services proxy requests to the Mailbox server that is hosting the active Mailbox database. A Mailbox server in one Active Directory site can proxy a session to a another Active Directory site's Mailbox server.
   
-What this means is that unique namespaces are no longer required for *each* datacenter. For example, instead of mail.contoso.com and mail2.contoso.com, you only need a single namespace, mail.contoso.com, for the datacenter pair. Additionally, failback namespaces are no longer needed in Database Availability Groups (DAG) activation scenarios. To learn more about namespaces, see [Exchange Server 2016 Database Availability Groups](https://go.microsoft.com/fwlink/p/?linkId=846392).
+What this means is that unique namespaces are no longer required for *each* datacenter. For example, instead of mail.contoso.com and mail2.contoso.com, you only need a single namespace, mail.contoso.com, for the datacenter pair. Additionally, failback namespaces are no longer needed in Database Availability Groups (DAG) activation scenarios.
   
 Autodiscover is simple to set up for your domain because it only requires that you create a CNAME resource record in your external (public) DNS. CNAME records let you hide the implementation details of your network from the clients that connect to it. Used internally in your network, CNAME records allow users to use the simpler URI mail.domain.com instead of host.examplemachinename.domain.com.
   
@@ -136,7 +136,7 @@ A typical SRV record looks like this:
     
 In this example, the Outlook server namespace is mail.contoso.com.
   
-Read more about CNAME and SRV records in the Outlook team blog, [Namespace planning in Exchange 2016](https://go.microsoft.com/fwlink/p/?linkId=843937) . 
+Read more about CNAME and SRV records in the Outlook team blog, [Namespace planning in Exchange 2016](https://go.microsoft.com/fwlink/p/?linkId=843937). 
   
 ## Autodiscover services in Outlook
 
@@ -167,7 +167,7 @@ Through the Autodiscover service, Outlook finds a new connection point made up o
     
 - Location of the user's mailbox (the Mailbox server that currently holds the active copy of the mailbox)
     
-- URLs for various Outlook features that govern functionality such as free/busy information, Unified Messaging (UM) in Exchange 2016 (not in Exchange 2019), and the offline address book (OAB)
+- URLs for various Outlook features that govern functionality such as free/busy information, Unified Messaging (UM) in Exchange 2016 (but not in Exchange 2019), and the offline address book (OAB)
     
 - Outlook Anywhere server settings
     
@@ -210,5 +210,5 @@ In deployments where clients connect to multiple Exchange servers, the Autodisco
   
 You can run the Exchange ActiveSync Autodiscover and Outlook Autodiscover tests in the Microsoft Remote Connectivity Analyzer. If the user is using a local wireless network to connect to Exchange Online, the user should run both tests to make sure that the local network allows for connections to the ActiveSync endpoints.
   
-You can get help for planning and deploying Autodiscover services as part of your Exchange deployment in [Deploy Exchange 2016 or Exchange 2019](../../plan-and-deploy/plan-and-deploy.md#deploy-exchange-2016-or-exchange-2019).
+You can get help for planning and deploying Autodiscover services as part of your Exchange deployment in [Planning and deployment for Exchange Server](../../plan-and-deploy/plan-and-deploy.md).
   

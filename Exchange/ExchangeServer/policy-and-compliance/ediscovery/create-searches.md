@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
-description: "Summary: Learn how to create an In-Place eDiscovery search in Exchange Server 2016 and 2019."
+description: "Summary: Learn how to create an In-Place eDiscovery search in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Create an In-Place eDiscovery search in Exchange Server

@@ -244,7 +244,7 @@ In Exchange Online PowerShell, do the following:
   Remove-MigrationBatch <name of migration batch> -Confirm:$false
   ```
 
-2.  You need to have the migration feature **PAW** enabled for your Office 365 tenant. You can check this by running the following command in Exchange Online PowerShell: 
+2. You need to have the migration feature **PAW** enabled for your Office 365 tenant. You can check this by running the following command in Exchange Online PowerShell: 
     
   ```
   Get-MigrationConfig
@@ -464,7 +464,7 @@ Once the public folder migration is complete, take the following steps to test t
     
 4. Post content to, and delete content from, a public folder.
     
-    If you run into any issues and determine you aren't ready to switch your organization's public folders entirely to Exchange Online, see [Roll back a public folder migration from Exchange 2016 or Exchange 2019 to Exchange Online](roll-back-exchange-online-migration.md).
+    If you run into any issues and determine you aren't ready to switch your organization's public folders entirely to Exchange Online, see [Roll back a public folder migration from Exchange Server to Exchange Online](roll-back-exchange-online-migration.md).
     
 3. Run the following command in Exchange Online PowerShell to unlock your public folders in Exchange Online. After you run the command, it may take approximately 15 to 30 minutes for the changes to take effect. Once Outlook is aware of the changes, it might prompt your users to restart Outlook a couple of times.
     

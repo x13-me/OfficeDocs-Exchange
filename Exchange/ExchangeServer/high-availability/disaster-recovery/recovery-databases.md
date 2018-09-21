@@ -9,7 +9,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f3c6fd0b-2e25-442e-a0fc-46f663130c3e
-description: "Summary: An overview of recovery databases in Exchange Server 2016 and 2019."
+description: "Summary: An overview of recovery databases in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Recovery databases

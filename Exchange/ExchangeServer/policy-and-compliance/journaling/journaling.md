@@ -9,7 +9,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6a20f207-4485-44ef-b010-ec760eb5165b
-description: "Summary: Learn about journaling in Exchange Server 2016 and 2019."
+description: "Summary: Learn about journaling in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Journaling in Exchange Server

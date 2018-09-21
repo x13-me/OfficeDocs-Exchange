@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9317b3bc-44a1-4e54-bc51-4f0b194b6a55
-description: "Summary: Learn about managing mobile device mailbox policies in Exchange Server 2016 and 2019."
+description: "Summary: Learn about managing mobile device mailbox policies in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Mobile device mailbox policies

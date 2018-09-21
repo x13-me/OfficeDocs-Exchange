@@ -10,7 +10,7 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 0fac891a-5713-42b6-afd5-c91b2b88f966
-description: "Summary: An overview of using Windows Server Backup with Exchange Server 2016 or 2019."
+description: "Summary: An overview of using Windows Server Backup with Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Using Windows Server Backup to back up and restore Exchange data

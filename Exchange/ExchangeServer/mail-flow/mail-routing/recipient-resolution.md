@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 09deda5a-d405-45b1-a3ff-fefd3d76cdea
-description: "Summary: Learn about recipient resolution in Exchange Server 2016 and 2019."
+description: "Summary: Learn about recipient resolution in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Recipient resolution in Exchange Server

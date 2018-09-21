@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
-description: "Summary: Learn how to view and configure the properties of Outlook on the web virtual directories in Exchange Server 2016 or 2019"
+description: "Summary: Learn how to view and configure the properties of Outlook on the web virtual directories in Exchange Server 2016 or Exchange Server 2019"
 ---
 
 # View or configure Outlook on the web virtual directories in Exchange Server

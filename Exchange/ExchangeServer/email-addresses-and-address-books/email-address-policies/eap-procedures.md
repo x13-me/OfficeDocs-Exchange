@@ -11,7 +11,7 @@ f1_keywords:
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: eb2bf42e-2058-4e17-85d5-97546433b40a
-description: "Summary: Learn how to create, modify, remove, and apply email address policies in Exchange Server 2016 and 2019."
+description: "Summary: Learn how to create, modify, remove, and apply email address policies in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Procedures for email address policies in Exchange Server

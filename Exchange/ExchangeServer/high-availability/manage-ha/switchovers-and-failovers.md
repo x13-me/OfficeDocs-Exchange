@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 75388645-cae1-402e-bf02-c4949d3e2c31
-description: "Summary: An overview of switchovers and failovers in Exchange Server 2016 or 2019."
+description: "Summary: An overview of switchovers and failovers in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Switchovers and failovers

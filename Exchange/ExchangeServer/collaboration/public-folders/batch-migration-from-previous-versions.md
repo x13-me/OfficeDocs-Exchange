@@ -1,5 +1,5 @@
 ---
-title: "Use batch migration to migrate public folders from Exchange 2010 to Exchange 2016"
+title: "Use batch migration to migrate Exchange 2010 public folders to Exchange 2016"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
@@ -9,13 +9,14 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: da808e27-d2b7-4fbd-915c-a600751f526c
-description: "Summary: How to migrate Exchange 2010 public folders to Exchange 2016 or 2019."
+description: "Summary: Learn how to migrate Exchange 2010 public folders to Exchange 2016."
+---
 
-# Use batch migration to migrate public folders to from previous versions to Exchange 2016 or later
+# Use batch migration to migrate Exchange 2010 public folders to Exchange 2016
 
-Migrate your public folders from Exchange Server 2010 SP3 RU8 to Microsoft Exchange Server 2016 or later within the same forest. If you're looking for the Exchange 2013 version of this article, [go here](https://technet.microsoft.com/library/dn912663%28v=exchg.150%29.aspx).
+Migrate your public folders from Exchange Server 2010 SP3 RU8 to Microsoft Exchange Server 2016 or later within the same forest.
   
-We refer to the Exchange 2010 SP3 RU8 or later server as the *legacy Exchange server*.  References to Exchange Server 2016 apply equally to Exchange Server 2016 or 2019.
+We refer to the Exchange 2010 SP3 RU8 or later server as the *legacy Exchange server*. References to Exchange Server 2016 apply equally to Exchange Server 2016 or Exchange Server 2019.
   
 > [!NOTE]
 > The batch migration method described in this article is the only supported method for migrating legacy public folders to Exchange Server. The old serial migration method for migrating public folders is being deprecated and is no longer supported by Microsoft.
@@ -47,11 +48,7 @@ Exchange supports moving your public folders from the following legacy versions 
 If you need to move your public folders to Exchange 2016 or later but your on-premises servers aren't running the minimum support versions of Exchange 2010, check out [Use serial migration to migrate public folders to Exchange 2013 from previous versions](http://technet.microsoft.com/library/16773895-e9c3-4013-983f-683e5d14b221.aspx) (the steps for migrating to Exchange 2013 or later). While serial migration is an option, we strongly recommend that you upgrade your on-premises servers and use batch migration. Batch migration is significantly faster and, more important, provides greater reliability.
   
 You can't migrate public folders directly from Exchange 2003. If you're running Exchange 2003 in your organization, you need to move all public folder databases and replicas to Exchange 2010 SP3 RU8 or later. No public folder replicas can remain on Exchange 2003. Additionally, mail destined for an Exchange 2016 or later public folder can't be routed through an Exchange 2003 server.
-<<<<<<< HEAD
-  
-=======
 
->>>>>>> upstream/Ex2019
 ## What do you need to know before you begin?
 
 - Before you begin, we recommend that you read this topic in its entirety as downtime is required for some steps.
@@ -66,7 +63,7 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
     
 - Before you migrate, you should consider the [Limits for public folders](limits.md).
     
-- Before you migrate, move all user mailboxes to Exchange 2016, because users with Exchange 2010 mailboxes will not have access to public folders on Exchange 2016. For details, see [Mailbox moves in Exchange 2016](../../recipients/mailbox-moves.md).
+- Before you migrate, move all user mailboxes to Exchange 2016, because users with Exchange 2010 mailboxes will not have access to public folders on Exchange 2016. For details, see [Mailbox moves in Exchange Server](../../recipients/mailbox-moves.md).
     
 - In a multiple-domain environment, mail-enabled public folders will stop working after migration to Exchange 2016 if Exchange is running in a child domain. This is because in Exchange 2016, mail-enabled public folder objects are required to be under the root domain. To resolve this, you need to mail-disable your mail-enabled public folders and then mail-enable them again, which will allow you to move them to the correct domain location.
     

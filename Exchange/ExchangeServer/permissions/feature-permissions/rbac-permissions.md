@@ -9,7 +9,7 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: cb9591c4-fbb3-4199-8007-6bbfdfd5a2e9
-description: "Summary: Learn about permissions that are required to manage role management in Exchange Server 2016 and 2019."
+description: "Summary: Learn about permissions that are required to manage role management in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Role management permissions

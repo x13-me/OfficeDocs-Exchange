@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f93d502e-5df4-4ba0-b68d-01a17ccffb4d
-description: "Summary: Learn how to manage and customize role assignment policies in Exchange Server 2016 and 2019."
+description: "Summary: Learn how to manage and customize role assignment policies in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Manage role assignment policies

@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bc367eb3-0306-4da9-9a84-4341caef77af
-description: "Summary: Learn about content conversion (message formatting and encoding options) in Exchange Server 2016 and 2019."
+description: "Summary: Learn about content conversion (message formatting and encoding options) in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Content conversion

@@ -14,8 +14,6 @@ description: "Summary: Learn about the default Client Access virtual directory s
 
 # Default settings for Exchange virtual directories
 
- **Summary**: Learn about the default Client Access virtual directory settings on Mailbox servers in Exchange 2016 and Exchange 2019.
-
 Exchange Server 2016 and Exchange Server 2019 automatically configure multiple Internet Information Services (IIS) virtual directories during the server installation. The tables in the following sections show the settings for the Client Access (frontewnd) services on Mailbox servers and the default IIS authentication and Secure Sockets Layer (SSL) settings.
 
 ## Client Access services on Mailbox servers

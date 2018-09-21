@@ -15,7 +15,7 @@ description: "Exchange 2016 readiness checks"
 
 # Deployment reference
 
-[Exchange 2016 and Exchange 2019 readiness checks](readiness-checks.md)
+[Exchange Server readiness checks](readiness-checks.md)
   
 [Exchange Server editions and versions](editions-and-versions.md)
   

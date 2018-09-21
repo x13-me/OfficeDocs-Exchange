@@ -9,7 +9,7 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 709b075e-9584-484b-bcaa-e781c26497b4
-description: "Summary: Learn about supported limits for public folders in Exchange Server 2016 and 2019."
+description: "Summary: Learn about supported limits for public folders in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Limits for public folders

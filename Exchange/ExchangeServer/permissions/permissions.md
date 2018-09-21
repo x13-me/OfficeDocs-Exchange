@@ -9,7 +9,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d8dd605e-0af1-4e18-9ce6-e51d04e161ba
-description: "Summary: Learn about Role Based Access Control in Exchange Server 2016 and Exchange 2019"
+description: "Summary: Learn about Role Based Access Control in Exchange Server 2016 and Exchange Server 2019"
 ---
 
 # Exchange Server permissions

@@ -10,7 +10,7 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 34d87491-b7b7-44a9-8d69-e1a9c1fe5852
-description: "Summary: Step-by-step guidance for creating a recovery database in Exchange Server 2016 and 2019."
+description: "Summary: Step-by-step guidance for creating a recovery database in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Create a recovery database

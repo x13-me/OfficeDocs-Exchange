@@ -13,15 +13,9 @@ ms.assetid: 71fcbe4c-783b-4f77-aabb-a21aa7a4ef23
 description: "Summary: Learn how to install the Exchange 2016 or Exchange 2019 management tools on other computers."
 ---
 
-# Install the Exchange 2016 management tools
+# Install the Exchange management tools
 
- **Summary**: Learn how to install the Exchange 2016 or Exchange 2019 management tools on other computers.
-  
-The management tools in Exchange Server 2016 and Exchange Server 2019 include the Exchange Management Shell and the Exchange Toolbox. You can install the management tools on other client computers or servers in the Active Directory domain to help you manage your Exchange organization. The management tools have similar operating system, .NET Framework, and Windows Management Framework (Windows PowerShell) requirements as an Exchange server. The notable exception is: you can install the management tools on client versions of Windows. For more information, see:
-
-- [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements-2016.md) and [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites-2016.md).
-
-- [Exchange 2019 system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites.md).
+The management tools in Exchange Server 2016 and Exchange Server 2019 include the Exchange Management Shell and the Exchange Toolbox. You can install the management tools on other client computers or servers in the Active Directory domain to help you manage your Exchange organization. The management tools have similar operating system, .NET Framework, and Windows Management Framework (Windows PowerShell) requirements as an Exchange server. The notable exception is: you can install the management tools on client versions of Windows. For more information, see [Exchange Server system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange Server prerequisites](../../plan-and-deploy/prerequisites.md).
   
 > [!NOTE]
 > The management tools don't include the Exchange admin center (EAC). The EAC is a web-based console that's hosted on Exchange 2016 Mailbox servers, and like any web site, you can access the EAC from other computers. For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md).
@@ -32,7 +26,7 @@ For more information about the Exchange Management Shell and the Exchange Toolbo
 
 - Estimated time to complete: 20 minutes
 
-- The computer where you want to install the Exchange management tools requires access to Setup.exe in the Exchange 2019 installation files. Download the latest version of [Exchange 2016](../../new-features/updates.md) or [Exchange 2019](../../new-features-2019/updates.md).
+- The computer where you want to install the Exchange management tools requires access to Setup.exe in the Exchange installation files. Download the latest version of [Exchange Server](../updates.md).
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
@@ -79,7 +73,7 @@ For more information about the Exchange Management Shell and the Exchange Toolbo
     
     - **Automatically install Windows Server roles and features that are required to install Exchange**: Select this option to have the Setup wizard install the required Windows prerequisites. You might need to reboot the computer to complete the installation of some Windows features. If you don't select this option, you need to install the Windows features manually.
     
-      **Note**: Selecting this option installs only the _Windows features_ that are required by Exchange. You need to install other prerequisites manually. For more information, see [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites-2016.md) or [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites.md).
+      **Note**: Selecting this option installs only the _Windows features_ that are required by Exchange. You need to install other prerequisites manually. For more information, see [Exchange Server prerequisites](../../plan-and-deploy/prerequisites.md).
     
     Click **Next** to continue.
 

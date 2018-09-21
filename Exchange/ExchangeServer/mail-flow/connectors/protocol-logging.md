@@ -9,7 +9,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 40da446b-bcc3-4a97-ace7-a54f6ddebd79
-description: "Summary: Learn how protocol logging records SMTP activity in Exchange Server 2016 and 2019."
+description: "Summary: Learn how protocol logging records SMTP activity in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Protocol logging

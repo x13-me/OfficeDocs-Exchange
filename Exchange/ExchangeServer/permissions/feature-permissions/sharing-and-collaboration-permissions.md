@@ -9,7 +9,7 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b7fa4b7c-1266-45bd-a14b-f66be0459cc5
-description: "Summary: Learn about permissions that are required to manage sharing and collaboration features in Exchange Server 2016 and 2019."
+description: "Summary: Learn about permissions that are required to manage sharing and collaboration features in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Sharing and collaboration permissions

@@ -36,7 +36,7 @@ If you need to re-create one of more of these arbitration mailboxes, see the ins
 
 - The computer that you use to run Setup.exe /PrepareAD requires access to Setup.exe in the Exchange installation files:
 
-    1. Use your most recently downloaded copy of the Exchange ISO image file, or download an updated copy from [Updates for Exchange 2016](../../new-features/updates.md) or [Updates for Exchange 2019](../../new-features-2019/updates.md).
+    1. Use your most recently downloaded copy of the Exchange ISO image file, or download an updated copy from [Updates for Exchange Server](../../new-features/updates.md).
     
     2. In File Explorer, right-click on the Exchange ISO image file and then select **Mount**. Note the virtual DVD drive letter that's assigned.
 
@@ -48,7 +48,7 @@ If you need to re-create one of more of these arbitration mailboxes, see the ins
 
 - For more information about opening the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
-- For more information about running Exchange Setup in unattended mode, see [Install Exchange 2016 or Exchange 2019 using unattended mode](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
+- For more information about running Exchange Setup in unattended mode, see [Use unattended mode in Exchange Setup](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
     
 ## Re-create an arbitration mailbox
 

@@ -9,7 +9,7 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5b690bcb-c6df-4511-90e1-08ca91f43b37
-description: "Summary: Learn about permissions that are required to manage recipients in Exchange Server 2016 and 2019."
+description: "Summary: Learn about permissions that are required to manage recipients in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Recipients Permissions

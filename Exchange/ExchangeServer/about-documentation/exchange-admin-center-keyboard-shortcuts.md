@@ -13,8 +13,6 @@ description: "Summary: Learn about the keyboard shortcuts that are available in 
 ---
 
 # Keyboard shortcuts in the Exchange admin center
-
- **Summary**: Learn about the keyboard shortcuts that are available in the Exchange admin center in Exchange 2016 and Exchange 2019.
   
 Microsoft is committed to making its products and services easier for everyone to use. This topic provides information about the keyboard shortcuts that make Exchange Server and other Microsoft products and services more accessible for people with disabilities.
   

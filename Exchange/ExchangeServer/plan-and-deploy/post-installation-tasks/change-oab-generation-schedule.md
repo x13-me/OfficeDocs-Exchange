@@ -12,13 +12,11 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: d2b4d527-311e-442d-9f1f-54fac8371b80
-description: "Summary: Learn how to configure the offline address book (OAB) update interval in Exchange 2016 or Exchange 2019."
+description: "Summary: Learn how to configure the offline address book (OAB) update interval in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Change the offline address book generation schedule in Exchange
 
- **Summary**: Learn how to configure the offline address book (OAB) update interval in Exchange 2016 or Exchange 2019.".
-  
 An offline address book (OAB) is a copy of an address book that's been downloaded so that an Outlook user can access the information it contains while disconnected from the server. By default, a new OAB is generated every 8 hours in Exchange Server 2016 and Exchange Server 2016, but you can change the interval by using the Exchange Management Shell.
   
 For additional management tasks related to OABs, see [Procedures for offline address books in Exchange Server](../../email-addresses-and-address-books/offline-address-books/oab-procedures.md).

@@ -70,7 +70,7 @@ You can use any member of the Active Directory domain to prepare Active Director
 
     - [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/p/?linkid=863265) or later
 
-    - [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679) is required if using the graphical setup wizard.  When using the /Prepare switches in the command line version of SETUP to update the Active Directory, this package is not required.
+    - [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679) is required if using the graphical setup wizard. When using the /Prepare switches in the command line version of SETUP to update the Active Directory, this package is not required.
     
      > [!NOTE]
     > Using the graphical setup wizard to prepare the Active Directory will require the installation of the Management Tools Exchange role.
@@ -108,7 +108,7 @@ For more information about preparing Active Directory, see [Prepare Active Direc
 
 ## Windows Server 2019 prerequisites
 
-The requirements to install Exchange 2019 on computers running Windows Server 2019 are described in the following sections. The recommended option is to simply use the setup parameter /InstallWindowsComponents when using the command line setup experience or selecting the check box in the graphical setup program to install windows prerequisites.  Using either of these options, you will no longer be required to restart your computer after the Windows components are added.
+The requirements to install Exchange 2019 on computers running Windows Server 2019 are described in the following sections. The recommended option is to simply use the setup parameter /InstallWindowsComponents when using the command line setup experience or selecting the check box in the graphical setup program to install windows prerequisites. Using either of these options, you will no longer be required to restart your computer after the Windows components are added.
 
 ### Mailbox servers on Windows Server 2019
 
@@ -126,7 +126,7 @@ The requirements to install Exchange 2019 on computers running Windows Server 20
     Install-WindowsFeature Server-Media-Foundation`
     ```
     
-   - Install [Unified Communications Managed API 4.0](https://www.microsoft.com/download/details.aspx?id=34992).  This package is available for download and in the \UCMARedist folder on the Exchange Server media.
+   - Install [Unified Communications Managed API 4.0](https://www.microsoft.com/download/details.aspx?id=34992). This package is available for download and in the \UCMARedist folder on the Exchange Server media.
 
    > [!NOTE]
     > When installing on Windows Server Core, you must use the installation package located in \UCMARedist on distributed media.Run the following command in Windows PowerShell to install the required Windows components:

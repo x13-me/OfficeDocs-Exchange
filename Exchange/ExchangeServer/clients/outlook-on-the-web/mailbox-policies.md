@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa
-description: "Summary: Learn how to configure Outlook on the web mailbox policies in Exchange Server 2016 or 2019."
+description: "Summary: Learn how to configure Outlook on the web mailbox policies in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # View or configure Outlook on the web mailbox policy properties

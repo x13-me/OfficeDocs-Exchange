@@ -15,8 +15,6 @@ description: "Summary: Learn how Exchange 2016 and Exchange 2019 interact with A
 
 # Active Directory in Exchange Server organizations
 
- **Summary**: Learn how Exchange 2016 and Exchange 2019 interacts with Active Directory
-  
 Exchange Server 2016 and Exchange Server 2019 use Active Directory to store and share directory information with Windows. Starting with Exchange 2013, we've made some changes to how Exchange works with Active Directory. These changes are described in this topic.
   
 ## Active Directory driver
@@ -27,11 +25,7 @@ The Active Directory driver also uses the Microsoft Exchange Active Directory To
   
 ## Active Directory schema changes
 
-Exchange add new attributes to the Active Directory domain service schema and also make other modifications to existing classes and attributes. For more information about Active Directory changes when you install Exchange, see:
-
-- [Exchange 2016 Active Directory schema changes](ad-schema-changes.md).
-
-- [Exchange 2019 Active Directory schema changes](ad-schema-changes-2019.md).
+Exchange add new attributes to the Active Directory domain service schema and also make other modifications to existing classes and attributes. For more information about Active Directory changes when you install Exchange, see [Active Directory schema changes in Exchange Server](ad-schema-changes.md).
   
 ## For more information
 

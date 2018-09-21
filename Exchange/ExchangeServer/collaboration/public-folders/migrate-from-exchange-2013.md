@@ -12,7 +12,7 @@ ms.assetid: 0f98801d-ad5c-4109-a021-63645e9c9ca2
 description: "Learn how to migrate on-premises public folders from Exchange 2013 to Exchange 2016 or Exchange 2019."
 ---
 
-# Migrate public folders from Exchange 2013 to Exchange 2016 or later
+# Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019
 
  To migrate your Exchange 2013 public folders to Exchange 2016 or Exchange 2019, you need to move all of your Exchange 2013 public folder mailboxes to an Exchange 2016 server or Exchange 2019 server.
   

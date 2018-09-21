@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f1e7d407-f0d3-47a7-8cc3-03c5980445d5
-description: "Summary: Learn how to use and configure the Availability service in cross-forest topologies in Exchange Server 2016 or 2019."
+description: "Summary: Learn how to use and configure the Availability service in cross-forest topologies in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Configure the Availability service for cross-forest topologies

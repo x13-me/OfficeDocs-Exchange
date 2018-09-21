@@ -10,7 +10,7 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: ae826efe-7558-4007-b255-7dfe5933bbbf
-description: "Summary: Learn how to create a new self-signed certificate in Exchange Server 2016 or 2019."
+description: "Summary: Learn how to create a new self-signed certificate in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Create a new Exchange Server self-signed certificate

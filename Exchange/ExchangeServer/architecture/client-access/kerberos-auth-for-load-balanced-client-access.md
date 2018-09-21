@@ -22,7 +22,7 @@ In order for you to use Kerberos authentication with load-balanced Mailbox serve
 All Exchange servers that run Client Access services that share the same namespaces and URLs must use the same *alternate service account credential* or (ASA credential). In general, it's sufficient to have a single account for a forest for each version of Exchange.
   
 > [!IMPORTANT]
-> Exchange 2010 and Exchange 2016 or Exchange 2019 can't share the same ASA credential. If your ASA credential was created for Exchange 2010, you have to create a new one for Exchange 2016 or 2019.
+> Exchange 2010 and Exchange 2016 can't share the same ASA credential. If your ASA credential was created for Exchange 2010, you have to create a new one for Exchange 2016.
   
 > [!IMPORTANT]
 > While CNAME records are supported for shared namespaces, Microsoft recommends using A records. This ensures that the client correctly issues a Kerberos ticket request based on the shared name, and not the server FQDN.

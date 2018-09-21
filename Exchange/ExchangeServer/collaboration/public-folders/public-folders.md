@@ -20,7 +20,7 @@ Public folders are available in the following Outlook clients:
 
 - Outlook on the web (formerly known as Outlook Web App) for Exchange 2016 or later
 
-- Supported versions of Outlook for [Exchange 2016](../../plan-and-deploy/system-requirements-2016.md#supported-clients-with-latest-updates) and [Exchange 2019](../../plan-and-deploy/system-requirements.md#supported-clients).
+- Supported versions of Outlook for [Exchange Server](../../plan-and-deploy/system-requirements.md).
 
 - Outlook for Mac 2016 and Outlook for Mac for Office 365.
 

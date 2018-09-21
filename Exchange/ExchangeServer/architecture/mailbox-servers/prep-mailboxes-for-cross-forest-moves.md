@@ -20,7 +20,7 @@ To move an Exchange mailbox from a source forest to the target Exchange 2016 or 
 
 - In Exchange 2016, you can move an Exchange 2010, Exchange 2013, or Exchange 2016 mailbox from a source Exchange forest to a target Exchange 2016 forest. If there's at least one Exchange 2016 Mailbox server in the target forest, the forest is considered an Exchange 2016 forest.
 
-- In Exchange 2019, you can move an Exchange 2013, Exchange 2016, or Exchange 2019 mailbox from a source Exchange forest to a target Exchange 2019 forest.  If there's at least one Exchange 2019 Mailbox server in the target forest, the forest is considered an Exchange 2016 forest.
+- In Exchange 2019, you can move an Exchange 2013, Exchange 2016, or Exchange 2019 mailbox from a source Exchange forest to a target Exchange 2019 forest. If there's at least one Exchange 2019 Mailbox server in the target forest, the forest is considered an Exchange 2016 forest.
   
 To prepare for the mailbox move, you need to create mail users (also known as mail-enabled users) with the required Active Directory attributes in the target forest. There are two recommended approaches for creating mail users with the necessary attributes:
   

@@ -9,7 +9,7 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5d11a955-b1cc-4150-a0b9-a8cc48ba9bde
-description: "Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange Server 2016 and 2019."
+description: "Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Mail flow rule actions in Exchange Server

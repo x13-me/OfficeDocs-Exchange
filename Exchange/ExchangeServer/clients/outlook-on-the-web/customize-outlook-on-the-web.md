@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d8d9f735-7181-428f-9049-b9886dce5159
-description: "Summary: Learn how to customize the color and images of the sign-in, language selection, and error pages for Outlook on the web in Exchange Server 2016 or 2019."
+description: "Summary: Learn how to customize the color and images of the sign-in, language selection, and error pages for Outlook on the web in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Customize the Outlook on the web sign-in, language selection, and error pages in Exchange Server

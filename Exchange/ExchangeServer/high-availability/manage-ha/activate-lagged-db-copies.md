@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 493d9c40-644d-49d6-9291-949acbcfdcb6
-description: "Summary: About lagged mailbox database copies and how to activate them in Exchange Server 2016 or 2019."
+description: "Summary: About lagged mailbox database copies and how to activate them in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Activate a lagged mailbox database copy

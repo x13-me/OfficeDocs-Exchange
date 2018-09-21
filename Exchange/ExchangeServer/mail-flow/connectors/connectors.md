@@ -9,7 +9,7 @@ ms.topic: hub-page
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 73559b0c-fc0e-41fd-84df-d07442137a0c
-description: "Summary: Learn how connectors are used in Exchange Server 2016 or 2019 for incoming and outgoing mail flow in your organization."
+description: "Summary: Learn how connectors are used in Exchange Server 2016 or Exchange Server 2019 for incoming and outgoing mail flow in your organization."
 ---
 
 # Connectors

@@ -10,7 +10,7 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 784bf48f-8af5-422c-a63f-2f01fc0cf151
-description: "Summary: Use these steps to create a copy of a mailbox database in Exchange Server 2016 or 2019."
+description: "Summary: Use these steps to create a copy of a mailbox database in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Add a mailbox database copy

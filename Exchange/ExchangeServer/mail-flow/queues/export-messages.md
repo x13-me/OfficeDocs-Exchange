@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 688b342c-f380-4fe0-afce-7e38cf490627
-description: "Summary: Learn how to export messages from queues in Exchange Server 2016 and 2019."
+description: "Summary: Learn how to export messages from queues in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Export messages from queues

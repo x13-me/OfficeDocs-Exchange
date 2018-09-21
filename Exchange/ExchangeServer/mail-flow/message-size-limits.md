@@ -9,7 +9,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b6a3840d-b821-4e53-877b-59c16be77206
-description: "Summary: Learn how administrators can apply limits to messages in an Exchange Server 2016 or 2019 organization."
+description: "Summary: Learn how administrators can apply limits to messages in an Exchange Server 2016 or Exchange Server 2019 organization."
 ---
 
 # Message size limits in Exchange Server

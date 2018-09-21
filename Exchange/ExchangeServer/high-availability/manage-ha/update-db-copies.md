@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bead3cc5-7d50-446f-95b7-e432bcb7968e
-description: "Summary: How to update, or seed , a mailbox database copy in Exchange Server 2016 or 2019."
+description: "Summary: How to update, or seed , a mailbox database copy in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Update a mailbox database copy

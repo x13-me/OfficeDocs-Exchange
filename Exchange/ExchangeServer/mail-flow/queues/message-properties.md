@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 8e6187c1-76f0-49da-bc24-2ab57cfb3c2c
-description: "Summary: Learn about the filterable properties for messages in queues in Exchange Server 2016 and 2019."
+description: "Summary: Learn about the filterable properties for messages in queues in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Properties of messages in queues

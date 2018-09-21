@@ -9,7 +9,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b5e4c0e9-0558-4b90-bc12-f67adbfb59ac
-description: "Summary: Administrators can learn about In-Place Archiving and archive mailboxes in Exchange Server 2016 or 2019."
+description: "Summary: Administrators can learn about In-Place Archiving and archive mailboxes in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # In-Place Archiving in Exchange Server

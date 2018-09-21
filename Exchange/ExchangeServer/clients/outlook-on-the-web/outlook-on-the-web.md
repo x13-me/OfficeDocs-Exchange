@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 3814b665-01e8-4881-9a44-163f14789ee4
-description: "Summary: Learn about administrative tasks for managing Outlook on the web (Outlook Web App) in Exchange Server 2016 or 2019."
+description: "Summary: Learn about administrative tasks for managing Outlook on the web (Outlook Web App) in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Outlook on the web in Exchange Server

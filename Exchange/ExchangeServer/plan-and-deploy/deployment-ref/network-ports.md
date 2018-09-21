@@ -13,8 +13,6 @@ description: "Summary: Learn about the network ports that are used by Exchange 2
 ---
 
 # Network ports for clients and mail flow in Exchange
-
- **Summary**: Learn about the network ports that are used by Exchange 2016 and Exchange 2019 for client access and mail flow.
   
 This topic provides information about the network ports that are used by Exchange Server 2016 and Exchange Server 2019 for communication with email clients, Internet mail servers, and other services that are external to your local Exchange organization. Before we get into that, understand the following ground rules:
   

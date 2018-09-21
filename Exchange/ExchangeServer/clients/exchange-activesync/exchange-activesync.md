@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5fafaff3-eb37-4fdb-95f0-e56c45ea5884
-description: "Summary: Exchange ActiveSync is a client protocol that lets you synchronize a mobile device with your Exchange mailbox. Exchange ActiveSync is enabled by default when you install Exchange Server 2016 or 2019."
+description: "Summary: Exchange ActiveSync is a client protocol that lets you synchronize a mobile device with your Exchange mailbox. Exchange ActiveSync is enabled by default when you install Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Exchange ActiveSync

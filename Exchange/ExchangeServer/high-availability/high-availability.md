@@ -9,7 +9,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b1704c87-5f5c-464e-9dc5-1bb1bdf9ac2a
-description: "Summary: Learn about the high availability and site resilience capabilities available in Exchange Server 2016 and 2019."
+description: "Summary: Learn about the high availability and site resilience capabilities available in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # High availability and site resilience

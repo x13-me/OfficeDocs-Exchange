@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9fcfb9b6-bd24-4218-a163-bc599cd5476a
-description: "Summary: Learn how to configure the Managed Folder Assistant in Exchange Server 2016 and 2019."
+description: "Summary: Learn how to configure the Managed Folder Assistant in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Configure and run the Managed Folder Assistant in Exchange Server

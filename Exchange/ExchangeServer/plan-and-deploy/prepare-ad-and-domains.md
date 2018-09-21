@@ -1,5 +1,5 @@
 ---
-title: "Prepare Active Directory and domains for Exchange 2016"
+title: "Prepare Active Directory and domains for Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -11,11 +11,10 @@ localization_priority: Critical
 ms.collection: Strat_EX_Admin
 ms.assetid: f895e1ce-d766-4352-ac46-ec959c9954a9
 description: "Summary: Learn how to prepare Active Directory for Exchange 2016 or Exchange 2019."
+monikerRange: "exchserver-2016 || exchserver-2019"
 ---
 
-# Prepare Active Directory and domains for Exchange
-
- **Summary**: Learn how to prepare Active Directory for Exchange 2016 or Exchange 2019.
+# Prepare Active Directory and domains for Exchange Server
 
 Exchange uses Active Directory to store information about mailboxes and the configuration of Exchange servers in the organization. Before you install Exchange Server 2016 or Exchange Server 2019 (even if you have earlier versions of Exchange installed in your organization), you need to prepare your Active Directory forest and its domains for the new version of Exchange. There are two ways to do this:
 
@@ -23,11 +22,7 @@ Exchange uses Active Directory to store information about mailboxes and the conf
 
 - **Follow the steps in this topic**: If you have a large Active Directory deployment, or if a separate team manages Active Directory, this topic is for you. Following the steps in this topic gives you much more control over each stage of preparation, and who can do each step. For example, Exchange administrators might not have the required permissions to extend the Active Directory schema.
  
-For details on new schema classes and attributes that Exchange adds to Active Directory, including those made by Cumulative Updates (CUs), see:
-
-- [Exchange 2016 Active Directory schema changes](active-directory/ad-schema-changes.md).
-
-- [Exchange 2019 Active Directory schema changes](active-directory/ad-schema-changes-2019.md).
+For details on new schema classes and attributes that Exchange adds to Active Directory, including those made by Cumulative Updates (CUs), see [Active Directory schema changes in Exchange Server](active-directory/ad-schema-changes.md).
 
 For details about what's happening when Active Directory is being prepared for Exchange, see [What changes in Active Directory when Exchange is installed?](active-directory/ad-changes.md).
 
@@ -37,7 +32,7 @@ For details about what's happening when Active Directory is being prepared for E
 
 - Estimated time to complete: 10-15 minutes or more (not including Active Directory replication), depending on organization size and the number of child domains.
 
-- The computer that you use for these procedures needs to meet the system requirements for [Exchange 2016](system-requirements-2016.md) or [Exchange 2019](system-requirements.md). Also, your Active Directory needs to meet the requirements in the "Network and directory servers" sections in those topics.
+- The computer that you use for these procedures needs to meet the system requirements for [Exchange](system-requirements.md). Also, your Active Directory needs to meet the requirements in the "Network and directory servers" sections in those topics.
 
 - If your organization has multiple Active Directory domains, we recommend the following approach:
 
@@ -47,7 +42,7 @@ For details about what's happening when Active Directory is being prepared for E
 
 - The computer that you use for all procedures in this topic requires access to Setup.exe in the Exchange installation files:
 
-    1. Download the latest version of [Exchange 2016](../new-features/updates.md) or [Exchange 2019](../new-features-2019/updates.md).
+    1. Download the latest version of [Exchange Sever](updates.md).
     
     2. In File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. Note the virtual DVD drive letter that's assigned.
 
@@ -58,7 +53,7 @@ For details about what's happening when Active Directory is being prepared for E
     - Press **Start**. In the **Search** box, type **Command Prompt**, then in the list of results, select **Command Prompt**.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
 ## Step 1: Extend the Active Directory schema
 
@@ -217,12 +212,16 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 - **objectVersion (Configuration)** is the **objectVersion** attribute located in the **Configuration** naming context in the **CN=\<_your organization_\>, CN=Microsoft Exchange, CN=Services, CN=Configuration, DC=\<_domain_\>** container.
 
+::: moniker range="exchserver-2019"
 ### Exchange 2019 Active Directory versions
 
 |**Exchange 2019 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
+|Exchange 2019 RTM|15332|13236|16213|
 |Exchange 2019 Preview|15332|13236|16213|
+::: moniker-end
 
+::: moniker range="exchserver-2016"
 ### Exchange 2016 Active Directory versions
 
 |**Exchange 2016 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
@@ -239,3 +238,4 @@ The tables in the following sections contain the Exchange objects in Active Dire
 |Exchange 2016 CU1|15323|13236|16211|
 |Exchange 2016 RTM|15317|13236|16210|
 |Exchange 2016 Preview|15317|13236|16041|
+::: moniker-end

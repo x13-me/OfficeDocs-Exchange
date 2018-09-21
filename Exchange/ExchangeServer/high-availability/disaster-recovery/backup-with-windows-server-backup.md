@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 188a8291-0a41-4ca2-b6d2-94242e2b1ffc
-description: "Summary: Step-by-step guidance for backing up your Exchange Server 2016 and 2019 Sdata."
+description: "Summary: Step-by-step guidance for backing up your Exchange Server 2016 and Exchange Server 2019 Sdata."
 ---
 
 # Use Windows Server Backup to back up Exchange

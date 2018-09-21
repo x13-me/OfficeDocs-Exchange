@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
-description: "Summary: Learn how to configure journaling in Exchange Server 2016 or 2019."
+description: "Summary: Learn how to configure journaling in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Journaling procedures in Exchange Server

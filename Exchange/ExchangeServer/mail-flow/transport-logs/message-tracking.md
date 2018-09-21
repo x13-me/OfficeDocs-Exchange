@@ -9,7 +9,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bada2ea7-6d7c-4630-b7f1-67f56818f0ff
-description: "Summary: Learn about message tracking and the message tracking log in Exchange Server 2016 and 2019."
+description: "Summary: Learn about message tracking and the message tracking log in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Message tracking

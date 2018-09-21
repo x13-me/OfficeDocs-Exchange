@@ -35,9 +35,9 @@ By default, POP3 client connectivity isn't enabled in Exchange. To enable POP3 c
   
 3. Restart the POP3 services to save the changes.
     
-4. Configure the authenticated SMTP settings for internal and external clients. For more information, see [Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange 2016](configure-authenticated-smtp.md).
+4. Configure the authenticated SMTP settings for internal and external clients. For more information, see [Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange Server](configure-authenticated-smtp.md).
     
-For more information about POP3, see [POP3 and IMAP4 in Exchange 2016](pop3-and-imap4.md).
+For more information about POP3, see [POP3 and IMAP4 in Exchange Server](pop3-and-imap4.md).
   
 ## What do you need to know before you begin?
 
@@ -190,7 +190,7 @@ Get-Service MSExchangePOP3; Get-Service MSExchangePOP3BE
 
 ## Step 4: Configure the authenticated SMTP settings for POP3 clients
 
-Because POP3 isn't used to send email messages, you need to configure the authenticated SMTP settings that are used by internal and external POP3 clients. For more information, see [Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange 2016](configure-authenticated-smtp.md).
+Because POP3 isn't used to send email messages, you need to configure the authenticated SMTP settings that are used by internal and external POP3 clients. For more information, see [POP3 and IMAP4 in Exchange Server](pop3-and-imap4.md).
   
 ## How do you know this task worked?
 
@@ -211,7 +211,7 @@ To verify that you have enabled and configured POP3 on the Exchange server, perf
     
   - **Internal clients**: Use the **Test-PopConnectivity** cmdlet. For example, `Test-PopConnectivity -ClientAccessServer <ServerName> -Lightmode -MailboxCredential (Get-Credential)`. For more information, see [Test-PopConnectivity](http://technet.microsoft.com/library/73f0ce87-e723-43e5-a32c-29cd2d899ff9.aspx).
     
-    **Note**: The _Lightmode_ switch tells the command test POP3 logons to the server. To test sending (SMTP) and receiving (POP3) a message, you need to configure the authenticated SMTP settings as described in [Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange 2016](configure-authenticated-smtp.md).
+    **Note**: The _Lightmode_ switch tells the command test POP3 logons to the server. To test sending (SMTP) and receiving (POP3) a message, you need to configure the authenticated SMTP settings as described in [POP3 and IMAP4 in Exchange Server](pop3-and-imap4.md).
     
   - **External clients**: Use the **Exchange Server** \> **POP Email** test in the Microsoft Remote Connectivity Analyzer at [https://go.microsoft.com/fwlink/p/?LinkID=313839](https://go.microsoft.com/fwlink/p/?LinkID=313839).
     

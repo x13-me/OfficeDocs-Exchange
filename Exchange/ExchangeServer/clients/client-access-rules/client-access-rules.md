@@ -1,5 +1,5 @@
 ---
-title: "Client Access Rules in Exchange Server"
+title: "Client Access Rules in Exchange 2019"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -9,9 +9,10 @@ ms.topic: overview
 ms.service: exchange-server-it-pro
 localization_priority: Normal
 description: "Summary: Learn how administrators can use Client Access Rules to allow or block access to the Exchange admin center (EAC) and remote PowerShell in Exchange 2019."
+monikerRange: "exchserver-2019"
 ---
 
-# Client Access Rules in Exchange Server
+# Client Access Rules in Exchange 2019
 
 Client Access Rules help you control access to your Exchange 2019 organization in the Exchange admin center (EAC) and remote PowerShell based on client properties or client access requests. Client Access Rules are like mail flow rules (also known as transport rules) for EAC and remote PowerShell connections to your Exchange organization. You can prevent EAC and remote PowerShell clients from connecting to Exchange based on their IP address, authentication type, and user property values. For example:
 

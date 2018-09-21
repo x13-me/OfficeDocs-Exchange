@@ -41,7 +41,7 @@ Looking for other management tasks related to backing up and restoring data? Che
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange infrastructure permissions" section in the [Exchange infrastructure and PowerShell permissions](../../permissions/feature-permissions/infrastructure-permissions.md) topic.
     
-- You can recover a server using the latest avaialble Cumulative Update (CU). Only the last two CUs are available for download. For more information, see [Exchange 2016](../../new-features/updates.md) or [Updates for Exchange 2019](../../new-features-2019/updates.md).
+- You can recover a server using the latest avaialble Cumulative Update (CU). Only the last two CUs are available for download. For more information, see [Updates for Exchange Server](../../plan-and-deploy/updates.md).
     
 - The target server must use the same version of Windows Server as the lost server. For example, you can't recover a lost Exchange 2016 server that was running Windows Server 2012 on a new server that's running Windows 2012 R2, or vice-versa.
 
@@ -62,7 +62,7 @@ Looking for other management tasks related to backing up and restoring data? Che
     
 3. Join the server to the same domain as the lost server.
     
-4. Install the necessary prerequisites and operating system components on the target server. For details, see [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements-2016.md) or [Exchange 2019 prerequisites](../../plan-and-deploy/prerequisites.md).
+4. Install the necessary prerequisites and operating system components on the target server. For details, see [Exchange Server system requirements](../../plan-and-deploy/prerequisites.md).
 
 5. On the target server, open File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. Note the virtual DVD drive letter that's assigned.
   
@@ -90,7 +90,7 @@ Looking for other management tasks related to backing up and restoring data? Che
     E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:RecoverServer /TargetDir:"D:\Program Files\Exchange"
     ```
 
-For more information about the optional switches, see [Install Exchange 2016 or Exchange 2019 using unattended mode](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
+For more information about the optional switches, see [Use unattended mode in Exchange Setup](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
 
 8. After Setup has completed, but before you put the recovered server into production, reconfigure any custom settings that were previously present on the server, and then restart the server.
     

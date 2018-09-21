@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c4bbfd52-6196-49c7-8c31-777fbbee11f2
-description: "Summary: Learn how to configure mailbox audit logging on mailboxes in Exchange Server 2016 and 2019."
+description: "Summary: Learn how to configure mailbox audit logging on mailboxes in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Enable or disable mailbox audit logging for a mailbox

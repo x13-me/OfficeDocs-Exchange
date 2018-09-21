@@ -1,5 +1,5 @@
 ---
-title: "Procedures for Client Access Rules in Exchange Server"
+title: "Procedures for Client Access Rules in Exchange 2019"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -9,9 +9,10 @@ ms.topic: article
 ms.service: exchange-server-it-pro
 localization_priority: Normal
 description: "Summary: Learn how to view, create, modify, delete, and test Client Access Rules in Exchange 2019."
+monikerRange: "exchserver-2019"
 ---
 
-# Procedures for Client Access Rules in Exchange Server
+# Procedures for Client Access Rules in Exchange 2019
 
 Client Access Rules allow or block Exchange admin center (EAC) or remote PowerShell connections to your Exchange 2019 organization based on the properties of the connection. For more information about Client Access Rules, see [Client Access Rules in Exchange Server](client-access-rules.md).
 

@@ -10,7 +10,7 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: f4c170cd-76d3-499d-a34e-8a2bc8724c52
-description: "Summary: Learn how to assign certificates to Exchange services in Exchange Server 2016 and 2019."
+description: "Summary: Learn how to assign certificates to Exchange services in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Assign certificates to Exchange Server services

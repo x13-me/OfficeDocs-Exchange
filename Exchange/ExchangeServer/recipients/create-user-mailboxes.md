@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
-description: "Summary: Learn how to create mailboxes for users in Exchange Server 2016 or 2019."
+description: "Summary: Learn how to create mailboxes for users in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Create user mailboxes in Exchange Server

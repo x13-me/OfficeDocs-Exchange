@@ -9,7 +9,7 @@ ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b
-description: "Summary: Learn about permissions that are required to manage policy and compliance features in Exchange Server 2016 and 2019."
+description: "Summary: Learn about permissions that are required to manage policy and compliance features in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Messaging policy and compliance permissions in Exchange Server

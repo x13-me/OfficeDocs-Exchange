@@ -325,7 +325,7 @@ In this phase, you configure Exchange on exVM and test mail delivery between two
     
 7. Click **I have read and accept the license terms**, and then click **Install**. On the **Installation is Complete** page, click **Finish**.
     
-8. From Internet Explorer, download the latest version of [Exchange 2016](../../new-features/updates.md) or [Exchange 2019](../../new-features-2019/updates.md).
+8. From Internet Explorer, download the latest version of [Updates for Exchange Server](../updates.md).
     
 9. Click **Save** to store the ISO file in the Downloads folder.
     
@@ -406,15 +406,11 @@ Start-AzureRMVM -Name exVM -ResourceGroupName $rgName
 ## See also
 
 [Deploy new installations of Exchange](deploy-new-installations.md)
-
-[Exchange 2016 system requirements](../../plan-and-deploy/system-requirements-2016.md)
   
-[Exchange 2019 system requirements](../../plan-and-deploy/system-requirements.md)
+[Exchange Server system requirements](../../plan-and-deploy/system-requirements.md)
   
 [Exchange Server](../../exchange-server.md)
 
-[What's new in Exchange 2016](../../new-features/new-features.md)
-  
-[What's new in Exchange 2019](../../new-features-2019/new-features-2019.md)
+[What's new in Exchange Server](../../new-features-2019/new-features.md)
 
 [Cloud adoption Test Lab Guides (TLGs)](https://technet.microsoft.com/library/dn635308.aspx)

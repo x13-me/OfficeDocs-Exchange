@@ -9,7 +9,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c1839a5b-49f9-4c53-b247-f4e5d78efc45
-description: "Summary: Learn about the three types of accepted domains in Exchange Server 2016 or 2019: authoritative, internal relay, and external relay."
+description: "Summary: Learn about the three types of accepted domains in Exchange Server 2016 or Exchange Server 2019: authoritative, internal relay, and external relay."
 ---
 
 # Accepted domains in Exchange Server

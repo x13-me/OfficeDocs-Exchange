@@ -1,5 +1,5 @@
 ---
-title: "Messaging records management in Exchange 2016"
+title: "Messaging records management in Exchange Server"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -9,7 +9,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 0dd92e9c-881e-43c0-9bbf-f41fdc9dfd87
-description: "Summary: Learn about Messaging records management in Exchange Server 2016 and 2019."
+description: "Summary: Learn about Messaging records management in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Messaging records management in Exchange Server

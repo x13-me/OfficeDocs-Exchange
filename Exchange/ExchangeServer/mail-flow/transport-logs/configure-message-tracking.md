@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 50eb5213-cf27-4179-b427-38d751ee4a70
-description: "Summary: Learn how to configure message tracking in Exchange Server 2016 or 2019."
+description: "Summary: Learn how to configure message tracking in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Configure message tracking

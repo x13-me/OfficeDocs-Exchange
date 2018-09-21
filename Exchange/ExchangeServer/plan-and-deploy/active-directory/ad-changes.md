@@ -3,7 +3,7 @@ title: "What changes in Active Directory when Exchange is installed?"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 9/20/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.prod: exchange-server-it-pro
@@ -15,8 +15,6 @@ description: "Summary: Learn how installing Exchange 2016 or Exchange 2019 affec
 
 # What changes in Active Directory when Exchange is installed??
 
- **Summary**: Learn how installing Exchange 2016 or Exchange 2019 affects Active Directory.
-  
 When you install Exchange Server 2016 or Exchange Server 2019, changes are made to your Active Directory forest and domains to store information about the Exchange servers, mailboxes, and other Exchange-related objects in your organization.
 
 Three steps are required to prepare Active Directory for Exchange:
@@ -34,11 +32,7 @@ You can make these changes before you install the first Exchange 2016 or Exchang
   
 ## Extend the Active Directory schema
 
-Extending the Active Directory schema adds and updates classes, attributes, and other items. These changes are needed so that Exchange can create containers and objects to store information about the Exchange organization. Because Exchange makes a lot of changes to the Active Directory schema, there's a topic dedicated to this step. To see all of the changes made to the schema, see:
-
-- [Exchange 2016 Active Directory schema changes](ad-schema-changes.md).
-
-- [Exchange 2019 Active Directory schema changes](ad-schema-changes-2019.md).
+Extending the Active Directory schema adds and updates classes, attributes, and other items. These changes are needed so that Exchange can create containers and objects to store information about the Exchange organization. Because Exchange makes a lot of changes to the Active Directory schema, there's a topic dedicated to this step. To see all of the changes made to the schema, see [Active Directory schema changes in Exchange Server](ad-schema-changes.md).
   
 After the schema has been extended by running the _/PrepareSchema_ command, the _/PrepareAD command, or installing the first Exchange server using the Exchange Setup wizard, the schema version is set in the **ms-Exch-Schema-Version-Pt** attribute. To verify that the Active Directory schema was extended successfully, you can check the value stored in this attribute. For more information, see [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions).
   

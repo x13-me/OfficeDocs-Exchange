@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 013dbe8c-30de-4c9c-baa9-75081b9229e8
-description: "Summary: How users in your Exchange Server 2016 or 2019 organization can quickly set up their Outlook for iOS and Android accounts using Basic authentication."
+description: "Summary: How users in your Exchange 2016 or Exchange 2019 organization can quickly set up their Outlook for iOS and Android accounts using Basic authentication."
 ---
 
 # Account setup in Outlook for iOS and Android using Basic authentication

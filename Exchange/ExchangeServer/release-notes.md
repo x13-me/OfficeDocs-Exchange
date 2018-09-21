@@ -1,5 +1,5 @@
 ---
-title: "Release notes for Exchange 2016"
+title: "Release notes for Exchange Server"
 ms.author: dstrome
 author: dstrome
 manager: serdars
@@ -9,12 +9,30 @@ ms.topic: get-started-article
 ms.prod: exchange-server-it-pro
 localization_priority: Critical
 ms.assetid: 1879fd5e-3d63-4264-9cc2-9c050c6ab3c5
-description: "Summary: Important information that you need to know to successfully deploy Exchange Server 2016."
-monikerRange: "=exchserver-2016"
+description: "Summary: Important information that you need to know to successfully deploy Exchange Server 2016 or Exchange Server 2019."
+monikerRange: "exchserver-2016 || exchserver-2019"
 ---
 
-# Release notes for Exchange 2016
+# Release notes for Exchange Server
 
+::: moniker range="exchserver-2019"
+> [!TIP]
+> Coming from the Exchange Deployment Assistant? Click [Release notes for Exchange 2016](release-notes.md) or [Release notes for Exchange 2013](https://technet.microsoft.com/library/jj150489(v=exchg.150).aspx) .
+
+Welcome to Microsoft Exchange Server 2019! This topic contains important information that you need to know to successfully deploy Exchange 2019. Please read this topic completely before beginning your deployment.
+
+**Known issues in Exchange Server 2019**
+
+When attempting to uninstall Exchange Server on Windows 2019 Server Core using the graphical setup wizard, the operation will fail. The wizard attempts to launch the Control Panel to uninstall Exchange Server which does not exist in Windows Server Core. To uninstall Exchange Server on Windows Server Core use the command line version of Setup:
+
+    ```
+    Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Uninstall
+    ```
+
+This issue will be resolved in a future CU update for Exchange Server 2019.
+::: moniker-end
+
+::: moniker range="exchserver-2019"
  [!TIP]
 > Coming from the Exchange Deployment Assistant? Click [Release notes for Exchange 2013](https://technet.microsoft.com/library/jj150489(v=exchg.150).aspx).
 
@@ -110,3 +128,4 @@ Welcome to Microsoft Exchange Server 2016! This topic contains important informa
 - Configure your firewall or external mail exchanger (MX) DNS record to send mail to an Edge Transport server that doesn't have Exchange 2016 Cumulative Update 1 installed. You might need to configure your firewall to allow TCP port 25 to connect to the new Internet-facing server.
 
 - Configure your firewall or external MX DNS record to send mail to an Exchange 2016 Mailbox server. You might need to configure your firewall to allow TCP port 25 to connect to the new Internet-facing server.
+::: moniker-end

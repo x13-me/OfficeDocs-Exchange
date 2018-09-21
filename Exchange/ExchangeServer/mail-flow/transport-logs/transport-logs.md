@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f8cf635d-60c2-4aa3-9c06-244c29942cba
-description: "Summary: Learn about transport logging in Exchange Server 2016 and 2019 and the kinds of logs and information that is logged."
+description: "Summary: Learn about transport logging in Exchange Server 2016 and Exchange Server 2019 and the kinds of logs and information that is logged."
 ---
 
 # Transport logs in Exchange Server

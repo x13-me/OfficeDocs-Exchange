@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 11801f73-4934-4025-a1c1-3935dada7e9b
-description: "Summary: Learn how to create, modify, and remove accepted domains in Exchange Server 2016 or 2019."
+description: "Summary: Learn how to create, modify, and remove accepted domains in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Procedures for accepted domains in Exchange Server

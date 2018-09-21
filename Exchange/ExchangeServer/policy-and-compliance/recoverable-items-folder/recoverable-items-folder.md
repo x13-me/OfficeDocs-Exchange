@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
-description: "Summary: Learn about protecting user account data in Exchange Server 2016 and 2019 by using the Recoverable Items folder."
+description: "Summary: Learn about protecting user account data in Exchange Server 2016 and Exchange Server 2019 by using the Recoverable Items folder."
 ---
 
 # Recoverable Items folder in Exchange Server

@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5433c1d3-ad2e-4f82-b50d-b67964b32f26
-description: "Summary: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange Server 2016 and 2019."
+description: "Summary: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Find queues and messages in queues in the Exchange Management Shell

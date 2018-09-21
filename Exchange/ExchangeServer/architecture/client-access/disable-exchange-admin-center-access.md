@@ -1,24 +1,27 @@
 ---
-title: "Turn off access to the Exchange admin center in Exchange 2016"
+title: "Turn off access to the Exchange admin center"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 9/20/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 49f4fa77-1722-4703-81c9-8724ae0334fb
-description: "Summary: Learn how to disable access to the Exchange admin center (EAC) in Exchange 2016."
+description: "Summary: Learn how to disable access to the Exchange admin center (EAC) in Exchange Server 2016 or Exchange Server 2019."
+monikerRange: "exchserver-2016 || exchserver-2019"
 ---
 
-# Turn off access to the Exchange admin center in Exchange 2016
-
-> [!NOTE]
-> The procedures in this topic apply to Exchange 2016. In Exchange 2019, you can use Client Access Rules to block client access to the EAC. For more information, see [Client Access Rules in Exchange Server](../../clients/client-access-rules/client-access-rules.md).
+# Turn off access to the Exchange admin center
 
 The Exchange admin center (EAC) is the primary management interface for Exchange 2013 or later. For more information, see [Exchange admin center in Exchange Server](exchange-admin-center.md). By default, access to the EAC isn't restricted, and access to Outlook on the web (formally known as Outlook Web App) on an on an Internet-facing Exchange server also gives access to the EAC. You still need valid credentials to sign in to the EAC, but organizations may want to restrict access to the EAC for client connections from the Internet.
-  
+
+::: moniker range="exchserver-2019"
+In Exchange Server 2019, you can use Client Access Rules to block client access to the EAC. For more information, see [Client Access Rules in Exchange Server](../../clients/client-access-rules/client-access-rules.md).
+::: moniker-end
+
+::: moniker range="exchserver-2016"
 The EAC virtual directory is named ECP, and is managed by the \*- **ECPVirtualDirectory** cmdlets. When you set the _AdminEnabled_ parameter to the value `$false` on the EAC virtual directory, you disable access to the EAC for internal and external client connections, without affecting access to the **Settings** \> **Options** page in Outlook on the web.
   
 ![Options menu location in Outlook on the web](../../media/f1227a01-7f83-4af9-abf5-2c3dec6cf3d0.png)
@@ -254,3 +257,4 @@ To verify that you have successfully disabled access to the EAC on an Exchange s
   - **Second Exchange server**: If the second Exchange server is named MBX02, verify that https://mbx02.contoso.com/ecp opens the EAC.
 
   - **New EAC web site on the existing Exchange server**: If the IP address of the new EAC web site is 10.1.1.12, verify that https://10.1.1.12/ecp opens the EAC.
+::: moniker-end 

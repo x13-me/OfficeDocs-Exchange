@@ -10,7 +10,7 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 82f23054-5433-41da-ac5b-90cd081aa993
-description: "Summary: This article describes how passwords and security work in Outlook for iOS and Android with Exchange Server 2016 or 2019 when using Basic authentication with the Exchange ActiveSync protocol."
+description: "Summary: This article describes how passwords and security work in Outlook for iOS and Android with Exchange Server 2016 or Exchange Server 2019 when using Basic authentication with the Exchange ActiveSync protocol."
 ---
 
 # Passwords and security in Outlook for iOS and Android for Exchange Server

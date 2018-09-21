@@ -14,8 +14,6 @@ description: "Summary: Learn how to verify ord troubleshoot your Exchange 2016 o
 ---
 
 # Verify Exchange Server installations
-
- **Summary**: Learn how to verify your Exchange 2016 installation and make troubleshooting easier.
   
 After you install Exchange Server 2016 or Exchange Server 2019, we recommend that you verify the installation by running the **Get-ExchangeServer** cmdlet and by reviewing the Exchange Setup log. If the setup process fails or errors occur during installation, you can use the Setup log to find the source of the problem.
   

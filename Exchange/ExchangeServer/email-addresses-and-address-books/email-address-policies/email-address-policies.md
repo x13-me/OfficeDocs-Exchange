@@ -9,12 +9,12 @@ ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b63b63bb-6faf-4337-8441-50bc64b49bb8
-description: "Summary: Learn about email address policies in Exchange Server 2016 and 2019."
+description: "Summary: Learn about email address policies in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Email address policies in Exchange Server
 
-Email address policies define the rules that create email addresses for recipients in your Exchange organization. Email address policies in Exchange Server 2016 and Exchange 2019 are basically unchanged from Exchange Server 2010.
+Email address policies define the rules that create email addresses for recipients in your Exchange organization. Email address policies in Exchange Server 2016 and Exchange Server 2019 are basically unchanged from Exchange Server 2010.
   
 The SMTP domains that are available to use in email address policies are defined by the *accepted domains* that are configured in the Exchange organization (specifically, authoritative domains and internal relay domains). For more information about accepted domains, see [Accepted domains in Exchange Server](../../mail-flow/accepted-domains/accepted-domains.md).
   

@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5b675b4e-3a33-4191-91ce-44e1c0923517
-description: "Summary: Learn how to configure anonymous relay in Exchange Server 2016 or 2019."
+description: "Summary: Learn how to configure anonymous relay in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Allow anonymous relay on Exchange servers

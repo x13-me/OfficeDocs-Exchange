@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 29bb0358-fc8e-4437-8feb-d2959ed0f102
-description: "Summary: Learn about the elements of high availability and site resilience to incorporate in your Exchange Server 2016 or 2019 deployment plan."
+description: "Summary: Learn about the elements of high availability and site resilience to incorporate in your Exchange Server 2016 or Exchange Server 2019 deployment plan."
 ---
 
 # Plan for high availability and site resilience
@@ -34,7 +34,7 @@ Before deploying a database availability group (DAG) and creating mailbox databa
 ## Hardware requirements
 <a name="HR"> </a>
 
-Generally, there are no special hardware requirements specific to DAGs or mailbox database copies. The servers used must meet all of the requirements set forth in [Exchange Server prerequisites](../plan-and-deploy/prerequisites-2016.md)and [Exchange Server system requirements](../plan-and-deploy/system-requirements-2016.md).
+Generally, there are no special hardware requirements specific to DAGs or mailbox database copies. The servers used must meet all of the requirements set forth in [Exchange Server prerequisites](../plan-and-deploy/prerequisites.md).
 
 ## Storage requirements
 <a name="StoreReq"> </a>

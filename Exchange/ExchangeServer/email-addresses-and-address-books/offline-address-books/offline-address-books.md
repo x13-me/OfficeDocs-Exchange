@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: a6bcb072-4ab9-400e-a5d0-c05264629097
-description: "Summary: Learn how offline address books are created and distributed in Exchange Server 2016 and 2019."
+description: "Summary: Learn how offline address books are created and distributed in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Offline address books in Exchange Server

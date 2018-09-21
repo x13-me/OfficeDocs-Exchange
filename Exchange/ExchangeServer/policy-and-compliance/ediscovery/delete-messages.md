@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
-description: "Summary: Learn how to search for and purge messages from Exchange Server 2016 and 2019 mailboxes."
+description: "Summary: Learn how to search for and purge messages from Exchange Server 2016 and Exchange Server 2019 mailboxes."
 ---
 
 # Search for and delete messages in Exchange Server
