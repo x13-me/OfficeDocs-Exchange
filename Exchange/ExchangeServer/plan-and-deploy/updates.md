@@ -18,25 +18,18 @@ Exchange follows a quarterly delivery model to release Cumulative Updates (CUs) 
 
 Because each CU is a full installation of Exchange that includes updates and changes from all previous CU's, you don't need to install any previously released CU's when installing a new Exchange server using the latest released CU.
 
-::: moniker range="exchserver-2016"
-
-To get the latest version of Exchange 2016, download and install [Cumulative Update 10 for Exchange Server 2016](https://go.microsoft.com/fwlink/p/?linkid=2002912). Because each CU is a full installation of Exchange that includes updates and changes from all previous CU's, you don't need to install any previous CU's or Exchange 2016 RTM first.
-
-::: moniker-end
-
-The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange CUs.
-
 ::: moniker range="exchserver-2019"
-
 **Version**|**Blog post**|
 |:-----|:-----|
 |Exchange 2019 RTM|
 
-- For information about the new features you'll get when you upgrade to Exchange 2019 from previous versions of Exchange, see [What's new in Exchange Server](../new-features/new-features.md).
-
+For information about the new features you'll get when you upgrade to Exchange 2019 from previous versions of Exchange, see [What's new in Exchange Server](../new-features/new-features.md).
 ::: moniker-end
 
 ::: moniker range="exchserver-2016"
+To get the latest version of Exchange 2016, download and install [Cumulative Update 10 for Exchange Server 2016](https://go.microsoft.com/fwlink/p/?linkid=2002912). Because each CU is a full installation of Exchange that includes updates and changes from all previous CU's, you don't need to install any previous CU's or Exchange 2016 RTM first.
+
+The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2016 CUs.
 
 |**Version**|**Blog post**|
 |:-----|:-----|
@@ -52,8 +45,9 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 |Exchange 2016 CU1|[Released: March 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?LinkId=747752)|
 |Exchange 2016 RTM|[Exchange Server 2016: Forged in the cloud. Now available on-premises](https://go.microsoft.com/fwlink/p/?LinkId=747751)|
 
-- For information about the new features you'll get when you upgrade to Exchange 2016 from previous versions of Exchange, see [What's new in Exchange Server](../new-features/new-features.md).
+For information about the new features you'll get when you upgrade to Exchange 2016 from previous versions of Exchange, see [What's new in Exchange Server](../new-features/new-features.md).
 ::: moniker-end
 
 - To upgrade to the latest CU after you've downloaded it, see [Upgrade Exchange to the latest Cumulative Update](../plan-and-deploy/install-cumulative-updates.md).
+
 - For downloads and updates for other versions of Exchange, see [Exchange Server Updates: build numbers and release dates](https://go.microsoft.com/fwlink/p/?LinkId=512549).
