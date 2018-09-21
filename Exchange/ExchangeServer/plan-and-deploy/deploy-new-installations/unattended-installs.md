@@ -15,8 +15,6 @@ description: "Summary: Learn how to perform an unattended setup of Exchange 2016
 
 # Install Exchange 2016 or Exchange 2019 using unattended mode
 
- **Summary**: Learn how to perform an unattended setup of Exchange 2016 or Exchange 2019 from the command line.
-  
 Running Exchange Setup from the command line allows you to automate the installation of Exchange do and other related tasks on Exchange servers (for example, remove an existing Exchange server or recover a failed Exchange server). 
 
 This topic describes the available command line switches, and provides examples.

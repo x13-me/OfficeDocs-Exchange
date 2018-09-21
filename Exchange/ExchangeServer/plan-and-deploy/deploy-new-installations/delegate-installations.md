@@ -15,8 +15,6 @@ description: "Summary: Learn how to configure Exchange 2016 or Exchange 2019 ser
 
 # Delegate the installation of Exchange servers
 
- **Summary**: Learn how to configure Exchange 2016 or Exchange 2019 server objects in Active Directory so users who aren't Exchange administrators can install Exchange.
-  
 In large companies, people who install and configure new Windows servers often aren't Exchange administrators. In Exchange 2016 and Exchange 2019, these users can still install Exchange on Windows servers, but only _after_ an Exchange administrator *provisions* the Exchange server object in Active Directory. Provisioning an Exchange server object makes all of the required Active Directory changes independently of the actual installation of Exchange on a server. An Exchange administrator can provision a new Exchange server object hours or even days before Exchange is installed.
 
 After an Exchange administrator provisions the Exchange server object, the only requirement for installing Exchange on the server is membership in the [Delegated Setup](https://technet.microsoft.com/library/dd876881(v=exchg.150).aspx) role group, which allows members to install Exchange on provisioned servers. If this sounds like something you want to do, then this topic is for you.

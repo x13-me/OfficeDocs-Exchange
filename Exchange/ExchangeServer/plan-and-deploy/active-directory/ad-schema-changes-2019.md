@@ -15,8 +15,6 @@ description: "Summary: Learn about the new and modified schema classes and attri
 
 # Active Directory schema changes in Exchange 2019
 
- **Summary**: Learn about the new and modified schema classes and attributes that are added to Active Directory by Exchange 2019.
-  
 This reference topic provides a summary of the Active Directory schema changes that are made when you install Exchange Server 2019 in your organization. Refer to the .ldf files for more information about changes to the Active Directory schema. The .ldf files are located in the \amd64\Setup\Data\ directory in the Exchange installation files.
   
 Exchange 2019 schema updates are cumulative. Each Cumulative Update (CU) includes all of the changes included in previous releases. This means that if you skip a CU, you may still need to apply schema updates even if the CU you're installing doesn't include its own changes.

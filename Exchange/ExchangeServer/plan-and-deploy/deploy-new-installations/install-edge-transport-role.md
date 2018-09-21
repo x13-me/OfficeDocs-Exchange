@@ -15,8 +15,6 @@ description: "Summary: Learn how to use the Setup wizard in Exchange 2016 or Exc
 
 # Install Exchange Edge Transport servers using the Setup wizard
 
- **Summary**: Learn how to use the Setup wizard in Exchange 2016 or Exchange 2019 to install the Edge Transport server role on a computer.
-  
 Before you install an Exchange Server 2016 or Exchange Server 2019 Edge Transport server, verify the following prerequisites:
   
 - We recommend that you install Edge Transport servers in a perimeter network that's outside of your organization's internal Active Directory forest. Installing the Edge Transport server role on domain-joined computers only enables domain management of Windows features and settings. Edge Transport servers don't directly access Active Directory. Instead, they use Active Directory Lightweight Directory Services (AD LDS) to store configuration and recipient information. For more information about the Edge Transport role, see [Edge Transport servers](../../architecture/edge-transport-servers/edge-transport-servers.md).

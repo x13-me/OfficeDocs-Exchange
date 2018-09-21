@@ -15,8 +15,6 @@ description: "Summary: Learn about tasks you'll need to do after you install Exc
 
 # Exchange Server post-installation tasks
 
- **Summary**: Learn about tasks you'll need to do after you install Exchange 2016 or Exchange 2019.
-  
 Read the following topics to help you configure your new Exchange 2016 or Exchange 2016 organization.
   
 |**Topic**|**Description**|

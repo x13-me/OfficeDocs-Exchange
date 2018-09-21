@@ -15,8 +15,6 @@ description: "Summary: Learn how Exchange 2016 and Exchange 2019 interact with A
 
 # Active Directory in Exchange Server organizations
 
- **Summary**: Learn how Exchange 2016 and Exchange 2019 interacts with Active Directory
-  
 Exchange Server 2016 and Exchange Server 2019 use Active Directory to store and share directory information with Windows. Starting with Exchange 2013, we've made some changes to how Exchange works with Active Directory. These changes are described in this topic.
   
 ## Active Directory driver

@@ -15,8 +15,6 @@ description: "Summary: Learn about the new and modified schema classes and attri
 
 # Active Directory schema changes in Exchange 2016
 
- **Summary**: What new schema classes and attributes Exchange Server 2016 adds to Active Directory, and which existing ones it modifies.
-  
 This reference topic provides a summary of the Active Directory schema changes that are made when you install Exchange 2016. Refer to the .ldf files for more information about changes to the Active Directory schema. The .ldf files are located in the \amd64\Setup\Data\ directory in the Exchange installation files.
   
 Exchange 2016 schema updates are cumulative. Each release includes all of the changes included in previous releases. This means that if you skip a release, you may still need to apply schema updates even if the release you're installing doesn't include its own changes. The following table gives examples of when your Active Directory will be updated, and when it's already up-to-date.

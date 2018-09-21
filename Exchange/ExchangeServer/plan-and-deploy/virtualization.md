@@ -15,8 +15,6 @@ description: "Summary: How to use hardware virtualization software with Exchange
 
 # Exchange Server virtualization
 
- **Summary**: How to use hardware virtualization software with Exchange 2016 and Exchange 2019.
-
 You can deploy Exchange Server 2016 and Exchange Server 2019 in a virtualized environment. This topic provides an overview of the scenarios that are supported for deploying Exchange on hardware virtualization software.
 
 The following terms are used in this discussion of Exchange virtualization:
