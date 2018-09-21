@@ -15,10 +15,10 @@ monikerRange: "exchserver-2016 || exchserver-2019"
 
 # Release notes for Exchange Server
 
-::: moniker range="exchserver-2019"
 > [!TIP]
-> Coming from the Exchange Deployment Assistant? Click [Release notes for Exchange 2016](release-notes.md) or [Release notes for Exchange 2013](https://technet.microsoft.com/library/jj150489(v=exchg.150).aspx) .
+> Looking for release notes for Exchange 2013? See [Release notes for Exchange 2013](https://technet.microsoft.com/library/jj150489(v=exchg.150).aspx).
 
+::: moniker range="exchserver-2019"
 Welcome to Microsoft Exchange Server 2019! This topic contains important information that you need to know to successfully deploy Exchange 2019. Please read this topic completely before beginning your deployment.
 
 **Known issues in Exchange Server 2019**
@@ -32,10 +32,7 @@ When attempting to uninstall Exchange Server on Windows 2019 Server Core using t
 This issue will be resolved in a future CU update for Exchange Server 2019.
 ::: moniker-end
 
-::: moniker range="exchserver-2019"
- [!TIP]
-> Coming from the Exchange Deployment Assistant? Click [Release notes for Exchange 2013](https://technet.microsoft.com/library/jj150489(v=exchg.150).aspx).
-
+::: moniker range="exchserver-2016"
 Welcome to Microsoft Exchange Server 2016! This topic contains important information that you need to know to successfully deploy Exchange 2016. Please read this topic completely before beginning your deployment.
 
 ## Setup
