@@ -15,8 +15,6 @@ description: "Summary: Learn how to install the Exchange 2016 or Exchange 2019 m
 
 # Install the Exchange 2016 management tools
 
- **Summary**: Learn how to install the Exchange 2016 or Exchange 2019 management tools on other computers.
-  
 The management tools in Exchange Server 2016 and Exchange Server 2019 include the Exchange Management Shell and the Exchange Toolbox. You can install the management tools on other client computers or servers in the Active Directory domain to help you manage your Exchange organization. The management tools have similar operating system, .NET Framework, and Windows Management Framework (Windows PowerShell) requirements as an Exchange server. The notable exception is: you can install the management tools on client versions of Windows. For more information, see:
 
 - [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements-2016.md) and [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites-2016.md).

@@ -15,7 +15,6 @@ description: "Summary: Windows operating system prerequisites for Exchange 2019 
 
 # Exchange 2019 prerequisites
 
-
 > [!TIP]
 > Looking for information on previous versions? Use the following links for [Exchange 2016 prerequisites](prerequisites-2016.md) or [Exchange 2013 prerequisites](https://technet.microsoft.com/library/bb691354(v=exchg.150).aspx).
 

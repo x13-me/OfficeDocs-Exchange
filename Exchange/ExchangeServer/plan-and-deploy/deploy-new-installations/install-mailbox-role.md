@@ -17,8 +17,6 @@ description: "Summary: Learn how to use the Setup wizard in Exchange 2016 or Exc
 
 # Install Exchange Mailbox servers using the Setup wizard
 
- **Summary**: Learn how to use the Setup wizard in Exchange 2016 or Exchange 2019 to install the Edge Mailbox server role on a computer.
-  
 Before you install an Exchange Server 2016 or Exchange Server 2019 Mailbox server, verify the following prerequisites:
   
 - Verify the network, computer hardware, operating system, and software requirements at:

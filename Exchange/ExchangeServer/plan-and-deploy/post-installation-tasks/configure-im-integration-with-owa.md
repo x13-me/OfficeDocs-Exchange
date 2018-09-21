@@ -15,8 +15,6 @@ description: "Summary: Learn how to configure IM integration with Outlook on the
 
 # Configure instant messaging integration with Outlook on the web in Exchange
 
- **Summary**: Learn how to configure IM integration with Outlook on the web in Exchange 2016 or Exchange 2019.
-  
 To configure instant messaging (IM) integration between Skype for Business Server and Outlook on the web (formerly known as Outlook Web App) in Exchange 2016 or Exchange 2019, you need to use the Exchange Management Shell. This is different than previous versions of Exchange where you needed to edit the web.config file. If you edit the web.config file instead of using the steps in this topic, the settings are ignored and Outlook on the web users receive the following error message:
   
  `There's a problem with instant messaging. Please try again later.`

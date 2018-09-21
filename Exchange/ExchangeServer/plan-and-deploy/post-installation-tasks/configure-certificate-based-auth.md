@@ -15,8 +15,6 @@ description: "Summary: Learn how to configure Exchange 2016 CU1 or later to use 
 
 # Configure certificate based authentication in Exchange 2016
 
- **Summary**: Learn how to configure Exchange 2016 CU1 or later to use certificate based authentication for Outlook on the web and ActiveSync.
-  
 Certificate based authentication (CBA) in Exchange allows Outlook on the web (formerly known as Outlook Web App) and Exchange ActiveSync clients to be authenticated by client certificates instead of entering a user name and password.
   
 Before you configure Exchange, you need to issue a client certificate to each user. Because of the sheer number of certificates involved, you should use an automated internal public key infrastructure (PKI) to issue and manage the client certificates. An example of an automated internal PKI is Active Directory Certificate Services (AD CS). For more information about AD CS, see [Active Directory Certificate Services Overview](https://go.microsoft.com/fwlink/p/?LinkID=392697). Here's more information about the certificate requirements:

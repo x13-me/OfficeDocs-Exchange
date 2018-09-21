@@ -14,8 +14,6 @@ description: "Summary: Learn how Exchange 2016 and Exchange 2019 retrieve data f
 
 # Access to Active Directory by Exchange servers
 
- **Summary**: Learn how Exchange 2016 and Exchange 2019 retrieve data from Active Directory, and how to recover deleted objects.
-  
 Exchange Server 2019 and Exchange Server 2019 store all configuration and recipient information in the Active Directory directory service database. When an Exchange server requires information about recipients the configuration of the Exchange organization, it queries Active Directory. Active Directory servers must be available for Exchange to function correctly.
   
 This topic explains how Exchange stores and retrieves information in Active Directory so that you can plan access to Active Directory. This topic also discusses issues you should be aware of if you try to recover deleted Exchange Active Directory objects.

@@ -15,8 +15,6 @@ description: "Summary: Learn how to prepare Active Directory for Exchange 2016 o
 
 # Prepare Active Directory and domains for Exchange
 
- **Summary**: Learn how to prepare Active Directory for Exchange 2016 or Exchange 2019.
-
 Exchange uses Active Directory to store information about mailboxes and the configuration of Exchange servers in the organization. Before you install Exchange Server 2016 or Exchange Server 2019 (even if you have earlier versions of Exchange installed in your organization), you need to prepare your Active Directory forest and its domains for the new version of Exchange. There are two ways to do this:
 
 - **Let the Exchange Setup wizard do it for you**: If you don't have a large Active Directory deployment, and you don't have a separate team that manages Active Directory, we recommend using the Setup wizard. Your account needs to be a member of both the Schema Admins and Enterprise Admins security groups. For more information about how to use the Setup wizard, check out [Install Exchange Mailbox servers using the Setup wizard](deploy-new-installations/install-mailbox-role.md).

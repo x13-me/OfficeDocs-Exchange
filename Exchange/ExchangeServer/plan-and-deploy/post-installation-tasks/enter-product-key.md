@@ -17,8 +17,6 @@ description: "Summary: Learn how to enter the product key after installing Excha
 
 # Enter your Exchange Server product key
 
- **Summary**: Learn how to enter the product key after installing Exchange 2016 or Exchange 2019.
-  
 A product key tells Exchange Server 2016 or Exchange Server 2019 that you've purchased a Standard or Enterprise Edition license. If the product key you purchased is for an Enterprise Edition license, it lets you mount more than five databases per server in addition to everything that's available with a Standard Edition license. If you want to read more about Exchange licensing, see [Exchange Server editions and versions](../../plan-and-deploy/deployment-ref/editions-and-versions.md).
   
 If you don't enter a product key, your server is automatically licensed as a trial edition. The trial edition functions just like an Exchange Standard Edition server and is helpful if you want to try out Exchange before you buy it, or to run tests in a lab. The only difference is that you can only use an Exchange server licensed as a trial edition for up to 180 days. If you want to keep using the server beyond 180 days, you'll need to enter a product key or the Exchange admin center (EAC) will start to show reminders that you need to enter a product key to license the server.
