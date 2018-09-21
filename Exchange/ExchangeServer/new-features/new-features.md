@@ -208,7 +208,7 @@ Another advantage of the new architecture is that search scalability is improved
 ::: moniker range="exchserver-2016"
 Microsoft Exchange Server 2016 brings a new set of technologies, features, and services to Exchange Server, the messaging platform that provides email, scheduling, and tools for custom collaboration and messaging service applications. Its goal is to support people and organizations as their work habits evolve from a communication focus to a collaboration focus. At the same time, Exchange 2016 helps lower the total cost of ownership whether you deploy Exchange 2016 on-premises or provision your mailboxes in the cloud.
 
-Choose the section below that matches the version of Exchange that you're upgrading from. If you want to know about features that have been removed or replaced in Exchange 2016, see [What's discontinued in Exchange 2016](discontinued-features.md).
+Choose the section below that matches the version of Exchange that you're upgrading from. If you want to know about features that have been removed or replaced in Exchange 2016, see [What's discontinued in Exchange Server](discontinued-features.md) [What's discontinued in Exchange 2016](discontinued-features.md).
 
 For more information about deploying Exchange 2016, see [Planning and deployment](../plan-and-deploy/plan-and-deploy.md).
 

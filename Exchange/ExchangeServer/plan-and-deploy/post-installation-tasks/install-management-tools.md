@@ -26,7 +26,7 @@ For more information about the Exchange Management Shell and the Exchange Toolbo
 
 - Estimated time to complete: 20 minutes
 
-- The computer where you want to install the Exchange management tools requires access to Setup.exe in the Exchange installation files. Download the latest version of [Exchange Server](../updates.md).
+- The computer where you want to install the Exchange management tools requires access to Setup.exe in the Exchange installation files. To download the latest version of Exchange, see [Updates for Exchange Server](../updates.md).
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     

@@ -42,7 +42,7 @@ For details about what's happening when Active Directory is being prepared for E
 
 - The computer that you use for all procedures in this topic requires access to Setup.exe in the Exchange installation files:
 
-    1. Download the latest version of [Exchange Sever](updates.md).
+    1. Download the latest version of Exchange. For more information, see [Updates for Exchange Server](../updates.md).
     
     2. In File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. Note the virtual DVD drive letter that's assigned.
 

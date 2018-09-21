@@ -63,7 +63,7 @@ The optional (supporting) command line switches that are available in unattended
 
 ## What do you need to know before you begin?
 
-- Download the latest version of [Exchange Server](../updates.md) on the computer where you want to install Exchange.
+- Download the latest version of Exchange on the target computer. For more information, see [Updates for Exchange Server](../updates.md).
 
 - Verify the network, computer hardware, operating system, and software requirements at: [Exchange Server system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange Server prerequisites](../../plan-and-deploy/prerequisites.md).
 

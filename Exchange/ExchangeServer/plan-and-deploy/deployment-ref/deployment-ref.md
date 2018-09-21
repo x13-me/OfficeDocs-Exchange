@@ -21,7 +21,7 @@ description: "Exchange 2016 readiness checks"
   
 [Exchange Server language support](language-support.md)
   
-[Exchange 2016 storage configuration options](storage-configuration.md)
+[Exchange Server storage configuration options](storage-configuration.md)
 
 [Network ports for clients and mail flow in Exchange](network-ports.md)
 

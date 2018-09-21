@@ -22,6 +22,6 @@ MAPI over HTTP is the preferred Outlook connectivity method when connecting to s
   
 Exchange Setup won't automatically enable MAPI over HTTP to avoid making unexpected changes to client connectivity. However, we recommend that you enable MAPI over HTTP as soon as possible to receive the benefits it provides.
   
-For more information about MAPI over HTTP and how to enable it, see [MAPI over HTTP in Exchange 2016](../../clients/mapi-over-http/mapi-over-http.md).
+For more information about MAPI over HTTP and how to enable it, see [MAPI over HTTP in Exchange Server](../../clients/mapi-over-http/mapi-over-http.md).
   
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

@@ -95,7 +95,7 @@ For more information about queues, see [Queues and messages in queues](queues.md
     
     For example, if you didn't create a Send connector to deliver Internet mail, messages that are addressed to external recipients will go to the Unreachable queue, and the **Last Error** value for the message will be: `A matching connector cannot be found to route the external recipient`. For more information about creating a Send connector, see [Create a Send connector to send mail to the Internet](../../mail-flow/connectors/internet-mail-send-connectors.md).
     
-    For more information about SMTP error codes, see [DSNs and NDRs in Exchange 2016](../../mail-flow/non-delivery-reports-and-bounce-messages/non-delivery-reports-and-bounce-messages.md).
+    For more information about SMTP error codes, see [DSNs and NDRs in Exchange Server](../../mail-flow/non-delivery-reports-and-bounce-messages/non-delivery-reports-and-bounce-messages.md).
     
 3. When you right-click a message and select **Properties**, additional details are available on the **General** and **Recipient Information** tabs.
     

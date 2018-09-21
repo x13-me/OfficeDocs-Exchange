@@ -163,7 +163,7 @@ For security and performance reasons, we recommend that you install Exchange 201
 
 ## Hardware
 
-For information about deploying Exchange in a virtualized environment, see [Exchange 2016 virtualization](virtualization.md).
+For information about deploying Exchange in a virtualized environment, see [Exchange Server virtualization](virtualization.md).
 
  **Hardware requirements for Exchange 2016**
 

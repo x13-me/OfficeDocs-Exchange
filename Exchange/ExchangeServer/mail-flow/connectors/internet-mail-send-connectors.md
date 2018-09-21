@@ -22,7 +22,7 @@ When install your first Exchange Server 2016 or Exchange 2019 server, the server
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Send connectors" entry in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
     
-- See [Deploy a new installation of Exchange 2016](../../plan-and-deploy/deploy-new-installations/deploy-new-installations.md) if you're beginning your installation. After the installation, you can use the steps in this topic to create an internet Send connector.
+- See [Deploy a new installation of Exchange Server](../../plan-and-deploy/deploy-new-installations/deploy-new-installations.md) if you're beginning your installation. After the installation, you can use the steps in this topic to create an internet Send connector.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     

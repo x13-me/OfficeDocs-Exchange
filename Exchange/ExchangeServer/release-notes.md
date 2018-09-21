@@ -16,14 +16,14 @@ monikerRange: "exchserver-2016 || exchserver-2019"
 # Release notes for Exchange Server
 
 > [!TIP]
-> Looking for release notes for Exchange 2013? See [Release notes for Exchange 2013](https://technet.microsoft.com/library/jj150489(v=exchg.150).aspx).
+> Looking for the Exchange 2013 release notes? See [Release notes for Exchange 2013](https://technet.microsoft.com/library/jj150489(v=exchg.150).aspx).
 
 ::: moniker range="exchserver-2019"
 Welcome to Microsoft Exchange Server 2019! This topic contains important information that you need to know to successfully deploy Exchange 2019. Please read this topic completely before beginning your deployment.
 
 **Known issues in Exchange Server 2019**
 
-When attempting to uninstall Exchange Server on Windows 2019 Server Core using the graphical setup wizard, the operation will fail. The wizard attempts to launch the Control Panel to uninstall Exchange Server which does not exist in Windows Server Core. To uninstall Exchange Server on Windows Server Core use the command line version of Setup:
+When you attempt to uninstall Exchange Server from Windows 2019 Server Core using the Exchange Setup Wizard, the operation will fail. The wizard attempts to launch the Windows Control Panel to uninstall Exchange, but the Control Panel doesn't exist in Windows Server Core. To uninstall Exchange from Windows Server Core, run the following Setup command from the command line:
 
     ```
     Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Uninstall

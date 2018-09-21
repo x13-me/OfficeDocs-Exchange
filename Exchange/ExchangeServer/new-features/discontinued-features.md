@@ -64,7 +64,7 @@ This section lists the Exchange 2013 features that are no longer available in Ex
 
 |**Feature**|**Comments and mitigation**|
 |:-----|:-----|
-|Client Access server role|The Client Access server role has been replaced by Client Access services that run on the Mailbox server role. The Mailbox server role now performs all functionality that was previously included with the Client Access server role. For more information about the new Mailbox server role, see [Exchange 2016 architecture](../architecture/architecture.md).|
+|Client Access server role|The Client Access server role has been replaced by Client Access services that run on the Mailbox server role. The Mailbox server role now performs all functionality that was previously included with the Client Access server role. For more information about the new Mailbox server role, see [Exchange Server architecture](../architecture/architecture.md).|
 |MAPI/CDO library|The MAPI/CDO library has been replaced by Exchange Web Services (EWS), Exchange ActiveSync (EAS), and Representational State Transfer (REST)<sup>\*</sup> APIs. If an application uses the MAPI/CDO library, it needs to move to EWS, EAS, or the REST APIs to communicate with Exchange 2016.|
  
 <sup>\*</sup> REST APIs will be included in a future release of Exchange 2016.
@@ -97,14 +97,14 @@ This section lists the Exchange 2010 features that are no longer available in Ex
 
 |**Feature**|**Comments and mitigation**|
 |:-----|:-----|
-|Exchange Management Console and Exchange Control Panel|The Exchange Management Console and the Exchange Control Panel have been replaced by the Exchange admin center (EAC). EAC uses the same virtual directory (/ecp) as the Exchange Control Panel. For more information, see [Exchange admin center in Exchange 2016](../architecture/client-access/exchange-admin-center.md).|
+|Exchange Management Console and Exchange Control Panel|The Exchange Management Console and the Exchange Control Panel have been replaced by the Exchange admin center (EAC). EAC uses the same virtual directory (/ecp) as the Exchange Control Panel. For more information, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md).|
  
 ### Client access
 
 |**Feature**|**Comments and mitigation**|
 |:-----|:-----|
 |Outlook 2003 is not supported|To connect Microsoft Outlook to Exchange 2016, the use of the Autodiscover service is required. However, Microsoft Outlook 2003 doesn't support the use of the Autodiscover service.|
-|RPC/TCP access for Outlook clients|In Exchange 2016, Microsoft Outlook clients can connect using Outlook Anywhere (RPC/HTTP) or MAPI over HTTP Outlook 2013 Service Pack 1 and later. If you have Outlook clients in your organization, using Outlook Anywhere and/or MAPI over HTTP is required. For more information, see [Outlook Anywhere](http://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx) and [MAPI over HTTP in Exchange 2016](../clients/mapi-over-http/mapi-over-http.md).|
+|RPC/TCP access for Outlook clients|In Exchange 2016, Microsoft Outlook clients can connect using Outlook Anywhere (RPC/HTTP) or MAPI over HTTP Outlook 2013 Service Pack 1 and later. If you have Outlook clients in your organization, using Outlook Anywhere and/or MAPI over HTTP is required. For more information, see [Outlook Anywhere](http://technet.microsoft.com/library/9026d461-ec6a-4ef5-ba9d-de33030858f3.aspx) and [MAPI over HTTP in Exchange Server](../clients/mapi-over-http/mapi-over-http.md).|
  
 ### Outlook Web App and Outlook
 

@@ -52,8 +52,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 |Exchange 2016 CU1|[Released: March 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?LinkId=747752)|
 |Exchange 2016 RTM|[Exchange Server 2016: Forged in the cloud. Now available on-premises](https://go.microsoft.com/fwlink/p/?LinkId=747751)|
 
-- For information about the new features you'll get when you upgrade to Exchange 2016 from previous versions of Exchange, see [What's new in Exchange 2016](new-features.md).
-
+- For information about the new features you'll get when you upgrade to Exchange 2016 from previous versions of Exchange, see [What's new in Exchange Server](../new-features/new-features.md).
 ::: moniker-end
 
 - To upgrade to the latest CU after you've downloaded it, see [Upgrade Exchange to the latest Cumulative Update](../plan-and-deploy/install-cumulative-updates.md).

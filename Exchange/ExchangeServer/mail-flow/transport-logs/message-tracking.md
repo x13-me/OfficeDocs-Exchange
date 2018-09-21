@@ -131,7 +131,7 @@ Various event types in the **event-id** field are used to classify the message e
 |**DUPLICATEREDIRECT** <br/> |An alternate recipient for the message was already a recipient.  <br/> |
 |**EXPAND** <br/> |A distribution group was expanded.  <br/> |
 |**FAIL** <br/> |Message delivery failed. Sources include **SMTP**, **DNS**, **QUEUE**, and **ROUTING**.  <br/> |
-|**HADISCARD** <br/> |A shadow message was discarded after the primary copy was delivered to the next hop. For more information, see [Shadow redundancy in Exchange 2016](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |
+|**HADISCARD** <br/> |A shadow message was discarded after the primary copy was delivered to the next hop. For more information, see [Shadow redundancy in Exchange Server](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |
 |**HARECEIVE** <br/> |A shadow message was received by the server in the local database availability group (DAG) or Active Directory site.  <br/> |
 |**HAREDIRECT** <br/> |A shadow message was created.  <br/> |
 |**HAREDIRECTFAIL** <br/> |A shadow message failed to be created. The details are stored in the **source-context** field.  <br/> |
@@ -181,7 +181,7 @@ The values in the **source** field in the message tracking log indicate the tran
 |**POISONMESSAGE** <br/> |The event source was the poison message identifier. For more information about poison messages and the poison message queue, see [Queues and messages in queues](../../mail-flow/queues/queues.md) <br/> |
 |**PUBLICFOLDER** <br/> |The event source was a mail-enabled public folder.  <br/> |
 |**QUEUE** <br/> |The event source was a queue.  <br/> |
-|**REDUNDANCY** <br/> |The event source was Shadow Redundancy. For more information, see [Shadow redundancy in Exchange 2016](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |
+|**REDUNDANCY** <br/> |The event source was Shadow Redundancy. For more information, see [Shadow redundancy in Exchange Server](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |
 |**ROUTING** <br/> |The event source was the routing resolution component of the categorizer in the Transport service.  <br/> |
 |**SAFETYNET** <br/> |The event source was Safety Net. For more information, see [Safety Net in Exchange Server](../../mail-flow/transport-high-availability/safety-net.md).  <br/> |
 |**SMTP** <br/> |The message was submitted by the SMTP send or SMTP receive component of the transport service.  <br/> |

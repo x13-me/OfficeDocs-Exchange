@@ -50,9 +50,9 @@ For example, Litigation Hold preserves until the hold is removed any deleted ite
   
 For more details on eDiscovery see the following topics:
   
-- [In-Place eDiscovery in Exchange 2016](../../policy-and-compliance/ediscovery/ediscovery.md)
+- [In-Place eDiscovery in Exchange Server](../../policy-and-compliance/ediscovery/ediscovery.md)
     
-- [In-Place Hold and Litigation Hold in Exchange 2016](../../policy-and-compliance/holds/holds.md)
+- [In-Place Hold and Litigation Hold in Exchange Server](../../policy-and-compliance/holds/holds.md)
     
 - [Configure eDiscovery in SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=257727)
     
@@ -137,7 +137,7 @@ You can provision and manage site mailboxes from SharePoint Server 2016. For mor
   
 - [Site Mailboxes](http://technet.microsoft.com/library/2c4393f4-d274-4e6c-bd09-9577e68c5a33.aspx)
     
-- [Configure email integration for a SharePoint Server 2016 farm](https://technet.microsoft.com/library/ee956941%28v=office.16%29.aspx)
+- [Configure email integration for a SharePoint Server 2016 farm](https://technet.microsoft.com/library/ee956941(v=office.16).aspx)
     
 ## Manage access to unified contact store
 <a name="BKMK_OAuth"> </a>

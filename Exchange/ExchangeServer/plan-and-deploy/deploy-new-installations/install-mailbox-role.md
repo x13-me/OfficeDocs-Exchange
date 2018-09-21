@@ -50,7 +50,7 @@ To install the Edge Transport role on a computer, see [Install Exchange Edge Tra
   
 ## Install the Exchange Mailbox server role
 
-1. Download the latest version of [Exchange Server](../updates.md).
+1. Download the latest version of version of Exchange. For more information, see [Updates for Exchange Server](../updates.md).
     
 2. In File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. In the resulting virtual DVD drive that appears, start Exchange Setup by double-clicking `Setup.exe`.
     

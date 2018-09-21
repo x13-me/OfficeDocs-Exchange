@@ -74,7 +74,7 @@ When the DAG isn't in DAC mode, the specific actions to terminate any surviving 
     
 If any Unified Messaging services are in use in the failed datacenter, they must be disabled to prevent call routing to the failed datacenter. You can disable Unified Messaging services by using the [Disable-UMService](http://technet.microsoft.com/library/16e5df98-4875-42a2-a429-2c66ac6a2e32.aspx) cmdlet (for example, `Disable-UMService EX1`). Alternatively, if you're using a Voice over IP (VoIP) gateway, you can also remove the server entries from the VoIP gateway, or change the DNS records for the failed servers to point to the IP address of the servers in the second datacenter if your VoIP gateway is configured to route calls using DNS.
 
->[!NOTE]
+> [!NOTE]
 > Unified Messaging is not available in Exchange 2019
   
 ## Activating Mailbox Servers

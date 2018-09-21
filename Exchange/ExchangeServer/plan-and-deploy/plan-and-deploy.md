@@ -20,7 +20,7 @@ This topic contains links to topics and information about planning for and then 
 > [!IMPORTANT]
 > Make sure you read the [Release notes for Exchange Server](../release-notes.md) topics before you begin your deployment. The release notes contain important information on issues you might encounter during and after your deployment.
 
-## Plan for Exchange 2016 or Exchange 2019
+## Plan for Exchange Server
 
  Use the information at following links to help plan your deployment of Exchange 2016 or Exchange 2019 into your organization.
 
@@ -75,7 +75,7 @@ For more detailed information about Hyper-V, see [Server Virtualization](https:/
 
 ## Deploy Exchange 2016 or Exchange 2019
 
-During the deployment phase, you install Exchange into your organization. Before you begin the deployment phase, you should plan your Exchange organization. For more information, see the [Planning for Exchange 2016 or Exchange 2019](#plan-for-exchange-2016-or-2019) section earlier in this topic.
+During the deployment phase, you install Exchange into your organization. Before you begin the deployment phase, you should plan your Exchange organization. For more information, see the [Plan for Exchange Server](#plan-for-exchange-server) section earlier in this topic.
 
 Use the information at the following links to help you deploy Exchange.
 

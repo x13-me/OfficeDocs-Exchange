@@ -18,7 +18,7 @@ Permissions in Microsoft Exchange Server are managed using the Role Based Access
   
 - [Role management permissions](rbac-permissions.md)
     
-- [Messaging policy and compliance permissions in Exchange 2016](policy-and-compliance-permissions.md)
+- [Messaging policy and compliance in Exchange Server](../../policy-and-compliance/policy-and-compliance.md)
     
 - [Antispam and antimalware permissions](antispam-and-antimalware-permissions.md)
     
