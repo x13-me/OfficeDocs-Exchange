@@ -4,7 +4,7 @@ ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
 manager: serdars
-ms.date: 8/31/2018
+ms.date: 9/21/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
