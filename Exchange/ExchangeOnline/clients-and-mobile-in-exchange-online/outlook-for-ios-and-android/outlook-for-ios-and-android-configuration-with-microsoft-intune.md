@@ -27,7 +27,7 @@ The following steps will create your app configuration policy. After the configu
     
 2. Select **More Services** \> **Monitoring + Management** \> **Intune**.
     
-3. On the **Mobile apps** blade of the Manage list, select **App configuration policies**.
+3. On the **Client apps** blade of the Manage list, select **App configuration policies**.
     
 4. On the **App Configuration policies** blade, choose **Add**. 
     
