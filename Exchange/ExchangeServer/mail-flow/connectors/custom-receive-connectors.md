@@ -1,30 +1,28 @@
 ---
-title: "Scenarios for custom Receive connectors in Exchange 2016"
+title: "Scenarios for custom Receive connectors in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: scotv
-ms.date: 6/7/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 86f7d6e7-a869-4c90-a570-0239fd0e5872
-description: "Summary: Learn how and when to create custom Receive connectors in Exchange 2016."
+description: "Summary: Learn how and when to create custom Receive connectors in Exchange Server 2016 or Exchange Server 2019."
 ---
 
-# Scenarios for custom Receive connectors in Exchange 2016
+# Scenarios for custom Receive connectors in Exchange Server
 
- **Summary**: Learn how and when to create custom Receive connectors in Exchange 2016.
-  
-By default, Exchange 2016 comes with many different Receive connectors that are configured for most common mail flow scenarios. For more information about these connectors, see [Default Receive connectors created during setup](receive-connectors.md#DefaultConnectors).
+By default, Exchange Server comes with many different Receive connectors that are configured for most common mail flow scenarios. For more information about these connectors, see [Default Receive connectors created during setup](receive-connectors.md#DefaultConnectors).
   
 However, you might need to process messages from another messaging system that's not running Exchange. Or, if you have a network appliance that performs policy checks and then routes messages to your Exchange server, you'll need to manually configure a Receive connector.
   
-![Custom Receive connector options in Exchange 2016](../../media/ac5ceef7-5051-45a3-a1ed-d27aed240301.png)
+![Custom Receive connector options in Exchange Server](../../media/ac5ceef7-5051-45a3-a1ed-d27aed240301.png)
   
 If you need to create a custom Receive connector, consider these issues:
   
-- You can create custom Receive connectors in the following services on Exchange 2016 servers:
+- You can create custom Receive connectors in the following services on Exchange servers:
     
   - **Mailbox servers**: The Transport (Hub) service and the Front End Transport service.
     
@@ -40,13 +38,13 @@ If you need to create a custom Receive connector, consider these issues:
     
 - For Mailbox servers, you need to create custom Receive connectors that use port 25 in the Front End Transport service, not the Transport (Hub) service. Receive connectors in the Transport service on Mailbox servers accept authenticated and encrypted SMTP connections from other transport services on the local server or other Mailbox servers in your organization. Clients don't directly connect to these connectors. This is different than Exchange 2010, because you could only create Receive connectors on Hub Transport servers (not Client Access servers).
     
-Read more about Receive connectors in Exchange 2016 see, [Receive connectors](receive-connectors.md).
+Read more about Receive connectors in Exchange Server see, [Receive connectors](receive-connectors.md).
   
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 10 minutes
     
-- The Exchange admin center (EAC) procedures are only available on Mailbox servers. For more information about the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md).
+- The Exchange admin center (EAC) procedures are only available on Mailbox servers. For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md).
     
 - The Exchange Management Shell procedures are available on Mailbox servers and Edge Transport servers. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     

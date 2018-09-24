@@ -1,21 +1,19 @@
 ---
-title: "Enable or disable Exchange ActiveSync access to mailboxes in Exchange 2016"
+title: "Enable or disable Exchange ActiveSync access to mailboxes in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4
-description: "Learn how administrators can enable or disable Exchange ActiveSync access to specific mailboxes in Exchange 2016."
+description: "Learn how administrators can enable or disable Exchange ActiveSync access to specific mailboxes in Exchange Server 2016 or Exchange Server 2019."
 ---
 
-# Enable or disable Exchange ActiveSync access to mailboxes in Exchange 2016
+# Enable or disable Exchange ActiveSync access to mailboxes in Exchange Server
 
-Learn how administrators can enable or disable Exchange ActiveSync access to specific mailboxes in Exchange 2016.
-  
 ActiveSync is a client protocol that lets users synchronize their Exchange mailbox with a mobile device. By default, ActiveSync is enabled on new user mailboxes. Disabling ActiveSync on a mailbox prevents the user from synchronizing their mailbox with a mobile device (by using ActiveSync).
   
 Administrators can use the Exchange admin center (EAC) or the Exchange Management Shell to enable or disable Exchange ActiveSync access to a mailbox.
@@ -32,17 +30,17 @@ For information about setting up email on your mobile device, see these topics:
     
 For additional management tasks related to user access to mailboxes, see these topics:
   
-- [Enable or disable Outlook on the web access to mailboxes in Exchange 2016](../../clients/outlook-on-the-web/mailbox-access.md)
+- [Enable or disable Outlook on the web access to mailboxes in Exchange Server](../../clients/outlook-on-the-web/mailbox-access.md)
     
-- [Enable or disable POP3 or IMAP4 access to mailboxes in Exchange 2016](../../clients/pop3-and-imap4/configure-mailbox-access.md)
+- [Enable or disable POP3 or IMAP4 access to mailboxes in Exchange Server](../../clients/pop3-and-imap4/configure-mailbox-access.md)
     
-- [Enable or disable MAPI access to mailboxes in Exchange 2016](../../clients/mapi-mailbox-access.md)
+- [Enable or disable MAPI access to mailboxes in Exchange Server](../../clients/mapi-mailbox-access.md)
     
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 5 minutes.
     
-- For more information about accessing and using the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md).
+- For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md).
     
 - To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     

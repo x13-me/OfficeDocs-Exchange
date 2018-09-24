@@ -257,7 +257,7 @@ Monitor regulatory, compliance, and litigation requirements by finding status ch
   
 ### Search for changes to In-Place eDiscovery and Hold status
 
-If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery and In-Place Hold in Exchange Online can help you perform discovery searches for relevant content within mailboxes. You can search the administrator audit log to find mailboxes that have been put on or removed from In-Place eDiscovery or In-Place Hold. [Learn more about In-Place eDiscovery &amp; Hold reports](https://go.microsoft.com/fwlink/?LinkId=799419).
+If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery and In-Place Hold in Exchange Online can help you perform discovery searches for relevant content within mailboxes. You can search the administrator audit log to find mailboxes that have been put on or removed from In-Place eDiscovery or In-Place Hold. [Learn more about In-Place eDiscovery & Hold reports](https://go.microsoft.com/fwlink/?LinkId=799419).
   
 1. In the EAC, press Ctrl+F6 until the primary navigation pane has the focus and you hear "Dashboard, Primary navigation link."
     
@@ -271,7 +271,7 @@ If your organization adheres to legal discovery requirements (related to organiz
     
 6. Press the Tab key about 15 times until you hear "Run an In-Place eDiscovery and Hold report." Press Enter.
     
-7. In the **Search for changes to In-Place eDiscovery &amp; Hold** dialog box which opens, the Start date year combo box has the focus, and you hear "Year of Start date combo box." 
+7. In the **Search for changes to In-Place eDiscovery & Hold** dialog box which opens, the Start date year combo box has the focus, and you hear "Year of Start date combo box." 
     
     > [!TIP]
     > By default, the start date is set to two weeks before yesterday's date. The administrator audit log typically stores entries for 90 days. 

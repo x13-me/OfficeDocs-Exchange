@@ -3,20 +3,18 @@ title: "Exchange infrastructure and PowerShell permissions"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 3646a4e8-36b2-41fb-89a4-79b0963fcb11
-description: "Summary: Learn about permissions that are required to perform tasks to configure various components of Microsoft Exchange Server 2016."
+description: "Summary: Learn about permissions that are required to perform tasks to configure various components of Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Exchange infrastructure and PowerShell permissions
 
- **Summary**: Learn about permissions that are required to perform tasks to configure various components of Microsoft Exchange Server 2016.
-  
-The permissions required to perform tasks to configure various components of Microsoft Exchange Server 2016 depend on the procedure being performed or the cmdlet you want to run. See each of the sections in this topic for more information about their respective features.
+The permissions required to perform tasks to configure various components of Exchange Server depend on the procedure being performed or the cmdlet you want to run. See each of the sections in this topic for more information about their respective features.
   
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:
   
@@ -36,7 +34,7 @@ If you want to delegate the ability to manage a feature to another user, see [De
   
 ## Exchange infrastructure permissions
 
-The following table lists the permissions required to perform tasks that configure general Exchange 2016 settings.
+The following table lists the permissions required to perform tasks that configure general Exchange settings.
   
 Users who are assigned the View-Only Management role group can view the configuration of the features in the following table. For more information, see [View-only Organization Management](https://technet.microsoft.com/library/dd351130.aspx).
   

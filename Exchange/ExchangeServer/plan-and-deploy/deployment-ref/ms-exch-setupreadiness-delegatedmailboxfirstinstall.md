@@ -1,9 +1,9 @@
 ---
 title: "Installation of the first Exchange server in the organization can't be delegated [DelegatedMailboxFirstInstall]"
-ms.author: dstrome
-author: dstrome
+ms.author: chrisda
+author: chrisda
 manager: serdars
-ms.date: 11/17/2014
+ms.date: 8/2/2018
 ms.audience: Developer
 ms.topic: reference
 f1_keywords:
@@ -11,18 +11,19 @@ f1_keywords:
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d451581b-6161-4e95-99f1-03dac8313fae
-description: "Microsoft Exchange Server 2016 Setup can't continue because the logged-on user doesn't have the account permissions that are required to install the first Exchange 2016 server in the organization."
+description: "Exchange Server 2016 or Exchange Server 2019 Setup can't continue because the account doesn't have permission to install the first Exchange server in the organization."
 ---
 
 # Installation of the first Exchange server in the organization can't be delegated [DelegatedMailboxFirstInstall]
 
-Microsoft Exchange Server 2016 Setup can't continue because the logged-on user doesn't have the account permissions that are required to install the first Exchange 2016 server in the organization.
+Exchange Setup can't continue because this is the first Exchange server in the organization, and the first Exchange server needs to be installed by a memeber of the the Enterprise Admins security group (to create the Exchange Organization container and configure objects in it).
   
-Although Exchange 2016 Setup allows using delegation to install successive server roles, Setup requires that the user who is logged on is a member of the Enterprise Admins Windows security group when the first Exchange 2016 server in the organization is installed. This is required because Exchange 2016 Setup creates and configures objects in the Exchange Organization container in Active Directory during installation.
+**Note**: If you haven't already [extended the Active Directory schema for Exchange](../prepare-ad-and-domains.md#step-1-extend-the-active-directory-schema), you need to do one of the following steps:
+
+- A member of the Schema Admins group can extend the Active Directory schema using another computer in the domain before you install Exchange.
+
+- Exchange Setup can extend the schema if your account is a member of the Schema Admins group.
+
+To resolve this issue, run Exchange setup again using an account that's a member of the Enterprise Admins security group (add the current account or use a different account).
   
-> [!NOTE]
-> If you haven't prepared the Active Directory schema for Exchange 2016, the logged-on user must also be a member of the Schema Admins Windows security group. Alternately, another user who's a member of the Schema Admins Windows group can prepare the Active Directory schema before Exchange 2016 is installed.
-  
-To resolve this issue, add the logged-on user as a member of the Enterprise Admins security group. Or, log on to an account that's a member of the Enterprise Admins security group. Then run Exchange 2016 Setup again.
-  
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

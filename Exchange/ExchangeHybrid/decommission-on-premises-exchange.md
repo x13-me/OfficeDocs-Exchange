@@ -39,7 +39,7 @@ Depending on your organization's needs, a hybrid deployment is the best option f
 
 A hybrid deployment is not for everyone; in fact there are usually better options. Many of the tenants that have chosen to deploy a hybrid configuration are under fifty seats. While the list of advantages of a hybrid deployment may sound attractive, it comes with a hefty price with regards to complexity. Some of the smaller tenants require the features of a hybrid deployment, but, for most tenants, it would be a much better experience to use either a cutover, staged, or IMAP migration option. There is a program called FastTrack you can use when deciding on the migration approach to take. Information on FastTrack is described on the [Office 365 FastTrack page](https://go.microsoft.com/fwlink/?linkid=846696). 
   
-Use the following table to decide what type of migration works for your organization. (For more information, see [Ways to migrate multiple email accounts to Office 365](https://support.office.com/en-us/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842?ui=en-US&amp;rs=en-SG&amp;ad=SG).)
+Use the following table to decide what type of migration works for your organization. (For more information, see [Ways to migrate multiple email accounts to Office 365](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842).)
   
 |**Existing organization**|**Number of mailboxes to migrate**|**Do you want to manage user accounts in your on-premises organization?**|**Migration type**|
 |:-----|:-----|:-----|:-----|

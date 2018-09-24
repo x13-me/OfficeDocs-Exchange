@@ -3,19 +3,17 @@ title: "TNEF conversion options"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 989a62fc-4bc1-448f-90c8-7c7b56fe1084
-description: "Summary: Learn about the TNEF message conversion and preservation options that are available in Exchange 2016."
+description: "Summary: Learn about the TNEF message conversion and preservation options that are available in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # TNEF conversion options
 
- **Summary**: Learn about the TNEF message conversion and preservation options that are available in Exchange 2016.
-  
 TNEF, also known as the Transport Neutral Encapsulation Format, Outlook Rich Text Format, or Exchange Rich Text Format, is a Microsoft-specific format for encapsulating MAPI message properties. All versions of Outlook fully support TNEF. Outlook on the web (formerly known as Outlook Web App) translates TNEF into MAPI and displays the formatted messages. Other email clients that don't support TNEF typically display TNEF formatted messages as plain text messages with Winmail.dat or Win.dat attachments. For more information about TNEF, see [Exchange and Outlook message formats](content-conversion.md#Exchange).
   
 Administrators can specify whether TNEF should be preserved or removed from messages that leave their Exchange organization. You can specify TNEF conversion options in the following locations:

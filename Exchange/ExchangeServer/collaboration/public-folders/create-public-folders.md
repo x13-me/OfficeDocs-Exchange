@@ -15,8 +15,6 @@ description: "Summary: Learn how to create a public folder with the Exchange adm
 ---
 
 # Create a public folder
-
- **Summary**: Learn how to create a public folder with the Exchange admin center (EAC) or with the Exchange Management Shell.
   
 Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization.
   

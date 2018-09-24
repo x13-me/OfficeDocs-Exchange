@@ -1,25 +1,23 @@
 ---
-title: "Exchange 2016 language support"
-ms.author: dstrome
-author: dstrome
+title: "Exchange Server language support"
+ms.author: chrisda
+author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/31/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 934686fb-53a2-4b13-aaf0-498e4011d61a
-description: "Microsoft Exchange Server 2016 has enhanced language support for both servers and clients. This topic lists the languages that are available for both servers and clients in Exchange 2016."
+description: "Learn about the languages that are supported for servers and clients in Exchange 2016 and Exchange 2019."
 ---
 
-# Exchange 2016 language support
+# Exchange Server language support
 
-Microsoft Exchange Server 2016 has enhanced language support for both servers and clients. This topic lists the languages that are available for both servers and clients in Exchange 2016.
+Exchange Server 2016 and Exchange Server 2019 have enhanced language support for both servers and clients. This topic lists the languages that are available for both servers and clients in Exchange 2016 and Exchange 2019.
   
-## Supported server languages for Exchange 2016
+## Supported server languages for Exchange 2016 and Exchange 2019
 
-The following server languages are supported and available for Exchange 2016:
-  
 - Chinese (Simplified)
     
 - Chinese (Traditional)
@@ -42,10 +40,8 @@ The following server languages are supported and available for Exchange 2016:
     
 - Spanish
     
-## Supported client languages for Exchange 2016
+## Supported client languages for Exchange 2016 and Exchange 2019
 
-The following client languages are supported and available for Exchange 2016:
-  
 - Amharic
     
 - Arabic
@@ -167,5 +163,3 @@ The following client languages are supported and available for Exchange 2016:
 - Vietnamese
     
 - Welsh
-    
-

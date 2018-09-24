@@ -36,7 +36,3 @@ If you decide that you need to deploy Exchange 2010 servers, you must do so befo
 3. Exchange 2016
     
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-  
-
-  
-

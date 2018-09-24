@@ -3,19 +3,17 @@ title: "Datacenter switchovers"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: ac208c12-04d0-4809-bacd-72478ff14983
-description: "Summary: How to plan for, and then perform, a datacenter switchover in Exchange 2016."
+description: "Summary: How to plan for, and then perform, a datacenter switchover in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Datacenter switchovers
 
- **Summary**: How to plan for, and then perform, a datacenter switchover in Exchange 2016.
-  
 In a site resilient configuration, automatic recovery in response to a site-level failure can occur within a DAG, allowing the messaging system to remain in a functional state. This configuration requires at least three locations, as it requires deploying DAG members in two locations and the DAG's witness server in a third location.
   
 If you don't have three locations, or even if you do have three locations but you want to control datacenter-level recovery actions, you can configure a DAG for manual recovery in the event of a site-level failure. In that event, you would perform a process called a *datacenter switchover*. As with many disaster recovery scenarios, prior planning and preparation for a datacenter switchover can simplify your recovery process and reduce the duration of your outage.
@@ -75,6 +73,9 @@ When the DAG isn't in DAC mode, the specific actions to terminate any surviving 
 4. Open the Failover Cluster Management tool and connect to the DAG's underlying cluster. Expand the cluster, and then expand **Nodes**. Right-click each node in the primary datacenter, select **More Actions**, and then select **Evict**. When you're done evicting the DAG members in the primary datacenter, close the Failover Cluster Management tool.
     
 If any Unified Messaging services are in use in the failed datacenter, they must be disabled to prevent call routing to the failed datacenter. You can disable Unified Messaging services by using the [Disable-UMService](http://technet.microsoft.com/library/16e5df98-4875-42a2-a429-2c66ac6a2e32.aspx) cmdlet (for example, `Disable-UMService EX1`). Alternatively, if you're using a Voice over IP (VoIP) gateway, you can also remove the server entries from the VoIP gateway, or change the DNS records for the failed servers to point to the IP address of the servers in the second datacenter if your VoIP gateway is configured to route calls using DNS.
+
+> [!NOTE]
+> Unified Messaging is not available in Exchange 2019
   
 ## Activating Mailbox Servers
 <a name="ActMS"> </a>
@@ -129,22 +130,22 @@ When the DAG isn't in DAC mode, the steps to complete activation of the mailbox 
   Get-MailboxDatabase <DAGMemberinSecondSite> | Mount-Database
   ```
 
-## Activating Client Access Services
+## Activating Client Access services
 <a name="ActOther"> </a>
 
 Clients connect to service endpoints (for example Outlook on the web, Autodiscover, Exchange ActiveSync, Outlook Anywhere, POP3, IMAP4, and the RPC Client Access services array) to access Exchange services and data. Therefore, activating Client Access services involves changing the mapping of the DNS records for these service endpoints from IP addresses in the primary datacenter to the IP addresses in the second datacenter that are configured as the new service endpoints. Depending on your DNS configuration, the DNS records that need to be modified may or may not be in the same DNS zone.
   
-### Activating Client Access Services
+### Activating Client Access services
 
 Clients will then automatically connect to the new service endpoints in one of two ways:
   
 - Clients will continue to try to connect, and should automatically connect after the TTL has expired for the original DNS entry, and after the entry is expired from the client's DNS cache. Users can also run the `ipconfig /flushdns` command from a command prompt to manually clear their DNS cache.
     
-- Clients starting or restarting will perform a DNS lookup on startup and will get the new IP address for the service endpoint, which will be an Exchange 2016 server running Client Access services, or a Client Access services array, in the second datacenter.
+- Clients starting or restarting will perform a DNS lookup on startup and will get the new IP address for the service endpoint, which will be an Exchange server running Client Access services, or a Client Access services array, in the second datacenter.
     
 Assuming that all appropriate configuration changes have been completed to define and configure the services in the second datacenter to function as they were in the primary datacenter, and assuming that the established DNS configuration is correct, no further changes should be needed to activate Client Access services.
   
-### Activating Transport Services
+### Activating Transport services
 
 Clients and other servers that submit messages typically identify those servers using DNS. Activating transport services in the second datacenter involves changing DNS records to point to the IP addresses of the Mailbox servers in the second datacenter. Clients and sending servers will then automatically connect to the servers in the second datacenter in one of two ways:
   
@@ -154,9 +155,12 @@ Clients and other servers that submit messages typically identify those servers 
     
 Assuming that all appropriate configuration changes have been completed to define and configure the services in the second datacenter to function as they were in the primary datacenter, and assuming that the established DNS configuration is correct, no further changes should be needed to activate transport services.
   
-### Activating Unified Messaging Services
+### Activating Unified Messaging services in Exchange 2016
 
-Unified Messaging (UM) services connect to an organization's PBX system and phone lines. The logical connection between the PBX system and the Unified Messaging service is provided by an IP gateway. IP gateways include high availability functionality and are able to switch between multiple Unified Messaging services when a failure is detected.
+> [!NOTE]
+> Unified Messaging is not available in Exchange 2019.
+
+Unified Messaging (UM) services in Exchange 2016 connect to an organization's PBX system and phone lines. The logical connection between the PBX system and the Unified Messaging service is provided by an IP gateway. IP gateways include high availability functionality and are able to switch between multiple Unified Messaging services when a failure is detected.
   
 If there are Unified Messaging services in the second datacenter that were in a disabled state because they are dedicated to the site resilience solution, they can be enabled by using the [Enable-UMService](http://technet.microsoft.com/library/88f457c7-92bc-4f59-b0cf-c0b79f46a7a1.aspx) cmdlet (for example, `Enable-UMService EX4`).
   
@@ -224,7 +228,7 @@ The Mailbox server role should be the first role that's switched back to the pri
     
 After one or more databases are active and mounted in the primary datacenter, switchback procedures for the other server roles can be performed.
   
-### Client Access Services Switchback
+### Client Access services switchback
 
 As part of the switchover process, the internal and external DNS records used by clients, other servers, and IP gateways to resolve the service endpoints for Client Access services, Transport and Unified Messaging services, and Edge Transport servers were modified to point to the corresponding endpoints in the second datacenter. The switchback process for the other server roles involves modifying those records to point to the restored service endpoints in the primary datacenter.
   
