@@ -3,24 +3,22 @@ title: "Keyboard shortcuts in the Exchange admin center"
 ms.author: dstrome
 author: dstrome
 manager: scotv
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 146b2b52-1ef8-4606-991a-4cf4da694970
-description: "Summary: Learn about the keyboard shortcuts that are available in the Exchange admin center in Exchange 2016."
+description: "Summary: Learn about the keyboard shortcuts that are available in the Exchange admin center in Exchange Server."
 ---
 
 # Keyboard shortcuts in the Exchange admin center
-
- **Summary**: Learn about the keyboard shortcuts that are available in the Exchange admin center in Exchange 2016.
   
-Microsoft is committed to making its products and services easier for everyone to use. This topic provides information about the keyboard shortcuts that make Exchange Server 2016 and other Microsoft products and services more accessible for people with disabilities.
+Microsoft is committed to making its products and services easier for everyone to use. This topic provides information about the keyboard shortcuts that make Exchange Server and other Microsoft products and services more accessible for people with disabilities.
   
-## Keyboard shortcuts in the Exchange admin center in Exchange 2016
+## Keyboard shortcuts in the Exchange admin center in Exchange Server
 
-By using keyboard shortcuts in the Exchange admin center (EAC), you can quickly accomplish the common tasks that are described in the following table. To learn more about the EAC, see [Exchange admin center in Exchange 2016](../architecture/client-access/exchange-admin-center.md).
+By using keyboard shortcuts in the Exchange admin center (EAC), you can quickly accomplish the common tasks that are described in the following table. To learn more about the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md).
   
 **Keyboard shortcuts in the EAC**
 

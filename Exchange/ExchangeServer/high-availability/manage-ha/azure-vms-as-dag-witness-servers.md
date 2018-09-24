@@ -3,19 +3,17 @@ title: "Using a Microsoft Azure VM as a DAG witness server"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 03d1e215-518b-4b48-bfcd-8d187ff8f5ef
-description: "Summary: Learn how to configure a virtual machine (VM) as an Exchange 2016 DAG witness server in Azure."
+description: "Summary: Learn how to configure a virtual machine (VM) as an Exchange Server DAG witness server in Azure."
 ---
 
 # Using a Microsoft Azure VM as a DAG witness server
 
- **Summary**: Learn how to configure a virtual machine (VM) as an Exchange 2016 DAG witness server in Azure.
-  
 This configuration requires three separate physical locations: two datacenters for mailbox servers and a third location to place the witness server for the DAG. Organizations with only two physical locations now can also take advantage of automatic datacenter failover by using a Microsoft Azure file server virtual machine to act as the DAG's witness server. This article focuses on the placement of the DAG witness on Microsoft Azure and assumes that you're familiar with site resilience concepts and already have a fully functional DAG infrastructure spanning two datacenters. If you don't already have your DAG infrastructure configured, we recommend that you first review the following articles:
   
 [High availability and site resilience](../../high-availability/high-availability.md)

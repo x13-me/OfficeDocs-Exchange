@@ -14,8 +14,6 @@ description: "Summary: Each database availability group (DAG) network has severa
 
 # Configure database availability group network properties
 
- **Summary**: Each database availability group (DAG) network has several properties that you can configure.
-  
 Configurable properties include the name of the DAG network, a description field for the DAG network, a list of subnets that are used by the DAG network, and whether the DAG network is enabled for replication.
   
 Looking for other management tasks related to DAGs? Check out [Managing database availability groups](http://technet.microsoft.com/library/4abde67b-4995-4a57-894f-ba76aa72341c.aspx).

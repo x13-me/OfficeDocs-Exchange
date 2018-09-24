@@ -1,29 +1,26 @@
 ---
-title: "Shadow redundancy in Exchange 2016"
+title: "Shadow redundancy in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/10/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: a40dbe61-2a18-48a8-b2e0-4e81a6678d11
-description: "Summary: Learn about how shadow redundancy in Exchange 2016 improves high availability for messages in the transport pipeline."
+description: "Learn how shadow redundancy in Exchange 2016 and Exchange 2019 improves high availability for messages in the transport pipeline."
 ---
 
-# Shadow redundancy in Exchange 2016
-
- **Summary**: Learn about how shadow redundancy in Exchange 2016 improves high availability for messages in the transport pipeline.
+# Shadow redundancy in Exchange Server
   
 Shadow redundancy was introduced in Exchange 2010 to provide redundant copies of messages before they're delivered to mailboxes. In Exchange 2010, shadow redundancy delayed deleting a message from the queue database on a Hub Transport server until the server verified that the next hop in the message delivery path had completed delivery. If the next hop failed before reporting successful delivery back to the Hub Transport server, the server resubmitted the message to that next hop. Exchange 2010 Hub Transport servers used the **XSHADOW** verb to advertise their shadow redundancy support. If a source messaging server didn't support shadow redundancy, Exchange 2010 used delayed acknowledgment based on a configured time interval on the Receive connector to make a redundant copy of the message.
   
-Exchange 2016 has the improvements that were made to shadow redundancy in Exchange 2013: the Transport service on a Mailbox server now makes a redundant copy of any message it receives before acknowledging the receipt of the message to the sending server. Maintaining redundant copies of messages in transit is more than a best effort that may or may not work, because now shadow redundancy doesn't depend on supported features on the sending server (support or lack of support for shadow redundancy doesn't matter). This helps to ensure that all messages in the transport pipeline are made redundant while they're in transit. If Exchange determines the original message was lost in transit, the redundant copy of the message is redelivered.
+Exchange 2016 and Exchange 2019 have the same improvements that were made to shadow redundancy in Exchange 2013: the Transport service on a Mailbox server now makes a redundant copy of any message it receives before acknowledging the receipt of the message to the sending server. Maintaining redundant copies of messages in transit is more than a best effort that may or may not work, because now shadow redundancy doesn't depend the sending server's supported features (support or lack of support for shadow redundancy doesn't matter). This helps to ensure that all messages in the transport pipeline are made redundant while they're in transit. If Exchange determines the original message was lost in transit, the redundant copy of the message is redelivered.
   
-For more information about transport high availability features in Exchange 2016, see [Transport high availability](transport-high-availability.md). For more information about message redundancy after a message has been successfully delivered, see [Safety Net in Exchange 2016](safety-net.md).
+For more information about transport high availability features in Exchange Server, see [Transport high availability in Exchange Server](transport-high-availability.md). For more information about message redundancy after a message has been successfully delivered, see [Safety Net in Exchange Server](safety-net.md).
   
 ## Shadow redundancy components
-<a name="Components"> </a>
 
 This table describes the components of shadow redundancy in the Transport service on Mailbox servers. These terms are used throughout the topic.
   
@@ -37,14 +34,13 @@ This table describes the components of shadow redundancy in the Transport servic
 |Shadow queue  <br/> |The delivery queue where the shadow server stores shadow messages. For messages with multiple recipients, each next hop for the primary message requires separate shadow queues.  <br/> |
 |Discard status  <br/> |The information that the Mailbox server maintains for shadow messages to indicate the primary message has been successfully processed.  <br/> |
 |Discard notification  <br/> |The response a shadow server receives from a primary server indicating a shadow message is ready to be discarded.  <br/> |
-|Safety Net  <br/> |The improved version of the transport dumpster in Exchange 2013 or later. Messages that are successfully processed or delivered to a mailbox recipient by the Transport service on a Mailbox server are moved into Safety Net. For more information, see [Safety Net in Exchange 2016](safety-net.md).  <br/> |
+|Safety Net  <br/> |The improved version of the transport dumpster in Exchange 2013 or later. Messages that are successfully processed or delivered to a mailbox recipient by the Transport service on a Mailbox server are moved into Safety Net. For more information, see [Safety Net in Exchange Server](safety-net.md).  <br/> |
 |Shadow Redundancy Manager  <br/> |The transport component that manages shadow redundancy.  <br/> |
 |Heartbeat  <br/> |The process that allows primary servers and shadow servers to verify the availability of each other.  <br/> |
    
 ## Requirements for shadow redundancy
-<a name="Requirements"> </a>
 
-Although it may seem obvious, shadow redundancy in Exchange 2016 requires multiple Mailbox servers:
+Although it may seem obvious, shadow redundancy requires multiple Mailbox servers:
   
 - If the Mailbox server isn't a member of a DAG, the other Mailbox servers must be in the local Active Directory site.
     
@@ -59,7 +55,6 @@ These are the situations where shadow redundancy can't protect messages in trans
 - During the simultaneous failure of two or more Mailbox servers involved in the shadow redundancy of a message.
     
 ## Shadow redundancy is enabled by default
-<a name="Enabled"> </a>
 
 By default, shadow redundancy is enabled globally in the Transport service on all Mailbox servers. This table describes the parameters that enable shadow redundancy.
   
@@ -69,7 +64,6 @@ By default, shadow redundancy is enabled globally in the Transport service on al
 | _RejectMessageOnShadowFailure_ on **Set-TransportConfig** <br/> | `$false` <br/> | `$false`: When a shadow copy of the message can't be created, the primary message is accepted anyway by Mailbox servers in the organization. These messages aren't redundantly persisted while they're in transit.  <br/> `$true`: No message is accepted or acknowledged by any Mailbox server in the organization until a shadow copy of the message is successfully created. If a shadow copy of the message can't be created, the primary message is rejected with a transient error, but the sending server can transmit the message again. The SMTP response code is `451 4.4.0 Message failed to be made redundant`. All messages in the organization are redundantly persisted while they're in transit.  <br/> **Note**: Use `$true` only if you have multiple Mailbox servers in the same DAG or Active Directory site so a shadow copy of the message can be created.  <br/> This parameter is only meaningful when _ShadowRedundancyEnabled_ is `$true`.  <br/> |
    
 ## How shadow messages are created
-<a name="Created"> </a>
 
 The main goal of shadow redundancy is to always have two copies of a message within a transport high availability boundary while the message is in transit. Where and when the redundant copy of the message is created depends on where the message came from, and where the message is going. There are three determining factors for creating shadow messages:
   
@@ -101,20 +95,19 @@ When the Transport service on a Mailbox server receives a message from outside t
     
 ### Messages sent outside a transport high availability boundary
 
-When a Mailbox server transmits a message outside the transport high availability boundary, and the messaging server on the other side acknowledges successful receipt of the message, and the Mailbox server moves the message into Safety Net. No resubmission of the message from Safety Net can occur after the primary message has been successfully transmitted across the transport high availability boundary. For more information about Safety Net, see [Safety Net in Exchange 2016](safety-net.md).
+When a Mailbox server transmits a message outside the transport high availability boundary, and the messaging server on the other side acknowledges successful receipt of the message, and the Mailbox server moves the message into Safety Net. No resubmission of the message from Safety Net can occur after the primary message has been successfully transmitted across the transport high availability boundary. For more information about Safety Net, see [Safety Net in Exchange Server](safety-net.md).
   
 ### Messages transmitted within a transport high availability boundary
 
 Message routing is optimized so that when the ultimate destination is in a DAG or Active Directory site, multiple hops between servers within the destination DAG or site aren't typically required. After the message is accepted by the Transport service on a Mailbox server in the destination DAG or Active Directory, the next hop for the message is typically the ultimate destination itself (for example, the Mailbox server that holds the active copy of the destination mailbox). Shadow redundancy's goal of keeping two copies of a message in transit is fulfilled when one shadow copy of the message exists *anywhere* within the DAG or Active Directory site. Typically, only failover scenarios in a DAG that require the **Redirect-Message** cmdlet to drain the active message queues on a Mailbox server would require multiple hops within the same transport high availability boundary.
   
-### Shadow redundancy with Exchange 2010 Hub Transport servers in the same Active Directory site
+### Shadow redundancy with Exchange 2010 Hub Transport servers in the same Active Directory site in Exchange 2016 organizations
 
 When an Exchange 2010 Hub Transport server transmits a message to an Exchange 2016 Mailbox server in the same Active Directory site, the Exchange 2010 Hub Transport server advertises support for shadow redundancy using the XSHADOW command, but the Mailbox server doesn't advertise support for shadow redundancy. This prevents the Exchange 2010 Hub Transport server from creating a shadow copy of the message on an Exchange 2016 Mailbox server.
   
 When the Transport service on an Exchange 2016 Mailbox server transmits a message to an Exchange 2010 Hub Transport in the same Active Directory site, the Exchange 2016 Mailbox server shadows the message for the Exchange 2010 Hub Transport server. After the Exchange 2016 Mailbox server receives acknowledgment from the Exchange 2010 Hub Transport server that the message was successfully received, the Exchange 2016 Mailbox server moves the successfully processed message into Safety Net. However, the successfully processed messages stored in Safety Net by Exchange 2016 Mailbox are never resubmitted to the Exchange 2010 Hub Transport servers.
   
 ## SMTP timeouts
-<a name="Timeouts"> </a>
 
 During the attempt to make a redundant copy of the message, the SMTP connection between servers (the sending server and the primary server, or the primary server and the shadow server) could timeout. Receive connectors and Send connectors both have a _ConnectionInactivityTimeOut_ parameter for when data is actually being transmitted on the connector. Receive connectors also have an absolute _ConnectionTimeOut_ parameter.
   
@@ -134,7 +127,6 @@ The following table describes the parameters that control the creation of shadow
 | _ConnectionInactivityTimeOut_ on **Set-SendConnector** <br/> |10 minutes  <br/> |This parameter specifies the maximum time that an open SMTP connection with a destination messaging server can remain idle before the connection is closed.  <br/> |
    
 ## How shadow messages are maintained
-<a name="Maintained"> </a>
 
 After a shadow message is successfully created, the work of shadow redundancy has only just begun. The primary server and the shadow server need to stay in contact with each other to track the progress of the message.
   
@@ -179,7 +171,6 @@ This table describes the parameters that control how shadow messages are maintai
 | _MessageExpirationTimeout_ on **Set-TransportService** <br/> |2 days  <br/> |How long a message can remain in a queue before it expires.  <br/> |
    
 ## Message processing after an outage
-<a name="Outage"> </a>
 
 This table summarizes how shadow redundancy minimizes message loss due to server outages. For clarity, the server that had an outage is named Mailbox01.
   

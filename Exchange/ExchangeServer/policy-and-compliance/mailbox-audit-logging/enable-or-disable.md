@@ -9,21 +9,19 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c4bbfd52-6196-49c7-8c31-777fbbee11f2
-description: "Summary: Learn how to configure mailbox audit logging on mailboxes in Exchange 2016."
+description: "Summary: Learn how to configure mailbox audit logging on mailboxes in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Enable or disable mailbox audit logging for a mailbox
 
- **Summary**: Learn how to configure mailbox audit logging on mailboxes in Exchange 2016.
-  
-With mailbox audit logging in Exchange Server 2016, you can track logons to a mailbox as well as what actions are taken while the user is logged on. When you enable mailbox audit logging for a mailbox, some actions performed by administrators and delegates are logged by default. None of the actions performed by the mailbox owner are logged by default. To learn more about mailbox audit logging and what actions can be logged, see [Mailbox audit logging in Exchange 2016](mailbox-audit-logging.md).
+With mailbox audit logging in Exchange Server, you can track logons to a mailbox as well as what actions are taken while the user is logged on. When you enable mailbox audit logging for a mailbox, some actions performed by administrators and delegates are logged by default. None of the actions performed by the mailbox owner are logged by default. To learn more about mailbox audit logging and what actions can be logged, see [Mailbox audit logging in Exchange Server](mailbox-audit-logging.md).
   
 > [!CAUTION]
 > Auditing of mailbox owner actions can generate a large number of mailbox audit log entries and is therefore disabled by default. We recommend that you only enable auditing of specific owner actions needed to meet business or compliance requirements.
   
 ## What do you need to know before you begin?
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox audit logging" entry in the [Messaging policy and compliance permissions in Exchange 2016](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox audit logging" entry in the [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
     
 - Entries in the mailbox audit log are retained for 90 days, by default. See the [More information](enable-or-disable.md#moreinfo) section change how long entries are retained.
     

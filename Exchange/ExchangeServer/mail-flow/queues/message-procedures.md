@@ -3,20 +3,18 @@ title: "Procedures for messages in queues"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 83358884-6036-4e91-87a8-35200541874d
-description: "Summary: Learn how to remove, suspend, resume, and redirect messages in queues in Exchange 2016."
+description: Learn how to remove, suspend, resume, and redirect messages in queues in Exchange 2016 and Exchange 2019."
 ---
 
 # Procedures for messages in queues
 
- **Summary**: Learn how to remove, suspend, resume, and redirect messages in queues in Exchange 2016.
-  
-In Exchange Server 2016, you can use the Queue Viewer in the Exchange Toolbox or the Exchange Management Shell to manage messages in queues. For more information about messages in queues, see [Message properties](queues.md#message-properties).
+In Exchange Server, you can use the Queue Viewer in the Exchange Toolbox or the Exchange Management Shell to manage messages in queues. For more information about messages in queues, see [Message properties](queues.md#message-properties).
   
 This topic describes how to perform the following procedures on messages in queues:
   
@@ -36,11 +34,11 @@ For information about exporting messages from queues, see [Export messages from 
     
 - To find and open the Exchange Toolbox, use one of the following procedures:
     
-  - **Windows 10 **: Click **Start** \> **All Apps** \> **MicrosoftExchange Server 2016 \>** **Exchange Toolbox**.
+  - **Windows 10**: Click **Start** \> **All Apps** \> **Microsoft Exchange Server  \<Version\> \>** **Exchange Toolbox**.
     
-  - **Windows Server 2012 R2 or Windows 8.1**: On the Start screen, open the Apps view by clicking the down arrow near the lower-left corner or swiping up from the middle of the screen. The **Exchange Toolbox** shortcut is in a group named **MicrosoftExchange Server 2016**.
+  - **Windows Server 2012 R2 or Windows 8.1**: On the Start screen, open the Apps view by clicking the down arrow near the lower-left corner or swiping up from the middle of the screen. The **Exchange Toolbox** shortcut is in a group named **Microsoft Exchange Server \<Version\>**.
     
-  - **Windows Server 2012 **: Use any of the following methods: 
+  - **Windows Server 2012**: Use any of the following methods: 
     
   - On the Start screen, click an empty area, and type Exchange Toolbox.
     
@@ -213,11 +211,11 @@ To verify that you have successfully suspended messages in queues, use either of
     
 3. Click **Create Filter**, and enter your filter expression as follows:
     
-1. Select **Status** from the message property drop-down list.
+    1. Select **Status** from the message property drop-down list.
     
-2. Select **Equals** from the comparison operator drop-down list.
+    2. Select **Equals** from the comparison operator drop-down list.
     
-3. Select **Suspended** from the value drop-down list.
+    3. Select **Suspended** from the value drop-down list.
     
 4. Click **Apply Filter**. All messages that have a status of Suspended are displayed.
     

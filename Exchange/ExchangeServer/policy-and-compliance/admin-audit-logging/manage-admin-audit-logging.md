@@ -9,14 +9,12 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 15c284c0-b8e6-42ca-9913-7c59fdb6885d
-description: "Summary: Learn how to configure, enable, and disable administrator audit logging in Exchange 2016, and how to view the admit audit log settings."
+description: "Summary: Learn how to configure, enable, and disable administrator audit logging in Exchange Server, and how to view the admit audit log settings."
 ---
 
 # Manage administrator audit logging
 
- **Summary**: Learn how to configure, enable, and disable administrator audit logging in Exchange 2016, and how to view the admit audit log settings.
-  
-Administrator audit logging in Exchange Server 2016 enables you to create a log entry each time a specified cmdlet is run. Log entries provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected. For more information about administrator audit logging, see [Administrator audit logging in Exchange 2016](admin-audit-logging.md).
+Administrator audit logging in Exchange Server enables you to create a log entry each time a specified cmdlet is run. Log entries provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected. For more information about administrator audit logging, see [Administrator audit logging in Exchange Server](admin-audit-logging.md).
   
 ## What do you need to know before you begin?
 
@@ -26,7 +24,7 @@ Administrator audit logging in Exchange Server 2016 enables you to create a log 
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Administrator audit logging" entry in the [Exchange infrastructure and PowerShell permissions](../../permissions/feature-permissions/infrastructure-permissions.md) topic.
     
-- Admin audit logging relies on Active Directory replication to replicate the configuration settings you specify to the domain controllers in your organization. Depending on your replication settings, the changes you make may not be immediately applied to all Exchange 2016 servers in your organization.
+- Admin audit logging relies on Active Directory replication to replicate the configuration settings you specify to the domain controllers in your organization. Depending on your replication settings, the changes you make may not be immediately applied to all Exchange 2016 and Exchange 2019 servers in your organization.
     
 - Changes to the audit log configuration are refreshed every 60 minutes on computers that have the Exchange Management Shell open at the time a configuration change is made. If you want to apply the changes immediately, close and then open the Exchange Management Shell again on each computer.
     

@@ -1,21 +1,19 @@
 ---
-title: "Procedures for offline address books in Exchange 2016"
+title: "Procedures for offline address books in Exchange Server"
 ms.author: chrisda
 author: chrisda
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18
-description: "Summary: Learn the tasks that administrators need to know to manage offline address books in Exchange 2016."
+description: "Summary: Learn the tasks that administrators need to know to manage offline address books in Exchange Server 2016 and Exchange Server 2019."
 ---
 
-# Procedures for offline address books in Exchange 2016
+# Procedures for offline address books in Exchange Server
 
- **Summary**: Learn the tasks that administrators need to know to manage offline address books in Exchange 2016.
-  
-An offline address book (OAB) in Exchange Server 2016 allows Outlook users in cached Exchange mode to access address list and global address list information while they're disconnected from the server. For more information, see [Offline address books in Exchange 2016](offline-address-books.md).
+An offline address book (OAB) in Exchange Server allows Outlook users in cached Exchange mode to access address list and global address list information while they're disconnected from the server. For more information, see [Offline address books in Exchange Server](offline-address-books.md).
   
 Here's a list of OAB procedures that are covered in this topic:
   
@@ -47,7 +45,7 @@ Here's a list of OAB procedures that are covered in this topic:
     
 - [Use the Exchange Management Shell to assign offline address books to mailboxes](oab-procedures.md#OABforMailboxes)
     
-To change the OAB generation schedule, see [Change the offline address book generation schedule in Exchange 2016](../../plan-and-deploy/post-installation-tasks/change-oab-generation-schedule.md).
+To change the OAB generation schedule, see [Change the offline address book generation schedule in Exchange Server](../../plan-and-deploy/post-installation-tasks/change-oab-generation-schedule.md).
   
 ## What do you need to know before you begin?
 
@@ -55,7 +53,7 @@ To change the OAB generation schedule, see [Change the offline address book gene
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Offline address books" entry in the [Email address and address book permissions](../../permissions/feature-permissions/address-book-permissions.md) topic.
     
-- You can't do most of these procedures in the Exchange admin center (EAC). You need to use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell). For more information about the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md).
+- You can't do most of these procedures in the Exchange admin center (EAC). You need to use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell). For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md).
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
@@ -230,7 +228,7 @@ Get-OfflineAddressBook | Format-List Name,AddressLists,GeneratingMailbox,IsDefau
 
 Changes in an OAB aren't available to users until the scheduled OAB generation (by default, every 8 hours). If you don't want to wait, you can use the procedures in this topic to immediately update an OAB.
   
-To change the OAB generation schedule, see [Change the offline address book generation schedule in Exchange 2016](../../plan-and-deploy/post-installation-tasks/change-oab-generation-schedule.md).
+To change the OAB generation schedule, see [Change the offline address book generation schedule in Exchange Server](../../plan-and-deploy/post-installation-tasks/change-oab-generation-schedule.md).
   
 To update an OAB, use the following syntax:
   
@@ -387,7 +385,7 @@ To verify that you've successfully assigned an OAB to a mailbox database, use ei
 
 When you assign an OAB to a mailbox, the default OAB and the OAB that's assigned to the mailbox database (if any) aren't used by the mailbox. By default, no OAB is assigned to a mailbox.
   
- **Note**: If the mailbox has an address book policy (ABP) assigned, and the ABP has an OAB defined, the OAB that's directly assigned to the mailbox will take precedence over the ABP. For more information ABPs, see [Address book policies in Exchange 2016](../../email-addresses-and-address-books/address-book-policies/address-book-policies.md).
+ **Note**: If the mailbox has an address book policy (ABP) assigned, and the ABP has an OAB defined, the OAB that's directly assigned to the mailbox will take precedence over the ABP. For more information ABPs, see [Address book policies in Exchange Server](../../email-addresses-and-address-books/address-book-policies/address-book-policies.md).
   
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
   

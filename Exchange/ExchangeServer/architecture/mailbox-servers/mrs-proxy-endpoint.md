@@ -2,20 +2,18 @@
 title: "Enable the MRS Proxy endpoint for remote moves"
 ms.author: chrisda
 author: chrisda
-ms.date: 6/8/2018
+ms.date: 7/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9840f712-127e-4c2d-bfe5-1b35cdb2a31b
-description: "Summary: Learn how administrators can enable the MRS Proxy endpoint that's required for on-premises Exchange 2016 mailbox moves between Active Directory forests or Office 365."
+description: "Summary: Learn how administrators can enable the MRS Proxy endpoint that's required for on-premises Exchange Server mailbox moves between Active Directory forests or Office 365."
 ---
 
 # Enable the MRS Proxy endpoint for remote moves
 
- **Summary**: Learn how administrators can enable the MRS Proxy endpoint that's required for on-premises Exchange 2016 mailbox moves between Active Directory forests or Office 365.
-  
-The Mailbox Replication service (MRS) has a proxy endpoint that's required for cross-forest mailbox moves and remote move migrations between your on-premises Exchange organization and Office 365. You enable the MRS proxy endpoint in the Exchange Web Services (EWS) virtual directory settings in the Client Access (frontend) services on Exchange 2016 Mailbox servers.
+The Mailbox Replication service (MRS) has a proxy endpoint that's required for cross-forest mailbox moves and remote move migrations between your on-premises Exchange organization and Office 365. You enable the MRS proxy endpoint in the Exchange Web Services (EWS) virtual directory settings in the Client Access (frontend) services on Exchange 2016 or Exchange 2019 Mailbox servers.
   
 Where you enable the MRS Proxy endpoint depends on the type and direction of the mailbox move:
   
@@ -46,9 +44,9 @@ Where you enable the MRS Proxy endpoint depends on the type and direction of the
     
 2. Select the EWS virtual directory that you want to configure.
     
-  - You can use the **Select server** drop down list to filter the Exchange servers by name.
+  - You can use the **Select server** drop-down list to filter the Exchange servers by name.
     
-  - To only display EWS virtual directories, select **EWS** in the **Select type** drop down list.
+  - To only display EWS virtual directories, select **EWS** in the **Select type** drop-down list.
     
     After you've selected the EWS virtual directory that you want to configure, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
     ![In the EAC, go to Servers \> Virtual Directories, and select the EWS virtual directory](../../media/2d65b172-eadd-49d5-ab70-9500b2e2e6f6.png)

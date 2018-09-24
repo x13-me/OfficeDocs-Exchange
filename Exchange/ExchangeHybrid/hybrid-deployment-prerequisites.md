@@ -118,7 +118,7 @@ In addition to the required prerequisites described earlier, other tools and ser
   
 - **Exchange Server Deployment Assistant** Exchange Server Deployment Assistant is a free web-based tool that helps you deploy Exchange in your on-premises organization, configure a hybrid deployment between your on-premises organization and Office 365, or migrate completely to Office 365. The tool asks you a small set of simple questions and then, based on your answers, creates a customized checklist with instructions to deploy or configure Exchange Server. The Deployment Assistant gives you exactly the right information you need to configure your hybrid deployment. 
     
-    Learn more at [Exchange Server Deployment Assistant](https://technet.microsoft.com/exdeploy2013).
+    Learn more at [Microsoft Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/p/?linkid=626978).
     
 - **Remote Connectivity Analyzer tool** The Microsoft Remote Connectivity Analyzer tool checks the external connectivity of your on-premises Exchange organization and makes sure that you're ready to configure your hybrid deployment. We strongly recommend that you check your on-premises organization with the Remote Connectivity Analyzer tool prior to configuring your hybrid deployment with the Hybrid Configuration wizard. 
     
