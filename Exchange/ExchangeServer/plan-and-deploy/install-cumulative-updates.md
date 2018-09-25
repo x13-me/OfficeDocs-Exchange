@@ -15,7 +15,7 @@ description: "Summary: Learn about installing Cumulative Updates (CUs) in Exchan
 
 # Upgrade Exchange to the latest Cumulative Update
 
-If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgrade the Exchange servers to the latest Cumulative Update (CU). Because each CU is a full installation of Exchange that includes updates and changes from all previous CU's, you don't need to install any previous CU's or Exchange 2016 RTM or Exchange 2019 RTM first. For more information about the latest available Exchange CUs, see [Updates for Exchange Server](../new-features/updates.md).
+If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgrade the Exchange servers to the latest Cumulative Update (CU). Because each CU is a full installation of Exchange that includes updates and changes from all previous CU's, you don't need to install any previous CU's or Exchange 2016 RTM or Exchange 2019 RTM first. For more information about the latest available Exchange CUs, see [Updates for Exchange Server](updates.md).
 
 > [!CAUTION]
 > After you upgrade Exchange to a newer CU, you can't uninstall the new version to revert to the previous version. Uninstalling the new version completely removes Exchange from the server.
@@ -38,7 +38,7 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 
 ## Install an Exchange CU using the Setup wizard
 
-1. Download the latest version of Exchange on the target computer. For more information, see [Updates for Exchange Server](../updates.md).
+1. Download the latest version of Exchange on the target computer. For more information, see [Updates for Exchange Server](updates.md).
     
 2. In File Explorer, right-click on the Exchange CU ISO image file that you downloaded, and then select **Mount**. In the resulting virtual DVD drive that appears, start Exchange Setup by double-clicking `Setup.exe`.
     
