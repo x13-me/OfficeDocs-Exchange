@@ -14,8 +14,6 @@ description: "Summary: Learn how to retrieve Exchange statistics for public fold
 
 # View statistics for public folders and public folder items
 
- **Summary**: Learn how to retrieve Exchange statistics for public folders to help make decisions to retain or delete those folders.
-  
 You can use the the Exchange Management Shell to retrieve statistics about a public folder, such as the display name, creation time, last user modified time, last user access, and item size. You can use this information to make decisions about deleting or retaining public folders.
   
 > [!NOTE]

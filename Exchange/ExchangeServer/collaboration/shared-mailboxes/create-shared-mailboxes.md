@@ -55,7 +55,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 This example creates the shared mailbox Sales Department and grants Full Access and Send on Behalf permissions for the security group MarketingSG. Users who are members of the security group will be granted the permissions to the mailbox.
   
 > [!NOTE]
-> This example assumes that you've already created the security group MarketingSG and that security group is mail-enabled. See [Manage mail-enabled security groups in Exchange 2016](../../recipients/mail-enabled-security-groups.md).
+> This example assumes that you've already created the security group MarketingSG and that security group is mail-enabled. See [Manage mail-enabled security groups in Exchange Server](../../recipients/mail-enabled-security-groups.md).
   
 ```
 New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Alias Sales | Set-Mailbox -GrantSendOnBehalfTo MarketingSG | Add-MailboxPermission -User MarketingSG -AccessRights FullAccess -InheritanceType All

@@ -1,0 +1,27 @@
+{
+
+  "redirections": [
+
+
+      {
+
+        "source_path": "exchangeonline/security-and-compliance/data-loss-prevention/document-fingerprinting.md",
+
+        "redirect_url": "https://docs.microsoft.com/Office365/SecurityCompliance/document-fingerprinting",
+
+        "redirect_document_id": false
+
+      },
+      {
+
+        "source_path": "exchangeonline/security-and-compliance/data-loss-prevention/protect-data-with-fingerprinting.md",
+
+        "redirect_url": "https://docs.microsoft.com/Office365/SecurityCompliance/document-fingerprinting",
+
+        "redirect_document_id": false
+
+      }
+
+  ]
+
+}

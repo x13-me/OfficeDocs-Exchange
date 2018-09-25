@@ -1,23 +1,21 @@
 ---
-title: "Assign certificates to Exchange 2016 services"
+title: "Assign certificates to Exchange Server services"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/12/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: f4c170cd-76d3-499d-a34e-8a2bc8724c52
-description: "Summary: Learn how to assign certificates to Exchange services in Exchange 2016."
+description: "Summary: Learn how to assign certificates to Exchange services in Exchange Server 2016 and Exchange Server 2019."
 ---
 
-# Assign certificates to Exchange 2016 services
+# Assign certificates to Exchange Server services
 
- **Summary**: Learn how to assign certificates to Exchange services in Exchange 2016.
-  
-After you install a certificate on an Exchange Server 2016 server, you need to assign the certificate to one or more Exchange services before the Exchange server is able to use the certificate for encryption. You can assign certificates to services in the Exchange admin center (EAC) or in the Exchange Management Shell. Once you assign a certificate to a service, you can't remove the assignment. If you no longer want to use a certificate for a specific service, you need to assign another certificate to the service, and then remove the certificate that you don't want to use.
+After you install a certificate on an Exchange server, you need to assign the certificate to one or more Exchange services before the Exchange server is able to use the certificate for encryption. You can assign certificates to services in the Exchange admin center (EAC) or in the Exchange Management Shell. Once you assign a certificate to a service, you can't remove the assignment. If you no longer want to use a certificate for a specific service, you need to assign another certificate to the service, and then remove the certificate that you don't want to use.
   
 The available Exchange services are described in the following table.
   
@@ -25,12 +23,12 @@ The available Exchange services are described in the following table.
 
 |**Service**|**Uses**|
 |:-----|:-----|
-|IIS  <br/> |TLS encryption for internal and external client connections that use HTTP. This includes:  <br/> Autodiscover  <br/> Exchange ActiveSync  <br/> Exchange admin center  <br/> Exchange Web Services  <br/> Offline address book (OAB) distribution  <br/> Outlook Anywhere (RPC over HTTP)  <br/> Outlook MAPI over HTTP  <br/> Outlook on the web  <br/> |
-|IMAP  <br/> |TLS encryption for IMAP4 client connections.  <br/> Don't assign a wildcard certificate to the IMAP4 service. Instead, use the **Set-ImapSettings** cmdlet to configure the fully qualified domain name (FQDN) that clients use to connect to the IMAP4 service.  <br/> |
-|POP  <br/> |TLS encryption for POP3 client connections.  <br/> Don't assign a wildcard certificate to the POP3 service. Instead, use the **Set-PopSettings** cmdlet to configure the FQDN that clients use to connect to the POP3 service.  <br/> |
-|SMTP  <br/> |TLS encryption for external SMTP client and server connections.  <br/> Mutual TLS authentication between Exchange and other messaging servers.  <br/> When you assign a certificate to SMTP, you're prompted to replace the default Exchange self-signed certificate that's used to encrypt SMTP communication between internal Exchange servers. Typically, you don't need to replace the default SMTP certificate.  <br/> |
-| Unified Messaging (UM)  <br/> |TLS encryption for client connections to the backend UM service on Mailbox servers.  <br/> You can only assign a certificate to the UM service when the UM startup mode property of the service is set to TLS or Dual. If the UM startup mode is set to the default value TCP, you can't assign the certificate to the UM service. For more information, see [Configure the Startup Mode on a Mailbox Server](http://technet.microsoft.com/library/4457d6a0-52bd-4269-8cb5-d34d7fe9bfc3.aspx).  <br/> |
-|Unified Messaging Call Router (UMCallRouter)  <br/> |TLS encryption for client connections to the UM Call Router service in the Client Access services on Mailbox servers.  <br/> You can only assign a certificate to the UM Call Router service when the UM startup mode property of the service is set to TLS or Dual. If the UM startup mode is set to the default value TCP, you can't assign the certificate to the UM Call Router service. For more information, see [Configure the Startup Mode on a Client Access Server](http://technet.microsoft.com/library/71cc9061-9e3c-4b4a-8dbe-f590ca5bcee8.aspx).  <br/> |
+|IIS|TLS encryption for internal and external client connections that use HTTP. This includes: <br/> Autodiscover <br/> Exchange ActiveSync <br/> Exchange admin center <br/> Exchange Web Services <br/> Offline address book (OAB) distribution <br/> Outlook Anywhere (RPC over HTTP) <br/> Outlook MAPI over HTTP <br/> Outlook on the web|
+|IMAP|TLS encryption for IMAP4 client connections. <br/> Don't assign a wildcard certificate to the IMAP4 service. Instead, use the **Set-ImapSettings** cmdlet to configure the fully qualified domain name (FQDN) that clients use to connect to the IMAP4 service.|
+|POP|TLS encryption for POP3 client connections. <br/> Don't assign a wildcard certificate to the POP3 service. Instead, use the **Set-PopSettings** cmdlet to configure the FQDN that clients use to connect to the POP3 service.|
+|SMTP|TLS encryption for external SMTP client and server connections. <br/> Mutual TLS authentication between Exchange and other messaging servers. <br/> When you assign a certificate to SMTP, you're prompted to replace the default Exchange self-signed certificate that's used to encrypt SMTP communication between internal Exchange servers. Typically, you don't need to replace the default SMTP certificate.|
+|Unified Messaging (UM)|TLS encryption for client connections to the backend UM service on Exchange 2016 Mailbox servers. <br/> You can only assign a certificate to the UM service when the UM startup mode property of the service is set to TLS or Dual. If the UM startup mode is set to the default value TCP, you can't assign the certificate to the UM service. (**Note**: UM is not available in Exchange 2019). For more information, see [Configure the Startup Mode on a Mailbox Server](http://technet.microsoft.com/library/4457d6a0-52bd-4269-8cb5-d34d7fe9bfc3.aspx).|
+|Unified Messaging Call Router (UMCallRouter)|TLS encryption for client connections to the UM Call Router service in the Client Access services on Exchange 2016 Mailbox servers. <br/> You can only assign a certificate to the UM Call Router service when the UM startup mode property of the service is set to TLS or Dual. If the UM startup mode is set to the default value TCP, you can't assign the certificate to the UM Call Router service. (**Note**: UM is not available in Exchange 2019). For more information, see [Configure the Startup Mode on a Client Access Server](http://technet.microsoft.com/library/71cc9061-9e3c-4b4a-8dbe-f590ca5bcee8.aspx).|
    
 ## What do you need to know before you begin?
 

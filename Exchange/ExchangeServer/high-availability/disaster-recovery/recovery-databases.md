@@ -3,22 +3,20 @@ title: "Recovery databases"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f3c6fd0b-2e25-442e-a0fc-46f663130c3e
-description: "Summary: An overview of recovery databases in Exchange 2016."
+description: "Summary: An overview of recovery databases in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Recovery databases
 
- **Summary**: An overview of recovery databases in Exchange 2016.
-  
 A recovery database (RDB) is a special kind of mailbox database that allows you to mount a restored mailbox database and extract data from the restored database as part of a recovery operation. You can use the [New-MailboxRestoreRequest](http://technet.microsoft.com/library/0b67defd-3c6c-4470-acfa-7f22a6c1d2bd.aspx) cmdlet to extract data from an RDB. After extraction, the data can be exported to a folder or merged into an existing mailbox. RDBs enable you to recover data from a backup or copy of a database without disturbing user access to current data.
   
-Microsoft Exchange Server 2016 supports the ability to restore data directly to a recovery database. Mounting the recovered data as a recovery database allows the administrator to restore individual mailboxes or individual items in a mailbox. Restoring to a recovery database can be accomplished in two ways:
+Microsoft Exchange Server supports the ability to restore data directly to a recovery database. Mounting the recovered data as a recovery database allows the administrator to restore individual mailboxes or individual items in a mailbox. Restoring to a recovery database can be accomplished in two ways:
   
 - If a recovery database already exists, the application can dismount the database, restore the data onto the recovery database and log files, and then remount the database.
     
@@ -32,7 +30,7 @@ RDBs are different from standard mailbox databases in several respects:
     
 - Mail can't be sent to or from an RDB. All client protocol access to an RDB (including SMTP, POP3, and IMAP4) is blocked. This design prevents using an RDB to insert mail into or remove mail from the messaging system.
     
-- Client MAPI access using Microsoft Office Outlook or Outlook on the web is blocked. MAPI access is supported for an RDB, but only by recovery tools and applications. Both the mailbox GUID and the database GUID must be specified when using MAPI to log into a mailbox in an RDB.
+- Client MAPI access using Microsoft Outlook or Outlook on the web is blocked. MAPI access is supported for an RDB, but only by recovery tools and applications. Both the mailbox GUID and the database GUID must be specified when using MAPI to log into a mailbox in an RDB.
     
 - Mailboxes in an RDB can't be connected to user accounts. To allow a user to access the data in a mailbox in an RDB, the mailbox must be merged into an existing mailbox, or exported to a folder.
     
@@ -52,7 +50,7 @@ RDBs are different from standard mailbox databases in several respects:
     
 ## Using a recovery database
 
-Before you can use an RDB, there are certain requirements that must be met. An RDB can be used for Exchange 2016 mailbox databases only. Mailbox databases from previous versions of Exchange aren't supported. In addition, the target mailbox used for data merges and extraction must be in the same Active Directory forest as the database mounted in the RDB.
+Before you can use an RDB, there are certain requirements that must be met. An RDB can be used for Exchange 2016 and later mailbox databases only. Mailbox databases from previous versions of Exchange aren't supported. In addition, the target mailbox used for data merges and extraction must be in the same Active Directory forest as the database mounted in the RDB.
   
 An RDB can be used to recover data in several situations, such as:
   

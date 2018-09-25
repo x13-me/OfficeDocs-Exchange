@@ -3,19 +3,17 @@ title: "Search message tracking logs"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/10/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: e1678327-bcd5-42d4-a363-67f33067fe9a
-description: "Learn how administrators search the message tracking log by using the Get-MessageTrackingLog cmdlet in Exchange PowerShell."
+description: "Administrators can learn how to search the message tracking log in Exchange 2016 and Exchange 2019 by using the Get-MessageTrackingLog cmdlet in Exchange PowerShell."
 ---
 
 # Search message tracking logs
-
-Learn how administrators search the message tracking log by using the **Get-MessageTrackingLog** cmdlet in Exchange PowerShell.
   
 Message tracking records the message activity as mail flows through the transport pipeline on Mailbox servers and Edge Transport servers. You can use the **Get-MessageTrackingLog** cmdlet in the Exchange Management Shell to search for entries in the message tracking log by using specific search criteria. For example: 
   
@@ -49,7 +47,7 @@ Message tracking records the message activity as mail flows through the transpor
     
 - You can't copy the message tracking log files from another Exchange server and then search them by using the **Get-MessageTrackingLog** cmdlet. Also, if you manually save an existing message tracking log file, the change in the file's date-time stamp breaks the query logic that Exchange uses to search the message tracking logs.
     
-- The Exchange 2016 **Get-MessageTrackingLog** cmdlet is able to search the message tracking logs on Exchange 2013 Mailbox servers and Exchange 2010 Hub Transport servers in the same Active Directory site.
+- In Exchange 2016, the **Get-MessageTrackingLog** cmdlet is able to search the message tracking logs on Exchange 2013 Mailbox servers and Exchange 2010 Hub Transport servers in the same Active Directory site. In Exchange 2019, the **Get-MessageTrackingLog** cmdlet is able to search the message tracking logs on Exchange 2016 and Exchange 2013 Mailbox servers in the same Active Directory site.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     

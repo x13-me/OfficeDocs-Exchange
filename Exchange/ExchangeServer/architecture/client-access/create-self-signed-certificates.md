@@ -1,23 +1,21 @@
 ---
-title: "Create a new Exchange 2016 self-signed certificate"
+title: "Create a new Exchange Server self-signed certificate"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: ae826efe-7558-4007-b255-7dfe5933bbbf
-description: "Summary: Learn how to create a new self-signed certificate in Exchange 2016."
+description: "Summary: Learn how to create a new self-signed certificate in Exchange Server 2016 or Exchange Server 2019."
 ---
 
-# Create a new Exchange 2016 self-signed certificate
+# Create a new Exchange Server self-signed certificate
 
- **Summary**: Learn how to create a new self-signed certificate in Exchange 2016.
-  
-When you install Exchange 2016, a self-signed certificate that's created and signed by the Exchange server itself is automatically installed on the server. However, you can also create additional self-signed certificates that you can use.
+When you install Exchange Server, a self-signed certificate that's created and signed by the Exchange server itself is automatically installed on the server. However, you can also create additional self-signed certificates that you can use.
   
 You can create self-signed certificates certificate in the Exchange admin center (EAC) or in the Exchange Management Shell.
   
@@ -25,9 +23,9 @@ You can create self-signed certificates certificate in the Exchange admin center
 
 - Estimated time to complete: 5 minutes.
     
-- Exchange self-signed certificates work well for encrypting communication between internal Exchange servers, but not so well for encrypting external connections, because clients, servers, and services don't automatically trust Exchange self-signed certificates. To create a certificate request (also known as certificate signing requests or CSR) for a commercial certification authority that's automatically trusted by all clients, servers, and services, see [Create an Exchange 2016 certificate request for a certification authority](create-ca-certificate-requests.md).
+- Exchange self-signed certificates work well for encrypting communication between internal Exchange servers, but not so well for encrypting external connections, because clients, servers, and services don't automatically trust Exchange self-signed certificates. To create a certificate request (also known as a certificate signing request or CSR) for a commercial certification authority that's automatically trusted by all clients, servers, and services, see [Create an Exchange Server certificate request for a certification authority](create-ca-certificate-requests.md).
     
-- When you create a new self-signed certificate by using the **New-ExchangeCertificate** cmdlet, you can assign the certificate to Exchange services during the creation of the certificate. For more information about the Exchange services, see [Assign certificates to Exchange 2016 services](assign-certificates-to-services.md).
+- When you create a new self-signed certificate by using the **New-ExchangeCertificate** cmdlet, you can assign the certificate to Exchange services during the creation of the certificate. For more information about the Exchange services, see [Assign certificates to Exchange Server services](assign-certificates-to-services.md).
     
 - To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
@@ -46,7 +44,7 @@ You can create self-signed certificates certificate in the Exchange admin center
     
 3. The **New Exchange certificate** wizard opens. On the **This wizard will create a new certificate or a certificate request file** page, select **Create a self-signed certificate**, and then click **Next**.
     
-    **Note:** To create a new certificate request for a certificate authority, see [Create an Exchange 2016 certificate request for a certification authority](create-ca-certificate-requests.md).
+    **Note:** To create a new certificate request for a certificate authority, see [Create an Exchange Server certificate request for a certification authority](create-ca-certificate-requests.md).
     
 4. On the **Friendly name for this certificate** page, enter a friendly name for the certificate, and then click **Next**.
     
@@ -142,7 +140,7 @@ New-ExchangeCertificate -FriendlyName "Contoso Exchange Certificate" -SubjectNam
   
 - The only required part of the X.500 _SubjectName_ parameter value (the certificate's **Subject** field) is `CN=<HostNameOrFQDN>`.
     
--  Some _Services_ parameter values generate warning or confirmation messages. For more information, see [Assign certificates to Exchange 2016 services](assign-certificates-to-services.md).
+-  Some _Services_ parameter values generate warning or confirmation messages. For more information, see [Assign certificates to Exchange Server services](assign-certificates-to-services.md).
     
 - For more information, see [New-ExchangeCertificate](http://technet.microsoft.com/library/5e0b61b0-ece6-4d9b-949a-f6a032dd0fb9.aspx).
     

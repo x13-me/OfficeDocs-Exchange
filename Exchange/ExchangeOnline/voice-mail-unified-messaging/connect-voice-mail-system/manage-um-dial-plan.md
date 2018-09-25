@@ -282,7 +282,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
     
     International dialing rule groups can be used to allow or restrict access to telephone numbers outside a country or region. This is applied to all users who have called in to an Outlook Voice Access number.
     
-10. **Transfer &amp; search** Use this page to configure the UM dial plan features. Several features can be configured on the UM dial plan. These include transferring calls, sending voice messages, and searching for users. You can configure the following: 
+10. **Transfer & search** Use this page to configure the UM dial plan features. Several features can be configured on the UM dial plan. These include transferring calls, sending voice messages, and searching for users. You can configure the following: 
     
   - **Allow callers to** Use these settings to determine how users who call in to an Outlook Voice Access number can contact users. You can configure the following: 
     

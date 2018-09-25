@@ -3,26 +3,24 @@ title: "Deploying high availability and site resilience"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 4c4e00a4-1f57-4fdb-b9b2-2779abf381a9
-description: "Summary: How to deploy Exchange Server 2016 with high availability and site resilience."
+description: "Summary: How to deploy Exchange Server 2016 or Exchange Server 2019 with high availability and site resilience."
 ---
 
 # Deploying high availability and site resilience
 
- **Summary**: How to deploy Exchange Server 2016 with high availability and site resilience.
-
-Microsoft Exchange Server 2016 uses the concept known as *incremental deployment* for both high availability and site resilience. You simply install two or more Exchange 2016 Mailbox servers as stand-alone servers, and then incrementally configure them and mailbox databases for high availability and site resilience, as needed.
+Microsoft Exchange Server uses the concept known as *incremental deployment* for both high availability and site resilience. You simply install two or more Exchange Mailbox servers as stand-alone servers, and then incrementally configure them and mailbox databases for high availability and site resilience, as needed.
 
 ## Overview of the deployment process
 
-While the actual steps used by each organization may vary slightly, the overall process for deploying Exchange 2016 in a highly available or site resilient configuration is generally the same. After performing the necessary planning and design tasks for building and deploying a database availability group (DAG) and creating mailbox database copies, you would:
+While the actual steps used by each organization may vary slightly, the overall process for deploying Exchange Server in a highly available or site resilient configuration is generally the same. After performing the necessary planning and design tasks for building and deploying a database availability group (DAG) and creating mailbox database copies, you would:
 
-1. Create a DAG. For detailed steps, see [Create a database availability group](manage-ha/create-dags.md). It's important to note that all servers within a DAG must be running the same version of Exchange. You can't mix Exchange 2013 and Exchange 2016 servers in the same DAG.
+1. Create a DAG. For detailed steps, see [Create a database availability group](manage-ha/create-dags.md). It's important to note that all servers within a DAG must be running the same version of Exchange. For example, you can't mix Exchange 2013 and Exchange 2016 servers in the same DAG.
 
 2. If necessary, pre-stage the cluster name object (CNO). Pre-staging the CNO is required when deploying a DAG with Mailbox servers running Windows Server 2012. If you're deploying a DAG without an administrative access point using Mailbox servers running Windows Server 2012 R2, then you do not need to pre-stage a CNO. Pre-staging is also required in environments where computer account creation is restricted or where computer accounts are created in a container other than the default computers container. For detailed steps, see [Pre-stage the cluster name object for a database availability group](manage-ha/pre-stage-dag-cnos.md).
 
@@ -42,15 +40,15 @@ This example details how an organization, Contoso, Ltd., is configuring and depl
 
 ### Base infrastructure
 
-Each location contains the infrastructure elements that are necessary to operate a messaging infrastructure based on Exchange 2016, namely:
+Each location contains the infrastructure elements that are necessary to operate a messaging infrastructure based on Exchange Server, namely:
 
 - Directory services (either Active Directory or Active Directory Domain Services (AD DS))
 
 - Domain Name System (DNS) name resolution
 
-- Multiple Exchange 2016 servers running Client Access services
+- Multiple Exchange servers running Client Access services
 
-- Multiple Exchange 2016 Mailbox servers
+- Multiple Exchange Mailbox servers
 
 The following figure illustrates the Contoso configuration.
 
@@ -203,7 +201,7 @@ Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -ActivationOnly
 
 In the preceding examples for the **Add-MailboxDatabaseCopy** cmdlet, the _ActivationPreference_ parameter wasn't specified. The task automatically increments the activation preference number with each copy that's added. The original database always has a preference number of 1. The first copy added with the **Add-MailboxDatabaseCopy** cmdlet is automatically assigned a preference number of 2. Assuming no copies are removed, the next copy added is automatically assigned a preference number of 3, and so forth. Thus, in the preceding examples, the passive copy in the same datacenter as the active copy has an activation preference number of 2; the non-lagged passive copy in the remote datacenter has an activation preference number of 3, and the lagged passive copy in the remote datacenter has an activation preference number of 4.
 
-Although there are two copies of each active database across the WAN in the other location, seeding over the WAN was only performed once. This is because Contoso is leveraging the Exchange 2016 ability to use a passive copy of a database as the source for seeding. Using the [Add-MailboxDatabaseCopy](http://technet.microsoft.com/library/84198fa9-ac8e-44ea-bd7b-64fe1e83e709.aspx) cmdlet with the _SeedingPostponed_ parameter prevents the task from automatically seeding the new database copy being created. Then, the administrator can suspend the un-seeded copy, and by using the [Update-MailboxDatabaseCopy](http://technet.microsoft.com/library/37ebb66a-382e-4fd9-81f8-795f776a87b1.aspx) cmdlet with the _SourceServer_ parameter, the administrator can specify the local copy of the database as the source of the seeding operation. As a result, seeding of the second database copy added to each location happens locally and not over the WAN.
+Although there are two copies of each active database across the WAN in the other location, seeding over the WAN was only performed once. This is because Contoso is leveraging the Exchange Server ability to use a passive copy of a database as the source for seeding. Using the [Add-MailboxDatabaseCopy](http://technet.microsoft.com/library/84198fa9-ac8e-44ea-bd7b-64fe1e83e709.aspx) cmdlet with the _SeedingPostponed_ parameter prevents the task from automatically seeding the new database copy being created. Then, the administrator can suspend the un-seeded copy, and by using the [Update-MailboxDatabaseCopy](http://technet.microsoft.com/library/37ebb66a-382e-4fd9-81f8-795f776a87b1.aspx) cmdlet with the _SourceServer_ parameter, the administrator can specify the local copy of the database as the source of the seeding operation. As a result, seeding of the second database copy added to each location happens locally and not over the WAN.
 
 > [!NOTE]
 > In the preceding example, the non-lagged database copy is seeded over the WAN, and that copy is then used to seed the lagged copy of the database that's in the same datacenter as the non-lagged copy.

@@ -25,7 +25,7 @@ Office 365 gives you flexibility in determining the best arrangement for how ema
 For information about how your email is protected with EOP, see [Exchange Online Protection Overview](http://technet.microsoft.com/library/1270a65f-ddc3-4430-b500-4d3a481efb1e.aspx).
   
 > [!TIP]
-> Are you new to Office 365 mail flow? Check out the [Introduction to the basics of Office 365 mail flow](http://technet.microsoft.com/library/840fd26f-5409-4325-8543-7cdaa2f8bb25.aspx) topic. We especially recommend reading the part about SPF records because customers often list the wrong values in their SPF record, which can cause mail flow problems. 
+> Are you new to Office 365 mail flow? Check out the [External Domain Name System records for Office 365](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records) topic. We especially recommend reading the part about SPF records because customers often list the wrong values in their SPF record, which can cause mail flow problems. 
   
 Office 365 mail flow covers the following scenarios:
   
