@@ -34,7 +34,7 @@ description: Exchange
                                 </a>
                             </li>
                             <li>
-                                <a href="/Exchangeexchange-server-2013-exchange-2013-help">
+                                <a href="/Exchange/exchange-server-2013-exchange-2013-help">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
