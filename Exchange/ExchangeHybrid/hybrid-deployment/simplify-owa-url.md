@@ -61,7 +61,7 @@ To eliminate these issues for users with cloud mailboxes, perform the following 
     
   - Use http, not https.
     
-  - The trailing value /owa is required in the organization relationship, but users don't need to need to enter /owa in the URL.
+  - The trailing value /owa is required in the organization relationship, but users don't need to enter /owa in the URL.
     
 ## Multiple authentication prompts
 

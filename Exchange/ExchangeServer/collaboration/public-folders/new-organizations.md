@@ -3,24 +3,22 @@ title: "Set up public folders in a new organization"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 7b419906-8977-47f0-8687-a87911b5ebec
-description: "Summary: Learn how to get public folders configured and running in Exchange 2016 for a new organization or in an organization that has never previously had public folders."
+description: "Summary: Learn how to get public folders configured and running in Exchange Server 2016 or Exchange Server 2019 for a new organization or in an organization that has never previously had public folders."
 ---
 
 # Set up public folders in a new organization
 
- **Summary**: Learn how to get public folders configured and running in Exchange 2016 for a new organization or in an organization that has never previously had public folders.
-  
 Public folders in Exchange are based on a mailbox architecture that allows public folders to benefit from things such as the resiliency of a Database Availability Group (DAG) and other mailbox features.
   
-For limits in on-premises Exchange 2016, see [Limits for public folders](limits.md).
+For limits in on-premises Exchange Server, see [Limits for public folders](limits.md).
   
-For additional management tasks related to public folders in Exchange 2016, see [Public folder procedures](procedures.md).
+For additional management tasks related to public folders in Exchange Server, see [Public folder procedures](procedures.md).
   
 ## What do you need to know before you begin?
 
@@ -81,6 +79,6 @@ If you want users to send mail to the public folder, you can mail-enable the pub
     
 The public folder will be mail-enabled and the name of the public folder will become the alias of the public folder. If you have multiple recipients with that name, the public folder's alias will be appended with a number. For example, if you have a distribution group named SalesTeam and you create a public folder named SalesTeam and then mail-enable it, the alias of that public folder will be SalesTeam1.
   
-For information about how to use the Exchange Management Shelll to mail-enable a public folder, see [Enable-MailPublicFolder](http://technet.microsoft.com/library/6fc7ba9a-62a8-4f41-811f-608363aa1397.aspx).
+For information about how to use the Exchange Management Shell to mail-enable a public folder, see [Enable-MailPublicFolder](http://technet.microsoft.com/library/6fc7ba9a-62a8-4f41-811f-608363aa1397.aspx).
   
 

@@ -1,69 +1,63 @@
 ---
-title: "Install the Exchange 2016 management tools"
-ms.author: dstrome
-author: dstrome
+title: "Install the Exchange management tools"
+ms.author: chrisda
+author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/27/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 71fcbe4c-783b-4f77-aabb-a21aa7a4ef23
-description: "Summary: Learn how to install the Exchange 2016 management tools on other computers."
+description: "Summary: Learn how to install the Exchange 2016 or Exchange 2019 management tools on other computers."
 ---
 
-# Install the Exchange 2016 management tools
+# Install the Exchange management tools
 
- **Summary**: Learn how to install the Exchange 2016 management tools on other computers.
-  
-The management tools in Exchange Server 2016 include the Exchange Management Shell and the Exchange Toolbox. You can install the management tools on other client computers or servers in the Active Directory domain to help you manage your Exchange organization. The management tools have similar operating system, .NET Framework, and Windows Management Framework (Windows PowerShell) requirements as an Exchange server. The notable exception is: you can install the management tools on client versions of Windows. For more information, see [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites.md)..
+The management tools in Exchange Server 2016 and Exchange Server 2019 include the Exchange Management Shell and the Exchange Toolbox. You can install the management tools on other client computers or servers in the Active Directory domain to help you manage your Exchange organization. The management tools have similar operating system, .NET Framework, and Windows Management Framework (Windows PowerShell) requirements as an Exchange server. The notable exception is: you can install the management tools on client versions of Windows. For more information, see [Exchange Server system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange Server prerequisites](../../plan-and-deploy/prerequisites.md).
   
 > [!NOTE]
-> The management tools don't include the Exchange admin center (EAC). The EAC is a web-based console that's hosted on Exchange 2016 Mailbox servers, and like any web site, you can access the EAC from other computers. For more information about the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md).
+> The management tools don't include the Exchange admin center (EAC). The EAC is a web-based console that's hosted on Exchange 2016 Mailbox servers, and like any web site, you can access the EAC from other computers. For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md).
   
-For more information about the Exchange Management Shell and the Exchange Toolbox, see [Using Powershell with Exchange 2016 (Exchange Management Shell)](http://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx) and [Exchange Toolbox](http://technet.microsoft.com/library/b4a2e942-ea90-4a80-963d-d336cd6411d9.aspx).
+For more information about the Exchange Management Shell and the Exchange Toolbox, see [Exchange Server PowerShell (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell) and [Exchange Toolbox](https://technet.microsoft.com/library/jj556600(v=exchg.150).aspx).
   
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 20 minutes
+
+- The computer where you want to install the Exchange management tools requires access to Setup.exe in the Exchange installation files. To download the latest version of Exchange, see [Updates for Exchange Server](../updates.md).
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
   
-## Use the Exchange 2016 Setup wizard to install the management tools
+## Use the Exchange 2016 Setup wizard to install the Exchange management tools
 
-1. Use the information in [Updates for Exchange 2016](../../new-features/updates.md) to download the latest version of Exchange 2016. You can download the ISO image file locally on the computer where you want to install the management tools, or to a central network location.
+1. In File Explorer on the computer where you want to install the management tools, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. In the resulting virtual DVD drive that appears, start Exchange Setup by double-clicking `Setup.exe`.
     
-2. On the computer where you want to install the management tools:
+2. The Exchange Server Setup wizard opens. On the **Check for Updates?** page, choose one of the following options, and then click **Next** to continue: 
     
-3. Open File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**.
+  - **Connect to the Internet and check for updates**: We recommend this option, which searches for updates to the version of Exchange _that you're currently installing_ (it doesn't detect newer Cumulative Updates). This option takes you to the **Downloading Updates** page that searches for updates. Click **Next** to continue.
     
-4. In the resulting virtual DVD drive that appears, start Exchange 2016 Setup by double-clicking `Setup.exe`.
+  - **Don't check for updates right now**
     
-5. The Exchange Server 2016 Setup wizard opens. On the **Check for Updates?** page, choose one of the following options, and then click **Next** to continue: 
-    
-    - **Connect to the Internet and check for updates**: We recommend this option, which searches for updates to the version of Exchange 2016 that you're installing (it doesn't detect newer Exchange 2016 Cumulative Updates). This option takes you to the **Downloading Updates** page that searches for updates.
-    
-    - **Don't check for updates right now**
-    
-    ![Exchange 2016 Setup, Check for Updates page](../../media/f0ca225e-b88f-45e9-a8cb-21adaabe984e.png)
+    ![Exchange Setup, Check for Updates page](../../media/f0ca225e-b88f-45e9-a8cb-21adaabe984e.png)
   
-6. The **Copying Files** page shows the progress of copying files to the local hard drive. Typically, the files are copied to `%WinDir%\Temp\ExchangeSetup`, but you can confirm the location in the Exchange Setup log at `C:\ExchangeSetupLogs\ExchangeSetup.log`.
+3. The **Copying Files** page shows the progress of copying files to the local hard drive. Typically, the files are copied to `%WinDir%\Temp\ExchangeSetup`, but you can confirm the location in the Exchange Setup log at `C:\ExchangeSetupLogs\ExchangeSetup.log`.
 
-    ![Exchange 2016 Setup, Copying Files page](../../media/78813be2-745d-4a58-8da8-883c43aa2650.png)
+    ![Exchange Setup, Copying Files page](../../media/78813be2-745d-4a58-8da8-883c43aa2650.png)
   
-7. On the **Introduction** page, click **Next** to continue.
+4. On the **Introduction** page, click **Next** to continue.
 
-    ![Exchange 2016 Setup, Introduction page](../../media/9f605305-979a-4667-a042-38854677cf0b.png)
+    ![Exchange Setup, Introduction page](../../media/9f605305-979a-4667-a042-38854677cf0b.png)
   
-8. On the **License Agreement** page, review the software license terms, select **I accept the terms in the license agreement**, and then click **Next** to continue.
+5. On the **License Agreement** page, review the software license terms, select **I accept the terms in the license agreement**, and then click **Next** to continue.
 
-    ![Exchange 2016 Setup, License Agreement page](../../media/2bb6bfaa-1b39-4052-9420-a7a053b07d58.png)
+    ![Exchange Setup, License Agreement page](../../media/2bb6bfaa-1b39-4052-9420-a7a053b07d58.png)
   
-9. On the **Recommended Settings** page, choose one of the following settings: 
+6. On the **Recommended Settings** page, choose one of the following settings: 
     
     - **Use recommended settings**: Exchange automatically sends error reports and information about your computer hardware and how you use Exchange to Microsoft. For information about what's sent to Microsoft and how it's used, click **?** or the help links on the page.
     
@@ -71,25 +65,25 @@ For more information about the Exchange Management Shell and the Exchange Toolbo
     
     Click **Next** to continue.
 
-    ![Exchange 2016 Setup, Recommended Settings page](../../media/26af58f0-52ab-4482-8710-9a7cd2e7a6c3.png)
+    ![Exchange Setup, Recommended Settings page](../../media/26af58f0-52ab-4482-8710-9a7cd2e7a6c3.png)
   
-10. On the **Server Role Selection** page, configure the following settings: 
+7. On the **Server Role Selection** page, configure the following settings: 
     
     - Select **Management tools**.
     
     - **Automatically install Windows Server roles and features that are required to install Exchange**: Select this option to have the Setup wizard install the required Windows prerequisites. You might need to reboot the computer to complete the installation of some Windows features. If you don't select this option, you need to install the Windows features manually.
     
-      **Note**: Selecting this option installs only the Windows features that are required by Exchange. You need to install other prerequisites manually. For more information, see [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites.md).
+      **Note**: Selecting this option installs only the _Windows features_ that are required by Exchange. You need to install other prerequisites manually. For more information, see [Exchange Server prerequisites](../../plan-and-deploy/prerequisites.md).
     
     Click **Next** to continue.
 
-    ![Exchange 2016 Setup, Server Role Selection page, Management tools selection](../../media/9675432c-9b46-4f95-841d-1cea632a93a9.png)
+    ![Exchange Setup, Server Role Selection page, Management tools selection](../../media/9675432c-9b46-4f95-841d-1cea632a93a9.png)
   
-11. On the **Installation Space and Location** page, either accept the default installation location (`C:\Program Files\Microsoft\Exchange Server\V15`), or click **Browse** to choose a new location. Make sure that you have enough disk space available in the location where you want to install the management tools. Click **Next** to continue.
+8. On the **Installation Space and Location** page, either accept the default installation location (`C:\Program Files\Microsoft\Exchange Server\V15`), or click **Browse** to choose a new location. Make sure that you have enough disk space available in the location where you want to install the management tools. Click **Next** to continue.
 
-    ![Exchange 2016 Setup, Installation Space and Location page](../../media/7ae7f248-3cdc-4453-9d7d-e99edc300d16.png)
+    ![Exchange Setup, Installation Space and Location page](../../media/7ae7f248-3cdc-4453-9d7d-e99edc300d16.png)
   
-12. If this is the first installation of Exchange in your organization (Exchange server or the management tools), you arrive on the **Exchange Organization** page. On this page, configure the following settings: 
+9. If this is the first installation of Exchange in your organization (Exchange server or the management tools), you arrive on the **Exchange Organization** page. On this page, configure the following settings: 
     
     - **Specify the name for this Exchange organization**: The default value is **First Organization**, but you typically use the company name for this value. The organization name is used internally by Exchange, isn't typically seen by users, doesn't affect the functionality of Exchange, and doesn't determine what you can use for email addresses.
     
@@ -103,44 +97,36 @@ For more information about the Exchange Management Shell and the Exchange Toolbo
     
     Click **Next** to continue.
 
-    ![Exchange 2016 Setup, Exchange Organization page](../../media/acdba072-f4bb-4fb8-acae-c6b43cb32044.png)
+    ![Exchange Setup, Exchange Organization page](../../media/acdba072-f4bb-4fb8-acae-c6b43cb32044.png)
   
-13. On the **Readiness Checks** page, verify that the organization and server role prerequisite checks completed successfully. If they haven't, the only option on the page is **Retry**, so you need to resolve the errors before you can continue.
+10. On the **Readiness Checks** page, verify that the organization and server role prerequisite checks completed successfully. If they haven't, the only option on the page is **Retry**, so you need to resolve the errors before you can continue.
 
-    ![Exchange 2016 Setup, Readiness Check page with errors detected](../../media/d4ee435a-a383-4be6-8233-da4cc2a19eea.png)
+    ![Exchange Setup, Readiness Check page with errors detected](../../media/d4ee435a-a383-4be6-8233-da4cc2a19eea.png)
   
     After you resolve the errors, click **Retry** to run the prerequisite checks again. You can fix some errors without exiting Setup, while the fix for other errors requires you to restart the computer. If you restart the computer, you need to start over at Step 2.
     
     When no more errors are detected on the **Readiness Checks** page, the **Retry** button changes to **Install** so you can continue. Be sure to review any warnings, and then click **Install** to install the management tools.
     
-    ![Exchange 2016 Setup, Readiness Check page with errors resolved](../../media/a9aca4d0-19ac-4783-8071-cdd435b1658d.png)
+    ![Exchange Setup, Readiness Check page with errors resolved](../../media/a9aca4d0-19ac-4783-8071-cdd435b1658d.png)
   
-14. On the **Setup Completed** page, click **Finish**, and then restart the computer.
+11. On the **Setup Completed** page, click **Finish**, and then restart the computer.
 
-    ![Exchange 2016 Setup, Setup Completed page](../../media/6019a9d8-33d8-4ceb-9b4f-63bff3c105dd.png)
+    ![Exchange Setup, Setup Completed page](../../media/6019a9d8-33d8-4ceb-9b4f-63bff3c105dd.png)
   
-## Use Exchange 2016 unattended Setup mode to install the management tools
+## Use Exchange unattended Setup mode to install the Exchange management tools
 
-1. Use the information in [Updates for Exchange 2016](../../new-features/updates.md) to download the latest version of Exchange 2016. You can download the ISO image file locally on the computer where you want to install the management tools, or to a central network location.
-    
-2. On the computer where you want to install the management tools:
-    
-    1. Open File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**.
-    
-    2. Open an elevated command prompt (a Command Prompt window you open by selecting **Run as administrator**), and go to the resulting virtual DVD drive that appears. For example, if the virtual drive letter is E:, type `E:` in the command prompt, and then press Enter.
-    
-    3. To install the management tools, use the following syntax:
-    
-        ```
-        Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms [/EnableErrorReporting] [/CustomerFeedbackEnabled:<True | False>] [/InstallWindowsComponents] [/TargetDir:<Target folder>] [/OrganizationName:<Name>]
-        ```
+1. In File Explorer on the computer where you want to install the Exchange management tools, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**.
 
-        This example installs the management tools on the local computer with the default settings.
-    
-        ```
-        Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
-        ```
+2. To install the Exchange management tools from the command line, use the following syntax in elevated command prompt (a Command Prompt window you opened by selecting **Run as administrator**):
 
-For more information, see [Install Exchange 2016 using unattended mode](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
-  
+    ```
+    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /Role:ManagementTools [/EnableErrorReporting] [/CustomerFeedbackEnabled:<True | False>] [/InstallWindowsComponents] [/TargetDir:<Target folder>] [/OrganizationName:<Name>]
+    ```
 
+    This example uses the Exchange Setup files on drive E: to install the management tools on the local server
+
+    ```
+    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Role:ManagementTools
+    ```
+
+For more information, see [Install Exchange using unattended mode](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).

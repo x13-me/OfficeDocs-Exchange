@@ -47,9 +47,9 @@ Exchange Online service provides several options for Deleted item recovery, whic
 
 Users can export their Outlook data to Outlook on another computer or back up that data by following the steps in the [Export or backup email, contacts, and calendar to an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkId=325560) topic. Unfortunately, Outlook Web App users cannot back up their data themselves. 
   
-To learn how to restore deleted items in Outlook, see [Recover deleted items in Outlook](https://support.office.com/en-us/article/Recover-deleted-items-in-Outlook-for-Windows-49e81f3c-c8f4-4426-a0b9-c0fd751d48ce?CorrelationId=a8a3b0dd-599f-44de-bbf8-70ae117aab62&amp;ui=en-US&amp;rs=en-US&amp;ad=US).
+To learn how to restore deleted items in Outlook, see [Recover deleted items in Outlook](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce).
   
-To learn how to restore deleted items in Outlook Web App, see [Recover deleted items or email in Outlook Web App](https://support.office.com/en-us/article/Recover-deleted-items-or-email-in-Outlook-Web-App-c3d8fc15-eeef-4f1c-81df-e27964b7edd4?ui=en-US&amp;rs=en-US&amp;ad=US).
+To learn how to restore deleted items in Outlook Web App, see [Recover deleted items or email in Outlook Web App](https://support.office.com/article/c3d8fc15-eeef-4f1c-81df-e27964b7edd4).
   
 ## Backing up Exchange 2016 on-premises
 

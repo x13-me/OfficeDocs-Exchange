@@ -1,28 +1,26 @@
 ---
-title: "View or configure Outlook on the web virtual directories in Exchange 2016"
+title: "View or configure Outlook on the web virtual directories in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: scotv
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
-description: "Summary: Learn how to view and configure the properties of Outlook on the web virtual directories in Exchange 2016"
+description: "Summary: Learn how to view and configure the properties of Outlook on the web virtual directories in Exchange Server 2016 or Exchange Server 2019"
 ---
 
-# View or configure Outlook on the web virtual directories in Exchange 2016
+# View or configure Outlook on the web virtual directories in Exchange Server
 
- **Summary**: Learn how to view and configure the properties of Outlook on the web virtual directories in Exchange 2016
-  
 You can use the Exchange admin center (EAC) or the Exchange Management Shell to view or modify the properties of an Outlook on the web (formerly known as Outlook Web App) virtual directory. Although the name has changed to Outlook on the web, the name of the virtual directory is still "owa".
   
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 10 minutes.
     
-- For more information about the EAC, see .[Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- For more information about the EAC, see .[Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
 - Secure Sockets Layer (SSL) is being replaced by Transport Layer Security (TLS) as the protocol that's used to encrypt data sent between computer systems. They're so closely related that the terms "SSL" and "TLS" (without versions) are often used interchangeably. Because of this similarity, references to "SSL" in Exchange topics, the Exchange admin center, and the Exchange Management Shell have often been used to encompass both the SSL and TLS protocols. Typically, "SSL" refers to the actual SSL protocol only when a version is also provided (for example, SSL 3.0). To find out why you should disable the SSL protocol and switch to TLS, check out [Protecting you against the SSL 3.0 vulnerability](https://blogs.office.com/2014/10/29/protecting-ssl-3-0-vulnerability/).
     
@@ -59,7 +57,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
     
   - **General** tab: 
     
-  - **Internal URL**: The URL that's used to access Outlook on the web from the internal network. This value is configured automatically during Exchange 2016 setup, and the default value is https:// _\<Server FQDN\>_/owa (for example, https://mailbox01.contoso.com/owa).
+  - **Internal URL**: The URL that's used to access Outlook on the web from the internal network. This value is configured automatically during Exchange Server setup, and the default value is https:// _\<Server FQDN\>_/owa (for example, https://mailbox01.contoso.com/owa).
     
   - **External URL**: The URL that's used to access Outlook on the web from the Internet. The default value is blank.
     
@@ -101,7 +99,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
     
   - **Text messaging**
     
-  - **Unified Messaging**
+  - **Unified Messaging**: (In Exchange 2016 only; not available in Exchange 2019)
     
   - **Exchange ActiveSync**
     
@@ -230,7 +228,7 @@ To use the Exchange Management Shell to view the properties of Outlook on the we
 Get-OWAVirtualDirectory [-Identity "<ExchangeServer>\owa <Website>"]
 ```
 
-This example returns a summary list of all Outlook on the web virtual directories on all Exchange 2016 and Exchange 2013 in the organization.
+This example returns a summary list of all Outlook on the web virtual directories on all Exchange servers in the organization.
   
 ```
 Get-OWAVirtualDirectory
@@ -248,7 +246,7 @@ This example returns the authentication methods and settings for the same virtua
 Get-OWAVirtualDirectory -Identity "Mailbox01\owa (Default Web Site)" | Format-List *Authentication*
 ```
 
- **Note**: Not every setting is applicable to Exchange 2016 (for example, **SpellCheckerEnabled**).
+ **Note**: Not every setting is applicable to Exchange 2016 or Exchange 2019 (for example, **SpellCheckerEnabled**).
   
 For detailed syntax and parameter information, see [Get-OWAVirtualDirectory](http://technet.microsoft.com/library/63c48908-1116-4bab-8e5a-6c4dccbf3574.aspx).
   
@@ -266,7 +264,7 @@ There are many more configuration settings available for Outlook on the web virt
 | _LogonAndErrorLanguage_ <br/> _OutboundCharset_ <br/> _UseGB18030_ <br/> _UseISO885915_ <br/> |Configures the various language settings for Outlook on the web.  <br/> |
 | _DisplayPhotosEnabled_ <br/> _SetPhotoEnabled_ <br/> _SetPhotoURL_ <br/> |Configures the user photo settings in Outlook on the web.  <br/> |
    
- **Note**: Not all of the available parameters apply to Exchange 2016 (for example, _SpellCheckerEnabled_).
+ **Note**: Not all of the available parameters apply to Exchange 2016 or Exchange 2019 (for example, _SpellCheckerEnabled_).
   
 To use the Exchange Management Shell to configure the properties of Outlook on the web virtual directories, use the following syntax:
   

@@ -23,7 +23,7 @@
           "**/**.yml"
         ],
         "src": "ExchangeServer",
-        "dest": ".",
+        "group": "exchangeserver",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -95,8 +95,28 @@
           "**/obj/**",
           "**/includes/**"
         ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.pdf",
+          "**/*.svg"
+        ],
+        "group": "exchangeserver",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
       }
     ],
+    "groups": {
+      "exchangeserver": {
+        "dest": "exchserver-dest",
+        "moniker_range": "=exchserver-2016 || =exchserver-2019"
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {

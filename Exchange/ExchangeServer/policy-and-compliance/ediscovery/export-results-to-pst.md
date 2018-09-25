@@ -9,20 +9,18 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
-description: "Summary: Learn how to export the results of In-Place eDiscovery searches to .PST files in Exchange 2016."
+description: "Summary: Learn how to export the results of In-Place eDiscovery searches to .PST files in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Export eDiscovery search results to a PST file
 
- **Summary**: Learn how to export the results of In-Place eDiscovery searches to .PST files in Exchange 2016.
-  
-You can use the eDiscovery Export tool in the Exchange admin center (EAC) to export the results of an In-Place eDiscovery search to an Outlook Data File, which is also called a PST file. Search results will contain items from mailboxes and public folders, depending on the content sources from the eDiscovery search. This lets you distribute search results to other people within your organization, such as a human resources manager or records manager, or to opposing counsel in a legal case. After search results are exported to a PST file, you or other users can open them in Outlook to review or print messages returned in the search results. PST files can also be opened in third-party eDiscovery and reporting applications.
+ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to export the results of an In-Place eDiscovery search to an Outlook Data File, which is also called a PST file. Search results will contain items from mailboxes and public folders, depending on the content sources from the eDiscovery search. This lets you distribute search results to other people within your organization, such as a human resources manager or records manager, or to opposing counsel in a legal case. After search results are exported to a PST file, you or other users can open them in Outlook to review or print messages returned in the search results. PST files can also be opened in third-party eDiscovery and reporting applications.
   
 ## What do you need to know before you begin?
 
 - The amount of time it takes to export search results will vary based on the amount and size of the search results that will be exported.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging policy and compliance permissions in Exchange 2016](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
     
 - You'll need an active mail account attached to the account you wish to export.
     

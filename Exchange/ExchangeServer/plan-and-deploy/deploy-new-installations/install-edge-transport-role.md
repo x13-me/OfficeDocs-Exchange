@@ -1,97 +1,117 @@
 ---
-title: "Install the Exchange 2016 Edge Transport role using the Setup wizard"
-ms.author: dstrome
-author: dstrome
+title: "Install Exchange Edge Transport servers using the Setup wizard"
+ms.author: chrisda
+author: chrisda
 manager: serdars
-ms.date: 4/19/2018
+ms.date: 7/24/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: exchange-server-it-pro
 localization_priority: Priority
 ms.collection: Strat_EX_Admin
 ms.assetid: b8e51b0b-201e-4c64-92c8-3ac0db04b6e2
-description: "Summary: How to use the Exchange Server 2016 Setup wizard to install the Exchange 2016 Edge Transport server role on a computer."
+description: "Summary: Learn how to use the Setup wizard in Exchange 2016 or Exchange 2019 to install the Edge Transport server role on a computer."
 ---
 
-# Install the Exchange 2016 Edge Transport role using the Setup wizard
+# Install Exchange Edge Transport servers using the Setup wizard
 
- **Summary**: How to use the Exchange Server 2016 Setup wizard to install the Exchange 2016 Edge Transport server role on a computer.
+Before you install an Exchange Server 2016 or Exchange Server 2019 Edge Transport server, verify the following prerequisites:
   
-For more information about planning and deploying Exchange 2016, see [Planning and deployment](../../plan-and-deploy/plan-and-deploy.md).
+- We recommend that you install Edge Transport servers in a perimeter network that's outside of your organization's internal Active Directory forest. Installing the Edge Transport server role on domain-joined computers only enables domain management of Windows features and settings. Edge Transport servers don't directly access Active Directory. Instead, they use Active Directory Lightweight Directory Services (AD LDS) to store configuration and recipient information. For more information about the Edge Transport role, see [Edge Transport servers](../../architecture/edge-transport-servers/edge-transport-servers.md).
+
+- Verify the network, computer hardware, operating system, and software requirements at: [Exchange Server system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange Server prerequisites](../../plan-and-deploy/prerequisites.md).
+
+- Verify the local account on the targer computer is a member of the local Administrators group.
+
+- Verify that you've read the release notes at [Release notes for Exchange Server](../../release-notes.md).
+    
+For more information about planning and deploying Exchange, see [Planning and deployment for Exchange Server](../../plan-and-deploy/plan-and-deploy.md).
   
-We recommend that the Edge Transport role be installed in a perimeter network outside of your organization's internal Active Directory forest. While you can install the Edge Transport server role on a domain-joined computer, doing so will only enable domain management of Windows features and settings. The Edge Transport role itself doesn't use Active Directory. Instead, it uses the Active Directory Lightweight Directory Services (AD LDS) Windows feature to store configuration and recipient information. For more information about the Edge Transport role, see [Edge Transport servers](../../architecture/edge-transport-servers/edge-transport-servers.md).
-  
-If you want to install the Exchange 2016 Mailbox role on a computer, see [Install the Exchange 2016 Mailbox role using the Setup wizard](install-mailbox-role.md). The Edge Transport role can't be installed on the same computer as the Mailbox server role.
-  
-For information about tasks to complete after installation, see [Exchange 2016 post-installation tasks](../../plan-and-deploy/post-installation-tasks/post-installation-tasks.md).
-  
+To install the Mailbox role on a computer, see [Install Exchange Mailbox servers using the Setup wizard](install-mailbox-role.md). Note that you can't install the Edge Transport role on a Mailbox server.
+ 
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 40 minutes
     
-- Make sure you've read the release notes prior to installing Exchange 2016. For more information, see [Release notes for Exchange 2016](../../release-notes.md).
-    
-- The computer you install Exchange 2016 on must have a supported operating system, have enough disk space, and satisfy other requirements. For information about system requirements, see [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md).
-    
-- To run Exchange 2016 setup, you must install Microsoft .NET Framework 4.5.2 or later, and other required software. To understand the prerequisites for all server roles, see [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites.md).
-    
 - You need to configure the primary DNS suffix on the computer. For example, if the fully qualified domain name of your computer is edge.contoso.com, the DNS suffix for the computer is contoso.com. For more information, see [Primary DNS Suffix is missing [ms.exch.setupreadiness.FqdnMissing]](../../plan-and-deploy/deployment-ref/ms-exch-setupreadiness-fqdnmissing.md).
-    
--  Exchange 2010 Hub Transport servers need an update before you can create an EdgeSync Subscription between them and an Exchange 2016 Edge Transport server. If you don't install this update, the EdgeSync Subscription won't work correctly. For more information, see the "Supported coexistence scenarios" section in [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md).
-    
-- Make sure the account you use is a member of the local Administrators group on the computer you're installing the Edge Transport role.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
 > [!CAUTION]
-> After you install Exchange 2016 on a server, you must not change the server name. Renaming a server after you have installed an Exchange 2016 server role is not supported.
+> After you install Exchange on a server, you must not change the server name. Renaming a server after you've installed an Exchange server role is not supported.
   
-## Install Exchange Server 2016
+## Install the Exchange Edge Transport server role
 
-1. Log on to the computer on which you want to install Exchange 2016.
+1. Download the latest version of Exchange. For more information, see [Updates for Exchange Server](../updates.md).
     
-2. Download the Exchange 2016 installation files from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=627251).
+2. In File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. In the resulting virtual DVD drive that appears, start Exchange Setup by double-clicking `Setup.exe`.
     
-3. Navigate to the network location of the Exchange 2016 installation files.
+3. The Exchange Server Setup wizard opens. On the **Check for Updates?** page, choose one of the following options, and then click **Next** to continue: 
     
-4. Start Exchange 2016 Setup by double-clicking `Setup.exe`
+  - **Connect to the Internet and check for updates**: We recommend this option, which searches for updates to the version of Exchange _that you're currently installing_ (it doesn't detect newer Cumulative Updates). This option takes you to the **Downloading Updates** page that searches for updates. Click **Next** to continue.
     
-    > [!IMPORTANT]
-    > If you have User Access Control (UAC) enabled, you must right-click `Setup.exe` and select **Run as administrator**.
+  - **Don't check for updates right now**
+    
+    ![Exchange Setup, Check for Updates page](../../media/f0ca225e-b88f-45e9-a8cb-21adaabe984e.png)
+
+4. The **Copying Files** page shows the progress of copying files to the local hard drive. Typically, the files are copied to `%WinDir%\Temp\ExchangeSetup`, but you can confirm the location in the Exchange Setup log at `C:\ExchangeSetupLogs\ExchangeSetup.log`.
+
+    ![Exchange Setup, Copying Files page](../../media/78813be2-745d-4a58-8da8-883c43aa2650.png)
   
-5. On the **Check for Updates?** page, choose whether you want Setup to connect to the Internet and download product and security updates for Exchange 2016. If you select **Connect to the Internet and check for updates**, Setup will download updates and apply them prior to continuing. If you select **Don't check for updates right now**, you can download and install updates manually later. We recommend that you download and install updates now. Click **Next** to continue.
-    
-6. The **Introduction** page begins the process of installing Exchange into your organization. It will guide you through the installation. Several links to helpful deployment content are listed. We recommend that you visit these links prior to continuing setup. Click **Next** to continue.
-    
-7. On the **License Agreement** page, review the software license terms. If you agree to the terms, select **I accept the terms in the license agreement**, and then click **Next**.
-    
-8. On the **Recommended settings** page, select whether you want to use the recommended settings. If you select **Use recommended settings**, Exchange will automatically send error reports and information about your computer hardware and how you use Exchange to Microsoft. If you select **Don't use recommended settings**, these settings remain disabled but you can enable them at any time after Setup completes. For more information about these settings and how information sent to Microsoft is used, click **?**.
-    
-9. On the **Server Role Selection** page, select **Edge Transport**. Remember, you can't add the Mailbox server role to a computer that has the Edge Transport role installed. The management tools are installed automatically if you install any server role.
-    
-    Select **Automatically install Windows Server roles and features that are required to install Exchange Server** to have the Setup wizard install required Windows prerequisites. You may need to reboot the computer to complete the installation of some Windows features. If you don't select this option, you must install the Windows features manually.
-    
-    > [!NOTE]
-    > This option installs only the Windows features required by Exchange. You must manually install other prerequisites manually. For more information, see [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites.md).
+5. On the **Introduction** page, we recommend that you visit the Exchange Server deployment planning links if you haven't already reviewed them. Click **Next** to continue.
+
+    ![Exchange Setup, Introduction page](../../media/9f605305-979a-4667-a042-38854677cf0b.png)
   
+6. On the **License Agreement** page, review the software license terms, select **I accept the terms in the license agreement**, and then click **Next** to continue.
+
+    ![Exchange Setup, License Agreement page](../../media/2bb6bfaa-1b39-4052-9420-a7a053b07d58.png)
+  
+7. On the **Recommended Settings** page, choose one of the following settings: 
+    
+   - **Use recommended settings**: Exchange automatically sends error reports and information about your computer hardware and how you use Exchange to Microsoft. For information about what's sent to Microsoft and how it's used, click **?** or the help links on the page.
+    
+    - **Don't use recommended settings**: These settings are disabled, but you can enable them at any time after Setup completes.
+    
     Click **Next** to continue.
-    
-10. On the **Installation Space and Location** page, either accept the default installation location or click **Browse** to choose a new location. Make sure that you have enough disk space available in the location where you want to install Exchange. Click **Next** to continue.
-    
-11. On the **Readiness Checks** page, view the status to determine if the organization and server role prerequisite checks completed successfully. If they haven't completed successfully, you must resolve any reported errors before you can install Exchange 2016. You don't need to exit Setup when resolving some of the prerequisite errors. After resolving a reported error, click **back** and then click **Next** to run the prerequisite check again. Be sure to also review any warnings that are reported. If all readiness checks have completed successfully, click **Next** to install Exchange 2016.
-    
-12. On the **Completion** page, click **Finish**.
-    
-13. Restart the computer after Exchange 2016 has completed.
-    
-14. Complete your deployment by performing the tasks provided in [Exchange 2016 post-installation tasks](../../plan-and-deploy/post-installation-tasks/post-installation-tasks.md).
-    
-## How do you know this worked?
 
-To verify that you've successfully installed Exchange 2016, see [Verify an Exchange 2016 installation](../../plan-and-deploy/post-installation-tasks/verify-installation.md).
-  
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-  
-Did you find what you're looking for? Please take a minute to [send us feedback](mailto:ExchangeHelpFeedback@microsoft.com&subject=Exchange%202016%20help%20feedback&Body=Thanks%20for%20taking%20the%20time%20to%20send%20us%20feedback!%20We%20strive%20to%20respond%20to%20every%20message%20we%20receive,%20even%20though%20it%20might%20take%20us%20a%20while.%20Let%20us%20know%20what%20you%20think%20about%20Exchange%20content:%20What%20are%20we%20doing%20right%3F%20How%20can%20we%20make%20help%20better%3F%0APlease%20note%20that%20we're%20unable%20to%20respond%20to%20requests%20for%20support%20submitted%20via%20this%20email%20address.%20If%20you%20need%20help,%20please%20contact%20Exchange%20Server%20support%20at%20http://go.microsoft.com/fwlink/p/%3FLinkId=402506.%0AThanks!%0AThe%20Exchange%20Server%20Content%20Publishing%20team) about the information you were hoping to find.
-  
+    ![Exchange Setup, Recommended Settings page](../../media/26af58f0-52ab-4482-8710-9a7cd2e7a6c3.png)
 
+8. On the **Server Role Selection** page, configure the following options: 
+    
+    - **Edge Transport role**: Select this option, which also automatically installs the **Management Tools**.
+    
+    - **Automatically install Windows Server roles and features that are required to install Exchange**: Select this option to have the Setup wizard install the required Windows prerequisites. You might need to reboot the computer to complete the installation of some Windows features. If you don't select this option, you need to install the Windows features manually.
+    
+      **Note**: Selecting this option installs only the _Windows features_ that are required by Exchange. You need to install other prerequisites manually. For more information, see [Exchange Server prerequisites](../../plan-and-deploy/prerequisites.md).
+    
+    Click **Next** to continue.
+
+9. On the **Installation Space and Location** page, either accept the default installation location (`C:\Program Files\Microsoft\Exchange Server\V15`), or click **Browse** to choose a new location. Make sure that you have enough disk space available in the location where you want to install Exchange. Click **Next** to continue.
+
+    ![Exchange Setup, Installation Space and Location page](../../media/7ae7f248-3cdc-4453-9d7d-e99edc300d16.png)    
+    
+12. On the **Readiness Checks** page, verify that the organization and server role prerequisite checks completed successfully. If they haven't, the only option on the page is **Retry**, so you need to resolve the errors before you can continue.
+
+    ![Exchange Setup, Readiness Check page with errors detected](../../media/d4ee435a-a383-4be6-8233-da4cc2a19eea.png)
+  
+    After you resolve the errors, click **Retry** to run the prerequisite checks again. You can fix some errors without exiting Setup, while the fix for other errors requires you to restart the computer. If you restart the computer, you need to start over at Step 1.
+    
+    When no more errors are detected on the **Readiness Checks** page, the **Retry** button changes to **Install** so you can continue. Be sure to review any warnings, and then click **Install** to install Exchange.
+
+    ![Exchange Setup, Readiness Check page with errors resolved](../../media/a9aca4d0-19ac-4783-8071-cdd435b1658d.png)
+  
+13. On the **Setup Progress** page, a progress bar indicates how the installation is proceeding.
+
+    ![Exchange Setup, Setup Progress page](../../media/8fddda28-6e29-44c1-b1bc-149fa7798460.png)
+  
+14. On the **Setup Completed** page, click **Finish**, and then restart the computer.
+
+    ![Exchange Setup, Setup Completed page](../../media/b2646172-8088-4d8a-a7f0-888f786c29cf.png)
+
+## Next steps
+
+- To verify that you've successfully installed Exchange, see [Verify an Exchange installation](../../plan-and-deploy/post-installation-tasks/verify-installation.md).
+ 
+- Complete your deployment by performing the tasks provided in [Exchange post-installation tasks](../../plan-and-deploy/post-installation-tasks/post-installation-tasks.md).
+
+- Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

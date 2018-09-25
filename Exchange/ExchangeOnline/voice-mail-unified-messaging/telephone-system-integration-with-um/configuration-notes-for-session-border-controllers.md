@@ -39,7 +39,7 @@ The following SBCs have been successfully tested for interoperability with Excha
 |[AudioCodes](https://www.audiocodes.com) <br/> |Mediant 1000B MSBG  <br/> |**Please contact the hardware vendor for up to date instructions on how to set up their device.** <br/> |SBC and IP gateway  <br/> |
 |[Cisco](https://www.cisco.com/c/dam/en/us/solutions/collateral/enterprise-networks/unified-access/cube-asr-release-10-0.pdf) <br/> |ASR 1000  <br/> > [!NOTE]> Must have IOS 15.4(3)S3 or later installed.           |**Please contact the hardware vendor for up to date instructions on how to set up their device.** <br/> |Dedicated SBC  <br/> |
 |[Ingate](https://www.ingate.com/) <br/> |SIParator  <br/> |**Please contact the hardware vendor for up to date instructions on how to set up their device.** <br/> |Dedicated SBC  <br/> |
-|[NET](http://www.net.com) <br/> |VX1200 &amp; VX1800  <br/> |**Please contact the hardware vendor for up to date instructions on how to set up their device.** <br/> |SBC option for a VoIP gateway product  <br/> |
+|[NET](http://www.net.com) <br/> |VX1200 & VX1800  <br/> |**Please contact the hardware vendor for up to date instructions on how to set up their device.** <br/> |SBC option for a VoIP gateway product  <br/> |
 |[Sonus](http://www.sonus.net/) <br/> |SBC 1000/2000 2.2.1 or later  <br/> |**Please contact the hardware vendor for up to date instructions on how to set up their device.** <br/> |Dedicated SBC  <br/> |
    
 

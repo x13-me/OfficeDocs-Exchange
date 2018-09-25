@@ -3,20 +3,18 @@ title: "Change the location of the queue database"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f170cb0c-04a9-4fa7-b594-206e3a787e14
-description: "Summary: Learn how to move or recreate the message queue database in Exchange 2016."
+description: "Summary: Learn how to move or recreate the message queue database in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Change the location of the queue database
 
- **Summary**: Learn how to move or recreate the message queue database in Exchange 2016.
-  
-Like previous versions of Exchange, Exchange 2016 uses an Extensible Storage Engine (ESE) database for queue message storage. All the different queues are stored in a single ESE database. Queues exist on Exchange 2016 Mailbox servers and Edge Transport servers. For more information about queues, see [Queues and messages in queues](queues.md).
+Exchange Server uses an Extensible Storage Engine (ESE) database for queue message storage. All the different queues are stored in a single ESE database. Queues exist on Exchange Mailbox servers and Edge Transport servers. For more information about queues, see [Queues and messages in queues](queues.md).
   
 The location of the queue database and the queue database transaction logs is controlled by keys in the `%ExchangeInstallPath%Bin\EdgeTransport.exe.config` XML application configuration file. This file is associated with the Exchange Transport service. The following table explains each key in more detail.
   
@@ -45,7 +43,7 @@ The location of the queue database and the queue database transaction logs is co
     
     If the folder doesn't exist, but the parent folder has these permissions, the new folder is created automatically.
     
-- Any customized per-server Exchange or Internet Information Server settings you make in Exchange XML application configuration files (for example, web.config files or the EdgeTransport.exe.config file) will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so that you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
+- Any customized Exchange or Internet Information Server (IIS) settings that you made in Exchange XML application configuration files on the Exchange server (for example, web.config files or the EdgeTransport.exe.config file) **will be overwritten** when you install an Exchange CU. Be sure save this information so you can easily re-apply the settings after the install. After you install the Exchange CU, you need to re-configure these settings.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     

@@ -51,7 +51,7 @@ When you've signed up with a Voice Mail Preview partner, the Exchange servers in
 ## Exchange Unified Messaging Voice Mail Partner program
 <a name="program"> </a>
 
-To become certified as a Voice Mail Preview partner that interoperates with Exchange UM, the partner must implement the requirements contained in the Voice Mail Preview Interoperability Specification, and the partner solution must be certified by an independent certification vendor. If you're interested in certifying your transcription service to work with Exchange UM, submit a request to [Voice Mail Preview Partners for Exchange Unified Messaging](mailto:vmppp@microsoft.com).
+To become certified as a Voice Mail Preview partner that interoperates with Exchange UM, the partner must implement the requirements contained in the Voice Mail Preview Interoperability Specification, and the partner solution must be certified by an independent certification vendor.
   
 ## Voice Mail Preview partners certified for Exchange Unified Messaging
 <a name="certified"> </a>

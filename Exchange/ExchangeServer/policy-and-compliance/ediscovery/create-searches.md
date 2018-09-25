@@ -1,5 +1,5 @@
 ---
-title: "Create an In-Place eDiscovery search in Exchange 2016"
+title: "Create an In-Place eDiscovery search in Exchange Server"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -9,22 +9,20 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
-description: "Summary: Learn how to create an In-Place eDiscovery search in Exchange 2016."
+description: "Summary: Learn how to create an In-Place eDiscovery search in Exchange Server 2016 and Exchange Server 2019."
 ---
 
-# Create an In-Place eDiscovery search in Exchange 2016
+# Create an In-Place eDiscovery search in Exchange Server
 
- **Summary**: Learn how to create an In-Place eDiscovery search in Exchange 2016.
-  
-Use an In-Place eDiscovery search to search for content across all mailboxes and public folders in your Exchange Server 2016 organization. This includes searching permanently deleted items and original versions of modified items (in the Recoverable Items folder) for users placed on Litigation Hold or In-Place Hold. For more information about these searches, see [In-Place eDiscovery in Exchange 2016](ediscovery.md).
+ Use an In-Place eDiscovery search to search for content across all mailboxes and public folders in your Exchange Server organization. This includes searching permanently deleted items and original versions of modified items (in the Recoverable Items folder) for users placed on Litigation Hold or In-Place Hold. For more information about these searches, see [In-Place eDiscovery in Exchange Server](ediscovery.md).
   
 ## Before you begin
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging policy and compliance permissions in Exchange 2016](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
     
 - To create eDiscovery searches, you have to have an SMTP address in the organization that you're creating the searches in. In an Exchange hybrid organization, your on-premises Exchange mailbox must have a corresponding mail user account in your Office 365 organization so that you can search cloud-based mailboxes. Or, if you sign in with an account that only exists in Office 365, such as the tenant administrator account, that account must be assigned an Exchange Online license. For more information about the Office 365 licensing requirements for In-Place eDiscovery searches, see [Exchange Online Service Description](https://go.microsoft.com/fwlink/p/?LinkID=275416).
     
-- Exchange 2016 Setup creates a Discovery mailbox called **Discovery Search Mailbox** to copy search results. You can create additional Discovery mailboxes. For details, see [Create a discovery mailbox](http://technet.microsoft.com/library/bc20285d-35e2-4e49-9bd3-38abf96114ba.aspx).
+- Exchange Server Setup creates a Discovery mailbox called **Discovery Search Mailbox** to copy search results. You can create additional Discovery mailboxes. For details, see [Create a discovery mailbox](http://technet.microsoft.com/library/bc20285d-35e2-4e49-9bd3-38abf96114ba.aspx).
     
 - When you create a search, messages returned in search results aren't copied automatically to a discovery mailbox. After you create the search, you can use the Exchange admin center (EAC) to estimate and preview search results or copy them to a discovery mailbox. You can also export the search results to a .pst file. For details, see:
     
@@ -60,7 +58,7 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
     
   - **Include all content**: Select this option to include all content in the search results. If you select this option, you can't specify additional search criteria.
     
-  - **Filter based on criteria**: Select this option to specify search criteria, including keywords, start and end dates, sender and recipient addresses, and message types. For more information about search queries, see [Message properties and search operators for In-Place eDiscovery in Exchange 2016](message-properties-and-search-operators.md).
+  - **Filter based on criteria**: Select this option to specify search criteria, including keywords, start and end dates, sender and recipient addresses, and message types. For more information about search queries, see [Message properties and search operators for In-Place eDiscovery in Exchange Server](message-properties-and-search-operators.md).
     ![Configure an eDiscovery search query](../../media/TA_MRM_SearchQuery.png)
   
     > [!NOTE]

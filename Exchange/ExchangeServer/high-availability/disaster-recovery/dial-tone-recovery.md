@@ -3,26 +3,24 @@ title: "Perform a dial tone recovery"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 4/19/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 158817fa-4b17-4fa9-8341-a86609e6a388
-description: "Summary: How to perform a dial tone recovery in Exchange 2016."
+description: "Summary: How to perform a dial tone recovery in Exchange 2016 and Exchange 2019."
 ---
 
 # Perform a dial tone recovery
 
- **Summary**: How to perform a dial tone recovery in Exchange 2016.
-  
 The process for using dial tone portability is called a dial tone recovery, which involves creating an empty database on a Mailbox server to replace a failed database. To learn more, see [Dial tone portability](dial-tone-portability.md).
   
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 5 minutes, plus the time it takes to restore and move the data.
     
-- You must have fewer than the maximum number of databases deployed to create a dial tone database. Exchange 2016 Standard Edition supports a maximum of five databases per server. Exchange 2016 Enterprise Edition supports a maximum of databases per server.
+- You must have fewer than the maximum number of databases deployed to create a dial tone database (a maximum of five databases per server for Exchange Standard Edition, a maximum of 100 databases per server for Exchange Enterprise Edition).
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox recovery" entry in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
     
@@ -99,7 +97,6 @@ The process for using dial tone portability is called a dial tone recovery, whic
 
   ```
   $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
-  
   ```
 
 14. After the restore operation is complete, you can dismount and remove the RDB, as shown in this example.
