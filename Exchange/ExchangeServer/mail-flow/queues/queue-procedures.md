@@ -3,20 +3,18 @@ title: "Procedures for queues"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 37f11378-a884-4aff-ab55-689f40a46321
-description: "Summary: Learn how to view, retry, resubmit, suspend, and resume queues in Exchange 2016."
+description: "Learn how to view, retry, resubmit, suspend, and resume queues in Exchange 2016 and Exchange 2019."
 ---
 
 # Procedures for queues
 
- **Summary**: Learn how to view, retry, resubmit, suspend, and resume queues in Exchange 2016.
-  
-In Exchange Server 2016, you can use the Queue Viewer in the Exchange Toolbox or the Exchange Management Shell to manage queues. For more information about queues, see [Queues and messages in queues](queues.md).
+In Exchange Server, you can use the Queue Viewer in the Exchange Toolbox or the Exchange Management Shell to manage queues. For more information about queues, see [Queues and messages in queues](queues.md).
   
 This topic describes how to perform the following procedures on queues:
   
@@ -38,17 +36,17 @@ For procedures on messages in queues, see [Procedures for messages in queues](me
     
 - To find and open the Exchange Toolbox, use one of the following procedures:
     
-  - **Windows 10 **: Click **Start** \> **All Apps** \> **MicrosoftExchange Server 2016 \>** **Exchange Toolbox**.
+  - **Windows 10**: Click **Start** \> **All Apps** \> **Microsoft Exchange Server \<Version\> \>** **Exchange Toolbox**.
     
-  - **Windows Server 2012 R2 or Windows 8.1**: On the Start screen, open the Apps view by clicking the down arrow near the lower-left corner or swiping up from the middle of the screen. The **Exchange Toolbox** shortcut is in a group named **MicrosoftExchange Server 2016**.
+  - **Windows Server 2012 R2 or Windows 8.1**: On the Start screen, open the Apps view by clicking the down arrow near the lower-left corner or swiping up from the middle of the screen. The **Exchange Toolbox** shortcut is in a group named **Microsoft Exchange Server  \<Version\>**.
     
-  - **Windows Server 2012 **: Use any of the following methods: 
+  - **Windows Server 2012**: Use any of the following methods: 
     
-  - On the Start screen, click an empty area, and type Exchange Toolbox.
+    - On the Start screen, click an empty area, and type Exchange Toolbox.
     
-  - On the desktop or the Start screen, press Windows key + Q. In the Search charm, type Exchange Toolbox.
+    - On the desktop or the Start screen, press Windows key + Q. In the Search charm, type Exchange Toolbox.
     
-  - On the desktop or the Start screen, move your cursor to the upper-right corner, or swipe left from the right edge of the screen to show the charms. Click the Search charm, and type Exchange Toolbox.
+    - On the desktop or the Start screen, move your cursor to the upper-right corner, or swipe left from the right edge of the screen to show the charms. Click the Search charm, and type Exchange Toolbox.
     
     When the shortcut appears in the results, you can select it.
     
@@ -114,13 +112,13 @@ To view summary information about queues on multiple Exchange servers, run the f
 Get-QueueDigest <-Server <ServerIdentity1,ServerIdentity2...> | -Dag <DagIdentity1,DagIdentity2...> | -Site <ADSiteIdentity1,ADSiteIdentity2...> | -Forest> [-Filter <Filter>]
 ```
 
-This example displays summary information about the queues on all Exchange 2013 and Exchange 2016 Mailbox servers in the Active Directory site named FirstSite where the message count is greater than 100.
+This example displays summary information about the queues on all Exchange 2013 or later Mailbox servers in the Active Directory site named FirstSite where the message count is greater than 100.
   
 ```
 Get-QueueDigest -Site FirstSite -Filter {MessageCount -gt 100}
 ```
 
-This example displays summary information about the queues on all Exchange 2016 Mailbox servers in the database availability group (DAG) named DAG01 where the queue status has the value **Retry**.
+This example displays summary information about the queues on all Mailbox servers in the database availability group (DAG) named DAG01 where the queue status has the value **Retry**.
   
 ```
 Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
@@ -384,11 +382,11 @@ By resuming a queue, you restart outgoing message delivery from a queue that has
     
 3. Click **Create Filter**, and enter your filter expression as follows:
     
-1. Select **Status** from the queue property drop-down list.
+    1. Select **Status** from the queue property drop-down list.
     
-2. Select **Equals** from the comparison operator drop-down list.
+    2. Select **Equals** from the comparison operator drop-down list.
     
-3. Select **Suspended** from the value drop-down list.
+    3. Select **Suspended** from the value drop-down list.
     
 4. Click **Apply Filter**. All queues on the server that are currently suspended are displayed.
     

@@ -1,21 +1,19 @@
 ---
-title: "Mailbox imports and exports in Exchange 2016"
+title: "Mailbox imports and exports in Exchange Server"
 ms.author: chrisda
 author: chrisda
-ms.date: 6/7/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 157a7d88-d3aa-4056-9a50-df67451b14be
-description: "Summary: Learn about how administrators can import and export mailboxes to .pst files, and .pst files to mailboxes in Exchange 2016."
+description: "Summary: Learn about how administrators can import and export mailboxes to .pst files, and .pst files to mailboxes in Exchange Server 2016 and Exchange Server 2019."
 ---
 
-# Mailbox imports and exports in Exchange 2016
+# Mailbox imports and exports in Exchange Server
 
- **Summary**: Learn about how administrators can import and export mailboxes to .pst files, and .pst files to mailboxes in Exchange 2016.
-  
-Exchange 2016 uses the Microsoft Exchange Mailbox Replication service (MRS) to import .pst files to mailboxes, and export mailboxes to .pst files. The advantages of using MRS instead of Outlook to import and export mailboxes are:
+Exchange Server uses the Microsoft Exchange Mailbox Replication service (MRS) to import .pst files to mailboxes, and export mailboxes to .pst files. The advantages of using MRS instead of Outlook to import and export mailboxes are:
   
 - Import and export requests are asynchronous (you can import and export multiple .pst files at the same time).
     
@@ -75,7 +73,7 @@ Here are some things to consider when you import .pst files to mailboxes:
     
 - In the Exchange Management Shell, you can increase or decrease the priority value for mailbox import requests (the _Priority_ parameter).
     
-For mailbox import procedures, see [Procedures for mailbox imports from .pst files in Exchange 2016](import-procedures.md).
+For mailbox import procedures, see [Procedures for mailbox imports from .pst files in Exchange Server](import-procedures.md).
   
 ## Export mailboxes to .pst files
 <a name="Exp"> </a>
@@ -98,6 +96,6 @@ Here are some things to consider when you export mailboxes to .pst files:
     
 - In the Exchange Management Shell, you can increase or decrease the priority value for mailbox export requests (the _Priority_ parameter).
     
-For mailbox export procedures, see [Procedures for mailbox exports to .pst files in Exchange 2016](export-procedures.md).
+For mailbox export procedures, see [Procedures for mailbox exports to .pst files in Exchange Server](export-procedures.md).
   
 

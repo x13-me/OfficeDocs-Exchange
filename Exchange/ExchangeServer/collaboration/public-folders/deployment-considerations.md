@@ -3,7 +3,7 @@ title: "Considerations when deploying public folders"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: exchange-server-it-pro
@@ -14,17 +14,15 @@ description: "Summary: Important considerations to read before you deploy public
 
 # Considerations when deploying public folders
 
- **Summary**: Important considerations to read before you deploy public folders in your organization.
-  
-Although there are many advantages to using Exchange 2016 public folders, there are some things to consider before implementing them in your organization.
+Although there are many advantages to using Exchange public folders, there are some things to consider before implementing them in your organization.
   
 ## Deployment considerations for public folders
 
-This article contains factors to consider before you deploy public folders in your organization, especially if you plan to have a large number of public folders. Exchange 2016 supports up to one million public folders.
+This article contains factors to consider before you deploy public folders in your organization, especially if you plan to have a large number of public folders. Exchange Server supports up to one million public folders.
   
 - Activity in a public folder directly impacts the load that's placed on the public folder mailbox where the folder is located. To avoid client connectivity issues, such as high latency or the inability to access a public folder, we recommend you do the following:
     
-  - Don't let public folder mailboxes exceed 50% of the mailbox size limit. If this happens consider using the `Split-PublicFolderMailbox.ps1` script located in C:\Program Files\Microsoft\Exchange Server\V15\Scripts folder on the Exchange 2016 server to move some public folders to a new public folder mailbox.
+  - Don't let public folder mailboxes exceed 50% of the mailbox size limit. If this happens consider using the `Split-PublicFolderMailbox.ps1` script located in C:\Program Files\Microsoft\Exchange Server\V15\Scripts folder on the Exchange server to move some public folders to a new public folder mailbox.
     
   - Consider moving heavily-used public folders to a dedicated public folder mailbox.
     
@@ -48,7 +46,7 @@ This article contains factors to consider before you deploy public folders in yo
     
 - Although a full text search of public folder content is available, public folder content isn't searchable across public folders and the content isn't indexed by Exchange Search.
     
-- You must use Outlook 2010 or later to access public folders on Exchange 2016 servers.
+- You must use Outlook 2010 or later to access public folders on Exchange servers.
     
 - Retention policies aren't supported for public folder mailboxes.
     

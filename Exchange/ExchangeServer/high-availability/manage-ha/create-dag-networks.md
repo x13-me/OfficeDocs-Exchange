@@ -14,8 +14,6 @@ description: "Summary: Create additional networks, if needed, for use in a datab
 
 # Create a database availability group network
 
- **Summary**: Create additional networks, if needed, for use in a database availability group (DAG).
-  
 You can use the EAC or the Exchange Management Shell to create a DAG network.
   
 Looking for other management tasks related to DAGs? Check out [Managing database availability groups](http://technet.microsoft.com/library/4abde67b-4995-4a57-894f-ba76aa72341c.aspx).

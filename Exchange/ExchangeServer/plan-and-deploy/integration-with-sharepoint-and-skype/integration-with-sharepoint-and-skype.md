@@ -10,13 +10,11 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 056b29f6-e0e9-4974-b763-002518857a93
-description: "Summary: Learn about ways to help enterprises meet compliance and regulatory requirements using Exchange 2016, SharePoint Server 2016, and Skype for Business."
+description: "Summary: Learn about ways to help enterprises meet compliance and regulatory requirements using Exchange 2016, SharePoint Server 2016, and Skype for Business Server."
 ---
 
 # Plan Exchange 2016 integration with SharePoint and Skype for Business
 
- **Summary**: Learn about ways to help enterprises meet compliance and regulatory requirements using Exchange 2016, SharePoint Server 2016, and Skype for Business.
-  
 Exchange 2016 integration with SharePoint Server 2016 and Skype for Business allow for services that provide the ability to preserve, archive, and then quickly search email, documents, and other content. Together, these enterprise applications make possible scenarios such as eDiscovery and collaboration using site mailboxes to let your organization preserve important data. Critical in most organizations these days is the ability to archive and then locate email and documents as required to meet compliance and regulatory requirements. You can use Exchange 2016 along with SharePoint 2016 and Skype for Business to:
   
 - Archive Exchange mailboxes
@@ -52,9 +50,9 @@ For example, Litigation Hold preserves until the hold is removed any deleted ite
   
 For more details on eDiscovery see the following topics:
   
-- [In-Place eDiscovery in Exchange 2016](../../policy-and-compliance/ediscovery/ediscovery.md)
+- [In-Place eDiscovery in Exchange Server](../../policy-and-compliance/ediscovery/ediscovery.md)
     
-- [In-Place Hold and Litigation Hold in Exchange 2016](../../policy-and-compliance/holds/holds.md)
+- [In-Place Hold and Litigation Hold in Exchange Server](../../policy-and-compliance/holds/holds.md)
     
 - [Configure eDiscovery in SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=257727)
     
@@ -139,7 +137,7 @@ You can provision and manage site mailboxes from SharePoint Server 2016. For mor
   
 - [Site Mailboxes](http://technet.microsoft.com/library/2c4393f4-d274-4e6c-bd09-9577e68c5a33.aspx)
     
-- [Configure email integration for a SharePoint Server 2016 farm](https://technet.microsoft.com/library/ee956941%28v=office.16%29.aspx)
+- [Configure email integration for a SharePoint Server 2016 farm](https://technet.microsoft.com/library/ee956941(v=office.16).aspx)
     
 ## Manage access to unified contact store
 <a name="BKMK_OAuth"> </a>

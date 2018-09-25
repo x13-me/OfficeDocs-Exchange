@@ -1,5 +1,5 @@
 ---
-title: "Create an Exchange 2016 certificate request for a certification authority"
+title: "Create an Exchange Server certificate request for a certification authority"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,14 +10,12 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: efb00de7-070b-46bf-a2fc-00d07ae085c1
-description: "Summary: Learn how to create a certificate request in Exchange 2016 that you provide to a certification authority."
+description: "Summary: Learn how to create a certificate request in Exchange Server that you provide to a certification authority."
 ---
 
-# Create an Exchange 2016 certificate request for a certification authority
+# Create an Exchange Server certificate request for a certification authority
 
- **Summary**: Learn how to create a certificate request in Exchange 2016 that you provide to a certification authority.
-  
-Creating a certificate request is the first step in installing a new certificate on an Exchange Server 2016 server to configure Transport Layer Security (TLS) encryption for one or more Exchange services. You use a certificate request (also known as a certificate signing request or CSR) to obtain a certificate from a certification authority (CA). The procedures are the same for obtaining certificates from an internal CA (for example, Active Directory Certificate Services), or from a commercial CA. After you create the certificate request, you send the results to the CA, and the CA uses the information to issue the actual certificate, which you install later.
+Creating a certificate request is the first step in installing a new certificate on an Exchange server to configure Transport Layer Security (TLS) encryption for one or more Exchange services. You use a certificate request (also known as a certificate signing request or CSR) to obtain a certificate from a certification authority (CA). The procedures are the same for obtaining certificates from an internal CA (for example, Active Directory Certificate Services), or from a commercial CA. After you create the certificate request, you send the results to the CA, and the CA uses the information to issue the actual certificate, which you install later.
   
 You can create certificate requests in the Exchange admin center (EAC) or in the Exchange Management Shell. The **New Exchange certificate** wizard in the EAC can assist you in selecting the host names that are required in the certificate.
   
@@ -25,7 +23,7 @@ You can create certificate requests in the Exchange admin center (EAC) or in the
 
 - Estimated time to complete: 5 minutes to complete the new certificate request. However, more time is required before the request results in a certificate. For more information, see [Next steps](create-ca-certificate-requests.md#NextSteps).
     
-- You need to plan carefully to choose the type of certificate that you want, and the host names that are required in the certificate. For more information, see [Digital certificates and encryption in Exchange 2016](certificates.md).
+- You need to plan carefully to choose the type of certificate that you want, and the host names that are required in the certificate. For more information, see [Digital certificates and encryption in Exchange Server](certificates.md).
     
 - Verify the certificate request requirements of the CA. Exchange generates a PKCS #10 request (.req) file that uses Base64 (default) or Distinguished Encoding Rules (DER) encoding, with an RSA public key that's 1024, 2048 (default), or 4096 bits. Note that encoding and public key options are only available in the Exchange Management Shell.
     
@@ -48,7 +46,7 @@ You can create certificate requests in the Exchange admin center (EAC) or in the
     
 3. The **New Exchange certificate** wizard opens. On the **This wizard will create a new certificate or a certificate request file** page, verify that **Create a request for a certificate from a certification authority** is selected, and then click **Next**.
     
-    **Note:** To create a new self-signed certificate, see [Create a new Exchange 2016 self-signed certificate](create-self-signed-certificates.md).
+    **Note:** To create a new self-signed certificate, see [Create a new Exchange Server self-signed certificate](create-self-signed-certificates.md).
     
 4. On the **Friendly name for this certificate** page, enter a descriptive name for the certificate, and then click **Next**.
     
@@ -234,6 +232,6 @@ You need to send this information to the CA. How you send it depends on the CA, 
   
 If the CA requires a binary certificate request that's encoded by DER (you used the **New-ExchangeCertificate** cmdlet with the _BinaryEncoded_ switch), you typically send the whole certificate request file to the CA.
   
-After you receive the certificate from the CA, you need to complete the pending certificate request. For instructions, see [Complete a pending Exchange 2016 certificate request](complete-pending-certificate-requests.md).
+After you receive the certificate from the CA, you need to complete the pending certificate request. For instructions, see [Complete a pending Exchange Server certificate request](complete-pending-certificate-requests.md).
   
 

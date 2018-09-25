@@ -1,50 +1,48 @@
 ---
-title: "Transport high availability"
+title: "Transport high availability in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: e9ec6d05-f441-4cca-8592-8f7469948299
-description: "Summary: Learn about transport high availability in Exchange 2016 and the features that improve the reliability of message delivery."
+description: "Learn about transport high availability in Exchange 2016 and Exchange 2019 and the features that improve the reliability of message delivery."
 ---
 
-# Transport high availability
+# Transport high availability in Exchange Server
 
- **Summary**: Learn about transport high availability in Exchange 2016 and the features that improve the reliability of message delivery.
+In Exchange Server, transport high availability is responsible for keeping redundant copies of messages before and after the messages are successfully delivered. These features were introduced in Exchange 2013 as improvements to the transport high availability features in Exchange 2010 (for example, shadow redundancy and the transport dumpster) to help ensure messages aren't lost in transit.
   
-In Exchange 2016, transport high availability is responsible for keeping redundant copies of messages before and after the messages are successfully delivered. These features were introduced in Exchange 2013 as improvements to the transport high availability features in Exchange 2010 (for example, shadow redundancy and the transport dumpster) to help ensure messages aren't lost in transit.
-  
-Key features that improve transport high availability in Exchange 2013 and Exchange 2016 over Exchange 2010 include:
+Key features that improve transport high availability in Exchange 2013, Exchange 2016, and Exchange 2019 over Exchange 2010 include:
   
 - Shadow redundancy creates a redundant copy of the message on another server before the message is accepted or acknowledged. The sending server's support or lack of support for shadow redundancy is irrelevant.
     
 - Shadow redundancy recognizes both database availability groups (DAGs) and Active Directory sites as transport high availability boundaries. This reduces the number of servers that can hold redundant copies of messages, and eliminates unnecessary redundant message maintenance traffic across DAGs or Active Directory sites.
     
-    For more information, see [Shadow redundancy in Exchange 2016](shadow-redundancy.md).
+    For more information, see [Shadow redundancy in Exchange Server](shadow-redundancy.md).
     
 - The transport dumpster has been improved and is now named *Safety Net*. Safety Net stores messages that were successfully processed by the Transport service on Mailbox servers. Safety Net works best for Mailbox servers in a DAG, but Safety Net also works for multiple Mailbox servers in the same Active Directory site that don't belong to a DAG.
     
 - Safety Net itself is now made redundant on another server. This is important to avoid a single point of failure, because the Transport service and the mailbox databases are both located on the Mailbox server.
     
-    For more information, see [Safety Net in Exchange 2016](safety-net.md).
+    For more information, see [Safety Net in Exchange Server](safety-net.md).
     
-This diagram provides a high-level overview of how transport high availability works in Exchange 2016.
+This diagram provides a high-level overview of how transport high availability works in Exchange Server.
   
 ![Transport high availability overview](../../media/ITPro_Transport_TransportHAOverview.gif)
   
-1. An Exchange 2016 Mailbox server named Mailbox01 receives a message from an SMTP server that's outside the transport high availability boundary. The *transport high availability boundary* is a DAG or an Active Directory site in non-DAG environments. The message could come from: 
+1. An Exchange Mailbox server named Mailbox01 receives a message from an SMTP server that's outside the transport high availability boundary. The *transport high availability boundary* is a DAG or an Active Directory site in non-DAG environments. The message could come from: 
     
   - An internal third-party messaging server.
     
   - An Internet messaging server that's proxied through the Front End Transport service on a Mailbox server.
     
-  - Another Exchange 2016 server in your organization.
+  - Another Exchange server in your organization.
     
-2. Before acknowledging receipt of the message, Mailbox01 initiates a new SMTP session to another Exchange 2016 Mailbox server named Mailbox03 that's within the Transport high availability boundary, and Mailbox03 makes a shadow copy of the message. In DAG environments, a shadow server in a remote Active Directory site is preferred. Mailbox01 is the primary server holding the primary message, and Mailbox03 is the shadow server holding the shadow message.
+2. Before acknowledging receipt of the message, Mailbox01 initiates a new SMTP session to another Exchange Mailbox server named Mailbox03 that's within the Transport high availability boundary, and Mailbox03 makes a shadow copy of the message. In DAG environments, a shadow server in a remote Active Directory site is preferred. Mailbox01 is the primary server holding the primary message, and Mailbox03 is the shadow server holding the shadow message.
     
 3. The Transport service on Mailbox01 processes the primary message.
     

@@ -3,20 +3,18 @@ title: "Manage role groups"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c
-description: "Summary: Learn how to add, remove, copy, and view management role groups in Microsoft Exchange Server 2016."
+description: "Summary: Learn how to add, remove, copy, and view management role groups in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Manage role groups
 
- **Summary**: Learn how to add, remove, copy, and view management role groups in Microsoft Exchange Server 2016.
-
-A management role group is a universal security group (USG) used in the Role Based Access Control (RBAC) permissions model in Exchange 2016. A management role group simplifies the assignment of management roles to a group of users. All members of a role group are assigned the same set of roles. For more information about role groups in Exchange 2016, see [Understanding Management Role Groups](http://technet.microsoft.com/library/2a92e06c-523e-4fd4-a937-152562b7741d.aspx).
+A management role group is a universal security group (USG) used in the Role Based Access Control (RBAC) permissions model in Exchange Server. A management role group simplifies the assignment of management roles to a group of users. All members of a role group are assigned the same set of roles. For more information about role groups in Exchange Server, see [Understanding Management Role Groups](http://technet.microsoft.com/library/2a92e06c-523e-4fd4-a937-152562b7741d.aspx).
 
 For additional management tasks related to role groups, see [Permissions](permissions.md).
 
@@ -24,7 +22,7 @@ For additional management tasks related to role groups, see [Permissions](permis
 
 - Estimated time to complete each procedure: 5 to 10 minutes
 
-- To open the EAC, see [Exchange admin center in Exchange 2016](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role groups" entry in the [Role management permissions](feature-permissions/rbac-permissions.md) topic.
 
@@ -40,7 +38,7 @@ If you want to customize the permissions that you can assign to a group of users
 
 ### Use the EAC to create a role group
 
-1. In the Exchange Administration Center (EAC), navigate to **Permissions** \> **Admin Roles** and then click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png).
+1. In the Exchange admin center (EAC), navigate to **Permissions** \> **Admin Roles** and then click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png).
 
 2. In the **New role group** window, provide a name for the new role group.
 
@@ -409,9 +407,9 @@ To verify that you have successfully removed roles from a role group, do the fol
 
 The management role assignments between a role group and a role contain management scopes, which determine what objects are made available to members of that role group. By changing the write scope on a role group, you can change what objects are made available to role group members to create, change, or remove. You can't change the read scope on a role group.
 
-Exchange 2016 includes scopes that are applied by default to role assignments when no custom scopes are created. If you want to use a custom scope with a role assignment on a role group, you must create one first. For more information about creating custom scopes, which is an advanced task, see [Create a Regular or Exclusive Scope](http://technet.microsoft.com/library/b97a5be3-15cc-4954-ba30-a824a95e21be.aspx).
+Exchange Server includes scopes that are applied by default to role assignments when no custom scopes are created. If you want to use a custom scope with a role assignment on a role group, you must create one first. For more information about creating custom scopes, which is an advanced task, see [Create a Regular or Exclusive Scope](http://technet.microsoft.com/library/b97a5be3-15cc-4954-ba30-a824a95e21be.aspx).
 
-For more information about management role scopes and assignments in Exchange 2016, see the following topics:
+For more information about management role scopes and assignments in Exchange Server, see the following topics:
 
 - [Understanding Management Role Scopes](http://technet.microsoft.com/library/24ed4a38-438a-4223-9f9c-5d4dea4b046b.aspx)
 

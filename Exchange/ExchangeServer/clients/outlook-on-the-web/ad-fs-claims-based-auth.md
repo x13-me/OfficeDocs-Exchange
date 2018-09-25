@@ -3,20 +3,18 @@ title: "Use AD FS claims-based authentication with Outlook on the web"
 ms.author: chrisda
 author: chrisda
 manager: scotv
-ms.date: 6/8/2018
+ms.date: 7/10/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 919a9bfb-c6df-490a-b2c4-51796b0f0596
-description: "Summary: Learn how to configure AD FS claims-based authentication to connect to Outlook on the web and the Exchange admin center in Exchange 2016."
+description: "Learn how to configure AD FS claims-based authentication to connect to Outlook on the web and the Exchange admin center in Exchange 2016 and Exchange 2019."
 ---
 
 # Use AD FS claims-based authentication with Outlook on the web
-
- **Summary**: Learn how to configure AD FS claims-based authentication to connect to Outlook on the web and the Exchange admin center in Exchange 2016.
   
-Installing and configuring Active Directory Federation Services (AD FS) in Exchange Server 2016 organizations allows clients to use AD FS claims-based authentication to connect to Outlook on the web (formerly known as Outlook Web App) and the Exchange admin center (EAC). Claims-based identity is another approach to authentication that removes authentication management from the application, and makes it easier for you to manage accounts by centralizing authentication. When claims-based authentication is enabled, Outlook on the web and the EAC aren't responsible for authenticating users, storing user accounts and passwords, looking up user identity details, or integrating with other identity systems. Centralizing authentication helps make it easier to upgrade authentication methods in the future.
+Installing and configuring Active Directory Federation Services (AD FS) in Exchange Server organizations allows clients to use AD FS claims-based authentication to connect to Outlook on the web (formerly known as Outlook Web App) and the Exchange admin center (EAC). Claims-based identity is another approach to authentication that removes authentication management from the application, and makes it easier for you to manage accounts by centralizing authentication. When claims-based authentication is enabled, Outlook on the web and the EAC aren't responsible for authenticating users, storing user accounts and passwords, looking up user identity details, or integrating with other identity systems. Centralizing authentication helps make it easier to upgrade authentication methods in the future.
   
 AD FS claims-based authentication replaces the traditional authentication methods that are available for Outlook on the web and the EAC. For example:
   
@@ -30,7 +28,7 @@ AD FS claims-based authentication replaces the traditional authentication method
     
 - Windows authentication
     
-Setting up AD FS claims-based authentication for Outlook on the web and the EAC in Exchange 2016 involves the following additional servers:
+Setting up AD FS claims-based authentication for Outlook on the web and the EAC in Exchange Server involves the following additional servers:
   
 - A Windows Server 2012 or later domain controller (Active Directory Domain Services server role).
     
@@ -62,7 +60,6 @@ Setting up AD FS claims-based authentication for Outlook on the web and the EAC 
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
   
 ## Step 1: Review the certificate requirements for AD FS
-<a name="CertRequirements"> </a>
 
 AD FS requires two basic types of certificates:
   
@@ -80,7 +77,7 @@ Here's a summary of the certificates that we'll be using in this scenario:
 |:-----|:-----|:-----|:-----|
 | `adfs.contoso.com` <br/> |Issued by a CA  <br/> |AD FS server  <br/> Web Application Proxy server  <br/> |This is the host name that's visible to clients, so clients need to trust the issuer of this certificate.  <br/> |
 | `ADFS Signing - adfs.contoso.com` <br/> |Self-signed  <br/> |AD FS server  <br/> Exchange servers  <br/> Web Application Proxy server  <br/> |The default self-signed certificate is automatically copied over during the configuration of the optional Web Application Proxy server, but you'll need to manually import it into the Trusted Root Certificate store on all Exchange servers in your organization.  <br/> By default, the self-signed token-signing certificates are valid for one year. The AD FS server is configured to automatically renew (replace) its self-signed certificates before they expire, but you'll need to re-import the certificate on the Exchange servers.  <br/> You can increase the default certificate expiration period by running this command in Windows PowerShell on the AD FS server: `Set-AdfsProperties -CertificateDuration <Days>` (the default value is 365). For more information, see [Set-AdfsProperties](https://go.microsoft.com/fwlink/p/?linkid=838466).  <br/> To export the certificate from the AD FS Management console, select **Service** \> **Certificates** \> right-click on the token-signing certificate \> select **View Certificate** \> click the **Details** tab \> click **Copy to File**.  <br/> |
-| `mail.contoso.com` <br/> |Issued by a CA  <br/> |Exchange servers  <br/> Web Application Proxy server  <br/> |This is the typical certificate that's used to encrypt external client connections to Outlook on the web (and likely other Exchange IIS services). For more information, see [Certificate requirements for Exchange services](../../architecture/client-access/certificates.md#CertRequirements).  <br/> |
+| `mail.contoso.com` <br/> |Issued by a CA  <br/> |Exchange servers  <br/> Web Application Proxy server  <br/> |This is the typical certificate that's used to encrypt external client connections to Outlook on the web (and likely other Exchange IIS services). For more information, see [Certificate requirements for Exchange services](../../architecture/client-access/certificates.md#certificate-requirements-for-exchange-services).  <br/> |
    
 For more information, see the "Certificate requirements" section in [Review the requirements for deploying AD FS](https://go.microsoft.com/fwlink/p/?LinkId=392699).
   
@@ -88,7 +85,6 @@ For more information, see the "Certificate requirements" section in [Review the 
 > Secure Sockets Layer (SSL) is being replaced by Transport Layer Security (TLS) as the protocol that's used to encrypt data sent between computer systems. They're so closely related that the terms "SSL" and "TLS" (without versions) are often used interchangeably. Because of this similarity, references to "SSL" in Exchange topics, the Exchange admin center, and the Exchange Management Shell have often been used to encompass both the SSL and TLS protocols. Typically, "SSL" refers to the actual SSL protocol only when a version is also provided (for example, SSL 3.0). To find out why you should disable the SSL protocol and switch to TLS, check out [Protecting you against the SSL 3.0 vulnerability](https://blogs.office.com/2014/10/29/protecting-ssl-3-0-vulnerability/).
   
 ## Step 2: Deploy an AD FS server
-<a name="DeployADFS"> </a>
 
 You can use Server Manager or Windows PowerShell to install the Active Directory Federation Services role service on the target server.
   
@@ -128,7 +124,7 @@ To use Server Manager to install AD FS, follow these steps:
 
     ![The 'Confirm installation selections' page in the Add Roles and Features Wizard.](../../media/734ebce0-ba37-4fdd-bfa0-b14fbc0bec53.png)
   
-10. On the **Installation progress** page, you can watch the progress bar to verify that the installation was successful. When the installation is finished, leave the wizard open so you can click **Configure the federation service on this server** in [Step 3b: Configure the AD FS server](ad-fs-claims-based-auth.md#ConfigureADFS).
+10. On the **Installation progress** page, you can watch the progress bar to verify that the installation was successful. When the installation is finished, leave the wizard open so you can click **Configure the federation service on this server** in [Step 3b: Configure the AD FS server](#step-3b-configure-the-ad-fs-server).
 
     ![The 'Installation progress' page in the Add Roles and Features Wizard.](../../media/b2928a29-42cc-42b6-b20e-89deea97f1a0.png)
   
@@ -139,12 +135,10 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
 ```
 
 ## Step 3: Configure and test the AD FS server
-<a name="DeployADFS"> </a>
 
 You can also refer to this checklist to help you configure AD FS: [Checklist: Setting Up a Federation Server](https://go.microsoft.com/fwlink/p/?LinkId=392700).
   
 ### Step 3a: Create a gMSA on a domain controller
-<a name="CreateGMSA"> </a>
 
 Before you configure the AD FS server, you need to create a group Managed Service Account (gMSA) on a Windows Server 2012 or later domain controller. You do this in an elevated Windows PowerShell window on the domain controller (a Windows PowerShell window you open by selecting **Run as administrator**).
   
@@ -175,13 +169,12 @@ Before you configure the AD FS server, you need to create a group Managed Servic
   ```
 
 ### Step 3b: Configure the AD FS server
-<a name="ConfigureADFS"> </a>
 
 To configure the AD FS server, you can use Server Manager or Windows PowerShell.
   
 To use Server Manager, following these steps:
   
-1. If you left the **Add Roles and Features Wizard** open on the AD FS server from [Step 2: Deploy an AD FS server](ad-fs-claims-based-auth.md#DeployADFS), you can click the **Configure the federation service on this server** link on the **Installation progress** page.
+1. If you left the **Add Roles and Features Wizard** open on the AD FS server from [Step 2: Deploy an AD FS server](#step-2-deploy-an-ad-fs-server), you can click the **Configure the federation service on this server** link on the **Installation progress** page.
 
     ![The 'Installation progress' page in the Add Roles and Features Wizard.](../../media/b2928a29-42cc-42b6-b20e-89deea97f1a0.png)
   
@@ -199,7 +192,7 @@ To use Server Manager, following these steps:
   
 4. On the **Specify Service Properties** page, configure the following settings: 
     
-  - **SSL Certificate**: Import or select the SSL certificate that contains the federation service name that you configured in [Step 3a: Create a gMSA on a domain controller](ad-fs-claims-based-auth.md#CreateGMSA) (for example `adfs.contoso.com`). When you import a certificate that isn't already installed on the server, you need to import a .pfx file (likely, a password-protected file that contains the certificate's private key). The common name (CN) value in the certificate's Subject field is displayed here.
+  - **SSL Certificate**: Import or select the SSL certificate that contains the federation service name that you configured in [Step 3a: Create a gMSA on a domain controller](#step-3a-create-a-gmsa-on-a-domain-controller) (for example `adfs.contoso.com`). When you import a certificate that isn't already installed on the server, you need to import a .pfx file (likely, a password-protected file that contains the certificate's private key). The common name (CN) value in the certificate's Subject field is displayed here.
     
   - **Federation Service Name**: This field is automatically populated based on the type of SSL certificate that you select or import:
     
@@ -223,7 +216,7 @@ To use Server Manager, following these steps:
     
   - Select **Use an existing domain user account or group Managed Service Account**.
     
-  - **Account Name**: Click **Select** and enter the gMSA account that you created in [Step 3a: Create a gMSA on a domain controller](ad-fs-claims-based-auth.md#CreateGMSA) (for example, `FSgMSA`). Note that after you select it, the value that's displayed is `<Domain>\<gMSAAccountName>$` (for example, `CONTOSO\FSgMSA$`).
+  - **Account Name**: Click **Select** and enter the gMSA account that you created in [Step 3a: Create a gMSA on a domain controller](#step-3a-create-a-gmsa-on-a-domain-controller) (for example, `FSgMSA`). Note that after you select it, the value that's displayed is `<Domain>\<gMSAAccountName>$` (for example, `CONTOSO\FSgMSA$`).
     
     When you're finished, click **Next**.
 
@@ -288,12 +281,10 @@ Install-AdfsFarm -CertificateThumbprint 5AE82C737900B29C2BAC3AB6D8C44D249EE05609
 For details and syntax, see [Install-AdfsFarm](https://go.microsoft.com/fwlink/p/?LinkId=392704).
   
 ### Step 3c: Test the AD FS server
-<a name="ConfigureADFS"> </a>
 
 After you configure AD FS, you can verify the installation on the AD FS server by successfully opening the URL of the federation metadata in a web browser. The URL uses the syntax `https://<FederationServiceName>/federationmetadata/2007-06/federationmetadata.xml`. For example, `https://adfs.contoso.com/federationmetadata/2007-06/federationmetadata.xml`.
   
 ## Step 4: Create a relying party trust and custom claim rules in AD FS for Outlook on the web and the EAC
-<a name="ADFSRPT"> </a>
 
 - On the Exchange server, Outlook on the web uses the virtual directory named `owa` and the EAC uses the virtual directory named `ecp`.
     
@@ -522,7 +513,6 @@ To create the custom claim rules in the existing relying party trust named EAC, 
   ```
 
 ## Step 5: (Optional) Deploy and configure a Windows Server 2012 R2 Web Application Proxy server
-<a name="ADFSRPT"> </a>
 
 The steps in this section are required only if you want to publish Outlook on the web and the EAC using Web Application Proxy, and you want Web Application Proxy perform the AD FS authentication. Remember:
   
@@ -533,7 +523,6 @@ The steps in this section are required only if you want to publish Outlook on th
 If you aren't going to use Web Application Proxy, skip to Step 6.
   
 ### Step 5a: Install Web Application Proxy
-<a name="DeployWAP"> </a>
 
 To use Server Manager to install Web Application Proxy, follow these steps:
   
@@ -586,7 +575,6 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
 ```
 
 ### Step 5b: Configure the Web Application Proxy server
-<a name="ConfigureWAP"> </a>
 
 After you deploy the Web Application Proxy server, you need to configure the following Web Application Proxy settings:
   
@@ -665,7 +653,6 @@ To use Windows PowerShell to configure Web Application Proxy, follow these steps
     ```
 
 ### Step 5c: Publish the claims relying party trusts for Outlook on the web and the EAC in Web Application Proxy
-<a name="WAPPublish"> </a>
 
 To publish the relying party trusts in Web Application Proxy, you can use the Remote Access Management console or Windows PowerShell.
   
@@ -687,7 +674,7 @@ To use the Remote Access Management console, follow these steps:
 
     ![The Preauthentication page in the Publish New Application Wizard on the Web Application Proxy server.](../../media/078c5b38-8ee5-431f-a990-0d4e69a71291.png)
   
-5. On the **Relying Party** page, select the relying party that you created on the AD FS server in [Step 4: Create a relying party trust and custom claim rules in AD FS for Outlook on the web and the EAC](ad-fs-claims-based-auth.md#ADFSRPT):
+5. On the **Relying Party** page, select the relying party that you created on the AD FS server in [Step 4: Create a relying party trust and custom claim rules in AD FS for Outlook on the web and the EAC](#step-4-create-a-relying-party-trust-and-custom-claim-rules-in-ad-fs-for-outlook-on-the-web-and-the-eac):
 
     ![Select the relying party on the Relying Party page in the Publish New Application Wizard on the Web Application Proxy server.](../../media/e658d887-37b4-4256-b588-213c4c81eb9e.png)
   
@@ -780,7 +767,6 @@ To use Windows PowerShell to publish the relying party trusts, follow these step
  **Note**: All AD FS endpoints that you want to publish through Web Application Proxy need to be proxy enabled. You do this in the AD FS Management console at **Service** \> **Endpoints** (verify that **Proxy Enabled** is **Yes** for the specified endpoint).
   
 ## Step 6: Configure the Exchange organization to use AD FS authentication
-<a name="ConfigExchangeOrg"> </a>
 
 To configure the Exchange organization to use AD FS authentication, you need to use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
   
@@ -817,7 +803,6 @@ To configure the Exchange organization to use AD FS authentication, you need to 
     **Note**: The _AdfsEncryptCertificateThumbprint_ parameter isn't supported in these scenarios.
     
 ## Step 7: Configure AD FS authentication on the Outlook on the web and EAC virtual directories
-<a name="ConfigExchangeVDirs"> </a>
 
 For the Outlook on the web and EAC virtual directories, you need to configure AD FS authentication as the only available authentication method by disabling all other authentication methods.
   
@@ -856,7 +841,6 @@ Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -Bas
 ```
 
 ## Step 8: Restart IIS on the Exchange server
-<a name="RestartIIS"> </a>
 
 1. Open IIS Manager on the Exchange server. An easy way to do this in Windows Server 2012 or later is to press Windows key + Q, type inetmgr, and select **Internet Information Services (IIS) Manager** in the results.
     
@@ -877,7 +861,6 @@ net start w3svc
 ```
 
 ## How do you know this worked?
-<a name="Test"> </a>
 
 To test the AD FS claims for Outlook on the web:
   
@@ -900,7 +883,6 @@ To test the AD FS claims for EAC:
 4. EAC will load in the window.
     
 ## Additional considerations
-<a name="MoreInfo"> </a>
 
  **Multifactor authentication**
   
@@ -920,8 +902,8 @@ On the AD FS server, the federation service functions as a security token servic
   
  **Co-existence with other versions of Exchange**
   
-You can use AD FS authentication for Outlook on the web and the EAC when you have more than one version of Exchange deployed in your organization. This scenario is supported only if all clients are connecting through or Exchange 2016 servers, **and** all of those servers have been configured for AD FS authentication.
+You can use AD FS authentication for Outlook on the web and the EAC when you have more than one version of Exchange deployed in your organization. This scenario is supported only if all clients are connecting through Exchange servers, **and** all of those servers have been configured for AD FS authentication.
   
-Users with mailboxes on Exchange 2010 servers can access their mailboxes through an Exchange 2016 server that's configured for AD FS authentication. The initial client connection to the or Exchange 2016 server uses AD FS authentication. However, the proxied connection to Exchange 2010 uses Kerberos. There's no supported way to configure Exchange 2010 for direct AD FS authentication.
+In Exchange 2016 organizations, users with mailboxes on Exchange 2010 servers can access their mailboxes through an Exchange 2016 server that's configured for AD FS authentication. The initial client connection to the or Exchange 2016 server uses AD FS authentication. However, the proxied connection to Exchange 2010 uses Kerberos. There's no supported way to configure Exchange 2010 for direct AD FS authentication.
   
 

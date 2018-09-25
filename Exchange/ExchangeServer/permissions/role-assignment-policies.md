@@ -3,20 +3,18 @@ title: "Manage role assignment policies"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: f93d502e-5df4-4ba0-b68d-01a17ccffb4d
-description: "Summary: Learn how to manage and customize role assignment policies in Exchange Server 2016."
+description: "Summary: Learn how to manage and customize role assignment policies in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Manage role assignment policies
 
- **Summary**: Learn how to manage and customize role assignment policies in Exchange Server 2016.
-
-If you want to customize the permissions that you assign to a group of end users, create a new custom management role assignment policy. The assignment policy you create can be customized to suit your end user's specific requirements. For more information about assignment policies in Microsoft Exchange Server 2016, see [Understanding Management Role Assignment Policies](http://technet.microsoft.com/library/25913e43-326a-4371-90b5-021a35f100fe.aspx).
+If you want to customize the permissions that you assign to a group of end users, create a new custom management role assignment policy. The assignment policy you create can be customized to suit your end user's specific requirements. For more information about assignment policies in Exchange Server, see [Understanding Management Role Assignment Policies](http://technet.microsoft.com/library/25913e43-326a-4371-90b5-021a35f100fe.aspx).
 
 Looking for other management tasks related to managing permissions? Check out [Permissions](permissions.md).
 
@@ -24,7 +22,7 @@ Looking for other management tasks related to managing permissions? Check out [P
 
 - Estimated time to complete each procedure: 5 minutes
 
-- To open the EAC, see [Exchange admin center in Exchange 2016](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
+- To open the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](http://technet.microsoft.com/library/63976059-25f8-4b4f-b597-633e78b803c0.aspx).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Assignment policies" entry in the [Role management permissions](feature-permissions/rbac-permissions.md) topic.
 
@@ -92,7 +90,7 @@ If you no longer need a management role assignment policy, you can remove it.
 
 - All the management role assignments between the assignment policy and the assigned management roles must be removed. For more information about how to remove a role assignment from an assignment policy, see the [Use the Exchange Management Shell to remove a role from an assignment policy](#RemoveRole.md) section later in this topic.
 
-- If you want to remove a default assignment policy, it must be the last assignment policy in the Exchange 2016 organization.
+- If you want to remove a default assignment policy, it must be the last assignment policy in the Exchange Server organization.
 
 #### Use the EAC to remove an assignment policy
 

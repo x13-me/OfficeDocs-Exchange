@@ -14,21 +14,19 @@ description: "Summary: Create and manage public folders with one or more of thes
 
 # Public folder procedures
 
- **Summary**: Create and manage public folders with one or more of these articles.
-  
 Use one or more of the procedures listed below to get your public folder infrastructure up and running, and to perform other necessary tasks for managing public folders.
   
 [Set up public folders in a new organization](new-organizations.md)
   
 [Configure legacy on-premises public folders for a hybrid deployment](configure-legacy-public-folders-for-hybrid.md)
   
-[Use batch migration to migrate public folders to Exchange 2016 from previous versions](batch-migration-from-previous-versions.md)
+[Use batch migration to migrate Exchange 2010 public folders to Exchange 2016](batch-migration-from-previous-versions.md)
   
 [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](http://technet.microsoft.com/library/e8ab9309-7d12-4f02-bfc4-14e61a373958.aspx)
   
-[Use batch migration to migrate Exchange 2016 public folders to Exchange Online](migrate-to-exchange-online.md)
+[Use batch migration to migrate Exchange Server public folders to Exchange Online](migrate-to-exchange-online.md)
   
-[Migrate public folders from Exchange 2013 to Exchange 2016](migrate-from-exchange-2013.md)
+[Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019](migrate-from-exchange-2013.md)
   
 [Configure legacy public folders where user mailboxes are on Exchange 2016 servers](http://technet.microsoft.com/library/1d5ca19e-696e-4054-a634-15dd34d952b7.aspx)
   

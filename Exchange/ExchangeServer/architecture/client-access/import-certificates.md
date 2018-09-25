@@ -1,22 +1,20 @@
 ---
-title: "Import or install a certificate on an Exchange 2016 server"
+title: "Import or install a certificate on an Exchange server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_Admin
 ms.assetid: 43fbe354-ccfc-45b0-9fbc-4b23c6c5ccf4
-description: "Summary: Learn how to import (install) a certificate on an Exchange 2016 server."
+description: "Summary: Learn how to import (install) a certificate on Exchange Server 2016 or Exchange Server 2019."
 ---
 
-# Import or install a certificate on an Exchange 2016 server
+# Import or install a certificate on an Exchange server
 
- **Summary**: Learn how to import (install) a certificate on an Exchange 2016 server.
-  
 To enable encryption for one or more Exchange services, the Exchange server needs to use a certificate. SMTP communication between internal Exchange servers is encrypted by the default self-signed certificate that's installed on the Exchange server. To encrypt communication with internal or external clients, servers, or services, you'll likely want to use a certificate that's automatically trusted by all clients, services and servers that connect to your Exchange organization. For more information, see [Certificate requirements for Exchange services](certificates.md#CertRequirements).
   
 You can import (install) certificates on Exchange servers in the Exchange admin center (EAC) or in the Exchange Management Shell.
@@ -121,6 +119,6 @@ To verify that you have successfully imported (installed) a certificate on an Ex
 ## Next steps
 <a name="NextSteps"> </a>
 
-After you install the certificate on the server, you need to assign the certificate to one or more Exchange services before the Exchange server is able to use the certificate for encryption. For more information, see [Assign certificates to Exchange 2016 services](assign-certificates-to-services.md).
+After you install the certificate on the server, you need to assign the certificate to one or more Exchange services before the Exchange server is able to use the certificate for encryption. For more information, see [Assign certificates to Exchange Server services](assign-certificates-to-services.md).
   
 

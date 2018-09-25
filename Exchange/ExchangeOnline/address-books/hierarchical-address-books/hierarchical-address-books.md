@@ -22,7 +22,7 @@ In an HAB, your root organization (for example, Contoso, Ltd) is used as the top
   
 - The top-level tier represents the root organization Contoso, Ltd.
     
-- The second-level child tiers represent the business divisions within Contoso, Ltd: Corporate Office, Product Support Organization, and Sales &amp; Marketing Organization.
+- The second-level child tiers represent the business divisions within Contoso, Ltd: Corporate Office, Product Support Organization, and Sales & Marketing Organization.
     
 - The third-level child tiers represent departments within the Corporate Office division: Human Resources, Accounting Group, and Administration Group.
     

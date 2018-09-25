@@ -3,28 +3,26 @@ title: "Copy eDiscovery search results to a discovery mailbox"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bff2ce89-9e6f-494a-bd6a-2f2011507845
-description: "Summary: Learn how to copy the results of an In-Place eDiscovery search to a discovery mailbox in Exchange 2016."
+description: "Summary: Learn how to copy the results of an In-Place eDiscovery search to a discovery mailbox in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Copy eDiscovery search results to a discovery mailbox
 
- **Summary**: Learn how to copy the results of an In-Place eDiscovery search to a discovery mailbox in Exchange 2016.
-  
-After you create an In-Place eDiscovery search in Exchange Server 2016, you can use the Exchange admin center (EAC) to copy the results to a discovery mailbox. You can also use the Exchange Management Shell to start an eDiscovery search that was created using the **New-MailboxSearch** cmdlet, which will copy the results to the discovery mailbox that was specified when you created the search.
+After you create an In-Place eDiscovery search in Exchange Server, you can use the Exchange admin center (EAC) to copy the results to a discovery mailbox. You can also use the Exchange Management Shell to start an eDiscovery search that was created using the **New-MailboxSearch** cmdlet, which will copy the results to the discovery mailbox that was specified when you created the search.
   
 ## What do you need to know before you begin?
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging policy and compliance permissions in Exchange 2016](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
     
-- An eDiscovery search has to be created, by using the EAC or the Exchange Management Shell, before you can copy the search results. For details, see [Create an In-Place eDiscovery search in Exchange 2016](create-searches.md).
+- An eDiscovery search has to be created, by using the EAC or the Exchange Management Shell, before you can copy the search results. For details, see [Create an In-Place eDiscovery search in Exchange Server](create-searches.md).
     
-- Exchange 2016 Setup creates a discovery mailbox called **Discovery Search Mailbox** to copy search results. You can create additional discovery mailboxes. For details, see [Create a Discovery Mailbox](http://technet.microsoft.com/library/bc20285d-35e2-4e49-9bd3-38abf96114ba.aspx).
+- Exchange Server Setup creates a discovery mailbox called **Discovery Search Mailbox** to copy search results. You can create additional discovery mailboxes. For details, see [Create a Discovery Mailbox](http://technet.microsoft.com/library/bc20285d-35e2-4e49-9bd3-38abf96114ba.aspx).
     
 - It might take 5 minutes or longer to copy search results to a discovery mailbox, depending on the number of mailbox items returned in the results.
     
@@ -61,7 +59,7 @@ After you create an In-Place eDiscovery search in Exchange Server 2016, you can 
 
 After using the **New-MailboxSearch** cmdlet to create an In-Place eDiscovery search, you need to start the search to copy messages to the discovery mailbox you specified in the _TargetMailbox_ parameter. For information about creating eDiscovery searches by using the Exchange Management Shell, see: 
   
-- [Create an In-Place eDiscovery search in Exchange 2016](create-searches.md)
+- [Create an In-Place eDiscovery search in Exchange Server](create-searches.md)
     
 - [New-MailboxSearch](http://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx)
     
