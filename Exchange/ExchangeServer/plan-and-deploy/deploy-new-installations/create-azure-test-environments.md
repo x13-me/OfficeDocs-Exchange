@@ -411,6 +411,6 @@ Start-AzureRMVM -Name exVM -ResourceGroupName $rgName
   
 [Exchange Server](../../exchange-server.md)
 
-[What's new in Exchange Server](../../new-features-2019/new-features.md)
+[What's new in Exchange Server](../../new-features/new-features.md)
 
 [Cloud adoption Test Lab Guides (TLGs)](https://technet.microsoft.com/library/dn635308.aspx)

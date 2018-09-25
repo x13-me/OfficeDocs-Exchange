@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 8d6e2cea-265a-43d9-a074-076f35658436
-description: "Summary: Learn how to configure a mobile phone or device to use Exchange ActiveSync.
+description: "Summary: Learn how to configure a mobile phone or device to use Exchange ActiveSync."
 ---
 
 # Configure mobile phones to access email
