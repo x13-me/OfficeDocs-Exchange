@@ -110,6 +110,8 @@ We strongly recommend that you use the latest version of the .NET Framework that
 
 - Outlook 2016 for Mac
 
+- Outlook 2013
+
 - Outlook for Mac for Office 365
 
 ## Lync/Skype For Business Server integration
