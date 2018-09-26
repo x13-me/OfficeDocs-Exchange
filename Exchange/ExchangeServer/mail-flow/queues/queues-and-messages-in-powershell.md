@@ -3,20 +3,18 @@ title: "Find queues and messages in queues in the Exchange Management Shell"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/10/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 5433c1d3-ad2e-4f82-b50d-b67964b32f26
-description: "Summary: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange 2016."
+description: "Summary: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Find queues and messages in queues in the Exchange Management Shell
 
- **Summary**: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange 2016.
-  
-As in previous versions of Exchange, you can use the Exchange Management Shell in Exchange Server 2016 to view information about queues and messages, and use that information to take action on queues and messages. Typically, an active Exchange contains a large number of queues and messages to be delivered, so it's important to understand how to identify the queues or messages that you want to manage.
+As in previous versions of Exchange, you can use the Exchange Management Shell in Exchange Server to view information about queues and messages, and use that information to take action on queues and messages. Typically, an active Exchange contains a large number of queues and messages to be delivered, so it's important to understand how to identify the queues or messages that you want to manage.
   
 Note that you can also use Queue Viewer in the Exchange Toolbox to manage queues and messages in queues. However, the queue and message viewing cmdlets in the Exchange Management Shell support more filterable properties and filter options than Queue Viewer. For more information about using Queue Viewer, see [Queue Viewer](queue-viewer.md).
   
@@ -45,7 +43,7 @@ The following table explains the _Identity_ parameter syntax on the queue manage
 | `<Server>\<PersistentQueueName>` or `<PersistentQueueName>` <br/> |A persistent queue on the specified or local server.  <br/> `<PersistentQueueName>` is `Submission`, `Unreachable`, or `Poison`.  <br/> For more information about persistent queues, see [Types of queues](queues.md#types-of-queues).  <br/> |
 | `<Server>\<NextHopDomain>` or `<NextHopDomain>` <br/> |A delivery queue on the specified or local server.  <br/> `<NextHopDomain>` is the name of the queue from the value of the **NextHopDomain** property of the queue. For example, the address space of a Send connector, the name of an Active Directory site, or the name of a DAG. For more information, see [NextHopSolutionKey](queues.md#nexthopsolutionkey).  <br/> |
 | `<Server>\<QueueInteger>` or `<QueueInteger>` <br/> |A delivery queue on the specified or local server.  <br/> `<QueueInteger>` is the unique integer value that's assigned to a delivery queue or a shadow queue in the queue database. However, you need to run the **Get-Queue** cmdlet to find this value in the **Identity** or **QueueIdentity** properties.  <br/> |
-| `<Server>\Shadow\<QueueInteger>` or `Shadow\<QueueInteger>` <br/> |A shadow queue on the specified or local server. For more information about shadow queues and shadow redundancy, see [Shadow redundancy in Exchange 2016](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |
+| `<Server>\Shadow\<QueueInteger>` or `Shadow\<QueueInteger>` <br/> |A shadow queue on the specified or local server. For more information about shadow queues and shadow redundancy, see [Shadow redundancy in Exchange Server](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |
 | `<Server>\*` or `*` <br/> |All queues on the specified or local server.  <br/> **Note**: _Identity_ is a positional parameter, which means you can specify the value without specifying the `-Identity` qualifier. For example, the following commands produce the same result:  <br/> `Get-Queue -Identity *` <br/> `Get-Queue *` <br/> `Get-Queue` <br/> |
    
 ### Filter parameter on queue cmdlets
@@ -90,7 +88,6 @@ Note that you can duplicate the functionality of the _Include_ and _Exclude_ par
 However, as you can see, the syntax of the _Include_ and _Exclude_ parameters is simpler and easier to remember.
   
 ## Get-QueueDigest
-<a name="GetQueueDigest"> </a>
 
 The **Get-QueueDigest** cmdlet allows you to view information about some or all of the queues in your organization by using a single command. Specifically, the **Get-QueueDigest** cmdlet allows you to view information about queues based on their location on servers, in DAGs, in Active Directory sites, or in the whole Active Directory forest.
   
@@ -104,7 +101,7 @@ The following table describes the filtering and sorting parameters that are avai
 |**Parameter**|**Description**|
 |:-----|:-----|
 | _Dag_, _Server_, or _Site_ <br/> |These parameters are mutually exclusive (can't be used in the same command), and set the scope for the cmdlet. You need to specify one of these parameters or the _Forest_ switch. Typically, you would use the name of the server, DAG or Active Directory site, but you can use any value that uniquely identifies the server, DAG, or site. You can specify multiple servers, DAGs, or sites separated by commas.  <br/> |
-| _Forest_ <br/> |This switch is required if you aren't using the _Dag_, _Server_, or _Site_ parameters. You don't specify a value with this switch. By using this switch, you get queues from all Exchange 2016 or Exchange 2013 Mailbox servers in the local Active Directory forest. You can't use this switch to view queues in remote Active Directory forests.  <br/> |
+| _Forest_ <br/> |This switch is required if you aren't using the _Dag_, _Server_, or _Site_ parameters. You don't specify a value with this switch. By using this switch, you get queues from all Exchange Mailbox servers in the local Active Directory forest. You can't use this switch to view queues in remote Active Directory forests.  <br/> |
 | _DetailsLevel_ <br/> | `Normal` is the default value. The following properties are returned in the results:  <br/> • **QueueIdentity** <br/> • **ServerIdentity** <br/> • **MessageCount** <br/> `Verbose` returns the following additional properties in the results:  <br/> • **DeferredMessageCount** <br/> • **LockedMessageCount\*** <br/> • **IncomingRate** <br/> • **OutgoingRate** <br/> • **Velocity** <br/> • **NextHopDomain** <br/> • **NextHopCategory** <br/> • **NextHopConnector** <br/> • **DeliveryType** <br/> • **Status** <br/> • **RiskLevel\*** <br/> • **OutboundIPPool\*** <br/> • **LastError** <br/> • **TlsDomain** <br/> `None` omits the queue name from the **Details** column in the results.  <br/> \* These properties are reserved for internal Microsoft use, and aren't used in on-premises Exchange organizations. For more information about all properties in this list, see [Queue properties](queue-properties.md).  <br/> |
 | _Filter_ <br/> |Filter queues based on the queue properties as described in the [Filter parameter on queue cmdlets](#filter-parameter-on-queue-cmdlets) section. You can use any of the filterable queue properties as described in the [Queue properties](queue-properties.md) topic.  <br/> |
 | _GroupBy_ <br/> |Groups the queue results. You can group the results by one of the following properties:  <br/> • **DeliveryType** <br/> • **LastError** <br/> • **NextHopCategory** <br/> • **NextHopDomain** <br/> • **NextHopKey** <br/> • **Status** <br/> • **ServerName** <br/> By default, the results are grouped by **NextHopDomain**. For information about these queue properties, see [Queue properties](queue-properties.md).  <br/> |
@@ -118,7 +115,6 @@ Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude
 ```
 
 ## Message filtering parameters
-<a name="MessagesFilters"> </a>
 
 The following table summarizes the filtering parameters that are available on the message management cmdlets.
   
@@ -130,7 +126,6 @@ The following table summarizes the filtering parameters that are available on th
 |**Export-Message** <br/> | _Identity_ <br/> |This parameter isn't really a filter, because it uniquely identifies the message. To identify multiple messages for this cmdlet, use **Get-Message** and pipe the results to **Export-Message**. For more information and examples, see [Export messages from queues](export-messages.md).  <br/> |
    
 ### Message identity
-<a name="MessageIdentity"> </a>
 
 The _Identity_ parameter on the message management cmdlets uniquely identifies a message in one or more queues, so you can't use any other message filtering parameters. The _Identity_ parameter uses the basic syntax `<Server>\<Queue>\<MessageInteger>`.
   
@@ -142,7 +137,6 @@ The following table describes the syntax you can use with _Identity_ parameter o
 | `<Server>\*\<MessageInteger>` or `*\<MessageInteger>` or `<MessageInteger>` <br/> |All copies of the message in all queues in the queue database on the specified or local server.  <br/> |
    
 ### Filter parameter on message cmdlets
-<a name="MessageFilterParam"> </a>
 
 You can use the _Filter_ parameter with the **Get-Message**, **Remove-Message**, **Resume-Message**, and **Suspend-Message** cmdlets to identify one or more messages based on the properties of the messages. The _Filter_ parameter creates an OPath filter with comparison operators to restrict the command to messages that meet the filter criteria. You can use the logical operator `-and` to specify multiple conditions for the match. Here's a generic example of the syntax: 
   
@@ -155,12 +149,10 @@ For a list of comparison operators you can use with the _Filter_ parameter, see 
 For examples of procedures that use the _Filter_ parameter to view and manage messages, see [Procedures for messages in queues](message-procedures.md).
   
 ### Queue parameter
-<a name="QueueParam"> </a>
 
 The _Queue_ parameter is available only on the **Get-Message** cmdlet. You can use this parameter to get all messages in a specific queue, or all messages from multiple queues by using the wildcard character (\*). When you use the _Queue_ parameter, use the queue identity format `<Server>\<Queue>` as described in the [Queue identity](#queue-identity) section in this topic.
   
 ## Comparison operators to use when filtering queues or messages
-<a name="ComparisonOperators"> </a>
 
 When you create a queue or message filter expression by using the _Filter_ parameter, you need to include an comparison operator for the property value to match. The comparison operators that you can use, and how each operator functions are described in the following table. For all operators, the values compared aren't case sensitive.
   
@@ -189,7 +181,6 @@ Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
 ```
 
 ## Advanced paging parameters
-<a name="PagingParameters"> </a>
 
 When you use the Exchange Management Shell to view queues and messages in queues, your query retrieves one page of information at a time. The advanced paging parameters control the size of the results, and the order that the results are displayed in. All advanced paging parameters are optional and can be used with or without other filtering parameters on the **Get-Queue** and **Get-Message** cmdlets. If you don't specify any advanced paging parameters, the query returns the results in ascending order of identity.
   
@@ -199,8 +190,6 @@ You can use the _BookmarkIndex_ and _BookmarkObject_ parameters to mark a positi
   
 The advanced paging parameters are described in the following table.
   
-**Advanced paging parameters**
-
 |**Parameter**|**Description**|
 |:-----|:-----|
 | _BookmarkIndex_ <br/> |Specifies the position in the results where the displayed results start. The value of this parameter is a 1-based index in the total results. If the value is less than or equal to zero, the first complete page of results is returned. If the value is set to `Int.MaxValue`, the last complete page of results is returned.  <br/> You can't use this parameter with the _BookmarkObject_ parameter.  <br/> |

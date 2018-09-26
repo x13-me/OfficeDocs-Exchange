@@ -9,14 +9,12 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: b9004562-b0f2-4460-a623-94883834f73f
-description: "Summary: Lean about the built-in arbitration mailboxes in Exchange 2016 and how to recreate them."
+description: "Summary: Lean about the built-in arbitration mailboxes in Exchange 2016 and Exchange 2019 and how to recreate them."
 ---
 
 # Recreate missing arbitration mailboxes
 
- **Summary**: Lean about the built-in arbitration mailboxes in Exchange 2016 and how to recreate them.
-  
-Exchange 2016 comes with five system mailboxes known as *arbitration mailboxes*. Arbitration mailboxes are used for storing different types of system data and for managing messaging approval workflow. The following table lists each type of arbitration mailbox and their responsibilities.
+Exchange Server contains five special system mailboxes known as *arbitration mailboxes*. Arbitration mailboxes are used for storing different types of system data and for managing messaging approval workflow. The following table lists each type of arbitration mailbox and their responsibilities.
   
 |**Arbitration mailbox Name**|**Display name**|**Persisted capabilities**|**Function**|
 |:-----|:-----|:-----|:-----|
@@ -38,7 +36,7 @@ If you need to re-create one of more of these arbitration mailboxes, see the ins
 
 - The computer that you use to run Setup.exe /PrepareAD requires access to Setup.exe in the Exchange installation files:
 
-    1. Use your most recently downloaded copy of the Exchange ISO image file, or download an updated copy from [Updates for Exchange 2016](../../new-features/updates.md).
+    1. Use your most recently downloaded copy of the Exchange ISO image file, or download an updated copy from  [Updates for Exchange Server](../../plan-and-deploy/updates.md).
     
     2. In File Explorer, right-click on the Exchange ISO image file and then select **Mount**. Note the virtual DVD drive letter that's assigned.
 
@@ -50,7 +48,7 @@ If you need to re-create one of more of these arbitration mailboxes, see the ins
 
 - For more information about opening the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
-- For more information about running Exchange Setup in unattended mode, see [Install Exchange 2016 using unattended mode](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
+- For more information about running Exchange Setup in unattended mode, see [Use unattended mode in Exchange Setup](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
     
 ## Re-create an arbitration mailbox
 
@@ -88,7 +86,7 @@ To re-create the arbitration mailbox SystemMailbox{1f05a927-XXXX-XXXX-XXXX-XXXXX
     <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
     ```
 
-  For example:
+    For example:
 
     ```
     E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD

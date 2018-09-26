@@ -1,22 +1,20 @@
 ---
-title: "Procedures for mail flow rules in Exchange 2016"
+title: "Procedures for mail flow rules in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
-description: "Summary: Learn how to create, view, modify, delete, import, and export mail flow rules (transport rules) in Exchange 2016."
+description: "Summary: Learn how to create, view, modify, delete, import, and export mail flow rules (transport rules) in Exchange 2016 and Exchange 2019"
 ---
 
-# Procedures for mail flow rules in Exchange 2016
+# Procedures for mail flow rules in Exchange Server
 
- **Summary**: Learn how to create, view, modify, delete, import, and export mail flow rules (transport rules) in Exchange 2016.
-  
-Mail flow rules (also known as transport rules) identify and take action on messages that flow through your Exchange organization. For more information about mail flow rules, see [Mail flow rules in Exchange 2016](mail-flow-rules.md).
+Mail flow rules (also known as transport rules) identify and take action on messages that flow through your Exchange organization. For more information about mail flow rules, see [Mail flow rules in Exchange Server](mail-flow-rules.md).
   
 On Mailbox servers, you can manage mail flow rules in the Exchange admin center (EAC) and in the Exchange Management Shell. On Edge Transport servers, you can only use the Exchange Management Shell.
   
@@ -27,9 +25,9 @@ On Mailbox servers, you can manage mail flow rules in the Exchange admin center 
 
 - Estimated time to complete each procedure: 5 minutes.
     
-- For more information about the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions in Exchange 2016](../../permissions/feature-permissions/policy-and-compliance-permissions.md) (Exchange Server), or in [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx).
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) (Exchange Server), or in [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx).
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
@@ -45,9 +43,9 @@ On Mailbox servers, you can manage mail flow rules in the Exchange admin center 
     
   - [Add an Email Disclaimer, Legal Disclaimer, Common Signature, or Email Footer or Header](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
     
-  - [Manage message approval in Exchange Server 2016](http://technet.microsoft.com/library/43a89f71-8002-4cb0-b3c8-1c2b2597f227.aspx)
+  - [Manage message approval in Exchange Server](http://technet.microsoft.com/library/43a89f71-8002-4cb0-b3c8-1c2b2597f227.aspx)
     
-- Data Loss Prevention (DLP) policies are collections of mail flow rules. To create DLP policies, see [Exchange Server 2016 DLP Procedures](http://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df%28Office.14%29.aspx).
+- Data Loss Prevention (DLP) policies are collections of mail flow rules. To create DLP policies, see [Exchange Server DLP Procedures](http://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df%28Office.14%29.aspx).
     
 ### Use the EAC to create mail flow rules
 <a name="CreateEAC"> </a>
@@ -66,9 +64,9 @@ The EAC allows you to create mail flow rules by using a template (a filtered lis
     
   - **Name**: Enter a unique, descriptive name for the rule.
     
-  - **Apply this rule if**: Select a condition for the rule. If you want the rule to apply to all messages, select **[Apply to all messages]**. For an explanation of the available conditions, see [Mail flow rule conditions and exceptions (predicates) in Exchange 2016](conditions-and-exceptions.md).
+  - **Apply this rule if**: Select a condition for the rule. If you want the rule to apply to all messages, select **[Apply to all messages]**. For an explanation of the available conditions, see [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md).
     
-  - **Do the following**: Select an action for the rule. The action is applied to messages that match the conditions. For an explanation of the available conditions, see [Mail flow rule actions in Exchange 2016](actions.md).
+  - **Do the following**: Select an action for the rule. The action is applied to messages that match the conditions. For an explanation of the available conditions, see [Mail flow rule actions in Exchange Server](actions.md).
     
     Optional properties:
     
@@ -172,9 +170,10 @@ Mail flow rules that you create on a Mailbox server are stored in Active Directo
 1. In the EAC, go to **Mail flow** \> **Rules**.
     
 2. When you select a rule, information about the rule is displayed in the details pane. To see more information about the rule, click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
+
     ![In the EAC, go to Mail flow \> Rules and select a rule](../../media/37502067-8f3f-49d1-aaea-91c7f3eb8e8a.png)
   
-    In the EAC, the **Version** property is only visible in the details pane. This property indicates the compatibility of the rule with previous versions of Exchange (14. *n*. *n*. *n* is Exchange 2010, 15.0. *n*. *n* is Exchange 2013).
+    In the EAC, the **Version** property is only visible in the details pane. This property indicates the compatibility of the rule with previous versions of Exchange (14.*n*.*n*.*n* is Exchange 2010, 15.0.*n*.*n* is Exchange 2013).
     
 ### Use the Exchange Management Shell to view mail flow rules
 
@@ -220,7 +219,7 @@ For detailed syntax and parameter information, see [Get-TransportRulePredicate](
   
 - Exceptions aren't distinguished from conditions.
     
-- The predicates that are available on Edge Transport servers are a small subset of those available on Mailbox servers. For more information, see [Mail flow rule conditions and exceptions (predicates) in Exchange 2016](conditions-and-exceptions.md).
+- The predicates that are available on Edge Transport servers are a small subset of those available on Mailbox servers. For more information, see [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md).
     
 - Some of the predicate names are different than the corresponding condition and exception parameter names on the **New-TransportRule** and **Set-TransportRule** cmdlets. And, some predicates require multiple parameters.
     
@@ -238,7 +237,7 @@ For detailed syntax and parameter information, see [Get-TransportRuleAction](htt
   
  **Notes**:
   
-- A small subset of actions that are available on Mailbox servers are also available on Edge Transport servers, but some actions are only available on Edge Transport servers. For more information, see [Mail flow rule actions in Exchange 2016](actions.md).
+- A small subset of actions that are available on Mailbox servers are also available on Edge Transport servers, but some actions are only available on Edge Transport servers. For more information, see [Mail flow rule actions in Exchange Server](actions.md).
     
 - Some of the action names are different than the corresponding action parameter names on the **New-TransportRule** and **Set-TransportRule** cmdlets. And, some actions require multiple parameters.
     
@@ -445,7 +444,7 @@ You can import a mail flow rule collection that you've previously exported as a 
   
 - You can't import or export mail flow rule collections in the EAC. You can only use the Exchange Management Shell.
     
-- You can't import a mail flow rule collection into Exchange 2010 if that rule collection was exported from Exchange 2013 or Exchange 2016 .
+- You can't import a mail flow rule collection into Exchange 2010 if that rule collection was exported from Exchange 2013 or later.
     
 ### Use the Exchange Management Shell to export a transport rule collection
 
@@ -494,13 +493,13 @@ For detailed syntax and parameter information, see [Import-TransportRuleCollecti
 ## Need more help?
 <a name="import"> </a>
 
-- Resources for Exchange Server 2016:
+- Resources for Exchange Server:
     
-  - [Mail flow rules in Exchange 2016](mail-flow-rules.md)
+  - [Mail flow rules in Exchange Server](mail-flow-rules.md)
     
-  - [Mail flow rule conditions and exceptions (predicates) in Exchange 2016](conditions-and-exceptions.md)
+  - [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md)
     
-  - [Mail flow rule actions in Exchange 2016](actions.md)
+  - [Mail flow rule actions in Exchange Server](actions.md)
     
 - Resources for Exchange Online:
     

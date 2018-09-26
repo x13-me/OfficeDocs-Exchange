@@ -25,10 +25,6 @@ Microsoft Exchange Server 2016 Setup can't continue because it detected that the
 
 - **Windows Server 2016**: Install Windows Server 2016 and choose the **Desktop Experience** installation option. If a computer is running Windows Server 2016 Core or Nano and you want to install Exchange 2016 on it, you'll need to reinstall the operating system and choose the **Desktop Experience** installation option.
     
-For more information, see [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md).
+For more information, see [Exchange Server system requirements](../../plan-and-deploy/system-requirements.md).
   
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-  
-
-  
-

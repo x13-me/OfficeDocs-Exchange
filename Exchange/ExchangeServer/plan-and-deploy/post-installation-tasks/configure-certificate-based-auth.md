@@ -14,8 +14,6 @@ description: "Summary: Learn how to configure Exchange 2016 CU1 or later to use 
 ---
 
 # Configure certificate based authentication in Exchange 2016
-
- **Summary**: Learn how to configure Exchange 2016 CU1 or later to use certificate based authentication for Outlook on the web and ActiveSync.
   
 Certificate based authentication (CBA) in Exchange allows Outlook on the web (formerly known as Outlook Web App) and Exchange ActiveSync clients to be authenticated by client certificates instead of entering a user name and password.
   
@@ -80,7 +78,7 @@ For detailed syntax and parameter information, see [Install-WindowsFeature](http
     
 2. Select the **owa** virtual directory, and verify **Features View** is selected at the bottom of the page.
     
-3.  In the **IIS** section, double-click **SSL Settings**.
+3. In the **IIS** section, double-click **SSL Settings**.
     
 4. On the **SSL Settings** page, verify **Require SSL** is checked, and select the **Client certificates** value **Require**.
     
@@ -90,7 +88,7 @@ For detailed syntax and parameter information, see [Install-WindowsFeature](http
   
 6. Select the **Microsoft-Server-ActiveSync** virtual directory.
     
-7.  In the **IIS** section, double-click **SSL Settings**.
+7. In the **IIS** section, double-click **SSL Settings**.
     
 8. On the **SSL Settings** page, verify **Require SSL** is checked, and select the **Client certificates** value **Require**.
     
@@ -135,7 +133,7 @@ After you require client certificates for authentication, you need to disable al
     
 2. Select the **owa** virtual directory, and verify **Features View** is selected at the bottom of the page.
     
-3.  In the **Management** section, double-click **Configuration Editor**.
+3. In the **Management** section, double-click **Configuration Editor**.
     
 4. On the **Configuration Editor** page, click the drop down on **Section**, and navigate to **system.webServer** \> **security** \> **authentication** \> **clientCertificateMappingAuthentication**.
 
@@ -147,7 +145,7 @@ After you require client certificates for authentication, you need to disable al
   
 6. Select the **Microsoft-Server-ActiveSync** virtual directory.
     
-7.  In the **Management** section, double-click **Configuration Editor**.
+7. In the **Management** section, double-click **Configuration Editor**.
     
 8. On the **Configuration Editor** page, click the drop down on **Section**, and navigate to **system.webServer** \> **security** \> **authentication** \> **clientCertificateMappingAuthentication**.
     
@@ -185,7 +183,7 @@ If your clients receive errors, you might need to increase the **uploadReadAhead
     
 2. Select the **owa** virtual directory, and verify **Features View** is selected at the bottom of the page.
     
-3.  In the **Management** section, double-click **Configuration Editor**.
+3. In the **Management** section, double-click **Configuration Editor**.
     
 4. On the **Configuration Editor** page, click the drop down on **Section**, and navigate to **systemwebServer** \> **serverRuntime**.
 
@@ -197,7 +195,7 @@ If your clients receive errors, you might need to increase the **uploadReadAhead
   
 6. Select the **Microsoft-Server-ActiveSync** virtual directory.
     
-7.  In the **Management** section, double-click **Configuration Editor**.
+7. In the **Management** section, double-click **Configuration Editor**.
     
 8. On the **Configuration Editor** page, click the drop down on **Section**, and navigate to **systemwebServer** \> **serverRuntime**.
     

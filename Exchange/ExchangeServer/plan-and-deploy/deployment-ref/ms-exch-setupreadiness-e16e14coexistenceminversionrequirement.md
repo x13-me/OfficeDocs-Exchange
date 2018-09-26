@@ -20,5 +20,3 @@ Microsoft Exchange Server 2016 Setup can't continue because it detected one or m
   
 > [!IMPORTANT]
 > After you upgrade your Exchange 2010 Edge Transport servers to Exchange 2010 SP3 RU11, you must **re-create** the Edge subscription between your Exchange organization and each Edge Transport server to update their server version in Active Directory. For more information about re-creating Edge subscriptions in Exchange 2010, see [Managing Edge Subscriptions](https://go.microsoft.com/fwlink/p/?LinkId=269724).
-  
-

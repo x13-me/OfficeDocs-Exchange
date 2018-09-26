@@ -3,20 +3,18 @@ title: "Export messages from queues"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 688b342c-f380-4fe0-afce-7e38cf490627
-description: "Summary: Learn how to export messages from queues in Exchange 2016."
+description: "Summary: Learn how to export messages from queues in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Export messages from queues
 
- **Summary**: Learn how to export messages from queues in Exchange 2016.
-  
-On Mailbox servers and Edge Transport servers in Exchange Server 2016, you can export the messages in a queue to files. The exported messages aren't removed from the queue. Copies of the messages are made in the specified location as a plain text files. You can view the message files in Notepad or Outlook, and you can resubmit the message files by using the Replay directory on any other Mailbox server or Edge Transport server inside or outside your Exchange organization.
+On Mailbox servers and Edge Transport servers in Exchange Server, you can export the messages in a queue to files. The exported messages aren't removed from the queue. Copies of the messages are made in the specified location as a plain text files. You can view the message files in Notepad or Outlook, and you can resubmit the message files by using the Replay directory on any other Mailbox server or Edge Transport server inside or outside your Exchange organization.
   
 ## What do you need to know before you begin?
 

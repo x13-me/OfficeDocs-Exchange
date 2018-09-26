@@ -1,5 +1,5 @@
 ---
-title: "Procedures for DSNs and NDRs in Exchange 2016"
+title: "Procedures for DSNs and NDRs in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -9,14 +9,12 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 23c9d844-6fc7-44c9-a308-587338281611
-description: "Summary: Learn how to view default and custom NDRs, and how to create, modify, and delete custom NDRs in Exchange 2016."
+description: "Summary: Learn how to view default and custom NDRs, and how to create, modify, and delete custom NDRs in Exchange Server 2016 or Exchange Server 2019."
 ---
 
-# Procedures for DSNs and NDRs in Exchange 2016
+# Procedures for DSNs and NDRs in Exchange Server
 
- **Summary**: Learn how to view default and custom NDRs, and how to create, modify, and delete custom NDRs in Exchange 2016.
-  
-Like previous versions of Exchange, Exchange 2016 uses delivery status notifications (also known as DSNs, non-delivery reports, NDRs, or bounce messages) to provide delivery status and failure notification messages to message senders. For more information about NDRs, see [DSNs and NDRs in Exchange 2016](non-delivery-reports-and-bounce-messages.md).
+Like previous versions of Exchange, Exchange Server uses delivery status notifications (also known as DSNs, non-delivery reports, NDRs, or bounce messages) to provide delivery status and failure notification messages to message senders. For more information about NDRs, see [DSNs and NDRs in Exchange Server](non-delivery-reports-and-bounce-messages.md).
   
 You can use the default NDRs that are included in Exchange, or you can use the Exchange Management Shell to create NDRs with custom text to meet the needs of your organization. The custom NDR text replaces the default text for a given enhanced status code or quota event. If you remove the custom NDR, the default NDR text is used (you can't completely remove a default NDR). You can also disable custom NDRs to preserve them, but not use them (the default NDR text is used).
   
@@ -24,7 +22,7 @@ You can use the default NDRs that are included in Exchange, or you can use the E
 
 - Estimated time to complete each procedure: less than 10 minutes.
     
-- The main focus of this topic is custom NDR text that replaces the text of default NDRs that are used by Exchange. You can create new NDRs for other enhanced status code values (for example, 5.999.999), but no one will see these NDRs if the enhanced status code isn't used by Exchange. You can use a range of custom enhanced status codes as part of an action for a transport rule. For more information, see [Mail flow rule actions in Exchange 2016](../../policy-and-compliance/mail-flow-rules/actions.md).
+- The main focus of this topic is custom NDR text that replaces the text of default NDRs that are used by Exchange. You can create new NDRs for other enhanced status code values (for example, 5.999.999), but no one will see these NDRs if the enhanced status code isn't used by Exchange. You can use a range of custom enhanced status codes as part of an action for a transport rule. For more information, see [Mail flow rule actions in Exchange Server](../../policy-and-compliance/mail-flow-rules/actions.md).
     
 - The procedures in this topic are available on Mailbox servers and Edge Transport servers.
     
@@ -239,7 +237,7 @@ You can configure your Exchange organization to send copies of NDRs to the Excha
     
 ### Step 1: Use the Exchange Management Shell to assign a mailbox to the Exchange recipient
 
- **Note**: Due to the high volume of messages, we recommend using a dedicated mailbox for the Exchange recipient. For more information about creating mailboxes, see [Create shared mailboxes in the Exchange admin center](../../collaboration/shared-mailboxes/create-shared-mailboxes.md) and [Create user mailboxes in Exchange 2016](../../recipients/create-user-mailboxes.md).
+ **Note**: Due to the high volume of messages, we recommend using a dedicated mailbox for the Exchange recipient. For more information about creating mailboxes, see [Create shared mailboxes in the Exchange admin center](../../collaboration/shared-mailboxes/create-shared-mailboxes.md) and [Create user mailboxes in Exchange Server](../../recipients/create-user-mailboxes.md).
   
 To assign a mailbox to the Exchange recipient, use this syntax:
   
@@ -275,7 +273,7 @@ Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System
     
 #### Use the EAC to specify the enhanced status codes to monitor
 
-For more information about the EAC, see [Exchange admin center in Exchange 2016](../../architecture/client-access/exchange-admin-center.md).
+For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md).
   
 1. In the EAC, go to **Mail flow** \> **Receive connectors**.
     

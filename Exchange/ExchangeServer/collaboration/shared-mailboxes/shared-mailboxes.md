@@ -3,7 +3,7 @@ title: "Shared mailboxes"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 4/19/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
@@ -14,8 +14,6 @@ description: "Summary: An overview of shared mailboxes."
 
 # Shared mailboxes
 
- **Summary**: An overview of shared mailboxes.
-  
 A shared mailbox is a mailbox that multiple users can use to read and send email messages. Shared mailboxes can also be used to provide a common calendar, allowing multiple users to schedule and view vacation time or work shifts.
   
  **Why set up a shared mailbox?**
@@ -34,7 +32,7 @@ A shared mailbox is a type of user mailbox that doesn't have its own user name a
     
 - **RecipientTypeDetails**: SharedMailbox
     
-In previous version of Exchange, creating a shared mailbox was a multi-step process in which you had to use the Exchange Management Shell to complete some of the tasks. In Exchange 2013, you can use the Exchange admin center (EAC) to create a shared mailbox in one step. For details, see [Create shared mailboxes in the Exchange admin center](create-shared-mailboxes.md). In fact, the EAC has a feature area devoted entirely to shared mailboxes. Just navigate to **Recipients** \> **Shared mailboxes** to view all the management tasks for shared mailboxes.
+In previous version of Exchange, creating a shared mailbox was a multi-step process in which you had to use the Exchange Management Shell to complete some of the tasks. In Exchange 2013 and later, you can use the Exchange admin center (EAC) to create a shared mailbox in one step. For details, see [Create shared mailboxes in the Exchange admin center](create-shared-mailboxes.md). In fact, the EAC has a feature area devoted entirely to shared mailboxes. Just navigate to **Recipients** \> **Shared mailboxes** to view all the management tasks for shared mailboxes.
   
 You can use the following permissions with a shared mailbox.
   
@@ -49,6 +47,6 @@ You can use the following permissions with a shared mailbox.
     
 ## Converting shared mailboxes
 
-In previous versions of Exchange, you could use a regular mailbox as a delegated mailbox. If you have delegated mailboxes, you can use the Exchange Management Shell to convert those delegate mailboxes to shared mailboxes. For details, see [Convert a mailbox in Exchange 2016](../../recipients/user-mailboxes/convert-mailboxes.md).
+In previous versions of Exchange, you could use a regular mailbox as a delegated mailbox. If you have delegated mailboxes, you can use the Exchange Management Shell to convert those delegate mailboxes to shared mailboxes. For details, see [Convert a mailbox in Exchange Server](../../recipients/user-mailboxes/convert-mailboxes.md).
   
 

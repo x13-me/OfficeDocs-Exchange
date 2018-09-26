@@ -3,19 +3,17 @@ title: "Message tracking"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: bada2ea7-6d7c-4630-b7f1-67f56818f0ff
-description: "Summary: Learn about message tracking and the message tracking log in Exchange 2016."
+description: "Summary: Learn about message tracking and the message tracking log in Exchange Server 2016 and Exchange Server 2019."
 ---
 
 # Message tracking
 
- **Summary**: Learn about message tracking and the message tracking log in Exchange 2016.
-  
 The message tracking log is a detailed record of all activity as mail flows through the transport pipeline on Mailbox servers and Edge Transport servers. You can use message tracking for message forensics, mail flow analysis, reporting, and troubleshooting.
   
 By default, Exchange uses circular logging to limit the message tracking log based on file size and file age to help control the hard disk space that's used by the log files. To configure the message tracking log, see [Configure message tracking](configure-message-tracking.md).
@@ -133,7 +131,7 @@ Various event types in the **event-id** field are used to classify the message e
 |**DUPLICATEREDIRECT** <br/> |An alternate recipient for the message was already a recipient.  <br/> |
 |**EXPAND** <br/> |A distribution group was expanded.  <br/> |
 |**FAIL** <br/> |Message delivery failed. Sources include **SMTP**, **DNS**, **QUEUE**, and **ROUTING**.  <br/> |
-|**HADISCARD** <br/> |A shadow message was discarded after the primary copy was delivered to the next hop. For more information, see [Shadow redundancy in Exchange 2016](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |
+|**HADISCARD** <br/> |A shadow message was discarded after the primary copy was delivered to the next hop. For more information, see [Shadow redundancy in Exchange Server](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |
 |**HARECEIVE** <br/> |A shadow message was received by the server in the local database availability group (DAG) or Active Directory site.  <br/> |
 |**HAREDIRECT** <br/> |A shadow message was created.  <br/> |
 |**HAREDIRECTFAIL** <br/> |A shadow message failed to be created. The details are stored in the **source-context** field.  <br/> |
@@ -151,7 +149,7 @@ Various event types in the **event-id** field are used to classify the message e
 |**RECEIVE** <br/> |A message was received by the SMTP receive component of the transport service or from the Pickup or Replay directories (source: `SMTP`), or a message was submitted from a mailbox to the Mailbox Transport Submission service (source: `STOREDRIVER`).  <br/> |
 |**REDIRECT** <br/> |A message was redirected to an alternative recipient after an Active Directory lookup.  <br/> |
 |**RESOLVE** <br/> |A message's recipients were resolved to a different email address after an Active Directory lookup.  <br/> |
-|**RESUBMIT** <br/> |A message was automatically resubmitted from Safety Net. For more information, see [Safety Net in Exchange 2016](../../mail-flow/transport-high-availability/safety-net.md).  <br/> |
+|**RESUBMIT** <br/> |A message was automatically resubmitted from Safety Net. For more information, see [Safety Net in Exchange Server](../../mail-flow/transport-high-availability/safety-net.md).  <br/> |
 |**RESUBMITDEFER** <br/> |A message resubmitted from Safety Net was deferred.  <br/> |
 |**RESUBMITFAIL** <br/> |A message resubmitted from Safety Net failed.  <br/> |
 |**SEND** <br/> |A message was sent by SMTP between transport services.  <br/> |
@@ -183,9 +181,9 @@ The values in the **source** field in the message tracking log indicate the tran
 |**POISONMESSAGE** <br/> |The event source was the poison message identifier. For more information about poison messages and the poison message queue, see [Queues and messages in queues](../../mail-flow/queues/queues.md) <br/> |
 |**PUBLICFOLDER** <br/> |The event source was a mail-enabled public folder.  <br/> |
 |**QUEUE** <br/> |The event source was a queue.  <br/> |
-|**REDUNDANCY** <br/> |The event source was Shadow Redundancy. For more information, see [Shadow redundancy in Exchange 2016](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |
+|**REDUNDANCY** <br/> |The event source was Shadow Redundancy. For more information, see [Shadow redundancy in Exchange Server](../../mail-flow/transport-high-availability/shadow-redundancy.md).  <br/> |
 |**ROUTING** <br/> |The event source was the routing resolution component of the categorizer in the Transport service.  <br/> |
-|**SAFETYNET** <br/> |The event source was Safety Net. For more information, see [Safety Net in Exchange 2016](../../mail-flow/transport-high-availability/safety-net.md).  <br/> |
+|**SAFETYNET** <br/> |The event source was Safety Net. For more information, see [Safety Net in Exchange Server](../../mail-flow/transport-high-availability/safety-net.md).  <br/> |
 |**SMTP** <br/> |The message was submitted by the SMTP send or SMTP receive component of the transport service.  <br/> |
 |**STOREDRIVER** <br/> |The event source was a MAPI submission from a mailbox on the local server.  <br/> |
    

@@ -25,15 +25,11 @@ Microsoft Exchange Server 2016 Setup can't continue because it detected an incom
   
 |**Component**|**Requirement**|
 |:-----|:-----|
-|Mailbox and Edge Transport server roles  <br/> |Windows Server 2016 Standard or Datacenter<sup>\*</sup> <br/> Windows Server 2012 R2 Standard or Datacenter  <br/> Windows Server 2012 Standard or Datacenter  <br/> |
-|Management tools  <br/> |One of the following:  <br/> Windows Server 2016 Standard or Datacenter<sup>\*</sup> <br/> Windows Server 2012 R2 Standard or Datacenter  <br/> Windows Server 2012 Standard or Datacenter  <br/> 64-bit edition of Windows 10  <br/> 64-bit edition of Windows 8.1  <br/> |
+|Mailbox and Edge Transport server roles|Windows Server 2016 Standard or Datacenter<sup>\*</sup> <br/> Windows Server 2012 R2 Standard or Datacenter <br/> Windows Server 2012 Standard or Datacenter|
+|Management tools|One of the following: <br/>• Windows Server 2016 Standard or Datacenter<sup>\*</sup> <br/>• Windows Server 2012 R2 Standard or Datacenter <br/>• Windows Server 2012 Standard or Datacenter <br/>• 64-bit edition of Windows 10 <br/>• 64-bit edition of Windows 8.1|
    
 <sup>\*</sup> Requires Exchange Server 2016 Cumulative Update 3 or later.
   
-For more information, see [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md).
+For more information, see [Exchange Server system requirements](../../plan-and-deploy/system-requirements.md).
   
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-  
-
-  
-
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

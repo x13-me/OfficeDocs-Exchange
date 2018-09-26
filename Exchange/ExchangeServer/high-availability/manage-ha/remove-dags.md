@@ -3,19 +3,17 @@ title: "Remove a database availability group"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 071296e9-31b0-40f4-9a02-177d97486ebd
-description: "Summary: How to remove a database availability group (DAG) in Exchange 2016."
+description: "Summary: How to remove a database availability group (DAG) in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Remove a database availability group
 
- **Summary**: How to remove a database availability group (DAG) in Exchange 2016.
-  
 Removing a DAG is a quick and easy task. You can use the EAC or the Exchange Management Shell to remove a DAG.
   
 Looking for other management tasks related to DAGs? Check out [Managing database availability groups](http://technet.microsoft.com/library/4abde67b-4995-4a57-894f-ba76aa72341c.aspx).

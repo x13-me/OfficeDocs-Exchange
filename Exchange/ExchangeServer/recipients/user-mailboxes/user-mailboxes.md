@@ -3,7 +3,7 @@ title: "Manage user mailboxes"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/12/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -14,8 +14,6 @@ description: "Summary: How to use the Exchange admin center (EAC) or Exchange Ma
 
 # Manage user mailboxes
 
- **Summary**: How to use the Exchange admin center (EAC) or Exchange Management Shell to make changes to user mailboxes.
-  
 After you create a user mailbox, you can make changes and set additional properties by using the EAC or the Exchange Management Shell.
   
 You can also change properties for multiple user mailboxes at the same time. For more information, see [Bulk edit user mailboxes](#bulkedit.md).
@@ -152,14 +150,14 @@ Use the **Email Address** section to view or change the email addresses associat
     
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
     
-  - **EUM**: An EUM (Exchange Unified Messaging) address is used by the Microsoft Exchange Unified Messaging service to locate UM-enabled users within an Exchange organization. EUM addresses consist of the extension number and the UM dial plan for the UM-enabled user. Click this button and type the extension number in the **Address/Extension** box. Then click **Browse** and select a dial plan for the user.
+  - **EUM**: An EUM (Exchange Unified Messaging) address is used by the Microsoft Exchange Unified Messaging service in Exchange 2016 to locate UM-enabled users within an Exchange organization. EUM addresses consist of the extension number and the UM dial plan for the UM-enabled user. Click this button and type the extension number in the **Address/Extension** box. Then click **Browse** and select a dial plan for the user. (**Note**: Unified Messaging is not available in Exchange 2019.)
     
   - **Custom address type**: Click this button and type one of the supported non-SMTP email address types in the **\* Email address** box.
     
     > [!NOTE]
     > With the exception of X.400 addresses, Exchange doesn't validate custom addresses for proper formatting. You must make sure that the custom address you specify complies with the format requirements for that address type.
   
-  - **Make this the reply address**: In Exchange Online, you can select this check box to make the new email address the primary SMTP address for the mailbox. This check box isn't available in the EAC in Exchange 2016.
+  - **Make this the reply address**: In Exchange Online, you can select this check box to make the new email address the primary SMTP address for the mailbox. This check box isn't available in the EAC in Exchange Server.
     
 - **Automatically update email addresses based on the email address policy applied to this recipient**: Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization. This box is selected by default.
     
@@ -176,7 +174,7 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
     
 - **Address book policy**: This box shows the address book policy applied to the mailbox. An address book policy allows you to segment users into specific groups to provide customized views of the address book. To apply or change the address book policy applied to the mailbox, select one from the drop-down list.
     
-- **Unified Messaging**: This feature is disabled by default. When you enable Unified Messaging (UM), the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a User for Unified Messaging](http://technet.microsoft.com/library/ad027767-5e14-4cb1-9f8a-0791d9188db5.aspx).
+- **Unified Messaging**: This feature is disabled by default. When you enable Unified Messaging (UM) in Exchange 2016, the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a User for Unified Messaging](http://technet.microsoft.com/library/ad027767-5e14-4cb1-9f8a-0791d9188db5.aspx). (**Note**: Unified Messaging is not available in Exchange 2019.)
     
     > [!NOTE]
     > A UM dial plan and a UM mailbox policy must exist before you can enable UM.

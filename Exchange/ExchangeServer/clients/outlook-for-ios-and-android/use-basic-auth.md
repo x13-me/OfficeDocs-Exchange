@@ -4,22 +4,20 @@ ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 4a124605-5824-472b-9865-3452c689be6d
-description: "Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android in an Exchange 2016 on-premises environment when the app uses Basic authentication."
+description: "Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android in an Exchange Server 2016 or Exchange Server 2019 on-premises environment when the app uses Basic authentication."
 ---
 
 # Using Basic authentication with Outlook for iOS and Android
 
- **Summary**: This article contains architectural and security information for administrators about Outlook for iOS and Android in an Exchange 2016 on-premises environment when the app uses Basic authentication.
-  
 The Outlook app for iOS and Android is designed to bring together email, calendar, contacts, and other files, enabling users in your organization to do more from their mobile devices. This article provides an overview of the architecture and the storage design of the app, so that Exchange administrators can deploy and maintain Outlook for iOS and Android in their Exchange organizations.
   
-Note that this article is about using the app in an Exchange 2016 environment. For more information about using hybrid Modern Authentication for on-premises mailboxes with the app, see [Using hybrid Modern Authentication with Outlook for iOS and Android](use-hybrid-modern-auth.md). For information about using the app with Exchange Online, see [Outlook for iOS and Android in Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=845477).
+Note that this article is about using the app in an Exchange 2016 or Exchange 2019 environment. For more information about using hybrid Modern Authentication for on-premises mailboxes with the app, see [Using hybrid Modern Authentication with Outlook for iOS and Android](use-hybrid-modern-auth.md). For information about using the app with Exchange Online, see [Outlook for iOS and Android in Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=845477).
   
 ## Outlook for iOS and Android architecture
 
@@ -65,7 +63,7 @@ You have three options for removing your information from the Outlook service.
     
 - Option 3: Have each user remove their account from the Outlook app, and then delete the app from their mobile devices. To remove an account, have users follow these steps:
     
-1.  In the Outlook app, in **Settings**, tap **Account Settings**.
+1. In the Outlook app, in **Settings**, tap **Account Settings**.
     
 2. Tap **Select an Account**, and then, with the account selected, tap **Remove Account**.
     

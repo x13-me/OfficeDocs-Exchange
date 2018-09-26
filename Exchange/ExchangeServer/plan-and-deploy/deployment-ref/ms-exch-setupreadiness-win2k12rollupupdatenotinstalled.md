@@ -27,8 +27,4 @@ Download and install the 64-bit update from the following URL, and then click **
   
 Microsoft Knowledge Base article KB2822241, [ Windows 8 and Windows Server 2012 update rollup: April 2013 ](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2822241)
   
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-  
-
-  
-
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

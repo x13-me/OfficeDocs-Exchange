@@ -1,9 +1,9 @@
 ---
-title: "Procedures for email address policies in Exchange 2016"
+title: "Procedures for email address policies in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -11,26 +11,24 @@ f1_keywords:
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: eb2bf42e-2058-4e17-85d5-97546433b40a
-description: "Summary: Learn how to create, modify, remove, and apply email address policies in Exchange 2016."
+description: "Summary: Learn how to create, modify, remove, and apply email address policies in Exchange Server 2016 and Exchange Server 2019."
 ---
 
-# Procedures for email address policies in Exchange 2016
+# Procedures for email address policies in Exchange Server
 
- **Summary**: Learn how to create, modify, remove, and apply email address policies in Exchange 2016.
+Email address policies assign email addresses to recipients in your Exchange organization. You use the Exchange admin center (EAC) or the Exchange Management Shell to configure email address policies in Exchange Server.
   
-Email address policies assign email addresses to recipients in your Exchange organization. You use the Exchange admin center (EAC) or the Exchange Management Shell to configure email address policies in Exchange Server 2016.
-  
-For more information about email address policies, see [Email address policies in Exchange 2016](email-address-policies.md).
+For more information about email address policies, see [Email address policies in Exchange Server](email-address-policies.md).
   
 ## What do you need to know before begin?
 
 - Estimated time to complete each procedure: 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Email address policies" entry in the [Email addresses and address books in Exchange 2016](../../email-addresses-and-address-books/email-addresses-and-address-books.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Email address policies" entry in the [Email addresses and address books in Exchange Server](../../email-addresses-and-address-books/email-addresses-and-address-books.md) topic.
     
 - The procedures in this topic primarily focus on SMTP email addresses in email address policies, but other address types are available. For more information, see .[Address types](email-address-policies.md#AddressType)
     
-- Before you can use an SMTP domain in an email address policy, you need to configure the domain as an accepted domain (specifically, an authoritative domain or internal relay domain). For more information, see [Accepted domains in Exchange 2016](../../mail-flow/accepted-domains/accepted-domains.md).
+- Before you can use an SMTP domain in an email address policy, you need to configure the domain as an accepted domain (specifically, an authoritative domain or internal relay domain). For more information, see [Accepted domains in Exchange Server](../../mail-flow/accepted-domains/accepted-domains.md).
     
 - To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     

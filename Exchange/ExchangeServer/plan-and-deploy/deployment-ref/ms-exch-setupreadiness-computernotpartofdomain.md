@@ -1,9 +1,9 @@
 ---
 title: "The local computer isn't joined to an Active Directory domain [ComputerNotPartofDomain]"
-ms.author: dstrome
-author: dstrome
+ms.author: chrisda
+author: chrisda
 manager: serdars
-ms.date: 7/22/2015
+ms.date: 8/2/2018
 ms.audience: ITPro
 ms.topic: reference
 f1_keywords:
@@ -11,13 +11,13 @@ f1_keywords:
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: feb08845-6d44-4760-9932-6eca22f35eec
-description: "Microsoft Exchange Server 2016 Setup can't continue because it detected that the local computer isn't a member of an Active Directory domain. You must join the local computer to an Active Directory domain before you can install Exchange 2016. You may also see this message if you log into a local user account on the computer instead of a domain user account with sufficient administrative rights to install Exchange 2016."
+description: "Exchange Server 2016 or Exchange 2019 Setup can't continue because the target computer isn't a member of an Active Directory domain."
 ---
 
 # The local computer isn't joined to an Active Directory domain [ComputerNotPartofDomain]
 
-Microsoft Exchange Server 2016 Setup can't continue because it detected that the local computer isn't a member of an Active Directory domain. You must join the local computer to an Active Directory domain before you can install Exchange 2016. You may also see this message if you log into a local user account on the computer instead of a domain user account with sufficient administrative rights to install Exchange 2016.
+Exchange Setup can't continue because it detected that the target server isn't a member of an Active Directory domain. You need to join the target server to an Active Directory domain before you can install the Mailbox server role. You might also see this message if you're using a local computer account instead of a domain user account (with the required permissions) to install Exchange.
   
-For more information, see [Exchange 2016 system requirements](../../plan-and-deploy/system-requirements.md).
+For more information, see [Exchange Server system requirements](../system-requirements.md)
   
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

@@ -1,22 +1,20 @@
 ---
-title: "Information Rights Management in Exchange 2016"
+title: "Information Rights Management in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6ea3a695-3ddd-4d53-b3c6-90041f44ef64
-description: "Summary: Learn how administrators can use Information Rights Management (IRM) in Exchange 2016 to help prevent the disclosure of sensitive information."
+description: "Summary: Learn how administrators can use Information Rights Management (IRM) in Exchange Server 2016 and Exchange Server 2019 to help prevent the disclosure of sensitive information."
 ---
 
-# Information Rights Management in Exchange 2016
+# Information Rights Management in Exchange Server
 
- **Summary**: Learn how administrators can use Information Rights Management (IRM) in Exchange 2016 to help prevent the disclosure of sensitive information.
-
-Every day, people use email to exchange sensitive information, such as confidential information or reports. Because email is accessible from just about anywhere, mailboxes have transformed into repositories that contain large amounts of potentially sensitive information. As a result, information leakage can be a serious threat to organizations. To help prevent information leakage, Exchange 2016 includes Information Rights Management (IRM) features, which provide persistent online and offline protection for email messages and attachments. These IRM features are basically unchanged from Exchange 2013.
+Every day, people use email to exchange sensitive information, such as confidential information or reports. Because email is accessible from just about anywhere, mailboxes have transformed into repositories that contain large amounts of potentially sensitive information. As a result, information leakage can be a serious threat to organizations. To help prevent information leakage, Exchange Server includes Information Rights Management (IRM) features, which provide persistent online and offline protection for email messages and attachments. These IRM features are basically unchanged from Exchange 2013.
 
 ## What is information leakage?
 
@@ -149,7 +147,7 @@ For more information about transport agents, see [Transport Agents](http://techn
 ## IRM requirements
 <a name="reqs"> </a>
 
-By default, an Exchange organization is enabled for IRM. To actually implement IRM in your Exchange 2016 organization, your deployment must meet the requirements that are described in this table.
+By default, an Exchange organization is enabled for IRM. To actually implement IRM in your Exchange Server organization, your deployment must meet the requirements that are described in this table.
 
 |**Server**|**Requirements**|
 |:-----|:-----|

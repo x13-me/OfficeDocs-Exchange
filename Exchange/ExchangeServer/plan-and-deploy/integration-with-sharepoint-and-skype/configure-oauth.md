@@ -15,8 +15,6 @@ description: "Summary: Learn how to use the Open Authorization (OAuth) authentic
 
 # Configure OAuth authentication with SharePoint 2013 and Lync 2013
 
- **Summary**: Learn how to use the Open Authorization (OAuth) authentication protocol to authenticate applications to Exchange. The other applications need to be configured as partner applications in Exchange 2016.
-  
 Exchange 2016 supports partner applications such as SharePoint Server 2016 and Skype for Business Server 2015 by using OAuth configuration with the script, `Configure-EnterpriseApplication.ps1`. You can automate the task using the script to more easily configure authentication with partner applications and reduce configuration errors. The script performs the following tasks:
   
 1. Configures an Enterprise partner application that self-issues OAuth tokens to successfully authenticate to Exchange.
