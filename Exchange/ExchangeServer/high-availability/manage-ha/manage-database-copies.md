@@ -205,7 +205,9 @@ Truncation behavior is different when loose truncation and circular logging are 
     
 When the offline database is brought back online, it will be missing log files that have been deleted from the other healthy copies, and its database copy status will be FailedAndSuspended. In this event, if Autoreseed is configured, the affected copy will be automatically reseeded. If Autoreseed is not configured, the database copy will need to be manually seeded by an administrator.
 
-If circular logging is disabled, Loose Truncation respects backups if they have been taken, so if logs have not been backed up they will not be removed by Loose Truncation. Loose Truncation is a recommended feature for preferred architecture where backups are not used and circular logging is enabled.
+If circular logging is disabled, loose truncation respects backups if they have been taken, so if logs have not been backed up they will not be removed by loose Truncation. 
+
+truncation is a recommended feature for preferred architecture where backups are not used and circular logging is enabled.
   
 The required number of healthy copies, the free disk space threshold, and the number of logs to keep are all configurable parameters. By default, the free disk space threshold is 204800 MB (200 GB), and the number of logs to keep is 100,000 (100 GB) for passive copies, and 10,000 (10 GB) for active copies.
   
