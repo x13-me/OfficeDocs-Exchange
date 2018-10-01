@@ -42,7 +42,7 @@
 #### [AD Schema changes in Exchange Server](../plan-and-deploy/active-directory/ad-schema-changes.md)
 #### [AD Changes](../plan-and-deploy/active-directory/ad-changes.md)
 ### [Prepare AD and domains](../plan-and-deploy/prepare-ad-and-domains.md)
-### [Updates in Exchange Server](../plan-and-deploy/updates.md)
+### [Updates for Exchange Server](../new-features/updates.md)
 ### [Deploy new installations](../plan-and-deploy/deploy-new-installations/deploy-new-installations.md)
 #### [Install Mailbox role](../plan-and-deploy/deploy-new-installations/install-mailbox-role.md)
 #### [Install Edge Transport role](../plan-and-deploy/deploy-new-installations/install-edge-transport-role.md)

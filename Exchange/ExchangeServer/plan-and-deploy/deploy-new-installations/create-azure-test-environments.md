@@ -325,7 +325,7 @@ In this phase, you configure Exchange on exVM and test mail delivery between two
     
 7. Click **I have read and accept the license terms**, and then click **Install**. On the **Installation is Complete** page, click **Finish**.
     
-8. From Internet Explorer, download the latest version of Exchange. For more information, see [Updates for Exchange Server](../updates.md).
+8. From Internet Explorer, download the latest version of Exchange. For more information, see [Updates for Exchange Server](../../new-features/updates.md).
     
 9. Click **Save** to store the ISO file in the Downloads folder.
     
