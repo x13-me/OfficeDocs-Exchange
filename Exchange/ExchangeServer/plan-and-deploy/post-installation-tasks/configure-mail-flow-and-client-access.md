@@ -84,7 +84,7 @@ Before clients can connect to your new server from the internet, you need to con
   
     2. In the **Select a server** dialog that opens, select the Mailbox server you want to configure and then click **Add**. After you've added all of the Mailbox servers that you want to configure, click **OK**.
     
-    3. **Enter the domain name you will use with your external Mailbox servers**: Enter the external domain that you want to apply (for example, mail.contoso.com). When you're finshed, lick **Save**.
+    3. **Enter the domain name you will use with your external Mailbox servers**: Enter the external domain that you want to apply (for example, mail.contoso.com). When you're finished, click **Save**.
 
 Some organizations use a unique Outlook on the web FQDN to protect against future changes to the underlying server FQDN. Many organizations use owa.contoso.com for their Outlook on the web FQDN instead of mail.contoso.com. If you want to configure a unique Outlook on the web FQDN, do the following steps. This checklist assumes you have configured a unique Outlook on the web FQDN.
     
@@ -239,7 +239,7 @@ To verify that you have successfully configured your private DNS records, do the
     
 3. The virtual directory properties window opens. In the **Internal URL** field, replace the existing host name value in the URL (likely, the FQDN of the Mailbox server) with the new value that you want to use (for example, internal.contoso.com).
 
-  For example, in the properties of the Exchange Web Services (EWS) virtual directory, change the exsisting value from https://**Mailbox01.corp.contoso.com**/ews/exchange.asmx to https://**internal.contoso.com**/ews/exchange.asmx.
+  For example, in the properties of the Exchange Web Services (EWS) virtual directory, change the existing value from https://**Mailbox01.corp.contoso.com**/ews/exchange.asmx to https://**internal.contoso.com**/ews/exchange.asmx.
     
   When you're finsihed, click **Save**.
     
