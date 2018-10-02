@@ -1,5 +1,5 @@
 ---
-title: "Exchange 2010 servers must be upgraded to SP3 RU11 or later [E16E14CoexistenceMinVersionRequirement]"
+title: "Exchange 2010 SP3 RU11 or later is required for coexistence with Exchange 2016 [E16E14CoexistenceMinVersionRequirement]"
 ms.author: dstrome
 author: dstrome
 manager: serdars
@@ -11,12 +11,13 @@ f1_keywords:
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 24d16ace-249f-4c74-b617-3b0242e5aeca
-description: "Microsoft Exchange Server 2016 Setup can't continue because it detected one or more Microsoft Exchange Server 2010 servers haven't been upgraded to Service Pack 3 (SP3) for Exchange Server 2010. Before you can install Exchange 2016, all Exchange 2010 servers in your organization must be upgraded to Exchange 2010 SP3 Update Rollup 11 (RU11) or later. This requirement includes Exchange 2010 Edge Transport servers."
+description: "Setup can't continue because the organization contains one or more Exchange 2010 servers that aren't running the minimum required version of Exchange."
+monikerRange: "exchserver-2016"
 ---
 
-# Exchange 2010 servers must be upgraded to SP3 RU11 or later [E16E14CoexistenceMinVersionRequirement]
+# Exchange 2010 SP3 RU11 or later is required for coexistence with Exchange 2016 [E16E14CoexistenceMinVersionRequirement]
 
-Microsoft Exchange Server 2016 Setup can't continue because it detected one or more Microsoft Exchange Server 2010 servers haven't been upgraded to Service Pack 3 (SP3) for Exchange Server 2010. Before you can install Exchange 2016, all Exchange 2010 servers in your organization must be upgraded to Exchange 2010 SP3 Update Rollup 11 (RU11) or later. This requirement includes Exchange 2010 Edge Transport servers.
+The installation of Exchange Server 2016 can't continue because Setup found one or more Exchange 2010 servers that aren't running the minimum required version of Exchange 2010. Before you can install Exchange 2016 in your organization, all Exchange 2010 servers in the forest need to be running Exchange 2010 Service Pack 3 (SP3) and Update Rollup 11 (RU11) or later. This requirement includes Exchange 2010 Edge Transport servers.
   
 > [!IMPORTANT]
-> After you upgrade your Exchange 2010 Edge Transport servers to Exchange 2010 SP3 RU11, you must **re-create** the Edge subscription between your Exchange organization and each Edge Transport server to update their server version in Active Directory. For more information about re-creating Edge subscriptions in Exchange 2010, see [Managing Edge Subscriptions](https://go.microsoft.com/fwlink/p/?LinkId=269724).
+> After you upgrade your Exchange 2010 Edge Transport servers to Exchange 2010 SP3 RU11 or later, you need to **re-create** the Edge subscription between your Exchange organization and each Edge Transport server (to update the Edge Transport server's Exchange version in Active Directory). For more information about re-creating Edge subscriptions in Exchange 2010, see [Managing Edge Subscriptions](https://go.microsoft.com/fwlink/p/?LinkId=269724).

@@ -12,6 +12,7 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 45f45976-62ac-4b6c-889a-ebd449402009
 description: "Exchange Server 2016 Setup can't continue because the Active Directory forest functional level isn't Windows Server 2003 native or later."
+monikerRange: "exchserver-2016"
 ---
 
 # Active Directory functional level isn't Windows Server 2003 or later [ForestLevelNotWin2003Native]
