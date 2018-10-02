@@ -42,7 +42,7 @@ For details about what's happening when Active Directory is being prepared for E
 
 - The computer that you use for all procedures in this topic requires access to Setup.exe in the Exchange installation files:
 
-    1. Download the latest version of Exchange. For more information, see [Updates for Exchange Server](updates.md).
+    1. Download the latest version of Exchange. For more information, see [Updates for Exchange Server](../new-features/updates.md).
     
     2. In File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. Note the virtual DVD drive letter that's assigned.
 
@@ -206,11 +206,11 @@ To verify that you successfully prepared Active Directory and domains for Exchan
 
 The tables in the following sections contain the Exchange objects in Active Directory that are updated each time you install a new version of Exchange (a new installation or a CU). You can compare the object versions you see with the values in the tables to verify that Exchange successfully updated Active Directory during the installation.
 
-- **rangeUpper** is located in the **Schema** naming context in the **ms-Exch-Schema-Version-Pt** container.
+- **rangeUpper** is located in the **Schema** naming context in the properties of the **ms-Exch-Schema-Version-Pt** container.
 
-- **objectVersion (Default)** is the **objectVersion** attribute located in the **Default** naming context in the **Microsoft Exchange System Objects** container.
+- **objectVersion (Default)** is the **objectVersion** attribute located in the **Default naming context** in the properties of the **Microsoft Exchange System Objects** container.
 
-- **objectVersion (Configuration)** is the **objectVersion** attribute located in the **Configuration** naming context in the **CN=\<_your organization_\>, CN=Microsoft Exchange, CN=Services, CN=Configuration, DC=\<_domain_\>** container.
+- **objectVersion (Configuration)** is the **objectVersion** attribute located in the **Configuration** naming context in **Services** \> **Microsoft Exchange** in the properties of the **\<Your Exchange Organization Name\>** container.
 
 ::: moniker range="exchserver-2019"
 ### Exchange 2019 Active Directory versions
@@ -226,6 +226,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |**Exchange 2016 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
+|Exchange 2016 CU11|15332|13236|16214|
 |Exchange 2016 CU10|15332|13236|16213|
 |Exchange 2016 CU9|15332|13236|16213|
 |Exchange 2016 CU8|15332|13236|16213|

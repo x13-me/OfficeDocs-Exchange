@@ -36,7 +36,7 @@ If you need to re-create one of more of these arbitration mailboxes, see the ins
 
 - The computer that you use to run Setup.exe /PrepareAD requires access to Setup.exe in the Exchange installation files:
 
-    1. Use your most recently downloaded copy of the Exchange ISO image file, or download an updated copy from  [Updates for Exchange Server](../../plan-and-deploy/updates.md).
+    1. Use your most recently downloaded copy of the Exchange ISO image file, or download an updated copy from [Updates for Exchange Server](../../new-features/updates.md).
     
     2. In File Explorer, right-click on the Exchange ISO image file and then select **Mount**. Note the virtual DVD drive letter that's assigned.
 

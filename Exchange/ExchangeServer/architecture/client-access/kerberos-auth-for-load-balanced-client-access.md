@@ -314,7 +314,7 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
     Where \<SPN\> is the SPN you want to associate with the ASA credential and \<Account\> is the account associated with the ASA credential. For example:
     
   ```
-  setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2016ASAXCH2016ASA$
+  setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2016ASA$
   ```
 
     Run this command one time for each SPN that you want to associate with the ASA credential.
@@ -332,7 +332,7 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
     Where \<Account\> is the account associated with the ASA credential. For example:
     
   ```
-  setspn -L tailspin\EXCH2016ASAXCH2016ASA$
+  setspn -L tailspin\EXCH2016ASA$
   ```
 
     You have to run this command only one time.
