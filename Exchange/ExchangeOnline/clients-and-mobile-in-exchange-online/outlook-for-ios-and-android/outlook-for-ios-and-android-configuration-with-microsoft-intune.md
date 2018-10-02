@@ -28,7 +28,9 @@ Outlook for iOS and Android supports the following configuration scenarios:
 Each configuration scenario will highlight its specific requirements; for example, whether the configuration scenario requires device enrollment, and thus work with any MDM provider, or requires Intune App Protection Policies.
  
 ## Account setup configuration settings
-Outlook for iOS and Android offers administrators the ability to "push" account configurations to their Office 365 users. This capability only works with enrolled devices, however, it is supported with any MDM provider. If you are not using Intune, you will need to consult with your MDM documentation on how to deploy these settings.
+Outlook for iOS and Android offers administrators the ability to "push" account configurations to their Office 365 users. This capability only works with enrolled devices, however, it is supported with any MDM provider. If you are not using Intune, you will need to consult with your MDM documentation on how to deploy these settings. 
+
+For more information on account setup configuration, see [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#account-setup-configuration-via-enterprise-mobility-management).
 
 |**Key**|**Value**|**Device Enrollment Type**|
 |:-----|:-----|:-----|
@@ -36,8 +38,10 @@ Outlook for iOS and Android offers administrators the ability to "push" account 
 |com.microsoft.outlook.EmailProfile.EmailUPN  <br/> |This value specifies the User Principal Name or username for the email profile that will be used to authenticate the account.  <br/> **Value type**: String  <br/> **Accepted values**: UPN Address or username  <br/> **Default if not specified**: \<blank\>  <br/>**Required**: Yes  <br/> **Example**: userupn@companyname.com  <br/> **Intune Token**<sup>*</sup>: {{userprincipalname}}  <br/> |Managed devices  <br/> |
 |com.microsoft.outlook.EmailProfile.AccountType  <br/> |This value specifies the account type being configured based on the authentication model.  <br/> **Value type**: String  <br/> **Accepted values**: ModernAuth  <br/> **Required**: Yes  <br/> **Example**: ModernAuth  <br/> |Managed devices  <br/> |
 
-## Organization allowed account mode settings
+## Organization allowed accounts mode settings
 Outlook for iOS and Android offers administrators the ability to restrict email and storage provider accounts to only corporate accounts. This capability only works with enrolled devices, however, it is supported with any MDM provider. If you are not using Intune, you will need to consult with your MDM documentation on how to deploy these settings.
+
+For more information on organization allowed accounts mode, please see [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#organization-allowed-accounts-mode).
 
 |**Key**|**Value**|**Platform**|**Device Enrollment Type**|
 |:-----|:-----|:-----|:-----|
