@@ -1,4 +1,6 @@
 **Active Sync Mailbox Policy**
+|:-----|:-----|
+
 The following attributes of Active Sync Mailbox Policy are copied from an on-premises Exchange organization to Exchange Online when the Organization Configuration Transfer option is selected in the Hybrid Configuration Wizard.
   
 |**ActiveSyncMailboxPolicy**|**Available In**|
