@@ -30,7 +30,7 @@ Each configuration scenario will highlight its specific requirements; for exampl
 ## Account setup configuration settings
 Outlook for iOS and Android offers administrators the ability to "push" account configurations to their Office 365 users. This capability only works with enrolled devices, however, it is supported with any MDM provider. If you are not using Intune, you will need to consult with your MDM documentation on how to deploy these settings. 
 
-For more information on account setup configuration, please see [https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#account-setup-configuration-via-enterprise-mobility-management](Account setup with modern authentication in Exchange Online).
+For more information on account setup configuration, see [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#account-setup-configuration-via-enterprise-mobility-management).
 
 |**Key**|**Value**|**Device Enrollment Type**|
 |:-----|:-----|:-----|
@@ -41,7 +41,7 @@ For more information on account setup configuration, please see [https://docs.mi
 ## Organization allowed accounts mode settings
 Outlook for iOS and Android offers administrators the ability to restrict email and storage provider accounts to only corporate accounts. This capability only works with enrolled devices, however, it is supported with any MDM provider. If you are not using Intune, you will need to consult with your MDM documentation on how to deploy these settings.
 
-For more information on organization allowed accounts mode, please see [https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#organization-allowed-accounts-mode](Account setup with modern authentication in Exchange Online).
+For more information on organization allowed accounts mode, please see [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#organization-allowed-accounts-mode).
 
 |**Key**|**Value**|**Platform**|**Device Enrollment Type**|
 |:-----|:-----|:-----|:-----|

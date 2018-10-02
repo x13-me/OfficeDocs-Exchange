@@ -11,6 +11,7 @@ localization_priority: Critical
 ms.collection: Strat_EX_Admin
 ms.assetid: 
 description: "Summary: Learn about the Windows operating system prerequisites for Exchange Server 2016 and Exchange Server 2019 and the Exchange Management Tools."
+monikerRange: "exchserver-2016 || exchserver-2019"
 ---
 
 # Exchange Server prerequisites
