@@ -1,4 +1,5 @@
  **OWA Mailbox Policy**
+ 
 The following attributes of OWA MAilbox Policy are copied from an on-premises Exchange organization to Exchange Online when the Organization Configuration Transfer option is selected in the Hybrid Configuration Wizard.
 |||
 |:-----|:-----|
