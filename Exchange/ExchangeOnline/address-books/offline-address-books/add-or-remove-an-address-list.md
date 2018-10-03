@@ -3,7 +3,7 @@ title: "Add an address list to or remove an address list from an offline address
 ms.author: kwekua
 author: kwekua
 manager: scotv
-ms.date: 12/16/2014
+ms.date: 10/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -26,7 +26,7 @@ For additional management tasks related to OABs, see [Offline address book proce
     
 - By default in Exchange Online, the Address List role isn't assigned to any role groups. To use any cmdlets that require the Address List role, you need to add the role to a role group. For more information, see the "Add a role to a role group" section in the topic, **Manage role groups**.
     
-- Changes to the address list aren't available for client download until after the OAB in which the address list resides has been generated. For more information, see [Update offline address book](update-offline-address-book.md).
+- Changes to the address list aren't available for client download until after the OAB in which the address list resides has been generated.
     
 - You can't use the Exchange Administration Center (EAC) to perform this procedure. You must use the Shell.
     
