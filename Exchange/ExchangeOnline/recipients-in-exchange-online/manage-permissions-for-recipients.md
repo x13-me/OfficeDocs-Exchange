@@ -26,6 +26,9 @@ You can use the EAC or the Shell to assign permissions to users or groups (calle
     
 > [!NOTE]
 > If you assign the Full Access, Send As, or Send on Behalf permission to access a mailbox that is hidden from address lists, the delegate won't be able to open the mailbox or send messages. 
+
+> [!NOTE]
+> If you assign both the Send As and Send on Behalf permission, the Send on Behalf is always used.
   
 ## What do you need to know before you begin?
 
