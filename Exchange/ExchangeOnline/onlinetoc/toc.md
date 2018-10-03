@@ -195,7 +195,6 @@
 ##### [Change default offline address book](../address-books/offline-address-books/change-default-offline-address-book.md)
 ##### [Provision recipients](../address-books/offline-address-books/provision-recipients.md)
 ##### [Remove offline address book](../address-books/offline-address-books/remove-offline-address-book.md)
-##### [Update offline address book](../address-books/offline-address-books/update-offline-address-book.md)
 ##### [Create virtual directory](../address-books/offline-address-books/create-virtual-directory.md)
 ##### [Change address book generation schedule](../address-books/offline-address-books/change-address-book-generation-schedule.md)
 ##### [Configure distribution properties](../address-books/offline-address-books/configure-distribution-properties.md)
