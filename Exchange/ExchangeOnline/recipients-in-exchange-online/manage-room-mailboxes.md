@@ -48,13 +48,11 @@ For info about another type of resource mailbox, check out [Manage equipment mai
     
 4. When you're finished, click **Save** to create the room mailbox. 
     
-Once you've created your room mailbox, you can edit your room mailbox to update info about booking options, MailTips and mailbox delegation. Check out the Use the Exchange Admin Center section below to change room mailbox properties
+Once you've created your room mailbox, you can edit your room mailbox to update info about booking options, MailTips and mailbox delegation. Check out the Use the Exchange Admin Center section below to change room mailbox properties.
   
 #### Use Exchange PowerShell to create a room mailbox
 
 This example creates a room mailbox with the following configuration:
-  
-- The room mailbox resides on Mailbox Database 1.
     
 - The mailbox's name is ConfRoom1. This name will also be used to create the room's email address.
     
@@ -63,7 +61,7 @@ This example creates a room mailbox with the following configuration:
 - The  _Room_ switch specifies that this mailbox will be created as a room mailbox. 
     
 ```
-New-Mailbox -Database "Mailbox Database 1" -Name ConfRoom1 - -DisplayName "Conference Room 1" -Room
+New-Mailbox -Name ConfRoom1 -DisplayName "Conference Room 1" -Room
 ```
 
 For detailed syntax and parameter information, see [New-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
@@ -127,7 +125,7 @@ After you create a room mailbox, you can make changes and set additional propert
 
 Use the **General** section to view or change basic information about the resource. 
   
-- **\* Room name** This name appears in the resource mailbox list in the Exchange Admin CenterExchange Admin Center and in your organization's address book. It can't exceed 64 characters if you change it. 
+- **\* Room name** This name appears in the resource mailbox list in the Exchange Admin Center and in your organization's address book. It can't exceed 64 characters if you change it. 
     
 - **\* Email address** This read-only box displays the email address for the room mailbox. You can change it in the [Email Address](#EmailAddress.md) section. 
     
@@ -173,7 +171,7 @@ Use the **Booking Options** section to view or change the settings for the booki
   
 - **Allow repeating meetings** This setting allows or prevents repeating meetings for the room. By default, this setting is enabled, so repeating meetings are allowed. 
     
-- **Allow scheduling only during working hours** This setting accepts or declines meeting requests that aren't during the working hours defined for the room. By default, this setting is disabled, so meeting requests are allowed outside the working hours.By default, working hours are 8:00 A.M. to 5:00 P.M. Monday through Friday. You can configure the working hours of the room mailbox in the Appearance section on the Calendar page. 
+- **Allow scheduling only during working hours** This setting accepts or declines meeting requests that aren't during the working hours defined for the room. By default, this setting is disabled, so meeting requests are allowed outside the working hours. By default, working hours are 8:00 A.M. to 5:00 P.M. Monday through Friday. You can configure the working hours of the room mailbox in the Appearance section on the Calendar page. 
     
 - **Always decline if the end date is beyond this limit** This setting controls the behavior of repeating meetings that extend beyond the date specified by the maximum booking lead time setting. 
     
@@ -185,7 +183,7 @@ Use the **Booking Options** section to view or change the settings for the booki
     
 - **Maximum duration (hours)** This setting specifies the maximum duration that the room can be reserved in a booking request. The default value is 24 hours. 
     
-    For repeating booking requests, the maximum booking duration applies to the length of Exchange Admin Centerh instance of the repeating booking request.
+    For repeating booking requests, the maximum booking duration applies to the length of Exchange Admin Center instance of the repeating booking request.
     
 There's also a box on this page that you can use to write a message that will be sent to users who send booking requests to reserve the room.
   
