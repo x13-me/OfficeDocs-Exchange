@@ -15,7 +15,7 @@ description: "Use In-Place eDiscovery to search across all mailbox content, incl
 # Create an In-Place eDiscovery search
 
 > [!NOTE]
-> We've postponed the July 1, 2017 deadline for creating new In-Place eDiscovery searches in Exchange Online (in Office 365 and Exchange Online standalone plans). But later this year or early next year, you won't be able to create new searches in Exchange Online. To create eDiscovery searches, please start using [Content Search](https://go.microsoft.com/fwlink/?linkid=847843) in the Office 365 Security &amp; Compliance Center. After we decommission new In-Place eDiscovery searches, you'll still be able to modify existing In-Place eDiscovery searches, and creating new In-Place eDiscovery searches in Exchange Server and Exchange hybrid deployments will still be supported. 
+> We've postponed the July 1, 2017 deadline for creating new In-Place eDiscovery searches in Exchange Online (in Office 365 and Exchange Online standalone plans). But later this year or early next year, you won't be able to create new searches in Exchange Online. To create eDiscovery searches, please start using [Content Search](https://go.microsoft.com/fwlink/?linkid=847843) in the Office 365 Security & Compliance Center. After we decommission new In-Place eDiscovery searches, you'll still be able to modify existing In-Place eDiscovery searches, and creating new In-Place eDiscovery searches in Exchange Server and Exchange hybrid deployments will still be supported. 
   
 Use [In-Place eDiscovery](in-place-ediscovery.md) to search across all mailbox content, including deleted items and original versions of modified items for users placed on [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md). 
   
@@ -44,11 +44,11 @@ Use [In-Place eDiscovery](in-place-ediscovery.md) to search across all mailbox c
 
 As previously explained, to create eDiscovery searches, you have to sign in to a user account that has an SMTP address in your organization.
   
-1. Go to **Compliance management** \> **In-place eDiscovery &amp; hold**.
+1. Go to **Compliance management** \> **In-place eDiscovery & hold**.
     
 2. Click **New**![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
-3. In **In-Place eDiscovery &amp; Hold**, on the **Name and description** page, type a name for the search, add an optional description, and then click **Next**.
+3. In **In-Place eDiscovery & Hold**, on the **Name and description** page, type a name for the search, add an optional description, and then click **Next**.
     
 4. On the **Mailboxes** page, select the mailboxes to search. You can search across all mailboxes or select specific ones to search. In Exchange Online, you can also select Office 365 groups as a content source for the search. 
     
@@ -126,7 +126,7 @@ For detailed syntax and parameter information, see [New-MailboxSearch](http://te
 
 After you create an In-Place eDiscovery search, you can use the EAC to get an estimate and preview of the search results. If you created a new search using the **New-MailboxSearch** cmdlet, you can use the Shell to start the search to get an estimate of the search results. You can't use the Shell to preview messages returned in search results. 
   
-1. Navigate to **Compliance management** \> **In-place eDiscovery &amp; hold**.
+1. Navigate to **Compliance management** \> **In-place eDiscovery & hold**.
     
 2. In the list view, select the In-Place eDiscovery search, and then do one of the following: 
     

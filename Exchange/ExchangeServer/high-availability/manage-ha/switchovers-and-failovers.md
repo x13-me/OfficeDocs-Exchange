@@ -3,32 +3,30 @@ title: "Switchovers and failovers"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 75388645-cae1-402e-bf02-c4949d3e2c31
-description: "Summary: An overview of switchovers and failovers in Exchange 2016."
+description: "Summary: An overview of switchovers and failovers in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Switchovers and failovers
 
- **Summary**: An overview of switchovers and failovers in Exchange 2016.
+Switchovers and failovers are the two forms of outages in Microsoft Exchange Server:
   
-Switchovers and failovers are the two forms of outages in Microsoft Exchange Server 2016:
-  
-- A *switchover* is a scheduled outage of a database or server that's explicitly initiated by a cmdlet or by the managed availability system in Exchange 2016. Switchovers are typically done to prepare for performing a maintenance operation. Switchovers involve moving the active mailbox database copy to another server in the database availability group (DAG). If no healthy target is found during a switchover, administrators will receive an error and the mailbox database will remain up, or mounted.
+- A *switchover* is a scheduled outage of a database or server that's explicitly initiated by a cmdlet or by the managed availability system in Exchange Server. Switchovers are typically done to prepare for performing a maintenance operation. Switchovers involve moving the active mailbox database copy to another server in the database availability group (DAG). If no healthy target is found during a switchover, administrators will receive an error and the mailbox database will remain up, or mounted.
     
 - A *failover* refers to unexpected events that result in the unavailability of services, data, or both. A failover involves the system automatically recovering from the failure by activating a passive mailbox database copy to make it the active mailbox database copy. If no healthy target is found during a failover, the mailbox database will be dismounted.
     
-Exchange 2016 is specifically designed to handle both switchovers and failovers.
+Exchange Server is specifically designed to handle both switchovers and failovers.
   
 Looking for management tasks related to high availability and site resilience? See [Managing high availability and site resilience](manage-ha.md).
   
 ## Switchovers
 
-There are three types of switchovers in Exchange 2016:
+There are three types of switchovers in Exchange Server:
   
 - Database switchovers
     
@@ -217,9 +215,9 @@ For more information about Active Manager's best copy selection process, see [Ac
   
 ### Datacenter Failovers
 
-Significant changes have been made since Exchange 2010 regarding site resilience configuration. With namespace simplification, consolidation of server roles, separation of Client Access services and DAG recovery (in Exchange 2016, the namespace does not need to move with the DAG), and changes around load balancing, Exchange 2016 provides site resilience options like the ability to use a single global namespace. If you have more than two locations in which to deploy messaging service components, Exchange 2016 also provides the ability to configure the messaging service for automatic failover in response to failures that required manual intervention in previous versions.
+Significant changes have been made since Exchange 2010 regarding site resilience configuration. With namespace simplification, consolidation of server roles, separation of Client Access services and DAG recovery (in Exchange Server, the namespace does not need to move with the DAG), and changes around load balancing, Exchange Server provides site resilience options like the ability to use a single global namespace. If you have more than two locations in which to deploy messaging service components, Exchange Server also provides the ability to configure the messaging service for automatic failover in response to failures that required manual intervention in previous versions.
   
-Exchange leverages fault tolerance built into the namespace through multiple IP addresses, load balancing, and, if necessary, the ability to take servers in and out of service. Exchange 2016 makes it possible to leverage the clients' ability to cache multiple IP addresses returned from a DNS server in response to a name resolution request. Clients with the ability to cache multiple IP addresses (which includes almost all HTTP-based clients in Exchange 2016, such as Outlook, Outlook Anywhere, EAS, EWS, Outlook on the web, EAC, RPS, etc.), all have the ability to use those multiple IP addresses, and this provides failover on the client side. You can configure DNS to hand multiple IP addresses to a client during name resolution. The client asks for mail.contoso.com and gets back two IP addresses, or four IP addresses, for example. However many IP addresses the client gets back will be used reliably by the client. This makes the client a lot better off because if one of the IP addresses fails, the client has one or more others to try to connect to. If a client tries one and it fails, it waits around 20 seconds and then tries the next one in the list. Thus, if you lose connectivity to your primary Client Access services (CAS) array, and you have a second published IP address for a second CAS array, recovery for the clients happens automatically (and in about 21 seconds).
+Exchange leverages fault tolerance built into the namespace through multiple IP addresses, load balancing, and, if necessary, the ability to take servers in and out of service. Exchange Server makes it possible to leverage the clients' ability to cache multiple IP addresses returned from a DNS server in response to a name resolution request. Clients with the ability to cache multiple IP addresses (which includes almost all HTTP-based clients in Exchange Server, such as Outlook, Outlook Anywhere, EAS, EWS, Outlook on the web, EAC, RPS, etc.), all have the ability to use those multiple IP addresses, and this provides failover on the client side. You can configure DNS to hand multiple IP addresses to a client during name resolution. The client asks for mail.contoso.com and gets back two IP addresses, or four IP addresses, for example. However many IP addresses the client gets back will be used reliably by the client. This makes the client a lot better off because if one of the IP addresses fails, the client has one or more others to try to connect to. If a client tries one and it fails, it waits around 20 seconds and then tries the next one in the list. Thus, if you lose connectivity to your primary Client Access services (CAS) array, and you have a second published IP address for a second CAS array, recovery for the clients happens automatically (and in about 21 seconds).
   
 Modern HTTP clients (operating systems and Web browsers that are ten years old or less) simply work with this redundancy automatically. The HTTP stack can accept multiple IP addresses for an FQDN, and if the first IP it tries fails hard (e.g., cannot connect), it will try the next IP in the list. In a soft failure (connect lost after session established, perhaps due to an intermittent failure in the service where, for example, a device is dropping packets and needs to be taken out of service), the user might need to refresh their browser.
   

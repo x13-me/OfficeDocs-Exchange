@@ -23,7 +23,7 @@ Exchange 2016 Setup requires that the **Failover Cluster Command Interface** Win
 Do the following to install the Windows feature on this computer. If the feature requires a reboot to complete installation, you'll need to exit Exchange 2016 Setup, reboot, and then start Setup again.
   
 > [!NOTE]
-> Additional Windows features or updates might need to be installed before Exchange 2016 Setup can continue. For a complete list of required Windows features and updates, check out [Exchange 2016 prerequisites](../../plan-and-deploy/prerequisites.md).
+> Additional Windows features or updates might need to be installed before Exchange 2016 Setup can continue. For a complete list of required Windows features and updates, check out [Exchange Server prerequisites](../../plan-and-deploy/prerequisites.md).
   
 1. Open Windows PowerShell on the local computer.
     
@@ -33,8 +33,4 @@ Do the following to install the Windows feature on this computer. If the feature
   Install-WindowsFeature RSAT-Clustering-CmdInterface
   ```
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-  
-
-  
-
+Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

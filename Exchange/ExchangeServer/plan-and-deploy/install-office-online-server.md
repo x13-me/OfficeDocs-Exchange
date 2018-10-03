@@ -1,5 +1,5 @@
 ---
-title: "Install Office Online Server in an Exchange 2016 organization"
+title: "Install Office Online Server in an Exchange organization"
 ms.author: dstrome
 author: dstrome
 manager: serdars
@@ -13,16 +13,14 @@ ms.assetid: 9c2b4186-be7d-4c57-b119-17a1c36fd6a0
 description: "Summary: Improve the attachment experience for Outlook on the web (formerly known as Outlook Web App) users by installing Office Online Server."
 ---
 
-# Install Office Online Server in an Exchange 2016 organization
-
- **Summary**: Improve the attachment experience for Outlook on the web (formerly known as Outlook Web App) users by installing Office Online Server.
+# Install Office Online Server in an Exchange organization
 
 An optional prerequisite for Exchange 2016 Cumulative Update 1 (CU1) or later is the installation of Office Online Server on one or more servers in your organization. Office Online Server enables users to view supported file attachments within Outlook on the web (Outlook) without downloading them first and without having a local installation of the program. Without Office Online Server installed, Outlook users need to download attachments to their local computer and then open them in a local application.
 
 > [!NOTE]
 > Office Online Server is available for download as part of a volume licensing agreement. If you don't have a volume license agreement, you can skip the instructions in this step. However, without Office Online Server installed, Outlook users will need to download attachments to their local computer to view them; they won't be able to view them in Outlook.
 
-You can configure an Office Online Server endpoint in two places in Exchange 2016: at the organization level, and at the Mailbox server level. Where you configure the endpoint depends on the size of your organization and the location of your servers and users.
+You can configure an Office Online Server endpoint in two places in Exchange 2016 and later: at the organization level, and at the Mailbox server level. Where you configure the endpoint depends on the size of your organization and the location of your servers and users.
 
 - **Organization**: There are a couple of reasons why you might configure the Office Online Server endpoint at the organization level:
 
@@ -36,7 +34,7 @@ You can configure an Office Online Server endpoint in two places in Exchange 201
 
   - Previewing attachments on S/MIME messages in Outlook on the web isn't supported by Office Online Server.
 
-- **Mailbox server**: If you want to distribute client requests between two or more Office Online Server servers, if you want to geographically distribute Office Online Server servers, or if you have Exchange 2013 in your organization, configure the endpoints at the Exchange 2016 Mailbox server level. When you configure an endpoint at the server level, mailboxes located on that server will send requests to the configured Office Online Server server.
+- **Mailbox server**: If you want to distribute client requests between two or more Office Online Server servers, if you want to geographically distribute Office Online Server servers, or if you have Exchange 2013 in your organization, configure the endpoints at the Exchange Mailbox server level. When you configure an endpoint at the server level, mailboxes located on that server will send requests to the configured Office Online Server server.
 
 If you want users outside of your network to view supported file attachments in Outlook, Office Online Server needs to be accessible from the Internet. TCP port 443 needs to be opened on your firewall and forwarded to the Office Online Server server. If you deploy more than one Office Online Server server, each server needs its own fully qualified domain name (FQDN). Each server also needs to be accessible from the Internet via TCP port 443.
 
@@ -49,7 +47,7 @@ Office Online Server requires the following to install:
 - Exchange 2016 Cumulative Update 1 (CU1) or later
 
     > [!NOTE]
-    > If you're running Windows Server 2016, you will need Exchange 2016 CU3 or later, as detailed in [Exchange 2016 prerequisites](prerequisites.md).
+    > If you're running Windows Server 2016, you will need Exchange 2016 CU3 or later, as detailed in [Exchange Server prerequisites](prerequisites.md).
 
 - [Microsoft .NET Framework 4.5.2](https://go.microsoft.com/fwlink/p/?linkId=616890)
 

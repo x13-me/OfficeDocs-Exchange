@@ -1,21 +1,19 @@
 ---
-title: "Apply a retention policy to mailboxes in Exchange 2016"
+title: "Apply a retention policy to mailboxes in Exchange Server"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/8/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 6ccc80db-d201-44f7-8d4b-473a89c14b2f
-description: "Summary: Learn how to use the Exchange Management Shell or the Exchange admin center apply a retention policy to mailboxes in Exchange 2016."
+description: "Summary: Learn how to use the Exchange Management Shell or the Exchange admin center apply a retention policy to mailboxes in Exchange Server 2016 and Exchange Server 2019."
 ---
 
-# Apply a retention policy to mailboxes in Exchange 2016
+# Apply a retention policy to mailboxes in Exchange Server
 
- **Summary**: Learn how to use the Exchange Management Shell or the Exchange admin center apply a retention policy to mailboxes in Exchange 2016.
-  
 You can use retention policies to group one or more retention tags and apply them to mailboxes to enforce message retention settings. A mailbox can't have more than one retention policy.
   
 > [!CAUTION]
@@ -25,7 +23,7 @@ You can use retention policies to group one or more retention tags and apply the
 
 - Estimated time to complete: 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Applying retention policies" entry in the [Messaging policy and compliance permissions in Exchange 2016](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Applying retention policies" entry in the [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
     
 ## Use the Exchange admin center to apply a retention policy to a single mailbox
 

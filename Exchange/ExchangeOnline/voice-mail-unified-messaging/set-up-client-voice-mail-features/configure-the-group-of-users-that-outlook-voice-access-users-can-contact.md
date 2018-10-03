@@ -41,7 +41,7 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
     
 3. On the **UM dial plan** page, click **Configure**.
     
-4. In **Transfer &amp; search**, under **Allow callers to search for users by name or alias**, select one of the following options:
+4. In **Transfer & search**, under **Allow callers to search for users by name or alias**, select one of the following options:
     
   - **In this dial plan only** Use this option to allow Outlook Voice Access users who call in to an Outlook Voice Access number to locate and contact users who are within the same dial plan. 
     

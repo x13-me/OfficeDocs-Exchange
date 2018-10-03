@@ -4,19 +4,17 @@ ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/10/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 0e701643-1f18-4cc3-8595-4fd4b15caf6c
-description: "Summary: How administrations can deploy hybrid Modern Authentication and Enterprise Mobility + Security features for Exchange on-premises mailboxes to enable support for Outlook for iOS and Android."
+description: "Exchange 2016 and Exchange 2019 administrators can learn how to deploy hybrid Modern Authentication and Enterprise Mobility + Security features to enable support for Outlook for iOS and Android."
 ---
 
 # Using hybrid Modern Authentication with Outlook for iOS and Android
 
-**Summary**: How administrations can deploy hybrid Modern Authentication and Enterprise Mobility + Security features for Exchange on-premises mailboxes to enable support for Outlook for iOS and Android.
-  
 The Outlook app for iOS and Android is designed as the best way to experience Office 365 on your mobile device by leveraging Microsoft services to help find, plan, and prioritize your daily life and work. Outlook provides the security, privacy, and support you need while protecting corporate data via capabilities such as Azure Active Directory conditional access and Intune app protection policies. The following sections provide an overview of the hybrid Modern Authentication architecture, the required pre-requisites for its deployment, and how to securely deploy Outlook for iOS and Android for Exchange on-premises mailboxes.
   
 ## Microsoft Cloud architecture for hybrid Exchange Server customers
@@ -29,7 +27,7 @@ For Exchange Server mailboxes, Outlook for iOS and Android's new architecture is
   
 Data passing from Exchange Online to the Outlook app is passed via a TLS-secured connection. The protocol translator running on Azure serves to route data, commands and notifications, but has no ability to read the data itself.
   
-The Exchange ActiveSync connection between Exchange Online and the on-premises environment enables synchronization of the users' on-premises data and includes four weeks of email, all calendar data, all contact data, and out-of-office status in your Exchange Online tenant. This data will be removed automatically from Exchange Online after 30 days when the account is deleted in Azure Active Directory.
+The Exchange ActiveSync (EAS) connection between Exchange Online and the on-premises environment enables synchronization of the users' on-premises data and includes four weeks of email, all calendar data, all contact data, and out-of-office status in your Exchange Online tenant. This data will be removed automatically from Exchange Online after 30 days when the account is deleted in Azure Active Directory.
   
 Data synchronization between the on-premises environment and Exchange Online happens independent of user behavior. This ensures that we can send new messages to the devices very quickly.
   
@@ -48,7 +46,7 @@ Specifically, this new architecture has the following improvements:
 5. **Unlocks new features on iOS and Android**: This update enables the Outlook app to take advantage of native Office 365 features that are not supported in Exchange on-premises today, such as leveraging full Exchange Online search and Focused Inbox. These features will only be available when using Outlook for iOS and Android.
     
 > [!NOTE]
-> Device management through the on-premises Exchange admin center is not possible. Intune is required to manage mobile devices.
+> Device management through the on-premises Exchange admin center (EAC) is not possible. Intune is required to manage mobile devices.
   
 ## Data security, access, and auditing controls
 
@@ -59,7 +57,6 @@ By default, Microsoft engineers have zero standing administrative privileges and
 [ISO Audited Controls on Service Assurance](https://sip.protection.office.com/) documentation provides the status of audited controls from global information security standards and regulations that Office 365 has implemented.
   
 ## Connection flow
-<a name="connectflow"> </a>
 
 When Outlook for iOS and Android is enabled with hybrid Modern Authentication, the connection flow is as follows.
   
@@ -82,15 +79,14 @@ When Outlook for iOS and Android is enabled with hybrid Modern Authentication, t
 8. The MRS provisioning API establishes a secure connection to the on-premises ActiveSync endpoint and synchronizes the user's messaging data using the AT2 access token as the authentication mechanism. RT2 is used periodically to generate a new AT2 so that data can be synchronized in the background without user intervention.
     
 ## Technical and licensing requirements
-<a name="connectflow"> </a>
 
 The hybrid Modern Authentication architecture has the following technical requirements:
   
 1. **Exchange on-premises setup**:
     
-  - A minimum cumulative update (CU) deployment on all Exchange servers of Exchange Server 2016 CU8 or Exchange Server 2013 CU19. Note that customers with hybrid deployments in which Exchange is deployed on-premises and in the cloud, or who are using Exchange Online Archiving (EOA) with their on-premises Exchange deployment, are required to deploy the most current CU or one CU prior to the most current.
+  - Exchange Server 2016 Cumulative Update 8 (CU8) or later, or Exchange Server 2013 CU19 or later on all Exchange servers. In hybrid deployments (on-premises Exchange and Exchange Online) or in organizations that use Exchange Online Archiving (EOA) with their on-premises Exchange deployment, you need to deploy the most current CU or one CU prior to the most current.
     
-  - All Exchange 2007 or Exchange 2010 servers must be removed from the environment. Exchange Server 2010 SP3 is out of mainstream support and will not work with Intune-managed Outlook for iOS and Android. In this architecture, Outlook for iOS and Android uses OAuth as the authentication mechanism. One of the on-premises configuration changes that occurs enables the OAuth endpoint to the Microsoft Cloud as the default authorization endpoint. When this change is made, clients can start negotiating the use of OAuth. Because this is an organization-wide change, Exchange 2010 mailboxes fronted by either Exchange 2013 or 2016 will incorrectly think they can perform OAuth and will end up in a disconnected state, since Exchange 2010 does not support OAuth as an authentication mechanism.
+  - All Exchange 2007 or Exchange 2010 servers must be removed from the environment. These versions of Exchange are out of mainstream support and will not work with Intune-managed Outlook for iOS and Android. In this architecture, Outlook for iOS and Android uses OAuth as the authentication mechanism. One of the on-premises configuration changes that occurs enables the OAuth endpoint to the Microsoft Cloud as the default authorization endpoint. When this change is made, clients can start negotiating the use of OAuth. Because this is an organization-wide change, Exchange 2010 mailboxes fronted by either Exchange 2013 or 2016 will incorrectly think they can perform OAuth and will end up in a disconnected state, since Exchange 2010 does not support OAuth as an authentication mechanism.
     
 2. **Active Directory Synchronization**. Active Directory synchronization of the entire on-premises directory with Azure Active Directory, via Azure AD Connect. You must ensure the following attributes are synchronized:
     
@@ -135,10 +131,9 @@ The hybrid Modern Authentication architecture has the following technical requir
     
   - Enterprise Mobility + Security E3, Enterprise Mobility + Security E5
     
- **\*** Microsoft Secure Productive Enterprise (SPE) includes all licenses necessary for Office 365 and EMS.
+ <sup>*</sup> Microsoft Secure Productive Enterprise (SPE) includes all licenses necessary for Office 365 and EMS.
   
 ## Implementation steps
-<a name="connectflow"> </a>
 
 Enabling support for hybrid Modern Authentication in your organization requires each of the following steps, which are detailed in the following sections:
   
@@ -222,20 +217,22 @@ If you have already enabled hybrid Modern Authentication to support other versio
     > [!NOTE]
     > Once this rule is created, users who are using Outlook for iOS and Android with Basic authentication will be blocked.
   
-3. Ensure your EAS maxRequestLength is configured to match your transport configuration's MaxSendSize/MaxReceiveSize:
+3. Ensure your Exchange ActiveSync maxRequestLength is configured to match your transport configuration's MaxSendSize/MaxReceiveSize:
     
   - Path: `%ExchangeInstallPath%FrontEnd\HttpProxy\Sync\web.config`
     
   - Property: `maxRequestLength`
     
-  - Value: set in KB size (10MB is 10240, for example)
+  - Value: Set in kilobytes (KB). For example, the value `1024` is 10 megabytes (MB).
+
+    For more information, see [Configure client-specific message size limits](../../architecture/client-access/client-message-size-limits.md)
     
 ### Contact Microsoft
 
 To enable support of hybrid Modern Authentication for Outlook for iOS and Android, you must contact your Microsoft account team, customer sales and services (CSS) contact, or your technical account manager. You will need to provide all SMTP domains (and UPN domains in the event that your UPN domains don't match the SMTP address). Once the domains are provided and enabled, hybrid Modern Authentication will be supported for on-premises mailboxes using Outlook for iOS and Android.
   
 ## Client features that aren't supported
-<a name="connectflow"> </a>
+
 
 The following features are not supported for on-premises mailboxes using hybrid Modern Authentication with Outlook for iOS and Android.
   
@@ -256,7 +253,6 @@ The following features are not supported for on-premises mailboxes using hybrid 
 - Interesting Calendars
     
 ## Connection Flow FAQ
-<a name="connectflow"> </a>
 
 **Q**: My organization has a security policy that requires Internet inbound connections to be restricted to approved IP addresses or FQDNs. Is that possible with this architecture?
   
@@ -296,7 +292,6 @@ The following features are not supported for on-premises mailboxes using hybrid 
 ![An example of an Outlook for iOS and Android account configured for hybrid Modern Authentication](../../media/e52fbbe2-ba9e-4357-8f48-f8fa7d62abc8.PNG)
   
 ## Authentication FAQ
-<a name="connectflow"> </a>
 
 **Q**: What identity configurations are supported with hybrid Modern Authentication and Outlook for iOS and Android?
   
@@ -355,7 +350,6 @@ Upon token expiration, the client will attempt to use the refresh token to obtai
 ```
 
 ## Troubleshooting
-<a name="connectflow"> </a>
 
 Below are the most common issues or errors with on-premises mailboxes using hybrid Modern Authentication with Outlook for iOS and Android.
   

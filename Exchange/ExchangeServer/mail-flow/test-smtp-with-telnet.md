@@ -14,8 +14,6 @@ description: "Summary: Learn how to use Telnet to test SMTP connectivity and mai
 
 # Use Telnet to test SMTP communication on Exchange servers
 
- **Summary**: Learn how to use Telnet to test SMTP connectivity and mail flow on Exchange servers.
-
 You can use Telnet to test Simple Mail Transfer Protocol (SMTP) communication between messaging servers. SMTP is the protocol that's used to send email messages from one messaging server to another. Using Telnet can be helpful if you're having trouble sending or receiving messages because you can manually send SMTP commands to a messaging server. In return, the server will reply with responses that would be returned in a typical connection. These results can sometimes help you to figure out why you can't send or receive messages.
 
 You can use Telnet to test SMTP communication to:

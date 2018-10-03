@@ -9,14 +9,12 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 28cedf1d-365a-4e36-b2ba-6bf81af8684f
-description: "Summary: Learn about managing mailbox database copies in the Mailbox server in Exchange 2016."
+description: "Summary: Learn about managing mailbox database copies in the Mailbox server in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Manage mailbox database copies
 
- **Summary**: Learn about managing mailbox database copies in the Mailbox server in Exchange 2016.
-  
-In Exchange 2016, you can use the Exchange Management Console (EAC) or the Exchange Management Shell to add mailbox database copies after a database availability group (DAG) has been created, configured, and populated with Mailbox server members.
+In Exchange Server, you can use the Exchange Management Console (EAC) or the Exchange Management Shell to add mailbox database copies after a database availability group (DAG) has been created, configured, and populated with Mailbox server members.
   
 ## Managing database copies
 <a name="MngDBCopies"> </a>
@@ -71,7 +69,7 @@ At the DAG level, DAG networks are configured for encryption and compression. Th
 
 When you begin a seeding process by using the [Add-MailboxDatabaseCopy](http://technet.microsoft.com/library/84198fa9-ac8e-44ea-bd7b-64fe1e83e709.aspx) or [Update-MailboxDatabaseCopy](http://technet.microsoft.com/library/37ebb66a-382e-4fd9-81f8-795f776a87b1.aspx) cmdlets, the following tasks are performed: 
   
-1. Database properties from Active Directory are read to validate the specified database and servers, and to verify that the source and target servers are running Exchange 2016, they are both members of the same DAG, and that the specified database isn't a recovery database. The database file paths are also read.
+1. Database properties from Active Directory are read to validate the specified database and servers, and to verify that the source and target servers are running Exchange Server, they are both members of the same DAG, and that the specified database isn't a recovery database. The database file paths are also read.
     
 2. Preparations occur for reseed checks from the Microsoft Exchange Replication service on the target server.
     
@@ -141,11 +139,11 @@ Mailbox database copies support the use of a *replay lag time* and a *truncation
 
 Replay lag time is a mailbox database copy property that specifies the amount of time, in minutes, to delay log replay for the database copy. The replay lag timer starts when a log file has been replicated to the passive copy and has successfully passed inspection. By delaying the replay of logs to the database copy, you have the capability to recover the database to a specific point in time in the past. A mailbox database copy configured with a replay lag time greater than 0 is referred to as a *lagged mailbox database copy*, or simply, a *lagged copy*.
   
-A strategy that uses database copies and the litigation hold features in Exchange 2016 can provide protection against a range of failures that would ordinarily cause data loss. However, these features can't provide protection against data loss in the event of logical corruption, which although rare, can cause data loss. Lagged copies are designed to prevent loss of data in the case of logical corruption. Generally, there are two types of logical corruption:
+A strategy that uses database copies and the litigation hold features in Exchange Server can provide protection against a range of failures that would ordinarily cause data loss. However, these features can't provide protection against data loss in the event of logical corruption, which although rare, can cause data loss. Lagged copies are designed to prevent loss of data in the case of logical corruption. Generally, there are two types of logical corruption:
   
 - **Database logical corruption**: The database pages checksum matches, but the data on the pages is wrong logically. This can occur when ESE attempts to write a database page and even though the operating system returns a success message, the data is either never written to the disk or it's written to the wrong place. This is referred to as a *lost flush*. To prevent lost flushes from losing data, ESE includes a lost flush detection mechanism in the database along with a page patching feature (single page restore).
     
-- **Store logical corruption**: Data is added, deleted, or manipulated in a way that the user doesn't expect. These cases are generally caused by third-party applications. It's generally only corruption in the sense that the user views it as corruption. The Exchange store considers the transaction that produced the logical corruption to be a series of valid MAPI operations. The litigation hold feature in Exchange 2016 provides protection from store logical corruption (because it prevents content from being permanently deleted by a user or application). However, there may be scenarios where a user mailbox becomes so corrupted that it would be easier to restore the database to a point in time prior to the corruption, and then export the user mailbox to retrieve uncorrupted data.
+- **Store logical corruption**: Data is added, deleted, or manipulated in a way that the user doesn't expect. These cases are generally caused by third-party applications. It's generally only corruption in the sense that the user views it as corruption. The Exchange store considers the transaction that produced the logical corruption to be a series of valid MAPI operations. The litigation hold feature in Exchange Server provides protection from store logical corruption (because it prevents content from being permanently deleted by a user or application). However, there may be scenarios where a user mailbox becomes so corrupted that it would be easier to restore the database to a point in time prior to the corruption, and then export the user mailbox to retrieve uncorrupted data.
     
 The combination of database copies, hold policy, and ESE single page restore leaves only the rare but catastrophic store logical corruption case. Your decision on whether to use a database copy with a replay lag (a lagged copy) will depend on which third-party applications you use and your organization's history with store logical corruption.
   
@@ -173,7 +171,7 @@ Truncation lag time is the property of a mailbox database copy that specifies th
   
 #### Database copies and log truncation
 
-Log truncation works the same in Exchange 2016 as it did in Exchange 2010. Truncation behavior is determined by the replay lag time and truncation lag time settings for the copy.
+Log truncation works the same in Exchange 2016 and Exchange 2019 as it did in Exchange 2010. Truncation behavior is determined by the replay lag time and truncation lag time settings for the copy.
   
 The following criteria must be met for a database copy's log file to be truncated when lag settings are left at their default values of 0 (disabled):
   
@@ -193,17 +191,21 @@ The following criteria must be met for truncation to occur for a lagged database
     
 - The log file must have been truncated on the active copy.
     
-In Exchange 2016, log truncation doesn't occur on an active mailbox database copy when one or more passive copies are suspended. If planned maintenance activities are going to take an extended period of time (for example, several days), you may have considerable log file buildup. To prevent the log drive from filling up with transaction logs, you can remove the affected passive database copy instead of suspending it. When the planned maintenance is completed, you can re-add the passive database copy.
+In Exchange Server, log truncation doesn't occur on an active mailbox database copy when one or more passive copies are suspended. If planned maintenance activities are going to take an extended period of time (for example, several days), you may have considerable log file buildup. To prevent the log drive from filling up with transaction logs, you can remove the affected passive database copy instead of suspending it. When the planned maintenance is completed, you can re-add the passive database copy.
   
- Exchange 2016 now has a feature called *loose truncation* that is disabled by default. During normal operations, each database copy keeps logs that need to be shipped to other database copies until all copies of a database confirm they have replayed (passive copies) or received (lagged copies) the log files. This is default log truncation behavior. If a database copy goes offline for some reason, the log files begin accumulating on the disks used by the other copies of the database. If the affected database copy remains offline for an extended period, this can cause the other database copies to run out of disk space.
+ Exchange Server now has a feature called *loose truncation* that is disabled by default. During normal operations, each database copy keeps logs that need to be shipped to other database copies until all copies of a database confirm they have replayed (passive copies) or received (lagged copies) the log files. This is default log truncation behavior. If a database copy goes offline for some reason, the log files begin accumulating on the disks used by the other copies of the database. If the affected database copy remains offline for an extended period, this can cause the other database copies to run out of disk space.
   
-Truncation behavior is different when loose truncation is enabled. Each database copy tracks its own free disk space and applies loose truncation behavior if free space gets low.
+Truncation behavior is different when loose truncation and circular logging are enabled. Each database copy tracks its own free disk space and applies loose truncation behavior if free space gets low.
   
 - For the active copy, the oldest straggler (the passive database copy that is farthest behind in log replay) is ignored and truncation respects the oldest remaining passive copies. The active database copy is where global truncation is calculated.
     
 - For a passive copy, if space gets low, it will independently truncate its log files using the configured parameters described later in the Registry Value table.The passive copies will attempt to respect the truncation decision made on the active copy. Despite the implication of the name MinCopiesToProtect, Exchange will only ignore the oldest known straggler at the time truncation is run.
     
 When the offline database is brought back online, it will be missing log files that have been deleted from the other healthy copies, and its database copy status will be FailedAndSuspended. In this event, if Autoreseed is configured, the affected copy will be automatically reseeded. If Autoreseed is not configured, the database copy will need to be manually seeded by an administrator.
+
+If circular logging is disabled, loose truncation respects backups if they have been taken, so if logs have not been backed up they will not be removed by loose Truncation. 
+
+truncation is a recommended feature for preferred architecture where backups are not used and circular logging is enabled.
   
 The required number of healthy copies, the free disk space threshold, and the number of logs to keep are all configurable parameters. By default, the free disk space threshold is 204800 MB (200 GB), and the number of logs to keep is 100,000 (100 GB) for passive copies, and 10,000 (10 GB) for active copies.
   
@@ -235,7 +237,7 @@ For more information about configuring database activation policy, see [Configur
 ### Effect of mailbox moves on continuous replication
 <a name="Effect"> </a>
 
-On a very busy mailbox database with a high log generation rate, there is a greater chance for data loss if replication to the passive database copies can't keep up with log generation. One scenario that can introduce a high log generation rate is mailbox moves. Exchange 2016 includes a Data Guarantee API that's used by services such as the Exchange Mailbox Replication service (MRS) to check the health of the database copy architecture based on the value of the _DataMoveReplicationConstraint_ parameter that was set by the system or an administrator. Specifically, the Data Guarantee API can be used to: 
+On a very busy mailbox database with a high log generation rate, there is a greater chance for data loss if replication to the passive database copies can't keep up with log generation. One scenario that can introduce a high log generation rate is mailbox moves. Exchange Server includes a Data Guarantee API that's used by services such as the Exchange Mailbox Replication service (MRS) to check the health of the database copy architecture based on the value of the _DataMoveReplicationConstraint_ parameter that was set by the system or an administrator. Specifically, the Data Guarantee API can be used to: 
   
 - **Check replication health**: Confirms that the prerequisite number of database copies is available.
     

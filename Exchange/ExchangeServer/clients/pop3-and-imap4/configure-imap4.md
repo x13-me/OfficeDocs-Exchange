@@ -1,28 +1,26 @@
 ---
-title: "Enable and configure IMAP4 on an Exchange 2016 server"
+title: "Enable and configure IMAP4 on an Exchange server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: c1ae10dd-14da-4400-b38d-2aeafde8abe6
-description: "Summary: Learn how to enable and configure IMAP4 on an Exchange 2016 server for access by IMAP4 clients."
+description: "Summary: Learn how to enable and configure IMAP4 on an Exchange server 2016 or 2019 for access by IMAP4 clients."
 ---
 
-# Enable and configure IMAP4 on an Exchange 2016 server
+# Enable and configure IMAP4 on an Exchange server
 
- **Summary**: Learn how to enable and configure IMAP4 on an Exchange 2016 server for access by IMAP4 clients.
-  
 By default, IMAP4 client connectivity isn't enabled in Exchange. To enable IMAP4 client connectivity, you need to perform the following steps:
   
 1. Start the IMAP4 services, and configure the services to start automatically:
     
   - **Microsoft Exchange IMAP4**: This is the Client Access (frontend) service that IMAP4 clients connect to.
     
-  - **Microsoft Exchange IMAP4 Backend**: IMAP4 client connections from the Client Access service are proxied to the backend service on the server that hold the active copy of the user's mailbox. For more information, see [Exchange 2016 architecture](../../architecture/architecture.md).
+  - **Microsoft Exchange IMAP4 Backend**: IMAP4 client connections from the Client Access service are proxied to the backend service on the server that hold the active copy of the user's mailbox. For more information, see [Exchange architecture](../../architecture/architecture.md).
     
 2. Configure the IMAP4 settings for external clients.
     
@@ -38,9 +36,9 @@ By default, IMAP4 client connectivity isn't enabled in Exchange. To enable IMAP4
   
 3. Restart the IMAP4 services to save the changes.
     
-4. Configure the authenticated SMTP settings for internal and external clients. For more information, see [Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange 2016](configure-authenticated-smtp.md).
+4. Configure the authenticated SMTP settings for internal and external clients. For more information, see [Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange](configure-authenticated-smtp.md).
     
-For more information about IMAP4, see [POP3 and IMAP4 in Exchange 2016](pop3-and-imap4.md).
+For more information about IMAP4, see [POP3 and IMAP4 in Exchange Server](pop3-and-imap4.md).
   
 ## What do you need to know before you begin?
 
@@ -151,7 +149,7 @@ Set-ImapSettings -ExternalConnectionSettings "mail.contoso.com:993:SSL","mail.co
     
 - Although you can use a separate certificate for IMAP4, we recommend that you use the same certificate as the other Exchange IIS (HTTP) services, which is likely a wildcard certificate or a subject alternative name (SAN) certificate from a commercial certification authority that's automatically trusted by all clients. For more information, see [Certificate requirements for Exchange services](../../architecture/client-access/certificates.md#CertRequirements).
     
-- If you use a single subject certificate, or a SAN certificate, you also need to assign the certificate to the Exchange IMAP service. You don't need to assign a wildcard certificate to the Exchange IMAP service. For more information, see [Assign certificates to Exchange 2016 services](../../architecture/client-access/assign-certificates-to-services.md).
+- If you use a single subject certificate, or a SAN certificate, you also need to assign the certificate to the Exchange IMAP service. You don't need to assign a wildcard certificate to the Exchange IMAP service. For more information, see [Assign certificates to Exchange Server services](../../architecture/client-access/assign-certificates-to-services.md).
     
 ### How you do know this step worked?
 
@@ -193,7 +191,7 @@ Get-Service MSExchangeIMAP4; Get-Service MSExchangeIMAP4BE
 
 ## Step 4: Configure the authenticated SMTP settings for IMAP4 clients
 
-Because IMAP4 isn't used to send email messages, you need to configure the authenticated SMTP settings that are used by internal and external IMAP4 clients. For more information, see [Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange 2016](configure-authenticated-smtp.md).
+Because IMAP4 isn't used to send email messages, you need to configure the authenticated SMTP settings that are used by internal and external IMAP4 clients. For more information, see [Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange Server](configure-authenticated-smtp.md).
   
 ## How do you know this task worked?
 
@@ -213,14 +211,14 @@ To verify that you have enabled and configured IMAP4 on the Exchange server, per
     
   - **Internal clients**: Use the **Test-ImapConnectivity** cmdlet. For example, `Test-ImapConnectivity -ClientAccessServer <ServerName> -Lightmode -MailboxCredential (Get-Credential)`. For more information, see [Test-ImapConnectivity](http://technet.microsoft.com/library/273690c8-4e0d-4f05-8786-11d71868dae0.aspx).
     
-    **Note**: The _Lightmode_ switch tells the command test IMAP4 logons to the server. To test sending (SMTP) and receiving (IMAP4) a message, you need to configure the authenticated SMTP settings as described in [Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange 2016](configure-authenticated-smtp.md).
+    **Note**: The _Lightmode_ switch tells the command test IMAP4 logons to the server. To test sending (SMTP) and receiving (IMAP4) a message, you need to configure the authenticated SMTP settings as described in [Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange Server](configure-authenticated-smtp.md).
     
   - **External clients**: Use the **Exchange Server** \> **Imap Email** test in the Microsoft Remote Connectivity Analyzer at [https://go.microsoft.com/fwlink/p/?LinkID=313840](https://go.microsoft.com/fwlink/p/?LinkID=313840).
     
-    **Note**: You can't use IMAP4 to connect to the Administrator mailbox. This limitation was intentionally included in Exchange 2016 to enhance the security of the Administrator mailbox.
+    **Note**: You can't use IMAP4 to connect to the Administrator mailbox. This limitation was intentionally included in Exchange 2016 and Exchange 2019 to enhance the security of the Administrator mailbox.
     
 ## Next steps
 
-To enabled or disable IMAP4 access to individual mailboxes, see [Enable or disable POP3 or IMAP4 access to mailboxes in Exchange 2016](configure-mailbox-access.md).
+To enabled or disable IMAP4 access to individual mailboxes, see [Enable or disable POP3 or IMAP4 access to mailboxes in Exchange Server](configure-mailbox-access.md).
   
 

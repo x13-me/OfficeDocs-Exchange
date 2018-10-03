@@ -14,9 +14,7 @@ description: "Summary: You can use the EAC or the Exchange Management Shell to c
 
 # Configure database availability group properties
 
- **Summary**: You can use the EAC or the Exchange Management Shell to configure the properties of a database availability group (DAG), including DAG IP address configuration, the witness server, and the witness directory.
-  
-The Shell enables you to configure DAG properties that aren't available in the EAC, such as alternate witness server and alternate witness directory information, the TCP port used for replication, and datacenter activation coordination (DAC) mode.
+The Exchange Management Shell enables you to configure DAG properties that aren't available in the EAC, such as alternate witness server and alternate witness directory information, the TCP port used for replication, and datacenter activation coordination (DAC) mode.
   
 ## What do you need to know before you begin?
 
