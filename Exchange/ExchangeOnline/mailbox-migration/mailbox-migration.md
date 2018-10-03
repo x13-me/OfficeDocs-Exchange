@@ -3,7 +3,7 @@ title: "Ways to migrate multiple email accounts to Office 365"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 8/15/2018
+ms.date: 9/19/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: exchange-online
@@ -27,6 +27,9 @@ Your organization can migrate email to Office 365 from other systems. Your admin
 Before you start an email migration, review [limits](https://go.microsoft.com/fwlink/?LinkID=328224) and [best practices](https://go.microsoft.com/fwlink/?LinkID=392945) for Exchange Online to make sure you get the performance and behavior you expect after migration. 
   
 See [Decide on a migration path](decide-on-a-migration-path.md) or [Exchange migration advisors](https://aka.ms/office365setup) for help with choosing the best option for your organization. 
+
+> [!TIP]
+> Another option available to assist you with your email migration is [FastTrack Center Benefit for Office 365](https://docs.microsoft.com/fasttrack/fasttrack-benefit-overview). FastTrack specialists can help you plan and perform your migration. For more information, see [Data Migration](https://docs.microsoft.com/fasttrack/data-migration).
   
 You can also view an overview video:
   
