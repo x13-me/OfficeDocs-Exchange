@@ -56,9 +56,9 @@ This example creates a room mailbox with the following configuration:
     
 - The mailbox's name is ConfRoom1. This name will also be used to create the room's email address.
     
-- The display name in the Exchange Admin Center and the address book will be Conference Room 1.
+- The display name in the Exchange admin center and the address book will be Conference Room 1.
     
-- The  _Room_ switch specifies that this mailbox will be created as a room mailbox. 
+- The _Room_ switch specifies that this mailbox will be created as a room mailbox. 
     
 ```
 New-Mailbox -Name ConfRoom1 -DisplayName "Conference Room 1" -Room
@@ -70,7 +70,7 @@ For detailed syntax and parameter information, see [New-Mailbox](http://technet.
 
 You can make sure you've created the room mailbox correctly a couple of different ways:
   
-- In the Exchange Admin Center, navigate to **Recipients** \> **Resources**. The new room mailbox is displayed in the mailbox list. Under **Mailbox Type**, the type is **Room**.
+- In the Exchange admin center, navigate to **Recipients** \> **Resources**. The new room mailbox is displayed in the mailbox list. Under **Mailbox Type**, the type is **Room**.
     
 - In Exchange PowerShell, run the following command to display information about the new room mailbox.
     
@@ -183,7 +183,7 @@ Use the **Booking Options** section to view or change the settings for the booki
     
 - **Maximum duration (hours)** This setting specifies the maximum duration that the room can be reserved in a booking request. The default value is 24 hours. 
     
-    For repeating booking requests, the maximum booking duration applies to the length of Exchange Admin Center instance of the repeating booking request.
+    For repeating booking requests, the maximum booking duration applies to the length of Exchange admin center instance of the repeating booking request.
     
 There's also a box on this page that you can use to write a message that will be sent to users who send booking requests to reserve the room.
   
