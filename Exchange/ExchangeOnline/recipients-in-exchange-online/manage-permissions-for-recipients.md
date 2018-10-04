@@ -16,16 +16,19 @@ description: "You can use the EAC or the Shell to assign permissions to users or
 
 You can use the EAC or the Shell to assign permissions to users or groups (called delegates) that allow them to open or send messages from other mailboxes. Permissions can be assigned to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also assign permissions to distribution groups, dynamic distribution groups, and mail-enabled security groups to allow delegates to send messages on behalf of the group. You can assign delegates the following permissions to access mailboxes or send messages on behalf of mailboxes or groups:
   
-- **Full Access** This permission allows a delegate to open a user's mailbox and access the contents of the mailbox. However, assigning the Full Access permission doesn't allow the delegate to send mail from the mailbox. You have to assign the delegate the Send As or the Send on Behalf permission to send mail. 
+- **Full Access**: This permission allows a delegate to open a user's mailbox and access the contents of the mailbox. However, assigning the Full Access permission doesn't allow the delegate to send mail from the mailbox. You have to assign the delegate the Send As or the Send on Behalf permission to send mail. 
     
     The Full Access permission isn't available when configuring permissions for groups. 
     
-- **Send As** This permission allows delegates to use the mailbox to send messages. After this permission is assigned to a delegate, any message that the delegate sends from the mailbox will appear to have been sent by the mailbox owner. However, this permission doesn't allow a delegate to sign in to the user's mailbox. It only allows users to open the mailbox. If this permission is assigned to a group, a message sent by the delegate will appear to have been sent by the group. 
+- **Send As**: This permission allows delegates to use the mailbox to send messages. After this permission is assigned to a delegate, any message that the delegate sends from the mailbox will appear to have been sent by the mailbox owner. However, this permission doesn't allow a delegate to sign in to the user's mailbox. It only allows users to open the mailbox. If this permission is assigned to a group, a message sent by the delegate will appear to have been sent by the group. 
     
-- **Send on Behalf** This permission also allows a delegate to use the mailbox to send messages. After this permission is assigned to a delegate, the **From** address in any message sent by the delegate indicates that the message was sent by the delegate on behalf of the mailbox owner. 
+- **Send on Behalf**: This permission also allows a delegate to use the mailbox to send messages. After this permission is assigned to a delegate, the **From** address in any message sent by the delegate indicates that the message was sent by the delegate on behalf of the mailbox owner. 
+
+**Notes**:
     
-> [!NOTE]
-> If you assign the Full Access, Send As, or Send on Behalf permission to access a mailbox that is hidden from address lists, the delegate won't be able to open the mailbox or send messages. 
+  - If you assign the Full Access, Send As, or Send on Behalf permission to access a mailbox that's hidden from address lists, the delegate won't be able to open the mailbox or send messages. 
+
+  - If you assign both the Send As and Send on Behalf permission, Send on Behalf is always used.
   
 ## What do you need to know before you begin?
 

@@ -39,15 +39,15 @@ After you've prepared your environment for Exchange Server, use the Exchange Dep
 
 - Some prerequisites require you to reboot the server to complete installation.
 
-    > [!NOTE]
-    > You can't upgrade Windows from one version to another, or from Standard to Datacenter, when Exchange is installed on the server.
+> [!NOTE]
+> You can't upgrade Windows from one version to another, or from Standard to Datacenter, when Exchange is installed on the server.
 ::: moniker-end
 
 - Verify the [Windows operating system requirements for Exchange Server](system-requirements.md#operating-system).
 
 ::: moniker range="exchserver-2019"
-    > [!NOTE]
-    > New to Exchange 2019 is the ability to upgrade your operating system to a newer version while Exchange is installed on Windows Server 2019 or later.
+> [!NOTE]
+> New to Exchange 2019 is the ability to upgrade your operating system to a newer version while Exchange is installed on Windows Server 2019 or later.
 ::: moniker-end
     
 - Verify the computer is joined to the appropriate internal Active Directory domain.
