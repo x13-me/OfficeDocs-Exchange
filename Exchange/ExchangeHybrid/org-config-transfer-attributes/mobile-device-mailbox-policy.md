@@ -1,59 +1,76 @@
- **Mobile Device Mailbox Policy**
- The following attributes of Mobile Device Mailbox Policy are copied from an on-premises Exchange organization to Exchange Online when the Organization Configuration Transfer option is selected in the Hybrid Configuration Wizard.
+---
+title: "Mobile Device Mailbox Policy attributes"
+ms.author: kchandra
+author: ChandraKavya
+manager: serdars
+ms.reviewer: dstrome
+ms.date: 10/04/2018
+ms.audience: ITPro
+ms.topic: article
+ms.prod: exchange-server-it-pro
+localization_priority: Normal
+ms.collection:
+- Ent_O365_Hybrid
+- Hybrid
+description: "Organization configuration transfer attributes can be copied by the Hybrid Configuration Wizard from your on-premises organization to Exchange Online to help simplify your hybrid deployment"
+---
 
-|||
+#Mobile Device Mailbox Policy attributes
+
+ The following attributes of Mobile Device Mailbox Policy are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
+
+|**MobileDeviceMailboxPolicy**  |**Available In**  |
 |:-----|:-----|
-|**MobileDeviceMailboxPolicy** <br/> |**Available In** <br/> |
-| AllowBluetooth  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowBrowser  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowCamera  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowConsumerEmail  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowDesktopSync  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowExternalDeviceManagement  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowHTMLEmail  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowInternetSharing  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowIrDA  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowMobileOTAUpdate  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowNonProvisionableDevices  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowPOPIMAPEmail  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowRemoteDesktop  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowSimplePassword  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowSMIMEEncryptionAlgorithmNegotiation  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowSMIMESoftCerts  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowStorageCard  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowTextMessaging  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowUnsignedApplications  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowUnsignedInstallationPackages  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowWiFi  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AlphanumericPasswordRequired  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| ApprovedApplicationList  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AttachmentsEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| DeviceEncryptionEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| DevicePolicyRefreshInterval  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| Identity  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| IrmEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| IsDefault  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| MaxAttachmentSize  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| MaxCalendarAgeFilter  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| MaxEmailAgeFilter  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| MaxEmailBodyTruncationSize  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| MaxEmailHTMLBodyTruncationSize  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| MaxInactivityTimeLock  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| MaxPasswordFailedAttempts  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| MinPasswordComplexCharacters  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| MinPasswordLength  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| Name  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| PasswordEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| PasswordExpiration  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| PasswordHistory  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| PasswordRecoveryEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| RequireDeviceEncryption  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| RequireEncryptedSMIMEMessages  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| RequireEncryptionSMIMEAlgorithm  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| RequireManualSyncWhenRoaming  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| RequireSignedSMIMEAlgorithm  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| RequireSignedSMIMEMessages  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| RequireStorageCardEncryption  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| UnapprovedInROMApplicationList  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| UNCAccessEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| WSSAccessEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
+| AllowBluetooth   | Exchange 2010, 2013, 2016   |
+| AllowBrowser   | Exchange 2010, 2013, 2016   |
+| AllowCamera   | Exchange 2010, 2013, 2016   |
+| AllowConsumerEmail   | Exchange 2010, 2013, 2016   |
+| AllowDesktopSync   | Exchange 2010, 2013, 2016   |
+| AllowExternalDeviceManagement   | Exchange 2010, 2013, 2016   |
+| AllowHTMLEmail   | Exchange 2010, 2013, 2016   |
+| AllowInternetSharing   | Exchange 2010, 2013, 2016   |
+| AllowIrDA   | Exchange 2010, 2013, 2016   |
+| AllowMobileOTAUpdate   | Exchange 2010, 2013, 2016   |
+| AllowNonProvisionableDevices   | Exchange 2010, 2013, 2016   |
+| AllowPOPIMAPEmail   | Exchange 2010, 2013, 2016   |
+| AllowRemoteDesktop   | Exchange 2010, 2013, 2016   |
+| AllowSimplePassword   | Exchange 2010, 2013, 2016   |
+| AllowSMIMEEncryptionAlgorithmNegotiation   | Exchange 2010, 2013, 2016   |
+| AllowSMIMESoftCerts   | Exchange 2010, 2013, 2016   |
+| AllowStorageCard   | Exchange 2010, 2013, 2016   |
+| AllowTextMessaging   | Exchange 2010, 2013, 2016   |
+| AllowUnsignedApplications   | Exchange 2010, 2013, 2016   |
+| AllowUnsignedInstallationPackages   | Exchange 2010, 2013, 2016   |
+| AllowWiFi   | Exchange 2010, 2013, 2016   |
+| AlphanumericPasswordRequired   | Exchange 2010, 2013, 2016   |
+| ApprovedApplicationList   | Exchange 2010, 2013, 2016   |
+| AttachmentsEnabled   | Exchange 2010, 2013, 2016   |
+| DeviceEncryptionEnabled   | Exchange 2010, 2013, 2016   |
+| DevicePolicyRefreshInterval   | Exchange 2010, 2013, 2016   |
+| Identity   | Exchange 2010, 2013, 2016   |
+| IrmEnabled   | Exchange 2010, 2013, 2016   |
+| IsDefault   | Exchange 2010, 2013, 2016   |
+| MaxAttachmentSize   | Exchange 2010, 2013, 2016   |
+| MaxCalendarAgeFilter   | Exchange 2010, 2013, 2016   |
+| MaxEmailAgeFilter   | Exchange 2010, 2013, 2016   |
+| MaxEmailBodyTruncationSize   | Exchange 2010, 2013, 2016   |
+| MaxEmailHTMLBodyTruncationSize   | Exchange 2010, 2013, 2016   |
+| MaxInactivityTimeLock   | Exchange 2010, 2013, 2016   |
+| MaxPasswordFailedAttempts   | Exchange 2010, 2013, 2016   |
+| MinPasswordComplexCharacters   | Exchange 2010, 2013, 2016   |
+| MinPasswordLength   | Exchange 2010, 2013, 2016   |
+| Name   | Exchange 2010, 2013, 2016   |
+| PasswordEnabled   | Exchange 2010, 2013, 2016   |
+| PasswordExpiration   | Exchange 2010, 2013, 2016   |
+| PasswordHistory   | Exchange 2010, 2013, 2016   |
+| PasswordRecoveryEnabled   | Exchange 2010, 2013, 2016   |
+| RequireDeviceEncryption   | Exchange 2010, 2013, 2016   |
+| RequireEncryptedSMIMEMessages   | Exchange 2010, 2013, 2016   |
+| RequireEncryptionSMIMEAlgorithm   | Exchange 2010, 2013, 2016   |
+| RequireManualSyncWhenRoaming   | Exchange 2010, 2013, 2016   |
+| RequireSignedSMIMEAlgorithm   | Exchange 2010, 2013, 2016   |
+| RequireSignedSMIMEMessages   | Exchange 2010, 2013, 2016   |
+| RequireStorageCardEncryption   | Exchange 2010, 2013, 2016   |
+| UnapprovedInROMApplicationList   | Exchange 2010, 2013, 2016   |
+| UNCAccessEnabled   | Exchange 2010, 2013, 2016   |
+| WSSAccessEnabled   | Exchange 2010, 2013, 2016   |

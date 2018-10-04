@@ -1,65 +1,82 @@
- **OWA Mailbox Policy**
- 
-The following attributes of OWA MAilbox Policy are copied from an on-premises Exchange organization to Exchange Online when the Organization Configuration Transfer option is selected in the Hybrid Configuration Wizard.
-|||
+---
+title: "OWA Mailbox Policy attributes"
+ms.author: kchandra
+author: ChandraKavya
+manager: serdars
+ms.reviewer: dstrome
+ms.date: 10/04/2018
+ms.audience: ITPro
+ms.topic: article
+ms.prod: exchange-server-it-pro
+localization_priority: Normal
+ms.collection:
+- Ent_O365_Hybrid
+- Hybrid
+description: "Organization configuration transfer attributes can be copied by the Hybrid Configuration Wizard from your on-premises organization to Exchange Online to help simplify your hybrid deployment"
+---
+
+# OWA Mailbox Policy attributes
+
+The following attributes of OWA MAilbox Policy are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
+
+|**OWAMailboxPolicy**  |**Available In**  |
 |:-----|:-----|
-|**OWAMailboxPolicy** <br/> |**Available In** <br/> |
-| ActionForUnknownFileAndMIMETypes  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| ActiveSyncIntegrationEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllAddressListsEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowCopyContactsToDeviceAddressBook  <br/> | Exchange 2013, 2016  <br/> |
-| AllowedFileTypes  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowedMimeTypes  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| AllowOfflineOn  <br/> | Exchange 2013, 2016  <br/> |
-| BlockedFileTypes  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| BlockedMimeTypes  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| CalendarEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| ClassicAttachmentsEnabled  <br/> | Exchange 2016  <br/> |
-| ContactsEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| DefaultTheme  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| DelegateAccessEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| DirectFileAccessOnPrivateComputersEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| DirectFileAccessOnPublicComputersEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| DisplayPhotosEnabled  <br/> | Exchange 2013, 2016  <br/> |
-| ExplicitLogonEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| ForceSaveAttachmentFilteringEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| ForceSaveFileTypes  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| ForceSaveMimeTypes  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| ForceWacViewingFirstOnPrivateComputers  <br/> | Exchange 2013, 2016  <br/> |
-| ForceWacViewingFirstOnPublicComputers  <br/> | Exchange 2013, 2016  <br/> |
-| GlobalAddressListEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| Identity  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| InstantMessagingEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| InstantMessagingType  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| IRMEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| IsDefault  <br/> | Exchange 2013, 2016  <br/> |
-| JournalEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| LogonAndErrorLanguage  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| Name  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| NotesEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| OrganizationEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| OutboundCharset  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| OWALightEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| RecoverDeletedItemsEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| ReferenceAttachmentsEnabled  <br/> | Exchange 2016  <br/> |
-| RemindersAndNotificationsEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| ReportJunkEmailEnabled  <br/> | Exchange 2013, 2016  <br/> |
-| RulesEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| SaveAttachmentsToCloudEnabled  <br/> | Exchange 2016  <br/> |
-| SearchFoldersEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| SetPhotoEnabled  <br/> | Exchange 2013, 2016  <br/> |
-| SetPhotoURL  <br/> | Exchange 2013, 2016  <br/> |
-| SignaturesEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| SpellCheckerEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| TasksEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| TextMessagingEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| ThemeSelectionEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| UMIntegrationEnabled  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| UseGB18030  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| UseISO885915  <br/> | Exchange 2010, 2013, 2016  <br/> |
-| WacEditingEnabled  <br/> | Exchange 2016  <br/> |
-| WacExternalServicesEnabled  <br/> | Exchange 2013, 2016  <br/> |
-| WacOMEXEnabled  <br/> | Exchange 2013, 2016  <br/> |
-| WacViewingOnPrivateComputersEnabled  <br/> | Exchange 2013, 2016  <br/> |
-| WacViewingOnPublicComputersEnabled  <br/> | Exchange 2013, 2016  <br/> |
-| WebPartsFrameOptionsType  <br/> | Exchange 2013, 2016  <br/> |
+| ActionForUnknownFileAndMIMETypes   | Exchange 2010, 2013, 2016   |
+| ActiveSyncIntegrationEnabled   | Exchange 2010, 2013, 2016   |
+| AllAddressListsEnabled   | Exchange 2010, 2013, 2016   |
+| AllowCopyContactsToDeviceAddressBook   | Exchange 2013, 2016   |
+| AllowedFileTypes   | Exchange 2010, 2013, 2016   |
+| AllowedMimeTypes   | Exchange 2010, 2013, 2016   |
+| AllowOfflineOn   | Exchange 2013, 2016   |
+| BlockedFileTypes   | Exchange 2010, 2013, 2016   |
+| BlockedMimeTypes   | Exchange 2010, 2013, 2016   |
+| CalendarEnabled   | Exchange 2010, 2013, 2016   |
+| ClassicAttachmentsEnabled   | Exchange 2016   |
+| ContactsEnabled   | Exchange 2010, 2013, 2016   |
+| DefaultTheme   | Exchange 2010, 2013, 2016   |
+| DelegateAccessEnabled   | Exchange 2010, 2013, 2016   |
+| DirectFileAccessOnPrivateComputersEnabled   | Exchange 2010, 2013, 2016   |
+| DirectFileAccessOnPublicComputersEnabled   | Exchange 2010, 2013, 2016   |
+| DisplayPhotosEnabled   | Exchange 2013, 2016   |
+| ExplicitLogonEnabled   | Exchange 2010, 2013, 2016   |
+| ForceSaveAttachmentFilteringEnabled   | Exchange 2010, 2013, 2016   |
+| ForceSaveFileTypes   | Exchange 2010, 2013, 2016   |
+| ForceSaveMimeTypes   | Exchange 2010, 2013, 2016   |
+| ForceWacViewingFirstOnPrivateComputers   | Exchange 2013, 2016   |
+| ForceWacViewingFirstOnPublicComputers   | Exchange 2013, 2016   |
+| GlobalAddressListEnabled   | Exchange 2010, 2013, 2016   |
+| Identity   | Exchange 2010, 2013, 2016   |
+| InstantMessagingEnabled   | Exchange 2010, 2013, 2016   |
+| InstantMessagingType   | Exchange 2010, 2013, 2016   |
+| IRMEnabled   | Exchange 2010, 2013, 2016   |
+| IsDefault   | Exchange 2013, 2016   |
+| JournalEnabled   | Exchange 2010, 2013, 2016   |
+| LogonAndErrorLanguage   | Exchange 2010, 2013, 2016   |
+| Name   | Exchange 2010, 2013, 2016   |
+| NotesEnabled   | Exchange 2010, 2013, 2016   |
+| OrganizationEnabled   | Exchange 2010, 2013, 2016   |
+| OutboundCharset   | Exchange 2010, 2013, 2016   |
+| OWALightEnabled   | Exchange 2010, 2013, 2016   |
+| RecoverDeletedItemsEnabled   | Exchange 2010, 2013, 2016   |
+| ReferenceAttachmentsEnabled   | Exchange 2016   |
+| RemindersAndNotificationsEnabled   | Exchange 2010, 2013, 2016   |
+| ReportJunkEmailEnabled   | Exchange 2013, 2016   |
+| RulesEnabled   | Exchange 2010, 2013, 2016   |
+| SaveAttachmentsToCloudEnabled   | Exchange 2016   |
+| SearchFoldersEnabled   | Exchange 2010, 2013, 2016   |
+| SetPhotoEnabled   | Exchange 2013, 2016   |
+| SetPhotoURL   | Exchange 2013, 2016   |
+| SignaturesEnabled   | Exchange 2010, 2013, 2016   |
+| SpellCheckerEnabled   | Exchange 2010, 2013, 2016   |
+| TasksEnabled   | Exchange 2010, 2013, 2016   |
+| TextMessagingEnabled   | Exchange 2010, 2013, 2016   |
+| ThemeSelectionEnabled   | Exchange 2010, 2013, 2016   |
+| UMIntegrationEnabled   | Exchange 2010, 2013, 2016   |
+| UseGB18030   | Exchange 2010, 2013, 2016   |
+| UseISO885915   | Exchange 2010, 2013, 2016   |
+| WacEditingEnabled   | Exchange 2016   |
+| WacExternalServicesEnabled   | Exchange 2013, 2016   |
+| WacOMEXEnabled   | Exchange 2013, 2016   |
+| WacViewingOnPrivateComputersEnabled   | Exchange 2013, 2016   |
+| WacViewingOnPublicComputersEnabled   | Exchange 2013, 2016   |
+| WebPartsFrameOptionsType   | Exchange 2013, 2016   |

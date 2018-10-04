@@ -1,62 +1,79 @@
-**Active Sync Mailbox Policy**
+---
+title: "Active Sync Mailbox Policy attributes"
+ms.author: kchandra
+author: ChandraKavya
+manager: serdars
+ms.reviewer: dstrome
+ms.date: 10/04/2018
+ms.audience: ITPro
+ms.topic: article
+ms.prod: exchange-server-it-pro
+localization_priority: Normal
+ms.collection:
+- Ent_O365_Hybrid
+- Hybrid
+description: "Organization configuration transfer attributes can be copied by the Hybrid Configuration Wizard from your on-premises organization to Exchange Online to help simplify your hybrid deployment"
+---
+
+# Active Sync Mailbox Policy attributes
 
 
-The following attributes of Active Sync Mailbox Policy are copied from an on-premises Exchange organization to Exchange Online when the Organization Configuration Transfer option is selected in the Hybrid Configuration Wizard.
+The following attributes of Active Sync Mailbox Policy are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
   
 |**ActiveSyncMailboxPolicy**|**Available In**|
 |:-----|:-----|
-|AllowApplePushNotifications  <br/> |Exchange 2013, 2016  <br/> |
-|AllowBluetooth  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowBrowser  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowCamera  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowConsumerEmail  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowDesktopSync  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowExternalDeviceManagement  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowHTMLEmail  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowInternetSharing  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowIrDA  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowMobileOTAUpdate  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowNonProvisionableDevices  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowPOPIMAPEmail  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowRemoteDesktop  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowSimpleDevicePassword  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowSMIMEEncryptionAlgorithmNegotiation  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowSMIMESoftCerts  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowStorageCard  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowTextMessaging  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowUnsignedApplications  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowUnsignedInstallationPackages  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AllowWiFi  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AlphanumericDevicePasswordRequired  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|ApprovedApplicationList  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|AttachmentsEnabled  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|DeviceEncryptionEnabled  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|DevicePasswordEnabled  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|DevicePasswordExpiration  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|DevicePasswordHistory  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|DevicePolicyRefreshInterval  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|Identity  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|IrmEnabled  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|IsDefault  <br/> |Exchange 2013, 2016  <br/> |
-|IsDefaultPolicy  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|MaxAttachmentSize  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|MaxCalendarAgeFilter  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|MaxDevicePasswordFailedAttempts  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|MaxEmailAgeFilter  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|MaxEmailBodyTruncationSize  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|MaxEmailHTMLBodyTruncationSize  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|MaxInactivityTimeDeviceLock  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|MinDevicePasswordComplexCharacters  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|MinDevicePasswordLength  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|Name  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|PasswordRecoveryEnabled  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|RequireDeviceEncryption  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|RequireEncryptedSMIMEMessages  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|RequireEncryptionSMIMEAlgorithm  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|RequireManualSyncWhenRoaming  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|RequireSignedSMIMEAlgorithm  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|RequireSignedSMIMEMessages  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|RequireStorageCardEncryption  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|UnapprovedInROMApplicationList  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|UNCAccessEnabled  <br/> |Exchange 2010, 2013, 2016  <br/> |
-|WSSAccessEnabled  <br/> |Exchange 2010, 2013, 2016  <br/> |
+|AllowApplePushNotifications   |Exchange 2013, 2016   |
+|AllowBluetooth   |Exchange 2010, 2013, 2016   |
+|AllowBrowser   |Exchange 2010, 2013, 2016   |
+|AllowCamera   |Exchange 2010, 2013, 2016   |
+|AllowConsumerEmail   |Exchange 2010, 2013, 2016   |
+|AllowDesktopSync   |Exchange 2010, 2013, 2016   |
+|AllowExternalDeviceManagement   |Exchange 2010, 2013, 2016   |
+|AllowHTMLEmail   |Exchange 2010, 2013, 2016   |
+|AllowInternetSharing   |Exchange 2010, 2013, 2016   |
+|AllowIrDA   |Exchange 2010, 2013, 2016   |
+|AllowMobileOTAUpdate   |Exchange 2010, 2013, 2016   |
+|AllowNonProvisionableDevices   |Exchange 2010, 2013, 2016   |
+|AllowPOPIMAPEmail   |Exchange 2010, 2013, 2016   |
+|AllowRemoteDesktop   |Exchange 2010, 2013, 2016   |
+|AllowSimpleDevicePassword   |Exchange 2010, 2013, 2016   |
+|AllowSMIMEEncryptionAlgorithmNegotiation   |Exchange 2010, 2013, 2016   |
+|AllowSMIMESoftCerts   |Exchange 2010, 2013, 2016   |
+|AllowStorageCard   |Exchange 2010, 2013, 2016   |
+|AllowTextMessaging   |Exchange 2010, 2013, 2016   |
+|AllowUnsignedApplications   |Exchange 2010, 2013, 2016   |
+|AllowUnsignedInstallationPackages   |Exchange 2010, 2013, 2016   |
+|AllowWiFi   |Exchange 2010, 2013, 2016   |
+|AlphanumericDevicePasswordRequired   |Exchange 2010, 2013, 2016   |
+|ApprovedApplicationList   |Exchange 2010, 2013, 2016   |
+|AttachmentsEnabled   |Exchange 2010, 2013, 2016   |
+|DeviceEncryptionEnabled   |Exchange 2010, 2013, 2016   |
+|DevicePasswordEnabled   |Exchange 2010, 2013, 2016   |
+|DevicePasswordExpiration   |Exchange 2010, 2013, 2016   |
+|DevicePasswordHistory   |Exchange 2010, 2013, 2016   |
+|DevicePolicyRefreshInterval   |Exchange 2010, 2013, 2016   |
+|Identity   |Exchange 2010, 2013, 2016   |
+|IrmEnabled   |Exchange 2010, 2013, 2016   |
+|IsDefault   |Exchange 2013, 2016   |
+|IsDefaultPolicy   |Exchange 2010, 2013, 2016   |
+|MaxAttachmentSize   |Exchange 2010, 2013, 2016   |
+|MaxCalendarAgeFilter   |Exchange 2010, 2013, 2016   |
+|MaxDevicePasswordFailedAttempts   |Exchange 2010, 2013, 2016   |
+|MaxEmailAgeFilter   |Exchange 2010, 2013, 2016   |
+|MaxEmailBodyTruncationSize   |Exchange 2010, 2013, 2016   |
+|MaxEmailHTMLBodyTruncationSize   |Exchange 2010, 2013, 2016   |
+|MaxInactivityTimeDeviceLock   |Exchange 2010, 2013, 2016   |
+|MinDevicePasswordComplexCharacters   |Exchange 2010, 2013, 2016   |
+|MinDevicePasswordLength   |Exchange 2010, 2013, 2016   |
+|Name   |Exchange 2010, 2013, 2016   |
+|PasswordRecoveryEnabled   |Exchange 2010, 2013, 2016   |
+|RequireDeviceEncryption   |Exchange 2010, 2013, 2016   |
+|RequireEncryptedSMIMEMessages   |Exchange 2010, 2013, 2016   |
+|RequireEncryptionSMIMEAlgorithm   |Exchange 2010, 2013, 2016   |
+|RequireManualSyncWhenRoaming   |Exchange 2010, 2013, 2016   |
+|RequireSignedSMIMEAlgorithm   |Exchange 2010, 2013, 2016   |
+|RequireSignedSMIMEMessages   |Exchange 2010, 2013, 2016   |
+|RequireStorageCardEncryption   |Exchange 2010, 2013, 2016   |
+|UnapprovedInROMApplicationList   |Exchange 2010, 2013, 2016   |
+|UNCAccessEnabled   |Exchange 2010, 2013, 2016   |
+|WSSAccessEnabled   |Exchange 2010, 2013, 2016   |
