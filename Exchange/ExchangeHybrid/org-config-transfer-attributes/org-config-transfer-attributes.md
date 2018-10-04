@@ -20,7 +20,11 @@ description: "Organization configuration transfer attributes can be copied by th
 The attributes listed in the following topics can be copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
 [OWA Mailbox Policy](owa-mailbox-policy.md)
+
 [Retention Policy](retention-policy.md)
+
 [Retention Policy Tags](retention-policy-tags.md)
+
 [Mobile Device Mailbox Policy](mobile-device-mailbox-policy.md)
+
 [Active Sync Mailbox Policy](active-sync-mailbox-policy.md)
