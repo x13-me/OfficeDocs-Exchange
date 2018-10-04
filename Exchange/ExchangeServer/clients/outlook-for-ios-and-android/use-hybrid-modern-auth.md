@@ -258,9 +258,11 @@ The following features are not supported for on-premises mailboxes using hybrid 
   
 **A**: Microsoft recommends that the on-premises endpoints for AutoDiscover and ActiveSync protocols be opened and accessible from the Internet without any restrictions. In certain situations that may not be possible. For example, if you're in a co-existence period with another MDM solution, you may want to place restrictions on the ActiveSync protocol to prevent users from bypassing the third-party MDM solution while you migrate to Intune and Outlook for iOS and Android. If you must place restrictions on your on-premises firewall or gateway edge devices, Microsoft recommends filtering based on FQDN endpoints. If FQDN endpoints cannot be used, then filter on IP addresses. Make sure the following IP subnets and FQDNs are whitelisted:
   
-- All Exchange Online FQDNs and IP subnet ranges as defined in [Office 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2). Be sure to include the AutoDetect FQDNs and IP subnet ranges defined in row 11 within the Exchange Online FQDNs table; this is required because the AutoDetect service establishes connections to the on-premises infrastructure, as outlined in [Connection flow](use-hybrid-modern-auth.md#connectflow).
+- All Exchange Online FQDNs and IP subnet ranges as defined in [Office 365 URLs and IP address ranges](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges). 
+
+- The AutoDetect FQDNs and IP subnet ranges defined in row 9 as outlined in [Additional Office 365 IP Addresses and URLs not included in the web services](https://docs.microsoft.com/en-us/office365/enterprise/additional-office365-ip-addresses-and-urls). This is required because the AutoDetect service establishes connections to the on-premises infrastructure..
     
-- All Outlook iOS and Android app FQDNs as defined in [Network requests in Office 365 ProPlus and Mobile](https://support.office.com/article/eb73fcd1-ca88-4d02-a74b-2dd3a9f3364d?).
+- All Outlook iOS and Android amd Office mobile app FQDNs as defined in [Office 365 URLs and IP address ranges](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges).
      
 **Q**: My organization currently uses a third-party MDM solution to control mobile device connectivity. If I expose the Exchange ActiveSync namespace on the Internet, that introduces a way for users to bypass the third-party MDM solution during the co-existence period. How can I prevent this?
   
