@@ -50,7 +50,7 @@ A hybrid deployment enables the following features:
 ## Exchange hybrid deployment considerations
 <a name="considerations"> </a>
 
-You should consider the following before you implement an Exchange hybrid deployment:
+Consider the following before you implement an Exchange hybrid deployment:
   
 - **Hybrid deployment requirements** Before you configure a hybrid deployment, you need to make sure your on-premises organization meets all of the prerequisites required for a successful deployment. For more information, see [Hybrid deployment prerequisites](hybrid-deployment-prerequisites.md).
     
