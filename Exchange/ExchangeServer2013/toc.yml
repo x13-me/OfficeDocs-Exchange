@@ -2580,6 +2580,12 @@
         href: change-user-throttling-settings-for-specific-users-exchange-2013-help.md
       - name: Change user throttling settings for all users in your organization
         href: change-user-throttling-settings-for-all-users-in-your-organization-exchange-2013-help.md
+  - name: Exchange Server 2013 Management Pack Guide
+    href: management
+  - name: Exchange Server 2013 Management Pack Health Sets
+    href: management/health
+  - name: Exchange Server 2013 Technical Articles
+    name: technical-articles
   - name: About Exchange documentation
     href: https://docs.microsoft.com/en-us/exchange/about-exchange-documentation
     items:
