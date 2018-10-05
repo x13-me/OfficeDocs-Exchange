@@ -2585,7 +2585,7 @@
   - name: Exchange Server 2013 Management Pack Health Sets
     href: management/health
   - name: Exchange Server 2013 Technical Articles
-    name: technical-articles
+    href: technical-articles
   - name: About Exchange documentation
     href: https://docs.microsoft.com/en-us/exchange/about-exchange-documentation
     items:
