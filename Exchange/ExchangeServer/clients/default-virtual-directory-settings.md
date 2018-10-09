@@ -49,4 +49,4 @@ The following table lists the default settings on a stand-alone Exchange Mailbox
  
 ## See also
 
-[Virtual directory management](https://https://technet.microsoft.com/library/ff952752(v=exchg.150).aspx)
+[Virtual directory management](https://technet.microsoft.com/library/ff952752(v=exchg.150).aspx)
