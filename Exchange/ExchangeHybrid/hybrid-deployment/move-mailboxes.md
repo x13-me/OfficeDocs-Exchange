@@ -88,6 +88,9 @@ You can use the remote move migration wizard on the **Office 365** tab in the EA
 7. On the **Move configuration** page, enter a name for the migration batch in the **New migration batch name** text field. Use the down arrow ![Down Arrow Icon](../media/ITPro_EAC_DownArrowIcon.gif) to select the **Target delivery domain for the mailboxes that are migrating to Office 365**. In most hybrid deployments, this is the primary SMTP domain used for the Exchange Online organization mailboxes. For example, contoso.mail.onmicrosoft.com. Verify that the **Move primary mailbox along with archive mailbox** option is selected, and then click **Next**.
     
 8. On the **Start the batch** page, select at least one recipient to receive the batch complete report. Verify that the **Automatically start the batch** option is selected, and then select the **Automatically complete the migration batch** check box. Click **New**.
+
+    > [!NOTE]
+    > If you select **Manual Complete the batch** in step **8**, Exchange Online will only synchronize 95% of each mailbox in that batch. Exchange Online will periodically synchronize the batch to keep each mailbox at 95% synchronization until the batch is manually completed by clicking the **Complete this migration batch**, at which point the remaining 5% is migrated. 
     
 ### Move Exchange Online mailboxes to the on-premises organization
 <a name="bkmk_eacExo"> </a>
