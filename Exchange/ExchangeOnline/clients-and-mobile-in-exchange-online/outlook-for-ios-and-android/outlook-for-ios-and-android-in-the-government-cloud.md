@@ -99,9 +99,7 @@ Prior to Outlook for iOS and Android obtaining FedRAMP approval and certificatio
 Features of Outlook for iOS and Android that are not supported in GCC mode.
   
 - **In-app support**: users will not be able to submit support tickets from within the app. They should contact their internal help desk. If necessary, the organization's IT department can then contact Microsoft Support directly.
-    
-- **Full-text notifications**: Notifications are obfuscated, which means instead of seeing the subject and first line of text in a new message, the notification will simply say "New messages."
-    
+   
 - **Multiple accounts**: Only one Office 365 GCC account and one OneDrive for Business account can be added to a single device. Personal accounts cannot be added. Customers can use another device for personal accounts, or an ActiveSync client from another provider.
     
 
