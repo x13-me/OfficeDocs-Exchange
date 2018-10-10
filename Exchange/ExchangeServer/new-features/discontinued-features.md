@@ -115,6 +115,7 @@ This section lists the Exchange 2010 features that are no longer available in Ex
 |Message flags|The ability to set a custom date on a message flag isn't available in Outlook Web App. You can use Outlook to set custom dates.|
 |Chat contact list|The chat contact list that appeared in the folder list in Outlook Web App for Exchange 2010 is no longer available.|
 |Search folders|The ability for users to use Search folders isn't currently available in Outlook Web App.|
+|Web Parts|Outlook on the web no longer includes support for Web Parts. Customers will need to develop replacement functionality to meet this need in their environments.|
  
 ### Mail flow
 
