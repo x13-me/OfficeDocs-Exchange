@@ -73,14 +73,14 @@ A previously granted access token is valid until it expires. Upon expiration, th
   
 ### Q: Does Outlook for iOS and Android support certificate-based authentication?
 
-Yes, Outlook for iOS and Android supports certificate-based authentication. For more information, see:
+Yes, Outlook for iOS and Android supports certificate-based authentication for modern authentication-enabled accounts (Office 365 accounts or [on-premises accounts leveraging hybrid modern authentication](http://aka.ms/hmaom)). For more information, see:
   
 - [Configuring Active Directory Federation Services (ADFS) with Office 365](https://go.microsoft.com/fwlink/p/?linkid=849806)
     
 - [Certificate-based authentication on iOS](https://go.microsoft.com/fwlink/p/?linkid=849807)
     
 - [Certificate-based authentication on Android](https://go.microsoft.com/fwlink/p/?linkid=849808)
-    
+
 ### Q: What does background synchronization enable? I notice that when I launch the app with it enabled, I still have to wait for messages to download, even after I've received new mail notifications for them.
 
 Background synchronization enables new message notifications, badge count updates, and background synchronization of mailbox information for Outlook for iOS and Android. If background synchronization is disabled by the user in iOS or Android settings, then the user must launch the app and keep it in the foreground in order to synchronize mailbox information. 
