@@ -4,7 +4,7 @@ ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
 manager: serdars
-ms.date: 9/4/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -201,7 +201,7 @@ In addition to the above minimum policy requirements, you should consider deploy
   
 ### Enable hybrid Modern Authentication
 
-1. If you have not enabled hybrid Modern Authentication, then review and implement the prerequisites outlined in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](https://support.office.com/article/ef753b32-7251-4c9e-b442-1a5aec14e58d?). Once the prerequesites are complete, implement the steps outlined in [How to configure Exchange Server on-premises to use hybrid Modern Authentication](https://support.office.com/article/cef3044d-d4cb-4586-8e82-ee97bd3b14ad?).
+1. If you haven't enabled hybrid Modern Authentication, review the prerequisites as outlined in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](https://support.office.com/article/ef753b32-7251-4c9e-b442-1a5aec14e58d?). After you've completed the prereqsuisites, do the steps in [How to configure Exchange Server on-premises to use hybrid Modern Authentication](https://support.office.com/article/cef3044d-d4cb-4586-8e82-ee97bd3b14ad?).
   
 2. Create an Exchange on-premises device access allow rule to allow Exchange Online to connect to your on-premises environment using the ActiveSync protocol:
     
