@@ -20,7 +20,7 @@ Data loss prevention (DLP) is an important issue for enterprise message systems 
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/31f2b48e-93ed-4be3-b46d-e7230c0fed8f?autoplay=false]
   
-DLP policies are simple packages that contain sets of conditions, which are made up of transport rules, actions, and exceptions that you create in the Exchange Administration Center (EAC) and then activate to filter email messages and attachments. You can create a DLP policy, but choose to not activate it. This allows you to test your policies without affecting mail flow. DLP policies can use the full power of existing transport rules. In fact, a number of new types of transport rules have been created in Microsoft Exchange Server and Exchange Online in order to accomplish new DLP capability. One important new feature of transport rules is a new approach to classifying sensitive information that can be incorporated into mail flow processing. This new DLP feature performs deep content analysis through keyword matches, dictionary matches, regular expression evaluation, and other content examination to detect content that violates organizational DLP policies. Exchange Online and Exchange Server include [Document Fingerprinting](document-fingerprinting.md), which helps you detect sensitive information in standard forms. For more information about transport rules, see [Transport Rules](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx) (Exchange Server) or [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md), and [Integrating sensitive information rules with transport rules](integrate-sensitive-information-rules.md). You can also manage your DLP policies by using Exchange Management Shell cmdlets. For more information about policy and compliance cmdlets, see [Messaging Policy and Compliance Cmdlets](http://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx).
+DLP policies are simple packages that contain sets of conditions, which are made up of transport rules, actions, and exceptions that you create in the Exchange Administration Center (EAC) and then activate to filter email messages and attachments. You can create a DLP policy, but choose to not activate it. This allows you to test your policies without affecting mail flow. DLP policies can use the full power of existing transport rules. In fact, a number of new types of transport rules have been created in Microsoft Exchange Server and Exchange Online in order to accomplish new DLP capability. One important new feature of transport rules is a new approach to classifying sensitive information that can be incorporated into mail flow processing. This new DLP feature performs deep content analysis through keyword matches, dictionary matches, regular expression evaluation, and other content examination to detect content that violates organizational DLP policies. For more information about transport rules, see [Transport Rules](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx) (Exchange Server) or [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md), and [Integrating sensitive information rules with transport rules](integrate-sensitive-information-rules.md). You can also manage your DLP policies by using Exchange Management Shell cmdlets. For more information about policy and compliance cmdlets, see [Messaging Policy and Compliance Cmdlets](http://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx).
   
 In addition to the customizable DLP policies themselves, you can also inform email senders that they may be about to violate one of your policies—even before they send an offending message. You can accomplish this by configuring Policy Tips. Policy Tips are similar to MailTips, and can be configured to present a brief note in the Microsoft Outlook 2013 client that provides information about possible policy violations to a person creating a message. In Exchange Online and in Exchange Server, Policy Tips are also displayed in Outlook Web App and OWA for Devices. For more information, see [Policy Tips](policy-tips.md).
   
@@ -50,11 +50,6 @@ After you have added a policy, you can review and change its rules, make the pol
 When you create or change DLP policies, you can include rules that include checks for sensitive information. The sensitive information types listed in the [Sensitive Information Types Inventory](http://technet.microsoft.com/library/98b81f9c-87bb-4905-8e53-04621c3ae74d.aspx) topic are available to be used in your policies. The conditions that you establish within a policy, such as how many times something has to be found before an action is taken or exactly what that action is can be customized within your new custom policies in order to meet your specific policy requirements. For more information about creating DLP policies see, [Create a custom DLP policy](create-custom-dlp-policy.md). For more information about the full suite transport rules, see [Transport Rules](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx) (Exchange Server) or [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md).
   
 To make it easy for you to make use of the sensitive information-related rules, Microsoft has supplied policy templates that already include some of the sensitive information types. You cannot add conditions for all of the sensitive information types listed here to policy templates however, because the templates are designed to help you focus on the most-common types of compliance-related data within your organization. For more information about the pre-built templates, see [DLP policy templates supplied in Exchange](dlp-policy-templates.md). You can create numerous DLP policies for your organization and have them all enabled so that many disparate types of information are examined. You can also create a DLP policy that is not based on an existing template. To begin creating such a policy, see [Create a custom DLP policy](create-custom-dlp-policy.md). For more information about sensitive information types, see [Sensitive Information Types Inventory](http://technet.microsoft.com/library/98b81f9c-87bb-4905-8e53-04621c3ae74d.aspx).
-  
-## Detecting sensitive form data with Document Fingerprinting
-<a name="dlp_fingerprinting"> </a>
-
-With Exchange Server and Exchange Online, you can use [Document Fingerprinting](document-fingerprinting.md) to easily create a sensitive information type based on a standard form. To learn how to protect form data, see [Protect form data with document fingerprinting](protect-data-with-fingerprinting.md).
   
 ## Policy Tips notify users about sensitive content expectations
 <a name="dlp_tips"> </a>
@@ -90,9 +85,7 @@ Exchange Server
 - [DLP Procedures](http://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df.aspx)
     
 - [DLP policy detection reports](http://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx)
-    
-- [Document Fingerprinting](document-fingerprinting.md)
-    
+       
 - [Messaging Policy and Compliance Cmdlets](http://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx)
     
 Exchange Online
@@ -102,7 +95,3 @@ Exchange Online
 - [DLP Procedures](http://technet.microsoft.com/library/925290cc-f3b4-401e-b6c7-9a216a726f17.aspx)
     
 - [DLP policy detection reports](http://technet.microsoft.com/library/84295dda-5bf7-4fa5-a1ee-3f761501cfe8.aspx)
-    
-- [Document Fingerprinting](document-fingerprinting.md)
-    
-

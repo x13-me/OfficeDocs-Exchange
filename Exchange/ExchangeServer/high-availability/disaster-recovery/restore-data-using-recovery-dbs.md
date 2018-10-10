@@ -3,19 +3,17 @@ title: "Restore data using a recovery database"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/4/2018
+ms.date: 7/9/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d64c18e7-16af-4bd8-a5c5-01206984d4d1
-description: "Summary: Step-by-step guidance for restoring a recovery database in Exchange 2016."
+description: "Summary: Step-by-step guidance for restoring a recovery database in Exchange Server 2016 or Exchange Server 2019."
 ---
 
 # Restore data using a recovery database
 
- **Summary**: Step-by-step guidance for restoring a recovery database in Exchange 2016.
-  
 A recovery database (RDB) is a special kind of mailbox database that allows you to mount and extract data from a restored mailbox database as part of a recovery operation. RDBs allow you to recover data from a backup or copy of a database without disrupting user access to current data.
   
 After you create an RDB, you can restore a mailbox database into the RDB by using a backup application or by copying a database and its log files into the RDB folder structure. Then you can use the [New-MailboxRestoreRequest](http://technet.microsoft.com/library/0b67defd-3c6c-4470-acfa-7f22a6c1d2bd.aspx) cmdlet to extract data from the recovered database. Once extracted, the data can then be exported to a folder or merged into an existing mailbox.

@@ -14,8 +14,6 @@ description: "Summary: Step-by-step guidance for restoring Exchange data from a 
 
 # Use Windows Server Backup to restore a backup of Exchange
 
- **Summary**: Step-by-step guidance for restoring Exchange data from a previous back up.
-  
 You can use Windows Server Backup to back up and restore Exchange databases. Exchange includes a plug-in for Windows Server Backup that allows you to make and restore Volume Shadow Copy Service (VSS)-based backups of Exchange data. For additional information, see [Using Windows Server Backup to back up and restore Exchange data](windows-server-backup.md).
   
 ## What do you need to know before you begin?

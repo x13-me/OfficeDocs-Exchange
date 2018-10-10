@@ -25,8 +25,27 @@ description: Exchange
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Exchange Server</h3>
-                                                    <p>Deploy and manage Exchange Server for your organization.</p>
+                                                    <h3>Exchange Server 2016 and Exchange Server 2019</h3>
+                                                    <p>Deploy and manage Exchange 2016 and Exchange 2019 for your organization.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/Exchange/exchange-server-2013-exchange-2013-help">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Exchange-Server-400x140.svg" alt="A monitor symbol and a server symbol" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Exchange Server 2013</h3>
+                                                    <p>Deploy and manage Exchange 2013 for your organization.</p>
                                                 </div>
                                             </div>
                                         </div>

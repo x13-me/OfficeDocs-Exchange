@@ -143,7 +143,7 @@ Click **Next**, and follow the instructions in the wizard. Click the **Help** or
 ### 3. Change your MX record to redirect your mail flow from the Internet to Office 365
 <a name="configO365E"> </a>
 
-To redirect email flow to Office 365, change the MX (mail exchange) record for your domain. For instructions on how to do this, see [Add MX record to route email](https://go.microsoft.com/fwlink/?LinkID=529074&amp;clcid=0x409).
+To redirect email flow to Office 365, change the MX (mail exchange) record for your domain. For instructions on how to do this, see [Add MX record to route email](https://go.microsoft.com/fwlink/?LinkID=529074&clcid=0x409).
   
 ## Part 2: Configure mail to flow from your email server to Office 365
 <a name="Part2configmail"> </a>

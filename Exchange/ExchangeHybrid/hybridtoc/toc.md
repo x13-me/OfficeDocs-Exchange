@@ -45,5 +45,9 @@
 ## [About Exchange documentation](../about-exchange-documentation/about-exchange-documentation.md)
 ### [Accessibility](../about-exchange-documentation/accessibility.md)
 ### [Third-party copyright notices](../about-exchange-documentation/third-party-copyright-notices.md)
-## [Organization Configuration Transfer Attributes](../organization-configuration-transfer-attributes.md)
-
+## [Organization Configuration Transfer Attributes](../org-config-transfer-attributes/org-config-transfer-attributes.md)
+### [OWA Mailbox Policy](../org-config-transfer-attributes/owa-mailbox-policy.md)
+### [Retention Policy](../org-config-transfer-attributes/retention-policy.md)
+### [Retention Policy Tags](../org-config-transfer-attributes/retention-policy-tags.md)
+### [Mobile Device Mailbox Policy](../org-config-transfer-attributes/mobile-device-mailbox-policy.md)
+### [Active Sync Mailbox Policy](../org-config-transfer-attributes/active-sync-mailbox-policy.md)

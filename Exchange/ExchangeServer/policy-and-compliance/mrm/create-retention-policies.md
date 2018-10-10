@@ -1,5 +1,5 @@
 ---
-title: "Create a retention policy in Exchange 2016"
+title: "Create a retention policy in Exchange Server"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d8806c98-fea5-492f-906d-f514e25361b2
-description: "Learn how to use retention policies to manage an email lifecycle in Exchange 2016. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users."
+description: "Learn how to use retention policies to manage an email lifecycle in Exchange Server. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users."
 ---
 
-# Create a retention policy in Exchange 2016
+# Create a retention policy in Exchange Server
 
-Learn how to use retention policies to manage an email lifecycle in Exchange 2016. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users.
+Learn how to use retention policies to manage an email lifecycle in Exchange 2016 and Exchange 2019. Retention policies are applied by creating retention tags, adding them to a retention policy, and applying the policy to mailbox users.
   
 ## What do you need to know before you begin?
 
@@ -26,7 +26,7 @@ Learn how to use retention policies to manage an email lifecycle in Exchange 201
     
 ## Step 1: Create a retention tag
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions in Exchange 2016](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
   
  **Use the Exchange admin center (EAC) to create a retention tag**
   
@@ -59,7 +59,7 @@ You need to be assigned permissions before you can perform this procedure or pro
   - **Permanently Delete**: Permanently deletes the item from the mailbox database.
     
     > [!IMPORTANT]
-    > Mailboxes or items subject to In-Place Hold or litigation hold will be retained and returned in In-Place eDiscovery searches. To learn more, see [In-Place Hold and Litigation Hold in Exchange 2016](../../policy-and-compliance/holds/holds.md).
+    > Mailboxes or items subject to In-Place Hold or litigation hold will be retained and returned in In-Place eDiscovery searches. To learn more, see [In-Place Hold and Litigation Hold in Exchange Server](../../policy-and-compliance/holds/holds.md).
   
   - **Move to Archive**: Available only if you're creating a DPT or a personal tag. Select this action to move items to the user's In-Place Archive.
     
@@ -107,7 +107,7 @@ New-RetentionPolicyTag -Name "Never Delete" -Type Personal -RetentionAction Dele
 
 ## Step 2: Create a retention policy
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions in Exchange 2016](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
   
  **Use the EAC to create a retention policy**
   
@@ -148,7 +148,7 @@ For detailed syntax and parameter information, see [New-RetentionPolicy](http://
   
 ## Step 3: Apply a retention policy to mailbox users
 
-After you create a retention policy, you must apply it to mailbox users. You can apply different retention policies to different set of users. For detailed instructions, see [Apply a retention policy to mailboxes in Exchange 2016](apply-retention-policies-to-mailboxes.md).
+After you create a retention policy, you must apply it to mailbox users. You can apply different retention policies to different set of users. For detailed instructions, see [Apply a retention policy to mailboxes in Exchange Server](apply-retention-policies-to-mailboxes.md).
   
 ## How do you know this task worked?
 

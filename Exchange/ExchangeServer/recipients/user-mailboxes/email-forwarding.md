@@ -3,7 +3,7 @@ title: "Configure email forwarding for a mailbox"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -14,8 +14,6 @@ description: "Summary: Learn how to use the Exchange admin center (EAC) to set u
 
 # Configure email forwarding for a mailbox
 
- **Summary**: Learn how to use the Exchange admin center (EAC) to set up email forwarding.
-  
 Email forwarding lets you to set up a mailbox to forward email messages sent to a user's mailbox to another user's mailbox in or outside of your organization.
   
 ## Use the Exchange admin center and the Exchange Management Shell

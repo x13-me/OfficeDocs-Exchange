@@ -3,26 +3,24 @@ title: "Create a Send connector to route outbound mail through a smart host"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 4a9ef08e-bd62-4c6b-8790-d24fb0f8f24b
-description: "Summary: Create a Send connector in Exchange 2016 that's configured to route outbound mail through a smart host."
+description: "Learn how to create a Send connector in Exchange 2016 and Exchange 2019 that's configured to route outbound mail through a smart host."
 ---
 
 # Create a Send connector to route outbound mail through a smart host
 
- **Summary**: Create a Send connector in Exchange 2016 that's configured to route outbound mail through a smart host.
-  
 Instead of routing all outbound messages directly to the Internet, you may need to route your organization's outbound mail through a third-party smart host. For example, your organization may have an appliance that scans outbound mail for spam and malware.
   
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 5 minutes
     
-- See [Deploy a new installation of Exchange 2016](../../plan-and-deploy/deploy-new-installations/deploy-new-installations.md) if you're beginning your installation. After the installation you can use the steps in this topic to create your outbound connector.
+- See [Deploy a new installation of Exchange Server](../../plan-and-deploy/deploy-new-installations/deploy-new-installations.md) if you're beginning your installation. After the installation you can use the steps in this topic to create your outbound connector.
     
 - The smart host described in this topic needs to use SMTP to transmit messages. If it doesn't, you need to use a Delivery Agent connector or a Foreign connector. For more information, see[Delivery Agents and Delivery Agent Connectors](http://technet.microsoft.com/library/38c942ee-b59d-47ec-87eb-bebad441ada5.aspx) and [Foreign Connectors](http://technet.microsoft.com/library/21c6a7a9-f4d2-4359-9ac9-930701b63a4e.aspx).
     
@@ -53,7 +51,7 @@ Instead of routing all outbound messages directly to the Internet, you may need 
     
     When you're finished, click **Save**.
     
-4.  You can enter multiple smart hosts by repeating Step 3. When you're finished, click **Next**.
+4. You can enter multiple smart hosts by repeating Step 3. When you're finished, click **Next**.
     
 5. On the next page, in the **Route mail through smart hosts** section, select the authentication method that's required by the smart host. Valid values are: 
     
@@ -79,9 +77,9 @@ Instead of routing all outbound messages directly to the Internet, you may need 
     
 7. Back on the previous page, the **Scoped send connector** setting is important if your organization has Exchange servers installed in multiple Active Directory sites: 
     
-  - If you don't select **Scoped send connector**, the connector is usable by all transport servers (Exchange 2016 Mailbox servers, Exchange 2013 Mailbox servers, and Exchange 2010 Hub Transport servers) in the entire Active Directory forest. This is the default value.
+  - If you don't select **Scoped send connector**, the connector is usable by all transport servers (Exchange 2013 or later Mailbox servers and Exchange 2010 Hub Transport servers) in the entire Active Directory forest. This is the default value.
     
-  -  If you select **Scoped send connector**, the connector is only usable by other transport servers in the same Active Directory site.
+  - If you select **Scoped send connector**, the connector is only usable by other transport servers in the same Active Directory site.
     
     When you're finished, click **Next**.
     

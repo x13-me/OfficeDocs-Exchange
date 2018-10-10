@@ -14,8 +14,6 @@ description: "Summary: How to place delivery restrictions on one or more mailbox
 
 # Configure message delivery restrictions for a mailbox
 
- **Summary**: How to place delivery restrictions on one or more mailboxes with the Exchange admin center (EAC) or the Exchange Management Shell.
-  
 You can use the EAC or the Exchange Management Shell to place restrictions on whether messages are delivered to individual recipients. Message delivery restrictions are useful to control who can send messages to users in your organization. For example, you can configure a mailbox to accept or reject messages sent by specific users or to accept messages only from users in your Exchange organization.
   
 The message delivery restrictions covered in this topic apply to all recipient types. To learn more about the different recipient types, see [Recipients](../../recipients/recipients.md).

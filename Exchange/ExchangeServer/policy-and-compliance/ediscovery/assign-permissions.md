@@ -1,22 +1,20 @@
 ---
-title: "Assign eDiscovery permissions in Exchange 2016"
+title: "Assign eDiscovery permissions in Exchange Server"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
-description: "Summary: Learn how to give users the permissions they need to use In-Place eDiscovery in Exchange 2016."
+description: "Summary: Learn how to give users the permissions they need to use In-Place eDiscovery in Exchange Server 2016 and Exchange Server 2019."
 ---
 
-# Assign eDiscovery permissions in Exchange 2016
+# Assign eDiscovery permissions in Exchange Server
 
- **Summary**: Learn how to give users the permissions they need to use In-Place eDiscovery in Exchange 2016.
-  
-If you want users to be able to use Exchange Server 2016 In-Place eDiscovery, you first need to add them to the Discovery Management role group. Members of the Discovery Management role group have Full Access mailbox permissions to the default discovery mailbox, which is called **Discovery Search Mailbox**.
+If you want users to be able to use Exchange Server In-Place eDiscovery, you first need to add them to the Discovery Management role group. Members of the Discovery Management role group have Full Access mailbox permissions to the default discovery mailbox, which is called **Discovery Search Mailbox**.
   
 > [!CAUTION]
 > Members of the Discovery Management role group can access sensitive message content. Specifically, these members can use In-Place eDiscovery to search all mailboxes in your Exchange organization, preview the search results (and other mailbox items), copy them to a discovery mailbox, and export the search results to a .pst file. In most organizations, this permission is assigned to legal, compliance, or Human Resources personnel.
@@ -27,7 +25,7 @@ If you want users to be able to use Exchange Server 2016 In-Place eDiscovery, yo
     
 - By default, the Discovery Management role group doesn't contain any members. Therefore, administrators that have the Organization Management role assigned can't create or manage discovery searches without being added to the Discovery Management role group.
     
-- In Exchange 2016, members of the Organization Management role group can create an In-Place Hold to place all mailbox content on hold. However, to create a query-based In-Place Hold, the user must be a member of the Discovery Management role group or have the Mailbox Search role assigned.
+- In Exchange Server, members of the Organization Management role group can create an In-Place Hold to place all mailbox content on hold. However, to create a query-based In-Place Hold, the user must be a member of the Discovery Management role group or have the Mailbox Search role assigned.
     
 - You can only add *security principals* to the Discovery Management role group (users or groups that can be assigned permissions). For example: 
     

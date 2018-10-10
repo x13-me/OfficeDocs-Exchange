@@ -49,7 +49,7 @@ You can configure a hierarchical address book (HAB), which is a feature availabl
 > [!NOTE]
 > Although you can't use the EAC to enable a HAB, after it's enabled you can use the EAC to manage the membership of the groups in the organizational hierarchy. 
   
-For this example, an OU called HAB will be created for the HAB. The name of the domain for the organization is Contoso-dom, and Contoso,Ltd will be the name of the top-level organization in the hierarchy (the root organization). Subordinate groups named Corporate Office, Product Support Organization, and Sales &amp; Marketing Organization will be created as child organizations under Contoso,Ltd. Additionally, the groups Human Resources, Accounting Group, and Administration Group will be created as child organizations under Corporate Office.
+For this example, an OU called HAB will be created for the HAB. The name of the domain for the organization is Contoso-dom, and Contoso,Ltd will be the name of the top-level organization in the hierarchy (the root organization). Subordinate groups named Corporate Office, Product Support Organization, and Sales & Marketing Organization will be created as child organizations under Contoso,Ltd. Additionally, the groups Human Resources, Accounting Group, and Administration Group will be created as child organizations under Corporate Office.
   
 For detailed information about creating distribution groups, see [Create and manage distribution groups](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md).
   
@@ -80,7 +80,7 @@ For detailed information about creating distribution groups, see [Create and man
   Set-OrganizationConfig -HierarchicalAddressBookRoot "Contoso,Ltd"
   ```
 
-4. Create distribution groups for the other tiers in the HAB. For this example, you would create the following groups: Corporate Office, Product Support Organization, Sales &amp; Marketing Organization, Human Resources, Accounting Group, and Administration Group. This example creates the distribution group Corporate Office.
+4. Create distribution groups for the other tiers in the HAB. For this example, you would create the following groups: Corporate Office, Product Support Organization, Sales & Marketing Organization, Human Resources, Accounting Group, and Administration Group. This example creates the distribution group Corporate Office.
     
     > [!NOTE]
     > For the purposes of this topic, the Shell example is provided. However, you can also use the EAC to create distribution groups. For details, see [Create and manage distribution groups](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md). 
@@ -89,13 +89,13 @@ For detailed information about creating distribution groups, see [Create and man
   New-DistributionGroup -Name "Corporate Office" -DisplayName "Corporate Office" -Alias "CorporateOffice" -OrganizationalUnit "Contoso-dom.Contoso.com/HAB" -SamAccountName "CorporateOffice" -Type "Distribution"
   ```
 
-5. Designate each of the groups as members of the HAB. For this example, you would designate the following groups as being hierarchical groups: Contoso,Ltd, Corporate Office, Product Support Organization, Sales &amp; Marketing Organization, Human Resources, Accounting Group, and Administration Group. This example designates the distribution group Contoso,Ltd as a member of the HAB.
+5. Designate each of the groups as members of the HAB. For this example, you would designate the following groups as being hierarchical groups: Contoso,Ltd, Corporate Office, Product Support Organization, Sales & Marketing Organization, Human Resources, Accounting Group, and Administration Group. This example designates the distribution group Contoso,Ltd as a member of the HAB.
     
   ```
   Set-Group -Identity "Contoso,Ltd" -IsHierarchicalGroup $true
   ```
 
-6. Add each of the subordinate groups as members of the root organization. For this example, distribution groups Corporate Office, Product Support Organization, and Sales &amp; Marketing Organization, are added as members of the root organization Contoso,Ltd in the HAB. This example adds the Corporate Office distribution group as a member of the Contoso,Ltd root distribution group.
+6. Add each of the subordinate groups as members of the root organization. For this example, distribution groups Corporate Office, Product Support Organization, and Sales & Marketing Organization, are added as members of the root organization Contoso,Ltd in the HAB. This example adds the Corporate Office distribution group as a member of the Contoso,Ltd root distribution group.
     
     > [!NOTE]
     > This example uses the alias of the distribution groups. 

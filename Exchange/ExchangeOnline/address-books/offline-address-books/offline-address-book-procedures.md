@@ -24,8 +24,6 @@ description: "Create an offline address book"
   
 [Remove an offline address book](remove-offline-address-book.md)
   
-[Update offline address book](update-offline-address-book.md)
-  
 [Create an offline address book virtual directory](create-virtual-directory.md)
   
 [Change the offline address book generation schedule](change-address-book-generation-schedule.md)

@@ -3,7 +3,7 @@ title: "Migrate G Suite mailboxes to Office 365"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 8/16/2018
+ms.date: 9/19/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: exchange-online
@@ -70,7 +70,7 @@ You can add your users either [one at a time](https://support.office.com/article
 
 For this task, you create a migration file that contains a list of Gmail mailboxes to migrate to Office 365. The easiest way to create the migration file is by using Excel, so we use Excel in these instructions. You can use Excel 2013, Excel 2010, or Excel 2007.
   
-When you create the migration file, you need to know the password of each Gmail mailbox that you want to migrate. We're assuming you don't know the user passwords, so you'll probably need to assign temporary passwords (by resetting the passwords) to all mailboxes during the migration. You must be an administrator in G Suite to reset passwords.
+When you create the migration file, you need to know the app password of each Gmail mailbox that you want to migrate. We're assuming you don't know the user passwords, so you'll probably need to assign temporary passwords (by resetting the passwords) to all mailboxes during the migration. You must be an administrator in G Suite to reset passwords.
   
 You don't have to migrate all Gmail mailboxes at once. You can do them in batches at your convenience. You can include up to 50,000 mailboxes (one row for each user) in your migration file. The file can be as large as 10 MB.
   
@@ -100,7 +100,7 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
     
     ![Cell headings in the Excel migration file.](../media/acec70dd-4789-46b5-aa15-74e597dbe71c.JPG)
   
-7. Next enter the email address, user name, and password for each mailbox you want to migrate. Enter one mailbox per row.
+7. Next enter the email address, user name, and app password for each mailbox you want to migrate. Enter one mailbox per row.
     
   - **Column A** is the email address of the Office 365 mailbox. This is what's shown in the **User name** column in **Users** \> **Active users** in the Office 365 admin center. 
     

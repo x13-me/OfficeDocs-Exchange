@@ -3,7 +3,7 @@ title: "Office 365 migration performance and best practices"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 8/16/2018
+ms.date: 9/19/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: exchange-online
@@ -37,34 +37,74 @@ For more information about Office 365 networking and performance, see [Network p
 |**Migration method**|**Description**|**Resources**|
 |:-----|:-----|:-----|
 |Internet Message Access Protocol (IMAP) migration  <br/> |You can use the Exchange admin center or the Exchange Management Shell to migrate the contents of users' mailboxes from an IMAP messaging system to their Office 365 mailboxes. This includes migrating your mailboxes from other hosted email services, such as Gmail or Yahoo Mail.  <br/> |[Migrate your IMAP mailboxes to Office 365](migrating-imap-mailboxes/migrating-imap-mailboxes.md) <br/> |
-|Cutover migration  <br/> |Using a cutover migration, you migrate all on-premises mailboxes to Office 365 over a few days. Use cutover migration if you plan to move your entire email organization to Office 365 and manage user accounts in Office 365. You can migrate a maximum of 2,000 mailboxes from your on-premises Exchange organization to Office 365 using a cutover migration. The recommended number or mailboxes, however, is **150**. Performance suffers with numbers higher than that. The mail contacts and distribution groups in your on-premises Exchange organization are also migrated.  <br/> |[Cutover migration to Office 365](cutover-migration-to-office-365.md) <br/> |
+|Cutover migration  <br/> |Using a cutover migration, you migrate all on-premises mailboxes to Office 365 over a few days. Use cutover migration if you plan to move your entire email organization to Office 365 and manage user accounts in Office 365. You can migrate a maximum of 2,000 mailboxes from your on-premises Exchange organization to Office 365 using a cutover migration. The recommended number of mailboxes, however, is **150**. Performance suffers with numbers higher than that. The mail contacts and distribution groups in your on-premises Exchange organization are also migrated.  <br/> |[Cutover migration to Office 365](cutover-migration-to-office-365.md) <br/> |
 |Staged migration  <br/> |You use a staged migration if you plan to eventually migrate all your organization's mailboxes to Office 365. Using a staged migration, you migrate batches of on-premises mailboxes to Office 365 over the course of a few weeks or months.  <br/> |[What you need to know about a staged email migration to Office 365](what-to-know-about-a-staged-migration.md) <br/> |
-|Hybrid deployment  <br/> |A hybrid deployment offers organizations the ability to extend the feature-rich experience and administrative control they have with their existing on-premises Exchange organization to the cloud. A hybrid deployment provides the seamless look and feel of a single Exchange organization between an on-premises Exchange Server 2013 or Microsoft Exchange Server 2010 and Office 365. In addition, a hybrid deployment can serve as an intermediate step to moving completely to an Office 365 organization.  <br/> |[Exchange Server 2013 Hybrid Deployments](https://go.microsoft.com/fwlink/p/?LinkId=616536) <br/> |
+|Hybrid deployment  <br/> |A hybrid deployment offers organizations the ability to extend the feature-rich experience and administrative control they have with their existing on-premises Exchange organization to the cloud. A hybrid deployment provides the seamless look and feel of a single Exchange organization between an on-premises Exchange organization and Exchange Online in Microsoft Office 365. In addition, a hybrid deployment can serve as an intermediate step to moving completely to an Office 365 organization.  <br/> |[Exchange Server 2013 Hybrid Deployments](https://go.microsoft.com/fwlink/p/?LinkId=616536) <br/> |
 |Third-party migration  <br/> |There are many tools available from third parties. They use distinctive protocols and approaches to conduct email migrations from email platforms like IBM Lotus Notes and Novell GroupWise.  <br/> | Here are some third-party migration tools and partners that can assist with Exchange migrations from third-party platforms:  <br/> [Binary Tree](https://binarytree.com) Provider of cross-platform messaging migration and coexistence software, with products that provide for the analysis of and the coexistence and migration between on-premises and online enterprise messaging and collaboration environments based on IBM Lotus Notes and Domino and Exchange and SharePoint.  <br/> [BitTitan](https://www.bittitan.com) Provider of migration solutions to Office 365.  <br/> [Metalogix](https://www.metalogix.com/) Provider of migration solutions to Office 365 and SharePoint Online.  <br/> [SkyKick](https://www.skykick.com/) Provider of automated migration solutions to move on-premises Exchange, Gmail, POP3, IMAP, Lotus Notes to Office 365. The end-to-end migration tools help partners with the sales, planning, migration, management, and onsite phases of the migration project.  <br/> [TransVault](http://www.transvault.com/) Provider of migration solutions to Office 365.  <br/> |
    
 ## Performance for migration methods
 <a name="BK_migrationmethodperf"> </a>
 
-The following table compares the observed performance results for the different migration methods for migrating mailboxes and mailbox data to Office 365. These results are based on internal testing and actual customer migrations to Office 365.
+The following sections compare mailbox migration workloads and the observed performance results for the different migration methods for migrating mailboxes and mailbox data to Office 365. These results are based on internal testing and actual customer migrations to Office 365.
   
 > [!IMPORTANT]
-> Because of differences in how migrations are performed and when they're performed, your actual migration velocity may be slower or faster. 
+> Because of differences in how migrations are performed and when they're performed, your actual migration velocity may vary. 
+
+###Customer migration workloads
+
+The following table describes the different workloads involved in a typical migration, and the challenges and options for each.
+
+
+|Workload  |  |
+|---------|---------|
+|Onboarding (Migrating to O365)      | Microsoft offers data migration capability and tools for customers to use to migrate their data from Exchange Server on-premises to Exchange Online (M365). There are a number of methods for migrating mailboxes and mailbox data, starting with Cutover migrations and Staged migrations, which are based on merge and sync moves, and which are described earlier in this article. The other main migration method involves hybrid moves, which is currently the most common method. You can decide exactly when you'd like to migrate to Microsoft 365, based on your business needs.        |
+|Multi-Geo      |   Multinational companies with offices around the world often have a need to store their employee data at-rest in specific regions, in order to meet their data residency requirements. Multi-Geo enables a single Office 365 tenant to span across multiple Office 365 datacenter geographies (geos), which gives you the ability to store Exchange data, at-rest, on a per-user basis, in your chosen geos. For more details, see [Get enterprise-grade global data location controls with Multi-Geo](https://products.office.com/business/multi-geo-capabilities).      |
+|Encryption     |   O365 Service Encryption with Customer Key is a feature that allows a customer to provision and manage the root keys that are used to encrypt data at-rest at the application layer in Office 365. For a mailbox to become encrypted the first time, a mailbox move is required. For more details, see [Service encryption with Customer Key for Office 365 FAQ](https://docs.microsoft.com/office365/securitycompliance/service-encryption-with-customer-key-faq).      |
+|GoLocal    |  Microsoft continues to open new datacenters for Office 365 in new regions, or geos. Existing customers, when eligible, can request to have their Office 365 customer data from their original datacenter moved to a new geo. The period of time in which you can make this request is usually one or two years, depending on the overall demand on the service. Note that this period of time during which you can request to have your customer data moved becomes shorter once a datacenter (DC) for the new geo launches (at that point you have approximately three to six months to request a move). Details are available in [Moving core data to new Office 365 datacenter geos](https://msdn.microsoft.com/library/dn878163.aspx).        |
+
+When mailboxes are migrated within Microsoft 365 data centers, every mailbox move or bulk-mailbox move requires time for the operation to complete. There are a number of factors, such as Microsoft 365 service activity, that can affect exactly how much time. The service is designed to throttle discretionary workloads like mailbox moves, to ensure that the service runs optimally for all users. You can stil expect mailbox moves to be processed, however, depending on the service's discretionary resource availability. More details about resource throttling can be found in [this blog post](https://blogs.technet.microsoft.com/exchange/2018/06/25/resource-based-throttling-and-prioritization-in-exchange-online-migrations/).
+ 
+###Estimated migration times
+
+
+To help you plan your migration, the following tables present guidelines about when to expect bulk mailbox migrations or individual migrations to complete. These estimates are based on a data analysis of previous customer migrations. Because every environment is unique, your exact migration velocity may vary.
+
+**Mailbox migration duration based on mailbox size profiles:**
+
+1. Onboarding / PSTImport
+
+|Mailbox size (GB)  |50th percentile duration (days)  |90th percentile duration (days)  |
+|---------|---------|---------|
+|< 1     |1         |7         |
+|1 - 10     |1         |7         |
+|10 - 50     |3         |14         |
+|50 - 100     |3         |30         |
+|100 - 200     |8         |45         |
+|> 200     |Not supported         |Not supported         |
+ 
+2. Multi-Geo / GoLocal / Encryption
+
+|Mailbox size (GB)  |50th percentile duration (days)  |90th percentile duration (days)  |
+|---------|---------|---------|
+|< 1     |1         |7         |
+|1 - 10     |1         |10         |
+|10 - 50     |3         |30         |
+|50 - 100     |15         |45         |
+|100 - 200     |30         |60         |
+|> 200     |Not supported         |Not supported         |
+
+**Migration duration to complete 90% of mailbox moves based on tenant size profiles:** 
+
+|Tenant size (number of mailboxes)  |Duration (days)  |May take up to this many days  |
+|---------|---------|---------|
+|< 1,000     |5         |14         |
+|1,000 - 5,000     |10         |30         |
+|5,000 - 10,000     |20         |45         |
+|10,000 - 50,000     |30         |60         |
+|50,000 - 100,000     |45         |90         |
+|> 1000,000     |60         |180         |
   
-|**Migration method**|**Office 365 user throttling**|**Office 365 migration-service throttling**|**Office 365 resource health-based throttling**|**Observed average throughput per hour and per client (if applicable)**|
-|:-----|:-----|:-----|:-----|:-----|
-|IMAP migration  <br/> |No  <br/> |Yes  <br/> |Yes  <br/> |10-14 gigabyte (GB) (20 concurrency)  <br/> |
-|Cutover migration  <br/> |No  <br/> |Yes  <br/> |Yes  <br/> |10-14 GB (20 concurrency)  <br/> |
-|Staged migration  <br/> |No  <br/> |Yes  <br/> |Yes  <br/> |10-14 GB (20 concurrency)  <br/> |
-|Hybrid migration  <br/> |No  <br/> |Yes  <br/> |Yes  <br/> |10-14 GB per on-premises Exchange 2013 or 2010 CAS (Microsoft Exchange Mailbox Replication service (MRSProxy service)) with 20 concurrent moves <sup>1</sup> <br/> |
-|Third-party MAPI migration  <br/> |Yes  <br/> |No  <br/> |Yes  <br/> |4-12 GB (20 concurrency) <sup>2</sup> <br/> |
-|Third-party Exchange Web Services migration  <br/> |No  <br/> |Yes  <br/> |Yes  <br/> |5-10 GB (20 concurrency) <sup>3</sup> <br/> |
-|Client uploading (from Outlook .pst files)  <br/> |Yes  <br/> |No  <br/> |Yes  <br/> |0.5 GB  <br/> |
-   
-<sup>1</sup>Observed single mailbox move throughput is in the 0.3-1.0 GB/hour range. Greater than 1000 MB/h per mailbox throughput rate can be achieved with a network that can sustain less than a 2 percent transient failure stall time and less than 100ms network latency. More concurrent mailbox migrations can be used to achieve higher data migration rates. Single mailbox move throughput will slow down when the on-premises CAS (MRSProxy service) server is at hardware capacity, if the network bandwidth isn't sufficient, or the network latency is too high. Consider adding more servers or temporarily improving network connectivity to increase migration velocity.
-  
-<sup>2</sup>Observed single MAPI migration throughput is in the 0.1-0.5 GB/hour range. More concurrent migrations can be used to achieve higher data-migration rates. Single MAPI migration throughput will slow down when either the on-premises servers or the network is at capacity.
-  
-<sup>3</sup>Observed single Exchange Web Services migration throughput is in the 0.2-0.5 GB/hour range. More concurrent migrations can be used to achieve higher data migration rates. For example, with 20 concurrent migrations, the overall throughput will be in the 4-10 GB/hour range. Single Exchange Web Services migration throughput will slow down when either the on-premises servers or the network is at capacity.
+Note that some outlier mailboxes would take longer to complete based on the mailbox profile. Also, if a tenant has larger mailboxes on average, this can also contribute to the extended duration of migration.
   
 ## Migration performance factors
 <a name="BK_Migrationperffactors"> </a>
@@ -80,7 +120,7 @@ The following table provides a list of common factors that affect migration perf
 |Data source  <br/> |The device or service that hosts the data to be migrated. Many limitations might apply to the data source because of hardware specifications, end-user workload, and back-end maintenance tasks.  <br/> |Gmail limits how much data can be extracted during a specific period of time.  <br/> |
 |Data type and density  <br/> |Because of the unique nature of a customer's business, the type and mix of mail items within mailboxes vary greatly.  <br/> |One 4-GB mailbox with 400 items, each with 10 megabytes (MB) of attachments, will migrate faster than one 4-GB mailbox with 100,000 smaller items.  <br/> |
 |Migration server  <br/> |Many migration solutions use a "jump box" type of migration server or workstation to complete the migration.  <br/> |Customers often use a low-performance virtual machine to host the MRSProxy service for hybrid deployments or for client PC non-hybrid migrations.  <br/> |
-|Migration engine  <br/> |he data migration engine responsible for pulling data from the source server converts data, if necessary. The engine then transmits the data over the network and injects the data into the Office 365 mailbox. mailbox.  <br/> |MRSProxy service has its own capabilities and limitations.  <br/> |
+|Migration engine  <br/> |The data migration engine responsible for pulling data from the source server converts data, if necessary. The engine then transmits the data over the network and injects the data into the Office 365 mailbox. mailbox.  <br/> |MRSProxy service has its own capabilities and limitations.  <br/> |
 |On-premises network appliances  <br/> |The end-to-end network performance—from the data source to Exchange Online client access servers—affects migration performance.  <br/> |Firewall configuration and specifications on the on-premises organization.  <br/> |
 |Office 365 service  <br/> |Office 365 has built-in support and features to manage the migration workload.  <br/> |The user-throttling policy has default settings and limits the overall maximum data transfer rate.  <br/> |
    
@@ -94,7 +134,7 @@ Use the Exchange Analyzer to get a deeper understanding of your network connecti
 |:-----|:-----|:-----|
 |Network capacity  <br/> |The amount of time it takes to migrate mailboxes to Office 365 is determined by the available and maximum capacity of your network.  <br/> | Identify your available network capacity and determine the maximum upload capacity.  <br/>  Contact your ISP to confirm your allocated bandwidth and to get details about restrictions, such as the total amount of data that can be transferred in a specific period of time.  <br/>  Use tools to evaluate your actual network capacity. Make sure you test the end-to-end flow of data from your on-premises data source to the Microsoft datacenter gateway servers.  <br/>  Identify other loads on your network (for example, backup utilities and scheduled maintenance) that can affect your network capacity.  <br/> |
 |Network stability  <br/> |A fast network doesn't always result in fast migrations. If the network isn't stable, data transfer takes longer because of error correction. Depending on the migration type, error correction can significantly affect migration performance.  <br/> |Network hardware and driver issues often cause network stability problems. Work with your hardware vendors to understand your network devices and apply the vendor's latest recommended drivers and software updates.  <br/> |
-|Network delays  <br/> |Intrusion detection functionality configured on a network firewall often causes significant network delays and affects migration performance.  <br/> Migrating data to Office 365 mailboxes relies on your Internet connection. Internet delays affect overall migration performance.  <br/> Also, users in the same company might have cloud mailboxes that reside in datacenters in different geographical locations. Depending on the customer's ISP, migration performance may vary.  <br/> | Evaluate network delays to all potential Microsoft datacenters to help ensure that the result is consistent. (This also helps ensure a consistent experience for end users.) Work with your ISP to address Internet-related issues.  <br/>  Add IP addresses for Microsoft datacenter servers to your allow list, or bypass all migration-related traffic from you network firewall. For more information about the Office 365 IP ranges, see [Office 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_Home).  <br/> |
+|Network delays  <br/> |Intrusion detection functionality configured on a network firewall often causes significant network delays and affects migration performance.  <br/> Migrating data to Office 365 mailboxes relies on your Internet connection. Internet delays affect overall migration performance.  <br/> Also, users in the same company might have cloud mailboxes that reside in datacenters in different geographical locations. Depending on the customer's ISP, migration performance may vary.  <br/> | Evaluate network delays to all potential Microsoft datacenters to help ensure that the result is consistent. (This also helps ensure a consistent experience for end users.) Work with your ISP to address Internet-related issues.  <br/>  Add IP addresses for Microsoft datacenter servers to your allow list, or bypass all migration-related traffic from your network firewall. For more information about the Office 365 IP ranges, see [Office 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_Home).  <br/> |
    
 For a deeper analysis of migrations within your environment, check out our [move analysis blog post](https://go.microsoft.com/fwlink/p/?LinkId=399457). The post includes a script to help you analyze move requests.
   

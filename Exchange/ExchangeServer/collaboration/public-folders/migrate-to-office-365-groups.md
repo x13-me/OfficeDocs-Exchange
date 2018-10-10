@@ -3,20 +3,18 @@ title: "Migrate your public folders to Office 365 Groups"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/12/2018
+ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection: Strat_EX_EXOBlocker
 ms.assetid: d89e727b-675a-4623-b572-260f8b44b966
-description: "Summary: Why you should or shouldn't migrate your Exchange 2016 public folders to Office 365 Groups."
+description: "Summary: Why you should or shouldn't migrate your Exchange public folders to Office 365 Groups."
 ---
 
 # Migrate your public folders to Office 365 Groups
 
- **Summary**: Why you should or shouldn't migrate your Exchange 2016 public folders to Office 365 Groups.
-  
 This article provides a comparison of public folders and Office 365 Groups, and how one or the other might be the best solution for your organization. Public folders have been around as long as Exchange, whereas Groups were introduced more recently. If you want to migrate some or all of your public folders to Groups, this article describes how the process works, and provides links to the articles that walk you through the process, step by step.
   
 ## What are public folders?
@@ -72,7 +70,7 @@ Key benefits of batch migrations are:
     
 - **Supports mail and calendar public folders**: Copied emails and posts will appear as in Groups as group conversations, and copied calendar items will be visible in group calendars. Other public folder types, such as tasks and contacts, are currently not supported for this migration.
     
-- **On-premises public folders can be migrated directly to Office 365 Groups**: This migration does not require you to first move your public folders to Office 365 and then move to Groups. The MRS data copy cmdlets read the public folder data directly from your on-premises environment and then copy the data to Office 365 Groups. Note that Exchange 2016 public folders will require an MRS Proxy-based endpoint.
+- **On-premises public folders can be migrated directly to Office 365 Groups**: This migration does not require you to first move your public folders to Office 365 and then move to Groups. The MRS data copy cmdlets read the public folder data directly from your on-premises environment and then copy the data to Office 365 Groups. Note that Exchange public folders will require an MRS Proxy-based endpoint.
     
 - **Not an "all or nothing" migration**: You get to choose specific public folders to migrate to Groups, and only those chosen public folders get migrated.
     
@@ -114,7 +112,7 @@ The following prerequisites are required in your Exchange environment before you
   
 Click one of the links below for step-by-step instructions on running a batch migration.
   
-- [Use batch migration to migrate Exchange 2016 public folders to Office 365 Groups](batch-migration-to-office-365-groups.md)
+- [Use batch migration to migrate Exchange Server public folders to Office 365 Groups](batch-migration-to-office-365-groups.md)
     
 - [Use batch migration to migrate your Exchange Online public folders to Office 365 Groups](https://go.microsoft.com/fwlink/p/?linkid=859168)
     

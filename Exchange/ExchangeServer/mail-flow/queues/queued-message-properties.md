@@ -3,7 +3,7 @@ title: "View queued message properties in Queue Viewer"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/7/2018
+ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -11,14 +11,12 @@ f1_keywords:
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 9d15d8b8-e061-4288-9354-df58e282fb6b
-description: "Summary: Learn how to use the Queue Viewer in the Exchange Toolbox to view message properties in Exchange 2016."
+description: "Summary: Learn how to use the Queue Viewer in the Exchange Toolbox to view message properties in Exchange 2016 and Exchange 2019."
 ---
 
 # View queued message properties in Queue Viewer
-
- **Summary**: Learn how to use the Queue Viewer in the Exchange Toolbox to view message properties in Exchange 2016.
-  
-You can use the Queue Viewer in the Exchange Toolbox to view queues and the properties of messages in queues. In Exchange Server 2016, Queue Viewer is available on Mailbox servers and Edge Transport servers.
+ 
+You can use the Queue Viewer in the Exchange Toolbox to view queues and the properties of messages in queues. In Exchange Server 2016 and Exchange Server 2019, Queue Viewer is available on Mailbox servers and Edge Transport servers.
   
 For more information about queues, see [Queues and messages in queues](queues.md). For more information about Queue Viewer, see [Queue Viewer](queue-viewer.md).
   
@@ -30,17 +28,17 @@ For more information about queues, see [Queues and messages in queues](queues.md
     
 - To find and open the Exchange Toolbox, use one of the following procedures:
     
-  - **Windows 10 **: Click **Start** \> **All Apps** \> **MicrosoftExchange Server 2016 \>** **Exchange Toolbox**.
+  - **Windows 10**: Click **Start** \> **All Apps** \> **Microsoft Exchange Server \<Version\> \>** **Exchange Toolbox**.
     
-  - **Windows Server 2012 R2 or Windows 8.1**: On the Start screen, open the Apps view by clicking the down arrow near the lower-left corner or swiping up from the middle of the screen. The **Exchange Toolbox** shortcut is in a group named **MicrosoftExchange Server 2016**.
+  - **Windows Server 2012 R2 or Windows 8.1**: On the Start screen, open the Apps view by clicking the down arrow near the lower-left corner or swiping up from the middle of the screen. The **Exchange Toolbox** shortcut is in a group named **Microsoft Exchange Server \<Version\>**.
     
-  - **Windows Server 2012 **: Use any of the following methods: 
+  - **Windows Server 2012**: Use any of the following methods: 
     
-  - On the Start screen, click an empty area, and type Exchange Toolbox.
+    - On the Start screen, click an empty area, and type Exchange Toolbox.
     
-  - On the desktop or the Start screen, press Windows key + Q. In the Search charm, type Exchange Toolbox.
+    - On the desktop or the Start screen, press Windows key + Q. In the Search charm, type Exchange Toolbox.
     
-  - On the desktop or the Start screen, move your cursor to the upper-right corner, or swipe left from the right edge of the screen to show the charms. Click the Search charm, and type Exchange Toolbox.
+    - On the desktop or the Start screen, move your cursor to the upper-right corner, or swipe left from the right edge of the screen to show the charms. Click the Search charm, and type Exchange Toolbox.
     
     When the shortcut appears in the results, you can select it.
     
@@ -97,7 +95,7 @@ For more information about queues, see [Queues and messages in queues](queues.md
     
     For example, if you didn't create a Send connector to deliver Internet mail, messages that are addressed to external recipients will go to the Unreachable queue, and the **Last Error** value for the message will be: `A matching connector cannot be found to route the external recipient`. For more information about creating a Send connector, see [Create a Send connector to send mail to the Internet](../../mail-flow/connectors/internet-mail-send-connectors.md).
     
-    For more information about SMTP error codes, see [DSNs and NDRs in Exchange 2016](../../mail-flow/non-delivery-reports-and-bounce-messages/non-delivery-reports-and-bounce-messages.md).
+    For more information about SMTP error codes, see [DSNs and NDRs in Exchange Server](../../mail-flow/non-delivery-reports-and-bounce-messages/non-delivery-reports-and-bounce-messages.md).
     
 3. When you right-click a message and select **Properties**, additional details are available on the **General** and **Recipient Information** tabs.
     
