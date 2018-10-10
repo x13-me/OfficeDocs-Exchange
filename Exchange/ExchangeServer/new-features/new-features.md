@@ -32,9 +32,9 @@ For more information about deploying Exchange 2019, see [Planning and deployment
 
 ### Performance 
 
-- **Improved search infrastructure**: The completely rebuilt search infrastructure for cloud scale and reliability in Exchange Online is now avaialble in Exchange 2019. This new search infrastructure allows for indexing of bigger files, simpler management, and better search performance.
+- **Improved search infrastructure**: The completely rebuilt search infrastructure for cloud scale and reliability in Exchange Online is now available in Exchange 2019. This new search infrastructure allows for indexing of bigger files, simpler management, and better search performance.
 
-- **Faster, more reliable failovers**:The changes to the search architecture result in significantly faster and more reliable failover over between servers.
+- **Faster, more reliable failovers**: The changes to the search architecture result in significantly faster and more reliable failover over between servers.
 
 - **Metacache database**: Improvements at the core of Exchange's database engine enable better overall performance and take advantage of the latest storage hardware, including larger disks and SSDs.
 
@@ -44,7 +44,7 @@ For more information about deploying Exchange 2019, see [Planning and deployment
 
 ### Clients
 
-- **Calendar - Do Not Forward**: This is similar to Iformation Rights Managment (IRM) for caleindar items without the IRM deployment requirements. Attendees can't forward the invitation to other people, and only the organizer can invite additional attendees.
+- **Calendar - Do Not Forward**: This is similar to Information Rights Management (IRM) for calendar items without the IRM deployment requirements. Attendees can't forward the invitation to other people, and only the organizer can invite additional attendees.
 
 - **Calendar - Better Out of Office**: Additional options when you won't be in the office. Key options include: add an event to your calendar that shows you as Away/Out of Office, and a quick option to cancel/decline meetings that will happen while you're away.
 
