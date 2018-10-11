@@ -102,7 +102,7 @@ When you use one of these options, you don't need to restart the computer after 
     a. Install the Server Media Foundation windows feature by executing the following command in Windows PowerShell:
     
       ```
-      Install-WindowsFeature Server-Media-Foundation`
+      Install-WindowsFeature Server-Media-Foundation
       ```
     
    b. Install [Unified Communications Managed API 4.0](https://www.microsoft.com/download/details.aspx?id=34992). This package is available for download and in the \UCMARedist folder on the Exchange Server media.
