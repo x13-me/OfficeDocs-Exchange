@@ -4,7 +4,7 @@ ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
 manager: serdars
-ms.date: 
+ms.date: 10/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -142,9 +142,7 @@ Enabling support for hybrid Modern Authentication in your organization requires 
 2. Create an Intune app protection policy
     
 3. Enable hybrid Modern Authentication
-    
-4. Contact Microsoft
-    
+  
 ### Create a conditional access policy
 
 When an organization decides to standardize how users access Exchange data, using Outlook for iOS and Android as the only email app for end users, they can configure a conditional access policy that blocks other mobile access methods. Outlook for iOS and Android authenticates via the Azure Active Directory identity object and then connects to Exchange Online. Therefore, you will need to create Azure Active Directory conditional access policies to restrict mobile device connectivity to Exchange Online. To do this, you will need two conditional access policies, with each policy targeting all potential users. Details on creating these polices can be found in [Azure Active Directory app-based conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-mam#exchange-online-policy).
@@ -224,7 +222,6 @@ In addition to the above minimum policy requirements, you should consider deploy
   - Value: set in KB size (10MB is 10240, for example)
   
 ## Client features that aren't supported
-
 
 The following features are not supported for on-premises mailboxes using hybrid Modern Authentication with Outlook for iOS and Android.
   
