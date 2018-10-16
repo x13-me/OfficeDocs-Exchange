@@ -1,5 +1,5 @@
 ---
-title: "Active sync organization settings attributes"
+title: "ActiveSync organization settings attributes"
 ms.author: kchandra
 author: ChandraKavya
 manager: serdars
@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365_Hybrid
 - Hybrid
-description: "Active sync organization settings attributes can be copied by the Hybrid Configuration Wizard from your on-premises organization to Exchange Online to help simplify your hybrid deployment"
+description: "ActiveSync organization settings attributes can be copied by the Hybrid Configuration Wizard from your on-premises organization to Exchange Online to help simplify your hybrid deployment"
 ---
 
-# Active sync organization settings attributes
+# ActiveSync organization settings attributes
 
-The following attributes of Active sync organization settings are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
+The following attributes of ActiveSync organization settings are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
 | **ActiveSyncOrganizationSettings** | **Available In**          |
 |------------------------------------|---------------------------|
