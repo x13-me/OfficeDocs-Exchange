@@ -1,5 +1,5 @@
 ---
-title: "Active sync device access rule attributes"
+title: "ActiveSync device access rule attributes"
 ms.author: kchandra
 author: ChandraKavya
 manager: serdars
@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365_Hybrid
 - Hybrid
-description: "Active sync device access rule attributes can be copied by the Hybrid Configuration Wizard from your on-premises organization to Exchange Online to help simplify your hybrid deployment"
+description: "ActiveSync device access rule attributes can be copied by the Hybrid Configuration Wizard from your on-premises organization to Exchange Online to help simplify your hybrid deployment"
 ---
 
 # Active sync device access rule attributes
 
-The following attributes of Active sync device access rule are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
+The following attributes of ActiveSync device access rules are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
 | **ActiveSyncDeviceAccessRule** | **Available In**          |
 |--------------------------------|---------------------------|
