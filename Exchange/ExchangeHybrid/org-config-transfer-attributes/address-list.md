@@ -17,7 +17,7 @@ description: "Address list attributes can be copied by the Hybrid Configuration 
 
 # Address list attributes
 
-The following attributes of Address list are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
+The following attributes of Address lists are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
 | **AddressList**              | **Available In**          |
 |------------------------------|---------------------------|
