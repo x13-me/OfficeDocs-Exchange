@@ -69,7 +69,7 @@ Users may receive multiple authentication prompts depending on:
   
 - Where they connect from (internal or external Internet connections).
     
-- If there computer is or isn't domain joined.
+- If their computer is or isn't domain joined.
     
 - If you're using identity federation in your hybrid environment.
     

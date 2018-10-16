@@ -4,7 +4,7 @@ ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
 manager: serdars
-ms.date: 7/10/2018
+ms.date: 10/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -142,9 +142,7 @@ Enabling support for hybrid Modern Authentication in your organization requires 
 2. Create an Intune app protection policy
     
 3. Enable hybrid Modern Authentication
-    
-4. Contact Microsoft
-    
+  
 ### Create a conditional access policy
 
 When an organization decides to standardize how users access Exchange data, using Outlook for iOS and Android as the only email app for end users, they can configure a conditional access policy that blocks other mobile access methods. Outlook for iOS and Android authenticates via the Azure Active Directory identity object and then connects to Exchange Online. Therefore, you will need to create Azure Active Directory conditional access policies to restrict mobile device connectivity to Exchange Online. To do this, you will need two conditional access policies, with each policy targeting all potential users. Details on creating these polices can be found in [Azure Active Directory app-based conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-mam#exchange-online-policy).
@@ -196,11 +194,9 @@ In addition to the above minimum policy requirements, you should consider deploy
   
 ### Enable hybrid Modern Authentication
 
-If you have not enabled hybrid Modern Authentication, then review and implement the steps outlined in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](https://support.office.com/article/ef753b32-7251-4c9e-b442-1a5aec14e58d?).
+1. If you haven't enabled hybrid Modern Authentication, review the prerequisites as outlined in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](https://support.office.com/article/ef753b32-7251-4c9e-b442-1a5aec14e58d?). After you've completed the prereqsuisites, do the steps in [How to configure Exchange Server on-premises to use hybrid Modern Authentication](https://support.office.com/article/cef3044d-d4cb-4586-8e82-ee97bd3b14ad?).
   
-If you have already enabled hybrid Modern Authentication to support other versions of Outlook, including Outlook for Mac, for your on-premises users as outlined in [How to configure Exchange Server on-premises to use hybrid Modern Authentication](https://support.office.com/article/cef3044d-d4cb-4586-8e82-ee97bd3b14ad?), there are only a few additional steps you must take:
-  
-1. Create an Exchange device access allow rule to allow Exchange Online to connect to your on-premises environment using the ActiveSync protocol:
+2. Create an Exchange on-premises device access allow rule to allow Exchange Online to connect to your on-premises environment using the ActiveSync protocol:
     
   ```
   If ((Get-ActiveSyncOrganizationSettings).DefaultAccessLevel -ne "Allow") {New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "OutlookService" -AccessLevel Allow}
@@ -208,7 +204,7 @@ If you have already enabled hybrid Modern Authentication to support other versio
 
     Note that device management through the on-premises Exchange admin center is not possible. Intune is required to manage mobile devices.
     
-2. Create an Exchange device access rule that prevents users from connecting to the on-premises environment with Outlook for iOS and Android with basic authentication over the Exchange ActiveSync protocol:
+3. Create an Exchange on-premises device access rule that prevents users from connecting to the on-premises environment with Outlook for iOS and Android with basic authentication over the Exchange ActiveSync protocol:
     
   ```
   New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
@@ -217,22 +213,15 @@ If you have already enabled hybrid Modern Authentication to support other versio
     > [!NOTE]
     > Once this rule is created, users who are using Outlook for iOS and Android with Basic authentication will be blocked.
   
-3. Ensure your Exchange ActiveSync maxRequestLength is configured to match your transport configuration's MaxSendSize/MaxReceiveSize:
+3. Ensure your on-premises Exchange ActiveSync maxRequestLength is configured to match your transport configuration's MaxSendSize/MaxReceiveSize:
     
   - Path: `%ExchangeInstallPath%FrontEnd\HttpProxy\Sync\web.config`
     
   - Property: `maxRequestLength`
     
-  - Value: Set in kilobytes (KB). For example, the value `1024` is 10 megabytes (MB).
-
-    For more information, see [Configure client-specific message size limits](../../architecture/client-access/client-message-size-limits.md)
-    
-### Contact Microsoft
-
-To enable support of hybrid Modern Authentication for Outlook for iOS and Android, you must contact your Microsoft account team, customer sales and services (CSS) contact, or your technical account manager. You will need to provide all SMTP domains (and UPN domains in the event that your UPN domains don't match the SMTP address). Once the domains are provided and enabled, hybrid Modern Authentication will be supported for on-premises mailboxes using Outlook for iOS and Android.
+  - Value: set in KB size (10MB is 10240, for example)
   
 ## Client features that aren't supported
-
 
 The following features are not supported for on-premises mailboxes using hybrid Modern Authentication with Outlook for iOS and Android.
   
