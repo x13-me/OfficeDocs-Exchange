@@ -422,7 +422,7 @@ x-ms-diagnostics →2000003;reason="The hostname component of the audience claim
 
 As specified above in the section *Technical and licensing requirements*, SSL/TLS offloading is not supported for OAuth flows.
   
-For EvoSTS Certificate Metadata, the certifricate metadata leveraged by EvoSTS is occasionally updated in Office 365. The Exchange on-premises arbitration mailbox that has the organization capability of "OrganizationCapabilityManagement" is responsible for detecting the changes and for updating the corresponding metadata on-premises; this process executes every eight hours.
+For EvoSTS Certificate Metadata, the certificate metadata leveraged by EvoSTS is occasionally updated in Office 365. The Exchange on-premises arbitration mailbox that has the organization capability of "OrganizationCapabilityManagement" is responsible for detecting the changes and for updating the corresponding metadata on-premises; this process executes every eight hours.
   
 Exchange Administrators can find this mailbox by executing the following cmdlet using Exchange Management Shell:
   
