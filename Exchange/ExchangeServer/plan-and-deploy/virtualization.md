@@ -66,7 +66,7 @@ For deployments of Exchange 2016 or Exchange 2019:
 
 ## Host machine storage requirements
 
-The minimum disk space requirements for each host machine are descrbed in the following list:
+The minimum disk space requirements for each host machine are described in the following list:
 
 - Host machines in some hardware virtualization applications may require storage space for an operating system and its components. Additional storage space is also required to support the operating system's paging file, management software, and crash recovery (dump) files.
 
