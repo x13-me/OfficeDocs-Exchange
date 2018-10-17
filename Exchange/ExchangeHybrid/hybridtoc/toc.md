@@ -1,6 +1,3 @@
-
-  
-
 # [Exchange Hybrid](../exchange-hybrid.md)
 ## [Hybrid Configuration wizard](../hybrid-configuration-wizard.md)
 ## [Hybrid Configuration wizard FAQs](../hybrid-configuration-wizard-faqs.md)
@@ -46,8 +43,15 @@
 ### [Accessibility](../about-exchange-documentation/accessibility.md)
 ### [Third-party copyright notices](../about-exchange-documentation/third-party-copyright-notices.md)
 ## [Organization Configuration Transfer Attributes](../org-config-transfer-attributes/org-config-transfer-attributes.md)
-### [OWA Mailbox Policy](../org-config-transfer-attributes/owa-mailbox-policy.md)
-### [Retention Policy](../org-config-transfer-attributes/retention-policy.md)
-### [Retention Policy Tags](../org-config-transfer-attributes/retention-policy-tags.md)
-### [Mobile Device Mailbox Policy](../org-config-transfer-attributes/mobile-device-mailbox-policy.md)
+### [Active sync device access rule attributes](../org-config-transfer-attributes/active-sync-device-access-rule.md)
 ### [Active Sync Mailbox Policy](../org-config-transfer-attributes/active-sync-mailbox-policy.md)
+### [ActiveSync organization settings attributes](../org-config-transfer-attributes/active-sync-organization-settings.md)
+### [Address list attributes](../org-config-transfer-attributes/address-list.md)
+### [Dlp Policy attributes](../org-config-transfer-attributes/dlp-policy.md)
+### [Malware Filter policy attributes](../org-config-transfer-attributes/malware-filter-policy.md)
+### [Mobile Device Mailbox Policy](../org-config-transfer-attributes/mobile-device-mailbox-policy.md)
+### [Organization Config](../org-config-transfer-attributes/organization-config.md)
+### [OWA Mailbox Policy](../org-config-transfer-attributes/owa-mailbox-policy.md)
+### [Policy tip config attributes](../org-config-transfer-attributes/policy-tip-config.md)
+### [Retention Policy Tags](../org-config-transfer-attributes/retention-policy-tags.md)
+### [Retention Policy](../org-config-transfer-attributes/retention-policy.md)
