@@ -1,5 +1,5 @@
 ---
-title: "Resources to plan, deliver, and adopt Outlook for iOS and Android"
+title: "Plan, deliver, and adopt Outlook for iOS and Android in your organization"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -7,9 +7,19 @@ ms.audience: ITPro
 ms.topic: get-started-article
 localization_priority: Normal
 ms.collection: Ent_Office_Outlook
-description: "Provides resources for IT Pros to plan, deliver, and adopt Outlook for iOS and Android"
+description: "Provides resources for IT Pros to plan, deliver, and adopt Outlook for iOS and Android in your organization"
 ---
 
-# Resources to plan, deliver, and adopt Outlook Mobile
+# Plan, deliver, and adopt Outlook for iOS and Android in your organization
 
-The following are resources to help IT Pros and admins plan, deliver, and adopt Outlook for iOS and Android.
+[Outlook Mobile Customer Adoption Pack](https://www.microsoft.com/download) 
+
+Use these resources to make the most of Microsoft Outlook for iOS and Android for your organization. This adoption pack contains a wide range of customizable onboarding templates, flyers, posters and cheat sheets, that IT Pros, administrators, and trainers can use to roll out and drive the adoption of Outlook Mobile to end users in their organization. 
+ 
+Included in this pack:
+
+1.	Customizable onboarding email templates with links to demo video
+2.	Posters and flyers to drive buzz and excitement 
+3.	Cheat sheets with handy tips to get your end users up and running 
+4.	Installation guides 
+
