@@ -18,8 +18,8 @@ Use these resources to make the most of Microsoft Outlook for iOS and Android fo
  
 Included in this pack:
 
-1.	Customizable onboarding email templates with links to demo video
-2.	Posters and flyers to drive buzz and excitement 
-3.	Cheat sheets with handy tips to get your end users up and running 
-4.	Installation guides 
+- Customizable onboarding email templates with links to demo video
+- Posters and flyers to drive buzz and excitement 
+- Cheat sheets with handy tips to get your end users up and running 
+- Installation guides 
 
