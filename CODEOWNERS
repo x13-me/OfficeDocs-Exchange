@@ -13,7 +13,7 @@
 # *.js    @octocat @github/js
 
 # You can also use email addresses if you prefer.
-Exchange/ExchangeServer/*  @chrisda
-Exchange/ExchangeOnline/* @msdmaguire
-Exchange/ExchangeHybrid/* @dstrome
-Outlook/* @DHB-MSFT
+Exchange/ExchangeServer/*  @chrisda @AndreaBarr
+Exchange/ExchangeOnline/* @msdmaguire @AndreaBarr
+Exchange/ExchangeHybrid/* @dstrome @AndreaBarr
+Outlook/* @DHB-MSFT @AndreaBarr
