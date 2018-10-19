@@ -41,13 +41,10 @@ The PA removes complexity and redundancy where necessary to drive the architectu
 
 The PA covers four areas of focus, with those areas being the following.
 
-1.  Namespace design
-
-2.  Datacenter design
-
-3.  Server design
-
-4.  DAG design
+1. Namespace design
+2. Datacenter design
+3. Server design
+4. DAG design
 
 For Exchange Server 2019 we have no changes in three of the four categories from the Exchange Server 2016 Preferred Architecture. The areas of Namespace design, Datacenter design, and DAG design are receiving no major changes. We have been very pleased with customer deployments that closely followed the Exchange Server 2016 PA and see no need to deviate from the recommendations in those areas.
 
@@ -59,19 +56,19 @@ In the [Namespace Planning](http://blogs.technet.com/b/exchange/archive/2015/10/
 
 The recommended approach is to utilize the unbounded model, deploying a single Exchange namespace per client protocol for the site resilient datacenter pair (where each datacenter is assumed to represent its own Active Directory site - see more details on that below). For example:
 
-  - autodiscover.contoso.com
+- For the Autodiscover service: autodiscover.contoso.com
 
-  - For HTTP clients: mail.contoso.com
+- For HTTP clients: mail.contoso.com
 
-  - For IMAP clients: imap.contoso.com
+- For IMAP clients: imap.contoso.com
 
-  - For SMTP clients: smtp.contoso.com
+- For SMTP clients: smtp.contoso.com
 
 Each Exchange namespace is load balanced across both datacenters in a layer 7 configuration that does not leverage session affinity, resulting in fifty percent of traffic being proxied between datacenters. Traffic is equally distributed across the datacenters in the site resilient pair, via round robin DNS, geo-DNS, or other similar solutions. From our perspective, the simpler solution is the least complex and easier to manage, so our recommendation is to leverage round robin DNS.
 
 For the Office Online Server farm where datacenter affinity is required, a namespace is deployed per datacenter, with the load balancer utilizing layer 7, and maintaining session affinity using cookie-based persistence.
 
-![](c:\\Users\\brianday\\OneDrive%20-%20Microsoft\\Blogs\\Exchange%202019%20Preferred%20Architecture/media/image1.png)
+##. NEED TO INSERT IMAGE THAT DID NOT IMPORT
 
 In the event that you have multiple site resilient datacenter pairs in your environment, you will need to decide if you want to have a single worldwide namespace, or if you want to control the traffic to each specific datacenter by using regional namespaces. Your decision depends on your network topology and the associated cost with using an unbound model; for example, if you have datacenters located in North America and South Africa, the network link between these regions might not only be costly, but it might also have high latency, which can introduce user pain and operational issues. In that case, it makes sense to deploy a bound model with a separate namespace for each region. However, options like geographical DNS offer you the ability to deploy a single unified namespace, even when you have costly network links; geo-DNS allows you to have your users directed to the closest datacenter based on their client’s IP address.
 
@@ -81,31 +78,27 @@ To achieve a highly available *and* site resilient architecture, you must have t
 
 While we support stretching an Active Directory site across multiple datacenters, for the PA we recommend that each datacenter be its own Active Directory site. There are two reasons:
 
-1.  Transport site resilience via [Shadow redundancy in Exchange Server](../../mail-flow/transport-high-availability/shadow-redundancy.md) and [Safety Net in Exchange Server](../../mail-flow/transport-high-availability/safety-net.md) can only be achieved when the DAG has members located in more than one Active Directory site.
+1. Transport site resilience via [Shadow redundancy in Exchange Server](../../mail-flow/transport-high-availability/shadow-redundancy.md) and [Safety Net in Exchange Server](../../mail-flow/transport-high-availability/safety-net.md) can only be achieved when the DAG has members located in more than one Active Directory site.
 
-2.  Active Directory has [published guidance](https://technet.microsoft.com/library/cc770917(v=WS.10).aspx) that states that subnets should be placed in different Active Directory sites when the round trip latency is greater than 10ms between the subnets.
+2. Active Directory has [published guidance](https://technet.microsoft.com/library/cc770917(v=WS.10).aspx) that states that subnets should be placed in different Active Directory sites when the round trip latency is greater than 10ms between the subnets.
 
 ## Server Design
 
 In the PA, all servers are physical servers and use locally attached storage. Physical hardware is deployed rather than virtualized hardware for two reasons:
 
-1.  The servers are scaled to use 80% of resources during the worst-failure mode.
+1. The servers are scaled to use 80% of resources during the worst-failure mode.
 
-2.  Virtualization comes with a slight performance penalty as well as adding an additional layer of management and complexity, which introduces additional recovery modes that do not add value, particularly since Exchange Server natively provides the same functionality.
+2. Virtualization comes with a slight performance penalty as well as adding an additional layer of management and complexity, which introduces additional recovery modes that do not add value, particularly since Exchange Server natively provides the same functionality.
 
 ### Commodity Servers 
 
 Commodity server platforms are used in the PA. Current commodity platforms are and include:
 
-  - > 2U, dual socket servers with up to 48 physical processor cores (an increase from 24 cores in Exchange 2016)
-
-  - > Up to 256GB of memory (an increase from 192GB in Exchange 2016)
-
-  - > A battery-backed write cache controller
-
-  - > 12 or more large form factor drive bays within the server chassis
-
-  - > The ability to mix traditional rotating platter storage and solid-state storage within the same chassis.
+* 2U, dual socket servers with up to 48 physical processor cores (an increase from 24 cores in Exchange 2016)
+* Up to 256GB of memory (an increase from 192GB in Exchange 2016)
+* A battery-backed write cache controller
+* 12 or more drive bays within the server chassis
+* The ability to mix traditional rotating platter storage (HDD) and solid-state storage (SSD) within the same chassis.
 
 ### Scale Theory
 
@@ -141,21 +134,23 @@ Traditional and solid-state disks should be deployed in a 3:1 ratio where possib
 
 In the event of a solid-state drive failure Exchange High Availability services will attempt to mount the affected databases on different DAG nodes where a healthy MCDB for each affected database still exists. If for some reason no healthy MCDBs exist for one of the affected databases, then Exchange High Availability services will leave the local affected database copy running without the performance benefits of the MCDB.
 
-For example, if a customer were to deploy a system capable of holding 24 drives it may have a layout like the following.
+For example, if a customer were to deploy a system capable of holding 20 drives it may have a layout like the following.
 
   - 2 HDDs for OS mirror, Exchange Binaries, and Transport Database
 
-  - 15 HDDs for Exchange Database storage
+  - 12 HDDs for Exchange Database storage
 
   - 1 HDD as the AutoReseed spare
 
-  - 5 SSDs for Exchange MCDBs that provide between 5-10% of the cumulative database storage capacity. 5-6% is optimal (expand on this)
+  - 4 SSDs for Exchange MCDBs that provide between 5-10% of the cumulative database storage capacity. 5-6% is optimal (expand on this)
 
   - Optionally a customer may elect to add a spare SSD or a second AutoReseed drive.
 
 This can be visualized as the following;
 
-In the example above, we have 150 TB of Exchange database storage and 9.6 TB of MCDB storage which is roughly 6.4% the database storage space. Each of the 10 TB drives would hold four database copies and each MCDB drive would hold twelve MCDBs.
+##. NEED TO ADD DRIVE BAY LAYOUT IMAGE THAT DID NOT IMPORT.
+
+In the example above, we have 120 TB of Exchange database storage and 7.68 TB of MCDB storage which is roughly 6.4% the traditional database storage space. With this amount of MCBD storage we are perfectly aligned within the guidance of 5-10%. Each of the 10 TB drives will hold four database copies and each MCDB drive would hold twelve MCDBs.
 
 #### Common Storage Settings
 
@@ -215,10 +210,10 @@ With all of these technologies in play, traditional backups are unnecessary; as 
 
 ### Office Online Server Design
 
-At a minimum, you will want to deploy an Office Online Server farm with at least two OOS nodes in each datacenter that hosts Exchange 2019 servers. Each Office Online Server should have 8 processor cores, 32GB of memory and at least 40GB of space dedicated for log files. Exchange 2019 Mailbox servers will rely on the OOS farm in their local datacenter to ensure the lowest possible latency when rendering file content to users.
+At a minimum, you will want to deploy an Office Online Server (OOS) farm with at least two OOS nodes in each datacenter that hosts Exchange 2019 servers. Each Office Online Server should have at least 8 processor cores, 32GB of memory and at least 40GB of space dedicated for log files. Exchange 2019 mailbox servers should be configured to rely on the local OOS farm in their datacenter to ensure the lowest possible latency and highest possible bandwidth between the servers to render file content to users.
 
 ## Summary
 
 Exchange Server 2019 continues to improve upon the investments introduced in previous versions of Exchange as well as introduces additional technologies originally invented for use in Office 365.
 
-By aligning with the Preferred Architecture you will take advantage of these changes to provide the best on-premises user experience possible and continue the tradition of having a highly reliable, predictable, and resilient Exchange deployment.
+By aligning with the Preferred Architecture you will take advantage of these changes and provide the best on-premises user experience possible. You will continue the tradition of having a highly reliable, predictable, and resilient Exchange deployment.
