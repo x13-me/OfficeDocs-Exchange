@@ -13,7 +13,7 @@ ms.assetid: 07386078-6103-49a2-8698-2d41db9cec95
 description: "Summary: Learn how installing Exchange 2016 or Exchange 2019 affects Active Directory."
 ---
 
-# What changes in Active Directory when Exchange is installed??
+# What changes in Active Directory when Exchange is installed?
 
 When you install Exchange Server 2016 or Exchange Server 2019, changes are made to your Active Directory forest and domains to store information about the Exchange servers, mailboxes, and other Exchange-related objects in your organization.
 
