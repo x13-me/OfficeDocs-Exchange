@@ -68,7 +68,7 @@ Each Exchange namespace is load balanced across both datacenters in a layer 7 co
 
 For the Office Online Server farm where datacenter affinity is required, a namespace is deployed per datacenter, with the load balancer utilizing layer 7, and maintaining session affinity using cookie-based persistence.
 
-##. NEED TO INSERT IMAGE THAT DID NOT IMPORT
+![Example Exchange 2019 Org Architecture Layout](https://github.com/MicrosoftDocs/OfficeDocs-Exchange-pr/blob/PrefArc/Exchange/ExchangeServer/media/PrefArc-2019-Layout.png)
 
 In the event that you have multiple site resilient datacenter pairs in your environment, you will need to decide if you want to have a single worldwide namespace, or if you want to control the traffic to each specific datacenter by using regional namespaces. Your decision depends on your network topology and the associated cost with using an unbound model; for example, if you have datacenters located in North America and South Africa, the network link between these regions might not only be costly, but it might also have high latency, which can introduce user pain and operational issues. In that case, it makes sense to deploy a bound model with a separate namespace for each region. However, options like geographical DNS offer you the ability to deploy a single unified namespace, even when you have costly network links; geo-DNS allows you to have your users directed to the closest datacenter based on their client’s IP address.
 
@@ -148,7 +148,7 @@ For example, if a customer were to deploy a system capable of holding 20 drives 
 
 This can be visualized as the following;
 
-##. NEED TO ADD DRIVE BAY LAYOUT IMAGE THAT DID NOT IMPORT.
+![Example Exchange 2019 Mailbox Server Disk Layout](https://github.com/MicrosoftDocs/OfficeDocs-Exchange-pr/blob/PrefArc/Exchange/ExchangeServer/media/PrefArc-2019-DiskLayoutExample.PNG)
 
 In the example above, we have 120 TB of Exchange database storage and 7.68 TB of MCDB storage which is roughly 6.4% the traditional database storage space. With this amount of MCBD storage we are perfectly aligned within the guidance of 5-10%. Each of the 10 TB drives will hold four database copies and each MCDB drive would hold twelve MCDBs.
 
