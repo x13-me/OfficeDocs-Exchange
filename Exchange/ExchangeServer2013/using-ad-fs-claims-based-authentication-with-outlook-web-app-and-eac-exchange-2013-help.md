@@ -592,7 +592,7 @@ After you have completed all of the required steps, including making changes to 
   - Using Windows PowerShell:
     
     ```powershell
-    Restart-Service W3SVC,WAS -noforce
+    Restart-Service W3SVC,WAS -force
     ```
 
   - Using a command line: Click **Start**, click **Run**, type `IISReset /noforce`, and then click **OK**.
