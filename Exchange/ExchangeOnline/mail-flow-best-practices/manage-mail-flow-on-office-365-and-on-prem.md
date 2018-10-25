@@ -48,7 +48,7 @@ In this scenario, your organization's mail flow setup looks like the following d
   v=spf1 ipv4:10.10.10.1 ipv4: 131.107.21.231 include:spf.protection.outlook.com -all
   ```
 
-    Alternatively, depending on the third-party's requirements, you might need to include the domain from the third-party, as shown in the following example: 
+Alternatively, depending on the third-party's requirements, you might need to include the domain from the third-party, as shown in the following example: 
     
   ```
   v= ipv4: 131.107.21.231 spf1 include:spf.protection.outlook.com include:third_party_cloud_service.com -all
