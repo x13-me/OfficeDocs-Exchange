@@ -313,7 +313,7 @@ $Fab = Get-Mailbox -ResultSize unlimited -Filter {CustomAttribute15 -eq 'FAB'}; 
 This example assigns the ABP named ABP_TAIL to all Tailspin Toys mailboxes.
   
 ```
-$Tail = Get-Mailbox -ResultSize unlimited -Filter {$_.CustomAttribute15 -eq 'TAIL'}; $Tail | foreach {Set-Mailbox -Identity $_.Identity -AddressBookPolicy 'ABP_TAIL'}
+$Tail = Get-Mailbox -ResultSize unlimited -Filter {CustomAttribute15 -eq 'TAIL'}; $Tail | foreach {Set-Mailbox -Identity $_.Identity -AddressBookPolicy 'ABP_TAIL'}
 ```
 
 This example assigns the ABP named ABP_CEO to the CEO named Gabriela Laureano.
