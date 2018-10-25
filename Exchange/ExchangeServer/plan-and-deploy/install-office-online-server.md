@@ -77,6 +77,13 @@ To install Office Online Server, do the following on the computer where you want
 
 1. Download Office Online Server from the [Volume License Service Center](https://go.microsoft.com/fwlink/p/?linkId=195442).
 
+
+  **Note**: Office Online Server is part of the downloads for Office Professional Plus 2016 in the Volume License Service Center. If you qualify for Office Online Server but don't have access to the Volume License Servicing Center, you have the following options: 
+
+    - Volume License or Open customers can contact their [Support Center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx).
+
+    - Direct customers can submit a request from their Office 365 admin center or [contact support](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+
 2. Navigate to the location where you downloaded Office Online Server and run setup.exe.
 
 3. Follow the Office Online Server setup wizard, select an installation location and then click **Install Now**.
