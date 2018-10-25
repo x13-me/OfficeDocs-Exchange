@@ -19,7 +19,7 @@ Exchange 2013-only hybrid deployments configure OAuth authentication when using 
 
 The new Exchange OAuth authentication process currently enables the following Exchange features:
 
-  - Message Rights Management (MRM)
+  - Message Records Management (MRM)
 
   - Exchange In-place eDiscovery
 
