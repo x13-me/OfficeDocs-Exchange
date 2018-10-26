@@ -82,7 +82,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 |Exchange Server 2013 CU18|September 19, 2017|15.0.1347.2|15.00.1347.002|
 |Exchange Server 2013 CU17|June 27, 2017|15.0.1320.4|15.00.1320.004|
 |Exchange Server 2013 CU16|March 21, 2017|15.0.1293.2|15.00.1293.002|
-|Exchange Server 2013 CU15|December 13, 2016|15.0.1263.05|15.00.1263.005|
+|Exchange Server 2013 CU15|December 13, 2016|15.0.1263.5|15.00.1263.005|
 |Exchange Server 2013 CU14|September 20, 2016|15.0.1236.3|15.00.1236.003|
 |Exchange Server 2013 CU13|June 21, 2016|15.0.1210.3|15.00.1210.003|
 |Exchange Server 2013 CU12|March 15, 2016|15.0.1178.4|15.00.1178.004|
@@ -205,7 +205,7 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 |Update Rollup 9 for Exchange Server 2007 SP3|December 10, 2012|8.3.297.2|8.03.0297.002|
 |Update Rollup 8-v3 for Exchange Server 2007 SP3|November 13, 2012|8.3.279.6|8.03.0279.006|
 |Update Rollup 8–v2 for Exchange Server 2007 SP3|October 9, 2012|8.3.279.5|8.03.0279.005|
-|Update Rollup 8 for Exchange Server 2007 SP3|August 13, 2012|8.3.279.38.03.0279.003|
+|Update Rollup 8 for Exchange Server 2007 SP3|August 13, 2012|8.3.279.3|8.03.0279.003|
 |Update Rollup 7 for Exchange Server 2007 SP3|April 16, 2012|8.3.264.0|8.03.0264.000|
 |Update Rollup 6 for Exchange Server 2007 SP3|January 26, 2012|8.3.245.2|8.03.0245.002|
 |Update Rollup 5 for Exchange Server 2007 SP3|September 21, 2011|8.3.213.1|8.03.0213.001|
