@@ -285,19 +285,19 @@ This organization requires three ABPs:
 This example creates the ABP named ABP_FAB that contains the GAL, OAB, room list and address lists for Fabrikam.
   
 ```
-New-AddressBookPolicy -Name "ABP_FAB" -AddressLists "AL_FAB_Users_DGs"," AL_FAB_Contacts" -OfflineAddressBook "\OAB_FAB" -GlobalAddressList "\GAL_FAB" -RoomList "\AL_FAB_Rooms"
+New-AddressBookPolicy -Name "ABP_FAB" -AddressLists "AL_FAB_Users_DGs","AL_FAB_Contacts" -OfflineAddressBook "\OAB_FAB" -GlobalAddressList "\GAL_FAB" -RoomList "\AL_FAB_Rooms"
 ```
 
 This example creates the ABP named ABP_TAIL that contains the GAL, OAB, room list and address lists for Tailspin Toys.
   
 ```
-New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
+New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs","AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
 ```
 
 This example creates the ABP named ABP_CEO that contains the GAL, OAB, room list and address lists for the CEO.
   
 ```
-New-AddressBookPolicy -Name "ABP_CEO" -AddressLists "AL_FAB_Users_DGs"," AL_FAB_Contacts","AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\Default Offline Address Book" -GlobalAddressList "\Default Global Address List" -RoomList "\All Rooms"
+New-AddressBookPolicy -Name "ABP_CEO" -AddressLists "AL_FAB_Users_DGs","AL_FAB_Contacts","AL_TAIL_Users_DGs","AL_TAIL_Contacts" -OfflineAddressBook "\Default Offline Address Book" -GlobalAddressList "\Default Global Address List" -RoomList "\All Rooms"
 ```
 
 For more information, see [Procedures for address book policies in Exchange Server](abp-procedures.md).
@@ -307,13 +307,13 @@ For more information, see [Procedures for address book policies in Exchange Serv
 This example assigns the ABP named ABP_FAB to all Fabrikam mailboxes.
   
 ```
-$Fab = Get-Mailbox -ResultSize unlimited | where {$_.CustomAttribute15 -eq 'FAB'}; $Fab | foreach {Set-Mailbox -AddressBookPolicy 'ABP_FAB'}
+$Fab = Get-Mailbox -ResultSize unlimited -Filter {CustomAttribute15 -eq 'FAB'}; $Fab | foreach {Set-Mailbox -Identity $_.Identity -AddressBookPolicy 'ABP_FAB'}
 ```
 
 This example assigns the ABP named ABP_TAIL to all Tailspin Toys mailboxes.
   
 ```
-$Tail = Get-Mailbox -ResultSize unlimited | where {$_.CustomAttribute15 -eq 'TAIL'}; $Tail | foreach {Set-Mailbox -AddressBookPolicy 'ABP_TAIL'}
+$Tail = Get-Mailbox -ResultSize unlimited -Filter {CustomAttribute15 -eq 'TAIL'}; $Tail | foreach {Set-Mailbox -Identity $_.Identity -AddressBookPolicy 'ABP_TAIL'}
 ```
 
 This example assigns the ABP named ABP_CEO to the CEO named Gabriela Laureano.

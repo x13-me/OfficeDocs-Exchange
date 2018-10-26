@@ -43,37 +43,37 @@ When you set up the ASA credential, keep these guidelines in mind:
     
     Use the **Import-Module** cmdlet to import the Active Directory module.
     
-  ```
-  Import-Module ActiveDirectory
-  ```
+   ```
+   Import-Module ActiveDirectory
+   ```
 
 2. Use the **New-ADComputer** cmdlet to create a new Active Directory computer account using this cmdlet syntax: 
     
-  ```
-  New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
-  ```
+   ```
+   New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
+   ```
 
-    **Example:**
+   **Example:**
     
-  ```
-  New-ADComputer -Name EXCH2016ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2016ASA
-  ```
+   ```
+   New-ADComputer -Name EXCH2016ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2016ASA
+   ```
 
     Where _EXCH2016ASA_ is the name of the account, the description _Alternate Service Account credentials for Exchange_ is whatever you want it to be, and the value for the _SamAccountName_ parameter, in this case _EXCH2016ASA_, has to be unique in your directory.
     
 3. Use the **Set-ADComputer** cmdlet to enable the AES 256 encryption cipher support used by Kerberos using this cmdlet syntax: 
     
-  ```
-  Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
-  ```
+   ```
+   Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
+   ```
 
-    **Example:**
+   **Example:**
     
-  ```
-  Set-ADComputer EXCH2016ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
-  ```
+   ```
+   Set-ADComputer EXCH2016ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
+   ```
 
-    Where _EXCH2016ASA_ is the name of the account and the attribute to be modified is _msDS-SupportedEncryptionTypes_ with a decimal value of 28, which enables the following ciphers: RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96.
+   Where _EXCH2016ASA_ is the name of the account and the attribute to be modified is _msDS-SupportedEncryptionTypes_ with a decimal value of 28, which enables the following ciphers: RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96.
     
 For more information about these cmdlets, see [Import-Module](https://technet.microsoft.com/library/hh849725.aspx) and [New-ADComputer](https://technet.microsoft.com/library/ee617245.aspx).
   
@@ -151,9 +151,9 @@ The only supported method for deploying the ASA credential is to use the RollAlt
     
 3. Run the following command to deploy the ASA credential to the first Exchange 2016  or Exchange 2019 server running Client Access services:
     
-  ```
-  .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-1.corp.tailspintoys.com -GenerateNewPasswordFor tailspin\EXCH2016ASA$
-  ```
+   ```
+   .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-1.corp.tailspintoys.com -GenerateNewPasswordFor tailspin\EXCH2016ASA$
+   ```
 
 4. When you're asked if you want to change the password for the alternate service account, answer **Yes**.
     
@@ -206,9 +206,9 @@ cas-1 Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
     
 3. Run the following command to deploy the ASA credential to another Exchange 2016 or Exchange 2019 server running Client Access services:
     
-  ```
-  .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-2.corp.tailspintoys.com -CopyFrom cas-1.corp.tailspintoys.com
-  ```
+   ```
+   .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-2.corp.tailspintoys.com -CopyFrom cas-1.corp.tailspintoys.com
+   ```
 
 4. Repeat Step 3 for each server running Client Access services that you want to deploy the ASA credential to.
     
@@ -289,17 +289,17 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
     
 2. At the command prompt, type the following command:
     
-  ```
-  setspn -F -Q <SPN>
-  ```
+   ```
+   setspn -F -Q <SPN>
+   ```
 
-    Where \<SPN\> is the SPN you want to associate with the ASA credential. For example:
+   Where \<SPN\> is the SPN you want to associate with the ASA credential. For example:
     
-  ```
-  setspn -F -Q http/mail.corp.tailspintoys.com
-  ```
+   ```
+   setspn -F -Q http/mail.corp.tailspintoys.com
+   ```
 
-    The command should return nothing. If it returns something, another account is already associated with the SPN. Repeat this step one time for each SPN that you want to associate with the ASA credential.
+   The command should return nothing. If it returns something, another account is already associated with the SPN. Repeat this step one time for each SPN that you want to associate with the ASA credential.
     
 ### Associate an SPN with an ASA credential by using the setspn command
 
@@ -307,17 +307,17 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
     
 2. At the command prompt, type the following command:
     
-  ```
-  setspn -S <SPN> <Account>$
-  ```
+   ```
+   setspn -S <SPN> <Account>$
+   ```
 
-    Where \<SPN\> is the SPN you want to associate with the ASA credential and \<Account\> is the account associated with the ASA credential. For example:
+   Where \<SPN\> is the SPN you want to associate with the ASA credential and \<Account\> is the account associated with the ASA credential. For example:
     
-  ```
-  setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2016ASA$
-  ```
+   ```
+   setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2016ASA$
+   ```
 
-    Run this command one time for each SPN that you want to associate with the ASA credential.
+   Run this command one time for each SPN that you want to associate with the ASA credential.
     
 ### Verify you associated the SPNs with the ASA credentials by using the setspn command
 
@@ -325,17 +325,17 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
     
 2. At the command prompt, type the following command:
     
-  ```
-  setspn -L <Account>$
-  ```
+   ```
+   setspn -L <Account>$
+   ```
 
-    Where \<Account\> is the account associated with the ASA credential. For example:
+   Where \<Account\> is the account associated with the ASA credential. For example:
     
-  ```
-  setspn -L tailspin\EXCH2016ASA$
-  ```
+   ```
+   setspn -L tailspin\EXCH2016ASA$
+   ```
 
-    You have to run this command only one time.
+   You have to run this command only one time.
     
 ## Enable Kerberos authentication for Outlook clients
 <a name="associateSPN"> </a>
@@ -344,15 +344,15 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
     
 2. To enable Kerberos authentication for Outlook Anywhere clients, run the following command on your Exchange 2016 or Exchange 2019 server that is running Client Access services:
     
-  ```
-  Get-OutlookAnywhere -Server CAS-1 | Set-OutlookAnywhere -InternalClientAuthenticationMethod  Negotiate
-  ```
+   ```
+   Get-OutlookAnywhere -Server CAS-1 | Set-OutlookAnywhere -InternalClientAuthenticationMethod  Negotiate
+   ```
 
 3. To enable Kerberos authentication for MAPI over HTTP clients, run the following on your Exchange 2016 or Exchange 2019 server that is running Client Access services:
     
-  ```
-  Get-MapiVirtualDirectory -Server CAS-1 | Set-MapiVirtualDirectory -IISAuthenticationMethods Ntlm, Negotiate
-  ```
+   ```
+   Get-MapiVirtualDirectory -Server CAS-1 | Set-MapiVirtualDirectory -IISAuthenticationMethods Ntlm, Negotiate
+   ```
 
 4. Repeat steps 2 and 3 for each Exchange 2016 or Exchange 2019 server that is running Client Access services for whichyou want to enable Kerberos authentication.
     
@@ -385,11 +385,11 @@ When you configured the ASA credential on each server running Client Access serv
     
 2. Open the most recent log file, and then look for the word **Negotiate**. The line in the log file will look something like the following example:
     
-  ```
-  2014-02-19T13:30:49.219Z,e19d08f4-e04c-42da-a6be-b7484b396db0,15,0,775,22,,RpcHttp,mail.corp.tailspintoys.com,/rpc/rpcproxy.dll,,Negotiate,True,tailspin\Wendy,tailspintoys.com,MailboxGuid~ad44b1e0-e44f-4a16-9396-3a437f594f88,MSRPC,192.168.1.77,EXCH1,200,200,,RPC_OUT_DATA,Proxy,exch2.tailspintoys.com,15.00.0775.000,IntraForest,MailboxGuidWithDomain,,,,76,462,1,,1,1,,0,,0,,0,0,16272.3359,0,0,3,0,23,0,25,0,16280,1,16274,16230,16233,16234,16282,?ad44b1e0-e44f-4a16-9396-3a437f594f88@tailspintoys.com:6001,,BeginRequest=2014-02-19T13:30:32.946Z;BeginGetRequestStream=2014-02-19T13:30:32.946Z;OnRequestStreamReady=2014-02-19T13:30:32.946Z;BeginGetResponse=2014-02-19T13:30:32.946Z;OnResponseReady=2014-02-19T13:30:32.977Z;EndGetResponse=2014-02-19T13:30:32.977Z;,PossibleException=IOException;
-  ```
+   ```
+   2014-02-19T13:30:49.219Z,e19d08f4-e04c-42da-a6be-b7484b396db0,15,0,775,22,,RpcHttp,mail.corp.tailspintoys.com,/rpc/rpcproxy.dll,,Negotiate,True,tailspin\Wendy,tailspintoys.com,MailboxGuid~ad44b1e0-e44f-4a16-9396-3a437f594f88,MSRPC,192.168.1.77,EXCH1,200,200,,RPC_OUT_DATA,Proxy,exch2.tailspintoys.com,15.00.0775.000,IntraForest,MailboxGuidWithDomain,,,,76,462,1,,1,1,,0,,0,,0,0,16272.3359,0,0,3,0,23,0,25,0,16280,1,16274,16230,16233,16234,16282,?ad44b1e0-e44f-4a16-9396-3a437f594f88@tailspintoys.com:6001,,BeginRequest=2014-02-19T13:30:32.946Z;BeginGetRequestStream=2014-02-19T13:30:32.946Z;OnRequestStreamReady=2014-02-19T13:30:32.946Z;BeginGetResponse=2014-02-19T13:30:32.946Z;OnResponseReady=2014-02-19T13:30:32.977Z;EndGetResponse=2014-02-19T13:30:32.977Z;,PossibleException=IOException;
+   ```
 
-    If you see that the **AuthenticationType** value is **Negotiate**, the server is successfully creating Kerberos authenticated connections.
+   If you see that the **AuthenticationType** value is **Negotiate**, the server is successfully creating Kerberos authenticated connections.
     
 ## Maintain the ASA credential
 <a name="maintainASAcredential"> </a>
@@ -405,9 +405,9 @@ To configure your servers that are running Client Access services to stop using 
 
 1. Open the Exchange Management Shell on an Exchange 2016 or Exchange 2019 server, and run the following command:
     
-  ```
-  Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
-  ```
+   ```
+   Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+   ```
 
 2. Although you don't have to do this immediately, you should eventually restart all client computers to clear the Kerberos ticket cache from the computer.
     

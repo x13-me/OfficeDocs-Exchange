@@ -366,15 +366,15 @@ All configuration options for back pressure are available in the %ExchangeInstal
 </tr>
 <tr class="even">
 <td><p><em>VersionBucketsHighThreshold</em></p></td>
-<td><p>200</p></td>
+<td><p>2500</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>VersionBucketsMediumThreshold</em></p></td>
-<td><p>120</p></td>
+<td><p>2000</p></td>
 </tr>
 <tr class="even">
 <td><p><em>VersionBucketsNormalThreshold</em></p></td>
-<td><p>80</p></td>
+<td><p>1750</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>VersionBucketsHistoryDepth</em></p></td>

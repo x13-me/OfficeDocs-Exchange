@@ -19,9 +19,9 @@ Exchange follows a quarterly delivery model to release Cumulative Updates (CUs) 
 Because each CU is a full installation of Exchange that includes updates and changes from all previous CU's, you don't need to install any previously released CU's when installing a new Exchange server using the latest released CU.
 
 ::: moniker range="exchserver-2019"
-**Version**|**Blog post**|
+|**Version**|**Blog post**|
 |:-----|:-----|
-|Exchange 2019 RTM|
+|Exchange 2019 RTM|[Exchange Server 2019 Now Available](https://blogs.technet.microsoft.com/exchange/2018/10/22/exchange-server-2019-now-available/)|
 
 For information about the new features you'll get when you upgrade to Exchange 2019 from previous versions of Exchange, see [What's new in Exchange Server](../new-features/new-features.md).
 ::: moniker-end
@@ -33,6 +33,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 
 |**Version**|**Blog post**|
 |:-----|:-----|
+|Exchange 2016 CU11|[Released: October 2018 Quarterly Exchange Updates](https://www.microsoft.com/download/details.aspx?id=57388)|
 |Exchange 2016 CU10|[Released: June 2018 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=2003013)|
 |Exchange 2016 CU9|[Released: March 2018 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=870404)|
 |Exchange 2016 CU8|[Released: December 2017 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=865293)|

@@ -101,7 +101,7 @@ Take a look at the following scenario. It's an example topology that provides an
   
 Let's say that you're the network administrator for Contoso, and you're interested in configuring a hybrid deployment. You deploy and configure a required Azure AD Connect server and you also decide to use the Azure AD Connect password synchronization feature to let users use the same credentials for both their on-premises network account and their Office 365 account. After you complete the hybrid deployment prerequisites and use the Hybrid Configuration wizard to select options for the hybrid deployment, your new topology has the following configuration:
   
-- Users will use their the same username and password for logging on to the on-premises and Exchange Online organizations ("single sign-on").
+- Users will use the same username and password for logging on to the on-premises and Exchange Online organizations ("single sign-on").
     
 - User mailboxes located on-premises and in the Exchange Online organization will use the same email address domain. For example, mailboxes located on-premises and mailboxes located in the Exchange Online organization will both use @contoso.com in user email addresses.
     

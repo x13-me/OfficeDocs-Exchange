@@ -11,7 +11,8 @@ f1_keywords:
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 74c72aed-e9ff-4927-8eb7-c08a86e79ae0
-description: "Mail contacts are mail-enabled directory service objects that contain information about people or organizations that exist outside your Exchange or Exchange Online organization. Each mail contact has an external email address.
+description: "Admins can learn how to create, modify, and delete mail contacts in Exchange Online."
+---
 
 # Manage mail contacts
 
