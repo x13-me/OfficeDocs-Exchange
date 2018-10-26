@@ -23,7 +23,7 @@ The PA is the Exchange Server Engineering Team’s best practice recommendation 
 
 While Exchange 2019 offers a wide variety of architectural choices for on-premises deployments, the architecture discussed here is the most scrutinized one. While there are other supported deployment architectures, they are not our recommended practice.
 
-We have also found following the PA helps customers find themselves as a member a large community of organizations with similar Exchange Server deployments. This allows easier knowledge sharing and facilities a more rapid response to unforeseen circumstances. Our own support organization is well aware what an Exchange Server PA deployment should look like and prevents them from spending lengthy cycles learning and understanding a customer’s highly custom environment before working with them towards a support case resolution.
+Following the PA helps customers become a member of a community of organizations with similar Exchange Server deployments. This allows easier knowledge sharing and facilitates a more rapid response to unforeseen circumstances. Our own support organization is well aware what an Exchange Server PA deployment should look like and prevents them from spending lengthy cycles learning and understanding a customer’s highly custom environment before working with them towards a support case resolution.
 
 The PA is designed with several business requirements in mind, such as the requirement that the architecture be able to:
 
@@ -66,7 +66,9 @@ The recommended approach is to utilize the unbounded model, deploying a single E
 
 Each Exchange namespace is load balanced across both datacenters in a layer 7 configuration that does not leverage session affinity, resulting in fifty percent of traffic being proxied between datacenters. Traffic is equally distributed across the datacenters in the site resilient pair, via round robin DNS, geo-DNS, or other similar solutions. From our perspective, the simpler solution is the least complex and easier to manage, so our recommendation is to leverage round robin DNS.
 
-For the Office Online Server farm where datacenter affinity is required, a namespace is deployed per datacenter, with the load balancer utilizing layer 7, and maintaining session affinity using cookie-based persistence.
+One caution we have for customers is to ensure you assign a low TTL (time to live) value for any DNS record associated with your Exchange architecture. In the event if a full datacenter outage when using round robin DNS you must maintain the ability to quickly update your DNS records to remove the IP addresses from the offline datacenter so they are not returned for DNS queries. For example, if your DNS records have a longer TTL value of 24 hours it may take up to a day for downstream DNS caches to properly update. If you do not perform this step you may find some clients are unable to properly transition to the still available IP addresses in your remaining datacenter. Do not forget to add the IP addresses back to your DNS records when your previously offline datacenter is recovered and ready to host services once again.
+
+Datacenter affinity is required for the Office Online Server farms, thus a namespace is deployed per datacenter with the load balancer utilizing layer 7, and maintaining session affinity via cookie-based persistence.
 
 ![Example Exchange 2019 Org Architecture Layout](https://github.com/MicrosoftDocs/OfficeDocs-Exchange-pr/blob/PrefArc/Exchange/ExchangeServer/media/PrefArc-2019-Layout.png)
 
@@ -102,7 +104,7 @@ Commodity server platforms are used in the PA. Current commodity platforms are a
 
 ### Scale Theory
 
-It is important to note even though we have increased the allowed processor and memory capacity in Exchange Server 2019 the Exchange Server PG’s recommendation remains to scale out rather than up. Scaling out vs up means we would much rather see you deploy a larger number of servers with slightly less resources rather than a smaller number of very dense servers using maximum resources and populated with large numbers of mailboxes. By locating a reasonable number of mailboxes within a server you lessen the impact of any planned or unplanned outage as well as reduce the risk of discovering other system bottlenecks.
+It is important to note even though we have increased the allowed processor and memory capacity in Exchange Server 2019 the Exchange Server PG’s recommendation remains to scale out rather than up. Scaling out vs up means we would much rather see you deploy a larger number of servers with slightly less resources per server rather than a smaller number of very dense servers using maximum resources and populated with large numbers of mailboxes. By locating a reasonable number of mailboxes within a server you lessen the impact of any planned or unplanned outage as well as reduce the risk of discovering other system bottlenecks.
 
 An increase in system resources should not result in the assumption you will see linear performance gains in Exchange Server 2019 using the maximum allowed resources when comparing it to Exchange 2016’s maximum allowed resources. Each new version of Exchange brings new processes and updates which in turn make it difficult to compare a current version to prior version. Please follow any and all sizing guidance from Microsoft when determining your server design.
 
@@ -142,7 +144,7 @@ For example, if a customer were to deploy a system capable of holding 20 drives 
 
   - 1 HDD as the AutoReseed spare
 
-  - 4 SSDs for Exchange MCDBs that provide between 5-10% of the cumulative database storage capacity. 5-6% is optimal (expand on this)
+  - 4 SSDs for Exchange MCDBs that provide between 5-10% of the cumulative database storage capacity.
 
   - Optionally a customer may elect to add a spare SSD or a second AutoReseed drive.
 
@@ -176,7 +178,7 @@ As with the namespace model, each DAG within the site resilient datacenter pair 
 
 Each datacenter is symmetrical, with an equal number of DAG members in each datacenter. This means that each DAG has an even number of servers and uses a witness server for quorum maintenance.
 
-The DAG is the fundamental building block in Exchange 2019. With respect to DAG size, a larger DAG provides more redundancy and resources. Within the PA, the goal is to deploy larger DAGs (typically starting out with an eight-member DAG and increasing the number of servers as required to meet your requirements). You should only create new DAGs when scalability introduces concerns over the existing database copy layout.
+The DAG is the fundamental building block in Exchange 2019. With respect to DAG size, a DAG with a greater number of participating member nodes provides more redundancy and resources. Within the PA, the goal is to deploy DAGs with a greater number of member nodes, typically starting with an eight-member DAG and increasing the number of servers as required to meet your requirements. You should only create new DAGs when scalability introduces concerns over the existing database copy layout.
 
 ### DAG Network Design
 
