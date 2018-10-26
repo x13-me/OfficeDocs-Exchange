@@ -41,10 +41,13 @@ The PA removes complexity and redundancy where necessary to drive the architectu
 
 The PA covers four areas of focus, with those areas being the following.
 
-1. Namespace design
-2. Datacenter design
-3. Server design
-4. DAG design
+1.  Namespace design
+
+2.  Datacenter design
+
+3.  Server design
+
+4.  DAG design
 
 For Exchange Server 2019 we have no changes in three of the four categories from the Exchange Server 2016 Preferred Architecture. The areas of Namespace design, Datacenter design, and DAG design are receiving no major changes. We have been very pleased with customer deployments that closely followed the Exchange Server 2016 PA and see no need to deviate from the recommendations in those areas.
 
@@ -96,15 +99,33 @@ In the PA, all servers are physical servers and use locally attached storage. Ph
 
 Commodity server platforms are used in the PA. Current commodity platforms are and include:
 
-* 2U, dual socket servers with up to 48 physical processor cores (an increase from 24 cores in Exchange 2016)
-* Up to 256GB of memory (an increase from 192GB in Exchange 2016)
-* A battery-backed write cache controller
-* 12 or more drive bays within the server chassis
-* The ability to mix traditional rotating platter storage (HDD) and solid-state storage (SSD) within the same chassis.
+- 2U, dual socket servers with up to 48 physical processor cores (an increase from 24 cores in Exchange 2016)
+
+- Up to 256GB of memory (an increase from 192GB in Exchange 2016)
+
+- A battery-backed write cache controller
+
+- 12 or more drive bays within the server chassis
+
+- The ability to mix traditional rotating platter storage (HDD) and solid-state storage (SSD) within the same chassis.
 
 ### Scale Theory
 
 It is important to note even though we have increased the allowed processor and memory capacity in Exchange Server 2019 the Exchange Server PG’s recommendation remains to scale out rather than up. Scaling out vs up means we would much rather see you deploy a larger number of servers with slightly less resources per server rather than a smaller number of very dense servers using maximum resources and populated with large numbers of mailboxes. By locating a reasonable number of mailboxes within a server you lessen the impact of any planned or unplanned outage as well as reduce the risk of discovering other system bottlenecks.
+=======
+  - 2U, dual socket servers with up to 48 physical processor cores (an increase from 24 cores in Exchange 2016)
+
+  - Up to 256GB of memory (an increase from 192GB in Exchange 2016)
+
+  - A battery-backed write cache controller
+
+  - 12 or more large form factor drive bays within the server chassis
+
+  - The ability to mix traditional rotating platter storage and solid-state storage within the same chassis.
+
+### Scale Theory
+
+It is important to note even though we have increased the allowed processor and memory capacity in Exchange Server 2019 the Exchange Server PG’s recommendation remains to scale out rather than up. Scaling out vs up means we would much rather see you deploy a larger number of servers with slightly less resources rather than a smaller number of very dense servers using maximum resources and populated with large numbers of mailboxes. By locating a reasonable number of mailboxes within a server you lessen the impact of any planned or unplanned outage as well as reduce the risk of discovering other system bottlenecks.
 
 An increase in system resources should not result in the assumption you will see linear performance gains in Exchange Server 2019 using the maximum allowed resources when comparing it to Exchange 2016’s maximum allowed resources. Each new version of Exchange brings new processes and updates which in turn make it difficult to compare a current version to prior version. Please follow any and all sizing guidance from Microsoft when determining your server design.
 
