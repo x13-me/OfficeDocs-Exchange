@@ -734,16 +734,22 @@ The following table identifies the version of the Microsoft .NET Framework that
 <thead>
 <tr class="header">
 <th>.NET Framework</th>
-<th>Exchange 2016 CU8 &amp; CU9</th>
-<th>Exchange 2016 CU5 - CU7</th>
-<th>Exchange 2013 CU19 &amp; CU20</th>
-<th>Exchange 2013 CU16 - CU18</th>
+<th>Exchange 2016 CU11</th>
+<th>Exchange 2016 CU10</th>
+<th>Exchange 2016 CU8-CU9</th>
+<th>Exchange 2016 CU5-CU7</th>
+<th>Exchange 2013 CU21</th>
+<th>Exchange 2013 CU19-CU20</th>
+<th>Exchange 2013 CU16-CU18</th>
 <th>Exchange 2010 SP3</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>.NET Framework 3.5</p></td>
+<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
@@ -756,10 +762,16 @@ The following table identifies the version of the Microsoft .NET Framework that
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="odd">
 <td><p>.NET Framework 4.0</p></td>
+<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
@@ -772,12 +784,18 @@ The following table identifies the version of the Microsoft .NET Framework that
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
 <td><p>X1,2</p></td>
 </tr>
 <tr class="odd">
 <td><p>.NET Framework 4.6.2</p></td>
+<td><p> </p></td>
+<td><p> </p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
+<td><p> </p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p> </p></td>
@@ -785,8 +803,22 @@ The following table identifies the version of the Microsoft .NET Framework that
 <tr class="even">
 <td><p>.NET Framework 4.7.1</p></td>
 <td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p> </p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="even">
+<td><p>.NET Framework 4.7.2</p></td>
+<td><p>X</p></td>
+<td><p></p></td>
+<td><p></p></td>
 <td><p></p></td>
 <td><p>X</p></td>
+<td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>

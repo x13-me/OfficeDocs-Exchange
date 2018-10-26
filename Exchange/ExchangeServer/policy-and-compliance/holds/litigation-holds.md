@@ -46,10 +46,12 @@ Place a mailbox on Litigation Hold to preserve all mailbox content, including de
     
   - **Litigation hold duration (days)**: Use this box to specify how long mailbox items are held when the mailbox is placed on Litigation Hold. The duration is calculated from the date a mailbox item is received or created. If you leave this box blank, items are held indefinitely or until the hold is removed. Use days to specify the duration.
     
-  - **Note**: Use this box to inform the user their mailbox is on Litigation Hold. The note will appear on the **File** tab in Outlook 2010 or later.
+  - **Note**<sup>*</sup>: Use this box to inform the user their mailbox is on Litigation Hold. The note will appear on the **File** tab in Outlook 2010 or later.
     
-  - **URL**: Use this box to direct the user to a website for more information about Litigation Hold. This URL appears on the **File** tab Outlook 2010 or later.
-    
+  - **URL**<sup>*</sup>: Use this box to direct the user to a website for more information about Litigation Hold. This URL appears on the **File** tab Outlook 2010 or later.
+
+  <sup>*</sup>If you leave the **Note** and **URL** values blank, the user isn't notified that you placed a litigation hold on their mailbox.
+
 6. Click **Save** on the **Litigation Hold** page, and then click **Save** on the mailbox properties page.
     
 ## Use the Exchange Management Shell to place a mailbox on Litigation Hold indefinitely
