@@ -9,17 +9,19 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 29ac61c2-77f1-4071-b14e-8cc64e3e76ba
-description: "Summary: Learn how admins can apply an organization-wide signature (disclaimer) to all outbound messages in Office 365."
+description: "Summary: Admins can learn how to apply text to the top or bottom of outbound messages in Office 365"
 ---
 
 # Organization-wide message disclaimers, signatures, footers, or headers in Office 365
 
- **Summary**: Learn how admins can apply an organization-wide signature (disclaimer) to all outbound messages in Office 365.
+ **Summary**: Admins can learn how to apply text to the top or bottom of outbound messages in Office 365.
   
 You can add an HTML or plain text legal disclaimer, disclosure statement, signature, or other information to the top or bottom of email messages that enter or leave your organization. To do this, you create a mail flow rule (also known as a transport rule) that adds the required information to messages.
   
  **Notes**:
-  
+ 
+- Users can apply signatures to their own outgoing messages in Outlook or Outlook on the web (formerly known as Outlook Web App). For more information, see [Create and add an email signature in Outlook Web App](https://support.office.com/article/0F230564-11B9-4239-83DE-F10CBE4DFDFC).
+
 - If you want the information to be added only to outgoing messages, you need to add a corresponding condition (for example, recipients located outside the organization). By default, mail flow rules are applied to incoming and outgoing messages.
     
 - To avoid multiple disclaimers being added in an email conversation, add an exception that looks for unique text in your disclaimer. This ensures that the disclaimer is only added to the original message.
@@ -27,6 +29,8 @@ You can add an HTML or plain text legal disclaimer, disclosure statement, signat
 - Test the disclaimer. When you create the mail flow rule, you have the option to start using it immediately ( **Enforce**), or to test it first and view the results in the messaging log. We recommend testing all mail flow rules prior to setting them to **Enforce**.
     
 For examples and information about how to scope and format disclaimers, signatures, and other additions to email messages, see [Organization-wide disclaimers, signatures, footers, or headers in Exchange 2016](http://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx).
+
+
   
 ## What do you need to know before you begin?
 

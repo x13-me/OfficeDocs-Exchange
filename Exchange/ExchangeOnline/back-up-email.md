@@ -21,9 +21,9 @@ One of the questions we often hear is "How does Exchange Online back up my data?
 Lots of things can disrupt service availability, such as hardware failure, natural disasters, or human error. To ensure that your data is always available and that services continue, even when unexpected events occur, Exchange Online uses the same technologies found in Exchange Server. For example, Exchange Online uses the Exchange Server feature known as Database Availability Groups to replicate Exchange Online mailboxes to multiple databases in separate Microsoft datacenters. As a result, you can readily access up-to-date mailbox data in the event of a failure that affects one of the database copies. In addition to having multiple copies of each mailbox database, the different datacenters back up data for one another. If one fails, the affected data are transferred to another datacenter with limited service interruption and users experience seamless connectivity.
   
 > [!NOTE]
-> You can obtain the most current information related to a service interrupting event by logging into the Service Health Dashboard. For more information, see [View the status of your services](https://go.microsoft.com/fwlink/?LinkId=786661). 
+> You can obtain the most current information related to a service interrupting event by logging into the Service Health Dashboard. For more information, see [View the status of your services](https://go.microsoft.com/fwlink/p/?LinkId=786661). 
   
-### What happens if users accidently delete data from their mailboxes?
+### What happens if users accidentally delete data from their mailboxes?
 
 Exchange Online service provides several options for Deleted item recovery, which include manual recovery from Deleted Items, recovery from Recoverable Items, Single Items recovery, and retention policies and tags. Archiving and litigation hold are also available within the appropriate licensing to complement the needs of preserving data.
   
@@ -41,7 +41,7 @@ Exchange Online service provides several options for Deleted item recovery, whic
 >  - [Exchange Online Service Description](http://technet.microsoft.com/library/7a83da3c-3b6d-4f86-ad4d-6104707cd0ec.aspx)
 >  - [Create or remove an In-Place Hold](security-and-compliance/create-or-remove-in-place-holds.md)
 >  - [Place a mailbox on Litigation Hold](http://technet.microsoft.com/library/adee4621-3626-4aec-aa53-00b35ff0d0b0.aspx)
-> - [Manage inactive mailboxes in Exchange Online](http://technet.microsoft.com/library/c60e9ae7-dd02-4c5f-9f5d-7626a9101094.aspx)
+>  - [Manage inactive mailboxes in Exchange Online](http://technet.microsoft.com/library/c60e9ae7-dd02-4c5f-9f5d-7626a9101094.aspx)
   
 ## How do users backup Outlook data?
 
@@ -51,12 +51,12 @@ To learn how to restore deleted items in Outlook, see [Recover deleted items in 
   
 To learn how to restore deleted items in Outlook Web App, see [Recover deleted items or email in Outlook Web App](https://support.office.com/article/c3d8fc15-eeef-4f1c-81df-e27964b7edd4).
   
-## Backing up Exchange 2016 on-premises
+## Backing up Exchange Server
 
-Read [Using Windows Server Backup to back up and restore Exchange data](https://go.microsoft.com/fwlink/?LinkId=816871) for more info about backing up Exchange Server 2016. 
+Read [Using Windows Server Backup to back up and restore Exchange data](https://docs.microsoft.com/Exchange/high-availability/disaster-recovery/windows-server-backup) for more info about backing up Exchange Server 2016 and Exchange Server 2019. 
   
 ## Offboard a user from Office 365
 
-For more info what to do when a user in your organization leaves, check out [Offboard a user from Office 365](https://go.microsoft.com/fwlink/?LinkId=816871). This topic discusses the steps you should take and how to secure your data after an employee leaves your organization.
+For more info what to do when a user in your organization leaves, check out [Offboard a user from Office 365](https://go.microsoft.com/fwlink/p/?LinkId=816871). This topic discusses the steps you should take and how to secure your data after an employee leaves your organization.
   
 

@@ -3,7 +3,7 @@ title: "Delete or restore user mailboxes in Exchange Online"
 ms.author: kwekua
 author: kwekua
 manager: scotv
-ms.date: 6/24/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -80,7 +80,7 @@ This example deletes the user account for Walter Harp from the Azure active dire
 Remove-MsolUser -UserPrincipalName <Walter Harp> -RemoveFromRecycleBin true
 ```
 
-For more details, check out, [Remove-MsolUser](https://go.microsoft.com/fwlink/?LinkID=809043).
+For more details, check out, [Remove-MsolUser](https://go.microsoft.com/fwlink/p/?LinkID=809043).
   
 ### How do you know this worked?
 
@@ -117,7 +117,7 @@ To restore an Office 365 user account, see [Delete or restore users](https://go.
 
 You can recover soft-deleted mailboxes using the PowerShell cmdlet below. The cmdlet example below restores the mailbox for Allie Bellew.
   
-1. [Connect to Exchange PowerShell](https://go.microsoft.com/fwlink/?LinkID=785881)
+1. [Connect to Exchange PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=785881)
     
 2. Run the **Undo-SoftDeletedMailbox** cmdlet. 
     
@@ -143,23 +143,29 @@ To verify that you've successfully restored a mailbox, do one of the following:
 ## Restoring a user in a hybrid scenario
 <a name="BKMK_harddeleted"> </a>
 
-For user mailboxes in a hybrid scenario, if the mailbox has been soft-deleted and the Azure active directory user that was associated with the mailbox has been hard-deleted from Azure Active Directory, you can use **New-MailboxRestoreRequest** to recover the mailbox. Read [Configure Office 365 Groups with on-premises Exchange hybrid](https://go.microsoft.com/fwlink/?LinkID=809310) for more info. The cmdlet example below restores the mailbox for a soft-deleted user. 
+For user mailboxes in a hybrid scenario, if the mailbox has been soft-deleted and the Azure active directory user that was associated with the mailbox has been hard-deleted from Azure Active Directory, you can use **New-MailboxRestoreRequest** to recover the mailbox. Read [Configure Office 365 Groups with on-premises Exchange hybrid](https://go.microsoft.com/fwlink/p/?LinkID=809310) for more info. The procedures in this section explain how to restore the mailbox for a soft-deleted user. 
   
-1. [Connect to Exchange PowerShell](https://go.microsoft.com/fwlink/?LinkID=785881)
+1. [Connect to Exchange PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=785881)
     
-2. Run the following cmdlet and retrieve the GUID for the soft-deleted mailbox that you want to restore.
+2. Run the following cmdlet to identify the soft-deleted mailbox that you want to restore.
     
-  ```
-  Get-Mailbox -SoftDeletedMailbox | Select-Object Name, ExchangeGuid
-  ```
+    ```
+    Get-Mailbox -SoftDeletedMailbox | Select-Object Name,ExchangeGuid
+    ```
 
-    This cmdlet will return a GUID of soft-deleted mailboxes.
+    For the soft-deleted mailbox that you want to restore, note its GUID value (you'll use the value in Step 4).
+
+3. Create a new target mailbox for the restored mailbox. For more information, see [Create user mailboxes in Exchange Online](create-user-mailboxes.md). After you create the target mailbox, run the following command to get the GUID value of the target mailbox that you'll need in the next step.
+
+    ```
+    Get-Mailbox -Identity <NameOrAliasOfNewTargetMailbox> | Format-List ExchangeGuid
+    ```
+
+4. Replace \<SoftDeletedMailboxGUID\> with the GUID value from Step 2, and \<NewTargetMailboxGUID\> with the GUID value from Step 3, and run the following cmdlet to restore the mailbox:
     
-3. Run the following cmdlet to restore the mailbox.
-    
-  ```
-  New-MailboxRestoreRequest -SourceMailbox <GUID from above step> -TargetMailbox <GUID from new target mailbox you've created>
-  ```
+    ```
+    New-MailboxRestoreRequest -SourceMailbox <SoftDeletedMailboxGUID> -TargetMailbox <NewTargetMailboxGUID>
+    ```
 
 ## License removal
 <a name="BKMK_harddeleted"> </a>

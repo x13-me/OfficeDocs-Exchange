@@ -217,7 +217,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |**Exchange 2019 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
-|Exchange 2019 RTM|15332|13236|16213|
+|Exchange 2019 RTM|17000|13236|16751|
 |Exchange 2019 Preview|15332|13236|16213|
 ::: moniker-end
 
