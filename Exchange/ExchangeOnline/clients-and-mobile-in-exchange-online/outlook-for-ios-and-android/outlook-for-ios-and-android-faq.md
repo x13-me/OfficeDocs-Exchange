@@ -81,20 +81,28 @@ Yes, Outlook for iOS and Android supports certificate-based authentication for m
     
 - [Certificate-based authentication on Android](https://go.microsoft.com/fwlink/p/?linkid=849808)
 
-### Q: What does background synchronization enable? I notice that when I launch the app with it enabled, I still have to wait for messages to download, even after I've received new mail notifications for them.
+### Q: What does background synchronization enable? I notice that when I launch the app with it enabled, I still have to wait for messages to download, even after I've received new mail notifications for them; and sometimes, I get reminders for appointments that had been cancelled.
 
-Background synchronization enables new message notifications, badge count updates, and background synchronization of mailbox information for Outlook for iOS and Android. If background synchronization is disabled by the user in iOS or Android settings, then the user must launch the app and keep it in the foreground in order to synchronize mailbox information. 
-  
+Background synchronization enables new message notifications, calendar reminders, badge count updates, and background synchronization of mailbox and calendar information for Outlook for iOS and Android. 
+
+If background synchronization is disabled by the user in the mobile operating system's settings, then the user must launch the app and keep it in the foreground in order to synchronize messages and have an up-to-date calendar. 
+
 Background synchronization in Outlook for iOS and Android can also be disabled by the following actions:
   
 - Force quitting the app (such as by double-tapping the home button and swiping the app to dismiss).
     
 - Restarting the mobile device.
     
-- Not opening the app for a given period of time. iOS will automatically terminate Outlook.
+- Not opening the app for a given period of time. iOS will [automatically freeze third-party apps](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html), like Outlook, based on usage patterns. Android [doze mode and app standby](https://developer.android.com/training/monitoring-device-state/doze-standby) features can also prevent background updates to the app.
+
+If the mobile operating system prevents background synchronization, users will experience the following:
+
+- New mail notifications will continue to be delivered, however, upon launching the app, the new messages will have to be downloaded.
+
+- Calendar reminders will fire for appointments that have been cancelled because the app was unable to download and process the meeting cancellation.
     
 > [!NOTE]
-> Apple allows its native Mail app to do background refreshes without any of the above restrictions. Therefore, users may notice a difference in the background synchronization experience between the apps. However, this also results in improved battery life and less data consumption. 
+> Apple allows its native Mail and Calendar apps to do background refreshes without any restrictions. Therefore, users may notice a difference in the background synchronization experience between the apps. However, this also results in improved battery life and less data consumption with Outlook for iOS. 
   
 ### Q: Does each user's instance of Outlook for iOS and Android have a unique device ID in the Office 365-based architecture? How is the device ID generated and is this same device ID used in Intune?
 
