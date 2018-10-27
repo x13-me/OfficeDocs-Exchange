@@ -251,7 +251,7 @@ The following features are not supported for on-premises mailboxes using hybrid 
 
 - The AutoDetect FQDNs and IP subnet ranges defined in row 9 as outlined in [Additional Office 365 IP Addresses and URLs not included in the web services](https://docs.microsoft.com/en-us/office365/enterprise/additional-office365-ip-addresses-and-urls). This is required because the AutoDetect service establishes connections to the on-premises infrastructure..
     
-- All Outlook iOS and Android amd Office mobile app FQDNs as defined in [Office 365 URLs and IP address ranges](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges).
+- All Outlook iOS and Android and Office mobile app FQDNs as defined in [Office 365 URLs and IP address ranges](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges).
      
 **Q**: My organization currently uses a third-party MDM solution to control mobile device connectivity. If I expose the Exchange ActiveSync namespace on the Internet, that introduces a way for users to bypass the third-party MDM solution during the co-existence period. How can I prevent this?
   
