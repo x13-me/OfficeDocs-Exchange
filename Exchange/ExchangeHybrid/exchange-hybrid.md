@@ -209,7 +209,7 @@ Learn more at: [Public Folders](http://technet.microsoft.com/library/94c4fb69-92
   
 ### Accessibility
 
-For information about keyboard shortcuts that may apply to the procedures in this checklist, see **Keyboard shortcuts in the Exchange admin center**.
+For information about keyboard shortcuts that may apply to the procedures in this checklist, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
   
 ## Key terminology
 <a name="KeyTerm"> </a>

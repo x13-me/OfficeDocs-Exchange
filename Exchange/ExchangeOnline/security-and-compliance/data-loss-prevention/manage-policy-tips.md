@@ -34,7 +34,7 @@ Policy Tips are informative notices that are displayed to email senders while th
     
 - The default Policy Tip notification text that is built into the system will be shown if you don't use the Policy Tip settings feature to customize your Policy Tip text. To learn more about the default text, see [Policy Tips](policy-tips.md). 
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 

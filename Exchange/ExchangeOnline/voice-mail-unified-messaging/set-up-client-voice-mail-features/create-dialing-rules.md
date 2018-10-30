@@ -49,7 +49,7 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
     
 - If you will be applying dialing rule groups to UM auto attendants, you will need to confirm that a UM auto attendant is created. For detailed steps, see [Create a UM auto attendant](../../voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant.md).
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
