@@ -28,7 +28,7 @@ For additional management tasks related to retention policies, see [Messaging Re
     
 - Mailboxes to which you apply retention policies must reside on Exchange Server 2010 or later servers.
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 ## How do you do this?
 

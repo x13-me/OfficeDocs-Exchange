@@ -29,7 +29,7 @@ For additional management tasks related to creating a custom DLP policy, see [DL
     
 - In order to create a new custom DLP policy, you must follow the installation instructions for Exchange Server. For more information about deployment, see [Planning and Deployment](http://technet.microsoft.com/library/692c59e3-f0b0-4cef-a66e-751aa740abae.aspx).
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!NOTE]
 > Due to the variances
