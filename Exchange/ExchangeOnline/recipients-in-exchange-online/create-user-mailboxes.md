@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 6ed2f969-6c03-4b45-8e2d-05de787de48d
-description: "You have to use the Office 365 admin center or the Exchange Management Shell to create an Exchange Online user mailbox. You can't create new user mailboxes using the Exchange admin center (EAC). However, after Exchange Online mailboxes are created, you can manage them using the EAC."
+description: "You have to use the Office 365 admin center or Exchange Online PowerShell to create an Exchange Online user mailbox. You can't create new user mailboxes using the Exchange admin center (EAC). However, after Exchange Online mailboxes are created, you can manage them using the EAC."
 ---
 
 # Create user mailboxes in Exchange Online
 
-You have to use the Office 365 admin center or the Exchange Management Shell to create an Exchange Online user mailbox. You can't create new user mailboxes using the Exchange admin center (EAC). However, after Exchange Online mailboxes are created, you can manage them using the EAC.
+You have to use the Office 365 admin center or Exchange Online PowerShell to create an Exchange Online user mailbox. You can't create new user mailboxes using the Exchange admin center (EAC). However, after Exchange Online mailboxes are created, you can manage them using the EAC.
   
 > [!NOTE]
-> After you create a new mailbox using the Exchange Management Shell, you have to assign it an Exchange Online license or it will be disabled when the 30-day grace period ends. 
+> After you create a new mailbox using Exchange Online PowerShell, you have to assign it an Exchange Online license or it will be disabled when the 30-day grace period ends. 
   
 ## What do you need to know before you begin?
 
@@ -32,7 +32,7 @@ You have to use the Office 365 admin center or the Exchange Management Shell to 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -44,7 +44,7 @@ You can use the Office 365 admin center to create a new user account. When you a
     
 - [Add multiple users with a CSV file](https://go.microsoft.com/fwlink/p/?LinkId=279605)
     
-### Use the Exchange Management Shell to create a new mailbox
+### Use Exchange Online PowerShell to create a new mailbox
 
 This example creates an Exchange Online mailbox and Office 365 user account for Holly Holt. The optional parameter  _ResetPasswordOnNextLogon_ will require the user to reset their password the first time they sign in to Office 365. 
   
@@ -64,12 +64,12 @@ To verify that you've successfully created a new mailbox, do one of the followin
     
 - In the Office 365 admin center, verify that the new user account is listed and that it's been assigned an Exchange Online license.
     
-- In the Exchange Management Shell, run the following command to display information about the new user mailbox.
+- In Exchange Online PowerShell, run the following command to display information about the new user mailbox.
     
   ```
-  Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress,SKUAssigned
+  Get-Mailbox <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress,SKUAssigned
   ```
 
-    If a license is assigned to the mailbox, the value for the  _SKUAssigned_ property is  `True`. If a license hasn't been assigned, the value is blank.
+    If a license is assigned to the mailbox, the value for the  _SKUAssigned_ property is `True`. If a license hasn't been assigned, the value is blank.
     
 

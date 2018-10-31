@@ -33,7 +33,7 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -50,15 +50,15 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
   
 4. Click **Save** to save your changes. 
     
-### Use the Shell to set the fax partner URI
+### Use Exchange Online PowerShell to set the fax partner URI
 
-This example allows users who are linked with the UM mailbox policy  `UMDialPlan Default Policy` to use TCP with port 5060 for the partner fax server  `faxserver1`.
+This example allows users who are linked with the UM mailbox policy `UMDialPlan Default Policy` to use TCP with port 5060 for the partner fax server `faxserver1`.
   
 ```
 Set-UMMailboxPolicy "UMDialPlan Default Policy" -FaxServerURI sip:faxserver1.contoso.com:5060;transport=tcp
 ```
 
-This example allows users who are linked with the UM mailbox policy  `UMDialPlan Default Policy` to use TLS with port 5061 for the partner fax server  `faxserver2`.
+This example allows users who are linked with the UM mailbox policy `UMDialPlan Default Policy` to use TLS with port 5061 for the partner fax server `faxserver2`.
   
 ```
 Set-UMMailboxPolicy "UMDialPlan Default Policy" -FaxServerURI sip:faxserver2.contoso.com:5061;transport=tls

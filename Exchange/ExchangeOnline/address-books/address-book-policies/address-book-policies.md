@@ -42,8 +42,8 @@ In the following figure, Address Book Policy A consists of a subset of the vario
   
 |**New or existing mailbox?**|**Shell**|
 |:-----|:-----|
-|New  <br/> |[new-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx) cmdlet with the  _AddressBookPolicy_ parameter  <br/> |
-|Existing  <br/> |[Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet with the  _AddressBookPolicy_ parameter  <br/> |
+|New|[new-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx) cmdlet with the  _AddressBookPolicy_ parameter|
+|Existing|[Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet with the  _AddressBookPolicy_ parameter|
    
 ABPs take effect when a user's client application connects to a Client Access server in Exchange Server. If you change the ABP, the updated ABP doesn't take effect until the user restarts or reconnects their client or until you restart the RPC Client Access servers on the Exchange Mailbox server.
   

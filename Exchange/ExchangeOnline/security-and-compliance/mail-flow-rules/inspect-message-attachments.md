@@ -47,9 +47,9 @@ In order to start using these conditions when inspecting messages, you need to a
   
 |**Condition name in the EAC**|**Condition name in Exchange Online PowerShell**|**Description**|
 |:-----|:-----|:-----|
-|**Any attachment's content includes** <br/> **Any attachment** \> **content includes any of these words** <br/> | _AttachmentContainsWords_ <br/> |This condition matches messages with supported file type attachments that contain a specified string or group of characters.  <br/> |
-|**Any attachment's content matches** <br/> **Any attachment** \> **content matches these text patterns** <br/> | _AttachmentMatchesPatterns_ <br/> |This condition matches messages with supported file type attachments that contain a text pattern that matches a specified regular expression.  <br/> |
-|**Any attachment's content can't be inspected** <br/> **Any attachment** \> **content can't be inspected** <br/> | _AttachmentIsUnsupported_ <br/> |Mail flow rules only can inspect the content of supported file types. If the mail flow rule encounters an attachment that isn't supported, the  _AttachmentIsUnsupported_ condition is triggered. The supported file types are described in the next section.  <br/> |
+|**Any attachment's content includes** <br/> **Any attachment** \> **content includes any of these words**|_AttachmentContainsWords_|This condition matches messages with supported file type attachments that contain a specified string or group of characters.|
+|**Any attachment's content matches** <br/> **Any attachment** \> **content matches these text patterns**|_AttachmentMatchesPatterns_|This condition matches messages with supported file type attachments that contain a text pattern that matches a specified regular expression.|
+|**Any attachment's content can't be inspected** <br/> **Any attachment** \> **content can't be inspected**|_AttachmentIsUnsupported_|Mail flow rules only can inspect the content of supported file types. If the mail flow rule encounters an attachment that isn't supported, the  _AttachmentIsUnsupported_ condition is triggered. The supported file types are described in the next section.|
    
  **Notes**:
   
@@ -66,17 +66,17 @@ The following table lists the file types supported by mail flow rules. The syste
   
 |**Category**|**File extension**|**Notes**|
 |:-----|:-----|:-----|
-|Office 2007 and later  <br/> |.docm, .docx, .pptm, .pptx, .pub, .one, .xlsb, .xlsm, .xlsx  <br/> |Microsoft OneNote and Microsoft Publisher files aren't supported by default.  <br/> The contents of any embedded parts contained within these file types are also inspected. However, any objects that aren't embedded (for example, linked documents) aren't inspected.  <br/> |
-|Office 2003  <br/> |.doc, .ppt, .xls  <br/> |None  <br/> |
-|Additional Office files  <br/> |.rtf, .vdw, .vsd, .vss, .vst  <br/> |None  <br/> |
-|Adobe PDF  <br/> |.pdf  <br/> |None  <br/> |
-|HTML  <br/> |.html  <br/> |None  <br/> |
-|XML  <br/> |.xml, .odp, .ods, .odt  <br/> |None  <br/> |
-|Text  <br/> |.txt, .asm, .bat, .c, .cmd, .cpp, .cxx, .def, .dic, .h, .hpp, .hxx, .ibq, .idl, .inc, inf, .ini, inx, .js, .log, .m3u, .pl, .rc, .reg, .txt, .vbs, .wtx  <br/> |None  <br/> |
-|OpenDocument  <br/> |.odp, .ods, .odt  <br/> |No parts of .odf files are processed. For example, if the .odf file contains an embedded document, the contents of that embedded document aren't inspected.  <br/> |
-|AutoCAD Drawing  <br/> |.dxf  <br/> |AutoCAD 2013 files aren't supported.  <br/> |
-|Image  <br/> |.jpg, .tiff  <br/> |Only the metadata text associated with these image files is inspected. There is no optical character recognition.  <br/> |
-|Compressed archive files  <br/> |.bz2, cab, .gz, .rar, .tar, .zip, .7z  <br/> |The content of these files, which were originally in a supported file type format, are inspected and processed in a manner similar to messages that have multiple attachments. The properties of the compressed archive file itself are not inspected. For example, if the container file type supports comments, that field isn't inspected.  <br/> |
+|Office 2007 and later|.docm, .docx, .pptm, .pptx, .pub, .one, .xlsb, .xlsm, .xlsx|Microsoft OneNote and Microsoft Publisher files aren't supported by default.  <br/> The contents of any embedded parts contained within these file types are also inspected. However, any objects that aren't embedded (for example, linked documents) aren't inspected.|
+|Office 2003|.doc, .ppt, .xls|None|
+|Additional Office files|.rtf, .vdw, .vsd, .vss, .vst|None|
+|Adobe PDF|.pdf|None|
+|HTML|.html|None|
+|XML|.xml, .odp, .ods, .odt|None|
+|Text|.txt, .asm, .bat, .c, .cmd, .cpp, .cxx, .def, .dic, .h, .hpp, .hxx, .ibq, .idl, .inc, inf, .ini, inx, .js, .log, .m3u, .pl, .rc, .reg, .txt, .vbs, .wtx|None|
+|OpenDocument|.odp, .ods, .odt|No parts of .odf files are processed. For example, if the .odf file contains an embedded document, the contents of that embedded document aren't inspected.|
+|AutoCAD Drawing|.dxf|AutoCAD 2013 files aren't supported.|
+|Image|.jpg, .tiff|Only the metadata text associated with these image files is inspected. There is no optical character recognition.|
+|Compressed archive files|.bz2, cab, .gz, .rar, .tar, .zip, .7z|The content of these files, which were originally in a supported file type format, are inspected and processed in a manner similar to messages that have multiple attachments. The properties of the compressed archive file itself are not inspected. For example, if the container file type supports comments, that field isn't inspected.|
    
 ## Inspect the file properties of attachments
 
@@ -84,13 +84,13 @@ The following conditions can be used in mail flow rules to inspect different pro
   
 |**Condition name in the EAC**|**Condition name in Exchange Online PowerShell**|**Description**|
 |:-----|:-----|:-----|
-|**Any attachment's file name matches** <br/> **Any attachment** \> **file name matches these text patterns** <br/> | _AttachmentNameMatchesPatterns_ <br/> |This condition matches messages with attachments whose file name contains the characters you specify.  <br/> |
-|**Any attachment's file extension matches** <br/> **Any attachment** \> **file extension includes these words** <br/> | _AttachmentExtensionMatchesWords_ <br/> |This condition matches messages with attachments whose file name extension matches what you specify.  <br/> |
-|**Any attachment is greater than or equal to** <br/> **Any attachment** \> **size is greater than or equal to** <br/> | _AttachmentSizeOver_ <br/> |This condition matches messages with attachments when those attachments are greater than or equal to the size you specify.  <br/> |
-|**The message didn't complete scanning** <br/> **Any attachment** \> **didn't complete scanning** <br/> | _AttachmentProcessingLimitExceeded_ <br/> |This condition matches messages when an attachment is not inspected by the mail flow rules agent.  <br/> |
-|**Any attachment has executable content** <br/> **Any attachment** \> **has executable content** <br/> | _AttachmentHasExecutableContent_ <br/> |This condition matches messages that contain executable files as attachments. The supported file types are listed here.  <br/> |
-|**Any attachment is password protected** <br/> **Any attachment** \> **is password protected** <br/> | _AttachmentIsPasswordProtected_ <br/> |This condition matches messages with attachments that are protected by a password. Password detection only works for Office documents and .zip files.  <br/> |
-|**Any attachment has these properties, including any of these words** <br/> **Any attachment** \> **has these properties, including any of these words** <br/> | _AttachmentPropertyContainsWords_ <br/> |This condition matches messages where the specified property of the attached Office document contains specified words. A property and its possible values are separated with a colon. Multiple values are separated with a comma. Multiple property/value pairs are also separated with a comma.  <br/> |
+|**Any attachment's file name matches** <br/> **Any attachment** \> **file name matches these text patterns**|_AttachmentNameMatchesPatterns_|This condition matches messages with attachments whose file name contains the characters you specify.|
+|**Any attachment's file extension matches** <br/> **Any attachment** \> **file extension includes these words**|_AttachmentExtensionMatchesWords_|This condition matches messages with attachments whose file name extension matches what you specify.|
+|**Any attachment is greater than or equal to** <br/> **Any attachment** \> **size is greater than or equal to**|_AttachmentSizeOver_|This condition matches messages with attachments when those attachments are greater than or equal to the size you specify.|
+|**The message didn't complete scanning** <br/> **Any attachment** \> **didn't complete scanning**|_AttachmentProcessingLimitExceeded_|This condition matches messages when an attachment is not inspected by the mail flow rules agent.|
+|**Any attachment has executable content** <br/> **Any attachment** \> **has executable content**|_AttachmentHasExecutableContent_|This condition matches messages that contain executable files as attachments. The supported file types are listed here.|
+|**Any attachment is password protected** <br/> **Any attachment** \> **is password protected**|_AttachmentIsPasswordProtected_|This condition matches messages with attachments that are protected by a password. Password detection only works for Office documents and .zip files.|
+|**Any attachment has these properties, including any of these words** <br/> **Any attachment** \> **has these properties, including any of these words**|_AttachmentPropertyContainsWords_|This condition matches messages where the specified property of the attached Office document contains specified words. A property and its possible values are separated with a colon. Multiple values are separated with a comma. Multiple property/value pairs are also separated with a comma.|
    
  **Notes**:
   
@@ -102,22 +102,22 @@ The following conditions can be used in mail flow rules to inspect different pro
     
 ### Supported executable file types for mail flow rule inspection
 
-The mail flow rules use true type detection to inspect file properties rather than merely the file extensions. This helps to prevent malicious hackers from being able to bypass your rule by renaming a file extension. The following table lists the executable file types supported by these conditions. If a file is found that is not listed here, the  `AttachmentIsUnsupported` condition is triggered. 
+The mail flow rules use true type detection to inspect file properties rather than merely the file extensions. This helps to prevent malicious hackers from being able to bypass your rule by renaming a file extension. The following table lists the executable file types supported by these conditions. If a file is found that is not listed here, the `AttachmentIsUnsupported` condition is triggered. 
   
 |**Type of file**|**Native extension**|
 |:-----|:-----|
-|32-bit Windows executable file with a dynamic link library extension.  <br/> |.dll  <br/> |
-|Self-extracting executable program file.  <br/> |.exe  <br/> |
-|Uninstallation executable file.  <br/> |.exe  <br/> |
-|Program shortcut file.  <br/> |.exe  <br/> |
-|32-bit Windows executable file.  <br/> |.exe  <br/> |
-|Microsoft Visio XML drawing file.  <br/> |.vxd  <br/> |
-|OS/2 operating system file.  <br/> |.os2  <br/> |
-|16-bit Windows executable file.  <br/> |.w16  <br/> |
-|Disk-operating system file.  <br/> |.dos  <br/> |
-|European Institute for Computer Antivirus Research standard antivirus test file.  <br/> |.com  <br/> |
-|Windows program information file.  <br/> |.pif  <br/> |
-|Windows executable program file.  <br/> |.exe  <br/> |
+|32-bit Windows executable file with a dynamic link library extension.|.dll|
+|Self-extracting executable program file.|.exe|
+|Uninstallation executable file.|.exe|
+|Program shortcut file.|.exe|
+|32-bit Windows executable file.|.exe|
+|Microsoft Visio XML drawing file.|.vxd|
+|OS/2 operating system file.|.os2|
+|16-bit Windows executable file.|.w16|
+|Disk-operating system file.|.dos|
+|European Institute for Computer Antivirus Research standard antivirus test file.|.com|
+|Windows program information file.|.pif|
+|Windows executable program file.|.exe|
    
 > [!IMPORTANT]
 > **.rar** (self-extracting archive files created with the WinRAR archiver), **.jar** (Java archive files), and **.obj** (compiled source code, 3D object, or sequence files) files are **not** considered to be executable file types. To block these files, you can use mail flow rules that look for files with these extensions as described earlier in this topic, or you can configure an antimalware policy that blocks these file types (the common attachment types filter). For more information, see [Configure Anti-Malware Policies](https://technet.microsoft.com/library/b0cfc21f-e3c6-41b6-8670-feb2b2e252e5.aspx). 

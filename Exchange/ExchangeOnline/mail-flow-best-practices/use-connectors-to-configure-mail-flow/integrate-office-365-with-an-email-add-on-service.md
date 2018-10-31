@@ -52,7 +52,7 @@ The rest of this topic explains how to configure mail flow in Office 365 to work
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## Step 1: Create an outbound connector to route messages to the email add-on service
 
@@ -128,9 +128,9 @@ The important settings for the connector are:
   
 9. On the **Validation result** page, click **Save**.
     
-### Use the Exchange Management Shell to create the outbound connector to the email add-on service
+### Use Exchange Online PowerShell to create the outbound connector to the email add-on service
 
-To create the outbound connector to the email add-on service in the Exchange Management Shell, use this syntax:
+To create the outbound connector to the email add-on service in Exchange Online PowerShell, use this syntax:
   
 ```
 New-OutboundConnector -Name "<Descriptive Name>" -ConnectorType OnPremises -IsTransportRuleScoped $true -UseMxRecord $false -SmartHosts <SmartHost> -TlsSettings DomainValidation -TlsDomain <SmartHost> [-CloudServicesMailEnabled $true]
@@ -158,7 +158,7 @@ To verify that you've successfully created an outbound connector to route messag
   
 - In the EAC, go to **Mail flow** \> **Connectors**, select the connector, click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif), and verify the settings.
     
-- In the Exchange Management Shell, replace  _\<Connector Name\>_ with the name of the connector, and run this command to verify the property values: 
+- In Exchange Online PowerShell, replace  _\<Connector Name\>_ with the name of the connector, and run this command to verify the property values: 
     
   ```
   Get-OutboundConnector -Identity "<Connector Name>" | Format-List Name,ConnectorType,IsTransportRuleScoped,UseMxRecord,SmartHosts,TlsSettings,TlsDomain,CloudServicesMailEnabled
@@ -198,9 +198,9 @@ The rule routes messages from internal senders to the outbound connector that yo
   
     When you're finished, click **Save**.
     
-### Use the Exchange Management Shell to create a mail flow rule to route unprocessed messages to the email add-on service
+### Use Exchange Online PowerShell to create a mail flow rule to route unprocessed messages to the email add-on service
 
-To create the mail flow rule in the Exchange Management Shell, use this syntax:
+To create the mail flow rule in Exchange Online PowerShell, use this syntax:
   
 ```
 New-TransportRule -Name "<Descriptive Name>" -FromScope InOrganization -RouteMessageOutboundConnector "<Connector Name>" -ExceptIfHeaderContainsMessageHeader <HeaderName> -ExceptIfHeaderContainsWords <HeaderValue> -StopRuleProcessing $true
@@ -226,7 +226,7 @@ To verify that you've successfully created a mail flow rule to route unprocessed
   
 - In the EAC, go to **Mail flow** \> **Rules**, select the rule, click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif), and verify the settings of the rule.
     
-- In the Exchange Management Shell, replace  _\<Rule Name\>_ with the name of the rule, and run this command to verify the property values: 
+- In Exchange Online PowerShell, replace  _\<Rule Name\>_ with the name of the rule, and run this command to verify the property values: 
     
   ```
   Get-TransportRule -Identity "<Rule Name>" | Format-List Name,FromScope,RouteMessageOutboundConnector,ExceptIfHeaderContainsMessageHeader,ExceptIfHeaderContainsWords,StopRuleProcessing
@@ -296,9 +296,9 @@ The important settings for the connector are:
     
     ![In the new connector wizard, verify the settings and click Save.](../../media/a9b67424-159d-45b8-9296-d103ca8eac87.png)
   
-### Use the Exchange Management Shell to create an inbound connector to receive messages from the email add-on service
+### Use Exchange Online PowerShell to create an inbound connector to receive messages from the email add-on service
 
-To create the inbound connector from the email add-on service in the Exchange Management Shell, use this syntax:
+To create the inbound connector from the email add-on service in Exchange Online PowerShell, use this syntax:
   
 ```
 New-InboundConnector -Name "<Descriptive Name>" -SenderDomains * -ConnectorType OnPremises -RequireTls $true -RestrictDomainsToCertificate $true -TlsSenderCertificateName <CertificateDomainName> [-CloudServicesMailEnabled $true]
@@ -324,7 +324,7 @@ To verify that you've successfully created an inbound connector to receive messa
   
 - In the EAC, go to **Mail flow** \> **Connectors**, select the connector, click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif), and verify the settings.
     
-- In the Exchange Management Shell, replace  _\<Connector Name\>_ with the name of the connector, and run this command to verify the property values: 
+- In Exchange Online PowerShell, replace  _\<Connector Name\>_ with the name of the connector, and run this command to verify the property values: 
     
   ```
   Get-InboundConnector -Identity "<Connector Name>" | Format-List Name,SenderDomains,ConnectorType,RequireTls,RestrictDomainsToCertificate,TlsSenderCertificateName,CloudServicesMailEnabled

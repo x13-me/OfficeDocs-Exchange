@@ -58,7 +58,7 @@ There are two ways you can manage public folder mailboxes:
   
 - In the Exchange admin center (EAC), navigate to **Public folders** \> **Public folder mailboxes**.
     
-- In the Exchange Management Shell, use the **\*-Mailbox** set of cmdlets. 
+- In Exchange Online PowerShell, use the **\*-Mailbox** set of cmdlets. 
     
 ### Public folder hierarchy
 <a name="PFHierarchy"> </a>
@@ -103,7 +103,7 @@ Although there are many advantages to using public folders in Office 365 and Exc
 
 When you migrate your public folders, you'll use a process called batch public folder migration. Batch public folder migration (or simply batch migration) creates a mailbox migration request for each public folder mailbox that will exist in Exchange Online. Using multiple requests means the migration will move along much faster because it's able to make more efficient use of available network bandwidth. It's also more reliable because it reduces the possibility of a single failure or bottleneck affecting the entire migration.
   
-While batch migrations need to be started using the **New-MigrationBatch** cmdlet in the Exchange Management Shell, the progress and completion of the migration can be viewed and managed in the EAC. Because the **New-MigrationBatch** cmdlet initiates a mailbox migration request for each public folder mailbox, you can view the status of these requests using the mailbox migration page. You can get to the mailbox migration page, and create migration reports that can be emailed to you, by opening the EAC in Exchange Online and navigating to **Mailbox** \> **Migration**. 
+While batch migrations need to be started using the **New-MigrationBatch** cmdlet in Exchange Online PowerShell, the progress and completion of the migration can be viewed and managed in the EAC. Because the **New-MigrationBatch** cmdlet initiates a mailbox migration request for each public folder mailbox, you can view the status of these requests using the mailbox migration page. You can get to the mailbox migration page, and create migration reports that can be emailed to you, by opening the EAC in Exchange Online and navigating to **Mailbox** \> **Migration**. 
   
 To use batch migration to migrate your public folders to Exchange Online, your legacy Exchange server needs to meet the requirements in the following list. If it does, and you're ready to start, check out [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](batch-migration-of-legacy-public-folders.md).
   

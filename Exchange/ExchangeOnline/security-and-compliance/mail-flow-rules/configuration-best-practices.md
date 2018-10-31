@@ -61,13 +61,12 @@ For example, you might want to prevent emails from being sent if they contain a 
   
 The text file can contain regular expressions for patterns. These expressions are not case-sensitive. Common regular expressions include:
   
-|||
+|**Expression**|**Matches**|
 |:-----|:-----|
-|**Expression** <br/> |**Matches** <br/> |
-|**.** <br/> |Any single character  <br/> |
-|**\*** <br/> |Any additional characters  <br/> |
-|**\d** <br/> |Any decimal digit  <br/> |
-|[ *character_group*  ]  <br/> |Any single character in  *character_group*  .  <br/> |
+|**.**|Any single character|
+|**\***|Any additional characters|
+|**\d**|Any decimal digit|
+|[*character_group*]|Any single character in *character_group*.|
    
 For an example that shows a text file with regular expressions and the Exchange module Windows PowerShell commands to use, see [Use mail flow rules to route email based on a list of words, phrases, or patterns](use-rules-to-route-email.md).
   

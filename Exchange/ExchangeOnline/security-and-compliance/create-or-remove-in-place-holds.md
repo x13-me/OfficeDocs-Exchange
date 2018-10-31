@@ -66,7 +66,7 @@ An In-Place Hold preserves all mailbox content, including deleted items and orig
   - **Filter based on criteria** Click this button to specify search criteria, including keywords, start and end dates, sender and recipient addresses, and message types. When you create a query-based hold, only items that match the search criteria are preserved. 
     
     > [!TIP]
-    > When you place public folders on In-Place Hold, email messages related to the public folder hierarchy synchronization process are also preserved. This might result in thousands of hierarchy synchronization related email items being preserved. These messages can fill up the storage quota for the Recoverable Items folder on public folder mailboxes. To prevent this, you can create a query-based In-Place Hold and add the following  `property:value` pair to the search query: >  `NOT(subject:HierarchySync*)`> The result is that any message (related to the synchronization of the public folder hierarchy) that contains the phrase "HierarchySync" in the subject line is not placed on hold. 
+    > When you place public folders on In-Place Hold, email messages related to the public folder hierarchy synchronization process are also preserved. This might result in thousands of hierarchy synchronization related email items being preserved. These messages can fill up the storage quota for the Recoverable Items folder on public folder mailboxes. To prevent this, you can create a query-based In-Place Hold and add the following `property:value` pair to the search query: > `NOT(subject:HierarchySync*)`> The result is that any message (related to the synchronization of the public folder hierarchy) that contains the phrase "HierarchySync" in the subject line is not placed on hold. 
   
 6. On the **In-Place Hold settings** page, select the **Place content matching the search query in selected mailboxes on hold** check box and then select one of the following options: 
     
@@ -74,7 +74,7 @@ An In-Place Hold preserves all mailbox content, including deleted items and orig
     
   - **Specify number of days to hold items relative to their received date** Click this button to hold items for a specific period. For example, you can use this option if your organization requires that all messages be retained for at least seven years. You can use a time-based In-Place Hold along with a retention policy to make sure items are deleted in seven years. To learn more about retention polices, see [Retention tags and retention policies](messaging-records-management/retention-tags-and-policies.md).
     
- **Use the Shell to create an In-Place Hold**
+ **Use Exchange Online PowerShell to create an In-Place Hold**
   
 This example creates an In-Place Hold named Hold-CaseId012 and adds the mailbox joe@contoso.com to the hold.
   
@@ -100,7 +100,7 @@ To verify that you have successfully created the In-Place Hold, do one of the fo
 ## Remove an In-Place Hold
 
 > [!IMPORTANT]
-> In Exchange Server, mailbox searches can be used for an In-Place Hold and In-Place eDiscovery. You can't remove a mailbox search that's used for In-Place Hold. You must first disable the In-Place Hold by clearing the **Place content matching the search query in selected mailboxes on hold** check box on the **In-Place Hold settings** page or by setting the  _InPlaceHoldEnabled_ parameter to  `$false` in the Shell. You can also remove a mailbox by using the  _SourceMailboxes_ parameter specified in the search. 
+> In Exchange Server, mailbox searches can be used for an In-Place Hold and In-Place eDiscovery. You can't remove a mailbox search that's used for In-Place Hold. You must first disable the In-Place Hold by clearing the **Place content matching the search query in selected mailboxes on hold** check box on the **In-Place Hold settings** page or by setting the  _InPlaceHoldEnabled_ parameter to `$false` in Exchange Online PowerShell. You can also remove a mailbox by using the  _SourceMailboxes_ parameter specified in the search. 
   
  **Use the EAC to remove an In-Place Hold**
   
@@ -114,7 +114,7 @@ To verify that you have successfully created the In-Place Hold, do one of the fo
     
 5. In warning, click **Yes** to remove the search. 
     
- **Use the Shell to remove an In-Place Hold**
+ **Use Exchange Online PowerShell to remove an In-Place Hold**
   
 This example first disables In-Place Hold named Hold-CaseId012 and then removes the mailbox search.
   

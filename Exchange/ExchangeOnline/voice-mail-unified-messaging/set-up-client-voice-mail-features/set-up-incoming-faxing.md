@@ -62,13 +62,13 @@ Three components must be configured correctly for users to be able to receive fa
     
 - UM mailboxes
     
-Faxing can be enabled or disabled on UM dial plans, UM mailbox policies, or on an individual UM-enabled user's mailbox. UM mailbox policies can be enabled or disabled for faxing using either the Exchange admin center (EAC) or the Exchange Management Shell. Enabling and disabling of dial plans and individual UM-enabled users needs to be done using the Exchange Management Shell. The following table shows the options that are available and the cmdlets and parameters that are used for enabling and disabling faxing.
+Faxing can be enabled or disabled on UM dial plans, UM mailbox policies, or on an individual UM-enabled user's mailbox. UM mailbox policies can be enabled or disabled for faxing using either the Exchange admin center (EAC) or Exchange Online PowerShell. Enabling and disabling of dial plans and individual UM-enabled users needs to be done using Exchange Online PowerShell. The following table shows the options that are available and the cmdlets and parameters that are used for enabling and disabling faxing.
   
 |**UM component**|**Enable/disable using the EAC?**|**Shell example for enabling faxing**|
 |:-----|:-----|:-----|
-|Dial plan  <br/> |No  <br/> | `Set-UMDialPlan -id MyUMDialPlan -faxenabled $true` <br/> |
-|UM mailbox policy  <br/> |Yes  <br/> | `Set-UMMaiboxPolicy -id MyPolicy -AllowFax $true` <br/> |
-|UM-enabled user  <br/> |No  <br/> | `Set-UMMailbox -id tonysmith -faxenabled $true` <br/> |
+|Dial plan|No|`Set-UMDialPlan -Identity MyUMDialPlan -faxenabled $true`|
+|UM mailbox policy|Yes|`Set-UMMaiboxPolicy -Identity MyPolicy -AllowFax $true`|
+|UM-enabled user|No|`Set-UMMailbox -Identity tonysmith -faxenabled $true`|
    
 By default, although the UM dial plan and the user's mailbox allow incoming faxes, you must first enable inbound faxing on the UM mailbox policy that's assigned to the UM-enabled user and then enter the fax partner server's URI.
   
@@ -92,7 +92,7 @@ To enable UM-enabled users to receive faxes, you must do the following:
   
 - Verify that the mailbox that's UM-enabled can receive fax messages. By default, all users who are associated with a dial plan can receive faxes. However, there may be situations when a user can't receive faxes because the ability to receive faxes has been disabled on their mailbox. For more information about how to enable a UM-enabled user to receive faxes, see [Enable a user to receive faxes](enable-a-user-to-receive-faxes.md).
     
-    You can prevent an individual user who's associated with a dial plan from receiving fax messages. To do this, configure the properties for the user by using the **Set-UMMailbox** cmdlet in the Shell. You can also use the **Set-UMMailboxPolicy** cmdlet to prevent multiple users from receiving fax messages. For more information about how to prevent a user or users from receiving fax messages, see [Prevent a user from receiving faxes](prevent-a-user-from-receiving-faxes.md).
+    You can prevent an individual user who's associated with a dial plan from receiving fax messages. To do this, configure the properties for the user by using the **Set-UMMailbox** cmdlet in Exchange Online PowerShell. You can also use the **Set-UMMailboxPolicy** cmdlet to prevent multiple users from receiving fax messages. For more information about how to prevent a user or users from receiving fax messages, see [Prevent a user from receiving faxes](prevent-a-user-from-receiving-faxes.md).
     
 ### Step 4: Configure authentication
 <a name="step4configureauthentication"> </a>

@@ -28,14 +28,14 @@ For additional management tasks related to address lists, see [Managing Address 
     
 - To use the  _RecipientFilter_ parameter to create a custom filter, you must specify a string for the filter. The Shell uses OPATH for the filtering syntax. OPATH is a querying language designed to query object data sources. 
     
-- You can't use the Exchange admin center (EAC) to perform this procedure. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to perform this procedure. You must use Exchange Online PowerShell.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## Use the Shell to create an address list by using recipient filters
+## Use Exchange Online PowerShell to create an address list by using recipient filters
 
 This example creates an address list for all users with Exchange mailboxes who reside in Washington or Oregon.
   
@@ -43,7 +43,7 @@ This example creates an address list for all users with Exchange mailboxes who r
 New-AddressList -Name "Pacific Northwest Mailboxes" -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
 ```
 
-This example creates an address list for all users with Exchange mailboxes who have  `AgencyB` as the value for the  _CustomAttribute15_ parameter. 
+This example creates an address list for all users with Exchange mailboxes who have `AgencyB` as the value for the  _CustomAttribute15_ parameter. 
   
 ```
 New-AddressList -Name "AgencyB" -RecipientFilter {(RecipientType -eq 'UserMailbox') -and (CustomAttribute15 -like *AgencyB*)}

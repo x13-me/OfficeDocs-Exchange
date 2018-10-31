@@ -28,7 +28,7 @@ When you enable mailbox audit logging for a mailbox, Microsoft Exchange logs spe
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## Enable mailbox audit logging
 <a name="beforeyoubegin"> </a>
@@ -62,10 +62,10 @@ $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 Run the following command to verify that you've successfully configured mailbox audit logging.
   
 ```
-Get-Mailbox | FL Name,AuditEnabled
+Get-Mailbox | Format-List Name,AuditEnabled
 ```
 
-A value of  `True` for the  _AuditEnabled_ property verifies that audit logging is enabled. 
+A value of `True` for the  _AuditEnabled_ property verifies that audit logging is enabled. 
   
 ## Run a non-owner mailbox access report
 <a name="runreport"> </a>
@@ -117,17 +117,17 @@ The following table lists the actions performed by non-owners that can be logged
   
 |**Action**|**Description**|**Administrator**|**Delegated user**|
 |:-----|:-----|:-----|:-----|
-|**Copy** <br/> |A message was copied to another folder.  <br/> |Yes  <br/> |No  <br/> |
-|**Create** <br/> |An item is created in the Calendar, Contacts, Notes, or Tasks folder in the mailbox; for example, a new meeting request is created. Note that message or folder creation isn't audited.  <br/> |Yes\*  <br/> |Yes\*  <br/> |
-|**FolderBind** <br/> |A mailbox folder was accessed.  <br/> |Yes\*  <br/> |Yes  <br/> |
-|**Hard-delete** <br/> |A message was purged from the Recoverable Items folder.  <br/> |Yes\*  <br/> |Yes\*  <br/> |
-|**MessageBind** <br/> |A message was viewed in the preview pane or opened.  <br/> |Yes  <br/> |No  <br/> |
-|**Move** <br/> |A message was moved to another folder.  <br/> |Yes\*  <br/> |Yes  <br/> |
-|**Move To Deleted Items** <br/> |A message was moved to the Deleted Items folder.  <br/> |Yes\*  <br/> |Yes  <br/> |
-|**Send as** <br/> |A message was sent using SendAs permission. This means another user sent the message as though it came from the mailbox owner.  <br/> |Yes\*  <br/> |Yes\*  <br/> |
-|**Send on behalf of** <br/> |A message was sent using SendOnBehalf permission. This means another user sent the message on behalf of the mailbox owner. The message will indicate to the recipient who the message was sent on behalf of and who actually sent the message.  <br/> |Yes\*  <br/> |Yes  <br/> |
-|**Soft-delete** <br/> |A message was deleted from the Deleted Items folder.  <br/> |Yes\*  <br/> |Yes\*  <br/> |
-|**Update** <br/> |A message was changed.  <br/> |Yes\*  <br/> |Yes\*  <br/> |
+|**Copy**|A message was copied to another folder.|Yes|No|
+|**Create**|An item is created in the Calendar, Contacts, Notes, or Tasks folder in the mailbox; for example, a new meeting request is created. Note that message or folder creation isn't audited.|Yes\*|Yes\*|
+|**FolderBind**|A mailbox folder was accessed.|Yes\*|Yes|
+|**Hard-delete**|A message was purged from the Recoverable Items folder.|Yes\*|Yes\*|
+|**MessageBind**|A message was viewed in the preview pane or opened.|Yes|No|
+|**Move**|A message was moved to another folder.|Yes\*|Yes|
+|**Move To Deleted Items**|A message was moved to the Deleted Items folder.|Yes\*|Yes|
+|**Send as**|A message was sent using SendAs permission. This means another user sent the message as though it came from the mailbox owner.|Yes\*|Yes\*|
+|**Send on behalf of**|A message was sent using SendOnBehalf permission. This means another user sent the message on behalf of the mailbox owner. The message will indicate to the recipient who the message was sent on behalf of and who actually sent the message.|Yes\*|Yes|
+|**Soft-delete**|A message was deleted from the Deleted Items folder.|Yes\*|Yes\*|
+|**Update**|A message was changed.|Yes\*|Yes\*|
    
 > [!NOTE]
 > <sup>\*</sup> Audited by default if auditing is enabled for a mailbox. 

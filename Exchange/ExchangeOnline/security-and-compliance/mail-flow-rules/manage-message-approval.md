@@ -34,8 +34,8 @@ Here's a comparison of the two approaches to message approval.
   
 |**What do you want to do?**|**Approach**|**First step**|
 |:-----|:-----|:-----|
-|Create a moderated distribution group where all messages to the group must be approved.  <br/> |Set up message approval for the distribution group.  <br/> |Go to the Exchange admin center (EAC) \> **Recipients** \>  **Groups**, edit the distribution group, and then select **Message approval**.  <br/> |
-|Require approval for messages that match specific criteria or that are sent to a specific person.  <br/> |Create a transport rule using the **Forward the message for approval** action.  <br/> You can specify message criteria, including text patterns, senders, and recipients. Your criteria can also contain exceptions.  <br/> |Go to the EAC \> **Mail flow** \> **Rules**.  <br/> |
+|Create a moderated distribution group where all messages to the group must be approved.|Set up message approval for the distribution group.|Go to the Exchange admin center (EAC) \> **Recipients** \>  **Groups**, edit the distribution group, and then select **Message approval**.|
+|Require approval for messages that match specific criteria or that are sent to a specific person.|Create a transport rule using the **Forward the message for approval** action.  <br/> You can specify message criteria, including text patterns, senders, and recipients. Your criteria can also contain exceptions.|Go to the EAC \> **Mail flow** \> **Rules**.|
    
 [Return to top](manage-message-approval.md#RTT)
   
@@ -96,8 +96,4 @@ By default, one arbitration mailbox is used for each Exchange organization. If y
 
 [Manage mail flow rules](manage-mail-flow-rules.md)
   
-[Exchange Management Shell Quick Reference for Exchange 2013](https://technet.microsoft.com/library/3ea4a105-a93c-48ba-96ce-6170125354e1.aspx)
-  
 [Exchange Online PowerShell](https://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx)
-  
-

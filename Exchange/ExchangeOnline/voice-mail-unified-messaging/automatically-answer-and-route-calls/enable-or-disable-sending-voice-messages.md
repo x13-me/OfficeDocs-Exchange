@@ -31,7 +31,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -48,15 +48,15 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!NOTE]
 > If you disable this option and also disable the **Allow callers to dial users** option, the **Options for searching the address book** are also disabled. 
   
-### Use the Shell to enable callers to send voice messages or prevent them from doing so
+### Use Exchange Online PowerShell to enable callers to send voice messages or prevent them from doing so
 
-This example prevents callers who call in to a UM auto attendant named  `MyUMAutoAttendant` from sending voice messages. 
+This example prevents callers who call in to a UM auto attendant named `MyUMAutoAttendant` from sending voice messages. 
   
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -SendVoiceMsgEnabled $false
 ```
 
-This example enables callers who call in to a UM auto attendant named  `MyUMAutoAttendant` to send voice messages. 
+This example enables callers who call in to a UM auto attendant named `MyUMAutoAttendant` to send voice messages. 
   
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -SendVoiceMsgEnabled $true

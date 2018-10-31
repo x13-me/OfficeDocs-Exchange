@@ -27,7 +27,7 @@ Mail users are similar to mail contacts. Both have external email addresses and 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -98,7 +98,7 @@ Mail users are similar to mail contacts. Both have external email addresses and 
     
 7. When you've finished, click **Save** to create the mail user. 
     
-#### Use the Shell to create a mail user
+#### Use Exchange Online PowerShell to create a mail user
 
 This example creates a mail-enabled user account for Jeffrey Zeng in Exchange Server with the following details:
   
@@ -132,15 +132,15 @@ To verify that you've successfully created a mail user, do one of the following:
   
 - In the EAC, navigate to **Recipients** \> **Contacts**. The new mail user is displayed in the list of contacts. Under **Contact Type**, the type is **Mail user**.
     
-- In the Shell, run the following command to display information about the new mail user.
+- In Exchange Online PowerShell, run the following command to display information about the new mail user.
     
   ```
-  Get-MailUser <Name> | FL Name,RecipientTypeDetails,ExternalEmailAddress
+  Get-MailUser <Name> | Format-List Name,RecipientTypeDetails,ExternalEmailAddress
   ```
 
 ### Change mail user properties
 
-After you create a mail user, you can make changes and set additional properties by using the EAC or the Shell.
+After you create a mail user, you can make changes and set additional properties by using the EAC or Exchange Online PowerShell.
   
 You can also change properties for multiple user mailboxes at the same time. For more information, see [Use the EAC to bulk edit mail users](#bulkedit.md).
   
@@ -267,7 +267,7 @@ Use the **MailTip** section to add a MailTip to alert users of potential issues 
 > [!NOTE]
 >  MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit. 
   
-#### Use the Shell to change mail user properties
+#### Use Exchange Online PowerShell to change mail user properties
 
 Properties for a mail user are stored in both Active Directory and Exchange. In general, use the **Get-User** and **Set-User** cmdlets to view and change organization and contact information properties. Use the **Get-MailUser** and **Set-MailUser** cmdlets to view or change mail-related properties, such email addresses, the MailTip, custom attributes, and whether the mail user is hidden from address lists. 
   
@@ -281,7 +281,7 @@ Use the **Get-MailUser** and **Set-MailUser** cmdlets to view and change propert
     
 - [Set-MailUser](https://technet.microsoft.com/library/087a55a2-ee8d-41a8-9c8f-d86e32ce8448.aspx)
     
-Here are some examples of using the Shell to change mail user properties.
+Here are some examples of using Exchange Online PowerShell to change mail user properties.
   
 This example sets the external email address for Pilar Pinilla.
   
@@ -313,7 +313,7 @@ To verify that you've successfully changed properties for mail users, do the fol
   
 - In the EAC, select the mail user and then click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif) to view the property that you changed. 
     
-- In the Shell, use the **Get-User** and **Get-MailUser** cmdlets to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple mail contacts. 
+- In Exchange Online PowerShell, use the **Get-User** and **Get-MailUser** cmdlets to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple mail contacts. 
     
   ```
   Get-MailUser | Fl Name,CustomAttribute1 
@@ -322,7 +322,7 @@ To verify that you've successfully changed properties for mail users, do the fol
     In the example above where the Company property was set to Contoso for all mail contacts, run the following command to verify the changes:
     
   ```
-  Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')} | FL Name,Company
+  Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')} | Format-List Name,Company
   ```
 
     In the example above where all mail users had the CustomAttribute1 property set to ContosoEmployee, run the following command to verify the changes.
@@ -362,7 +362,7 @@ To verify that you've successfully bulk edited mail users, do one of the followi
   
 - In the EAC, select each of the mail users that you bulk edited and then click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif) to view the properties that you changed. 
     
-- In the Shell, use the **Get-User** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail users from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in the Shell: 
+- In Exchange Online PowerShell, use the **Get-User** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail users from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in Exchange Online PowerShell: 
     
   ```
   Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Adatum')} | fl Name,Office,Manager

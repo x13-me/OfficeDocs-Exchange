@@ -87,7 +87,7 @@ When you configure UM for your organization, users can access voice mail, email,
 
 Currently, most users and IT departments manage their voice mail separately from their email. Voice mail and email exist as separate inboxes hosted on separate servers accessed through the desktop for email and through the telephone for voice mail. UM offers an integrated store for all messages and access to content through the computer and the telephone. 
   
-Exchange administrators can manage UM using the same interface they use to manage the rest of Exchange, using the Exchange admin center (EAC) and the Shell. They can:
+Exchange administrators can manage UM using the same interface they use to manage the rest of Exchange, using the Exchange admin center (EAC) and Exchange Online PowerShell. They can:
   
 - Manage voice mail and email from a single platform.
     
@@ -160,7 +160,7 @@ You need to consider and evaluate many areas to be able to successfully deploy U
     
 - The storage requirements for voice mail users.
     
-## Managing UM with the EAC and the Shell
+## Managing UM with the EAC and Exchange Online PowerShell
 <a name="managing"> </a>
 
  **EAC management**
@@ -181,6 +181,6 @@ Office 365 provides a single unified management console for your organization th
     
  **Shell management**
   
-The Shell, built on Windows PowerShell technology, is a powerful command-line interface that enables automation of administrative tasks. With the Shell, you can manage every aspect of Exchange. You can enable new email accounts, create Send and Receive connectors, configure database properties, manage all aspects of UM, and more. The Shell can perform every task that can be performed by the EAC plus tasks that can't be done in the EAC. In fact, when you do something in the EAC, it's the Shell that's doing the work behind the scenes. 
+The Shell, built on Windows PowerShell technology, is a powerful command-line interface that enables automation of administrative tasks. With Exchange Online PowerShell, you can manage every aspect of Exchange. You can enable new email accounts, create Send and Receive connectors, configure database properties, manage all aspects of UM, and more. The Shell can perform every task that can be performed by the EAC plus tasks that can't be done in the EAC. In fact, when you do something in the EAC, it's Exchange Online PowerShell that's doing the work behind the scenes. 
   
 

@@ -17,7 +17,7 @@ description: "You can configure Automatic Speech Recognition (ASR) for a user wh
 You can configure Automatic Speech Recognition (ASR) for a user who's enabled for Unified Messaging (UM) and voice mail. When ASR is enabled on the mailbox of an Outlook Voice Access user, the user can move through the mailbox menus using voice commands. ASR is enabled by default. If ASR is disabled, the user must use dual tone multi-frequency (DTMF), also known as touchtone, inputs to move through the menus. 
   
 > [!NOTE]
-> You can't use the EAC to configure this feature. You must use the Shell to enable or disable ASR for a voice mail user. 
+> You can't use the EAC to configure this feature. You must use Exchange Online PowerShell to enable or disable ASR for a voice mail user. 
   
 For additional management tasks related to UM or voice mail users, see [Voice mail-enabled user procedures](../../voice-mail-unified-messaging/set-up-voice-mail/voice-mail-enabled-user-procedures.md).
   
@@ -36,17 +36,17 @@ For additional management tasks related to UM or voice mail users, see [Voice ma
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## Use the Shell to enable or disable ASR for a UM-enabled user
+## Use Exchange Online PowerShell to enable or disable ASR for a UM-enabled user
 
-This example enables ASR for a UM-enabled user named  `tonysmith`.
+This example enables ASR for a UM-enabled user named `tonysmith`.
   
 ```
 Set-UMMailbox -Identity tonysmith@contoso.com -AutomaticSpeechRecognitionEnabled $true
 ```
 
-This example disables ASR for a UM-enabled user named  `tonysmith`.
+This example disables ASR for a UM-enabled user named `tonysmith`.
   
 ```
 Set-UMMailbox -Identity tonysmith@contoso.com -AutomaticSpeechRecognitionEnabled $false

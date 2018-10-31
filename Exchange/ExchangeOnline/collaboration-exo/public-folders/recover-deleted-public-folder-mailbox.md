@@ -16,7 +16,7 @@ description: "Summary: This article describes how to recover a public folder mai
 
  **Summary**: This article describes how to recover a public folder mailbox in Office 365 that was previously soft-deleted, meaning the mailbox retention period has not yet elapsed and the recycle bin has not been purged.
   
-You can delete public folder mailboxes either in the EAC or through the  `Remove-Mailbox -PublicFolder` cmdlet. To delete a primary mailbox, all other mailboxes must be deleted first. After a mailbox is deleted it will no longer be visible in the EAC. 
+You can delete public folder mailboxes either in the EAC or through the `Remove-Mailbox -PublicFolder` cmdlet. To delete a primary mailbox, all other mailboxes must be deleted first. After a mailbox is deleted it will no longer be visible in the EAC. 
   
 Deleted Public Folder mailboxes are recoverable for a period of up to 90 days.
   
@@ -24,7 +24,7 @@ Deleted Public Folder mailboxes are recoverable for a period of up to 90 days.
 
 - Estimated time to complete: 5-10 minutes.
     
-- A public folder mailbox can only be deleted once all folders within that mailbox have been deleted. However, you can bypass this restriction by using the  `-Force` switch, as in  `Remove-Mailbox -PublicFolder -Force`.
+- A public folder mailbox can only be deleted once all folders within that mailbox have been deleted. However, you can bypass this restriction by using the `-Force` switch, as in `Remove-Mailbox -PublicFolder -Force`.
     
 - A deleted public folder mailbox is only recoverable for a period of 90 days after the mailbox is soft-deleted. The retention period for a soft-deleted mailbox is 90 days, after which the mailbox is permanently deleted and you won't be able to restore it.
     
@@ -53,7 +53,7 @@ To restore a primary public folder mailbox:
 
 ## Restore a primary mailbox and secondary mailboxes
 
-The **Type** field, part of the information returned by the  `Get-Mailbox` cmdlet, identifies public folder mailboxes as either **Primary** or **Secondary**. Primary public folder mailboxes must be restored first.
+The **Type** field, part of the information returned by the `Get-Mailbox` cmdlet, identifies public folder mailboxes as either **Primary** or **Secondary**. Primary public folder mailboxes must be restored first.
   
 Perform the following steps to restore both a primary public folder mailbox and any relevant secondary mailboxes.
   

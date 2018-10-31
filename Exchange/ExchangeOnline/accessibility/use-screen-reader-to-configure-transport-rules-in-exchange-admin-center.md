@@ -48,7 +48,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
 ## Create a transport rule
 <a name="BKMK_transportrule"> </a>
 
-1. In the EAC, to move the focus to the first link in the navigation pane— **Dashboard** —press Ctrl+F6  *twice*  . You hear "Dashboard, Primary navigation link." 
+1. In the EAC, to move the focus to the first link in the navigation pane— **Dashboard** —press Ctrl+F6 *twice*. You hear "Dashboard, Primary navigation link." 
     
 2. To move the focus to the **mail flow** link in the navigation pane, press the Tab key until you hear "Mail flow, Primary navigation link." Press Enter. 
     
@@ -67,13 +67,13 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
     
 |**Condition**|**UI elements in the condition's pop-up window**|
 |:-----|:-----|
-| The sender is  <br/>  The recipient is  <br/>  The sender is a member of  <br/>  The recipient is a member of  <br/> |
+| The sender is  <br/>  The recipient is  <br/>  The sender is a member of  <br/>  The recipient is a member of|
 Search, Refresh , and More  buttons Display Name  and Email Address  column headers List of names and email addresses Add  button and text box that includes the selected names Check names  button and text box in which you type the name you want to check OK  and Cancel  buttons |
-| The sender is located  <br/>  The recipient is located  <br/> |
+| The sender is located  <br/>  The recipient is located|
 	Drop-down box that opens a list of locations OK  and Cancel  buttons |
-| The subject or body includes  <br/>  The sender address includes  <br/>  The recipient address includes  <br/>  Any attachment's content includes  <br/> |
+| The subject or body includes  <br/>  The sender address includes  <br/>  The recipient address includes  <br/>  Any attachment's content includes|
 Edit  and Remove  buttons 	Text box in which you type words, and an Add  button to add each entry 	List of entries OK  and Cancel  buttons |
-|[Apply to all messages]  <br/> |No pop-up window opens  <br/> |
+|[Apply to all messages]|No pop-up window opens|
    
 7. After you've accepted your condition settings in the appropriate pop-up window, move to the next option in the ** new rule ** pop-up window by pressing the Tab key. 
     
@@ -83,12 +83,12 @@ Edit  and Remove  buttons 	Text box in which you type words, and an Add  button 
     
 |**Action**|**UI elements in the pop-up window**|
 |:-----|:-----|
-| Forward the message for approval to  <br/>  Redirect the message to  <br/>  Bcc the message to  <br/> |
+| Forward the message for approval to  <br/>  Redirect the message to  <br/>  Bcc the message to|
 Search, Refresh , and More  buttons Display Name  and Email Address  column headers List of names and email addresses Add  button and text box that includes the selected names Check names  button and text box in which you type the name you want to check OK  and Cancel  buttons |
-|Reject the message with the explanation  <br/> |
+|Reject the message with the explanation|
 Text box in which you type the explanation OK  and Cancel  buttons |
-|Delete the message without notifying anyone  <br/> |No pop-up window opens  <br/> |
-|Append the disclaimer  <br/> | No pop-up window opens, but an Enter text link and a Select one link are inserted in the window after the drop-down box  <br/>  If you select the **Enter text** link, a pop-up window opens that includes a text box in which you type the disclaimer, and the **OK** and **Cancel** buttons  <br/>  If you select the **Select one** link, a pop-up window opens that includes a drop-down box that opens a list of fallback actions in case the disclaimer can't be inserted, and the **OK** and **Cancel** buttons  <br/> |
+|Delete the message without notifying anyone|No pop-up window opens|
+|Append the disclaimer| No pop-up window opens, but an Enter text link and a Select one link are inserted in the window after the drop-down box  <br/>  If you select the **Enter text** link, a pop-up window opens that includes a text box in which you type the disclaimer, and the **OK** and **Cancel** buttons  <br/>  If you select the **Select one** link, a pop-up window opens that includes a drop-down box that opens a list of fallback actions in case the disclaimer can't be inserted, and the **OK** and **Cancel** buttons|
    
 9. After you've accepted your action settings in the appropriate pop-up window, move to the next option in the **new rule** pop-up window by pressing the Tab key. 
     

@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 0976f8f2-3449-44f1-b0d1-20c91622e827
-description: "You can use the Shell to create one or more call answering rules for a user. You can also use the New-UMCallAnsweringRule cmdlet in an Exchange Management Shell script to create call answering rules for multiple users."
+description: "You can use Exchange Online PowerShell to create one or more call answering rules for a user. You can also use the New-UMCallAnsweringRule cmdlet in a PowerShell script to create call answering rules for multiple users."
 ---
 
 # Create a call answering rule
 
-You can use the Shell to create one or more call answering rules for a user. You can also use the **New-UMCallAnsweringRule** cmdlet in an Exchange Management Shell script to create call answering rules for multiple users. 
+You can use Exchange Online PowerShell to create one or more call answering rules for a user. You can also use the **New-UMCallAnsweringRule** cmdlet in a PowerShell script to create call answering rules for multiple users. 
   
 Call answering rules are applied to incoming calls similar to the way Inbox rules are applied to incoming email messages. By default, when a user is enabled for Unified Messaging (UM), no call answering rules are configured. Even so, incoming calls are answered by the mail system and callers are prompted to leave a voice message.
   
@@ -35,22 +35,22 @@ For additional management tasks related to Call Answering Rules, see [Forwarding
     
 - Before you perform this procedure, confirm that the user's mailbox has been UM-enabled. For detailed steps, see [Enable a user for voice mail](../../voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail.md).
     
-- You can only use the Shell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Shell**. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- You can only use Exchange Online PowerShell to perform this procedure. To learn how to open Exchange Online PowerShell in your on-premises Exchange organization, see **Open Exchange Online PowerShell**. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## Use the Shell to create a call answering rule
+## Use Exchange Online PowerShell to create a call answering rule
 
-This example creates the call answering rule  `MyCallAnsweringRule` in the mailbox for Tony Smith with the priority of 2. 
+This example creates the call answering rule `MyCallAnsweringRule` in the mailbox for Tony Smith with the priority of 2. 
   
 ```
 New-UMCallAnsweringRule -Name MyCallAnsweringRule -Priority 2 -Mailbox tonysmith
 ```
 
-This example creates the call answering rule  `MyCallAnsweringRule` in the mailbox for Tony Smith and performs the following actions: 
+This example creates the call answering rule `MyCallAnsweringRule` in the mailbox for Tony Smith and performs the following actions: 
   
 - Sets the call answering rule to two caller IDs.
     
@@ -63,7 +63,7 @@ New-UMCallAnsweringRule -Name MyCallAnsweringRule -CallerIds "1,4255550100,,","1
 
 ```
 
-This example creates the call answering rule  `MyCallAnsweringRule` in the mailbox for Tony Smith and performs the following actions: 
+This example creates the call answering rule `MyCallAnsweringRule` in the mailbox for Tony Smith and performs the following actions: 
   
 > Sets the priority of the call answering rule to 2.
     

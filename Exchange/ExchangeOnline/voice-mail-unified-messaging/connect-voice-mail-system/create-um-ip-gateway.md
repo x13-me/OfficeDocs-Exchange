@@ -31,7 +31,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -45,7 +45,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
     
   - **Address** You can configure a UM IP gateway with either an IP address or a fully qualified domain name (FQDN). Use this box to specify the IP address configured on the VoIP gateway, SIP-enabled PBX, IP PBX, or SBC, or an FQDN. This box accepts only FQDNs that are valid and formatted correctly. 
     
-    You can enter alphabetical and numeric characters in this box. IPv4 addresses, IPv6 addresses, and FQDNs are supported. If you want to use mutual Transport Layer Security (mutual TLS) between a UM IP gateway and a dial plan operating in either SIP secured or Secured mode, you must configure the UM IP gateway with an FQDN. You must also configure it to listen on port 5061 and verify that any VoIP gateways or IP PBXs have also been configured to listen for mutual TLS requests on port 5061. To configure a UM IP gateway, run the following command:  `Set-UMIPGateway -identity MyUMIPGateway -Port 5061`.
+    You can enter alphabetical and numeric characters in this box. IPv4 addresses, IPv6 addresses, and FQDNs are supported. If you want to use mutual Transport Layer Security (mutual TLS) between a UM IP gateway and a dial plan operating in either SIP secured or Secured mode, you must configure the UM IP gateway with an FQDN. You must also configure it to listen on port 5061 and verify that any VoIP gateways or IP PBXs have also been configured to listen for mutual TLS requests on port 5061. To configure a UM IP gateway, run the following command: `et-UMIPGateway -identity MyUMIPGateway -Port 5061`.
     
     If you use an FQDN, you must also make sure that you've correctly configured a DNS host record for the VoIP gateway so that the host name will be correctly resolved to an IP address. Also, if you use an FQDN instead of an IP address, and the DNS configuration for the UM IP gateway is changed, you must disable and then enable the UM IP gateway to make sure that configuration information for the UM IP gateway is updated correctly.
     
@@ -53,21 +53,21 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
     
 3. Click **Save**.
     
-### Use the Shell to create a UM IP gateway
+### Use Exchange Online PowerShell to create a UM IP gateway
 
-This example creates a UM IP gateway named  `MyUMIPGateway` that enables Exchange servers to start accepting calls from a VoIP gateway, a PBX enabled for SIP, an IP PBX, or an SBC that has an IP address of 10.10.10.1. 
+This example creates a UM IP gateway named `yUMIPGateway` that enables Exchange servers to start accepting calls from a VoIP gateway, a PBX enabled for SIP, an IP PBX, or an SBC that has an IP address of 10.10.10.1. 
   
 ```
 New-UMIPGateway -Name MyUMIPGateway -Address 10.10.10.1
 ```
 
-This example creates a UM IP gateway named  `MyUMIPGateway` that enables Exchange servers to start accepting calls from a VoIP gateway, a PBX enabled for SIP, an IP PBX, or an SBC that has an FQDN of MyUMIPGateway.contoso.com and listens on port 5061. 
+This example creates a UM IP gateway named `MyUMIPGateway` that enables Exchange servers to start accepting calls from a VoIP gateway, a PBX enabled for SIP, an IP PBX, or an SBC that has an FQDN of MyUMIPGateway.contoso.com and listens on port 5061. 
   
 ```
 New-UMIPGateway -Name MyUMIPGateway -Address "MyUMIPGateway.contoso.com" -Port 5061
 ```
 
-This example creates a UM IP gateway named  `MyUMIPGateway` and prevents the UM IP gateway from accepting incoming calls or sending outgoing calls, sets an IPv6 address, and allows the UM IP gateway to use IPv4 and IPV6 addresses. 
+This example creates a UM IP gateway named `yUMIPGateway` and prevents the UM IP gateway from accepting incoming calls or sending outgoing calls, sets an IPv6 address, and allows the UM IP gateway to use IPv4 and IPV6 addresses. 
   
 ```
 New-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false

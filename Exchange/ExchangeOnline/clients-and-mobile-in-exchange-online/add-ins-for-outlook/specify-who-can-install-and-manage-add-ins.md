@@ -49,7 +49,7 @@ For information about add-ins, see [Add-ins for Outlook](add-ins-for-outlook.md)
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -67,11 +67,11 @@ You can use the EAC to assign users the permissions required to view and modify 
   
 ## How do you know this worked?
 
-To verify that you've successfully assigned permissions for a user, run a Shell command using the format  `Get-ManagementRoleAssignment -Role <Role Name> -GetEffectiveUsers`, where  `Role Name` is the role for which you want to verify assigned permissions. 
+To verify that you've successfully assigned permissions for a user, run a Shell command using the format `Get-ManagementRoleAssignment -Role <Role Name> -GetEffectiveUsers`, where `Role Name` is the role for which you want to verify assigned permissions. 
   
 This example shows you how to verify whom you've assigned permissions to install add-ins from the Office Store for the organization.
   
-1. Run  `Get-ManagementRoleAssignment -Role "Org Marketplace Apps" -GetEffectiveUsers`.
+1. Run `Get-ManagementRoleAssignment -Role "Org Marketplace Apps" -GetEffectiveUsers`.
     
 2. In the results, review the entries in the **Effective Users** column. 
     

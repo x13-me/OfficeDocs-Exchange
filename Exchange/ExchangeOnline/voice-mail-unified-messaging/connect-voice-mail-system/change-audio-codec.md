@@ -29,7 +29,7 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -53,15 +53,15 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
     
 5. Click **Save**.
     
-### Use the Shell to change the audio codec on a Unified Messaging dial plan
+### Use Exchange Online PowerShell to change the audio codec on a Unified Messaging dial plan
 
-This example sets the audio codec on a UM dial plan named  `MyUMDialPlan` to G.711. 
+This example sets the audio codec on a UM dial plan named `MyUMDialPlan` to G.711. 
   
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -AudioCodec G711
 ```
 
-This example sets the audio codec on a UM dial plan named  `MyUMDialPlan` to WMA. 
+This example sets the audio codec on a UM dial plan named `MyUMDialPlan` to WMA. 
   
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -AudioCodec Wma

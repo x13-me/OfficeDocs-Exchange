@@ -26,7 +26,7 @@ Facebook contact synchronization lets people set up a connection between their F
   
 ## Turn Facebook contact sync on or off
 
-You turn Facebook contact sync on or off for users in your organization by using Outlook Web App mailbox policy settings. Similar to other Outlook Web App mailbox policy settings, you can change the settings for Facebook contact sync by using the Exchange admin center (EAC) or the Exchange Management Shell (Shell). For detailed information about managing Outlook Web App mailbox policy settings, see [View or configure Outlook Web App mailbox policy properties](../clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties.md). 
+You turn Facebook contact sync on or off for users in your organization by using Outlook Web App mailbox policy settings. Similar to other Outlook Web App mailbox policy settings, you can change the settings for Facebook contact sync by using the Exchange admin center (EAC) or Exchange Online PowerShell (Shell). For detailed information about managing Outlook Web App mailbox policy settings, see [View or configure Outlook Web App mailbox policy properties](../clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties.md). 
   
 ## For more information
 

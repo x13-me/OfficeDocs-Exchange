@@ -57,7 +57,7 @@ The procedures in this topic show how to add or remove email addresses for a use
     
 6. Click **Save** to save the change. 
     
-#### Use the Shell to add an email address
+#### Use Exchange Online PowerShell to add an email address
 
 The email addresses associated with a mailbox are contained in the  _EmailAddresses_ property for the mailbox. Because it can contain more than one email address, the  _EmailAddresses_ property is known as a multivalued property. The following examples show different ways to modify a multivalued property. 
   
@@ -75,7 +75,7 @@ Set-Mailbox "Dan Jump" -EmailAddresses @{add="dan.jump@northamerica.contoso.com"
 
 For more information about how to use this method of adding and removing values for multivalued properties, see [Modifying Multivalued Properties](https://technet.microsoft.com/library/dc2c1062-ad79-404b-8da3-5b5798dbb73b.aspx).
   
-This example shows another way to add email addresses to a mailbox by specifying all addresses associated with the mailbox. In this example, danj@tailspintoys.com is the new email address that you want to add. The other two email addresses are existing addresses. The address with the case-sensitive qualifier  `SMTP` is the primary SMTP address. You have to include all email addresses for the mailbox when you use this command syntax. If you don't, the addresses specified in the command will overwrite the existing addresses. 
+This example shows another way to add email addresses to a mailbox by specifying all addresses associated with the mailbox. In this example, danj@tailspintoys.com is the new email address that you want to add. The other two email addresses are existing addresses. The address with the case-sensitive qualifier `SMTP` is the primary SMTP address. You have to include all email addresses for the mailbox when you use this command syntax. If you don't, the addresses specified in the command will overwrite the existing addresses. 
   
 ```
 Set-Mailbox "Dan Jump" -EmailAddresses SMTP:dan.jump@contoso.com,dan.jump@northamerica.contoso.com,danj@tailspintoys.com
@@ -95,7 +95,7 @@ To verify that you've successfully added an email address to a mailbox, do one o
     
 Or
   
-- Run the following command in the Shell.
+- Run the following command in Exchange Online PowerShell.
     
   ```
   Get-Mailbox <identity> | fl EmailAddresses
@@ -117,7 +117,7 @@ Or
     
 5. Click **Save** to save the change. 
     
-#### Use the Shell to remove an email address
+#### Use Exchange Online PowerShell to remove an email address
 
 This example shows how to remove an email address from the mailbox of Janet Schorr.
   
@@ -155,7 +155,7 @@ To verify that you've successfully removed an email address from a mailbox, do o
     
 Or
   
-- Run the following command in the Shell.
+- Run the following command in Exchange Online PowerShell.
     
   ```
   Get-Mailbox <identity> | fl EmailAddresses
@@ -163,9 +163,9 @@ Or
 
 - Verify that the email address isn't included in the results.
     
-### Use the Shell to add email addresses to multiple mailboxes
+### Use Exchange Online PowerShell to add email addresses to multiple mailboxes
 
-You can add a new email address to multiple mailboxes at one time by using the Shell and a comma separated values (CSV) file. 
+You can add a new email address to multiple mailboxes at one time by using Exchange Online PowerShell and a comma separated values (CSV) file. 
   
 This example imports data from C:\Users\Administrator\Desktop\AddEmailAddress.csv, which has the following format.
   
@@ -189,7 +189,7 @@ Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Set-M
 ```
 
 > [!NOTE]
-> The column names in the first row of this CSV file ( `Mailbox,NewEmailAddress`) are arbitrary. Whatever you use for column names, make sure you use the same column names in the Shell command. 
+> The column names in the first row of this CSV file ( `Mailbox,NewEmailAddress`) are arbitrary. Whatever you use for column names, make sure you use the same column names in Exchange Online PowerShell command. 
   
 #### How do you know this worked?
 
@@ -203,7 +203,7 @@ To verify that you've successfully added an email address to multiple mailboxes,
     
 Or
   
-- Run the following command in the Shell, using the same CSV file that you used to add the new email address.
+- Run the following command in Exchange Online PowerShell, using the same CSV file that you used to add the new email address.
     
   ```
   Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Get-Mailbox $_.Mailbox | fl Name,EmailAddresses}
@@ -212,6 +212,6 @@ Or
 - Verify that the new email address is included in the results for each mailbox.
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 

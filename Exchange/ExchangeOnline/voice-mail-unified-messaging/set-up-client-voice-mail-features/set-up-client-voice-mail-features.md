@@ -45,11 +45,11 @@ Voice Mail Preview is a feature that's available to users who receive their voic
 
 UM forwards incoming fax calls for a UM-enabled user to a dedicated fax partner solution, which establishes the fax call with the fax sender and receives the fax on behalf of the user. Before your UM-enabled users can receive fax messages in their mailbox, you must do the following: 
   
-- Enable inbound faxing on the UM dial plan linked to the users by setting the  _FaxEnabled_ parameter to  `$true`.
+- Enable inbound faxing on the UM dial plan linked to the users by setting the  _FaxEnabled_ parameter to `$true`.
     
-- Enable inbound faxing on the UM dial plan linked to the users by setting the  _Allowfax_ parameter to  `$true`.
+- Enable inbound faxing on the UM dial plan linked to the users by setting the  _Allowfax_ parameter to `$true`.
     
-- Enable inbound faxing for the users by setting the  _FaxEnabled_ parameter to  `$true`.
+- Enable inbound faxing for the users by setting the  _FaxEnabled_ parameter to `$true`.
     
 - Set the partner fax server URI to allow inbound faxing.
     

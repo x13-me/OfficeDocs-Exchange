@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: de6d9fa1-7878-49a9-bddb-e3317d94f4d8
-description: "You can use the Shell to view or configure one or more call answering rules for a user. You can also use the Get-UMCallAnsweringRule or Set-UMCallAnsweringRule cmdlets in an Exchange Management Shell script to view or manage call answering rules for multiple users."
+description: "Learn how to use Exchange Online PowerShell to view or configure one or more call answering rules for a user."
 ---
 
 # View and manage a call answering rule
 
-You can use the Shell to view or configure one or more call answering rules for a user. You can also use the **Get-UMCallAnsweringRule** or **Set-UMCallAnsweringRule** cmdlets in an Exchange Management Shell script to view or manage call answering rules for multiple users. 
+You can use Exchange Online PowerShell to view or configure one or more call answering rules for a user. You can also use the **Get-UMCallAnsweringRule** or **Set-UMCallAnsweringRule** cmdlets in a PowerShell script to view or manage call answering rules for multiple users. 
   
 Call answering rules are applied to incoming calls similar to the way Inbox rules are applied to incoming email messages. By default, when a user is enabled for Unified Messaging (UM), no call answering rules are configured. Even so, incoming calls are answered by the mail system and callers are prompted to leave a voice message.
   
@@ -35,16 +35,16 @@ For additional management tasks related to Call Answering Rules, see [Forwarding
     
 - Before you perform this procedure, confirm that the user's mailbox has been UM-enabled. For detailed steps, see [Enable a user for voice mail](../../voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail.md).
     
-- You can only use the Shell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Shell**. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- You can only use Exchange Online PowerShell to perform this procedure. To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)..
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
-### Use the Shell to view a call answering rule
+### Use Exchange Online PowerShell to view a call answering rule
 
 You can retrieve the properties for a single call answering rule or a list of call answering rules in a UM-enabled user's mailbox.
   
@@ -54,13 +54,13 @@ This example returns a formatted list of call answering rules in a user's UM-ena
 Get-UMCallAnsweringRule-Mailbox tonysmith | Format-List
 ```
 
-This example displays the properties of the call answering rule  `MyUMCallAnsweringRule`.
+This example displays the properties of the call answering rule `MyUMCallAnsweringRule`.
   
 ```
 Get-UMCallAnsweringRule -Identity MyUMCallAnsweringRule
 ```
 
-### Use the Shell to configure a call answering rule
+### Use Exchange Online PowerShell to configure a call answering rule
 
 You can configure or change a call answering rule that's stored in a user's mailbox. You can specify the following conditions:
   
@@ -80,14 +80,14 @@ You can also specify the following actions:
     
 - Leave a voice message
     
-This example sets the priority to 2 on the call answering rule  `MyCallAnsweringRule` that exists in the mailbox for Tony Smith. 
+This example sets the priority to 2 on the call answering rule `MyCallAnsweringRule` that exists in the mailbox for Tony Smith. 
   
 ```
 Set-UMCallAnsweringRule -Mailbox tonysmith -Name MyCallAnsweringRule -Priority 2
 
 ```
 
-This example performs the following actions on the call answering rule  `MyCallAnsweringRule` in the mailbox for Tony Smith: 
+This example performs the following actions on the call answering rule `MyCallAnsweringRule` in the mailbox for Tony Smith: 
   
 - Sets the call answering rule to two caller IDs.
     
@@ -99,7 +99,7 @@ This example performs the following actions on the call answering rule  `MyCallA
 Set-UMCallAnsweringRule -Name MyCallAnsweringRule -CallerIds "1,4255550100,,","1,4255550123,," -Priority 2 -CallersCanInterruptGreeting $true -Mailbox tonysmith
 ```
 
-This example changes the free/busy status to Away on the call answering rule  `MyCallAnsweringRule` in the mailbox for Tony Smith and sets the priority to 2. 
+This example changes the free/busy status to Away on the call answering rule `MyCallAnsweringRule` in the mailbox for Tony Smith and sets the priority to 2. 
   
 ```
 Set-UMCallAnsweringRule -Name MyCallAnsweringRule -Priority 2 -Mailbox tonysmith@contoso.com -ScheduleStatus 0x8

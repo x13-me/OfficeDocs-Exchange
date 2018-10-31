@@ -28,9 +28,9 @@ This topic describes how to synchronize mail-enabled public folders if your user
   
 You will sync your mail-enabled public folders by using the following scripts, which are initiated by a Windows task that runs in the on-premises environment:
   
--  `Sync-MailPublicFolders.ps1` This script synchronizes mail-enabled public folder objects from your local Exchange on-premises deployment with Office 365. It uses the local Exchange on-premises deployment as master to determine what changes need to be applied to O365. The script will create, update, or delete mail-enabled public folder objects on O365 Active Directory based on what exists in the local on-premises Exchange deployment. 
+- `Sync-MailPublicFolders.ps1` This script synchronizes mail-enabled public folder objects from your local Exchange on-premises deployment with Office 365. It uses the local Exchange on-premises deployment as master to determine what changes need to be applied to O365. The script will create, update, or delete mail-enabled public folder objects on O365 Active Directory based on what exists in the local on-premises Exchange deployment. 
     
--  `SyncMailPublicFolders.strings.psd1` This is a support file used by the preceding synchronization script and should be copied to the same location as the preceding script. 
+- `SyncMailPublicFolders.strings.psd1` This is a support file used by the preceding synchronization script and should be copied to the same location as the preceding script. 
     
 When you complete this procedure your on-premises and Office 365 users will be able to access the same on-premises public folder infrastructure. 
   
@@ -40,9 +40,9 @@ The following table describes the version and location combinations of user mail
   
 ||**On-Premises Exchange 2010 User Mailbox**|**On-Premises Exchange 2013 User Mailbox**|**Exchange Online User Mailbox**|
 |:-----|:-----|:-----|:-----|
-|On-Premises Exchange 2010 Public Folders  <br/> |Hybrid not applicable  <br/> |Hybrid not applicable  <br/> |Supported  <br/> |
-|On-Premises Exchange 2013 Public Folders  <br/> |Hybrid not applicable  <br/> |Hybrid not applicable  <br/> |Supported  <br/> |
-|Exchange Online Public Folders  <br/> |Not supported  <br/> |Supported  <br/> |Hybrid not applicable  <br/> |
+|On-Premises Exchange 2010 Public Folders|Hybrid not applicable|Hybrid not applicable|Supported|
+|On-Premises Exchange 2013 Public Folders|Hybrid not applicable|Hybrid not applicable|Supported|
+|Exchange Online Public Folders|Not supported|Supported|Hybrid not applicable|
   
 > [!NOTE]
 > Outlook 2016 does not support accessing Exchange 2007 legacy public folders. If you have users who are using Outlook 2016, you must move your public folders to a more recent version of Exchange Server. More information about Outlook 2016 and Office 2016 compatibility with Exchange 2007 and earlier versions can be found in [this article](https://go.microsoft.com/fwlink/p/?linkid=849053). 
@@ -113,9 +113,9 @@ The following table describes the version and location combinations of user mail
 
 1. Download the following files from [Mail-enabled Public Folders - directory sync script](https://www.microsoft.com/download/details.aspx?id=46381):
     
-  -  `Sync-MailPublicFolders.ps1`
+  - `Sync-MailPublicFolders.ps1`
     
-  -  `SyncMailPublicFolders.strings.psd1`
+  - `SyncMailPublicFolders.strings.psd1`
     
 2. Save the files to the local computer on which you'll be running PowerShell. For example, C:\PFScripts.
     
@@ -133,10 +133,10 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
     Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile "<sync_summary.csv>"
     ```
 
-    Where you're prompted for your Office 365 username and password, and  _\<sync\_summary.csv\>_ is the path to where you would like to log synchronization operations and errors, in .csv format. 
+    Where you're prompted for your Office 365 username and password, and _\<sync\_summary.csv\>_ is the path to where you would like to log synchronization operations and errors, in .csv format. 
     
 > [!NOTE]
-> Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the  `-WhatIf` parameter. > We also recommend that you run this script daily to synchronize your mail-enabled public folders. 
+> Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the _WhatIf_ parameter. > We also recommend that you run this script daily to synchronize your mail-enabled public folders. 
   
 ## Step 5: Configure Exchange Online users to access on-premises public folders
 <a name="Access"> </a>

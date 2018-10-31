@@ -31,7 +31,7 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -63,9 +63,9 @@ For additional management tasks related to outdialing, see [Allowing users to ma
     
 6. Click **Save** to save your changes. 
     
-### Use the Shell to configure dial codes, prefixes, and number formats
+### Use Exchange Online PowerShell to configure dial codes, prefixes, and number formats
 
-This example configures a UM dial plan named  `MyUMDialPlan` with an in-country or region number format, an international number format, and the following dial codes: 
+This example configures a UM dial plan named `yUMDialPlan` with an in-country or region number format, an international number format, and the following dial codes: 
   
 - 9 for the outside line access code
     

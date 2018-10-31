@@ -61,7 +61,7 @@ The XML rule definition shown earlier includes pattern-matching, which improves 
   
 In the credit card rule, there is a section of XML code for patterns, which includes a primary identifier match and some additional corroborative evidence. All three of these requirements are explained here:
   
-1.  `<IdMatch idRef="Func_credit_card" /> ` — This requires a match of a function, titled credit card, that is internally defined. This function includes a couple of validations as follows: 
+1. `<IdMatch idRef="Func_credit_card" /> ` — This requires a match of a function, titled credit card, that is internally defined. This function includes a couple of validations as follows: 
     
 1. It matches a regular expression—in this instance for 16 digits—that could also include variations like a space delimiter so that it also matches **4111 1111 1111 1111** or a hyphen delimiter so that it also matches **4111-1111-1111-1111**.
     
@@ -69,7 +69,7 @@ In the credit card rule, there is a section of XML code for patterns, which incl
     
 3. It requires a mandatory match, after which corroborative evidence is evaluated. 
     
-2.  `<Any minMatches="1"> ` — This section indicates that the presence of at least one of the following items of evidence is required. 
+2. `<Any minMatches="1"> ` — This section indicates that the presence of at least one of the following items of evidence is required. 
     
 3. The corroborative evidence can be a match of one of these three:
     
@@ -87,12 +87,12 @@ The five steps here represent actions that Exchange takes to compare your rule w
   
 |**Step**|**Action**|
 |:-----|:-----|
-|1. Get Content  <br/> |Spencer Badillo  <br/> Visa: 4111 1111 1111 1111  <br/> Expires: 2/2012  <br/> |
-|2. Regular Expression Analysis  <br/> |4111 1111 1111 1111 -\> a 16-digit number is detected  <br/> |
-|3. Function Analysis  <br/> | 4111 1111 1111 1111 -\> matches checksum  <br/>  1234 1234 1234 1234 -\> doesn't match  <br/> |
-|4. Additional Evidence  <br/> |
+|1. Get Content|Spencer Badillo  <br/> Visa: 4111 1111 1111 1111  <br/> Expires: 2/2012|
+|2. Regular Expression Analysis|4111 1111 1111 1111 -\> a 16-digit number is detected|
+|3. Function Analysis| 4111 1111 1111 1111 -\> matches checksum  <br/>  1234 1234 1234 1234 -\> doesn't match|
+|4. Additional Evidence|
 Keyword Visa is near the number. A regular expression for a date (2/2012) is near the number. |
-|5. Verdict  <br/> |
+|5. Verdict|
 There is a regular expression that matches a checksum. Additional evidence increases confidence. |
    
 The way this rule is set up by Microsoft makes it mandatory that corroborating evidence such as keywords are a part of the email message content in order to match the rule. So the following email content would not be detected as containing a credit card:
@@ -116,7 +116,7 @@ You can use a custom rule that defines a pattern without extra evidence, as show
     </Entity>
 ```
 
-The illustration of credit cards in this article can be extended to other sensitive information rules as well. To see the complete list of the Microsoft-supplied rules in Exchange, use the [Get-ClassificationRuleCollection](https://technet.microsoft.com/library/bb740ed7-6af4-4053-ad9c-6688ca42b481.aspx) cmdlet in the Exchange Management Shell in the following manner: 
+The illustration of credit cards in this article can be extended to other sensitive information rules as well. To see the complete list of the Microsoft-supplied rules in Exchange, use the [Get-ClassificationRuleCollection](https://technet.microsoft.com/library/bb740ed7-6af4-4053-ad9c-6688ca42b481.aspx) cmdlet in Exchange Online PowerShell in the following manner: 
   
 ```
 $rule_collection = Get-ClassificationRuleCollection
@@ -131,8 +131,6 @@ $rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_cla
 [Data loss prevention](data-loss-prevention.md)
   
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
-  
-[Exchange Management Shell](https://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx)
   
 [Exchange Online PowerShell](https://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx)
   

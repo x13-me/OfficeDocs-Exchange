@@ -32,11 +32,11 @@ In an HAB, your root organization (for example, Contoso, Ltd) is used as the top
   
 You can provide an additional level of hierarchical structure by using the  _SeniorityIndex_ parameter. When creating an HAB, use the  _SeniorityIndex_ parameter to rank individual recipients or organizational groups by seniority within these organizational tiers. This ranking specifies the order in which the recipients or groups are displayed in the HAB. For example, in the preceding example, the  _SeniorityIndex_ parameter for the recipients in the Corporate Office division is set to the following: 
   
--  `100` for David Hamilton 
+- `100` for David Hamilton 
     
--  `50` for Rajesh M. Patel 
+- `50` for Rajesh M. Patel 
     
--  `25` for Amy Alberts 
+- `25` for Amy Alberts 
     
 > [!NOTE]
 > If the  _SeniorityIndex_ parameter isn't set or is equal for two or more users, the HAB sorting order uses the  _PhoneticDisplayName_ parameter value to list the users in ascending alphabetical order. If the  _PhoneticDisplayName_ parameter value isn't set, the HAB sorting order defaults to the  _DisplayName_ parameter value and lists the users in ascending alphabetical order. 

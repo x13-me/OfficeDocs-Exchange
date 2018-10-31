@@ -36,7 +36,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -52,9 +52,9 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
     
 5. Click **Save** to add the number. 
     
-### Use the Shell to configure an extension number on a UM auto attendant
+### Use Exchange Online PowerShell to configure an extension number on a UM auto attendant
 
-This example configures a UM auto attendant named  `MyUMAutoAttendant` with multiple extension numbers. 
+This example configures a UM auto attendant named `MyUMAutoAttendant` with multiple extension numbers. 
   
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -PilotIdentifierList "12345, 72000, 75000"

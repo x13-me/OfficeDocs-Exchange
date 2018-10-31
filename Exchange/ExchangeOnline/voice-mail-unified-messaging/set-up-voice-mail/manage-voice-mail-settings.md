@@ -29,7 +29,7 @@ You can view or set the Unified Messaging (UM) and voice mail features and confi
 - Enable or disable access to their email or calendar.
     
 > [!NOTE]
-> Some of the settings and features can only be configured by using the Shell. 
+> Some of the settings and features can only be configured by using Exchange Online PowerShell. 
   
 For additional management tasks related to users who are enabled for voice mail, see [Voice mail-enabled user procedures](voice-mail-enabled-user-procedures.md).
   
@@ -48,7 +48,7 @@ For additional management tasks related to users who are enabled for voice mail,
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -78,7 +78,7 @@ For additional management tasks related to users who are enabled for voice mail,
     
 6. If you make any changes, click **Save**.
     
-### Use the Shell to configure features for a UM-enabled user
+### Use Exchange Online PowerShell to configure features for a UM-enabled user
 
 This example disables Play on Phone and missed call notifications, but enables text message (SMS) notifications.
   
@@ -107,7 +107,7 @@ This example prevents a user from creating call answering rules, receiving incom
 Set-UMMailbox -Identity tony@contoso.com -AutomaticSpeechRecognitionEnabled $true -CallAnsweringRulesEnabled $false -FaxEnabled $false -SubscriberAccessEnabled $false 
 ```
 
-### Use the Shell to view a UM-enabled user's properties
+### Use Exchange Online PowerShell to view a UM-enabled user's properties
 
 This example displays a list of all the UM-enabled mailboxes in the forest in a formatted list.
   

@@ -29,15 +29,15 @@ You can configure the default prompt language setting on a Unified Messaging (UM
     
 5. Click **Save** to accept your changes. 
     
-### Use the Shell to configure the default language setting
+### Use Exchange Online PowerShell to configure the default language setting
 
-This example sets the default language on the UM auto attendant  `MyUMAutoAttendant` to English (Great Britain). 
+This example sets the default language on the UM auto attendant `MyUMAutoAttendant` to English (Great Britain). 
   
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -Language en-GB
 ```
 
-This example sets the default language on the UM auto attendant  `MyUMAutoAttendant` to German. 
+This example sets the default language on the UM auto attendant `MyUMAutoAttendant` to German. 
   
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -Language de-DE

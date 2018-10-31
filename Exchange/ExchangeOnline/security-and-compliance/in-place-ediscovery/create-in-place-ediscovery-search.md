@@ -38,7 +38,7 @@ Use [In-Place eDiscovery](in-place-ediscovery.md) to search across all mailbox c
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## Use the EAC to create an In-Place eDiscovery search
 
@@ -79,7 +79,7 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
     
 [Return to top](create-in-place-ediscovery-search.md#top)
   
-## Use the Shell to create an In-Place eDiscovery search
+## Use Exchange Online PowerShell to create an In-Place eDiscovery search
 <a name="newmailboxsearch"> </a>
 
 This example creates the In-Place eDiscovery search named Discovery-CaseId012 that searches for items containing the keywords Contoso and ProjectA and that also meet the following criteria:
@@ -115,7 +115,7 @@ This example creates an In-Place eDiscovery search named HRCase090116 that searc
 New-MailboxSearch "HRCase090116" -StartDate "01/01/2015" -EndDate "12/31/2015" -SourceMailboxes  alexd,sarad -SearchQuery 'From:alexd@contoso.com AND To:sarad@contoso.com' -MessageTypes Email -TargetMailbox "Discovery Search Mailbox" -IncludeUnsearchableItems -LogLevel Full
 ```
 
-After using the Shell to create an In-Place eDiscovery search, you have to start the search by using the **Start-MailboxSearch** cmdlet to copy messages to the discovery mailbox specified in the  _TargetMailbox_ parameter. For details, see [Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx).
+After using Exchange Online PowerShell to create an In-Place eDiscovery search, you have to start the search by using the **Start-MailboxSearch** cmdlet to copy messages to the discovery mailbox specified in the  _TargetMailbox_ parameter. For details, see [Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx).
   
 For detailed syntax and parameter information, see [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
   
@@ -124,7 +124,7 @@ For detailed syntax and parameter information, see [New-MailboxSearch](https://t
 ## Use the EAC to estimate or preview search results
 <a name="newmailboxsearch"> </a>
 
-After you create an In-Place eDiscovery search, you can use the EAC to get an estimate and preview of the search results. If you created a new search using the **New-MailboxSearch** cmdlet, you can use the Shell to start the search to get an estimate of the search results. You can't use the Shell to preview messages returned in search results. 
+After you create an In-Place eDiscovery search, you can use the EAC to get an estimate and preview of the search results. If you created a new search using the **New-MailboxSearch** cmdlet, you can use Exchange Online PowerShell to start the search to get an estimate of the search results. You can't use Exchange Online PowerShell to preview messages returned in search results. 
   
 1. Navigate to **Compliance management** \> **In-place eDiscovery & hold**.
     
@@ -143,7 +143,7 @@ After you create an In-Place eDiscovery search, you can use the EAC to get an es
   
 [Return to top](create-in-place-ediscovery-search.md#top)
   
-## Use the Shell to estimate search results
+## Use Exchange Online PowerShell to estimate search results
 <a name="newmailboxsearch"> </a>
 
 You can use the  _EstimateOnly_ switch to return only get an estimate of the search results and not copy the results to a discovery mailbox. You have to start an estimate-only search with the **Start-MailboxSearch** cmdlet. Then you can retrieve the estimated search results by using the **Get-MailboxSearch** cmdlet. 
@@ -166,7 +166,7 @@ Get-MailboxSearch "FY13 Q2 Financial Results"
 To display specific information about the estimated search results from the previous example, you could run the following command:
   
 ```
-Get-MailboxSearch "FY13 Q2 Financial Results" | FL Name,Status,LastRunBy,LastStartTime,LastEndTime,Sources,SearchQuery,ResultSizeEstimate,ResultNumberEstimate,Errors,KeywordHits
+Get-MailboxSearch "FY13 Q2 Financial Results" | Format-List Name,Status,LastRunBy,LastStartTime,LastEndTime,Sources,SearchQuery,ResultSizeEstimate,ResultNumberEstimate,Errors,KeywordHits
 ```
 
 [Return to top](create-in-place-ediscovery-search.md#top)
@@ -182,7 +182,7 @@ Get-MailboxSearch "FY13 Q2 Financial Results" | FL Name,Status,LastRunBy,LastSta
     
 - After you run an eDiscovery search estimate (that includes keywords in the search criteria), you can view keyword statistics by clicking **View keyword statistics** in the details pane for the selected search. These statistics show details about the number of items returned for each keyword used in the search query. However, if more than 100 source mailboxes are included in the search, an error will be returned if you try to view keyword statistics. To view keyword statistics, no more than 100 source mailboxes can be included in the search. 
     
-- If you use **Get-MailboxSearch** in Exchange Online to retrieve information about an eDiscovery search, you have to specify the name of a search to return a complete list of the search properties; for example,  `Get-MailboxSearch "Contoso Legal Case"`. If you run the **Get-MailboxSearch** cmdlet without using any parameters, the following properties aren't returned: 
+- If you use **Get-MailboxSearch** in Exchange Online to retrieve information about an eDiscovery search, you have to specify the name of a search to return a complete list of the search properties; for example, `Get-MailboxSearch "Contoso Legal Case"`. If you run the **Get-MailboxSearch** cmdlet without using any parameters, the following properties aren't returned: 
     
   - SourceMailboxes
     

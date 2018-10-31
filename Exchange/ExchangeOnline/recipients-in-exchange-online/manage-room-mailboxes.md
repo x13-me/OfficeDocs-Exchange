@@ -50,7 +50,7 @@ For info about another type of resource mailbox, check out [Manage equipment mai
     
 Once you've created your room mailbox, you can edit your room mailbox to update info about booking options, MailTips and mailbox delegation. Check out the Use the Exchange admin center section below to change room mailbox properties.
   
-#### Use Exchange PowerShell to create a room mailbox
+#### Use Exchange Online PowerShell to create a room mailbox
 
 This example creates a room mailbox with the following configuration:
     
@@ -72,17 +72,17 @@ You can make sure you've created the room mailbox correctly a couple of differen
   
 - In the Exchange admin center, navigate to **Recipients** \> **Resources**. The new room mailbox is displayed in the mailbox list. Under **Mailbox Type**, the type is **Room**.
     
-- In Exchange PowerShell, run the following command to display information about the new room mailbox.
+- In Exchange Online PowerShell, run the following command to display information about the new room mailbox.
     
   ```
-  Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+  Get-Mailbox <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress
   ```
 
 ### Create a room list
 
-If you're planning to have more than a hundred rooms, or already have more than a hundred rooms created, use a room list to help you organize your rooms. If your company has several buildings with rooms that can be booked for meetings, it might help to create room lists for each building. Room lists are specially marked distribution groups that you can use the same way you use distribution groups. However, you can only create room lists using the Exchange Management Shell.
+If you're planning to have more than a hundred rooms, or already have more than a hundred rooms created, use a room list to help you organize your rooms. If your company has several buildings with rooms that can be booked for meetings, it might help to create room lists for each building. Room lists are specially marked distribution groups that you can use the same way you use distribution groups. However, you can only create room lists using Exchange Online PowerShell.
   
-#### Use Exchange PowerShell to create a room list
+#### Use Exchange Online PowerShell to create a room list
 
 This example creates a room list for building 32.
   
@@ -90,7 +90,7 @@ This example creates a room list for building 32.
 New-DistributionGroup -Name "Building 32 Conference Rooms" -OrganizationalUnit "contoso.com/rooms" -RoomList
 ```
 
-#### Use Exchange PowerShell to add a room to a room list
+#### Use Exchange Online PowerShell to add a room to a room list
 
 This example adds confroom3223 to the building 32 room list.
   
@@ -98,7 +98,7 @@ This example adds confroom3223 to the building 32 room list.
 Add-DistributionGroupMember -Identity "Building 32 Conference Rooms" -Member confroom3223@contoso.com
 ```
 
-#### Use Exchange PowerShell to convert a distribution group to a room list
+#### Use Exchange Online PowerShell to convert a distribution group to a room list
 
 You may already have created distribution groups in the past that contain your conference rooms. You don't need to recreate them; we can convert them quickly into a room list.
   
@@ -110,7 +110,7 @@ Set-DistributionGroup -Identity "Building 34 Conference Rooms" -RoomList
 
 ### Change room mailbox properties
 
-After you create a room mailbox, you can make changes and set additional properties by using the Exchange admin center or Exchange PowerShell.
+After you create a room mailbox, you can make changes and set additional properties by using the Exchange admin center or Exchange Online PowerShell.
   
 #### Use the Exchange admin center to change room mailbox properties
 
@@ -224,7 +224,7 @@ Use the **MailTip** section to add a MailTip to alert users of potential issues 
 > [!NOTE]
 >  MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit. 
   
-#### Use Exchange PowerShell to change room mailbox properties
+#### Use Exchange Online PowerShell to change room mailbox properties
 
 Use the following sets of cmdlets to view and change room mailbox properties: **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change general properties and email addresses for room mailboxes. Use the **Get-CalendarProcessing** and **Set-CalendarProcessing** cmdlets to view and change delegates and booking options. 
   
@@ -248,7 +248,7 @@ For information about these cmdlets, see the following topics:
     
 - [Set-CalendarProcessing](https://technet.microsoft.com/library/000bc90f-1d00-4384-ab59-d6cf6f674825.aspx)
     
-Here are some examples of using Exchange PowerShell to change room mailbox properties.
+Here are some examples of using Exchange Online PowerShell to change room mailbox properties.
   
 This example changes the display name, the primary SMTP address (called the default reply address), and the room capacity. Also, the previous reply address is kept as a proxy address.
   
@@ -274,7 +274,7 @@ To verify that you've successfully changed properties for a room mailbox, do the
   
 - In the Exchange admin center, select the mailbox and then click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected mailbox. 
     
-- In Exchange PowerShell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using Exchange PowerShell is that you can view multiple properties for multiple mailboxes. In the example above where booking requests could be scheduled only during working hours and have a maximum duration of 9 hours, run the following command to verify the new values. 
+- In Exchange Online PowerShell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple mailboxes. In the example above where booking requests could be scheduled only during working hours and have a maximum duration of 9 hours, run the following command to verify the new values. 
     
   ```
   Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'RoomMailbox')} | Get-CalendarProcessing | fl Identity,ScheduleOnlyDuringWorkHours,MaximumDurationInMinutes
@@ -283,6 +283,6 @@ To verify that you've successfully changed properties for a room mailbox, do the
 For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
   
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 

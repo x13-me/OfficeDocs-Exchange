@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18
-description: "An equipment mailbox is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the EAC and the Shell to create an equipment mailbox or change equipment mailbox properties. For more information, see Recipients."
+description: "An equipment mailbox is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the EAC and Exchange Online PowerShell to create an equipment mailbox or change equipment mailbox properties. For more information, see Recipients."
 ---
 
 # Manage equipment mailboxes
 
-An equipment mailbox is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the EAC and the Shell to create an equipment mailbox or change equipment mailbox properties. For more information, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx). 
+An equipment mailbox is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the EAC and Exchange Online PowerShell to create an equipment mailbox or change equipment mailbox properties. For more information, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx). 
   
 For information about another type of resource mailbox, a room mailbox, see [Create and manage room mailboxes](manage-room-mailboxes.md).
   
@@ -27,7 +27,7 @@ For information about another type of resource mailbox, a room mailbox, see [Cre
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -52,7 +52,7 @@ For information about another type of resource mailbox, a room mailbox, see [Cre
     
 Once you've created your equipment mailbox, you can edit your equipment mailbox to update info about booking options, MailTips and delegates. Check out the Change equipment mailbox properties section below to change room mailbox properties
   
-#### Use the Shell to create an equipment mailbox
+#### Use Exchange Online PowerShell to create an equipment mailbox
 
 This example creates an equipment mailbox with the following configuration:
   
@@ -78,15 +78,15 @@ To verify that you've successfully created a user mailbox, do one of the followi
   
 - In the EAC, navigate to **Recipients** \> **Resources**. The new user mailbox is displayed in the mailbox list. Under **Mailbox Type**, the type is **Equipment**.
     
-- In the Shell, run the following command to display information about the new equipment mailbox.
+- In Exchange Online PowerShell, run the following command to display information about the new equipment mailbox.
     
   ```
-  Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+  Get-Mailbox <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress
   ```
 
 ### Change equipment mailbox properties
 
-After you create an equipment mailbox, you can make changes and set additional properties by using the EAC or the Shell.
+After you create an equipment mailbox, you can make changes and set additional properties by using the EAC or Exchange Online PowerShell.
   
 #### Use the EAC to change equipment mailbox properties
 
@@ -200,7 +200,7 @@ Use the **MailTip** section to add a MailTip to alert users of potential issues 
 > [!NOTE]
 >  MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit. 
   
-#### Use the Shell to change equipment mailbox properties
+#### Use Exchange Online PowerShell to change equipment mailbox properties
 
 Use the following sets of cmdlets to view and change equipment mailbox properties: **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change general properties and email addresses for equipment mailboxes. Use the **Get-CalendarProcessing** and **Set-CalendarProcessing** cmdlets to view and change delegates and booking options. 
   
@@ -224,7 +224,7 @@ For information about these cmdlets, see the following topics:
     
 - [Set-CalendarProcessing](https://technet.microsoft.com/library/000bc90f-1d00-4384-ab59-d6cf6f674825.aspx)
     
-Here are some examples of using the Shell to change equipment mailbox properties.
+Here are some examples of using Exchange Online PowerShell to change equipment mailbox properties.
   
 This example changes the display name and primary SMTP address (called the default reply address) for the MotorPool 1 equipment mailbox. The previous reply address is kept as a proxy address.
   
@@ -250,7 +250,7 @@ To verify that you've successfully changed properties for an equipment mailbox, 
   
 - In the EAC, select the mailbox and then click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected mailbox. 
     
-- In the Shell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple mailboxes. In the example above where booking requests could be scheduled only during working hours, run the following command to verify the new value. 
+- In Exchange Online PowerShell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple mailboxes. In the example above where booking requests could be scheduled only during working hours, run the following command to verify the new value. 
     
   ```
   Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'EquipmentMailbox')} | Get-CalendarProcessing | fl Identity,ScheduleOnlyDuringWorkHours

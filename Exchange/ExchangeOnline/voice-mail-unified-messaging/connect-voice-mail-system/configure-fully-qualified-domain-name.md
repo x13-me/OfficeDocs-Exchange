@@ -18,7 +18,7 @@ You can configure a Unified Messaging (UM) IP gateway with either an IP address 
   
 If you create a UM IP gateway using an FQDN, you must create the appropriate HOST (A) records in your DNS forward lookup zone. If you create a UM IP gateway using an FQDN, and the DNS configuration for the UM IP gateway is changed, you must disable and then enable the UM IP gateway to make sure that its configuration information is updated correctly.
   
-If you want to use mutual Transport Layer Security (mutual TLS) between a UM IP gateway and a dial plan operating in either SIP secured or Secured mode, you must configure the UM IP gateway with an FQDN. You must also configure it to listen on port 5061 and verify that the VoIP gateway, IP PBX, or SBC has also been configured to listen for mutual TLS requests on port 5061. To configure a UM IP gateway, run the following command:  `Set-UMIPGateway -identity MyUMIPGateway -Port 5061`.
+If you want to use mutual Transport Layer Security (mutual TLS) between a UM IP gateway and a dial plan operating in either SIP secured or Secured mode, you must configure the UM IP gateway with an FQDN. You must also configure it to listen on port 5061 and verify that the VoIP gateway, IP PBX, or SBC has also been configured to listen for mutual TLS requests on port 5061. To configure a UM IP gateway, run the following command: `Set-UMIPGateway -Identity MyUMIPGateway -Port 5061`.
   
 For additional management tasks related to UM IP gateways, see [UM IP gateway procedures](um-ip-gateway-procedures.md).
   
@@ -35,7 +35,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -50,15 +50,15 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 > [!IMPORTANT]
 > When you use an FQDN instead of an IP address on the UM IP gateway, verify that the correct DNS records have been created. 
   
-### Use the Shell to configure an FQDN
+### Use Exchange Online PowerShell to configure an FQDN
 
-This example configures a UM IP gateway named  `MyUMIPGateway` with an FQDN named voipgateway.contoso.com. 
+This example configures a UM IP gateway named `MyUMIPGateway` with an FQDN named voipgateway.contoso.com. 
   
 ```
 Set-UMIPGateway -Identity MyUMIPGateway -Address voipgateway.contoso.com
 ```
 
-This example configures a UM IP gateway named  `MySBC` with an FQDN of sbc.contoso.com and listens for SIP requests on TCP port 5061. 
+This example configures a UM IP gateway named `MySBC` with an FQDN of sbc.contoso.com and listens for SIP requests on TCP port 5061. 
   
 ```
 Set-UMIPGateway -Identity MySBC -Address sbc.contoso.com -Port 5061

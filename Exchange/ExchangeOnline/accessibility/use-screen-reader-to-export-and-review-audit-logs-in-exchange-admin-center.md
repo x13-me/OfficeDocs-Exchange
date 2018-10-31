@@ -161,13 +161,13 @@ Before you can export and review audit logs, you or another admin must enable ma
     
 |**This mailbox audit log field**|**Gives this information**|
 |:-----|:-----|
-|Owner  <br/> |The owner of the mailbox accessed by a non-owner  <br/> |
-|LastAccessed  <br/> |The date and time of the most recent mailbox access  <br/> |
-|Operation  <br/> |The action performed by the non-owner  <br/> |
-|OperationResult  <br/> |Whether the action performed by the non-owner succeeded or failed  <br/> |
-|LogonType  <br/> |The type of non-owner access, like administrator, delegate, or external Microsoft datacenter administrator  <br/> |
-|ClientIPAddress  <br/> |The IP address of the computer used by the non-owner to access the mailbox  <br/> |
-|LogonUserDN  <br/> |The display name of the non-owner  <br/> |
-|Subject  <br/> |The subject line of the message affected by the non-owner  <br/> |
+|Owner|The owner of the mailbox accessed by a non-owner|
+|LastAccessed|The date and time of the most recent mailbox access|
+|Operation|The action performed by the non-owner|
+|OperationResult|Whether the action performed by the non-owner succeeded or failed|
+|LogonType|The type of non-owner access, like administrator, delegate, or external Microsoft datacenter administrator|
+|ClientIPAddress|The IP address of the computer used by the non-owner to access the mailbox|
+|LogonUserDN|The display name of the non-owner|
+|Subject|The subject line of the message affected by the non-owner|
    
 

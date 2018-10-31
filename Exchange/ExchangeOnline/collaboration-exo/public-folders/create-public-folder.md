@@ -56,7 +56,7 @@ When using the EAC to create a public folder, you'll only be able to set the nam
     
 6. Click **Save**.
     
-### Use the Shell to create a public folder
+### Use Exchange Online PowerShell to create a public folder
 <a name="BKMK_Shell"> </a>
 
 This example creates a public folder named Reports in the path Marketing\2013.
@@ -76,7 +76,7 @@ To verify that you've successfully created a public folder, do the following:
   
 - In the EAC, click **Refresh** to refresh the list of public folders. Your new public folder should be displayed in the list. 
     
-- In the Shell, run any of the following commands:
+- In Exchange Online PowerShell, run any of the following commands:
     
   ```
   Get-PublicFolder -Identity \Marketing\2013\Reports | Format-List
@@ -91,6 +91,6 @@ To verify that you've successfully created a public folder, do the following:
   ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 

@@ -18,9 +18,9 @@ When you enable a user for UM and link them to an E.164 dial plan, two EUM proxy
   
 You can change the primary E.164 number that was added when the user was enabled for UM or a secondary E.164 number that was added later, along with the EUM proxy addresses for the user. The primary E.164 number you added when the user was enabled for UM will be listed as the primary EUM proxy address. Any additional secondary E.164 numbers you added will be listed as secondary EUM proxy addresses. When E.164 numbers have been changed, callers can leave voice mail for the user at all the new E.164 numbers that have been set. All the voice messages will be delivered to the same user's mailbox.
   
-You can use the EAC or the Shell to change the primary and secondary E.164 numbers for a user. You can use the **Email Address** page on the user's mailbox to change a primary or secondary E.164 number. However, you can't use the **UM Mailbox** page in the EAC to change a primary or secondary E.164 number. 
+You can use the EAC or Exchange Online PowerShell to change the primary and secondary E.164 numbers for a user. You can use the **Email Address** page on the user's mailbox to change a primary or secondary E.164 number. However, you can't use the **UM Mailbox** page in the EAC to change a primary or secondary E.164 number. 
   
-You can view the primary and secondary E.164 numbers for a user by using the **Get-UMMailbox** cmdlet or the **Get-Mailbox** cmdlet in the Shell. 
+You can view the primary and secondary E.164 numbers for a user by using the **Get-UMMailbox** cmdlet or the **Get-Mailbox** cmdlet in Exchange Online PowerShell. 
   
 For additional management tasks related to users who are enabled for voice mail, see [Voice mail-enabled user procedures](voice-mail-enabled-user-procedures.md).
   
@@ -41,7 +41,7 @@ For additional management tasks related to users who are enabled for voice mail,
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -57,12 +57,12 @@ For additional management tasks related to users who are enabled for voice mail,
     
 5. Click **Save**.
     
-### Use the Shell to change the primary or a secondary E.164 number
+### Use Exchange Online PowerShell to change the primary or a secondary E.164 number
 
 This example changes an E.164 number for Tony Smith, a UM-enabled user.
   
 > [!NOTE]
-> Before you change an E.164 number using the Shell, you need to determine the position of the EUM proxy address that you want to change. To determine the position, use the **$mbx.EmailAddresses** command. The first EUM proxy address is the default (primary) E.164 number and it will be 0 in the list. 
+> Before you change an E.164 number using Exchange Online PowerShell, you need to determine the position of the EUM proxy address that you want to change. To determine the position, use the **$mbx.EmailAddresses** command. The first EUM proxy address is the default (primary) E.164 number and it will be 0 in the list. 
   
 ```
 $mbx=Get-Mailbox tony.smith

@@ -29,7 +29,7 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -39,9 +39,9 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
     
 2. On the **UM dial plan** page, under **UM Mailbox Policies**, on the toolbar, click **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
     
-### Use the Shell to delete a UM mailbox policy
+### Use Exchange Online PowerShell to delete a UM mailbox policy
 
-This example deletes a UM mailbox policy named  `MyUMMailboxPolicy`.
+This example deletes a UM mailbox policy named `MyUMMailboxPolicy`.
   
 ```
 Remove-UMMailboxPolicy -Identity MyUMMailboxPolicy

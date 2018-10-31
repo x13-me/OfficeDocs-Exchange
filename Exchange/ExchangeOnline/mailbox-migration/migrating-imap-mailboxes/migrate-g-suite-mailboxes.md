@@ -49,7 +49,7 @@ The following list contains the migration tasks given in the order in which you 
 In this task, you'll first verify to Office 365 that you own the domain you used for your G Suite accounts.
   
 > [!NOTE]
-> Another option is to use the  *your company name*  .onmicrosoft.com domain that is included with your Office 365 subscription instead of using your own custom domain. In that case, you can just add users as described in [Add users individually or in bulk to Office 365 - Admin Help](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec) and omit this task. Most people, however, prefer to use their own domain. 
+> Another option is to use the *your company name*.onmicrosoft.com domain that is included with your Office 365 subscription instead of using your own custom domain. In that case, you can just add users as described in [Add users individually or in bulk to Office 365 - Admin Help](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec) and omit this task. Most people, however, prefer to use their own domain. 
   
 Domain verification is a task you will go through as you setup Office 365. During the setup Office 365 setup wizard provides you with a TXT record you will add at your domain host provider. See [Add a domain to Office 365](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611) for the steps to complete in Office 365 admin center, and choose a domain registrar from the two following options to see how to complete add the TXT record that your DNS host provider. 
   
@@ -133,7 +133,7 @@ To migrate Gmail mailboxes successfully, Office 365 needs to connect and communi
     
 6. Click **Next**. The migration service uses the settings to test the connection to Gmail system. If the connection works, the **Enter general information** page opens. 
     
-7. On the ** Enter general information ** page, type a  *Migration endpoint name*  , for example, Test5-endpoint. Leave the other two boxes blank to use the default values.
+7. On the ** Enter general information ** page, type a *Migration endpoint name*, for example, Test5-endpoint. Leave the other two boxes blank to use the default values.
     
     ![Migration endpoint name.](../media/990cd22d-748c-477d-b3f8-66f30b256475.jpg)
   
@@ -183,7 +183,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Office 365 at 
     
 9. On the **IMAP migration configuration** page, accept the default values, and click **Next**.
     
-10. On the **Move configuration** page, type the  *name*  (no spaces or special characters) of the migration batch in the box—for example, Test5-migration. The default migration batch name that's displayed is the name of the migration file that you specified. The migration batch name is displayed in the list on the migration dashboard after you create the migration batch.
+10. On the **Move configuration** page, type the *name*  (no spaces or special characters) of the migration batch in the box—for example, Test5-migration. The default migration batch name that's displayed is the name of the migration file that you specified. The migration batch name is displayed in the list on the migration dashboard after you create the migration batch.
     
     You can also enter the names of the folders you want to exclude from migration. For example, Shared, Junk Email, and Deleted. Click **Add**![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to add them to the excluded list. You can also use the edit icon ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to change a folder name and the remove icon ![Remove icon](../media/adf01106-cc79-475c-8673-065371c1897b.gif) to delete the folder name. 
     

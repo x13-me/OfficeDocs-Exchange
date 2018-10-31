@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52
-description: "You can use the EAC or the Shell to assign permissions to users or groups (called delegates) that allow them to open or send messages from other mailboxes. Permissions can be assigned to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also assign permissions to distribution groups, dynamic distribution groups, and mail-enabled security groups to allow delegates to send messages on behalf of the group. You can assign delegates the following permissions to access mailboxes or send messages on behalf of mailboxes or groups:"
+description: "You can use the EAC or Exchange Online PowerShell to assign permissions to users or groups (called delegates) that allow them to open or send messages from other mailboxes. Permissions can be assigned to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also assign permissions to distribution groups, dynamic distribution groups, and mail-enabled security groups to allow delegates to send messages on behalf of the group. You can assign delegates the following permissions to access mailboxes or send messages on behalf of mailboxes or groups:"
 ---
 
 # Manage permissions for recipients
 
-You can use the EAC or the Shell to assign permissions to users or groups (called delegates) that allow them to open or send messages from other mailboxes. Permissions can be assigned to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also assign permissions to distribution groups, dynamic distribution groups, and mail-enabled security groups to allow delegates to send messages on behalf of the group. You can assign delegates the following permissions to access mailboxes or send messages on behalf of mailboxes or groups:
+You can use the EAC or Exchange Online PowerShell to assign permissions to users or groups (called delegates) that allow them to open or send messages from other mailboxes. Permissions can be assigned to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also assign permissions to distribution groups, dynamic distribution groups, and mail-enabled security groups to allow delegates to send messages on behalf of the group. You can assign delegates the following permissions to access mailboxes or send messages on behalf of mailboxes or groups:
   
 - **Full Access**: This permission allows a delegate to open a user's mailbox and access the contents of the mailbox. However, assigning the Full Access permission doesn't allow the delegate to send mail from the mailbox. You have to assign the delegate the Send As or the Send on Behalf permission to send mail. 
     
@@ -43,13 +43,13 @@ You can use the EAC or the Shell to assign permissions to users or groups (calle
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
 ### Assign permissions to a mailbox
 
-As previously stated, you can assign delegates permissions to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also use the Shell to assign delegates permissions to access a discovery mailbox.
+As previously stated, you can assign delegates permissions to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also use Exchange Online PowerShell to assign delegates permissions to access a discovery mailbox.
   
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions and delegation" entry in the "Recipient Provisioning Permissions" section in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
   
@@ -141,9 +141,9 @@ The following procedure shows how to assign full access permissions to a user ma
   
 5. Click **Save** to save your changes. 
     
-#### Use the Shell to assign permissions
+#### Use Exchange Online PowerShell to assign permissions
 
-The following sections show how to use the Shell to manage Full Access, Send As, and Send on Behalf permissions for mailboxes.
+The following sections show how to use Exchange Online PowerShell to manage Full Access, Send As, and Send on Behalf permissions for mailboxes.
   
 #### Manage the Full Access permission
 
@@ -258,7 +258,7 @@ To verify that you've successfully assigned permissions to a mailbox or a shared
     
 Or
   
-- In the Shell, run one of the following commands, depending on the permission you managed.
+- In Exchange Online PowerShell, run one of the following commands, depending on the permission you managed.
     
   - **Full Access**
     
@@ -289,7 +289,7 @@ Or
   - **Send on Behalf**
     
   ```
-  Get-Mailbox -Identity <mailbox> | FL GrantSendOnBehalfTo
+  Get-Mailbox -Identity <mailbox> | Format-List GrantSendOnBehalfTo
   ```
 
 ### Assign permissions to a group
@@ -312,9 +312,9 @@ You need to be assigned permissions before you can perform this procedure or pro
     
 5. Click **Save** to save your changes. 
     
-#### Use the Shell to assign permissions
+#### Use Exchange Online PowerShell to assign permissions
 
-The following sections show how to use the Shell to manage Send As and Send on Behalf permissions for groups.
+The following sections show how to use Exchange Online PowerShell to manage Send As and Send on Behalf permissions for groups.
   
 #### Manage the Send As permission
 
@@ -405,7 +405,7 @@ To verify that you've successfully assigned permissions to a group, do one of th
     
 Or
   
-- In the Shell, run one of the following commands depending on the permission you managed.
+- In Exchange Online PowerShell, run one of the following commands depending on the permission you managed.
     
   - **Send As**
     
@@ -424,13 +424,13 @@ Or
   - **Send on Behalf**
     
   ```
-  Get-DistributionGroup -Identity <group> | FL GrantSendOnBehalfTo
+  Get-DistributionGroup -Identity <group> | Format-List GrantSendOnBehalfTo
   ```
 
     Or
     
   ```
-  Get-DynamicDistributionGroup -Identity <group> | FL GrantSendOnBehalfTo
+  Get-DynamicDistributionGroup -Identity <group> | Format-List GrantSendOnBehalfTo
   ```
 
 

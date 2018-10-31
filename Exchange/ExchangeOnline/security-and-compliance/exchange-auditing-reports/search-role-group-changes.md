@@ -30,10 +30,10 @@ If you want to search the mailbox audit log, see [Mailbox Audit Logging](https:/
 - Administrator audit logging is enabled by default. To verify that it's enabled, run the following command: 
     
   ```
-  Get-AdminAuditLogConfig | FL AdminAuditLogEnabled
+  Get-AdminAuditLogConfig | Format-List AdminAuditLogEnabled
   ```
 
-    A value of  `True` indicates that administrator audit logging is enabled. A value of  `False` indicates that it's disabled. If you need to enable administrator audit logging for an on-premises Exchange organization, run the following command: 
+    A value of `True` indicates that administrator audit logging is enabled. A value of `False` indicates that it's disabled. If you need to enable administrator audit logging for an on-premises Exchange organization, run the following command: 
     
   ```
   Set-AdminAuditLogConfig -AdminAuditLogEnabled $true
@@ -47,7 +47,7 @@ If you want to search the mailbox audit log, see [Mailbox Audit Logging](https:/
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
@@ -84,12 +84,12 @@ If you want to create an XML file that contains changes made to your organizatio
     
 If any log entries are found using the criteria you specified, an XML file will be created and sent as an email attachment to the recipient you specified.
   
-### Use the Shell to search for audit log entries
+### Use Exchange Online PowerShell to search for audit log entries
 <a name="SearchAdminAuditLog"> </a>
 
-You can use the Shell to search for audit log entries that meet the criteria you specify. For a list of search criteria, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). This procedure uses the **Search-AdminAuditLog** cmdlet and displays search results in the Shell. You can use this cmdlet when you need to return a set of results that exceeds the limits defined on the **New-AdminAuditLogSearch** cmdlet or in the EAC Audit Reporting reports. 
+You can use Exchange Online PowerShell to search for audit log entries that meet the criteria you specify. For a list of search criteria, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). This procedure uses the **Search-AdminAuditLog** cmdlet and displays search results in Exchange Online PowerShell. You can use this cmdlet when you need to return a set of results that exceeds the limits defined on the **New-AdminAuditLogSearch** cmdlet or in the EAC Audit Reporting reports. 
   
-If you want to send audit log search results in an email attachment to a recipient, see **Use the Shell to search for audit log entries and send results to a recipient** later in this topic. 
+If you want to send audit log search results in an email attachment to a recipient, see **Use Exchange Online PowerShell to search for audit log entries and send results to a recipient** later in this topic. 
   
 To search the audit log for criteria you specify, use the following syntax.
   
@@ -98,7 +98,7 @@ Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 
 ```
 
 > [!NOTE]
-> The **Search-AdminAuditLog** cmdlet returns a maximum of 1,000 log entries by default. Use the  _ResultSize_ parameter to specify up to 250,000 log entries. Or, use the value  `Unlimited` to return all entries. 
+> The **Search-AdminAuditLog** cmdlet returns a maximum of 1,000 log entries by default. Use the  _ResultSize_ parameter to specify up to 250,000 log entries. Or, use the value `Unlimited` to return all entries. 
   
 This example performs a search for all audit log entries with the following criteria:
   
@@ -128,7 +128,7 @@ This example searches for changes made to a specific mailbox. This is useful if 
 Search-AdminAuditLog -StartDate 05/01/2012 -EndDate 10/03/2012 -ObjectID contoso.com/Users/DavidS
 ```
 
-If your searches return many log entries, we recommend that you use the procedure provided in **Use the Shell to search for audit log entries and send results to a recipient** later in this topic. The procedure in that section sends an XML file as an email attachment to the recipients you specify, enabling you to more easily extract the data you're interested in. 
+If your searches return many log entries, we recommend that you use the procedure provided in **Use Exchange Online PowerShell to search for audit log entries and send results to a recipient** later in this topic. The procedure in that section sends an XML file as an email attachment to the recipients you specify, enabling you to more easily extract the data you're interested in. 
   
 For detailed syntax and parameter information, see [Search-AdminAuditLog](https://technet.microsoft.com/library/87a0cd2d-dd59-4098-b740-75f0cc7bf8e7.aspx).
   
@@ -136,7 +136,7 @@ For detailed syntax and parameter information, see [Search-AdminAuditLog](https:
 
 The **Search-AdminAuditLog** cmdlet returns the fields described in the "Audit log contents section of [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). Of the fields returned by the cmdlet, two fields, **CmdletParameters** and **ModifiedProperties**, contain additional information that isn't viewable by default. 
   
-To view the contents of the **CmdletParameters** and **ModifiedProperties** fields, use the following steps. Or, you can use the procedure in **Use the Shell to search for audit log entries and send results to a recipient** later in this topic to create an XML file. 
+To view the contents of the **CmdletParameters** and **ModifiedProperties** fields, use the following steps. Or, you can use the procedure in **Use Exchange Online PowerShell to search for audit log entries and send results to a recipient** later in this topic to create an XML file. 
   
 This procedure uses the following concepts:
   
@@ -150,7 +150,7 @@ This procedure uses the following concepts:
   $Results = Search-AdminAuditLog <search criteria>
   ```
 
-2. Each audit log entry is stored as an array element in the variable  `$Results`. You can select an array element by specifying its array element index. Array element indexes start at zero (0) for the first array element. For example, to retrieve the 5th array element, which has an index of 4, use the following command.
+2. Each audit log entry is stored as an array element in the variable `$Results`. You can select an array element by specifying its array element index. Array element indexes start at zero (0) for the first array element. For example, to retrieve the 5th array element, which has an index of 4, use the following command.
     
   ```
   $Results[4]
@@ -165,10 +165,10 @@ This procedure uses the following concepts:
 
 4. To view the contents of the **CmdletParameters** or **ModifiedParameters** fields in another log entry, change the array element index. 
     
-### Use the Shell to search for audit log entries and send results to a recipient
+### Use Exchange Online PowerShell to search for audit log entries and send results to a recipient
 <a name="NewAdminAuditLogSearch"> </a>
 
-You can use the Shell to search for audit log entries that meet the criteria you specify, and then send those results to a recipient you specify as an XML file attachment. The results are sent to the recipient within 15 minutes. For a list of search criteria, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). 
+You can use Exchange Online PowerShell to search for audit log entries that meet the criteria you specify, and then send those results to a recipient you specify as an XML file attachment. The results are sent to the recipient within 15 minutes. For a list of search criteria, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). 
   
 > [!NOTE]
 > Outlook Web App doesn't allow you to open XML attachments by default. You can either configure Exchange to allow XML attachments to be viewed using Outlook Web App, or you can use another email client, such as Microsoft Outlook, to view the attachment. For information about how to configure Outlook Web App to allow you to view an XML attachment, see **View or configure Outlook Web App virtual directories**. 

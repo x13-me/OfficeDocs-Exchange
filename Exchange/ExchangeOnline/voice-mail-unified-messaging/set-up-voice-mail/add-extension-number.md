@@ -18,9 +18,9 @@ When you enable a user for UM and link them to a telephone extension dial plan, 
   
 The primary extension number you added when the user was enabled for UM will be listed as the primary EUM proxy address. If the primary extension number was removed, the first EUM proxy address you add that contains the user's extension number will become the primary EUM proxy address. Any additional extension numbers you add will be listed as secondary EUM proxy addresses. When additional secondary extension numbers are added, callers can leave voice mail for the user at all extension numbers that have been set. All the voice messages will be delivered to the same user's mailbox.
   
-You can use the EAC or the Shell to add a primary or a secondary extension number for a user. You can use the **Email Address** page on the user's mailbox in the EAC to add a primary or secondary extension number. You can't use the **UM Mailbox** page in the EAC to add a primary extension number, but you can use that page to add secondary extension numbers. 
+You can use the EAC or Exchange Online PowerShell to add a primary or a secondary extension number for a user. You can use the **Email Address** page on the user's mailbox in the EAC to add a primary or secondary extension number. You can't use the **UM Mailbox** page in the EAC to add a primary extension number, but you can use that page to add secondary extension numbers. 
   
-You can view the primary and secondary extension numbers for a user by using the **Get-UMMailbox** cmdlet or the **Get-Mailbox** cmdlet in the Shell. 
+You can view the primary and secondary extension numbers for a user by using the **Get-UMMailbox** cmdlet or the **Get-Mailbox** cmdlet in Exchange Online PowerShell. 
   
 For additional management tasks related to users who are enabled for voice mail, see [Voice mail-enabled user procedures](voice-mail-enabled-user-procedures.md).
   
@@ -41,7 +41,7 @@ For additional management tasks related to users who are enabled for voice mail,
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -75,12 +75,12 @@ For additional management tasks related to users who are enabled for voice mail,
     
 6. Click **Save**.
     
-### Use the Shell to add an extension number
+### Use Exchange Online PowerShell to add an extension number
 
 This example adds an extension number 22222 for Tony Smith, a UM-enabled user.
   
 > [!NOTE]
-> Before you add an extension number using the Shell, you need to determine the position of the EUM proxy address that you want to add. To determine the position, use the **$mbx.EmailAddresses** command. The first proxy address in the list will be 0. 
+> Before you add an extension number using Exchange Online PowerShell, you need to determine the position of the EUM proxy address that you want to add. To determine the position, use the **$mbx.EmailAddresses** command. The first proxy address in the list will be 0. 
   
 ```
 $mbx=Get-Mailbox tony.smith

@@ -28,16 +28,16 @@ For additional management tasks related to messaging records management (MRM), s
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging Policy and Compliance Permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
     
-- You can't use the Exchange admin center (EAC) to place a mailbox on retention hold. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to place a mailbox on retention hold. You must use Exchange Online PowerShell.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
-### Use the Shell to place a mailbox on retention hold
+### Use Exchange Online PowerShell to place a mailbox on retention hold
 
 This example places Michael Allen's mailbox on retention hold.
   
@@ -47,7 +47,7 @@ Set-Mailbox "Michael Allen" -RetentionHoldEnabled $true
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
   
-### Use the Shell to remove retention hold for a mailbox
+### Use Exchange Online PowerShell to remove retention hold for a mailbox
 
 This example removes the retention hold from Michael Allen's mailbox.
   
@@ -70,7 +70,7 @@ Get-Mailbox "Michael Allen" | Select RetentionHoldEnabled
 This command retrieves all mailboxes in the Exchange organization, filters the mailboxes that are placed on retention hold, and lists them along with the retention policy applied to each.
   
 > [!IMPORTANT]
-> Because  _RetentionHoldEnabled_ isn't a filterable property in Exchange Server, you can't use the  _Filter_ parameter with the **Get-Mailbox** cmdlet to filter mailboxes that are placed on retention hold on the server-side. This command retrieves a list of all mailboxes and filters on the client running the Shell session. In large environments with thousands of mailboxes, this command may take a long time to complete. 
+> Because  _RetentionHoldEnabled_ isn't a filterable property in Exchange Server, you can't use the  _Filter_ parameter with the **Get-Mailbox** cmdlet to filter mailboxes that are placed on retention hold on the server-side. This command retrieves a list of all mailboxes and filters on the client running Exchange Online PowerShell session. In large environments with thousands of mailboxes, this command may take a long time to complete. 
   
 ```
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.RetentionHoldEnabled -eq $true} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto

@@ -146,7 +146,7 @@ Outlook for iOS and Android should be enabled by default, but in some existing E
   
  **Option 1: Block all email apps except Outlook for iOS and Android**
   
-You can define a default block rule and then configure an allow rule for Outlook for iOS and Android, and for Windows devices, using the following Exchange Management Shell commands. This configuration will prevent any Exchange ActiveSync native app from connecting, and will only allow Outlook for iOS and Android.
+You can define a default block rule and then configure an allow rule for Outlook for iOS and Android, and for Windows devices, using the following Exchange Online PowerShell commands. This configuration will prevent any Exchange ActiveSync native app from connecting, and will only allow Outlook for iOS and Android.
   
 1. Create the default block rule:
     
@@ -267,9 +267,9 @@ The values for each characteristic are displayed in the following table:
   
 |**Characteristic**|**String for iOS**|**String for Android**|
 |:-----|:-----|:-----|
-|DeviceModel  <br/> |Outlook for iOS and Android  <br/> |Outlook for iOS and Android  <br/> |
-|DeviceType  <br/> |Outlook  <br/> |Outlook  <br/> |
-|UserAgent  <br/> |Outlook-iOS/2.0  <br/> |Outlook-Android/2.0  <br/> |
+|DeviceModel|Outlook for iOS and Android|Outlook for iOS and Android|
+|DeviceType|Outlook|Outlook|
+|UserAgent|Outlook-iOS/2.0|Outlook-Android/2.0|
    
  **Option A: Block Outlook for iOS and Android on both the iOS and Android platforms**
   

@@ -57,7 +57,7 @@ Set up an organization relationship to share calendar information with an extern
     
 7. Click **save** to create the organization relationship. 
     
-### Use the Exchange Management Shell to create an organization relationship
+### Use Exchange Online PowerShell to create an organization relationship
 <a name="BKMK_Shell"> </a>
 
 This example creates an organization relationship with Contoso, Ltd with the following conditions:
@@ -105,13 +105,13 @@ For detailed syntax and parameter information, see [New-OrganizationRelationship
 
 The successful completion of the **New organization relationship** wizard indicates that the organization relationship was created. 
   
-You can also run the following Exchange Management Shell command to verify the organization relationship information:
+You can also run the following command to verify the organization relationship information:
   
 ```
 Get-OrganizationRelationship | format-list
 ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 

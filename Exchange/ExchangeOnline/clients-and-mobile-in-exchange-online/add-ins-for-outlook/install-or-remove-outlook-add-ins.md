@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 112f3ef7-9943-4a1e-8a42-e08e8e9f67f4
-description: "You can install or remove add-ins for Outlook for your organization by using the EAC or the Shell."
+description: "You can install or remove add-ins for Outlook for your organization by using the EAC or Exchange Online PowerShell."
 ---
 
 # Install or remove add-ins for Outlook for your organization
 
-You can install or remove add-ins for Outlook for your organization by using the EAC or the Shell. 
+You can install or remove add-ins for Outlook for your organization by using the EAC or Exchange Online PowerShell. 
   
 > [!NOTE]
-> By default, after you install an add-in for your organization, the add-in is available for all users in your organization. After installation, you can use the EAC or the Shell to make the add-in optional or required for your users, and to specify whether you want the add-in to be enabled or disabled. For information about how to change the default settings for an add-in, see [Manage user access to add-ins for Outlook](manage-user-access-to-add-ins.md). To limit availability of add-ins to specific users in your organization, you must use the Shell. For more information, see [Manage user access to add-ins for Outlook](manage-user-access-to-add-ins.md). 
+> By default, after you install an add-in for your organization, the add-in is available for all users in your organization. After installation, you can use the EAC or Exchange Online PowerShell to make the add-in optional or required for your users, and to specify whether you want the add-in to be enabled or disabled. For information about how to change the default settings for an add-in, see [Manage user access to add-ins for Outlook](manage-user-access-to-add-ins.md). To limit availability of add-ins to specific users in your organization, you must use Exchange Online PowerShell. For more information, see [Manage user access to add-ins for Outlook](manage-user-access-to-add-ins.md). 
   
 For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook.md).
   
@@ -34,7 +34,7 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook.m
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -58,7 +58,7 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook.m
     
 3. Click **Save**.
     
-#### Use the Shell to add an add-in
+#### Use Exchange Online PowerShell to add an add-in
 <a name="BKMK_Shell"> </a>
 
 This example shows you how to add an add-in from a URL.
@@ -74,7 +74,7 @@ New-App -OrganizationApp -FileData <File location for add-in manifest file>
 ```
 
 > [!TIP]
-> When you use the Shell to install an add-in for your organization, you can install the add-in and configure settings for it at the same time. 
+> When you use Exchange Online PowerShell to install an add-in for your organization, you can install the add-in and configure settings for it at the same time. 
   
 For syntax and parameters, see [New-App](https://technet.microsoft.com/library/f05951d8-1e49-42b6-a341-66eb67b2870f.aspx).
   
@@ -86,15 +86,15 @@ For syntax and parameters, see [New-App](https://technet.microsoft.com/library/f
     
 2. In the list view, select the app that you want to remove, and then click **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif). 
     
-#### Use the Shell to remove an add-in
+#### Use Exchange Online PowerShell to remove an add-in
 
-You can use the Shell to remove an add-in from your organization.
+You can use Exchange Online PowerShell to remove an add-in from your organization.
   
 > [!NOTE]
 > Run the following command to look up the display names and application IDs for all the add-ins for Outlook installed for your organization. 
   
 ```
-Get-App -OrganizationApp |FL DisplayName,AppID
+Get-App -OrganizationApp |Format-List DisplayName,AppID
 ```
 
 Run the following command to remove the custom add-in Finance Test Add-in from the organization.
@@ -111,6 +111,6 @@ To view the add-ins that are installed in your organization, do one the followin
   
 - In the EAC, navigate to **Organization** \> **Add-ins**, and then review the list of installed add-ins.
     
-- From the Shell, run  `Get-App`, and then review the list of installed add-ins.
+- From Exchange Online PowerShell, run `Get-App`, and then review the list of installed add-ins.
     
 

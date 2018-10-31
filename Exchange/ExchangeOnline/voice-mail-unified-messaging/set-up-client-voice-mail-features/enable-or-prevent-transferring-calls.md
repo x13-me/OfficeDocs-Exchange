@@ -29,7 +29,7 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -43,15 +43,15 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
     
 4. Click **Save**.
     
-### Use the Shell to enable or prevent Outlook Voice Access users from transferring calls
+### Use Exchange Online PowerShell to enable or prevent Outlook Voice Access users from transferring calls
 
-This example enables Outlook Voice Access users to transfer calls to users in the same dial plan on a UM dial plan named  `MyUMDialPlan`.
+This example enables Outlook Voice Access users to transfer calls to users in the same dial plan on a UM dial plan named `MyUMDialPlan`.
   
 ```
 Set-UMDialPlan -identity MyUMDialPlan -AllowDialPlanSubscribers $true
 ```
 
-This example prevents Outlook Voice Access users from transferring calls to users in the same dial plan on a UM dial plan named  `MyUMDialPlan`.
+This example prevents Outlook Voice Access users from transferring calls to users in the same dial plan on a UM dial plan named `MyUMDialPlan`.
   
 ```
 Set-UMDialPlan -identity MyUMDialPlan -AllowDialPlanSubscribers $false

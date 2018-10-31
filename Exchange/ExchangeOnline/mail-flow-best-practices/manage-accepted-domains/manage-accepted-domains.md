@@ -51,7 +51,7 @@ There are two types of accepted domains, Authoritative and Internal Relay, which
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
@@ -63,7 +63,7 @@ There are two types of accepted domains, Authoritative and Internal Relay, which
     
 2. Click the **Name**, **Accepted Domain**, or **Domain Type** column heading to sort alphabetically in ascending or descending order. By default, accepted domains are sorted alphabetically by name in ascending order. 
     
-#### Use the Exchange Management Shell to view accepted domains
+#### Use Exchange Online PowerShell to view accepted domains
 
 To view summary information about all accepted domains, run the following command.
   
@@ -101,7 +101,7 @@ After you add a domain to your Exchange Online organization in the Office 365 ad
     
 4. When you are finished, click **Save**.
     
-#### Use the Exchange Management Shell to change the domain type
+#### Use Exchange Online PowerShell to change the domain type
 
 To configure the domain type, use the following syntax.
   
@@ -121,6 +121,6 @@ To verify that you have successfully configured the domain type, do either of th
   
 - In the EAC at **Mail flow** \> **Accepted domains**, click **Refresh**![Refresh Icon](../../media/ITPro_EAC_RefreshIcon.gif). In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly.
     
-- In the Exchange Management Shell, run the command **Get-AcceptedDomain**. In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly. 
+- In Exchange Online PowerShell, run the command **Get-AcceptedDomain**. In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly. 
     
 

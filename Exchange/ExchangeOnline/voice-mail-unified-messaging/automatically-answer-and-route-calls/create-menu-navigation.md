@@ -33,7 +33,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -77,18 +77,18 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
     
 6. On the **UM Auto Attendant** page, click **Save** to save your changes. 
     
-### Use the Shell to configure UM auto attendant key mappings
+### Use Exchange Online PowerShell to configure UM auto attendant key mappings
 
 This example enables business hours key mappings so that:
   
-- When callers press 1, they will be forwarded to another UM auto attendant named  `SalesAutoAttendant`. 
+- When callers press 1, they will be forwarded to another UM auto attendant named `SalesAutoAttendant`. 
     
 - When they press 2, they will be forwarded to extension number 12345 for Support.
     
 - When they press 3, they will be sent to another auto attendant that will play an audio file. 
     
 ```
-Set-UMAutoAttendant -id MyAutoAttendant -BusinessHoursKeyMappingEnabled $true -BusinessHoursKeyMapping "1,Sales,,SalesAutoAttendant","2,Support,12345","3,Directions,,,directions.wav"
+Set-UMAutoAttendant -Identity MyAutoAttendant -BusinessHoursKeyMappingEnabled $true -BusinessHoursKeyMapping "1,Sales,,SalesAutoAttendant","2,Support,12345","3,Directions,,,directions.wav"
 ```
 
 This example sets key mappings defined in a comma-separated value (.csv) file. You must first create the .csv file with the following headings and the correct entry: \<key\>,\<description\>,[\<extension\>],[\<autoattendant name\>],[\<promptfilenamepath\>],[\<asrphrase1;asrphrase2\>],[\<leavevoicemailfor\>],[\<transfertomailbox\>]. The values in brackets are optional. After creating the .csv file, import the .csv file using the **Import-csv** cmdlet. 
@@ -101,8 +101,8 @@ Set-UMAutoAttendant MyAutoAttendant -BusinessHoursKeyMapping $o
 This example exports key mappings from an existing UM auto attendant into a .csv file, and then imports the same key mappings into another UM auto attendant. You could also export the key mappings to a .csv file, edit or modify the key mappings in the .csv file, and then import those key mappings into another UM auto attendant.
   
 ```
-$aa = Get-UMAutoAttendant -id MyAutoAttendant
-$aa1 = Get-UMAutoAttendant -id MyAutoAttendant2
+$aa = Get-UMAutoAttendant -Identity MyAutoAttendant
+$aa1 = Get-UMAutoAttendant -Identity MyAutoAttendant2
 $aa.BusinessHoursKeyMapping | Export-csv -path "C:\UMFiles\AutoAttendants\keymappings.csv"
 $aa1.BusinessHoursKeyMapping = (Import-csv -path "C:\UMFiles\AutoAttendants\keymappings.csv")
 ```

@@ -31,7 +31,7 @@ For additional management tasks related to allowing users to forward calls, see 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -45,15 +45,15 @@ For additional management tasks related to allowing users to forward calls, see 
     
 4. Click **Save**.
     
-### Use the Shell to enable or disable call answering rules on a UM mailbox policy
+### Use Exchange Online PowerShell to enable or disable call answering rules on a UM mailbox policy
 
-This example allows users who are associated with the UM mailbox policy  `MyUMMailboxPolicy` to create call answering rules. 
+This example allows users who are associated with the UM mailbox policy `MyUMMailboxPolicy` to create call answering rules. 
   
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowCallAnsweringRules $true
 ```
 
-This example prevents users who are associated with the UM mailbox policy  `MyUMMailboxPolicy` from creating call answering rules. 
+This example prevents users who are associated with the UM mailbox policy `MyUMMailboxPolicy` from creating call answering rules. 
   
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowCallAnsweringRules $false

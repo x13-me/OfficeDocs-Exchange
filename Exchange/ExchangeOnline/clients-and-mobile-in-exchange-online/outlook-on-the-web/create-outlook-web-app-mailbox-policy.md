@@ -25,7 +25,7 @@ You can create an Outlook Web App mailbox policy to apply a common set of policy
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -40,21 +40,21 @@ You can create an Outlook Web App mailbox policy to apply a common set of policy
 4. Use the check boxes to enable or disable features. By default, the most common features are displayed. To see all features that can be enabled or disabled, click **More options**.
     
     > [!NOTE]
-    > Features settings for Outlook Web App mailbox policies override Outlook Web App virtual directory settings. You can change segmentation settings for individual users by using the **Set-CASMailbox** cmdlet in the Shell. 
+    > Features settings for Outlook Web App mailbox policies override Outlook Web App virtual directory settings. You can change segmentation settings for individual users by using the **Set-CASMailbox** cmdlet in Exchange Online PowerShell. 
   
 5. Click **Save** to save the policy. 
     
-### Use the Shell to create an Outlook Web App mailbox policy
+### Use Exchange Online PowerShell to create an Outlook Web App mailbox policy
 
-This example creates an Outlook Web App mailbox policy named  `Policy1`.
+This example creates an Outlook Web App mailbox policy named `Policy1`.
   
-- In the Shell, run the following command.
+- In Exchange Online PowerShell, run the following command.
     
   ```
   New-OwaMailboxPolicy -Name Policy1
   ```
 
-For more information about syntax and parameters, see [New-OwaMailboxPolicy](https://technet.microsoft.com/library/b2e46c22-7e99-4d04-b5ef-81ef64bf7445.aspx). For information about using the Shell to configure an Outlook Web App mailbox policy, see [Set-OwaMailboxPolicy](https://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx).
+For more information about syntax and parameters, see [New-OwaMailboxPolicy](https://technet.microsoft.com/library/b2e46c22-7e99-4d04-b5ef-81ef64bf7445.aspx). For information about using Exchange Online PowerShell to configure an Outlook Web App mailbox policy, see [Set-OwaMailboxPolicy](https://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx).
   
 ## How do you know this worked?
 

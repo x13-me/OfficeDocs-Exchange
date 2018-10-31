@@ -31,7 +31,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -43,9 +43,9 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
     
 3. Click **Save**.
     
-### Use the Shell to disable outgoing calls for a UM IP gateway
+### Use Exchange Online PowerShell to disable outgoing calls for a UM IP gateway
 
-This example disables outgoing calls on a UM IP gateway named  `MyUMIPGateway`.
+This example disables outgoing calls on a UM IP gateway named `MyUMIPGateway`.
   
 ```
 Set-UMIPGateway -Identity MyUMIPGateway -OutcallsAllowed $false

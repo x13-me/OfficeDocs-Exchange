@@ -51,10 +51,10 @@ If your source system is Exchange 2003 or Exchange 2007, consider the following 
   
 |**Number of mailboxes**|**How quickly do you want to migrate?**|**Use**|
 |:-----|:-----|:-----|
-|Fewer than 150  <br/> |Over a weekend or a few days.  <br/> |[Cutover](cutover-migration-to-office-365.md) <br/> For an overview, see [What you need to know about a cutover email migration to Office 365](what-to-know-about-a-cutover-migration.md).  <br/> |
-|Fewer than 150  <br/> |Slowly, by migrating a few users at a time.  <br/> |[Staged](perform-a-staged-migration/perform-a-staged-migration.md) <br/> For an overview, see [What you need to know about a staged email migration to Office 365](what-to-know-about-a-staged-migration.md).  <br/> |
-|Over 150  <br/> |Over a weekend or a few days.  <br/> |[Staged](perform-a-staged-migration/perform-a-staged-migration.md) <br/> If you have more than 150 mailboxes , the best method is to use staged migration where you can migrate a limited number of users at a time. This is because cutover migration performance suffers when you try to migrate more than 150 mailboxes.  <br/> |
-|Over 150  <br/> |Slowly, by migrating a few users at a time.  <br/> |[Staged](perform-a-staged-migration/perform-a-staged-migration.md) <br/> |
+|Fewer than 150|Over a weekend or a few days.|[Cutover](cutover-migration-to-office-365.md) <br/> For an overview, see [What you need to know about a cutover email migration to Office 365](what-to-know-about-a-cutover-migration.md).|
+|Fewer than 150|Slowly, by migrating a few users at a time.|[Staged](perform-a-staged-migration/perform-a-staged-migration.md) <br/> For an overview, see [What you need to know about a staged email migration to Office 365](what-to-know-about-a-staged-migration.md).|
+|Over 150|Over a weekend or a few days.|[Staged](perform-a-staged-migration/perform-a-staged-migration.md) <br/> If you have more than 150 mailboxes , the best method is to use staged migration where you can migrate a limited number of users at a time. This is because cutover migration performance suffers when you try to migrate more than 150 mailboxes.|
+|Over 150|Slowly, by migrating a few users at a time.|[Staged](perform-a-staged-migration/perform-a-staged-migration.md)|
    
 If the mailboxes you're migrating contain a large amount of data, you can also use [Office 365 Import Service](https://go.microsoft.com/fwlink/p/?LinkId=624136) to import PST files to Office 365. You can use the Office 365 Import Service to either ship the files or to import them across the network. 
   
@@ -72,10 +72,10 @@ If your source system is Exchange 2010, Exchange 2013 , or Exchange Server 2016,
   
 |**Number of mailboxes**|**How quickly do you want to migrate?**|**Use**|
 |:-----|:-----|:-----|
-|Fewer than 150  <br/> |Over a weekend or a few days.  <br/> |[Cutover](cutover-migration-to-office-365.md) or [Express migration](use-minimal-hybrid-to-quickly-migrate.md).  <br/> |
-|Fewer than 150  <br/> |Slowly, by migrating a few users at a time.  <br/> |[Exchange Hybrid](https://go.microsoft.com/fwlink/p/?LinkId=517633) <br/> |
-|Over 150  <br/> |Over a weekend or a few days.  <br/> |[Exchange Hybrid](https://go.microsoft.com/fwlink/p/?LinkId=517633) <br/> If you have more than 150 mailboxes, the best method is to use an Exchange hybrid migration where you can migrate a limited number of users at a time. This is because cutover migration performance suffers when you try to migrate more than 150 mailboxes.  <br/> |
-|Over 150  <br/> |Slowly, by migrating a few users at a time.  <br/> |[Exchange Hybrid](https://go.microsoft.com/fwlink/p/?LinkId=517633) <br/> |
+|Fewer than 150|Over a weekend or a few days.|[Cutover](cutover-migration-to-office-365.md) or [Express migration](use-minimal-hybrid-to-quickly-migrate.md).|
+|Fewer than 150|Slowly, by migrating a few users at a time.|[Exchange Hybrid](https://go.microsoft.com/fwlink/p/?LinkId=517633)|
+|Over 150|Over a weekend or a few days.|[Exchange Hybrid](https://go.microsoft.com/fwlink/p/?LinkId=517633) <br/> If you have more than 150 mailboxes, the best method is to use an Exchange hybrid migration where you can migrate a limited number of users at a time. This is because cutover migration performance suffers when you try to migrate more than 150 mailboxes.|
+|Over 150|Slowly, by migrating a few users at a time.|[Exchange Hybrid](https://go.microsoft.com/fwlink/p/?LinkId=517633)|
    
 If the mailboxes you're migrating contain a large amount of data, you can also use [Office 365 Import Service](https://go.microsoft.com/fwlink/p/?LinkId=624136) to import PST files to Office 365. You can use the Office 365 Import Service to either ship the files or to import them across the network. 
   

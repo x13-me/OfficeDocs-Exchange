@@ -29,7 +29,7 @@ Outlook Voice Access contains two interfaces: a telephone user interface (TUI) a
 - TUI access to their personal contacts
     
 > [!NOTE]
-> You can use only the Shell to modify the Outlook Voice Access TUI settings for UM-enabled users. 
+> You can use only Exchange Online PowerShell to modify the Outlook Voice Access TUI settings for UM-enabled users. 
   
 For additional management tasks related to UM mailbox policies, see [UM mailbox policy procedures](../../voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures.md).
   
@@ -46,11 +46,11 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## Use the Shell to modify TUI settings on a UM mailbox policy
+## Use Exchange Online PowerShell to modify TUI settings on a UM mailbox policy
 
-This example sets TUI-related settings on a UM mailbox policy named  `MyUMMailboxPolicy`.
+This example sets TUI-related settings on a UM mailbox policy named `MyUMMailboxPolicy`.
   
 ```
 Set-UMMailbox -identity MyUMMailboxPolicy -AllowSubscriberAccess $true -AllowTUIAccessToCalendar $false -AllowTUIAccessToDirectory $false -AllowTUIAccessToEmail -$true -AllowTUIAccessToPersonalContacts $true

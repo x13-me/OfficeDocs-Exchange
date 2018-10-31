@@ -60,7 +60,7 @@ Exchange Online uses proprietary anti-spam technology to help achieve high accur
 
 To complete the steps for spam filter customizations covered in this topic, move the focus to your spam filter settings in the EAC:
   
-1. In the EAC, to move the focus to the first link in the navigation pane— **Dashboard** —press Ctrl+F6  *twice*  . You hear "Dashboard, Primary navigation link." 
+1. In the EAC, to move the focus to the first link in the navigation pane— **Dashboard** —press Ctrl+F6 *twice*. You hear "Dashboard, Primary navigation link." 
     
 2. In the navigation pane, to move the focus to **protection**, press the Tab key until you hear "Protection, Primary navigation link." Press Enter. 
     
@@ -176,7 +176,7 @@ You can also use the proprietary anti-spam technology in Exchange Online to filt
 
 To complete the steps for outbound spam customizations covered in this topic, move the focus to your outbound spam settings in the EAC:
   
-- In the EAC, to move the focus to the first link in the navigation pane— **Dashboard** —press Ctrl+F6  * twice *  . You hear "Dashboard, Primary navigation link." 
+- In the EAC, to move the focus to the first link in the navigation pane— **Dashboard** —press Ctrl+F6 *twice*. You hear "Dashboard, Primary navigation link." 
     
 - In the navigation pane, to move the focus to the **protection** link, press the Tab key until you hear "Protection, Primary navigation link." Press Enter. 
     

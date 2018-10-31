@@ -29,7 +29,7 @@ Here are the required attributes for each user:
   
 - **EmailAddress** specifies the user ID for the user's Office 365 mailbox. 
     
-- **UserName** specifies the user logon name for the user's mailbox on the IMAP server. You can use either the username or domain\username format. For example,  `hollyh` or  `contoso\hollyh`.
+- **UserName** specifies the user logon name for the user's mailbox on the IMAP server. You can use either the username or domain\username format. For example, `hollyh` or `contoso\hollyh`.
     
 - **Password** is the password for the user's account in the IMAP messaging system. 
     

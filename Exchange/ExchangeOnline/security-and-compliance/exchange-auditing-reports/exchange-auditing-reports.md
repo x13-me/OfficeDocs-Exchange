@@ -9,14 +9,14 @@ ms.topic: overview
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 2b3e1529-1677-4564-be0b-ce22757ddc0d
-description: "Use audit logging to troubleshoot configuration issues by tracking specific changes made by administrators and to help you meet regulatory, compliance, and litigation requirements. Microsoft Exchange provides two types of audit logging:"
+description: "Use audit logging to troubleshoot configuration issues by tracking specific changes made by administrators and to help you meet regulatory, compliance, and litigation requirements."
 ---
 
 # Exchange auditing reports
 
-Use audit logging to troubleshoot configuration issues by tracking specific changes made by administrators and to help you meet regulatory, compliance, and litigation requirements. Microsoft Exchange provides two types of audit logging: 
+Use audit logging to troubleshoot configuration issues by tracking specific changes made by administrators and to help you meet regulatory, compliance, and litigation requirements. Exchange Online provides two types of audit logging: 
   
-- Administrator audit logging records any action, based on an Exchange Management Shell cmdlet, performed by an administrator. This can help you troubleshoot configuration issues or identify the cause of security-related or compliance-related problems. In Exchange Online, actions performed by Microsoft administrators and delegated administrators, are also recorded. 
+- Administrator audit logging records any action, based on an Exchange Online PowerShell cmdlet, performed by an administrator. This can help you troubleshoot configuration issues or identify the cause of security-related or compliance-related problems. In Exchange Online, actions performed by Microsoft administrators and delegated administrators, are also recorded. 
     
 - Mailbox audit logging records when a mailbox is accessed by an administrator, a delegated user, or the person who owns the mailbox. This can help you determine who has accessed a mailbox and what they've done. 
     
@@ -75,7 +75,7 @@ Before you can run auditing reports and export audit logs, you have to configure
 
 You have to enable mailbox audit logging for each mailbox that you want to run a non-owner mailbox access report for. If mailbox audit logging isn't enabled for a mailbox, you won't get any results when you run a report for it or export the mailbox audit log. 
   
-To enable mailbox audit logging for a single mailbox, run the following command in the Shell.
+To enable mailbox audit logging for a single mailbox, run the following command in Exchange Online PowerShell.
   
 ```
 Set-Mailbox <Identity> -AuditEnabled $true
@@ -99,7 +99,7 @@ For more information about configuring which actions are logged, see:
 
 By default, administrators can access and run any of the reports on the Auditing page in the EAC. However, other users, such as a records manager or legal staff, have to be assigned the necessary permissions. 
   
-The easiest way to give users access is to add them to the Records Management role group. You can also use the Shell to give a user access to the **Auditing** page in the EAC by assigning the Audit Logs role to the user. 
+The easiest way to give users access is to add them to the Records Management role group. You can also use Exchange Online PowerShell to give a user access to the **Auditing** page in the EAC by assigning the Audit Logs role to the user. 
   
 #### Add a user to the Records Management role group
 

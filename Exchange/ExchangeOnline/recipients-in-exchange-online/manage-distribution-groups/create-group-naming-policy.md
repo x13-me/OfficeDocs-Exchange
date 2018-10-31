@@ -69,7 +69,7 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## Use the EAC to create a group naming policy
 
@@ -114,7 +114,7 @@ To verify that you've successfully created a group naming policy, do the followi
 - In Windows PowerShell, run the following command to display the group naming policy.
     
   ```
-  Get-OrganizationConfig | FL DistributionGroupNamingPolicy
+  Get-OrganizationConfig | Format-List DistributionGroupNamingPolicy
   ```
 
 

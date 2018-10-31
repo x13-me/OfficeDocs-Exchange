@@ -29,18 +29,18 @@ For more information, see [Discovery mailboxes](in-place-ediscovery.md#discmbxs)
     
 - Discovery mailboxes have a mailbox storage quota of 50 gigabytes (GB). This storage quota can't be increased.
     
-- You can't use the EAC to create a discovery mailbox or assign permissions to access it. You have to use the Shell. In Office 365, use Remote PowerShell connected to your Exchange Online organization.
+- You can't use the EAC to create a discovery mailbox or assign permissions to access it. You have to use Exchange Online PowerShell. In Office 365, use Remote PowerShell connected to your Exchange Online organization.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
 ### (Optional) Step 1: Connect to Exchange Online using remote PowerShell
 
-You only need to perform this step if you have an Exchange Online or Office 365 organization. If you have an Exchange Server organization, go to the next step and run the command in the Exchange Management Shell.
+You only need to perform this step if you have an Exchange Online or Office 365 organization. If you have an Exchange Server organization, go to the next step and run the command in Exchange Online PowerShell.
   
 1. On your local computer, open Windows PowerShell and run the following command.
     

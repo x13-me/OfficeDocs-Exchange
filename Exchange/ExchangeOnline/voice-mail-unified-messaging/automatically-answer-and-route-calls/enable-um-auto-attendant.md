@@ -31,7 +31,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -43,9 +43,9 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
     
 3. On the **Warning** page, click **Yes**. 
     
-### Use the Shell to enable a UM auto attendant
+### Use Exchange Online PowerShell to enable a UM auto attendant
 
-This example enables the UM auto attendant named  `MyUMAutoAttendant` to answer incoming calls. 
+This example enables the UM auto attendant named `MyUMAutoAttendant` to answer incoming calls. 
   
 ```
 Enable-UMAutoAttendant -Identity MyUMAutoAttendant

@@ -109,7 +109,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
     
 4. On the **Add a domain to Office 365** page, choose **Specify a domain name and confirm ownership**.
     
-5. Type the  *domain name*  (for example, Contoso.com) you use for your on-premises Exchange organization, and then choose **Next**.
+5. Type the *domain name*  (for example, Contoso.com) you use for your on-premises Exchange organization, and then choose **Next**.
     
 6. On the **confirm that you own \<your domain name\>** page, select your Domain Name System (DNS) hosting provider from the list or select **General Instructions**, if applicable.
     
@@ -150,9 +150,9 @@ The CSV file for a staged migration supports the following three attributes. Eac
   
 |**Attribute**|**Description**|**Required?**|
 |:-----|:-----|:-----|
-|EmailAddress  <br/> |Specifies the primary SMTP email address, for example, pilarp@contoso.com, for on-premises mailboxes.  <br/> Use the primary SMTP address for on-premises mailboxes and not user IDs from the Office 365. For example, if the on-premises domain is named contoso.com but the Office 365 email domain is named service.contoso.com, you would use the contoso.com domain name for email addresses in the CSV file.  <br/> |Required  <br/> |
-|Password  <br/> |The password to be set for the new Office 365 mailbox. Any password restrictions that are applied to your Office 365 organization also apply to the passwords included in the CSV file.  <br/> |Optional  <br/> |
-|ForceChangePassword  <br/> |Specifies whether a user must change the password the first time they sign in to their new Office 365 mailbox. Use **True** or **False** for the value of this parameter. Note that if you've implemented a single sign-on solution by deploying Active Directory Federation Services (AD FS) 2.0 (AD FS 2.0) or greater in your on-premises organization, you must use **False** for the value of the **ForceChangePassword** attribute.  <br/> |Optional  <br/> |
+|EmailAddress|Specifies the primary SMTP email address, for example, pilarp@contoso.com, for on-premises mailboxes.  <br/> Use the primary SMTP address for on-premises mailboxes and not user IDs from the Office 365. For example, if the on-premises domain is named contoso.com but the Office 365 email domain is named service.contoso.com, you would use the contoso.com domain name for email addresses in the CSV file.|Required|
+|Password|The password to be set for the new Office 365 mailbox. Any password restrictions that are applied to your Office 365 organization also apply to the passwords included in the CSV file.|Optional|
+|ForceChangePassword|Specifies whether a user must change the password the first time they sign in to their new Office 365 mailbox. Use **True** or **False** for the value of this parameter. Note that if you've implemented a single sign-on solution by deploying Active Directory Federation Services (AD FS) 2.0 (AD FS 2.0) or greater in your on-premises organization, you must use **False** for the value of the **ForceChangePassword** attribute.|Optional|
    
  **CSV file format**
   
@@ -195,11 +195,11 @@ A migration endpoint contains the settings and credentials needed to connect the
     
 6. On the **Enter on-premises account credentials** page, enter the following information: 
     
-  - **Email address** Type the  *email address*  of any user in the on-premises Exchange organization that will be migrated. Office 365 will test the connectivity to this user's mailbox. 
+  - **Email address** Type the *email address*  of any user in the on-premises Exchange organization that will be migrated. Office 365 will test the connectivity to this user's mailbox. 
     
-  - **Account with privileges** Type the  *username*  (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address. 
+  - **Account with privileges** Type the *username*  (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address. 
     
-  - **Password of account with privileges** Type the  *password*  for the account with privileges that is the administrator account. 
+  - **Password of account with privileges** Type the *password*  for the account with privileges that is the administrator account. 
     
 7. Choose **Next** and then do one of the following: 
     
@@ -209,11 +209,11 @@ A migration endpoint contains the settings and credentials needed to connect the
   
   - If the test connection to the source server isn't successful, provide the following information:
     
-  - **Exchange server** Type the  *fully qualified domain name*  (FQDN) for the on-premises Exchange Server. This is the host name for your Mailbox server; for example, EXCH-SRV-01.corp.contoso.com. 
+  - **Exchange server** Type the *fully qualified domain name*  (FQDN) for the on-premises Exchange Server. This is the host name for your Mailbox server; for example, EXCH-SRV-01.corp.contoso.com. 
     
-  - **RPC proxy server** Type the  *FQDN*  for the RPC proxy server for Outlook Anywhere. Typically, the proxy server is the same as your Outlook Web App URL. For example, mail.contoso.com, which is also the URL for the proxy server that Outlook uses to connect to an Exchange Server 
+  - **RPC proxy server** Type the *FQDN*  for the RPC proxy server for Outlook Anywhere. Typically, the proxy server is the same as your Outlook Web App URL. For example, mail.contoso.com, which is also the URL for the proxy server that Outlook uses to connect to an Exchange Server 
     
-8. On the **Enter general information** page, type a  *Migration endpoint name*  , for example, Test5-endpoint. Leave the other two boxes blank to use the default values.
+8. On the **Enter general information** page, type a *Migration endpoint name*, for example, Test5-endpoint. Leave the other two boxes blank to use the default values.
     
     ![Migration endpoint name.](../media/990cd22d-748c-477d-b3f8-66f30b256475.jpg)
   
@@ -327,7 +327,7 @@ When people outside of your organization send you email, their email systems don
   
 Using a short interval, such as 3,600 seconds (one hour) or less, means that most email systems will ask for an updated location every hour. We recommend that you set the interval at least this low before you start the email migration. This allows all the systems that send you email enough time to process the change. Then, when you make the final switch over to Office 365, you can change the TTL back to a longer interval.
   
- *The place to change the TTL setting is on your email system's mail exchanger record, also called an MX record*  . This lives on your public facing DNS system. If you have more than one MX record, you need to change the value on each record to 3,600 or less. 
+ *The place to change the TTL setting is on your email system's mail exchanger record, also called an MX record*. This lives on your public facing DNS system. If you have more than one MX record, you need to change the value on each record to 3,600 or less. 
   
 If you need some help configuring your DNS settings, go to our [Create DNS records at any DNS hosting provider for Office 365](https://support.office.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166).
   

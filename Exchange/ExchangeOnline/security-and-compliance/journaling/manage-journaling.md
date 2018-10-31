@@ -32,7 +32,7 @@ Standard journaling is configured on a mailbox database. It enables the Journali
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://go.microsoft.com/fwlink/p/?LinkId=331674). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://go.microsoft.com/fwlink/p/?LinkId=331674). 
   
 ## Create a journal rule
 <a name="create"> </a>
@@ -55,7 +55,7 @@ Standard journaling is configured on a mailbox database. It enables the Journali
   
 3. Click **Save** to create the journal rule. 
     
-### Use the Shell to create a journal rule
+### Use Exchange Online PowerShell to create a journal rule
 <a name="newjournalrule"> </a>
 
 This example creates the journal rule Discovery Journal Recipients to journal all messages sent from and received by the recipient user1@contoso.com.
@@ -71,7 +71,7 @@ To verify that you have successfully created the journal rule, do one of the fol
   
 - From the EAC, verify that the new journal rule you created is listed on the **Journal rules** tab. 
     
-- From the Shell, verify that the new journal rule exists by running the following command (the example below verifies the rule created in the Shell example above):
+- From Exchange Online PowerShell, verify that the new journal rule exists by running the following command (the example below verifies the rule created in Exchange Online PowerShell example above):
     
   ```
   Get-JournalRule "Discovery Journal Recipients"
@@ -92,7 +92,7 @@ To verify that you have successfully created the journal rule, do one of the fol
     
 4. In **Journal Rule**, modify the settings you want. For more information about the settings in this dialog box, see the procedure [Use the EAC to create a journal rule](manage-journaling.md#newjournalrule) earlier in this topic. 
     
-### Use the Shell to view or modify a journal rule
+### Use Exchange Online PowerShell to view or modify a journal rule
 
 This example displays a summary list of all journal rules in the Exchange organization:
   
@@ -106,7 +106,7 @@ This example retrieves the journal rule Brokerage Journal Rule, and pipes the ou
 Get-JournalRule "Brokerage Journal Rule" | Format-List
 ```
 
-If you want to modify the properties of a specific rule, you need to use the [Set-JournalRule](https://technet.microsoft.com/library/e72562c6-64d2-43c3-81b0-062e7d7b28c9.aspx) cmdlet. This example changes the name of the journal rule  `JR-Sales` to  `TraderVault`. The following rule settings are also changed:
+If you want to modify the properties of a specific rule, you need to use the [Set-JournalRule](https://technet.microsoft.com/library/e72562c6-64d2-43c3-81b0-062e7d7b28c9.aspx) cmdlet. This example changes the name of the journal rule `JR-Sales` to `TraderVault`. The following rule settings are also changed:
   
 - Recipient
     
@@ -124,7 +124,7 @@ To verify that you have successfully modified a journal rule, do one of the foll
   
 - From the EAC, navigate to **Compliance management**, \> **Journal rules**. Double-click the rule you modified and verify your changes were saved.
     
-- From the Shell, verify that you modified the journal rule successfully by running the following command. This command will list the properties you modified along with the name of the rule (the example below verifies the rule modified in the Shell example above):
+- From Exchange Online PowerShell, verify that you modified the journal rule successfully by running the following command. This command will list the properties you modified along with the name of the rule (the example below verifies the rule modified in Exchange Online PowerShell example above):
     
   ```
   Get-TransportRule "TraderVault" | Format-List Name,Recipient,JournalEmailAddress,Scope
@@ -144,7 +144,7 @@ To verify that you have successfully modified a journal rule, do one of the foll
     
 2. In the list view, in the **On** column next to the rule's name, select the check box to enable the rule or clear it to disable the rule. 
     
-### Use the Shell to enable or disable a journal rule
+### Use Exchange Online PowerShell to enable or disable a journal rule
 
 This example enables the rule Contoso.
   
@@ -164,7 +164,7 @@ To verify that you have successfully enabled or disabled a journal rule, do one 
   
 - From the EAC, view the list of journal rules check the status of the check box in the **On** column. 
     
-- From the Shell, run the following command to return a list of all journal rules in your organization along, including their status:
+- From Exchange Online PowerShell, run the following command to return a list of all journal rules in your organization along, including their status:
     
   ```
   Get-JournalRule | Format-Table Name,Enabled
@@ -181,7 +181,7 @@ To verify that you have successfully enabled or disabled a journal rule, do one 
     
 2. In the list view, select the rule you want to remove, and then click **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
     
-### Use the Shell to remove a journal rule
+### Use Exchange Online PowerShell to remove a journal rule
 
 This example removes the rule Brokerage Journal Rule.
   
@@ -195,7 +195,7 @@ To verify that you have successfully removed the journal rule, do one of the fol
   
 - From the EAC, verify that the rule you removed is no longer listed on the **Journal rules** tab. 
     
-- From the Shell, run the following command to verify that the rule you remove is no longer listed:
+- From Exchange Online PowerShell, run the following command to verify that the rule you remove is no longer listed:
     
   ```
   Get-JournalRule
@@ -219,7 +219,7 @@ To verify that you have successfully removed the journal rule, do one of the fol
     
     To disable journaling, remove the journal recipient by clicking **Remove X**.
     
-### Use the Shell to enable or disable per-mailbox database journaling
+### Use Exchange Online PowerShell to enable or disable per-mailbox database journaling
 
 This example enables journaling for the mailbox database Sales Database and sets Sales Database journal mailbox as the journal recipient. 
   
@@ -249,7 +249,7 @@ To verify that you have successfully enabled or disabled per-mailbox database jo
     
 3. If the correct journaling recipient is listed in the **Journal recipient** box, you have successfully enabled journaling for the mailbox database. If there is no journaling recipient listed, journaling is disabled for the database. 
     
-- From the Shell, run the following command to return a list of all mailbox databases in your organization, including the journal recipients associated with them. Journaling is enabled for databases that have a journal recipient listed, otherwise it's disabled.
+- From Exchange Online PowerShell, run the following command to return a list of all mailbox databases in your organization, including the journal recipients associated with them. Journaling is enabled for databases that have a journal recipient listed, otherwise it's disabled.
     
   ```
   Get-MailboxDatabase | Format-Table Name,JournalRecipient

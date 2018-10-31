@@ -31,7 +31,7 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -47,15 +47,15 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
     
 5. Click **Save**.
     
-### Use the Shell to enable or prevent Outlook Voice Access users sending voice messages to users in the same dial plan
+### Use Exchange Online PowerShell to enable or prevent Outlook Voice Access users sending voice messages to users in the same dial plan
 
-This example enables Outlook Voice Access users associated with the UM dial plan named  `MyUMDialPlan` to send voice messages to users associated with the same dial plan. 
+This example enables Outlook Voice Access users associated with the UM dial plan named `MyUMDialPlan` to send voice messages to users associated with the same dial plan. 
   
 ```
 Set-UMDialPlan -identity MyUMDialPlan -SendVoiceMsgEnabled $true
 ```
 
-This example prevents Outlook Voice Access users associated with the UM dial plan named  `MyUMDialPlan` from sending voice messages to users associated with the same dial plan. 
+This example prevents Outlook Voice Access users associated with the UM dial plan named `MyUMDialPlan` from sending voice messages to users associated with the same dial plan. 
   
 ```
 Set-UMDialPlan -identity MyUMDialPlan -SendVoiceMsgEnabled $false

@@ -61,7 +61,7 @@ Create a new Sharing Policy to change how people in your organization share cale
     
 11. Click **save** to create the sharing policy. 
     
-### Use the Exchange Management Shell to create a sharing policy
+### Use Exchange Online PowerShell to create a sharing policy
 <a name="BKMK_Shell"> </a>
 
 - This example creates the sharing policy Contoso. This policy allows users in the contoso.com domain to see your user's detailed calendar availability (free/busy) information. By default, this policy is enabled.
@@ -80,13 +80,13 @@ For detailed syntax and parameter information, see [New-SharingPolicy](https://t
   
 ## How do you know this worked?
 
-To verify that you have successfully created the sharing policy, run the following Exchange Management Shell command to view the sharing policy information.
+To verify that you have successfully created the sharing policy, run the following command to view the sharing policy information.
   
 ```
 Get-SharingPolicy <policy name> | format-list
 ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 

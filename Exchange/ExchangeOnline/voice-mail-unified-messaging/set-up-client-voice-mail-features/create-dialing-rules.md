@@ -29,13 +29,12 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
   
 ## Examples of commonly used dialing rules
 
-||||
+|**Number pattern**|**Dialed number**|**When would you use this dialing rule?**|
 |:-----|:-----|:-----|
-|**Number pattern** <br/> |**Dialed number** <br/> |**When would you use this dialing rule?** <br/> |
-|\*  <br/> |\*  <br/> |Allow all outgoing calls.  <br/> |
-|1425xxxxxxx  <br/> |91425xxxxxxx  <br/> |Prevent users from getting an internal extension or an error when they forget to dial the outside access line number.  <br/> |
-|1xxxxxxxxxx  <br/> |1xxxxxxxxxx  <br/> |Allow all numbers that start with 1.  <br/> |
-|xxxxxxx  <br/> |1425xxxxxxx  <br/> |Add 1 and the local area code 425 to 7-digit numbers.  <br/> |
+|\*|\*|Allow all outgoing calls.|
+|1425xxxxxxx|91425xxxxxxx|Prevent users from getting an internal extension or an error when they forget to dial the outside access line number.|
+|1xxxxxxxxxx|1xxxxxxxxxx|Allow all numbers that start with 1.|
+|xxxxxxx|1425xxxxxxx|Add 1 and the local area code 425 to 7-digit numbers.|
    
 ## What do you need to know before you begin?
 
@@ -52,7 +51,7 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## Use the EAC to create a dialing rule
 

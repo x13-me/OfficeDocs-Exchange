@@ -35,7 +35,7 @@ For additional management tasks related to UM dial plans, see [Dial Plan Procedu
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -54,9 +54,9 @@ For additional management tasks related to UM dial plans, see [Dial Plan Procedu
   
 5. After you've located the file, click **Open**, and then click **Save**.
     
-### Use the Shell to enable an informational announcement
+### Use Exchange Online PowerShell to enable an informational announcement
 
-This example enables an informational announcement that uses the informational.wav informational announcement file on a UM dial plan named  `MyUMDialPlan`.
+This example enables an informational announcement that uses the informational.wav informational announcement file on a UM dial plan named `MyUMDialPlan`.
   
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -InfoAnnouncementEnabled $true-InfoAnnouncementFilename c:\UMGreetings\informational.wav

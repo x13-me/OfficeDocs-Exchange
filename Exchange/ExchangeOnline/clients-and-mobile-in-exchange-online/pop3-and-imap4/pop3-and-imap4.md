@@ -36,12 +36,11 @@ After you enable POP3 and IMAP4 client access, you have to give users the inform
   
 POP3 and IMAP4 email programs don't use POP3 and IMAP4 to send messages to the email server. Email programs that use POP3 and IMAP4 rely on SMTP to send messages.
   
-|||||
+||**Server name**|**Port**|**Encryption method**|
 |:-----|:-----|:-----|:-----|
-||**Server name** <br/> |**Port** <br/> |**Encryption method** <br/> |
-|POP3  <br/> |Outlook.office365.com  <br/> |995  <br/> |TLS  <br/> |
-|IMAP4  <br/> |Outlook.office365.com  <br/> |993  <br/> |TLS  <br/> |
-|SMTP  <br/> |Smtp.office365.com  <br/> |587  <br/> |TLS  <br/> |
+|POP3|Outlook.office365.com|995|TLS|
+|IMAP4|Outlook.office365.com|993|TLS|
+|SMTP|Smtp.office365.com|587|TLS|
    
 ## Understanding the differences between POP3 and IMAP4
 <a name="Differences"> </a>

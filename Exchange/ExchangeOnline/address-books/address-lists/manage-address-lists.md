@@ -24,20 +24,20 @@ Looking for the Exchange Server version of this topic? See [Create an Address Li
 
 - Estimated time to complete each procedure: 5 minutes.
     
-- You can only use the Shell to perform this procedure. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- You can only use Exchange Online PowerShell to perform this procedure. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
 - In Exchange Online, the **\*-AddressList** cmldets are only available in the Address Lists management role. By default in Exchange Online, the Address List role isn't assigned to any role groups. To use any cmdlets that require the Address List role, you need to add the role to a role group. For more information, see the "Add a role to a role group" section in the topic, **Manage role groups**.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
 ### Create an address list
 
-This example creates the address list named Oregon and Washington Users by using the  _RecipientFilter_ parameter and includes recipients that are mailbox users and have **StateOrProvince** set to  `Washington` or  `Oregon`.
+This example creates the address list named Oregon and Washington Users by using the  _RecipientFilter_ parameter and includes recipients that are mailbox users and have **StateOrProvince** set to `Washington` or `Oregon`.
   
 ```
 New-AddressList -Name "Oregon and Washington" -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
@@ -55,7 +55,7 @@ For detailed syntax and parameter information, see [New-AddressList](https://tec
 
 The **Update-AddressList** cmdlet isn't available in Exchange Online. If users that should appear an address list do not, change the required property value for those users to a temporary value, and then back to the value that's required by the address list. You can update the user property values in the EAC or PowerShell, but it's quicker to do bulk operations in PowerShell. 
   
-For example, suppose the address list named Oregon and Washington Users uses the filter  `{((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}`, but the address list doesn't include everyone whose **StateOrProvince** property values are set correctly. To update the address list, perform the following steps: 
+For example, suppose the address list named Oregon and Washington Users uses the filter `{((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}`, but the address list doesn't include everyone whose **StateOrProvince** property values are set correctly. To update the address list, perform the following steps: 
   
 1. Use the query from the address list to find all users that should be in the address list. For example:
     
@@ -63,7 +63,7 @@ For example, suppose the address list named Oregon and Washington Users uses the
   $Before = Get-User -Filter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Oregon') -or (StateOrProvince -eq 'Washington')))} -ResultSize Unlimited
   ```
 
-2. Change the required property to a temporary value. For example, change the **StateOrProvince** values from  `Oregon` to  `OR`, and  `Washington` to  `WA`:
+2. Change the required property to a temporary value. For example, change the **StateOrProvince** values from `Oregon` to `OR`, and `Washington` to `WA`:
     
   ```
   $Before | where {$_.StateOrProvince -eq 'Oregon'} | foreach {Set-User $_.Identity -StateOrProvince OR}
@@ -79,7 +79,7 @@ For example, suppose the address list named Oregon and Washington Users uses the
   $After = Get-User -Filter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'OR') -or (StateOrProvince -eq 'WA')))} -ResultSize Unlimited
   ```
 
-4. Change the temporary value back to the required value. For example, change the **StateOrProvince** values from  `OR` to  `Oregon`, and  `WA` to  `Washington`:
+4. Change the temporary value back to the required value. For example, change the **StateOrProvince** values from `OR` to `Oregon`, and `WA` to `Washington`:
     
   ```
   $After | where {$_.StateOrProvince -eq 'OR'} | foreach {Set-User $_.Identity -StateOrProvince Oregon}

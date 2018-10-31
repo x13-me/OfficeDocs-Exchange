@@ -16,7 +16,7 @@ description: "The group naming policy for distribution groups is applied only to
 
 The group naming policy for distribution groups is applied only to groups created by users. When you or other administrators use the Exchange admin center (EAC) to create distribution groups, the group naming policy is ignored and not applied to the group name.
   
-However, if you use the Exchange Management Shell to create or rename a distribution group, the group naming policy is applied to groups created by administrators unless you use the  _IgnoreNamingPolicy_ parameter to override the group naming policy. 
+However, if you use Exchange Online PowerShell to create or rename a distribution group, the group naming policy is applied to groups created by administrators unless you use the  _IgnoreNamingPolicy_ parameter to override the group naming policy. 
   
 ## What do you need to know before you begin?
 
@@ -27,11 +27,11 @@ However, if you use the Exchange Management Shell to create or rename a distribu
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
-### Use the Shell to override the group naming policy when you create a new group
+### Use Exchange Online PowerShell to override the group naming policy when you create a new group
 
 To override the group naming policy, run the following command.
   
@@ -47,15 +47,15 @@ New-DistributionGroup -Name "All Administrators" -IgnoreNamingPolicy
 
 When Microsoft Exchange creates this group, it uses All Administrators for both the  _Name_ and  _DisplayName_ parameters. 
   
-### Use the Shell to override the group naming policy when you rename a group
+### Use Exchange Online PowerShell to override the group naming policy when you rename a group
 
-To override the group naming policy when you rename an existing group with the Shell, run the following command.
+To override the group naming policy when you rename an existing group with Exchange Online PowerShell, run the following command.
   
 ```
 Set-DistributionGroup -Identity <Old Group Name> -Name <New Group Name> -DisplayName <New Group Name> -IgnoreNamingPolicy
 ```
 
-For example, let's say you created a group naming policy late one night and the next morning you realized you misspelled the text string in the prefix. The next morning, you see that a new group has already been created with the misspelled prefix. You can fix the group naming policy in the EAC, but you have to use the Shell to rename the group with the misspelled name. Run the following command.
+For example, let's say you created a group naming policy late one night and the next morning you realized you misspelled the text string in the prefix. The next morning, you see that a new group has already been created with the misspelled prefix. You can fix the group naming policy in the EAC, but you have to use Exchange Online PowerShell to rename the group with the misspelled name. Run the following command.
   
 ```
 Set-DistributionGroup -Identity "Government_Contracts_NWRegion" -Name "Government_ContractEstimates_NWRegion" -DisplayName "Government_ContractEstimates_NWRegion" -IgnoreNamingPolicy
@@ -69,11 +69,11 @@ Set-DistributionGroup -Identity "Government_Contracts_NWRegion" -Name "Governmen
 To verify that you've successfully created or renamed a distribution group that ignores the group naming policy, run the following commands.
   
 ```
-Get-DistributionGroup <Name> | FL DisplayName
+Get-DistributionGroup <Name> | Format-List DisplayName
 ```
 
 ```
-Get-OrganizationConfig | FL DistributionGroupNamingPolicy
+Get-OrganizationConfig | Format-List DistributionGroupNamingPolicy
 
 ```
 

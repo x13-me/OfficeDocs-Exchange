@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: edab7bac-b62c-4b82-8f21-dcac77cf0e8f
-description: "You can remove a Microsoft Outlook Web App mailbox policy from an Exchange organization by using either the EAC or the Shell."
+description: "You can remove a Microsoft Outlook Web App mailbox policy from an Exchange organization by using either the EAC or Exchange Online PowerShell."
 ---
 
 # Remove an Outlook Web App mailbox policy from Exchange
 
-You can remove a Microsoft Outlook Web App mailbox policy from an Exchange organization by using either the EAC or the Shell.
+You can remove a Microsoft Outlook Web App mailbox policy from an Exchange organization by using either the EAC or Exchange Online PowerShell.
   
 For additional management tasks related to Outlook Web App mailbox policies, see [Outlook Web App mailbox policies](outlook-web-app-mailbox-policies.md).
   
@@ -27,7 +27,7 @@ For additional management tasks related to Outlook Web App mailbox policies, see
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -41,9 +41,9 @@ For additional management tasks related to Outlook Web App mailbox policies, see
     
 4. In the confirmation window, click **Yes** to remove the mailbox policy, or click **No** to cancel. 
     
-### Use the Shell to remove an Outlook Web App mailbox policy
+### Use Exchange Online PowerShell to remove an Outlook Web App mailbox policy
 
-This example removes an Outlook Web App mailbox policy named  `Policy1`.
+This example removes an Outlook Web App mailbox policy named `Policy1`.
   
 ```
 Remove-OwaMailboxPolicy -Name Policy1 

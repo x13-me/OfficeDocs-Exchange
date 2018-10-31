@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 51d8e269-b0d5-4bc7-9b3d-0460871e54fa
-description: "You can apply an Outlook Web App mailbox policy to one or more mailboxes or remove one using either the EAC or the Shell."
+description: "You can apply an Outlook Web App mailbox policy to one or more mailboxes or remove one using either the EAC or Exchange Online PowerShell."
 ---
 
 # Apply or remove an Outlook Web App mailbox policy on a mailbox
 
-You can apply an Outlook Web App mailbox policy to one or more mailboxes or remove one using either the EAC or the Shell.
+You can apply an Outlook Web App mailbox policy to one or more mailboxes or remove one using either the EAC or Exchange Online PowerShell.
   
 ## What do you need to know before you begin?
 
@@ -25,7 +25,7 @@ You can apply an Outlook Web App mailbox policy to one or more mailboxes or remo
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -53,7 +53,7 @@ You can apply an Outlook Web App mailbox policy to one or more mailboxes or remo
     
 3. Click **Save** to assign the selected policy to the selected mailboxes. 
     
-#### Use the Shell to apply an Outlook Web App mailbox policy to an existing mailbox
+#### Use Exchange Online PowerShell to apply an Outlook Web App mailbox policy to an existing mailbox
 
 This example applies the Outlook Web App mailbox policy named "Calendar" to the mailbox of the user tony@contoso.com.
   
@@ -77,7 +77,7 @@ For more information about syntax and parameters, see [Set-CASMailbox](https://t
     
 4. Click **Save** to save your changes. 
     
-#### Use the Shell to remove an Outlook Web App mailbox policy from an existing mailbox.
+#### Use Exchange Online PowerShell to remove an Outlook Web App mailbox policy from an existing mailbox.
 
 This example removes the Outlook Web App mailbox policy from mailbox of the user tony@contoso.com.
   

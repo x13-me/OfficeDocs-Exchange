@@ -31,7 +31,7 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -45,9 +45,9 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
     
 4. Click **Save**.
     
-### Use the Shell to enable Voice Mail Preview
+### Use Exchange Online PowerShell to enable Voice Mail Preview
 
-This example allows users who are associated with the UM mailbox policy  `MyUMMailboxPolicy` to use the Voice Mail Preview feature. 
+This example allows users who are associated with the UM mailbox policy `MyUMMailboxPolicy` to use the Voice Mail Preview feature. 
   
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy - AllowVoiceMailPreview $true

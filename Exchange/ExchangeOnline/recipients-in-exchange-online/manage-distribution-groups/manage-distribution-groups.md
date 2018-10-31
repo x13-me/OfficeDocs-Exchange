@@ -11,20 +11,20 @@ f1_keywords:
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: c4c43493-55e1-46d2-bd4b-d6f6cecd747f
-description: "Use the Exchange admin center (EAC) or Exchange Management Shell to create a new distribution group in your Exchange organization or to mail-enable an existing group in Active Directory."
+description: "Use the Exchange admin center (EAC) or Exchange Online PowerShell to create a new distribution group in your Exchange Online organization or to mail-enable an existing group."
 ---
 
 # Create and manage distribution groups
 
-Use the Exchange admin center (EAC) or Exchange Management Shell to create a new distribution group in your Exchange organization or to mail-enable an existing group in Active Directory.
+Use the Exchange admin center (EAC) or Exchange Online PowerShell to create a new distribution group in your Exchange Online organization or to mail-enable an existing group.
   
 There are two types of groups that can be used to distribute messages: 
   
 - Mail-enabled universal distribution groups (also called distribution groups) can be used only to distribute messages.
     
-- Mail-enabled universal security groups (also called security groups) can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see [Manage mail-enabled security groups](../../recipients-in-exchange-online/manage-mail-enabled-security-groups.md).
+- Mail-enabled universal security groups (also called security groups) can be used to distribute messages as well as to grant access permissions to resources. For more information, see [Manage mail-enabled security groups](../../recipients-in-exchange-online/manage-mail-enabled-security-groups.md).
     
-It's important to note the terminology differences between Active Directory and Exchange. In Active Directory, a distribution group refers to any group that doesn't have a security context, whether it's mail-enabled or not. In contrast, in Exchange, all mail-enabled groups are referred to as distribution groups, whether they have a security context or not.
+It's important to note the terminology differences between Active Directory and Exchange Online. In Active Directory, a distribution group refers to any group that doesn't have a security context, whether it's mail-enabled or not. In contrast, in Exchange, all mail-enabled groups are referred to as distribution groups, whether they have a security context or not.
   
 ## What do you need to know before you begin?
 
@@ -32,7 +32,7 @@ It's important to note the terminology differences between Active Directory and 
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" entry in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
     
-- If your organization has configured a group naming policy, it's applied only to groups created by users. When you or other administrators use the EAC to create distribution groups, the group naming policy is ignored and isn't applied to the group name. However, if you use the Shell to create or rename a distribution group, the policy is applied unless you use the  _IgnoreNamingPolicy_ parameter to override the group naming policy. For more information, see: 
+- If your organization has configured a group naming policy, it's applied only to groups created by users. When you or other administrators use the EAC to create distribution groups, the group naming policy is ignored and isn't applied to the group name. However, if you use Exchange Online PowerShell to create or rename a distribution group, the policy is applied unless you use the  _IgnoreNamingPolicy_ parameter to override the group naming policy. For more information, see: 
     
   - [Create a distribution group naming policy](create-group-naming-policy.md)
     
@@ -93,7 +93,7 @@ It's important to note the terminology differences between Active Directory and 
 > [!NOTE]
 > By default, new distribution groups require that all senders be authenticated. This prevents external senders from sending messages to distribution groups. To configure a distribution group to accept messages from all senders, you must modify the message delivery restriction settings for that distribution group. 
   
-#### Use the Shell to create a distribution group
+#### Use Exchange Online PowerShell to create a distribution group
 
 This example creates a distribution group with an alias **itadmin** and the name **IT Administrators**. The distribution group is created in the default OU, and anyone can join this group without approval by the group owners.
   
@@ -101,7 +101,7 @@ This example creates a distribution group with an alias **itadmin** and the name
 New-DistributionGroup -Name "IT Administrators" -Alias itadmin -MemberJoinRestriction open
 ```
 
-For more information about using the Shell to create distribution groups, see [New-DistributionGroup](https://technet.microsoft.com/library/7446962a-cf07-47a1-90d8-45df44057065.aspx).
+For more information about using Exchange Online PowerShell to create distribution groups, see [New-DistributionGroup](https://technet.microsoft.com/library/7446962a-cf07-47a1-90d8-45df44057065.aspx).
   
 #### How do you know this worked?
 
@@ -109,14 +109,14 @@ To verify that you've successfully created a distribution group, do one of the f
   
 - In the EAC, navigate to **Recipients** \> **Groups**. The new distribution group is displayed in the group list. Under **Group Type**, the type is **Distribution group**.
     
-- In the Shell, run the following command to display information about the new distribution group.
+- In Exchange Online PowerShell, run the following command to display information about the new distribution group.
     
   ```
-  Get-DistributionGroup <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+  Get-DistributionGroup <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress
   ```
 
 > [!NOTE]
-> You can create or mail-enable only universal distribution groups. To convert a domain-local or a global group to a universal group, you can use the [Set-Group](https://technet.microsoft.com/library/924e6eb5-bb06-4e15-b122-cab414291cef.aspx) cmdlet using the Shell. You may have mail-enabled groups that were migrated from previous versions of Exchange that are not universal groups. You can use the EAC or the Shell to manage these groups 
+> You can create or mail-enable only universal distribution groups. To convert a domain-local or a global group to a universal group, you can use the [Set-Group](https://technet.microsoft.com/library/924e6eb5-bb06-4e15-b122-cab414291cef.aspx) cmdlet using Exchange Online PowerShell. You may have mail-enabled groups that were migrated from previous versions of Exchange that are not universal groups. You can use the EAC or Exchange Online PowerShell to manage these groups 
   
 ### Change distribution group properties
 
@@ -259,15 +259,15 @@ Use this section to assign permissions to a user (called a delegate) to allow th
     
 To assign permissions to delegates, click **Add** under the appropriate permission to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**.
   
-#### Use the Shell to change distribution group properties
+#### Use Exchange Online PowerShell to change distribution group properties
 
-Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for distribution groups. Advantages of using the Shell are the ability to change the properties that aren't available in the EAC and to change properties for multiple groups. For information about which parameters correspond to distribution group properties, see the following topics: 
+Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for distribution groups. Advantages of using Exchange Online PowerShell are the ability to change the properties that aren't available in the EAC and to change properties for multiple groups. For information about which parameters correspond to distribution group properties, see the following topics: 
   
 - [Get-DistributionGroup](https://technet.microsoft.com/library/d84f5670-f3ac-4d63-a6ac-af9de67677c5.aspx)
     
 - [Set-DistributionGroup](https://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx)
     
-Here are some examples of using the Shell to change distribution group properties.
+Here are some examples of using Exchange Online PowerShell to change distribution group properties.
   
 This example changes the primary SMTP address (also called the reply address) for the Seattle Employees distribution group from employees@contoso.com to sea.employees@contoso.com. Also, the previous reply address will be kept as a proxy address.
   
@@ -299,7 +299,7 @@ To verify that you've successfully changed properties for a distribution group, 
   
 - In the EAC, select the group and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected group. 
     
-- In the Shell, use the **Get-DistributionGroup** cmdlet to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple groups. In the example above where the recipient limit was changed, run the following command to verify the new value. 
+- In Exchange Online PowerShell, use the **Get-DistributionGroup** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple groups. In the example above where the recipient limit was changed, run the following command to verify the new value. 
     
   ```
   Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | fl Name,RecipientLimits

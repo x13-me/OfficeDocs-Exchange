@@ -33,7 +33,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -59,7 +59,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
     
   - **Set the auto attendant to respond to voice commands** Select this check box to enable callers to respond verbally to auto attendant prompts to navigate the menu system. By default, when an auto attendant is created, it isn't speech-enabled. 
     
-    If you decide to create the UM auto attendant but not to speech-enable it, you can use the EAC or the Shell to speech-enable it after it is created. 
+    If you decide to create the UM auto attendant but not to speech-enable it, you can use the EAC or Exchange Online PowerShell to speech-enable it after it is created. 
     
   - **Use this auto attendant when voice commands don't work correctly** Click **Browse** to select the auto attendant that you want to use in the case that voice commands don't work. This is also referred to as a DTMF fallback auto attendant. A DTMF fallback auto attendant can be used only if the **Set the auto attendant to respond to voice commands don't work correctly** option is selected. You must first create a DTMF fallback auto attendant, and then click **Browse** to locate the appropriate DTMF auto attendant. 
     
@@ -270,21 +270,21 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
     
 11. On the **UM Auto Attendant** page, click **Save** to save your changes. 
     
-### Use the Shell to configure UM auto attendant properties
+### Use Exchange Online PowerShell to configure UM auto attendant properties
 
-This example configures a UM auto attendant named  `MySpeechEnabledAA` to fall back to the  `MyDTMFAA` auto attendant, sets the operator's extension to 50100, and enables transfers to this extension number after business hours. 
+This example configures a UM auto attendant named `MySpeechEnabledAA` to fall back to the `MyDTMFAA` auto attendant, sets the operator's extension to 50100, and enables transfers to this extension number after business hours. 
   
 ```
 Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true
 ```
 
-This example configures a UM auto attendant named  `MyUMAutoAttendant` that has: Business hours configured as 10:45 to 13:15 (10:45 A.M. to 1:15 P.M.) on Sunday, 09:00 to 17:00 (9:00 A.M. to 5:00 P.M.) on Monday, and 09:00 to 16:30 (9:00 A.M. to 4:30 P.M.) on Saturday; holiday times and their associated greetings configured as "New Year" on January 2, 2013; and "Building Closed for Construction" configured from April 24 through April 28, 2013. 
+This example configures a UM auto attendant named `MyUMAutoAttendant` that has: Business hours configured as 10:45 to 13:15 (10:45 A.M. to 1:15 P.M.) on Sunday, 09:00 to 17:00 (9:00 A.M. to 5:00 P.M.) on Monday, and 09:00 to 16:30 (9:00 A.M. to 4:30 P.M.) on Saturday; holiday times and their associated greetings configured as "New Year" on January 2, 2013; and "Building Closed for Construction" configured from April 24 through April 28, 2013. 
   
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -BusinessHoursSchedule 0.10:45-0.13:15,1.09:00-1.17:00,6.09:00-6.16:30 -HolidaySchedule "New Year,newyrgrt.wav,1/2/2013","Building Closed for Construction,construction.wav,4/24/2013,4/28/2013"
 ```
 
-### Use the Shell to view UM auto attendant properties
+### Use Exchange Online PowerShell to view UM auto attendant properties
 
 This example returns a formatted list of all UM auto attendants.
   

@@ -27,7 +27,7 @@ You may need to remove public folders that are no longer being used in your orga
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
@@ -43,7 +43,7 @@ You may need to remove public folders that are no longer being used in your orga
   
 3. A warning box displays asking if you're sure you want to delete the public folder. Click **Yes** to continue. 
     
-### Use the Shell to delete a public folder
+### Use Exchange Online PowerShell to delete a public folder
 
 This example deletes the public folder Help Desk\Resolved. This command assumes that the Resolved public folder doesn't have any subfolders. 
   

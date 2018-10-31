@@ -81,7 +81,7 @@ To learn more about organization relationships, see [Organization relationships 
     
 6. Click **save** to update the organization relationship. 
     
-### Use the Exchange Management Shell to modify the organization relationship
+### Use Exchange Online PowerShell to modify the organization relationship
 <a name="BKMK_Shell"> </a>
 
 - This example adds the domain name service.contoso.com to the organization relationship Contoso.
@@ -109,13 +109,13 @@ For detailed syntax and parameter information, see [Get-OrganizationRelationship
   
 ## How do you know this worked?
 
-To verify that you have successfully updated the organization relationship, run the following Exchange Management Shell command and verify the organization relationship information.
+To verify that you have successfully updated the organization relationship, run the following command and verify the organization relationship information.
   
 ```
 Get-OrganizationRelationship | format-list
 ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 

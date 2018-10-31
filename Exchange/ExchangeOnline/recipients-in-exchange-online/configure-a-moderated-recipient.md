@@ -27,7 +27,7 @@ In your Exchange Online organization, you may need to restrict access to specifi
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
@@ -66,7 +66,7 @@ To accomplish the tasks in this example scenario, perform the following procedur
     
 4. Click **Save**.
     
-### Use the Exchange Management Shell to configure a moderated recipient
+### Use Exchange Online PowerShell to configure a moderated recipient
 <a name="EMCtoConfigureModeration"> </a>
 
 Run the following command:

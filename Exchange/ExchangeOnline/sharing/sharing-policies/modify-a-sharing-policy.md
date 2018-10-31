@@ -79,7 +79,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
     
 4. In the warning, click **yes** to delete the sharing policy. 
     
-### Use the Exchange Management Shell to modify, disable or remove a sharing policy
+### Use Exchange Online PowerShell to modify, disable or remove a sharing policy
 <a name="BKMK_Shell"> </a>
 
 - This example modifies the sharing policy Contoso. This policy allows users in the Contoso domain to see simple free/busy information.

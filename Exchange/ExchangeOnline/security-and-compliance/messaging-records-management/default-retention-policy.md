@@ -24,28 +24,28 @@ The following table lists the default retention tags linked to the Default MRM P
   
 |**Name**|**Type**|**Retention age (days)**|**Retention action**|
 |:-----|:-----|:-----|:-----|
-|Default 2 years move to archive  <br/> |Default Policy Tag (DPT)  <br/> |730  <br/> |Move to Archive  <br/> |
-|Recoverable Items 14 days move to archive  <br/> |Recoverable Items folder  <br/> |14  <br/> |Move to Archive  <br/> |
-|Personal 1 year move to archive  <br/> |Personal tag  <br/> |365  <br/> |Move to Archive  <br/> |
-|Personal 5 year move to archive  <br/> |Personal tag  <br/> |1,825  <br/> |Move to Archive  <br/> |
-|Personal never move to archive  <br/> |Personal tag  <br/> |Not applicable  <br/> |Move to Archive  <br/> |
-|1 Week Delete  <br/> |Personal tag  <br/> |7  <br/> |Delete and Allow Recovery  <br/> |
-|1 Month Delete  <br/> |Personal tag  <br/> |30  <br/> |Delete and Allow Recovery  <br/> |
-|6 Month Delete  <br/> |Personal tag  <br/> |180  <br/> |Delete and Allow Recovery  <br/> |
-|1 Year Delete  <br/> |Personal tag  <br/> |365  <br/> |Delete and Allow Recovery  <br/> |
-|5 Year Delete  <br/> |Personal tag  <br/> |1,825  <br/> |Delete and Allow Recovery  <br/> |
-|Never Delete  <br/> |Personal tag  <br/> |Not applicable  <br/> |Delete and Allow Recovery  <br/> |
+|Default 2 years move to archive|Default Policy Tag (DPT)|730|Move to Archive|
+|Recoverable Items 14 days move to archive|Recoverable Items folder|14|Move to Archive|
+|Personal 1 year move to archive|Personal tag|365|Move to Archive|
+|Personal 5 year move to archive|Personal tag|1,825|Move to Archive|
+|Personal never move to archive|Personal tag|Not applicable|Move to Archive|
+|1 Week Delete|Personal tag|7|Delete and Allow Recovery|
+|1 Month Delete|Personal tag|30|Delete and Allow Recovery|
+|6 Month Delete|Personal tag|180|Delete and Allow Recovery|
+|1 Year Delete|Personal tag|365|Delete and Allow Recovery|
+|5 Year Delete|Personal tag|1,825|Delete and Allow Recovery|
+|Never Delete|Personal tag|Not applicable|Delete and Allow Recovery|
    
 ## What you can do with the Default MRM Policy
 
 |**You can…**|**In Exchange Online…**|**In Exchange Server…**|
 |:-----|:-----|:-----|
-|Apply the Default MRM Policy automatically to new users  <br/> |Yes, applied by default. No action is required.  <br/> |Yes, applied by default if you also create an archive for the new user.  <br/> If you create an archive for the user later, the policy is applied automatically only if the user doesn't have an existing Retention Policy.  <br/> |
-|Modify the retention age or retention action of a retention tag linked to the policy  <br/> |Yes  <br/> |Yes  <br/> |
-|Disable a retention tag linked to the policy  <br/> |Yes  <br/> |Yes  <br/> |
-|Add a retention tag to the policy  <br/> |Yes  <br/> |Yes  <br/> |
-|Remove a retention tag from the policy  <br/> |Yes  <br/> |Yes  <br/> |
-|Set another policy as the default retention policy to be applied automatically to new users  <br/> |No  <br/> |No  <br/> |
+|Apply the Default MRM Policy automatically to new users|Yes, applied by default. No action is required.|Yes, applied by default if you also create an archive for the new user.  <br/> If you create an archive for the user later, the policy is applied automatically only if the user doesn't have an existing Retention Policy.|
+|Modify the retention age or retention action of a retention tag linked to the policy|Yes|Yes|
+|Disable a retention tag linked to the policy|Yes|Yes|
+|Add a retention tag to the policy|Yes|Yes|
+|Remove a retention tag from the policy|Yes|Yes|
+|Set another policy as the default retention policy to be applied automatically to new users|No|No|
    
 ## More information
 

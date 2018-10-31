@@ -17,7 +17,7 @@ description: "This topic explains how to retrieve statistics about a public fold
 This topic explains how to retrieve statistics about a public folder, such as the display name, creation time, last user modified time, last user access, and item size. You can use this information to make decisions about deleting or retaining public folders.
   
 > [!NOTE]
-> In the Exchange admin center (EAC), you can view some of the quota and usage information for public folders by navigating to **Public Folders** \> **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif) \> **Mailbox usage**. However, this information is incomplete, and we recommend that you use the Shell to view public folder statistics. 
+> In the Exchange admin center (EAC), you can view some of the quota and usage information for public folders by navigating to **Public Folders** \> **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif) \> **Mailbox usage**. However, this information is incomplete, and we recommend that you use Exchange Online PowerShell to view public folder statistics. 
   
 ## What do you need to know before you begin?
 
@@ -30,11 +30,11 @@ This topic explains how to retrieve statistics about a public folder, such as th
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
-### Use the Shell to retrieve public folder statistics
+### Use Exchange Online PowerShell to retrieve public folder statistics
 
 This example returns the statistics for the public folder Marketing with a piped command to format the list. 
   
@@ -43,11 +43,11 @@ Get-PublicFolderStatistics -Identity \Marketing | Format-List
 ```
 
 > [!NOTE]
-> The value for the  _Identity_ parameter must include the path to the public folder. For example, if the public folder Marketing existed under the parent folder Business, you would provide the following value:  `\Business\Marketing`
+> The value for the  _Identity_ parameter must include the path to the public folder. For example, if the public folder Marketing existed under the parent folder Business, you would provide the following value: `\Business\Marketing`
   
 For detailed syntax and parameter information, see [Get-PublicFolderStatistics](https://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx).
   
-### Use the Shell to view statistics for public folder items
+### Use Exchange Online PowerShell to view statistics for public folder items
 
 You can view the following information about items within a public folder:
   
@@ -81,7 +81,7 @@ Get-PublicFolderItemStatistics -Identity "\Marketing\2010\Pamphlets" | Format-Li
 
 For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx).
   
-### Use the Shell to export the output of the Get-PublicFolderItemStatistics cmdlet to a .csv file
+### Use Exchange Online PowerShell to export the output of the Get-PublicFolderItemStatistics cmdlet to a .csv file
 
 This example exports the output of the cmdlet to the PFItemStats.csv file that includes the following information for all items within the public folder \Marketing\Reports:
   

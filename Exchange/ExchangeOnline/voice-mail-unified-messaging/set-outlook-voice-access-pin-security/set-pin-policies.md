@@ -18,17 +18,17 @@ You can set PIN policies on a Unified Messaging (UM) mailbox policy. UM mailbox 
   
 To set PIN policies for Outlook Voice Access users, you can either create a new UM mailbox policy or modify an existing UM mailbox policy. After a new UM mailbox policy is created, you can then configure the UM mailbox policy by configuring the following PIN settings:
   
--  `MinPasswordLength`
+- `MinPasswordLength`
     
--  `PINLifetime`
+- `PINLifetime`
     
--  `LogonFailuresBeforePINReset`
+- `LogonFailuresBeforePINReset`
     
--  `MaxLogonAttempts`
+- `MaxLogonAttempts`
     
--  `AllowCommonPatterns`
+- `AllowCommonPatterns`
     
--  `PINHistoryCount`
+- `PINHistoryCount`
     
 It's a security best practice to implement strong PIN requirements for UM users. This can be enforced by creating UM PIN policies that require 6 or more digits for PINs and increase the level of security for your network.
   
@@ -49,7 +49,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -65,9 +65,9 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
     
 5. On the **PIN Policies** page, configure the PIN settings for the Outlook Voice Access users associated with this UM mailbox policy, and then click **Save**.
     
-### Use the Shell to set PIN policies for Outlook Voice Access users
+### Use Exchange Online PowerShell to set PIN policies for Outlook Voice Access users
 
-This example sets the PIN settings for users associated with the UM mailbox policy  `MyUMMailboxPolicy`.
+This example sets the PIN settings for users associated with the UM mailbox policy `MyUMMailboxPolicy`.
   
 ```
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."

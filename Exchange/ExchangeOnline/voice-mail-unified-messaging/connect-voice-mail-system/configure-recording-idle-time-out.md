@@ -31,7 +31,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -47,9 +47,9 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
     
 5. Click **Save**.
     
-### Use the Shell to configure the recording idle time-out value
+### Use Exchange Online PowerShell to configure the recording idle time-out value
 
-This example sets the recording idle time-out value to 10 for a UM dial plan named  `MyUMDialPlan`.
+This example sets the recording idle time-out value to 10 for a UM dial plan named `MyUMDialPlan`.
   
 ```
 Set-UMDialPlan -identity MyUMDialPlan -RecordingIdleTimeout 10

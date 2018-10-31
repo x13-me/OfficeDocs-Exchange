@@ -31,7 +31,7 @@ By default, when you create a Unified Messaging (UM) IP gateway, the status of t
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -41,15 +41,15 @@ By default, when you create a Unified Messaging (UM) IP gateway, the status of t
     
 2. On the **Warning** page, click **Yes**.
     
-### Use the Shell to disable a UM IP gateway
+### Use Exchange Online PowerShell to disable a UM IP gateway
 
-This example disables a UM IP gateway named  `MyUMIPGateway` and stops it from accepting incoming calls from a VoIP gateway, IP PBX, or SBC. 
+This example disables a UM IP gateway named `yUMIPGateway` and stops it from accepting incoming calls from a VoIP gateway, IP PBX, or SBC. 
   
 ```
 Disable-UMIPGateway -Identity MyUMIPGateway
 ```
 
-This example disables a UM IP gateway named  `MyUMIPGateway` and disconnects all current calls immediately. 
+This example disables a UM IP gateway named `yUMIPGateway` and disconnects all current calls immediately. 
   
 ```
 Disable-UMIPGateway -Identity MyUMIPGateway -Immediate $true

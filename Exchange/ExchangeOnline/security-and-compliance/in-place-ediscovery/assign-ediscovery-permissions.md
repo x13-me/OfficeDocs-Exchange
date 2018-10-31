@@ -51,7 +51,7 @@ Interested in scenarios where this procedure is used? See the following topics:
     
 5. In **Role Group**, click **Save**.
     
-## Use the Shell to add a user to the Discovery Management role group
+## Use Exchange Online PowerShell to add a user to the Discovery Management role group
 
 This example adds the user Bsuneja to the Discovery Management role group.
   
@@ -78,6 +78,6 @@ Get-RoleGroupMember -Identity "Discovery Management"
 ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 

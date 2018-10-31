@@ -37,7 +37,7 @@ Policy Tips are informative notices that are displayed to email senders while th
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
@@ -182,7 +182,7 @@ This optional procedure will help you to customize the Policy Tip notification t
     
 5. Select **Close** to finish managing your Policy Tips and save your changes. 
     
-#### Use the Shell to create custom Policy Tip notification text
+#### Use Exchange Online PowerShell to create custom Policy Tip notification text
 
 The following example creates a new English-language Policy Tip that will block a message from being sent. The text of this custom Policy Tip is changed to the following value: "This message appears to contain restricted content and will not be delivered."
   
@@ -192,7 +192,7 @@ New-PolicyTipConfig -Name en\Reject -Value "This message appears to contain rest
 
 For more information about DLP cmdlets, see [Messaging Policy and Compliance Cmdlets](https://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx).
   
-#### Use the Shell to modify custom Policy Tip notification text
+#### Use Exchange Online PowerShell to modify custom Policy Tip notification text
 
 The following example modifies an existing English-language, notify-only Policy Tip. The text of this custom Policy Tip is changed to "Sending bank account numbers in email is not recommended."
   

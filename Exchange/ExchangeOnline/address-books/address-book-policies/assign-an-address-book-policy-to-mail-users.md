@@ -27,7 +27,7 @@ Interested in scenarios that use this procedure? See [Scenario: Deploying Addres
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
@@ -59,7 +59,7 @@ Interested in scenarios that use this procedure? See [Scenario: Deploying Addres
     
 6. Click **Save**.
     
-### Use the Shell to assign an ABP to mailbox users
+### Use Exchange Online PowerShell to assign an ABP to mailbox users
 <a name="UseShell"> </a>
 
 This example assigns the ABP All Fabrikam to the existing mailbox user joe@fabrikam.com.
@@ -68,7 +68,7 @@ This example assigns the ABP All Fabrikam to the existing mailbox user joe@fabri
 Set-Mailbox -Identity joe@fabrikam.com -AddressBookPolicy "All Fabrikam"
 ```
 
-This example assigns the ABP ABP_EngineeringDepartment to all mailbox users whose  `CustomAttribute11` value contains "Engineering Department". 
+This example assigns the ABP ABP_EngineeringDepartment to all mailbox users whose `CustomAttribute11` value contains "Engineering Department". 
   
 ```
 Get-Mailbox -Filter {(CustomAttribute11 -like "Engineering Department")} | Set-Mailbox -AddressBookPolicy ABP_EngineeringDepartment

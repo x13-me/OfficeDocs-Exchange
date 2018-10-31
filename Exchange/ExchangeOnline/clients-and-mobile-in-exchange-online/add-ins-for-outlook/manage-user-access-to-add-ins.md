@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: e5833dec-a23a-439e-ac03-92671817bff8
-description: "You can use the Exchange admin center (EAC) or Exchange PowerShell to manage user access to add-ins for Outlook."
+description: "You can use the Exchange admin center (EAC) or Exchange Online PowerShell to manage user access to add-ins for Outlook."
 ---
 
 # Manage user access to add-ins for Outlook
 
-You can use the Exchange admin center (EAC) or Exchange PowerShell to manage user access to add-ins for Outlook.
+You can use the Exchange admin center (EAC) or Exchange Online PowerShell to manage user access to add-ins for Outlook.
   
 - Using the EAC, you can manage basic add-in access settings for your users at an organizational level. For example, you can configure whether an add-in is enabled or disabled for your users. You can also specify whether an add-in is required or optional for your users.
     
-- With the Exchange Management Shell or Exchange Online PowerShell, you can manage all the settings that you can with the EAC, as well as other settings. For example, you can limit availability to specific users in your organization.
+- With Exchange Online PowerShell, you can manage all the settings that you can with the EAC, as well as other settings. For example, you can limit availability to specific users in your organization.
     
 For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook.md).
   
@@ -28,14 +28,14 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook.m
     
 - For more information about the EAC, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
     
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Shell**. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Add-ins for Outlook" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## Specify whether an add-in is available, enabled, or disabled
 
@@ -57,7 +57,7 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook.m
     
 5. Click **Save**.
     
-### Use Exchange PowerShell to specify whether an add-in is available, enabled, or disabled
+### Use Exchange Online PowerShell to specify whether an add-in is available, enabled, or disabled
 
 First, run the following command to find the display names and add-in IDs for all the add-ins for Outlook installed for your organization.
   
@@ -65,7 +65,7 @@ First, run the following command to find the display names and add-in IDs for al
 Get-App -OrganizationApp | Format-List DisplayName,AppId
 ```
 
-The **AppId** value is a GUID that uniquely identifies the add-in (for example,  `fe93bfe1-7947-460a-a5e0-7a5906b51360`). You use the **AppId** value to identify and change the settings of the add-in. 
+The **AppId** value is a GUID that uniquely identifies the add-in (for example, `fe93bfe1-7947-460a-a5e0-7a5906b51360`). You use the **AppId** value to identify and change the settings of the add-in. 
   
 To disable and hide an add-in from all your users, replace  _\<AppId\>_ with the real **AppId** value and run the following command: 
   
@@ -105,11 +105,11 @@ To verify that you've successfully configured an add-in, use either of the follo
   Get-App -OrganizationApp | Format-List DisplayName,AppId,Enabled,DefaultStateForUser
   ```
 
-## Use Exchange PowerShell to limit add-in availability to specific users
+## Use Exchange Online PowerShell to limit add-in availability to specific users
 
-To limit the availability of an add-in to specific users, you can't use the EAC. You can only use the Exchange Management Shell or Exchange Online PowerShell.
+To limit the availability of an add-in to specific users, you can't use the EAC. You can only use Exchange Online PowerShell.
   
-This example limits the LinkedIn add-in with the hypothetical **AppId** value  `ac83a9d5-5af2-446f-956a-c583adc94d5e` to the members of the distribution group named Marketing. 
+This example limits the LinkedIn add-in with the hypothetical **AppId** value `ac83a9d5-5af2-446f-956a-c583adc94d5e` to the members of the distribution group named Marketing. 
   
 ```
 $a = Get-DistributionGroupMember Marketing
@@ -123,7 +123,7 @@ For detailed syntax and parameters, see [Set-app](https://technet.microsoft.com/
   
 ### How do you know this worked?
 
-To verify that you've successfully limited add-in availability to specific users, run the following command in Exchange PowerShell and verify the value of the **ProvidedTo** and **UserList** properties: 
+To verify that you've successfully limited add-in availability to specific users, run the following command in Exchange Online PowerShell and verify the value of the **ProvidedTo** and **UserList** properties: 
   
 ```
 Get-App -OrganizationApp | Format-List DisplayName,AppId,Enabled,DefaultStateForUser,ProvidedTo,UserList

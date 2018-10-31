@@ -73,7 +73,7 @@ After you have setup two-step verification, you can also obtain an app password 
     
     You don't need to memorize this password; it changes constantly and a new ones are sent to you via the Microsoft Authenticator app. This is why it's so secure. Whenever you sign in to your email account from a new device or location, look at your Microsoft Authenticator app and sign in using latest app password that's been sent to you instead of using your old static password.
     
-9. You'll get a message that two-step verification is turned on. Print your new  *recovery code*  (this isn't your app password). If you ever need to recover access to this account, this recovery code will help. It's a good idea to keep it tucked away in a safe place. 
+9. You'll get a message that two-step verification is turned on. Print your new *recovery code*  (this isn't your app password). If you ever need to recover access to this account, this recovery code will help. It's a good idea to keep it tucked away in a safe place. 
     
 10. Choose **Next**.
     

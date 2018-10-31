@@ -33,7 +33,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -51,7 +51,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
     
     You can enter alphabetical and numeric characters in this box. IPv4 addresses, IPv6 addresses, and FQDNs are supported. If you use an FQDN, you must also make sure that you have correctly configured a DNS host record for the VoIP gateway so that the host name will be correctly resolved to an IP address. Also, if you use an FQDN instead of an IP address, and the DNS configuration for the UM IP gateway is changed, you must disable and then enable the UM IP gateway to make sure that configuration information for the UM IP gateway is updated correctly.
     
-    If you want to use mutual Transport Layer Security (mutual TLS) between a UM IP gateway and a dial plan operating in either SIP secured or Secured mode, you must configure the UM IP gateway with an FQDN. You must also configure it to listen on port 5061 and verify that any IP gateways or IP PBXs have also been configured to listen for mutual TLS requests on port 5061. To configure a UM IP gateway, run the following command:  `Set-UMIPGateway -identity MyUMIPGateway -Port 5061`.
+    If you want to use mutual Transport Layer Security (mutual TLS) between a UM IP gateway and a dial plan operating in either SIP secured or Secured mode, you must configure the UM IP gateway with an FQDN. You must also configure it to listen on port 5061 and verify that any IP gateways or IP PBXs have also been configured to listen for mutual TLS requests on port 5061. To configure a UM IP gateway, run the following command: `Set-UMIPGateway -identity MyUMIPGateway -Port 5061`.
     
   - **Allow outgoing calls through this UM IP gateway** Select this check box to allow the UM IP gateway to accept and process outgoing calls. This setting doesn't affect call transfers or incoming calls from a VoIP gateway. 
     
@@ -61,15 +61,15 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
     
     Message Waiting Indicator can refer to any mechanism that indicates the existence of a new or unheard message. The indication that a new voice message has arrived can be found in the Inbox in clients such as Outlook and Outlook Web App. It can take the form of a Short Messaging Service (SMS) or text message sent to a registered mobile phone, an outbound call made from an Exchange server to a preconfigured number, or a lighted desktop phone lamp for a user.
     
-### Use the Shell to configure UM IP gateway properties
+### Use Exchange Online PowerShell to configure UM IP gateway properties
 
-This example modifies the IP address of a UM IP gateway named  `MyUMIPGateway`.
+This example modifies the IP address of a UM IP gateway named `MyUMIPGateway`.
   
 ```
 Set-UMIPGateway -Identity MyUMIPGateway -Address 10.10.10.1
 ```
 
-This example prevents the UM IP gateway named  `MyUMIPGateway` from accepting incoming calls and prevents outgoing calls. 
+This example prevents the UM IP gateway named `MyUMIPGateway` from accepting incoming calls and prevents outgoing calls. 
   
 ```
 Set-UMIPGateway -Identity MyUMIPGateway -Address voipgateway.contoso.com -Status 2 -OutcallsAllowed $false
@@ -84,13 +84,13 @@ Set-UMIPGateway -Identity MyUMIPGateway -Simulator $true
 > [!IMPORTANT]
 > There is a period of latency before all changes that you make to the configuration of a UM IP gateway replicate to all Exchange servers in the same UM dial plan as the UM IP gateway. 
   
-This example prevents the UM IP gateway named  `MyUMIPGateway` from accepting incoming calls and prevents outgoing calls, sets an IPv6 address, and allows the UM IP gateway to use IPv4 and IPV6 addresses. 
+This example prevents the UM IP gateway named `MyUMIPGateway` from accepting incoming calls and prevents outgoing calls, sets an IPv6 address, and allows the UM IP gateway to use IPv4 and IPV6 addresses. 
   
 ```
 Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
 ```
 
-### Use the Shell to view UM IP gateway properties
+### Use Exchange Online PowerShell to view UM IP gateway properties
 
 This example displays a formatted list of all the UM IP gateways in the Active Directory forest.
   
@@ -98,7 +98,7 @@ This example displays a formatted list of all the UM IP gateways in the Active D
 Get-UMIPGateway |Format-List
 ```
 
-This example displays the properties for a UM IP gateway named  `MyUMIPGateway`.
+This example displays the properties for a UM IP gateway named `MyUMIPGateway`.
   
 ```
 Get-UMIPGateway -Identity MyUMIPGateway

@@ -28,34 +28,34 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 
 |**Voice command**|**Touchtone command**|**Description**|
 |:-----|:-----|:-----|
-|"Play"  <br/> | <br/> |Plays the current email or voice mail message.  <br/> |
-|"Next"  <br/> |#  <br/> |Reads the next email or voice mail message.  <br/> |
-|"Next unread"  <br/> |00 followed by ##  <br/> |Reads the next unread email message. Available only for email.  <br/> |
-|"Delete"  <br/> |7  <br/> |Deletes the current email or voice mail message.  <br/> |
-|"Reply"  <br/> |8  <br/> |Replies to the user who sent the current email or voice mail message.  <br/> |
-|"Reply all"  <br/> |00 followed by 88  <br/> |Replies to all the users on the current email message. Not an available option for voice mail messages.  <br/> |
-|"Mark as unread"  <br/> |9  <br/> |Marks the email message as Unread.  <br/> |
-|"End"  <br/> |33  <br/> |Stops reading and goes to the end of the current email or voice mail message.  <br/> |
-|"More options"  <br/> |00  <br/> |Opens the More Options menu.  <br/> |
-|"Previous"  <br/> |00 followed by 11  <br/> |Reads the previous email or voice mail message.  <br/> |
-|"Read the header"  <br/> | <br/> |Reads the header of the email or voice mail message.  <br/> |
-|"Call sender"  <br/> |00 followed by 2  <br/> |Places a call to the user who sent the current email or voice mail message.  <br/> |
-|"Forward"  <br/> |00 followed by 6  <br/> |Forwards the current email or voice mail message to other email recipients or groups.  <br/> |
-|"Flag for follow-up"  <br/> |00 followed by 44  <br/> |Marks or flags the current email or voice mail message for follow-up.  <br/> |
-|"Find by name"  <br/> | <br/> |Uses the user's name to locate email or voice mail messages in the user's mailbox.  <br/> |
-|"Delete conversation"  <br/> |00 followed by 77  <br/> |Deletes all the email messages that are associated with an email conversation. Available only for email.  <br/> |
-|"Hide conversation"  <br/> |00 followed by 99  <br/> |Hides additional email messages that are contained within the same email conversation. Available only for email.  <br/> |
-|"Envelope information"  <br/> |00 followed by 5  <br/> |Reads the envelope information for the email or voice mail message.  <br/> |
-|"Select language"  <br/> |00 followed by 55  <br/> |Lets you select the language in which you want the email or voice mail message to be read.  <br/> |
-|"Rewind" or "Repeat"  <br/> |1  <br/> |Rewinds or repeats the current email or voice mail message. Available only while the message is being played.  <br/> |
-|"Pause"  <br/> |2  <br/> |Pauses the current email or voice mail message. Available only while the message is being played.  <br/> |
-|"Fast forward"  <br/> |3  <br/> |Fast forwards the current email or voice mail message. Available only while the message is being played.  <br/> |
-|"Slow down"  <br/> |4  <br/> |Plays or reads the current email or voice mail message more slowly. Available only while the message is being played.  <br/> |
-|"Faster"  <br/> |6  <br/> |Plays or reads the current email or voice mail message faster. Available only while the message is being played.  <br/> |
-|"Previous"  <br/> |11  <br/> |Reads the previous email message from the beginning. Available only for email.  <br/> |
-|"Replay"  <br/> |00 followed by 1  <br/> |Replays the current email or voice mail message.  <br/> |
-|"Repeat"  <br/> |0  <br/> |Repeats the current menu options.  <br/> |
-|"Main menu"  <br/> |\*  <br/> |Exits to the main menu.  <br/> |
+|"Play"||Plays the current email or voice mail message.|
+|"Next"|#|Reads the next email or voice mail message.|
+|"Next unread"|00 followed by ##|Reads the next unread email message. Available only for email.|
+|"Delete"|7|Deletes the current email or voice mail message.|
+|"Reply"|8|Replies to the user who sent the current email or voice mail message.|
+|"Reply all"|00 followed by 88|Replies to all the users on the current email message. Not an available option for voice mail messages.|
+|"Mark as unread"|9|Marks the email message as Unread.|
+|"End"|33|Stops reading and goes to the end of the current email or voice mail message.|
+|"More options"|00|Opens the More Options menu.|
+|"Previous"|00 followed by 11|Reads the previous email or voice mail message.|
+|"Read the header"||Reads the header of the email or voice mail message.|
+|"Call sender"|00 followed by 2|Places a call to the user who sent the current email or voice mail message.|
+|"Forward"|00 followed by 6|Forwards the current email or voice mail message to other email recipients or groups.|
+|"Flag for follow-up"|00 followed by 44|Marks or flags the current email or voice mail message for follow-up.|
+|"Find by name"||Uses the user's name to locate email or voice mail messages in the user's mailbox.|
+|"Delete conversation"|00 followed by 77|Deletes all the email messages that are associated with an email conversation. Available only for email.|
+|"Hide conversation"|00 followed by 99|Hides additional email messages that are contained within the same email conversation. Available only for email.|
+|"Envelope information"|00 followed by 5|Reads the envelope information for the email or voice mail message.|
+|"Select language"|00 followed by 55|Lets you select the language in which you want the email or voice mail message to be read.|
+|"Rewind" or "Repeat"|1|Rewinds or repeats the current email or voice mail message. Available only while the message is being played.|
+|"Pause"|2|Pauses the current email or voice mail message. Available only while the message is being played.|
+|"Fast forward"|3|Fast forwards the current email or voice mail message. Available only while the message is being played.|
+|"Slow down"|4|Plays or reads the current email or voice mail message more slowly. Available only while the message is being played.|
+|"Faster"|6|Plays or reads the current email or voice mail message faster. Available only while the message is being played.|
+|"Previous"|11|Reads the previous email message from the beginning. Available only for email.|
+|"Replay"|00 followed by 1|Replays the current email or voice mail message.|
+|"Repeat"|0|Repeats the current menu options.|
+|"Main menu"|\*|Exits to the main menu.|
    
 > [!IMPORTANT]
 > If you need to access an email message after you delete it using Outlook Voice Access, you can use Outlook Web App or Outlook to move the email message back into the appropriate folder from the Deleted Items folder. You can't use Outlook Voice Access to access the Deleted Items folder. 
@@ -68,33 +68,33 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 
 |**Voice command**|**Touchtone command**|**Description**|
 |:-----|:-----|:-----|
-|"Next"  <br/> |#  <br/> |Reads the next calendar appointment.  <br/> |
-|"Next day"  <br/> |##  <br/> |Opens and reads the calendar appointments for the next day.  <br/> |
-|"Repeat"  <br/> |0  <br/> |Repeats the menu options that are available. Or, if you're using the VUI, the system reads the calendar appointment again.  <br/> |
-|"More options"  <br/> |00  <br/> |Plays the more calendar options menu.  <br/> |
-|"Repeat"  <br/> |1  <br/> |Reads the calendar appointment again.  <br/> |
-|"Previous meeting"  <br/> |00 followed by 11  <br/> |Opens the previous meeting that's scheduled.  <br/> |
-|"Call location"  <br/> |2  <br/> |Calls the telephone number that's listed for the meeting location.  <br/> |
-|"Call organizer"  <br/> |00 followed by 22  <br/> |Calls the telephone number that's listed for the organizer of the meeting.  <br/> |
-|"I'll be late"  <br/> |3  <br/> |Sends an I'll be late message to all the meeting attendees.  <br/> |
-|"Accept" or "Tentative accept"  <br/> |4  <br/> |Accepts or tentatively accepts the meeting request.  <br/> |
-|"Meeting details"  <br/> |5  <br/> |Reads or plays back the details of the meeting that's currently being read.  <br/> |
-|"Attendance details"  <br/> |00 followed by 55  <br/> |Reads or plays the details of a meeting that's scheduled.  <br/> |
-|"Forward"  <br/> |00 followed by 6  <br/> |Forwards a meeting request for the meeting to another user.  <br/> |
-|"Decline" or "Cancel"  <br/> |7  <br/> |Declines or cancels the meeting request.  <br/> |
-|"Clear my calendar"  <br/> |00 followed by 77  <br/> |Clears your calendar for a specific time period for that day.  <br/> |
-|"Reply"  <br/> |00 followed by 8  <br/> |Replies to the meeting organizer.  <br/> |
-|"Reply all"  <br/> |00 followed by 88  <br/> |Replies to all the meeting attendees.  <br/> |
-|"Repeat menu"  <br/> |5 followed by 0  <br/> |Repeats the menu options that are available.  <br/> |
-|"Rewind"  <br/> |5 followed by 1  <br/> |Rewinds the meeting details.  <br/> |
-| <br/> |5 followed by 11  <br/> |Returns to the beginning of the meeting details.  <br/> |
-| <br/> |5 followed by 2  <br/> |Pauses and resumes playback of the meeting details.  <br/> |
-|"Fast forward"  <br/> |5 followed by 3  <br/> |Skips forward within the meeting details.  <br/> |
-|"End"  <br/> |5 followed by 33  <br/> |Skips to the end of the meeting details.  <br/> |
-| <br/> |5 followed by 4  <br/> |Plays or reads the meeting details slower.  <br/> |
-| <br/> |5 followed by 55  <br/> |Selects the language that will be used to read the meeting details.  <br/> |
-| <br/> |5 followed by 6  <br/> |Plays or reads the meeting details faster.  <br/> |
-|"Main menu"  <br/> |\*  <br/> |Exits to the main menu.  <br/> |
+|"Next"|#|Reads the next calendar appointment.|
+|"Next day"|##|Opens and reads the calendar appointments for the next day.|
+|"Repeat"|0|Repeats the menu options that are available. Or, if you're using the VUI, the system reads the calendar appointment again.|
+|"More options"|00|Plays the more calendar options menu.|
+|"Repeat"|1|Reads the calendar appointment again.|
+|"Previous meeting"|00 followed by 11|Opens the previous meeting that's scheduled.|
+|"Call location"|2|Calls the telephone number that's listed for the meeting location.|
+|"Call organizer"|00 followed by 22|Calls the telephone number that's listed for the organizer of the meeting.|
+|"I'll be late"|3|Sends an I'll be late message to all the meeting attendees.|
+|"Accept" or "Tentative accept"|4|Accepts or tentatively accepts the meeting request.|
+|"Meeting details"|5|Reads or plays back the details of the meeting that's currently being read.|
+|"Attendance details"|00 followed by 55|Reads or plays the details of a meeting that's scheduled.|
+|"Forward"|00 followed by 6|Forwards a meeting request for the meeting to another user.|
+|"Decline" or "Cancel"|7|Declines or cancels the meeting request.|
+|"Clear my calendar"|00 followed by 77|Clears your calendar for a specific time period for that day.|
+|"Reply"|00 followed by 8|Replies to the meeting organizer.|
+|"Reply all"|00 followed by 88|Replies to all the meeting attendees.|
+|"Repeat menu"|5 followed by 0|Repeats the menu options that are available.|
+|"Rewind"|5 followed by 1|Rewinds the meeting details.|
+||5 followed by 11|Returns to the beginning of the meeting details.|
+||5 followed by 2|Pauses and resumes playback of the meeting details.|
+|"Fast forward"|5 followed by 3|Skips forward within the meeting details.|
+|"End"|5 followed by 33|Skips to the end of the meeting details.|
+||5 followed by 4|Plays or reads the meeting details slower.|
+||5 followed by 55|Selects the language that will be used to read the meeting details.|
+||5 followed by 6|Plays or reads the meeting details faster.|
+|"Main menu"|\*|Exits to the main menu.|
    
 ## Find a contact commands reference
 
@@ -104,15 +104,15 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 
 |**Voice command**|**Touchtone command**|**Description**|
 |:-----|:-----|:-----|
-|"Directory"  <br/> |00  <br/> |Searches the directory for a user.  <br/> |
-|"Play details"  <br/> |1  <br/> |Plays the details of the personal contact, such as the telephone numbers that are listed for the personal contact.  <br/> |
-|"Send a message"  <br/> |3  <br/> |Sends a message to the personal contact that's selected.  <br/> |
-|"Find another contact"  <br/> |4  <br/> |Finds another personal contact.  <br/> |
-|"Call the cell"  <br/> |2 followed by 1  <br/> |Calls the mobile telephone number that's listed for the personal contact.  <br/> |
-|"Call the office"  <br/> |2 followed by 2  <br/> |Calls the business or office telephone number that's listed for the personal contact.  <br/> |
-|"Call home"  <br/> |2 followed by 3  <br/> |Calls the home telephone number that's listed for the personal contact.  <br/> |
-| <br/> |##  <br/> |Lets you enter the email alias or name for the user in the directory if using the directory search feature.  <br/> |
-|"Main menu"  <br/> |\*  <br/> |Exits to the main menu.  <br/> |
+|"Directory"|00|Searches the directory for a user.|
+|"Play details"|1|Plays the details of the personal contact, such as the telephone numbers that are listed for the personal contact.|
+|"Send a message"|3|Sends a message to the personal contact that's selected.|
+|"Find another contact"|4|Finds another personal contact.|
+|"Call the cell"|2 followed by 1|Calls the mobile telephone number that's listed for the personal contact.|
+|"Call the office"|2 followed by 2|Calls the business or office telephone number that's listed for the personal contact.|
+|"Call home"|2 followed by 3|Calls the home telephone number that's listed for the personal contact.|
+||##|Lets you enter the email alias or name for the user in the directory if using the directory search feature.|
+|"Main menu"|\*|Exits to the main menu.|
    
 ## Personal options commands reference
 
@@ -122,14 +122,14 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 
 |**Voice command**|**Touchtone command**|**Description**|
 |:-----|:-----|:-----|
-| <br/> |1  <br/> |Turns on or off the telephone Out of Office greeting.  <br/> |
-| <br/> |2  <br/> |Records the personal voice mail or Out of Office voice mail greeting.  <br/> |
-| <br/> |3  <br/> |Changes the PIN that's used for Outlook Voice Access.  <br/> |
-| <br/> |4  <br/> |Starts using the VUI or touchtone interface.  <br/> |
-| <br/> |5  <br/> |Sets the local time zone to use.  <br/> |
-| <br/> |6  <br/> |Chooses the 12-hour or 24-hour time format.  <br/> |
-| <br/> |\*  <br/> |Returns to the main menu.  <br/> |
-| <br/> |0  <br/> |Repeats the menu options that are available.  <br/> |
+||1|Turns on or off the telephone Out of Office greeting.|
+||2|Records the personal voice mail or Out of Office voice mail greeting.|
+||3|Changes the PIN that's used for Outlook Voice Access.|
+||4|Starts using the VUI or touchtone interface.|
+||5|Sets the local time zone to use.|
+||6|Chooses the 12-hour or 24-hour time format.|
+||\*|Returns to the main menu.|
+||0|Repeats the menu options that are available.|
    
 ## For more information
 

@@ -46,7 +46,7 @@ You might be able to use existing distribution groups for eDiscovery purposes, o
 
 Now you'll create a custom management scope that's defined by the membership of a distribution group (using the  _MemberOfGroup_ recipient filter). When this scope is applied to a role group used for eDiscovery, members of the role group can search the mailboxes of users who are members of the distribution group that was used to create the custom management scope. 
   
-This procedure uses Exchange Management Shell commands to create a custom scope named Ottawa Users eDiscovery Scope. It specifies the distribution group named Ottawa Users for the recipient filter of the custom scope.
+This procedure uses Exchange Online PowerShell commands to create a custom scope named Ottawa Users eDiscovery Scope. It specifies the distribution group named Ottawa Users for the recipient filter of the custom scope.
   
 1. Run this command to get and save the properties of the Ottawa Users group to a variable, which is used in the next command.
     
@@ -66,9 +66,9 @@ This procedure uses Exchange Management Shell commands to create a custom scope 
 
 In this step, you create a new management role group and assign the custom scope that you created in step 2. Add the Legal Hold and Mailbox Search roles so that role group members can perform In-Place eDiscovery searches and place mailboxes on In-Place Hold or Litigation Hold. You can also add members to this role group so they can search the mailboxes of the members of the distribution group used to create the custom scope in step 2. 
   
-In the following examples, the Ottawa Users eDiscovery Managers security group will be added as members this role group. You can use either the Shell or the EAC for this step.
+In the following examples, the Ottawa Users eDiscovery Managers security group will be added as members this role group. You can use either Exchange Online PowerShell or the EAC for this step.
   
-### Use the Shell to create a management role group
+### Use Exchange Online PowerShell to create a management role group
 
 Run this command to create a new role group that uses the custom scope created in step 2. The command also adds the Legal Hold and Mailbox Search roles, and adds the Ottawa Users eDiscovery Managers security group as members of the new role group.
   
@@ -139,11 +139,11 @@ Here are some ways to verify if you've successfully implemented custom managemen
 
 - Because distribution groups are used in this scenario to scope eDiscovery searches and not for message delivery, consider the following when you create and configure distribution groups for eDiscovery:
     
-  - Create distribution groups with a closed membership so that members can be added to or removed from the group only by the group owners. If you're creating the group in the Shell, use the syntax  `MemberJoinRestriction closed` and  `MemberDepartRestriction closed`. 
+  - Create distribution groups with a closed membership so that members can be added to or removed from the group only by the group owners. If you're creating the group in Exchange Online PowerShell, use the syntax `MemberJoinRestriction closed` and `MemberDepartRestriction closed`. 
     
-  - Enable group moderation so that any message sent to the group is first sent to the group moderators who can approve or reject the message accordingly. If you're creating the group in the Shell, use the syntax  `ModerationEnabled $true`. If you're using the EAC, you can enable moderation after the group is created.
+  - Enable group moderation so that any message sent to the group is first sent to the group moderators who can approve or reject the message accordingly. If you're creating the group in Exchange Online PowerShell, use the syntax `ModerationEnabled $true`. If you're using the EAC, you can enable moderation after the group is created.
     
-  - Hide the distribution group from the organization's shared address book. Use the EAC or the **Set-DistributionGroup** cmdlet after the group is created. If you're using the Shell, use the syntax  `HiddenFromAddressListsEnabled $true`.
+  - Hide the distribution group from the organization's shared address book. Use the EAC or the **Set-DistributionGroup** cmdlet after the group is created. If you're using Exchange Online PowerShell, use the syntax `HiddenFromAddressListsEnabled $true`.
     
     In the following example, the first command creates a distribution group with closed membership and moderation enabled. The second command hides the group from the shared address book.
     

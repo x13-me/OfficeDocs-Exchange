@@ -47,7 +47,7 @@ You need to configure several settings to control outdialing for your organizati
     
 - Dialing rule entries
     
-You configure access codes, number prefixes, and number formats on a UM dial plan on the **Dial Codes** page in the Exchange admin center (EAC). You can also configure the settings using the **Set-UMDialPlan** cmdlet in the Exchange Management Shell. You can choose to configure all the settings, none of the settings, or only some of the settings. Each setting controls a specific part of the outdialing process. 
+You configure access codes, number prefixes, and number formats on a UM dial plan on the **Dial Codes** page in the Exchange admin center (EAC). You can also configure the settings using the **Set-UMDialPlan** cmdlet in Exchange Online PowerShell. You can choose to configure all the settings, none of the settings, or only some of the settings. Each setting controls a specific part of the outdialing process. 
   
 UM uses access codes, number prefixes, and number formats to determine the correct number to dial. They can be configured to restrict outgoing calls for users who dial in to a UM auto attendant associated with a UM dial plan or who dial in to the Outlook Voice Access number configured on the dial plan. 
   

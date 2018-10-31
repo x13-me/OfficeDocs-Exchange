@@ -37,7 +37,7 @@ To learn more about organization relationships, see [Organization relationships 
     
 4. In the warning that appears, click **yes**.
     
-### Use the Exchange Management Shell to remove an organization relationship
+### Use Exchange Online PowerShell to remove an organization relationship
 <a name="BKMK_Shell"> </a>
 
 This example removes the organization relationship Contoso. 
@@ -54,13 +54,13 @@ To verify that you have successfully removed the organization relationship, do o
   
 - In the Exchange admin center, go to **organization** \> **sharing** and verify that the organization relationship isn't displayed in the list view under **Organization Sharing**.
     
-- Run the following Exchange Management Shell command to verify the organization relationship information is removed.
+- Run the following command to verify the organization relationship information is removed.
     
   ```
   Get-OrganizationRelationship | Format-List
   ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 

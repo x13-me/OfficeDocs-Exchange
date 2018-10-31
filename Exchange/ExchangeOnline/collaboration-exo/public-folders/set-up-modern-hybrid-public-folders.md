@@ -52,9 +52,9 @@ An Exchange Online/Office 365 user must be represented by a MailUser object in t
 
 1. Download the following files from [Mail-enabled Public Folders - directory sync script](https://www.microsoft.com/download/details.aspx?id=46381):
     
-  -  `Sync-MailPublicFolders.ps1`
+  - `Sync-MailPublicFolders.ps1`
     
-  -  `SyncMailPublicFolders.strings.psd1`
+  - `SyncMailPublicFolders.strings.psd1`
     
 2. Save the files to the local computer on which you'll be running PowerShell. For example, C:\PFScripts.
     
@@ -72,10 +72,10 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
   Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
   ```
 
-    Where  `Credential` is your Office 365 username and password, and  `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format. 
+    Where `Credential` is your Office 365 username and password, and `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format. 
     
 > [!NOTE]
-> Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the  `-WhatIf` parameter. > We also recommend that you run this script daily to synchronize your mail-enabled public folders. 
+> Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the `-WhatIf` parameter. > We also recommend that you run this script daily to synchronize your mail-enabled public folders. 
   
 ## Step 3: Configure Exchange Online users to access Exchange Server on-premises public folders
 <a name="Access"> </a>

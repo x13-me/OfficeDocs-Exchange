@@ -47,7 +47,7 @@ The strategy presented here groups the search results from the original discover
 - Run the following command to determine the size of the discovery mailboxes in your organization.
     
   ```
-  Get-Mailbox -RecipientTypeDetails DiscoveryMailbox | Get-MailboxStatistics | FL DisplayName,TotalItemSize
+  Get-Mailbox -RecipientTypeDetails DiscoveryMailbox | Get-MailboxStatistics | Format-List DisplayName,TotalItemSize
   ```
 
 - Determine if you need to keep some or all of the search results from the discovery mailbox that's exceeded the 50 GB limit. Follow the steps in this topic to retain search results by copying them to a different discovery mailbox. If you don't need to keep the results of a specific eDiscovery search, you can delete the search, as explained in step 3. Deleting a search will delete the search results from the discovery mailbox.
@@ -103,9 +103,9 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
     
   -  _StatusMailRecipients_ This parameter specifies that the status message should be sent to the specified recipient. 
     
-2. After the search is created, start it by using the Shell or the Exchange admin center (EAC).
+2. After the search is created, start it by using Exchange Online PowerShell or the Exchange admin center (EAC).
     
-  - **Using the Shell**: Run the following command to start the search created in the previous step. Because the  _EstimateOnly_ switch was included when the search was created, the search results won't be copied to the target discovery mailbox. 
+  - **Using Exchange Online PowerShell**: Run the following command to start the search created in the previous step. Because the  _EstimateOnly_ switch was included when the search was created, the search results won't be copied to the target discovery mailbox. 
     
   ```
   Start-MailboxSearch "Search results from 2010"
@@ -115,9 +115,9 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
     
 3. If necessary, adjust the date range to increase or decrease the amount of search results that are returned. If you change the date range, run the search again to get a new estimate of the results. Consider changing the name of the search to reflect the new date range.
     
-4. When you're finished testing the search, use the Shell or the EAC to copy the search results to the target discovery mailbox. 
+4. When you're finished testing the search, use Exchange Online PowerShell or the EAC to copy the search results to the target discovery mailbox. 
     
-  - **Using the Shell**: Run the following commands to copy the search results. You have to remove the  _EstimateOnly_ switch before you can copy the search results. 
+  - **Using Exchange Online PowerShell**: Run the following commands to copy the search results. You have to remove the  _EstimateOnly_ switch before you can copy the search results. 
     
   ```
   Set-MailboxSearch "Search results from 2010" -EstimateOnly $false
@@ -141,12 +141,12 @@ After you've copied search results from the original discovery mailbox to anothe
 Before deleting a search, you can run the following command to identify the size of the search results that have been copied to a discovery mailbox for all searches in your organization.
   
 ```
-Get-MailboxSearch | FL Name,TargetMailbox,ResultSizeCopied
+Get-MailboxSearch | Format-List Name,TargetMailbox,ResultSizeCopied
 ```
 
-You can use the Shell or the EAC to delete an eDiscovery search.
+You can use Exchange Online PowerShell or the EAC to delete an eDiscovery search.
   
-- **Using the Shell**: Run the following command.
+- **Using Exchange Online PowerShell**: Run the following command.
     
   ```
   Remove-MailboxSearch -Identity <name of search>
@@ -160,7 +160,7 @@ You can use the Shell or the EAC to delete an eDiscovery search.
 After you've deleted the eDiscovery searches to remove the results from the discovery mailbox where they were stored, run the following command to display the size of a selected discovery mailbox.
   
 ```
-Get-Mailbox <name of discovery mailbox> | Get-MailboxStatistics | FL TotalItemSize
+Get-Mailbox <name of discovery mailbox> | Get-MailboxStatistics | Format-List TotalItemSize
 ```
 
 

@@ -31,7 +31,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -338,22 +338,22 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
     
 11. After you configure the required settings, click **Save** to save your changes. 
     
-### Use the Shell to configure UM dial plan settings
+### Use Exchange Online PowerShell to configure UM dial plan settings
 <a name="shell"> </a>
 
-This example configures a UM dial plan named  `MyDialPlan` to use 9 for the outside line access code. 
+This example configures a UM dial plan named `MyDialPlan` to use 9 for the outside line access code. 
   
 ```
 Set-UMDialplan -Identity MyDialPlan -OutsideLineAccessCode 9
 ```
 
-This example configures a UM dial plan named  `MyDialPlan` to use a welcome greeting. 
+This example configures a UM dial plan named `MyDialPlan` to use a welcome greeting. 
   
 ```
 Set-UMDialplan -Identity MyDialPlan -WelcomeGreetingEnabled $true -WelcomeGreetingFilename welcome.wav
 ```
 
-This example configures a UM dial plan named  `MyDialPlan` with dialing rules. 
+This example configures a UM dial plan named `MyDialPlan` with dialing rules. 
   
 ```
 $csv=import-csv "C:\MyInCountryGroups.csv"
@@ -361,7 +361,7 @@ Set-UMDialPlan -Identity MyDialPlan -ConfiguredInCountryGroups $csv
 Set-UMDialPlan -Identity MyDialPlan -AllowedInCountryGroups "local, long distance"
 ```
 
-### Use the Shell to view UM dial plan settings
+### Use Exchange Online PowerShell to view UM dial plan settings
 <a name="ShellView"> </a>
 
 This example displays a list of all the UM dial plans.
@@ -370,7 +370,7 @@ This example displays a list of all the UM dial plans.
 Get-UMDialplan
 ```
 
-This example displays a formatted list of all of the settings on a UM dial plan named  `MyUMDialPlan`.
+This example displays a formatted list of all of the settings on a UM dial plan named `MyUMDialPlan`.
   
 ```
 Get-UMDialplan -Identity MyUMDialPlan | Format-List

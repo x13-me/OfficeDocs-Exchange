@@ -44,7 +44,7 @@ Administrators can search for and recover deleted email messages in a user's mai
     
 ## (Optional) Step 1: Connect to Exchange Online using remote PowerShell
 
-You only need to perform this step if you have an Exchange Online or Office 365 organization. If you have an Exchange Server organization, go to the next step and run the command in the Exchange Management Shell.
+You only need to perform this step if you have an Exchange Online or Office 365 organization. If you have an Exchange Server organization, go to the next step and run the command in Exchange Online PowerShell.
   
 1. On your local computer, open Windows PowerShell and run the following command.
     
@@ -111,7 +111,7 @@ You need to be assigned permissions before you can perform this procedure or pro
   
 After messages have been recovered to a discovery mailbox, you can restore them to the user's mailbox by using the **Search-Mailbox** cmdlet. In Exchange Server, you can also use the **New-MailboxExportRequest** and **New-MailboxImportRequest** cmdlets to export the messages to or import the messages from a .pst file. 
   
-### Use the Shell to restore messages
+### Use Exchange Online PowerShell to restore messages
 
 This example restores messages to April Stewart's mailbox and deletes them from the Discovery Search Mailbox.
   
@@ -125,7 +125,7 @@ For detailed syntax and parameter information, see [Search-Mailbox](https://tech
   
 To verify that you have successfully recovered messages to the user's mailbox, have the user review messages in the target folder you specified in the above command. 
   
-### (Exchange Server) Use the Shell to export and import messages from a .pst file
+### (Exchange Server) Use Exchange Online PowerShell to export and import messages from a .pst file
 
 In Exchange Server, you can export contents from a mailbox to a .pst file and import the contents of a .pst file to a mailbox. To learn more about mailbox import and export, see [Understanding Mailbox Import and Export Requests](https://technet.microsoft.com/library/157a7d88-d3aa-4056-9a50-df67451b14be.aspx). You can't perform this task in Exchange Online.
   

@@ -58,7 +58,7 @@ Sharing policies control how your users share their calendars with people outsid
     
 7. Click **save** to apply the sharing policy to the selected mailboxes. 
     
-### Use the Exchange Management Shell to apply a sharing policy to one or more mailboxes
+### Use Exchange Online PowerShell to apply a sharing policy to one or more mailboxes
 <a name="BKMK_Shell"> </a>
 
 This example applies the sharing policy Contoso to Barbara's mailbox.
@@ -89,13 +89,13 @@ To verify that you have successfully applied the sharing policy to a user mailbo
   
 - In the Exchange admin center, go to **recipients** \> **mailboxes**, and then select the mailbox to which you applied the sharing policy. Click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif), click **mailbox features**, and then confirm that the correct sharing policy displays in the **Sharing policy**.
     
-- Run the following Exchange Management Shell command to verify the sharing policy was assigned to a user mailbox. Verify that the correct sharing policy is listed for the  _SharingPolicy_ parameter. 
+- Run the following command to verify the sharing policy was assigned to a user mailbox. Verify that the correct sharing policy is listed for the  _SharingPolicy_ parameter. 
     
   ```
   Get-Mailbox <username> | format-list
   ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 

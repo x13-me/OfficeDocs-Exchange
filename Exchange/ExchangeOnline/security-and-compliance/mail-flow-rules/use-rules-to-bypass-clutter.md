@@ -40,7 +40,7 @@ This example allows all messages with title "Meeting" to bypass clutter.
     
 ![Art example: If subject contains meeting, bypass clutter](../../media/75957aa4-4b2a-4142-92ff-07f8ccc64d82.png)
   
-## Use the Shell to create a transport rule to bypass the clutter folder
+## Use Exchange Online PowerShell to create a transport rule to bypass the clutter folder
 
 This example allows all messages with title "Meeting" to bypass clutter.
   

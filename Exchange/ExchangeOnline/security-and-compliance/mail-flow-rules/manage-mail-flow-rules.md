@@ -54,14 +54,14 @@ Interested in scenarios where these procedures are used? See the following topic
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
 ### Create a mail flow rule
 <a name="Create"> </a>
 
-You can create a mail flow rule by setting up a Data Loss Prevention (DLP) policy, creating a new rule, or by copying a rule. You can use the Exchange admin center (EAC) or the Exchange Management Shell.
+You can create a mail flow rule by setting up a Data Loss Prevention (DLP) policy, creating a new rule, or by copying a rule. You can use the Exchange admin center (EAC) or Exchange Online PowerShell.
   
 > [!NOTE]
 > After you create or modify a mail flow rule, it can take up to 30 minutes for the new or updated rule to be applied to email. 
@@ -152,10 +152,10 @@ The EAC allows you to create mail flow rules by using a template, copying an exi
     
 5. Click **Save** to complete creating the rule. 
     
-#### Use the Exchange Management Shell to create a mail flow rule
+#### Use Exchange Online PowerShell to create a mail flow rule
 <a name="CreateEAC"> </a>
 
-This example uses the [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx) cmdlet to create a new mail flow rule that prepends "  `External message to Sales DG:`" to messages sent from outside the organization to the Sales Department distribution group.
+This example uses the [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx) cmdlet to create a new mail flow rule that prepends " `External message to Sales DG:`" to messages sent from outside the organization to the Sales Department distribution group.
   
 ```
 New-TransportRule -Name "Mark messages from the Internet to Sales DG" -FromScope NotInOrganization -SentTo "Sales Department" -PrependSubject "External message to Sales DG:"
@@ -170,7 +170,7 @@ To verify that you have successfully created a new mail flow rule, do the follow
   
 - From the EAC, verify that the new mail flow rule you created is listed in the **Rules** list. 
     
-- From the Exchange Management Shell, verify that you created the new mail flow rule successfully by running the following command (the example below verifies the rule created in the Exchange Management Shell example above):
+- From Exchange Online PowerShell, verify that you created the new mail flow rule successfully by running the following command (the example below verifies the rule created in Exchange Online PowerShell example above):
     
   ```
   Get-TransportRule "Mark messages from the Internet to Sales DG"
@@ -188,7 +188,7 @@ To verify that you have successfully created a new mail flow rule, do the follow
     
 2. When you select a rule in the list, the conditions, actions, exceptions and select properties of that rule are displayed in the details pane. To view all the properties of a specific rule, double click it. This opens the rule editor window, where you can make changes to the rule. For more information about rule properties, see [Use the EAC to create a mail flow rule](manage-mail-flow-rules.md#CreateEAC) section, earlier in this topic. 
     
-#### Use the Exchange Management Shell to view or modify a mail flow rule
+#### Use Exchange Online PowerShell to view or modify a mail flow rule
 
 The following example gives you a list of all rules configured in your organization:
   
@@ -214,7 +214,7 @@ To verify that you have successfully modified a mail flow rule, do the following
   
 - From the rules list in the EAC, click the rule you modified in the **Rules** list and view the details pane. 
     
-- From the Exchange Management Shell, verify that you modified the mail flow rule successfully by running the following command to list the properties you modified along with the name of the rule (the example below verifies the rule modified in the Exchange Management Shell example above):
+- From Exchange Online PowerShell, verify that you modified the mail flow rule successfully by running the following command to list the properties you modified along with the name of the rule (the example below verifies the rule modified in Exchange Online PowerShell example above):
     
   ```
   Get-TransportRule "Sender is a member of marketing" | Format-List Name,ExceptIfFrom
@@ -223,14 +223,14 @@ To verify that you have successfully modified a mail flow rule, do the following
 ### Mail flow rule properties
 <a name="ModifyRule"> </a>
 
-You can also use the Set-TransportRule cmdlet to modify existing transport rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the Set-TransportRule cmdlet to make these changes see [Set-TransportRule](https://technet.microsoft.com/library/8328125b-e166-436f-95e6-1afafdbdb89a.aspx)
+You can also use the Set-TransportRule cmdlet to modify existing transport rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the **Set-TransportRule** cmdlet to make these changes see [Set-TransportRule](https://technet.microsoft.com/library/8328125b-e166-436f-95e6-1afafdbdb89a.aspx)
   
-|**Condition Name in the EAC**|**Condition name in Exchange Management Shell**|**Properties**|**Description**|
+|**Condition Name in the EAC**|**Condition name in Exchange Online PowerShell**|**Description**|
 |:-----|:-----|:-----|:-----|
-|**Stop Processing Rules** <br/> | `StopRuleProcessing` <br/> | ` Not applicable ` <br/> |Enables you to stop processing additional rules  <br/> |
-|**Header/Envelope matching** <br/> | `SenderAddressLocation` <br/> |Not applicable  <br/> |Enables you to examine the SMTP message envelope to ensure the header and envelop match  <br/> |
-|**Audit severity ** <br/> | `SetAuditSeverity` <br/> | `Not applicable` <br/> |Enables you to select a severity level for the audit  <br/> |
-|**Rule modes** <br/> | `Mode` <br/> | `Not applicable` <br/> |Enables you to set the mode for the rule  <br/> |
+|**Stop Processing Rules**|_StopRuleProcessing_|Enables you to stop processing additional rules|
+|**Header/Envelope matching**|_SenderAddressLocation_|Enables you to examine the SMTP message envelope to ensure the header and envelop match|
+|**Audit severity**|_SetAuditSeverity_|Enables you to select a severity level for the audit|
+|**Rule modes**|_Mode_|Enables you to set the mode for the rule|
    
 ### Set the priority of a mail flow rule
 <a name="priority"> </a>
@@ -243,7 +243,7 @@ The rule at the top of the list is processed first. This rule has a **Priority**
     
 2. Select a rule, and use the arrows to move the rule up or down the list.
     
-#### Use the Exchange Management Shell to set the priority of a rule
+#### Use Exchange Online PowerShell to set the priority of a rule
 
 The following example sets the priority of "Sender is a member of marketing" to 2:
   
@@ -257,7 +257,7 @@ To verify that you have successfully modified a mail flow rule, do the following
   
 - From the rules list in the EAC, look at the order of the rules.
     
-- From the Exchange Management Shell, verify the priority of the rules (the example below verifies the rule modified in the Exchange Management Shell example above):
+- From Exchange Online PowerShell, verify the priority of the rules (the example below verifies the rule modified in Exchange Online PowerShell example above):
     
   ```
   Get-TransportRule * | Format-List Name,Priority
@@ -276,7 +276,7 @@ Rules are enabled when you create them. You can disable a mail flow rule.
     
 3. To enable a disabled rule, select the check box next to its name.
     
-#### Use the Exchange Management Shell to enable or disable a mail flow rule
+#### Use Exchange Online PowerShell to enable or disable a mail flow rule
 
 The following example disables the mail flow rule "Sender is a member of marketing":
   
@@ -296,7 +296,7 @@ To verify that you have successfully enabled or disabled a mail flow rule, do th
   
 - From the EAC, view the list of rules in the **Rules** list and check the status of the check box in the **ON** column. 
     
-- From the Exchange Management Shell, run the following command which will return a list of all rules in your organization along with their status:
+- From Exchange Online PowerShell, run the following command which will return a list of all rules in your organization along with their status:
     
   ```
   Get-TransportRule | Format-Table Name,State
@@ -311,7 +311,7 @@ To verify that you have successfully enabled or disabled a mail flow rule, do th
     
 2. Select the rule you want to remove and then click **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif). 
     
-#### Use the Exchange Management Shell to remove a mail flow rule
+#### Use Exchange Online PowerShell to remove a mail flow rule
 
 The following example removes the mail flow rule "Sender is a member of marketing":
   
@@ -325,7 +325,7 @@ To verify that you have successfully removed the mail flow rule, do the followin
   
 - From the EAC, view the rules in the **Rules** list and verify that the rule you removed is no longer shown. 
     
-- From the Exchange Management Shell, run the following command and verify that the rule you remove is no longer listed:
+- From Exchange Online PowerShell, run the following command and verify that the rule you remove is no longer listed:
     
   ```
   Get-TransportRule
@@ -372,7 +372,7 @@ To learn more, see [View mail protection reports](https://go.microsoft.com/fwlin
 ### Import or export a mail flow rule collection
 <a name="import"> </a>
 
-You must use the Exchange Management Shell to import or export a mail flow rule collection. For information about how to import a mail flow rule collection from an XML file, see [Import-TransportRuleCollection](https://technet.microsoft.com/library/880b3124-76c5-4212-a8b9-8f4523f8cbe6.aspx). For information about how to export a mail flow rule collection to an XML file, see [Export-TransportRuleCollection](https://technet.microsoft.com/library/bfdb6ced-cd81-49f1-a929-4d76dbaf5590.aspx).
+You must use Exchange Online PowerShell to import or export a mail flow rule collection. For information about how to import a mail flow rule collection from an XML file, see [Import-TransportRuleCollection](https://technet.microsoft.com/library/880b3124-76c5-4212-a8b9-8f4523f8cbe6.aspx). For information about how to export a mail flow rule collection to an XML file, see [Export-TransportRuleCollection](https://technet.microsoft.com/library/bfdb6ced-cd81-49f1-a929-4d76dbaf5590.aspx).
   
 ## Need more help?
 

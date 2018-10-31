@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 8a37911c-4339-4921-b5d3-0a5a774d4517
-description: "You can use the Exchange Management Shell to configure various settings that define how you use MailTips in your organization."
+description: "You can use Exchange Online PowerShell to configure various settings that define how you use MailTips in your organization."
 ---
 
 # Configure the large audience size for your organization
 
-You can use the Exchange Management Shell to configure various settings that define how you use MailTips in your organization.
+You can use Exchange Online PowerShell to configure various settings that define how you use MailTips in your organization.
   
 ## What do you need to know before you begin?
 
@@ -22,14 +22,14 @@ You can use the Exchange Management Shell to configure various settings that def
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "MailTips" entry in the [Mail flow permissions](https://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic. 
     
-- You can only use the Shell to perform this procedure.
+- You can only use Exchange Online PowerShell to perform this procedure.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## Use the Shell to configure the large audience size for your organization
+## Use Exchange Online PowerShell to configure the large audience size for your organization
 
 You use the **Set-OrganizationConfig** cmdlet to configure the large audience size for your organization. When senders address messages to more recipients than the size you configure, they are shown the Large Audience MailTip. The large audience size is set to 25 by default. This example configures the large audience size to 50 in your organization. 
   

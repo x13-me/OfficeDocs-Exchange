@@ -103,8 +103,8 @@ If none of the types of migrations described will work for your organization, co
   
 |**Method**|**Description**|
 |:-----|:-----|
-|![Use third-party migration tools to migrate mailboxes to Office 365](media/e0d851ac-72c5-49e5-b759-f1083c912f03.png)|**Use a third-party email migration tool** <br/> Migration tools can help speed up and simplify email migration. You'll find a list of tools in the [Office 365 Marketplace](https://go.microsoft.com/fwlink/p/?LinkId=785068).  <br/> |
-|![Hire a partner to help you deploy Office 365](media/60914e97-f5fe-4dff-9e96-a23de8aa2879.png)|**Hire a partner to help migrate your email** <br/> You'll find a list of partners in the [Office 365 Marketplace](https://go.microsoft.com/fwlink/p/?LinkId=620000).  <br/> |
+|![Use third-party migration tools to migrate mailboxes to Office 365](media/e0d851ac-72c5-49e5-b759-f1083c912f03.png)|**Use a third-party email migration tool** <br/> Migration tools can help speed up and simplify email migration. You'll find a list of tools in the [Office 365 Marketplace](https://go.microsoft.com/fwlink/p/?LinkId=785068).|
+|![Hire a partner to help you deploy Office 365](media/60914e97-f5fe-4dff-9e96-a23de8aa2879.png)|**Hire a partner to help migrate your email** <br/> You'll find a list of partners in the [Office 365 Marketplace](https://go.microsoft.com/fwlink/p/?LinkId=620000).|
    
 ## Related Topics
 <a name="Partner"> </a>

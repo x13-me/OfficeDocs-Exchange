@@ -54,7 +54,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
 ## Create a transport rule to encrypt email messages
 <a name="BKMK_encryptemail"> </a>
 
-1. In the EAC, to move the focus to the first link in the navigation pane— **Dashboard** —press Ctrl+F6  *twice*  . You hear "Dashboard, Primary navigation link." 
+1. In the EAC, to move the focus to the first link in the navigation pane— **Dashboard** —press Ctrl+F6 *twice*. You hear "Dashboard, Primary navigation link." 
     
 2. To move the focus to the **mail flow** link in the navigation pane, press the Tab key until you hear "Mail flow, Primary navigation link." Press Enter. 
     
@@ -105,7 +105,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
 ## Create a transport rule to decrypt email messages
 <a name="BKMK_decryptemail"> </a>
 
-1. In the EAC, to move the focus to the first link in the navigation pane— **Dashboard** —press Ctrl+F6  *twice*  . You hear "Dashboard, Primary navigation link." 
+1. In the EAC, to move the focus to the first link in the navigation pane— **Dashboard** —press Ctrl+F6 *twice*. You hear "Dashboard, Primary navigation link." 
     
 2. To move the focus to the **mail flow** link in the navigation pane, press the Tab key until you hear "Mail flow, Primary navigation link." Press Enter. 
     

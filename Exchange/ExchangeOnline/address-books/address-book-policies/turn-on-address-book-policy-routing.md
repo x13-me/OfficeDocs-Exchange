@@ -23,12 +23,12 @@ Looking for the Exchange Server version of this topic? See [Install and Configur
 > [!NOTE]
 > By default, the Address List role isn't assigned to any role groups. To use any cmdlets that require the Address List role, you need to add the role to a role group. For details, see the "Add a role to a role assignment policy" section of **Manage role assignment policies**. 
   
-## Use the Exchange Management Shell to turn on ABP routing
+## Use Exchange Online PowerShell to turn on ABP routing
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport configuration" entry in the [Mail flow permissions](https://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic. 
   
 > [!NOTE]
-> You can't use the Exchange admin center (EAC) to perform this procedure. You must use the Exchange Management Shell. 
+> You can't use the Exchange admin center (EAC) to perform this procedure. You must use Exchange Online PowerShell. 
   
 This example turns on ABP routing for the entire Exchange organization:
   
@@ -41,7 +41,7 @@ For detailed syntax and parameter information, see [Set-TransportConfig](https:/
 ## For more information
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
   

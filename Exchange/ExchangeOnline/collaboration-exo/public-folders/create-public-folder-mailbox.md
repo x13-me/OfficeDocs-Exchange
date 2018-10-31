@@ -47,7 +47,7 @@ For additional management tasks related to public folders in Exchange Online, se
     
 3. Click **Save**.
     
-### Use the Shell to create a public folder mailbox
+### Use Exchange Online PowerShell to create a public folder mailbox
 
 This example creates the primary public folder mailbox.
   
@@ -73,6 +73,6 @@ Get-OrganizationConfig | Format-List RootPublicFolderMailbox
 
 For detailed syntax and parameter information, see [get-OrganizationConfig](https://technet.microsoft.com/library/3e07e5cc-5066-40e7-8642-845ad080f9a9.aspx).
   
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
   
 

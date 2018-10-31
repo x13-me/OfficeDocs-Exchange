@@ -54,7 +54,7 @@ For additional management tasks related to Protected Voice Mail procedures, see 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -68,15 +68,15 @@ For additional management tasks related to Protected Voice Mail procedures, see 
     
 4. Click **Save**.
     
-### Use the Shell to enable or disable multimedia playback of protected voice messages
+### Use Exchange Online PowerShell to enable or disable multimedia playback of protected voice messages
 
-This example allows users who are associated with the UM mailbox policy named  `MyUMMailboxPolicy` to play back protected voice messages using a media player. 
+This example allows users who are associated with the UM mailbox policy named `MyUMMailboxPolicy` to play back protected voice messages using a media player. 
   
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -RequireProtectedPlayOnPhone $false
 ```
 
-This example prevents users who are associated with the UM mailbox policy named  `MyUMMailboxPolicy` from playing back protected voice messages using a media player. 
+This example prevents users who are associated with the UM mailbox policy named `MyUMMailboxPolicy` from playing back protected voice messages using a media player. 
   
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -RequireProtectedPlayOnPhone $true

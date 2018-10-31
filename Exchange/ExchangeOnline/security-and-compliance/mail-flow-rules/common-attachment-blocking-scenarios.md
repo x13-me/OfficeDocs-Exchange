@@ -36,7 +36,7 @@ To get started implementing any of these scenarios to block certain message type
     
 5. Select the conditions and actions you want.
     
- **Note**: In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Shell**. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554). To learn how to use Windows PowerShell to connect to Exchange Online Protection, see [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290).
+ **Note**: In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554). To learn how to connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290).
   
 Replace  _\<Rule Name\>_ with the name of the existing rule, and run the following command to set the attachment size to 1 byte: 
   
@@ -64,15 +64,15 @@ If you want to reject a message but let the intended recipient know what happene
   
 You can include placeholders in the notification message so that it includes information about the original message. The placeholders must be enclosed in two percent signs (%%), and when the notification message is sent, the placeholders are replaced with information from the original message. You can also use basic HTML such as \<br\>, \<b\>, \<i\>, and \<img\> in the message.
   
-|||
+
+|**Type of information**|**Placeholder**|
 |:-----|:-----|
-|**Type of information** <br/> |**Placeholder** <br/> |
-|Sender of the message.  <br/> |%%From%%  <br/> |
-|Recipients listed on the "To" line.  <br/> |%%To%%  <br/> |
-|Recipients listed on the "Cc" line.  <br/> |%%Cc%%  <br/> |
-|Subject of the original message.  <br/> |%%Subject%%  <br/> |
-|Headers from the original message. This is similar to the list of headers in a delivery status notification (DSN) generated for the original message.  <br/> |%%Headers%%  <br/> |
-|Date the original message was sent.  <br/> |%%MessageDate%%  <br/> |
+|Sender of the message.|%%From%% |
+|Recipients listed on the "To" line.|%%To%% |
+|Recipients listed on the "Cc" line.|%%Cc%% |
+|Subject of the original message.|%%Subject%% |
+|Headers from the original message. This is similar to the list of headers in a delivery status notification (DSN) generated for the original message.|%%Headers%% |
+|Date the original message was sent.|%%MessageDate%% |
    
 In this example, all messages that contain attachments and are sent to people inside your organization are blocked, and the recipient is notified.
   

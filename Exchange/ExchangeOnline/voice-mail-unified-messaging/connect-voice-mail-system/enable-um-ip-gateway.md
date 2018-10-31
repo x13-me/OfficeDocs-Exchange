@@ -31,7 +31,7 @@ By default, when a Unified Messaging (UM) IP gateway is created, its status is s
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -41,9 +41,9 @@ By default, when a Unified Messaging (UM) IP gateway is created, its status is s
     
 2. On the **Warning** page, click **Yes**.
     
-### Use the Shell to enable a UM IP gateway
+### Use Exchange Online PowerShell to enable a UM IP gateway
 
-This example enables a UM IP gateway named  `MyUMIPGateway`.
+This example enables a UM IP gateway named `MyUMIPGateway`.
   
 ```
 Enable-UMIPGateway -Identity MyUMIPGateway

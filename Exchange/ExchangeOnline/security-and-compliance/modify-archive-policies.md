@@ -34,7 +34,7 @@ For additional management tasks related to archives, see [Enable or disable an a
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
@@ -70,16 +70,16 @@ For additional management tasks related to archives, see [Enable or disable an a
     
   - **Comment** Use this box to type a comment that will be displayed to Outlook and Outlook Web App users. 
     
-### Use the Shell to modify archive policies
+### Use Exchange Online PowerShell to modify archive policies
 <a name="UseShell"> </a>
 
-This example modifies the  `Default 2 year move to archive` tag to move items after 1,095 days (3 years). 
+This example modifies the `Default 2 year move to archive` tag to move items after 1,095 days (3 years). 
   
 ```
 Set-RetentionPolicyTag "Default 2 year move to archive" -Name "Default 3 year move to archive" -AgeLimitForRetention 1095
 ```
 
-This example disables the  `Default 2 year move to archive` tag. 
+This example disables the `Default 2 year move to archive` tag. 
   
 ```
 Set-RetentionPolicyTag "Default 2 year move to archive" -RetentionEnabled $false
@@ -97,7 +97,7 @@ For detailed syntax and parameter information, see [Set-RetentionPolicyTag](http
 
 Use the [Get-RetentionPolicyTag](https://technet.microsoft.com/library/5cddcfea-6f67-4481-9c00-5b13c11d5ced.aspx) cmdlet to retrieve settings of the retention tag. 
   
-This command retrieves properties of the  `Default 2 year move to archive` retention tag and pipes the output to the **Format-List** cmdlet to display all properties in a list format. 
+This command retrieves properties of the `Default 2 year move to archive` retention tag and pipes the output to the **Format-List** cmdlet to display all properties in a list format. 
   
 ```
 Get-RetentionPolicyTag "Default 2 year move to archive" | Format-List 

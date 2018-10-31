@@ -19,7 +19,7 @@ You can specify whether you want individual users to be able to create and manag
 You can enable or disable Call Answering Rules for multiple users that are enabled for Unified Messaging (UM) by configuring Call Answering Rules on a UM dial plan or UM mailbox policy. 
   
 > [!NOTE]
-> You can't use the EAC to configure this feature. You must use the Shell to enable or disable Call Answering Rules for a voice mail user. 
+> You can't use the EAC to configure this feature. You must use Exchange Online PowerShell to enable or disable Call Answering Rules for a voice mail user. 
   
 For additional management tasks related to allowing users to forward calls, see [Forwarding calls procedures](forwarding-calls-procedures.md).
   
@@ -38,9 +38,9 @@ For additional management tasks related to allowing users to forward calls, see 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## Use the Shell to enable or disable call answering rules for a UM-enabled user
+## Use Exchange Online PowerShell to enable or disable call answering rules for a UM-enabled user
 
 This example enables Call Answering Rules for the user tony@contoso.com. 
   

@@ -31,7 +31,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -41,7 +41,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
     
 2. On the **New UM dial plan** page, complete the following boxes: 
     
-  - **Name** Type the name of the dial plan. A UM dial plan name is required and must be unique. However, it's used only for display in the EAC and the Shell. If you have to change the display name of the dial plan after it's been created, you must first delete the existing UM dial plan and then create another dial plan that has the appropriate name. If your organization uses multiple UM dial plans, we recommend that you use meaningful names for your UM dial plans. The maximum length of a UM dial plan name is 64 characters, and it can include spaces. However, it can't include any of the following characters: " / \ [ ] : ; | = , + \* ? \< \>. 
+  - **Name** Type the name of the dial plan. A UM dial plan name is required and must be unique. However, it's used only for display in the EAC and Exchange Online PowerShell. If you have to change the display name of the dial plan after it's been created, you must first delete the existing UM dial plan and then create another dial plan that has the appropriate name. If your organization uses multiple UM dial plans, we recommend that you use meaningful names for your UM dial plans. The maximum length of a UM dial plan name is 64 characters, and it can include spaces. However, it can't include any of the following characters: " / \ [ ] : ; | = , + \* ? \< \>. 
     
     Although you can include spaces in a UM dial plan name, if you integrate Unified Messaging with Office Communications Server 2007 R2 or Microsoft Lync Server, the dial plan name can't include spaces. Therefore, if you created a dial plan with spaces in the display name, and you're integrating with Office Communications Server 2007 R2 or Lync Server, you must first delete that dial plan and then create another dial plan that doesn't include spaces in the display name.
     
@@ -79,15 +79,15 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
     
 3. Click **Save**.
     
-### Use the Shell to create a UM dial plan
+### Use Exchange Online PowerShell to create a UM dial plan
 
-This example creates a new UM dial plan named  `MyUMDialPlan` that uses four-digit extension numbers. 
+This example creates a new UM dial plan named `MyUMDialPlan` that uses four-digit extension numbers. 
   
 ```
 New-UMDialplan -Name MyUMDialPlan -NumberofDigits 4
 ```
 
-This example creates a new UM dial plan named  `MyUMDialPlan` that uses five-digit extension numbers and supports SIP URIs. 
+This example creates a new UM dial plan named `MyUMDialPlan` that uses five-digit extension numbers and supports SIP URIs. 
   
 ```
 New-UMDialplan -Name MyUMDialPlan -UriType SIPName -NumberofDigits 5

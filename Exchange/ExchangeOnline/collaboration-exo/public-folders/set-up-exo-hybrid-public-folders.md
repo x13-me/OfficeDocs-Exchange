@@ -50,20 +50,20 @@ This article describes how to enable users in your Exchange Server on-premises e
 
 1. Download the following files from [Mail-enabled Public Folders - directory sync from EXO to On-prem script](https://go.microsoft.com/fwlink/p/?LinkId=797795).
     
-  -  `Import-PublicFolderMailboxes.ps1`
+  - `Import-PublicFolderMailboxes.ps1`
     
-  -  `ImportPublicFolderMailboxes.strings.psd1`
+  - `ImportPublicFolderMailboxes.strings.psd1`
     
-  -  `Sync-MailPublicFoldersCloudToOnprem.ps1`
+  - `Sync-MailPublicFoldersCloudToOnprem.ps1`
     
-  -  `Sync-MailPublicFoldersCloudToOnprem.strings.psd1`
+  - `Sync-MailPublicFoldersCloudToOnprem.strings.psd1`
     
 2. Save the files to the local computer on which you'll be running PowerShell. For example, C:\PFScripts.
     
 ## Step 2: Configure directory synchronization
 <a name="dirsync"> </a>
 
-Running the script  `Sync-MailPublicFoldersCloudToOnprem.ps1` will synchronize the mail-enabled public folders between Exchange Online and your Exchange Server on-premises environment. Special permissions assigned to mail-enabled public folders will need to be recreated in the cloud since cross-premise permissions are not supported in Hybrid Deployment scenarios. For more information, see [Exchange Server Hybrid Deployment](https://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx#doc).
+Running the script `Sync-MailPublicFoldersCloudToOnprem.ps1` will synchronize the mail-enabled public folders between Exchange Online and your Exchange Server on-premises environment. Special permissions assigned to mail-enabled public folders will need to be recreated in the cloud since cross-premise permissions are not supported in Hybrid Deployment scenarios. For more information, see [Exchange Server Hybrid Deployment](https://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx#doc).
   
 > [!NOTE]
 > Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be viewable in the Exchange admin center. See the Get-MailPublicFolder command. To recreate the SendAs permissions in the cloud, use the Add-RecipientPermission command. 
@@ -74,7 +74,7 @@ Running the script  `Sync-MailPublicFoldersCloudToOnprem.ps1` will synchronize t
   Sync-MailPublicFoldersCloudToOnprem.ps1 -Credential (Get-Credential)
   ```
 
-    Where  `Credential` is your Office 365 username and password. 
+    Where `Credential` is your Office 365 username and password. 
     
 > [!NOTE]
 > We recommend that you run this script daily to synchronize your mail-enabled public folders. 
@@ -84,7 +84,7 @@ Running the script  `Sync-MailPublicFoldersCloudToOnprem.ps1` will synchronize t
 
 The final step in this procedure is to configure the Exchange Server on-premises organization to allow access to Exchange Online public folders.
   
-Running the script  `Import-PublicFolderMailboxes.ps1` will import public folder mailbox objects from the cloud as mail-enabled users to your on-premises environment. The script will also configure the imported objects as remote public folder mailboxes. 
+Running the script `Import-PublicFolderMailboxes.ps1` will import public folder mailbox objects from the cloud as mail-enabled users to your on-premises environment. The script will also configure the imported objects as remote public folder mailboxes. 
   
 1. On Exchange Server, run the following command to import public folder mailbox objects from the cloud to your on-premises Active Directory.
     
@@ -92,7 +92,7 @@ Running the script  `Import-PublicFolderMailboxes.ps1` will import public folder
   Import-PublicFolderMailboxes.ps1 -Credential (Get-Credential)
   ```
 
-    Where  `Credential` is your Office 365 username and password. 
+    Where `Credential` is your Office 365 username and password. 
     
     > [!NOTE]
     > We recommend that you run this script daily to import your public folder mailbox objects because whenever public folder mailboxes reach their threshold capacity, they automatically split into multiple new mailboxes. Therefore, you always want to ensure you have imported the most recent public folder mailboxes from the cloud. 

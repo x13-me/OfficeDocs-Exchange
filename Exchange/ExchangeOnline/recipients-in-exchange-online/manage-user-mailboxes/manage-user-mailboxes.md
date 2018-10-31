@@ -11,12 +11,12 @@ f1_keywords:
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 957ca61c-1fa1-42ab-a0e6-8488e4782566
-description: "After you create a user mailbox, you can make changes and set additional properties by using the EAC or the Shell."
+description: "After you create a user mailbox, you can make changes and set additional properties by using the EAC or Exchange Online PowerShell."
 ---
 
 # Manage user mailboxes
 
-After you create a user mailbox, you can make changes and set additional properties by using the EAC or the Shell.
+After you create a user mailbox, you can make changes and set additional properties by using the EAC or Exchange Online PowerShell.
   
 ## What do you need to know before you begin?
 <a name="introduction"> </a>
@@ -28,7 +28,7 @@ After you create a user mailbox, you can make changes and set additional propert
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 <a name="introduction"> </a>
@@ -301,15 +301,15 @@ Use the **Mailbox Delegation** section to assign permissions to other users (als
     
 To assign permissions to delegates, click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**![Search icon](../../media/ITPro_EAC_.gif).
   
-#### Use the Shell to change user mailbox properties
+#### Use Exchange Online PowerShell to change user mailbox properties
 
-Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for user mailboxes. One advantage of using the Shell is the ability to change the properties for multiple mailboxes. For information about what parameters correspond to mailbox properties, see the following topics: 
+Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for user mailboxes. One advantage of using Exchange Online PowerShell is the ability to change the properties for multiple mailboxes. For information about what parameters correspond to mailbox properties, see the following topics: 
   
 - [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
     
 - [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
     
-Here are some examples of using the Shell to change user mailbox properties.
+Here are some examples of using Exchange Online PowerShell to change user mailbox properties.
   
 This example shows how to forward Pat Coleman's email messages to Sunil Koduri's (sunilk@contoso.com) mailbox.
   
@@ -347,7 +347,7 @@ To verify that you've successfully changed properties for a user mailbox, do the
   
 - In the EAC, select the mailbox and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected mailbox. 
     
-- In the Shell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple mailboxes. In the example above where the recipient limit was changed, run the following command to verify the new value. 
+- In Exchange Online PowerShell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple mailboxes. In the example above where the recipient limit was changed, run the following command to verify the new value. 
     
   ```
   Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | fl Name,RecipientLimits
@@ -406,7 +406,7 @@ To verify that you've successfully bulk edited user mailboxes, do one of the fol
   
 - In the EAC, select each of the mailboxes that you bulk edited and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. 
     
-- In the Exchange Management Shell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple mailboxes. For example, say you used the bulk edit feature in the EAC to enable the archive mailbox and assign a retention policy to all users in your organization. To verify these changes, you could run the following command: 
+- In Exchange Online PowerShell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple mailboxes. For example, say you used the bulk edit feature in the EAC to enable the archive mailbox and assign a retention policy to all users in your organization. To verify these changes, you could run the following command: 
     
   ```
   Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | fl Name,ArchiveDatabase,RetentionPolicy

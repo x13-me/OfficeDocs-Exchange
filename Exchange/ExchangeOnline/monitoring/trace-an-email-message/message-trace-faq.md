@@ -205,7 +205,7 @@ To find out why a message was detected to contain malware, [run a message trace]
 
 View the results, locate the message, and then view specific details about the message (see [View message trace results for messages less than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)).
 
-If the message was not delivered because it was determined to contain malware, this information will be provided in the events section. For example, the following is a sample **Detail**: Malware: " *ZipBomb*  " was detected in attachment  *file*  .  *zip*  . You will also be informed of the action that occurred as a result of the message containing malware, for example if the entire message was blocked or if all attachments were deleted and replaced with an alert text file. 
+If the message was not delivered because it was determined to contain malware, this information will be provided in the events section. For example, the following is a sample **Detail**: Malware: "*ZipBomb*" was detected in attachment *file*.*zip*. You will also be informed of the action that occurred as a result of the message containing malware, for example if the entire message was blocked or if all attachments were deleted and replaced with an alert text file. 
   
 ## Which mail flow rule (also known as a transport rule) or DLP policy was applied to a message?
 

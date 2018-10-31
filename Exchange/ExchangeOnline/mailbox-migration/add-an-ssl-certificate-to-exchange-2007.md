@@ -40,15 +40,13 @@ To create a certificate request in Microsoft Exchange Server 2007, use the [New-
   
  **To create a certificate request**
   
-1. Open Exchange Management Shell on the local server.
+1. Open the Exchange Management Shell on the local server.
     
 2. On the command line, type:
     
-  ```
-  >new-exchangecertificate -DomainName owa.servername.contoso.com, mail.servername.contoso.com, autodiscover.servername.contoso.com, 
-  sts.servername,contoso.com, oos.servername.contoso.com, mail12.servername.contoso.com, edge.servername.contoso.com
-   -FriendlyName "Exchange 2007 Certificate" -GenerateRequest:$true -KeySize 2048 -Path c:\certlocation -PrivateKeyExportable $true -SubjectName "c=us, o=ContosoCorporation, cn=servername,contoso.com"
-  ```
+    ```
+    New-ExchangeCertificate -DomainName "owa.servername.contoso.com","mail.servername.contoso.com","autodiscover.servername.contoso.com","sts.servername,contoso.com","oos.servername.contoso.com","mail12.servername.contoso.com","edge.servername.contoso.com" -FriendlyName "Exchange 2007 Certificate" -GenerateRequest:$true -KeySize 2048 -Path "C:\certlocation" -PrivateKeyExportable $true -SubjectName "c=us, o=ContosoCorporation, cn=servername,contoso.com"
+    ```
 
     In the command example above,  _servername_ is the name of your server,  _contoso.com_ is an example of a domain name, and  _certlocation_ is a file path to the location where you want to store the request once it is generated. Replace all these placeholders with the information that appropriate for yourMicrosoft Exchange Server 2007. 
     
@@ -56,7 +54,7 @@ To create a certificate request in Microsoft Exchange Server 2007, use the [New-
     
     Use the _ SubjectName _ parameter to specify the Subject Name on the resulting certificate. This field is used by DNS-aware services and binds a certificate to a particular domain name. 
     
-    You must specify the  _GenerateRequest_ parameter as  `$true`. Otherwise, you will create a self-signed certificate.
+    You must specify the  _GenerateRequest_ parameter as `$true`. Otherwise, you will create a self-signed certificate.
     
 3. After you run the above command, a certificate request is saved in the file location you specified by using the  _Path_ parameter. 
     
@@ -74,13 +72,13 @@ After you receive the certificate from the CA, use the [Import-ExchangeCertifica
   
  **To import the certificate request**
   
-1. Open Exchange Management Shell on local server.
+1. Open the Exchange Management Shell on local server.
     
 2. On the command line, type:
     
-  ```
-  > Import-ExchangeCertificate C:\filepath
-  ```
+    ```
+    Import-ExchangeCertificate C:\filepath
+    ```
 
     The  _filepath_ parameter above specifies the location where you saved the certificate file that was provided by the third-party CA. 
     
@@ -90,16 +88,14 @@ After you receive the certificate from the CA, use the [Import-ExchangeCertifica
   
 1. To enable the certificate, you use the [Enable-ExchangeCertificate](https://go.microsoft.com/fwlink/p/?LinkId=615770) command. On the command line, type: 
     
-  ```
-  Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services iis, smtp, pop, imap
-  
-  ```
-
+    ```
+    Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services iis, smtp, pop, imap
+    ```
     The  _Thumbprint_ parameter specifies the one you received as output when you ran the ** Import-ExchangeCertificate ** command. 
     
     In the  _Services_ parameter, specify the services you want to assign to this certificate. At a minimum, you should specify SMTP and IIS. 
     
-2. If you receive the warning **Overwrite the existing default SMTP certificate?**, type in  `A` (yes for all). 
+2. If you receive the warning **Overwrite the existing default SMTP certificate?**, type in `A` (yes for all). 
     
 ## See also
 <a name="BK_import"> </a>

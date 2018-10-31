@@ -93,12 +93,12 @@ Authorized users that have been added to the [Discovery Management](https://tech
 > [!IMPORTANT]
 > In Exchange 2010, the Legal Hold role provided users with sufficient permissions to place mailboxes on Litigation Hold. In Exchange 2013, you can use the same permission to place mailboxes on an indefinite or time-based In-Place Hold. However, to create a query-based In-Place Hold, the user must be assigned the Mailbox Search role. The Discovery Management role group has both these roles assigned. 
   
-In Exchange Server, In-Place Hold functionality is integrated with In-Place eDiscovery searches. You can use the **In-Place eDiscovery & Hold** wizard in the Exchange admin center (EAC) or the **New-MailboxSearch** and related cmdlets in Exchange Management Shell to place a mailbox on In-Place Hold. To learn more about placing a mailbox on In-Place Hold, see [Create or remove an In-Place Hold](create-or-remove-in-place-holds.md).
+In Exchange Server, In-Place Hold functionality is integrated with In-Place eDiscovery searches. You can use the **In-Place eDiscovery & Hold** wizard in the Exchange admin center (EAC) or the **New-MailboxSearch** and related cmdlets in the Exchange Management Shell to place a mailbox on In-Place Hold. To learn more about placing a mailbox on In-Place Hold, see [Create or remove an In-Place Hold](create-or-remove-in-place-holds.md).
   
 > [!NOTE]
 > If you use Exchange Online Archiving to provision a cloud-based archive for your on-premises mailboxes, you must manage In-Place Hold from your on-premises Exchange Server organization. Hold settings are automatically propagated to the cloud-based archive using DirSync. As previously stated, when you put an on-premises mailbox on hold, the corresponding cloud-based archive is also placed on hold. 
   
-Many organizations require that users be informed when they're placed on hold. Additionally, when a mailbox is on hold, any retention policies applicable to the mailbox user don't need to be suspended. Because messages continue to be deleted as expected, users may not notice they're on hold. If your organization requires that users on hold be informed, you can add a notification message to the mailbox user's **Retention Comment** property and use the **RetentionUrl** property to link to a web page for more information. Outlook 2010 and later displays the notification and URL in the backstage area. You must use the Shell to add and manage these properties for a mailbox. 
+Many organizations require that users be informed when they're placed on hold. Additionally, when a mailbox is on hold, any retention policies applicable to the mailbox user don't need to be suspended. Because messages continue to be deleted as expected, users may not notice they're on hold. If your organization requires that users on hold be informed, you can add a notification message to the mailbox user's **Retention Comment** property and use the **RetentionUrl** property to link to a web page for more information. Outlook 2010 and later displays the notification and URL in the backstage area. You must use Exchange Online PowerShell to add and manage these properties for a mailbox. 
   
 [Return to top](in-place-and-litigation-holds.md#BKMK_TOC)
   
@@ -107,7 +107,7 @@ Many organizations require that users be informed when they're placed on hold. A
 
 In Exchange Online, you can place public folders on hold by using a In-Place Hold. Using Litigation Hold for public folders isn't supported. When you create an In-Place Hold, the only option is to place a hold on all public folders in your organization. The result is that an In-Place Hold is placed on all public folder mailboxes.
   
-Additionally, when you place public folders on In-Place Hold, email messages related to the public folder hierarchy synchronization process are also preserved. This might result in thousands of hierarchy synchronization related email items being preserved. These messages can fill up the storage quota for the Recoverable Items folder on public folder mailboxes. To prevent this, you can create a query-based In-Place Hold and add the following  `property:value` pair to the search query: 
+Additionally, when you place public folders on In-Place Hold, email messages related to the public folder hierarchy synchronization process are also preserved. This might result in thousands of hierarchy synchronization related email items being preserved. These messages can fill up the storage quota for the Recoverable Items folder on public folder mailboxes. To prevent this, you can create a query-based In-Place Hold and add the following `property:value` pair to the search query: 
   
 ```
 NOT(subject:HierarchySync*)
@@ -138,9 +138,9 @@ The Recoverable Items folder contains the following subfolders used to store del
 
 |**Item type**|**Properties that trigger copy-on-write**|
 |:-----|:-----|
-|Messages (IPM.Note\*)  <br/> Posts (IPM.Post\*)  <br/> | Subject  <br/>  Body  <br/>  Attachments  <br/>  Senders/Recipients  <br/>  Sent/Received Dates  <br/> |
-|Items other than messages and posts  <br/> | Any change to a visible property, except the following:  <br/>  Item location (when an item is moved between folders)  <br/>  Item status change (read or unread)  <br/>  Changes to retention tag applied to an item  <br/> |
-|Items in the default folder Drafts  <br/> |None (items in the Drafts folder are exempt from copy on write)  <br/> |
+|Messages (IPM.Note\*)  <br/> Posts (IPM.Post\*)| Subject  <br/>  Body  <br/>  Attachments  <br/>  Senders/Recipients  <br/>  Sent/Received Dates|
+|Items other than messages and posts| Any change to a visible property, except the following:  <br/>  Item location (when an item is moved between folders)  <br/>  Item status change (read or unread)  <br/>  Changes to retention tag applied to an item|
+|Items in the default folder Drafts|None (items in the Drafts folder are exempt from copy on write)|
    
 > [!IMPORTANT]
 > Copy-on-write is disabled for calendar items in the organizer's mailbox when meeting responses are received from attendees and the tracking information for the meeting is updated. For calendar items and items that have a reminder set, copy-on-write is disabled for the ReminderTime and ReminderSignalTime properties. Changes to these properties are not captured by copy-on-write. Changes to RSS feeds aren't captured by copy-on-write. 
