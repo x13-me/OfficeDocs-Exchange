@@ -69,13 +69,13 @@ Users can control the following settings:
     
   - **International options** You can control the character sets used in messages. 
     
-    For more information about Outlook settings, see [Change the message format in Outlook](https://go.microsoft.com/fwlink/?LinkID=397890).
+    For more information about Outlook settings, see [Change the message format in Outlook](https://go.microsoft.com/fwlink/p/?LinkID=397890).
     
 - **Outlook Web App/Outlook on the web settings** You can set the message formatting options described in the following list: 
     
   - **Message format** You can set the default message format for all messages. You can override the default message format as you compose a specific message. 
     
-    For more information on Outlook Web App settings, see [Create and respond to messages in Outlook Web App](https://go.microsoft.com/fwlink/?LinkID=399384).
+    For more information on Outlook Web App settings, see [Create and respond to messages in Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkID=399384).
     
 [Return to top](message-format-and-transmission.md#RTT)
   

@@ -40,9 +40,9 @@ After you have setup two-step verification, you can also obtain an app password 
   
 ## Turn on two-step verification and create an app password in Outlook.com or Hotmail.com
 
-1. Sign in to [Outlook.com](https://go.microsoft.com/fwlink/?LinkId=255207) or [Hotmail.com](https://go.microsoft.com/fwlink/?LinkId=229224).
+1. Sign in to [Outlook.com](https://go.microsoft.com/fwlink/p/?LinkId=255207) or [Hotmail.com](https://go.microsoft.com/fwlink/p/?LinkId=229224).
     
-2. Go to the [Security settings](https://go.microsoft.com/fwlink/?LinkId=239676) page. Enter your password if prompted. 
+2. Go to the [Security settings](https://go.microsoft.com/fwlink/p/?LinkId=239676) page. Enter your password if prompted. 
     
     If you want to navigate to the Security settings page, in Outlook.com click or tap your profile picture on the upper right \> **View account** and on the Account page, On your **Account** page, choose **Security** on the blue bar and then, **more security options**.
     

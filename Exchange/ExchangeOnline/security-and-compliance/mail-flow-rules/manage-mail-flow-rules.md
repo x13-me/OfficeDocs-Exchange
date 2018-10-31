@@ -47,7 +47,7 @@ Interested in scenarios where these procedures are used? See the following topic
 
 - Estimated time to complete each procedure: 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) (Exchange Server), or in [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md). 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) (Exchange Server), or in [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md). 
     
 - When a rule is listed as **version 14**, this means that the rule is based on an Exchange Server 2010 mail flow rule format. All options are available for these rules.
     
@@ -72,9 +72,9 @@ Each DLP policy is a collection of mail flow rules. After you create the DLP pol
   
 1. Create a DLP policy. For instructions, see:
     
-  - [Exchange Server DLP Procedures](http://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df%28Office.14%29.aspx)
+  - [Exchange Server DLP Procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df(Office.14).aspx)
     
-  - [Exchange Online DLP procedures](http://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df%28Office.14%29.aspx)
+  - [Exchange Online DLP procedures](https://technet.microsoft.com/library/e2f575aa-552e-4dcc-8d7b-1ffd697d67df(Office.14).aspx)
     
 2. Modify the mail flow rules created by the DLP policy. See [View or modify a mail flow rule](manage-mail-flow-rules.md#ModifyRule).
     
@@ -155,7 +155,7 @@ The EAC allows you to create mail flow rules by using a template, copying an exi
 #### Use the Exchange Management Shell to create a mail flow rule
 <a name="CreateEAC"> </a>
 
-This example uses the [New-TransportRule](http://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx) cmdlet to create a new mail flow rule that prepends "  `External message to Sales DG:`" to messages sent from outside the organization to the Sales Department distribution group.
+This example uses the [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx) cmdlet to create a new mail flow rule that prepends "  `External message to Sales DG:`" to messages sent from outside the organization to the Sales Department distribution group.
   
 ```
 New-TransportRule -Name "Mark messages from the Internet to Sales DG" -FromScope NotInOrganization -SentTo "Sales Department" -PrependSubject "External message to Sales DG:"
@@ -202,7 +202,7 @@ To view the properties of a specific mail flow rule, you provide the name of tha
 Get-TransportRule "Sender is a member of marketing" | Format-List
 ```
 
-To modify the properties of an existing rule, use the [Set-TransportRule](http://technet.microsoft.com/library/8328125b-e166-436f-95e6-1afafdbdb89a.aspx) cmdlet. This cmdlet allows you to change any property, condition, action or exception associated with a rule. The following example adds an exception to the rule "Sender is a member of marketing" so that it won't apply to messages sent by the user Kelly Rollin: 
+To modify the properties of an existing rule, use the [Set-TransportRule](https://technet.microsoft.com/library/8328125b-e166-436f-95e6-1afafdbdb89a.aspx) cmdlet. This cmdlet allows you to change any property, condition, action or exception associated with a rule. The following example adds an exception to the rule "Sender is a member of marketing" so that it won't apply to messages sent by the user Kelly Rollin: 
   
 ```
 Set-TransportRule "Sender is a member of marketing" -ExceptIfFrom "Kelly Rollin"
@@ -223,7 +223,7 @@ To verify that you have successfully modified a mail flow rule, do the following
 ### Mail flow rule properties
 <a name="ModifyRule"> </a>
 
-You can also use the Set-TransportRule cmdlet to modify existing transport rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the Set-TransportRule cmdlet to make these changes see [Set-TransportRule](http://technet.microsoft.com/library/8328125b-e166-436f-95e6-1afafdbdb89a.aspx)
+You can also use the Set-TransportRule cmdlet to modify existing transport rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the Set-TransportRule cmdlet to make these changes see [Set-TransportRule](https://technet.microsoft.com/library/8328125b-e166-436f-95e6-1afafdbdb89a.aspx)
   
 |**Condition Name in the EAC**|**Condition name in Exchange Management Shell**|**Properties**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -372,7 +372,7 @@ To learn more, see [View mail protection reports](https://go.microsoft.com/fwlin
 ### Import or export a mail flow rule collection
 <a name="import"> </a>
 
-You must use the Exchange Management Shell to import or export a mail flow rule collection. For information about how to import a mail flow rule collection from an XML file, see [Import-TransportRuleCollection](http://technet.microsoft.com/library/880b3124-76c5-4212-a8b9-8f4523f8cbe6.aspx). For information about how to export a mail flow rule collection to an XML file, see [Export-TransportRuleCollection](http://technet.microsoft.com/library/bfdb6ced-cd81-49f1-a929-4d76dbaf5590.aspx).
+You must use the Exchange Management Shell to import or export a mail flow rule collection. For information about how to import a mail flow rule collection from an XML file, see [Import-TransportRuleCollection](https://technet.microsoft.com/library/880b3124-76c5-4212-a8b9-8f4523f8cbe6.aspx). For information about how to export a mail flow rule collection to an XML file, see [Export-TransportRuleCollection](https://technet.microsoft.com/library/bfdb6ced-cd81-49f1-a929-4d76dbaf5590.aspx).
   
 ## Need more help?
 
@@ -388,20 +388,20 @@ Resources for Exchange Online:
   
 Resources for Exchange Online Protection: 
   
-[Transport rules](http://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
+[Transport rules](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
   
-[Transport Rule Conditions](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx)
+[Transport Rule Conditions](https://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx)
   
-[Transport Rule Actions](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)
+[Transport Rule Actions](https://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)
   
 [Transport and inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
   
 Resources for Exchange Server 2016:
   
-[Transport Rules](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
+[Transport Rules](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
   
-[Transport Rule Conditions](http://technet.microsoft.com/library/c918ea00-1e68-4b8b-8d51-6966b4432e2d.aspx)
+[Transport Rule Conditions](https://technet.microsoft.com/library/c918ea00-1e68-4b8b-8d51-6966b4432e2d.aspx)
   
-[Transport Rule Actions](http://technet.microsoft.com/library/5d11a955-b1cc-4150-a0b9-a8cc48ba9bde.aspx)
+[Transport Rule Actions](https://technet.microsoft.com/library/5d11a955-b1cc-4150-a0b9-a8cc48ba9bde.aspx)
   
 

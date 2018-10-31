@@ -26,7 +26,7 @@ You use the **Set-OrganizationRelationship** cmdlet to configure these settings.
 
 - Estimated time to complete each procedure: 5 minutes
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "MailTips" entry in the [Mail flow permissions](http://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "MailTips" entry in the [Mail flow permissions](https://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic. 
     
 - You can only use the Shell to perform this procedure.
     
@@ -51,7 +51,7 @@ This example configures the organizational relationship to prevent MailTips from
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationRelationship](http://technet.microsoft.com/library/4e3b9d1d-cf41-4fd0-97e3-a0bbc816cf87.aspx).
+For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://technet.microsoft.com/library/4e3b9d1d-cf41-4fd0-97e3-a0bbc816cf87.aspx).
   
 ### Use the Shell to configure which MailTips are returned to the remote organization
 
@@ -76,7 +76,7 @@ This example configures the organizational relationship so that no MailTips are 
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessLevel None
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationRelationship](http://technet.microsoft.com/library/4e3b9d1d-cf41-4fd0-97e3-a0bbc816cf87.aspx).
+For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://technet.microsoft.com/library/4e3b9d1d-cf41-4fd0-97e3-a0bbc816cf87.aspx).
   
 ### Use the Shell to configure a specific group of users for whom recipient-specific MailTips are returned
 
@@ -94,6 +94,6 @@ You can specify a MailTips access group on the organizational relationship. Afte
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessScope ShareMailTips@contoso.com
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationRelationship](http://technet.microsoft.com/library/4e3b9d1d-cf41-4fd0-97e3-a0bbc816cf87.aspx).
+For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://technet.microsoft.com/library/4e3b9d1d-cf41-4fd0-97e3-a0bbc816cf87.aspx).
   
 

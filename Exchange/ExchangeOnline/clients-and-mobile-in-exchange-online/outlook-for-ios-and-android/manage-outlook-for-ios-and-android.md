@@ -37,7 +37,7 @@ Microsoft recommends Office 365 customers use the features of the Enterprise Mob
 > [!IMPORTANT]
 > Mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped when access is managed by a conditional access policy that includes either [Require device to be marked as compliant](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications) or [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference). 
   
-A complete side-by-side comparison of MDM and Intune is available in [Choose between MDM for Office 365 and Microsoft Intune](https://support.office.com/en-US/article/Choose-between-MDM-for-Office-365-and-Microsoft-Intune-c93d9ab9-efb2-4349-9b93-30c30562ee22).
+A complete side-by-side comparison of MDM and Intune is available in [Choose between MDM for Office 365 and Microsoft Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22).
   
 > [!NOTE]
 > When using mobile device cmdlets such as  `Get-MobileDevice` to check the status of a device, the timestamp for Outlook for iOS and Android synchronization, indicated by the  `LastSyncTime` property, may be up to 15 minutes behind the actual time of synchronization. While device synchronization does occur in real time, the returned time stamp may lag behind. 
@@ -57,7 +57,7 @@ Key features of the Enterprise Mobility + Security suite with Outlook for iOS an
   
 - **Conditional access**. Azure Active Directory ensures that Exchange Online email can be accessed only when the conditional access requirements are met. For more information on device enrollment, see [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
     
-- **Intune app protection**. Outlook for iOS and Android allows you to protect your corporate data with Intune app protection policies. This is a great option for "bring your own device" (BYOD) scenarios where you want to keep corporate data safe without managing a users' devices. For more information on Intune app protection policies, see [Protect app data using mobile app management policies with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).
+- **Intune app protection**. Outlook for iOS and Android allows you to protect your corporate data with Intune app protection policies. This is a great option for "bring your own device" (BYOD) scenarios where you want to keep corporate data safe without managing a users' devices. For more information on Intune app protection policies, see [Protect app data using mobile app management policies with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).
     
 - **Device enrollment**. Intune lets you manage your workforce's devices and apps, and how they access your company data. In this model, Outlook for iOS and Android ensures that Exchange Online email can be accessed only on phones and tablets that are managed by your company and are compliant with your organization's policy. When users log on to the Outlook app on an unmanaged mobile device, Outlook prompts users to enroll the device in Intune by leveraging the Azure conditional access policy, and then validates that the device meets organizational standards of device compliance.
     
@@ -79,13 +79,13 @@ For detailed information on MDM, see the following resources:
   
 - [Overview built-in Mobile Device Management for Office 365](https://go.microsoft.com/fwlink/p/?LinkId=623837).
     
-- [Manage settings and features on your devices with Microsoft Intune policies](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)
+- [Manage settings and features on your devices with Microsoft Intune policies](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)
     
-- Instructions for your end-users to enroll a device in Office 365 MDM: [Enroll your mobile device in Office 365](https://support.office.com/en-us/article/Enroll-your-mobile-device-in-Office-365-c8ac722d-dcaf-4135-8345-3e6327f5d3c5)
+- Instructions for your end-users to enroll a device in Office 365 MDM: [Enroll your mobile device in Office 365](https://support.office.com/article/c8ac722d-dcaf-4135-8345-3e6327f5d3c5)
     
 ### Using Mobile Device Access and Mobile Device Mailbox Policies
 
-Microsoft recommends Office 365 customers use either the Enterprise Mobility + Security suite or the built-in MDM for Office 365 to manage company data on mobile devices, due to the advanced capabilities provided by those services. Outlook for iOS and Android does support mobile device access and mobile device mailbox policies (formerly known as Exchange Active Sync policies), which are available through the Exchange Admin Center.
+Microsoft recommends Office 365 customers use either the Enterprise Mobility + Security suite or the built-in MDM for Office 365 to manage company data on mobile devices, due to the advanced capabilities provided by those services. Outlook for iOS and Android does support mobile device access and mobile device mailbox policies (formerly known as Exchange Active Sync policies), which are available through the Exchange admin center.
   
 Outlook for iOS and Android supports the following Exchange mobile device mailbox policy settings:
   

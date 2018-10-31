@@ -85,7 +85,7 @@ Session Initiation Protocol (SIP) is a standard protocol for initiating interact
   
 When you create a new dial plan, you have the option of creating a SIP URI dial plan if your environment has Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server deployed. You can also create a SIP URI dial plan if your organization has IP PBXs or SIP-enabled PBXs. In the latter case, your organization must also support SIP URIs and SIP routing.
   
-A SIP URI is a user's SIP phone number. The SIP URI resembles an email address and is written in the following format: sip _:\<user name\>@\<domain or IP address\>_: _Port_. When a SIP-enabled IP PBX or PBX is used to send a call to the Exchange servers, the device will send the SIP URI for the calling and called party in the SIP header and will not include extension numbers.
+A SIP URI is a user's SIP phone number. The SIP URI resembles an email address and is written in the following format: sip _:\<username\>@\<domain or IP address\>_: _Port_. When a SIP-enabled IP PBX or PBX is used to send a call to the Exchange servers, the device will send the SIP URI for the calling and called party in the SIP header and will not include extension numbers.
   
 ### E.164 URI type
 

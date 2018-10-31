@@ -77,9 +77,9 @@ For more information, see [CSV files for IMAP migration batches](csv-files-for-i
     
 2. Go to the Office 365 admin center.
     
-3. Navigate to **Users** \> **Active users**. Keep an eye on the **User name** column. You'll use this information in a minute. Keep the Office 365 admin center open, too. 
+3. Navigate to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the Office 365 admin center open, too. 
     
-    ![User Name column in the Office 365 admin center](../media/12d5b34e-cbb2-495c-a5f0-2ce816b96622.png)
+    ![username column in the Office 365 admin center](../media/12d5b34e-cbb2-495c-a5f0-2ce816b96622.png)
   
 4. Start Excel.
     
@@ -93,9 +93,9 @@ For more information, see [CSV files for IMAP migration batches](csv-files-for-i
     
     ![Cell headings in the Excel migration file](../media/45a98c28-0918-42ec-a8e9-f4b5baccd921.png)
   
-6. Next, enter the email address, user name, and password for each mailbox you want to migrate. Enter one mailbox per row:
+6. Next, enter the email address, username, and password for each mailbox you want to migrate. Enter one mailbox per row:
     
-  - **Column A** is the email address of the Office 365 mailbox. This is what is shown in the **User name** column under **Users** \> **Active users** in the Office 365 admin center. 
+  - **Column A** is the email address of the Office 365 mailbox. This is what is shown in the **username** column under **Users** \> **Active users** in the Office 365 admin center. 
     
   - **Column B** is the sign-in name—for example, alberta, or often, alberta@contoso.com—for the user's mailbox on the source email system. 
     
@@ -121,7 +121,7 @@ For more information, see [CSV files for IMAP migration batches](csv-files-for-i
 
 For this task, you create a migration file that contains a list of mailboxes to migrate to Office 365. The easiest way to create the migration file is by using Excel, so we use Excel in these instructions. You can use Excel 2013, Excel 2010, or Excel 2007.
   
-When you create a migration file in this task, you type your mailbox admin credentials and user names using a special format. This allows you to access user mailboxes without knowing or resetting the user passwords. We provide the format used by Exchange, Dovecot, and Mirapoint IMAP servers. If your source email system isn't listed here and you don't know the correct format, you still have the option of resetting user passwords. Skip this task and go to [Create the list of user mailboxes when you know the user passwords, or you'll reset the passwords ](migrate-other-types-of-imap-mailboxes.md#KnownPassword).
+When you create a migration file in this task, you type your mailbox admin credentials and usernames using a special format. This allows you to access user mailboxes without knowing or resetting the user passwords. We provide the format used by Exchange, Dovecot, and Mirapoint IMAP servers. If your source email system isn't listed here and you don't know the correct format, you still have the option of resetting user passwords. Skip this task and go to [Create the list of user mailboxes when you know the user passwords, or you'll reset the passwords ](migrate-other-types-of-imap-mailboxes.md#KnownPassword).
   
 You don't have to migrate all mailboxes at once. You can migrate them in batches at your convenience. You can include up to 50,000 mailboxes (one row for each user) in your migration file, which can be as large as 10 MB.
   
@@ -129,9 +129,9 @@ You don't have to migrate all mailboxes at once. You can migrate them in batches
     
 2. Go to the Office 365 admin center.
     
-3. Navigate to **Users** \> **Active users**. Keep an eye on the **User name** column. You'll use this information in a minute. Keep the Office 365 admin center page open, too. 
+3. Navigate to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the Office 365 admin center page open, too. 
     
-    ![User Name column in the Office 365 admin center](../media/12d5b34e-cbb2-495c-a5f0-2ce816b96622.png)
+    ![username column in the Office 365 admin center](../media/12d5b34e-cbb2-495c-a5f0-2ce816b96622.png)
   
 4. Start Excel.
     
@@ -145,11 +145,11 @@ You don't have to migrate all mailboxes at once. You can migrate them in batches
     
     ![Cell headings in the Excel migration file](../media/45a98c28-0918-42ec-a8e9-f4b5baccd921.png)
   
-6. Next, enter the email address, user name, and password for each mailbox you want to migrate. Enter one mailbox per row.
+6. Next, enter the email address, username, and password for each mailbox you want to migrate. Enter one mailbox per row.
     
-  - **Column A** is the email address of the user's Office 365 mailbox. This is what's shown in the **User name** column under **Users** \> **Active users** in the Office 365 admin center. 
+  - **Column A** is the email address of the user's Office 365 mailbox. This is what's shown in the **username** column under **Users** \> **Active users** in the Office 365 admin center. 
     
-  - **Column B** is the combination of the mailbox admin name and user name that's specific to your source email system. See [Format mailbox admin credentials for different IMAP servers](migrate-other-types-of-imap-mailboxes.md#FormatCredentials) for formatting instructions. 
+  - **Column B** is the combination of the mailbox admin name and username that's specific to your source email system. See [Format mailbox admin credentials for different IMAP servers](migrate-other-types-of-imap-mailboxes.md#FormatCredentials) for formatting instructions. 
     
   - **Column C** is the password for the mailbox admin account. 
     
@@ -160,11 +160,11 @@ You don't have to migrate all mailboxes at once. You can migrate them in batches
 #### Format mailbox admin credentials for different IMAP servers
 <a name="FormatCredentials"> </a>
 
-In the migration file, each cell in the **UserName** column consists of two combined names: the user name of the person whose email is being migrated, and the user name of the mailbox admin account. The supported format for mailbox admin credentials is different depending on your source email system. Here are the formats for several types of source email systems. 
+In the migration file, each cell in the **UserName** column consists of two combined names: the username of the person whose email is being migrated, and the username of the mailbox admin account. The supported format for mailbox admin credentials is different depending on your source email system. Here are the formats for several types of source email systems. 
   
 #### Microsoft Exchange
 
-If you're migrating email from the IMAP implementation for Exchange, use the format **Domain/Admin_UserName/User_UserName** for the **UserName** attribute in the migration file. Let's say you're migrating email from Exchange for Alberta Greene, Bobby Overby, Irwin Hume, Katrina Hernandez, and Mathew Slattery. You have a mailbox admin account, where the user name is **mailadmin** and the password is **P@ssw0rd**. Here's what your migration file would look like:
+If you're migrating email from the IMAP implementation for Exchange, use the format **Domain/Admin_UserName/User_UserName** for the **UserName** attribute in the migration file. Let's say you're migrating email from Exchange for Alberta Greene, Bobby Overby, Irwin Hume, Katrina Hernandez, and Mathew Slattery. You have a mailbox admin account, where the username is **mailadmin** and the password is **P@ssw0rd**. Here's what your migration file would look like:
   
 ![A sample migration file for Exchange](../media/5fbddcd8-1404-46e1-9493-a9b371e90de6.png)
   

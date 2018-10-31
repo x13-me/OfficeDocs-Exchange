@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 67ba838e-031d-4a98-b277-170683b6f520
-description: "Your users carry sensitive corporate information in their pockets every day. If one of them loses their mobile phone, your data can end up in the hands of another person. If one of your users loses their mobile phone, you can use the Exchange Administration Center (EAC) or the Exchange Management Shell to wipe their phone clean of all corporate and user information."
+description: "Your users carry sensitive corporate information in their pockets every day. If one of them loses their mobile phone, your data can end up in the hands of another person. If one of your users loses their mobile phone, you can use the Exchange admin center (EAC) or the Exchange Management Shell to wipe their phone clean of all corporate and user information."
 ---
 
 # Perform a remote wipe on a mobile phone
 
-Your users carry sensitive corporate information in their pockets every day. If one of them loses their mobile phone, your data can end up in the hands of another person. If one of your users loses their mobile phone, you can use the Exchange Administration Center (EAC) or the Exchange Management Shell to wipe their phone clean of all corporate and user information. 
+Your users carry sensitive corporate information in their pockets every day. If one of them loses their mobile phone, your data can end up in the hands of another person. If one of your users loses their mobile phone, you can use the Exchange admin center (EAC) or the Exchange Management Shell to wipe their phone clean of all corporate and user information. 
   
 > [!NOTE]
 > This topic also provides instructions for how to use Microsoft Outlook Web App to perform a remote wipe on a phone. The user must be signed in to Outlook Web App to perform a remote wipe. 
@@ -23,7 +23,7 @@ Your users carry sensitive corporate information in their pockets every day. If 
 
 - Estimated time to complete: 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mobile devices" entry in the [Clients and mobile devices permissions](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mobile devices" entry in the [Clients and mobile devices permissions](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic. 
     
 - This procedure will clear all data on the mobile phone, including installed applications, photos, and personal information.
     

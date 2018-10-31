@@ -87,11 +87,11 @@ Before you migrate mailboxes to Office 365 by using a cutover migration, there a
   
 1. **Configure Outlook Anywhere on your on-premises Exchange Server** The email migration service uses Outlook Anywhere (also known as RPC over HTTP), to connect to your on-premises Exchange Server. Outlook Anywhere is automatically configured for Exchange 2013. For information about how to set up Outlook Anywhere for Exchange 2010, Exchange 2007, and Exchange 2003, see the following: 
     
-  - [Exchange 2010: Enable Outlook Anywhere](https://go.microsoft.com/fwlink/?LinkID=187249)
+  - [Exchange 2010: Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=187249)
     
-  - [Exchange 2007: How to Enable Outlook Anywhere](https://go.microsoft.com/fwlink/?LinkID=167210)
+  - [Exchange 2007: How to Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=167210)
     
-  - [How to configure Outlook Anywhere with Exchange 2003](https://go.microsoft.com/fwlink/?LinkID=167209)
+  - [How to configure Outlook Anywhere with Exchange 2003](https://go.microsoft.com/fwlink/p/?LinkID=167209)
     
 2. You must use a certificate issued by a trusted certification authority (CA) with your Outlook Anywhere configuration in order for Office 365 to run a cutover migration. For cutover migration you will to add the Outlook Anywhere and Autodiscover services to your certificate. For instructions on how to set up certificates, see:
     
@@ -105,7 +105,7 @@ Before you migrate mailboxes to Office 365 by using a cutover migration, there a
     
   - Use Outlook from outside your corporate network to connect to your on-premises Exchange mailbox.
     
-  - Use the [Microsoft Exchange Remote Connectivity Analyzer](https://technet.microsoft.com/en-us/library/dd439364%28v=exchg.80%29.aspx) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests. 
+  - Use the [Microsoft Exchange Remote Connectivity Analyzer](https://technet.microsoft.com/library/dd439364(v=exchg.80).aspx) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests. 
     
   - Wait for the connection to automatically be tested when you connect Office 365 to your email system later in this procedure. 
     
@@ -175,7 +175,7 @@ A migration endpoint contains the settings and credentials needed to connect the
     
   - **Email address** Type the  *email address*  of any user in the on-premises Exchange organization that will be migrated. Office 365 will test the connectivity to this user's mailbox. 
     
-  - **Account with privileges** Type the  *user name*  (domain\user name format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address. 
+  - **Account with privileges** Type the  *username*  (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address. 
     
   - **Password of account with privileges** Type the  *password*  for the account with privileges that is the administrator account. 
     
@@ -263,7 +263,7 @@ If you need some help configuring your DNS settings, see [Create DNS records for
 
 Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your source email system. Now that the email migration to Office 365 is complete, it's time to point your MX record at Office 365. This helps make sure that email is delivered to your Office 365 mailboxes. Moving the MX record will also let you turn off your old email system when you're ready. 
   
-For many DNS providers, there are specific instructions to change your MX record. If your DNS provider isn't included, or if you want to get a sense of the general directions, [general MX record instructions](https://go.microsoft.com/fwlink/?LinkId=397449) are provided as well. 
+For many DNS providers, there are specific instructions to change your MX record. If your DNS provider isn't included, or if you want to get a sense of the general directions, [general MX record instructions](https://go.microsoft.com/fwlink/p/?LinkId=397449) are provided as well. 
   
 It can take up to 72 hours for the email systems of your customers and partners to recognize the changed MX record. Wait at least 72 hours before you proceed to the next task: Delete the cutover migration batch.
   
@@ -316,11 +316,11 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
     
     For more information, see the following:
     
-  - [Modify or Remove Exchange 2010](https://go.microsoft.com/fwlink/?LinkId=217936)
+  - [Modify or Remove Exchange 2010](https://go.microsoft.com/fwlink/p/?LinkId=217936)
     
-  - [How to Remove an Exchange 2007 Organization](https://go.microsoft.com/fwlink/?LinkID=100485)
+  - [How to Remove an Exchange 2007 Organization](https://go.microsoft.com/fwlink/p/?LinkID=100485)
     
-  - [How to Uninstall Exchange Server 2003](https://go.microsoft.com/fwlink/?LinkID=56561)
+  - [How to Uninstall Exchange Server 2003](https://go.microsoft.com/fwlink/p/?LinkID=56561)
     
     > [!NOTE]
     > Decommissioning Exchange can have unintended consequences. Before decommissioning your on-premises Exchange organization, we recommend that you contact Microsoft Support. 

@@ -57,7 +57,7 @@ The following XML snippet shows how the needs expressed earlier are currently de
 
 ### Pattern-matching in your solution
 
-The XML rule definition shown earlier includes pattern-matching, which improves the likelihood that the rule will detect only the important information and not detect vague, related information. For more information about the XML schema for DLP rules and templates, see [Define Your Own DLP Templates and Information Types](http://technet.microsoft.com/library/f4622dba-3347-4758-b4a2-f01b043c908c.aspx).
+The XML rule definition shown earlier includes pattern-matching, which improves the likelihood that the rule will detect only the important information and not detect vague, related information. For more information about the XML schema for DLP rules and templates, see [Define Your Own DLP Templates and Information Types](https://technet.microsoft.com/library/f4622dba-3347-4758-b4a2-f01b043c908c.aspx).
   
 In the credit card rule, there is a section of XML code for patterns, which includes a primary identifier match and some additional corroborative evidence. All three of these requirements are explained here:
   
@@ -116,7 +116,7 @@ You can use a custom rule that defines a pattern without extra evidence, as show
     </Entity>
 ```
 
-The illustration of credit cards in this article can be extended to other sensitive information rules as well. To see the complete list of the Microsoft-supplied rules in Exchange, use the [Get-ClassificationRuleCollection](http://technet.microsoft.com/library/bb740ed7-6af4-4053-ad9c-6688ca42b481.aspx) cmdlet in the Exchange Management Shell in the following manner: 
+The illustration of credit cards in this article can be extended to other sensitive information rules as well. To see the complete list of the Microsoft-supplied rules in Exchange, use the [Get-ClassificationRuleCollection](https://technet.microsoft.com/library/bb740ed7-6af4-4053-ad9c-6688ca42b481.aspx) cmdlet in the Exchange Management Shell in the following manner: 
   
 ```
 $rule_collection = Get-ClassificationRuleCollection
@@ -132,8 +132,8 @@ $rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_cla
   
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
   
-[Exchange Management Shell](http://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx)
+[Exchange Management Shell](https://technet.microsoft.com/library/925ad66f-2f05-4269-9923-c353d9c19312.aspx)
   
-[Exchange Online PowerShell](http://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx)
+[Exchange Online PowerShell](https://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx)
   
 

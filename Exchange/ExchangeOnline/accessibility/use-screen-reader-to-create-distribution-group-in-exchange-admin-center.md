@@ -30,27 +30,27 @@ Using a screen reader and keyboard shortcuts, you can create a new distribution 
 Navigate with Internet Explorer and keyboard shortcuts, and make sure that you have the appropriate Office 365 subscription and admin role to work in the EAC. Then, open the EAC and get started.
   
 > [!NOTE]
->  Two types of groups can be used to distribute messages. Mail-enabled universal distribution groups (also called  *distribution groups*  ) can be used only to distribute messages. Mail-enabled universal security groups (also called  *security groups*  ) can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, refer to the [Manage mail-enabled security groups](https://go.microsoft.com/fwlink/p/?LinkID=627033) article on TechNet. >  Active Directory and Exchange use the term  *distribution group*  differently. In Active Directory, a  *distribution group*  refers to any group that doesn't have a security context, regardless of whether it's mail-enabled. By contrast, in Exchange, all mail-enabled groups are referred to as  *distribution groups*  , regardless of whether they have a security context. >  This topic assumes you are using the EAC. For information about using the Shell to create distribution groups, refer to the [New-DistributionGroup](https://go.microsoft.com/fwlink/?LinkId=798650) article on TechNet. >  If your organization has configured a group naming policy, it's applied only to groups created by users. When you or other administrators use the EAC to create distribution groups, the group naming policy is ignored and isn't applied to the group name. For more information, refer to the [Create a distribution group naming policy](https://go.microsoft.com/fwlink/?LinkId=798657) and [Override the distribution group naming policy](https://go.microsoft.com/fwlink/?LinkId=798661) articles on TechNet. 
+>  Two types of groups can be used to distribute messages. Mail-enabled universal distribution groups (also called  *distribution groups*  ) can be used only to distribute messages. Mail-enabled universal security groups (also called  *security groups*  ) can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, refer to the [Manage mail-enabled security groups](https://go.microsoft.com/fwlink/p/?LinkID=627033) article on TechNet. >  Active Directory and Exchange use the term  *distribution group*  differently. In Active Directory, a  *distribution group*  refers to any group that doesn't have a security context, regardless of whether it's mail-enabled. By contrast, in Exchange, all mail-enabled groups are referred to as  *distribution groups*  , regardless of whether they have a security context. >  This topic assumes you are using the EAC. For information about using the Shell to create distribution groups, refer to the [New-DistributionGroup](https://go.microsoft.com/fwlink/p/?LinkId=798650) article on TechNet. >  If your organization has configured a group naming policy, it's applied only to groups created by users. When you or other administrators use the EAC to create distribution groups, the group naming policy is ignored and isn't applied to the group name. For more information, refer to the [Create a distribution group naming policy](https://go.microsoft.com/fwlink/p/?LinkId=798657) and [Override the distribution group naming policy](https://go.microsoft.com/fwlink/p/?LinkId=798661) articles on TechNet. 
   
 ### Use your browser and keyboard to navigate in the EAC
 
 Exchange Online, which includes the EAC, is a web-based application, so the keyboard shortcuts and navigation may be different from those in Exchange 2016. [Accessibility in the Exchange admin center](accessibility-in-exchange-admin-center.md).
   
-For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/?LinkID=787614).
+For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=787614).
   
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/?LinkID=317550).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
   
 ### Confirm your Office 365 subscription plan
 
 Exchange Online is included in Office 365 business and enterprise subscription plans. But capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it. 
   
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://go.microsoft.com/fwlink/?LinkID=797552
-) and [Exchange Online Service Description.](https://go.microsoft.com/fwlink/?LinkID=797553
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://go.microsoft.com/fwlink/p/?LinkID=797552
+) and [Exchange Online Service Description.](https://go.microsoft.com/fwlink/p/?LinkID=797553
 ).
   
 ### Open the EAC, and confirm your admin role
 
-To complete the tasks covered in this topic, [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your Office 365 global administrator has assigned you to the [Organization Management](https://go.microsoft.com/fwlink/?LinkId=797868) and [Records Management](https://go.microsoft.com/fwlink/?LinkId=798797) admin role groups. [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+To complete the tasks covered in this topic, [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your Office 365 global administrator has assigned you to the [Organization Management](https://go.microsoft.com/fwlink/p/?LinkId=797868) and [Records Management](https://go.microsoft.com/fwlink/p/?LinkId=798797) admin role groups. [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
   
 ## Use the EAC to create a distribution group
 <a name="BKMK_CreateDG"> </a>

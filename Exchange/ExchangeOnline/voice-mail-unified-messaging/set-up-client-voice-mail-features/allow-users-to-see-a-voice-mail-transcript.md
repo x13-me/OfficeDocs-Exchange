@@ -14,7 +14,7 @@ description: "Voice Mail Preview is a feature that's available to users who rece
 
 # Allow users to see a voice mail transcript
 
-Voice Mail Preview is a feature that's available to users who receive their voice mail messages from Unified Messaging (UM). Voice Mail Preview enhances the existing UM voice mail functionality by providing a text version of audio recordings. The voice mail text is displayed in email messages within Microsoft Outlook Web App, Outlook 2010 and later versions, and in other supported email programs. For more information, see [Microsoft Speech Technologies](http://go.microsoft.com/fwlink/p/?linkId=187348).
+Voice Mail Preview is a feature that's available to users who receive their voice mail messages from Unified Messaging (UM). Voice Mail Preview enhances the existing UM voice mail functionality by providing a text version of audio recordings. The voice mail text is displayed in email messages within Microsoft Outlook Web App, Outlook 2010 and later versions, and in other supported email programs. For more information, see [Microsoft Speech Technologies](https://go.microsoft.com/fwlink/p/?linkId=187348).
   
 ## Do users need to use a specific email program?
 
@@ -56,7 +56,7 @@ Voice Mail Preview text is available in the following languages:
     
 - Spanish (Spain) (es-ES)
     
-If you have an on-premises or hybrid deployment of UM, you can download the UM language packs from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=266542).
+If you have an on-premises or hybrid deployment of UM, you can download the UM language packs from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=266542).
   
 If you have an on-premises or hybrid deployment, after you install a UM language pack, the dial plans and auto attendants can be configured to use the language you've chosen. For online customers, you don't have to install any UM language packs. Many companies have only one UM dial plan. UM will try to create a voice mail preview in the default dial plan language, but will only be successful if the default language supports Voice Mail Preview. A UM dial plan can only be configured to create voice mail previews in one language at a time.
   

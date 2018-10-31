@@ -42,7 +42,7 @@ The following table summarizes the supported topologies for users with Outlook 2
    
 The following articles describe how to deploy public folders in your Exchange organization in a co-existence or hybrid topology. As long as your Outlook 2016 for Mac clients have installed the April 2016 update, they will be able to access public folders in the configurations detailed in these articles:
   
-- [Configure legacy public folders where user mailboxes are on Exchange 2013 servers](http://technet.microsoft.com/library/1d5ca19e-696e-4054-a634-15dd34d952b7.aspx)
+- [Configure legacy public folders where user mailboxes are on Exchange 2013 servers](https://technet.microsoft.com/library/1d5ca19e-696e-4054-a634-15dd34d952b7.aspx)
     
 - [Configure Exchange 2013 public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md)
     

@@ -103,8 +103,8 @@ See the following articles:
 ## Related articles
 <a name="SB"> </a>
 
-Are you using Exchange Server? See [Exchange admin center in Exchange Server](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
+Are you using Exchange Server? See [Exchange admin center in Exchange Server](https://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
   
-Are you using Exchange Online Protection? See [Exchange admin center in Exchange Online Protection](http://technet.microsoft.com/library/97921f0e-832f-40c7-b56d-414faede5191.aspx).
+Are you using Exchange Online Protection? See [Exchange admin center in Exchange Online Protection](https://technet.microsoft.com/library/97921f0e-832f-40c7-b56d-414faede5191.aspx).
   
 

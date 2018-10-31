@@ -36,9 +36,9 @@ To implement specific messaging policies by using mail flow rules, see these top
     
 - [Use mail flow rules to route email based on a list of words, phrases, or patterns](use-rules-to-route-email.md)
     
-- [Use mail flow rules to set the spam confidence level (SCL) in messages](http://technet.microsoft.com/library/4ccab17a-6d49-4786-aa28-92fb28893e99.aspx)
+- [Use mail flow rules to set the spam confidence level (SCL) in messages](https://technet.microsoft.com/library/4ccab17a-6d49-4786-aa28-92fb28893e99.aspx)
     
-- [Create organization-wide safe sender or blocked sender lists in Office 365](http://technet.microsoft.com/library/9721b46d-cbea-4121-be51-542395e6fd21.aspx)
+- [Create organization-wide safe sender or blocked sender lists in Office 365](https://technet.microsoft.com/library/9721b46d-cbea-4121-be51-542395e6fd21.aspx)
     
 - [Common message approval scenarios](common-message-approval-scenarios.md)
     
@@ -130,7 +130,7 @@ There are several types of messages that pass through an organization. The follo
   
 [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md)
   
-[Organization-wide Disclaimers, Signatures, Footers, or Headers](http://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx)
+[Organization-wide Disclaimers, Signatures, Footers, or Headers](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx)
   
 [Manage message approval](manage-message-approval.md)
   

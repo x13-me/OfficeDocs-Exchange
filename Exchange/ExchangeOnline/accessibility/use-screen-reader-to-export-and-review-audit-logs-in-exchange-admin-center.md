@@ -33,15 +33,15 @@ Navigate with Internet Explorer and keyboard shortcuts, and make sure that you h
 
 Exchange Online, which includes the EAC, is a web-based application, so the keyboard shortcuts and navigation may be different from those in Exchange 2016. [Accessibility in the Exchange admin center](accessibility-in-exchange-admin-center.md).
   
-For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/?LinkID=787614).
+For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=787614).
   
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/?LinkID=317550).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
   
 ### Confirm your Office 365 subscription plan
 
 Exchange Online is included in Office 365 business and enterprise subscription plans, but capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it.
   
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 36 business product or license do I have?](https://go.microsoft.com/fwlink/?LinkID=797552) and [Exchange Online Service Description](https://go.microsoft.com/fwlink/?LinkID=797553).
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 36 business product or license do I have?](https://go.microsoft.com/fwlink/p/?LinkID=797552) and [Exchange Online Service Description](https://go.microsoft.com/fwlink/p/?LinkID=797553).
   
 ### Open the EAC, and confirm your admin role
 
@@ -49,7 +49,7 @@ To export and review mailbox audit logs, [Use a screen reader to open the Exchan
   
 ### Configure mailbox audit logging
 
-Before you can export and review audit logs, you or another admin must enable mailbox audit logging and configure Outlook to allow XML attachments. These tasks are done in the Remote Windows PowerShell. For more information, go to [Export mailbox audit logs](https://go.microsoft.com/fwlink/?LinkId=798935).
+Before you can export and review audit logs, you or another admin must enable mailbox audit logging and configure Outlook to allow XML attachments. These tasks are done in Exchange Online PowerShell. For more information, go to [Export mailbox audit logs](https://go.microsoft.com/fwlink/p/?LinkId=798935).
   
 ## Export a mailbox audit log
 <a name="BKMK_export"> </a>
@@ -129,7 +129,7 @@ Before you can export and review audit logs, you or another admin must enable ma
 3. To add the user to the list of audit log recipients, press the Down Arrow key until you hear the user's name, and then press Enter. The list of users retains the focus, so you can continue to add more recipients by selecting their mailboxes and pressing Enter.
     
     > [!TIP]
-    > To check the recipients you've added, tab to the **Add** button. To hear the list of recipients, press the Tab key again. The first name is read. To hear the second name in the list, press the Tab key one more time. Continue pressing the Tab key until you hear the names of all the recipients you've added. To delete a recipient from the list, activate the **Remove** link by pressing Enter when you hear the user name. 
+    > To check the recipients you've added, tab to the **Add** button. To hear the list of recipients, press the Tab key again. The first name is read. To hear the second name in the list, press the Tab key one more time. Continue pressing the Tab key until you hear the names of all the recipients you've added. To delete a recipient from the list, activate the **Remove** link by pressing Enter when you hear the username. 
   
 4. To search for another name or set of names from within your organization, tab several times until you hear "Filter or search edit." Type all or part of the name of the next user you want to add, and press Enter. Repeat steps b and c. Do this for all audit report recipients in your organization.
     

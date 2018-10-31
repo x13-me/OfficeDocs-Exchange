@@ -24,11 +24,11 @@ Migrating your Exchange 2013 public folders to Exchange Online requires Exchange
   
 ## What do you need to know before you begin?
 
-- When you upgrade to Exchange Server 2013 CU15 or later, you must also prepare Active Directory or your public folder migration will fail. This Active Directory preparation ensures that all relevant PowerShell cmdlets and parameters are available to you for preparing and running the migration. See [Prepare Active Directory and Domains](http://technet.microsoft.com/library/f895e1ce-d766-4352-ac46-ec959c9954a9.aspx) for more information. 
+- When you upgrade to Exchange Server 2013 CU15 or later, you must also prepare Active Directory or your public folder migration will fail. This Active Directory preparation ensures that all relevant PowerShell cmdlets and parameters are available to you for preparing and running the migration. See [Prepare Active Directory and Domains](https://technet.microsoft.com/library/f895e1ce-d766-4352-ac46-ec959c9954a9.aspx) for more information. 
     
-- In Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Office 365 or Exchange Online. For details about how to enable the Organization Management role group, see [Manage Role Groups](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx).
+- In Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Office 365 or Exchange Online. For details about how to enable the Organization Management role group, see [Manage Role Groups](https://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx).
     
-- In Exchange Server 2013, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/?LinkId=299212). 
+- In Exchange Server 2013, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/p/?LinkId=299212). 
     
 - Before you begin the public folder migration, if any single public folder in your organization is larger than 25 GB, we recommend that you delete content from that folder to make it smaller, or divide the public folder's content into multiple, smaller public folders. Note that the 25 GB limit cited here only applies to the public folder and not to any child or sub-folders the folder in question may have. If neither option is feasible, we recommend that you do not move your public folders to Exchange Online. See [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188) for more information. 
     
@@ -39,9 +39,9 @@ Migrating your Exchange 2013 public folders to Exchange Online requires Exchange
     
 - If you intend to migrate users to Office 365, you should complete your user migration prior to migrating your public folders. For more information, see [Ways to migrate multiple email accounts to Office 365](https://go.microsoft.com/fwlink/p/?linkid=842798).
     
-- MRS Proxy needs to be enabled on at least one Exchange server, a server that is also hosting public folder mailboxes. See [Enable the MRS Proxy Endpoint for Remote Moves](http://technet.microsoft.com/library/9840f712-127e-4c2d-bfe5-1b35cdb2a31b.aspx) for details. 
+- MRS Proxy needs to be enabled on at least one Exchange server, a server that is also hosting public folder mailboxes. See [Enable the MRS Proxy Endpoint for Remote Moves](https://technet.microsoft.com/library/9840f712-127e-4c2d-bfe5-1b35cdb2a31b.aspx) for details. 
     
-- To perform the migration procedures in this article, you can't use the Exchange Admin Center (EAC). Instead, you need to use the Exchange Management Shell on your Exchange 2013 servers. In Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=842801).
+- To perform the migration procedures in this article, you can't use the Exchange admin center (EAC). Instead, you need to use the Exchange Management Shell on your Exchange 2013 servers. In Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=842801).
     
 - Migrating deleted items and deleted folders from Exchange 2013 to Exchange Online is supported. Before you begin your migration, we recommend that you review all deleted folders and folder items and permanently delete anything you won't need in Exchange Online. Note that once something is permanently deleted, it can't be recovered.
     
@@ -360,7 +360,7 @@ A number of commands now need to be run in your Exchange 2013 on-premises enviro
   .\Sync-ModernMailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
   ```
 
-  -  `Credential` is your Exchange Online administrative user name and password. 
+  -  `Credential` is your Exchange Online administrative username and password. 
     
   -  `CsvSummaryFile` is the file path to where you want your log file of synchronization operations and errors located. The log will be in .csv format. 
     
@@ -427,7 +427,7 @@ Set-OrganizationConfig -PublicFolderMailboxesLockedForNewConnections $true
 ```
 
 > [!NOTE]
-> If you are not able to access the  `-PublicFolderMailboxesLockedForNewConnections` parameter, it could be because your Active Directory was not prepared during the CU upgrade, as we advised above in  *What do you need to know before you begin?*  See [Prepare Active Directory and Domains](http://technet.microsoft.com/library/f895e1ce-d766-4352-ac46-ec959c9954a9.aspx) for more information. > Also note that any users who need access to public folders should be migrated first, **before** you migrate the public folders themselves. 
+> If you are not able to access the  `-PublicFolderMailboxesLockedForNewConnections` parameter, it could be because your Active Directory was not prepared during the CU upgrade, as we advised above in  *What do you need to know before you begin?*  See [Prepare Active Directory and Domains](https://technet.microsoft.com/library/f895e1ce-d766-4352-ac46-ec959c9954a9.aspx) for more information. > Also note that any users who need access to public folders should be migrated first, **before** you migrate the public folders themselves. 
   
 If your organization has public folder mailboxes on multiple Exchange 2013 servers, you'll need to wait until AD replication is complete. Once complete, you can confirm that all public folder mailboxes have picked up the  `PublicFolderMailboxesLockedForNewConnections` flag, and that any pending changes users recently made to their public folders have converged across the organization. All of this could take several hours. 
   

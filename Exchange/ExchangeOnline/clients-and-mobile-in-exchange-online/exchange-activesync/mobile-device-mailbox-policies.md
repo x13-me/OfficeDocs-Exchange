@@ -32,7 +32,7 @@ You can use mobile device mailbox policies to manage many different settings. Th
     
 ## Managing Exchange ActiveSync mailbox policies
 
-Mobile device mailbox policies can be created in the Exchange Administration Center (EAC) or the Exchange Management Shell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using the Exchange Management Shell. 
+Mobile device mailbox policies can be created in the Exchange admin center (EAC) or the Exchange Management Shell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using the Exchange Management Shell. 
   
 ## Mobile device mailbox policy settings
 

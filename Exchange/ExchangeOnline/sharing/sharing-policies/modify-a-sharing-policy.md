@@ -117,6 +117,6 @@ For details about how to create a sharing policy, see [Create a sharing policy i
   
   ```
 
-For detailed syntax and parameter information, see [Set-SharingPolicy](http://technet.microsoft.com/library/42bab80c-62af-4b37-bb41-fa0173b27d86.aspx) and [Remove-SharingPolicy](http://technet.microsoft.com/library/b59d9faa-3418-4f4f-9f90-35cf12fde86e.aspx).
+For detailed syntax and parameter information, see [Set-SharingPolicy](https://technet.microsoft.com/library/42bab80c-62af-4b37-bb41-fa0173b27d86.aspx) and [Remove-SharingPolicy](https://technet.microsoft.com/library/b59d9faa-3418-4f4f-9f90-35cf12fde86e.aspx).
   
 

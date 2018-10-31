@@ -14,7 +14,7 @@ description: "When you add your domain to Office 365, it's called an accepted do
 
 # Manage accepted domains in Exchange Online
 
-When you add your domain to Office 365, it's called an accepted domain. This means that users in this domain can send and receive mail. For more information on how to add your domain to Office 365 using the Office 365 admin center, see [Add a domain to Office 365](https://support.office.com/en-us/article/Add-a-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
+When you add your domain to Office 365, it's called an accepted domain. This means that users in this domain can send and receive mail. For more information on how to add your domain to Office 365 using the Office 365 admin center, see [Add a domain to Office 365](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
   
 After you add your domain using the Office 365 admin center, you can use the Exchange admin center (EAC) to view your accepted domains and configure the domain type.
   
@@ -28,7 +28,7 @@ There are two types of accepted domains, Authoritative and Internal Relay, which
     
   - **Exchange Online**: [Manage mail users](../../recipients-in-exchange-online/manage-mail-users.md)
     
-  - **Exchange Online Protection**: [Manage Mail Users in EOP](http://technet.microsoft.com/library/4bfaf2ab-e633-4227-8bde-effefb41a3db.aspx)
+  - **Exchange Online Protection**: [Manage Mail Users in EOP](https://technet.microsoft.com/library/4bfaf2ab-e633-4227-8bde-effefb41a3db.aspx)
     
   - Setting this option enables Directory Based Edge Blocking (DBEB). For more information about DBEB, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](../../mail-flow-best-practices/use-directory-based-edge-blocking.md).
     
@@ -44,7 +44,7 @@ There are two types of accepted domains, Authoritative and Internal Relay, which
 
 - Estimated time to complete: 10 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Domains" entry in the [Mail flow permissions](http://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Domains" entry in the [Mail flow permissions](https://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic. 
     
 - To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     

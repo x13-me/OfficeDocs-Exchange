@@ -29,7 +29,7 @@ If you use a third-party cloud service for email filtering and need instructions
 By default, Office 365 sends mail using TLS encryption, provided that the destination server also supports TLS. If your partner organization supports TLS, you only need to create a connector if you want to enforce certain security restrictions - for example, you always want TLS applied, or you require certificate verification whenever mail is sent from your partner to your organization. 
   
 > [!NOTE]
-> For information about TLS, see [How Exchange Online uses TLS to secure email connections in Office 365](https://go.microsoft.com/fwlink/?LinkId=620842) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://go.microsoft.com/fwlink/?LinkId=620841). 
+> For information about TLS, see [How Exchange Online uses TLS to secure email connections in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=620842) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=620841). 
   
 When you set up a connector, email messages are checked to make sure they meet the security restrictions that you specify. If email messages don't meet the security restrictions that you specify, the connector will reject them, and those messages will not be delivered. This makes it possible to set up a secure communication channel with a partner organization. 
   
@@ -50,7 +50,7 @@ Review this section to help you determine the specific settings you need for you
 ## Set up a connector to apply security restrictions to mail sent from Office 365 to your partner organization
 <a name="setupaconnectortopartner"> </a>
 
-To create a connector in Office 365, click **Admin**, then click **Exchange** to go to the **Exchange Admin Center**. Next, click **mail flow**, and click **connectors**. If any connectors already exist for your organization, you can see them listed here.
+To create a connector in Office 365, click **Admin**, then click **Exchange** to go to the **Exchange admin center**. Next, click **mail flow**, and click **connectors**. If any connectors already exist for your organization, you can see them listed here.
   
 ![Office 365 Connectors Partner Organization Examples](../../media/9e8f0035-24b6-4d62-aecf-17f740530e31.png)
   
@@ -60,7 +60,7 @@ To start the wizard, click the plus symbol **+**. On the first screen, choose th
   
 ![Office 365 to Partner Organization Connector Options](../../media/93cb9e70-f8d8-4e63-bb92-caafd8b79ad7.png)
   
-Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, see [About fixing connector validation errors](http://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx) for help resolving issues. 
+Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, see [About fixing connector validation errors](https://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx) for help resolving issues. 
   
 If you want to create a secure channel with your partner organization in both directions, set up a connector that restricts mail flow from your partner organization to Office 365.
   
@@ -91,7 +91,7 @@ Review these connector examples to help you decide whether you want to apply sec
   
 ### Create a partner organization connector
 
-To create a connector in Office 365, click **Admin**, and then click **Exchange** to go to the **Exchange Admin Center**. Next, click **mail flow**, and click **connectors**. If any connectors already exist for your organization, you can see them listed here.
+To create a connector in Office 365, click **Admin**, and then click **Exchange** to go to the **Exchange admin center**. Next, click **mail flow**, and click **connectors**. If any connectors already exist for your organization, you can see them listed here.
   
 To start the wizard, click the plus symbol **+**. To create a connector for email you receive from a partner organization, use the options depicted in the following screenshot: 
   
@@ -179,7 +179,7 @@ When you set these restrictions, all mail from your partner organization sent fr
   
 [Mail flow best practices for Exchange Online and Office 365 (overview)](../mail-flow-best-practices.md)
 
-[About fixing connector validation errors](http://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx)
+[About fixing connector validation errors](https://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx)
 
 [What happens when I have multiple connectors for the same scenario?](set-up-connectors-to-route-mail.md#multipleconnectors)
 

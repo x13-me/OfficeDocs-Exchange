@@ -47,11 +47,11 @@ For devices that are not enrolled in an MDM solution, users need to install:
     
 Once the app is installed, users can follow these steps to add their corporate email account and configure basic app settings:
   
-- [Set up email account in Outlook for iOS mobile app](https://support.office.com/article/set-up-email-in-outlook-for-ios-mobile-app-b2de2161-cc1d-49ef-9ef9-81acd1c8e234)
+- [Set up email account in Outlook for iOS mobile app](https://support.office.com/article/b2de2161-cc1d-49ef-9ef9-81acd1c8e234)
     
-- [Set up email in the Outlook for Android app](https://support.office.com/article/set-up-email-in-the-outlook-for-android-app-886db551-8dfa-4fd5-b835-f8e532091872)
+- [Set up email in the Outlook for Android app](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872)
     
-- [Optimizing the Outlook mobile app for your iOS or Android phone](https://support.office.com/article/optimize-the-outlook-mobile-app-for-your-ios-or-android-phone-de075b19-b73c-4d8a-841b-459982c7e890)
+- [Optimizing the Outlook mobile app for your iOS or Android phone](https://support.office.com/article/de075b19-b73c-4d8a-841b-459982c7e890)
     
 > [!IMPORTANT]
 > To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is leveraged. For more information, see [App-based Conditional Access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune). 
@@ -98,7 +98,7 @@ Regardless of whether the device is enrolled in an MDM solution, an Intune app p
 In addition to the above minimum policy requirements, you should consider deploying advanced protection policy settings like **Restrict cut, copy and paste with other apps** to further prevent corporate data leakage. For more information on the available settings, see [Android app protection policy settings in Microsoft Intune](https://docs.microsoft.com/intune/app-protection-policy-settings-android) and [iOS app protection policy settings](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
   
 > [!IMPORTANT]
-> To apply Intune app protection policies against apps on Android devices that are not enrolled in Intune, the user must also install the Intune Company Portal. For more information, see [What to expect when your Android app is managed by app protection policies](https://docs.microsoft.com/en-us/intune/app-protection-enabled-apps-android). 
+> To apply Intune app protection policies against apps on Android devices that are not enrolled in Intune, the user must also install the Intune Company Portal. For more information, see [What to expect when your Android app is managed by app protection policies](https://docs.microsoft.com/intune/app-protection-enabled-apps-android). 
   
 ## Leveraging Mobile Device Management for Office 365
 <a name="leveragemdm"> </a>
@@ -107,7 +107,7 @@ If you don't plan to leverage the Enterprise Mobility + Security suite, you can 
   
 Because this is a device management solution, there is no native capability to control which apps can be used even after a device is enrolled. If you want to limit access to Outlook for iOS and Android, you will need to obtain Azure Active Directory Premium licenses and leverage the conditional access policies discussed in [Block all email apps except Outlook for iOS and Android using conditional access](secure-outlook-for-ios-and-android.md#blockallemail).
   
-An Office 365 global admin must complete the following steps to activate and set up MDM for Office 365. See [Set up Mobile Device Management (MDM) in Office 365](https://support.office.com/article/Set-up-Mobile-Device-Management-MDM-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include: 
+An Office 365 global admin must complete the following steps to activate and set up MDM for Office 365. See [Set up Mobile Device Management (MDM) in Office 365](https://support.office.com/article/dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include: 
   
 1. Activating MDM for Office 365 by following steps in the Security & Compliance Center.
     
@@ -135,7 +135,7 @@ Outlook for iOS and Android supports the following mobile device mailbox policy 
     
 For information on how to create or modify an existing mobile device mailbox policy, see [Mobile device mailbox policies in Exchange Online](../../clients-and-mobile-in-exchange-online/exchange-activesync/mobile-device-mailbox-policies.md).
   
-In addition, Outlook for iOS and Android supports Exchange Online's device-wipe capability. When executed, only the app is wiped, because Exchange Online considers the Outlook for iOS and Android app as the mobile device. For more information on how to perform a remote wipe, see [Wipe a mobile device in Office 365](https://support.office.com/article/Wipe-a-mobile-device-in-Office-365-9d727c7d-8b47-4499-bf24-d046b449214c).
+In addition, Outlook for iOS and Android supports Exchange Online's device-wipe capability. When executed, only the app is wiped, because Exchange Online considers the Outlook for iOS and Android app as the mobile device. For more information on how to perform a remote wipe, see [Wipe a mobile device in Office 365](https://support.office.com/article/9d727c7d-8b47-4499-bf24-d046b449214c).
   
 > [!NOTE]
 > Outlook for iOS and Android only supports the "Wipe Data" remote wipe command and does not support "Account Only Remote Wipe Device." 
@@ -212,11 +212,11 @@ Alternatively, you can block native Exchange ActiveSync apps on specific Android
   
     **Additional resources**:
     
-  - [New-ActiveSyncDeviceAccessRule](http://technet.microsoft.com/library/a33c69d8-4d19-4e9d-b5cf-27727b7c4a8f.aspx)
+  - [New-ActiveSyncDeviceAccessRule](https://technet.microsoft.com/library/a33c69d8-4d19-4e9d-b5cf-27727b7c4a8f.aspx)
     
-  - [Get-MobileDevice](http://technet.microsoft.com/library/ce8a4142-23c1-47d5-89c5-961bd6e9d162.aspx)
+  - [Get-MobileDevice](https://technet.microsoft.com/library/ce8a4142-23c1-47d5-89c5-961bd6e9d162.aspx)
     
-  - [Set-ActiveSyncOrganizationSettings](http://technet.microsoft.com/library/a447bf51-fcdc-4f8d-8d06-533d299c11fe.aspx)
+  - [Set-ActiveSyncOrganizationSettings](https://technet.microsoft.com/library/a447bf51-fcdc-4f8d-8d06-533d299c11fe.aspx)
     
 ## Blocking Outlook for iOS and Android
 <a name="blocking"> </a>

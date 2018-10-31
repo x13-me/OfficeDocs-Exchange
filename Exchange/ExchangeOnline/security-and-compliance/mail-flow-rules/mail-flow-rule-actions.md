@@ -22,7 +22,7 @@ For more information about mail flow rules in Exchange Online, see [Mail flow ru
   
 For more information about conditions and exceptions in mail flow rules, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
   
-For more information about actions in mail flow rules in Exchange Online Protection or Exchange Server, see [Mail flow rule actions in Exchange Online Protection](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx) or [Mail flow rules (transport rules)](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx).
+For more information about actions in mail flow rules in Exchange Online Protection or Exchange Server, see [Mail flow rule actions in Exchange Online Protection](https://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx) or [Mail flow rules (transport rules)](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx).
   
 ## Actions for mail flow rules in Exchange Online
 <a name="hub"> </a>
@@ -40,7 +40,7 @@ The actions that are available in mail flow rules in Exchange Online are describ
 |**Forward the message for approval to these people** <br/> **Forward the message for approval** \> ** to these people ** <br/> | _ModerateMessageByUser_ <br/> | `Addresses` <br/> |Forwards the message to the specified moderators as an attachment wrapped in an approval request. For more information, see [Common message approval scenarios](common-message-approval-scenarios.md). You can't use a distribution group as a moderator.  <br/> |
 |**Forward the message for approval to the sender's manager** <br/> **Forward the message for approval** \> **to the sender's manager** <br/> | _ModerateMessageByManager_ <br/> |n/a  <br/> |Forwards the message to the sender's manager for approval.  <br/> This action only works if the sender's **Manager** attribute is defined. Otherwise, the message is delivered to the recipients without moderation.  <br/> |
 |**Redirect the message to these recipients** <br/> **Redirect the message to** \> **these recipients** <br/> | _RedirectMessageTo_ <br/> | `Addresses` <br/> |Redirects the message to the specified recipients. The message isn't delivered to the original recipients, and no notification is sent to the sender or the original recipients.  <br/> |
-|**Deliver the message to the hosted quarantine** <br/> **Redirect the message to** \> **hosted quarantine** <br/> | _Quarantine_ <br/> |n/a  <br/> |Delivers the message to the hosted quarantine. For more information about the hosted quarantine in Office 365, see [Quarantine](http://technet.microsoft.com/library/e9eecdde-dcc2-4283-a820-98d1e740e4f1.aspx).  <br/> |
+|**Deliver the message to the hosted quarantine** <br/> **Redirect the message to** \> **hosted quarantine** <br/> | _Quarantine_ <br/> |n/a  <br/> |Delivers the message to the hosted quarantine. For more information about the hosted quarantine in Office 365, see [Quarantine](https://technet.microsoft.com/library/e9eecdde-dcc2-4283-a820-98d1e740e4f1.aspx).  <br/> |
 |**Use the following connector** <br/> **Redirect the message to** \> **the following connector** <br/> | _RouteMessageOutboundConnector_ <br/> | `OutboundConnector` <br/> |Uses the specified outbound connector to deliver the message. For more information about connectors, see [Configure mail flow using connectors in Office 365](../../mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).  <br/> |
 |**Reject the message with the explanation** <br/> **Block the message** \> **reject the message and include an explanation** <br/> | _RejectMessageReasonText_ <br/> | `String` <br/> |Returns the message to the sender in a non-delivery report (also known as an NDR or bounce message) with the specified text as the rejection reason. The recipient doesn't receive the original message or notification.  <br/> The default enhanced status code that's used is  `5.7.1`.  <br/> When you create or modify the rule in PowerShell, you can specify the DSN code by using the  _RejectMessageEnhancedStatusCode_ parameter.  <br/> |
 |**Reject the message with the enhanced status code** <br/> **Block the message** \> **reject the message with the enhanced status code of** <br/> | _RejectMessageEnhancedStatusCode_ <br/> | `DSNEnhancedStatusCode` <br/> |Returns the message to the sender in an NDR with the specified enhanced delivery status notification (DSN) code. The recipient doesn't receive the original message or notification.  <br/> Valid DSN codes are  `5.7.1` or  `5.7.900` through  `5.7.999`.  <br/> The default reason text that's used is  `Delivery not authorized, message refused`.  <br/> When you create or modify the rule in PowerShell, you can specify the rejection reason text by using the  _RejectMessageReasonText_ parameter.  <br/> |
@@ -99,9 +99,9 @@ The property values that are used for actions in mail flow rules are described i
   
 [Manage mail flow rules](manage-mail-flow-rules.md)
   
-[Transport Rule Actions](http://technet.microsoft.com/library/5d11a955-b1cc-4150-a0b9-a8cc48ba9bde.aspx) for Exchange 2016 
+[Transport Rule Actions](https://technet.microsoft.com/library/5d11a955-b1cc-4150-a0b9-a8cc48ba9bde.aspx) for Exchange 2016 
   
-[Transport Rule Actions](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx) for Exchange Online Protection 
+[Transport Rule Actions](https://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx) for Exchange Online Protection 
   
 [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](disclaimers-signatures-footers-or-headers.md)
   

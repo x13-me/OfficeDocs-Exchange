@@ -24,21 +24,21 @@ Public folders can also be used as an archiving method for distribution groups. 
   
 Public folders aren't designed for the following purposes:
   
-- **Data archiving**. Users who have mailbox limits sometimes use public folders instead of mailboxes to archive data. This practice isn't recommended because it affects storage in public folders and undermines the goal of mailbox limits. Instead, we recommend that you use [In-Place Archiving](http://technet.microsoft.com/library/b5e4c0e9-0558-4b90-bc12-f67adbfb59ac.aspx) as your archiving solution. 
+- **Data archiving**. Users who have mailbox limits sometimes use public folders instead of mailboxes to archive data. This practice isn't recommended because it affects storage in public folders and undermines the goal of mailbox limits. Instead, we recommend that you use [In-Place Archiving](https://technet.microsoft.com/library/b5e4c0e9-0558-4b90-bc12-f67adbfb59ac.aspx) as your archiving solution. 
     
-- **Document sharing and collaboration**. Public folders don't provide versioning or other document management features, such as controlled check-in and check-out functionality and automatic notifications of content changes. Instead, we recommend that you use [SharePoint Online](https://www.microsoft.com/en-us/office365/sharepoint-online.aspx) as your documentation sharing solution. 
+- **Document sharing and collaboration**. Public folders don't provide versioning or other document management features, such as controlled check-in and check-out functionality and automatic notifications of content changes. Instead, we recommend that you use [SharePoint Online](https://www.microsoft.com/office365/sharepoint-online.aspx) as your documentation sharing solution. 
     
 For more information about public folders and other collaboration methods in Office 365 and Exchange Online, see [Collaboration in Exchange Online](../../collaboration-exo/collaboration-exo.md).
   
-For a list of frequently asked questions regarding public folders in Office 365 and Exchange Online, see [FAQ: Public folders](http://technet.microsoft.com/library/1cdcdcb7-f11b-45ca-ad23-7c38f640208c.aspx).
+For a list of frequently asked questions regarding public folders in Office 365 and Exchange Online, see [FAQ: Public folders](https://technet.microsoft.com/library/1cdcdcb7-f11b-45ca-ad23-7c38f640208c.aspx).
   
-For more information about public folder quotas in Office 365 and Exchange Online, see the service description topics [Sharing and Collaboration](https://technet.microsoft.com/en-us/library/exchange-online-sharing-and-collaboration.aspx) and [Exchange Online Limits](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx). 
+For more information about public folder quotas in Office 365 and Exchange Online, see the service description topics [Sharing and Collaboration](https://technet.microsoft.com/library/exchange-online-sharing-and-collaboration.aspx) and [Exchange Online Limits](https://technet.microsoft.com/library/exchange-online-limits.aspx). 
   
 For a list of public folder management tasks, see [Public folder procedures in Office 365 and Exchange Online](public-folder-procedures.md).
   
-For more information about the public folder limits in Office 365 and Exchange Online, see [Exchange Online Limits](https://go.microsoft.com/fwlink/?LinkID=391188).
+For more information about the public folder limits in Office 365 and Exchange Online, see [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188).
   
-Looking for the Exchange Server version of this topic? See [Public Folders](http://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx).
+Looking for the Exchange Server version of this topic? See [Public Folders](https://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx).
   
 ## Public folder architecture
 <a name="PFArch"> </a>

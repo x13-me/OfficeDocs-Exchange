@@ -25,7 +25,7 @@ This topic compares these collaboration features to help you decide which featur
 
 A site mailbox is functionally comprised of a SharePoint site membership (owners and members), shared storage through an Exchange mailbox for email messages, and a SharePoint site to store and share. Essentially, site mailboxes bring Exchange email and SharePoint documents together. For users, a site mailbox serves as a central filing cabinet for the project, providing a place to file project email and documents that can be accessed and edited only by site members. In addition, site mailboxes have a specified lifecycle and are optimized to be used for projects that have set start and end dates. To fully implement site mailboxes, end users must use Outlook 2013.
   
-To learn more, see [Prepare for using Site Mailboxes in Office 365](https://go.microsoft.com/fwlink/?LinkId=286170).
+To learn more, see [Prepare for using Site Mailboxes in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=286170).
   
 ## Public folders
 <a name="PFs"> </a>
@@ -41,7 +41,7 @@ To learn more, see [Public folders in Office 365 and Exchange Online](public-fol
 
 A shared mailbox is a mailbox that multiple designated users can access to read and send email messages and to share a common calendar. Shared mailboxes can provide a generic email address (such as info@contoso.com or sales@contoso.com) that customers can use to inquire about your company. If the shared mailbox has the Send As permission assigned when a delegated user responds to the email message, it can appear as though the mailbox (for example, sales@contoso.com) is responding, not the actual user. 
   
-To learn more, see [Shared Mailboxes](http://technet.microsoft.com/library/1d71c01b-e261-408e-a633-1d1c9d00032a.aspx).
+To learn more, see [Shared Mailboxes](https://technet.microsoft.com/library/1d71c01b-e261-408e-a633-1d1c9d00032a.aspx).
   
 ## Groups
 <a name="Groups"> </a>

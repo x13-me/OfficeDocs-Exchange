@@ -78,7 +78,7 @@ The following table describes the supported attributes for a CSV file for an IMA
 |**Attribute**|**Required or optional**|**Accepted values**|**Description**|
 |:-----|:-----|:-----|:-----|
 |EmailAddress  <br/> |Required  <br/> |SMTP address for the user.  <br/> |Specifies the user ID for the user's Office 365 mailbox  <br/> |
-|UserName  <br/> |Required  <br/> |String that identifies the user on the IMAP messaging system, in a format supported by the IMAP server.  <br/> |Specifies the logon name for the user's account in the IMAP messaging system (the source environment). In addition to the user name, you can use the credentials of an account that has been assigned the necessary permissions to access mailboxes on the IMAP server. For more information, see [CSV files for IMAP migration batches](migrating-imap-mailboxes/csv-files-for-imap-migrations.md).  <br/> |
+|UserName  <br/> |Required  <br/> |String that identifies the user on the IMAP messaging system, in a format supported by the IMAP server.  <br/> |Specifies the logon name for the user's account in the IMAP messaging system (the source environment). In addition to the username, you can use the credentials of an account that has been assigned the necessary permissions to access mailboxes on the IMAP server. For more information, see [CSV files for IMAP migration batches](migrating-imap-mailboxes/csv-files-for-imap-migrations.md).  <br/> |
 |Password  <br/> |Required  <br/> |Password string.  <br/> |Specifies the password for the user account specified by the UserName attribute.  <br/> |
    
 ## Attribute values in the CSV file override the values for the migration batch

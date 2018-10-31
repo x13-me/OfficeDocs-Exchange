@@ -21,11 +21,11 @@ Shared mailboxes makes it easy for a group of people in your company to monitor 
 > [!IMPORTANT]
 >  If you're using Office 365 for business, you should create your shared mailbox in the Office 365 admin center. See [Create shared mailboxes in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=834766).
   
-If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes. To learn more about shared mailboxes, see [Shared Mailboxes](http://technet.microsoft.com/library/1d71c01b-e261-408e-a633-1d1c9d00032a.aspx).
+If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes. To learn more about shared mailboxes, see [Shared Mailboxes](https://technet.microsoft.com/library/1d71c01b-e261-408e-a633-1d1c9d00032a.aspx).
   
 ## Use the EAC to create a shared mailbox
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "User mailboxes" entry in the [Recipients permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "User mailboxes" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
   
 1. Go to **Recipients** \> **Shared** \> **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif).
     
@@ -35,7 +35,7 @@ You need to be assigned permissions before you can perform this procedure or pro
     
   - **Email address**
     
-3. To grant Full Access or Send As permissions, click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif), and then select the users you want to grant permissions to. You can use the CTRL key to select multiple users. Confused about which permission to use? See [Which permission should you use?](http://technet.microsoft.com/library/d34bc827-1e83-4a7f-a219-8ba9c19fe24b.aspx#TypesOfPerms) later in this topic. 
+3. To grant Full Access or Send As permissions, click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif), and then select the users you want to grant permissions to. You can use the CTRL key to select multiple users. Confused about which permission to use? See [Which permission should you use?](https://technet.microsoft.com/library/d34bc827-1e83-4a7f-a219-8ba9c19fe24b.aspx#TypesOfPerms) later in this topic. 
     
     > [!NOTE]
     > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation. 
@@ -74,7 +74,7 @@ This example creates the shared mailbox Sales Department and grants Full Access 
 New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Alias Sales | Set-Mailbox -GrantSendOnBehalfTo MarketingSG | Add-MailboxPermission -User MarketingSG -AccessRights FullAccess -InheritanceType All
 ```
 
-For detailed syntax and parameter information, see [new-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
+For detailed syntax and parameter information, see [new-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
   
 ## Which permissions should you use?
 <a name="TypesOfPerms"> </a>

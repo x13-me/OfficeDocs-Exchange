@@ -27,7 +27,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 - Estimated time to complete each procedure: 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Offline address books" entry in the [Email Address and Address Book Permissions](http://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Offline address books" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic. 
     
 - The local Exchange server must have the Client Access server role installed.
     
@@ -37,7 +37,7 @@ For additional management tasks related to OABs, see [Offline address book proce
     
 - Although Web-based distribution is enabled by default and doesn't require further configuration, we recommend that you enable Secure Sockets Layer (SSL) for the OAB distribution point.
     
-- You can't use the Exchange Administration Center (EAC) to perform this procedure. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to perform this procedure. You must use the Shell.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
@@ -59,6 +59,6 @@ New-OABVirtualDirectory -Server CASServer01 -RequireSSL $true -ExternalURL "http
 
 After you create a new OAB virtual directory, you must edit the settings on each OAB that uses Web-based distribution to reconnect to the OAB virtual directory. For more information, see [Change the offline address book generation schedule](change-address-book-generation-schedule.md).
   
-For detailed syntax and parameter information, see [New-OABVirtualDirectory](http://technet.microsoft.com/library/8f976c83-fd98-43c9-9d50-b252bdaae0fc.aspx).
+For detailed syntax and parameter information, see [New-OABVirtualDirectory](https://technet.microsoft.com/library/8f976c83-fd98-43c9-9d50-b252bdaae0fc.aspx).
   
 

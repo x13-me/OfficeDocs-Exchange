@@ -55,13 +55,13 @@ When you run any of the following reports on the **Auditing** page in the EAC, t
     
   - [Run a per-mailbox litigation hold report](per-mailbox-litigation-hold-report.md)
     
-  - [Place a mailbox on Litigation Hold](http://technet.microsoft.com/library/adee4621-3626-4aec-aa53-00b35ff0d0b0.aspx)
+  - [Place a mailbox on Litigation Hold](https://technet.microsoft.com/library/adee4621-3626-4aec-aa53-00b35ff0d0b0.aspx)
     
 - **Run the admin audit log report** Use this report to view entries from the administrator audit log. Instead of exporting the administrator audit log, which can take up to 24 hours to receive in an email message, you can run this report in the EAC. This report records configuration changes made by administrators in your organization. Up to 5000 entries will be displayed on multiple pages. To narrow the search, you can specify a date range. For more information, see: 
     
   - [View the administrator audit log](view-administrator-audit-log.md)
     
-  - [Administrator audit logging](http://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)
+  - [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)
     
 - **Run the external admin audit log report** This report is only available in Exchange Online and Exchange Online Protection. Actions performed by Microsoft administrators or delegated administrators are logged in the administrator audit log. Use the external admin audit log report to search for and view the actions that administrators outside your organization performed on the configuration of your Exchange Online organization. For more information, see [View and export the external admin audit log](view-external-admin-audit-log.md).
     
@@ -90,7 +90,7 @@ $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 
 For more information about configuring which actions are logged, see:
   
-- **Exchange Server**: [Enable or disable mailbox audit logging for a mailbox](http://technet.microsoft.com/library/c4bbfd52-6196-49c7-8c31-777fbbee11f2.aspx)
+- **Exchange Server**: [Enable or disable mailbox audit logging for a mailbox](https://technet.microsoft.com/library/c4bbfd52-6196-49c7-8c31-777fbbee11f2.aspx)
     
 - **Exchange Online**: [Enable mailbox auditing in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=626109)
     

@@ -23,7 +23,7 @@ This article explains how to migrate mailboxes and service settings from one Off
 
 You can also view an overview video:
   
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2fwpC]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2fwpC]
   
 The scenario in this article is based on two fictional companies - Contoso.com and Fabrikam.com - using two separate Office 365 tenants. Contoso has purchased Fabrikam and is moving the Fabrikam users and data to the contoso.com Office 365 tenant.
   

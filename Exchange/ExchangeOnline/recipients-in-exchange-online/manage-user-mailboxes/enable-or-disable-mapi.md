@@ -23,15 +23,15 @@ For additional management tasks related to managing email client access to a mai
   
 - [Enable or disable Outlook Web App for a mailbox](enable-or-disable-outlook-web-app.md)
     
-- [Enable or Disable IMAP4 Access for a User](http://technet.microsoft.com/library/a685fae4-b6f1-42fe-8bdc-5f99f9617799.aspx)
+- [Enable or Disable IMAP4 Access for a User](https://technet.microsoft.com/library/a685fae4-b6f1-42fe-8bdc-5f99f9617799.aspx)
     
-- [Enable or Disable POP3 Access for a User](http://technet.microsoft.com/library/57e12f07-3b14-45bd-9a82-e6032d14214f.aspx)
+- [Enable or Disable POP3 Access for a User](https://technet.microsoft.com/library/57e12f07-3b14-45bd-9a82-e6032d14214f.aspx)
     
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 2 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access user settings" entry in the [Clients and Mobile Devices Permissions](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access user settings" entry in the [Clients and Mobile Devices Permissions](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic. 
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
@@ -72,7 +72,7 @@ This example enables MAPI for the mailbox of Esther Valle.
 Set-CASMailbox -Identity "Esther Valle" -MAPIEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-CASMailbox](http://technet.microsoft.com/library/ff7d4dc5-755e-4005-a0a3-631eed3f9b3b.aspx).
+For detailed syntax and parameter information, see [Set-CASMailbox](https://technet.microsoft.com/library/ff7d4dc5-755e-4005-a0a3-631eed3f9b3b.aspx).
   
 ## How do you know this worked?
 

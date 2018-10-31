@@ -66,7 +66,7 @@ For more information about how to manage MWI settings on a UM mailbox policy, se
     
 - [Disable Message Waiting Indicator (MWI) for users](disable-mwi-for-users.md)
     
-- [Set-UMMailboxPolicy](http://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx)
+- [Set-UMMailboxPolicy](https://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx)
     
 ### UM IP gateways and MWI
 
@@ -88,7 +88,7 @@ For more information about how to manage MWI settings, see the following topics:
     
 - [Prevent Message Waiting Indicator (MWI) on a UM IP gateway](prevent-mwi-on-um-ip-gateway.md)
     
-- [Set-UMIPGateway](http://technet.microsoft.com/library/1c9ecde5-36ec-42af-be9e-10eacdc98458.aspx)
+- [Set-UMIPGateway](https://technet.microsoft.com/library/1c9ecde5-36ec-42af-be9e-10eacdc98458.aspx)
     
 ## Text message (SMS) notifications for voice mail messages and missed calls
 <a name="SMS"> </a>
@@ -114,7 +114,7 @@ For more information about how to manage text message notification settings on a
   
 - [Manage voice mail settings for a user](../../voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings.md)
     
-- [Set-UMMailbox](http://technet.microsoft.com/library/dd7b429d-53a8-46dd-b16b-3a8ca8424bbc.aspx)
+- [Set-UMMailbox](https://technet.microsoft.com/library/dd7b429d-53a8-46dd-b16b-3a8ca8424bbc.aspx)
     
 The following table shows the parameter on a UM mailbox policy that must be configured for a user to receive text messages for voice mail and missed call notifications:
   
@@ -128,7 +128,7 @@ For more information about how to manage text message notification settings, see
   
 - [Manage a UM mailbox policy](../../voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy.md)
     
-- [Set-UMMailboxPolicy](http://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx)
+- [Set-UMMailboxPolicy](https://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx)
     
 For text message notifications for voice mail and missed calls to work correctly, you must perform the following tasks: 
   

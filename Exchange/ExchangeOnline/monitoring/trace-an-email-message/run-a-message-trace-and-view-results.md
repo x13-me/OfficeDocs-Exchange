@@ -146,7 +146,7 @@ In the events section, the following fields provide information about the events
   - **RESOLVED**: The message was redirected to a new recipient address based on an Active Directory look up. When this happens, the original recipient address is listed in a separate row in the message trace along with the final delivery status for the message.
 
     > [!TIP]
-    > Additional events may appear; for more information about these, see the "Event types in the message tracking log" section in [Message Tracking](http://technet.microsoft.com/library/bada2ea7-6d7c-4630-b7f1-67f56818f0ff.aspx).
+    > Additional events may appear; for more information about these, see the "Event types in the message tracking log" section in [Message Tracking](https://technet.microsoft.com/library/bada2ea7-6d7c-4630-b7f1-67f56818f0ff.aspx).
   
 - **Action**: This field shows the action that was performed if the message was filtered due to a malware or spam detection or a rule match. For example, it will let you know if the message was deleted or if it was sent to the quarantine.
 
@@ -216,7 +216,7 @@ If you didn't include routing details when running the message trace, the follow
 
 #### View a message trace report with routing details
 
-If you included routing details when running the message trace, all information from the message tracking logs is included in the .CSV file, which you can open in an application such as Microsoft Excel. Some of the values included in this report are described in the prior section, while other values that may be useful for investigative purposes are described in the "Fields in the message tracking log files" section in the [Message Tracking](http://technet.microsoft.com/library/bada2ea7-6d7c-4630-b7f1-67f56818f0ff.aspx) topic.
+If you included routing details when running the message trace, all information from the message tracking logs is included in the .CSV file, which you can open in an application such as Microsoft Excel. Some of the values included in this report are described in the prior section, while other values that may be useful for investigative purposes are described in the "Fields in the message tracking log files" section in the [Message Tracking](https://technet.microsoft.com/library/bada2ea7-6d7c-4630-b7f1-67f56818f0ff.aspx) topic.
   
 #### The custom_data field
 

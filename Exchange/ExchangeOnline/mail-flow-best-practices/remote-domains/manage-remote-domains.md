@@ -79,7 +79,7 @@ You can control the types and format of messages that are sent to domains outsid
     
 #### Use the Exchange Management Shell to create and configure a remote domain
 
-To create a new remote domain, use the **New-RemoteDomain** cmdlet. For a complete list of parameters, see [new-RemoteDomain](http://technet.microsoft.com/library/31442c97-1813-43d9-b9d1-da487e6b00ea.aspx). 
+To create a new remote domain, use the **New-RemoteDomain** cmdlet. For a complete list of parameters, see [new-RemoteDomain](https://technet.microsoft.com/library/31442c97-1813-43d9-b9d1-da487e6b00ea.aspx). 
   
 This example creates a remote domain for messages sent to the contoso.com domain.
   
@@ -93,7 +93,7 @@ This example creates a remote domain for messages sent to the contoso.com domain
 New-RemoteDomain -Name 'Contoso and subdomains' -DomainName *.contoso.com
 ```
 
-Use **Set-RemoteDomain** to change the settings for the default remote domain or for a remote domain you created using **New-RemoteDomain**. For a complete list of parameters, see [Set-RemoteDomain](http://technet.microsoft.com/library/4738bf25-39b8-4433-bd64-1d60252c2832.aspx).
+Use **Set-RemoteDomain** to change the settings for the default remote domain or for a remote domain you created using **New-RemoteDomain**. For a complete list of parameters, see [Set-RemoteDomain](https://technet.microsoft.com/library/4738bf25-39b8-4433-bd64-1d60252c2832.aspx).
   
 - This example disables automatic replies, automatic forwarding, and out-of-office replies to recipients at all remote domains that aren't specified with their own remote domain. 
     
@@ -143,7 +143,7 @@ Use **Set-RemoteDomain** to change the settings for the default remote domain or
   Set-RemoteDomain Contoso -NonMimeCharacterSet utf-8
   ```
 
-For a complete list of remote domain settings you can change by using the Exchange Management Shell, see [Set-RemoteDomain](http://technet.microsoft.com/library/4738bf25-39b8-4433-bd64-1d60252c2832.aspx).
+For a complete list of remote domain settings you can change by using the Exchange Management Shell, see [Set-RemoteDomain](https://technet.microsoft.com/library/4738bf25-39b8-4433-bd64-1d60252c2832.aspx).
   
 #### How do you know this worked?
 
@@ -166,7 +166,7 @@ The remote domain is removed from the list.
   
 #### Use the Exchange Management Shell to remove a remote domain
 
-To remove a remote domain, use the [Remove-RemoteDomain](http://technet.microsoft.com/library/7c17847a-310e-45df-8c0c-58b4297e6f8d.aspx) cmdlet. This example removes the remote domain named Contoso. 
+To remove a remote domain, use the [Remove-RemoteDomain](https://technet.microsoft.com/library/7c17847a-310e-45df-8c0c-58b4297e6f8d.aspx) cmdlet. This example removes the remote domain named Contoso. 
   
 ```
 Remove-RemoteDomain Contoso

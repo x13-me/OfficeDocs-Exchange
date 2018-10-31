@@ -44,7 +44,7 @@ Adding an SSL certificate to Exchange Server 2013 is a threestep process.
   
 1. Open the Exchange admin center (EAC) by browsing to the URL of your Client Access server, for example, https://Ex2013CAS/ECP.
     
-2. Enter your user name and password by using the domain\user name format for user name, and choose **Sign in**.
+2. Enter your username and password by using the domain\username format for username, and choose **Sign in**.
     
 3. Go to **Servers** \> **Certificates**. On the **Certificates** page, make sure your Client Access server is selected in the **Select server** field, and then choose **New**![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif).
     

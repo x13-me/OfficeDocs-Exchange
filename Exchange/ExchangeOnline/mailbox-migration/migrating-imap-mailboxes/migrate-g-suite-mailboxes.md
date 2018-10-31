@@ -84,9 +84,9 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
     
     ![User details in the Google apps admin center](../media/b3362fb5-c33f-465d-84bb-8555f0e310b4.PNG)
   
-4. [Sign in to the Office 365 admin center](https://portal.office.com/admin/default.aspx), and go to **Users** \> **Active users**. Keep an eye on the **User name** column. You'll use this information in a minute. Keep the Office 365 admin center window open, too. 
+4. [Sign in to the Office 365 admin center](https://portal.office.com/admin/default.aspx), and go to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the Office 365 admin center window open, too. 
     
-    ![User Name column in the Office 365 admin center.](../media/4cb16a9d-43b8-4ca8-b37a-baf0847f1aa6.JPG)
+    ![username column in the Office 365 admin center.](../media/4cb16a9d-43b8-4ca8-b37a-baf0847f1aa6.JPG)
   
 5. Start Excel.
     
@@ -100,9 +100,9 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
     
     ![Cell headings in the Excel migration file.](../media/acec70dd-4789-46b5-aa15-74e597dbe71c.JPG)
   
-7. Next enter the email address, user name, and app password for each mailbox you want to migrate. Enter one mailbox per row.
+7. Next enter the email address, username, and app password for each mailbox you want to migrate. Enter one mailbox per row.
     
-  - **Column A** is the email address of the Office 365 mailbox. This is what's shown in the **User name** column in **Users** \> **Active users** in the Office 365 admin center. 
+  - **Column A** is the email address of the Office 365 mailbox. This is what's shown in the **username** column in **Users** \> **Active users** in the Office 365 admin center. 
     
   - **Column B** is the sign-in name for the user's Gmail mailbox—for example, alberta@contoso.com. 
     
@@ -212,7 +212,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Office 365 at 
   
 - Ask your migrated users to complete the following tasks:
     
-  - Go to the [Office 365 sign-in page](https://go.microsoft.com/fwlink/p/?LinkId=394559), and sign in with your user name and temporary password.
+  - Go to the [Office 365 sign-in page](https://go.microsoft.com/fwlink/p/?LinkId=394559), and sign in with your username and temporary password.
     
   - Update your password, and set your time zone. It's important that you select the correct time zone to make sure your calendar and email settings are correct.
     

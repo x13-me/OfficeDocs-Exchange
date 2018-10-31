@@ -18,7 +18,7 @@ If you're an Exchange Online or Exchange Online Protection (EOP) admin, there's 
   
 ## Reports are now available in the Security & Compliance Center
 
-If you were viewing mail protection reports in the Exchange Admin Center, they've been updated, improved, and moved to the Security & Compliance Center. 
+If you were viewing mail protection reports in the Exchange admin center, they've been updated, improved, and moved to the Security & Compliance Center. 
 
 To get to the Security & Compliance Center, visit [https://protection.office.com](https://protection.office.com), and sign in using your work or school account.
 

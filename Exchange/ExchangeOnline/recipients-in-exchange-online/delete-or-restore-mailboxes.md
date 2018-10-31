@@ -34,7 +34,7 @@ A soft-deleted user mailbox is a mailbox that has been deleted in the following 
   
 If in the 30 day time period a new Azure Active Directory user is synchronized from the original on-premises recipient account with the same ExchangeGuid or ArchiveGuid, this will result in an ExchangeGuid validation conflict error.
   
-Check out [Manage inactive mailboxes in Office 365](http://technet.microsoft.com/library/c60e9ae7-dd02-4c5f-9f5d-7626a9101094.aspx) for more info on putting a mailbox in a litigation hold. 
+Check out [Manage inactive mailboxes in Office 365](https://technet.microsoft.com/library/c60e9ae7-dd02-4c5f-9f5d-7626a9101094.aspx) for more info on putting a mailbox in a litigation hold. 
   
 ## Hard-deleted user mailboxes
 <a name="BKMK_harddeleted"> </a>
@@ -60,7 +60,7 @@ To delete an Office 365 work or school account, see [Delete or restore users](ht
   
 ### Use the Exchange Management Shell to delete a mailbox
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Recipient Provisioning Permissions" section in the [Recipients permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Recipient Provisioning Permissions" section in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
     
 - To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     

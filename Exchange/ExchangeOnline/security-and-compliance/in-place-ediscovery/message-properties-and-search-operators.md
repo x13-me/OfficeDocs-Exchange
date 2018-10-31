@@ -16,7 +16,7 @@ description: "This topic describes the properties of Exchange email messages tha
 
 This topic describes the properties of Exchange email messages that you can search by using In-Place eDiscovery & Hold in Exchange Server and Exchange Online. The topic also describes Boolean search operators and other search query techniques that you can use to refine eDiscovery search results.
   
-In-Place eDiscovery uses Keyword Query Language (KQL). For more details, see [Keyword Query Language syntax reference](https://go.microsoft.com/fwlink/?LinkId=269603).
+In-Place eDiscovery uses Keyword Query Language (KQL). For more details, see [Keyword Query Language syntax reference](https://go.microsoft.com/fwlink/p/?LinkId=269603).
   
 ## Searchable properties in Exchange
 

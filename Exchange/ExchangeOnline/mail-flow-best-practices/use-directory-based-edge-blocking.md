@@ -35,11 +35,11 @@ The steps for configuring DBEB are as follows:
     
 2. **Add valid users to Office 365**. You can do this in one of the following ways: 
     
-  - **Directory synchronization.** Add valid users to Office 365 by synchronizing from your on-premises Active Directory environment to [Azure Active Directory](https://technet.microsoft.com/en-us/library/hh967611.aspx) in the cloud. For more information about how to set up directory synchronization, see "Use directory synchronization to manage recipients" in [Manage Mail Users in EOP](http://technet.microsoft.com/library/4bfaf2ab-e633-4227-8bde-effefb41a3db.aspx). 
+  - **Directory synchronization.** Add valid users to Office 365 by synchronizing from your on-premises Active Directory environment to [Azure Active Directory](https://technet.microsoft.com/library/hh967611.aspx) in the cloud. For more information about how to set up directory synchronization, see "Use directory synchronization to manage recipients" in [Manage Mail Users in EOP](https://technet.microsoft.com/library/4bfaf2ab-e633-4227-8bde-effefb41a3db.aspx). 
     
-  - **Add users via remote Windows PowerShell.** For more information about how add users in this manner, see "Use remote Windows PowerShell to manage mail users" in [Manage Mail Users in EOP](http://technet.microsoft.com/library/4bfaf2ab-e633-4227-8bde-effefb41a3db.aspx) or [Manage mail users](../recipients-in-exchange-online/manage-mail-users.md) (for Exchange Online customers). 
+  - **Add users via remote Windows PowerShell.** For more information about how add users in this manner, see "Use remote Windows PowerShell to manage mail users" in [Manage Mail Users in EOP](https://technet.microsoft.com/library/4bfaf2ab-e633-4227-8bde-effefb41a3db.aspx) or [Manage mail users](../recipients-in-exchange-online/manage-mail-users.md) (for Exchange Online customers). 
     
-  - **Add users directly in the Exchange admin center (EAC).** For more information about how add users in this manner, see "Use the EAC to manage mail users" in [Manage Mail Users in EOP](http://technet.microsoft.com/library/4bfaf2ab-e633-4227-8bde-effefb41a3db.aspx) or [Manage mail users](../recipients-in-exchange-online/manage-mail-users.md) (for Exchange Online customers). 
+  - **Add users directly in the Exchange admin center (EAC).** For more information about how add users in this manner, see "Use the EAC to manage mail users" in [Manage Mail Users in EOP](https://technet.microsoft.com/library/4bfaf2ab-e633-4227-8bde-effefb41a3db.aspx) or [Manage mail users](../recipients-in-exchange-online/manage-mail-users.md) (for Exchange Online customers). 
     
 3. **Set your accepted domain to Authoritative**: 
     

@@ -76,7 +76,7 @@ Create a new Sharing Policy to change how people in your organization share cale
   New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail' -Enabled $false
   ```
 
-For detailed syntax and parameter information, see [New-SharingPolicy](http://technet.microsoft.com/library/ffca8853-3429-448f-ad5e-5435dc44f9d0.aspx).
+For detailed syntax and parameter information, see [New-SharingPolicy](https://technet.microsoft.com/library/ffca8853-3429-448f-ad5e-5435dc44f9d0.aspx).
   
 ## How do you know this worked?
 

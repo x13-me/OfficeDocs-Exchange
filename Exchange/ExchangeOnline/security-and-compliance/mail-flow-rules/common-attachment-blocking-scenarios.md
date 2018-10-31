@@ -18,7 +18,7 @@ Your organization might require that certain types of messages be blocked or rej
   
 For additional examples showing how to block specific attachments, see:
   
-- [Using transport rules to inspect message attachments](http://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx) (Exchange Server) 
+- [Using transport rules to inspect message attachments](https://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx) (Exchange Server) 
     
 - [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md) (Exchange Online, Exchange Online Protection) 
     
@@ -110,7 +110,7 @@ If you have a malware outbreak, you might want to apply a rule with a time limit
 
 [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md)
 
-[Transport Rules (Exchange Server 2016)](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
+[Transport Rules (Exchange Server 2016)](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
   
-[Transport rules (Exchange Online Protection)](http://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
+[Transport rules (Exchange Online Protection)](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
 

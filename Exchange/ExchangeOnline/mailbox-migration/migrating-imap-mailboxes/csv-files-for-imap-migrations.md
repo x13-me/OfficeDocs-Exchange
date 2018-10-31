@@ -29,7 +29,7 @@ Here are the required attributes for each user:
   
 - **EmailAddress** specifies the user ID for the user's Office 365 mailbox. 
     
-- **UserName** specifies the user logon name for the user's mailbox on the IMAP server. You can use either the user name or domain\user name format. For example,  `hollyh` or  `contoso\hollyh`.
+- **UserName** specifies the user logon name for the user's mailbox on the IMAP server. You can use either the username or domain\username format. For example,  `hollyh` or  `contoso\hollyh`.
     
 - **Password** is the password for the user's account in the IMAP messaging system. 
     
@@ -69,7 +69,7 @@ If you plan to migrate lots of users, decide which ones to include in each batch
 ## Provide user or administrator credentials
 <a name="BK_Creds"> </a>
 
-In the CSV file, you have to provide the user name and password for the user's on-premises account. This enables the migration process to access the account. There are two ways to do this:
+In the CSV file, you have to provide the username and password for the user's on-premises account. This enables the migration process to access the account. There are two ways to do this:
   
 - **Use user credentials.** This requires that you obtain users' passwords or that you change their passwords to a value that you know so you can include it in the CSV file. 
     
@@ -84,7 +84,7 @@ In the CSV file, you have to provide the user name and password for the user's o
 ## Format for the administrator credentials for different IMAP servers
 <a name="BK_AdminCreds"> </a>
 
-You can use the user name and password of an administrator account in the **UserName** and **Password** fields for each row of the CSV file. The user name for administrator credentials is a combination of the user name for the person whose email is being migrated and the user name for an administrator account that has permission to access all user mailboxes. The supported format for administrator credentials is different depending on the IMAP server you're migrating email from. For more information about how to use administrator credentials, see the documentation for your IMAP server. 
+You can use the username and password of an administrator account in the **UserName** and **Password** fields for each row of the CSV file. The username for administrator credentials is a combination of the username for the person whose email is being migrated and the username for an administrator account that has permission to access all user mailboxes. The supported format for administrator credentials is different depending on the IMAP server you're migrating email from. For more information about how to use administrator credentials, see the documentation for your IMAP server. 
   
 > [!NOTE]
 > When you submit a new migration request, the CSV file is uploaded to the Microsoft datacenter over a Secure Sockets Layer (SSL) connection. The information from the CSV file is encrypted and stored on the Microsoft Exchange servers at the Microsoft datacenter. 
@@ -94,7 +94,7 @@ The following sections explain how to format the administrator credentials in th
 ### Microsoft Exchange
 <a name="exchange"> </a>
 
-If you're migrating email from the IMAP implementation for Microsoft Exchange, use the format **Domain/Admin_UserName/User_UserName** for the **UserName** attribute in the CSV file. Let's say you're migrating email from Exchange for Terry Adams, Ann Beebe, and Paul Cannon. You have a mail administrator account, where the user name is mailadmin and the password is P@ssw0rd. Here's what your CSV file would look like:
+If you're migrating email from the IMAP implementation for Microsoft Exchange, use the format **Domain/Admin_UserName/User_UserName** for the **UserName** attribute in the CSV file. Let's say you're migrating email from Exchange for Terry Adams, Ann Beebe, and Paul Cannon. You have a mail administrator account, where the username is mailadmin and the password is P@ssw0rd. Here's what your CSV file would look like:
   
 ```
 EmailAddress,UserName,Password

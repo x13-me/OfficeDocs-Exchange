@@ -22,7 +22,7 @@ RBAC is also the permissions model that's used in Microsoft Exchange Server. Mos
 For information about permissions across Office 365, see [Permissions in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=263762)
   
 > [!NOTE]
-> Several RBAC features and concepts aren't discussed in this topic because they're advanced features. If the functionality discussed in this topic doesn't meet your needs, and you want to further customize your permissions model, see [Understanding Role Based Access Control](http://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx). 
+> Several RBAC features and concepts aren't discussed in this topic because they're advanced features. If the functionality discussed in this topic doesn't meet your needs, and you want to further customize your permissions model, see [Understanding Role Based Access Control](https://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx). 
   
 ## Role-based permissions
 <a name="RoleBased"> </a>
@@ -37,7 +37,7 @@ Administrative roles and end-user roles are the two types of management roles. F
     
 Management roles give permissions to perform tasks to administrators and users by making cmdlets available to those who are assigned the roles. Because the Exchange admin center (EAC) and the Exchange Management Shell use cmdlets to manage Exchange Online, granting access to a cmdlet gives the administrator or user permission to perform the task in each of the Exchange Online management interfaces.
   
-Exchange Online includes approximately 45 roles that you can use to grant permissions. For a list of roles, see [Built-in Management Roles](http://technet.microsoft.com/library/023f379a-40f6-43ef-b388-979f6dd85ec5.aspx).
+Exchange Online includes approximately 45 roles that you can use to grant permissions. For a list of roles, see [Built-in Management Roles](https://technet.microsoft.com/library/023f379a-40f6-43ef-b388-979f6dd85ec5.aspx).
   
 > [!NOTE]
 > Some management roles many be available only to on-premises Exchange Server installations and won't be available in Exchange Online. 
@@ -216,12 +216,12 @@ The following table contains links to topics that will help you learn about and 
   
 |**Topic**|**Description**|
 |:-----|:-----|
-|[Understanding Role Based Access Control](http://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx) <br/> |Learn about each of the components that make up RBAC and how you can create advanced permissions models if role groups and management roles aren't enough.  <br/> |
-|[Manage Role Groups](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) <br/> |Configure permissions for Exchange Online administrators and specialist users using role groups.  <br/> |
-|[Manage Role Group Members](http://technet.microsoft.com/library/c064729d-7cda-47fc-b105-acf4b300d430.aspx) <br/> |Add members to and from role groups. By adding and removing members to and from role groups, you configure who's able to administer Exchange Online features.  <br/> |
-|[Manage Role Assignment Policies](http://technet.microsoft.com/library/f93d502e-5df4-4ba0-b68d-01a17ccffb4d.aspx) <br/> |Configure which features end-users have access to on their mailboxes using role assignment policies, and change which role assignment policy is the default assignment policy.  <br/> |
-|[Change the Assignment Policy on a Mailbox](http://technet.microsoft.com/library/011690a5-233a-4c03-8842-92276f899a89.aspx) <br/> |Configure which role assignment policy is applied to one or more mailboxes.  <br/> |
-|[View Effective Permissions](http://technet.microsoft.com/library/ae6cb7cf-f998-44a6-a69a-02ad736c8260.aspx) <br/> |View who has permissions to administer Exchange Online features.  <br/> |
+|[Understanding Role Based Access Control](https://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx) <br/> |Learn about each of the components that make up RBAC and how you can create advanced permissions models if role groups and management roles aren't enough.  <br/> |
+|[Manage Role Groups](https://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) <br/> |Configure permissions for Exchange Online administrators and specialist users using role groups.  <br/> |
+|[Manage Role Group Members](https://technet.microsoft.com/library/c064729d-7cda-47fc-b105-acf4b300d430.aspx) <br/> |Add members to and from role groups. By adding and removing members to and from role groups, you configure who's able to administer Exchange Online features.  <br/> |
+|[Manage Role Assignment Policies](https://technet.microsoft.com/library/f93d502e-5df4-4ba0-b68d-01a17ccffb4d.aspx) <br/> |Configure which features end-users have access to on their mailboxes using role assignment policies, and change which role assignment policy is the default assignment policy.  <br/> |
+|[Change the Assignment Policy on a Mailbox](https://technet.microsoft.com/library/011690a5-233a-4c03-8842-92276f899a89.aspx) <br/> |Configure which role assignment policy is applied to one or more mailboxes.  <br/> |
+|[View Effective Permissions](https://technet.microsoft.com/library/ae6cb7cf-f998-44a6-a69a-02ad736c8260.aspx) <br/> |View who has permissions to administer Exchange Online features.  <br/> |
 |[Feature permissions in Exchange Online](feature-permissions.md) <br/> |Learn more about the permissions required to manage Exchange Online features and services.  <br/> |
    
 

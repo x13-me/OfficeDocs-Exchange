@@ -17,7 +17,7 @@ description: "You're reading a collection of conceptual and procedural topics or
 
 You're reading a collection of conceptual and procedural topics organized by subject or by technologies used by Microsoft Exchange. You can access each topic directly from the table of contents in the left pane, from a link in another Help topic, from the results of a search, or from your own custom list of favorite topics.
   
-Other information related to Exchange documentation is in [Third-Party Copyright Notices](http://technet.microsoft.com/library/e94f1244-acb8-4ddd-b54e-5cc37f903bbf.aspx).
+Other information related to Exchange documentation is in [Third-Party Copyright Notices](https://technet.microsoft.com/library/e94f1244-acb8-4ddd-b54e-5cc37f903bbf.aspx).
   
 ## Where to find Exchange documentation
 
@@ -41,6 +41,6 @@ Looking for more than just documentation? Check out these other Exchange resourc
     
 - [Support for Microsoft Exchange Server](https://go.microsoft.com/fwlink/p/?LinkId=283967) Check out this page for support resources for multiple versions of Exchange. 
     
-- [Accessibility for People with Disabilities_E15](http://technet.microsoft.com/library/a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8.aspx) This topic provides important information about features, products, and services that help make Microsoft Exchange more accessible for people with disabilities. 
+- [Accessibility for People with Disabilities_E15](https://technet.microsoft.com/library/a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8.aspx) This topic provides important information about features, products, and services that help make Microsoft Exchange more accessible for people with disabilities. 
     
 

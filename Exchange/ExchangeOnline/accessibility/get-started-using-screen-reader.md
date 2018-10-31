@@ -35,15 +35,15 @@ Navigate with Internet Explorer and keyboard shortcuts, and make sure that you h
 
 Exchange Online, which includes the EAC, is a web-based application, so the keyboard shortcuts and navigation may be different from those in Exchange 2016. [Accessibility in the Exchange admin center](accessibility-in-exchange-admin-center.md).
   
-For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/?LinkID=787614).
+For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=787614).
   
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/?LinkID=317550).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
   
 ### Confirm your Office 365 subscription plan
 
 Exchange Online is included in Office 365 business and enterprise subscription plans, but capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it.
   
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 36 business product or license do I have?](https://go.microsoft.com/fwlink/?LinkID=797552) and [Exchange Online Service Description](https://go.microsoft.com/fwlink/?LinkID=797553).
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 36 business product or license do I have?](https://go.microsoft.com/fwlink/p/?LinkID=797552) and [Exchange Online Service Description](https://go.microsoft.com/fwlink/p/?LinkID=797553).
   
 ### Open the EAC, and confirm your admin role
 
@@ -62,7 +62,7 @@ The EAC works with the Narrator and JAWS screen readers, among others. These scr
     
 - If your screen reader stops reading, press Alt+Tab to leave the current window, and then press Alt+Tab again to return to it. This resets the focus on the current window to get your screen reader to read the window properly. 
     
-For more information about Narrator, refer to [Hear text read aloud with Narrator](https://go.microsoft.com/fwlink/?LinkID=798799). For more information about JAWS, refer to the [JAWS Screen Reader documentation](https://go.microsoft.com/fwlink/?LinkId=787625).
+For more information about Narrator, refer to [Hear text read aloud with Narrator](https://go.microsoft.com/fwlink/p/?LinkID=798799). For more information about JAWS, refer to the [JAWS Screen Reader documentation](https://go.microsoft.com/fwlink/p/?LinkId=787625).
   
 ## Do more tasks with the EAC and a screen reader
 <a name="BKMK_DoMore"> </a>
@@ -73,7 +73,7 @@ Explore specific tasks that use the screen reader to work in the EAC.
 
 - [Accessibility in the Exchange admin center](accessibility-in-exchange-admin-center.md)
     
-- [Keyboard Shortcuts in the Exchange Admin Center](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
+- [Keyboard Shortcuts in the Exchange admin center](https://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
     
 - [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md)
     

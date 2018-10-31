@@ -46,7 +46,7 @@ This example removes the organization relationship Contoso.
 Remove-OrganizationRelationship -Identity "Contoso"
 ```
 
-For detailed syntax and parameter information, see [Remove-OrganizationRelationship](http://technet.microsoft.com/library/fd646344-c783-45b2-b666-f50e823cba58.aspx).
+For detailed syntax and parameter information, see [Remove-OrganizationRelationship](https://technet.microsoft.com/library/fd646344-c783-45b2-b666-f50e823cba58.aspx).
   
 ## How do you know this worked?
 

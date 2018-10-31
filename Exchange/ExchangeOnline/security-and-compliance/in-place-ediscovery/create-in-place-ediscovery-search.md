@@ -15,7 +15,7 @@ description: "Use In-Place eDiscovery to search across all mailbox content, incl
 # Create an In-Place eDiscovery search
 
 > [!NOTE]
-> We've postponed the July 1, 2017 deadline for creating new In-Place eDiscovery searches in Exchange Online (in Office 365 and Exchange Online standalone plans). But later this year or early next year, you won't be able to create new searches in Exchange Online. To create eDiscovery searches, please start using [Content Search](https://go.microsoft.com/fwlink/?linkid=847843) in the Office 365 Security & Compliance Center. After we decommission new In-Place eDiscovery searches, you'll still be able to modify existing In-Place eDiscovery searches, and creating new In-Place eDiscovery searches in Exchange Server and Exchange hybrid deployments will still be supported. 
+> We've postponed the July 1, 2017 deadline for creating new In-Place eDiscovery searches in Exchange Online (in Office 365 and Exchange Online standalone plans). But later this year or early next year, you won't be able to create new searches in Exchange Online. To create eDiscovery searches, please start using [Content Search](https://go.microsoft.com/fwlink/p/?linkid=847843) in the Office 365 Security & Compliance Center. After we decommission new In-Place eDiscovery searches, you'll still be able to modify existing In-Place eDiscovery searches, and creating new In-Place eDiscovery searches in Exchange Server and Exchange hybrid deployments will still be supported. 
   
 Use [In-Place eDiscovery](in-place-ediscovery.md) to search across all mailbox content, including deleted items and original versions of modified items for users placed on [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md). 
   
@@ -23,17 +23,17 @@ Use [In-Place eDiscovery](in-place-ediscovery.md) to search across all mailbox c
 
 - Estimated time to complete: 5 minutes
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging Policy and Compliance Permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging Policy and Compliance Permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
     
 - To create eDiscovery searches, you have to have an SMTP address in the organization that you're creating the searches in. So in Exchange Online, you must have a licensed Exchange Online (Plan 2) mailbox to create eDiscovery searches. In an Exchange hybrid organization, your on-premises Exchange mailbox must have a corresponding mail user account in your Office 365 organization so that you can search Exchange Online mailboxes. Or, if you sign in with an account that only exists in Office 365, such as the tenant administrator account, that account must be assigned an Exchange Online (Plan 2) license.
     
 - Exchange Server Setup creates a Discovery mailbox called **Discovery Search Mailbox** to copy search results. The Discovery Search Mailbox is also created by default in Exchange Online. You can create additional Discovery mailboxes. For details, see [Create a discovery mailbox](create-a-discovery-mailbox.md).
     
-- When you create an In-Place eDiscovery search, messages returned in search results aren't copied automatically to a discovery mailbox. After you create the search, you can use the Exchange Admin Center (EAC) to estimate and preview search results or copy them to a discovery mailbox. For details, see: 
+- When you create an In-Place eDiscovery search, messages returned in search results aren't copied automatically to a discovery mailbox. After you create the search, you can use the Exchange admin center (EAC) to estimate and preview search results or copy them to a discovery mailbox. For details, see: 
     
   - [Estimate or preview search results](create-in-place-ediscovery-search.md#estimate) (later in this topic) 
     
-  - [Copy eDiscovery Search Results to a Discovery Mailbox](http://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx)
+  - [Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx)
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
@@ -115,9 +115,9 @@ This example creates an In-Place eDiscovery search named HRCase090116 that searc
 New-MailboxSearch "HRCase090116" -StartDate "01/01/2015" -EndDate "12/31/2015" -SourceMailboxes  alexd,sarad -SearchQuery 'From:alexd@contoso.com AND To:sarad@contoso.com' -MessageTypes Email -TargetMailbox "Discovery Search Mailbox" -IncludeUnsearchableItems -LogLevel Full
 ```
 
-After using the Shell to create an In-Place eDiscovery search, you have to start the search by using the **Start-MailboxSearch** cmdlet to copy messages to the discovery mailbox specified in the  _TargetMailbox_ parameter. For details, see [Copy eDiscovery Search Results to a Discovery Mailbox](http://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx).
+After using the Shell to create an In-Place eDiscovery search, you have to start the search by using the **Start-MailboxSearch** cmdlet to copy messages to the discovery mailbox specified in the  _TargetMailbox_ parameter. For details, see [Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx).
   
-For detailed syntax and parameter information, see [New-MailboxSearch](http://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
+For detailed syntax and parameter information, see [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
   
 [Return to top](create-in-place-ediscovery-search.md#top)
   
@@ -176,7 +176,7 @@ Get-MailboxSearch "FY13 Q2 Financial Results" | FL Name,Status,LastRunBy,LastSta
 
 - After you create a new eDiscovery search, you can copy search results to the discovery mailbox and export those search results to a PST file. For more information, see:
     
-  - [Copy eDiscovery Search Results to a Discovery Mailbox](http://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx)
+  - [Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx)
     
   - [Export eDiscovery search results to a PST file](export-search-results.md)
     

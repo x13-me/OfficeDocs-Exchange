@@ -16,7 +16,7 @@ description: "Microsoft Exchange Unified Messaging (UM) relies on certified fax 
 
 Microsoft Exchange Unified Messaging (UM) relies on certified fax partner solutions for enhanced fax features such as outbound fax or fax routing. By default, Exchange servers aren't configured to allow incoming faxes to be delivered to a user that's enabled for UM. Instead, an Exchange server redirects incoming fax calls to a certified fax partner solution. The fax partner's server receives the fax data and then sends it to the user's mailbox in an email message with the fax included as a .tif attachment. 
   
-For more information about fax partners, see [Microsoft Pinpoint for Fax Partners](https://go.microsoft.com/fwlink/?LinkId=190238).
+For more information about fax partners, see [Microsoft Pinpoint for Fax Partners](https://go.microsoft.com/fwlink/p/?LinkId=190238).
   
 ## Deploying and configuring faxing
 <a name="deployandconfigure"> </a>
@@ -38,7 +38,7 @@ For more information about fax partners, see [Microsoft Pinpoint for Fax Partner
 ### Step 1: Deploy Unified Messaging
 <a name="step1deployUM"> </a>
 
-Before you can set up faxing for your on-premises or hybrid organization, you need to successfully deploy Client Access and Mailbox servers and configure your supported Voice over IP (VoIP) gateways to allow faxing. For details about how to deploy UM, see [Deploy Exchange Server UM](http://technet.microsoft.com/library/d147d4b1-32d7-476b-b76f-ee3c0b35ba49.aspx). For details about how to deploy VoIP gateways and IP Private Branch eXchanges (PBXs), see [Connect UM to Your Telephone System](http://technet.microsoft.com/library/92c3e029-f732-4d6d-b147-2b3006d5f088.aspx).
+Before you can set up faxing for your on-premises or hybrid organization, you need to successfully deploy Client Access and Mailbox servers and configure your supported Voice over IP (VoIP) gateways to allow faxing. For details about how to deploy UM, see [Deploy Exchange Server UM](https://technet.microsoft.com/library/d147d4b1-32d7-476b-b76f-ee3c0b35ba49.aspx). For details about how to deploy VoIP gateways and IP Private Branch eXchanges (PBXs), see [Connect UM to Your Telephone System](https://technet.microsoft.com/library/92c3e029-f732-4d6d-b147-2b3006d5f088.aspx).
   
 > [!IMPORTANT]
 > Sending and receiving faxes using T.38 or G.711 isn't supported in an environment where Unified Messaging and Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server are integrated. 
@@ -46,7 +46,7 @@ Before you can set up faxing for your on-premises or hybrid organization, you ne
 ### Step 2: Configure fax partner servers
 <a name="step2configurefax"> </a>
 
-Next, you need to enable incoming faxing and configure the fax partner's URI on each UM mailbox policy that you require in your organization. To successfully deploy incoming faxing, you must integrate a certified fax partner solution with Exchange Unified Messaging. For details, see [Fax advisor for Exchange UM](fax-advisor-for-exchange-um.md). For a list of certified fax partners, see [Microsoft Pinpoint for Fax Partners](https://go.microsoft.com/fwlink/?LinkId=190238)
+Next, you need to enable incoming faxing and configure the fax partner's URI on each UM mailbox policy that you require in your organization. To successfully deploy incoming faxing, you must integrate a certified fax partner solution with Exchange Unified Messaging. For details, see [Fax advisor for Exchange UM](fax-advisor-for-exchange-um.md). For a list of certified fax partners, see [Microsoft Pinpoint for Fax Partners](https://go.microsoft.com/fwlink/p/?LinkId=190238)
   
 > [!NOTE]
 > Because the fax partner server is external to your organization, firewall ports must be configured to allow the T.38 protocol ports that enable faxing over an IP-based network. By default, the T.38 protocol uses TCP port 6004. It can also use User Datagram Protocol (UDP) port 6044, but this will be defined by the hardware manufacturer. The firewall ports must be configured to allow fax data that uses the TCP or UDP ports or port ranges defined by the manufacturer. 
@@ -62,7 +62,7 @@ Three components must be configured correctly for users to be able to receive fa
     
 - UM mailboxes
     
-Faxing can be enabled or disabled on UM dial plans, UM mailbox policies, or on an individual UM-enabled user's mailbox. UM mailbox policies can be enabled or disabled for faxing using either the Exchange Administration Center (EAC) or the Exchange Management Shell. Enabling and disabling of dial plans and individual UM-enabled users needs to be done using the Exchange Management Shell. The following table shows the options that are available and the cmdlets and parameters that are used for enabling and disabling faxing.
+Faxing can be enabled or disabled on UM dial plans, UM mailbox policies, or on an individual UM-enabled user's mailbox. UM mailbox policies can be enabled or disabled for faxing using either the Exchange admin center (EAC) or the Exchange Management Shell. Enabling and disabling of dial plans and individual UM-enabled users needs to be done using the Exchange Management Shell. The following table shows the options that are available and the cmdlets and parameters that are used for enabling and disabling faxing.
   
 |**UM component**|**Enable/disable using the EAC?**|**Shell example for enabling faxing**|
 |:-----|:-----|:-----|
@@ -123,7 +123,7 @@ The receive connector will be configured on an Exchange server that's used by th
     
 -  _LiveCredentialEnabled: False_
     
-For details, see [Connectors](http://technet.microsoft.com/library/73559b0c-fc0e-41fd-84df-d07442137a0c.aspx).
+For details, see [Connectors](https://technet.microsoft.com/library/73559b0c-fc0e-41fd-84df-d07442137a0c.aspx).
   
 If the fax partner server sends network traffic to an Exchange server over a public network, for example, a service-based fax partner server hosted in the cloud, it's a good idea to authenticate the fax partner server using a sender ID check. This type of authentication ensures that the IP address that the fax message came from is authorized to send email messages on behalf of the fax partner domain that the message claims to have come from. DNS is used to store the sender ID records (or sender policy framework (SPF) records) and fax partners must publish their SPF records in the DNS forward lookup zone. Exchange will validate the IP addresses by querying DNS. However, the sender ID agent must be running on a Mailbox server to be able to perform the DNS query. 
   

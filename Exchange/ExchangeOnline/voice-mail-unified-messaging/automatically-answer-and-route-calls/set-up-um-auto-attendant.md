@@ -26,7 +26,7 @@ Although auto attendants can be very useful, if they aren't designed and configu
   
 ## How do I set up an auto attendant?
 
-In the Exchange Administration Center (EAC), you set up and manage UM auto attendants to automatically answer calls to your organization and allow callers to self-select different options using the keys on their telephone. You can have just one UM auto attendant that provides basic menu navigation for callers to your organization, or you can have multiple nested and branching auto attendants that provide a richer experience for your callers. However, in both cases, you must plan and set up your auto attendants carefully.
+In the Exchange admin center (EAC), you set up and manage UM auto attendants to automatically answer calls to your organization and allow callers to self-select different options using the keys on their telephone. You can have just one UM auto attendant that provides basic menu navigation for callers to your organization, or you can have multiple nested and branching auto attendants that provide a richer experience for your callers. However, in both cases, you must plan and set up your auto attendants carefully.
   
 To plan and create a new UM auto attendant structure, you need to do the following:
   

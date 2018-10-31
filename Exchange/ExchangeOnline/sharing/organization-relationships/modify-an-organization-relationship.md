@@ -105,7 +105,7 @@ To learn more about organization relationships, see [Organization relationships 
   
   ```
 
-For detailed syntax and parameter information, see [Get-OrganizationRelationship](http://technet.microsoft.com/library/b689bf46-437b-4ac4-89ce-dcffc3a388f5.aspx) and [Set-OrganizationRelationship](http://technet.microsoft.com/library/4e3b9d1d-cf41-4fd0-97e3-a0bbc816cf87.aspx).
+For detailed syntax and parameter information, see [Get-OrganizationRelationship](https://technet.microsoft.com/library/b689bf46-437b-4ac4-89ce-dcffc3a388f5.aspx) and [Set-OrganizationRelationship](https://technet.microsoft.com/library/4e3b9d1d-cf41-4fd0-97e3-a0bbc816cf87.aspx).
   
 ## How do you know this worked?
 

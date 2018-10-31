@@ -25,6 +25,6 @@ Fully supported web browsers give users access to features such as conversation 
 ## Managing Outlook on the web
 <a name="Managing"> </a>
 
-In Office 365, the most common Outlook on the web management tasks can be accomplished in the Exchange Administration Center (EAC). All these tasks, and many others, can be accomplished by using the Exchange Management Shell. 
+In Office 365, the most common Outlook on the web management tasks can be accomplished in the Exchange admin center (EAC). All these tasks, and many others, can be accomplished by using the Exchange Management Shell. 
   
 

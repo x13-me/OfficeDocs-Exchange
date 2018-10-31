@@ -62,18 +62,18 @@ Before you migrate mailboxes to Office 365 by using a staged migration, there ar
   
 1. **Configure Outlook Anywhere on your on-premises Exchange Server** The email migration service uses Outlook Anywhere (also known as RPC over HTTP), to connect to your on-premises Exchange Server. For information about how to set up Outlook Anywhere for Exchange 2007, and Exchange 2003, see the following: 
     
-  - [Exchange 2007: How to Enable Outlook Anywhere](https://go.microsoft.com/fwlink/?LinkID=167210)
+  - [Exchange 2007: How to Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=167210)
     
-  - [How to configure Outlook Anywhere with Exchange 2003](https://go.microsoft.com/fwlink/?LinkID=167209)
+  - [How to configure Outlook Anywhere with Exchange 2003](https://go.microsoft.com/fwlink/p/?LinkID=167209)
     
     > [!IMPORTANT]
-    > You must use a certificate issued by a trusted certification authority (CA) with your Outlook Anywhere configuration. Outlook Anywhere can't be configured with a self-signed certificate. For more information, see [How to configure SSL for Outlook Anywhere](https://go.microsoft.com/fwlink/?LinkID=80875). 
+    > You must use a certificate issued by a trusted certification authority (CA) with your Outlook Anywhere configuration. Outlook Anywhere can't be configured with a self-signed certificate. For more information, see [How to configure SSL for Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=80875). 
   
 2. **Optional: Verify that you can connect to your Exchange organization using Outlook Anywhere** Try one of the following methods to test your connection settings. 
     
   - Use Outlook from outside your corporate network to connect to your on-premises Exchange mailbox.
     
-  - Use the [Microsoft Exchange Remote Connectivity Analyzer](https://technet.microsoft.com/en-us/library/dd439364%28v=exchg.80%29.aspx) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests. 
+  - Use the [Microsoft Exchange Remote Connectivity Analyzer](https://technet.microsoft.com/library/dd439364(v=exchg.80).aspx) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests. 
     
   - Wait for the connection to automatically be tested when you [Connect Office 365 to your email system](perform-a-staged-migration.md#CreateEndpoint) later in this procedure. 
     
@@ -89,7 +89,7 @@ Before you migrate mailboxes to Office 365 by using a staged migration, there ar
     
     For instructions about how to set these permissions, see [Assign Exchange permissions to migrate mailboxes to Office 365](../assign-permissions-for-migration.md).
     
-5. **Disable Unified Messaging (UM)** If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. Turn on UM for the mailboxes after migration is complete. For how-to steps, see [disable unified messaging](https://go.microsoft.com/fwlink/?LinkId=521891).
+5. **Disable Unified Messaging (UM)** If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. Turn on UM for the mailboxes after migration is complete. For how-to steps, see [disable unified messaging](https://go.microsoft.com/fwlink/p/?LinkId=521891).
     
 ## Verify you own the domain
 <a name="BK_VerifyDomain"> </a>
@@ -134,7 +134,7 @@ You will need to license the users after they're created. You have 30 days to ad
   
  **To create new users**
   
--  You can use either the Microsoft Azure Active Directory Synchronization Tool or the Microsoft Azure Active Directory Sync Services (AAD Sync) to synchronize and create your on-premises users in Office 365. After mailboxes are migrated to Office 365, you'll manage user accounts in your on-premises organization and they're synchronized with your Office 365 organization. For more information, see [Directory Integration](https://go.microsoft.com/fwlink/?LinkId=521788) . 
+-  You can use either the Microsoft Azure Active Directory Synchronization Tool or the Microsoft Azure Active Directory Sync Services (AAD Sync) to synchronize and create your on-premises users in Office 365. After mailboxes are migrated to Office 365, you'll manage user accounts in your on-premises organization and they're synchronized with your Office 365 organization. For more information, see [Directory Integration](https://go.microsoft.com/fwlink/p/?LinkId=521788) . 
     
 ## Create a list of mailboxes to migrate
 <a name="BKMK_Step3"> </a>
@@ -197,7 +197,7 @@ A migration endpoint contains the settings and credentials needed to connect the
     
   - **Email address** Type the  *email address*  of any user in the on-premises Exchange organization that will be migrated. Office 365 will test the connectivity to this user's mailbox. 
     
-  - **Account with privileges** Type the  *user name*  (domain\user name format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address. 
+  - **Account with privileges** Type the  *username*  (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address. 
     
   - **Password of account with privileges** Type the  *password*  for the account with privileges that is the administrator account. 
     
@@ -386,9 +386,9 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
     
     For more information, see the following:
     
-  - [How to Remove an Exchange 2007 Organization](https://go.microsoft.com/fwlink/?LinkID=100485)
+  - [How to Remove an Exchange 2007 Organization](https://go.microsoft.com/fwlink/p/?LinkID=100485)
     
-  - [How to Uninstall Exchange Server 2003](https://go.microsoft.com/fwlink/?LinkID=56561)
+  - [How to Uninstall Exchange Server 2003](https://go.microsoft.com/fwlink/p/?LinkID=56561)
     
     > [!NOTE]
     > Decommissioning Exchange can have unintended consequences. Before decommissioning your on-premises Exchange organization, we recommend that you contact Microsoft Support. 

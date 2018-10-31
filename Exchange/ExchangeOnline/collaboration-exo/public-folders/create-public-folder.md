@@ -22,14 +22,14 @@ By default, a public folder inherits the settings of its parent folder, includin
   
 > [!NOTE]
 >  For more information about the storage quotas and limits for public folders, see the following topics: 
->  - For public folders in Office 365, see [Exchange Online Limits](https://go.microsoft.com/fwlink/?LinkID=391188). 
->  - For public folders in on-premises Exchange Server, see [Limits for public folders](https://docs.microsoft.com/en-us/Exchange/collaboration/public-folders/limits). 
+>  - For public folders in Office 365, see [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188). 
+>  - For public folders in on-premises Exchange Server, see [Limits for public folders](https://docs.microsoft.com/Exchange/collaboration/public-folders/limits). 
   
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](http://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](https://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic. 
     
 - You can't create a public folder unless you've first created a public folder mailbox. For more information about how to create a public folder mailbox, see [Create a public folder mailbox](create-public-folder-mailbox.md).    
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
@@ -68,7 +68,7 @@ New-PublicFolder -Name Reports -Path \Marketing\2013
 > [!IMPORTANT]
 > Don't use a backslash (\) in the name when creating a public folder. 
   
-For detailed syntax and parameter information, see [New-PublicFolder](http://technet.microsoft.com/library/18b837bf-9ef7-4edf-8728-7f6bd346e75d.aspx).
+For detailed syntax and parameter information, see [New-PublicFolder](https://technet.microsoft.com/library/18b837bf-9ef7-4edf-8728-7f6bd346e75d.aspx).
   
 ## How do you know this worked?
 

@@ -36,7 +36,7 @@ You'll perform the migration using the **\*-MigrationBatch** cmdlets, in additio
     
 -  `PublicFolderToMailboxMapGenerator.strings.psd1` This support file is used by the  `PublicFolderToMailboxMapGenerator.ps1` script and should be downloaded to the same location. 
     
--  `Create-PublicFolderMailboxesForMigration.ps1` This script creates the target public folder mailboxes for the migration. In addition, this script calculates the number of mailboxes necessary to handle the estimated user load, based on the guidelines for the number of user logons per public folder mailbox recommended in [Limits for Public Folders](http://technet.microsoft.com/library/709b075e-9584-484b-bcaa-e781c26497b4.aspx).
+-  `Create-PublicFolderMailboxesForMigration.ps1` This script creates the target public folder mailboxes for the migration. In addition, this script calculates the number of mailboxes necessary to handle the estimated user load, based on the guidelines for the number of user logons per public folder mailbox recommended in [Limits for Public Folders](https://technet.microsoft.com/library/709b075e-9584-484b-bcaa-e781c26497b4.aspx).
     
 -  `Create-PublicFolderMailboxesForMigration.strings.psd1` This support file is used by the Create-PublicFolderMailboxesForMigration.ps1 script and should be downloaded to the same location. 
     
@@ -46,7 +46,7 @@ You'll perform the migration using the **\*-MigrationBatch** cmdlets, in additio
     
 [Step 1: Download the migration scripts](batch-migration-of-legacy-public-folders.md#Scripts) provides details about where to download these scripts. Make sure all scripts are downloaded to the same location. 
   
-For additional management tasks related to public folders, see [Public Folder Procedures](http://technet.microsoft.com/library/afa54c8e-f3ab-4f5f-85ad-fb2a905ecfa9.aspx).
+For additional management tasks related to public folders, see [Public Folder Procedures](https://technet.microsoft.com/library/afa54c8e-f3ab-4f5f-85ad-fb2a905ecfa9.aspx).
   
 ## What versions of Exchange are supported for migrating public folders to Office 365 and Exchange Online?
 
@@ -62,9 +62,9 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
 
 - The Exchange 2010 server needs to be running Exchange 2010 SP3 RU8 or later.
     
-- In Office 365 and Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Office 365 or Exchange Online. For details about how to enable the Organization Management role group, see [Manage Role Groups](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx). 
+- In Office 365 and Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Office 365 or Exchange Online. For details about how to enable the Organization Management role group, see [Manage Role Groups](https://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx). 
     
-- In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/?LinkId=299212). 
+- In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/p/?LinkId=299212). 
     
 - Before migration, if any public folder in your organization is greater than 2 GB, we recommend either deleting content from that folder or splitting it up into multiple public folders. If either of these options isn't feasible, we recommend that you do not move your public folders to Office 365 and Exchange Online.
     
@@ -74,7 +74,7 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
     
 - Outlook Anywhere needs to be enabled on the legacy Exchange server. For details about enabling Outlook Anywhere on Exchange 2010 servers, see [Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=187249).
     
-- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the legacy Exchange servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online Using Remote PowerShell](http://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
+- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the legacy Exchange servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
     
 - You must use a single migration batch to migrate all of your public folder data. Exchange allows creating only one migration batch at a time. If you attempt to create more than one migration batch simultaneously, the result will be an error.
     
@@ -90,7 +90,7 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
 ### Step 1: Download the migration scripts
 <a name="Scripts"> </a>
 
-1. Download all scripts and supporting files from [Public Folders Migration Scripts](https://go.microsoft.com/fwlink/?LinkId=299838).
+1. Download all scripts and supporting files from [Public Folders Migration Scripts](https://go.microsoft.com/fwlink/p/?LinkId=299838).
     
 2. Save the scripts to the local computer on which you'll be running PowerShell. For example, C:\PFScripts. Make sure all scripts are saved in the same location.
     
@@ -193,17 +193,17 @@ d. Make sure that **Exchange Mail Public Folders** is not selected. If it isn't 
     
 For detailed syntax and parameter information, see the following topics:
   
-- [New-AcceptedDomain](http://technet.microsoft.com/library/08bcaaec-51e3-447d-b3bf-406a705c64b4.aspx)
+- [New-AcceptedDomain](https://technet.microsoft.com/library/08bcaaec-51e3-447d-b3bf-406a705c64b4.aspx)
     
-- [Get-PublicFolder](http://technet.microsoft.com/library/409711bc-6249-41d4-bf86-50e01240e69f.aspx)
+- [Get-PublicFolder](https://technet.microsoft.com/library/409711bc-6249-41d4-bf86-50e01240e69f.aspx)
     
-- [Get-PublicFolderDatabase](http://technet.microsoft.com/library/e2c9e769-ddfb-4981-906f-085834bc790f.aspx)
+- [Get-PublicFolderDatabase](https://technet.microsoft.com/library/e2c9e769-ddfb-4981-906f-085834bc790f.aspx)
     
-- [Set-PublicFolder](http://technet.microsoft.com/library/657a8e15-2587-41b5-986c-2289b2772c89.aspx)
+- [Set-PublicFolder](https://technet.microsoft.com/library/657a8e15-2587-41b5-986c-2289b2772c89.aspx)
     
-- [get-PublicFolderStatistics](http://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx)
+- [get-PublicFolderStatistics](https://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx)
     
-- [Get-PublicFolderClientPermission](http://technet.microsoft.com/library/b991d477-e48c-4cf9-a4d0-6f1d5696991e.aspx)
+- [Get-PublicFolderClientPermission](https://technet.microsoft.com/library/b991d477-e48c-4cf9-a4d0-6f1d5696991e.aspx)
     
 - [Get-OrganizationConfig](https://go.microsoft.com/fwlink/p/?linkid=183212)
     
@@ -276,23 +276,23 @@ For detailed syntax and parameter information, see the following topics:
 
 For detailed syntax and parameter information, see the following topics:
   
-- [Get-MigrationBatch](http://technet.microsoft.com/library/3a4d27c4-712b-40e8-b5a8-a4f1b8e5a3c6.aspx)
+- [Get-MigrationBatch](https://technet.microsoft.com/library/3a4d27c4-712b-40e8-b5a8-a4f1b8e5a3c6.aspx)
     
-- [Get-PublicFolderMigrationRequest](http://technet.microsoft.com/library/df474db6-7408-4aac-b703-424c9f36560e.aspx)
+- [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/library/df474db6-7408-4aac-b703-424c9f36560e.aspx)
     
-- [Remove-PublicFolderMigrationRequest](http://technet.microsoft.com/library/2f884fb1-2b00-428c-994a-66b8d82deea4.aspx)
+- [Remove-PublicFolderMigrationRequest](https://technet.microsoft.com/library/2f884fb1-2b00-428c-994a-66b8d82deea4.aspx)
     
-- [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
+- [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
     
-- [Get-PublicFolder](http://technet.microsoft.com/library/409711bc-6249-41d4-bf86-50e01240e69f.aspx)
+- [Get-PublicFolder](https://technet.microsoft.com/library/409711bc-6249-41d4-bf86-50e01240e69f.aspx)
     
-- [get-MailPublicFolder](http://technet.microsoft.com/library/da05e6cb-8ab1-4ba9-ae42-d0f631daec85.aspx)
+- [get-MailPublicFolder](https://technet.microsoft.com/library/da05e6cb-8ab1-4ba9-ae42-d0f631daec85.aspx)
     
-- [Disable-MailPublicFolder](http://technet.microsoft.com/library/92d6c890-a96a-469a-b864-99d9656b12e0.aspx)
+- [Disable-MailPublicFolder](https://technet.microsoft.com/library/92d6c890-a96a-469a-b864-99d9656b12e0.aspx)
     
-- [remove-PublicFolder](http://technet.microsoft.com/library/dda460e0-2601-49ae-a43f-c75c69719196.aspx)
+- [remove-PublicFolder](https://technet.microsoft.com/library/dda460e0-2601-49ae-a43f-c75c69719196.aspx)
     
-- [Remove-Mailbox](http://technet.microsoft.com/library/0477708c-768c-4040-bad2-8f980606fcf4.aspx)
+- [Remove-Mailbox](https://technet.microsoft.com/library/0477708c-768c-4040-bad2-8f980606fcf4.aspx)
     
 ### Step 3: Generate the .csv files
 <a name="CSVFiles"> </a>
@@ -362,7 +362,7 @@ For detailed syntax and parameter information, see the following topics:
   Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
   ```
 
-     `Credential` is your Office 365 user name and password.  `CsvSummaryFile` is the file path to where you would like to log, in .CSV format, synchronization operations and errors. 
+     `Credential` is your Office 365 username and password.  `CsvSummaryFile` is the file path to where you would like to log, in .CSV format, synchronization operations and errors. 
     
     > [!NOTE]
     > We recommend that you first simulate the actions that the script would take before actually executing it, which you can do by running the script with a  `-WhatIf` parameter. 
@@ -443,19 +443,19 @@ While batch migrations need to be created using the **New-MigrationBatch** cmdle
     
 For detailed syntax and parameter information, see the following topics:
   
-- [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
+- [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
     
-- [Get-ExchangeServer](http://technet.microsoft.com/library/96543903-10fa-46fe-9ea0-90570ca0ad2e.aspx)
+- [Get-ExchangeServer](https://technet.microsoft.com/library/96543903-10fa-46fe-9ea0-90570ca0ad2e.aspx)
     
-- [Get-OutlookAnywhere](http://technet.microsoft.com/library/b160bc1d-7691-4b58-b85c-09759362fa99.aspx)
+- [Get-OutlookAnywhere](https://technet.microsoft.com/library/b160bc1d-7691-4b58-b85c-09759362fa99.aspx)
     
-- [New-PublicFolderMigrationRequest](http://technet.microsoft.com/library/4537bb70-8806-4e23-b596-6dbf9f85e84d.aspx)
+- [New-PublicFolderMigrationRequest](https://technet.microsoft.com/library/4537bb70-8806-4e23-b596-6dbf9f85e84d.aspx)
     
-- [Get-PublicFolderDatabase](http://technet.microsoft.com/library/e2c9e769-ddfb-4981-906f-085834bc790f.aspx)
+- [Get-PublicFolderDatabase](https://technet.microsoft.com/library/e2c9e769-ddfb-4981-906f-085834bc790f.aspx)
     
-- [Get-PublicFolderMigrationRequest](http://technet.microsoft.com/library/df474db6-7408-4aac-b703-424c9f36560e.aspx)
+- [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/library/df474db6-7408-4aac-b703-424c9f36560e.aspx)
     
-- [Get-PublicFolderMigrationRequestStatistics](http://technet.microsoft.com/library/bfbcc746-b259-471b-97a4-0cf87f3cb2a6.aspx)
+- [Get-PublicFolderMigrationRequestStatistics](https://technet.microsoft.com/library/bfbcc746-b259-471b-97a4-0cf87f3cb2a6.aspx)
     
 ### Step 6: Lock down the public folders on the legacy Exchange server for final migration (downtime required)
 <a name="LockDownPFs"> </a>
@@ -470,7 +470,7 @@ On the legacy Exchange server, run the following command to lock the legacy publ
 Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 ```
 
-For detailed syntax and parameter information, see [set-OrganizationConfig](http://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx).
+For detailed syntax and parameter information, see [set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx).
   
 If your organization has multiple public folder databases, you'll need to wait until public folder replication is complete to confirm that all public folder databases have picked up the  `PublicFoldersLockedForMigration` flag and any pending changes users recently made to folders have converged across the organization. This may take several hours. 
   
@@ -529,11 +529,11 @@ After you finalize the public folder migration, you should run the following tes
 
 For detailed syntax and parameter information, see the following topics: 
   
-[Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
+[Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
   
-[Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
+[Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
   
-[set-OrganizationConfig](http://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx)
+[set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx)
   
 ## How do I know this worked?
 <a name="ItWorked"> </a>
@@ -566,7 +566,7 @@ After the migration is complete, and you have verified that your Exchange Online
 > [!IMPORTANT]
 > Since all of your mailboxes have been migrated to Office 365 prior to the public folder migration, we strongly recommend that you route the traffic through Office 365 (decentralized mail flow) instead of centralized mail flow through your on-premises environment. If you choose to keep mail flow centralized, it could cause delivery issues to your public folders, since you've removed the public folder mailbox databases from your on-premises organization. 
     
-- For details about how to remove public folder databases from Exchange 2010 servers, see [Remove Public Folder Databases](https://go.microsoft.com/fwlink/?LinkId=81409).
+- For details about how to remove public folder databases from Exchange 2010 servers, see [Remove Public Folder Databases](https://go.microsoft.com/fwlink/p/?LinkId=81409).
     
 ## Roll back the migration
 <a name="RollBack"> </a>

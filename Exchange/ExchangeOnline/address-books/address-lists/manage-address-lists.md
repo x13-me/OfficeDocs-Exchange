@@ -18,7 +18,7 @@ Address lists are a collection of mail-enabled objects in your organization. Mai
   
 For additional management tasks related to manage address lists, see [Address list procedures in Exchange Online](address-list-procedures.md).
   
-Looking for the Exchange Server version of this topic? See [Create an Address List](http://technet.microsoft.com/library/e86ba1b7-c41c-4050-bc29-13996cf53c59.aspx).
+Looking for the Exchange Server version of this topic? See [Create an Address List](https://technet.microsoft.com/library/e86ba1b7-c41c-4050-bc29-13996cf53c59.aspx).
   
 ## What do you need to know before you begin?
 
@@ -49,7 +49,7 @@ This example creates the child address list Building 34 Meeting Rooms in the All
 New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](http://technet.microsoft.com/library/2bcee6db-01d4-40ad-9595-33356a4025c5.aspx).
+For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/library/2bcee6db-01d4-40ad-9595-33356a4025c5.aspx).
   
 ### Update an address list
 
@@ -93,13 +93,13 @@ For example, suppose the address list named Oregon and Washington Users uses the
   
 - Some properties require the **Get-User** and **Set-User** cmdlets, while others require the **Get-Mailbox** and **Set-Mailbox** cmdlets (for example, **CustomAttribute1-15** ). For more information, see the following topics: 
     
-  - [Get-User](http://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx)
+  - [Get-User](https://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx)
     
-  - [Set-User](http://technet.microsoft.com/library/56d7fc86-2ac3-4e28-bc7a-761e91ac655a.aspx)
+  - [Set-User](https://technet.microsoft.com/library/56d7fc86-2ac3-4e28-bc7a-761e91ac655a.aspx)
     
-  - [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
+  - [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
     
-  - [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
+  - [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx)
     
 - The previous example shows the worst case scenario where no one appears in the address list. If a only small number of users don't appear in the address list, you can modify the required property value for each user. For example:
     
@@ -125,6 +125,6 @@ Remove-AddressList -Identity "Sales Department"
 
 Type Y to confirm that you want to remove this address list, and then press ENTER. 
   
-For detailed syntax and parameter information, see [Remove-AddressList](http://technet.microsoft.com/library/b628738c-ebbf-4116-ba85-b1dbd273df40.aspx).
+For detailed syntax and parameter information, see [Remove-AddressList](https://technet.microsoft.com/library/b628738c-ebbf-4116-ba85-b1dbd273df40.aspx).
   
 

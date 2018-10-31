@@ -90,9 +90,9 @@ To use an app password with Gmail, you have to first turn on 2-step verification
   
 7. Now you're ready to add your Gmail account to Outlook. When you're prompted for a password, you  *enter this app password for your Gmail account*  . Don't enter your Gmail password. For instructions on adding your Gmail account to Outlook, see these articles: 
     
-  - [Add an email account to Outlook](https://support.office.com/en-us/article/Add-an-email-account-to-Outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b)
+  - [Add an email account to Outlook](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b)
     
-  - [Connect email accounts in Outlook on the web (Office 365)](https://support.office.com/en-us/article/Connect-email-accounts-in-Outlook-on-the-web-Office-365-d7012ff0-924f-4f78-8aca-c3912d886c4d)
+  - [Connect email accounts in Outlook on the web (Office 365)](https://support.office.com/article/d7012ff0-924f-4f78-8aca-c3912d886c4d)
     
 ### Optionally revoke the app password
 

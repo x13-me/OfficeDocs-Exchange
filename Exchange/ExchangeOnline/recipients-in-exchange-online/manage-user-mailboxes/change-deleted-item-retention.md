@@ -35,7 +35,7 @@ What do you want to do?
   
 In these examples, we increase the retention period to 30 days, the maximum for Exchange Online mailboxes. But you can set the number to whatever you like, up to that limit. 
   
-Need help using Exchange Management Shell? See the [Steps for using PowerShell with Exchange Online](change-deleted-item-retention.md#BKMK_UsePS), or check out [this article](https://go.microsoft.com/fwlink/?LinkId=816875) for all the details. 
+Need help using Exchange Management Shell? See the [Steps for using PowerShell with Exchange Online](change-deleted-item-retention.md#BKMK_UsePS), or check out [this article](https://go.microsoft.com/fwlink/p/?LinkId=816875) for all the details. 
   
  **Example 1:** Set Emily Maier's mailbox to keep deleted items for 30 days. In Exchange Management Shell, run the following command. 
   
@@ -49,7 +49,7 @@ Set-Mailbox -Identity "Emily Maier" -RetainDeletedItemsFor 30
 Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Set-Mailbox -RetainDeletedItemsFor 30
 ```
 
-Need more details about using these commands? See the Exchange Management Shell Help topic [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx). 
+Need more details about using these commands? See the Exchange Management Shell Help topic [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx). 
   
 > [!TIP]
 > Need to keep deleted items for longer than 30 days? To do this, place the mailbox on In-Place Hold or Litigation Hold. This works because when a mailbox is placed on hold, deleted items are kept and retention settings for deleted items are ignored. See [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md). 
@@ -75,7 +75,7 @@ Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbo
 ## Steps for using PowerShell with Exchange Online
 <a name="BKMK_UsePS"> </a>
 
-These steps assume you're using Windows 10 or Windows 8 (or 8.1). (Have an earlier version of Windows? See the [detailed steps](https://go.microsoft.com/fwlink/?LinkId=816875).)
+These steps assume you're using Windows 10 or Windows 8 (or 8.1). (Have an earlier version of Windows? See the [detailed steps](https://go.microsoft.com/fwlink/p/?LinkId=816875).)
   
 1. **Open the PowerShell window:**
     
@@ -103,7 +103,7 @@ These steps assume you're using Windows 10 or Windows 8 (or 8.1). (Have an earli
   $UserCredential = Get-Credential
   ```
 
-  - In the **Windows PowerShell Credential Request** dialog box, type your Office 365 user name and password, and then click **OK**.
+  - In the **Windows PowerShell Credential Request** dialog box, type your Office 365 username and password, and then click **OK**.
     
   - At the prompt in the PowerShell window, run the following command. You can use the "Copy" option to copy it from this page, then just paste it into the PowerShell window.
     
@@ -128,7 +128,7 @@ Now you're ready to run the command to [Change how long permanently deleted item
     
 - If you want to place a mailbox on [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md) so the retention limit is ignored, make sure the mailbox has an Exchange Online (Plan 2) user license. 
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
     
 - You can only use the Shell to perform this procedure. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
@@ -158,6 +158,6 @@ Additional help:
   
 - If a user purges a deleted item, you can recover it before the deleted item retention period expires. For details, see [Recover deleted messages in a user's mailbox](recover-deleted-messages.md).
     
-- To learn more about deleted item retention, the Recoverable Items folder, In-Place Hold, and Litigation Hold, see [Understanding Recoverable Items](http://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx).
+- To learn more about deleted item retention, the Recoverable Items folder, In-Place Hold, and Litigation Hold, see [Understanding Recoverable Items](https://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx).
     
 

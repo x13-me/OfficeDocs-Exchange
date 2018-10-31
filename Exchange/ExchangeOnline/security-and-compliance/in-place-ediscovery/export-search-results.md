@@ -20,7 +20,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 
 - Estimated time to complete: Time will vary based on the amount and size of the search results that will be exported.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging policy and compliance permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
     
 - The computer you use to export search results to a PST file must meet the following system requirements:
     
@@ -94,7 +94,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
     
   - [Estimate, preview, and copy search results](in-place-ediscovery.md#estimate)
     
-  - [Unsearchable Items in Exchange eDiscovery](http://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx)
+  - [Unsearchable Items in Exchange eDiscovery](https://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx)
     
 - To export eDiscovery search results from the eDiscovery Center in SharePoint or SharePoint Online, see [Export eDiscovery content and create reports](https://go.microsoft.com/fwlink/p/?LinkId=324757).
     
@@ -102,8 +102,8 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
 
 |**Symptom**|**Possible cause**|
 |:-----|:-----|
-|Cannot export to a PST file.  <br/> | There is no active mailbox attached to the account. To export the PST, you must have an active account.  <br/>  Your version of Internet Explorer is out of date. Try updating IE to version 10 or later. Or try a different browser.  <br/>  Search criteria entered in the **Filter based on criteria** query is incorrect. For example, a username is entered instead of an email address. For more information about how to filter based on criteria, see [Modify an In-Place eDiscovery search](http://technet.microsoft.com/library/3162743c-cc12-4997-91e0-bcbfea8bcb17.aspx).  <br/> |
+|Cannot export to a PST file.  <br/> | There is no active mailbox attached to the account. To export the PST, you must have an active account.  <br/>  Your version of Internet Explorer is out of date. Try updating IE to version 10 or later. Or try a different browser.  <br/>  Search criteria entered in the **Filter based on criteria** query is incorrect. For example, a username is entered instead of an email address. For more information about how to filter based on criteria, see [Modify an In-Place eDiscovery search](https://technet.microsoft.com/library/3162743c-cc12-4997-91e0-bcbfea8bcb17.aspx).  <br/> |
 |Unable to export search results on a specific machine. Export works as expected on a different machine.  <br/> |The wrong Windows credentials were saved in the **Credential Manager**. Clear your credentials and log in again.  <br/> |
-|eDiscovery PST Export Tool won't start.  <br/> |Local intranet zone settings aren't set up correctly in Internet Explorer. Make sure that \*.outlook.com, \*.office365.com, \*.sharepoint.com and \*.onmicrosoft.com are added to the Local intranet zone trusted sites.  <br/> To add these sites to the Trusted zone in IE, see [Security zones: adding or removing websites](https://windows.microsoft.com/en-us/windows/security-zones-adding-removing-websites#1TC=windows-7).  <br/> |
+|eDiscovery PST Export Tool won't start.  <br/> |Local intranet zone settings aren't set up correctly in Internet Explorer. Make sure that \*.outlook.com, \*.office365.com, \*.sharepoint.com and \*.onmicrosoft.com are added to the Local intranet zone trusted sites.  <br/> To add these sites to the Trusted zone in IE, see [Security zones: adding or removing websites](https://windows.microsoft.com/windows/security-zones-adding-removing-websites#1TC=windows-7).  <br/> |
    
 

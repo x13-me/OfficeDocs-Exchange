@@ -71,7 +71,7 @@ This example sets up match subdomains for the contoso.com domain.
 Set-AcceptedDomain -Identity contoso.com -MatchSubdomains $true 
 ```
 
-For more information about using the Exchange Management Shell, see [set-AcceptedDomain](http://technet.microsoft.com/library/2ef9a20b-0974-45d0-9dae-23bab22d736e.aspx) and [PowerShell in Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx).
+For more information about using the Exchange Management Shell, see [set-AcceptedDomain](https://technet.microsoft.com/library/2ef9a20b-0974-45d0-9dae-23bab22d736e.aspx) and [PowerShell in Exchange Online Protection](https://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx).
   
 #### How do you know this worked?
 

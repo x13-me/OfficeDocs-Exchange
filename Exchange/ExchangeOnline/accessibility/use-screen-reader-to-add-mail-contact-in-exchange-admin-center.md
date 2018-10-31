@@ -14,7 +14,7 @@ description: "Using a screen reader with Exchange Online, you can use the Exchan
 
 # Use a screen reader to add a new mail contact in the Exchange admin center
 
-Using a screen reader with Exchange Online, you can use the Exchange admin center (EAC) to set up a  *mail contact*  —a mail-enabled directory service object containing information about a person or entity that exists outside of your Exchange Online organization. Each mail contact has an external email address. For more information about mail contacts, refer to the [Recipients](https://go.microsoft.com/fwlink/?LinkId=798820) TechNet article. 
+Using a screen reader with Exchange Online, you can use the Exchange admin center (EAC) to set up a  *mail contact*  —a mail-enabled directory service object containing information about a person or entity that exists outside of your Exchange Online organization. Each mail contact has an external email address. For more information about mail contacts, refer to the [Recipients](https://go.microsoft.com/fwlink/p/?LinkId=798820) TechNet article. 
   
 In this topic
   
@@ -31,21 +31,21 @@ Navigate with Internet Explorer and keyboard shortcuts, and make sure that you h
 
 Exchange Online, which includes the EAC, is a web-based application, so the keyboard shortcuts and navigation may be different from those in Exchange 2016. [Accessibility in the Exchange admin center](accessibility-in-exchange-admin-center.md).
   
-For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/?LinkID=787614).
+For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=787614).
   
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/?LinkID=317550).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
   
 ### Confirm your Office 365 subscription plan
 
 Exchange Online is included in Office 365 business and enterprise subscription plans. But capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it. 
   
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://go.microsoft.com/fwlink/?LinkID=797552
-) and [Exchange Online Service Description.](https://go.microsoft.com/fwlink/?LinkID=797553
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://go.microsoft.com/fwlink/p/?LinkID=797552
+) and [Exchange Online Service Description.](https://go.microsoft.com/fwlink/p/?LinkID=797553
 ).
   
 ### Open the EAC, and confirm your admin role
 
-To add a new mail contact, [use a screen reader to open the EAC](http://technet.microsoft.com/library/c7091f4c-da4e-49fa-bae4-b9e34bf51d9e.aspx) and check that your Office 365 global administrator has assigned you to the [Organization Management](https://go.microsoft.com/fwlink/?LinkId=797868) and [Recipient Management](https://go.microsoft.com/fwlink/?LinkId=798822) admin group. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+To add a new mail contact, [use a screen reader to open the EAC](https://technet.microsoft.com/library/c7091f4c-da4e-49fa-bae4-b9e34bf51d9e.aspx) and check that your Office 365 global administrator has assigned you to the [Organization Management](https://go.microsoft.com/fwlink/p/?LinkId=797868) and [Recipient Management](https://go.microsoft.com/fwlink/p/?LinkId=798822) admin group. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
   
 ## Use the EAC to create a mail contact
 <a name="BKMK_CreateMailContact"> </a>

@@ -16,17 +16,17 @@ description: "The global address list (GAL) is a directory that contains entries
 
 The global address list (GAL) is a directory that contains entries for every group, user, and contact within an organization's implementation of Microsoft Exchange. If your organization uses address book policies, you may want to create additional GALs. To learn more, see [Address book policies](../../address-books/address-book-policies/address-book-policies.md).
   
-For additional management tasks related to address lists, see [Managing Address Lists](http://technet.microsoft.com/library/44c87349-964b-4700-9ce9-87bd4cb2249e.aspx).
+For additional management tasks related to address lists, see [Managing Address Lists](https://technet.microsoft.com/library/44c87349-964b-4700-9ce9-87bd4cb2249e.aspx).
   
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email Address and Address Book Permissions](http://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic. 
     
 - By default in Exchange Online, the Address List role isn't assigned to any role groups. To use any cmdlets that require the Address List role, you need to add the role to a role group. For more information, see the "Add a role to a role group" section in the topic, **Manage role groups**.
     
-- You can't use the Exchange Administration Center (EAC) to perform this procedure. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to perform this procedure. You must use the Shell.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
@@ -46,7 +46,7 @@ New-GlobalAddressList -Name "GAL_Contoso" -IncludedRecipients MailboxUsers -Cond
 > [!NOTE]
 > If you're using precanned conditional filter properties, the  _IncludedRecipients_ parameter can't be blank. 
   
-For detailed syntax and parameter information, see [New-GlobalAddressList](http://technet.microsoft.com/library/9349a281-f92f-40f9-bf29-2a2e138c2783.aspx).
+For detailed syntax and parameter information, see [New-GlobalAddressList](https://technet.microsoft.com/library/9349a281-f92f-40f9-bf29-2a2e138c2783.aspx).
   
 ### Use the Shell create a GAL using a recipient filter
 
@@ -56,6 +56,6 @@ This example creates a GAL named GAL_AgencyA that includes recipients for which 
 New-GlobalAddressList -Name "GAL_AgencyA" -RecipientFilter {CustomAttribute15 -like "AgencyA"}
 ```
 
-For detailed syntax and parameter information, see [New-GlobalAddressList](http://technet.microsoft.com/library/9349a281-f92f-40f9-bf29-2a2e138c2783.aspx).
+For detailed syntax and parameter information, see [New-GlobalAddressList](https://technet.microsoft.com/library/9349a281-f92f-40f9-bf29-2a2e138c2783.aspx).
   
 

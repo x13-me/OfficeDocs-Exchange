@@ -55,11 +55,11 @@ The migration administrator must have the necessary administrative privileges in
     
     For an IMAP4 migration, the comma-separated value (.csv) file for the migration batch must contain:
     
-  - The user name and password for each mailbox that you want to migrate.
+  - The username and password for each mailbox that you want to migrate.
     
     or
     
-  - The user name and password for an account in your IMAP4 messaging system that has the necessary administrative privileges to access all user mailboxes. To learn whether your IMAP4 server supports this approach and how to enable it, see the documentation for your IMAP4 server.
+  - The username and password for an account in your IMAP4 messaging system that has the necessary administrative privileges to access all user mailboxes. To learn whether your IMAP4 server supports this approach and how to enable it, see the documentation for your IMAP4 server.
     
 You can use the Exchange Management Shell in your on-premises organization to quickly assign the necessary permissions to migrate mailboxes to Office 365.
   
