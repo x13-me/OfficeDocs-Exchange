@@ -55,9 +55,9 @@ There are a couple of common scenarios that Exchange administrators manage in th
     
 See [Specify the administrators and users who can install and manage add-ins for Outlook](specify-who-can-install-and-manage-add-ins.md) for more information. 
   
- **If your end users are currently able to access add-ins and you want to remove that access, use the  `Get-App` cmdlet to see which add-ins each user has installed. **
+ **If your end users are currently able to access add-ins and you want to remove that access, use the `Get-App` cmdlet to see which add-ins each user has installed. **
   
-Next, use the  `Remove-App` cmdlet to remove any add-ins from one or more users. 
+Next, use the `Remove-App` cmdlet to remove any add-ins from one or more users. 
   
 For more information, go [here](https://go.microsoft.com/fwlink/p/?linkid=844721). 
   

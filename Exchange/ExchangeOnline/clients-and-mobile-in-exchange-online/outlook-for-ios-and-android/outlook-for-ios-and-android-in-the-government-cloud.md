@@ -51,7 +51,7 @@ Remove any restrictions placed within your Exchange environment that may be bloc
 End users need to install the app on their devices. How the installation happens depends on whether or not the devices are enrolled in a mobile device management (MDM) solution, such as Microsoft Intune. Users with enrolled devices can install the app through their MDM solution, like the Intune Company Portal. Users with devices that are not enrolled in an MDM solution can search for "Microsoft Outlook" in the Apple App Store or Google Play Store and download it from one of those locations.
   
 > [!NOTE]
-> To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is leveraged. For more information, see [App-based conditional access with Intune](https://docs.microsoft.com/en-us/intune/app-based-conditional-access-intune). 
+> To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is leveraged. For more information, see [App-based conditional access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune). 
   
  **3. Have end users enable GCC mode on their devices**
   

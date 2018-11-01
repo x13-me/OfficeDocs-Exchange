@@ -43,7 +43,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
     
 2. Choose **Setup** \> **Domains**.
     
-3. On the **Domains-** page, click ** Add domain ** to start the domain wizard. 
+3. On the **Domains-** page, click **Add domain** to start the domain wizard. 
     
     ![Choose Add domain](media/b0267b62-3f20-4c76-be75-40f9c2274433.png)
   
@@ -97,7 +97,7 @@ On a computer that is domain joined to your on-premises organization, sign in to
     
     At this point you are prompted to download and install the **Azure AD Connect wizard** to synchronize your users from on-premises to Office 365. 
     
-2. Once Azure AD Connect has downloaded, run it and choose the **default options for [Express settings](http://go.microsoft.com/fwlink/p/?LinkID=698537)**. 
+2. Once Azure AD Connect has downloaded, run it and choose the **default options for [Express settings](https://go.microsoft.com/fwlink/p/?LinkID=698537)**. 
     
     After synchronization is completed, you will be taken to the Office 365 **Data migration** page where you can see all of your users that were synchronized to Office 365. 
     
@@ -143,7 +143,7 @@ Email systems use a DNS record called an MX record to figure out where to delive
   
 [How to decommission Exchange servers in a Hybrid environment](https://go.microsoft.com/fwlink/p/?linkid=839914)
   
-[Modify or remove Exchange 2010](https://go.microsoft.com/fwlink/?LinkId=217936)
+[Modify or remove Exchange 2010](https://go.microsoft.com/fwlink/p/?LinkId=217936)
   
-[How to remove an Exchange 2007 organization](https://go.microsoft.com/fwlink/?LinkID=100485)
+[How to remove an Exchange 2007 organization](https://go.microsoft.com/fwlink/p/?LinkID=100485)
 

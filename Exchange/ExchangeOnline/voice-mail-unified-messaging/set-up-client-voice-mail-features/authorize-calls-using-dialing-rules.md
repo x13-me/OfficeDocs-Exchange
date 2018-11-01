@@ -32,9 +32,9 @@ Where you authorize dialing rule groups depends on the types of callers that you
   
 |**Type of caller**|**Authorize dialing rule groups here**|
 |:-----|:-----|
-|Unauthenticated callers who call in to an Outlook Voice Access number and don't enter a PIN  <br/> |UM dial plan. For details, see [Authorize calls for users in a dial plan](authorize-calls-for-users-in-a-dial-plan.md).  <br/> |
-|Authenticated callers who call in to an Outlook Voice Access number and enter a PIN  <br/> |UM mailbox policy for the caller. For details, see [Authorize calls for a group of users](authorize-calls-for-a-group-of-users.md).  <br/> |
-|Unauthenticated callers who call in to a telephone number that's configured on a UM auto attendant  <br/> |UM auto attendant. For details, see [Authorize calls for auto attendant callers](authorize-calls-for-auto-attendant-callers.md).  <br/> |
+|Unauthenticated callers who call in to an Outlook Voice Access number and don't enter a PIN|UM dial plan. For details, see [Authorize calls for users in a dial plan](authorize-calls-for-users-in-a-dial-plan.md).|
+|Authenticated callers who call in to an Outlook Voice Access number and enter a PIN|UM mailbox policy for the caller. For details, see [Authorize calls for a group of users](authorize-calls-for-a-group-of-users.md).|
+|Unauthenticated callers who call in to a telephone number that's configured on a UM auto attendant|UM auto attendant. For details, see [Authorize calls for auto attendant callers](authorize-calls-for-auto-attendant-callers.md).|
    
 Depending on which users you're authorizing to make outbound calls, you'll use the **Dialing authorization** page in the Exchange admin center (EAC) for the dial plan, the auto attendant, or the UM mailbox policy. 
   

@@ -24,16 +24,16 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 - Estimated time to complete each procedure: 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Offline address books" entry in the [Email Address and Address Book Permissions](http://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Offline address books" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic. 
     
-- You can't use the Exchange Administration Center (EAC) to perform this procedure. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to perform this procedure. You must use Exchange Online PowerShell.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## Use the Shell to configure OAB distribution properties
+## Use Exchange Online PowerShell to configure OAB distribution properties
 <a name="UseShell"> </a>
 
 This example sets the polling interval for OAB distribution on the OAB virtual directory OAB (Default Web Site) to six hours.
@@ -48,11 +48,11 @@ This example sets the external distribution point to https://contoso.com/OAB for
 Set-OABVirtualDirectory "OAB (Default Web Site)" -ExternalUrl https://contoso.com/OAB
 ```
 
-For detailed syntax and parameter information, see [set-OabVirtualDirectory](http://technet.microsoft.com/library/d1184716-920c-47cf-9e03-638434c16462.aspx).
+For detailed syntax and parameter information, see [set-OabVirtualDirectory](https://technet.microsoft.com/library/d1184716-920c-47cf-9e03-638434c16462.aspx).
   
 ## For More Information
 <a name="UseShell"> </a>
 
-[Understanding Offline Address Books](http://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx)
+[Understanding Offline Address Books](https://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx)
   
 

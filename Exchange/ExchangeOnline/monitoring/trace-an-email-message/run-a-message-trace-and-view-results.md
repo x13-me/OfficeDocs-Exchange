@@ -146,7 +146,7 @@ In the events section, the following fields provide information about the events
   - **RESOLVED**: The message was redirected to a new recipient address based on an Active Directory look up. When this happens, the original recipient address is listed in a separate row in the message trace along with the final delivery status for the message.
 
     > [!TIP]
-    > Additional events may appear; for more information about these, see the "Event types in the message tracking log" section in [Message Tracking](http://technet.microsoft.com/library/bada2ea7-6d7c-4630-b7f1-67f56818f0ff.aspx).
+    > Additional events may appear; for more information about these, see the "Event types in the message tracking log" section in [Message Tracking](https://technet.microsoft.com/library/bada2ea7-6d7c-4630-b7f1-67f56818f0ff.aspx).
   
 - **Action**: This field shows the action that was performed if the message was filtered due to a malware or spam detection or a rule match. For example, it will let you know if the message was deleted or if it was sent to the quarantine.
 
@@ -184,7 +184,7 @@ If you didn't include routing details when running the message trace, the follow
   
 - **origin_timestamp**: The date and time at which the message was received by the service, using the configured UTC time zone.
 
-- **sender_address**: The email address of the sender in the form  *alias*  @  *domain*  .
+- **sender_address**: The email address of the sender in the form *alias*@*domain*.
 
 - **Recipient_status**: The status of the delivery of the message to the recipient. If the message was sent to multiple recipients, it will show all the recipients and the corresponding status against each, in the format: \<*email address*\>##\<*status*\>. For example, a status of: 
 
@@ -198,7 +198,7 @@ If you didn't include routing details when running the message trace, the follow
 
 - **total_bytes**: The size of the message, including attachments, in bytes.
 
-- **message_id**: This is the Internet message ID (also known as the Client ID) found in the header of the message with the "Message-ID:" token. The form of this varies depending on the sending mail system. The following is an example: \<  *08f1e0f6806a47b4ac103961109ae6ef*  @  *server*  .  *domain*  \>.
+- **message_id**: This is the Internet message ID (also known as the Client ID) found in the header of the message with the "Message-ID:" token. The form of this varies depending on the sending mail system. The following is an example: \<*08f1e0f6806a47b4ac103961109ae6ef*@*server*.*domain*\>.
 
     This ID should be unique, however, it is dependent on the sending mail system for generation and not all sending mail systems behave the same way. As a result, there is a possibility that you may get results for multiple messages when querying upon a single Message ID.
 
@@ -210,13 +210,13 @@ If you didn't include routing details when running the message trace, the follow
 
 - **directionality**: This field denotes whether the message was sent inbound (1) to your organization, or whether it was sent outbound (2) from your organization.
 
-- **connector_id**: The name of the source or destination Send connector or Receive connector. For example,  *ServerName*  \  *ConnectorName*  or  *ConnectorName*  .
+- **connector_id**: The name of the source or destination Send connector or Receive connector. For example, *ServerName*  \ *ConnectorName*  or *ConnectorName*.
 
 - **delivery_priority**: Denotes whether the message was sent with **High**, **Low**, or **Normal** priority.
 
 #### View a message trace report with routing details
 
-If you included routing details when running the message trace, all information from the message tracking logs is included in the .CSV file, which you can open in an application such as Microsoft Excel. Some of the values included in this report are described in the prior section, while other values that may be useful for investigative purposes are described in the "Fields in the message tracking log files" section in the [Message Tracking](http://technet.microsoft.com/library/bada2ea7-6d7c-4630-b7f1-67f56818f0ff.aspx) topic.
+If you included routing details when running the message trace, all information from the message tracking logs is included in the .CSV file, which you can open in an application such as Microsoft Excel. Some of the values included in this report are described in the prior section, while other values that may be useful for investigative purposes are described in the "Fields in the message tracking log files" section in the [Message Tracking](https://technet.microsoft.com/library/bada2ea7-6d7c-4630-b7f1-67f56818f0ff.aspx) topic.
   
 #### The custom_data field
 
@@ -233,7 +233,7 @@ A string beginning with S:SFA is an entry from the spam filter agent and provide
 |SFV=BLK|Filtering was skipped and the message was blocked because it originated from a blocked sender.|
 |SFV=SKS|The message was marked as spam prior to being processed by the content filter. This includes messages where the message matched a mail flow rule to automatically mark it as spam and bypass all additional filtering.|
 |SCL=\<*number*\>|For more information about the different SCL values and what they mean, see [Spam Confidence Levels](https://technet.microsoft.com/library/34681000-0022-4b92-b38a-e32b3ed96bf6.aspx).|
-|PCL=\< *number*\>|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam Confidence Levels](https://technet.microsoft.com/library/34681000-0022-4b92-b38a-e32b3ed96bf6.aspx).|
+|PCL=\<*number*\>|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam Confidence Levels](https://technet.microsoft.com/library/34681000-0022-4b92-b38a-e32b3ed96bf6.aspx).|
 |DI=SB|The sender of the message was blocked.|
 |DI=SQ|The message was quarantined.|
 |DI=SD|The message was deleted.|

@@ -69,7 +69,7 @@ These general steps apply whether you are migrating from Gmail or another IMAP s
     
     To perform the migration, you need an administrator account that has permissions, or the username and password to each mailbox.
     
-5.  If you are using the steps described in [Migrate Google Apps mailboxes to Office 365](migrate-g-suite-mailboxes.md) or [Migrate other types of IMAP mailboxes to Office 365](migrate-other-types-of-imap-mailboxes.md), you will create a list of mailboxes to migrate (CSV file). These migrations instructions start from the Exchange admin center, and you will need to create a CSV file that lists the email addresses, user names, and passwords for the mailboxes you want to migrate.
+5.  If you are using the steps described in [Migrate Google Apps mailboxes to Office 365](migrate-g-suite-mailboxes.md) or [Migrate other types of IMAP mailboxes to Office 365](migrate-other-types-of-imap-mailboxes.md), you will create a list of mailboxes to migrate (CSV file). These migrations instructions start from the Exchange admin center, and you will need to create a CSV file that lists the email addresses, usernames, and passwords for the mailboxes you want to migrate.
     
     You can also use the migrations page or setup instructions in the [Admin center preview to migrate from IMAP](imap-migration-in-the-admin-center.md) systems such as Gmail, Hotmail.com or Outlook.com. These steps are the best if you plan to migrate mail for only a few users (less than 50). If you are migrating mail for more users it is easier to use a CSV file to enter all the information for the accounts. 
     
@@ -101,7 +101,7 @@ These general steps apply whether you are migrating from Gmail or another IMAP s
 
 To finish an email migration successfully, it's a good idea to be comfortable doing these tasks:
   
-- You create a list of mailboxes to migrate in Excel. You add your users' email addresses, user names, and passwords to this file.
+- You create a list of mailboxes to migrate in Excel. You add your users' email addresses, usernames, and passwords to this file.
     
 - You use step-by-step wizards in Office 365 to configure and start the migration process. 
     

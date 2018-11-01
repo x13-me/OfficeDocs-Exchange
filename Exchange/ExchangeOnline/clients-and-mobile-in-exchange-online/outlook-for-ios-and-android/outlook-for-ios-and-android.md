@@ -20,7 +20,7 @@ description: "Summary: This article contains architectural and security informat
 The Outlook app for iOS and Android is designed to bring together email, calendar, contacts, and other files, enabling users in your organization to do more from their mobile devices. This article provides an overview of the architecture and the storage design of the app, so that Office365 administrators can deploy and maintain Outlook for iOS and Android in their organizations.
   
 > [!NOTE]
-> The [Outlook for iOS and Android Help Center](https://support.office.com/en-us/article/Outlook-for-iOS-and-Android-Help-Center-cd84214e-a5ac-4e95-9ea3-e07f78d0cde6) is available for users, including help for using the app on specific devices and troubleshooting information. 
+> The [Outlook for iOS and Android Help Center](https://support.office.com/article/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6) is available for users, including help for using the app on specific devices and troubleshooting information. 
   
 ## Outlook for iOS and Android architecture
 

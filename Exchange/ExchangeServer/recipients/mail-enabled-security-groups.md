@@ -297,7 +297,7 @@ Use this tab to view or change the email addresses that are configured for the g
 
     To manually specify the group's primary email address here, you need to clear the check box **Automatically update email addresses based on the email address policy applied to this recipient**. Note that clearing this check box prevents automatic updates to the email addresses of the group by email address policies.
 
-  - To add a new email address for the group, click ** Add ** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **New email address** page that opens, select one of these options: 
+  - To add a new email address for the group, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **New email address** page that opens, select one of these options: 
 
   - **Email address type**: Select **SMTP**. In the **Email address** box, type the email address (for example, helpdesk@contoso.com). The domain must be an accepted domain that's configured for your organization. For more information, see [Accepted domains in Exchange Server](../mail-flow/accepted-domains/accepted-domains.md).
 

@@ -24,7 +24,7 @@ description: "Learn all the ways admins can use to migrate user mailboxes to Off
 
 Your organization can migrate email to Office 365 from other systems. Your administrators can [Migrate mailboxes from Exchange Server](mailbox-migration.md#StagedorCutover) or [Migrate email from another IMAP-enabled email system](mailbox-migration.md#IMAP). And your users can [Have users import their own email](mailbox-migration.md#Import) their own email, contacts, and other mailbox information to an Office 365 mailbox created for them. Your organization also can [Work with a partner to migrate email](mailbox-migration.md#Partner) to migrate email. 
   
-Before you start an email migration, review [limits](https://go.microsoft.com/fwlink/?LinkID=328224) and [best practices](https://go.microsoft.com/fwlink/?LinkID=392945) for Exchange Online to make sure you get the performance and behavior you expect after migration. 
+Before you start an email migration, review [limits](https://go.microsoft.com/fwlink/p/?LinkID=328224) and [best practices](https://go.microsoft.com/fwlink/p/?LinkID=392945) for Exchange Online to make sure you get the performance and behavior you expect after migration. 
   
 See [Decide on a migration path](decide-on-a-migration-path.md) or [Exchange migration advisors](https://aka.ms/office365setup) for help with choosing the best option for your organization. 
 
@@ -65,7 +65,7 @@ There are three types of email migrations that can be made from an Exchange Serv
     
   - You have Exchange 2013.
     
-    For more information, see [Plan an Exchange Online hybrid deployment in Office 365](https://go.microsoft.com/fwlink/?LinkId=517633).
+    For more information, see [Plan an Exchange Online hybrid deployment in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=517633).
     
 ## Use Office 365 Import Service to migrate PST-files
 <a name="StagedorCutover"> </a>
@@ -103,8 +103,8 @@ If none of the types of migrations described will work for your organization, co
   
 |**Method**|**Description**|
 |:-----|:-----|
-|![Use third-party migration tools to migrate mailboxes to Office 365](media/e0d851ac-72c5-49e5-b759-f1083c912f03.png)|**Use a third-party email migration tool** <br/> Migration tools can help speed up and simplify email migration. You'll find a list of tools in the [Office 365 Marketplace](https://go.microsoft.com/fwlink/p/?LinkId=785068).  <br/> |
-|![Hire a partner to help you deploy Office 365](media/60914e97-f5fe-4dff-9e96-a23de8aa2879.png)|**Hire a partner to help migrate your email** <br/> You'll find a list of partners in the [Office 365 Marketplace](https://go.microsoft.com/fwlink/p/?LinkId=620000).  <br/> |
+|![Use third-party migration tools to migrate mailboxes to Office 365](media/e0d851ac-72c5-49e5-b759-f1083c912f03.png)|**Use a third-party email migration tool** <br/> Migration tools can help speed up and simplify email migration. You'll find a list of tools in the [Office 365 Marketplace](https://go.microsoft.com/fwlink/p/?LinkId=785068).|
+|![Hire a partner to help you deploy Office 365](media/60914e97-f5fe-4dff-9e96-a23de8aa2879.png)|**Hire a partner to help migrate your email** <br/> You'll find a list of partners in the [Office 365 Marketplace](https://go.microsoft.com/fwlink/p/?LinkId=620000).|
    
 ## Related Topics
 <a name="Partner"> </a>

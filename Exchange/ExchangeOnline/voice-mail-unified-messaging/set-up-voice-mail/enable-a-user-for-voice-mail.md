@@ -21,7 +21,7 @@ When you enable a user for Unified Messaging (UM), a default set of properties a
 An extension number is required for each user that's associated with a telephone extension, SIP Uniform Resource Identifier (URI), or E.164 dial plan. The extension number must be the correct number of digits, as specified in the UM dial plan for the UM mailbox policy. 
   
 > [!NOTE]
-> You must add, remove, or modify extension numbers for all UM-enabled users by using the EAC or the Shell, even if they're linked to a SIP URI or E.164 dial plan. To add, remove or modify SIP address or E.164 numbers for users, you'll need to use the Shell because those options aren't available in the EAC. 
+> You must add, remove, or modify extension numbers for all UM-enabled users by using the EAC or Exchange Online PowerShell, even if they're linked to a SIP URI or E.164 dial plan. To add, remove or modify SIP address or E.164 numbers for users, you'll need to use Exchange Online PowerShell because those options aren't available in the EAC. 
   
 For additional management tasks related to users who are enabled for voice mail, see [Voice mail-enabled user procedures](voice-mail-enabled-user-procedures.md).
   
@@ -29,7 +29,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 - Estimated time to complete: 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailboxes" entry in the [Unified Messaging Permissions](http://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailboxes" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
     
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](../../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
     
@@ -38,7 +38,7 @@ For additional management tasks related to users who are enabled for voice mail,
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -72,15 +72,15 @@ For additional management tasks related to users who are enabled for voice mail,
     
 6. On the **Enable UM mailbox** page, review your settings. Click **Finish** to enable the user for voice mail. Click **Back** to make configuration changes. 
     
-### Use the Shell to enable a user for voice mail
+### Use Exchange Online PowerShell to enable a user for voice mail
 
-This example enables Unified Messaging on the mailbox of tonysmith@contoso.com, sets the extension number to 51234, sets the PIN for the user to 5643892, and assigns the user to a UM mailbox policy named  `MyUMMailboxPolicy`.
+This example enables Unified Messaging on the mailbox of tonysmith@contoso.com, sets the extension number to 51234, sets the PIN for the user to 5643892, and assigns the user to a UM mailbox policy named `MyUMMailboxPolicy`.
   
 ```
 Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -PINExpired $true
 ```
 
-This example enables Unified Messaging on the mailbox of tonysmith@contoso.com, assigns the user to a UM mailbox policy named  `MyUMMailboxPolicy`, and sets the extension number, SIP address, and PIN for the user.
+This example enables Unified Messaging on the mailbox of tonysmith@contoso.com, assigns the user to a UM mailbox policy named `MyUMMailboxPolicy`, and sets the extension number, SIP address, and PIN for the user.
   
 ```
 Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -SIPResourceIdentifier "tonysmith@contoso.com" -PINExpired $true

@@ -46,7 +46,7 @@ Here's what you'll see when a rule is matched if you include the incident report
     
 2. Select **Generate incident report and send it to**.
     
-3. Click **Select one…** and select yourself or someone else. 
+3. Click **Select one...** and select yourself or someone else. 
     
 4. Select **Include message properties**, and then select any message properties that you want included in the email you receive. If you don't select any, you will still get an email when the rule is matched.
     
@@ -150,8 +150,8 @@ To learn more, see [View mail protection reports](https://go.microsoft.com/fwlin
   
 [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md) (Exchange Online) 
   
-[Transport rules](http://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx) (Exchange Online Protection) 
+[Transport rules](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx) (Exchange Online Protection) 
   
-[Transport Rules](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx) (Exchange Server) 
+[Transport Rules](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx) (Exchange Server) 
   
 
