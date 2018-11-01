@@ -188,20 +188,28 @@ There are three basic methods you can use to assign authentication policies to u
     Set-User -Identity laura@contoso.com -AuthenticationPolicy "Block Basic Auth"
     ```
 
-- **Filter user accounts by attributes**: This method requires that the user accounts all share a unique filterable attribute (for example, Title or Department) that you can use to identify the users. The syntax uses the following two commands (one to identify the user accounts, and the other to apply the policy to those users): 
+- **Filter user accounts by attributes**: This method requires that the user accounts all share a unique filterable attribute (for example, Title or Department) that you can use to identify the users. The syntax uses the following commands (two to identify the user accounts, and the other to apply the policy to those users): 
 
     ```
-    $<VariableName> = Get-User -ResultSize unlimited -Filter <Filter>
+    $<VariableName1> = Get-User -ResultSize unlimited -Filter <Filter>
     ```
 
     ```
-    $<VariableName> | foreach {Set-User -Identity $_ -AuthenticationPolicy "Block Basic Auth"}
+    $<VariableName2> = $<VariableName1>.MicrosoftOnlineServicesID
+    ```
+
+    ```
+    $<VariableName2> | foreach {Set-User -Identity $_ -AuthenticationPolicy "Block Basic Auth"}
     ```
 
   This example assigns the policy named Block Basic Auth to all user accounts whose **Title** attribute contains the value "Sales Associate". 
 
     ```
-    $Sales = Get-User -ResultSize unlimited -Filter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Sales Associate*')}
+    $SalesUsers = Get-User -ResultSize unlimited -Filter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Sales Associate*')}
+    ```
+
+    ```
+    $Sales = $SalesUsers.MicrosoftOnlineServicesID
     ```
 
     ```
@@ -252,7 +260,7 @@ This example immediately applies the authentication policy to the user laura@con
 Set-User -Identity laura@contoso.com -STSRefreshTokensValidFrom $([System.DateTime]::UtcNow)
 ```
 
-This example immediately applies the authentication policy to multiple users that were previously identified by filterable attributes or a text file. This example works if you're still in the same PowerShell session and you haven't changed the variable you used to identify the users (you didn't use the same variable name afterwards for some other purpose). For example:
+This example immediately applies the authentication policy to multiple users that were previously identified by filterable attributes or a text file. This example works if you're still in the same PowerShell session and you haven't changed the variables you used to identify the users (you didn't use the same variable name afterwards for some other purpose). For example:
   
 ```
 $Sales | foreach {Set-User -Identity $_ -STSRefreshTokensValidFrom $([System.DateTime]::UtcNow}
