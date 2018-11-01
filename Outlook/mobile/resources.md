@@ -20,8 +20,7 @@ Use the resources in the [Outlook Mobile Customer Adoption Pack](https://aka.ms/
  
 Included in this pack:
 
-- Customizable onboarding email templates with links to demo video
+- Customizable onboarding email templates with links to demo video and installation instructions
 - Posters and flyers to drive buzz and excitement 
-- Cheat sheets with handy tips to get your end users up and running 
-- Installation guides 
+- Cheat sheets with handy tips to get your end users up and running  
 
