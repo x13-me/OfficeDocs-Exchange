@@ -289,7 +289,7 @@ After you crate the batch migration request in the Exchange Management Shell, yo
     
 2. Start the migration in the EAC or in the Exchange Management Shell.
  
-    - In the Exchange Management Shell, run th following command:
+    - In the Exchange Management Shell, run the following command:
     
       ```
       Start-MigrationBatch PFMigration
