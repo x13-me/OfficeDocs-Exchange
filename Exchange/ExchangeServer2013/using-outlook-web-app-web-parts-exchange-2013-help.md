@@ -81,7 +81,13 @@ The following table lists the parameters of a Web Part and examples of how they'
 <tr class="even">
 <td><p>exsvurl</p></td>
 <td><p>This parameter must be included when using LiveID authentication</p>
-<p>All parameters will be discarded during LiveID authentication if &quot;exsvurl=1&quot; is not present. This parameter is for Office 365 mailboxes only.</p></td>
+<p>All parameters will be discarded during LiveID authentication if &quot;exsvurl=1&quot; is not present. This parameter is for Office 365 mailboxes only.</p>
+
+> [!NOTE]
+> Exchange Online no longer includes support for Web Parts.
+  
+</td>
+  
 <td><p>https://&lt;server name&gt;/owa/?cmd=contents&amp;exsvurl=1</p></td>
 </tr>
 <tr class="odd">

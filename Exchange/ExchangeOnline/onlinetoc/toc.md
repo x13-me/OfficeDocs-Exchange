@@ -437,6 +437,7 @@
 ### [Remote Connectivity Analyzer tests](../clients-and-mobile-in-exchange-online/remote-connectivity-analyzer-tests.md)
 ### [Client Access Rules](../clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules.md)
 #### [Procedures for Client Access Rules](../clients-and-mobile-in-exchange-online/client-access-rules/procedures-for-client-access-rules.md)
+### [Disable Basic authentication in Exchange Online](../clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online.md)
 ## [Monitoring](../monitoring/monitoring.md)
 ### [Use mail protection reports](../monitoring/use-mail-protection-reports.md)
 ### [Customize and schedule mail protection reports](../monitoring/customize-and-schedule-mail-protection-reports.md)

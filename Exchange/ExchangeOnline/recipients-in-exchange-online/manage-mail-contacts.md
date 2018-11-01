@@ -11,7 +11,8 @@ f1_keywords:
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 74c72aed-e9ff-4927-8eb7-c08a86e79ae0
-description: "Mail contacts are mail-enabled directory service objects that contain information about people or organizations that exist outside your Exchange or Exchange Online organization. Each mail contact has an external email address.
+description: "Admins can learn how to create, modify, and delete mail contacts in Exchange Online."
+---
 
 # Manage mail contacts
 
@@ -23,7 +24,7 @@ Mail contacts are mail-enabled directory service objects that contain informatio
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 

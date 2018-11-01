@@ -37,7 +37,7 @@ Interested in scenarios where this procedure is used? See the following topics:
     
 - In Exchange Server, members of the Organization Management role group can create an [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md) to place all mailbox content on hold. However, to create a query-based In-Place Hold, the user must be a member of the Discovery Management role group or have the Mailbox Search role assigned. 
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 ## Use the EAC to add a user to the Discovery Management role group
 

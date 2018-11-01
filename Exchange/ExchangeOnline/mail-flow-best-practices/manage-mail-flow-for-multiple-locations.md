@@ -59,7 +59,7 @@ Most customers who need a hybrid mail flow setup should allow Office 365 to perf
   v=spf1 ipv4: 131.107.21.231  include:spf.protection.outlook.co  m -all
   ```
 
-    Alternatively, depending on the third-party's requirements, you might need to include the domain from the third-party, as shown in the following example:
+Alternatively, depending on the third-party's requirements, you might need to include the domain from the third-party, as shown in the following example:
     
   ```
   v=spf1 include:spf.protection.outlook.com include:third_party_cloud_service.com -all

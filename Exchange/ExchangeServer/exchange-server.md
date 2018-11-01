@@ -37,7 +37,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/Exchange/new-features/updates">
+        <a href="/Exchange/new-features/updates">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
