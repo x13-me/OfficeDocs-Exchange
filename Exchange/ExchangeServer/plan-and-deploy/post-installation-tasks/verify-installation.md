@@ -37,7 +37,7 @@ Get-ExchangeServer -Identity Mailbox01 | Format-List
 
 For detailed syntax and parameter information, see [Get-ExchangeServer](http://technet.microsoft.com/library/96543903-10fa-46fe-9ea0-90570ca0ad2e.aspx).
   
-## Review the Windows Application log and the Exchane Setup log
+## Review the Windows Application log and the Exchange Setup log
   
 - Exchange Setup logs events in the **Application** log of the Windows Server. This log contains a history of each action that the system takes during Exchange setup and any errors that occurred (By default, the logging method is set to Verbose). You can use the Windows **Even Viewer** to find the  messages related to Exchange setup.
   
