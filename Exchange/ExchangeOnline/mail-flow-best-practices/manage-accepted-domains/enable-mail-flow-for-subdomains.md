@@ -25,10 +25,10 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Domains" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic. 
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What Do You Want to Do
 
@@ -45,18 +45,18 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 
 1. In the EAC, go to **Mail Flow** \> **Connectors**. 
     
-2. Under **Outbound Connectors**, select the connector for your organization's email server, and then select **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif). 
+2. Under **Outbound Connectors**, select the connector for your organization's email server, and then select **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif). 
     
 3. Select **Scope**, and then select one of the following:
     
   - Select **Route all accepted domains through this connector**.
     
-  - In the **Recipient domains** section, select **New**![Add Icon](../../media/ITPro_EAC_AddIcon.gif). In the **Add domain** box, enter a wildcard domain entry for the domain for which you enabled match subdomains. For example, if you enabled match subdomains for contoso.com, enter \*.contonso.com as a recipient domain. 
+  - In the **Recipient domains** section, select **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). In the **Add domain** box, enter a wildcard domain entry for the domain for which you enabled match subdomains. For example, if you enabled match subdomains for contoso.com, enter \*.contonso.com as a recipient domain. 
     
 > [!NOTE]
 > If you don't yet have an outbound connector, see [Configure mail flow using connectors in Office 365](../../mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md). 
   
-### Use the Exchange Management Shell to set up match subdomains on a domain
+### Use Exchange Online PowerShell to set up match subdomains on a domain
 <a name="outboundconnector"> </a>
 
 To add match subdomains to a domain that is set up as an internal relay, use this syntax
@@ -71,12 +71,12 @@ This example sets up match subdomains for the contoso.com domain.
 Set-AcceptedDomain -Identity contoso.com -MatchSubdomains $true 
 ```
 
-For more information about using the Exchange Management Shell, see [set-AcceptedDomain](http://technet.microsoft.com/library/2ef9a20b-0974-45d0-9dae-23bab22d736e.aspx) and [PowerShell in Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx).
+For more information about using Exchange Online PowerShell, see [set-AcceptedDomain](https://technet.microsoft.com/library/2ef9a20b-0974-45d0-9dae-23bab22d736e.aspx) and [PowerShell in Exchange Online Protection](https://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx).
   
 #### How do you know this worked?
 
-To verify that you successfully added match subdomains to a domain using the Exchange Management Shell, do the following:
-  
-1. Run the command  `Get-RemoteDomain <Domain Name> | Format-List` to verify the  _MatchSubdomains_ setting. 
-    
+To verify that you successfully added match subdomains to a domain using Exchange Online PowerShell, run the following command to verify the _MatchSubdomains_ property value:
 
+```
+Get-RemoteDomain | Format-List Name,MatchSubdomains
+```

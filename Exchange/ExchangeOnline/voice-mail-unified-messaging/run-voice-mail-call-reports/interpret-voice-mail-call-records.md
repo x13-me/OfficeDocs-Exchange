@@ -20,7 +20,7 @@ For additional tasks related to UM reporting, see [UM reports procedures](um-rep
   
 ## Use the EAC to export daily UM call records
 
-1. In the EAC, navigate to **Unified messaging** \> **More options**![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
+1. In the EAC, navigate to **Unified messaging** \> **More options** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
     
 2. Under **Show**, click **Daily (90 days)**, and then choose the UM dial plan or UM IP gateway, or both, if you want. The report automatically updates as you choose options.
     
@@ -28,7 +28,7 @@ For additional tasks related to UM reporting, see [UM reports procedures](um-rep
     
 4. In the **File Download** confirmation box, click **Open** or **Save**.
     
-    The exported file will be named um_cdr_ _YYYY-MM-DD_.csv, where  _YYYY-MM-DD_ is the year, month, and day the report was run. 
+    The exported file will be named um_cdr_ _YYYY-MM-DD_.csv, where _YYYY-MM-DD_ is the year, month, and day the report was run. 
     
     > [!NOTE]
     > On the report page, you can download a Microsoft Excel template that you can use to import the .csv file for a specific day. 
@@ -42,11 +42,11 @@ The UM call data that you export includes the following detailed information abo
 > [!NOTE]
 > In the Call Statistics report, the days are in UTC time. 
   
-- **CallStartTime ** The date and time that UM handled the call, in UTC. The UTC time and date is represented in the following format:  _YYYY-MM-DD hh:mm:SSZ_, where  _YYYY_ = year,  _MM_ = month,  _DD_ = day,  _hh_ = hour, in 24-hour time,  _mm_ = minutes, ss = seconds. Z signifies Zulu, which is a way to denote UTC (like +  _hh_: _mm_ or -  _hh_: _mm_, which gives the time offset from UTC). Because all call times in this report are in UTC time, this will always be Z.
+- **CallStartTime** The date and time that UM handled the call, in UTC. The UTC time and date is represented in the following format: _YYYY-MM-DD hh:mm:SSZ_, where _YYYY_ = year, _MM_ = month, _DD_ = day, _hh_ = hour, in 24-hour time, _mm_ = minutes, ss = seconds. Z signifies Zulu, which is a way to denote UTC (like +_hh_:_mm_ or -_hh_:_mm_, which gives the time offset from UTC). Because all call times in this report are in UTC time, this will always be Z.
     
     For example, for a call placed on June 23, 2013 at 2:23pm, the call start time is shown as 2013-06-23 14:23:11Z.
     
-- **Call Type ** The type of call: 
+- **Call Type** The type of call: 
     
   - **Call Answering Voice Message** The call wasn't answered and was forwarded to the Exchange servers, and the caller left a voice message. 
     

@@ -30,7 +30,7 @@ A group naming policy:
     
 - Blocks inappropriate words in group names.
     
-How does a group naming policy work? When a user creates a group, they specify a name in the Display Name field. After the group is created, Microsoft Exchange applies the group naming policy by adding any prefix or suffix that you've defined in the group naming policy. The full name is displayed in the distribution groups list in the Exchange Administration Center (EAC), the shared address book, and the To:, Cc:, and From: fields in email messages. If a user tries to use a word that you've blocked, they get an error message when they try to save the new group and are asked to remove the blocked word and save the group again.
+How does a group naming policy work? When a user creates a group, they specify a name in the Display Name field. After the group is created, Microsoft Exchange applies the group naming policy by adding any prefix or suffix that you've defined in the group naming policy. The full name is displayed in the distribution groups list in the Exchange admin center (EAC), the shared address book, and the To:, Cc:, and From: fields in email messages. If a user tries to use a word that you've blocked, they get an error message when they try to save the new group and are asked to remove the blocked word and save the group again.
   
 Here are some examples of a group naming policy. In each, **\<Group Name\>** is a descriptive name provided by the person who creates the group. Exchange adds the prefixes and suffixes defined by the policy to the display name when the group is created. 
   
@@ -56,7 +56,7 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
 
 - Estimated time to complete: 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution Groups" entry in the [Recipients permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution Groups" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
     
 - The maximum length for a group name is 64 characters. This includes the combined number of characters in the prefix, the group name provided by the user, and the suffix.
     
@@ -66,14 +66,14 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
     
 - You can use Windows PowerShell to override the group naming policy when you create and edit a distribution group. For more information, see [Override the distribution group naming policy](override-group-naming-policy.md).
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## Use the EAC to create a group naming policy
 
-1. In the EAC, select **Groups** \> **More**![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **Configure group naming policy**.
+1. In the EAC, select **Groups** \> **More** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **Configure group naming policy**.
     
 2. Under **Group Naming Policy**, configure the prefix by selecting either **Attribute** or **Text** in the pull-down menu. 
     
@@ -91,11 +91,11 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
     
     After you add a prefix or suffix, notice that a preview of the group naming policy is displayed.
     
-6. To delete a prefix or suffix from the policy, click **Remove**![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+6. To delete a prefix or suffix from the policy, click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
     
 7. Click **Blocked Words** to add or remove blocked words. 
     
-  - To add a word to the list, type the word to block and click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+  - To add a word to the list, type the word to block and click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
   - To remove a word from the list, select it and click **Remove**.
     
@@ -114,7 +114,7 @@ To verify that you've successfully created a group naming policy, do the followi
 - In Windows PowerShell, run the following command to display the group naming policy.
     
   ```
-  Get-OrganizationConfig | FL DistributionGroupNamingPolicy
+  Get-OrganizationConfig | Format-List DistributionGroupNamingPolicy
   ```
 
 

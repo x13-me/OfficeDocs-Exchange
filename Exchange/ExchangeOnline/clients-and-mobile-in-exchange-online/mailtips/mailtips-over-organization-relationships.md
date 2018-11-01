@@ -18,24 +18,24 @@ Microsoft Exchange Server allows you to configure organization relationships wit
   
 ## Controlling the MailTips access level
 
-You may want to restrict certain types of MailTips. You can either allow all MailTips to be returned or allow only a limited set that would prevent NDRs. You can configure this setting with the  _MailTipsAccessLevel_ parameter on the **Set-OrganizationRelationship** cmdlet. The following table shows which MailTips are returned over the organization relationship. 
+You may want to restrict certain types of MailTips. You can either allow all MailTips to be returned or allow only a limited set that would prevent NDRs. You can configure this setting with the _MailTipsAccessLevel_ parameter on the **Set-OrganizationRelationship** cmdlet. The following table shows which MailTips are returned over the organization relationship. 
   
 |**MailTip**|**Is the MailTip available when the access level is set to All?**|**Is the MailTip available when the access level is set to Limited?**|
 |:-----|:-----|:-----|
-|Large Audience  <br/> |Yes  <br/> |No  <br/> |
-|Automatic Replies  <br/> |Yes  <br/> If the remote domain of the recipient is specified as internal, the internal automatic reply is displayed. Otherwise, the external automatic reply is displayed.  <br/> |Yes  <br/> The external automatic reply is displayed.  <br/> |
-|Moderated Recipient  <br/> |Yes  <br/> |No  <br/> |
-|Oversize Message  <br/> |Yes  <br/> |Yes  <br/> |
-|Restricted Recipient  <br/> |Yes  <br/> |Yes  <br/> |
-|Mailbox Full  <br/> |Yes  <br/> |No  <br/> |
-|Custom MailTips  <br/> |Yes  <br/> |No  <br/> |
-|External Recipients  <br/> |Yes  <br/> If the remote domain of the recipient is specified as internal, this MailTip is suppressed. Otherwise, the external MailTip is returned.  <br/> |Yes  <br/> If the remote domain of the recipient is specified as internal, this MailTip is suppressed. Otherwise, the external MailTip is returned.  <br/> |
+|Large Audience|Yes|No|
+|Automatic Replies|Yes  <br/> If the remote domain of the recipient is specified as internal, the internal automatic reply is displayed. Otherwise, the external automatic reply is displayed.|Yes  <br/> The external automatic reply is displayed.|
+|Moderated Recipient|Yes|No|
+|Oversize Message|Yes|Yes|
+|Restricted Recipient|Yes|Yes|
+|Mailbox Full|Yes|No|
+|Custom MailTips|Yes|No|
+|External Recipients|Yes  <br/> If the remote domain of the recipient is specified as internal, this MailTip is suppressed. Otherwise, the external MailTip is returned.|Yes  <br/> If the remote domain of the recipient is specified as internal, this MailTip is suppressed. Otherwise, the external MailTip is returned.|
    
 For detailed steps about how to configure MailTips access levels, see [Manage MailTips for organization relationships](manage-mailtips-for-organization-relationships.md).
   
 ## Controlling the MailTips access scope
 
-When you enable MailTips over an organization relationship and set the access level to  `All`, the recipient-specific MailTips, Mailbox Full, Automatic Replies, and custom MailTips, are returned for all users. However, you may only want to allow these MailTips for a specific set of users. For example, if you set up an organization relationship with a partner, you may want to allow these MailTips only for the users that work with that partner. 
+When you enable MailTips over an organization relationship and set the access level to `All`, the recipient-specific MailTips, Mailbox Full, Automatic Replies, and custom MailTips, are returned for all users. However, you may only want to allow these MailTips for a specific set of users. For example, if you set up an organization relationship with a partner, you may want to allow these MailTips only for the users that work with that partner. 
   
 To achieve this, you need to first create a group and add all users for whom you want to share recipient-specific MailTips to that group. You can then specify that group on the organization relationship.
   

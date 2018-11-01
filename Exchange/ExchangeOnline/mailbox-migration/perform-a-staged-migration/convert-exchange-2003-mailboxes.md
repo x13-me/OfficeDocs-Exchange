@@ -410,7 +410,7 @@ Function OctetToHexString (arrbytOctet)
 	Next
 End Function
 Sub ShowHelp()
-    WScript.Echo("This script runs in two modes, CSV Mode and Manual Mode." &amp; vbCrLf &amp; "CSV Mode allows you to specify a CSV file from which to pull user names." &amp; vbCrLf&amp; "Manual mode allows you to run the script against a single user.")
+    WScript.Echo("This script runs in two modes, CSV Mode and Manual Mode." &amp; vbCrLf &amp; "CSV Mode allows you to specify a CSV file from which to pull usernames." &amp; vbCrLf&amp; "Manual mode allows you to run the script against a single user.")
     WSCript.Echo("Both modes require you to specify the name of a DC to use in the local domain." &amp; vbCrLf &amp; "To run the script in CSV Mode, use the following syntax:")
     WScript.Echo("  cscript Exchange2003MBtoMEU.vbs -c x:\csv\csvfilename.csv dc.domain.com")
     WScript.Echo("To run the script in Manual Mode, you must specify the users AD Distinguished Name, Remote SMTP Address, Remote Legacy Exchange DN, and Domain Controller Name.")

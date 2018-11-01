@@ -33,11 +33,11 @@ To learn more about organization relationships, see [Organization relationships 
     
 2. Go to **organization** \> **sharing**.
     
-3. Under **Organization Sharing**, select an organization relationship, and then click **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+3. Under **Organization Sharing**, select an organization relationship, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
     
 4. In the warning that appears, click **yes**.
     
-### Use the Exchange Management Shell to remove an organization relationship
+### Use Exchange Online PowerShell to remove an organization relationship
 <a name="BKMK_Shell"> </a>
 
 This example removes the organization relationship Contoso. 
@@ -46,7 +46,7 @@ This example removes the organization relationship Contoso.
 Remove-OrganizationRelationship -Identity "Contoso"
 ```
 
-For detailed syntax and parameter information, see [Remove-OrganizationRelationship](http://technet.microsoft.com/library/fd646344-c783-45b2-b666-f50e823cba58.aspx).
+For detailed syntax and parameter information, see [Remove-OrganizationRelationship](https://technet.microsoft.com/library/fd646344-c783-45b2-b666-f50e823cba58.aspx).
   
 ## How do you know this worked?
 
@@ -54,13 +54,13 @@ To verify that you have successfully removed the organization relationship, do o
   
 - In the Exchange admin center, go to **organization** \> **sharing** and verify that the organization relationship isn't displayed in the list view under **Organization Sharing**.
     
-- Run the following Exchange Management Shell command to verify the organization relationship information is removed.
+- Run the following command to verify the organization relationship information is removed.
     
   ```
   Get-OrganizationRelationship | Format-List
   ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 

@@ -33,7 +33,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 - Estimated time to complete: 2 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailbox policies" entry in the [Unified Messaging Permissions](http://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailbox policies" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
     
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](../../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
     
@@ -41,10 +41,10 @@ For additional management tasks related to users who are enabled for voice mail,
     
 - Before you perform these procedures, confirm that the user is enabled for Unified Messaging. For detailed steps, see [Enable a user for voice mail](enable-a-user-for-voice-mail.md).
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -56,15 +56,15 @@ For additional management tasks related to users who are enabled for voice mail,
     
 3. In the details pane, under **Phone and Voice Features** \> **Unified Messaging**, click **View details**.
     
-4. On the **UM Mailbox** page, click **UM mailbox settings**, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+4. On the **UM Mailbox** page, click **UM mailbox settings**, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 5. On the **UM Mailbox** page \> next to **UM mailbox policy**, click **Browse** to locate the UM mailbox policy for the user. 
     
 6. Click **Save**.
     
-### Use the Shell to change the UM mailbox policy assigned to a UM-enabled user
+### Use Exchange Online PowerShell to change the UM mailbox policy assigned to a UM-enabled user
 
-This example associates a UM-enabled user named Tony Smith with a UM mailbox policy named  `MyUMMailboxPolicy`.
+This example associates a UM-enabled user named Tony Smith with a UM mailbox policy named `MyUMMailboxPolicy`.
   
 ```
 Set-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy

@@ -17,7 +17,7 @@ description: "Exchange Online is a web-based service that you access through the
 Exchange Online is a web-based service that you access through the Exchange admin center (EAC), which operates within your web browser. Using a screen reader and keyboard shortcuts, you can open the EAC and perform administrative tasks for the admin role group to which you've been assigned.
   
 > [!NOTE]
-> When you work in the EAC, we recommend that you use Internet Explorer as your web browser. For more information about the keyboard shortcuts you can use to navigate the EAC and about other accessibility features that are available for Exchange Online, refer to [Learn more about Internet Explorer keyboard shortcuts](http://technet.microsoft.com/library/http://go.microsoft.com/fwlink/?LinkID=787614.aspx) and [Learn more about accessibility features in Exchange Online](http://technet.microsoft.com/library/XXX.aspx). 
+> When you work in the EAC, we recommend that you use Internet Explorer as your web browser. For more information about the keyboard shortcuts you can use to navigate the EAC and about other accessibility features that are available for Exchange Online, see [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=786972) and [Accessibility in Exchange Online](accessibility.md). 
   
 1. Sign in to your organization's Office 365 account. In the **App launcher**, move the focus to the **Admin** app. You hear "Go to the Office 365 admin center, Link." Press Enter. 
     
@@ -45,6 +45,6 @@ Exchange Online is a web-based service that you access through the Exchange admi
 7. To move the focus to **Dashboard** (the first link), in the navigation pane of the **Exchange admin center**, press Ctrl+F6 twice. In Narrator, you hear "Dashboard, Primary navigation link." 
     
     > [!TIP]
-    > To move to the rest of the items in the navigation pane, press the Tab key. To open an item, press Enter. After you've opened an item, to move directly to one of its elements in the content area on a page, press Ctrl+F6. To identify the admin role groups to which you've been assigned, which determine the tasks you can perform in the EAC, refer to [Use a screen reader to identify your admin role in Exchange Online](http://technet.microsoft.com/library/xxxx.aspx). 
+    > To move to the rest of the items in the navigation pane, press the Tab key. To open an item, press Enter. After you've opened an item, to move directly to one of its elements in the content area on a page, press Ctrl+F6. To identify the admin role groups to which you've been assigned, which determine the tasks you can perform in the EAC, refer to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md). 
   
 

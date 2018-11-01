@@ -21,7 +21,7 @@ To give you an idea of some of the things you can do with PowerShell in Office 3
   
 ## Before you begin
 
-To learn how to use remote PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](http://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
+To learn how to use remote PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
   
 ## Display mailbox information with Exchange Online PowerShell
 
@@ -53,13 +53,13 @@ The command instructs Exchange Online PowerShell to return all of the available 
 Get-Mailbox -Identity "Ken Myer" | Format-List DisplayName, LitigationHoldEnabled, LitigationHoldDate, LitigationHoldOwner, LitigationHoldDuration
 ```
 
-You can also use wildcard characters when working with the **Format-List** cmdlet. For example, all the litigation hold properties start with the letters  `lit`. You can retrieve this same information by using this command:
+You can also use wildcard characters when working with the **Format-List** cmdlet. For example, all the litigation hold properties start with the letters `lit`. You can retrieve this same information by using this command:
   
 ```
 Get-Mailbox -Identity "Ken Myer" | Format-List DisplayName, Lit*
 ```
 
-This command tells **Get-Mailbox** to retrieve the value of Ken's **DisplayName** property along with the values of any properties that have names that begin with the letters  `lit`. Here's an example of what we get back:
+This command tells **Get-Mailbox** to retrieve the value of Ken's **DisplayName** property along with the values of any properties that have names that begin with the letters `lit`. Here's an example of what we get back:
   
 ```
 DisplayName            : Ken Myer
@@ -69,7 +69,7 @@ LitigationHoldOwner    :
 LitigationHoldDuration : Unlimited
 ```
 
-You can return information about multiple mailboxes by leaving out the  _Identity_ parameter. This example returns the **DisplayName** and **LitigationHoldEnabled** properties for all mailboxes: 
+You can return information about multiple mailboxes by leaving out the _Identity_ parameter. This example returns the **DisplayName** and **LitigationHoldEnabled** properties for all mailboxes: 
   
 ```
 Get-Mailbox -ResultSize unlimited | Format-Table -Auto DisplayName, LitigationHoldEnabled
@@ -77,29 +77,29 @@ Get-Mailbox -ResultSize unlimited | Format-Table -Auto DisplayName, LitigationHo
 
 In many cases, you only want to look at a subset of your mailboxes. For example, suppose you are asked to come up with a list of all the mailboxes that have been assigned a litigation hold. You can use the **Where-Object** cmdlet in conjunction with the **Get-Mailbox** cmdlet. The **Where-Object** cmdlet needs a filter phrase to tell Exchange Online PowerShell what set of mailboxes you are interested in. 
   
-In their simplest form, filter phrases use the syntax  `{<PropertyName> -<ComparisonOperator> <PropertyValue>}`.
+In their simplest form, filter phrases use the syntax `{<PropertyName> -<ComparisonOperator> <PropertyValue>}`.
   
 Some commonly used comparison operators are:
   
--  `eq` (equals; not case-sensitive) 
+- `eq` (equals; not case-sensitive) 
     
--  `ne` (does not equal; not case-sensitive) 
+- `ne` (does not equal; not case-sensitive) 
     
--  `gt` (greater than) 
+- `gt` (greater than) 
     
--  `lt` (less than) 
+- `lt` (less than) 
     
 For a complete list of comparison operators, see [Where-Object](https://go.microsoft.com/fwlink/p/?linkid=113423).
   
-Values for  `<PropertyValue>` depend on the property, and can be values like strings, numbers, Boolean values (  `$True` or  `$False`), or no value ( `$Null`). Text values with spaces require quotation marks around the value. Numerical values, Boolean values and  `$Null` don't require quotation marks around the value. 
+Values for `<PropertyValue>` depend on the property, and can be values like strings, numbers, Boolean values ( `$True` or `$False`), or no value ( `$Null`). Text values with spaces require quotation marks around the value. Numerical values, Boolean values and `$Null` don't require quotation marks around the value. 
   
-Returning to our example of all the mailboxes that have been assigned a litigation hold, the filter phrase is  `{LitigationHoldEnabled -eq $True}`:
+Returning to our example of all the mailboxes that have been assigned a litigation hold, the filter phrase is `{LitigationHoldEnabled -eq $True}`:
   
-- The property name is  `LitigationHoldEnabled`.
+- The property name is `LitigationHoldEnabled`.
     
-- The comparison operator is  `eq`.
+- The comparison operator is `eq`.
     
-- The property value we're looking for is  `$True`.
+- The property value we're looking for is `$True`.
     
 Once you have the filter phrase, you can construct the **Where-Object** portion of the command using this syntax: 
   
@@ -121,8 +121,8 @@ Get-Mailbox -ResultSize unlimited | Get-MailboxJunkEmailConfiguration | Where-Ob
 
 This is just one example. If you want to display a set of mailboxes based on a setting and can't filter on that setting in the Office 365 admin center, do these steps:
   
-1. Find the mailbox property that corresponds to the setting you're interested in by running the command  `Get-Mailbox -Identity "<MailboxIdentity" | Select-Object *` to list all the properties of a mailbox.  `<MailboxIdentity>` is any unique identifier for the mailbox (name, email address, alias, etc.) 
+1. Find the mailbox property that corresponds to the setting you're interested in by running the command `Get-Mailbox -Identity "<MailboxIdentity" | Select-Object *` to list all the properties of a mailbox. `<MailboxIdentity>` is any unique identifier for the mailbox (name, email address, alias, etc.) 
     
-2. Construct your Office 365 PowerShell command like this:  `Get-Mailbox -ResultSize unlimited | Where-Object {$_.<PropertyName> -<ComparisonOperator> <PropertyValue>}`
+2. Construct your Office 365 PowerShell command like this: `Get-Mailbox -ResultSize unlimited | Where-Object {$_.<PropertyName> -<ComparisonOperator> <PropertyValue>}`
     
 

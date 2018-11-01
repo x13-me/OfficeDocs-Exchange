@@ -67,9 +67,9 @@ The following table shows the DTMF map values that would be stored in Active Dir
   
 |**Directory entry**|**User's name**|
 |:-----|:-----|
-| firstNameLastName:866976484  <br/> |tonysmith  <br/> |
-| lastNameFirstName:764848669  <br/> |smithtony  <br/> |
-| emailAddress:876484  <br/> |tsmith  <br/> |
+|firstNameLastName:866976484|tonysmith|
+|lastNameFirstName:764848669|smithtony|
+|emailAddress:876484|tsmith|
    
 Names and email aliases may contain other characters that aren't alphanumeric, such as commas, hyphens, underscores, or periods. Characters such as these won't be used in a DTMF map for a user. For example, if the email alias for Tony Smith is tony-smith@contoso.com, the DTMF map value would be 866976484, and the hyphen wouldn't be included. However, if a user's email alias contains a number or numbers, for example, tonysmith123@contoso.com, the numbers would be used in the DTMF map that's created. The DTMF map for tonysmith123 would be 866976484123. 
   
@@ -86,9 +86,9 @@ Users, including mailbox-enabled users, aren't enabled for Unified Messaging by 
     
 3. lastNameFirstName
     
-If a user doesn't have DTMF map values defined for their account, callers won't be able to contact the user when they press a telephone key from a UM auto attendant menu or perform a directory search. Also, UM-enabled users won't be able to send messages or transfer calls to users who don't have a DTMF map unless they can use Automatic Speech Recognition (ASR). To enable callers to transfer calls or contact users who aren't UM-enabled by using the telephone keypad, you need to create the necessary values for the DTMF map for those users. You can use the **Set-User** cmdlet with the  _-CreateDtmfMap_ parameter to create and update a single user's DTMF map or update a DTMF map for a user if the name of the user was changed after a DTMF map was created. Optionally, you can create an Exchange Management Shell script by using this cmdlet to update the DTMF map values for multiple users. 
+If a user doesn't have DTMF map values defined for their account, callers won't be able to contact the user when they press a telephone key from a UM auto attendant menu or perform a directory search. Also, UM-enabled users won't be able to send messages or transfer calls to users who don't have a DTMF map unless they can use Automatic Speech Recognition (ASR). To enable callers to transfer calls or contact users who aren't UM-enabled by using the telephone keypad, you need to create the necessary values for the DTMF map for those users. You can use the **Set-User** cmdlet with the _-CreateDtmfMap_ parameter to create and update a single user's DTMF map or update a DTMF map for a user if the name of the user was changed after a DTMF map was created. Optionally, you can create a PowerShell script by using this cmdlet to update the DTMF map values for multiple users. 
   
-For more information about the **Set-User** cmdlet, see [Set-User](http://technet.microsoft.com/library/56d7fc86-2ac3-4e28-bc7a-761e91ac655a.aspx).
+For more information about the **Set-User** cmdlet, see [Set-User](https://technet.microsoft.com/library/56d7fc86-2ac3-4e28-bc7a-761e91ac655a.aspx).
   
 ## DTMF maps for users who are enabled for Unified Messaging
 <a name="dtmfmapusersenabled"> </a>
@@ -103,7 +103,7 @@ After the DTMF map values have been created for a UM-enabled user, callers can u
     
 For more information about how to enable a user for Unified Messaging, see [Enable a user for voice mail](../../voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail.md).
   
-Sometimes a user's first name, last name, or email alias changes after the user is enabled for UM. The user's DTMF map values aren't updated automatically. If a caller enters the user's new name or email alias and the user's DTMF map hasn't been updated to reflect the change to the name or email alias, the caller won't be able to locate the user in the directory, send a message to the user, or transfer calls to the user. If you have to update a user's DTMF map after the user has been enabled for UM, you can use the **Set-User** cmdlet with the  _-CreateDtmfMap_ parameter. You can also create an Exchange Management Shell script using this cmdlet if you want to update the DTMF maps for multiple UM-enabled users. 
+Sometimes a user's first name, last name, or email alias changes after the user is enabled for UM. The user's DTMF map values aren't updated automatically. If a caller enters the user's new name or email alias and the user's DTMF map hasn't been updated to reflect the change to the name or email alias, the caller won't be able to locate the user in the directory, send a message to the user, or transfer calls to the user. If you have to update a user's DTMF map after the user has been enabled for UM, you can use the **Set-User** cmdlet with the _-CreateDtmfMap_ parameter. You can also create PowerShell script using this cmdlet if you want to update the DTMF maps for multiple UM-enabled users. 
   
 > [!CAUTION]
 > We recommend that you don't manually change the DTMF values for users by using a tool such as ADSI Edit because it might result in inconsistent configurations or other errors. We recommend that you use only the **Set-UMService** cmdlet or the **Set-User** cmdlet to create or update DTMF maps for users. 

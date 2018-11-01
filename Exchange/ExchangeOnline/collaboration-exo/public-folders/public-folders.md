@@ -24,21 +24,21 @@ Public folders can also be used as an archiving method for distribution groups. 
   
 Public folders aren't designed for the following purposes:
   
-- **Data archiving**. Users who have mailbox limits sometimes use public folders instead of mailboxes to archive data. This practice isn't recommended because it affects storage in public folders and undermines the goal of mailbox limits. Instead, we recommend that you use [In-Place Archiving](http://technet.microsoft.com/library/b5e4c0e9-0558-4b90-bc12-f67adbfb59ac.aspx) as your archiving solution. 
+- **Data archiving**. Users who have mailbox limits sometimes use public folders instead of mailboxes to archive data. This practice isn't recommended because it affects storage in public folders and undermines the goal of mailbox limits. Instead, we recommend that you use [In-Place Archiving](https://technet.microsoft.com/library/b5e4c0e9-0558-4b90-bc12-f67adbfb59ac.aspx) as your archiving solution. 
     
-- **Document sharing and collaboration**. Public folders don't provide versioning or other document management features, such as controlled check-in and check-out functionality and automatic notifications of content changes. Instead, we recommend that you use [SharePoint Online](https://www.microsoft.com/en-us/office365/sharepoint-online.aspx) as your documentation sharing solution. 
+- **Document sharing and collaboration**. Public folders don't provide versioning or other document management features, such as controlled check-in and check-out functionality and automatic notifications of content changes. Instead, we recommend that you use [SharePoint Online](https://www.microsoft.com/office365/sharepoint-online.aspx) as your documentation sharing solution. 
     
 For more information about public folders and other collaboration methods in Office 365 and Exchange Online, see [Collaboration in Exchange Online](../../collaboration-exo/collaboration-exo.md).
   
-For a list of frequently asked questions regarding public folders in Office 365 and Exchange Online, see [FAQ: Public folders](http://technet.microsoft.com/library/1cdcdcb7-f11b-45ca-ad23-7c38f640208c.aspx).
+For a list of frequently asked questions regarding public folders in Office 365 and Exchange Online, see [FAQ: Public folders](https://technet.microsoft.com/library/1cdcdcb7-f11b-45ca-ad23-7c38f640208c.aspx).
   
-For more information about public folder quotas in Office 365 and Exchange Online, see the service description topics [Sharing and Collaboration](https://technet.microsoft.com/en-us/library/exchange-online-sharing-and-collaboration.aspx) and [Exchange Online Limits](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx). 
+For more information about public folder quotas in Office 365 and Exchange Online, see the service description topics [Sharing and Collaboration](https://technet.microsoft.com/library/exchange-online-sharing-and-collaboration.aspx) and [Exchange Online Limits](https://technet.microsoft.com/library/exchange-online-limits.aspx). 
   
 For a list of public folder management tasks, see [Public folder procedures in Office 365 and Exchange Online](public-folder-procedures.md).
   
-For more information about the public folder limits in Office 365 and Exchange Online, see [Exchange Online Limits](https://go.microsoft.com/fwlink/?LinkID=391188).
+For more information about the public folder limits in Office 365 and Exchange Online, see [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188).
   
-Looking for the Exchange Server version of this topic? See [Public Folders](http://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx).
+Looking for the Exchange Server version of this topic? See [Public Folders](https://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx).
   
 ## Public folder architecture
 <a name="PFArch"> </a>
@@ -50,15 +50,15 @@ Public folder architecture uses specially designed mailboxes to store both the p
 
 There are two types of public folder mailboxes: the primary hierarchy mailbox and secondary hierarchy mailboxes. Both types of mailboxes can contain content: 
   
-- **Primary hierarchy mailbox ** The primary hierarchy mailbox is the one writable copy of the public folder hierarchy. The public folder hierarchy is copied to all other public folder mailboxes, but these will be read-only copies. 
+- **Primary hierarchy mailbox** The primary hierarchy mailbox is the one writable copy of the public folder hierarchy. The public folder hierarchy is copied to all other public folder mailboxes, but these will be read-only copies. 
     
-- **Secondary hierarchy mailboxes ** Secondary hierarchy mailboxes contain public folder content as well and a read-only copy of the public folder hierarchy. 
+- **Secondary hierarchy mailboxes** Secondary hierarchy mailboxes contain public folder content as well and a read-only copy of the public folder hierarchy. 
     
 There are two ways you can manage public folder mailboxes:
   
 - In the Exchange admin center (EAC), navigate to **Public folders** \> **Public folder mailboxes**.
     
-- In the Exchange Management Shell, use the **\*-Mailbox** set of cmdlets. 
+- In Exchange Online PowerShell, use the **\*-Mailbox** set of cmdlets. 
     
 ### Public folder hierarchy
 <a name="PFHierarchy"> </a>
@@ -103,7 +103,7 @@ Although there are many advantages to using public folders in Office 365 and Exc
 
 When you migrate your public folders, you'll use a process called batch public folder migration. Batch public folder migration (or simply batch migration) creates a mailbox migration request for each public folder mailbox that will exist in Exchange Online. Using multiple requests means the migration will move along much faster because it's able to make more efficient use of available network bandwidth. It's also more reliable because it reduces the possibility of a single failure or bottleneck affecting the entire migration.
   
-While batch migrations need to be started using the **New-MigrationBatch** cmdlet in the Exchange Management Shell, the progress and completion of the migration can be viewed and managed in the EAC. Because the **New-MigrationBatch** cmdlet initiates a mailbox migration request for each public folder mailbox, you can view the status of these requests using the mailbox migration page. You can get to the mailbox migration page, and create migration reports that can be emailed to you, by opening the EAC in Exchange Online and navigating to **Mailbox** \> **Migration**. 
+While batch migrations need to be started using the **New-MigrationBatch** cmdlet in Exchange Online PowerShell, the progress and completion of the migration can be viewed and managed in the EAC. Because the **New-MigrationBatch** cmdlet initiates a mailbox migration request for each public folder mailbox, you can view the status of these requests using the mailbox migration page. You can get to the mailbox migration page, and create migration reports that can be emailed to you, by opening the EAC in Exchange Online and navigating to **Mailbox** \> **Migration**. 
   
 To use batch migration to migrate your public folders to Exchange Online, your legacy Exchange server needs to meet the requirements in the following list. If it does, and you're ready to start, check out [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](batch-migration-of-legacy-public-folders.md).
   
@@ -117,7 +117,7 @@ We recommend that you use batch migration instead of Outlook's PST export featur
   
 1. Wait for the auto-split to move the data from the primary mailbox. This may take up to two weeks. However, all the public folders in a completely filled public folder mailbox won't be able to receive new content until the auto-split completes.
     
-2. [Create a public folder mailbox](create-public-folder-mailbox.md) and then use the **[New-PublicFolder]** cmdlet with the  _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox. This example creates a new public folder named PF201 in the secondary public folder mailbox. 
+2. [Create a public folder mailbox](create-public-folder-mailbox.md) and then use the **[New-PublicFolder]** cmdlet with the _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox. This example creates a new public folder named PF201 in the secondary public folder mailbox. 
     
   ```
   New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx

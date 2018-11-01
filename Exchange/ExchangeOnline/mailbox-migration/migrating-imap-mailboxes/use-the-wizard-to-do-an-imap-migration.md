@@ -52,7 +52,7 @@ The first step is to tell Office 365 that you own the domain or domains you'll b
   
 1. On the **Let's personalize your setup** page, choose **Yes, I need to copy data for my users** and then: 
     
-  - In the **What is your current email system?** box, choose ** IMAP (outlook.com, Hotmail, Gmail) **.
+  - In the **What is your current email system?** box, choose **IMAP (outlook.com, Hotmail, Gmail)**.
     
   -  In the **How many users do you have?** box, specify the number of users (less than 151). 
     
@@ -81,9 +81,9 @@ The first step is to tell Office 365 that you own the domain or domains you'll b
 
 In this step, the admin account will be updated to the domain you added and then you can use Office 365 Setup wizard to add users.
   
-1. On the **Let's update your current Office 365 to \<your domain name\>** page, note the new administrator account's user name, select it, and then choose **Update selected users** to update the administrator account to use the new domain. 
+1. On the **Let's update your current Office 365 to \<your domain name\>** page, note the new administrator account's username, select it, and then choose **Update selected users** to update the administrator account to use the new domain. 
     
-    On the **Sign out to complete the change** dialog box, select **Sign out** to continue. You will have to sign in by using your new user name. Office 365 Setup wizard will bring you back to the setup step you were on after you sign in. 
+    On the **Sign out to complete the change** dialog box, select **Sign out** to continue. You will have to sign in by using your new username. Office 365 Setup wizard will bring you back to the setup step you were on after you sign in. 
     
     > [!NOTE]
     > If you run the Office 365 Setup wizard multiple times, you will have to add the admin account only the first time you run it. 
@@ -106,7 +106,7 @@ In this step, the admin account will be updated to the domain you added and then
     
     You can also skip this page and install the apps later.
     
-5. On the **Copy data** page, select each user that you want to migrate the email for, and in the **Source email address** box enter the IMAP enabled account that you are copying the email from. This can be the same as the Office 365 address if the user name and domain are the same, but it can also be a Gmail address, outlook.com address, etc. 
+5. On the **Copy data** page, select each user that you want to migrate the email for, and in the **Source email address** box enter the IMAP enabled account that you are copying the email from. This can be the same as the Office 365 address if the username and domain are the same, but it can also be a Gmail address, outlook.com address, etc. 
     
 6. Enter the **Password** for the source email for each user, and then click **Next** to start copying emails. 
     

@@ -14,7 +14,7 @@ description: "You can use your screen reader to create a shared mailbox in the E
 
 # Use a screen reader to add a new shared mailbox in the Exchange admin center 2016
 
-You can use your screen reader to create a shared mailbox in the Exchange admin center (EAC) in Exchange Online. Shared mailboxes make it easy for a group of people in your organization to monitor and send email from a common account, such as info@contoso.com or support@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email looks like it was sent by the shared mailbox, not from the individual user. [Learn more about shared mailboxes](https://go.microsoft.com/fwlink/?LinkId=798937).
+You can use your screen reader to create a shared mailbox in the Exchange admin center (EAC) in Exchange Online. Shared mailboxes make it easy for a group of people in your organization to monitor and send email from a common account, such as info@contoso.com or support@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email looks like it was sent by the shared mailbox, not from the individual user. [Learn more about shared mailboxes](https://go.microsoft.com/fwlink/p/?LinkId=798937).
   
 ## In this topic
 
@@ -31,21 +31,21 @@ Navigate with Internet Explorer and keyboard shortcuts, and make sure that you h
 
 Exchange Online, which includes the EAC, is a web-based application, so the keyboard shortcuts and navigation may be different from those in Exchange 2016. [Accessibility in the Exchange admin center](accessibility-in-exchange-admin-center.md).
   
-For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/?LinkID=787614).
+For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=787614).
   
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/?LinkID=317550).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
   
 ### Confirm your Office 365 subscription plan
 
 Exchange Online is included in Office 365 business and enterprise subscription plans, but capabilities may differ by plan. If your EAC doesn't include a function described in this topic, your plan might not include it. 
   
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://go.microsoft.com/fwlink/?LinkID=797552
-) and [Exchange Online Service Description.](https://go.microsoft.com/fwlink/?LinkID=797553
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://go.microsoft.com/fwlink/p/?LinkID=797552
+) and [Exchange Online Service Description.](https://go.microsoft.com/fwlink/p/?LinkID=797553
 ).
   
 ### Open the EAC, and confirm your admin role
 
-To add a new shared mailbox, [Use a screen reader to open the Exchange admin center](http://technet.microsoft.com/library/c7091f4c-da4e-49fa-bae4-b9e34bf51d9e.aspx) and check that your Office 365 global administrator has assigned you to the Organization Management and Recipient Management admin role groups. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+To add a new shared mailbox, [Use a screen reader to open the Exchange admin center](https://technet.microsoft.com/library/c7091f4c-da4e-49fa-bae4-b9e34bf51d9e.aspx) and check that your Office 365 global administrator has assigned you to the Organization Management and Recipient Management admin role groups. Learn how to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
   
 ## Create a shared mailbox
 <a name="BKMK_SharedMailbox"> </a>
@@ -66,7 +66,7 @@ To add a new shared mailbox, [Use a screen reader to open the Exchange admin cen
     
 8. To select the users who can view and send mail from this new shared mailbox, tab to and select the **Add** button. 
     
-9. When the ** Select Shared Mailbox Users ** dialog box opens, the **Search** box has the focus. You hear "Filter or search edit." Type all or part of the name of the first user you want to add to the shared mailbox and then, to search for the name, press Enter. 
+9. When the **Select Shared Mailbox Users** dialog box opens, the **Search** box has the focus. You hear "Filter or search edit." Type all or part of the name of the first user you want to add to the shared mailbox and then, to search for the name, press Enter. 
     
 10. Press the Tab key four times until you hear the name of the user in the search results list. The name is selected.
     

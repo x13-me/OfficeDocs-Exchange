@@ -16,18 +16,18 @@ description: "Mail users are similar to mail contacts. Both have external email 
 
 # Manage mail users
 
-Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange or Office 365 organization and can access resources. For more information, see [Recipients](http://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange or Office 365 organization and can access resources. For more information, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
   
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 2 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -80,7 +80,7 @@ Mail users are similar to mail contacts. Both have external email addresses and 
     > [!NOTE]
     > The **Organizational unit** box is only available in Exchange Server. It isn't available in Exchange Online. 
   
-  - **\* User logon name** Use this box to type the name that the mail user will use to log on to the domain. The user logon name consists of a user name on the left side of the at (@) symbol and a suffix on the right side. Typically, the suffix is the domain name the user account resides in. 
+  - **\* User logon name** Use this box to type the name that the mail user will use to log on to the domain. The user logon name consists of a username on the left side of the at (@) symbol and a suffix on the right side. Typically, the suffix is the domain name the user account resides in. 
     
     > [!NOTE]
     > In Exchange Online, this box is labeled as **User ID**. 
@@ -98,7 +98,7 @@ Mail users are similar to mail contacts. Both have external email addresses and 
     
 7. When you've finished, click **Save** to create the mail user. 
     
-#### Use the Shell to create a mail user
+#### Use Exchange Online PowerShell to create a mail user
 
 This example creates a mail-enabled user account for Jeffrey Zeng in Exchange Server with the following details:
   
@@ -114,7 +114,7 @@ This example creates a mail-enabled user account for Jeffrey Zeng in Exchange Se
     
 - The password is Pa$$word1.
     
-- The mail user will be created in the default OU. To specify a different OU, you can use the  _OrganizationalUnit_ parameter. 
+- The mail user will be created in the default OU. To specify a different OU, you can use the _OrganizationalUnit_ parameter. 
     
 ```
 New-MailUser -Name "Jeffrey Zeng" -Alias jeffreyz -ExternalEmailAddress jzeng@tailspintoys.com -FirstName Jeffrey -LastName Zeng -UserPrincipalName jeffreyz@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
@@ -132,15 +132,15 @@ To verify that you've successfully created a mail user, do one of the following:
   
 - In the EAC, navigate to **Recipients** \> **Contacts**. The new mail user is displayed in the list of contacts. Under **Contact Type**, the type is **Mail user**.
     
-- In the Shell, run the following command to display information about the new mail user.
+- In Exchange Online PowerShell, run the following command to display information about the new mail user.
     
   ```
-  Get-MailUser <Name> | FL Name,RecipientTypeDetails,ExternalEmailAddress
+  Get-MailUser <Name> | Format-List Name,RecipientTypeDetails,ExternalEmailAddress
   ```
 
 ### Change mail user properties
 
-After you create a mail user, you can make changes and set additional properties by using the EAC or the Shell.
+After you create a mail user, you can make changes and set additional properties by using the EAC or Exchange Online PowerShell.
   
 You can also change properties for multiple user mailboxes at the same time. For more information, see [Use the EAC to bulk edit mail users](#bulkedit.md).
   
@@ -150,7 +150,7 @@ The estimated time to complete this task will vary based on the number of proper
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
     
-2. In the list of contacts, click the mail user that you want to change the properties for, and then click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+2. In the list of contacts, click the mail user that you want to change the properties for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
     
 3. On the mail user properties page, click one of the following sections to view or change properties.
     
@@ -181,7 +181,7 @@ Click **More options** to view or change these additional properties:
     > [!NOTE]
     > This box isn't available in Exchange Online. 
   
-- **Custom attributes** This section displays the custom attributes defined for the mail user. To specify custom attribute values, click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif). You can specify up to 15 custom attributes for the recipient.
+- **Custom attributes** This section displays the custom attributes defined for the mail user. To specify custom attribute values, click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif). You can specify up to 15 custom attributes for the recipient.
     
 #### Contact Information
 <a name="ContactInformation"> </a>
@@ -211,7 +211,7 @@ Use the **Organization** section to record detailed information about the user's
 
 Use the **Email Addresses** section to view or change the email addresses associated with the mail user. This includes the mail user's primary SMTP address, their external email address, and any associated proxy addresses. The primary SMTP address (also known as the default reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column. By default, after the mail user is created, the primary SMTP address and the external email address are the same. 
   
-- **Add** Click ** Add **![Add Icon](../media/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types: 
+- **Add** Click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types: 
     
   - **SMTP** This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box. 
     
@@ -244,7 +244,7 @@ Use the **Mail Flow Settings** section to view or change the following settings:
     
   - **All senders** Select this option to specify that the user can accept messages from all senders. This includes both senders in your Exchange organization and external senders. This option is selected by default. This option includes external users only if you clear the **Require that all senders are authenticated** check box. If you select this check box, messages from external users will be rejected. 
     
-  - **Only senders in the following list** Select this option to specify that the user can accept messages only from a specified set of senders in your Exchange organization. Click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**![Search icon](../media/ITPro_EAC_.gif).
+  - **Only senders in the following list** Select this option to specify that the user can accept messages only from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../media/ITPro_EAC_.gif).
     
   - **Require that all senders are authenticated** Select this option to prevent anonymous users from sending messages to the user. 
     
@@ -252,7 +252,7 @@ Use the **Mail Flow Settings** section to view or change the following settings:
     
   - **No senders** Select this option to specify that the mailbox won't reject messages from any senders in the Exchange organization. This option is selected by default. 
     
-  - **Senders in the following list** Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**![Search icon](../media/ITPro_EAC_.gif).
+  - **Senders in the following list** Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../media/ITPro_EAC_.gif).
     
 #### Member Of
 <a name="MemberOf"> </a>
@@ -267,21 +267,21 @@ Use the **MailTip** section to add a MailTip to alert users of potential issues 
 > [!NOTE]
 >  MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit. 
   
-#### Use the Shell to change mail user properties
+#### Use Exchange Online PowerShell to change mail user properties
 
 Properties for a mail user are stored in both Active Directory and Exchange. In general, use the **Get-User** and **Set-User** cmdlets to view and change organization and contact information properties. Use the **Get-MailUser** and **Set-MailUser** cmdlets to view or change mail-related properties, such email addresses, the MailTip, custom attributes, and whether the mail user is hidden from address lists. 
   
 Use the **Get-MailUser** and **Set-MailUser** cmdlets to view and change properties for mail users. For information, see the following topics: 
   
-- [Get-User](http://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx)
+- [Get-User](https://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx)
     
-- [Set-User](http://technet.microsoft.com/library/56d7fc86-2ac3-4e28-bc7a-761e91ac655a.aspx)
+- [Set-User](https://technet.microsoft.com/library/56d7fc86-2ac3-4e28-bc7a-761e91ac655a.aspx)
     
-- [Get-MailUser](http://technet.microsoft.com/library/37b36f1c-95ec-4896-a08a-985ef4aa23b7.aspx)
+- [Get-MailUser](https://technet.microsoft.com/library/37b36f1c-95ec-4896-a08a-985ef4aa23b7.aspx)
     
-- [Set-MailUser](http://technet.microsoft.com/library/087a55a2-ee8d-41a8-9c8f-d86e32ce8448.aspx)
+- [Set-MailUser](https://technet.microsoft.com/library/087a55a2-ee8d-41a8-9c8f-d86e32ce8448.aspx)
     
-Here are some examples of using the Shell to change mail user properties.
+Here are some examples of using Exchange Online PowerShell to change mail user properties.
   
 This example sets the external email address for Pilar Pinilla.
   
@@ -311,9 +311,9 @@ Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser') -a
 
 To verify that you've successfully changed properties for mail users, do the following:
   
-- In the EAC, select the mail user and then click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif) to view the property that you changed. 
+- In the EAC, select the mail user and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif) to view the property that you changed. 
     
-- In the Shell, use the **Get-User** and **Get-MailUser** cmdlets to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple mail contacts. 
+- In Exchange Online PowerShell, use the **Get-User** and **Get-MailUser** cmdlets to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple mail contacts. 
     
   ```
   Get-MailUser | Fl Name,CustomAttribute1 
@@ -322,7 +322,7 @@ To verify that you've successfully changed properties for mail users, do the fol
     In the example above where the Company property was set to Contoso for all mail contacts, run the following command to verify the changes:
     
   ```
-  Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')} | FL Name,Company
+  Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')} | Format-List Name,Company
   ```
 
     In the example above where all mail users had the CustomAttribute1 property set to ContosoEmployee, run the following command to verify the changes.
@@ -360,9 +360,9 @@ When you bulk edit mail users, you can change the following property areas:
 
 To verify that you've successfully bulk edited mail users, do one of the following:
   
-- In the EAC, select each of the mail users that you bulk edited and then click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif) to view the properties that you changed. 
+- In the EAC, select each of the mail users that you bulk edited and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif) to view the properties that you changed. 
     
-- In the Shell, use the **Get-User** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail users from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in the Shell: 
+- In Exchange Online PowerShell, use the **Get-User** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail users from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in Exchange Online PowerShell: 
     
   ```
   Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Adatum')} | fl Name,Office,Manager
@@ -376,7 +376,7 @@ This section provides information about managing email users by using directory 
 > If you use directory synchronization to manage your recipients, you can still add and manage users in the Office 365 admin center, but they will not be synchronized with your on-premises Active Directory. This is because directory synchronization only syncs recipients from your on-premises Active Directory to the cloud. 
   
 > [!NOTE]
->  Using directory synchronization is recommended for use with the following features: > **Outlook safe sender and blocked sender lists** When synchronized to the service, these lists will take precedence over spam filtering in the service. This lets users manage their own safe sender and blocked sender lists on a per-user or per-domain basis. > **Directory Based Edge Blocking (DBEB)** For more information about DBEB, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](../mail-flow-best-practices/use-directory-based-edge-blocking.md). > **End user spam quarantine** In order to access the end user spam quarantine, end users must have a valid Office 365 user ID and password. Customers with on-premises mailboxes must be valid email users. > **Transport rules** When you use directory synchronization, your existing Active Directory users and groups are automatically uploaded to the cloud, and you can then create Transport rules that target specific users and/or groups without having to manually add them via the EAC or remote Windows PowerShell. Note that [dynamic distribution groups](https://go.microsoft.com/fwlink/?LinkId=507569) can't be synchronized via directory synchronization. 
+>  Using directory synchronization is recommended for use with the following features: > **Outlook safe sender and blocked sender lists** When synchronized to the service, these lists will take precedence over spam filtering in the service. This lets users manage their own safe sender and blocked sender lists on a per-user or per-domain basis. > **Directory Based Edge Blocking (DBEB)** For more information about DBEB, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](../mail-flow-best-practices/use-directory-based-edge-blocking.md). > **End user spam quarantine** In order to access the end user spam quarantine, end users must have a valid Office 365 user ID and password. Customers with on-premises mailboxes must be valid email users. > **Transport rules** When you use directory synchronization, your existing Active Directory users and groups are automatically uploaded to the cloud, and you can then create Transport rules that target specific users and/or groups without having to manually add them via the EAC or remote Windows PowerShell. Note that [dynamic distribution groups](https://go.microsoft.com/fwlink/p/?LinkId=507569) can't be synchronized via directory synchronization. 
   
  **Before you begin**
   
@@ -386,16 +386,16 @@ Get the necessary permissions and prepare for directory synchronization, as desc
 
 1. Activate directory synchronization, as described in [Activate directory synchronization](https://go.microsoft.com/fwlink/p/?LinkId=308909).
     
-2. Set up your directory synchronization computer, as described in [Set up your directory sync computer](http://go.microsoft.com/fwlink/p/?LinkId=308911).
+2. Set up your directory synchronization computer, as described in [Set up your directory sync computer](https://go.microsoft.com/fwlink/p/?LinkId=308911).
     
-3. Synchronize your directories, as described in [Use the Configuration Wizard to sync your directories](http://go.microsoft.com/fwlink/?LinkId=308912).
+3. Synchronize your directories, as described in [Use the Configuration Wizard to sync your directories](https://go.microsoft.com/fwlink/p/?LinkId=308912).
     
     > [!IMPORTANT]
     > When you finish the Azure Active Directory Sync Tool Configuration Wizard, the **MSOL_AD_SYNC** account is created in your Active Directory forest. This account is used to read and synchronize your on-premises Active Directory information. In order for directory synchronization to work correctly, make sure that TCP 443 on your local directory synchronization server is open. 
   
-4. Activate synced users, as described in [Activate synced users](http://go.microsoft.com/fwlink/p/?LinkId=308913).
+4. Activate synced users, as described in [Activate synced users](https://go.microsoft.com/fwlink/p/?LinkId=308913).
     
-5. Manage directory synchronization, as described in [Manage directory synchronization](http://go.microsoft.com/fwlink/p/?LinkId=308915).
+5. Manage directory synchronization, as described in [Manage directory synchronization](https://go.microsoft.com/fwlink/p/?LinkId=308915).
     
 6. Verify that Exchange Online is synchronizing correctly. In the EAC, go to **Recipients** \> **Contacts** and view that the list of users was correctly synchronized from your on-premises environment. 
     

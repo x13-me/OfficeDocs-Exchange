@@ -33,9 +33,9 @@ For details about how to create a sharing policy, see [Create a sharing policy i
     
 2. Go to **organization** \> **sharing**.
     
-3. Under **Individual Sharing**, select a sharing a policy, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
-4. In **sharing policy**, click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+4. In **sharing policy**, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 5. In **sharing rule**, change the settings such as the domain you want to share information with and the sharing level for calendars. Click **save** to update the rule. 
     
@@ -48,7 +48,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
     
 2. Go to **organization** \> **sharing**.
     
-3. Under **Individual Sharing**, select a sharing a policy, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 4. In **sharing policy**, select the **Make this policy my default sharing policy** check box. 
     
@@ -75,11 +75,11 @@ For details about how to create a sharing policy, see [Create a sharing policy i
     
 2. Go to **organization** \> **sharing**.
     
-3. Under **Individual Sharing**, select a sharing a policy, and then click **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+3. Under **Individual Sharing**, select a sharing a policy, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
     
 4. In the warning, click **yes** to delete the sharing policy. 
     
-### Use the Exchange Management Shell to modify, disable or remove a sharing policy
+### Use Exchange Online PowerShell to modify, disable or remove a sharing policy
 <a name="BKMK_Shell"> </a>
 
 - This example modifies the sharing policy Contoso. This policy allows users in the Contoso domain to see simple free/busy information.
@@ -117,6 +117,6 @@ For details about how to create a sharing policy, see [Create a sharing policy i
   
   ```
 
-For detailed syntax and parameter information, see [Set-SharingPolicy](http://technet.microsoft.com/library/42bab80c-62af-4b37-bb41-fa0173b27d86.aspx) and [Remove-SharingPolicy](http://technet.microsoft.com/library/b59d9faa-3418-4f4f-9f90-35cf12fde86e.aspx).
+For detailed syntax and parameter information, see [Set-SharingPolicy](https://technet.microsoft.com/library/42bab80c-62af-4b37-bb41-fa0173b27d86.aspx) and [Remove-SharingPolicy](https://technet.microsoft.com/library/b59d9faa-3418-4f4f-9f90-35cf12fde86e.aspx).
   
 

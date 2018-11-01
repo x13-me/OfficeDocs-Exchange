@@ -1,5 +1,5 @@
 ---
-title: "Exchange Server updates: build numbers and release dates"
+title: "Exchange Server build numbers and release dates"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -12,7 +12,7 @@ ms.assetid: 6a8091d0-4f19-4ae7-9e44-fd1c9f5fbe19
 description: "Summary: Learn about build numbers and release dates for current and past versions of Exchange Server."
 ---
 
-# Exchange Server updates: build numbers and release dates
+# Exchange Server build numbers and release dates
 
 You can use the information in this topic to verify the version of Exchange that is running in your organization.
 
@@ -77,7 +77,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
 |[Exchange Server 2013 CU21](https://go.microsoft.com/fwlink/p/?LinkId=2003011)|June 19, 2018|15.0.1395.4|15.00.1395.004|
-|[Exchange Server 2013 CU20](https://go.microsoft.com/fwlink/p/?LinkId=870406)|March 20, 2018|15.0.1367.3|15.00.1367.003|
+|Exchange Server 2013 CU20|March 20, 2018|15.0.1367.3|15.00.1367.003|
 |Exchange Server 2013 CU19|December 19, 2017|15.0.1365.1|15.00.1365.001|
 |Exchange Server 2013 CU18|September 19, 2017|15.0.1347.2|15.00.1347.002|
 |Exchange Server 2013 CU17|June 27, 2017|15.0.1320.4|15.00.1320.004|

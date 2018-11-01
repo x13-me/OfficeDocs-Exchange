@@ -24,32 +24,32 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 - Estimated time to complete: 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailbox policies" entry in the [Unified Messaging Permissions](http://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailbox policies" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
     
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](../../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
     
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM mailbox policy](create-um-mailbox-policy.md).
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
 ### Use the EAC to manage a UM mailbox policy
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
-2. On the **UM dial plan** page, under **UM Mailbox Policies**, on the toolbar, click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. On the **UM dial plan** page, under **UM Mailbox Policies**, on the toolbar, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
   - Use **General** to view and configure settings for a UM mailbox policy. For example, you can view the dial plans associated with the UM mailbox policy or disable missed call notifications for users who are associated with a specific UM mailbox policy. When you modify the settings on a UM mailbox policy, the settings are applied to all users who are associated with the UM mailbox policy. You can view or configure the following: 
     
-  - ** UM dial plan ** Displays the name of the dial plan associated with the UM mailbox policy. This is the name of the dial plan displayed in the Shell. 
+  - **UM dial plan** Displays the name of the dial plan associated with the UM mailbox policy. This is the name of the dial plan displayed in Exchange Online PowerShell. 
     
-    When a new UM mailbox policy is created, it must be associated with a dial plan. After the UM mailbox policy is created and associated with a dial plan, the settings defined on the mailbox policy are applied to the users who are associated with the dial plan. By default, when you create a UM dial plan using the Shell, it will also create a UM mailbox policy.
+    When a new UM mailbox policy is created, it must be associated with a dial plan. After the UM mailbox policy is created and associated with a dial plan, the settings defined on the mailbox policy are applied to the users who are associated with the dial plan. By default, when you create a UM dial plan using Exchange Online PowerShell, it will also create a UM mailbox policy.
     
-  - **Name** Type the name of the dial plan. A UM dial plan name is required and must be unique. However, it's used only for display in the EAC and the Shell. If you have to change the display name of the dial plan after it's been created, you must first delete the existing UM dial plan and then create another dial plan that has the appropriate name. If your organization uses multiple UM dial plans, we recommend that you use meaningful names for your UM dial plans. The maximum length of a UM dial plan name is 64 characters, and it can include spaces. (If you're integrating with Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server it's not recommended that you use spaces.) However, it can't include any of the following characters: " / \ [ ] : ; | = , + \* ? \< \>. 
+  - **Name** Type the name of the dial plan. A UM dial plan name is required and must be unique. However, it's used only for display in the EAC and Exchange Online PowerShell. If you have to change the display name of the dial plan after it's been created, you must first delete the existing UM dial plan and then create another dial plan that has the appropriate name. If your organization uses multiple UM dial plans, we recommend that you use meaningful names for your UM dial plans. The maximum length of a UM dial plan name is 64 characters, and it can include spaces. (If you're integrating with Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server it's not recommended that you use spaces.) However, it can't include any of the following characters: " / \ [ ] : ; | = , + \* ? \< \>. 
     
   - **Limit on personal greetings (minutes)** Use this text box to enter the maximum number of minutes that users who are associated with the UM mailbox policy can use when they record their voice mail greeting. You can modify this setting after the UM mailbox policy is created. Only numeric characters are allowed. The valid range for the greeting is from 1 through 10 minutes. The default setting is 5 minutes. 
     
@@ -218,9 +218,9 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
     
     If a protected voice mail message is sent to an email client that doesn't support IRM, the text that you include in this box will be sent to the user in an email message. This information should include instructions about what to do to be able to receive the protected voice mail message.
     
-### Use the Shell to manage a UM mailbox policy
+### Use Exchange Online PowerShell to manage a UM mailbox policy
 
-This example sets the PIN settings for users who are associated with a UM mailbox policy named  `MyUMMailboxPolicy`.
+This example sets the PIN settings for users who are associated with a UM mailbox policy named `MyUMMailboxPolicy`.
   
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN that is used to allow you access to your mailbox using Outlook Voice Access has been reset."
@@ -238,7 +238,7 @@ This example configures the text of voice messages sent to UM-enabled users and 
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -UMEnabledText "You have been enabled for Unified Messaging." -VoiceMailText "You have received a voice message from Microsoft Exchange Unified Messaging." 
 ```
 
-### Use the Shell to view UM mailbox policy properties
+### Use Exchange Online PowerShell to view UM mailbox policy properties
 
 This example returns a formatted list of all UM mailbox policies in the Active Directory forest.
   
@@ -246,7 +246,7 @@ This example returns a formatted list of all UM mailbox policies in the Active D
 Get-UMMailboxPolicy | Format-List
 ```
 
-This example returns the properties and values for a UM mailbox policy named  `MyUMMailboxPolicy`. 
+This example returns the properties and values for a UM mailbox policy named `MyUMMailboxPolicy`. 
   
 ```
 Get-UMMailboxPolicy -Identity MyUMMailboxPolicy

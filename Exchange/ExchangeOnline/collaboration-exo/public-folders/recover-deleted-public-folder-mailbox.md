@@ -16,7 +16,7 @@ description: "Summary: This article describes how to recover a public folder mai
 
  **Summary**: This article describes how to recover a public folder mailbox in Office 365 that was previously soft-deleted, meaning the mailbox retention period has not yet elapsed and the recycle bin has not been purged.
   
-You can delete public folder mailboxes either in the EAC or through the  `Remove-Mailbox -PublicFolder` cmdlet. To delete a primary mailbox, all other mailboxes must be deleted first. After a mailbox is deleted it will no longer be visible in the EAC. 
+You can delete public folder mailboxes either in the EAC or through the `Remove-Mailbox -PublicFolder` cmdlet. To delete a primary mailbox, all other mailboxes must be deleted first. After a mailbox is deleted it will no longer be visible in the EAC. 
   
 Deleted Public Folder mailboxes are recoverable for a period of up to 90 days.
   
@@ -24,13 +24,13 @@ Deleted Public Folder mailboxes are recoverable for a period of up to 90 days.
 
 - Estimated time to complete: 5-10 minutes.
     
-- A public folder mailbox can only be deleted once all folders within that mailbox have been deleted. However, you can bypass this restriction by using the  `-Force` switch, as in  `Remove-Mailbox -PublicFolder -Force`.
+- A public folder mailbox can only be deleted once all folders within that mailbox have been deleted. However, you can bypass this restriction by using the `-Force` switch, as in `Remove-Mailbox -PublicFolder -Force`.
     
 - A deleted public folder mailbox is only recoverable for a period of 90 days after the mailbox is soft-deleted. The retention period for a soft-deleted mailbox is 90 days, after which the mailbox is permanently deleted and you won't be able to restore it.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](http://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](https://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic. 
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!NOTE]
 > For deleted public folder mailboxes that contain folders, the folders will be automatically recovered along with the mailbox that contains them when you use one of the following procedures to recover the mailbox. 
@@ -53,7 +53,7 @@ To restore a primary public folder mailbox:
 
 ## Restore a primary mailbox and secondary mailboxes
 
-The **Type** field, part of the information returned by the  `Get-Mailbox` cmdlet, identifies public folder mailboxes as either **Primary** or **Secondary**. Primary public folder mailboxes must be restored first.
+The **Type** field, part of the information returned by the `Get-Mailbox` cmdlet, identifies public folder mailboxes as either **Primary** or **Secondary**. Primary public folder mailboxes must be restored first.
   
 Perform the following steps to restore both a primary public folder mailbox and any relevant secondary mailboxes.
   

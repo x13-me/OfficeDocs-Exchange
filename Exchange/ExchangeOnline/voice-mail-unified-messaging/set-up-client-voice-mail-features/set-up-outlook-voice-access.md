@@ -32,11 +32,11 @@ Two Unified Messaging user interfaces are available to Outlook Voice Access user
   
 Before users can use the VUI in Outlook Voice Access, it must be enabled on the UM dial plan and on the UM mailbox policy and also be enabled for the user. By default, when you create a dial plan and a UM mailbox policy and enable voice mail for a user, the user can use ASR or the Outlook Voice Access VUI to navigate menus, messages, and other options. However, even if the user is able to use the VUI, they will have to use the telephone key pad to enter their PIN, navigate personal options, and perform a directory search. The default settings are listed in the following table.
   
-|**UM component**|**Default setting**|**Exchange Management Shell example to enable VUI access**|
+|**UM component**|**Default setting**|**Exchange Online PowerShell example to enable VUI access**|
 |:-----|:-----|:-----|
-|UM dial plan  <br/> |Enabled  <br/> | `Set-UMDialPlan -id MyUMDialPlan -AutomaticSpeechRecognitionEnabled $true` <br/> |
-|UM mailbox policy  <br/> |Enabled  <br/> | `Set-UMMaiboxPolicy -id MyUMPolicy -AllowAutomaticSpeechRecognition $true` <br/> |
-|User's mailbox  <br/> |Enabled  <br/> | `Set-UMMailbox -id tonysmith -AutomaticSpeechRecognitionEnabled $true` <br/> |
+|UM dial plan|Enabled|`Set-UMDialPlan -Identity MyUMDialPlan -AutomaticSpeechRecognitionEnabled $true`|
+|UM mailbox policy|Enabled|`Set-UMMaiboxPolicy -Identity MyUMPolicy -AllowAutomaticSpeechRecognition $true`|
+|User's mailbox|Enabled|`Set-UMMailbox -Identity tonysmith -AutomaticSpeechRecognitionEnabled $true`|
    
 The following section includes scenarios that describe the VUI functionality.
   
@@ -93,10 +93,10 @@ Users can't change the language that Outlook Voice Access uses to speak to them 
 ## Controlling Outlook Voice Access features
 <a name="BKMK_ControllingOutlookVoiceAccessfeatures"> </a>
 
-By default, when users dial in to Outlook Voice Access, they can use the telephone to access their calendar, email, and personal contacts, and to search the directory. You can use the Shell to prevent users from accessing one or more of these features when they use Outlook Voice Access to access their mailbox. When you modify Outlook Voice Access features on a UM mailbox policy, your changes affect all users who are associated with the UM mailbox policy. You can also disable some features on a single user's mailbox, although other features can only be disabled on a UM mailbox policy and aren't available on an individual mailbox.
+By default, when users dial in to Outlook Voice Access, they can use the telephone to access their calendar, email, and personal contacts, and to search the directory. You can use Exchange Online PowerShell to prevent users from accessing one or more of these features when they use Outlook Voice Access to access their mailbox. When you modify Outlook Voice Access features on a UM mailbox policy, your changes affect all users who are associated with the UM mailbox policy. You can also disable some features on a single user's mailbox, although other features can only be disabled on a UM mailbox policy and aren't available on an individual mailbox.
   
 > [!NOTE]
-> You can use only the Shell to modify the Outlook Voice Access TUI settings for UM-enabled mailboxes or UM mailbox policies. 
+> You can use only Exchange Online PowerShell to modify the Outlook Voice Access TUI settings for UM-enabled mailboxes or UM mailbox policies. 
   
  **UM mailbox policy settings** You can disable users' access to the following Outlook Voice Access features on a UM mailbox policy: 
   

@@ -146,7 +146,7 @@ Use the **Organization** section to record detailed information about the user's
 
 Use the **Email Address** section to view or change the email addresses associated with the user mailbox. This includes the user's primary SMTP address and any associated proxy addresses. The primary SMTP address (also known as the *default reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
   
-- **Add**: Click ** Add ** ![Add icon](../../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types: 
+- **Add**: Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types: 
     
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
     

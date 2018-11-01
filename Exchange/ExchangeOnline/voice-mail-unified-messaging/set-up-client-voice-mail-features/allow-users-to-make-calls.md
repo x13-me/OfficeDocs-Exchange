@@ -79,10 +79,10 @@ For you to successfully configure outdialing for your organization, you first ne
 
 |**Component**|**Description**|
 |:-----|:-----|
-|Dial codes, number prefixes, and number formats  <br/> |UM uses dial codes, number prefixes, and number formats to determine the correct number to dial when placing an outgoing call. You can configure dial codes, number prefixes, and number formats to restrict outgoing calls for users who dial in to a UM auto attendant associated with a UM dial plan or for users who dial in to an Outlook Voice Access number configured on the dial plan.  <br/> |
-|Dialing rule groups  <br/> |Dialing rule groups are created to enable telephone numbers to be modified before they're sent to the PBX for outgoing calls. Dialing rule groups remove numbers from or add numbers to telephone numbers being called by UM. For example, you can create a dialing rule group that automatically adds a 9 as a prefix to a 7-digit telephone number to provide access to an outside line. In this example, users who place outgoing calls don't have to dial the 9 before the telephone number to reach someone external to the organization.  <br/> Each dialing rule group contains dialing rules that determine the types of in-country/region and international calls that users within a dialing rule group can make. Dialing rule groups apply to the users who are associated with a UM dial plan or to UM auto attendants and UM mailbox policies associated with the UM dial plan. Each dialing rule group must contain at least one dialing rule.  <br/> |
-|Dialing rule entries  <br/> |A dialing rule is used to determine the types of calls that users within a dialing rule group can make. When you create a dialing rule group, you configure one or more dialing rules.  <br/> When you configure each dialing rule, you must enter the dialing rule name, number pattern to transform (number mask), and dialed number. You can also enter a comment. Comments can be used to describe how the dialing rule will be used or to describe a group of users to whom the dialing rule will apply. When you add a number mask and the dialed number to a dialing rule, you can substitute the letter x for a digit in a telephone number, for example, 91425xxxxxxx. You can also use an asterisk (\*) symbol as a wildcard character, for example, 91425\*.  <br/> |
-|Dialing authorizations  <br/> |A dialing authorization uses dialing rule groups to apply dialing restrictions for users who are associated with a specific UM mailbox policy, dial plan, or auto attendant. They can also be used when you want to let users place calls to in-country/region or international telephone numbers.  <br/> After you create dialing rules on a UM dial plan, you add the dialing rule group to a UM mailbox policy, dial plan, or auto attendant. After the dialing rule group is added to a UM mailbox policy, all settings or rules defined will apply to UM-enabled users who are linked with the UM mailbox policy.  <br/> |
+|Dial codes, number prefixes, and number formats|UM uses dial codes, number prefixes, and number formats to determine the correct number to dial when placing an outgoing call. You can configure dial codes, number prefixes, and number formats to restrict outgoing calls for users who dial in to a UM auto attendant associated with a UM dial plan or for users who dial in to an Outlook Voice Access number configured on the dial plan.|
+|Dialing rule groups|Dialing rule groups are created to enable telephone numbers to be modified before they're sent to the PBX for outgoing calls. Dialing rule groups remove numbers from or add numbers to telephone numbers being called by UM. For example, you can create a dialing rule group that automatically adds a 9 as a prefix to a 7-digit telephone number to provide access to an outside line. In this example, users who place outgoing calls don't have to dial the 9 before the telephone number to reach someone external to the organization.  <br/> Each dialing rule group contains dialing rules that determine the types of in-country/region and international calls that users within a dialing rule group can make. Dialing rule groups apply to the users who are associated with a UM dial plan or to UM auto attendants and UM mailbox policies associated with the UM dial plan. Each dialing rule group must contain at least one dialing rule.|
+|Dialing rule entries|A dialing rule is used to determine the types of calls that users within a dialing rule group can make. When you create a dialing rule group, you configure one or more dialing rules.  <br/> When you configure each dialing rule, you must enter the dialing rule name, number pattern to transform (number mask), and dialed number. You can also enter a comment. Comments can be used to describe how the dialing rule will be used or to describe a group of users to whom the dialing rule will apply. When you add a number mask and the dialed number to a dialing rule, you can substitute the letter x for a digit in a telephone number, for example, 91425xxxxxxx. You can also use an asterisk (\*) symbol as a wildcard character, for example, 91425\*.|
+|Dialing authorizations|A dialing authorization uses dialing rule groups to apply dialing restrictions for users who are associated with a specific UM mailbox policy, dial plan, or auto attendant. They can also be used when you want to let users place calls to in-country/region or international telephone numbers.  <br/> After you create dialing rules on a UM dial plan, you add the dialing rule group to a UM mailbox policy, dial plan, or auto attendant. After the dialing rule group is added to a UM mailbox policy, all settings or rules defined will apply to UM-enabled users who are linked with the UM mailbox policy.|
    
 ## Configuring outdialing
 <a name="configuring"> </a>
@@ -91,7 +91,7 @@ A dialing rule group is a collection of one or more dialing rules configured on 
   
 Each UM dial plan can contain one or more dialing rule groups. To apply a dialing rule group to a set of users, after you create the dialing rule group, you must add it to the list of allowed dialing rule groups on the UM dial plan and on the UM auto attendants and UM mailbox policies associated with the UM dial plan.
   
-Dialing rule groups enable you to specify dialing rules that you want to apply to a group of UM-enabled users who fall into a specific category. For example, you can use dialing rule groups to specify which group of users can place international calls and which group can make only in-state or local calls. You can create a dialing rule group using the Exchange Administration Center (EAC) or the **Set-UMDialPlan** cmdlet in the Exchange Management Shell. When you create a dialing rule group, you must define at least one dialing rule for the group. 
+Dialing rule groups enable you to specify dialing rules that you want to apply to a group of UM-enabled users who fall into a specific category. For example, you can use dialing rule groups to specify which group of users can place international calls and which group can make only in-state or local calls. You can create a dialing rule group using the Exchange admin center (EAC) or the **Set-UMDialPlan** cmdlet in Exchange Online PowerShell. When you create a dialing rule group, you must define at least one dialing rule for the group. 
   
 When a user dials a telephone number, UM takes the number and looks for a match in the dialing rules. If a match is found, UM uses the dialing rule to determine the number to dial by looking at the telephone number or digits listed in the **Dialed Number** section of the dialing rule. The number listed in the **Dialed Number** box of the dialing rule will be dialed. 
   
@@ -101,14 +101,14 @@ The following table shows an example of dialing rule groups and dialing rules. I
 
 |**Name**|**NumberMask**|**DialedNumber**|**Comment**|
 |:-----|:-----|:-----|:-----|
-|Local-Calls-Only  <br/> |91425\*  <br/> |91\*  <br/> |Local calls  <br/> |
-|Local-Calls-Only  <br/> |91206\*  <br/> |91\*  <br/> |Local calls  <br/> |
-|Low-Rate  <br/> |91509\*  <br/> |9\*  <br/> |In-state calls  <br/> |
-|Low-Rate  <br/> |91360\*  <br/> |9\*  <br/> |In-state calls  <br/> |
+|Local-Calls-Only|91425\*|91\*|Local calls|
+|Local-Calls-Only|91206\*|91\*|Local calls|
+|Low-Rate|91509\*|9\*|In-state calls|
+|Low-Rate|91360\*|9\*|In-state calls|
    
 For example, when a user dials 9-1-425-555-1234, UM dials 4255551234. UM removes any nonnumeric characters (in this example, the hyphens) and applies the number mask from the dialing rule. In this example, UM applies the number mask 91\*. This tells UM not to dial the 9 or the 1, but to dial all the other numbers in the telephone number that appear to the right of the number 1. This includes all the numbers represented by the asterisk (\*).
   
-You can use the EAC or the Shell to create and configure single or multiple in-country/region and international dialing rule groups and dialing rules. However, if you're creating many or complex dialing rule groups and dialing rules, you can use a comma-separated value (.csv) file in the Shell. You can import or export a list of dialing rule groups and dialing rules.
+You can use the EAC or Exchange Online PowerShell to create and configure single or multiple in-country/region and international dialing rule groups and dialing rules. However, if you're creating many or complex dialing rule groups and dialing rules, you can use a comma-separated value (.csv) file in Exchange Online PowerShell. You can import or export a list of dialing rule groups and dialing rules.
   
 To import a list of dialing rule groups and dialing rules that you've defined in a .csv file, run the **Set-UMDialPlan** cmdlet, as follows. 
   
@@ -119,7 +119,7 @@ Set-UMDialPlan "MyUMDialPlan" -ConfiguredInCountryOrRegionGroups $(IMPORT-CSV c:
 To retrieve a list of the dialing rule groups configured on a UM dial plan, run the **Get-UMDialPlan** cmdlet, as follows. 
   
 ```
-(Get-UMDialPlan -id "MyUMDialPlan").ConfiguredInCountryOrRegionGroups | EXPORT-CSV C:\incountryorregion.csv
+(Get-UMDialPlan -Identity "MyUMDialPlan").ConfiguredInCountryOrRegionGroups | EXPORT-CSV C:\incountryorregion.csv
 ```
 
 The .csv file must be created and saved in the correct format. Each line in the .csv file represents one dialing rule. However, each dialing rule is configured on the same dialing rule group. Each rule in the file will have four sections separated by commas. These sections are name, number mask, dialed number, and comment. Each section is required, and you must enter the correct information in each section except for the comment section. There should be no spaces between the text entry and the comma for the next section, nor should there be any blank lines between the rules or at the end. The following is an example of a .csv file that can be used to create in-country/region dialing rule groups and dialing rules.
@@ -147,27 +147,27 @@ The following is an example of a .csv file that can be used to create internatio
 ## Applying configured dialing rule groups
 <a name="applying"> </a>
 
-Dialing rule groups are created on a UM dial plan. You can create in-country/region or international dialing rule groups using the EAC or the **Set-UMDialPlan** cmdlet in the Shell. After you create the appropriate dialing rule groups on a UM dial plan and define the dialing rules, you can apply the dialing rule groups that you created to a UM dial plan, a UM auto attendant, or to users who are associated with a UM mailbox policy, and authorize outdialing depending on how the user accesses the voice mail system. 
+Dialing rule groups are created on a UM dial plan. You can create in-country/region or international dialing rule groups using the EAC or the **Set-UMDialPlan** cmdlet in Exchange Online PowerShell. After you create the appropriate dialing rule groups on a UM dial plan and define the dialing rules, you can apply the dialing rule groups that you created to a UM dial plan, a UM auto attendant, or to users who are associated with a UM mailbox policy, and authorize outdialing depending on how the user accesses the voice mail system. 
   
 You can apply the dialing rule groups that you created on a UM dial plan to the following:
   
-- **Same dial plan** The settings will apply to all users who call in to an Outlook Voice Access number but don't sign in to their mailbox. To apply an in-country/region dialing rule group named  `MyAllowedDialRuleGroup` to the same dial plan, use the Shell **Set-UMDialPlan** cmdlet, as follows. 
+- **Same dial plan** The settings will apply to all users who call in to an Outlook Voice Access number but don't sign in to their mailbox. To apply an in-country/region dialing rule group named `MyAllowedDialRuleGroup` to the same dial plan, use Exchange Online PowerShell **Set-UMDialPlan** cmdlet, as follows. 
     
   ```
   Set-UMDialPlan -Identity MyUMDialPlan -AllowedInCountryOrRegionGroups MyAllowedDialRuleGroup
   ```
 
-- **Single or multiple UM mailbox policies ** The settings that are configured on a UM mailbox policy will apply to all users who are linked with that UM mailbox policy. The settings configured on a UM mailbox policy apply to users who call in to an Outlook Voice Access number and sign in to their mailbox. To apply an in-country/region dialing rule group named  `MyAllowedDialRuleGroup` to a single UM mailbox policy, use the **Dialing authorization** page on the UM mailbox policy in the EAC or use the **Set-UMMailboxPolicy** cmdlet in the Shell, as follows. 
+- **Single or multiple UM mailbox policies** The settings that are configured on a UM mailbox policy will apply to all users who are linked with that UM mailbox policy. The settings configured on a UM mailbox policy apply to users who call in to an Outlook Voice Access number and sign in to their mailbox. To apply an in-country/region dialing rule group named `MyAllowedDialRuleGroup` to a single UM mailbox policy, use the **Dialing authorization** page on the UM mailbox policy in the EAC or use the **Set-UMMailboxPolicy** cmdlet in Exchange Online PowerShell, as follows. 
     
-  ```
-  Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowedInCountryOrRegionGroups MyAllowedDialRuleGroup
-  ```
+    ```
+    Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowedInCountryOrRegionGroups MyAllowedDialRuleGroup
+    ```
 
-- **Single or multiple auto attendants associated with the UM dial plan ** This will apply to all users who call in to a UM auto attendant. To apply the in-country/region dialing rule group named  `MyAllowedDialRuleGroup` to a single UM auto attendant, use the **Dialing authorization** page on the auto attendant in the EAC or the **Set-UMAutoAttendant** cmdlet in the Shell, as follows. 
+- **Single or multiple auto attendants associated with the UM dial plan** This will apply to all users who call in to a UM auto attendant. To apply the in-country/region dialing rule group named `MyAllowedDialRuleGroup` to a single UM auto attendant, use the **Dialing authorization** page on the auto attendant in the EAC or the **Set-UMAutoAttendant** cmdlet in Exchange Online PowerShell, as follows. 
     
-  ```
-  Set-UMAutoAttendant -Identity MyUMAutoAttendant -AllowedInCountryOrRegionGroups MyAllowedDialRuleGroup
-  ```
+    ```
+    Set-UMAutoAttendant -Identity MyUMAutoAttendant -AllowedInCountryOrRegionGroups MyAllowedDialRuleGroup
+    ```
 
 The following table summarizes the way that dialing rule groups are applied in Unified Messaging.
   
@@ -175,10 +175,10 @@ The following table summarizes the way that dialing rule groups are applied in U
 
 |**Caller type**|**Scope**|**Outdialing settings applied**|
 |:-----|:-----|:-----|
-|Outlook Voice Access number  <br/> |User calls a dial plan Outlook Voice Access number and signs in to the mailbox  <br/> |UM mailbox policy  <br/> |
-|Anonymous caller  <br/> |User calls a dial plan Outlook Voice Access number  <br/> |UM dial plan  <br/> |
-|Anonymous caller  <br/> |User calls an auto attendant pilot or extension number  <br/> |UM auto attendant  <br/> |
-|Caller from inside the organization  <br/> |User calls the Play on Phone number  <br/> |UM mailbox policy  <br/> |
+|Outlook Voice Access number|User calls a dial plan Outlook Voice Access number and signs in to the mailbox|UM mailbox policy|
+|Anonymous caller|User calls a dial plan Outlook Voice Access number|UM dial plan|
+|Anonymous caller|User calls an auto attendant pilot or extension number|UM auto attendant|
+|Caller from inside the organization|User calls the Play on Phone number|UM mailbox policy|
    
 ## Applying dialing rules
 <a name="applyingdialing"> </a>
