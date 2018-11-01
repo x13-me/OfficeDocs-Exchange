@@ -79,7 +79,7 @@ To enable UM-enabled users to receive faxes, you must do the following:
     > [!NOTE]
     > If you prevent fax messages from being received on a dial plan, no users who are associated with the dial plan will be able to receive faxes, even if you configure an individual user's properties to allow them to receive faxes. Enabling or disabling faxing on a UM dial plan takes precedence over the settings for an individual UM-enabled user. 
   
-- Configure the UM mailbox policy that's associated with the UM-enabled user. The UM mailbox policy must be configured to allow incoming faxes, including the fax partner's URI and the name of the fax partner's server. The  _FaxServerURI_ parameter must use the following form: sip:\<  _fax server URI_\>:\< _port_\>;\< _transport_\>, where "fax server URI" is either a fully qualified domain name (FQDN) or an IP address of the fax partner server. The "port" is the port on which the fax server listens for incoming fax calls and "transport" is the transport protocol that's used for the incoming fax (UDP, TCP, or Transport Layer Security (TLS)). For example, you might configure a UM mailbox policy to receive a fax as follows.
+- Configure the UM mailbox policy that's associated with the UM-enabled user. The UM mailbox policy must be configured to allow incoming faxes, including the fax partner's URI and the name of the fax partner's server. The _FaxServerURI_ parameter must use the following form: sip:\<_fax server URI_\>:\<_port_\>;\<_transport_\>, where "fax server URI" is either a fully qualified domain name (FQDN) or an IP address of the fax partner server. The "port" is the port on which the fax server listens for incoming fax calls and "transport" is the transport protocol that's used for the incoming fax (UDP, TCP, or Transport Layer Security (TLS)). For example, you might configure a UM mailbox policy to receive a fax as follows.
     
   ```
   Set-UMMailboxPolicy MyUMMailboxPolicy -AllowFax $true -FaxServerURI "sip:faxserver.abc.com:5060;transport=tcp"
@@ -88,7 +88,7 @@ To enable UM-enabled users to receive faxes, you must do the following:
 - For details, see [Set the partner fax server URI to allow faxing](set-the-partner-fax-server-uri-to-allow-faxing.md).
     
     > [!CAUTION]
-    > Although you can include multiple entries in the format for the  _FaxServerURI_ by separating them with a semicolon, only one entry will be used. This parameter allows only one entry to be used, and adding multiple entries won't enable you to load balance fax requests. 
+    > Although you can include multiple entries in the format for the _FaxServerURI_ by separating them with a semicolon, only one entry will be used. This parameter allows only one entry to be used, and adding multiple entries won't enable you to load balance fax requests. 
   
 - Verify that the mailbox that's UM-enabled can receive fax messages. By default, all users who are associated with a dial plan can receive faxes. However, there may be situations when a user can't receive faxes because the ability to receive faxes has been disabled on their mailbox. For more information about how to enable a UM-enabled user to receive faxes, see [Enable a user to receive faxes](enable-a-user-to-receive-faxes.md).
     
@@ -111,17 +111,17 @@ A receive connector should be sufficient for authenticating the fax partner serv
   
 The receive connector will be configured on an Exchange server that's used by the fax partner server to submit SMTP fax messages, and must be configured with the following values:
   
--  _AuthMechanism: ExternalAuthoritative_
+- _AuthMechanism_: ExternalAuthoritative
     
--  _PermissionGroups: ExchangeServers, PartnersFax_
+- _PermissionGroups_: ExchangeServers, PartnersFax
     
--  _RemoteIPRanges: {the fax server's IP address}_
+- _RemoteIPRanges_: {the fax server's IP address}
     
--  _RequireTLS: False_
+- _RequireTLS_: False
     
--  _EnableAuthGSSAPI: False_
+- _EnableAuthGSSAPI_: False
     
--  _LiveCredentialEnabled: False_
+- _LiveCredentialEnabled_: False
     
 For details, see [Connectors](https://technet.microsoft.com/library/73559b0c-fc0e-41fd-84df-d07442137a0c.aspx).
   

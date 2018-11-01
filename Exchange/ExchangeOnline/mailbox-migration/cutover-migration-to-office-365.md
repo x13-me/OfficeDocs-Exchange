@@ -163,11 +163,11 @@ A migration endpoint contains the settings and credentials needed to connect the
     
 2. In the Exchange admin center, go to **Recipients** \> **Migration**.
     
-3. Choose **More**![More icon](media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
+3. Choose **More** ![More icon](media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
     
     ![Select Migration endpoint.](media/474a2e9a-a7f1-4657-8a09-eeec45e106f5.png)
   
-4. On the **Migration endpoints** page, choose **New**![New icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
+4. On the **Migration endpoints** page, choose **New** ![New icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
     
 5. On the **Select the migration endpoint type** page, choose **Outlook Anywhere** \> **Next**.
     
@@ -205,7 +205,7 @@ In a cutover migration, on-premises mailboxes are migrated to Office 365 in a si
   
 1. In the Exchange admin center, go to **Recipients** \> **Migration**.
     
-2. Choose **New**![New icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
+2. Choose **New** ![New icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
     
     ![Select Migrate to Exchange Online](media/d5af665e-498d-4f18-8761-fc69897b389d.png)
   
@@ -302,7 +302,7 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
     If you keep your Exchange Server, you should also make sure that Autodiscover DNS CNAME record has to point to Office 365 in both internal and external DNS after the migration so that the Outlook client will to connect to the correct mailbox.
     
     > [!NOTE]
-    >  In Exchange 2007, Exchange 2010, and Exchange 2013 you should also set  `Set-ClientAccessServer AutodiscoverInternalConnectionURI` to  `Null`. 
+    >  In Exchange 2007, Exchange 2010, and Exchange 2013 you should also set `Set-ClientAccessServer AutodiscoverInternalConnectionURI` to `Null`. 
   
     Office 365 uses a CNAME record to implement the Autodiscover service for Outlook and mobile clients. The Autodiscover CNAME record must contain the following information:
     

@@ -38,7 +38,7 @@ To get started implementing any of these scenarios to block certain message type
     
  **Note**: In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554). To learn how to connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290).
   
-Replace  _\<Rule Name\>_ with the name of the existing rule, and run the following command to set the attachment size to 1 byte: 
+Replace _\<Rule Name\>_ with the name of the existing rule, and run the following command to set the attachment size to 1 byte: 
   
 ```
 Set-TransportRule -Identity "<Rule Name>" -AttachmentSizeOver 1B

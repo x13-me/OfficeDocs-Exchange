@@ -87,25 +87,25 @@ The EAC allows you to create mail flow rules by using a template, copying an exi
     
 2. Create the rule by using one of the following options:
     
-  - To create a rule from a template, click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and select a template. 
+  - To create a rule from a template, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and select a template. 
     
-  - To copy a rule, select the rule, and then select **Copy**![Copy Icon](../../media/ITPro_EAC_CopyIcon.gif).
+  - To copy a rule, select the rule, and then select **Copy** ![Copy Icon](../../media/ITPro_EAC_CopyIcon.gif).
     
-  - To create a new rule from scratch, **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
+  - To create a new rule from scratch, **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
     
 3. In the **New rule** dialog box, name the rule, and then select the conditions and actions for this rule: 
     
-1. In **Apply this rule if…**, select the condition you want from the list of available conditions. 
+1. In **Apply this rule if...**, select the condition you want from the list of available conditions. 
     
-  - Some conditions require you to specify values. For example, if you select **The sender is…** condition, you must specify a sender address. If you're adding a word or phrase, note that trailing spaces are not allowed. 
+  - Some conditions require you to specify values. For example, if you select **The sender is...** condition, you must specify a sender address. If you're adding a word or phrase, note that trailing spaces are not allowed. 
     
   - If the condition you want isn't listed, or if you need to add exceptions, select **More options**. Additional conditions and exceptions will be listed.
     
   - If you don't want to specify a condition, and want this rule to apply to every message in your organization, select **[Apply to all messages]** condition. 
     
-2. In **Do the following…**, select the action you want the rule to take on messages matching the criteria from the list of available actions. 
+2. In **Do the following...**, select the action you want the rule to take on messages matching the criteria from the list of available actions. 
     
-  - Some of the actions will require you to specify values. For example, if you select the **Forward the message for approval to…** condition, you will need to select a recipient in your organization. 
+  - Some of the actions will require you to specify values. For example, if you select the **Forward the message for approval to...** condition, you will need to select a recipient in your organization. 
     
   - If the condition you want isn't listed, select **More options**. Additional conditions will be listed.
     
@@ -309,7 +309,7 @@ To verify that you have successfully enabled or disabled a mail flow rule, do th
 
 1. From the EAC, go to **Mail flow** \> **Rules**. 
     
-2. Select the rule you want to remove and then click **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif). 
+2. Select the rule you want to remove and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif). 
     
 #### Use Exchange Online PowerShell to remove a mail flow rule
 

@@ -16,7 +16,7 @@ description: "Use the procedure here to change your organization's external post
 
 Use the procedure here to change your organization's external postmaster address. The external postmaster address is used as the sender for system-generated messages and notifications sent to message senders that exist outside your Microsoft Exchange Online organization. An external sender is any sender that has an email address in a domain that isn't configured as an accepted domain in your organization.
   
-By default, the value of the external postmaster address setting is blank. This default value sets the external postmaster address to the value postmaster@\< _Default accepted domain_\> for your organization.
+By default, the value of the external postmaster address setting is blank. This default value sets the external postmaster address to the value postmaster@\<_Default accepted domain_\> for your organization.
   
 ## What do you need to know before you begin?
 

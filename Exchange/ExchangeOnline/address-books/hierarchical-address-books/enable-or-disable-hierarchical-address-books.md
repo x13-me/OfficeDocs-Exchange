@@ -33,9 +33,9 @@ You can configure a hierarchical address book (HAB), which is a feature availabl
 |**Cmdlet**|**Parameter**|
 |:-----|:-----|
 |[Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx)|_HierarchicalAddressBookRoot_|
-|[Set-Group](https://technet.microsoft.com/library/924e6eb5-bb06-4e15-b122-cab414291cef.aspx)|_IsHierarchicalGroup_ <br/>  _SeniorityIndex_ <br/>  _PhoneticDisplayName_|
-|[Set-User](https://technet.microsoft.com/library/56d7fc86-2ac3-4e28-bc7a-761e91ac655a.aspx)|_SeniorityIndex_ <br/>  _PhoneticDisplayName_|
-|[Set-Contact](https://technet.microsoft.com/library/c86ca5af-bb1d-4619-8af8-9f04c83d84c5.aspx)|_SeniorityIndex_ <br/>  _PhoneticDisplayName_|
+|[Set-Group](https://technet.microsoft.com/library/924e6eb5-bb06-4e15-b122-cab414291cef.aspx)|_IsHierarchicalGroup_ <br/> _SeniorityIndex_ <br/> _PhoneticDisplayName_|
+|[Set-User](https://technet.microsoft.com/library/56d7fc86-2ac3-4e28-bc7a-761e91ac655a.aspx)|_SeniorityIndex_ <br/> _PhoneticDisplayName_|
+|[Set-Contact](https://technet.microsoft.com/library/c86ca5af-bb1d-4619-8af8-9f04c83d84c5.aspx)|_SeniorityIndex_ <br/> _PhoneticDisplayName_|
    
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
@@ -119,16 +119,16 @@ For detailed information about creating distribution groups, see [Create and man
   Add-DistributionGroupMember -Identity "CorporateOffice" -Member "DHamilton"
   ```
 
-9. Set the  _SeniorityIndex_ parameter for groups in the HAB. For this example, the Corporate Office group contains three child groups: Human Resources, Accounting Group, and Administration Group. Instead of having the groups listed in ascending alphabetical order, which is the default, the preferred sorting will be Human Resources (  _SeniorityIndex_ = 100), Accounting Group (  _SeniorityIndex_ = 50), and then Administration Group (  _SeniorityIndex_ = 25). This example sets the  _SeniorityIndex_ parameter for the Human Resources group to 100. 
+9. Set the _SeniorityIndex_ parameter for groups in the HAB. For this example, the Corporate Office group contains three child groups: Human Resources, Accounting Group, and Administration Group. Instead of having the groups listed in ascending alphabetical order, which is the default, the preferred sorting will be Human Resources ( _SeniorityIndex_ = 100), Accounting Group ( _SeniorityIndex_ = 50), and then Administration Group ( _SeniorityIndex_ = 25). This example sets the _SeniorityIndex_ parameter for the Human Resources group to 100. 
     
   ```
   Set-Group -Identity "Human Resources" -SeniorityIndex 100
   ```
 
     > [!NOTE]
-    > The  _SeniorityIndex_ parameter is a numerical value used to sort groups or users in descending numerical order in a HAB. If the  _SeniorityIndex_ parameter isn't set or is equal for two or more users, the HAB sorting order uses the  _PhoneticDisplayName_ parameter value to list the users in ascending alphabetical order. If the  _PhoneticDisplayName_ value isn't set, the HAB sorting order defaults to the  _DisplayName_ parameter value and lists the users in ascending alphabetical order. 
+    > The _SeniorityIndex_ parameter is a numerical value used to sort groups or users in descending numerical order in a HAB. If the _SeniorityIndex_ parameter isn't set or is equal for two or more users, the HAB sorting order uses the _PhoneticDisplayName_ parameter value to list the users in ascending alphabetical order. If the _PhoneticDisplayName_ value isn't set, the HAB sorting order defaults to the _DisplayName_ parameter value and lists the users in ascending alphabetical order. 
   
-10. Set the  _SeniorityIndex_ parameter for users in the HAB groups. For this example, the Corporate Office group contains three users: Amy Alberts, David Hamilton, and Rajesh M. Patel. Instead of having the users listed in ascending alphabetical order by default, the preferred sorting will be David Hamilton (  _SeniorityIndex_ = 100), Rajesh M. Patel (  _SeniorityIndex_ = 50), and then Amy Alberts (  _SeniorityIndex_ = 25). This example sets the  _SeniorityIndex_ parameter for the user David Hamilton to 100. 
+10. Set the _SeniorityIndex_ parameter for users in the HAB groups. For this example, the Corporate Office group contains three users: Amy Alberts, David Hamilton, and Rajesh M. Patel. Instead of having the users listed in ascending alphabetical order by default, the preferred sorting will be David Hamilton ( _SeniorityIndex_ = 100), Rajesh M. Patel ( _SeniorityIndex_ = 50), and then Amy Alberts ( _SeniorityIndex_ = 25). This example sets the _SeniorityIndex_ parameter for the user David Hamilton to 100. 
     
   ```
   Set-User -Identity "DHamilton@contoso.com" -SeniorityIndex 100
@@ -140,7 +140,7 @@ After completing the preceding steps, the HAB will be visible in Outlook. To vie
 
 ![Hierarchical Address Book dialog](../../media/ITPro_Mailbox_HABDisplay.gif)
   
-After the HAB is created, you can use the EAC to manage the membership of the groups in the organizational hierarchy. However, you must use Exchange Online PowerShell to modify the  _SeniorityIndex_ parameter for any new groups or users. 
+After the HAB is created, you can use the EAC to manage the membership of the groups in the organizational hierarchy. However, you must use Exchange Online PowerShell to modify the _SeniorityIndex_ parameter for any new groups or users. 
   
 For detailed syntax and parameter information, see the following:
   
@@ -163,7 +163,7 @@ Set-OrganizationConfig -HierarchicalAddressBookRoot $null
 ```
 
 > [!NOTE]
-> This command doesn't delete the root organization or child groups used in the HAB structure or reset the  _SeniorityIndex_ values for groups or users. It only prevents the HAB from being displayed in Outlook. To enable the HAB with the same configuration settings again, you only need to enable the root organization again. 
+> This command doesn't delete the root organization or child groups used in the HAB structure or reset the _SeniorityIndex_ values for groups or users. It only prevents the HAB from being displayed in Outlook. To enable the HAB with the same configuration settings again, you only need to enable the root organization again. 
   
 For detailed syntax and parameter information, see [Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx).
   

@@ -18,7 +18,7 @@ Microsoft Exchange Server allows you to configure organization relationships wit
   
 ## Controlling the MailTips access level
 
-You may want to restrict certain types of MailTips. You can either allow all MailTips to be returned or allow only a limited set that would prevent NDRs. You can configure this setting with the  _MailTipsAccessLevel_ parameter on the **Set-OrganizationRelationship** cmdlet. The following table shows which MailTips are returned over the organization relationship. 
+You may want to restrict certain types of MailTips. You can either allow all MailTips to be returned or allow only a limited set that would prevent NDRs. You can configure this setting with the _MailTipsAccessLevel_ parameter on the **Set-OrganizationRelationship** cmdlet. The following table shows which MailTips are returned over the organization relationship. 
   
 |**MailTip**|**Is the MailTip available when the access level is set to All?**|**Is the MailTip available when the access level is set to Limited?**|
 |:-----|:-----|:-----|

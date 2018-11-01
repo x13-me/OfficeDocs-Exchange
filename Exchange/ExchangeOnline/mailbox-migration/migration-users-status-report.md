@@ -40,8 +40,8 @@ The name of the migration batch and the following commands are displayed at the 
   
 |**Command**|**Description**|
 |:-----|:-----|
-|**Delete**![Delete icon](media/6db76b65-d0bf-4071-b082-b899585b62ff.gif)|Delete the selected user from the list of migration users.|
-|**Refresh**![Refresh icon](media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif)|Refresh the list of migration users to update the information displayed for the users in the migration batch.|
+|**Delete** ![Delete icon](media/6db76b65-d0bf-4071-b082-b899585b62ff.gif)|Delete the selected user from the list of migration users.|
+|**Refresh** ![Refresh icon](media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif)|Refresh the list of migration users to update the information displayed for the users in the migration batch.|
    
 ### Columns in the list of migration users
 

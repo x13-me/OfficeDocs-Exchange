@@ -62,7 +62,7 @@ Set-Mailbox -Identity <MailboxIDParameter> -OfflineAddressBook <OfflineAddressBo
 ```
 
 > [!NOTE]
-> The  _Identity_ parameter identifies the mailbox and can take the following values: GUID, ADObjectID, distinguished name (DN),  _domain\account_, user principal name (UPN), LegacyExchangeDN, SmtpAddress, and alias. 
+> The _Identity_ parameter identifies the mailbox and can take the following values: GUID, ADObjectID, distinguished name (DN), _domain\account_, user principal name (UPN), LegacyExchangeDN, SmtpAddress, and alias. 
   
 This example specifies that the user Kim will download the OAB My OAB.
   

@@ -27,7 +27,7 @@ If your organization uses a hybrid Exchange environment, you should use the on-p
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "User mailboxes" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
   
-1. Go to **Recipients** \> **Shared** \> **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif).
+1. Go to **Recipients** \> **Shared** \> **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif).
     
 2. Fill-in the required fields:
     
@@ -35,7 +35,7 @@ You need to be assigned permissions before you can perform this procedure or pro
     
   - **Email address**
     
-3. To grant Full Access or Send As permissions, click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif), and then select the users you want to grant permissions to. You can use the CTRL key to select multiple users. Confused about which permission to use? See [Which permission should you use?](https://technet.microsoft.com/library/d34bc827-1e83-4a7f-a219-8ba9c19fe24b.aspx#TypesOfPerms) later in this topic. 
+3. To grant Full Access or Send As permissions, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif), and then select the users you want to grant permissions to. You can use the CTRL key to select multiple users. Confused about which permission to use? See [Which permission should you use?](https://technet.microsoft.com/library/d34bc827-1e83-4a7f-a219-8ba9c19fe24b.aspx#TypesOfPerms) later in this topic. 
     
     > [!NOTE]
     > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation. 
@@ -44,11 +44,11 @@ You need to be assigned permissions before you can perform this procedure or pro
     
 ### Use the EAC to edit shared mailbox delegation
 
-1. Go to **Recipients** \> **Shared** \> **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+1. Go to **Recipients** \> **Shared** \> **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
     
 2. Click **Mailbox delegation**
     
-3. To grant or remove Full Access and Send As permissions, click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif) or **Remove**![Remove icon](../media/ITPro_EAC_RemoveIcon.gif) and then select the users you want to grant permissions to. 
+3. To grant or remove Full Access and Send As permissions, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) or **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.gif) and then select the users you want to grant permissions to. 
     
     > [!NOTE]
     > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation. 
@@ -85,7 +85,7 @@ You can use the following permissions with a shared mailbox.
     
 - **Send As** The Send As permission lets a user impersonate the shared mailbox when sending mail. For example, if Kweku logs into the shared mailbox Marketing Department and sends an email, it will look like the Marketing Department sent the email. 
     
-- **Send on Behalf** The Send on Behalf permission lets a user send email on behalf of the shared mailbox. For example, if John logs into the shared mailbox Reception Building 32 and sends an email, it look like the mail was sent by "John on behalf of Reception Building 32". You can't use the EAC to grant Send on Behalf permissions, you must use **Set-Mailbox** cmdlet with the  _GrantSendonBehalf_ parameter. 
+- **Send on Behalf** The Send on Behalf permission lets a user send email on behalf of the shared mailbox. For example, if John logs into the shared mailbox Reception Building 32 and sends an email, it look like the mail was sent by "John on behalf of Reception Building 32". You can't use the EAC to grant Send on Behalf permissions, you must use **Set-Mailbox** cmdlet with the _GrantSendonBehalf_ parameter. 
     
 ## More information
 <a name="TypesOfPerms"> </a>

@@ -16,7 +16,7 @@ description: "The group naming policy for distribution groups is applied only to
 
 The group naming policy for distribution groups is applied only to groups created by users. When you or other administrators use the Exchange admin center (EAC) to create distribution groups, the group naming policy is ignored and not applied to the group name.
   
-However, if you use Exchange Online PowerShell to create or rename a distribution group, the group naming policy is applied to groups created by administrators unless you use the  _IgnoreNamingPolicy_ parameter to override the group naming policy. 
+However, if you use Exchange Online PowerShell to create or rename a distribution group, the group naming policy is applied to groups created by administrators unless you use the _IgnoreNamingPolicy_ parameter to override the group naming policy. 
   
 ## What do you need to know before you begin?
 
@@ -45,7 +45,7 @@ For example, if the group naming policy for your organization is DG_\<Group Name
 New-DistributionGroup -Name "All Administrators" -IgnoreNamingPolicy
 ```
 
-When Microsoft Exchange creates this group, it uses All Administrators for both the  _Name_ and  _DisplayName_ parameters. 
+When Microsoft Exchange creates this group, it uses All Administrators for both the _Name_ and _DisplayName_ parameters. 
   
 ### Use Exchange Online PowerShell to override the group naming policy when you rename a group
 
@@ -62,7 +62,7 @@ Set-DistributionGroup -Identity "Government_Contracts_NWRegion" -Name "Governmen
 ```
 
 > [!IMPORTANT]
-> Be sure to include the  _DisplayName_ parameter when you rename a group. If you don't, the old name is still displayed in the shared address book on the To:, Cc:, and From: lines in email messages. 
+> Be sure to include the _DisplayName_ parameter when you rename a group. If you don't, the old name is still displayed in the shared address book on the To:, Cc:, and From: lines in email messages. 
   
 ## How do you know this worked?
 

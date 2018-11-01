@@ -39,7 +39,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 ### Use Exchange Online PowerShell to add an address list to an OAB
 
-When using the  _AddressLists_ parameter, any address lists that currently exist will be overwritten. You must include existing address lists when you use the  _AddressLists_ parameter to continue to generate those address lists in your OAB. This example, in which you have AddressList1 and AddressList2, adds AddressList3. 
+When using the _AddressLists_ parameter, any address lists that currently exist will be overwritten. You must include existing address lists when you use the _AddressLists_ parameter to continue to generate those address lists in your OAB. This example, in which you have AddressList1 and AddressList2, adds AddressList3. 
   
 ```
 Set-OfflineAddressBook -Identity "My OAB" -AddressLists AddressList1,AddressList2,AddressList3

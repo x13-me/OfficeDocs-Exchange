@@ -63,8 +63,13 @@ Run the following command:
 Set-OrganizationConfig -PublicComputersDetectionEnabled $true
 ```
   
-> [!NOTE]
->  Setting this parameter to `$true` won't affect the settings for the following parameters: >  _ForceWacViewingFirstOnPublicComputers_>  _WSSAccessOnPublicComputersEnabled_>  _UNCAccessOnPublicComputersEnabled_
+**Note:**: Setting this parameter to `$true` won't affect the settings for the following parameters:
+
+- _ForceWacViewingFirstOnPublicComputers_
+
+- _WSSAccessOnPublicComputersEnabled_
+
+- _UNCAccessOnPublicComputersEnabled_
   
 ## Task 2 - Add and create claim rules in AD FS 2.0
 

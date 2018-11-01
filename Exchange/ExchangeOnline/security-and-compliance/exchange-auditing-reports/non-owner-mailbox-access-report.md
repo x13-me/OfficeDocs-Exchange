@@ -65,7 +65,7 @@ Run the following command to verify that you've successfully configured mailbox 
 Get-Mailbox | Format-List Name,AuditEnabled
 ```
 
-A value of `True` for the  _AuditEnabled_ property verifies that audit logging is enabled. 
+A value of `True` for the _AuditEnabled_ property verifies that audit logging is enabled. 
   
 ## Run a non-owner mailbox access report
 <a name="runreport"> </a>

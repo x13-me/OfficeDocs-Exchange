@@ -18,7 +18,7 @@ When you enable a user for UM and link them to a telephone extension dial plan, 
   
 You can remove the primary extension number that was added when the user was enabled for UM or a secondary extension number that was added later, along with the related EUM proxy addresses for the user. The primary extension number you added when the user was enabled for UM will be listed as the primary EUM proxy address. Any additional extension numbers you added will be listed as secondary EUM proxy addresses. When an extension number is removed, callers can no longer leave voice mail for the user at the extension number that was removed. 
   
-If you remove the primary extension number, UM won't be able to send voice mail to the user's mailbox and call answering rules won't be processed. After the primary extension number has been removed, the EUM proxy address for the user will be listed as **Null** on the user's mailbox in the EAC and when you run the **Get-Mailbox** cmdlet in Exchange Online PowerShell. Also, when you run the **Get-UMMailbox** cmdlet, the  _Extensions_,  _PhoneNumber_, and  _CallAnsweringRulesExtensions_ parameters will be blank or null. 
+If you remove the primary extension number, UM won't be able to send voice mail to the user's mailbox and call answering rules won't be processed. After the primary extension number has been removed, the EUM proxy address for the user will be listed as **Null** on the user's mailbox in the EAC and when you run the **Get-Mailbox** cmdlet in Exchange Online PowerShell. Also, when you run the **Get-UMMailbox** cmdlet, the _Extensions_, _PhoneNumber_, and _CallAnsweringRulesExtensions_ parameters will be blank or null. 
   
 You can use the EAC or Exchange Online PowerShell to remove a primary or a secondary extension number. You can use the **Email Address** page on the user's mailbox in the EAC to remove a primary or a secondary extension number. You can't use the **UM Mailbox** page in the EAC to remove a primary extension number, but you can use it to remove a secondary extension number. 
   
@@ -51,9 +51,9 @@ For additional management tasks related to users who are enabled for voice mail,
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
     
-2. In the list view, select the mailbox from which you want to remove an extension number, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the mailbox from which you want to remove an extension number, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
-3. On the **User Mailbox** page, under **Email address**, select the extension number that you want to remove from the list, and then click **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif). The primary EUM proxy address or extension number is listed in bold letters and numbers.
+3. On the **User Mailbox** page, under **Email address**, select the extension number that you want to remove from the list, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif). The primary EUM proxy address or extension number is listed in bold letters and numbers.
     
 4. Click **Save**.
     
@@ -65,7 +65,7 @@ For additional management tasks related to users who are enabled for voice mail,
     
 3. In the details pane, under **Phone and Voice Features** \> **Unified Messaging**, click **View details**.
     
-4. On the **Other extensions** page, in the **Extension number** box, select the extension number you want to remove, and then click **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+4. On the **Other extensions** page, in the **Extension number** box, select the extension number you want to remove, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
     
 5. Click **Save**.
     

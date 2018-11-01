@@ -45,7 +45,7 @@ Office 365 needs the name of the source email system, sometimes referred to as a
   
  **Get the name of your source email system using TE102821288**
   
-1. In Outlook Web App, on the toolbar click **Settings**![Office 365 Settings button](../media/a9a59c0f-2e67-4cbf-9438-af273b0d552b.png) \> **Options** \> **Mail** \> **Accounts** \> **POP and IMAP**. Below your account information, you'll see a link that says **Settings for POP and IMAP access**. Your IMAP server's name is listed under IMAP setting.
+1. In Outlook Web App, on the toolbar click **Settings** ![Office 365 Settings button](../media/a9a59c0f-2e67-4cbf-9438-af273b0d552b.png) \> **Options** \> **Mail** \> **Accounts** \> **POP and IMAP**. Below your account information, you'll see a link that says **Settings for POP and IMAP access**. Your IMAP server's name is listed under IMAP setting.
     
     ![Shows the link for POP or IMAP access settings](../media/fa54c636-4fd3-4fcd-add3-4e7c69072493.png)
   
@@ -197,11 +197,11 @@ To migrate email successfully, Office 365 needs to connect and communicate with 
   
 1. Go to the Exchange admin center.
     
-2. In the Exchange admin center, go to **Recipients** \> **Migration** \> **More**![More icon](../media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
+2. In the Exchange admin center, go to **Recipients** \> **Migration** \> **More** ![More icon](../media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
     
     ![Migration endpoint name](../media/8e97d6aa-4ccc-4b8d-b33c-bdb8109f03d9.png)
   
-3. Click **New**![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to create a new migration endpoint. 
+3. Click **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to create a new migration endpoint. 
     
 4. On the **Select the migration endpoint type** page, choose **IMAP**.
     
@@ -229,11 +229,11 @@ You use a migration batch to migrate groups of email to Office 365 mailboxes at 
   
 1. In the Exchange admin center, go to **Recipients** \> **Migration**.
     
-2. Click **New**![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
+2. Click **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
     
     ![Select Migrate to Exchange Online](../media/d5af665e-498d-4f18-8761-fc69897b389d.png)
   
-3. Choose **IMAP migration** \> ** Next **.
+3. Choose **IMAP migration** \> **Next**.
     
 4. On the **Select the users page**, click **Browse** to specify the migration file you created. After you select your migration file, Office 365 checks it to make sure of the following: 
     
@@ -259,11 +259,11 @@ You use a migration batch to migrate groups of email to Office 365 mailboxes at 
     
 8. On this page, select the migration endpoint that you created in [Step 3: Connect Office 365 to your email system](migrate-other-types-of-imap-mailboxes.md#ConnectO365).
     
-9. On the ** Move configuration ** page, type the *name*  (no spaces or special characters) of the migration batch, for example, Test5-migration, and then click **Next**. 
+9. On the **Move configuration** page, type the *name*  (no spaces or special characters) of the migration batch, for example, Test5-migration, and then click **Next**. 
     
     The default migration batch name that's displayed is the name of the migration file that you specified. The migration batch name is displayed in the list on the migration dashboard after you create the migration batch. 
     
-    You can also optionally enter the names of the folders you want to exclude from migrating, for example Shared, Junk Email, and Deleted. Click **New**![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to add them to the excluded list. You can also edit and remove them by using the edit icon ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to change a folder name and the remove icon ![Remove icon](../media/adf01106-cc79-475c-8673-065371c1897b.gif) to delete a folder name. 
+    You can also optionally enter the names of the folders you want to exclude from migrating, for example Shared, Junk Email, and Deleted. Click **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to add them to the excluded list. You can also edit and remove them by using the edit icon ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to change a folder name and the remove icon ![Remove icon](../media/adf01106-cc79-475c-8673-065371c1897b.gif) to delete a folder name. 
     
     > [!IMPORTANT]
     > If you're migrating email from Microsoft Exchange Server, we recommend that you exclude public folders from the migration. If you don't, the contents of the public folders are copied to the Office 365 mailbox of every user in the migration file. 

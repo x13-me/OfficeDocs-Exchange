@@ -44,7 +44,7 @@ In Step 2, you'll apply the Partner ID and SMTP address you acquired in Step 1 t
   
 ## Step 2: Set the Voice Mail Preview partner address and ID
 
-This example sets the Voice Mail Preview partner address to exumvmp@fabrikam.com and the Voice Mail Preview partner ID to CON123-2010 on a UM mailbox policy named  _MyUMMailboxPolicy_.
+This example sets the Voice Mail Preview partner address to exumvmp@fabrikam.com and the Voice Mail Preview partner ID to CON123-2010 on a UM mailbox policy named _MyUMMailboxPolicy_.
   
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -VoiceMailPreviewPartnerAddress exumvmp@fabrikam.com
@@ -55,11 +55,11 @@ Set-UMMailboxPolicy -identity MyUMMailboxPolicy -VoiceMailPreviewPartnerAddress 
 
 If the partner requires custom settings, you may want to set two additional parameters for a Voice Mail Preview partner as follows:
   
--  _VoiceMailPreviewPartnerMaxMessageDuration_
+- _VoiceMailPreviewPartnerMaxMessageDuration_
     
--  _VoiceMailPreviewPartnerMaxDeliveryDelay_
+- _VoiceMailPreviewPartnerMaxDeliveryDelay_
     
-This example sets the maximum message duration to 300 seconds (5 minutes) and the maximum delivery delay to 600 seconds (10 minutes) on a UM mailbox policy named  _MyUMMailboxPolicy_.
+This example sets the maximum message duration to 300 seconds (5 minutes) and the maximum delivery delay to 600 seconds (10 minutes) on a UM mailbox policy named _MyUMMailboxPolicy_.
   
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -VoiceMailPreviewPartnerMaxMessageDuration 300 -VoiceMailPreviewPartnerMaxDeliveryDelay 600

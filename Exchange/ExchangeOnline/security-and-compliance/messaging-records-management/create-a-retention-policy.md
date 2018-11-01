@@ -36,7 +36,7 @@ You need to be assigned permissions before you can perform this procedure or pro
   
  **Use the EAC to create a retention tag**
   
-1. Navigate to **Compliance management** \> **Retention tags**, and then click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif)
+1. Navigate to **Compliance management** \> **Retention tags**, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)
   
 2. Select one of the following options:
     
@@ -79,7 +79,7 @@ You need to be assigned permissions before you can perform this procedure or pro
     
  **Use Exchange Online PowerShell to create a retention tag**
   
-Use the **New-RetentionPolicyTag** cmdlet to create a retention tag. Different options available in the cmdlet allow you to create different types of retention tags. Use the  _Type_ parameter to create a DPT ( `All`), RPT (specify a default folder type, such as `Inbox`) or a personal tag ( `Personal`).
+Use the **New-RetentionPolicyTag** cmdlet to create a retention tag. Different options available in the cmdlet allow you to create different types of retention tags. Use the _Type_ parameter to create a DPT ( `All`), RPT (specify a default folder type, such as `Inbox`) or a personal tag ( `Personal`).
   
 This example creates a DPT to delete all messages in the mailbox after 7 years (2,556 days).
   
@@ -117,13 +117,13 @@ You need to be assigned permissions before you can perform this procedure or pro
   
  **Use the EAC to create a retention policy**
   
-1. Navigate to **Compliance management** \> **Retention policies**, and then click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif)
+1. Navigate to **Compliance management** \> **Retention policies**, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)
   
 2. In **New Retention Policy**, complete the following fields:
     
   - **Name** Enter a name for the retention policy. 
     
-  - **Retention tags** Click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to select the tags you want to add to this retention policy. 
+  - **Retention tags** Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to select the tags you want to add to this retention policy. 
     
     A retention policy can contain the following tags:
     
@@ -144,7 +144,7 @@ You need to be assigned permissions before you can perform this procedure or pro
     
  **Use Exchange Online PowerShell to create a retention policy**
   
-This example creates the retention policy RetentionPolicy-Corp and uses the  _RetentionPolicyTagLinks_ parameter to associate five tags to the policy. 
+This example creates the retention policy RetentionPolicy-Corp and uses the _RetentionPolicyTagLinks_ parameter to associate five tags to the policy. 
   
 ```
 New-RetentionPolicy "RetentionPolicy-Corp"  -RetentionPolicyTagLinks "DPT-Corp-Delete","DPT-Corp-Move","DPT-Corp-Voicemail","RPT-Corp-JunkMail","Never Delete"

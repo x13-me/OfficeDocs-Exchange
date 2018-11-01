@@ -143,7 +143,7 @@ To view the mailbox migration page:
   
 1. In Exchange Online, open Exchange admin center.
     
-2. Navigate to **Recipients**, and then select ** Migration **.
+2. Navigate to **Recipients**, and then select **Migration**.
     
 3. Select the migration request that was just created and then, on the **Details** pane, select **View Details**.
     

@@ -43,7 +43,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
     
 2. Choose **Setup** \> **Domains**.
     
-3. On the **Domains-** page, click ** Add domain ** to start the domain wizard. 
+3. On the **Domains-** page, click **Add domain** to start the domain wizard. 
     
     ![Choose Add domain](media/b0267b62-3f20-4c76-be75-40f9c2274433.png)
   

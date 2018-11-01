@@ -69,7 +69,7 @@ A custom non-business hours main menu prompt greeting is a list of options calle
   
 By default, when you create a UM auto attendant, the business and non-business hours greetings or prompts aren't configured and no menu navigation entries are defined for business or non-business hours main menu prompts. To correctly configure customized non-business hours main menu greetings and prompts, you must:
   
-1. Configure business and non-business hours on the ** Business hours ** page. 
+1. Configure business and non-business hours on the **Business hours** page. 
     
 2. Create the greeting file that will be used for the non-business hours welcome greeting.
     

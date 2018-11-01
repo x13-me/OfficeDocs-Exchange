@@ -39,13 +39,13 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 ### Use the EAC to manage a UM mailbox policy
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
-2. On the **UM dial plan** page, under **UM Mailbox Policies**, on the toolbar, click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. On the **UM dial plan** page, under **UM Mailbox Policies**, on the toolbar, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
   - Use **General** to view and configure settings for a UM mailbox policy. For example, you can view the dial plans associated with the UM mailbox policy or disable missed call notifications for users who are associated with a specific UM mailbox policy. When you modify the settings on a UM mailbox policy, the settings are applied to all users who are associated with the UM mailbox policy. You can view or configure the following: 
     
-  - ** UM dial plan ** Displays the name of the dial plan associated with the UM mailbox policy. This is the name of the dial plan displayed in Exchange Online PowerShell. 
+  - **UM dial plan** Displays the name of the dial plan associated with the UM mailbox policy. This is the name of the dial plan displayed in Exchange Online PowerShell. 
     
     When a new UM mailbox policy is created, it must be associated with a dial plan. After the UM mailbox policy is created and associated with a dial plan, the settings defined on the mailbox policy are applied to the users who are associated with the dial plan. By default, when you create a UM dial plan using Exchange Online PowerShell, it will also create a UM mailbox policy.
     

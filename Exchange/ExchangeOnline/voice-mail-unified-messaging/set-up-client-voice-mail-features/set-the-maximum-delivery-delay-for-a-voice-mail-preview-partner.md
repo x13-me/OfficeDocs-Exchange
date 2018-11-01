@@ -40,7 +40,7 @@ For additional management tasks related to voice mail preview, see [Voice Mail P
   
 ## Use Exchange Online PowerShell to set the maximum delivery delay for a Voice Mail Preview partner
 
-This example sets the maximum delivery delay to 600 seconds (10 minutes) on a UM mailbox policy named  _MyUMMailboxPolicy_.
+This example sets the maximum delivery delay to 600 seconds (10 minutes) on a UM mailbox policy named _MyUMMailboxPolicy_.
   
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy - VoiceMailPreviewPartnerMaxDeliveryDelay 600

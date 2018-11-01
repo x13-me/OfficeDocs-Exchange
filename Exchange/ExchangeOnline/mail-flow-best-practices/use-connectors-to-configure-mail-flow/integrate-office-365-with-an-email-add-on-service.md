@@ -66,7 +66,7 @@ The important settings for the connector are:
     
 ### Use the EAC to create the outbound connector to the email add-on service
 
-1. In the EAC, go to **Mail flow** \> **Connectors**, and then click **New**![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. In the EAC, go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
     ![In the Exchange admin center, click Mal flow \> Connectors to add a new connector.](../../media/6806c52b-5e5d-447c-91f7-c5fa4cd8b19d.png)
   
@@ -98,7 +98,7 @@ The important settings for the connector are:
     
     ![In the new connector wizard, select the option to only use the connector for messages redirected by a mail flow rule.](../../media/c02fc961-6227-4c23-ba54-9cce05e6689e.png)
   
-5. On the **How do you want to route email messages?** page, click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif). In the **Add smart host** dialog that appears, enter the smart host value for the email add-on service (for example, smtp.contososignatureservice.com), click **Save**, and then click **Next**.
+5. On the **How do you want to route email messages?** page, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). In the **Add smart host** dialog that appears, enter the smart host value for the email add-on service (for example, smtp.contososignatureservice.com), click **Save**, and then click **Next**.
     
     ![In the new connector wizard, enter the smart host destination for the connector.](../../media/d24e4a9f-bab4-4300-9a8c-c17432fedb5c.png)
   
@@ -118,7 +118,7 @@ The important settings for the connector are:
     
     ![In the new connector wizard, verify the settings.](../../media/58bf30f3-456b-4671-a9bf-cca682d7dfda.png)
   
-8. On the **Validate this connector** page, click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif). In the **Add email** dialog that appears, enter an email address that isn't in Office 365 to test the connector (for example, admin@fabrikam.com), click **OK**, and then click **Validate**.
+8. On the **Validate this connector** page, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). In the **Add email** dialog that appears, enter an email address that isn't in Office 365 to test the connector (for example, admin@fabrikam.com), click **OK**, and then click **Validate**.
     
     ![In the new connector wizard, enter an email address to validate the connector.](../../media/8bf14376-b2dd-4b7c-a379-4274fd042dae.png)
   
@@ -156,9 +156,9 @@ For detailed syntax and parameter information, see [New-OutboundConnector](https
 
 To verify that you've successfully created an outbound connector to route messages to the email add-on service, use either of these procedures:
   
-- In the EAC, go to **Mail flow** \> **Connectors**, select the connector, click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif), and verify the settings.
+- In the EAC, go to **Mail flow** \> **Connectors**, select the connector, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif), and verify the settings.
     
-- In Exchange Online PowerShell, replace  _\<Connector Name\>_ with the name of the connector, and run this command to verify the property values: 
+- In Exchange Online PowerShell, replace _\<Connector Name\>_ with the name of the connector, and run this command to verify the property values: 
     
   ```
   Get-OutboundConnector -Identity "<Connector Name>" | Format-List Name,ConnectorType,IsTransportRuleScoped,UseMxRecord,SmartHosts,TlsSettings,TlsDomain,CloudServicesMailEnabled
@@ -170,7 +170,7 @@ The rule routes messages from internal senders to the outbound connector that yo
   
 ### Use the EAC to create a mail flow rule to route unprocessed messages to the email add-on service
 
-1. In the EAC, go to **Mail flow** \> **Rules**, and click **New**![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then select **Create a new rule**.
+1. In the EAC, go to **Mail flow** \> **Rules**, and click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then select **Create a new rule**.
     
     ![In the Exchange admin center, click Mal flow \> Rules to add a new rule](../../media/568bbbf2-e69a-4d59-b7d4-b1af06655433.png)
   
@@ -190,7 +190,7 @@ The rule routes messages from internal senders to the outbound connector that yo
     
   - Click **Enter text**, enter the name of the custom header field that's applied by the email add-on service (for example, SignatureContoso), and then click **OK**.
     
-  -  Click **Enter words**, enter the header field value that indicates a message has been processed by the email add-on service (for example, true), click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then click **OK**.
+  -  Click **Enter words**, enter the header field value that indicates a message has been processed by the email add-on service (for example, true), click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then click **OK**.
     
   - Near the bottom of the page, select **Stop processing more rules**.
     
@@ -224,9 +224,9 @@ For detailed syntax and parameter information, see [New-TransportRule](https://t
 
 To verify that you've successfully created a mail flow rule to route unprocessed messages to the email add-on service, use either of these procedures:
   
-- In the EAC, go to **Mail flow** \> **Rules**, select the rule, click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif), and verify the settings of the rule.
+- In the EAC, go to **Mail flow** \> **Rules**, select the rule, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif), and verify the settings of the rule.
     
-- In Exchange Online PowerShell, replace  _\<Rule Name\>_ with the name of the rule, and run this command to verify the property values: 
+- In Exchange Online PowerShell, replace _\<Rule Name\>_ with the name of the rule, and run this command to verify the property values: 
     
   ```
   Get-TransportRule -Identity "<Rule Name>" | Format-List Name,FromScope,RouteMessageOutboundConnector,ExceptIfHeaderContainsMessageHeader,ExceptIfHeaderContainsWords,StopRuleProcessing
@@ -258,7 +258,7 @@ The important settings for the connector are:
     
 ### Use the EAC to create an inbound connector to receive messages from the email add-on service
 
-1. In the EAC, go to **Mail flow** \> **Connectors**, and then click **New**![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. In the EAC, go to **Mail flow** \> **Connectors**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
     ![In the Exchange admin center, click Mal flow \> Connectors to add a new connector.](../../media/6806c52b-5e5d-447c-91f7-c5fa4cd8b19d.png)
   
@@ -322,9 +322,9 @@ For detailed syntax and parameter information, see [New-InboundConnector](https:
 
 To verify that you've successfully created an inbound connector to receive messages from the email add-on service, use any of these procedures:
   
-- In the EAC, go to **Mail flow** \> **Connectors**, select the connector, click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif), and verify the settings.
+- In the EAC, go to **Mail flow** \> **Connectors**, select the connector, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif), and verify the settings.
     
-- In Exchange Online PowerShell, replace  _\<Connector Name\>_ with the name of the connector, and run this command to verify the property values: 
+- In Exchange Online PowerShell, replace _\<Connector Name\>_ with the name of the connector, and run this command to verify the property values: 
     
   ```
   Get-InboundConnector -Identity "<Connector Name>" | Format-List Name,SenderDomains,ConnectorType,RequireTls,RestrictDomainsToCertificate,TlsSenderCertificateName,CloudServicesMailEnabled

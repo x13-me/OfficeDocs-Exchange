@@ -52,7 +52,7 @@ The first step is to tell Office 365 that you own the domain or domains you'll b
   
 1. On the **Let's personalize your setup** page, choose **Yes, I need to copy data for my users** and then: 
     
-  - In the **What is your current email system?** box, choose ** IMAP (outlook.com, Hotmail, Gmail) **.
+  - In the **What is your current email system?** box, choose **IMAP (outlook.com, Hotmail, Gmail)**.
     
   -  In the **How many users do you have?** box, specify the number of users (less than 151). 
     

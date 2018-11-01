@@ -37,7 +37,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
     
-2. In the list view, select the UM dial plan you want to delete, and then click **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+2. In the list view, select the UM dial plan you want to delete, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
     
 3. On the warning page, click **Yes**.
     

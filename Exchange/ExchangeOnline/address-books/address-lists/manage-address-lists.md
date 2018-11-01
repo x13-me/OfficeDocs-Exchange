@@ -37,7 +37,7 @@ Looking for the Exchange Server version of this topic? See [Create an Address Li
 
 ### Create an address list
 
-This example creates the address list named Oregon and Washington Users by using the  _RecipientFilter_ parameter and includes recipients that are mailbox users and have **StateOrProvince** set to `Washington` or `Oregon`.
+This example creates the address list named Oregon and Washington Users by using the _RecipientFilter_ parameter and includes recipients that are mailbox users and have **StateOrProvince** set to `Washington` or `Oregon`.
   
 ```
 New-AddressList -Name "Oregon and Washington" -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}

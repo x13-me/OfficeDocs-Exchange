@@ -48,17 +48,17 @@ To create a certificate request in Microsoft Exchange Server 2007, use the [New-
     New-ExchangeCertificate -DomainName "owa.servername.contoso.com","mail.servername.contoso.com","autodiscover.servername.contoso.com","sts.servername,contoso.com","oos.servername.contoso.com","mail12.servername.contoso.com","edge.servername.contoso.com" -FriendlyName "Exchange 2007 Certificate" -GenerateRequest:$true -KeySize 2048 -Path "C:\certlocation" -PrivateKeyExportable $true -SubjectName "c=us, o=ContosoCorporation, cn=servername,contoso.com"
     ```
 
-    In the command example above,  _servername_ is the name of your server,  _contoso.com_ is an example of a domain name, and  _certlocation_ is a file path to the location where you want to store the request once it is generated. Replace all these placeholders with the information that appropriate for yourMicrosoft Exchange Server 2007. 
+    In the command example above, _servername_ is the name of your server, _contoso.com_ is an example of a domain name, and _certlocation_ is a file path to the location where you want to store the request once it is generated. Replace all these placeholders with the information that appropriate for yourMicrosoft Exchange Server 2007. 
     
-    In the  _DomainName_ parameter, add the domain names for the certificate request. For example, if you configured your internal and external URLs to be the same, the domain name for Outlook Web App (when accessed from the Internet) and Outlook Web App (when accessed from the intranet) should look like owa.  _servername_.contoso.com. 
+    In the _DomainName_ parameter, add the domain names for the certificate request. For example, if you configured your internal and external URLs to be the same, the domain name for Outlook Web App (when accessed from the Internet) and Outlook Web App (when accessed from the intranet) should look like owa. _servername_.contoso.com. 
     
     Use the _ SubjectName _ parameter to specify the Subject Name on the resulting certificate. This field is used by DNS-aware services and binds a certificate to a particular domain name. 
     
-    You must specify the  _GenerateRequest_ parameter as `$true`. Otherwise, you will create a self-signed certificate.
+    You must specify the _GenerateRequest_ parameter as `$true`. Otherwise, you will create a self-signed certificate.
     
-3. After you run the above command, a certificate request is saved in the file location you specified by using the  _Path_ parameter. 
+3. After you run the above command, a certificate request is saved in the file location you specified by using the _Path_ parameter. 
     
-    The **New-ExchangeCertificate** command also creates a  _Thumbprint_ output parameter that you use when you submit the request to a third-party certificate authority in the next step. 
+    The **New-ExchangeCertificate** command also creates a _Thumbprint_ output parameter that you use when you submit the request to a third-party certificate authority in the next step. 
     
 ## Submit the request to certificate authority
 <a name="BK_SR"> </a>
@@ -80,20 +80,21 @@ After you receive the certificate from the CA, use the [Import-ExchangeCertifica
     Import-ExchangeCertificate C:\filepath
     ```
 
-    The  _filepath_ parameter above specifies the location where you saved the certificate file that was provided by the third-party CA. 
+    The _filepath_ parameter above specifies the location where you saved the certificate file that was provided by the third-party CA. 
     
-    When you run this command, it creates a  _Thumbprint_ output parameter that you use to enable to certificate in the next step. 
+    When you run this command, it creates a _Thumbprint_ output parameter that you use to enable to certificate in the next step. 
     
  **To enable the certificate**
   
 1. To enable the certificate, you use the [Enable-ExchangeCertificate](https://go.microsoft.com/fwlink/p/?LinkId=615770) command. On the command line, type: 
     
     ```
-    Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services iis, smtp, pop, imap
+    Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services iis,smtp,pop,imap
     ```
-    The  _Thumbprint_ parameter specifies the one you received as output when you ran the ** Import-ExchangeCertificate ** command. 
+
+    The _Thumbprint_ parameter specifies the one you received as output when you ran the **Import-ExchangeCertificate** command. 
     
-    In the  _Services_ parameter, specify the services you want to assign to this certificate. At a minimum, you should specify SMTP and IIS. 
+    In the _Services_ parameter, specify the services you want to assign to this certificate. At a minimum, you should specify SMTP and IIS. 
     
 2. If you receive the warning **Overwrite the existing default SMTP certificate?**, type in `A` (yes for all). 
     

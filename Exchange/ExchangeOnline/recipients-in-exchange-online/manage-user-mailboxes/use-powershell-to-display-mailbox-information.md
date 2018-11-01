@@ -69,7 +69,7 @@ LitigationHoldOwner    :
 LitigationHoldDuration : Unlimited
 ```
 
-You can return information about multiple mailboxes by leaving out the  _Identity_ parameter. This example returns the **DisplayName** and **LitigationHoldEnabled** properties for all mailboxes: 
+You can return information about multiple mailboxes by leaving out the _Identity_ parameter. This example returns the **DisplayName** and **LitigationHoldEnabled** properties for all mailboxes: 
   
 ```
 Get-Mailbox -ResultSize unlimited | Format-Table -Auto DisplayName, LitigationHoldEnabled

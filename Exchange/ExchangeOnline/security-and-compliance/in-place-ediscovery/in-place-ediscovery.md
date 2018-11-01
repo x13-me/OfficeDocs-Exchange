@@ -67,7 +67,7 @@ Auditing of RBAC role changes, which is enabled by default, makes sure that adeq
 
 You can use a custom management scope to let specific people or groups use In-Place eDiscovery to search a subset of mailboxes in your Exchange Server or Exchange Online organization. For example, you might want to let a discovery manager search only the mailboxes of users in a specific location or department. You do this by creating a custom management scope that uses a custom recipient filter to control which mailboxes can be searched. Recipient filter scopes use filters to target specific recipients based on recipient type or other recipient properties.
   
-For In-Place eDiscovery, the only property on a user mailbox that you can use to create a recipient filter for a custom scope is distribution group membership. If you use other properties, such as  _CustomAttributeN_,  _Department_, or  _PostalCode_, the search fails when it's run by a member of the role group that's assigned the custom scope. For more information, see [Create a custom management scope for In-Place eDiscovery searches](create-custom-management-scope.md).
+For In-Place eDiscovery, the only property on a user mailbox that you can use to create a recipient filter for a custom scope is distribution group membership. If you use other properties, such as _CustomAttributeN_, _Department_, or _PostalCode_, the search fails when it's run by a member of the role group that's assigned the custom scope. For more information, see [Create a custom management scope for In-Place eDiscovery searches](create-custom-management-scope.md).
   
 ## Integration with SharePoint Server and SharePoint Online
 <a name="SP"> </a>
@@ -153,7 +153,7 @@ When creating an In-Place eDiscovery search, you must specify the following para
     
   - **Start and End dates** By default, In-Place eDiscovery doesn't limit searches by a date range. To search messages sent during a specific date range, you can narrow the search by specifying the start and end dates. If you don't specify an end date, the search will return the latest results every time you restart it. 
     
-  - **Senders and recipients** To narrow down the search, you can specify the senders or recipients of messages. You can use email addresses, display names, or the name of a domain to search for items sent to or from everyone in the domain. For example, to find email sent by or sent to anyone at Contoso, Ltd, specify **@contoso.com** in the **From** or the **To/cc** field in the EAC. You can also specify **@contoso.com** in the  _Senders_ or  _Recipients_ parameters in Exchange Online PowerShell. 
+  - **Senders and recipients** To narrow down the search, you can specify the senders or recipients of messages. You can use email addresses, display names, or the name of a domain to search for items sent to or from everyone in the domain. For example, to find email sent by or sent to anyone at Contoso, Ltd, specify **@contoso.com** in the **From** or the **To/cc** field in the EAC. You can also specify **@contoso.com** in the _Senders_ or _Recipients_ parameters in Exchange Online PowerShell. 
     
   - **Message types** By default, all message types are searched. You can restrict the search by selecting specific message types such as email, contacts, documents, journal, meetings, notes and Lync content. 
     
@@ -233,7 +233,7 @@ There are two types of logging available for In-Place eDiscovery searches:
   
 - **Basic logging** Basic logging is enabled by default for all In-Place eDiscovery searches. It includes information about the search and who performed it. Information captured about basic logging appears in the body of the email message sent to the mailbox where the search results are stored. The message is located in the folder created to store search results. 
     
-- **Full logging** Full logging includes information about all messages returned by the search. This information is provided in a comma-separated value (.csv) file attached to the email message that contains the basic logging information. The name of the search is used for the .csv file name. This information may be required for compliance or record-keeping purposes. To enable full logging, you must select the **Enable full logging** option when copying search results to a discovery mailbox in the EAC. If you're using Exchange Online PowerShell, specify the full logging option using the  _LogLevel_ parameter. 
+- **Full logging** Full logging includes information about all messages returned by the search. This information is provided in a comma-separated value (.csv) file attached to the email message that contains the basic logging information. The name of the search is used for the .csv file name. This information may be required for compliance or record-keeping purposes. To enable full logging, you must select the **Enable full logging** option when copying search results to a discovery mailbox in the EAC. If you're using Exchange Online PowerShell, specify the full logging option using the _LogLevel_ parameter. 
     
 > [!NOTE]
 > When using Exchange Online PowerShell to create or modify an In-Place eDiscovery search, you can also disable logging. 

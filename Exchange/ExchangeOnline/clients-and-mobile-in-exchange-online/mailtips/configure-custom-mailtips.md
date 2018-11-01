@@ -38,7 +38,7 @@ In addition to the built-in MailTips that are available, you can create custom M
     
   - HTML tags are automatically added to the text. For example, if you enter the text: `This mailbox is not monitored`, the MailTip automatically becomes: `<html><body>This mailbox is not monitored</body></html>`. Additional HTML tags in the MailTip aren't supported.
     
-  - The text is automatically added to the  _MailTipTranslations_ property of the recipient as the default value. If you modify the MailTip text, the default value is automatically updated in the  _MailTipTranslations_ property. 
+  - The text is automatically added to the _MailTipTranslations_ property of the recipient as the default value. If you modify the MailTip text, the default value is automatically updated in the _MailTipTranslations_ property. 
     
 - The length of a MailTip can't exceed 175 displayed characters.
     
@@ -67,7 +67,7 @@ In addition to the built-in MailTips that are available, you can create custom M
     
   - **Shared**
     
-3. On the recipient tab, select the recipient you want to modify, and click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. On the recipient tab, select the recipient you want to modify, and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 4. In the recipient properties page that appears, click **MailTips**.
     

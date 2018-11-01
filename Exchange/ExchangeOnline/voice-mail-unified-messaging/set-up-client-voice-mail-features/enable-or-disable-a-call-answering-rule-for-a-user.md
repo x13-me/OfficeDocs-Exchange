@@ -51,7 +51,7 @@ This example enables the call answering rule `MyUMCallAnsweringRule` in the mail
 Enable-UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith
 ```
 
-The example uses the  _WhatIf_ switch to test whether the call answering rule `MyUMCallAnsweringRule` in the mailbox for Tony Smith is ready to be enabled and if there are any errors within the command. 
+The example uses the _WhatIf_ switch to test whether the call answering rule `MyUMCallAnsweringRule` in the mailbox for Tony Smith is ready to be enabled and if there are any errors within the command. 
   
 ```
 Enable-UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith -WhatIf
@@ -73,7 +73,7 @@ This example disables the call answering rule `MyUMCallAnsweringRule` in the mai
 Disable -UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith
 ```
 
-This example uses the  _WhatIf_ switch to test whether the call answering rule `MyUMCallAnsweringRule` in the mailbox for Tony Smith is ready to be disabled and if there are any errors within the command. 
+This example uses the _WhatIf_ switch to test whether the call answering rule `MyUMCallAnsweringRule` in the mailbox for Tony Smith is ready to be disabled and if there are any errors within the command. 
   
 ```
 Disable -UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith -WhatIf

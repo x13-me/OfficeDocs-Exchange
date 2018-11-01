@@ -42,7 +42,7 @@ Set-GlobalAddressList -Identity 96d0c505-eba8-4103-ad4f-577a1bf4ad7b -Name Fourt
 ```
 
 > [!NOTE]
-> If you're using precanned conditional filter properties, the value for the  _IncludedRecipients_ parameter can't be blank. 
+> If you're using precanned conditional filter properties, the value for the _IncludedRecipients_ parameter can't be blank. 
   
 This example changes the recipients who will be included in the Fourth Coffee global GAL to those whose company is set to Fourth Coffee.
   

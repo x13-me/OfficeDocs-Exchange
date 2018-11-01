@@ -39,11 +39,11 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
 ### Use the EAC to specify a holiday schedule for a UM auto attendant
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then on the toolbar, click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then on the toolbar, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
-2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to set the holiday schedule. On the toolbar, click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant for which you want to set the holiday schedule. On the toolbar, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
-3. On the **UM Auto Attendant** page \> **Business Hours**, under **Holiday schedule**, click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. On the **UM Auto Attendant** page \> **Business Hours**, under **Holiday schedule**, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
 4. On the **New Holiday** page, configure the following: 
     
@@ -51,7 +51,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
     
   - **Holiday greeting** Browse to the .wav file you want to use as your greeting. This is a required field. 
     
-  - ** Start date ** Use this list to select the date you want the holiday to start. The holiday schedule will start at midnight on the date specified in this list. 
+  - **Start date** Use this list to select the date you want the holiday to start. The holiday schedule will start at midnight on the date specified in this list. 
     
   - **End date** Use this list to select the date you want the holiday to end. The holiday schedule will end at 11:59 P.M. on the date specified in this list. 
     

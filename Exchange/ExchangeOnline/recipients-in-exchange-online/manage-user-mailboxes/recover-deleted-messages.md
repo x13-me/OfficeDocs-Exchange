@@ -94,7 +94,7 @@ Search-Mailbox "April Stewart" -SearchQuery "from:'Ken Kwok' AND seattle" -Targe
 ```
 
 > [!NOTE]
-> When using the **Search-Mailbox** cmdlet, you can scope the search by using the  _SearchQuery_ parameter to specify a query formatted using Keyword Query Language (KQL). You can also use the  _SearchDumpsterOnly_ switch to search only items in the Recoverable Items folder. 
+> When using the **Search-Mailbox** cmdlet, you can scope the search by using the _SearchQuery_ parameter to specify a query formatted using Keyword Query Language (KQL). You can also use the _SearchDumpsterOnly_ switch to search only items in the Recoverable Items folder. 
   
 For detailed syntax and parameter information, see [Search-Mailbox](https://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
   

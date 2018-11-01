@@ -45,7 +45,7 @@ This example converts the shared mailbox, MarketingDept1 to a user mailbox.
 Set-Mailbox MarketingDept1 -Type Regular
 ```
 
-You can use the following values for the  _Type_ parameter: 
+You can use the following values for the _Type_ parameter: 
   
 - Regular
     
@@ -65,7 +65,7 @@ To verify that you have successfully converted the mailbox, run the following Sh
 Get-Mailbox -Identity MarketingDept1 | Format-List RecipientTypeDetails
 ```
 
-The value for  _RecipientTypeDetails_ should be  _UserMailbox_.
+The value for _RecipientTypeDetails_ should be _UserMailbox_.
   
 For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
   

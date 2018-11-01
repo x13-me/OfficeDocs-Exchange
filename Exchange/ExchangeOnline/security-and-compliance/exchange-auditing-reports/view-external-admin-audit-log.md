@@ -61,7 +61,7 @@ Estimated time to complete: 3 minutes
 
 Estimated time to complete: 3 minutes
   
-You can use the **Search-AdminAuditLog** cmdlet with the  _ExternalAccess_ parameter to view entries from the administrator audit log for actions performed by Microsoft datacenter administrators and delegated administrators. 
+You can use the **Search-AdminAuditLog** cmdlet with the _ExternalAccess_ parameter to view entries from the administrator audit log for actions performed by Microsoft datacenter administrators and delegated administrators. 
   
 This command returns all entries in the administrator audit log for cmdlets run by external administrators.
   
@@ -81,7 +81,7 @@ For more information, see [Search-AdminAuditLog](https://technet.microsoft.com/l
 
 Estimated time to complete: Approximately 24 hours
   
-You can use the **New-AdminAuditLogSearch** cmdlet with the  _ExternalAccess_ parameter to export entries from the administrator audit log for actions performed by Microsoft datacenter administrators or delegated administrators. Microsoft Exchange retrieves entries in the administrator audit log that were performed by external administrators and saves them to a file named SearchResult.xml. This XML file is attached to an email message that is sent to the specified recipients within 24 hours. 
+You can use the **New-AdminAuditLogSearch** cmdlet with the _ExternalAccess_ parameter to export entries from the administrator audit log for actions performed by Microsoft datacenter administrators or delegated administrators. Microsoft Exchange retrieves entries in the administrator audit log that were performed by external administrators and saves them to a file named SearchResult.xml. This XML file is attached to an email message that is sent to the specified recipients within 24 hours. 
   
 The following command returns entries in the administrator audit log for cmdlets run by external administrators between September 25, 2013 and October 24, 2013. The search results are sent to the admin@contoso.com and pilarp@contoso.com SMTP addresses and the text "External admin audit log" is added to the subject line of the message.
   
@@ -90,7 +90,7 @@ New-AdminAuditLogSearch -ExternalAccess $true -EndDate 10/24/2013 -StartDate 07/
 ```
 
 > [!NOTE]
-> When you include the  _ExternalAccess_ parameter, only entries for actions performed by Microsoft datacenter administrator or delegated administrators are included in the audit log that is exported. If you don't include the  _ExternalAccess_ parameter, the audit log will contain entries for actions performed by the administrators in your organization and by external administrators. 
+> When you include the _ExternalAccess_ parameter, only entries for actions performed by Microsoft datacenter administrator or delegated administrators are included in the audit log that is exported. If you don't include the _ExternalAccess_ parameter, the audit log will contain entries for actions performed by the administrators in your organization and by external administrators. 
   
 To verify that the command to export the admin audit log entries performed by external administrators was successful, and to display information about current administrator audit log searches, run the following command:
   
@@ -100,7 +100,7 @@ Get-AuditLogSearch | Format-List
 
 ## More information
 
-- In Office 365, you can delegate the ability to perform certain administrative tasks to an authorized partner of Microsoft. These admin tasks include creating or editing users, resetting user passwords, managing user licenses, managing domains, and assigning admin permissions to other users in your organization. When you authorize a partner to take on this role, the partner is referred to as a delegated admin. The tasks performed by a delegated admin are logged in the admin audit log. As previously described, actions performed by delegated admins can be viewed by running the external admin audit log report or exported by using the **New-AdminAuditLogSearch** cmdlet with the  _ExternalAccess_ parameter. 
+- In Office 365, you can delegate the ability to perform certain administrative tasks to an authorized partner of Microsoft. These admin tasks include creating or editing users, resetting user passwords, managing user licenses, managing domains, and assigning admin permissions to other users in your organization. When you authorize a partner to take on this role, the partner is referred to as a delegated admin. The tasks performed by a delegated admin are logged in the admin audit log. As previously described, actions performed by delegated admins can be viewed by running the external admin audit log report or exported by using the **New-AdminAuditLogSearch** cmdlet with the _ExternalAccess_ parameter. 
     
 - The administrator audit log records specific actions, based on Exchange Online PowerShell cmdlets, performed by administrators and users who have been assigned administrative privileges. Actions performed by external administrators are also logged. Entries in the admin audit log provide you with information about the cmdlet that was run, which parameters were used, and what objects were affected.
     

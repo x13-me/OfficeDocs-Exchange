@@ -46,7 +46,7 @@ Here's what you'll see when a rule is matched if you include the incident report
     
 2. Select **Generate incident report and send it to**.
     
-3. Click **Select one…** and select yourself or someone else. 
+3. Click **Select one...** and select yourself or someone else. 
     
 4. Select **Include message properties**, and then select any message properties that you want included in the email you receive. If you don't select any, you will still get an email when the rule is matched.
     

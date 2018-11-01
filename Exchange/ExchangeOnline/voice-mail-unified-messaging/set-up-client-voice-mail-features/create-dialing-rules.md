@@ -55,11 +55,11 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
   
 ## Use the EAC to create a dialing rule
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif). 
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif). 
     
 2. On the **UM Dial Plan** page, click **Configure**.
     
-3. On the **UM Dial Plan** page \> **Dialing rules**, click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif) under **In-country/region dialing rules** or **International dialing rules**.
+3. On the **UM Dial Plan** page \> **Dialing rules**, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) under **In-country/region dialing rules** or **International dialing rules**.
     
 4. On the **New Dialing Rule** page, enter the following information: 
     
@@ -67,9 +67,9 @@ For other management tasks for outdialing, see [Allowing users to make calls pro
     
   - **Number pattern to transform (number mask)** Enter the number pattern to transform before dialing, for example, 91425xxxxxxx. If a caller dials a number that matches, UM transforms it to the dialed number before placing the call. Enter only numbers and the wildcard (x). The number pattern is also called a number mask.
     
-  - **Dialed number ** Enter the number to dial. Use only numbers and the wildcard (x), as in the number pattern 9xxxxxxx. Wildcards (x) are substituted with the digits from the original number dialed by the user. Make sure the number of wildcards in the dialed number is the same as the number of wildcards in the number pattern. 
+  - **Dialed number** Enter the number to dial. Use only numbers and the wildcard (x), as in the number pattern 9xxxxxxx. Wildcards (x) are substituted with the digits from the original number dialed by the user. Make sure the number of wildcards in the dialed number is the same as the number of wildcards in the number pattern. 
     
-  - **Comment ** Enter a comment or description for this dialing rule. You can use the comment to describe what the rule does, for example, "Add a 9 to outgoing calls." 
+  - **Comment** Enter a comment or description for this dialing rule. You can use the comment to describe what the rule does, for example, "Add a 9 to outgoing calls." 
     
 5. Click **OK** to save the dialing rule. You can continue to enter rules, using the same dialing rule group name for rules that you want to authorize together. 
     

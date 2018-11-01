@@ -66,7 +66,7 @@ To add a new shared mailbox, [Use a screen reader to open the Exchange admin cen
     
 8. To select the users who can view and send mail from this new shared mailbox, tab to and select the **Add** button. 
     
-9. When the ** Select Shared Mailbox Users ** dialog box opens, the **Search** box has the focus. You hear "Filter or search edit." Type all or part of the name of the first user you want to add to the shared mailbox and then, to search for the name, press Enter. 
+9. When the **Select Shared Mailbox Users** dialog box opens, the **Search** box has the focus. You hear "Filter or search edit." Type all or part of the name of the first user you want to add to the shared mailbox and then, to search for the name, press Enter. 
     
 10. Press the Tab key four times until you hear the name of the user in the search results list. The name is selected.
     

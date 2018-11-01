@@ -59,9 +59,9 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://technet
   
 ## How do you know this worked?
 
-To verify that you have successfully placed a mailbox on retention hold, use the [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) cmdlet to retrieve the  _RetentionHoldEnabled_ property of the mailbox. 
+To verify that you have successfully placed a mailbox on retention hold, use the [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) cmdlet to retrieve the _RetentionHoldEnabled_ property of the mailbox. 
   
-This command retrieves the  _RetentionHoldEnabled_ property for Michael Allen's mailbox. 
+This command retrieves the _RetentionHoldEnabled_ property for Michael Allen's mailbox. 
   
 ```
 Get-Mailbox "Michael Allen" | Select RetentionHoldEnabled
@@ -70,7 +70,7 @@ Get-Mailbox "Michael Allen" | Select RetentionHoldEnabled
 This command retrieves all mailboxes in the Exchange organization, filters the mailboxes that are placed on retention hold, and lists them along with the retention policy applied to each.
   
 > [!IMPORTANT]
-> Because  _RetentionHoldEnabled_ isn't a filterable property in Exchange Server, you can't use the  _Filter_ parameter with the **Get-Mailbox** cmdlet to filter mailboxes that are placed on retention hold on the server-side. This command retrieves a list of all mailboxes and filters on the client running Exchange Online PowerShell session. In large environments with thousands of mailboxes, this command may take a long time to complete. 
+> Because _RetentionHoldEnabled_ isn't a filterable property in Exchange Server, you can't use the _Filter_ parameter with the **Get-Mailbox** cmdlet to filter mailboxes that are placed on retention hold on the server-side. This command retrieves a list of all mailboxes and filters on the client running Exchange Online PowerShell session. In large environments with thousands of mailboxes, this command may take a long time to complete. 
   
 ```
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.RetentionHoldEnabled -eq $true} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto

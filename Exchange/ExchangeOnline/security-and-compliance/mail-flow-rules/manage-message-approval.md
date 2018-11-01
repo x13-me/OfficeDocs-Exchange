@@ -83,7 +83,7 @@ You can send a message to a group of recipients where only a subset of the recip
   
  **What if my distribution group contains moderated recipients that require approval?**
   
-A distribution group can include moderated recipients that also require approval. In this case, after the message to the distribution group is approved, a separate approval process occurs for each moderated recipient that's a member of the distribution group. However, you can also enable the automatic approval of the distribution group members after the message to the moderated distribution group is approved. To do this, you use the  _BypassNestedModerationEnabled_ parameter on the [Set-DistributionGroup](https://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx) cmdlet. 
+A distribution group can include moderated recipients that also require approval. In this case, after the message to the distribution group is approved, a separate approval process occurs for each moderated recipient that's a member of the distribution group. However, you can also enable the automatic approval of the distribution group members after the message to the moderated distribution group is approved. To do this, you use the _BypassNestedModerationEnabled_ parameter on the [Set-DistributionGroup](https://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx) cmdlet. 
   
  **Is this process different if we have our own Exchange servers?**
   

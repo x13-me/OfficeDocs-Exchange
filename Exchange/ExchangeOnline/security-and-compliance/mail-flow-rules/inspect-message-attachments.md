@@ -49,7 +49,7 @@ In order to start using these conditions when inspecting messages, you need to a
 |:-----|:-----|:-----|
 |**Any attachment's content includes** <br/> **Any attachment** \> **content includes any of these words**|_AttachmentContainsWords_|This condition matches messages with supported file type attachments that contain a specified string or group of characters.|
 |**Any attachment's content matches** <br/> **Any attachment** \> **content matches these text patterns**|_AttachmentMatchesPatterns_|This condition matches messages with supported file type attachments that contain a text pattern that matches a specified regular expression.|
-|**Any attachment's content can't be inspected** <br/> **Any attachment** \> **content can't be inspected**|_AttachmentIsUnsupported_|Mail flow rules only can inspect the content of supported file types. If the mail flow rule encounters an attachment that isn't supported, the  _AttachmentIsUnsupported_ condition is triggered. The supported file types are described in the next section.|
+|**Any attachment's content can't be inspected** <br/> **Any attachment** \> **content can't be inspected**|_AttachmentIsUnsupported_|Mail flow rules only can inspect the content of supported file types. If the mail flow rule encounters an attachment that isn't supported, the _AttachmentIsUnsupported_ condition is triggered. The supported file types are described in the next section.|
    
  **Notes**:
   

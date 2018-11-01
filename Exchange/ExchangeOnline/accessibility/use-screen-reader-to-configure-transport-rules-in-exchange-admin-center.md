@@ -75,7 +75,7 @@ Search, Refresh , and More  buttons Display Name  and Email Address  column head
 Edit  and Remove  buttons 	Text box in which you type words, and an Add  button to add each entry 	List of entries OK  and Cancel  buttons |
 |[Apply to all messages]|No pop-up window opens|
    
-7. After you've accepted your condition settings in the appropriate pop-up window, move to the next option in the ** new rule ** pop-up window by pressing the Tab key. 
+7. After you've accepted your condition settings in the appropriate pop-up window, move to the next option in the **new rule** pop-up window by pressing the Tab key. 
     
 8. As the focus moves to the **Do the following** drop-down box, you hear "Do the following, Combo box." Press the Down Arrow or Up Arrow key until you hear the action you want to select. Press Enter. As the focus moves to the first UI element in the pop-up window that opens for the selected action, you hear the name of the pop-up window followed by the name of the first UI element in the window. The following table gives you an overview of the UI elements in each action's pop-up window. 
     
@@ -96,7 +96,7 @@ Text box in which you type the explanation OK  and Cancel  buttons |
     
   - If you selected the **Audit this rule with severity level** check box, when you press the Tab key, the focus moves to a drop-down box that lists severity levels ( **Low**, **Medium**, or **High** ). To move between severity levels in the list, press the Up Arrow or Down Arrow key. You hear the name of each severity level. To select a severity level, press Enter. To move to the next option in the window, press the Tab key. 
     
-  - If you didn't select the ** Audit this rule with severity level ** check box, to move to the next available option in the window, press the Tab key. 
+  - If you didn't select the **Audit this rule with severity level** check box, to move to the next available option in the window, press the Tab key. 
     
 11. As the focus moves to the first of three available modes for the rule, you hear the name of the first mode ( **Enforce** ) followed by "Radio button." Do any of the following three actions: 
     
@@ -130,7 +130,7 @@ Text box in which you type the explanation OK  and Cancel  buttons |
     
 13. To save the new rule, move the focus to the **Save** button by pressing the Tab key until you hear "Save button." Press Enter. 
     
-14. As the focus moves back to the **New** button on the ** rules ** content area of the page, you hear "Rules, New button." The new rule is turned on by default. 
+14. As the focus moves back to the **New** button on the **rules** content area of the page, you hear "Rules, New button." The new rule is turned on by default. 
     
     > [!TIP]
     > To turn off a new rule, press the Tab key to tab through the elements of the **rules** content area of the page, use the Up Arrow and Down Arrow keys to select a rule, and then press Spacebar. To hear the settings for a selected rule, press the Tab key until the focus moves to the details pane for the selected rule, and you hear the details for the rule. 

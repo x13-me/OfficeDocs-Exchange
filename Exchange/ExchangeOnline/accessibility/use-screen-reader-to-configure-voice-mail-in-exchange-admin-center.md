@@ -79,7 +79,7 @@ After you've configured your UM dial plan, you can enable voice features for ind
     
 10. If there is more than one UM mailbox policy, to select the one you want to apply to the current mailbox, tab to the list of policy names and press the Down Arrow or the Up Arrow key. 
     
-11. Press Enter. The focus returns to the ** Enable UM Mailbox ** dialog box, which shows the selected policy in the ** UM mailbox policy ** text box. 
+11. Press Enter. The focus returns to the **Enable UM Mailbox** dialog box, which shows the selected policy in the **UM mailbox policy** text box. 
     
     > [!TIP]
     > Depending on the UM dial plan reflected in your selected UM mailbox policy, some of the options in the following steps might be different. 

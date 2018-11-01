@@ -43,7 +43,7 @@ An In-Place Hold preserves all mailbox content, including deleted items and orig
   
 1. Navigate to **Compliance management** \> **In-place eDiscovery & hold**.
     
-2. Click **New**![Add Icon](../media/ITPro_EAC_AddIcon.gif).
+2. Click **New** ![Add Icon](../media/ITPro_EAC_AddIcon.gif).
     
 3. In **In-Place eDiscovery & Hold**, on the **Name and description** page, type a name for the search and an optional description, and then click **Next**.
     
@@ -55,7 +55,7 @@ An In-Place Hold preserves all mailbox content, including deleted items and orig
     
 2. **Don't search any mailboxes** Select this option when you're creating an In-Place Hold exclusively for public folders. 
     
-3. **Specify mailboxes to search** Select this option and then click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif) to select the mailboxes or distribution groups that you want to place on hold. In Exchange Online, you can also select Office 365 groups to place on hold. 
+3. **Specify mailboxes to search** Select this option and then click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) to select the mailboxes or distribution groups that you want to place on hold. In Exchange Online, you can also select Office 365 groups to place on hold. 
     
 4. **Search all public folders** In Exchange Online, you can select this checkbox to place all public folders in your organization on hold. As previously explained, to create an In-Place Hold only for public folders, be sure to select the **Don't search any mailboxes** option. 
     
@@ -79,7 +79,7 @@ An In-Place Hold preserves all mailbox content, including deleted items and orig
 This example creates an In-Place Hold named Hold-CaseId012 and adds the mailbox joe@contoso.com to the hold.
   
 > [!IMPORTANT]
-> If you don't specify additional search parameters for an In-Place Hold, all items in the specified source mailboxes are placed on hold. If you don't specify the  _ItemHoldPeriod_ parameter, items are placed on hold indefinitely or until the mailbox is either removed from hold or the hold is deleted. 
+> If you don't specify additional search parameters for an In-Place Hold, all items in the specified source mailboxes are placed on hold. If you don't specify the _ItemHoldPeriod_ parameter, items are placed on hold indefinitely or until the mailbox is either removed from hold or the hold is deleted. 
   
 ```
 New-MailboxSearch "Hold-CaseId012"-SourceMailboxes "joe@contoso.com" -InPlaceHoldEnabled $true
@@ -100,17 +100,17 @@ To verify that you have successfully created the In-Place Hold, do one of the fo
 ## Remove an In-Place Hold
 
 > [!IMPORTANT]
-> In Exchange Server, mailbox searches can be used for an In-Place Hold and In-Place eDiscovery. You can't remove a mailbox search that's used for In-Place Hold. You must first disable the In-Place Hold by clearing the **Place content matching the search query in selected mailboxes on hold** check box on the **In-Place Hold settings** page or by setting the  _InPlaceHoldEnabled_ parameter to `$false` in Exchange Online PowerShell. You can also remove a mailbox by using the  _SourceMailboxes_ parameter specified in the search. 
+> In Exchange Server, mailbox searches can be used for an In-Place Hold and In-Place eDiscovery. You can't remove a mailbox search that's used for In-Place Hold. You must first disable the In-Place Hold by clearing the **Place content matching the search query in selected mailboxes on hold** check box on the **In-Place Hold settings** page or by setting the _InPlaceHoldEnabled_ parameter to `$false` in Exchange Online PowerShell. You can also remove a mailbox by using the _SourceMailboxes_ parameter specified in the search. 
   
  **Use the EAC to remove an In-Place Hold**
   
 1. Navigate to **Compliance management** \> **In-Place eDiscovery & hold**.
     
-2. In the list view, select the In-Place Hold you want to remove and then click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the In-Place Hold you want to remove and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
     
 3. In **In-Place eDiscovery & Hold** properties, on the **In-Place Hold** page, clear the **Place content matching the search query in selected mailboxes on hold**, and then click **Save**.
     
-4. Select the In-Place Hold again from the list view, and then click **Delete**![Delete icon](../media/ITPro_EAC_DeleteIcon.gif).
+4. Select the In-Place Hold again from the list view, and then click **Delete** ![Delete icon](../media/ITPro_EAC_DeleteIcon.gif).
     
 5. In warning, click **Yes** to remove the search. 
     

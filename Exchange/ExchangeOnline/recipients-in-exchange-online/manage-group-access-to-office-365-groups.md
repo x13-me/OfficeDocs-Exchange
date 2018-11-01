@@ -36,57 +36,57 @@ Or, let's say you want to block personal email address domains. You can set up a
   
 1. Open Windows PowerShell as an administrator:
     
-1. In your search bar, type Windows PowerShell.
+  1. In your search bar, type Windows PowerShell.
     
-2. Right-click on Windows PowerShell and select **Run as Administrator**.
+  2. Right-click on Windows PowerShell and select **Run as Administrator**.
     
     The Windows PowerShell window will pop open. The prompt C:\Windows\system32 means you opened it as an administrator.
     
 2. Run this command to see if you have any versions of the Azure Active Directory Module for Windows PowerShell installed on your computer:
     
-  ```
-  Get-Module -ListAvailable AzureAD*
-  ```
+    ```
+    Get-Module -ListAvailable AzureAD*
+    ```
 
   - If no results are returned, run this command to install the latest version of the **AzureADPreview** module: 
     
-  ```
-  Install-Module AzureADPreview
-  ```
+    ```
+    Install-Module AzureADPreview
+    ```
 
   - If *only*  the **AzureAD** module is shown in the results, run these commands to install the **AzureADPreview** module: 
     
-  ```
-  Uninstall-Module AzureAD
-  ```
+    ```
+    Uninstall-Module AzureAD
+    ```
 
-  ```
-  Install-Module AzureADPreview
-  ```
+    ```
+    Install-Module AzureADPreview
+    ```
 
   - If *only*  the **AzureADPreview** module is shown in the results, but the version is less than **2.0.0.98**, run these commands to update it: 
     
-  ```
-  Uninstall-Module AzureADPreview
-  ```
+    ```
+    Uninstall-Module AzureADPreview
+    ```
 
-  ```
-  Install-Module AzureADPreview
-  ```
+    ```
+    Install-Module AzureADPreview
+    ```
 
-  - If both the **AzureAD** *and* ** AzureADPreview ** modules are shown in the results, but the version of the **AzureADPreview** module is less than **2.0.0.98**, run these commands to update it: 
+  - If both the **AzureAD** *and* **AzureADPreview** modules are shown in the results, but the version of the **AzureADPreview** module is less than **2.0.0.98**, run these commands to update it: 
     
-  ```
-  Uninstall-Module AzureAD
-  ```
+    ```
+    Uninstall-Module AzureAD
+    ```
 
-  ```
-  Uninstall-Module AzureADPreview
-  ```
+    ```
+    Uninstall-Module AzureADPreview
+    ```
 
-  ```
-  Install-Module AzureADPreview
-  ```
+    ```
+    Install-Module AzureADPreview
+    ```
 
 ## Create a new Allow or Block list policy
 
@@ -105,11 +105,10 @@ Or, let's say you want to block personal email address domains. You can set up a
     OR
     
   ```
-  		Set-GuestAllowBlockDomainPolicy.ps1 -Update -BlockList @("contoso.com", "fabrikam.com")
-  
+  Set-GuestAllowBlockDomainPolicy.ps1 -Update -BlockList @("contoso.com", "fabrikam.com")
   ```
 
-    Remember, you can create only one policy. You'll get an error if you try to create another one. 
+  Remember, you can create only one policy. You'll get an error if you try to create another one. 
     
 ## Replace the existing policy with a new list of domains
 

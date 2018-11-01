@@ -50,9 +50,9 @@ Public folder architecture uses specially designed mailboxes to store both the p
 
 There are two types of public folder mailboxes: the primary hierarchy mailbox and secondary hierarchy mailboxes. Both types of mailboxes can contain content: 
   
-- **Primary hierarchy mailbox ** The primary hierarchy mailbox is the one writable copy of the public folder hierarchy. The public folder hierarchy is copied to all other public folder mailboxes, but these will be read-only copies. 
+- **Primary hierarchy mailbox** The primary hierarchy mailbox is the one writable copy of the public folder hierarchy. The public folder hierarchy is copied to all other public folder mailboxes, but these will be read-only copies. 
     
-- **Secondary hierarchy mailboxes ** Secondary hierarchy mailboxes contain public folder content as well and a read-only copy of the public folder hierarchy. 
+- **Secondary hierarchy mailboxes** Secondary hierarchy mailboxes contain public folder content as well and a read-only copy of the public folder hierarchy. 
     
 There are two ways you can manage public folder mailboxes:
   
@@ -117,7 +117,7 @@ We recommend that you use batch migration instead of Outlook's PST export featur
   
 1. Wait for the auto-split to move the data from the primary mailbox. This may take up to two weeks. However, all the public folders in a completely filled public folder mailbox won't be able to receive new content until the auto-split completes.
     
-2. [Create a public folder mailbox](create-public-folder-mailbox.md) and then use the **[New-PublicFolder]** cmdlet with the  _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox. This example creates a new public folder named PF201 in the secondary public folder mailbox. 
+2. [Create a public folder mailbox](create-public-folder-mailbox.md) and then use the **[New-PublicFolder]** cmdlet with the _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox. This example creates a new public folder named PF201 in the secondary public folder mailbox. 
     
   ```
   New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx

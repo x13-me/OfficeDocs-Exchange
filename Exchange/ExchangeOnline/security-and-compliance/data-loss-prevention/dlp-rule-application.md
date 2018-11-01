@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 1ac77020-26ff-410c-ab09-4f28a99d67a1
-description: "You can set up sensitive information rules within your Microsoft Exchange data loss prevention (DLP) policies to detect very specific data in email messages. This topic will help you understand how these rules are applied and how messages are evaluated. You can avoid workflow disruptions for your email users and achieve a high degree of accuracy with your DLP detections if you know how your rules are enforced. Let's use the Microsoft-supplied credit card information rule as an example. When you activate a transport rule or DLP policy, the Exchange transport rules agent compares all messages that your users send with the rule sets that you create."
+description: "Learn how data loss prevention (DLP) rules evaluate messages"
 ---
 
 # How DLP rules are applied to evaluate messages
@@ -18,27 +18,29 @@ You can set up sensitive information rules within your Microsoft Exchange data l
   
 ## Get precise about your needs
 
-Suppose you need to act on credit card information in messages. The actions you take once it is found are not the subject of this topic, but you can learn more about that in [Mail flow rule actions in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rule-actions.md). With as most certainty as possible, you need to ensure that what is detected in a message is truly credit card data and not something else that could be a legitimate use of groups of numbers that merely resemble credit card data; for example, a reservation code or a vehicle identification number. To meet this need, let's make it clear that the following information should be classified as a credit card.
+Suppose you need to act on credit card information in messages. The actions you take once it is found are not the subject of this topic, but you can learn more about that in [Mail flow rule actions in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rule-actions.md). With as most certainty as possible, you need to ensure that what is detected in a message is truly credit card data and not something else that could be a legitimate use of groups of numbers that merely resemble credit card data; for example, a reservation code or a vehicle identification number.
+
+To meet this need, let's make it clear that the following information should be classified as a credit card:
+
+> Margie's Travel, 
   
- ** Margie's Travel, 
+> I have received updated credit card information for Spencer. 
   
- I have received updated credit card information for Spencer. 
+> Spencer Badillo 
   
- Spencer Badillo 
+> Visa: 4111 1111 1111 1111 
   
- Visa: 4111 1111 1111 1111 
+> Expires: 2/2012 
   
- Expires: 2/2012 
-  
- Please update his travel profile. **
+> Please update his travel profile.
   
 Let's also make it clear that the following information should not be classified as a credit card.
   
- ** Hi Alex, 
+> Hi Alex, 
   
- I expect to be in Hawaii too. My booking code is 1234 1234 1234 1234 and I'll be there on 3/2012. 
+> I expect to be in Hawaii too. My booking code is 1234 1234 1234 1234 and I'll be there on 3/2018. 
   
- Regards, Lisa **
+> Regards, Lisa
   
 The following XML snippet shows how the needs expressed earlier are currently defined in a sensitive information rule that is provided with Exchange and it is embedded within one of the supplied DLP policy templates.
   
@@ -73,11 +75,11 @@ In the credit card rule, there is a section of XML code for patterns, which incl
     
 3. The corroborative evidence can be a match of one of these three:
     
-     `<Match idRef="Keyword_cc_verification" />`
+     `<Match idRef="Keyword_cc_verification">`
     
-     `<Match idRef="Keyword_cc_name" />`
+     `<Match idRef="Keyword_cc_name">`
     
-     `<Match idRef="Func_expiration_date" />`
+     `<Match idRef="Func_expiration_date">`
     
     These three simply mean a list of keywords for credit cards, the names of the credit cards, or an expiration date is required. The expiration date is defined and evaluated internally as another function.
     
@@ -89,23 +91,23 @@ The five steps here represent actions that Exchange takes to compare your rule w
 |:-----|:-----|
 |1. Get Content|Spencer Badillo  <br/> Visa: 4111 1111 1111 1111  <br/> Expires: 2/2012|
 |2. Regular Expression Analysis|4111 1111 1111 1111 -\> a 16-digit number is detected|
-|3. Function Analysis| 4111 1111 1111 1111 -\> matches checksum  <br/>  1234 1234 1234 1234 -\> doesn't match|
+|3. Function Analysis|4111 1111 1111 1111 -\> matches checksum  <br/>  1234 1234 1234 1234 -\> doesn't match|
 |4. Additional Evidence|
-Keyword Visa is near the number. A regular expression for a date (2/2012) is near the number. |
+Keyword Visa is near the number. A regular expression for a date (2/2012) is near the number.|
 |5. Verdict|
-There is a regular expression that matches a checksum. Additional evidence increases confidence. |
+There is a regular expression that matches a checksum. Additional evidence increases confidence.|
    
 The way this rule is set up by Microsoft makes it mandatory that corroborating evidence such as keywords are a part of the email message content in order to match the rule. So the following email content would not be detected as containing a credit card:
   
- ** Margie's Travel, 
+> Margie's Travel, 
   
- I have received updated information for Spencer. 
+> I have received updated information for Spencer. 
   
- Spencer Badillo 
+> Spencer Badillo 
   
- 4111 1111 1111 1111 
+> 4111 1111 1111 1111 
   
- Please update his travel profile. **
+> Please update his travel profile.
   
 You can use a custom rule that defines a pattern without extra evidence, as shown in the next example. This would detect messages with only credit card number and no corroborating evidence.
   

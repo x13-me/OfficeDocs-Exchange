@@ -87,7 +87,7 @@ You might find that you need a message trace when a user contacts you about mess
     > [!TIP]
     >  When you specify a wildcard, you cannot also add full email addresses to the message trace. >  Be aware that if you type an external email address and press Enter, this adds the user to the list and then closes the dialog box. If you're not finished, use the **Check names** button to add it instead. 
   
-5. When you finish adding users, tab to the **OK** button and press Enter. The ** message trace ** page has the focus again, and the **Sender** text box lists the senders you specified for the message trace. 
+5. When you finish adding users, tab to the **OK** button and press Enter. The **message trace** page has the focus again, and the **Sender** text box lists the senders you specified for the message trace. 
     
 10. To add a recipient to the message trace instead of or in addition to the senders, tab to the **add recipient** button and press Enter. In the **Select Members** dialog box, the **Search** button has the focus. To add one or more recipients to the message trace, repeat step 9. 
     

@@ -61,9 +61,9 @@ The following table describes the supported attributes for a CSV file for a stag
   
 |**Attribute**|**Required or optional**|**Accepted values**|**Description**|
 |:-----|:-----|:-----|:-----|
-|EmailAddress|Required|SMTP address for the user|Specifies the email address for the mail-enabled user (or a mailbox if you're retrying the migration) in Office 365 that corresponds to the on-premises user mailbox that will be migrated. Mail-enabled users are created in Office 365 as a result of directory synchronization or another provisioning process. The email address of the mail-enabled user must match the  _WindowsEmailAddress_ property for the corresponding on-premises mailbox.|
+|EmailAddress|Required|SMTP address for the user|Specifies the email address for the mail-enabled user (or a mailbox if you're retrying the migration) in Office 365 that corresponds to the on-premises user mailbox that will be migrated. Mail-enabled users are created in Office 365 as a result of directory synchronization or another provisioning process. The email address of the mail-enabled user must match the _WindowsEmailAddress_ property for the corresponding on-premises mailbox.|
 |Password|Optional|A password has to have a minimum length of eight characters, and satisfy any password restrictions that are applied to your Office 365 organization.|This password is set on the user account when the corresponding mail-enabled user in Office 365 is converted to a mailbox during the migration.|
-|ForceChangePassword|Optional|`True` or  `False`|Specifies whether a user must change the password the first time they sign in to their Office 365 mailbox.  <br/> **Note**:** If you've implemented a single sign-on (SSO) solution by deploying Active Directory Federation Services 2.0 (AD FS 2.0) in your on-premises organization, you must use  `False` for the value of this attribute.|
+|ForceChangePassword|Optional|`True` or `False`|Specifies whether a user must change the password the first time they sign in to their Office 365 mailbox.  <br/> **Note**:** If you've implemented a single sign-on (SSO) solution by deploying Active Directory Federation Services 2.0 (AD FS 2.0) in your on-premises organization, you must use `False` for the value of this attribute.|
    
 ### IMAP migrations
 
@@ -104,6 +104,6 @@ user4@cloud.contoso.com,PrimaryAndArchive
 ...
 ```
 
-Because the value for mailbox type in the CSV file overrides the values for the  _MailboxType_ parameter in the command to create the batch, only the archive mailbox for user1 and user2 is migrated to Office 365. But the primary and archive mailboxes for user3 and user4 are moved to Office 365. 
+Because the value for mailbox type in the CSV file overrides the values for the _MailboxType_ parameter in the command to create the batch, only the archive mailbox for user1 and user2 is migrated to Office 365. But the primary and archive mailboxes for user3 and user4 are moved to Office 365. 
   
 

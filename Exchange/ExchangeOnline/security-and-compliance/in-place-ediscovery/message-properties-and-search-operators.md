@@ -20,7 +20,7 @@ In-Place eDiscovery uses Keyword Query Language (KQL). For more details, see [Ke
   
 ## Searchable properties in Exchange
 
-The following table lists email message properties that can be searched using an In-Place eDiscovery search or by using the **New-MailboxSearch** or the **Set-MailboxSearch** cmdlet. The table includes an example of the  _property:value_ syntax for each property and a description of the search results returned by the examples. 
+The following table lists email message properties that can be searched using an In-Place eDiscovery search or by using the **New-MailboxSearch** or the **Set-MailboxSearch** cmdlet. The table includes an example of the _property:value_ syntax for each property and a description of the search results returned by the examples. 
   
 |**Property**|**Property description**|**Examples**|**Search results returned by the examples**|
 |:-----|:-----|:-----|:-----|
@@ -52,7 +52,7 @@ Boolean search operators, such as **AND**, **OR**, help you define more-precise 
 |**Operator**|**Usage**|**Description**|
 |:-----|:-----|:-----|
 |AND|keyword1 AND keyword2|Returns messages that include all of the specified keywords or `property:value` expressions.|
-|+|keyword1 +keyword2 +keyword3|Returns items that contain *either* `keyword2` or `keyword3` *and*  that also contain `keyword1`. Therefore, this example is equivalent to the query `(keyword2 OR keyword3) AND keyword1`.  <br/> Note that the query `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the ** AND ** operator. This query would be equivalent to `"keyword1 + keyword2"` and return items with the exact phase `"keyword1 + keyword2"`.|
+|+|keyword1 +keyword2 +keyword3|Returns items that contain *either* `keyword2` or `keyword3` *and*  that also contain `keyword1`. Therefore, this example is equivalent to the query `(keyword2 OR keyword3) AND keyword1`.  <br/> Note that the query `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the **AND** operator. This query would be equivalent to `"keyword1 + keyword2"` and return items with the exact phase `"keyword1 + keyword2"`.|
 |OR|keyword1 OR keyword2|Returns messages that include one or more of the specified keywords or `property:value` expressions.|
 |NOT|keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"|Excludes messages specified by a keyword or a `property:value` expression. For example, `NOT from:"Ann Beebe"` excludes messages sent by Ann Beebe.|
 |-|keyword1 -keyword2|The same as the **NOT** operator. This query returns items that contain `keyword1` and excludes items that contain `keyword2`.|

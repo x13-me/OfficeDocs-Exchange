@@ -88,7 +88,7 @@ To verify that you've successfully deleted an Exchange Online mailbox, do one of
   
 - In the EAC, navigate to **Recipients** \> **Mailboxes**. The deleted mailbox is removed from the mailbox list.
     
-    Click **Refresh**![Refresh Icon](../media/ITPro_EAC_RefreshIcon.gif) if the deleted mailbox is still displayed. 
+    Click **Refresh** ![Refresh Icon](../media/ITPro_EAC_RefreshIcon.gif) if the deleted mailbox is still displayed. 
     
 - If you deleted the Office 365 user account, verify that the user account isn't listed on the **Active users** page in the Office 365 admin center, and that it's listed on the **Deleted Users** page. 
     
@@ -132,7 +132,7 @@ To verify that you've successfully restored a mailbox, do one of the following:
   
 - In the EAC, navigate to **Recipients** \> **Mailboxes**. The restored mailbox is displayed in the mailbox list.
     
-    Click **Refresh**![Refresh Icon](../media/ITPro_EAC_RefreshIcon.gif) if the mailbox isn't displayed at first. 
+    Click **Refresh** ![Refresh Icon](../media/ITPro_EAC_RefreshIcon.gif) if the mailbox isn't displayed at first. 
     
 - In Exchange Online PowerShell, use the following syntax to verify that the mailbox was restored.
     

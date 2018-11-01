@@ -98,7 +98,7 @@ Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 
 ```
 
 > [!NOTE]
-> The **Search-AdminAuditLog** cmdlet returns a maximum of 1,000 log entries by default. Use the  _ResultSize_ parameter to specify up to 250,000 log entries. Or, use the value `Unlimited` to return all entries. 
+> The **Search-AdminAuditLog** cmdlet returns a maximum of 1,000 log entries by default. Use the _ResultSize_ parameter to specify up to 250,000 log entries. Or, use the value `Unlimited` to return all entries. 
   
 This example performs a search for all audit log entries with the following criteria:
   
@@ -110,7 +110,7 @@ This example performs a search for all audit log entries with the following crit
     
 - **Cmdlets** **Set-Mailbox**
     
-- **Parameters** _ProhibitSendQuota_,  _ProhibitSendReceiveQuota_,  _IssueWarningQuota_,  _MaxSendSize_,  _MaxReceiveSize_
+- **Parameters** _ProhibitSendQuota_, _ProhibitSendReceiveQuota_, _IssueWarningQuota_, _MaxSendSize_, _MaxReceiveSize_
     
 ```
 Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota, ProhibitSendReceiveQuota, IssueWarningQuota, MaxSendSize, MaxReceiveSize -StartDate 08/04/2012 -EndDate 10/03/2012 -UserIds davids, chrisd, kima
@@ -189,7 +189,7 @@ This example performs a search for all audit log entries with the following crit
     
 - **Cmdlets** **Set-Mailbox**
     
-- **Parameters** _ProhibitSendQuota_,  _ProhibitSendReceiveQuota_,  _IssueWarningQuota_,  _MaxSendSize_,  _MaxReceiveSize_
+- **Parameters** _ProhibitSendQuota_, _ProhibitSendReceiveQuota_, _IssueWarningQuota_, _MaxSendSize_, _MaxReceiveSize_
     
 The command sends the results to the davids@contoso.com SMTP address with "Mailbox limit changes" included in the subject line of the message.
   

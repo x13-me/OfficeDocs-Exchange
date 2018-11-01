@@ -45,7 +45,7 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook.m
 
 1. In the EAC, navigate to **Organization** \> **Add-ins**.
     
-2. Click **New**![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then choose the location that you want to install the add-in from.
+2. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then choose the location that you want to install the add-in from.
     
   - **Add from the Office Store**. At the Office Store, select the app you want to install, and then click **Add**. Apps that work with Outlook Web App are listed under **Add-ins for Office and SharePoint** \> **Outlook**.
     
@@ -84,7 +84,7 @@ For syntax and parameters, see [New-App](https://technet.microsoft.com/library/f
 
 1. In the EAC, navigate to **Organization** \> **Add-ins**.
     
-2. In the list view, select the app that you want to remove, and then click **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif). 
+2. In the list view, select the app that you want to remove, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif). 
     
 #### Use Exchange Online PowerShell to remove an add-in
 

@@ -70,7 +70,7 @@ Set-OrganizationRelationship "Contoso Online" -MailTipsAccessLevel Limited
 This example configures the organizational relationship so that no MailTips are returned. 
   
 > [!NOTE]
-> Don't use this method to disable MailTips for this relationship. To disable MailTips, set the  _MailTipsAccessEnabled_ parameter to `$false`. 
+> Don't use this method to disable MailTips for this relationship. To disable MailTips, set the _MailTipsAccessEnabled_ parameter to `$false`. 
   
 ```
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessLevel None

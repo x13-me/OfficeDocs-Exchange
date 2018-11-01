@@ -46,7 +46,7 @@ You can use the Office 365 admin center to create a new user account. When you a
     
 ### Use Exchange Online PowerShell to create a new mailbox
 
-This example creates an Exchange Online mailbox and Office 365 user account for Holly Holt. The optional parameter  _ResetPasswordOnNextLogon_ will require the user to reset their password the first time they sign in to Office 365. 
+This example creates an Exchange Online mailbox and Office 365 user account for Holly Holt. The optional parameter _ResetPasswordOnNextLogon_ will require the user to reset their password the first time they sign in to Office 365. 
   
 ```
 New-Mailbox -Alias hollyh -Name hollyh -FirstName Holly -LastName Holt -DisplayName "Holly Holt" -MicrosoftOnlineServicesID hollyh@corp.contoso.com -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force) -ResetPasswordOnNextLogon $true
@@ -60,7 +60,7 @@ To verify that you've successfully created a new mailbox, do one of the followin
   
 - In the EAC, navigate to **Recipients** \> **Mailboxes**. The new user mailbox is displayed in the mailbox list. Under **Mailbox Type**, the type is **User**.
     
-    Click **Refresh**![Refresh Icon](../media/ITPro_EAC_RefreshIcon.gif) if the new mailbox isn't displayed at first. 
+    Click **Refresh** ![Refresh Icon](../media/ITPro_EAC_RefreshIcon.gif) if the new mailbox isn't displayed at first. 
     
 - In the Office 365 admin center, verify that the new user account is listed and that it's been assigned an Exchange Online license.
     
@@ -70,6 +70,6 @@ To verify that you've successfully created a new mailbox, do one of the followin
   Get-Mailbox <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress,SKUAssigned
   ```
 
-    If a license is assigned to the mailbox, the value for the  _SKUAssigned_ property is `True`. If a license hasn't been assigned, the value is blank.
+    If a license is assigned to the mailbox, the value for the _SKUAssigned_ property is `True`. If a license hasn't been assigned, the value is blank.
     
 

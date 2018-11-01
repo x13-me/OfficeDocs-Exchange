@@ -46,7 +46,7 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
   
 1. Go to **Compliance management** \> **In-place eDiscovery & hold**.
     
-2. Click **New**![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+2. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
 3. In **In-Place eDiscovery & Hold**, on the **Name and description** page, type a name for the search, add an optional description, and then click **Next**.
     
@@ -75,7 +75,7 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
     > [!IMPORTANT]
     > When placing mailboxes or items on In-Place Hold for legal purposes, it is generally recommended to hold items indefinitely and remove the hold when the case or investigation is completed. 
   
-7. Click **Finish** to save the search and return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Estimates are displayed in the details pane. Click **Refresh**![Refresh Icon](../../media/ITPro_EAC_RefreshIcon.gif) to update the information displayed in the details pane. 
+7. Click **Finish** to save the search and return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Estimates are displayed in the details pane. Click **Refresh** ![Refresh Icon](../../media/ITPro_EAC_RefreshIcon.gif) to update the information displayed in the details pane. 
     
 [Return to top](create-in-place-ediscovery-search.md#top)
   
@@ -107,7 +107,7 @@ New-MailboxSearch "Discovery-CaseId012" -StartDate "01/01/2009" -EndDate "12/31/
 ```
 
 > [!NOTE]
-> When using the  _StartDate_ and  _EndDate_ parameters, you have to use the date format of mm/dd/yyyy, even if your local machine settings are configured to use a different date format, such as dd/mm/yyyy. For example, to search for messages sent between April 1, 2013 and July 1, 2013, you would use **04/01/2013** and **07/01/2013** for the start and end dates. 
+> When using the _StartDate_ and _EndDate_ parameters, you have to use the date format of mm/dd/yyyy, even if your local machine settings are configured to use a different date format, such as dd/mm/yyyy. For example, to search for messages sent between April 1, 2013 and July 1, 2013, you would use **04/01/2013** and **07/01/2013** for the start and end dates. 
   
 This example creates an In-Place eDiscovery search named HRCase090116 that searches for email messages sent by Alex Darrow to Sara Davis in 2015. 
   
@@ -115,7 +115,7 @@ This example creates an In-Place eDiscovery search named HRCase090116 that searc
 New-MailboxSearch "HRCase090116" -StartDate "01/01/2015" -EndDate "12/31/2015" -SourceMailboxes  alexd,sarad -SearchQuery 'From:alexd@contoso.com AND To:sarad@contoso.com' -MessageTypes Email -TargetMailbox "Discovery Search Mailbox" -IncludeUnsearchableItems -LogLevel Full
 ```
 
-After using Exchange Online PowerShell to create an In-Place eDiscovery search, you have to start the search by using the **Start-MailboxSearch** cmdlet to copy messages to the discovery mailbox specified in the  _TargetMailbox_ parameter. For details, see [Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx).
+After using Exchange Online PowerShell to create an In-Place eDiscovery search, you have to start the search by using the **Start-MailboxSearch** cmdlet to copy messages to the discovery mailbox specified in the _TargetMailbox_ parameter. For details, see [Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx).
   
 For detailed syntax and parameter information, see [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
   
@@ -130,9 +130,9 @@ After you create an In-Place eDiscovery search, you can use the EAC to get an es
     
 2. In the list view, select the In-Place eDiscovery search, and then do one of the following: 
     
-  - Click **Search**![Search icon](../../media/ITPro_EAC_.gif) \> **Estimate search results** to return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Selecting this option restarts the search and performs an estimate. 
+  - Click **Search** ![Search icon](../../media/ITPro_EAC_.gif) \> **Estimate search results** to return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Selecting this option restarts the search and performs an estimate. 
     
-    Search Estimates are displayed in the details pane. Click **Refresh**![Refresh Icon](../../media/ITPro_EAC_RefreshIcon.gif) to update the information displayed in the details pane. 
+    Search Estimates are displayed in the details pane. Click **Refresh** ![Refresh Icon](../../media/ITPro_EAC_RefreshIcon.gif) to update the information displayed in the details pane. 
     
   - Click **Preview search results** in the details pane to preview the results after the search estimate is completed. Selecting this option opens the **eDiscovery search preview** window. All messages returned from the mailboxes that were searched are displayed. 
     
@@ -146,7 +146,7 @@ After you create an In-Place eDiscovery search, you can use the EAC to get an es
 ## Use Exchange Online PowerShell to estimate search results
 <a name="newmailboxsearch"> </a>
 
-You can use the  _EstimateOnly_ switch to return only get an estimate of the search results and not copy the results to a discovery mailbox. You have to start an estimate-only search with the **Start-MailboxSearch** cmdlet. Then you can retrieve the estimated search results by using the **Get-MailboxSearch** cmdlet. 
+You can use the _EstimateOnly_ switch to return only get an estimate of the search results and not copy the results to a discovery mailbox. You have to start an estimate-only search with the **Start-MailboxSearch** cmdlet. Then you can retrieve the estimated search results by using the **Get-MailboxSearch** cmdlet. 
   
 For example, you would run the following commands to create a new eDiscovery search and then display an estimate of the search results:
   

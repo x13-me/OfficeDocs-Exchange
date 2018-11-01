@@ -51,7 +51,7 @@ For examples and information about how to scope and format disclaimers, signatur
 
 1. Open the EAC and go to **Mail flow** \> **Rules**.
     
-2. Click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then click **Apply disclaimers**.
+2. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then click **Apply disclaimers**.
     
     ![In the Exchange admin center, click Mal flow \> Rules \> Add  to create a rule](../../media/ee818b31-f5a5-40cc-9fe5-6c04f4120716.png)
   

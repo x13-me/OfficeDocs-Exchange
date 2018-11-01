@@ -17,7 +17,7 @@ description: "This topic explains how to retrieve statistics about a public fold
 This topic explains how to retrieve statistics about a public folder, such as the display name, creation time, last user modified time, last user access, and item size. You can use this information to make decisions about deleting or retaining public folders.
   
 > [!NOTE]
-> In the Exchange admin center (EAC), you can view some of the quota and usage information for public folders by navigating to **Public Folders** \> **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif) \> **Mailbox usage**. However, this information is incomplete, and we recommend that you use Exchange Online PowerShell to view public folder statistics. 
+> In the Exchange admin center (EAC), you can view some of the quota and usage information for public folders by navigating to **Public Folders** \> **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif) \> **Mailbox usage**. However, this information is incomplete, and we recommend that you use Exchange Online PowerShell to view public folder statistics. 
   
 ## What do you need to know before you begin?
 
@@ -43,7 +43,7 @@ Get-PublicFolderStatistics -Identity \Marketing | Format-List
 ```
 
 > [!NOTE]
-> The value for the  _Identity_ parameter must include the path to the public folder. For example, if the public folder Marketing existed under the parent folder Business, you would provide the following value: `\Business\Marketing`
+> The value for the _Identity_ parameter must include the path to the public folder. For example, if the public folder Marketing existed under the parent folder Business, you would provide the following value: `\Business\Marketing`
   
 For detailed syntax and parameter information, see [Get-PublicFolderStatistics](https://technet.microsoft.com/library/6b435b2e-749f-47fd-9a20-9a7edaed96fb.aspx).
   

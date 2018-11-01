@@ -91,7 +91,7 @@ After you add a domain to your Exchange Online organization in the Office 365 ad
 
 1. In the EAC, navigate to **Mail flow** \> **Accepted domains**.
     
-2. Select the domain and click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. Select the domain and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 3. In the **Accepted Domain** window, in the **This accepted domain is** section, select the domain type. The possible values are **Authoritative** and **Internal relay**.
     
@@ -119,7 +119,7 @@ Set-AcceptedDomain contoso.com -DomainType InternalRelay
 
 To verify that you have successfully configured the domain type, do either of the following:
   
-- In the EAC at **Mail flow** \> **Accepted domains**, click **Refresh**![Refresh Icon](../../media/ITPro_EAC_RefreshIcon.gif). In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly.
+- In the EAC at **Mail flow** \> **Accepted domains**, click **Refresh** ![Refresh Icon](../../media/ITPro_EAC_RefreshIcon.gif). In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly.
     
 - In Exchange Online PowerShell, run the command **Get-AcceptedDomain**. In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly. 
     

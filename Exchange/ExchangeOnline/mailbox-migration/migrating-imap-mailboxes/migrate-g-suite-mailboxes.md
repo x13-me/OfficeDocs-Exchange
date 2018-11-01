@@ -121,11 +121,11 @@ To migrate Gmail mailboxes successfully, Office 365 needs to connect and communi
   
 1. Go to the Exchange admin center.
     
-2. In the EAC, go to **Recipients** \> **Migration** \> **More**![More icon](../media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
+2. In the EAC, go to **Recipients** \> **Migration** \> **More** ![More icon](../media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
     
     ![Select Migration endpoint.](../media/474a2e9a-a7f1-4657-8a09-eeec45e106f5.png)
   
-3. Click **New**![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to create a new migration endpoint. 
+3. Click **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to create a new migration endpoint. 
     
 4. On the **Select the migration endpoint type** page, choose **IMAP**.
     
@@ -133,7 +133,7 @@ To migrate Gmail mailboxes successfully, Office 365 needs to connect and communi
     
 6. Click **Next**. The migration service uses the settings to test the connection to Gmail system. If the connection works, the **Enter general information** page opens. 
     
-7. On the ** Enter general information ** page, type a *Migration endpoint name*, for example, Test5-endpoint. Leave the other two boxes blank to use the default values.
+7. On the **Enter general information** page, type a *Migration endpoint name*, for example, Test5-endpoint. Leave the other two boxes blank to use the default values.
     
     ![Migration endpoint name.](../media/990cd22d-748c-477d-b3f8-66f30b256475.jpg)
   
@@ -153,7 +153,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Office 365 at 
   
 2. In the Exchange admin center, go to **Recipients** \> **Migration**.
     
-3. Click **New**![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
+3. Click **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
     
     ![Select Migrate to Exchange Online](../media/d5af665e-498d-4f18-8761-fc69897b389d.png)
   
@@ -185,7 +185,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Office 365 at 
     
 10. On the **Move configuration** page, type the *name*  (no spaces or special characters) of the migration batch in the box—for example, Test5-migration. The default migration batch name that's displayed is the name of the migration file that you specified. The migration batch name is displayed in the list on the migration dashboard after you create the migration batch.
     
-    You can also enter the names of the folders you want to exclude from migration. For example, Shared, Junk Email, and Deleted. Click **Add**![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to add them to the excluded list. You can also use the edit icon ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to change a folder name and the remove icon ![Remove icon](../media/adf01106-cc79-475c-8673-065371c1897b.gif) to delete the folder name. 
+    You can also enter the names of the folders you want to exclude from migration. For example, Shared, Junk Email, and Deleted. Click **Add** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to add them to the excluded list. You can also use the edit icon ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to change a folder name and the remove icon ![Remove icon](../media/adf01106-cc79-475c-8673-065371c1897b.gif) to delete the folder name. 
     
     ![Move configuration dialog](../media/0633521d-b0f9-44a1-8729-b40b1793d10e.png)
   

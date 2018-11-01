@@ -78,7 +78,7 @@ The first step is to create additional discovery mailboxes so that you can copy 
 ## Step 2: Copy search results to a discovery mailbox
 <a name="copy"> </a>
 
-The next step is to use the **New-MailboxSearch** cmdlet to copy the search results from the existing discovery mailbox to a new discovery mailbox that you created in the previous step. This procedure uses the  _StartDate_ and  _EndDate_ parameters to scope the search results into batches that are no larger than 50 GB. This may require some testing (by estimating the search results) to size the search results appropriately. 
+The next step is to use the **New-MailboxSearch** cmdlet to copy the search results from the existing discovery mailbox to a new discovery mailbox that you created in the previous step. This procedure uses the _StartDate_ and _EndDate_ parameters to scope the search results into batches that are no larger than 50 GB. This may require some testing (by estimating the search results) to size the search results appropriately. 
   
 1. Run the following command to create a new eDiscovery search. 
     
@@ -88,36 +88,36 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
 
     This example uses the following parameters:
     
-  -  _Name_ This parameter specifies the name of the new eDiscovery search. Because the search is scoped by sent and received dates, it's useful that the name of the search includes the date range. 
+  - _Name_ This parameter specifies the name of the new eDiscovery search. Because the search is scoped by sent and received dates, it's useful that the name of the search includes the date range. 
     
-  -  _SourceMailboxes_ This parameter specifies the default discovery mailbox. You can also specify the name of another discovery mailbox that's exceeded the size limit. 
+  - _SourceMailboxes_ This parameter specifies the default discovery mailbox. You can also specify the name of another discovery mailbox that's exceeded the size limit. 
     
-  -  _StartDate_ and  _EndDate_ These parameters specify the date range of the search results in the default discovery mailbox to include in the search results. 
+  - _StartDate_ and _EndDate_ These parameters specify the date range of the search results in the default discovery mailbox to include in the search results. 
     
     > [!NOTE]
     > For dates, use the short date format, mm/dd/yyyy, even if the Regional Options settings on the local computer are configured with a different format, such as dd/mm/yyyy. For example, use **03/01/2014** to specify March 1, 2014. 
   
-  -  _TargetMailbox_ This parameter specifies that search results should be copied to the discovery mailbox named "Discovery Mailbox Backup 01". 
+  - _TargetMailbox_ This parameter specifies that search results should be copied to the discovery mailbox named "Discovery Mailbox Backup 01". 
     
-  -  _EstimateOnly_ This switch specifies that only an estimate of the number of items that will be returned is provided when the search is started. If you don't include this switch, messages are copied to the target mailbox when the search is started. Using this switch lets you adjust the date ranges if necessary to increase or decrease the number of search results. 
+  - _EstimateOnly_ This switch specifies that only an estimate of the number of items that will be returned is provided when the search is started. If you don't include this switch, messages are copied to the target mailbox when the search is started. Using this switch lets you adjust the date ranges if necessary to increase or decrease the number of search results. 
     
-  -  _StatusMailRecipients_ This parameter specifies that the status message should be sent to the specified recipient. 
+  - _StatusMailRecipients_ This parameter specifies that the status message should be sent to the specified recipient. 
     
 2. After the search is created, start it by using Exchange Online PowerShell or the Exchange admin center (EAC).
     
-  - **Using Exchange Online PowerShell**: Run the following command to start the search created in the previous step. Because the  _EstimateOnly_ switch was included when the search was created, the search results won't be copied to the target discovery mailbox. 
+  - **Using Exchange Online PowerShell**: Run the following command to start the search created in the previous step. Because the _EstimateOnly_ switch was included when the search was created, the search results won't be copied to the target discovery mailbox. 
     
   ```
   Start-MailboxSearch "Search results from 2010"
   ```
 
-  - **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search created in the previous step, click **Search**![Search icon](../../media/ITPro_EAC_.gif), and then click **Estimate search results**.
+  - **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search created in the previous step, click **Search** ![Search icon](../../media/ITPro_EAC_.gif), and then click **Estimate search results**.
     
 3. If necessary, adjust the date range to increase or decrease the amount of search results that are returned. If you change the date range, run the search again to get a new estimate of the results. Consider changing the name of the search to reflect the new date range.
     
 4. When you're finished testing the search, use Exchange Online PowerShell or the EAC to copy the search results to the target discovery mailbox. 
     
-  - **Using Exchange Online PowerShell**: Run the following commands to copy the search results. You have to remove the  _EstimateOnly_ switch before you can copy the search results. 
+  - **Using Exchange Online PowerShell**: Run the following commands to copy the search results. You have to remove the _EstimateOnly_ switch before you can copy the search results. 
     
   ```
   Set-MailboxSearch "Search results from 2010" -EstimateOnly $false
@@ -127,7 +127,7 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
   Start-MailboxSearch "Search results from 2010"
   ```
 
-  - **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search, click **Search**![Search icon](../../media/ITPro_EAC_.gif), and then click **Copy search results**.
+  - **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search, click **Search** ![Search icon](../../media/ITPro_EAC_.gif), and then click **Copy search results**.
     
     For more information, see [Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx).
     
@@ -152,7 +152,7 @@ You can use Exchange Online PowerShell or the EAC to delete an eDiscovery search
   Remove-MailboxSearch -Identity <name of search>
   ```
 
-- **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search that you want to delete, and then click **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+- **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search that you want to delete, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
     
 ## How do you know this worked?
 <a name="delete"> </a>

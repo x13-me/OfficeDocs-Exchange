@@ -33,9 +33,9 @@ For details about how to create a sharing policy, see [Create a sharing policy i
     
 2. Go to **organization** \> **sharing**.
     
-3. Under **Individual Sharing**, select a sharing a policy, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
-4. In **sharing policy**, click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+4. In **sharing policy**, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 5. In **sharing rule**, change the settings such as the domain you want to share information with and the sharing level for calendars. Click **save** to update the rule. 
     
@@ -48,7 +48,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
     
 2. Go to **organization** \> **sharing**.
     
-3. Under **Individual Sharing**, select a sharing a policy, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. Under **Individual Sharing**, select a sharing a policy, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 4. In **sharing policy**, select the **Make this policy my default sharing policy** check box. 
     
@@ -75,7 +75,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
     
 2. Go to **organization** \> **sharing**.
     
-3. Under **Individual Sharing**, select a sharing a policy, and then click **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+3. Under **Individual Sharing**, select a sharing a policy, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
     
 4. In the warning, click **yes** to delete the sharing policy. 
     

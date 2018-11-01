@@ -54,7 +54,7 @@ For more information about the Exchange Online capabilities in your subscription
 
 The EAC user interface exists within your web browser as part of Exchange Online. Within that window, "Office 365 Admin" shows in the title bar. At the left edge of the title bar is the Office 365 app launcher that contains the list of Microsoft services and Office Online applications, including Mail (Outlook.com), Excel Online, OneNote, and more. On the right side of the title bar are commands to get notifications, manage your options, get help, and sign out. 
   
-Under the title bar is the name, "Exchange admin center." The left pane lists about a dozen Exchange administrative categories, for example, ** dashboard **, **permissions**, and **mail flow**. By default, dashboard has the focus. 
+Under the title bar is the name, "Exchange admin center." The left pane lists about a dozen Exchange administrative categories, for example, **dashboard **, **permissions**, and **mail flow**. By default, dashboard has the focus. 
   
 The administrative category selected in the left feature pane affects the content of the main window to its right. For example, when you select **dashboard** in the left pane, all administrative categories display in the main window list view, along with their subcategories. Likewise, when you select **recipients** in the left feature pane, a list of all user mailbox names and addresses appears in the main window list view. 
   

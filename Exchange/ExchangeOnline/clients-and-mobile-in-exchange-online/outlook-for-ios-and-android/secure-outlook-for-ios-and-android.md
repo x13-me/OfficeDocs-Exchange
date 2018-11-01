@@ -261,7 +261,7 @@ If you are managing your mobile device access via Exchange Online's device acces
     
 Every Exchange organization has different policies regarding security and device management. If an organization decides that Outlook for iOS and Android doesn't meet their needs or is not the best solution for them, administrators have the ability to block the app. Once the app is blocked, mobile Exchange users in your organization can continue accessing their mailboxes by using the built-in mail applications on iOS and Android.
   
-The  `New-ActiveSyncDeviceAccessRule` cmdlet has a  `Characteristic` parameter, and there are three  `Characteristic` options that administrators can use to block the Outlook for iOS and Android app. The options are UserAgent, DeviceModel, and DeviceType. In the two blocking options described in the following sections, you will use one or more of these characteristic values to restrict the access that Outlook for iOS and Android has to the mailboxes in your organization.
+The `New-ActiveSyncDeviceAccessRule` cmdlet has a `Characteristic` parameter, and there are three `Characteristic` options that administrators can use to block the Outlook for iOS and Android app. The options are UserAgent, DeviceModel, and DeviceType. In the two blocking options described in the following sections, you will use one or more of these characteristic values to restrict the access that Outlook for iOS and Android has to the mailboxes in your organization.
   
 The values for each characteristic are displayed in the following table:
   
@@ -273,9 +273,9 @@ The values for each characteristic are displayed in the following table:
    
  **Option A: Block Outlook for iOS and Android on both the iOS and Android platforms**
   
-With the  `New-ActiveSyncDeviceAccessRule` cmdlet, you can define a device access rule, using either the  `DeviceModel` or  `DeviceType` characteristic. In both cases, the access rule blocks Outlook for iOS and Android across all platforms, and will prevent any device, on both the iOS platform and Android platform, from accessing an Exchange mailbox via the app. 
+With the `New-ActiveSyncDeviceAccessRule` cmdlet, you can define a device access rule, using either the `DeviceModel` or `DeviceType` characteristic. In both cases, the access rule blocks Outlook for iOS and Android across all platforms, and will prevent any device, on both the iOS platform and Android platform, from accessing an Exchange mailbox via the app. 
   
-The following are two examples of a device access rule. The first example uses the  `DeviceModel` characteristic; the second example uses the  `DeviceType` characteristic. 
+The following are two examples of a device access rule. The first example uses the `DeviceModel` characteristic; the second example uses the `DeviceType` characteristic. 
   
 ```
 New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "Outlook" -AccessLevel Block
@@ -287,7 +287,7 @@ New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook
 
  **Option B: Block Outlook for iOS and Android on a specific mobile device platform**
   
-With the  `UserAgent` characteristic, you can define a device access rule that blocks Outlook for iOS and Android across a specific platform. This rule will prevent a device from using Outlook for iOS and Android to connect on the platform you specify. The following examples show how to use the device-specific value for the  `UserAgent` characteristic. 
+With the `UserAgent` characteristic, you can define a device access rule that blocks Outlook for iOS and Android across a specific platform. This rule will prevent a device from using Outlook for iOS and Android to connect on the platform you specify. The following examples show how to use the device-specific value for the `UserAgent` characteristic. 
   
 To block Android and allow iOS:
   

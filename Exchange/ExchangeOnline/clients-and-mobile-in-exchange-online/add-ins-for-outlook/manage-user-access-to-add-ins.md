@@ -43,7 +43,7 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook.m
 
 1. In the EAC, navigate to **Organization** \> **Add-ins**.
     
-2. In the list view, select the add-in that you want to change settings for, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the add-in that you want to change settings for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 3. If you don't want your users to use the add-in, clear the **Make this add-in available to users in your organization** check box, and then click **Save**.
     
@@ -67,25 +67,25 @@ Get-App -OrganizationApp | Format-List DisplayName,AppId
 
 The **AppId** value is a GUID that uniquely identifies the add-in (for example, `fe93bfe1-7947-460a-a5e0-7a5906b51360`). You use the **AppId** value to identify and change the settings of the add-in. 
   
-To disable and hide an add-in from all your users, replace  _\<AppId\>_ with the real **AppId** value and run the following command: 
+To disable and hide an add-in from all your users, replace _\<AppId\>_ with the real **AppId** value and run the following command: 
   
 ```
 Set-App -Identity <AppId> -OrganizationApp -Enabled $false
 ```
 
-To enable an add-in by default, but allow your users to turn it off, replace  _\<AppId\>_ with the real **AppId** value and run the following command: 
+To enable an add-in by default, but allow your users to turn it off, replace _\<AppId\>_ with the real **AppId** value and run the following command: 
   
 ```
 Set-App -Identity <AppId> -OrganizationApp -Enabled $true -DefaultStateForUser Enabled
 ```
 
-To disable an add-in by default, but allow your users to turn it on, replace  _\<AppId\>_ with the real **AppId** value and run the following command: 
+To disable an add-in by default, but allow your users to turn it on, replace _\<AppId\>_ with the real **AppId** value and run the following command: 
   
 ```
 Set-App -Identity <AppId> -OrganizationApp -Enabled $true -DefaultStateForUser Disabled
 ```
 
-If you want the add-in to be required for your users, replace  _\<AppId\>_ with the real **AppId** value and run the following command: 
+If you want the add-in to be required for your users, replace _\<AppId\>_ with the real **AppId** value and run the following command: 
   
 ```
 Set-App -Identity <AppId> -OrganizationApp -Enabled $true -DefaultStateForUser AlwaysEnabled

@@ -51,7 +51,7 @@ You can control the types and format of messages that are sent to domains outsid
     
 2. To create a new domain:
     
-1. Select **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. Select **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
 2. In the **Name** box, enter a descriptive name for the domain. 
     
@@ -162,7 +162,7 @@ Get-RemoteDomain <Remote Domain Name> | Format-List
 
 1. In the EAC, go to **Mail flow** \> **Remote domains**.
     
-2. Select a remote domain, and then select **Delete**![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
+2. Select a remote domain, and then select **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
     
 3. In the warning dialog box, select **Yes**.
     

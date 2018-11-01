@@ -71,7 +71,7 @@ Your users can wipe their own phone using Outlook Web App.
 
 There are several ways to verify that the remote wipe completed.
   
-- Run the **Clear-MobileDevice** cmdlet with the  _-NotificationEmailAddresses_ parameter configured. A message will be sent to the supplied email address when the remote wipe has completed. 
+- Run the **Clear-MobileDevice** cmdlet with the _-NotificationEmailAddresses_ parameter configured. A message will be sent to the supplied email address when the remote wipe has completed. 
     
 - In the EAC, check the status of the mobile device. The status will change from **Wipe Pending** to **Wipe Successful**.
     

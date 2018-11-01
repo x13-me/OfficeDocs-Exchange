@@ -45,9 +45,9 @@ For additional management tasks related to UM hunt groups, see [UM hunt group pr
 
 ### Use the EAC to create a UM hunt group
 
-1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
-2. On the **UM Dial Plan** page, under **UM Hunt Groups**, click **New**![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+2. On the **UM Dial Plan** page, under **UM Hunt Groups**, click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
 3. On the **New UM hunt group** page, enter the following information: 
     
@@ -55,7 +55,7 @@ For additional management tasks related to UM hunt groups, see [UM hunt group pr
     
     If your organization uses multiple hunt groups, we recommend that you use meaningful names for your hunt groups. The maximum length of a UM hunt group name is 64 characters, and it can include spaces. However, it can't include any of the following characters: " / \ [ ] : ; | = , + \* ? \< \>.
     
-  - ** UM IP gateway ** Use this box to specify the UM IP gateway to be used. Click **Browse** to select the UM IP gateway, and then click **OK**.
+  - **UM IP gateway** Use this box to specify the UM IP gateway to be used. Click **Browse** to select the UM IP gateway, and then click **OK**.
     
   - **Pilot identifier** Use this box to specify a string that uniquely identifies the pilot identifier configured on the PBX or IP PBX. 
     

@@ -30,7 +30,7 @@ In an HAB, your root organization (for example, Contoso, Ltd) is used as the top
 
 ![Hierarchical Address Book dialog](../../media/ITPro_Mailbox_HABDisplay.gif)
   
-You can provide an additional level of hierarchical structure by using the  _SeniorityIndex_ parameter. When creating an HAB, use the  _SeniorityIndex_ parameter to rank individual recipients or organizational groups by seniority within these organizational tiers. This ranking specifies the order in which the recipients or groups are displayed in the HAB. For example, in the preceding example, the  _SeniorityIndex_ parameter for the recipients in the Corporate Office division is set to the following: 
+You can provide an additional level of hierarchical structure by using the _SeniorityIndex_ parameter. When creating an HAB, use the _SeniorityIndex_ parameter to rank individual recipients or organizational groups by seniority within these organizational tiers. This ranking specifies the order in which the recipients or groups are displayed in the HAB. For example, in the preceding example, the _SeniorityIndex_ parameter for the recipients in the Corporate Office division is set to the following: 
   
 - `100` for David Hamilton 
     
@@ -39,7 +39,7 @@ You can provide an additional level of hierarchical structure by using the  _Sen
 - `25` for Amy Alberts 
     
 > [!NOTE]
-> If the  _SeniorityIndex_ parameter isn't set or is equal for two or more users, the HAB sorting order uses the  _PhoneticDisplayName_ parameter value to list the users in ascending alphabetical order. If the  _PhoneticDisplayName_ parameter value isn't set, the HAB sorting order defaults to the  _DisplayName_ parameter value and lists the users in ascending alphabetical order. 
+> If the _SeniorityIndex_ parameter isn't set or is equal for two or more users, the HAB sorting order uses the _PhoneticDisplayName_ parameter value to list the users in ascending alphabetical order. If the _PhoneticDisplayName_ parameter value isn't set, the HAB sorting order defaults to the _DisplayName_ parameter value and lists the users in ascending alphabetical order. 
   
 ## Configuring hierarchical address books
 
@@ -47,10 +47,10 @@ Detailed instructions for creating HABs are included in the topic [Enable or dis
   
 1. Create a distribution group that will be used for the root organization (top-level tier). If desired, you can use an existing organizational unit in your Exchange forest for the distribution group.
     
-2. Create distribution groups for the child tiers and designate them as members of the HAB. Modify the  _SeniorityIndex_ parameter of these groups so they're listed in the proper hierarchical order within the root organization. 
+2. Create distribution groups for the child tiers and designate them as members of the HAB. Modify the _SeniorityIndex_ parameter of these groups so they're listed in the proper hierarchical order within the root organization. 
     
-3. Add organization members. Modify the  _SeniorityIndex_ parameter of the members so they're listed in the proper hierarchical order within the child tiers. 
+3. Add organization members. Modify the _SeniorityIndex_ parameter of the members so they're listed in the proper hierarchical order within the child tiers. 
     
-4. For accessibility purposes, you can use the  _PhoneticDisplayName_ parameter, which specifies a phonetic pronunciation of the  _DisplayName_ parameter. 
+4. For accessibility purposes, you can use the _PhoneticDisplayName_ parameter, which specifies a phonetic pronunciation of the _DisplayName_ parameter. 
     
 

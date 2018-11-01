@@ -49,7 +49,7 @@ When you integrate a telephony network with Unified Messaging, there must be one
 Unified Messaging requires that you create at least one UM dial plan. Whether you create one or more dial plans, all the Exchange servers in your organization will answer incoming calls. There must also be a single or multiple UM IP gateways associated with the dial plan. In on-premises and hybrid deployments, after you install your Exchange servers and associate a UM IP gateway, all the Exchange servers will answer incoming calls for all dial plans. However, for on-premises or hybrid deployments, when you're integrating Exchange and Lync Server, you must create SIP URI dial plans.
   
 > [!IMPORTANT]
-> Each time you create a UM dial plan, a default UM mailbox policy is also created. The UM mailbox policy is named \< _Dial Plan Name_\> Default Policy. This UM mailbox policy can be deleted or configured differently. 
+> Each time you create a UM dial plan, a default UM mailbox policy is also created. The UM mailbox policy is named \<_Dial Plan Name_\> Default Policy. This UM mailbox policy can be deleted or configured differently. 
   
 When you create the first UM IP gateway and specify a UM dial plan at the time you create it, a default UM hunt group is also created. Creating these components enables the Exchange servers to receive calls from a VoIP gateway, IP PBX, or SBC and then process those incoming calls for users who are associated with the UM dial plan. In on-premises or hybrid deployments, when a call comes in to the VoIP gateway, IP PBX, or SBC, it forwards the call to a Client Access server. The Client Access server then forwards the call to a Mailbox server and the Mailbox server tries to match the extension number of the user to the associated UM dial plan.
   
@@ -75,7 +75,7 @@ When a call is received by a PBX and the UM-enabled user isn't available to answ
   
 - Tel:512345 
     
-- 512345@\< _IP address_\>
+- 512345@\<_IP address_\>
     
 The telephone extension (TelExtn) format used is based on the configuration of the VoIP gateway or IP PBX.
   
@@ -85,7 +85,7 @@ Session Initiation Protocol (SIP) is a standard protocol for initiating interact
   
 When you create a new dial plan, you have the option of creating a SIP URI dial plan if your environment has Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server deployed. You can also create a SIP URI dial plan if your organization has IP PBXs or SIP-enabled PBXs. In the latter case, your organization must also support SIP URIs and SIP routing.
   
-A SIP URI is a user's SIP phone number. The SIP URI resembles an email address and is written in the following format: sip _:\<username\>@\<domain or IP address\>_: _Port_. When a SIP-enabled IP PBX or PBX is used to send a call to the Exchange servers, the device will send the SIP URI for the calling and called party in the SIP header and will not include extension numbers.
+A SIP URI is a user's SIP phone number. The SIP URI resembles an email address and is written in the following format: sip _:\<username\>@\<domain or IP address\>_:_Port_. When a SIP-enabled IP PBX or PBX is used to send a call to the Exchange servers, the device will send the SIP URI for the calling and called party in the SIP header and will not include extension numbers.
   
 ### E.164 URI type
 

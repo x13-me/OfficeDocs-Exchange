@@ -64,7 +64,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
     
 5. As the focus moves to the **Name** text box in the **new rule** pop-up window, you hear "New rule, Name, Edit." Type the name of the new rule (such as Encrypt email for email address). To move to the next option in the window, press the Tab key. 
     
-6. As the focus moves to the ** Apply this rule if ** drop-down box, you hear "Apply this rule if, Combo box." Press the Down Arrow or Up Arrow key until you hear the condition you want to select. Press Enter. For example, if you want to encrypt messages for a particular email address, perform the following five steps: 
+6. As the focus moves to the **Apply this rule if** drop-down box, you hear "Apply this rule if, Combo box." Press the Down Arrow or Up Arrow key until you hear the condition you want to select. Press Enter. For example, if you want to encrypt messages for a particular email address, perform the following five steps: 
     
 1. In the **Apply this rule if** drop-down box, press the Down Arrow key until you hear "The recipient is." Press Enter. 
     
@@ -84,7 +84,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
     
 7. As the focus moves back to the **new rule** pop-up window, you hear "New rule." 
     
-8. To move the focus to the ** More options ** link in the **new rule** pop-up window, press the Tab key until you hear "More options link." Press Enter. 
+8. To move the focus to the **More options** link in the **new rule** pop-up window, press the Tab key until you hear "More options link." Press Enter. 
     
     > [!TIP]
     > When you select the **More options** link, more user interface (UI) elements are added to the page and more options are added to the combo boxes. To have access to the **Modify the message security** option that you need to select in the next step, you must select the **More options** link. 
