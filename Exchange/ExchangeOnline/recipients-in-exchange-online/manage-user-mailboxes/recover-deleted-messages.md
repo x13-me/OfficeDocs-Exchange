@@ -44,7 +44,7 @@ Administrators can search for and recover deleted email messages in a user's mai
     
 ## (Optional) Step 1: Connect to Exchange Online using remote PowerShell
 
-You only need to perform this step if you have an Exchange Online or Office 365 organization. If you have an Exchange Server organization, go to the next step and run the command in the Exchange Management Shell.
+You only need to perform this step if you have an Exchange Online or Office 365 organization. If you have an Exchange Server organization, go to the next step and run the command in Exchange Online PowerShell.
   
 1. On your local computer, open Windows PowerShell and run the following command.
     
@@ -52,7 +52,7 @@ You only need to perform this step if you have an Exchange Online or Office 365 
   $UserCredential = Get-Credential
   ```
 
-    In the **Windows PowerShell Credential Request** dialog box, type user name and password for an Office 365 global admin account, and then click **OK**.
+    In the **Windows PowerShell Credential Request** dialog box, type username and password for an Office 365 global admin account, and then click **OK**.
     
 2. Run the following command.
     
@@ -76,7 +76,7 @@ For more information or if you have problems connecting to your Exchange Online 
   
 ## Step 2: Search for and recover missing items
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging Policy and Compliance Permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging Policy and Compliance Permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
   
 > [!NOTE]
 > You can use In-Place eDiscovery in the Exchange admin center (EAC) to search for missing items. However, when using the EAC, you can't restrict the search to the Recoverable Items folder. Messages matching your search parameters will be returned even if they're not deleted. After they're recovered to the specified discovery mailbox, you may need to review the search results and remove unnecessary messages before recovering the remaining messages to the user's mailbox or exporting them to a .pst file. > For details about how to use the EAC to perform an In-Place eDiscovery search, see [Create an In-Place eDiscovery search](../../security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search.md). 
@@ -94,9 +94,9 @@ Search-Mailbox "April Stewart" -SearchQuery "from:'Ken Kwok' AND seattle" -Targe
 ```
 
 > [!NOTE]
-> When using the **Search-Mailbox** cmdlet, you can scope the search by using the  _SearchQuery_ parameter to specify a query formatted using Keyword Query Language (KQL). You can also use the  _SearchDumpsterOnly_ switch to search only items in the Recoverable Items folder. 
+> When using the **Search-Mailbox** cmdlet, you can scope the search by using the _SearchQuery_ parameter to specify a query formatted using Keyword Query Language (KQL). You can also use the _SearchDumpsterOnly_ switch to search only items in the Recoverable Items folder. 
   
-For detailed syntax and parameter information, see [Search-Mailbox](http://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
+For detailed syntax and parameter information, see [Search-Mailbox](https://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
   
  **How do you know this worked?**
   
@@ -104,14 +104,14 @@ To verify that you have successfully searched the messages you want to recover, 
   
 ## Step 3: Restore recovered items
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging Policy and Compliance Permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place eDiscovery" entry in the [Messaging Policy and Compliance Permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
   
 > [!NOTE]
 > You can't use the EAC to restore recovered items. 
   
 After messages have been recovered to a discovery mailbox, you can restore them to the user's mailbox by using the **Search-Mailbox** cmdlet. In Exchange Server, you can also use the **New-MailboxExportRequest** and **New-MailboxImportRequest** cmdlets to export the messages to or import the messages from a .pst file. 
   
-### Use the Shell to restore messages
+### Use Exchange Online PowerShell to restore messages
 
 This example restores messages to April Stewart's mailbox and deletes them from the Discovery Search Mailbox.
   
@@ -119,15 +119,15 @@ This example restores messages to April Stewart's mailbox and deletes them from 
 Search-Mailbox "Discovery Search Mailbox" -SearchQuery "from:'Ken Kwok' AND seattle" -TargetMailbox "April Stewart" -TargetFolder "Recovered Messages" -LogLevel Full -DeleteContent
 ```
 
-For detailed syntax and parameter information, see [Search-Mailbox](http://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
+For detailed syntax and parameter information, see [Search-Mailbox](https://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
   
  **How do you know this worked?**
   
 To verify that you have successfully recovered messages to the user's mailbox, have the user review messages in the target folder you specified in the above command. 
   
-### (Exchange Server) Use the Shell to export and import messages from a .pst file
+### (Exchange Server) Use Exchange Online PowerShell to export and import messages from a .pst file
 
-In Exchange Server, you can export contents from a mailbox to a .pst file and import the contents of a .pst file to a mailbox. To learn more about mailbox import and export, see [Understanding Mailbox Import and Export Requests](http://technet.microsoft.com/library/157a7d88-d3aa-4056-9a50-df67451b14be.aspx). You can't perform this task in Exchange Online.
+In Exchange Server, you can export contents from a mailbox to a .pst file and import the contents of a .pst file to a mailbox. To learn more about mailbox import and export, see [Understanding Mailbox Import and Export Requests](https://technet.microsoft.com/library/157a7d88-d3aa-4056-9a50-df67451b14be.aspx). You can't perform this task in Exchange Online.
   
 This example uses the following settings to export messages from the folder April Stewart Recovery in the Discovery Search Mailbox to a .pst file:
   
@@ -143,7 +143,7 @@ This example uses the following settings to export messages from the folder Apri
 New-MailboxExportRequest -Mailbox "Discovery Search Mailbox" -SourceRootFolder "April Stewart Recovery" -ContentFilter {Subject -eq "April travel plans"} -FilePath \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst
 ```
 
-For detailed syntax and parameter information, see [New-MailboxExportRequest](http://technet.microsoft.com/library/1625c25a-7cc9-459c-97ea-281ac421bbce.aspx).
+For detailed syntax and parameter information, see [New-MailboxExportRequest](https://technet.microsoft.com/library/1625c25a-7cc9-459c-97ea-281ac421bbce.aspx).
   
 This example uses the following settings to import messages from a .pst file to the folder Recovered By Helpdesk in April Stewart's mailbox:
   
@@ -157,7 +157,7 @@ This example uses the following settings to import messages from a .pst file to 
 New-MailboxImportRequest -Mailbox "April Stewart" -TargetRootFolder "Recovered By Helpdesk" -FilePath \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst 
 ```
 
-For detailed syntax and parameter information, see [New-MailboxImportRequest](http://technet.microsoft.com/library/4ca9af1a-33fa-4d53-a765-f46a1b7f2d3a.aspx).
+For detailed syntax and parameter information, see [New-MailboxImportRequest](https://technet.microsoft.com/library/4ca9af1a-33fa-4d53-a765-f46a1b7f2d3a.aspx).
   
  **How do you know this worked?**
   
@@ -165,13 +165,13 @@ To verify that you have successfully exported messages to a .pst file, use Outlo
   
 ## More information
 
-- The ability to recover deleted items is enabled by single item recovery, which lets an administrator recover a message that's been purged by a user or by retention policy as long as the deleted item retention period hasn't expired for that item. To learn more about single item recovery, see [Recoverable Items Folder](http://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx).
+- The ability to recover deleted items is enabled by single item recovery, which lets an administrator recover a message that's been purged by a user or by retention policy as long as the deleted item retention period hasn't expired for that item. To learn more about single item recovery, see [Recoverable Items Folder](https://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx).
     
 - An Exchange Online mailbox is configured to retain deleted items for 14 days, by default. You can change this setting to a maximum of 30 days. In Exchange Server, a mailbox database is configured to retain deleted items for 14 days, by default. You can configure deleted item retention settings for a mailbox or mailbox database. For more information, see:
     
   - [Change how long permanently deleted items are kept for an Exchange Online mailbox](change-deleted-item-retention.md)
     
-  - [Configure Deleted Item Retention and Recoverable Items Quotas](http://technet.microsoft.com/library/de7d667a-1c93-4364-a4f9-2aa5e3678b12.aspx)
+  - [Configure Deleted Item Retention and Recoverable Items Quotas](https://technet.microsoft.com/library/de7d667a-1c93-4364-a4f9-2aa5e3678b12.aspx)
     
 - As previously explained, you can also use the In-Place eDiscovery tool to find and export deleted items to a PST file. The user will use this PST file to restore the deleted messages to their mailbox. For detailed instructions, see [Recover deleted items in a user's mailbox - Admin Help](https://go.microsoft.com/fwlink/p/?LinkId=722928).
     
@@ -183,8 +183,8 @@ To verify that you have successfully exported messages to a .pst file, use Outlo
     
   - [Recover deleted items or email in Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=524924)
     
-- This topic shows you how to use the **Search-Mailbox** cmdlet to search for and recover missing items. If you use this cmdlet, you can search only one mailbox at a time. If you want to search multiple mailboxes at the same time, you can use [In-Place eDiscovery](../../security-and-compliance/in-place-ediscovery/in-place-ediscovery.md) in the Exchange admin center (EAC) or the [New-MailboxSearch](http://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx) cmdlet in Windows PowerShell. 
+- This topic shows you how to use the **Search-Mailbox** cmdlet to search for and recover missing items. If you use this cmdlet, you can search only one mailbox at a time. If you want to search multiple mailboxes at the same time, you can use [In-Place eDiscovery](../../security-and-compliance/in-place-ediscovery/in-place-ediscovery.md) in the Exchange admin center (EAC) or the [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx) cmdlet in Windows PowerShell. 
     
-- In addition to using this procedure to search for and recover deleted items, you can also use a similar procedure to search for items in user mailboxes and then delete those items from the source mailbox. For more information, see [Search and delete messages](http://technet.microsoft.com/library/8c36bb03-e716-4fdd-9958-4aa7a2a1db42.aspx).
+- In addition to using this procedure to search for and recover deleted items, you can also use a similar procedure to search for items in user mailboxes and then delete those items from the source mailbox. For more information, see [Search and delete messages](https://technet.microsoft.com/library/8c36bb03-e716-4fdd-9958-4aa7a2a1db42.aspx).
     
 

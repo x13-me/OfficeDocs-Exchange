@@ -33,11 +33,11 @@ Create a new Sharing Policy to change how people in your organization share cale
     
 2. Go to **organization** \> **sharing**.
     
-3. In the list view, under **Individual Sharing**, click **New**![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. In the list view, under **Individual Sharing**, click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
 4. In **new sharing policy**, type a friendly name for the sharing policy in the **Policy name** box. 
     
-5. Click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to define the sharing rules for the policy. 
+5. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to define the sharing rules for the policy. 
     
 6. In **sharing rule**, select one of the following options to specify the domains you want to share with:
     
@@ -61,7 +61,7 @@ Create a new Sharing Policy to change how people in your organization share cale
     
 11. Click **save** to create the sharing policy. 
     
-### Use the Exchange Management Shell to create a sharing policy
+### Use Exchange Online PowerShell to create a sharing policy
 <a name="BKMK_Shell"> </a>
 
 - This example creates the sharing policy Contoso. This policy allows users in the contoso.com domain to see your user's detailed calendar availability (free/busy) information. By default, this policy is enabled.
@@ -76,17 +76,17 @@ Create a new Sharing Policy to change how people in your organization share cale
   New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail' -Enabled $false
   ```
 
-For detailed syntax and parameter information, see [New-SharingPolicy](http://technet.microsoft.com/library/ffca8853-3429-448f-ad5e-5435dc44f9d0.aspx).
+For detailed syntax and parameter information, see [New-SharingPolicy](https://technet.microsoft.com/library/ffca8853-3429-448f-ad5e-5435dc44f9d0.aspx).
   
 ## How do you know this worked?
 
-To verify that you have successfully created the sharing policy, run the following Exchange Management Shell command to view the sharing policy information.
+To verify that you have successfully created the sharing policy, run the following command to view the sharing policy information.
   
 ```
 Get-SharingPolicy <policy name> | format-list
 ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 

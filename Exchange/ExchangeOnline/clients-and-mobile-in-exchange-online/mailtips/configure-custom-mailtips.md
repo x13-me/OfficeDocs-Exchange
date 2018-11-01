@@ -30,22 +30,22 @@ In addition to the built-in MailTips that are available, you can create custom M
 
 - Estimated time to complete: 10 minutes
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "MailTips" entry in the [Mail flow permissions](http://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "MailTips" entry in the [Mail flow permissions](https://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic. 
     
-- You can configure the primary MailTip in the Exchange admin center (EAC) or in the Shell. However, you can only configure additional MailTip translations in the Shell.
+- You can configure the primary MailTip in the Exchange admin center (EAC) or in Exchange Online PowerShell. However, you can only configure additional MailTip translations in Exchange Online PowerShell.
     
 - When you add a MailTip to a recipient, two things happen:
     
-  - HTML tags are automatically added to the text. For example, if you enter the text:  `This mailbox is not monitored`, the MailTip automatically becomes:  `<html><body>This mailbox is not monitored</body></html>`. Additional HTML tags in the MailTip aren't supported.
+  - HTML tags are automatically added to the text. For example, if you enter the text: `This mailbox is not monitored`, the MailTip automatically becomes: `<html><body>This mailbox is not monitored</body></html>`. Additional HTML tags in the MailTip aren't supported.
     
-  - The text is automatically added to the  _MailTipTranslations_ property of the recipient as the default value. If you modify the MailTip text, the default value is automatically updated in the  _MailTipTranslations_ property. 
+  - The text is automatically added to the _MailTipTranslations_ property of the recipient as the default value. If you modify the MailTip text, the default value is automatically updated in the _MailTipTranslations_ property. 
     
 - The length of a MailTip can't exceed 175 displayed characters.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
@@ -67,13 +67,13 @@ In addition to the built-in MailTips that are available, you can create custom M
     
   - **Shared**
     
-3. On the recipient tab, select the recipient you want to modify, and click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. On the recipient tab, select the recipient you want to modify, and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 4. In the recipient properties page that appears, click **MailTips**.
     
 5. Enter the text for the MailTip. When you are finished, click **Save**.
     
-#### Use the Shell to configure MailTips for recipients
+#### Use Exchange Online PowerShell to configure MailTips for recipients
 
 To configure a MailTip for a recipient, use the following syntax.
   
@@ -81,7 +81,7 @@ To configure a MailTip for a recipient, use the following syntax.
 Set-<RecipientType> <RecipientIdentity> -MailTip "<MailTip text>"
 ```
 
- _\<RecipientType\>_ can be any type of recipient. For example,  `Mailbox`,  `MailUser`,  `MailContact`,  `DistributionGroup`, or  `DynamicDistributionGroup`.
+ _\<RecipientType\>_ can be any type of recipient. For example, `Mailbox`, `MailUser`, `MailContact`, `DistributionGroup`, or `DynamicDistributionGroup`.
   
 For example, suppose you have a mailbox named "Help Desk" for users to submit support requests, and the promised response time is two hours. To configure a custom MailTip that explains this, run the following command:
   
@@ -89,7 +89,7 @@ For example, suppose you have a mailbox named "Help Desk" for users to submit su
 Set-Mailbox "Help Desk" -MailTip "A Help Desk representative will contact you within 2 hours."
 ```
 
-### Use the Shell to configure additional MailTips in different languages
+### Use Exchange Online PowerShell to configure additional MailTips in different languages
 
 To configure additional MailTip translations without affecting the existing MailTip text or other existing MailTip translations, use the following syntax:
   

@@ -33,14 +33,14 @@ Navigate with Internet Explorer and keyboard shortcuts, and make sure that you h
 
 Exchange Online, which includes the EAC, is a web-based application, so the keyboard shortcuts and navigation may be different from those in Exchange 2016. [Accessibility in the Exchange admin center](accessibility-in-exchange-admin-center.md).
   
-For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/?LinkID=787614).
+For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=787614).
   
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/?LinkID=317550).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
   
 ### Confirm your Office 365 subscription plan
 
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://go.microsoft.com/fwlink/?LinkID=797552
-) and [Exchange Online Service Description.](https://go.microsoft.com/fwlink/?LinkID=797553
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://go.microsoft.com/fwlink/p/?LinkID=797552
+) and [Exchange Online Service Description.](https://go.microsoft.com/fwlink/p/?LinkID=797553
 ).
   
 ### Open the EAC, and confirm your admin role
@@ -57,7 +57,7 @@ Troubleshoot configuration issues by examining logged information about mailbox 
 When Exchange mailbox auditing is enabled for a mailbox, information is recorded in the mailbox audit log whenever a user other than the owner accesses that mailbox. Each log entry includes information about who accessed the mailbox and what actions were performed. Search for non-owner mailbox access when you need to troubleshoot possible security issues.
   
 > [!NOTE]
-> Before you can search for non-owner mailbox access, you or another Admin must enable mailbox audit logging, which is done in the Remote Windows PowerShell. [Learn more about running a non-owner mailbox access report](https://go.microsoft.com/fwlink/?LinkId=799418). 
+> Before you can search for non-owner mailbox access, you or another Admin must enable mailbox audit logging, which is done in Exchange Online PowerShell. [Learn more about running a non-owner mailbox access report](https://go.microsoft.com/fwlink/p/?LinkId=799418). 
   
 1. In the EAC, press Ctrl+F6 until the primary navigation pane has the focus and you hear "Dashboard, Primary navigation link."
     
@@ -138,7 +138,7 @@ When Exchange mailbox auditing is enabled for a mailbox, information is recorded
   
 ### Search for configuration changes on a mailbox
 
-With administrator audit logging, Exchange records specific changes an administrator makes to the organization's Exchange configuration. Such changes can include adding users, adding public folders, creating policies or rules, and so on. This can help you troubleshoot configuration problems or identify the cause of security-related or compliance-related problems. [Learn more about viewing the administrator audit log](https://go.microsoft.com/fwlink/?LinkId=799437).
+With administrator audit logging, Exchange records specific changes an administrator makes to the organization's Exchange configuration. Such changes can include adding users, adding public folders, creating policies or rules, and so on. This can help you troubleshoot configuration problems or identify the cause of security-related or compliance-related problems. [Learn more about viewing the administrator audit log](https://go.microsoft.com/fwlink/p/?LinkId=799437).
   
 1. In the EAC, press Ctrl+F6 until the primary navigation pane has the focus and you hear "Dashboard, Primary navigation link."
     
@@ -187,7 +187,7 @@ With administrator audit logging, Exchange records specific changes an administr
   
 ### Search for administrator role group changes
 
-You can search for administrator role changes, which, like configuration changes, are recorded in the administrator audit log. With a targeted search, you can examine the admin audit log for changes made to role groups, which are used to assign administrative permissions to users. [Learn more about running an administrator role group report](https://go.microsoft.com/fwlink/?LinkId=799420).
+You can search for administrator role changes, which, like configuration changes, are recorded in the administrator audit log. With a targeted search, you can examine the admin audit log for changes made to role groups, which are used to assign administrative permissions to users. [Learn more about running an administrator role group report](https://go.microsoft.com/fwlink/p/?LinkId=799420).
   
 1. In the EAC, press Ctrl+F6 until the primary navigation pane has the focus and you hear "Dashboard, Primary navigation link."
     
@@ -257,7 +257,7 @@ Monitor regulatory, compliance, and litigation requirements by finding status ch
   
 ### Search for changes to In-Place eDiscovery and Hold status
 
-If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery and In-Place Hold in Exchange Online can help you perform discovery searches for relevant content within mailboxes. You can search the administrator audit log to find mailboxes that have been put on or removed from In-Place eDiscovery or In-Place Hold. [Learn more about In-Place eDiscovery & Hold reports](https://go.microsoft.com/fwlink/?LinkId=799419).
+If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery and In-Place Hold in Exchange Online can help you perform discovery searches for relevant content within mailboxes. You can search the administrator audit log to find mailboxes that have been put on or removed from In-Place eDiscovery or In-Place Hold. [Learn more about In-Place eDiscovery & Hold reports](https://go.microsoft.com/fwlink/p/?LinkId=799419).
   
 1. In the EAC, press Ctrl+F6 until the primary navigation pane has the focus and you hear "Dashboard, Primary navigation link."
     
@@ -303,7 +303,7 @@ If your organization adheres to legal discovery requirements (related to organiz
     
 ### Search for mailboxes that are enabled or disabled for litigation holds
 
-If your organization is involved in a legal action, you may have to take steps to preserve email messages that might be used as evidence. You can use the litigation hold feature to retain all email sent and received by specific people or retain all email sent and received in your organization for a specific time period. Search the administrator audit log to monitor the mailboxes that have had a change to their litigation hold status (enabled or disabled) during a specified time period. Learn more about [running a per-mailbox litigation hold report](https://go.microsoft.com/fwlink/?LinkId=799414).
+If your organization is involved in a legal action, you may have to take steps to preserve email messages that might be used as evidence. You can use the litigation hold feature to retain all email sent and received by specific people or retain all email sent and received in your organization for a specific time period. Search the administrator audit log to monitor the mailboxes that have had a change to their litigation hold status (enabled or disabled) during a specified time period. Learn more about [running a per-mailbox litigation hold report](https://go.microsoft.com/fwlink/p/?LinkId=799414).
   
 1. In the EAC, press Ctrl+F6 until the primary navigation pane has the focus and you hear "Dashboard, Primary navigation link."
     
@@ -351,7 +351,7 @@ If your organization is involved in a legal action, you may have to take steps t
 3. To add the user to the list of mailboxes in the litigation hold search, press the Down Arrow key until you hear the user's name, and then press Enter. The list of users retains the focus, so you can continue to add more users by selecting their mailboxes and pressing Enter.
     
     > [!TIP]
-    > To check the users you've added, tab to the **Add** button. To hear the list of users, press the Tab key again. The first name is read. To hear the second name in the list, press the Tab key once more. Continue pressing the Tab key until you hear the names of all the users you've added. To delete a user from the list, activate the **Remove** link by pressing Enter when you hear the user name. 
+    > To check the users you've added, tab to the **Add** button. To hear the list of users, press the Tab key again. The first name is read. To hear the second name in the list, press the Tab key once more. Continue pressing the Tab key until you hear the names of all the users you've added. To delete a user from the list, activate the **Remove** link by pressing Enter when you hear the username. 
   
 4. To add an external user, press the Tab key until you hear "Check names edit, Type in text." (In Narrator, you hear "Editing.") Type the email address of the external user, press Shift+Tab to select the **Check names** button, and then press Enter. This verifies the email address and adds it to the list of users. 
     

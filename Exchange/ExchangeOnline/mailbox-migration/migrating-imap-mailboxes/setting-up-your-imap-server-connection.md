@@ -30,7 +30,7 @@ Office 365 needs the name of the source email server from which you want to migr
   
  **To get the name of your source email system by using TE102821288**
   
-- In Outlook Web App, on the toolbar, choose **Settings**![Office 365 Settings button](../media/a9a59c0f-2e67-4cbf-9438-af273b0d552b.png) \> **Options** \> **Mail** \> **Accounts** \> **POP and IMAP**. Below your account information, you'll see a link to **Settings for POP and IMAP access**. Your IMAP server name, if enabled, is listed under IMAP setting.
+- In Outlook Web App, on the toolbar, choose **Settings** ![Office 365 Settings button](../media/a9a59c0f-2e67-4cbf-9438-af273b0d552b.png) \> **Options** \> **Mail** \> **Accounts** \> **POP and IMAP**. Below your account information, you'll see a link to **Settings for POP and IMAP access**. Your IMAP server name, if enabled, is listed under IMAP setting.
     
     ![Shows the link for POP or IMAP access settings](../media/fa54c636-4fd3-4fcd-add3-4e7c69072493.png)
   

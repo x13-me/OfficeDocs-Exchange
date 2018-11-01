@@ -33,7 +33,7 @@ Sharing policies control how your users share their calendars with people outsid
     
 2. Go to **recipients** \> **mailboxes**.
     
-3. In the list view, select the mailbox you want, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. In the list view, select the mailbox you want, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 4. In **User Mailbox**, click **mailbox features**.
     
@@ -58,7 +58,7 @@ Sharing policies control how your users share their calendars with people outsid
     
 7. Click **save** to apply the sharing policy to the selected mailboxes. 
     
-### Use the Exchange Management Shell to apply a sharing policy to one or more mailboxes
+### Use Exchange Online PowerShell to apply a sharing policy to one or more mailboxes
 <a name="BKMK_Shell"> </a>
 
 This example applies the sharing policy Contoso to Barbara's mailbox.
@@ -81,21 +81,21 @@ This example shows all mailboxes that have the sharing policy Contoso applied, a
 Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso"} | format-table Alias, EmailAddresses
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) and [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) and [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
   
 ## How do you know this worked?
 
 To verify that you have successfully applied the sharing policy to a user mailbox, do one of the following:
   
-- In the Exchange admin center, go to **recipients** \> **mailboxes**, and then select the mailbox to which you applied the sharing policy. Click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif), click **mailbox features**, and then confirm that the correct sharing policy displays in the **Sharing policy**.
+- In the Exchange admin center, go to **recipients** \> **mailboxes**, and then select the mailbox to which you applied the sharing policy. Click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif), click **mailbox features**, and then confirm that the correct sharing policy displays in the **Sharing policy**.
     
-- Run the following Exchange Management Shell command to verify the sharing policy was assigned to a user mailbox. Verify that the correct sharing policy is listed for the  _SharingPolicy_ parameter. 
+- Run the following command to verify the sharing policy was assigned to a user mailbox. Verify that the correct sharing policy is listed for the _SharingPolicy_ parameter. 
     
   ```
-  Get-Mailbox <user name> | format-list
+  Get-Mailbox <username> | format-list
   ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 

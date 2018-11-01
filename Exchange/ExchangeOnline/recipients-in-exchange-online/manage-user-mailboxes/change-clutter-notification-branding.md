@@ -32,7 +32,7 @@ To begin, you will need to sign in to Office 365 with your work or school accoun
     
 3. Select the plus [ **+**] sign to add a user. The **Create a new user account** dialog will open. 
     
-4. In the **Create a new user account** dialog, enter a **Display name** and a **User name**. The display name will appear in the Sender field for all Clutter notifications sent to your users. Office 365 generates a new temporary password for the new user account. Click **Create** to create the account. 
+4. In the **Create a new user account** dialog, enter a **Display name** and a **username**. The display name will appear in the Sender field for all Clutter notifications sent to your users. Office 365 generates a new temporary password for the new user account. Click **Create** to create the account. 
     
 5. Go the Exchange admin center.
     
@@ -59,7 +59,7 @@ To begin, you will need to sign in to Office 365 with your work or school accoun
 
 You can also create a new shared mailbox as the branding mailbox using PowerShell. Follow these steps.
   
-1. [Connect to Exchange Online Using Remote PowerShell](http://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
+1. [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
     
 2. Type the following commands:
     

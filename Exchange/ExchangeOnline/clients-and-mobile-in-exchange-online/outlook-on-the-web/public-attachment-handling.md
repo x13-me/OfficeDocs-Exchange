@@ -14,21 +14,21 @@ description: "As an admin, you can set up both private and public attachment han
 
 # Public attachment handling in Exchange Online
 
-As an admin, you can set up both private and public attachment handling in Outlook Web App depending on how you configure your Outlook Web App mailbox policies. The settings for private (internal) and public (external) networks define how users can open, view, send, or receive attachments depending on whether a user is signed in to Outlook Web App on a computer that is part of a private or of a public network. 
+As an admin, you can set up both private and public attachment handling in Outlook on the web (formerly known as Outlook Web App) depending on how you configure your Outlook Web App mailbox policies. The settings for private (internal) and public (external) networks define how users can open, view, send, or receive attachments depending on whether a user is signed in to Outlook Web App on a computer that is part of a private or of a public network. 
   
 ## How can I control public attachment handling?
 
-Although there are both private (internal network) and public (external network) settings to control attachments using Outlook Web App mailbox policies, admins require more consistent and reliable attachment handling when a user signs in to Outlook Web App from a computer on a public network such as at a coffee shop or library. To set up the ability to enforce attachment handling from external networks for an entire organization in Exchange Online, first use the [Set-OrganizationConfig](http://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx) cmdlet, set the  _PublicComputersDetectionEnabled_ parameter to  `$true`, configure the correct Outlook Web App mailbox policy either by using the Exchange admin center (EAC) or the [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) cmdlet and create claim rules in AD FS. Enabling this setting the on the [Set-OrganizationConfig](http://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx) cmdlet and creating the claim rules will enable Exchange Online to tell if a user is signing in to Outlook Web App from a private and public network or computer. 
+Although there are both private (internal network) and public (external network) settings to control attachments using Outlook Web App mailbox policies, admins require more consistent and reliable attachment handling when a user signs in to Outlook Web App from a computer on a public network such as at a coffee shop or library. To set up the ability to enforce attachment handling from external networks for an entire organization in Exchange Online, first use the [Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx) cmdlet, set the _PublicComputersDetectionEnabled_ parameter to `$true`, configure the correct Outlook Web App mailbox policy either by using the Exchange admin center (EAC) or the [Set-OwaMailboxPolicy](https://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) cmdlet and create claim rules in AD FS. Enabling this setting the on the [Set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx) cmdlet and creating the claim rules will enable Exchange Online to tell if a user is signing in to Outlook Web App from a private and public network or computer. 
   
-The Outlook Web App mailbox policy parameters in the following table should be set to  `$true` to enable an admin to control attachment handling for public computers and networks. 
+The Outlook Web App mailbox policy parameters in the following table should be set to `$true` to enable an admin to control attachment handling for public computers and networks. 
   
-|****Exchange Management Shell parameter****|****Description****|
+|**Parameter***|**Description**|
 |:-----|:-----|
-| _DirectFileAccessOnPublicComputersEnabled_ <br/> |Specifies left-click and other options available for attachments when the user has signed in to Outlook Web App from a computer outside of a private or corporate network. If this parameter is set to  `$true`, **Open** and other options are available. If it's set to  `$false`, the **Open** option is disabled.  <br/> |
-| _ForceWacViewingFirstOnPublicComputers_ <br/> |Specifies whether a user who signed in to Outlook Web App from a computer outside of a private or corporate network can open an Office file directly without first viewing it as a webpage.  <br/> |
-| _ForceWebReadyDocumentViewingFirstOnPublicComputers_ <br/> |Specifies whether a user who has signed in to Outlook Web App can open a document directly without first viewing it as a webpage.  <br/> |
-| _WacViewingOnPublicComputersEnabled_ <br/> |Specifies whether a user who has signed into Outlook Web App from a computer outside of the corporate network can view supported Office files using Outlook Web App.  <br/> |
-| _WebReadyDocumentViewingOnPublicComputersEnabled_ <br/> |Specifies whether WebReady Document Viewing is enabled when the user has signed in from a computer outside of the corporate network.  <br/> |
+|_DirectFileAccessOnPublicComputersEnabled_|Specifies left-click and other options available for attachments when the user has signed in to Outlook Web App from a computer outside of a private or corporate network. If this parameter is set to `$true`, **Open** and other options are available. If it's set to `$false`, the **Open** option is disabled.|
+|_ForceWacViewingFirstOnPublicComputers_|Specifies whether a user who signed in to Outlook Web App from a computer outside of a private or corporate network can open an Office file directly without first viewing it as a webpage.|
+|_ForceWebReadyDocumentViewingFirstOnPublicComputers_|Specifies whether a user who has signed in to Outlook Web App can open a document directly without first viewing it as a webpage.|
+|_WacViewingOnPublicComputersEnabled_|Specifies whether a user who has signed into Outlook Web App from a computer outside of the corporate network can view supported Office files using Outlook Web App.|
+|_WebReadyDocumentViewingOnPublicComputersEnabled_|Specifies whether WebReady Document Viewing is enabled when the user has signed in from a computer outside of the corporate network.|
    
 ## What do you need to know before you begin?
 
@@ -53,18 +53,27 @@ The Outlook Web App mailbox policy parameters in the following table should be s
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## Task 1 - Enable public attachment handling for your organization
 
-Run the following command:  `Set-OrganizationConfig -PublicComputersDetectionEnabled $true`
+Run the following command:
+
+```
+Set-OrganizationConfig -PublicComputersDetectionEnabled $true
+```
   
-> [!NOTE]
->  Setting this parameter to  `$true` won't affect the settings for the following parameters: >  _ForceWacViewingFirstOnPublicComputers_>  _WSSAccessOnPublicComputersEnabled_>  _UNCAccessOnPublicComputersEnabled_
+**Note:**: Setting this parameter to `$true` won't affect the settings for the following parameters:
+
+- _ForceWacViewingFirstOnPublicComputers_
+
+- _WSSAccessOnPublicComputersEnabled_
+
+- _UNCAccessOnPublicComputersEnabled_
   
 ## Task 2 - Add and create claim rules in AD FS 2.0
 
-You must create a custom claim rule because an AD FS server relies on the presence of the  `x-ms-proxy` claim to detect whether user is coming from an internal or external network. When an AD FS proxy is deployed for external or public access, and if the user is coming from outside a private network, there will be an  `x-ms-proxy` claim sent from AD FS proxy to an AD FS server. To learn more about claim rules in AD FS, see [Create a Rule to Send Claims Using a Custom Rule](https://go.microsoft.com/fwlink/p/?LinkId=329966)
+You must create a custom claim rule because an AD FS server relies on the presence of the `x-ms-proxy` claim to detect whether user is coming from an internal or external network. When an AD FS proxy is deployed for external or public access, and if the user is coming from outside a private network, there will be an `x-ms-proxy` claim sent from AD FS proxy to an AD FS server. To learn more about claim rules in AD FS, see [Create a Rule to Send Claims Using a Custom Rule](https://go.microsoft.com/fwlink/p/?LinkId=329966)
   
 1. On the **Start Screen**, type **AD FS Management**, and then press **Enter**.
     
@@ -78,7 +87,7 @@ You must create a custom claim rule because an AD FS server relies on the presen
     
 6. Under **Custom rule**, input the following: `exists ([Type == "http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-proxy"]) => issue(Type = "http://schemas.microsoft.com/ws/2012/01/insidecorporatenetwork", Value = "false");`
     
-7. Next, input the following:  `NOT exists ([Type == "http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-proxy"]) => issue(Type = "http://schemas.microsoft.com/ws/2012/01/insidecorporatenetwork", Value = "true");`
+7. Next, input the following: `NOT exists ([Type == "http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-proxy"]) => issue(Type = "http://schemas.microsoft.com/ws/2012/01/insidecorporatenetwork", Value = "true");`
     
 8. Click **Finish**.
     
@@ -104,18 +113,80 @@ You must create a custom claim rule because an AD FS server relies on the presen
     
 4. Click **Save** to update the policy. 
     
-### Use the Exchange Management Shell to enable public attachment handling settings
+### Use Exchange Online PowerShell to enable public attachment handling settings
 
-Run the following command:  `Set-OwaMailboxPolicy -id MyOWAPublicPolicy -DirectFileAccessOnPublicComputersEnabled $true -ForceWacViewingFirstOnPublicComputers $true -WacViewingOnPublicComputersEnabled $true -WebReadyDocumentViewingOnPublicComputersEnabled $true`
+Run the following command:
+
+```
+Set-OwaMailboxPolicy -Identity MyOWAPublicPolicy -DirectFileAccessOnPublicComputersEnabled $true -ForceWacViewingFirstOnPublicComputers $true -WacViewingOnPublicComputersEnabled $true -WebReadyDocumentViewingOnPublicComputersEnabled $true
+```
   
 ## What you need to know about attachments?
 
 An attachment can be a file that's created in any program, for example, a Word document, an Excel spreadsheet, a .wav file, or a bitmap file. Users can attach or include one or more files on any item that they create in their mailbox, for example, an email message, calendar item, or contact. Outlook Web App allows you to send and receive many common files types. Continuously
   
-Some attachments might be removed or blocked by antivirus software used by your organization, by the organization of the recipients of your email, or you might be required to save them on your computer before you can open them. By default, Outlook Web App allows you to open attached Word, Excel, PowerPoint, text files and many media files directly. The files you can open from Outlook Web App vary depending on your account settings. The following table lists the default file name extensions that you can open in Outlook Web App.
+Some attachments might be removed or blocked by antivirus software used by your organization, by the organization of the recipients of your email, or you might be required to save them on your computer before you can open them. By default, Outlook Web App allows you to open attached Word, Excel, PowerPoint, text files and many media files directly. The files you can open from Outlook Web App vary depending on your account settings. The following list describes the default file name extensions that you can open in Outlook Web App.
   
-|||
-|:-----|:-----|
-|**File name extensions allowed by default** <br/> |.rpmsg, xls, .xlsx, .xlsm, .xlsb, .pptx, .pptm, .ppsx, .ppsm, .doc, .docx, .docm, .xls, .wmv, .wma, .wav, vsd, .txt, .tif, .rtf, .pub, .ppt, .png, .pdf, .one, .mp3, .jpeg, .gif, .doc, .bmp, .avi  <br/> |
-   
+**File name extensions allowed by default**:
 
+- .avi
+
+- .bmp
+
+- .doc
+
+- .doc
+
+- .docm
+
+- .docx
+
+- .gif
+
+- .jpeg
+
+- .mp3
+
+- .one
+
+- .pdf
+
+- .png
+
+- .ppsm
+
+- .ppsx
+
+- .ppt
+
+- .pptm
+
+- .pptx
+
+- .pub
+
+- .rpmsg
+
+- .rtf
+
+- .tif
+
+- .txt
+
+- .vsd
+
+- .wav
+
+- .wma
+
+- .wmv
+
+- .xls
+
+- .xls
+
+- .xlsb
+
+- .xlsm
+
+- .xlsx

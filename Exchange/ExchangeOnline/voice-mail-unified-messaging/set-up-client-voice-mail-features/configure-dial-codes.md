@@ -24,14 +24,14 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 
 - Estimated time to complete: Less than 1 minute.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM dial plans" entry in the [Unified Messaging Permissions](http://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM dial plans" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
     
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](../../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -39,7 +39,7 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
     
-2. Select the UM dial plan you want to manage, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. Select the UM dial plan you want to manage, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 3. On the **UM Dial Plan** page, click **Configure**.
     
@@ -59,13 +59,13 @@ For additional management tasks related to outdialing, see [Allowing users to ma
     
   - **International number format**
     
-  - **Number formats for incoming calls within the same dial plan** To add a number format, click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+  - **Number formats for incoming calls within the same dial plan** To add a number format, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
 6. Click **Save** to save your changes. 
     
-### Use the Shell to configure dial codes, prefixes, and number formats
+### Use Exchange Online PowerShell to configure dial codes, prefixes, and number formats
 
-This example configures a UM dial plan named  `MyUMDialPlan` with an in-country or region number format, an international number format, and the following dial codes: 
+This example configures a UM dial plan named `yUMDialPlan` with an in-country or region number format, an international number format, and the following dial codes: 
   
 - 9 for the outside line access code
     

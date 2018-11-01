@@ -16,21 +16,21 @@ description: "After you create an address book policy (ABP), you can view or mod
 
 After you create an address book policy (ABP), you can view or modify the name and the assigned global address list (GAL), offline address book (OAB), room list, and address lists.
   
-For additional management tasks related to ABPs, see [Managing Address Book Policies](http://technet.microsoft.com/library/1204db89-ee4b-459a-8c14-e8d60dd6c4a4.aspx).
+For additional management tasks related to ABPs, see [Managing Address Book Policies](https://technet.microsoft.com/library/1204db89-ee4b-459a-8c14-e8d60dd6c4a4.aspx).
   
 ## What do you need to know before you begin?
 
 - Estmated time to complete: Less than 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address book policies" entry in the [Email Address and Address Book Permissions](http://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address book policies" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic. 
     
-- Creating an ABP for an organization is a multi-step process that requires planning. For more information, see [Scenario: Deploying Address Book Policies](http://technet.microsoft.com/library/6ac3c87d-161f-447b-afb2-149ae7e3f1dc.aspx)
+- Creating an ABP for an organization is a multi-step process that requires planning. For more information, see [Scenario: Deploying Address Book Policies](https://technet.microsoft.com/library/6ac3c87d-161f-447b-afb2-149ae7e3f1dc.aspx)
     
-- You can't use the Exchange Administration Center (EAC) to configure ABPs. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to configure ABPs. You must use Exchange Online PowerShell.
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
-- Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+- Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
     
 ## What do you want to do?
 
@@ -78,6 +78,6 @@ Set-AddressBookPolicy -Identity "ABP Fabrikam" -AddressLists Fabrikam-Finance
 
 ## For more information
 
-For detailed syntax and parameter information, see [Set-AddressBookPolicy](http://technet.microsoft.com/library/c0dc5fff-af06-4008-9173-629d1f901c69.aspx).
+For detailed syntax and parameter information, see [Set-AddressBookPolicy](https://technet.microsoft.com/library/c0dc5fff-af06-4008-9173-629d1f901c69.aspx).
   
 

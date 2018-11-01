@@ -32,19 +32,19 @@ When a message is sent, it should take between 5-10 minutes for the message to a
 
 You can use the following cmdlets in Exchange Online PowerShell or Exchange Online Protection PowerShell to run a message trace:
   
-[Get-MessageTrace](http://technet.microsoft.com/library/5e5134f2-b887-4840-9dff-cea9ec8fde72.aspx): Trace messages that are less than 10 days old. 
+[Get-MessageTrace](https://technet.microsoft.com/library/5e5134f2-b887-4840-9dff-cea9ec8fde72.aspx): Trace messages that are less than 10 days old. 
   
-[Get-MessageTraceDetail](http://technet.microsoft.com/library/27e9b80c-66db-4038-b93e-edd68fe86a12.aspx): View the message trace event details for a specific message. 
+[Get-MessageTraceDetail](https://technet.microsoft.com/library/27e9b80c-66db-4038-b93e-edd68fe86a12.aspx): View the message trace event details for a specific message. 
   
-[Get-HistoricalSearch](http://technet.microsoft.com/library/70f2ec73-2733-4f87-ac89-1665d575a4dc.aspx): Use this cmdlet to view information about historical searches that have been performed within the last 10 days. 
+[Get-HistoricalSearch](https://technet.microsoft.com/library/70f2ec73-2733-4f87-ac89-1665d575a4dc.aspx): Use this cmdlet to view information about historical searches that have been performed within the last 10 days. 
   
-[Start-HistoricalSearch](http://technet.microsoft.com/library/9688689c-2953-49de-bb38-eeea10b7f08e.aspx): Start a new historical search for messages that are less than 90 days old. 
+[Start-HistoricalSearch](https://technet.microsoft.com/library/9688689c-2953-49de-bb38-eeea10b7f08e.aspx): Start a new historical search for messages that are less than 90 days old. 
   
-[Stop-HistoricalSearch](http://technet.microsoft.com/library/8868372f-842b-417d-acb2-8c08a914a779.aspx): Stop queued historical searches that haven't started yet (the status value is `NotStarted`).
+[Stop-HistoricalSearch](https://technet.microsoft.com/library/8868372f-842b-417d-acb2-8c08a914a779.aspx): Stop queued historical searches that haven't started yet (the status value is `NotStarted`).
   
-To connect to Exchange Online PowerShell, see [Connect to Exchange Online Using Remote PowerShell](http://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
+To connect to Exchange Online PowerShell, see [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
 
-To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection Using Remote PowerShell](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
+To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection Using Remote PowerShell](https://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
   
 ## Why am I getting a timeout error when running a message trace in the user interface?
 
@@ -189,7 +189,7 @@ The events section will tell you why the message was not yet delivered. When vie
   
 ## Was a message marked as spam?
 
-Messages can be marked as spam for several reasons. For example, the sending IP address may appear on one of the service's IP Block lists. A message can be marked as spam due to the content of the actual message, such as when it matches a rule in the spam content filter. The message trace tool only tracks spam content filter events; connection filter events (such as blocked IP addresses) are not traceable. For more information about spam filtering, including spam content filtering, see [Anti-Spam Protection](http://technet.microsoft.com/library/d5c58b9d-c9a2-4f2e-b4aa-b202aa4d5e7d.aspx). 
+Messages can be marked as spam for several reasons. For example, the sending IP address may appear on one of the service's IP Block lists. A message can be marked as spam due to the content of the actual message, such as when it matches a rule in the spam content filter. The message trace tool only tracks spam content filter events; connection filter events (such as blocked IP addresses) are not traceable. For more information about spam filtering, including spam content filtering, see [Anti-Spam Protection](https://technet.microsoft.com/library/d5c58b9d-c9a2-4f2e-b4aa-b202aa4d5e7d.aspx). 
   
 To find out why a message was marked as spam:
 
@@ -205,7 +205,7 @@ To find out why a message was detected to contain malware, [run a message trace]
 
 View the results, locate the message, and then view specific details about the message (see [View message trace results for messages less than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-less-than-7-days-old) or [View message trace results for messages more than 7 days old](run-a-message-trace-and-view-results.md#view-message-trace-results-for-messages-more-than-7-days-old)).
 
-If the message was not delivered because it was determined to contain malware, this information will be provided in the events section. For example, the following is a sample **Detail**: Malware: " *ZipBomb*  " was detected in attachment  *file*  .  *zip*  . You will also be informed of the action that occurred as a result of the message containing malware, for example if the entire message was blocked or if all attachments were deleted and replaced with an alert text file. 
+If the message was not delivered because it was determined to contain malware, this information will be provided in the events section. For example, the following is a sample **Detail**: Malware: "*ZipBomb*" was detected in attachment *file*.*zip*. You will also be informed of the action that occurred as a result of the message containing malware, for example if the entire message was blocked or if all attachments were deleted and replaced with an alert text file. 
   
 ## Which mail flow rule (also known as a transport rule) or DLP policy was applied to a message?
 
@@ -237,4 +237,4 @@ You should be aware of the following when using the message trace tool:
 
 [Trace an email message](trace-an-email-message.md)
   
-[Help and Support for EOP](http://technet.microsoft.com/library/64535a0a-1044-413f-8bc2-ed8e8a0bc54c.aspx)
+[Help and Support for EOP](https://technet.microsoft.com/library/64535a0a-1044-413f-8bc2-ed8e8a0bc54c.aspx)

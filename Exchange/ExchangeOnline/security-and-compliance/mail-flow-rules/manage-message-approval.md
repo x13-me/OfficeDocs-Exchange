@@ -34,8 +34,8 @@ Here's a comparison of the two approaches to message approval.
   
 |**What do you want to do?**|**Approach**|**First step**|
 |:-----|:-----|:-----|
-|Create a moderated distribution group where all messages to the group must be approved.  <br/> |Set up message approval for the distribution group.  <br/> |Go to the Exchange admin center (EAC) \> **Recipients** \>  **Groups**, edit the distribution group, and then select **Message approval**.  <br/> |
-|Require approval for messages that match specific criteria or that are sent to a specific person.  <br/> |Create a transport rule using the **Forward the message for approval** action.  <br/> You can specify message criteria, including text patterns, senders, and recipients. Your criteria can also contain exceptions.  <br/> |Go to the EAC \> **Mail flow** \> **Rules**.  <br/> |
+|Create a moderated distribution group where all messages to the group must be approved.|Set up message approval for the distribution group.|Go to the Exchange admin center (EAC) \> **Recipients** \>  **Groups**, edit the distribution group, and then select **Message approval**.|
+|Require approval for messages that match specific criteria or that are sent to a specific person.|Create a transport rule using the **Forward the message for approval** action.  <br/> You can specify message criteria, including text patterns, senders, and recipients. Your criteria can also contain exceptions.|Go to the EAC \> **Mail flow** \> **Rules**.|
    
 [Return to top](manage-message-approval.md#RTT)
   
@@ -83,7 +83,7 @@ You can send a message to a group of recipients where only a subset of the recip
   
  **What if my distribution group contains moderated recipients that require approval?**
   
-A distribution group can include moderated recipients that also require approval. In this case, after the message to the distribution group is approved, a separate approval process occurs for each moderated recipient that's a member of the distribution group. However, you can also enable the automatic approval of the distribution group members after the message to the moderated distribution group is approved. To do this, you use the  _BypassNestedModerationEnabled_ parameter on the [Set-DistributionGroup](http://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx) cmdlet. 
+A distribution group can include moderated recipients that also require approval. In this case, after the message to the distribution group is approved, a separate approval process occurs for each moderated recipient that's a member of the distribution group. However, you can also enable the automatic approval of the distribution group members after the message to the moderated distribution group is approved. To do this, you use the _BypassNestedModerationEnabled_ parameter on the [Set-DistributionGroup](https://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx) cmdlet. 
   
  **Is this process different if we have our own Exchange servers?**
   
@@ -96,8 +96,4 @@ By default, one arbitration mailbox is used for each Exchange organization. If y
 
 [Manage mail flow rules](manage-mail-flow-rules.md)
   
-[Exchange Management Shell Quick Reference for Exchange 2013](http://technet.microsoft.com/library/3ea4a105-a93c-48ba-96ce-6170125354e1.aspx)
-  
-[Exchange Online PowerShell](http://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx)
-  
-
+[Exchange Online PowerShell](https://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx)

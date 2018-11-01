@@ -23,9 +23,13 @@ Outlook Web App and Outlook Inbox rules are limited to 64 KB. Each rule you crea
 
 To increase the limit:
   
-1. Start a remote Exchange Management Shell session. You can only use the Exchange Management Shell to perform this procedure. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online using remote PowerShell](http://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
+1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554). You can only use Exchange Online PowerShell to perform this procedure.
     
-2. Run the following command:  `Set-Mailbox -Identity -douglas@contoso.com -RulesQuota 256kb`
+2. Run the following command:
+
+```
+Set-Mailbox -Identity -douglas@contoso.com -RulesQuota 256kb
+```
     
 ## What else do I need to know?
 

@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52
-description: "You can use the EAC or the Shell to assign permissions to users or groups (called delegates) that allow them to open or send messages from other mailboxes. Permissions can be assigned to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also assign permissions to distribution groups, dynamic distribution groups, and mail-enabled security groups to allow delegates to send messages on behalf of the group. You can assign delegates the following permissions to access mailboxes or send messages on behalf of mailboxes or groups:"
+description: "You can use the EAC or Exchange Online PowerShell to assign permissions to users or groups (called delegates) that allow them to open or send messages from other mailboxes. Permissions can be assigned to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also assign permissions to distribution groups, dynamic distribution groups, and mail-enabled security groups to allow delegates to send messages on behalf of the group. You can assign delegates the following permissions to access mailboxes or send messages on behalf of mailboxes or groups:"
 ---
 
 # Manage permissions for recipients
 
-You can use the EAC or the Shell to assign permissions to users or groups (called delegates) that allow them to open or send messages from other mailboxes. Permissions can be assigned to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also assign permissions to distribution groups, dynamic distribution groups, and mail-enabled security groups to allow delegates to send messages on behalf of the group. You can assign delegates the following permissions to access mailboxes or send messages on behalf of mailboxes or groups:
+You can use the EAC or Exchange Online PowerShell to assign permissions to users or groups (called delegates) that allow them to open or send messages from other mailboxes. Permissions can be assigned to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also assign permissions to distribution groups, dynamic distribution groups, and mail-enabled security groups to allow delegates to send messages on behalf of the group. You can assign delegates the following permissions to access mailboxes or send messages on behalf of mailboxes or groups:
   
 - **Full Access**: This permission allows a delegate to open a user's mailbox and access the contents of the mailbox. However, assigning the Full Access permission doesn't allow the delegate to send mail from the mailbox. You have to assign the delegate the Send As or the Send on Behalf permission to send mail. 
     
@@ -43,15 +43,15 @@ You can use the EAC or the Shell to assign permissions to users or groups (calle
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
 ### Assign permissions to a mailbox
 
-As previously stated, you can assign delegates permissions to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also use the Shell to assign delegates permissions to access a discovery mailbox.
+As previously stated, you can assign delegates permissions to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also use Exchange Online PowerShell to assign delegates permissions to access a discovery mailbox.
   
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions and delegation" entry in the "Recipient Provisioning Permissions" section in the [Recipients Permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions and delegation" entry in the "Recipient Provisioning Permissions" section in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
   
 #### Use the EAC to assign permissions
 
@@ -59,13 +59,13 @@ The following procedure shows how to assign permissions to a user mailbox. You f
   
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
     
-2. In the list of mailboxes, click the mailbox that you want to assign permissions for, and then click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+2. In the list of mailboxes, click the mailbox that you want to assign permissions for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
     
 3. On the mailbox properties page, click **Mailbox Delegation**.
     
-4. To assign permissions to delegates, click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**![Search icon](../media/ITPro_EAC_.gif).
+4. To assign permissions to delegates, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../media/ITPro_EAC_.gif).
     
-    To remove a permission for a recipient, under the appropriate permission, select the recipient and then click **Remove**![Remove icon](../media/ITPro_EAC_RemoveIcon.gif).
+    To remove a permission for a recipient, under the appropriate permission, select the recipient and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.gif).
     
 5. Click **Save** to save your changes. 
     
@@ -79,9 +79,9 @@ Use the following steps to bulk assign permissions.
     
 3. Click or tap **More options** in the right pane, and under **Mailbox Delegation** choose, **Add**.
     
-4. On the **bulk add delegation** page, click or tap **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**.
+4. On the **bulk add delegation** page, click or tap **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**.
     
-    To remove a permission for recipients, under the appropriate permission, select the recipients and then click **Remove**![Remove icon](../media/ITPro_EAC_RemoveIcon.gif).
+    To remove a permission for recipients, under the appropriate permission, select the recipients and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.gif).
     
 #### Use the EAC to assign a user permission to send email from another user's mailbox
 
@@ -89,11 +89,11 @@ The following procedure shows how to assign a user permission to send email from
   
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
     
-2. In the list of mailboxes, click the mailbox that you want to assign send as permissions for, and then click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+2. In the list of mailboxes, click the mailbox that you want to assign send as permissions for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
     
 3. On the mailbox properties page, click **Mailbox Delegation**.
     
-4. To assign permissions to delegates, click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif) under **Send As** or **Send on Behalf** to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**![Search icon](../media/ITPro_EAC_.gif).
+4. To assign permissions to delegates, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) under **Send As** or **Send on Behalf** to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../media/ITPro_EAC_.gif).
     
     The **Send As** permission allows the delegate to send email from this mailbox. 
     
@@ -110,11 +110,11 @@ The following procedure shows how to assign a user permission to send email from
   
 1. In the EAC, navigate to **Recipients** \> **Groups**.
     
-2. In the list of groups, click the group that you want to assign send as permissions for, and then click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+2. In the list of groups, click the group that you want to assign send as permissions for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
     
 3. On the group properties page, click **Group Delegation**.
     
-4. To assign permissions to delegates, click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif) under **Send As** or **Send on Behalf** to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**![Search icon](../media/ITPro_EAC_.gif).
+4. To assign permissions to delegates, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) under **Send As** or **Send on Behalf** to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../media/ITPro_EAC_.gif).
     
     The **Send As** permission allows the delegate to send email from this group. 
     
@@ -128,11 +128,11 @@ The following procedure shows how to assign full access permissions to a user ma
   
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
     
-2. In the list of mailboxes, click the mailbox that you want to assign full access permissions for, and then click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+2. In the list of mailboxes, click the mailbox that you want to assign full access permissions for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
     
 3. On the mailbox properties page, click **Mailbox Delegation**.
     
-4. To assign permissions to delegates, click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif) under **Full Access** to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**![Search icon](../media/ITPro_EAC_.gif).
+4. To assign permissions to delegates, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) under **Full Access** to display a page that lists all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../media/ITPro_EAC_.gif).
     
     The **Full Access** permission allows a delegate to open a user's mailbox and access the contents of the mailbox. 
     
@@ -141,9 +141,9 @@ The following procedure shows how to assign full access permissions to a user ma
   
 5. Click **Save** to save your changes. 
     
-#### Use the Shell to assign permissions
+#### Use Exchange Online PowerShell to assign permissions
 
-The following sections show how to use the Shell to manage Full Access, Send As, and Send on Behalf permissions for mailboxes.
+The following sections show how to use Exchange Online PowerShell to manage Full Access, Send As, and Send on Behalf permissions for mailboxes.
   
 #### Manage the Full Access permission
 
@@ -175,16 +175,16 @@ Remove-MailboxPermission -Identity ayla -User "Jim Hance" -AccessRights FullAcce
 
 For detailed syntax and parameter information, see the following topics:
   
-- [add-MailboxPermission](http://technet.microsoft.com/library/a9aacbf5-5e6c-47ef-95d6-e24547e95d01.aspx)
+- [add-MailboxPermission](https://technet.microsoft.com/library/a9aacbf5-5e6c-47ef-95d6-e24547e95d01.aspx)
     
-- [remove-MailboxPermission](http://technet.microsoft.com/library/eda30705-6070-413a-88c5-db262fbad8d3.aspx)
+- [remove-MailboxPermission](https://technet.microsoft.com/library/eda30705-6070-413a-88c5-db262fbad8d3.aspx)
     
 #### Manage the Send As permission
 
-The following examples show how to manage Send As permissions in Exchange Server and in Exchange Online. In Exchange Server, you have to use the **Add-ADPermission** and **Remove-ADPermission** cmdlets; in Exchange Online, you have to use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets. In both cases, you use the  _Identity_ parameter to specify the name of the mailbox on which the Send As permission should be added or removed and the  _User_ or  _Trustee_ parameter to specify the delegate (for example, a user or group) that will be assigned or unassigned the Send As permission. 
+The following examples show how to manage Send As permissions in Exchange Server and in Exchange Online. In Exchange Server, you have to use the **Add-ADPermission** and **Remove-ADPermission** cmdlets; in Exchange Online, you have to use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets. In both cases, you use the _Identity_ parameter to specify the name of the mailbox on which the Send As permission should be added or removed and the _User_ or _Trustee_ parameter to specify the delegate (for example, a user or group) that will be assigned or unassigned the Send As permission. 
   
 > [!TIP]
-> Use the **Get-Recipient** cmdlet to retrieve the  _Name_ property for the mailbox and the delegate. Use these values to assign the Send As permission. 
+> Use the **Get-Recipient** cmdlet to retrieve the _Name_ property for the mailbox and the delegate. Use these values to assign the Send As permission. 
   
 #### Exchange Server
 
@@ -202,9 +202,9 @@ Remove-ADPermission -Identity "James Alvord" -User pilarp -ExtendedRights "Send 
 
 For detailed syntax and parameter information, see:
   
-- [add-ADPermission](http://technet.microsoft.com/library/bef9f3db-84f6-4a40-81cb-c9cb9b9ee201.aspx)
+- [add-ADPermission](https://technet.microsoft.com/library/bef9f3db-84f6-4a40-81cb-c9cb9b9ee201.aspx)
     
-- [remove-ADPermission](http://technet.microsoft.com/library/0e45951a-2b5a-4aa9-a709-def61d7d4972.aspx)
+- [remove-ADPermission](https://technet.microsoft.com/library/0e45951a-2b5a-4aa9-a709-def61d7d4972.aspx)
     
 #### Exchange Online
 
@@ -222,9 +222,9 @@ Remove-RecipientPermission -Identity "Yan Li" -Trustee "Karen Toh" -ExtendedRigh
 
 For detailed syntax and parameter information, see:
   
-- [Add-RecipientPermission](http://technet.microsoft.com/library/0740023b-47df-4f36-bcb9-ce3b0707a6d4.aspx)
+- [Add-RecipientPermission](https://technet.microsoft.com/library/0740023b-47df-4f36-bcb9-ce3b0707a6d4.aspx)
     
-- [Remove-RecipientPermission](http://technet.microsoft.com/library/5a772687-ca3b-4753-8dea-bf4c571e9e16.aspx)
+- [Remove-RecipientPermission](https://technet.microsoft.com/library/5a772687-ca3b-4753-8dea-bf4c571e9e16.aspx)
     
 #### Manage the Send on Behalf permission
 
@@ -242,7 +242,7 @@ This example removes the Send on Behalf permission on the Contoso Executives sha
 Set-Mailbox "Contoso Executives" -GrantSendOnBehalfTo @{remove="tempassistants@contoso.com"}
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
   
 #### How do you know this worked?
 
@@ -250,7 +250,7 @@ To verify that you've successfully assigned permissions to a mailbox or a shared
   
 - In the EAC: 
     
-1. Navigate to **Recipients** \> **Mailbox** or **Shared**, click the mailbox, and then click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+1. Navigate to **Recipients** \> **Mailbox** or **Shared**, click the mailbox, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
     
 2. On the mailbox properties page, click **Mailbox Delegation**.
     
@@ -258,7 +258,7 @@ To verify that you've successfully assigned permissions to a mailbox or a shared
     
 Or
   
-- In the Shell, run one of the following commands, depending on the permission you managed.
+- In Exchange Online PowerShell, run one of the following commands, depending on the permission you managed.
     
   - **Full Access**
     
@@ -289,39 +289,39 @@ Or
   - **Send on Behalf**
     
   ```
-  Get-Mailbox -Identity <mailbox> | FL GrantSendOnBehalfTo
+  Get-Mailbox -Identity <mailbox> | Format-List GrantSendOnBehalfTo
   ```
 
 ### Assign permissions to a group
 
 As previously stated, you can assign the Send As and Send on Behalf permissions to distribution groups, dynamic distribution groups, and mail-enabled security groups to allow delegates to send messages as the group or on behalf of the group.
   
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" and "Dynamic distribution groups" entries in the "Recipient Provisioning Permissions" section in the [Recipients Permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" and "Dynamic distribution groups" entries in the "Recipient Provisioning Permissions" section in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
   
 #### Use the EAC to assign permissions
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
     
-2. In the list of groups, click the group that you want to assign permissions for, and then click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+2. In the list of groups, click the group that you want to assign permissions for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
     
 3. On the group properties page, click **Group Delegation**.
     
-4. To assign permissions to delegates, click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**![Search icon](../media/ITPro_EAC_.gif).
+4. To assign permissions to delegates, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) under the appropriate permission to display a page that displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../media/ITPro_EAC_.gif).
     
-    To remove permission for a recipient, under the appropriate permission, select the recipient and then click **Remove**![Remove icon](../media/ITPro_EAC_RemoveIcon.gif).
+    To remove permission for a recipient, under the appropriate permission, select the recipient and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.gif).
     
 5. Click **Save** to save your changes. 
     
-#### Use the Shell to assign permissions
+#### Use Exchange Online PowerShell to assign permissions
 
-The following sections show how to use the Shell to manage Send As and Send on Behalf permissions for groups.
+The following sections show how to use Exchange Online PowerShell to manage Send As and Send on Behalf permissions for groups.
   
 #### Manage the Send As permission
 
-The following examples show how to manage Send As permissions for groups in Exchange Server and in Exchange Online. In Exchange Server, you have to use the **Add-ADPermission** and **Remove-ADPermission** cmdlets. In Exchange Online, you have to use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets. In both cases, you use the  _Identity_ parameter to specify the name of the group on which the Send As permission should be added or removed and the  _User_ or  _Trustee_ parameter to specify the delegate (for example, a user or group) that will be assigned or unassigned the Send As permission. 
+The following examples show how to manage Send As permissions for groups in Exchange Server and in Exchange Online. In Exchange Server, you have to use the **Add-ADPermission** and **Remove-ADPermission** cmdlets. In Exchange Online, you have to use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets. In both cases, you use the _Identity_ parameter to specify the name of the group on which the Send As permission should be added or removed and the _User_ or _Trustee_ parameter to specify the delegate (for example, a user or group) that will be assigned or unassigned the Send As permission. 
   
 > [!TIP]
-> Use the **Get-Recipient** cmdlet to retrieve the  _Name_ property for the group and the delegate. Use these values to assign the Send As permission. 
+> Use the **Get-Recipient** cmdlet to retrieve the _Name_ property for the group and the delegate. Use these values to assign the Send As permission. 
   
 #### Exchange Server
 
@@ -339,9 +339,9 @@ Remove-ADPermission -Identity "Corporate IT Admins" -User contoso\alans -Extende
 
 For detailed syntax and parameter information, see:
   
-- [add-ADPermission](http://technet.microsoft.com/library/bef9f3db-84f6-4a40-81cb-c9cb9b9ee201.aspx)
+- [add-ADPermission](https://technet.microsoft.com/library/bef9f3db-84f6-4a40-81cb-c9cb9b9ee201.aspx)
     
-- [remove-ADPermission](http://technet.microsoft.com/library/0e45951a-2b5a-4aa9-a709-def61d7d4972.aspx)
+- [remove-ADPermission](https://technet.microsoft.com/library/0e45951a-2b5a-4aa9-a709-def61d7d4972.aspx)
     
 #### Exchange Online
 
@@ -359,9 +359,9 @@ Remove-RecipientPermission -Identity "Printer Resources" -Trustee walterh@contos
 
 For detailed syntax and parameter information, see:
   
-- [Add-RecipientPermission](http://technet.microsoft.com/library/0740023b-47df-4f36-bcb9-ce3b0707a6d4.aspx)
+- [Add-RecipientPermission](https://technet.microsoft.com/library/0740023b-47df-4f36-bcb9-ce3b0707a6d4.aspx)
     
-- [Remove-RecipientPermission](http://technet.microsoft.com/library/5a772687-ca3b-4753-8dea-bf4c571e9e16.aspx)
+- [Remove-RecipientPermission](https://technet.microsoft.com/library/5a772687-ca3b-4753-8dea-bf4c571e9e16.aspx)
     
 #### Manage the Send on Behalf permission
 
@@ -387,9 +387,9 @@ Set-DynamicDistributionGroup "All Employees" -GrantSendOnBehalfTo @{remove="admi
 
 For detailed syntax and parameter information, see:
   
-- [Set-DistributionGroup](http://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx)
+- [Set-DistributionGroup](https://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx)
     
-- [Set-DynamicDistributionGroup](http://technet.microsoft.com/library/943626ad-8455-4867-ab9a-855bab62c9c3.aspx)
+- [Set-DynamicDistributionGroup](https://technet.microsoft.com/library/943626ad-8455-4867-ab9a-855bab62c9c3.aspx)
     
 #### How do you know this worked?
 
@@ -397,7 +397,7 @@ To verify that you've successfully assigned permissions to a group, do one of th
   
 - In the EAC: 
     
-1. Navigate to **Recipients** \> **Groups**, click the group, and then click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+1. Navigate to **Recipients** \> **Groups**, click the group, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
     
 2. On the group properties page, click **Group Delegation**.
     
@@ -405,7 +405,7 @@ To verify that you've successfully assigned permissions to a group, do one of th
     
 Or
   
-- In the Shell, run one of the following commands depending on the permission you managed.
+- In Exchange Online PowerShell, run one of the following commands depending on the permission you managed.
     
   - **Send As**
     
@@ -424,13 +424,13 @@ Or
   - **Send on Behalf**
     
   ```
-  Get-DistributionGroup -Identity <group> | FL GrantSendOnBehalfTo
+  Get-DistributionGroup -Identity <group> | Format-List GrantSendOnBehalfTo
   ```
 
     Or
     
   ```
-  Get-DynamicDistributionGroup -Identity <group> | FL GrantSendOnBehalfTo
+  Get-DynamicDistributionGroup -Identity <group> | Format-List GrantSendOnBehalfTo
   ```
 
 

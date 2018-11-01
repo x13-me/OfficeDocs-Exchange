@@ -21,23 +21,23 @@ You can configure the default prompt language setting on a Unified Messaging (UM
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
     
-2. In the list view, select the UM dial plan you want to modify, and then on the toolbar, click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the UM dial plan you want to modify, and then on the toolbar, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
-3. On the **UM dial plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to change, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. On the **UM dial plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 4. On the **General** page, under **Language for automated voice interface**, select the required language from the drop-down list.
     
 5. Click **Save** to accept your changes. 
     
-### Use the Shell to configure the default language setting
+### Use Exchange Online PowerShell to configure the default language setting
 
-This example sets the default language on the UM auto attendant  `MyUMAutoAttendant` to English (Great Britain). 
+This example sets the default language on the UM auto attendant `MyUMAutoAttendant` to English (Great Britain). 
   
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -Language en-GB
 ```
 
-This example sets the default language on the UM auto attendant  `MyUMAutoAttendant` to German. 
+This example sets the default language on the UM auto attendant `MyUMAutoAttendant` to German. 
   
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -Language de-DE

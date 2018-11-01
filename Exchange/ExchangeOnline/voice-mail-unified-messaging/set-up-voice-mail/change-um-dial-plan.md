@@ -24,7 +24,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 - Estimated time to complete: 10 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailboxes" entry in the [Unified Messaging Permissions](http://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailboxes" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
     
 - Before you perform this procedure, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](../../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
     
@@ -35,22 +35,20 @@ For additional management tasks related to users who are enabled for voice mail,
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## How do you do this?
-
-### Step 1: Create the new UM dial plan
+## Step 1: Create the new UM dial plan
 
 > [!IMPORTANT]
 > If you're migrating UM-enabled users to Microsoft Office Communications Server 2007 R2 or to Microsoft Lync Server, you must first create a SIP URI dial plan. 
   
 For detailed instructions, see [Create a UM dial plan](../../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md). 
   
-### Step 2: Disable the user for Unified Messaging
+## Step 2: Disable the user for Unified Messaging
 
 For detailed instructions, see [Disable voice mail for a user](disable-voice-mail.md).
   
-### Step 3: Enable the user for Unified Messaging on the new UM dial plan
+## Step 3: Enable the user for Unified Messaging on the new UM dial plan
 
 > [!IMPORTANT]
 > If you're moving users to an environment with Office Communications Server 2007 R2 or Lync Server, you must also include a SIP Resource Identifier for the user when you enable them for UM. You must also select the UM mailbox policy that's associated with a SIP dial plan. 

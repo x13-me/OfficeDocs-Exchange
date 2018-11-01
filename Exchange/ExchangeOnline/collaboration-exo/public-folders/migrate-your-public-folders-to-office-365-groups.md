@@ -21,7 +21,7 @@ This article provides a comparison of public folders and Office 365 Groups, and 
   
 ## What are public folders?
 
-[Public Folders](http://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx) contain different kinds of data and are organized in a hierarchical structure. 
+[Public Folders](https://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx) contain different kinds of data and are organized in a hierarchical structure. 
   
 Public folders are not recommended for the following situations:
   
@@ -57,7 +57,7 @@ While Office 365 Groups offers many advantages, you should be aware of a few maj
     
 - **Granular permission roles**. While public folders have a variety of permission roles, Office 365 Groups only provides two: owner and member.
     
-Before you move to Groups, it's also a good idea to make note of the various limits that come with creating and maintaining groups. See  *How do I manage my groups?*  in [Learn about Office 365 Groups](https://go.microsoft.com/fwlink/p/?linkid=858521) for more information. 
+Before you move to Groups, it's also a good idea to make note of the various limits that come with creating and maintaining groups. See *How do I manage my groups?*  in [Learn about Office 365 Groups](https://go.microsoft.com/fwlink/p/?linkid=858521) for more information. 
   
 ## Migrating public folders to Office 365 Groups
 
@@ -108,7 +108,7 @@ The following prerequisites are required in your Exchange environment before you
     
   - Exchange 2016 CU4 or later
     
-2. If your public folders are on-premises, you must have an Exchange Hybrid environment set up. See [Exchange Server Hybrid Deployments](http://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx) for more information. 
+2. If your public folders are on-premises, you must have an Exchange Hybrid environment set up. See [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx) for more information. 
     
  **Migration instructions**
   

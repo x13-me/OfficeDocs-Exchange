@@ -20,9 +20,9 @@ SIP URI dial plans and SIP addresses are used when you're integrating UM and Mic
   
 You can change the primary SIP address that was added when the user was enabled for UM or a secondary SIP address that was added later, along with the EUM proxy addresses for the user. The primary SIP address you added when the user was enabled for UM will be listed as the primary EUM proxy address. Any additional secondary SIP addresses you added will be listed as secondary EUM proxy addresses. When secondary SIP addresses are changed, callers can leave voice mail for the user at all SIP endpoints that the user is signed in to using the new SIP addresses. All the voice messages will be delivered to the same user's mailbox.
   
-You can use the EAC or the Shell to change a primary or a secondary SIP address. You can use the **Email Address** page on the user's mailbox in the EAC to change a primary or a secondary SIP address. You can't use the **UM Mailbox** page in the EAC to change a primary or secondary SIP address. 
+You can use the EAC or Exchange Online PowerShell to change a primary or a secondary SIP address. You can use the **Email Address** page on the user's mailbox in the EAC to change a primary or a secondary SIP address. You can't use the **UM Mailbox** page in the EAC to change a primary or secondary SIP address. 
   
-You can view the primary and secondary SIP addresses for a user by using the **Get-UMMailbox** cmdlet or the **Get-Mailbox** cmdlet in the Shell. 
+You can view the primary and secondary SIP addresses for a user by using the **Get-UMMailbox** cmdlet or the **Get-Mailbox** cmdlet in Exchange Online PowerShell. 
   
 For additional management tasks related to users who are enabled for voice mail, see [Voice mail-enabled user procedures](voice-mail-enabled-user-procedures.md).
   
@@ -30,7 +30,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 - Estimated time to complete: 3 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailboxes" entry in the [Unified Messaging Permissions](http://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailboxes" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
     
 - Before you perform these procedures, confirm that a SIP URI UM dial plan has been created. For detailed steps, see [Create a UM dial plan](../../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
     
@@ -43,7 +43,7 @@ For additional management tasks related to users who are enabled for voice mail,
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -51,20 +51,20 @@ For additional management tasks related to users who are enabled for voice mail,
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
     
-2. In the list view, select the mailbox for which you want to change a SIP address, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif). 
+2. In the list view, select the mailbox for which you want to change a SIP address, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif). 
     
-3. On the **User Mailbox** page, under **Email address**, select the SIP address you want to change, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif). The primary SIP address is listed in bold letters and numbers.
+3. On the **User Mailbox** page, under **Email address**, select the SIP address you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif). The primary SIP address is listed in bold letters and numbers.
     
 4. On the **Email address** page, in the **Address/Extension** box, enter the new SIP address for the user, and then click **OK**. If you need to select a new UM dial plan, you can click **Browse**. 
     
 5. Click **Save**.
     
-### Use the Shell to change the primary or a secondary SIP address
+### Use Exchange Online PowerShell to change the primary or a secondary SIP address
 
 This example changes a SIP address for Tony Smith.
   
 > [!NOTE]
-> Before you change a SIP address using the Shell, you need to determine the position of the EUM proxy address that you want to change. To determine the position, use the **$mbx.EmailAddresses** command. The first EUM proxy address is the default (primary) SIP address and it will be 0 in the list. 
+> Before you change a SIP address using Exchange Online PowerShell, you need to determine the position of the EUM proxy address that you want to change. To determine the position, use the **$mbx.EmailAddresses** command. The first EUM proxy address is the default (primary) SIP address and it will be 0 in the list. 
   
 ```
 $mbx=Get-Mailbox tony.smith

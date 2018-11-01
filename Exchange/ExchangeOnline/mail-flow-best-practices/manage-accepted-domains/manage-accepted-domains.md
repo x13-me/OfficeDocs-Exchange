@@ -14,7 +14,7 @@ description: "When you add your domain to Office 365, it's called an accepted do
 
 # Manage accepted domains in Exchange Online
 
-When you add your domain to Office 365, it's called an accepted domain. This means that users in this domain can send and receive mail. For more information on how to add your domain to Office 365 using the Office 365 admin center, see [Add a domain to Office 365](https://support.office.com/en-us/article/Add-a-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
+When you add your domain to Office 365, it's called an accepted domain. This means that users in this domain can send and receive mail. For more information on how to add your domain to Office 365 using the Office 365 admin center, see [Add a domain to Office 365](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
   
 After you add your domain using the Office 365 admin center, you can use the Exchange admin center (EAC) to view your accepted domains and configure the domain type.
   
@@ -28,7 +28,7 @@ There are two types of accepted domains, Authoritative and Internal Relay, which
     
   - **Exchange Online**: [Manage mail users](../../recipients-in-exchange-online/manage-mail-users.md)
     
-  - **Exchange Online Protection**: [Manage Mail Users in EOP](http://technet.microsoft.com/library/4bfaf2ab-e633-4227-8bde-effefb41a3db.aspx)
+  - **Exchange Online Protection**: [Manage Mail Users in EOP](https://technet.microsoft.com/library/4bfaf2ab-e633-4227-8bde-effefb41a3db.aspx)
     
   - Setting this option enables Directory Based Edge Blocking (DBEB). For more information about DBEB, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](../../mail-flow-best-practices/use-directory-based-edge-blocking.md).
     
@@ -44,14 +44,14 @@ There are two types of accepted domains, Authoritative and Internal Relay, which
 
 - Estimated time to complete: 10 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Domains" entry in the [Mail flow permissions](http://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Domains" entry in the [Mail flow permissions](https://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic. 
     
 - To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
@@ -63,7 +63,7 @@ There are two types of accepted domains, Authoritative and Internal Relay, which
     
 2. Click the **Name**, **Accepted Domain**, or **Domain Type** column heading to sort alphabetically in ascending or descending order. By default, accepted domains are sorted alphabetically by name in ascending order. 
     
-#### Use the Exchange Management Shell to view accepted domains
+#### Use Exchange Online PowerShell to view accepted domains
 
 To view summary information about all accepted domains, run the following command.
   
@@ -91,7 +91,7 @@ After you add a domain to your Exchange Online organization in the Office 365 ad
 
 1. In the EAC, navigate to **Mail flow** \> **Accepted domains**.
     
-2. Select the domain and click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. Select the domain and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 3. In the **Accepted Domain** window, in the **This accepted domain is** section, select the domain type. The possible values are **Authoritative** and **Internal relay**.
     
@@ -101,7 +101,7 @@ After you add a domain to your Exchange Online organization in the Office 365 ad
     
 4. When you are finished, click **Save**.
     
-#### Use the Exchange Management Shell to change the domain type
+#### Use Exchange Online PowerShell to change the domain type
 
 To configure the domain type, use the following syntax.
   
@@ -119,8 +119,8 @@ Set-AcceptedDomain contoso.com -DomainType InternalRelay
 
 To verify that you have successfully configured the domain type, do either of the following:
   
-- In the EAC at **Mail flow** \> **Accepted domains**, click **Refresh**![Refresh Icon](../../media/ITPro_EAC_RefreshIcon.gif). In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly.
+- In the EAC at **Mail flow** \> **Accepted domains**, click **Refresh** ![Refresh Icon](../../media/ITPro_EAC_RefreshIcon.gif). In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly.
     
-- In the Exchange Management Shell, run the command **Get-AcceptedDomain**. In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly. 
+- In Exchange Online PowerShell, run the command **Get-AcceptedDomain**. In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly. 
     
 

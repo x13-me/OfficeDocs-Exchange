@@ -58,7 +58,7 @@ Internet Protocol version 6 (IPv6) is the most recent version of the Internet Pr
   
 In Exchange Server on-premises and hybrid deployments, UM-related components and speech services run only on Client Access and Mailbox servers. Because the UM architecture has changed and now requires Unified Communications Managed API (UCMA) v4.0 to support both IPv4 and IPv6 as well as other Exchange features, the Client Access and Mailbox servers that have Unified Messaging components and services fully support IPv6 networks and doesn't require IPv4.
   
-In on-premises, hybrid, and Exchange Online deployments, both enterprise and Exchange Online UM administrators can use IPv6 when they connect UM to IPv6-capable devices, including devices such as routers, IP gateways, IP PBXs, and Microsoft Office Communications Server 2007 R2 and Microsoft Lync servers. However, for interoperability and backward compatibility, IPv4 can be used instead without additional configuration changes if the  _IPAddressFamily_ parameter is set to  `Any` on UM IP gateways. 
+In on-premises, hybrid, and Exchange Online deployments, both enterprise and Exchange Online UM administrators can use IPv6 when they connect UM to IPv6-capable devices, including devices such as routers, IP gateways, IP PBXs, and Microsoft Office Communications Server 2007 R2 and Microsoft Lync servers. However, for interoperability and backward compatibility, IPv4 can be used instead without additional configuration changes if the _IPAddressFamily_ parameter is set to `Any` on UM IP gateways. 
   
 Exchange UM must still communicate directly with SIP peers (VoIP gateways, IP PBXs, and SBCs) that may not support IPv6 in their software or firmware. If they don't support IPv6, UM must be able to communicate directly with SIP peers that use IPv4. For hosted voice mail, UM communicates with customer equipment through SBCs, Lync Server 2010, or Lync Server 2013. In hosted environments, IPv6 SIP-aware clients such as SBCs and Lync servers can be deployed to handle the IPv6-to-IPv4 conversion process.
   
@@ -66,7 +66,7 @@ For on-premises and hybrid deployments after you install your Client Access and 
   
 1. Create a new UM IP gateway or configure an existing UM IP gateway with an IPv6 address for each of the IP gateways, IP PBXs, or SBCs on your network. When you're creating and configuring the required UM IP gateways, you must add the IPv6 address or the Fully Qualified Domain Name (FQDN) for the UM IP gateway. If you're adding the FQDN to the UM IP gateway, you must have created the correct DNS records to resolve the UM IP gateway FQDN to the IPv6 address. If you have an existing UM IP gateway, you can use the **Set-UMIPgateway** cmdlet to configure the IPv6 address or FQDN. 
     
-2. Configure the  _IPAddressFamily_ parameter on each UM IP gateway. To enable the VoIP gateway to accept IPv6 packets, you must set the UM IP gateway to either accept both IPv4 and IPv6 connections, or accept only IPv6 connections, by using the **Set-UMIPgateway** cmdlet. 
+2. Configure the _IPAddressFamily_ parameter on each UM IP gateway. To enable the VoIP gateway to accept IPv6 packets, you must set the UM IP gateway to either accept both IPv4 and IPv6 connections, or accept only IPv6 connections, by using the **Set-UMIPgateway** cmdlet. 
     
 3. After you've configured your UM IP gateways, you must also configure the VoIP gateways, IP PBXs, and SBCs on your network to support IPv6. For details, see your hardware vendor for a list of devices that support IPv6 and how to correctly configure them.
     
@@ -78,7 +78,7 @@ For on-premises and hybrid deployments after you install your Client Access and 
 
 By default, a UM IP gateway is left in an enabled state after it's created. However, the UM IP gateway can be enabled or disabled. If you disable a UM IP gateway, you can set it to force all Exchange servers to drop existing calls. Alternatively, you can set it to force the Exchange servers associated with the UM IP gateway to stop handling any new calls presented by the VoIP gateway, IP PBX, or SBC.
   
-If you're integrating Unified Messaging with Office Communications Server R2 or Microsoft Lync Server, you must allow only one UM IP gateway to make outgoing calls for users, and disable outbound calling on all other UM IP gateways associated with your SIP URI dial plans. Use either the Shell or the EAC to disable outbound calling.
+If you're integrating Unified Messaging with Office Communications Server R2 or Microsoft Lync Server, you must allow only one UM IP gateway to make outgoing calls for users, and disable outbound calling on all other UM IP gateways associated with your SIP URI dial plans. Use either Exchange Online PowerShell or the EAC to disable outbound calling.
   
 When selecting the UM IP gateway through which to allow outgoing calls for on-premises and hybrid deployments, choose the one that's likely to handle the most traffic. Don't allow outgoing traffic through a UM IP gateway that connects to a pool of Lync Server Directors. This is necessary to ensure that outbound calls to external users placed by a Mailbox server running the Microsoft Exchange Unified Messaging service (for example, in Play-on-Phone scenarios) reliably traverse the corporate firewall.
   

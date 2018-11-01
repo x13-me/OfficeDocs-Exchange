@@ -39,16 +39,16 @@ Here are the features you'll find in the left-hand navigation.
   
 |**Area**|**What you do here**|
 |:-----|:-----|
-|**Dashboard** <br/> |An overview of the admin center.  <br/> |
-|**Recipients** <br/> |View and manage your mailboxes, groups, resource mailboxes, contacts, shared mailboxes, and mailbox migrations.  <br/> |
-|**Permissions** <br/> |Manage administrator roles, user roles, and Outlook Web App policies.  <br/> |
-|**Compliance management** <br/> |Manage In-Place eDiscovery & Hold, auditing, data loss prevention (DLP), retention policies, retention tags, and journal rules.  <br/> |
-|**Organization** <br/> |Manage organization sharing and apps for Outlook  <br/> |
-|**Protection** <br/> |Manage malware filters, connection filters, content filters, outbound spam, and quarantine for your organization.  <br/> |
-|**Mail flow** <br/> |Manage rules, message tracing, accepted domains, remote domains, and connectors.  <br/> |
-|**Mobile** <br/> |Manage the mobile devices that you allow to connect to your organization. You can manage mobile device access and mobile device mailbox policies.  <br/> |
-|**Public folders** <br/> |Manage public folders and public folder mailboxes.  <br/> |
-|**Unified messaging** <br/> |Manage Unified Messaging (UM) dial plans and UM IP gateways.  <br/> |
+|**Dashboard**|An overview of the admin center.|
+|**Recipients**|View and manage your mailboxes, groups, resource mailboxes, contacts, shared mailboxes, and mailbox migrations.|
+|**Permissions**|Manage administrator roles, user roles, and Outlook Web App policies.|
+|**Compliance management**|Manage In-Place eDiscovery & Hold, auditing, data loss prevention (DLP), retention policies, retention tags, and journal rules.|
+|**Organization**|Manage organization sharing and apps for Outlook|
+|**Protection**|Manage malware filters, connection filters, content filters, outbound spam, and quarantine for your organization.|
+|**Mail flow**|Manage rules, message tracing, accepted domains, remote domains, and connectors.|
+|**Mobile**|Manage the mobile devices that you allow to connect to your organization. You can manage mobile device access and mobile device mailbox policies.|
+|**Public folders**|Manage public folders and public folder mailboxes.|
+|**Unified messaging**|Manage Unified Messaging (UM) dial plans and UM IP gateways.|
    
 ### Tabs
 
@@ -60,16 +60,16 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
   
 |**Icon**|**Name**|**Action**|
 |:-----|:-----|:-----|
-|![Add Icon](media/ITPro_EAC_AddIcon.gif)           <br/> |Add, New  <br/> |Create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create.  <br/> For example, in **Recipients** \> **Groups**, clicking the down arrow displays **Distribution group**, **Security group**, and **Dynamic distribution group** as additional options.  <br/> |
-|![Edit icon](media/ITPro_EAC_EditIcon.gif)           <br/> |Edit  <br/> |Edit an object.  <br/> |
-|![Delete icon](media/ITPro_EAC_DeleteIcon.gif)           <br/> |Delete  <br/> |Delete an object. Some delete icons have a down arrow you can click to show additional options.  <br/> |
-|![Search icon](media/ITPro_EAC_.gif)           <br/> |Search  <br/> |Open a search box in which you can type the search phrase for an object you want to find.  <br/> |
-|![Icon: Upgrade distribution group to Office 365 group](media/f48d2ecd-36e1-4ec1-a4eb-7c97a23d81dc.gif)           <br/> ||Upgrade a distribution group to an Office 365 group. This icon can be used only for a distribution group.  <br/> |
-|![Refresh Icon](media/ITPro_EAC_RefreshIcon.gif)           <br/> |Refresh  <br/> |Refresh the list view.  <br/> |
-|![More Options Icon](media/ITPro_EAC_MoreOptionsIcon.gif)           <br/> |More options  <br/> |View more actions you can perform for that tab's objects.  <br/> For example, in **Recipients** \> **Mailboxes** clicking this icon shows the following options: **Add/Remove columns**, **Deleted mailboxes**, **Export data to a CSV file**, and **Advanced search**.  <br/> |
-|![Up Arrow Icon](media/ITPro_EAC_UpArrowIcon.gif)![Down Arrow Icon](media/ITPro_EAC_DownArrowIcon.gif)           <br/> |Up arrow and down arrow  <br/> |Move an object's priority up or down.  <br/>  For example, in **Mail flow** \> **Rules** click the up arrow to raise the priority of a rule. You can also use these arrows to navigate the public folder hierarchy.  <br/> |
-|![Copy Icon](media/ITPro_EAC_CopyIcon.gif)           <br/> |Copy  <br/> |Copy an object so you can make changes to it without changing the original object.  <br/> For example, in **Permissions** \> **Admin roles**, select a role from the list view, and then click this icon to create a new role group based on an existing one.  <br/> |
-|![Remove icon](media/ITPro_EAC_RemoveIcon.gif)           <br/> |Remove  <br/> |Remove an item from a list.  <br/> For example, in the **Public Folder Permissions** dialog box, you can remove users from the list of users allowed to access the public folder by selecting the user and clicking this icon.  <br/> |
+|![Add Icon](media/ITPro_EAC_AddIcon.gif)|Add, New|Create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create. <br/> For example, in **Recipients** \> **Groups**, clicking the down arrow displays **Distribution group**, **Security group**, and **Dynamic distribution group** as additional options.|
+|![Edit icon](media/ITPro_EAC_EditIcon.gif)|Edit|Edit an object.|
+|![Delete icon](media/ITPro_EAC_DeleteIcon.gif)|Delete|Delete an object. Some delete icons have a down arrow you can click to show additional options.|
+|![Search icon](media/ITPro_EAC_.gif)|Search|Open a search box in which you can type the search phrase for an object you want to find.|
+|![Icon: Upgrade distribution group to Office 365 group](media/f48d2ecd-36e1-4ec1-a4eb-7c97a23d81dc.gif)|n/a|Upgrade a distribution group to an Office 365 group. This icon can be used only for a distribution group.|
+|![Refresh Icon](media/ITPro_EAC_RefreshIcon.gif)|Refresh|Refresh the list view.|
+|![More Options Icon](media/ITPro_EAC_MoreOptionsIcon.gif)|More options|View more actions you can perform for that tab's objects.  <br/> For example, in **Recipients** \> **Mailboxes** clicking this icon shows the following options: **Add/Remove columns**, **Deleted mailboxes**, **Export data to a CSV file**, and **Advanced search**.|
+|![Up Arrow Icon](media/ITPro_EAC_UpArrowIcon.gif)![Down Arrow Icon](media/ITPro_EAC_DownArrowIcon.gif)|Up arrow and down arrow|Move an object's priority up or down.  <br/>  For example, in **Mail flow** \> **Rules** click the up arrow to raise the priority of a rule. You can also use these arrows to navigate the public folder hierarchy.|
+|![Copy Icon](media/ITPro_EAC_CopyIcon.gif)|Copy|Copy an object so you can make changes to it without changing the original object.  <br/> For example, in **Permissions** \> **Admin roles**, select a role from the list view, and then click this icon to create a new role group based on an existing one.|
+|![Remove icon](media/ITPro_EAC_RemoveIcon.gif)|Remove|Remove an item from a list.  <br/> For example, in the **Public Folder Permissions** dialog box, you can remove users from the list of users allowed to access the public folder by selecting the user and clicking this icon.|
    
 ### List view
 
@@ -103,8 +103,8 @@ See the following articles:
 ## Related articles
 <a name="SB"> </a>
 
-Are you using Exchange Server? See [Exchange admin center in Exchange Server](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
+Are you using Exchange Server? See [Exchange admin center in Exchange Server](https://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
   
-Are you using Exchange Online Protection? See [Exchange admin center in Exchange Online Protection](http://technet.microsoft.com/library/97921f0e-832f-40c7-b56d-414faede5191.aspx).
+Are you using Exchange Online Protection? See [Exchange admin center in Exchange Online Protection](https://technet.microsoft.com/library/97921f0e-832f-40c7-b56d-414faede5191.aspx).
   
 

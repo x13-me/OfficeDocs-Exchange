@@ -28,7 +28,7 @@ You can add an HTML or plain text legal disclaimer, disclosure statement, signat
     
 - Test the disclaimer. When you create the mail flow rule, you have the option to start using it immediately ( **Enforce**), or to test it first and view the results in the messaging log. We recommend testing all mail flow rules prior to setting them to **Enforce**.
     
-For examples and information about how to scope and format disclaimers, signatures, and other additions to email messages, see [Organization-wide disclaimers, signatures, footers, or headers in Exchange 2016](http://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx).
+For examples and information about how to scope and format disclaimers, signatures, and other additions to email messages, see [Organization-wide disclaimers, signatures, footers, or headers in Exchange 2016](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx).
 
 
   
@@ -43,7 +43,7 @@ For examples and information about how to scope and format disclaimers, signatur
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
@@ -51,7 +51,7 @@ For examples and information about how to scope and format disclaimers, signatur
 
 1. Open the EAC and go to **Mail flow** \> **Rules**.
     
-2. Click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then click **Apply disclaimers**.
+2. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and then click **Apply disclaimers**.
     
     ![In the Exchange admin center, click Mal flow \> Rules \> Add  to create a rule](../../media/ee818b31-f5a5-40cc-9fe5-6c04f4120716.png)
   
@@ -59,9 +59,9 @@ For examples and information about how to scope and format disclaimers, signatur
     
 4. In the **Apply this rule if** box, select the conditions for displaying the disclaimer. For example, select **The recipient is located** condition, and then select **Outside the organization**. If you want this rule to apply to every message that enters or leaves your organization, select **[Apply to all messages]**.
     
-5. Next to the **Do the following** box, select **Enter text** to enter the text of your disclaimer. For information about what can be added, see [Formatting your disclaimer](http://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx#FormatDisclaimer).
+5. Next to the **Do the following** box, select **Enter text** to enter the text of your disclaimer. For information about what can be added, see [Formatting your disclaimer](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx#FormatDisclaimer).
     
-6. Click **Select one**, and select one of the [Fallback options if the disclaimer can't be added](http://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx#FallbackOptions).
+6. Click **Select one**, and select one of the [Fallback options if the disclaimer can't be added](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx#FallbackOptions).
     
 7. Specify the audit severity level to assign the severity level that appears in the message log.
     
@@ -71,11 +71,11 @@ For examples and information about how to scope and format disclaimers, signatur
     
 10. When you're finished, click **Save**.
     
-For more examples of how to scope your disclaimer, see [Scoping your disclaimer](http://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx#Scoping).
+For more examples of how to scope your disclaimer, see [Scoping your disclaimer](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx#Scoping).
   
 ### Use Exchange Online PowerShell to add a disclaimer or other email header or footer
 
-Use the [New-TransportRule](http://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx) cmdlet to create the disclaimer rule. For detailed parameter information, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md) or [Mail flow rule conditions and exceptions (predicates) in Exchange Online Protection](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx).
+Use the [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx) cmdlet to create the disclaimer rule. For detailed parameter information, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md) or [Mail flow rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx).
   
 This example creates a new mail flow rule that adds a disclaimer with an image to the end of all email messages that are sent outside the organization.
   
@@ -89,7 +89,7 @@ This example creates a new mail flow rule that adds an advertisement for one mon
 New-TransportRule -Name "March Special" -Enabled $true -SentToScope NotInOrganization -ApplyHtmlDisclaimerLocation Prepend -ActivationDate '03/1/2017' -ExpiryDate '03/31/2017'-ApplyHtmlDisclaimerText "<table align=center width=200 border=1 bordercolor=blue bgcolor=green cellpadding=10 cellspacing=0><tr><td nowrap><a href=http://www.contoso.com/marchspecials.htm>Click to see March specials</a></td></tr></table>"
 ```
 
-For more examples of how to scope your disclaimer, see [Scoping your disclaimer](http://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx#Scoping).
+For more examples of how to scope your disclaimer, see [Scoping your disclaimer](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx#Scoping).
   
 ### How do you know this worked?
 

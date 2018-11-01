@@ -29,7 +29,7 @@ You can view or set the Unified Messaging (UM) and voice mail features and confi
 - Enable or disable access to their email or calendar.
     
 > [!NOTE]
-> Some of the settings and features can only be configured by using the Shell. 
+> Some of the settings and features can only be configured by using Exchange Online PowerShell. 
   
 For additional management tasks related to users who are enabled for voice mail, see [Voice mail-enabled user procedures](voice-mail-enabled-user-procedures.md).
   
@@ -37,7 +37,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 - Estimated time to complete: 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailboxes" entry in the [Unified Messaging Permissions](http://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailboxes" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
     
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](../../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
     
@@ -48,7 +48,7 @@ For additional management tasks related to users who are enabled for voice mail,
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -72,13 +72,13 @@ For additional management tasks related to users who are enabled for voice mail,
     
 5. On the **UM Mailbox** page, under **Other extensions**, you can add, change, and view extension numbers for the user.
     
-  - To add an extension number, click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif). On the **Add another extension** page, use **Browse** to select the UM dial plan, and then enter the extension number in the **Extension number** box. 
+  - To add an extension number, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). On the **Add another extension** page, use **Browse** to select the UM dial plan, and then enter the extension number in the **Extension number** box. 
     
-  - To remove an extension number, select the extension number you want to remove, and then click **Remove**![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif). 
+  - To remove an extension number, select the extension number you want to remove, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif). 
     
 6. If you make any changes, click **Save**.
     
-### Use the Shell to configure features for a UM-enabled user
+### Use Exchange Online PowerShell to configure features for a UM-enabled user
 
 This example disables Play on Phone and missed call notifications, but enables text message (SMS) notifications.
   
@@ -107,7 +107,7 @@ This example prevents a user from creating call answering rules, receiving incom
 Set-UMMailbox -Identity tony@contoso.com -AutomaticSpeechRecognitionEnabled $true -CallAnsweringRulesEnabled $false -FaxEnabled $false -SubscriberAccessEnabled $false 
 ```
 
-### Use the Shell to view a UM-enabled user's properties
+### Use Exchange Online PowerShell to view a UM-enabled user's properties
 
 This example displays a list of all the UM-enabled mailboxes in the forest in a formatted list.
   

@@ -31,11 +31,11 @@ The migration administrator must have the necessary administrative privileges in
     
     or
     
-  - Assigned the FullAccess permission for each on-premises mailbox AND the WriteProperty permission to modify the  _TargetAddress_ property on the on-premises user account. 
+  - Assigned the FullAccess permission for each on-premises mailbox AND the WriteProperty permission to modify the _TargetAddress_ property on the on-premises user account. 
     
     or
     
-  - Assigned the Receive As permission on the on-premises mailbox database that stores the user mailboxes AND the WriteProperty permission to modify the  _TargetAddress_ property for the on-premises user account. 
+  - Assigned the Receive As permission on the on-premises mailbox database that stores the user mailboxes AND the WriteProperty permission to modify the _TargetAddress_ property for the on-premises user account. 
     
 - **Cutover Exchange migration**
     
@@ -55,16 +55,16 @@ The migration administrator must have the necessary administrative privileges in
     
     For an IMAP4 migration, the comma-separated value (.csv) file for the migration batch must contain:
     
-  - The user name and password for each mailbox that you want to migrate.
+  - The username and password for each mailbox that you want to migrate.
     
     or
     
-  - The user name and password for an account in your IMAP4 messaging system that has the necessary administrative privileges to access all user mailboxes. To learn whether your IMAP4 server supports this approach and how to enable it, see the documentation for your IMAP4 server.
+  - The username and password for an account in your IMAP4 messaging system that has the necessary administrative privileges to access all user mailboxes. To learn whether your IMAP4 server supports this approach and how to enable it, see the documentation for your IMAP4 server.
     
-You can use the Exchange Management Shell in your on-premises organization to quickly assign the necessary permissions to migrate mailboxes to Office 365.
+You can use Exchange Online PowerShell in your on-premises organization to quickly assign the necessary permissions to migrate mailboxes to Office 365.
   
 > [!NOTE]
-> Because Exchange Server 2003 doesn't support the Exchange Management Shell, you have to use Active Directory Users and Computers to assign the FullAccess permission and Exchange Server Manager to assign the Receive As permission. For more information, see [How to assign service account access to all mailboxes in Exchange Server 2003](https://support.microsoft.com/kb/821897/en-us). 
+> Because Exchange Server 2003 doesn't support Exchange Online PowerShell, you have to use Active Directory Users and Computers to assign the FullAccess permission and Exchange Server Manager to assign the Receive As permission. For more information, see [How to assign service account access to all mailboxes in Exchange Server 2003](https://support.microsoft.com/kb/821897/en-us). 
   
 For information about migrating mailboxes to Office 365 by using different migration types, see [Ways to migrate multiple email accounts to Office 365](mailbox-migration.md).
   
@@ -79,7 +79,7 @@ For information about migrating mailboxes to Office 365 by using different migra
 ### Assign the FullAccess permission
 <a name="bkmk_fullaccess"> </a>
 
-The following examples show different ways to use the Exchange PowerShell **Add-MailboxPermission** cmdlet to assign the FullAccess permission to the migration administrator account for mailboxes in your on-premises organization. 
+The following examples show different ways to use the Exchange Online PowerShell **Add-MailboxPermission** cmdlet to assign the FullAccess permission to the migration administrator account for mailboxes in your on-premises organization. 
   
  **Example 1**
   
@@ -99,7 +99,7 @@ Get-DistributionGroupMember MigrationBatch1 | Add-MailboxPermission -User migadm
 
  **Example 3**
   
-FullAccess permission for all mailboxes that have the value of  `MigBatch2` for  _CustomAttribute10_ is assigned to the migration administrator. 
+FullAccess permission for all mailboxes that have the value of `MigBatch2` for _CustomAttribute10_ is assigned to the migration administrator. 
   
 ```
 Get-Mailbox -ResultSize unlimited -Filter {(CustomAttribute10 -eq 'MigBatch2')} | Add-MailboxPermission -User migadmin -AccessRights FullAccess -InheritanceType all
@@ -142,7 +142,7 @@ Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbo
 ### Assign the Receive As permission
 <a name="bkmk_fullaccess"> </a>
 
-The following example shows how to use the Exchange PowerShell **Add-ADPermission** cmdlet to assign the Receive As permission to the migration administrator account for "Mailbox Database 1900992314." 
+The following example shows how to use the Exchange Online PowerShell **Add-ADPermission** cmdlet to assign the Receive As permission to the migration administrator account for "Mailbox Database 1900992314." 
   
 ```
 Add-ADPermission -Identity "Mailbox Database 1900992314" -User migadmin -ExtendedRights receive-as
@@ -161,11 +161,11 @@ Get-ADPermission -Identity "Mailbox Database 1900992314" -User migadmin
 ### Assign the WriteProperty permission
 <a name="bkmk_fullaccess"> </a>
 
-The following examples show different ways to use the Exchange PowerShell **Add-ADPermission** cmdlet to assign the migration administrator account the WriteProperty permission to modify the  _TargetAddress_ property for on-premises user accounts. This capability is required to perform a staged Exchange migration if the migration administrator isn't a member of the Domain Admins group. 
+The following examples show different ways to use the Exchange Online PowerShell **Add-ADPermission** cmdlet to assign the migration administrator account the WriteProperty permission to modify the _TargetAddress_ property for on-premises user accounts. This capability is required to perform a staged Exchange migration if the migration administrator isn't a member of the Domain Admins group. 
   
  **Example 1**
   
-WriteProperty permission to modify the  _TargetAddress_ property for the user account of Rainer Witte is assigned to the migration administrator account (for example, migadmin). 
+WriteProperty permission to modify the _TargetAddress_ property for the user account of Rainer Witte is assigned to the migration administrator account (for example, migadmin). 
   
 ```
 Add-ADPermission -Identity "Rainer Witte" -User migadmin -AccessRights WriteProperty -Properties TargetAddress
@@ -173,7 +173,7 @@ Add-ADPermission -Identity "Rainer Witte" -User migadmin -AccessRights WriteProp
 
  **Example 2**
   
-WriteProperty permission to modify the  _TargetAddress_ property for all members of the distribution group StagedBatch1 is assigned to the migration administrator account. 
+WriteProperty permission to modify the _TargetAddress_ property for all members of the distribution group StagedBatch1 is assigned to the migration administrator account. 
   
 ```
 Get-DistributionGroupMember StagedBatch1 | Add-ADPermission User migadmin -AccessRights WriteProperty -Properties TargetAddress 
@@ -181,7 +181,7 @@ Get-DistributionGroupMember StagedBatch1 | Add-ADPermission User migadmin -Acces
 
  **Example 3**
   
-WriteProperty permission to modify the  _TargetAddress_ property for all user accounts that have the value of  `StagedMigration` for  _CustomAttribute15_ is assigned to the migration administrator account. 
+WriteProperty permission to modify the _TargetAddress_ property for all user accounts that have the value of `StagedMigration` for _CustomAttribute15_ is assigned to the migration administrator account. 
   
 ```
 Get-User -ResultSize unlimited -Filter {(CustomAttribute15 -eq 'StagedMigration')} | Add-ADPermission -User migadmin -AccessRights WriteProperty -Properties TargetAddress
@@ -189,7 +189,7 @@ Get-User -ResultSize unlimited -Filter {(CustomAttribute15 -eq 'StagedMigration'
 
  **Example 4**
   
-WriteProperty permission to modify the  _TargetAddress_ property for user mailboxes in the on-premises organization is assigned to the migration administrator account. 
+WriteProperty permission to modify the _TargetAddress_ property for user mailboxes in the on-premises organization is assigned to the migration administrator account. 
   
 ```
 Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Add-ADPermission -User migadmin -AccessRights WriteProperty -Properties TargetAddress

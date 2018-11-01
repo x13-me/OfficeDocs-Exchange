@@ -110,7 +110,7 @@ You manage all aspects of authentication policies in Exchange Online PowerShell.
 |Exchange Web Services (EWS)|A programming interface that's used by Outlook, Outlook for Mac, and third-party apps.|*AllowBasicAuthWebServices*|
 |PowerShell|Used to connect to Exchange Online with remote PowerShell. If you block Basic authentication for Exchange Online PowerShell, you need to use the Exchange Online PowerShell Module to connect. For instructions, see [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell).|*AllowBasicAuthPowerShell*|
    
-Typically, when you block Basic authentication for a user, we recommend that you block Basic authentication for all protocols. However, you can use the  *AllowBasicAuth\**  parameters (switches) on the **New-AuthenticationPolicy** and **Set-AuthenticationPolicy** cmdlets to selectively allow or block Basic authentication for specific protocols. 
+Typically, when you block Basic authentication for a user, we recommend that you block Basic authentication for all protocols. However, you can use the *AllowBasicAuth\**  parameters (switches) on the **New-AuthenticationPolicy** and **Set-AuthenticationPolicy** cmdlets to selectively allow or block Basic authentication for specific protocols. 
   
 For email clients and apps that don't support modern authentication, you need to allow Basic authentication for the protocols and services that they require. These protocols and services are described in the following table:
   
@@ -134,7 +134,7 @@ Blocking Basic authentication will block the following legacy Exchange Online fe
 
 - Verify that modern authentication for Outlook desktop clients is enabled in your Exchange Online organization (it's disabled by default). For more information, see [Enable or disable modern authentication in Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662).
 
-- Verify your email clients and apps support modern authentication (see the list at the beginning of the topic). Also, verify that your Outlook desktop clients are running the minimum required cumulative updates. For more information, see [Outlook Updates](https://support.office.com/en-us/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213).
+- Verify your email clients and apps support modern authentication (see the list at the beginning of the topic). Also, verify that your Outlook desktop clients are running the minimum required cumulative updates. For more information, see [Outlook Updates](https://support.office.com/article/472c2322-23a4-4014-8f02-bbc09ad62213).
 
 - To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
 
@@ -296,7 +296,7 @@ For detailed syntax and parameter information, see [Get-AuthenticationPolicy](ht
   
 ### Modify authentication policies
 
-By default, when you create a new authentication policy without specifying any protocols, Basic authentication is blocked for all client protocols in Exchange Online. In other words, the default value of the  *AllowBasicAuth\** parameters (switches) is `False` for all protocols. 
+By default, when you create a new authentication policy without specifying any protocols, Basic authentication is blocked for all client protocols in Exchange Online. In other words, the default value of the *AllowBasicAuth\** parameters (switches) is `False` for all protocols. 
   
 - To enable Basic authentication for a specific protocol that's disabled, specify the switch without a value.
 

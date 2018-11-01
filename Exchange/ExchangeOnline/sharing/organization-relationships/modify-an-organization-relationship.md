@@ -32,7 +32,7 @@ To learn more about organization relationships, see [Organization relationships 
     
   - Disable free/busy sharing for the organization relationship.
     
-  - Change the free/busy access level from  _Calendar free/busy information with time, subject, and location_ to  _Calendar free/busy information with time only_.
+  - Change the free/busy access level from _Calendar free/busy information with time, subject, and location_ to _Calendar free/busy information with time only_.
     
 ## What do you want to do?
 
@@ -43,11 +43,11 @@ To learn more about organization relationships, see [Organization relationships 
     
 2. Go to **organization** \> **sharing**.
     
-3. In list view, under **Organization Sharing**, select the organization relationship Contoso, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. In list view, under **Organization Sharing**, select the organization relationship Contoso, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 4. In **organization relationship**, **general** don't change the **Name** for the organization relationship. 
     
-5. In the **Domains to share with** box, enter the domain service.contoso.com, then click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif). 
+5. In the **Domains to share with** box, enter the domain service.contoso.com, then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). 
     
 6. Click **save** to update the organization relationship. 
     
@@ -58,7 +58,7 @@ To learn more about organization relationships, see [Organization relationships 
     
 2. Go to **organization** \> **sharing**.
     
-3. In the list view, under **Organization Sharing**, select the organization relationship Contoso, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. In the list view, under **Organization Sharing**, select the organization relationship Contoso, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 4. In **organization relationship** click **sharing**.
     
@@ -73,15 +73,15 @@ To learn more about organization relationships, see [Organization relationships 
     
 2. Go to **organization** \> **sharing**.
     
-3. In list view, under **Organization Sharing**, select the organization relationship Contoso, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+3. In list view, under **Organization Sharing**, select the organization relationship Contoso, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
-4. In ** organization relationship **, click **sharing**
+4. In **organization relationship**, click **sharing**
     
 5. Select **Calendar free/busy information with time only**.
     
 6. Click **save** to update the organization relationship. 
     
-### Use the Exchange Management Shell to modify the organization relationship
+### Use Exchange Online PowerShell to modify the organization relationship
 <a name="BKMK_Shell"> </a>
 
 - This example adds the domain name service.contoso.com to the organization relationship Contoso.
@@ -98,24 +98,24 @@ To learn more about organization relationships, see [Organization relationships 
   Set-OrganizationRelationship -Identity Contoso -Enabled $false
   ```
 
-- This example enables calendar availability information access for the organization relationship WoodgroveBank and sets the access level to  `AvailabilityOnly` (calendar free/busy information with time only). 
+- This example enables calendar availability information access for the organization relationship WoodgroveBank and sets the access level to `AvailabilityOnly` (calendar free/busy information with time only). 
     
   ```
   Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
   
   ```
 
-For detailed syntax and parameter information, see [Get-OrganizationRelationship](http://technet.microsoft.com/library/b689bf46-437b-4ac4-89ce-dcffc3a388f5.aspx) and [Set-OrganizationRelationship](http://technet.microsoft.com/library/4e3b9d1d-cf41-4fd0-97e3-a0bbc816cf87.aspx).
+For detailed syntax and parameter information, see [Get-OrganizationRelationship](https://technet.microsoft.com/library/b689bf46-437b-4ac4-89ce-dcffc3a388f5.aspx) and [Set-OrganizationRelationship](https://technet.microsoft.com/library/4e3b9d1d-cf41-4fd0-97e3-a0bbc816cf87.aspx).
   
 ## How do you know this worked?
 
-To verify that you have successfully updated the organization relationship, run the following Exchange Management Shell command and verify the organization relationship information.
+To verify that you have successfully updated the organization relationship, run the following command and verify the organization relationship information.
   
 ```
 Get-OrganizationRelationship | format-list
 ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 

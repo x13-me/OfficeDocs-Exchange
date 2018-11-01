@@ -21,7 +21,7 @@ When a voice message is protected, the recipient is not only blocked from forwar
 ## Overview of Protected Voice Mail
 <a name="overview"> </a>
 
-The Protected Voice Mail feature is available with Unified Messaging (UM). It can be configured on a UM mailbox policy, and all Protected Voice Mail settings can be configured by using the Exchange admin center (EAC) or cmdlets in the Exchange Management Shell in Exchange Server.
+The Protected Voice Mail feature is available with Unified Messaging (UM). It can be configured on a UM mailbox policy, and all Protected Voice Mail settings can be configured by using the Exchange admin center (EAC) or cmdlets in Exchange Online PowerShell in Exchange Server.
   
 Protected Voice Mail is implemented by applying Information Rights Management (IRM) to voice messages. When voice messages are protected by UM:
   
@@ -48,11 +48,11 @@ The email client software that's used to listen to a Protected Voice Mail messag
   
 |**Email client**|**Description**|
 |:-----|:-----|
-|Outlook  <br/> |Protected voice messages are supported in Outlook 2010 and later versions.  <br/> |
-|Outlook Web App  <br/> |Outlook Web App supports Protected Voice Mail messages.  <br/> |
-|Outlook Voice Access  <br/> |Outlook Voice Access supports Protected Voice Mail.  <br/> |
-|Windows Mobile or Windows Phone  <br/> |Windows Mobile doesn't support Protected Voice Mail. However, Windows Phone 7 and Windows Phone 8 support Protected Voice Mail.  <br/> |
-|Other third-party email clients  <br/> |Protected Voice Mail isn't supported.  <br/> |
+|Outlook|Protected voice messages are supported in Outlook 2010 and later versions.|
+|Outlook Web App|Outlook Web App supports Protected Voice Mail messages.|
+|Outlook Voice Access|Outlook Voice Access supports Protected Voice Mail.|
+|Windows Mobile or Windows Phone|Windows Mobile doesn't support Protected Voice Mail. However, Windows Phone 7 and Windows Phone 8 support Protected Voice Mail.|
+|Other third-party email clients|Protected Voice Mail isn't supported.|
    
 ## Protected voice message structure
 <a name="structure"> </a>
@@ -61,7 +61,7 @@ There are actually two messages involved for each Protected Voice Mail message. 
   
 Protected voice messages are shown in the user's Inbox in the **Voice Mail** search folder. The user can listen to the voice messages by using the embedded audio player just as they would listen to a regular voice message, except that the Forward button will be disabled and a note will be shown at the top of the message stating that it's protected and that it can't be forwarded. 
   
-For email clients that don't support Protected Voice Mail, the body of the outer message will be displayed. Administrators can include text when the client's software doesn't support Protected Voice Mail by using UM mailbox policies. You can customize the default text that's included in the email message by configuring a UM mailbox policy. For example, you could configure the UM mailbox policy with customized text such as,  _"You can't open this voice mail message because it's protected. To view or listen to this voice message, sign in to your mailbox at https://mail.contoso.com or call +1 (425) 555-1234 to call in to Outlook Voice Access."_
+For email clients that don't support Protected Voice Mail, the body of the outer message will be displayed. Administrators can include text when the client's software doesn't support Protected Voice Mail by using UM mailbox policies. You can customize the default text that's included in the email message by configuring a UM mailbox policy. For example, you could configure the UM mailbox policy with customized text such as, _"You can't open this voice mail message because it's protected. To view or listen to this voice message, sign in to your mailbox at https://mail.contoso.com or call +1 (425) 555-1234 to call in to Outlook Voice Access."_
   
 ## Composing a Protected Voice Mail message
 <a name="composing"> </a>
@@ -99,19 +99,19 @@ There are two situations in which protected voice messages can be created:
 
 You can create a Unified Messaging mailbox policy to apply a common set of UM policy settings, such as PIN policy settings, dialing restrictions, and Protected Voice Mail settings, to a collection of UM-enabled mailboxes. To learn more about UM mailbox policies, see [Manage a UM mailbox policy](../../voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy.md) and [Protected Voice Mail procedures](protected-voice-mail-procedures.md).
   
-You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Exchange Management Shell to configure Protected Voice Mail options. The following table lists the settings that can be configured for Protected Voice Mail. 
+You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in Exchange Online PowerShell to configure Protected Voice Mail options. The following table lists the settings that can be configured for Protected Voice Mail. 
   
  **Protected Voice Mail settings**
   
 |**Shell parameter**|**Setting available in EAC?**|**Description**|
 |:-----|:-----|:-----|
-| _ProtectAuthenticatedVoiceMail_ <br/> |Yes  <br/> |The  _ProtectAuthenticatedVoiceMail_ parameter specifies whether UM-enabled users can send protected voice messages when they're accessing their mailbox using Outlook Voice Access. The default setting is  `None`. This means that no protection is applied when voice messages are composed and that callers won't have the option to mark voice messages as Private. If the value is set to  `Private`, only messages marked as Private by the caller are protected. If the value is set to  `All`, every voice message is protected, regardless of the option chosen by the caller.  <br/> |
-| _ProtectUnauthenticatedVoiceMail_ <br/> |Yes  <br/> |The  _ProtectUnauthenticatedVoiceMail_ parameter specifies whether the Mailbox servers that answer calls for UM-enabled users associated with a UM mailbox policy create protected voice messages. This setting also applies when a message is sent from a UM auto attendant to a UM-enabled user. The default setting is  `None`. This means that no protection is applied to voice messages and that the caller won't be offered the option to mark the message as Private. If the value is set to  `Private`, only messages marked as Private by the caller are protected. If the value is set to  `All`, every voice message is protected, regardless of whether if the message has been marked as private by the caller.  <br/> |
-| _ProtectedVoiceMailText_ <br/> |Yes  <br/> |The  _ProtectedVoiceMailText_ parameter specifies the text to be included in the body of the outer message of a Protected Voice Mail message. This text will be shown in all email client applications that don't support Protected Voice Mail messages. Note that a default message is always provided by UM when this property is set to  `Null` or is empty.  <br/> |
-| _RequireProtectedPlayOnPhone_ <br/> |Yes  <br/> |The  _RequireProtectedPlayOnPhone_ parameter specifies whether users associated with the UM mailbox policy will be forced to listen to the protected voice message over the phone (using Play On Phone). The default value is  `$false.` When the value is set to  `$true`, the audio media player on Protected Voice Mail forms in Outlook or Outlook Web App will be shown as disabled. Note that the preview text for the voice message can always be accessed. The user can't play the audio file using any media player software or use the embedded media player to listen to the voice message.  <br/> |
-| _AllowVoiceResponseToOtherMessageTypes_ <br/> |Yes  <br/> |The  _AllowVoiceResponseToOtherMessageTypes_ parameter specifies whether callers who have authenticated to Outlook Voice Access to access their email will be able to compose a voice reply to email messages and meeting requests.  <br/> |
+|_ProtectAuthenticatedVoiceMail_|Yes|The _ProtectAuthenticatedVoiceMail_ parameter specifies whether UM-enabled users can send protected voice messages when they're accessing their mailbox using Outlook Voice Access. The default setting is `None`. This means that no protection is applied when voice messages are composed and that callers won't have the option to mark voice messages as Private. If the value is set to `Private`, only messages marked as Private by the caller are protected. If the value is set to `All`, every voice message is protected, regardless of the option chosen by the caller.|
+|_ProtectUnauthenticatedVoiceMail_|Yes|The _ProtectUnauthenticatedVoiceMail_ parameter specifies whether the Mailbox servers that answer calls for UM-enabled users associated with a UM mailbox policy create protected voice messages. This setting also applies when a message is sent from a UM auto attendant to a UM-enabled user. The default setting is `None`. This means that no protection is applied to voice messages and that the caller won't be offered the option to mark the message as Private. If the value is set to `Private`, only messages marked as Private by the caller are protected. If the value is set to `All`, every voice message is protected, regardless of whether if the message has been marked as private by the caller.|
+|_ProtectedVoiceMailText_|Yes|The _ProtectedVoiceMailText_ parameter specifies the text to be included in the body of the outer message of a Protected Voice Mail message. This text will be shown in all email client applications that don't support Protected Voice Mail messages. Note that a default message is always provided by UM when this property is set to `Null` or is empty.|
+|_RequireProtectedPlayOnPhone_|Yes|The _RequireProtectedPlayOnPhone_ parameter specifies whether users associated with the UM mailbox policy will be forced to listen to the protected voice message over the phone (using Play On Phone). The default value is `$false.` When the value is set to `$true`, the audio media player on Protected Voice Mail forms in Outlook or Outlook Web App will be shown as disabled. Note that the preview text for the voice message can always be accessed. The user can't play the audio file using any media player software or use the embedded media player to listen to the voice message.|
+|_AllowVoiceResponseToOtherMessageTypes_|Yes|The _AllowVoiceResponseToOtherMessageTypes_ parameter specifies whether callers who have authenticated to Outlook Voice Access to access their email will be able to compose a voice reply to email messages and meeting requests.|
    
-For more information about how to manage Protected Voice Mail settings, see [Protected Voice Mail procedures](protected-voice-mail-procedures.md) or [Set-UMMailboxPolicy](http://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx).
+For more information about how to manage Protected Voice Mail settings, see [Protected Voice Mail procedures](protected-voice-mail-procedures.md) or [Set-UMMailboxPolicy](https://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx).
   
 ## Text message notifications and Protected Voice Mail
 <a name="notifications"> </a>

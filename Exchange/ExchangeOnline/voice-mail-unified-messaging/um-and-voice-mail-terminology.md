@@ -114,7 +114,7 @@ national number prefix
     
 number mask
   
-> A set of numbers and wildcard characters that is used to determine the telephone number that the Mailbox server will dial. An "X" represents a single digit (0 … 9). An asterisk (\*) represents any number of such digits.
+> A set of numbers and wildcard characters that is used to determine the telephone number that the Mailbox server will dial. An "X" represents a single digit (0 to 9). An asterisk (\*) represents any number of such digits.
     
 numeric extension
   

@@ -20,14 +20,14 @@ In your Exchange Online organization, you may need to restrict access to specifi
 
 - Estimated time to complete: 15 minutes
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Moderated Transport" entry in the [Transport Permissions](http://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Moderated Transport" entry in the [Transport Permissions](https://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic. 
     
 - You can use the Exchange admin center (EAC) to configure a distribution group for moderation. All other recipient types can only be configured for moderation using PowerShell. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
@@ -48,17 +48,17 @@ To accomplish the tasks in this example scenario, perform the following procedur
   
 1. In the EAC, navigate to **Recipients** \> **Groups**.
     
-2. In the result pane, select the **All employees** distribution group and click **Edit**![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+2. In the result pane, select the **All employees** distribution group and click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
     
 3. On the properties page, click **Message approval**, and complete the following:
     
 1. Select the **Messages sent to this group have to be approved by a moderator** check box. 
     
-2. In the **Group moderators** list, click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif).
+2. In the **Group moderators** list, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif).
     
 3. In the **Select group moderators** dialog, find and select David Hamilton, click **Add**, find and select Yossi Ran, and click **Add**. When you are finished, click **OK**.
     
-4. In the **Senders who don't require message approval** list, click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif).
+4. In the **Senders who don't require message approval** list, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif).
     
 5. In the **Select senders** dialog, find and select HR from the list and click **Add**. When you are finished, click **OK**.
     
@@ -66,7 +66,7 @@ To accomplish the tasks in this example scenario, perform the following procedur
     
 4. Click **Save**.
     
-### Use the Exchange Management Shell to configure a moderated recipient
+### Use Exchange Online PowerShell to configure a moderated recipient
 <a name="EMCtoConfigureModeration"> </a>
 
 Run the following command:

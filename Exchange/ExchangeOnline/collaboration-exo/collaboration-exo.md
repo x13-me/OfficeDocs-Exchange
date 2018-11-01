@@ -25,7 +25,7 @@ This topic compares these collaboration features to help you decide which featur
 
 A site mailbox is functionally comprised of a SharePoint site membership (owners and members), shared storage through an Exchange mailbox for email messages, and a SharePoint site to store and share. Essentially, site mailboxes bring Exchange email and SharePoint documents together. For users, a site mailbox serves as a central filing cabinet for the project, providing a place to file project email and documents that can be accessed and edited only by site members. In addition, site mailboxes have a specified lifecycle and are optimized to be used for projects that have set start and end dates. To fully implement site mailboxes, end users must use Outlook 2013.
   
-To learn more, see [Prepare for using Site Mailboxes in Office 365](https://go.microsoft.com/fwlink/?LinkId=286170).
+To learn more, see [Prepare for using Site Mailboxes in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=286170).
   
 ## Public folders
 <a name="PFs"> </a>
@@ -41,7 +41,7 @@ To learn more, see [Public folders in Office 365 and Exchange Online](public-fol
 
 A shared mailbox is a mailbox that multiple designated users can access to read and send email messages and to share a common calendar. Shared mailboxes can provide a generic email address (such as info@contoso.com or sales@contoso.com) that customers can use to inquire about your company. If the shared mailbox has the Send As permission assigned when a delegated user responds to the email message, it can appear as though the mailbox (for example, sales@contoso.com) is responding, not the actual user. 
   
-To learn more, see [Shared Mailboxes](http://technet.microsoft.com/library/1d71c01b-e261-408e-a633-1d1c9d00032a.aspx).
+To learn more, see [Shared Mailboxes](https://technet.microsoft.com/library/1d71c01b-e261-408e-a633-1d1c9d00032a.aspx).
   
 ## Groups
 <a name="Groups"> </a>
@@ -57,11 +57,11 @@ The following table gives you a quick glance at each of the collaboration featur
   
 ||**Site mailboxes**|**Public folders**|**Shared mailboxes**|**Groups**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Type of group** <br/> |Users who work together as a team on a specific project with definitive start and end dates.  <br/> |With the proper permissions, everyone in your organization can access and search public folders. Public folders are ideal for maintaining history or distribution group conversations.  <br/> |Delegates working on behalf of a virtual identity, and they can respond to email as that shared mailbox identity. Example: support@tailspintoys.com  <br/> |Users who need to send email to a group of recipients with a common interest or characteristic.  <br/> |
-|**Ideal group size** <br/> |Small  <br/> |Large  <br/> |Small  <br/> |Large  <br/> |
-|**Access** <br/> |Site mailbox owners and members.  <br/> |Accessible by anyone in your organization.  <br/> |Users can be granted Full Access and/or Send As permissions. If granted Full Access permissions, users must also add the shared mailbox to their Outlook profile to access the shared mailbox.  <br/> |For distribution groups, members must be manually added. For dynamic distribution groups, members are added based on filtering criteria.  <br/> |
-|**Shared calendar?** <br/> |No  <br/> |Yes  <br/> |Yes  <br/> |No  <br/> |
-|**Email arrives in user's personal Inbox?** <br/> |No. Email arrives in the site mailbox.  <br/> |No. Email arrives in the public folder.  <br/> |No. Email arrives in the Inbox of the shared mailbox.  <br/> |Yes. Email arrives in the Inbox of a distribution group member.  <br/> |
-|**Supported clients** <br/> | Outlook 2013  <br/>  SharePoint Online  <br/> | Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> | Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> | Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> |
+|**Type of group**|Users who work together as a team on a specific project with definitive start and end dates.|With the proper permissions, everyone in your organization can access and search public folders. Public folders are ideal for maintaining history or distribution group conversations.|Delegates working on behalf of a virtual identity, and they can respond to email as that shared mailbox identity. Example: support@tailspintoys.com|Users who need to send email to a group of recipients with a common interest or characteristic.|
+|**Ideal group size**|Small|Large|Small|Large|
+|**Access**|Site mailbox owners and members.|Accessible by anyone in your organization.|Users can be granted Full Access and/or Send As permissions. If granted Full Access permissions, users must also add the shared mailbox to their Outlook profile to access the shared mailbox.|For distribution groups, members must be manually added. For dynamic distribution groups, members are added based on filtering criteria.|
+|**Shared calendar?**|No|Yes|Yes|No|
+|**Email arrives in user's personal Inbox?**|No. Email arrives in the site mailbox.|No. Email arrives in the public folder.|No. Email arrives in the Inbox of the shared mailbox.|Yes. Email arrives in the Inbox of a distribution group member.|
+|**Supported clients**| Outlook 2013  <br/>  SharePoint Online| Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007| Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007| Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007|
    
 
