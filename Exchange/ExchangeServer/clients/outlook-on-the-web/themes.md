@@ -91,9 +91,9 @@ You need to configure a unique display name and sort order for the new theme, be
   
 1. Use Notepad to open the file named `themeinfo.xml` in the new theme folder `%ExchangeInstallPath%ClientAccess\OWA\prem\<ExchangeVersion>\resources\themes\<NewThemeFolder>` that you created in Step 1. The contents of the file look like this: 
     
- `<theme displayname="__<CopiedThemeName>__" sortorder="<CopiedThemeSortOrder>" />`
+ `<theme displayname="__<CopiedThemeName>__" sortorder="<CopiedThemeSortOrder>"/>`
     
-2. Change the `<theme displayname="__<CopiedThemeName>__"` value to the value you want. For example `displayname = "Fourth Coffee Corporate Theme"`.
+2. Change the `displayname="__<CopiedThemeName>__"` value to the value you want. For example `displayname = "Fourth Coffee Corporate Theme"`.
     
     **Note**: The theme display name value `"__<ThemeName>__"` is a code string that's localized into different languages. The text value that you specify for the new theme isn't localized into different languages.
     
