@@ -39,7 +39,7 @@ For detailed syntax and parameter information, see [Get-ExchangeServer](http://t
   
 ## Review the Windows Application log and the Exchane Setup log
   
-- Exchange Setup logs events in the **Application** log of the Windows Server. This log contains a history of each action that the system takes during Exchange setup and any errors that occurred (By default, the logging method is set to Verbose). You can use the Windows **Even Viewer** to find the  messages related to Exchange setup.
+- Exchange Setup logs events in the **Application** log of the Windows Server. This log contains a history of each action that the system takes during Exchange setup and any errors that occurred (By default, the logging method is set to Verbose). You can use the Windows **Event Viewer** to find the  messages related to Exchange setup.
   
 - The Exchange Setup log is available at _\<system drive\>_:\ExchangeSetupLogs\ExchangeSetup.log (_\<system drive\>_ is the drive where Windows is installed). The Setup log tracks the progress of every task during the Exchange installation and configuration. The file contains information about the status of the prerequisite and system readiness checks before installation starts, the application installation progress, and the configuration changes that are made to the system. Check this log file to verify that Exchange was installed as expected.
   
