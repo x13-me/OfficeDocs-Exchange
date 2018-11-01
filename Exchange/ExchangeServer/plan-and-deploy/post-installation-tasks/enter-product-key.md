@@ -54,7 +54,7 @@ If you want to enter a product key on an Exchange 2016 or Exchange 2019 server, 
 
     - Click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
 
-    - In the details pane, click **Enter Product Key**. Note that this link is only availble for unlicensed servers.
+    - In the details pane, click **Enter Product Key**. Note that this link is only available for unlicensed servers.
 
     ![Selecting an unlicensed server in the Servers tab in the EAC](../../media/eac-servers-servers-unlicensed.png)
 
@@ -111,7 +111,7 @@ To verify that you've successfully licensed the Exchange server, do any of the f
 
     ![The details pane of a selected, licensed server in the Servers tab in the EAC](../../media/eac-servers-servers-licensed.png)
 
-- In the Exchange Management Shell, replace _\<ServerName\>_ with the name of the Exchange server you licensed, and run the following command to veriy the property values: 
+- In the Exchange Management Shell, replace _\<ServerName\>_ with the name of the Exchange server you licensed, and run the following command to verify the property values: 
 
     ```
     Get-ExchangeServer <ServerName> | Format-List Name,Edition,*Trial*
