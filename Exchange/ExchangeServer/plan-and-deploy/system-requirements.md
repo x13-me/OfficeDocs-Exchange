@@ -41,7 +41,7 @@ The requirements for the network and the directory servers in your Exchange 2019
 |**Component**|**Requirement**|
 |:-----|:-----|
 |Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <br/>• Windows Server 2019 Standard or Datacenter <br/>• Windows Server 2016 Standard or Datacenter <br/>• Windows Server 2012 R2 Standard or Datacenter|
-|Active Directory|The Active Directory forest functionality level needs to be **Windows Server 2012 R2** or higher.|
+|Active Directory|The Active Directory forest functional level is **Windows Server 2012 R2** or higher.|
 |DNS namespace|Exchange 2019 supports the following DNS namespaces:  <br/> • Contiguous  <br/> • Noncontiguous  <br/> • Single label domains  <br/> • Disjoint  <br/> For more information about DNS namespaces that are supported by Exchange, see [KB2269838](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2269838).|
 |IPv6|Exchange 2013 and later support IPv6 only when IPv4 is also installed and enabled on the Exchange server. <br/> If you deploy Exchange in this configuration, and your network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](https://technet.microsoft.com/library/33543023-eb9a-4102-b990-84a818a52814.aspx).|
  
@@ -147,8 +147,8 @@ The following table lists the requirements for the network and the directory ser
 
 |**Component**|**Requirement**|
 |:-----|:-----|
-|Domain controllers|All domain controllers in the forest need to be running one of the following: <br/> Windows Server 2016 Standard or DatacenterWindows Server 2012 R2 Standard or Datacenter <br/> Windows Server 2012 Standard or Datacenter <br/> Windows Server 2008 R2 Standard or Enterprise <br/> Windows Server 2008 R2 Datacenter RTM or later|
-|Active Directory forest|The Active Directory forest functionality level needs to be at Windows Server 2008 R2 or higher.|
+|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <br/>• Windows Server 2016 Standard or Datacenter <br/>• Windows Server 2012 R2 Standard or Datacenter <br/>• Windows Server 2012 Standard or Datacenter <br/>• Windows Server 2008 R2 Standard or Enterprise <br/>• Windows Server 2008 R2 Datacenter RTM or later|
+|Active Directory forest|The Active Directory forest functional level is Windows Server 2008 R2 or higher.|
 |DNS namespace support|Exchange 2016 supports the following domain name system (DNS) namespaces: <br/>• Contiguous <br/>• Noncontiguous <br/>• Single label domains <br/>• Disjoint <br/> For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, [Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2269838).|
 |IPv6 support|In Exchange 2016, IPv6 is supported only when IPv4 is also installed and enabled. If Exchange 2016 is deployed in this configuration, and the network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](http://technet.microsoft.com/library/33543023-eb9a-4102-b990-84a818a52814.aspx).|
  

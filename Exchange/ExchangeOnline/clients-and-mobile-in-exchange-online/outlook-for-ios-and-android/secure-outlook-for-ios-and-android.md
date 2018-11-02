@@ -15,8 +15,9 @@ description: "Summary: How to enable Outlook for iOS and Android in your Exchang
 
 # Securing Outlook for iOS and Android in Exchange Online
 
- **Summary**: How to enable Outlook for iOS and Android in your Exchange Online environment in a secure manner.
-  
+> [!IMPORTANT]
+> THe Allow/Block/Quarantine (ABQ) list provides no security guarantees (if a client spoofs the DeviceType header, it might be possible to bypass blocking for a particular device type). To securely restrict access to specific device types, we recommend that you configure conditional access policies. For more information, see [App-based conditional access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune).
+
 Outlook for iOS and Android provides users the fast, intuitive email and calendar experience that users expect from a modern mobile app, while being the only app to provide support for the best features of Office 365.
   
 Protecting company or organizational data on users' mobile devices is extremely important. Begin by reviewing [Setting up Outlook for iOS and Android](secure-outlook-for-ios-and-android.md#settingup), to ensure your users have all the required apps installed. After that, choose one of the following options to secure your devices and your organization's data:
@@ -76,7 +77,9 @@ When an organization decides to standardize how users access Exchange data, usin
 The policies leverage the grant control [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference), which ensures only Microsoft apps that have integrated the Intune SDK are granted access.
   
 > [!NOTE]
-> After the conditional access policies are enabled, it may take up to 6 hours for any previously connected mobile device to become blocked. > Mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped when access is managed by a conditional access policy that includes either [Require device to be marked as compliant](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications) or [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference). > To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is leveraged. For more information, see [App-based Conditional Access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune). 
+> After the conditional access policies are enabled, it may take up to 6 hours for any previously connected mobile device to become blocked.
+> Mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped when access is managed by a conditional access policy that includes either [Require device to be marked as compliant](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications) or [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
+> To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is leveraged. For more information, see [App-based Conditional Access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune). 
   
 ### Protect corporate data in Outlook for iOS and Android using Intune app protection policies
 <a name="blockallemail"> </a>
@@ -315,5 +318,3 @@ The following example shows how to add the user-agent strings to the EWS allow l
 ```
 Set-OrganizationConfig -EwsAllowList @{Add="Outlook-iOS/*","Outlook-Android/*"}
 ```
-
-
