@@ -3,7 +3,7 @@ title: "Journaling procedures in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -371,10 +371,10 @@ To verify that you've successfully specified an alternate journaling mailbox, us
   Get-TransportConfig | Format-List JournalingReportNdrTo
   ```
 
-## Enable journal report decryption
+### Enable journal report decryption
 <a name="IRMDecryption"> </a>
 
-Journal report decryption allows standard journaling or premium journaling to save a clear-text copy of IRM-protected messages in journal reports (along with the original IRM-protected message). If the message contains any attachments that were protected by the Active Directory Rights Management Services (AD RMS) cluster in your organization, the attachments are also decrypted.
+Journal report decryption allows **premium journaling** to save a clear-text copy of IRM-protected messages in journal reports (along with the original IRM-protected message). If the message contains any attachments that were protected by the Active Directory Rights Management Services (AD RMS) cluster in your organization, the attachments are also decrypted.
   
 To enable journal report decryption, perform the following steps:
   
