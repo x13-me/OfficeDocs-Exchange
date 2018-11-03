@@ -57,7 +57,6 @@ In Office 365 mail flow, two DNS records are particularly important: MX records 
 Hostname: contoso-com.mail.protection.outlook.com
 Priority: 0
 TTL: 1 hour
-
 ```
 
  **SPF (sender policy framework) records** are a specially formatted TXT record in DNS. SPF records make sure that only the organization that owns a domain is actually sending email from that domain. SPF is basically a security measure to make sure someone doesn't impersonate another organization. (This impersonation is often called spoofing.) As a domain owner, you can use an SPF record to publish a list of IP addresses or subnets that are authorized to send email on your organization's behalf. This can be helpful if you want to send email from multiple servers or services with different IP addresses. The SPF record for an organization's domain that uses Office 365 to send all their mail should look like the following example:

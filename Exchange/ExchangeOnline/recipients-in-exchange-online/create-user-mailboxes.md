@@ -33,10 +33,8 @@ You have to use the Office 365 admin center or Exchange Online PowerShell to cre
     
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
-  
-## What do you want to do?
 
-### Use the Office 365 admin center to create a new mailbox
+## Use the Office 365 admin center to create a new mailbox
 
 You can use the Office 365 admin center to create a new user account. When you assign the user account a license for Exchange Online, a mailbox is automatically created for the user. To create new user accounts in the Office 365 admin center, see the following topics:
   
@@ -44,7 +42,7 @@ You can use the Office 365 admin center to create a new user account. When you a
     
 - [Add multiple users with a CSV file](https://go.microsoft.com/fwlink/p/?LinkId=279605)
     
-### Use Exchange Online PowerShell to create a new mailbox
+## Use Exchange Online PowerShell to create a new mailbox
 
 This example creates an Exchange Online mailbox and Office 365 user account for Holly Holt. The optional parameter _ResetPasswordOnNextLogon_ will require the user to reset their password the first time they sign in to Office 365. 
   

@@ -98,7 +98,7 @@ Or
 - Run the following command in Exchange Online PowerShell.
     
   ```
-  Get-Mailbox <identity> | fl EmailAddresses
+  Get-Mailbox <identity> | Format-List EmailAddresses
   ```
 
 - Verify that the new email address is included in the results.
@@ -158,7 +158,7 @@ Or
 - Run the following command in Exchange Online PowerShell.
     
   ```
-  Get-Mailbox <identity> | fl EmailAddresses
+  Get-Mailbox <identity> | Format-List EmailAddresses
   ```
 
 - Verify that the email address isn't included in the results.
@@ -179,7 +179,6 @@ Jeffrey Zeng,jeffreyz@northamerica.contoso.com
 Spencer Low,spencerl@northamerica.contoso.com
 Toni Poe,tonip@northamerica.contoso.com
 ...
-
 ```
 
 Run the following command to use the data in the CSV file to add the email address to each mailbox specified in the CSV file.
@@ -206,7 +205,7 @@ Or
 - Run the following command in Exchange Online PowerShell, using the same CSV file that you used to add the new email address.
     
   ```
-  Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Get-Mailbox $_.Mailbox | fl Name,EmailAddresses}
+  Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Get-Mailbox $_.Mailbox | Format-List Name,EmailAddresses}
   ```
 
 - Verify that the new email address is included in the results for each mailbox.

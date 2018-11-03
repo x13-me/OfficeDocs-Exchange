@@ -60,7 +60,6 @@ This example creates the call answering rule `MyCallAnsweringRule` in the mailbo
     
 ```
 New-UMCallAnsweringRule -Name MyCallAnsweringRule -CallerIds "1,4255550100,,","1,4255550123,," -Priority 2 -CallersCanInterruptGreeting $true -Mailbox tonysmith
-
 ```
 
 This example creates the call answering rule `MyCallAnsweringRule` in the mailbox for Tony Smith and performs the following actions: 
@@ -77,7 +76,6 @@ This example creates the call answering rule `MyCallAnsweringRule` in the mailbo
     
 ```
 New-UMCallAnsweringRule -Name MyCallAnsweringRule -Priority 2 -Mailbox tonysmith -ScheduleStatus 0x4 - -KeyMappings "1,1,Receptionist,,,,,45678,","5,2,Urgent Issues,23456,23,45671,50,,"
-
 ```
 
 

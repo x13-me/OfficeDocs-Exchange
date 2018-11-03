@@ -113,7 +113,6 @@ EmailAddress,UserName,Password
 terrya@contoso.edu,terry.adams*mailadmin,P@ssw0rd
 annb@contoso.edu,ann.beebe*mailadmin,P@ssw0rd
 paulc@contoso.edu,paul.cannon*mailadmin,P@ssw0rd
-
 ```
 
 ### Mirapoint

@@ -70,14 +70,12 @@ This example creates an organization relationship with Contoso, Ltd with the fol
     
 ```
 New-OrganizationRelationship -Name "Contoso" -DomainNames "contoso.com","northamerica.contoso.com","europe.contoso.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
-
 ```
 
 If you're not sure which domains Contoso has set up for cloud-based authentication, you can run this command to automatically find the configuration information. The **Get-FederationInformation** cmdlet is used to find the right information, which is then passed to the **New-OrganizationRelationship** cmdlet. 
   
 ```
 Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
-
 ```
 
 For detailed syntax and parameter information, see [Get-FederationInformation](https://technet.microsoft.com/library/e7e948c8-453d-49e2-97da-45fd2a7853ba.aspx) and [New-OrganizationRelationship](https://technet.microsoft.com/library/ec35c7ed-6f91-435e-8c9f-9dbc53c993fe.aspx).
@@ -96,7 +94,6 @@ If you're setting up an organization relationship with an on-premises Exchange o
     
 ```
 New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
-
 ```
 
 For detailed syntax and parameter information, see [New-OrganizationRelationship](https://technet.microsoft.com/library/ec35c7ed-6f91-435e-8c9f-9dbc53c993fe.aspx).

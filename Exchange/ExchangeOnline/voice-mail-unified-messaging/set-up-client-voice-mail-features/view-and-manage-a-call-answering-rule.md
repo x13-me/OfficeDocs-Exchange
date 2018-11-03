@@ -84,7 +84,6 @@ This example sets the priority to 2 on the call answering rule `MyCallAnsweringR
   
 ```
 Set-UMCallAnsweringRule -Mailbox tonysmith -Name MyCallAnsweringRule -Priority 2
-
 ```
 
 This example performs the following actions on the call answering rule `MyCallAnsweringRule` in the mailbox for Tony Smith: 

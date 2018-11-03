@@ -34,7 +34,6 @@ To configure the external postmaster address, use the following syntax.
   
 ```
 Set-TransportConfig -ExternalPostmasterAddress <postmaster address>
-
 ```
 
 For example, to set the external postmaster address to the value `postmaster@contoso.com`, run the following command
@@ -47,7 +46,6 @@ To return the external postmaster address to the default value, run the followin
   
 ```
 Set-TransportConfig -ExternalPostmasterAddress $null
-
 ```
 
 ## How do you know this worked?
@@ -58,7 +56,6 @@ To verify that you have successfully configured the external postmaster address,
     
   ```
   Get-TransportConfig | Format-List ExternalPostmasterAddress
-  
   ```
 
 2. From an external email account, send a message to your Exchange organization that will generate a delivery status notification (DSN). To ensure a DSN will be sent from your external postmaster address, you can configure a transport rule to send a non-delivery report (NDR), which is a type of DSN, for a message from that sender that contains specific keywords. Verify that the sender's email address in the DSN matches the external postmaster address you specified. 

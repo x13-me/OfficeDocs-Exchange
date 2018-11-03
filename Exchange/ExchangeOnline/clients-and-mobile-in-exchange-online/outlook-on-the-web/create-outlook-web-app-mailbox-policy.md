@@ -27,9 +27,7 @@ You can create an Outlook Web App mailbox policy to apply a common set of policy
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to create an Outlook Web App mailbox policy
+## Use the EAC to create an Outlook Web App mailbox policy
 
 1. In the EAC, click **Permissions** \> **Outlook Web App policies**.
     
@@ -44,7 +42,7 @@ You can create an Outlook Web App mailbox policy to apply a common set of policy
   
 5. Click **Save** to save the policy. 
     
-### Use Exchange Online PowerShell to create an Outlook Web App mailbox policy
+## Use Exchange Online PowerShell to create an Outlook Web App mailbox policy
 
 This example creates an Outlook Web App mailbox policy named `Policy1`.
   

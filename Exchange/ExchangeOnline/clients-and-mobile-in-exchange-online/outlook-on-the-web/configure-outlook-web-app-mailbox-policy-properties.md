@@ -27,9 +27,7 @@ After you create an Outlook Web App mailbox policy, you can configure a variety 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to view or configure Outlook Web App mailbox policies
+## Use the EAC to view or configure Outlook Web App mailbox policies
 
 1. In the EAC, click **Permissions** \> **Outlook Web App policies**.
     
@@ -52,7 +50,7 @@ After you create an Outlook Web App mailbox policy, you can configure a variety 
     
 8. Click **Save** to update the policy. 
     
-### Use Exchange Online PowerShell to configure Outlook Web App mailbox policies
+## Use Exchange Online PowerShell to configure Outlook Web App mailbox policies
 
 This example enables calendar access in the default mailbox policy.
   
@@ -62,7 +60,7 @@ Set-OwaMailboxPolicy -Identity Default -CalendarEnabled $true
 
 For more information about syntax and parameters, see [Set-OwaMailboxPolicy](https://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx).
   
-### Use Exchange Online PowerShell to view Outlook Web App mailbox policies
+## Use Exchange Online PowerShell to view Outlook Web App mailbox policies
 
 This example retrieves the properties of the Outlook Web App mailbox policy `Executives` in the organization `Fabrikam`.
   

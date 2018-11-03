@@ -29,9 +29,7 @@ In your Exchange Online organization, you may need to restrict access to specifi
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-
-### Use the EAC to configure a moderated distribution group
+## Use the EAC to configure a moderated distribution group
 <a name="EMCtoConfigureModeration"> </a>
 
 This example configures the following moderation settings for the distribution group named All Employees:
@@ -52,21 +50,21 @@ To accomplish the tasks in this example scenario, perform the following procedur
     
 3. On the properties page, click **Message approval**, and complete the following:
     
-1. Select the **Messages sent to this group have to be approved by a moderator** check box. 
+  1. Select the **Messages sent to this group have to be approved by a moderator** check box. 
     
-2. In the **Group moderators** list, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif).
+  2. In the **Group moderators** list, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif).
     
-3. In the **Select group moderators** dialog, find and select David Hamilton, click **Add**, find and select Yossi Ran, and click **Add**. When you are finished, click **OK**.
+  3. In the **Select group moderators** dialog, find and select David Hamilton, click **Add**, find and select Yossi Ran, and click **Add**. When you are finished, click **OK**.
     
-4. In the **Senders who don't require message approval** list, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif).
+  4. In the **Senders who don't require message approval** list, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif).
     
-5. In the **Select senders** dialog, find and select HR from the list and click **Add**. When you are finished, click **OK**.
+  5. In the **Select senders** dialog, find and select HR from the list and click **Add**. When you are finished, click **OK**.
     
-6. In **Select moderation notifications**, select **Notify all senders when their messages aren't approved**.
+  6. In **Select moderation notifications**, select **Notify all senders when their messages aren't approved**.
     
 4. Click **Save**.
     
-### Use Exchange Online PowerShell to configure a moderated recipient
+## Use Exchange Online PowerShell to configure a moderated recipient
 <a name="EMCtoConfigureModeration"> </a>
 
 Run the following command:

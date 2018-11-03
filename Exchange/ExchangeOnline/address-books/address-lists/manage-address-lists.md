@@ -32,10 +32,8 @@ Looking for the Exchange Server version of this topic? See [Create an Address Li
     
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
-  
-## What do you want to do?
 
-### Create an address list
+## Create an address list
 
 This example creates the address list named Oregon and Washington Users by using the _RecipientFilter_ parameter and includes recipients that are mailbox users and have **StateOrProvince** set to `Washington` or `Oregon`.
   
@@ -51,7 +49,7 @@ New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -Inclu
 
 For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/library/2bcee6db-01d4-40ad-9595-33356a4025c5.aspx).
   
-### Update an address list
+## Update an address list
 
 The **Update-AddressList** cmdlet isn't available in Exchange Online. If users that should appear an address list do not, change the required property value for those users to a temporary value, and then back to the value that's required by the address list. You can update the user property values in the EAC or PowerShell, but it's quicker to do bulk operations in PowerShell. 
   
@@ -115,7 +113,7 @@ For example, suppose the address list named Oregon and Washington Users uses the
   Set-User <Identity> -StateOrProvince Washington
   ```
 
-### Delete an address list
+## Delete an address list
 
 This example removes the address list Sales Department, which doesn't contain child address lists.
   

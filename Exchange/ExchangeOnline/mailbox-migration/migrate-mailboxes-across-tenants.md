@@ -66,9 +66,9 @@ To create the resources in the target (Contoso) tenant:
   
 1. If the [Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=626003) tool will be used to sync all objects from the Contoso Active Directory Domain Services (AD DS), the objects from the source (Fabrikam) tenant AD DS must be created in the target tenant (Contoso) AD DS through consolidation. 
     
-1. AD DS consolidation can be done using various AD DS tools. Consolidation can take extra time and planning depending on how many objects are being moved, so it can be completed ahead of the migration project.
+  1. AD DS consolidation can be done using various AD DS tools. Consolidation can take extra time and planning depending on how many objects are being moved, so it can be completed ahead of the migration project.
     
-2. Verify that all new users and groups are synced to the Contoso.com target tenant via directory synchronization. The objects should appear as user@contoso.onmicrosoft.com in the new tenant since the Fabrikam domain has not been moved over at this time. The primary email address for the users and groups can be updated to @fabrikam.com after the domain move is complete.
+  2. Verify that all new users and groups are synced to the Contoso.com target tenant via directory synchronization. The objects should appear as user@contoso.onmicrosoft.com in the new tenant since the Fabrikam domain has not been moved over at this time. The primary email address for the users and groups can be updated to @fabrikam.com after the domain move is complete.
     
 2. If directory synchronization will not be used, or if any Rooms, Resources, Groups or Users are managed in the Office 365 admin center of the source tenant; these objects must be created in the target tenant. Objects can be created manually in the Office 365 admin center or for larger numbers import a CSV file by using the bulk add feature in the Office 365 admin center, or by using Windows PowerShell.
     
@@ -206,7 +206,6 @@ Use the following sample Windows PowerShell scripts as a starting point for crea
     
   ```
   Import-Csv password.csv|%{Set-MsolUserPassword -userPrincipalName $_.upn -NewPassword $_.newpassword -ForceChangePassword $false}
-  
   ```
 
 ### Copy all Office 365 accounts with a specific proxy address into a CSV file
@@ -246,7 +245,6 @@ $addresses | Export-Csv addresses.csv -NoTypeInformation
 Invoke-Item addresses.csv 
  
 ##### END OF SHOWPROXIES.PS1
-
 ```
 
 ### Bulk Create Room Mailboxes in Office 365

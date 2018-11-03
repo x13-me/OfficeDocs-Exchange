@@ -103,7 +103,6 @@ This example creates the In-Place eDiscovery search named Discovery-CaseId012 th
   
 ```
 New-MailboxSearch "Discovery-CaseId012" -StartDate "01/01/2009" -EndDate "12/31/2011" -SourceMailboxes "DG-Finance" -TargetMailbox "Discovery Search Mailbox" -SearchQuery '"Contoso" AND "Project A"' -MessageTypes Email -IncludeUnsearchableItems -LogLevel Full
-
 ```
 
 > [!NOTE]
@@ -152,7 +151,6 @@ For example, you would run the following commands to create a new eDiscovery sea
   
 ```
 New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeKeywordStatistics
-
 ```
 
 ```

@@ -42,8 +42,6 @@ You can configure a hierarchical address book (HAB), which is a feature availabl
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-
 ### Use Exchange Online PowerShell to enable a HAB
 
 > [!NOTE]
@@ -154,7 +152,7 @@ For detailed syntax and parameter information, see the following:
     
 - [Set-User](https://technet.microsoft.com/library/56d7fc86-2ac3-4e28-bc7a-761e91ac655a.aspx)
     
-### Use Exchange Online PowerShell to disable a hierarchical address book
+## Use Exchange Online PowerShell to disable a hierarchical address book
 
 This example disables the root organization used for the HAB.
   
