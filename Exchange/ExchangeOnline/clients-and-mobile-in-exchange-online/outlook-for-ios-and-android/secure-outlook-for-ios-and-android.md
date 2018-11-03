@@ -4,7 +4,7 @@ ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
 manager: laurawi
-ms.date: 4/19/2018
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -14,9 +14,6 @@ description: "Summary: How to enable Outlook for iOS and Android in your Exchang
 ---
 
 # Securing Outlook for iOS and Android in Exchange Online
-
-> [!IMPORTANT]
-> THe Allow/Block/Quarantine (ABQ) list provides no security guarantees (if a client spoofs the DeviceType header, it might be possible to bypass blocking for a particular device type). To securely restrict access to specific device types, we recommend that you configure conditional access policies. For more information, see [App-based conditional access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune).
 
 Outlook for iOS and Android provides users the fast, intuitive email and calendar experience that users expect from a modern mobile app, while being the only app to provide support for the best features of Office 365.
   
@@ -59,6 +56,9 @@ Once the app is installed, users can follow these steps to add their corporate e
   
 ## Leveraging Enterprise Mobility + Security suite to protect corporate data with Outlook for iOS and Android
 <a name="leverageenterprise"> </a>
+
+> [!IMPORTANT]
+> The Allow/Block/Quarantine (ABQ) list provides no security guarantees (if a client spoofs the DeviceType header, it might be possible to bypass blocking for a particular device type). To securely restrict access to specific device types, we recommend that you configure conditional access policies. For more information, see [App-based conditional access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune).
 
 The richest and broadest protection capabilities for Office 365 data are available when you subscribe to the Enterprise Mobility + Security suite, which includes Microsoft Intune and Azure Active Directory Premium features, such as conditional access. At a minimum, you will want to deploy a conditional access policy that only allows connectivity to Outlook for iOS and Android from mobile devices and an Intune app protection policy that ensures the corporate data is protected.
   
