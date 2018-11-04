@@ -176,9 +176,11 @@ To re-create the arbitration mailbox SystemMailbox{bb558c35-97f1-4cb9-8ff7-d5374
 
 ## How do you know this worked?
 
-To verify that you've successfully re-created the arbitration mailbox, use the **Get-Mailbox** cmdlet with the _Arbitration_ switch to retrieve system mailboxes.
+To verify that you've successfully re-created the arbitration mailbox, use the **Get-Mailbox** cmdlet with the _Arbitration_ switch to retrieve system mailboxes. But first set the search scope to search the entire Active Directory forest. 
   
 ```
+Set-ADServerSettings -ViewEntireForest:$true
+
 Get-Mailbox -Arbitration | Format-Table Name, DisplayName
 ```
 
