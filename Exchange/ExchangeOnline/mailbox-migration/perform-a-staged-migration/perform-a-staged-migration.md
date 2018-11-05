@@ -60,7 +60,7 @@ Before you migrate mailboxes to Office 365 by using a staged migration, there ar
   
  **To prepare for a staged migration**
   
-1. **Configure Outlook Anywhere on your on-premises Exchange Server** The email migration service uses Outlook Anywhere (also known as RPC over HTTP), to connect to your on-premises Exchange Server. For information about how to set up Outlook Anywhere for Exchange 2007, and Exchange 2003, see the following: 
+1. **Configure Outlook Anywhere on your on-premises Exchange Server**: The email migration service uses Outlook Anywhere (also known as RPC over HTTP), to connect to your on-premises Exchange Server. For information about how to set up Outlook Anywhere for Exchange 2007, and Exchange 2003, see the following: 
     
   - [Exchange 2007: How to Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=167210)
     
@@ -69,7 +69,7 @@ Before you migrate mailboxes to Office 365 by using a staged migration, there ar
     > [!IMPORTANT]
     > You must use a certificate issued by a trusted certification authority (CA) with your Outlook Anywhere configuration. Outlook Anywhere can't be configured with a self-signed certificate. For more information, see [How to configure SSL for Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=80875). 
   
-2. **Optional: Verify that you can connect to your Exchange organization using Outlook Anywhere** Try one of the following methods to test your connection settings. 
+2. **(Optional) Verify that you can connect to your Exchange organization using Outlook Anywhere**: Try one of the following methods to test your connection settings. 
     
   - Use Outlook from outside your corporate network to connect to your on-premises Exchange mailbox.
     
@@ -77,7 +77,7 @@ Before you migrate mailboxes to Office 365 by using a staged migration, there ar
     
   - Wait for the connection to automatically be tested when you [Connect Office 365 to your email system](perform-a-staged-migration.md#CreateEndpoint) later in this procedure. 
     
-3. **Set permissions** The on-premises user account that you use to connect to your on-premises Exchange organization (also called the migration administrator) must have the necessary permissions to access the on-premises mailboxes that you want to migrate to Office 365. This user account is used when you [Connect Office 365 to your email system](perform-a-staged-migration.md#CreateEndpoint) later in this procedure. 
+3. **Set permissions**: The on-premises user account that you use to connect to your on-premises Exchange organization (also called the migration administrator) must have the necessary permissions to access the on-premises mailboxes that you want to migrate to Office 365. This user account is used when you [Connect Office 365 to your email system](perform-a-staged-migration.md#CreateEndpoint) later in this procedure. 
     
 4. To migrate the mailboxes, the admin must have one of the following permission sets:
     
@@ -89,7 +89,7 @@ Before you migrate mailboxes to Office 365 by using a staged migration, there ar
     
     For instructions about how to set these permissions, see [Assign Exchange permissions to migrate mailboxes to Office 365](../assign-permissions-for-migration.md).
     
-5. **Disable Unified Messaging (UM)** If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. Turn on UM for the mailboxes after migration is complete. For how-to steps, see [disable unified messaging](https://go.microsoft.com/fwlink/p/?LinkId=521891).
+5. **Disable Unified Messaging (UM)**: If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. Turn on UM for the mailboxes after migration is complete. For how-to steps, see [disable unified messaging](https://go.microsoft.com/fwlink/p/?LinkId=521891).
     
 ## Verify you own the domain
 <a name="BK_VerifyDomain"> </a>
@@ -105,7 +105,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
   
 2. Choose **Setup** \> **Domains**.
     
-3. On the **manage domains** page, click **Add domain** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to start the domain wizard. 
+3. On the **Manage domains** page, click **Add domain** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to start the domain wizard. 
     
 4. On the **Add a domain to Office 365** page, choose **Specify a domain name and confirm ownership**.
     
@@ -195,11 +195,11 @@ A migration endpoint contains the settings and credentials needed to connect the
     
 6. On the **Enter on-premises account credentials** page, enter the following information: 
     
-  - **Email address** Type the *email address*  of any user in the on-premises Exchange organization that will be migrated. Office 365 will test the connectivity to this user's mailbox. 
+  - **Email address**: Type the *email address*  of any user in the on-premises Exchange organization that will be migrated. Office 365 will test the connectivity to this user's mailbox. 
     
-  - **Account with privileges** Type the *username*  (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address. 
+  - **Account with privileges**: Type the *username*  (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address. 
     
-  - **Password of account with privileges** Type the *password*  for the account with privileges that is the administrator account. 
+  - **Password of account with privileges**: Type the *password*  for the account with privileges that is the administrator account. 
     
 7. Choose **Next** and then do one of the following: 
     
@@ -209,9 +209,9 @@ A migration endpoint contains the settings and credentials needed to connect the
   
   - If the test connection to the source server isn't successful, provide the following information:
     
-  - **Exchange server** Type the *fully qualified domain name*  (FQDN) for the on-premises Exchange Server. This is the host name for your Mailbox server; for example, EXCH-SRV-01.corp.contoso.com. 
+  - **Exchange server**: Type the *fully qualified domain name*  (FQDN) for the on-premises Exchange Server. This is the host name for your Mailbox server; for example, EXCH-SRV-01.corp.contoso.com. 
     
-  - **RPC proxy server** Type the *FQDN*  for the RPC proxy server for Outlook Anywhere. Typically, the proxy server is the same as your Outlook Web App URL. For example, mail.contoso.com, which is also the URL for the proxy server that Outlook uses to connect to an Exchange Server 
+  - **RPC proxy server**: Type the *FQDN*  for the RPC proxy server for Outlook Anywhere. Typically, the proxy server is the same as your Outlook Web App URL. For example, mail.contoso.com, which is also the URL for the proxy server that Outlook uses to connect to an Exchange Server 
     
 8. On the **Enter general information** page, type a *Migration endpoint name*, for example, Test5-endpoint. Leave the other two boxes blank to use the default values.
     
@@ -266,9 +266,9 @@ For a staged migration, you migrate mailboxes in batches—one batch for each CS
     
 8. On the **Start the batch** page, choose one of the following: 
     
-  - **Automatically start the batch** The migration batch is started as soon as you save the new migration batch. The batch starts with a status of **Syncing**.
+  - **Automatically start the batch**: The migration batch is started as soon as you save the new migration batch. The batch starts with a status of **Syncing**.
     
-  - **Manually start the batch later** The migration batch is created but not started. The status of the batch is set to **Created**. To start a migration batch, select it on the migration dashboard and then choose **Start**. 
+  - **Manually start the batch later**: The migration batch is created but not started. The status of the batch is set to **Created**. To start a migration batch, select it on the migration dashboard and then choose **Start**. 
     
 9. Choose **new** to create the migration batch. 
     
@@ -370,9 +370,9 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
   
  **To complete post-migration tasks**
   
-1. **Activate Office 365 user accounts for the migrated accounts by assigning licenses.** If you don't assign a license, the mailbox is disabled when the grace period (30 days) ends. To assign a license in the Office 365 admin center, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+1. **Activate Office 365 user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period (30 days) ends. To assign a license in the Office 365 admin center, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
     
-2. **Create an Autodiscover DNS record so users can easily get to their mailboxes.** After all on-premises mailboxes are migrated to Office 365, you can configure an Autodiscover DNS record for your Office 365 organization to enable users to easily connect to their new Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com. 
+2. **Create an Autodiscover DNS record so users can easily get to their mailboxes**: After all on-premises mailboxes are migrated to Office 365, you can configure an Autodiscover DNS record for your Office 365 organization to enable users to easily connect to their new Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com. 
     
     Office 365 uses a CNAME record to implement the Autodiscover service for Outlook and mobile clients. The Autodiscover CNAME record must contain the following information:
     
@@ -382,7 +382,7 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
     
     For more information, see [Create DNS records for Office 365 when you manage your DNS records](https://support.office.com/article/0669bf14-414d-4f51-8231-6b710ce7980b).
     
-3. **Decommission on-premises Exchange servers.** After you've verified that all email is being routed directly to the Office 365 mailboxes, have completed the migration, and no longer need to maintain your on-premises email organization, you can uninstall Exchange. 
+3. **Decommission on-premises Exchange servers**: After you've verified that all email is being routed directly to the Office 365 mailboxes, have completed the migration, and no longer need to maintain your on-premises email organization, you can uninstall Exchange. 
     
     For more information, see the following:
     

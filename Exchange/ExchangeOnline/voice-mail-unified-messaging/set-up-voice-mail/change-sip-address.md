@@ -45,9 +45,7 @@ For additional management tasks related to users who are enabled for voice mail,
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to change the primary or a secondary SIP address
+## Use the EAC to change the primary or a secondary SIP address
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
     
@@ -59,7 +57,7 @@ For additional management tasks related to users who are enabled for voice mail,
     
 5. Click **Save**.
     
-### Use Exchange Online PowerShell to change the primary or a secondary SIP address
+## Use Exchange Online PowerShell to change the primary or a secondary SIP address
 
 This example changes a SIP address for Tony Smith.
   

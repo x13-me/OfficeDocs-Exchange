@@ -36,9 +36,7 @@ For additional management tasks related to archives, see [Enable or disable an a
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-
-### Use the EAC to modify the default archive policy
+## Use the EAC to modify the default archive policy
 <a name="EMCConfigureTag"> </a>
 
 1. Navigate to **Compliance management** \> **Retention tags** and then. 
@@ -50,15 +48,15 @@ For additional management tasks related to archives, see [Enable or disable an a
   
 3. In **Retention Tag**, view or modify the following settings, and then click **Save**:
     
-  - **Name** Use this box at the top of the page to view or change the tag name. 
+  - **Name**: Use this box at the top of the page to view or change the tag name. 
     
-  - **Retention tag type** This read-only field displays the tag type. 
+  - **Retention tag type**: This read-only field displays the tag type. 
     
-  - **Retention action** Don't modify this field for archive policies. 
+  - **Retention action**: Don't modify this field for archive policies. 
     
-  - **Retention period** Select one of the following options: 
+  - **Retention period**: Select one of the following options: 
     
-  - **Never** Click this button to disable the tag. If the DPT is disabled, the tag is no longer applied to the mailbox. 
+  - **Never**: Click this button to disable the tag. If the DPT is disabled, the tag is no longer applied to the mailbox. 
     
     > [!IMPORTANT]
     > Items that have a disabled retention tag applied aren't processed by the Mailbox Assistant. If you want to prevent a tag from being applied to items, we recommend disabling the tag rather than deleting it. When you delete a tag, the tag configuration is deleted from Active Directory, and the Mailbox Assistant processes all messages to remove the deleted tag. 
@@ -66,11 +64,11 @@ For additional management tasks related to archives, see [Enable or disable an a
     > [!NOTE]
     > If a user applies a tag to an item believing the item will never be moved, enabling the tag later may move items the user wanted to retain in the primary mailbox. 
   
-  - **When the item reaches the following age (in days)** Click this button to specify that items be moved to archive after a certain period. By default, this setting is configured to move items to the archive after two years (730 days). To modify this setting, in the corresponding text box, type the number of days in the retention period. The range of values is from 1 through 24,855 days. 
+  - **When the item reaches the following age (in days)**: Click this button to specify that items be moved to archive after a certain period. By default, this setting is configured to move items to the archive after two years (730 days). To modify this setting, in the corresponding text box, type the number of days in the retention period. The range of values is from 1 through 24,855 days. 
     
-  - **Comment** Use this box to type a comment that will be displayed to Outlook and Outlook Web App users. 
+  - **Comment**: Use this box to type a comment that will be displayed to Outlook and Outlook Web App users. 
     
-### Use Exchange Online PowerShell to modify archive policies
+## Use Exchange Online PowerShell to modify archive policies
 <a name="UseShell"> </a>
 
 This example modifies the `Default 2 year move to archive` tag to move items after 1,095 days (3 years). 

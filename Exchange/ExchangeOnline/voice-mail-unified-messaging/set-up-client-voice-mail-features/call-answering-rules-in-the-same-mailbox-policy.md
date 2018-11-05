@@ -33,9 +33,7 @@ For additional management tasks related to allowing users to forward calls, see 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to enable or disable call answering rules on a UM mailbox policy
+## Use the EAC to enable or disable call answering rules on a UM mailbox policy
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
@@ -45,7 +43,7 @@ For additional management tasks related to allowing users to forward calls, see 
     
 4. Click **Save**.
     
-### Use Exchange Online PowerShell to enable or disable call answering rules on a UM mailbox policy
+## Use Exchange Online PowerShell to enable or disable call answering rules on a UM mailbox policy
 
 This example allows users who are associated with the UM mailbox policy `MyUMMailboxPolicy` to create call answering rules. 
   

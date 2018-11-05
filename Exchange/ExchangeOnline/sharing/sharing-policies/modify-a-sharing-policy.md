@@ -24,9 +24,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the [Permissions in Exchange Online](../../permissions-exo/permissions-exo.md) topic. 
     
-## What do you want to do?
-
-### Use the Exchange admin center to change a sharing policy
+## Use the Exchange admin center to change a sharing policy
 <a name="BKMK_EAC"> </a>
 
 1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
@@ -41,7 +39,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
     
 6. In **sharing policy**, click **save** to update the sharing policy. 
     
-### Use the Exchange admin center to set a sharing policy as the default sharing policy
+## Use the Exchange admin center to set a sharing policy as the default sharing policy
 <a name="BKMK_EAC"> </a>
 
 1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
@@ -54,7 +52,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
     
 5. Click **save** to update the sharing policy. 
     
-### Use the Exchange admin center to disable a sharing policy
+## Use the Exchange admin center to disable a sharing policy
 <a name="BKMK_EAC"> </a>
 
 1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
@@ -79,7 +77,7 @@ For details about how to create a sharing policy, see [Create a sharing policy i
     
 4. In the warning, click **yes** to delete the sharing policy. 
     
-### Use Exchange Online PowerShell to modify, disable or remove a sharing policy
+## Use Exchange Online PowerShell to modify, disable or remove a sharing policy
 <a name="BKMK_Shell"> </a>
 
 - This example modifies the sharing policy Contoso. This policy allows users in the Contoso domain to see simple free/busy information.

@@ -38,9 +38,7 @@ For additional management tasks related to UM mailbox policies, see [Manage a UM
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to enable missed call notifications for a UM mailbox policy
+## Use the EAC to enable missed call notifications for a UM mailbox policy
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
@@ -50,7 +48,7 @@ For additional management tasks related to UM mailbox policies, see [Manage a UM
     
 4. Click **Save**.
     
-### Use Exchange Online PowerShell to enable missed call notifications for a UM mailbox policy
+## Use Exchange Online PowerShell to enable missed call notifications for a UM mailbox policy
 
 This example enables missed call notifications for a UM mailbox policy named `MyUMMailboxPolicy`.
   

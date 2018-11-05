@@ -45,9 +45,7 @@ For additional management tasks related to users who are enabled for voice mail,
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to add a primary or secondary SIP address
+## Use the EAC to add a primary or secondary SIP address
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
     
@@ -61,7 +59,7 @@ For additional management tasks related to users who are enabled for voice mail,
     
 6. Click **Save**.
     
-### Use Exchange Online PowerShell to add a SIP address
+## Use Exchange Online PowerShell to add a SIP address
 
 This example adds a SIP address for Tony Smith, a UM-enabled user.
   

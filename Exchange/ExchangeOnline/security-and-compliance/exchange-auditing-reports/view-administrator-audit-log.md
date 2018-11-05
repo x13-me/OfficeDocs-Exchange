@@ -50,17 +50,17 @@ In Exchange Online, you can use the Exchange admin center (EAC) to search for an
     
 2. Choose a **Start date** and **End date**, and then choose **Search**. All configuration changes made during the specified time period are displayed, and can be sorted, using the following information:
     
-  - **Date** The date and time that the configuration change was made. The date and time are stored in Coordinated Universal Time (UTC) format. 
+  - **Date**: The date and time that the configuration change was made. The date and time are stored in Coordinated Universal Time (UTC) format. 
     
-  - **Cmdlet** The name of the cmdlet that was used to make the configuration change. 
+  - **Cmdlet**: The name of the cmdlet that was used to make the configuration change. 
     
-  - **User** The name of the user account of the user who made the configuration change. 
+  - **User**: The name of the user account of the user who made the configuration change. 
     
     Up to 5000 entries will be displayed on multiple pages. Specify a smaller date range if you need to narrow your results. If you select an individual search result, the following additional information is displayed in the details pane:
     
-  - **Object modified** The object that was modified by the cmdlet. 
+  - **Object modified**: The object that was modified by the cmdlet. 
     
-  - **Parameters (Parameter:Value)** The cmdlet parameters that were used, and any value specified with the parameter. 
+  - **Parameters (Parameter:Value)**: The cmdlet parameters that were used, and any value specified with the parameter. 
     
 3. If you want to print a specific audit log entry, choose the **Print** button in the details pane. 
     

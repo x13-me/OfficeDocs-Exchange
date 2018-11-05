@@ -85,13 +85,13 @@ A value of `True` for the _AuditEnabled_ property verifies that audit logging is
 
 You can also specify the type of non-owner access, also called the logon type, to search for. Here are your options:
   
-- **All non-owners** Search for access by administrators and delegated users inside your organization. Also includes access user outside of your organization. 
+- **All non-owners**: Search for access by administrators and delegated users inside your organization. Also includes access user outside of your organization. 
     
-- **External users** Search for access by users outside of your organization. 
+- **External users**: Search for access by users outside of your organization. 
     
-- **Administrators and delegated users** Search for access by administrators and delegated users inside your organization. 
+- **Administrators and delegated users**: Search for access by administrators and delegated users inside your organization. 
     
-- **Administrators** Search for access by administrators in your organization. 
+- **Administrators**: Search for access by administrators in your organization. 
     
 ### How do you know this worked?
 

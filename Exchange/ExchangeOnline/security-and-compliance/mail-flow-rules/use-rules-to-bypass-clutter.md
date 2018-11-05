@@ -34,7 +34,7 @@ For additional management tasks related to transport rules, check out [Mail flow
 
 This example allows all messages with title "Meeting" to bypass clutter.
   
-1. In the Exchange admin center, navigate to **mail flow** \> **Rules**. Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then choose **Create a new rule...**.
+1. In the Exchange admin center, navigate to **Mail flow** \> **Rules**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then choose **Create a new rule...**.
     
 2. After you're done creating the new rule, click **save** to start the rule. 
     

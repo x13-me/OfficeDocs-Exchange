@@ -51,7 +51,7 @@ To plan and create a new UM auto attendant structure, you need to do the followi
     
 8. The following is an example of a worksheet you could use to plan non-business hours menu navigation.
     
-|****Key****|****Prompt/Navigation menu entry name****|****Response to record****|
+|**Key**|**Prompt/Navigation menu entry name**|**Response to record**|
 |:-----|:-----|:-----|
 |1|Language selection to use English.|"Press or say 1 to use English."|
 |2|Account balance|"Press or say 2 to get your account balance."|

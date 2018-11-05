@@ -92,8 +92,6 @@ In this scenario, if contoso.com uses on-premises AD FS server for authenticatio
 
 You manage all aspects of authentication policies in Exchange Online PowerShell. The protocols and services in Exchange Online that you can block Basic authentication for are described in the following table.
   
-****
-
 |**Protocol or service**|**Description**|**Parameter name**|
 |:-----|:-----|:-----|
 |Exchange Active Sync (EAS)|Used by some email clients on mobile devices.|*AllowBasicAuthActiveSync*|
@@ -114,8 +112,6 @@ Typically, when you block Basic authentication for a user, we recommend that you
   
 For email clients and apps that don't support modern authentication, you need to allow Basic authentication for the protocols and services that they require. These protocols and services are described in the following table:
   
-****
-
 |**Client**|**Protocols and services**|
 |:-----|:-----|
 |Outlook 2013 and later|• Autodiscover <br/>• Exchange Web Services (EWS) <br/>• MAPI over HTTP <br/>• Outlook Anywhere (RPC over HTTP) <br/>• Offline Address Book (OAB)|

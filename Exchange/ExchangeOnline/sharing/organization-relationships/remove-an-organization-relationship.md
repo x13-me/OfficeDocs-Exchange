@@ -24,9 +24,7 @@ To learn more about organization relationships, see [Organization relationships 
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the [Permissions in Exchange Online](../../permissions-exo/permissions-exo.md) topic. 
     
-## What do you want to do?
-
-### Use the Exchange admin center to remove an organization relationship
+## Use the Exchange admin center to remove an organization relationship
 <a name="BKMK_EAC"> </a>
 
 1. From the Office 365 admin center go to **Admin** \> **Exchange**.
@@ -37,7 +35,7 @@ To learn more about organization relationships, see [Organization relationships 
     
 4. In the warning that appears, click **yes**.
     
-### Use Exchange Online PowerShell to remove an organization relationship
+## Use Exchange Online PowerShell to remove an organization relationship
 <a name="BKMK_Shell"> </a>
 
 This example removes the organization relationship Contoso. 

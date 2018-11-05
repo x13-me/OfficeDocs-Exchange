@@ -70,11 +70,11 @@ The **Number of sign-in failures before lockout** setting specifies how many PIN
 
 The **Allow common PIN patterns** setting is used to either enable or disable the use of common number patterns when creating a PIN. By default, this setting is disabled and won't allow Outlook Voice Access users to enter the following number patterns: 
   
-- **Sequential numbers** PIN values that consist completely of consecutive numbers. Examples of sequential numbers for a PIN are 1234 and 65432. 
+- **Sequential numbers**: PIN values that consist completely of consecutive numbers. Examples of sequential numbers for a PIN are 1234 and 65432. 
     
-- **Repeated numbers** PIN values that consist of repeated numbers. Examples of repeated numbers are 11111 and 22222. 
+- **Repeated numbers**: PIN values that consist of repeated numbers. Examples of repeated numbers are 11111 and 22222. 
     
-- **Suffix of mailbox extension** PIN values that consist of the suffix of a user's mailbox extension. If the mailbox extension is 36697, the PIN can't be 6697. 
+- **Suffix of mailbox extension**: PIN values that consist of the suffix of a user's mailbox extension. If the mailbox extension is 36697, the PIN can't be 6697. 
     
 ### PIN recycle count
 

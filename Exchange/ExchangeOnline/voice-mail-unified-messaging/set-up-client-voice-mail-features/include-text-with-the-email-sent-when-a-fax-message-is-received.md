@@ -38,9 +38,7 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to change the text included with a fax message
+## Use the EAC to change the text included with a fax message
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
@@ -50,7 +48,7 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
     
 4. Click **Save**.
     
-### Use Exchange Online PowerShell to change the text included with a fax message
+## Use Exchange Online PowerShell to change the text included with a fax message
 
 This example enables UM-enabled users who are associated with a UM mailbox policy to receive additional instructions on how to open a fax message that they've received in their mailbox.
   

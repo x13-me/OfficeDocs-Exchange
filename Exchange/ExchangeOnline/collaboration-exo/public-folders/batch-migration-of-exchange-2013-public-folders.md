@@ -314,13 +314,13 @@ Use the previously downloaded scripts to generate the .csv files that will be us
     .\ModernPublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes><Maximum mailbox recoverable item size in bytes><Folder-to-size map path><Folder-to-mailbox map path>
     ```
 
-  - `Maximum mailbox size in bytes` is the maximum amount of data you want to migrate into any single public folder mailbox in Exchange Online. The maximum size of this field is currently 50 GB, but we recommend you use a smaller size, such as 50% of maximum size, to allow for future growth. 
+  - \<Maximum mailbox size in bytes\> is the maximum amount of data you want to migrate into any single public folder mailbox in Exchange Online. The maximum size of this field is currently 50 GB, but we recommend you use a smaller size, such as 50% of maximum size, to allow for future growth. 
     
-  - `Maximum mailbox recoverable items size in bytes` is the recoverable items quota on your Exchange Online mailboxes. The maximum size of public folder mailboxes In Exchange Online is currently 50 GB. We recommend setting ` RecoverableItemsQuota ` to 15 GB or less. 
+  - \<Maximum mailbox recoverable items size in bytes\> is the recoverable items quota on your Exchange Online mailboxes. The maximum size of public folder mailboxes In Exchange Online is currently 50 GB. We recommend setting _RecoverableItemsQuota_ `_ to 15 GB or less. 
     
-  - `Folder-to-size map path` is the file path of the .csv file you created when you ran the `Export-ModernPublicFolderStatistics.ps1` script. 
+  - \<Folder-to-size map path\> is the file path of the .csv file you created when you ran the `Export-ModernPublicFolderStatistics.ps1` script. 
     
-  - `Folder-to-mailbox map path` is the file path of the folder-to-mailbox .csv file that you are creating in this step. If you only specify a file name, the file will be generated in the current PowerShell directory on the local computer. 
+  - \<Folder-to-mailbox map path\> is the file path of the folder-to-mailbox .csv file that you are creating in this step. If you only specify a file name, the file will be generated in the current PowerShell directory on the local computer. 
     
 **Example**:
   
@@ -358,9 +358,9 @@ A number of commands now need to be run in your Exchange 2013 on-premises enviro
     .\Sync-ModernMailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
     ```
 
-  - `Credential` is your Exchange Online administrative username and password. 
+  - You're prompted for your Exchange Online administrative username and password. 
     
-  - `CsvSummaryFile` is the file path to where you want your log file of synchronization operations and errors located. The log will be in .csv format. 
+  - _CsvSummaryFile_ is the file path to where you want your log file of synchronization operations and errors located. The log will be in .csv format. 
     
 2. On the Exchange 2013 server, find the MRS proxy endpoint server and make note of it. You will need this information to run the migration request. Save this information for step 3b below.
     

@@ -33,17 +33,15 @@ In Exchange Online, actions performed by Microsoft and delegated administrators 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-
-### Use the EAC to view the external admin audit log report
+## Use the EAC to view the external admin audit log report
 
 Estimated time to complete: 3 minutes
   
 1. Go to **Compliance management** \> **Auditing** and click **View the external admin audit log report**. All configuration changes made by Microsoft datacenter administrators and delegated administrators during the specified time period are displayed, and can be sorted, using the following information:
     
-  - **Date** The date and time that the configuration change was made. The date and time are stored in Coordinated Universal Time (UTC) format. 
+  - **Date**: The date and time that the configuration change was made. The date and time are stored in Coordinated Universal Time (UTC) format. 
     
-  - **Cmdlet** The name of the cmdlet that was used to make the configuration change. 
+  - **Cmdlet**: The name of the cmdlet that was used to make the configuration change. 
     
     If you select an individual search result, the following information is displayed in the details pane:
     
@@ -57,7 +55,7 @@ Estimated time to complete: 3 minutes
     
 3. To narrow the search, choose dates in the **Start date** and **End date** drop-down menus, and then click **Search**.
     
-### Use Exchange Online PowerShell to view entries in the external admin audit log report
+## Use Exchange Online PowerShell to view entries in the external admin audit log report
 
 Estimated time to complete: 3 minutes
   
@@ -77,7 +75,7 @@ Search-AdminAuditLog -ExternalAccess $true -StartDate 09/17/2013 -EndDate 10/02/
 
 For more information, see [Search-AdminAuditLog](https://technet.microsoft.com/library/87a0cd2d-dd59-4098-b740-75f0cc7bf8e7.aspx).
   
-### Use Exchange Online PowerShell to export the admin audit log
+## Use Exchange Online PowerShell to export the admin audit log
 
 Estimated time to complete: Approximately 24 hours
   

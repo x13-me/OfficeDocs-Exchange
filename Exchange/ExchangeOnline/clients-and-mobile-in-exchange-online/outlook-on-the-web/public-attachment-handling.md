@@ -63,7 +63,7 @@ Run the following command:
 Set-OrganizationConfig -PublicComputersDetectionEnabled $true
 ```
   
-**Note:**: Setting this parameter to `$true` won't affect the settings for the following parameters:
+**Note**: Setting this parameter to `$true` won't affect the settings for the following parameters:
 
 - _ForceWacViewingFirstOnPublicComputers_
 
@@ -105,11 +105,11 @@ You must create a custom claim rule because an AD FS server relies on the presen
     
     File access can be controlled based on whether a user has logged on to a public or private computer. The option for users to select private computer access or public computer access is available only when you're using forms-based authentication. All other forms of authentication default to private computer access.
     
-  - **Direct file access** Select this check box if you want to enable direct file access. Direct file access lets users open files attached to email messages. 
+  - **Direct file access**: Select this check box if you want to enable direct file access. Direct file access lets users open files attached to email messages. 
     
-  - **WebReady Document Viewing** Select this check box if you want to enable supported documents to be converted to HTML and displayed in a web browser. 
+  - **WebReady Document Viewing**: Select this check box if you want to enable supported documents to be converted to HTML and displayed in a web browser. 
     
-  - **Force WebReady Document Viewing when a converter is available** Select this check box if you want to force documents to be converted to HTML and displayed in a web browser before users can open them in the viewing application. Documents can be opened in the viewing application only if direct file access has been enabled. 
+  - **Force WebReady Document Viewing when a converter is available**: Select this check box if you want to force documents to be converted to HTML and displayed in a web browser before users can open them in the viewing application. Documents can be opened in the viewing application only if direct file access has been enabled. 
     
 4. Click **Save** to update the policy. 
     

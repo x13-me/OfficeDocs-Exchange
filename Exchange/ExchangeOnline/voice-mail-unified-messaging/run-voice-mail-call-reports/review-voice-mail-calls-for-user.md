@@ -36,38 +36,38 @@ For additional tasks related to UM reporting, see [UM reports procedures](um-rep
 
 The user call log includes the following information for each call:
   
-- **DATE AND TIME** The date and time of the call, in the time zone that the selected user has set in Microsoft Outlook Web App. 
+- **DATE AND TIME**: The date and time of the call, in the time zone that the selected user has set in Microsoft Outlook Web App. 
     
-- **DURATION** How long the call lasted in minutes (MM) and seconds (SS), in the following format: MM:SS. 
+- **DURATION**: How long the call lasted in minutes (MM) and seconds (SS), in the following format: MM:SS. 
     
-- **CALL TYPE** The type of call: 
+- **CALL TYPE**: The type of call: 
     
-  - **Call Answering** The call wasn't answered and was forwarded to the Mailbox servers, and the caller left a voice message. 
+  - **Call Answering**: The call wasn't answered and was forwarded to the Mailbox servers, and the caller left a voice message. 
     
-  - **Call Answering Missed Call** The call wasn't answered and was forwarded to the Mailbox servers, and the caller didn't leave a voice message. 
+  - **Call Answering Missed Call**: The call wasn't answered and was forwarded to the Mailbox servers, and the caller didn't leave a voice message. 
     
-  - **Subscriber Access** A call was made to the subscriber access number. The caller signed in and was authenticated to UM with their extension and password to access email messages, calendars, and voice messages over the phone. 
+  - **Subscriber Access**: A call was made to the subscriber access number. The caller signed in and was authenticated to UM with their extension and password to access email messages, calendars, and voice messages over the phone. 
     
-  - **Auto Attendant** The call was answered by a UM auto attendant. These calls are typically calls in which the caller dialed your organization's main phone number. 
+  - **Auto Attendant**: The call was answered by a UM auto attendant. These calls are typically calls in which the caller dialed your organization's main phone number. 
     
-  - **Fax** A call was received in which a fax tone was detected. If you've configured fax partners, this call was sent to the partner. 
+  - **Fax**: A call was received in which a fax tone was detected. If you've configured fax partners, this call was sent to the partner. 
     
-  - **PlayonPhone** A call was placed by UM because the user clicked the Play on Phone button in a voice message in Microsoft Outlook Web App or Outlook. 
+  - **PlayonPhone**: A call was placed by UM because the user clicked the Play on Phone button in a voice message in Microsoft Outlook Web App or Outlook. 
     
-  - **FindMe** An outbound call was placed by UM as a result of a Find Me rule in a call answering rule. 
+  - **FindMe**: An outbound call was placed by UM as a result of a Find Me rule in a call answering rule. 
     
-  - **Unauthenticated Pilot Number** A call was placed to the Outlook Voice Access number. The caller didn't sign in and wasn't authenticated. 
+  - **Unauthenticated Pilot Number**: A call was placed to the Outlook Voice Access number. The caller didn't sign in and wasn't authenticated. 
     
-  - **Greetings Recording** A call was placed by UM to record personal greetings for a user. 
+  - **Greetings Recording**: A call was placed by UM to record personal greetings for a user. 
     
-  - **None** A call was placed but the type wasn't defined. 
+  - **None**: A call was placed but the type wasn't defined. 
     
-- **CALLING NUMBER** The phone number or SIP address of the caller. 
+- **CALLING NUMBER**: The phone number or SIP address of the caller. 
     
-- **CALLED NUMBER** The phone number or SIP address (for users in SIP dial plans, such as Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server users) of the intended recipient of the call. 
+- **CALLED NUMBER**: The phone number or SIP address (for users in SIP dial plans, such as Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server users) of the intended recipient of the call. 
     
-- **UM IP GATEWAY** The UM IP gateway that took the call. 
+- **UM IP GATEWAY**: The UM IP gateway that took the call. 
     
-- **AUDIO QUALITY** The overall audio quality of the call. For more details about audio quality, select the row and click **Audio Quality Details**.
+- **AUDIO QUALITY**: The overall audio quality of the call. For more details about audio quality, select the row and click **Audio Quality Details**.
     
 

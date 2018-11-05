@@ -50,9 +50,9 @@ Here are a few items to be aware of:
 ## Impact of migration to users
 <a name="BKMK_Impact"> </a>
 
-- **Administrators can access email** To migrate email, you need access to the user mailboxes in your source email system. 
+- **Administrators can access email**: To migrate email, you need access to the user mailboxes in your source email system. 
     
-- **Users must create new Outlook profiles** After the mailboxes are migrated and the on-premises accounts are converted to mail-enabled accounts, the users must create a new Office 365 profile in Outlook, and then Outlook automatically connects to Office 365. 
+- **Users must create new Outlook profiles**: After the mailboxes are migrated and the on-premises accounts are converted to mail-enabled accounts, the users must create a new Office 365 profile in Outlook, and then Outlook automatically connects to Office 365. 
     
 ## How does staged migration work?
 <a name="BKMK_Happen"> </a>

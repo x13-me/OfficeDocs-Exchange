@@ -31,11 +31,11 @@ Outdialing happens when:
     
 For outdialing to work correctly, the following settings must be configured correctly: 
   
-- **Dialing rules** Dialing rules define the number that is dialed by the UM-enabled user and the number that will be dialed by the Private Branch eXchange (PBX) or IP PBX. 
+- **Dialing rules**: Dialing rules define the number that is dialed by the UM-enabled user and the number that will be dialed by the Private Branch eXchange (PBX) or IP PBX. 
     
-- **Dialing rule groups** Dialing rule groups determine the types of calls that users within a dialing group can make. 
+- **Dialing rule groups**: Dialing rule groups determine the types of calls that users within a dialing group can make. 
     
-- **Dialing authorizations** Dialing authorizations determine the restrictions that will be applied to prevent users from incurring unnecessary telephone charges or from dialing long-distance calls. 
+- **Dialing authorizations**: Dialing authorizations determine the restrictions that will be applied to prevent users from incurring unnecessary telephone charges or from dialing long-distance calls. 
     
 To enable outdialing for users who call in to a dial plan or an auto attendant, you must:
   
@@ -151,19 +151,19 @@ Dialing rule groups are created on a UM dial plan. You can create in-country/reg
   
 You can apply the dialing rule groups that you created on a UM dial plan to the following:
   
-- **Same dial plan** The settings will apply to all users who call in to an Outlook Voice Access number but don't sign in to their mailbox. To apply an in-country/region dialing rule group named `MyAllowedDialRuleGroup` to the same dial plan, use Exchange Online PowerShell **Set-UMDialPlan** cmdlet, as follows. 
+- **Same dial plan**: The settings will apply to all users who call in to an Outlook Voice Access number but don't sign in to their mailbox. To apply an in-country/region dialing rule group named `MyAllowedDialRuleGroup` to the same dial plan, use Exchange Online PowerShell **Set-UMDialPlan** cmdlet, as follows. 
     
   ```
   Set-UMDialPlan -Identity MyUMDialPlan -AllowedInCountryOrRegionGroups MyAllowedDialRuleGroup
   ```
 
-- **Single or multiple UM mailbox policies** The settings that are configured on a UM mailbox policy will apply to all users who are linked with that UM mailbox policy. The settings configured on a UM mailbox policy apply to users who call in to an Outlook Voice Access number and sign in to their mailbox. To apply an in-country/region dialing rule group named `MyAllowedDialRuleGroup` to a single UM mailbox policy, use the **Dialing authorization** page on the UM mailbox policy in the EAC or use the **Set-UMMailboxPolicy** cmdlet in Exchange Online PowerShell, as follows. 
+- **Single or multiple UM mailbox policies**: The settings that are configured on a UM mailbox policy will apply to all users who are linked with that UM mailbox policy. The settings configured on a UM mailbox policy apply to users who call in to an Outlook Voice Access number and sign in to their mailbox. To apply an in-country/region dialing rule group named `MyAllowedDialRuleGroup` to a single UM mailbox policy, use the **Dialing authorization** page on the UM mailbox policy in the EAC or use the **Set-UMMailboxPolicy** cmdlet in Exchange Online PowerShell, as follows. 
     
     ```
     Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowedInCountryOrRegionGroups MyAllowedDialRuleGroup
     ```
 
-- **Single or multiple auto attendants associated with the UM dial plan** This will apply to all users who call in to a UM auto attendant. To apply the in-country/region dialing rule group named `MyAllowedDialRuleGroup` to a single UM auto attendant, use the **Dialing authorization** page on the auto attendant in the EAC or the **Set-UMAutoAttendant** cmdlet in Exchange Online PowerShell, as follows. 
+- **Single or multiple auto attendants associated with the UM dial plan**: This will apply to all users who call in to a UM auto attendant. To apply the in-country/region dialing rule group named `MyAllowedDialRuleGroup` to a single UM auto attendant, use the **Dialing authorization** page on the auto attendant in the EAC or the **Set-UMAutoAttendant** cmdlet in Exchange Online PowerShell, as follows. 
     
     ```
     Set-UMAutoAttendant -Identity MyUMAutoAttendant -AllowedInCountryOrRegionGroups MyAllowedDialRuleGroup

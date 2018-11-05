@@ -26,10 +26,8 @@ You can use the EAC or Exchange Online PowerShell to enable or disable Microsoft
     
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
-  
-## What do you want to do?
 
-### Use the EAC to enable or disable Exchange ActiveSync
+## Use the EAC to enable or disable Exchange ActiveSync
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
     
@@ -50,7 +48,7 @@ You can use the EAC or Exchange Online PowerShell to enable or disable Microsoft
 > [!NOTE]
 > You can enable and disable Exchange ActiveSync for multiple user mailboxes by using the EAC bulk edit feature. For more information about how to do this, see the "Bulk edit user mailboxes" section in [Manage user mailboxes](manage-user-mailboxes.md). 
   
-### Use Exchange Online PowerShell to enable or disable Exchange ActiveSync
+## Use Exchange Online PowerShell to enable or disable Exchange ActiveSync
 
 This example disables Exchange ActiveSync for the mailbox of Yan Li.
   

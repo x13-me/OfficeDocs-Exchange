@@ -77,9 +77,9 @@ Here are some examples of a group naming policy. In each, **\<Group Name\>** is 
     
 2. Under **Group Naming Policy**, configure the prefix by selecting either **Attribute** or **Text** in the pull-down menu. 
     
-  - **Attribute** Select the attribute and then click **OK**.
+  - **Attribute**: Select the attribute and then click **OK**.
     
-  - **Text** Type the text string and click **OK**. 
+  - **Text**: Type the text string and click **OK**. 
     
     Notice that the text string that you typed or the attribute you selected is displayed as a hyperlink. Click the hyperlink to change the text string or attribute.
     

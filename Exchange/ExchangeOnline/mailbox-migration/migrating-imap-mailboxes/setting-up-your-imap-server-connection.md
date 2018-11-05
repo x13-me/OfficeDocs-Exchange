@@ -42,8 +42,8 @@ Office 365 needs the name of the source email server from which you want to migr
 
 Office 365 also needs the values for the encryption method and the Transmission Control Protocol (TCP) port number used by the source email IMAP server.
   
-- **Security:** This is the encryption method used by the IMAP server. The default value for secure sockets layer (SSL) is appropriate for most IMAP servers. 
+- **Security**: This is the encryption method used by the IMAP server. The default value for secure sockets layer (SSL) is appropriate for most IMAP servers. 
     
-- **Port:** This is the TCP port number used to connect to the IMAP server. Use port 143 for unencrypted connections, port 143 for Transport Layer Security (TLS) connections, or port 993 (the default), for SSL connections. Port 993 is appropriate for most IMAP servers. 
+- **Port**: This is the TCP port number used to connect to the IMAP server. Use port 143 for unencrypted connections, port 143 for Transport Layer Security (TLS) connections, or port 993 (the default), for SSL connections. Port 993 is appropriate for most IMAP servers. 
     
 

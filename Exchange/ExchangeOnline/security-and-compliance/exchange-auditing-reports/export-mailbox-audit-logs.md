@@ -118,21 +118,21 @@ You need to be assigned permissions before you can perform this procedure or pro
     
 3. Configure the following search criteria for exporting the entries from the mailbox audit log:
     
-  - **Start and end dates** Select the date range for the entries to include in the exported file. 
+  - **Start and end dates**: Select the date range for the entries to include in the exported file. 
     
-  - **Mailboxes to search audit log for** Select the mailboxes to retrieve audit log entries for. 
+  - **Mailboxes to search audit log for**: Select the mailboxes to retrieve audit log entries for. 
     
-  - **Type of non-owner access** Select one of the following options to define the type of non-owner access to retrieve entries for: 
+  - **Type of non-owner access**: Select one of the following options to define the type of non-owner access to retrieve entries for: 
     
-  - **All non-owners** Search for access by administrators and delegated users inside your organization, and by Microsoft datacenter administrators in Exchange Online. 
+  - **All non-owners**: Search for access by administrators and delegated users inside your organization, and by Microsoft datacenter administrators in Exchange Online. 
     
-  - **External users** Search for access by Microsoft datacenter administrators. 
+  - **External users**: Search for access by Microsoft datacenter administrators. 
     
-  - **Administrators and delegated users** Search for access by administrators and delegated users inside your organization. 
+  - **Administrators and delegated users**: Search for access by administrators and delegated users inside your organization. 
     
-  - **Administrators** Search for access by administrators in your organization. 
+  - **Administrators**: Search for access by administrators in your organization. 
     
-  - **Recipients** Select the users to send the mailbox audit log to. 
+  - **Recipients**: Select the users to send the mailbox audit log to. 
     
 4. Click **Export**.
     
@@ -160,7 +160,7 @@ To save and view the SearchResult.xml file:
 ## More information
 <a name="moreinfo"> </a>
 
-- **Entries in the mailbox audit log** The following example shows an entry from the mailbox audit log contained in the SearchResult.xml file. Each entry is preceded by the **\<Event\>** XML tag and ends with the **\</Event\>** XML tag. This entry shows that the administrator purged the message with the subject, " Notification of litigation hold" from the Recoverable Items folder in David's mailbox on April 30, 2010.
+- **Entries in the mailbox audit log**: The following example shows an entry from the mailbox audit log contained in the SearchResult.xml file. Each entry is preceded by the **\<Event\>** XML tag and ends with the **\</Event\>** XML tag. This entry shows that the administrator purged the message with the subject, "Notification of litigation hold" from the Recoverable Items folder in David's mailbox on April 30, 2010.
     
   ```
   <Event MailboxGuid="6d4fbdae-e3ae-4530-8d0b-f62a14687939" 
@@ -187,7 +187,7 @@ To save and view the SearchResult.xml file:
   </Event>
   ```
 
-- **Useful fields in the mailbox audit log** Here's a description of useful fields in the mailbox audit log. They can help you identify specific information about each instance of non-owner access of a mailbox. 
+- **Useful fields in the mailbox audit log**: Here's a description of useful fields in the mailbox audit log. They can help you identify specific information about each instance of non-owner access of a mailbox. 
     
 |**Field**|**Description**|
 |:-----|:-----|

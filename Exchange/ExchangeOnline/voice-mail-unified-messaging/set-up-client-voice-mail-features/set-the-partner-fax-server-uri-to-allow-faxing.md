@@ -35,9 +35,7 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to set the fax partner URI
+## Use the EAC to set the fax partner URI
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
@@ -50,7 +48,7 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
   
 4. Click **Save** to save your changes. 
     
-### Use Exchange Online PowerShell to set the fax partner URI
+## Use Exchange Online PowerShell to set the fax partner URI
 
 This example allows users who are linked with the UM mailbox policy `UMDialPlan Default Policy` to use TCP with port 5060 for the partner fax server `faxserver1`.
   
