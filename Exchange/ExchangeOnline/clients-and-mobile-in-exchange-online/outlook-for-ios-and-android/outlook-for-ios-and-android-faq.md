@@ -115,6 +115,9 @@ Intune uses a different device ID. The basic workflow for how Intune assigns a d
 Yes. Outlook for iOS and Android supports reading protected messages. Outlook for iOS and Android works differently than desktop versions of Outlook when it comes to RMS. For desktop versions of Outlook, once a protected message is received and access is attempted, and Outlook verifies that the user can read RM messages, Outlook connects to Exchange to request an encryption key. The Outlook desktop client uses that encryption key to decrypt the message in front of the user (client-side). Mobile clients operate differently. When Outlook for iOS and Android sets up its initial relationship with Exchange, it notifies Exchange that it supports RMS. Exchange decrypts any protected messages before passing them to the client. In other words, decryption is performed server-side. Outlook for iOS and Android doesn't perform any decryption itself.
   
 In cases where Outlook for iOS and Android receives protected messages and prompts end-users to use an RM client to open the file, it means that Exchange hasn't decrypted the message, which is due to an issue on the Exchange side.
+
+> [!NOTE]
+> Outlook for iOS leverages iOS's native preview technology to quickly expose attachments to end users. iOS's preview technology does not support rights management and will report error "The operation couldn't be completed. (OfficeImportErrorDomain error 912)" when a user attempts to open a rights-protected attachment. Users will need to tap the respective Word, Excel, or PowerPoint app icon to open the rights-protected attachment in the native app.
   
 ### Q: What ports and end points does Outlook for iOS and Android use?
 
@@ -139,6 +142,15 @@ The following questions are about managing and monitoring the Outlook for iOS an
 ### Q: Is it necessary to file an in-app support ticket when I experience an issue with Outlook for iOS and Android?
 
 Yes, if you want to troubleshoot and resolve the issue, or if you want to inform us of a product defect or limitation, you will need to file an in-app support ticket. Only through filing an in-app support ticket can the Outlook app's logs get collected and analyzed by our product engineers.
+
+Customers with a Microsoft Premier agreement can open support cases with Customer Service & Support (CSS). Instead of having the user initiate an in-app support ticket, the user can leverage Collect Diagnostics to upload the logs and share the incident ID with CSS/Premier. Collect Diagnostics will capture data from Outlook for iOS and Android, Authenticator, and the Company Portal and upload all the relevant logs to Microsoft. Microsoft Support Escalation Engineers can use the incident ID to access the diagnostic logs and troubleshoot the user's issue.
+
+To gather the logs:
+1. Within Outlook for iOS and Android’s settings, tap Help & Feedback.
+2. Tap Collect Diagnostics.
+3. Tap Get Started.
+4. Tap Upload Outlook Logs (iOS) or Collect Logs (Android).
+5. Share the incident ID with CSS.
   
 ### Q: As an Exchange administrator, is there a way for me to determine if Outlook clients are utilizing the Office 365-based architecture?
 
@@ -156,13 +168,11 @@ Alternatively, a user can login to Outlook on the web and, from within **Options
   
 ### Q: As an Exchange administrator, I would like to deploy Outlook for iOS and Android, but in my testing I can't log in. What might be the issue?
 
-Assuming authentication is not the issue, there are three areas you can check:
+Assuming authentication is not the issue, there are two areas you can check:
   
-1. Check whether you have Client Access rules in place that block the REST protocol.
+1. Check whether you have an EWS application policy that restricts which client applications can connect.
     
-2. Check whether you have an EWS application policy that restricts which client applications can connect.
-    
-3. Check whether you have EWS enabled for the account.
+2. Check whether you have EWS enabled for the account.
     
 For more information, see [Securing Outlook for iOS and Android in Exchange Online](secure-outlook-for-ios-and-android.md). If one of the above checks doesn't resolve the issue, please open an in-app support ticket.
   
