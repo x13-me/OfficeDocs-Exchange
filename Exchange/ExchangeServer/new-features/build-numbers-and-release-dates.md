@@ -49,7 +49,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
-|[Exchange Server 2016 CU11](https://www.microsoft.com/en-us/download/details.aspx?id=57388)|October 16, 2018|15.1.1591.10|15.01.1591.010|
+|[Exchange Server 2016 CU11](https://www.microsoft.com/download/details.aspx?id=57388)|October 16, 2018|15.1.1591.10|15.01.1591.010|
 |[Exchange Server 2016 CU10](https://go.microsoft.com/fwlink/p/?LinkId=2002912)|June 19, 2018|15.1.1531.3|15.01.1531.003|
 |Exchange Server 2016 CU9|March 20, 2018|15.1.1466.3|15.01.1466.003|
 |Exchange Server 2016 CU8|December 19, 2017|15.1.1415.2|15.01.1415.002|
