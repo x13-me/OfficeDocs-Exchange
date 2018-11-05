@@ -98,9 +98,9 @@ The .csv file needs to contain the following columns:
     
 - **TargetGroupMailbox**. SMTP address of the target group in Office 365. You can run the following command to see the primary SMTP address.
     
-  ```
-  Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
-  ```
+```
+Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+```
 
 An example .csv:
   
@@ -108,7 +108,6 @@ An example .csv:
 "FolderPath","TargetGroupMailbox"
 "\Sales","sales@contoso.onmicrosoft.com"
 "\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
-
 ```
 
 Note that a mail folder and a calendar folder can be merged into a single group in Office 365. However, any other scenario of multiple public folders merging into one group isn't supported within a single migration batch. If you do need to map multiple public folders to the same Office 365 group, you can accomplish this by running different migration batches, which should be executed consecutively, one after another. You can have up to 500 entries in each migration batch.

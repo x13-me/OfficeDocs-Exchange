@@ -35,12 +35,9 @@ Unlike regular distribution groups that contain a defined set of members, the me
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-<a name="Top"> </a>
+## Create a dynamic distribution group
 
-### Create a dynamic distribution group
-
-#### Use the EAC to create a dynamic distribution group
+### Use the EAC to create a dynamic distribution group
 <a name="createddg"> </a>
 
 1. In the EAC, navigate to **Recipients** \> **Groups** \> **New** \> **Dynamic distribution group**.
@@ -82,13 +79,13 @@ Unlike regular distribution groups that contain a defined set of members, the me
     
 5. Select one of the following recipient attributes from the drop-down list and provide a value. If the value for the selected attribute matches that value you define, the recipient receives a message sent to this group.
     
-|**Attribute**|**Send message to a recipient if...**|
-|:-----|:-----|
-|**Recipient container**|The recipient object resides in the specified domain or OU.|
-|**State or province**|The specified value matches the recipient's State or province property.|
-|**Company**|The specified value matches the recipient's Company property.|
-|**Department**|The specified value matches the recipient's Department property.|
-|**Custom attributeN** (where N is a number from 1 to 15)|The specified value matches the recipient's CustomAttributeN property.|
+  |**Attribute**|**Send message to a recipient if...**|
+  |:-----|:-----|
+  |**Recipient container**|The recipient object resides in the specified domain or OU.|
+  |**State or province**|The specified value matches the recipient's State or province property.|
+  |**Company**|The specified value matches the recipient's Company property.|
+  |**Department**|The specified value matches the recipient's Department property.|
+  |**Custom attributeN** (where N is a number from 1 to 15)|The specified value matches the recipient's CustomAttributeN property.|
    
     **Important**: The values that you enter for the selected attribute must exactly match those that appear in the recipient's properties. For example, if you enter **Washington** for **State or province**, but the value for the recipient's property is **WA**, the condition will not be met. Also, text-based values that you specify aren't case-sensitive. For example, if you specify **Contoso** for the **Company** attribute, messages will be sent to a recipient if this value is **contoso**.
     
@@ -104,7 +101,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
 > [!NOTE]
 > If you want to specify rules for attributes other than the ones available in the EAC, you must use Exchange Online PowerShell to create a dynamic distribution group. Keep in mind that the filter and condition settings for dynamic distribution groups that have custom recipient filters can be managed only by using Exchange Online PowerShell. For an example of how to create a dynamic distribution group with a custom query, see the next section on using Exchange Online PowerShell to create a dynamic distribution group. 
   
-#### Use Exchange Online PowerShell to create a dynamic distribution group
+### Use Exchange Online PowerShell to create a dynamic distribution group
 <a name="UseShell"> </a>
 
 This example creates the dynamic distribution group "Mailbox Users DDG" that contains only mailbox users.
@@ -123,12 +120,11 @@ This example creates a dynamic distribution group with a custom recipient filter
   
 ```
 New-DynamicDistributionGroup -Name "Full Time Employees" -RecipientFilter {(RecipientTypeDetails -eq 'UserMailbox') -and (CustomAttribute10 -eq 'FullTimeEmployee')}
-
 ```
 
 For detailed syntax and parameter information, see [New-DynamicDistributionGroup](https://technet.microsoft.com/library/e9920bd1-06c1-4f75-992f-dd7fc98a5c2b.aspx).
   
-#### How do you know this worked?
+### How do you know this worked?
 <a name="UseShell"> </a>
 
 To verify that you've successfully created a dynamic distribution group, do one of the following:
@@ -141,9 +137,9 @@ To verify that you've successfully created a dynamic distribution group, do one 
   Get-DynamicDistributionGroup | Format-List Name,RecipientTypeDetails,RecipientFilter,PrimarySmtpAddress
   ```
 
-### Change dynamic distribution group properties
+## Change dynamic distribution group properties
 
-#### Use the EAC to change dynamic distribution group properties
+### Use the EAC to change dynamic distribution group properties
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
     
@@ -297,13 +293,13 @@ To verify that you've successfully changed properties for a dynamic distribution
 - In Exchange Online PowerShell, use the **Get-DynamicDistributionGroup** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple groups. In the first example, you would run the following command to verify the new values. 
     
   ```
-  Get-DynamicDistributionGroup -ResultSize unlimited | fl Name,HiddenFromAddressListsEnabled,MaxReceiveSize,ModerationEnabled,ModeratedBy
+  Get-DynamicDistributionGroup -ResultSize unlimited | Format-List Name,HiddenFromAddressListsEnabled,MaxReceiveSize,ModerationEnabled,ModeratedBy
   ```
 
     For the example above where the message limits were changed, run this command.
     
   ```
-  Get-Mailbox -OrganizationalUnit "Marketing" | fl Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
+  Get-Mailbox -OrganizationalUnit "Marketing" | Format-List Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
   ```
 
 

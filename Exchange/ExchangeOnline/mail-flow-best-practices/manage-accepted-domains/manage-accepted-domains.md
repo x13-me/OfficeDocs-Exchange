@@ -53,17 +53,15 @@ There are two types of accepted domains, Authoritative and Internal Relay, which
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
+## View accepted domains
 
-### View accepted domains
-
-#### Use the Exchange admin center (EAC) to view accepted domains
+### Use the Exchange admin center (EAC) to view accepted domains
 
 1. In the EAC, navigate to **Mail flow** \> **Accepted domains**.
     
 2. Click the **Name**, **Accepted Domain**, or **Domain Type** column heading to sort alphabetically in ascending or descending order. By default, accepted domains are sorted alphabetically by name in ascending order. 
     
-#### Use Exchange Online PowerShell to view accepted domains
+### Use Exchange Online PowerShell to view accepted domains
 
 To view summary information about all accepted domains, run the following command.
   
@@ -83,11 +81,11 @@ This example shows details about the accepted domain named contso.com.
 Get-AcceptedDomain contoso.com | Format-List
 ```
 
-### Configure the domain type
+## Configure the domain type
 
 After you add a domain to your Exchange Online organization in the Office 365 admin center, you can configure the domain type.
   
-#### Use the EAC to change the domain type
+### Use the EAC to change the domain type
 
 1. In the EAC, navigate to **Mail flow** \> **Accepted domains**.
     
@@ -101,7 +99,7 @@ After you add a domain to your Exchange Online organization in the Office 365 ad
     
 4. When you are finished, click **Save**.
     
-#### Use Exchange Online PowerShell to change the domain type
+### Use Exchange Online PowerShell to change the domain type
 
 To configure the domain type, use the following syntax.
   
@@ -115,7 +113,7 @@ This example configures the accepted domain named contoso.com as an internal rel
 Set-AcceptedDomain contoso.com -DomainType InternalRelay
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully configured the domain type, do either of the following:
   

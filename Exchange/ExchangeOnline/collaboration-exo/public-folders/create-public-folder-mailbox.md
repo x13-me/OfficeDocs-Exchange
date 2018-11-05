@@ -37,9 +37,7 @@ For additional management tasks related to public folders in Exchange Online, se
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
-## What do you want to do?
-
-### Use the EAC to create a public folder mailbox
+## Use the EAC to create a public folder mailbox
 
 1. Navigate to **Public folders** \> **Public folder mailboxes**, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
@@ -47,7 +45,7 @@ For additional management tasks related to public folders in Exchange Online, se
     
 3. Click **Save**.
     
-### Use Exchange Online PowerShell to create a public folder mailbox
+## Use Exchange Online PowerShell to create a public folder mailbox
 
 This example creates the primary public folder mailbox.
   

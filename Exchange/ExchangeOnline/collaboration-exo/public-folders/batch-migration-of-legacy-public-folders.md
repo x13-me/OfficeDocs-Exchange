@@ -485,7 +485,6 @@ To complete the public folder migration, run the following command:
   
 ```
 Complete-MigrationBatch PublicFolderMigration
-
 ```
 
 When you complete the migration, Exchange will perform a final synchronization between the legacy Exchange server and Exchange Online. If the final synchronization is successful, the public folders in Exchange Online will be unlocked and the status of the migration batch will changed to **Completed**. It is common for the migration batch to take a few hours before its status changes from **Synced** to **Completing**, at which point the final synchronization will begin.

@@ -35,9 +35,7 @@ You use the **Set-OrganizationRelationship** cmdlet to configure these settings.
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-
-### Use Exchange Online PowerShell to enable or disable MailTips between two organizations
+## Use Exchange Online PowerShell to enable or disable MailTips between two organizations
 
 This example configures the organizational relationship so that MailTips are returned to senders in the remote organization when composing messages to recipients in your organization. 
   
@@ -53,7 +51,7 @@ Set-OrganizationRelationship "Contoso Online" -MailTipsAccessEnabled $false
 
 For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://technet.microsoft.com/library/4e3b9d1d-cf41-4fd0-97e3-a0bbc816cf87.aspx).
   
-### Use Exchange Online PowerShell to configure which MailTips are returned to the remote organization
+## Use Exchange Online PowerShell to configure which MailTips are returned to the remote organization
 
 For each organizational relationship, you can determine which set of MailTips are returned to senders in the other organization. This example configures the organizational relationship so that all MailTips are returned.
   
@@ -78,7 +76,7 @@ Set-OrganizationRelationship "Contoso Online" -MailTipsAccessLevel None
 
 For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://technet.microsoft.com/library/4e3b9d1d-cf41-4fd0-97e3-a0bbc816cf87.aspx).
   
-### Use Exchange Online PowerShell to configure a specific group of users for whom recipient-specific MailTips are returned
+## Use Exchange Online PowerShell to configure a specific group of users for whom recipient-specific MailTips are returned
 
 You can restrict the return of recipient-specific MailTips to a specific group of users. By default, when you enable MailTips for an organizational relationship, the following recipient-specific MailTips are returned for all users:
   

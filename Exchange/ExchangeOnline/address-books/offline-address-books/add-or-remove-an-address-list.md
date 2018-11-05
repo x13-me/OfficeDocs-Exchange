@@ -35,9 +35,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-
-### Use Exchange Online PowerShell to add an address list to an OAB
+## Use Exchange Online PowerShell to add an address list to an OAB
 
 When using the _AddressLists_ parameter, any address lists that currently exist will be overwritten. You must include existing address lists when you use the _AddressLists_ parameter to continue to generate those address lists in your OAB. This example, in which you have AddressList1 and AddressList2, adds AddressList3. 
   
@@ -47,7 +45,7 @@ Set-OfflineAddressBook -Identity "My OAB" -AddressLists AddressList1,AddressList
 
 For detailed syntax and parameter information, see [Set-OfflineAddressBook](https://technet.microsoft.com/library/1221dda7-1923-4fec-a756-7540e18ae9f9.aspx).
   
-### Use Exchange Online PowerShell to remove an address list from an OAB
+## Use Exchange Online PowerShell to remove an address list from an OAB
 
 To remove an address list from an OAB, simply omit that address list from the list of address lists. This example, in which you have AddressList1, AddressList2, and AddressList3, removes AddressList3.
   

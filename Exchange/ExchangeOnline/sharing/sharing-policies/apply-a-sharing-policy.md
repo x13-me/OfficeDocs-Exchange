@@ -65,20 +65,18 @@ This example applies the sharing policy Contoso to Barbara's mailbox.
   
 ```
 Set-Mailbox -Identity Barbara -SharingPolicy "Contoso"
-
 ```
 
 This example finds all user mailboxes in the Marketing department and then applies the sharing policy Contoso Marketing.
   
 ```
 Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "Contoso Marketing"
-
 ```
 
 This example shows all mailboxes that have the sharing policy Contoso applied, and it sorts the users into a table that displays only their aliases and email addresses.
   
 ```
-Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso"} | format-table Alias, EmailAddresses
+Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso"} | format-table Alias,EmailAddresses
 ```
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) and [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
