@@ -16,11 +16,10 @@ description: "Provides resources for IT Pros to plan, deliver, and adopt Outlook
 
 ### Outlook Mobile Customer Adoption Pack
 
-Use the resources in the [Outlook Mobile Customer Adoption Pack](https://aka.ms/OutlookmobileCAP) to make the most of Microsoft Outlook for iOS and Android for your organization. This adoption pack contains a wide range of customizable onboarding templates, flyers, posters and cheat sheets, that IT Pros, administrators, and trainers can use to roll out and drive the adoption of Outlook mobile to end users in their organization. 
+Use the resources in the [Outlook Mobile Customer Adoption Pack](https://aka.ms/OutlookmobileCAP) to make the most of Microsoft Outlook for iOS and Android for your organization. This adoption pack contains a wide range of customizable onboarding templates, flyers, and posters, that IT Pros, administrators, and trainers can use to roll out and drive the adoption of Outlook mobile to end users in their organization. 
  
 Included in this pack:
 
 - Customizable onboarding email templates with links to demo video and installation instructions
 - Posters and flyers to drive buzz and excitement 
-- Cheat sheets with handy tips to get your end users up and running  
 
