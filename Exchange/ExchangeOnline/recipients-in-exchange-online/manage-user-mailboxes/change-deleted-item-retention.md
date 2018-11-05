@@ -14,7 +14,7 @@ description: "Learn how to use Exchange Online PowerShell to change the deleted 
 
 # Change how long permanently deleted items are kept for an Exchange Online mailbox
 
-If you've *permanently*  deleted an item in Microsoft Outlook or Outlook on the web (formerly known as Outlook Web App), the item is moved to a folder ( **Recoverable Items** \> **Deletions**) and kept there for 14 days, by default. You can change how long items are kept, up to a maximum of 30 days. 
+If you've *permanently* deleted an item in Microsoft Outlook or Outlook on the web (formerly known as Outlook Web App), the item is moved to a folder ( **Recoverable Items** \> **Deletions**) and kept there for 14 days, by default. You can change how long items are kept, up to a maximum of 30 days. 
   
 > [!NOTE]
 > You must use Exchange Online PowerShell to make the change. Unfortunately, you can't currently do this directly in the Outlook or Outlook on the web. 

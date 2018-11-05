@@ -29,11 +29,9 @@ Mail users are similar to mail contacts. Both have external email addresses and 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
+## Create a mail user
 
-### Create a mail user
-
-#### Use the EAC to create a mail user
+### Use the EAC to create a mail user
 
 1. In the EAC, navigate to **Recipients** \> **Contacts** \> **New** \> **Mail user**.
     
@@ -98,7 +96,7 @@ Mail users are similar to mail contacts. Both have external email addresses and 
     
 7. When you've finished, click **Save** to create the mail user. 
     
-#### Use Exchange Online PowerShell to create a mail user
+### Use Exchange Online PowerShell to create a mail user
 
 This example creates a mail-enabled user account for Jeffrey Zeng in Exchange Server with the following details:
   
@@ -126,7 +124,7 @@ This example creates a mail-enabled user account for Rene Valdes in Exchange Onl
 New-MailUser -Name "Rene Valdes" -Alias renev -ExternalEmailAddress renevaldes@fineartschool.edu -FirstName Rene -LastName Valdes -MicrosoftOnlineServicesID renev@contoso.com -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force)
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully created a mail user, do one of the following:
   
@@ -138,7 +136,7 @@ To verify that you've successfully created a mail user, do one of the following:
   Get-MailUser <Name> | Format-List Name,RecipientTypeDetails,ExternalEmailAddress
   ```
 
-### Change mail user properties
+## Change mail user properties
 
 After you create a mail user, you can make changes and set additional properties by using the EAC or Exchange Online PowerShell.
   
@@ -146,7 +144,7 @@ You can also change properties for multiple user mailboxes at the same time. For
   
 The estimated time to complete this task will vary based on the number of properties you want to view or change.
   
-#### Use the EAC to change user mailbox properties
+### Use the EAC to change user mailbox properties
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
     
@@ -267,7 +265,7 @@ Use the **MailTip** section to add a MailTip to alert users of potential issues 
 > [!NOTE]
 >  MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit. 
   
-#### Use Exchange Online PowerShell to change mail user properties
+### Use Exchange Online PowerShell to change mail user properties
 
 Properties for a mail user are stored in both Active Directory and Exchange. In general, use the **Get-User** and **Set-User** cmdlets to view and change organization and contact information properties. Use the **Get-MailUser** and **Set-MailUser** cmdlets to view or change mail-related properties, such email addresses, the MailTip, custom attributes, and whether the mail user is hidden from address lists. 
   
@@ -307,7 +305,7 @@ This example sets the CustomAttribute1 property to a value of ContosoEmployee fo
 Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Contoso')}| Set-MailUser -CustomAttribute1 ContosoEmployee
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully changed properties for mail users, do the following:
   
@@ -316,7 +314,7 @@ To verify that you've successfully changed properties for mail users, do the fol
 - In Exchange Online PowerShell, use the **Get-User** and **Get-MailUser** cmdlets to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple mail contacts. 
     
   ```
-  Get-MailUser | Fl Name,CustomAttribute1 
+  Get-MailUser | Format-List Name,CustomAttribute1 
   ```
 
     In the example above where the Company property was set to Contoso for all mail contacts, run the following command to verify the changes:
@@ -328,10 +326,10 @@ To verify that you've successfully changed properties for mail users, do the fol
     In the example above where all mail users had the CustomAttribute1 property set to ContosoEmployee, run the following command to verify the changes.
     
   ```
-  Get-MailUser | Fl Name,CustomAttribute1 
+  Get-MailUser | Format-List Name,CustomAttribute1 
   ```
 
-### Bulk edit mail users
+## Bulk edit mail users
 
 You can also use the EAC to change selected properties for multiple mail users. When you select two or more mail users from the contacts list in the EAC, the properties that can be bulk edited are displayed in the Details pane. When you change one of these properties, the change is applied to all selected recipients.
   
@@ -341,7 +339,7 @@ When you bulk edit mail users, you can change the following property areas:
     
 - **Organization** Change shared properties such as department name, company name, and the manager that the selected mail contacts or mail users report to. 
     
-#### Use the EAC to bulk edit mail users
+### Use the EAC to bulk edit mail users
 <a name="bulkedit"> </a>
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
@@ -355,7 +353,7 @@ When you bulk edit mail users, you can change the following property areas:
     
 4. Make the changes on the properties page and then save your changes.
     
-#### How do you know this worked?
+### How do you know this worked?
 <a name="bulkedit"> </a>
 
 To verify that you've successfully bulk edited mail users, do one of the following:
@@ -365,10 +363,10 @@ To verify that you've successfully bulk edited mail users, do one of the followi
 - In Exchange Online PowerShell, use the **Get-User** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail users from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in Exchange Online PowerShell: 
     
   ```
-  Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Adatum')} | fl Name,Office,Manager
+  Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Adatum')} | Format-List Name,Office,Manager
   ```
 
-### Use directory synchronization to manage mail users in Exchange Online
+## Use directory synchronization to manage mail users in Exchange Online
 
 This section provides information about managing email users by using directory synchronization in Exchange Online. Directory synchronization is available for hybrid customers with on-premises and cloud-hosted mailboxes, and for fully hosted Exchange Online customers whose Active Directory is on-premises.
   
@@ -378,7 +376,7 @@ This section provides information about managing email users by using directory 
 > [!NOTE]
 >  Using directory synchronization is recommended for use with the following features: > **Outlook safe sender and blocked sender lists** When synchronized to the service, these lists will take precedence over spam filtering in the service. This lets users manage their own safe sender and blocked sender lists on a per-user or per-domain basis. > **Directory Based Edge Blocking (DBEB)** For more information about DBEB, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](../mail-flow-best-practices/use-directory-based-edge-blocking.md). > **End user spam quarantine** In order to access the end user spam quarantine, end users must have a valid Office 365 user ID and password. Customers with on-premises mailboxes must be valid email users. > **Transport rules** When you use directory synchronization, your existing Active Directory users and groups are automatically uploaded to the cloud, and you can then create Transport rules that target specific users and/or groups without having to manually add them via the EAC or remote Windows PowerShell. Note that [dynamic distribution groups](https://go.microsoft.com/fwlink/p/?LinkId=507569) can't be synchronized via directory synchronization. 
   
- **Before you begin**
+### Before you begin
   
 Get the necessary permissions and prepare for directory synchronization, as described in [Prepare for directory synchronization](https://go.microsoft.com/fwlink/p/?LinkId=308908).
   

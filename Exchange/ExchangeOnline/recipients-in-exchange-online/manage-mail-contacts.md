@@ -29,11 +29,9 @@ Mail contacts are mail-enabled directory service objects that contain informatio
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
+## Create a mail contact
 
-### Create a mail contact
-
-#### Use the EAC to create a mail contact
+### Use the EAC to create a mail contact
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
     
@@ -64,7 +62,7 @@ Mail contacts are mail-enabled directory service objects that contain informatio
   
 4. When you've finished, click **Save**.
     
-#### Use Exchange Online PowerShell to create a mail contact
+### Use Exchange Online PowerShell to create a mail contact
 
 This example creates a mail contact for Debra Garcia in Exchange Server.
   
@@ -84,7 +82,7 @@ This example mail-enables an existing contact named Karen Toh in Exchange Server
 Enable-MailContact -Identity "Karen Toh" -ExternalEmailAddress ktoh@tailspintoys.com
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully created a mail contact, do one of the following:
   
@@ -96,9 +94,9 @@ To verify that you've successfully created a mail contact, do one of the followi
   Get-MailContact <Name> | Format-List Name,RecipientTypeDetails,ExternalEmailAddress
   ```
 
-### Change mail contact properties
+## Change mail contact properties
 
-#### Use the EAC to change mail contact properties
+### Use the EAC to change mail contact properties
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
     
@@ -159,7 +157,7 @@ Use the **MailTip** section to add a MailTip to alert users of potential issues 
 > [!NOTE]
 >  MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit. 
   
-#### Use Exchange Online PowerShell to change mail contact properties
+### Use Exchange Online PowerShell to change mail contact properties
 
 Properties for a mail contact are stored in both Active Directory and Exchange. In general, use the **Get-Contact** and **Set-Contact** cmdlets to view and change organization and contact information properties. Use the **Get-MailContact** and **Set-MailContact** cmdlets to view or change mail-related properties, such as email addresses, the MailTip, custom attributes, and whether the contact is hidden from address lists. 
   
@@ -193,7 +191,7 @@ This example sets the CustomAttribute15 property to a value of TemporaryEmployee
 Get-Contact -Filter "Department -eq 'Public Relations'" | Set-MailContact -CustomAttribute15 TemporaryEmployee
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully changed properties for a mail contact, do the following:
   
@@ -202,7 +200,7 @@ To verify that you've successfully changed properties for a mail contact, do the
 - In Exchange Online PowerShell, use the **Get-Contact** and **Get-MailContact** cmdlets to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple mail contacts. In the example above where all mail contacts had the CustomAttribute1 property set to PartTime and were hidden from the address book, run the following command to verify the changes. 
     
   ```
-  Get-MailContact | Fl Name,CustomAttribute1,HiddenFromAddressListsEnabled
+  Get-MailContact | Format-List Name,CustomAttribute1,HiddenFromAddressListsEnabled
   ```
 
     In the example above where the CustomAttribute15 was set for all mail contacts in the Public Relations department, run the following command to verify the changes.
@@ -211,7 +209,7 @@ To verify that you've successfully changed properties for a mail contact, do the
   Get-Contact -Filter "Department -eq 'Public Relations'" | Get-MailContact | Format-List Name,CustomAttribute15
   ```
 
-### Bulk edit mail contacts
+## Bulk edit mail contacts
 
 You can use the EAC to change selected properties for multiple mail contacts. When you select two or more mail contacts from the contacts list in the EAC, the properties that can be bulk edited are displayed in the Details pane. When you change one of these properties, the change is applied to all selected recipients.
   
@@ -221,7 +219,7 @@ When you bulk edit mail contacts, you can change the following property areas:
     
 - **Organization** Change shared properties such as department name, company name, and the manager that the selected mail contacts or mail users report to. 
     
-#### Use the EAC to bulk edit mail contacts
+### Use the EAC to bulk edit mail contacts
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
     
@@ -234,7 +232,7 @@ When you bulk edit mail contacts, you can change the following property areas:
     
 4. Make the changes on the properties page and then save your changes.
     
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully bulk edited mail contacts, do one of the following:
   
@@ -243,7 +241,7 @@ To verify that you've successfully bulk edited mail contacts, do one of the foll
 - In Exchange Online PowerShell, use the **Get-Contact** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail contacts from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in Exchange Online PowerShell. 
     
   ```
-  Get-Contact -ResultSize unlimited -Filter {(Company -eq 'Adatum')} | fl Name,Office,Manager
+  Get-Contact -ResultSize unlimited -Filter {(Company -eq 'Adatum')} | Format-List Name,Office,Manager
   ```
 
 

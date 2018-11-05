@@ -29,9 +29,7 @@ Interested in scenarios that use this procedure? See [Scenario: Deploying Addres
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-
-### Use the EAC to assign an ABP to a mailbox user
+## Use the EAC to assign an ABP to a mailbox user
 <a name="UseEMC"> </a>
 
 1. Navigate to **Recipients** \> **Mailboxes**.
@@ -44,7 +42,7 @@ Interested in scenarios that use this procedure? See [Scenario: Deploying Addres
     
 5. Click **Save**.
     
-### Use the EAC to assign an ABP to multiple mailbox users
+## Use the EAC to assign an ABP to multiple mailbox users
 <a name="Bulk"> </a>
 
 1. Navigate to **Recipients** \> **Mailboxes**.
@@ -59,7 +57,7 @@ Interested in scenarios that use this procedure? See [Scenario: Deploying Addres
     
 6. Click **Save**.
     
-### Use Exchange Online PowerShell to assign an ABP to mailbox users
+## Use Exchange Online PowerShell to assign an ABP to mailbox users
 <a name="UseShell"> </a>
 
 This example assigns the ABP All Fabrikam to the existing mailbox user joe@fabrikam.com.

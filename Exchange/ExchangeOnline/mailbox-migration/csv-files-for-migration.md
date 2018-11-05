@@ -90,7 +90,6 @@ In this example, let's say you create a batch for an onboarding remote move migr
   
 ```
 New-MigrationBatch -Name OnBoarding1 -SourceEndpoint RemoteEndpoint1 -TargetDeliveryDomain cloud.contoso.com -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\OnBoarding1.csv")) -MailboxType ArchiveOnly -AutoStart
-
 ```
 
 But you also want to move the primary mailboxes for selected users, so a portion of the OnBoarding1.csv file for this migration batch would look like this:

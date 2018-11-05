@@ -29,9 +29,7 @@ However, if you use Exchange Online PowerShell to create or rename a distributio
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use Exchange Online PowerShell to override the group naming policy when you create a new group
+## Use Exchange Online PowerShell to override the group naming policy when you create a new group
 
 To override the group naming policy, run the following command.
   
@@ -47,7 +45,7 @@ New-DistributionGroup -Name "All Administrators" -IgnoreNamingPolicy
 
 When Microsoft Exchange creates this group, it uses All Administrators for both the _Name_ and _DisplayName_ parameters. 
   
-### Use Exchange Online PowerShell to override the group naming policy when you rename a group
+## Use Exchange Online PowerShell to override the group naming policy when you rename a group
 
 To override the group naming policy when you rename an existing group with Exchange Online PowerShell, run the following command.
   
@@ -74,7 +72,6 @@ Get-DistributionGroup <Name> | Format-List DisplayName
 
 ```
 Get-OrganizationConfig | Format-List DistributionGroupNamingPolicy
-
 ```
 
 If the format of the display name for the group is different than the one enforced by your organization's group naming policy, it worked.

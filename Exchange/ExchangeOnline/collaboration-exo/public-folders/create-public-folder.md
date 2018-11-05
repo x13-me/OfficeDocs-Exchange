@@ -34,9 +34,7 @@ By default, a public folder inherits the settings of its parent folder, includin
 - You can't create a public folder unless you've first created a public folder mailbox. For more information about how to create a public folder mailbox, see [Create a public folder mailbox](create-public-folder-mailbox.md).    
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
-## What do you want to do?
-
-### Use the EAC to create a public folder
+## Use the EAC to create a public folder
 <a name="BKMK_EAC"> </a>
 
 When using the EAC to create a public folder, you'll only be able to set the name and the path of the public folder. To configure additional settings, you'll need to edit the public folder after it's created.
@@ -56,7 +54,7 @@ When using the EAC to create a public folder, you'll only be able to set the nam
     
 6. Click **Save**.
     
-### Use Exchange Online PowerShell to create a public folder
+## Use Exchange Online PowerShell to create a public folder
 <a name="BKMK_Shell"> </a>
 
 This example creates a public folder named Reports in the path Marketing\2013.

@@ -38,24 +38,22 @@ You can control the types and format of messages that are sent to domains outsid
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-
 > [!IMPORTANT]
 > Using the Exchange admin center (EAC) to configure remote domain entries is only available in Exchange Online Dedicated. For Exchange Online, use Exchange Online PowerShell instead. 
   
-### Create and configure a remote domain
+## Create and configure a remote domain
 
-#### Use the EAC to create and configure a remote domain
+### Use the EAC to create and configure a remote domain
 
 1. In the EAC, go to **Mail flow** \> **Remote domains**.
     
 2. To create a new domain:
     
-1. Select **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+  1. Select **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
-2. In the **Name** box, enter a descriptive name for the domain. 
+  2. In the **Name** box, enter a descriptive name for the domain. 
     
-3. In the **Remote Domain** box, enter the full domain name. Use the wildcard character (\*) for all subdomains of a specified domain, for example, \*.contoso.com. 
+  3. In the **Remote Domain** box, enter the full domain name. Use the wildcard character (\*) for all subdomains of a specified domain, for example, \*.contoso.com. 
     
 3. To change settings for the default domain, select **Default**, and then select **Edit**.
     
@@ -77,7 +75,7 @@ You can control the types and format of messages that are sent to domains outsid
     
 5. Click **Save**. If you created a new remote domain, it is added to the list.
     
-#### Use Exchange Online PowerShell to create and configure a remote domain
+### Use Exchange Online PowerShell to create and configure a remote domain
 
 To create a new remote domain, use the **New-RemoteDomain** cmdlet. For a complete list of parameters, see [new-RemoteDomain](https://technet.microsoft.com/library/31442c97-1813-43d9-b9d1-da487e6b00ea.aspx). 
   
@@ -145,7 +143,7 @@ Use **Set-RemoteDomain** to change the settings for the default remote domain or
 
 For a complete list of remote domain settings you can change by using Exchange Online PowerShell, see [Set-RemoteDomain](https://technet.microsoft.com/library/4738bf25-39b8-4433-bd64-1d60252c2832.aspx).
   
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully created and configured a remote domain using Exchange Online PowerShell, replace \<Remote Domain Name\> with your domain and run the following command:
 
@@ -153,12 +151,12 @@ To verify that you have successfully created and configured a remote domain usin
 Get-RemoteDomain <Remote Domain Name> | Format-List
 ```
   
-### Remove a remote domain
+## Remove a remote domain
 
 > [!NOTE]
 > You can't remove the default remote domain. When you remove a remote domain, the default remote domain settings apply to messages sent to that domain. Removing a remote domain doesn't disable mail flow to the remote domain. 
   
-#### Use the EAC to remove a remote domain
+### Use the EAC to remove a remote domain
 
 1. In the EAC, go to **Mail flow** \> **Remote domains**.
     
@@ -168,7 +166,7 @@ Get-RemoteDomain <Remote Domain Name> | Format-List
     
 The remote domain is removed from the list.
   
-#### Use Exchange Online PowerShell to remove a remote domain
+### Use Exchange Online PowerShell to remove a remote domain
 
 To remove a remote domain, use the [Remove-RemoteDomain](https://technet.microsoft.com/library/7c17847a-310e-45df-8c0c-58b4297e6f8d.aspx) cmdlet. This example removes the remote domain named Contoso. 
   
@@ -176,7 +174,7 @@ To remove a remote domain, use the [Remove-RemoteDomain](https://technet.microso
 Remove-RemoteDomain Contoso
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you have successfully removed the remote domain, run the command **Get-RemoteDomain**, and verify that the remote domain isn't listed. 
   

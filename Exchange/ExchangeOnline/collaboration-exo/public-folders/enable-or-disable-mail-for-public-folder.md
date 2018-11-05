@@ -35,9 +35,7 @@ For additional management tasks related to public folders, see [Public folder pr
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-
-### Use the EAC to mail-enable or mail-disable a public folder
+## Use the EAC to mail-enable or mail-disable a public folder
 
 1. Navigate to **Public folders** \> **Public folders**.
     
@@ -49,7 +47,7 @@ For additional management tasks related to public folders, see [Public folder pr
     
 If you want external users to send mail to this public folder, make sure you follow the steps in [Allow anonymous users to send email to a mail-enabled public folder](#CreateItems.md).
   
-### Use Exchange Online PowerShell to mail-enable a public folder
+## Use Exchange Online PowerShell to mail-enable a public folder
 
 This example mail-enables the public folder Help Desk.
   
@@ -67,7 +65,7 @@ If you want external users to send mail to this public folder, make sure you fol
   
 For detailed syntax and parameter information, see [Enable-MailPublicFolder](https://technet.microsoft.com/library/6fc7ba9a-62a8-4f41-811f-608363aa1397.aspx).
   
-### Use Exchange Online PowerShell to mail-disable a public folder
+## Use Exchange Online PowerShell to mail-disable a public folder
 
 This example mail-disables the public folder Marketing\Reports.
   
@@ -77,7 +75,7 @@ Disable-MailPublicFolder -Identity "\Marketing\Reports"
 
 For detailed syntax and parameter information, see [Disable-MailPublicFolder](https://technet.microsoft.com/library/92d6c890-a96a-469a-b864-99d9656b12e0.aspx).
   
-### Allow anonymous users to send email to a mail-enabled public folder
+## Allow anonymous users to send email to a mail-enabled public folder
 <a name="CreateItems"> </a>
 
 You can use either Outlook or Exchange Online PowerShell to set permissions on a public folder's Anonymous account. You can't use the EAC to set permissions on the Anonymous account.
@@ -100,7 +98,6 @@ This example sets the `CreateItems` permission for the Anonymous account on the 
   
 ```
 Add-PublicFolderClientPermission "\Customer Feedback" -AccessRights CreateItems -User Anonymous
-
 ```
 
 For detailed syntax and parameter information, see [Add-PublicFolderClientPermission](https://technet.microsoft.com/library/d68ad7a9-daa0-4e6d-b819-5cca891c8fd9.aspx).

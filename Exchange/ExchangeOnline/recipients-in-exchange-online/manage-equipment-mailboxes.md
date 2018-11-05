@@ -29,11 +29,9 @@ For information about another type of resource mailbox, a room mailbox, see [Cre
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
+## Create an equipment mailbox
 
-### Create an equipment mailbox
-
-#### Use the EAC to create an equipment mailbox
+### Use the EAC to create an equipment mailbox
 
 1. In the EAC, navigate to **Recipients** \> **Resources**.
     
@@ -52,7 +50,7 @@ For information about another type of resource mailbox, a room mailbox, see [Cre
     
 Once you've created your equipment mailbox, you can edit your equipment mailbox to update info about booking options, MailTips and delegates. Check out the Change equipment mailbox properties section below to change room mailbox properties
   
-#### Use Exchange Online PowerShell to create an equipment mailbox
+### Use Exchange Online PowerShell to create an equipment mailbox
 
 This example creates an equipment mailbox with the following configuration:
   
@@ -72,7 +70,7 @@ New-Mailbox -Database "Mailbox Database 1" -Name MotorVehicle2 -OrganizationalUn
 
 For detailed syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
   
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully created a user mailbox, do one of the following:
   
@@ -84,11 +82,11 @@ To verify that you've successfully created a user mailbox, do one of the followi
   Get-Mailbox <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress
   ```
 
-### Change equipment mailbox properties
+## Change equipment mailbox properties
 
 After you create an equipment mailbox, you can make changes and set additional properties by using the EAC or Exchange Online PowerShell.
   
-#### Use the EAC to change equipment mailbox properties
+### Use the EAC to change equipment mailbox properties
 
 1. In the EAC, navigate to **Recipients** \> **Resources**.
     
@@ -200,7 +198,7 @@ Use the **MailTip** section to add a MailTip to alert users of potential issues 
 > [!NOTE]
 >  MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit. 
   
-#### Use Exchange Online PowerShell to change equipment mailbox properties
+### Use Exchange Online PowerShell to change equipment mailbox properties
 
 Use the following sets of cmdlets to view and change equipment mailbox properties: **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change general properties and email addresses for equipment mailboxes. Use the **Get-CalendarProcessing** and **Set-CalendarProcessing** cmdlets to view and change delegates and booking options. 
   
@@ -244,7 +242,7 @@ This example uses the **Get-User** cmdlet to find all equipment mailboxes in the
 Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'EquipmentMailbox') -and (Department -eq 'Audio Visual')} | Set-CalendarProcessing -AllBookInPolicy $false -AllRequestInPolicy $true -ResourceDelegates "Ann Beebe"
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully changed properties for an equipment mailbox, do the following:
   
@@ -253,7 +251,7 @@ To verify that you've successfully changed properties for an equipment mailbox, 
 - In Exchange Online PowerShell, use the **Get-Mailbox** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple mailboxes. In the example above where booking requests could be scheduled only during working hours, run the following command to verify the new value. 
     
   ```
-  Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'EquipmentMailbox')} | Get-CalendarProcessing | fl Identity,ScheduleOnlyDuringWorkHours
+  Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'EquipmentMailbox')} | Get-CalendarProcessing | Format-List Identity,ScheduleOnlyDuringWorkHours
   ```
 
 

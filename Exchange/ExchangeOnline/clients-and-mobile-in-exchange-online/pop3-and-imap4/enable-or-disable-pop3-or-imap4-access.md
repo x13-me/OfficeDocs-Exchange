@@ -27,9 +27,7 @@ By default, POP3 and IMAP4 are enabled for all users in Exchange Online. You can
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-
-### Use the EAC to enable or disable POP3 or IMAP4 for a user
+## Use the EAC to enable or disable POP3 or IMAP4 for a user
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
     
@@ -49,7 +47,7 @@ By default, POP3 and IMAP4 are enabled for all users in Exchange Online. You can
     
 5. Click **Save**.
     
-### Use Exchange Online PowerShell to enable or disable POP3 or IMAP4 for a user
+## Use Exchange Online PowerShell to enable or disable POP3 or IMAP4 for a user
 
 This example enables POP3 for the user Christa Knapp.
   

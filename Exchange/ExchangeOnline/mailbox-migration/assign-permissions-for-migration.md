@@ -74,9 +74,7 @@ For information about migrating mailboxes to Office 365 by using different migra
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions and delegation" entry in the "Recipient Provisioning Permissions" section in the [Recipient Permissions](https://go.microsoft.com/fwlink/p/?LinkID=534105) topic. 
     
-## What do you want to do?
-
-### Assign the FullAccess permission
+## Assign the FullAccess permission
 <a name="bkmk_fullaccess"> </a>
 
 The following examples show different ways to use the Exchange Online PowerShell **Add-MailboxPermission** cmdlet to assign the FullAccess permission to the migration administrator account for mailboxes in your on-premises organization. 
@@ -119,7 +117,7 @@ For detailed syntax and parameter information, see the following topics:
     
 - [Filterable Properties for the -Filter Parameter](https://go.microsoft.com/fwlink/p/?LinkId=620739)
     
-#### How do you know the assignment of permission worked?
+### How do you know the assignment of permission worked?
 
 Run one of the following commands to verify you successfully assigned FullAccess permission to the migration administrator account in each example.
   
@@ -139,7 +137,7 @@ Get-Mailbox -ResultSize unlimited -Filter {(CustomAttribute10 -eq 'MigBatch2')} 
 Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Get-MailboxPermission -User migadmin
 ```
 
-### Assign the Receive As permission
+## Assign the Receive As permission
 <a name="bkmk_fullaccess"> </a>
 
 The following example shows how to use the Exchange Online PowerShell **Add-ADPermission** cmdlet to assign the Receive As permission to the migration administrator account for "Mailbox Database 1900992314." 
@@ -150,7 +148,7 @@ Add-ADPermission -Identity "Mailbox Database 1900992314" -User migadmin -Extende
 
 For detailed syntax and parameter information, see [add-ADPermission](https://go.microsoft.com/fwlink/p/?LinkId=620740).
   
-#### How do you know the assignment of permission worked?
+### How do you know the assignment of permission worked?
 
 Verify you successfully assigned ReceiveAs permission to the migration administrator account in the example. Run the following command.
   
@@ -158,7 +156,7 @@ Verify you successfully assigned ReceiveAs permission to the migration administr
 Get-ADPermission -Identity "Mailbox Database 1900992314" -User migadmin
 ```
 
-### Assign the WriteProperty permission
+## Assign the WriteProperty permission
 <a name="bkmk_fullaccess"> </a>
 
 The following examples show different ways to use the Exchange Online PowerShell **Add-ADPermission** cmdlet to assign the migration administrator account the WriteProperty permission to modify the _TargetAddress_ property for on-premises user accounts. This capability is required to perform a staged Exchange migration if the migration administrator isn't a member of the Domain Admins group. 
@@ -201,7 +199,7 @@ For detailed syntax and parameter information, see the following topics:
     
 - [Filterable Properties for the -Filter Parameter](https://go.microsoft.com/fwlink/p/?LinkId=620739)
     
-#### How do you know the assignment of permission worked?
+### How do you know the assignment of permission worked?
 
 Verify you successfully assigned the WriteProperty permission to the administrator account, Run one of the following commands to confirm the permission was given to modify the TargetAddress property by using the command in each example.
   

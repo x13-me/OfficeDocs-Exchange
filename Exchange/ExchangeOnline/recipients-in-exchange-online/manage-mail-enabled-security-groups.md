@@ -27,11 +27,9 @@ A mail-enabled security group can be used to distribute messages as well as to g
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
+## Create a mail-enabled security group
 
-### Create a mail-enabled security group
-
-#### Use the EAC to create a security group
+### Use the EAC to create a security group
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
     
@@ -67,7 +65,7 @@ A mail-enabled security group can be used to distribute messages as well as to g
 > [!NOTE]
 > By default, all new mail-enabled security groups require that all senders be authenticated. This prevents external senders from sending messages to mail-enabled security groups. To configure a mail-enabled security group to accept messages from all senders, you must modify the message delivery restriction settings for that group. 
   
-#### Use Exchange Online PowerShell to create a security group
+### Use Exchange Online PowerShell to create a security group
 
 This example creates a security group with an alias fsadmin and the name File Server Managers. The security group is created in the default OU, and anyone can join this group with approval by the group owners.
   
@@ -77,7 +75,7 @@ New-DistributionGroup -Name "File Server Managers" -Alias fsadmin -Type security
 
 For more information about using Exchange Online PowerShell to create mail-enabled security groups, see [New-DistributionGroup](https://technet.microsoft.com/library/7446962a-cf07-47a1-90d8-45df44057065.aspx).
   
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully created a mail-enabled security group, do one of the following:
   
@@ -89,9 +87,9 @@ To verify that you've successfully created a mail-enabled security group, do one
   Get-DistributionGroup <Name> | Format-List Name,RecipientTypeDetails,PrimarySmtpAddress
   ```
 
-### Change mail-enabled security group properties
+## Change mail-enabled security group properties
 
-#### Use the EAC to change mail-enabled security group properties
+### Use the EAC to change mail-enabled security group properties
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
     
@@ -217,7 +215,7 @@ Use this section to assign permissions to a user (called a delegate) to allow th
     
 To assign permissions to delegates, click **Add** under the appropriate permission to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../media/ITPro_EAC_.gif).
   
-#### Use Exchange Online PowerShell to change security group properties
+### Use Exchange Online PowerShell to change security group properties
 
 Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for security groups. Advantages of using Exchange Online PowerShell are the ability to change the properties that aren't available in the EAC and to change properties for multiple security groups. For information about which parameters correspond to which distribution group properties, see the following topics: 
   
@@ -245,7 +243,7 @@ This example hides all security groups in the organization from the address book
 Get-DistributionGroup -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailUniversalSecurityGroup')} | Set-DistributionGroup -HiddenFromAddressListsEnabled $true
 ```
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully changed properties for a security group, do the following:
   

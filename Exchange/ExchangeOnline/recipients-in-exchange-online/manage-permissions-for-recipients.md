@@ -44,16 +44,14 @@ You can use the EAC or Exchange Online PowerShell to assign permissions to users
     
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
-  
-## What do you want to do?
 
-### Assign permissions to a mailbox
+## Assign permissions to a mailbox
 
 As previously stated, you can assign delegates permissions to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also use Exchange Online PowerShell to assign delegates permissions to access a discovery mailbox.
   
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions and delegation" entry in the "Recipient Provisioning Permissions" section in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
   
-#### Use the EAC to assign permissions
+### Use the EAC to assign permissions
 
 The following procedure shows how to assign permissions to a user mailbox. You follow a similar procedure to assign permissions to resource or shared mailboxes by navigating to the **Resources** or **Shared** page in the EAC and selecting the mailbox to assign the permissions to. 
   
@@ -69,7 +67,7 @@ The following procedure shows how to assign permissions to a user mailbox. You f
     
 5. Click **Save** to save your changes. 
     
-#### Use the EAC to bulk assign permissions
+### Use the EAC to bulk assign permissions
 
 Use the following steps to bulk assign permissions.
   
@@ -83,7 +81,7 @@ Use the following steps to bulk assign permissions.
     
     To remove a permission for recipients, under the appropriate permission, select the recipients and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.gif).
     
-#### Use the EAC to assign a user permission to send email from another user's mailbox
+### Use the EAC to assign a user permission to send email from another user's mailbox
 
 The following procedure shows how to assign a user permission to send email from another user's mailbox.
   
@@ -104,7 +102,7 @@ The following procedure shows how to assign a user permission to send email from
   
 5. Click **Save** to save your changes. 
     
-#### Use the EAC to assign a user permission to send email from a group
+### Use the EAC to assign a user permission to send email from a group
 
 The following procedure shows how to assign a user permission to send email from a group.
   
@@ -122,7 +120,7 @@ The following procedure shows how to assign a user permission to send email from
     
 5. Click **Save** to save your changes. 
     
-#### Use the EAC to assign full access permissions
+### Use the EAC to assign full access permissions
 
 The following procedure shows how to assign full access permissions to a user mailbox. 
   
@@ -141,11 +139,11 @@ The following procedure shows how to assign full access permissions to a user ma
   
 5. Click **Save** to save your changes. 
     
-#### Use Exchange Online PowerShell to assign permissions
+### Use Exchange Online PowerShell to assign permissions
 
 The following sections show how to use Exchange Online PowerShell to manage Full Access, Send As, and Send on Behalf permissions for mailboxes.
   
-#### Manage the Full Access permission
+### Manage the Full Access permission
 
 The following examples show how to use the **Add-MailboxPermission** and **Remove-MailboxPermission** cmdlets to manage Full Access permissions. 
   
@@ -179,14 +177,14 @@ For detailed syntax and parameter information, see the following topics:
     
 - [remove-MailboxPermission](https://technet.microsoft.com/library/eda30705-6070-413a-88c5-db262fbad8d3.aspx)
     
-#### Manage the Send As permission
+### Manage the Send As permission
 
 The following examples show how to manage Send As permissions in Exchange Server and in Exchange Online. In Exchange Server, you have to use the **Add-ADPermission** and **Remove-ADPermission** cmdlets; in Exchange Online, you have to use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets. In both cases, you use the _Identity_ parameter to specify the name of the mailbox on which the Send As permission should be added or removed and the _User_ or _Trustee_ parameter to specify the delegate (for example, a user or group) that will be assigned or unassigned the Send As permission. 
   
 > [!TIP]
 > Use the **Get-Recipient** cmdlet to retrieve the _Name_ property for the mailbox and the delegate. Use these values to assign the Send As permission. 
   
-#### Exchange Server
+### Exchange Server
 
 This example assigns the Send As permission to the Helpdesk group on the shared mailbox Helpdesk Support Team.
   
@@ -206,7 +204,7 @@ For detailed syntax and parameter information, see:
     
 - [remove-ADPermission](https://technet.microsoft.com/library/0e45951a-2b5a-4aa9-a709-def61d7d4972.aspx)
     
-#### Exchange Online
+### Exchange Online
 
 This example assigns the Send As permission to the Printer Support group on the shared mailbox named Contoso Printer Support.
   
@@ -226,7 +224,7 @@ For detailed syntax and parameter information, see:
     
 - [Remove-RecipientPermission](https://technet.microsoft.com/library/5a772687-ca3b-4753-8dea-bf4c571e9e16.aspx)
     
-#### Manage the Send on Behalf permission
+### Manage the Send on Behalf permission
 
 The following examples show how to use the **Set-Mailbox** cmdlet to manage Send on Behalf permissions. 
   
@@ -244,7 +242,7 @@ Set-Mailbox "Contoso Executives" -GrantSendOnBehalfTo @{remove="tempassistants@c
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
   
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully assigned permissions to a mailbox or a shared mailbox, do one of the following:
   
@@ -292,13 +290,13 @@ Or
   Get-Mailbox -Identity <mailbox> | Format-List GrantSendOnBehalfTo
   ```
 
-### Assign permissions to a group
+## Assign permissions to a group
 
 As previously stated, you can assign the Send As and Send on Behalf permissions to distribution groups, dynamic distribution groups, and mail-enabled security groups to allow delegates to send messages as the group or on behalf of the group.
   
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" and "Dynamic distribution groups" entries in the "Recipient Provisioning Permissions" section in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
   
-#### Use the EAC to assign permissions
+### Use the EAC to assign permissions
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
     
@@ -312,39 +310,17 @@ You need to be assigned permissions before you can perform this procedure or pro
     
 5. Click **Save** to save your changes. 
     
-#### Use Exchange Online PowerShell to assign permissions
+### Use Exchange Online PowerShell to assign permissions
 
 The following sections show how to use Exchange Online PowerShell to manage Send As and Send on Behalf permissions for groups.
   
 #### Manage the Send As permission
 
-The following examples show how to manage Send As permissions for groups in Exchange Server and in Exchange Online. In Exchange Server, you have to use the **Add-ADPermission** and **Remove-ADPermission** cmdlets. In Exchange Online, you have to use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets. In both cases, you use the _Identity_ parameter to specify the name of the group on which the Send As permission should be added or removed and the _User_ or _Trustee_ parameter to specify the delegate (for example, a user or group) that will be assigned or unassigned the Send As permission. 
+The following examples show how to manage Send As permissions for groups in in Exchange Online. In Exchange Online, you have to use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets. You use the _Identity_ parameter to specify the name of the group on which the Send As permission should be added or removed and the _User_ or _Trustee_ parameter to specify the delegate (for example, a user or group) that will be assigned or unassigned the Send As permission. 
   
 > [!TIP]
 > Use the **Get-Recipient** cmdlet to retrieve the _Name_ property for the group and the delegate. Use these values to assign the Send As permission. 
   
-#### Exchange Server
-
-This example assigns the Send As permission to the Sales Admins group for the group named Contoso Sales Info. This allows members of the sales admin group to send messages as the Contoso Sales Information group.
-  
-```
-Add-ADPermission -Identity "Contoso Sales Info" -User "Sales Admins" -ExtendedRights "Send As"
-```
-
-This example removes the Send As permission for the user Alan Shen on the group Corporate IT Admins.
-  
-```
-Remove-ADPermission -Identity "Corporate IT Admins" -User contoso\alans -ExtendedRights "Send As"
-```
-
-For detailed syntax and parameter information, see:
-  
-- [add-ADPermission](https://technet.microsoft.com/library/bef9f3db-84f6-4a40-81cb-c9cb9b9ee201.aspx)
-    
-- [remove-ADPermission](https://technet.microsoft.com/library/0e45951a-2b5a-4aa9-a709-def61d7d4972.aspx)
-    
-#### Exchange Online
-
 This example assigns the Send As permission to the Contoso Admins group on the dynamic distribution group named Emergency Broadcast Messages.
   
 ```
@@ -395,7 +371,7 @@ For detailed syntax and parameter information, see:
 
 To verify that you've successfully assigned permissions to a group, do one of the following:
   
-- In the EAC: 
+In the EAC: 
     
 1. Navigate to **Recipients** \> **Groups**, click the group, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
     
@@ -403,34 +379,24 @@ To verify that you've successfully assigned permissions to a group, do one of th
     
 3. If you assigned permissions to a recipient, verify that the user or group is listed under the appropriate permission. If you removed permissions, verify that the recipient isn't listed under the appropriate permission.
     
-Or
-  
-- In Exchange Online PowerShell, run one of the following commands depending on the permission you managed.
+In Exchange Online PowerShell, run one of the following commands depending on the permission you managed.
     
-  - **Send As**
-    
-    In Exchange Server, run the following command.
-    
-  ```
-  Get-ADPermission -Identity <name of group> -User <delegate>
-  ```
+- **Send As**
 
-    In Exchange Online, run the following command.
-    
-  ```
-  Get-RecipientPermission -Identity <group> -Trustee <delegate>
-  ```
+    ```
+    Get-RecipientPermission -Identity <group> -Trustee <delegate>
+    ```
 
-  - **Send on Behalf**
+- **Send on Behalf**
     
-  ```
-  Get-DistributionGroup -Identity <group> | Format-List GrantSendOnBehalfTo
-  ```
+    ```
+    Get-DistributionGroup -Identity <group> | Format-List GrantSendOnBehalfTo
+    ```
 
     Or
     
-  ```
-  Get-DynamicDistributionGroup -Identity <group> | Format-List GrantSendOnBehalfTo
-  ```
+    ```
+    Get-DynamicDistributionGroup -Identity <group> | Format-List GrantSendOnBehalfTo
+    ```
 
 

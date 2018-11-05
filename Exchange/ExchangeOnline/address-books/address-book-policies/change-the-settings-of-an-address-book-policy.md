@@ -32,9 +32,7 @@ For additional management tasks related to ABPs, see [Managing Address Book Poli
     
 - Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
     
-## What do you want to do?
-
-### Change the OAB, room list, and GAL for an ABP
+## Change the OAB, room list, and GAL for an ABP
 <a name="UseShell"> </a>
 
 This example changes the OAB, room list, and GAL that will be used by mailbox users who are assigned the ABP named All Fabrikam ABP. 
@@ -43,7 +41,7 @@ This example changes the OAB, room list, and GAL that will be used by mailbox us
 Set-AddressBookPolicy -Identity "All Fabrikam ABP" -OfflineAddressBook \Fabrikam-OAB-2 -GlobalAddressList "\All Fabrikam GAL" -RoomList "\All Fabrikam Rooms"
 ```
 
-### Replace address lists in an ABP
+## Replace address lists in an ABP
 <a name="UseShell"> </a>
 
 The address lists that you specify for an existing ABP replace all address lists in the ABP.
@@ -54,7 +52,7 @@ This example replaces the existing address lists with the address lists named Go
 Set-AddressBookPolicy -Identity "Government Agency A" -AddressLists "GovernmentAgencyA-Atlanta","GovernmentAgencyA-Moscow"
 ```
 
-### Add address lists to an ABP
+## Add address lists to an ABP
 <a name="UseShell"> </a>
 
 To preserve address lists that are already defined in an ABP, you need to specify those address lists when you add new ones to the ABP.
@@ -65,7 +63,7 @@ This example adds the address list named Contoso-Chicago to the ABP named ABP Co
 Set-AddressBookPolicy -Identity "ABP Contoso" -AddressLists "Contoso-Chicago","Contoso-Seattle"
 ```
 
-### Remove address lists from an ABP
+## Remove address lists from an ABP
 <a name="UseShell"> </a>
 
 To remove existing address lists that are already defined in an ABP, you need to specify the address lists that you want to keep.

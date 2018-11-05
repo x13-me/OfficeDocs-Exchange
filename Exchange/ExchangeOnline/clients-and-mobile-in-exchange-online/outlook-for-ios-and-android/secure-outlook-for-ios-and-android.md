@@ -169,7 +169,6 @@ You can define a default block rule and then configure an allow rule for Outlook
   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "WP" -AccessLevel Allow
   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "WP8" -AccessLevel Allow
   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "WindowsMail" -AccessLevel Allow
-  
   ```
 
  **Option 2: Block native Exchange ActiveSync apps on Android and iOS devices**
@@ -195,7 +194,6 @@ Alternatively, you can block native Exchange ActiveSync apps on specific Android
   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "iPad" -AccessLevel Block
   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "iPhone" -AccessLevel Block
   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "iPod" -AccessLevel Block
-  
   ```
 
 3. Not all Android device manufacturers specify "Android" as the DeviceType. Manufacturers may specify a unique value with each release. In order to find other Android devices that are accessing your environment, execute the following command to generate a report of all devices that have an active Exchange ActiveSync partnership:
@@ -297,7 +295,6 @@ To block Android and allow iOS:
 ```
 New-ActiveSyncDeviceAccessRule -Characteristic UserAgent -QueryString "Outlook-Android/2.0" -AccessLevel Block
 New-ActiveSyncDeviceAccessRule -Characteristic UserAgent -QueryString "Outlook-iOS/2.0" -AccessLevel Allow
-
 ```
 
 To block iOS and allow Android:
@@ -305,7 +302,6 @@ To block iOS and allow Android:
 ```
 New-ActiveSyncDeviceAccessRule -Characteristic UserAgent -QueryString "Outlook-Android/2.0" -AccessLevel Allow
 New-ActiveSyncDeviceAccessRule -Characteristic UserAgent -QueryString "Outlook-iOS/2.0" -AccessLevel Block
-
 ```
 
 ## Exchange Web Services (EWS) application policies
