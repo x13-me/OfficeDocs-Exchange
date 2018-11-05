@@ -113,7 +113,7 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
-|[Update Rollup 24 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57306)|August 13, 2018|14.3.419.0|14.03.0419.000|
+|[Update Rollup 24 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57306)|September 5, 2018|14.3.419.0|14.03.0419.000|
 |[Update Rollup 23 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57219)|August 13, 2018|14.3.417.1|14.03.0417.001|
 |[Update Rollup 22 for Exchange Server 2010 SP3](https://go.microsoft.com/fwlink/p/?LinkId=2003010)|June 19, 2018|14.3.411.0|14.03.0411.000|
 |Update Rollup 21 for Exchange Server 2010 SP3|May 7, 2018|14.3.399.2|14.03.0399.002|
