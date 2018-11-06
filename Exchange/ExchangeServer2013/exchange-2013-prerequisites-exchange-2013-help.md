@@ -119,11 +119,11 @@ Do the following to install the required Windows roles and features:
 
 After you've installed the operating system roles and features, install the following software in the order shown:
 
-1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
+1.  [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
     
 
     > [!IMPORTANT]
-    > Exchange 2013 CU16 and later <STRONG>require</STRONG> .NET Framework 4.6.2. Upgrade your servers to .NET Framework 4.6.2 before you install Exchange 2013 CU16 or you'll receive an error. If .NET Framework 4.5.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU15 before installing .NET Framework 4.6.2.
+    > Exchange 2013 CU21 <STRONG>require</STRONG> .NET Framework 4.7.1. Upgrade your servers to .NET Framework 4.7.1 before you install Exchange 2013 CU21 or you'll receive an error. If .NET Framework 4.6.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU20 before installing .NET Framework 4.7.1.
 
 
 
@@ -147,11 +147,11 @@ Do the following to install the required Windows roles and features:
 
 Install the version of Microsoft .NET Framework that corresponds to the version of Exchange 2013 you're installing:
 
-1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
+1.  [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
     
 
     > [!IMPORTANT]
-    > Exchange 2013 CU16 and later <STRONG>require</STRONG> .NET Framework 4.6.2. Upgrade your servers to .NET Framework 4.6.2 before you install Exchange 2013 CU16 or you'll receive an error. If .NET Framework 4.5.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU15 before installing .NET Framework 4.6.2.
+    > Exchange 2013 CU21 <STRONG>require</STRONG> .NET Framework 4.7.1. Upgrade your servers to .NET Framework 4.7.1 before you install Exchange 2013 CU21 or you'll receive an error. If .NET Framework 4.6.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU20 before installing .NET Framework 4.7.1.
 
 
 
@@ -189,11 +189,11 @@ Do the following to install the required Windows roles and features:
     
 After you've installed the operating system roles and features, install the following software in the order shown:
 
-1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
+1.  [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
     
 
     > [!IMPORTANT]
-    > Exchange 2013 CU16 and later <STRONG>require</STRONG> .NET Framework 4.6.2. Upgrade your servers to .NET Framework 4.6.2 before you install Exchange 2013 CU16 or you'll receive an error. If .NET Framework 4.5.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU15 before installing .NET Framework 4.6.2.
+    > Exchange 2013 CU21 <STRONG>require</STRONG> .NET Framework 4.7.1. Upgrade your servers to .NET Framework 4.7.1 before you install Exchange 2013 CU21 or you'll receive an error. If .NET Framework 4.6.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU20 before installing .NET Framework 4.7.1.
 
 
 
@@ -235,11 +235,11 @@ Do the following to install the required Windows roles and features:
 
 After you've installed the operating system roles and features, install the following software in the order shown:
 
-1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
+1.  [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
     
 
     > [!IMPORTANT]
-    > Exchange 2013 CU16 and later <STRONG>require</STRONG> .NET Framework 4.6.2. Upgrade your servers to .NET Framework 4.6.2 before you install Exchange 2013 CU16 or you'll receive an error. If .NET Framework 4.5.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU15 before installing .NET Framework 4.6.2.
+    > Exchange 2013 CU21 <STRONG>require</STRONG> .NET Framework 4.7.1. Upgrade your servers to .NET Framework 4.7.1 before you install Exchange 2013 CU21 or you'll receive an error. If .NET Framework 4.6.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU20 before installing .NET Framework 4.7.1.
 
 
 
@@ -261,7 +261,7 @@ Follow the instructions in this section to install the prerequisites on domain-j
 
 After you've installed the operating system features, install the following software in the order shown:
 
-1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
+1.  [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
 
@@ -269,5 +269,5 @@ After you've installed the operating system features, install the following soft
 
 ## Windows 8 and Windows 8.1 prerequisites (admin tools only)
 
-[.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
+[.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
 
