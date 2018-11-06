@@ -9,14 +9,14 @@ ms.topic: overview
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 2b3e1529-1677-4564-be0b-ce22757ddc0d
-description: "Use audit logging to troubleshoot configuration issues by tracking specific changes made by administrators and to help you meet regulatory, compliance, and litigation requirements. Microsoft Exchange provides two types of audit logging:"
+description: "Use audit logging to troubleshoot configuration issues by tracking specific changes made by administrators and to help you meet regulatory, compliance, and litigation requirements."
 ---
 
 # Exchange auditing reports
 
-Use audit logging to troubleshoot configuration issues by tracking specific changes made by administrators and to help you meet regulatory, compliance, and litigation requirements. Microsoft Exchange provides two types of audit logging: 
+Use audit logging to troubleshoot configuration issues by tracking specific changes made by administrators and to help you meet regulatory, compliance, and litigation requirements. Exchange Online provides two types of audit logging: 
   
-- Administrator audit logging records any action, based on an Exchange Management Shell cmdlet, performed by an administrator. This can help you troubleshoot configuration issues or identify the cause of security-related or compliance-related problems. In Exchange Online, actions performed by Microsoft administrators and delegated administrators, are also recorded. 
+- Administrator audit logging records any action, based on an Exchange Online PowerShell cmdlet, performed by an administrator. This can help you troubleshoot configuration issues or identify the cause of security-related or compliance-related problems. In Exchange Online, actions performed by Microsoft administrators and delegated administrators, are also recorded. 
     
 - Mailbox audit logging records when a mailbox is accessed by an administrator, a delegated user, or the person who owns the mailbox. This can help you determine who has accessed a mailbox and what they've done. 
     
@@ -55,13 +55,13 @@ When you run any of the following reports on the **Auditing** page in the EAC, t
     
   - [Run a per-mailbox litigation hold report](per-mailbox-litigation-hold-report.md)
     
-  - [Place a mailbox on Litigation Hold](http://technet.microsoft.com/library/adee4621-3626-4aec-aa53-00b35ff0d0b0.aspx)
+  - [Place a mailbox on Litigation Hold](https://technet.microsoft.com/library/adee4621-3626-4aec-aa53-00b35ff0d0b0.aspx)
     
 - **Run the admin audit log report** Use this report to view entries from the administrator audit log. Instead of exporting the administrator audit log, which can take up to 24 hours to receive in an email message, you can run this report in the EAC. This report records configuration changes made by administrators in your organization. Up to 5000 entries will be displayed on multiple pages. To narrow the search, you can specify a date range. For more information, see: 
     
   - [View the administrator audit log](view-administrator-audit-log.md)
     
-  - [Administrator audit logging](http://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)
+  - [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)
     
 - **Run the external admin audit log report** This report is only available in Exchange Online and Exchange Online Protection. Actions performed by Microsoft administrators or delegated administrators are logged in the administrator audit log. Use the external admin audit log report to search for and view the actions that administrators outside your organization performed on the configuration of your Exchange Online organization. For more information, see [View and export the external admin audit log](view-external-admin-audit-log.md).
     
@@ -75,7 +75,7 @@ Before you can run auditing reports and export audit logs, you have to configure
 
 You have to enable mailbox audit logging for each mailbox that you want to run a non-owner mailbox access report for. If mailbox audit logging isn't enabled for a mailbox, you won't get any results when you run a report for it or export the mailbox audit log. 
   
-To enable mailbox audit logging for a single mailbox, run the following command in the Shell.
+To enable mailbox audit logging for a single mailbox, run the following command in Exchange Online PowerShell.
   
 ```
 Set-Mailbox <Identity> -AuditEnabled $true
@@ -90,7 +90,7 @@ $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 
 For more information about configuring which actions are logged, see:
   
-- **Exchange Server**: [Enable or disable mailbox audit logging for a mailbox](http://technet.microsoft.com/library/c4bbfd52-6196-49c7-8c31-777fbbee11f2.aspx)
+- **Exchange Server**: [Enable or disable mailbox audit logging for a mailbox](https://technet.microsoft.com/library/c4bbfd52-6196-49c7-8c31-777fbbee11f2.aspx)
     
 - **Exchange Online**: [Enable mailbox auditing in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=626109)
     
@@ -99,19 +99,19 @@ For more information about configuring which actions are logged, see:
 
 By default, administrators can access and run any of the reports on the Auditing page in the EAC. However, other users, such as a records manager or legal staff, have to be assigned the necessary permissions. 
   
-The easiest way to give users access is to add them to the Records Management role group. You can also use the Shell to give a user access to the **Auditing** page in the EAC by assigning the Audit Logs role to the user. 
+The easiest way to give users access is to add them to the Records Management role group. You can also use Exchange Online PowerShell to give a user access to the **Auditing** page in the EAC by assigning the Audit Logs role to the user. 
   
 #### Add a user to the Records Management role group
 
 1. Go to **Permissions** \> **Admin Roles**.
     
-2. In the list of role groups, click **Records Management**, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list of role groups, click **Records Management**, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
-3. Under **Members**, click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. Under **Members**, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
-4. In the **Select Members** dialog box, select the user. You can search for a user by typing all or part of a display name, and then clicking **Search**![Search icon](../../media/ITPro_EAC_.gif). You can also sort the list by clicking the **Name** or **Display Name** column headings. 
+4. In the **Select Members** dialog box, select the user. You can search for a user by typing all or part of a display name, and then clicking **Search** ![Search icon](../../media/ITPro_EAC_.gif). You can also sort the list by clicking the **Name** or **Display Name** column headings. 
     
-5. Click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then click **OK** to return to the role group page. 
+5. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then click **OK** to return to the role group page. 
     
 6. Click **Save** to save the change to the role group. 
     

@@ -28,19 +28,16 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 - Estimated time to complete: 2 to 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Dynamic distribution groups" entry in the [Recipients Permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Dynamic distribution groups" entry in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-<a name="Top"> </a>
+## Create a dynamic distribution group
 
-### Create a dynamic distribution group
-
-#### Use the EAC to create a dynamic distribution group
+### Use the EAC to create a dynamic distribution group
 <a name="createddg"> </a>
 
 1. In the EAC, navigate to **Recipients** \> **Groups** \> **New** \> **Dynamic distribution group**.
@@ -82,15 +79,15 @@ Unlike regular distribution groups that contain a defined set of members, the me
     
 5. Select one of the following recipient attributes from the drop-down list and provide a value. If the value for the selected attribute matches that value you define, the recipient receives a message sent to this group.
     
-|**Attribute**|**Send message to a recipient if…**|
-|:-----|:-----|
-|**Recipient container** <br/> |The recipient object resides in the specified domain or OU.  <br/> |
-|**State or province** <br/> |The specified value matches the recipient's State or province property.  <br/> |
-|**Company** <br/> |The specified value matches the recipient's Company property.  <br/> |
-|**Department** <br/> |The specified value matches the recipient's Department property.  <br/> |
-|**Custom attributeN** (where N is a number from 1 to 15)  <br/> |The specified value matches the recipient's CustomAttributeN property.  <br/> |
+  |**Attribute**|**Send message to a recipient if...**|
+  |:-----|:-----|
+  |**Recipient container**|The recipient object resides in the specified domain or OU.|
+  |**State or province**|The specified value matches the recipient's State or province property.|
+  |**Company**|The specified value matches the recipient's Company property.|
+  |**Department**|The specified value matches the recipient's Department property.|
+  |**Custom attributeN** (where N is a number from 1 to 15)|The specified value matches the recipient's CustomAttributeN property.|
    
-    **Important**: The values that you enter for the selected attribute must exactly match those that appear in the recipient's properties. For example, if you enter **Washington** for ** State or province **, but the value for the recipient's property is **WA**, the condition will not be met. Also, text-based values that you specify aren't case-sensitive. For example, if you specify **Contoso** for the **Company** attribute, messages will be sent to a recipient if this value is **contoso**.
+    **Important**: The values that you enter for the selected attribute must exactly match those that appear in the recipient's properties. For example, if you enter **Washington** for **State or province**, but the value for the recipient's property is **WA**, the condition will not be met. Also, text-based values that you specify aren't case-sensitive. For example, if you specify **Contoso** for the **Company** attribute, messages will be sent to a recipient if this value is **contoso**.
     
 6. In the **Specify words or phrases** window, type the value in the text box. Click **Add** and then click **OK**.
     
@@ -102,9 +99,9 @@ Unlike regular distribution groups that contain a defined set of members, the me
 8. When you've finished, click **Save** to create the dynamic distribution group. 
     
 > [!NOTE]
-> If you want to specify rules for attributes other than the ones available in the EAC, you must use the Shell to create a dynamic distribution group. Keep in mind that the filter and condition settings for dynamic distribution groups that have custom recipient filters can be managed only by using the Shell. For an example of how to create a dynamic distribution group with a custom query, see the next section on using the Shell to create a dynamic distribution group. 
+> If you want to specify rules for attributes other than the ones available in the EAC, you must use Exchange Online PowerShell to create a dynamic distribution group. Keep in mind that the filter and condition settings for dynamic distribution groups that have custom recipient filters can be managed only by using Exchange Online PowerShell. For an example of how to create a dynamic distribution group with a custom query, see the next section on using Exchange Online PowerShell to create a dynamic distribution group. 
   
-#### Use the Shell to create a dynamic distribution group
+### Use Exchange Online PowerShell to create a dynamic distribution group
 <a name="UseShell"> </a>
 
 This example creates the dynamic distribution group "Mailbox Users DDG" that contains only mailbox users.
@@ -123,31 +120,30 @@ This example creates a dynamic distribution group with a custom recipient filter
   
 ```
 New-DynamicDistributionGroup -Name "Full Time Employees" -RecipientFilter {(RecipientTypeDetails -eq 'UserMailbox') -and (CustomAttribute10 -eq 'FullTimeEmployee')}
-
 ```
 
-For detailed syntax and parameter information, see [New-DynamicDistributionGroup](http://technet.microsoft.com/library/e9920bd1-06c1-4f75-992f-dd7fc98a5c2b.aspx).
+For detailed syntax and parameter information, see [New-DynamicDistributionGroup](https://technet.microsoft.com/library/e9920bd1-06c1-4f75-992f-dd7fc98a5c2b.aspx).
   
-#### How do you know this worked?
+### How do you know this worked?
 <a name="UseShell"> </a>
 
 To verify that you've successfully created a dynamic distribution group, do one of the following:
   
 - In the EAC, navigate to **Recipients** \> **Groups**. The new dynamic distribution group is displayed in the group list. Under **Group Type**, the type is **Dynamic distribution group**.
     
-- In the Shell, run the following command to display information about the new dynamic distribution group.
+- In Exchange Online PowerShell, run the following command to display information about the new dynamic distribution group.
     
   ```
-  Get-DynamicDistributionGroup | FL Name,RecipientTypeDetails,RecipientFilter,PrimarySmtpAddress
+  Get-DynamicDistributionGroup | Format-List Name,RecipientTypeDetails,RecipientFilter,PrimarySmtpAddress
   ```
 
-### Change dynamic distribution group properties
+## Change dynamic distribution group properties
 
-#### Use the EAC to change dynamic distribution group properties
+### Use the EAC to change dynamic distribution group properties
 
 1. In the EAC, navigate to **Recipients** \> **Groups**.
     
-2. In the list of groups, click the dynamic distribution group that you want to view or change, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list of groups, click the dynamic distribution group that you want to view or change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 3. On the group's properties page, click one of the following sections to view or change properties.
     
@@ -187,9 +183,9 @@ Use this section to manage who can send email to this group.
     
 - **Senders inside and outside of my organization** Select this option to allow anyone to send messages to the group. 
     
-    You can further limit who can send messages to the group by allowing only specific senders to send messages to this group. Click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then select one or more recipients. If you add senders to this list, they are the only ones who can send mail to the group. Mail sent by anyone not in the list will be rejected. 
+    You can further limit who can send messages to the group by allowing only specific senders to send messages to this group. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then select one or more recipients. If you add senders to this list, they are the only ones who can send mail to the group. Mail sent by anyone not in the list will be rejected. 
     
-    To remove a person or a group from the list, select them in the list and then click **Remove**![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+    To remove a person or a group from the list, select them in the list and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
     
     > [!IMPORTANT]
     > If you've configured the group to allow only senders inside your organization to send messages to the group, email sent from a mail contact is rejected, even if they're added to this list. 
@@ -201,9 +197,9 @@ Use this section to set options for moderating the group. Moderators approve or 
   
 - **Messages sent to this group have to be approved by a moderator** This check box isn't selected by default. If you select this check box, incoming messages are reviewed by the group moderators before delivery. Group moderators can approve or reject incoming messages. 
     
-- **Group moderators** To add group moderators, click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif). To remove a moderator, select the moderator, and then click **Remove**![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif). If you've selected "Messages sent to this group have to be approved by a moderator" and you don't select a moderator, messages to the group are sent to the group owners for approval. 
+- **Group moderators** To add group moderators, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). To remove a moderator, select the moderator, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif). If you've selected "Messages sent to this group have to be approved by a moderator" and you don't select a moderator, messages to the group are sent to the group owners for approval. 
     
-- **Senders who don't require message approval** **** To add people or groups that can bypass moderation for this group, click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif). To remove a person or a group, select the item, and then click **Remove**![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+- **Senders who don't require message approval** **** To add people or groups that can bypass moderation for this group, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). To remove a person or a group, select the item, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
     
 - **Select moderation notifications** Use this section to set how users are notified about message approval. 
     
@@ -218,7 +214,7 @@ Use this section to set options for moderating the group. Moderators approve or 
 
 Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the reply address) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column. 
   
-- **Add** Click ** Add **![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types: 
+- **Add** Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to add a new email address for this mailbox. Select one of following address types: 
     
   - **SMTP** This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box. 
     
@@ -230,14 +226,14 @@ Use this section to view or change the email addresses associated with the group
     > [!NOTE]
     > With the exception of X.400 addresses, Exchange doesn't validate custom addresses for proper formatting. You must make sure that the custom address you specify complies with the format requirements for that address type. 
   
-- **Edit** To change an email address associated with the group, select it from the list, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+- **Edit** To change an email address associated with the group, select it from the list, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
     > [!NOTE]
     > To make an existing address the primary SMTP address for the group, select the **Make this the reply address** check box. 
   
-- **Remove** To delete an email address associated with the group, select it from the list, and then click **Remove**![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
+- **Remove** To delete an email address associated with the group, select it from the list, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif).
     
-- **Automatically update email addresses based on the email address policy applied to this recipient ** Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization. This box is selected by default. 
+- **Automatically update email addresses based on the email address policy applied to this recipient** Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization. This box is selected by default. 
     
 #### MailTip
 <a name="mailtip"> </a>
@@ -258,15 +254,15 @@ Use this section to assign permissions to a user (called a delegate) to allow th
     
 To assign permissions to delegates, click **Add** under the appropriate permission to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**.
   
-#### Use the Shell to change dynamic distribution group properties
+#### Use Exchange Online PowerShell to change dynamic distribution group properties
 
-Use the **Get-DynamicDistributionGroup** and **Set-DynamicDistributionGroup** cmdlets to view and change properties for dynamic distribution groups. Advantages of using the Shell are the ability to change the properties that aren't available in the EAC and change properties for multiple groups. For information about what parameters correspond to distribution group properties, see the following topics: 
+Use the **Get-DynamicDistributionGroup** and **Set-DynamicDistributionGroup** cmdlets to view and change properties for dynamic distribution groups. Advantages of using Exchange Online PowerShell are the ability to change the properties that aren't available in the EAC and change properties for multiple groups. For information about what parameters correspond to distribution group properties, see the following topics: 
   
-- [Get-DynamicDistributionGroup](http://technet.microsoft.com/library/d97ee738-dfa1-464b-855a-4242e8065473.aspx)
+- [Get-DynamicDistributionGroup](https://technet.microsoft.com/library/d97ee738-dfa1-464b-855a-4242e8065473.aspx)
     
-- [Set-DynamicDistributionGroup](http://technet.microsoft.com/library/943626ad-8455-4867-ab9a-855bab62c9c3.aspx)
+- [Set-DynamicDistributionGroup](https://technet.microsoft.com/library/943626ad-8455-4867-ab9a-855bab62c9c3.aspx)
     
-Here are some examples of using the Shell to change dynamic distribution group properties.
+Here are some examples of using Exchange Online PowerShell to change dynamic distribution group properties.
   
 This example changes the following parameters for all dynamic distribution groups in the organization:
   
@@ -292,18 +288,18 @@ Set-DynamicDistributionGroup -Identity "All Employees" -EmailAddresses SMTP:All.
 
 To verify that you've successfully changed properties for a dynamic distribution group, do the following:
   
-- In the EAC, select the group and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected group. 
+- In the EAC, select the group and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif) to view the property or feature that you changed. Depending on the property that you changed, it might be displayed in the Details pane for the selected group. 
     
-- In the Shell, use the **Get-DynamicDistributionGroup** cmdlet to verify the changes. One advantage of using the Shell is that you can view multiple properties for multiple groups. In the first example, you would run the following command to verify the new values. 
+- In Exchange Online PowerShell, use the **Get-DynamicDistributionGroup** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple groups. In the first example, you would run the following command to verify the new values. 
     
   ```
-  Get-DynamicDistributionGroup -ResultSize unlimited | fl Name,HiddenFromAddressListsEnabled,MaxReceiveSize,ModerationEnabled,ModeratedBy
+  Get-DynamicDistributionGroup -ResultSize unlimited | Format-List Name,HiddenFromAddressListsEnabled,MaxReceiveSize,ModerationEnabled,ModeratedBy
   ```
 
     For the example above where the message limits were changed, run this command.
     
   ```
-  Get-Mailbox -OrganizationalUnit "Marketing" | fl Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
+  Get-Mailbox -OrganizationalUnit "Marketing" | Format-List Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
   ```
 
 

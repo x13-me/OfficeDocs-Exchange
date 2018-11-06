@@ -1,5 +1,5 @@
 ---
-title: "Exchange Server updates: build numbers and release dates"
+title: "Exchange Server build numbers and release dates"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -12,7 +12,7 @@ ms.assetid: 6a8091d0-4f19-4ae7-9e44-fd1c9f5fbe19
 description: "Summary: Learn about build numbers and release dates for current and past versions of Exchange Server."
 ---
 
-# Exchange Server updates: build numbers and release dates
+# Exchange Server build numbers and release dates
 
 You can use the information in this topic to verify the version of Exchange that is running in your organization.
 
@@ -49,7 +49,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
-|[Exchange Server 2016 CU11](https://www.microsoft.com/en-us/download/details.aspx?id=57388)|October 16, 2018|15.1.1591.10|15.01.1591.010|
+|[Exchange Server 2016 CU11](https://www.microsoft.com/download/details.aspx?id=57388)|October 16, 2018|15.1.1591.10|15.01.1591.010|
 |[Exchange Server 2016 CU10](https://go.microsoft.com/fwlink/p/?LinkId=2002912)|June 19, 2018|15.1.1531.3|15.01.1531.003|
 |Exchange Server 2016 CU9|March 20, 2018|15.1.1466.3|15.01.1466.003|
 |Exchange Server 2016 CU8|December 19, 2017|15.1.1415.2|15.01.1415.002|
@@ -77,7 +77,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
 |[Exchange Server 2013 CU21](https://go.microsoft.com/fwlink/p/?LinkId=2003011)|June 19, 2018|15.0.1395.4|15.00.1395.004|
-|[Exchange Server 2013 CU20](https://go.microsoft.com/fwlink/p/?LinkId=870406)|March 20, 2018|15.0.1367.3|15.00.1367.003|
+|Exchange Server 2013 CU20|March 20, 2018|15.0.1367.3|15.00.1367.003|
 |Exchange Server 2013 CU19|December 19, 2017|15.0.1365.1|15.00.1365.001|
 |Exchange Server 2013 CU18|September 19, 2017|15.0.1347.2|15.00.1347.002|
 |Exchange Server 2013 CU17|June 27, 2017|15.0.1320.4|15.00.1320.004|
@@ -113,8 +113,10 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
+|[Update Rollup 24 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57306)|September 5, 2018|14.3.419.0|14.03.0419.000|
+|[Update Rollup 23 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57219)|August 13, 2018|14.3.417.1|14.03.0417.001|
 |[Update Rollup 22 for Exchange Server 2010 SP3](https://go.microsoft.com/fwlink/p/?LinkId=2003010)|June 19, 2018|14.3.411.0|14.03.0411.000|
-|[Update Rollup 21 for Exchange Server 2010 SP3](https://go.microsoft.com/fwlink/p/?LinkId=2003012)|May 7, 2018|14.3.399.2|14.03.0399.002|
+|Update Rollup 21 for Exchange Server 2010 SP3|May 7, 2018|14.3.399.2|14.03.0399.002|
 |Update Rollup 20 for Exchange Server 2010 SP3|March 5, 2018|14.3.389.1|14.03.0389.001|
 |Update Rollup 19 for Exchange Server 2010 SP3|December 19, 2017|14.3.382.0|14.03.0382.000|
 |Update Rollup 18 for Exchange Server 2010 SP3|July 11, 2017|14.3.361.1|14.03.0361.001|

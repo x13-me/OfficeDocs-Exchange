@@ -19,7 +19,7 @@ There are several things you should consider before you decide to delete a user 
 ## Soft-deleted user mailboxes
 <a name="BKMK_softdeleted"> </a>
 
-A soft-deleted user mailbox is a mailbox that has been deleted using the Office 365 admin center or the **Remove-Mailbox** cmdlet in the Exchange Management Shell, and has still been in the Azure active directory (Azure AD) recycle bin for less than 30 days. 
+A soft-deleted user mailbox is a mailbox that has been deleted using the Office 365 admin center or the **Remove-Mailbox** cmdlet in Exchange Online PowerShell, and has still been in the Azure active directory (Azure AD) recycle bin for less than 30 days. 
   
 A soft-deleted user mailbox is a mailbox that has been deleted in the following cases:
   
@@ -30,11 +30,11 @@ A soft-deleted user mailbox is a mailbox that has been deleted in the following 
 - The user mailbox's associated Azure active directory user account has been purged within the last 30 days; which is the retention length Exchange Online will keep the mailbox in a soft deleted state before it is permanently purged and unrecoverable.
     
 > [!NOTE]
-> If you run the Azure cmdlet  `Remove-MsolUser` with the  `-RemoveFromRecycleBin` parameter in order to remove a user from the Azure AD recycle bin, it will always put an existing Exchange Online mailbox associated with the Azure AD user in a soft-deleted state, as long as the user's license was not removed. However, if you remove the user's license prior to removing the user from the recycle bin, the user will not go into a soft-deleted user mailbox state. 
+> If you run the Azure cmdlet `Remove-MsolUser` with the `-RemoveFromRecycleBin` parameter in order to remove a user from the Azure AD recycle bin, it will always put an existing Exchange Online mailbox associated with the Azure AD user in a soft-deleted state, as long as the user's license was not removed. However, if you remove the user's license prior to removing the user from the recycle bin, the user will not go into a soft-deleted user mailbox state. 
   
 If in the 30 day time period a new Azure Active Directory user is synchronized from the original on-premises recipient account with the same ExchangeGuid or ArchiveGuid, this will result in an ExchangeGuid validation conflict error.
   
-Check out [Manage inactive mailboxes in Office 365](http://technet.microsoft.com/library/c60e9ae7-dd02-4c5f-9f5d-7626a9101094.aspx) for more info on putting a mailbox in a litigation hold. 
+Check out [Overview of inactive mailboxes in Office 365](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365) for more info about creating an inactive mailbox by placing a Litigation Hold on a mailbox before deleting it. 
   
 ## Hard-deleted user mailboxes
 <a name="BKMK_harddeleted"> </a>
@@ -45,7 +45,7 @@ A hard-deleted user mailbox is a mailbox that has been deleted in the following 
     
 - The user mailbox's associated Azure active directory user account has been hard-deleted in the Azure active directory. The user mailbox is now soft-deleted in Exchange Online and stays in the soft deleted state for 30 days. If in the 30 days time period a new Azure active directory user is synchronized from the original on-premises recipient account with the same ExchangeGuid or ArchiveGuid, and that new account is licensed for Exchange Online, this will result in a hard deletion of the original user mailbox. All mailbox content such as emails, contacts and files will be permanently deleted.
     
-- The soft deleted mailbox has been deleted using the **Remove-Mailbox -PermanentlyDelete** cmdlet and parameter in Exchange Management Shell. 
+- The soft deleted mailbox has been deleted using the **Remove-Mailbox** cmdlet with the _PermanentlyDelete_ parameter in Exchange Online PowerShell. 
     
 The above scenarios assume that the user mailbox isn't in any of the hold states, like Litigation hold or eDiscovery hold. If there is any type of hold on the user mailbox the mailbox can't be removed from Exchange Online. For all mail user recipient types, Litigation hold or eDiscovery hold are ignored and have no impact on the mail users hard-deleted or soft-delete behavior. The mail user object can't be deleted if there is a journal mailbox associated You can disable journaling on the mail user by using the **Disable-JournalArchiving** cmdlet. 
   
@@ -58,13 +58,13 @@ When you delete an Office 365 user account, the corresponding Exchange Online ma
   
 To delete an Office 365 work or school account, see [Delete or restore users](https://go.microsoft.com/fwlink/p/?LinkId=279162).
   
-### Use the Exchange Management Shell to delete a mailbox
+### Use Exchange Online PowerShell to delete a mailbox
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Recipient Provisioning Permissions" section in the [Recipients permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Recipient Provisioning Permissions" section in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
     
 - To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
-When you delete an Exchange Online mailbox using the Exchange Management Shell, the corresponding Office 365 user is deleted and removed from the list of users in the Office 365 admin center. The user will still be recoverable for 30 days. After the 30 days time limit, the user is permanently deleted.
+When you delete an Exchange Online mailbox using Exchange Online PowerShell, the corresponding Office 365 user is deleted and removed from the list of users in the Office 365 admin center. The user will still be recoverable for 30 days. After the 30 days time limit, the user is permanently deleted.
   
 This example deletes an Exchange Online mailbox and the corresponding Office 365 user account for Walter Harp.
   
@@ -88,11 +88,11 @@ To verify that you've successfully deleted an Exchange Online mailbox, do one of
   
 - In the EAC, navigate to **Recipients** \> **Mailboxes**. The deleted mailbox is removed from the mailbox list.
     
-    Click **Refresh**![Refresh Icon](../media/ITPro_EAC_RefreshIcon.gif) if the deleted mailbox is still displayed. 
+    Click **Refresh** ![Refresh Icon](../media/ITPro_EAC_RefreshIcon.gif) if the deleted mailbox is still displayed. 
     
 - If you deleted the Office 365 user account, verify that the user account isn't listed on the **Active users** page in the Office 365 admin center, and that it's listed on the **Deleted Users** page. 
     
-- In the Exchange Management Shell, use the following syntax to verify that the mailbox has been deleted.
+- In Exchange Online PowerShell, use the following syntax to verify that the mailbox has been deleted.
     
   ```
   Get-Mailbox <identity>
@@ -113,11 +113,11 @@ If the mailbox was deleted by deleting the corresponding Office 365 user account
   
 To restore an Office 365 user account, see [Delete or restore users](https://go.microsoft.com/fwlink/p/?LinkId=279162).
   
-### Use Exchange PowerShell to restore a user account
+### Use Exchange Online PowerShell to restore a user account
 
 You can recover soft-deleted mailboxes using the PowerShell cmdlet below. The cmdlet example below restores the mailbox for Allie Bellew.
   
-1. [Connect to Exchange PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=785881)
+1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=785881)
     
 2. Run the **Undo-SoftDeletedMailbox** cmdlet. 
     
@@ -132,9 +132,9 @@ To verify that you've successfully restored a mailbox, do one of the following:
   
 - In the EAC, navigate to **Recipients** \> **Mailboxes**. The restored mailbox is displayed in the mailbox list.
     
-    Click **Refresh**![Refresh Icon](../media/ITPro_EAC_RefreshIcon.gif) if the mailbox isn't displayed at first. 
+    Click **Refresh** ![Refresh Icon](../media/ITPro_EAC_RefreshIcon.gif) if the mailbox isn't displayed at first. 
     
-- In the Exchange Management Shell, use the following syntax to verify that the mailbox was restored.
+- In Exchange Online PowerShell, use the following syntax to verify that the mailbox was restored.
     
   ```
   Get-Mailbox <Identity>
@@ -145,7 +145,7 @@ To verify that you've successfully restored a mailbox, do one of the following:
 
 For user mailboxes in a hybrid scenario, if the mailbox has been soft-deleted and the Azure active directory user that was associated with the mailbox has been hard-deleted from Azure Active Directory, you can use **New-MailboxRestoreRequest** to recover the mailbox. Read [Configure Office 365 Groups with on-premises Exchange hybrid](https://go.microsoft.com/fwlink/p/?LinkID=809310) for more info. The procedures in this section explain how to restore the mailbox for a soft-deleted user. 
   
-1. [Connect to Exchange PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=785881)
+1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=785881)
     
 2. Run the following cmdlet to identify the soft-deleted mailbox that you want to restore.
     
@@ -175,9 +175,9 @@ For info on removing a license from a user in Office 365 and Exchange Online, ch
 ## Additional information
 <a name="BKMK_harddeleted"> </a>
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 

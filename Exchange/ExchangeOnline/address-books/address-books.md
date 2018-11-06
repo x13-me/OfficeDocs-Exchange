@@ -16,15 +16,15 @@ description: "Exchange Online can deliver or route messages to any recipient tha
 
 Exchange Online can deliver or route messages to any recipient that has an email address. People, resources (such as a business device or a conference room), and groups can all have email addresses. Address books help you find the email address that you need and can be organized in multiple ways to suit your business. This topic helps Office 365 administrators who manage email address books for an organization. See [Key terminology](address-books.md#terms) for descriptions of address book features. 
   
-For help with everyday email tasks, such as organizing your contacts in Outlook, check the [Office 365 Learning Center](https://go.microsoft.com/fwlink/?LinkId=615390). You can find help including:
+For help with everyday email tasks, such as organizing your contacts in Outlook, check the [Office 365 Learning Center](https://go.microsoft.com/fwlink/p/?LinkId=615390). You can find help including:
   
-- [Add an email contact](https://go.microsoft.com/fwlink/?LinkId=615396)
+- [Add an email contact](https://go.microsoft.com/fwlink/p/?LinkId=615396)
     
-- [Import your contacts](https://go.microsoft.com/fwlink/?LinkId=615393)
+- [Import your contacts](https://go.microsoft.com/fwlink/p/?LinkId=615393)
     
-- [Create a contact group](https://go.microsoft.com/fwlink/?LinkId=615370)
+- [Create a contact group](https://go.microsoft.com/fwlink/p/?LinkId=615370)
     
-- [Send an email message to a contact group](https://go.microsoft.com/fwlink/?LinkId=615391)
+- [Send an email message to a contact group](https://go.microsoft.com/fwlink/p/?LinkId=615391)
     
 ## Key terminology
 <a name="terms"> </a>

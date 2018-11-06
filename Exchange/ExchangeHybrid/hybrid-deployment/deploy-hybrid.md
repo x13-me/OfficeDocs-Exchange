@@ -54,7 +54,7 @@ Learn more about hybrid deployments at [Exchange Server Hybrid Deployments](../e
     
 - We strongly recommend configuring single sign-on using Azure Active Directory Connect password synchronization. Single sign-on enables users to access both the on-premises and Exchange Online organizations with a single user name and password. Single sign-on also ensures that users aren't prompted for their credentials when accessing archived content in the Exchange Online organization when using Exchange Online Archiving. For more information about password synchronization, see [Azure AD Connect sync: Implement password synchronization](http://go.microsoft.com/fwlink/p/?LinkID=723513)
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
     
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 

@@ -44,19 +44,19 @@ By default, MWI is turned on for all users who are enabled for Unified Messaging
 ## MWI administration
 <a name="administration"> </a>
 
-MWI can be administered by configuring settings on two UM components: UM mailbox policies and UM IP gateways. For both UM components, you can enable or disable MWI notifications by using the **Set-UMMailboxPolicy** cmdlet or the **Set-UMIPgateway** cmdlet in the Exchange Management Shell. You can also configure the settings by using the Exchange admin center (EAC). You can view the status of MWI notifications by using the **Get-UMMailboxPolicy** cmdlet and the **Get-UMIPgateway** cmdlet in the Exchange Management Shell, or by viewing the settings in the EAC. 
+MWI can be administered by configuring settings on two UM components: UM mailbox policies and UM IP gateways. For both UM components, you can enable or disable MWI notifications by using the **Set-UMMailboxPolicy** cmdlet or the **Set-UMIPgateway** cmdlet in Exchange Online PowerShell. You can also configure the settings by using the Exchange admin center (EAC). You can view the status of MWI notifications by using the **Get-UMMailboxPolicy** cmdlet and the **Get-UMIPgateway** cmdlet in Exchange Online PowerShell, or by viewing the settings in the EAC. 
   
 ### UM mailbox policies and MWI
 
 You can create a UM mailbox policy to apply a common set of UM policy settings to a collection of UM-enabled mailboxes. For example, you can use a UM mailbox policy to apply PIN policy settings, dialing restrictions, and MWI notifications settings. If you enable or disable MWI on a UM mailbox policy, it will be enabled or disabled for all UM-enabled users who are linked with that UM mailbox policy. The MWI setting can also apply to a subset of the users who are linked with a UM dial plan. To learn more about UM mailbox policies, including how to enable or disable MWI for a group of UM-enabled users, see [UM mailbox policy procedures](../../voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures.md).
   
-You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Exchange Management Shell to configure the MWI setting, as shown in the following table. 
+You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in Exchange Online PowerShell to configure the MWI setting, as shown in the following table. 
   
 **Message Waiting Indicator setting on a UM mailbox policy**
 
 |**Shell parameter**|**Setting available in the EAC?**|**Description**|
 |:-----|:-----|:-----|
-| _AllowMessageWaitingIndicator_ <br/> |Yes  <br/> |The  _AllowMessageWaitingIndicator_ parameter specifies whether users who are linked with a UM mailbox policy can receive MWI notifications when they receive a new voice message. The default value is  `$true`.  <br/> When this setting is enabled, MWI notifications are sent to users who are linked with a single UM mailbox policy for calls taken by a UM IP gateway. This setting allows the UM IP gateway to receive and send SIP NOTIFY messages to UM-enabled users' phones or SIP endpoints.  <br/> |
+|_AllowMessageWaitingIndicator_|Yes|The _AllowMessageWaitingIndicator_ parameter specifies whether users who are linked with a UM mailbox policy can receive MWI notifications when they receive a new voice message. The default value is `$true`.  <br/> When this setting is enabled, MWI notifications are sent to users who are linked with a single UM mailbox policy for calls taken by a UM IP gateway. This setting allows the UM IP gateway to receive and send SIP NOTIFY messages to UM-enabled users' phones or SIP endpoints.|
    
 For more information about how to manage MWI settings on a UM mailbox policy, see the following topics:
   
@@ -66,19 +66,19 @@ For more information about how to manage MWI settings on a UM mailbox policy, se
     
 - [Disable Message Waiting Indicator (MWI) for users](disable-mwi-for-users.md)
     
-- [Set-UMMailboxPolicy](http://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx)
+- [Set-UMMailboxPolicy](https://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx)
     
 ### UM IP gateways and MWI
 
 If you disable MWI on a UM IP gateway, you'll disable MWI notifications for all users who connect to the VoIP gateway or IP PBX that's represented by the UM IP gateway. Disabling MWI on a single UM IP gateway that's linked to a UM dial plan can disable MWI notifications for all UM-enabled users associated with a single or multiple UM dial plans or a single or multiple UM mailbox policies. To learn more about UM mailbox policies, including how to enable or disable MWI for a group of UM-enabled users, see [Manage a UM mailbox policy](../../voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy.md).
   
-You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Exchange Management Shell to configure the MWI setting, as shown in the following table. 
+You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in Exchange Online PowerShell to configure the MWI setting, as shown in the following table. 
   
 **Message Waiting Indicator setting on a UM IP gateway**
 
 |**Shell parameter**|**Setting available in the EAC?**|**Description**|
 |:-----|:-----|:-----|
-| _MessageWaitingIndicatorAllowed_ <br/> |Yes  <br/> |The  _MessageWaitingIndicatorAllowed_ parameter specifies whether to enable the UM IP gateway to allow SIP NOTIFY messages to be sent to users associated with a UM dial plan. The default value is  `$true`.  <br/> When this setting is enabled, voice mail notifications can be sent to users for calls that are received by the UM IP gateway. This setting allows the UM IP gateway to send message-waiting notifications to UM-enabled users.  <br/> |
+|_MessageWaitingIndicatorAllowed_|Yes|The _MessageWaitingIndicatorAllowed_ parameter specifies whether to enable the UM IP gateway to allow SIP NOTIFY messages to be sent to users associated with a UM dial plan. The default value is `$true`.  <br/> When this setting is enabled, voice mail notifications can be sent to users for calls that are received by the UM IP gateway. This setting allows the UM IP gateway to send message-waiting notifications to UM-enabled users.|
    
 For more information about how to manage MWI settings, see the following topics:
   
@@ -88,7 +88,7 @@ For more information about how to manage MWI settings, see the following topics:
     
 - [Prevent Message Waiting Indicator (MWI) on a UM IP gateway](prevent-mwi-on-um-ip-gateway.md)
     
-- [Set-UMIPGateway](http://technet.microsoft.com/library/1c9ecde5-36ec-42af-be9e-10eacdc98458.aspx)
+- [Set-UMIPGateway](https://technet.microsoft.com/library/1c9ecde5-36ec-42af-be9e-10eacdc98458.aspx)
     
 ## Text message (SMS) notifications for voice mail messages and missed calls
 <a name="SMS"> </a>
@@ -100,48 +100,56 @@ A text message is sent to a user's mobile phone when a caller leaves a new voice
 > [!NOTE]
 > The text message that's sent to a user includes voice mail preview. 
   
-Text message notifications use different settings than the MWI settings on the UM IP gateway or the UM mailbox policy. Text message notifications for new voice mail and missed calls are configured on UM mailbox policies and UM mailboxes. You can enable or disable text message notifications by using the **Set-UMMailboxPolicy** cmdlet and the **Set-UMMailbox** cmdlet in the Exchange Management Shell. You can view the status of text message notifications by using the **Get-UMMailboxPolicy** cmdlet and the **Get-UMMailbox** cmdlet. It's not possible to configure text message notifications in the EAC. 
+Text message notifications use different settings than the MWI settings on the UM IP gateway or the UM mailbox policy. Text message notifications for new voice mail and missed calls are configured on UM mailbox policies and UM mailboxes. You can enable or disable text message notifications by using the **Set-UMMailboxPolicy** cmdlet and the **Set-UMMailbox** cmdlet in Exchange Online PowerShell. You can view the status of text message notifications by using the **Get-UMMailboxPolicy** cmdlet and the **Get-UMMailbox** cmdlet. It's not possible to configure text message notifications in the EAC. 
   
 The following table shows the parameter on a UM mailbox that must be configured for a user to receive text messages for voice mail and missed call notifications:
   
 **Text message notification settings on a user's mailbox**
 
-||||
+|**Parameter**|**Setting available in the EAC?**|**Description**|
 |:-----|:-----|:-----|
-| _UMSMSNotificationOption_ <br/> |No  <br/> |The  _UMSMSNotificationOption_ parameter specifies whether a UM-enabled user can receive text message notifications for voice mail only, for voice mail and missed calls, or isn't allowed to receive notifications. The values for this parameter are:  `VoiceMail`,  `VoiceMailAndMissedCalls`, and  `None`. The default value is  `None`.  <br/> |
+|_UMSMSNotificationOption_|No|Specifies whether a UM-enabled user can receive text message notifications for voice mail only, for voice mail and missed calls, or isn't allowed to receive notifications. The values for this parameter are: `VoiceMail`, `VoiceMailAndMissedCalls`, and `None`. The default value is `None`.|
    
 For more information about how to manage text message notification settings on a user's mailbox, see the following topics:
   
 - [Manage voice mail settings for a user](../../voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings.md)
     
-- [Set-UMMailbox](http://technet.microsoft.com/library/dd7b429d-53a8-46dd-b16b-3a8ca8424bbc.aspx)
+- [Set-UMMailbox](https://technet.microsoft.com/library/dd7b429d-53a8-46dd-b16b-3a8ca8424bbc.aspx)
     
 The following table shows the parameter on a UM mailbox policy that must be configured for a user to receive text messages for voice mail and missed call notifications:
   
 **Text message and missed call notification settings on a UM mailbox policy**
 
-|**Shell parameter**|**Setting available in the EAC?**|**Description**|
+|**Parameter**|**Setting available in the EAC?**|**Description**|
 |:-----|:-----|:-----|
-| _AllowSMSNotification_ <br/> |No  <br/> |The  _AllowSMSNotification_ parameter specifies whether UM-enabled users whose mailboxes are associated with the UM mailbox policy are allowed to receive text message notifications on their mobile phones. If this parameter is set to  `$true`, you must also use the **Set-UMMailbox** cmdlet and set the  _UMSMSNotificationOption_ parameter for the UM-enabled user to either  `voicemail` or  `VoiceMailAndMissedCalls`. The default value is  `$true`.  <br/> |
+|_AllowSMSNotification_|No|Specifies whether UM-enabled users whose mailboxes are associated with the UM mailbox policy are allowed to receive text message notifications on their mobile phones. If this parameter is set to `$true`, you must also use the **Set-UMMailbox** cmdlet and set the _UMSMSNotificationOption_ parameter for the UM-enabled user to either `VoiceMail` or `VoiceMailAndMissedCalls`. The default value is `$true`.|
    
 For more information about how to manage text message notification settings, see the following topics:
   
 - [Manage a UM mailbox policy](../../voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy.md)
     
-- [Set-UMMailboxPolicy](http://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx)
+- [Set-UMMailboxPolicy](https://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx)
     
 For text message notifications for voice mail and missed calls to work correctly, you must perform the following tasks: 
   
-1. Use either the EAC or the Exchange Management Shell to enable the user for UM and link them to the correct UM mailbox policy.
+1. Use either the EAC or Exchange Online PowerShell to enable the user for UM and link them to the correct UM mailbox policy.
     
-2. On the UM mailbox policy that's linked to the user, verify that the  _AllowSMSNotification_ parameter is set to  `$true`. To set the parameter to  `$true`, run the following command:  `Set-UMMailboxPolicy -id MyUMMailboxPolicy - AllowSMSNotification $true`.
+2. On the UM mailbox policy that's linked to the user, verify that the _AllowSMSNotification_ parameter is set to `$true`. To set the parameter to `$true`, run the following command:
+
+    ```
+    Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowSMSNotification $true
+    ```
     
-3. On the user's mailbox, enable text message notifications by setting the  _UMSMSNotificationOption_ parameter to  `VoiceMailAndMissedCalls` or  `VoiceMail`.
+3. On the user's mailbox, enable text message notifications by setting the _UMSMSNotificationOption_ parameter to `VoiceMailAndMissedCalls` or `VoiceMail`.
     
-4. Because the default setting is  `None`, you must run the following command from the Exchange Management Shell and set the text message notification option to either  `VoiceMailAndMissedCalls` or  `VoiceMail`. For example:  `Set-UMMailbox- -id MyUMMailbox -UMSMSNotificationOption VoiceMailAndMissedCalls`.
+4. Because the default setting is `None`, you must run the following command in Exchange Online PowerShell and set the text message notification option to either `VoiceMailAndMissedCalls` or `VoiceMail`. For example:
+
+    ```
+    Set-UMMailbox -Identity MyUMMailbox -UMSMSNotificationOption VoiceMailAndMissedCalls
+    ```
     
     > [!IMPORTANT]
-    > The  _AllowSMSNotification_ parameter on the UM mailbox policy and the  _UMSMSNotificationOption_ parameter on the user's mailbox must both be set to  `$true` for SMS notifications to work. 
+    > The _AllowSMSNotification_ parameter on the UM mailbox policy and the _UMSMSNotificationOption_ parameter on the user's mailbox must both be set to `$true` for SMS notifications to work. 
   
 In addition to your configuring the UM mailbox policy and the user's mailbox to enable text message notifications for new voice mail and missed calls, the user must enable and configure text message notifications when they sign in to Outlook Web App. To set up and configure text message notifications, the user must:
   
@@ -163,5 +171,3 @@ In addition to your configuring the UM mailbox policy and the user's mailbox to 
 7. Enter the passcode in the **Passcode** box, and then click **Finish**.
     
 8. After the user enables text message notifications, they can click **Set up voice mail notifications** on the **Text Messaging** page. They'll be taken back to the voice mail page, where they can scroll down to the **Notifications** section and set up text message notification options for missed calls and voice mail. 
-    
-

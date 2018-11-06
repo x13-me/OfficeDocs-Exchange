@@ -87,11 +87,11 @@ Before you migrate mailboxes to Office 365 by using a cutover migration, there a
   
 1. **Configure Outlook Anywhere on your on-premises Exchange Server** The email migration service uses Outlook Anywhere (also known as RPC over HTTP), to connect to your on-premises Exchange Server. Outlook Anywhere is automatically configured for Exchange 2013. For information about how to set up Outlook Anywhere for Exchange 2010, Exchange 2007, and Exchange 2003, see the following: 
     
-  - [Exchange 2010: Enable Outlook Anywhere](https://go.microsoft.com/fwlink/?LinkID=187249)
+  - [Exchange 2010: Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=187249)
     
-  - [Exchange 2007: How to Enable Outlook Anywhere](https://go.microsoft.com/fwlink/?LinkID=167210)
+  - [Exchange 2007: How to Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=167210)
     
-  - [How to configure Outlook Anywhere with Exchange 2003](https://go.microsoft.com/fwlink/?LinkID=167209)
+  - [How to configure Outlook Anywhere with Exchange 2003](https://go.microsoft.com/fwlink/p/?LinkID=167209)
     
 2. You must use a certificate issued by a trusted certification authority (CA) with your Outlook Anywhere configuration in order for Office 365 to run a cutover migration. For cutover migration you will to add the Outlook Anywhere and Autodiscover services to your certificate. For instructions on how to set up certificates, see:
     
@@ -105,7 +105,7 @@ Before you migrate mailboxes to Office 365 by using a cutover migration, there a
     
   - Use Outlook from outside your corporate network to connect to your on-premises Exchange mailbox.
     
-  - Use the [Microsoft Exchange Remote Connectivity Analyzer](https://technet.microsoft.com/en-us/library/dd439364%28v=exchg.80%29.aspx) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests. 
+  - Use the [Microsoft Exchange Remote Connectivity Analyzer](https://technet.microsoft.com/library/dd439364(v=exchg.80).aspx) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests. 
     
   - Wait for the connection to automatically be tested when you connect Office 365 to your email system later in this procedure. 
     
@@ -163,21 +163,21 @@ A migration endpoint contains the settings and credentials needed to connect the
     
 2. In the Exchange admin center, go to **Recipients** \> **Migration**.
     
-3. Choose **More**![More icon](media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
+3. Choose **More** ![More icon](media/148718eb-ebbd-4aa5-99bb-bcf5a6d7d942.gif) \> **Migration endpoints**.
     
     ![Select Migration endpoint.](media/474a2e9a-a7f1-4657-8a09-eeec45e106f5.png)
   
-4. On the **Migration endpoints** page, choose **New**![New icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
+4. On the **Migration endpoints** page, choose **New** ![New icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
     
 5. On the **Select the migration endpoint type** page, choose **Outlook Anywhere** \> **Next**.
     
 6. On the **Enter on-premises account credentials** page, enter information in the following boxes: 
     
-  - **Email address** Type the  *email address*  of any user in the on-premises Exchange organization that will be migrated. Office 365 will test the connectivity to this user's mailbox. 
+  - **Email address** Type the *email address*  of any user in the on-premises Exchange organization that will be migrated. Office 365 will test the connectivity to this user's mailbox. 
     
-  - **Account with privileges** Type the  *user name*  (domain\user name format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address. 
+  - **Account with privileges** Type the *username*  (domain\username format or an email address) for an account that has the necessary administrative permissions in the on-premises organization. Office 365 will use this account to detect the migration endpoint and to test the permissions assigned to this account by attempting to access the mailbox with the specified email address. 
     
-  - **Password of account with privileges** Type the  *password*  for the account with privileges that is the administrator account. 
+  - **Password of account with privileges** Type the *password*  for the account with privileges that is the administrator account. 
     
 7. Choose **Next** and do one of the following: 
     
@@ -187,11 +187,11 @@ A migration endpoint contains the settings and credentials needed to connect the
   
   - If the test connection to the source server isn't successful, provide the following information:
     
-  - **Exchange server** Type the  *fully qualified domain name*  (FQDN) for the on-premises Exchange Server. This is the host name for your Mailbox server. For example, EXCH-SRV-01.corp.contoso.com. 
+  - **Exchange server** Type the *fully qualified domain name*  (FQDN) for the on-premises Exchange Server. This is the host name for your Mailbox server. For example, EXCH-SRV-01.corp.contoso.com. 
     
-  - **RPC proxy server** Type the  *FQDN*  for the RPC proxy server for Outlook Anywhere. Typically, the proxy server is the same as your Outlook Web App URL. For example, mail.contoso.com, which is also the URL for the proxy server that Outlook uses to connect to an Exchange Server 
+  - **RPC proxy server** Type the *FQDN*  for the RPC proxy server for Outlook Anywhere. Typically, the proxy server is the same as your Outlook Web App URL. For example, mail.contoso.com, which is also the URL for the proxy server that Outlook uses to connect to an Exchange Server 
     
-8. On the **Enter general information** page, type a  *Migration endpoint name*  , for example, Test5-endpoint. Leave the other two boxes blank to use the default values.
+8. On the **Enter general information** page, type a *Migration endpoint name*, for example, Test5-endpoint. Leave the other two boxes blank to use the default values.
     
     ![Migration endpoint name.](media/990cd22d-748c-477d-b3f8-66f30b256475.jpg)
   
@@ -205,7 +205,7 @@ In a cutover migration, on-premises mailboxes are migrated to Office 365 in a si
   
 1. In the Exchange admin center, go to **Recipients** \> **Migration**.
     
-2. Choose **New**![New icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
+2. Choose **New** ![New icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Migrate to Exchange Online**.
     
     ![Select Migrate to Exchange Online](media/d5af665e-498d-4f18-8761-fc69897b389d.png)
   
@@ -215,7 +215,7 @@ In a cutover migration, on-premises mailboxes are migrated to Office 365 in a si
     
     ![New migration batch with confirmed endpoint.](media/1c7ff17e-6754-4c98-8b29-5a479239df13.JPG)
   
-5. On the **Move configuration** page, type the  *name*  (cannot contain spaces or special characters) of the migration batch, and then choose **next**. The batch name is displayed in the list of migration batches on the **Migration** page after you create the migration batch. 
+5. On the **Move configuration** page, type the *name*  (cannot contain spaces or special characters) of the migration batch, and then choose **next**. The batch name is displayed in the list of migration batches on the **Migration** page after you create the migration batch. 
     
 6. On the **Start the batch** page, choose one of the following: 
     
@@ -263,7 +263,7 @@ If you need some help configuring your DNS settings, see [Create DNS records for
 
 Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your source email system. Now that the email migration to Office 365 is complete, it's time to point your MX record at Office 365. This helps make sure that email is delivered to your Office 365 mailboxes. Moving the MX record will also let you turn off your old email system when you're ready. 
   
-For many DNS providers, there are specific instructions to change your MX record. If your DNS provider isn't included, or if you want to get a sense of the general directions, [general MX record instructions](https://go.microsoft.com/fwlink/?LinkId=397449) are provided as well. 
+For many DNS providers, there are specific instructions to change your MX record. If your DNS provider isn't included, or if you want to get a sense of the general directions, [general MX record instructions](https://go.microsoft.com/fwlink/p/?LinkId=397449) are provided as well. 
   
 It can take up to 72 hours for the email systems of your customers and partners to recognize the changed MX record. Wait at least 72 hours before you proceed to the next task: Delete the cutover migration batch.
   
@@ -302,7 +302,7 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
     If you keep your Exchange Server, you should also make sure that Autodiscover DNS CNAME record has to point to Office 365 in both internal and external DNS after the migration so that the Outlook client will to connect to the correct mailbox.
     
     > [!NOTE]
-    >  In Exchange 2007, Exchange 2010, and Exchange 2013 you should also set  `Set-ClientAccessServer AutodiscoverInternalConnectionURI` to  `Null`. 
+    >  In Exchange 2007, Exchange 2010, and Exchange 2013 you should also set `Set-ClientAccessServer AutodiscoverInternalConnectionURI` to `Null`. 
   
     Office 365 uses a CNAME record to implement the Autodiscover service for Outlook and mobile clients. The Autodiscover CNAME record must contain the following information:
     
@@ -316,11 +316,11 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
     
     For more information, see the following:
     
-  - [Modify or Remove Exchange 2010](https://go.microsoft.com/fwlink/?LinkId=217936)
+  - [Modify or Remove Exchange 2010](https://go.microsoft.com/fwlink/p/?LinkId=217936)
     
-  - [How to Remove an Exchange 2007 Organization](https://go.microsoft.com/fwlink/?LinkID=100485)
+  - [How to Remove an Exchange 2007 Organization](https://go.microsoft.com/fwlink/p/?LinkID=100485)
     
-  - [How to Uninstall Exchange Server 2003](https://go.microsoft.com/fwlink/?LinkID=56561)
+  - [How to Uninstall Exchange Server 2003](https://go.microsoft.com/fwlink/p/?LinkID=56561)
     
     > [!NOTE]
     > Decommissioning Exchange can have unintended consequences. Before decommissioning your on-premises Exchange organization, we recommend that you contact Microsoft Support. 

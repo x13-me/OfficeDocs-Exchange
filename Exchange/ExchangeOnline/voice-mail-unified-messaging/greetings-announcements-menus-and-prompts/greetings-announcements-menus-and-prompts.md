@@ -27,9 +27,9 @@ The following table summarizes the prompts and greetings used with UM dial plans
 
 |**Prompts and greetings**|**Description**|
 |:-----|:-----|
-|System prompts  <br/> |Must not be modified.  <br/> |
-|Welcome greeting  <br/> |The default welcome greeting is a system prompt that is played by default. However, you can use a customized greeting file that you create.  <br/> |
-|Informational announcement  <br/> |By default, informational announcements are disabled. If you enable an informational announcement, you must specify a customized greeting file.  <br/> |
+|System prompts|Must not be modified.|
+|Welcome greeting|The default welcome greeting is a system prompt that is played by default. However, you can use a customized greeting file that you create.|
+|Informational announcement|By default, informational announcements are disabled. If you enable an informational announcement, you must specify a customized greeting file.|
    
 The following table summarizes the prompts and greetings used with UM auto attendants.
   
@@ -37,12 +37,12 @@ The following table summarizes the prompts and greetings used with UM auto atten
 
 |**Prompts and greetings**|**Description**|
 |:-----|:-----|
-|System prompts  <br/> |Must not be modified.  <br/> |
-|Business hours menu prompts  <br/> |By default, business hours menu prompts are enabled and a system prompt is played. However, you can use a customized greeting file that you create.  <br/> |
-|Non-business hours menu prompts  <br/> |By default, non-business hours menu prompts are enabled and a system prompt is played. However, you can use a customized greeting file that you create.  <br/> |
-|Business hours greeting  <br/> |By default, a business hours greeting is enabled and a system prompt is played. However, you can use a customized greeting file that you create. This is also known as a welcome greeting.  <br/> |
-|Non-business hours greeting  <br/> |By default, a non-business hours greeting is enabled and a system prompt is played. However, you can use a customized greeting file that you create. This is also known as a welcome greeting.  <br/> |
-|Informational announcement  <br/> |By default, informational announcements are disabled. If you enable an informational announcement, you must specify a customized greeting file.  <br/> |
+|System prompts|Must not be modified.|
+|Business hours menu prompts|By default, business hours menu prompts are enabled and a system prompt is played. However, you can use a customized greeting file that you create.|
+|Non-business hours menu prompts|By default, non-business hours menu prompts are enabled and a system prompt is played. However, you can use a customized greeting file that you create.|
+|Business hours greeting|By default, a business hours greeting is enabled and a system prompt is played. However, you can use a customized greeting file that you create. This is also known as a welcome greeting.|
+|Non-business hours greeting|By default, a non-business hours greeting is enabled and a system prompt is played. However, you can use a customized greeting file that you create. This is also known as a welcome greeting.|
+|Informational announcement|By default, informational announcements are disabled. If you enable an informational announcement, you must specify a customized greeting file.|
    
 ## System prompts
 <a name="systemprompts"> </a>
@@ -77,8 +77,8 @@ The following table describes the UM dial plan greetings and informational annou
 
 |**Greeting**|**Default example**|**Customized example**|
 |:-----|:-----|:-----|
-|Welcome greeting  <br/> |"Welcome, you are connected to Microsoft Exchange."  <br/> |"Welcome to Outlook Voice Access for Woodgrove Bank."  <br/> |
-|Informational announcement  <br/> |By default, an informational announcement isn't configured.  <br/> |"By using this system you agree to adhere to all corporate policies when you are accessing this system."  <br/> |
+|Welcome greeting|"Welcome, you are connected to Microsoft Exchange."|"Welcome to Outlook Voice Access for Woodgrove Bank."|
+|Informational announcement|By default, an informational announcement isn't configured.|"By using this system you agree to adhere to all corporate policies when you are accessing this system."|
    
 When you are customizing and configuring greetings and announcements, make sure the language setting configured on the UM dial plan is the same as the language of the custom prompts you create. If not, a caller may hear a message or greeting in one language and another message or greeting in a different language.
   
@@ -97,11 +97,11 @@ The following table describes the UM auto attendant greetings and informational 
 
 |**Greeting**|**Default example**|**Customized example**|
 |:-----|:-----|:-----|
-|Business hours greeting  <br/> |"Welcome to the Microsoft Exchange auto attendant."  <br/> |"Thank you for calling Woodgrove Bank."  <br/> |
-|Non-business hours greeting  <br/> |No default non-business hours greeting is played until you configure the business hours for the auto attendant. However, the business hours greeting is played for callers during all times of the day.  <br/> |"You have reached Woodgrove Bank after business hours. Our business hours are from 8:00 A.M. until 5:00 P.M., Monday through Friday."  <br/> |
-|Informational announcement  <br/> |By default, informational announcements aren't configured.  <br/> |"Calls may be monitored for training purposes."  <br/> |
-|Business hours main menu prompt  <br/> |No default business hours main menu prompt will be played until you configure key mappings on the auto attendant.  <br/> |"For technical support, press or say 1. For corporate offices and administration, press or say 2. For sales, press or say 3."  <br/> |
-|Non-business hours main menu prompt  <br/> |No default non-business hours main menu prompt will be played until you configure key mappings and the business hours schedule on the auto attendant.  <br/> |"Your call is very important to us. However, you have reached Woodgrove Bank after business hours. If you want to leave a message, please press or say 1, and we will return your call as soon as possible."  <br/> |
+|Business hours greeting|"Welcome to the Microsoft Exchange auto attendant."|"Thank you for calling Woodgrove Bank."|
+|Non-business hours greeting|No default non-business hours greeting is played until you configure the business hours for the auto attendant. However, the business hours greeting is played for callers during all times of the day.|"You have reached Woodgrove Bank after business hours. Our business hours are from 8:00 A.M. until 5:00 P.M., Monday through Friday."|
+|Informational announcement|By default, informational announcements aren't configured.|"Calls may be monitored for training purposes."|
+|Business hours main menu prompt|No default business hours main menu prompt will be played until you configure key mappings on the auto attendant.|"For technical support, press or say 1. For corporate offices and administration, press or say 2. For sales, press or say 3."|
+|Non-business hours main menu prompt|No default non-business hours main menu prompt will be played until you configure key mappings and the business hours schedule on the auto attendant.|"Your call is very important to us. However, you have reached Woodgrove Bank after business hours. If you want to leave a message, please press or say 1, and we will return your call as soon as possible."|
    
 As with UM dial plans, make sure the language setting configured on the UM auto attendant is the same as the language of the custom greetings you create and is set to the same language as the UM dial plan. If not, a caller may hear a message or greeting in one language and another message or greeting in a different language.
   

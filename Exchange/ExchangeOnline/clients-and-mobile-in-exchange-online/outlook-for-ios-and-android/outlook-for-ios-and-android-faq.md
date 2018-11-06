@@ -81,26 +81,34 @@ Yes, Outlook for iOS and Android supports certificate-based authentication for m
     
 - [Certificate-based authentication on Android](https://go.microsoft.com/fwlink/p/?linkid=849808)
 
-### Q: What does background synchronization enable? I notice that when I launch the app with it enabled, I still have to wait for messages to download, even after I've received new mail notifications for them.
+### Q: What does background synchronization enable? I notice that when I launch the app with it enabled, I still have to wait for messages to download, even after I've received new mail notifications for them; and sometimes, I get reminders for appointments that had been cancelled.
 
-Background synchronization enables new message notifications, badge count updates, and background synchronization of mailbox information for Outlook for iOS and Android. If background synchronization is disabled by the user in iOS or Android settings, then the user must launch the app and keep it in the foreground in order to synchronize mailbox information. 
-  
+Background synchronization enables new message notifications, calendar reminders, badge count updates, and background synchronization of mailbox and calendar information for Outlook for iOS and Android. 
+
+If background synchronization is disabled by the user in the mobile operating system's settings, then the user must launch the app and keep it in the foreground in order to synchronize messages and have an up-to-date calendar. 
+
 Background synchronization in Outlook for iOS and Android can also be disabled by the following actions:
   
 - Force quitting the app (such as by double-tapping the home button and swiping the app to dismiss).
     
 - Restarting the mobile device.
     
-- Not opening the app for a given period of time. iOS will automatically terminate Outlook.
+- Not opening the app for a given period of time. iOS will [automatically freeze third-party apps](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html), like Outlook, based on usage patterns. Android [doze mode and app standby](https://developer.android.com/training/monitoring-device-state/doze-standby) features can also prevent background updates to the app.
+
+If the mobile operating system prevents background synchronization, users will experience the following:
+
+- New mail notifications will continue to be delivered, however, upon launching the app, the new messages will have to be downloaded.
+
+- Calendar reminders will fire for appointments that have been cancelled because the app was unable to download and process the meeting cancellation.
     
 > [!NOTE]
-> Apple allows its native Mail app to do background refreshes without any of the above restrictions. Therefore, users may notice a difference in the background synchronization experience between the apps. However, this also results in improved battery life and less data consumption. 
+> Apple allows its native Mail and Calendar apps to do background refreshes without any restrictions. Therefore, users may notice a difference in the background synchronization experience between the apps. However, this also results in improved battery life and less data consumption with Outlook for iOS. 
   
 ### Q: Does each user's instance of Outlook for iOS and Android have a unique device ID in the Office 365-based architecture? How is the device ID generated and is this same device ID used in Intune?
 
-Upon initial account login, Outlook for iOS and Android establishes a connection to the Office 365-based architecture. A unique device ID is generated, and this device ID is what appears in Active Directory device records (which can be retrieved with cmdlets such as  `Get-MobileDevice` in Exchange Online Powershell) and which appears in HTTP request headers. 
+Upon initial account login, Outlook for iOS and Android establishes a connection to the Office 365-based architecture. A unique device ID is generated, and this device ID is what appears in Active Directory device records (which can be retrieved with cmdlets such as `Get-MobileDevice` in Exchange Online Powershell) and which appears in HTTP request headers. 
   
-Intune uses a different device ID. The basic workflow for how Intune assigns a device ID is described in [App-based conditional access with Intune](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune). In Intune, the device ID is assigned when the device workplace joins for all device-conditional access scenarios. This is an AAD-generated unique ID for the device. Intune uses that unique ID when sending compliance information, and ADAL uses that unique ID when authenticating to services.
+Intune uses a different device ID. The basic workflow for how Intune assigns a device ID is described in [App-based conditional access with Intune](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune). In Intune, the device ID is assigned when the device workplace joins for all device-conditional access scenarios. This is an AAD-generated unique ID for the device. Intune uses that unique ID when sending compliance information, and ADAL uses that unique ID when authenticating to services.
   
 ### Q: Does Outlook for iOS and Android support RMS?
 
@@ -137,10 +145,10 @@ Yes, if you want to troubleshoot and resolve the issue, or if you want to inform
 Yes, execute the following command from Exchange Online PowerShell:
   
 ```
-Get-MobileDevice | where {$_.DeviceModel -eq "Outlook for iOS and Android"} | FL FriendlyName,DeviceID,DeviceOS,ClientType
+Get-MobileDevice | where {$_.DeviceModel -eq "Outlook for iOS and Android"} | Format-List FriendlyName,DeviceID,DeviceOS,ClientType
 ```
 
-The  `ClientType` property indicates whether the client is using the Office 365-based architecture (REST) or the AWS-based architecture (EAS). 
+The `ClientType` property indicates whether the client is using the Office 365-based architecture (REST) or the AWS-based architecture (EAS). 
   
 Alternatively, a user can login to Outlook on the web and, from within **Options**, select **Mobile Devices** to view the details of a mobile device. This would look similar to the following: 
   
@@ -160,11 +168,11 @@ For more information, see [Securing Outlook for iOS and Android in Exchange Onli
   
 ### Q: Will Outlook for iOS and Android support third-party EMM or MDM solutions?
 
-Outlook for iOS and Android supports Intune for device and application management. Third-party MDM providers can deploy the Outlook app the same way they would deploy any iOS or Android app, using their existing tools. They can also apply device management controls like device PIN, device encryption, wipe, and more, all of which are important for a secure email experience, but all of which are also completely independent of Outlook for iOS and Android. In order to manage and protect corporate data within the app (such as restricting actions with corporate data like cut, copy, paste, and "save as"), customers will need to use Microsoft Intune. For detailed technical information, please see [Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) and [Intune's App Protection](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) documentation. 
+Outlook for iOS and Android supports Intune for device and application management. Third-party MDM providers can deploy the Outlook app the same way they would deploy any iOS or Android app, using their existing tools. They can also apply device management controls like device PIN, device encryption, wipe, and more, all of which are important for a secure email experience, but all of which are also completely independent of Outlook for iOS and Android. In order to manage and protect corporate data within the app (such as restricting actions with corporate data like cut, copy, paste, and "save as"), customers will need to use Microsoft Intune. For detailed technical information, please see [Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) and [Intune's App Protection](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) documentation. 
   
 ### Q: Is a license required to use Outlook for iOS and Android?
 
-Outlook for iOS and Android is free for consumer usage from the iOS App store and from Google Play. However, commercial users require an Office 365 subscription that includes the Office desktop applications: Business, Business Premium, Enterprise E3, E5, and ProPlus, or the corresponding versions of those plans for Government or Education. Commercial users with the following subscriptions are allowed to use the Outlook mobile app on devices with integrated screens 10.1” diagonally or less: Office 365 Enterprise E1, Office 365 F1, Office 365 Business Essentials, Office 365 A1, and if you only have an Exchange Online license (without Office). If you only have an Exchange on-premises (Exchange Server) license, you are not licensed to use the app.
+Outlook for iOS and Android is free for consumer usage from the iOS App store and from Google Play. However, commercial users require an Office 365 subscription that includes the Office desktop applications: Business, Business Premium, Enterprise E3, E5, and ProPlus, or the corresponding versions of those plans for Government or Education. Commercial users with the following subscriptions are allowed to use the Outlook mobile app on devices with integrated screens 10.1" diagonally or less: Office 365 Enterprise E1, Office 365 F1, Office 365 Business Essentials, Office 365 A1, and if you only have an Exchange Online license (without Office). If you only have an Exchange on-premises (Exchange Server) license, you are not licensed to use the app.
   
 ## Common questions from end-users
 

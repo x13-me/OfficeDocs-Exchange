@@ -25,22 +25,22 @@ For more information, see [Discovery mailboxes](in-place-ediscovery.md#discmbxs)
 
 - Estimated time to complete: 3 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Creating discovery mailboxes" entry in [Messaging policy and compliance permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Creating discovery mailboxes" entry in [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
     
 - Discovery mailboxes have a mailbox storage quota of 50 gigabytes (GB). This storage quota can't be increased.
     
-- You can't use the EAC to create a discovery mailbox or assign permissions to access it. You have to use the Shell. In Office 365, use Remote PowerShell connected to your Exchange Online organization.
+- You can't use the EAC to create a discovery mailbox or assign permissions to access it. You have to use Exchange Online PowerShell. In Office 365, use Remote PowerShell connected to your Exchange Online organization.
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## What do you want to do?
 
 ### (Optional) Step 1: Connect to Exchange Online using remote PowerShell
 
-You only need to perform this step if you have an Exchange Online or Office 365 organization. If you have an Exchange Server organization, go to the next step and run the command in the Exchange Management Shell.
+You only need to perform this step if you have an Exchange Online or Office 365 organization. If you have an Exchange Server organization, go to the next step and run the command in Exchange Online PowerShell.
   
 1. On your local computer, open Windows PowerShell and run the following command.
     
@@ -48,7 +48,7 @@ You only need to perform this step if you have an Exchange Online or Office 365 
   $UserCredential = Get-Credential
   ```
 
-    In the **Windows PowerShell Credential Request** dialog box, type user name and password for an Office 365 global admin account, and then click **OK**.
+    In the **Windows PowerShell Credential Request** dialog box, type username and password for an Office 365 global admin account, and then click **OK**.
     
 2. Run the following command.
     
@@ -78,7 +78,7 @@ This example creates a discovery mailbox named SearchResults.
 New-Mailbox -Name SearchResults -Discovery 
 ```
 
-For detailed syntax and parameter information, see [new-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
+For detailed syntax and parameter information, see [new-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
   
 To display a list of all discovery mailboxes in an Exchange organization, run the following command:
   
@@ -86,7 +86,7 @@ To display a list of all discovery mailboxes in an Exchange organization, run th
 Get-Mailbox -Resultsize unlimited -Filter {RecipientTypeDetails -eq "DiscoveryMailbox"}
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
+For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
   
 ### Step 3: Assign permissions to a discovery mailbox
 
@@ -94,17 +94,15 @@ You have to explicitly assign users or groups the necessary permissions to open 
   
 ```
 Add-MailboxPermission <Name of the discovery mailbox> -User <Name of user or group> -AccessRights FullAccess -InheritanceType all
-
 ```
 
 For example, the following command assigns the Full Access permission to the Litigation Managers group, so members of the group can open the Fabrikam Litigation discovery mailbox.
   
 ```
 Add-MailboxPermission "Fabrikam Litigation" -User "Litigation Managers" -AccessRights FullAccess -InheritanceType all
-
 ```
 
-For detailed syntax and parameter information, see [Add-MailboxPermission](http://technet.microsoft.com/library/a9aacbf5-5e6c-47ef-95d6-e24547e95d01.aspx).
+For detailed syntax and parameter information, see [Add-MailboxPermission](https://technet.microsoft.com/library/a9aacbf5-5e6c-47ef-95d6-e24547e95d01.aspx).
   
 ## More information
 

@@ -18,20 +18,20 @@ description: "After you create a Unified Messaging (UM) dial plan, you can view 
 
 After you create a Unified Messaging (UM) dial plan, you can view and configure a variety of settings. For example, you can configure the level of Voice over IP (VoIP) security, the audio codec, and dialing restrictions. The settings that you configure on the UM dial plan affect all users who are linked with the dial plan through a UM mailbox policy.
   
-For additional management tasks related to UM dial plans, see [UM Dial Plan Procedures](http://technet.microsoft.com/library/1bda77c8-c4e2-4ae0-a001-76ae029bf843.aspx).
+For additional management tasks related to UM dial plans, see [UM Dial Plan Procedures](https://technet.microsoft.com/library/1bda77c8-c4e2-4ae0-a001-76ae029bf843.aspx).
   
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM dial plans" entry in the [Unified Messaging Permissions](http://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM dial plans" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
     
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](create-um-dial-plan.md).
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## What do you want to do?
 
@@ -40,7 +40,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
     
-2. In the list view, select the UM dial plan you want to view or modify, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the UM dial plan you want to view or modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 3. On the **UM Dial Plan** page, click **Configure**. Use the configuration options to view specific dial plan settings and to enable or disable features as described in the following steps.
     
@@ -51,7 +51,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
   - Although you can include spaces in a UM dial plan name, if you integrate Unified Messaging with Office Communications Server 2007 R2 or Microsoft Lync Server, the dial plan name can't include spaces. Therefore, if you created a dial plan with spaces in the display name, and you're integrating with Office Communications Server 2007 R2 or Lync Server, you must first delete that dial plan and then create another dial plan that doesn't include spaces in the display name.
     
     > [!IMPORTANT]
-    > Although the box for the name of the dial plan can accept 64 characters, the name of the dial plan can't be longer than 49 characters. If you try to create a dial plan name that contains more than 49 characters, you'll receive an error message. The message will say that the UM mailbox policy couldn't be generated because the UM dial plan name is too long. This happens because, as mentioned earlier, when you create a dial plan a default UM mailbox policy named  _\<DialPlanName\>_ Default Policy is also created. When the 15 characters in Default Policy are added to the name of the dial plan, the total characters exceed the limit. The  _name_ parameter for both the UM dial plan and UM mailbox policy can be 64 characters. However, if the name of the dial plan is longer than 49 characters, the name of the default UM mailbox policy will be longer than 64 characters, and this isn't allowed. 
+    > Although the box for the name of the dial plan can accept 64 characters, the name of the dial plan can't be longer than 49 characters. If you try to create a dial plan name that contains more than 49 characters, you'll receive an error message. The message will say that the UM mailbox policy couldn't be generated because the UM dial plan name is too long. This happens because, as mentioned earlier, when you create a dial plan a default UM mailbox policy named _\<DialPlanName\>_ Default Policy is also created. When the 15 characters in Default Policy are added to the name of the dial plan, the total characters exceed the limit. The _name_ parameter for both the UM dial plan and UM mailbox policy can be 64 characters. However, if the name of the dial plan is longer than 49 characters, the name of the default UM mailbox policy will be longer than 64 characters, and this isn't allowed. 
   
   - **Extension length (digits)** This is the number of digits in the extension numbers for users who are associated with this dial plan. For example, if a user associated with a dial plan dials a 4-digit extension to call another user in the same dial plan, select 4 as the number of digits in the extension. 
     
@@ -59,9 +59,9 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
     
   - **Dial plan type** A Uniform Resource Identifier (URI) is a string of characters that identifies or names a resource. The main purpose of this identification is to enable VoIP devices and PBXs to communicate with other devices over a network using specific protocols. URIs are defined in schemes that define a specific syntax and format and the protocols for the call. In simple terms, this format is passed from the IP PBX or PBX and the type of dial plan you create must match that format. After you create a UM dial plan, you won't be able to change the dial plan type without deleting the dial plan, and then re-creating the correct type of dial plan. You can select one of the following dial plan types: 
     
-  - **Telephone extension** This is the most common dial plan type. The calling and called party information from the VoIP gateway or IP Private Branch eXchange (PBX) is listed in one of the following formats: Tel:512345 or 512345@\<  _IP address_\>. This is the default type for dial plans.
+  - **Telephone extension** This is the most common dial plan type. The calling and called party information from the VoIP gateway or IP Private Branch eXchange (PBX) is listed in one of the following formats: Tel:512345 or 512345@\<_IP address_\>. This is the default type for dial plans.
     
-  - **SIP URI** Use this dial plan type if you must have a Session Initiation Protocol (SIP) URI dial plan such as an IP PBX that supports SIP routing, a SIP-enabled PBX, or if you're integrating Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server and Unified Messaging. The calling and called party information from the VoIP gateway. IP PBX, SIP-enabled PBX, or Communications Server 2007 R2 or Lync Server is listed as a SIP address in the following format: sip:\<  _username_\>@\< _domain_ or  _ IP address _\>:Port.
+  - **SIP URI** Use this dial plan type if you must have a Session Initiation Protocol (SIP) URI dial plan such as an IP PBX that supports SIP routing, a SIP-enabled PBX, or if you're integrating Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server and Unified Messaging. The calling and called party information from the VoIP gateway. IP PBX, SIP-enabled PBX, or Communications Server 2007 R2 or Lync Server is listed as a SIP address in the following format: sip:\<_username_\>@\<_domain_ or _ IP address _\>:Port.
     
   - **E.164** E.164 is an international numbering plan for public telephone systems in which each assigned number contains a country code, a national destination code, and a subscriber number. The calling and called party information sent from the VoIP gateway and PBX or IP PBX is listed in the following format: Tel:+14255550123. 
     
@@ -94,11 +94,11 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
     
   - **Country/Region number format** Use this field to specify how a user's telephone number should be dialed by the Exchange servers when users are in a different dial plan that has the same country code. This is used by auto attendants and when an Outlook Voice Access user searches and tries to call the user in the directory. 
     
-    This entry consists of a number prefix and a variable number of characters (for example, 020 _xxxxxxx_).To determine the telephone number, Unified Messaging will append the last  _x_ digits from the telephone number specified in the directory to the prefix specified. 
+    This entry consists of a number prefix and a variable number of characters (for example, 020 _xxxxxxx_).To determine the telephone number, Unified Messaging will append the last _x_ digits from the telephone number specified in the directory to the prefix specified. 
     
   - **International number format** Use this field to specify how a user's telephone number should be dialed by Unified Messaging when the users are in different dial plans that have different country codes. This is used by an auto attendant and when an Outlook Voice Access user searches and tries to call the user in the directory. 
     
-    This entry consists of a number prefix and a variable number of characters (for example, 4420 _xxxxxxx_). To determine the telephone number, Unified Messaging will append the last  _x_ digits from the telephone number specified in the directory to the prefix specified. 
+    This entry consists of a number prefix and a variable number of characters (for example, 4420 _xxxxxxx_). To determine the telephone number, Unified Messaging will append the last _x_ digits from the telephone number specified in the directory to the prefix specified. 
     
   - **Number formats for incoming calls within the same dial plan** Use this field to add or remove a number format for incoming calls that are placed between users in the same dial plan. This field accepts both numbers and the letter "x" as a wild card character. No other letters can be used in this field. 
     
@@ -231,7 +231,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
     
   - **Number pattern to transform (number mask)** Use this text box to enter the number pattern to transform before dialing, for example 91425xxxxxxx. If a user enters a number that matches this pattern, UM will transform the number dialed into a dialed number before placing the call. You can only enter numbers and the wildcard character, "x". 
     
-  - **Dialed number** Use this text box to enter the number you want to dial that matches the number pattern you set in the **Number pattern to transform (number mask)**. The dialed number is used to determine the actual dial string sent to the VoIP gateway or IP PBX. This number can be different from the number obtained by Unified Messaging for the outgoing call. However, your PBX or IP PBX can also be configured to omit the area code for local calls and can be configured for private voice numbering plans. Any wildcard characters ( _x_) in the dial string are replaced with the digits from the original number that were matched by the number mask on the dialing rule. An example of a valid dialed number is 9 _xxxxxxx_. This field can contain only numbers and the character  _x_.
+  - **Dialed number** Use this text box to enter the number you want to dial that matches the number pattern you set in the **Number pattern to transform (number mask)**. The dialed number is used to determine the actual dial string sent to the VoIP gateway or IP PBX. This number can be different from the number obtained by Unified Messaging for the outgoing call. However, your PBX or IP PBX can also be configured to omit the area code for local calls and can be configured for private voice numbering plans. Any wildcard characters ( _x_) in the dial string are replaced with the digits from the original number that were matched by the number mask on the dialing rule. An example of a valid dialed number is 9 _xxxxxxx_. This field can contain only numbers and the character _x_.
     
   - **Comment** Use this text box to put in a comment or description for the dialing rule that you're adding or modifying. By default, this text box is blank. 
     
@@ -244,7 +244,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
     
   - **Number pattern to transform (number mask)** Use this text box to enter the number pattern to transform before dialing, for example 91425xxxxxxx. If a user enters a number that matches this pattern, UM will transform the number dialed into a dialed number before placing the call. You can only enter numbers and the wildcard character, "x". 
     
-  - **Dialed number** Use this text box to enter the number you want to dial that matches the number pattern you set in **Number pattern to transform (number mask)**. The dialed number is used to determine the actual dial string sent to the VoIP gateway or IP PBX. This number can be different from the number obtained by Unified Messaging for the outgoing call. However, your PBX or IP PBX can also be configured to omit the area code for local calls and can be configured for private voice numbering plans. Any wildcard characters ( _x_) in the dial string are replaced with the digits from the original number that were matched by the number mask on the dialing rule. An example of a valid dialed number is 9 _xxxxxxx_. This field can contain only numbers and the character  _x_.
+  - **Dialed number** Use this text box to enter the number you want to dial that matches the number pattern you set in **Number pattern to transform (number mask)**. The dialed number is used to determine the actual dial string sent to the VoIP gateway or IP PBX. This number can be different from the number obtained by Unified Messaging for the outgoing call. However, your PBX or IP PBX can also be configured to omit the area code for local calls and can be configured for private voice numbering plans. Any wildcard characters ( _x_) in the dial string are replaced with the digits from the original number that were matched by the number mask on the dialing rule. An example of a valid dialed number is 9 _xxxxxxx_. This field can contain only numbers and the character _x_.
     
   - **Comment** Use this text box to put in a comment or description for the dialing rule that you're adding or modifying. By default, this text box is blank. 
     
@@ -338,22 +338,22 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
     
 11. After you configure the required settings, click **Save** to save your changes. 
     
-### Use the Shell to configure UM dial plan settings
+### Use Exchange Online PowerShell to configure UM dial plan settings
 <a name="shell"> </a>
 
-This example configures a UM dial plan named  `MyDialPlan` to use 9 for the outside line access code. 
+This example configures a UM dial plan named `MyDialPlan` to use 9 for the outside line access code. 
   
 ```
 Set-UMDialplan -Identity MyDialPlan -OutsideLineAccessCode 9
 ```
 
-This example configures a UM dial plan named  `MyDialPlan` to use a welcome greeting. 
+This example configures a UM dial plan named `MyDialPlan` to use a welcome greeting. 
   
 ```
 Set-UMDialplan -Identity MyDialPlan -WelcomeGreetingEnabled $true -WelcomeGreetingFilename welcome.wav
 ```
 
-This example configures a UM dial plan named  `MyDialPlan` with dialing rules. 
+This example configures a UM dial plan named `MyDialPlan` with dialing rules. 
   
 ```
 $csv=import-csv "C:\MyInCountryGroups.csv"
@@ -361,7 +361,7 @@ Set-UMDialPlan -Identity MyDialPlan -ConfiguredInCountryGroups $csv
 Set-UMDialPlan -Identity MyDialPlan -AllowedInCountryGroups "local, long distance"
 ```
 
-### Use the Shell to view UM dial plan settings
+### Use Exchange Online PowerShell to view UM dial plan settings
 <a name="ShellView"> </a>
 
 This example displays a list of all the UM dial plans.
@@ -370,7 +370,7 @@ This example displays a list of all the UM dial plans.
 Get-UMDialplan
 ```
 
-This example displays a formatted list of all of the settings on a UM dial plan named  `MyUMDialPlan`.
+This example displays a formatted list of all of the settings on a UM dial plan named `MyUMDialPlan`.
   
 ```
 Get-UMDialplan -Identity MyUMDialPlan | Format-List

@@ -23,14 +23,14 @@ This article explains how to migrate mailboxes and service settings from one Off
 
 You can also view an overview video:
   
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2fwpC]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2fwpC]
   
 The scenario in this article is based on two fictional companies - Contoso.com and Fabrikam.com - using two separate Office 365 tenants. Contoso has purchased Fabrikam and is moving the Fabrikam users and data to the contoso.com Office 365 tenant.
   
 ||**Tenant 1 (Target)**|**Tenant 2 (Source)**|
 |:-----|:-----|:-----|
-|**Custom email domain:** <br/> |contoso.com  <br/> |fabrikam.com  <br/> |
-|**Office 365 initial domain:** <br/> |contoso.onmicrosoft.com  <br/> |fabrikam.onmicrosoft.com  <br/> |
+|**Custom email domain:**|contoso.com|fabrikam.com|
+|**Office 365 initial domain:**|contoso.onmicrosoft.com|fabrikam.onmicrosoft.com|
    
 ## Scenario: Migrate using a third party migration tool
 
@@ -66,9 +66,9 @@ To create the resources in the target (Contoso) tenant:
   
 1. If the [Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=626003) tool will be used to sync all objects from the Contoso Active Directory Domain Services (AD DS), the objects from the source (Fabrikam) tenant AD DS must be created in the target tenant (Contoso) AD DS through consolidation. 
     
-1. AD DS consolidation can be done using various AD DS tools. Consolidation can take extra time and planning depending on how many objects are being moved, so it can be completed ahead of the migration project.
+  1. AD DS consolidation can be done using various AD DS tools. Consolidation can take extra time and planning depending on how many objects are being moved, so it can be completed ahead of the migration project.
     
-2. Verify that all new users and groups are synced to the Contoso.com target tenant via directory synchronization. The objects should appear as user@contoso.onmicrosoft.com in the new tenant since the Fabrikam domain has not been moved over at this time. The primary email address for the users and groups can be updated to @fabrikam.com after the domain move is complete.
+  2. Verify that all new users and groups are synced to the Contoso.com target tenant via directory synchronization. The objects should appear as user@contoso.onmicrosoft.com in the new tenant since the Fabrikam domain has not been moved over at this time. The primary email address for the users and groups can be updated to @fabrikam.com after the domain move is complete.
     
 2. If directory synchronization will not be used, or if any Rooms, Resources, Groups or Users are managed in the Office 365 admin center of the source tenant; these objects must be created in the target tenant. Objects can be created manually in the Office 365 admin center or for larger numbers import a CSV file by using the bulk add feature in the Office 365 admin center, or by using Windows PowerShell.
     
@@ -103,7 +103,7 @@ To schedule the migration:
   
 1. Create master list of user mailboxes you want to migrate.
     
-2. Create mailbox mapping .CSV file for the third-party migration tool you are using. This mapping file will be used by the migration tool to match the source mailbox with the target tenant mailbox when migration occurs.  *We recommend that you use the \*.onmicrosoft.com 'initial' domain for mapping the source accounts since the custom email domain will be constantly changing*  . 
+2. Create mailbox mapping .CSV file for the third-party migration tool you are using. This mapping file will be used by the migration tool to match the source mailbox with the target tenant mailbox when migration occurs. *We recommend that you use the \*.onmicrosoft.com 'initial' domain for mapping the source accounts since the custom email domain will be constantly changing*. 
     
 ![CSV file used to migrate mailbox data from one Office 365 tenant to another](media/54c3358b-1743-4104-b767-03aea0a29084.jpg)
   
@@ -204,14 +204,13 @@ Use the following sample Windows PowerShell scripts as a starting point for crea
     
 3. Use the Windows PowerShell command:
     
-  ```powershell
+  ```
   Import-Csv password.csv|%{Set-MsolUserPassword -userPrincipalName $_.upn -NewPassword $_.newpassword -ForceChangePassword $false}
-  
   ```
 
 ### Copy all Office 365 accounts with a specific proxy address into a CSV file
 
-```powershell
+```
 ##########################################################################
 # Script: showproxies.ps1
 # Copies all accounts in Office 365 that contain/don't contain a specific 
@@ -246,12 +245,11 @@ $addresses | Export-Csv addresses.csv -NoTypeInformation
 Invoke-Item addresses.csv 
  
 ##### END OF SHOWPROXIES.PS1
-
 ```
 
 ### Bulk Create Room Mailboxes in Office 365
 
-```powershell
+```
 ################################################################################
 #  Script: create-rooms.ps1
 #  Description:*** RUN THIS SCRIPT FROM A WINDOWS POWERSHELL SESSION ***
@@ -291,12 +289,11 @@ $csv | foreach-object{
 New-mailbox -Name $_.RoomName -room -primarysmtpaddress $_.RoomSMTPAddress -resourcecapacity $_.RoomCapacity
 }
 ##### END OF CREATE-ROOMS.PS1
-
 ```
 
 ### Bulk remove secondary email address from mailboxes
 
-```powershell
+```
 ##########################################################################
 #      Script:  remove-proxy.ps1
 #Description:*** RUN THIS SCRIPT FROM A WINDOWS POWERSHELL SESSION ***
@@ -344,7 +341,6 @@ Write-Host ("Processing User: " + $_.UserName +" - Removing " + $removeaddr)
 Set-Mailbox $_.Username -EmailAddresses @{Remove=$removeaddr} 
 }
 ##### END OF REMOVE-PROXY.PS1
-
 ```
 
 

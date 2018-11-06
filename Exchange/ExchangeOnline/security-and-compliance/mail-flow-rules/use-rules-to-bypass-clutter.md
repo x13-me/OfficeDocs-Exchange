@@ -16,19 +16,19 @@ description: "If you want to be sure that you receive particular messages, you c
 
 If you want to be sure that you receive particular messages, you can create an Exchange transport rule that makes sure that these messages bypass your clutter folder. Check out [Use Clutter to sort low-priority messages in Outlook](https://go.microsoft.com/fwlink/p/?LinkId=528411) for more info on Clutter. 
   
-For additional management tasks related to transport rules, check out [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md) and the [New-TransportRule](http://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx) PowerShell topic. If you're new to PowerShell, check out the following topics for help on using Powershell: 
+For additional management tasks related to transport rules, check out [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md) and the [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx) PowerShell topic. If you're new to PowerShell, check out the following topics for help on using Powershell: 
   
-- [Connect to Exchange Online using remote PowerShell](http://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx)
+- [Connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx)
     
-- [Connect to Exchange using remote Shell](http://technet.microsoft.com/library/0b5987c3-8836-456d-99f7-abc2ffb57300.aspx)
+- [Connect to Exchange using remote Shell](https://technet.microsoft.com/library/0b5987c3-8836-456d-99f7-abc2ffb57300.aspx)
     
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 5 minutes
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in the [Messaging policy and compliance permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 ## Use the UI to create a transport rule to bypass the clutter folder
 
@@ -40,7 +40,7 @@ This example allows all messages with title "Meeting" to bypass clutter.
     
 ![Art example: If subject contains meeting, bypass clutter](../../media/75957aa4-4b2a-4142-92ff-07f8ccc64d82.png)
   
-## Use the Shell to create a transport rule to bypass the clutter folder
+## Use Exchange Online PowerShell to create a transport rule to bypass the clutter folder
 
 This example allows all messages with title "Meeting" to bypass clutter.
   
@@ -51,7 +51,7 @@ New-TransportRule -Name <name_of_the_rule> -SubjectContainsWords "Meeting" -SetH
 > [!IMPORTANT]
 > In this example, both "X-MS-Exchange-Organization-BypassClutter" and "true" is case sensitive. 
   
-For detailed syntax and parameter information, see [New-TransportRule](http://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx).
+For detailed syntax and parameter information, see [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx).
   
 ## How do you know this worked?
 

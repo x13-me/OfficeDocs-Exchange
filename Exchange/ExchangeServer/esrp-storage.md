@@ -4,6 +4,7 @@ ms.author: serdars
 author: serdarsoysal
 manager: serdars
 ms.date: 07/23/2018
+ms.reviewer: mattgos
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: exchange-server-it-pro
@@ -152,6 +153,8 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 
 ### Fujitsu: Greater than 5000 mailboxes
 [Fujitsu ETERNUS DX200 S3 Storage Array 20,000 Mailbox Virtualized Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Sept 29, 2014)](http://solutions.us.fujitsu.com/pdf/storage/Storage-FUJITSU-ETERNUS-DX200S3-ESRP-whitepaper.pdf)
+
+[Fujitsu PRIMEFLEX for VMware vSAN 20,000 Mailbox Exchange 2016 Resiliency Storage Solution  (Oct 24th, 2018)](http://www.fujitsu.com/us/products/computing/integrated-systems/vmware-vsan.html)  
 
 ### HDS: Greater than 5000 mailboxes
 [Hitachi Unified Storage VM Dynamically Provisioned 21,600 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (May 14, 2014)](http://www.hds.com/assets/pdf/hus-vm-dynamically-provisioned-21600-mailbox-exchange-2013-mailbox-resiliency-storage-solution.pdf)

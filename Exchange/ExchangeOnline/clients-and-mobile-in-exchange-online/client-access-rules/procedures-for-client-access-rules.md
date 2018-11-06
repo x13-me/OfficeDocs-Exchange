@@ -29,10 +29,10 @@ Client Access Rules allow or block client connections to your Exchange Online or
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md).
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
 
 ## Use Exchange Online PowerShell to view Client Access Rules
 
@@ -60,7 +60,7 @@ This example returns only the specified properties for the same rule.
 Get-ClientAccessRule -Identity "Block Client Connections from 192.168.1.0/24" | Format-List Name,Priority,Enabled,Scope,Action
 ```
 
-For detailed syntax and parameter information, see [Get-ClientAccessRule](http://technet.microsoft.com/library/4787d6dc-d38b-427a-83f8-7c57d604dff0.aspx).
+For detailed syntax and parameter information, see [Get-ClientAccessRule](https://technet.microsoft.com/library/4787d6dc-d38b-427a-83f8-7c57d604dff0.aspx).
 
 ## Use Exchange Online PowerShell to create Client Access Rules
 
@@ -90,7 +90,7 @@ This example creates a new Client Access Rule named Restrict EAC Access that blo
 New-ClientAccessRule -Name "Restrict EAC Access" -Action DenyAccess -AnyOfProtocols ExchangeAdminCenter -ExceptAnyOfClientIPAddressesOrRanges 192.168.10.1/24 -ExceptUsernameMatchesAnyOfPatterns *tanyas*
 ```
 
-For detailed syntax and parameter information, see [New-ClientAccessRule](http://technet.microsoft.com/library/f397cd16-dcd7-4929-8c9f-35415ca6b009.aspx).
+For detailed syntax and parameter information, see [New-ClientAccessRule](https://technet.microsoft.com/library/f397cd16-dcd7-4929-8c9f-35415ca6b009.aspx).
 
 ### How do you know this worked?
 
@@ -138,7 +138,7 @@ This example adds the IP address range 172.17.17.27/16 to the existing Client Ac
 Set-ClientAccessRule -Identity "Allow IMAP4" -AnyOfClientIPAddressesOrRanges @{Add="172.17.17.27/16"}
 ```
 
-For detailed syntax and parameter information, see [Set-ClientAccessRule](http://technet.microsoft.com/library/a4ba8627-b774-460f-9793-3d741c115b2e.aspx).
+For detailed syntax and parameter information, see [Set-ClientAccessRule](https://technet.microsoft.com/library/a4ba8627-b774-460f-9793-3d741c115b2e.aspx).
 
 ### How do you know this worked?
 
@@ -204,7 +204,7 @@ Remove-ClientAccessRule -Identity "Block POP3"
 
  **Note**: To disable a Client Access Rule without deleting it, use the _Enabled_ parameter with the value `$false` on the **Set-ClientAccessRule** cmdlet. 
 
-For detailed syntax and parameter information, see [Remove-ClientAccessRule](http://technet.microsoft.com/library/2ef2eabd-08bf-4f0d-879c-4e9a4c707903.aspx).
+For detailed syntax and parameter information, see [Remove-ClientAccessRule](https://technet.microsoft.com/library/2ef2eabd-08bf-4f0d-879c-4e9a4c707903.aspx).
 
 ### How do you know this worked?
 
@@ -238,4 +238,4 @@ This example returns the Client Access Rules that would match a client connectio
 Test-ClientAccessRule -User julia@contoso.com -AuthenticationType BasicAuthentication -Protocol OutlookWebApp -RemoteAddress 172.17.17.26 -RemotePort 443
 ```
 
-For detailed syntax and parameter information, see [Test-ClientAccessRule](http://technet.microsoft.com/library/d17ee6d8-e5f4-4b5d-977c-85e8dadeaf48.aspx).
+For detailed syntax and parameter information, see [Test-ClientAccessRule](https://technet.microsoft.com/library/d17ee6d8-e5f4-4b5d-977c-85e8dadeaf48.aspx).

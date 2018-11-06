@@ -20,7 +20,7 @@ An offline address book (OAB) is a copy of an address list collection that's bee
   
 To learn more about address lists, see [Address lists](../../address-books/address-lists/address-lists.md).
   
-Looking for the Exchange Server version of this topic? See [Offline Address Books in Exchange 2016](http://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx). 
+Looking for the Exchange Server version of this topic? See [Offline Address Books in Exchange 2016](https://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx). 
     
 > [!NOTE]
 >  The Update-AddressList and Update-GlobalAddressList cmdlets aren't available in Exchange Online. 

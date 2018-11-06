@@ -106,7 +106,7 @@ System mailboxes are created by Exchange in the root domain of the Active Direct
 |**Mailbox**|**Name**|
 |:-----|:-----|
 |Organization|SystemMailbox {bb558c35-97f1-4cb9-8ff7-d53741dc928c}|
-|Message approval|SystemMailbox {1f05a927- _xxxx_- _ xxxx _ - _ xxxx _ - _xxxxxxxxxxxx_} <br/> where _x_ is a randomly assigned and unique number for each Exchange forest|
+|Message approval|SystemMailbox {1f05a927-_xxxx_-_xxxx_-_xxxx_-_xxxxxxxxxxxx_} <br/> where _xxxx_-_xxxx_-_xxxx_-_xxxxxxxxxxxx_ is a randomly assigned and unique GUID for each Exchange forest|
 |UM data storage|SystemMailbox {e0dc1c29-89c3-4034-b678-e6c29d823ed9} <br/>This mailbox exists in Exchange 2016, not in Exchange 2019|
 |Discovery|DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852}|
 |Federated email|FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042|

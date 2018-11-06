@@ -4,7 +4,7 @@ ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
 manager: laurawi
-ms.date: 4/19/2018
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -15,8 +15,6 @@ description: "Summary: How to enable Outlook for iOS and Android in your Exchang
 
 # Securing Outlook for iOS and Android in Exchange Online
 
- **Summary**: How to enable Outlook for iOS and Android in your Exchange Online environment in a secure manner.
-  
 Outlook for iOS and Android provides users the fast, intuitive email and calendar experience that users expect from a modern mobile app, while being the only app to provide support for the best features of Office 365.
   
 Protecting company or organizational data on users' mobile devices is extremely important. Begin by reviewing [Setting up Outlook for iOS and Android](secure-outlook-for-ios-and-android.md#settingup), to ensure your users have all the required apps installed. After that, choose one of the following options to secure your devices and your organization's data:
@@ -47,17 +45,20 @@ For devices that are not enrolled in an MDM solution, users need to install:
     
 Once the app is installed, users can follow these steps to add their corporate email account and configure basic app settings:
   
-- [Set up email account in Outlook for iOS mobile app](https://support.office.com/article/set-up-email-in-outlook-for-ios-mobile-app-b2de2161-cc1d-49ef-9ef9-81acd1c8e234)
+- [Set up email account in Outlook for iOS mobile app](https://support.office.com/article/b2de2161-cc1d-49ef-9ef9-81acd1c8e234)
     
-- [Set up email in the Outlook for Android app](https://support.office.com/article/set-up-email-in-the-outlook-for-android-app-886db551-8dfa-4fd5-b835-f8e532091872)
+- [Set up email in the Outlook for Android app](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872)
     
-- [Optimizing the Outlook mobile app for your iOS or Android phone](https://support.office.com/article/optimize-the-outlook-mobile-app-for-your-ios-or-android-phone-de075b19-b73c-4d8a-841b-459982c7e890)
+- [Optimizing the Outlook mobile app for your iOS or Android phone](https://support.office.com/article/de075b19-b73c-4d8a-841b-459982c7e890)
     
 > [!IMPORTANT]
 > To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is leveraged. For more information, see [App-based Conditional Access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune). 
   
 ## Leveraging Enterprise Mobility + Security suite to protect corporate data with Outlook for iOS and Android
 <a name="leverageenterprise"> </a>
+
+> [!IMPORTANT]
+> The Allow/Block/Quarantine (ABQ) list provides no security guarantees (if a client spoofs the DeviceType header, it might be possible to bypass blocking for a particular device type). To securely restrict access to specific device types, we recommend that you configure conditional access policies. For more information, see [App-based conditional access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune).
 
 The richest and broadest protection capabilities for Office 365 data are available when you subscribe to the Enterprise Mobility + Security suite, which includes Microsoft Intune and Azure Active Directory Premium features, such as conditional access. At a minimum, you will want to deploy a conditional access policy that only allows connectivity to Outlook for iOS and Android from mobile devices and an Intune app protection policy that ensures the corporate data is protected.
   
@@ -76,7 +77,9 @@ When an organization decides to standardize how users access Exchange data, usin
 The policies leverage the grant control [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference), which ensures only Microsoft apps that have integrated the Intune SDK are granted access.
   
 > [!NOTE]
-> After the conditional access policies are enabled, it may take up to 6 hours for any previously connected mobile device to become blocked. > Mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped when access is managed by a conditional access policy that includes either [Require device to be marked as compliant](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications) or [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference). > To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is leveraged. For more information, see [App-based Conditional Access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune). 
+> After the conditional access policies are enabled, it may take up to 6 hours for any previously connected mobile device to become blocked.
+> Mobile device access rules (allow, block, or quarantine) in Exchange Online are skipped when access is managed by a conditional access policy that includes either [Require device to be marked as compliant](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-policy-connected-applications) or [Require approved client app](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
+> To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is leveraged. For more information, see [App-based Conditional Access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune). 
   
 ### Protect corporate data in Outlook for iOS and Android using Intune app protection policies
 <a name="blockallemail"> </a>
@@ -98,7 +101,7 @@ Regardless of whether the device is enrolled in an MDM solution, an Intune app p
 In addition to the above minimum policy requirements, you should consider deploying advanced protection policy settings like **Restrict cut, copy and paste with other apps** to further prevent corporate data leakage. For more information on the available settings, see [Android app protection policy settings in Microsoft Intune](https://docs.microsoft.com/intune/app-protection-policy-settings-android) and [iOS app protection policy settings](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
   
 > [!IMPORTANT]
-> To apply Intune app protection policies against apps on Android devices that are not enrolled in Intune, the user must also install the Intune Company Portal. For more information, see [What to expect when your Android app is managed by app protection policies](https://docs.microsoft.com/en-us/intune/app-protection-enabled-apps-android). 
+> To apply Intune app protection policies against apps on Android devices that are not enrolled in Intune, the user must also install the Intune Company Portal. For more information, see [What to expect when your Android app is managed by app protection policies](https://docs.microsoft.com/intune/app-protection-enabled-apps-android). 
   
 ## Leveraging Mobile Device Management for Office 365
 <a name="leveragemdm"> </a>
@@ -107,7 +110,7 @@ If you don't plan to leverage the Enterprise Mobility + Security suite, you can 
   
 Because this is a device management solution, there is no native capability to control which apps can be used even after a device is enrolled. If you want to limit access to Outlook for iOS and Android, you will need to obtain Azure Active Directory Premium licenses and leverage the conditional access policies discussed in [Block all email apps except Outlook for iOS and Android using conditional access](secure-outlook-for-ios-and-android.md#blockallemail).
   
-An Office 365 global admin must complete the following steps to activate and set up MDM for Office 365. See [Set up Mobile Device Management (MDM) in Office 365](https://support.office.com/article/Set-up-Mobile-Device-Management-MDM-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include: 
+An Office 365 global admin must complete the following steps to activate and set up MDM for Office 365. See [Set up Mobile Device Management (MDM) in Office 365](https://support.office.com/article/dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include: 
   
 1. Activating MDM for Office 365 by following steps in the Security & Compliance Center.
     
@@ -135,7 +138,7 @@ Outlook for iOS and Android supports the following mobile device mailbox policy 
     
 For information on how to create or modify an existing mobile device mailbox policy, see [Mobile device mailbox policies in Exchange Online](../../clients-and-mobile-in-exchange-online/exchange-activesync/mobile-device-mailbox-policies.md).
   
-In addition, Outlook for iOS and Android supports Exchange Online's device-wipe capability. When executed, only the app is wiped, because Exchange Online considers the Outlook for iOS and Android app as the mobile device. For more information on how to perform a remote wipe, see [Wipe a mobile device in Office 365](https://support.office.com/article/Wipe-a-mobile-device-in-Office-365-9d727c7d-8b47-4499-bf24-d046b449214c).
+In addition, Outlook for iOS and Android supports Exchange Online's device-wipe capability. When executed, only the app is wiped, because Exchange Online considers the Outlook for iOS and Android app as the mobile device. For more information on how to perform a remote wipe, see [Wipe a mobile device in Office 365](https://support.office.com/article/9d727c7d-8b47-4499-bf24-d046b449214c).
   
 > [!NOTE]
 > Outlook for iOS and Android only supports the "Wipe Data" remote wipe command and does not support "Account Only Remote Wipe Device." 
@@ -146,7 +149,7 @@ Outlook for iOS and Android should be enabled by default, but in some existing E
   
  **Option 1: Block all email apps except Outlook for iOS and Android**
   
-You can define a default block rule and then configure an allow rule for Outlook for iOS and Android, and for Windows devices, using the following Exchange Management Shell commands. This configuration will prevent any Exchange ActiveSync native app from connecting, and will only allow Outlook for iOS and Android.
+You can define a default block rule and then configure an allow rule for Outlook for iOS and Android, and for Windows devices, using the following Exchange Online PowerShell commands. This configuration will prevent any Exchange ActiveSync native app from connecting, and will only allow Outlook for iOS and Android.
   
 1. Create the default block rule:
     
@@ -166,7 +169,6 @@ You can define a default block rule and then configure an allow rule for Outlook
   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "WP" -AccessLevel Allow
   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "WP8" -AccessLevel Allow
   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "WindowsMail" -AccessLevel Allow
-  
   ```
 
  **Option 2: Block native Exchange ActiveSync apps on Android and iOS devices**
@@ -192,7 +194,6 @@ Alternatively, you can block native Exchange ActiveSync apps on specific Android
   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "iPad" -AccessLevel Block
   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "iPhone" -AccessLevel Block
   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "iPod" -AccessLevel Block
-  
   ```
 
 3. Not all Android device manufacturers specify "Android" as the DeviceType. Manufacturers may specify a unique value with each release. In order to find other Android devices that are accessing your environment, execute the following command to generate a report of all devices that have an active Exchange ActiveSync partnership:
@@ -212,11 +213,11 @@ Alternatively, you can block native Exchange ActiveSync apps on specific Android
   
     **Additional resources**:
     
-  - [New-ActiveSyncDeviceAccessRule](http://technet.microsoft.com/library/a33c69d8-4d19-4e9d-b5cf-27727b7c4a8f.aspx)
+  - [New-ActiveSyncDeviceAccessRule](https://technet.microsoft.com/library/a33c69d8-4d19-4e9d-b5cf-27727b7c4a8f.aspx)
     
-  - [Get-MobileDevice](http://technet.microsoft.com/library/ce8a4142-23c1-47d5-89c5-961bd6e9d162.aspx)
+  - [Get-MobileDevice](https://technet.microsoft.com/library/ce8a4142-23c1-47d5-89c5-961bd6e9d162.aspx)
     
-  - [Set-ActiveSyncOrganizationSettings](http://technet.microsoft.com/library/a447bf51-fcdc-4f8d-8d06-533d299c11fe.aspx)
+  - [Set-ActiveSyncOrganizationSettings](https://technet.microsoft.com/library/a447bf51-fcdc-4f8d-8d06-533d299c11fe.aspx)
     
 ## Blocking Outlook for iOS and Android
 <a name="blocking"> </a>
@@ -261,21 +262,21 @@ If you are managing your mobile device access via Exchange Online's device acces
     
 Every Exchange organization has different policies regarding security and device management. If an organization decides that Outlook for iOS and Android doesn't meet their needs or is not the best solution for them, administrators have the ability to block the app. Once the app is blocked, mobile Exchange users in your organization can continue accessing their mailboxes by using the built-in mail applications on iOS and Android.
   
-The  `New-ActiveSyncDeviceAccessRule` cmdlet has a  `Characteristic` parameter, and there are three  `Characteristic` options that administrators can use to block the Outlook for iOS and Android app. The options are UserAgent, DeviceModel, and DeviceType. In the two blocking options described in the following sections, you will use one or more of these characteristic values to restrict the access that Outlook for iOS and Android has to the mailboxes in your organization.
+The `New-ActiveSyncDeviceAccessRule` cmdlet has a `Characteristic` parameter, and there are three `Characteristic` options that administrators can use to block the Outlook for iOS and Android app. The options are UserAgent, DeviceModel, and DeviceType. In the two blocking options described in the following sections, you will use one or more of these characteristic values to restrict the access that Outlook for iOS and Android has to the mailboxes in your organization.
   
 The values for each characteristic are displayed in the following table:
   
 |**Characteristic**|**String for iOS**|**String for Android**|
 |:-----|:-----|:-----|
-|DeviceModel  <br/> |Outlook for iOS and Android  <br/> |Outlook for iOS and Android  <br/> |
-|DeviceType  <br/> |Outlook  <br/> |Outlook  <br/> |
-|UserAgent  <br/> |Outlook-iOS/2.0  <br/> |Outlook-Android/2.0  <br/> |
+|DeviceModel|Outlook for iOS and Android|Outlook for iOS and Android|
+|DeviceType|Outlook|Outlook|
+|UserAgent|Outlook-iOS/2.0|Outlook-Android/2.0|
    
  **Option A: Block Outlook for iOS and Android on both the iOS and Android platforms**
   
-With the  `New-ActiveSyncDeviceAccessRule` cmdlet, you can define a device access rule, using either the  `DeviceModel` or  `DeviceType` characteristic. In both cases, the access rule blocks Outlook for iOS and Android across all platforms, and will prevent any device, on both the iOS platform and Android platform, from accessing an Exchange mailbox via the app. 
+With the `New-ActiveSyncDeviceAccessRule` cmdlet, you can define a device access rule, using either the `DeviceModel` or `DeviceType` characteristic. In both cases, the access rule blocks Outlook for iOS and Android across all platforms, and will prevent any device, on both the iOS platform and Android platform, from accessing an Exchange mailbox via the app. 
   
-The following are two examples of a device access rule. The first example uses the  `DeviceModel` characteristic; the second example uses the  `DeviceType` characteristic. 
+The following are two examples of a device access rule. The first example uses the `DeviceModel` characteristic; the second example uses the `DeviceType` characteristic. 
   
 ```
 New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "Outlook" -AccessLevel Block
@@ -287,14 +288,13 @@ New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook
 
  **Option B: Block Outlook for iOS and Android on a specific mobile device platform**
   
-With the  `UserAgent` characteristic, you can define a device access rule that blocks Outlook for iOS and Android across a specific platform. This rule will prevent a device from using Outlook for iOS and Android to connect on the platform you specify. The following examples show how to use the device-specific value for the  `UserAgent` characteristic. 
+With the `UserAgent` characteristic, you can define a device access rule that blocks Outlook for iOS and Android across a specific platform. This rule will prevent a device from using Outlook for iOS and Android to connect on the platform you specify. The following examples show how to use the device-specific value for the `UserAgent` characteristic. 
   
 To block Android and allow iOS:
   
 ```
 New-ActiveSyncDeviceAccessRule -Characteristic UserAgent -QueryString "Outlook-Android/2.0" -AccessLevel Block
 New-ActiveSyncDeviceAccessRule -Characteristic UserAgent -QueryString "Outlook-iOS/2.0" -AccessLevel Allow
-
 ```
 
 To block iOS and allow Android:
@@ -302,7 +302,6 @@ To block iOS and allow Android:
 ```
 New-ActiveSyncDeviceAccessRule -Characteristic UserAgent -QueryString "Outlook-Android/2.0" -AccessLevel Allow
 New-ActiveSyncDeviceAccessRule -Characteristic UserAgent -QueryString "Outlook-iOS/2.0" -AccessLevel Block
-
 ```
 
 ## Exchange Web Services (EWS) application policies
@@ -315,5 +314,3 @@ The following example shows how to add the user-agent strings to the EWS allow l
 ```
 Set-OrganizationConfig -EwsAllowList @{Add="Outlook-iOS/*","Outlook-Android/*"}
 ```
-
-

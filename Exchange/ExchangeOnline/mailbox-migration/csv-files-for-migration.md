@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: b79fb81d-d6f4-4385-867e-7bdd0238366e
 
-description: "You can use a comma-separated values (CSV) file to bulk migrate a large number of user mailboxes. You can specify a CSV file when you use the Exchange admin center (EAC) or the New-MigrationBatch cmdlet in the Exchange Management Shell to create a migration batch. Using a CSV to specify multiple users to migrate in a migration batch is supported in the following migration scenarios:"
+description: "You can use a comma-separated values (CSV) file to bulk migrate a large number of user mailboxes. You can specify a CSV file when you use the Exchange admin center (EAC) or the New-MigrationBatch cmdlet in Exchange Online PowerShell to create a migration batch. Using a CSV to specify multiple users to migrate in a migration batch is supported in the following migration scenarios:"
 ---
 
 # CSV files for Mailbox migration
 
-You can use a comma-separated values (CSV) file to bulk migrate a large number of user mailboxes. You can specify a CSV file when you use the Exchange admin center (EAC) or the [New-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=624565) cmdlet in the Exchange Management Shell to create a migration batch. Using a CSV to specify multiple users to migrate in a migration batch is supported in the following migration scenarios: 
+You can use a comma-separated values (CSV) file to bulk migrate a large number of user mailboxes. You can specify a CSV file when you use the Exchange admin center (EAC) or the [New-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=624565) cmdlet in Exchange Online PowerShell to create a migration batch. Using a CSV to specify multiple users to migrate in a migration batch is supported in the following migration scenarios: 
   
 - **Onboarding and offboarding in Office 365**
     
@@ -43,7 +43,7 @@ You can use a comma-separated values (CSV) file to bulk migrate a large number o
 
 The first row, or header row, of a CSV file used for migrating users lists the names of the attributes, or fields, specified on the rows that follow. Each attribute name is separated by a comma. Each row under the header row represents an individual user and supplies the information required for the migration. The attributes in each individual user row must be in the same order as the attribute names in the header row. Each attribute value is separated by a comma. If the attribute value for a particular record is null, don't type anything for that attribute. However, make sure that you include the comma to separate the null value from the next attribute.
   
-Attribute values in the CSV file override the value of the corresponding parameter when that same parameter is used when creating a migration batch with the EAC or the Shell. For more information and examples, see the section [Attribute values in the CSV file override the values for the migration batch](csv-files-for-migration.md#BK-Sttributes).
+Attribute values in the CSV file override the value of the corresponding parameter when that same parameter is used when creating a migration batch with the EAC or Exchange Online PowerShell. For more information and examples, see the section [Attribute values in the CSV file override the values for the migration batch](csv-files-for-migration.md#BK-Sttributes).
   
 > [!TIP]
 > You can use any text editor to create the CSV file, but using an application like Microsoft Excel will make it easier to import data and configure and organize CSV files. Be sure to save CSV files as a .csv or .txt file. 
@@ -61,9 +61,9 @@ The following table describes the supported attributes for a CSV file for a stag
   
 |**Attribute**|**Required or optional**|**Accepted values**|**Description**|
 |:-----|:-----|:-----|:-----|
-|EmailAddress  <br/> |Required  <br/> |SMTP address for the user  <br/> |Specifies the email address for the mail-enabled user (or a mailbox if you're retrying the migration) in Office 365 that corresponds to the on-premises user mailbox that will be migrated. Mail-enabled users are created in Office 365 as a result of directory synchronization or another provisioning process. The email address of the mail-enabled user must match the  _WindowsEmailAddress_ property for the corresponding on-premises mailbox.  <br/> |
-|Password  <br/> |Optional  <br/> |A password has to have a minimum length of eight characters, and satisfy any password restrictions that are applied to your Office 365 organization.  <br/> |This password is set on the user account when the corresponding mail-enabled user in Office 365 is converted to a mailbox during the migration.  <br/> |
-|ForceChangePassword  <br/> |Optional  <br/> | `True` or  `False` <br/> |Specifies whether a user must change the password the first time they sign in to their Office 365 mailbox.  <br/> > [!NOTE]> If you've implemented a single sign-on (SSO) solution by deploying Active Directory Federation Services 2.0 (AD FS 2.0) in your on-premises organization, you must use  `False` for the value of this attribute.           |
+|EmailAddress|Required|SMTP address for the user|Specifies the email address for the mail-enabled user (or a mailbox if you're retrying the migration) in Office 365 that corresponds to the on-premises user mailbox that will be migrated. Mail-enabled users are created in Office 365 as a result of directory synchronization or another provisioning process. The email address of the mail-enabled user must match the _WindowsEmailAddress_ property for the corresponding on-premises mailbox.|
+|Password|Optional|A password has to have a minimum length of eight characters, and satisfy any password restrictions that are applied to your Office 365 organization.|This password is set on the user account when the corresponding mail-enabled user in Office 365 is converted to a mailbox during the migration.|
+|ForceChangePassword|Optional|`True` or `False`|Specifies whether a user must change the password the first time they sign in to their Office 365 mailbox.  <br/> **Note**:** If you've implemented a single sign-on (SSO) solution by deploying Active Directory Federation Services 2.0 (AD FS 2.0) in your on-premises organization, you must use `False` for the value of this attribute.|
    
 ### IMAP migrations
 
@@ -77,20 +77,19 @@ The following table describes the supported attributes for a CSV file for an IMA
   
 |**Attribute**|**Required or optional**|**Accepted values**|**Description**|
 |:-----|:-----|:-----|:-----|
-|EmailAddress  <br/> |Required  <br/> |SMTP address for the user.  <br/> |Specifies the user ID for the user's Office 365 mailbox  <br/> |
-|UserName  <br/> |Required  <br/> |String that identifies the user on the IMAP messaging system, in a format supported by the IMAP server.  <br/> |Specifies the logon name for the user's account in the IMAP messaging system (the source environment). In addition to the user name, you can use the credentials of an account that has been assigned the necessary permissions to access mailboxes on the IMAP server. For more information, see [CSV files for IMAP migration batches](migrating-imap-mailboxes/csv-files-for-imap-migrations.md).  <br/> |
-|Password  <br/> |Required  <br/> |Password string.  <br/> |Specifies the password for the user account specified by the UserName attribute.  <br/> |
+|EmailAddress|Required|SMTP address for the user.|Specifies the user ID for the user's Office 365 mailbox|
+|UserName|Required|String that identifies the user on the IMAP messaging system, in a format supported by the IMAP server.|Specifies the logon name for the user's account in the IMAP messaging system (the source environment). In addition to the username, you can use the credentials of an account that has been assigned the necessary permissions to access mailboxes on the IMAP server. For more information, see [CSV files for IMAP migration batches](migrating-imap-mailboxes/csv-files-for-imap-migrations.md).|
+|Password|Required|Password string.|Specifies the password for the user account specified by the UserName attribute.|
    
 ## Attribute values in the CSV file override the values for the migration batch
 <a name="BK-Sttributes"> </a>
 
-Attribute values in the CSV file override the value of the corresponding parameter when that same parameter is used when creating a migration batch with the EAC or the Shell. If you want the migration batch value to be applied to a user, you would leave that cell blank in the CSV file. This lets you mix and match certain attribute values for selected users in one migration batch. 
+Attribute values in the CSV file override the value of the corresponding parameter when that same parameter is used when creating a migration batch with the EAC or Exchange Online PowerShell. If you want the migration batch value to be applied to a user, you would leave that cell blank in the CSV file. This lets you mix and match certain attribute values for selected users in one migration batch. 
   
 In this example, let's say you create a batch for an onboarding remote move migration in a hybrid deployment to move archive mailboxes to Office 365 with the following [New-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=624565) command. 
   
 ```
 New-MigrationBatch -Name OnBoarding1 -SourceEndpoint RemoteEndpoint1 -TargetDeliveryDomain cloud.contoso.com -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\OnBoarding1.csv")) -MailboxType ArchiveOnly -AutoStart
-
 ```
 
 But you also want to move the primary mailboxes for selected users, so a portion of the OnBoarding1.csv file for this migration batch would look like this:
@@ -104,6 +103,6 @@ user4@cloud.contoso.com,PrimaryAndArchive
 ...
 ```
 
-Because the value for mailbox type in the CSV file overrides the values for the  _MailboxType_ parameter in the command to create the batch, only the archive mailbox for user1 and user2 is migrated to Office 365. But the primary and archive mailboxes for user3 and user4 are moved to Office 365. 
+Because the value for mailbox type in the CSV file overrides the values for the _MailboxType_ parameter in the command to create the batch, only the archive mailbox for user1 and user2 is migrated to Office 365. But the primary and archive mailboxes for user3 and user4 are moved to Office 365. 
   
 

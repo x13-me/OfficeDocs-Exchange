@@ -26,7 +26,7 @@ For additional tasks related to UM reporting, see [UM reports procedures](um-rep
 ## How do I get call statistics for UM?
 <a name="howto"> </a>
 
-1. In the Exchange admin center (EAC), click **Unified messaging** \> **More options**![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
+1. In the Exchange admin center (EAC), click **Unified messaging** \> **More options** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
     
 2. Choose the information you want to include in the report. The report automatically updates as you select any of the following options:
     
@@ -52,7 +52,7 @@ For additional tasks related to UM reporting, see [UM reports procedures](um-rep
     
 2. In the **File Download** confirmation box, click **Open** or **Save**.
     
-    The exported file will be named um_cdr_ _YYYY-MM-DD_.csv, where  _YYYY-MM-DD_ is the year, month, and day the report was run. For more information, see [Interpret voice mail call records](interpret-voice-mail-call-records.md).
+    The exported file will be named um_cdr_ _YYYY-MM-DD_.csv, where _YYYY-MM-DD_ is the year, month, and day the report was run. For more information, see [Interpret voice mail call records](interpret-voice-mail-call-records.md).
     
     > [!NOTE]
     > On the report page, you can download a Microsoft Excel template that you can use to import the .csv file for a specific day. 

@@ -40,10 +40,10 @@ In the following figure, Address Book Policy A consists of a subset of the vario
   
  You can use the following methods to assign ABPs to individual mailbox users: 
   
-|**New or existing mailbox?**|**Shell**|
+|**New or existing mailbox?**|**Command**|
 |:-----|:-----|
-|New  <br/> |[new-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx) cmdlet with the  _AddressBookPolicy_ parameter  <br/> |
-|Existing  <br/> |[Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet with the  _AddressBookPolicy_ parameter  <br/> |
+|New|[New-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx) cmdlet with the _AddressBookPolicy_ parameter|
+|Existing|[Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx) cmdlet with the _AddressBookPolicy_ parameter|
    
 ABPs take effect when a user's client application connects to a Client Access server in Exchange Server. If you change the ABP, the updated ABP doesn't take effect until the user restarts or reconnects their client or until you restart the RPC Client Access servers on the Exchange Mailbox server.
   
@@ -60,7 +60,7 @@ If you're using ABPs, and you don't want users in separate virtual organizations
   
 For details about how to turn on the ABP Routing agent in Exchange Online, see [Turn on address book policy routing](turn-on-address-book-policy-routing.md). 
   
-For details about how to turn on the ABP Routing agent in Exchange Server, see [Install and Configure the Address Book Policy Routing Agent](http://technet.microsoft.com/library/20e8a43d-4508-4388-a2c9-aa3073593cc2.aspx).
+For details about how to turn on the ABP Routing agent in Exchange Server, see [Install and Configure the Address Book Policy Routing Agent](https://technet.microsoft.com/library/20e8a43d-4508-4388-a2c9-aa3073593cc2.aspx).
   
 ## ABP Example
 <a name="example"> </a>
@@ -95,7 +95,7 @@ ABPs won't function for Entourage users or Outlook for Mac users who are connect
 ## For more information
 <a name="Clients"> </a>
 
-[Scenario: Deploying Address Book Policies](http://technet.microsoft.com/library/6ac3c87d-161f-447b-afb2-149ae7e3f1dc.aspx)
+[Scenario: Deploying Address Book Policies](https://technet.microsoft.com/library/6ac3c87d-161f-447b-afb2-149ae7e3f1dc.aspx)
   
 [Address book policy procedures](address-book-policy-procedures.md)
   

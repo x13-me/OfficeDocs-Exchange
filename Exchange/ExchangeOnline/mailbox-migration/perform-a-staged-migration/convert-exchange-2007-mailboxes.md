@@ -134,7 +134,6 @@ function Main
 }
 O365Logon
 Main
-
 ```
 
 The following script converts on-premises Exchange 2007 mailboxes to MEUs. Run this script after you have ran the script to collect information from the cloud mailboxes.
@@ -265,7 +264,7 @@ Follow these steps to complete the process.
     
 2. Rename the migration CSV file to migration.csv.
     
-3. . In the Exchange Management Shell, run the following command. The script assumes that the CSV file is in the same directory and is named migration.csv.
+3. In the Exchange Management Shell, run the following command. The script assumes that the CSV file is in the same directory and is named migration.csv.
     
   ```
   .\ExportO365UserInfo.ps1
