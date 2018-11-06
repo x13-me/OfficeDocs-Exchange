@@ -34,7 +34,7 @@ For additional management tasks related to retention policies, see [Messaging Re
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
   
- **Use the EAC to create a retention tag**
+### Use the EAC to create a retention tag
   
 1. Navigate to **Compliance management** \> **Retention tags**, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)
   
@@ -77,9 +77,9 @@ You need to be assigned permissions before you can perform this procedure or pro
     
   - **Comment**: User this optional field to enter any administrative notes or comments. The field isn't displayed to users. 
     
- **Use Exchange Online PowerShell to create a retention tag**
+### Use Exchange Online PowerShell to create a retention tag
   
-Use the **New-RetentionPolicyTag** cmdlet to create a retention tag. Different options available in the cmdlet allow you to create different types of retention tags. Use the _Type_ parameter to create a DPT ( `All`), RPT (specify a default folder type, such as `Inbox`) or a personal tag ( `Personal`).
+Use the **New-RetentionPolicyTag** cmdlet to create a retention tag. Different options available in the cmdlet allow you to create different types of retention tags. Use the _Type_ parameter to create a DPT (`All`), RPT (specify a default folder type, such as `Inbox`) or a personal tag (`Personal`).
   
 This example creates a DPT to delete all messages in the mailbox after 7 years (2,556 days).
   
@@ -115,7 +115,7 @@ New-RetentionPolicyTag -Name "Never Delete" -Type Personal -RetentionAction Dele
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
   
- **Use the EAC to create a retention policy**
+### Use the EAC to create a retention policy
   
 1. Navigate to **Compliance management** \> **Retention policies**, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)
   
@@ -127,22 +127,22 @@ You need to be assigned permissions before you can perform this procedure or pro
     
     A retention policy can contain the following tags:
     
-  - One DPT with the **Move to Archive** action 
+    - One DPT with the **Move to Archive** action.
     
-  - One DPT with the **Delete and Allow Recovery** or **Permanently Delete** actions 
+    - One DPT with the **Delete and Allow Recovery** or **Permanently Delete** actions.
     
-  - One DPT for voice mail messages with the **Delete and Allow Recovery** or **Permanently Delete** actions 
+    - One DPT for voice mail messages with the **Delete and Allow Recovery** or **Permanently Delete** actions.
     
-  - One RPT per default folder such as **Inbox** to delete items 
+    - One RPT per default folder such as **Inbox** to delete items.
     
-  - Any number of personal tags
+    - Any number of personal tags.
     
     > [!NOTE]
     > Although you can add any number of personal tags to a retention policy, having many personal tags with different retention settings can confuse users. We recommend linking no more than ten personal tags to a retention policy. 
   
-    You can create a retention policy without adding any retention tags to it, but items in the mailbox to which the policy is applied won't be moved or deleted. You can also add and remove retention tags from a retention policy after it's created. 
+You can create a retention policy without adding any retention tags to it, but items in the mailbox to which the policy is applied won't be moved or deleted. You can also add and remove retention tags from a retention policy after it's created. 
     
- **Use Exchange Online PowerShell to create a retention policy**
+### Use Exchange Online PowerShell to create a retention policy
   
 This example creates the retention policy RetentionPolicy-Corp and uses the _RetentionPolicyTagLinks_ parameter to associate five tags to the policy. 
   
@@ -156,19 +156,19 @@ For detailed syntax and parameter information, see [New-RetentionPolicy](https:/
 
 After you create a retention policy, you must apply it to mailbox users. You can apply different retention policies to different set of users. For detailed instructions, see [Apply a retention policy to mailboxes](apply-retention-policy.md).
   
-## How do you know this task worked?
+## How do you know this worked?
 
 After you create retention tags, add them to a retention policy, and apply the policy to a mailbox user, the next time the MRM mailbox assistant processes the mailbox, messages are moved or deleted based on settings you configured in the retention tags.
   
 To verify that you have applied the retention policy, do the following:
   
-1. Run the following Shell command to run the MRM assistant manually against a single mailbox.
+1. Replace \<Mailbox Identity\> with the name, email address, or alias of the mailbox, and run the following command in Exchange Online PowerShell command to run the MRM assistant manually against a single mailbox:
     
   ```
-  Start-ManagedFolderAssistant -Identity <mailbox identity>
+  Start-ManagedFolderAssistant -Identity "<Mailbox Identity>"
   ```
 
-2. Log on to the mailbox using Outlook or Outlook Web App and verify that messages are deleted or moved to an archive in accordance with the policy configuration.
+2. Log on to the mailbox using Outlook or Outlook on the web (formerly known as Outlook Web App) and verify that messages are deleted or moved to an archive in accordance with the policy configuration.
     
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 

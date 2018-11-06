@@ -35,7 +35,7 @@ When you enable mailbox audit logging for a mailbox, Microsoft Exchange logs spe
 
 You have to enable mailbox audit logging for each mailbox that you want to run a non-owner mailbox access report for. If mailbox audit logging isn't enabled, you won't get any results when you run a report. 
   
-To enable mailbox audit logging for a single mailbox, run the following Shell command.
+To enable mailbox audit logging for a single mailbox, run the following command in Exchange Online PowerShell.
   
 ```
 Set-Mailbox <Identity> -AuditEnabled $true

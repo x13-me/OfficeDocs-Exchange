@@ -103,7 +103,7 @@ You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in Exchange Online Pow
   
  **Protected Voice Mail settings**
   
-|**Shell parameter**|**Setting available in EAC?**|**Description**|
+|**Parameter**|**Setting available in EAC?**|**Description**|
 |:-----|:-----|:-----|
 |_ProtectAuthenticatedVoiceMail_|Yes|The _ProtectAuthenticatedVoiceMail_ parameter specifies whether UM-enabled users can send protected voice messages when they're accessing their mailbox using Outlook Voice Access. The default setting is `None`. This means that no protection is applied when voice messages are composed and that callers won't have the option to mark voice messages as Private. If the value is set to `Private`, only messages marked as Private by the caller are protected. If the value is set to `All`, every voice message is protected, regardless of the option chosen by the caller.|
 |_ProtectUnauthenticatedVoiceMail_|Yes|The _ProtectUnauthenticatedVoiceMail_ parameter specifies whether the Mailbox servers that answer calls for UM-enabled users associated with a UM mailbox policy create protected voice messages. This setting also applies when a message is sent from a UM auto attendant to a UM-enabled user. The default setting is `None`. This means that no protection is applied to voice messages and that the caller won't be offered the option to mark the message as Private. If the value is set to `Private`, only messages marked as Private by the caller are protected. If the value is set to `All`, every voice message is protected, regardless of whether if the message has been marked as private by the caller.|

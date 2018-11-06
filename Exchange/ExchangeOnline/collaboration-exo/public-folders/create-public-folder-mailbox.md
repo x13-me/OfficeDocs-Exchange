@@ -63,7 +63,7 @@ For detailed syntax and parameter information, see [new-Mailbox](https://technet
   
 ## How do you know this worked?
 
-To verify that you have successfully created the primary public folder mailbox, run the following Shell command:
+To verify that you have successfully created the primary public folder mailbox, run the following command in Exchange Online PowerShell:
   
 ```
 Get-OrganizationConfig | Format-List RootPublicFolderMailbox
