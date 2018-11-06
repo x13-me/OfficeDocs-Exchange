@@ -28,9 +28,9 @@ This topic describes how to synchronize mail-enabled public folders if your user
   
 You will sync your mail-enabled public folders by using the following scripts, which are initiated by a Windows task that runs in the on-premises environment:
   
-- `Sync-MailPublicFolders.ps1` This script synchronizes mail-enabled public folder objects from your local Exchange on-premises deployment with Office 365. It uses the local Exchange on-premises deployment as master to determine what changes need to be applied to O365. The script will create, update, or delete mail-enabled public folder objects on O365 Active Directory based on what exists in the local on-premises Exchange deployment. 
+- `Sync-MailPublicFolders.ps1`: This script synchronizes mail-enabled public folder objects from your local Exchange on-premises deployment with Office 365. It uses the local Exchange on-premises deployment as master to determine what changes need to be applied to O365. The script will create, update, or delete mail-enabled public folder objects on O365 Active Directory based on what exists in the local on-premises Exchange deployment. 
     
-- `SyncMailPublicFolders.strings.psd1` This is a support file used by the preceding synchronization script and should be copied to the same location as the preceding script. 
+- `SyncMailPublicFolders.strings.psd1`: This is a support file used by the preceding synchronization script and should be copied to the same location as the preceding script. 
     
 When you complete this procedure your on-premises and Office 365 users will be able to access the same on-premises public folder infrastructure. 
   

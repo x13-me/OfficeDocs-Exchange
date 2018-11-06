@@ -118,7 +118,7 @@ O365Logon
 Main
 ```
 
-The following Visual Bsic script converts on-premises Exchange 2003 mailboxes to MEUs. Run this script after you have ran the script to collect information from the cloud mailboxes.
+The following Visual Basic script converts on-premises Exchange 2003 mailboxes to MEUs. Run this script after you have ran the script to collect information from the cloud mailboxes.
   
 Copy the script below to a .txt file and then save the file as Exchange2003MBtoMEU.vbs.
   
@@ -420,9 +420,9 @@ chr(34) &amp; " dc.domain.com")
 End Sub
 ```
 
-What the scripts do?
+## What do the scripts do?
   
- **ExportO365UserInfo.ps1**
+### ExportO365UserInfo.ps1
   
 This is a Windows PowerShell script that you run in your cloud based organization to collect information about the cloud mailboxes that you migrated during the staged Exchange migration. It uses a CSV file to scope the batch of users. It's recommended that you use the same migration CSV file that you used to migrate a batch of users
   
@@ -440,7 +440,7 @@ When you run the ExportO365UserInfo script:
     
 - The collected properties are saved to a CSV file named Cloud.csv.
     
- **Exchange2003MBtoMEU.vbs**
+### Exchange2003MBtoMEU.vbs
   
 This a VB script that you run in your on-premises Exchange 2003 organization to convert mailboxes to MEUs. It uses the Cloud.csv file, which is output by the ExportO365UserInfo script. 
   
@@ -454,22 +454,22 @@ When you run the Exchange2003MBtoMEU.vbs script, it does the following for each 
     
 - Creates a MEU and populates the following properties: 
     
-  - **legacyExchangeDN** - Value from the on-premises mailbox. 
+  - **legacyExchangeDN**: Value from the on-premises mailbox. 
     
-  - **mail** - The primary SMTP of the cloud mailbox. 
+  - **mail**: The primary SMTP of the cloud mailbox. 
     
-  - **msExchMailboxGuid** - Value from the on-premises mailbox. 
+  - **msExchMailboxGuid**: Value from the on-premises mailbox. 
     
-  - **proxyAddresses** - Values from both the on-premises mailbox and the cloud mailbox. 
+  - **proxyAddresses**: Values from both the on-premises mailbox and the cloud mailbox. 
     
-  - **targetAddress** - Read from the on-premises mailbox; the value is the primary SMTP of the cloud mailbox. 
+  - **targetAddress**: Read from the on-premises mailbox; the value is the primary SMTP of the cloud mailbox. 
     
     > [!IMPORTANT]
     > To enable off-boarding from Office 365 to Exchange 2003, you have to replace the value of msExchMailboxGuid on the MEU with the Guid from the cloud-based mailbox. To obtain the Guids for the mailboxes in your cloud organization and save them to a CSV file, run the following PowerShell command: 
   
-  ```
-  Get-Mailbox | Select PrimarySmtpAddress, Guid | Export-csv -Path .\guid.csv
-  ```
+    ```
+    Get-Mailbox | Select PrimarySmtpAddress, Guid | Export-csv -Path .\guid.csv
+    ```
 
     This command extracts the primary SMTP address and Guid for all cloud mailboxes into the guid.csv file, and then saves this file to the current directory.
     
@@ -487,15 +487,15 @@ Instead of using the input CSV file to convert a batch of mailboxes, you can run
 
 1. Run the ExportO365UserInfo in your cloud organization. Use the CSV file for the migration batch as the input file. The script creates a CSV file named Cloud.csv.
     
-  ```
-  .\ExportO365UserInfo.ps1 <CSV input file>
-  ```
+    ```
+    .\ExportO365UserInfo.ps1 <CSV input file>
+    ```
 
     For example:
     
-  ```
-  .\ExportO365UserInfo.ps1 .\MigrationBatch1.csv
-  ```
+    ```
+    .\ExportO365UserInfo.ps1 .\MigrationBatch1.csv
+    ```
 
     This example assumes that the script and input CSV file are located in the same directory. 
     
@@ -503,41 +503,37 @@ Instead of using the input CSV file to convert a batch of mailboxes, you can run
     
 3. In your on-premises organization, run the following command:
     
-  ```
-  cscript Exchange2003MBtoMEU.vbs -c .\Cloud.csv <FQDN of on-premises domain controller>
-  ```
+    ```
+    cscript Exchange2003MBtoMEU.vbs -c .\Cloud.csv <FQDN of on-premises domain controller>
+    ```
 
     For example:
     
-  ```
-  cscript Exchange2003MBtoMEU.vbs -c .\Cloud.csv DC1.contoso.com
-  ```
+    ```
+    cscript Exchange2003MBtoMEU.vbs -c .\Cloud.csv DC1.contoso.com
+    ```
 
     To run the script in manual mode, enter the following command. Use spaces between each value.
     
-  ```
-  cscript Exchange2003MBtoMEU.vbs "<DN of on-premises mailbox>" "
-  <Primary SMTP of cloud mailbox>" "<ExchangeLegacyDN of cloud mailbox>" 
-  <FQDN of on-premises domain controller>
-  ```
+    ```
+    cscript Exchange2003MBtoMEU.vbs "<DN of on-premises mailbox>" "<Primary SMTP of cloud mailbox>" "<ExchangeLegacyDN of cloud mailbox>" <FQDN of on-premises domain controller>
+    ```
 
     For example:
     
-  ```
-  cscript Exchange2003MBtoMEU.vbs "CN=Ann Beebe,
-  CN=Users,DC=contoso,DC=com"
-   "annb@contoso.onmicrosoft.com" "/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d808d014cec5411ea6de1f70cc116e7b-annb" DC1.contoso.com
-  ```
+    ```
+    cscript Exchange2003MBtoMEU.vbs "CN=Ann Beebe,CN=Users,DC=contoso,DC=com" "annb@contoso.onmicrosoft.com" "/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d808d014cec5411ea6de1f70cc116e7b-annb" DC1.contoso.com
+    ```
 
 4. Verify that the new MEUs have been created. In Active Directory Users and Computers, do the following:
     
-1. Click **Action** \> **Find**.
+  1. Click **Action** \> **Find**.
     
-2. Click the **Exchange tab**.
+  2. Click the **Exchange tab**.
     
-3. Select **Show only Exchange recipients**, and then select **Users with external email address**.
+  3. Select **Show only Exchange recipients**, and then select **Users with external email address**.
     
-4. Click **Find Now**.
+  4. Click **Find Now**.
     
     The mailboxes that were converted to MEUs are listed under **Search results**.
     
@@ -547,12 +543,12 @@ Instead of using the input CSV file to convert a batch of mailboxes, you can run
     
   - mail
     
-  - msExchMailboxGuid\*
+  - msExchMailboxGuid<sup>*</sup>
     
   - proxyAddresses
     
   - targetAddress
     
-    \* As previously explained, the Exchange2003MBtoMEU.vbs script retains the **msExchMailboxGuid** value from the on-premises mailbox. To enable off-boarding from Office 365 to Exchange 2003, you have to replace the value for the **msExchMailboxGuid** property on the MEU with the Guid from the cloud-based mailbox. 
+    <sup>*</sup>As previously explained, the Exchange2003MBtoMEU.vbs script retains the **msExchMailboxGuid** value from the on-premises mailbox. To enable off-boarding from Office 365 to Exchange 2003, you have to replace the value for the **msExchMailboxGuid** property on the MEU with the Guid from the cloud-based mailbox. 
     
 

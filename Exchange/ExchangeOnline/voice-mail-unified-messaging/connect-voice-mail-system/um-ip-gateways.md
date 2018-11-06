@@ -34,11 +34,11 @@ Session Border Controllers (SBCs) are somewhat different than VoIP gateways and 
 
 Although there are many types and manufacturers of PBXs, VoIP gateways, IP PBXs, and SBCs, there are basically three types of VoIP device configurations: 
   
-- **IP PBX** A single device that translates between the PSTN/TDM or circuit-switched based telephony network and an IP or packet-switched data network 
+- **IP PBX**: A single device that translates between the PSTN/TDM or circuit-switched based telephony network and an IP or packet-switched data network 
     
-- **PBX (legacy) and a VoIP gateway** Two separate components that together translate between the PSTN/TDM or circuit-switched telephony network and an IP or packet-switched data network 
+- **PBX (legacy) and a VoIP gateway**: Two separate components that together translate between the PSTN/TDM or circuit-switched telephony network and an IP or packet-switched data network 
     
-- **SBC** Single or multiple devices that connect two types of IP-based networks such as a LAN and a datacenter. 
+- **SBC**: Single or multiple devices that connect two types of IP-based networks such as a LAN and a datacenter. 
     
 To support Unified Messaging, one or both types of IP/VoIP device configurations are used when connecting a telephony network infrastructure to a data network infrastructure or connecting an on-premises deployment with a UM deployment in the cloud.
   

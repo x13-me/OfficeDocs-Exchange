@@ -31,14 +31,14 @@ Administrators can search for and recover deleted email messages in a user's mai
     
 - To search for and recover items, you must have the following information:
     
-  - **Source mailbox** This is the mailbox being searched. 
+  - **Source mailbox**: This is the mailbox being searched. 
     
-  - **Target mailbox** This is the discovery mailbox in which messages will be recovered. Exchange Setup creates a default discovery mailbox. In Exchange Online, a discovery mailbox is also created by default. If required, you can create additional discovery mailboxes. For details, see [Create a discovery mailbox](../../security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox.md).
+  - **Target mailbox**: This is the discovery mailbox in which messages will be recovered. Exchange Setup creates a default discovery mailbox. In Exchange Online, a discovery mailbox is also created by default. If required, you can create additional discovery mailboxes. For details, see [Create a discovery mailbox](../../security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox.md).
     
     > [!NOTE]
     > When using the **Search-Mailbox** cmdlet, you can also specify a target mailbox that isn't a discovery mailbox. However, you can't specify the same mailbox as the source and target mailbox. 
   
-  - **Search criteria** Criteria include sender or recipient, or keywords (words or phrases) in the message. 
+  - **Search criteria**: Criteria include sender or recipient, or keywords (words or phrases) in the message. 
     
 - This topic focuses on using PowerShell to recover deleted items in a user's mailbox. You can also use the GUI-based In-Place eDiscovery tool to find and export deleted items to a PST file. The user will use this PST file to restore the deleted messages to their mailbox. For detailed instructions, see [Recover deleted items in a user's mailbox - Admin Help](https://go.microsoft.com/fwlink/p/?LinkId=722928).
     
@@ -131,11 +131,11 @@ In Exchange Server, you can export contents from a mailbox to a .pst file and im
   
 This example uses the following settings to export messages from the folder April Stewart Recovery in the Discovery Search Mailbox to a .pst file:
   
-- **Mailbox** Discovery Search Mailbox 
+- **Mailbox**: Discovery Search Mailbox 
     
-- **Source folder** April Stewart Recovery 
+- **Source folder**: April Stewart Recovery 
     
-- **ContentFilter** April travel plans 
+- **ContentFilter**: April travel plans 
     
 - **PST file path** \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst 
     
@@ -147,9 +147,9 @@ For detailed syntax and parameter information, see [New-MailboxExportRequest](ht
   
 This example uses the following settings to import messages from a .pst file to the folder Recovered By Helpdesk in April Stewart's mailbox:
   
-- **Mailbox** April Stewart 
+- **Mailbox**: April Stewart 
     
-- **Target folder** Recovered By Helpdesk 
+- **Target folder**: Recovered By Helpdesk 
     
 - **PST file path** \\MYSERVER\HelpDeskPst\AprilStewartRecovery.pst 
     

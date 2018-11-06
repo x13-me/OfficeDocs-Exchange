@@ -114,11 +114,11 @@ In this step, the admin account will be updated to the domain you added and then
     
     For Gmail the values are:
     
-  - **IMAP server:** imap.gmail.com 
+  - **IMAP server**: imap.gmail.com 
     
-  - **Port:** 993 
+  - **Port**: 993 
     
-  - **Security:** SSL 
+  - **Security**: SSL 
     
     See [Learn more about setting up your IMAP server connection](setting-up-your-imap-server-connection.md) for instructions on how to determine your IMAP server name. 
     

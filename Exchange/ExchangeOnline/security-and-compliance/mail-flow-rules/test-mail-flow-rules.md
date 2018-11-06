@@ -24,9 +24,9 @@ Each time you create an Exchange mail flow rule, also known as a Transport rule,
 
 You can evaluate the conditions for a rule without taking any actions that impact mail flow by choosing a test mode. You can set up a rule so that you get an email notification any time the rule is matched, or you can look at the [Look at the message trace](test-mail-flow-rules.md#trace) for messages that might match the rule. There are two test modes: 
   
-- **Test without Policy Tips** Use this mode together with an incident report action, and you can receive an email message each time an email matches the rule. 
+- **Test without Policy Tips**: Use this mode together with an incident report action, and you can receive an email message each time an email matches the rule. 
     
-- **Test with Policy Tips** This mode is only available if you're using [Data loss prevention](../../security-and-compliance/data-loss-prevention/data-loss-prevention.md) (DLP), which is available with some Exchange Online and Exchange Online Protection (EOP) subscription plans. With this mode, a message is set to the sender when a message they are sending matches a policy, but no mail flow actions are taken. 
+- **Test with Policy Tips**: This mode is only available if you're using [Data loss prevention](../../security-and-compliance/data-loss-prevention/data-loss-prevention.md) (DLP), which is available with some Exchange Online and Exchange Online Protection (EOP) subscription plans. With this mode, a message is set to the sender when a message they are sending matches a policy, but no mail flow actions are taken. 
     
 Here's what you'll see when a rule is matched if you include the incident report action:
   

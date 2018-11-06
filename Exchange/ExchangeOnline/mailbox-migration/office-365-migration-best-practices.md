@@ -250,9 +250,9 @@ For more information, see [Manage migration batches in Office 365](manage-migrat
   
 Depending on the migration method, you can try the following verification tests:
   
-- **IMAP migrations** Prepopulate a source mailbox with sample data. Then from the Internet (outside your on-premises network), connect to the source mailbox by using a standard IMAP email client such as Microsoft Outlook, and then measure network performance by determining how long it takes to download all the data from the source mailbox. The throughput should be similar to what customers can get by using the IMAP migration tool in Office 365, given that there are no other constraints. 
+- **IMAP migrations**: Prepopulate a source mailbox with sample data. Then from the Internet (outside your on-premises network), connect to the source mailbox by using a standard IMAP email client such as Microsoft Outlook, and then measure network performance by determining how long it takes to download all the data from the source mailbox. The throughput should be similar to what customers can get by using the IMAP migration tool in Office 365, given that there are no other constraints. 
     
-- **Cutover and staged Exchange migrations** Prepopulate a source mailbox with sample data. Then, from the Internet (outside of your on-premises network), connect to the source mailbox with Outlook by using RPC over HTTP Protocol. Make sure that you're connecting by using [cache mode]( https://go.microsoft.com/fwlink/p/?LinkId=623596). Measure network performance by checking how long it takes to synchronize all data from the source mailbox. The throughput should be similar to what customers can get by using the simple Exchange migration tools in Office 365, given that there are no other constraints.
+- **Cutover and staged Exchange migrations**: Prepopulate a source mailbox with sample data. Then, from the Internet (outside of your on-premises network), connect to the source mailbox with Outlook by using RPC over HTTP Protocol. Make sure that you're connecting by using [cache mode]( https://go.microsoft.com/fwlink/p/?LinkId=623596). Measure network performance by checking how long it takes to synchronize all data from the source mailbox. The throughput should be similar to what customers can get by using the simple Exchange migration tools in Office 365, given that there are no other constraints.
     
 There is some overhead during an actual IMAP, cutover, or staged Exchange migration. The actual throughput, however, should be similar to the results of these verification tests.
   
@@ -270,29 +270,29 @@ In the Office 365 service, unlike in on-premises Exchange 2010, the migration qu
   
 There are two types of move requests in Office 365:
   
-- **Onboarding move requests** New customer migrations are considered onboarding move requests. These requests have regular priority. 
+- **Onboarding move requests**: New customer migrations are considered onboarding move requests. These requests have regular priority. 
     
-- **Datacenter internal move requests** These are mailbox move requests initiated by datacenter operation teams. These requests have a lower priority because the end-user experience isn't affected if the move request is delayed. 
+- **Datacenter internal move requests**: These are mailbox move requests initiated by datacenter operation teams. These requests have a lower priority because the end-user experience isn't affected if the move request is delayed. 
     
 ### Potential impact and delays to move requests with a status of "Queued" and "In Progress"
 
-- **Queued move requests** This status specifies that the move has been queued and is waiting to be picked up by the Exchange Mailbox Replication Service. For Exchange 2003 move requests, users can still access their mailboxes at this stage. 
+- **Queued move requests**: This status specifies that the move has been queued and is waiting to be picked up by the Exchange Mailbox Replication Service. For Exchange 2003 move requests, users can still access their mailboxes at this stage. 
     
     Two factors influence which request will be picked up by the Mailbox Replication Service:
     
-  - **Priority** Queued move requests with a higher priority are picked up before lower-priority move requests. This helps ensure that customer-migration move requests always get processed before datacenter internal move requests. 
+  - **Priority**: Queued move requests with a higher priority are picked up before lower-priority move requests. This helps ensure that customer-migration move requests always get processed before datacenter internal move requests. 
     
-  - **Position in the queue** If move requests have the same priority, the earlier the request gets into the queue, the earlier it will be picked up by the Mailbox Replication Service. Because there might be multiple customers performing mailbox migrations at the same time, it's normal that new move requests remain in the queue before they're processed. 
+  - **Position in the queue**: If move requests have the same priority, the earlier the request gets into the queue, the earlier it will be picked up by the Mailbox Replication Service. Because there might be multiple customers performing mailbox migrations at the same time, it's normal that new move requests remain in the queue before they're processed. 
     
     Often, the time that mailbox requests wait in the queue before being processed isn't considered during migration planning. This results in customers not being allocated enough time to complete all planned migrations.
     
-- **In-progress move requests** This status specifies that the move is still in progress. If this is an online mailbox move, the user will still be able to access the mailbox. For offline mailbox moves, the user's mailbox will be unavailable. 
+- **In-progress move requests**: This status specifies that the move is still in progress. If this is an online mailbox move, the user will still be able to access the mailbox. For offline mailbox moves, the user's mailbox will be unavailable. 
     
     After the mailbox move request has a status of "In Progress," the priority no longer matters and a new move request won't be processed until an existing "In Progress" move request is completed, even if the new move request has a higher priority.
     
 ### Best practices
 
- **Planning** As previously mentioned, because Exchange 2003 users lose access during a hybrid migration, Exchange 2003 customers are usually more concerned about when to schedule migrations and how long they will take. 
+ **Planning**: As previously mentioned, because Exchange 2003 users lose access during a hybrid migration, Exchange 2003 customers are usually more concerned about when to schedule migrations and how long they will take. 
   
 When planning how many mailboxes to migrate during a specific time period, consider the following:
   
@@ -306,7 +306,7 @@ When planning how many mailboxes to migrate during a specific time period, consi
     
 - Start the migration sooner than initially planned to mitigate time in the queue. When mailboxes are queued, Exchange 2003 users can still access their mailboxes.
     
- **Determine queue time** The queue time is always changing because Microsoft doesn't manage customers' migration schedules. 
+ **Determine queue time**: The queue time is always changing because Microsoft doesn't manage customers' migration schedules. 
   
 To determine the potential queue time, a customer can try to schedule a test move several hours before the actual migration starts. Then, based on the observed amount of time the request is in the queue, the customer can better estimate when to start the migration and how many mailboxes can be moved in a specific period of time.
   

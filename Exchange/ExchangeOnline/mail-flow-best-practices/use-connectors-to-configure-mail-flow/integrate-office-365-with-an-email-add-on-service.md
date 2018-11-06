@@ -82,13 +82,13 @@ The important settings for the connector are:
     
 3. On the next page, configure these settings:
     
-  - **Name** Enter a descriptive name (for example, Office 365 to Contoso Signature Service). 
+  - **Name**: Enter a descriptive name (for example, Office 365 to Contoso Signature Service). 
     
-  - **Retain internal Exchange email headers (recommended)** Configure one of these values: 
+  - **Retain internal Exchange email headers (recommended)**: Configure one of these values: 
     
-  - **Checked** Preserves internal headers in messages that are sent to the email add-on service, which means the messages are treated as trusted internal messages. If you select this value, you'll also need to use the same value on this setting for the inbound connector that you create in Step 4 (otherwise, the inbound connector will remove the internal Exchange headers from the returning messages). 
+  - **Checked**: Preserves internal headers in messages that are sent to the email add-on service, which means the messages are treated as trusted internal messages. If you select this value, you'll also need to use the same value on this setting for the inbound connector that you create in Step 4 (otherwise, the inbound connector will remove the internal Exchange headers from the returning messages). 
     
-  - **Unchecked** Removes internal headers from messages before they're sent to the email add-on service. If you select this value, the value of this setting on the inbound connector that you create in Step 4 is meaningless (by definition, there will be no internal Exchange headers to keep or remove in returning messages). 
+  - **Unchecked**: Removes internal headers from messages before they're sent to the email add-on service. If you select this value, the value of this setting on the inbound connector that you create in Step 4 is meaningless (by definition, there will be no internal Exchange headers to keep or remove in returning messages). 
     
 ![In the new connector wizard, enter a descriptive name for the connector.](../../media/772699f4-1687-48d6-9482-72f2cc7c4ea5.png)
   
@@ -138,7 +138,7 @@ New-OutboundConnector -Name "<Descriptive Name>" -ConnectorType OnPremises -IsTr
 
 This example creates an outbound connector with these settings:
   
-- **Name** Office 365 to Contoso Signature Service 
+- **Name**: Office 365 to Contoso Signature Service 
     
 - **Smart host destination of the email add-on service** smtp.contososignatureservice.com 
     
@@ -180,13 +180,13 @@ The rule routes messages from internal senders to the outbound connector that yo
   
 3. On the **New rule** page, configure these settings: 
     
-  - **Name** Enter a descriptive name (for example, Route email to Contoso Signature Service). 
+  - **Name**: Enter a descriptive name (for example, Route email to Contoso Signature Service). 
     
-  - **Apply this rule if:** Select **The sender** \> **Is external/internal** \> Select **Inside the organization**, and then click **OK**.
+  - **Apply this rule if**: Select **The sender** \> **Is external/internal** \> Select **Inside the organization**, and then click **OK**.
     
-  - **Do the following** Select **Redirect the message to** \> **The following connector** \> Select the outbound connector you created in Step 1, and then click **OK**.
+  - **Do the following**: Select **Redirect the message to** \> **The following connector** \> Select the outbound connector you created in Step 1, and then click **OK**.
     
-  - **Except if** Click **Add exception** \> Select **A message header** \> **Includes and of these words**.
+  - **Except if**: Click **Add exception** \> Select **A message header** \> **Includes and of these words**.
     
   - Click **Enter text**, enter the name of the custom header field that's applied by the email add-on service (for example, SignatureContoso), and then click **OK**.
     
@@ -208,9 +208,9 @@ New-TransportRule -Name "<Descriptive Name>" -FromScope InOrganization -RouteMes
 
 This example creates the mail flow rule with these settings:
   
-- **Name** Route email to Contoso Signature Service 
+- **Name**: Route email to Contoso Signature Service 
     
-- **Outbound connector name** Office 365 to Contoso Signature Service 
+- **Outbound connector name**: Office 365 to Contoso Signature Service 
     
 - **Header field and value that indicates processing by the email add-on service**SignatureContoso with the value true.
     
@@ -274,13 +274,13 @@ The important settings for the connector are:
     
 3. On the next page, configure these settings:
     
-  - **Name** Enter a descriptive name (for example, Contoso Signature Service to Office 365). 
+  - **Name**: Enter a descriptive name (for example, Contoso Signature Service to Office 365). 
     
-  - **Retain internal Exchange email headers (recommended)** Configure one of these values: 
+  - **Retain internal Exchange email headers (recommended)**: Configure one of these values: 
     
-  - **Checked** Preserves internal headers in messages that are returning from the email add-on service. If you selected this value on this setting for the outbound connector that you create in Step 1, you'll need to configure the same value here. The internal Exchange headers in the returning messages are preserved, which means the messages returning from the email add-on service are treated as trusted internal messages. 
+  - **Checked**: Preserves internal headers in messages that are returning from the email add-on service. If you selected this value on this setting for the outbound connector that you create in Step 1, you'll need to configure the same value here. The internal Exchange headers in the returning messages are preserved, which means the messages returning from the email add-on service are treated as trusted internal messages. 
     
-  - **Unchecked** Removes the internal Exchange headers (if any) from messages that are returning from the email add-on service. 
+  - **Unchecked**: Removes the internal Exchange headers (if any) from messages that are returning from the email add-on service. 
     
 ![In the new connector wizard, enter a descriptive name for the connector.](../../media/945fa373-d19a-43b5-9b17-4763e21b2370.png)
   
@@ -306,9 +306,9 @@ New-InboundConnector -Name "<Descriptive Name>" -SenderDomains * -ConnectorType 
 
 This example creates an outbound connector with these settings:
   
-- **Name** Contoso Signature Service to Office 365 
+- **Name**: Contoso Signature Service to Office 365 
     
-- **Domain name used by the email add-on service's certificate to authenticate with your Office 365 organization** S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com 
+- **Domain name used by the email add-on service's certificate to authenticate with your Office 365 organization**: S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com 
     
 - Internal Exchange message headers that identify messages returning from the email add-on service as internal messages are preserved.
     

@@ -39,9 +39,7 @@ For additional management tasks related to call answering rules, see [Forwarding
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use Exchange Online PowerShell to enable a call answering rule
+## Use Exchange Online PowerShell to enable a call answering rule
 
 When a call answering rule is created, it's enabled. You can use Exchange Online PowerShell to enable a call answering rule that was previously disabled. Enabling a call answering rule enables the **Enable-UMCallAnsweringRule** cmdlet to retrieve the call answering rule, including the conditions and actions for a specified call answering rule. 
   
@@ -63,7 +61,7 @@ This example enables the call answering rule `MyUMCallAnsweringRule` in the mail
 Enable-UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith -Confirm
 ```
 
-### Use Exchange Online PowerShell to disable a call answering rule
+## Use Exchange Online PowerShell to disable a call answering rule
 
 Disabling a call answering rule prevents it from being retrieved and processed when an incoming call is received. When you create a call answering rule, you should disable it while you're setting up conditions and actions. This prevents the call answering rule from being processed when an incoming call is received before you've correctly configured the call answering rule.
   

@@ -34,7 +34,7 @@ A soft-deleted user mailbox is a mailbox that has been deleted in the following 
   
 If in the 30 day time period a new Azure Active Directory user is synchronized from the original on-premises recipient account with the same ExchangeGuid or ArchiveGuid, this will result in an ExchangeGuid validation conflict error.
   
-Check out [Manage inactive mailboxes in Office 365](https://technet.microsoft.com/library/c60e9ae7-dd02-4c5f-9f5d-7626a9101094.aspx) for more info on putting a mailbox in a litigation hold. 
+Check out [Overview of inactive mailboxes in Office 365](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365) for more info about creating an inactive mailbox by placing a Litigation Hold on a mailbox before deleting it. 
   
 ## Hard-deleted user mailboxes
 <a name="BKMK_harddeleted"> </a>

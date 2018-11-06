@@ -33,15 +33,13 @@ By default, when you create a Unified Messaging (UM) IP gateway, the status of t
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to disable a UM IP gateway
+## Use the EAC to disable a UM IP gateway
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to disable, and then click the **Down arrow** ![Down Arrow Icon](../../media/ITPro_EAC_DownArrowIcon.gif).
     
 2. On the **Warning** page, click **Yes**.
     
-### Use Exchange Online PowerShell to disable a UM IP gateway
+## Use Exchange Online PowerShell to disable a UM IP gateway
 
 This example disables a UM IP gateway named `yUMIPGateway` and stops it from accepting incoming calls from a VoIP gateway, IP PBX, or SBC. 
   

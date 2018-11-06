@@ -50,9 +50,9 @@ Public folder architecture uses specially designed mailboxes to store both the p
 
 There are two types of public folder mailboxes: the primary hierarchy mailbox and secondary hierarchy mailboxes. Both types of mailboxes can contain content: 
   
-- **Primary hierarchy mailbox** The primary hierarchy mailbox is the one writable copy of the public folder hierarchy. The public folder hierarchy is copied to all other public folder mailboxes, but these will be read-only copies. 
+- **Primary hierarchy mailbox**: The primary hierarchy mailbox is the one writable copy of the public folder hierarchy. The public folder hierarchy is copied to all other public folder mailboxes, but these will be read-only copies. 
     
-- **Secondary hierarchy mailboxes** Secondary hierarchy mailboxes contain public folder content as well and a read-only copy of the public folder hierarchy. 
+- **Secondary hierarchy mailboxes**: Secondary hierarchy mailboxes contain public folder content as well and a read-only copy of the public folder hierarchy. 
     
 There are two ways you can manage public folder mailboxes:
   

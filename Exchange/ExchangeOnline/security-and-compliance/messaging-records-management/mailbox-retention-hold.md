@@ -35,9 +35,7 @@ For additional management tasks related to messaging records management (MRM), s
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-
-### Use Exchange Online PowerShell to place a mailbox on retention hold
+## Use Exchange Online PowerShell to place a mailbox on retention hold
 
 This example places Michael Allen's mailbox on retention hold.
   
@@ -47,7 +45,7 @@ Set-Mailbox "Michael Allen" -RetentionHoldEnabled $true
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
   
-### Use Exchange Online PowerShell to remove retention hold for a mailbox
+## Use Exchange Online PowerShell to remove retention hold for a mailbox
 
 This example removes the retention hold from Michael Allen's mailbox.
   

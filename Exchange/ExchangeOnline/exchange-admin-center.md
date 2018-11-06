@@ -87,9 +87,9 @@ When you select an item from the list view, information about that object is dis
 
 The Centers tile allows you to change from one admin center to another. The Me tile allows you to sign out of the EAC and sign in as a different user. From the Help ![Help Icon](media/ITPro_EAC_HelpIcon.gif) drop-down menu, you can perform the following actions: 
   
-- **Help** Click ![Help Icon](media/ITPro_EAC_HelpIcon.gif) to view the online help content. 
+- **Help**: Click ![Help Icon](media/ITPro_EAC_HelpIcon.gif) to view the online help content. 
     
-- **Disable Help bubble** The Help bubble displays contextual help for fields when you create or edit and object. You can turn off the Help bubble help or turn it on if it has been disabled. 
+- **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit and object. You can turn off the Help bubble help or turn it on if it has been disabled. 
     
 ## Supported browsers
 <a name="SB"> </a>
