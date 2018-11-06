@@ -146,10 +146,15 @@ Yes, if you want to troubleshoot and resolve the issue, or if you want to inform
 Customers with a Microsoft Premier agreement can open support cases with Customer Service & Support (CSS). Instead of having the user initiate an in-app support ticket, the user can leverage Collect Diagnostics to upload the logs and share the incident ID with CSS/Premier. Collect Diagnostics will capture data from Outlook for iOS and Android, Authenticator, and the Company Portal and upload all the relevant logs to Microsoft. Microsoft Support Escalation Engineers can use the incident ID to access the diagnostic logs and troubleshoot the user's issue.
 
 To gather the logs:
+
 1. Within Outlook for iOS and Android’s settings, tap Help & Feedback.
+
 2. Tap Collect Diagnostics.
+
 3. Tap Get Started.
+
 4. Tap Upload Outlook Logs (iOS) or Collect Logs (Android).
+
 5. Share the incident ID with CSS.
   
 ### Q: As an Exchange administrator, is there a way for me to determine if Outlook clients are utilizing the Office 365-based architecture?
