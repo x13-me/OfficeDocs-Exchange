@@ -131,6 +131,8 @@ After you've installed the operating system roles and features, install the foll
 
 3.  [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
+4.  [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+
 ## Edge Transport server role
 
 Follow the instructions in this section to install the prerequisites on Windows Server 2012 R2 or Windows Server 2012 computers where you want to install the Edge Transport server role on a computer.
