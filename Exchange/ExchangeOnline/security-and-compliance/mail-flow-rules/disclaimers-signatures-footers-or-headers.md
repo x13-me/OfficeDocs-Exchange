@@ -30,8 +30,6 @@ You can add an HTML or plain text legal disclaimer, disclosure statement, signat
     
 For examples and information about how to scope and format disclaimers, signatures, and other additions to email messages, see [Organization-wide disclaimers, signatures, footers, or headers in Exchange 2016](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx).
 
-
-  
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 15 minutes.
@@ -45,9 +43,7 @@ For examples and information about how to scope and format disclaimers, signatur
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-
-### Use the EAC to add a disclaimer or other email header or footer
+## Use the EAC to add a disclaimer or other email header or footer
 
 1. Open the EAC and go to **Mail flow** \> **Rules**.
     
@@ -73,7 +69,7 @@ For examples and information about how to scope and format disclaimers, signatur
     
 For more examples of how to scope your disclaimer, see [Scoping your disclaimer](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx#Scoping).
   
-### Use Exchange Online PowerShell to add a disclaimer or other email header or footer
+## Use Exchange Online PowerShell to add a disclaimer or other email header or footer
 
 Use the [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx) cmdlet to create the disclaimer rule. For detailed parameter information, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md) or [Mail flow rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx).
   
@@ -91,7 +87,7 @@ New-TransportRule -Name "March Special" -Enabled $true -SentToScope NotInOrganiz
 
 For more examples of how to scope your disclaimer, see [Scoping your disclaimer](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx#Scoping).
   
-### How do you know this worked?
+## How do you know this worked?
 
 To verify that you've successfully created a disclaimer, and that the disclaimer works as expected, do the following steps:
   

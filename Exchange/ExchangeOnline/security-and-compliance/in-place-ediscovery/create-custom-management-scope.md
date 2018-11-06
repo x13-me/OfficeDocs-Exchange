@@ -82,13 +82,13 @@ New-RoleGroup "Ottawa Discovery Management" -Roles "Mailbox Search","Legal Hold"
     
 2. In **New role group**, provide the following information:
     
-  - **Name** Provide a descriptive name for the new role group. For this example, you'd use Ottawa Discovery Management.
+  - **Name**: Provide a descriptive name for the new role group. For this example, you'd use Ottawa Discovery Management.
     
-  - **Write scope** Select the custom management scope that you created in step 2. This scope will be applied to the new role group. 
+  - **Write scope**: Select the custom management scope that you created in step 2. This scope will be applied to the new role group. 
     
-  - **Roles** Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and add the **Legal Hold** and **Mailbox Search** roles to the new role group. 
+  - **Roles**: Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and add the **Legal Hold** and **Mailbox Search** roles to the new role group. 
     
-  - **Members** Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and select the users, security group, or role groups that you want add as members of the new role group. For this example, the members of the **Ottawa Users eDiscovery Managers** security group will be able to search only the mailboxes of users who are members of the **Ottawa Users** distribution group. 
+  - **Members**: Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and select the users, security group, or role groups that you want add as members of the new role group. For this example, the members of the **Ottawa Users eDiscovery Managers** security group will be able to search only the mailboxes of users who are members of the **Ottawa Users** distribution group. 
     
 3. Click **Save** to create the role group. 
     

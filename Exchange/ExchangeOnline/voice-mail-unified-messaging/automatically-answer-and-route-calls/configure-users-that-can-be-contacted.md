@@ -33,9 +33,7 @@ For additional management tasks related to UM auto attendants, see [Manage a UM 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to configure the group of users that callers can contact
+## Use the EAC to configure the group of users that callers can contact
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
@@ -43,13 +41,13 @@ For additional management tasks related to UM auto attendants, see [Manage a UM 
     
 3. On the **UM Auto Attendant** page \> **Address book and operator access**, under **Options for searching the address book**, choose from the following options:
     
-  - **In this dial plan only** Select this option to allow callers who connect to the UM auto attendant to locate and contact users who are in the dial plan associated with the UM auto attendant. 
+  - **In this dial plan only**: Select this option to allow callers who connect to the UM auto attendant to locate and contact users who are in the dial plan associated with the UM auto attendant. 
     
-  - **In the entire organization** Select this option to allow callers who connect to the UM auto attendant to locate and contact anyone listed in the organization's address book. This includes all users who are mailbox-enabled. 
+  - **In the entire organization**: Select this option to allow callers who connect to the UM auto attendant to locate and contact anyone listed in the organization's address book. This includes all users who are mailbox-enabled. 
     
 4. Click **Save**.
     
-### Use Exchange Online PowerShell to configure the group of users that callers can contact
+## Use Exchange Online PowerShell to configure the group of users that callers can contact
 
 This example sets the scope of the users that callers can contact to all users in the organization's address book on a UM auto attendant named `MyUMAutoAttendant`.
   

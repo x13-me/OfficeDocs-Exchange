@@ -43,9 +43,7 @@ For additional management tasks related to users who are enabled for voice mail,
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to add a primary or secondary E.164 number
+## Use the EAC to add a primary or secondary E.164 number
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
     
@@ -59,7 +57,7 @@ For additional management tasks related to users who are enabled for voice mail,
     
 6. Click **Save**.
     
-### Use Exchange Online PowerShell to add an E.164 number
+## Use Exchange Online PowerShell to add an E.164 number
 
 This example adds an E.164 number for Tony Smith, a UM-enabled user.
   

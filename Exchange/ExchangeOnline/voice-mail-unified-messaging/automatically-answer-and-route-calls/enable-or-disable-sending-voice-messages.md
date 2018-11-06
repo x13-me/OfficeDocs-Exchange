@@ -33,9 +33,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to enable callers to send voice messages or prevent them from doing so
+## Use the EAC to enable callers to send voice messages or prevent them from doing so
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
@@ -48,7 +46,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!NOTE]
 > If you disable this option and also disable the **Allow callers to dial users** option, the **Options for searching the address book** are also disabled. 
   
-### Use Exchange Online PowerShell to enable callers to send voice messages or prevent them from doing so
+## Use Exchange Online PowerShell to enable callers to send voice messages or prevent them from doing so
 
 This example prevents callers who call in to a UM auto attendant named `MyUMAutoAttendant` from sending voice messages. 
   

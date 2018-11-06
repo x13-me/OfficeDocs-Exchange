@@ -33,15 +33,13 @@ By default, when a Unified Messaging (UM) IP gateway is created, its status is s
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to enable a UM IP gateway
+## Use the EAC to enable a UM IP gateway
 
 1. In the EAC, navigate to \> **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway you want to enable, and then click the **Up arrow** ![Up Arrow Icon](../../media/ITPro_EAC_UpArrowIcon.gif).
     
 2. On the **Warning** page, click **Yes**.
     
-### Use Exchange Online PowerShell to enable a UM IP gateway
+## Use Exchange Online PowerShell to enable a UM IP gateway
 
 This example enables a UM IP gateway named `MyUMIPGateway`.
   

@@ -24,9 +24,7 @@ Set up an organization relationship to share calendar information with an extern
     
 - If you want to share calendars with an on-premises Exchange organization, the on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements.
     
-## What do you want to do?
-
-### Use the Exchange admin center to create an organization relationship
+## Use the Exchange admin center to create an organization relationship
 <a name="BKMK_EAC"> </a>
 
 1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
@@ -57,7 +55,7 @@ Set up an organization relationship to share calendar information with an extern
     
 7. Click **save** to create the organization relationship. 
     
-### Use Exchange Online PowerShell to create an organization relationship
+## Use Exchange Online PowerShell to create an organization relationship
 <a name="BKMK_Shell"> </a>
 
 This example creates an organization relationship with Contoso, Ltd with the following conditions:

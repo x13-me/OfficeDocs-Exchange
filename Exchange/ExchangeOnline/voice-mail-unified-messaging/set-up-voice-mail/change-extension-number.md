@@ -43,9 +43,7 @@ For additional management tasks related to users who are enabled for voice mail,
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to change the primary or secondary extension number
+## Use the EAC to change the primary or secondary extension number
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
     
@@ -57,7 +55,7 @@ For additional management tasks related to users who are enabled for voice mail,
     
 5. Click **Save**.
     
-### Use Exchange Online PowerShell to change the primary or secondary extension number
+## Use Exchange Online PowerShell to change the primary or secondary extension number
 
 This example changes the extension number to 22222 for Tony Smith, a UM-enabled user.
   

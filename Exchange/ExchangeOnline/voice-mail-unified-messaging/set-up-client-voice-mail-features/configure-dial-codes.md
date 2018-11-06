@@ -33,9 +33,7 @@ For additional management tasks related to outdialing, see [Allowing users to ma
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to configure dial codes, prefixes, and number formats
+## Use the EAC to configure dial codes, prefixes, and number formats
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
     
@@ -59,11 +57,11 @@ For additional management tasks related to outdialing, see [Allowing users to ma
     
   - **International number format**
     
-  - **Number formats for incoming calls within the same dial plan** To add a number format, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+  - **Number formats for incoming calls within the same dial plan**: To add a number format, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
 6. Click **Save** to save your changes. 
     
-### Use Exchange Online PowerShell to configure dial codes, prefixes, and number formats
+## Use Exchange Online PowerShell to configure dial codes, prefixes, and number formats
 
 This example configures a UM dial plan named `yUMDialPlan` with an in-country or region number format, an international number format, and the following dial codes: 
   

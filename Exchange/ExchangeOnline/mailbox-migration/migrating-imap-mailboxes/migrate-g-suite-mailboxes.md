@@ -53,9 +53,9 @@ In this task, you'll first verify to Office 365 that you own the domain you used
   
 Domain verification is a task you will go through as you setup Office 365. During the setup Office 365 setup wizard provides you with a TXT record you will add at your domain host provider. See [Add a domain to Office 365](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611) for the steps to complete in Office 365 admin center, and choose a domain registrar from the two following options to see how to complete add the TXT record that your DNS host provider. 
   
-- **Your current DNS host provider is Google.** If you purchased your domain from Google and they are the DNS hosting provider, follow these instructions: [Create DNS records when your domain is managed by Google (Go Daddy)](https://support.office.com/article/f1369214-9880-48c0-923c-d28eb795ef7b).
+- **Your current DNS host provider is Google**: If you purchased your domain from Google and they are the DNS hosting provider, follow these instructions: [Create DNS records when your domain is managed by Google (Go Daddy)](https://support.office.com/article/f1369214-9880-48c0-923c-d28eb795ef7b).
     
-- **You purchased your domain from another domain registrar.** If you purchased your domain from a different company, we provide [instructions](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx) for many popular domain hosting providers. 
+- **You purchased your domain from another domain registrar**: If you purchased your domain from a different company, we provide [instructions](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx) for many popular domain hosting providers. 
     
 ### Step 2: Add users to Office 365
 <a name="BK_Addusers"> </a>
@@ -185,7 +185,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Office 365 at 
     
 10. On the **Move configuration** page, type the *name*  (no spaces or special characters) of the migration batch in the box—for example, Test5-migration. The default migration batch name that's displayed is the name of the migration file that you specified. The migration batch name is displayed in the list on the migration dashboard after you create the migration batch.
     
-    You can also enter the names of the folders you want to exclude from migration. For example, Shared, Junk Email, and Deleted. Click **Add** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to add them to the excluded list. You can also use the edit icon ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to change a folder name and the remove icon ![Remove icon](../media/adf01106-cc79-475c-8673-065371c1897b.gif) to delete the folder name. 
+    You can also enter the names of the folders you want to exclude from migration. For example, Shared, Junk Email, and Deleted. Click **Add** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to add them to the excluded list. You can also click **Edit** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to change a folder name and **Delete** ![Remove icon](../media/adf01106-cc79-475c-8673-065371c1897b.gif) to delete the folder name. 
     
     ![Move configuration dialog](../media/0633521d-b0f9-44a1-8729-b40b1793d10e.png)
   

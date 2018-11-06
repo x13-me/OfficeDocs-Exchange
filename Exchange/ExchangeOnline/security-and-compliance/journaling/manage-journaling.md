@@ -44,11 +44,11 @@ Standard journaling is configured on a mailbox database. It enables the Journali
     
 2. In **Journal rule**, provide a name for the journal rule and then compete the following fields:
     
-  - **If the message is sent to or received from** Specify the recipient that the rule will target. You can either select a specific recipient or apply the rule to all messages. 
+  - **If the message is sent to or received from**: Specify the recipient that the rule will target. You can either select a specific recipient or apply the rule to all messages. 
     
-  - **Journal the following messages** Specify the scope of the journal rule. You can journal only the internal messages, only the external messages, or all messages regardless of origin or destination. 
+  - **Journal the following messages**: Specify the scope of the journal rule. You can journal only the internal messages, only the external messages, or all messages regardless of origin or destination. 
     
-  - **Send journal reports to** Type the address of the journaling mailbox that will receive all the journal reports. 
+  - **Send journal reports to**: Type the address of the journaling mailbox that will receive all the journal reports. 
     
     > [!NOTE]
     > You can also type the display name or alias of a mail user or a mail contact as the journal mailbox. In this case, journal reports will be sent to the external email address of the mail user or mail contact. But as previously explained, the external email address of a mail user or mail contact can't be the address of an Exchange Online mailbox. 

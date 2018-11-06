@@ -38,9 +38,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to change the PIN recycle count
+## Use the EAC to change the PIN recycle count
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
     
@@ -52,7 +50,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
     
 5. Click **Save**.
     
-### Use Exchange Online PowerShell to change the PIN recycle count
+## Use Exchange Online PowerShell to change the PIN recycle count
 
 This example sets the PIN recycle count on the UM mailbox policy `MyUMMailboxPolicy` to 10. 
   

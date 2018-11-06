@@ -39,9 +39,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to enable a customized business hours greeting
+## Use the EAC to enable a customized business hours greeting
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
@@ -54,7 +52,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
   
 4. After you've located the file, click **Open**, and then click **Save**.
     
-### Use Exchange Online PowerShell to enable a customized business hours greeting
+## Use Exchange Online PowerShell to enable a customized business hours greeting
 
 This example enables the business hours greeting that uses a customized greeting named `GreetingFile.wav` for the UM auto attendant `MyUMAutoAttendant`.
   

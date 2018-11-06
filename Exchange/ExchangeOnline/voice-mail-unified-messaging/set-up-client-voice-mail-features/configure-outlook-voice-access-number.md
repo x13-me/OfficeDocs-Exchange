@@ -47,9 +47,7 @@ For additional management tasks related to UM dial plans, see [Dial Plan Procedu
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to configure an Outlook Voice Access number
+## Use the EAC to configure an Outlook Voice Access number
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
     
@@ -61,7 +59,7 @@ For additional management tasks related to UM dial plans, see [Dial Plan Procedu
     
 5. Click **Save**.
     
-### Use Exchange Online PowerShell to configure an Outlook Voice Access number
+## Use Exchange Online PowerShell to configure an Outlook Voice Access number
 
 This example sets the Outlook Voice Access number to 4255550100 for a UM dial plan named `MyUMDialPlan`.
   

@@ -41,9 +41,7 @@ For additional management tasks related to Protected Voice Mail procedures, see 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to configure Protected Voice Mail from unauthenticated callers
+## Use the EAC to configure Protected Voice Mail from unauthenticated callers
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
@@ -51,15 +49,15 @@ For additional management tasks related to Protected Voice Mail procedures, see 
     
 3. On the **UM Mailbox Policy** page \> **Protected voice mail**, under **Protect voice message from unauthenticated callers**, select one of the following options:
     
-  - **None** Use this setting when you don't want protection applied to any voice messages sent to UM-enabled users. 
+  - **None**: Use this setting when you don't want protection applied to any voice messages sent to UM-enabled users. 
     
-  - **Private** Use this setting when you want Unified Messaging to apply protection only to voice messages that have been marked as private by the caller. 
+  - **Private**: Use this setting when you want Unified Messaging to apply protection only to voice messages that have been marked as private by the caller. 
     
-  - **All** Use this setting when you want Unified Messaging to apply protection to all voice messages, including those not marked as private. 
+  - **All**: Use this setting when you want Unified Messaging to apply protection to all voice messages, including those not marked as private. 
     
 4. Click **Save**.
     
-### Use Exchange Online PowerShell to configure Protected Voice Mail from unauthenticated callers
+## Use Exchange Online PowerShell to configure Protected Voice Mail from unauthenticated callers
 
 This example protects all voice messages from all unauthenticated callers on the UM mailbox policy `MyUMMailboxPolicy`.
   

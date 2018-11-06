@@ -31,15 +31,13 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to delete a UM mailbox policy
+## Use the EAC to delete a UM mailbox policy
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 2. On the **UM dial plan** page, under **UM Mailbox Policies**, on the toolbar, click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif).
     
-### Use Exchange Online PowerShell to delete a UM mailbox policy
+## Use Exchange Online PowerShell to delete a UM mailbox policy
 
 This example deletes a UM mailbox policy named `MyUMMailboxPolicy`.
   

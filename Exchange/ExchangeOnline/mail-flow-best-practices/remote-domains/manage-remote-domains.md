@@ -49,7 +49,7 @@ You can control the types and format of messages that are sent to domains outsid
     
 2. To create a new domain:
     
-  1. Select **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+  1. Select **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
   2. In the **Name** box, enter a descriptive name for the domain. 
     

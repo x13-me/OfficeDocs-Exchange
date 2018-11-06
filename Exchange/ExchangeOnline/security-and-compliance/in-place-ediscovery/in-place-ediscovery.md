@@ -29,13 +29,13 @@ In-Place eDiscovery uses the content indexes created by Exchange Search. Role Ba
   
 Authorized users can perform an In-Place eDiscovery search by selecting the mailboxes, and then specifying search criteria such as keywords, start and end dates, sender and recipient addresses, and message types. After the search is complete, authorized users can then select one of the following actions:
   
-- **Estimate search results** This option returns an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. 
+- **Estimate search results**: This option returns an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. 
     
-- **Preview search results** This option provides a preview of the results. Messages returned from each mailbox searched are displayed. 
+- **Preview search results**: This option provides a preview of the results. Messages returned from each mailbox searched are displayed. 
     
-- **Copy search results** This option lets you copy messages to a discovery mailbox. 
+- **Copy search results**: This option lets you copy messages to a discovery mailbox. 
     
-- **Export search results** After search results are copied to a discovery mailbox, you can export them to a PST file. 
+- **Export search results**: After search results are copied to a discovery mailbox, you can export them to a PST file. 
     
 ![Estimate, Preview, Copy, and Export Search Results](../../media/TA_Discovery_EstimatePreview.gif)
   
@@ -74,11 +74,11 @@ For In-Place eDiscovery, the only property on a user mailbox that you can use to
 
 Exchange Server and Exchange Online offer integration with SharePoint Server and SharePoint Online, allowing a discovery manager to use eDiscovery Center in SharePoint to perform the following tasks:
   
-- **Search and preserve content from a single location** An authorized discovery manager can search and preserve content across SharePoint and Exchange, including Lync content such as instant messaging conversations and shared meeting documents archived in Exchange mailboxes. 
+- **Search and preserve content from a single location**: An authorized discovery manager can search and preserve content across SharePoint and Exchange, including Lync content such as instant messaging conversations and shared meeting documents archived in Exchange mailboxes. 
     
 - **Case management** eDiscovery Center uses a case management approach to eDiscovery, allowing you to create cases and search and preserve content across different content repositories for each case. 
     
-- **Export search results** A discovery manager can use eDiscovery Center to export search results. Mailbox content included in search results is exported to a PST file. 
+- **Export search results**: A discovery manager can use eDiscovery Center to export search results. Mailbox content included in search results is exported to a PST file. 
     
 SharePoint also uses Microsoft Search Foundation for content indexing and querying. Regardless of whether a discovery manager uses the EAC or the eDiscovery Center to search Exchange content, the same mailbox content is returned.
   
@@ -106,13 +106,13 @@ For more information about the eDiscovery scenarios that require OAuth authentic
 
 After you create an In-Place eDiscovery search, you can copy the search results to a target mailbox. The EAC allows you to select a discovery mailbox as the target mailbox. A discovery mailbox is a special type of mailbox that provides the following functionality:
   
-- **Easier and secure target mailbox selection** When you use the EAC to copy In-Place eDiscovery search results, only discovery mailboxes are made available as a repository in which to store search results. You don't need to sort through a potentially long list of mailboxes available in the organization. This also eliminates the possibility of a discovery manager accidentally selecting another user's mailbox or an unsecured mailbox in which to store potentially sensitive messages. 
+- **Easier and secure target mailbox selection**: When you use the EAC to copy In-Place eDiscovery search results, only discovery mailboxes are made available as a repository in which to store search results. You don't need to sort through a potentially long list of mailboxes available in the organization. This also eliminates the possibility of a discovery manager accidentally selecting another user's mailbox or an unsecured mailbox in which to store potentially sensitive messages. 
     
-- **Large mailbox storage quota** The target mailbox should be able to store a large amount of message data that may be returned by an In-Place eDiscovery search. By default, discovery mailboxes have a mailbox storage quota of 50 gigabytes (GB). This storage quota can't be increased. 
+- **Large mailbox storage quota**: The target mailbox should be able to store a large amount of message data that may be returned by an In-Place eDiscovery search. By default, discovery mailboxes have a mailbox storage quota of 50 gigabytes (GB). This storage quota can't be increased. 
     
-- **More secure by default** Like all mailbox types, a discovery mailbox has an associated Active Directory user account. However, this account is disabled by default. Only users explicitly authorized to access a discovery mailbox have access to it. Members of the Discovery Management role group are assigned Full Access permissions to the default discovery mailbox. Any additional discovery mailboxes you create don't have mailbox access permissions assigned to any user. 
+- **More secure by default**: Like all mailbox types, a discovery mailbox has an associated Active Directory user account. However, this account is disabled by default. Only users explicitly authorized to access a discovery mailbox have access to it. Members of the Discovery Management role group are assigned Full Access permissions to the default discovery mailbox. Any additional discovery mailboxes you create don't have mailbox access permissions assigned to any user. 
     
-- **Email delivery disabled** Although visible in Exchange address lists, users can't send email to a discovery mailbox. Email delivery to discovery mailboxes is prohibited by using delivery restrictions. This preserves the integrity of search results copied to a discovery mailbox. 
+- **Email delivery disabled**: Although visible in Exchange address lists, users can't send email to a discovery mailbox. Email delivery to discovery mailboxes is prohibited by using delivery restrictions. This preserves the integrity of search results copied to a discovery mailbox. 
     
 Exchange Setup creates one discovery mailbox with the display name **Discovery Search Mailbox**. You can use Exchange Online PowerShell to create additional discovery mailboxes. By default, the discovery mailboxes you create won't have any mailbox access permissions assigned. You can assign Full Access permissions for a discovery manager to access messages copied to a discovery mailbox. For details, see [Create a discovery mailbox](create-a-discovery-mailbox.md).
   
@@ -132,15 +132,15 @@ When satisfied with the search results, you can copy them to a discovery mailbox
   
 When creating an In-Place eDiscovery search, you must specify the following parameters:
   
-- **Name** The search name is used to identify the search. When you copy search results to a discovery mailbox, a folder is created in the discovery mailbox using the search name and the timestamp to uniquely identify search results in a discovery mailbox. 
+- **Name**: The search name is used to identify the search. When you copy search results to a discovery mailbox, a folder is created in the discovery mailbox using the search name and the timestamp to uniquely identify search results in a discovery mailbox. 
     
-- **Mailboxes** You can choose to search all mailboxes in your Exchange Server or Exchange Online organization or specify the mailboxes to search. A user's primary and archive mailboxes are included in the search. If you also want to use the same search to place items on hold, you must specify the mailboxes. You can specify a distribution group to include mailbox users who are members of that group. Membership of the group is calculated once when creating the search and subsequent changes to group membership are not automatically reflected in the search. 
+- **Mailboxes**: You can choose to search all mailboxes in your Exchange Server or Exchange Online organization or specify the mailboxes to search. A user's primary and archive mailboxes are included in the search. If you also want to use the same search to place items on hold, you must specify the mailboxes. You can specify a distribution group to include mailbox users who are members of that group. Membership of the group is calculated once when creating the search and subsequent changes to group membership are not automatically reflected in the search. 
     
     In Exchange Online, you can also specify Office 365 groups as a content source so that the group mailbox is searched (or placed on hold). When you add an Office 365 group to an In-Place eDiscovery search, only the group mailbox is searched; the mailboxes of the group members aren't searched. 
     
-- **Search query** You can either include all mailbox content from the specified mailboxes or use a search query to return items that are more relevant to the case or investigation. You can specify the following parameters in a search query: 
+- **Search query**: You can either include all mailbox content from the specified mailboxes or use a search query to return items that are more relevant to the case or investigation. You can specify the following parameters in a search query: 
     
-  - **Keywords** You can specify keywords and phrases to search message content. You can also use the logical operators **AND**, **OR**, and **NOT**. Additionally, Exchange Server also supports the **NEAR** operator, allowing you to search for a word or phrase that's in proximity to another word or phrase. 
+  - **Keywords**: You can specify keywords and phrases to search message content. You can also use the logical operators **AND**, **OR**, and **NOT**. Additionally, Exchange Server also supports the **NEAR** operator, allowing you to search for a word or phrase that's in proximity to another word or phrase. 
     
     To search for an exact match of a multiple word phrase, you must enclose the phrase in quotation marks. For example, searching for the phrase "plan and competition" returns messages that contain an exact match of the phrase, whereas specifying **plan AND competition** returns messages that contain the words **plan** and **competition** anywhere in the message. 
     
@@ -151,11 +151,11 @@ When creating an In-Place eDiscovery search, you must specify the following para
   
     You must capitalize logical operators such as **AND** and **OR** for them to be treated as operators instead of keywords. We recommend that you use explicit parenthesis for any query that mixes multiple logical operators to avoid mistakes or misinterpretations. For example, if you want to search for messages that contain either WordA or WordB AND either WordC or WordD, you must use **(WordA OR WordB) AND (WordC OR WordD)**.
     
-  - **Start and End dates** By default, In-Place eDiscovery doesn't limit searches by a date range. To search messages sent during a specific date range, you can narrow the search by specifying the start and end dates. If you don't specify an end date, the search will return the latest results every time you restart it. 
+  - **Start and End dates**: By default, In-Place eDiscovery doesn't limit searches by a date range. To search messages sent during a specific date range, you can narrow the search by specifying the start and end dates. If you don't specify an end date, the search will return the latest results every time you restart it. 
     
-  - **Senders and recipients** To narrow down the search, you can specify the senders or recipients of messages. You can use email addresses, display names, or the name of a domain to search for items sent to or from everyone in the domain. For example, to find email sent by or sent to anyone at Contoso, Ltd, specify **@contoso.com** in the **From** or the **To/cc** field in the EAC. You can also specify **@contoso.com** in the _Senders_ or _Recipients_ parameters in Exchange Online PowerShell. 
+  - **Senders and recipients**: To narrow down the search, you can specify the senders or recipients of messages. You can use email addresses, display names, or the name of a domain to search for items sent to or from everyone in the domain. For example, to find email sent by or sent to anyone at Contoso, Ltd, specify **@contoso.com** in the **From** or the **To/cc** field in the EAC. You can also specify **@contoso.com** in the _Senders_ or _Recipients_ parameters in Exchange Online PowerShell. 
     
-  - **Message types** By default, all message types are searched. You can restrict the search by selecting specific message types such as email, contacts, documents, journal, meetings, notes and Lync content. 
+  - **Message types**: By default, all message types are searched. You can restrict the search by selecting specific message types such as email, contacts, documents, journal, meetings, notes and Lync content. 
     
 The following screenshot shows an example of a search query in the EAC.
   
@@ -163,18 +163,18 @@ The following screenshot shows an example of a search query in the EAC.
   
 When using In-Place eDiscovery, also consider the following:
   
-- **Attachments** In-Place eDiscovery searches attachments supported by Exchange Search. For details, see [Default Filters for Exchange Search](https://technet.microsoft.com/library/e5110ac1-28e1-4554-acc3-85d08c997bc5.aspx). In on-premises deployments, you can add support for additional file types by installing search filters (also known as an iFilter) for the file type on Mailbox servers.
+- **Attachments**: In-Place eDiscovery searches attachments supported by Exchange Search. For details, see [Default Filters for Exchange Search](https://technet.microsoft.com/library/e5110ac1-28e1-4554-acc3-85d08c997bc5.aspx). In on-premises deployments, you can add support for additional file types by installing search filters (also known as an iFilter) for the file type on Mailbox servers.
     
-- **Unsearchable items** Unsearchable items are mailbox items that can't be indexed by Exchange Search. Reasons they can't be indexed include the lack of an installed search filter for an attached file, a filter error, and encrypted messages. For a successful eDiscovery search, your organization may be required to include such items for review. When copying search results to a discovery mailbox or exporting them to a PST file, you can include unsearchable items. For more information, see [Unsearchable Items in Exchange eDiscovery](https://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx).
+- **Unsearchable items**: Unsearchable items are mailbox items that can't be indexed by Exchange Search. Reasons they can't be indexed include the lack of an installed search filter for an attached file, a filter error, and encrypted messages. For a successful eDiscovery search, your organization may be required to include such items for review. When copying search results to a discovery mailbox or exporting them to a PST file, you can include unsearchable items. For more information, see [Unsearchable Items in Exchange eDiscovery](https://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx).
     
-- **Encrypted items** Because messages encrypted using S/MIME aren't indexed by Exchange Search, In-Place eDiscovery doesn't search these messages. If you select the option to include unsearchable items in search results, these S/MIME encrypted messages are copied to the discovery mailbox. 
+- **Encrypted items**: Because messages encrypted using S/MIME aren't indexed by Exchange Search, In-Place eDiscovery doesn't search these messages. If you select the option to include unsearchable items in search results, these S/MIME encrypted messages are copied to the discovery mailbox. 
     
-- **IRM-protected items** Messages protected using Information Rights Management (IRM) are indexed by Exchange Search and therefore included in the search results if they match query parameters. Messages must be protected by using an Active Directory Rights Management Services (AD RMS) cluster in the same Active Directory forest as the Mailbox server. For more information, see [Information Rights Management](https://technet.microsoft.com/library/6ea3a695-3ddd-4d53-b3c6-90041f44ef64.aspx).
+- **IRM-protected items**: Messages protected using Information Rights Management (IRM) are indexed by Exchange Search and therefore included in the search results if they match query parameters. Messages must be protected by using an Active Directory Rights Management Services (AD RMS) cluster in the same Active Directory forest as the Mailbox server. For more information, see [Information Rights Management](https://technet.microsoft.com/library/6ea3a695-3ddd-4d53-b3c6-90041f44ef64.aspx).
     
     > [!IMPORTANT]
     > When Exchange Search fails to index an IRM-protected message, either due to a decryption failure or because IRM is disabled, the protected message isn't added to the list of failed items. If you select the option to include unsearchable items in search results, the results may not include IRM-protected messages that could not be decrypted. > > To include IRM-protected messages in a search, you can create another search to include messages with .rpmsg attachments. You can use the query string `attachment:rpmsg` to search all IRM-protected messages in the specified mailboxes, whether successfully indexed or not. This may result in some duplication of search results in scenarios where one search returns messages that match the search criteria, including IRM-protected messages that have been indexed successfully. The search doesn't return IRM-protected messages that couldn't be indexed. > > Performing a second search for all IRM-protected messages also includes the IRM-protected messages that were successfully indexed and returned in the first search. Additionally, the IRM-protected messages returned by the second search may not match the search criteria such as keywords used for the first search. 
   
-- **De-duplication** When copying search results to a discovery mailbox, you can enable de-duplication of search results to copy only one instance of a unique message to the discovery mailbox. De-duplication has the following benefits: 
+- **De-duplication**: When copying search results to a discovery mailbox, you can enable de-duplication of search results to copy only one instance of a unique message to the discovery mailbox. De-duplication has the following benefits: 
     
   - Lower storage requirement and smaller discovery mailbox size due to reduced number of messages copied.
     
@@ -194,13 +194,13 @@ You can also preview the search results to further ensure that messages returned
   
 After you're satisfied with the quantity and quality of search results, you can copy them to a discovery mailbox. When copying messages, you have the following options:
   
-- **Include unsearchable items** For details about the types of items that are considered unsearchable, see the eDiscovery search considerations in the previous section. 
+- **Include unsearchable items**: For details about the types of items that are considered unsearchable, see the eDiscovery search considerations in the previous section. 
     
-- **Enable de-duplication** De-duplication reduces the dataset by only including a single instance of a unique record if multiple instances are found in one or more mailboxes searched. 
+- **Enable de-duplication**: De-duplication reduces the dataset by only including a single instance of a unique record if multiple instances are found in one or more mailboxes searched. 
     
-- **Enable full logging** By default, only basic logging is enabled when copying items. You can select full logging to include information about all records returned by the search. 
+- **Enable full logging**: By default, only basic logging is enabled when copying items. You can select full logging to include information about all records returned by the search. 
     
-- **Send me mail when the copy is completed** An In-Place eDiscovery search can potentially return a large number of records. Copying the messages returned to a discovery mailbox can take a long time. Use this option to get an email notification when the copying process is completed. For easier access using Outlook Web App, the notification includes a link to the location in a discovery mailbox where the messages are copied. 
+- **Send me mail when the copy is completed**: An In-Place eDiscovery search can potentially return a large number of records. Copying the messages returned to a discovery mailbox can take a long time. Use this option to get an email notification when the copying process is completed. For easier access using Outlook Web App, the notification includes a link to the location in a discovery mailbox where the messages are copied. 
     
 For more information, see [Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx).
   
@@ -231,9 +231,9 @@ If you do experience dissimilar results for the same search, consider placing ma
 
 There are two types of logging available for In-Place eDiscovery searches:
   
-- **Basic logging** Basic logging is enabled by default for all In-Place eDiscovery searches. It includes information about the search and who performed it. Information captured about basic logging appears in the body of the email message sent to the mailbox where the search results are stored. The message is located in the folder created to store search results. 
+- **Basic logging**: Basic logging is enabled by default for all In-Place eDiscovery searches. It includes information about the search and who performed it. Information captured about basic logging appears in the body of the email message sent to the mailbox where the search results are stored. The message is located in the folder created to store search results. 
     
-- **Full logging** Full logging includes information about all messages returned by the search. This information is provided in a comma-separated value (.csv) file attached to the email message that contains the basic logging information. The name of the search is used for the .csv file name. This information may be required for compliance or record-keeping purposes. To enable full logging, you must select the **Enable full logging** option when copying search results to a discovery mailbox in the EAC. If you're using Exchange Online PowerShell, specify the full logging option using the _LogLevel_ parameter. 
+- **Full logging**: Full logging includes information about all messages returned by the search. This information is provided in a comma-separated value (.csv) file attached to the email message that contains the basic logging information. The name of the search is used for the .csv file name. This information may be required for compliance or record-keeping purposes. To enable full logging, you must select the **Enable full logging** option when copying search results to a discovery mailbox in the EAC. If you're using Exchange Online PowerShell, specify the full logging option using the _LogLevel_ parameter. 
     
 > [!NOTE]
 > When using Exchange Online PowerShell to create or modify an In-Place eDiscovery search, you can also disable logging. 

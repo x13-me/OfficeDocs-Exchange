@@ -173,7 +173,7 @@ When you select a specific message trace, additional information appears in the 
   
 ### View report details about a specific message more than 7 days old
 
-When you download and view a message trace report, either from the **View pending or completed traces** UI in the EAC or from a notification email, its contents depend on whether you have selected the **Include message events and routing details with report** option.
+When you download and view a message trace report, either from **View pending or completed traces** in the EAC or from a notification email, its contents depend on whether you have selected the **Include message events and routing details with report** option.
   
 > [!IMPORTANT]
 > In order to view the downloaded message trace report, you must have the "View-Only Recipients" RBAC role assigned to your role group. By default, the following role groups have this role assigned: Compliance Management, Help Desk, Hygiene Management, Organization Management, View-Only Organization Management.
@@ -281,7 +281,7 @@ A string beginning with S:TRA is an entry from the transport rule agent and prov
 |ETR\|ruleId=[guid]|The rule ID that was matched.|
 |St=[datetime]|The date and time (in UTC) when the rule match occurred.|
 |Action=[ActionDefinition]|The action that was applied. For a list of available actions, see [Mail flow rule actions in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rule-actions.md).|
-|Mode=Enforce|The mode of the rule. Possible values are:  <br/>• **Enforce:**: All actions on the rule will be enforced. <br/>• **Test with Policy Tips:**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on. <br/>• **Test without Policy Tips:**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.|
+|Mode=Enforce|The mode of the rule. Possible values are:  <br/>• **Enforce**: All actions on the rule will be enforced. <br/>• **Test with Policy Tips**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on. <br/>• **Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.|
    
 When a message matches a mail flow rule, a sample custom_data entry would look similar to the following:
   

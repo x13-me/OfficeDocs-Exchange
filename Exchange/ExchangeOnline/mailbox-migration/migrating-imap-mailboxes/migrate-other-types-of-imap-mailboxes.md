@@ -207,7 +207,7 @@ To migrate email successfully, Office 365 needs to connect and communicate with 
     
 5. On the **IMAP migration configuration** page, enter the following information: 
     
-  - **\* IMAP server** Type the *messaging server name*  (for example, imap.contoso.com) of the source email server. 
+  - **\* IMAP server**: Type the *messaging server name*  (for example, imap.contoso.com) of the source email server. 
     
   - Leave the remaining information as the default settings; these will work for most cases.
     
@@ -263,7 +263,7 @@ You use a migration batch to migrate groups of email to Office 365 mailboxes at 
     
     The default migration batch name that's displayed is the name of the migration file that you specified. The migration batch name is displayed in the list on the migration dashboard after you create the migration batch. 
     
-    You can also optionally enter the names of the folders you want to exclude from migrating, for example Shared, Junk Email, and Deleted. Click **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to add them to the excluded list. You can also edit and remove them by using the edit icon ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to change a folder name and the remove icon ![Remove icon](../media/adf01106-cc79-475c-8673-065371c1897b.gif) to delete a folder name. 
+    You can also optionally enter the names of the folders you want to exclude from migrating, for example Shared, Junk Email, and Deleted. Click **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to add them to the excluded list. You can also click **Edit** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to change a folder name and **Delete** ![Remove icon](../media/adf01106-cc79-475c-8673-065371c1897b.gif) to delete a folder name. 
     
     > [!IMPORTANT]
     > If you're migrating email from Microsoft Exchange Server, we recommend that you exclude public folders from the migration. If you don't, the contents of the public folders are copied to the Office 365 mailbox of every user in the migration file. 

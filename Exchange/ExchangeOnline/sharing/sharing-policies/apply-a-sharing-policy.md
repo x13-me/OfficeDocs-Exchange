@@ -24,9 +24,7 @@ Sharing policies control how your users share their calendars with people outsid
     
 - A sharing policy must exist. For details, see [Create a sharing policy in Exchange Online](create-a-sharing-policy.md).
     
-## What do you want to do?
-
-### Use the Exchange admin center to apply a sharing policy to one mailbox
+## Use the Exchange admin center to apply a sharing policy to one mailbox
 <a name="BKMK_EAC"> </a>
 
 1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
@@ -41,7 +39,7 @@ Sharing policies control how your users share their calendars with people outsid
     
 6. Click **save** to apply the sharing policy. 
     
-### Use the Exchange admin center to apply a sharing policy to multiple mailboxes
+## Use the Exchange admin center to apply a sharing policy to multiple mailboxes
 <a name="BKMK_EAC"> </a>
 
 1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
@@ -58,7 +56,7 @@ Sharing policies control how your users share their calendars with people outsid
     
 7. Click **save** to apply the sharing policy to the selected mailboxes. 
     
-### Use Exchange Online PowerShell to apply a sharing policy to one or more mailboxes
+## Use Exchange Online PowerShell to apply a sharing policy to one or more mailboxes
 <a name="BKMK_Shell"> </a>
 
 This example applies the sharing policy Contoso to Barbara's mailbox.
