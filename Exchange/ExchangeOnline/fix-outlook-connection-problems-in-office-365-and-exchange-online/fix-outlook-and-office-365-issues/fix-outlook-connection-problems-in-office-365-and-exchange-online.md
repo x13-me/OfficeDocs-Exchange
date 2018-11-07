@@ -48,13 +48,3 @@ Out-of-date software and corrupted Outlook profiles are two of the most common i
 |[![Monitor](../media/ee28b1cf-f0fa-420d-8480-fa1ceda550fe.png)](https://windows.microsoft.com/en-us/windows/is-computer-up-to-date)|**Run Windows Update**          <br/> | If your Outlook client software or Windows operating system software is out of date, you might have problems sending and receiving email. For Windows 8, use the following steps to run Windows Update. For instructions for Windows 7, see [How can I tell if my Windows computer is up to date?](https://go.microsoft.com/fwlink/?LinkID=618676) <br/>  Swipe from the right side of the screen, and choose **Search**.  <br/>  Type **Windows Update** in the search box.  <br/>  Tap or click **Settings**, and then tap or click **Install Optional Updates**. You might need to restart your computer.  <br/> |
 |[![Shows symbols of screwdriver and wrench.](../media/4217c379-67b5-49c2-b252-e625f45629f8.png)](https://support.office.com/article/4d5febf6-7623-486b-9a9f-d5cfc4264af3.aspx)|**Repair your Outlook profile** <br/> | An Outlook profile is a set of configuration information that includes your user name, password, and file storage location. Repair your Outlook profile by using the following steps.  <br/>  Choose **File**.  <br/>  Choose the down arrow for **Account Settings**, and then choose **Account Settings**.  <br/>  On the **Email** tab, choose your account (profile), and then choose **Repair**.  <br/>  Follow the prompts in the wizard, and when you're done, restart Outlook.  <br/> |
 |[![Settings](../media/7a603ec9-4a6c-4c60-9168-7549023cbd92.png)](https://go.microsoft.com/fwlink/p/?LinkID=402339)|**Check for service issues**          <br/> |**Admin only:** If more than one person in your organization is experiencing email problems in Office 365, it could be due to a problem with the service. Go to the [Office 365 service health dashboard page](https://go.microsoft.com/fwlink/p/?LinkID=402339) (admin sign in required), and check the status of the services under **Exchange Online**.  <br/> |
-   
-## Contact Support
-
-[![Get help from the Office 365 community forums](../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
-  
-[![Admins: Sign in and create a service request](../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)]( https://go.microsoft.com/fwlink/p/?LinkId=519124)
-  
-[![Admins: Call Support](../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
-  
-
