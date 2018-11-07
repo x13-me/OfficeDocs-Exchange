@@ -16,7 +16,7 @@ description: "Learn how to block Basic auth for client authentication in Exchang
 
 Basic authentication in Exchange Online uses a username and a password for client access requests. Blocking Basic authentication can help protect your Exchange Online organization from brute force or password spray attacks. When you disable Basic authentication for users in Exchange Online, their email clients and apps must support modern authentication. Those clients are:
   
-- Outlook 2013 or later (note [Outlook 2013 requires a registry key change](https://support.office.com/article7dc1c01a-090f-4971-9677-f1b192d6c910))
+- Outlook 2013 or later (note [Outlook 2013 requires a registry key change](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910))
 
 - Outlook 2016 for Mac or later
 
