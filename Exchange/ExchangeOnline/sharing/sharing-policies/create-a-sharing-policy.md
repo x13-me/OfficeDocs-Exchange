@@ -24,9 +24,7 @@ Create a new Sharing Policy to change how people in your organization share cale
     
 - Only Outlook 2010 or later and Outlook Web App users can create sharing invitations.
     
-## What do you want to do?
-
-### Use the wizard to create a sharing policy
+## Use the wizard to create a sharing policy
 <a name="BKMK_EAC"> </a>
 
 1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
@@ -61,7 +59,7 @@ Create a new Sharing Policy to change how people in your organization share cale
     
 11. Click **save** to create the sharing policy. 
     
-### Use Exchange Online PowerShell to create a sharing policy
+## Use Exchange Online PowerShell to create a sharing policy
 <a name="BKMK_Shell"> </a>
 
 - This example creates the sharing policy Contoso. This policy allows users in the contoso.com domain to see your user's detailed calendar availability (free/busy) information. By default, this policy is enabled.

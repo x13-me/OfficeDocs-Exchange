@@ -49,17 +49,17 @@ To implement specific messaging policies by using mail flow rules, see these top
 
 A mail flow rule is made of conditions, exceptions, actions, and properties:
   
-- **Conditions** Identify the messages that you want to apply the actions to. Some conditions examine message header fields (for example, the To, From, or Cc fields). Other conditions examine message properties (for example, the message subject, body, attachments, message size, or message classification). Most conditions require you to specify a comparison operator (for example, equals, doesn't equal, or contains) and a value to match. If there are no conditions or exceptions, the rule is applied to all messages. 
+- **Conditions**: Identify the messages that you want to apply the actions to. Some conditions examine message header fields (for example, the To, From, or Cc fields). Other conditions examine message properties (for example, the message subject, body, attachments, message size, or message classification). Most conditions require you to specify a comparison operator (for example, equals, doesn't equal, or contains) and a value to match. If there are no conditions or exceptions, the rule is applied to all messages. 
     
     For more information about mail flow rule conditions in Exchange Online, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
     
-- **Exceptions** Optionally identify the messages that the actions shouldn't apply to. The same message identifiers that are available in conditions are also available in exceptions. Exceptions override conditions and prevent the rule actions from being applied to a message, even if the message matches all of the configured conditions. 
+- **Exceptions**: Optionally identify the messages that the actions shouldn't apply to. The same message identifiers that are available in conditions are also available in exceptions. Exceptions override conditions and prevent the rule actions from being applied to a message, even if the message matches all of the configured conditions. 
     
-- **Actions** Specify what to do to messages that match the conditions in the rule, and don't match any of the exceptions. There are many actions available, such as rejecting, deleting, or redirecting messages, adding additional recipients, adding prefixes in the message subject, or inserting disclaimers in the message body. 
+- **Actions**: Specify what to do to messages that match the conditions in the rule, and don't match any of the exceptions. There are many actions available, such as rejecting, deleting, or redirecting messages, adding additional recipients, adding prefixes in the message subject, or inserting disclaimers in the message body. 
     
     For more information about mail flow rule actions that are available in Exchange Online, see [Mail flow rule actions in Exchange Online](mail-flow-rule-actions.md).
     
-- **Properties** Specify other rules settings that aren't conditions, exceptions or actions. For example, when the rule should be applied, whether to enforce or test the rule, and the time period when the rule is active. 
+- **Properties**: Specify other rules settings that aren't conditions, exceptions or actions. For example, when the rule should be applied, whether to enforce or test the rule, and the time period when the rule is active. 
     
      For more information, see the [Mail flow rule properties](mail-flow-rules.md#Properties) section in this topic. 
     
@@ -103,18 +103,16 @@ Each rule also offers the option of stopping processing more rules when the rule
 
 There are several types of messages that pass through an organization. The following table shows which messages types can be processed by mail flow rules.
   
-****
-
 |**Type of message**|**Can a rule be applied?**|
 |:-----|:-----|
-|**Regular messages** Messages that contain a single rich text format (RTF), HTML, or plain text message body or a multipart or alternative set of message bodies.|Yes|
-|**Office 365 Message Encryption** Messages encrypted by Office 365 Message Encryption in Office 365. For more information, see [Office 365 Message Encryption](https://go.microsoft.com/fwlink/p/?LinkId=392525).|Rules can always access envelope headers and process messages based on conditions that inspect those headers.  <br/> For a rule to inspect or modify the contents of an encrypted message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Enable or disable transport decryption](https://go.microsoft.com/fwlink/p/?linkid=848060).  <br/> You can also create a rule that automatically decrypts encrypted messages. For more information, see [Define rules to encrypt or decrypt email messages](https://go.microsoft.com/fwlink/p/?Linkid=402846).|
+|**Regular messages**: Messages that contain a single rich text format (RTF), HTML, or plain text message body or a multipart or alternative set of message bodies.|Yes|
+|**Office 365 Message Encryption**: Messages encrypted by Office 365 Message Encryption in Office 365. For more information, see [Office 365 Message Encryption](https://go.microsoft.com/fwlink/p/?LinkId=392525).|Rules can always access envelope headers and process messages based on conditions that inspect those headers.  <br/> For a rule to inspect or modify the contents of an encrypted message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Enable or disable transport decryption](https://go.microsoft.com/fwlink/p/?linkid=848060).  <br/> You can also create a rule that automatically decrypts encrypted messages. For more information, see [Define rules to encrypt or decrypt email messages](https://go.microsoft.com/fwlink/p/?Linkid=402846).|
 |**S/MIME encrypted messages**|Rules can only access envelope headers and process messages based on conditions that inspect those headers.  <br/> Rules with conditions that require inspection of the message's content, or actions that modify the message's content can't be processed.|
-|**RMS protected messages** Messages that had an Active Directory Rights Management Services (AD RMS) or Azure Rights Management (RMS) policy applied.|Rules can always access envelope headers and process messages based on conditions that inspect those headers.  <br/> For a rule to inspect or modify the contents of an RMS protected message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Enable or disable transport decryption](https://go.microsoft.com/fwlink/p/?linkid=848060).|
-|**Clear-signed messages** Messages that have been signed but not encrypted.|Yes|
-|**UM messages** Messages that are created or processed by the Unified Messaging service, such as voice mail, fax, missed call notifications, and messages created or forwarded by using Microsoft Outlook Voice Access.|Yes|
-|**Anonymous messages** Messages sent by anonymous senders.|Yes|
-|**Read reports** Reports that are generated in response to read receipt requests by senders. Read reports have a message class of `IPM.Note*.MdnRead` or `IPM.Note*.MdnNotRead`.|Yes|
+|**RMS protected messages**: Messages that had an Active Directory Rights Management Services (AD RMS) or Azure Rights Management (RMS) policy applied.|Rules can always access envelope headers and process messages based on conditions that inspect those headers.  <br/> For a rule to inspect or modify the contents of an RMS protected message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Enable or disable transport decryption](https://go.microsoft.com/fwlink/p/?linkid=848060).|
+|**Clear-signed messages**: Messages that have been signed but not encrypted.|Yes|
+|**UM messages**: Messages that are created or processed by the Unified Messaging service, such as voice mail, fax, missed call notifications, and messages created or forwarded by using Microsoft Outlook Voice Access.|Yes|
+|**Anonymous messages**: Messages sent by anonymous senders.|Yes|
+|**Read reports**: Reports that are generated in response to read receipt requests by senders. Read reports have a message class of `IPM.Note*.MdnRead` or `IPM.Note*.MdnNotRead`.|Yes|
    
 ## What else should I know?
 <a name="HowApplied"> </a>

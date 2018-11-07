@@ -25,7 +25,7 @@ Use audit logging to troubleshoot configuration issues by tracking specific chan
 
 On the **Compliance Management** \> **Auditing** page in the Exchange admin center (EAC), you can search for and export entries from the administrator audit log and the mailbox audit log. 
   
-- **Export the administrator audit log** Any action performed by an administrator that's based on a Shell cmdlet and doesn't begin with the verbs **Get**, **Search**, or **Test** is logged in the administrator audit log. Audit log entries include the cmdlet that was run, the parameter and values used with the cmdlet, and when the operation was successful. You can search for and export entries from the administrator audit log. When you export your search results, Microsoft Exchange saves them in an XML file and attaches it to an email message. For more information, see: 
+- **Export the administrator audit log**: Any action performed by an administrator that's based on an Exchange Online PowerShell cmdlet that doesn't begin with the verbs **Get**, **Search**, or **Test** is logged in the administrator audit log. Audit log entries include the cmdlet that was run, the parameter and values used with the cmdlet, and when the operation was successful. You can search for and export entries from the administrator audit log. When you export your search results, Microsoft Exchange saves them in an XML file and attaches it to an email message. For more information, see: 
     
   - [Search the role group changes or administrator audit logs](search-role-group-changes.md)
     
@@ -34,36 +34,36 @@ On the **Compliance Management** \> **Auditing** page in the Exchange admin cent
     > [!NOTE]
     > By default, admin audit log entries are kept for 90 days. When an entry is older than 90 days, it's deleted. This setting can't be changed in a cloud-based organization. However, it can be changed in an on-premises Exchange organization by using the **Set-AdminAuditLog** cmdlet. 
   
-- **Export mailbox audit logs** When mailbox audit logging is enabled for a mailbox, Microsoft Exchange stores a record of actions performed on mailbox data by non-owners in the mailbox audit log, which is stored in a hidden folder in the mailbox being audited. Mailbox audit logging can also be configure to log owner actions. Entries in this log indicate who accessed the mailbox and when, the actions performed, and whether the action was successful. When you search for entries in the mailbox audit log and export them, Microsoft Exchange saves the search results in an XML file and attaches it to an email message. For more information, see [Export mailbox audit logs](export-mailbox-audit-logs.md).
+- **Export mailbox audit logs**: When mailbox audit logging is enabled for a mailbox, Microsoft Exchange stores a record of actions performed on mailbox data by non-owners in the mailbox audit log, which is stored in a hidden folder in the mailbox being audited. Mailbox audit logging can also be configure to log owner actions. Entries in this log indicate who accessed the mailbox and when, the actions performed, and whether the action was successful. When you search for entries in the mailbox audit log and export them, Microsoft Exchange saves the search results in an XML file and attaches it to an email message. For more information, see [Export mailbox audit logs](export-mailbox-audit-logs.md).
     
 ## Run auditing reports
 <a name="runreports"> </a>
 
 When you run any of the following reports on the **Auditing** page in the EAC, the results are displayed in the details pane of the report. 
   
-- **Run a non-owner mailbox access report** Use this report to find mailboxes that have been accessed by someone other than the person who owns the mailbox. For more information, see [Run a non-owner mailbox access report](non-owner-mailbox-access-report.md).
+- **Run a non-owner mailbox access report**: Use this report to find mailboxes that have been accessed by someone other than the person who owns the mailbox. For more information, see [Run a non-owner mailbox access report](non-owner-mailbox-access-report.md).
     
-- **Run an administrator role group report** Use this report to search for changes made to administrator role groups. For more information, see [Search the role group changes or administrator audit logs](search-role-group-changes.md).
+- **Run an administrator role group report**: Use this report to search for changes made to administrator role groups. For more information, see [Search the role group changes or administrator audit logs](search-role-group-changes.md).
     
-- **Run an in-place discovery and hold report** Use this report to find mailboxes that have been put on, or removed from, In-Place Hold. For more information, see: 
+- **Run an in-place discovery and hold report**: Use this report to find mailboxes that have been put on, or removed from, In-Place Hold. For more information, see: 
     
   - [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md)
     
   - [In-Place eDiscovery](../../security-and-compliance/in-place-ediscovery/in-place-ediscovery.md)
     
-- **Run a per-mailbox litigation hold report** Use this report to find mailboxes that were put on, or removed from, litigation hold. For more information, see. 
+- **Run a per-mailbox litigation hold report**: Use this report to find mailboxes that were put on, or removed from, litigation hold. For more information, see. 
     
   - [Run a per-mailbox litigation hold report](per-mailbox-litigation-hold-report.md)
     
   - [Place a mailbox on Litigation Hold](https://technet.microsoft.com/library/adee4621-3626-4aec-aa53-00b35ff0d0b0.aspx)
     
-- **Run the admin audit log report** Use this report to view entries from the administrator audit log. Instead of exporting the administrator audit log, which can take up to 24 hours to receive in an email message, you can run this report in the EAC. This report records configuration changes made by administrators in your organization. Up to 5000 entries will be displayed on multiple pages. To narrow the search, you can specify a date range. For more information, see: 
+- **Run the admin audit log report**: Use this report to view entries from the administrator audit log. Instead of exporting the administrator audit log, which can take up to 24 hours to receive in an email message, you can run this report in the EAC. This report records configuration changes made by administrators in your organization. Up to 5000 entries will be displayed on multiple pages. To narrow the search, you can specify a date range. For more information, see: 
     
   - [View the administrator audit log](view-administrator-audit-log.md)
     
   - [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)
     
-- **Run the external admin audit log report** This report is only available in Exchange Online and Exchange Online Protection. Actions performed by Microsoft administrators or delegated administrators are logged in the administrator audit log. Use the external admin audit log report to search for and view the actions that administrators outside your organization performed on the configuration of your Exchange Online organization. For more information, see [View and export the external admin audit log](view-external-admin-audit-log.md).
+- **Run the external admin audit log report**: This report is only available in Exchange Online and Exchange Online Protection. Actions performed by Microsoft administrators or delegated administrators are logged in the administrator audit log. Use the external admin audit log report to search for and view the actions that administrators outside your organization performed on the configuration of your Exchange Online organization. For more information, see [View and export the external admin audit log](view-external-admin-audit-log.md).
     
 ## Configure audit logging
 <a name="setupauditing"> </a>

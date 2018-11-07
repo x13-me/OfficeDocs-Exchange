@@ -23,8 +23,6 @@ With the Direct to Calendar feature in Exchange Online, administrators can confi
     
 Direct to Calendar requires two mail flow rules with specific conditions and actions. These rules are described in the following table:
   
-****
-
 |**Rule description**|**Condition**|**Action**|**Comments**|
 |:-----|:-----|:-----|:-----|
 |This mail flow rule turns regular meeting invitations into Direct to Calendar meeting invitations.|**The sender is** or **The sender** \> **is this person** (the _From_ parameter).  <br/> This condition identifies the users who are authorized to send Direct to Calendar meeting invitations. Although you can use other conditions, restricting the invitations by sender helps prevent unauthorized use of Direct to Calendar meeting invitations.|**Set the message header to this value** or **Modify the message properties** \> **set a message header** (the _SetHeaderName_ and _SetHeaderValue_ parameters).  <br/> This action sets the **X-MS-Exchange-Organization-CalendarBooking-Response** header to the value `Accept`. Other valid values are `Tentative` and `Decline`.|We recommend that you use dedicated mailboxes (shared mailboxes are OK) for sending Direct to Calendar meeting invitations, because *any*  meeting invitations from these senders will be automatically added to recipient calendars.  <br/> The dedicated mailboxes require no special permissions to send Direct to Calendar meeting invitations.|
@@ -61,11 +59,11 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
   
 4. Configure these additional settings on the **New rule** page: 
     
-  - **Name** Direct to Calendar response (or anything descriptive). 
+  - **Name**: Direct to Calendar response (or anything descriptive). 
     
-  - **Apply this rule if** \> **The sender** \> **is this person** Select one or more users to send Direct to Calendar meeting invitations. 
+  - **Apply this rule if** \> **The sender** \> **is this person**: Select one or more users to send Direct to Calendar meeting invitations. 
     
-  - **Do the following** \> **Modify the message properties** \> **set a message header** Enter the following values: 
+  - **Do the following** \> **Modify the message properties** \> **set a message header**: Enter the following values: 
     
   - **Set the message header** `X-MS-Exchange-Organization-CalendarBooking-Response`
     
@@ -75,7 +73,7 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
     
     ![Settings for the Direct to Calendar capture mail flow rule.](../../media/52f4cb2c-5a86-46e7-a31b-231ae89931ab.png)
   
-5. Back at **Mail flow** \> **rules**, click **New** ( ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)) again, and then select **Create a new rule**.
+5. Back at **Mail flow** \> **Rules**, click **New** ( ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)) again, and then select **Create a new rule**.
     
 6. In the **New rule** page that opens, click **More options**.
     
@@ -83,11 +81,11 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
   
 7. Configure these additional settings on the **New rule** page: 
     
-  - **Name** Direct to Calendar triage action (or anything descriptive). 
+  - **Name**: Direct to Calendar triage action (or anything descriptive). 
     
-  - **Apply this rule if** \> **The sender** \> **is this person** Select the same users as in step 3. 
+  - **Apply this rule if** \> **The sender** \> **is this person**: Select the same users as in step 3. 
     
-  - **Do the following** \> **Modify the message properties** \> **set a message header** Enter the following values: 
+  - **Do the following** \> **Modify the message properties** \> **set a message header**: Enter the following values: 
     
   - **Set the message header** `X-MS-Exchange-Organization-CalendarBooking-TriageAction`
     

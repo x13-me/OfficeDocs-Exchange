@@ -19,9 +19,7 @@ description: "Find your mail flow scenario to see if you need to create a connec
 
 Find your mail flow scenario to see if you need to create a connector for your organization. 
   
-|
-|
-|****Scenario****|****What does this mean?****|****Connector required?****|****When creating the connectors, select these options****|
+|**Scenario**|**What does this mean?**|**Connector required?**|**When creating the connectors, select these options**|
 |:-----|:-----|:-----|:-----|
 |You have a standalone Exchange Online Protection (EOP) subscription.|You have your own email servers (also called on-premises servers), and you subscribe to EOP only for email protection services.  <br/> For details, check **Exchange Online Protection overview** and [How do Office 365 connectors work with my own email servers (also called "on-premises servers")?](set-up-connectors-to-route-mail.md#HowdoconnectorsinEOP) .|Yes|**Connector for incoming email:**         From: Your organization's email server          To: Office 365  <br/> **Connector for outgoing email**:           From: Office 365          To: Your organization mail server|
 |You have an Exchange Online subscription, and some of your mailboxes are on your email servers.|Some of your mailboxes are in Microsoft Exchange Online, and some are on your email servers (also called on-premises servers). Before you set up connectors, check whether you only need connectors or if an Exchange hybrid deployment better meets your business needs.  <br/> For details, check [What if I have EOP or Exchange Online and my own email servers?](use-connectors-to-configure-mail-flow.md#WhatifIhave1) and **Exchange Server Hybrid Deployments**.|Yes|**Connector for incoming email:**         From: Your organization's email server          To: Office 365  <br/> **Connector for outgoing email:**         From: Office 365          To: Your organization's email server|

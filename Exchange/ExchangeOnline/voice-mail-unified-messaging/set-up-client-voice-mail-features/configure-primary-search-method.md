@@ -34,9 +34,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to change the primary dial by name method
+## Use the EAC to change the primary dial by name method
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
     
@@ -54,7 +52,7 @@ For additional management tasks related to UM dial plans, see [UM Dial Plan Proc
     
 5. Click **Save**.
     
-### Use Exchange Online PowerShell to change the primary dial by name method
+## Use Exchange Online PowerShell to change the primary dial by name method
 
 This example sets the primary dial by name method to `FirstLast`. This enables callers who call the Outlook Voice Access number or a UM auto attendant associated with the dial plan to search for a UM-enabled user by their first and then last name.
   

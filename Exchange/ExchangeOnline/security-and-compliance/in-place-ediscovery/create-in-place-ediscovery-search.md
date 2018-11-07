@@ -57,9 +57,9 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
   
 5. On the **Search query** page, complete the following fields: 
     
-  - **Include all user mailbox content** Select this option to place all content in the selected mailboxes on hold. If you select this option, you can't specify additional search criteria. 
+  - **Include all user mailbox content**: Select this option to place all content in the selected mailboxes on hold. If you select this option, you can't specify additional search criteria. 
     
-  - **Filter based on criteria** Select this option to specify search criteria, including keywords, start and end dates, sender and recipient addresses, and message types. 
+  - **Filter based on criteria**: Select this option to specify search criteria, including keywords, start and end dates, sender and recipient addresses, and message types. 
     
     ![Configure eDiscovery Search Query](../../media/TA_MRM_SearchQuery.png)
   
@@ -68,9 +68,9 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
   
 6. On the **In-place hold settings** page, you can select the **Place content matching the search query in selected mailboxes on hold** check box, and then select one of the following options to place items on In-Place Hold: 
     
-  - **Hold indefinitely** Select this option to place the returned items on an indefinite hold. Items on hold will be preserved until you remove the mailbox from the search or remove the search. 
+  - **Hold indefinitely**: Select this option to place the returned items on an indefinite hold. Items on hold will be preserved until you remove the mailbox from the search or remove the search. 
     
-  - **Specify number of days to hold items relative to their received date** Use this option to hold items for a specific period. For example, you can use this option if your organization requires that all messages be retained for at least seven years. You can use a time-based In-Place Hold along with a retention policy to make sure items are deleted in seven years. 
+  - **Specify number of days to hold items relative to their received date**: Use this option to hold items for a specific period. For example, you can use this option if your organization requires that all messages be retained for at least seven years. You can use a time-based In-Place Hold along with a retention policy to make sure items are deleted in seven years. 
     
     > [!IMPORTANT]
     > When placing mailboxes or items on In-Place Hold for legal purposes, it is generally recommended to hold items indefinitely and remove the hold when the case or investigation is completed. 

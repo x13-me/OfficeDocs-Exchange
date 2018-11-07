@@ -28,21 +28,21 @@ We recommend that you don't use Outlook's PST export feature to migrate public f
   
 You'll perform the migration using the **\*-MigrationBatch** cmdlets, in addition to the following PowerShell scripts: 
   
-- `Export-PublicFolderStatistics.ps1` This script creates the folder name-to-folder size mapping file. You'll run this script on the legacy Exchange server. 
+- `Export-PublicFolderStatistics.ps1`: This script creates the folder name-to-folder size mapping file. You'll run this script on the legacy Exchange server. 
     
-- `Export-PublicFolderStatistics.psd1` This support file is used by the `Export-PublicFolderStatistics.ps1` script and should be downloaded to the same location. 
+- `Export-PublicFolderStatistics.psd1`: This support file is used by the `Export-PublicFolderStatistics.ps1` script and should be downloaded to the same location. 
     
-- `PublicFolderToMailboxMapGenerator.ps1` This script creates the public folder-to-mailbox mapping file by using the output from the `Export-PublicFolderStatistics.ps1` script. You'll run this script on the legacy Exchange server. 
+- `PublicFolderToMailboxMapGenerator.ps1`: This script creates the public folder-to-mailbox mapping file by using the output from the `Export-PublicFolderStatistics.ps1` script. You'll run this script on the legacy Exchange server. 
     
-- `PublicFolderToMailboxMapGenerator.strings.psd1` This support file is used by the `PublicFolderToMailboxMapGenerator.ps1` script and should be downloaded to the same location. 
+- `PublicFolderToMailboxMapGenerator.strings.psd1`: This support file is used by the `PublicFolderToMailboxMapGenerator.ps1` script and should be downloaded to the same location. 
     
-- `Create-PublicFolderMailboxesForMigration.ps1` This script creates the target public folder mailboxes for the migration. In addition, this script calculates the number of mailboxes necessary to handle the estimated user load, based on the guidelines for the number of user logons per public folder mailbox recommended in [Limits for Public Folders](https://technet.microsoft.com/library/709b075e-9584-484b-bcaa-e781c26497b4.aspx).
+- `Create-PublicFolderMailboxesForMigration.ps1`: This script creates the target public folder mailboxes for the migration. In addition, this script calculates the number of mailboxes necessary to handle the estimated user load, based on the guidelines for the number of user logons per public folder mailbox recommended in [Limits for Public Folders](https://technet.microsoft.com/library/709b075e-9584-484b-bcaa-e781c26497b4.aspx).
     
-- `Create-PublicFolderMailboxesForMigration.strings.psd1` This support file is used by the Create-PublicFolderMailboxesForMigration.ps1 script and should be downloaded to the same location. 
+- `Create-PublicFolderMailboxesForMigration.strings.psd1`: This support file is used by the Create-PublicFolderMailboxesForMigration.ps1 script and should be downloaded to the same location. 
     
-- `Sync-MailPublicFolders.ps1` This script synchronizes mail-enabled public folder objects between your local Exchange deployment and Office 365. You'll run this script on the legacy Exchange server. 
+- `Sync-MailPublicFolders.ps1`: This script synchronizes mail-enabled public folder objects between your local Exchange deployment and Office 365. You'll run this script on the legacy Exchange server. 
     
-- `SyncMailPublicFolders.strings.psd1` This is a support file used by the `Sync-MailPublicFolders.ps1` script and should be copied to the same location as the preceding scripts. 
+- `SyncMailPublicFolders.strings.psd1`: This is a support file used by the `Sync-MailPublicFolders.ps1` script and should be copied to the same location as the preceding scripts. 
     
 [Step 1: Download the migration scripts](batch-migration-of-legacy-public-folders.md#Scripts) provides details about where to download these scripts. Make sure all scripts are downloaded to the same location. 
   

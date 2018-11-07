@@ -33,9 +33,7 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to configure the maximum recording duration
+## Use the EAC to configure the maximum recording duration
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
     
@@ -47,7 +45,7 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
     
 5. Click **Save**.
     
-### Use Exchange Online PowerShell to configure the maximum recording duration
+## Use Exchange Online PowerShell to configure the maximum recording duration
 
 This example sets the maximum recording duration to 10 minutes for a UM dial plan named `MyUMDialPlan`.
   

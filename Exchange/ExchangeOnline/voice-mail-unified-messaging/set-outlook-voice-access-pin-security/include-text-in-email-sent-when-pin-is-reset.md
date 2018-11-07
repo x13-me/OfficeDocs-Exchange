@@ -38,9 +38,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to add text to the email message sent to users when their PIN is reset
+## Use the EAC to add text to the email message sent to users when their PIN is reset
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
@@ -50,7 +48,7 @@ For additional tasks related to Outlook Voice Access PIN security, see [PIN secu
     
 4. Click **Save**.
     
-### Use Exchange Online PowerShell to add text to the email message sent to users when their PIN is reset
+## Use Exchange Online PowerShell to add text to the email message sent to users when their PIN is reset
 
 This example includes the additional text, "Do not share your PIN with other users. Doing so may result in disciplinary action", in the email message sent to users who are associated with the UM mailbox policy `MyUMMailboxPolicy` when their PIN is reset. 
   

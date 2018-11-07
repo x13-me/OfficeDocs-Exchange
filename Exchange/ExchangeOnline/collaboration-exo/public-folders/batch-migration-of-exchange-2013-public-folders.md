@@ -25,28 +25,28 @@ Migrating your Exchange 2013 public folders to Exchange Online requires Exchange
 ## What do you need to know before you begin?
 
 - When you upgrade to Exchange Server 2013 CU15 or later, you must also prepare Active Directory or your public folder migration will fail. This Active Directory preparation ensures that all relevant PowerShell cmdlets and parameters are available to you for preparing and running the migration. See [Prepare Active Directory and Domains](https://technet.microsoft.com/library/f895e1ce-d766-4352-ac46-ec959c9954a9.aspx) for more information. 
-    
+
 - In Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Office 365 or Exchange Online. For details about how to enable the Organization Management role group, see [Manage Role Groups](https://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx).
-    
+
 - In Exchange Server 2013, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/p/?LinkId=299212). 
-    
+
 - Before you begin the public folder migration, if any single public folder in your organization is larger than 25 GB, we recommend that you delete content from that folder to make it smaller, or divide the public folder's content into multiple, smaller public folders. Note that the 25 GB limit cited here only applies to the public folder and not to any child or sub-folders the folder in question may have. If neither option is feasible, we recommend that you do not move your public folders to Exchange Online. See [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=391188) for more information. 
-    
+
     > [!NOTE]
     > If your current public folder quotas in Exchange Online are less than 25 GB, you can use the [Set-OrganizationConfig cmdlet](https://go.microsoft.com/fwlink/p/?linkid=844062) to increase them with the DefaultPublicFolderIssueWarningQuota and DefaultPublicFolderProhibitPostQuota parameters. 
   
 - In Office 365 and Exchange Online, you can create a maximum of 1000 public folder mailboxes.
-    
+
 - If you intend to migrate users to Office 365, you should complete your user migration prior to migrating your public folders. For more information, see [Ways to migrate multiple email accounts to Office 365](https://go.microsoft.com/fwlink/p/?linkid=842798).
-    
+
 - MRS Proxy needs to be enabled on at least one Exchange server, a server that is also hosting public folder mailboxes. See [Enable the MRS Proxy Endpoint for Remote Moves](https://technet.microsoft.com/library/9840f712-127e-4c2d-bfe5-1b35cdb2a31b.aspx) for details. 
-    
+
 - To perform the migration procedures in this article, you can't use the Exchange admin center (EAC). Instead, you need to use the Exchange Management Shell on your Exchange 2013 servers. In Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=842801).
-    
+
 - Migrating deleted items and deleted folders from Exchange 2013 to Exchange Online is supported. Before you begin your migration, we recommend that you review all deleted folders and folder items and permanently delete anything you won't need in Exchange Online. Note that once something is permanently deleted, it can't be recovered.
-    
+
   You can use the following commands to list deleted public folders present in the Exchange dumpster (in your Exchange on-premises environment):
-    
+
     ```
     Get-PublicFolder \NON_IPM_SUBTREE\DUMPSTER_ROOT -Recurse | ?{$_.FolderClass -ne "$null"} | ft name,foldersize
     ```
@@ -93,7 +93,7 @@ The scripts and files you're downloading are:
 
 Perform all prerequisite steps in the following sections before you begin the public folder migration.
   
-**General prerequisite steps**
+### General prerequisite steps
   
 For your migration to be successful, you should:
   
@@ -103,7 +103,7 @@ For your migration to be successful, you should:
     
 - Confirm that there are no duplicate public folder objects in Active Directory. This is necessary to avoid having two or more Active Directory objects that are pointing to the same mail-enabled public folder.
     
-**Prerequisite steps in the on-premises Exchange 2013 server environment**
+### Prerequisite steps in the on-premises Exchange 2013 server environment
   
 In the Exchange Management Shell (on-premises) perform the following steps:
   
@@ -124,13 +124,13 @@ In the Exchange Management Shell (on-premises) perform the following steps:
     To check if the accepted domain is already present in your on-premises environment:
     
   ```
-  Get-AcceptedDomain | Where { $_.DomainName -eq "<target domain>" }
- ```
+  Get-AcceptedDomain | Where {$_.DomainName -eq "<target domain>"}
+  ```
 
     To rename the accepted domain to `PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99`, run the following:
     
   ```
-  Get-AcceptedDomain | Where { $_.DomainName -eq "<target domain>" } | Set-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99
+  Get-AcceptedDomain | Where {$_.DomainName -eq "<target domain>"} | Set-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99
   ```
 
   > [!NOTE]
@@ -199,7 +199,7 @@ In the Exchange Management Shell (on-premises) perform the following steps:
     ```
 
   - Save the files generated from the preceding commands in a safe place in order to make a comparison at the end of the migration.
-    
+
 5. If you are using Microsoft Azure Active Directory Connect (Azure AD Connect) to synchronize your on-premises directories with Azure Active Directory, you must take the following actions (if you are not using Azure AD Connect, you can skip this step):
     
   1. On an on-premises computer, open Microsoft Azure Active Directory Connect, and then select **Configure**.
@@ -215,7 +215,7 @@ In the Exchange Management Shell (on-premises) perform the following steps:
   
   5. After you have cleared the **Exchange Mail Public Folders** selection, keep clicking **Next** until you are on the **Ready to configure** screen, and then click **Configure**.
     
-**Prerequisite steps in Exchange Online**
+### Prerequisite steps in Exchange Online
   
 In Exchange Online PowerShell, do the following:
   
@@ -314,13 +314,13 @@ Use the previously downloaded scripts to generate the .csv files that will be us
     .\ModernPublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes><Maximum mailbox recoverable item size in bytes><Folder-to-size map path><Folder-to-mailbox map path>
     ```
 
-  - `Maximum mailbox size in bytes` is the maximum amount of data you want to migrate into any single public folder mailbox in Exchange Online. The maximum size of this field is currently 50 GB, but we recommend you use a smaller size, such as 50% of maximum size, to allow for future growth. 
+  - \<Maximum mailbox size in bytes\> is the maximum amount of data you want to migrate into any single public folder mailbox in Exchange Online. The maximum size of this field is currently 50 GB, but we recommend you use a smaller size, such as 50% of maximum size, to allow for future growth. 
     
-  - `Maximum mailbox recoverable items size in bytes` is the recoverable items quota on your Exchange Online mailboxes. The maximum size of public folder mailboxes In Exchange Online is currently 50 GB. We recommend setting ` RecoverableItemsQuota ` to 15 GB or less. 
+  - \<Maximum mailbox recoverable items size in bytes\> is the recoverable items quota on your Exchange Online mailboxes. The maximum size of public folder mailboxes In Exchange Online is currently 50 GB. We recommend setting _RecoverableItemsQuota_ `_ to 15 GB or less. 
     
-  - `Folder-to-size map path` is the file path of the .csv file you created when you ran the `Export-ModernPublicFolderStatistics.ps1` script. 
+  - \<Folder-to-size map path\> is the file path of the .csv file you created when you ran the `Export-ModernPublicFolderStatistics.ps1` script. 
     
-  - `Folder-to-mailbox map path` is the file path of the folder-to-mailbox .csv file that you are creating in this step. If you only specify a file name, the file will be generated in the current PowerShell directory on the local computer. 
+  - \<Folder-to-mailbox map path\> is the file path of the folder-to-mailbox .csv file that you are creating in this step. If you only specify a file name, the file will be generated in the current PowerShell directory on the local computer. 
     
 **Example**:
   
@@ -358,9 +358,9 @@ A number of commands now need to be run in your Exchange 2013 on-premises enviro
     .\Sync-ModernMailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
     ```
 
-  - `Credential` is your Exchange Online administrative username and password. 
+  - You're prompted for your Exchange Online administrative username and password. 
     
-  - `CsvSummaryFile` is the file path to where you want your log file of synchronization operations and errors located. The log will be in .csv format. 
+  - _CsvSummaryFile_ is the file path to where you want your log file of synchronization operations and errors located. The log will be in .csv format. 
     
 2. On the Exchange 2013 server, find the MRS proxy endpoint server and make note of it. You will need this information to run the migration request. Save this information for step 3b below.
     

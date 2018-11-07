@@ -31,9 +31,9 @@ In Exchange Online, the permissions that you grant to administrators and users a
   
 Administrative roles and end-user roles are the two types of management roles. Following is a brief description of each type:
   
-- **Administrative roles** These roles contain permissions that can be assigned to administrators or specialist users using role groups that manage a part of the Exchange Online organization, such as recipients, compliance management, or Unified Messaging. 
+- **Administrative roles**: These roles contain permissions that can be assigned to administrators or specialist users using role groups that manage a part of the Exchange Online organization, such as recipients, compliance management, or Unified Messaging. 
     
-- **End-user roles** These roles, which are assigned using role assignment policies, enable users to manage aspects of their own mailbox and distribution groups that they own. End-user roles begin with the prefix `My`.
+- **End-user roles**: These roles, which are assigned using role assignment policies, enable users to manage aspects of their own mailbox and distribution groups that they own. End-user roles begin with the prefix `My`.
     
 Management roles give permissions to perform tasks to administrators and users by making cmdlets available to those who are assigned the roles. Because the Exchange admin center (EAC) and Exchange Online PowerShell use cmdlets to manage Exchange Online, granting access to a cmdlet gives the administrator or user permission to perform the task in each of the Exchange Online management interfaces.
   
@@ -47,9 +47,9 @@ Exchange Online includes approximately 45 roles that you can use to grant permis
 
 Management roles grant permissions to perform tasks in Exchange Online, but you need an easy way to assign them to administrators and users. Exchange Online provides you with the following to help you make assignments:
   
-- **Role groups** Role groups enable you to grant permissions to administrators and specialist users. 
+- **Role groups**: Role groups enable you to grant permissions to administrators and specialist users. 
     
-- **Role assignment policies** Role assignment policies enable you to grant permissions to end users to change settings on their own mailbox or distribution groups that they own. 
+- **Role assignment policies**: Role assignment policies enable you to grant permissions to end users to change settings on their own mailbox or distribution groups that they own. 
     
 The following sections provide more information about role groups and role assignment policies.
   

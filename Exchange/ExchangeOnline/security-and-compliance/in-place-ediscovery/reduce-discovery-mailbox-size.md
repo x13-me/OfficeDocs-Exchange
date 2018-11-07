@@ -88,20 +88,20 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
 
     This example uses the following parameters:
     
-  - _Name_ This parameter specifies the name of the new eDiscovery search. Because the search is scoped by sent and received dates, it's useful that the name of the search includes the date range. 
+  - _Name_: This parameter specifies the name of the new eDiscovery search. Because the search is scoped by sent and received dates, it's useful that the name of the search includes the date range. 
     
-  - _SourceMailboxes_ This parameter specifies the default discovery mailbox. You can also specify the name of another discovery mailbox that's exceeded the size limit. 
+  - _SourceMailboxes_: This parameter specifies the default discovery mailbox. You can also specify the name of another discovery mailbox that's exceeded the size limit. 
     
-  - _StartDate_ and _EndDate_ These parameters specify the date range of the search results in the default discovery mailbox to include in the search results. 
+  - _StartDate_ and _EndDate_: These parameters specify the date range of the search results in the default discovery mailbox to include in the search results. 
     
     > [!NOTE]
     > For dates, use the short date format, mm/dd/yyyy, even if the Regional Options settings on the local computer are configured with a different format, such as dd/mm/yyyy. For example, use **03/01/2014** to specify March 1, 2014. 
   
-  - _TargetMailbox_ This parameter specifies that search results should be copied to the discovery mailbox named "Discovery Mailbox Backup 01". 
+  - _TargetMailbox_: This parameter specifies that search results should be copied to the discovery mailbox named "Discovery Mailbox Backup 01". 
     
-  - _EstimateOnly_ This switch specifies that only an estimate of the number of items that will be returned is provided when the search is started. If you don't include this switch, messages are copied to the target mailbox when the search is started. Using this switch lets you adjust the date ranges if necessary to increase or decrease the number of search results. 
+  - _EstimateOnly_: This switch specifies that only an estimate of the number of items that will be returned is provided when the search is started. If you don't include this switch, messages are copied to the target mailbox when the search is started. Using this switch lets you adjust the date ranges if necessary to increase or decrease the number of search results. 
     
-  - _StatusMailRecipients_ This parameter specifies that the status message should be sent to the specified recipient. 
+  - _StatusMailRecipients_: This parameter specifies that the status message should be sent to the specified recipient. 
     
 2. After the search is created, start it by using Exchange Online PowerShell or the Exchange admin center (EAC).
     

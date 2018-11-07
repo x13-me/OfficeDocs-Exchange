@@ -60,17 +60,17 @@ To add a new mail contact, [use a screen reader to open the EAC](https://technet
     
 5. Press Spacebar, and then press the Down Arrow key until you hear "Mail contact." Then, press Enter. The **new mail contact** window opens. 
     
-    **Note** In Narrator, if the menu options for the **New** button are not read, you hear "Empty line." **Mail contact** is the first option. **Mail user** is the second option. When you select **Mail contact**, if Narrator doesn't announce the name of the **new mail contact** window or the **First name** box, to refresh the window and reestablish the focus, press F5. 
+    **Note**: In Narrator, if the menu options for the **New** button are not read, you hear "Empty line." **Mail contact** is the first option. **Mail user** is the second option. When you select **Mail contact**, if Narrator doesn't announce the name of the **new mail contact** window or the **First name** box, to refresh the window and reestablish the focus, press F5. 
     
 6. Tab to the following boxes, and complete the contact information:
     
-    **Note** Required boxes are designated with an asterisk. In screen readers, you hear "star" or "asterisk" before the label. For example, in the required **Display Name** box, you hear "Star display name" or "Asterisk display name." 
+    **Note**: Required boxes are designated with an asterisk. In screen readers, you hear "star" or "asterisk" before the label. For example, in the required **Display Name** box, you hear "Star display name" or "Asterisk display name." 
     
   - **First name**. Type the contact's first name. 
     
   - **Initials**. Type the contact's initials 
     
-  - **Last name.** Type the contact's last name. 
+  - **Last name**: Type the contact's last name. 
     
   - **\*Display name**. To change the default, type the name as it will appear in the **contacts** list in the EAC and in your organization's address book. By default, Exchange uses the names you entered in the **First name**, **Initials**, and **Last name** boxes. This name can't exceed 64 characters. 
     

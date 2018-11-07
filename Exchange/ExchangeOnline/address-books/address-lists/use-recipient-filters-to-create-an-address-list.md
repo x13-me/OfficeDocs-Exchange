@@ -26,7 +26,7 @@ For additional management tasks related to address lists, see [Managing Address 
     
 - By default in Exchange Online, the Address List role isn't assigned to any role groups. To use any cmdlets that require the Address List role, you need to add the role to a role group. For more information, see the "Add a role to a role group" section in the topic, **Manage role groups**.
     
-- To use the _RecipientFilter_ parameter to create a custom filter, you must specify a string for the filter. The Shell uses OPATH for the filtering syntax. OPATH is a querying language designed to query object data sources. 
+- To use the _RecipientFilter_ parameter to create a custom filter, you must specify a string for the filter. The Exchange Online PowerShell uses OPATH for the filtering syntax. OPATH is a querying language designed to query object data sources. 
     
 - You can't use the Exchange admin center (EAC) to perform this procedure. You must use Exchange Online PowerShell.
     

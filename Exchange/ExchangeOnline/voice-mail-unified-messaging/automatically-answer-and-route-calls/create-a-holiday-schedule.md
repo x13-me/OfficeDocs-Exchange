@@ -35,9 +35,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to specify a holiday schedule for a UM auto attendant
+## Use the EAC to specify a holiday schedule for a UM auto attendant
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then on the toolbar, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
@@ -47,17 +45,17 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
     
 4. On the **New Holiday** page, configure the following: 
     
-  - **Name** Enter a name for your holiday schedule. 
+  - **Name**: Enter a name for your holiday schedule. 
     
-  - **Holiday greeting** Browse to the .wav file you want to use as your greeting. This is a required field. 
+  - **Holiday greeting**: Browse to the .wav file you want to use as your greeting. This is a required field. 
     
-  - **Start date** Use this list to select the date you want the holiday to start. The holiday schedule will start at midnight on the date specified in this list. 
+  - **Start date**: Use this list to select the date you want the holiday to start. The holiday schedule will start at midnight on the date specified in this list. 
     
-  - **End date** Use this list to select the date you want the holiday to end. The holiday schedule will end at 11:59 P.M. on the date specified in this list. 
+  - **End date**: Use this list to select the date you want the holiday to end. The holiday schedule will end at 11:59 P.M. on the date specified in this list. 
     
 5. After you've configured your holiday schedule, click **OK**, and then click **Save**.
     
-### Use Exchange Online PowerShell to specify a holiday schedule for a UM auto attendant
+## Use Exchange Online PowerShell to specify a holiday schedule for a UM auto attendant
 
 This example configures a UM auto attendant named `MyUMAutoAttendant` that has business hours configured to be 10:45 to 13:15 (Sunday), 09:00 to 17:00 (Monday), and 09:00 to 16:30 (Saturday), and holiday times and their associated greetings configured to be "New Year" on January 2, 2013, and "Building Closed for Construction" from April 24, 2013 through April 28, 2013. 
   

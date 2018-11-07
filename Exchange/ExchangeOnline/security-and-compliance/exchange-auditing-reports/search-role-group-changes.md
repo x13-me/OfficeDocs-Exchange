@@ -49,9 +49,7 @@ If you want to search the mailbox audit log, see [Mailbox Audit Logging](https:/
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-
-### Use the EAC to run the management role group changes report
+## Use the EAC to run the management role group changes report
 <a name="EACRGReport"> </a>
 
 If you want to know what changes to management role group membership have been made to role groups in your organization, you can use the Administrator Role Group report in the Exchange admin center (EAC). Using the Administrator Role Group report, you can view a list of role groups that have changed during a specified date range. You can also select the specific role groups you want to view changes for.
@@ -66,7 +64,7 @@ If you want to know what changes to management role group membership have been m
     
 If any changes are found using the criteria you specified, a list of changes will be displayed in the results pane. Clicking a role group displays the changes to the role group in the details pane. 
   
-### Use the EAC to export the administrator audit log
+## Use the EAC to export the administrator audit log
 <a name="EACAdminReport"> </a>
 
 If you want to create an XML file that contains changes made to your organization, you can use the Export Administrator Audit Log report in the EAC. Using the Export Administrator Audit Log report, you can specify a date range to search for audit log entries that contain changes made by users you specify. The XML file is then sent to a recipient as an email attachment. The maximum size of the XML file is 10 megabytes (MB).
@@ -84,7 +82,7 @@ If you want to create an XML file that contains changes made to your organizatio
     
 If any log entries are found using the criteria you specified, an XML file will be created and sent as an email attachment to the recipient you specified.
   
-### Use Exchange Online PowerShell to search for audit log entries
+## Use Exchange Online PowerShell to search for audit log entries
 <a name="SearchAdminAuditLog"> </a>
 
 You can use Exchange Online PowerShell to search for audit log entries that meet the criteria you specify. For a list of search criteria, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). This procedure uses the **Search-AdminAuditLog** cmdlet and displays search results in Exchange Online PowerShell. You can use this cmdlet when you need to return a set of results that exceeds the limits defined on the **New-AdminAuditLogSearch** cmdlet or in the EAC Audit Reporting reports. 
@@ -132,7 +130,7 @@ If your searches return many log entries, we recommend that you use the procedur
   
 For detailed syntax and parameter information, see [Search-AdminAuditLog](https://technet.microsoft.com/library/87a0cd2d-dd59-4098-b740-75f0cc7bf8e7.aspx).
   
-#### View details of audit log entries
+### View details of audit log entries
 
 The **Search-AdminAuditLog** cmdlet returns the fields described in the "Audit log contents section of [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). Of the fields returned by the cmdlet, two fields, **CmdletParameters** and **ModifiedProperties**, contain additional information that isn't viewable by default. 
   
@@ -165,7 +163,7 @@ This procedure uses the following concepts:
 
 4. To view the contents of the **CmdletParameters** or **ModifiedParameters** fields in another log entry, change the array element index. 
     
-### Use Exchange Online PowerShell to search for audit log entries and send results to a recipient
+## Use Exchange Online PowerShell to search for audit log entries and send results to a recipient
 <a name="NewAdminAuditLogSearch"> </a>
 
 You can use Exchange Online PowerShell to search for audit log entries that meet the criteria you specify, and then send those results to a recipient you specify as an XML file attachment. The results are sent to the recipient within 15 minutes. For a list of search criteria, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). 

@@ -34,9 +34,7 @@ To learn more about organization relationships, see [Organization relationships 
     
   - Change the free/busy access level from _Calendar free/busy information with time, subject, and location_ to _Calendar free/busy information with time only_.
     
-## What do you want to do?
-
-### Use the Exchange admin center to add a domain to an organization relationship
+## Use the Exchange admin center to add a domain to an organization relationship
 <a name="BKMK_EAC"> </a>
 
 1. From the Office 365 admin center go to **Admin** \> **Exchange**.
@@ -51,7 +49,7 @@ To learn more about organization relationships, see [Organization relationships 
     
 6. Click **save** to update the organization relationship. 
     
-### Use the Exchange admin center to disable free/busy sharing for the organization relationship
+## Use the Exchange admin center to disable free/busy sharing for the organization relationship
 <a name="BKMK_EAC2"> </a>
 
 1. From the Office 365 admin center go to **Admin** \> **Exchange**.
@@ -66,7 +64,7 @@ To learn more about organization relationships, see [Organization relationships 
     
 6. Click **save** to update the organization relationship. 
     
-### Use the Exchange admin center to change the free/busy access level for the organization relationship
+## Use the Exchange admin center to change the free/busy access level for the organization relationship
 <a name="BKMK_EAC3"> </a>
 
 1. From the Office 365 admin center go to **Admin** \> **Exchange**.
@@ -81,7 +79,7 @@ To learn more about organization relationships, see [Organization relationships 
     
 6. Click **save** to update the organization relationship. 
     
-### Use Exchange Online PowerShell to modify the organization relationship
+## Use Exchange Online PowerShell to modify the organization relationship
 <a name="BKMK_Shell"> </a>
 
 - This example adds the domain name service.contoso.com to the organization relationship Contoso.

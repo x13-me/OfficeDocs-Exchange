@@ -71,12 +71,12 @@ If you plan to migrate lots of users, decide which ones to include in each batch
 
 In the CSV file, you have to provide the username and password for the user's on-premises account. This enables the migration process to access the account. There are two ways to do this:
   
-- **Use user credentials.** This requires that you obtain users' passwords or that you change their passwords to a value that you know so you can include it in the CSV file. 
+- **Use user credentials**: This requires that you obtain users' passwords or that you change their passwords to a value that you know so you can include it in the CSV file. 
     
     > [!TIP]
     > If you use this option, prevent users from changing the passwords of their on-premises accounts. If users change their passwords after the initial migration, subsequent synchronizations between the mailboxes on the IMAP server and Office 365 mailboxes will fail. 
   
-- **Use super-user or administrator credentials.** This requires that you use an account in your IMAP messaging system that has the necessary rights to access all user mailboxes. In the CSV file, you use the credentials for this account for each row. To learn whether your IMAP server supports this approach and how to enable it, see the documentation for your IMAP server. 
+- **Use super-user or administrator credentials**: This requires that you use an account in your IMAP messaging system that has the necessary rights to access all user mailboxes. In the CSV file, you use the credentials for this account for each row. To learn whether your IMAP server supports this approach and how to enable it, see the documentation for your IMAP server. 
     
     > [!NOTE]
     > It's a good idea to use administrator credentials because it doesn't affect or inconvenience users. For example, it won't matter if users change their passwords after the initial migration. 

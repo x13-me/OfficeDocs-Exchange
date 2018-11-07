@@ -42,9 +42,7 @@ For additional management tasks related to Call Answering Rules, see [Forwarding
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use Exchange Online PowerShell to view a call answering rule
+## Use Exchange Online PowerShell to view a call answering rule
 
 You can retrieve the properties for a single call answering rule or a list of call answering rules in a UM-enabled user's mailbox.
   
@@ -60,7 +58,7 @@ This example displays the properties of the call answering rule `MyUMCallAnsweri
 Get-UMCallAnsweringRule -Identity MyUMCallAnsweringRule
 ```
 
-### Use Exchange Online PowerShell to configure a call answering rule
+## Use Exchange Online PowerShell to configure a call answering rule
 
 You can configure or change a call answering rule that's stored in a user's mailbox. You can specify the following conditions:
   

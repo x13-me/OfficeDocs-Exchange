@@ -52,9 +52,9 @@ Setting up an email cutover migration to Office 365 requires careful planning. B
 
 After your on-premises and Office 365 organizations are set up for a cutover migration, post-setup tasks could impact your users. 
   
-- **Administrators or users must configure desktop computers** Make sure that desktop computers are updated and set up for use with Office 365. These actions allow users to use local user credentials to sign in to Office 365 from desktop applications. Users with permission to install applications can update and set up their own desktops. Or updates can be installed for them. After updates are made, users can send email from Outlook 2013, Outlook 2010, or Outlook 2007. 
+- **Administrators or users must configure desktop computers**: Make sure that desktop computers are updated and set up for use with Office 365. These actions allow users to use local user credentials to sign in to Office 365 from desktop applications. Users with permission to install applications can update and set up their own desktops. Or updates can be installed for them. After updates are made, users can send email from Outlook 2013, Outlook 2010, or Outlook 2007. 
     
-- **Potential delay in email routing** Email sent to on-premises users whose mailboxes were migrated to Office 365 are routed to their on-premises Exchange mailboxes until the MX record is changed. 
+- **Potential delay in email routing**: Email sent to on-premises users whose mailboxes were migrated to Office 365 are routed to their on-premises Exchange mailboxes until the MX record is changed. 
     
 ## How does cutover migration work?
 <a name="howdoesitwork"> </a>

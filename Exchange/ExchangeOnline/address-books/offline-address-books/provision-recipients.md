@@ -16,13 +16,13 @@ description: "If you use multiple offline address books (OABs) in your organizat
 
 If you use multiple offline address books (OABs) in your organization, there are several ways to specify which recipients download which OABs:
   
-- **Per mailbox database** You can use the EAC or Exchange Online PowerShell to provision recipients for OAB downloads by linking a mailbox database to a default OAB for Office Outlook 2007, Outlook 2010 and Outlook 2013 clients. 
+- **Per mailbox database**: You can use the EAC or Exchange Online PowerShell to provision recipients for OAB downloads by linking a mailbox database to a default OAB for Office Outlook 2007, Outlook 2010 and Outlook 2013 clients. 
     
-- **Per recipient** You can use the **Set-Mailbox** cmdlet in Exchange Online PowerShell to specify which OAB is downloaded by linking the OAB directly to a recipient's mailbox. 
+- **Per recipient**: You can use the **Set-Mailbox** cmdlet in Exchange Online PowerShell to specify which OAB is downloaded by linking the OAB directly to a recipient's mailbox. 
     
-- **Per multiple recipients** You can use a pipelined command in Exchange Online PowerShell to specify the OAB that multiple recipients download, based on common attributes. 
+- **Per multiple recipients**: You can use a pipelined command in Exchange Online PowerShell to specify the OAB that multiple recipients download, based on common attributes. 
     
-- **Per address book policy** You can assign an address book policy (ABP) to a mailbox user's account to specify which OAB is downloaded to a recipient's mailbox. If you assign an ABP to a user account that already has an OAB assigned, the OAB that's explicitly assigned to the mailbox will take precedence. For more information, see [Assign an address book policy to mail users](../../address-books/address-book-policies/assign-an-address-book-policy-to-mail-users.md).
+- **Per address book policy**: You can assign an address book policy (ABP) to a mailbox user's account to specify which OAB is downloaded to a recipient's mailbox. If you assign an ABP to a user account that already has an OAB assigned, the OAB that's explicitly assigned to the mailbox will take precedence. For more information, see [Assign an address book policy to mail users](../../address-books/address-book-policies/assign-an-address-book-policy-to-mail-users.md).
     
 For additional management tasks related to OABs, see [Offline address book procedures](offline-address-book-procedures.md).
   

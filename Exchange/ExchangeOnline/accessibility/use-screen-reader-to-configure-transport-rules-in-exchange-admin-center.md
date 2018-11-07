@@ -16,7 +16,7 @@ description: "Using a screen reader and keyboard shortcuts, you can create trans
 
 Using a screen reader and keyboard shortcuts, you can create transport rules in Exchange Online in the Exchange admin center (EAC) to look for specific conditions in messages that pass through your organization and take action on them. The main difference between transport rules and Inbox rules you would set up in an email client application (such as Outlook) is that transport rules take action on messages while they're in transit as opposed to after the message is delivered. Transport rules also contain a richer set of conditions, exceptions, and actions, which provides you with the flexibility to implement many types of messaging policies.
   
- **Note** To learn more about transport rules, go to [Transport rules](https://go.microsoft.com/fwlink/p/?LinkId=798795).
+ **Note**: To learn more about transport rules, go to [Transport rules](https://go.microsoft.com/fwlink/p/?LinkId=798795).
   
 - [Get started](use-screen-reader-to-configure-transport-rules-in-exchange-admin-center.md#BKMK_getstarted)
     
