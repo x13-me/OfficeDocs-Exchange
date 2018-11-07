@@ -23,14 +23,14 @@ When you export entries from mailbox audit logs, Microsoft Exchange saves the en
 
 - Estimated time to complete each procedure: Times are variable. In Exchange Online, the mailbox audit log is sent within a few days after you export it.
     
-- In Exchange Online, you have to use Remote Windows PowerShell to perform many of the procedures in this topic. For details, see [Connect to Exchange Online Using Remote PowerShell](http://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
+- In Exchange Online, you have to use Remote Windows PowerShell to perform many of the procedures in this topic. For details, see [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
     
 - Procedures in this topic require specific permissions. See each procedure for its permissions information.
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
 ## Configure mailbox audit logging
 <a name="configmbxauditing"> </a>
@@ -41,9 +41,9 @@ You have to enable mailbox audit logging on each mailbox that you want to audit 
 
 You have to enable mailbox audit logging for each mailbox that you want to run a non-owner mailbox access report for. If mailbox audit logging isn't enabled for a mailbox, you won't get any results for that mailbox when you export the mailbox audit log.
   
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox audit logging" entry in the [Messaging policy and compliance permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox audit logging" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic. 
   
-To enable mailbox audit logging for a single mailbox, run the command in the Shell.
+To enable mailbox audit logging for a single mailbox, run the command in Exchange Online PowerShell.
   
 ```
 Set-Mailbox <Identity> -AuditEnabled $true
@@ -63,9 +63,9 @@ $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 
 When you export the mailbox audit log, Microsoft Exchange attaches the audit log, which is an XML file, to an email message. However, Outlook Web App blocks XML attachments by default. To access the exported audit log, you have to use Microsoft Outlook or configure Outlook Web App to allow XML attachments.
   
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook Web App mailbox policies" entry in the [Client Access Permissions](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic. 
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook Web App mailbox policies" entry in the [Client Access Permissions](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic. 
   
-Perform the following procedures to allow XML attachments in Outlook Web App. In Exchange Server, use the value  `Default` for the  _Identity_ parameter. 
+Perform the following procedures to allow XML attachments in Outlook Web App. In Exchange Server, use the value `Default` for the _Identity_ parameter. 
   
 1. Run the following command to add XML to the list of allowed file types in Outlook Web App.
     
@@ -86,10 +86,10 @@ To verify that you've successfully configured mailbox audit logging, do the foll
 1. Run the following command to verify that audit logging is configured for mailboxes.
     
   ```
-  Get-Mailbox | FL Name,AuditEnabled
+  Get-Mailbox | Format-List Name,AuditEnabled
   ```
 
-    A value of  `True` for the  _AuditEnabled_ property verifies that audit logging is enabled. 
+    A value of `True` for the _AuditEnabled_ property verifies that audit logging is enabled. 
     
 2. Run the following command to verify that XML attachments are allowed in Outlook Web App.
     
@@ -97,7 +97,7 @@ To verify that you've successfully configured mailbox audit logging, do the foll
   Get-OwaMailboxPolicy | Select-Object -ExpandProperty AllowedFileTypes
   ```
 
-    Verify that  `.xml` is included in the list of allowed file types. 
+    Verify that `.xml` is included in the list of allowed file types. 
     
 3. Run the following command to verify that XML attachments are removed from the blocked file list in Outlook Web App.
     
@@ -105,12 +105,12 @@ To verify that you've successfully configured mailbox audit logging, do the foll
   Get-OwaMailboxPolicy | Select-Object -ExpandProperty BlockedFileTypes
   ```
 
-    Verify that  `.xml` isn't included in the list of blocked file types. 
+    Verify that `.xml` isn't included in the list of blocked file types. 
     
 ## Export the mailbox audit log
 <a name="exportauditlog"> </a>
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Shell Infrastructure Permissions](http://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic. 
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Shell Infrastructure Permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic. 
   
 1. In the Exchange admin center (EAC), go to **Compliance Management** \> **Auditing**.
     
@@ -118,21 +118,21 @@ You need to be assigned permissions before you can perform this procedure or pro
     
 3. Configure the following search criteria for exporting the entries from the mailbox audit log:
     
-  - **Start and end dates** Select the date range for the entries to include in the exported file. 
+  - **Start and end dates**: Select the date range for the entries to include in the exported file. 
     
-  - **Mailboxes to search audit log for** Select the mailboxes to retrieve audit log entries for. 
+  - **Mailboxes to search audit log for**: Select the mailboxes to retrieve audit log entries for. 
     
-  - **Type of non-owner access** Select one of the following options to define the type of non-owner access to retrieve entries for: 
+  - **Type of non-owner access**: Select one of the following options to define the type of non-owner access to retrieve entries for: 
     
-  - **All non-owners** Search for access by administrators and delegated users inside your organization, and by Microsoft datacenter administrators in Exchange Online. 
+  - **All non-owners**: Search for access by administrators and delegated users inside your organization, and by Microsoft datacenter administrators in Exchange Online. 
     
-  - **External users** Search for access by Microsoft datacenter administrators. 
+  - **External users**: Search for access by Microsoft datacenter administrators. 
     
-  - **Administrators and delegated users** Search for access by administrators and delegated users inside your organization. 
+  - **Administrators and delegated users**: Search for access by administrators and delegated users inside your organization. 
     
-  - **Administrators** Search for access by administrators in your organization. 
+  - **Administrators**: Search for access by administrators in your organization. 
     
-  - **Recipients** Select the users to send the mailbox audit log to. 
+  - **Recipients**: Select the users to send the mailbox audit log to. 
     
 4. Click **Export**.
     
@@ -145,7 +145,7 @@ Sign in to the mailbox where the mailbox audit log was sent. If you've successfu
 ## View the mailbox audit log
 <a name="viewauditlog"> </a>
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Shell Infrastructure Permissions](http://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic. 
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Shell Infrastructure Permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic. 
   
 To save and view the SearchResult.xml file:
   
@@ -160,7 +160,7 @@ To save and view the SearchResult.xml file:
 ## More information
 <a name="moreinfo"> </a>
 
-- **Entries in the mailbox audit log** The following example shows an entry from the mailbox audit log contained in the SearchResult.xml file. Each entry is preceded by the **\<Event\>** XML tag and ends with the **\</Event\>** XML tag. This entry shows that the administrator purged the message with the subject, " Notification of litigation hold" from the Recoverable Items folder in David's mailbox on April 30, 2010.
+- **Entries in the mailbox audit log**: The following example shows an entry from the mailbox audit log contained in the SearchResult.xml file. Each entry is preceded by the **\<Event\>** XML tag and ends with the **\</Event\>** XML tag. This entry shows that the administrator purged the message with the subject, "Notification of litigation hold" from the Recoverable Items folder in David's mailbox on April 30, 2010.
     
   ```
   <Event MailboxGuid="6d4fbdae-e3ae-4530-8d0b-f62a14687939" 
@@ -187,22 +187,22 @@ To save and view the SearchResult.xml file:
   </Event>
   ```
 
-- **Useful fields in the mailbox audit log** Here's a description of useful fields in the mailbox audit log. They can help you identify specific information about each instance of non-owner access of a mailbox. 
+- **Useful fields in the mailbox audit log**: Here's a description of useful fields in the mailbox audit log. They can help you identify specific information about each instance of non-owner access of a mailbox. 
     
 |**Field**|**Description**|
 |:-----|:-----|
-|Owner <br/> |The owner of the mailbox that was accessed by a non-owner.  <br/> |
-|LastAccessed <br/> |The date and time when the mailbox was accessed.  <br/> |
-|Operation <br/> |The action that was performed by the non-owner. For more information, see the "What gets logged in the mailbox audit log?" section in [Run a Non-Owner Mailbox Access Report](http://technet.microsoft.com/library/18f52b7e-cd60-4a2f-b8a3-0c08747635bb.aspx).  <br/> |
-|OperationResult <br/> |Whether the action performed by the non-owner succeeded or failed.  <br/> |
-|LogonType <br/> |The type of non-owner access. These include administrator, delegate, and external.  <br/> |
-|FolderPathName <br/> |The name of the folder that contained the message that was affected by the non-owner.  <br/> |
-|ClientInfoString <br/> |Information about the mail client used by the non-owner to access the mailbox.  <br/> |
-|ClientIPAddress <br/> |The IP address of the computer used by the non-owner to access the mailbox.  <br/> |
-|InternalLogonType <br/> |The logon type of the account used by the non-owner to access this mailbox.  <br/> |
-|MailboxOwnerUPN <br/> |The email address of the mailbox owner.  <br/> |
-|LogonUserDN <br/> |The display name of the non-owner.  <br/> |
-|Subject <br/> |The subject line of the email message that was affected by the non-owner.  <br/> |
+|Owner|The owner of the mailbox that was accessed by a non-owner.|
+|LastAccessed|The date and time when the mailbox was accessed.|
+|Operation|The action that was performed by the non-owner. For more information, see the "What gets logged in the mailbox audit log?" section in [Run a Non-Owner Mailbox Access Report](https://technet.microsoft.com/library/18f52b7e-cd60-4a2f-b8a3-0c08747635bb.aspx).|
+|OperationResult|Whether the action performed by the non-owner succeeded or failed.|
+|LogonType|The type of non-owner access. These include administrator, delegate, and external.|
+|FolderPathName|The name of the folder that contained the message that was affected by the non-owner.|
+|ClientInfoString|Information about the mail client used by the non-owner to access the mailbox.|
+|ClientIPAddress|The IP address of the computer used by the non-owner to access the mailbox.|
+|InternalLogonType|The logon type of the account used by the non-owner to access this mailbox.|
+|MailboxOwnerUPN|The email address of the mailbox owner.|
+|LogonUserDN|The display name of the non-owner.|
+|Subject|The subject line of the email message that was affected by the non-owner.|
    
     [When mailbox auditing is enabled for a mailbox, Microsoft Exchange logs information in the mailbox audit log whenever a user other than the owner accesses the mailbox. Each log entry includes information about who accessed the mailbox and when, the actions performed by the non-owner, and whether the action was successful. Entries in the mailbox audit log are retained for 90 days by default. You can use the mailbox audit log to determine if a user other than the owner has accessed a mailbox.When you export entries from mailbox audit logs, Microsoft Exchange saves the entries in an XML file and attaches it to an email message sent to the specified recipients.](#Introduction.md)
     

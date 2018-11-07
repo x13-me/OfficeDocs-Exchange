@@ -70,11 +70,11 @@ The **Number of sign-in failures before lockout** setting specifies how many PIN
 
 The **Allow common PIN patterns** setting is used to either enable or disable the use of common number patterns when creating a PIN. By default, this setting is disabled and won't allow Outlook Voice Access users to enter the following number patterns: 
   
-- **Sequential numbers** PIN values that consist completely of consecutive numbers. Examples of sequential numbers for a PIN are 1234 and 65432. 
+- **Sequential numbers**: PIN values that consist completely of consecutive numbers. Examples of sequential numbers for a PIN are 1234 and 65432. 
     
-- **Repeated numbers** PIN values that consist of repeated numbers. Examples of repeated numbers are 11111 and 22222. 
+- **Repeated numbers**: PIN values that consist of repeated numbers. Examples of repeated numbers are 11111 and 22222. 
     
-- **Suffix of mailbox extension** PIN values that consist of the suffix of a user's mailbox extension. If the mailbox extension is 36697, the PIN can't be 6697. 
+- **Suffix of mailbox extension**: PIN values that consist of the suffix of a user's mailbox extension. If the mailbox extension is 36697, the PIN can't be 6697. 
     
 ### PIN recycle count
 
@@ -91,7 +91,7 @@ When planning for Outlook Voice Access PINs, you must choose the appropriate lev
 After you set the Outlook Voice Access PIN requirements, you must create and configure a UM mailbox policy to enforce your organizational PIN requirements. For details about how to create a UM mailbox policy, see [Create a UM mailbox policy](../../voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy.md). For details about how to manage UM mailbox policies, see [Manage a UM mailbox policy](../../voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy.md).
   
 > [!NOTE]
-> After you create the UM mailbox policy, you must link the UM-enabled user or users with the appropriate UM mailbox policy. You can do this by using the **Enable-UMMailbox** cmdlet in the Exchange Management Shell or by using the Exchange Administration Center (EAC). For more information about the Exchange Management Shell cmdlet, see [Enable-UMMailbox](http://technet.microsoft.com/library/5391a63c-ca60-498c-8358-5f0667140738.aspx). 
+> After you create the UM mailbox policy, you must link the UM-enabled user or users with the appropriate UM mailbox policy. You can do this by using the **Enable-UMMailbox** cmdlet in Exchange Online PowerShell or by using the Exchange admin center (EAC). For more information about Exchange Online PowerShell cmdlet, see [Enable-UMMailbox](https://technet.microsoft.com/library/5391a63c-ca60-498c-8358-5f0667140738.aspx). 
   
 There are situations in which Outlook Voice Access users forget their PIN or are locked out of voice mail access to their mailbox. In either case, it may be necessary for you to reset a UM-enabled user's PIN. For details, see [Reset a voice mail PIN](reset-a-voice-mail-pin.md).
   

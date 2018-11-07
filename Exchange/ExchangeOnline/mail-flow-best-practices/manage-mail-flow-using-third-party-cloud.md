@@ -14,7 +14,7 @@ description: "Summary: A couple of different scenarios that illustrate how to co
 
 # Manage mail flow using a third-party cloud service with Office 365
 
- **Summary:** A couple of different scenarios that illustrate how to configure mail flow through a third-party cloud service. 
+ **Summary**: A couple of different scenarios that illustrate how to configure mail flow through a third-party cloud service. 
   
 This topic covers the following complex mail flow scenarios using Office 365:
   
@@ -39,9 +39,9 @@ For this scenario, your organization's mail flow setup looks like the following 
   
 #### Best practices for using a third-party cloud service with Office 365
 
-1. Add your custom domains in Office 365. To prove that you own the domains, follow the instructions in [Add users and domains](https://go.microsoft.com/fwlink/?LinkId=708999).
+1. Add your custom domains in Office 365. To prove that you own the domains, follow the instructions in [Add users and domains](https://go.microsoft.com/fwlink/p/?LinkId=708999).
     
-2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Office 365](https://go.microsoft.com/fwlink/?LinkId=524030).
+2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=524030).
     
 3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://go.microsoft.com/fwlink/p/?LinkID=534835).) The following DNS records control mail flow:
     
@@ -55,7 +55,7 @@ For this scenario, your organization's mail flow setup looks like the following 
   v=spf1 ipv4: 10.10.10.1  include:spf.protection.outlook.com -all
   ```
 
-    Alternatively, depending on the third-party provider's requirements, you might need to include the domain from the third-party, as shown in the following example: 
+Alternatively, depending on the third-party provider's requirements, you might need to include the domain from the third-party, as shown in the following example: 
     
   ```
   v=spf1 include:spf.protection.outlook.com include:third_party_cloud_service.com -all

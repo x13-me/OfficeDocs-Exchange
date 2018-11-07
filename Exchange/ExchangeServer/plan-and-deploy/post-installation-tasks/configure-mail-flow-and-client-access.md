@@ -78,7 +78,7 @@ Before clients can connect to your new server from the internet, you need to con
     
 3. Go to **Servers** \> **Virtual directories** and then select **Configure external access domain** ![Configure icon](../../media/ITPro_EAC_ConfigureIcon.png).
     
-4. In the **Configure external access domain** window opens, configure the followig settings:
+4. In the **Configure external access domain** window opens, configure the following settings:
 
     1. **Select the Mailbox servers to use with the external URL**: Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png)
   
@@ -88,13 +88,13 @@ Before clients can connect to your new server from the internet, you need to con
 
 Some organizations use a unique Outlook on the web FQDN to protect against future changes to the underlying server FQDN. Many organizations use owa.contoso.com for their Outlook on the web FQDN instead of mail.contoso.com. If you want to configure a unique Outlook on the web FQDN, do the following steps. This checklist assumes you have configured a unique Outlook on the web FQDN.
     
-1. Back at **Servers** \> **Virtual directories**, select **owa (Default Web Site)** on the server that you want to confifgure, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+1. Back at **Servers** \> **Virtual directories**, select **owa (Default Web Site)** on the server that you want to configure, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
     
 2. The **owa (Default web site)** window opens. On the **General** tab in the **External URL** field, enter the following information:
 
     - https://
     
-    - The unique Outlook on the web FQDN you want to use (for example, owa.contoso.com) , and then append /owa. For example, https://owa.contoso.com/owa.
+    - The unique Outlook on the web FQDN you want to use (for example, owa.contoso.com), and then append /owa. For example, https://owa.contoso.com/owa.
 
     - /owa
 
@@ -102,9 +102,9 @@ Some organizations use a unique Outlook on the web FQDN to protect against futur
   
     When you're finished, click **Save**.
     
-4. Back at **Servers** \> **Virtual directories**, select **ecp (Default Web Site)** on the server that you want to confifgure, and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
+4. Back at **Servers** \> **Virtual directories**, select **ecp (Default Web Site)** on the server that you want to configure, and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
     
-5. In the **ecp (Default web site)** window that opens, enter the same URL from the previous step, but append the value /ecp instead of /owa (for example, https://owa.contoso.com/ecp). When you're finsihed, click **Save**.
+5. In the **ecp (Default web site)** window that opens, enter the same URL from the previous step, but append the value /ecp instead of /owa (for example, https://owa.contoso.com/ecp). When you're finished, click **Save**.
     
 After you've configured the external URL in the Client Access services virtual directories on the Mailbox server, you need to configure your public DNS records for Autodiscover, Outlook on the web, and mail flow. The public DNS records should point to the external IP address or FQDN of your internet-facing Mailbox server and use the externally accessible FQDNs that you've configured on your Mailbox server. The recommended DNS records that you should create to enable mail flow and external client connectivity are described in the following table:
   
@@ -155,7 +155,7 @@ The procedure below lets you choose whether you want users to use the same URL o
 
 Regardless of your decision, you need to configure a private DNS zone for the address space you choose. For more information about administering DNS zones, see [Administering DNS Server](https://go.microsoft.com/fwlink/p/?LinkID=190631).
   
-For more information about internal and external URLs on virtual directories, see [Default settings for Exchange virtual directories](../../clients/default-virtual-directory-settings.md)[Virtual Directory Management](http://technet.microsoft.com/library/1af30fd5-621c-4acb-b6df-d8fa64d719ba.aspx).
+For more information about internal and external URLs on virtual directories, see [Default settings for Exchange virtual directories](../../clients/default-virtual-directory-settings.md) [Virtual Directory Management](http://technet.microsoft.com/library/1af30fd5-621c-4acb-b6df-d8fa64d719ba.aspx).
   
 ### Configure internal and external URLs to be the same
 
@@ -241,7 +241,7 @@ To verify that you have successfully configured your private DNS records, do the
 
   For example, in the properties of the Exchange Web Services (EWS) virtual directory, change the existing value from https://**Mailbox01.corp.contoso.com**/ews/exchange.asmx to https://**internal.contoso.com**/ews/exchange.asmx.
     
-  When you're finsihed, click **Save**.
+  When you're finished, click **Save**.
     
 3. Repeat the previous steps for each virtual directory you want to change.
     

@@ -26,7 +26,7 @@ Add-ins for Outlook are applications that extend the usefulness of Outlook clien
 Outlook clients supports a variety of add-ins that are available through the Office Store. Outlook also supports custom add-ins that you can create and distribute to users in your organization. 
   
 > [!NOTE]
-> Access to the Office Store isn't supported for mailboxes or organizations in specific regions. If you don't see **Add from the Office Store** as an option in the **Exchange admin center** under **Organization** \> **Add-ins** \> ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), you may be able to install an add-in for Outlook from a URL or file location. For more information, contact your service provider. 
+> Access to the Office Store isn't supported for mailboxes or organizations in specific regions. If you don't see **Add from the Office Store** as an option in the **Exchange admin center** under **Organization** \> **Add-ins** \> **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), you may be able to install an add-in for Outlook from a URL or file location. For more information, contact your service provider. 
   
 > [!NOTE]
 > Some add-ins for Outlook are installed by default. Default add-ins for Outlook only activate on English language content. For example, German postal addresses in the message body won't activate the Bing Maps add-in. 
@@ -55,9 +55,9 @@ There are a couple of common scenarios that Exchange administrators manage in th
     
 See [Specify the administrators and users who can install and manage add-ins for Outlook](specify-who-can-install-and-manage-add-ins.md) for more information. 
   
- **If your end users are currently able to access add-ins and you want to remove that access, use the  `Get-App` cmdlet to see which add-ins each user has installed. **
+ **If your end users are currently able to access add-ins and you want to remove that access, use the `Get-App` cmdlet to see which add-ins each user has installed. **
   
-Next, use the  `Remove-App` cmdlet to remove any add-ins from one or more users. 
+Next, use the `Remove-App` cmdlet to remove any add-ins from one or more users. 
   
 For more information, go [here](https://go.microsoft.com/fwlink/p/?linkid=844721). 
   

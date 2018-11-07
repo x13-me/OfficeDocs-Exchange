@@ -24,9 +24,9 @@ Each time you create an Exchange mail flow rule, also known as a Transport rule,
 
 You can evaluate the conditions for a rule without taking any actions that impact mail flow by choosing a test mode. You can set up a rule so that you get an email notification any time the rule is matched, or you can look at the [Look at the message trace](test-mail-flow-rules.md#trace) for messages that might match the rule. There are two test modes: 
   
-- **Test without Policy Tips** Use this mode together with an incident report action, and you can receive an email message each time an email matches the rule. 
+- **Test without Policy Tips**: Use this mode together with an incident report action, and you can receive an email message each time an email matches the rule. 
     
-- **Test with Policy Tips** This mode is only available if you're using [Data loss prevention](../../security-and-compliance/data-loss-prevention/data-loss-prevention.md) (DLP), which is available with some Exchange Online and Exchange Online Protection (EOP) subscription plans. With this mode, a message is set to the sender when a message they are sending matches a policy, but no mail flow actions are taken. 
+- **Test with Policy Tips**: This mode is only available if you're using [Data loss prevention](../../security-and-compliance/data-loss-prevention/data-loss-prevention.md) (DLP), which is available with some Exchange Online and Exchange Online Protection (EOP) subscription plans. With this mode, a message is set to the sender when a message they are sending matches a policy, but no mail flow actions are taken. 
     
 Here's what you'll see when a rule is matched if you include the incident report action:
   
@@ -46,7 +46,7 @@ Here's what you'll see when a rule is matched if you include the incident report
     
 2. Select **Generate incident report and send it to**.
     
-3. Click **Select one…** and select yourself or someone else. 
+3. Click **Select one...** and select yourself or someone else. 
     
 4. Select **Include message properties**, and then select any message properties that you want included in the email you receive. If you don't select any, you will still get an email when the rule is matched.
     
@@ -150,8 +150,8 @@ To learn more, see [View mail protection reports](https://go.microsoft.com/fwlin
   
 [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md) (Exchange Online) 
   
-[Transport rules](http://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx) (Exchange Online Protection) 
+[Transport rules](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx) (Exchange Online Protection) 
   
-[Transport Rules](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx) (Exchange Server) 
+[Transport Rules](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx) (Exchange Server) 
   
 

@@ -32,7 +32,13 @@ For details about what's happening when Active Directory is being prepared for E
 
 - Estimated time to complete: 10-15 minutes or more (not including Active Directory replication), depending on organization size and the number of child domains.
 
-- The computer that you use for these procedures needs to meet the system requirements for [Exchange](system-requirements.md). Also, your Active Directory needs to meet the requirements in the "Network and directory servers" sections in those topics.
+- The computer that you use for these procedures needs to meet the [system requirements](system-requirements.md) for Exchange.
+
+- Verify that your Active Directory meets the requirements for Exchange:
+
+  - **Exchange 2019**: [Exchange 2019 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019#network-and-directory-servers).
+
+  - **Exchange 2016**: [Exchange 2016 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016#network-and-directory-servers).
 
 - If your organization has multiple Active Directory domains, we recommend the following approach:
 
@@ -46,7 +52,7 @@ For details about what's happening when Active Directory is being prepared for E
     
     2. In File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. Note the virtual DVD drive letter that's assigned.
 
-    3. Opwn a Windows Command Prompt window. For example:
+    3. Open a Windows Command Prompt window. For example:
 
     - Press the Windows key + 'R' to open the **Run** dialog, type cmd.exe, and then press **OK**.
 
@@ -134,7 +140,7 @@ If you have multiple domains in your Active Directory forest, you have the follo
 
 - Choose the Active Directory domains to prepare
 
-Regardless of the method you choose, wait until Active Directory has finshed replicating the changes from Step 2 to all domain controllers before you proceed. Otherwise, you might get an error when you try to prepare the domains.
+Regardless of the method you choose, wait until Active Directory has finished replicating the changes from Step 2 to all domain controllers before you proceed. Otherwise, you might get an error when you try to prepare the domains.
 
 ### Prepare all domains in the Active Directory forest
 
@@ -217,7 +223,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |**Exchange 2019 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
-|Exchange 2019 RTM|15332|13236|16213|
+|Exchange 2019 RTM|17000|13236|16751|
 |Exchange 2019 Preview|15332|13236|16213|
 ::: moniker-end
 

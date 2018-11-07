@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 4bde0b00-bdf7-44b4-ba64-aa062bc10ca2
-description: "You can use the Exchange Management Shell to delete the default discovery mailbox, re-create it, and then assign permissions to it."
+description: "You can use Exchange Online PowerShell to delete the default discovery mailbox, re-create it, and then assign permissions to it."
 ---
 
 # Delete and re-create the default discovery mailbox in Exchange
 
-You can use the Exchange Management Shell to delete the default discovery mailbox, re-create it, and then assign permissions to it.
+You can use Exchange Online PowerShell to delete the default discovery mailbox, re-create it, and then assign permissions to it.
   
 ## Why would I want to do this?
 
@@ -30,10 +30,10 @@ How you resolve this depends on whether you want to save the search results from
   
 |**Do you want to save the search results?**|**Do this**|
 |:-----|:-----|
-|No  <br/> |Follow the steps in this topic to delete, and then re-create the default discovery mailbox.  <br/> |
-|Yes  <br/> |Follow the steps in [Reduce the size of a discovery mailbox in Exchange](reduce-discovery-mailbox-size.md).  <br/> |
+|No|Follow the steps in this topic to delete, and then re-create the default discovery mailbox.|
+|Yes|Follow the steps in [Reduce the size of a discovery mailbox in Exchange](reduce-discovery-mailbox-size.md).|
    
-## Use the Exchange Management Shell to delete and re-create the default discovery mailbox
+## Use Exchange Online PowerShell to delete and re-create the default discovery mailbox
 
 > [!NOTE]
 > You can't use the Exchange admin center (EAC) because discovery mailboxes aren't displayed in the EAC. 

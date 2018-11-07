@@ -32,11 +32,11 @@ Two Unified Messaging user interfaces are available to Outlook Voice Access user
   
 Before users can use the VUI in Outlook Voice Access, it must be enabled on the UM dial plan and on the UM mailbox policy and also be enabled for the user. By default, when you create a dial plan and a UM mailbox policy and enable voice mail for a user, the user can use ASR or the Outlook Voice Access VUI to navigate menus, messages, and other options. However, even if the user is able to use the VUI, they will have to use the telephone key pad to enter their PIN, navigate personal options, and perform a directory search. The default settings are listed in the following table.
   
-|**UM component**|**Default setting**|**Exchange Management Shell example to enable VUI access**|
+|**UM component**|**Default setting**|**Exchange Online PowerShell example to enable VUI access**|
 |:-----|:-----|:-----|
-|UM dial plan  <br/> |Enabled  <br/> | `Set-UMDialPlan -id MyUMDialPlan -AutomaticSpeechRecognitionEnabled $true` <br/> |
-|UM mailbox policy  <br/> |Enabled  <br/> | `Set-UMMaiboxPolicy -id MyUMPolicy -AllowAutomaticSpeechRecognition $true` <br/> |
-|User's mailbox  <br/> |Enabled  <br/> | `Set-UMMailbox -id tonysmith -AutomaticSpeechRecognitionEnabled $true` <br/> |
+|UM dial plan|Enabled|`Set-UMDialPlan -Identity MyUMDialPlan -AutomaticSpeechRecognitionEnabled $true`|
+|UM mailbox policy|Enabled|`Set-UMMaiboxPolicy -Identity MyUMPolicy -AllowAutomaticSpeechRecognition $true`|
+|User's mailbox|Enabled|`Set-UMMailbox -Identity tonysmith -AutomaticSpeechRecognitionEnabled $true`|
    
 The following section includes scenarios that describe the VUI functionality.
   
@@ -45,19 +45,19 @@ The following section includes scenarios that describe the VUI functionality.
 
 Here are examples of how Outlook Voice Access can be used from a telephone:
   
-- **Access email** An Outlook Voice Access user places a call to an Outlook Voice Access number from a telephone and wants to access their email. The voice prompt says, "Welcome. You're connected to Microsoft Exchange. To access your mailbox, please enter your extension. To contact someone, press the pound key." After the user enters a mailbox extension number, the voice prompt says, "Please enter your PIN and press the pound key." After the user enters a PIN, the voice prompt says, "You have two new voice mails, 10 new email messages, and your next meeting is at 10:00 A.M. Please say voice mail, email, calendar, personal contacts, directory, or personal options." When the user says "Email," the voice mail system reads the message header and then the name, subject, time, and priority for the messages that are in the user's mailbox. 
+- **Access email**: An Outlook Voice Access user places a call to an Outlook Voice Access number from a telephone and wants to access their email. The voice prompt says, "Welcome. You're connected to Microsoft Exchange. To access your mailbox, please enter your extension. To contact someone, press the pound key." After the user enters a mailbox extension number, the voice prompt says, "Please enter your PIN and press the pound key." After the user enters a PIN, the voice prompt says, "You have two new voice mails, 10 new email messages, and your next meeting is at 10:00 A.M. Please say voice mail, email, calendar, personal contacts, directory, or personal options." When the user says "Email," the voice mail system reads the message header and then the name, subject, time, and priority for the messages that are in the user's mailbox. 
     
-- **Access calendar** An Outlook Voice Access user places a call to an Outlook Voice Access number from a telephone and wants to access their calendar. The voice prompt says, "Welcome. You're connected to Microsoft Exchange. To access your mailbox, please enter your extension. To contact someone, press the pound key." After the user enters a mailbox extension number, the voice prompt says, "Please enter your PIN and press the pound key." After the user enters a PIN, the voice prompt says, "You have two new voice mails, 10 new email messages, and your next meeting is at 10:00 A.M. Please say voice mail, email, calendar, personal contacts, directory, or personal options." When the user says "Calendar," the voice mail system says, "Sure, and which day should I open?" The user says, "Today's calendar." The voice mail system responds by saying, "Opening today's calendar." The voice mail system reads each calendar appointment for that day for the user. 
+- **Access calendar**: An Outlook Voice Access user places a call to an Outlook Voice Access number from a telephone and wants to access their calendar. The voice prompt says, "Welcome. You're connected to Microsoft Exchange. To access your mailbox, please enter your extension. To contact someone, press the pound key." After the user enters a mailbox extension number, the voice prompt says, "Please enter your PIN and press the pound key." After the user enters a PIN, the voice prompt says, "You have two new voice mails, 10 new email messages, and your next meeting is at 10:00 A.M. Please say voice mail, email, calendar, personal contacts, directory, or personal options." When the user says "Calendar," the voice mail system says, "Sure, and which day should I open?" The user says, "Today's calendar." The voice mail system responds by saying, "Opening today's calendar." The voice mail system reads each calendar appointment for that day for the user. 
     
     > [!NOTE]
     > If a Mailbox server running the Microsoft Exchange Unified Messaging service encounters a corrupted calendar item in a user's mailbox, it will fail to read the item, return the caller to the Outlook Voice Access main menu, and skip reading any additional meetings that may be scheduled for the rest of the day. 
   
-- **Access voice mail** An Outlook Voice Access user places a call to an Outlook Voice Access number from a telephone and wants to access voice mail. The voice prompt says, "Welcome. You're connected to Microsoft Exchange. To access your mailbox, please enter your extension. To contact someone, press the pound key." After the user enters a mailbox extension number, the voice prompt says, "Please enter your PIN and press the pound key." After the user enters a PIN, the voice prompt says, "You have two new voice mails, 10 new email messages, and your next meeting is at 10:00 A.M. Please say voice mail, email, calendar, personal contacts, directory, or personal options." The user says "Voice mail," and the voice mail system reads the message header and then the name, subject, time, and priority for the voice messages that are in the user's mailbox. 
+- **Access voice mail**: An Outlook Voice Access user places a call to an Outlook Voice Access number from a telephone and wants to access voice mail. The voice prompt says, "Welcome. You're connected to Microsoft Exchange. To access your mailbox, please enter your extension. To contact someone, press the pound key." After the user enters a mailbox extension number, the voice prompt says, "Please enter your PIN and press the pound key." After the user enters a PIN, the voice prompt says, "You have two new voice mails, 10 new email messages, and your next meeting is at 10:00 A.M. Please say voice mail, email, calendar, personal contacts, directory, or personal options." The user says "Voice mail," and the voice mail system reads the message header and then the name, subject, time, and priority for the voice messages that are in the user's mailbox. 
     
     > [!NOTE]
     > If speech recognition is enabled, users can access their UM-enabled mailbox using speech input. Subscribers can also use touchtone, also known as dual tone multi-frequency (DTMF), by pressing 0. Speech recognition isn't enabled for PIN input. 
   
-- **Locate a user in the directory** An Outlook Voice Access user places a call to an Outlook Voice Access number from a telephone and wants to locate a person in the directory by spelling their email alias. The voice prompt says, "Welcome. You're connected to Microsoft Exchange. To contact someone, press the pound key." The user presses the pound key, and then uses touchtone inputs to spell the SMTP address of the person. 
+- **Locate a user in the directory**: An Outlook Voice Access user places a call to an Outlook Voice Access number from a telephone and wants to locate a person in the directory by spelling their email alias. The voice prompt says, "Welcome. You're connected to Microsoft Exchange. To contact someone, press the pound key." The user presses the pound key, and then uses touchtone inputs to spell the SMTP address of the person. 
     
     > [!NOTE]
     > The directory search feature with an Outlook Voice Access number isn't speech-enabled. Users can spell the name of the person they want to contact only by using touchtone inputs. 
@@ -93,12 +93,12 @@ Users can't change the language that Outlook Voice Access uses to speak to them 
 ## Controlling Outlook Voice Access features
 <a name="BKMK_ControllingOutlookVoiceAccessfeatures"> </a>
 
-By default, when users dial in to Outlook Voice Access, they can use the telephone to access their calendar, email, and personal contacts, and to search the directory. You can use the Shell to prevent users from accessing one or more of these features when they use Outlook Voice Access to access their mailbox. When you modify Outlook Voice Access features on a UM mailbox policy, your changes affect all users who are associated with the UM mailbox policy. You can also disable some features on a single user's mailbox, although other features can only be disabled on a UM mailbox policy and aren't available on an individual mailbox.
+By default, when users dial in to Outlook Voice Access, they can use the telephone to access their calendar, email, and personal contacts, and to search the directory. You can use Exchange Online PowerShell to prevent users from accessing one or more of these features when they use Outlook Voice Access to access their mailbox. When you modify Outlook Voice Access features on a UM mailbox policy, your changes affect all users who are associated with the UM mailbox policy. You can also disable some features on a single user's mailbox, although other features can only be disabled on a UM mailbox policy and aren't available on an individual mailbox.
   
 > [!NOTE]
-> You can use only the Shell to modify the Outlook Voice Access TUI settings for UM-enabled mailboxes or UM mailbox policies. 
+> You can use only Exchange Online PowerShell to modify the Outlook Voice Access TUI settings for UM-enabled mailboxes or UM mailbox policies. 
   
- **UM mailbox policy settings** You can disable users' access to the following Outlook Voice Access features on a UM mailbox policy: 
+ **UM mailbox policy settings**: You can disable users' access to the following Outlook Voice Access features on a UM mailbox policy: 
   
 - Automatic Speech Recognition
     
@@ -114,7 +114,7 @@ By default, when users dial in to Outlook Voice Access, they can use the telepho
     
 - TUI access to their personal Contacts
     
- **UM-enabled mailbox settings** You can disable a user's access to the following Outlook Voice Access features on the user's mailbox: 
+ **UM-enabled mailbox settings**: You can disable a user's access to the following Outlook Voice Access features on the user's mailbox: 
   
 - TUI access to the calendar
     

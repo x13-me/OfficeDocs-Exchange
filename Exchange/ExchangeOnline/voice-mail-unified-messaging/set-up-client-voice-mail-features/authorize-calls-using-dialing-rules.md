@@ -20,11 +20,11 @@ Each dialing rule that you create will contain the types of calls or number patt
   
 To authorize or restrict dialing, the following settings must be configured correctly: 
   
-- **Dialing rules** Dialing rules define the number that UM-enabled users dial and the number that will be sent from Unified Messaging and dialed by the Private Branch eXchange (PBX) or IP PBX. You create a dialing rule group by adding a dialing rule. After you create a dialing rule group, you add it to the list of authorized calls for an in-country/region or international dialing rule group. 
+- **Dialing rules**: Dialing rules define the number that UM-enabled users dial and the number that will be sent from Unified Messaging and dialed by the Private Branch eXchange (PBX) or IP PBX. You create a dialing rule group by adding a dialing rule. After you create a dialing rule group, you add it to the list of authorized calls for an in-country/region or international dialing rule group. 
     
-- **Dialing rule groups** Dialing rule groups determine the types of calls that users within the dialing group can make. 
+- **Dialing rule groups**: Dialing rule groups determine the types of calls that users within the dialing group can make. 
     
-- **Dialing authorizations** Dialing authorizations are used to determine the restrictions that will be applied to prevent users from incurring unnecessary telephone charges or from dialing long-distance calls. 
+- **Dialing authorizations**: Dialing authorizations are used to determine the restrictions that will be applied to prevent users from incurring unnecessary telephone charges or from dialing long-distance calls. 
     
 ## How do I authorize a dialing rule group?
 
@@ -32,9 +32,9 @@ Where you authorize dialing rule groups depends on the types of callers that you
   
 |**Type of caller**|**Authorize dialing rule groups here**|
 |:-----|:-----|
-|Unauthenticated callers who call in to an Outlook Voice Access number and don't enter a PIN  <br/> |UM dial plan. For details, see [Authorize calls for users in a dial plan](authorize-calls-for-users-in-a-dial-plan.md).  <br/> |
-|Authenticated callers who call in to an Outlook Voice Access number and enter a PIN  <br/> |UM mailbox policy for the caller. For details, see [Authorize calls for a group of users](authorize-calls-for-a-group-of-users.md).  <br/> |
-|Unauthenticated callers who call in to a telephone number that's configured on a UM auto attendant  <br/> |UM auto attendant. For details, see [Authorize calls for auto attendant callers](authorize-calls-for-auto-attendant-callers.md).  <br/> |
+|Unauthenticated callers who call in to an Outlook Voice Access number and don't enter a PIN|UM dial plan. For details, see [Authorize calls for users in a dial plan](authorize-calls-for-users-in-a-dial-plan.md).|
+|Authenticated callers who call in to an Outlook Voice Access number and enter a PIN|UM mailbox policy for the caller. For details, see [Authorize calls for a group of users](authorize-calls-for-a-group-of-users.md).|
+|Unauthenticated callers who call in to a telephone number that's configured on a UM auto attendant|UM auto attendant. For details, see [Authorize calls for auto attendant callers](authorize-calls-for-auto-attendant-callers.md).|
    
 Depending on which users you're authorizing to make outbound calls, you'll use the **Dialing authorization** page in the Exchange admin center (EAC) for the dial plan, the auto attendant, or the UM mailbox policy. 
   

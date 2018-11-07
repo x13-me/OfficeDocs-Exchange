@@ -56,11 +56,11 @@ The following list shows some of the more well-known U.S. and international regu
 
 The following are key aspects of journal rules:
   
-- **Journal rule scope** Defines which messages are journaled by the Journaling agent. 
+- **Journal rule scope**: Defines which messages are journaled by the Journaling agent. 
     
-- **Journal recipient** Specifies the SMTP address of the recipient you want to journal. 
+- **Journal recipient**: Specifies the SMTP address of the recipient you want to journal. 
     
-- **Journaling mailbox** Specifies one or more mailboxes used for collecting journal reports. 
+- **Journaling mailbox**: Specifies one or more mailboxes used for collecting journal reports. 
     
 > [!NOTE]
 > In Office 365, the maximum number of journal rules you can create is 10. 
@@ -70,11 +70,11 @@ The following are key aspects of journal rules:
 
 You can use a journal rule to journal only internal messages, only external messages, or both. The following list describes these scopes:
   
-- **Internal messages only** Journal rules with the scope set to journal internal messages sent between the recipients inside your Exchange organization. 
+- **Internal messages only**: Journal rules with the scope set to journal internal messages sent between the recipients inside your Exchange organization. 
     
-- **External messages only** Journal rules with the scope set to journal external messages sent to recipients or received from senders outside your Exchange organization. 
+- **External messages only**: Journal rules with the scope set to journal external messages sent to recipients or received from senders outside your Exchange organization. 
     
-- **All messages** Journal rules with the scope set to journal all messages that pass through your organization regardless of origin or destination. These include messages that may have already been processed by journal rules in the Internal and External scopes. 
+- **All messages**: Journal rules with the scope set to journal all messages that pass through your organization regardless of origin or destination. These include messages that may have already been processed by journal rules in the Internal and External scopes. 
     
 ### Journal recipient
 <a name="recip"> </a>
@@ -135,6 +135,6 @@ When implementing journaling, you must consider journaling reports and IRM-prote
 ## Troubleshooting
 <a name="trouble"> </a>
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://go.microsoft.com/fwlink/p/?LinkId=331674).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://go.microsoft.com/fwlink/p/?LinkId=331674).
   
 

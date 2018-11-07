@@ -22,18 +22,16 @@ By default, POP3 and IMAP4 are enabled for all users in Exchange Online. You can
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 and IMAP4 settings" section in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic. 
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-
-### Use the EAC to enable or disable POP3 or IMAP4 for a user
+## Use the EAC to enable or disable POP3 or IMAP4 for a user
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
     
-2. In the result pane, select the user for which you want to enable or disable POP3, and then click **Edit**![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+2. In the result pane, select the user for which you want to enable or disable POP3, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 3. In the **User Mailbox** dialog box, in the console tree, click **Mailbox Features**.
     
@@ -49,7 +47,7 @@ By default, POP3 and IMAP4 are enabled for all users in Exchange Online. You can
     
 5. Click **Save**.
     
-### Use the Exchange Management Shell to enable or disable POP3 or IMAP4 for a user
+## Use Exchange Online PowerShell to enable or disable POP3 or IMAP4 for a user
 
 This example enables POP3 for the user Christa Knapp.
   

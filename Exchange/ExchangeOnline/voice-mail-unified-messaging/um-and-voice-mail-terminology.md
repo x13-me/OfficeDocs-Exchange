@@ -114,7 +114,7 @@ national number prefix
     
 number mask
   
-> A set of numbers and wildcard characters that is used to determine the telephone number that the Mailbox server will dial. An "X" represents a single digit (0 … 9). An asterisk (\*) represents any number of such digits.
+> A set of numbers and wildcard characters that is used to determine the telephone number that the Mailbox server will dial. An "X" represents a single digit (0 to 9). An asterisk (\*) represents any number of such digits.
     
 numeric extension
   
@@ -246,7 +246,9 @@ voice user interface (VUI)
     
 VoIP gateway
   
-> **1.** A third-party hardware device or product that connects a legacy PBX to a LAN. A VoIP gateway translates or converts TDM or telephony circuit-switched protocols to packet-switched protocols that can be used on a VoIP-based network. **2.** The Exchange Unified Messaging representation of any SIP peer with which it can communicate using VoIP protocols. It may represent a device that interfaces with a legacy PBX, an IP PBX, or Microsoft Lync Server. 
+  1. A third-party hardware device or product that connects a legacy PBX to a LAN. A VoIP gateway translates or converts TDM or telephony circuit-switched protocols to packet-switched protocols that can be used on a VoIP-based network.
+
+  2. The Exchange Unified Messaging representation of any SIP peer with which it can communicate using VoIP protocols. It may represent a device that interfaces with a legacy PBX, an IP PBX, or Microsoft Lync Server. 
     
 welcome greeting
   

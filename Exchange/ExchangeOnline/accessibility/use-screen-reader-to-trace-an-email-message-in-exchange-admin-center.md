@@ -33,15 +33,15 @@ Navigate with Internet Explorer and keyboard shortcuts, and make sure that you h
 
 Exchange Online, which includes the EAC, is a web-based application, so the keyboard shortcuts and navigation may be different from those in Exchange 2016. [Accessibility in the Exchange admin center](accessibility-in-exchange-admin-center.md).
   
-For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/?LinkID=787614).
+For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=787614).
   
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/?LinkID=317550).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
   
 ### Confirm your Office 365 subscription plan
 
 Exchange Online is included in Office 365 business and enterprise subscription plans, but capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it.
   
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 36 business product or license do I have?](https://go.microsoft.com/fwlink/?LinkID=797552) and [Exchange Online Service Description](https://go.microsoft.com/fwlink/?LinkID=797553).
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 36 business product or license do I have?](https://go.microsoft.com/fwlink/p/?LinkID=797552) and [Exchange Online Service Description](https://go.microsoft.com/fwlink/p/?LinkID=797553).
   
 ### Open the EAC, and confirm your admin role
 
@@ -80,14 +80,14 @@ You might find that you need a message trace when a user contacts you about mess
 3. To add the user to the list of senders for the message trace, press the Down Arrow key until you hear the user's name and then press Enter. The list of users retains the focus, so you can continue to add more users by selecting their mailboxes and pressing Enter.
     
     > [!TIP]
-    > To check the users you've added, tab to the **Add** button. To hear the list of users, press the Tab key again. The first name is read. To hear the second name in the list, press the Tab key one more time. Continue pressing the Tab key until you hear the names of all the users you've added. To delete a user from the list, activate the **Remove** link by pressing Enter when you hear the user name. 
+    > To check the users you've added, tab to the **Add** button. To hear the list of users, press the Tab key again. The first name is read. To hear the second name in the list, press the Tab key one more time. Continue pressing the Tab key until you hear the names of all the users you've added. To delete a user from the list, activate the **Remove** link by pressing Enter when you hear the username. 
   
 4. To specify an external user or an email address with a wildcard (for example, \*@contoso.com), press the Tab key until you hear "Check names edit, Type in text." (In Narrator, you hear "Editing.") Type the email address of the external user or the address with a wildcard. To select the **Check names** button, press Shift+Tab and then press Enter. This verifies the email address and adds it to the list of users. 
     
     > [!TIP]
     >  When you specify a wildcard, you cannot also add full email addresses to the message trace. >  Be aware that if you type an external email address and press Enter, this adds the user to the list and then closes the dialog box. If you're not finished, use the **Check names** button to add it instead. 
   
-5. When you finish adding users, tab to the **OK** button and press Enter. The ** message trace ** page has the focus again, and the **Sender** text box lists the senders you specified for the message trace. 
+5. When you finish adding users, tab to the **OK** button and press Enter. The **message trace** page has the focus again, and the **Sender** text box lists the senders you specified for the message trace. 
     
 10. To add a recipient to the message trace instead of or in addition to the senders, tab to the **add recipient** button and press Enter. In the **Select Members** dialog box, the **Search** button has the focus. To add one or more recipients to the message trace, repeat step 9. 
     
@@ -120,6 +120,6 @@ It might take a few minutes to a few hours for message trace results to return. 
 8. To close the **pending or completed traces** page, tab to the **Close** button and press Enter. 
     
 > [!NOTE]
-> For more information, refer to [Run a Message Trace and View Results](https://go.microsoft.com/fwlink/?LinkId=799440). 
+> For more information, refer to [Run a Message Trace and View Results](https://go.microsoft.com/fwlink/p/?LinkId=799440). 
   
 

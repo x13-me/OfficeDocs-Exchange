@@ -50,7 +50,7 @@ Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define 
 |**Operator**|**Usage**|**Description**|
 |:-----|:-----|:-----|
 |AND  <br/> |keyword1 AND keyword2  <br/> |Returns messages that include all of the specified keywords or `property:value` expressions.  <br/> |
-|+  <br/> |keyword1 +keyword2 +keyword3  <br/> |Returns items that contain *either* `keyword2` or `keyword3` *and* that also contain `keyword1`. Therefore, this example is equivalent to the query `(keyword2 OR keyword3) AND keyword1`.  <br/> Note that the query `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the ** AND ** operator. This query would be equivalent to `"keyword1 + keyword2"` and return items with the exact phase `"keyword1 + keyword2"`.  <br/> |
+|+  <br/> |keyword1 +keyword2 +keyword3  <br/> |Returns items that contain *either* `keyword2` or `keyword3` *and* that also contain `keyword1`. Therefore, this example is equivalent to the query `(keyword2 OR keyword3) AND keyword1`.  <br/> Note that the query `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the **AND** operator. This query would be equivalent to `"keyword1 + keyword2"` and return items with the exact phase `"keyword1 + keyword2"`.  <br/> |
 |OR  <br/> |keyword1 OR keyword2  <br/> |Returns messages that include one or more of the specified keywords or `property:value` expressions.  <br/> |
 |NOT  <br/> |keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> |Excludes messages specified by a keyword or a `property:value` expression. For example, `NOT from:"Ann Beebe"` excludes messages sent by Ann Beebe.  <br/> |
 |-  <br/> |keyword1 -keyword2  <br/> |The same as the **NOT** operator. This query returns items that contain `keyword1` and excludes items that contain `keyword2`.  <br/> |
@@ -91,13 +91,13 @@ Here's a list of the unsupported characters for an In-Place eDiscovery search qu
 
 - Keyword searches are not case sensitive. For example, **cat** and **CAT** return the same results.
     
-- A space between two keywords or two `property:value` expressions is the same as using **AND**. For example, `from:"Sara Davis" subject:reorganization` returns all messages sent by Sara Davis that contain the word ** reorganization ** in the subject line.
+- A space between two keywords or two `property:value` expressions is the same as using **AND**. For example, `from:"Sara Davis" subject:reorganization` returns all messages sent by Sara Davis that contain the word **reorganization** in the subject line.
     
 - Use syntax that matches the `property:value` format. Values are not case-sensitive, and they can't have a space after the operator. If there is a space, your intended value will just be full-text searched. For example, **to: pilarp** searches for "pilarp" as a keyword, rather than for messages that were sent to pilarp.
     
 - When searching a recipient property, such as To, From, Cc, or Recipients, you can use an SMTP address, alias, or display name to denote a recipient. For example, you can use pilarp@contoso.com, pilarp, or "Pilar Pinilla".
     
-- You can use only prefix wildcard searches—for example, **cat\*** or ** set\* **. Suffix wildcard searches (\*cat) or substring wildcard searches (\*cat\*) aren't supported.
+- You can use only prefix wildcard searches (for example, **cat\*** or **set\***). Suffix wildcard searches (\*cat) or substring wildcard searches (\*cat\*) aren't supported.
     
 - When searching a property, use double quotation marks (" ") if the search value consists of multiple words. For example **subject:budget Q1** returns messages that contain **budget** in the in the subject line and that contain **Q1** anywhere in the message or in any of the message properties. Using **subject:"budget Q1"** returns all messages that contain **budget Q1** anywhere in the subject line.
     

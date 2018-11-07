@@ -30,7 +30,7 @@ Office 365 needs the name of the source email server from which you want to migr
   
  **To get the name of your source email system by using TE102821288**
   
-- In Outlook Web App, on the toolbar, choose **Settings**![Office 365 Settings button](../media/a9a59c0f-2e67-4cbf-9438-af273b0d552b.png) \> **Options** \> **Mail** \> **Accounts** \> **POP and IMAP**. Below your account information, you'll see a link to **Settings for POP and IMAP access**. Your IMAP server name, if enabled, is listed under IMAP setting.
+- In Outlook Web App, on the toolbar, choose **Settings** ![Office 365 Settings button](../media/a9a59c0f-2e67-4cbf-9438-af273b0d552b.png) \> **Options** \> **Mail** \> **Accounts** \> **POP and IMAP**. Below your account information, you'll see a link to **Settings for POP and IMAP access**. Your IMAP server name, if enabled, is listed under IMAP setting.
     
     ![Shows the link for POP or IMAP access settings](../media/fa54c636-4fd3-4fcd-add3-4e7c69072493.png)
   
@@ -42,8 +42,8 @@ Office 365 needs the name of the source email server from which you want to migr
 
 Office 365 also needs the values for the encryption method and the Transmission Control Protocol (TCP) port number used by the source email IMAP server.
   
-- **Security:** This is the encryption method used by the IMAP server. The default value for secure sockets layer (SSL) is appropriate for most IMAP servers. 
+- **Security**: This is the encryption method used by the IMAP server. The default value for secure sockets layer (SSL) is appropriate for most IMAP servers. 
     
-- **Port:** This is the TCP port number used to connect to the IMAP server. Use port 143 for unencrypted connections, port 143 for Transport Layer Security (TLS) connections, or port 993 (the default), for SSL connections. Port 993 is appropriate for most IMAP servers. 
+- **Port**: This is the TCP port number used to connect to the IMAP server. Use port 143 for unencrypted connections, port 143 for Transport Layer Security (TLS) connections, or port 993 (the default), for SSL connections. Port 993 is appropriate for most IMAP servers. 
     
 

@@ -96,17 +96,17 @@ After you create an equipment mailbox, you can make changes and set additional p
 
 3. On the equipment mailbox properties page, click one of the following sections to view or change properties.
 
-  - [General](#General.md)
+  - [General](#general)
 
-  - [Delegates](#Delegates.md)
+  - [Delegates](#delegates)
 
-  - [Booking Options](#BookingOptions.md)
+  - [Booking Options](#booking-options)
 
-  - [Contact Information](#ContactInformation.md)
+  - [Contact Information](#contact-information)
 
-  - [Email Address](#EmailAddress.md)
+  - [Email Address](#email-address)
 
-  - [MailTip](#MailTip.md)
+  - [MailTip](#mailtip)
 
 #### General
 <a name="General"> </a>

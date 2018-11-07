@@ -23,7 +23,7 @@ You can configure a mobile phone, such as a Windows Phone, to use Microsoft Exch
 - Exchange ActiveSync is enabled in your organization.
     
 > [!NOTE]
-> For device-specific information about setting up Microsoft Exchange-based email on a phone or tablet, see [Set up a mobile device using Office 365 for business](https://support.office.com/en-US/article/Set-up-a-mobile-device-using-Office-365-for-business-7dabb6cb-0046-40b6-81fe-767e0b1f014f). 
+> For device-specific information about setting up Microsoft Exchange-based email on a phone or tablet, see [Set up a mobile device using Office 365 for business](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f). 
   
 ## Configure a mobile phone to use Exchange ActiveSync
 
@@ -37,7 +37,7 @@ If the mobile phone is unable to contact the Exchange server automatically throu
   
 ### Windows Phone synchronization
 
-If you're configuring a Windows Phone mobile phone to synchronize with an Exchange mailbox using Exchange ActiveSync, only a subset of mobile device mailbox policy settings are supported. Those policy settings are detailed in [Supported Mobile Device Mailbox Policies for Windows Phones and Devices](http://technet.microsoft.com/library/d76b1d4c-d1f6-4501-a7c9-854327aceda5.aspx). 
+If you're configuring a Windows Phone mobile phone to synchronize with an Exchange mailbox using Exchange ActiveSync, only a subset of mobile device mailbox policy settings are supported. Those policy settings are detailed in [Supported Mobile Device Mailbox Policies for Windows Phones and Devices](https://technet.microsoft.com/library/d76b1d4c-d1f6-4501-a7c9-854327aceda5.aspx). 
   
 If you configure mobile device mailbox policy settings that are not supported for the version of Windows Phone you're using, you must also set the **AllowNonProvisionableDevices** policy setting to true or create a separate mobile device mailbox policy for Windows Phone mobile phones. 
   

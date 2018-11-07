@@ -24,11 +24,11 @@ An arbitration mailbox can be used to handle the approval workflow for moderated
 
 - Estimated time to complete: 15 minutes
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Aribtration" entry in the [Recipients permissions](http://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Aribtration" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
-## Step 1: Use the Shell to find all the recipients that use the arbitration mailbox you are trying to delete
+## Step 1: Use Exchange Online PowerShell to find all the recipients that use the arbitration mailbox you are trying to delete
 
 Run the following commands:
   
@@ -36,7 +36,6 @@ Run the following commands:
 $AM = Get-Mailbox "<arbitration mailbox>" -Arbitration
 $AMDN = $AM.DistinguishedName
 Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq $AMDN}
-
 ```
 
 For example, to find all the recipients that use the arbitration mailbox named Arbitration Mailbox01, run the following commands:
@@ -45,13 +44,12 @@ For example, to find all the recipients that use the arbitration mailbox named A
 $AM = Get-Mailbox "Arbitration Mailbox01" -Arbitration
 $AMDN = $AM.DistinguishedName
 Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq $AMDN}
-
 ```
 
 > [!NOTE]
-> The arbitration mailbox is specified using the distinguished name (DN). If you know the DN of the arbitration mailbox, you can run the single command:  `Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq <DN>}`. 
+> The arbitration mailbox is specified using the distinguished name (DN). If you know the DN of the arbitration mailbox, you can run the single command: `Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq <DN>}`. 
   
-## Step 2: Use the Shell to specify a different arbitration mailbox or disable moderation for the recipients
+## Step 2: Use Exchange Online PowerShell to specify a different arbitration mailbox or disable moderation for the recipients
 
 To stop moderated recipients from using the arbitration mailbox you are trying to delete, you can either specify a different arbitration mailbox, or you can disable moderation for the recipients.
   
@@ -59,34 +57,30 @@ If you choose to specify a different arbitration mailbox for the recipients, run
   
 ```
 Set-<RecipientType> <Identity> -ArbitrationMailbox <different arbitration mailbox>
-
 ```
 
 For example, to reconfigure the distribution group named All Employees to use the arbitration mailbox named Arbitration Mailbox02 for membership approval, run the following command:
   
 ```
 Set-DistributionGroup "All Employees" -ArbitrationMailbox "Arbitration Mailbox02"
-
 ```
 
 If you choose to disable moderation for the recipients, run the following command:
   
 ```
 Set-<RecipientType> <Identity> -ModerationEanbled $false
-
 ```
 
 For example, to disable moderation for the mailbox named Human Resources, run the following command:
   
 ```
 Set-Mailbox "Human Resources" -ModerationEanbled $false
-
 ```
 
 ## How do you know this worked?
 
 The procedure was successful if you can delete the arbitration mailbox without receiving the error that it's being used.
   
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
   
 

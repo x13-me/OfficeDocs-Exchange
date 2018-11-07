@@ -34,9 +34,9 @@ In this scenario, your organization's mail flow setup looks like the following d
   
 #### Best practices
 
-1. Add your custom domains in Office 365. To prove that you own the domains, follow the instructions in [Add users and domains](https://go.microsoft.com/fwlink/?LinkId=708999).
+1. Add your custom domains in Office 365. To prove that you own the domains, follow the instructions in [Add users and domains](https://go.microsoft.com/fwlink/p/?LinkId=708999).
     
-2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Office 365](https://go.microsoft.com/fwlink/?LinkId=524030).
+2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=524030).
     
 3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://go.microsoft.com/fwlink/p/?LinkID=534835).) The following DNS records control mail flow:
     
@@ -48,7 +48,7 @@ In this scenario, your organization's mail flow setup looks like the following d
   v=spf1 ipv4:10.10.10.1 ipv4: 131.107.21.231 include:spf.protection.outlook.com -all
   ```
 
-    Alternatively, depending on the third-party's requirements, you might need to include the domain from the third-party, as shown in the following example: 
+Alternatively, depending on the third-party's requirements, you might need to include the domain from the third-party, as shown in the following example: 
     
   ```
   v= ipv4: 131.107.21.231 spf1 include:spf.protection.outlook.com include:third_party_cloud_service.com -all

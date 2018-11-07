@@ -29,7 +29,7 @@ You can view or set the Unified Messaging (UM) and voice mail features and confi
 - Enable or disable access to their email or calendar.
     
 > [!NOTE]
-> Some of the settings and features can only be configured by using the Shell. 
+> Some of the settings and features can only be configured by using Exchange Online PowerShell. 
   
 For additional management tasks related to users who are enabled for voice mail, see [Voice mail-enabled user procedures](voice-mail-enabled-user-procedures.md).
   
@@ -37,7 +37,7 @@ For additional management tasks related to users who are enabled for voice mail,
 
 - Estimated time to complete: 5 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailboxes" entry in the [Unified Messaging Permissions](http://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailboxes" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic. 
     
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](../../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
     
@@ -45,14 +45,12 @@ For additional management tasks related to users who are enabled for voice mail,
     
 - Before you perform these procedures, confirm that the existing user is currently enabled for Unified Messaging. For detailed steps, see [Enable a user for voice mail](enable-a-user-for-voice-mail.md).
     
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see **Keyboard shortcuts in the Exchange admin center**.
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
     
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to view or configure a UM-enabled user's properties
+## Use the EAC to view or configure a UM-enabled user's properties
 
 1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
     
@@ -62,23 +60,23 @@ For additional management tasks related to users who are enabled for voice mail,
     
 4. On the **UM Mailbox** page, click **UM mailbox settings** to view or change the following UM properties for an existing UM-enabled user: 
     
-  - **PIN Status** This display-only field shows the status of the user's mailbox. By default, when a user is UM-enabled, the PIN status is listed as **Not locked out**. However, if the user has input an incorrect Outlook Voice Access PIN multiple times, the status is listed as **Locked Out**.
+  - **PIN Status**: This display-only field shows the status of the user's mailbox. By default, when a user is UM-enabled, the PIN status is listed as **Not locked out**. However, if the user has input an incorrect Outlook Voice Access PIN multiple times, the status is listed as **Locked Out**.
     
-  - **UM mailbox policy** This box shows the name of the UM mailbox policy associated with the UM-enabled user. You can click **Browse** to locate and specify the UM mailbox policy to be associated with this UM mailbox. 
+  - **UM mailbox policy**: This box shows the name of the UM mailbox policy associated with the UM-enabled user. You can click **Browse** to locate and specify the UM mailbox policy to be associated with this UM mailbox. 
     
-  - **Personal operator extension** Use this box to specify the operator extension number for the user. By default, an extension number isn't configured. The length of the extension number can be from 1 through 20 characters. This enables incoming calls for the UM-enabled user to be forwarded to the extension number that you specify in this box. 
+  - **Personal operator extension**: Use this box to specify the operator extension number for the user. By default, an extension number isn't configured. The length of the extension number can be from 1 through 20 characters. This enables incoming calls for the UM-enabled user to be forwarded to the extension number that you specify in this box. 
     
     You can configure other types of operator extension numbers on dial plans and auto attendants. However, those extensions are generally meant for company-wide receptionists or operators. The personal operator extension setting could be used when an administrative assistant or personal assistant answers incoming calls before they're answered for a particular user.
     
 5. On the **UM Mailbox** page, under **Other extensions**, you can add, change, and view extension numbers for the user.
     
-  - To add an extension number, click **Add**![Add Icon](../../media/ITPro_EAC_AddIcon.gif). On the **Add another extension** page, use **Browse** to select the UM dial plan, and then enter the extension number in the **Extension number** box. 
+  - To add an extension number, click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif). On the **Add another extension** page, use **Browse** to select the UM dial plan, and then enter the extension number in the **Extension number** box. 
     
-  - To remove an extension number, select the extension number you want to remove, and then click **Remove**![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif). 
+  - To remove an extension number, select the extension number you want to remove, and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.gif). 
     
 6. If you make any changes, click **Save**.
     
-### Use the Shell to configure features for a UM-enabled user
+## Use Exchange Online PowerShell to configure features for a UM-enabled user
 
 This example disables Play on Phone and missed call notifications, but enables text message (SMS) notifications.
   
@@ -107,7 +105,7 @@ This example prevents a user from creating call answering rules, receiving incom
 Set-UMMailbox -Identity tony@contoso.com -AutomaticSpeechRecognitionEnabled $true -CallAnsweringRulesEnabled $false -FaxEnabled $false -SubscriberAccessEnabled $false 
 ```
 
-### Use the Shell to view a UM-enabled user's properties
+## Use Exchange Online PowerShell to view a UM-enabled user's properties
 
 This example displays a list of all the UM-enabled mailboxes in the forest in a formatted list.
   

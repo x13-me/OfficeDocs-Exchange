@@ -29,11 +29,11 @@ After you've prepared your environment for Exchange Server, use the Exchange Dep
 ## What do you need to know before you begin?
 
 ::: moniker range="exchserver-2019"
-- Verify that your Active Directory forest functional level is Windows Server 2012 R2 or later, and that the schema master is running Windows Server 2012 R2 or later. For more information about the forest functional levels, see [Understanding Active Directory Domain Services (AD DS) Functional Levels](https://go.microsoft.com/fwlink/p/?linkId=137037).
+- Verify that your Active Directory meets the requirements for Exchange 2019: [Exchange 2019 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2019#network-and-directory-servers).
 ::: moniker-end
 
 ::: moniker range="exchserver-2016"
-- Verify that your Active Directory forest functional level is Windows Server 2008 R2 or higher, and that the schema master is running Windows Server 2008 R2 or later. For more information about the Windows functional level, see [Understanding Active Directory Domain Services (AD DS) Functional Levels](https://go.microsoft.com/fwlink/p/?linkId=137037).
+- Verify that your Active Directory meets the requirements for Exchange 2016: [Exchange 2016 Network and directory servers](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016#network-and-directory-servers).
 
 - The full installation option of Windows Server 2012 and Windows Server 2012 R2 must be used for all servers running Exchange 2016 server roles or management tools.
 
@@ -56,7 +56,6 @@ After you've prepared your environment for Exchange Server, use the Exchange Dep
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-
 
 ::: moniker range="exchserver-2019"
 ## Exchange 2019 prerequisites for preparing Active Directory

@@ -16,7 +16,7 @@ description: "In the Exchange admin center (EAC) in Exchange Online, you can cre
 
 In the Exchange admin center (EAC) in Exchange Online, you can create transport rules to enable or disable Office 365 Message Encryption. This lets you encrypt outgoing email messages and remove encryption from encrypted messages coming from inside your organization or from replies to encrypted messages sent from your organization. 
   
- **Note** To learn more about message encryption, go to [Encryption in Office 365](https://go.microsoft.com/fwlink/?LinkID=526003). Your organization must have [Windows Azure Rights Management set up for Office 365 Message Encryption](https://go.microsoft.com/fwlink/?LinkId=797620) to complete the tasks in this topic. 
+ **Note**: To learn more about message encryption, go to [Encryption in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=526003). Your organization must have [Windows Azure Rights Management set up for Office 365 Message Encryption](https://go.microsoft.com/fwlink/p/?LinkId=797620) to complete the tasks in this topic. 
   
 ## In this topic
 
@@ -35,26 +35,26 @@ Navigate with Internet Explorer and keyboard shortcuts, and make sure that you h
 
 Exchange Online, which includes the EAC, is a web-based application, so the keyboard shortcuts and navigation may be different from those in Exchange 2016. [Accessibility in the Exchange admin center](accessibility-in-exchange-admin-center.md).
   
-For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/?LinkID=787614).
+For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=787614).
   
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/?LinkID=317550).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
   
 ### Confirm your Office 365 subscription plan
 
 Exchange Online is included in Office 365 business and enterprise subscription plans, but capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it. 
   
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://go.microsoft.com/fwlink/?LinkID=797552
-) and [Exchange Online Service Description.](https://go.microsoft.com/fwlink/?LinkID=797553
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://go.microsoft.com/fwlink/p/?LinkID=797552
+) and [Exchange Online Service Description.](https://go.microsoft.com/fwlink/p/?LinkID=797553
 ).
   
 ### Open the EAC, and confirm your admin role
 
-To complete the tasks covered in this topic, [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your Office 365 global administrator has assigned you to the [Organization Management](https://go.microsoft.com/fwlink/?LinkId=797868) and [Records Management](https://go.microsoft.com/fwlink/?LinkId=798797) admin role groups. [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+To complete the tasks covered in this topic, [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your Office 365 global administrator has assigned you to the [Organization Management](https://go.microsoft.com/fwlink/p/?LinkId=797868) and [Records Management](https://go.microsoft.com/fwlink/p/?LinkId=798797) admin role groups. [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
   
 ## Create a transport rule to encrypt email messages
 <a name="BKMK_encryptemail"> </a>
 
-1. In the EAC, to move the focus to the first link in the navigation pane— **Dashboard** —press Ctrl+F6  *twice*  . You hear "Dashboard, Primary navigation link." 
+1. In the EAC, to move the focus to the first link in the navigation pane— **Dashboard** —press Ctrl+F6 *twice*. You hear "Dashboard, Primary navigation link." 
     
 2. To move the focus to the **mail flow** link in the navigation pane, press the Tab key until you hear "Mail flow, Primary navigation link." Press Enter. 
     
@@ -64,7 +64,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
     
 5. As the focus moves to the **Name** text box in the **new rule** pop-up window, you hear "New rule, Name, Edit." Type the name of the new rule (such as Encrypt email for email address). To move to the next option in the window, press the Tab key. 
     
-6. As the focus moves to the ** Apply this rule if ** drop-down box, you hear "Apply this rule if, Combo box." Press the Down Arrow or Up Arrow key until you hear the condition you want to select. Press Enter. For example, if you want to encrypt messages for a particular email address, perform the following five steps: 
+6. As the focus moves to the **Apply this rule if** drop-down box, you hear "Apply this rule if, Combo box." Press the Down Arrow or Up Arrow key until you hear the condition you want to select. Press Enter. For example, if you want to encrypt messages for a particular email address, perform the following five steps: 
     
 1. In the **Apply this rule if** drop-down box, press the Down Arrow key until you hear "The recipient is." Press Enter. 
     
@@ -84,7 +84,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
     
 7. As the focus moves back to the **new rule** pop-up window, you hear "New rule." 
     
-8. To move the focus to the ** More options ** link in the **new rule** pop-up window, press the Tab key until you hear "More options link." Press Enter. 
+8. To move the focus to the **More options** link in the **new rule** pop-up window, press the Tab key until you hear "More options link." Press Enter. 
     
     > [!TIP]
     > When you select the **More options** link, more user interface (UI) elements are added to the page and more options are added to the combo boxes. To have access to the **Modify the message security** option that you need to select in the next step, you must select the **More options** link. 
@@ -105,7 +105,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
 ## Create a transport rule to decrypt email messages
 <a name="BKMK_decryptemail"> </a>
 
-1. In the EAC, to move the focus to the first link in the navigation pane— **Dashboard** —press Ctrl+F6  *twice*  . You hear "Dashboard, Primary navigation link." 
+1. In the EAC, to move the focus to the first link in the navigation pane— **Dashboard** —press Ctrl+F6 *twice*. You hear "Dashboard, Primary navigation link." 
     
 2. To move the focus to the **mail flow** link in the navigation pane, press the Tab key until you hear "Mail flow, Primary navigation link." Press Enter. 
     

@@ -24,16 +24,14 @@ Set up an organization relationship to share calendar information with an extern
     
 - If you want to share calendars with an on-premises Exchange organization, the on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements.
     
-## What do you want to do?
-
-### Use the Exchange admin center to create an organization relationship
+## Use the Exchange admin center to create an organization relationship
 <a name="BKMK_EAC"> </a>
 
 1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
     
 2. Go to **organization** \> **sharing**.
     
-3. Under **Organization Sharing**, click **New**![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. Under **Organization Sharing**, click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
 4. In **new organization relationship**, in the **Relationship name** box, type a friendly name for the organization relationship. 
     
@@ -57,7 +55,7 @@ Set up an organization relationship to share calendar information with an extern
     
 7. Click **save** to create the organization relationship. 
     
-### Use the Exchange Management Shell to create an organization relationship
+## Use Exchange Online PowerShell to create an organization relationship
 <a name="BKMK_Shell"> </a>
 
 This example creates an organization relationship with Contoso, Ltd with the following conditions:
@@ -70,17 +68,15 @@ This example creates an organization relationship with Contoso, Ltd with the fol
     
 ```
 New-OrganizationRelationship -Name "Contoso" -DomainNames "contoso.com","northamerica.contoso.com","europe.contoso.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
-
 ```
 
 If you're not sure which domains Contoso has set up for cloud-based authentication, you can run this command to automatically find the configuration information. The **Get-FederationInformation** cmdlet is used to find the right information, which is then passed to the **New-OrganizationRelationship** cmdlet. 
   
 ```
 Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
-
 ```
 
-For detailed syntax and parameter information, see [Get-FederationInformation](http://technet.microsoft.com/library/e7e948c8-453d-49e2-97da-45fd2a7853ba.aspx) and [New-OrganizationRelationship](http://technet.microsoft.com/library/ec35c7ed-6f91-435e-8c9f-9dbc53c993fe.aspx).
+For detailed syntax and parameter information, see [Get-FederationInformation](https://technet.microsoft.com/library/e7e948c8-453d-49e2-97da-45fd2a7853ba.aspx) and [New-OrganizationRelationship](https://technet.microsoft.com/library/ec35c7ed-6f91-435e-8c9f-9dbc53c993fe.aspx).
   
 If you're setting up an organization relationship with an on-premises Exchange organization, you may want to provide the connection settings. This example creates an organization relationship with Fourth Coffee and specifies the connection settings to use. The following conditions apply:
   
@@ -96,22 +92,21 @@ If you're setting up an organization relationship with an on-premises Exchange o
     
 ```
 New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
-
 ```
 
-For detailed syntax and parameter information, see [New-OrganizationRelationship](http://technet.microsoft.com/library/ec35c7ed-6f91-435e-8c9f-9dbc53c993fe.aspx).
+For detailed syntax and parameter information, see [New-OrganizationRelationship](https://technet.microsoft.com/library/ec35c7ed-6f91-435e-8c9f-9dbc53c993fe.aspx).
   
 ## How do you know this worked?
 
 The successful completion of the **New organization relationship** wizard indicates that the organization relationship was created. 
   
-You can also run the following Exchange Management Shell command to verify the organization relationship information:
+You can also run the following command to verify the organization relationship information:
   
 ```
 Get-OrganizationRelationship | format-list
 ```
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 

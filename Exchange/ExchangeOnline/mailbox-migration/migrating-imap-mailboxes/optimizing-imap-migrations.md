@@ -26,7 +26,7 @@ When you undertake an Internet Message Access Protocol (IMAP) migration from an 
 
 Here are some tips for optimizing an IMAP migration:
   
-- **Increase the connection limits to your IMAP server.** Many firewalls and email servers have per-user limits, per-IP address limits, and overall connection limits. Before you migrate mailboxes, make sure that your firewall and IMAP server are configured to allow a large, or maximum, number of connections for the following settings: 
+- **Increase the connection limits to your IMAP server**: Many firewalls and email servers have per-user limits, per-IP address limits, and overall connection limits. Before you migrate mailboxes, make sure that your firewall and IMAP server are configured to allow a large, or maximum, number of connections for the following settings: 
     
   - The total number of connections to the IMAP server.
     
@@ -40,15 +40,15 @@ Here are some tips for optimizing an IMAP migration:
     
   - Exchange 2013: [Set connection limits for IMAP4](https://go.microsoft.com/fwlink/p/?LinkId=623631)
     
-  - Exchange 2010: [View or Configure IMAP4 Properties](https://go.microsoft.com/fwlink/?LinkId=183037)
+  - Exchange 2010: [View or Configure IMAP4 Properties](https://go.microsoft.com/fwlink/p/?LinkId=183037)
     
-  - Exchange 2007: [How to Set Connection Limits for IMAP4](https://go.microsoft.com/fwlink/?LinkId=183038)
+  - Exchange 2007: [How to Set Connection Limits for IMAP4](https://go.microsoft.com/fwlink/p/?LinkId=183038)
     
-  - Exchange 2003: [How to Set Connection Limits](https://go.microsoft.com/fwlink/?LinkId=183039)
+  - Exchange 2003: [How to Set Connection Limits](https://go.microsoft.com/fwlink/p/?LinkId=183039)
     
-- **Change the DNS Time-to-Live (TTL) setting on your MX record.** Before you start migrating mailboxes, change the Domain Name System (DNS) TTL setting on your current MX record to a shorter interval, such as 3,600 seconds (one hour). Then, when you change the MX record to point to your Office 365 email organization after all mailboxes are migrated, the updated MX record should propagate more quickly because of the shortened TTL interval. 
+- **Change the DNS Time-to-Live (TTL) setting on your MX record**: Before you start migrating mailboxes, change the Domain Name System (DNS) TTL setting on your current MX record to a shorter interval, such as 3,600 seconds (one hour). Then, when you change the MX record to point to your Office 365 email organization after all mailboxes are migrated, the updated MX record should propagate more quickly because of the shortened TTL interval. 
     
-- **Run one or more test migration batches.** Run a few small IMAP migration batches before you migrate larger numbers of users. In a test migration, you can do the following: 
+- **Run one or more test migration batches**: Run a few small IMAP migration batches before you migrate larger numbers of users. In a test migration, you can do the following: 
     
   - Verify the format of the CSV file.
     
@@ -64,14 +64,14 @@ Here are some tips for optimizing an IMAP migration:
     
   - Use CSV files with the same number of rows and run the batches at similar times during the day. Then compare the total running time for each test batch. This comparison will help you estimate how long it will take to migrate all your mailboxes, how large each migration batch should be, and how many simultaneous connections to the IMAP server you should use to balance migration speed and Internet bandwidth.
     
-- **Use administrator credentials in the CSV file to migrate email.** This method is the least disruptive and inconvenient for users, and it will help minimize synchronization errors caused when users change the password on their on-premises account. It also saves you from having to obtain or change user passwords. If you use this method, be sure to verify that the administrator account you use has the necessary permissions to access the mailboxes you're migrating. 
+- **Use administrator credentials in the CSV file to migrate email**: This method is the least disruptive and inconvenient for users, and it will help minimize synchronization errors caused when users change the password on their on-premises account. It also saves you from having to obtain or change user passwords. If you use this method, be sure to verify that the administrator account you use has the necessary permissions to access the mailboxes you're migrating. 
     
     > [!NOTE]
     > If you decide to use user credentials in the CSV file, consider globally changing users' passwords, and then preventing users from changing their password on their on-premises account before you migrate their mailboxes. If users change their password before their mailbox is migrated to the cloud-based mailbox, the migration will fail. If they change their password after the mailbox is migrated, new email sent to their mailbox on the IMAP server won't be migrated to their Office 365 mailbox. 
   
-- **Don't delete mailboxes or change their SMTP addresses during migration.** The migration system will report an error when it can't find a mailbox that's been migrated. Be sure to complete the migration and delete the migration batch before you delete or change the SMTP address of an Office 365 or on-premises mailbox that's been migrated. 
+- **Don't delete mailboxes or change their SMTP addresses during migration**: The migration system will report an error when it can't find a mailbox that's been migrated. Be sure to complete the migration and delete the migration batch before you delete or change the SMTP address of an Office 365 or on-premises mailbox that's been migrated. 
     
-- **Communicate with your users.** Let users know ahead of time that you'll be migrating the content of their on-premises mailboxes to your Office 365 organization. Consider the following: 
+- **Communicate with your users**: Let users know ahead of time that you'll be migrating the content of their on-premises mailboxes to your Office 365 organization. Consider the following: 
     
   - Tell users that email messages larger than 35 MB won't be migrated. Ask users to save very large messages and attachments to their local computer or to a removable USB drive.
     
