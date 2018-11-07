@@ -20,6 +20,9 @@ In earlier versions of Exchange, if you wanted to store this information in Acti
 
 The custom attributes available to Exchange Server are labeled in Active Directory as **ms-Exch-Extension-Attribute1** through **ms-Exch-Extension-Attribute15**. In the Exchange Management Shell, the corresponding parameters are _CustomAttribute1_ through _CustomAttribute15_. These attributes aren't used by any Exchange components. They can be used to store Active Directory data without having to extend the Active Directory schema.
 
+> [!NOTE]
+> **ms-Exch-Extension-Attribute-16** to **ms-Exch-Extension-Attribute-45** are present in Active Directory, but aren't available in the Exchange admin center (EAC) or the Exchange Management Shell. Don't use non-Exchange tools to edit these attributes because they might be used for future Exchange features.
+
 ## Advantages of custom attributes
 <a name="AO"> </a>
 
@@ -29,7 +32,7 @@ There are several advantages to using custom attributes:
 
 - You don't have to do the work, because the attributes are created by Exchange Setup.
 
-- You can use the Exchange admin center (EAC) or the Exchange Management Shell to manage the attributes. You don't need to build custom controls or write scripts to populate and display these attributes.
+- You can use the EAC or the Exchange Management Shell to manage the attributes. You don't need to build custom controls or write scripts to populate and display these attributes.
 
 - You can filter and reuse the attributes, as attributes are filterable properties that can be used in the _Filter_ parameter with recipient cmdlets such as **Get-Mailbox**. They can also be used in the EAC and the Exchange Management Shell to create filters for e-mail address policies, address lists, and dynamic distribution groups.
 
