@@ -20,6 +20,8 @@ In earlier versions of Exchange, if you wanted to store this information in Acti
 
 The custom attributes available to Exchange Server are labeled in Active Directory as **ms-Exch-Extension-Attribute1** through **ms-Exch-Extension-Attribute15**. In the Exchange Management Shell, the corresponding parameters are _CustomAttribute1_ through _CustomAttribute15_. These attributes aren't used by any Exchange components. They can be used to store Active Directory data without having to extend the Active Directory schema.
 
+We have also added ms-Exch-Extension-Attribute-16 to 45. Those are not exposed to various CMDlets and Exchange management UI, because they were added for future use. As such, we cannot recommend that you use non-Exchange tools to edit their values because we might use those attributes in the future for various Exchange features.
+
 ## Advantages of custom attributes
 <a name="AO"> </a>
 
