@@ -101,5 +101,3 @@ If Support and Recovery Assistant for Office 365 can't fix your problem for you,
 ## How do I use Support and Recovery Assistant with my mobile device, Outlook for Mac 2016, or Outlook for Mac 2011?
 
 Support and Recovery Assistant can run diagnostics and fix problems with Office 365 accounts that access the service through a mobile device or a Mac. However, to use the app to run diagnostics, you need to download and run it on a PC.
-  
-
