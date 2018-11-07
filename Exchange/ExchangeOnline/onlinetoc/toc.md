@@ -452,7 +452,7 @@
 ## [Find and fix email delivery issues as an Office 365 for business admin](../find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md)
 ## [Fix Outlook connection problems in Office 365 and Exchange Online](../fix-outlook-connection-problems-in-office-365-and-exchange-online/fix-outlook-connection-problems-in-office-365-and-exchange-online.md)
 ### [Fix Outlook and Office 365 issues](../fix-outlook-connection-problems-in-office-365-and-exchange-online/fix-outlook-and-office-365-issues/fix-outlook-and-office-365-issues.md)
-### [Diagnostic log collection in Support and Recovery Assistant](../fix-outlook-connection-problems-in-office-365-and-exchange-online/diagnostic-log-collection-in-support-and-recovery-assistant.md)
+### [Diagnostic log collection in Support and Recovery Assistant](../fix-outlook-connection-problems-in-office-365-and-exchange-online/fix-outlook-and-office-365-issues/diagnostic-log-collection-in-support-and-recovery-assistant.md)
 ## [Enable or disable modern authentication in Exchange Online](../enable-or-disable-modern-authentication-in-exchange-online.md)
 ## [How to set up a multifunction device or application to send email using Office 365](../how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md)
 ## [How to configure IIS for relay with Office 365](../how-to-configure-iis-for-relay-with-office-365.md)
