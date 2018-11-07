@@ -199,11 +199,3 @@ Possible causes include the following:
 - Latency in the service is causing delays.
     
 - The message was blocked by the filtering service.
-    
-### Still need help? Contact support
-
-If you weren't able to resolve your email delivery problems with the tools provided with Office 365 for business, contact support for more in-depth troubleshooting.
-  
- **Instructions:**[Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-  
-
