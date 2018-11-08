@@ -39,19 +39,19 @@ Within the Office 365-based architecture, Outlook for iOS and Android is utilizi
 - a proprietary device API + REST API
 - a native Microsoft sync technology
 
-Today, the vast majority of accounts using Outlook for iOS and Android connect via a stateless protocol translator component that is built and run in Azure. This component routes data and translates commands, but it doesn't cache user data. The app is coded with the Outlook device API, a proprietary API that syncs commands and data to and from the app. Exchange Online data is accessed via the publicly available REST APIs. The protocol translator enables communication between Outlook and Exchange Online. 
+Today, the vast majority of accounts using Outlook for iOS and Android connect via a Stateless Protocol Translator component that is built and run in Azure. This component routes data and translates commands, but it doesn't cache user data. The app is coded with the Outlook device API, a proprietary API that syncs commands and data to and from the app. Exchange Online data is accessed via the publicly available REST APIs. The protocol translator enables communication between Outlook and Exchange Online. 
 
 **need rest.png image**
   
-Microsoft is in the process of migrating customers to a native Microsoft sync technology that removes the stateless protocol translator component from the Office 365-based architecture. With the native Microsoft sync technology, Outlook for iOS and Android connects directly to Office 365 for data connections ensuring the data is protected by an HTTP TLS-secured connection end-to-end. 
+Beginning in December 2018, Microsoft will migrate customers to a native Microsoft sync technology that removes the Stateless Protocol Translator component from the Office 365-based architecture. With the native Microsoft sync technology, Outlook for iOS and Android connects directly to Office 365 for data connections ensuring the data is protected by an HTTP TLS-secured connection end-to-end. 
 
 **need newsync.png image**
 
 The native Microsoft sync technology offers several benefits:
 
-1. **Latency reduction**: By replacing the propietary Outlook device API and stateless protocol translator, there is a reduction in end-to-end latency between the client and Office 365.
+1. **Latency reduction**: By replacing the propietary Outlook device API and Stateless Protocol Translator, there is a reduction in end-to-end latency between the client and Office 365.
 
-2. **Additional Office 365 instance support**: Removing the intermediary stateless protocol translator for data connections enables Microsoft to support other unique Office 365 instances, like Office 365 Government Community Cloud High and Office 365 Department of Defense, that were previously blocked from using Outlook for iOS and Android.
+2. **Additional Office 365 instance support**: Removing the intermediary Stateless Protocol Translator for data connections enables Microsoft to support other unique Office 365 instances, like Office 365 Government Community Cloud High and Office 365 Department of Defense, that were previously blocked from using Outlook for iOS and Android.
 
 5. **Protocol consolidation**: Today, each Outlook client platform utilizes a different data sync protocol, which hinders the ability to innovate and deploy new features quickly across all Outlook clients. The native Microsoft sync technology that Outlook for iOS and Android is adopting has been in use by the native Windows 10 mail client for a number of years, and in the future, will be used by Outlook for Mac.
 
