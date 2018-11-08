@@ -43,7 +43,7 @@ Today, the vast majority of accounts using Outlook for iOS and Android connect v
 
 **need rest.png image**
   
-Microsoft is in the process of migrating customers to a native Microsoft sync technology that removes the stateless protocol translator component from the Office 365-based architecture. With the native Microsoft sync technology, Outlook for iOS and Android connects directly to Office 365 for data connections while ensuring the data is protected by an HTTP TLS-secured connection end-to-end. 
+Microsoft is in the process of migrating customers to a native Microsoft sync technology that removes the stateless protocol translator component from the Office 365-based architecture. With the native Microsoft sync technology, Outlook for iOS and Android connects directly to Office 365 for data connections ensuring the data is protected by an HTTP TLS-secured connection end-to-end. 
 
 **need newsync.png image**
 
