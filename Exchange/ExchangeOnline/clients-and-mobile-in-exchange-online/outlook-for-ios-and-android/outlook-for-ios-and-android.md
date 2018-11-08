@@ -33,19 +33,19 @@ The Office 365-based architecture provides the following benefits:
 
 4. **Enterprise Mobility + Security support**: Customers can take advantage of Microsoft Enterprise Mobility + Security (EMS) including Microsoft Intune and Azure Active Directory Premium, to enable conditional access and Intune app protection policies, which control and secure corporate messaging data on the mobile device.
   
-At present, the Office 365-based architecture leveraged by Outlook for iOS and Android utilizes two different data synchronization protocols:
-- a proprietary device API / REST API protocol set
+Within the Office 365-based architecture, Outlook for iOS and Android could be utilizing one of two different data synchronization protocols:
+- a proprietary device API + REST API
 - a native Microsoft sync technology
 
-The vast majority of accounts using Outlook for iOS and Android connect via a stateless protocol translator component that is built and run in Azure. This component routes data and translates commands, but it doesn't cache user data. The app is coded with the Outlook device API, a proprietary API that syncs commands and data to and from the app. Exchange Online data is accessed via the publicly available REST APIs. The protocol translator enables communication between Outlook and Exchange Online. 
+Today, the vast majority of accounts using Outlook for iOS and Android connect via a stateless protocol translator component that is built and run in Azure. This component routes data and translates commands, but it doesn't cache user data. The app is coded with the Outlook device API, a proprietary API that syncs commands and data to and from the app. Exchange Online data is accessed via the publicly available REST APIs. The protocol translator enables communication between Outlook and Exchange Online. 
 
 **need rest.png image**
   
-Microsoft is in the process of migrating customers to a native Microsoft HTTP sync technology that removes the stateless protocol translator component from the Office 365-based architecture. By leveraging the native Microsoft sync technology, Outlook for iOS and Android connects directly to Office 365 for data connections while ensuring the data is protected by TLS-secured connections end-to-end. 
+Microsoft is in the process of migrating customers to a native Microsoft HTTP sync technology that removes the stateless protocol translator component from the Office 365-based architecture. With the native Microsoft sync technology, Outlook for iOS and Android connects directly to Office 365 for data connections while ensuring the data is protected by TLS-secured connections end-to-end. 
 
 **need newsync.png image**
 
-This offers several benefits:
+The native Microsoft sync technology offers several benefits:
 
 1. **Latency reduction**: By replacing the propietary Outlook device API and stateless protocol translator, there is a reduction in end-to-end latency between the client and Office 365.
 
