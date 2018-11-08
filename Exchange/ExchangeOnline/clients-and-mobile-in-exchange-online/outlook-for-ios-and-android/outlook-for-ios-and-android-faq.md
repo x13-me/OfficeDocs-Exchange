@@ -130,7 +130,43 @@ Yes, Outlook for iOS and Android supports proxy configurations when the proxy in
 - **Does not perform authentication**.
     
 Outlook for iOS and Android will consume the proxy configuration as defined by the platform operating system. Typically, this configuration information is deployed via a PAC file. The PAC file must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no additional custom settings are supported.
+
+## Native Microsoft sync technology migration
+
+The following questions are about the migration from the REST API data sync protocol to the native Microsoft sync technology used by Outlook for iOS and Android for accessing mailbox data.
+
+### Q: Is there a minimum version of Outlook for iOS and Android required to use the native Microsoft sync technology?
+
+We are still finalizing details around the supported minimum version; please check back later.
+
+### Q: What will my users experience when our tenant is migrated to the native Microsoft sync technology?
+
+Assuming the user is running a supported version of Outlook for iOS and Android, tt the time your tenant is migrated, your users may see a brief notice indicating that we are updating their email and calendar data.  Otherwise the user experience to migrate to the updated architecture will be seamless.  
+
+### Q: If my user doesn't upgrade to a supported build of Outlook for iOS and Android prior to my tenant's migration, does that mean the user will lose access to email and calendar data while mobile?
+
+No, the user will continue to connect using the exist REST-based data sync protocol.
+
+### Q: Will my Intune App Protection Policies or Azure AD Conditional Access policies be affected by this migration?
+
+No, both Intune App Protection Policies and Azure AD Conditional Access policies will continue to be applied to the targeted identity, regardless of the data sync protocol being leveraged by Outlook for iOS and Android.
+
+### Q: Will I have to update my Exchange mobile device access policies (allow block quarantine (ABQ) rules)?
+
+No, the user agent string that Outlook for iOS and Android uses does not change. For more information on what that user agent is, see [Securing Outlook for iOS and Android in Exchange Online](https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/secure-outlook-for-ios-and-android).
+
+### Q: As an Exchange administrator, is there a way for me to determine which data sync protocol Outlook for iOS and Android clients are utilizing in the Office 365-based architecture?
+
+Yes, execute the following command from Exchange Online PowerShell:
   
+```
+Get-MobileDevice | where {$_.DeviceModel -eq "Outlook for iOS and Android"} | Format-List FriendlyName,DeviceID,DeviceOS,ClientType
+```
+
+The `ClientType` property indicates which data sync protocol is in use. If the value is REST, then the client is utilizing the REST API. If the value is Outlook, then the client is using the native Microsoft sync technology. 
+  
+Alternatively, a user can login to Outlook on the web and, from within **Options**, select **Mobile Devices** to view the details of a mobile device.
+
 ## Administrating and monitoring Outlook for iOS and Android in your organization
 
 The following questions are about managing and monitoring the Outlook for iOS and Android app within your organization after his has been deployed.
@@ -152,20 +188,6 @@ To gather the logs:
 4. Tap Upload Outlook Logs (iOS) or Collect Logs (Android).
 
 5. Share the incident ID with CSS.
-  
-### Q: As an Exchange administrator, is there a way for me to determine which data sync protocol Outlook for iOS and Android clients are utilizing in the Office 365-based architecture?
-
-Yes, execute the following command from Exchange Online PowerShell:
-  
-```
-Get-MobileDevice | where {$_.DeviceModel -eq "Outlook for iOS and Android"} | Format-List FriendlyName,DeviceID,DeviceOS,ClientType
-```
-
-The `ClientType` property indicates which data sync protocol is in use. If value is REST, then the client is utilizing the REST API. If the value is Outlook, then the client is using the native Microsoft sync technology. 
-  
-Alternatively, a user can login to Outlook on the web and, from within **Options**, select **Mobile Devices** to view the details of a mobile device. This would look similar to the following: 
-  
-![picture of managing mobile devices in Outlook for iOS and Android](../../media/7d8b1ffc-254d-401f-9bdc-227adf1a0e86.png)
   
 ### Q: As an Exchange administrator, I would like to deploy Outlook for iOS and Android, but in my testing I can't log in. What might be the issue?
 
