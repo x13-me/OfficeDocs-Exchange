@@ -4,7 +4,7 @@ ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
 manager: laurawi
-ms.date: 6/25/2018
+ms.date: 11/8/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -31,11 +31,7 @@ The following questions are about the overall architecture of Outlook for iOS an
   
 ### Q: What cloud architecture is utilized by Outlook for iOS and Android for Office 365 accounts?
 
-The Outlook for iOS and Android app is fully powered by the Microsoft Cloud. All Office 365 Enterprise, Business, and Education accounts are supported natively, which means there is no mailbox data cached outside of Office 365. Data simply stays in its current Exchange Online mailbox, and it's protected by TLS-secured connections end-to-end, between Office 365 and the app. Outlook for iOS and Android is now fully delivered through Microsoft services that provide a strong commitment to security, privacy, and compliance.
-  
-![Outlook for iOS and Android architecture](../../media/4e9e00a8-e8af-4096-baf2-fee99ee5e192.png)
-  
-Outlook for iOS and Android uses a stateless protocol translator component that is built and run in Azure. This component routes data and translates commands, but it doesn't cache user data. The app is coded with the Outlook device API, a proprietary API that syncs commands and data to and from the app. Exchange Online data is accessed via the publicly available REST APIs. The protocol translator enables communication between Outlook and Exchange Online. 
+For more information on the architecture, see [Outlook for iOS and Android in Exchange Online](https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android).
  
 ### Q: Can I add two different Office 365 accounts from different Office 365 regions to Outlook for iOS and Android?
 
@@ -157,7 +153,7 @@ To gather the logs:
 
 5. Share the incident ID with CSS.
   
-### Q: As an Exchange administrator, is there a way for me to determine if Outlook clients are utilizing the Office 365-based architecture?
+### Q: As an Exchange administrator, is there a way for me to determine which data sync protocol Outlook for iOS and Android clients are utilizing in the Office 365-based architecture?
 
 Yes, execute the following command from Exchange Online PowerShell:
   
@@ -165,7 +161,7 @@ Yes, execute the following command from Exchange Online PowerShell:
 Get-MobileDevice | where {$_.DeviceModel -eq "Outlook for iOS and Android"} | Format-List FriendlyName,DeviceID,DeviceOS,ClientType
 ```
 
-The `ClientType` property indicates whether the client is using the Office 365-based architecture (REST) or the AWS-based architecture (EAS). 
+The `ClientType` property indicates which data sync protocol is in use. If value is REST, then the client is utilizing the REST API. If the value is Outlook, then the client is using the native Microsoft sync technology. 
   
 Alternatively, a user can login to Outlook on the web and, from within **Options**, select **Mobile Devices** to view the details of a mobile device. This would look similar to the following: 
   
