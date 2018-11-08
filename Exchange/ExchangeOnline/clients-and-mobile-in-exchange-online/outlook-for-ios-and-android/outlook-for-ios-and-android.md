@@ -32,8 +32,10 @@ The Office 365-based architecture provides the following benefits:
 3. **Modern Authentication (OAuth)**: Outlook for iOS and Android leverages Modern Authentication (OAuth) to protect user’s credentials. Modern authentication provides Outlook for iOS and Android with a secure mechanism to access Office 365 data without ever touching a user’s credentials. At sign in, the user authenticates directly against an identity platform (either Azure AD or an on-premises identity provider like ADFS) and receives an access token in return, which grants Outlook for iOS and Android access to the user’s mailbox or files. At no time does the service have access to the user’s password in any form.
 
 4. **Enterprise Mobility + Security support**: Customers can take advantage of Microsoft Enterprise Mobility + Security (EMS) including Microsoft Intune and Azure Active Directory Premium, to enable conditional access and Intune app protection policies, which control and secure corporate messaging data on the mobile device.
-  
-Within the Office 365-based architecture, Outlook for iOS and Android could be utilizing one of two different data synchronization protocols:
+
+### Data synchronization protocol
+
+Within the Office 365-based architecture, Outlook for iOS and Android is utilizing one of two different data synchronization protocols:
 - a proprietary device API + REST API
 - a native Microsoft sync technology
 
