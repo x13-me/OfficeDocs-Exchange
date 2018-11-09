@@ -141,7 +141,11 @@ We are still finalizing details around the supported minimum version; please che
 
 ### Q: What will my users experience when our tenant is migrated to the native Microsoft sync technology?
 
-Assuming the user is running a supported version of Outlook for iOS and Android, tt the time your tenant is migrated, your users may see a brief notice indicating that we are updating their email and calendar data.  Otherwise the user experience to migrate to the updated architecture will be seamless.  
+Assuming the user is running a supported version of Outlook for iOS and Android, after your tenant is migrated, your users may see a brief notice indicating that we are updating their email and calendar data. Otherwise the user experience to migrate to the updated architecture will be seamless.  
+
+### Q: As a tenant administrator, can I control which of my users will be migrated to the native Microsoft sync technology?
+
+No, as we are migrating on a per-tenant basis and not on a per-user basis. Migration does require the user to actually launch Outlook for iOS and Android - when the user uses the app is when they will be switched to the native Microsoft sync technology.
 
 ### Q: If my user doesn't upgrade to a supported build of Outlook for iOS and Android prior to my tenant's migration, does that mean the user will lose access to email and calendar data while mobile?
 
@@ -169,7 +173,7 @@ Alternatively, a user can login to Outlook on the web and, from within **Options
 
 ## Administrating and monitoring Outlook for iOS and Android in your organization
 
-The following questions are about managing and monitoring the Outlook for iOS and Android app within your organization after his has been deployed.
+The following questions are about managing and monitoring the Outlook for iOS and Android app within your organization after the app has been deployed.
   
 ### Q: Is it necessary to file an in-app support ticket when I experience an issue with Outlook for iOS and Android?
 
