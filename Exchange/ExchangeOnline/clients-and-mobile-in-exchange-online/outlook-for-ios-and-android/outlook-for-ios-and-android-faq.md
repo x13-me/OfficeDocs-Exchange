@@ -4,7 +4,7 @@ ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
 manager: laurawi
-ms.date: 11/8/2018
+ms.date:
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -31,7 +31,7 @@ The following questions are about the overall architecture of Outlook for iOS an
   
 ### Q: What cloud architecture is utilized by Outlook for iOS and Android for Office 365 accounts?
 
-For more information on the architecture, see [Outlook for iOS and Android in Exchange Online](https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android).
+For more information on the architecture, see [Outlook for iOS and Android in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android).
  
 ### Q: Can I add two different Office 365 accounts from different Office 365 regions to Outlook for iOS and Android?
 
