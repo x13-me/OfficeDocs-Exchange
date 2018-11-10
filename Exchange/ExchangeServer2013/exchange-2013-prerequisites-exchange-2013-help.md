@@ -71,7 +71,7 @@ The computer you want to use to prepare Active Directory for Exchange 2013 has s
 
 Install the following software, in the order shown, on the computer that will be used to prepare Active Directory:
 
-1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
+1.  [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (included with Windows Server 2012 R2)
 
@@ -203,11 +203,13 @@ After you've installed the operating system roles and features, install the foll
 
 3.  [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-4.  [Microsoft Knowledge Base article KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
+4.  [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 
-5.  [Knowledge Base article KB2619234 (Enable the Association Cookie/GUID that is used by RPC over HTTP to also be used at the RPC layer in Windows 7 and in Windows Server 2008 R2)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234)
+5.  [Microsoft Knowledge Base article KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
 
-6.  [Knowledge Base article KB2533623 (Insecure library loading could allow remote code execution)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2533623)
+6.  [Knowledge Base article KB2619234 (Enable the Association Cookie/GUID that is used by RPC over HTTP to also be used at the RPC layer in Windows 7 and in Windows Server 2008 R2)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234)
+
+7.  [Knowledge Base article KB2533623 (Insecure library loading could allow remote code execution)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2533623)
     
 
     > [!NOTE]
@@ -248,6 +250,8 @@ After you've installed the operating system roles and features, install the foll
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
 
 3.  [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
+
+4.  [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 
 ## Windows 7 prerequisites (admin tools only)
 
