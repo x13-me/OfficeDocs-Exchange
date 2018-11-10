@@ -35,7 +35,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
-|[Exchange Server 2019 RTM](https://go.microsoft.com/fwlink/p/?linkId=195442)|October 22, 2018|15.2.221.12|15.02.0221.012​|
+|[Exchange Server 2019 RTM](https://go.microsoft.com/fwlink/p/?linkId=195442)|October 22, 2018|15.2.221.12|15.02.0221.012|
 
 ## Exchange Server 2016
 
