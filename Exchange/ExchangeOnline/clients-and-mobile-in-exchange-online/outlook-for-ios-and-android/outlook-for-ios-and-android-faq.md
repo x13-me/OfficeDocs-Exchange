@@ -145,11 +145,11 @@ Assuming the user is running a supported version of Outlook for iOS and Android,
 
 ### Q: As a tenant administrator, can I control which of my users will be migrated to the native Microsoft sync technology?
 
-No, as we are migrating on a per-tenant basis and not on a per-user basis. Migration does require the user to actually launch Outlook for iOS and Android - when the user uses the app is when they will be switched to the native Microsoft sync technology.
+No, as we are migrating on a per-tenant basis and not on a per-user basis. Migration does require the user to actually launch Outlook for iOS and Android; launching the app triggers the user's migration to the native Microsoft sync technology.
 
 ### Q: If my user doesn't upgrade to a supported build of Outlook for iOS and Android prior to my tenant's migration, does that mean the user will lose access to email and calendar data while mobile?
 
-No, the user will continue to connect using the exist REST-based data sync protocol.
+No, the user will continue to connect using the existing REST-based data sync protocol.
 
 ### Q: Will my Intune App Protection Policies or Azure AD Conditional Access policies be affected by this migration?
 
@@ -169,7 +169,7 @@ Get-MobileDevice | where {$_.DeviceModel -eq "Outlook for iOS and Android"} | Fo
 
 The `ClientType` property indicates which data sync protocol is in use. If the value is REST, then the client is utilizing the REST API. If the value is Outlook, then the client is using the native Microsoft sync technology. 
   
-Alternatively, a user can login to Outlook on the web and, from within **Options**, select **Mobile Devices** to view the details of a mobile device.
+Alternatively, a user can login to Outlook on the web and, from within **Options**, select **Mobile Devices** to view the details of a mobile device. Like the cmdlet, the user can see the value for the `ClientType` property.
 
 ## Administrating and monitoring Outlook for iOS and Android in your organization
 
