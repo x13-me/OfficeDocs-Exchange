@@ -316,7 +316,7 @@ Use the previously downloaded scripts to generate the .csv files that will be us
 
   - \<Maximum mailbox size in bytes\> is the maximum amount of data you want to migrate into any single public folder mailbox in Exchange Online. The maximum size of this field is currently 50 GB, but we recommend you use a smaller size, such as 50% of maximum size, to allow for future growth. 
     
-  - \<Maximum mailbox recoverable items size in bytes\> is the recoverable items quota on your Exchange Online mailboxes. The maximum size of public folder mailboxes In Exchange Online is currently 50 GB. We recommend setting _RecoverableItemsQuota_ `_ to 15 GB or less. 
+  - \<Maximum mailbox recoverable items size in bytes\> is the recoverable items quota on your Exchange Online mailboxes. The maximum size of public folder mailboxes In Exchange Online is currently 50 GB. We recommend setting _RecoverableItemsQuota_ to 15 GB or less. 
     
   - \<Folder-to-size map path\> is the file path of the .csv file you created when you ran the `Export-ModernPublicFolderStatistics.ps1` script. 
     
