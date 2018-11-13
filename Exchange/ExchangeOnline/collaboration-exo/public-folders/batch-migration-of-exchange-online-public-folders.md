@@ -3,7 +3,6 @@ title: "Use batch migration to migrate Exchange Online public folders to Office 
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 3/26/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -76,17 +75,17 @@ The following steps are necessary to prepare your organization for the migration
     
 2. Have a list of corresponding target groups for each public folder being migrated. You can either create a new group in Office 365 for each public folder or use an existing group. If you're creating a new group, see [Learn about Office 365 Groups](https://go.microsoft.com/fwlink/p/?linkid=858521) to understand the settings a group must have. If a public folder that you are migrating has the default permission set to **Author** or above, you should create the corresponding group in Office 365 with the **Public** privacy setting. However, for users to see the public group under the **Groups** node in Outlook, they will still have to join the group. 
     
-3. Rename any public folders that contain a backslash ( **\**) in their name. Otherwise, those public folders may not get migrated correctly.
+3. Rename any public folders that contain a backslash ( **\\**) in their name. Otherwise, those public folders may not get migrated correctly.
     
 4. You need to have the migration feature **PAW** enabled for your Office 365 tenant. To verify this, run the following command in Exchange Online PowerShell: 
     
-  ```
-  Get-MigrationConfig
-  ```
+   ```
+   Get-MigrationConfig
+   ```
 
-    If the output under **Features** lists **PAW**, then the feature is enabled and you can continue to *Step 3: Create the .csv file*. 
+   If the output under **Features** lists **PAW**, then the feature is enabled and you can continue to *Step 3: Create the .csv file*. 
     
-    If PAW is not yet enabled for your tenant, it could be because you have some existing migration batches, either public folder batches or user batches. These batches could be in any state, including Completed. If this is the case, please complete and remove any existing migration batches until no records are returned when you run `Get-MigrationBatch`. Once all existing batches are removed, PAW should get enabled automatically. Note that the change may not reflect in `Get-MigrationConfig` immediately, which is okay. Once this step is completed, you can continue creating new batches of user migrations. 
+   If PAW is not yet enabled for your tenant, it could be because you have some existing migration batches, either public folder batches or user batches. These batches could be in any state, including Completed. If this is the case, please complete and remove any existing migration batches until no records are returned when you run `Get-MigrationBatch`. Once all existing batches are removed, PAW should get enabled automatically. Note that the change may not reflect in `Get-MigrationConfig` immediately, which is okay. Once this step is completed, you can continue creating new batches of user migrations. 
     
 ## Step 3: Create the .csv file
 
@@ -98,9 +97,9 @@ The .csv file needs to contain the following columns:
     
 - **TargetGroupMailbox**. SMTP address of the target group in Office 365. You can run the following command to see the primary SMTP address.
     
-```
-Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
-```
+  ```
+  Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+  ```
 
 An example .csv:
   
@@ -126,15 +125,15 @@ In this step, you gather information from your Exchange environment, and then yo
     
   - **PublicFolderToUnifiedGroup** is the parameter to indicate that it is a public folder to Office 365 Groups migration batch. 
     
-  ```
-  New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup [-AutoStart]
-  ```
+    ```
+    New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup [-AutoStart]
+    ```
 
 2. Start the migration by running the following command in Exchange Online PowerShell. Note that this step is necessary only if the `-AutoStart` parameter was not used while creating the batch above in step 1. 
     
-  ```
-  Start-MigrationBatch PublicFolderToGroupMigration
-  ```
+    ```
+    Start-MigrationBatch PublicFolderToGroupMigration
+    ```
 
 While batch migrations need to be created using the `New-MigrationBatch` cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](https://technet.microsoft.com/library/3a4d27c4-712b-40e8-b5a8-a4f1b8e5a3c6.aspx) and [Get-MigrationUser](https://technet.microsoft.com/library/ca5cbd36-fde3-41f4-8ddf-0b7c4d71fd31.aspx) cmdlets. The `New-MigrationBatch` cmdlet initiates a migration user for each Office 365 group mailbox, and you can view the status of these requests using the mailbox migration page. 
   

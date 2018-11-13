@@ -3,7 +3,6 @@ title: "Use batch migration to migrate Exchange 2013 public folders to Exchange 
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 7/20/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online

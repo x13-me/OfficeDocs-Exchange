@@ -133,7 +133,7 @@ In Exchange Management Shell (on-premises) perform the following steps:
     > [!NOTE]
     > If you're expecting your mail-enabled public folders in Exchange Online to receive external emails from the Internet, you have to disable Directory Based Edge Blocking (DBEB) in Exchange Online and Exchange Online Protection (EOP). See [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://go.microsoft.com/fwlink/p/?linkid=844910) for more information.
   
-2. If the name of a public folder contains a backslash **\** or a forward slash **/**, it may not get migrated to its designated mailbox during the migration process. Before you migrate, rename any such folders to remove these characters
+2. If the name of a public folder contains a backslash **\\** or a forward slash **/**, it may not get migrated to its designated mailbox during the migration process. Before you migrate, rename any such folders to remove these characters
     
 1. To locate public folders that have a backslash in the name, run the following command:
     
