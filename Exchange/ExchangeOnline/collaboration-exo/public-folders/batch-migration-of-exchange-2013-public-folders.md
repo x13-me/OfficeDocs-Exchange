@@ -171,8 +171,8 @@ In the Exchange Management Shell (on-premises) perform the following steps:
 
 4. For the purpose of verifying the success of the migration upon its completion, we recommend that you run the following commands on all appropriate Exchange 2013 servers. This will take snapshots of your current public folder deployment that you can later use to compare with your newly migrated public folders.
     
-  > [!NOTE]
-  > Depending on the size of your Exchange organization, it could take some time for these commands to run. 
+   > [!NOTE]
+   > Depending on the size of your Exchange organization, it could take some time for these commands to run. 
   
   - Run the following command to take a snapshot of the original source folder structure.
     
