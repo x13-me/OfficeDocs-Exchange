@@ -90,11 +90,10 @@ Running the script `Import-PublicFolderMailboxes.ps1` will import public folder 
     ```
     Import-PublicFolderMailboxes.ps1 -Credential (Get-Credential)
     ```
-
     Where `Credential` is your Office 365 username and password. 
     
-  > [!NOTE]
-  > We recommend that you run this script daily to import your public folder mailbox objects because whenever public folder mailboxes reach their threshold capacity, they automatically split into multiple new mailboxes. Therefore, you always want to ensure you have imported the most recent public folder mailboxes from the cloud. 
+   > [!NOTE]
+   > We recommend that you run this script daily to import your public folder mailbox objects because whenever public folder mailboxes reach their threshold capacity, they automatically split into multiple new mailboxes. Therefore, you always want to ensure you have imported the most recent public folder mailboxes from the cloud. 
   
 2. Enable the Exchange 2013 on-premises organization to access the Exchange Online public folders.
     

@@ -3,7 +3,6 @@ title: "Use batch migration to migrate legacy public folders to Office 365 and E
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -149,8 +148,8 @@ Perform the following prerequisite steps before you begin the migration.
     Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
     ```
 
-  > [!CAUTION]
-  > After resetting these properties, you need to wait for Exchange to detect the new settings. This may take up to two hours to complete. 
+    > [!CAUTION]
+    > After resetting these properties, you need to wait for Exchange to detect the new settings. This may take up to two hours to complete. 
   
 5. For verification purposes at the end of migration, we recommend that you first run the following Exchange Management Shell commands on the legacy Exchange server to take snapshots of your current public folder deployment.
 
