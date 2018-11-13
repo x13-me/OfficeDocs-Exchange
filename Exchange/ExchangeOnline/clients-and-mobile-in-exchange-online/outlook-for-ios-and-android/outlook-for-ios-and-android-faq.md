@@ -145,7 +145,9 @@ Assuming the user is running a supported version of Outlook for iOS and Android,
 
 ### Q: As a tenant administrator, can I control which of my users will be migrated to the native Microsoft sync technology?
 
-No, as we are migrating on a per-tenant basis and not on a per-user basis. Migration does require the user to actually launch Outlook for iOS and Android; launching the app triggers the user's migration to the native Microsoft sync technology.
+No, the migration to the native Microsoft sync technology will be on a tenant-by-tenant basis and not a per-user basis. While the tenant selection order for migration is random, we are being deliberate about migrating Office 365 mailboxes first. If you are a customer operating in a hybrid configuration where a portion of your mailboxes remain on-premises, the on-premises users leveraging [hybrid modern authentication](https://docs.microsoft.com/en-us/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) will be migrated to the native Microsoft sync technology at a later date. This means that your Office 365 users will migrate to the native Microsoft sync technology, while the on-premises users continue to use the REST API to connect to Exchange Online.
+
+Once your tenant is migrated, a user will not switch to the native Microsoft sync technology, until after they launch/resume Outlook for iOS and Android.
 
 ### Q: If my user doesn't upgrade to a supported build of Outlook for iOS and Android prior to my tenant's migration, does that mean the user will lose access to email and calendar data while mobile?
 
@@ -153,7 +155,7 @@ No, the user will continue to connect using the existing REST-based data sync pr
 
 ### Q: Will my Intune App Protection Policies or Azure AD Conditional Access policies be affected by this migration?
 
-No, both Intune App Protection Policies and Azure AD Conditional Access policies will continue to be applied to the targeted identity, regardless of the data sync protocol being leveraged by Outlook for iOS and Android.
+No, both Intune App Protection Policies and Azure AD Conditional Access policies will continue to be applied to the targeted identity, regardless of the data sync protocol leveraged by Outlook for iOS and Android.
 
 ### Q: Will I have to update my Exchange mobile device access policies (allow block quarantine (ABQ) rules)?
 
