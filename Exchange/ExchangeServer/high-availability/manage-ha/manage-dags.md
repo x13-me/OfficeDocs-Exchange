@@ -406,7 +406,7 @@ Before performing any type of software or hardware maintenance on a DAG member, 
 Both of the above scripts accept the _ServerName_ parameter (which can be either the host name or the fully qualified domain name (FQDN) of the DAG member) and the _WhatIf_ parameter. Both scripts can be run locally or remotely. The server on which the scripts are executed must have the Windows Failover Cluster Management tools installed (RSAT-Clustering).
   
 > [!NOTE]
-> THe **RedistributeActiveDatabases.ps1** script is also avaialble, which assists with mounting mailbox databases on specific DAG members as inidicated by the Activation Preference number on each database. However, in Exchange 2016 CU2 or later, the new DAG property named _PreferenceMoveFrequency_ automatically balances database copies across a DAG. Therefore, you'll only need to use **RedistributeActiveDatabases.ps1** if you've disabled this functionality or if you want to balance database copies manually.
+> The **RedistributeActiveDatabases.ps1** script is also avaialble, which assists with mounting mailbox databases on specific DAG members as inidicated by the Activation Preference number on each database. However, in Exchange 2016 CU2 or later, the new DAG property named _PreferenceMoveFrequency_ automatically balances database copies across a DAG. Therefore, you'll only need to use **RedistributeActiveDatabases.ps1** if you've disabled this functionality or if you want to balance database copies manually.
   
 The StartDagServerMaintenance.ps1 script performs the following tasks:
   
@@ -454,8 +454,8 @@ To begin maintenance procedures on a DAG member, including flushing the transpor
 
     For the value of the _MoveComment_ parameter, you can make any notation you want. The above example uses "Maintenance." 
     
-    > [!NOTE]
-    > This script can take some time to execute, and during this time you may not see any activity on your screen.
+> [!NOTE]
+> This script can take some time to execute, and during this time you may not see any activity on your screen.
   
 6. To redirect messages pending delivery in the local queues to the Exchange server specified by the Target parameter, run
     
