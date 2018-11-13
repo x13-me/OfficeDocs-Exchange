@@ -295,11 +295,11 @@ Use the previously downloaded scripts to generate the .csv files that will be us
   
 1. From the Exchange Management Shell (on premises), run the `Export-ModernPublicFolderStatistics.ps1` script to create the folder name-to-folder size mapping file. You must have local administrator permissions to run this script. The resulting file will contain three columns: **FolderName**, **FolderSize**, and **DeletedItemSize**. The values for the **FolderSize** and **DeletedItemSize** columns will be displayed in bytes. For example, **\PublicFolder01,10240, 100** means the public folder in the root of your hierarchy named PublicFolder01 is 10240 bytes, or 10.240 MB, in size, and there are 100 bytes of recoverable items in it. 
       
-  ```
+    ```
     .\Export-ModernPublicFolderStatistics.ps1 <Folder-to-size map path>
     ```
 
-  **Example**:
+   **Example**:
     
     ```
     .\Export-ModernPublicFolderStatistics.ps1 stats.csv
