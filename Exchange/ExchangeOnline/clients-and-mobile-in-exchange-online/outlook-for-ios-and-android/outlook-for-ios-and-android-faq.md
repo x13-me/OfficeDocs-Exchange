@@ -83,13 +83,17 @@ Background synchronization enables new message notifications, calendar reminders
 
 If background synchronization is disabled by the user in the mobile operating system's settings, then the user must launch the app and keep it in the foreground in order to synchronize messages and have an up-to-date calendar. 
 
-Background synchronization in Outlook for iOS and Android can also be disabled by the following actions:
+Background synchronization in Outlook for iOS and Android can also be temporarily disabled by the following actions:
   
-- Force quitting the app (such as by double-tapping the home button and swiping the app to dismiss).
+- Force quitting Outlook for iOS.
     
-- Restarting the mobile device.
+- Restarting the iOS device.
+
+- Outlook for iOS crashes and is not restarted by the user.
     
-- Not opening the app for a given period of time. iOS will [automatically freeze third-party apps](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html), like Outlook, based on usage patterns. Android [doze mode and app standby](https://developer.android.com/training/monitoring-device-state/doze-standby) features can also prevent background updates to the app.
+- Not opening the app for a given period of time. iOS will [automatically freeze third-party apps](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html), like Outlook, based on usage patterns. Android [doze mode and app standby](https://developer.android.com/training/monitoring-device-state/doze-standby) features can also prevent background updates to the app while those features are active.
+
+- On some Android devices, you can also restrict background processing or network access per-app. In these cases, Outlook for Android will not be able to process updates in the background.
 
 If the mobile operating system prevents background synchronization, users will experience the following:
 
