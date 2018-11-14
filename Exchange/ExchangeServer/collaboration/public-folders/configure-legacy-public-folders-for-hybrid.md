@@ -3,7 +3,6 @@ title: "Configure legacy on-premises public folders for a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
