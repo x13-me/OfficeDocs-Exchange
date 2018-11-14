@@ -295,11 +295,11 @@ Use the previously downloaded scripts to generate the .csv files that will be us
   
 1. From the Exchange Management Shell (on premises), run the `Export-ModernPublicFolderStatistics.ps1` script to create the folder name-to-folder size mapping file. You must have local administrator permissions to run this script. The resulting file will contain three columns: **FolderName**, **FolderSize**, and **DeletedItemSize**. The values for the **FolderSize** and **DeletedItemSize** columns will be displayed in bytes. For example, **\PublicFolder01,10240, 100** means the public folder in the root of your hierarchy named PublicFolder01 is 10240 bytes, or 10.240 MB, in size, and there are 100 bytes of recoverable items in it. 
       
-  ```
+    ```
     .\Export-ModernPublicFolderStatistics.ps1 <Folder-to-size map path>
     ```
 
-  **Example**:
+   **Example**:
     
     ```
     .\Export-ModernPublicFolderStatistics.ps1 stats.csv
@@ -316,7 +316,7 @@ Use the previously downloaded scripts to generate the .csv files that will be us
 
   - \<Maximum mailbox size in bytes\> is the maximum amount of data you want to migrate into any single public folder mailbox in Exchange Online. The maximum size of this field is currently 50 GB, but we recommend you use a smaller size, such as 50% of maximum size, to allow for future growth. 
     
-  - \<Maximum mailbox recoverable items size in bytes\> is the recoverable items quota on your Exchange Online mailboxes. The maximum size of public folder mailboxes In Exchange Online is currently 50 GB. We recommend setting _RecoverableItemsQuota_ `_ to 15 GB or less. 
+  - \<Maximum mailbox recoverable items size in bytes\> is the recoverable items quota on your Exchange Online mailboxes. The maximum size of public folder mailboxes In Exchange Online is currently 50 GB. We recommend setting _RecoverableItemsQuota_ to 15 GB or less. 
     
   - \<Folder-to-size map path\> is the file path of the .csv file you created when you ran the `Export-ModernPublicFolderStatistics.ps1` script. 
     

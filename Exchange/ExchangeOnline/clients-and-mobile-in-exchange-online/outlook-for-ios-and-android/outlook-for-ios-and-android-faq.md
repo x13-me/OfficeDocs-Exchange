@@ -4,7 +4,7 @@ ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
 manager: laurawi
-ms.date: 6/25/2018
+ms.date:
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -31,11 +31,7 @@ The following questions are about the overall architecture of Outlook for iOS an
   
 ### Q: What cloud architecture is utilized by Outlook for iOS and Android for Office 365 accounts?
 
-The Outlook for iOS and Android app is fully powered by the Microsoft Cloud. All Office 365 Enterprise, Business, and Education accounts are supported natively, which means there is no mailbox data cached outside of Office 365. Data simply stays in its current Exchange Online mailbox, and it's protected by TLS-secured connections end-to-end, between Office 365 and the app. Outlook for iOS and Android is now fully delivered through Microsoft services that provide a strong commitment to security, privacy, and compliance.
-  
-![Outlook for iOS and Android architecture](../../media/4e9e00a8-e8af-4096-baf2-fee99ee5e192.png)
-  
-Outlook for iOS and Android uses a stateless protocol translator component that is built and run in Azure. This component routes data and translates commands, but it doesn't cache user data. The app is coded with the Outlook device API, a proprietary API that syncs commands and data to and from the app. Exchange Online data is accessed via the publicly available REST APIs. The protocol translator enables communication between Outlook and Exchange Online. 
+For more information on the architecture, see [Outlook for iOS and Android in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android).
  
 ### Q: Can I add two different Office 365 accounts from different Office 365 regions to Outlook for iOS and Android?
 
@@ -87,13 +83,17 @@ Background synchronization enables new message notifications, calendar reminders
 
 If background synchronization is disabled by the user in the mobile operating system's settings, then the user must launch the app and keep it in the foreground in order to synchronize messages and have an up-to-date calendar. 
 
-Background synchronization in Outlook for iOS and Android can also be disabled by the following actions:
+Background synchronization in Outlook for iOS and Android can also be temporarily disabled by the following actions:
   
-- Force quitting the app (such as by double-tapping the home button and swiping the app to dismiss).
+- Force quitting Outlook for iOS.
     
-- Restarting the mobile device.
+- Restarting the iOS device.
+
+- Outlook for iOS crashes and is not restarted by the user.
     
-- Not opening the app for a given period of time. iOS will [automatically freeze third-party apps](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html), like Outlook, based on usage patterns. Android [doze mode and app standby](https://developer.android.com/training/monitoring-device-state/doze-standby) features can also prevent background updates to the app.
+- Not opening the app for a given period of time. iOS will [automatically freeze third-party apps](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html), like Outlook, based on usage patterns. Android [doze mode and app standby](https://developer.android.com/training/monitoring-device-state/doze-standby) features can also prevent background updates to the app while those features are active.
+
+- On some Android devices, you can also restrict background processing or network access per-app. In these cases, Outlook for Android will not be able to process updates in the background.
 
 If the mobile operating system prevents background synchronization, users will experience the following:
 
@@ -134,10 +134,52 @@ Yes, Outlook for iOS and Android supports proxy configurations when the proxy in
 - **Does not perform authentication**.
     
 Outlook for iOS and Android will consume the proxy configuration as defined by the platform operating system. Typically, this configuration information is deployed via a PAC file. The PAC file must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no additional custom settings are supported.
+
+## Native Microsoft sync technology migration
+
+The following questions are about the migration from the REST API data sync protocol to the native Microsoft sync technology used by Outlook for iOS and Android for accessing mailbox data.
+
+### Q: Is there a minimum version of Outlook for iOS and Android required to use the native Microsoft sync technology?
+
+We are still finalizing details around the supported minimum version; please check back later.
+
+### Q: What will my users experience when our tenant is migrated to the native Microsoft sync technology?
+
+Assuming the user is running a supported version of Outlook for iOS and Android, after your tenant is migrated, your users may see a brief notice indicating that we are updating their email and calendar data. Otherwise the user experience to migrate to the updated architecture will be seamless.  
+
+### Q: As a tenant administrator, can I control which of my users will be migrated to the native Microsoft sync technology?
+
+No, the migration to the native Microsoft sync technology will be on a tenant-by-tenant basis and not a per-user basis. While the tenant selection order for migration is random, we are being deliberate about migrating Office 365 mailboxes first. If you are a customer operating in a hybrid configuration where a portion of your mailboxes remain on-premises, the on-premises users leveraging [hybrid modern authentication](https://docs.microsoft.com/en-us/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) will be migrated to the native Microsoft sync technology at a later date. This means that your Office 365 users will migrate to the native Microsoft sync technology, while the on-premises users continue to use the REST API to connect to Exchange Online.
+
+Once your tenant is migrated, a user will not switch to the native Microsoft sync technology, until after they launch/resume Outlook for iOS and Android.
+
+### Q: If my user doesn't upgrade to a supported build of Outlook for iOS and Android prior to my tenant's migration, does that mean the user will lose access to email and calendar data while mobile?
+
+No, the user will continue to connect using the existing REST-based data sync protocol.
+
+### Q: Will my Intune App Protection Policies or Azure AD Conditional Access policies be affected by this migration?
+
+No, both Intune App Protection Policies and Azure AD Conditional Access policies will continue to be applied to the targeted identity, regardless of the data sync protocol leveraged by Outlook for iOS and Android.
+
+### Q: Will I have to update my Exchange mobile device access policies (allow block quarantine (ABQ) rules)?
+
+No, the user agent string that Outlook for iOS and Android uses does not change. For more information on what that user agent is, see [Securing Outlook for iOS and Android in Exchange Online](https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/secure-outlook-for-ios-and-android).
+
+### Q: As an Exchange administrator, is there a way for me to determine which data sync protocol Outlook for iOS and Android clients are utilizing in the Office 365-based architecture?
+
+Yes, execute the following command from Exchange Online PowerShell:
   
+```
+Get-MobileDevice | where {$_.DeviceModel -eq "Outlook for iOS and Android"} | Format-List FriendlyName,DeviceID,DeviceOS,ClientType
+```
+
+The `ClientType` property indicates which data sync protocol is in use. If the value is REST, then the client is utilizing the REST API. If the value is Outlook, then the client is using the native Microsoft sync technology. 
+  
+Alternatively, a user can login to Outlook on the web and, from within **Options**, select **Mobile Devices** to view the details of a mobile device. Like the cmdlet, the user can see the value for the `ClientType` property.
+
 ## Administrating and monitoring Outlook for iOS and Android in your organization
 
-The following questions are about managing and monitoring the Outlook for iOS and Android app within your organization after his has been deployed.
+The following questions are about managing and monitoring the Outlook for iOS and Android app within your organization after the app has been deployed.
   
 ### Q: Is it necessary to file an in-app support ticket when I experience an issue with Outlook for iOS and Android?
 
@@ -156,20 +198,6 @@ To gather the logs:
 4. Tap Upload Outlook Logs (iOS) or Collect Logs (Android).
 
 5. Share the incident ID with CSS.
-  
-### Q: As an Exchange administrator, is there a way for me to determine if Outlook clients are utilizing the Office 365-based architecture?
-
-Yes, execute the following command from Exchange Online PowerShell:
-  
-```
-Get-MobileDevice | where {$_.DeviceModel -eq "Outlook for iOS and Android"} | Format-List FriendlyName,DeviceID,DeviceOS,ClientType
-```
-
-The `ClientType` property indicates whether the client is using the Office 365-based architecture (REST) or the AWS-based architecture (EAS). 
-  
-Alternatively, a user can login to Outlook on the web and, from within **Options**, select **Mobile Devices** to view the details of a mobile device. This would look similar to the following: 
-  
-![picture of managing mobile devices in Outlook for iOS and Android](../../media/7d8b1ffc-254d-401f-9bdc-227adf1a0e86.png)
   
 ### Q: As an Exchange administrator, I would like to deploy Outlook for iOS and Android, but in my testing I can't log in. What might be the issue?
 
