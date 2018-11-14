@@ -141,7 +141,7 @@ Every message that's sent or received in an Exchange Server organization must be
 
 The Transport service on a Mailbox server consists of the following components and processes:
 
-- **SMTP Receive**: When messages are received by the Transport service, message content inspection is performed, transport rules are applied, and antispam and antimalware inspection is performed if they are enabled. The SMTP session has a series of events that work together in a specific order to validate the contents of a message before it's accepted. After a message has passed completely through SMTP Receive and isn't rejected by receive events, or by an antispam or antimalware agent, it's put in the Submission queue.
+- **SMTP Receive**: When messages are received by the Transport service, message content inspection is performed and antispam inspection is performed if is enabled. The SMTP session has a series of events that work together in a specific order to validate the contents of a message before it's accepted. After a message has passed completely through SMTP Receive and isn't rejected by receive events, or by an antispam agent, it's put in the Submission queue.
 
 - **Submission**: Submission is the process of putting messages into the Submission queue. The categorizer picks up one message at a time for categorization. Submission happens in three ways:
 

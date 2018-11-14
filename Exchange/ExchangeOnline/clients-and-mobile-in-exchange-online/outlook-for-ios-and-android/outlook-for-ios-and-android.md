@@ -3,8 +3,7 @@ title: "Outlook for iOS and Android in Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
-manager: laurawi
-ms.date: 11/8/2018
+manager: serdars
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -41,11 +40,11 @@ Within the Office 365-based architecture, Outlook for iOS and Android is utilizi
 
 Today, the vast majority of accounts using Outlook for iOS and Android connect via a Stateless Protocol Translator component that is built and run in Azure. This component routes data and translates commands, but it doesn't cache user data. The app is coded with the Outlook device API, a proprietary API that syncs commands and data to and from the app. Exchange Online data is accessed via the publicly available REST APIs. The protocol translator enables communication between Outlook and Exchange Online. 
 
-**need rest.png image**
+![REST](../../media/rest.png)
   
 Beginning in December 2018, Microsoft will migrate customers to a native Microsoft sync technology that removes the Stateless Protocol Translator component from the Office 365-based architecture. With the native Microsoft sync technology, Outlook for iOS and Android connects directly to Office 365 for data connections ensuring the data is protected by an HTTP TLS-secured connection end-to-end. 
 
-**need newsync.png image**
+![new synch image](../../media/newsync.png)
 
 The native Microsoft sync technology offers several benefits:
 
