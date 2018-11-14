@@ -3,7 +3,6 @@ title: "Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 2/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

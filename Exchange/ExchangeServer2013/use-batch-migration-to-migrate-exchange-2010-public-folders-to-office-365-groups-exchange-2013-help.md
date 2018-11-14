@@ -4,15 +4,10 @@ TOCTitle: Use batch migration to migrate Exchange 2010 public folders to Office 
 ms:assetid: d018558d-3075-4dd3-9ff7-91ce66b8d5fb
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt843875(v=EXCHG.150)
 ms:contentKeyID: 74468674
-ms.date: 04/30/2018
 mtps_version: v=EXCHG.150
 ---
 
 # Use batch migration to migrate Exchange 2010 public folders to Office 365 Groups
-
- 
-
-_**Applies to:** Exchange Server 2010, Exchange Server 2013_
 
 
 **Summary:** How to move your Exchange 2010 public folders to Office 365 Groups.
@@ -314,7 +309,7 @@ The following known issues can occur during a typical public folders to Office 3
 
 For your reference, this section provides in-depth descriptions for three of the migration scripts and the tasks they execute in your Exchange environment. All of the scripts and supporting files can be [downloaded from this location](https://www.microsoft.com/en-us/download/details.aspx?id=55985).
 
-## AddMembersToGroups.ps1
+### AddMembersToGroups.ps1
 
 This script will read the permissions of the public folders being migrated and then add members and owners to Office 365 Groups as follows:
 
@@ -338,7 +333,7 @@ This script will read the permissions of the public folders being migrated and t
 
 This script can be run even after the lock-down of public folders, with parameter the `ArePublicFoldersLocked` set to` $true`. In this scenario, the script will read permissions from the back up file created during lock-down.
 
-## LockAndSavePublicFolderProperties.ps1
+### LockAndSavePublicFolderProperties.ps1
 
 This script makes the public folders being migrated read-only. When mail-enabled public folders are migrated, they will first be mail-disabled and their SMTP addresses will be added to the respective groups in Office 365. Then the permission entries will be modified to make them read-only. A back up of the mail properties of mail-enabled public folders, as well as the permission entries of all the public folders, will be copied, before performing any modification on them.
 
@@ -454,7 +449,7 @@ The permission entries will be modified as follows:
 
 There might be an interruption in sending emails to mail-enabled public folders during the time between when the folders are mail-disabled and their SMTP addresses are added to Office 365 Groups.
 
-## UnlockAndRestorePublicFolderProperties.ps1
+### UnlockAndRestorePublicFolderProperties.ps1
 
 This script will re-assign permissions back to public folders, based on the back up file taken during public folder lock-down. This script will also mail-enable public folders that had been mail-disabled, after it removes the folders' SMTP addresses from their respective groups in Office 365. There might be slight downtime during this process.
 
