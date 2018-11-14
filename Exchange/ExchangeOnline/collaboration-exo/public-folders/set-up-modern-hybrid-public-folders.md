@@ -3,7 +3,6 @@ title: "Configure Exchange Server public folders for a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
 manager: laurawi
-ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -38,9 +37,9 @@ An Exchange Online/Office 365 user must be represented by a MailUser object in t
     
 4. In order to access public folders cross-premises, users must upgrade their Outlook clients to the November 2012 Outlook public update or later. 
     
-1. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
-    
-2. To download the November 2012 Outlook Update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](https://www.microsoft.com/download/details.aspx?id=35718).
+    1. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
+        
+    2. To download the November 2012 Outlook Update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](https://www.microsoft.com/download/details.aspx?id=35718).
     
 5. Outlook 2011 for Mac and Outlook for Mac for Office 365 are not supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook for Mac for Office 365. In addition, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook Web App.
     
@@ -68,11 +67,11 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
   
 1. On Exchange Server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to O365.
     
-  ```
-  Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
-  ```
+   ```
+   Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
+   ```
 
-    Where `Credential` is your Office 365 username and password, and `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format. 
+   Where `Credential` is your Office 365 username and password, and `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format. 
     
 > [!NOTE]
 > Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the `-WhatIf` parameter. > We also recommend that you run this script daily to synchronize your mail-enabled public folders. 
@@ -94,14 +93,9 @@ Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes
 ## How do I know this worked?
 <a name="Access"> </a>
 
-1. Log on to Outlook for a user who is in Exchange Online and perform the following public folder tests:
+Log on to Outlook for a user who is in Exchange Online and perform the following public folder tests:
     
   - View the hierarchy.
-    
   - Check permissions
-    
   - Create and delete public folders.
-    
   - Post content to and delete content from a public folder.
-    
-

@@ -67,13 +67,13 @@ Running the script `Sync-MailPublicFoldersCloudToOnprem.ps1` will synchronize th
 > [!NOTE]
 > Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be viewable in the Exchange admin center. See the Get-MailPublicFolder command. To recreate the SendAs permissions in the cloud, use the Add-RecipientPermission command. 
   
-1. On Exchange Server, run the following command to synchronize mail-enabled public folders from Exchange Online/Office 365 to your local on-premises Active Directory.
+On Exchange Server, run the following command to synchronize mail-enabled public folders from Exchange Online/Office 365 to your local on-premises Active Directory.
     
     ```
     Sync-MailPublicFoldersCloudToOnprem.ps1 -Credential (Get-Credential)
     ```
 
-    Where `Credential` is your Office 365 username and password. 
+Where `Credential` is your Office 365 username and password. 
     
    > [!NOTE]
    > We recommend that you run this script daily to synchronize your mail-enabled public folders. 
