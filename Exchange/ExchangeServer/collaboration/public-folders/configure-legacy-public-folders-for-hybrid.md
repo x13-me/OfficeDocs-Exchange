@@ -3,7 +3,6 @@ title: "Configure legacy on-premises public folders for a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 7/6/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -86,34 +85,34 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
     
     For Exchange 2010, run the following command in the Exchange Management Shell. This command excludes the mailbox database from the mailbox provisioning load balancer. This prevents new mailboxes from automatically being added to this database.
     
-  ```
-  New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true
-  ```
+   ```
+   New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true
+   ```
 
-    For Exchange 2007, run the following command in the Exchange Management Shell:
+   For Exchange 2007, run the following command in the Exchange Management Shell:
     
-  ```
-  New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
-  ```
+   ```
+   New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+   ```
 
-    > [!NOTE]
-    > We recommend that the only mailbox that you add to this database is the proxy mailbox that you'll create in the next step. No other mailboxes should be created on this mailbox database.
+   > [!NOTE]
+   > We recommend that the only mailbox that you add to this database is the proxy mailbox that you'll create in the next step. No other mailboxes should be created on this mailbox database.
   
 3. Create a proxy mailbox within the new mailbox database, and hide the mailbox from the address book. The SMTP of this mailbox will be returned by AutoDiscover as the _DefaultPublicFolderMailbox_ SMTP, so that by resolving this SMTP the client can reach the legacy exchange server for public folder access.
     
-  ```
-  New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs>
-  ```
+   ```
+   New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs>
+   ```
 
-  ```
-  Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
-  ```
+   ```
+   Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+   ```
 
 4. For Exchange 2010, enable Autodiscover to return the proxy public folder mailboxes.
     
-  ```
-  Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
-  ```
+   ```
+   Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+   ```
 
 5. Repeat the preceding steps for every public folder server in your organization.
     
@@ -138,11 +137,11 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
   
 1. On the legacy Exchange server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to O365.
     
-  ```
-  Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
-  ```
+   ```
+   Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
+   ```
 
-    Where `Credential` is your Office 365 user name and password, and `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format.
+   Where `Credential` is your Office 365 user name and password, and `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format.
     
 > [!NOTE]
 > Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the `-WhatIf` parameter. We also recommend that you run this script daily to synchronize your mail-enabled public folders.
@@ -168,14 +167,9 @@ You must wait until Active Directory synchronization has completed to see the ch
 ## How do I know this worked?
 <a name="Access"> </a>
 
-1. Log on to Outlook for a user who is in Exchange Online and perform the following public folder tests:
+Log on to Outlook for a user who is in Exchange Online and perform the following public folder tests:
     
   - View the hierarchy.
-    
   - Check permissions
-    
   - Create and delete public folders.
-    
   - Post content to and delete content from a public folder.
-    
-

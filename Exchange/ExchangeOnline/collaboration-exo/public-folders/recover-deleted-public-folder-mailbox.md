@@ -3,7 +3,6 @@ title: "Recover a deleted public folder mailbox"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 9/6/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -41,15 +40,15 @@ To restore a primary public folder mailbox:
   
 1. Type the following command to find the soft-deleted mailbox:
     
-  ```
-  Get-Mailbox -PublicFolder -SoftDeletedMailbox
-  ```
+   ```
+   Get-Mailbox -PublicFolder -SoftDeletedMailbox
+   ```
 
 2. Type the following command to restore the chosen mailbox:
-    
-  ```
-  Undo-SoftDeletedMailbox -PublicFolder 
-  ```
+      
+   ```
+    Undo-SoftDeletedMailbox -PublicFolder 
+    ```
 
 ## Restore a primary mailbox and secondary mailboxes
 
@@ -59,21 +58,21 @@ Perform the following steps to restore both a primary public folder mailbox and 
   
 1. Type the following command to find the soft-deleted mailboxes:
     
-  ```
-  Get-Mailbox -PublicFolder -SoftDeletedMailbox
-  ```
+   ```
+   Get-Mailbox -PublicFolder -SoftDeletedMailbox
+   ```
 
 2. Type the following command to restore the primary mailbox:
     
-  ```
-  Undo-SoftDeletedMailbox -PublicFolder 
-  ```
+   ```
+   Undo-SoftDeletedMailbox -PublicFolder 
+   ```
 
 3. Type the following for each secondary public folder mailbox that you want to restore (once per mailbox).
     
-  ```
-  Undo-SoftDeletedMailbox -PublicFolder
-  ```
+   ```
+   Undo-SoftDeletedMailbox -PublicFolder
+   ```
 
 ## Restore secondary mailboxes
 
@@ -81,17 +80,17 @@ Use this procedure if you want to restore one or more secondary public folder ma
   
 1. Type the following command to find the soft-deleted mailboxes:
     
-  ```
-  Get-Mailbox -PublicFolder -SoftDeletedMailbox
-  ```
+   ```
+   Get-Mailbox -PublicFolder -SoftDeletedMailbox
+   ```
 
-    You will be able to distinguish primary from secondary public folder mailboxes by the information in the **Type** field. 
+   You will be able to distinguish primary from secondary public folder mailboxes by the information in the **Type** field. 
     
 2. Type the following for each secondary public folder mailbox that you want to restore (once per mailbox).
     
-  ```
-  Undo-SoftDeletedMailbox -PublicFolder
-  ```
+   ```
+   Undo-SoftDeletedMailbox -PublicFolder
+   ```
 
 > [!NOTE]
 > If a primary public folder has been deleted from an organization, any secondary mailbox associated with it can't be restored. 

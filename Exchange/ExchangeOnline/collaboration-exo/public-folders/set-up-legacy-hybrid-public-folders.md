@@ -3,7 +3,6 @@ title: "Configure legacy on-premises public folders for a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 6/24/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -63,9 +62,9 @@ The following table describes the version and location combinations of user mail
     
 - To access public folders cross-premises, users must upgrade their Outlook clients to the November 2012 Outlook public update or a later version.
     
-1. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
+  1. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
     
-2. To download the November 2012 Outlook Update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](https://www.microsoft.com/download/details.aspx?id=35718).
+  2. To download the November 2012 Outlook Update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](https://www.microsoft.com/download/details.aspx?id=35718).
     
 - Outlook 2016 for Mac (and earlier versions) and Outlook for Mac for Office 365 are not supported for cross-premises legacy public folders. Users must be in the same location as the public folders to access them with Outlook for Mac or Outlook for Mac for Office 365. Additionally, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook Web App.
     
@@ -82,29 +81,29 @@ The following table describes the version and location combinations of user mail
 2. Create an empty mailbox database on each public folder server. 
     
     For Exchange 2010, run the following command. This command excludes the mailbox database from the mailbox provisioning load balancer. This prevents new mailboxes from being added automatically to this database.
-    
-  ```
-  New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true
-  ```
+     
+    ```
+   New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true
+    ```
 
     > [!NOTE]
     > We recommend that the only mailbox that you add to this database is the proxy mailbox that you'll create in step 3. No other mailboxes should be created on this mailbox database. 
   
 3. Create a proxy mailbox within the new mailbox database, and hide the mailbox from the address book. The SMTP of this mailbox will be returned by AutoDiscover as the _DefaultPublicFolderMailbox_ SMTP, so that by resolving this SMTP the client can reach the legacy exchange server for public folder access. 
     
-  ```
-  New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs>
-  ```
+    ```
+    New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs>
+    ```
 
-  ```
-  Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
-  ```
+    ```
+    Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+    ```
 
 4. For Exchange 2010, enable AutoDiscover to return the proxy public folder mailboxes. 
     
-  ```
-  Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
-  ```
+    ```
+    Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+    ```
 
 5. Repeat the preceding steps for every public folder server in your organization.
     
@@ -127,13 +126,13 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
 > [!NOTE]
 > Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be viewable in the Exchange admin center. See the Get-MailPublicFolder command. To recreate the SendAs permissions in the cloud, use the Add-RecipientPermission command. 
   
-1. On the legacy Exchange server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to O365.
+On the legacy Exchange server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to O365.
     
     ```
     Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile "<sync_summary.csv>"
     ```
 
-    Where you're prompted for your Office 365 username and password, and _\<sync\_summary.csv\>_ is the path to where you would like to log synchronization operations and errors, in .csv format. 
+Where you're prompted for your Office 365 username and password, and _\<sync\_summary.csv\>_ is the path to where you would like to log synchronization operations and errors, in .csv format. 
     
 > [!NOTE]
 > Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the _WhatIf_ parameter. > We also recommend that you run this script daily to synchronize your mail-enabled public folders. 
@@ -159,14 +158,9 @@ You must wait until ActiveDirectory synchronization has completed to see the cha
 ## How do I know this worked?
 <a name="Access"> </a>
 
-1. Log on to Outlook for a user who is in Exchange Online, and then run the following public folder tests:
-    
-  - View the hierarchy.
-    
-  - Check permissions.
-    
-  - Create and delete public folders.
-    
-  - Post content to and delete content from a public folder.
-    
+Log on to Outlook for a user who is in Exchange Online, and then run the following public folder tests:
 
+ - View the hierarchy.
+ - Check permissions.
+ - Create and delete public folders.   
+ - Post content to and delete content from a public folder.
