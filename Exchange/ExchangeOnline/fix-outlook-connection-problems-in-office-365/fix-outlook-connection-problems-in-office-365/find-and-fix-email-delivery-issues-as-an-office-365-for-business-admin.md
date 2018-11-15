@@ -33,7 +33,7 @@ If only one user is reporting having trouble receiving email, there might be a p
 
 If a user is receiving email in their Outlook on the web mailbox but not on the email app that's installed on their machine, that could indicate that there's an issue with the users machine or email app. Ask the user with the issue to sign in to Outlook on the web to verify that their Office 365 email account is working correctly. 
   
- **Instructions:**[Sign in to Outlook on the web for business](https://support.office.com/article/e08eb8ac-ac27-49f4-a400-a47311e1ee7e.aspx)
+ **Instructions:** [Sign in to Outlook on the web for business](https://support.office.com/article/e08eb8ac-ac27-49f4-a400-a47311e1ee7e.aspx)
   
 ### Run Support and Recovery Assistant for Office 365 to fix Outlook problems or account issues - 10 minutes
 
