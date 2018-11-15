@@ -101,7 +101,7 @@
 #### [Enable or disable Exchange ActiveSync](../recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-exchange-activesync.md)
 #### [Enable or disable MAPI](../recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi.md)
 #### [Enable or disable Outlook Web App](../recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app.md)
-#### [Automatically save sent items in delegator's mailbox](../recipients-in-exchange-online/automatically-save-sent-items-in-delegator-s-mailbox.md)
+#### [Automatically save sent items in delegator's mailbox](../recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox.md)
 #### [Clutter notifications in Outlook](../recipients-in-exchange-online/manage-user-mailboxes/clutter-notifications-in-outlook.md)
 #### [Change Clutter notification branding](../recipients-in-exchange-online/manage-user-mailboxes/change-clutter-notification-branding.md)
 #### [Enable or disable single item recovery](../recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery.md)
