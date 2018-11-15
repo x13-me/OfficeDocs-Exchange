@@ -73,6 +73,7 @@ The service health page lists the status of Office 365 services and indicates if
 3. Under **Service health**, go to **View the service health**.
     
     ![Screenshot showing the View the service health option selected in the Office 365 admin center](media/9a865800-f56a-4c1d-a5cb-adfcb3b4902e.png)
+
   
 If there is an indication that ExchangeOnline service is degraded, email delivery might be delayed for your organization, and CompanyName service engineers are already working to restore service. Check the service health page for progress updates. In this case, you don't need to open a service request because CompanyName is already working to resolve the issue.
   

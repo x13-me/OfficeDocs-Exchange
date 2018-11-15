@@ -3,11 +3,10 @@ title: "Fix Outlook connection problems in Office 365 and Exchange Online"
 ms.author: scotv
 author: scotvidican
 manager: scotv
-ms.date: 3/1/2017
 ms.audience: Admin
 ms.topic: troubleshooting
 keywords: - 'fix outlook,fix outlook,Outlook doesn't work,Outlook doesn't work,Outlook 365 doesn't work,Outlook 365 doesn't work,fix office 365,fix office 365'
-ms.service: o365-administration
+ms.service: exchange-online
 localization_priority: Normal
 ms.custom: MiniMaven
 search.appverid:
