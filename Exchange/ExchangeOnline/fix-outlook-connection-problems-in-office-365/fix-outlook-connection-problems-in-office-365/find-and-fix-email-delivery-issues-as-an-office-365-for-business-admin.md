@@ -3,12 +3,11 @@ title: "Find and fix email delivery issues as an Office 365 for business admin"
 ms.author: scotv
 author: scotvidican
 manager: scotv
-ms.date: 2/14/2018
 ms.audience: Admin
 ms.topic: troubleshooting
 f1_keywords:
 - 'O365P_MessageTrace'
-ms.service: o365-administration
+ms.service: exchange-online
 localization_priority: Normal
 ms.custom: MiniMaven
 search.appverid:
@@ -42,7 +41,7 @@ If a single user in your organization is having trouble receiving email, it coul
   
 |||
 |:-----|:-----|
-|[![Get started](media/8226d576-eac7-40df-89cb-28c1634067c5.png)](https://diagnostics.office.com/#/Download/?env=SOC)|**Let us fix your issue**         [Download Support and Recovery Assistant for Office 365](https://diagnostics.office.com/#/Download/?env=SOC)|
+|[![Get started](../../media/8226d576-eac7-40df-89cb-28c1634067c5.png)](https://diagnostics.office.com/#/Download/?env=SOC)|**Let us fix your issue**         [Download Support and Recovery Assistant for Office 365](https://diagnostics.office.com/#/Download/?env=SOC)|
    
 Watch the following video for more information about how to use the Support and Recovery Assistant app.
   
