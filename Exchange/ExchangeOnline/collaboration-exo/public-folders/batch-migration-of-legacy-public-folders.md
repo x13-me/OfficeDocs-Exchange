@@ -3,7 +3,6 @@ title: "Use batch migration to migrate legacy public folders to Office 365 and E
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -121,7 +120,7 @@ Perform the following prerequisite steps before you begin the migration.
     New-AcceptedDomain -Name "PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99" -DomainName contoso.onmicrosoft.com -DomainType InternalRelay 
     ```
 
-    If the name of a public folder contains a backslash ( **\** ) or a forward slash ( **/** ), the public folders might be created in the parent public folder when migration occurs. Before you migrate, we recommend that you rename any public folders that have a backslash or a forward slash in the name.
+    If the name of a public folder contains a backslash ( **\\** ) or a forward slash ( **/** ), the public folders might be created in the parent public folder when migration occurs. Before you migrate, we recommend that you rename any public folders that have a backslash or a forward slash in the name.
     
     In Exchange 2010, to locate public folders that have a backslash in the name, run the following command:
 
@@ -149,8 +148,8 @@ Perform the following prerequisite steps before you begin the migration.
     Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
     ```
 
-  > [!CAUTION]
-  > After resetting these properties, you need to wait for Exchange to detect the new settings. This may take up to two hours to complete. 
+    > [!CAUTION]
+    > After resetting these properties, you need to wait for Exchange to detect the new settings. This may take up to two hours to complete. 
   
 5. For verification purposes at the end of migration, we recommend that you first run the following Exchange Management Shell commands on the legacy Exchange server to take snapshots of your current public folder deployment.
 

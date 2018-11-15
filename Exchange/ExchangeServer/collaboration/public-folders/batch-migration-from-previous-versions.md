@@ -3,7 +3,6 @@ title: "Use batch migration to migrate Exchange 2010 public folders to Exchange 
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 7/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -21,7 +20,7 @@ We refer to the Exchange 2010 SP3 RU8 or later server as the *legacy Exchange se
 > [!NOTE]
 > The batch migration method described in this article is the only supported method for migrating legacy public folders to Exchange Server. The old serial migration method for migrating public folders is being deprecated and is no longer supported by Microsoft.
   
-You'll perform the migration by using the **\*-MigrationBatch** cmdlets, and the **\*-PublicFolderMigrationRequest** cmdlets for troubleshooting. In addition, you'll use the following PowerShell scripts: 
+You'll perform the migration by using the **\*MigrationBatch** cmdlets, and the **\*PublicFolderMigrationRequest** cmdlets for troubleshooting. In addition, you'll use the following PowerShell scripts: 
   
 - `Export-PublicFolderStatistics.ps1`: This script creates the folder name-to-folder size mapping file.
     
@@ -388,24 +387,24 @@ After you finalize the public folder migration, you should run the following tes
     
 3. If you run into any issues, see [Roll back the migration](batch-migration-from-previous-versions.md#RollBack) later in this topic. If the public folder content and hierarchy is acceptable and functions as expected, run the following command to unlock the public folders for all other users.
     
-  ```
-  Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
-  ```
+   ```
+   Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
+   ```
 
-    > [!IMPORTANT]
-    > Don't use the _IsExcludedFromServingHierarchy_ parameter after initial migration validation is complete as this parameter is used by the automated storage management service for Exchange Online.
+   > [!IMPORTANT]
+   > Don't use the _IsExcludedFromServingHierarchy_ parameter after initial migration validation is complete as this parameter is used by the automated storage management service for Exchange Online.
   
 4. On the Exchange 2010 server, run the following command to indicate that the public folder migration is complete:
     
-  ```
-  Set-OrganizationConfig -PublicFolderMigrationComplete:$true
-  ```
+   ```
+   Set-OrganizationConfig -PublicFolderMigrationComplete:$true
+   ```
 
 5. After you've verified that the migration is complete, on the Exchange 2016 server, run the following command:
     
-  ```
-  Set-OrganizationConfig -PublicFoldersEnabled Local
-  ```
+   ```
+   Set-OrganizationConfig -PublicFoldersEnabled Local
+   ```
 
 6. Finally, if you want external senders to send mail to the migrated mail-enabled public folders, the **Anonymous** user needs to be granted at least the **Create Items** permission. If you don't do this, external senders will receive a delivery failure notification and the messages won't be delivered to the migrated mail-enabled public folder.
     
@@ -418,21 +417,21 @@ In [Step 2: Prepare for the migration](batch-migration-from-previous-versions.md
   
 1. Run the following command to take a snapshot of the new folder structure.
     
-  ```
-  Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
-  ```
+   ```
+   Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
+   ```
 
 2. Run the following command to take a snapshot of the public folder statistics such as item count, size, and owner.
     
-  ```
-  Get-PublicFolderStatistics -ResultSize Unlimited | Export-CliXML C:\PFMigration\Cloud_PFStatistics.xml
-  ```
+   ```
+   Get-PublicFolderStatistics -ResultSize Unlimited | Export-CliXML C:\PFMigration\Cloud_PFStatistics.xml
+   ```
 
 3. Run the following command to take a snapshot of the permissions.
     
-  ```
-  Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML  C:\PFMigration\Cloud_PFPerms.xml
-  ```
+   ```
+   Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML  C:\PFMigration\Cloud_PFPerms.xml
+   ```
 
 ## Remove public folder databases from the Exchange 2010 servers
 <a name="RemovePFDBs"> </a>
@@ -454,24 +453,22 @@ If you run into issues with the migration and need to reactivate your Exchange 2
   
 1. On the Exchange 2010 server, run the following command to unlock the migrated public folders. This process may take several hours.
     
-  ```
-  Set-OrganizationConfig -PublicFoldersLockedForMigration $false
-  ```
+   ```
+   Set-OrganizationConfig -PublicFoldersLockedForMigration $false
+   ```
 
 2. On the Exchange 2016 server, run the following commands to remove the public folder mailboxes.
     
-  ```
-  Get-Mailbox -PublicFolder | Where {$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-  ```
+   ```
+   Get-Mailbox -PublicFolder | Where {$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+   ```
 
-  ```
-  Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-  ```
+   ```
+   Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+   ```
 
 3. On the Exchange 2010 server, run the following command to set the `PublicFolderMigrationComplete` property value to `False`.
     
-  ```
-  Set-OrganizationConfig -PublicFolderMigrationComplete $false
-  ```
-
-
+   ```
+   Set-OrganizationConfig -PublicFolderMigrationComplete $false
+   ```

@@ -95,7 +95,7 @@ For information about tasks to complete after installation, see [Exchange 2013 p
     
 
     > [!NOTE]
-    > This option installs only the Windows features required by Exchange. You must manually install other prerequisites manually. For more information, see <A href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 prerequisites</A>.
+    > This option installs only the Windows features required by Exchange. You must install other prerequisites manually. For more information, see <A href="exchange-2013-prerequisites-exchange-2013-help.md">Exchange 2013 prerequisites</A>.
 
     
     Click **Next** to continue.

@@ -16,7 +16,7 @@ description: "Learn how to block Basic auth for client authentication in Exchang
 
 Basic authentication in Exchange Online uses a username and a password for client access requests. Blocking Basic authentication can help protect your Exchange Online organization from brute force or password spray attacks. When you disable Basic authentication for users in Exchange Online, their email clients and apps must support modern authentication. Those clients are:
   
-- Outlook 2013 or later (note [Outlook 2013 requires a registry key change](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910))
+- Outlook 2013 or later (Outlook 2013 [requires a registry key change](https://docs.microsoft.com/office365/admin/security-and-compliance/enable-modern-authentication))
 
 - Outlook 2016 for Mac or later
 
@@ -24,7 +24,7 @@ Basic authentication in Exchange Online uses a username and a password for clien
 
 - Mail for iOS 11.3.1 or later
 
-If your organization has no legacy email clients, you can use authentication policies in Exchange Online to disable Basic authentication requests, which forces all client access requests to use modern authentication. For more information about modern authentication, see [Using Office 365 modern authentication with Office clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).
+If your organization has no legacy email clients, you can use authentication policies in Exchange Online to disable Basic authentication requests, which forces all client access requests to use modern authentication. For more information about modern authentication, see [Using Office 365 modern authentication with Office clients](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
   
 This topic explains how Basic authentication is used and blocked in Exchange Online, and the corresponding procedures for authentication policies.
   
@@ -303,7 +303,7 @@ You can use the **Get-AuthenticationPolicy** cmdlet to see the current status of
 This example enables basic authentication for the POP3 protocol and disables basic authentication for the IMAP4 protocol in the existing authentication policy named Block Basic Auth.
   
 ```
-Set-AuthenticationPolicy -Identity "Block Basic Auth" -AllowBasicAuthPop -AllowBasicAuthImap:$false
+Set-AuthenticationPolicy -Identity "Block Basic Auth" -AllowBasicAuthPop:$false -AllowBasicAuthImap:$false
 ```
 
 For detailed syntax and parameter information, see [Set-AuthenticationPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/set-authenticationpolicy).
