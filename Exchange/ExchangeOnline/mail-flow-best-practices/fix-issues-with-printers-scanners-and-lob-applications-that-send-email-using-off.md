@@ -3,10 +3,9 @@ title: "Fix issues with printers, scanners, and LOB applications that send email
 ms.author: supotter
 author: supotter
 manager: scotv
-ms.date: 12/29/2016
 ms.audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: exchange-online
 localization_priority: Normal
 ms.custom: MiniMaven
 search.appverid:
@@ -35,7 +34,7 @@ Below are the three configuration options to help you identify which one is in u
     
 - The printer can send email to people inside and outside your organization.
     
-![Shows how a multifunction printer connects to Office 365 using SMTP client submission.](media/d5c5a7fa-aba4-4bf4-976f-4c7128fcab2d.png)
+![Shows how a multifunction printer connects to Office 365 using SMTP client submission.](../media/d5c5a7fa-aba4-4bf4-976f-4c7128fcab2d.png)
   
  **2. Direct send**
   
@@ -45,7 +44,7 @@ Below are the three configuration options to help you identify which one is in u
     
 - The printer can send email only to people in your organization; email can't be sent to recipients outside your organization. 
     
-![Shows how a multifunction printer uses your Office 365 MX endpoint to send email directly to recipients in your organization only.](media/cb07aae7-ca31-43a7-a468-74c293b37a66.png)
+![Shows how a multifunction printer uses your Office 365 MX endpoint to send email directly to recipients in your organization only.](../media/cb07aae7-ca31-43a7-a468-74c293b37a66.png)
   
  **3. Office 365 SMTP relay**
   
@@ -55,7 +54,7 @@ Below are the three configuration options to help you identify which one is in u
     
 - The printer can send email to people inside and outside your organization.
     
-![Shows how a multifunction printer connects to Office 365 using SMTP relay.](media/258cb8b1-752d-47b8-91e9-a0176dfcfad4.png)
+![Shows how a multifunction printer connects to Office 365 using SMTP relay.](../media/258cb8b1-752d-47b8-91e9-a0176dfcfad4.png)
   
 ## Fix issues with SMTP client submission
 <a name="TroubleshootSMTP"> </a>

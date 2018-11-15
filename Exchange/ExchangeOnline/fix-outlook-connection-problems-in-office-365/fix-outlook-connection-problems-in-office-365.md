@@ -5,7 +5,11 @@ author: scotvidican
 manager: scotv
 ms.audience: Admin
 ms.topic: troubleshooting
-keywords: - 'fix outlook,fix outlook,Outlook doesn't work,Outlook doesn't work,Outlook 365 doesn't work,Outlook 365 doesn't work,fix office 365,fix office 365'
+keywords: 
+- fix outlook
+- Outlook doesn't work
+- Outlook 365 doesn't work
+- fix office 365
 ms.service: exchange-online
 localization_priority: Normal
 ms.custom: MiniMaven

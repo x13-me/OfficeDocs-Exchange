@@ -2,10 +2,9 @@
 title: "How to set up a multifunction device or application to send email using Office 365"
 ms.author: chrisda
 author: chrisda
-ms.date: 11/2/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: exchange-online
 localization_priority: Normal
 ms.custom: MiniMaven
 search.appverid:
@@ -74,7 +73,7 @@ Determine what version of TLS your device supports by checking the device guide 
 
 The following diagram gives you a conceptual overview of what you're environment will look like.
   
-![Shows how a multifunction printer connects to Office 365 using SMTP client submission.](media/d5c5a7fa-aba4-4bf4-976f-4c7128fcab2d.png)
+![Shows how a multifunction printer connects to Office 365 using SMTP client submission.](../media/d5c5a7fa-aba4-4bf4-976f-4c7128fcab2d.png)
   
 #### Features of SMTP client submission
 
@@ -151,7 +150,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
     
 3. Make sure your domain, such as contoso.com, is selected. Click **Manage DNS**, and find the MX record. The MX record will have a **POINTS TO ADDRESS** value that looks similar to cohowineinc-com.mail.protection.outlook.com, as depicted in the following screenshot. Make a note of the MX record **POINTS TO ADDRESS** value, which we refer to as your MX endpoint. 
     
-    ![Make a note of the MX record Points to address value.](media/76d8ba1c-2d13-4081-9687-12b206b0ce2d.png)
+    ![Make a note of the MX record Points to address value.](../media/76d8ba1c-2d13-4081-9687-12b206b0ce2d.png)
   
 4. Go back to the device, and in the settings, under what would normally be called **Server** or **Smart Host**, enter the MX record **POINTS TO ADDRESS** value you recorded in step 3. 
     
@@ -171,7 +170,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 In the following diagram, the application or device in your organization's network uses direct send and your Office 365 mail exchange (MX) endpoint to email recipients in your organization. It's easy to find your MX endpoint in Office 365 if you need to look it up.
   
-![Shows how a multifunction printer uses your Office 365 MX endpoint to send email directly to recipients in your organization only.](media/cb07aae7-ca31-43a7-a468-74c293b37a66.png)
+![Shows how a multifunction printer uses your Office 365 MX endpoint to send email directly to recipients in your organization only.](../media/cb07aae7-ca31-43a7-a468-74c293b37a66.png)
   
 You can configure your device to send email direct to Office 365. Use direct send to relay email to recipients with Office 365 mailboxes in your organization. Direct send also works for external recipients with mailboxes in Office 365. If your device uses direct send to try to relay an email for a recipient who doesn't have an Office 365 mailbox, the email will be rejected.
   
@@ -261,7 +260,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
     
 3. Select **Domains**. Make sure your domain, such as contoso.com, is selected. Click **Manage DNS** and find the MX record. The MX record will have a **POINTS TO ADDRESS** value that looks similar to cohowineinc-com.mail.protection.outlook.com as depicted in the following screenshot. Make a note of the MX record **POINTS TO ADDRESS** value. You'll need this later. 
     
-    ![Make a note of the MX record Points to address value.](media/76d8ba1c-2d13-4081-9687-12b206b0ce2d.png)
+    ![Make a note of the MX record Points to address value.](../media/76d8ba1c-2d13-4081-9687-12b206b0ce2d.png)
   
 4. Check that the domains that the application or device will send to have been verified. If the domain is not verified, emails could be lost, and you won't be able to track them with the Exchange Online message trace tool.
     
@@ -273,7 +272,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
     
 1. To start the wizard, click the plus symbol **+**. On the first screen, choose the options that are depicted in the following screenshot: 
     
-    ![Choose from your organization's email server to Office 365](media/fb664a76-c823-4926-bb6a-46e13bf79952.png)
+    ![Choose from your organization's email server to Office 365](../media/fb664a76-c823-4926-bb6a-46e13bf79952.png)
   
     Click **Next**, and give the connector a name. 
     
@@ -292,7 +291,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
 In the following diagram, the application or device in your organization's network uses a connector for SMTP relay to email recipients in your organization.
   
-![Shows how a multifunction printer connects to Office 365 using SMTP relay.](media/258cb8b1-752d-47b8-91e9-a0176dfcfad4.png)
+![Shows how a multifunction printer connects to Office 365 using SMTP relay.](../media/258cb8b1-752d-47b8-91e9-a0176dfcfad4.png)
   
 - The Office 365 connector that you configure authenticates your device or application with Office 365 using an IP address. Your device or application can send email using any address (including ones that can't receive mail), as long as the address uses one of your domains. The email address doesn't need to be associated with an actual mailbox. For example, if your domain is contoso.com, you could send from an address like do_not_reply@contoso.com.
     
