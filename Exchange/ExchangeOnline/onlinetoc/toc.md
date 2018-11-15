@@ -427,7 +427,6 @@
 ###### [Remove Outlook Web App mailbox policy](../clients-and-mobile-in-exchange-online/outlook-on-the-web/remove-outlook-web-app-mailbox-policy.md)
 ###### [Configure Outlook Web App mailbox policy properties](../clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties.md)
 #### [OWA for Devices contact sync](../clients-and-mobile-in-exchange-online/outlook-on-the-web/owa-for-devices-contact-sync.md)
-#### [Let users sync email contacts with their iPhone or iPad](../clients-and-mobile-in-exchange-online/outlook-on-the-web/let-users-sync-email-contacts-with-their-iphone-or-ipad.md)
 #### [Public attachment handling](../clients-and-mobile-in-exchange-online/outlook-on-the-web/public-attachment-handling.md)
 #### [Increase the space used by Inbox rules](../clients-and-mobile-in-exchange-online/outlook-on-the-web/increase-the-space-used-by-inbox-rules.md)
 ### [MailTips](../clients-and-mobile-in-exchange-online/mailtips/mailtips.md)
