@@ -71,7 +71,7 @@ The service health page lists the status of Office 365 services and indicates if
     
 3. Under **Service health**, go to **View the service health**.
     
-    ![Screenshot showing the View the service health option selected in the Office 365 admin center](media/9a865800-f56a-4c1d-a5cb-adfcb3b4902e.png)
+    ![Screenshot showing the View the service health option selected in the Office 365 admin center](../../media/9a865800-f56a-4c1d-a5cb-adfcb3b4902e.png)
 
   
 If there is an indication that ExchangeOnline service is degraded, email delivery might be delayed for your organization, and CompanyName service engineers are already working to restore service. Check the service health page for progress updates. In this case, you don't need to open a service request because CompanyName is already working to resolve the issue.
@@ -86,7 +86,7 @@ The mail flow troubleshooter is a simplified version of message trace that also 
     
 3. Choose **Next**.
     
-    ![Screenshot of the beginning of the mail flow troubleshooter with the Next button selected.](media/2d57820f-f7bc-4d46-830a-8b25c5d32931.png)
+    ![Screenshot of the beginning of the mail flow troubleshooter with the Next button selected.](../../media/2d57820f-f7bc-4d46-830a-8b25c5d32931.png)
   
 4. Choose one of the symptoms from the list.
     
@@ -94,13 +94,13 @@ The mail flow troubleshooter is a simplified version of message trace that also 
     
 6. Select the date the message was sent.
     
-    ![Screenshot of the input area of the mail flow troubleshooter. Admins are required to pick a symptom and add a sender and recipient email address before choosing Next to start the troubleshooter.](media/4e7981e9-e3b1-4850-a9e2-229b77755a23.png)
+    ![Screenshot of the input area of the mail flow troubleshooter. Admins are required to pick a symptom and add a sender and recipient email address before choosing Next to start the troubleshooter.](../../media/4e7981e9-e3b1-4850-a9e2-229b77755a23.png)
   
 7. Choose **Next**.
     
 8. The mail flow troubleshooter runs a series of tests and returns a result. If the troubleshooter found the missing message, the results page explains what happened and how you can fix the issue.
     
-    ![Screenshot showing an example of the results of the mail flow troubleshooter.](media/6a88dfdc-c114-449a-8fe0-a95ce7707f98.png)
+    ![Screenshot showing an example of the results of the mail flow troubleshooter.](../../media/6a88dfdc-c114-449a-8fe0-a95ce7707f98.png)
   
 If the mail flow troubleshooter wasn't able to find your missing message, use message trace for more powerful search options.
   
@@ -124,7 +124,7 @@ If you're an Office 365 Midsize Business, Office 365 Business, or Office 365 Ent
     
 3. Go to **Exchange**.
     
-    ![Sceenshot of the Office 365 admin center with Exchange selected.](media/239c294e-4f04-4c52-bd87-bbf343cb66b9.png)
+    ![Sceenshot of the Office 365 admin center with Exchange selected.](../../media/239c294e-4f04-4c52-bd87-bbf343cb66b9.png)
   
 4. Under **mail flow**, go to **message trace**.
     
@@ -139,7 +139,7 @@ If you're an Office 365 Small Business admin, do the following to find message t
 
 By default, message trace is set to search for all messages sent or received by your organization in the past 48 hours. You can choose **Search** at the bottom of the page to generate this report. This report can give you a general idea about what is happening with mail flow in your organization. However, to troubleshoot a specific user's mail delivery issue, you want to scope the message trace results to that user's mailbox and the time frame that they expected to receive the message. 
   
-![Screenshot showing the options available in message trace](media/bcfda44e-be7b-4864-a6cc-85a36b4570c7.png)
+![Screenshot showing the options available in message trace](../../media/bcfda44e-be7b-4864-a6cc-85a36b4570c7.png)
   
 1. From the **Date range** menu, choose the date range that is closest to the time that the missing message was sent. 
     
@@ -149,13 +149,13 @@ By default, message trace is set to search for all messages sent or received by 
     
 4. The **message trace results** page shows all the messages that match the criteria that you selected. Typical messages are marked **Delivered** under the status column. 
     
-    ![Screenshot showing an example of messge trace resuls.](media/3be193fe-9c71-4525-aea7-e154ea412533.png)
+    ![Screenshot showing an example of messge trace resuls.](../../media/3be193fe-9c71-4525-aea7-e154ea412533.png)
   
-5. To see details about a message, choose the message and select ![Pencil icon](media/ebd57d01-04da-4dfd-b232-1015d627dc91.png) ( **Details**).
+5. To see details about a message, choose the message and select ![Pencil icon](../../media/ebd57d01-04da-4dfd-b232-1015d627dc91.png) ( **Details**).
     
 6. Details appear with an explanation of what happened to the message. To fix the problem, follow the instructions in the **How to fix it** section. 
     
-    ![Screenshot of the message trace details page showing an example of what message trace details look like.](media/45f04c88-37a8-48aa-b9e9-85e580223754.png)
+    ![Screenshot of the message trace details page showing an example of what message trace details look like.](../../media/45f04c88-37a8-48aa-b9e9-85e580223754.png)
   
 To search for a different message, you can click the **Clear** button on the **message trace** page, and then specify new search criteria. 
   
@@ -168,7 +168,7 @@ Message traces for items more than 7 days old are only available as a downloadab
     
 - To view a list of traces that were run for items that are more than 7 days old, click **View pending or completed traces** in the message trace tool. 
     
-    ![Screenshot of the message trace tool with a cursor hovering over the "View pending or completed traces" link.](media/57ceaf75-a6c9-4f83-b158-a59026bb8bd4.png)
+    ![Screenshot of the message trace tool with a cursor hovering over the "View pending or completed traces" link.](../../media/57ceaf75-a6c9-4f83-b158-a59026bb8bd4.png)
   
     In the resulting UI, the list of traces is sorted based on the date and time that they were submitted, with the most recent submissions appearing first. 
     
