@@ -136,7 +136,7 @@ Although the configuration of your organization's digital certificates will vary
     
     For a simple Exchange Server organization named Contoso, this is a hypothetical example of the minimum host names that would be required:
     
-  - **mail.contoso.com**: This host name covers most connections to Exchange, including Outlook, Outlook on the web, OAB distribution, Exchange Web Services, POP3, IMAP4, SMTP, Exchange admin center, and Exchange ActiveSync.
+  - **mail.contoso.com**: This host name covers most connections to Exchange, including Outlook, Outlook on the web, OAB distribution, Exchange Web Services, Exchange admin center, and Exchange ActiveSync.
     
   - **autodiscover.contoso.com**: This specific host name is required by clients that support Autodiscover, including Outlook, Exchange ActiveSync, and Exchange Web Services clients. For more information, see [Autodiscover service](autodiscover.md).
     
