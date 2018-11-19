@@ -353,8 +353,14 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
    ```
    Get-MapiVirtualDirectory -Server CAS-1 | Set-MapiVirtualDirectory -IISAuthenticationMethods Ntlm, Negotiate
    ```
+3a. When you are in an hybrid configuration with Exchange Online, or utilize OAuth internally, run the following on your Exchange 2016 or Exchange 2019 server that is running Client Access services:
 
-4. Repeat steps 2 and 3 for each Exchange 2016 or Exchange 2019 server that is running Client Access services for whichyou want to enable Kerberos authentication.
+   ```
+   $mapidir = Get-MapiVirtualDirectory –Server CAS-1
+   $mapidir | Set-MapiVirtualDirectory -IISAuthenticationMethods ($mapidir.IISAuthenticationMethods += 'Negotiate')   
+   ```
+
+4. Repeat steps 2 and 3 for each Exchange 2016 or Exchange 2019 server that is running Client Access services for which you want to enable Kerberos authentication.
     
 ### Verify Exchange client Kerberos authentication
 <a name="Validateauthentication"> </a>
