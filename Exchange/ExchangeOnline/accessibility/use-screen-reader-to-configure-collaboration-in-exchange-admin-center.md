@@ -28,7 +28,7 @@ You can use your screen reader in the Exchange admin center (EAC) in Exchange On
     
 - [Establish a site mailbox through SharePoint](use-screen-reader-to-configure-collaboration-in-exchange-admin-center.md#BKMK_EstablishSiteMailbox)
     
-- [Accessibility Information](use-screen-reader-to-configure-collaboration-in-exchange-admin-center.md#BKMK_AcessInfo)
+- [Accessibility Information](use-screen-reader-to-configure-collaboration-in-exchange-admin-center.md#BKMK_AccessInfo)
     
 ## Get started
 <a name="BKMK_GetStarted"> </a>
@@ -156,7 +156,7 @@ If your organization uses SharePoint, a site mailbox can be an effective collabo
 A site mailbox serves as a central filing cabinet for project-specific email and documents that can be accessed and edited only by site members. Because projects typically have a specific start and finish date, site mailboxes have a corresponding life cycle. Learn more about [using site mailboxes](https://go.microsoft.com/fwlink/p/?LinkId=286170).
   
 ## Accessibility Information
-<a name="BKMK_AcessInfo"> </a>
+<a name="BKMK_AccessInfo"> </a>
 
 The [Microsoft Accessibility](https://go.microsoft.com/fwlink/p/?LinkID=21487) website provides more information about assistive technology. A free monthly electronic newsletter is available to help you stay current with accessibility topics about Microsoft products. To subscribe, visit the [Microsoft Accessibility Update Newsletter Subscription](https://go.microsoft.com/fwlink/p/?LinkID=14920) page. 
   
