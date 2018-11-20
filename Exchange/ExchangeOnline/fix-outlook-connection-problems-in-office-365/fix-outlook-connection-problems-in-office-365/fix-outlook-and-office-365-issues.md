@@ -3,14 +3,13 @@ title: "Fix Outlook and Office 365 issues with Support and Recovery Assistant fo
 ms.author: dianef
 author: dianef77
 manager: mnirkhe
-ms.date: 8/21/2017
-ms.audience: End User
+ms.audience: Admin
 ms.topic: troubleshooting
 f1_keywords:
 - 'O365P_SARALearn'
 - 'O365M_SARALearn'
 - 'O365E_SARALearn'
-ms.service: o365-administration
+ms.service: exchange-online
 localization_priority: Normal
 ms.collection:
 - Adm_UI_Elements

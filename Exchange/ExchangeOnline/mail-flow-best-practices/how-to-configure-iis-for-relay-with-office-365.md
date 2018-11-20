@@ -3,10 +3,9 @@ title: "How to configure IIS for relay with Office 365"
 ms.author: supotter
 author: supotter
 manager: scotv
-ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: exchange-online
 localization_priority: Normal
 ms.custom: MiniMaven
 search.appverid:

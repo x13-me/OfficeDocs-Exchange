@@ -2,10 +2,10 @@
 title: "Enable or disable modern authentication in Exchange Online"
 ms.author: chrisda
 author: chrisda
-ms.date: 8/1/2017
+manager: serdars
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: exchange-online
 localization_priority: Normal
 ms.collection: Adm_O365
 ms.custom:
@@ -16,6 +16,7 @@ search.appverid:
 - BCS160
 - MOE150
 - MED150
+- MET150
 ms.assetid: 58018196-f918-49cd-8238-56f57f38d662
 description: "Modern authentication in Office 365 enables authentication features like multi-factor authentication (MFA) using smart cards, certificate-based authentication (CBA), and third-party SAML identity providers. Modern authentication is based on the Active Directory Authentication Library (ADAL) and OAuth 2.0."
 ---

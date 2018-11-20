@@ -3,7 +3,6 @@ title: "Fix issues with printers, scanners, and LOB applications that send email
 ms.author: supotter
 author: supotter
 manager: scotv
-ms.audience: Admin
 ms.topic: troubleshooting
 ms.service: exchange-online
 localization_priority: Normal

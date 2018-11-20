@@ -3,10 +3,9 @@ title: "Disable Basic authentication in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date:
-ms.audience: ITPro
+ms.audience: Admin
 ms.topic: article
-ms.prod: office-online
+ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: bba2059a-7242-41d0-bb3f-baaf7ec1abd7
 description: "Learn how to block Basic auth for client authentication in Exchange Online"

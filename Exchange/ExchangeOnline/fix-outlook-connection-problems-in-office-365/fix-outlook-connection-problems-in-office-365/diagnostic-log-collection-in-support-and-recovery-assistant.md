@@ -3,10 +3,9 @@ title: "Turn off diagnostic log collection in Support and Recovery Assistant for
 ms.author: dianef
 author: dianef77
 manager: mnirkhe
-ms.date: 5/22/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: exchange-online
 localization_priority: Normal
 ms.custom:
 - Core_O365Admin_Migration

@@ -3,10 +3,9 @@ title: "What happened to delivery reports in Office 365?"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 11/10/2017
 ms.audience: Admin
 ms.topic: article
-ms.prod: office-online-server
+ms.service: exchange-online
 localization_priority: Normal
 ms.custom: MiniMaven
 search.appverid:

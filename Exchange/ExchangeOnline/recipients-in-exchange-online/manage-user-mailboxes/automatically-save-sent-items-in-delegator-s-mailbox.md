@@ -3,12 +3,13 @@ title: "Automatically save sent items in delegator's mailbox"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 6/29/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: exchange-online
 localization_priority: Normal
-search.appverid: BCS160
+search.appverid: 
+- BCS160
+- MET150
 ms.assetid: f15297f3-32c3-44b6-87b5-dd64dc2bcf7e
 description: "Set up mailboxes so messages sent by a delegate are stored in both the delegate and delegator's Sent Items."
 ---

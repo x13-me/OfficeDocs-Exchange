@@ -2,11 +2,10 @@
 title: "About the Office 365 Best Practices Analyzer for Exchange Server"
 ms.author: chrisda
 author: chrisda
-manager: laurawi
-ms.date: 12/21/2016
+manager: serdars
 ms.audience: Admin
 ms.topic: article
-ms.prod: office-online-server
+ms.service: exchange-online
 localization_priority: Normal
 ms.collection: Adm_O365
 ms.custom:
