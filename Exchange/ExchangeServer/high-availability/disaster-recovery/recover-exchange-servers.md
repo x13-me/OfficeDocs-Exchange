@@ -90,6 +90,36 @@ Looking for other management tasks related to backing up and restoring data? Che
     E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:RecoverServer /TargetDir:"D:\Program Files\Exchange"
     ```
 
+####
+
+# Note If scripting agent was previously enabled The Recover Process will failed 
+**Note** : If scripting agent was previously enabled The Recover Process will failed 
+
+With Error : "nitialization failed: '"Scripting Agent initialization failed: "File is not found: 'C:\Program File
+s\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'.""' ---> Microso
+ft.Exchange.Provisioning.ProvisioningException: "Scripting Agent initialization failed: "File is not
+ found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConf
+ig.xml'."" ---> System.IO.FileNotFoundException: "File is not found: 'C:\Program Files\Microsoft\Exc
+hange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."
+
+
+ if there are any running exchange Server we will need to disable Scripting Agent re-run The Setup Again and re-enabled it after Installation Completed 
+
+Disable-CmdletExtensionAgent "Scripting Agent"
+
+After Installation Complete we will need to enable it again
+
+Enable-CmdletExtensionAgent "Scripting Agent"
+
+Or
+
+if the Recover Exchange Server was the  only single Exchange Server in the envirenment  
+
+will need to rename file named ScriptingAgentConfig.xml.sample to ScriptingAgentConfig.xml  which is installed into C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents. and rerun The Setup Again
+
+
+####
+
 For more information about the optional switches, see [Use unattended mode in Exchange Setup](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
 
 8. After Setup has completed, but before you put the recovered server into production, reconfigure any custom settings that were previously present on the server, and then restart the server.
