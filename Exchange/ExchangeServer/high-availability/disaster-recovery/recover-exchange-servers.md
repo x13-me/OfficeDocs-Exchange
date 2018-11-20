@@ -3,7 +3,7 @@ title: "Recover Exchange servers"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 8/1/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -78,6 +78,10 @@ Looking for other management tasks related to backing up and restoring data? Che
     <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:RecoverServer [/TargetDir:<Path>] [/DomainController:<ServerNameOrFQDN>] [/DoNotStartTransport] [/EnableErrorReporting]
     ```
 
+    For more information about the optional switches, see [Use unattended mode in Exchange Setup](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
+
+8. After Setup has completed, but before you put the recovered server into production, reconfigure any custom settings that were previously present on the server, and then restart the server.
+
     This example uses the Exchange installation files on drive E: to install Exchange in the default location (%ProgramFiles%\Microsoft\Exchange Server\V15) and recover the Exchange server.
 
     ```
@@ -90,40 +94,43 @@ Looking for other management tasks related to backing up and restoring data? Che
     E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:RecoverServer /TargetDir:"D:\Program Files\Exchange"
     ```
 
-####
+## How do you know this worked?
 
-# Note If scripting agent was previously enabled The Recover Process will failed 
-**Note** : If scripting agent was previously enabled The Recover Process will failed 
+The successful completion of Setup will be the primary indicator that the recovery was successful. To further verify that you've successfully recovered a lost server, open the Windows Services tool (services.msc) and verify that the Microsoft Exchange services have been installed and are running.
 
-With Error : "nitialization failed: '"Scripting Agent initialization failed: "File is not found: 'C:\Program File
+### Possible issues with the Scripting Agent
+
+If you previously enabled the Scripting Agent in your Exchange organization, the recovery process might fail. The error will look like this:
+
+```
+"Initialization failed: '"Scripting Agent initialization failed: "File is not found: 'C:\Program File
 s\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'.""' ---> Microso
 ft.Exchange.Provisioning.ProvisioningException: "Scripting Agent initialization failed: "File is not
  found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConf
 ig.xml'."" ---> System.IO.FileNotFoundException: "File is not found: 'C:\Program Files\Microsoft\Exc
 hange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."
+```
 
+If you have other Exchange servers in your organization, you'11 need to:
 
- if there are any running exchange Server we will need to disable Scripting Agent re-run The Setup Again and re-enabled it after Installation Completed 
+1. Disable the Scripting Agent in the Exchange Management Shell:
 
-Disable-CmdletExtensionAgent "Scripting Agent"
+    ```
+    Disable-CmdletExtensionAgent -Identity "Scripting Agent"
+    ```
 
-After Installation Complete we will need to enable it again
+2. Run Exchange Setup in recovery mode as described earlier in the topic.
 
-Enable-CmdletExtensionAgent "Scripting Agent"
+3. Enable the Scripting Agent in the Exchange Management Shell after the Exchange server recovery is complete: 
 
-Or
+    ```
+    Ensable-CmdletExtensionAgent -Identity "Scripting Agent"
+    ```
 
-if the Recover Exchange Server was the  only single Exchange Server in the envirenment  
+If the recovered Exchange server is the only Exchange server in your organization, you'll need to:
 
-will need to rename file named ScriptingAgentConfig.xml.sample to ScriptingAgentConfig.xml  which is installed into C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents. and rerun The Setup Again
+1. Rename the file %ExchangeInstallPath%Bin\CmdletExtensionAgents\ScriptingAgentConfig.**xml.sample** to %ExchangeInstallPath%Bin\CmdletExtensionAgents\ScriptingAgentConfig.**xml**.
 
+    The default value of %ExchangeInstallationPath% is %ProgramFiles%\Microsoft\Exchange Server\V15\, but the actual value is wherever you installed Exchange on the server.
 
-####
-
-For more information about the optional switches, see [Use unattended mode in Exchange Setup](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
-
-8. After Setup has completed, but before you put the recovered server into production, reconfigure any custom settings that were previously present on the server, and then restart the server.
-    
-## How do you know this worked?
-
-The successful completion of Setup will be the primary indicator that the recovery was successful. To further verify that you've successfully recovered a lost server, open the Windows Services tool (services.msc) and verify that the Microsoft Exchange services have been installed and are running.
+2. Re-run Exchange Setup in recovery mode as described earlier in the topic.
