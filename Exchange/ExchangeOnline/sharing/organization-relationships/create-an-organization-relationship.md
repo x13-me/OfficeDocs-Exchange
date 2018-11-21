@@ -2,8 +2,8 @@
 title: "Create an organization relationship in Exchange Online"
 ms.author: dstrome
 author: dstrome
-manager: scotv
-ms.date: 4/29/2016
+manager: serdars
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -91,7 +91,7 @@ If you're setting up an organization relationship with an on-premises Exchange o
 - Fourth Coffee sees free/busy information with the time.
     
 ```
-New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
+New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
 ```
 
 For detailed syntax and parameter information, see [New-OrganizationRelationship](https://technet.microsoft.com/library/ec35c7ed-6f91-435e-8c9f-9dbc53c993fe.aspx).

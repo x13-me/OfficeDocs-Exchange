@@ -3,7 +3,7 @@ title: "Migrate email using the Exchange cutover method"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 8/16/2018
+ms.date: 
 ms.audience: Admin
 ms.topic: get-started-article
 ms.service: exchange-online
@@ -299,11 +299,12 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
   
 1. **Create an Autodiscover DNS record so users can easily get to their mailboxes**: After all on-premises mailboxes are migrated to Office 365, you can configure an Autodiscover DNS record for your Office 365 organization to enable users to easily connect to their new Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com. 
     
-    If you keep your Exchange Server, you should also make sure that Autodiscover DNS CNAME record has to point to Office 365 in both internal and external DNS after the migration so that the Outlook client will to connect to the correct mailbox.
-    
-    > [!NOTE]
-    >  In Exchange 2007, Exchange 2010, and Exchange 2013 you should also set `Set-ClientAccessServer AutodiscoverInternalConnectionURI` to `Null`. 
-  
+    If you keep your Exchange Server, you should also make sure that Autodiscover DNS CNAME record has to point to Office 365 in both internal and external DNS after the migration so that the Outlook client will to connect to the correct mailbox. Replace \<ServerName\> with the name of the Client Access server and run the following command in the Exchange Management Shell to prevent client connections to the server. You'll need to run the command on every Client Access server.
+
+      ```
+      Set-ClientAccessServer -Identity <ServerName> AutodiscoverInternalConnectionURI $null
+      ```
+
     Office 365 uses a CNAME record to implement the Autodiscover service for Outlook and mobile clients. The Autodiscover CNAME record must contain the following information:
     
   - **Alias:** autodiscover 
