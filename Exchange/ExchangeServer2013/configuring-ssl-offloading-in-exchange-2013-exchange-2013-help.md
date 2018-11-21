@@ -168,7 +168,7 @@ SSL offloading for Outlook Anywhere is enabled by default. Outlook Anywhere clie
 
   - **Step 2**   By default, SSL offloading is enabled. However, you can use EAC or the Exchange Management Shell if SSL offloading has been disabled and you want to enable it:
     
-      - Using EAC, go to **Servers**, select the name of the Client Access server in the list, and then click **Edit**. In the **Exchange Sever** window, click **Outlook Anywhere**, click the **Allow SSL offloading** option, and then click **Save**.
+      - Using EAC, go to **Servers**, select the name of the Client Access server in the list, and then click **Edit**. In the **Exchange Server** window, click **Outlook Anywhere**, click the **Allow SSL offloading** option, and then click **Save**.
     
       - Using the Shell, type the following and then press Enter.
         

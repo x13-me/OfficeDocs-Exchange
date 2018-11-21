@@ -111,7 +111,7 @@ To verify that you’ve configured Exchange to allow users to view their SMTP se
     Get-ReceiveConnector | format-list
     ```
 
-2.  If the *AdvertiseClientSettings* property is set to `true`, users can view their SMTP server settings in Outlook Web App. If *AdvertiseClientSettings* is set to `false`, users can’t view their SMTP sever settings in Outlook Web App.
+2.  If the *AdvertiseClientSettings* property is set to `true`, users can view their SMTP server settings in Outlook Web App. If *AdvertiseClientSettings* is set to `false`, users can’t view their SMTP server settings in Outlook Web App.
 
 ## For more information
 

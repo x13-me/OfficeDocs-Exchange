@@ -316,7 +316,7 @@ The following sections show how to use Exchange Online PowerShell to manage Send
   
 #### Manage the Send As permission
 
-The following examples show how to manage Send As permissions for groups in in Exchange Online. In Exchange Online, you have to use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets. You use the _Identity_ parameter to specify the name of the group on which the Send As permission should be added or removed and the _User_ or _Trustee_ parameter to specify the delegate (for example, a user or group) that will be assigned or unassigned the Send As permission. 
+The following examples show how to manage Send As permissions for groups in Exchange Online. In Exchange Online, you have to use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets. You use the _Identity_ parameter to specify the name of the group on which the Send As permission should be added or removed and the _User_ or _Trustee_ parameter to specify the delegate (for example, a user or group) that will be assigned or unassigned the Send As permission. 
   
 > [!TIP]
 > Use the **Get-Recipient** cmdlet to retrieve the _Name_ property for the group and the delegate. Use these values to assign the Send As permission. 

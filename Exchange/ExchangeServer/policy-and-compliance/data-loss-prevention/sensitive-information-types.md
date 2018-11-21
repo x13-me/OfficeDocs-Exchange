@@ -1329,7 +1329,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
   
  **Pattern**: Pattern must include all of the following:
   
-- Six digits in the format format DDMMYY which are a date of birth
+- Six digits in the format DDMMYY which are a date of birth
     
 - Century marker (either '-', '+' or 'a')
     
