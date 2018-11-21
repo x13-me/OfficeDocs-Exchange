@@ -40,7 +40,7 @@ If you need to re-create one of more of these arbitration mailboxes, see the ins
     
     2. In File Explorer, right-click on the Exchange ISO image file and then select **Mount**. Note the virtual DVD drive letter that's assigned.
 
-    3. Opwn a Windows Command Prompt window. For example:
+    3. Open a Windows Command Prompt window. For example:
 
       - Press the Windows key + 'R' to open the **Run** dialog, type cmd.exe, and then press **OK**.
 
