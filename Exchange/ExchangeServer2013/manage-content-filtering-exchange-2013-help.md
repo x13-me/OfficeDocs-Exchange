@@ -133,7 +133,7 @@ To replace the existing values, run the following command:
     Set-ContentFilterConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenders <sender1,sender2...> -BypassedSenderDomains <domain1,domain2...>
 ```
 
-This example configures the following exceptions in in content filtering:
+This example configures the following exceptions in content filtering:
 
   - The recipients laura@contoso.com and julia@contoso.com aren’t checked by content filtering.
 
