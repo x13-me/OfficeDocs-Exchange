@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Disable or delete a mailbox: Exchange 2013 Help'
 TOCTitle: Disable or delete a mailbox
 ms:assetid: 31ad25d6-2942-4fd9-aecb-cdf9654163d2
@@ -179,7 +179,7 @@ To verify that you’ve successfully disabled a mailbox, do one of the following
     Get-User <identity>
     ```
     
-    Note that that value for the *RecipientType* property is `User`, instead of `UserMailbox`, which is the value for users with enabled mailboxes. This also verifies that the mailbox is disabled, but the user account is retained.
+    Note that the value for the *RecipientType* property is `User`, instead of `UserMailbox`, which is the value for users with enabled mailboxes. This also verifies that the mailbox is disabled, but the user account is retained.
 
 ## Delete a mailbox
 
