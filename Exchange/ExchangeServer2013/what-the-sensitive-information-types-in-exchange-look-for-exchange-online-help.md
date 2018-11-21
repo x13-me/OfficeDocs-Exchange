@@ -3307,7 +3307,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 <td><p>Pattern</p></td>
 <td><p>Pattern must include all of the following:</p>
 <ul>
-<li><p>Six digits in the format format DDMMYY which are a date of birth</p></li>
+<li><p>Six digits in the format DDMMYY which are a date of birth</p></li>
 <li><p>Century marker (either '-', '+' or 'a')</p></li>
 <li><p>Three-digit personal identification number</p></li>
 <li><p>A digit or letter (case insensitive) which is a check digit</p></li>
