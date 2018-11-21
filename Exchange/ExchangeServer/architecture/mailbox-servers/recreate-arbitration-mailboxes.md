@@ -3,7 +3,7 @@ title: "Recreate missing arbitration mailboxes"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 8/21/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -40,7 +40,7 @@ If you need to re-create one of more of these arbitration mailboxes, see the ins
     
     2. In File Explorer, right-click on the Exchange ISO image file and then select **Mount**. Note the virtual DVD drive letter that's assigned.
 
-    3. Opwn a Windows Command Prompt window. For example:
+    3. Open a Windows Command Prompt window. For example:
 
       - Press the Windows key + 'R' to open the **Run** dialog, type cmd.exe, and then press **OK**.
 
@@ -176,10 +176,10 @@ To re-create the arbitration mailbox SystemMailbox{bb558c35-97f1-4cb9-8ff7-d5374
 
 ## How do you know this worked?
 
-To verify that you've successfully re-created the arbitration mailbox, use the **Get-Mailbox** cmdlet with the _Arbitration_ switch to retrieve system mailboxes.
-  
+To verify that you've successfully re-created the arbitration mailbox, set the search scope to search the entire Active Directory forest, an then use the **Get-Mailbox** cmdlet with the _Arbitration_ switch to retrieve system mailboxes.
+
 ```
-Get-Mailbox -Arbitration | Format-Table Name, DisplayName
+Set-ADServerSettings -ViewEntireForest $true; Get-Mailbox -Arbitration | Format-Table Name,DisplayName
 ```
 
 View the results of the command to verify that appropriate system mailbox, either by Name or Display Name from the above table, has been re-created.

@@ -43,12 +43,12 @@ When using the EAC to create a public folder, you'll only be able to set the nam
     
 2. If you want to create this public folder as a child of an existing public folder, click the existing public folder in the list view. If you want to create a top-level public folder, skip this step.
     
-3. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+3. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
 4. In **Public Folder**, type the name of the public folder. 
     
     > [!IMPORTANT]
-    > Don't use a backslash ( **\** ) in the name when creating a public folder. 
+    > Don't use a backslash ( **\\** ) in the name when creating a public folder. 
   
 5. In the **Path** box, verify the path to the public folder. If this isn't the desired path, click **Cancel** and follow Step 2 of this procedure. 
     
@@ -64,7 +64,7 @@ New-PublicFolder -Name Reports -Path \Marketing\2013
 ```
 
 > [!IMPORTANT]
-> Don't use a backslash (\) in the name when creating a public folder. 
+> Don't use a backslash (\\) in the name when creating a public folder. 
   
 For detailed syntax and parameter information, see [New-PublicFolder](https://technet.microsoft.com/library/18b837bf-9ef7-4edf-8728-7f6bd346e75d.aspx).
   

@@ -31,9 +31,9 @@ In Exchange Online, the permissions that you grant to administrators and users a
   
 Administrative roles and end-user roles are the two types of management roles. Following is a brief description of each type:
   
-- **Administrative roles** These roles contain permissions that can be assigned to administrators or specialist users using role groups that manage a part of the Exchange Online organization, such as recipients, compliance management, or Unified Messaging. 
+- **Administrative roles**: These roles contain permissions that can be assigned to administrators or specialist users using role groups that manage a part of the Exchange Online organization, such as recipients, compliance management, or Unified Messaging. 
     
-- **End-user roles** These roles, which are assigned using role assignment policies, enable users to manage aspects of their own mailbox and distribution groups that they own. End-user roles begin with the prefix `My`.
+- **End-user roles**: These roles, which are assigned using role assignment policies, enable users to manage aspects of their own mailbox and distribution groups that they own. End-user roles begin with the prefix `My`.
     
 Management roles give permissions to perform tasks to administrators and users by making cmdlets available to those who are assigned the roles. Because the Exchange admin center (EAC) and Exchange Online PowerShell use cmdlets to manage Exchange Online, granting access to a cmdlet gives the administrator or user permission to perform the task in each of the Exchange Online management interfaces.
   
@@ -47,9 +47,9 @@ Exchange Online includes approximately 45 roles that you can use to grant permis
 
 Management roles grant permissions to perform tasks in Exchange Online, but you need an easy way to assign them to administrators and users. Exchange Online provides you with the following to help you make assignments:
   
-- **Role groups** Role groups enable you to grant permissions to administrators and specialist users. 
+- **Role groups**: Role groups enable you to grant permissions to administrators and specialist users. 
     
-- **Role assignment policies** Role assignment policies enable you to grant permissions to end users to change settings on their own mailbox or distribution groups that they own. 
+- **Role assignment policies**: Role assignment policies enable you to grant permissions to end users to change settings on their own mailbox or distribution groups that they own. 
     
 The following sections provide more information about role groups and role assignment policies.
   
@@ -75,10 +75,10 @@ Exchange Online includes several built-in role groups, each one providing permis
 
 |**Role group**|**Description**|
 |:-----|:-----|
-|Company Administrators ( **TenantAdmins_** _\<unique value\>_)|The Company Administrators role group is a special role group that ties together the Global administrators Office 365 role and the Organization Management Role Exchange Online role group. The Company Administrators role group doesn't have any roles assigned to it. However, it's a member of the Organization Management role group and inherits the permission provided by that role group.  <br/> This role group can't be managed in Exchange Online. You can add members to this role group by adding users to the Global administrator Office 365 role.|
+|Company Administrators (**TenantAdmins_** _\<unique value\>_)|The Company Administrators role group is a special role group that ties together the Global administrators Office 365 role and the Organization Management Role Exchange Online role group. The Company Administrators role group doesn't have any roles assigned to it. However, it's a member of the Organization Management role group and inherits the permission provided by that role group.  <br/> This role group can't be managed in Exchange Online. You can add members to this role group by adding users to the Global administrator Office 365 role.|
 |Discovery Management|Administrators or users who are members of the Discovery Management role group can perform searches of mailboxes in the Exchange Online organization for data that meets specific criteria and can also configure legal holds on mailboxes.|
 |Help Desk|The Help Desk role group, by default, enables members to view and modify the Microsoft Outlook Web App options of any user in the organization. These options might include modifying the user's display name, address, and phone number. They don't include options that aren't available in Outlook Web App options, such as modifying the size of a mailbox or configuring the mailbox database on which a mailbox is located.|
-|Help Desk Administrators ( **HelpdeskAdmins_** _\<unique value\>_)|The Help Desk Administrators role group doesn't have any roles assigned to it. However, it's a member of the View-Only Organization Management role group and inherits the permissions provided by that role group.  <br/> This role group can't be managed in Exchange Online. You can add members to this role group by adding users to the Password administrator Office 365 role.|
+|Help Desk Administrators (**HelpdeskAdmins_** _\<unique value\>_)|The Help Desk Administrators role group doesn't have any roles assigned to it. However, it's a member of the View-Only Organization Management role group and inherits the permissions provided by that role group.  <br/> This role group can't be managed in Exchange Online. You can add members to this role group by adding users to the Password administrator Office 365 role.|
 |Organization Management|Administrators who are members of the Organization Management role group have administrative access to the entire Exchange Online organization and can perform almost any task against any Exchange Online object, with some exceptions, such as the `Discovery Management` role.  <br/> > [!IMPORTANT]> Because the Organization Management role group is a powerful role, only users that perform organizational-level administrative tasks that can potentially impact the entire Exchange Online organization should be members of this role group.|
 |Recipient Management|Administrators who are members of the Recipient Management role group have administrative access to create or modify Exchange Online recipients within the Exchange Online organization.|
 |Records Management|Users who are members of the Records Management role group can configure compliance features, such as retention policy tags, message classifications, and transport rules.|

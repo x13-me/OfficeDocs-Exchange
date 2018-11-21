@@ -33,9 +33,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to configure the time zone
+## Use the EAC to configure the time zone
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
@@ -45,7 +43,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
     
 4. To save your changes, click **OK**, and then click **Save**.
     
-### Use Exchange Online PowerShell to configure the time zone
+## Use Exchange Online PowerShell to configure the time zone
 
 This example sets the time zone to the Pacific time zone on a UM auto attendant named `MyUMAutoAttendant`.
   

@@ -27,7 +27,7 @@ In order for users to perform certain tasks on public folders in their **Favorit
     
     ![Elipses in the Outlook 2013 Navigation Bar](../../media/7a949ccd-f0e0-4d20-aa4d-f97ae5c6fdff.png)
   
-![Outlook 2013 Navigation Bar menu to access Folders](../../media/aaedd8fa-8a30-4e96-b4de-9625cd62e2b9.png)
+    ![Outlook 2013 Navigation Bar menu to access Folders](../../media/aaedd8fa-8a30-4e96-b4de-9625cd62e2b9.png)
   
     Users with Outlook 2010 clients can click **Folders** at the bottom of the Navigation Pane. 
     

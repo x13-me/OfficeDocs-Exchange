@@ -55,13 +55,13 @@ Exchange Online: [DLP policy detection reports](https://technet.microsoft.com/li
   
 2. On the **Create a new DLP policy from a template** page, complete the following fields: 
     
-1. **Name** Add a name that will distinguish this policy from others. 
+1. **Name**: Add a name that will distinguish this policy from others. 
     
-2. **Description** Add an optional description that summarizes this policy. 
+2. **Description**: Add an optional description that summarizes this policy. 
     
-3. **Choose a template** Select the appropriate template to begin creating a new policy. 
+3. **Choose a template**: Select the appropriate template to begin creating a new policy. 
     
-4. **More options** Select the mode or state. The new policy is not fully enabled until you specify that it should be. The default mode for a policy is test without notifications. 
+4. **More options**: Select the mode or state. The new policy is not fully enabled until you specify that it should be. The default mode for a policy is test without notifications. 
     
 5. Click **Save** to finish creating the policy. 
     

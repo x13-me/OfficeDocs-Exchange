@@ -558,7 +558,7 @@ These features are new to mail flow rules in Exchange 2016:
 
 For more information, see [Mail flow rules in Exchange 2016](../policy-and-compliance/mail-flow-rules/mail-flow-rules.md).
 
-#### Azure Rights Management connector connector
+#### Azure Rights Management connector
 <a name="MRM2010"> </a>
 
 The Azure Rights Management connector (also known as the Microsoft Rights Management connector or RMS connector) is an optional application that helps you enhance data protection for your Exchange 2016 server by connecting to the cloud-based Azure Rights Management service (also known as Microsoft Rights Management or Azure RMS). Once you install the RMS connector, it provides continuous data protection throughout the life span of the information and because these services are customizable, you can define the level of protection you need. For example, you can limit email message access to specific users or set view-only rights for certain messages.

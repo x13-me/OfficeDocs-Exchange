@@ -103,12 +103,12 @@ To complete the steps for spam filter customizations covered in this topic, move
     
 4. As the focus moves to the **general** link in the navigation pane in the **Edit Spam Filter Policy** pop-up window that opens for the filter, you hear "Edit Spam Filter Policy, Selected, General." 
     
-5. In the navigation pane in the **Edit Spam** Filter Policy pop-up window, press the arrow keys to move between and select the links in the navigation pane on the page, which correspond to the settings you can edit: **general, spam and bulk actions, block lists, allow lists, international spam, and advanced options**. 
+5. In the navigation pane in the **Edit Spam Filter Policy** pop-up window, press the arrow keys to move between and select the links in the navigation pane on the page, which correspond to the settings you can edit: **general, spam and bulk actions, block lists, allow lists, international spam, and advanced options**. 
     
     > [!TIP]
     > When a link is selected in the navigation pane, press the Tab key to move the focus to the content area of the page. To move through and select the elements in the content area, press the Tab key. As you select each setting, you hear information about the setting. To open menus, press Spacebar. To move between and select menu options, press the arrow keys. To choose an option, press Enter. You can also press the Spacebar to select or clear a check box selection. 
   
-6. After you've customized the settings for the filter and pressed the Tab key to tab through all the links in the **Edit Spam Filter** Policy pop-up window, the last two elements on the page are the **Save** button and the **Cancel** button. To activate either button, press Enter. 
+6. After you've customized the settings for the filter and pressed the Tab key to tab through all the links in the **Edit Spam Filter Policy** pop-up window, the last two elements on the page are the **Save** button and the **Cancel** button. To activate either button, press Enter. 
     
 7. As the pop-up window closes and the focus moves back to the **spam filter** content area, you hear "Spam filter." 
     

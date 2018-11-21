@@ -76,13 +76,13 @@ With mailbox archiving in Exchange Online, also called "in-place archiving," use
     
 8. Press the Tab key about six times until you hear "Archiving link, Enable." 
     
-    **Tip** If the user is already enabled for archiving, you hear "Archiving link, Disable." 
+    **Tip**: If the user is already enabled for archiving, you hear "Archiving link, Disable." 
     
 9. Press Enter. You hear "Are you sure you want to enable the archive?" With the focus on the **Yes** button, press Enter. 
     
-> **Tip** If you want to enable archiving for additional users, move the focus back to the list of mailboxes by pressing Ctrl+Shift+F6. Select the name you want by pressing the Down Arrow key or the Up Arrow key, and repeat steps 7 through 9. 
+> **Tip**: If you want to enable archiving for additional users, move the focus back to the list of mailboxes by pressing Ctrl+Shift+F6. Select the name you want by pressing the Down Arrow key or the Up Arrow key, and repeat steps 7 through 9. 
     
- **Note** For more information, go to [Enable or disable an archive mailbox in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=799152).
+ **Note**: For more information, go to [Enable or disable an archive mailbox in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=799152).
   
 ## Disable mailbox archiving for a user
 <a name="BKMK_DisableMailbox"> </a>
@@ -112,7 +112,7 @@ If you disable a user's archive, the existing content is retained for 30 days. T
 
 The messaging records management (MRM) feature in Exchange Online helps you manage the life cycle of your organization's email; it allows you to set retention policies. Retention policies specify when certain types of mailbox items—including regular email messages, deleted items, and junk mail—should be moved, archived, or deleted. Exchange Online automatically applies the Default MRM Policy when you create a new mailbox with an archive or when you enable an archive for an existing mailbox user.
   
- **Note** You can customize the Default MRM Policy by adding or removing retention tags or by modifying tag settings. You can also replace the default policy with any retention policies you create. To view, edit, or create a retention policy, on the EAC primary navigation pane, select the compliance management link and then, on the menu bar, select the retention policies link. [Learn more about retention policies](https://go.microsoft.com/fwlink/p/?LinkId=799151).
+ **Note**: You can customize the Default MRM Policy by adding or removing retention tags or by modifying tag settings. You can also replace the default policy with any retention policies you create. To view, edit, or create a retention policy, on the EAC primary navigation pane, select the compliance management link and then, on the menu bar, select the retention policies link. [Learn more about retention policies](https://go.microsoft.com/fwlink/p/?LinkId=799151).
   
 You can apply the same retention policy to all users, or you can apply different policies to certain users.
   

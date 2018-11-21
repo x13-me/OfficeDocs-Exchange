@@ -15,7 +15,7 @@ description: "Learn how to block Basic auth for client authentication in Exchang
 
 Basic authentication in Exchange Online uses a username and a password for client access requests. Blocking Basic authentication can help protect your Exchange Online organization from brute force or password spray attacks. When you disable Basic authentication for users in Exchange Online, their email clients and apps must support modern authentication. Those clients are:
   
-- Outlook 2013 or later (note [Outlook 2013 requires a registry key change](https://support.office.com/article7dc1c01a-090f-4971-9677-f1b192d6c910))
+- Outlook 2013 or later (Outlook 2013 [requires a registry key change](https://docs.microsoft.com/office365/admin/security-and-compliance/enable-modern-authentication))
 
 - Outlook 2016 for Mac or later
 
@@ -23,7 +23,7 @@ Basic authentication in Exchange Online uses a username and a password for clien
 
 - Mail for iOS 11.3.1 or later
 
-If your organization has no legacy email clients, you can use authentication policies in Exchange Online to disable Basic authentication requests, which forces all client access requests to use modern authentication. For more information about modern authentication, see [Using Office 365 modern authentication with Office clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).
+If your organization has no legacy email clients, you can use authentication policies in Exchange Online to disable Basic authentication requests, which forces all client access requests to use modern authentication. For more information about modern authentication, see [Using Office 365 modern authentication with Office clients](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
   
 This topic explains how Basic authentication is used and blocked in Exchange Online, and the corresponding procedures for authentication policies.
   
@@ -91,8 +91,6 @@ In this scenario, if contoso.com uses on-premises AD FS server for authenticatio
 
 You manage all aspects of authentication policies in Exchange Online PowerShell. The protocols and services in Exchange Online that you can block Basic authentication for are described in the following table.
   
-****
-
 |**Protocol or service**|**Description**|**Parameter name**|
 |:-----|:-----|:-----|
 |Exchange Active Sync (EAS)|Used by some email clients on mobile devices.|*AllowBasicAuthActiveSync*|
@@ -113,8 +111,6 @@ Typically, when you block Basic authentication for a user, we recommend that you
   
 For email clients and apps that don't support modern authentication, you need to allow Basic authentication for the protocols and services that they require. These protocols and services are described in the following table:
   
-****
-
 |**Client**|**Protocols and services**|
 |:-----|:-----|
 |Outlook 2013 and later|• Autodiscover <br/>• Exchange Web Services (EWS) <br/>• MAPI over HTTP <br/>• Outlook Anywhere (RPC over HTTP) <br/>• Offline Address Book (OAB)|
@@ -262,13 +258,13 @@ Set-User -Identity laura@contoso.com -STSRefreshTokensValidFrom $([System.DateTi
 This example immediately applies the authentication policy to multiple users that were previously identified by filterable attributes or a text file. This example works if you're still in the same PowerShell session and you haven't changed the variables you used to identify the users (you didn't use the same variable name afterwards for some other purpose). For example:
   
 ```
-$Sales | foreach {Set-User -Identity $_ -STSRefreshTokensValidFrom $([System.DateTime]::UtcNow}
+$Sales | foreach {Set-User -Identity $_ -STSRefreshTokensValidFrom $([System.DateTime]::UtcNow)}
 ```
 
 or
 
 ``` 
-$BBA | foreach {Set-User -Identity $_ -STSRefreshTokensValidFrom $([System.DateTime]::UtcNow}
+$BBA | foreach {Set-User -Identity $_ -STSRefreshTokensValidFrom $([System.DateTime]::UtcNow)}
 ```
   
 ### View authentication policies

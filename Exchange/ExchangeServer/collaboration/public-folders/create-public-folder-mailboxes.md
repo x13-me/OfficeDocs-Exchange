@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 64437ffd-231b-4c10-84df-232ccbe9538f
-description: "Learn how to create a public folder mailbox in in Exchange 2016 or Exchange 2019."
+description: "Learn how to create a public folder mailbox in Exchange 2016 or Exchange 2019."
 ---
 
 # Create a public folder mailbox in Exchange Server

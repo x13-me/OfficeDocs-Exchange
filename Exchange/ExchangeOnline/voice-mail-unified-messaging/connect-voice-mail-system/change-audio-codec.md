@@ -31,9 +31,7 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to change the audio codec on a Unified Messaging dial plan
+## Use the EAC to change the audio codec on a Unified Messaging dial plan
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
     
@@ -53,7 +51,7 @@ For additional tasks related to UM dial plans, see [UM Dial Plan Procedures](htt
     
 5. Click **Save**.
     
-### Use Exchange Online PowerShell to change the audio codec on a Unified Messaging dial plan
+## Use Exchange Online PowerShell to change the audio codec on a Unified Messaging dial plan
 
 This example sets the audio codec on a UM dial plan named `MyUMDialPlan` to G.711. 
   

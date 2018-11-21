@@ -33,15 +33,13 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to delete a UM auto attendant
+## Use the EAC to delete a UM auto attendant
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to edit, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
 2. On the **UM Dial Plan** page, under **UM Auto Attendants**, select the UM auto attendant you want to delete. On the toolbar, click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.gif). On the **Warning** page, click **Yes**. 
     
-### Use Exchange Online PowerShell to delete a UM auto attendant
+## Use Exchange Online PowerShell to delete a UM auto attendant
 
 This example deletes a UM auto attendant named `MyUMAutoAttendant`.
   

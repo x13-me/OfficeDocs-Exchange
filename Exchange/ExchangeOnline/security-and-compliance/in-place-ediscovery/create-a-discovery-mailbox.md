@@ -36,9 +36,7 @@ For more information, see [Discovery mailboxes](in-place-ediscovery.md#discmbxs)
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## What do you want to do?
-
-### (Optional) Step 1: Connect to Exchange Online using remote PowerShell
+## (Optional) Step 1: Connect to Exchange Online using remote PowerShell
 
 You only need to perform this step if you have an Exchange Online or Office 365 organization. If you have an Exchange Server organization, go to the next step and run the command in Exchange Online PowerShell.
   
@@ -70,7 +68,7 @@ You only need to perform this step if you have an Exchange Online or Office 365 
 
 For more information or if you have problems connecting to your Exchange Online organization, see [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283).
   
-### Step 2: Create a discovery mailbox
+## Step 2: Create a discovery mailbox
 
 This example creates a discovery mailbox named SearchResults.
   
@@ -88,7 +86,7 @@ Get-Mailbox -Resultsize unlimited -Filter {RecipientTypeDetails -eq "DiscoveryMa
 
 For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
   
-### Step 3: Assign permissions to a discovery mailbox
+## Step 3: Assign permissions to a discovery mailbox
 
 You have to explicitly assign users or groups the necessary permissions to open a discovery mailbox that you've created. Use the following syntax to assign a user or group permissions to open a discovery mailbox and view search results:
   

@@ -14,7 +14,7 @@ description: "Summary: A couple of different scenarios that illustrate how to co
 
 # Manage mail flow using a third-party cloud service with Office 365
 
- **Summary:** A couple of different scenarios that illustrate how to configure mail flow through a third-party cloud service. 
+ **Summary**: A couple of different scenarios that illustrate how to configure mail flow through a third-party cloud service. 
   
 This topic covers the following complex mail flow scenarios using Office 365:
   

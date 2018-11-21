@@ -38,13 +38,13 @@ If you've *permanently* deleted an item in Microsoft Outlook or Outlook on the w
   
 In these examples, we increase the retention period to 30 days, the maximum for Exchange Online mailboxes. But you can set the number to whatever you like, up to that limit. 
   
-**Example 1:** Set Emily Maier's mailbox to keep deleted items for 30 days. In Exchange Online PowerShell, run the following command. 
+**Example 1:**: Set Emily Maier's mailbox to keep deleted items for 30 days. In Exchange Online PowerShell, run the following command. 
   
 ```
 Set-Mailbox -Identity "Emily Maier" -RetainDeletedItemsFor 30
 ```
 
-**Example 2:** Set all user mailboxes in the organization to keep deleted items for 30 days. In Exchange Online PowerShell, run the following command. 
+**Example 2:**: Set all user mailboxes in the organization to keep deleted items for 30 days. In Exchange Online PowerShell, run the following command. 
   
 ```
 Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Set-Mailbox -RetainDeletedItemsFor 30

@@ -35,9 +35,7 @@ For additional management tasks related to UM dial plans, see [Dial Plan Procedu
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to enable a customized welcome greeting
+## Use the EAC to enable a customized welcome greeting
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**.
     
@@ -52,7 +50,7 @@ For additional management tasks related to UM dial plans, see [Dial Plan Procedu
   
 5. After you've located the file, click **Open**, and then click **Save**.
     
-### Use Exchange Online PowerShell to enable a customized welcome greeting
+## Use Exchange Online PowerShell to enable a customized welcome greeting
 
 This example enables a welcome greeting that uses the C:\UMPrompts\welcome.wav file on a UM dial plan named `MyUMDialPlan`.
   

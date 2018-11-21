@@ -53,11 +53,11 @@ For additional information on the .NET regex engine which is used for processing
   
 3. On the **New custom policy** page, complete the following fields: 
     
-1. **Name** Add a name that will distinguish this policy from others. 
+1. **Name**: Add a name that will distinguish this policy from others. 
     
-2. **Description** Add an optional description that summarizes this policy. 
+2. **Description**: Add an optional description that summarizes this policy. 
     
-3. **Choose a state** Select the mode or state for this policy. The new policy is not fully enabled until you specify that it should be. The default mode for a policy is test without notifications. 
+3. **Choose a state**: Select the mode or state for this policy. The new policy is not fully enabled until you specify that it should be. The default mode for a policy is test without notifications. 
     
 4. Click **Save** to finish creating the new policy reference information. The policy is added to the list of all policies that you have configured, although there are not yet any rules or actions associated with this new custom policy. 
     

@@ -45,9 +45,7 @@ For additional management tasks related to Protected Voice Mail procedures, see 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use EAC to specify the text to display for email clients that don't support Windows Rights Management
+## Use EAC to specify the text to display for email clients that don't support Windows Rights Management
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**. In the list view, select the UM dial plan you want to change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
@@ -57,7 +55,7 @@ For additional management tasks related to Protected Voice Mail procedures, see 
     
 4. Click **Save**.
     
-### Use Exchange Online PowerShell to specify the text to display for email clients that don't support Windows Rights Management
+## Use Exchange Online PowerShell to specify the text to display for email clients that don't support Windows Rights Management
 
 This example specifies the text to display to users associated with the UM mailbox policy named `MyUMMailboxPolicy` who have email clients that don't support Windows Rights Management. 
   

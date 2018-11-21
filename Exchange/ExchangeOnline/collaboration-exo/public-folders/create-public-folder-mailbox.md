@@ -39,7 +39,7 @@ For additional management tasks related to public folders in Exchange Online, se
     
 ## Use the EAC to create a public folder mailbox
 
-1. Navigate to **Public folders** \> **Public folder mailboxes**, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
+1. Navigate to **Public folders** \> **Public folder mailboxes**, and then click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif).
     
 2. In **Public Folder Mailbox**, provide a name for the public folder mailbox.
     
@@ -63,7 +63,7 @@ For detailed syntax and parameter information, see [new-Mailbox](https://technet
   
 ## How do you know this worked?
 
-To verify that you have successfully created the primary public folder mailbox, run the following Shell command:
+To verify that you have successfully created the primary public folder mailbox, run the following command in Exchange Online PowerShell:
   
 ```
 Get-OrganizationConfig | Format-List RootPublicFolderMailbox

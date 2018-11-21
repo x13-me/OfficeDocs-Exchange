@@ -1,85 +1,63 @@
 ---
-title: "Provision recipients for offline address book downloads"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 11/17/2014
+title: "Provision recipients for offline address book downloads in Exchange Online"
+ms.author: chrisda
+author: chrisda
+manager: serdars
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 141751ac-16d3-4e3c-b70c-004aeedcb5a0
-description: "If you use multiple offline address books (OABs) in your organization, there are several ways to specify which recipients download which OABs:"
+description: "Admins can learn how to assign offline address books (OABs) to mailboxes in Exchange Online."
 ---
 
-# Provision recipients for offline address book downloads
+# Provision recipients for offline address book downloads in Exchange Online
 
-If you use multiple offline address books (OABs) in your organization, there are several ways to specify which recipients download which OABs:
-  
-- **Per mailbox database** You can use the EAC or Exchange Online PowerShell to provision recipients for OAB downloads by linking a mailbox database to a default OAB for Office Outlook 2007, Outlook 2010 and Outlook 2013 clients. 
-    
-- **Per recipient** You can use the **Set-Mailbox** cmdlet in Exchange Online PowerShell to specify which OAB is downloaded by linking the OAB directly to a recipient's mailbox. 
-    
-- **Per multiple recipients** You can use a pipelined command in Exchange Online PowerShell to specify the OAB that multiple recipients download, based on common attributes. 
-    
-- **Per address book policy** You can assign an address book policy (ABP) to a mailbox user's account to specify which OAB is downloaded to a recipient's mailbox. If you assign an ABP to a user account that already has an OAB assigned, the OAB that's explicitly assigned to the mailbox will take precedence. For more information, see [Assign an address book policy to mail users](../../address-books/address-book-policies/assign-an-address-book-policy-to-mail-users.md).
-    
+If you use multiple offline address books (OABs) in your organization, you have different options for assigning the OAB to users:
+
+- **Per mailbox**: You can use the **Set-Mailbox** cmdlet in Exchange Online PowerShell to assign the OAB to a mailbox. You can also assign the OAB to a filtered list of mailboxes.
+
+- **Per address book policy**: You can assign an address book policy (ABP) to a user, and the ABP specifies the OAB. If you assign an ABP to a user that already has an OAB assigned to their mailbox, the OAB that's assigned to the mailbox will take precedence. For more information, see [Assign an address book policy to mail users](../../address-books/address-book-policies/assign-an-address-book-policy-to-mail-users.md).
+
 For additional management tasks related to OABs, see [Offline address book procedures](offline-address-book-procedures.md).
-  
+
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 5 minutes.
-    
-- You can't use the Exchange admin center (EAC) to perform these procedures. You must use Exchange Online PowerShell.
-    
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
-    
+
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
+
+- You can't use the Exchange admin center (EAC) to perform this procedure. You can only use Exchange Online PowerShell. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
-  
-## Use Exchange Online PowerShell to provision recipients for OAB downloads by linking their mailbox database to a public folder database or to a default OAB
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox databases" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
-  
-This example sets up the web-based distribution of My OAB for the default mailbox database.
-  
+## Use Exchange Online PowerShell to assign OABs to mailboxes
+
+To assign an OAB to a mailbox, use the following syntax:
+
 ```
-Set-MailboxDatabase -Identity "Mailbox Database" -OfflineAddressBook "My OAB"
+Set-Mailbox -Identity <MailboxIdentity> -OfflineAddressBook <OfflineAddressBookIdentity>
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxDatabase](https://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx).
-  
-## Use Exchange Online PowerShell to specify which OAB will be downloaded by linking the OAB directly to a recipient's mailbox
+This example assigns the OAB named Contoso Executives to the mailbox laura@contoso.com.
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
-  
-To specify which OAB is downloaded by linking the OAB directly to a recipient's mailbox, use the following syntax.
-  
 ```
-Set-Mailbox -Identity <MailboxIDParameter> -OfflineAddressBook <OfflineAddressBookIdParameter>
+Set-Mailbox -Identity laura@contoso.com -OfflineAddressBook "Contoso Executives OAB"
 ```
 
-> [!NOTE]
-> The _Identity_ parameter identifies the mailbox and can take the following values: GUID, ADObjectID, distinguished name (DN), _domain\account_, user principal name (UPN), LegacyExchangeDN, SmtpAddress, and alias. 
-  
-This example specifies that the user Kim will download the OAB My OAB.
-  
+This example assigns the OAB named Contoso US to a filtered list of mailboxes. This first command identifies the mailboxes. The second command assigns the OAB to the identified mailboxes.
+
 ```
-Set-Mailbox -Identity Kim -OfflineAddressBook "My OAB"
+$USContoso = Get-User -ResultSize Unlimited -Filter {RecipientType -eq "UserMailbox" -and Company -eq "Contoso" -and CountryOrRegion -eq "US"}
+$USContoso | foreach {Set-Mailbox $_.Identity -OfflineAddressBook "Contoso United States"}
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
-  
-## Use Exchange Online PowerShell to specify the OAB that multiple recipients will download
+## How do you know this worked?
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
-  
-This example specifies that all user mailboxes in the United States for Contoso will download the OAB Contoso United States.
-  
+To verify that you've successfully assigned an OAB to a mailbox, replace <MailboxIdentity> with the identity of the mailbox, and run the following command:
+
 ```
-Get-User -ResultSize Unlimited -Filter { Company -eq "Contoso" -and RecipientType -eq "UserMailbox" } | Where { $_.CountryOrRegion -eq "United States"} | Set-Mailbox -OfflineAddressBook "Contoso United States"
+Get-Mailbox -Identity "<MailboxIdentity>" | Format-Table -Auto Name,OfflineAddressBook
 ```
-
-For detailed syntax and parameter information, see [Get-User](https://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx) and [Set-Mailbox](https://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
-  
-

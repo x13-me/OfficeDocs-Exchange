@@ -33,9 +33,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to create a UM auto attendant
+## Use the EAC to create a UM auto attendant
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM dial plans**, select the UM dial plan for which you want to add an auto attendant, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
@@ -43,21 +41,21 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
     
 3. On the **New UM auto attendant** page, enter the following information: 
     
-  - **Name** Use this box to create the display name for the UM auto attendant. A UM auto attendant name is required and must be unique. However, it's used only for display purposes in the EAC and Exchange Online PowerShell. 
+  - **Name**: Use this box to create the display name for the UM auto attendant. A UM auto attendant name is required and must be unique. However, it's used only for display purposes in the EAC and Exchange Online PowerShell. 
     
     If you have to change the display name of the auto attendant after it's created, you must first delete the existing UM auto attendant and then create another auto attendant that has the appropriate name. If your organization uses multiple UM auto attendants, we recommend that you use meaningful names for your UM auto attendants. The maximum length of a UM auto attendant name is 64 characters, and it can include spaces. 
     
     Although you can name a new UM auto attendant to include spaces, if you integrate Unified Messaging with Office Communications Server 2007 R2 or Microsoft Lync Server, the name of the auto attendant can't include spaces. Therefore, if you created an auto attendant with spaces in the display name, and you're integrating with Office Communications Server 2007 R2 or Lync Server, you must first delete that auto attendant and then create another auto attendant that doesn't include spaces in the display name.
     
-  - **Create this auto attendant as enabled** Select this check box to enable the auto attendant to answer incoming calls when you complete the New UM Auto Attendant Wizard. By default, a new auto attendant is created as disabled. 
+  - **Create this auto attendant as enabled**: Select this check box to enable the auto attendant to answer incoming calls when you complete the New UM Auto Attendant Wizard. By default, a new auto attendant is created as disabled. 
     
     If you decide to create the UM auto attendant as disabled, you can use the EAC or Exchange Online PowerShell to enable the auto attendant after you finish the wizard.
     
-  - **Set the auto attendant to respond to voice commands** Select this check box to speech-enable the UM auto attendant. If the auto attendant is speech-enabled, callers can respond to the system or custom prompts used by the UM auto attendant using touchtone or voice inputs. By default, the auto attendant won't be speech-enabled when it's created. 
+  - **Set the auto attendant to respond to voice commands**: Select this check box to speech-enable the UM auto attendant. If the auto attendant is speech-enabled, callers can respond to the system or custom prompts used by the UM auto attendant using touchtone or voice inputs. By default, the auto attendant won't be speech-enabled when it's created. 
     
     For callers to use a speech-enabled auto attendant, you must install the appropriate UM language pack that contains Automatic Speech Recognition (ASR) support and configure the properties of the auto attendant to use this language.
     
-  - **Access numbers** Use this box to enter the extension numbers or telephone numbers that callers will use to reach the auto attendant. Type an extension number or telephone number in the box, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to add the number to the list. The number of digits in the extension number or telephone number that you provide doesn't have to match the number of digits for an extension number configured on the associated UM dial plan. This is because direct calls are allowed to UM auto attendants. 
+  - **Access numbers**: Use this box to enter the extension numbers or telephone numbers that callers will use to reach the auto attendant. Type an extension number or telephone number in the box, and then click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to add the number to the list. The number of digits in the extension number or telephone number that you provide doesn't have to match the number of digits for an extension number configured on the associated UM dial plan. This is because direct calls are allowed to UM auto attendants. 
     
     The number of extension numbers or telephone numbers entered is unlimited. However, you may create the new auto attendant without an extension number listed. An extension number or telephone number isn't required.
     
@@ -65,7 +63,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
     
 4. Click **Save**.
     
-### Use Exchange Online PowerShell to create a UM auto attendant
+## Use Exchange Online PowerShell to create a UM auto attendant
 
 This example creates a UM auto attendant named `MyUMAutoAttendant` that can accept incoming calls but isn't speech-enabled. 
   

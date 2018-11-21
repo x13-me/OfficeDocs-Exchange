@@ -67,9 +67,9 @@ Here is an overview of the steps:
   
 - Complete the prerequisites for your email server environment.
     
-- **Part 1:** Configure mail to flow from Office 365 to your email server. 
+- **Part 1**: Configure mail to flow from Office 365 to your email server. 
     
-- **Part 2:** Configure mail to flow from your email server to Office 365. 
+- **Part 2**: Configure mail to flow from your email server to Office 365. 
     
 ## Prerequisites for your email server environment
 <a name="Prereqemailserver"> </a>
@@ -180,7 +180,7 @@ New-SendConnector -Name <DescriptiveName> -AddressSpaces * -CloudServicesMailEna
 
 This example creates a new Send Connector with the following properties:
   
-- **Name** My company to Office 365 
+- **Name**: My company to Office 365 
     
 - **FQDN** mail.contoso.com 
     

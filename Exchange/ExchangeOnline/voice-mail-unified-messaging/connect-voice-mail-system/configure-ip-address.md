@@ -35,9 +35,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
   
-## What do you want to do?
-
-### Use the EAC to configure the IP address on a UM IP gateway
+## Use the EAC to configure the IP address on a UM IP gateway
 
 1. In the EAC, navigate to **Unified Messaging** \> **UM IP Gateways**, select the UM IP gateway that you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
     
@@ -48,7 +46,7 @@ For additional management tasks related to UM IP gateways, see [UM IP gateway pr
 > [!IMPORTANT]
 > If you use an FQDN instead of an IP address on the UM IP gateway, verify that the correct DNS records have been created. 
   
-### Use Exchange Online PowerShell to configure the IP address on a UM IP gateway
+## Use Exchange Online PowerShell to configure the IP address on a UM IP gateway
 
 This example configures a UM IP gateway named `MyUMIPGateway` with an IP address of 10.10.10.1. 
   

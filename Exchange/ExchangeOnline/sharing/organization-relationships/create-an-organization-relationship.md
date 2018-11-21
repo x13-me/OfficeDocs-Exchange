@@ -2,8 +2,8 @@
 title: "Create an organization relationship in Exchange Online"
 ms.author: dstrome
 author: dstrome
-manager: scotv
-ms.date: 4/29/2016
+manager: serdars
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -24,9 +24,7 @@ Set up an organization relationship to share calendar information with an extern
     
 - If you want to share calendars with an on-premises Exchange organization, the on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements.
     
-## What do you want to do?
-
-### Use the Exchange admin center to create an organization relationship
+## Use the Exchange admin center to create an organization relationship
 <a name="BKMK_EAC"> </a>
 
 1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
@@ -57,7 +55,7 @@ Set up an organization relationship to share calendar information with an extern
     
 7. Click **save** to create the organization relationship. 
     
-### Use Exchange Online PowerShell to create an organization relationship
+## Use Exchange Online PowerShell to create an organization relationship
 <a name="BKMK_Shell"> </a>
 
 This example creates an organization relationship with Contoso, Ltd with the following conditions:
@@ -93,7 +91,7 @@ If you're setting up an organization relationship with an on-premises Exchange o
 - Fourth Coffee sees free/busy information with the time.
     
 ```
-New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
+New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
 ```
 
 For detailed syntax and parameter information, see [New-OrganizationRelationship](https://technet.microsoft.com/library/ec35c7ed-6f91-435e-8c9f-9dbc53c993fe.aspx).

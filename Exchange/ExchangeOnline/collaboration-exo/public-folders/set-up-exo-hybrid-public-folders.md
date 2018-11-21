@@ -3,7 +3,6 @@ title: "Configure Exchange Online public folders for a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
 manager: laurawi
-ms.date: 7/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -36,9 +35,9 @@ This article describes how to enable users in your Exchange Server on-premises e
     
 4. In order to access public folders cross-premises, users must upgrade their Outlook clients to the November 2012 Outlook public update or later. 
     
-1. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
+   1. To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
     
-2. To download the November 2012 Outlook Update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](https://www.microsoft.com/download/details.aspx?id=35718).
+   2. To download the November 2012 Outlook Update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](https://www.microsoft.com/download/details.aspx?id=35718).
     
 5. Outlook 2011 for Mac and Outlook for Mac for Office 365 are not supported for cross-premises public folders. Users must be in the same location as the public folders to access them with Outlook 2011 for Mac or Outlook for Mac for Office 365. In addition, users whose mailboxes are in Exchange Online won't be able to access on-premises public folders using Outlook Web App.
     
@@ -68,16 +67,16 @@ Running the script `Sync-MailPublicFoldersCloudToOnprem.ps1` will synchronize th
 > [!NOTE]
 > Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be viewable in the Exchange admin center. See the Get-MailPublicFolder command. To recreate the SendAs permissions in the cloud, use the Add-RecipientPermission command. 
   
-1. On Exchange Server, run the following command to synchronize mail-enabled public folders from Exchange Online/Office 365 to your local on-premises Active Directory.
+On Exchange Server, run the following command to synchronize mail-enabled public folders from Exchange Online/Office 365 to your local on-premises Active Directory.
     
-  ```
-  Sync-MailPublicFoldersCloudToOnprem.ps1 -Credential (Get-Credential)
-  ```
+    ```
+    Sync-MailPublicFoldersCloudToOnprem.ps1 -Credential (Get-Credential)
+    ```
 
-    Where `Credential` is your Office 365 username and password. 
+Where `Credential` is your Office 365 username and password. 
     
-> [!NOTE]
-> We recommend that you run this script daily to synchronize your mail-enabled public folders. 
+   > [!NOTE]
+   > We recommend that you run this script daily to synchronize your mail-enabled public folders. 
   
 ## Step 3: Configure on-premises users to access Exchange Online public folders
 <a name="Access"> </a>
@@ -88,35 +87,29 @@ Running the script `Import-PublicFolderMailboxes.ps1` will import public folder 
   
 1. On Exchange Server, run the following command to import public folder mailbox objects from the cloud to your on-premises Active Directory.
     
-  ```
-  Import-PublicFolderMailboxes.ps1 -Credential (Get-Credential)
-  ```
-
+    ```
+    Import-PublicFolderMailboxes.ps1 -Credential (Get-Credential)
+    ```
     Where `Credential` is your Office 365 username and password. 
     
-    > [!NOTE]
-    > We recommend that you run this script daily to import your public folder mailbox objects because whenever public folder mailboxes reach their threshold capacity, they automatically split into multiple new mailboxes. Therefore, you always want to ensure you have imported the most recent public folder mailboxes from the cloud. 
+   > [!NOTE]
+   > We recommend that you run this script daily to import your public folder mailbox objects because whenever public folder mailboxes reach their threshold capacity, they automatically split into multiple new mailboxes. Therefore, you always want to ensure you have imported the most recent public folder mailboxes from the cloud. 
   
 2. Enable the Exchange 2013 on-premises organization to access the Exchange Online public folders.
     
-  ```
-  Set-OrganizationConfig -PublicFoldersEnabled Remote
-  ```
+    ```
+    Set-OrganizationConfig -PublicFoldersEnabled Remote
+    ```
 
-> [!NOTE]
-> You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Force directory synchronization](https://technet.microsoft.com/library/jj151771.aspx). 
+   > [!NOTE]
+   > You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Force directory synchronization](https://technet.microsoft.com/library/jj151771.aspx). 
   
 ## How do I know this worked?
 <a name="Access"> </a>
 
-1. Log on to Outlook for a user who is in Exchange Online and perform the following public folder tests:
-    
-  - View the hierarchy.
-    
-  - Check permissions
-    
-  - Create and delete public folders.
-    
-  - Post content to and delete content from a public folder.
-    
+Log on to Outlook for a user who is in Exchange Online and perform the following public folder tests:
 
+ - View the hierarchy.
+ - Check permissions
+ - Create and delete public folders.
+ - Post content to and delete content from a public folder.
