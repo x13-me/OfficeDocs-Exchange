@@ -278,7 +278,7 @@ When planning to implement mailbox retention for messaging retention management 
 ## In-Place eDiscovery limits and throttling policies
 <a name="throttle"> </a>
 
-In Exchange Sever and Exchange Online, the resources In-Place eDiscovery can consume are controlled using throttling policies. 
+In Exchange Server and Exchange Online, the resources In-Place eDiscovery can consume are controlled using throttling policies. 
   
 The default throttling policy contains the following throttling parameters.
   
