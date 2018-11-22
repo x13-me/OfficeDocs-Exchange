@@ -52,9 +52,9 @@ The following permissions **are** supported:
     
 - **Private items** When adding a delegate the option can be configured to allow a user with folder permissions to see private calendar items. 
 
-The following permissions or capabilities **aren't** supported: 
-  
 - **Send-As** Lets a user send mail as though it appears to be coming from another user's mailbox. 
+
+The following permissions or capabilities **aren't** supported: 
     
 - **Auto-mapping** Enables Outlook, when it starts, to automatically open any mailboxes that a user has been granted **Full Access** to. 
     
