@@ -1,83 +1,102 @@
 ---
-title: "View or configure Outlook Web App mailbox policy properties"
+title: "View or configure Outlook on the web mailbox policy properties in Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
-manager: laurawi
-ms.date: 4/13/2016
+manager: serdars
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa
-description: "After you create an Outlook Web App mailbox policy, you can configure a variety of options to control the features available to users in Outlook Web App. For example, you can enable or disable Inbox rules or create a list of allowed file types for attachments."
+description: "Admins can learn how to view and modify Outlook on the web mailbox policies (formerly known as Outlook Web App mailbox policies) in Exchange Online."
 ---
 
-# View or configure Outlook Web App mailbox policy properties
+# View or configure Outlook on the web mailbox policy properties in Exchange Online
 
-After you create an Outlook Web App mailbox policy, you can configure a variety of options to control the features available to users in Outlook Web App. For example, you can enable or disable Inbox rules or create a list of allowed file types for attachments.
-  
+After you create an Outlook on the web mailbox policy, you can configure a variety of options to control the features available to users in Outlook on the web (formerly known as Outlook Web App). For example, you can enable or disable Inbox rules or create a list of allowed file types for attachments.
+
+For more information about Outlook on the web mailbox policies, see [Outlook Web App mailbox policies](outlook-web-app-mailbox-policies.md).
+
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 3 minutes.
-    
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook Web App mailbox policies" entry in the [Client Access Permissions](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic. 
-    
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
-    
-> [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
-  
-## Use the EAC to view or configure Outlook Web App mailbox policies
 
-1. In the EAC, click **Permissions** \> **Outlook Web App policies**.
-    
-2. In the result pane, click to select the mailbox policy you want to view or configure.
-    
-3. Click the **Edit** button. 
-    
-4. On the **General** tab, you can view and edit the name of the policy. 
-    
-5. On the **Features** tab, use the check boxes to enable or disable features. By default, the most common features are displayed. To see all features that can be enabled or disabled, click **More options**.
-    
-    > [!NOTE]
-    > Features settings for Outlook Web App mailbox policies override Outlook Web App virtual directory settings. You can change segmentation settings for individual users by using the **Set-CASMailbox** cmdlet in Exchange Online PowerShell. 
-  
-6. On the **File Access** tab, use the **Direct file access** check boxes to configure the file access and viewing options for users. File access lets a user open or view the contents of files attached to an email message. 
-    
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook on the web mailbox policies" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic. 
+
+- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
+
+> [!TIP]
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+
+## Use the EAC to view or configure Outlook on the web mailbox policies
+
+1. In the EAC, go to **Permissions** \> **Outlook Web App policies** and select the policy that you want to view or configure.
+
+2. The Details pane show the enabled features in the policy. To see more information, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the properties window that opens you can view and configure the following settings:
+
+  - On the **General** tab, you can view and edit the name of the policy.
+
+  - On the **Features** tab, use the check boxes to enable or disable features. By default, the most common features are displayed. To see all features that can be enabled or disabled, click **More options**.
+
+    **Note**: You can configure settings for individual users by using the **Set-CASMailbox** cmdlet in Exchange Online PowerShell.
+
+  - On the **File Access** tab, use the **Direct file access** check boxes to configure the file access and viewing options for users. File access lets a user open or view the contents of files attached to an email message.
+
     File access can be controlled based on whether a user has signed in on a public or private computer. The option for users to select private computer access or public computer access is available only when you're using forms-based authentication. All other forms of authentication default to private computer access.
-    
-7. On the **Offline access** tab, use the option buttons to configure offline access availability. 
-    
-8. Click **Save** to update the policy. 
-    
-## Use Exchange Online PowerShell to configure Outlook Web App mailbox policies
+
+  - On the **Offline access** tab, use the option buttons to configure offline access availability.
+
+3. When you're finished, click **Save** to update the policy.
+
+## Use Exchange Online PowerShell to modify Outlook on the web mailbox policies
+
+To modify an Outlook on the web mailbox policy, use the following syntax:
+
+```
+Set-OwaMailboxPolicy -Identity "<Policy Name>" [Settings]
+```
 
 This example enables calendar access in the default mailbox policy.
-  
+
 ```
 Set-OwaMailboxPolicy -Identity Default -CalendarEnabled $true
 ```
 
-For more information about syntax and parameters, see [Set-OwaMailboxPolicy](https://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx).
-  
-## Use Exchange Online PowerShell to view Outlook Web App mailbox policies
+For detailed syntax and parameter information, see [Set-OwaMailboxPolicy](https://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx).
 
-This example retrieves the properties of the Outlook Web App mailbox policy `Executives` in the organization `Fabrikam`.
-  
+## Use Exchange Online PowerShell to view Outlook on the web mailbox policies
+
+To view an Outlook on the web mailbox policy, use the following syntax:
+
 ```
-Get-OwaMailboxPolicy -Identity Fabrikam\Executives
+Get-OwaMailboxPolicy [-Identity "<Policy Name>"]
 ```
 
-For more information about syntax and parameters, see [Get-OwaMailboxPolicy](https://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx).
-  
+This example returns a summary list of all policies in the organization
+
+```
+Get-OwaMailboxPolicy | Format-Table Name
+```
+
+This example retrieves detailed information for the policy named Executives.
+
+```
+Get-OwaMailboxPolicy -Identity Executives
+```
+
+For detailed syntax and parameter information, see [Get-OwaMailboxPolicy](https://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx).
+
 ## How do you know this worked?
 
-To verify that you've successfully edited an Outlook Web App mailbox policy: 
-  
-1. In the EAC, click **Permissions** \> **Outlook Web App Policies**, and then choose a specific Outlook Web App mailbox policy. 
-    
-2. Click the **Edit** button to view the properties of the mailbox policy. 
-    
-3. Click **Save** or **Cancel** to close the properties page. 
-    
+To verify that you've successfully modified an Outlook on the web mailbox policy, do either of the following steps: 
 
+- In the EAC, click **Permissions** \> **Outlook Web App Policies**, select the policy, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png), and verify the properties of the policy.
+
+- In Exchange Online PowerShell, replace \<Policy Name\> with the name of the policy, and run the following command to verify the settings:
+
+    ```
+    Get-OwaMailboxPolicy -Identity "<Policy Name>"
+    ```
