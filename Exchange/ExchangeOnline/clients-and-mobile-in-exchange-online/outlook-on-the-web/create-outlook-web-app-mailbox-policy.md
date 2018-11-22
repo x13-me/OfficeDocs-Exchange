@@ -1,5 +1,5 @@
 ---
-title: "Create an Outlook on the web mailbox policy"
+title: "Create an Outlook on the web mailbox policy in Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
@@ -12,9 +12,9 @@ ms.assetid: 347207fa-cfb7-40a6-b19a-831dcdb54ad5
 description: "You can create an Outlook on the web mailbox policy to apply a common set of policy settings. Outlook on the web mailbox policies are useful for applying and standardizing settings, for example, attachment settings, for specific groups of users."
 ---
 
-# Create an Outlook on the web mailbox policy
+# Create an Outlook on the web mailbox policy in Exchange Online
 
-You can create an Outlook on the web mailbox policy to apply a common set of policy settings to Outlook on the web (formerly known as Outlook Web App). Outlook on the web mailbox policies are useful for applying and standardizing settings, for example, attachment settings, for specific groups of users.
+You can create Outlook on the web mailbox policies to apply settings to users in Outlook on the web (formerly known as Outlook Web App). Outlook on the web mailbox policies are useful for applying and standardizing settings, for example, attachment settings, for specific groups of users.
 
 For more information about Outlook on the web mailbox policies, see [Outlook Web App mailbox policies](outlook-web-app-mailbox-policies.md).
 

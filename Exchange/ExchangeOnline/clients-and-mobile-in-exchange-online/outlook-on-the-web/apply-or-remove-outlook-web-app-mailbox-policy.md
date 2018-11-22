@@ -12,7 +12,7 @@ ms.assetid: 51d8e269-b0d5-4bc7-9b3d-0460871e54fa
 description: "You can apply an Outlook on the web mailbox policy to one or more mailboxes or remove one using either the EAC or Exchange Online PowerShell."
 ---
 
-# Apply or remove an Outlook on the web mailbox policy on a mailbox
+# Apply or remove an Outlook on the web mailbox policy on a mailbox in Exchange Online
 
 Assigning an Outlook on the web mailbox policy to a mailbox controls the Outlook on the web (formerly known as Outlook Web App) experience for the user. You can apply Outlook on the web mailbox policies to one or more mailboxes or remove the policy assignments in the Exchange admin center (EAC) or Exchange Online PowerShell.
 
