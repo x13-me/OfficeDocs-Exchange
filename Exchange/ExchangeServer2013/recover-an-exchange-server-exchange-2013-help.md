@@ -50,6 +50,8 @@ Looking for other management tasks related to backing up and restoring data? Che
 
   - The server on which recovery is being performed should have the same performance characteristics and hardware configuration as the lost server.
 
+  - The _/Mode:RecoverServer_ switch assigns a self-signed certificate to all Exchange Services that require SSL/TLS. If the server previously used an SSL/TLS certificate that was issued by a different certification authority, you'll need to re-import the certificate and configure the services to use the certificate. Otherwise, users will get a certificate prompt when they try to connect (for example, in Outlook).
+
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
 
@@ -84,3 +86,34 @@ The successful completion of Setup will be the primary indicator that the recove
 
   - Open the Windows Services tool (services.msc) and verify that the Microsoft Exchange services have been installed and are running.
 
+### Possible issues with the Scripting Agent
+
+If you previously enabled the Scripting Agent in your Exchange organization, the recovery process might fail. The error will look like this:
+
+```
+"Initialization failed: '"Scripting Agent initialization failed: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'.""' ---> Microsoft.Exchange.Provisioning.ProvisioningException: "Scripting Agent initialization failed: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."" ---> System.IO.FileNotFoundException: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."
+```
+
+If you have other Exchange servers in your organization, you'11 need to:
+
+1. Disable the Scripting Agent in the Exchange Management Shell on an existing server:
+
+    ```
+    Disable-CmdletExtensionAgent -Identity "Scripting Agent"
+    ```
+
+2. Run Exchange Setup in recovery mode as described earlier in this topic.
+
+3. Enable the Scripting Agent in the Exchange Management Shell after the Exchange server recovery is complete: 
+
+    ```
+    Enable-CmdletExtensionAgent -Identity "Scripting Agent"
+    ```
+
+If the recovered Exchange server is the only Exchange server in your organization, you'll need to:
+
+1. Rename the file %ExchangeInstallPath%Bin\CmdletExtensionAgents\ScriptingAgentConfig.**xml.sample** to %ExchangeInstallPath%Bin\CmdletExtensionAgents\ScriptingAgentConfig.**xml**.
+
+    The default value of %ExchangeInstallationPath% is %ProgramFiles%\Microsoft\Exchange Server\V15\, but the actual value is wherever you installed Exchange on the server.
+
+2. Re-run Exchange Setup in recovery mode as described earlier in this topic.

@@ -136,7 +136,7 @@ Exchange setup includes the following modes:
   > [!NOTE]
   > Exchange doesn't support in-place upgrades from previous versions. This mode is used only to install CUs.
 
-- **RecoverServer**: You need to recover data from the Exchange server after a catastrophic failure. To do this, you install a new Windows server with the same FQDN as the failed server (for example, mailbox01.contoso.com), and then run Exchange Setup with the _/Mode:RecoverServer_ switch without specifiying the Exchange server roles to restore.
+- **RecoverServer**: You need to recover data from the Exchange server after a catastrophic failure. To do this, you install a new Windows server with the same FQDN as the failed server (for example, mailbox01.contoso.com), and then run Exchange Setup with the _/Mode:RecoverServer_ switch without specifying the Exchange server roles to restore.
 
     Setup detects the Exchange server object in Active Directory and installs the corresponding files and configuration automatically. After you recover the server, you can restore databases and reconfigure any additional settings. To run in **RecoverServer** mode:
 

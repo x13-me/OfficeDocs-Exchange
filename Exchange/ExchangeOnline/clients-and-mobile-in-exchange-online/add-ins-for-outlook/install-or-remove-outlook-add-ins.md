@@ -4,7 +4,7 @@ ms.author: dmaguire
 author: msdmaguire
 manager: laurawi
 ms.date: 2/3/2017
-ms.audience: End User
+ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 7/11/2018
-ms.audience: End User
+ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal

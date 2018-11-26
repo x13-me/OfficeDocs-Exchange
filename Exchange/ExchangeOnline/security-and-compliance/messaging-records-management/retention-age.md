@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: scotv
 ms.date: 7/27/2016
-ms.audience: End User
+ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
