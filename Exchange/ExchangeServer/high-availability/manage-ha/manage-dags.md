@@ -399,9 +399,9 @@ Set-MailboxServer -Identity EX1 -MaximumActiveDatabases 20
 
 Before performing any type of software or hardware maintenance on a DAG member, you should first put the DAG member in maintenance mode. The following scripts are provided with Exchange Server to assist with DAG maintenance procedures.
   
-- **StartDagServerMaintenanceScripts.ps1**: Assists with moving all active databases off the server. It also moves all critical DAG support functionality, such as the Primary Active Manager (PAM) role, and blocks them from moving back to the server before maintenance is complete.
+- **StartDagServerMaintenance.ps1**: Assists with moving all active databases off the server. It also moves all critical DAG support functionality, such as the Primary Active Manager (PAM) role, and blocks them from moving back to the server before maintenance is complete.
     
-- **StopDagServerMaintenanceScripts.ps1**: Assists with taking the DAG member out of maintenance mode, and making it an active target for all databases and all critical DAG support functionality.
+- **StopDagServerMaintenance.ps1**: Assists with taking the DAG member out of maintenance mode, and making it an active target for all databases and all critical DAG support functionality.
     
 Both of the above scripts accept the _ServerName_ parameter (which can be either the host name or the fully qualified domain name (FQDN) of the DAG member) and the _WhatIf_ parameter. Both scripts can be run locally or remotely. The server on which the scripts are executed must have the Windows Failover Cluster Management tools installed (RSAT-Clustering).
   
@@ -446,10 +446,10 @@ To begin maintenance procedures on a DAG member, including flushing the transpor
     CD $ExScripts
     ```
     
-5. To run the StartDagMaintenance.ps1 script, run the following command:
+5. To run the StartDagServerMaintenance.ps1 script, run the following command:
     
   ```
-  .\StartDagMaintenance.ps1 -ServerName <ServerName> -MoveComment Maintenance
+  .\StartDagServerMaintenance.ps1 -ServerName <ServerName> -MoveComment Maintenance
   ```
 
     For the value of the _MoveComment_ parameter, you can make any notation you want. The above example uses "Maintenance." 
@@ -517,10 +517,10 @@ When you're ready to restore the DAG member to full production status, including
   Set-ServerComponentState <ServerName> -Component UMCallRouter -State Active -Requester Maintenance
   ```
 
-3. To execute the StopDagMaintenance.ps1 script, run:
+3. To execute the StopDagServerMaintenance.ps1 script, run:
     
   ```
-  .\StopDagMaintenance.ps1 -serverName <ServerName> -MoveComment Maintenance
+  .\StopDagServerMaintenance.ps1 -serverName <ServerName> -MoveComment Maintenance
   ```
 
 4. To enable the transport queues to resume accepting and processing messages, run:
