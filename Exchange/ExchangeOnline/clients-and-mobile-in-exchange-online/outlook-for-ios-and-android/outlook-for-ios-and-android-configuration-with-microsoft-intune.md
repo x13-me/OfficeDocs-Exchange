@@ -4,7 +4,7 @@ ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
 manager: serdars
-ms.date: 9/21/2018
+ms.date: 11/26/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -26,6 +26,9 @@ Outlook for iOS and Android supports the following configuration scenarios:
 - Data protection settings
 
 Each configuration scenario will highlight its specific requirements; for example, whether the configuration scenario requires device enrollment, and thus work with any MDM provider, or requires Intune App Protection Policies.
+
+> [!IMPORTANT]
+> For configuration settings that require device enrollment, with Android, the devices must be enrolled via an Android Enterprise work profile and Outlook for Android must be deployed via the managed Google Play store. For more information, please see [Set up enrollment of Android work profile devices](https://docs.microsoft.com/intune/android-work-profile-enroll) and [Add app configuration policies for managed Android devices](https://docs.microsoft.com/intune/app-configuration-policies-use-android). 
  
 ## Account setup configuration settings
 Outlook for iOS and Android offers administrators the ability to "push" account configurations to their Office 365 users. This capability only works with enrolled devices, however, it is supported with any MDM provider. If you are not using Intune, you will need to consult with your MDM documentation on how to deploy these settings. 
@@ -39,7 +42,7 @@ For more information on account setup configuration, see [Account setup with mod
 |com.microsoft.outlook.EmailProfile.AccountType|This value specifies the account type being configured based on the authentication model.  <br/> **Value type**: String  <br/> **Accepted values**: ModernAuth  <br/> **Required**: Yes  <br/> **Example**: ModernAuth|Managed devices|
 
 ## Organization allowed accounts mode settings
-Outlook for iOS and Android offers administrators the ability to restrict email and storage provider accounts to only corporate accounts. This capability only works with enrolled devices, however, it is supported with any MDM provider. If you are not using Intune, you will need to consult with your MDM documentation on how to deploy these settings.
+Outlook for iOS and Android offers administrators the ability to restrict email and storage provider accounts to only corporate accounts. This capability only works with enrolled devices; however, it is supported with any MDM provider. If you are not using Intune, you will need to consult with your MDM documentation on how to deploy these settings.
 
 For more information on organization allowed accounts mode, please see [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#organization-allowed-accounts-mode).
 
