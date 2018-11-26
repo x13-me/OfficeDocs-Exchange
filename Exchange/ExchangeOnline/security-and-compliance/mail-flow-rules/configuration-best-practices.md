@@ -3,7 +3,7 @@ title: "Best practices for configuring mail flow rules"
 ms.author: chrisda
 author: chrisda
 ms.date: 6/23/2018
-ms.audience: End User
+ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal

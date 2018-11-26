@@ -15,7 +15,7 @@ description: "Summary: Learn how to recover a lost Exchange 2016 or Exchange 201
 
 # Recover Exchange servers
 
-You can recover a lost Exchange server by using the _Mode:RecoverServer_ switch in unattended mode (from the command line) of Exchange Setup. Since most Exchange server settings are stored in Active Directory, the `Setup.exe /Mode:RecoverServer` command uses that information during the installtion of Exchange on a new server with the same name.
+You can recover a lost Exchange server by using the _/Mode:RecoverServer_ switch in unattended mode (from the command line) of Exchange Setup. Since most Exchange server settings are stored in Active Directory, the `Setup.exe /Mode:RecoverServer` command uses that information during the installation of Exchange on a new server with the same name.
   
 Recovering a lost Exchange server is often accomplished by using new hardware. However, you can also use an existing server that doesn't already have Exchange installed on it.
   
@@ -41,14 +41,16 @@ Looking for other management tasks related to backing up and restoring data? Che
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange infrastructure permissions" section in the [Exchange infrastructure and PowerShell permissions](../../permissions/feature-permissions/infrastructure-permissions.md) topic.
     
-- You can recover a server using the latest avaialble Cumulative Update (CU). Only the last two CUs are available for download. For more information, see [Updates for Exchange Server](../../new-features/updates.md).
+- You can recover a server using the latest available Cumulative Update (CU). Only the last two CUs are available for download. For more information, see [Updates for Exchange Server](../../new-features/updates.md).
     
 - The target server must use the same version of Windows Server as the lost server. For example, you can't recover a lost Exchange 2016 server that was running Windows Server 2012 on a new server that's running Windows 2012 R2, or vice-versa.
 
 - The same disk drive letters that were used for mounted databases on the lost server must also exist on the target server.
     
 - The target server should have the same general performance characteristics and hardware configuration as the lost server.
-    
+
+- The _/Mode:RecoverServer_ switch assigns a self-signed certificate to all Exchange Services that require SSL/TLS. If the server previously used an SSL/TLS certificate that was issued by a different certification authority, you'll need to re-import the certificate and configure the services to use the certificate. Otherwise, users will get a certificate prompt when they try to connect (for example, in Outlook).
+ 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
 > [!TIP]
@@ -66,7 +68,7 @@ Looking for other management tasks related to backing up and restoring data? Che
 
 5. On the target server, open File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. Note the virtual DVD drive letter that's assigned.
   
-6. Opwn a Windows Command Prompt window. For example:
+6. Open a Windows Command Prompt window. For example:
 
     - Press the Windows key + 'R' to open the **Run** dialog, type cmd.exe, and then press **OK**.
 
@@ -77,10 +79,6 @@ Looking for other management tasks related to backing up and restoring data? Che
     ```
     <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:RecoverServer [/TargetDir:<Path>] [/DomainController:<ServerNameOrFQDN>] [/DoNotStartTransport] [/EnableErrorReporting]
     ```
-
-    For more information about the optional switches, see [Use unattended mode in Exchange Setup](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
-
-8. After Setup has completed, but before you put the recovered server into production, reconfigure any custom settings that were previously present on the server, and then restart the server.
 
     This example uses the Exchange installation files on drive E: to install Exchange in the default location (%ProgramFiles%\Microsoft\Exchange Server\V15) and recover the Exchange server.
 
@@ -94,6 +92,10 @@ Looking for other management tasks related to backing up and restoring data? Che
     E:\Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:RecoverServer /TargetDir:"D:\Program Files\Exchange"
     ```
 
+    For more information about the optional switches, see [Use unattended mode in Exchange Setup](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
+
+8. After Setup has completed, but before you put the recovered server into production, reconfigure any custom settings that were previously present on the server, and then restart the server.
+
 ## How do you know this worked?
 
 The successful completion of Setup will be the primary indicator that the recovery was successful. To further verify that you've successfully recovered a lost server, open the Windows Services tool (services.msc) and verify that the Microsoft Exchange services have been installed and are running.
@@ -103,28 +105,23 @@ The successful completion of Setup will be the primary indicator that the recove
 If you previously enabled the Scripting Agent in your Exchange organization, the recovery process might fail. The error will look like this:
 
 ```
-"Initialization failed: '"Scripting Agent initialization failed: "File is not found: 'C:\Program File
-s\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'.""' ---> Microso
-ft.Exchange.Provisioning.ProvisioningException: "Scripting Agent initialization failed: "File is not
- found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConf
-ig.xml'."" ---> System.IO.FileNotFoundException: "File is not found: 'C:\Program Files\Microsoft\Exc
-hange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."
+"Initialization failed: '"Scripting Agent initialization failed: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'.""' ---> Microsoft.Exchange.Provisioning.ProvisioningException: "Scripting Agent initialization failed: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."" ---> System.IO.FileNotFoundException: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."
 ```
 
 If you have other Exchange servers in your organization, you'11 need to:
 
-1. Disable the Scripting Agent in the Exchange Management Shell:
+1. Disable the Scripting Agent in the Exchange Management Shell on an existing server:
 
     ```
     Disable-CmdletExtensionAgent -Identity "Scripting Agent"
     ```
 
-2. Run Exchange Setup in recovery mode as described earlier in the topic.
+2. Run Exchange Setup in recovery mode as described earlier in this topic.
 
 3. Enable the Scripting Agent in the Exchange Management Shell after the Exchange server recovery is complete: 
 
     ```
-    Ensable-CmdletExtensionAgent -Identity "Scripting Agent"
+    Enable-CmdletExtensionAgent -Identity "Scripting Agent"
     ```
 
 If the recovered Exchange server is the only Exchange server in your organization, you'll need to:
@@ -133,4 +130,4 @@ If the recovered Exchange server is the only Exchange server in your organizatio
 
     The default value of %ExchangeInstallationPath% is %ProgramFiles%\Microsoft\Exchange Server\V15\, but the actual value is wherever you installed Exchange on the server.
 
-2. Re-run Exchange Setup in recovery mode as described earlier in the topic.
+2. Re-run Exchange Setup in recovery mode as described earlier in this topic.

@@ -4,7 +4,7 @@ ms.author: laurawi
 author: LauraWi
 manager: laurawi
 ms.date: 10/19/2016
-ms.audience: End User
+ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
