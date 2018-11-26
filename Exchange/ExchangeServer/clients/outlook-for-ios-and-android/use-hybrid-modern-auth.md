@@ -203,7 +203,7 @@ In addition to the above minimum policy requirements, you should consider deploy
   ```
 
 > [!NOTE]
->Device management through the on-premises Exchange admin center is not possible. Intune is required to manage mobile devices.
+> Device management through the on-premises Exchange admin center is not possible. Intune is required to manage mobile devices.
     
 3. Create an Exchange on-premises device access rule that prevents users from connecting to the on-premises environment with Outlook for iOS and Android with basic authentication over the Exchange ActiveSync protocol:
     
@@ -212,7 +212,7 @@ In addition to the above minimum policy requirements, you should consider deploy
   ```
 
 > [!NOTE]
-> Once this rule is created, users who are using Outlook for iOS and Android with Basic authentication will be blocked.
+> Once this rule is created, Outlook for iOS and Android with Basic authentication users will be blocked.
   
 3. Ensure your on-premises Exchange ActiveSync maxRequestLength is configured to match your transport configuration's MaxSendSize/MaxReceiveSize:
     
