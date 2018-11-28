@@ -1,8 +1,8 @@
 ---
 title: "Find and fix email delivery issues as an Office 365 for business admin"
-ms.author: scotv
-author: scotvidican
-manager: scotv
+ms.author: chrisda
+author: chrisda
+manager: serdars
 ms.audience: Admin
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 ms.assetid: e7758b99-1896-41db-bf39-51e2dba21de6
 
-description: "Office 365 for business offers several automated tools to help admins troubleshoot and fix email delivery issues in Outlook and Exchange Online. Watch our videos to learn about how to use Message trace, Support and Recovery Assistant, and service health dashboard, and the mail flow troubleshooter."
+description: "Admins can learn how to fix email delivery issues in Exchange Online."
 ---
 
 # Find and fix email delivery issues as an Office 365 for business admin
@@ -42,7 +42,7 @@ If a single user in your organization is having trouble receiving email, it coul
   
 |||
 |:-----|:-----|
-|[![Get started](../../media/8226d576-eac7-40df-89cb-28c1634067c5.png)](https://diagnostics.office.com/#/Download/?env=SOC)|**Let us fix your issue**         [Download Support and Recovery Assistant for Office 365](https://diagnostics.office.com/#/Download/?env=SOC)|
+|[![Get started](../../media/8226d576-eac7-40df-89cb-28c1634067c5.png)](https://diagnostics.office.com/#/Download/?env=SOC)|**Let us fix your issue** [Download Support and Recovery Assistant for Office 365](https://diagnostics.office.com/#/Download/?env=SOC)|
    
 Watch the following video for more information about how to use the Support and Recovery Assistant app.
   
@@ -73,37 +73,8 @@ The service health page lists the status of Office 365 services and indicates if
 3. Under **Service health**, go to **View the service health**.
     
     ![Screenshot showing the View the service health option selected in the Office 365 admin center](../../media/9a865800-f56a-4c1d-a5cb-adfcb3b4902e.png)
-
   
 If there is an indication that ExchangeOnline service is degraded, email delivery might be delayed for your organization, and CompanyName service engineers are already working to restore service. Check the service health page for progress updates. In this case, you don't need to open a service request because CompanyName is already working to resolve the issue.
-  
-### Use the mail flow troubleshooter to find missing email from the past week - 10 minutes
-
-The mail flow troubleshooter is a simplified version of message trace that also checks for problems with your organization's domain settings. The tool can search for messages sent to or from your organization in the past week.
-  
-1. [Go to the mail flow troubleshooter.](https://go.microsoft.com/fwlink/p/?LinkId=786903)
-    
-2. Sign in with a global admin account for your organization.
-    
-3. Choose **Next**.
-    
-    ![Screenshot of the beginning of the mail flow troubleshooter with the Next button selected.](../../media/2d57820f-f7bc-4d46-830a-8b25c5d32931.png)
-  
-4. Choose one of the symptoms from the list.
-    
-5. Add the email addresses of the sender and recipient of the missing message. If you know part or all of the subject line, you can add that too, but it's not required.
-    
-6. Select the date the message was sent.
-    
-    ![Screenshot of the input area of the mail flow troubleshooter. Admins are required to pick a symptom and add a sender and recipient email address before choosing Next to start the troubleshooter.](../../media/4e7981e9-e3b1-4850-a9e2-229b77755a23.png)
-  
-7. Choose **Next**.
-    
-8. The mail flow troubleshooter runs a series of tests and returns a result. If the troubleshooter found the missing message, the results page explains what happened and how you can fix the issue.
-    
-    ![Screenshot showing an example of the results of the mail flow troubleshooter.](../../media/6a88dfdc-c114-449a-8fe0-a95ce7707f98.png)
-  
-If the mail flow troubleshooter wasn't able to find your missing message, use message trace for more powerful search options.
   
 ### Use message trace for in-depth email delivery troubleshooting - 15 minutes
 
