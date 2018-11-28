@@ -72,8 +72,9 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
-> [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> [!IMPORTANT]
+> Before you begin your migration, make sure you migrate your arbitration mailbox to the target Exchange server. Otherwise, your migration batch will hang in the **Starting** state. To identify your migration arbitration mailbox, run the following cmdlet:<br/>
+`((get-mailbox -Arbitration -Identity Migration.*).servername -eq (hostname))`
   
 ## Step 1: Download the migration scripts
 <a name="Scripts"> </a>
