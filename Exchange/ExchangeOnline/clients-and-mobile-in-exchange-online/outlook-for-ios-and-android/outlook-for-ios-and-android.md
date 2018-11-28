@@ -48,10 +48,12 @@ Beginning in December 2018, Microsoft will migrate customers to a native Microso
 
 The native Microsoft sync technology offers several benefits:
 
-1. **Latency reduction**: By replacing the propietary Outlook device API and Stateless Protocol Translator, there is a reduction in end-to-end latency between the client and Office 365.
+1. **Eliminates middle tier services**: Data synchronization with the native Microsoft sync technology occurs between the app and Office 365, eliminating the need for any middle tier services.
 
-2. **Additional Office 365 instance support**: Removing the intermediary Stateless Protocol Translator for data connections enables Microsoft to support other unique Office 365 instances, like Office 365 Government Community Cloud High and Office 365 Department of Defense, that were previously blocked from using Outlook for iOS and Android.
+2. **Latency reduction**: By replacing the propietary Outlook device API and Stateless Protocol Translator, there is a reduction in end-to-end latency between the app and Office 365.
 
-5. **Protocol consolidation**: Today, each Outlook client platform utilizes a different data sync protocol, which hinders the ability to innovate and deploy new features quickly across all Outlook clients. The native Microsoft sync technology that Outlook for iOS and Android is adopting has been in use by the native Windows 10 mail client for a number of years, and in the future, will be used by Outlook for Mac.
+3. **Additional Office 365 instance support**: Removing the intermediary Stateless Protocol Translator for data connections enables Microsoft to support other unique Office 365 instances, like Office 365 Government Community Cloud High and Office 365 Department of Defense, that were previously blocked from using Outlook for iOS and Android.
 
-4. **Unlocking new features**: The native Microsoft sync technology will enable Outlook for iOS and Android to take advantage of native Office 365 features it does not support today, such as S/MIME, Microsoft Information Protection labeling, and shared mailboxes. These and more Office 365 features will roll out soon after the architecture update.
+4. **Protocol consolidation**: Today, each Outlook client platform utilizes a different data sync protocol, which hinders the ability to innovate and deploy new features quickly across all Outlook clients. The native Microsoft sync technology that Outlook for iOS and Android is adopting has been in use by the native Windows 10 mail client for a number of years, and in the future, will be used by Outlook for Mac.
+
+5. **Unlocking new features**: The native Microsoft sync technology will enable Outlook for iOS and Android to take advantage of native Office 365 features it does not support today, such as S/MIME, Microsoft Information Protection labeling, and shared mailboxes. These and more Office 365 features will roll out soon after the architecture update.

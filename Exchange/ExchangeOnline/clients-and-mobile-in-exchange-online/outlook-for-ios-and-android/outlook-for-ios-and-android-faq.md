@@ -259,4 +259,6 @@ If you do not have organization chart data exposed in the app, consult with your
 
 Outlook for iOS and Android synchronizes 500 items per folder, with up to 1000 items per folder if the user taps **Load more conversations**. The app periodically trims the items per folder down to 500, in order to ensure optimal app performance.
   
+### Q: Why are tasks and notes not available with Outlook for iOS and Android?
 
+Microsoft's strategic direction for task management and note taking on mobile devices is the To-Do and OneNote apps, respectively. To-Do provides integration with the tasks stored in Exchange Online mailboxes.

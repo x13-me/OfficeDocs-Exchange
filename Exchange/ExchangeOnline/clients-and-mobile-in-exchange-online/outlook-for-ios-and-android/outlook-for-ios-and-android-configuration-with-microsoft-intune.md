@@ -28,7 +28,7 @@ Outlook for iOS and Android supports the following configuration scenarios:
 Each configuration scenario will highlight its specific requirements; for example, whether the configuration scenario requires device enrollment, and thus work with any MDM provider, or requires Intune App Protection Policies.
 
 > [!IMPORTANT]
-> For configuration settings that require device enrollment, with Android, the devices must be enrolled via an Android Enterprise work profile and Outlook for Android must be deployed via the managed Google Play store. For more information, please see [Set up enrollment of Android work profile devices](https://docs.microsoft.com/intune/android-work-profile-enroll) and [Add app configuration policies for managed Android devices](https://docs.microsoft.com/intune/app-configuration-policies-use-android). 
+> For configuration settings that require device enrollment, with Android the devices must be enrolled via an Android Enterprise work profile and Outlook for Android must be deployed via the managed Google Play store. For more information, please see [Set up enrollment of Android work profile devices](https://docs.microsoft.com/intune/android-work-profile-enroll) and [Add app configuration policies for managed Android devices](https://docs.microsoft.com/intune/app-configuration-policies-use-android). 
  
 ## Account setup configuration settings
 Outlook for iOS and Android offers administrators the ability to "push" account configurations to their Office 365 users. This capability only works with enrolled devices, however, it is supported with any MDM provider. If you are not using Intune, you will need to consult with your MDM documentation on how to deploy these settings. 
@@ -139,7 +139,7 @@ If you are using Microsoft Intune as your mobile device management provider, the
 8. For **Associated app**, choose **Select the required app**, and then, on the **Targeted apps** blade, choose **Outlook**. If you specified, **Managed apps**, select both the iOS and Android platform Outlook apps. 
     
     > [!NOTE]
-    > If Outlook is not listed as an available app, then you must add it by following the instructions in [Add Android store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-android) and [Add iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios). 
+    > If Outlook is not listed as an available app, then you must add it by following the instructions in [Assign apps to Android work profile devices with Intune](https://docs.microsoft.com/intune/apps-add-android-for-work) and [Add iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios). 
   
 9. Click **OK** to return to the **Add app configuration** blade. 
     
