@@ -42,7 +42,7 @@ Update-PublicFolderMailbox -Identity PF_marketing -InvokeSynchronizer -SuppressS
 This example updates all public folder mailboxes and suppresses the command's output.
   
 ```
-Get-Mailbox -PublicFolder | Update-PublicFolderMailbox InvokeSynchronizer -SuppressStatus
+Get-Mailbox -PublicFolder | Update-PublicFolderMailbox -InvokeSynchronizer -SuppressStatus
 ```
 
 
