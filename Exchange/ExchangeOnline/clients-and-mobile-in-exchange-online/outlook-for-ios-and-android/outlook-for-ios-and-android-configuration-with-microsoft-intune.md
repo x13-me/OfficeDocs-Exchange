@@ -152,7 +152,7 @@ If you are using Microsoft Intune as your mobile device management provider, the
 The newly created configuration will be displayed on the **App configuration** blade. 
 
 >[!NOTE]
-> If you selected **Managed devices**, you will need to create a separate app configuration policy for each platform.
+> If you selected **Managed devices**, you will need to create a separate app configuration policy for each platform. Also, Outlook will need to be installed from the Company Portal in order for the configuration settings to take effect.
   
 ### Assign the configuration settings that you created
 
