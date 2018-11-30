@@ -3,7 +3,7 @@ title: "Procedures for address book policies in Exchange Server"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 7/6/2018
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -31,7 +31,6 @@ Address book policies (ABPs) allow you to segment users into specific groups to 
 - Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use the Exchange Management Shell to view address book policies
-<a name="ViewABP"> </a>
 
 To view ABPs, use this syntax:
 
@@ -54,7 +53,6 @@ Get-AddressBookPolicy -Identity "All Fabrikam ABP" | Format-List
 For detailed syntax and parameter information, see [Get-AddressBookPolicy](http://technet.microsoft.com/library/a5ec362f-a941-454f-ba93-cecada3411db.aspx).
 
 ## Use the Exchange Management Shell to create address book policies
-<a name="CreateABP"> </a>
 
 An ABP requires one global address list (GAL), one offline address book (OAB), one room list, and one or more address lists. To view the available objects, use the **Get-GlobalAddressList**, **Get-OfflineAddressBook**, and **Get-AddressList** cmdlets.
 
@@ -95,11 +93,10 @@ To verify that you've successfully created an ABP, use either of these procedure
 - Replace _\<ABPIdentity\>_ with the name of the ABP, and run this command in the Exchange Management Shell to verify the property values: 
 
   ```
-  Get-AddressBookPolicy -Identity "<ABPIdenity>" | Format-List
+  Get-AddressBookPolicy -Identity "<ABPIdentity>" | Format-List
   ```
 
 ## Use the Exchange Management Shell to modify address book policies
-<a name="ModifyABP"> </a>
 
 You use the **Set-AddressBookPolicy** cmdlet to modify an existing ABP. The settings are identical to the settings that are available when you create an ABP.
 
@@ -142,11 +139,10 @@ For detailed syntax and parameter information, see [Set-AddressBookPolicy](http:
 To verify that you've successfully modify an ABP, replace _\<ABPIdentity\>_ with the name of the ABP, and run this command in the Exchange Management Shell to verify the property values: 
 
 ```
-Get-AddressBookPolicy -Identity "<ABPIdenity>" | Format-List
+Get-AddressBookPolicy -Identity "<ABPIdentity>" | Format-List
 ```
 
 ## Use the Exchange Management Shell to remove address book policies
-<a name="RemoveABP"> </a>
 
 - You can't remove an ABP if it's assigned to a mailbox. To see if an ABP is assigned to a mailbox, replace _\<ABPIdentity\>_ with the name of the ABP, and run this command in the Exchange Management Shell to get the **DistinguishedName** value: 
 
@@ -156,7 +152,7 @@ Get-AddressBookPolicy -Identity "<ABPIdenity>" | Format-List
 
      `Get-Mailbox -ResultSize unlimited -Filter {AddressBookPolicy -eq '<DistinguishedName>'}`
 
-- To remove ABP assignments from mailboxes, see the [Assign address book policies to mailboxes](abp-procedures.md#AssignABP) section in this topic.
+- To remove ABP assignments from mailboxes, see the [Assign address book policies to mailboxes](#assign-address-book-policies-to-mailboxes) section in this topic.
 
 To remove an ABP, use this syntax:
 
@@ -185,11 +181,10 @@ To verify that you've successfully removed an ABP, use either of these procedure
 - Replace _\<ABPIdentity\>_ with the name of the ABP, and run this command to confirm that an error is returned: 
 
   ```
-  Get-AddressBookPolicy -Identity "<ABPIdenity>"
+  Get-AddressBookPolicy -Identity "<ABPIdentity>"
   ```
 
 ## Assign address book policies to mailboxes
-<a name="AssignABP"> </a>
 
 - Users aren't automatically assigned an ABP when you create mailboxes. If you don't assign an ABP to a mailbox, the GAL for your entire organization is visible to the user in Outlook and Outlook on the web.
 
@@ -248,17 +243,17 @@ For detailed syntax and parameter information, see [Set-Mailbox](http://technet.
 
 2. In the list of mailboxes, find the mailboxes that you want to modify. For example:
 
-1. Click **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search**.
+  1. Click **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search**.
 
-2. In the **Advanced search** window that opens, select **Recipient types** and verify the default value **User mailbox**.
+  2. In the **Advanced search** window that opens, select **Recipient types** and verify the default value **User mailbox**.
 
-3. Click **More options**, and then click **Add a condition**.
+  3. Click **More options**, and then click **Add a condition**.
 
-4. In the **Select one** drop-down box that appears, select the appropriate **Custom attribute 1** to **Custom attribute 15** values that defines your virtual organizations.
+  4. In the **Select one** drop-down box that appears, select the appropriate **Custom attribute 1** to **Custom attribute 15** values that defines your virtual organizations.
 
-5. In the **Specify words or phrases** dialog that appears, enter the value that you want to search for, and then click **OK**.
+  5. In the **Specify words or phrases** dialog that appears, enter the value that you want to search for, and then click **OK**.
 
-6. Back on the **Advanced search** window, click **OK**. ![In the EAC at Recipients \> Mailboxes, click More Options \> Advanced search to find user mailboxes](../../media/b4677167-ffb1-4224-b7e8-db4e11d61072.png)
+  6. Back on the **Advanced search** window, click **OK**. In the EAC at **Recipients** \> **Mailboxes**, click **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find user mailboxes.
 
 3. In the list of mailboxes, select multiple mailboxes of the same type (for example, **User**) from the list. For example:
 
@@ -334,7 +329,6 @@ To verify that you've successfully assigned an ABP to a mailbox, do any of these
   ```
 
 ## Use the Exchange Management Shell to install and configure the Address Book Policy Routing Agent
-<a name="InstallABPRouting"> </a>
 
 Address Book Policy routing (ABP routing) controls how recipients are resolved in organizations that use ABPs. When ABP routing is enabled, users that are assigned different GALs appear as external recipients to each other.
 
@@ -421,5 +415,3 @@ To verify that you've successfully installed and configured the ABP Routing Agen
   ```
 
 - Have a user that's assigned an ABP send an email message to an user that's assigned a different ABP, and verify that the sender's email address doesn't resolve to their display name.
-
-

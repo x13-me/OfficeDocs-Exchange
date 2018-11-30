@@ -247,13 +247,13 @@ Invoke-Item addresses.csv
 ##### END OF SHOWPROXIES.PS1
 ```
 
-### Bulk Create Room Mailboxes in Office 365
+### Bulk Create es in Office 365
 
 ```
 ################################################################################
 #  Script: create-rooms.ps1
 #  Description:*** RUN THIS SCRIPT FROM A WINDOWS POWERSHELL SESSION ***
-#This script creates Room mailboxes in Office 365.
+#This script creates es in Office 365.
 # Syntax:Create-Rooms.ps1 -inputfile "file name.csv"
 #
 # Dependencies: Input file should contain 3 columns: RoomName, RoomSMTPAddress, RoomCapacity
