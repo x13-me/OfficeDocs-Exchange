@@ -180,7 +180,7 @@
 #### [Address book policy procedures](../address-books/address-book-policies/address-book-policy-procedures.md)
 ##### [Turn on address book policy routing](../address-books/address-book-policies/turn-on-address-book-policy-routing.md)
 ##### [Create an address book policy](../address-books/address-book-policies/create-an-address-book-policy.md)
-##### [Assign an address book policy to mail users](../address-books/address-book-policies/assign-an-address-book-policy-to-mail-users.md)
+##### [Assign an address book policy to users](../address-books/address-book-policies/assign-an-address-book-policy-to-mail-users.md)
 ##### [Change the settings of an address book policy](../address-books/address-book-policies/change-the-settings-of-an-address-book-policy.md)
 ##### [Remove an address book policy](../address-books/address-book-policies/remove-an-address-book-policy.md)
 ### [Address lists](../address-books/address-lists/address-lists.md)

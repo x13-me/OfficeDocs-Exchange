@@ -72,8 +72,9 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
-> [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> [!IMPORTANT]
+> Before you begin your migration, make sure you migrate your arbitration mailbox to the target Exchange server. Otherwise, your migration batch will hang in the **Starting** state. To identify your migration arbitration mailbox, run the following cmdlet:<br/>
+`((get-mailbox -Arbitration -Identity Migration.*).servername -eq (hostname))`
   
 ## Step 1: Download the migration scripts
 <a name="Scripts"> </a>
@@ -337,8 +338,6 @@ On the Exchange 2010 server, run the following command to lock the public folder
 Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 ```
 
-> [!NOTE]
-> If for any reason the migration batch file does not finalize (the _PublicFolderMigrationComplete_ property value is `False`) restart the Information Store (IS) on the Exchange 2010 server.
   
 For detailed syntax and parameter information, see [Set-OrganizationConfig](http://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx).
   
@@ -363,6 +362,9 @@ Complete-MigrationBatch PublicFolderMigration
 Or, in EAC, you can complete the migration by clicking **Complete this migration batch**.
   
 When you complete the migration, Exchange will perform a final synchronization between the Exchange 2010 server and Exchange 2016. If the final synchronization is successful, the public folders on the Exchange 2016 server will be unlocked and the status of the migration batch will change to **Completing**, and then **Completed**. It is common for the migration batch to take a few hours before its status changes from **Synced** to **Completing**, at which point the final synchronization will begin.
+
+> [!NOTE]
+> If for any reason the migration batch file does not finalize (the _PublicFolderMigrationComplete_ property value is `False`) restart the Information Store (IS) on the Exchange 2010 server.
   
 ## Step 8: Test and unlock the public folder migration
 <a name="TestNUnlock"> </a>
