@@ -21,7 +21,7 @@ When you install an Exchange server, the Exchange management tools are automatic
   
 - **Exchange admin center** The EAC is a web-based management console that allows for ease of use and is optimized for on-premises, online, or hybrid Exchange deployments. The EAC replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP), which were the interfaces used to manage Exchange Server 2010. 
     
-- **Exchange Management Shell** The Exchange Management Shell is a Windows PowerShell-based command-line interface. 
+- **Exchange Management Shell** The Exchange Management Shell is a Windows PowerShell-based command line interface. 
     
 ## The Exchange admin center
 
