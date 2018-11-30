@@ -9,14 +9,14 @@ ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
-description: "Summary: Learn how to use address book policies (ABP) to create separate virtual organizations with a segmented global address list in Exchange Server."
+description: "Summary: Learn how to use address book policies (ABPs) to create separate virtual organizations with a segmented global address list in Exchange Server."
 ---
 
 # Address book policies in Exchange Server
 
 Address book policies (ABPs) lets administrators segment users into specific groups to provide customized views of the organization's global address list (GAL). The goal of an ABP is to provide a simpler mechanism for GAL segmentation (also known as *GAL segregation*) in on-premises organizations that require multiple GALs.
 
- An ABP contains these elements: 
+An ABP contains these elements: 
 
 - One GAL. For more information about GALs, see [Global address lists](../address-lists/address-lists.md#global-address-lists).
 
@@ -62,11 +62,11 @@ In the following diagram, Fabrikam and Tailspin Toys share the same Exchange org
 
 The suggested configuration includes three ABPs:
 
-- One ABP is assigned to Fabrikam employees and the CEO.
+- One ABP is assigned to Fabrikam employees. The GAL and address lists in the ABP include Fabrikam employees and the CEO.
 
-- One ABP is assigned to Tailspin Toys employees and the CEO.
+- One ABP is assigned to Tailspin Toys employees. The GAL and address lists in the ABP include Tailspin Toys employees and the CEO.
 
-- One ABP is assigned to only the CEO.
+- One ABP is assigned to only the CEO. The (default) GAL and address lists in the ABP include all employees (Fabrikam, Tailspin Toys, and the CEO).
 
 Based on this configuration, the ABPs help to enforce these requirements:
 
@@ -80,4 +80,4 @@ Based on this configuration, the ABPs help to enforce these requirements:
 
 ## ABPs for Entourage and Outlook for Mac users
 
-ABPs won't function for Entourage and Outlook for Mac users who connect to their mailboxes from inside the corporate network, because Entourage and Outlook for Mac connect directly to global catalog server to query Active Directory (which bypasses the ABPs). However, Entourage and Outlook for Mac clients that connect to their mailboxes from outside the corporate networks can use an OAB or Exchange Web Services (EWS), which allows them to search the GAL based on the assigned ABP. To learn more about administering Outlook for Mac 2011, see [Planning for Outlook for Mac 2011](https://go.microsoft.com/fwlink/p/?LinkId=231878).
+ABPs won't function for Entourage and Outlook for Mac users who connect to their mailboxes from inside the corporate network, because Entourage and Outlook for Mac connect directly to a global catalog server to query Active Directory (which bypasses the ABPs). However, Entourage and Outlook for Mac clients that connect to their mailboxes from outside the corporate networks can use an OAB or Exchange Web Services (EWS), which allows them to search the GAL based on the assigned ABP. To learn more about administering Outlook for Mac 2011, see [Planning for Outlook for Mac 2011](https://go.microsoft.com/fwlink/p/?LinkId=231878).

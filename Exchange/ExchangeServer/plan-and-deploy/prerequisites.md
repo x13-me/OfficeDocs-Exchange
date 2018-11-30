@@ -3,7 +3,7 @@ title: "Exchange Server prerequisites"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 7/19/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: conceptual
 ms.prod: exchange-server-it-pro
@@ -19,12 +19,14 @@ monikerRange: "exchserver-2016 || exchserver-2019"
 > [!TIP]
 > Looking for Exchange 2013 prerequisites? See [Exchange 2013 prerequisites](https://technet.microsoft.com/library/bb691354(v=exchg.150).aspx).
 
-This topic provides the steps for installing the necessary Windows Server operating system prerequisites for Exchange Server 2016 and Exchange Server 2019 Mailbox servers and Edge Transport servers, and also the Windows prequisites for installing the Exchange Management Tools on Windows client computers.
+This topic provides the steps for installing the necessary Windows Server operating system prerequisites for Exchange Server 2016 and Exchange Server 2019 Mailbox servers and Edge Transport servers, and also the Windows prerequisites for installing the Exchange Management Tools on Windows client computers.
 
 After you've prepared your environment for Exchange Server, use the Exchange Deployment Assistant for the next steps in your actual deployment. For information on hybrid deployments, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581(v=exchg.150).aspx).
 
 > [!TIP]
 > Have you heard about the Exchange Server Deployment Assistant? It's a free online tool that helps you quickly deploy Exchange Server in your organization by asking you a few questions and creating a customized deployment checklist just for you. If you want to learn more about it, go to [Microsoft Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/p/?linkid=626978).
+
+To actually install Exchange 2016 and Exchange 2019, see [Deploy new installations of Exchange](deploy-new-installations/deploy-new-installations.md).
 
 ## What do you need to know before you begin?
 

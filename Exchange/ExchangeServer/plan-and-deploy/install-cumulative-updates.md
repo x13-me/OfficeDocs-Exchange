@@ -3,7 +3,7 @@ title: "Upgrade Exchange to the latest Cumulative Update"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 9/20/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: exchange-server-it-pro
@@ -23,6 +23,8 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 60 minutes
+
+- The account that you'll use to install the CU requires membership in the Exchange Organization Management role group. If the CU requires Active Directory schema updates or domain preparation, the account will likely require additional permissions. For more information, see [Prepare Active Directory and domains for Exchange Server](prepare-ad-and-domains.md).
 
 - Check the [Release notes](../release-notes.md) before you install the CU.
 
