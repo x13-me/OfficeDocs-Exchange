@@ -1,9 +1,9 @@
 ---
 title: "Use unattended mode in Exchange Setup"
-ms.author: dstrome
-author: dstrome
+ms.author: chrisda
+author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: exchange-server-it-pro
@@ -46,7 +46,7 @@ The optional (supporting) command line switches that are available in unattended
 |_/AdamLdapPort:\<TCPPortNumber\>_|A valid TCP port number|50389|`/Mode:Install /Roles:EdgeTransport` commands|Specifies a custom LDAP port to use for the Active Directory Lightweight Directory Services (AD LDS) instance on Edge Transport servers. The value is stored in the registry at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\EdgeTransportRole\AdamSettings\MSExchange\LdapPort`.|
 |_/AdamSslPort:\<TCPPortNumber\>_|A valid TCP port number|50636|`/Mode:Install /Roles:EdgeTransport` commands|Specifies a custom SSL (TLS) port to use for the AD LDS instance on Edge Transport servers. The value is stored in the registry at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\EdgeTransportRole\AdamSettings\MSExchange\SslPort`.|
 |_AnswerFile:"\<PathAndFileName\>"_ <br/> (_af:"\<PathAndFileName\>"_)|The name and location of a text file (for example,"D:\Server data\answer.txt").|n/a|`/Mode:Install /Roles:Mailbox`  or `/Mode:Install /Roles:EdgeTransport` commands|Use this switch to create a text file that you can use to install Exchange on multiple computers with the same settings. You can use the following switches in the answer file: _AdamLdapPort_, _AdamSslPort_, _CustomerFeedbackEnabled_, _DbFilePath_, _DisableAMFiltering_, _DoNotStartTransport_, _EnableErrorReporting_, _IAcceptExchangeServerLicenseTerms_, _LogFolderPath_, _Mdbname_, _OrganizationName_, _TenantOrganizationConfig_, and _UpdatesDir_. Don't use the forward slash character ( / ) with the switches in the answer file. Put each switch or switch/value pair on one line in the file.|
-|_/CustomerFeedbackEnbled:\<TrueOrFalse\>_|True or False|False|`/Mode:Install` and _/PrepareAD_ commands|Specifies whether to allow or prevent Exchange from providing usage feedback to Micrsoft to help improve future Exchange features. You can enable or disable error reporting on the server after setup is complete by using the _ErrorReportingEnabled_ parameter on the **Set-ExchangeServer** cmdlet.|
+|_/CustomerFeedbackEnabled:\<TrueOrFalse\>_|True or False|False|`/Mode:Install` and _/PrepareAD_ commands|Specifies whether to allow or prevent Exchange from providing usage feedback to Microsoft to help improve future Exchange features. You can enable or disable error reporting on the server after setup is complete by using the _ErrorReportingEnabled_ parameter on the **Set-ExchangeServer** cmdlet.|
 |_/DbFilePath:"\<Path\>"_|A folder path (for example, "D:\Exchange Database Files\DB01").|**%ExchangeInstallPath%Mailbox\\<DatabaseName\>** where: <br/>• \<DatabaseName> is **Mailbox Database \<10DigitNumber\>** that matches the default name of the database **or** the the value you specified with the _/MdbName_ switch (without the .edb file name extension). <br/>• %ExchangeInstallPath% is **%ProgramFiles%\Microsoft\Exchange Server\V15\\** or the location you specified with the _/TargetDir_ switch.|`/Mode:Install /Roles:Mailbox` commands|Specifies the location of the first mailbox database that's created on the new Mailbox server. You can specify the name of the database file with the _/MdbName_ switch and the location of the database transaction log files with the _/LogFolderPath_ switch.|
 |_/DisableAMFiltering_|n/a|n/a|`/Mode:Install /Roles:Mailbox` commands|Disables the built-in Exchange antimalware filtering on Mailbox servers. For more information about antimalware filtering, see [Antimalware protection in Exchange Server](../../antispam-and-antimalware/antimalware-protection/antimalware-protection.md).|
 |_/DomainController:\<ServerNameOrFQDN\>_ <br/> (_/dc:\<ServerNameOrFQDN\>_)|The server name (for example, DC01) or FQDN (for example, dc01.contoso.com) of the domain controller.|A randomly-selected domain controller in the same Active Directory site as the target server where you're running Setup.|All _/Mode_ commands (except when you're installing an Edge Transport server) or _/PrepareAD_, _/PrepareSchema_, _/PrepareDomain_ and _/PrepareAllDomains_ commands|Specifies the domain controller that Exchange Setup uses to read from and write to Active Directory. The domain controller must meet the minimum requirements for [Exchange](../system-requirements.md#network-and-directory-servers). <br/> If you use this switch in _/PrepareSchema_ or _/PrepareAD_ commands that extend the Active Directory schema for Exchange, you must specify the schema master; otherwise, you'll get an error.|
@@ -106,7 +106,7 @@ The optional (supporting) command line switches that are available in unattended
 
 1. On the target server, open File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. Note the virtual DVD drive letter that's assigned.
   
-2. Opwn a Windows Command Prompt window. For example:
+2. Open a Windows Command Prompt window. For example:
 
     - Press the Windows key + 'R' to open the **Run** dialog, type cmd.exe, and then press **OK**.
 
@@ -211,7 +211,7 @@ For more information, see [Delegate the installation of Exchange servers](delega
 ### Add and remove UM language packs from existing Exchange 2016 Mailbox servers in unattended mode
 
 > [!NOTE]
-> These procedures aren't avaialable in Exchange 2019.
+> These procedures aren't available in Exchange 2019.
 
 - This example installs the Russian and Spain Spanish language packs on the local Exchange 2016 Mailbox server from the specified folder.
 
@@ -225,8 +225,10 @@ For more information, see [Delegate the installation of Exchange servers](delega
     Setup.exe /IAcceptExchangeServerLicenseTerms /RemoveUmLanguagePack:ko-KR
     ```
 
-## How do you know this worked?
+## Next steps
 
-To verify that you've successfully installed Exchange in unatteded mode, see [Verify Exchange Server installations](../post-installation-tasks/verify-installation.md).
-  
-Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+- To verify that you've successfully installed Exchange in unattended mode, see [Verify Exchange Server installations](../post-installation-tasks/verify-installation.md).
+
+- Complete your deployment by performing the tasks provided in [Exchange post-installation tasks](../../plan-and-deploy/post-installation-tasks/post-installation-tasks.md).
+
+- Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

@@ -1,9 +1,9 @@
 ---
 title: "Delegate the installation of Exchange servers"
-ms.author: dstrome
-author: dstrome
+ms.author: chrisda
+author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: exchange-server-it-pro
@@ -41,7 +41,7 @@ After an Exchange administrator provisions the Exchange server object, the only 
 
 1. In File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. Note the virtual DVD drive letter that's assigned.
   
-2. Opwn a Windows Command Prompt window. For example:
+2. Open a Windows Command Prompt window. For example:
 
     - Press the Windows key + 'R' to open the **Run** dialog, type cmd.exe, and then press **OK**.
 
@@ -73,7 +73,7 @@ After an Exchange administrator provisions the Exchange server object, the only 
   
 ## How do you know this worked?
 
-To verfiy that you've successfully provisioned an Exchange server for a delegate installation of Exchange, do the following steps:
+To verify that you've successfully provisioned an Exchange server for a delegate installation of Exchange, do the following steps:
     
 1. In Active Directory Users & Computers, select **Microsoft Exchange Security Groups**, double-click **Exchange Servers**, and then select the **Members** tab.
     
@@ -85,7 +85,9 @@ Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exch
 
 ## More information
 
-The high-level Active Directory changes that are made when you provision an Exchange server object are desribed in the following list: 
+An Exchange administrator might need to complete the deployment by performing the tasks provided in [Exchange post-installation tasks](../../plan-and-deploy/post-installation-tasks/post-installation-tasks.md).
+
+The high-level Active Directory changes that are made when you provision an Exchange server object are described in the following list: 
   
 - A server object is created in the **CN=Servers,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=\<Organization Name\>,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\<Root Domain\>** configuration partition.
     
