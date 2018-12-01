@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 5fd2c96f-fe93-4b5a-8495-70c450511a37
-description: "Admins can learn how to modify the settings of a global address list (GAL) in Exchange Online."
+description: "Admins can learn how to modify the settings of a global address list in Exchange Online."
 ---
 
 # Configure global address list properties in Exchange Online
