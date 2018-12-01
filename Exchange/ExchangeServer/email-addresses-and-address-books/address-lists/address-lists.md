@@ -2,7 +2,7 @@
 title: "Address lists in Exchange Server"
 ms.author: chrisda
 author: chrisda
-ms.date: 7/6/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -35,7 +35,7 @@ Recipient filters identify the recipients that are included in address lists and
 
 |**Recipient filtering method**|**User interface**|**Filterable recipient properties**|**Filter operators**|
 |:-----|:-----|:-----|:-----|
-|Precanned recipient filters|**Address lists**: Exchange admin center (EAC) and the Exchange Management Shell <br/> **GALs**: Exchange Management Shell only|Limited to:<br/>Recipient type (All recipient types or any combination of user mailboxes, resource mailboxes, mail contacts, mail users, and groups)<br/>Company<br/>Custom Attribute 1 to 15<br/>Department<br/>State or Province|Property values require an exact match. Wildcards and partial matches aren't supported. For example, "Sales" doesn't match the value "Sales and Marketing".<br/>Multiple values of the same property always use the **or** operator. For example, "Department equals Sales or Department equals Marketing". <br/> Multiple properties always use the **and** operator. For example, "Department equals Sales and Company equals Contoso".|
+|Precanned recipient filters|**Address lists**: Exchange admin center (EAC) and the Exchange Management Shell <br/><br/> **GALs**: Exchange Management Shell only|Limited to: <br/>• Recipient type (All recipient types or any combination of user mailboxes, resource mailboxes, mail contacts, mail users, and groups) <br/>• Company <br/>• Custom Attribute 1 to 15 <br/>• Department <br/>• State or Province|Property values require an exact match. Wildcards and partial matches aren't supported. For example, "Sales" doesn't match the value "Sales and Marketing". <br/><br/> Multiple values of the same property always use the **or** operator. For example, "Department equals Sales or Department equals Marketing". <br/><br/> Multiple properties always use the **and** operator. For example, "Department equals Sales and Company equals Contoso".|
 |Custom recipient filters|Exchange Management Shell only|You can use virtually any available recipient attributes. For more information, see [Filterable Properties for the -RecipientFilter Parameter](http://technet.microsoft.com/library/cf78aca5-6699-485c-9b15-e0adba252176.aspx).|You use OPATH filter syntax to specify any available Windows PowerShell filter operators. Wildcards and partial matches are supported.|
  
  **Notes**:
@@ -46,10 +46,9 @@ Recipient filters identify the recipients that are included in address lists and
 
 - If an address list uses custom recipient filters instead of precanned filters, you can see the address list in the EAC, but you can't modify or remove it by using the EAC.
 
-- You can hide recipients from all address lists and GALs. For more information, see [Hide recipients from address lists](address-list-procedures.md#HideRecipients).
+- You can hide recipients from all address lists and GALs. For more information, see [Hide recipients from address lists](address-list-procedures.md#hide-recipients-from-address-lists).
 
 ## Global address lists
-<a name="GALs"> </a>
 
 By default, a new installation of Exchange Server creates an GAL named Default Global Address List that's the primary repository of all recipients in the Exchange organization. Typically, most organizations have only one GAL, because users can only see and use one GAL in Outlook and Outlook on the web (formerly known as Outlook Web App). You might need to create multiple GALs if you want to prevent groups of recipients from seeing each other (for example, you single Exchange organization contains two separate companies). If you plan on creating additional GALs, consider the following issues:
 
@@ -59,14 +58,13 @@ By default, a new installation of Exchange Server creates an GAL named Default G
 
 - Users can only see a GAL that they belong to (the recipient filter of the GAL includes them). If a user belongs to multiple GALs, they'll still see only one GAL based on the following conditions:
 
-- The user needs permissions to view the GAL. You assign user permissions to GALs by using address book policies (ABPs). For more information, see [Address book policies in Exchange Server](../../email-addresses-and-address-books/address-book-policies/address-book-policies.md).
+   - The user needs permissions to view the GAL. You assign user permissions to GALs by using address book policies (ABPs). For more information, see [Address book policies in Exchange Server](../../email-addresses-and-address-books/address-book-policies/address-book-policies.md).
 
-- If a user is still eligible to see multiple GALs, only the largest GAL is used (the GAL that contains the most recipients).
+   - If a user is still eligible to see multiple GALs, only the largest GAL is used (the GAL that contains the most recipients).
 
-- Each GAL needs a corresponding offline address book (OAB) that includes the GAL. To create OABs, see [Use the Exchange Management Shell to create offline address books](../../email-addresses-and-address-books/offline-address-books/oab-procedures.md#CreateOAB).
+   - Each GAL needs a corresponding offline address book (OAB) that includes the GAL. To create OABs, see [Use the Exchange Management Shell to create offline address books](../../email-addresses-and-address-books/offline-address-books/oab-procedures.md#CreateOAB).
 
 ## Default address lists
-<a name="DALists"> </a>
 
 By default, Exchange comes with five built-in address lists and one GAL. These address lists are described in the following table. Note that by default, system-related mailboxes like arbitration mailboxes and public folder mailboxes are hidden from address lists.
 
@@ -80,7 +78,6 @@ By default, Exchange comes with five built-in address lists and one GAL. These a
 |Public Folders|Address list|Includes all mail-enabled public folders in your organization. Access permissions determine who can view and use public folders. For more information about public folders, see [Public Folders](http://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx).|`{Alias -ne $null -and ObjectCategory -like 'publicFolder'}`|
  
 ## Custom address lists
-<a name="CALists"> </a>
 
 An Exchange organization might contain thousands of recipients, so the built-in address lists could become quite large. To prevent this, you can create custom address lists to help users find what they're looking for.
 
@@ -92,10 +89,9 @@ For example, consider a company that has two large divisions in one Exchange org
 
 For most day-to-day activities, employees at Fourth Coffee don't communicate with employees at Contoso, Ltd. Therefore, to make it easier for employees to find recipients who exist only in their division, you can create two new custom address lists—one for Fourth Coffee and one for Contoso, Ltd. However, if an employee is unsure about where recipient exists, they can search in the GAL, which contains all recipients from both divisions.
 
-You can also create address lists under other address lists. For example, you can create an address list that contains all recipients in Manchester, and you can create another address list under Manchester named Sales that contains only sales people in the Manchester office. You can also move address lists back to the root, or under other address lists after you've created them. For more information, see [Use the Exchange Management Shell to move address lists](address-list-procedures.md#MoveAddressList)[Use the Exchange Management Shell to move address lists](address-list-procedures.md#MoveAddressList).
+You can also create address lists under other address lists. For example, you can create an address list that contains all recipients in Manchester, and you can create another address list under Manchester named Sales that contains only sales people in the Manchester office. You can also move address lists back to the root, or under other address lists after you've created them. For more information, see [Use the Exchange Management Shell to move address lists](address-list-procedures.md#use-the-exchange-management-shell-to-move-address-lists).
 
 ## Best practices for creating additional address lists
-<a name="BestPractices"> </a>
 
 Although address lists are useful tools for users, poorly planned address lists can cause frustration. To make sure that your address lists are practical for users, consider the following best practices:
 
@@ -108,12 +104,9 @@ Although address lists are useful tools for users, poorly planned address lists 
 For detailed instructions about creating address lists in Exchange Server, see [Create address lists](address-list-procedures.md#CreateAddressList).
 
 ## Update address lists
-<a name="BestPractices"> </a>
 
 After you create or modify an address list, you need to update the membership.
 
 If the address list contains a large number of recipients (our recommendation is more than 3000), you should use the Exchange Management Shell to update the address list (not the EAC). For more information, see [Update address lists](address-list-procedures.md#UpdateAddressList).
 
 To update a GAL, you always need to use the Exchange Management Shell. For more information, see [Use the Exchange Management Shell to update global address lists](address-list-procedures.md#UpdateGAL).
-
-

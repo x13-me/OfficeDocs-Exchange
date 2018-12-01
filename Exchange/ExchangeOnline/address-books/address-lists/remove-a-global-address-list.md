@@ -1,50 +1,60 @@
 ---
-title: "Remove a global address list"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 12/16/2014
+title: "Remove a global address list in Exchange Online"
+ms.author: chrisda
+author: chrisda
+manager: serdars
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 65d75b69-641b-4a37-a63c-47cf018f5f22
-description: "The global address list (GAL) is a directory that contains entries for every group, user, and contact within an Exchange organization."
+description: "Admins can learn how to remove custom global address lists (GALs) from Exchange Online."
 ---
 
-# Remove a global address list
+# Remove a global address list in Exchange Online
 
-The global address list (GAL) is a directory that contains entries for every group, user, and contact within an Exchange organization.
-  
-For additional management tasks related to address lists, see [Managing Address Lists](https://technet.microsoft.com/library/44c87349-964b-4700-9ce9-87bd4cb2249e.aspx).
-  
+The built-in global address list (GAL) that's automatically created by Exchange Online includes every mail-enabled object in the organization. You can create additional GALs to separate users by organization or location, but a user can only see and use one GAL. For more information about address lists, see [Address lists in Exchange Online](address-lists.md).
+
+You can use the procedures in this topic to remove any custom GALs that you've created. You can't remove:
+
+- The GAL named Default Offline Address Book, which is the built-in GAL that's available in Exchange Online, and the only GAL that has the **IsDefaultGlobalAddressList** property value `True`.
+
+- A GAL that's defined in an offline address book (OAB). For OAB procedures, see [Offline address book procedures](../offline-address-books/offline-address-book-procedures.md).
+
+For additional GAL management tasks, see [Address list procedures in Exchange Online](address-list-procedures.md).
+
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 5 minutes.
-    
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic. 
-    
-- By default in Exchange Online, the Address List role isn't assigned to any role groups. To use any cmdlets that require the Address List role, you need to add the role to a role group. For more information, see the "Add a role to a role group" section in the topic, **Manage role groups**.
-    
-- You can't remove the default GAL.
-    
-- You can't use the Exchange admin center (EAC) to perform this procedure. You must use Exchange Online PowerShell.
-    
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
-    
+
+- By default, the Address List role isn't assigned to any role groups in Exchange Online. To use any cmdlets that require the Address List role, you need to add the role to a role group. For more information, see [Modify role groups](../../permissions-exo/role-groups.md#modify-role-groups).
+
+- You can only use Exchange Online PowerShell to perform the procedures in this topic. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
-  
+
 ## Use Exchange Online PowerShell to remove a GAL
 
-This example removes the GAL Fourth Coffee from the domain controller ad-server.fourthcoffee.com.
-  
+To remove a GAL, use the following syntax:
+
 ```
-Remove-GlobalAddressList -Identity "Fourth Coffee" -DomainController ad-server.fourthcoffee.com
+Remove-GlobalAddressList -Identity <GALIdentity>
 ```
 
-To confirm that you want to remove the GAL, type Y, and then press ENTER.
-  
-For detailed syntax and parameter information, see [Remove-GlobalAddressList](https://technet.microsoft.com/library/b9d537c9-6a50-4f61-9cb7-bdedc7e7e0c8.aspx).
-  
+This example removes the address list named Agency A GAL.
 
+```
+Remove-GlobalAddressList -Identity "Agency A GAL"
+```
+
+For detailed syntax and parameter information, see [Remove-GlobalAddressList](http://technet.microsoft.com/library/b9d537c9-6a50-4f61-9cb7-bdedc7e7e0c8.aspx).
+
+#### How do you know this worked?
+
+To verify that you've successfully removed a GAL, run the following command in Exchange Online PowerShell to verify that the GAL isn't listed:
+
+```
+Get-GlobalAddressList
+```
