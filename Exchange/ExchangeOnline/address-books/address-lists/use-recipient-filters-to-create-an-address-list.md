@@ -1,54 +1,47 @@
 ---
-title: "Create an address list by using recipient filters"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 12/16/2014
+title: "Recipient filters for address lists in Exchange Online PowerShell"
+ms.author: chrisda
+author: chrisda
+manager: serdars
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 8eabea64-97c6-40af-b61c-9b6a125cbdf1
-description: "This topic explains how to create an address list by using recipient filters. To learn more about address lists, see Address lists."
+description: "This topic describes the recipient filter options that admins can use in custom address lists and global address lists (GALs) in Exchange Online."
 ---
 
-# Create an address list by using recipient filters
+# Recipient filters for address lists in Exchange Online PowerShell
 
-This topic explains how to create an address list by using recipient filters. To learn more about address lists, see [Address lists](address-lists.md). 
-  
-For additional management tasks related to address lists, see [Managing Address Lists](https://technet.microsoft.com/library/44c87349-964b-4700-9ce9-87bd4cb2249e.aspx).
-  
-## What do you need to know before you begin?
+Recipient filters identify the recipients that are included in address lists and GALs. There are two basic options: **precanned recipient filters** and **custom recipient filters**. These are basically the same recipient filtering options that are used by dynamic distribution groups and email address policies.
 
-- Estimated time to complete each procedure: 5 minutes.
-    
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic. 
-    
-- By default in Exchange Online, the Address List role isn't assigned to any role groups. To use any cmdlets that require the Address List role, you need to add the role to a role group. For more information, see the "Add a role to a role group" section in the topic, **Manage role groups**.
-    
-- To use the _RecipientFilter_ parameter to create a custom filter, you must specify a string for the filter. The Exchange Online PowerShell uses OPATH for the filtering syntax. OPATH is a querying language designed to query object data sources. 
-    
-- You can't use the Exchange admin center (EAC) to perform this procedure. You must use Exchange Online PowerShell.
-    
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
-    
-> [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
-  
-## Use Exchange Online PowerShell to create an address list by using recipient filters
+- **Precanned recipient filters**
 
-This example creates an address list for all users with Exchange mailboxes who reside in Washington or Oregon.
-  
-```
-New-AddressList -Name "Pacific Northwest Mailboxes" -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
-```
+  - Uses the required _IncludedRecipient_ parameter with the `AllRecipients` value *or* one or more of the following values: `MailboxUsers`, `MailContacts`, `MailGroups`, `MailUsers`, or `Resources`. You can specify multiple values separated by commas.
 
-This example creates an address list for all users with Exchange mailboxes who have `AgencyB` as the value for the _CustomAttribute15_ parameter. 
-  
-```
-New-AddressList -Name "AgencyB" -RecipientFilter {(RecipientType -eq 'UserMailbox') -and (CustomAttribute15 -like *AgencyB*)}
-```
+  - You can also use any of the optional _Conditional_ filter parameters: _ConditionalCompany_, _ConditionalCustomAttribute[1to15]_, _ConditionalDepartment_, and _ConditionalStateOrProvince_.
 
-For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/library/2bcee6db-01d4-40ad-9595-33356a4025c5.aspx).
-  
+   You specify multiple values for a _Conditional_ parameter by using the syntax `"<Value1>","<Value2>"...`. Multiple values of the same property implies the **or** operator. For example, "Department equals Sales or Marketing or Finance".
 
+- **Custom recipient filters**: Uses the required _RecipientFilter_ parameter with an OPATH filter.
+
+  - The basic OPATH filter syntax is `{<Property1> -<Operator> '<Value1>' <Property2> -<Operator> '<Value2>'...}`.
+
+  - Braces `{ }` are required around the whole OPATH filter.
+
+  - Hyphens (`-`) are required before all operators. Here are some of the most frequently used operators:
+
+  - `and`, `or`, and `not`.
+
+  - `eq` and `ne` (equals and does not equal; not case-sensitive).
+
+  - `lt` and `gt` (less than and greater than).
+
+  - `like` and `notlike` (string contains and does not contain; requires at least one wildcard in the string. For example, `{Department -like 'Sales*'}`.
+
+  - Use parentheses to group `<Property> -<Operator> '<Value>'` statements together in complex filters. For example, `{(Department -like 'Sales*' -or Department -like 'Marketing*') -and (Company -eq 'Contoso' -or Company -eq 'Fabrikam')}`. Exchange stores the filter in the **RecipientFilter** property with each individual statement enclosed in parentheses, but you don't need to enter them that way.
+
+For more information about address lists, see [Address lists in Exchange Online](address-lists.md).
+
+For address list procedures that use recipient filters, see [Address list procedures in Exchange Online](address-list-procedures.md).

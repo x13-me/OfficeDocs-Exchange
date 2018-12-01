@@ -19,35 +19,35 @@ These are the address list and GAL procedures that you'll find in this topic:
   
 - **Global address list procedures**
     
-  - [Use the Exchange Management Shell to update global address lists](address-list-procedures.md#UpdateGAL)
+  - [Use the Exchange Management Shell to update global address lists](#use-the-exchange-management-shell-to-update-global-address-lists)
+ 
+  - [Use the Exchange Management Shell to view members of global address lists](#use-the-exchange-management-shell-to-view-members-of-global-address-lists)
     
-  - [Use the Exchange Management Shell to view members of global address lists](address-list-procedures.md#ViewGALMembers)
+  - [Use the Exchange Management Shell to create global address lists](#use-the-exchange-management-shell-to-create-global-address-lists)
     
-  - [Use the Exchange Management Shell to create global address lists](address-list-procedures.md#CreateGAL)
-    
-  - [Use the Exchange Management Shell to modify global address lists](address-list-procedures.md#ModifyGAL)
-    
-  - [Use the Exchange Management Shell to remove global address lists](address-list-procedures.md#RemoveGAL)
+  - [Use the Exchange Management Shell to modify global address lists](#use-the-exchange-management-shell-to-modify-global-address-lists)
+
+  - [Use the Exchange Management Shell to remove global address lists](#use-the-exchange-management-shell-to-remove-global-address-lists)
     
 - **Address list procedures**
     
-  - [Update address lists](address-list-procedures.md#UpdateAddressList)
+  - [Update address lists](#update-address-lists)
     
-  - [View the members of address lists](address-list-procedures.md#ViewMembersAddressList)
+  - [View the members of address lists](#view-the-members-of-address-lists)
     
-  - [Create address lists](address-list-procedures.md#CreateAddressList)
+  - [Create address lists](#create-address-lists)
     
-  - [Modify address lists](address-list-procedures.md#ModifyAddressList)
+  - [Modify address lists](#modify-address-lists)
     
-  - [Use the Exchange Management Shell to move address lists](address-list-procedures.md#MoveAddressList)
+  - [Use the Exchange Management Shell to move address lists](#use-the-exchange-management-shell-to-move-address-lists)
     
-  - [Remove address lists](address-list-procedures.md#RemoveAddressList)
+  - [Remove address lists](#remove-address-lists)
     
-- [Hide recipients from address lists](address-list-procedures.md#HideRecipients)
+  - [Hide recipients from address lists](#hide-recipients-from-address-lists)
     
-[Recipient filters in the EAC](address-list-procedures.md#EAC_RecipientFilters)
+[Recipient filters in the EAC](#recipient-filters-in-the-eac)
   
-[Recipient filters in the Exchange Management Shell](address-list-procedures.md#Shell_RecipientFilters)
+[Recipient filters in the Exchange Management Shell](#recipient-filters-in-the-exchange-management-shell)
   
 ## What do you need to know before you begin?
 
@@ -127,14 +127,14 @@ $GAL = Get-GlobalAddressList -Identity "Humongous Insurance"; Get-Recipient -Res
 ### Use the Exchange Management Shell to create global address lists
 <a name="CreateGAL"> </a>
 
-For more information about the requirements and implications of having multiple GALs in your organization, see [Global address lists](address-lists.md#GALs).
+For more information about the requirements and implications of having multiple GALs in your organization, see [Global address lists](address-lists.md#global-address-lists).
   
-For details about recipient filters in the Exchange Management Shell, see the [Recipient filters in the Exchange Management Shell](../../email-addresses-and-address-books/email-address-policies/eap-procedures.md#Shell_RecipientFilters) section in this topic.
+For details about recipient filters in the Exchange Management Shell, see the [Recipient filters in the Exchange Management Shell](#recipient-filters-in-the-exchange-management-shell) section in this topic.
   
 To create a GAL, use the following syntax:
   
 ```
-New-GlobalAddressList -Name "<GAL Name>" [<Precanned recipient filter | Custom recipient filter>] [-RecipientContainer <OrganizationalUnit>]
+New-GlobalAddressList -Name "<GAL Name>" [<Precanned recipient filter | Custom recipient filter>]
 ```
 
 This example creates a GAL with a precanned recipient filter:
@@ -167,16 +167,16 @@ To verify that you've successfully created a GAL, use either of the following pr
     
 - In the Exchange Management Shell, replace _\<GAL Name\>_ with the name of the GAL, and run the following command to verify the property values: 
     
-  ```
-  Get-GlobalAddressList -Identity "<GAL Name>" | Format-List Name,RecipientFilterType,RecipientContainer,RecipientFilter,IncludedRecipients,Conditional*
-  ```
+   ```
+   Get-GlobalAddressList -Identity "<GAL Name>" | Format-List Name,RecipientFilterType,RecipientContainer,RecipientFilter,IncludedRecipients,Conditional*
+   ```
 
 ### Use the Exchange Management Shell to modify global address lists
 <a name="ModifyGAL"> </a>
 
 - The same settings are available as when you created the GAL. For more information, see the previous section.
     
-- After you modify the GAL, you need to update its membership. For more information, see the [Use the Exchange Management Shell to update global address lists](address-list-procedures.md#UpdateGAL) section in this topic.
+- After you modify the GAL, you need to update its membership. For more information, see the [Use the Exchange Management Shell to update global address lists](#use-the-exchange-management-shell-to-update-global-address-lists) section in this topic.
     
 - You can't replace a custom recipient filter with a precanned recipient filter or vice-versa in an existing GAL.
     
@@ -211,9 +211,9 @@ To verify that you've successfully modified a GAL, use either of the following p
 ### Use the Exchange Management Shell to remove global address lists
 <a name="RemoveGAL"> </a>
 
-- You can't remove the GAL named Default Offline Address Book, the GAL that's automatically created by Exchange, and the only GAL that has the **IsDefaultGlobalAddressList** property value `True`.
+- You can't remove the GAL named Default Offline Address Book, which is the GAL that's automatically created by Exchange, and the only GAL that has the **IsDefaultGlobalAddressList** property value `True`.
     
-- You can't remove a GAL that's defined in an offline address book (OAB). To modify the address lists that are defined in an OAB, see [Use the Exchange Management Shell to add and remove address lists from offline address books](../../email-addresses-and-address-books/offline-address-books/oab-procedures.md#OABAddRemoveAddressLists).
+- You can't remove a GAL that's defined in an offline address book (OAB). To modify the address lists that are defined in an OAB, see [Use the Exchange Management Shell to add and remove address lists from offline address books](../offline-address-books/oab-procedures.md#use-the-exchange-management-shell-to-add-and-remove-address-lists-from-offline-address-books).
     
 To remove a GAL, use the following syntax:
   
@@ -351,14 +351,14 @@ You can create address lists by using the EAC or the Exchange Management Shell. 
     
   - **Address list path**: You can create the address list in the root (" **\**", also known as All Address Lists), or you can create the address list under an existing address list. To create the address list under an existing address list, click **Browse**, select the address list in the picker window, and then click **OK**.
     
-  - For details about the recipient filters and preview options that are available here, see the [Recipient filters in the EAC](../../email-addresses-and-address-books/email-address-policies/eap-procedures.md#EAC_RecipientFilters) section in this topic.
+  - For details about the recipient filters and preview options that are available here, see the [Recipient filters in the EAC](#recipient-filters-in-the-eac)  section in this topic.
     
 3. When you're finished, click **Save**. You'll receive a warning message that tells you to click **Update** in the details pane to update the membership of the address list. For more information, see the [Update address lists](address-list-procedures.md#UpdateAddressList) section in this topic.
     
 #### Use the Exchange Management Shell to create address lists
 <a name="Shell_CreateAddressList"> </a>
 
- You can create address lists with or without recipient filters. For details about recipient filters in the Exchange Management Shell, see the [Recipient filters in the Exchange Management Shell](../../email-addresses-and-address-books/email-address-policies/eap-procedures.md#Shell_RecipientFilters) section in this topic.
+ You can create address lists with or without recipient filters. For details about recipient filters in the Exchange Management Shell, see the [Recipient filters in the Exchange Management Shell](#recipient-filters-in-the-exchange-management-shell) section in this topic.
   
 To create an address list, use the following syntax:
   
@@ -410,11 +410,11 @@ To verify that you've successfully created an address list, use either of the fo
 
 - If you created an address list with no recipient filters or a custom recipient filter in the Exchange Management Shell, you can't modify the address list in the EAC. You need to use the Exchange Management Shell.
     
-- After you modify an address list, you need to update its membership. For more information, see the [Update address lists](address-list-procedures.md#UpdateAddressList) section in this topic.
+- After you modify an address list, you need to update its membership. For more information, see the [Update address lists](#update-address-lists) section in this topic.
     
 - You can't replace a custom recipient filter with a precanned recipient filter or vice-versa in an existing address list.
     
-- You can change the location of an address list by using the **Move-AddressList** cmdlet in the Exchange Management Shell. For more information, see [Use the Exchange Management Shell to move address lists](address-list-procedures.md#MoveAddressList).
+- You can change the location of an address list by using the **Move-AddressList** cmdlet in the Exchange Management Shell. For more information, see the [Use the Exchange Management Shell to move address lists](#use-the-exchange-management-shell-to-move-address-lists) section in this topic.
     
 #### Modify address lists in the EAC
 
@@ -424,15 +424,15 @@ To verify that you've successfully created an address list, use either of the fo
     
   - **Display name**: Enter a unique, descriptive name for the address list.
     
-  - For details about the recipient filters and preview options that are available here, see the [Recipient filters in the EAC](../../email-addresses-and-address-books/email-address-policies/eap-procedures.md#EAC_RecipientFilters) section in this topic.
+  - For details about the recipient filters and preview options that are available here, see the [Recipient filters in the EAC](#recipient-filters-in-the-eac)  section in this topic.
     
-3. When you're finished, click **Save**. You'll receive a warning message that tells you to click **Update** in the details pane to update the membership of the address list. For more information, see the [Update address lists](address-list-procedures.md#UpdateAddressList) section in this topic.
+3. When you're finished, click **Save**. You'll receive a warning message that tells you to click **Update** in the details pane to update the membership of the address list. For more information, see the [Update address lists](#update-address-lists) section in this topic.
     
 #### Modify address lists in the Exchange Management Shell
 
-- The same basic settings are available as when you created the address list. For more information, see the [Use the Exchange Management Shell to create address lists](address-list-procedures.md#Shell_CreateAddressList) section in this topic.
+- The same basic settings are available as when you created the address list. For more information, see the [Use the Exchange Management Shell to create address lists](#use-the-exchange-management-shell-to-create-address-lists) section in this topic.
     
-- You can't use this procedure to move an address list. For more information, see the [Use the Exchange Management Shell to move address lists](address-list-procedures.md#MoveAddressList) section in this topic.
+- You can't use this procedure to move an address list. For more information, see the [Use the Exchange Management Shell to move address lists](#use-the-exchange-management-shell-to-move-address-lists) section in this topic.
     
 To modify an existing address list, use the following syntax:
   
@@ -498,7 +498,7 @@ To verify that you've successfully modified an address list, use either of the f
 
 If the address list contains more than 3000 recipients, we recommend that you use the Exchange Management Shell to remove the address list. Removing the address list will take a long time, and will prevent you from using the EAC session until the address list is fully removed. If the address list contains less than 3000 recipients, it's OK to use the EAC to remove the address list.
   
-- You can't remove an address list that's defined in an offline address book (OAB). To modify the address lists that are defined in an OAB, see [Use the Exchange Management Shell to add and remove address lists from offline address books](../../email-addresses-and-address-books/offline-address-books/oab-procedures.md#OABAddRemoveAddressLists).
+- You can't remove an address list that's defined in an offline address book (OAB). To modify the address lists that are defined in an OAB, see [Use the Exchange Management Shell to add and remove address lists from offline address books](../offline-address-books/oab-procedures.md#use-the-exchange-management-shell-to-add-and-remove-address-lists-from-offline-address-books).
     
 - You can't remove an address list that contains child address lists (you'll receive an error). You first need to do one of the following steps:
     
@@ -619,7 +619,7 @@ Set-Mailbox -Identity michelle@contoso.com -HiddenFromAddressListsEnabled $true
   
 - To make the recipient visible in address lists again, use the value `$false` for the _HiddenFromAddressListsEnabled_ parameter.
     
-- By default, arbitration mailboxes and public folder mailboxes are hidden from address lists. If you use the **Set-Mailbox** cmdlet to change this or any other setting for arbitration or public folder mailboxes, you need to include the _Aribtration_ or _PublicFolder_ switches.
+- By default, arbitration mailboxes and public folder mailboxes are hidden from address lists. If you use the **Set-Mailbox** cmdlet to change this or any other setting for arbitration or public folder mailboxes, you need to include the _Arbitration_ or _PublicFolder_ switches.
     
 ### How do you know this worked?
 
@@ -722,5 +722,3 @@ In the Exchange Management Shell, you can specify **precanned recipient filters*
   - After you use the **New-AddressList** cmdlet to create an address list that uses custom recipient filters, you can't modify the address list in the EAC. You need to use the **Set-AddressList** cmdlet with the _RecipientFilter_ parameter in the Exchange Management Shell.
     
  **Note**: The _RecipientContainer_ (organizational unit) recipient filter parameter is available to both precanned recipient filters and custom recipient filters.
-  
-
