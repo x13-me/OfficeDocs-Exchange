@@ -3,7 +3,6 @@ title: "Use Directory Based Edge Blocking to reject messages sent to invalid rec
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -37,28 +36,18 @@ If a message is sent to a valid email address in Office 365, the message continu
 ## Configure DBEB
 
 1. Verify that your accepted domain in Exchange Online is to **Internal relay**:
-
-  1. In the EAC, go to **Mail flow** \> **Accepted domains**.
-    
+  a. In the EAC, go to **Mail flow** \> **Accepted domains**.
   2. Select the domain and click **Edit**.
-    
   3. Ensure that the domain type is set to **Internal relay**. If it's set to **Authoritative**, change it to **Internal relay** and click **Save**.
 
-2. Add users to Office 365. For example: 
-    
-  - **Directory synchronization**: Add valid users to Office 365 by synchronizing from your on-premises Active Directory environment to [Azure Active Directory](https://technet.microsoft.com/library/hh967611.aspx) in the cloud. For more information about how to set up directory synchronization, see "Use directory synchronization to manage recipients" in [Manage Mail Users in EOP](https://technet.microsoft.com/library/4bfaf2ab-e633-4227-8bde-effefb41a3db.aspx). 
-    
-  - **Add users via PowerShell or the EAC**: For more information about how to do this, see [Manage Mail Users in EOP](https://technet.microsoft.com/library/4bfaf2ab-e633-4227-8bde-effefb41a3db.aspx) or [Manage mail users in Exchange Online](../recipients-in-exchange-online/manage-mail-users.md). 
-    
-3. Set your accepted domain in Exchange Online to **Authoritative**: 
-    
-  1. In the EAC, go to **Mail flow** \> **Accepted domains**.
-    
-  2. Select the domain and click **Edit**.
-    
-  3. Set the domain type to **Authoritative**.
-
-4. Click **Save** to save your changes, and confirm that you want to enable DBEB. 
+2. Add users to Office 365. For example:
+  - **Directory synchronization**: Add valid users to Office 365 by synchronizing from your on-premises Active Directory environment to [Azure Active Directory](https://technet.microsoft.com/library/hh967611.aspx) in the cloud. For more information about how to set up directory synchronization, see "Use directory synchronization to manage recipients" in [Manage Mail Users in EOP](https://technet.microsoft.com/library/4bfaf2ab-e633-4227-8bde-effefb41a3db.aspx).
+  - **Add users via PowerShell or the EAC**: For more information about how to do this, see [Manage Mail Users in EOP](https://technet.microsoft.com/library/4bfaf2ab-e633-4227-8bde-effefb41a3db.aspx) or [Manage mail users in Exchange Online](../recipients-in-exchange-online/manage-mail-users.md).
+3. Set your accepted domain in Exchange Online to **Authoritative**:
+  a. In the EAC, go to **Mail flow** \> **Accepted domains**.
+  b. Select the domain and click **Edit**.
+  c. Set the domain type to **Authoritative**.
+4. Choose **Save** to save your changes, and confirm that you want to enable DBEB. 
 
 **Notes**:
 
