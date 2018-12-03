@@ -63,6 +63,8 @@
 #### [Use rules to add meetings](../security-and-compliance/mail-flow-rules/use-rules-to-add-meetings.md)
 #### [Manage message approval](../security-and-compliance/mail-flow-rules/manage-message-approval.md)
 #### [Common message approval scenarios](../security-and-compliance/mail-flow-rules/common-message-approval-scenarios.md)
+### [Recoverable Items folder in Exchange Online](../security-and-compliance/recoverable-items-folder/recoverable-items-folder.md)
+#### [Clean up or delete items from the Recoverable Items folder in Exchange Online](../security-and-compliance/recoverable-items-folder/clean-up-deleted-items.md)
 ## [Mail flow best practices](../mail-flow-best-practices/mail-flow-best-practices.md)
 ### [Test mail flow](../mail-flow-best-practices/test-mail-flow.md)
 ### [Troubleshoot mail flow](../mail-flow-best-practices/troubleshoot-mail-flow.md)

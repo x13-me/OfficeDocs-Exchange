@@ -22,18 +22,18 @@ Inbox rules in Outlook on the web (formerly known as Outlook Web App) and Outloo
 
 - There isn't a maximum number of rules that users can create.
 
-- The quota for Inbox rules applies only to _enabled_ rules. There's no restriction on the number of _disabled_ rules that a mailbox can have. However, the _total size_ of rules that are enabled or active in the mailbox can't exceed the quota value. 
+- The quota for Inbox rules applies only to _enabled_ rules. There's no restriction on the number of _disabled_ rules that a mailbox can have. However, the _total size_ of rules that are enabled or active in the mailbox can't exceed the quota value
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 5 minutes or less.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox settings" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox settings" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - You can only use Exchange Online PowerShell to perform the procedure in this topic. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use Exchange Online PowerShell to increase the limit for Inbox rules
 
@@ -67,7 +67,7 @@ There are three basic methods you can use to modify the rules quota for a mailbo
     $<VariableName> | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -RulesQuota "<32 KB to 256 KB>"}
     ```
 
-    This example decreases the rules quota to 32 KB to all mailboxes whose **Title** attribute contains "Vendor" or "Contractor". 
+    This example decreases the rules quota to 32 KB to all mailboxes whose **Title** attribute contains "Vendor" or "Contractor".
 
     ```
     $V = Get-User -ResultSize unlimited -Filter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Vendor*' -or Title -like '*Contractor*')}
@@ -123,6 +123,6 @@ To verify that you've modified the Inbox rules quota on a mailbox, use any of th
 
 ## What else do I need to know?
 
-- Inbox rules are run from top to bottom in the order in which they appear in the **Rules** window. To change the order of rules, click the rule you want to move, and then click the up or down arrow to move the rule to the position you want in the list. 
+- Inbox rules are run from top to bottom in the order in which they appear in the **Rules** window. To change the order of rules, click the rule you want to move, and then click the up or down arrow to move the rule to the position you want in the list.
 
 - When you create a forwarding rule, you can add more than one address to forward to. The number of addresses you can forward to may be limited, depending on the settings for your account. If you add more addresses than are allowed, your forwarding rule won't work. If you create a forwarding rule with more than one address, test it to be sure it works.
