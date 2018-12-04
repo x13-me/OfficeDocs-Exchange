@@ -21,7 +21,7 @@ Before you install an Exchange Server 2016 or Exchange Server 2019 Edge Transpor
 
 - Verify the network, computer hardware, operating system, and software requirements at: [Exchange Server system requirements](../../plan-and-deploy/system-requirements.md) and [Exchange Server prerequisites](../../plan-and-deploy/prerequisites.md).
 
-- Verify the local account on the targer computer is a member of the local Administrators group.
+- Verify the local account on the target computer is a member of the local Administrators group.
 
 - Verify that you've read the release notes at [Release notes for Exchange Server](../../release-notes.md).
     
