@@ -37,7 +37,7 @@ By default, all users can install and remove add-ins. Exchange administrators ha
   
 To prevent users from installing an add-in that isn't from the Office Store, remove the **My Custom Apps** role from them. To disable users from installing add-ins from the Office Store, remove the **My Marketplace Apps** role from them. For more details, see [Specify the administrators and users who can install and manage add-ins for Outlook](specify-who-can-install-and-manage-add-ins.md).
   
-To install add-ins for some or all users in your organization, see [Install or remove add-ins for Outlook for your organization](install-or-remove-outlook-add-ins.md).
+To install add-ins for some or all users in your organization, see [Manage deployment of Office 365 add-ins in the Office 365 admin center](https://docs.microsoft.com/en-us/office365/admin/manage/manage-deployment-of-add-ins)
   
 If required, you can limit availability of an add-in to specific users in your organization. For more information, see [Manage user access to add-ins for Outlook](manage-user-access-to-add-ins.md). 
   
