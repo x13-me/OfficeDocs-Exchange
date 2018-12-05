@@ -3,7 +3,6 @@ title: "Mail flow best practices for Exchange Online and Office 365 (overview)"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
