@@ -2,8 +2,8 @@
 title: "Specify the administrators and users who can install and manage add-ins for Outlook"
 ms.author: dmaguire
 author: msdmaguire
-manager: laurawi
-ms.date: 2/8/2017
+manager: serdars
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online

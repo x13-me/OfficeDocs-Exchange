@@ -87,7 +87,7 @@ There are three basic methods you can use to apply an Outlook on the web mailbox
     $<VariableName> | foreach {Set-CasMailbox -Identity $_.MicrosoftOnlineServicesID -OwaMailboxPolicy "<Policy Name>"}
     ```
 
-    This example assigns the policy named Managers and Executives to all mailboxes whose **Title** attribute contains "Manager" or "Executive",. 
+    This example assigns the policy named Managers and Executives to all mailboxes whose **Title** attribute contains "Manager" or "Executive". 
 
     ```
     $Mgmt = Get-User -ResultSize unlimited -Filter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Manager*' -or Title -like '*Executive*')}
@@ -141,7 +141,7 @@ To verify that you've applied an Outlook on the web mailbox policy to a mailbox,
     Get-CasMailbox -Identity "<MailboxIdentity>" | Format-List OwaMailboxPolicy
     ```
 
-- In Exchange Online PowerShell, run the following command to verify the value of the **OwaMailboxPolicy** property:
+- In Exchange Online PowerShell, run the following command to verify the value of the **OwaMailboxPolicy** property for all mailboxes:
 
     ```
     Get-CasMailbox -ResultSize unlimited | Format-Table -Auto Name,OwaMailboxPolicy

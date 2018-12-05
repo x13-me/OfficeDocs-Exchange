@@ -34,8 +34,8 @@ For more information about email address policies, see [Email address policies i
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
-> [!CAUTION]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> [!TIP]
+> Having problems? Ask for help in the Exchange forums. Visit the forum at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
   
 ## Create email address policies
 <a name="CreateEAP"> </a>
@@ -91,7 +91,7 @@ This example creates an email address policy with a precanned recipient filter:
     
 - **Primary SMTP email address**: `<last name>.<first two letters of the first name>@contoso.com`
     
-- **Additional proxy email addresses**:
+- **Additional proxy email addresses**: `<last name>.<first two letters of the first name>@contoso.net`
     
 - **Priority**: _n_+1, where _n_ is the number of manually created email address policies that already exist (we didn't use the _Priority_ parameter, and the default value is _n_+1). Remember, the first email address policy that identifies a recipient configures the recipient's email addresses. All other policies are ignored, even if the first policy is unapplied and can't configure the recipient's email addresses.
     
