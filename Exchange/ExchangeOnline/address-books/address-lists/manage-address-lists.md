@@ -26,7 +26,7 @@ Looking for the Exchange Server version of this topic? See [Create an Address Li
 
 - By default, the Address List role isn't assigned to any role groups in Exchange Online. To use any cmdlets that require the Address List role, you need to add the role to a role group. For more information, see [Modify role groups](../../permissions-exo/role-groups.md#modify-role-groups).
 
-- You can only use Exchange Online PowerShell to perform the majority of the procedures in this topic. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- You can only use Exchange Online PowerShell to perform virtually all of the procedures in this topic (everything except hiding recipients from address lists). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
@@ -34,33 +34,33 @@ Looking for the Exchange Server version of this topic? See [Create an Address Li
 ## Use Exchange Online PowerShell to create address lists
 
 You can create address lists with or without recipient filters. For details about recipient filters, see [Recipient filters for address lists in Exchange Online PowerShell](use-recipient-filters-to-create-an-address-list.md).
-  
+
 To create an address list, use the following syntax:
-  
+
 ```
 New-AddressList -Name "<Address List Name>" [-Container <ExistingAddressListPath>] [<Precanned recipient filter | Custom recipient filter>] [-RecipientContainer <OrganizationalUnit>]
 ```
 
 This example creates an address list with a precanned recipient filter:
-  
+
 - **Name**: Southeast Offices
-    
+
 - **Location**: Under the root (" `\`", also known as All Address Lists) because we didn't use the _Container_ parameter, and the default value is " `\`".
-    
+
 - **Precanned recipient filter**: All users with mailboxes where the **State or province** value is GA, AL, or LA (Georgia, Alabama, or Louisiana).
-    
+
 ```
 New-AddressList -Name "Southeast Offices" -IncludedRecipients MailboxUsers -ConditionalStateorProvince "GA","AL","LA"
 ```
 
 This example creates an address list with a custom recipient filter:
-  
+
 - **Name**: Northwest Executives
-    
+
 - **Location**: Under the existing address list named North America.
-    
+
 - **Custom recipient filter**: All users with mailboxes where the **Title** value contains Director or Manager, and the **State or province** value is WA, OR, or ID (Washington, Oregon, or Idaho).
-    
+
 ```
 New-AddressList -Name "Northwest Executives" -Container "\North America"-RecipientFilter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Director*' -or Title -like '*Manager*') -and (StateOrProvince -eq 'WA' -or StateOrProvince -eq 'OR' -or StateOrProvince -eq 'ID')}
 ```
@@ -85,7 +85,7 @@ For detailed syntax and parameter information, see [New-AddressList](https://tec
 ### How do you know this worked?
 
 To verify that you've successfully created an address list, replace _\<AddressListIdentity\>_ with the path\name of the address list, and run the following command in Exchange Online Powershell to verify the property values:
-    
+
 ```
 Get-AddressList -Identity "<AddressListIdentity>" | Format-List Name,RecipientFilterType,RecipientFilter,IncludedRecipients,Conditional*
 ```
@@ -147,7 +147,7 @@ For example, suppose the address list named Oregon and Washington Users uses the
    ```
 
    ```
-    $After | where {$_.StateOrProvince -eq 'WA'} | foreach {Set-User $_.Identity -StateOrProvince Washington}
+   $After | where {$_.StateOrProvince -eq 'WA'} | foreach {Set-User $_.Identity -StateOrProvince Washington}
    ```
 
 **Notes:**
@@ -175,7 +175,7 @@ For example, suppose the address list named Oregon and Washington Users uses the
 ### How do you know this worked?
 
 To verify that you've successfully updated an address list, replace _\<AddressListIdentity\>_ with the name of the address list, and run the following command in Exchange Online PowerShell to verify the **RecipientFilterApplied** property value: 
-    
+
 ```
 Get-AddressList -Identity <AddressListIdentity> | Format-Table -Auto Name,RecipientFilterApplied
 ```
@@ -183,27 +183,27 @@ Get-AddressList -Identity <AddressListIdentity> | Format-Table -Auto Name,Recipi
 ## Use Exchange Online PowerShell to modify address lists
 
 The same basic settings are available as when you created the address list. For more information, see the [Use Exchange Online PowerShell to create address lists](#use-exchange-online-powershell-to-create-address-lists) section in this topic.
-    
+
 To modify an existing address list, use the following syntax:
-  
+
 ```
 Set-AddressList -Identity <AddressListIdentity> [-Name <Name>] [<Precanned recipient filter | Custom recipient filter>] [-RecipientContainer <OrganizationalUnit>]
 ```
 
 When you modify the _Conditional_ parameter values, you can use the following syntax to add or remove values without affecting other existing values: `@{Add="<Value1>","<Value2>"...; Remove="<Value1>","<Value2>"...}`.
-  
+
 This example modifies the existing address list named Southeast Offices by adding the **State or province** value TX (Texas) to the precanned recipient filter.
-  
+
 ```
 Set-AddressList -Identity "Southeast Offices" -ConditionalStateOrProvince @{Add="TX"}
 ```
 
 For detailed syntax and parameter information, see [Set-AddressList](http://technet.microsoft.com/library/72f87402-659c-4ae0-966b-42e1098e0fee.aspx).
-  
+
 ### How do you know this worked?
 
 To verify that you've successfully modified an address list, replace _\<AddressListIdentity\>_ with the path\name of the address list, and run the following command in Exchange Online Powershell to verify the property values:
-    
+
 ```
 Get-AddressList -Identity "<AddressListIdentity>" | Format-List Name,RecipientFilterType,RecipientFilter,IncludedRecipients,Conditional*
 ```
@@ -211,7 +211,7 @@ Get-AddressList -Identity "<AddressListIdentity>" | Format-List Name,RecipientFi
 ## Use Exchange Online PowerShell to delete address lists
 
 To remove an address list, use the following syntax:
-  
+
 ```
 Remove-AddressList -Identity "<AddressListName>"
 ```
@@ -227,7 +227,7 @@ For detailed syntax and parameter information, see [Remove-AddressList](https://
 ### How do you know this worked?
 
 To verify that you've successfully removed an address list, run the following command in Exchange Online Powershell to verify that the address list isn't listed:
-    
+
 ```
 Get-AddressList
 ```
@@ -235,9 +235,9 @@ Get-AddressList
 ## Hide recipients from address lists
 
 Hiding a recipient from address lists doesn't prevent the recipient from receiving email messages; it prevents users from finding the recipient in address lists. The recipient is hidden from **all** address lists and GALs (effectively, they're exceptions to the recipient filters in all address lists). If you want to selectively include the recipient in some address lists but not others, you need to adjust the recipient filters in the address lists to include or exclude the recipient.
-  
+
 Hiding a mailbox from address lists also prevents Outlook from finding the mailbox in GAL when you create a new profile, or add an additional mailbox to an existing profile. To add the hidden mailbox in Outlook, you can temporarily make the mailbox visible in address lists, configure Outlook, and then hide the mailbox from address lists again.
-  
+
 ### Use the EAC to hide recipients from address lists
 
 To open the EAC, see [Exchange admin center in Exchange Online](../../exchange-admin-center.md).
@@ -245,81 +245,79 @@ To open the EAC, see [Exchange admin center in Exchange Online](../../exchange-a
 You can't use the EAC to hide Office 365 groups from address lists.
 
 1. In the EAC, go to one of the following locations based on the recipient type:
-    
-  - **Recipients** \> **Mailboxes**: User mailboxes, linked mailboxes, and remote mailboxes.
-    
+
+  - **Recipients** \> **Mailboxes**: User mailboxes.
+
   - **Recipients** \> **Groups**: Distribution groups, mail-enabled security groups, and dynamic distribution groups.
-    
+
   - **Recipients** \> **Resources**: Room and equipment mailboxes.
-    
+
   - **Recipients** \> **Contacts**: Mail users and mail contacts.
-    
+
   - **Recipients** \> **Shared**: Shared mailboxes.
-    
+
   - **Public folders** \> **Public folders**: Mail-enabled public folders.
-    
+
 2. Select the recipient that you want to hide from address lists, and then click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
-    
+
 3. The recipient properties window opens. What you do next depends on the recipient type:
-    
-  - **Mailboxes**, **Contacts**, and **Shared**: On the **General** tab, select **Hide from address lists**.
-    
+
+  - **Mailboxes**, **Contacts**, and **Shared**: On the **General** tab, select **Hide from address list**.
+
   - **Groups**: On the **General** tab, select **Hide this group from address lists**.
-    
+
   - **Resources**: On the **General** tab, click **More options**, and then select **Hide from address lists**.
-    
+
   - **Public folders**: On the **General mail properties** tab, select **Hide from Exchange address list**.
-    
+
    When you're finished, click **Save**.
-  
+
 ### Use Exchange Online PowerShell to hide recipients from address lists
 
 To hide a recipient from address lists, use the following syntax:
-  
+
 ```
 Set-<RecipientType> -Identity <RecipientIdentity> -HiddenFromAddressListsEnabled $true
 ```
 
  _\<RecipientType\>_ is one of these values: 
-  
+
 - `DistributionGroup`
-    
+
 - `DynamicDistributionGroup`
-    
+
 - `Mailbox`
-    
+
 - `MailContact`
-    
+
 - `MailPublicFolder`
-    
+
 - `MailUser`
-    
-- `RemoteMailbox`
 
 - `UnifiedGroup`
 
 This example hides the distribution group named Internal Affairs from address lists.
-  
+
 ```
 Set-DistributionGroup -Identity "Internal Affairs" -HiddenFromAddressListsEnabled $true
 ```
 
 This example hides the mailbox michelle@contoso.com from address lists.
-  
+
 ```
 Set-Mailbox -Identity michelle@contoso.com -HiddenFromAddressListsEnabled $true
 ```
 
  **Note**: To make the recipient visible in address lists again, use the value `$false` for the _HiddenFromAddressListsEnabled_ parameter.
-    
+
 ### How do you know this worked?
 
 You can verify that you've successfully hidden a recipient from address lists by using any of the following procedures:
-  
+
 - In the EAC, select the recipient, click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) and verify the hide from address lists setting is selected.
-    
+
 - In Exchange Online PowerShell, run the following command and verify the recipient is listed:
-    
+  
    ```
    Get-Recipient -ResultSize unlimited -Filter {HiddenFromAddressListsEnabled -eq $true}
    ```

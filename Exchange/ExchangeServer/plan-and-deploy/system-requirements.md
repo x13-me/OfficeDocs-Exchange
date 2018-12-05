@@ -142,7 +142,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
  
 ## Supported hybrid deployment scenarios
 
-Exchange 2016 supports hybrid deployments with Office 365 tenants that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid Deployment Prerequisites](http://technet.microsoft.com/library/e7454db0-fed4-4662-8890-9501126b1ba2.aspx).
+Exchange 2016 supports hybrid deployments with Office 365 tenants that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid Deployment Prerequisites](https://technet.microsoft.com/library/e7454db0-fed4-4662-8890-9501126b1ba2.aspx).
 
 ## Network and directory servers
 
@@ -156,7 +156,7 @@ The following table lists the requirements for the network and the directory ser
 |Active Directory forest|The Active Directory forest functional level is Windows Server 2008 R2 or higher.|
 |Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.| 
 |DNS namespace support|Exchange 2016 supports the following domain name system (DNS) namespaces: <br/>• Contiguous <br/>• Noncontiguous <br/>• Single label domains <br/>• Disjoint <br/> For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, [Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2269838).|
-|IPv6 support|In Exchange 2016, IPv6 is supported only when IPv4 is also installed and enabled. If Exchange 2016 is deployed in this configuration, and the network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](http://technet.microsoft.com/library/33543023-eb9a-4102-b990-84a818a52814.aspx).|
+|IPv6 support|In Exchange 2016, IPv6 is supported only when IPv4 is also installed and enabled. If Exchange 2016 is deployed in this configuration, and the network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](https://technet.microsoft.com/library/33543023-eb9a-4102-b990-84a818a52814.aspx).|
  
 ## Directory server architecture
 
@@ -233,6 +233,8 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 |Exchange 2016 CU5||Supported|
 
 ## Supported clients (with latest updates)
+
+- Outlook 2019
 
 - Outlook 2016
 

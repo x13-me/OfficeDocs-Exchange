@@ -12,7 +12,7 @@ ms.assetid: ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c
 description: "Summary: Learn how to view, create, copy, modify, and remove management role groups in Exchange Online."
 ---
 
-# Manage role groups
+# Manage role groups in Exchange Online
 
 A role group is a special kind of universal security group (USG) that's used in the Role Based Access Control (RBAC) permissions model in Exchange Online. Management role groups simplify the assignment and maintenance of permissions to users in Exchange Online. THe members of the role group are assigned the same set of roles, and you add and remove permissions from users by adding them to or removing them from the role group. For more information about role groups in Exchange Online, see [Permissions in Exchange Online](permissions-exo.md).
 
