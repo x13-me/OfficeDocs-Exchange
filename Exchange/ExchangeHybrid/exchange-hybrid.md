@@ -167,6 +167,9 @@ Learn more at: [Networking](https://go.microsoft.com/fwlink/p/?LinkId=280178)
   
 ### Unified Messaging
 
+> [!NOTE]
+> Unified Messaging is not available in Exchange 2019.
+
 Unified Messaging (UM) is supported in a hybrid deployment between your on-premises and Office 365 organizations. Your on-premises telephony solution must be able to communicate with Office 365. This may require that you purchase additional hardware and software. 
   
 If you want to move mailboxes from your on-premises organization to Office 365, and those mailboxes are configured for UM, you should configure UM in your hybrid deployment prior to moving those mailboxes. If you move mailboxes before you configure UM in your hybrid deployment, those mailboxes will no longer have access to UM functionality.
