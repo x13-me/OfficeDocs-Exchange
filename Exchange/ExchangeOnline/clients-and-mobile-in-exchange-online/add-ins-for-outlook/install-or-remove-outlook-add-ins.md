@@ -14,6 +14,9 @@ description: "You can install or remove add-ins for Outlook for your organizatio
 
 # Install or remove add-ins for Outlook for your organization
 
+> [!NOTE]
+> For Exchange Online customers, we recommend managing add-ins for your Organization via [Centralized Deployment](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide) within the O365 Admin Portal. The below information is intended for Exchange on-premises deployments.
+
 You can install or remove add-ins for Outlook for your organization by using the EAC or Exchange Online PowerShell. 
   
 > [!NOTE]

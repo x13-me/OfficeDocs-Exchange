@@ -29,7 +29,7 @@ If email senders in your organization who are in the act of composing a message 
 > [!NOTE]
 >-  Exchange Online: DLP is a premium feature that requires an Exchange Online Plan 2 subscription. For more information, see [Exchange Online Licensing](https://go.microsoft.com/fwlink/p/?linkid=286154). 
 >-  Exchange Server: DLP is a premium feature that requires an Exchange Enterprise Client Access License (CAL). For more information about CALs and server licensing, see [Exchange Server Licensing](https://go.microsoft.com/fwlink/p/?linkid=237292). 
->-  If your organization is using Exchange Server or Exchange Online, Policy Tips are available to people sending mail from Outlook 2013, Outlook Web App, or OWA for Devices. However, if your organization is currently using Exchange Server, Policy Tips are only available to people sending email from Outlook 2013. 
+>-  If your organization is using Exchange Server 2013 SP1 (or above) or Exchange Online, Policy Tips are available to people sending mail from Outlook 2013, Outlook Web App, or OWA for Devices. However, if your organization is currently using Exchange Server 2013 before SP1, Policy Tips are only available to people sending email from Outlook 2013. 
   
 ## Default text for Policy Tips and rule options
 
