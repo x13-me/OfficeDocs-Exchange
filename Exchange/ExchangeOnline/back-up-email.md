@@ -9,52 +9,51 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 94d2f62e-5d43-4200-b7ce-33b1f41f1d59
-description: "Learn how Exchange Online "
+description: "Admins can learn about the deleted message recovery options and high-level methods that Exchange Online uses to protect mailbox data."
 ---
 
 # Backing up email in Exchange Online
 
 One of the questions we often hear is "How does Exchange Online back up my data?" You may be asking this because you're concerned about how to recover your data if there is a failure. Or, you may be wondering how to recover your data if it gets accidentally deleted. This topic answers these questions.
 
-## Backing up data in Exchange Online
+## How does Exchange Online protect mailbox data?
 
 Lots of things can disrupt service availability, such as hardware failure, natural disasters, or human error. To ensure that your data is always available and that services continue, even when unexpected events occur, Exchange Online uses the same technologies found in Exchange Server. For example, Exchange Online uses the Exchange Server feature known as database availability groups (DAGs) to replicate Exchange Online mailboxes to multiple databases in separate Microsoft datacenters. As a result, you can readily access up-to-date mailbox data in the event of a failure that affects one of the database copies. In addition to having multiple copies of each mailbox database, the different datacenters back up data for one another. If one fails, the affected data are transferred to another datacenter with limited service interruption and users experience seamless connectivity.
 
 > [!NOTE]
-> You can obtain the most current information related to a service interrupting event by logging into the Service Health Dashboard. For more information, see [View the status of your services](https://go.microsoft.com/fwlink/p/?LinkId=786661). 
+> You can get the latest information related to a service interrupting event by logging into the Service Health Dashboard. For more information, see [View the status of your services](https://go.microsoft.com/fwlink/p/?LinkId=786661). 
 
-### What happens if users accidentally delete data from their mailboxes?
+## What happens if users accidentally delete data from their mailboxes?
 
-Exchange Online provides several options for the recovery of deleted items. These options include: which include manual recovery from Deleted Items, recovery from Recoverable Items, Single Items recovery, and retention policies and tags. Archiving and litigation hold are also available within the appropriate licensing to complement the needs of preserving data.
+Deleted items are stored in the Deleted Items folder of the mailbox. Items deleted from the Deleted Items folder or deleted by pressing Shift+Delete are most likely recoverable if they're dealt with in a timely manner.
 
-- **Manual recovery from Deleted Items and Recoverable Items (deleted item retention)**: Users can restore email items that have been deleted from any email folder. When a user deletes an item, it is kept in the Deletions subfolder of the Recoverable Items folder. Items remain in this folder until the user manually removes them, or until they are automatically removed by retention policies. For more information about recoverable items, see [Recoverable Items folder in Exchange Online](security-and-compliance/recoverable-items-folder/recoverable-items-folder.md).
+For more information about how admins can recover deleted items in Exchange Online, see the following topics:
 
-- **Single item recovery**: In Exchange Online, single item recovery is enabled by default when a new mailbox is created. Messages that are permanently deleted (purged) by the user are retained in the Recoverable Items folder of the mailbox until the deleted item retention period expires (by default, it's 14 days, but you can change it to a maximum of 30 days; see [Change how long permanently deleted items are kept for an Exchange Online mailbox](recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention.md)). For more information, see [Enable or disable single item recovery for a mailbox in Exchange Online](recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery.md).
+- [Recoverable Items folder in Exchange Online](security-and-compliance/recoverable-items-folder/recoverable-items-folder.md).
 
-Email recovery has improved in Exchange Online to allow users to recover single items without having to restore mailbox databases. When the Managed Folder Assistant processes the Recoverable Items folder for a mailbox that has single item recovery enabled, any item in the Purges subfolder isn't purged if the deleted item retention period hasn't elapsed for that item. 
+- [Enable or disable single item recovery for a mailbox in Exchange Online](recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery.md)
 
-- **Retention tags and retention policies**: These settings specify how long a message remains in a mailbox and the action to be taken when the message reaches the specified retention age. When a message reaches its retention age, it's moved to the user's In-Place Archive or deleted. For more information about Retention tags and policies, see  [Retention tags and retention policies in Exchange Online](security-and-compliance/messaging-records-management/retention-tags-and-policies.md).
+- [Change how long permanently deleted items are kept for an Exchange Online mailbox](recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention.md)).
 
-- **Archiving (also known as In-Place Archiving)**:<sup>1</sup> For more information, see [Enable archive mailboxes in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/enable-archive-mailboxes).
+**Note**:
 
-- **In-Place Hold and Litigation hold**: For more information, see [In-Place Hold and Litigation Hold in Exchange Online](security-and-compliance/in-place-and-litigation-holds.md).
+Point in time restoration of mailbox items is out of scope for the Exchange Online service. However, Exchange Online offers extensive retention and recovery support for your organization's email infrastructure, and your mailbox data is available when you need it, no matter what happens. For more information about additional options, see the following topics:
 
-<sup>1</sup> For Exchange Online Archiving licensing requirements, see [Exchange Online Archiving Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description).
+- [High Availability and Business Continuity](https://technet.microsoft.com/library/7b03465e-3b9c-4500-8956-a83377f4c2c3.aspx)
 
-> [!IMPORTANT]
->  With all the previously mentioned options for Deleted item recovery, note that point in time restoration of mailbox items is out of the scope of the Exchange service. However, Exchange Online offers extensive retention and recovery support for an organization's email infrastructure, and your mailbox data is available when you need it, no matter what happens.
->
->  You can find more details about additional options in the following topics:
->  - [High Availability and Business Continuity](https://technet.microsoft.com/library/7b03465e-3b9c-4500-8956-a83377f4c2c3.aspx)
->  - [Exchange Online Service Description](https://technet.microsoft.com/library/7a83da3c-3b6d-4f86-ad4d-6104707cd0ec.aspx)
->  - [Create or remove an In-Place Hold in Exchange Online](security-and-compliance/create-or-remove-in-place-holds.md)
->  - [Manage inactive mailboxes in Exchange Online](https://technet.microsoft.com/library/c60e9ae7-dd02-4c5f-9f5d-7626a9101094.aspx)
+- [Exchange Online Service Description](https://technet.microsoft.com/library/7a83da3c-3b6d-4f86-ad4d-6104707cd0ec.aspx)
+
+- [Create or remove an In-Place Hold in Exchange Online](security-and-compliance/create-or-remove-in-place-holds.md)
+
+- [Manage inactive mailboxes in Exchange Online](https://technet.microsoft.com/library/c60e9ae7-dd02-4c5f-9f5d-7626a9101094.aspx)
 
 ## How do users backup Outlook data?
 
 In Exchange Online, the best way to provide a backup for users is with Exchange Online Archiving. Using Outlook to backup data to .PST files isn't recommended due to the loss of discoverability and control of content.
 
-For more information about Exchange Online Archiving plans, see the [Exchange Online Archiving Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description).
+For more information about Exchange Online Archiving, see [Enable archive mailboxes in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/enable-archive-mailboxes).
+
+For more information about the licensing requirements for Exchange Online Archiving, see the [Exchange Online Archiving Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description).
 
 ## How do users restore Outlook data?
 
