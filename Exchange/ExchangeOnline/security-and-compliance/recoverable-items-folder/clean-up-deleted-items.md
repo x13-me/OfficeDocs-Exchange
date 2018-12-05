@@ -18,9 +18,9 @@ The Recoverable Items folder (known in earlier versions of Exchange as *the dump
 
 How you clean up or delete items from a user's Recoverable Items folder depends on whether the mailbox is placed on In-Place Hold or Litigation Hold, or had single item recovery enabled:
 
-- If a mailbox isn't placed on In-Place Hold or Litigation Hold or doesn't have single item recovery enabled, you can simply delete items from the Recoverable Items folder. After items are deleted, you can't use single item recovery to recover them.
+- If a mailbox isn't placed on In-Place Hold or Litigation Hold or other types of holds in Office 365, or if a mailbox doesn't have single item recovery enabled, you can simply delete items from the Recoverable Items folder. After items are deleted, you can't use single item recovery to recover them.
 
-- If the mailbox is placed on In-Place Hold or Litigation Hold or has single item recovery enabled, you'll want to preserve the mailbox data until the hold is removed or single item recovery is disabled. In this case, you need to perform more detailed steps to clean up the Recoverable Items folder.
+- If the mailbox is placed on In-Place Hold or Litigation Hold or other types of holds in Office 365, or if single item recovery is enabled, you'll want to preserve the mailbox data until the hold is removed or single item recovery is disabled. In this case, you need to perform more detailed steps to clean up the Recoverable Items folder.
 
 To learn more about In-Place Hold and Litigation Hold, see [In-Place Hold and Litigation Hold in Exchange Online](../in-place-and-litigation-holds.md). To learn more about single item recovery, see [Single item recovery](recoverable-items-folder.md#single-item-recovery).
 

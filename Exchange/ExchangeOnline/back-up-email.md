@@ -33,7 +33,7 @@ For more information about how admins can recover deleted items in Exchange Onli
 
 - [Enable or disable single item recovery for a mailbox in Exchange Online](recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery.md)
 
-- [Change how long permanently deleted items are kept for an Exchange Online mailbox](recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention.md)).
+- [Change how long permanently deleted items are kept for an Exchange Online mailbox](recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention.md).
 
 **Note**:
 
@@ -43,15 +43,21 @@ Point in time restoration of mailbox items is out of scope for the Exchange Onli
 
 - [Exchange Online Service Description](https://technet.microsoft.com/library/7a83da3c-3b6d-4f86-ad4d-6104707cd0ec.aspx)
 
-- [Create or remove an In-Place Hold in Exchange Online](security-and-compliance/create-or-remove-in-place-holds.md)
+- [In-Place Hold and Litigation Hold](security-and-compliance/in-place-and-litigation-holds.md)
 
-- [Manage inactive mailboxes in Exchange Online](https://technet.microsoft.com/library/c60e9ae7-dd02-4c5f-9f5d-7626a9101094.aspx)
+- [Office 365 retention policies](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
+
+- [Inactive mailboxes in Office 365](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365)
 
 ## How do users backup Outlook data?
 
 In Exchange Online, the best way to provide a backup for users is with Exchange Online Archiving. Using Outlook to backup data to .PST files isn't recommended due to the loss of discoverability and control of content.
 
-For more information about Exchange Online Archiving, see [Enable archive mailboxes in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/enable-archive-mailboxes).
+For more information about Exchange Online Archiving, see:
+
+- [Enable archive mailboxes in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/enable-archive-mailboxes)
+
+- [Unlimited archiving in Office 365](https://docs.microsoft.com/office365/securitycompliance/unlimited-archiving)
 
 For more information about the licensing requirements for Exchange Online Archiving, see the [Exchange Online Archiving Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description).
 
@@ -63,4 +69,4 @@ To learn how to restore deleted items in Outlook on the web (formerly known as O
 
 ## Offboard a user from Office 365
 
-For more info what to do when a user in your organization leaves, check out [Offboard a user from Office 365](https://go.microsoft.com/fwlink/p/?LinkId=816871). This topic discusses the steps you should take and how to secure your data after an employee leaves your organization.
+For more info what to do when a user in your organization leaves, check out [Remove a former employee from Office 365](https://go.microsoft.com/fwlink/p/?LinkId=816871). This topic discusses the steps you should take and how to secure your data after an employee leaves your organization.
