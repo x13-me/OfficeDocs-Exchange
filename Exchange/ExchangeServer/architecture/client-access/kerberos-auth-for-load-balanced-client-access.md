@@ -3,7 +3,7 @@ title: "Configure Kerberos authentication for load-balanced Client Access servic
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -348,16 +348,16 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
    Get-OutlookAnywhere -Server CAS-1 | Set-OutlookAnywhere -InternalClientAuthenticationMethod  Negotiate
    ```
 
-3. To enable Kerberos authentication for MAPI over HTTP clients, run the following on your Exchange 2016 or Exchange 2019 server that is running Client Access services:
+3. To enable Kerberos authentication for MAPI over HTTP clients, run the following command on your Exchange 2016 or Exchange 2019 server that is running Client Access services:
     
    ```
-   Get-MapiVirtualDirectory -Server CAS-1 | Set-MapiVirtualDirectory -IISAuthenticationMethods Ntlm, Negotiate
+   Get-MapiVirtualDirectory -Server CAS-1 | Set-MapiVirtualDirectory -IISAuthenticationMethods Ntlm,Negotiate
    ```
-3a. When you are in an hybrid configuration with Exchange Online, or utilize OAuth internally, run the following on your Exchange 2016 or Exchange 2019 server that is running Client Access services:
+   In hybrid environments with Exchange Online or if you use OAuth internally, run the following commands on your Exchange 2016 or Exchange 2019 server that's running Client Access services:
 
    ```
    $mapidir = Get-MapiVirtualDirectory –Server CAS-1
-   $mapidir | Set-MapiVirtualDirectory -IISAuthenticationMethods ($mapidir.IISAuthenticationMethods += 'Negotiate')   
+   $mapidir | Set-MapiVirtualDirectory -IISAuthenticationMethods ($mapidir.IISAuthenticationMethods +='Negotiate')   
    ```
 
 4. Repeat steps 2 and 3 for each Exchange 2016 or Exchange 2019 server that is running Client Access services for which you want to enable Kerberos authentication.
