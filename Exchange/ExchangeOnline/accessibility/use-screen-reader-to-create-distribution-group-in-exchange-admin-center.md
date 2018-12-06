@@ -2,7 +2,7 @@
 title: "Use a screen reader to create a new distribution group in the Exchange admin center in Exchange Online"
 ms.author: v-maleo
 author: maggsl
-ms.date.
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online

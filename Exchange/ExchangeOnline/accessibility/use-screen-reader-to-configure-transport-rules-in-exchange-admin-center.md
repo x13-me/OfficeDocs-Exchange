@@ -2,7 +2,7 @@
 title: "Use a screen reader to configure mail flow rules in the Exchange admin center in Exchange Online"
 ms.author: v-maleo
 author: maggsl
-ms.date: 12/9/2016
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online

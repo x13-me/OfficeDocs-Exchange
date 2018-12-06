@@ -2,7 +2,7 @@
 title: "Use a screen reader to add a new room mailbox in the Exchange admin center in Exchange Online"
 ms.author: v-maleo
 author: maggsl
-ms.date: 6/25/2018
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online

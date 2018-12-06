@@ -2,7 +2,7 @@
 title: "Use a screen reader to manage anti-spam protection in Exchange Online"
 ms.author: v-maleo
 author: maggsl
-ms.date.
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -115,7 +115,7 @@ To complete the steps for spam filter customizations covered in this topic, move
 3. To move the focus to one of your spam filters, press the Up Arrow or Down arrow key until you hear the name of the filter you want to delete.
 
     > [!TIP]
-    > You must disable a spam filter before you can delete it. To learn how to disable a filter, in this topic, go to [Enable or disable a spam filter](use-a-screen-reader-to-manage-anti-spam-protection.md#BKMK_EnableFilter).
+    > You must disable a spam filter before you can delete it. To learn how to disable a filter, go to the [Enable or disable a spam filter](#enable-or-disable-a-spam-filter) section in this topic.
 
 4. Press Delete. You hear "Warning, Are you sure you want to delete the policy" followed by the name of the policy. To select the **Yes** button, press Enter. To select the **No** button, press the Tab key, and then press Enter.
 
