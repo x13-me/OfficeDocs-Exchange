@@ -75,7 +75,6 @@ To complete the steps for spam filter customizations covered in this topic, move
 6. As the **Spam filter policy** pop-up window closes and the focus moves back to the **New** button in the **spam filter** content area, you hear "Spam filter, New button..
 
 ### Edit an existing spam filter
-<a name="BKMK_MoveToSpamSet"> </a>
 
 1. [Move the focus to your spam filter settings in the EAC](#move-the-focus-to-your-spam-filter-settings-in-the-eac).
 
