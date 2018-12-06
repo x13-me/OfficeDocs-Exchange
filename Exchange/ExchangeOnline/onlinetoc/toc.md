@@ -466,7 +466,6 @@
 ### [Use screen reader to configure collaboration in Exchange admin center](../accessibility/use-screen-reader-to-configure-collaboration-in-exchange-admin-center.md)
 ### [Use screen reader to create distribution group in Exchange admin center](../accessibility/use-screen-reader-to-create-distribution-group-in-exchange-admin-center.md)
 ### [Use screen reader to configure transport rules in Exchange admin center](../accessibility/use-screen-reader-to-configure-transport-rules-in-exchange-admin-center.md)
-### [Use screen reader to configure voice mail in Exchange admin center](../accessibility/use-screen-reader-to-configure-voice-mail-in-exchange-admin-center.md)
 ### [Use screen reader to define rules that encrypt or decrypt email in Exchange admin center 2016](../accessibility/use-screen-reader-to-define-rules-that-encrypt-or-decrypt-email-in-exchange-admi.md)
 ### [Use screen reader to edit mailbox display name in Exchange admin center](../accessibility/use-screen-reader-to-edit-mailbox-display-name-in-exchange-admin-center.md)
 ### [Use screen reader to export and review audit logs in Exchange admin center](../accessibility/use-screen-reader-to-export-and-review-audit-logs-in-exchange-admin-center.md)
