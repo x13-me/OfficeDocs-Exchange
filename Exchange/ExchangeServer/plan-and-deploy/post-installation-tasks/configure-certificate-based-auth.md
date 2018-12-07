@@ -3,7 +3,7 @@ title: "Configure certificate based authentication in Exchange 2016"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 6/8/2018
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -93,8 +93,10 @@ For detailed syntax and parameter information, see [Install-WindowsFeature](http
 8. On the **SSL Settings** page, verify **Require SSL** is checked, and select the **Client certificates** value **Require**.
     
 9. In the **Actions** pane, click **Apply**.
-    
- **Note**: To perform these procedures on the command line, open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following commands:
+
+ **Note**: Although you can perform these procedures on the command line, the steps might not configure a required registry key. You can use the earlier procedures in IIS Manager (which will definitely set the registry key correctly), or you need to verify that the registry key `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HTTP\Parameters\SslBindingInfo\0.0.0.0:443` is set to the value `1` after you perform the procedures on the command line.
+ 
+ To perform these procedures on the command line, open an elevated command prompt on the Exchange server (a Command Prompt window you open by selecting **Run as administrator**) and run the following commands:
   
 ```
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/owa/" -section:system.webserver/security/access /sslFlags:"Ssl, SslRequireCert" /commit:apphost
