@@ -10,6 +10,7 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 
 description: "Summary: Learn about the preferred architecure (PA) for Exchange Server 2019"
+monikerRange: "exchserver-2019"
 ---
 
 # Exchange 2019 preferred architecture

@@ -26,3 +26,5 @@ description: "Exchange 2016 readiness checks"
 [Network ports for clients and mail flow in Exchange](network-ports.md)
 
 [Overview of Exchange services on Exchange servers](services-overview.md)
+
+[Exchange 2019 preferred architecture](preferred-architecture-2019.md)
