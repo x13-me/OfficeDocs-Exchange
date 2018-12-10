@@ -111,6 +111,7 @@
 #### [Storage configuration](../plan-and-deploy/deployment-ref/storage-configuration.md)
 #### [Network ports](../plan-and-deploy/deployment-ref/network-ports.md)
 #### [Services overview](../plan-and-deploy/deployment-ref/services-overview.md)
+#### [Exchange 2019 preferred architecture](../plan-and-deploy/deployment-ref/preferred-architecture-2019.md)
 ## [Permissions](../permissions/permissions.md)
 ### [Role groups](../permissions/role-groups.md)
 ### [Role group members](../permissions/role-group-members.md)
