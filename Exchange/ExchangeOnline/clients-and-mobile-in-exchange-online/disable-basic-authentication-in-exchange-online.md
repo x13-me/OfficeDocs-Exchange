@@ -119,15 +119,12 @@ For email clients and apps that don't support modern authentication, you need to
 |POP clients|• POP3 <br/>• Authenticated SMTP|
 |IMAP clients|• IMAP4 <br/>• Authenticated SMTP|
    
-Blocking Basic authentication will block the following legacy Exchange Online features:
+**Note**: Blocking Basic authentication will block app passwords in Exchange Online. For more information about app passwords, see [Create an app password for Office 365](https://support.office.com/article/3e7c860f-bda4-4441-a618-b53953ee1183.aspx).
   
-- **App passwords**: For more information about app passwords, see [Create an app password for Office 365](https://support.office.com/article/3e7c860f-bda4-4441-a618-b53953ee1183.aspx).
-
-- **Availability address spaces**: These contain a service account that's used to share calendar free/busy information in hybrid and federated deployments. The service account authenticates with a username and password, so blocking Basic authentication blocks the authentication flow. For more information about availability address spaces in hybrid deployments, see [Demystifying Hybrid Free/Busy](https://blogs.technet.microsoft.com/exchange/2018/02/06/demystifying-hybrid-freebusy-what-are-the-moving-parts/).
 
 ### What do you need to know before you begin?
 
-- Verify that modern authentication for Outlook desktop clients is enabled in your Exchange Online organization (it's disabled by default). For more information, see [Enable or disable modern authentication in Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662).
+- Verify that modern authentication is enabled in your Exchange Online organization (it's enabled by default). For more information, see [Enable or disable modern authentication in Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662).
 
 - Verify your email clients and apps support modern authentication (see the list at the beginning of the topic). Also, verify that your Outlook desktop clients are running the minimum required cumulative updates. For more information, see [Outlook Updates](https://support.office.com/article/472c2322-23a4-4014-8f02-bbc09ad62213).
 
