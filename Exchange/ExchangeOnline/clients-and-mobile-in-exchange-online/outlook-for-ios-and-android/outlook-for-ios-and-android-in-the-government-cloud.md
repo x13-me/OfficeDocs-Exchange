@@ -94,12 +94,19 @@ Prior to Outlook for iOS and Android obtaining FedRAMP approval and certificatio
   
 2. Direct your end-users to follow the relevant steps in the preceding section in order to resume using Outlook for iOS and Android.
     
-## Known limitations of GCC mode
+## Services and features not available 
 
-Features of Outlook for iOS and Android that are not supported in GCC mode.
+The following services and features of Outlook for iOS and Android are not available for Government Community Cloud users:
   
-- **In-app support**: users will not be able to submit support tickets from within the app. They should contact their internal help desk. If necessary, the organization's IT department can then contact Microsoft Support directly.
+- **In-app support**: Users will not be able to submit support tickets from within the app. They should contact their internal help desk and provide logs (via the Share Diagnostics Logs option in Setting -> Help). If necessary, the organization's IT department can then contact Microsoft Support directly.
    
-- **Multiple accounts**: Only one Office 365 GCC account and one OneDrive for Business account can be added to a single device. Personal accounts cannot be added. Customers can use another device for personal accounts, or an ActiveSync client from another provider.
+- **In-app feature requests**: Users will not be able to submit in-app feature requests. Instead, users will be directed to use [Outlook Uservoice](http://outlook.uservoice.com).
+
+- **Multiple accounts**: Only the user's Office 365 GCC account and OneDrive for Business account can be added to a single device. Personal accounts cannot be added. Customers can use another device for personal accounts, or an ActiveSync client from another provider.
     
+- **Calendar Apps**: Calendar apps (Facebook, Wunderlist, Evernote, Meetup) are not available with GCC accounts.
+
+- **Storage Providers**: Only the GCC user's OneDrive for Business storage account can be added within Outlook for iOS and Android. Third-party storage accounts (e.g., Dropbox, Box) cannot be added.
+
+- **Location services**: Bing location services are not available with GCC accounts. Features that rely on location services, like Cortana Time To Leave, are also unavailable.
 
