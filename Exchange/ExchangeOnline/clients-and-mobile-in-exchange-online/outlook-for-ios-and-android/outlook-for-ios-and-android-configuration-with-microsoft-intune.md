@@ -87,7 +87,7 @@ The following configuration settings will disable notifications completely on iO
 The settings in the following table allow you to control the contact fields that will sync between Outlook on iOS and Android and the native Contacts applications.
   
 > [!NOTE]
-> Outlook for Android supports bi-directional contact synchronization. If a user edits a field in the native contacts app that is restricted (such as the **Notes** field), then that data will not synchronize back into Outlook for Android. 
+> Outlook for Android supports bi-directional contact synchronization. However, if a user edits a field in the native contacts app that is restricted (such as the **Notes** field), then that data will not synchronize back into Outlook for Android.
   
 |**Key**|**Value**|**Device Enrollment Type**|
 |:-----|:-----|:-----|
