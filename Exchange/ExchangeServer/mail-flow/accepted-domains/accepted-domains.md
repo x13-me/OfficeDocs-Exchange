@@ -57,7 +57,7 @@ You configure a relay domain as an internal relay domain or as an external relay
     
   - The Send connector that you configure for the internal relay domain is sourced on an internal Mailbox server.
     
-    **Note**: By default, you can't configure a Send connector for an internal relay domain on a subscribed Edge Transport server. Messages sent to recipients in the internal relay domain are automatically forwarded to internal Mailbox servers in the subscribed Active Directory site by using the default "EdgeSync - Inbound to *\<Active Directory site name\>*" Send connector. This Send connector is automatically configured to route mail for all authoritative domains and internal relay domains (the address space value is `--`). For more information, see [Send connectors created automatically by the Edge Subscription](../../architecture/edge-transport-servers/edge-subscriptions.md#SendConnectors).
+    **Note**: By default, you can't configure a Send connector for an internal relay domain on a subscribed Edge Transport server. Messages sent to recipients in the internal relay domain are automatically forwarded to internal Mailbox servers in the subscribed Active Directory site by using the default "EdgeSync - Inbound to *\<Active Directory site name\>*" Send connector. This Send connector is automatically configured to route mail for all authoritative domains and internal relay domains (the address space value is `--`). For more information, see [Send connectors created automatically by the Edge Subscription](../../architecture/edge-transport-servers/edge-subscriptions.md#send-connectors-created-automatically-by-the-edge-subscription).
     
   - You can use internal relay domains in email address policies.
     
