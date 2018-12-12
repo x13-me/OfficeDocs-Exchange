@@ -45,16 +45,16 @@ The optional (supporting) command line switches that are available in unattended
 |_/ActiveDirectorySplitPermissions:\<TrueOrFalse\>_|True or False|False|`/Mode:Install /Roles:Mailbox` or _/PrepareAD_ commands for the first Exchange server in the organization.|Specifies the Active Directory split permissions model when preparing Active Directory. For more information, see the "Active Directory split permissions" section in [Understanding split permissions](https://technet.microsoft.com/library/dd638106(v=exchg.150).aspx).|
 |_/AdamLdapPort:\<TCPPortNumber\>_|A valid TCP port number|50389|`/Mode:Install /Roles:EdgeTransport` commands|Specifies a custom LDAP port to use for the Active Directory Lightweight Directory Services (AD LDS) instance on Edge Transport servers. The value is stored in the registry at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\EdgeTransportRole\AdamSettings\MSExchange\LdapPort`.|
 |_/AdamSslPort:\<TCPPortNumber\>_|A valid TCP port number|50636|`/Mode:Install /Roles:EdgeTransport` commands|Specifies a custom SSL (TLS) port to use for the AD LDS instance on Edge Transport servers. The value is stored in the registry at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\EdgeTransportRole\AdamSettings\MSExchange\SslPort`.|
-|_AnswerFile:"\<PathAndFileName\>"_ <br/> (_af:"\<PathAndFileName\>"_)|The name and location of a text file (for example,"D:\Server data\answer.txt").|n/a|`/Mode:Install /Roles:Mailbox`  or `/Mode:Install /Roles:EdgeTransport` commands|Use this switch to create a text file that you can use to install Exchange on multiple computers with the same settings. You can use the following switches in the answer file: _AdamLdapPort_, _AdamSslPort_, _CustomerFeedbackEnabled_, _DbFilePath_, _DisableAMFiltering_, _DoNotStartTransport_, _EnableErrorReporting_, _IAcceptExchangeServerLicenseTerms_, _LogFolderPath_, _Mdbname_, _OrganizationName_, _TenantOrganizationConfig_, and _UpdatesDir_. Don't use the forward slash character ( / ) with the switches in the answer file. Put each switch or switch/value pair on one line in the file.|
+|_/AnswerFile:"\<PathAndFileName\>"_ <br/> (_af:"\<PathAndFileName\>"_)|The name and location of a text file (for example,"D:\Server data\answer.txt").|n/a|`/Mode:Install /Roles:Mailbox`  or `/Mode:Install /Roles:EdgeTransport` commands|Use this switch to create a text file that you can use to install Exchange on multiple computers with the same settings. You can use the following switches in the answer file: _AdamLdapPort_, _AdamSslPort_, _CustomerFeedbackEnabled_, _DbFilePath_, _DisableAMFiltering_, _DoNotStartTransport_, _EnableErrorReporting_, _IAcceptExchangeServerLicenseTerms_, _LogFolderPath_, _Mdbname_, _OrganizationName_, _TenantOrganizationConfig_, and _UpdatesDir_. Don't use the forward slash character ( / ) with the switches in the answer file. Put each switch or switch/value pair on one line in the file.|
 |_/CustomerFeedbackEnabled:\<TrueOrFalse\>_|True or False|False|`/Mode:Install` and _/PrepareAD_ commands|Specifies whether to allow or prevent Exchange from providing usage feedback to Microsoft to help improve future Exchange features. You can enable or disable error reporting on the server after setup is complete by using the _ErrorReportingEnabled_ parameter on the **Set-ExchangeServer** cmdlet.|
-|_/DbFilePath:"\<Path\>"_|A folder path (for example, "D:\Exchange Database Files\DB01").|**%ExchangeInstallPath%Mailbox\\<DatabaseName\>** where: <br/>• \<DatabaseName> is **Mailbox Database \<10DigitNumber\>** that matches the default name of the database **or** the the value you specified with the _/MdbName_ switch (without the .edb file name extension). <br/>• %ExchangeInstallPath% is **%ProgramFiles%\Microsoft\Exchange Server\V15\\** or the location you specified with the _/TargetDir_ switch.|`/Mode:Install /Roles:Mailbox` commands|Specifies the location of the first mailbox database that's created on the new Mailbox server. You can specify the name of the database file with the _/MdbName_ switch and the location of the database transaction log files with the _/LogFolderPath_ switch.|
+|_/DbFilePath:"\<Path\>\\\<FileName\>.edb"_|A folder path and an .edb filename (for example, "D:\Exchange Database Files\DB01\db01.edb").|**%ExchangeInstallPath%Mailbox\\<DatabaseName\>\\<DatabaseName\>.edb** where: <br/>• \<DatabaseName> is **Mailbox Database \<10DigitNumber\>** that matches the default name of the database **or** the the value you specified with the _/MdbName_ switch (without the .edb file name extension). <br/>• %ExchangeInstallPath% is **%ProgramFiles%\Microsoft\Exchange Server\V15\\** or the location you specified with the _/TargetDir_ switch.|`/Mode:Install /Roles:Mailbox` commands|Specifies the location of the first mailbox database that's created on the new Mailbox server. You can specify the name of the database file with the _/MdbName_ switch and the location of the database transaction log files with the _/LogFolderPath_ switch.|
 |_/DisableAMFiltering_|n/a|n/a|`/Mode:Install /Roles:Mailbox` commands|Disables the built-in Exchange antimalware filtering on Mailbox servers. For more information about antimalware filtering, see [Antimalware protection in Exchange Server](../../antispam-and-antimalware/antimalware-protection/antimalware-protection.md).|
 |_/DomainController:\<ServerNameOrFQDN\>_ <br/> (_/dc:\<ServerNameOrFQDN\>_)|The server name (for example, DC01) or FQDN (for example, dc01.contoso.com) of the domain controller.|A randomly-selected domain controller in the same Active Directory site as the target server where you're running Setup.|All _/Mode_ commands (except when you're installing an Edge Transport server) or _/PrepareAD_, _/PrepareSchema_, _/PrepareDomain_ and _/PrepareAllDomains_ commands|Specifies the domain controller that Exchange Setup uses to read from and write to Active Directory. The domain controller must meet the minimum requirements for [Exchange](../system-requirements.md#network-and-directory-servers). <br/> If you use this switch in _/PrepareSchema_ or _/PrepareAD_ commands that extend the Active Directory schema for Exchange, you must specify the schema master; otherwise, you'll get an error.|
 |_/DoNotStartTransport_|n/a|n/a|`/Mode:Install /Roles:Mailbox`, `/Mode:Install /Roles:EdgeTransport`, and `/Mode:RecoverServer` commands.|Tells Setup to not start the Microsoft Exchange Transport service (mail flow) on Mailbox servers or Edge Transport servers after Setup is complete. You can use this switch to configure additional settings before the server accepts email messages (for example, configure antispam agents or move the queue database back onto a recovered Exchange server.)|
 |_/EnableErrorReporting_|n/a|Disabled|`/Mode:Install`, `/Mode:Upgrade`, and `/Mode:RecoverServer` commands|Specifies whether to allow Exchange to automatically check online for solutions to errors that it encounters. You can enable or disable error reporting on the server after setup is complete by using the _ErrorReportingEnabled_ parameter on the **Set-ExchangeServer** cmdlet.|
 |_/InstallWindowsComponents_|n/a|n/a|`/Mode:Install` commands|Installs the required Windows roles and features for the specified Exchange server role. If a reboot is required, Setup will resume where the installation ended.|
 |_/LogFolderPath:"\<Path\>"_|A folder path (for example, "E:\Exchange Database Logs").|**%ExchangeInstallPath%Mailbox\\<DatabaseName\>** where: <br/> • \<DatabaseName> is **Mailbox Database \<10DigitNumber\>** that matches the default name of the database **or** the the value you specified with the _/MdbName_ switch (without the .edb file name extension). <br/>• %ExchangeInstallPath% is **%ProgramFiles%\Microsoft\Exchange Server\V15\\** or the location you specified with the _/TargetDir_ switch.|`/Mode:Install /Roles:Mailbox` commands|Specifies the location of the transaction log files for the first mailbox database that's created on the new Mailbox server. You can specify the location of the database files with the _/DbFilePath_ switch.|
-|_/MdbName:"\<FileName\>.edb"_|An .edb filename (for example, "db01.edb")|**Mailbox Database \<10DigitNumber\>.edb** (for example, **Mailbox Database 0139595516.edb**).|`/Mode:Install /Roles:Mailbox` commands|Specifies the name of the first mailbox database that's created on the new Mailbox server. You can specify the location of the database files with the _/DbFilePath_ switch.|
+|_/MdbName:"\<FileName\>"_|A database filename without the .edb extension (for example, "db01")|**Mailbox Database \<10DigitNumber\>** (for example, **Mailbox Database 0139595516**).|`/Mode:Install /Roles:Mailbox` commands|Specifies the name of the first mailbox database that's created on the new Mailbox server. You can specify the location of the database files with the _/DbFilePath_ switch.|
 |_/OrganizationName:"\<Organization Name\>"_ <br/> (_/on:"\<Organization Name\>"_)|A text string (for example, "Contoso Corporation").|Blank in command line setup; **First Organization** in the Exchange Setup wizard.|`/Mode:Install /Roles:Mailbox` or _/PrepareAD_ commands for the first Exchange server in the organization.|The organization name is used internally by Exchange, isn't typically seen by users, doesn't affect the functionality of Exchange, and doesn't determine what you can use for email addresses. <br/>• The organization name can't contain more than 64 characters, and can't be blank. <br/>• Valid characters are A to Z, a to z, 0 to 9, hyphen or dash (-), and space, but leading or trailing spaces aren't allowed. <br/>• You can't change the organization name after it's set.|
 |_/SourceDir:"\<Path\>"_ <br/> (or _/s:"\<Path\>"_)|A folder path (for example, "Z:\Exchange).|The ServerRoles\UnifiedMessaging folder on the Exchange installation media.|_/AddUmLanguagePack_ commands in Exchange 2016 (not available in Exchange 2019)|Specifies the location of the language packs (UMLanguagePack.\<Culture\>.exe files) to install on existing Exchange 2016 Mailbox servers.|
 |_/TargetDir:"\<Path\>"_ <br/> (or _/t:"\<Path\>"_)|A folder path (for example, "D:\Program Files\Microsoft\Exchange").|**%ProgramFiles%\Microsoft\Exchange Server\V15\\**|`/Mode:Install` and `/Mode:RecoverServer` commands|Specifies where to install Exchange on the server. You can't install Exchange in the root of a drive (for example, C:\\), or on a ROM drive, RAM disk, network drive, removable disk, or unknown drive type. <br/> When you recover a failed Exchange server that was installed using a custom installation path, you need to use this switch to specify the custom path during the recovery.|
@@ -80,13 +80,13 @@ The optional (supporting) command line switches that are available in unattended
 
   - The account that you use to install Exchange requires the following permissions<sup>*</sup>:
 
-    - **Enterprise Admins group membership**: Required if this is the first Exchange server in the organization.
+   - **Enterprise Admins group membership**: Required if this is the first Exchange server in the organization.
 
-    - **Schema Admins group membership**: Required if you haven't previously [extended the Active Directory schema](../../plan-and-deploy/prepare-ad-and-domains.md#step-1-extend-the-active-directory-schema) or [prepared Active Directory](../../plan-and-deploy/prepare-ad-and-domains.md#step-2-prepare-active-directory) for Exchange 2016 or Exchange 2019.
+   - **Schema Admins group membership**: Required if you haven't previously [extended the Active Directory schema](../../plan-and-deploy/prepare-ad-and-domains.md#step-1-extend-the-active-directory-schema) or [prepared Active Directory](../../plan-and-deploy/prepare-ad-and-domains.md#step-2-prepare-active-directory) for Exchange 2016 or Exchange 2019.
 
-    - **Exchange Organization Management role group membership**: Required if you've already [prepared the Active Directory domain](../../plan-and-deploy/prepare-ad-and-domains.md#step-3-prepare-active-directory-domains) that will contain the Exchange server, or if other Exchange servers already exist in the organization.
+   - **Exchange Organization Management role group membership**: Required if you've already [prepared the Active Directory domain](../../plan-and-deploy/prepare-ad-and-domains.md#step-3-prepare-active-directory-domains) that will contain the Exchange server, or if other Exchange servers already exist in the organization.
 
-    <sup>*</sup> Members of the **Delegated Setup** role group can install Exchange on servers that have already been provisioned in Active Directory by an Exchange administrator. For more information, see [Delegate the installation of Exchange servers](../../plan-and-deploy/deploy-new-installations/delegate-installations.md).
+   <sup>*</sup> Members of the **Delegated Setup** role group can install Exchange on servers that have already been provisioned in Active Directory by an Exchange administrator. For more information, see [Delegate the installation of Exchange servers](../../plan-and-deploy/deploy-new-installations/delegate-installations.md).
 
 - For Edge Transport servers:
   
@@ -108,19 +108,19 @@ The optional (supporting) command line switches that are available in unattended
   
 2. Open a Windows Command Prompt window. For example:
 
-    - Press the Windows key + 'R' to open the **Run** dialog, type cmd.exe, and then press **OK**.
+   - Press the Windows key + 'R' to open the **Run** dialog, type cmd.exe, and then press **OK**.
 
-    - Press **Start**. In the **Search** box, type **Command Prompt**, then in the list of results, select **Command Prompt**.
+   - Press **Start**. In the **Search** box, type **Command Prompt**, then in the list of results, select **Command Prompt**.
 
 3. In the Command Prompt window, use the following syntax:
 
-    ```
-    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms [Switches]
-    ```
+   ```
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms [Switches]
+   ```
 
-    Setup copies the setup files to the local computer.
+   Setup copies the setup files to the local computer.
 
-    Setup checks the prerequisites, including all prerequisites specific to the server roles that you're installing. If you haven't met all the prerequisites, Setup fails and returns an error message that explains the reason for the failure. If you've met all the prerequisites, Setup installs Exchange.
+   Setup checks the prerequisites, including all prerequisites specific to the server roles that you're installing. If you haven't met all the prerequisites, Setup fails and returns an error message that explains the reason for the failure. If you've met all the prerequisites, Setup installs Exchange.
 
 4. Restart the server after the Exchange installation is complete.
 
@@ -132,9 +132,9 @@ The optional (supporting) command line switches that are available in unattended
 
 This example configures "Fabrikam Ltd" as the Exchange organization name in Active Directory and prepares Active Directory for the version of Exchange that's being installed.
 
-    ```
-    Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD /OrganizationName:"Fabrikam Ltd"
-    ```
+   ```
+   Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD /OrganizationName:"Fabrikam Ltd"
+   ```
 
 For more information, see [Prepare Active Directory and domains for Exchange](../prepare-ad-and-domains.md).
 
@@ -142,69 +142,69 @@ For more information, see [Prepare Active Directory and domains for Exchange](..
 
 - This example installs the first Exchange server (Mailbox server) in the organization, configures "Contoso Corporation" as the Exchange organization name in Active Directory, and installs the Exchange management tools on the local server.
 
-    ```
-    Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:Install /Roles:Mailbox /on:"Contoso Corporation"
-    ```
+   ```
+   Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:Install /Roles:Mailbox /on:"Contoso Corporation"
+   ```
 
 - This example installs the Mailbox server role and the management tools in the default folder on the local server in an organization where Active Directory has already been prepared for the version of Exchange that's being installed.
 
-    ```
-    Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /r:MB
-    ```
+   ```
+   Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /r:MB
+   ```
 
 - This example installs the Mailbox server role and the management tools in the "C:\Exchange Server" folder on the local server.
 
-    ```
-    Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:Install /Role:Mailbox /TargetDir:"C:\Exchange Server"
-    ```
+   ```
+   Setup.exe /IAcceptExchangeServerLicenseTerms /Mode:Install /Role:Mailbox /TargetDir:"C:\Exchange Server"
+   ```
 
 - This example installs the Mailbox server role on the local server by using the settings in the ExchangeConfig.txt file.
 
-    ```
-    Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /role:Mailbox /AnswerFile:c:\ExchangeConfig.txt
-    ```
+   ```
+   Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /role:Mailbox /AnswerFile:c:\ExchangeConfig.txt
+   ```
 
 - This example uses the domain controller named DC01 to read from and write to Active Directory while installing the Mailbox server role and the management tools on the local server.
 
-    ```
-    Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /role:Mailbox /DomainController:DC01
-    ```
+   ```
+   Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /role:Mailbox /DomainController:DC01
+   ```
 
 - This example updates Exchange Setup with patches from the specified folder, and then installs the Mailbox server role and the management tools on the local server. In Exchange 2016 only, if any UM language packs are located in this folder, the language packs are automatically installed.
 
-    ```
-    Setup.exe /IAcceptExchangeServerLicenseTerms /role:Mailbox /UpdatesDir:"C:\ExchangeServer\New Patches"
-    ```
+   ```
+   Setup.exe /IAcceptExchangeServerLicenseTerms /role:Mailbox /UpdatesDir:"C:\ExchangeServer\New Patches"
+   ```
 
 ### Install Edge Transport servers in unattended mode
 
 - This example installs the Edge Transport server role and the management tools in the default location on the local server.
 
-    ```
-    Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /r:EdgeTransport
-    ```
+   ```
+   Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /r:EdgeTransport
+   ```
 
 - This example installs the Edge Transport server role and the management tools in the specified folder on the local server.
 
-    ```
-    Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /r:ET /TargetDir:"D:\Exchange Server"
-    ```
+   ```
+   Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Install /r:ET /TargetDir:"D:\Exchange Server"
+   ```
 
 ### Uninstall Exchange from servers in unattended mode
 
 This example completely removes Exchange from the local server and removes the server's Exchange configuration from Active Directory.
 
-    ```
-    Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Uninstall
-    ```
+   ```
+   Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Uninstall
+   ```
 
 ### Remove provisioned Exchange server objects from Active Directory in unattended mode
 
 This example removes the provisioned Exchange server object named Exchange03 from Active Directory _before_ Exchange is installed on the server (if Exchange was already installed on the server, the procedure wouldn't work).
 
-    ```
-    Setup.exe /IAcceptExchangeServerLicenseTerms /rprs:Exchange03
-    ```
+   ```
+   Setup.exe /IAcceptExchangeServerLicenseTerms /rprs:Exchange03
+   ```
 
 For more information, see [Delegate the installation of Exchange servers](delegate-installations.md).
 
@@ -215,15 +215,15 @@ For more information, see [Delegate the installation of Exchange servers](delega
 
 - This example installs the Russian and Spain Spanish language packs on the local Exchange 2016 Mailbox server from the specified folder.
 
-    ```
-    Setup.exe /IAcceptExchangeServerLicenseTerms /AddUmLanguagePack:ru-RU,es-ES /SourceDir:"D:\UM Language Packs"
-    ```
+   ```
+   Setup.exe /IAcceptExchangeServerLicenseTerms /AddUmLanguagePack:ru-RU,es-ES /SourceDir:"D:\UM Language Packs"
+   ```
 
 - This example uninstalls the Korean UM language pack from the local Exchange 2016 Mailbox server.
 
-    ```
-    Setup.exe /IAcceptExchangeServerLicenseTerms /RemoveUmLanguagePack:ko-KR
-    ```
+   ```
+   Setup.exe /IAcceptExchangeServerLicenseTerms /RemoveUmLanguagePack:ko-KR
+   ```
 
 ## Next steps
 
