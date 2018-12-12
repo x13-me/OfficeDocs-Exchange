@@ -106,7 +106,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    4. You can now disable or delete the inbound and outbound connectors. The HCW creates connectors with unique namespace **inbound from \<unique identifier\>** and **outbound from \<unique identifier\>** as shown in the graphic below. 
 
-     ![Hybrid Configuration Wizard creates connectors with unique namespace](media/7b1b6f0b-43d6-4407-8cd7-7dd52e016697.jpg)
+       ![Hybrid Configuration Wizard creates connectors with unique namespace](media/7b1b6f0b-43d6-4407-8cd7-7dd52e016697.jpg)
 
 5. Remove the organization relationship created by the Hybrid Configuration Wizard. Use the following steps to do this:
 
@@ -118,7 +118,7 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    4. Under **Organization Sharing**, remove the organization named **O365 to On-Premises - \<unique identifier\>** as shown in the graphic below. 
 
-     ![Remove the Organization Relationship created by the Hybrid Configuration Wizard](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
+       ![Remove the Organization Relationship created by the Hybrid Configuration Wizard](media/2f0c1077-8785-487a-87a5-a75f0a4f0fea.jpg)
 
 6. If OAuth is configured for an Exchange hybrid deployment, you will want to disable the configuration from both on-premises and Office 365. In most environments, these steps can be skipped because only a small subset of our customers have OAuth configured. 
 
@@ -128,9 +128,9 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    2. Run the following command: 
 
-     ```
-     Get-IntraorganizationConnector -Identity ExchangeHybridOnPremisesToOnline | Set-IntraOrganizationConnector -Enabled $False
-     ```
+      ```
+      Get-IntraorganizationConnector -Identity ExchangeHybridOnPremisesToOnline | Set-IntraOrganizationConnector -Enabled $False
+      ```
 
    To disable the Exchange Online configuration:
 
@@ -138,11 +138,11 @@ Since the hybrid customer base is very diverse, trying to fit all of them into "
 
    2. Run the following command: 
 
-     ```
-     Get-IntraorganizationConnector -Identity ExchangeHybridOnlineToOnPremises | Set-IntraOrganizationConnector -Enabled $False
-     ```
+      ```
+      Get-IntraorganizationConnector -Identity ExchangeHybridOnlineToOnPremises | Set-IntraOrganizationConnector -Enabled $False
+      ```
 
-     The _Identity_ parameter assumes that you used the Hybrid Configuration Wizard to configure OAuth. If this is not the case, you may need to adjust the value you specified for the identity of the connectors. 
+     **Note**: The _Identity_ parameter assumes that you used the Hybrid Configuration Wizard to configure OAuth. If this is not the case, you may need to adjust the value you specified for the identity of the connectors. 
     
 7. Disable directory synchronization for your tenants. When this step is completed, all user management tasks will be done from the Office 365 management tools. This means you will no longer use the Exchange Management Console or Exchange Administration Center (EAC). For more information on how to disable directory synchronization, see [Deactivate directory synchronization](https://technet.microsoft.com/en-us/library/dn144760.aspx).
 
@@ -213,7 +213,7 @@ The graphic below describes the actual end state:
       Get-IntraorganizationConnector -Identity ExchangeHybridOnlineToOnPremises | Set-IntraOrganizationConnector -Enabled $False
       ```
 
-   The Identity parameter assumes that you used the Hybrid Configuration Wizard to configure OAuth. If this is not the case, you may need to adjust the value you specified for the identity of the connectors.
+   **Note**: The Identity parameter assumes that you used the Hybrid Configuration Wizard to configure OAuth. If this is not the case, you may need to adjust the value you specified for the identity of the connectors.
 
 7. There are inbound and outbound connectors created by the Hybrid Configuration Wizard that you will want to delete. Use the following steps to do this:
 
