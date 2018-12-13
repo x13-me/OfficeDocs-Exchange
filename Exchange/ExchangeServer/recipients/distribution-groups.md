@@ -1,9 +1,9 @@
 ---
-title: "Manage distribution groups"
+title: "Manage distribution groups in Exchange Server, Exchange distribution groups, Distribution group Exchange, AD distribution group, Active Directory distribution group"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 7/5/2018
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
