@@ -1,9 +1,9 @@
 ---
-title: "Accepted domains in Exchange Server"
+title: "Accepted domains in Exchange, Exchange acceepted domains, exchange authoritative domain, Internal relay domain, Exchange external relay, Exchange external relay domain"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 7/6/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
