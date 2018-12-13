@@ -44,7 +44,7 @@ To learn more about disconnected mailboxes and perform other related management 
 - To verify that the deleted mailbox that you want to connect a user account to exists in the mailbox database and isn't a soft-deleted mailbox, run the following command.
     
   ```
-  Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | Format-List DisplayName,Database,DisconnectReason
+  Get-MailboxDatabase | ForEach-Object {Get-MailboxStatistics -Database $_.name} | Where { $_.DisplayName -eq "<display name>" } | Format-List DisplayName,Database,DisconnectReason
   ```
 
     The deleted mailbox has to exist in the mailbox database and the value for the _DisconnectReason_ property has to be `Disabled`. If the mailbox has been purged from the database, the command won't return any results.
