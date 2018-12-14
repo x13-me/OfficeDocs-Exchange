@@ -1,9 +1,9 @@
 ---
-title: "Recover a database availability group member server"
+title: "Recover a database availability group member server, recover Exchange DAG member, Exchange DAG server recovery, DAG server recovery, Exchange DAG failover"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 7/9/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -14,7 +14,11 @@ description: "Summary: How to recover an Exchange DAG member after a failure in 
 
 # Recover a database availability group member server
 
-If a Mailbox server that's a member of a database availability group (DAG) is lost or fails, and is unrecoverable and needs replacement, you can perform a server recovery operation. Microsoft Exchange Server Setup includes the switch _/m:RecoverServer_ that can be used to perform the server recovery operation. Running Setup with the _/m:RecoverServer_ switch causes Setup to read the server's configuration information from Active Directory for a server with the same name as the server from which you're running Setup. After the server's configuration information is gathered from Active Directory, the original Exchange files and services are then installed on the server, and the roles and settings that were stored in Active Directory are then applied to the server.
+If a Mailbox server that's a member of a database availability group (DAG) is lost or fails, and is unrecoverable and needs replacement, you can perform a server recovery operation. 
+
+Microsoft Exchange Server Setup includes the switch _/m:RecoverServer_ that can be used to perform the server recovery operation. Running Setup with the _/m:RecoverServer_ switch causes Setup to read the server's configuration information from Active Directory for a server with the same name as the server from which you're running Setup. 
+
+After the server's configuration information is gathered from Active Directory, the original Exchange files and services are then installed on the server, and the roles and settings that were stored in Active Directory are then applied to the server.
   
 Looking for other management tasks related to DAGs? Check out [Managing database availability groups](http://technet.microsoft.com/library/4abde67b-4995-4a57-894f-ba76aa72341c.aspx).
   

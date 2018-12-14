@@ -1,9 +1,9 @@
 ---
-title: "Backup, restore, and disaster recovery"
+title: "Exchange Server data protection, Exchange disaster recovery, Exchange backup, Exchange VSS Writer, VSS Backup Exchange, Exchange Server data recovery, Exchange data recovery"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 7/9/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
