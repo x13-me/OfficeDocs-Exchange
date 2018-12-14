@@ -1,9 +1,9 @@
 ---
-title: "Manage linked mailboxes"
+title: "Exchange linked mailboxes, linked mailboxes Exchange, create linked mailbox Exchange, change linked mailbox Exchange"
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
-ms.date: 7/5/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

@@ -1,9 +1,9 @@
 ---
-title: "Prepare Active Directory and domains for Exchange Server"
+title: "Prepare Active Directory and domains for Exchange Server, Active Directory Exchange Server, Exchange Server Active Directory, Exchange 2019 Active Directory"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 7/26/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: exchange-server-it-pro

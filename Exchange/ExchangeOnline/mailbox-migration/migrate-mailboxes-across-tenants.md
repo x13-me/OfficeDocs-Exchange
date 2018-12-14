@@ -3,7 +3,6 @@ title: "How to migrate mailboxes from one Office 365 tenant to another"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 8/15/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: exchange-online
