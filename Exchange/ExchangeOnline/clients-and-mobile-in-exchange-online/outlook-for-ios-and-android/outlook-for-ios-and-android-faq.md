@@ -1,5 +1,5 @@
 ---
-title: "Outlook for iOS and Android in Exchange Online FAQ"
+title: "Outlook Exchange Online FAQ, Outlook for iOS Exchange FAQ, Outlook for Android FAQ, Outlook for iOS security concerns, Outlook for Android security concerns, Outlook for iOS cloud architecture, Outlook for Android cloud architecture, Outlook app Office 365 architecture, Outlook app attachment faq, Outlook app contacts faq, Outlook app license faq"
 ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4

@@ -20,7 +20,7 @@ The following figure illustrates the relationship between the linked user accoun
 
  **Linked mailboxes**
 
-![Trust relationship between forests with linked mailboxes](../media/66033cd3-9501-45f6-bfaa-823f7f25d687.png)
+![Trust relationship between forests with linked mailboxes, linked mailbox Exchange, Exchange linked mailbox](../media/66033cd3-9501-45f6-bfaa-823f7f25d687.png)
 
 > [!NOTE]
 > A trust between the Exchange forest and at least one account forest must be set up before you can create linked mailboxes. At a minimum, you must set up a one-way, outgoing trust so that the Exchange forest trusts the account forest. For more information, see [Learn more about setting up a forest trust to support linked mailboxes](https://technet.microsoft.com/library/jj156983.aspx).

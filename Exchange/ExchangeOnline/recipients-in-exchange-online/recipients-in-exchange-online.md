@@ -1,9 +1,9 @@
 ---
-title: "Recipients in Exchange Online"
+title: "Recipients in Exchange Online, Exchange Online mail recipients, Exchange recipients, MS Exchange recipient"
 ms.author: kwekua
 author: kwekua
 manager: scotv
-ms.date: 6/24/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
