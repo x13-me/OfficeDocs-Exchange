@@ -1,5 +1,5 @@
 ---
-title: "Use batch migration to migrate Exchange Server public folders to Exchange Online"
+title: "Exchange public folder migration, migrate public folders to Office 365, public folder migration Exchange to Office, migrate Exchange public folders to Office"
 ms.author: dmaguire
 author: msdmaguire
 ms.audience: ITPro

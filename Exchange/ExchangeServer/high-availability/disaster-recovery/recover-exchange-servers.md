@@ -1,5 +1,5 @@
 ---
-title: "Recover Exchange servers"
+title: "Recover Exchange server, recover lost Exchange Server, Lost Exchange Server recovery"
 ms.author: chrisda
 author: chrisda
 manager: serdars
