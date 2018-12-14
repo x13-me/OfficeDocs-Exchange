@@ -312,9 +312,7 @@ For detailed syntax and parameter information, see the following topics:
     .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
     ```
 
-    > [!IMPORTANT]
-    > The public folder-to-mailbox mapping file should not exceed 1,000 rows. If this file exceeds 1,000 rows, your public folder structure needs to be simplified. Proceeding with a file of greater than 1,000 rows is not recommended and could cause migration errors. 
-  
+     
     - Before you run the script, use the following command to check the current public folder limits in your Exchange Online tenant. Then, note the current quota values for public folders.
 
       ```
