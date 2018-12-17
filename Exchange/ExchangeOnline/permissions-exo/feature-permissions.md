@@ -1,9 +1,9 @@
 ---
-title: "Feature permissions in Exchange Online"
+title: "Feature permissions in Exchange Online, permissions Exchange Online, Exchange Online management roles, Exchange Online management permissions, Exchange Online admin permissions, Exchange online features"
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 6/23/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online

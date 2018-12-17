@@ -224,7 +224,7 @@ ForEach ($mbx in $Mailboxes) {
     # Loop through every address assigned to the mailbox  
     Foreach ($address in $mbx.EmailAddresses) {  
        # If it contains XXX,  Record it  
-        if ($address.ToString().ToLower().contains("onmicrosoft.com")) {  
+        if ($address.ToString().ToLower().contains($proxyaddr)) {  
             # This is an email address. Add it to the list  
             $obj = "" | Select-Object Alias,EmailAddress  
             $obj.Alias = $mbx.Alias  
