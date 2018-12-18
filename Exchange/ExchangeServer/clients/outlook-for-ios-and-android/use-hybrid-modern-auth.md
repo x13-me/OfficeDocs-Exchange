@@ -130,8 +130,6 @@ The hybrid Modern Authentication architecture has the following technical requir
   - Intune standalone + Azure Active Directory Premium 1 or Azure Active Directory Premium 2
     
   - Enterprise Mobility + Security E3, Enterprise Mobility + Security E5
-    
- <sup>*</sup> Microsoft Secure Productive Enterprise (SPE) includes all licenses necessary for Office 365 and EMS.
   
 ## Implementation steps
 
