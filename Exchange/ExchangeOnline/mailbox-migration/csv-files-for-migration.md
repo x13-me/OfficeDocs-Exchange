@@ -89,7 +89,7 @@ Attribute values in the CSV file override the value of the corresponding paramet
 In this example, let's say you create a batch for an onboarding remote move migration in a hybrid deployment to move archive mailboxes to Office 365 with the following [New-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=624565) command. 
   
 ```
-New-MigrationBatch -Name OnBoarding1 -SourceEndpoint RemoteEndpoint1 -TargetDeliveryDomain cloud.contoso.com -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\OnBoarding1.csv")) -MailboxType ArchiveOnly -AutoStart
+New-MigrationBatch -Name OnBoarding1 -SourceEndpoint RemoteEndpoint1 -TargetDeliveryDomain cloud.contoso.com -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\OnBoarding1.csv")) -ArchiveOnly:$true -AutoStart
 ```
 
 But you also want to move the primary mailboxes for selected users, so a portion of the OnBoarding1.csv file for this migration batch would look like this:

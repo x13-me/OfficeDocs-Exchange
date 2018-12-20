@@ -72,6 +72,7 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
     - Exchange 2013 CU14 or later.
 
 - After you have followed the instructions in this article to configure your on-premises public folders for a hybrid deployment, users who are external to your organization won't be able to send messages to your on-premises public folders unless you take additional steps. You can either set the accepted domain for the public folders to Internal Relay (see [Manage accepted domains in Exchange Online](https://technet.microsoft.com/library/jj945194%28v=exchg.150%29.aspx) for more information) or you can disable Directory Based Edge Blocking (DBEB), as described in [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://technet.microsoft.com/library/dn600322%28v=exchg.150%29.aspx).
+-In the hybrid mode, EXO users cannot access Public Folders using OWA.
     
 ## Step 2: Make remote public folders discoverable
 <a name="Discoverable"> </a>
