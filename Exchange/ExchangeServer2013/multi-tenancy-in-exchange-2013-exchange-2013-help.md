@@ -33,5 +33,5 @@ Exchange 2013 supports multi-tenancy by leveraging the following primary compone
 
   - **Hosting management solutions**   Some administrators using Exchange 2013 to provide a hosted Exchange solution will benefit from using a customized hosting management approach. Due to some limitations of the Exchange Administration Center (EAC), Microsoft works with third-party vendors to assist them in the development of control panel and automation solutions that are in compliance with the guidelines and approved framework for hosted Exchange 2013 organizations. We recommend that organizations configuring a hosted Exchange solution leverage these tools to manage their hosted organizations where circumstances require it.
     
-    To learn more about hosted management solutions, including validated solution vendors, see [Exchange Server 2013 hosting and multi-tenancy solutions and guidance](https://go.microsoft.com/fwlink/?linkid=275036)
+    To learn more about hosted management solutions, including validated solution vendors, see [Exchange Server 2013 hosting and multi-tenancy solutions and guidance](https://www.microsoft.com/en-us/download/details.aspx?id=36790)
 
