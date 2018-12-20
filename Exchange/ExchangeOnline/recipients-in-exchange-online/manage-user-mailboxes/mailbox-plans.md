@@ -14,7 +14,7 @@ description: "Admins can learn about mailbox plans and how view, modify, and set
 
 # Mailbox plans in Exchange Online
 
-A mailbox plan is a template that automatically configures mailbox properties in Exchange Online. Mailbox plans correspond to Office 365 license types. When you assign a license to a user, the corresponding mailbox plan is used to configure the settings on the mailbox (a new mailbox or an existing mailbox).
+A mailbox plan is a template that automatically configures mailbox properties in Exchange Online. Mailbox plans correspond to Office 365 license types. When you assign a license to a new user, the corresponding mailbox plan is used to configure the settings on the new mailbox that's created. If you change the license that's assigned to an existing user, the settings in the mailbox plan that's associated with the new license are applied to the user's existing mailbox.
 
 The following table describes the mailbox plans that you're likely to see in Exchange Online.
 
@@ -31,36 +31,37 @@ The following table describes the mailbox plans that you're likely to see in Exc
 
 - The name value of the mailbox plan is appended with `-<GUID>` (for example, `ExchangeOnlineEnterprise-44107b46-a8c4-4573-a7ba-bb004fde4d58`).
 
-For every mailbox plan (returned by the **Get-MailboxPlan** cmdlet), there's a corresponding Client Access services (CAS) mailbox plan (returned by the **Get-CasMailboxPlan** cmdlet). The names and display names of the mailbox plans and CAS mailbox plans are identical, and the relationship between them is unbreakable (the mailbox plan and the corresponding CAS mailbox plan are both assigned to the mailbox when you license the user).
+For every mailbox plan (returned by the **Get-MailboxPlan** cmdlet), there's a corresponding Client Access services (CAS) mailbox plan (returned by the **Get-CasMailboxPlan** cmdlet). The names and display names of the mailbox plans and CAS mailbox plans are identical, and the relationship between them is unbreakable (both the mailbox plan and the corresponding CAS mailbox plan are assigned to the mailbox when you license the user; you can't assign just the mailbox plan or just the CAS mailbox plan separately).
 
-The _modifiable_ settings that are available in mailbox plans are described in the following table:
+The _modifiable_ settings that are available in mailbox plans by using the **Set-MailboxPlan** cmdlet are described in the following table:
 
-|**Setting**|**Default value**|**Cmdlet**|**Description**|
-|:-----|:-----|:-----|:-----|
-|_ActiveSyncEnabled_|True|**Set-CasMailboxPlan**|Enables or disables Exchange ActiveSync (EAS) access to mailboxes.|
-|_ImapEnabled_|True|**Set-CasMailboxPlan**|Enables or disables IMAP4 access to mailboxes.|
-|_IssueWarningQuota_|Varies by license|**Set-MailboxPlan**|The user receives a warning message when their mailbox reaches the specified size. <br/><br/> For more information, see [Capacity alerts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#capacity-alerts).|
-|_MaxReceiveSize_|Varies by license|**Set-MailboxPlan**|The maximum total message size that can be received by the mailbox. This value is roughly 33% larger than the actual message size to account for Base64 encoding. <br/><br/> For more information, see [Message limits across Office 365 options](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-across-office-365-options).|
-|_MaxSendSize_|Varies by license|**Set-MailboxPlan**|The maximum total message size that can be sent from the mailbox. This value is roughly 33% larger than the actual message size to account for Base64 encoding. <br/><br/> For more information, see [Message limits across Office 365 options](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-across-office-365-options).|
-|_OwaMailboxPolicy_|OwaMailboxPolicy-Default|**Set-CasMailboxPlan**|For more information about Outlook on the web (formerly known as Outlook Web App) mailbox policies, see [OWA Mailbox Policy attributes](../../../ExchangeHybrid/org-config-transfer-attributes/owa-mailbox-policy.md).|
-|_PopEnabled_|True|**Set-CasMailboxPlan**|Enables or disables IMAP4 access to mailboxes.|
-|_ProhibitSendQuota_|Varies by license|**Set-MailboxPlan**|The user receives a warning message and they can't send messages when their mailbox reaches the specified size (which must be greater than the _IssueWarningQuota_ value). <br/><br/> For more information, see [Capacity alerts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#capacity-alerts).|
-|_ProhibitSendReceiveQuota_|Varies by license|**Set-MailboxPlan**|The user receives a warning message and they can't send or receive messages when their mailbox reaches the specified size (which must be greater than the _ProhibitSendQuota_ value). <br/><br/> For more information, see [Capacity alerts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#capacity-alerts).|
-|_RetainDeletedItemsFor_|`14.00:00:00` (14 days)|**Set-MailboxPlan**|Depending on your subscription, you can change this value up to 30 days. For more information, see [Change how long permanently deleted items are kept for an Exchange Online mailbox](change-deleted-item-retention.md).|
-|_RetentionPolicy_|Default MRM Policy|**Set-MailboxPlan**|For more information, see [Retention tags and retention policies in Exchange Online](../../security-and-compliance/messaging-records-management/retention-tags-and-policies.md).|
-|_RoleAssignmentPolicy_|Default Role Assignment Policy|**Set-MailboxPlan**|Grants users permissions to their own mailbox and distribution groups. For more information, see [Role assignment policies in Exchange Online](../../permissions-exo/role-assignment-policies.md).|
+|**Setting**|**Default value**|**Description**|
+|:-----|:-----|:-----|
+|_IssueWarningQuota_|Varies by license.|The user receives a warning message when their mailbox reaches the specified size. <br/><br/> For more information, see [Capacity alerts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#capacity-alerts).|
+|_MaxReceiveSize_|Varies by license.|The maximum total message size that can be received by the mailbox. This value is roughly 33% larger than the actual message size to account for Base64 encoding. <br/><br/> For more information, see [Message limits across Office 365 options](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-across-office-365-options).|
+|_MaxSendSize_|Varies by license.|The maximum total message size that can be sent from the mailbox. This value is roughly 33% larger than the actual message size to account for Base64 encoding. <br/><br/> For more information, see [Message limits across Office 365 options](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-across-office-365-options).|
+|_ProhibitSendQuota_|Varies by license.|The user receives a warning message and they can't send messages when their mailbox reaches the specified size (which must be greater than the _IssueWarningQuota_ value). <br/><br/> For more information, see [Capacity alerts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#capacity-alerts).|
+|_ProhibitSendReceiveQuota_|Varies by license.|The user receives a warning message and they can't send or receive messages when their mailbox reaches the specified size (which must be greater than the _ProhibitSendQuota_ value). <br/><br/> For more information, see [Capacity alerts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#capacity-alerts).|
+|_RetainDeletedItemsFor_|`14.00:00:00` (14 days)|Depending on your subscription, you can change this value up to 30 days. For more information, see [Change how long permanently deleted items are kept for an Exchange Online mailbox](change-deleted-item-retention.md).|
+|_RetentionPolicy_|Default MRM Policy|For more information, see [Retention tags and retention policies in Exchange Online](../../security-and-compliance/messaging-records-management/retention-tags-and-policies.md).|
+|_RoleAssignmentPolicy_|Default Role Assignment Policy|Grants users permissions to their own mailbox and distribution groups. For more information, see [Role assignment policies](../../permissions-exo/permissions-exo.md#role-assignment-policies).|
 
-**Note**: To change these settings on a _existing_ mailbox, you can:
+The _modifiable_ settings that are available in CAS mailbox plans by using the **Set-CasMailboxPlan** cmdlet are described in the following table:
 
-- Modify the mailbox directly in the Exchange admin center (EAC) or in Exchange Online PowerShell (the **Set-Mailbox** and **Set-CasMailbox** cmdlets).
+|**Setting**|**Default value**|**Description**|
+|:-----|:-----|:-----|
+|_ActiveSyncEnabled_|True|Enables or disables Exchange ActiveSync (EAS) access to the mailbox.|
+|_ImapEnabled_|Varies by license.|Enables or disables IMAP4 access to the mailbox.|
+|_OwaMailboxPolicy_|OwaMailboxPolicy-Default|Configures the user's settings in Outlook on the web (formerly known as Outlook Web App). For more information about Outlook on the web mailbox policies, see [Outlook on the web mailbox policies in Exchange Online](../../clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies.md).|
+|_PopEnabled_|True|Enables or disables IMAP4 access to the mailbox.|
 
-- Assign a different license to the user. The mailbox plan that corresponds to the new license will be applied to the existing mailbox.
+Modifying the settings of a mailbox plan won't update the settings of an existing mailbox that's already has the mailbox plan applied. To modify these settings on a existing mailbox, you can:
 
-Simply modifying the settings of the mailbox plan that's already assigned to the mailbox (the **MailboxPlan** property value) doesn't affect existing mailboxes.
+- Modify the corresponding mailbox settings directly in the Exchange admin center (EAC) or in Exchange Online PowerShell (the **Set-Mailbox** and **Set-CasMailbox** cmdlets).
 
-## Procedures for mailbox plans
+- Assign a different license to the user. The mailbox plan that corresponds to the new license will be applied to the existing mailbox (the settings in the mailbox plan will be applied to the existing mailbox).
 
-### What do you need to know before you begin?
+## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 2 minutes.
 
@@ -71,9 +72,9 @@ Simply modifying the settings of the mailbox plan that's already assigned to the
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
-### Use Exchange Online PowerShell to view mailbox plans
+## Use Exchange Online PowerShell to view mailbox plans
 
-This example returns a summary list of all mailbox plans:
+These examples return a summary list of all mailbox plans:
 
 ```
 Get-MailboxPlan
@@ -83,7 +84,7 @@ Get-MailboxPlan
 Get-CasMailboxPlan
 ```
 
-This example returns the modifiable property values in all mailbox plans:
+These examples return the modifiable property values in all mailbox plans:
 
 ```
 Get-MailboxPlan | Format-List DisplayName,IsDefault,Max*Size,IssueWarningQuota,Prohibit*Quota,RetainDeletedItemsFor,RetentionPolicy,RoleAssignmentPolicy
@@ -93,7 +94,7 @@ Get-MailboxPlan | Format-List DisplayName,IsDefault,Max*Size,IssueWarningQuota,P
 Get-CasMailboxPlan | Format-List DisplayName,ActiveSyncEnabled,ImapEnabled,PopEnabled,OwaMailboxPolicy
 ```
 
-This example returns detailed information for the mailbox plan named ExchangeOnlineEnterprise.
+These examples return detailed information for the mailbox plan named ExchangeOnlineEnterprise.
 
 ```
 Get-MailboxPlan -Identity ExchangeOnlineEnterprise | Format-List
@@ -109,7 +110,7 @@ This example returns the mailbox plan that's assigned to the user named Suk-Jae 
 Get-Mailbox -Identity "Suk-Jae Yoo" | Format-List MailboxPlan
 ```
 
-To return all mailboxes that have a specific mailbox plan applied:
+To return all mailboxes that had a specific mailbox plan applied:
 
 1. Run the following command to find the distinguished name of the mailbox plan:
 
@@ -131,9 +132,9 @@ To return all mailboxes that have a specific mailbox plan applied:
 
 For detailed syntax and parameter information, see [Get-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxplan) and [Get-CasMailboxPlan](https://docs.microsoft.com/powershell/module/exchange/client-access/get-casmailboxplan).
 
-### Use Exchange Online PowerShell to specify the default mailbox plan
+## Use Exchange Online PowerShell to specify the default mailbox plan
 
-The default mailbox plan is used as the default template for new mailboxes that you create or enable.
+The default mailbox plan is used as the default template for new mailboxes that you create without a license (because the license specifies the mailbox plan).
 
 To specify the default mailbox plan, use the following syntax:
 
@@ -141,7 +142,7 @@ To specify the default mailbox plan, use the following syntax:
 Set-MailboxPlan -Identity <MailboxPlanIdentity> -IsDefault
 ```
 
-This example specifies the mailbox plan with the display name ExchangeOnline as the default mailbox plan.
+This example specifies the ExchangeOnline mailbox plan as the default.
 
 ```
 Set-MailboxPlan -Identity ExchangeOnline -IsDefault
@@ -149,7 +150,7 @@ Set-MailboxPlan -Identity ExchangeOnline -IsDefault
 
 For detailed syntax and parameter information, see [Set-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailboxplan).
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully specified the default mailbox plan, use any of the following steps: 
 
@@ -159,9 +160,13 @@ To verify that you've successfully specified the default mailbox plan, use any o
    Get-MailboxPlan | Format-Table -Auto DisplayName,IsDefault
    ```
 
-- Create a new mailbox and verify the license that corresponds to the default mailbox plan is selected by default. For more information, see [Create user mailboxes in Exchange Online](../create-user-mailboxes.md).
+- Create a new mailbox without assigning a license as described in [Create user mailboxes in Exchange Online](../create-user-mailboxes.md). Replace \<MailboxIdentity\> with the name, alias, account name, or email address of the mailbox, and run the following command in Exchange Online PowerShell to verify the **MailboxPlan** property value:
 
-### Use Exchange Online PowerShell to modify mailbox plans
+   ```
+   Get-Mailbox -Identity <MailboxIdentity> | Format-List MailboxPlan
+   ```
+
+## Use Exchange Online PowerShell to modify mailbox plans
 
 To modify a mailbox plan, use the following syntax:
 
@@ -179,7 +184,7 @@ This example modifies the mailbox plan named ExchangeOnlineEnterprise to use the
 Set-MailboxPlan -Identity -RetentionPolicy "Contoso Retention Policy"
 ```
 
-This example disables Exchange ActiveSync, POP3, and IMAP4 access to mailboxes in all mailbox plans.
+This example disables Exchange ActiveSync, POP3, and IMAP4 access to mailboxes in all CAS mailbox plans.
 
 ```
 Get-CASMailboxPlan | Set-CASMailboxPlan -ActiveSyncEnabled $false -ImapEnabled $false -PopEnabled $false
@@ -187,7 +192,7 @@ Get-CASMailboxPlan | Set-CASMailboxPlan -ActiveSyncEnabled $false -ImapEnabled $
 
 For detailed syntax and parameter information, see [Set-MailboxPlan](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailboxplan) and [Set-CasMailboxPlan](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailboxplan).
 
-#### How do you know this worked?
+### How do you know this worked?
 
 To verify that you've successfully modified a mailbox plan, use any of the following steps:
 
@@ -201,7 +206,13 @@ To verify that you've successfully modified a mailbox plan, use any of the follo
    Get-CasMailboxPlan | Format-List DisplayName,ActiveSyncEnabled,ImapEnabled,PopEnabled,OwaMailboxPolicy
    ```
 
-- Create a new mailbox and assign a license as described in [Create user mailboxes in Exchange Online](../create-user-mailboxes.md) or assign a different license to an existing mailbox. Replace \<MailboxIdentity\> with the name, alias, account name, or email address of the mailbox, and run the following commands in Exchange Online PowerShell to verify the property values:
+- Using the license that corresponds to the modified mailbox plan, do one of the following steps:
+
+   - Create a new mailbox and assign the license as described in [Create user mailboxes in Exchange Online](../create-user-mailboxes.md).
+
+   - Assign the license to an existing mailbox user who currently has a different license (therefore, mailbox plan) assigned.
+
+   Replace \<MailboxIdentity\> with the name, alias, account name, or email address of the mailbox, and run the following commands in Exchange Online PowerShell to verify the property values:
 
    ```
    Get-Mailbox -Identity "<MailboxIdentity>" | Format-List MailboxPlan,Max*Size,IssueWarningQuota,Prohibit*Quota,RetainDeletedItemsFor,RetentionPolicy,RoleAssignmentPolicy
