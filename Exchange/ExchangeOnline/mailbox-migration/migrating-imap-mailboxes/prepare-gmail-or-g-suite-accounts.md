@@ -34,7 +34,20 @@ description: "Before you connect to your Gmail account from Outlook on the web, 
 Before you [connect to your Gmail](https://support.office.com/article/d7012ff0-924f-4f78-8aca-c3912d886c4d.aspx) account from Outlook on the web, or [add a Gmail](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) account to Outlook, you need to prepare your Gmail account. You need to turn on 2-step verification for Gmail and then create an app password that Office 365 will use with your Gmail address to make the connection. 
   
 You will also have to do this if your admin is planning to migrate your [Gmail](https://support.office.com/article/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7.aspx) or [G Suite Gmail](migrate-g-suite-mailboxes.md) to Office 365. 
-  
+
+## Enable IMAP for Gmail and G Suite Accounts
+
+**Please make sure that you have enabled IMAP *before* you start the migration process.** Failure to do so will result in migration-related issues.
+
+To enable IMAP for Gmail or G Suite Accounts:
+
+1. Sign in to your Gmail/G Suite account using a supported browser.
+2. Click the **gear icon** located at the top right of the screen.
+3. In the drop-down menu that appears, click **Settings**.
+4. Switch to the **Forwarding and POP/IMAP** tab.
+5. Scroll down to the **IMAP access**, and make sure that **Enable IMAP** is selected.
+6. Scroll to the bottom. Click **Save Changes**.
+
 ## Enable your Gmail to be connected by Office 365
 <a name="BK_appPassword"> </a>
 
