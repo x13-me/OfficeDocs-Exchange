@@ -242,7 +242,8 @@ When you update to Exchange 2016 Cumulative Update 1 (CU1) from Exchange 2016 RT
 
 [In-place Archiving, retention, and eDiscovery](new-features.md#Archiving2013)
 
-<a name="Architecture2013"> </a> ### Exchange 2016 architecture
+### Exchange 2016 architecture
+<a name="Architecture2013"> </a>
 
 Today, CPU horsepower is significantly less expensive and is no longer a constraining factor. With that constraint lifted, the primary design goal for Exchange 2016 is for simplicity of scale, hardware utilization, and failure isolation. With Exchange 2016, we reduced the number of server roles to two: the Mailbox and Edge Transport server roles.
 
