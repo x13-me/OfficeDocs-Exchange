@@ -22,11 +22,7 @@ In Microsoft Exchange, you can use data loss prevention (DLP) policy templates t
     
 - United States Personally Identifiable Information (U.S. PII)
     
-You can customize any of these DLP templates or use them as-is. DLP policy templates are built on top of transport rules that include new conditions or predicates and actions. DLP policies support the full range of traditional transport rules, and you can add the additional rules after a DLP policy has been established. For more information about policy templates, see [DLP Policy Templates](https://technet.microsoft.com/library/c7b1a8e4-30d9-4409-85c5-f85ae023737d.aspx). To learn more about transport rule capabilities, see [Transport Rules](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx) (Exchange Server 2016) or [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md). Once you have started enforcing a policy, you can learn about how to observe the results by reviewing the following topics:
-  
-Exchange Server: [DLP Policy Detection Management](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx)
-  
-Exchange Online: [DLP policy detection reports](https://technet.microsoft.com/library/84295dda-5bf7-4fa5-a1ee-3f761501cfe8.aspx)
+You can customize any of these DLP templates or use them as-is. DLP policy templates are built on top of mail flow rules (also known as transport rules) that include new conditions or predicates and actions. DLP policies support the full range of traditional mail flow rules, and you can add the additional rules after a DLP policy has been established. For more information about policy templates, see [What the DLP policy templates include](https://docs.microsoft.com/office365/securitycompliance/what-the-dlp-policy-templates-include). To learn more about mail flow rule capabilities, see [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md). Once you have started enforcing a policy, you can learn about how to observe the results by reviewing the Exchange Online: [DLP policy detection reports](https://technet.microsoft.com/library/84295dda-5bf7-4fa5-a1ee-3f761501cfe8.aspx)
   
 > [!CAUTION]
 > You should enable your DLP policies in test mode before running them in your production environment. During such tests, it is recommended that you configure sample user mailboxes and send test messages that invoke your test policies in order to confirm the results. 
