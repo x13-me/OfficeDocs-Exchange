@@ -3,7 +3,7 @@ title: "Remove an Outlook on the web mailbox policy from Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -24,7 +24,7 @@ For additional management tasks related to Outlook on the web mailbox policies, 
 
 - Estimated time to complete each procedure: 3 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook on the web mailbox policies" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook on the web mailbox policies" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
@@ -37,7 +37,7 @@ For additional management tasks related to Outlook on the web mailbox policies, 
 
 1. In the EAC, go to **Permissions** \> **Outlook Web App policies**, select the policy that you want to remove, and then click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png).
 
-2. In the confirmation window that appears, click **Yes** to remove the mailbox policy, or click **No** to cancel. 
+2. In the confirmation window that appears, click **Yes** to remove the mailbox policy, or click **No** to cancel.
 
 ## Use Exchange Online PowerShell to remove an Outlook on the web mailbox policy
 
@@ -57,7 +57,7 @@ For detailed syntax and parameter information, see [Remove-OwaMailboxPolicy](htt
 
 ## How do you know this worked?
 
-To verify that you've successfully removed an Outlook on the web mailbox policy, do any of the following steps: 
+To verify that you've successfully removed an Outlook on the web mailbox policy, do any of the following steps:
 
 - In the EAC, go to **Permissions** \> **Outlook Web App policies** and verify the policy is no longer listed.
 

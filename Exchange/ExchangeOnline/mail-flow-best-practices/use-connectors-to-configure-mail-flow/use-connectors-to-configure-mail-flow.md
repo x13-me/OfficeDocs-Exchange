@@ -3,7 +3,7 @@ title: "Configure mail flow using connectors in Office 365"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -52,7 +52,7 @@ Exchange Online is ready to send and receive email from the internet right away.
 |You frequently exchange sensitive information with business partners, and you want to apply security restrictions.|You want to use Transport Layer Security (TLS) to encrypt sensitive information or you want to limit the source (IP addresses) for email from the partner domain.<br/><br/> For details, see [Set up connectors for secure mail flow with a partner organization](set-up-connectors-for-secure-mail-flow-with-a-partner.md).|Optional|**Connector for incoming email:** <br/>• **From**: Partner organization <br/>• **To**: Office 365<br/> **Connector for outgoing email:** <br/>• **From**: Office 365 <br/>• To: Partner organization|
 
 > [!TIP]
-> If you don't have Exchange Online or EOP and are looking for information about Send connectors and Receive connectors in Exchange 2016 or Exchange 2019, see [Connectors](https://technet.microsoft.com/library/73559b0c-fc0e-41fd-84df-d07442137a0c.aspx). 
+> If you don't have Exchange Online or EOP and are looking for information about Send connectors and Receive connectors in Exchange 2016 or Exchange 2019, see [Connectors](https://technet.microsoft.com/library/73559b0c-fc0e-41fd-84df-d07442137a0c.aspx).
 
 ## What if I have my own email servers?
 

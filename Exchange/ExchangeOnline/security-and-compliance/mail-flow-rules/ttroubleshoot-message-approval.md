@@ -3,7 +3,7 @@ title: "Manage and troubleshoot message approval in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -24,7 +24,7 @@ An arbitration mailbox can be used to handle the approval workflow for moderated
 
 - Estimated time to complete: 10 minutes
 
-- You need to be assigned permissions before you can perform these procedures. To see what permissions you need, see the "Aribtration" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
+- You need to be assigned permissions before you can perform these procedures. To see what permissions you need, see the "Aribtration" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -47,7 +47,7 @@ Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq $AMDN}
 ```
 
 > [!NOTE]
-> The arbitration mailbox is specified using the distinguished name (DN). If you know the DN of the arbitration mailbox, you can run the single command: `Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq <DN>}`. 
+> The arbitration mailbox is specified using the distinguished name (DN). If you know the DN of the arbitration mailbox, you can run the single command: `Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq <DN>}`.
 
 ## Step 2: Use Exchange Online PowerShell to specify a different arbitration mailbox or disable moderation for the recipients
 

@@ -3,7 +3,7 @@ title: "Common message approval scenarios in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -18,7 +18,7 @@ Your organization may require certain types of messages be approved in order to 
 
 ## Example 1: Avoid mail storms to a large distribution group
 
-To control messages to a large distribution group, you can require that a moderator approve messages that are sent to that group. If there are no criteria for which messages require approval, the simplest way to set this up is to configure the group to require message approval. 
+To control messages to a large distribution group, you can require that a moderator approve messages that are sent to that group. If there are no criteria for which messages require approval, the simplest way to set this up is to configure the group to require message approval.
 
 In this example, all messages to the All Employees group must be approved, except if the senders are members of the distribution group named Legal Team.
 
@@ -28,17 +28,17 @@ To require that messages to a specific distribution group be approved, in the Ex
 
 ## Example 2: Forward messages to a sender's manager for approval
 
-Here are some common types of messages for which you might want to require manager approval: 
+Here are some common types of messages for which you might want to require manager approval:
 
-- Messages sent from a user to certain distribution groups or recipients 
+- Messages sent from a user to certain distribution groups or recipients
 
-- Messages sent to external users or partners 
+- Messages sent to external users or partners
 
-- Message sent between two groups 
+- Message sent between two groups
 
-- Messages sent with specific content, such as the name of a specific customer 
+- Messages sent with specific content, such as the name of a specific customer
 
-- Messages sent by a trainee 
+- Messages sent by a trainee
 
 To require that a message be sent for approval, first, create a mail flow rule (also known as a transport rule) using the **Send messages to a moderator** template, and select that the messages should go to the sender's manager, as shown in the following screenshots.
 
@@ -65,7 +65,7 @@ To create this type of multiple-level approval, create one mail flow rule for ea
 
 - If all approvers in the chain select **Approve** when they receive the approval request, when the last approval in the chain is complete, the original message is sent to the intended recipients.
 
-- If anyone in the approval chain selects **Reject** when they receive the approval request, the sender receives a rejection message. 
+- If anyone in the approval chain selects **Reject** when they receive the approval request, the sender receives a rejection message.
 
 - If any of the approval requests aren't approved within the expiration time (2 days for Exchange Online, 5 days for Exchange Server), the sender receives an expiration message.
 
@@ -98,7 +98,7 @@ For example, a single rule can't check whether a message has "sales quote" in ei
 
 ## Example 5: Forward a message that contains sensitive information
 
-If you have the [Data loss prevention](../../security-and-compliance/data-loss-prevention/data-loss-prevention.md)(DLP) feature, many types of sensitive information are predefined. With DLP, you see that the message contains a sensitive information condition. Whether or not you have DLP, you can create conditions that identify specific sensitive information patterns that are unique to your organization. 
+If you have the [Data loss prevention](../../security-and-compliance/data-loss-prevention/data-loss-prevention.md)(DLP) feature, many types of sensitive information are predefined. With DLP, you see that the message contains a sensitive information condition. Whether or not you have DLP, you can create conditions that identify specific sensitive information patterns that are unique to your organization.
 
 Here's an example where messages with sensitive information require approval. In this example, messages that contain a credit card number require approval.
 

@@ -3,7 +3,7 @@ title: "Create a global address list in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -33,7 +33,7 @@ For additional GAL management tasks, see [Address list procedures in Exchange On
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
-## Use Exchange Online PowerShell to create global address lists 
+## Use Exchange Online PowerShell to create global address lists
 
 To create a GAL, use the following syntax:
 

@@ -3,7 +3,7 @@ title: "Common attachment blocking scenarios for mail flow rules in Exchange Onl
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -18,9 +18,9 @@ Your organization might require that certain types of messages be blocked or rej
 
 For additional examples showing how to block specific attachments, see:
 
-- [Using mail flow rules to inspect message attachments](https://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx) (Exchange Server) 
+- [Using mail flow rules to inspect message attachments](https://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx) (Exchange Server)
 
-- [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md) (Exchange Online, Exchange Online Protection) 
+- [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md) (Exchange Online, Exchange Online Protection)
 
 The malware filter includes a Common Attachment Types Filter. In the Exchange admin center (EAC), go to **Protection**, then click **New** ( ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)) to add filters. In the Exchange Online portal, browse to **Protection**, and then select **Malware Filter**.
 
@@ -38,7 +38,7 @@ To get started implementing any of these scenarios to block certain message type
 
 **Note**: In the EAC, the smallest attachment size that you can enter is 1 kilobyte, which should detect most attachments. However, if you want to detect every possible attachment of any size, you need to use PowerShell to adjust the attachment size to 1 byte after you create the rule in the EAC. To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554). To learn how to connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290).
 
-Replace _\<Rule Name\>_ with the name of the existing rule, and run the following command to set the attachment size to 1 byte: 
+Replace _\<Rule Name\>_ with the name of the existing rule, and run the following command to set the attachment size to 1 byte:
 
 ```
 Set-TransportRule -Identity "<Rule Name>" -AttachmentSizeOver 1B
@@ -58,7 +58,7 @@ If all you want to do is block the message, you might want to stop rule processi
 
 ## Example 2: Notify intended recipients when an inbound message is blocked
 
-If you want to reject a message but let the intended recipient know what happened, you can use the **Notify the recipient with a message** action. 
+If you want to reject a message but let the intended recipient know what happened, you can use the **Notify the recipient with a message** action.
 
 You can include placeholders in the notification message so that it includes information about the original message. The placeholders must be enclosed in two percent signs (%%), and when the notification message is sent, the placeholders are replaced with information from the original message. You can also use basic HTML such as \<br\>, \<b\>, \<i\>, and \<img\> in the message.
 

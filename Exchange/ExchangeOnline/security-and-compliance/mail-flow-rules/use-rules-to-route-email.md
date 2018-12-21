@@ -15,7 +15,7 @@ description: "Learn how to use mail flow rules to route email messages based on 
 
 To help your users comply with your organization's email policies, you can use Exchange mail flow rules (also known as transport rules) to determine how email containing specific words or patterns is routed. For a short list of words or phrases, you can use the Exchange admin center (EAC). For a longer list, you might want to use Exchange Online PowerShell to read the list from a text file.
 
-If your organization uses Data Loss Prevention (DLP), see [Data loss prevention](../../security-and-compliance/data-loss-prevention/data-loss-prevention.md) for additional options for identifying and routing email that contains sensitive information. 
+If your organization uses Data Loss Prevention (DLP), see [Data loss prevention](../../security-and-compliance/data-loss-prevention/data-loss-prevention.md) for additional options for identifying and routing email that contains sensitive information.
 
 ## Example 1: Use a short list of unacceptable words
 

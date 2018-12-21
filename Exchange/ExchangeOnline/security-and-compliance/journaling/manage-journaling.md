@@ -3,7 +3,7 @@ title: "Manage journaling in Exchange Online"
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -90,7 +90,7 @@ This example displays a summary list of all journal rules in the Exchange organi
 Get-JournalRule
 ```
 
-This example retrieves the journal rule Brokerage Journal Rule, and pipes the output to the **Format-List** command to display rule properties in a list format: 
+This example retrieves the journal rule Brokerage Journal Rule, and pipes the output to the **Format-List** command to display rule properties in a list format:
 
 ```
 Get-JournalRule -Identity "Brokerage Journal Rule" | Format-List

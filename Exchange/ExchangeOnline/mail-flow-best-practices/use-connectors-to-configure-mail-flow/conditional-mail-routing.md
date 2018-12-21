@@ -3,7 +3,7 @@ title: "Scenario Conditional mail routing in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -22,14 +22,14 @@ When the steps below are completed, a mail flow rule will redirect messages addr
 
 The first thing we need to do is create an Outbound connector. This connector will be used by the mail flow rule that we'll set up in Step 2. In this connector, you'll select where messages it receives originate (such as a mailbox in your Office 365 organization), the type of organization where the messages will be sent (such as your on-premises servers), the security that should be applied to the connection, and name or IP address of the target server. If you want to learn more about how to create connectors, check out [Configure mail flow using connectors in Office 365](use-connectors-to-configure-mail-flow.md).
 
-1. In the EAC, go to **Mail flow** \> **Connectors**. click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to create a new connector. 
+1. In the EAC, go to **Mail flow** \> **Connectors**. click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to create a new connector.
 
 2. In the **From:** drop-down box, choose Office 365.
 
-3. In the **To:** drop-down box, choose either Your organization's email server or Partner organization if you want to connect to a server other than your organizations. 
+3. In the **To:** drop-down box, choose either Your organization's email server or Partner organization if you want to connect to a server other than your organizations.
 
    ![route to and from options](../../media/eaa1aabd-31fa-4598-921b-7803182f7b5f.png)
-  
+
 4. Name the connector and add a description. If you want to turn the connector on immediately, check **Turn it on**. Click **Next**.
 
    ![name connector](../../media/f4b47d74-3251-4d04-83aa-7978ba5cd0e4.png)
@@ -46,7 +46,7 @@ The first thing we need to do is create an Outbound connector. This connector wi
 
    ![define TLS settings](../../media/728b161e-7780-4686-a169-df37a7f96531.png)
 
-8. Review your new connector configurations and click **Next** to validate the connector. 
+8. Review your new connector configurations and click **Next** to validate the connector.
 
 ## Step 2: Use the EAC to create a mail flow rule
 
@@ -54,18 +54,18 @@ Now that we've created a connector, we need to create a mail flow rule that'll s
 
 1. In the EAC, navigate to **Mail flow** \> **Rules**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and choose **Create a new rule...**.
 
-2. In the **New rule** window, name the rule. To see all the options available for the rule, click **More options...** at the bottom of the page. 
+2. In the **New rule** window, name the rule. To see all the options available for the rule, click **More options...** at the bottom of the page.
 
    ![click more options](../../media/96c2ca71-32b2-423c-99f6-1ee35c63af5c.png)
 
-3. For **\*Apply this rule if...**, select **The recipient...** and **has specific properties including any of these words**. The **select user properties** box appears. Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and under **User properties:**, choose **City**. **City** is an Active Directory attribute made available for use by the rule. Specify the name of the city, such as New Orleans. Click **OK**, and then click **OK** again to close the **select user properties** box. 
+3. For **\*Apply this rule if...**, select **The recipient...** and **has specific properties including any of these words**. The **select user properties** box appears. Click ![Add Icon](../../media/ITPro_EAC_AddIcon.gif), and under **User properties:**, choose **City**. **City** is an Active Directory attribute made available for use by the rule. Specify the name of the city, such as New Orleans. Click **OK**, and then click **OK** again to close the **select user properties** box.
 
    ![apply rule if](../../media/98b9ea9b-ca67-44bd-99ff-a8e3ca0493bc.png)
 
    > [!IMPORTANT]
-   > Check the accuracy of user attributes in Active Directory to ensure that the mail flow rule works as intended. > Note that outbound connector changes may take time to replicate. 
+   > Check the accuracy of user attributes in Active Directory to ensure that the mail flow rule works as intended. > Note that outbound connector changes may take time to replicate.
 
-4. For **\*Do the following...**, choose **Redirect the message to...** and then specify **the following connector**. The **select connector** box appears. Choose the Outbound connector you created previously. 
+4. For **\*Do the following...**, choose **Redirect the message to...** and then specify **the following connector**. The **select connector** box appears. Choose the Outbound connector you created previously.
 
    You can choose additional properties for the rule, such as the test mode and when to activate the rule.
 

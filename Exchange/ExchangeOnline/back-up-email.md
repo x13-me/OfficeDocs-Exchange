@@ -3,7 +3,7 @@ title: "Back up email in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -21,7 +21,7 @@ One of the questions we often hear is "How does Exchange Online back up my data?
 Lots of things can disrupt service availability, such as hardware failure, natural disasters, or human error. To ensure that your data is always available and that services continue, even when unexpected events occur, Exchange Online uses the same technologies found in Exchange Server. For example, Exchange Online uses the Exchange Server feature known as database availability groups (DAGs) to replicate Exchange Online mailboxes to multiple databases in separate Microsoft datacenters. As a result, you can readily access up-to-date mailbox data in the event of a failure that affects one of the database copies. In addition to having multiple copies of each mailbox database, the different datacenters back up data for one another. If one fails, the affected data are transferred to another datacenter with limited service interruption and users experience seamless connectivity.
 
 > [!NOTE]
-> You can get the latest information related to a service interrupting event by logging into the Service Health Dashboard. For more information, see [View the status of your services](https://go.microsoft.com/fwlink/p/?LinkId=786661). 
+> You can get the latest information related to a service interrupting event by logging into the Service Health Dashboard. For more information, see [View the status of your services](https://go.microsoft.com/fwlink/p/?LinkId=786661).
 
 ## What happens if users accidentally delete data from their mailboxes?
 

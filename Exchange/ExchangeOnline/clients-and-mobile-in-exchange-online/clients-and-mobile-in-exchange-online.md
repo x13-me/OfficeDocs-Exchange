@@ -3,7 +3,7 @@ title: "Clients and mobile in Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -14,7 +14,7 @@ description: "A list of links to topics for admins in Exchange Online related to
 
 # Clients and mobile in Exchange Online
 
-Many different clients can be used to access information in an Exchange Online mailbox. These clients include desktop programs such as Microsoft Outlook, Outlook on the web (formerly known as Outlook Web App), and mobile clients such as phones, tablets, and other mobile devices. Each of these clients offers a variety of features. 
+Many different clients can be used to access information in an Exchange Online mailbox. These clients include desktop programs such as Microsoft Outlook, Outlook on the web (formerly known as Outlook Web App), and mobile clients such as phones, tablets, and other mobile devices. Each of these clients offers a variety of features.
 
 The following table contains links to topics that will help you learn about and manage some of the clients and client access methods that can be used to access an Office 365 mailbox.
 

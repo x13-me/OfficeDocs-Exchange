@@ -3,7 +3,7 @@ title: "Change the settings of an address book policy in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -76,7 +76,7 @@ For detailed syntax and parameter information, see [Set-AddressBookPolicy](http:
 
 ### How do you know this worked?
 
-To verify that you've successfully modify an ABP, replace _\<ABPName\>_ with the name of the ABP, and run the following command in Exchange Online PowerShell to verify the property values: 
+To verify that you've successfully modify an ABP, replace _\<ABPName\>_ with the name of the ABP, and run the following command in Exchange Online PowerShell to verify the property values:
 
 ```
 Get-AddressBookPolicy -Identity "<ABPName>" | Format-List

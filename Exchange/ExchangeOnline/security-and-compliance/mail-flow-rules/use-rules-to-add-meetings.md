@@ -3,7 +3,7 @@ title: "Use mail flow rules to automatically add meetings to calendars in Exchan
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -58,13 +58,13 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
 
 ![In the new mail flow rule window, click More options](../../media/d91f0335-f3b4-4760-bd50-6cdc46b84ce8.png)
 
-4. Configure these additional settings on the **New rule** page: 
+4. Configure these additional settings on the **New rule** page:
 
    - **Name**: Direct to Calendar response (or anything descriptive).
 
    - **Apply this rule if** \> **The sender** \> **is this person**: Select one or more users to send Direct to Calendar meeting invitations.
 
-   - **Do the following** \> **Modify the message properties** \> **set a message header**: Enter the following values: 
+   - **Do the following** \> **Modify the message properties** \> **set a message header**: Enter the following values:
 
    - **Set the message header** `X-MS-Exchange-Organization-CalendarBooking-Response`
 
@@ -80,13 +80,13 @@ For more information about mail flow rules, see [Mail flow rules (transport rule
 
    ![In the new mail flow rule window, click More options](../../media/d91f0335-f3b4-4760-bd50-6cdc46b84ce8.png)
 
-7. Configure these additional settings on the **New rule** page: 
+7. Configure these additional settings on the **New rule** page:
 
   - **Name**: Direct to Calendar triage action (or anything descriptive).
 
   - **Apply this rule if** \> **The sender** \> **is this person**: Select the same users as in step 3.
 
-  - **Do the following** \> **Modify the message properties** \> **set a message header**: Enter the following values: 
+  - **Do the following** \> **Modify the message properties** \> **set a message header**: Enter the following values:
 
   - **Set the message header** `X-MS-Exchange-Organization-CalendarBooking-TriageAction`
 

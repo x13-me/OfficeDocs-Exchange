@@ -3,7 +3,7 @@ title: "Do I need to create a connector in Exchange Online?"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -16,7 +16,7 @@ description: "Find your mail flow scenario to see if you need to create a connec
 
 # Do I need to create a connector in Exchange Online?
 
-Find your mail flow scenario to see if you need to create a connector for your Exchange Online organization. 
+Find your mail flow scenario to see if you need to create a connector for your Exchange Online organization.
 
 |**Scenario**|**Description**|**Connector required?**|**Connector settings**|
 |:-----|:-----|:-----|:-----|
@@ -26,4 +26,4 @@ Find your mail flow scenario to see if you need to create a connector for your E
 |You frequently exchange sensitive information with business partners, and you want to apply security restrictions.|You want to use Transport Layer Security (TLS) to encrypt sensitive information or you want to limit the source (IP addresses) for email from the partner domain.<br/><br/> For details, see [Set up connectors for secure mail flow with a partner organization](set-up-connectors-for-secure-mail-flow-with-a-partner.md).|Optional|**Connector for incoming email:** <br/>• **From**: Partner organization <br/>• **To**: Office 365<br/> **Connector for outgoing email:** <br/>• **From**: Office 365 <br/>• To: Partner organization|
 
 > [!NOTE]
-> For more information about these scenarios, see [Configure mail flow using connectors in Office 365](use-connectors-to-configure-mail-flow.md). 
+> For more information about these scenarios, see [Configure mail flow using connectors in Office 365](use-connectors-to-configure-mail-flow.md).

@@ -3,7 +3,7 @@ title: "Mail flow rules (transport rules) in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -76,7 +76,7 @@ The following table shows how multiple conditions, condition values, exceptions,
 ### Mail flow rule properties
 
 The following table describes the rule properties that are available in mail flow rules.
-  
+
 |**Property name in the EAC**|**Parameter name in PowerShell**|**Description**|
 |:-----|:-----|:-----|
 |**Priority**|_Priority_|Indicates the order that the rules are applied to messages. The default priority is based on when the rule is created (older rules have a higher priority than newer rules, and higher priority rules are processed before lower priority rules). <br/><br/> You change the rule priority in the EAC by moving the rule up or down in the list of rules. In the PowerShell, you set the priority number (0 is the highest priority). <br/><br/> For example, if you have one rule to reject messages that include a credit card number, and another one requiring approval, you'll want the reject rule to happen first, and stop applying other rules. <br/><br/> For more information, see [Set the priority of a mail flow rule](manage-mail-flow-rules.md#set-the-priority-of-a-mail-flow-rule).|
@@ -91,13 +91,13 @@ The following table describes the rule properties that are available in mail flo
 ## How mail flow rules are applied to messages
 
 All messages that flow through your organization are evaluated against the enabled mail flow rules in your organization. Rules are processed in the order listed on the **Mail flow** \> **Rules** page in EAC, or based on the corresponding _Priority_ parameter value in the PowerShell.
-  
+
 Each rule also offers the option of stopping processing more rules when the rule is matched. This setting is important for messages that match the conditions in multiple mail flow rules (which rule do you want applied to the message? All? Just one?).
-  
+
 ### Differences in processing based on message type
 
 There are several types of messages that pass through an organization. The following table shows which messages types can be processed by mail flow rules.
-  
+
 |**Type of message**|**Can a rule be applied?**|
 |:-----|:-----|
 |**Regular messages**: Messages that contain a single rich text format (RTF), HTML, or plain text message body or a multipart or alternative set of message bodies.|Yes|

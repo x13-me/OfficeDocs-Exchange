@@ -3,7 +3,7 @@ title: "Mail flow rule conditions and exceptions (predicates) in Exchange Online
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -60,7 +60,7 @@ In the EAC, in the **Properties of this rule** section, click **Match sender add
 
 - **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value.
 
-- **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field). Note that message envelope searching is only available for the following conditions (and the corresponding exceptions): 
+- **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field). Note that message envelope searching is only available for the following conditions (and the corresponding exceptions):
 
    - **The sender is** ( _From_)
 
@@ -186,7 +186,7 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 ### Message headers
 
 > [!NOTE]
-> The search for words or text patterns in the subject or other header fields in the message occurs *after* the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text. You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages. 
+> The search for words or text patterns in the subject or other header fields in the message occurs *after* the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text. You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.
 
 |**Condition or exception in the EAC**|**Condition and exception parameters in Exchange Online PowerShell**|**Property type**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -231,8 +231,8 @@ The property types that are used in conditions and exceptions are described in t
 
 [Mail flow rule procedures in Exchange Online](mail-flow-rule-procedures.md)
 
-[Transport Rule Conditions (Predicates)](https://technet.microsoft.com/library/c918ea00-1e68-4b8b-8d51-6966b4432e2d.aspx) for Exchange Server 
+[Transport Rule Conditions (Predicates)](https://technet.microsoft.com/library/c918ea00-1e68-4b8b-8d51-6966b4432e2d.aspx) for Exchange Server
 
-[Transport Rule Conditions (Predicates)](https://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx) for Exchange Online Protection 
+[Transport Rule Conditions (Predicates)](https://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx) for Exchange Online Protection
 
 [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx)
