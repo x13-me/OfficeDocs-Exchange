@@ -28,9 +28,9 @@ Policy Tips are informative notices that are displayed to email senders while th
     
 1. Sender's message client program is Microsoft Outlook 2013. If your organization has deployed Exchange 2013 SP1 or is using Exchange Online, Policy Tips also show up in Outlook Web App and OWA for Devices.
     
-2. A transport rule exists that invokes Policy Tip notifications. You can create such a transport rule by configuring a DLP policy that includes the action **Notify the sender with a Policy Tip**.
+2. A mail flow rule (also known as a transport rule) exists that invokes Policy Tip notifications. You can create such a mail flow rule by configuring a DLP policy that includes the action **Notify the sender with a Policy Tip**.
     
-3. The content of a message header, message body, or message attachment that is scanned by your transport agent meets the conditions established within the DLP policies or rules that also include Policy Tip notification rules. Put another way, the Policy Tip only shows up for end-users if they do something that causes the associated rule to take action.
+3. The content of a message header, message body, or message attachment meets the conditions established within the DLP policies or rules that also include Policy Tip notification rules. Put another way, the Policy Tip only shows up for end-users if they do something that causes the associated rule to take action.
     
 - The default Policy Tip notification text that is built into the system will be shown if you don't use the Policy Tip settings feature to customize your Policy Tip text. To learn more about the default text, see [Policy Tips](policy-tips.md). 
     

@@ -39,7 +39,7 @@ Interested in scenarios where these procedures are used? See the following topic
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) (Exchange Server), or in [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md).
+- You need to be assigned permissions before you can perform these procedures. To see what permissions you need, see the "Mail flow" entry in [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md).
 
 - When a rule is listed as **version 14**, this means that the rule is based on an Exchange Server 2010 mail flow rule format. All options are available for these rules.
 
@@ -207,7 +207,7 @@ To verify that you have successfully modified a mail flow rule, do the following
 
 ## Mail flow rule properties
 
-You can also use the Set-TransportRule cmdlet to modify existing transport rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the **Set-TransportRule** cmdlet to make these changes see [Set-TransportRule](https://technet.microsoft.com/library/8328125b-e166-436f-95e6-1afafdbdb89a.aspx)
+You can also use the Set-TransportRule cmdlet to modify existing mail flow rules in your organization. Below is a list properties not available in the EAC that you can change. For more information on using the **Set-TransportRule** cmdlet to make these changes see [Set-TransportRule](https://technet.microsoft.com/library/8328125b-e166-436f-95e6-1afafdbdb89a.aspx)
 
 |**Condition Name in the EAC**|**Condition name in Exchange Online PowerShell**|**Description**|
 |:-----|:-----|:-----|:-----|
