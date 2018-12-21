@@ -62,7 +62,7 @@ After you create an accepted domain, you can't change the domain value (for exam
   
 ### Use the EAC to create accepted domains
 
-1. In the EAC, go to **Mail flow** \> **Accepted domains**, and then click **Add** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)).
+1. In the EAC, go to **Mail flow** \> **Accepted domains**, and then click **Add** (![Edit icon](../../media/ITPro_EAC_AddIcon.png)).
     
 2. In the **New accepted domain** window that opens, configure the following settings: 
     
