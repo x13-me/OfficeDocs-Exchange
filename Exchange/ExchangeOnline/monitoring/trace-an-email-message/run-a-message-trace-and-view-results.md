@@ -274,7 +274,7 @@ When a message contains malware, a sample custom_data entry would look similar t
   
  **Transport Rule Agent (S:TRA)**
   
-A string beginning with S:TRA is an entry from the transport rule agent and provides the following key details:
+A string beginning with S:TRA is an entry from the Transport Rule agent and provides the following key details:
   
 |**Log Information**|**Description**|
 |:-----|:-----|

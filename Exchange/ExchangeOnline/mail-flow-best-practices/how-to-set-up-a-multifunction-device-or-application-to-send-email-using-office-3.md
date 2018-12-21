@@ -19,7 +19,7 @@ description: "Learn how to set up printers, scanners, LOB applications to send e
 
 # How to set up a multifunction device or application to send email using Office 365
 
-Prerequisites: Office 365 Subscription, [Exchange Online Plan](https://products.office.com/en-us/exchange/compare-microsoft-exchange-online-plans)
+Prerequisites: Office 365 Subscription, [Exchange Online Plan](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)
   
 From September 1st, 2018, Office 365 is slowly rolling out changes to SMTP client submission (also known as SMTP Authenticated Submission) which may affect your devices and applications that send emails. To find out more, visit the KB article [Improvements in SMTP Authenticated Submission client protocol](https://support.microsoft.com/help/4458479/improvements-in-smtp-authenticated-submission-client-protocol).
   

@@ -165,7 +165,7 @@ Complete the verification of the Fabrikam.com domain in the contoso.com tenant. 
     
 7. Perform verification testing of mail flow to/from new mailboxes in the target tenant.
     
-8. If you are using Exchange Online Protection (EOP): In the target tenant recreate transport rules, connectors, white/black lists etc. from source tenant.
+8. If you are using Exchange Online Protection (EOP): In the target tenant recreate mail flow rules (also known as transport rules), connectors, white/black lists etc. from source tenant.
     
  **Begin migration**
   
