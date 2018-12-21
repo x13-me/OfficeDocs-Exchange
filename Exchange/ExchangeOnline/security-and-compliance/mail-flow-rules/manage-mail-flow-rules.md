@@ -81,11 +81,11 @@ The EAC allows you to create mail flow rules by using a template, copying an exi
 
   - To create a new rule from scratch, **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) and then select **Create a new rule**.
 
-3. In the **New rule** dialog box, name the rule, and then select the conditions and actions for this rule: 
+3. In the **New rule** dialog box, name the rule, and then select the conditions and actions for this rule:
 
    1. In **Apply this rule if...**, select the condition you want from the list of available conditions.
 
-      - Some conditions require you to specify values. For example, if you select **The sender is...** condition, you must specify a sender address. If you're adding a word or phrase, note that trailing spaces are not allowed. 
+      - Some conditions require you to specify values. For example, if you select **The sender is...** condition, you must specify a sender address. If you're adding a word or phrase, note that trailing spaces are not allowed.
 
       - If the condition you want isn't listed, or if you need to add exceptions, select **More options**. Additional conditions and exceptions will be listed.
 
@@ -187,7 +187,7 @@ To view the properties of a specific mail flow rule, you provide the name of tha
 Get-TransportRule "Sender is a member of marketing" | Format-List
 ```
 
-To modify the properties of an existing rule, use the [Set-TransportRule](https://technet.microsoft.com/library/8328125b-e166-436f-95e6-1afafdbdb89a.aspx) cmdlet. This cmdlet allows you to change any property, condition, action or exception associated with a rule. The following example adds an exception to the rule "Sender is a member of marketing" so that it won't apply to messages sent by the user Kelly Rollin: 
+To modify the properties of an existing rule, use the [Set-TransportRule](https://technet.microsoft.com/library/8328125b-e166-436f-95e6-1afafdbdb89a.aspx) cmdlet. This cmdlet allows you to change any property, condition, action or exception associated with a rule. The following example adds an exception to the rule "Sender is a member of marketing" so that it won't apply to messages sent by the user Kelly Rollin:
 
 ```
 Set-TransportRule "Sender is a member of marketing" -ExceptIfFrom "Kelly Rollin"
@@ -245,7 +245,7 @@ To verify that you have successfully modified a mail flow rule, do the following
    ```
    Get-TransportRule * | Format-List Name,Priority
    ```
- 
+
 ## Enable or disable a mail flow rule
 
 Rules are enabled when you create them. You can disable a mail flow rule.
@@ -351,7 +351,7 @@ To learn more, see [View mail protection reports](https://go.microsoft.com/fwlin
 
 ## Import or export a mail flow rule collection
 
-You must use Exchange Online PowerShell to import or export a mail flow rule collection. For information about how to import a mail flow rule collection from an XML file, see [Import-TransportRuleCollection](https://technet.microsoft.com/library/880b3124-76c5-4212-a8b9-8f4523f8cbe6.aspx). 
+You must use Exchange Online PowerShell to import or export a mail flow rule collection. For information about how to import a mail flow rule collection from an XML file, see [Import-TransportRuleCollection](https://technet.microsoft.com/library/880b3124-76c5-4212-a8b9-8f4523f8cbe6.aspx).
 
 For information about how to export a mail flow rule collection to an XML file, see [Export-TransportRuleCollection](https://technet.microsoft.com/library/bfdb6ced-cd81-49f1-a929-4d76dbaf5590.aspx).
 
@@ -367,7 +367,7 @@ Resources for Exchange Online:
 
 [Transport and inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
 
-Resources for Exchange Online Protection: 
+Resources for Exchange Online Protection:
 
 [Transport rules](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
 

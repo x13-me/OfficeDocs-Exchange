@@ -3,7 +3,7 @@ title: "Apply or remove an Outlook on the web mailbox policy on a mailbox in Exc
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -20,14 +20,14 @@ Assigning an Outlook on the web mailbox policy to a mailbox controls the Outlook
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook on the web mailbox policies" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook on the web mailbox policies" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).. 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
 
 ## Apply Outlook on the web mailbox policies to mailboxes
 
@@ -53,13 +53,13 @@ Assigning an Outlook on the web mailbox policy to a mailbox controls the Outlook
 
       2. In the bulk assign window that opens, click **Browse** to find and select the policy to apply, and then click **OK** when you're finished.
 
-      3. When you're finished, click **Save**. 
+      3. When you're finished, click **Save**.
 
 ### Use Exchange Online PowerShell to apply an Outlook on the web mailbox policy to a mailbox
 
 There are three basic methods you can use to apply an Outlook on the web mailbox policy to mailboxes:
-  
-- **Individual mailboxes**: Use the following syntax: 
+
+- **Individual mailboxes**: Use the following syntax:
 
     ```
     Set-CasMailbox -Identity <MailboxIdentity> -OwaMailboxPolicy "<Policy Name>"
@@ -77,7 +77,7 @@ There are three basic methods you can use to apply an Outlook on the web mailbox
 
     - CustomAttribute1 through CustomAttribute15 for mailboxes by as seen the **Get-Mailbox** cmdlet.
 
-    The syntax uses the following two commands (one to identify the mailboxes, and the other to apply the policy to the mailboxes): 
+    The syntax uses the following two commands (one to identify the mailboxes, and the other to apply the policy to the mailboxes):
 
     ```
     $<VariableName> = <Get-User | Get-Mailbox> -ResultSize unlimited -Filter <Filter>
@@ -87,7 +87,7 @@ There are three basic methods you can use to apply an Outlook on the web mailbox
     $<VariableName> | foreach {Set-CasMailbox -Identity $_.MicrosoftOnlineServicesID -OwaMailboxPolicy "<Policy Name>"}
     ```
 
-    This example assigns the policy named Managers and Executives to all mailboxes whose **Title** attribute contains "Manager" or "Executive". 
+    This example assigns the policy named Managers and Executives to all mailboxes whose **Title** attribute contains "Manager" or "Executive".
 
     ```
     $Mgmt = Get-User -ResultSize unlimited -Filter {(RecipientType -eq 'UserMailbox') -and (Title -like '*Manager*' -or Title -like '*Executive*')}
@@ -97,7 +97,7 @@ There are three basic methods you can use to apply an Outlook on the web mailbox
     $Mgmt | foreach {Set-CasMailbox -Identity $_.MicrosoftOnlineServicesID -OwaMailboxPolicy "Managers and Executives"}
     ```
 
-- **Use a list of specific mailboxes**: This method requires a text file to identify the mailboxes. Values that don't contain spaces (for example, the user account) work best. The text file must contain one user account on each line like this: 
+- **Use a list of specific mailboxes**: This method requires a text file to identify the mailboxes. Values that don't contain spaces (for example, the user account) work best. The text file must contain one user account on each line like this:
 
     `akol@contoso.com`
 
@@ -155,9 +155,9 @@ To verify that you've applied an Outlook on the web mailbox policy to a mailbox,
 
 2. Scroll down in the details pane to **Email Connectivity** and click **View details**.
 
-    If a mailbox policy has been assigned, click **Clear** **X** to remove the policy assignment from the mailbox. 
+    If a mailbox policy has been assigned, click **Clear** **X** to remove the policy assignment from the mailbox.
 
-3. When you're finished, click **Save** to save. 
+3. When you're finished, click **Save** to save.
 
 ### Use Exchange Online PowerShell to remove an Outlook on the web mailbox policy assignment from a mailbox
 

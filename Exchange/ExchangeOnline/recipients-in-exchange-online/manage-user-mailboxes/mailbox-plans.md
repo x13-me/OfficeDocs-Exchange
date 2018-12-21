@@ -3,12 +3,12 @@ title: "Mailbox plans in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
-ms.assetid: 
+ms.assetid:
 description: "Admins can learn about mailbox plans and how view, modify, and set the default mailbox plan in Exchange Online."
 ---
 
@@ -68,7 +68,7 @@ Modifying the settings of a mailbox plan won't update the settings of an existin
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox settings" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - You can only use Exchange Online PowerShell to perform the procedures in this topic. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
-    
+
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
@@ -152,7 +152,7 @@ For detailed syntax and parameter information, see [Set-MailboxPlan](https://doc
 
 ### How do you know this worked?
 
-To verify that you've successfully specified the default mailbox plan, use any of the following steps: 
+To verify that you've successfully specified the default mailbox plan, use any of the following steps:
 
 - In Exchange Online PowerShell, run the following command to verify the property values:
 

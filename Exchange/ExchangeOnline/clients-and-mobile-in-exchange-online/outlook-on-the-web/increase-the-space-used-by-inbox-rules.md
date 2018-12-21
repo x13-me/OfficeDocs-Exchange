@@ -3,7 +3,7 @@ title: "Modify the space used by Inbox rules in Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -38,8 +38,8 @@ Inbox rules in Outlook on the web (formerly known as Outlook Web App) and Outloo
 ## Use Exchange Online PowerShell to increase the limit for Inbox rules
 
 There are three basic methods you can use to modify the rules quota for a mailbox:
-  
-- **Individual mailboxes**: Use the following syntax: 
+
+- **Individual mailboxes**: Use the following syntax:
 
     ```
     Set-Mailbox -Identity <MailboxIdentity> -RulesQuota "<32 KB to 256 KB>"
@@ -57,7 +57,7 @@ There are three basic methods you can use to modify the rules quota for a mailbo
 
     - CustomAttribute1 through CustomAttribute15 for mailboxes by as seen the **Get-Mailbox** cmdlet.
 
-    The syntax uses the following two commands (one to identify the mailboxes, and the other to apply the rules quota to the mailboxes): 
+    The syntax uses the following two commands (one to identify the mailboxes, and the other to apply the rules quota to the mailboxes):
 
     ```
     $<VariableName> = <Get-User | Get-Mailbox> -ResultSize unlimited -Filter <Filter>
@@ -77,7 +77,7 @@ There are three basic methods you can use to modify the rules quota for a mailbo
     $V | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -RulesQuota "32 KB"}
     ```
 
-- **Use a list of specific mailboxes**: This method requires a text file to identify the mailboxes. Values that don't contain spaces (for example, the user account) work best. The text file must contain one user account on each line like this: 
+- **Use a list of specific mailboxes**: This method requires a text file to identify the mailboxes. Values that don't contain spaces (for example, the user account) work best. The text file must contain one user account on each line like this:
 
     `akol@contoso.com`
 

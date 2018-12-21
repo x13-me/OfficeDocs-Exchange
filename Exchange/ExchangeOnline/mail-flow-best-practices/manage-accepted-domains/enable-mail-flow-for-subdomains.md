@@ -3,7 +3,7 @@ title: "Enable mail flow for subdomains in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -44,7 +44,7 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 
 1. In the EAC, go to **Mail Flow** \> **Connectors**.
 
-2. Under **Outbound Connectors**, select the connector for your organization's email server, and then select **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). 
+2. Under **Outbound Connectors**, select the connector for your organization's email server, and then select **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
 
 3. Select **Scope**, and then select one of the following:
 
@@ -60,13 +60,13 @@ If you have a hybrid environment, with mailboxes hosted both in Exchange Online 
 To add match subdomains to a domain that is set up as an internal relay, use this syntax:
 
 ```
-Set-AcceptedDomain -Identity <Domain Name> -MatchSubdomains $true 
+Set-AcceptedDomain -Identity <Domain Name> -MatchSubdomains $true
 ```
 
 This example sets up match subdomains for the contoso.com domain.
 
 ```
-Set-AcceptedDomain -Identity contoso.com -MatchSubdomains $true 
+Set-AcceptedDomain -Identity contoso.com -MatchSubdomains $true
 ```
 
 For detailed syntax and parameter information, see [Set-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-accepteddomain).

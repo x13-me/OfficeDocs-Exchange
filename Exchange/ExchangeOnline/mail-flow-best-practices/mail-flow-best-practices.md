@@ -17,14 +17,14 @@ Use Microsoft Exchange Online and Office 365 to manage mail flow. Find out how, 
 
  **This article is intended for IT Pros. Want something else?**
 
- **Try [Set up Office 365 for business](https://go.microsoft.com/fwlink/p/?LinkID=522378) or [Deploy Office 365 Enterprise for your organization](https://go.microsoft.com/fwlink/p/?LinkID=703951)**. 
+ **Try [Set up Office 365 for business](https://go.microsoft.com/fwlink/p/?LinkID=522378) or [Deploy Office 365 Enterprise for your organization](https://go.microsoft.com/fwlink/p/?LinkID=703951)**.
 
 Office 365 gives you flexibility in determining the best arrangement for how email is delivered to your organization's mailboxes. The path email takes from the Internet to a mailbox and vice versa is called mail flow. Most organizations want Office 365 to manage all their mailboxes and filtering, and some organizations need more complex mail flow setups to make sure that they comply with specific regulatory or business needs. If you're part of a small business or simply an organization that wants Office 365 to manage all your mailboxes and mail flow, we recommend following the steps in [Set up Office 365 for business](https://go.microsoft.com/fwlink/p/?LinkID=522378). That article provides a complete checklist for setting up Office 365 services and programs, including how to set up your mail flow and email clients.
 
 For information about how your email is protected with EOP, see [Exchange Online Protection Overview](https://technet.microsoft.com/library/1270a65f-ddc3-4430-b500-4d3a481efb1e.aspx).
 
 > [!TIP]
-> Are you new to Office 365 mail flow? Check out the [External Domain Name System records for Office 365](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records) topic. We especially recommend reading the part about SPF records because customers often list the wrong values in their SPF record, which can cause mail flow problems. 
+> Are you new to Office 365 mail flow? Check out the [External Domain Name System records for Office 365](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records) topic. We especially recommend reading the part about SPF records because customers often list the wrong values in their SPF record, which can cause mail flow problems.
 
 Office 365 mail flow covers the following scenarios:
 
@@ -36,8 +36,8 @@ Office 365 mail flow covers the following scenarios:
 |[Manage mail flow using a third-party cloud service with mailboxes on Office 365 and on-prem](manage-mail-flow-on-office-365-and-on-prem.md)|**Scenario** <br/> I'm migrating my mailboxes to Office 365, and I want to keep some mailboxes on my organization's mail server (on-premises server). I want to use a third-party cloud service to filter spam from the Internet. My messages to the Internet need to route through Office 365 to protect my on-premises servers' IP addresses from being added to external block lists.|Most complex|
 |Send emails from a multifunction printer/scanner/fax/application through Office 365 <br/> For details about this scenario, see [How to set up a multifunction device or application to send email using Office 365](https://technet.microsoft.com/library/2c0012a9-7e71-40cd-a516-1b26117bf491.aspx).|**Scenario** <br/> All my organization's mailboxes are hosted in Office 365, but I have a multifunction printer, scanner, fax machine, or an application that needs to send email.|Complex|
 |Using Exchange Online Protection (EOP) standalone <br/> For details about this scenario, see [Mail Flow in EOP](https://technet.microsoft.com/library/e109077e-cc85-4c19-ae40-d218ac7d0548.aspx) and [How do connectors work with my on-premises email servers?](use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md#how-do-connectors-work-with-my-on-premises-email-servers)|**Scenario** <br/> I have my own email servers (on-premises servers), and I subscribe to EOP for email protection services only.|Simple|
- 
-For information about migrating your email to Microsoft Exchange Online, see [Ways to migrate multiple email accounts to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=524030). 
+
+For information about migrating your email to Microsoft Exchange Online, see [Ways to migrate multiple email accounts to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=524030).
 
 ## Introduction to the basics of Office 365 mail flow
 
@@ -49,7 +49,7 @@ Office 365 uses domains, like contoso.com, to route email messages. When you set
 
 In Office 365 mail flow, two DNS records are particularly important: MX records and SPF records.
 
- **MX (mail exchanger) records** provide an easy way for mail servers to know where to send email. You can think of the MX record as a type of postal address. If you want Office 365 to receive all email addressed to anyone@contoso.com, the MX record for contoso.com should point to Office 365, and it will look like the following example: 
+ **MX (mail exchanger) records** provide an easy way for mail servers to know where to send email. You can think of the MX record as a type of postal address. If you want Office 365 to receive all email addressed to anyone@contoso.com, the MX record for contoso.com should point to Office 365, and it will look like the following example:
 
 ```
 Hostname: contoso-com.mail.protection.outlook.com
@@ -64,7 +64,7 @@ v=spf1 include:spf.protection.outlook.com -all
 ```
 
 > [!IMPORTANT]
-> You can only have one SPF record per domain. Having multiple SPF records will invalidate all SPF records and cause mail flow problems. 
+> You can only have one SPF record per domain. Having multiple SPF records will invalidate all SPF records and cause mail flow problems.
 
 The SPF record configuration in the previous example tells the recipient email servers that email sent from Office 365's IP addresses are authorized for the domain. Because most modern email servers look up a domain's SPF record before they accept any email from it, it's important to set up a valid SPF record in DNS when you first set up mail flow.
 

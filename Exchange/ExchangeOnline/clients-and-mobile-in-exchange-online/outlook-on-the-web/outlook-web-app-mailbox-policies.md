@@ -3,7 +3,7 @@ title: "Outlook on the web mailbox policies in Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online

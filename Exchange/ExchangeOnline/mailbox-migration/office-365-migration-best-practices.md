@@ -3,7 +3,7 @@ title: "Office 365 migration performance and best practices"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: Admin
 ms.topic: overview
 ms.service: exchange-online
@@ -60,7 +60,7 @@ The following table describes the different workloads involved in a typical migr
 |GoLocal|Microsoft continues to open new datacenters for Office 365 in new regions, or geos. Existing customers, when eligible, can request to have their Office 365 customer data from their original datacenter moved to a new geo. The period of time in which you can make this request is usually one or two years, depending on the overall demand on the service. Note that this period of time during which you can request to have your customer data moved becomes shorter once a datacenter (DC) for the new geo launches (at that point you have approximately three to six months to request a move). Details are available in [Moving core data to new Office 365 datacenter geos](https://msdn.microsoft.com/library/dn878163.aspx).|
 
 When mailboxes are migrated within Microsoft 365 data centers, every mailbox move or bulk-mailbox move requires time for the operation to complete. There are a number of factors, such as Microsoft 365 service activity, that can affect exactly how much time. The service is designed to throttle discretionary workloads like mailbox moves, to ensure that the service runs optimally for all users. You can still expect mailbox moves to be processed, however, depending on the service's discretionary resource availability. More details about resource throttling can be found in [this blog post](https://blogs.technet.microsoft.com/exchange/2018/06/25/resource-based-throttling-and-prioritization-in-exchange-online-migrations/).
- 
+
 ###Estimated migration times
 
 To help you plan your migration, the following tables present guidelines about when to expect bulk mailbox migrations or individual migrations to complete. These estimates are based on a data analysis of previous customer migrations. Because every environment is unique, your exact migration velocity may vary.
@@ -77,7 +77,7 @@ To help you plan your migration, the following tables present guidelines about w
    |50 - 100|3|30|
    |100 - 200|8|45|
    |\> 200|Not supported|Not supported|
- 
+
 2. Multi-Geo / GoLocal / Encryption
 
    |**Mailbox size (GB)**|**50th percentile duration (days)**|**90th percentile duration (days)**|
@@ -89,7 +89,7 @@ To help you plan your migration, the following tables present guidelines about w
    |100 - 200|30|60|
    |\> 200|Not supported|Not supported|
 
-   **Migration duration to complete 90% of mailbox moves based on tenant size profiles:** 
+   **Migration duration to complete 90% of mailbox moves based on tenant size profiles:**
 
    |**Tenant size (number of mailboxes)**|**Duration (days)**|**May take up to this many days**|
    |:-----|:-----|:-----|
@@ -123,7 +123,7 @@ The following table provides a list of common factors that affect migration perf
 
 This section describes best practices for improving network performance during migration. The discussion is general because the biggest impact on network performance during migration is related to third-party hardware and Internet service providers (ISPs).
 
-Use the Exchange Analyzer to get a deeper understanding of your network connectivity with Office 365. To run the Exchange Analyzer tests in [Support and Recovery Assistant](https://diagnostics.office.com/), go to Advanced Diagnostics \> Exchange Online \> Check Exchange Online network connectivity \> Yes. Read [Fix Outlook and Office 365 issues with Support and Recovery Assistant for Office 365](https://support.office.com/article/12cd632c-d672-4782-b0ce-beb82b511525) to learn more about Support and Recovery Assistant. 
+Use the Exchange Analyzer to get a deeper understanding of your network connectivity with Office 365. To run the Exchange Analyzer tests in [Support and Recovery Assistant](https://diagnostics.office.com/), go to Advanced Diagnostics \> Exchange Online \> Check Exchange Online network connectivity \> Yes. Read [Fix Outlook and Office 365 issues with Support and Recovery Assistant for Office 365](https://support.office.com/article/12cd632c-d672-4782-b0ce-beb82b511525) to learn more about Support and Recovery Assistant.
 
 |**Factor**|**Description**|**Best practices**|
 |:-----|:-----|:-----|
@@ -259,7 +259,7 @@ In the Office 365 service, unlike in on-premises Exchange 2010, the migration qu
 
 There are two types of move requests in Office 365:
 
-- **Onboarding move requests**: New customer migrations are considered onboarding move requests. These requests have regular priority. 
+- **Onboarding move requests**: New customer migrations are considered onboarding move requests. These requests have regular priority.
 
 - **Datacenter internal move requests**: These are mailbox move requests initiated by datacenter operation teams. These requests have a lower priority because the end-user experience isn't affected if the move request is delayed.
 

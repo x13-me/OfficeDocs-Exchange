@@ -3,7 +3,7 @@ title: "Clean up or delete items from the Recoverable Items folder in Exchange O
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

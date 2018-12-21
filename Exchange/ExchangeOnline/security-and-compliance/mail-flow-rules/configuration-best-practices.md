@@ -3,7 +3,7 @@ title: "Best practices for configuring mail flow rules in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -18,7 +18,7 @@ Follow these best practice recommendations for mail flow rules (also known as tr
 
 ## Test your rules
 
-To make sure unexpected things don't happen to people's email, and to make sure you're really meeting the business, legal, or compliance intentions of your rule, be sure to test it thoroughly. There are many options, and rules can interact with each other, so it's important to test messages that you expect both will match the rule and won't match the rule in case you inadvertently made a rule too general. To learn all the options for testing rules, see [Test a mail flow rule](test-mail-flow-rules.md). 
+To make sure unexpected things don't happen to people's email, and to make sure you're really meeting the business, legal, or compliance intentions of your rule, be sure to test it thoroughly. There are many options, and rules can interact with each other, so it's important to test messages that you expect both will match the rule and won't match the rule in case you inadvertently made a rule too general. To learn all the options for testing rules, see [Test a mail flow rule](test-mail-flow-rules.md).
 
 ## Scope your rule
 
@@ -46,9 +46,9 @@ The chain of email in a conversation can include many individual messages, and r
 
 ## Know when to stop rule processing
 
-Sometimes it makes sense to stop rule processing once a rule is matched. For example, if you have one rule to block messages with attachments and one to insert a disclaimer in messages that match a pattern, you probably should stop rule processing once the message is blocked. There's no need for further action. 
+Sometimes it makes sense to stop rule processing once a rule is matched. For example, if you have one rule to block messages with attachments and one to insert a disclaimer in messages that match a pattern, you probably should stop rule processing once the message is blocked. There's no need for further action.
 
-To stop rule processing after a rule is triggered, in the rule, select the **Stop processing more rules** check box. 
+To stop rule processing after a rule is triggered, in the rule, select the **Stop processing more rules** check box.
 
 ## If you have lots of keywords or patterns to match, load them from a file
 

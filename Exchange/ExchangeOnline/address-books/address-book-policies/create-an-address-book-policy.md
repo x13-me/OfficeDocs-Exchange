@@ -3,7 +3,7 @@ title: "Create an address book policy in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -42,7 +42,7 @@ To create an ABP, use this syntax:
 New-AddressBookPolicy -Name "<Unique Name>" -GlobalAddressList "<GAL>" -OfflineAddressBook "<OAB>" -RoomList "<RoomList>" -AddressLists "<AddressList1>","<AddressList2>"...
 ```
 
-This example creates an ABP with the following settings: 
+This example creates an ABP with the following settings:
 
 - **Name**: All Fabrikam ABP
 
@@ -70,7 +70,7 @@ To verify that you've successfully created an ABP, use either of these procedure
    Get-AddressBookPolicy
    ```
 
-- Replace _\<ABPName\>_ with the name of the ABP, and run the following command to verify the property values: 
+- Replace _\<ABPName\>_ with the name of the ABP, and run the following command to verify the property values:
 
    ```
    Get-AddressBookPolicy -Identity "<ABPName>" | Format-List

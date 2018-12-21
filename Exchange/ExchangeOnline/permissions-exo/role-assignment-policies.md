@@ -3,12 +3,12 @@ title: "Role assignment policies in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
-ms.assetid: 
+ms.assetid:
 description: "Admins can learn about role assignment policies, and how to view, create, modify, remove, and assign them in Exchange Online."
 ---
 
@@ -64,7 +64,7 @@ The available end-user roles that you can assign to mailbox plans are described 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - Changes to permissions take effect after the user logs out and logs in again.
-    
+
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
@@ -144,7 +144,7 @@ For detailed syntax and parameter information, see [New-ManagementRoleAssignment
    Remove-ManagementRoleAssignment -Identity "<RoleAssignmentName>"
    ```
 
-   This example removes the MyDistributionGroups role from the role assignment policy named Default Role Assignment Policy. 
+   This example removes the MyDistributionGroups role from the role assignment policy named Default Role Assignment Policy.
 
    ```
    Remove-ManagementRoleAssignment -Identity "MyDistributionGroups-Default Role Assignment Policy"
@@ -293,7 +293,7 @@ To verify that you've successfully removed a role assignment policy, use either 
 1. In the EAC, go to **Recipients** \> **Mailboxes**, select the mailbox, and click click **Edit** ![Edit button](../media/ITPro_EAC_EditIcon.png).
 
 2. In the mailbox properties window that opens, click **Mailbox features**. The role assignment policy is shown in the **Role assignment policy** field.
- 
+
 3. When you're finished, click **Save**.
 
 ### Use Exchange Online PowerShell to view role assignment policy assignments on mailboxes
@@ -366,7 +366,7 @@ $<VariableName> = Get-Mailbox -ResultSize unlimited
 $<VariableName> | where {$_.RoleAssignmentPolicy -eq '<CurrentRoleAssignmentPolicyName>'} | Set-Mailbox -RoleAssignmentPolicy '<NewRoleAssignmentPolicyName>'
 ```
 
-This example changes the role assignment policy from Default Role Assignment Policy to Contoso Staff for all mailboxes that currently have Default Role Assignment Policy assigned. 
+This example changes the role assignment policy from Default Role Assignment Policy to Contoso Staff for all mailboxes that currently have Default Role Assignment Policy assigned.
 
 ```
 $Users = Get-Mailbox -ResultSize unlimited

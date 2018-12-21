@@ -3,7 +3,7 @@ title: "Configure Journaling in Exchange Online"
 ms.author: laurawi
 author: LauraWi
 manager: laurawi
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online

@@ -14,30 +14,30 @@ description: "In Office 365, you can create mobile device mailbox policies to ap
 
 # Mobile device mailbox policies in Exchange Online
 
-In Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Office 365 organization. 
-  
+In Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Office 365 organization.
+
 ## Overview of mobile device mailbox policies
 
-You can use mobile device mailbox policies to manage many different settings. These include the following: 
-  
+You can use mobile device mailbox policies to manage many different settings. These include the following:
+
 - Require a password
-    
+
 - Specify the minimum password length
-    
+
 - Allow a numeric PIN or require special characters in the password
-    
+
 - Designate how long a device can be inactive before requiring the user to re-enter a password
-    
+
 - Wipe a device after a specific number of failed password attempts
-    
+
 ## Managing Exchange ActiveSync mailbox policies
 
-Mobile device mailbox policies can be created in the Exchange admin center (EAC) or Exchange Online PowerShell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using Exchange Online PowerShell. 
-  
+Mobile device mailbox policies can be created in the Exchange admin center (EAC) or Exchange Online PowerShell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using Exchange Online PowerShell.
+
 ## Mobile device mailbox policy settings
 
 The following table summarizes the settings you can specify using mobile device mailbox policies.
-  
+
 **Mobile device mailbox policy settings**
 
 |**Setting**|**Description**|
@@ -90,5 +90,5 @@ The following table summarizes the settings you can specify using mobile device 
 |Require signed S/MIME messages|This setting specifies whether the mobile device must send signed S/MIME messages.|
 |Require storage card encryption|This setting specifies whether the storage card must be encrypted. Not all mobile device operating systems support storage card encryption. For more information, see your mobile device and mobile operating system documentation.|
 |Unapproved InROM application list|This setting specifies a list of applications that cannot be run in ROM.|
-   
+
 

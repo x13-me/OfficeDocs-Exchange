@@ -3,7 +3,7 @@ title: "Use mail flow rules to inspect message attachments in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -31,7 +31,7 @@ You can inspect email attachments in your Exchange Online organization by settin
 - Block all messages containing attachments. For examples, see [Common attachment blocking scenarios for mail flow rules in Exchange Online](common-attachment-blocking-scenarios.md).
 
 > [!NOTE]
-> All of these conditions will scan compressed archive attachments. 
+> All of these conditions will scan compressed archive attachments.
 
 Exchange Online admins can create mail flow rules in the Exchange admin center (EAC) at **Mail flow** \> **Rules**. You need to be assigned permissions before you can perform this procedure. After you start to create a new rule, you can see the full list of attachment-related conditions by clicking **More options** \> **Any attachment** under **Apply this rule if**. The attachment-related options are shown in the following diagram.
 
@@ -101,7 +101,7 @@ The following conditions can be used in mail flow rules to inspect different pro
 
 ### Supported executable file types for mail flow rule inspection
 
-The mail flow rules use true type detection to inspect file properties rather than merely the file extensions. This helps to prevent malicious hackers from being able to bypass your rule by renaming a file extension. The following table lists the executable file types supported by these conditions. If a file is found that is not listed here, the `AttachmentIsUnsupported` condition is triggered. 
+The mail flow rules use true type detection to inspect file properties rather than merely the file extensions. This helps to prevent malicious hackers from being able to bypass your rule by renaming a file extension. The following table lists the executable file types supported by these conditions. If a file is found that is not listed here, the `AttachmentIsUnsupported` condition is triggered.
 
 |**Type of file**|**Native extension**|
 |:-----|:-----|
@@ -119,7 +119,7 @@ The mail flow rules use true type detection to inspect file properties rather th
 |Windows executable program file.|.exe|
 
 > [!IMPORTANT]
-> **.rar** (self-extracting archive files created with the WinRAR archiver), **.jar** (Java archive files), and **.obj** (compiled source code, 3D object, or sequence files) files are **not** considered to be executable file types. To block these files, you can use mail flow rules that look for files with these extensions as described earlier in this topic, or you can configure an antimalware policy that blocks these file types (the common attachment types filter). For more information, see [Configure Anti-Malware Policies](https://technet.microsoft.com/library/b0cfc21f-e3c6-41b6-8670-feb2b2e252e5.aspx). 
+> **.rar** (self-extracting archive files created with the WinRAR archiver), **.jar** (Java archive files), and **.obj** (compiled source code, 3D object, or sequence files) files are **not** considered to be executable file types. To block these files, you can use mail flow rules that look for files with these extensions as described earlier in this topic, or you can configure an antimalware policy that blocks these file types (the common attachment types filter). For more information, see [Configure Anti-Malware Policies](https://technet.microsoft.com/library/b0cfc21f-e3c6-41b6-8670-feb2b2e252e5.aspx).
 
 ## Data loss prevention policies and attachment mail flow rules
 

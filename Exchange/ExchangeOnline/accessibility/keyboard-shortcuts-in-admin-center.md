@@ -2,7 +2,7 @@
 title: "Keyboard shortcuts for the Exchange admin center in Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: reference
 ms.service: exchange-online

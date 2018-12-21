@@ -3,7 +3,7 @@ title: "Configure the external postmaster address in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -24,7 +24,7 @@ There's no mailbox associated with the postmaster@\<_Default accepted domain_\> 
 
 - Estimated time to complete: 15 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
 - You can only use Exchange Online PowerShell to perform this procedure. To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
@@ -61,6 +61,6 @@ To verify that you have successfully configured the external postmaster address,
 
    A blank value indicates the default value postmaster@\<_Default accepted domain_\>.
 
-2. From an external email account, send a message to your Exchange organization that will generate a non-delivery report (also known as an NDR or bounce message). For example, you can configure a mail flow rule (also known as a transport rule) to send an NDR for a message from that sender that contains specific keywords. Verify that the sender's email address in the DSN matches the external postmaster address you specified. 
+2. From an external email account, send a message to your Exchange organization that will generate a non-delivery report (also known as an NDR or bounce message). For example, you can configure a mail flow rule (also known as a transport rule) to send an NDR for a message from that sender that contains specific keywords. Verify that the sender's email address in the DSN matches the external postmaster address you specified.
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).

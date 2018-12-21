@@ -3,7 +3,7 @@ title: "Set up connectors to route mail between Office 365 and your own email se
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -21,11 +21,11 @@ This topic helps you set up the connectors you need for the following two scenar
 - You have (or intend to have) mailboxes in two places; some mailboxes in Office 365, and some of your mailboxes are on your organization email servers (also called on-premises servers).
 
 > [!NOTE]
-> Before you get started, make sure you check on your specific scenario in [What if I have my own email servers?](use-connectors-to-configure-mail-flow.md#what-if-i-have-my-own-email-servers). 
+> Before you get started, make sure you check on your specific scenario in [What if I have my own email servers?](use-connectors-to-configure-mail-flow.md#what-if-i-have-my-own-email-servers).
 
 ## How do Office 365 connectors work with my on-premises email servers?
 
-If you have EOP and your own email servers, or if some of your mailboxes are in Office 365 and some are on your email servers, set up connectors to enable mail flow in both directions. You can enable mail flow between Office 365 and any SMTP-based email server, such as Exchange or a third-party email server. 
+If you have EOP and your own email servers, or if some of your mailboxes are in Office 365 and some are on your email servers, set up connectors to enable mail flow in both directions. You can enable mail flow between Office 365 and any SMTP-based email server, such as Exchange or a third-party email server.
 
 The diagram below shows how connectors in Office 365 (including Exchange Online or EOP) work with your own email servers.
 
@@ -51,12 +51,12 @@ When you set up Office 365 to accept all email on behalf of your organization, y
 
 - **A connector from your own email server to Office 365**
 
-When this connector is set up, Office 365 will accept messages from your organization's email server and send the messages to recipients on your behalf. This recipient could be a mailbox for your organization in Office 365, or it could be a recipient on the Internet. To complete this scenario, you'll also need to configure your email server to send email messages directly to Office 365. 
+When this connector is set up, Office 365 will accept messages from your organization's email server and send the messages to recipients on your behalf. This recipient could be a mailbox for your organization in Office 365, or it could be a recipient on the Internet. To complete this scenario, you'll also need to configure your email server to send email messages directly to Office 365.
 
-This connector enables Office 365 to scan your email for spam and malware, and to enforce compliance requirements such as running data loss prevention policies. When your email server sends all email messages directly to Office 365, your own IP addresses are shielded from being added to a spam block list. To complete the scenario, you might need to configure your email server to send messages to Office 365. 
+This connector enables Office 365 to scan your email for spam and malware, and to enforce compliance requirements such as running data loss prevention policies. When your email server sends all email messages directly to Office 365, your own IP addresses are shielded from being added to a spam block list. To complete the scenario, you might need to configure your email server to send messages to Office 365.
 
 > [!NOTE]
-> This scenario requires two connectors: one from Office 365 to your mail servers, and one to manage mail flow in the opposite direction. Before you start, make sure you have all the information you need, and continue with the instructions until you have set up and validated both connectors. 
+> This scenario requires two connectors: one from Office 365 to your mail servers, and one to manage mail flow in the opposite direction. Before you start, make sure you have all the information you need, and continue with the instructions until you have set up and validated both connectors.
 
 ## Overview of the steps
 
@@ -64,9 +64,9 @@ Here is an overview of the steps:
 
 - Complete the prerequisites for your email server environment.
 
-- **Part 1**: Configure mail to flow from Office 365 to your email server. 
+- **Part 1**: Configure mail to flow from Office 365 to your email server.
 
-- **Part 2**: Configure mail to flow from your email server to Office 365. 
+- **Part 2**: Configure mail to flow from your email server to Office 365.
 
 ## Prerequisites for your on-premises email environment
 
@@ -82,7 +82,7 @@ Prepare your on-premises email server so that it's ready to connect with Office 
 
 5. Open port 25 on your firewall so that Office 365 can connect to your email servers.
 
-6. Make sure your firewall accepts connections from all Office 365 IP addresses. See [Exchange Online Protection IP addresses](https://technet.microsoft.com/library/eb14f38b-7b55-4a47-84a0-4a56a59e4111.aspx) for the published IP address range. 
+6. Make sure your firewall accepts connections from all Office 365 IP addresses. See [Exchange Online Protection IP addresses](https://technet.microsoft.com/library/eb14f38b-7b55-4a47-84a0-4a56a59e4111.aspx) for the published IP address range.
 
 7. Make a note of an email address for each domain in your organization. You'll need this later to test that your connector is working properly.
 
@@ -100,7 +100,7 @@ There are three steps for this:
 
 Make sure you have completed the following in Office 365:
 
-1. To set up connectors, you need permissions assigned before you can begin. To check what permissions you need, see the "Office 365 connectors" entry in the [Feature permissions in EOP](https://technet.microsoft.com/library/34674847-a6b7-4a7e-9eaa-b64f22bc150d.aspx) topic. 
+1. To set up connectors, you need permissions assigned before you can begin. To check what permissions you need, see the "Office 365 connectors" entry in the [Feature permissions in EOP](https://technet.microsoft.com/library/34674847-a6b7-4a7e-9eaa-b64f22bc150d.aspx) topic.
 
 2. If you want EOP or Exchange Online to relay email from your email servers to the Internet, either:
 
@@ -110,12 +110,12 @@ Make sure you have completed the following in Office 365:
 
    - Make sure that all your organization sender domains and subdomains are configured as accepted domains in Office 365.
 
-   For more information about defining accepted domains, see [Manage accepted domains in Exchange Online](../../mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains.md) and [Enable mail flow for subdomains in Exchange Online](../../mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains.md). 
+   For more information about defining accepted domains, see [Manage accepted domains in Exchange Online](../../mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains.md) and [Enable mail flow for subdomains in Exchange Online](../../mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains.md).
 
 3. Decide whether you want to use mail flow rules (also known as transport rules) or domain names to deliver mail from Office 365 to your email servers. Most businesses will choose to deliver mail for all accepted domains. For more information, see [Scenario: Conditional mail routing in Exchange Online](conditional-mail-routing.md).
 
 > [!NOTE]
-> You can set up mail flow rules as described in [Mail flow rule actions in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rule-actions.md). For example, you might want to use mail flow rules with connectors if your mail is currently directed via distribution lists to multiple sites. 
+> You can set up mail flow rules as described in [Mail flow rule actions in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rule-actions.md). For example, you might want to use mail flow rules with connectors if your mail is currently directed via distribution lists to multiple sites.
 
 ### 2. Set up a connector from Office 365 to your email server
 
@@ -131,7 +131,7 @@ To start the wizard, click the plus symbol **+**. On the first screen, choose th
 
 ![Office 365 to your email server](../../media/e58262b7-f865-457b-b77a-32974813e271.png)
 
-Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, double-click the message displayed to get more information, and see [About fixing connector validation errors](https://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx) for help resolving issues. 
+Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. The wizard will guide you through setup. At the end, make sure your connector validates. If the connector does not validate, double-click the message displayed to get more information, and see [About fixing connector validation errors](https://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx) for help resolving issues.
 
 ### 3. Change your MX record to redirect your mail flow from the Internet to Office 365
 
@@ -155,7 +155,7 @@ To start the wizard, click the plus symbol **+**. On the first screen, choose th
 
 ![Choose from your organization's email server to Office 365](../../media/5c187bd4-d387-4d9a-a6ff-86e591c0185a.png)
 
-Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. In particular, see [Identifying email from your email server](https://technet.microsoft.com/library/a188a123-540d-4780-8b4c-9adf825c6b33.aspx) for help configuring certificate or IP address settings for this connector. The wizard will guide you through setup. At the end, save your connector. 
+Click **Next**, and follow the instructions in the wizard. Click the **Help** or **Learn More** links if you need more information. In particular, see [Identifying email from your email server](https://technet.microsoft.com/library/a188a123-540d-4780-8b4c-9adf825c6b33.aspx) for help configuring certificate or IP address settings for this connector. The wizard will guide you through setup. At the end, save your connector.
 
 ### 2. Set up your email server to relay mail to the Internet via Office 365
 
@@ -163,7 +163,7 @@ Next, you must prepare your email server to send mail to Office 365. This enable
 
 On your Exchange server, configure a Send connector to send email via a smart host to Office 365. For instructions on how to do this with Exchange Server, see [Create a Send connector to route outbound email through a smart host ](https://technet.microsoft.com/library/4a9ef08e-bd62-4c6b-8790-d24fb0f8f24b.aspx). For instructions on how to do this with Exchange Server 2010, see [Create an SMTP Send Connector](https://technet.microsoft.com/library/38ae9dc8-f11b-4f57-867a-4d74b453c9a3.aspx).
 
-To create the Send connector in Exchange Server, use the following syntax in Exchange Online PowerShell. To learn how to open Exchange Online PowerShell in your on-premises Exchange organization, see **Open Exchange Online PowerShell**. 
+To create the Send connector in Exchange Server, use the following syntax in Exchange Online PowerShell. To learn how to open Exchange Online PowerShell in your on-premises Exchange organization, see **Open Exchange Online PowerShell**.
 
 ```
 New-SendConnector -Name <DescriptiveName> -AddressSpaces * -CloudServicesMailEnabled $true -Fqdn <CertificateHostNameValue> -RequireTLS $true -DNSRoutingEnabled $false -SmartHosts <YourDomain>-com.mail.protection.outlook.com -TlsAuthLevel CertificateValidation
@@ -171,23 +171,23 @@ New-SendConnector -Name <DescriptiveName> -AddressSpaces * -CloudServicesMailEna
 
 This example creates a new Send Connector with the following properties:
 
-- **Name**: My company to Office 365 
+- **Name**: My company to Office 365
 
-- **FQDN** mail.contoso.com 
+- **FQDN** mail.contoso.com
 
-- **SmartHosts** contoso-com.mail.protection.outlook.com 
+- **SmartHosts** contoso-com.mail.protection.outlook.com
 
 ```
 New-SendConnector -Name "My company to Office 365" -AddressSpaces * -CloudServicesMailEnabled $true -Fqdn mail.contoso.com -RequireTLS $true -DNSRoutingEnabled $false -SmartHosts contoso-com.mail.protection.outlook.com -TlsAuthLevel CertificateValidation
 ```
 
-Here is an example **PowerShell** cmdlet to help you configure the Send connector in Exchange Server: 
+Here is an example **PowerShell** cmdlet to help you configure the Send connector in Exchange Server:
 
  `New-SendConnector -Name "My company to Office 365" -AddressSpaces * -CloudServicesMailEnabled $true -Fqdn "cert domain name, such as mail.contoso.com" -RequireTLS $true -SmartHosts yourdomain-com.mail.protection.outlook.com -TlsAuthLevel CertificateValidation`
 
 ## How do I know connectors will route my organization mail correctly?
 
-If you have completed all of these steps correctly, all your mail will now be delivered via Office 365. 
+If you have completed all of these steps correctly, all your mail will now be delivered via Office 365.
 
 To check that this is working:
 
@@ -199,15 +199,15 @@ Make sure both emails are received.
 
 ## Change a connector that Office 365 is using for mail flow
 
-To change settings for a connector, select the connector you want to edit and then select the edit icon as shown in the following screen shot. 
+To change settings for a connector, select the connector you want to edit and then select the edit icon as shown in the following screen shot.
 
 ![Shows a screen shot with a connector selected and the edit (pencil) icon highlighted.](../../media/9654b36f-40d2-4791-ae5c-ce3afd9bb683.png)
 
-The connector wizard opens, and you can make changes to the existing connector settings. While you change the connector settings, Office 365 continues to use the existing connector settings for mail flow. When you save changes to the connector, Office 365 starts using the new settings. 
+The connector wizard opens, and you can make changes to the existing connector settings. While you change the connector settings, Office 365 continues to use the existing connector settings for mail flow. When you save changes to the connector, Office 365 starts using the new settings.
 
 ## What happens when I have multiple connectors for the same scenario?
 
-Most customers don't need to set up connectors. For those that do, one connector per single mail flow direction is usually enough. But you can also create multiple connectors for a single mail flow direction, such as from Office 365 to your email server (also called on-premises server). 
+Most customers don't need to set up connectors. For those that do, one connector per single mail flow direction is usually enough. But you can also create multiple connectors for a single mail flow direction, such as from Office 365 to your email server (also called on-premises server).
 
 When there are multiple connectors, the first step to resolving mail flow issues is to know which connector Office 365 is using. Office 365 uses the following order to choose a connector to apply to an email:
 
@@ -219,13 +219,13 @@ When there are multiple connectors, the first step to resolving mail flow issues
 
 ### Example of how Office 365 applies multiple connectors
 
-In this example, your organization has four accepted domains, contoso.com, sales.contoso.com, fabrikam.com, and contoso.onmicrosoft.com. You have three connectors configured from Office 365 to your organization's email server. For this example, these connectors are known as **Connector 1**, **Connector 2**, and **Connector 3**. 
+In this example, your organization has four accepted domains, contoso.com, sales.contoso.com, fabrikam.com, and contoso.onmicrosoft.com. You have three connectors configured from Office 365 to your organization's email server. For this example, these connectors are known as **Connector 1**, **Connector 2**, and **Connector 3**.
 
  **Connector 1** is configured for all accepted domains in your organization. The following screen shot shows the connectors wizard screen where you define which domains the connector applies to. In this case, the setting chosen is **For email messages sent to all accepted domains in your organization**.
 
 ![Shows the connector wizard page: When do you want to use this connector? The second option is selected. This option is: For email messages sent to all accepted domains in your organization.](../../media/313c3a28-a6f4-46fb-8d12-850216ab5046.png)
 
- **Connector 2** is set up specifically for your company domain Contoso.com. The following screen shot shows the connectors wizard screen where you define which domains the connector applies to. In this case, the setting chosen is **Only when email messages are sent to these domains**. For **Connector 2**, your company domain Contoso.com is specified. 
+ **Connector 2** is set up specifically for your company domain Contoso.com. The following screen shot shows the connectors wizard screen where you define which domains the connector applies to. In this case, the setting chosen is **Only when email messages are sent to these domains**. For **Connector 2**, your company domain Contoso.com is specified.
 
 ![Shows the connector wizard page: When do you want to use this connector? The third option is selected. This option is: Only when email messages are sent to these domains. The domain Contoso.com has been added.](../../media/c68671c2-d8df-4791-a538-481eae397673.png)
 
@@ -233,13 +233,13 @@ In this example, your organization has four accepted domains, contoso.com, sales
 
 ![Shows the connector wizard page: When do you want to use this connector? The third option is selected. This option is: Only when email messages are sent to these domains. The domain specified includes a wildcard. \*.contoso.com has been added.](../../media/87f27555-e12c-4ad6-914a-d4439f405d43.png)
 
-For each email sent from Office 365 to mailboxes on your email server, Office 365 selects the most specific connector possible. For email sent to: 
+For each email sent from Office 365 to mailboxes on your email server, Office 365 selects the most specific connector possible. For email sent to:
 
-- john@fabrikam.com, Office 365 selects **Connector 1**. 
+- john@fabrikam.com, Office 365 selects **Connector 1**.
 
-- john@contoso.com, Office 365 selects **Connector 2**. 
+- john@contoso.com, Office 365 selects **Connector 2**.
 
-- john@sales.contoso.com, Office 365 selects **Connector 3**. 
+- john@sales.contoso.com, Office 365 selects **Connector 3**.
 
 ## See also
 

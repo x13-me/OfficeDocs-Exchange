@@ -15,26 +15,26 @@ description: "You may need to coordinate schedules with people in different orga
 # Sharing in Exchange Online
 
 You may need to coordinate schedules with people in different organizations or with friends and family members so that you can work together on projects or plan social events. With Office 365, administrators can set up different levels of calendar access in Exchange Online to allow businesses to collaborate with other businesses and to let users share their schedules with others. Business-to-business calendar sharing is set up by creating organization relationships. User-to-user calendar sharing is set up by applying sharing policies.
-  
+
 ## Sharing Scenarios in Exchange Online
 
 The following sharing scenarios are supported in Exchange Online:
-  
+
 |**Sharing goal**|**Setting to use**|**Requirements**|
 |:-----|:-----|:-----|
 |Share calendars with another Office 365 organization|Organization relationships|None, ready to configure|
 |Share calendars with an on-premises Exchange organization|Organization relationships|The on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements|
 |Share an Office 365 user's calendar with another Internet user|Sharing policies|None, ready to configure|
 |Share an Office 365 user's calendar with an Exchange on-premises user|Sharing policies|The on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements|
-   
+
 ## Sharing documentation
 <a name="docs"> </a>
 
 The following table contains links to topics that will help you learn about and manage sharing in Exchange Online.
-  
+
 |**Topic**|**Description**|
 |:-----|:-----|
 |[Organization relationships in Exchange Online](organization-relationships/organization-relationships.md)|Learn more about the one-to-one relationships between organizations that enable calendar free/busy sharing.|
 |[Sharing policies in Exchange Online](sharing-policies/sharing-policies.md)|Learn more about the person-to-person policies that enable calendar sharing.|
-   
+
 
