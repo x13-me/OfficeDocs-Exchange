@@ -21,10 +21,6 @@ You can use mail flow rules (also known as transport rules) in Exchange Online t
 
 Interested in scenarios where these procedures are used? See the following topics:
 
-- **Organization-wide disclaimers, signatures, footers, or headers in Exchange Server**
-
-- **Use transport rules to inspect message attachments in Exchange Server**
-
 - [Common attachment blocking scenarios for mail flow rules](common-attachment-blocking-scenarios.md)
 
 - [Use mail flow rules to route email based on a list of words, phrases, or patterns](use-rules-to-route-email.md)
@@ -37,11 +33,7 @@ Interested in scenarios where these procedures are used? See the following topic
 
 - [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md)
 
-- **Use transport rules to configure bulk email filtering**
-
 - [Define rules to encrypt or decrypt messages](https://go.microsoft.com/fwlink/p/?Linkid=402846)
-
-- **Create organization-wide safe sender or blocked sender lists in Office 365**
 
 ## What do you need to know before you begin?
 
