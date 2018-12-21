@@ -35,15 +35,15 @@ When you set up a connector, email messages are checked to make sure they meet t
   
 You can set up one or both of the following depending on your requirements:
   
-- [Set up a connector to apply security restrictions to mail sent from Office 365 to your partner organization](set-up-connectors-for-secure-mail-flow-with-a-partner.md#setupaconnectortopartner)
+- [Set up a connector to apply security restrictions to mail sent from Office 365 to your partner organization](#set-up-a-connector-to-apply-security-restrictions-to-mail-sent-from-office-365-to-your-partner-organization)
     
-- [Set up a connector to apply security restrictions to mail sent from your partner organization to Office 365](set-up-connectors-for-secure-mail-flow-with-a-partner.md#setupconnectorfrompartner)
+- [Set up a connector to apply security restrictions to mail sent from your partner organization to Office 365](#set-up-a-connector-to-apply-security-restrictions-to-mail-sent-from-your-partner-organization-to-office-365)
     
 Also in this article:
   
-- [Change a connector that Office 365 is using for mail flow](set-up-connectors-for-secure-mail-flow-with-a-partner.md#Changeaconnector)
+- [Change a connector that Office 365 is using for mail flow](#change-a-connector-that-office-365-is-using-for-mail-flow)
     
-- [Example security restrictions you can apply to email sent from a partner organization](set-up-connectors-for-secure-mail-flow-with-a-partner.md#examplesecurityrestrict)
+- [Example security restrictions you can apply to email sent from a partner organization](#example-security-restrictions-you-can-apply-to-email-sent-from-a-partner-organization)
   
 Review this section to help you determine the specific settings you need for your business.
     
@@ -181,5 +181,5 @@ When you set these restrictions, all mail from your partner organization sent fr
 
 [About fixing connector validation errors](https://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx)
 
-[What happens when I have multiple connectors for the same scenario?](set-up-connectors-to-route-mail.md#multipleconnectors)
+[What happens when I have multiple connectors for the same scenario?](set-up-connectors-to-route-mail.md#what-happens-when-i-have-multiple-connectors-for-the-same-scenario)
 
