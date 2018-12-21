@@ -34,7 +34,7 @@ You can use the eDiscovery Export tool in the Exchange admin center (EAC) to exp
     
     OR
     
-  - Mozilla Firefox or Google Chrome. If you use either of these browsers, be sure you install the ClickOnce extension. To install the ClickOnce add-in, see [Mozilla ClickOnce add-ons](https://addons.mozilla.org/en-US/firefox/search/?q=ClickOnce&cat=1%2C0&appver=&platform=) or [ClickOnce for Google Chrome](https://chrome.google.com/webstore/search/clickonce?_category=extensions).
+  - Mozilla Firefox or Google Chrome. If you use either of these browsers, be sure you install the ClickOnce extension. To install the ClickOnce add-in, see [Mozilla ClickOnce add-ons](https://addons.mozilla.org/firefox/search/?q=ClickOnce&cat=1%2C0&appver=&platform=) or [ClickOnce for Google Chrome](https://chrome.google.com/webstore/search/clickonce?_category=extensions).
     
 - You need an active mailbox attached to the account you wish to export.
     
