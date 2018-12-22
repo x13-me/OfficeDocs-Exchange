@@ -194,7 +194,7 @@ switch by executing the HCW application from the following URL:
     it now, or later. Select next.
 6. On the Hybrid Connectivity page, select Use Exchange Modern Hybrid e.g:
 
-    ![](media/08b9b1933233cf4348506a629d1a6f22.png)
+    ![](../media/08b9b1933233cf4348506a629d1a6f22.png)
 
     Select next.
 7. This will begin the process to setup and install the Hybrid Agent. There are
@@ -243,17 +243,17 @@ https://087f1c2e-8711-4176-ab4f-4b1c1777a350.resource.mailboxmigration.his.msapp
 Installation details of the Hybrid Agent can be viewed in the following
 locations on the server where it is installed. E.g.:
 
-![](media/183c42b7f780c0f11399ad84d5b794ca.png)
+![](../media/183c42b7f780c0f11399ad84d5b794ca.png)
 
 `HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft Hybrid Service:`
 
-![](media/3d0ea73be12c78a759c3e6947dbfcea6.png)
+![](../media/3d0ea73be12c78a759c3e6947dbfcea6.png)
 
-![](media/cc0348c42c337d0dd313272aed0bfd89.png)
+![](../media/cc0348c42c337d0dd313272aed0bfd89.png)
 
 Add/Remove programs:
 
-![](media/f06cc90d380e6f23cedc43d38a7fc075.png)
+![](../media/f06cc90d380e6f23cedc43d38a7fc075.png)
 
 ## Testing & validation of the Hybrid Agent
 
@@ -265,7 +265,7 @@ On the server where the Hybrid Agent is installed, open Perform Monitor. Add the
 object, Microsoft AD App Proxy Connector and the \# requests counter to your
 view. E.g.:
 
-![](media/d67d36919447785a56ab2b3759e12e74.png)
+![](../media/d67d36919447785a56ab2b3759e12e74.png)
 
 ### Migration
 
