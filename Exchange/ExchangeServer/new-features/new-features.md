@@ -127,7 +127,7 @@ For more information, see [MAPI over HTTP in Exchange Server](../clients/mapi-ov
 
 Exchange 2019, along with SharePoint Server 2019, enables Outlook on the web users to link to and share documents that are stored in OneDrive for Business in an on-premises SharePoint server instead of attaching files to messages. Users in an on-premises environment can collaborate on files in the same manner that's used in Office 365.
 
-For more information about SharePoint Server 2019, see [New and improved features in SharePoint Server 2016](https://go.microsoft.com/fwlink/p/?LinkId=627299).
+For more information about SharePoint Server 2019, see [New and improved features in SharePoint Server 2019](https://docs.microsoft.com/SharePoint/what-s-new/new-and-improved-features-in-sharepoint-server-2019).
 
 When an Exchange 2019 user receives a Word, Excel, or PowerPoint file in an email attachment, and the file is stored in OneDrive for Business or on-premises SharePoint, the user will now have the option of viewing and editing that file in Outlook on the web alongside the message. To do this, you'll need a separate computer in your on-premises organization that's running Office Online Server. For more information, see [Install Office Online Server in an Exchange organization](../plan-and-deploy/install-office-online-server.md).
 
@@ -208,7 +208,7 @@ Another advantage of the new architecture is that search scalability is improved
 ::: moniker range="exchserver-2016"
 Microsoft Exchange Server 2016 brings a new set of technologies, features, and services to Exchange Server, the messaging platform that provides email, scheduling, and tools for custom collaboration and messaging service applications. Its goal is to support people and organizations as their work habits evolve from a communication focus to a collaboration focus. At the same time, Exchange 2016 helps lower the total cost of ownership whether you deploy Exchange 2016 on-premises or provision your mailboxes in the cloud.
 
-Choose the section below that matches the version of Exchange that you're upgrading from. If you want to know about features that have been removed or replaced in Exchange 2016, see [What's discontinued in Exchange Server](discontinued-features.md) [What's discontinued in Exchange 2016](discontinued-features.md).
+Choose the section below that matches the version of Exchange that you're upgrading from. If you want to know about features that have been removed or replaced in Exchange 2016, see [What's discontinued in Exchange Server](discontinued-features.md).
 
 For more information about deploying Exchange 2016, see [Planning and deployment](../plan-and-deploy/plan-and-deploy.md).
 

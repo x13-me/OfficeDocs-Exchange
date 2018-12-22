@@ -22,7 +22,7 @@ For more information about address lists in Exchange Online, see [Address lists]
 
 For OAB procedures, see [Offline address book procedures](offline-address-book-procedures.md).
 
-Looking for the Exchange Server version of this topic? See [Offline Address Books in Exchange Server](https://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx). 
+Looking for the Exchange Server version of this topic? See [Offline Address Books in Exchange Server](https://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx).
 
 ## How users download offline address books
 
@@ -42,7 +42,7 @@ There are situations where Outlook will always perform a full OAB download. For 
 
 - There's no OAB on the client computer (for example, this is the first time you've connected to your Exchange Online mailbox in Outlook on this computer).
 
-- The version of the OAB on the server and the client don't match (a more recent version of the OAB is present on the server). 
+- The version of the OAB on the server and the client don't match (a more recent version of the OAB is present on the server).
 
 - One or more OAB files are missing from the client computer.
 

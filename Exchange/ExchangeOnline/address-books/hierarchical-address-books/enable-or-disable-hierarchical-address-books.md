@@ -3,7 +3,7 @@ title: "Enable or disable hierarchical address books in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -28,16 +28,16 @@ The cmdlets and parameters that you use to configure a HAB are described in the 
 
 - Estimated time to complete: 30 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-- This topic uses Exchange Online PowerShell examples to create distribution groups, but you can also use the Exchange admin center (EAC) to create and add members to distribution groups. For details, see [Create and manage distribution groups](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md). 
+- This topic uses Exchange Online PowerShell examples to create distribution groups, but you can also use the Exchange admin center (EAC) to create and add members to distribution groups. For details, see [Create and manage distribution groups](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md).
 
-- After you create the HAB, you can use the EAC to manage the membership of the groups in the organizational hierarchy. However, you can only use Exchange Online PowerShell to configure the _SeniorityIndex_ parameter for any new groups or users that you create. 
+- After you create the HAB, you can use the EAC to manage the membership of the groups in the organizational hierarchy. However, you can only use Exchange Online PowerShell to configure the _SeniorityIndex_ parameter for any new groups or users that you create.
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Enable and configure a hierarchical address book
 
@@ -47,7 +47,7 @@ This example uses the following hierarchy:
 
 - The distribution group named "Contoso,Ltd" is the top-level organization in the hierarchy (the root organization).
 
-- Distribution groups named Corporate Office, Product Support Organization, and Sales & Marketing Organization are child organizations under Contoso,Ltd (members of the Contoso,Ltd group). 
+- Distribution groups named Corporate Office, Product Support Organization, and Sales & Marketing Organization are child organizations under Contoso,Ltd (members of the Contoso,Ltd group).
 
 - The distribution groups named Human Resources, Accounting Group, and Administration Group are child organizations under Corporate Office (members of the Corporate Office group).
 
@@ -207,7 +207,7 @@ For detailed syntax and parameter information, see [Set-User](https://technet.mi
 
 To verify that you've successfully enabled and configured a hierarchical address book, use any of the following steps:
 
-- Open Outlook in a profile that's connected to a mailbox in your Exchange Online organization, and click **Address Book** or press Ctrl+Shift+B. The HAB is displayed on the **Organization** tab, similar to the following figure. 
+- Open Outlook in a profile that's connected to a mailbox in your Exchange Online organization, and click **Address Book** or press Ctrl+Shift+B. The HAB is displayed on the **Organization** tab, similar to the following figure.
 
    ![Hierarchical Address Book dialog](../../media/ITPro_Mailbox_HABDisplay.gif)
 
@@ -239,6 +239,6 @@ Set-OrganizationConfig -HierarchicalAddressBookRoot $null
 
 To verify that you've successfully disabled hierarchical address book, use any of the following steps:
 
-- Open Outlook in a profile that's connected to a mailbox in your Exchange Online organization, and click **Address Book** or press Ctrl+Shift+B. Verify that the entries in the address book are displayed in alphabetical order. 
+- Open Outlook in a profile that's connected to a mailbox in your Exchange Online organization, and click **Address Book** or press Ctrl+Shift+B. Verify that the entries in the address book are displayed in alphabetical order.
 
 - In Exchange Online PowerShell, run the following command to verify that the **HierarchicalAddressBookRoot** property value is blank:

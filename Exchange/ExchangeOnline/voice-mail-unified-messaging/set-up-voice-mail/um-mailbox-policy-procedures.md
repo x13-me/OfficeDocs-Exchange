@@ -15,9 +15,9 @@ description: "Create a UM mailbox policy"
 # UM mailbox policy procedures
 
 [Create a UM mailbox policy](create-um-mailbox-policy.md)
-  
+
 [Manage a UM mailbox policy](manage-um-mailbox-policy.md)
-  
+
 [Delete a UM mailbox policy](delete-um-mailbox-policy.md)
-  
+
 

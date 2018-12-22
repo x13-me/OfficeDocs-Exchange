@@ -19,7 +19,7 @@ description: "Summary: Learn how to view, create, modify, delete, and test Clien
 Client Access Rules allow or block client connections to your Exchange Online organization based on the properties of the connection. For more information about Client Access Rules, see [Client Access Rules in Exchange Online](client-access-rules.md).
 
 > [!TIP]
-> Verify that your rules work the way you expect. Be sure to thoroughly test each rule and the interactions between rules. For more information, see the [Use Exchange Online PowerShell to test Client Access Rules](#use-exchange-online-powershell-to-test-client-access-rules) section later in this topic. 
+> Verify that your rules work the way you expect. Be sure to thoroughly test each rule and the interactions between rules. For more information, see the [Use Exchange Online PowerShell to test Client Access Rules](#use-exchange-online-powershell-to-test-client-access-rules) section later in this topic.
 
 ## What do you need to know before you begin?
 
@@ -32,7 +32,7 @@ Client Access Rules allow or block client connections to your Exchange Online or
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use Exchange Online PowerShell to view Client Access Rules
 
@@ -77,10 +77,10 @@ New-ClientAccessRule -Name "Block ActiveSync" -Action DenyAccess -AnyOfProtocols
 ```
 
  **Notes**:
- 
+
 - As a best practice, create a Client Access Rule with the highest priority to preserve your administrator access to remote PowerShell. For example: `New-ClientAccessRule -Name "Always Allow Remote PowerShell" -Action Allow -AnyOfProtocols RemotePowerShell -Priority 1`.
 
-- The rule has the default priority value, because we didn't use the _Priority_ parameter. For more information, see the [Use Exchange Online PowerShell to set the priority of Client Access Rules](#use-exchange-online-powershell-to-set-the-priority-of-client-access-rules)  section later in this topic. 
+- The rule has the default priority value, because we didn't use the _Priority_ parameter. For more information, see the [Use Exchange Online PowerShell to set the priority of Client Access Rules](#use-exchange-online-powershell-to-set-the-priority-of-client-access-rules)  section later in this topic.
 
 - The rule is enabled, because we didn't use the _Enabled_ parameter, and the default value is `$true`.
 
@@ -102,13 +102,13 @@ To verify that you've successfully created a Client Access Rule, use any of thes
   Get-ClientAccessRule
   ```
 
-- Replace _\<RuleName\>_ with the name of the rule, and run this command to see the details of the rule: 
+- Replace _\<RuleName\>_ with the name of the rule, and run this command to see the details of the rule:
 
   ```
   Get-ClientAccessRule -Identity "<RuleName>" | Format-List
   ```
 
-- See which Client Access Rules would affect a specific client connection to Exchange Online by using the **Test-ClientAccessRule** cmdlet. For more information, see the [Use Exchange Online PowerShell to test Client Access Rules](#use-exchange-online-powershell-to-test-client-access-rules) section later in this topic. 
+- See which Client Access Rules would affect a specific client connection to Exchange Online by using the **Test-ClientAccessRule** cmdlet. For more information, see the [Use Exchange Online PowerShell to test Client Access Rules](#use-exchange-online-powershell-to-test-client-access-rules) section later in this topic.
 
 ## Use Exchange Online PowerShell to modify Client Access Rules
 
@@ -128,7 +128,7 @@ Set-ClientAccessRule -Identity "Allow IMAP4" -Enabled $false
 
 An important consideration when you modify Client Access Rules is modifying conditions or exceptions that accept multiple values:
 
-- The values that you specify will *replace* any existing values. 
+- The values that you specify will *replace* any existing values.
 
 - To add or remove values without affecting other existing values, use this syntax: `@{Add="<Value1>","<Value2>"...; Remove="<Value1>","<Value2>"...}`
 
@@ -144,13 +144,13 @@ For detailed syntax and parameter information, see [Set-ClientAccessRule](https:
 
 To verify that you've successfully modified a Client Access Rule, use any of these procedures:
 
-- Replace _\<RuleName\>_ with the name of the rule, and run this command to see the details of the rule: 
+- Replace _\<RuleName\>_ with the name of the rule, and run this command to see the details of the rule:
 
   ```
   Get-ClientAccessRule -Identity "<RuleName>" | Format-List
   ```
 
-- See which Client Access Rules would affect a specific client connection to Exchange Online by using the **Test-ClientAccessRule** cmdlet. For more information, see the [Use Exchange Online PowerShell to test Client Access Rules](#use-exchange-online-powershell-to-test-client-access-rules) section later in this topic. 
+- See which Client Access Rules would affect a specific client connection to Exchange Online by using the **Test-ClientAccessRule** cmdlet. For more information, see the [Use Exchange Online PowerShell to test Client Access Rules](#use-exchange-online-powershell-to-test-client-access-rules) section later in this topic.
 
 ## Use Exchange Online PowerShell to set the priority of Client Access Rules
 
@@ -170,19 +170,19 @@ This example sets the priority of the rule named Disable IMAP4 to 2. All existin
 Set-ClientAccessRule -Identity "Disable IMAP" -Priority 2
 ```
 
- **Note**: To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-ClientAccessRule** cmdlet. 
+ **Note**: To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-ClientAccessRule** cmdlet.
 
 ### How do you know this worked?
 
 To verify that you've successfully set the priority of a Client Access Rule, use either of these procedures:
 
-- Run the this command in Exchange Online PowerShell to see the list of rules and their **Priority** values: 
+- Run the this command in Exchange Online PowerShell to see the list of rules and their **Priority** values:
 
   ```
   Get-ClientAccessRule
   ```
 
-- Replace _\<RuleName\>_ with the name of the rule, and run this command: 
+- Replace _\<RuleName\>_ with the name of the rule, and run this command:
 
   ```
   Get-ClientAccessRule -Identity "<RuleName>" | Format-List Name,Priority
@@ -202,7 +202,7 @@ This example removes the Client Access Rule named Block POP3.
 Remove-ClientAccessRule -Identity "Block POP3"
 ```
 
- **Note**: To disable a Client Access Rule without deleting it, use the _Enabled_ parameter with the value `$false` on the **Set-ClientAccessRule** cmdlet. 
+ **Note**: To disable a Client Access Rule without deleting it, use the _Enabled_ parameter with the value `$false` on the **Set-ClientAccessRule** cmdlet.
 
 For detailed syntax and parameter information, see [Remove-ClientAccessRule](https://technet.microsoft.com/library/2ef2eabd-08bf-4f0d-879c-4e9a4c707903.aspx).
 

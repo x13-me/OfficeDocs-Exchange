@@ -27,7 +27,7 @@ Every certificate has a built-in expiration date. In Exchange Server, the defaul
     
 - To renew a certificate that was issued by a CA, you need to renew the certificate with the same CA that issued the certificate. If you're changing CAs, or if there's a problem with the original certificate when you try to renew it, you need to create a new certificate request (also known as a certificate signing request or CSR) for a new certificate. For more information, see [Create an Exchange Server certificate request for a certification authority](create-ca-certificate-requests.md).
     
-- If you renew or replace a certificate that was issued by a CA on a subscribed Edge Transport server, you need to remove the old certificate, and then delete and recreate the Edge Subscription. For more information, see [Edge Subscription process](../../architecture/edge-transport-servers/edge-subscriptions.md#Process).
+- If you renew or replace a certificate that was issued by a CA on a subscribed Edge Transport server, you need to remove the old certificate, and then delete and recreate the Edge Subscription. For more information, see [Edge Subscription process](../edge-transport-servers/edge-subscriptions.md#edge-subscription-process).
     
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access services security" entry in the [Clients and mobile devices permissions](../../permissions/feature-permissions/client-and-mobile-device-permissions.md) topic.
     

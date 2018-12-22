@@ -16,43 +16,43 @@ description: "MailTips are informative messages displayed to users while they're
 # MailTips
 
 MailTips are informative messages displayed to users while they're composing a message. Microsoft Exchange Server analyzes the message, including the list of recipients to which it's addressed, and if it detects a potential problem, it notifies the user with MailTips prior to sending the message. With the help of the information provided by MailTips, senders can adjust the message they're composing to avoid undesirable situations or non-delivery reports (NDRs).
-  
+
 ## How MailTips work
 
 MailTips are implemented as a web service in Exchange. When a sender is composing a message, the client software makes an Exchange web service call to the Client Access server to get the list of MailTips. The server responds with the list of MailTips that apply to that message, and the client software displays the MailTips to the sender.
-  
+
 The following unproductive messaging scenarios are common in any messaging environment:
-  
+
 - NDRs resulting from messages that violate restrictions configured in an organization such as message size restrictions or maximum number of recipients per message.
-    
+
 - NDRs resulting from messages sent to recipients that don't exist, recipients that are restricted, or users whose mailboxes are full.
-    
+
 - Sending messages to users with Automatic Replies configured.
-    
+
 All of these scenarios involve the user sending a message, expecting it to be delivered, and instead receiving a response stating that the message isn't delivered. Even in the best-case scenario, like the automatic reply, these events result in lost productivity. In the case of an NDR, this scenario could result in a costly call to the Help desk.
-  
+
 There are also several scenarios where sending a message won't result in an error, but can have undesirable, even embarrassing consequences:
-  
+
 - Messages sent to extremely large distribution groups.
-    
+
 - Messages sent to inappropriate distribution groups.
-    
+
 - Messages inadvertently sent to recipients outside your organization.
-    
-- Selecting **Reply to All** to a message that was received as a Bcc recipient. 
-    
+
+- Selecting **Reply to All** to a message that was received as a Bcc recipient.
+
 All of these problematic scenarios can be mitigated by informing users of the possible outcome of sending the message as they're composing the message. For example, if senders know that the size of the message they're trying to send exceeds the corporate policy, they won't attempt to send the message. Similarly, if senders are notified that the message they're sending will be delivered to people outside the organization, they're more likely to ensure that the content and the tone of the message are appropriate.
-  
+
 The following messaging clients support MailTips:
-  
+
 - Outlook Web App
-    
+
 - Microsoft Outlook 2010 or later
-    
+
 ## MailTips in Exchange
 
 The following table lists the available MailTips in Exchange Server.
-  
+
 |**MailTip**|**Availability**|**Scenario**|
 |:-----|:-----|:-----|
 |Invalid Internal Recipient|Outlook|The Invalid Internal Recipient MailTip is displayed if the sender adds a recipient that appears to be internal to the organization but doesn't exist.  <br/> This could happen if the sender addresses a message to a user who is no longer with the company but whose address resolves due to name resolution cache or an entry in the sender's Contacts folder. It can also happen if the sender types an SMTP address with a domain for which Exchange is authoritative and the address doesn't resolve to an existing recipient.  <br/> The MailTip indicates the invalid recipient and gives the sender the option to remove the recipient from the message.|
@@ -65,21 +65,21 @@ The following table lists the available MailTips in Exchange Server.
 |Moderated Recipient|Outlook  <br/> Outlook Web App|The Moderated Recipient MailTip is displayed if the sender adds a recipient that's moderated.  <br/> The MailTip indicates which recipient is moderated and informs the sender that this may result in delay of the delivery.  <br/> If the sender is also the moderator, this MailTip isn't displayed. It's also not displayed if the sender has been explicitly allowed to send messages to the recipient (by adding the sender's name to the Accept Messages Only From list for the recipient).  <br/> For instructions on how to configure moderated recipients in Exchange Server, see [Common message approval scenarios](../../security-and-compliance/mail-flow-rules/common-message-approval-scenarios.md).  <br/> For instructions on how to configure moderated recipients in Exchange Online, see [Configure a moderated recipient in Exchange Online](../../recipients-in-exchange-online/configure-a-moderated-recipient.md).|
 |Reply-All on Bcc|Outlook Web App|The Reply-All on Bcc MailTip is displayed if the sender receives a Bcc copy of a message and selects **Reply to All**.  <br/> When a user selects **Reply to All** to such a message, the fact that the user received a Bcc of that message is revealed to the rest of the audience to which the message was sent. In almost all cases, this is an undesirable situation, and this MailTip informs the user of this condition.|
 |Oversize Message|Outlook| The Oversize Message MailTip is displayed if the message the sender is composing is larger than configured message size limits in your organization.  <br/>  The MailTip is displayed if the message size violates one of the following size restrictions:  <br/>  Maximum send size setting on the sender's mailbox  <br/>  Maximum receive size setting on the recipient's mailbox  <br/>  Maximum message size restriction for the organization  <br/> > [!NOTE]>  Due to the complexity of the implementation, the message size limits on the connectors in your organization aren't taken into account.|
-   
+
 ## MailTip restrictions
 
 MailTips are subject to the following restrictions:
-  
+
 - MailTips aren't supported when working in offline mode in Outlook.
-    
+
 - When a message is addressed to a distribution group, the MailTips for individual recipients that are members of that distribution group aren't evaluated. However, if any of the members is an external recipient, the External Recipients MailTip is displayed, which shows the sender the number of external recipients in the distribution group.
-    
+
 - If the message is addressed to more than 200 recipients, individual mailbox MailTips aren't evaluated due to performance reasons.
-    
+
 - Custom MailTips are limited to 175 characters.
-    
+
 - While older versions of Exchange Server would populate MailTips in their entirety, Exchange Online will only display up to 1000 characters.
-    
+
 - If the sender starts composing a message and leaves it open for an extended period of time, the Automatic Replies and Mailbox Full MailTips are evaluated every two hours.
-    
+
 

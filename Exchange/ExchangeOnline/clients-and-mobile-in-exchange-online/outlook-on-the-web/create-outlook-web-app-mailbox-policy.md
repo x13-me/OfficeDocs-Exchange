@@ -3,7 +3,7 @@ title: "Create an Outlook on the web mailbox policy in Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -69,11 +69,11 @@ In Exchange Online PowerShell, creating an Outlook on the web mailbox policy is 
 
 ## How do you know this worked?
 
-To verify that you've successfully created an Outlook Web App mailbox policy: 
+To verify that you've successfully created an Outlook Web App mailbox policy:
 
 - In the EAC, click **Permissions** \> **Outlook Web App Policies**, and look for your new mailbox policy.
 
-To verify that you've successfully created an Outlook on the web mailbox policy, do either of the following steps: 
+To verify that you've successfully created an Outlook on the web mailbox policy, do either of the following steps:
 
 - In the EAC, click **Permissions** \> **Outlook Web App Policies**, and verify the policy is listed. You can select the policy and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png) to verify the properties of the policy.
 

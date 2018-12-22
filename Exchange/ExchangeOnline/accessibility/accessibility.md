@@ -2,7 +2,7 @@
 title: "Accessibility in Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
