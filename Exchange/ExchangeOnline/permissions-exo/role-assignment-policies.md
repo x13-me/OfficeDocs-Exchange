@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Role assignment policies in Exchange Online"
 ms.author: chrisda
 author: chrisda
@@ -290,7 +290,7 @@ To verify that you've successfully removed a role assignment policy, use either 
 
 ### Use the EAC to view role assignment policy assignments on mailboxes
 
-1. In the EAC, go to **Recipients** \> **Mailboxes**, select the mailbox, and click click **Edit** ![Edit button](../media/ITPro_EAC_EditIcon.png).
+1. In the EAC, go to **Recipients** \> **Mailboxes**, select the mailbox, and click **Edit** ![Edit button](../media/ITPro_EAC_EditIcon.png).
 
 2. In the mailbox properties window that opens, click **Mailbox features**. The role assignment policy is shown in the **Role assignment policy** field.
 
