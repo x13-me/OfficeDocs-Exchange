@@ -114,7 +114,7 @@ $AL = Get-AddressList -Identity "Southeast Offices"; Get-Recipient -ResultSize u
 
 ## Use Exchange Online PowerShell to update address lists
 
-The **Update-AddressList** cmdlet (or **Update-GlobalAddressList**) isn't available in Exchange Online PowerShell. If recipients that should appear an address list do not, you need to change the required property value for those users to a temporary value, and then back to the value that's required by the address list. You can update the user property values in the the Exchange admin center (EAC) or Exchange Online PowerShell, but it's quicker to do bulk operations in PowerShell.
+The **Update-AddressList** cmdlet (or **Update-GlobalAddressList**) isn't available in Exchange Online PowerShell. If recipients that should appear an address list do not, you need to change the required property value for those users to a temporary value, and then back to the value that's required by the address list. You can update the user property values in the Exchange admin center (EAC) or Exchange Online PowerShell, but it's quicker to do bulk operations in PowerShell.
 
 For example, suppose the address list named Oregon and Washington Users uses the filter `{((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}`, but the address list doesn't include everyone whose **StateOrProvince** property values are set correctly. To update the address list, perform the following steps:
 
