@@ -96,9 +96,10 @@ To install Office Online Server, do the following on the computer where you want
 
 7. Open Windows PowerShell and run the following commands. When you run the commands, replace the example FQDNs and certificate friendly name with your own.
 
-  - **Same internal and external FQDN**: `New-OfficeWebAppsFarm -InternalURL "https://oos.contoso.com" -ExternalURL "https://oos.contoso.com" -CertificateName "Office Online Server Preview Certificate"`
+`New-OfficeWebAppsFarm -InternalURL "https://oos.contoso.com" -ExternalURL "https://oos.contoso.com" -CertificateName "Office Online Server Preview Certificate"`
 
-  - **Different internal and external FQDNs**: `New-OfficeWebAppsFarm -InternalURL "https://oos.internal.contoso.com" -ExternalURL "https://oos.contoso.com" -CertificateName "Office Online Server Preview Certificate"`
+    > [!NOTE]
+    > You can configure different internal and external URLs, but in the next step you can see that you can only configure one URL for Exchange. In this case, if you use the internal URL in the next step, this function will only work internally and external users will get an unexpected error. If you use the external URL, this function will only work for external users and internal users will get an unexpected error.
 
 ## Configure the Office Online Server endpoint at the Mailbox server level
 
@@ -107,7 +108,7 @@ After you've configured the Office Online Server server, do the following on you
 1. Open the Exchange Management Shell and run the following command. Replace the example server name and URL with your own.
 
   ```
-  Set-MailboxServer MBX -WacDiscoveryEndpoint "https://oos.internal.contoso.com/hosting/discovery"
+  Set-MailboxServer MBX -WacDiscoveryEndpoint "https://oos.contoso.com/hosting/discovery"
   ```
 
 2. Restart the MsExchangeOwaAppPool by running the following command.
