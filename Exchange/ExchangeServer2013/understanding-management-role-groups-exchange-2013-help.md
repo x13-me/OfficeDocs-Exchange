@@ -261,7 +261,7 @@ As mentioned previously, a role group is made up of several layers. To help you 
 
 When the preceding command is run, the following happens:
 
-1.  A new role group object, which is a special USG, called Seattle Recipient Management is created.
+1.  A new role group object, which is a special USG, called Seattle Recipient Management is created under Microsoft Exchange Security Groups OU in the forest root domain.
 
 2.  The mailboxes for Ray, Jenn, Maria, Chris, Maija, Carter, Jenny, Sam, Lukas, Isabel, and Katie are added as members of the role group. These users receive the permissions provided by this role group.
 
