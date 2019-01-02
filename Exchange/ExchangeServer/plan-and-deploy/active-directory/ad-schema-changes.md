@@ -151,7 +151,7 @@ This section summarizes the changes that are made to the Active Directory schema
 |Top|add:mayContain|msExchAcceptedDomainBL|
 |Top|add:mayContain|msExchHygieneConfigurationMalwareBL|
 |Top|add:mayContain|msExchHygieneConfigurationSpamBL|
-|Top|add:mayContain|msExchEvictedMemebersBL|
+|Top|add:mayContain|msExchEvictedMembersBL|
 |Top|add: mayContain|msExchOABGeneratingMailboxBL|
 |Top|add: mayContain|msExchAuxMailboxParentObjectIdBL|
 |Top|add: mayContain|msExchAdministrativeUnitBL|
@@ -765,7 +765,7 @@ This section summarizes the changes that are made to the Active Directory schema
 
 - ms-Exch-EvictedMembers-Link
 
-- ms-Exch-EvictedMemebers-BL
+- ms-Exch-EvictedMembers-BL
 
 - ms-Exch-Extension-Custom-Attribute-1
 
@@ -1833,7 +1833,7 @@ This section contains the classes modified in Exchange 2016 RTM.
 |Top|add:mayContain|msExchAcceptedDomainBL|
 |Top|add:mayContain|msExchHygieneConfigurationMalwareBL|
 |Top|add:mayContain|msExchHygieneConfigurationSpamBL|
-|Top|add:mayContain|msExchEvictedMemebersBL|
+|Top|add:mayContain|msExchEvictedMembersBL|
 |Top|add: mayContain|msExchOABGeneratingMailboxBL|
 |Top|add: mayContain|msExchAuxMailboxParentObjectIdBL|
 |ms-Exch-Accepted-Domain|add:mayContain|msExchHygieneConfigurationLink|
@@ -2421,7 +2421,7 @@ The following global catalog attributes are added by Exchange 2016 RTM:
     
 - ms-Exch-EvictedMembers-Link
     
-- ms-Exch-EvictedMemebers-BL
+- ms-Exch-EvictedMembers-BL
     
 - ms-Exch-Extension-Custom-Attribute-1
     
