@@ -266,7 +266,7 @@ The default throttling policy contains the following parameters. You can change 
 |DiscoveryMaxMailboxes  <br/> |The maximum number of mailboxes that can be searched in a single In-Place eDiscovery search. Public folder mailboxes are also counted against the source mailbox limit.  <br/> |10,000<sup>1</sup> <br/> |
 |DiscoveryMaxStatsSearchMailboxes  <br/> |The maximum number of mailboxes that can be searched in a single In-Place eDiscovery search that still allows you to view keyword statistics.  <br/> |100  <br/> **Note**: After you run an eDiscovery search estimate, you can view keyword statistics. These statistics show details about the number of items returned for each keyword used in the search query. If more than 100 source mailboxes are included in the search, an error will be returned if you try to view keyword statistics.  <br/> |
 |DiscoveryMaxKeywords  <br/> |The maximum number of keywords that can be specified in a single In-Place eDiscovery search.  <br/> |500  <br/> |
-|DiscoveryMaxSearchResultsPageSize  <br/> |The maximum number of items displayed on a single page when previewing In-Place eDiscovery search results.  <br/> |200  <br/> |
+|DiscoveryPreviewSearchResultsPageSize  <br/> |The maximum number of items displayed on a single page when previewing In-Place eDiscovery search results.  <br/> |200  <br/> |
 |DiscoverySearchTimeoutPeriod  <br/> |The number of minutes that an In-Place eDiscovery search will run before it times out.  <br/> |10 minutes  <br/> |
    
 <sup>1</sup> Archive mailboxes are counted against the source mailbox limit. That means you can search a maximum of 5,000 mailboxes if the corresponding archive mailbox is enabled for all 5,000 mailboxes.
