@@ -3,7 +3,7 @@ title: "Install Office Online Server in an Exchange organization"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 6/8/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: exchange-server-it-pro
@@ -24,15 +24,15 @@ You can configure an Office Online Server endpoint in two places in Exchange 201
 
 - **Organization**: There are a couple of reasons why you might configure the Office Online Server endpoint at the organization level:
 
-  - **Single-server or single-location deployment**: You can configure the endpoint at the organization level if all of your Exchange 2016 Mailbox servers are in the same location and you don't plan on having geographically distributed Office Online Server servers.
+   - **Single-server or single-location deployment**: You can configure the endpoint at the organization level if all of your Exchange 2016 Mailbox servers are in the same location and you don't plan on having geographically distributed Office Online Server servers.
 
-  - **Fallback for large deployments**: You can configure endpoint at the organization level as a fallback if the endpoint configured on a Mailbox server isn't available. If an Office Web Apps server isn't available, the client will try to connect to the endpoint configured at the organization level.
+   - **Fallback for large deployments**: You can configure endpoint at the organization level as a fallback if the endpoint configured on a Mailbox server isn't available. If an Office Web Apps server isn't available, the client will try to connect to the endpoint configured at the organization level.
 
-  **Notes**:
+   **Notes**:
 
-  - If you have Exchange 2013 servers in your organization, don't configure an endpoint at the organization level. Doing so will direct Exchange 2013 servers to use the Office Online Server server. This isn't supported.
+     - If you have Exchange 2013 servers in your organization, don't configure an endpoint at the organization level. Doing so will direct Exchange 2013 servers to use the Office Online Server server. This isn't supported.
 
-  - Previewing attachments on S/MIME messages in Outlook on the web isn't supported by Office Online Server.
+     - Previewing attachments on S/MIME messages in Outlook on the web isn't supported by Office Online Server.
 
 - **Mailbox server**: If you want to distribute client requests between two or more Office Online Server servers, if you want to geographically distribute Office Online Server servers, or if you have Exchange 2013 in your organization, configure the endpoints at the Exchange Mailbox server level. When you configure an endpoint at the server level, mailboxes located on that server will send requests to the configured Office Online Server server.
 
@@ -46,8 +46,8 @@ Office Online Server requires the following to install:
 
 - Exchange 2016 Cumulative Update 1 (CU1) or later
 
-    > [!NOTE]
-    > If you're running Windows Server 2016, you will need Exchange 2016 CU3 or later, as detailed in [Exchange Server prerequisites](prerequisites.md).
+   > [!NOTE]
+   > If you're running Windows Server 2016, you will need Exchange 2016 CU3 or later, as detailed in [Exchange Server prerequisites](prerequisites.md).
 
 - [Microsoft .NET Framework 4.5.2](https://go.microsoft.com/fwlink/p/?linkId=616890)
 
@@ -65,9 +65,9 @@ To install Office Online Server prerequisites, do the following:
 
 2. Install the required operating system features by running the following command:
 
-  ```
-  Install-WindowsFeature Web-Server, Web-Mgmt-Tools, Web-Mgmt-Console, Web-WebServer, Web-Common-Http, Web-Default-Doc, Web-Static-Content, Web-Performance, Web-Stat-Compression, Web-Dyn-Compression, Web-Security, Web-Filtering, Web-Windows-Auth, Web-App-Dev, Web-Net-Ext45, Web-Asp-Net45, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Includes, InkandHandwritingServices, Windows-Identity-Foundation
-  ```
+   ```
+   Install-WindowsFeature Web-Server, Web-Mgmt-Tools, Web-Mgmt-Console, Web-WebServer, Web-Common-Http, Web-Default-Doc, Web-Static-Content, Web-Performance, Web-Stat-Compression, Web-Dyn-Compression, Web-Security, Web-Filtering, Web-Windows-Auth, Web-App-Dev, Web-Net-Ext45, Web-Asp-Net45, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Includes, InkandHandwritingServices, Windows-Identity-Foundation
+   ```
 
 3. Reboot the computer after the Windows features have been installed.
 
@@ -77,12 +77,11 @@ To install Office Online Server, do the following on the computer where you want
 
 1. Download Office Online Server from the [Volume License Service Center](https://go.microsoft.com/fwlink/p/?linkId=195442).
 
+   **Note**: Office Online Server is part of the downloads for Office Professional Plus 2016 in the Volume License Service Center. If you qualify for Office Online Server but don't have access to the Volume License Servicing Center, you have the following options: 
 
-  **Note**: Office Online Server is part of the downloads for Office Professional Plus 2016 in the Volume License Service Center. If you qualify for Office Online Server but don't have access to the Volume License Servicing Center, you have the following options: 
+   - Volume License or Open customers can contact their [Support Center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx).
 
-    - Volume License or Open customers can contact their [Support Center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx).
-
-    - Direct customers can submit a request from their Office 365 admin center or [contact support](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+   - Direct customers can submit a request from their Office 365 admin center or [contact support](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
 2. Navigate to the location where you downloaded Office Online Server and run setup.exe.
 
@@ -96,9 +95,12 @@ To install Office Online Server, do the following on the computer where you want
 
 7. Open Windows PowerShell and run the following commands. When you run the commands, replace the example FQDNs and certificate friendly name with your own.
 
-  - **Same internal and external FQDN**: `New-OfficeWebAppsFarm -InternalURL "https://oos.contoso.com" -ExternalURL "https://oos.contoso.com" -CertificateName "Office Online Server Preview Certificate"`
+   ```
+   New-OfficeWebAppsFarm -InternalURL "https://oos.contoso.com" -ExternalURL "https://oos.contoso.com" -CertificateName "Office Online Server Preview Certificate"`
+   ```
 
-  - **Different internal and external FQDNs**: `New-OfficeWebAppsFarm -InternalURL "https://oos.internal.contoso.com" -ExternalURL "https://oos.contoso.com" -CertificateName "Office Online Server Preview Certificate"`
+    > [!NOTE]
+    > You can configure different internal and external URLs, but in the next step you'll see that you can only configure one URL for Exchange. In this case, if you use the internal URL in the next step, this function will only work internally and external users will get an unexpected error. If you use the external URL, this function will only work for external users and internal users will get an unexpected error.
 
 ## Configure the Office Online Server endpoint at the Mailbox server level
 
@@ -106,15 +108,15 @@ After you've configured the Office Online Server server, do the following on you
 
 1. Open the Exchange Management Shell and run the following command. Replace the example server name and URL with your own.
 
-  ```
-  Set-MailboxServer MBX -WacDiscoveryEndpoint "https://oos.internal.contoso.com/hosting/discovery"
-  ```
+   ```
+   Set-MailboxServer MBX -WacDiscoveryEndpoint "https://oos.contoso.com/hosting/discovery"
+   ```
 
 2. Restart the MsExchangeOwaAppPool by running the following command.
 
-  ```
-  Restart-WebAppPool MsExchangeOwaAppPool
-  ```
+   ```
+   Restart-WebAppPool MsExchangeOwaAppPool
+   ```
 
 ## Configure the Office Online Server endpoint at the organization level
 
@@ -122,17 +124,16 @@ After you've configured the Office Online Server server, do the following on you
 
 1. Open the Exchange Management Shell and run the following command. Replace the example URL with your own.
 
-  ```
-  Set-OrganizationConfig -WacDiscoveryEndpoint "https://oos.internal.contoso.com/hosting/discovery"
-  ```
+   ```
+   Set-OrganizationConfig -WacDiscoveryEndpoint "https://oos.internal.contoso.com/hosting/discovery"
+   ```
 
-    > [!IMPORTANT]
-    > If you have Exchange 2013 servers in your organization, don't configure an endpoint at the organization level. Doing so will direct Exchange 2013 servers to use the Office Online Server server. This isn't supported.
+   > [!IMPORTANT]
+   > If you have Exchange 2013 servers in your organization, don't configure an endpoint at the organization level. Doing so will direct Exchange 2013 servers to use the Office Online Server server. This isn't supported.
 
 2. Restart the MsExchangeOwaAppPool by running the following command.
 
-  ```
-  Restart-WebAppPool MsExchangeOwaAppPool
-  ```
-
-
+   ```
+   Restart-WebAppPool MsExchangeOwaAppPool
+   ```
+   
