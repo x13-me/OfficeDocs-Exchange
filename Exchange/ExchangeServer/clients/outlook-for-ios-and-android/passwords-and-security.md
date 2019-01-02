@@ -27,7 +27,7 @@ After the Outlook service has decrypted the password at runtime, the service can
 
 ## Compliance considerations when sending passwords
 
-Before you enable anything that allows for the transmission of passwords from your on-premises Exchange environment, be sure to consider the possible ramifications. For example, transmitting password to Outlook services might result in your inability to meet the requirements of PCI-DSS or ISO/IEC 27001.
+Before you enable anything that allows for the transmission of passwords from your on-premises Exchange environment, be sure to consider the possible ramifications. For example, transmitting passwords to Outlook services might result in your inability to meet the requirements of PCI-DSS or ISO/IEC 27001.
 
 Furthermore, if you connect and synchronize email, calendars, and other email-related data, you might run into issues of compliance with GDPR, which restricts the private information that you can transmit without owner consent. This information might be contained in and found within emails, calendar items, and so on.
   
