@@ -39,7 +39,7 @@ For additional management tasks related to UM auto attendants, see [UM auto atte
 
   - Estimated time to complete: 3 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM dial plans" and “UM auto attendants�? entries in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM dial plans" and "UM auto attendants" entries in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
   - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 
@@ -78,7 +78,7 @@ This example imports the welcome greeting file named welcomegreeting.wav from d:
 This example exports the welcome greeting for the UM dial plan `MyUMDialPlan` and saves it as the file named welcomegreeting.wav.
 
 ```powershell
-    $prompt = Export-UMPrompt -PromptFileName "customgreeting.wav�? -UMDialPlan MyUMDialPlan
+    $prompt = Export-UMPrompt -PromptFileName "customgreeting.wav" -UMDialPlan MyUMDialPlan
     set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
 ```
 

@@ -24,7 +24,7 @@ This topic discusses the components, features, or functionality that have been r
 > <LI>
 > <P><A href="what-s-new-in-exchange-2013-exchange-2013-help.md">What's new in Exchange 2013</A>&nbsp;&nbsp;&nbsp;Information about new features and functionality in Exchange Server 2013.</P>
 > <LI>
-> <P><A href="https://go.microsoft.com/fwlink/p/?linkid=267479">Developer roadmap for Exchange 2013</A>&nbsp;&nbsp;&nbsp;&nbsp;See the “Development technologies removed from Exchange�? section for information about the API and Development features discontinued in Exchange 2013.</P></LI></UL>
+> <P><A href="https://go.microsoft.com/fwlink/p/?linkid=267479">Developer roadmap for Exchange 2013</A>&nbsp;&nbsp;&nbsp;&nbsp;See the "Development technologies removed from Exchange" section for information about the API and Development features discontinued in Exchange 2013.</P></LI></UL>
 
 
 
