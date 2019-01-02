@@ -115,7 +115,7 @@ There are three basic methods you can use to apply an Outlook on the web mailbox
     $<VariableName> | foreach {Set-CasMailbox -Identity $_ -OwaMailboxPolicy "<Policy Name>"}
     ```
 
-   This example assigns the the policy named Managers and Executives to the mailboxes specified in the file C:\My Documents\Management.txt.
+   This example assigns the policy named Managers and Executives to the mailboxes specified in the file C:\My Documents\Management.txt.
 
     ```
     $Mgrs = Get-Content "C:\My Documents\Management.txt"
