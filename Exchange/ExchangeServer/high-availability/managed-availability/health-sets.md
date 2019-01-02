@@ -62,7 +62,7 @@ Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
 ```
 
 ```
-(Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
+(Get-DatabaseAvailabilityGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
 ```
 
 For detailed syntax and parameter information, see [Get-HealthReport](http://technet.microsoft.com/library/f33fbed5-0e01-4d7e-a252-121b2afb6864.aspx).
