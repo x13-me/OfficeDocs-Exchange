@@ -1449,6 +1449,14 @@ The following table lists the extended rights that are added when you install Ex
 > [!NOTE]
 > The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2016 version. To verify that Active Directory has been successfully prepared, see the [How do you know this worked?](../prepare-ad-and-domains.md#how-do-you-know-this-worked) section in [Prepare Active Directory and domains for Exchange Server](../prepare-ad-and-domains.md).
 
+## Exchange 2016 CU11 Active Directory schema changes
+
+No changes were made to the Active Directory schema in Exchange 2016 in CU11.
+
+## Exchange 2016 CU10 Active Directory schema changes
+
+No changes were made to the Active Directory schema in Exchange 2016 in CU10.
+
 ## Exchange 2016 CU9 Active Directory schema changes
 
 No changes were made to the Active Directory schema in Exchange 2016 in CU9.
