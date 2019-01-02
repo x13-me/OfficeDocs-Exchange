@@ -40,7 +40,7 @@ In on-premises Exchange deployments, users can be granted a variety of permissio
 
 The following permissions **are** supported:
 
-- **Full Access**: A mailbox on an on-premises Exchange server can be granted the **Full Access** permission to an Office 365 mailbox, and vice versa. For example, an Office 365 mailbox can be granted the **Full Access** permission to an on-premises shared mailbox. Users need to open the mailbox using the Outlook desktop client; cross-premises mailbox permissions aren't supported in Outlook on the web.
+- **Full Access**: A mailbox on an on-premises Exchange server can be granted the **Full Access** permission to an Office 365 mailbox, and vice versa. For example, an Office 365 mailbox can be granted the **Full Access** permission to an on-premises shared mailbox. Users need to open the mailbox using the Outlook desktop client. Cross-premises mailbox permissions aren't fully supported in Outlook on the web. User can use "Open other mailbox" feature in Outlook on the web to open mailbox where it has full access, however this generates a redirection link and credention prompt before the user can access the mailbox.
 
    > [!NOTE]
    > Users might receive additional credential prompts when they first access a mailbox that's in the other organization and add it to their Outlook profile.
