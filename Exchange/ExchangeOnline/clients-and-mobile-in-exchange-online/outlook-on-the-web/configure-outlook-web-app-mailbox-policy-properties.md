@@ -3,7 +3,7 @@ title: "View or configure Outlook on the web mailbox policy properties in Exchan
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -22,7 +22,7 @@ For more information about Outlook on the web mailbox policies, see [Outlook Web
 
 - Estimated time to complete each procedure: 3 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook on the web mailbox policies" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic. 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook on the web mailbox policies" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
@@ -91,7 +91,7 @@ For detailed syntax and parameter information, see [Get-OwaMailboxPolicy](https:
 
 ## How do you know this worked?
 
-To verify that you've successfully modified an Outlook on the web mailbox policy, do either of the following steps: 
+To verify that you've successfully modified an Outlook on the web mailbox policy, do either of the following steps:
 
 - In the EAC, click **Permissions** \> **Outlook Web App Policies**, select the policy, click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png), and verify the properties of the policy.
 

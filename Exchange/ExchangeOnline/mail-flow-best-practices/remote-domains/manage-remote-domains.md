@@ -3,7 +3,7 @@ title: "Manage remote domains in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -46,7 +46,7 @@ For information about when to configure remote domains, descriptions of the avai
 
 **Notes**:
 
-- You can configure a remote domain for any domain that's listed on the **Office 365 admin center** \> **Domains** page. For example, if fabrikam.com is one of your accepted domains, you can't create a remote domain for fabrikam.com. 
+- You can configure a remote domain for any domain that's listed on the **Office 365 admin center** \> **Domains** page. For example, if fabrikam.com is one of your accepted domains, you can't create a remote domain for fabrikam.com.
 
 - If you create a remote domain for a specific destination domain, and a setting for the specific remote domain conflicts with the same setting in the default remote domain, the setting for the specific remote domain overrides the setting in the default remote domain.
 
@@ -72,7 +72,7 @@ For information about when to configure remote domains, descriptions of the avai
 
   - In the **Automatic replies** section, specify whether you want to allow automatic replies, automatic forwarding, or both.
 
-  - In the **Message reporting** section, specify: 
+  - In the **Message reporting** section, specify:
 
   - Whether you want to allow delivery reports and non-delivery reports.
 

@@ -3,7 +3,7 @@ title: "Manage message approval in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -26,7 +26,7 @@ This article explains:
 
 - [How the approval process works](#how-the-approval-process-works)
 
-To learn how to implement common scenarios, see [Common message approval scenarios](common-message-approval-scenarios.md). 
+To learn how to implement common scenarios, see [Common message approval scenarios](common-message-approval-scenarios.md).
 
 ## How to decide which approval approach to use
 
@@ -35,8 +35,8 @@ Here's a comparison of the two approaches to message approval.
 |**What do you want to do?**|**Approach**|**First step**|
 |:-----|:-----|:-----|
 |Create a moderated distribution group where all messages to the group must be approved.|Set up message approval for the distribution group.|Go to the Exchange admin center (EAC) \> **Recipients** \>  **Groups**, edit the distribution group, and then select **Message approval**.|
-|Require approval for messages that match specific criteria or that are sent to a specific person.|Create a transport rule using the **Forward the message for approval** action. <br/> You can specify message criteria, including text patterns, senders, and recipients. Your criteria can also contain exceptions.|Go to the EAC \> **Mail flow** \> **Rules**.|
- 
+|Require approval for messages that match specific criteria or that are sent to a specific person.|Create a mail flow rule (also known as a transport rule) using the **Forward the message for approval** action. <br/> You can specify message criteria, including text patterns, senders, and recipients. Your criteria can also contain exceptions.|Go to the EAC \> **Mail flow** \> **Rules**.|
+
 ## How the approval process works
 
 When someone sends a message to a person or group that requires approval, if they're using Outlook on the web (formerly known as Outlook Web App), they're notified that their message might be delayed.
@@ -47,7 +47,7 @@ The moderator receives an email with a request to approve or reject the message.
 
 ![Approval request message, including attachment](../../media/TA_Mod_Approval_Request.png)
 
- The moderator can take one of three actions: 
+ The moderator can take one of three actions:
 
 ![Workflow showing options for approving a message](../../media/TA_ModerationWorkflow.png)
 
@@ -77,7 +77,7 @@ You can send a message to a group of recipients where only a subset of the recip
 
  **What if my distribution group contains moderated recipients that require approval?**
 
-A distribution group can include moderated recipients that also require approval. In this case, after the message to the distribution group is approved, a separate approval process occurs for each moderated recipient that's a member of the distribution group. However, you can also enable the automatic approval of the distribution group members after the message to the moderated distribution group is approved. To do this, you use the _BypassNestedModerationEnabled_ parameter on the [Set-DistributionGroup](https://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx) cmdlet. 
+A distribution group can include moderated recipients that also require approval. In this case, after the message to the distribution group is approved, a separate approval process occurs for each moderated recipient that's a member of the distribution group. However, you can also enable the automatic approval of the distribution group members after the message to the moderated distribution group is approved. To do this, you use the _BypassNestedModerationEnabled_ parameter on the [Set-DistributionGroup](https://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx) cmdlet.
 
  **Is this process different if we have our own Exchange servers?**
 

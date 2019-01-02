@@ -3,7 +3,7 @@ title: "Change the default offline address book in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -20,7 +20,7 @@ By default, the automatically-created OAB named Default Offline Address Book is 
 
 - Mailboxes without an OAB assigned (by default, all mailboxes).
 
-If you delete the default OAB, Exchange Online doesn't automatically assign another OAB as the default. You need to manually designate another OAB as the default. 
+If you delete the default OAB, Exchange Online doesn't automatically assign another OAB as the default. You need to manually designate another OAB as the default.
 
 For additional management tasks related to OABs, see [Offline address book procedures](offline-address-book-procedures.md).
 
@@ -33,7 +33,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 - You can only use Exchange Online PowerShell to perform the procedures in this topic. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use Exchange Online PowerShell to change the default OAB
 

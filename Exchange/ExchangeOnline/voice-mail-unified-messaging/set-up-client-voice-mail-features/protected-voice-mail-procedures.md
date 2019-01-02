@@ -15,11 +15,11 @@ description: "Configure Protected Voice Mail from authenticated callers"
 # Protected Voice Mail procedures
 
 [Configure Protected Voice Mail from authenticated callers](configure-protected-voice-mail-from-authenticated-callers.md)
-  
+
 [Configure Protected Voice Mail from unauthenticated callers](configure-protected-voice-mail-from-unauthenticated-callers.md)
-  
+
 [Enable or disable multimedia playback of protected voice messages](enable-or-disable-multimedia-playback.md)
-  
+
 [Specify the text to display for email clients that don't support Windows Rights Management](specify-text-to-display-for-clients-that-don-t-support-windows-rights-management.md)
-  
+
 

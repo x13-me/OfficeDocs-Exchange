@@ -15,15 +15,15 @@ description: "Outlook Voice Access lets Unified Messaging (UM)-enabled users acc
 # Outlook Voice Access commands
 
 Outlook Voice Access lets Unified Messaging (UM)-enabled users access their mailbox using analog, digital, or mobile telephones. Using the menu system found in Outlook Voice Access, UM-enabled users can read email, listen to voice messages, interact with their Outlook calendar, access their personal contacts, and manage personal options such as configuring their Outlook Voice Access PIN or recording their voice mail messages. This topic contains a list of the Outlook Voice Access commands and how users can use them when they access their mailbox by calling an Outlook Voice Access number.
-  
+
 ## Outlook Voice Access user interfaces
 
 Outlook Voice Access consists of two user interfaces: the Telephone User Interface (TUI) that uses a telephone keypad and the Voice User Interface (VUI) that uses voice commands. Users can use Outlook Voice Access to access the voice mail system from an external or internal telephone to access their personal email, voice messages, contacts, and calendaring information in their mailbox.
-  
+
 ## Email and voice mail commands reference
 
 As an Outlook Voice Access user, when you dial in to an Outlook Voice Access number, you're presented with menu options that enable you to access your mailbox and manage your email and voice mail. The following table lists the commands that are available for managing your email and voice mail.
-  
+
 **Email and voice mail commands**
 
 |**Voice command**|**Touchtone command**|**Description**|
@@ -56,14 +56,14 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 |"Replay"|00 followed by 1|Replays the current email or voice mail message.|
 |"Repeat"|0|Repeats the current menu options.|
 |"Main menu"|\*|Exits to the main menu.|
-   
+
 > [!IMPORTANT]
-> If you need to access an email message after you delete it using Outlook Voice Access, you can use Outlook Web App or Outlook to move the email message back into the appropriate folder from the Deleted Items folder. You can't use Outlook Voice Access to access the Deleted Items folder. 
-  
+> If you need to access an email message after you delete it using Outlook Voice Access, you can use Outlook Web App or Outlook to move the email message back into the appropriate folder from the Deleted Items folder. You can't use Outlook Voice Access to access the Deleted Items folder.
+
 ## Calendar options command reference
 
 As an Outlook Voice Access user, when you dial in to an Outlook Voice Access number, you're presented with menu options that enable you to access your mailbox and manage your calendar. The following table lists the commands that are available for managing your calendar.
-  
+
 **Calendar commands**
 
 |**Voice command**|**Touchtone command**|**Description**|
@@ -95,11 +95,11 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 ||5 followed by 55|Selects the language that will be used to read the meeting details.|
 ||5 followed by 6|Plays or reads the meeting details faster.|
 |"Main menu"|\*|Exits to the main menu.|
-   
+
 ## Find a contact commands reference
 
 As an Outlook Voice Access user, when you dial in to an Outlook Voice Access number, you're presented with menu options that enable you to access your mailbox, change personal options, or call or send a message to a contact. If you choose to use your voice, which is selected by default, and select the contacts menu option, the voice mail system you to use the telephone keypad to navigate the find a contact options. You can also locate a user in the directory or a contact by using the telephone keypad. The following table lists the commands that are available for managing your contacts or searching for a user.
-  
+
 **Contact commands**
 
 |**Voice command**|**Touchtone command**|**Description**|
@@ -113,11 +113,11 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 |"Call home"|2 followed by 3|Calls the home telephone number that's listed for the personal contact.|
 ||##|Lets you enter the email alias or name for the user in the directory if using the directory search feature.|
 |"Main menu"|\*|Exits to the main menu.|
-   
+
 ## Personal options commands reference
 
 As an Outlook Voice Access user, when you dial in to an Outlook Voice Access number, you're presented with menu options that enable you to access your mailbox and manage your personal options. When you configure personal options using Outlook Voice Access, you can only use the telephone keypad to navigate the menus. Using your voice to navigate the menus is not available for configuring personal options. The following table lists the commands that are available for managing your personal options.
-  
+
 **Personal options commands**
 
 |**Voice command**|**Touchtone command**|**Description**|
@@ -130,11 +130,11 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 ||6|Chooses the 12-hour or 24-hour time format.|
 ||\*|Returns to the main menu.|
 ||0|Repeats the menu options that are available.|
-   
+
 ## For more information
 
 [Setting up Outlook Voice Access](set-up-outlook-voice-access.md)
-  
+
 [Set Up Client Voice Mail Features](https://technet.microsoft.com/library/5e661cfd-d34e-4caa-91a5-967bbecb75eb.aspx)
-  
+
 

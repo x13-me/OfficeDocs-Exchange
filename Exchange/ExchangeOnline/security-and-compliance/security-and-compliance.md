@@ -15,15 +15,15 @@ description: "Email has become a reliable and ubiquitous communication medium fo
 # Security and compliance for Exchange Online
 
 Email has become a reliable and ubiquitous communication medium for information workers in organizations of all sizes. Messaging stores and mailboxes have become repositories of valuable data. It's important for organizations to formulate messaging policies that dictate the fair use of their messaging systems, provide user guidelines for how to act on the policies, and where required, provide details about the types of communication that may not be allowed.
-  
+
 Organizations must also create policies to manage email lifecycle, retain messages for the length of time based on business, legal, and regulatory requirements, preserve email records for litigation and investigation purposes, and be prepared to search and provide the required email records to fulfill eDiscovery requests.
-  
+
 Leakage of sensitive information such as intellectual property, trade secrets, business plans, and personally identifiable information (PII) collected or handled by your organization must also be protected.
-  
+
 ## Security and compliance in Exchange Online
 
 The following table provides an overview of the security and compliance features in Exchange Online and includes links to topics that will help you learn about and manage these features.
-  
+
 |**Feature**|**Description**|
 |:-----|:-----|
 |[Archive mailboxes in Exchange Online](https://support.office.com/article/268a109e-7843-405b-bb3d-b9393b2342ce)|Archive mailboxes (called In-Place Archiving) let people in your Office 365 organization take control of messaging data by providing additional email storage. People can use Outlook or Outlook Web App to view messages in their archive mailbox and move or copy messages between their primary and archive mailboxes.|
@@ -37,6 +37,6 @@ The following table provides an overview of the security and compliance features
 |[Office 365 Message Encryption](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e)| Office 365 Message Encryption allow you to send encrypted messages to people inside or outside your organization, regardless of the destination email service—whether it's Outlook.com, Yahoo, Gmail, or another service. Designated recipients can send encrypted replies. Office 365 Message Encryption combines email encryption and rights management capabilities. Rights management capabilities are powered by Azure Information Protection.|
 |[S/MIME for Message Signing and Encryption](https://technet.microsoft.com/library/887c710b-0ec6-4ff0-8065-5f05f74afef3.aspx)|Secure/Multipurpose Internet Mail Extensions (S/MIME) allows email users to help protect sensitive information by sending signed and encrypted email within their organization. As an administrator, you can enable S/MIME-based security for your organization if you have mailboxes in either Exchange Server or Exchange Online.|
 |[Journaling in Exchange Online](journaling/journaling.md)|Journaling can help you meet legal, regulatory, and organizational compliance requirements by recording inbound and outbound email communications. In Exchange Online, you can create journal rules to deliver journal reports to your on-premises mailbox or archiving system, or to an external archiving service.|
-|[Mail flow rules (transport rules) in Exchange Online](mail-flow-rules/mail-flow-rules.md)|You can use mail flow rules, also known as Transport rules, to inspect messages sent or received by your users and take actions such as blocking or bouncing a message, holding it for review by a manager or an administrator or delivering a copy to another recipient if the message matches specified conditions.|
-   
+|[Mail flow rules (transport rules) in Exchange Online](mail-flow-rules/mail-flow-rules.md)|You can use mail flow rules (also known as transport rules) to inspect messages sent or received by your users and take actions such as blocking or bouncing a message, holding it for review by a manager or an administrator or delivering a copy to another recipient if the message matches specified conditions.|
+
 

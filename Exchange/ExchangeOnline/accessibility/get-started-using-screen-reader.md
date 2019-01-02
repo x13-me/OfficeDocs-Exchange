@@ -2,7 +2,7 @@
 title: "Get started using a screen reader in the Exchange admin center in Exchange Online"
 ms.author: dmaguire
 author: msdmaguire
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online

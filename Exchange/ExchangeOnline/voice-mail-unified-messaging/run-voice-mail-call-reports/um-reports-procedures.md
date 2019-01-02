@@ -15,13 +15,13 @@ description: "Review the voice mail calls in your organization"
 # UM reports procedures
 
 [Review the voice mail calls in your organization](review-voice-mail-calls-for-organization.md)
-  
+
 [Review the voice mail calls for a user](review-voice-mail-calls-for-user.md)
-  
+
 [Investigate the audio quality of voice calls in your organization](audio-quality-of-voice-calls-in-organization.md)
-  
+
 [Investigate the audio quality of voice calls for a user](audio-quality-of-voice-calls-for-user.md)
-  
+
 [Interpret voice mail call records](interpret-voice-mail-call-records.md)
-  
+
 

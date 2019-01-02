@@ -23,38 +23,38 @@ description: "Convert Exchange 2007 mailboxes to mail enabled users"
 
 # Convert Exchange 2007 mailboxes to mail-enabled users
 
-After you have completed a staged migration, convert the mailboxes to mail-enabled users so that the mailboxes can automatically connect to the cloud mailbox. 
-  
+After you have completed a staged migration, convert the mailboxes to mail-enabled users so that the mailboxes can automatically connect to the cloud mailbox.
+
 ## Why convert mailboxes to mail-enabled users?
 
 If you've completed a staged Exchange migration to migrate your organization's Exchange 2007 on-premises mailboxes to Office 365 and you want to manage cloud-based users from your on-premises organization—using Active Directory—you should convert the on-premises mailboxes to mail-enabled users (MEUs). Why? Two things happen after a mailbox is migrated to the cloud in a staged Exchange migration:
-  
+
 - A user has an on-premises mailbox and a cloud mailbox.
-    
-- Mail sent to the user's on-premises mailbox is forwarded to their cloud mailbox. This happens because during the migration process, the **TargetAddress** property on the on-premises mailbox is populated with the remote routing address of the cloud mailbox. This means that users need to connect to their cloud mailboxes to access their e-mail. 
-    
+
+- Mail sent to the user's on-premises mailbox is forwarded to their cloud mailbox. This happens because during the migration process, the **TargetAddress** property on the on-premises mailbox is populated with the remote routing address of the cloud mailbox. This means that users need to connect to their cloud mailboxes to access their e-mail.
+
 This behavior results in two issues:
-  
+
 - If a person uses Microsoft Outlook to open their mailbox, the Autodiscover service still tries to connect to the on-premises mailbox, and the user won't be able to connect to their cloud mailbox. If there are users that haven't been migrated to the cloud, you can't point your Autodiscover CNAME record to the cloud until all users are migrated.
-    
+
 - If an organization decommissions Exchange after all on-premises mailboxes are migrated to the cloud, messaging-related user information on the cloud mailbox will be lost. The Microsoft Online Services Directory Synchronization tool (DirSync) removes data (such as proxy addresses) from the cloud mailbox object because the on-premises mailbox no longer exists and DirSync can't match it to the corresponding cloud mailbox.
-    
+
 The solution is to convert the on-premises mailbox to a mail-enabled user (MEU) in your on-premises organization after the user's mailbox has been migrated to the cloud. When you convert an on-premises mailbox to an MEU:
-  
+
 - The proxy addresses from a cloud-based mailbox are copied to the new MEU; if you decommission Exchange, these proxy addresses are still retained in Active Directory.
-    
-- The properties of the MEU enable DirSync to match the MEU with its corresponding cloud mailbox. 
-    
+
+- The properties of the MEU enable DirSync to match the MEU with its corresponding cloud mailbox.
+
 - The Autodiscover service uses the MEU to connect Outlook to the cloud mailbox after the user creates a new Outlook profile.
-    
+
 ## PowerShell scripts to create MEUs
 
 You can use the scripts below to collect information about the cloud-based mailboxes, and to convert the Exchange 2007 mailboxes to MEUs.
-  
+
 The following script collects information from your cloud mailboxes and saves it to a CSV file. Run this script first.
-  
+
 Copy the script below and give it a filename ExportO365UserInfo.ps1.
-  
+
 ```
 Param($migrationCSVFileName = "migration.csv")
 function O365Logon
@@ -137,9 +137,9 @@ Main
 ```
 
 The following script converts on-premises Exchange 2007 mailboxes to MEUs. Run this script after you have ran the script to collect information from the cloud mailboxes.
-  
+
 Copy the script below to a .txt file and then save the file and give it a filename Exchange2007MBtoMEU.ps1.
-  
+
 ```
 param($DomainController = [String]::Empty)
 function Main
@@ -259,61 +259,61 @@ Main
 ## Setup steps to convert on-premises mailboxes to MEUs
 
 Follow these steps to complete the process.
-  
+
 1. Copy ExportO365UserInfo.ps1, Exchange2007MBtoMEU.ps1, and the CSV file used to run the migration batch to the same directory in your on-premises server.
-    
+
 2. Rename the migration CSV file to migration.csv.
-    
+
 3. In the Exchange Management Shell, run the following command. The script assumes that the CSV file is in the same directory and is named migration.csv.
-    
+
   ```
   .\ExportO365UserInfo.ps1
   ```
 
-    You will be prompted to use the existing session or open a new session. 
-    
-4. Type n and press **Enter** to open a new session. 
-    
+    You will be prompted to use the existing session or open a new session.
+
+4. Type n and press **Enter** to open a new session.
+
     The script runs and then saves the Cloud.csv file to the current working directory.
-    
+
 5. Enter the administrator credentials for your cloud-based organization and then click **OK.**
-    
-6. Run the following command in a new Exchange Management Shell session. This command assumes that ExportO365UserInfo.ps1 and Cloud.csv are located in the same directory. 
-    
+
+6. Run the following command in a new Exchange Management Shell session. This command assumes that ExportO365UserInfo.ps1 and Cloud.csv are located in the same directory.
+
   ```
   .\Exchange2007MBtoMEU.ps1 <FQDN of on-premises domain controller>
   ```
 
     For example:
-    
+
   ```
   .\Exchange2007MBtoMEU.ps1 DC1.contoso.com
   ```
 
     The script converts on-premises mailboxes to MEUs for all users included in the Cloud.csv.
-    
-7. Verify that the new MEUs have been created. In Active Directory Users and Computers, do the following: 
-    
+
+7. Verify that the new MEUs have been created. In Active Directory Users and Computers, do the following:
+
 1. Click Action \> Find
-    
+
 2. Click the Exchange tab
-    
+
 3. Select **Show only Exchange recipients**, and then select **Users with external email address**.
-    
+
 4. Click **Find Now**.
-    
+
     The mailboxes that were converted to MEUs are listed under **Search results**.
-    
+
 8. Use Active Directory Users and Computers, ADSI Edit, or Ldp.exe to verify that the following MEU properties are populated with the correct information.
-    
+
   - legacyExchangeDN
-    
+
   - mail
-    
+
   - msExchMailboxGuid
-    
+
   - proxyAddresses
-    
+
   - targetAddress
-    
+
 

@@ -21,32 +21,32 @@ description: "You can use the Migration dashboard in the Office 365 Exchange adm
 
 # Manage migration batches in Office 365
 
-You can use the Migration dashboard in the Office 365 Exchange admin center (EAC) to manage mailbox migration to Office 365 using a cutover or staged Exchange migration. You can also use the Migration dashboard to migrate the contents of users' mailboxes from an on-premises IMAP server to existing Office 365 mailboxes. The Migration dashboard displays statistics about the overall migration in addition to statistics about a specific migration batch. You can create, start, stop, pause, and edit migration batches. 
-  
+You can use the Migration dashboard in the Office 365 Exchange admin center (EAC) to manage mailbox migration to Office 365 using a cutover or staged Exchange migration. You can also use the Migration dashboard to migrate the contents of users' mailboxes from an on-premises IMAP server to existing Office 365 mailboxes. The Migration dashboard displays statistics about the overall migration in addition to statistics about a specific migration batch. You can create, start, stop, pause, and edit migration batches.
+
 ## The Migration dashboard
 <a name="bk_dashboard"> </a>
 
 To access the Migration dashboard in the EAC, select **Recipients** \> **Migration**. The following screenshot identifies the different areas of the Migration dashboard that you can use to get migration information and manage migration batches.
-  
+
 ![Migration dashboard](media/f06294d1-1152-45ac-90a1-b711be9a4484.jpg)
-  
+
 ### Overall migration statistics
 <a name="bkOverall"> </a>
 
-Click **Status for all batches** to display the overall statistics about all migration batches that have been created. The following fields display cumulative information about all migration batches. 
-  
+Click **Status for all batches** to display the overall statistics about all migration batches that have been created. The following fields display cumulative information about all migration batches.
+
 |**Field**|**Description**|
 |:-----|:-----|
 |**Total mailboxes**|The total number of mailboxes from all current migration batches.|
 |**Synced mailboxes**|The number of mailboxes from all migration batches that were successfully migrated.|
 |**Finalized mailboxes**|The number of mailboxes from all migration batches that have been finalized. Finalization occurs only when you use remote move migrations to migrate mailboxes between your on-premises Exchange organization and Office 365 in an Exchange hybrid deployment. Mailboxes can be finalized after the initial synchronization is successfully completed. For more information about finalizations in remote move migrations, see [Complete-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=622965).|
 |**Failed mailboxes**|The number of mailboxes from all migration batches for which migration failed.|
-   
+
 ### Migration batches
 <a name="bk_batches"> </a>
 
-Migration batches that are created are listed in the migration queue. The following columns display information about each migration batch. 
-  
+Migration batches that are created are listed in the migration queue. The following columns display information about each migration batch.
+
 |**Column**|**Description**|
 |:-----|:-----|
 |**Name**|The name of the migration batch that was defined when it was created.|
@@ -55,12 +55,12 @@ Migration batches that are created are listed in the migration queue. The follow
 |**Synced**|Indicates the number of mailboxes that were successfully migrated.|
 |**Finalized**|The number of mailboxes in the migration batch that have been finalized. Finalization is performed only for migration batches for remote move migrations in an Exchange hybrid deployment. For more information about the finalization process, see [Complete-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=622965).|
 |**Failed**|The number of mailboxes in the migration batch for which the migration failed. You can display information about specific mailboxes that have migration errors. For more information, see [Migration users status report](migration-users-status-report.md).|
-   
+
 > [!IMPORTANT]
-> Migration batches with a status of **Synced** that have no administrator-initiated activity (for example, no administrator has stopped and restarted a migration batch or edited a migration batch) for the last 90 days will be stopped and then deleted 30 days later if no further action is taken by the administrator. 
-  
+> Migration batches with a status of **Synced** that have no administrator-initiated activity (for example, no administrator has stopped and restarted a migration batch or edited a migration batch) for the last 90 days will be stopped and then deleted 30 days later if no further action is taken by the administrator.
+
 The Migration dashboard contains a set of commands that you can use to manage migration batches. After you create a migration batch, you can select it, and then click one of the following commands. If a migration batch is in a status state that isn't supported by a command, the command is either dimmed or not displayed because it's unavailable.
-  
+
 |**Command**|**Description**|
 |:-----|:-----|
 |**New** ![Add Icon](media/851ff9ef-92b1-46a2-be75-9133416ec68a.gif)|Create a new migration batch. Use this command to migrate on-premises mailboxes to Office 365 (also called onboarding) or to migrate Office 365 mailboxes back to your on-premises Exchange organization in a hybrid deployment.|
@@ -71,12 +71,12 @@ The Migration dashboard contains a set of commands that you can use to manage mi
 |**Delete** ![Delete icon](media/6db76b65-d0bf-4071-b082-b899585b62ff.gif)|Delete a migration batch after you verify that all mailboxes in the migration batch have been successfully migrated. Verify also that mail is being routed directly to cloud-based mailboxes after you've configured your MX record to point to Office 365. When you delete a migration batch, Office 365 cleans up any records related to the migration batch and removes it from the list.|
 |**More** ![More options icon](media/1c30e33f-05c5-4275-8929-441d73a32c91.gif)|Click this command, and then click **Migration endpoints** to create new migration endpoints or view and edit existing migration endpoints.|
 |**Refresh** ![Refresh icon](media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif)|Refresh the Migration dashboard to update the information displayed for the overall migration statistics, the list of migration batches, and the statistics for the selected migration batch.|
-   
+
 ### Migration batch statistics
 <a name="bkstats"> </a>
 
 The details pane in the Migration dashboard displays the following information about the selected migration batch.
-  
+
 |**Field**|**Description**|
 |:-----|:-----|
 |**Type**| Indicates the migration type of the selected migration batch. The value of this field also denotes the type of migration endpoint associated with the migration batch.  <br/> **Exchange Outlook Anywhere**: The migration batch is either a cutover Exchange migration or a staged Exchange migration.  <br/> **IMAP**: The migration batch is an IMAP migration.  <br/> **Remote move migration**: The migration batch is either an onboarding or offboarding remote move migration in an Exchange hybrid deployment.|
@@ -94,5 +94,5 @@ The details pane in the Migration dashboard displays the following information a
 |**Initial sync duration**|The amount of time it took to complete the initial synchronization for all mailboxes in the migration batch.|
 |**Last sync time**|The last time the migration batch was restarted or the last time that incremental synchronization was performed for the batch. As previously stated, incremental synchronization occurs every 24 hours for IMAP migrations and cutover Exchange migrations.|
 |**Associated endpoint**|The name of the migration endpoint being used by the migration batch. You can click **View details** to view the migration endpoint settings. You can also edit the settings if none of the migration batches using the endpoint are currently running.|
-   
+
 
