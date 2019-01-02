@@ -24,6 +24,12 @@ When a user logs onto Exchange with Basic authentication, the username, password
 Next, when a user attempts to connect to Exchange to retrieve mailbox data, the device key is again passed from the device to the Outlook service over a TLS-secured connection, where it is used to decrypt the password in runtime compute memory. Once decrypted, the password is never stored in the service or written to a local storage disk, and the device key is once again wiped from memory.
   
 After the Outlook service has decrypted the password at runtime, the service can then connect to the Exchange server to synchronize mail, calendar, and other mailbox data. As long as the user continues to open and use Outlook periodically, the Outlook service will keep a copy of the user's decrypted password in memory to keep the connection to the Exchange server active.
+
+## Compliance considerations when sending passwords
+
+Before you enable anything that allows for the transmission of passwords from your on-premises Exchange environment, be sure to consider the possible ramifications. For example, transmitting passwords to Outlook services might result in your inability to meet the requirements of PCI-DSS or ISO/IEC 27001.
+
+Furthermore, if you connect and synchronize email, calendars, and other email-related data, you might run into issues of compliance with GDPR, which restricts the private information that you can transmit without owner consent. This information might be contained in and found within emails, calendar items, and so on.
   
 ## Account inactivity and flushing passwords from memory
 
@@ -33,12 +39,12 @@ There are three ways a user account can become inactive:
   
 - Outlook for iOS and Android is uninstalled by the user.
     
-- Background app refresh is disabled in the Settings options and then a force-quit is applied to Outlook.
+- Background app refresh is disabled in the Settings options, and then a force-quit is applied to Outlook.
     
 - No internet connection is available on the device, preventing Outlook from synchronizing with Exchange.
     
 > [!NOTE]
-> Outlook will not become inactive simply because the user does not open the app for a period of time, such as over a weekend or while on vacation. As long as background app refresh is enabled (which is the default setting for Outlook for iOS and Android), functions like push notifications and background synchronization of email will count as activity.
+> Outlook will not become inactive simply because the user does not open the app for some time, such as over a weekend or while on vacation. As long as background app refresh is enabled (which is the default setting for Outlook for iOS and Android), functions like push notifications and background synchronization of email will count as activity.
   
  **Flushing encrypted password and message cache from hard disk**
   
@@ -46,9 +52,9 @@ The Outlook service flushes, or deletes, inactive accounts on a weekly schedule.
   
  **Device and service security combination**
   
-Each user's unique device key is never stored in the Outlook service, and a user's Exchange password is never stored on the device. This architecture means that in order for a malicious party to gain access to a user's password, they would need both unauthorized access to the Outlook service and physical access to that user's device.
+Each user's unique device key is never stored in the Outlook service, and a user's Exchange password is never stored on the device. This architecture means that for a malicious party to gain access to a user's password, they would need both unauthorized access to the Outlook service and physical access to that user's device.
   
-By enforcing PIN policies and encryption on devices in your organization, the malicious party would also have to defeat a device's encryption just to get access to the device key. This would all have to take place before the user noticed that the device was compromised and could request an a remote wipe for the device.
+By enforcing PIN policies and encryption on devices in your organization, the malicious party would also have to defeat a device's encryption to get access to the device key. This would all have to take place before the user noticed that the device was compromised and could request a remote wipe for the device.
   
 ## Password security FAQ
 
@@ -74,9 +80,9 @@ There are three ways to remove information from the Outlook service:
     
 ### The app is closed or uninstalled, but I still see it connecting to my Exchange server. How is this happening?
 
-The Outlook service decrypts user passwords in runtime compute memory and then uses the decrypted passwords to connect to Exchange. Since the Outlook service is connecting to Exchange on behalf of the device in order to fetch and cache mailbox data, it can continue for a short period of time until the service detects that Outlook is no longer requesting data.
+The Outlook service decrypts user passwords in runtime compute memory and then uses the decrypted passwords to connect to Exchange. Since the Outlook service is connecting to Exchange on behalf of the device to fetch and cache mailbox data, it can continue for a short period until the service detects that Outlook is no longer requesting data.
   
-If a user uninstalls the app from their device without first using the **Delete Account** option, the Outlook service will stay connected to your Exchange server until the account becomes inactive, as described above in "Account inactivity and flushing passwords from memory." To stop this activity, simply follow Option 1 or Option 3 from the above FAQ, or block the app, as described in [Blocking Outlook for iOS and Android](manage-devices.md#blockoutlook).
+If a user uninstalls the app from their device without first using the **Delete Account** option, the Outlook service will stay connected to your Exchange server until the account becomes inactive, as described above in "Account inactivity and flushing passwords from memory." To stop this activity, follow Option 1 or Option 3 from the above FAQ, or block the app, as described in [Blocking Outlook for iOS and Android](manage-devices.md#blockoutlook).
   
 ### Is a user password less secure in Outlook for iOS and Android than when using other Exchange ActiveSync clients?
 
@@ -84,7 +90,7 @@ No. EAS clients generally save user credentials locally on the user's device. Th
   
 ### What happens if a user attempts to use Outlook for iOS and Android after their data has been deleted from the Outlook cloud service?
 
-If a user account becomes inactive (such as by disabling background app refresh on the device or having their device disconnected from the Internet for a period of time), the Outlook app will reconnect to the Outlook service the next time the app is launched, and the password encryption and email caching process will restart. This is all transparent to the user.
+If a user account becomes inactive (such as by disabling background app refresh on the device or having their device disconnected from the Internet for some time), the Outlook app will reconnect to the Outlook service the next time the app is launched, and the password encryption and email caching process will restart. This is all transparent to the user.
   
 ### How is the temporarily cached mailbox data secured while stored in the Outlook service?
 
@@ -93,5 +99,3 @@ You can read about how our data is currently protected at the [Azure Trust Cente
 ### Is there a way to prevent the use of Basic authentication for on-premises mailboxes with Outlook for iOS and Android?
 
 Yes, you can deploy hybrid Modern Authentication. For more information, see [Using hybrid Modern Authentication with Outlook for iOS and Android](use-hybrid-modern-auth.md).
-  
-
