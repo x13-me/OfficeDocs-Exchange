@@ -14,7 +14,7 @@ description: "Summary: Learn about journaling in Exchange Server 2016 and Exchan
 
 # Journaling in Exchange Server
 
-Journaling in Exchange Server Server can help your organization respond to legal, regulatory, and organizational compliance requirements by recording all or targeted email messages. Journaling in Exchange Server is basically unchanged from Exchange Server 2010.
+Journaling in Exchange Server can help your organization respond to legal, regulatory, and organizational compliance requirements by recording all or targeted email messages. Journaling in Exchange Server is basically unchanged from Exchange Server 2010.
   
 Exchange provides the following journaling options:
   
