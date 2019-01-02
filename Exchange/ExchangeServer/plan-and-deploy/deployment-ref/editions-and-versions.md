@@ -30,7 +30,7 @@ The server editions are defined by a product key. When you enter a valid product
 
 - You can use a valid product key to move from Standard Edition to Enterprise Edition.
 
-- You can't use a valid product key to downgrade from Enterprise Edition to Standard Edition or revert to to the Trial Edition. You can only do these types of downgrades by uninstalling Exchange, reinstalling Exchange, and entering the correct product key.
+- You can't use a valid product key to downgrade from Enterprise Edition to Standard Edition or revert to the Trial Edition. You can only do these types of downgrades by uninstalling Exchange, reinstalling Exchange, and entering the correct product key.
 
   
 ## Exchange Server versions
