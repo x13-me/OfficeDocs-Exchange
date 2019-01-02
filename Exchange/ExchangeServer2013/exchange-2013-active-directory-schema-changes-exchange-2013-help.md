@@ -749,7 +749,7 @@ This section contains the classes modified in Exchange 2013 CU1.
 <tr class="odd">
 <td><p>Top</p></td>
 <td><p>add:mayContain</p></td>
-<td><p>msExchEvictedMemebersBL</p></td>
+<td><p>msExchEvictedMembersBL</p></td>
 </tr>
 <tr class="even">
 <td><p>Exch-On-Premises-Organization</p></td>
@@ -893,7 +893,7 @@ The following global catalog attributes are added by Exchange 2013 CU1:
 
   - ms-Exch-EvictedMembers-Link
 
-  - ms-Exch-EvictedMemebers-BL
+  - ms-Exch-EvictedMembers-BL
 
 ## Exchange 2013 RTM Active Directory schema changes
 
