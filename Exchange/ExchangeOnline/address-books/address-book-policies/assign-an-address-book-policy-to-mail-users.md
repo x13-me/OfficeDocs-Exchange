@@ -143,7 +143,7 @@ There are three basic methods you can use to apply an ABP to mailboxes:
     $<VariableName> | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -AddressBookPolicy <ABPIdentity>}
     ```
 
-   This example assigns the the ABP policy named All Fabrikam to the mailboxes specified in the file C:\My Documents\Fabrikam.txt.
+   This example assigns the ABP policy named All Fabrikam to the mailboxes specified in the file C:\My Documents\Fabrikam.txt.
 
     ```
     $Fab = Get-Content "C:\My Documents\Fabrikam.txt"
