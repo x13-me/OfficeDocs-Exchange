@@ -53,7 +53,7 @@ For users enrolled in Microsoft Intune, you can deploy the account configuration
 
 Once account setup configuration has been setup in the MDM provider and the user enrolls their device, Outlook for iOS and Android will detect that an account is "Found" and will then prompt the user to add the account. The only information the user needs to enter to complete the setup process is their password. Then, the user's mailbox content will load and the user can begin using the app.
 
-For more information on the account setup configuration configuration keys needed to enable this functionality, please see the Account setup configuration section in [Deploying Outlook for iOS and Android App Configuration Settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+For more information on the account setup configuration keys needed to enable this functionality, please see the Account setup configuration section in [Deploying Outlook for iOS and Android App Configuration Settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## Organization allowed accounts mode
 

@@ -92,7 +92,7 @@ This example refreshes the IM settings on the server named Mailbox01.
 Get-ExchangeDiagnosticInfo -Server Mailbox01 -Process Microsoft.Exchange.Directory.TopologyService -Component VariantConfiguration -Argument Refresh
 ```
 
-### Step 3: Restart the Outlook on the web web pool on the Exchange server
+### Step 3: Restart the Outlook on the web pool on the Exchange server
 
 Run the following command in the Exchange Management Shell or in Windows PowerShell on the server. You need to do this on every Exchange 2016 or Exchange 2019 server that's used for Outlook on the web.
   

@@ -66,7 +66,7 @@ Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
 ```
 
 ```powershell
-    (Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
+    (Get-DatabaseAvailabilityGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
 ```
 
 ## View a List of Health Sets
