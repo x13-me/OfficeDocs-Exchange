@@ -4,7 +4,7 @@ ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
 manager: serdars
-ms.date: 4/2/2018
+ms.date: 1/2/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -96,7 +96,7 @@ Prior to Outlook for iOS and Android obtaining FedRAMP approval and certificatio
 
 ## Services and features not available
 
-The following services and features of Outlook for iOS and Android are not available for Government Community Cloud users:
+The following services and features of Outlook for iOS and Android are not available for Government Community Cloud users in order to satisfy government compliance requirements:
 
 - **In-app support**: Users will not be able to submit support tickets from within the app. They should contact their internal help desk and provide logs (via the Share Diagnostics Logs option in Setting -> Help). If necessary, the organization's IT department can then contact Microsoft Support directly.
 
@@ -109,4 +109,6 @@ The following services and features of Outlook for iOS and Android are not avail
 - **Storage Providers**: Only the GCC user's OneDrive for Business storage account can be added within Outlook for iOS and Android. Third-party storage accounts (e.g., Dropbox, Box) cannot be added.
 
 - **Location services**: Bing location services are not available with GCC accounts. Features that rely on location services, like Cortana Time To Leave, are also unavailable.
+
+- **Favorites**: Favorite folders, groups and people are not available with GCC accounts.
 
