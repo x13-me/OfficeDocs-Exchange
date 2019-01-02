@@ -2,7 +2,7 @@
 title: "Use a screen reader to configure mail flow rules in the Exchange admin center in Exchange Online"
 ms.author: v-maleo
 author: maggsl
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -14,7 +14,7 @@ description: "Admins can learn how to use a screen reader to create mail flow ru
 
 # Use a screen reader to configure mail flow rules in the Exchange admin center in Exchange Online
 
-Using a screen reader and keyboard shortcuts, you can create mail flow rules (also known as transport rules) in Exchange Online in the Exchange admin center (EAC) to look for specific conditions in messages that pass through your organization and take action on them. The main difference between mail flow rules and Inbox rules you would set up in an email client application (such as Outlook) is that mail flow rules take action on messages while they're in transit as opposed to after the message is delivered. Transport rules also contain a richer set of conditions, exceptions, and actions, which provides you with the flexibility to implement many types of messaging policies.
+Using a screen reader and keyboard shortcuts, you can create mail flow rules (also known as transport rules) in Exchange Online in the Exchange admin center (EAC) to look for specific conditions in messages that pass through your organization and take action on them. The main difference between mail flow rules and Inbox rules you would set up in an email client application (such as Outlook) is that mail flow rules take action on messages while they're in transit as opposed to after the message is delivered. Mail flow rules also contain a richer set of conditions, exceptions, and actions, which provides you with the flexibility to implement many types of messaging policies.
 
  **Note**: To learn more about mail flow rules, see [Mail flow rules (transport rules) in Exchange Online](../security-and-compliance/mail-flow-rules/mail-flow-rules.md).
 

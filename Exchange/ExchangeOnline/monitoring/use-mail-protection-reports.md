@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: bcef7984-4bfa-4ca8-9fa5-a65af8618f5d
-description: If you're an Exchange Online or Exchange Online Protection (EOP) admin, there's a good chance you'd like to monitor how much spam and malware is being detected, or how often your mail flow rules, also called transport rules, are being matched. Reports are now available in the Security & Compliance Center. Read this article to get an overview of what's available and how to access these reports.
+description: Admins can learn how to use Office 365 protection reports for malware, spam, and mail flow rule detections.
 ---
 
 # Use mail protection reports in Office 365 to view data about malware, spam, and rule detections
 
-If you're an Exchange Online or Exchange Online Protection (EOP) admin, there's a good chance you'd like to monitor how much spam and malware is being detected, or how often your mail flow rules, also called transport rules, are being matched. With the interactive mail protection reports in the Office 365 Security & Compliance Center, you can quickly get a visual report of summary data, and drill-down into details about individual messages, for as far back as 90 days. 
-  
+If you're an Exchange Online or Exchange Online Protection (EOP) admin, there's a good chance you'd like to monitor how much spam and malware is being detected, or how often your mail flow rules (also known as transport rules) are being matched. With the interactive mail protection reports in the Office 365 Security & Compliance Center, you can quickly get a visual report of summary data, and drill-down into details about individual messages, for as far back as 90 days.
+
 ## Reports are now available in the Security & Compliance Center
 
-If you were viewing mail protection reports in the Exchange admin center, they've been updated, improved, and moved to the Security & Compliance Center. 
+If you were viewing mail protection reports in the Exchange admin center, they've been updated, improved, and moved to the Security & Compliance Center.
 
 To get to the Security & Compliance Center, visit [https://protection.office.com](https://protection.office.com), and sign in using your work or school account.
 

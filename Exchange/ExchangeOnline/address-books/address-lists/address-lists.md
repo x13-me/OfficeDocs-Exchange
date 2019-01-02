@@ -3,7 +3,7 @@ title: "Address lists in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: overview
 ms.service: exchange-online
@@ -14,7 +14,7 @@ description: "Admins can learn about the different types of address lists that a
 
 # Address lists in Exchange Online
 
-An address list is a collection of mail-enabled recipient objects in Exchange Online. Address lists are based on recipient filters. You can filter by recipient type (for example, mailboxes and mail contacts), recipient properties (for example, Company or State or Province), or both. Address lists aren't static; they're updated dynamically. When you create or modify recipients in your organization, they're automatically added to the appropriate address lists. These are the different types of address lists that are available: 
+An address list is a collection of mail-enabled recipient objects in Exchange Online. Address lists are based on recipient filters. You can filter by recipient type (for example, mailboxes and mail contacts), recipient properties (for example, Company or State or Province), or both. Address lists aren't static; they're updated dynamically. When you create or modify recipients in your organization, they're automatically added to the appropriate address lists. These are the different types of address lists that are available:
 
 - **Global address lists (GALs)**: The built-in GAL that's automatically created by Exchange Online includes every mail-enabled object in the organization. You can create additional GALs to separate users by organization or location, but a user can only see and use one GAL.
 

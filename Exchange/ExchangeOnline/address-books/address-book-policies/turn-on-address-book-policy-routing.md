@@ -3,7 +3,7 @@ title: "Turn on address book policy routing in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -16,7 +16,7 @@ description: "Admins can learn how to turn on address book policy routing in Exc
 
 Address book policies (ABPs) allow you to segment users into specific groups to give them customized global address lists (GALs) in Outlook and Outlook on the web (formerly known as Outlook Web App). For more information about ABPs, see [Address book policies in Exchange Online](address-book-policies.md).
 
-ABP routing creates the virtual organizations within a single Exchange Online organization. Your virtual organization is determined by the global address list (GAL) you reside in. When ABP routing is turned on, users that are assigned to different GALs appear as external recipients and won't be able to view each other's contact cards. 
+ABP routing creates the virtual organizations within a single Exchange Online organization. Your virtual organization is determined by the global address list (GAL) you reside in. When ABP routing is turned on, users that are assigned to different GALs appear as external recipients and won't be able to view each other's contact cards.
 
 In Exchange Online, you can only turn on ABP routing in Exchange Online PowerShell.
 

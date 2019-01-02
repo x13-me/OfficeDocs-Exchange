@@ -3,7 +3,7 @@ title: "Remote domains in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -47,7 +47,7 @@ The following table shows the types of replies you can control in a remote domai
 |Delivery reports|Allow or prevent a delivery receipt to be sent to people on the remote domain. The default is to allow sending delivery reports.|An email sender on the remote domain can request a delivery receipt on a message. This remote domain setting can override the sender's request for a delivery receipt and prevent the delivery receipt from being sent. For more information about requesting a delivery receipt, see [Add tracking to email messages](https://go.microsoft.com/fwlink/p/?LinkId=398873).|
 |Non-delivery report|Allow or prevent non-delivery reports (also known a NDRs or bounce messages) to be sent to people on the remote domain. The default is to allow sending non-delivery reports.|This remote domain setting is the only way to prevent non-delivery reports from being sent when a message can't be delivered.|
 |Meeting forward notifications|Prevent or allow meeting forward notifications to be sent to people on the remote domain. The default is to prevent sending meeting forward notifications.|Meeting forward notifications are automatically created and sent to the meeting organizer when a meeting participant forwards a meeting. Typically, they are sent to meeting organizers only on domains that are part of your Exchange Online organization. Admins can enable them to be sent to meeting organizers on the remote domain.|
- 
+
 ## Specifying message format
 
 To make sure that email sent from your Exchange Online organization is compatible with the receiving messaging system in the remote domain, you can specify the message format and character set to use for all email messages sent to that remote domain. For example, if you know that the remote domain is not using Exchange, you can specify to never use Rich Text Format (RTF). The following table describes the message format settings.
@@ -56,7 +56,7 @@ To make sure that email sent from your Exchange Online organization is compatibl
 |:-----|:-----|:-----|
 |Rich Text Format (RTF)| Choose how to format messages: <br/>• **Always**: Use this value if the remote domain uses Exchange. <br/>• **Never**: If the remote domain does not use Exchange, use this value. <br/>• **Follow user settings**: Use message format settings defined by the user. Use this value if you don't know what email system the remote domain uses. <br/> The default is to follow the user's settings.|Message format can be defined in several places: Outlook or Outlook on the web, and the admin can also use the [Set-MailContact](https://technet.microsoft.com/library/04c4e889-8546-4395-9d26-31af08264e45.aspx) or [Set-MailUser](https://technet.microsoft.com/library/087a55a2-ee8d-41a8-9c8f-d86e32ce8448.aspx) cmdlets to modify settings per recipient. <br/> Remote domain settings override settings specified by a user or by the admin. For more information about the message formats and the order of precedence of message format settings, see [Message format and transmission in Exchange Online](../../mail-flow-best-practices/message-format-and-transmission.md).|
 |MIME character set and Non-MIME character set|• **None**: Use the character set specified in the message. <br/>• **Select a character set from the list**: If the message does not have a character set, the selected character set is used. <br/> By default, no character sets are specified.|These settings are used only if the message doesn't include a character set. For a complete list of supported character sets, see [Supported character sets for remote domains](supported-character-sets.md).|
- 
+
 If you specify a particular message format for the remote domain, the format of the headers and message content sent to the domain are modified.
 
 ## Other settings

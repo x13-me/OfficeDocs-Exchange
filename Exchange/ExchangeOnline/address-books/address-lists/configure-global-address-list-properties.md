@@ -1,9 +1,9 @@
 ---
 title: "Configure global address list properties in Exchange Online"
 ms.author: chrisda
-author: chrisda 
+author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online

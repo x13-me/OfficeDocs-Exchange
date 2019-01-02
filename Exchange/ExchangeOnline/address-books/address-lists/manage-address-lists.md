@@ -3,7 +3,7 @@ title: "Manage address lists in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -29,7 +29,7 @@ Looking for the Exchange Server version of this topic? See [Create an Address Li
 - You can only use Exchange Online PowerShell to perform virtually all of the procedures in this topic (everything except hiding recipients from address lists). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use Exchange Online PowerShell to create address lists
 
@@ -116,7 +116,7 @@ $AL = Get-AddressList -Identity "Southeast Offices"; Get-Recipient -ResultSize u
 
 The **Update-AddressList** cmdlet (or **Update-GlobalAddressList**) isn't available in Exchange Online PowerShell. If recipients that should appear an address list do not, you need to change the required property value for those users to a temporary value, and then back to the value that's required by the address list. You can update the user property values in the the Exchange admin center (EAC) or Exchange Online PowerShell, but it's quicker to do bulk operations in PowerShell.
 
-For example, suppose the address list named Oregon and Washington Users uses the filter `{((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}`, but the address list doesn't include everyone whose **StateOrProvince** property values are set correctly. To update the address list, perform the following steps: 
+For example, suppose the address list named Oregon and Washington Users uses the filter `{((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}`, but the address list doesn't include everyone whose **StateOrProvince** property values are set correctly. To update the address list, perform the following steps:
 
 1. Use the query from the address list to find all users that should be in the address list. For example:
 
@@ -152,7 +152,7 @@ For example, suppose the address list named Oregon and Washington Users uses the
 
 **Notes:**
 
-- Title, department and address properties require the **Get-User** and **Set-User** cmdlets. CustomAttribute1 through CustomAttribute15 properties require the **Get-Mailbox** and **Set-Mailbox** cmdlets. For more information about what properties are available on which cmdlet, see the following topics: 
+- Title, department and address properties require the **Get-User** and **Set-User** cmdlets. CustomAttribute1 through CustomAttribute15 properties require the **Get-Mailbox** and **Set-Mailbox** cmdlets. For more information about what properties are available on which cmdlet, see the following topics:
 
    - [Set-User](https://technet.microsoft.com/library/56d7fc86-2ac3-4e28-bc7a-761e91ac655a.aspx)
 
@@ -174,7 +174,7 @@ For example, suppose the address list named Oregon and Washington Users uses the
 
 ### How do you know this worked?
 
-To verify that you've successfully updated an address list, replace _\<AddressListIdentity\>_ with the name of the address list, and run the following command in Exchange Online PowerShell to verify the **RecipientFilterApplied** property value: 
+To verify that you've successfully updated an address list, replace _\<AddressListIdentity\>_ with the name of the address list, and run the following command in Exchange Online PowerShell to verify the **RecipientFilterApplied** property value:
 
 ```
 Get-AddressList -Identity <AddressListIdentity> | Format-Table -Auto Name,RecipientFilterApplied
@@ -280,7 +280,7 @@ To hide a recipient from address lists, use the following syntax:
 Set-<RecipientType> -Identity <RecipientIdentity> -HiddenFromAddressListsEnabled $true
 ```
 
- _\<RecipientType\>_ is one of these values: 
+ _\<RecipientType\>_ is one of these values:
 
 - `DistributionGroup`
 
@@ -317,7 +317,7 @@ You can verify that you've successfully hidden a recipient from address lists by
 - In the EAC, select the recipient, click **Edit** (![Edit icon](../../media/ITPro_EAC_EditIcon.png)) and verify the hide from address lists setting is selected.
 
 - In Exchange Online PowerShell, run the following command and verify the recipient is listed:
-  
+
    ```
    Get-Recipient -ResultSize unlimited -Filter {HiddenFromAddressListsEnabled -eq $true}
    ```

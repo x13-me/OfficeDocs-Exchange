@@ -27,7 +27,7 @@ You can only remove ABPs from your Exchange Online organization using Exchange O
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use Exchange Online PowerShell to remove an ABP
 
@@ -52,7 +52,7 @@ You can only remove ABPs from your Exchange Online organization using Exchange O
    ```
 
    ```
-   $a | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -AddressBookPolicy $null} 
+   $a | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -AddressBookPolicy $null}
    ```
 
 3. To see if the ABP is assigned to a soft-deleted (recoverable) mailbox, replace \<ABPDistinguishedName\> with the DN of the ABP and run the following command:
@@ -68,7 +68,7 @@ You can only remove ABPs from your Exchange Online organization using Exchange O
    ```
 
    ```
-   $s | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -AddressBookPolicy $null} 
+   $s | foreach {Set-Mailbox -Identity $_.MicrosoftOnlineServicesID -AddressBookPolicy $null}
    ```
 
 **Note**: If you don't assign an ABP to a mailbox, the GAL for your entire organization will be visible to the user in Outlook and Outlook on the web. Instead of using the value `$null`, you can specify the name of a different ABP (enclosed in quotation marks if the name contains spaces).
@@ -99,7 +99,7 @@ To verify that you've successfully removed an ABP, use either of these procedure
   Get-AddressBookPolicy
   ```
 
-- Replace _\<ABPName\>_ with the name of the ABP, and run the following command to confirm that an error is returned: 
+- Replace _\<ABPName\>_ with the name of the ABP, and run the following command to confirm that an error is returned:
 
   ```
   Get-AddressBookPolicy -Identity "<ABPName>"
