@@ -81,7 +81,7 @@ You can also create retention tags with retention disabled or disable tags after
 
 ### Retention actions
 
-When creating or configuring a retention tag, you can select one of the following retention actions to to be taken when an item reaches its retention age:
+When creating or configuring a retention tag, you can select one of the following retention actions to be taken when an item reaches its retention age:
 
 |**Retention action**|**Action taken...**|**Except...**|
 |:-----|:-----|:-----|

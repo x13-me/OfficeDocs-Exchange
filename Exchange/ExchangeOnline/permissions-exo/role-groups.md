@@ -179,7 +179,7 @@ If an existing role group is close in terms of the permissions and settings that
     -
     - The _CustomRecipientWriteScope_ parameter specifies the existing custom recipient write scope to apply to the role group. You can see the available custom recipient write scopes by using the **Get-ManagementScope** cmdlet.
 
-This example copies the Organization Management role group to the new role group named "Limited Organization Management". The role group members are Isabelle, Carter, and Lukas and the the role group delegates are Jenny and Katie.
+This example copies the Organization Management role group to the new role group named "Limited Organization Management". The role group members are Isabelle, Carter, and Lukas and the role group delegates are Jenny and Katie.
 
 ```
 $RoleGroup = Get-RoleGroup "Organization Management"

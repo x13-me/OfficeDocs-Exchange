@@ -455,7 +455,7 @@ Compellent Storage Center 5.3 10,000 Mailbox Microsoft Exchange Server 2010 Mail
 
 [HPE 3PAR T800 Storage System 140,000 Mailbox Exchange Server 2010 Mailbox Resiliency Storage Solution (Dec 8, 2011)](http://h20195.www2.hp.com/V2/GetDocument.aspx?docname=4AA3-8703ENW&amp;cc=us&amp;lc=en)
  
-[HPE 4400 Enterprise Virtual Array 6,000 Mailbox Mailbox Exchange Server 2010 Mailbox Resiliency storage solution (Aug 30, 2011)](http://h20195.www2.hp.com/V2/GetPDF.aspx/4AA3-5459ENW.pdf)
+[HPE 4400 Enterprise Virtual Array 6,000 Mailbox Exchange Server 2010 Mailbox Resiliency storage solution (Aug 30, 2011)](http://h20195.www2.hp.com/V2/GetPDF.aspx/4AA3-5459ENW.pdf)
 
 [HPE D6000 Disk Enclosure 7,000 Mailbox Exchange Server 2010 Mailbox Resiliency Storage Solution (Jun 1, 2013)](http://h20195.www2.hp.com/V2/GetDocument.aspx?docname=4AA4-6887ENW&amp;cc=us&amp;lc=en)
 
