@@ -96,7 +96,7 @@ Prior to Outlook for iOS and Android obtaining FedRAMP approval and certificatio
 
 ## Services and features not available
 
-The following services and features of Outlook for iOS and Android are not available for Government Community Cloud users:
+The following services and features of Outlook for iOS and Android are not available for Government Community Cloud users in order to satisfy government compliance requirements:
 
 - **In-app support**: Users will not be able to submit support tickets from within the app. They should contact their internal help desk and provide logs (via the Share Diagnostics Logs option in Setting -> Help). If necessary, the organization's IT department can then contact Microsoft Support directly.
 
