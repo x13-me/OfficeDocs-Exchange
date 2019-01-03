@@ -80,7 +80,7 @@ You can use the remote move migration wizard on the **Office 365** tab in the EA
     > [!NOTE]
     > If you've already created a migration endpoint, you'll receive an endpoint confirmation prompt for this step. If you've created two or more migration endpoints, you must choose an endpoint from the migration endpoint drop-down menu. 
   
-6. On the **Confirm the migration endpoint** page, verify that the FDQN of your on-premises Exchange server is listed when the wizard confirms the migration endpoint. For example, "mail.contoso.com". Click **Next**.
+6. On the **Confirm the migration endpoint** page, verify that the FQDN of your on-premises Exchange server is listed when the wizard confirms the migration endpoint. For example, "mail.contoso.com". Click **Next**.
     
     > [!NOTE]
     > The MRSProxy service on the Exchange servers automatically throttles the mailbox move requests when you select multiple mailboxes to move to Exchange Online. The total time to complete the mailbox move depends on the total number of mailboxes selected, the size of the mailboxes, and the configuration of the MRSProxy. To learn more about customizing the MRSProxy, see [Message Throttling](http://technet.microsoft.com/library/fba87902-2a79-42ac-b394-46a9016f667e.aspx). 
@@ -105,7 +105,7 @@ You can use the remote move migration wizard on the **Office 365** tab in the EA
     
 4. On the **Select the users** page, click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif) and then select the Exchange Online users to move to the on-premises organization, click **Add** and then click **OK**. Click **Next**.
     
-5. On the **Confirm the migration endpoint** page, verify that the FDQN of your on-premises Exchange server is listed when the wizard confirms the migration endpoint. For example, "mail.contoso.com". Click **Next**.
+5. On the **Confirm the migration endpoint** page, verify that the FQDN of your on-premises Exchange server is listed when the wizard confirms the migration endpoint. For example, "mail.contoso.com". Click **Next**.
     
     > [!NOTE]
     > The MRSProxy service on the Exchange servers automatically throttles the mailbox move requests when you select multiple mailboxes to move to Exchange Online. The total time to complete the mailbox move depends on the total number of mailboxes selected, the size of the mailboxes, and the properties of the MRSProxy. To learn more about customizing the MRSProxy, see [Message Throttling](http://technet.microsoft.com/library/fba87902-2a79-42ac-b394-46a9016f667e.aspx). 
