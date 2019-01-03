@@ -211,7 +211,7 @@ Alternatively, you can block native Exchange ActiveSync apps on specific Android
     > [!NOTE]
     > The QueryString parameter does not accept wildcards or partial matches.
 
-    **Additional resources**:
+**Additional resources**:
 
   - [New-ActiveSyncDeviceAccessRule](https://technet.microsoft.com/library/a33c69d8-4d19-4e9d-b5cf-27727b7c4a8f.aspx)
 
