@@ -21,7 +21,7 @@ The Microsoft Exchange 2010 UM Troubleshooting Tool is an Exchange Management Sh
 
   - Estimated time to complete: 3 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM server" or “UM services�? entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM server" or "UM services" entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
   - Make sure your Exchange 2010 or Exchange 2013 organization meets the following requirements:
     

@@ -17,7 +17,7 @@ description: "Organization configuration transfer attributes can be copied by th
 
 # OWA Mailbox Policy attributes
 
-The following attributes of OWA MAilbox Policy are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
+The following attributes of OWA Mailbox Policy are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
 |**OWAMailboxPolicy**  |**Available In**  |
 |:-----|:-----|

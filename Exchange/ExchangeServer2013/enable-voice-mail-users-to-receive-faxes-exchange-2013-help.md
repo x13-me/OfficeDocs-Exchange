@@ -201,7 +201,7 @@ An incoming call to a UM pilot number is directed to UM as an INVITE with a voic
 
 2.  The SIP peer detects the calling fax tone (CNG). The SIP peer issues a re-INVITE to the Mailbox server, this time specifying a fax (T.38 or G.711) profile in the SDP.
 
-3.  UM responds to the invitation with a 200 OK that places the SIP peer “on hold�?.
+3.  UM responds to the invitation with a 200 OK that places the SIP peer "on hold".
 
 4.  UM issues a REFER, referring the SIP (CNG) peer to a fax partner solution end point, obtained from its configuration data.
 
@@ -301,7 +301,7 @@ You have the following options when you’re configuring multiple DID extension 
 
   - **One extension for fax and one for voice**   This type of configuration is enabled on a per-user basis and can be used when your organization has many DID extension numbers available. In this configuration, both DID extension numbers that are answered because the user doesn’t answer the phone or a busy signal is encountered are forwarded to a Mailbox server, which creates a voice or fax message depending on the DID extension number that's called. Although the user publishes one number for voice and one for fax, the Mailbox server detects the type of call that's being received on the DID extension number and can create a voice or fax message from calls to either of the DID extension numbers. This is very useful when a user doesn't have a separate fax machine or a dedicated computer that has a fax modem to answer incoming fax calls.
 
-  - **One “phantom�? extension for fax and one for voice**   This type of configuration is enabled on a per-user basis. It's essentially the same as the configuration that uses two DID numbers (one for fax and one for voice). However, in this configuration, the number that's published for fax calls for the UM-enabled user is configured on the PBX as a “phantom�? extension. Incoming calls that are received on this "phantom" DID extension number are always forwarded to a Mailbox server.
+  - **One "phantom" extension for fax and one for voice**   This type of configuration is enabled on a per-user basis. It's essentially the same as the configuration that uses two DID numbers (one for fax and one for voice). However, in this configuration, the number that's published for fax calls for the UM-enabled user is configured on the PBX as a "phantom" extension. Incoming calls that are received on this "phantom" DID extension number are always forwarded to a Mailbox server.
     
     The advantage of this type of configuration is that incoming fax calls are answered by a Mailbox server. When the phone rings but isn’t answered, a fax is created and forwarded by the Mailbox server to the UM-enabled user's mailbox without disturbing the user. This happens automatically because no telephone or fax device is positioned close to the user, and the user doesn't hear the ring of the incoming call.
     
