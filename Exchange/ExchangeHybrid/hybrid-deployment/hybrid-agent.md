@@ -32,7 +32,7 @@ selected for the agent endpoint.
 Note that as a ClickOnce client, a browser with ClickOnce support such as
 Internet Explorer or Edge is required. If your browser supports click-once
 activation via a plugin, the SHCW will also work. Once activated, the first step
-of the clickonce application is either to download its core components (first
+of the ClickOnce application is either to download its core components (first
 install) or check for an upgrade (subsequent installs). After this, it will
 perform a number of tests, some of which will require RPC access to the Domain
 Controller (credential validation).
@@ -49,7 +49,7 @@ connectivity.
 ### Transport/Edge Transport
 
 Whether you utilize edge transport servers or combined transport servers,
-transport servers require both inbound and outbound connectings on port 25
+transport servers require both inbound and outbound connections on port 25
 (SMTP).
 
 ### Considerations for Outbound Proxies

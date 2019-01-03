@@ -133,7 +133,7 @@ The following steps and diagram illustrate the outbound message path for message
     
 2. The Exchange 2007 Mailbox server sends the message to the Exchange 2007 Hub Transport server.
     
-3. The Exchange 2007 Hub Transport server looks up the MX record for cpandl.com and sends the message to thecpandl.com mail servers located on the Internet.
+3. The Exchange 2007 Hub Transport server looks up the MX record for cpandl.com and sends the message to the cpandl.com mail servers located on the Internet.
     
  **Messages from on-premises senders to Internet recipients**
   
