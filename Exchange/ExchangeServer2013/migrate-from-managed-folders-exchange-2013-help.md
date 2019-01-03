@@ -349,7 +349,7 @@ To verify that you have migrated from managed folders to retention policies, do 
     This command retrieves the retention policy applied to all mailboxes in an organization, and their retention hold status.
     
     ```powershell
-        Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*�?} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+        Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*"} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
     ```
 
   - After the Managed Folder Assistant has processed a mailbox with a retention policy, use the [Get-RetentionPolicyTag](https://technet.microsoft.com/en-us/library/dd298009\(v=exchg.150\)) cmdlet to retrieve the retention tags provisioned in the user mailbox.

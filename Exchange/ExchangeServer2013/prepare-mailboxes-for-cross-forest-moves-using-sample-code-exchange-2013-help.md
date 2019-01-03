@@ -49,13 +49,13 @@ For more information about preparing for cross-forest moves, including descripti
 
 1.  In Microsoft Visual Studio 2008, open Microsoft.Exchange.Sample.OneWayGALSync.sln to view the sample code. The sample code includes the following:
     
-      - Microsoft.MetadirectoryServicesEx.dll is the binary file that is shipped with ILM 2007 FP1 SP1 under “\\Program Files\\Microsoft Identity Integration Server\\Bin\\Assemblies�?. It's referenced by the sample code.
+      - Microsoft.MetadirectoryServicesEx.dll is the binary file that is shipped with ILM 2007 FP1 SP1 under "\\Program Files\\Microsoft Identity Integration Server\\Bin\\Assemblies". It's referenced by the sample code.
     
       - OneWaySync.xml is referenced by the sample code.
     
       - The ILMServerConfig folder contains the ILM configuration files for the source management agent (MA), target MA, and the ILM Metaverse (MV).
     
-      - Microsoft.Exchange.Sample.OneWayGALSync.MARules.dll and Microsoft.Exchange.Sample.OneWayGALSync.MVRules.dll (built from the sample code) are under “\\obj\\Debug�?
+      - Microsoft.Exchange.Sample.OneWayGALSync.MARules.dll and Microsoft.Exchange.Sample.OneWayGALSync.MVRules.dll (built from the sample code) are under "\\obj\\Debug"
 
 2.  On the ILM server, copy the following to \\Program Files\\Microsoft Identity Integration Server\\Extensions:
     

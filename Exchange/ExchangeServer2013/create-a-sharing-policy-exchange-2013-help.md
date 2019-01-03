@@ -31,7 +31,7 @@ For additional management tasks related to federation, see [Federation procedure
 
   - Estimated time to complete: 15 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the “Calendar and Sharing Permissions�? section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Calendar and Sharing Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
   - The following are required for sharing policies between federated Exchange organizations:
     

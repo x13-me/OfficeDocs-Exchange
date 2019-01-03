@@ -89,7 +89,7 @@ The configuration of the certificates installed on the on-premises Exchange serv
 
 To verify that the certificate for hybrid mail transport is correctly configured on your on-premises Exchange servers, do the following:
   
-1. On an on-premises Exchangex server, open the Exchange Management Shell.
+1. On an on-premises Exchange server, open the Exchange Management Shell.
     
 2. In the Exchange Management Shell, run the following command.
     

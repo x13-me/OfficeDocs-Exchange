@@ -66,7 +66,7 @@ The Hybrid Configuration wizard automatically enables all hybrid deployment feat
     
 - **Online archiving** Online archiving enables the Exchange Online organization to host user email archives for both on-premises and Exchange Online users. Learn more at [Configure Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=266565).
     
-- **Outlook on the web redirection** Outlook on the web redirection provides a single, common URL to access both on-premises and Exchange Online mailboxes. Client Access servers automatically redirect Outlook on the web requests to on-premises mailbox servers or provides a link to users for their mailbox in the Exchange Onine organization. 
+- **Outlook on the web redirection** Outlook on the web redirection provides a single, common URL to access both on-premises and Exchange Online mailboxes. Client Access servers automatically redirect Outlook on the web requests to on-premises mailbox servers or provides a link to users for their mailbox in the Exchange Online organization. 
     
 - **Exchange ActiveSync redirection** When you move a mailbox from your on-premises Exchange organization to Exchange Online, all of the clients that access the mailbox need to be updated to use Exchange Online; this includes Exchange ActiveSync devices. Most Exchange ActiveSync clients will now be automatically reconfigured when the mailbox is moved to Exchange Online. For more information, see [Exchange ActiveSync device settings with Exchange hybrid deployments](activesync-settings.md).
     

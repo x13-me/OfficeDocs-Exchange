@@ -29,7 +29,7 @@ To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.
 
   - Estimated time to complete: 15 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the “Calendar and Sharing Permissions�? section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Calendar and Sharing Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
   - An active federation trust for the on-premises Exchange organization must be configured. For details, see [Configure a federation trust](configure-a-federation-trust-exchange-2013-help.md).
 
