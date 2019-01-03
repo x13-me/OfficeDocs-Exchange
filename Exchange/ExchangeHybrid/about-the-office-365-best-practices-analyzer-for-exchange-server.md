@@ -49,6 +49,6 @@ On the Best practices scan results summary page, click View details to open the 
 
 After fixing any reported problems, you can run the Office 365 Best Practices Analyzer again from your Exchange server.
   
-Please [send us feedback](mailto:o365bpafeedback@microsoft.com) about your Office 365 Best Practices Analyzerexperience so that we can continue to make improvements. 
+Please [send us feedback](mailto:o365bpafeedback@microsoft.com) about your Office 365 Best Practices Analyzer experience so that we can continue to make improvements. 
   
 
