@@ -1,5 +1,5 @@
 ---
-title: "Exchange Server permissions, permissions Exchange Server, Exchange Admin roles, Exchange admin permissions, role assignment policy Exchange"
+title: "Exchange Server permissions"
 ms.author: dstrome
 author: dstrome
 manager: serdars
