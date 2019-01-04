@@ -89,9 +89,9 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
   ```
   New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true
   ```
-
-    > [!NOTE]
-    > We recommend that the only mailbox that you add to this database is the proxy mailbox that you'll create in step 3. No other mailboxes should be created on this mailbox database. 
+  
+   > [!NOTE]
+   > We recommend that the only mailbox that you add to this database is the proxy mailbox that you'll create in step 3. No other mailboxes should be created on this mailbox database. 
   
 3. Create a proxy mailbox within the new mailbox database, and hide the mailbox from the address book. The SMTP of this mailbox will be returned by AutoDiscover as the  _DefaultPublicFolderMailbox_ SMTP, so that by resolving this SMTP the client can reach the legacy exchange server for public folder access. 
     
@@ -136,7 +136,7 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
   Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
   ```
 
-    Where  `Credential` is your Office 365 user name and password, and  `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format. 
+   Where  `Credential` is your Office 365 user name and password, and  `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format. 
     
 > [!NOTE]
 > Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the  `-WhatIf` parameter. > We also recommend that you run this script daily to synchronize your mail-enabled public folders. 
