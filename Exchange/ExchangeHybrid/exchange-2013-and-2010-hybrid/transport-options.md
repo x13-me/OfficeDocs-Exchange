@@ -12,12 +12,12 @@ ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
 ms.assetid: 57f93b81-d153-4f0d-81f6-085130319803
-description: "In hybrid deployments, you can have mailboxes that reside in your on-premises Exchange organization and also in an Exchange Online organization. A critical component of making these two separate organizations appear as one combined organization to users and messages exchanged between them is hybrid transport. With hybrid transport, messages sent between recipients in either organization are authenticated, encrypted, and transferred using Transport Layer Security (TLS), and appear asinternal�? to Exchange components such as transport rules, journaling, and anti-spam policies. Hybrid transport is automatically configured by the Hybrid Configuration wizard in Exchange 2013"
+description: "In hybrid deployments, you can have mailboxes that reside in your on-premises Exchange organization and also in an Exchange Online organization. A critical component of making these two separate organizations appear as one combined organization to users and messages exchanged between them is hybrid transport. With hybrid transport, messages sent between recipients in either organization are authenticated, encrypted, and transferred using Transport Layer Security (TLS), and appear as internal to Exchange components such as transport rules, journaling, and anti-spam policies. Hybrid transport is automatically configured by the Hybrid Configuration wizard in Exchange 2013"
 ---
 
 # Transport options in Exchange 2013/Exchange 2010 hybrid deployments
 
-In hybrid deployments, you can have mailboxes that reside in your on-premises Exchange organization and also in an Exchange Online organization. A critical component of making these two separate organizations appear as one combined organization to users and messages exchanged between them is hybrid transport. With hybrid transport, messages sent between recipients in either organization are authenticated, encrypted, and transferred using Transport Layer Security (TLS), and appear as "internal�? to Exchange components such as transport rules, journaling, and anti-spam policies. Hybrid transport is automatically configured by the Hybrid Configuration wizard in Exchange 2013
+In hybrid deployments, you can have mailboxes that reside in your on-premises Exchange organization and also in an Exchange Online organization. A critical component of making these two separate organizations appear as one combined organization to users and messages exchanged between them is hybrid transport. With hybrid transport, messages sent between recipients in either organization are authenticated, encrypted, and transferred using Transport Layer Security (TLS), and appear as "internal" to Exchange components such as transport rules, journaling, and anti-spam policies. Hybrid transport is automatically configured by the Hybrid Configuration wizard in Exchange 2013
   
 For hybrid transport configuration to work with the Hybrid Configuration wizard, the on-premises SMTP endpoint that accepts connections from Microsoft Exchange Online Protection (EOP), which handles transport for the Exchange Online organization, must be an Exchange 2013 Client Access server, an Exchange 2013 Edge Transport server, or an Exchange Server 2010 SP3 Edge Transport server.
   
@@ -65,7 +65,7 @@ When using forced TLS transport, the sending and receiving servers examine the c
 > [!NOTE]
 > The FQDN used doesn't need to match the email domain name of the recipients. The only requirement is that the FQDN in the certificate subject name or SAN must match the FQDN that the receiving or sending servers are configured to accept. 
   
-In addition to using TLS, messages between the organizations are treated as "internal.�?" This approach allows messages to bypass anti-spam settings and other services.
+In addition to using TLS, messages between the organizations are treated as "internal." This approach allows messages to bypass anti-spam settings and other services.
   
 Learn more about SSL certificates and domain security at [Certificate requirements for hybrid deployments](../certificate-requirements.md) and [Understanding TLS Certificates](https://go.microsoft.com/fwlink/p/?linkid=187237).
   

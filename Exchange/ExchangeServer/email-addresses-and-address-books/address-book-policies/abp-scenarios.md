@@ -156,7 +156,7 @@ The ABP Routing Agent makes users that are assigned different GALs appear as ext
 
 In this scenario, the **CustomAttribute15** attribute defines the virtual organizations: the value `FAB` for Fabrikam recipients, the value `TAIL` for Tailspin Toys recipients, and the value `CEO` for the CEO, which is required so Fabrikam and Tailspin users can see the CEO. If you don't include the CEO in the Fabrikam and Tailspin Toys virtual organizations, the CEO can see everyone, but no one can see the CEO. For more information about recipient filtering, see [Recipient filtering on Edge Transport servers](../../antispam-and-antimalware/antispam-protection/recipient-filtering.md).
 
-To set the the **CustomAttribute15** attribute value for the Fabrikam and Tailspin Toys mailboxes, distribution groups, dynamic distribution groups, mail contacts, and mail users, use the following syntax:
+To set the **CustomAttribute15** attribute value for the Fabrikam and Tailspin Toys mailboxes, distribution groups, dynamic distribution groups, mail contacts, and mail users, use the following syntax:
 
 ```
 $<VariableName> = Get-<RecipientType> -ResultSize Unlimited | where PrimarySMTPAddress -match <fabrikam.com | tailspintoys.com>

@@ -866,7 +866,7 @@ To test the AD FS claims for Outlook on the web:
   
 1. In a web browser, open Outlook on the web (for example, https://mail.contoso.com/owa).
     
-2. If you get a certificate error in the web browser, just continue on to the Outlook on the web web site. You should be redirected to the AD FS sign-in page or the AD FS prompt for credentials.
+2. If you get a certificate error in the web browser, just continue on to the Outlook on the web site. You should be redirected to the AD FS sign-in page or the AD FS prompt for credentials.
     
 3. Type your user name (domain\user) and password, and then click **Sign in**.
     
