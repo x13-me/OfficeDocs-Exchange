@@ -101,7 +101,6 @@ You manage all aspects of authentication policies in Exchange Online PowerShell.
 |Outlook Service|Used by the Mail and Calendar app for Windows 10.|*AllowBasicAuthOutlookService*|
 |POP3|Used by POP email clients.|*AllowBasicAuthPop*|
 |Reporting Web Services|Used to retrieve report data in Exchange Online.|*AllowBasicAuthReportingWebServices*|
-|Exchange Representational State Transfer (REST)|A programming interfaced that's used by third-party apps.|*AllowBasicAuthRest*|
 |Outlook Anywhere (RPC over HTTP)|Used by Outlook 2016 and earlier.|*AllowBasicAuthRpc*|
 |Authenticated SMTP|Used by POP and IMAP client's to send email messages.|*AllowBasicAuthSmtp*|
 |Exchange Web Services (EWS)|A programming interface that's used by Outlook, Outlook for Mac, and third-party apps.|*AllowBasicAuthWebServices*|
