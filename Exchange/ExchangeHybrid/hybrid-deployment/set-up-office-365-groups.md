@@ -84,15 +84,15 @@ The primary SMTP domain of an Office 365 Group is called a group domain. By defa
 
 3. Create the following public DNS records with your DNS provider.
     
-|
-|
 |**DNS record name**|**DNS record type**|**DNS record value**|
 |:-----|:-----|:-----|
-|groups.contoso.com  <br/> |MX  <br/> |groups-contoso-com.mail.protection.outlook.com  <br/> > [!NOTE]> The format of this DNS record value is  _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create Office 365 DNS records](https://support.office.com/article/77f90d4a-dc7f-4f09-8972-c1b03ea85a67).           |
+|groups.contoso.com  <br/> |MX  <br/> |groups-contoso-com.mail.protection.outlook.com¹ |
 |autodiscover.groups.contoso.com  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
-   
-    > [!CAUTION]
-    > If the MX DNS record for the group domain is set to the on-premises Exchange server, mail flow won't work correctly between users in the on-premises Exchange organization and the Office 365 Group. 
+
+¹The format of this DNS record value is  _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create Office 365 DNS records](https://support.office.com/article/77f90d4a-dc7f-4f09-8972-c1b03ea85a67).
+
+   > [!CAUTION]
+   > If the MX DNS record for the group domain is set to the on-premises Exchange server, mail flow won't work correctly between users in the on-premises Exchange organization and the Office 365 Group. 
   
 4. Add the group domain to the hybrid Send connector, created by the Hybrid Configuration wizard in your on-premises Exchange organization, using the following command.
     
@@ -100,8 +100,8 @@ The primary SMTP domain of an Office 365 Group is called a group domain. By defa
   Set-SendConnector -Identity "Outbound to Office 365" -AddressSpaces "contoso.mail.onmicrosoft.com","groups.contoso.com"
   ```
 
-    > [!NOTE]
-    > If the Send connector isn't updated, or if the group domain isn't added as an accepted domain in the on-premises Exchange organization, mail sent from an on-premises mailbox won't be delivered to the group unless the group is configured to receive mail from external senders. 
+   > [!NOTE]
+   > If the Send connector isn't updated, or if the group domain isn't added as an accepted domain in the on-premises Exchange organization, mail sent from an on-premises mailbox won't be delivered to the group unless the group is configured to receive mail from external senders. 
   
 ## How do you know this worked?
 
