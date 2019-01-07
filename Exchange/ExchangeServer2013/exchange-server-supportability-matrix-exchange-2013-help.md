@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016, Exchange Server 2019_
 
 
 The Exchange Server Supportability Matrix provides a central source for Microsoft Exchange administrators to easily locate information about the level of support available for any configuration or required component for supported versions of Microsoft Exchange.
@@ -36,6 +36,7 @@ With Exchange 2013, we changed the way we deliver hotfixes and service packs. In
 <thead>
 <tr class="header">
 <th>Servicing release model</th>
+<th>Exchange 2019</th>
 <th>Exchange 2016</th>
 <th>Exchange 2013</th>
 <th>Exchange 2010</th>
@@ -46,16 +47,19 @@ With Exchange 2013, we changed the way we deliver hotfixes and service packs. In
 <td><p>Cumulative updates</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
+<td><p>X</p></td>
 <td><p> </p></td>
 </tr>
 <tr class="even">
 <td><p>Update rollups</p></td>
 <td><p> </p></td>
 <td><p> </p></td>
+<td><p> </p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="odd">
 <td><p>Security Hotfixes delivered separately</p></td>
+<td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p> </p></td>
