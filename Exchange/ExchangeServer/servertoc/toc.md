@@ -1,4 +1,5 @@
 # [Exchange Server](../exchange-server.md)
+## [Exchange content updates](../exchange-updates.md)
 ## [What's new in Exchange Server](../new-features/new-features.md)
 ### [What's discontinued in Exchange Server](../new-features/discontinued-features.md)
 ### [Updates for Exchange Server](../new-features/updates.md)
@@ -110,6 +111,7 @@
 #### [Storage configuration](../plan-and-deploy/deployment-ref/storage-configuration.md)
 #### [Network ports](../plan-and-deploy/deployment-ref/network-ports.md)
 #### [Services overview](../plan-and-deploy/deployment-ref/services-overview.md)
+#### [Exchange 2019 preferred architecture](../plan-and-deploy/deployment-ref/preferred-architecture-2019.md)
 ## [Permissions](../permissions/permissions.md)
 ### [Role groups](../permissions/role-groups.md)
 ### [Role group members](../permissions/role-group-members.md)

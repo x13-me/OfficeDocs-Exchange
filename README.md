@@ -1,15 +1,12 @@
 # Overview
 A repository to hold the help content for Exchange Server, Exchange Online, and Outlook. The expert knowledge around Exchange is distributed amongst customers, MVPs, partners, product teams, support, and other community members. This open repo is designed to provide a mechanism for those that wish to contribute their knowledge back into the docs so others can benefit.
 
-# Learn How To Contribute
+## Learn How To Contribute
 Anyone who is interested can contribute to the topics. When you contribute your work will go directly into the content set after being merged. It will then show up on docs.microsoft.com and you will be listed as a contributor at: https://github.com/MicrosoftDocs/OfficeDocs-Exchange/graphs/contributors
 
+### Contribute using the GitHub website 
 
-# Quick Start
-
-## Contribute using the GitHub website 
-
-### NOTE: The following guidance is for Office PowerShell but the same process applies for any Markdown document on GitHub.
+**NOTE: The following guidance is for Office PowerShell but the same process applies for any Markdown document on GitHub.**
 
 [![Image of Quick Start video](README-media/edit_video_capture.jpg)](https://support.office.com/en-us/article/edit-powershell-cmdlet-in-github-dcd20227-3764-48ce-ad6e-763af8b48daf?ui=en-US&rs=en-US&ad=US)
 
@@ -26,15 +23,15 @@ Anyone who is interested can contribute to the topics. When you contribute your 
 
 5. You can click the Preview changes link to see what the changes will look like.
 
-6. Once you are satisified with your work, go to the **Propose file change** area at the bottom of the topic. Enter a title title and other description informaton and then click **Propose file change**.
+6. Once you are satisified with your work, go to the **Propose file change** area at the bottom of the topic. Enter a title and other description informaton and then click **Propose file change**.
 ![Image of Propose file change on Github](README-media/propose_file_change.png)
 
 7. On the next screen, click **Create pull request**.
 
 
-# Microsoft Open Source Code of Conduct
+## Microsoft Open Source Code of Conduct
 
-## Contributing
+### Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
@@ -48,7 +45,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-## Legal Notices
+### Legal Notices
 
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content
 in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),

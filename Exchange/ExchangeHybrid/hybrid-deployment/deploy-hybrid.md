@@ -84,7 +84,7 @@ Use the following procedure to create and configure a hybrid deployment:
     
 9. In the **Enter your Office 365** credentials section, specify the username and password of an Office 365 account that has Global Administrator permissions. Click **Next**.
     
-10. On the **Validating Connections and Credentials** page, the wizard will connect to both your on-premises organization and your Office 365 organization to validate credentials and examine the current configuration of both organziations. Click **Next** when it's done. 
+10. On the **Validating Connections and Credentials** page, the wizard will connect to both your on-premises organization and your Office 365 organization to validate credentials and examine the current configuration of both organizations. Click **Next** when it's done. 
     
 11. On the **Hybrid Domains**, select the domains you want to include in your hybrid deployment. In most deployments you can leave the **Auto Discover** column set to **False** for each domain. Only select **True** next to a domain if you need to force the wizard to use the Autodiscover information from a specific domain. Click **Next**.
     

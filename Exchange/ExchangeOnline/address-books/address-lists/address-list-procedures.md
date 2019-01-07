@@ -1,27 +1,25 @@
 ---
 title: "Address list procedures in Exchange Online"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 3/8/2016
+ms.author: chrisda
+author: chrisda
+manager: serdars
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 595e1f02-4398-4a7a-b4a4-768af8b9e42e
-description: "Manage address lists in Exchange Online"
+description: "A list of topic links for the procedures that admins uses to manage address lists in Exchange Online."
 ---
 
 # Address list procedures in Exchange Online
 
 [Manage address lists in Exchange Online](manage-address-lists.md)
-  
-[Create an address list by using recipient filters](use-recipient-filters-to-create-an-address-list.md)
-  
-[Remove a global address list](remove-a-global-address-list.md)
-  
-[Configure global address list properties](configure-global-address-list-properties.md)
-  
-[Create a global address list](create-global-address-list.md)
-  
 
+[Create an address list in Exchange Online by using recipient filters](use-recipient-filters-to-create-an-address-list.md)
+
+[Remove a global address list in Exchange Online](remove-a-global-address-list.md)
+
+[Configure global address list properties in Exchange Online](configure-global-address-list-properties.md)
+
+[Create a global address list in Exchange Online](create-global-address-list.md)

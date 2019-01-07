@@ -1,26 +1,30 @@
 ---
-title: "Supported character sets for remote domains"
-ms.author: kwekua
-author: kwekua
-manager: laurawi
-ms.date: 3/9/2015
+title: "Supported character sets for remote domains in Exchange Online"
+ms.author: chrisda
+author: chrisda
+manager: serdars
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 66023a62-1fd3-4019-be2b-4e7147db148a
-description: "The following character sets can be specified for messages sent to remote domains."
+description: "MIME and non-MIME character sets that admins can configure in remote domains (message formatting settings for external domains) in Exchange Online"
 ---
 
-# Supported character sets for remote domains
+# Supported character sets for remote domains in Exchange Online
 
-The following character sets can be specified for messages sent to remote domains. 
-  
-- In the Exchange admin center (EAC), on the **Remote domain** settings page, select the name from the **MIME character set** and **Non-MIME character set** drop-down lists. 
-    
-- In Exchange Online PowerShell, use the value in the Name column in the following table for the _CharacterSet_ parameter or _NonMimeCharacterSet_ parameter in the [set-RemoteDomain](https://technet.microsoft.com/library/4738bf25-39b8-4433-bd64-1d60252c2832.aspx) cmdlet. 
-    
-**Supported character sets for remote domain configuration**
+Remote domains define settings based on the destination domain of each email message. All organizations have a default remote domain named "Default" that's applied to the domain "*". The default remote domain applies the same settings to all email messages regardless of the destination domain. However, you can configure specific settings for a specific destination domain.
+
+For more information about remote domains, see [Remote domains in Exchange Online](remote-domains.md).
+
+For remote domain procedures, see [Manage remote domains in Exchange Online](manage-remote-domains.md).
+
+The following table describes the character sets that you can configure in remote domains.
+
+- In the Exchange admin center (EAC), go to **Mail flow** > **Remote domains**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png) to create a new remote domain or select the existing remote domain and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the settings window that opens, use the **MIME character set** and **Non-MIME character set** drop-down lists to select the character set.
+
+- In Exchange Online PowerShell, use the value in the Name column in the following table for the _CharacterSet_ parameter or _NonMimeCharacterSet_ parameter on the [Set-RemoteDomain](https://technet.microsoft.com/library/4738bf25-39b8-4433-bd64-1d60252c2832.aspx) cmdlet.
 
 |**Name**|**Description**|
 |:-----|:-----|
@@ -61,5 +65,3 @@ The following character sets can be specified for messages sent to remote domain
 |windows-1257|Baltic (Windows)|
 |windows-1258|Vietnamese (Windows)|
 |windows-874|Thai (Windows)|
-   
-

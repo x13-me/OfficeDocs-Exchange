@@ -3,7 +3,7 @@ title: "Upgrade Exchange to the latest Cumulative Update"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 9/20/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: exchange-server-it-pro
@@ -24,9 +24,11 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 
 - Estimated time to complete: 60 minutes
 
+- The account that you'll use to install the CU requires membership in the Exchange Organization Management role group. If the CU requires Active Directory schema updates or domain preparation, the account will likely require additional permissions. For more information, see [Prepare Active Directory and domains for Exchange Server](prepare-ad-and-domains.md).
+
 - Check the [Release notes](../release-notes.md) before you install the CU.
 
-- Verify the target server meets the potentially new system requirements and prerequisites for the CU. For more information, see [Exchange Servr system requirements](system-requirements.md) and [Exchange Server prerequisites](prerequisites.md).
+- Verify the target server meets the potentially new system requirements and prerequisites for the CU. For more information, see [Exchange Server system requirements](system-requirements.md) and [Exchange Server prerequisites](prerequisites.md).
 
     > [!CAUTION]
     > Any customized Exchange or Internet Information Server (IIS) settings that you made in Exchange XML application configuration files on the Exchange server (for example, web.config files or the EdgeTransport.exe.config file) **will be overwritten** when you install an Exchange CU. Be sure save this information so you can easily re-apply the settings after the install. After you install the Exchange CU, you need to re-configure these settings.

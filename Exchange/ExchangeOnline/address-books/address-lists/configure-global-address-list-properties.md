@@ -1,55 +1,62 @@
 ---
-title: "Configure global address list properties"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 6/24/2018
+title: "Configure global address list properties in Exchange Online"
+ms.author: chrisda
+author: chrisda
+manager: serdars
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 5fd2c96f-fe93-4b5a-8495-70c450511a37
-description: "This topic explains how to modify the settings of a global address list (GAL)."
+description: "Admins can learn how to modify the settings of a global address list (GAL) in Exchange Online."
 ---
 
-# Configure global address list properties
+# Configure global address list properties in Exchange Online
 
-This topic explains how to modify the settings of a global address list (GAL).
-  
+The built-in global address list (GAL) that's automatically created by Exchange Online includes every mail-enabled object in the organization. You can create additional GALs to separate users by organization or location, but a user can only see and use one GAL. For more information about address lists, see [Address lists in Exchange Online](address-lists.md).
+
+The same settings to configure a GAL are available as when you created the GAL. For more information, see [Create a global address list in Exchange Online](create-global-address-list.md). For additional GAL management tasks, see [Address list procedures in Exchange Online](address-list-procedures.md).
+
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 5 minutes.
-    
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic. 
-    
-- By default in Exchange Online, the Address List role isn't assigned to any role groups. To use any cmdlets that require the Address List role, you need to add the role to a role group. For more information, see the "Add a role to a role group" section in the topic, **Manage role groups**.
-    
-- You can't edit the settings of the default GAL. 
-    
-- You can't use the Exchange admin center (EAC) to perform this procedure. You must use Exchange Online PowerShell.
-    
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
-    
+
+- By default, the Address List role isn't assigned to any role groups in Exchange Online. To use any cmdlets that require the Address List role, you need to add the role to a role group. For more information, see [Modify role groups](../../permissions-exo/role-groups.md#modify-role-groups).
+
+- You can't modify the GAL named Default Offline Address Book, the built-in GAL that's available in Exchange Online, and the only GAL that has the **IsDefaultGlobalAddressList** property value `True`.
+
+- You can't replace a custom recipient filter with a precanned recipient filter or vice-versa in an existing GAL.
+
+- You can only use Exchange Online PowerShell to perform the procedures in this topic. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+
+- For details about recipient filters in the Exchange Online PowerShell, see [Recipient filters for address lists in Exchange Online PowerShell](use-recipient-filters-to-create-an-address-list.md).
+
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
-  
-## Use Exchange Online PowerShell to configure GAL properties
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
-This example assigns a new name, FourthCoffee, to the GAL that has the GUID 96d0c505-eba8-4103-ad4f-577a1bf4ad7b.
-  
-```
-Set-GlobalAddressList -Identity 96d0c505-eba8-4103-ad4f-577a1bf4ad7b -Name FourthCoffee
-```
+## Use the Exchange Online PowerShell to modify global address lists
 
-> [!NOTE]
-> If you're using precanned conditional filter properties, the value for the _IncludedRecipients_ parameter can't be blank. 
-  
-This example changes the recipients who will be included in the Fourth Coffee global GAL to those whose company is set to Fourth Coffee.
-  
+To modify a GAL, use the following syntax:
+
 ```
-Set-GlobalAddressList -Identity Fourth Coffee -RecipientFilter {Company -eq "Fourth Coffee"}
+Set-GlobalAddressList -Identity <GALIdentity>] [-Name <Name>] [<Precanned recipient filter | Custom recipient filter>]
 ```
 
-For detailed syntax and parameter information, see [Set-GlobalAddressList](https://technet.microsoft.com/library/96bf236f-0fb8-44db-9b22-ddc0933db951.aspx).
-  
+When you modify the precanned _Conditional_ parameter values, you can use the following syntax to add or remove values without affecting other existing values: `@{Add="<Value1>","<Value2>"...; Remove="<Value1>","<Value2>"...}`.
 
+This example modifies the existing GAL named Contoso GAL by adding the **Company** value Fabrikam to the precanned recipient filter.
+
+```
+Set-GlobalAddressList -Identity "Contoso GAL" -ConditionalCompany @{Add="Fabrikam"}
+```
+
+For detailed syntax and parameter information, see [Set-GlobalAddressList](http://technet.microsoft.com/library/96bf236f-0fb8-44db-9b22-ddc0933db951.aspx).
+
+#### How do you know this worked?
+
+To verify that you've successfully modified a GAL, replace _\<GAL Name\>_ with the name of the GAL and run the following command in Exchange Online PowerShell to verify the property values:
+
+```
+Get-GlobalAddressList -Identity "<GAL Name>" | Format-List Name,RecipientFilterType,RecipientFilter,IncludedRecipients,Conditional*
+```

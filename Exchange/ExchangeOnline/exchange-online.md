@@ -15,7 +15,7 @@ description: "Exchange Online is part of the Office 365 suite of products."
 
 # Exchange Online
 
-Exchange Online is part of the Office 365 suite of products. 
+Exchange Online is part of the Office 365 suite of products.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -74,9 +74,9 @@ Exchange Online is part of the Office 365 suite of products.
     </li>
 </ul>
 
----  
-  
-<h2>To manage Exchange Online</h2>    
+---
+
+<h2>To manage Exchange Online</h2>
 <p>As an administrator for your Office 365 tenant, you manage your organization's Exchange Online service in the Exchange admin center. Here's how you get there:
 <ol>
 <li><p><a href="https://go.microsoft.com/fwlink/p/?LinkID=529144">Sign in</a> to Office 365 using your work or school account, and then choose the <b>Admin</b> tile. </p></li>
@@ -89,6 +89,6 @@ Exchange Online is part of the Office 365 suite of products.
 <ul>
 <li><p><a href="https://go.microsoft.com/fwlink/p/?LinkID=534936">Office 365 for business - Admin Help</a>: how to get started with the Office 365 admin center, reset passwords, and more.</p></li>
 <li><p><a href="https://go.microsoft.com/fwlink/p/?LinkID=252604">Email in Office 365 for business - Admin Help</a>: how to set up email, fix problems, and import email.</p></li>
-</ul>  
-    
+</ul>
+
 

@@ -1,5 +1,5 @@
 ---
-title: "Exchange Server system requirements"
+title: "Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exchange 2019 Memory Requirements, Exchange 2019 Client Compatibility"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -18,6 +18,8 @@ monikerRange: "exchserver-2016 || exchserver-2019"
 
 ::: moniker range="exchserver-2019"
 Before you install Exchange Server 2019, we recommend that you review this topic to ensure your network, hardware, software, clients, and other elements meet the requirements for Exchange 2019. Also, make sure you understand the coexistence scenarios that are supported for Exchange 2019 and earlier versions of Exchange.
+
+To actually install Exchange 2019, see [Deploy new installations of Exchange](https://docs.microsoft.com/Exchange/plan-and-deploy/deploy-new-installations/deploy-new-installations?view=exchserver-2019).
 
 ## Supported coexistence scenarios
 
@@ -42,7 +44,7 @@ The requirements for the network and the directory servers in your Exchange 2019
 |:-----|:-----|
 |Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <br/>• Windows Server 2019 Standard or Datacenter <br/>• Windows Server 2016 Standard or Datacenter <br/>• Windows Server 2012 R2 Standard or Datacenter|
 |Active Directory forest|The Active Directory forest functional level is **Windows Server 2012 R2** or higher.|
-|Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the intallation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.| 
+|Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.| 
 |DNS namespace|Exchange 2019 supports the following DNS namespaces:  <br/> • Contiguous  <br/> • Noncontiguous  <br/> • Single label domains  <br/> • Disjoint  <br/> For more information about DNS namespaces that are supported by Exchange, see [KB2269838](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2269838).|
 |IPv6|Exchange 2013 and later support IPv6 only when IPv4 is also installed and enabled on the Exchange server. <br/> If you deploy Exchange in this configuration, and your network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](https://technet.microsoft.com/library/33543023-eb9a-4102-b990-84a818a52814.aspx).|
  
@@ -62,7 +64,7 @@ For information about deploying Exchange in a virtualized environment, see [Exch
 
  |**Component**|**Requirement**|**Notes**|
 |:-----|:-----|:-----|
-|Processor|Either of the following types of 64-bit processors: <br/>• Intel processor that supports Intel 64 architecture (formerly known as Intel EM64T). <br/>• AMD processor that supports the AMD64 platform. <br/> **Note**: Intel Itanium IA64 processors aren't supported.|See the [Operating system](#operating-system) section later in this topic for supported operating systems.|
+|Processor|Either of the following types of 64-bit processors: <br/>• Intel processor that supports Intel 64 architecture (formerly known as Intel EM64T). <br/>• AMD processor that supports the AMD64 platform. <br/> **Note**: Intel Itanium IA64 processors aren't supported. <br/> **Note**: Recommended Supported Processor Sockets is up to 2 on phyiscal machines. |See the [Operating system](#operating-system) section later in this topic for supported operating systems.|
 |Memory|Varies depending on Exchange roles that are installed: <br/>• **Mailbox**: 128GB minimum recommended <br/>• **Edge Transport**: 64GB minimum recommended.  <br/> Note that Exchange 2019 has large memory support (up to 256 GB).||
 |Paging file size| Set the page file to a size equal to 25% of installed memory.|None|
 |Disk space|• At least 30GB of free space on the drive where you're installing Exchange. <br/>• At least 200MB of free space on the system drive. <br/>• At least 500MB on the drive containing the message queue database.||
@@ -123,6 +125,8 @@ If integrating Lync presence and instant messaging with Exchange Server, Lync Se
 ::: moniker range="exchserver-2016"
 Before you install Exchange Server 2016, we recommend that you review this topic to ensure your network, hardware, software, clients, and other elements meet the requirements for Exchange 2016. Also, make sure you understand the coexistence scenarios that are supported for Exchange 2016 and earlier versions of Exchange.
 
+To actually install Exchange 2016, see [Deploy new installations of Exchange](https://docs.microsoft.com/Exchange/plan-and-deploy/deploy-new-installations/deploy-new-installations?view=exchserver-2016).
+
 ## Supported coexistence scenarios
 
 The following table lists the scenarios in which coexistence between Exchange 2016 and earlier versions of Exchange is supported.
@@ -138,7 +142,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
  
 ## Supported hybrid deployment scenarios
 
-Exchange 2016 supports hybrid deployments with Office 365 tenants that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid Deployment Prerequisites](http://technet.microsoft.com/library/e7454db0-fed4-4662-8890-9501126b1ba2.aspx).
+Exchange 2016 supports hybrid deployments with Office 365 tenants that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid Deployment Prerequisites](https://technet.microsoft.com/library/e7454db0-fed4-4662-8890-9501126b1ba2.aspx).
 
 ## Network and directory servers
 
@@ -150,9 +154,9 @@ The following table lists the requirements for the network and the directory ser
 |:-----|:-----|
 |Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <br/>• Windows Server 2016 Standard or Datacenter <br/>• Windows Server 2012 R2 Standard or Datacenter <br/>• Windows Server 2012 Standard or Datacenter <br/>• Windows Server 2008 R2 Standard or Enterprise <br/>• Windows Server 2008 R2 Datacenter RTM or later|
 |Active Directory forest|The Active Directory forest functional level is Windows Server 2008 R2 or higher.|
-|Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the intallation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.| 
+|Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.| 
 |DNS namespace support|Exchange 2016 supports the following domain name system (DNS) namespaces: <br/>• Contiguous <br/>• Noncontiguous <br/>• Single label domains <br/>• Disjoint <br/> For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, [Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2269838).|
-|IPv6 support|In Exchange 2016, IPv6 is supported only when IPv4 is also installed and enabled. If Exchange 2016 is deployed in this configuration, and the network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](http://technet.microsoft.com/library/33543023-eb9a-4102-b990-84a818a52814.aspx).|
+|IPv6 support|In Exchange 2016, IPv6 is supported only when IPv4 is also installed and enabled. If Exchange 2016 is deployed in this configuration, and the network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](https://technet.microsoft.com/library/33543023-eb9a-4102-b990-84a818a52814.aspx).|
  
 ## Directory server architecture
 
@@ -229,6 +233,8 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 |Exchange 2016 CU5||Supported|
 
 ## Supported clients (with latest updates)
+
+- Outlook 2019
 
 - Outlook 2016
 

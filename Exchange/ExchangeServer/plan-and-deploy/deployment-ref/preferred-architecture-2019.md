@@ -1,6 +1,5 @@
-
 ---
-title: "Exchange 2019 preferred architeture"
+title: "Exchange 2019 preferred architecture"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -11,49 +10,50 @@ ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.assetid: 
 description: "Summary: Learn about the preferred architecure (PA) for Exchange Server 2019"
+monikerRange: "exchserver-2019"
 ---
 
-# Exchange 2019 preferred architeture
+# Exchange 2019 preferred architecture
 
 With each new release of Exchange Server for our on-premises customers we update our Preferred Architecture and discuss what changes we would like our customers to be aware of. Exchange Server 2013 brought us [the first of the Preferred Architectures](https://blogs.technet.microsoft.com/exchange/2014/04/21/the-preferred-architecture/) in modern Exchange history and was then followed [with a refresh](https://blogs.technet.microsoft.com/exchange/2015/10/12/the-exchange-2016-preferred-architecture/) for Exchange Server 2016 by providing refinements for the changes that came with the 2016 release. With this update for Exchange Server 2019 we will iterate on the previous PA to take advantage of new technologies and improvements.
 
-## The Preferred Architecture
+## The preferred architecture
 
-The PA is the Exchange Server Engineering Team’s best practice recommendation for what we believe is the optimum deployment architecture for Exchange Server 2019 in an on-premises environment.
+The PA is the Exchange Server Engineering Team's best practice recommendation for what we believe is the optimum deployment architecture for Exchange Server 2019 in an on-premises environment.
 
 While Exchange 2019 offers a wide variety of architectural choices for on-premises deployments, the architecture discussed here is the most scrutinized one. While there are other supported deployment architectures, they are not our recommended practice.
 
-Following the PA helps customers become a member of a community of organizations with similar Exchange Server deployments. This allows easier knowledge sharing and facilitates a more rapid response to unforeseen circumstances. Our own support organization is well aware what an Exchange Server PA deployment should look like and prevents them from spending lengthy cycles learning and understanding a customer’s highly custom environment before working with them towards a support case resolution.
+Following the PA helps customers become a member of a community of organizations with similar Exchange Server deployments. This allows easier knowledge sharing and facilitates a more rapid response to unforeseen circumstances. Our own support organization is well aware what an Exchange Server PA deployment should look like and prevents them from spending lengthy cycles learning and understanding a customer's highly custom environment before working with them towards a support case resolution.
 
 The PA is designed with several business requirements in mind, such as the requirement that the architecture be able to:
 
-  - Include both high availability within the datacenter, and site resilience between datacenters
+- Include both high availability within the datacenter, and site resilience between datacenters
 
-  - Support multiple copies of each database, thereby allowing for quick activation
+- Support multiple copies of each database, thereby allowing for quick activation
 
-  - Reduce the cost of the messaging infrastructure
+- Reduce the cost of the messaging infrastructure
 
-  - Increase availability by optimizing around failure domains and reducing complexity
+- Increase availability by optimizing around failure domains and reducing complexity
 
 The specific prescriptive nature of the PA means of course that not every customer will be able to deploy it word for word. For example, not all our customers have multiple datacenters. Some of our customers may have different business requirements or internal policies they must adhere to which necessitate a different deployment architecture. If you fall into those categories, and you want to deploy Exchange on-premises, there are still advantages to adhering as closely as possible to the PA and deviate only where your requirements or policies force you to differ. Alternatively, you can always consider Office 365 where you no longer must deploy or manage a large number of servers.
 
 The PA removes complexity and redundancy where necessary to drive the architecture to a predictable recovery model: when a failure occurs, another copy of the affected database is activated.
 
-The PA covers four areas of focus, with those areas being the following.
+The PA covers the following four areas of focus:
 
-1.  Namespace design
+1. [Namespace design](#namespace-design)
 
-2.  Datacenter design
+2. [Site resilient datacenter pair design](#site-resilient-datacenter-pair-design) 
 
-3.  Server design
+3. [Server design](#server-design)
 
-4.  DAG design
+4. [Database availability group design](#database-availability-group-design)
 
 For Exchange Server 2019 we have no changes in three of the four categories from the Exchange Server 2016 Preferred Architecture. The areas of Namespace design, Datacenter design, and DAG design are receiving no major changes. We have been very pleased with customer deployments that closely followed the Exchange Server 2016 PA and see no need to deviate from the recommendations in those areas.
 
 The most noteworthy changes in the Exchange Server 2019 PA focus on the area of Server design due to some new and exciting technologies.
 
-## Namespace Design
+## Namespace design
 
 In the [Namespace Planning](http://blogs.technet.com/b/exchange/archive/2015/10/06/namespace-planning-in-exchange-2016.aspx) and [Load Balancing Principles](http://blogs.technet.com/b/exchange/archive/2015/10/08/load-balancing-in-exchange-2016.aspx) articles for Exchange Server 2016, Ross Smith IV outlined the various configuration choices that were available with Exchange 2016 and these concepts continue to apply for Exchange Server 2019. For the namespace, the choices are to either deploy a [bound namespace](http://blogs.technet.com/b/exchange/archive/2015/10/06/namespace-planning-in-exchange-2016.aspx#bound) (having a preference for the users to operate out of a specific datacenter) or an [unbound namespace](http://blogs.technet.com/b/exchange/archive/2015/10/06/namespace-planning-in-exchange-2016.aspx#unbound) (having the users connect to any datacenter without preference).
 
@@ -73,11 +73,11 @@ One caution we have for customers is to ensure you assign a low TTL (time to liv
 
 Datacenter affinity is required for the Office Online Server farms, thus a namespace is deployed per datacenter with the load balancer utilizing layer 7, and maintaining session affinity via cookie-based persistence.
 
-![Example Exchange 2019 Org Architecture Layout](https://github.com/MicrosoftDocs/OfficeDocs-Exchange-pr/blob/PrefArc/Exchange/ExchangeServer/media/PrefArc-2019-Layout.png)
+![Example Exchange 2019 Org Architecture Layout](../../media/PrefArc-2019-Layout.png)
 
-In the event that you have multiple site resilient datacenter pairs in your environment, you will need to decide if you want to have a single worldwide namespace, or if you want to control the traffic to each specific datacenter by using regional namespaces. Your decision depends on your network topology and the associated cost with using an unbound model; for example, if you have datacenters located in North America and South Africa, the network link between these regions might not only be costly, but it might also have high latency, which can introduce user pain and operational issues. In that case, it makes sense to deploy a bound model with a separate namespace for each region. However, options like geographical DNS offer you the ability to deploy a single unified namespace, even when you have costly network links; geo-DNS allows you to have your users directed to the closest datacenter based on their client’s IP address.
+In the event that you have multiple site resilient datacenter pairs in your environment, you will need to decide if you want to have a single worldwide namespace, or if you want to control the traffic to each specific datacenter by using regional namespaces. Your decision depends on your network topology and the associated cost with using an unbound model; for example, if you have datacenters located in North America and South Africa, the network link between these regions might not only be costly, but it might also have high latency, which can introduce user pain and operational issues. In that case, it makes sense to deploy a bound model with a separate namespace for each region. However, options like geographical DNS offer you the ability to deploy a single unified namespace, even when you have costly network links; geo-DNS allows you to have your users directed to the closest datacenter based on their client's IP address.
 
-## Site Resilient Datacenter Pair Design
+## Site resilient datacenter pair design
 
 To achieve a highly available *and* site resilient architecture, you must have two or more datacenters that are well-connected (ideally, you want a low round-trip network latency, otherwise replication and the client experience are adversely affected). In addition, the datacenters should be connected via redundant network paths supplied by different operating carriers.
 
@@ -87,7 +87,7 @@ While we support stretching an Active Directory site across multiple datacenters
 
 2. Active Directory has [published guidance](https://technet.microsoft.com/library/cc770917(v=WS.10).aspx) that states that subnets should be placed in different Active Directory sites when the round trip latency is greater than 10ms between the subnets.
 
-## Server Design
+## Server design
 
 In the PA, all servers are physical servers and use locally attached storage. Physical hardware is deployed rather than virtualized hardware for two reasons:
 
@@ -95,7 +95,7 @@ In the PA, all servers are physical servers and use locally attached storage. Ph
 
 2. Virtualization comes with a slight performance penalty as well as adding an additional layer of management and complexity, which introduces additional recovery modes that do not add value, particularly since Exchange Server natively provides the same functionality.
 
-### Commodity Servers 
+### Commodity servers 
 
 Commodity server platforms are used in the PA. Current commodity platforms are and include:
 
@@ -111,27 +111,13 @@ Commodity server platforms are used in the PA. Current commodity platforms are a
 
 ### Scale Theory
 
-It is important to note even though we have increased the allowed processor and memory capacity in Exchange Server 2019 the Exchange Server PG’s recommendation remains to scale out rather than up. Scaling out vs up means we would much rather see you deploy a larger number of servers with slightly less resources per server rather than a smaller number of very dense servers using maximum resources and populated with large numbers of mailboxes. By locating a reasonable number of mailboxes within a server you lessen the impact of any planned or unplanned outage as well as reduce the risk of discovering other system bottlenecks.
-=======
-  - 2U, dual socket servers with up to 48 physical processor cores (an increase from 24 cores in Exchange 2016)
+It is important to note even though we have increased the allowed processor and memory capacity in Exchange Server 2019 the Exchange Server PG's recommendation remains to scale out rather than up. Scaling out vs up means we would much rather see you deploy a larger number of servers with slightly less resources per server rather than a smaller number of very dense servers using maximum resources and populated with large numbers of mailboxes. By locating a reasonable number of mailboxes within a server, you lessen the impact of any planned or unplanned outage as well as reduce the risk of discovering other system bottlenecks.
 
-  - Up to 256GB of memory (an increase from 192GB in Exchange 2016)
-
-  - A battery-backed write cache controller
-
-  - 12 or more large form factor drive bays within the server chassis
-
-  - The ability to mix traditional rotating platter storage and solid-state storage within the same chassis.
-
-### Scale Theory
-
-It is important to note even though we have increased the allowed processor and memory capacity in Exchange Server 2019 the Exchange Server PG’s recommendation remains to scale out rather than up. Scaling out vs up means we would much rather see you deploy a larger number of servers with slightly less resources rather than a smaller number of very dense servers using maximum resources and populated with large numbers of mailboxes. By locating a reasonable number of mailboxes within a server you lessen the impact of any planned or unplanned outage as well as reduce the risk of discovering other system bottlenecks.
-
-An increase in system resources should not result in the assumption you will see linear performance gains in Exchange Server 2019 using the maximum allowed resources when comparing it to Exchange 2016’s maximum allowed resources. Each new version of Exchange brings new processes and updates which in turn make it difficult to compare a current version to prior version. Please follow any and all sizing guidance from Microsoft when determining your server design.
+An increase in system resources should not result in the assumption you will see linear performance gains in Exchange Server 2019 using the maximum allowed resources when comparing it to Exchange 2016's maximum allowed resources. Each new version of Exchange brings new processes and updates which in turn make it difficult to compare a current version to prior version. Please follow any and all sizing guidance from Microsoft when determining your server design.
 
 ### Storage
 
-Additional drive bays may be directly attached per-server depending on the number of mailboxes, mailbox size, and the server’s resource scalability.
+Additional drive bays may be directly attached per-server depending on the number of mailboxes, mailbox size, and the server's resource scalability.
 
 Each server houses a single RAID1 disk pair for the operating system, Exchange binaries, protocol/client logs, and the transport database.
 
@@ -139,7 +125,7 @@ The remaining storage is configured as JBOD (Just a Bunch of Disks). Please be a
 
 New to the Exchange Server 2019 PA is the recommendation of having two classes of storage for everything not already located on the RAID1 disk pair previously mentioned.
 
-#### Traditional Storage Class
+#### Traditional storage class
 
 This storage class contains Exchange Server database files and Exchange Server transaction log files. These disks are large capacity 7.2K RPM serially attached SCSI (SAS) disks. While SATA disks are also available we observe better IO and a lower annualized failure rate using the SAS equivalent.
 
@@ -147,9 +133,9 @@ To ensure the capacity and IO of each disk is used as efficiently as possible, u
 
 At least one disk in the traditional storage disk pool is reserved as a hot spare. [AutoReseed](../../high-availability/manage-ha/configure-dag-autoreseed.md) is enabled and quickly restores database redundancy after a disk failure by activating the hot spare and initiating database copy reseeds.
 
-#### Solid State Storage Class
+#### Solid state storage class
 
-This storage class contains Exchange 2019’s new MetaCache Database (MCDB) files. These solid-state drives may come in different form factors such as but not limited to traditional 2.5”/3.5” SAS connected or M.2 PCIe connected drives.
+This storage class contains Exchange 2019's new MetaCache Database (MCDB) files. These solid-state drives may come in different form factors such as but not limited to traditional 2.5"/3.5" SAS connected or M.2 PCIe connected drives.
 
 Customers should expect to deploy roughly 5-10% additional storage as solid state storage. For example, if a single server was expected to hold 28TB of mailbox database files on traditional storage, then an additional 1.4-2.8TB TB of solid-state storage would also be recommended as additional storage for the same server.
 
@@ -159,67 +145,67 @@ In the event of a solid-state drive failure Exchange High Availability services 
 
 For example, if a customer were to deploy a system capable of holding 20 drives it may have a layout like the following.
 
-  - 2 HDDs for OS mirror, Exchange Binaries, and Transport Database
+- 2 HDDs for OS mirror, Exchange Binaries, and Transport Database
 
-  - 12 HDDs for Exchange Database storage
+- 12 HDDs for Exchange Database storage
 
-  - 1 HDD as the AutoReseed spare
+- 1 HDD as the AutoReseed spare
 
-  - 4 SSDs for Exchange MCDBs that provide between 5-10% of the cumulative database storage capacity.
+- 4 SSDs for Exchange MCDBs that provide between 5-10% of the cumulative database storage capacity.
 
-  - Optionally a customer may elect to add a spare SSD or a second AutoReseed drive.
+- Optionally a customer may elect to add a spare SSD or a second AutoReseed drive.
 
 This can be visualized as the following;
 
-![Example Exchange 2019 Mailbox Server Disk Layout](https://github.com/MicrosoftDocs/OfficeDocs-Exchange-pr/blob/PrefArc/Exchange/ExchangeServer/media/PrefArc-2019-DiskLayoutExample.PNG)
+![Example Exchange 2019 Mailbox Server disk layout](../../media/PrefArc-2019-DiskLayoutExample.PNG)
 
 In the example above, we have 120 TB of Exchange database storage and 7.68 TB of MCDB storage which is roughly 6.4% the traditional database storage space. With this amount of MCBD storage we are perfectly aligned within the guidance of 5-10%. Each of the 10 TB drives will hold four database copies and each MCDB drive would hold twelve MCDBs.
 
-#### Common Storage Settings
+#### Common storage settings
 
 Whether Traditional or Solid-State, all disks that houses an Exchange data are formatted with [ReFS](https://docs.microsoft.com/windows-server/storage/refs/refs-overview) (with the integrity feature disabled) and the DAG is configured such that AutoReseed formats the disks with ReFS:
 
 ```
-Set-DatabaseAvailabilityGroup -Identity <DAG> -FileSystem ReFS
+Set-DatabaseAvailabilityGroup -Identity <DAGIdentity> -FileSystem ReFS
 ```
 
 [BitLocker](https://technet.microsoft.com/library/dn306081.aspx) is used to encrypt each disk, thereby providing data encryption at rest and mitigating concerns around data theft or disk replacement.  For more information, see [Enabling BitLocker on Exchange Servers](http://blogs.technet.com/b/exchange/archive/2015/10/20/enabling-bitlocker-on-exchange-servers.aspx).
 
-## Database Availability Group Design
+## Database availability group design
 
 Within each site resilient datacenter pair, you will have one or more DAGs. It is not recommended to stretch a DAG across more than two datacenters.
 
-### DAG Configuration
+### DAG configuration
 
 As with the namespace model, each DAG within the site resilient datacenter pair operates in an unbound model with active copies distributed equally across all servers in the DAG. This model:
 
-1.  Ensures that each DAG member’s full stack of services (client connectivity, replication pipeline, transport, etc.) is being validated during normal operations.
+1. Ensures that each DAG member's full stack of services (client connectivity, replication pipeline, transport, etc.) is being validated during normal operations.
 
-2.  Distributes the load across as many servers as possible during a failure scenario, thereby only incrementally increasing resource use across the remaining members within the DAG.
+2. Distributes the load across as many servers as possible during a failure scenario, thereby only incrementally increasing resource use across the remaining members within the DAG.
 
 Each datacenter is symmetrical, with an equal number of DAG members in each datacenter. This means that each DAG has an even number of servers and uses a witness server for quorum maintenance.
 
 The DAG is the fundamental building block in Exchange 2019. With respect to DAG size, a DAG with a greater number of participating member nodes provides more redundancy and resources. Within the PA, the goal is to deploy DAGs with a greater number of member nodes, typically starting with an eight-member DAG and increasing the number of servers as required to meet your requirements. You should only create new DAGs when scalability introduces concerns over the existing database copy layout.
 
-### DAG Network Design
+### DAG network design
 
 The PA leverages a single, non-teamed network interface for both client connectivity and data replication. A single network interface is all that is needed because ultimately our goal is to achieve a standard recovery model regardless of the failure - whether a server failure occurs, or a network failure occurs, the result is the same: a database copy is activated on another server within the DAG. This architectural change simplifies the network stack and obviates the need to manually eliminate heartbeat cross-talk.
 
-### Witness Server Placement
+### Witness server placement
 
 The placement of the witness server determines whether the architecture can provide automatic datacenter failover capabilities or whether it will require a manual activation to enable service in the event of a site failure.
 
-If your organization has a third location with a network infrastructure that is isolated from network failures that affect the site resilient datacenter pair in which the DAG is deployed, then the recommendation is to deploy the DAG’s witness server in that third location. This configuration gives the DAG the ability to automatically failover databases to the other datacenter in response to a datacenter-level failure event, regardless of which datacenter has the outage.
+If your organization has a third location with a network infrastructure that is isolated from network failures that affect the site resilient datacenter pair in which the DAG is deployed, then the recommendation is to deploy the DAG's witness server in that third location. This configuration gives the DAG the ability to automatically failover databases to the other datacenter in response to a datacenter-level failure event, regardless of which datacenter has the outage.
 
 If your organization does not have a third location, consider placing the server witness in [Azure](http://aka.ms/dagazurewitness); alternatively, place the witness server in one of the datacenters within the site resilient datacenter pair. If you have multiple DAGs within the site resilient datacenter pair, then place the witness server for all DAGs in the same datacenter (typically the datacenter where the majority of the users are physically located). Also, make sure the Primary Active Manager (PAM) for each DAG is also located in the same datacenter.
 
 Exchange Server 2019 and all earlier versions do not support the use of the Cloud Witness feature first introduced in Windows Server 2016 Failover Cluster.
 
-### Data Resiliency
+### Data resiliency
 
 Data resiliency is achieved by deploying multiple database copies. In the PA, database copies are distributed across the site resilient datacenter pair, thereby ensuring that mailbox data is protected from software, hardware and even datacenter failures.
 
-Each database has four copies, with two copies in each datacenter, which means at a minimum, the PA requires four servers. Out of these four copies, three of them are configured as highly available. The fourth copy (the copy with the highest Activation Preference number) is configured as a lagged database copy. Due to the server design, each copy of a database is isolated from its other copies, thereby reducing failure domains and increasing the overall availability of the solution as discussed in [DAG: Beyond the “A”](http://blogs.technet.com/b/exchange/archive/2011/09/16/dag-beyond-the-a.aspx).
+Each database has four copies, with two copies in each datacenter, which means at a minimum, the PA requires four servers. Out of these four copies, three of them are configured as highly available. The fourth copy (the copy with the highest Activation Preference number) is configured as a lagged database copy. Due to the server design, each copy of a database is isolated from its other copies, thereby reducing failure domains and increasing the overall availability of the solution as discussed in [DAG: Beyond the "A"](http://blogs.technet.com/b/exchange/archive/2011/09/16/dag-beyond-the-a.aspx).
 
 The purpose of the lagged database copy is to provide a recovery mechanism for the rare event of system-wide, catastrophic logical corruption. It is not intended for individual mailbox recovery or mailbox item recovery.
 
@@ -231,7 +217,7 @@ To protect against accidental (or malicious) item deletion, [Single Item Recover
 
 With all of these technologies in play, traditional backups are unnecessary; as a result, the PA leverages [Exchange Native Data Protection](../../high-availability/disaster-recovery/disaster-recovery.md#exchange-native-data-protection).
 
-### Office Online Server Design
+### Office Online Server design
 
 At a minimum, you will want to deploy an Office Online Server (OOS) farm with at least two OOS nodes in each datacenter that hosts Exchange 2019 servers. Each Office Online Server should have at least 8 processor cores, 32GB of memory and at least 40GB of space dedicated for log files. Exchange 2019 mailbox servers should be configured to rely on the local OOS farm in their datacenter to ensure the lowest possible latency and highest possible bandwidth between the servers to render file content to users.
 

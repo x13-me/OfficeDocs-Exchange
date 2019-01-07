@@ -15,14 +15,14 @@ description: "In Microsoft Exchange Server and Exchange Online, you can use data
 # DLP policy templates supplied in Exchange
 
 In Microsoft Exchange Server and Exchange Online, you can use data loss prevention (DLP) policy templates as a starting point for building DLP policies that help you meet your specific regulatory and business policy needs. You can modify the templates to meet the specific needs of your organization.
-  
+
 > [!CAUTION]
-> You should enable your DLP policies in test mode before running them in your production environment. During such tests, it is recommended that you configure sample user mailboxes and send test messages that invoke your test policies in order to confirm the results. > Use of these policies does not ensure compliance with any regulation. After your testing is complete, make the necessary configuration changes in Exchange so the transmission of information complies with your organization's policies. For example, you might need to configure TLS with known business partners or add more restrictive transport rule actions, such as adding rights protection to messages that contain a certain type of data. 
-  
+> You should enable your DLP policies in test mode before running them in your production environment. During such tests, it is recommended that you configure sample user mailboxes and send test messages that invoke your test policies in order to confirm the results. > Use of these policies does not ensure compliance with any regulation. After your testing is complete, make the necessary configuration changes in Exchange so the transmission of information complies with your organization's policies. For example, you might need to configure TLS with known business partners or add more restrictive mail flow rule (also known as transport rule) actions, such as adding rights protection to messages that contain a certain type of data.
+
 ## Templates available for DLP
 
 The following table lists the DLP policy templates in Exchange. To learn more about customizing these templates to create DLP policies, see [Manage DLP Policies](https://technet.microsoft.com/library/ba81fabd-7f7f-4ef7-968f-ce851ada9d70.aspx).
-  
+
 |**Template**|**Description**|
 |:-----|:-----|
 |Australia Financial Data|Helps detect the presence of information commonly considered to be financial data in Australia, including credit cards, and SWIFT codes.|
@@ -65,13 +65,13 @@ The following table lists the DLP policy templates in Exchange. To learn more ab
 |U.S. Personally Identifiable Information (PII) Data|Helps detect the presence of information commonly considered to be personally identifiable information (PII) in the United States, including information like social security numbers or driver's license numbers.|
 |U.S. State Breach Notification Laws|Helps detect the presence of information subject to U.S. State Breach Notification Laws, including data like social security and credit card numbers.|
 |U.S. State Social Security Number Confidentiality Laws|Helps detect the presence of information subject to U.S. State Social Security Number Confidentiality Laws, including data like social security numbers.|
-   
+
 ## For more information
 
 [Data loss prevention](data-loss-prevention.md)
-  
+
 [Create a DLP policy from a template](create-dlp-policy-from-template.md)
-  
+
 [Sensitive Information Types Inventory](https://technet.microsoft.com/library/98b81f9c-87bb-4905-8e53-04621c3ae74d.aspx)
-  
+
 

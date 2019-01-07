@@ -1,9 +1,9 @@
 ---
-title: "Connectors"
+title: "Connectors, Exchange connector, Exchange send connector, Exchange receive connector"
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: 7/6/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: hub-page
 ms.prod: exchange-server-it-pro
