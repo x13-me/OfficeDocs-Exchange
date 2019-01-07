@@ -98,6 +98,7 @@ The following table identifies the operating system platforms on which each vers
 <thead>
 <tr class="header">
 <th>Operating system platform</th>
+<th>Exchange 2019</th>
 <th>Exchange 2016 CU3 and later</th>
 <th>Exchange 2016 CU2 and earlier</th>
 <th>Exchange 2013 SP1 and later</th>
@@ -110,6 +111,7 @@ The following table identifies the operating system platforms on which each vers
 <td><p></p></td>
 <td><p> </p></td>
 <td><p> </p></td>
+<td><p> </p></td>
 <td><p>X1</p></td>
 </tr>
 <tr class="even">
@@ -117,10 +119,12 @@ The following table identifies the operating system platforms on which each vers
 <td><p></p></td>
 <td><p> </p></td>
 <td><p> </p></td>
+<td><p> </p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="odd">
 <td><p>Windows Server 2008 R2 SP1</p></td>
+<td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>X</p></td>
@@ -130,6 +134,7 @@ The following table identifies the operating system platforms on which each vers
 <td><p>Windows 7 SP1</p></td>
 <td><p></p></td>
 <td><p></p></td>
+<td><p></p></td>
 <td><p>X1</p></td>
 <td><p>X1</p></td>
 </tr>
@@ -137,11 +142,13 @@ The following table identifies the operating system platforms on which each vers
 <td><p>Windows 8</p></td>
 <td><p></p></td>
 <td><p></p></td>
+<td><p></p></td>
 <td><p>X1</p></td>
 <td><p>X1</p></td>
 </tr>
 <tr class="even">
 <td><p>Windows 8.1</p></td>
+<td><p></p></td>
 <td><p>X1</p></td>
 <td><p>X1</p></td>
 <td><p>X1</p></td>
@@ -151,11 +158,13 @@ The following table identifies the operating system platforms on which each vers
 <td><p>Windows 10</p></td>
 <td><p>X1</p></td>
 <td><p>X1</p></td>
+<td><p>X1</p></td>
 <td><p></p></td>
 <td><p> </p></td>
 </tr>
 <tr class="even">
 <td><p>Windows Server 2012</p></td>
+<td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
@@ -163,6 +172,7 @@ The following table identifies the operating system platforms on which each vers
 </tr>
 <tr class="odd">
 <td><p>Windows Server 2012 R2</p></td>
+<td><p> </p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
@@ -170,7 +180,16 @@ The following table identifies the operating system platforms on which each vers
 </tr>
 <tr class="even">
 <td><p>Windows Server 2016</p></td>
+<td><p></p></td>
 <td><p>X</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p> </p></td>
+</tr>
+<tr class="odd">
+<td><p>Windows Server 2019</p></td>
+<td><p>X</p></td>
+<td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p> </p></td>
