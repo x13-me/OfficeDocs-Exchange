@@ -276,6 +276,7 @@ The following table identifies the Active Directory environments with which each
 <tbody>
 <tr>
 <th>Forest functional level</th>
+<th>Exchange 2019</th>
 <th>Exchange 2016 CU3 and later</th>
 <th>Exchange 2016 CU2 and earlier</th>
 <th>Exchange 2013 SP1 and later</th>
@@ -285,11 +286,13 @@ The following table identifies the Active Directory environments with which each
 <tr> <td> <p>Windows Server 2003 forest functional level</p> </td>
 <td> <p></p> </td>
 <td> <p></p> </td>
+<td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td> 
 </tr> 
 <tr> <td> <p>Windows Server 2008 forest functional level</p> </td>
+<td> <p></p> </td>
 <td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
@@ -297,6 +300,7 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td> 
 </tr> 
 <tr> <td> <p>Windows Server 2008 R2 SP1 forest functional level</p> </td>
+<td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
@@ -304,6 +308,7 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td> 
 </tr> 
 <tr> <td> <p>Windows Server 2012 forest functional level </p> </td>
+<td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
@@ -315,6 +320,7 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
+<td> <p>X</p> </td>
 <td> <p>X</p> </td> 
 </tr> 
 <tr> <td> <p>Windows Server 2016 forest functional level </p> </td>
@@ -322,6 +328,15 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
+<td> <p>X</p> </td>
+<td> <p></p> </td> 
+</tr>
+<tr> <td> <p>Windows Server 2019 </p> </td>
+<td> <p>X</p> </td>
+<td> <p></p> </td>
+<td> <p></p> </td>
+<td> <p></p> </td>
+<td> <p></p> </td>
 <td> <p></p> </td> 
 </tr>
 </tbody></table>
