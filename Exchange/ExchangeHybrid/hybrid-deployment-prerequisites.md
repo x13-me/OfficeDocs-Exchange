@@ -30,12 +30,13 @@ The following prerequisites are required for configuring a hybrid deployment:
     
     The version of Exchange you have installed in your on-premises organization determines the hybrid deployment version you can install. You should typically configure the newest hybrid deployment version that's supported in your organization. For example, if your on-premises organization is running Exchange 2007, you need to configure an Exchange 2013-based hybrid deployment. For a complete listing of Exchange Server and Office 365 for enterprises hybrid deployment compatibility, see following table.
     
-|**On-premises environment**|**Exchange 2016-based hybrid deployment**|**Exchange 2013-based hybrid deployment**|**Exchange 2010-based hybrid deployment**|
+|**On-premises environment**|**Exchange 2019-based hybrid deployment**|**Exchange 2016-based hybrid deployment**|**Exchange 2013-based hybrid deployment**|**Exchange 2010-based hybrid deployment**|
 |:-----|:-----|:-----|:-----|
-|Exchange 2016|Supported|Not supported|Not supported|
-|Exchange 2013|Supported|Supported|Not supported|
-|Exchange 2010|Supported|Supported|Supported|
-|Exchange 2007|Not supported|Supported|Supported|
+|Exchange 2019|Supported|Not supported|Not supported|Not supported|
+|Exchange 2016|Supported|Supported|Not supported|Not supported|
+|Exchange 2013|Supported|Supported|Supported|Not supported|
+|Exchange 2010|Not supported|Supported|Supported|Supported|
+|Exchange 2007|Not supported|Not supported|Supported|Supported|
    
 - **On-premises Exchange releases**: Hybrid deployments require the latest cumulative update or update rollup available for the version of Exchange you have installed in your on-premises organization. If you can't install the latest cumulative update or update rollup, the immediately previous release is also supported. Older cumulative updates or update rollups aren't supported. 
     
@@ -65,7 +66,7 @@ The following prerequisites are required for configuring a hybrid deployment:
     
     Learn more at [Azure AD Connect User Sign-on options](http://go.microsoft.com/fwlink/p/?LinkId=723514).
     
-- **Autodiscover DNS records**: Configure the Autodiscover public DNS records for your existing SMTP domains to point to an on-premises Exchange 2013 Client Access server. 
+- **Autodiscover DNS records**: Configure the Autodiscover public DNS records for your existing SMTP domains to point to an on-premises Exchange 2010/2013 Client Access server or Exchange 2016/2019 Mailbox Server. 
     
 - **Office 365 organization in the Exchange admin center (EAC)**: The Office 365 organization node is included by default in the on-premises EAC, but you must connect the EAC to your Office 365 organization using your Office 365 administrator credentials before you can use the Hybrid Configuration wizard. This also allows you to manage both the on-premises and Exchange Online organizations from a single management console. 
     
@@ -103,14 +104,14 @@ Hybrid deployment features and components require certain incoming protocols, po
   
 |**Transport Protocol**|**Upper Level Protocol**|**Feature/Component**|**On-premises Endpoint**|**On-premises Path**|**Authentication Provider**|**Authorization Method**|**Pre-Auth Supported?**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|TCP 25 (SMTP)  <br/> |SMTP/TLS  <br/> |Mail flow between Office 365 and on-premises  <br/> |Exchange 2016 Mailbox/Edge  <br/> Exchange 2013 CAS/Edge  <br/> Exchange 2010 HUB/Edge  <br/> |N/A  <br/> |N/A  <br/> |Certificate-based  <br/> |No  <br/> |
-|TCP 443 (HTTPS)  <br/> |Autodiscover  <br/> |Autodiscover  <br/> |Exchange 2016 Mailbox  <br/> Exchange 2013/2010 CAS  <br/> |/autodiscover/autodiscover.svc/wssecurity  <br/> /autodiscover/autodiscover.svc  <br/> |Azure AD authentication system  <br/> |WS-Security Authentication  <br/> |No  <br/> |
-|TCP 443 (HTTPS)  <br/> |EWS  <br/> |Free/busy, MailTips, Message Tracking  <br/> |Exchange 2016 Mailbox  <br/> Exchange 2013/2010 CAS  <br/> |/ews/exchange.asmx/wssecurity  <br/> |Azure AD authentication system  <br/> |WS-Security Authentication  <br/> |No  <br/> |
-|TCP 443 (HTTPS)  <br/> |EWS  <br/> |Multi-mailbox search  <br/> |Exchange 2016 Mailbox  <br/> Exchange 2013/2010 CAS  <br/> |/ews/exchange.asmx/wssecurity  <br/> /autodiscover/autodiscover.svc/wssecurity  <br/> /autodiscover/autodiscover.svc  <br/> |Auth Server  <br/> |WS-Security Authentication  <br/> |No  <br/> |
-|TCP 443 (HTTPS)  <br/> |EWS  <br/> |Mailbox migrations  <br/> |Exchange 2016 Mailbox  <br/> Exchange 2013/2010 CAS  <br/> |/ews/mrsproxy.svc  <br/> |NTLM  <br/> |Basic  <br/> |Yes  <br/> |
-|TCP 443 (HTTPS)  <br/> |Autodiscover  <br/> EWS  <br/> |OAuth  <br/> |Exchange 2016 Mailbox  <br/> Exchange 2013/2010 CAS  <br/> |/ews/exchange.asmx/wssecurity  <br/> /autodiscover/autodiscover.svc/wssecurity  <br/> /autodiscover/autodiscover.svc  <br/> |Auth Server  <br/> |WS-Security Authentication  <br/> |No  <br/> |
-|TCP 443 (HTTPS)  <br/> |N/A  <br/> |AD FS (included with Windows)  <br/> |Windows 2008/2012 Server  <br/> |/adfs/\*  <br/> |Azure AD authentication system  <br/> |Varies per config.  <br/> |2-factor  <br/> |
-|TCP 443 (HTTPS)  <br/> |N/A  <br/> |Azure Active Directory Connect with AD FS  <br/> |Windows 2012 R2 Server  <br/> |/adfs/\*  <br/> |Azure AD authentication system  <br/> |Varies per config.  <br/> |2-factor  <br/> |
+|TCP 25 (SMTP)  <br/> |SMTP/TLS  <br/> |Mail flow between Office 365 and on-premises  <br/> |Exchange 2019 Mailbox/Edge  <br/> |Exchange 2016 Mailbox/Edge  <br/> Exchange 2013 CAS/Edge  <br/> Exchange 2010 HUB/Edge  <br/> |N/A  <br/> |N/A  <br/> |Certificate-based  <br/> |No  <br/> |
+|TCP 443 (HTTPS)  <br/> |Autodiscover  <br/> |Autodiscover  <br/> |Exchange 2019 Mailbox  <br/> |Exchange 2016 Mailbox  <br/> Exchange 2013/2010 CAS  <br/> |/autodiscover/autodiscover.svc/wssecurity  <br/> /autodiscover/autodiscover.svc  <br/> |Azure AD authentication system  <br/> |WS-Security Authentication  <br/> |No  <br/> |
+|TCP 443 (HTTPS)  <br/> |EWS  <br/> |Free/busy, MailTips, Message Tracking  <br/> |Exchange 2019 Mailbox  <br/> |Exchange 2016 Mailbox  <br/> Exchange 2013/2010 CAS  <br/> |/ews/exchange.asmx/wssecurity  <br/> |Azure AD authentication system  <br/> |WS-Security Authentication  <br/> |No  <br/> |
+|TCP 443 (HTTPS)  <br/> |EWS  <br/> |Multi-mailbox search  <br/> |Exchange 2019 Mailbox  <br/> |Exchange 2016 Mailbox  <br/> Exchange 2013/2010 CAS  <br/> |/ews/exchange.asmx/wssecurity  <br/> /autodiscover/autodiscover.svc/wssecurity  <br/> /autodiscover/autodiscover.svc  <br/> |Auth Server  <br/> |WS-Security Authentication  <br/> |No  <br/> |
+|TCP 443 (HTTPS)  <br/> |EWS  <br/> |Mailbox migrations  <br/> |Exchange 2019 Mailbox  <br/> |Exchange 2016 Mailbox  <br/> Exchange 2013/2010 CAS  <br/> |/ews/mrsproxy.svc  <br/> |NTLM  <br/> |Basic  <br/> |Yes  <br/> |
+|TCP 443 (HTTPS)  <br/> |Autodiscover  <br/> EWS  <br/> |OAuth  <br/> |Exchange 2019 Mailbox  <br/> |Exchange 2016 Mailbox  <br/> Exchange 2013/2010 CAS  <br/> |/ews/exchange.asmx/wssecurity  <br/> /autodiscover/autodiscover.svc/wssecurity  <br/> /autodiscover/autodiscover.svc  <br/> |Auth Server  <br/> |WS-Security Authentication  <br/> |No  <br/> |
+|TCP 443 (HTTPS)  <br/> |N/A  <br/> |AD FS (included with Windows)  <br/> |Windows 2012 R2/2016 Server  <br/> |/adfs/\*  <br/> |Azure AD authentication system  <br/> |Varies per config.  <br/> |2-factor  <br/> |
+|TCP 443 (HTTPS)  <br/> |N/A  <br/> |Azure Active Directory Connect with AD FS  <br/> |Windows 2012 R2/2016 Server  <br/> |/adfs/\*  <br/> |Azure AD authentication system  <br/> |Varies per config.  <br/> |2-factor  <br/> |
    
 ## Recommended tools and services
 
