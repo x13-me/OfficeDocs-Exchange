@@ -678,48 +678,55 @@ The following table identifies the mailbox clients that are supported for use to
 <td><p>X</p></td>
 </tr>
 <tr class="odd">
+<td><p>Outlook 2019</p></td>
+<td><p>X4</p></td>
+<td><p>X4</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="even">
 <td><p>Outlook for Mac for Office 365</p></td>
 <td><p>X4</p></td>
 <td><p>X4</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>Windows Phone 7</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>Windows Phone 7.5</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>Windows Phone 8</p></td>
 <td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>Windows Phone 8.1</p></td>
 <td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>Windows Mobile 10</p></td>
 <td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>Entourage 2008 (EWS)</p></td>
 <td><p></p></td>
 <td><p>X3</p></td>
