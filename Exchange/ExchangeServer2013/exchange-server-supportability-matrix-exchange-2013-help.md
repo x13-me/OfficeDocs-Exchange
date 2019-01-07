@@ -642,6 +642,7 @@ The following table identifies the mailbox clients that are supported for use to
 <thead>
 <tr class="header">
 <th>Client</th>
+<th>Exchange 2019</th>
 <th>Exchange 2016</th>
 <th>Exchange 2013 SP1 and later</th>
 <th>Exchange 2010 SP3</th>
@@ -651,11 +652,13 @@ The following table identifies the mailbox clients that are supported for use to
 <tr class="odd">
 <td><p>Outlook 2007</p></td>
 <td><p></p></td>
+<td><p></p></td>
 <td><p>X1</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="even">
 <td><p>Outlook 2010</p></td>
+<td><p></p></td>
 <td><p>X4</p></td>
 <td><p>X2</p></td>
 <td><p>X</p></td>
@@ -663,11 +666,13 @@ The following table identifies the mailbox clients that are supported for use to
 <tr class="odd">
 <td><p>Outlook 2013</p></td>
 <td><p>X4</p></td>
+<td><p>X4</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="even">
 <td><p>Outlook 2016</p></td>
+<td><p>X4</p></td>
 <td><p>X4</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
@@ -675,11 +680,13 @@ The following table identifies the mailbox clients that are supported for use to
 <tr class="odd">
 <td><p>Outlook for Mac for Office 365</p></td>
 <td><p>X4</p></td>
+<td><p>X4</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="even">
 <td><p>Windows Phone 7</p></td>
+<td><p></p></td>
 <td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
@@ -687,29 +694,34 @@ The following table identifies the mailbox clients that are supported for use to
 <tr class="odd">
 <td><p>Windows Phone 7.5</p></td>
 <td><p></p></td>
+<td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="even">
 <td><p>Windows Phone 8</p></td>
+<td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="odd">
 <td><p>Windows Phone 8.1</p></td>
+<td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="even">
 <td><p>Windows Mobile 10</p></td>
+<td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="odd">
 <td><p>Entourage 2008 (EWS)</p></td>
+<td><p></p></td>
 <td><p>X3</p></td>
 <td><p>X3</p></td>
 <td><p>X3</p></td>
@@ -741,6 +753,7 @@ The following table identifies the version of Microsoft Exchange that can be use
 <thead>
 <tr class="header">
 <th>Tool</th>
+<th>Exchange 2019</th>
 <th>Exchange 2016</th>
 <th>Exchange 2013 SP1 and later</th>
 <th>Exchange 2010 SP3</th>
@@ -749,6 +762,7 @@ The following table identifies the version of Microsoft Exchange that can be use
 <tbody>
 <tr class="odd">
 <td><p>Inter-Organization Replication tool</p></td>
+<td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p>X</p></td>
@@ -786,6 +800,7 @@ The following table identifies the version of the Microsoft .NET Framework that
 <thead>
 <tr class="header">
 <th>.NET Framework</th>
+<th>Exchange 2019</th>
 <th>Exchange 2016 CU11</th>
 <th>Exchange 2016 CU10</th>
 <th>Exchange 2016 CU8-CU9</th>
@@ -806,10 +821,12 @@ The following table identifies the version of the Microsoft .NET Framework that
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
+<td><p> </p></td>
 <td><p>X1</p></td>
 </tr>
 <tr class="even">
 <td><p>.NET Framework 3.5 SP1</p></td>
+<td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
@@ -828,6 +845,7 @@ The following table identifies the version of the Microsoft .NET Framework that
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
+<td><p> </p></td>
 <td><p>X1,2</p></td>
 </tr>
 <tr class="even">
@@ -839,10 +857,12 @@ The following table identifies the version of the Microsoft .NET Framework that
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
+<td><p> </p></td>
 <td><p>X1,2</p></td>
 </tr>
 <tr class="odd">
 <td><p>.NET Framework 4.6.2</p></td>
+<td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p>X</p></td>
@@ -854,6 +874,7 @@ The following table identifies the version of the Microsoft .NET Framework that
 </tr>
 <tr class="even">
 <td><p>.NET Framework 4.7.1</p></td>
+<td><p> </p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
@@ -865,6 +886,7 @@ The following table identifies the version of the Microsoft .NET Framework that
 </tr>
 <tr class="even">
 <td><p>.NET Framework 4.7.2</p></td>
+<td><p>X</p></td>
 <td><p>X</p></td>
 <td><p></p></td>
 <td><p></p></td>
