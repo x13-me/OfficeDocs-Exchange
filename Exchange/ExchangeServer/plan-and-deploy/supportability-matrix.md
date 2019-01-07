@@ -58,37 +58,37 @@ The following tables identify the operating system platforms on which each versi
 > [!NOTE]  
 >  Client operating systems only support the Exchange management tools.
 
-|**Client operating system**|**Exchange 2019**|**Exchange 2016 CU3 and later**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
-|:-----|:-----|:-----|:-----|:-----|:-----|
-|Windows 10|X|X|X|||
-|Windows 8.1||X|X|X||
-|Windows 8||||X|X|
-|Windows 7 SP1||||X|X|
-|Windows Vista SP2|||||X|
+|**Client operating system**|**Exchange 2019**|**Exchange 2016 CU3 and later**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
+|:-----|:-----|:-----|:-----|:-----|
+|Windows 10|X|X|||
+|Windows 8.1||X|X||
+|Windows 8|||X|X|
+|Windows 7 SP1|||X|X|
+|Windows Vista SP2||||X|
 
 ## Supported Active Directory environments
 
 The following table identifies the Active Directory environments that Exchange can communicate with. Supported environments are identified by an X character. An Active Directory server refers to both writable global catalog servers and to writable domain controllers. Read-only global catalog servers and read-only domain controllers aren't supported.
 
-|**Operating system environment**|**Exchange 2019**|**Exchange 2016 CU3 and later**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3 RU22 or later**|**Exchange 2010 SP3 RU5 - RU21**|
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|Windows Server 2019 Active Directory servers|X|||||
-|Windows Server 2016 Active Directory servers|X|X|X|X|X||
-|Windows Server 2012 R2 Active Directory servers|X|X|X|X|X|X|
-|Windows Server 2012 Active Directory servers||X|X|X|X|X|
-|Windows Server 2008 R2 SP1 Active Directory servers||X|X|X|X|X|
-|Windows Server 2008 SP2 Active Directory servers|||X|X|X|X|
-|Windows Server 2003 SP2 Active Directory servers||||X|X|X|
+|**Operating system environment**|**Exchange 2019**|**Exchange 2016 CU12 and later**|**Exchange 2016 CU3 and later**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3 RU22 or later**|**Exchange 2010 SP3 RU5 - RU21**|
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|Windows Server 2019 Active Directory servers|X|||||||
+|Windows Server 2016 Active Directory servers|X|X|X|X|X|X||
+|Windows Server 2012 R2 Active Directory servers|X|X|X|X|X|X|X|
+|Windows Server 2012 Active Directory servers||X|X|X|X|X|X|
+|Windows Server 2008 R2 SP1 Active Directory servers||X|X|X|X|X|X|
+|Windows Server 2008 SP2 Active Directory servers|||X|X|X|X|X|
+|Windows Server 2003 SP2 Active Directory servers||||X|X|X|X|
 
-|**AD forest functional level**|**Exchange 2019**|**Exchange 2016 CU3 and later**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3 RU22 or later**|**Exchange 2010 SP3 RU5 - RU21**|
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|Windows Server 2019|X||||||
-|Windows Server 2016|X|X|X|X|X||
-|Windows Server 2012 R2|X|X|X|X|X|X|
-|Windows Server 2012||X|X|X|X|X|
-|Windows Server 2008 R2 SP1||X|X|X|X|X|
-|Windows Server 2008 SP2|||X|X|X|X|
-|Windows Server 2003 SP2||||X|X|X|
+|**AD forest functional level**|**Exchange 2019**|**Exchange 2016 CU12 and later**|**Exchange 2016 CU3 and later**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3 RU22 or later**|**Exchange 2010 SP3 RU5 - RU21**|
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|Windows Server 2019|X|X||||||
+|Windows Server 2016|X|X|X|X|X|X||
+|Windows Server 2012 R2|X|X|X|X|X|X|X|
+|Windows Server 2012||X|X|X|X|X|X|
+|Windows Server 2008 R2 SP1||X|X|X|X|X|X|
+|Windows Server 2008 SP2|||X|X|X|X|X|
+|Windows Server 2003 SP2||||X|X|X|X|
 
 ## Web browsers supported for use with the premium version of Outlook Web App or Outlook on the web
 
@@ -97,7 +97,7 @@ The following table identifies the Web browsers supported for use together with 
 |**Browser**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|:-----|
 |Microsoft Edge|X|X|N/A|N/A| 
-|Internet Explorer 11||X|X|X|
+|Internet Explorer 11|X|X|X|X|
 |Internet Explorer 10|||X|X|
 |Internet Explorer 9|||X|X|
 |Internet Explorer 8|||X|X|
@@ -124,7 +124,7 @@ The following table identifies the Web browsers supported for use together with 
 |**Browser**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|:-----|
 |Microsoft Edge|X|X|||
-|Internet Explorer 11||X|X|X|
+|Internet Explorer 11|X|X|X|X|
 |Internet Explorer 10|||X|X|
 |Internet Explorer 9|||X|X|
 |Internet Explorer 8|||X|X|
@@ -143,7 +143,7 @@ The following table identifies the Web browsers supported for the use of S/MIME 
 |**Browser**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|:-----|
 |Microsoft Edge|X|X|||
-|Internet Explorer 11||X|X|X|
+|Internet Explorer 11|X|X|X|X|
 |Internet Explorer 10|||X|X|
 |Internet Explorer 9|||X|X|
 |Internet Explorer 8||||X|
@@ -198,15 +198,15 @@ The following table identifies the version of the Microsoft .NET Framework that
 > [!NOTE]  
 > When upgrading Exchange from an unsupported CU to the current CU and no intermediate CUs are available, you should upgrade to the latest version of .NET that's supported by Exchange first and then immediately upgrade to the current CU. This method doesn't replace the need to keep your Exchange servers up to date and on the latest, supported, CU.<BR>Microsoft makes no claim that an upgrade failure will not occur using this method, which may result in the need to contact Microsoft Support Services.
 
-|**.NET Framework**|**Exchange 2019**|**Exchange 2016 CU8 or later**|**Exchange 2016 CU5 to CU7**|**Exchange 2013 CU19 or later**|**Exchange 2013 CU16 to CU18**|**Exchange 2010 SP3**|
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|.NET Framework 4.7.2|X||||||
-|.NET Framework 4.7.1||X||X|||
-|.NET Framework 4.6.2||X|X|X|X||
-|.NET Framework 4.5||||||X<sup>1,2</sup>|
-|.NET Framework 4.0||||||X<sup>1,2</sup>|
-|.NET Framework 3.5 SP1||||||X|
-|.NET Framework 3.5||||||X<sup>1</sup>|
+|**.NET Framework**|**Exchange 2019**|**Exchange 2016 CU11 or later**|**Exchange 2016 CU8 to CU12**|**Exchange 2016 CU4 to CU9**|**Exchange 2013 CU21 or later**|**Exchange 2013 CU19 to CU20**|**Exchange 2013 CU16 to CU18**|**Exchange 2010 SP3**|
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|.NET Framework 4.7.2|X|X|||X||||
+|.NET Framework 4.7.1|||X||X|X|||
+|.NET Framework 4.6.2||||X||X|X||
+|.NET Framework 4.5||||||X|X|X<sup>1,2</sup>|
+|.NET Framework 4.0||||||||X<sup>1,2</sup>|
+|.NET Framework 3.5 SP1||||||||X|
+|.NET Framework 3.5||||||||X<sup>1</sup>|
 
 <sup>1</sup>If you're using Windows Server 2012, the .NET Framework 3.5 must be installed before you can use Exchange 2010 SP3.
 
