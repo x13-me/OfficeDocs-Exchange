@@ -1,4 +1,4 @@
-﻿---
+﻿﻿---
 title: 'Exchange Server Supportability Matrix: Exchange 2013 Help'
 TOCTitle: Exchange Server Supportability Matrix
 ms:assetid: dbac2d40-da8b-469f-a265-1d1f948fe446
@@ -12,7 +12,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016, Exchange Server 2019_
+_**Applies to:** Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
 
 
 The Exchange Server Supportability Matrix provides a central source for Microsoft Exchange administrators to easily locate information about the level of support available for any configuration or required component for supported versions of Microsoft Exchange.
@@ -36,7 +36,6 @@ With Exchange 2013, we changed the way we deliver hotfixes and service packs. In
 <thead>
 <tr class="header">
 <th>Servicing release model</th>
-<th>Exchange 2019</th>
 <th>Exchange 2016</th>
 <th>Exchange 2013</th>
 <th>Exchange 2010</th>
@@ -47,19 +46,16 @@ With Exchange 2013, we changed the way we deliver hotfixes and service packs. In
 <td><p>Cumulative updates</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
-<td><p>X</p></td>
 <td><p> </p></td>
 </tr>
 <tr class="even">
 <td><p>Update rollups</p></td>
 <td><p> </p></td>
 <td><p> </p></td>
-<td><p> </p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="odd">
 <td><p>Security Hotfixes delivered separately</p></td>
-<td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p> </p></td>
@@ -98,7 +94,6 @@ The following table identifies the operating system platforms on which each vers
 <thead>
 <tr class="header">
 <th>Operating system platform</th>
-<th>Exchange 2019</th>
 <th>Exchange 2016 CU3 and later</th>
 <th>Exchange 2016 CU2 and earlier</th>
 <th>Exchange 2013 SP1 and later</th>
@@ -111,7 +106,6 @@ The following table identifies the operating system platforms on which each vers
 <td><p></p></td>
 <td><p> </p></td>
 <td><p> </p></td>
-<td><p> </p></td>
 <td><p>X1</p></td>
 </tr>
 <tr class="even">
@@ -119,12 +113,10 @@ The following table identifies the operating system platforms on which each vers
 <td><p></p></td>
 <td><p> </p></td>
 <td><p> </p></td>
-<td><p> </p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="odd">
 <td><p>Windows Server 2008 R2 SP1</p></td>
-<td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>X</p></td>
@@ -134,7 +126,6 @@ The following table identifies the operating system platforms on which each vers
 <td><p>Windows 7 SP1</p></td>
 <td><p></p></td>
 <td><p></p></td>
-<td><p></p></td>
 <td><p>X1</p></td>
 <td><p>X1</p></td>
 </tr>
@@ -142,13 +133,11 @@ The following table identifies the operating system platforms on which each vers
 <td><p>Windows 8</p></td>
 <td><p></p></td>
 <td><p></p></td>
-<td><p></p></td>
 <td><p>X1</p></td>
 <td><p>X1</p></td>
 </tr>
 <tr class="even">
 <td><p>Windows 8.1</p></td>
-<td><p></p></td>
 <td><p>X1</p></td>
 <td><p>X1</p></td>
 <td><p>X1</p></td>
@@ -158,13 +147,11 @@ The following table identifies the operating system platforms on which each vers
 <td><p>Windows 10</p></td>
 <td><p>X1</p></td>
 <td><p>X1</p></td>
-<td><p>X1</p></td>
 <td><p></p></td>
 <td><p> </p></td>
 </tr>
 <tr class="even">
 <td><p>Windows Server 2012</p></td>
-<td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
@@ -172,7 +159,6 @@ The following table identifies the operating system platforms on which each vers
 </tr>
 <tr class="odd">
 <td><p>Windows Server 2012 R2</p></td>
-<td><p> </p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
@@ -180,16 +166,7 @@ The following table identifies the operating system platforms on which each vers
 </tr>
 <tr class="even">
 <td><p>Windows Server 2016</p></td>
-<td><p></p></td>
 <td><p>X</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p> </p></td>
-</tr>
-<tr class="odd">
-<td><p>Windows Server 2019</p></td>
-<td><p>X</p></td>
-<td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p> </p></td>
@@ -208,7 +185,6 @@ The following table identifies the Active Directory environments with which each
 <table summary="table" responsive="true"> <tbody>
 <tr responsive="true">
 <th scope="col">Operating system environment</th>
-<th scope="col">Exchange 2019</th>
 <th scope="col">Exchange 2016 CU3 and later</th>
 <th scope="col">Exchange 2016 CU2 and earlier</th>
 <th scope="col">Exchange 2013 SP1 and later</th>
@@ -219,13 +195,11 @@ The following table identifies the Active Directory environments with which each
  <td><p>Windows Server 2003 SP2 Active Directory servers</p></td>
 <td> <p></p> </td>
 <td> <p></p> </td>
-<td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td> </tr> 
 <tr>
  <td> <p>Windows Server 2008 SP2 Active Directory servers</p> </td>
-<td> <p></p> </td>
 <td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
@@ -233,7 +207,6 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td> </tr> 
 <tr>
  <td> <p>Windows Server 2008 R2 SP1 Active Directory servers</p> </td>
-<td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
@@ -241,7 +214,6 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td> </tr> 
 <tr>
  <td> <p>Windows Server 2012 Active Directory servers</p> </td>
-<td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
@@ -253,7 +225,6 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
-<td> <p>X</p> </td>
 <td> <p>X</p> </td> </tr> 
 <tr>
  <td> <p>Windows Server 2016 Active Directory servers</p> </td>
@@ -261,14 +232,6 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
-<td> <p>X</p> </td>
-<td> <p></p> </td> </tr>
- <td> <p>Windows Server 2019 Active Directory servers</p> </td>
-<td> <p>X</p> </td>
-<td> <p></p> </td>
-<td> <p></p> </td>
-<td> <p></p> </td>
-<td> <p></p> </td>
 <td> <p></p> </td> </tr> </tbody></table>
 
 
@@ -276,7 +239,6 @@ The following table identifies the Active Directory environments with which each
 <tbody>
 <tr>
 <th>Forest functional level</th>
-<th>Exchange 2019</th>
 <th>Exchange 2016 CU3 and later</th>
 <th>Exchange 2016 CU2 and earlier</th>
 <th>Exchange 2013 SP1 and later</th>
@@ -286,13 +248,11 @@ The following table identifies the Active Directory environments with which each
 <tr> <td> <p>Windows Server 2003 forest functional level</p> </td>
 <td> <p></p> </td>
 <td> <p></p> </td>
-<td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td> 
 </tr> 
 <tr> <td> <p>Windows Server 2008 forest functional level</p> </td>
-<td> <p></p> </td>
 <td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
@@ -300,7 +260,6 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td> 
 </tr> 
 <tr> <td> <p>Windows Server 2008 R2 SP1 forest functional level</p> </td>
-<td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
@@ -308,7 +267,6 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td> 
 </tr> 
 <tr> <td> <p>Windows Server 2012 forest functional level </p> </td>
-<td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
@@ -320,7 +278,6 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
-<td> <p>X</p> </td>
 <td> <p>X</p> </td> 
 </tr> 
 <tr> <td> <p>Windows Server 2016 forest functional level </p> </td>
@@ -328,15 +285,6 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
-<td> <p>X</p> </td>
-<td> <p></p> </td> 
-</tr>
-<tr> <td> <p>Windows Server 2019 </p> </td>
-<td> <p>X</p> </td>
-<td> <p></p> </td>
-<td> <p></p> </td>
-<td> <p></p> </td>
-<td> <p></p> </td>
 <td> <p></p> </td> 
 </tr>
 </tbody></table>
@@ -642,7 +590,6 @@ The following table identifies the mailbox clients that are supported for use to
 <thead>
 <tr class="header">
 <th>Client</th>
-<th>Exchange 2019</th>
 <th>Exchange 2016</th>
 <th>Exchange 2013 SP1 and later</th>
 <th>Exchange 2010 SP3</th>
@@ -652,13 +599,11 @@ The following table identifies the mailbox clients that are supported for use to
 <tr class="odd">
 <td><p>Outlook 2007</p></td>
 <td><p></p></td>
-<td><p></p></td>
 <td><p>X1</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="even">
 <td><p>Outlook 2010</p></td>
-<td><p></p></td>
 <td><p>X4</p></td>
 <td><p>X2</p></td>
 <td><p>X</p></td>
@@ -666,69 +611,53 @@ The following table identifies the mailbox clients that are supported for use to
 <tr class="odd">
 <td><p>Outlook 2013</p></td>
 <td><p>X4</p></td>
-<td><p>X4</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="even">
 <td><p>Outlook 2016</p></td>
 <td><p>X4</p></td>
-<td><p>X4</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="odd">
-<td><p>Outlook 2019</p></td>
-<td><p>X4</p></td>
-<td><p>X4</p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
 <td><p>Outlook for Mac for Office 365</p></td>
 <td><p>X4</p></td>
-<td><p>X4</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>Windows Phone 7</p></td>
 <td><p></p></td>
-<td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>Windows Phone 7.5</p></td>
 <td><p></p></td>
-<td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>Windows Phone 8</p></td>
-<td><p></p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-</tr>
-<tr class="even">
-<td><p>Windows Phone 8.1</p></td>
-<td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="odd">
-<td><p>Windows Mobile 10</p></td>
-<td><p></p></td>
+<td><p>Windows Phone 8.1</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="even">
+<td><p>Windows Mobile 10</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+</tr>
+<tr class="odd">
 <td><p>Entourage 2008 (EWS)</p></td>
-<td><p></p></td>
 <td><p>X3</p></td>
 <td><p>X3</p></td>
 <td><p>X3</p></td>
@@ -760,7 +689,6 @@ The following table identifies the version of Microsoft Exchange that can be use
 <thead>
 <tr class="header">
 <th>Tool</th>
-<th>Exchange 2019</th>
 <th>Exchange 2016</th>
 <th>Exchange 2013 SP1 and later</th>
 <th>Exchange 2010 SP3</th>
@@ -769,7 +697,6 @@ The following table identifies the version of Microsoft Exchange that can be use
 <tbody>
 <tr class="odd">
 <td><p>Inter-Organization Replication tool</p></td>
-<td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p>X</p></td>
@@ -807,7 +734,6 @@ The following table identifies the version of the Microsoft .NET Framework that
 <thead>
 <tr class="header">
 <th>.NET Framework</th>
-<th>Exchange 2019</th>
 <th>Exchange 2016 CU11</th>
 <th>Exchange 2016 CU10</th>
 <th>Exchange 2016 CU8-CU9</th>
@@ -828,12 +754,10 @@ The following table identifies the version of the Microsoft .NET Framework that
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
-<td><p> </p></td>
 <td><p>X1</p></td>
 </tr>
 <tr class="even">
 <td><p>.NET Framework 3.5 SP1</p></td>
-<td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
@@ -852,7 +776,6 @@ The following table identifies the version of the Microsoft .NET Framework that
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
-<td><p> </p></td>
 <td><p>X1,2</p></td>
 </tr>
 <tr class="even">
@@ -864,12 +787,10 @@ The following table identifies the version of the Microsoft .NET Framework that
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
-<td><p> </p></td>
 <td><p>X1,2</p></td>
 </tr>
 <tr class="odd">
 <td><p>.NET Framework 4.6.2</p></td>
-<td><p> </p></td>
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p>X</p></td>
@@ -881,7 +802,6 @@ The following table identifies the version of the Microsoft .NET Framework that
 </tr>
 <tr class="even">
 <td><p>.NET Framework 4.7.1</p></td>
-<td><p> </p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
@@ -893,7 +813,6 @@ The following table identifies the version of the Microsoft .NET Framework that
 </tr>
 <tr class="even">
 <td><p>.NET Framework 4.7.2</p></td>
-<td><p>X</p></td>
 <td><p>X</p></td>
 <td><p></p></td>
 <td><p></p></td>
