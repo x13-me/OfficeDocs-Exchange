@@ -208,6 +208,7 @@ The following table identifies the Active Directory environments with which each
 <table summary="table" responsive="true"> <tbody>
 <tr responsive="true">
 <th scope="col">Operating system environment</th>
+<th scope="col">Exchange 2019</th>
 <th scope="col">Exchange 2016 CU3 and later</th>
 <th scope="col">Exchange 2016 CU2 and earlier</th>
 <th scope="col">Exchange 2013 SP1 and later</th>
@@ -218,11 +219,13 @@ The following table identifies the Active Directory environments with which each
  <td><p>Windows Server 2003 SP2 Active Directory servers</p></td>
 <td> <p></p> </td>
 <td> <p></p> </td>
+<td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td> </tr> 
 <tr>
  <td> <p>Windows Server 2008 SP2 Active Directory servers</p> </td>
+<td> <p></p> </td>
 <td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
@@ -230,6 +233,7 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td> </tr> 
 <tr>
  <td> <p>Windows Server 2008 R2 SP1 Active Directory servers</p> </td>
+<td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
@@ -237,6 +241,7 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td> </tr> 
 <tr>
  <td> <p>Windows Server 2012 Active Directory servers</p> </td>
+<td> <p></p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
@@ -248,6 +253,7 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
+<td> <p>X</p> </td>
 <td> <p>X</p> </td> </tr> 
 <tr>
  <td> <p>Windows Server 2016 Active Directory servers</p> </td>
@@ -255,6 +261,14 @@ The following table identifies the Active Directory environments with which each
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
 <td> <p>X</p> </td>
+<td> <p>X</p> </td>
+<td> <p></p> </td> </tr>
+ <td> <p>Windows Server 2019 Active Directory servers</p> </td>
+<td> <p>X</p> </td>
+<td> <p></p> </td>
+<td> <p></p> </td>
+<td> <p></p> </td>
+<td> <p></p> </td>
 <td> <p></p> </td> </tr> </tbody></table>
 
 
