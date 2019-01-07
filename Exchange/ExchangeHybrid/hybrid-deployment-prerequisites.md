@@ -31,7 +31,7 @@ The following prerequisites are required for configuring a hybrid deployment:
     The version of Exchange you have installed in your on-premises organization determines the hybrid deployment version you can install. You should typically configure the newest hybrid deployment version that's supported in your organization. For example, if your on-premises organization is running Exchange 2007, you need to configure an Exchange 2013-based hybrid deployment. For a complete listing of Exchange Server and Office 365 for enterprises hybrid deployment compatibility, see following table.
     
 |**On-premises environment**|**Exchange 2019-based hybrid deployment**|**Exchange 2016-based hybrid deployment**|**Exchange 2013-based hybrid deployment**|**Exchange 2010-based hybrid deployment**|
-|:-----|:-----|:-----|:-----|
+|:-----|:-----|:-----|:-----|:-----|
 |Exchange 2019|Supported|Not supported|Not supported|Not supported|
 |Exchange 2016|Supported|Supported|Not supported|Not supported|
 |Exchange 2013|Supported|Supported|Supported|Not supported|
