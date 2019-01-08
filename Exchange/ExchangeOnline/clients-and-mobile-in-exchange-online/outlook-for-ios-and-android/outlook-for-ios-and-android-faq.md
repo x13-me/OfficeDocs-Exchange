@@ -141,7 +141,7 @@ The following questions are about the migration from the REST API data sync prot
 
 ### Q: Is there a minimum version of Outlook for iOS and Android required to use the native Microsoft sync technology?
 
-We are still finalizing details around the supported minimum version; please check back later.
+For Outlook for iOS, users should install 3.5.0 or later. for Outlook for Android, users should install 3.0.0 or later. As always, we recommend users keep the Outlook app up to date.
 
 ### Q: What will my users experience when our tenant is migrated to the native Microsoft sync technology?
 
