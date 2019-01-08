@@ -1,5 +1,5 @@
 ﻿---
-title: "Exchange Server Supportability Matrix"
+title: "Exchange Server supportability matrix"
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -12,15 +12,15 @@ ms:assetid: dbac2d40-da8b-469f-a265-1d1f948fe446
 description: "Learn about the support life cycle for Exchange"
 ---
 
-# Exchange Server Supportability Matrix
+# Exchange Server supportability matrix
 
-The Exchange Server Supportability Matrix provides a central source for Microsoft Exchange administrators to easily locate information about the level of support available for any configuration or required component for supported versions of Microsoft Exchange.
+The Exchange Server supportability matrix provides a central source for Exchange administrators to easily locate information about the level of support available for any configuration or required component for supported versions of Microsoft Exchange Server.
 
 ## Release model
 
 The following table identifies the release model for each supported version of Exchange. The release model is identified by an X character.
 
-In Exchange Server 2010 and earlier, each update rollup package (RU) is cumulative with regard to the whole product. When you apply an RU to Exchange Server 2010, you apply all the fixes in that update rollup package, and all the fixes in each earlier update rollup package. When an update or a hotfix is created for Exchang 2010 or earlier, one or more of the binary files included in the update or included in the hotfix are cumulative. They are cumulative in regard to the contents of the files, not in regard to the whole Exchange product. For more information, see [Exchange 2010 Servicing](https://go.microsoft.com/fwlink/p/?linkid=298627).
+In Exchange Server 2010 and earlier, each update rollup package (RU) is cumulative with regard to the whole product. When you apply an RU to Exchange Server 2010, you apply all the fixes in that update rollup package, and all the fixes in each earlier update rollup package. When an update or a hotfix is created for Exchange 2010 or earlier, one or more of the binary files included in the update or included in the hotfix are cumulative. They are cumulative in regard to the contents of the files, not in regard to the whole Exchange product. For more information, see [Exchange 2010 Servicing](https://go.microsoft.com/fwlink/p/?linkid=298627).
 
 In Exchange Server 2013 or later, we changed the way we deliver hotfixes and service packs by using a scheduled delivery model. In this model, cumulative updates (CUs) are released quarterly (every three months). A CU is released as a full, self-contained refresh of that version of Exchange, similar to a product upgrade or a service pack release. For more information, see [Updates for Exchange Server](../new-features/updates.md).
 

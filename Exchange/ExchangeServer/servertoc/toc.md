@@ -54,7 +54,7 @@
 #### [Delegate installations](../plan-and-deploy/deploy-new-installations/delegate-installations.md)
 #### [Create Azure test environments](../plan-and-deploy/deploy-new-installations/create-azure-test-environments.md)
 ### [Install Cumulative Updates](../plan-and-deploy/install-cumulative-updates.md)
-### [Exchange Server Supportability Matrix](../plan-and-deploy/supportability-matrix.md)
+### [Exchange Server supportability matrix](../plan-and-deploy/supportability-matrix.md)
 ### [Virtualization](../plan-and-deploy/virtualization.md)
 ### [Integration with SharePoint and Skype](../plan-and-deploy/integration-with-sharepoint-and-skype/integration-with-sharepoint-and-skype.md)
 #### [Configure OAuth](../plan-and-deploy/integration-with-sharepoint-and-skype/configure-oauth.md)
