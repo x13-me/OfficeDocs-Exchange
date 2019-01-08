@@ -53,8 +53,8 @@
       },
       {
         "source_path": "Exchange/ExchangeServer2013/exchange-server-supportability-matrix-exchange-2013-help.md",
-        "redirect_url": "/Exchange/ExchangeServer/plan-and-deploy/supportability-matrix.md",
-        "redirect_document_id": false
+        "redirect_url": "Exchange/ExchangeServer/plan-and-deploy/supportability-matrix.md",
+        "redirect_document_id": true
       }
     ]
 }
