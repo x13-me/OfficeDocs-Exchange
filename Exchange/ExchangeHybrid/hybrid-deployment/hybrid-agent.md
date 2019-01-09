@@ -21,7 +21,7 @@ making it appropriate for installation in a DMZ. However, limited does not mean
 requirements are no different. These are summed up in the “Open Your Ports”
 section in https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-enable.
 
-### Stand Alone Hybrid Configuration Wizard
+### Stand Alone Hybrid Configuration Wizard (SHCW)
 
 The Stand Alone Hybrid Configuration Wizard is, as its name indicates, a wizard
 which guides the process of hybrid configuration. It is capable of downloading
@@ -86,7 +86,7 @@ designated Hybrid Agent server is also supported in the DMZ.
 ### Requirements
 
 1. The machine hosting the Hybrid Agent install must be able to HTTPS to the
-    internet, HTTPS and RPS to the selected CAS server for hybrid configuration.
+    internet, HTTPS and Remote PowerShell (RPS) to the selected CAS server for hybrid configuration.
 2. The machine hosting the Hybrid Agent should be Windows Server 2012 R2 or
     2016, with .NET Framework 4.6.2 installed.
 3. The machine where the Hybrid Agent is installed must have either Edge or
@@ -114,7 +114,7 @@ designated Hybrid Agent server is also supported in the DMZ.
 The private preview only supports a single Hybrid Agent install for the Exchange
 Organization. We are working to support multiple Agent installs for redundancy,
 but this is not available yet. If the Hybrid Agent’s server goes offline, free
-busy look ups from your tenant to on prem and mailbox migrations to/from your
+busy look ups from your tenant to on-premises and mailbox migrations to/from your
 tenant will no longer work. If the server hosting the agent is permanently
 offline, was rebuilt, or the agent was uninstalled, re-running the Hybrid
 Configuration Wizard to reinstall the Hybrid Agent directly on the new server is
@@ -122,13 +122,13 @@ the recovery method.
 
 There are two Exchange related flows supported in private preview:
 
-1. Free busy requests from cloud users to on prem
+1. Free busy requests from cloud users to on-premises
 2. Mailbox migrations to/from cloud
 
-These flows are configured by the HCW in the Organization Relationship and the
+These flows are configured by the Hybrid Configuration Wizard (HCW) in the Organization Relationship and the
 Intra Organization Connector object in the cloud, and the Migration Endpoint.
 
-Free busy requests from on premises users to cloud users do not traverse the
+Free busy requests from on-premises users to cloud users do not traverse the
 Hybrid Agent. These requests still require your Exchange servers have outbound
 connectivity to Office 365 end points.
 https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
@@ -136,18 +136,18 @@ describes the required (and hybrid) ports and IPs outbound from on-prem to the
 service.
 
 SMTP does not traverse the Hybrid Agent and will still require a public
-certificate for mail flow between Office 365 and on premises.
+certificate for mail flow between Office 365 and on-premises.
 
 MailTips, Message Tracking and Multi-mailbox search do not traverse the Hybrid
 Agent. These Hybrid features would require the classic connectivity model where
-EWS and Autodiscover are published on premises and externally available to
+EWS and Autodiscover are published on-premises and externally available to
 office 365.
 
 ## Running Setup
 
-The Hybrid Configuration Wizard (HCW) is the application responsible for both
+The HCW is the application responsible for both
 installing and configuring the Hybrid Agent and setting the required
-configuration both on premise and in the tenant to enable our traditional hybrid
+configuration both on-premise and in the tenant to enable our traditional hybrid
 feature set (free busy, migrations, mail routing, etc.).
 
 You must run the HCW from the machine where you want the agent installed. After
@@ -207,7 +207,7 @@ switch by executing the HCW application from the following URL:
         for your MS Online Global Admin credentials again)
     3. Registration of the agent to Azure, including creation of the URL used
         for proxying requests
-8. Testing migration viability from your tenant to on prem via the agent
+8. Testing migration viability from your tenant to on-premises via the agent
 
     > [!NOTE]
     > The Hybrid Agent installation process could take up to 10 minutes to complete all tasks.
@@ -219,8 +219,8 @@ switch by executing the HCW application from the following URL:
     TargetSharingEPR value on the Organization Relationship and/or the Intra
     Organization Connector. Both the new migration endpoint value and the
     TargetSharingEPR value are set on the tenant or cloud side only as we
-    use this new path (URL) to send requests from cloud to on prem for free
-    busy and migrations. On prem free busy requests for cloud users still
+    use this new path (URL) to send requests from cloud to on-premises for free
+    busy and migrations. On-premises free busy requests for cloud users still
     reach outbound to the internet. You can view the specific values
     configured for each of these by running Get-MigrationEndpoint and
     Get-OrganizationRelationship from the tenant RPS session. E.g.:
@@ -278,13 +278,13 @@ Open an RPS session to your tenant and run the following test cmdlet:
 Test-MigrationServerAvailability -ExchangeRemoteMove: $true -RemoteServer ‘<your customguid>.resource.mailboxmigration.his.msappproxy.net' -Credentials (Get-Credential)
 ```
 
-Enter on prem credential in the pop up. After the test returns the success
+Enter on-premises credential in the pop up. After the test returns the success
 result, switch back to your Performance Monitor view and you can see the number
 of requests will have incremented up.
 
-Performing a test mailbox move from on prem to the cloud is also an option.
+Performing a test mailbox move from on-premises to the cloud is also an option.
 
 ### Free Busy
 
 The same validation can be performed by logging into a cloud mailbox and
-requesting free busy via a test meeting request for a mailbox located on prem.
+requesting free busy via a test meeting request for a mailbox located on-premises.
