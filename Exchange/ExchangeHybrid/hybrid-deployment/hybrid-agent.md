@@ -88,7 +88,7 @@ designated Hybrid Agent server is also supported in the DMZ.
 1. The machine hosting the Hybrid Agent install must be able to HTTPS to the
     internet, HTTPS and Remote PowerShell (RPS) to the selected CAS server for hybrid configuration.
 2. The machine hosting the Hybrid Agent should be Windows Server 2012 R2 or
-    2016, with .Net 4.6.2 installed
+    2016, with .NET Framework 4.6.2 installed.
 3. The machine where the Hybrid Agent is installed must have either Edge or
     Internet Explorer installed.
 4. The machine where the Hybrid Agent is installed must be able to communicate
@@ -163,11 +163,14 @@ server.
     migrations to/from your tenant, please verify or enable MRS Proxy on the EWS
     virtual directory, e.g.:
 
-    ```Set-WebServicesVirtualDirectory -Identity "EWS (Default Web Site)"-MRSProxyEnabled \$true```
+    ```PowerShell
+    Set-WebServicesVirtualDirectory -Identity "EWS (Default Web Site)" -MRSProxyEnabled $true
+    ```
+    
 2. Go to Programs and Features and verify a previous version of the Microsoft
     Office 365 Hybrid Configuration Wizard is not already installed. If it is,
     uninstall it.
-3. .Net Framework version 4.6.2 is required on the machine where the HCW is
+3. .NET Framework version 4.6.2 is required on the machine where the HCW is
     being run. If this version is not already installed, HCW will prompt you to
     install/upgrade.
 
@@ -245,7 +248,7 @@ locations on the server where it is installed. E.g.:
 
 ![](../media/183c42b7f780c0f11399ad84d5b794ca.png)
 
-`HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft Hybrid Service:`
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Hybrid Service:`
 
 ![](../media/3d0ea73be12c78a759c3e6947dbfcea6.png)
 
