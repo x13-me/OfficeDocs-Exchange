@@ -163,7 +163,7 @@ server.
     migrations to/from your tenant, please verify or enable MRS Proxy on the EWS
     virtual directory, e.g.:
 
-    ```Set-WebServicesVirtualDirectory -Identity "EWS (Default Web Site)"-MRSProxyEnabled \$true```
+    ```Set-WebServicesVirtualDirectory -Identity "EWS (Default Web Site)" -MRSProxyEnabled $true```
 2. Go to Programs and Features and verify a previous version of the Microsoft
     Office 365 Hybrid Configuration Wizard is not already installed. If it is,
     uninstall it.
@@ -245,7 +245,7 @@ locations on the server where it is installed. E.g.:
 
 ![](../media/183c42b7f780c0f11399ad84d5b794ca.png)
 
-`HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft Hybrid Service:`
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Hybrid Service:`
 
 ![](../media/3d0ea73be12c78a759c3e6947dbfcea6.png)
 
