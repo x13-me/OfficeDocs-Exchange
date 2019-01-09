@@ -122,8 +122,8 @@ If you receive an error while running the Hybrid Configuration wizard, you can f
   
   ```
 
-    You should see the following entry listed for your Exchange servers:  `{[::]:25, 0.0.0.0:25}`
+   You should see the following entry listed for your Exchange servers:  `{[::]:25, 0.0.0.0:25}`
     
-    If this binding isn't listed, you need to add it to your Receive connector using the  _Bindings_ parameter of the **Set-ReceiveConnector** cmdlet. For details, see [Set-ReceiveConnector](http://technet.microsoft.com/library/eb7f8960-e772-4312-9d3f-47dd27d9545c.aspx).
+   If this binding isn't listed, you need to add it to your Receive connector using the  _Bindings_ parameter of the **Set-ReceiveConnector** cmdlet. For details, see [Set-ReceiveConnector](http://technet.microsoft.com/library/eb7f8960-e772-4312-9d3f-47dd27d9545c.aspx).
     
 
