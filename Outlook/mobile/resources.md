@@ -22,4 +22,4 @@ Included in this pack:
 
 - Customizable onboarding email templates with links to demo video and installation instructions
 - Posters and flyers to drive buzz and excitement
-- Customizable tips and tricks email template with links to resources to start working efficiently
+- Tips and tricks email that shows you how Outlook mobile can help you stay on top of your day
