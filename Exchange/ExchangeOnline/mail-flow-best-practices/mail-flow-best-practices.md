@@ -57,7 +57,7 @@ Priority: 0
 TTL: 1 hour
 ```
 
- **SPF (sender policy framework) records** are a specially formatted TXT record in DNS. SPF records make sure that only the organization that owns a domain is actually sending email from that domain. SPF is basically a security measure to make sure someone doesn't impersonate another organization. (This impersonation is often called spoofing.) As a domain owner, you can use an SPF record to publish a list of IP addresses or subnets that are authorized to send email on your organization's behalf. This can be helpful if you want to send email from multiple servers or services with different IP addresses. The SPF record for an organization's domain that uses Office 365 to send all their mail should look like the following example:
+ **SPF (sender policy framework) records** are a specially formatted TXT record in DNS. SPF records make sure that only the organization that owns a domain is actually sending email from that domain. SPF is a security measure that helps makes sure someone doesn't impersonate another organization. (This impersonation is often called spoofing.) As a domain owner, you can use SPF to publish a list of IP addresses or subnets that are authorized to send email on your organization's behalf. This can be helpful if you want to send email from multiple servers or services with different IP addresses. The SPF record for an organization's domain that uses Office 365 to send all their mail should look like the following example:
 
 ```
 v=spf1 include:spf.protection.outlook.com -all
@@ -74,7 +74,7 @@ For the best mail flow experience-especially for spam filtering—we recommend p
 
 With that said, there are legitimate business scenarios that require your domain's MX record to point to somewhere other than Office 365. For example, email destined for your organization might need to initially arrive at another destination (such as a third-party archiving solution), then route through Office 365, and then be delivered to mailboxes on your organization's mail server. This setup might provide the best solution to meet your business requirements.
 
-Whatever your needs, this guide will help you understand how your MX records, SPF records, and, potentially, connectors need to be set up.
+Whatever your needs, this guide will help you understand how your MX records, SPF, and, potentially, connectors need to be set up.
 
 ## For more information
 
