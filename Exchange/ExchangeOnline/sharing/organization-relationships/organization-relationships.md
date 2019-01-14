@@ -27,7 +27,9 @@ There are three of levels of access that you can specify:
 - Access to free/busy, including time, subject, and location
 
 > [!NOTE]
-> If users don't want to share their free/busy information with others, they can change the Default permission entry in Outlook. To do this, users go to the **Calendar Properties** \> **Permissions** tab, select the **Default** permission, and select **None** from the **Permission Level** list. Their free/busy information won't be seen by internal or external users, even if an organization relationship exists. The permissions set by the user will apply.
+> If users don't want to share their free/busy information with others, they can change their permissions entry in Outlook. To do this, users go to the **Calendar Properties** \> **Permissions** tab, select one or more users/groups, and select any of the **Permissions** options.
+>
+> To completely hide their calendar, they can remove the user/group from the list of those with which the calendar is shared. Their free/busy information won't be seen by internal or external users, even if an organization relationship exists. The permissions set by the user will apply.
 
 The following topics will help you configure and manage organization relationships:
 
