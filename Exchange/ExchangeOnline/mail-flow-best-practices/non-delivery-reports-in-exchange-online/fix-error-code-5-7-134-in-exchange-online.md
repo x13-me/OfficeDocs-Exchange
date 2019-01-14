@@ -1,0 +1,91 @@
+---
+title: "Fix email delivery issues for error code 5.7.134 in Exchange Online"
+ms.author: chrisda
+author: chrisda
+manager: serdars
+ms.date: 
+ms.audience: Admin
+ms.topic: troubleshooting
+ms.service: o365-administration
+localization_priority: Normal
+ms.custom: MiniMaven
+search.appverid:
+- BCS160
+- MOE150
+ms.assetid: 033fcaaf-7916-47ae-b2cd-2a63456bb812
+description: "Learn how to fix email issues for error code 5.7.134 in Exchange Online (the mailbox recipient is configured to reject messages from external or unauthenticated senders)."
+---
+
+# Fix email delivery issues for error code 5.7.134 in Exchange Online
+
+It's frustrating when you get an error after sending an email message. This topic describes what you can do if you see error code 550 5.7.134 in a non-delivery report also known as an NDR, bounce message, delivery status notification, or DSN). You'll see this automated notification when the recipient is a mailbox that's configured to reject messages from external senders (senders from outside the organization).
+
+|||||
+|:-----|:-----|:-----|:-----|
+|![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this?](#im-an-email-admin-how-do-i-fix-this)|
+
+### I got this bounce message. How do fix it?
+
+Only an email admin in the recipient's organization can fix this issue. Contact the email admin and refer them to this information so they can try to resolve the issue for you.
+
+## I'm an email admin. How do I fix this?
+
+The two methods that will allow an external sender to send messages to the mailbox in your organization are described in the following sections.
+
+To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+
+### Method 1: Allow all internal and external senders to send messages to this mailbox
+
+1. In the EAC, go to **Recipients** \> **Mailboxes** > select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+
+   ![Find mailboxes in Exchange admin center to fix DSN 5.7.134](../../media/4fa20a12-da40-477e-9351-ce2f45de0b7a.png)
+
+2. In the mailbox properties dialog box that opens, go to **Mailbox features** \> **Message Delivery Restrictions** \> and then click **View details**.
+
+3. In the **Message delivery restrictions** dialog box that opens, clear the check box for **Require that all senders are authenticated** in the **Accept messages from** section.
+
+   ![Solve DSN 5.7.134 with five steps to set message delivery restrictions](../../media/39da5ae3-438e-4188-93e1-42a2d57151e2.png)
+
+4. Click **OK**, and then click **Save**.
+
+### Method 2: Use the mailbox's allowed senders list
+
+Instead of allowing all external senders to send messages to this mailbox, you can use the mailbox's allowed senders list to selectively allow messages from all internal senders and the specified external senders.
+
+**Notes**: 
+
+- To add an external sender to a mailbox's allowed senders list, you must first create a [mail contact](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-contacts) or a [mail user](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users) to represent the external sender in your organization.
+
+- To add everyone in your organization to a mailbox's allowed sender's list, you can create a [distribution group](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups) or a [dynamic distribution group](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) that contains everyone in your organization. After you create this group, you can add it to the mailbox's allowed senders list.
+
+- The mailbox's allowed senders list is completely different from the organization's allowed senders list for anti-spam that you manage in the EAC at **Protection** \> **Spam filter**.
+
+To configure the mailbox's allowed senders list, open the EAC do the following steps:
+
+1. In the EAC, go to **Recipients** \> **Mailboxes** > select the mailbox from the list, and then click **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+
+   ![Find mailboxes in Exchange Admin Center to fix DSN 5.7.134](../../media/4fa20a12-da40-477e-9351-ce2f45de0b7a.png)
+
+2. In the mailbox properties dialog box that opens, go to **Mailbox features** \> **Message Delivery Restrictions** \> and then click **View details**.
+
+3. In the **Message delivery restrictions** dialog box that opens, configure the following settings in the **Accept messages from** section:
+
+   - Clear the check box for **Require that all senders are authenticated**.
+
+   - Select **Only senders in the following list**, and then click **Add** ![Add icon](../../media/8ee52980-254b-440b-99a2-18d068de62d3.gif). In the **Select Members** dialog box that opens, select and add the external senders and the all internal users group. When you're finished, click **OK**.
+
+     ![Add an allowed sender in the Admin center to help solve DSN 5.7.136](../../media/7306dda2-69dc-4d47-9d40-0fffaea881d6.png)
+
+4. Click **OK**, and then click **Save**.
+
+## Still need help with error code 550 5.7.134?
+
+[![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+
+[![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
+
+## See also
+
+[Email non-delivery reports in Exchange Online](non-delivery-reports-in-exchange-online.md)
