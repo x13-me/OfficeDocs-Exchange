@@ -23,7 +23,7 @@ Welcome to Microsoft Exchange Server 2019! This topic contains important informa
 
 **Known issues in Exchange Server 2019**
 
-When you attempt to uninstall Exchange Server from Windows 2019 Server Core using the Exchange Setup Wizard, the operation will fail. The wizard attempts to launch the Windows Control Panel to uninstall Exchange, but the Control Panel doesn't exist in Windows Server Core. To uninstall Exchange from Windows Server Core, run the following Setup command from the command line:
+When you attempt to uninstall Exchange Server from Windows 2019 Server Core using the Exchange Setup Wizard, the operation will fail. The wizard attempts to launch the Windows Control Panel to uninstall Exchange, but the Control Panel does not exist in Windows Server Core. To uninstall Exchange from Windows Server Core, run the following Setup command from the command line:
 
     ```
     Setup.exe /IAcceptExchangeServerLicenseTerms /mode:Uninstall
