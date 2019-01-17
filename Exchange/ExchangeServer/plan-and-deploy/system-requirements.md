@@ -64,7 +64,7 @@ For information about deploying Exchange in a virtualized environment, see [Exch
 
  |**Component**|**Requirement**|**Notes**|
 |:-----|:-----|:-----|
-|Processor|Either of the following types of 64-bit processors: <br/>• Intel processor that supports Intel 64 architecture (formerly known as Intel EM64T). <br/>• AMD processor that supports the AMD64 platform. <br/> **Note**: Intel Itanium IA64 processors aren't supported. <br/> **Note**: Recommended Supported Processor Sockets is up to 2 on phyiscal machines. |See the [Operating system](#operating-system) section later in this topic for supported operating systems.|
+|Processor|Either of the following types of 64-bit processors: <br/>• Intel processor that supports Intel 64 architecture (formerly known as Intel EM64T). <br/>• AMD processor that supports the AMD64 platform. <br/> **Note**: Intel Itanium IA64 processors aren't supported. <br/> **Note**: Recommended Supported Processor Sockets is up to 2 on physical machines. |See the [Operating system](#operating-system) section later in this topic for supported operating systems.|
 |Memory|Varies depending on Exchange roles that are installed: <br/>• **Mailbox**: 128GB minimum recommended <br/>• **Edge Transport**: 64GB minimum recommended.  <br/> Note that Exchange 2019 has large memory support (up to 256 GB).||
 |Paging file size| Set the page file to a size equal to 25% of installed memory.|None|
 |Disk space|• At least 30GB of free space on the drive where you're installing Exchange. <br/>• At least 200MB of free space on the system drive. <br/>• At least 500MB on the drive containing the message queue database.||
