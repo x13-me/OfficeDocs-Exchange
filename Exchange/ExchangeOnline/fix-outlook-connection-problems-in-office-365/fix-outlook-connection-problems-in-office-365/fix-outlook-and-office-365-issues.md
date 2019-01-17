@@ -5,6 +5,7 @@ author: dianef77
 manager: mnirkhe
 ms.audience: Admin
 ms.topic: troubleshooting
+ms.date:
 f1_keywords:
 - 'O365P_SARALearn'
 - 'O365M_SARALearn'
@@ -27,9 +28,7 @@ description: "Learn to fix issues relating to outlook, mobile devices, office se
 
 # Fix Outlook and Office 365 issues with Support and Recovery Assistant for Office 365
 
- *Last updated 1 August, 2017*
-
-The Support and Recovery Assistant app can help you identify and fix several issues for the following apps and services.
+The Support and Recovery Assistant app can help you identify and fix several issues for the following apps and services:
 
 - Office setup
 
@@ -47,13 +46,13 @@ The Support and Recovery Assistant app can help you identify and fix several iss
 
 - OneDrive for Business
 
-The following video shows how to use Support and Recovery Assistant to run diagnostic tests.
+The following video shows how to use Support and Recovery Assistant to run diagnostic tests:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/81b008c5-ab43-4fab-abea-34d6bc7beb77?autoplay=false]
 
 ## Create an Outlook Profile
 
-To create or re-create your Outlook profile, install and run the **[Office 365 Support and Recovery Assistant](https://support.office.com/article/https://diagnostics.office.com/.aspx#/).**
+To create or re-create your Outlook profile, install and run the Office 365 Support and Recovery Assistant:
 
 1. Log in with your Office 365 credentials.
 
@@ -61,19 +60,15 @@ To create or re-create your Outlook profile, install and run the **[Office 365 S
 
 3. Choose **I need help setting up my Office 365 email in Outlook**.
 
-The Support and Recovery Assistant will run some checks, and when you're ready will create an Outlook profile with your email address.
+Support and Recovery Assistant will run some checks, and when you're ready will create an Outlook profile with your email address.
 
- **Download and start Support and Recovery Assistant**
+### Download and start Support and Recovery Assistant
 
-1. Go to the [Support and Recovery Assistant for Office 365 download page](https://diagnostics.office.com/#/Download/?env=OfficePortal).
+1. Download and install the [Support and Recovery Assistant for Office 365 download page](https://aka.ms/SaRA-OutlookSendReceive).
 
-2. Click **Download now**.
+2. After installation, Support and Recovery Assistant will start automatically.
 
-3. Run the installation program.
-
-4. After installation, Support and Recovery Assistant will start automatically.
-
- **Use Support and Recovery Assistant**
+### Use Support and Recovery Assistant
 
 1. Choose **I agree** to accept the license agreement.
 
@@ -87,9 +82,9 @@ The Support and Recovery Assistant will run some checks, and when you're ready w
 
 6. Review the test results, and do one of the following.
 
-  - If the application succeeds in fixing your problem, follow the prompts and close the tool.
+   - If the application succeeds in fixing your problem, follow the prompts and close the tool.
 
-  - If the tests fail, the application will let you know the reason and suggest other solutions.
+   - If the tests fail, the application will let you know the reason and suggest other solutions.
 
 7. After the app has finished, leave feedback, and close the app.
 
