@@ -2,7 +2,7 @@
 title: "Find and fix email delivery issues as an Office 365 for business admin"
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: serdars`
 ms.audience: Admin
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,7 +17,6 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: e7758b99-1896-41db-bf39-51e2dba21de6
-
 description: "Admins can learn how to fix email delivery issues in Exchange Online."
 ---
 
@@ -26,7 +25,6 @@ description: "Admins can learn how to fix email delivery issues in Exchange Onli
 When users report that they aren't getting email, it can be hard to find what's wrong. You might run through several troubleshooting scenarios in your mind. Is something wrong with Outlook? Is the Office 365 service down? Is there a problem with mail flow or spam filter settings? Or is the problem due to something that's outside your control, like the sender is on a global block list? Fortunately, Office 365 provides powerful automated tools that can help you find and fix a variety of problems.
 
 ## First things first, check if there's a problem with Outlook or another email app
-<a name="__top"> </a>
 
 If only one user is reporting having trouble receiving email, there might be a problem with their email account or their email app. Have the affected user try the following solutions before you move on to admin-specific tasks.
 
@@ -42,14 +40,13 @@ If a single user in your organization is having trouble receiving email, it coul
 
 |||
 |:-----|:-----|
-|[![Get started](../../media/8226d576-eac7-40df-89cb-28c1634067c5.png)](https://diagnostics.office.com/#/Download/?env=SOC)|**Let us fix your issue** [Download Support and Recovery Assistant for Office 365](https://diagnostics.office.com/#/Download/?env=SOC)|
+|![Get started](../../media/8226d576-eac7-40df-89cb-28c1634067c5.png)|**Let us fix your issue** [Download Support and Recovery Assistant for Office 365](https://aka.ms/SaRA-OutlookSendReceive)|
 
-Watch the following video for more information about how to use the Support and Recovery Assistant app.
+Watch the following video for more information about how to use Support and Recovery Assistant app.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/81b008c5-ab43-4fab-abea-34d6bc7beb77?autoplay=false]
 
-## If the Support and Recovery Assistant app doesn't fix the email delivery issue, try these admin tools
-<a name="__top"> </a>
+## If Support and Recovery Assistant app doesn't fix the email delivery issue, try these admin tools
 
 As an Office 365 for business admin, you have access to several tools that can help you investigate why users can't get email. The following video gives a brief overview of the tools available to you.
 
@@ -81,7 +78,6 @@ If there is an indication that ExchangeOnline service is degraded, email deliver
 Sometimes an email message gets lost in transit, or it can take a lot longer than expected for delivery, and your users can wonder what happened. The message trace feature lets you follow messages as they pass through your Exchange Online service. Getting detailed information about a specific message lets you efficiently answer your user's questions, troubleshoot mail flow issues, validate policy changes, and can prevent you from needing to contact technical support for assistance.
 
 #### Open the message trace tool
-<a name="__toc382313345"> </a>
 
 If you're an Office 365 Midsize Business, Office 365 Business, or Office 365 Enterprise admin, you access and run the message trace tool through the Exchange admin center. To get there, do the following:
 
@@ -107,7 +103,6 @@ If you're an Office 365 Small Business admin, do the following to find message t
 2. Under **Email troubleshooting**, click **Troubleshoot message delivery**.
 
 #### Run a message trace and view delivery details of messages sent in the last week
-<a name="__toc382310842"> </a>
 
 By default, message trace is set to search for all messages sent or received by your organization in the past 48 hours. You can choose **Search** at the bottom of the page to generate this report. This report can give you a general idea about what is happening with mail flow in your organization. However, to troubleshoot a specific user's mail delivery issue, you want to scope the message trace results to that user's mailbox and the time frame that they expected to receive the message.
 
@@ -132,7 +127,6 @@ By default, message trace is set to search for all messages sent or received by 
 To search for a different message, you can click the **Clear** button on the **message trace** page, and then specify new search criteria.
 
 #### View the results of a message trace that is greater than 7 days old
-<a name="__toc382310845"> </a>
 
 Message traces for items more than 7 days old are only available as a downloadable .CSV file. Because data about older messages is stored in a different database, message traces for older messages can take up to an hour. To download the .CSV file, do one of the following.
 
@@ -150,7 +144,6 @@ Message traces for items more than 7 days old are only available as a downloadab
 >  Message traces containing data that is greater than 7 days old are automatically deleted. They cannot be manually deleted.
 
 #### Common questions about message trace
-<a name="__toc382310855"> </a>
 
  **After a message is sent, how long before a message trace can pick it up?**
 

@@ -302,7 +302,7 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
     If you keep your Exchange Server, you should also make sure that Autodiscover DNS CNAME record has to point to Office 365 in both internal and external DNS after the migration so that the Outlook client will to connect to the correct mailbox. Replace \<ServerName\> with the name of the Client Access server and run the following command in the Exchange Management Shell to prevent client connections to the server. You'll need to run the command on every Client Access server.
 
       ```
-      Set-ClientAccessServer -Identity <ServerName> AutoDiscoverServiceInternalUri $null
+      Set-ClientAccessServer -Identity <ServerName> -AutoDiscoverServiceInternalUri $null
       ```
 
     Office 365 uses a CNAME record to implement the Autodiscover service for Outlook and mobile clients. The Autodiscover CNAME record must contain the following information:

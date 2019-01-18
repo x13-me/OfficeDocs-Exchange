@@ -47,7 +47,7 @@ Office 365 uses domains, like contoso.com, to route email messages. When you set
 
 ### Understanding how DNS records control mail flow
 
-In Office 365 mail flow, two DNS records are particularly important: MX records and SPF records.
+In Office 365 mail flow, there are several components of DNS that are particularly important for email authentication and delivery: MX records, SPF, DKIM, and DMARC.
 
  **MX (mail exchanger) records** provide an easy way for mail servers to know where to send email. You can think of the MX record as a type of postal address. If you want Office 365 to receive all email addressed to anyone@contoso.com, the MX record for contoso.com should point to Office 365, and it will look like the following example:
 
@@ -57,16 +57,18 @@ Priority: 0
 TTL: 1 hour
 ```
 
- **SPF (sender policy framework) records** are a specially formatted TXT record in DNS. SPF records make sure that only the organization that owns a domain is actually sending email from that domain. SPF is basically a security measure to make sure someone doesn't impersonate another organization. (This impersonation is often called spoofing.) As a domain owner, you can use an SPF record to publish a list of IP addresses or subnets that are authorized to send email on your organization's behalf. This can be helpful if you want to send email from multiple servers or services with different IP addresses. The SPF record for an organization's domain that uses Office 365 to send all their mail should look like the following example:
-
-```
-v=spf1 include:spf.protection.outlook.com -all
-```
+ **SPF (sender policy framework)** is a specially formatted TXT record in DNS. SPF validates that only the organization that owns a domain is actually sending email from that domain. SPF is a security measure that helps makes sure someone doesn't impersonate another organization. This impersonation is often called spoofing. As a domain owner, you can use SPF to publish a list of IP addresses or subnets that are authorized to send email on your organization's behalf. This can be helpful if you want to send email from multiple servers or services with different IP addresses.
 
 > [!IMPORTANT]
 > You can only have one SPF record per domain. Having multiple SPF records will invalidate all SPF records and cause mail flow problems.
 
-The SPF record configuration in the previous example tells the recipient email servers that email sent from Office 365's IP addresses are authorized for the domain. Because most modern email servers look up a domain's SPF record before they accept any email from it, it's important to set up a valid SPF record in DNS when you first set up mail flow.
+Because most modern email servers look up a domain's SPF record before they accept any email from it, it's important to set up a valid SPF record in DNS when you first set up mail flow. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF in Office 365 to help prevent spoofing](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). For a more in-depth understanding of how Office 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
+
+**DomainKeys Identified Mail (DKIM).** lets you attach a digital signature to email messages in the message header of emails you send. Email systems that receive email from your domain use this digital signature to determine if incoming email that they receive is legitimate. For information about DKIM and Office 365, see [Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx).
+
+**Domain-based Message Authentication, Reporting, and Conformance (DMARC).** helps receiving mail systems determine what to do with messages that fail SPF or DKIM checks and provides another level of trust for your email partners. For information on setting up DMARC, see [Use DMARC to validate email in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+
+Use SPF, DKIM, and DMARC together for the best experience.
 
 ### How MX records affect spam filtering
 
@@ -74,7 +76,7 @@ For the best mail flow experience-especially for spam filtering—we recommend p
 
 With that said, there are legitimate business scenarios that require your domain's MX record to point to somewhere other than Office 365. For example, email destined for your organization might need to initially arrive at another destination (such as a third-party archiving solution), then route through Office 365, and then be delivered to mailboxes on your organization's mail server. This setup might provide the best solution to meet your business requirements.
 
-Whatever your needs, this guide will help you understand how your MX records, SPF records, and, potentially, connectors need to be set up.
+Whatever your needs, this guide will help you understand how your MX records, SPF, and, potentially, connectors need to be set up.
 
 ## For more information
 

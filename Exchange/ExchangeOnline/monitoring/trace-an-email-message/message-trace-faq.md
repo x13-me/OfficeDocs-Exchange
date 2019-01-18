@@ -52,7 +52,7 @@ The likely cause of a timeout error is that the query is taking too long to proc
 
 ## Why didn't I receive an expected email message?
 
-Hare are some possible reasons:
+Here are some possible reasons:
 
 - The message was detected as spam.
 
@@ -98,7 +98,7 @@ Confirm that the message was sent, that it was successfully received by the serv
 
 ## Why did I receive an unexpected message?
 
-Hare are some possible reasons:
+Here are some possible reasons:
 
 - The message was released from quarantine.
 

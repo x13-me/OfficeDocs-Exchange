@@ -51,13 +51,13 @@ To eliminate these issues for users with cloud mailboxes, perform the following 
   Set-OrganizationRelationship -TargetOWAUrl http://<CNAME value>/owa
   ```
 
-    For example, if the CNAME record that you created in Step 1 is cloudowa.contoso.com, run the following command:
+   For example, if the CNAME record that you created in Step 1 is cloudowa.contoso.com, run the following command:
     
   ```
   Set-OrganizationRelationship -TargetOWAUrl http://cloudowa.contoso.com/owa
   ```
 
-    **Notes:**
+   **Notes:**
     
   - Use http, not https.
     

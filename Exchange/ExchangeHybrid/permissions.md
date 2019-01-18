@@ -51,15 +51,17 @@ The following permissions **are** supported:
 
 - **Private items**: When you grant **Full Access** permission to a mailbox, you can decide whether to allow the delegate to see private items (private meetings, appointments, contacts, or tasks) in the mailbox.
 
-- **Send-As**: Lets a user send mail as though it appears to be coming from another user's mailbox.
+
 
 The following permissions or capabilities **aren't** supported:
+
+- **Send-As**: Lets a user send mail as though it appears to be coming from another user's mailbox.
 
 - **Auto-mapping**: Enables Outlook to automatically open any mailboxes that a user has been granted **Full Access** to on startup.
 
 - **Folder permissions**: Grants access to the contents of a particular folder.
 
-Any mailboxes that receive these permissions from another mailbox need to be moved at the same time as the granting mailbox. If a mailbox receives permissions from multiple mailboxes, that mailbox, and all of the mailboxes granting permissions to it, need to be moved at the same time.
+Any mailboxes that receive these permissions from another mailbox need to be moved at the same time as the granting mailbox. If a mailbox receives permissions from multiple mailboxes, that mailbox, and all of the mailboxes granting permissions to it, need to be moved at the same time. More information can be found at https://support.microsoft.com/en-us/help/3064053. 
 
 ### Configuring your on-premises Exchange servers to support hybrid mailbox permissions
 
