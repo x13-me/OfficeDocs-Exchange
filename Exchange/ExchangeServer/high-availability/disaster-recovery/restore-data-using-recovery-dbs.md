@@ -42,8 +42,7 @@ For additional management tasks related to RDBs, see [Recovery databases](recove
   Eseutil /R EXX /l <RDBLogFilePath> /d <RDBEdbFolder>
   ```
 
-    The following example illustrates a log generation prefix of E01 and a recovery database and log file path of E:\Databases\RDB1:
-    
+> The following example illustrates a log generation prefix of E01 and a recovery database and log file path of E:\Databases\RDB1:
   ```
   Eseutil /R E01 /l E:\Databases\RDB1 /d E:\Databases\RDB1
   ```
@@ -54,8 +53,7 @@ For additional management tasks related to RDBs, see [Recovery databases](recove
   New-MailboxDatabase -Recovery -Name <RDBName> -Server <ServerName> -EdbFilePath <RDBPathandFileName> -LogFolderPath <LogFilePath>
   ```
 
-    The following example illustrates creating a recovery database that will be used to recover DB1.edb and its log files, which are located at E:\Databases\RDB1.
-    
+> The following example illustrates creating a recovery database that will be used to recover DB1.edb and its log files, which are located at E:\Databases\RDB1. 
   ```
   New-MailboxDatabase -Recovery -Name <RDBName> -Server <ServerName> -EdbFilePath "E:\Databases\RDB1\DB1.EDB" -LogFolderPath "E:\Databases\RDB1"
   ```
@@ -80,14 +78,12 @@ For additional management tasks related to RDBs, see [Recovery databases](recove
 
 7. Use the New-MailboxRestoreRequest cmdlet to restore a mailbox or items from the recovery database to a production mailbox.
     
-    The following example restores the source mailbox that has the MailboxGUID 1d20855f-fd54-4681-98e6-e249f7326ddd on mailbox database DB1 to the target mailbox with the alias Morris.
-    
+> The following example restores the source mailbox that has the MailboxGUID 1d20855f-fd54-4681-98e6-e249f7326ddd on mailbox database DB1 to the target mailbox with the alias Morris. 
   ```
   New-MailboxRestoreRequest -SourceDatabase DB1 -SourceStoreMailbox 1d20855f-fd54-4681-98e6-e249f7326ddd -TargetMailbox Morris
   ```
 
-    The following example restores the content of the source mailbox that has the display name Morris Cornejo on mailbox database DB1 to the archive mailbox for Morris@contoso.com.
-    
+> The following example restores the content of the source mailbox that has the display name Morris Cornejo on mailbox database DB1 to the archive mailbox for Morris@contoso.com.   
   ```
   New-MaiboxRestoreRequest -SourceDatabase DB1 -SourceStoreMailbox "Morris Cornejo" -TargetMailbox Morris@contoso.com -TargetIsArchive
   ```
