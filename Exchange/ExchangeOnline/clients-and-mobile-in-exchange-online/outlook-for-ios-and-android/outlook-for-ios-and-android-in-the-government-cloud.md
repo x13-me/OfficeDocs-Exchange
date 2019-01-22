@@ -35,7 +35,7 @@ This article covers how to:
 
 - Migrate Office 365 GCC Moderate mobile users from the Azure public cloud to the O365 GCC compliant solution. This applies to tenants who had been previously unblocked from the Azure public cloud through signing a waiver with Microsoft Support.
 
-### Enabling Outlook for iOS and Android for Office 365 GCC High and Department of Defense customers
+## Enabling Outlook for iOS and Android for Office 365 GCC High and Department of Defense customers
 
 GCC High and Department of Defense customers can leverage Outlook for iOS and Android without any special configuration.
 
