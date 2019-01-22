@@ -42,7 +42,7 @@ Policy Tips are informative notices that are displayed to email senders while th
 ## Create or modify a notify-only Policy Tip
 <a name="NotifyOnly"> </a>
 
-This procedure results in an informational Policy Tip being shown to an email sender when the conditions of a specific rule are met. In Microsoft Outlook, the sender can prevent this tip from showing up by using a Policy Tip options dialog box. To configure custom Policy Tip text, see **Create custom Policy Tip notification text** later in this article.
+This procedure results in an informational Policy Tip being shown to an email sender when the conditions of a specific rule are met. In Microsoft Outlook, the sender can prevent this tip from showing up by using a Policy Tip options dialog box. To configure custom Policy Tip text, see the  [Create custom Policy Tip notification text](#create-custom-policy-tip-notification-text) section later in this topic
 
 ### Use the EAC to configure notify-only Policy Tips
 
