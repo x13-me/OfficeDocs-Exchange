@@ -90,10 +90,9 @@ Perform the following steps:
     
   ```
   Set-OwaMailboxPolicy Default -IsDefault 
-  
   ```
 
-    To assign the policy to an individual's mailbox, type the following command in the Exchange Management Shell:
+   To assign the policy to an individual's mailbox, type the following command in the Exchange Management Shell:
     
   ```
   Set-CASMailbox <user mailbox> -OwaMailboxPolicy Default

@@ -84,7 +84,7 @@ Exchange Online includes several built-in role groups, each one providing permis
 
 If you work in a small organization that has only a few administrators, you might need to add those administrators to the Organization Management role group only, and you may never need to use the other role groups. If you work in a larger organization, you might have administrators who perform specific tasks administering Exchange Online, such as recipient or organization-wide Unified Messaging configuration. In those cases, you might add one administrator to the Recipient Management role group, and another administrator to the UM Management role group. Those administrators can then manage their specific areas of ExchangeOnline, but they won't have permissions to manage areas they're not responsible for.
 
-If the built-in role groups in Exchange Online don't match the job function of your administrators, you can create role groups and add roles to them. For more information, see **Work with role groups** later in this topic.
+If the built-in role groups in Exchange Online don't match the job function of your administrators, you can create role groups and add roles to them. For more information, see the [Work with role groups](#work-with-role-groups) section later in this topic.
 
 ### Role assignment policies
 
