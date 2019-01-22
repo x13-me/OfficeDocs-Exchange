@@ -74,7 +74,7 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
     
 > [!IMPORTANT]
 > Before you begin your migration, make sure you migrate your arbitration mailbox to the target Exchange server. Otherwise, your migration batch will hang in the **Starting** state. To identify your migration arbitration mailbox, run the following cmdlet:<br/>
-`((get-mailbox -Arbitration -Identity Migration.*).servername -eq (hostname))`
+`Get-Mailbox -Arbitration -Identity Migration.*`
   
 ## Step 1: Download the migration scripts
 <a name="Scripts"> </a>
@@ -110,7 +110,7 @@ Perform the following prerequisite steps before you begin the migration.
       Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML C:\PFMigration\Legacy_PFPerms.xml
       ```
     
-2. If the name of a public folder contains a backslash ( \\ ), migration will create the migrated public folders in the parent pblic folder. Before you migrate, we recommend that you rename any public folders that have a backslash in the name.
+2. If the name of a public folder contains a backslash ( \\ ), migration will create the migrated public folders in the parent public folder. Before you migrate, we recommend that you rename any public folders that have a backslash in the name.
     
     To locate public folders in Exchange 2010 that have a backslash in the name, run the following command:
     
