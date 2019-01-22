@@ -25,7 +25,7 @@ The following table lists email message properties that can be searched using an
   
 |**Property**|**Property description**|**Examples**|**Search results returned by the examples**|
 |:-----|:-----|:-----|:-----|
-|Attachment  <br/> |The names of files attached to an email message.  <br/> |attachment:annualreport.ppt  <br/> attachment:annual\* <br/> |Messages that have an attached file named annualreport.ppt.  <br/> In the second example, using the wildcard returns messages with the word "annual" in the file name of an attachment.  <br/> |
+|Attachment  <br/> |The names of files attached to an email message.  <br/> |attachment:annualreport.ppt  <br/> attachment:annual\* <br/> |Messages that have an attached file with a name matching annualreport.ppt, e.g. "annualreport.ppt" or "2017 annualreport.ppt".  <br/> In the second example, using the wildcard returns messages with the word "annual" in the file name of an attachment.  <br/> |
 |Bcc  <br/> |The BCC field of an email message.<sup>1</sup> <br/> |bcc:pilarp@contoso.com  <br/> bcc:pilarp  <br/> bcc:"Pilar Pinilla"  <br/> |All examples return messages with Pilar Pinilla included in the Bcc field.  <br/> |
 |Category  <br/> |The categories to search. Categories can be defined by users by using Outlook or Outlook on the web (formerly known as Outlook Web App). Valid values are:  <br/> blue  <br/> green  <br/> orange  <br/> purple  <br/> red  <br/> yellow  <br/> |category:"Red Category"  <br/> |Messages that have been assigned the red category in the source mailboxes.  <br/> |
 |Cc  <br/> |The CC field of an email message.<sup>1</sup> <br/> |cc:pilarp@contoso.com  <br/> cc:"Pilar Pinilla"  <br/> |In both examples, messages with Pilar Pinilla specified in the CC field.  <br/> |
