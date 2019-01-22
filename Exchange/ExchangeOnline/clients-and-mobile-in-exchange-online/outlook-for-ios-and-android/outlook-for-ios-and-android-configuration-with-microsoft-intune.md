@@ -4,7 +4,7 @@ ms.author: dmaguire
 author: msdmaguire
 ms.reviewer: smithre4
 manager: serdars
-ms.date: 11/26/2018
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.service: exchange-online
@@ -23,6 +23,7 @@ Outlook for iOS and Android supports the following configuration scenarios:
 
 - Account setup configuration
 - Organization allowed accounts mode
+- General app configuration settings
 - Data protection settings
 
 Each configuration scenario will highlight its specific requirements; for example, whether the configuration scenario requires device enrollment, and thus work with any MDM provider, or requires Intune App Protection Policies.
@@ -51,6 +52,14 @@ For more information on organization allowed accounts mode, please see [Account 
 |IntuneMAMAllowedAccountsOnly|This value specifies the whether organization allowed account mode is active.  <br/> **Value type**: String  <br/> **Accepted values**: Enabled, Disabled  <br/> **Required**: Yes  <br/> **Value**: Enabled|iOS|Managed devices|
 |IntuneMAMUPN|This value specifies the User Principal Name for the account.  <br/> **Value type**: String  <br/> **Accepted values**: UPN Address  <br/> **Required**: Yes  <br/> **Example**: userupn@companyname.com  <br/> **Intune Token**<sup>*</sup>: {{userprincipalname}}|iOS|Managed devices|
 |com.microsoft.intune.mam.AllowedAccountUPNs|This delimited value specifies the UPNs allowed for organization allowed account mode.  <br/> **Accepted values**: UPN Address  <br/> **Required**: Yes  <br/> **Example**: userupn@companyname.com  <br/> **Intune Token**<sup>*</sup>: {{userprincipalname}}|Android|Managed devices|
+
+## General app configuration settings
+Outlook for iOS and Android offers administrators the ability to customize the default configuration for several in-app settings. This capability only works with enrolled devices, however, it is supported with any MDM provider. If you are not using Intune, you will need to consult with your MDM documentation on how to deploy these settings.
+
+|**Key**|**Value**|**Device Enrollment Type**|
+|:-----|:-----|:-----|
+|com.microsoft.outlook.Mail.ExternalRecipientsToolTipEnabled|This value specifies whether the External Recipients MailTip is enabled. Setting the value to false will disable the MailTip. <br/> **Value type**: Boolean  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Required**: No  <br/> **Example**: False  <br/> |Managed devices|
+|com.microsoft.outlook.Mail.ExternalRecipientsToolTipEnabled.UserChangeAllowed|This value specifies whether the External Recipients MailTip setting can be changed by the end user. Note that at this time, there is no user configurable setting for MailTips.  <br/> **Value type**: Boolean  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Required**: No  <br/> **Example**: False  <br/> |Managed devices|
 
 ## Data protection settings
 Outlook for iOS and Android supports app configuration policies for the following data protection settings when the app is managed by Intune:
