@@ -209,19 +209,19 @@ There are three basic methods you can use to assign authentication policies to u
 
 
 
-- **Filter user accounts by attributes in Hybrid With  On-Promise AD**: Here we will query and set one specific attribute For On-promise AD Group Members  that will be synced with Exchange Online to filter users based on this attribute. This will help us disable legacy protocols for specific groups and ensure that production will not affect the entire company.
+- **Filter user accounts by attributes if Users Synced From On-Promise AD **: Here we will query and set one specific attribute For On-promise AD Group Members  that will be synced with Exchange Online to filter users based on this attribute. This will help us disable legacy protocols for specific groups and ensure that production will not affect the entire company.
 The attribute we will use is the department name, as it is one of the most common attributes used to tag users depending on their department and roles.
 To see all Active Directory user extended properties, go to [Active Directory: Get-ADUser Default and Extended Properties](https://social.technet.microsoft.com/wiki/contents/articles/12037.active-directory-get-aduser-default-and-extended-properties.aspx). 
 
-## Step 1: Query your users in Active Directory And Set Users attributes
+### Step 1: Query your users in Active Directory And Set Users attributes
 
-### Get a list of all your AD Groups
+#### Get a list of all your AD Groups
 
 -  In your AD server, open PowerShell as an Administrator (right-click and select **Run as administrator**).
     ```PowerShell
     Get-ADGroup -filter * | select -Property name
     ```
-### Get the members of a group
+#### Get the members of a group
 
 Now that we have all our groups, we can query which users belong to those groups and create a list based on any of their attributes. We recommend using the attribute `ObjectGuid`, as this value is unique for each user.
 
@@ -229,7 +229,7 @@ Now that we have all our groups, we can query which users belong to those groups
 Get-ADGroupMember -Identity <groupname> | select -Property ObjectGuid
 ```
 
-### Set or get attributes
+#### Set or get attributes
 
 Now we want to find or set one specific attribute that will be synced with Exchange Online to filter users based on this attribute. This will help us disable legacy protocols for specific groups and ensure that production will not affect the entire company.
 
@@ -246,7 +246,7 @@ Now we want to find or set one specific attribute that will be synced with Excha
     ```PowerShell
     Get-ADUser -filter {(department -eq '<department_name>')} -Properties Department
     ```
-## Step 2: Disable legacy authentication  in Exchange Online
+### Step 2: Disable legacy authentication  in Exchange Online
 
 Before you continue, it is important to know that attributes for users that exist on premises are synced to Exchange Online only when users have a valid Exchange license. If you need to check this, you can run queries in Exchange Online using PowerShell.
 
@@ -254,7 +254,7 @@ To apply a license to any given user or group, go to **https://portal.office.com
 
 
 
-### Connecting to Exchange Online
+#### Connecting to Exchange Online
     ```Powershell
     #require all PowerShell scripts that you download from the internet are signed by a trusted publisher
     Set-ExecutionPolicy RemoteSigned
