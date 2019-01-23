@@ -209,7 +209,7 @@ There are three basic methods you can use to assign authentication policies to u
 
 
 
-- **Filter user accounts by attributes if Users Synced From On-Promise AD**: Here we will query and set one specific attribute For On-promise AD Group Members  that will be synced with Exchange Online to filter users based on this attribute. This will help us disable legacy protocols for specific groups and ensure that production will not affect the entire company.
+- **Filter users accounts by attributes if Users Synced From On-Promise AD**: Here we will query and set one specific attribute For On-promise AD Group Members  that will be synced with Exchange Online to filter users based on this attribute. This will help us disable legacy protocols for specific groups and ensure that production will not affect the entire company.
 The attribute we will use is the department name, as it is one of the most common attributes used to tag users depending on their department and roles.
 To see all Active Directory user extended properties, go to [Active Directory: Get-ADUser Default and Extended Properties](https://social.technet.microsoft.com/wiki/contents/articles/12037.active-directory-get-aduser-default-and-extended-properties.aspx). 
 
