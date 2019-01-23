@@ -209,7 +209,7 @@ There are three basic methods you can use to assign authentication policies to u
 
 
 
-- **Filter user accounts by attributes in Hybrid With  On-Promise AD **: Here we will query and set one specific attribute For On-promise AD Group Members  that will be synced with Exchange Online to filter users based on this attribute. This will help us disable legacy protocols for specific groups and ensure that production will not affect the entire company.
+- **Filter user accounts by attributes in Hybrid With  On-Promise AD**: Here we will query and set one specific attribute For On-promise AD Group Members  that will be synced with Exchange Online to filter users based on this attribute. This will help us disable legacy protocols for specific groups and ensure that production will not affect the entire company.
 The attribute we will use is the department name, as it is one of the most common attributes used to tag users depending on their department and roles.
 To see all Active Directory user extended properties, go to [Active Directory: Get-ADUser Default and Extended Properties](https://social.technet.microsoft.com/wiki/contents/articles/12037.active-directory-get-aduser-default-and-extended-properties.aspx). 
 
@@ -265,9 +265,9 @@ To apply a license to any given user or group, go to **https://portal.office.com
     #If you don't receive any errors, you connected successfully
     ```
 To quickly test, run an Exchange Online cmdlet, such Get-Mailbox, and see the results. If no error is returned, you connected successfully.
-```Powershell
+ ```Powershell
     Get-User -ResultSize unlimited -Filter {(RecipientType -eq 'UserMailbox') -and (department -like '*developer*')}
-    ```
+ ```
 
     > [!Note]
     > The attribute “department” was verified or set in Step 1.**
