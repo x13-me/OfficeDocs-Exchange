@@ -20,6 +20,8 @@ You can use mail-enabled security groups to distribute messages as well as grant
 
 - Estimated time to complete each procedure: 5 minutes.
 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" entry in the [Recipients Permissions](../permissions/feature-permissions/recipient-permissions.md) topic.
+
 - For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../architecture/client-access/exchange-admin-center.md).
 
 - To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
@@ -28,12 +30,12 @@ You can use mail-enabled security groups to distribute messages as well as grant
 
 - For mail-enabled security groups, users can't add or remove themselves from the group, nor can they send requests to the group owners to join or leave the group. A group owner needs to manually add and remove group members from a mail-enabled security group.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" entry in the [Recipients Permissions](../permissions/feature-permissions/recipient-permissions.md) topic.
+- If a mail-enabled security group contains members that aren't mail-enabled, a non-delivery report (also known as an NDR or bounce message) is returned for those non-mail-enabled members when you send a message to the group. To prevent NDRs, you can expand the group members in the **To** field of the message before you send the message (only the mail-enabled members of the group will appear).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 
 ## Create mail-enabled security groups
 
@@ -48,54 +50,55 @@ You can use mail-enabled security groups to distribute messages as well as grant
 1. In the EAC, go to **Recipients** \> **Groups**.
 
 2. Click **New** ![Add icon](../media/ITPro_EAC_AddIcon.png) and then select **Security group** in the drop down list that appears.
+
     ![In the EAC, click Recipients, Groups, New, Security Group](../media/36d5bb51-b232-410a-886a-7326aecec78b.png)
 
 3. On the **New security group** page that opens, configure these settings (values marked with an **\*** are required): 
 
-  - **\* Display name**: This value should help users immediately recognize what the group is used for. This name appears in the global address list, on the To: line when email is sent to this group, and in the **Groups** list in the EAC. The maximum length in the EAC is 64 characters, and the value must be unique.
+   - **\* Display name**: This value should help users immediately recognize what the group is used for. This name appears in the global address list, on the To: line when email is sent to this group, and in the **Groups** list in the EAC. The maximum length in the EAC is 64 characters, and the value must be unique.
 
-    > [!NOTE]
-    > If a group naming policy is applied, you need to follow the naming constraints that are enforced for your organization. For more information, see [Create a Distribution Group Naming Policy](http://technet.microsoft.com/library/b2ffb654-345d-4be1-be8e-83d28901373e.aspx). If you want to override your organization's group naming policy, see [Override a Distribution Group Naming Policy](http://technet.microsoft.com/library/9eb23fc9-3f59-4d09-9077-85c89a051ee0.aspx).
+     > [!NOTE]
+     > If a group naming policy is applied, you need to follow the naming constraints that are enforced for your organization. For more information, see [Create a Distribution Group Naming Policy](http://technet.microsoft.com/library/b2ffb654-345d-4be1-be8e-83d28901373e.aspx). If you want to override your organization's group naming policy, see [Override a Distribution Group Naming Policy](http://technet.microsoft.com/library/9eb23fc9-3f59-4d09-9077-85c89a051ee0.aspx).
 
-  - **\* Alias**: This value is used to generate the primary email address (_\<alias\>_@ _\<domain_\>). This value can contain letters, numbers and the characters !, #, $, %, &, ', \*, +, -, /, =, ?, ^, _, `, {, |, } and ~. Periods (.) are allowed, but each period must be surrounded by other valid characters (for example, help.desk). Unicode characters from U+00A1 to U+00FF are also allowed, but are mapped to best-fit US-ASCII text characters in the primary email address (for example, U+00F6 (ö) is changed to oe). The alias can't exceed 64 characters and must be unique in the forest. When a user types the alias on the To: line of an email message, it resolves to the group's display name.
+   - **\* Alias**: This value is used to generate the primary email address (_\<alias\>_@ _\<domain_\>). This value can contain letters, numbers and the characters !, #, $, %, &, ', \*, +, -, /, =, ?, ^, _, `, {, |, } and ~. Periods (.) are allowed, but each period must be surrounded by other valid characters (for example, help.desk). Unicode characters from U+00A1 to U+00FF are also allowed, but are mapped to best-fit US-ASCII text characters in the primary email address (for example, U+00F6 (ö) is changed to oe). The alias can't exceed 64 characters and must be unique in the forest. When a user types the alias on the To: line of an email message, it resolves to the group's display name.
 
-  - **Notes**: Use this box to describe the purpose of the group. This description appears in the global address list and in the details pane in the EAC.
+   - **Notes**: Use this box to describe the purpose of the group. This description appears in the global address list and in the details pane in the EAC.
 
-  - **Organizational unit**: The default location in Active Directory depends on the recipient scope that's configured:
+   - **Organizational unit**: The default location in Active Directory depends on the recipient scope that's configured:
 
-  - If the recipient scope is the Active Directory forest, the default location is the Users container in the domain where the computer that's running the EAC is located.
+     - If the recipient scope is the Active Directory forest, the default location is the Users container in the domain where the computer that's running the EAC is located.
 
-  - If the recipient scope is a specific domain, the default location is the Users container in that domain.
+     - If the recipient scope is a specific domain, the default location is the Users container in that domain.
 
-  - If the recipient scope is a specific organizational unit (OU), the default location is that OU.
+     - If the recipient scope is a specific organizational unit (OU), the default location is that OU.
 
-    To select a different OU, click **Browse**. The **Select an organizational unit** dialog box that opens shows all of the available OUs in the forest that are within the specified recipient scope. Select the desired OU, and then click **OK**.
+     To select a different OU, click **Browse**. The **Select an organizational unit** dialog box that opens shows all of the available OUs in the forest that are within the specified recipient scope. Select the desired OU, and then click **OK**.
 
-  - **\* Owners**: By default, the person who creates the group is the owner. All groups must have at least one owner. Group owners can:
+   - **\* Owners**: By default, the person who creates the group is the owner. All groups must have at least one owner. Group owners can:
 
-  - Modify the properties of the group
+     - Modify the properties of the group
 
-  - Add or remove group members
+     - Add or remove group members
 
-  - Delete the group
+     - Delete the group
 
-  - Approve messages sent to the group (if moderation is enabled)
+     - Approve messages sent to the group (if moderation is enabled)
 
-    To add owners, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **Select Owners** dialog that appears, select one or more owners, click **Add**, and then click **OK**.
+     To add owners, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **Select Owners** dialog that appears, select one or more owners, click **Add**, and then click **OK**.
 
-    To remove owners, select the owner in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
+     To remove owners, select the owner in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
 
-  - **Members**
+   - **Members**
 
-    To add members to the group, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **Select Members** dialog that appears, select one or more members, click **Add**, and then click **OK**.
+     To add members to the group, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **Select Members** dialog that appears, select one or more members, click **Add**, and then click **OK**.
 
-    To remove members, select the member in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
+     To remove members, select the member in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
 
-  - **Add group owners as members**: When this check box is selected, you don't need to manually include group owners in the list of members. If you don't want the group owners to be members of the group, clear this check box.
+   - **Add group owners as members**: When this check box is selected, you don't need to manually include group owners in the list of members. If you don't want the group owners to be members of the group, clear this check box.
 
-  - **Owner approval is required**: For mail-enabled security groups, user requests to join the group aren't sent to the group owners, regardless of the state of this check box (selected or not selected). A group owner needs to manually add and remove group members from a mail-enabled security group.
+   - **Owner approval is required**: For mail-enabled security groups, user requests to join the group aren't sent to the group owners, regardless of the state of this check box (selected or not selected). A group owner needs to manually add and remove group members from a mail-enabled security group.
 
-    When you've finished, click **Save**.
+   When you've finished, click **Save**.
 
 ### Use the Exchange Management Shell to create a mail-enabled security group
 
@@ -159,42 +162,41 @@ To verify that you've successfully created a mail-enabled security group, do any
 
 2. In the list of groups, find the mail-enabled security group that you want to view or modify. You can:
 
-  - Scroll through the list of groups.
+   - Scroll through the list of groups.
 
-  - Click **Search** ![Search icon](../media/ITPro_EAC_.png) and enter part of the group's name, email address, or alias.
+   - Click **Search** ![Search icon](../media/ITPro_EAC_.png) and enter part of the group's name, email address, or alias.
 
-  - Click **More options** ![More Options icon](../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the group.
+   - Click **More options** ![More Options icon](../media/ITPro_EAC_MoreOptionsIcon.png) \> **Advanced search** to find the group.
 
-  - Click the **Group Type** column header to sort the groups by **Security group**.
+   - Click the **Group Type** column header to sort the groups by **Security group**.
 
-    Once you've found the mail-enabled security group that you want to modify, select it, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+     Once you've found the mail-enabled security group that you want to modify, select it, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
 
 3. On the **Edit Security Group** page that opens, click one of the tabs to view or change the settings of the group: 
 
-  - [General](#General.md)
+   - [General](#general)
 
-  - [Ownership](#ownership.md)
+   - [Ownership](#ownership)
 
-  - [Membership](#membership.md)
+   - [Membership](#membership
 
-  - [Membership approval](#membershipapproval.md)
+   - [Membership approval](#membership-approval)
 
-  - [Delivery management](#deliverymanagement.md)
+   - [Delivery management](#delivery-management)
 
-  - [Message approval](#messageapproval.md)
+   - [Message approval](#message-approval)
 
-  - [Email options](#emailoptions.md)
+   - [Email options](#email-options)
 
-  - [MailTip](#mailtip.md)
+   - [MailTip](#mailtip)
 
-  - [Group delegation](#groupdelegation.md)
+   - [Group delegation](#group-delegation)
 
-![In the EAC, click Recipients, Groups, select the Security Group, and then click Edit](../media/27065433-0942-43cd-88c2-65f635972376.png)
+   ![In the EAC, click Recipients, Groups, select the Security Group, and then click Edit](../media/27065433-0942-43cd-88c2-65f635972376.png)
 
-    When your finished, click **Save** or **Cancel**.
+    When you're finished, click **Save** or **Cancel**.
 
 #### General
-<a name="general"> </a>
 
 Use this tab to view or change basic information about the group.
 
@@ -202,7 +204,7 @@ Use this tab to view or change basic information about the group.
 
 - **Alias**: This value is used to generate the primary email address (_\<alias\>_@ _\<domain_\>). This value can contain letters, numbers and the characters !, #, $, %, &, ', \*, +, -, /, =, ?, ^, _, `, {, |, } and ~. Periods (.) are allowed, but each period must be surrounded by other valid characters (for example, help.desk). Unicode characters from U+00A1 to U+00FF are also allowed, but are mapped to best-fit US-ASCII text characters in the primary email address (for example, U+00F6 (ö) is changed to oe). The alias can't exceed 64 characters and must be unique in the forest. When a user types the alias on the To: line of an email message, it resolves to the group's display name.
 
-    When you change the alias value, the previous primary email address is kept as a proxy address for the group.
+   When you change the alias value, the previous primary email address is kept as a proxy address for the group.
 
 - **Notes**: Use this box to describe the purpose of the group. This description appears in the global address list and in the details pane in the EAC.
 
@@ -211,7 +213,6 @@ Use this tab to view or change basic information about the group.
 - **Organizational unit**: This read-only box displays the location of the group object in Active Directory. You need to use Active Directory Users and Computers to move the group to a different OU.
 
 #### Ownership
-<a name="Ownership"> </a>
 
 Use this section to assign group owners. All groups must have at least one owner. Group owners can:
 
@@ -230,7 +231,6 @@ To add owners, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the
 To remove owners, select the owner in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
 
 #### Membership
-<a name="membership"> </a>
 
 Use this tab to add or remove group members. Group owners aren't required to be members of the group.
 
@@ -239,12 +239,10 @@ To add members to the group, click **Add** ![Add icon](../media/ITPro_EAC_AddIco
 To remove members, select the member in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
 
 #### Membership approval
-<a name="membershipapproval"> </a>
 
 For mail-enabled security groups, user requests to join the group aren't sent to the group owners, regardless of the state of the **Owner approval is required** check box (selected or not selected). A group owner needs to manually add or remove group members from a mail-enabled security group.
 
 #### Delivery management
-<a name="deliverymanagement"> </a>
 
 Use this tab to control who's allowed to send messages to the group.
 
@@ -254,13 +252,12 @@ Use this tab to control who's allowed to send messages to the group.
 
 - Restrict the internal senders who can send messages to the group by clicking **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **Select Allowed Senders** dialog that appears, select one or more senders, click **Add**, and then click **OK**. Only the specified senders can send messages to the group.
 
-    To remove internal senders that are allowed to send messages to the group, select the sender in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
+   To remove internal senders that are allowed to send messages to the group, select the sender in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png).
 
 > [!IMPORTANT]
 > Mail contacts are always considered unauthenticated (external) senders. If you select **Only senders inside my organization** and add the mail contact to the list of approved internal senders, messages sent to the group by the mail contact will be rejected.
 
 #### Message approval
-<a name="messageapproval"> </a>
 
 Use this tab to configure the moderation settings for messages that are sent to the group.
 
@@ -287,15 +284,14 @@ Use this tab to configure the moderation settings for messages that are sent to 
   - **Don't notify anyone when a message isn't approved**: Senders aren't notified when their messages aren't approved by a group moderator.
 
 #### Email options
-<a name="emailoptions"> </a>
 
 Use this tab to view or change the email addresses that are configured for the group.
 
 - **Email address**: By default, you use this setting to add additional email addresses for the group (also known as proxy addresses).
 
-    By default, the primary email address (also known as the Reply To or reply address) is configured by the email address policy that's applied to the group. For more information about email address policies, see [Email address policies in Exchange Server](../email-addresses-and-address-books/email-address-policies/email-address-policies.md). The primary email address that's shown here is bold, and has the uppercase **SMTP** value in the **Type** column.
+  By default, the primary email address (also known as the Reply To or reply address) is configured by the email address policy that's applied to the group. For more information about email address policies, see [Email address policies in Exchange Server](../email-addresses-and-address-books/email-address-policies/email-address-policies.md). The primary email address that's shown here is bold, and has the uppercase **SMTP** value in the **Type** column.
 
-    To manually specify the group's primary email address here, you need to clear the check box **Automatically update email addresses based on the email address policy applied to this recipient**. Note that clearing this check box prevents automatic updates to the email addresses of the group by email address policies.
+  To manually specify the group's primary email address here, you need to clear the check box **Automatically update email addresses based on the email address policy applied to this recipient**. Note that clearing this check box prevents automatic updates to the email addresses of the group by email address policies.
 
   - To add a new email address for the group, click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png). In the **New email address** page that opens, select one of these options: 
 
@@ -316,7 +312,6 @@ Use this tab to view or change the email addresses that are configured for the g
   - To remove an existing email address from the group, select it in the list, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.png). Note that you can't remove the primary email address.
 
 #### MailTip
-<a name="mailtip"> </a>
 
 Use this tab to add a custom MailTip for the group. MailTips alert users to potential issues before they send a message to the group. For more information about MailTips, see [Configure Custom MailTips for Recipients](http://technet.microsoft.com/library/df8ee7ae-2486-4890-b057-cda87b4cb1ec.aspx).
 
@@ -324,7 +319,6 @@ Use this tab to add a custom MailTip for the group. MailTips alert users to pote
 > MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
 #### Group delegation
-<a name="groupdelegation"> </a>
 
 Use this tab to assign permissions to the group for a user (called a *delegate*).
 
@@ -459,7 +453,7 @@ To mail-enable an existing universal security group that's not already mail-enab
 To mail-enable an existing universal security group, use this syntax:
 
 ```
-Enable-DistributionGroup -Identity <GroupIdentity> [-Alias <Alias>] [-DisplayName <DisplayName>] [-PrimarySMTPAddress <EmailAdddress>]
+Enable-DistributionGroup -Identity <GroupIdentity> [-Alias <Alias>] [-DisplayName <DisplayName>] [-PrimarySMTPAddress <EmailAddress>]
 ```
 
 This example mail-enables the existing universal security group named Help Desk with the following settings:
@@ -541,5 +535,3 @@ To verify that you've successfully mail-disabled an existing mail-enabled univer
   ```
   Get-Group -Filter {RecipientTypeDetails -eq 'UniversalSecurityGroup'}
   ```
-
-

@@ -40,27 +40,26 @@ You can also change properties for multiple user mailboxes at the same time. For
 2. In the list of user mailboxes, click the mailbox that you want to change the properties for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
     
 3. On the mailbox properties page, click one of the following sections to view or change properties.
-    
-  - [General](#General.md)
-    
-  - [Mailbox Usage](#MailboxUsage.md)
-    
-  - [Contact Information](#ContactInformation.md)
-    
-  - [Organization](#Organization.md)
-    
-  - [Email Address](#EmailAddress.md)
-    
-  - [Mailbox Features](#MailboxFeatures.md)
-    
-  - [Member Of](#MemberOf.md)
-    
-  - [MailTip](#MailTip.md)
-    
-  - [Mailbox Delegation](#MailboxDelegation.md)
-    
+
+   - [General](#general)
+
+   - [Mailbox Usage](#mailbox-usage)
+
+   - [Contact Information](#contact-information)
+
+   - [Organization](#organization)
+
+   - [Email Address](#email-address)
+
+   - [Mailbox Features](#mailbox-features)
+
+   - [Member Of](#member-of)
+
+   - [MailTip](#mailtip)
+
+   - [Mailbox Delegation](#mailbox-delegation)
+     
 #### General
-<a name="General"> </a>
 
 Use the **General** section to view or change basic information about the user.
   
@@ -87,7 +86,6 @@ Click **More options** to view or change these additional properties:
 - **Custom attributes**: This section displays the custom attributes defined for the user mailbox. To specify custom attribute values, click **Edit**. You can specify up to 15 custom attributes for the recipient.
     
 #### Mailbox Usage
-<a name="MailboxUsage"> </a>
 
 Use the **Mailbox Usage** section to view or change the mailbox storage quota and deleted item retention settings for the mailbox. These settings are configured by default when the mailbox is created. They use the values that are configured for the mailbox database and apply to all mailboxes in that database. You can customize these settings for each mailbox instead of using the mailbox database defaults.
   
@@ -102,7 +100,7 @@ Click **More options** to view or change the mailbox storage quota and the delet
   
 - **Storage quota settings**: To customize these settings for the mailbox and not use the mailbox database defaults, click **Customize the settings for this mailbox**, type a new value, and then click **Save**.
     
-    The value range for any of the storage quota settings is from 0 through 2047 gigabytes (GB).
+  The value range for any of the storage quota settings is from 0 through 2047 gigabytes (GB).
     
   - **Issue a warning at (GB)**: This box displays the maximum storage limit before a warning is issued to the user. If the mailbox size reaches or exceeds the value specified, Exchange sends a warning message to the user.
     
@@ -117,17 +115,15 @@ Click **More options** to view or change the mailbox storage quota and the delet
   - **Don't permanently delete items until the database is backed up**: Select this check box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
     
 #### Contact Information
-<a name="ContactInformation"> </a>
 
 Use the **Contact Information** section to view or change the user's contact information. The information on this page is displayed in the address book. Click **More options** to display additional boxes.
   
 > [!TIP]
 > You can use the **State/Province** box to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
   
-Mailbox users can use Outlook or Outlook Web App to view and change their own contact information. But they can't change the information in the **Notes** and **Web page** boxes.
+Mailbox users can use Outlook or Outlook on the web (formerly known as Outlook Web App) to view and change their own contact information. But they can't change the information in the **Notes** and **Web page** boxes.
   
 #### Organization
-<a name="Organization"> </a>
 
 Use the **Organization** section to record detailed information about the user's role in the organization. This information is displayed in the address book. Also, you can create a virtual organization chart that is accessible from email clients such as Outlook.
   
@@ -142,7 +138,6 @@ Use the **Organization** section to record detailed information about the user's
 - **Direct reports**: You can't modify this box. A *direct report* is a user who reports to a specific manager. If you've specified a manager for the user, that user appears as a direct report in the details of the manager's mailbox. For example, Kari manages Chris and Kate, so Kari's mailbox is specified in the **Manager** box of Chris's mailbox and Kate's mailbox, and Chris and Kate appear in the **Direct reports** box in the properties of Kari's mailbox.
     
 #### Email Address
-<a name="EmailAddress"> </a>
 
 Use the **Email Address** section to view or change the email addresses associated with the user mailbox. This includes the user's primary SMTP address and any associated proxy addresses. The primary SMTP address (also known as the *default reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
   
@@ -154,15 +149,14 @@ Use the **Email Address** section to view or change the email addresses associat
     
   - **Custom address type**: Click this button and type one of the supported non-SMTP email address types in the **\* Email address** box.
     
-    > [!NOTE]
-    > With the exception of X.400 addresses, Exchange doesn't validate custom addresses for proper formatting. You must make sure that the custom address you specify complies with the format requirements for that address type.
+     > [!NOTE]
+     > With the exception of X.400 addresses, Exchange doesn't validate custom addresses for proper formatting. You must make sure that the custom address you specify complies with the format requirements for that address type.
   
   - **Make this the reply address**: In Exchange Online, you can select this check box to make the new email address the primary SMTP address for the mailbox. This check box isn't available in the EAC in Exchange Server.
     
 - **Automatically update email addresses based on the email address policy applied to this recipient**: Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization. This box is selected by default.
     
 #### Mailbox Features
-<a name="MailboxFeatures"> </a>
 
 Use the **Mailbox Features** section to view or change the following mailbox features and settings: 
   
@@ -174,14 +168,14 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
     
 - **Address book policy**: This box shows the address book policy applied to the mailbox. An address book policy allows you to segment users into specific groups to provide customized views of the address book. To apply or change the address book policy applied to the mailbox, select one from the drop-down list.
     
-- **Unified Messaging**: This feature is disabled by default. When you enable Unified Messaging (UM) in Exchange 2016, the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a User for Unified Messaging](http://technet.microsoft.com/library/ad027767-5e14-4cb1-9f8a-0791d9188db5.aspx). (**Note**: Unified Messaging is not available in Exchange 2019.)
+- **Unified Messaging (not available in Exchange 2019)**: This feature is disabled by default. When you enable Unified Messaging (UM) in Exchange 2016, the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a User for Unified Messaging](http://technet.microsoft.com/library/ad027767-5e14-4cb1-9f8a-0791d9188db5.aspx).
     
     > [!NOTE]
     > A UM dial plan and a UM mailbox policy must exist before you can enable UM.
   
 - **Mobile Devices**: Use this section to view and change the settings for Exchange ActiveSync, which is enabled by default. Exchange ActiveSync enables access to an Exchange mailbox from a mobile device. Click **Disable Exchange ActiveSync** to disable this feature for the mailbox.
     
-- **Outlook Web App**: This feature is enabled by default. Outlook Web App enables access to an Exchange mailbox from a web browser. Click **Disable** to disable Outlook Web App for the mailbox. Click **Edit details** to add or change an Outlook Web App mailbox policy for the mailbox.
+- **Outlook Web App**: This feature is enabled by default. Outlook on the web enables access to an Exchange mailbox from a web browser. Click **Disable** to disable Outlook on the web for the mailbox. Click **Edit details** to add or change an Outlook on the web mailbox policy for the mailbox.
     
 - **IMAP**: This feature is enabled by default. Click **Disable** to disable IMAP for the mailbox.
     
@@ -200,7 +194,7 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
   - **URL**: Use this box to provide a URL to a website that provides information or guidance about the litigation hold on the mailbox.
     
     > [!NOTE]
-    > The text from these boxes appears in the user's mailbox only if they are using Outlook 2010 or later versions. It doesn't appear in Outlook Web App or other email clients. To view the text from the Note and URL boxes in Outlook, click the **File** tab, and on the **Info** page, under **Account Settings**, you'll see the litigation hold comment.
+    > The text from these boxes appears in the user's mailbox only if they are using Outlook 2010 or later versions. It doesn't appear in Outlook on the web or other email clients. To view the text from the Note and URL boxes in Outlook, click the **File** tab, and on the **Info** page, under **Account Settings**, you'll see the litigation hold comment.
   
 - **Archiving**: If an archive mailbox doesn't exist for the user, this feature is disabled. To enable an archive mailbox, click **Enable**. If the user has an archive mailbox, the size of the archive mailbox and usage statistics are displayed. Click **Edit details** to view and change the following archive mailbox settings: 
     
@@ -208,7 +202,7 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
     
   - **Database**: This read-only box shows the name of the mailbox database that hosts the archive mailbox.
     
-  - **Name**: Type the name of the archive mailbox in this box. This name is displayed under the folder list in Outlook or Outlook Web App.
+  - **Name**: Type the name of the archive mailbox in this box. This name is displayed under the folder list in Outlook or Outlook on the web.
     
   - **Archive quota (GB)**: This box shows the total size of the archive mailbox. To change the size, type a new value in the box or select a value from the drop-down list.
     
@@ -245,12 +239,10 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
   - **Senders in the following list**: Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../../media/ITPro_EAC_.png).
     
 #### Member Of
-<a name="MemberOf"> </a>
 
 Use the **Member Of** section to view a list of the distribution groups or security groups to which this user belongs. You can't change membership information on this page. Note that the user may match the criteria for one or more dynamic distribution groups in your organization. However, dynamic distribution groups aren't displayed on this page because their membership is calculated each time they are used.
   
 #### MailTip
-<a name="MailTip"> </a>
 
 Use the **MailTip** section to add a MailTip to alert users of potential issues if they send a message to this recipient. A MailTip is text that is displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc boxes of a new email message.
   
@@ -258,7 +250,6 @@ Use the **MailTip** section to add a MailTip to alert users of potential issues 
 >  MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
   
 #### Mailbox Delegation
-<a name="MailboxDelegation"> </a>
 
 Use the **Mailbox Delegation** section to assign permissions to other users (also called *delegates*) to allow them to sign in to the user's mailbox or send messages on behalf of the user. You can assign the following permissions: 
   
@@ -329,7 +320,6 @@ To verify that you've successfully changed properties for a user mailbox, do the
   ```
 
 ## Bulk edit user mailboxes
-<a name="bulkedit"> </a>
 
 You can use the EAC to change the properties for multiple user mailboxes. When you select two or more user mailboxes from the mailbox list in the EAC, the properties that can be bulk edited are displayed in the Details pane. When you change one of these properties, the change is applied to all selected mailboxes.
   
@@ -343,7 +333,7 @@ Here's a list of the user mailbox properties and features that can be bulk edite
     
 - **Mailbox quota**: Change the mailbox quota values and the retention period for deleted items.
     
-- **Email connectivity**: Enable or disable Outlook Web App, POP3, IMAP, MAPI, and Exchange ActiveSync.
+- **Email connectivity**: Enable or disable Outlook on the web, POP3, IMAP, MAPI, and Exchange ActiveSync.
     
 - **Archive**: Enable or disable the archive mailbox.
     
@@ -381,6 +371,4 @@ To verify that you've successfully bulk edited user mailboxes, do one of the fol
   Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'UserMailbox')} | Format-List Name,ArchiveDatabase,RetentionPolicy
   ```
 
-    For more information about the available parameters for the **Get-Mailbox** cmdlet, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
-    
-
+  For more information about the available parameters for the **Get-Mailbox** cmdlet, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
