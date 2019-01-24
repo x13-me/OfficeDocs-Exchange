@@ -65,7 +65,6 @@ After you've created a room mailbox, you can [Change how a room mailbox handles 
 For information on how to create a room mailbox using the Exchange Management shell, see Examples 2 and 3 in [New-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
 
 ## Change how a room mailbox handles meeting requests
-<a name="BookingOptions"> </a>
 
 1. In the Exchange admin center, navigate to **Recipients** \> **Resources**.
 
@@ -102,7 +101,6 @@ Use the **Booking Options** section to view or change the settings for the booki
 There's also a box on this page that you can use to write a message that will be sent to users who send booking requests to reserve the room.
 
 ## Change other room mailbox properties
-<a name="RoomMbxProps"> </a>
 
 After you create a room mailbox, you can make changes and set additional properties by using the Exchange admin center or the Exchange Management Shell.
 
@@ -114,16 +112,15 @@ After you create a room mailbox, you can make changes and set additional propert
 
 3. On the room mailbox properties page, click one of the following sections to view or change properties (for booking options, see [Change how a room mailbox handles meeting requests](room-mailboxes.md#BookingOptions)).
 
-  - [General](#General.md)
+   - [General](#general)
 
-  - [Contact Information](#ContactInformation.md)
+   - [Contact Information](#contact-information)
 
-  - [Email Address](#EmailAddress.md)
+   - [Email Address](#email-address)
 
-  - [MailTip](#MailTip.md)
+   - [MailTip](#mailtip)
 
 #### General
-<a name="General"> </a>
 
 Use the **General** section to view or change basic information about the resource.
 
@@ -149,12 +146,11 @@ Click **More options** to view or change these additional properties:
 
 - **Address book policy**: Use this option to specify an address book policy (ABP) for the room mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. To learn more, see [Address book policies in Exchange Server](../email-addresses-and-address-books/address-book-policies/address-book-policies.md).
 
-    In the drop-down list, select the policy that you want associated with this mailbox.
+   In the drop-down list, select the policy that you want associated with this mailbox.
 
 - **Custom attributes**: This section displays the custom attributes defined for the room mailbox. To specify custom attribute values, click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png). You can specify up to 15 custom attributes for the recipient.
 
 #### Contact Information
-<a name="ContactInformation"> </a>
 
 Use the **Contact Information** section to view or change the contact information for the room. The information on this page is displayed in the address book.
 
@@ -162,7 +158,6 @@ Use the **Contact Information** section to view or change the contact informatio
 > You can use the **State/Province** box to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
 
 #### Email Address
-<a name="EmailAddress"> </a>
 
 Use the **Email Address** section to view or change the email addresses associated with the room mailbox. This includes the mailbox's primary SMTP address and any associated proxy addresses. The primary SMTP address (also known as the *reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
@@ -175,6 +170,7 @@ Use the **Email Address** section to view or change the email addresses associat
   - **Custom address type**: Click this button and type one of the supported non-SMTP email address types in the **\* Email address** box.
 
     **Notes**:
+
     - With the exception of X.400 addresses, Exchange doesn't validate custom addresses for correct formatting. You must make sure that the custom address you specify complies with the format requirements for that address type.
 
     - When you add a new email address, you have the option to make it the primary SMTP address.
@@ -182,7 +178,6 @@ Use the **Email Address** section to view or change the email addresses associat
 - **Automatically update email addresses based on the email address policy applied to this recipient**: Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization.
 
 #### MailTip
-<a name="MailTip"> </a>
 
 Use the **MailTip** section to add a MailTip to alert users of potential issues before they send a booking request to the room mailbox. A MailTip is text that's displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
 
@@ -234,7 +229,6 @@ Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'RoomMailbox')
 ```
 
 ## Create a room list
-<a name="RoomMbxProps"> </a>
 
 If you're planning to have more than a hundred rooms, or already have more than a hundred rooms created, use a room list to help you organize your rooms. If your company has several buildings with rooms that can be booked for meetings, it might help to create room lists for each building. Room lists are specially marked distribution groups that you can use the same way you use distribution groups. However, you can only create room lists using the Exchange Management Shell.
 
@@ -265,7 +259,6 @@ Set-DistributionGroup -Identity "Building 34 Conference Rooms" -RoomList
 ```
 
 ## How do you know this worked?
-<a name="RoomMbxProps"> </a>
 
 To verify that you've successfully changed properties for a room mailbox, do the following:
 
@@ -276,5 +269,3 @@ To verify that you've successfully changed properties for a room mailbox, do the
   ```
   Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'RoomMailbox')} | Get-CalendarProcessing | Format-List Identity,ScheduleOnlyDuringWorkHours,MaximumDurationInMinutes
   ```
-
-
