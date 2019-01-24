@@ -39,7 +39,6 @@ Unlike regular distribution groups that contain a defined set of members, the me
 ## Create a dynamic distribution group
 
 ### Use the EAC to create a dynamic distribution group
-<a name="createddg"> </a>
 
 1. In the EAC, navigate to **Recipients** \> **Groups** \> **New** \> **Dynamic distribution group**.
     
@@ -104,7 +103,6 @@ Unlike regular distribution groups that contain a defined set of members, the me
   > If you want to specify rules for attributes other than the ones available in the EAC, you must use the Exchange Management Shell to create a dynamic distribution group. Keep in mind that the filter and condition settings for dynamic distribution groups that have custom recipient filters can be managed only by using the Exchange Management Shell. For an example of how to create a dynamic distribution group with a custom query, see the next section on using the Exchange Management Shell to create a dynamic distribution group.
   
 ### Use the Exchange Management Shell to create a dynamic distribution group
-<a name="UseShell"> </a>
 
 > [!NOTE]
 > If you do not specify an OU in your cmdlets, the default OU scope will be the local OU (the OU in which the dynamic distribution group is being created). With the `New-DynamicDistributionGroup` cmdlet, use the `RecipientContainer` parameter to specify an OU.
@@ -130,7 +128,6 @@ New-DynamicDistributionGroup -Name "Full Time Employees" -RecipientFilter {(Reci
 For detailed syntax and parameter information, see [New-DynamicDistributionGroup](http://technet.microsoft.com/library/e9920bd1-06c1-4f75-992f-dd7fc98a5c2b.aspx).
   
 ### How do you know this worked?
-<a name="UseShell"> </a>
 
 To verify that you've successfully created a dynamic distribution group, do one of the following:
   
@@ -151,25 +148,24 @@ To verify that you've successfully created a dynamic distribution group, do one 
 2. In the list of groups, click the dynamic distribution group that you want to view or change, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).
     
 3. On the group's properties page, click one of the following sections to view or change properties.
-    
-  - [General](#General.md)
-    
-  - [Ownership](#ownership.md)
-    
-  - [Membership](#membership.md)
-    
-  - [Delivery management](#deliverymanagement.md)
-    
-  - [Message approval](#messageapproval.md)
-    
-  - [Email options](#emailoptions.md)
-    
-  - [MailTip](#mailtip.md)
-    
-  - [Group delegation](#groupdelegation.md)
+
+   - [General](#general)
+
+   - [Ownership](#ownership)
+
+   - [Membership](#membership
+
+   - [Delivery management](#delivery-management)
+
+   - [Message approval](#message-approval)
+
+   - [Email options](#email-options)
+
+   - [MailTip](#mailtip)
+
+   - [Group delegation](#group-delegation)
     
 #### General
-<a name="general"> </a>
 
 Use this section to view or change basic information about the group.
   
@@ -184,19 +180,16 @@ Use this section to view or change basic information about the group.
 - **Organizational unit**: This read-only box displays the organizational unit (OU) that contains the dynamic distribution group. You have to use Active Directory Users and Computers to move the group to a different OU.
     
 #### Ownership
-<a name="Ownership"> </a>
 
 Use this section to assign a group owner. A dynamic distribution group can have only one owner. The group owner appears on the **Managed by** tab of the object in Active Directory Users and Computers.
   
 You can add owners by clicking **Browse** and selecting the owner from the list. To remove the owner, click **Clear** (**X**) and then click **Save**.
   
 #### Membership
-<a name="membership"> </a>
 
 Use this section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see [Use the EAC to create a dynamic distribution group](#createddg.md) in the procedures for configuring membership when you use the EAC to create a new dynamic distribution group.
   
 #### Delivery management
-<a name="deliverymanagement"> </a>
 
 Use this section to manage who can send email to this group.
   
@@ -204,15 +197,14 @@ Use this section to manage who can send email to this group.
     
 - **Senders inside and outside of my organization**: Select this option to allow anyone to send messages to the group.
     
-    You can further limit who can send messages to the group by allowing only specific senders to send messages to this group. Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png) and then select one or more recipients. If you add senders to this list, they are the only ones who can send mail to the group. Mail sent by anyone not in the list will be rejected.
+   You can further limit who can send messages to the group by allowing only specific senders to send messages to this group. Click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png) and then select one or more recipients. If you add senders to this list, they are the only ones who can send mail to the group. Mail sent by anyone not in the list will be rejected.
     
-    To remove a person or a group from the list, select them in the list and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png).
+   To remove a person or a group from the list, select them in the list and then click **Remove** ![Remove icon](../../media/ITPro_EAC_RemoveIcon.png).
     
     > [!IMPORTANT]
     > If you've configured the group to allow only senders inside your organization to send messages to the group, email sent from a mail contact is rejected, even if they're added to this list.
   
 #### Message approval
-<a name="messageapproval"> </a>
 
 Use this section to set options for moderating the group. Moderators approve or reject messages sent to the group before they reach the group members.
   
@@ -231,7 +223,6 @@ Use this section to set options for moderating the group. Moderators approve or 
   - **Don't notify anyone when a message isn't approved**: When you select this option, notifications aren't sent to message senders whose messages aren't approved by the group moderators.
     
 #### Email options
-<a name="emailoptions"> </a>
 
 Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the *reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
   
@@ -257,7 +248,6 @@ Use this section to view or change the email addresses associated with the group
 - **Automatically update email addresses based on the email address policy applied to this recipient**: Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization. This box is selected by default.
     
 #### MailTip
-<a name="mailtip"> </a>
 
 Use this section to add a MailTip to alert users of potential issues before they send a message to this group. A MailTip is text that's displayed in the InfoBar when this group is added to the To, Cc, or Bcc lines of a new email message. For example, you could add a MailTip to large groups to warn potential senders that their message will be sent to lots of people.
   
@@ -265,7 +255,6 @@ Use this section to add a MailTip to alert users of potential issues before they
 > MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
   
 #### Group delegation
-<a name="groupdelegation"> </a>
 
 Use this section to assign permissions to a user (called a *delegate*) to allow them to send messages as the group or send messages on behalf of the group. You can assign the following permissions: 
   
@@ -317,10 +306,8 @@ To verify that you've successfully changed properties for a dynamic distribution
   Get-DynamicDistributionGroup -ResultSize unlimited | Format-List Name,HiddenFromAddressListsEnabled,MaxReceiveSize,ModerationEnabled,ModeratedBy
   ```
 
-    For the example above where the message limits were changed, run this command.
+  For the example above where the message limits were changed, run this command.
     
   ```
   Get-Mailbox -OrganizationalUnit "Marketing" | Format-List Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
   ```
-
-
