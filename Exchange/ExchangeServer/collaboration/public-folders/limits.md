@@ -3,7 +3,7 @@ title: "Limits for public folders"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 7/12/2018
+ms.date: 
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: exchange-server-it-pro
@@ -34,7 +34,7 @@ The following table lists the limits for public folders in on-premises Exchange 
 |Public folder mailbox size|100 GB|[Configure storage quotas for a mailbox](../../recipients/user-mailboxes/storage-quotas.md)|
 |Number of user logons per public folder mailbox|2,000 concurrent user logons|We recommend that you configure your hierarchy so that you have no more than 2,000 users per public folder mailbox. For example, if you have 20,000 users, you should have 10 public folder mailboxes.|
 |Moved item retention|14 days recommended|Use the _DefaultPublicFolderMovedItemRetention_ parameter on the **Set-OrganizationConfig** cmdlet.|
-|Age limit|We recommend that you set this as the same default that you use for regular mailboxes.|These settings can be set at the following levels:**Organizational level**: The _DefaultPublicFolderAgeLimit_ parameter on the **Set-OrganizationConfig** cmdlet.**Mailbox level**: The _AgeLimit_ parameter on the **Set-Mailbox** cmdlet.**Folder level**: The _AgeLimit_ parameter on the **Set-PublicFolder** cmdlet.|
+|Age limit|We recommend that you set this as the same default that you use for regular mailboxes.|These settings can be set at the following levels:**Organizational level**: The _DefaultPublicFolderAgeLimit_ parameter on the **Set-OrganizationConfig** cmdlet.**Folder level**: The _AgeLimit_ parameter on the **Set-PublicFolder** cmdlet.|
 |Deleted item retention|We recommend that you set this as the same default that you use for regular mailboxes.|These settings can be set at the following levels:**Organizational level**: The _DefaultPublicFolderMovedItemRetention_ parameter on the **Set-OrganizationConfig** cmdlet.**Mailbox level**: The _RetainDeletedItemsFor_ on the **Set-Mailbox** cmdlet.**Folder level:**: The _RetainDeleteItemsFor_ parameter on the **Set-PublicFolder** cmdlet.|
 |Maximum number of public folders that can be migrated from Exchange 2010 to Exchange 2016|500,000|This is the maximum number of public folders you can move to Exchange from Exchange 2010 in a single migration. For details on migrating public folders, see [Use batch migration to migrate public folders from Exchange 2010 to Exchange 2016](batch-migration-from-previous-versions.md).|
    
