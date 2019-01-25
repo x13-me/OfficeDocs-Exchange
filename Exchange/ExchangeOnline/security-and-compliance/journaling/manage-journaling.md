@@ -117,7 +117,7 @@ To verify that you have successfully modified a journal rule, do one of the foll
 - From Exchange Online PowerShell, verify that you modified the journal rule successfully by running the following command. This command will list the properties you modified along with the name of the rule (the example below verifies the rule modified in Exchange Online PowerShell example above):
 
    ```
-   Get-TransportRule -Identity "TraderVault" | Format-List Name,Recipient,JournalEmailAddress,Scope
+   Get-JournalRule -Identity "TraderVault" | Format-List Name,Recipient,JournalEmailAddress,Scope
    ```
 
 ## Enable or disable a journal rule
