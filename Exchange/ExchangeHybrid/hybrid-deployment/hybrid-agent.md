@@ -67,8 +67,8 @@ config changes can be made.
 
 ### Client Access Server (CAS)
 
-The CAS Server’s proxy settings (obtainable from Get-ExchangeServer \| fl
-InternetWebProxy) must be set correctly, or outbound free/busy may fail. In
+The CAS Server’s proxy settings (from `Get-ExchangeServer | Format-List
+InternetWebProxy`) must be set correctly, or outbound free/busy may fail. In
 fact, the SHCW may not be able to configure delegated auth due to this. Though
 the SHCW issues the command to create the federation trust, like most powershell
 commands, it is actually executed in the context of the Client Access Server,
