@@ -30,11 +30,11 @@ but to do so, it requires remote powershell connectivity to the CAS server
 selected for the agent endpoint.
 
 Note that as a ClickOnce client, a browser with ClickOnce support such as
-Internet Explorer or Edge is required. If your browser supports click-once
+Internet Explorer or Edge is required. If your browser supports ClickOnce
 activation via a plugin, the SHCW will also work. Once activated, the first step
 of the ClickOnce application is either to download its core components (first
 install) or check for an upgrade (subsequent installs). After this, it will
-perform a number of tests, some of which will require RPC access to the Domain
+perform a number of tests, some of which will require Remote Procedure Call (RPC) access to the Domain
 Controller (credential validation).
 
 A future update will modify these constraints.
@@ -67,8 +67,8 @@ config changes can be made.
 
 ### Client Access Server (CAS)
 
-The CAS Server’s proxy settings (obtainable from Get-ExchangeServer \| fl
-InternetWebProxy) must be set correctly, or outbound free busy may fail. In
+The CAS Server’s proxy settings (from `Get-ExchangeServer | Format-List
+InternetWebProxy`) must be set correctly, or outbound free/busy may fail. In
 fact, the SHCW may not be able to configure delegated auth due to this. Though
 the SHCW issues the command to create the federation trust, like most powershell
 commands, it is actually executed in the context of the Client Access Server,
@@ -95,7 +95,7 @@ designated Hybrid Agent server is also supported in the DMZ.
     with a domain controller to authenticate your on-premises Exchange Org admin
     credentials. This means that you must be domain joined.
 5. Installation must be done as an administrator account.
-6. TLS 1.0 must be enabled on the machine where the Hybrid Agent is installed.
+6. TLS 1.2 must be enabled on the machine where the Hybrid Agent is installed.
 
 #### Port specifications
 
@@ -122,13 +122,13 @@ the recovery method.
 
 There are two Exchange related flows supported in private preview:
 
-1. Free busy requests from cloud users to on-premises
+1. Free/busy requests from cloud users to on-premises
 2. Mailbox migrations to/from cloud
 
 These flows are configured by the Hybrid Configuration Wizard (HCW) in the Organization Relationship and the
 Intra Organization Connector object in the cloud, and the Migration Endpoint.
 
-Free busy requests from on-premises users to cloud users do not traverse the
+Free/busy requests from on-premises users to cloud users do not traverse the
 Hybrid Agent. These requests still require your Exchange servers have outbound
 connectivity to Office 365 end points.
 https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
@@ -148,7 +148,7 @@ office 365.
 The HCW is the application responsible for both
 installing and configuring the Hybrid Agent and setting the required
 configuration both on-premise and in the tenant to enable our traditional hybrid
-feature set (free busy, migrations, mail routing, etc.).
+feature set (free/busy, migrations, mail routing, etc.).
 
 You must run the HCW from the machine where you want the agent installed. After
 the Agent is installed and configured, the HCW will locate a preferred server to
@@ -220,7 +220,7 @@ switch by executing the HCW application from the following URL:
     Organization Connector. Both the new migration endpoint value and the
     TargetSharingEPR value are set on the tenant or cloud side only as we
     use this new path (URL) to send requests from cloud to on-premises for free
-    busy and migrations. On-premises free busy requests for cloud users still
+    busy and migrations. On-premises free/busy requests for cloud users still
     reach outbound to the internet. You can view the specific values
     configured for each of these by running Get-MigrationEndpoint and
     Get-OrganizationRelationship from the tenant RPS session. E.g.:
@@ -261,7 +261,7 @@ Add/Remove programs:
 ## Testing & validation of the Hybrid Agent
 
 After successful installation of the Hybrid Agent and HCW configurations, the
-following are two simple tests to validate free busy and mailbox migration flow
+following are two simple tests to validate free/busy and mailbox migration flow
 via the Agent.
 
 On the server where the Hybrid Agent is installed, open Perform Monitor. Add the
@@ -284,7 +284,7 @@ of requests will have incremented up.
 
 Performing a test mailbox move from on-premises to the cloud is also an option.
 
-### Free Busy
+### Free/Busy
 
 The same validation can be performed by logging into a cloud mailbox and
-requesting free busy via a test meeting request for a mailbox located on-premises.
+requesting free/busy via a test meeting request for a mailbox located on-premises.
