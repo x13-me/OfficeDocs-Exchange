@@ -197,7 +197,7 @@ The following table identifies the version of the Microsoft .NET Framework that
 > [!NOTE]  
 > When upgrading Exchange from an unsupported CU to the current CU and no intermediate CUs are available, you should upgrade to the latest version of .NET that's supported by Exchange first and then immediately upgrade to the current CU. This method doesn't replace the need to keep your Exchange servers up to date and on the latest, supported, CU.<BR>Microsoft makes no claim that an upgrade failure will not occur using this method, which may result in the need to contact Microsoft Support Services.
 
-|**.NET Framework**|**Exchange 2019**|**Exchange 2016 CU11 or later**|**Exchange 2016 CU8 to CU12**|**Exchange 2016 CU4 to CU9**|**Exchange 2013 CU21 or later**|**Exchange 2013 CU19 to CU20**|**Exchange 2013 CU16 to CU18**|**Exchange 2010 SP3**|
+|**.NET Framework**|**Exchange 2019**|**Exchange 2016 CU11 or later**|**Exchange 2016 CU8 to CU10**|**Exchange 2016 CU4 to CU7**|**Exchange 2013 CU21 or later**|**Exchange 2013 CU19 to CU20**|**Exchange 2013 CU16 to CU18**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |.NET Framework 4.7.2|X|X|||X||||
 |.NET Framework 4.7.1|||X||X|X|||
