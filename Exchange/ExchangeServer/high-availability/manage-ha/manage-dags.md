@@ -47,7 +47,7 @@ The requirements for the witness server are as follows:
     
 - The witness server must be in the same Active Directory forest as the DAG.
     
-- The witness server must be running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows Server 2003 R2, or Windows Server 2003.
+- The witness server must be running Windows Server 2008 or later.
     
 - A single server can serve as a witness for multiple DAGs. However, each DAG requires its own witness directory.
     

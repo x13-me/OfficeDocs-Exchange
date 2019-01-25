@@ -118,6 +118,8 @@ The following services and features of Outlook for iOS and Android are not avail
 
 - **Calendar Apps**: Calendar apps (Facebook, Wunderlist, Evernote, Meetup) are not available with GCC accounts.
 
+- **Add-Ins**: Add-ins are not available with GCC accounts.
+
 - **Storage Providers**: Only the GCC user's OneDrive for Business storage account can be added within Outlook for iOS and Android. Third-party storage accounts (e.g., Dropbox, Box) cannot be added.
 
 - **Location services**: Bing location services are not available with GCC accounts. Features that rely on location services, like Cortana Time To Leave, are also unavailable.
