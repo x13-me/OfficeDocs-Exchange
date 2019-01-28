@@ -57,7 +57,7 @@ Migration batches that are created are listed in the migration queue. The follow
 |**Failed**|The number of mailboxes in the migration batch for which the migration failed. You can display information about specific mailboxes that have migration errors. For more information, see [Migration users status report](migration-users-status-report.md).|
 
 > [!IMPORTANT]
-> Migration batches with a status of **Synced** that have no administrator-initiated activity (for example, no administrator has stopped and restarted a migration batch or edited a migration batch) for the last 90 days will be stopped and then deleted 30 days later if no further action is taken by the administrator.
+> Migration batches with a status of **Synced** that have no administrator-initiated activity (for example, no administrator has stopped and restarted a migration batch or edited a migration batch) for the last 60 days will be stopped. All batches with **Stopped** or **Failed** status will be removed after 90 days. All batches with **Completed** status will be removed after 60 days.
 
 The Migration dashboard contains a set of commands that you can use to manage migration batches. After you create a migration batch, you can select it, and then click one of the following commands. If a migration batch is in a status state that isn't supported by a command, the command is either dimmed or not displayed because it's unavailable.
 

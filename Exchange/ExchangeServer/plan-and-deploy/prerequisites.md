@@ -186,9 +186,13 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
 
     b. [Microsoft Knowledge Base article KB3206632](https://go.microsoft.com/fwlink/p/?linkid=837748)
 
-    c. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+    c. [Visual C++ Redistributable Packages for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
-    d. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
+    d. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+
+       **Note**: Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Other Exchange installations (management tools and Edge Transport) only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
+
+    e. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
 
 ### Exchange 2016 Edge Transport servers on Windows Server 2016
 
@@ -202,7 +206,7 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
 
     a. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
 
-    b. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+    c. [Visual C++ Redistributable Packages for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
 ## Windows Server 2012 and Windows Server 2012 R2 prerequisites for Exchange 2016
 
@@ -220,9 +224,13 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
     a. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
 
-    b. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+    b. [Visual C++ Redistributable Packages for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
-    c. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
+    c. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+
+       **Note**: Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Installations of the Exchange management tools and Edge Transport servers only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
+
+    d. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
 
 ### Exchange 2016 Edge Transport servers on Windows Server 2012 or Windows Server 2012 R2
 
@@ -236,13 +244,13 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
     a. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
 
-    b. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+    b. [Visual C++ Redistributable Packages for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
 ## Windows client prerequisites for the Exchange 2016 management tools
 
 ### Exchange 2016 management tools on Windows 10
 
-1. Install [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913).
+1. Install [Visual C++ Redistributable Packages for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788).
 
 2. Run the following command in an elevated Windows PowerShell window (a Windows PowerShell window you open by selecting **Run as administrator**): 
 
@@ -254,7 +262,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 1. Install [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906).
 
-2. Install [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913).
+2. Install [Visual C++ Redistributable Packages for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788).
 
 3. Run the following command in an elevated Windows PowerShell window (a Windows PowerShell window you open by selecting **Run as administrator**): 
 
