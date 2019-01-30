@@ -24,7 +24,7 @@ Understanding server health and performance is critical to designing and maintai
 
 - **Monitoring probe engine**: The *monitoring probe engine* stores the business logic about what constitutes a healthy state. Like a pattern recognition engine, the monitoring probe engine looks for patterns and measurements that differ from a healthy state, and then evaluates whether a component or feature is unhealthy.
 
-- **Responder engine**: When the *responder engine* is alerted about an unhealthy component, its first action is to try to recover that component. Managed availability enables multi-stage recovery actions. The first attempt may be to restart the application pool, the second attempt may be to restart the corresponding service, and the third attempt may be to restart the server. And, the final attempt may be to put the server offline, so that it no longer accepts traffic. If all of these actions fail, an alert is sent to the help desk.
+- **Responder engine**: When the *responder engine* is alerted about an unhealthy component, it first tries to recover that component. Managed availability enables multi-stage recovery actions. The first attempt may be to restart the application pool, the second attempt may be to restart the corresponding service, and the third attempt may be to restart the server. And, the final attempt may be to put the server offline, so that it no longer accepts traffic. If all of these actions fail, an alert is sent to the help desk.
 
 For more information about managed availability, see [Managed availability](../high-availability/managed-availability/managed-availability.md).
 
