@@ -253,7 +253,7 @@ $BBA | foreach {Set-User -Identity $_ -STSRefreshTokensValidFrom $([System.DateT
 To view a summary list of the names of all existing authentication policies, run the following command:
 
 ```
-Get-AuthenticationPolicy | Format-Table -Auto Name
+Get-AuthenticationPolicy | Format-Table Name -Auto
 ```
 
 To view detailed information about a specific authentication policy, use this syntax:
