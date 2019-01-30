@@ -60,7 +60,7 @@ When you disable modern authentication in Exchange Online, Outlook 2013 or later
 3. To verify that the change was successful, run this command:
 
      ```
-     Get-OrganizationConfig | Format-Table -Auto Name,OAuth*
+     Get-OrganizationConfig | Format-Table Name,OAuth* -Auto
      ```
 
 ## See also
