@@ -59,5 +59,5 @@ $USContoso | foreach {Set-Mailbox $_.Identity -OfflineAddressBook "Contoso Unite
 To verify that you've successfully assigned an OAB to a mailbox, replace <MailboxIdentity> with the identity of the mailbox, and run the following command:
 
 ```
-Get-Mailbox -Identity "<MailboxIdentity>" | Format-Table -Auto Name,OfflineAddressBook
+Get-Mailbox -Identity "<MailboxIdentity>" | Format-Table Name,OfflineAddressBook -Auto
 ```

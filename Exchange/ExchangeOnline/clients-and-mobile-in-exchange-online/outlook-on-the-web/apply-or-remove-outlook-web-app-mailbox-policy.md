@@ -144,7 +144,7 @@ To verify that you've applied an Outlook on the web mailbox policy to a mailbox,
 - In Exchange Online PowerShell, run the following command to verify the value of the **OwaMailboxPolicy** property for all mailboxes:
 
     ```
-    Get-CasMailbox -ResultSize unlimited | Format-Table -Auto Name,OwaMailboxPolicy
+    Get-CasMailbox -ResultSize unlimited | Format-Table Name,OwaMailboxPolicy -Auto
     ```
 
 ## Remove an Outlook on the web mailbox policy assignments from mailboxes
@@ -192,5 +192,5 @@ To verify that you've removed an Outlook on the web mailbox policy assignment fr
 - In Exchange Online PowerShell, run the following command to verify the value of the **OwaMailboxPolicy** property:
 
     ```
-    Get-CasMailbox -ResultSize unlimited | Format-Table -Auto Name,OwaMailboxPolicy
+    Get-CasMailbox -ResultSize unlimited | Format-Table Name,OwaMailboxPolicy -Auto
     ```

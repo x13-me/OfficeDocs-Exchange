@@ -218,11 +218,11 @@ To verify that you've successfully enabled and configured a hierarchical address
    ```
 
    ```
-   Get-Group -ResultSize unlimited | where {$_.IsHierarchicalGroup -match 'True'} | Format-Table -Auto SeniorityIndex,PhoneticDisplayName,DisplayName
+   Get-Group -ResultSize unlimited | where {$_.IsHierarchicalGroup -match 'True'} | Format-Table SeniorityIndex,PhoneticDisplayName,DisplayName -Auto
    ```
 
    ```
-   Get-Group -ResultSize unlimited | Format-Table -Auto SeniorityIndex,PhoneticDisplayName,DisplayName
+   Get-Group -ResultSize unlimited | Format-Table SeniorityIndex,PhoneticDisplayName,DisplayName -Auto
    ```
 
 ## Use Exchange Online PowerShell to disable a hierarchical address book

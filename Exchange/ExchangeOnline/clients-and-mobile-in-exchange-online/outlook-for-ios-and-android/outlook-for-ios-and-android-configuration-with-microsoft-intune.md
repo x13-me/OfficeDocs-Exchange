@@ -58,7 +58,7 @@ Outlook for iOS and Android offers administrators the ability to customize the d
 
 |**Key**|**Value**|**Device Enrollment Type**|
 |:-----|:-----|:-----|
-|com.microsoft.outlook.Mail.ExternalRecipientsToolTipEnabled|This value specifies whether the External Recipients MailTip is enabled. Setting the value to false will disable the MailTip. <br/> **Value type**: Boolean  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Required**: No  <br/> **Example**: False  <br/> |Managed devices|
+|com.microsoft.outlook.Mail.ExternalRecipientsToolTipEnabled|This value specifies whether the External Recipients MailTip is enabled. Setting the value to false will disable the MailTip. <br/> **Value type**: Boolean  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: False  <br/> **Required**: No  <br/> **Example**: False  <br/> |Managed devices|
 |com.microsoft.outlook.Mail.ExternalRecipientsToolTipEnabled.UserChangeAllowed|This value specifies whether the External Recipients MailTip setting can be changed by the end user. Note that at this time, there is no user configurable setting for MailTips.  <br/> **Value type**: Boolean  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Required**: No  <br/> **Example**: False  <br/> |Managed devices|
 
 ## Data protection settings
