@@ -170,7 +170,7 @@ To verify that you've successfully applied an ABP to a mailbox, use any of the f
 - In Exchange Online PowerShell, run the following command to verify the value of the **AddressBookPolicy** property:
 
     ```
-    Get-Mailbox -ResultSize unlimited | Format-Table -Auto Name,AddressBookPolicy
+    Get-Mailbox -ResultSize unlimited | Format-Table Name,AddressBookPolicy -Auto
     ```
 
 ## More information

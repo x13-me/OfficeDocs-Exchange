@@ -72,7 +72,7 @@ LitigationHoldDuration : Unlimited
 You can return information about multiple mailboxes by leaving out the _Identity_ parameter. This example returns the **DisplayName** and **LitigationHoldEnabled** properties for all mailboxes:
 
 ```
-Get-Mailbox -ResultSize unlimited | Format-Table -Auto DisplayName, LitigationHoldEnabled
+Get-Mailbox -ResultSize unlimited | Format-Table DisplayName, LitigationHoldEnabled -Auto
 ```
 
 In many cases, you only want to look at a subset of your mailboxes. For example, suppose you are asked to come up with a list of all the mailboxes that have been assigned a litigation hold. You can use the **Where-Object** cmdlet in conjunction with the **Get-Mailbox** cmdlet. The **Where-Object** cmdlet needs a filter phrase to tell Exchange Online PowerShell what set of mailboxes you are interested in.

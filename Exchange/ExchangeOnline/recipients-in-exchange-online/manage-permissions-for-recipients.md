@@ -150,7 +150,7 @@ To verify that you've successfully assigned or removed the Full Access permissio
 - Replace _\<MailboxIdentity\>_ with the identity of the mailbox and run the following command in Exchange Online PowerShell to verify that the delegate is or isn't listed..
 
    ```
-   Get-MailboxPermission <MailboxIdentity> | where {$_.AccessRights -like 'Full*'} | Format-Table -Auto User,Deny,IsInherited,AccessRights
+   Get-MailboxPermission <MailboxIdentity> | where {$_.AccessRights -like 'Full*'} | Format-Table User,Deny,IsInherited,AccessRights -Auto
    ```
 
    For more information, see [Get-MailboxPermission](http://technet.microsoft.com/library/56bcc678-1598-4c9b-8b4f-4fa11c89ec41.aspx).

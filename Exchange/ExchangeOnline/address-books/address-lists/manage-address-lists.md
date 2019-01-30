@@ -177,7 +177,7 @@ For example, suppose the address list named Oregon and Washington Users uses the
 To verify that you've successfully updated an address list, replace _\<AddressListIdentity\>_ with the name of the address list, and run the following command in Exchange Online PowerShell to verify the **RecipientFilterApplied** property value:
 
 ```
-Get-AddressList -Identity <AddressListIdentity> | Format-Table -Auto Name,RecipientFilterApplied
+Get-AddressList -Identity <AddressListIdentity> | Format-Table Name,RecipientFilterApplied -Auto
 ```
 
 ## Use Exchange Online PowerShell to modify address lists
