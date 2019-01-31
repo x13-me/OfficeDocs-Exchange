@@ -157,7 +157,7 @@ To verify that you've successfully specified the default mailbox plan, use any o
 - In Exchange Online PowerShell, run the following command to verify the property values:
 
    ```
-   Get-MailboxPlan | Format-Table -Auto DisplayName,IsDefault
+   Get-MailboxPlan | Format-Table DisplayName,IsDefault -Auto
    ```
 
 - Create a new mailbox without assigning a license as described in [Create user mailboxes in Exchange Online](../create-user-mailboxes.md). Replace \<MailboxIdentity\> with the name, alias, account name, or email address of the mailbox, and run the following command in Exchange Online PowerShell to verify the **MailboxPlan** property value:
