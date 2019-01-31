@@ -28,7 +28,7 @@ In an Exchange hybrid deployment, you can configure an on-premises primary mailb
   
 ## Before you begin
 
-- The user with the on-premises primary mailbox must a user account in your Office 365 organization.
+- The user with the on-premises primary mailbox must be a user account in your Office 365 organization.
     
 - The Office 365 user account must be assigned an Exchange Online Archiving for Exchange Server license. The steps for assigning a license are included in the procedures in Step 1.
     
