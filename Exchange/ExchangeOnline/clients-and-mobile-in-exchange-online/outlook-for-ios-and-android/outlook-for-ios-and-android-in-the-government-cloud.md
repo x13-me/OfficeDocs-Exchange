@@ -126,3 +126,7 @@ The following services and features of Outlook for iOS and Android are not avail
 
 - **Favorites**: Favorite folders, groups and people are not available with GCC accounts.
 
+- **MailTips**: The External recipients MailTip is not available with GCC accounts.
+
+- **Office Lens**: Office Lens technology (e.g., scanning business cards, taking pictures) included in Outlook for iOS and Android is not available with GCC accounts.
+
