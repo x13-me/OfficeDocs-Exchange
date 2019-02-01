@@ -51,6 +51,10 @@ Alternatively, depending on the third-party's requirements, you might need to in
   v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com include:third_party_cloud_service.com -all
   ```
 
+### Things of Note
+
+It should be noted that there should be considerations made when using hybrid deployments between On-premise and Office 365.  To learn more about this, please see [Exchange Server hybrid deployments](https://docs.microsoft.com/en-us/exchange/exchange-hybrid)
+
 ## See also
 
 [Mail flow best practices for Exchange Online and Office 365 (overview)](mail-flow-best-practices.md)
