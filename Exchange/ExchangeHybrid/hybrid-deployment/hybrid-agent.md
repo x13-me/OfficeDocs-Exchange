@@ -48,37 +48,37 @@ config changes can be made.
 
 ### Client Access Server (CAS)
 
-The Client Access Server’s proxy settings (from `Get-ExchangeServer | Format-List InternetWebProxy`) must be set correctly or outbound free/busy may fail. In fact, the HCW may not be able to configure delegated auth if this setting is incorrect. Though the HCW issues the command to create the federation trust, like most PowerShell commands, it is actually executed in the context of the Client Access Server, and the request to domans.live.com to exchange metadata and establish a trust will fail if the proxy is not set correctly.
+The Client Access Server’s proxy settings (from `Get-ExchangeServer | Format-List InternetWebProxy`) must be set correctly or outbound free/busy may fail. In fact, the HCW may not be able to configure delegated auth if this setting is incorrect. Though the HCW issues the command to create the federation trust, like most PowerShell commands, it is actually executed in the context of the Client Access Server, and the request to domains.live.com to exchange metadata and establish a trust will fail if the proxy is not set correctly.
 
 ## Agent Install Location & Requirements
 
-Choosing the right location for installation of the Hybrid Agent is important. The agent install and subsequent run of configuring Hybrid via the Hybrid Configuration Wizard is supported on either a standalone machine designed as your "agent server", or an Exchange 2010, 2013, 2016 or 2019 server with the Client Access role. 
+Choosing the right location for installation of the Hybrid Agent is important. The agent install and subsequent run of configuring Hybrid via the Hybrid Configuration Wizard is supported on either a standalone computer designed as your "agent server", or an Exchange 2010, 2013, 2016 or 2019 server with the Client Access role. 
 
 ### Requirements
 
-1. The machine hosting the Hybrid Agent install must be able to establish outbound HTTPS connections to the internet, and HTTPS and Remote PowerShell (RPS) connections to the CAS chosen for hybrid configuration. 
-2. The machine hosting the Hybrid Agent should be running Windows Server 2012 R2 or 2016, with .NET Framework 4.6.2 (or later, as supported by the Exchange version you are installing on) installed. 
-3. The machine where the Hybrid Agent is installed must have either Edge or Internet Explorer installed and must support ClickOnce. 
-4. The machine where the Hybrid Agent is installed must be able to communicate with a Domain Controller to authenticate your on-premises Exchange Org admin credentials. This means that the machine must be domain joined. 
-5. Installation must be done using a machine administrator account and will require tenant global administrator credentials for registering the connector. 
-6. TLS 1.2 must be enabled on the machine where the Hybrid Agent is installed.  
-    - Azure Application Proxy documentation: https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-add-on-premises-application  
-    - Exchange server considerations: https://blogs.technet.microsoft.com/exchange/2018/01/26/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/.
+- The computer hosting the Hybrid Agent install must be able to establish outbound HTTPS connections to the internet, and HTTPS and Remote PowerShell (RPS) connections to the CAS chosen for hybrid configuration. 
+- The computer hosting the Hybrid Agent should be running Windows Server 2012 R2 or 2016, with .NET Framework 4.6.2 (or later, as supported by the Exchange version you are installing on) installed. 
+- The computer where the Hybrid Agent is installed must have either Edge or Internet Explorer installed and must support ClickOnce. 
+- The computer where the Hybrid Agent is installed must be able to communicate with a Domain Controller to authenticate your on-premises Exchange Org admin credentials. This means that the computer must be domain joined. 
+- Installation must be done using a computer administrator account and will require tenant global administrator credentials for registering the connector. 
+- TLS 1.2 must be enabled on the computer where the Hybrid Agent is installed.  
+  - Azure Application Proxy documentation: https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-add-on-premises-application  
+  - Exchange server considerations: https://blogs.technet.microsoft.com/exchange/2018/01/26/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/.
 
 #### Port and protocol requirements
 
-1. Ports to be opened outbound are HTTPS (TCP) 443 and 80, as shown here: https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-enable. 
-2. The agent machine must be able to connect HTTPS (TCP) 443, 80, 5985 and 5986 to the target CAS selected in the Hybrid Configuration Wizard.
+- Ports to be opened outbound are HTTPS (TCP) 443 and 80, as shown here: https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-enable. 
+- The agent computer must be able to connect HTTPS (TCP) 443, 80, 5985 and 5986 to the target CAS selected in the Hybrid Configuration Wizard.
 
     > [!NOTE]
     > All Client Access Servers must be able to reach outbound to Office 365 endpoints via HTTPS (TCP) 443 as free/busy request from on-premises users to Office 365 users do not traverse the Hybrid Agent. These requests still require your Exchange servers have outbound connectivity to Office 365 end points. Office 365 URLs and IP address ranges describes the required (and hybrid) ports and IPs outbound from on-prem to the service here: https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges. 
 
 ## Preview Constraints
 
-1. MailTips, Message Tracking and Multi-mailbox search do not traverse the Hybrid Agent. These Hybrid features would require the classic connectivity model where EWS and Autodiscover are published on-premises and externally available to Office 365.
-2. The public preview only supports a single Hybrid Agent install for the Exchange Organization. We are working to support multiple agent installs for redundancy, but this is not available yet. If the server running the Hybrid Agent goes offline, free/busy look ups from your tenant to on-premises and mailbox migrations to/from your tenant will no longer work. If the server hosting the agent is permanently offline, was rebuilt, or the agent was uninstalled, re-running the Hybrid Configuration Wizard to reinstall the Hybrid Agent directly on the new server is the recovery method. Do not attempt to install multiple active Hybrid Agents in your environment with this preview build, this could cause unexpected issues.
-3. The Hybrid Agent registers the internal FQDN of the Client Access Server (CAS) selected when running Hybrid Configuration Wizard in Azure Application Proxy. If the registered CAS is offline, free/busy look ups from your tenant to on-premises and mailbox migrations to/from your tenant will no longer work. If the selected CAS is permanently offline, a new CAS must be registered. This can be done by re-running the Hybrid Configuration Wizard. 
-4. The Hybrid Agent preview comes with some support limitations which are called out in the Terms document you must agree to before installing the feature.
+- MailTips, Message Tracking and Multi-mailbox search do not traverse the Hybrid Agent. These Hybrid features would require the classic connectivity model where EWS and Autodiscover are published on-premises and externally available to Office 365.
+- The public preview only supports a single Hybrid Agent install for the Exchange organization. We are working to support multiple agent installs for redundancy, but this is not available yet. If the server running the Hybrid Agent goes offline, free/busy look ups from your tenant to on-premises and mailbox migrations to/from your tenant will no longer work. If the server hosting the agent is permanently offline, was rebuilt, or the agent was uninstalled, re-running the Hybrid Configuration Wizard to reinstall the Hybrid Agent directly on the new server is the recovery method. Do not attempt to install multiple active Hybrid Agents in your environment with this preview build, this could cause unexpected issues.
+- The Hybrid Agent registers the internal FQDN of the Client Access Server (CAS) selected when running Hybrid Configuration Wizard in Azure Application Proxy. If the registered CAS is offline, free/busy look ups from your tenant to on-premises and mailbox migrations to/from your tenant will no longer work. If the selected CAS is permanently offline, a new CAS must be registered. This can be done by re-running the Hybrid Configuration Wizard. 
+- The Hybrid Agent preview comes with some support limitations which are called out in the Terms document you must agree to before installing the feature.
 
     > [!NOTE]
     > SMTP does not traverse the Hybrid Agent and will still require a public certificate for mail flow between Office 365 and on-premises. SMTP traffic is out of scope for the Hybrid Agent, both now and through General Availability.
@@ -90,10 +90,10 @@ installing and configuring the Hybrid Agent and setting the required
 configuration both on-premise and in the tenant to enable our traditional hybrid
 feature set (free/busy, migrations, mail routing, etc.).
 
-You must run the HCW from the machine where you want the agent installed. After
+You must run the HCW from the computer where you want the agent installed. After
 the Agent is installed and configured, the HCW will locate a preferred server to
 connect to and run the standard hybrid configuration steps. You do not have to
-run the HCW from the Exchange server directly, but as stated above, the machine
+run the HCW from the Exchange server directly, but as stated above, the computer
 where the HCW is executed from must be able to HTTPS and RPS the selected CAS
 server.
 
@@ -112,7 +112,7 @@ server.
 2. Go to Programs and Features and verify a previous version of the Microsoft
     Office 365 Hybrid Configuration Wizard is not already installed. If it is,
     uninstall it.
-3. .NET Framework version 4.6.2 (or later, as supported by the Exchange version you are installing on) is required on the machine where the HCW is being run. If this version is not already installed, HCW will prompt you to install/upgrade.
+3. .NET Framework version 4.6.2 (or later, as supported by the Exchange version you are installing on) is required on the computer where the HCW is being run. If this version is not already installed, HCW will prompt you to install/upgrade.
 
 ### Installation steps
 
@@ -136,10 +136,10 @@ server.
 7. This will begin the process to setup and install the Hybrid Agent. There are
     four basic phases:
     1. Downloading the agent install package
-    2. Installation of the agent on the local machine (note: this will prompt
+    2. Installation of the agent on the local computer (note: this will prompt
         for your MS Online Global Admin credentials again)
     3. Registration of the agent to Azure, including creation of the URL used
-        for proxying requests
+        to proxy requests
     4. Testing migration viability from your tenant to on-premises via the agent
 
     > [!NOTE]
@@ -151,18 +151,18 @@ HCW with Modern Hybrid will install an agent, built on the same technology as Az
 uniqueGUID.resource.mailboxmigration.his.msappproxy.net
 ```
 
-  After the Hybrid Agent installation and validation tasks complete, the
-    remaining HCW pages and experience will be exactly as they are today.
-    During the final configuration application phase of the HCW, we create
-    a new migration endpoint with the custom URL and set the
-    TargetSharingEPR value on the Organization Relationship and/or the Intra
-    Organization Connector. Both the new migration endpoint value and the
-    TargetSharingEPR value are set on the tenant or cloud side only as we
-    use this new path (URL) to send requests from cloud to on-premises for free
-    busy and migrations. On-premises free/busy requests for cloud users still
-    reach outbound to the internet. You can view the specific values
-    configured for each of these by running Get-MigrationEndpoint and
-    Get-OrganizationRelationship from the tenant RPS session. E.g.:
+After the Hybrid Agent installation and validation tasks complete, the
+remaining HCW pages and experience will be exactly as they are today.
+During the final configuration application phase of the HCW, we create
+a new migration endpoint with the custom URL and set the
+TargetSharingEPR value on the Organization Relationship and/or the Intra
+Organization Connector. Both the new migration endpoint value and the
+TargetSharingEPR value are set on the tenant or cloud side only as we
+use this new path (URL) to send requests from cloud to on-premises for free
+busy and migrations. On-premises free/busy requests for cloud users still
+reach outbound to the internet. You can view the specific values
+configured for each of these by running Get-MigrationEndpoint and
+Get-OrganizationRelationship from the tenant RPS session. E.g.:
 
 ### From tenant RPS
 
@@ -214,7 +214,7 @@ view. E.g.:
 Open an RPS session to your tenant and run the following test cmdlet:
 
 ```PowerShell
-Test-MigrationServerAvailability -ExchangeRemoteMove: $true -RemoteServer ‘<your customguid>.resource.mailboxmigration.his.msappproxy.net' -Credentials (Get-Credential)
+Test-MigrationServerAvailability -ExchangeRemoteMove: $true -RemoteServer '<your customguid>.resource.mailboxmigration.his.msappproxy.net' -Credentials (Get-Credential)
 ```
 
 Enter on-premises credential in the pop up. After the test returns the success
@@ -230,4 +230,4 @@ requesting free/busy via a test meeting request for a mailbox located on-premise
 
 ## Uninstalling the Hybrid Agent
 
-To uninstall the Hybrid Agent, re-run Hybrid Configuration Wizard from the same machine you performed the installation against and select Classic Connectivity. This will uninstall and deregister the Hybrid Agent from the machine and Azure and you can resume setup, and configure hybrid in the Classic mode.
+To uninstall the Hybrid Agent, re-run Hybrid Configuration Wizard from the same computer you performed the installation against and select Classic Connectivity. This will uninstall and unregister the Hybrid Agent from the computer and Azure and you can resume setup, and configure hybrid in the Classic mode.
