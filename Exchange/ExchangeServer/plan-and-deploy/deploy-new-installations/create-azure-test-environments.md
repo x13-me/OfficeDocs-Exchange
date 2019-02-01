@@ -405,7 +405,7 @@ Start-AzureRMVM -Name exVM -ResourceGroupName $rgName
 
 ## See also
 
-[Troubleshoot outbound SMTP connectivity issues in Azure](../azure/virtual-network/troubleshoot-outbound-smtp-connectivity.md)
+[Troubleshoot outbound SMTP connectivity issues in Azure](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/virtual-network/troubleshoot-outbound-smtp-connectivity.md)
 
 [Deploy new installations of Exchange](deploy-new-installations.md)
   
