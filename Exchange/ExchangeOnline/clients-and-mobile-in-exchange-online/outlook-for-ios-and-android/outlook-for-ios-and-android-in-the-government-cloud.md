@@ -19,7 +19,7 @@ description: "Summary: How organizations in the Office 365 U.S. Government Commu
 
 Outlook for iOS and Android is fully architected in the Microsoft Cloud and meets the security and compliance requirements needs of all United States Government customers. 
 
-For customers operating in Government Community Cloud (GCC) Moderate, Outlook for iOS and Android's [architecture](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android) routes routes data through Azure Government Community data centers (the Azure Government Community Cloud). This solution is FedRAMP-compliant and approved, which means the Outlook for iOS and Android architecture and underlying translation protocol service now meet the data-handling requirements for GCC tenants (these requirements are defined by NIST Special Publication 800-145). 
+For customers operating in Government Community Cloud (GCC) Moderate, Outlook for iOS and Android's [architecture](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android)  routes data through Azure Government Community data centers (the Azure Government Community Cloud). This solution is FedRAMP-compliant and approved, which means the Outlook for iOS and Android architecture and underlying translation protocol service now meet the data-handling requirements for GCC tenants (these requirements are defined by NIST Special Publication 800-145). 
 
 For customers operating GCC High or Department of Defense, Outlook for iOS and Android leverages the [native Microsoft sync technology](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android). This architecture meets GCC High and DoD requirements DISA SRG Level 4 (GCC-High) and Level 5 (DoD), Defense Federal Acquisition Regulations Supplement (DFARS), and International Traffic in Arms Regulations (ITAR), which have been approved by a third-party assessment organization and are FISMA compliant based on the NIST 800-53 rev 4.
 
@@ -125,4 +125,8 @@ The following services and features of Outlook for iOS and Android are not avail
 - **Location services**: Bing location services are not available with GCC accounts. Features that rely on location services, like Cortana Time To Leave, are also unavailable.
 
 - **Favorites**: Favorite folders, groups and people are not available with GCC accounts.
+
+- **MailTips**: The External recipients MailTip is not available with GCC accounts.
+
+- **Office Lens**: Office Lens technology (e.g., scanning business cards, taking pictures) included in Outlook for iOS and Android is not available with GCC accounts.
 
