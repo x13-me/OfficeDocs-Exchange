@@ -73,7 +73,7 @@ We don't recommend or support this scenario because it causes Office 365 spam fi
 
 [Mail flow best practices for Exchange Online and Office 365 (overview)](mail-flow-best-practices.md)
 
-[Set up connectors for secure mail flow with a partner organization](../use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner.md)
+[Set up connectors for secure mail flow with a partner organization](use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner.md)
 
 [Manage all mailboxes and mail flow using Office 365](manage-mailboxes-with-office-365.md)
 
