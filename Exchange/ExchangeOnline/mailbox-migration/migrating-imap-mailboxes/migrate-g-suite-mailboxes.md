@@ -200,7 +200,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Office 365 at 
     ![Micgration batch is syncing](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
 
 > [!NOTE]
-> If you have  large user mailbox  and  the status shows **Syncing** for a long time, you may be experiencing bandwidth limits set by Google. For more information, see [Bandwidth limits](https://support.google.com/a/answer/1071518). you may use alternative method to migrate this users by Using  [Importing PST](https://docs.microsoft.com/en-us/office365/securitycompliance/use-network-upload-to-import-pst-files) Or [Use Third Party Tools] (https://docs.microsoft.com/en-us/exchange/mailbox-migration/office-365-migration-best-practices#third-party-tools-for-office-365-migrations).
+> If you have  large user mailbox  and  the status shows **Syncing** for a long time, you may be experiencing bandwidth limits set by Google. For more information, see [Bandwidth limits](https://support.google.com/a/answer/1071518) , [Sync limits](https://support.google.com/a/answer/2751577). you may try to Unlock Gmail User Or use alternative method to migrate this users by Using  [Importing PST](https://docs.microsoft.com/en-us/office365/securitycompliance/use-network-upload-to-import-pst-files) Or [Use Third Party Tools] (https://docs.microsoft.com/en-us/exchange/mailbox-migration/office-365-migration-best-practices#third-party-tools-for-office-365-migrations).
 
  **Verify that the migration worked**
 
