@@ -3,7 +3,7 @@ title: "Active Directory schema changes in Exchange Server"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 1/31/2019
+ms.date: 
 ms.audience: ITPro
 ms.topic: conceptual
 ms.prod: exchange-server-it-pro
