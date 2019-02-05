@@ -58,7 +58,7 @@ For this procedure, you have to specify a verified domain for your Exchange Onli
 Run the following command in the Exchange Management Shell (the Exchange PowerShell) in your on-premises Exchange organization.
 
 ```powershell
-    New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<your verified domain>/metadata/json/1
+    New-AuthServer -Name "evoSTS" -AuthMetadataUrl https://login.windows.net/<your verified domain>/FederationMetadata/2007-06/FederationMetadata.xml
 ```
 
 ## Step 2: Enable the partner application for your Exchange Online organization
