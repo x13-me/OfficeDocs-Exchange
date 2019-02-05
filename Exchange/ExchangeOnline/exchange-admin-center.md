@@ -103,7 +103,7 @@ See the following articles:
 
 - [Office 365 System Requirements](https://go.microsoft.com/fwlink/p/?LinkID=402699): lists supported browsers for Office 365 and the Exchange admin center.
 
-- [Supported Browsers for Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=402700).
+- [Supported Browsers for Outlook Web App](https://support.office.com/en-us/article/supported-browsers-for-outlook-web-app-c89774d6-0722-4c93-a547-ef45e693e006).
 
 ## Related articles
 <a name="SB"> </a>
