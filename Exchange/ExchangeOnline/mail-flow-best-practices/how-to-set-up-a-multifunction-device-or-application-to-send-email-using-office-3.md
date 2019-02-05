@@ -61,7 +61,7 @@ For more information, expand the following sections.
 
 #### TLS and other encryption options
 
-Determine what version of TLS your device supports by checking the device guide or with the vendor. If your device or application does not support TLS 1.0 or above:
+Determine what version of TLS your device supports by checking the device guide or with the vendor. If your device or application does not support TLS 1.2 or above:
 
 - Use direct send (Option 2) or Office 365 SMTP relay (Option 3) for sending mail instead (depending on your requirements).
 
@@ -90,7 +90,7 @@ The following diagram gives you a conceptual overview of what you're environment
 
 - **Mailbox**: You must have a licensed Office 365 mailbox to send email from.
 
-- **Transport Layer Security (TLS)**: Your device must be able to use TLS version 1.0 and above.
+- **Transport Layer Security (TLS)**: Your device must be able to use TLS version 1.2 and above.
 
 - **Port**: Port 587 (recommended) or port 25 is required and must be unblocked on your network. Some network firewalls or ISPs block ports—especially port 25.
 
