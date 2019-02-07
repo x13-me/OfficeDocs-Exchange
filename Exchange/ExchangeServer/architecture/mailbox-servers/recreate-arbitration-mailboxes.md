@@ -32,19 +32,19 @@ If you need to re-create one of more of these arbitration mailboxes, see the ins
     
 - You need to be assigned permissions before you can perform these procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
 
-- To run Setup.exe /PrepareAD, your account needs to be a member of the Enterprise Admins security group.
+- To run `Setup.exe /PrepareAD`, your account needs to be a member of the Enterprise Admins security group.
 
 - The computer that you use to run Setup.exe /PrepareAD requires access to Setup.exe in the Exchange installation files:
 
-    1. Use your most recently downloaded copy of the Exchange ISO image file, or download an updated copy from [Updates for Exchange Server](../../new-features/updates.md).
+  1. Use your most recently downloaded copy of the Exchange ISO image file, or download an updated copy from [Updates for Exchange Server](../../new-features/updates.md).
     
-    2. In File Explorer, right-click on the Exchange ISO image file and then select **Mount**. Note the virtual DVD drive letter that's assigned.
+  2. In File Explorer, right-click on the Exchange ISO image file and then select **Mount**. Note the virtual DVD drive letter that's assigned.
 
-    3. Open a Windows Command Prompt window. For example:
+  3. Open a Windows Command Prompt window. For example:
 
-      - Press the Windows key + 'R' to open the **Run** dialog, type cmd.exe, and then press **OK**.
+     - Press the Windows key + 'R' to open the **Run** dialog, type cmd.exe, and then press **OK**.
 
-      - Press **Start**. In the **Search** box, type **Command Prompt**, then in the list of results, select **Command Prompt**.
+     - Press **Start**. In the **Search** box, type **Command Prompt**, then in the list of results, select **Command Prompt**.
 
 - For more information about opening the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
@@ -60,21 +60,21 @@ To re-create the arbitration mailbox FederatedEmail.4c1f4d8b-8179-4148-93bf-00a9
   
 1. If the arbitration mailbox is missing, run the following command from a Windows Command Prompt window:
     
-    ```
-    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
-    ```
+   ```
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   ```
 
-  For example:
+   For example:
 
-    ```
-    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
-    ```
+   ```
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   ```
 
 2. In the Exchange Management Shell, run the following command:
     
-    ```
-    Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
-    ```
+   ```
+   Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
+   ```
 
 ### Re-create the Microsoft Exchange Approval Assistant mailbox
 
@@ -82,21 +82,21 @@ To re-create the arbitration mailbox SystemMailbox{1f05a927-XXXX-XXXX-XXXX-XXXXX
   
 1. If the arbitration mailbox is missing, run the following command from a Windows Command Prompt window:
     
-    ```
-    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
-    ```
+   ```
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   ```
 
-    For example:
+   For example:
 
-    ```
-    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
-    ```
+   ```
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   ```
 
 2. In the Exchange Management Shell, run the following command:
     
-    ```
-    Get-User | where {$_.Name -like "SystemMailbox{1f05a927*"} | Enable-Mailbox -Arbitration
-    ```
+   ```
+   Get-User | where {$_.Name -like "SystemMailbox{1f05a927*"} | Enable-Mailbox -Arbitration
+   ```
 
 ### Re-create the Microsoft Exchange Migration mailbox
 
@@ -104,27 +104,27 @@ To re-create the arbitration mailbox Migration.8f3e7716-2011-43e4-96b1-aba62d229
 
 1. If the arbitration mailbox is missing, run the following command from a Windows Command Prompt window:
     
-    ```
-    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
-    ```
+   ```
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   ```
   
-    For example:
+   For example:
 
-    ```
-    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
-    ```
+   ```
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   ```
 
 2. In the Exchange Management shell, run the following command:
     
-    ```
-    Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
-    ```
+   ```
+   Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
+   ```
 
 3. In the Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) for the mailbox by running the following command:
     
-    ```
-    Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management $true -Force
-    ```
+   ```
+   Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management $true -Force
+   ```
 
 ### Re-create the Microsoft Exchange Discovery system mailbox
 
@@ -146,33 +146,33 @@ To re-create the arbitration mailbox SystemMailbox{bb558c35-97f1-4cb9-8ff7-d5374
 
 1. If the arbitration mailbox is missing, run the following command from a Windows Command Prompt window:
     
-    ```
-    <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
-    ```
+   ```
+   <Virtual DVD drive letter>:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   ```
 
-    For example:
+   For example:
 
-    ```
-    E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
-    ```
+   ```
+   E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareAD
+   ```
 
 2. In the Exchange Management Shell, run the following command:
     
-    ```
-    Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
-    ```
+   ```
+   Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
+   ```
 
 3. In the Exchange Management Shell, set the Persisted Capabilities (msExchCapabilityIdentifiers) for the mailbox by running the following command:
     
-    ```
-    Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration | Set-Mailbox -Arbitration -UMGrammar $true -OABGen $true -GMGen $true -ClientExtensions $true -MessageTracking $true -PstProvider $true -MaxSendSize 1GB -Force
-    ```
+   ```
+   Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration | Set-Mailbox -Arbitration -UMGrammar $true -OABGen $true -GMGen $true -ClientExtensions $true -MessageTracking $true -PstProvider $true -MaxSendSize 1GB -Force
+   ```
 
 4. In the Exchange Management Shell, add the required capabilities to the mailbox by running the following commands:
 
-    ```
-    $OABMBX = Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration; Set-ADUser $OABMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="40","42","43","44","47","51","52","46"}
-    ```
+   ```
+   $OABMBX = Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration; Set-ADUser $OABMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="40","42","43","44","47","51","52","46"}
+   ```
 
 ## How do you know this worked?
 
