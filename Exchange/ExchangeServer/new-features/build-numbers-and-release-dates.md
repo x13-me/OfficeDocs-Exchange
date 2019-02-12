@@ -1,16 +1,12 @@
-
-|[Exchange Server 2019 RTM](https://go.microsoft.com/fwlink/p/?linkId=195442)|October 22, 2018|15.2.221.12|15.02.0221.012|---
+---
 title: "Exchange Server build numbers and release dates"
-|[Exchange Server 2019 RTM](https://go.microsoft.com/fwlink/p/?linkId=195442)|October 22, 2018|15.2.221.12|15.02.0221.012|
 ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: 02/12/2019
 ms.audience: ITPro
 ms.topic: overview
-|[Exchange Server 2019 RTM](https://go.microsoft.com/fwlink/p/?linkId=195442)|October 22, 2018|15.2.221.12|15.02.0221.012|
 ms.prod: exchange-server-it-pro
-|[Exchange Server 2019 RTM](https://go.microsoft.com/fwlink/p/?linkId=195442)|October 22, 2018|15.2.221.12|15.02.0221.012|
 localization_priority: Normal
 ms.assetid: 6a8091d0-4f19-4ae7-9e44-fd1c9f5fbe19
 description: "Summary: Learn about build numbers and release dates for current and past versions of Exchange Server."
