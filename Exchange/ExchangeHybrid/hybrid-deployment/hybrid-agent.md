@@ -63,8 +63,7 @@ Choosing the right location for installation of the Hybrid Agent is important. T
 - Installation must be done using a computer administrator account and will require tenant global administrator credentials for registering the connector. 
 - TLS 1.2 must be enabled on the computer where the Hybrid Agent is installed.  
   - Azure Application Proxy documentation: https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-add-on-premises-application  
-  - Exchange server considerations: https://blogs.technet.microsoft.com/exchange/2018/01/26/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/.
-
+  
 #### Port and protocol requirements
 
 - Ports to be opened outbound are HTTPS (TCP) 443 and 80, as shown here: https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-enable. 
