@@ -156,7 +156,7 @@ The following tables identify the mail clients that are supported for use togeth
 |**Client**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|:-----|
 |Outlook 2016|X<sup>1</sup>|X<sup>1</sup>|X|X|
-|Outlook 2013||X<sup>1</sup>|X|X|
+|Outlook 2013|X<sup>1</sup>|X<sup>1</sup>|X|X|
 |Outlook 2010||X<sup>1</sup>|X<sup>2</sup>|X|
 |Outlook 2007|||X<sup>3</sup>|X|
 |Outlook for Mac for Office 365||X<sup>1</sup>|X|X|
