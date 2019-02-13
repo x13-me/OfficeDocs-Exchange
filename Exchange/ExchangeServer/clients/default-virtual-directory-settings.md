@@ -14,9 +14,9 @@ description: "Summary: Learn about the default Client Access virtual directory s
 
 # Default settings for Exchange virtual directories
 
-Exchange Server 2016 and Exchange Server 2019 automatically configure multiple Internet Information Services (IIS) virtual directories during the server installation. The tables in the following sections show the settings for the Client Access (frontewnd) services on Mailbox servers and the default IIS authentication and Secure Sockets Layer (SSL) settings.
+Exchange Server 2016 and Exchange Server 2019 automatically configure multiple Internet Information Services (IIS) virtual directories during the server installation. The tables in the following sections show the settings for the Client Access (frontend) services on Mailbox servers and the default IIS authentication and Secure Sockets Layer (SSL) settings.
 
-## Client Access services on Mailbox servers
+## Client Access services (frontend) on Mailbox servers
 
 The following table lists the default settings on an Exchange Mailbox server that's running Client Access services.
 
@@ -25,18 +25,21 @@ The following table lists the default settings on an Exchange Mailbox server tha
 |**Virtual directory**|**Authentication method**|**SSL settings**|**Management method**|
 |:-----|:-----|:-----|:-----|
 |Default website|Anonymous|Required|IIS management console|
+|API¹|Anonymous authentication <br/> Windows authentication|SSL required <br/> Requires 128-bit encryption||
 |aspnet_client|Anonymous authentication|SSL required <br/> Requires 128-bit encryption|IIS management console|
-|Autodiscover|Anonymous authentication <br/> Basic authentication <br/> Windows authentication|SSL requiredRequires 128-bit encryption|Exchange Management Shell|
-|ecp|Anonymous authentication <br/> Basic authentication|SSL required <br/> Requires 128-bit encryption|Exchange admin center (EAC) or Exchange Management Shell|
-|EWS|Anonymous authentication <br/> Windows authentication|SSL required <br/> Requires 128-bit encryption|Exchange Management Shell|
+|Autodiscover|Anonymous authentication <br/> Basic authentication <br/> Windows authentication|SSL requiredRequires 128-bit encryption|EAC or Exchange Management Shell|
+|ecp|Anonymous authentication <br/> Basic authentication|SSL required <br/> Requires 128-bit encryption|EAC or Exchange Management Shell|
+|EWS|Anonymous authentication <br/> Windows authentication|SSL required <br/> Requires 128-bit encryption|EAC or Exchange Management Shell|
+|MAPI|Windows authentication|SSL required <br/> Requires 128-bit encryption|EAC or Exchange Management Shell|
 |Microsoft-Server-ActiveSync|Basic authentication|SSL required <br/> Requires 128-bit encryption|EAC or Exchange Management Shell|
-|OAB|Windows authentication|Not required|EAC or Exchange Management Shell|
-|OWA|Basic authentication|SSL required <br/> Requires 128-bit encryption|EAC or Exchange Management Shell|
-|PowerShell|Anonymous authentication|Not required|Exchange Management Shell|
-|Rpc|Basic authentication <br/> Windows authentication|SSL required <br/> Requires 128-bit encryption|Exchange Management Shell|
-|RpcWithCert|By default, all authentication methods are disabled.|Required||
+|OAB|Windows authentication|SSL required <br/> Requires 128-bit encryption|EAC or Exchange Management Shell|
+|owa|Basic authentication|SSL required <br/> Requires 128-bit encryption|EAC or Exchange Management Shell|
+|PowerShell|By default, all authentication methods are disabled.|Not required|EAC or Exchange Management Shell|
+|Rpc|Basic authentication <br/> Windows authentication|SSL required <br/> Requires 128-bit encryption|EAC or Exchange Management Shell|
  
-## Mailbox server
+¹The API virtual directory is available in Exchange 2016 CU3 or newer.
+
+## Back End Virtual Directories on Mailbox server
 
 The following table lists the default settings on a stand-alone Exchange Mailbox server.
 
@@ -44,9 +47,18 @@ The following table lists the default settings on a stand-alone Exchange Mailbox
 
 |**Virtual directory**|**Authentication method**|**SSL settings**|**Management method**|
 |:-----|:-----|:-----|:-----|
-|Default website|Anonymous authentication|SSL required <br/> Requires 128-bit encryption|This virtual directory can't be configured by the user.|
-|PowerShell|Anonymous authentication|Not required|Exchange Management Shell|
- 
+|Exchange Back End|Anonymous authentication|SSL required <br/> Requires 128-bit encryption|This virtual directory should not be configured by the user.|
+|API|Anonymous authentication <br/> Windows authentication|SSL required <br/> Requires 128-bit encryption|This virtual directory should not be configured by the user.|
+|Autodiscover|Anonymous authentication <br/> Windows authentication|SSL requiredRequires 128-bit encryption|This virtual directory should not be configured by the user.|
+|ecp|Anonymous authentication <br/> Windows authentication|SSL required <br/> Requires 128-bit encryption|This virtual directory should not be configured by the user.|
+|EWS|Anonymous authentication <br/> Windows authentication|SSL required <br/> Requires 128-bit encryption|This virtual directory should not be configured by the user.|
+|Microsoft-Server-ActiveSync|Basic authentication|SSL required <br/> Requires 128-bit encryption|This virtual directory should not be configured by the user.|
+|OAB|Windows authentication|SSL required <br/> Requires 128-bit encryption|This virtual directory should not be configured by the user.|
+|owa|Anonymous authentication <br/> Windows authentication|SSL required <br/> Requires 128-bit encryption|This virtual directory should not be configured by the user.|
+|PowerShell|Windows authentication|SSL required <br/> Requires 128-bit encryption|This virtual directory should not be configured by the user.|
+|Rpc|Windows authentication|Not required|This virtual directory should not be configured by the user.|
+|RpcWithCert|Windows authentication|Not required|This virtual directory should not be configured by the user.|
+
 ## See also
 
 [Virtual directory management](https://technet.microsoft.com/library/ff952752(v=exchg.150).aspx)
