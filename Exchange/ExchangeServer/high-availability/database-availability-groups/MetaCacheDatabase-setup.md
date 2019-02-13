@@ -4,7 +4,6 @@ ms.author: dmaguire
 author: msdmaguire
 manager: serdars
 ms.reviewer: toklima
-ms.date: 
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
