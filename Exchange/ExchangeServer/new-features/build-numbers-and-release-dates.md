@@ -35,7 +35,9 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
+|[Exchange Server 2019 CU1](https://support.microsoft.com/kb/4471391)|February 12, 2019|15.2.330.6|15.02.0330.006|
 |[Exchange Server 2019 RTM](https://go.microsoft.com/fwlink/p/?linkId=195442)|October 22, 2018|15.2.221.12|15.02.0221.012|
+|Exchange Server 2019 Preview|July 24, 2018|15.2.196.0|15.02.0196.000|
 
 ## Exchange Server 2016
 
@@ -49,6 +51,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
+|[Exchange Server 2016 CU12](https://www.microsoft.com/download/details.aspx?id=57827)|February 12, 2019|15.1.1713.5|15.01.1713.005|
 |[Exchange Server 2016 CU11](https://www.microsoft.com/download/details.aspx?id=57388)|October 16, 2018|15.1.1591.10|15.01.1591.010|
 |[Exchange Server 2016 CU10](https://go.microsoft.com/fwlink/p/?LinkId=2002912)|June 19, 2018|15.1.1531.3|15.01.1531.003|
 |Exchange Server 2016 CU9|March 20, 2018|15.1.1466.3|15.01.1466.003|
@@ -76,6 +79,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
+|[Exchange Server 2013 CU22](https://www.microsoft.com/download/details.aspx?id=57826)|February 12, 2019|15.0.1473.3|15.00.1473.003|
 |[Exchange Server 2013 CU21](https://go.microsoft.com/fwlink/p/?LinkId=2003011)|June 19, 2018|15.0.1395.4|15.00.1395.004|
 |Exchange Server 2013 CU20|March 20, 2018|15.0.1367.3|15.00.1367.003|
 |Exchange Server 2013 CU19|December 19, 2017|15.0.1365.1|15.00.1365.001|
@@ -113,7 +117,8 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
-|[Update Rollup 25 for Exchange Server 2010 SP3](https://www.microsoft.com/en-us/download/details.aspx?id=57759)|January 8, 2019|14.3.435.0|14.03.0435.000|
+|[Update Rollup 26 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57824)|February 12, 2019|14.3.442.0|14.03.0442.000|
+|[Update Rollup 25 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57759)|January 8, 2019|14.3.435.0|14.03.0435.000|
 |[Update Rollup 24 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57306)|September 5, 2018|14.3.419.0|14.03.0419.000|
 |[Update Rollup 23 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57219)|August 13, 2018|14.3.417.1|14.03.0417.001|
 |[Update Rollup 22 for Exchange Server 2010 SP3](https://go.microsoft.com/fwlink/p/?LinkId=2003010)|June 19, 2018|14.3.411.0|14.03.0411.000|
