@@ -176,7 +176,7 @@ You'll need to make sure that you have configured the correct external URLs for 
 |**Service**|**Exchange Management Shell**|**Modifies**|
 |:-----|:-----|:-----|
 |[Offline Address Book](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/Set-OabVirtualDirectory)|Get-OabVirtualDirectory \| Set-OabVirtualDirectory –ExternalURL|OAB virtual directories used in IIS|
-|[Exchange Web Sevices](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-WebServicesVirtualDirectory)|Get-WebServicesVirtualDirectory \| Set-WebServicesVirtualDirectory –ExternalURL https://mail.companycontoso.com/ews/exchange.asmx|Exchange Web Servicesvirtual directories in IIS|
+|[Exchange Web Sevices](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-WebServicesVirtualDirectory)|Get-WebServicesVirtualDirectory \| Set-WebServicesVirtualDirectory –ExternalURL https://mail.companycontoso.com/ews/exchange.asmx |Exchange Web Services virtual directories in IIS|
 |[Outlook Anywhere (RPC over HTTP)](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-OutlookAnywhere)|Get-OutlookAnywhere \| Set-OutlookAnywhere –ExternalHostname mail.contoso.com –ExternalClientsRequireSsl $true|Outlook Anywhere virtual directories in IIS|
 |[Messaging Application Programming Interface (MAPI) over HTTP](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-MapiVirtualDirectory) (Exchange 2013 SP1 or later)|Get-MapiVirtualDirectory \| Set-MapiVirtualDirectory –ExternalURL https://mail.companycontoso.com/mapi <br/> Set-OrganizationConfig -MapiHttpEnabled $true|MAPI virtual directories in IIS|
 
