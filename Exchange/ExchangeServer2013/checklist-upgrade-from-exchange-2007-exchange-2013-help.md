@@ -166,7 +166,7 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 </tr>
 <tr class="even">
 <td> </td>
-<td><p>19. Move public folder data from Exchange 2013 to Exchange 2013</p>
+<td><p>19. Move public folder data from Exchange 2007 to Exchange 2013</p>
 
 > [!NOTE]
 > This step is optional. It's only necessary if your organization is uses public folders.
