@@ -146,7 +146,7 @@ You can use the `ServerAllowMCDB` parameter set to cause failovers of all DB ins
 
 ## MCDB health states
 
-Use `Get-MailboxDatabaseCopyStatus` to query the state of the MCDB instances. There are four health states that an MCDB instance can be in, as shown in the following table:
+Use `Get-MailboxDatabaseCopyStatus` to query the state of the MCDB instances. There are five states that an MCDB instance can be in, as shown in the following table:
 
 | State          | Description                                                                                                                          |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
