@@ -55,6 +55,11 @@
         "source_path": "Exchange/ExchangeServer2013/exchange-server-supportability-matrix-exchange-2013-help.md",
         "redirect_url": "https://docs.microsoft.com/Exchange/plan-and-deploy/supportability-matrix",
         "redirect_document_id": false
+      },
+     {
+        "source_path": "Exchange/ExchangeOnline/clients-and-mobile-in-exchange-online/outlook-on-the-web/owa-for-devices-contact-sync.md",
+        "redirect_url": "https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android",
+        "redirect_document_id": true
       }
     ]
 }
