@@ -29,7 +29,7 @@ All SSDs used for MCDB need to be of the same capacity and type. A symmetrical c
 
 It is recommended to target a 1:3 ratio between SSD and HDD devices per server. Therefore, deploy one SSD for every three HDDs. In order to avoid having to reduce the number of HDDs in the server, consider using M.2 form factor SSDs.
 
-Providing 5% to 6% of SSD capacity relative to total HDD capacity should be sufficient for on-premises deployments. For example, if your server contains 100TB of HDD capacity for mailbox databases, an allocation of 5TB to 6TB for SSD capacity is enough.
+Providing 5% to 6% of SSD capacity relative to total HDD capacity is sufficient for on-premises deployments. For example, if your server contains 100 TB of HDD capacity for mailbox databases, an allocation of 5 TB to 6 TB for SSD capacity is enough.
 
 The SSDs you use should qualify for “mixed use” and support one drive write per day (DWPD) or greater in terms of write endurance.
 
@@ -45,7 +45,7 @@ The following prerequisites are required for successful configuration and use of
 
 ## MCDB setup:
 
-The process of setting up MCDB can be broken down into 4 basic steps:
+The process of setting up MCDB can be broken down into four basic steps:
 
 1.  Update Active Directory (AD) settings and wait for propagation (by running `ConfigureMCDBPrerequisite`).
 
@@ -53,7 +53,7 @@ The process of setting up MCDB can be broken down into 4 basic steps:
 
 3.  Create the necessary infrastructure (Volumes, Mount Points) for MCDB on each server (by running `ConfigureMCDBOnServer`).
 
-4.  Let databases fail-over to pick-up the new settings.
+4.  Let databases fail over to pick up the new settings.
 
 After successful execution of all four steps, MCDB acceleration will begin for every database instance with a corresponding MCDB instance.
 
@@ -61,7 +61,7 @@ The following sections describe how to utilize the `Manage-MetaCacheDatabase.ps1
 
 ### 1. Run `Manage-MCDB -ConfigureMCDBPrerequisite`
 
-This sets the Active Directory state for the DAG object. Full replication of the Active Directory state is required before MCDB can function properly on all servers.
+This parameter sets the Active Directory state for the DAG object. Full replication of the Active Directory state is required before MCDB can function properly on all servers.
 
 **ParameterSetIdentifier**:
 
@@ -75,7 +75,7 @@ This sets the Active Directory state for the DAG object. Full replication of the
 
 - **SSDCountPerServer**: Required Parameter, the count of SSD devices to be utilize for MCDB in each server
 
-**Scope**: **DAG**.  `ConfigureMCDBPrerequisite` operates on a DAG object
+**Scope**: **DAG**. `ConfigureMCDBPrerequisite` operates on a DAG object
 
 > [!NOTE]
 > MCDB will utilize up to 95% of an SSD’s physical capacity. The remaining 5% is kept free to account for file system and partition overhead, as well as for a small amount of additional buffer and over-provisioning.
@@ -88,7 +88,7 @@ This sets the Active Directory state for the DAG object. Full replication of the
 
 ### 2. Run `Manage-MCDB -ServerAllowMCDB`
 
-This sets the local state on each DAG member to allow/disallow MCDB population and read acceleration.
+This parameter sets the local state on each DAG member to allow/disallow MCDB population and read acceleration.
 
 **ParameterSetIdentifier**:
 
@@ -100,7 +100,7 @@ This sets the local state on each DAG member to allow/disallow MCDB population a
 
 - **ServerName**: Required Parameter
 
-- **ForceFailover**: Optional Parameter, this Boolean switch can be utilized to cause all databases on a server to fail-over. This is required to make all configuration changes take effect and to begin utilizing MCDB after mount points and database instances have been successfully created in [3. Run Manage-MCDB -ConfigureMCDBOnServer](#3-run-configuremcdbonserver). It is also needed to disable SSD acceleration.
+- **ForceFailover**: Optional Parameter, this Boolean switch can be utilized to cause all databases on a server to fail over. This is required to make all configuration changes take effect and to begin utilizing MCDB after mount points and database instances have been successfully created in [3. Run Manage-MCDB -ConfigureMCDBOnServer](#3-run-configuremcdbonserver). It is also needed to disable SSD acceleration.
 
 **Scope**: **Server**. `ServerAllowMCDB` has to be executed on each server in the DAG
 
@@ -114,7 +114,7 @@ This sets the local state on each DAG member to allow/disallow MCDB population a
 
 ### 3. Run `Manage-MCDB -ConfigureMCDBOnServer`
 
-This identifies unformatted SSD devices and formats them, and also creates the necessary mount points on a server for hosting MCDB instances. This parameter set can also be used to re-create mount points on a raw SSD that was added to replace a failed SSD.
+This parameter identifies unformatted SSD devices and formats them, and also creates the necessary mount points on a server for hosting MCDB instances. This parameter set can also be used to re-create mount points on a raw SSD that was added to replace a failed SSD.
 
 **ParameterSetIdentifier**:
 
@@ -138,9 +138,9 @@ Example:
 
 ![Run MCDBOnServer2](../../media/mcdb4.png)
 
-After performing the the previous three steps (running `ConfigureMCDBPrerequisite`, `ServerAllowMCDB`, and `ConfigureMCDBOnServer`), the MCDB state will display as **Storage Offline**. This means that the environment is prepared and ready for MCDB instances to be created and populated. The next failover of the database instance will cause the creation of the MCDB instance and enable acceleration. The instances will transition through the health states shown in [MCDB health states](#mcdb-health-states).
+After performing the previous three steps (running `ConfigureMCDBPrerequisite`, `ServerAllowMCDB`, and `ConfigureMCDBOnServer`), the MCDB state will display as **Storage Offline**. This means that the environment is prepared and ready for MCDB instances to be created and populated. The next fail over of the database instance will cause the creation of the MCDB instance and enable acceleration. The instances will transition through the health states shown in [MCDB health states](#mcdb-health-states).
 
-You can use the `ServerAllowMCDB` parameter set to cause failovers of all DB instances present on a given server. Alternatively, the `Move-ActiveMailboxDatabase` cmdlet can be used to cause individual database failovers.
+You can use the `ServerAllowMCDB` parameter set to cause fail overs of all DB instances present on a given server. Alternatively, the `Move-ActiveMailboxDatabase` cmdlet can be used to cause individual databases to fail over.
 
 `Manage-MCDB.ps1 -DagName TestDag1 -ServerAllowMCDB:$true -ServerName “exhs-5046” -ForceFailover:$true`
 
@@ -154,4 +154,4 @@ Use `Get-MailboxDatabaseCopyStatus` to query the state of the MCDB instances. Th
 | StorageOffline | Basic infrastructure is missing or inaccessible, such as mount points or file paths. This is the state MCDB is in following an SSD failure. |
 | Offline        | Errors at the logical level, for example missing MCDB instances.                                                                     |
 | Initializing   | Transient state, the system is determining what other state it should be in.                                                         |
-| Healthy        | Ready to serve requests .                                                                                                             |
+| Healthy        | Ready to serve requests.                                                                                                             |
