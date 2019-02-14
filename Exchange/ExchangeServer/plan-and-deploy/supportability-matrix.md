@@ -190,23 +190,44 @@ The following table identifies the version of Microsoft Exchange that can be use
 
 ## Microsoft .NET Framework
 
-The following table identifies the version of the Microsoft .NET Framework that can be used together with each version of Exchange. Supported versions are identified by an X character.
+The following tables identify the versions of the Microsoft .NET Framework that can be used with the specified versions of Exchange. Supported versions are identified by an X character.
 
 > [!IMPORTANT]  
-> <STRONG>Releases of .NET Framework that aren't listed in the table below are not supported on any version or release of Exchange.</STRONG> This includes minor and patch-level releases of .NET Framework.
+> **Versions of .NET Framework that aren't listed in the tables below are not supported on any version or release of Exchange.** This includes minor and patch-level releases of .NET Framework.
 
 > [!NOTE]  
-> When upgrading Exchange from an unsupported CU to the current CU and no intermediate CUs are available, you should upgrade to the latest version of .NET that's supported by Exchange first and then immediately upgrade to the current CU. This method doesn't replace the need to keep your Exchange servers up to date and on the latest, supported, CU.<BR>Microsoft makes no claim that an upgrade failure will not occur using this method, which may result in the need to contact Microsoft Support Services.
+> When upgrading Exchange from an unsupported CU to the current CU and no intermediate CUs are available, you should upgrade to the latest version of .NET that's supported by Exchange first and then immediately upgrade to the current CU. This method doesn't replace the need to keep your Exchange servers up to date and on the latest supported, CU. <br/> Microsoft makes no claim that an upgrade failure will not occur using this method, which may result in the need to contact Microsoft Support Services.
 
-|**.NET Framework**|**Exchange 2019**|**Exchange 2016 CU11 or later**|**Exchange 2016 CU8 to CU10**|**Exchange 2016 CU4 to CU7**|**Exchange 2013 CU21 or later**|**Exchange 2013 CU19 to CU20**|**Exchange 2013 CU16 to CU18**|**Exchange 2010 SP3**|
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|.NET Framework 4.7.2|X|X|||X||||
-|.NET Framework 4.7.1|||X||X|X|||
-|.NET Framework 4.6.2||||X||X|X||
-|.NET Framework 4.5||||||X|X|X<sup>1,2</sup>|
-|.NET Framework 4.0||||||||X<sup>1,2</sup>|
-|.NET Framework 3.5 SP1||||||||X|
-|.NET Framework 3.5||||||||X<sup>1</sup>|
+### Exchange 2019
+
+|**.NET Framework**|**2019**|
+|:-----|:-----|
+|.NET Framework 4.7.2|X|
+
+### Exchange 2016
+
+|**.NET Framework**|**CU11, CU12**|**CU10**|**CU8, CU9**|**CU5, CU6, CU7**|
+|:-----|:-----|:-----|:-----|:-----|
+|.NET Framework 4.7.2|X||||
+|.NET Framework 4.7.1|X|X|X||
+|.NET Framework 4.6.2|||X|X|
+
+### Exchange 2013
+
+|**.NET Framework**|**CU21 or later**|**CU19, CU20**|**CU16, CU17, CU18**|
+|:-----|:-----|:-----|:-----|
+|.NET Framework 4.7.2|X|||
+|.NET Framework 4.7.1|X|X||
+|.NET Framework 4.6.2||X|X|
+
+### Exchange 2010 SP3
+
+|**.NET Framework**|**2010 SP3**|
+|:-----|:-----|
+|.NET Framework 4.5|X<sup>1,2</sup>|
+|.NET Framework 4.0|X<sup>1,2</sup>|
+|.NET Framework 3.5 SP|X|
+|.NET Framework 3.5|X<sup>1</sup>|
 
 <sup>1</sup>If you're using Windows Server 2012, the .NET Framework 3.5 must be installed before you can use Exchange 2010 SP3.
 
