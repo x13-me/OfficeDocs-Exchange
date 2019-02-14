@@ -96,7 +96,7 @@ The EAC allows you to create mail flow rules by using a template (a filtered lis
     
   - **Defer the message if rule processing doesn't complete**: Select this check box to resubmit the message for processing. By default, the rule will be ignored, and delivery of the message will continue as normal.
     
-  - **Match sender address in message**: For conditions and exceptions that examine the sender's address, you can specify where the rule looks for the sender's address: in the message header (default), the message envelope, or the header and envelope. For more information, see [Senders](conditions-and-exceptions.md#Senders).
+  - **Match sender address in message**: For conditions and exceptions that examine the sender's address, you can specify where the rule looks for the sender's address: in the message header (default), the message envelope, or the header and envelope. For more information, see [Senders](conditions-and-exceptions.md#senders).
     
   - **Comments**: Specify a descriptive comment for the rule.
     
