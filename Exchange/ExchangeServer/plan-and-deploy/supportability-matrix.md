@@ -161,7 +161,7 @@ The following tables identify the mail clients that are supported for use togeth
 |Outlook 2010||X<sup>1</sup>|X<sup>2</sup>|X|
 |Outlook 2007|||X<sup>3</sup>|X|
 |Outlook for Mac for Office 365||X<sup>1</sup>|X|X|
-|Entourage 2008 (EWS)||X<sup>4/sup>|X<sup>4</sup>|X<sup>4</sup>|
+|Entourage 2008 (EWS)||X<sup>4</sup>|X<sup>4</sup>|X<sup>4</sup>|
 
 <sup>1</sup>Supported with the latest Office service pack and public updates.
 
