@@ -25,7 +25,7 @@ You use this script to configure MCDB prerequisites on a properly configured DAG
 All SSDs used for MCDB need to be of the same capacity and type. A symmetrical configuration between servers is required, which means there needs to be an identical number of SSDs in each server, and the SSDs all need to be the same size.
 
 > [!NOTE]
-> The `Manage-MCDB` cmdlet won't work with non-SSD drives. If your environment uses a Storage Area Network (SAN), you may have to configure disks to be recognized by Windows as SSD.
+> The `Manage-MCDB` cmdlet will only work with devices exposed as **MediaType SSD** by Windows.
 
 It is recommended to target a 1:3 ratio between SSD and HDD devices per server. Therefore, deploy one SSD for every three HDDs. In order to avoid having to reduce the number of HDDs in the server, consider using M.2 form factor SSDs.
 
