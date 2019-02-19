@@ -1,5 +1,17 @@
 ---
-title: Microsoft Hybrid agent – Preview
+title: "Microsoft Hybrid agent – Preview"
+ms.author: dstrome
+author: dstrome
+manager: serdars
+ms.audience: ITPro
+ms.topic: article
+ms.prod: exchange-server-it-pro
+localization_priority: Normal
+ms.collection:
+- Ent_O365_Hybrid
+- Strat_EX_EXOBlocker
+- Hybrid
+description: "The Hybrid agent removes some of the challenges you can face when you configure an Exchange Hybrid environment."
 ---
 
 # Microsoft Hybrid agent – Preview
