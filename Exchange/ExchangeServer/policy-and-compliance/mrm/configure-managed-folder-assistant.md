@@ -101,7 +101,8 @@ Get-ExchangeDiagnosticInfo -Process Microsoft.Exchange.Directory.TopologyService
 To verify that you've successfully configured the work cycle for the Managed Folder Assistant on one or more servers, replace _\<ServerName\>_ with the name of the server (not the FQDN), and run the following command to verify the value of the **WorkCycle** property: 
   
 ```
-[xml]$diag=Get-ExchangeDiagnosticInfo -Server <ServerName> -Process MSExchangeMailboxAssistants -Component VariantConfiguration -Argument "Config,Component=TimeBasedAssistants"; $diag.Diagnostics.Components.VariantConfiguration.Configuration.TimeBasedAssistants.ElcAssistant
+    $diag=Get-ExchangeDiagnosticInfo -Server <ServerName> -Process MSExchangeMailboxAssistants -Component VariantConfiguration -Argument "Config,Component=TimeBasedAssistants"
+    $diag.Diagnostics.Components.VariantConfiguration.Configuration.TimeBasedAssistants.ElcAssistant
 ```
 
 ## Use the Exchange Management Shell to start the Managed Folder Assistant on a specific mailbox
