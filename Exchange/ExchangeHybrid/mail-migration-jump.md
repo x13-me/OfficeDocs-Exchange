@@ -27,7 +27,7 @@ To run the Office 365 migration advisor, you'll need the following:
 
 After you have everything you need, you can open the mail migration advisor by doing one of the following:
 
-- Open the mail migration advisor directly using the URL https://aka.ms.office365setup.
+- Open the mail migration advisor directly using the URL https://aka.ms/office365setup.
 - Open the [Office 365 admin portal](https://portal.office.com) and then select **Setup** \\ **Data migration** \\ **Exchange** \ **Mail migration advisor**.
 
 ## What options will I have when I run the migration advisor?

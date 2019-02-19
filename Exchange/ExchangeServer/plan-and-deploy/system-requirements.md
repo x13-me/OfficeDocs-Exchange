@@ -103,7 +103,7 @@ We strongly recommend that you use the latest version of the .NET Framework that
 
 |**Exchange version**|**.NET Framework 4.7.2**|
 |:-----|:-----|
-|Exchange 2019 RTM|Supported|
+|Exchange 2019|Supported|
  
 ## Supported clients
 
@@ -223,14 +223,12 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 > [!IMPORTANT]
 > **Releases of .NET Framework that aren't listed in the table below are not supported on any release of Exchange 2016**. This includes minor and patch-level releases of .NET Framework.
 
-|**Exchange version**|**.NET Framework 4.7.1**|**.NET Framework 4.6.2**|
-|:-----|:-----|:-----|
-|Exchange 2016 CU10|Supported||
-|Exchange 2016 CU9|Supported|Supported|
-|Exchange 2016 CU8|Supported|Supported|
-|Exchange 2016 CU7||Supported|
-|Exchange 2016 CU6||Supported|
-|Exchange 2016 CU5||Supported|
+|**Exchange version**|**.NET Framework 4.7.2**|**.NET Framework 4.7.1**|**.NET Framework 4.6.2**|
+|:-----|:-----|:-----|:-----|
+|Exchange 2016 CU11, CU12|Supported|Supported||
+|Exchange 2016 CU10||Supported||
+|Exchange 2016 CU8, CU9||Supported|Supported|
+|Exchange 2016 CU5, CU6, CU7|||Supported|
 
 ## Supported clients (with latest updates)
 
