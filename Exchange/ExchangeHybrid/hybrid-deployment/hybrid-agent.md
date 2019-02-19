@@ -4,7 +4,7 @@ title: Microsoft Hybrid agent – Preview
 
 # Microsoft Hybrid agent – Preview
 
-The Hybrid agent removes some of the challenges you can face when you configure an Exchange Hybrid environment. The agent, which is built on the same technology as the Azure Application Proxy, removes the need for external DNS entries, certificate updates, inbound network connections through your firewall, and more, so you can use Exchange hybrid features. These features include Free/Busy sharing and online mailbox moves.
+The Hybrid agent removes some of the challenges you can face when you configure an Exchange Hybrid environment. The agent, which is built on the same technology as the Azure Application Proxy, removes some requirements for external DNS entries, certificate updates, inbound network connections through your firewall, and more, so you can use Exchange hybrid features. These features include Free/Busy sharing and online mailbox moves. The Hybrid agent only supports free/busy and mailbox migrations; mail flow, directory synchronization, and other hybrid features aren't included.
 
 ## Agent Install Location & Requirements
 
@@ -37,11 +37,11 @@ The Hybrid agent has the following requirements:
 
 ### Proxy server considerations
 
-If your network environment uses outbound proxy servers, additional configuration and requirements is needed. This list may not be exhaustive.
+If your network environment uses outbound proxy servers, additional configuration and requirements are needed. This list may not be exhaustive.
 
 #### Agent
 
-The agent supports outbound proxy servers but requires additional configuration after installation. 
+The agent supports outbound proxy servers but requires additional configuration after installation. For more information, see [Work with existing on-premises proxy servers](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
 
 > [!IMPORTANT]
 > A proxy server that prevents registration will cause the connector installation to fail. We recommend that you allow the connectors to bypass the proxy until app config changes can be made.
