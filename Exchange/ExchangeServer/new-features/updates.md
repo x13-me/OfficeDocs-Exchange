@@ -33,6 +33,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 
 |**Version**|**Blog post**|
 |:-----|:-----|
+|Exchange 2016 CU12|[Released: February 12, 2019 Exchange Updates](https://www.microsoft.com/en-us/download/details.aspx?id=57827)|
 |Exchange 2016 CU11|[Released: October 2018 Quarterly Exchange Updates](https://www.microsoft.com/download/details.aspx?id=57388)|
 |Exchange 2016 CU10|[Released: June 2018 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=2003013)|
 |Exchange 2016 CU9|[Released: March 2018 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=870404)|
