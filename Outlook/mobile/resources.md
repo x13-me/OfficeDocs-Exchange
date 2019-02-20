@@ -20,7 +20,7 @@ Join the over 100 million customers across the world who trust Outlook mobile to
 
 The following is content and guidance that IT administrators, trainers, champions, and change management professionals can use to drive Outlook mobile adoption in your organization and help ensure your users get up and running quickly.  
 
-![Mobile phone showing Outlook for iOS and Android](images/outlook-ios-android-phone.png)
+![Mobile phone showing Outlook for iOS and Android](images/outlook-ios-android.png)
 
 ### Outlook Mobile Customer Adoption Pack
 
