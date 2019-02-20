@@ -121,8 +121,6 @@ In Exchange Server, creating and managing archive mailboxes is integrated with c
     
 - **Moving an archive mailbox**: You can move a user's archive mailbox to another mailbox database on the same Mailbox server or to another server, independent of the primary mailbox. To move a user's archive mailbox, you must create a mailbox move request. For details, see [Manage on-premises mailbox moves in Exchange Server](../../architecture/mailbox-servers/manage-mailbox-moves.md).
     
-    > [!IMPORTANT]
-    > Locating a user's mailbox and archive on different versions of Exchange Server isn't supported.
   
 - **Disabling an archive mailbox**: You may want to disable a user's archive mailbox for troubleshooting purposes or if you're moving the primary mailbox to a version of Exchange that doesn't support In-Place Archiving. Disabling an archive is similar to disabling a primary mailbox. In on-premises deployments, a disabled archive mailbox is retained in the mailbox database until the deleted mailbox retention period for that database is reached. During this period, you can reconnect the same disabled archive mailbox to a user's primary mailbox. When the deleted mailbox retention period is reached, the disconnected archive mailbox is purged from the mailbox database.
     
