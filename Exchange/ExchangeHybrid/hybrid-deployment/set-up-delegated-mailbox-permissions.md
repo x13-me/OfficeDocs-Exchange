@@ -45,7 +45,7 @@ To enable ACLable object synchronization at the organization level, do the follo
 
 1. Install the latest version of Azure Active Directory Connect (AAD Connect) on all of your AAD Connect servers. This is needed to allow AAD Connect to synchronize the attributes needed to support hybrid permissions. You can download AAD Connect from [Microsoft Azure Active Directory Connect](http://go.microsoft.com/fwlink/p/?LinkID=510956).
 
-2. Open the Exchange Management Shell on a server running the latest available Exchange 2013 CU, or the immediately previous CU.
+2. Open the Exchange Management Shell on a server running the latest available Exchange 2013 Or 2016 CU, or the immediately previous CU.
 
 3. Run the following command.
 
