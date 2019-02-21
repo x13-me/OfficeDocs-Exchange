@@ -26,7 +26,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-_**Topic Last Modified:** 2015-03-09_
+_**Topic Last Modified:** 2019-02-04_
 
 The Microsoft Exchange Unified Messaging (UM) Call Router health set monitors the overall health of the UM Call Router service.
 
@@ -107,7 +107,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
         
         For example, assume that the failing monitor is **UMCallRouterTestMonitor**. The probe associated with that monitor is **UMCallRouterTestProbe**. To run that probe on server1.contoso.com, run the following command:
         
-            Invoke-MonitoringProbe UM.CallRouter\UMCallRouterTestMonitor -Server server1.contoso.com | Format-List
+            Invoke-MonitoringProbe UM.CallRouter\UMCallRouterTestProbe -Server server1.contoso.com | Format-List
     
     4.  In the command output, review the **Result** value of the probe. If the value is **Succeeded**, the issue was a transient error, and it no longer exists. Otherwise, refer to the recovery steps outlined in the following sections.
 

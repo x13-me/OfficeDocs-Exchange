@@ -118,7 +118,7 @@ To verify that you've modified the Inbox rules quota on a mailbox, use any of th
 - Run the following command to verify the value of the **RulesQuota** property for all mailboxes:
 
     ```
-    Get-Mailbox -ResultSize unlimited | Format-Table -Auto Name,RulesQuota
+    Get-Mailbox -ResultSize unlimited | Format-Table Name,RulesQuota -Auto
     ```
 
 ## What else do I need to know?
