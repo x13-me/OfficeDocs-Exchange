@@ -2,7 +2,7 @@
 title: "Convert a mailbox in Exchange Server"
 ms.author: chrisda
 author: chrisda
-ms.date: 7/5/2018
+ms.date:
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -57,7 +57,7 @@ You can convert the following mailboxes to a different type:
 To convert a mailbox to a different type, use this syntax:
   
 ```
-Set-Mailbox -Identity <MailboxIdentity> -Type <Regular | Room | Equipment | Shared> [-Password (ConvertTo-SecureString -String '<Password>' -AsPlainText -Force)] [-EnableRoomMailboxAccount <$true | $false> [-RoomMailboxPassword (ConvertTo-SecureString -String '<Password>' -AsPlainText -Force)] [-ResetPasswordOnNextLogon <$true | $false>]
+Set-Mailbox -Identity <MailboxIdentity> -Type <Regular | Room | Equipment | Shared> [-Password (ConvertTo-SecureString -String '<Password>' -AsPlainText -Force)] [-EnableRoomMailboxAccount <$true | $false>] [-RoomMailboxPassword (ConvertTo-SecureString -String '<Password>' -AsPlainText -Force)] [-ResetPasswordOnNextLogon <$true | $false>]
 ```
 
 This example converts the shared mailbox named Marketing Dept 01 to a user mailbox with the new password P@ssw0rd25, and the requirement to change the password the next time the user logs in to the mailbox.
