@@ -37,7 +37,7 @@ Included in this pack:
 
 We're excited to announce ***10 time saving tips and tricks with Outlook mobile***, a new Outlook mobile demo webinar series for your employees.
 
-These 60-minute LIVE monthly webinars will be delivered by Outlook mobile experts from Microsoft and are designed to get your employees up and running and learn cool tips and tricks that save them time.
+These 60-minute live monthly webinars will be delivered by Outlook mobile experts from Microsoft and are designed to get your employees up and running and learn cool tips and tricks that save them time.
 
 In this webinar series, you'll learn the following:
 - Why Outlook mobile is the right choice for you
