@@ -35,20 +35,20 @@ Included in this pack:
 
 ## Outlook Mobile webinar series
 
-We're excited to announce a new Outlook mobile demo webinar series is now available for your employees: 10 time saving tips and tricks with Outlook mobile.
+We're excited to announce ***10 time saving tips and tricks with Outlook mobile***, a new Outlook mobile demo webinar series for your employees.
 
-The 60-minute LIVE monthly webinars will be delivered by Microsoft’s Outlook mobile experts and are designed to get your employees up and running and learn cool tips and tricks that save them time. 
+These 60-minute LIVE monthly webinars will be delivered by Outlook mobile experts from Microsoft and are designed to get your employees up and running and learn cool tips and tricks that save them time.
 
 In this webinar series, you'll learn the following:
 - Why Outlook mobile is the right choice for you
 - Best practices for getting started
-- Cool tips and tricks and let you accomplish the most important tasks in just a few seconds
+- Cool tips and tricks to help you accomplish the most important tasks in just a few seconds
 
 You can also ask questions and share your feedback directly with the Outlook team.
 
 **Register now** 
 
-Starts March 14, 2019. See [Registration link](https://aka.ms/JoinOutlookmobile) for a detailed schedule.
+Starts March 14, 2019. Go to the [registration site](https://aka.ms/JoinOutlookmobile) for a detailed schedule.
 
 **Who should attend**
 
