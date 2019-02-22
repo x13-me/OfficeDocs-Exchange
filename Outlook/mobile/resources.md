@@ -22,7 +22,7 @@ Join the over 100 million customers across the world who trust Outlook mobile to
 
 The following is content and guidance that IT administrators, trainers, champions, and change management professionals can use to drive Outlook mobile adoption in your organization and help ensure your users get up and running quickly.  
 
-### Outlook Mobile Customer Adoption Pack
+## Outlook Mobile Customer Adoption Pack
 
 Use the resources in the [Outlook Mobile Customer Adoption Pack](https://aka.ms/OutlookmobileCAP) to make the most of Microsoft Outlook for iOS and Android for your organization. This adoption pack contains a wide range of customizable onboarding templates, flyers, and posters, that IT Pros, administrators, and trainers can use to roll out and drive the adoption of Outlook mobile to end users in their organization.
  
@@ -31,3 +31,25 @@ Included in this pack:
 - Customizable onboarding email templates with links to demo video and installation instructions
 - Posters and flyers to drive buzz and excitement
 - Tips and tricks email that shows you how Outlook mobile can help you stay on top of your day
+
+
+## Outlook Mobile webinar series
+
+We're excited to announce a new Outlook mobile demo webinar series is now available for your employees: 10 time saving tips and tricks with Outlook mobile.
+
+The 60-minute LIVE monthly webinars will be delivered by Microsoft’s Outlook mobile experts and are designed to get your employees up and running and learn cool tips and tricks that save them time. 
+
+In this webinar series, you'll learn the following:
+- Why Outlook mobile is the right choice for you
+- Best practices for getting started
+- Cool tips and tricks and let you accomplish the most important tasks in just a few seconds
+
+You can also ask questions and share your feedback directly with the Outlook team.
+
+**Register now** 
+
+Starts March 14, 2019. See [Registration link](https://aka.ms/JoinOutlookmobile) for a detailed schedule.
+
+**Who should attend**
+
+Open to all. These demo webinars will focus on end user value so invite your business decision makers, end users, trainers, change management personnel, champions, and more!
