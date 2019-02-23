@@ -75,7 +75,9 @@ This parameter sets the Active Directory state for the DAG object. Full replicat
 | SSDSizeInBytes     | True       | The capacity in bytes of each SSD in the server to be used for MCDB. |
 | SSDCountPerServer  | True       | The count of SSD devices to be utilize for MCDB in each server.      |
 
-**Scope**: **DAG**. `ConfigureMCDBPrerequisite` operates on a DAG object
+**Scope**: 
+
+- **DAG**: `ConfigureMCDBPrerequisite` operates on a DAG object.
 
 > [!NOTE]
 > MCDB will utilize up to 95% of an SSD’s physical capacity. The remaining 5% is kept free to account for file system and partition overhead, as well as for a small amount of additional buffer and over-provisioning.
@@ -102,7 +104,9 @@ This parameter sets the local state on each DAG member to allow/disallow MCDB po
 | ServerName         | True       | Specifies the server to enable MetaCacheDatabase on.                 |
 | ForceFailover      | Optional   | This Boolean switch can be utilized to cause all databases on a server to fail over. This is required to make all configuration changes take effect and to begin utilizing MCDB after mount points and database instances have been successfully created in [3. Run Manage-MCDB -ConfigureMCDBOnServer](#3-run-configuremcdbonserver). It is also needed to disable SSD acceleration.      |
 
-**Scope**: **Server**. `ServerAllowMCDB` has to be executed on each server in the DAG
+**Scope**: 
+
+- **Server**: `ServerAllowMCDB` has to be executed on each server in the DAG.
 
 **Examples**:
 
@@ -128,7 +132,9 @@ This parameter identifies unformatted SSD devices and formats them, and also cre
 | ServerName         | True       | Specifies the server to identify unformatted SSD devices and create mount points on.|
 | SSDSizeInByte      | True       | This is the capacity, in bytes, of each SSD in the server to be used for MCDB.      |
 
-**Scope**: **Server**. `ConfigureMCDBOnServer` has to be executed on each server in the DAG
+**Scope**: 
+
+- **Server**: `ConfigureMCDBOnServer` has to be executed on each server in the DAG.
 
 Example:
 
