@@ -1,15 +1,17 @@
 ---
-title: "Configure a fully qualified domain name"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can configure a Unified Messaging (UM) IP gateway with either an IP address or a fully qualified domain name (FQDN). When you create a UM IP gateway, you must define the IP address or the FQDN configured on the VoIP gateway, IP PBX, or session border controller (SBC) that you're using. You can change the IP address or FQDN after the UM IP gateway is created.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: af093f87-59b7-44a8-a9a2-8f17f0cc7db8
-description: "You can configure a Unified Messaging (UM) IP gateway with either an IP address or a fully qualified domain name (FQDN). When you create a UM IP gateway, you must define the IP address or the FQDN configured on the VoIP gateway, IP PBX, or session border controller (SBC) that you're using. You can change the IP address or FQDN after the UM IP gateway is created."
+ms.date: 11/17/2014
+title: Configure a fully qualified domain name
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Configure a fully qualified domain name
@@ -61,5 +63,6 @@ This example configures a UM IP gateway named `MySBC` with an FQDN of sbc.contos
 ```
 Set-UMIPGateway -Identity MySBC -Address sbc.contoso.com -Port 5061
 ```
+
 
 

@@ -1,15 +1,17 @@
 ---
-title: "UM IP gateways"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 7/12/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: A Unified Messaging (UM) IP gateway represents a physical Voice over IP (VoIP) gateway, IP Private Branch eXchange (PBX), or session border controller (SBC) hardware device. Before a VoIP gateway, IP PBX, or SBC can be used to answer incoming calls and send outgoing calls for voice mail users, a UM IP gateway must be created in the directory service.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 991d77e0-3995-44ab-bedf-52ff7a0301ab
-description: "A Unified Messaging (UM) IP gateway represents a physical Voice over IP (VoIP) gateway, IP Private Branch eXchange (PBX), or session border controller (SBC) hardware device. Before a VoIP gateway, IP PBX, or SBC can be used to answer incoming calls and send outgoing calls for voice mail users, a UM IP gateway must be created in the directory service."
+ms.date: 7/12/2018
+title: UM IP gateways
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # UM IP gateways
@@ -81,5 +83,6 @@ By default, a UM IP gateway is left in an enabled state after it's created. Howe
 If you're integrating Unified Messaging with Office Communications Server R2 or Microsoft Lync Server, you must allow only one UM IP gateway to make outgoing calls for users, and disable outbound calling on all other UM IP gateways associated with your SIP URI dial plans. Use either Exchange Online PowerShell or the EAC to disable outbound calling.
 
 When selecting the UM IP gateway through which to allow outgoing calls for on-premises and hybrid deployments, choose the one that's likely to handle the most traffic. Don't allow outgoing traffic through a UM IP gateway that connects to a pool of Lync Server Directors. This is necessary to ensure that outbound calls to external users placed by a Mailbox server running the Microsoft Exchange Unified Messaging service (for example, in Play-on-Phone scenarios) reliably traverse the corporate firewall.
+
 
 

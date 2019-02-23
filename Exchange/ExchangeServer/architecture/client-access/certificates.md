@@ -1,15 +1,17 @@
 ---
-title: "Digital certificates and encryption in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about SSL, TLS, encryption, and digital certificates in Exchange Server.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: a9e2e08c-d46a-4135-a387-eb653212b676
-description: "Summary: Learn about SSL, TLS, encryption, and digital certificates in Exchange Server."
+ms.date: 7/5/2018
+title: Digital certificates and encryption in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Digital certificates and encryption in Exchange Server
@@ -185,4 +187,5 @@ Further details about the default self-signed certificates that are visible in W
    
 Typically, you don't use Windows Certificate Manger to manage Exchange certificates (use the Exchange admin center or the Exchange Management Shell). Note that the WMSVC certificate isn't an Exchange certificate.
   
+
 

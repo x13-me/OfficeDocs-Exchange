@@ -1,15 +1,17 @@
 ---
-title: "View statistics for public folders and public folder items"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 4/19/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to retrieve Exchange statistics for public folders to help make decisions to retain or delete those folders.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 4e412710-9a74-4649-ab01-502e969a7eda
-description: "Summary: Learn how to retrieve Exchange statistics for public folders to help make decisions to retain or delete those folders."
+ms.date: 4/19/2018
+title: View statistics for public folders and public folder items
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # View statistics for public folders and public folder items
@@ -101,4 +103,5 @@ Get-PublicFolderItemStatistics -Identity "\Marketing\Reports" | Select Subject,L
 
 For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](http://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx).
   
+
 

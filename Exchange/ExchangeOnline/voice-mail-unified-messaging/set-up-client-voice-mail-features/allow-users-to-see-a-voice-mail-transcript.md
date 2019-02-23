@@ -1,15 +1,17 @@
 ---
-title: "Allow users to see a voice mail transcript"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 12/9/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Voice Mail Preview is a feature that's available to users who receive their voice mail messages from Unified Messaging (UM). Voice Mail Preview enhances the existing UM voice mail functionality by providing a text version of audio recordings. The voice mail text is displayed in email messages within Microsoft Outlook Web App, Outlook 2010 and later versions, and in other supported email programs. For more information, see Microsoft Speech Technologies.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: c5192e05-905c-440f-beec-1f697edc15b3
-description: "Voice Mail Preview is a feature that's available to users who receive their voice mail messages from Unified Messaging (UM). Voice Mail Preview enhances the existing UM voice mail functionality by providing a text version of audio recordings. The voice mail text is displayed in email messages within Microsoft Outlook Web App, Outlook 2010 and later versions, and in other supported email programs. For more information, see Microsoft Speech Technologies."
+ms.date: 12/9/2016
+title: Allow users to see a voice mail transcript
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Allow users to see a voice mail transcript
@@ -125,5 +127,6 @@ By default, both Voice Mail Preview options are available when a user is enabled
 When a caller leaves a voice message, and **Include preview text with voice messages I receive** is selected, Unified Messaging will create a voice mail preview in the email message, attach the audio file, and send it to the recipient's mailbox. You may want to disable this option if the language that's configured on the dial plan doesn't include Voice Mail Preview support and you don't want voice mail previews included in voice mail messages.
 
 When users sign in to Outlook Voice Access and they send a voice message to another user, they may want to clear the **Include preview text with voice messages I send through Outlook Voice Access** check box. For example, they might want to do this if they're sending voice messages in a language that Voice Mail Preview doesn't support or if they don't want to include the voice mail preview with the voice message because it's too long.
+
 
 

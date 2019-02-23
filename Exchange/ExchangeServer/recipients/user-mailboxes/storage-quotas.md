@@ -1,16 +1,19 @@
 ---
-title: "Configure storage quotas for a mailbox"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: How to set storage quotas on Exchange mailboxes.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 5f5fe292-c80e-4a0b-b3e6-e193ea5171d0
-description: "Summary: How to set storage quotas on Exchange mailboxes."
+ms.date: 7/5/2018
+title: Configure storage quotas for a mailbox
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure storage quotas for a mailbox
@@ -93,5 +96,6 @@ In the Exchange Management Shell, replace \<Identity\> with the name, email addr
 ```
 Get-Mailbox <Identity> | Format-List IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
 ```
+
 
 

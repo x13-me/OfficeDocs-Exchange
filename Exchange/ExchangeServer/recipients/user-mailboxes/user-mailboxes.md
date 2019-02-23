@@ -1,15 +1,17 @@
 ---
-title: "Manage user mailboxes"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: How to use the Exchange admin center (EAC) or Exchange Management Shell to make changes to user mailboxes.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 4f7da774-b484-4312-b822-809dbeced5f8
-description: "Summary: How to use the Exchange admin center (EAC) or Exchange Management Shell to make changes to user mailboxes."
+ms.date: 7/5/2018
+title: Manage user mailboxes
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage user mailboxes
@@ -372,3 +374,4 @@ To verify that you've successfully bulk edited user mailboxes, do one of the fol
   ```
 
   For more information about the available parameters for the **Get-Mailbox** cmdlet, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
+

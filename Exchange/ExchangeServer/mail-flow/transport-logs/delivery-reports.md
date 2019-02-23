@@ -1,15 +1,17 @@
 ---
-title: "Delivery reports for administrators"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how administrators can track delivery information about messages sent or received from any mailbox in the organization.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: d98623d3-e0b7-4cb9-93fb-6351b4a06137
-description: "Summary: Learn how administrators can track delivery information about messages sent or received from any mailbox in the organization."
+ms.date: 7/6/2018
+title: Delivery reports for administrators
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Delivery reports for administrators
@@ -38,4 +40,5 @@ After you create a delivery report search, the resulting delivery report will sh
     
 - Exchange 2016 or Exchange 2019 delivery reports can track messages across Exchange 2019, Exchange 2016, and Exchange 2013 servers in the same Active Directory site.
     
+
 

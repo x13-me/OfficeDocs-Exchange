@@ -1,16 +1,18 @@
 ---
-title: "Outlook Exchange Online FAQ, Outlook for iOS Exchange FAQ, Outlook for Android FAQ, Outlook for iOS security concerns, Outlook for Android security concerns, Outlook for iOS cloud architecture, Outlook for Android cloud architecture, Outlook app Office 365 architecture, Outlook app attachment faq, Outlook app contacts faq, Outlook app license faq"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: laurawi
-ms.date:
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: This article covers the most common questions asked by customers and administrators about using Outlook for iOS and Android with Exchange Online and Office 365.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 747d4875-4b81-4b10-a206-fc2cbab83314
-description: "Summary: This article covers the most common questions asked by customers and administrators about using Outlook for iOS and Android with Exchange Online and Office 365."
+ms.date: 
+title: Outlook Exchange Online FAQ, Outlook for iOS Exchange FAQ, Outlook for Android FAQ, Outlook for iOS security concerns, Outlook for Android security concerns, Outlook for iOS cloud architecture, Outlook for Android cloud architecture, Outlook app Office 365 architecture, Outlook app attachment faq, Outlook app contacts faq, Outlook app license faq
+ms.collection: exchange-online
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Outlook for iOS and Android in Exchange Online: FAQ
@@ -262,3 +264,4 @@ Outlook for iOS and Android synchronizes 500 items per folder, with up to 1000 i
 ### Q: Why are tasks and notes not available with Outlook for iOS and Android?
 
 Microsoft's strategic direction for task management and note taking on mobile devices is the To-Do and OneNote apps, respectively. To-Do provides integration with the tasks stored in Exchange Online mailboxes.
+

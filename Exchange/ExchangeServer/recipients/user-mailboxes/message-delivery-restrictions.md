@@ -1,15 +1,17 @@
 ---
-title: "Configure message delivery restrictions for a mailbox"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: How to place delivery restrictions on one or more mailboxes with the Exchange admin center (EAC) or the Exchange Management Shell.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c4b8b89f-3dbe-4cb8-8839-9a4e8067e00c
-description: "Summary: How to place delivery restrictions on one or more mailboxes with the Exchange admin center (EAC) or the Exchange Management Shell."
+ms.date: 6/8/2018
+title: Configure message delivery restrictions for a mailbox
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure message delivery restrictions for a mailbox
@@ -138,5 +140,6 @@ Run the following command in the Exchange Management Shell.
 ```
 Get-Mailbox <identity> | Format-List AcceptMessagesOnlyFrom,AcceptMessagesOnlyFromDLMembers,RejectMessagesFrom,RejectMessagesFromDLMembers,RequireSenderAuthenticationEnabled
 ```
+
 
 

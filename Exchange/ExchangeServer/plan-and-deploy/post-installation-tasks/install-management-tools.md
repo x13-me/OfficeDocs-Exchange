@@ -1,16 +1,19 @@
 ---
-title: "Install the Exchange management tools"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/27/2018
-ms.audience: ITPro
-ms.topic: get-started-article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how to install the Exchange 2016 or Exchange 2019 management tools on other computers.'
+ms.topic: get-started-article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 71fcbe4c-783b-4f77-aabb-a21aa7a4ef23
-description: "Summary: Learn how to install the Exchange 2016 or Exchange 2019 management tools on other computers."
+ms.date: 7/27/2018
+title: Install the Exchange management tools
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Install the Exchange management tools
@@ -130,3 +133,4 @@ For more information about the Exchange Management Shell and the Exchange Toolbo
     ```
 
 For more information, see [Install Exchange using unattended mode](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
+

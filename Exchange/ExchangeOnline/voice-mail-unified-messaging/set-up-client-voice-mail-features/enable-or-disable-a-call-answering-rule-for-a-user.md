@@ -1,15 +1,17 @@
 ---
-title: "Enable or disable a call answering rule for a user"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 4/8/2015
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can use Exchange Online PowerShell to enable or disable one or more call answering rules for a user. You can also use the Enable-UMCallAnsweringRule or Disable-UMCallAnsweringRule cmdlets in a PowerShell script to enable or disable one or more call answering rules for multiple users.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: f9e40ac3-117f-44f6-9ab1-dc9f4c72e8ac
-description: "You can use Exchange Online PowerShell to enable or disable one or more call answering rules for a user. You can also use the Enable-UMCallAnsweringRule or Disable-UMCallAnsweringRule cmdlets in a PowerShell script to enable or disable one or more call answering rules for multiple users."
+ms.date: 4/8/2015
+title: Enable or disable a call answering rule for a user
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Enable or disable a call answering rule for a user
@@ -82,5 +84,6 @@ This example disables the call answering rule `MyUMCallAnsweringRule` in the mai
 ```
 Disable-UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith -Confirm
 ```
+
 
 

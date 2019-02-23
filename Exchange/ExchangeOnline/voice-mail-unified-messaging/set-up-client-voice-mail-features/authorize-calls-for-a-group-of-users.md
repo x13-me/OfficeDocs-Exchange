@@ -1,15 +1,17 @@
 ---
-title: "Authorize calls for a group of users"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.assetid: 7fc36757-868c-4bde-b793-6ae630da155c
 description: ""
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
+ms.assetid: 7fc36757-868c-4bde-b793-6ae630da155c
+ms.date: 11/17/2014
+title: Authorize calls for a group of users
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Authorize calls for a group of users
@@ -60,5 +62,6 @@ This example enables the InCountry/RegionGroup1, InCountry/RegionGroup2, Interna
 ```
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowedInCountryOrRegionGroups InCountry/RegionGroup1,InCountry/RegionGroup2 -AllowedInternationalGroups InternationalGroup1,InternationalGroup2
 ```
+
 
 

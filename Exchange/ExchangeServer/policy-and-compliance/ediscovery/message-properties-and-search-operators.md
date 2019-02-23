@@ -1,15 +1,17 @@
 ---
-title: "Message properties and search operators for In-Place eDiscovery in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: scotv
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: This topic describes the properties of Exchange email messages that you can search by using In-Place eDiscovery & Hold in Exchange Server. The topic also describes Boolean search operators and other search query techniques that you can use to refine eDiscovery search results.
+ms.topic: reference
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 402b74e4-8853-4c51-9737-1a9c19f8e3dd
-description: "This topic describes the properties of Exchange email messages that you can search by using In-Place eDiscovery & Hold in Exchange Server. The topic also describes Boolean search operators and other search query techniques that you can use to refine eDiscovery search results."
+ms.date: 7/6/2018
+title: Message properties and search operators for In-Place eDiscovery in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Message properties and search operators for In-Place eDiscovery in Exchange Server
@@ -103,4 +105,5 @@ Here's a list of the unsupported characters for an In-Place eDiscovery search qu
     
 - To exclude content marked with a certain property value from your search results, place a minus sign (-) before the name of the property. For example, **-from:"Sara Davis"** will exclude any messages sent by Sara Davis.
     
+
 

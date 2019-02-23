@@ -1,15 +1,17 @@
 ---
-title: "Mail-enable or mail-disable a public folder"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 6/15/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization. Mail-enabling a public folder allows users to post to the public folder by sending an email message to it. When a public folder is mail-enabled additional settings become available for the public folder in the Exchange admin center (EAC), such as email addresses and mail quotas. In Exchange Online PowerShell, before a public folder is mail-enabled, you use the Set-PublicFolder cmdlet to manage all of its settings. After the public folder is mail-enabled, you use the Set-PublicFolder and the Set-MailPublicFolder cmdlets to manage the settings.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 3d69f76d-ff3c-46c1-b962-6a1baa425d8a
-description: "Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization. Mail-enabling a public folder allows users to post to the public folder by sending an email message to it. When a public folder is mail-enabled additional settings become available for the public folder in the Exchange admin center (EAC), such as email addresses and mail quotas. In Exchange Online PowerShell, before a public folder is mail-enabled, you use the Set-PublicFolder cmdlet to manage all of its settings. After the public folder is mail-enabled, you use the Set-PublicFolder and the Set-MailPublicFolder cmdlets to manage the settings."
+ms.date: 6/15/2016
+title: Mail-enable or mail-disable a public folder
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Mail-enable or mail-disable a public folder
@@ -101,5 +103,6 @@ Add-PublicFolderClientPermission "\Customer Feedback" -AccessRights CreateItems 
 ```
 
 For detailed syntax and parameter information, see [Add-PublicFolderClientPermission](https://technet.microsoft.com/library/d68ad7a9-daa0-4e6d-b819-5cca891c8fd9.aspx).
+
 
 

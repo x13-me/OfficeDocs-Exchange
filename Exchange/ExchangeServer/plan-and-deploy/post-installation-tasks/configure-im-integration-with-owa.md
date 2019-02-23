@@ -1,16 +1,19 @@
 ---
-title: "Configure instant messaging integration with Outlook on the web in Exchange"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 6/7/2018
-ms.audience: ITPro
-ms.topic: get-started-article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how to configure IM integration with Outlook on the web in Exchange 2016 or Exchange 2019.'
+ms.topic: get-started-article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 0eda267b-41e5-4a60-a209-70a8522a9f41
-description: "Summary: Learn how to configure IM integration with Outlook on the web in Exchange 2016 or Exchange 2019."
+ms.date: 6/7/2018
+title: Configure instant messaging integration with Outlook on the web in Exchange
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure instant messaging integration with Outlook on the web in Exchange
@@ -115,3 +118,4 @@ To verify the values of the **IMServerName** and **IMCertificateThumbprint** pro
 - _Process_: `Microsoft.Exchange.Directory.TopologyService` (instead of `MSExchangeMailboxAssistants`).
     
 - _Argument_: `Config` (instead of `"Config,Component=OwaServer"`).
+

@@ -1,16 +1,19 @@
 ---
-title: "Recover deleted messages in a user's mailbox"
-ms.author: chrisda
-author: chrisda
-manager: scotv
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
-ms.assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12
 description: "Summary: Learn how administrators can search for and recover deleted email messages in a user's mailbox in Exchange Server 2016 or Exchange Server 2019"
+ms.topic: article
+author: chrisda
+ms.author: chrisda
+ms.assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12
+ms.date: 7/5/2018
+title: Recover deleted messages in a user's mailbox
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Recover deleted messages in a user's mailbox
@@ -148,4 +151,5 @@ To verify that you have successfully exported messages to a .pst file, use Outlo
     
 - In addition to using this procedure to search for and recover deleted items, you can also use a similar procedure to search for items in user mailboxes and then delete those items from the source mailbox. For more information, see [Search for and delete messages in Exchange Server](../../policy-and-compliance/ediscovery/delete-messages.md).
     
+
 

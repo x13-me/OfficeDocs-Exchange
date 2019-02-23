@@ -1,15 +1,17 @@
 ---
-title: "Recoverable Items folder in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about protecting user account data in Exchange Server 2016 and Exchange Server 2019 by using the Recoverable Items folder.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
-description: "Summary: Learn about protecting user account data in Exchange Server 2016 and Exchange Server 2019 by using the Recoverable Items folder."
+ms.date: 7/9/2018
+title: Recoverable Items folder in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Recoverable Items folder in Exchange Server
@@ -206,4 +208,5 @@ If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page
     
   - [Recover deleted items or email in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=524924)
     
+
 

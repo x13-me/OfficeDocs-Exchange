@@ -1,17 +1,19 @@
 ---
-title: "Sensitive information types in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: scotv
-ms.date: 7/8/2018
-ms.audience: ITPro
-ms.topic: reference
-keywords:
-- 'data loss prevention in office 365,Data loss prevetion in Exchange,DLP,sensitive information types'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the sensitive information types you can use when setting up DLP policies in your Exchange Server organization.'
+ms.topic: reference
+author: chrisda
+ms.author: chrisda
 ms.assetid: 98b81f9c-87bb-4905-8e53-04621c3ae74d
-description: "Summary: Learn about the sensitive information types you can use when setting up DLP policies in your Exchange Server organization."
+ms.date: 7/8/2018
+title: Sensitive information types in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+keywords:
+- data loss prevention in office 365,Data loss prevetion in Exchange,DLP,sensitive information types
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Sensitive information types in Exchange Server
@@ -3828,4 +3830,5 @@ A DLP policy is 55% confident that it's detected this type of sensitive informat
 |:-----|
 |Social Security  <br/> Social Security#  <br/> Soc Sec  <br/> SSN  <br/> SSNS  <br/> SSN#  <br/> SS#  <br/> SSID  <br/> |
    
+
 

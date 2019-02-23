@@ -1,17 +1,19 @@
 ---
-title: "Create a UM IP gateway"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMIPGatewayWizardForm.CreateUMIPGatewayWizardPage'
-ms.service: exchange-online
 localization_priority: Normal
+description: When you create a Unified Messaging (UM) IP gateway, you enable Exchange servers to connect to a new Voice over IP (VoIP) gateway, a Private Branch eXchange (PBX) enabled for Session Initiation Protocol (SIP), an IP PBX, or a session border controller (SBC). Immediately after you create a UM IP gateway, you should create a new UM hunt group and then associate the UM hunt group with the UM IP gateway. You can associate the UM IP gateway with one or more UM dial plans by creating one or more UM hunt groups.
+ms.topic: article
+author: tonysmit
+f1_keywords:
+- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.CreateUMIPGatewayWizardForm.CreateUMIPGatewayWizardPage
+ms.author: tonysmit
 ms.assetid: 542d6b50-147b-4cec-b54d-61c7b8fc0fc7
-description: "When you create a Unified Messaging (UM) IP gateway, you enable Exchange servers to connect to a new Voice over IP (VoIP) gateway, a Private Branch eXchange (PBX) enabled for Session Initiation Protocol (SIP), an IP PBX, or a session border controller (SBC). Immediately after you create a UM IP gateway, you should create a new UM hunt group and then associate the UM hunt group with the UM IP gateway. You can associate the UM IP gateway with one or more UM dial plans by creating one or more UM hunt groups."
+ms.date: 11/17/2014
+title: Create a UM IP gateway
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Create a UM IP gateway
@@ -70,5 +72,6 @@ This example creates a UM IP gateway named `yUMIPGateway` and prevents the UM IP
 ```
 New-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
 ```
+
 
 

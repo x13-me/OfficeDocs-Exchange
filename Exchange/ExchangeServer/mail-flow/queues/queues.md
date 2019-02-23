@@ -1,15 +1,17 @@
 ---
-title: "Queues and messages in queues in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/10/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn about queues and messages in queues in Exchange 2016 and Exchange 2019
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: e7ad0ba5-3789-4a2b-9825-6bb1b321609c
-description: "Learn about queues and messages in queues in Exchange 2016 and Exchange 2019"
+ms.date: 7/10/2018
+title: Queues and messages in queues in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Queues and messages in queues in Exchange Server
@@ -244,4 +246,5 @@ The following table describes the management tasks you can perform on queues or 
 |Remove messages from queues  <br/> |Permanently prevents the delivery of a message. You can prevent the delivery of a message to any recipients in a specific queue, or to all recipients in all queues. Optionally, you can send a non-delivery report (also known as an NDR, delivery status notification, DSN or bounce message) to the sender when the message is removed.  <br/> |Queue Viewer or the **Remove-Message** cmdlet.  <br/> |[Procedures for messages in queues](message-procedures.md) <br/> |
 |Export messages from queues  <br/> |Copies a message to the location that you specify. The messages aren't deleted from the queue, but a copy of the message is saved as a file in the specified location. This enables administrators or officials in an organization to later examine the messages. Before you export a message, you need to temporarily suspend the message.  <br/> |**Export-Message** cmdlet only.  <br/> |[Export messages from queues](export-messages.md) <br/> |
    
+
 

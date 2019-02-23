@@ -1,16 +1,18 @@
 ---
-title: "Using Outlook for iOS and Android in the Government Community Cloud"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: How organizations in the Office 365 U.S. Government Community Cloud (GCC) can enable Outlook for iOS and Android for their users.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 73b693d9-39bb-4689-a1ff-4be505a5945b
-description: "Summary: How organizations in the Office 365 U.S. Government Community Cloud (GCC) can enable Outlook for iOS and Android for their users."
+ms.date: 
+title: Using Outlook for iOS and Android in the Government Community Cloud
+ms.collection: exchange-online
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Using Outlook for iOS and Android in the Government Community Cloud
@@ -129,4 +131,5 @@ The following services and features of Outlook for iOS and Android are not avail
 - **MailTips**: The External recipients MailTip is not available with GCC accounts.
 
 - **Office Lens**: Office Lens technology (e.g., scanning business cards, taking pictures) included in Outlook for iOS and Android is not available with GCC accounts.
+
 

@@ -1,15 +1,17 @@
 ---
-title: "Protocol logging"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how protocol logging records SMTP activity in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 40da446b-bcc3-4a97-ace7-a54f6ddebd79
-description: "Summary: Learn how protocol logging records SMTP activity in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/6/2018
+title: Protocol logging
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Protocol logging
@@ -112,4 +114,5 @@ The protocol log stores each SMTP protocol event on a single line in the log. Th
    
 One SMTP conversation that represents sending or receiving a single email message generates multiple SMTP events. Each event is recorded on a separate line in the protocol log. An Exchange server has many SMTP conversations going on at any given time. This creates protocol log entries from different SMTP conversations that are mixed together. You can use the **session-id** and **sequence-number** fields to sort the protocol log entries by each individual SMTP conversation.
   
+
 

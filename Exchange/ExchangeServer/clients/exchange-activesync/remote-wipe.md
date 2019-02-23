@@ -1,15 +1,17 @@
 ---
-title: "Perform a remote wipe on a mobile phone"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.assetid: 67ba838e-031d-4a98-b277-170683b6f520
 description: "Summary: Learn how to clear all data on a user's mobile phone in the Exchange admin center."
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 67ba838e-031d-4a98-b277-170683b6f520
+ms.date: 7/5/2018
+title: Perform a remote wipe on a mobile phone
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Perform a remote wipe on a mobile phone
@@ -78,4 +80,5 @@ There are several ways to verify that the remote wipe completed.
     
 - In Outlook on the web, check the status of the mobile device. The status will change from **Wipe Pending** to **Wipe Successful**.
     
+
 

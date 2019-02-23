@@ -1,15 +1,17 @@
 ---
-title: "Mail flow rule actions in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: scotv
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: reference
+author: chrisda
+ms.author: chrisda
 ms.assetid: 5d11a955-b1cc-4150-a0b9-a8cc48ba9bde
-description: "Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/9/2018
+title: Mail flow rule actions in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Mail flow rule actions in Exchange Server
@@ -116,4 +118,5 @@ The property values that are used for actions in mail flow rules are described i
   
 [Transport rule actions](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx) for Exchange Online Protection 
   
+
 

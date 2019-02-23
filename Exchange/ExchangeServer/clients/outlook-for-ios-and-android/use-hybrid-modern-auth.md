@@ -1,16 +1,18 @@
 ---
-title: "Using hybrid Modern Authentication with Outlook for iOS and Android"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Exchange 2016 and Exchange 2019 administrators can learn how to deploy hybrid Modern Authentication and Enterprise Mobility + Security features to enable support for Outlook for iOS and Android.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 0e701643-1f18-4cc3-8595-4fd4b15caf6c
-description: "Exchange 2016 and Exchange 2019 administrators can learn how to deploy hybrid Modern Authentication and Enterprise Mobility + Security features to enable support for Outlook for iOS and Android."
+ms.date: 
+title: Using hybrid Modern Authentication with Outlook for iOS and Android
+ms.collection: exchange-server
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Using hybrid Modern Authentication with Outlook for iOS and Android
@@ -441,4 +443,5 @@ You can also create a scheduled task that executes the above command every 24 ho
   
 There are other issues that may prevent hybrid Modern Authentication from functioning correctly. For more information, see the troubleshooting section in [Announcing Hybrid Modern Authentication for Exchange On-Premises](https://blogs.technet.microsoft.com/exchange/2017/12/06/announcing-hybrid-modern-authentication-for-exchange-on-premises/).
   
+
 

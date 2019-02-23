@@ -1,15 +1,17 @@
 ---
-title: "Create a database availability group"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: How to create a DAG in Exchange Server, through the Exchange admin center (EAC) or the Exchange Management Shell.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d6b98299-e203-488b-af73-50753fe152c8
-description: "Summary: How to create a DAG in Exchange Server, through the Exchange admin center (EAC) or the Exchange Management Shell."
+ms.date: 7/9/2018
+title: Create a database availability group
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create a database availability group
@@ -136,4 +138,5 @@ To verify that you've successfully created a DAG, do one of the following:
   
 [Add-DatabaseAvailabilityGroupServer](http://technet.microsoft.com/library/6bd0a3fe-dec6-47c2-b9a3-8dffb60e4aad.aspx)
   
+
 

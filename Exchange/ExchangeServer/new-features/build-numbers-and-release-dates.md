@@ -1,15 +1,17 @@
 ---
-title: "Exchange Server build numbers and release dates"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about build numbers and release dates for current and past versions of Exchange Server.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 6a8091d0-4f19-4ae7-9e44-fd1c9f5fbe19
-description: "Summary: Learn about build numbers and release dates for current and past versions of Exchange Server."
+ms.date: 
+title: Exchange Server build numbers and release dates
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Exchange Server build numbers and release dates
@@ -318,3 +320,4 @@ The following table lists the build numbers and general release dates for each v
 |Exchange Server 4.0 SP2|July 19, 1996|4.0.993|
 |Exchange Server 4.0 SP1|May 1, 1996|4.0.838|
 |Exchange Server 4.0 Standard Edition|June 11, 1996|4.0.837|
+

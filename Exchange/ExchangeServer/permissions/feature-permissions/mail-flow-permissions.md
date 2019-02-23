@@ -1,15 +1,17 @@
 ---
-title: "Mail flow permissions"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: The permissions required to perform tasks related to mail flow vary depending on the procedure being performed or the cmdlet you want to run.
+ms.topic: reference
+author: chrisda
+ms.author: chrisda
 ms.assetid: f49f4fb5-af75-43cb-900f-c5f7b8cfa143
-description: "The permissions required to perform tasks related to mail flow vary depending on the procedure being performed or the cmdlet you want to run."
+ms.date: 7/5/2018
+title: Mail flow permissions
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Mail flow permissions
@@ -95,4 +97,5 @@ Users who are assigned the View Only Management role group can view the configur
 |Transport logs - Edge Transport  <br/> |Edge Transport server local administrator  <br/> |
 |Transport rules - Edge Transport  <br/> |Edge Transport server local administrator  <br/> |
    
+
 

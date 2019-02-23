@@ -1,15 +1,17 @@
 ---
-title: "Email address and address book permissions"
-ms.author: serdars
-author: SerdarSoysal
-manager: scotv
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn about permissions that are required to manage email address and address book features in Exchange Server 2016 or Exchange Server 2019
+ms.topic: reference
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 1c1de09d-16ef-4424-9bfb-eb7edffbc8c2
-description: "Learn about permissions that are required to manage email address and address book features in Exchange Server 2016 or Exchange Server 2019"
+ms.date: 7/5/2018
+title: Email address and address book permissions
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Email address and address book permissions
@@ -43,4 +45,5 @@ Users who are assigned the View-Only Management role group can view the configur
 |Offline address books  <br/> |[Organization Management](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> |
 |Offline address book connectivity  <br/> |[Organization Management](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> |
    
+
 

@@ -1,15 +1,17 @@
 ---
-title: "Play on Phone"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: After a voice mail message arrives, users can choose either to listen to the voice mail message through their computer speakers or headphones or to use the Play on Phone feature. The Play on Phone feature is included with Microsoft Outlook and Outlook Web App, and settings for Play on Phone are available in the Play on phone section under Voice mail options. This topic discusses how a Unified Messaging (UM)-enabled user can use the Play on Phone feature.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 511e4950-340a-48cc-a020-35d11e76b993
-description: "After a voice mail message arrives, users can choose either to listen to the voice mail message through their computer speakers or headphones or to use the Play on Phone feature. The Play on Phone feature is included with Microsoft Outlook and Outlook Web App, and settings for Play on Phone are available in the Play on phone section under Voice mail options. This topic discusses how a Unified Messaging (UM)-enabled user can use the Play on Phone feature."
+ms.date: 11/17/2014
+title: Play on Phone
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Play on Phone
@@ -43,5 +45,6 @@ The bottom section of the **Play on Phone** dialog box displays the subject of t
 ## Phone number validation
 
 Play on Phone performs only simple validation on input into the **Play on Phone** dialog box. Play on Phone does not validate telephone numbers. If a telephone number is not valid, Unified Messaging returns a meaningful error code to the user.
+
 
 

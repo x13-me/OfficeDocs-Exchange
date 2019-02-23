@@ -1,15 +1,17 @@
 ---
-title: "Prevent users in the same dial plan from receiving faxes"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 12/9/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can prevent UM-enabled users who are linked with a Unified Messaging (UM) dial plan from receiving fax messages. By default, users who are enabled for Unified Messaging and are linked with a UM dial plan can receive fax messages. However, there may be times when you want to prevent users who are associated with a specific UM dial plan from receiving faxes.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 4fc66414-c950-4bca-ac20-4e489f288d06
-description: "You can prevent UM-enabled users who are linked with a Unified Messaging (UM) dial plan from receiving fax messages. By default, users who are enabled for Unified Messaging and are linked with a UM dial plan can receive fax messages. However, there may be times when you want to prevent users who are associated with a specific UM dial plan from receiving faxes."
+ms.date: 12/9/2016
+title: Prevent users in the same dial plan from receiving faxes
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Prevent users in the same dial plan from receiving faxes
@@ -45,5 +47,6 @@ This example prevents UM-enabled users associated with the UM dial plan named `M
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -FaxEnabled $false
 ```
+
 
 

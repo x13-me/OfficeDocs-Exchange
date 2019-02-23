@@ -1,15 +1,17 @@
 ---
-title: "FAQ: Public folders"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: A list of frequently asked questions regarding public folders in Exchange Server 2016 and Exchange Server 2019.
+ms.topic: reference
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 1cdcdcb7-f11b-45ca-ad23-7c38f640208c
-description: "A list of frequently asked questions regarding public folders in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 6/8/2018
+title: 'FAQ: Public folders'
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # FAQ: Public folders
@@ -169,4 +171,5 @@ No. If you try to change the master hierarchy mailbox, you'll receive an error.
 
 Yes, full text search has been available for public folders since Exchange 2013. However, you can't search across multiple public folders.
   
+
 

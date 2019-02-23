@@ -1,15 +1,17 @@
 ---
-title: "Pre-stage the cluster name object for a database availability group"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Pre-stage and provision a cluster name object (CNO) for an Exchange Server database availability group (DAG).'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 51ebf2f6-8a02-44ef-a489-ca361cb0f63a
-description: "Summary: Pre-stage and provision a cluster name object (CNO) for an Exchange Server database availability group (DAG)."
+ms.date: 7/9/2018
+title: Pre-stage the cluster name object for a database availability group
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Pre-stage the cluster name object for a database availability group
@@ -73,4 +75,5 @@ To verify that you've successfully created the CNO, do the following:
     
 3. Open the OU in which you created the account, and then verify that the account is listed.
     
+
 

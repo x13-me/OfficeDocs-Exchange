@@ -1,15 +1,17 @@
 ---
-title: "Configure Kerberos authentication for load-balanced Client Access services"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: How to use Kerberos authentication with load-balanced Exchange servers running Client Access services.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
-description: "Summary: How to use Kerberos authentication with load-balanced Exchange servers running Client Access services."
+ms.date: 
+title: Configure Kerberos authentication for load-balanced Client Access services
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure Kerberos authentication for load-balanced Client Access services
@@ -417,4 +419,5 @@ To configure your servers that are running Client Access services to stop using 
 
 2. Although you don't have to do this immediately, you should eventually restart all client computers to clear the Kerberos ticket cache from the computer.
     
+
 

@@ -1,15 +1,17 @@
 ---
-title: "Edge Transport servers"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/3/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how Edge Transport servers provide Internet mail flow, antispam, and mail flow rules for your Exchange Server organization'
+ms.topic: reference
+author: chrisda
+ms.author: chrisda
 ms.assetid: cfff9f59-afac-447c-8297-afcebe49a52d
-description: "Summary: Learn how Edge Transport servers provide Internet mail flow, antispam, and mail flow rules for your Exchange Server organization"
+ms.date: 7/3/2018
+title: Edge Transport servers
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Edge Transport servers
@@ -41,3 +43,4 @@ Edge Transport rules are used to control the flow of messages sent to or receive
 ## Address rewriting
 
 Address rewriting presents a consistent email address appearance to external recipients. You configure address rewriting on Edge Transport servers to modify the SMTP addresses on inbound and outbound messages. Address rewriting is especially useful for newly merged organizations that want to present a consistent email address appearance.
+

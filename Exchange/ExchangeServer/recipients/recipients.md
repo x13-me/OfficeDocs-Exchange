@@ -1,15 +1,17 @@
 ---
-title: "Recipients"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: All about recipients, such as mailboxes and mail users, in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: abad5939-8826-4df1-94bf-2d734f07e929
-description: "Summary: All about recipients, such as mailboxes and mail users, in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 6/8/2018
+title: Recipients
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Recipients
@@ -214,4 +216,5 @@ The following table contains links to topics that will help you learn about and 
 |[Manage permissions for recipients](mailbox-permissions.md)|Learn how to use the EAC or the Exchange Management Shell to assign permissions to users and groups.|
 |[Automatic Mailbox Distribution](http://technet.microsoft.com/library/f4db4636-948c-466b-839c-300c1a3a9544.aspx)|Learn about how automatic mailbox distribution works and how to control which mailbox databases are selected for new and moved mailboxes.|
  
+
 

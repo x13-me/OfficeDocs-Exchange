@@ -1,16 +1,18 @@
 ---
-title: "Outlook for iOS security, Outlook for Android security, Outlook for iOS data security, Outlook for Android data security, Outlook iOS Security MDM, Outlook Android security MDM, Outlook iOS security Exchange policies"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: laurawi
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: How to enable Outlook for iOS and Android in your Exchange Online environment in a secure manner.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: dd886cdc-bfc1-42a4-8e67-66ae1d08af0f
-description: "Summary: How to enable Outlook for iOS and Android in your Exchange Online environment in a secure manner."
+ms.date: 
+title: Outlook for iOS security, Outlook for Android security, Outlook for iOS data security, Outlook for Android data security, Outlook iOS Security MDM, Outlook Android security MDM, Outlook iOS security Exchange policies
+ms.collection: exchange-online
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Securing Outlook for iOS and Android in Exchange Online
@@ -314,3 +316,4 @@ The following example shows how to add the user-agent strings to the EWS allow l
 ```
 Set-OrganizationConfig -EwsAllowList @{Add="Outlook-iOS/*","Outlook-Android/*"}
 ```
+

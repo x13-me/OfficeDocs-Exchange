@@ -1,16 +1,19 @@
 ---
-title: "Load balancing in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: scotv
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn about the ways load balancing in Exchange Server handles mail-enabled connections, resulting in improved availability and resiliency in your Exchange enterprise network.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: f572c193-6f3a-400e-9085-a9d3e5e18c59
-description: "Summary: Learn about the ways load balancing in Exchange Server handles mail-enabled connections, resulting in improved availability and resiliency in your Exchange enterprise network."
+ms.date: 6/8/2018
+title: Load balancing in Exchange Server
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Load balancing in Exchange Server
@@ -179,4 +182,5 @@ To ensure that load balancers do not route traffic to a Mailbox server that Mana
   
 Read more about managed availability in [Managed availability](../../high-availability/managed-availability/managed-availability.md).
   
+
 

@@ -1,15 +1,17 @@
 ---
-title: "Manage equipment mailboxes"
-ms.author: serdars
-author: SerdarSoysal
-manager: scotv
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18
 description: "Summary: Learn how to create an Exchange equipment mailbox, which is a resource mailbox assigned to a resource that isn't location-specific."
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
+ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18
+ms.date: 7/5/2018
+title: Manage equipment mailboxes
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Manage equipment mailboxes
@@ -267,5 +269,6 @@ To verify that you've successfully changed properties for an equipment mailbox, 
   ```
   Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'EquipmentMailbox')} | Get-CalendarProcessing | Format-List Identity,ScheduleOnlyDuringWorkHours
   ```
+
 
 

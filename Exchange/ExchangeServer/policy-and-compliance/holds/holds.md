@@ -1,15 +1,17 @@
 ---
-title: "In-Place Hold and Litigation Hold in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about In-Place Hold and Litigation Hold in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: overview
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
-description: "Summary: Learn about In-Place Hold and Litigation Hold in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/6/2018
+title: In-Place Hold and Litigation Hold in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # In-Place Hold and Litigation Hold in Exchange Server
@@ -172,4 +174,5 @@ Hold settings and content in the Recoverable Items folder are also preserved whe
 > [!TIP]
 > For Exchange Server, an Exchange hybrid deployment is the recommended way to migrate on-premises mailboxes to Office 365.
   
+
 

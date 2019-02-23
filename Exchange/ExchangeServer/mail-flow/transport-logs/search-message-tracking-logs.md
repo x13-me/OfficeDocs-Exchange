@@ -1,16 +1,19 @@
 ---
-title: "Search message tracking logs"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/10/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: Administrators can learn how to search the message tracking log in Exchange 2016 and Exchange 2019 by using the Get-MessageTrackingLog cmdlet in Exchange PowerShell.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: e1678327-bcd5-42d4-a363-67f33067fe9a
-description: "Administrators can learn how to search the message tracking log in Exchange 2016 and Exchange 2019 by using the Get-MessageTrackingLog cmdlet in Exchange PowerShell."
+ms.date: 7/10/2018
+title: Search message tracking logs
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Search message tracking logs
@@ -122,4 +125,5 @@ $Servers = Get-ExchangeServer; $Servers | where {$_.isHubTransportServer -eq $tr
 
 You can use the Delivery Reports for administrators feature in the Exchange admin center (EAC) to search the message tracking logs for information about messages sent by or received by a specific mailbox in your organization. For more information, see [Track messages with delivery reports](track-messages-with-delivery-reports.md).
   
+
 

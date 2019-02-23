@@ -1,15 +1,17 @@
-ï»¿---
-title: "Exchange Server supportability matrix"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
+---
 localization_priority: Normal
+description: Learn about the support life cycle for Exchange
+ms.topic: article
+author: chrisda
+ms.author: chrisda
+ms.date: 
+title: Exchange Server supportability matrix
+ms.collection: exchange-server
+ms.audience: ITPro
 ms:assetid: dbac2d40-da8b-469f-a265-1d1f948fe446
-description: "Learn about the support life cycle for Exchange"
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Exchange Server supportability matrix
@@ -33,7 +35,7 @@ In Exchange Server 2013 or later, we changed the way we deliver hotfixes and ser
 
 ## Support lifecycle
 
-For more information about the support lifecycle for a specific version of Exchange, or of the MicrosoftÂ Windows server or client operating systems, see the [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?linkid=55839) page. For more information about the Microsoft Support Lifecycle, see the [Microsoft Support Lifecycle Policy FAQ](https://go.microsoft.com/fwlink/p/?linkid=158902).
+For more information about the support lifecycle for a specific version of Exchange, or of the Microsoft Windows server or client operating systems, see the [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?linkid=55839) page. For more information about the Microsoft Support Lifecycle, see the [Microsoft Support Lifecycle Policy FAQ](https://go.microsoft.com/fwlink/p/?linkid=158902).
 
 ## Exchange Server 2007 End-of life
 
@@ -118,7 +120,7 @@ The following table identifies the Web browsers supported for use together with 
 The following table identifies the Web browsers supported for use together with the light (basic) version of Outlook Web App or Outlook on the web. Supported browsers are identified by an X character.
 
 > [!NOTE]  
-> Outlook Web App Basic (Outlook Web App Light) is supported for use in mobile browsers. However, if rendering or authentication issues occur in a mobile browser, determine whether the issue can be reproduced by using Outlook Web App Light in the full client of a supported browser. For example, test the use of Outlook Web App Light in Safari, Chrome, or Internet Explorer. If the issue canâ€™t be reproduced in the full client, we recommend that you contact the mobile device vendor for help. In these cases, we collaborate with the vendor as appropriate.
+> Outlook Web App Basic (Outlook Web App Light) is supported for use in mobile browsers. However, if rendering or authentication issues occur in a mobile browser, determine whether the issue can be reproduced by using Outlook Web App Light in the full client of a supported browser. For example, test the use of Outlook Web App Light in Safari, Chrome, or Internet Explorer. If the issue can’t be reproduced in the full client, we recommend that you contact the mobile device vendor for help. In these cases, we collaborate with the vendor as appropriate.
 
 |**Browser**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -190,7 +192,7 @@ The following table identifies the version of Microsoft Exchange that can be use
 
 ## Microsoft .NET Framework
 
-The following tables identify the versions of the MicrosoftÂ .NET Framework that can be used with the specified versions of Exchange. Supported versions are identified by an X character.
+The following tables identify the versions of the Microsoft .NET Framework that can be used with the specified versions of Exchange. Supported versions are identified by an X character.
 
 > [!IMPORTANT]  
 > **Versions of .NET Framework that aren't listed in the tables below are not supported on any version or release of Exchange.** This includes minor and patch-level releases of .NET Framework.
@@ -254,3 +256,4 @@ The following table identifies the version of Windows Installer that is used tog
 |:-----|:-----|:-----|:-----|
 |Windows Installer 4.5|X|X|X|
 |Windows Installer 5.0|X|X||
+

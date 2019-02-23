@@ -1,15 +1,17 @@
 ---
-title: "Messaging records management in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/8/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about Messaging records management in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 0dd92e9c-881e-43c0-9bbf-f41fdc9dfd87
-description: "Summary: Learn about Messaging records management in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/8/2018
+title: Messaging records management in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Messaging records management in Exchange Server
@@ -68,4 +70,5 @@ Optionally, you can use RPTs and personal tags to allow users to clean up their 
 > [!NOTE]
 > A time-based In-Place Hold or Litigation Hold is similar to what was informally referred to as a *rolling legal hold* in Exchange 2010. Rolling legal hold was implemented by configuring the deleted item retention period for a mailbox database or individual mailbox. However, deleted item retention retains deleted and modified items based on the date deleted. In-Place Hold and Litigation Hold preserves items based on the date they're received or created. This ensures that messages are preserved for at least the specified period.
   
+
 

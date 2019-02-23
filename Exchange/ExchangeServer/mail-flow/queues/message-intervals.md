@@ -1,15 +1,17 @@
 ---
-title: "Message retry, resubmit, and expiration intervals"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.assetid: 03020e6f-4c01-4c6e-ae47-fd74d4c4f96a
 description: "Summary: Learn about the time intervals and settings in Exchange Server 2016 or Exchange Server 2019 for messages that can't be successfully delivered."
+ms.topic: article
+author: chrisda
+ms.author: chrisda
+ms.assetid: 03020e6f-4c01-4c6e-ae47-fd74d4c4f96a
+ms.date: 7/6/2018
+title: Message retry, resubmit, and expiration intervals
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Message retry, resubmit, and expiration intervals
@@ -103,4 +105,5 @@ The message expiration timeout interval is described in the following table.
 
 Although you can't manually force messages to expire, you can manually remove messages from any queue (except the Submission queue) with or without an NDR. For more information, see [Remove messages from queues](message-procedures.md#Remove).
   
+
 

@@ -1,15 +1,17 @@
 ---
-title: "Mail flow rule conditions and exceptions (predicates) in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the conditions and exceptions that define when mail flow rules (transport rules) are applied to messages in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: reference
+author: chrisda
+ms.author: chrisda
 ms.assetid: c918ea00-1e68-4b8b-8d51-6966b4432e2d
-description: "Summary: Learn about the conditions and exceptions that define when mail flow rules (transport rules) are applied to messages in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 
+title: Mail flow rule conditions and exceptions (predicates) in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Mail flow rule conditions and exceptions (predicates) in Exchange Server
@@ -251,4 +253,5 @@ The property types that are used in conditions and exceptions are described in t
   
 [Transport rule conditions (predicates)](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx) for Exchange Online Protection 
   
+
 

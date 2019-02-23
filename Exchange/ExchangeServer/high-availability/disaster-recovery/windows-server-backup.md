@@ -1,16 +1,19 @@
 ---
-title: "Using Windows Server Backup to back up and restore Exchange data"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: An overview of using Windows Server Backup with Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 0fac891a-5713-42b6-afd5-c91b2b88f966
-description: "Summary: An overview of using Windows Server Backup with Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/9/2018
+title: Using Windows Server Backup to back up and restore Exchange data
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Using Windows Server Backup to back up and restore Exchange data
@@ -49,4 +52,5 @@ For detailed steps to back up Exchange using WSB, see [Use Windows Server Backup
   
 For detailed steps to restore data from a backup taken with WSB, see [Use Windows Server Backup to restore a backup of Exchange](restore-with-windows-server-backup.md).
   
+
 

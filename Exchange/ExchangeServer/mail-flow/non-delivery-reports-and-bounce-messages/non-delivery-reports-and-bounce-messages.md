@@ -1,15 +1,17 @@
 ---
-title: "DSNs and NDRs in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Administrators can learn about how to read and interpret delivery status notifications (also known as DSNs, non-delivery reports, NDRs or bounce messages) in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 8e91de84-76fa-49b2-898c-c5eface76560
-description: "Summary: Administrators can learn about how to read and interpret delivery status notifications (also known as DSNs, non-delivery reports, NDRs or bounce messages) in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/6/2018
+title: DSNs and NDRs in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # DSNs and NDRs in Exchange Server
@@ -135,4 +137,5 @@ The following tables contain the enhanced status codes that are returned in NDRs
 |5.7.3|`Cannot achieve Exchange Server authentication` <br/> or <br/> `Not Authorized`|A firewall or other device is blocking the Extended SMTP command that's required for Exchange Server authentication (X-EXPS). <br/> Internal email traffic is flowing through connectors that aren't configured to use the Exchange Server authentication method . Verify the remote IP address ranges on any custom Receive connectors.|
 |5.7.900 <br/> to <br/> 5.7.999|`Delivery not authorized, message refused`|The message was rejected by a mail flow rule (also known as a transport rule). This enhanced status code range is available when the rule is configured to reject messages (otherwise, the default code that's used is 5.7.1). For more information, see [Mail flow rule actions in Exchange Server](../../policy-and-compliance/mail-flow-rules/actions.md).|
    
+
 

@@ -1,15 +1,17 @@
 ---
-title: "Information Rights Management in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how administrators can use Information Rights Management (IRM) in Exchange Server 2016 and Exchange Server 2019 to help prevent the disclosure of sensitive information.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 6ea3a695-3ddd-4d53-b3c6-90041f44ef64
-description: "Summary: Learn how administrators can use Information Rights Management (IRM) in Exchange Server 2016 and Exchange Server 2019 to help prevent the disclosure of sensitive information."
+ms.date: 7/8/2018
+title: Information Rights Management in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Information Rights Management in Exchange Server
@@ -187,5 +189,6 @@ For more information, see [Test-IRMConfiguration](http://technet.microsoft.com/l
 The Azure Rights Management connector (RMS connector) is an optional application that enhances data protection for your Exchange server by employing the cloud-based Azure Rights Management (Azure RMS) service. Once you install the RMS connector, it provides continuous data protection during the lifetime of the information. And, because these services are customizable, you can define the level of protection that you need. For example, you can limit email message access to specific users, or set view-only rights for certain messages.
 
 To learn more about the RMS connector and how to install it, see [Deploying the Azure Rights Management connector](https://go.microsoft.com/fwlink/p/?linkid=330432).
+
 
 

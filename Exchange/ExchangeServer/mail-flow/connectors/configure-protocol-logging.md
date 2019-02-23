@@ -1,15 +1,17 @@
 ---
-title: "Configure protocol logging"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 6/7/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to configure protocol logging for Send connectors and Receive connectors in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: c81cac9c-b990-492a-b899-5be8d08a6068
-description: "Summary: Learn how to configure protocol logging for Send connectors and Receive connectors in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 6/7/2018
+title: Configure protocol logging
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure protocol logging
@@ -242,4 +244,5 @@ To verify that you have successfully used the Exchange Management Shell to confi
 
 2. Open the location of the protocol log in Windows Explorer or File Explorer to verify that the log files exist, that data is being written to the files, and that the files are being recycled based on the maximum file size and maximum directory size values that you configured.
     
+
 
