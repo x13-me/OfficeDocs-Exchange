@@ -22,9 +22,9 @@ Join the over 100 million customers across the world who trust Outlook mobile to
 
 The following is content and guidance that IT administrators, trainers, champions, and change management professionals can use to drive Outlook mobile adoption in your organization and help ensure your users get up and running quickly.  
 
-## Outlook Mobile Customer Adoption Pack
+## Outlook mobile Customer Adoption Pack
 
-Use the resources in the [Outlook Mobile Customer Adoption Pack](https://aka.ms/OutlookmobileCAP) to make the most of Microsoft Outlook for iOS and Android for your organization. This adoption pack contains a wide range of customizable onboarding templates, flyers, and posters, that IT Pros, administrators, and trainers can use to roll out and drive the adoption of Outlook mobile to end users in their organization.
+Use the resources in the [Outlook mobile Customer Adoption Pack](https://aka.ms/OutlookmobileCAP) to make the most of Microsoft Outlook for iOS and Android for your organization. This adoption pack contains a wide range of customizable onboarding templates, flyers, and posters, that IT Pros, administrators, and trainers can use to roll out and drive the adoption of Outlook mobile to end users in their organization.
  
 Included in this pack:
 
@@ -33,7 +33,7 @@ Included in this pack:
 - Tips and tricks email that shows you how Outlook mobile can help you stay on top of your day
 
 
-## Outlook Mobile webinar series
+## Outlook mobile webinar series
 
 We're excited to announce ***10 time saving tips and tricks with Outlook mobile***, a new Outlook mobile demo webinar series for your employees.
 
