@@ -131,7 +131,9 @@ After you've installed the operating system roles and features, install the foll
 
 3.  [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-4.  [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+4.  [Visual C++ Redistributable Packages for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
+
+5.  [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 
 ## Edge Transport server role
 
@@ -205,13 +207,15 @@ After you've installed the operating system roles and features, install the foll
 
 3.  [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-4.  [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+4.  [Visual C++ Redistributable Packages for Visual Studio 2010](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
 
-5.  [Microsoft Knowledge Base article KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
+5.  [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 
-6.  [Knowledge Base article KB2619234 (Enable the Association Cookie/GUID that is used by RPC over HTTP to also be used at the RPC layer in Windows 7 and in Windows Server 2008 R2)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234)
+6.  [Microsoft Knowledge Base article KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
 
-7.  [Knowledge Base article KB2533623 (Insecure library loading could allow remote code execution)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2533623)
+7.  [Knowledge Base article KB2619234 (Enable the Association Cookie/GUID that is used by RPC over HTTP to also be used at the RPC layer in Windows 7 and in Windows Server 2008 R2)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234)
+
+8.  [Knowledge Base article KB2533623 (Insecure library loading could allow remote code execution)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2533623)
     
 
     > [!NOTE]
@@ -253,7 +257,7 @@ After you've installed the operating system roles and features, install the foll
 
 3.  [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-4.  [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+4.  [Visual C++ Redistributable Packages for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
 
 ## Windows 7 prerequisites (admin tools only)
 
