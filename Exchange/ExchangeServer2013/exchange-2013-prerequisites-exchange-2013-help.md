@@ -159,6 +159,8 @@ Install the version of Microsoft .NET Framework that corresponds to the version 
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (included with Windows Server 2012 R2)
 
+3.  [Visual C++ Redistributable for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
+
 ## Windows Server 2008 R2 SP1 prerequisites
 
 The prerequisites that are needed to install Exchange 2013 on a Windows Server 2008 R2 SP1 computer depends on which Exchange roles you want to install. Read the section below that matches the roles you want to install.
