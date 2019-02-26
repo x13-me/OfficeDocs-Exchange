@@ -130,6 +130,7 @@ When you use one of these options, you don't need to restart the computer after 
 ### Exchange 2019 Edge Transport servers on Windows Server 2019
 
 1. Install the [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679).
+2. Install the [Visual C++ Redistributable Package for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784).
 
 2. If you aren't going to use Exchange Setup to install the required Windows components (in the wizard or from the command line), run the following command in Windows PowerShell:
 
