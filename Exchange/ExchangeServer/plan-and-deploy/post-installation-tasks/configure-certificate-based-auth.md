@@ -70,7 +70,7 @@ For detailed syntax and parameter information, see [Install-WindowsFeature](http
   
     You'll see a warning that SSL must be enabled to use Active Directory Client Certificate Mapping.
     
-## Step 3: Use IIS Manager to configure the Outlook on the web, Exchange Admin Center (ECP) and ActiveSync virtual directories to require client certificates
+## Step 3: Use IIS Manager to configure the Outlook on the web, Exchange admin center, and ActiveSync virtual directories to require client certificates
 
  **Note**: You need to *require* client certificates, because *accepting* client certificates (to support both CBA and regular user name and password authentication) doesn't work consistently across all types of ActiveSync devices.
   
@@ -110,9 +110,9 @@ For detailed syntax and parameter information, see [Install-WindowsFeature](http
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/Microsoft-Server-ActiveSync/" -section:system.webserver/security/access /sslFlags:"Ssl, SslRequireCert" /commit:apphost
 ```
 
-## Step 4: Use the Exchange Management Shell to disable authentication other authentication methods on the Outlook on the web, Exchange Admin Center (ECP) and ActiveSync virtual directories
+## Step 4: Use the Exchange Management Shell to disable authentication other authentication methods on the Outlook on the web, Exchange admin center, and ActiveSync virtual directories
 
-After you require client certificates for authentication, you need to disable all other authentication methods on the Outlook on the web, Exchange Admin Center (ECP) and ActiveSync virtual directories. By default, only Basic authentication and Forms authentication are enabled.
+After you require client certificates for authentication, you need to disable all other authentication methods on the Outlook on the web, Exchange admin center (EAC) and ActiveSync virtual directories. By default, only Basic authentication and Forms authentication are enabled.
   
 1. In the Exchange Management Shell, replace _\<ServerName\>_ with the name of your Exchange server, and run the following command to disable all other authentication methods on the Outlook on the web virtual directory: 
     
@@ -122,13 +122,13 @@ After you require client certificates for authentication, you need to disable al
 
     For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](http://technet.microsoft.com/library/7fadcc2e-6339-48b1-b15c-c89e45d4e430.aspx).
     
-2. In the Exchange Management Shell, replace _\<ServerName\>_ with the name of your Exchange server, and run the following command to disable all other authentication methods on the Exchange Admin Center (ECP) virtual directory: 
+2. In the Exchange Management Shell, replace _\<ServerName\>_ with the name of your Exchange server, and run the following command to disable all other authentication methods on the EAC virtual directory: 
     
     ```
     Set-EcpVirtualDirectory "<ServerName>\ecp (Default Web Site)" -BasicAuthentication $false -WindowsAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -AdfsAuthentication $false
     ```
 
-    For detailed syntax and parameter information, see [Set-EcpVirtualDirectory](https://docs.microsoft.com/en-us/powershell/module/exchange/client-access-servers/set-ecpvirtualdirectory?view=exchange-ps).
+    For detailed syntax and parameter information, see [Set-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-ecpvirtualdirectory).
     
 3. Replace _\<ServerName\>_ with the name of your Exchange server, and run the following command to disable all other authentication methods on the ActiveSync virtual directory: 
     
@@ -138,7 +138,7 @@ After you require client certificates for authentication, you need to disable al
 
     For detailed syntax and parameter information, see [Set-ActiveSyncVirtualDirectory](http://technet.microsoft.com/library/899fa80c-41e9-4fc0-b28e-5ca2f55e6369.aspx).
     
-## Step 5: Use IIS Manager to enable client certificate mapping for the Outlook on the web, Exchange Admin Center (ECP) and ActiveSync virtual directories
+## Step 5: Use IIS Manager to enable client certificate mapping for the Outlook on the web, Exchange admin center, and ActiveSync virtual directories
 
 > [!IMPORTANT]
 > After you perform this step, running the **Set-ActiveSyncVirtualDirectory** cmdlet might disable the client certificate mapping for ActiveSync.
