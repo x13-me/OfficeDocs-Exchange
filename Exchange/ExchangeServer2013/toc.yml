@@ -903,14 +903,14 @@
         - name: Enable or Disable Information Rights Management Logging
           href: enable-or-disable-information-rights-management-logging-exchange-2013-help.md
     - name: S/MIME for message signing and encryption
-      href: s-mime-for-message-signing-and-encryption
+      href: s-mime-for-message-signing-and-encryption.md
       items:
       - name: Configure S/MIME settings for Outlook Web App
-        href: configure-s-mime-settings-for-outlook-web-app
+        href: configure-s-mime-settings-for-outlook-web-app.md
       - name: Set up a virtual certificate collection to validate S/MIME
-        href: set-up-virtual-certificate-collection-to-validate-s-mime
+        href: set-up-virtual-certificate-collection-to-validate-s-mime.md
       - name: Send and receive S/MIME signed and encrypted email
-        href: send-and-receive-s-mime-signed-and-encrypted-email
+        href: send-and-receive-s-mime-signed-and-encrypted-email.md
     - name: Mailbox audit logging
       href: mailbox-audit-logging-exchange-2013-help.md
       items:
