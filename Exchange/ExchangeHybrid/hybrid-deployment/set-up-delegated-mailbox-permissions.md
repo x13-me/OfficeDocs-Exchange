@@ -17,25 +17,27 @@ description: "Delegated mailbox permissions enable someone to manage some part o
 
 Delegated mailbox permissions enable someone to manage some part of another user's mailbox. A common example of this is an administrative assistant who needs to manage an executive's mailbox and calendar. Hybrid deployments between an on-premises Exchange organization and Office 365 support the **Full Access** and **Send on Behalf of** delegated mailbox permissions. However, depending on the version of Exchange you have installed in your on-premises organization, you might need to perform additional configuration to use delegated mailbox permissions in a hybrid deployment. The following lists the versions of Exchange that support delegated mailbox permissions in a hybrid deployment and whether additional configuration is needed for that version. 
 
-- **Exchange 2016** No additional configuration is required. 
+- **Exchange 2016**: Additional configuration is required. 
 
-- **Exchange 2013** A supported Exchange 2013 cumulative update (CU) and additional configuration are required. 
+- **Exchange 2013**: A supported Exchange 2013 cumulative update (CU) and additional configuration are required. 
 
-- **Exchange 2010** A supported Exchange 2010 update roll (RU) and additional configuration are required. 
+- **Exchange 2010**: A supported Exchange 2010 update roll (RU) and additional configuration are required. 
 
 For more information about the specific requirements to support delegated mailbox permissions in a hybrid deployment, take a look at [Permissions in Exchange hybrid deployments](../permissions.md).
 
 The following sections step you through the configuration of Exchange 2013 and Exchange 2010 on-premises deployments to enable support for delegated mailbox permissions. Before you follow these steps, you need to make sure you're on the latest Exchange 2013 CU or Exchange SP3 RU. For more information, see [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md).
 
-## Exchange 2013
+## Exchange 2013 And Exchange 2016
 
 What you need to do to enable support for delegated mailbox permissions depends on a few factors. If you moved mailboxes to Office 365 and at that time:
 
 |**The following was installed...**|**And ACLable object synchronization at the organization was...**|**Then you need to...**|
 |:-----|:-----|:-----|
 |Exchange 2013 CU9 or earlier|This feature isn't available in Exchange 2013 CU9 and earlier.|Manually configure each mailbox to support ACLs|
-|Exchange 2013 CU10 or later|Disabled| Enable ACLable object synchronization at the organization level <br/> Manually enable ACLs on each mailbox moved to Office 365 before ACLable object synchronization was enabled at the organization level. <br/> No additional configuration is needed for mailboxes moved to Office 365 after ACLable object synchronization is enabled at the organization level.|
+|Exchange 2013 CU10 or later|Disabled|Enable ACLable object synchronization at the organization level <br/> Manually enable ACLs on each mailbox moved to Office 365 before ACLable object synchronization was enabled at the organization level. <br/> No additional configuration is needed for mailboxes moved to Office 365 after ACLable object synchronization is enabled at the organization level.|
 |Exchange 2013 CU10 or later|Enabled|No additional configuration is needed|
+|Exchange 2016|Disabled|Enable ACLable object synchronization at the organization level <br/> Manually enable ACLs on each mailbox moved to Office 365 before ACLable object synchronization was enabled at the organization level. <br/> No additional configuration is needed for mailboxes moved to Office 365 after ACLable object synchronization is enabled at the organization level.|
+|Exchange 2016|Enabled|No additional configuration is needed|
 
 ### Enable ACLable object synchronization
 
@@ -43,7 +45,7 @@ To enable ACLable object synchronization at the organization level, do the follo
 
 1. Install the latest version of Azure Active Directory Connect (AAD Connect) on all of your AAD Connect servers. This is needed to allow AAD Connect to synchronize the attributes needed to support hybrid permissions. You can download AAD Connect from [Microsoft Azure Active Directory Connect](http://go.microsoft.com/fwlink/p/?LinkID=510956).
 
-2. Open the Exchange Management Shell on a server running the latest available Exchange 2013 CU, or the immediately previous CU.
+2. Open the Exchange Management Shell on an Exchange 2013 or Exchange 2016 server running the latest available CU, or the immediately previous CU.
 
 3. Run the following command.
 
@@ -61,7 +63,7 @@ After you do this, any mailboxes that you move to Office 365 will be properly co
 
 To enable ACLs on mailboxes moved to Office 365 before ACLable object synchronization was enabled at the organization level, do the following.
 
-1. Open the Exchange Management Shell on a server running the latest available Exchange 2013 CU, or the immediately previous CU.
+1. Open the Exchange Management Shell on an Exchange 2013 or Exchange 2016 server running the latest available CU, or the immediately previous CU.
 
 2. To enable ACLs on a single mailbox, run the following command:
 
