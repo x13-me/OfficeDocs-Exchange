@@ -98,7 +98,7 @@ When you use one of these options, you don't need to restart the computer after 
 
     a. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/p/?linkid=863265) or later
 
-    b. [Visual C++ Redistributable Package for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913).
+    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679).
 
 2. Add the required Lync Server or Skype for Business Server components:
 
