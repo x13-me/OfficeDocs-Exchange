@@ -207,7 +207,7 @@ After you've installed the operating system roles and features, install the foll
 
 3.  [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-4.  [Visual C++ Redistributable Packages for Visual Studio 2010](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
+4.  [Visual C++ Redistributable Packages for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
 
 5.  [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 
