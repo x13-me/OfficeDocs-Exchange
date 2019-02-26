@@ -35,7 +35,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
-|[Exchange Server 2019 CU1](https://support.microsoft.com/kb/4471391)|February 12, 2019|15.2.330.6|15.02.0330.006|
+|[Exchange Server 2019 CU1](https://support.microsoft.com/kb/4471391)|February 12, 2019|15.2.330.5|15.02.0330.005|
 |[Exchange Server 2019 RTM](https://go.microsoft.com/fwlink/p/?linkId=195442)|October 22, 2018|15.2.221.12|15.02.0221.012|
 |Exchange Server 2019 Preview|July 24, 2018|15.2.196.0|15.02.0196.000|
 
