@@ -130,7 +130,7 @@ This parameter identifies unformatted SSD devices and formats them, and also cre
 |--------------------|------------|-------------------------------------------------------------------------------------|
 | DagName            | True       | Name of the Database availability group.                                            |
 | ServerName         | True       | Specifies the server to identify unformatted SSD devices and create mount points on.|
-| SSDSizeInByte      | True       | This is the capacity, in bytes, of each SSD in the server to be used for MCDB.      |
+| SSDSizeInBytes     | True       | This is the capacity, in bytes, of each SSD in the server to be used for MCDB.      |
 
 **Scope**: 
 
