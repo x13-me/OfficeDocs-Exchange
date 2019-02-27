@@ -172,7 +172,7 @@ Set-Group -Identity "Accounting Group" -SeniorityIndex 50
 ```
 
 ```
-Set-Group -Identity "Accounting Group" -SeniorityIndex 25
+Set-Group -Identity "Administration Group" -SeniorityIndex 25
 ```
 
 For detailed syntax and parameter information, see [Set-Group](https://technet.microsoft.com/library/924e6eb5-bb06-4e15-b122-cab414291cef.aspx).
