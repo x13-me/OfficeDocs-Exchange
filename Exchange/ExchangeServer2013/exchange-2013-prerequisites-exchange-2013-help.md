@@ -131,9 +131,9 @@ After you've installed the operating system roles and features, install the foll
 
 3.  [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-4.  [Visual C++ Redistributable Packages for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
+4.  [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
 
-5.  [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+5.  [Visual C++ Redistributable Package for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 
 ## Edge Transport server role
 
@@ -161,7 +161,7 @@ Install the version of Microsoft .NET Framework that corresponds to the version 
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (included with Windows Server 2012 R2)
 
-3.  [Visual C++ Redistributable for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
+3.  [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
 ## Windows Server 2008 R2 SP1 prerequisites
 
@@ -207,9 +207,9 @@ After you've installed the operating system roles and features, install the foll
 
 3.  [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-4.  [Visual C++ Redistributable Packages for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
+4.  [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
 
-5.  [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+5.  [Visual C++ Redistributable Package for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 
 6.  [Microsoft Knowledge Base article KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
 
@@ -257,7 +257,7 @@ After you've installed the operating system roles and features, install the foll
 
 3.  [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-4.  [Visual C++ Redistributable Packages for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
+4.  [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
 
 ## Windows 7 prerequisites (admin tools only)
 
