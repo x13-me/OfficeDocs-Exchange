@@ -95,7 +95,13 @@ Background synchronization in Outlook for iOS and Android can also be temporaril
 
 - Not opening the app for a given period of time. iOS will [automatically freeze third-party apps](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html), like Outlook, based on usage patterns. Android [doze mode and app standby](https://developer.android.com/training/monitoring-device-state/doze-standby) features can also prevent background updates to the app while those features are active.
 
-- On some Android devices, you can also restrict background processing or network access per-app. In these cases, Outlook for Android will not be able to process updates in the background.
+- On some Android devices, you can also restrict background processing or network access per-app. In these cases, Outlook for Android will not be able to process updates in the background. Android device manufacturers can modify the way you can interact with settings, therefore it is not possible to document every device scenario, but in general, these are the steps you can take to remove battery optimization: 
+
+ 1. Open **Settings**.
+ 2. Tap **Battery**.
+ 3. Tap the ellipse and tap **Battery optimization**.
+ 4. Tap the down arrow and tap **All apps**.
+ 5. For the Microsoft Authenticator, Intune Company Portal and Outlook apps, tap **Not optimized** to turn off battery optimization.
 
 If the mobile operating system prevents background synchronization, users will experience the following:
 

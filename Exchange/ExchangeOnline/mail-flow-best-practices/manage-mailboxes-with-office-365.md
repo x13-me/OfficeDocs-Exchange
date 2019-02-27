@@ -49,7 +49,7 @@ The Office 365 setup wizard walks you through the following steps.
 
     The following DNS records control mail flow:
 
-  - **MX record** - Point your MX record to Office 365 in the following format: \<domainKey\>-com.mail.protection.outlook.com.
+  - **MX record** - Point your MX record to Office 365 in the following format: \<domainKey\>.mail.protection.outlook.com.
 
     For example, the domain contoso.com should have the MX record contoso-com.mail.protection.outlook.com.
 

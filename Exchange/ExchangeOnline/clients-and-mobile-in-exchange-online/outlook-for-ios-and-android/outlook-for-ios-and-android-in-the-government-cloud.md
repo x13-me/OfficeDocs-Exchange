@@ -110,7 +110,7 @@ Prior to Outlook for iOS and Android obtaining FedRAMP approval and certificatio
 
 ## Services and features not available
 
-The following services and features of Outlook for iOS and Android are not available for Government Community Cloud users in order to satisfy government compliance requirements:
+By default, certain services and features of Outlook for iOS and Android are disabled automatically for the Office 365 U.S. Government Community Cloud (GCC) in order to meet the FedRAMP requirements:
 
 - **In-app support**: Users will not be able to submit support tickets from within the app. They should contact their internal help desk and provide logs (via the Share Diagnostics Logs option in Setting -> Help). If necessary, the organization's IT department can then contact Microsoft Support directly.
 
@@ -132,4 +132,21 @@ The following services and features of Outlook for iOS and Android are not avail
 
 - **Office Lens**: Office Lens technology (e.g., scanning business cards, taking pictures) included in Outlook for iOS and Android is not available with GCC accounts.
 
+Executing the below Exchange Online cmdlet will enable GCC Moderate, High, or DoD customers using Outlook for iOS and Android access to features and services that are not FedRAMP compliant:
 
+ ```
+  Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $false
+ ```
+
+At any time, access can be revoked by resetting the parameter back to the default value:
+
+ ```
+  Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $true
+ ```
+
+Changing this setting typically takes affect within an hour. As this is an tenant-based change, all Outlook for iOS and Android users in the GCC organization will be affected. 
+
+    > [!NOTE]
+    > Users do not need to leverage the GCC mode option within the client with the above Exchange Online setting.
+
+For more information on the cmdlet, please see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig?view=exchange-ps). 

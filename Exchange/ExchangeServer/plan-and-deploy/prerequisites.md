@@ -73,7 +73,8 @@ You can use any member of the Active Directory domain to prepare Active Director
 
     b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
-    **Note**: The Visual C++ Redistributable package is required if you're using the Exchange Setup Wizard to prepare Active Directory. If you're using unattended Setup from the command line to prepare Active Directory, this package isn't required. For more information, see [Prepare Active Directory and domains](prepare-ad-and-domains.md).
+     > [!NOTE]
+     > The Visual C++ Redistributable package is required if you're using the Exchange Setup Wizard to prepare Active Directory. If you're using unattended Setup from the command line to prepare Active Directory, this package isn't required. For more information, see [Prepare Active Directory and domains](prepare-ad-and-domains.md).
     
 2. Install the Remote Tools Administration Pack by running the following command in Windows PowerShell:
 
@@ -81,7 +82,8 @@ You can use any member of the Active Directory domain to prepare Active Director
     Install-WindowsFeature RSAT-ADDS
     ```
 
-    **Note**: Using the Exchange Setup Wizard to prepare Active Directory requires the installation of the Management Tools Exchange role.
+> [!NOTE]
+> Using the Exchange Setup Wizard to prepare Active Directory requires the installation of the Management Tools Exchange role.
 
 ## Windows Server 2019 prerequisites for Exchange 2019
 
@@ -99,7 +101,7 @@ When you use one of these options, you don't need to restart the computer after 
 
     a. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/p/?linkid=863265) or later
 
-    b. [Visual C++ Redistributable Package for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913).
+    b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679).
 
 2. Add the required Lync Server or Skype for Business Server components:
 
@@ -131,6 +133,7 @@ When you use one of these options, you don't need to restart the computer after 
 ### Exchange 2019 Edge Transport servers on Windows Server 2019
 
 1. Install the [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679).
+2. Install the [Visual C++ Redistributable Package for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784).
 
 2. If you aren't going to use Exchange Setup to install the required Windows components (in the wizard or from the command line), run the following command in Windows PowerShell:
 
@@ -193,7 +196,8 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
 
     d. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
 
-       **Note**: Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Other Exchange installations (management tools and Edge Transport) only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
+     > [!NOTE] 
+     > Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Other Exchange installations (management tools and Edge Transport) only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
 
     e. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
 
@@ -231,7 +235,8 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
     c. [Visual C++ Redistributable Packages for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
 
-       **Note**: Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Installations of the Exchange management tools and Edge Transport servers only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
+     > [!NOTE]
+     > Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Installations of the Exchange management tools and Edge Transport servers only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
 
     d. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
 
