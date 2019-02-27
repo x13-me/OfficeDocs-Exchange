@@ -210,8 +210,8 @@ Alternatively, you can block native Exchange ActiveSync apps on specific Android
   New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "HTCOne" -AccessLevel Block
   ```
 
-    > [!NOTE]
-    > The QueryString parameter does not accept wildcards or partial matches.
+> [!NOTE]
+> The QueryString parameter does not accept wildcards or partial matches.
 
 **Additional resources**:
 
