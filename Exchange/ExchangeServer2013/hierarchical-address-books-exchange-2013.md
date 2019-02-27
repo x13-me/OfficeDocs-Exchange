@@ -1,18 +1,17 @@
 ---
-title: "Hierarchical address books in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
-localization_priority: Normal
+title: 'Hierarchical address books in Exchange Server'
+TOCTitle: Hierarchical address books
 ms.assetid: a1d277a0-5437-40af-aade-e4730a0d1308
-description: "Admins can learn about hierarchical address books that reflect the organization hierarchy in the address book in Exchange Online."
+ms:mtpsurl: 
+ms:contentKeyID: 
+ms.date: 
+mtps_version: v=EXCHG.150
 ---
 
-# Hierarchical address books in Exchange Online
+
+# Hierarchical address books in Exchange Server
+
+_**Applies to:** Exchange Server 2013_
 
 The hierarchical address book (HAB) allows users to look for recipients in their address book using an organizational hierarchy. Normally, users are limited to the default global address list (GAL) and its recipient properties and the structure of the GAL often doesn't reflect the management or seniority relationships of recipients in your organization. Being able to customize an HAB that maps to your organization's unique business structure provides your users with an efficient method for locating internal recipients.
 
@@ -26,7 +25,7 @@ In an HAB, your root organization (for example, Contoso, Ltd) is used as the top
 
 - The third-level child tiers represent departments within the Corporate Office division: Human Resources, Accounting Group, and Administration Group.
 
-![Hierarchical Address Book dialog](../../media/ITPro_Mailbox_HABDisplay.gif)
+![Hierarchical Address Book dialog](images/ITPro_Mailbox_HABDisplay.gif)
 
 You can provide an additional level of hierarchical structure by using the _SeniorityIndex_ parameter. When creating an HAB, use the _SeniorityIndex_ parameter to rank individual recipients or organizational groups by seniority within these organizational tiers. This ranking specifies the order in which the recipients or groups are displayed in the HAB. For example, in the preceding example, the _SeniorityIndex_ parameter for the recipients in the Corporate Office division is set to the following:
 
@@ -41,9 +40,9 @@ You can provide an additional level of hierarchical structure by using the _Seni
 
 ## Configuring hierarchical address books
 
-Detailed instructions for creating HABs are included in the topic [Enable or disable hierarchical address books](enable-or-disable-hierarchical-address-books.md). The general steps are as follows:
+Detailed instructions for creating HABs are included in the topic [Enable or disable hierarchical address books](enable-or-disable-hierarchical-address-books-exchange-2013.md). The general steps are as follows:
 
-1. Create a distribution group that will be used for the root organization (top-level tier).
+1. Create a distribution group that will be used for the root organization (top-level tier). If desired, you can use an existing organizational unit in your Exchange forest for the distribution group.
 
 2. Create distribution groups for the child tiers and designate them as members of the HAB. Modify the _SeniorityIndex_ parameter of these groups so they're listed in the proper hierarchical order within the root organization.
 
