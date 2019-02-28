@@ -1,17 +1,20 @@
 ---
-title: "Exchange Server prerequisites, Exchange 2019 system requirements, Exchange 2019 requirements"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: conceptual
-ms.prod: exchange-server-it-pro
 localization_priority: Critical
-ms.collection: Strat_EX_Admin
+monikerRange: exchserver-2016 || exchserver-2019
+description: 'Summary: Learn about the Windows operating system prerequisites for Exchange Server 2016 and Exchange Server 2019 and the Exchange Management Tools.'
+ms.topic: conceptual
+author: chrisda
+ms.author: chrisda
 ms.assetid: 
-description: "Summary: Learn about the Windows operating system prerequisites for Exchange Server 2016 and Exchange Server 2019 and the Exchange Management Tools."
-monikerRange: "exchserver-2016 || exchserver-2019"
+ms.date: 
+title: Exchange Server prerequisites, Exchange 2019 system requirements, Exchange 2019 requirements
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Exchange Server prerequisites
@@ -276,3 +279,4 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
     Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementScriptingTools,IIS-ManagementScriptingTools,IIS-IIS6ManagementCompatibility,IIS-LegacySnapIn,IIS-ManagementConsole,IIS-Metabase,IIS-WebServerManagementTools,IIS-WebServerRole
     ```
 ::: moniker-end
+

@@ -1,15 +1,17 @@
 ---
-title: "Mail flow rules in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/13/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn about mail flow rules (transport rules) and their components in Exchange 2016 and Exchange 2019.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: c3d2031c-fb7b-4866-8ae1-32928d0138ef
-description: "Learn about mail flow rules (transport rules) and their components in Exchange 2016 and Exchange 2019."
+ms.date: 7/13/2018
+title: Mail flow rules in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Mail flow rules in Exchange Server
@@ -142,4 +144,5 @@ There are two mixed environment scenarios that are common:
     
     Exchange 2010 can't process rules that have the **Version** or **RuleVersion** value 15. _n_. _n_. _n_. To be sure all your rules can be processed, only use rules that have the value 14. _n_. _n_. _n_.
     
+
 

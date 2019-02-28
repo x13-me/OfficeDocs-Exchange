@@ -1,15 +1,17 @@
 ---
-title: "Data loss prevention in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: laurawi
-ms.date: 7/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about DLP policies in on-premises Exchange Server 2016 and Exchange Server 2019, including what they contain and how to test them.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 7c8ed3c1-ca91-4d9b-b16b-0a2b8ac89730
-description: "Summary: Learn about DLP policies in on-premises Exchange Server 2016 and Exchange Server 2019, including what they contain and how to test them."
+ms.date: 7/8/2018
+title: Data loss prevention in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: laurawi
+
 ---
 
 # Data loss prevention in Exchange Server
@@ -99,4 +101,5 @@ To see information about messages that contain DLP policy detections in your env
     
 - [Messaging Policy and Compliance Cmdlets](http://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx)
     
+
 

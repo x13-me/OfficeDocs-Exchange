@@ -1,14 +1,15 @@
 ---
-title: "Mail flow rule conditions and exceptions (predicates) in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
 ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+ms.author: chrisda
+manager: serdars
+ms.topic: article
+author: chrisda
+ms.service: exchange-online
 ms.assetid: 7235e5ed-f7f4-41b1-b1a0-47bb96223a2f
+ms.collection: exchange-online
+ms.date: 
+title: Mail flow rule conditions and exceptions (predicates) in Exchange Online
 
 ---
 
@@ -240,3 +241,4 @@ The property types that are used in conditions and exceptions are described in t
 [Transport Rule Conditions (Predicates)](https://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx) for Exchange Online Protection
 
 [New-TransportRule](https://technet.microsoft.com/library/eb3546bf-ca37-474e-9c22-962fe95af276.aspx)
+

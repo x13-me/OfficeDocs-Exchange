@@ -1,16 +1,18 @@
 ---
-title: "Account setup in Outlook for iOS and Android using Basic authentication"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: How users in your Exchange 2016 or Exchange 2019 organization can quickly set up their Outlook for iOS and Android accounts using Basic authentication.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 013dbe8c-30de-4c9c-baa9-75081b9229e8
-description: "Summary: How users in your Exchange 2016 or Exchange 2019 organization can quickly set up their Outlook for iOS and Android accounts using Basic authentication."
+ms.date: 7/5/2018
+title: Account setup in Outlook for iOS and Android using Basic authentication
+ms.collection: exchange-server
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Account setup in Outlook for iOS and Android using Basic authentication
@@ -94,4 +96,5 @@ When you create an app configuration policy in the Azure Portal or through your 
    
  <sup>*</sup> Microsoft Intune users can use tokens that will expand to the correct value according to the MDM enrolled user. See [Add app configuration policies for managed iOS devices](https://docs.microsoft.com/intune/app-configuration-policies-use-ios) for more information.
   
+
 

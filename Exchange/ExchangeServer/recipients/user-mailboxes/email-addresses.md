@@ -1,16 +1,19 @@
 ---
-title: "Add or remove email addresses for a mailbox"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how to add or remove email addresses using the Exchange admin center (EAC) or by using the Exchange Management Shell.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
-description: "Summary: Learn how to add or remove email addresses using the Exchange admin center (EAC) or by using the Exchange Management Shell."
+ms.date: 7/5/2018
+title: Add or remove email addresses for a mailbox
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Add or remove email addresses for a mailbox
@@ -212,4 +215,5 @@ Or
 
 - Verify that the new email address is included in the results for each mailbox.
     
+
 

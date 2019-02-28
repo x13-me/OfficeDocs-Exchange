@@ -1,14 +1,16 @@
 ---
-title: "Mail flow best practices for Exchange Online and Office 365 (overview)"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+ms.author: chrisda
+manager: serdars
+ms.topic: article
+author: chrisda
+ms.service: exchange-online
 ms.assetid: 0e6cd9d5-ad3e-418a-8ea9-3bf33332c491
-description: "Use Microsoft Exchange Online and Office 365 to manage mail flow. Find out how, and get tips and best practices for setting up and managing your email."
+ms.collection: exchange-online
+description: Use Microsoft Exchange Online and Office 365 to manage mail flow. Find out how, and get tips and best practices for setting up and managing your email.
+ms.audience: ITPro
+title: Mail flow best practices for Exchange Online and Office 365 (overview)
+
 ---
 
 # Mail flow best practices for Exchange Online and Office 365 (overview)
@@ -97,3 +99,4 @@ The following are additional topics related to mail flow in Exchange Online:
 [Configure the external postmaster address in Exchange Online](configure-external-postmaster-address.md)
 
 [How to set up a multifunction device or application to send email using Office 365](https://technet.microsoft.com/library/2c0012a9-7e71-40cd-a516-1b26117bf491.aspx)
+

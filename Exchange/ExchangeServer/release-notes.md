@@ -1,16 +1,18 @@
 ---
-title: "Release notes for Exchange Server"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: get-started-article
-ms.prod: exchange-server-it-pro
 localization_priority: Critical
+description: 'Summary: Important information that you need to know to successfully deploy Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: get-started-article
+author: dstrome
+ms.author: dstrome
 ms.assetid: 1879fd5e-3d63-4264-9cc2-9c050c6ab3c5
-description: "Summary: Important information that you need to know to successfully deploy Exchange Server 2016 or Exchange Server 2019."
-monikerRange: "exchserver-2016 || exchserver-2019"
+monikerRange: exchserver-2016 || exchserver-2019
+title: Release notes for Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.date: 6/8/2018
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Release notes for Exchange Server
@@ -126,3 +128,4 @@ Welcome to Microsoft Exchange Server 2016! This topic contains important informa
 
 - Configure your firewall or external MX DNS record to send mail to an Exchange 2016 Mailbox server. You might need to configure your firewall to allow TCP port 25 to connect to the new Internet-facing server.
 ::: moniker-end
+

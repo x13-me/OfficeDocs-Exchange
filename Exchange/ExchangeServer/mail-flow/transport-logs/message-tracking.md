@@ -1,15 +1,17 @@
 ---
-title: "Message tracking"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about message tracking and the message tracking log in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: bada2ea7-6d7c-4630-b7f1-67f56818f0ff
-description: "Summary: Learn about message tracking and the message tracking log in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/6/2018
+title: Message tracking
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Message tracking
@@ -212,4 +214,5 @@ DELIVER    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
 
 No message content is stored in the message tracking log. By default, the subject line of an email message is stored in the message tracking log. You might need to disable subject logging to comply with increased security or privacy requirements. For instructions on how to disable subject logging, see [Configure message tracking](configure-message-tracking.md).
   
+
 

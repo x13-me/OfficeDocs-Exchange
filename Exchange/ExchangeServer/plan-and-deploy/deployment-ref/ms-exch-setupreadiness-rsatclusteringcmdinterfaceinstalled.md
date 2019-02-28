@@ -1,17 +1,19 @@
 ---
-title: "Failover Cluster Command Interface Windows feature not installed [RsatClusteringCmdInterfaceInstalled]"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 7/22/2015
-ms.audience: Developer
-ms.topic: reference
-f1_keywords:
-- 'ms.exch.setupreadiness.RsatClusteringCmdInterfaceInstalled'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Microsoft Exchange Server 2016 Setup can't continue because the local computer is missing a required Windows feature. You'll need to install this Windows feature before Exchange 2016 can continue.
+ms.topic: reference
+author: dstrome
+f1_keywords:
+- ms.exch.setupreadiness.RsatClusteringCmdInterfaceInstalled
+ms.author: dstrome
 ms.assetid: 0d839514-5ab7-497d-8945-41392b4c3980
-description: "Microsoft Exchange Server 2016 Setup can't continue because the local computer is missing a required Windows feature. You'll need to install this Windows feature before Exchange 2016 can continue."
+ms.date: 7/22/2015
+title: Failover Cluster Command Interface Windows feature not installed [RsatClusteringCmdInterfaceInstalled]
+ms.collection: exchange-server
+ms.audience: Developer
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Failover Cluster Command Interface Windows feature not installed [RsatClusteringCmdInterfaceInstalled]
@@ -34,3 +36,4 @@ Do the following to install the Windows feature on this computer. If the feature
   ```
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+

@@ -1,15 +1,17 @@
 ---
-title: "Messaging policy and compliance in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: hub-page
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Email has become a reliable and ubiquitous communication medium for information workers in organizations of all sizes. Messaging stores and mailboxes have become repositories of valuable data. It's important for organizations to formulate messaging policies that dictate the fair use of their messaging systems, provide user guidelines for how to act on the policies, and where required, provide details about the types of communication that may not be allowed.
+ms.topic: hub-page
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 65f20a20-27a4-4f6e-9b27-f8705d65b8d9
-description: "Email has become a reliable and ubiquitous communication medium for information workers in organizations of all sizes. Messaging stores and mailboxes have become repositories of valuable data. It's important for organizations to formulate messaging policies that dictate the fair use of their messaging systems, provide user guidelines for how to act on the policies, and where required, provide details about the types of communication that may not be allowed."
+ms.date: 7/6/2018
+title: Messaging policy and compliance in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Messaging policy and compliance in Exchange Server
@@ -32,4 +34,5 @@ The following table provides an overview of the messaging policy and compliance 
 |Data loss prevention  <br/> |Data loss prevention (DLP) in Exchange Server includes 80 sensitive information types that are ready for you to use in your DLP policies.  <br/> |[Sensitive information types in Exchange Server](data-loss-prevention/sensitive-information-types.md) <br/> |
 |Transport rules  <br/> |Use Exchange transport rules to look for specific conditions in messages that pass through your organization and take action on them. You can use transport rule conditions and exceptions to define when a transport rule is applied, and then apply a transport rule action on messages when the condition is met.  <br/> |[Mail flow rule conditions and exceptions (predicates) in Exchange Server](mail-flow-rules/conditions-and-exceptions.md) <br/> [Mail flow rule actions in Exchange Server](mail-flow-rules/actions.md) <br/> |
  
+
 

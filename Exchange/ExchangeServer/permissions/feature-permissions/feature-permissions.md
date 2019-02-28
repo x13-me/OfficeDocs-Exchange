@@ -1,15 +1,17 @@
 ---
-title: "Feature permissions"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: hub-page
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: See a list of management role groups for managing Exchange 2016 or Exchange 2019 features'
+ms.topic: hub-page
+author: dstrome
+ms.author: dstrome
 ms.assetid: 48d06fa6-e4a2-4d5c-bdbd-718eeaade4be
-description: "Summary: See a list of management role groups for managing Exchange 2016 or Exchange 2019 features"
+ms.date: 7/5/2018
+title: Feature permissions
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Feature permissions
@@ -40,4 +42,5 @@ Permissions in Microsoft Exchange Server are managed using the Role Based Access
     
 - [Server health and performance permissions](server-health-permissions.md)
     
+
 

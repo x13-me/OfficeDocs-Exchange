@@ -1,15 +1,17 @@
 ---
-title: "Create shared mailboxes in the Exchange admin center"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d34bc827-1e83-4a7f-a219-8ba9c19fe24b
-description: "If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes."
+ms.date: 6/8/2018
+title: Create shared mailboxes in the Exchange admin center
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create shared mailboxes in the Exchange admin center
@@ -82,4 +84,5 @@ For information about keyboard shortcuts that may apply to the procedures in thi
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
   
+
 

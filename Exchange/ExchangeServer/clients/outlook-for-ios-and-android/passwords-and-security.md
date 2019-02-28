@@ -1,16 +1,18 @@
 ---
-title: "Passwords and security in Outlook for iOS and Android for Exchange Server"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: This article describes how passwords and security work in Outlook for iOS and Android with Exchange Server 2016 or Exchange Server 2019 when using Basic authentication with the Exchange ActiveSync protocol.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 82f23054-5433-41da-ac5b-90cd081aa993
-description: "Summary: This article describes how passwords and security work in Outlook for iOS and Android with Exchange Server 2016 or Exchange Server 2019 when using Basic authentication with the Exchange ActiveSync protocol."
+ms.date: 6/8/2018
+title: Passwords and security in Outlook for iOS and Android for Exchange Server
+ms.collection: exchange-server
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Passwords and security in Outlook for iOS and Android for Exchange Server
@@ -99,3 +101,4 @@ You can read about how our data is currently protected at the [Azure Trust Cente
 ### Is there a way to prevent the use of Basic authentication for on-premises mailboxes with Outlook for iOS and Android?
 
 Yes, you can deploy hybrid Modern Authentication. For more information, see [Using hybrid Modern Authentication with Outlook for iOS and Android](use-hybrid-modern-auth.md).
+

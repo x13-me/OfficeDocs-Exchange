@@ -1,15 +1,17 @@
 ---
-title: "Digital certificates and encryption in Exchange Server"
-ms.author: chrisda
+localization_priority: Normal
+description: 'Summary: Learn about SSL, TLS, encryption, and digital certificates in Exchange Server.'
+ms.topic: overview
 author: chrisda
-manager: serdars
+ms.author: chrisda
+ms.assetid: a9e2e08c-d46a-4135-a387-eb653212b676
+title: Digital certificates and encryption in Exchange Server
+ms.collection: exchange-server
 ms.date:
 ms.audience: ITPro
-ms.topic: overview
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
-ms.assetid: a9e2e08c-d46a-4135-a387-eb653212b676
-description: "Summary: Learn about SSL, TLS, encryption, and digital certificates in Exchange Server."
+manager: serdars
+
 ---
 
 # Digital certificates and encryption in Exchange Server

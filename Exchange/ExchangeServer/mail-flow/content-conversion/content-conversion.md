@@ -1,15 +1,17 @@
 ---
-title: "Content conversion"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about content conversion (message formatting and encoding options) in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: bc367eb3-0306-4da9-9a84-4341caef77af
-description: "Summary: Learn about content conversion (message formatting and encoding options) in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/6/2018
+title: Content conversion
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Content conversion
@@ -221,4 +223,5 @@ This header field instructs a MIME-enabled email client on how it should display
     
 - `Attachment`: The attached file appears as a regular attachment separate from the message body. Other parameters are also with this values (for example, `Filename`, `Creation-date`, and `Size`).
     
+
 

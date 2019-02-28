@@ -1,15 +1,17 @@
 ---
-title: "Updates for Exchange Server, Cumulative Updates for Exchange Server, Exchange Server 2016 CU, Cumulative Update Exchange 2016"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/27/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the Cumulative Update strategy and delivery schedule in Exchange Server.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 9c1d8694-bd33-43af-a7ab-4caaada34745
-description: "Summary: Learn about the Cumulative Update strategy and delivery schedule in Exchange Server."
+ms.date: 7/27/2018
+title: Updates for Exchange Server, Cumulative Updates for Exchange Server, Exchange Server 2016 CU, Cumulative Update Exchange 2016
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Updates for Exchange Server
@@ -54,3 +56,4 @@ For information about the new features you'll get when you upgrade to Exchange 2
 - To upgrade to the latest CU after you've downloaded it, see [Upgrade Exchange to the latest Cumulative Update](../plan-and-deploy/install-cumulative-updates.md).
 
 - For downloads and updates for other versions of Exchange, see [Exchange Server Updates: build numbers and release dates](https://go.microsoft.com/fwlink/p/?LinkId=512549).
+

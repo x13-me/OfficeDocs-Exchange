@@ -1,15 +1,17 @@
 ---
-title: "Safety Net in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/10/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn how Safety Net is used in Exchange 2016 and Exchange 2019 to protect against data loss by maintaining a queue of successfully delivered messages.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: d0abb807-3b12-4c7d-bc7e-769b87c84ccb
-description: "Learn how Safety Net is used in Exchange 2016 and Exchange 2019 to protect against data loss by maintaining a queue of successfully delivered messages."
+ms.date: 7/10/2018
+title: Safety Net in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Safety Net in Exchange Server
@@ -110,4 +112,5 @@ These are some other issues to consider when messages are resubmitted from Safet
     
 - **New Users added to a distribution group may receive an old resubmitted message when the Shadow Safety Net resubmits the message**: For example, a message is sent to a group containing User A and User B, and both recipients receive the message. User C is subsequently added to the group. Later, a resubmit request from Primary Safety Net is made for the mailbox database that holds User C's mailbox. However, the Primary Safety Net server is unavailable for more than 12 hours, so the Shadow Safety Net server responds and resubmits the affected messages. During message resubmission when the distribution group is expanded, User C is now a member of the group, and will receive a copy of the resubmitted message.
     
+
 

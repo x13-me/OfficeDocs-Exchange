@@ -1,15 +1,17 @@
 ---
-title: "Availability service in Exchange Server"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 4/19/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the Availability service in Exchange 2016 and Exchange 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9722dea2-2bf8-437c-85c0-3ab65b8a07b9
-description: "Summary: Learn about the Availability service in Exchange 2016 and Exchange 2019."
+ms.date: 4/19/2018
+title: Availability service in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Availability service in Exchange Server
@@ -50,4 +52,5 @@ The following table lists the methods used to retrieve free/busy information in 
 |Outlook 2010 or later  <br/> |Exchange 2010 or later <br/> |Exchange 2010 or later <br/> |The Availability service reads free/busy information from the target mailbox.  <br/> |
 |Outlook on the web or Outlook Web App <br/> |Exchange 2010 or later <br/> |Exchange 2010 or later <br/> |Outlook on the web or Outlook Web App calls the Availability service API, which reads the free/busy information from the target mailbox.  <br/> |
    
+
 

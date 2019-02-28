@@ -1,15 +1,17 @@
 ---
-title: "Copy eDiscovery search results to a discovery mailbox"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to copy the results of an In-Place eDiscovery search to a discovery mailbox in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: bff2ce89-9e6f-494a-bd6a-2f2011507845
-description: "Summary: Learn how to copy the results of an In-Place eDiscovery search to a discovery mailbox in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/6/2018
+title: Copy eDiscovery search results to a discovery mailbox
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Copy eDiscovery search results to a discovery mailbox
@@ -108,4 +110,5 @@ For more information about these cmdlets, see the following topics:
     
     For more information, see [Use the EAC to estimate or preview search results](create-searches.md#estimate).
     
+
 

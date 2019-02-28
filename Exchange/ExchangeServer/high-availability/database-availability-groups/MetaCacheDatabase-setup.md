@@ -1,15 +1,17 @@
 ---
-title: "MetaCacheDatabase (MCDB) setup"
-ms.author: dmaguire
+localization_priority: Normal
+description: 'Summary: Learn about the MetaCacheDatabase (MCDB) feature in Exchange Server 2019, and how to configure it in your organization.'
+ms.topic: overview
 author: msdmaguire
-manager: serdars
+ms.author: dmaguire
+monikerRange: exchserver-2019
+title: MetaCacheDatabase (MCDB) setup
+ms.collection: exchange-server
 ms.reviewer: toklima
 ms.audience: ITPro
-ms.topic: overview
 ms.prod: exchange-server-it-pro
-localization_priority: Normal
-description: "Summary: Learn about the MetaCacheDatabase (MCDB) feature in Exchange Server 2019, and how to configure it in your organization."
-monikerRange: "exchserver-2019"
+manager: serdars
+
 ---
 
 # MetaCacheDatabase (MCDB) setup
@@ -161,3 +163,4 @@ Use `Get-MailboxDatabaseCopyStatus` to query the state of the MCDB instances. Th
 | Offline        | Errors at the logical level, for example missing MCDB instances.                                                                     |
 | Initializing   | Transient state, the system is determining what other state it should be in.                                                         |
 | Healthy        | Ready to serve requests.                                                                                                             |
+

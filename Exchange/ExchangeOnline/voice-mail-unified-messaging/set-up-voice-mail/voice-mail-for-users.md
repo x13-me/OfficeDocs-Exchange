@@ -1,15 +1,17 @@
 ---
-title: "Voice mail for users"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: With Unified Messaging (UM), users in an Exchange organization can receive all their email and voice messages in one mailbox. The Unified Messaging functionality and voice mail features increase user productivity and enable more flexible messaging throughout an organization.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 48e1f43b-fb7e-4a52-a2cb-0fb5da6ca65f
-description: "With Unified Messaging (UM), users in an Exchange organization can receive all their email and voice messages in one mailbox. The Unified Messaging functionality and voice mail features increase user productivity and enable more flexible messaging throughout an organization."
+ms.date: 6/24/2018
+title: Voice mail for users
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Voice mail for users
@@ -93,5 +95,6 @@ Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPol
 When you disable Unified Messaging for a user, the user's account may still be listed when a caller performs a directory search using a UM auto attendant menu or using Outlook Voice Access. Callers may be able to locate a user in the directory, but when they try to contact the user, they're taken back to the main menu in Unified Messaging. This may cause callers to become frustrated with the system. You can prevent callers from using a directory search to contact a user who's been disabled for Unified Messaging by connecting the user to another voice mail system, removing the user from the UM auto attendant directory search, or removing the user's account.
 
 After a UM-enabled user account is disabled for Unified Messaging, the user may still have access to the individual UM-enabled mailbox using Outlook Voice Access or Microsoft Outlook. This can occur when all the changes aren't consistent in the directory. To lessen the risk of a user gaining access to the mailbox even though the account has been disabled for Unified Messaging, you can manually force replication to occur or remove all Unified Messaging information from the user's mailbox when the user is disabled for Unified Messaging.
+
 
 

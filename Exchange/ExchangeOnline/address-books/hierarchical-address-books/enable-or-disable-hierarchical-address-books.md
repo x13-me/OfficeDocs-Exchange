@@ -1,15 +1,17 @@
 ---
-title: "Enable or disable hierarchical address books in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to enable and configure or disable a hierarchical address book in their Exchange Online organization.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: b4c3a175-ce5e-4bfb-a4a0-92d25f3644b3
-description: "Admins can learn how to enable and configure or disable a hierarchical address book in their Exchange Online organization."
+ms.date: 
+title: Enable or disable hierarchical address books in Exchange Online
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Enable or disable hierarchical address books in Exchange Online
@@ -242,3 +244,4 @@ To verify that you've successfully disabled hierarchical address book, use any o
 - Open Outlook in a profile that's connected to a mailbox in your Exchange Online organization, and click **Address Book** or press Ctrl+Shift+B. Verify that the entries in the address book are displayed in alphabetical order.
 
 - In Exchange Online PowerShell, run the following command to verify that the **HierarchicalAddressBookRoot** property value is blank:
+

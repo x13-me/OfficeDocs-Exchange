@@ -1,15 +1,17 @@
 ---
-title: "Set the default language on a dial plan"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 7/12/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can set the default language for a Unified Messaging (UM) dial plan. Each dial plan you create will initially use English (en-US) as the default language.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 7a1d2e7e-4053-40af-9ec1-ec714df12ad4
-description: "You can set the default language for a Unified Messaging (UM) dial plan. Each dial plan you create will initially use English (en-US) as the default language."
+ms.date: 7/12/2018
+title: Set the default language on a dial plan
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Set the default language on a dial plan
@@ -45,5 +47,6 @@ This example sets the default language on a UM dial plan named `MyUMDialPlan` to
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -DefaultLanguage en-AU
 ```
+
 
 

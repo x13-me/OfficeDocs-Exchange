@@ -1,15 +1,17 @@
 ---
-title: "PIN security procedures"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Set Outlook Voice Access PIN policies
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 58e4b02e-dc99-46b8-a65d-d441bbfee8a9
-description: "Set Outlook Voice Access PIN policies"
+ms.date: 6/24/2018
+title: PIN security procedures
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # PIN security procedures
@@ -35,5 +37,6 @@ description: "Set Outlook Voice Access PIN policies"
 [Set the number of sign-in failures before a voice mail PIN is reset](set-number-of-sign-in-failures-before-pin-reset.md)
 
 [Set the number of sign-in failures before a voice mail user Is locked out](set-number-of-sign-in-failures-before-lock-out.md)
+
 
 

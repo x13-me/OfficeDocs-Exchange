@@ -1,15 +1,17 @@
 ---
-title: "Allow users in the same dial plan to receive faxes"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 12/9/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can enable all users who are linked with a Unified Messaging (UM) dial plan to receive fax messages in their mailboxes. By default, users who are enabled for Unified Messaging and are linked with a UM dial plan can receive fax messages. To allow UM-enabled users to receive fax messages in their mailboxes, the dial plan must be configured to accept incoming fax calls. You must also enable faxing on the UM mailbox policy and for the user. By default, faxing is enabled on dial plans, UM mailbox policies, and for users. However, there may be times when these default settings have changed and UM-enabled users can't receive fax messages.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: cb245028-0b86-4171-879e-934dd35fa626
-description: "You can enable all users who are linked with a Unified Messaging (UM) dial plan to receive fax messages in their mailboxes. By default, users who are enabled for Unified Messaging and are linked with a UM dial plan can receive fax messages. To allow UM-enabled users to receive fax messages in their mailboxes, the dial plan must be configured to accept incoming fax calls. You must also enable faxing on the UM mailbox policy and for the user. By default, faxing is enabled on dial plans, UM mailbox policies, and for users. However, there may be times when these default settings have changed and UM-enabled users can't receive fax messages."
+ms.date: 12/9/2016
+title: Allow users in the same dial plan to receive faxes
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Allow users in the same dial plan to receive faxes
@@ -45,5 +47,6 @@ This example enables UM-enabled users who are linked with the UM dial plan named
 ```
 Set-UMDialPlan -Identity MyUMDialPlan -FaxEnabled $true
 ```
+
 
 

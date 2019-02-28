@@ -1,15 +1,17 @@
 ---
-title: "Scenarios for custom Receive connectors in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: scotv
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how and when to create custom Receive connectors in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 86f7d6e7-a869-4c90-a570-0239fd0e5872
-description: "Summary: Learn how and when to create custom Receive connectors in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/6/2018
+title: Scenarios for custom Receive connectors in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Scenarios for custom Receive connectors in Exchange Server
@@ -371,4 +373,5 @@ To verify that you've successfully created a Receive connector that only accepts
     
 - Send a test message or connect to the Receive connector by using Telnet from the remote Exchange server. For more information, see [Use Telnet to test SMTP communication on Exchange servers](../../mail-flow/test-smtp-with-telnet.md).
     
+
 

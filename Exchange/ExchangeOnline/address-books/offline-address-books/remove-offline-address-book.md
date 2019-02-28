@@ -1,15 +1,17 @@
 ---
-title: "Remove an offline address book from Exchange "
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to remove offline address book (OAB) from Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: d69f1e8a-b3cb-4739-90cd-85ea450d06f3
-description: "Admins can learn how to remove offline address book (OAB) from Exchange Online."
+ms.date: 
+title: 'Remove an offline address book from Exchange '
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Remove an offline address book
@@ -47,3 +49,4 @@ To verify that you've successfully removed the OAB, run the following command to
 ```
 Get-OfflineAddressBook
 ```
+

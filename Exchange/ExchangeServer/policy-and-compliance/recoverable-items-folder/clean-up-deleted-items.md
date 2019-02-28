@@ -1,15 +1,17 @@
 ---
-title: "Clean up or delete items from the Recoverable Items folder"
-ms.author: chrisda
-author: chrisda
-manager: scotv
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how administrators can use the Exchange Management Shell to clean up or delete items from the Recoverable Items folder in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 82c310f8-de2f-46f2-8e1a-edb6055d6e69
-description: "Summary: Learn how administrators can use the Exchange Management Shell to clean up or delete items from the Recoverable Items folder in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/9/2018
+title: Clean up or delete items from the Recoverable Items folder
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Clean up or delete items from the Recoverable Items folder
@@ -215,5 +217,6 @@ This example retrieves the size of the Recoverable Items folder and its subfolde
 ```
 Get-MailboxFolderStatistics -Identity "Gurinder Singh" -FolderScope RecoverableItems | Format-Table Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders -Auto
 ```
+
 
 

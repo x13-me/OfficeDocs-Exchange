@@ -1,15 +1,17 @@
 ---
-title: "Assign eDiscovery permissions in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to give users the permissions they need to use In-Place eDiscovery in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
-description: "Summary: Learn how to give users the permissions they need to use In-Place eDiscovery in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/6/2018
+title: Assign eDiscovery permissions in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Assign eDiscovery permissions in Exchange Server
@@ -82,5 +84,6 @@ To verify that you've added the user to the Discovery Management role group, use
   ```
   Get-RoleGroupMember -Identity "Discovery Management"
   ```
+
 
 

@@ -1,18 +1,20 @@
 ---
-title: "Exchange dev/test environment in Azure"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: serdars
-ms.date: 7/26/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create a single-server Exchange 2016 or Exchange 2019 dev/test environment in Microsoft Azure infrastructure services.'
+ms.topic: article
+author: JoeDavies-MSFT
+ms.author: josephd
+ms.assetid: d9fbf253-b6f1-4bcd-8548-87ccf49259f1
+ms.date: 7/26/2018
+title: Exchange dev/test environment in Azure
 ms.collection:
 - Strat_EX_Admin
 - Ent_O365
-ms.assetid: d9fbf253-b6f1-4bcd-8548-87ccf49259f1
-description: "Summary: Learn how to create a single-server Exchange 2016 or Exchange 2019 dev/test environment in Microsoft Azure infrastructure services."
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Exchange dev/test environments in Azure
@@ -416,3 +418,4 @@ Start-AzureRMVM -Name exVM -ResourceGroupName $rgName
 [What's new in Exchange Server](../../new-features/new-features.md)
 
 [Cloud adoption Test Lab Guides (TLGs)](https://technet.microsoft.com/library/dn635308.aspx)
+

@@ -1,16 +1,18 @@
 ---
-title: "Outlook for iOS and Android"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: These articles contain architectural and security information for administrators about Outlook for iOS and Android in an Exchange Server 2016 or Exchange Server 2019 on-premises environment.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8b46e0bf-334d-44ed-bf20-eab605fdcae6
-description: "Summary: These articles contain architectural and security information for administrators about Outlook for iOS and Android in an Exchange Server 2016 or Exchange Server 2019 on-premises environment."
+ms.date: 7/5/2018
+title: Outlook for iOS and Android
+ms.collection: exchange-server
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Outlook for iOS and Android
@@ -32,4 +34,5 @@ For customers running Exchange Server 2013, Exchange Server 2016, or Exchange Se
 > [!NOTE]
 > The [Outlook for iOS and Android Help Center](https://support.office.com/article/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6) is available for users, including help for using the app on specific devices and troubleshooting information.
   
+
 

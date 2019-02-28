@@ -1,16 +1,19 @@
 ---
-title: "Add a mailbox database copy"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Use these steps to create a copy of a mailbox database in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 784bf48f-8af5-422c-a63f-2f01fc0cf151
-description: "Summary: Use these steps to create a copy of a mailbox database in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/9/2018
+title: Add a mailbox database copy
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Add a mailbox database copy
@@ -100,4 +103,5 @@ To verify that you have successfully created a mailbox database copy, do one of 
   
 [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx)
   
+
 

@@ -1,15 +1,17 @@
 ---
-title: "Dial tone portability"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: About dial tone portability, which enables users to have a temporary mailbox for sending and receiving email while their original mailbox is being restored or repaired.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ea62fae0-5e0a-460c-beb6-52532c8c8dbc
-description: "Summary: About dial tone portability, which enables users to have a temporary mailbox for sending and receiving email while their original mailbox is being restored or repaired."
+ms.date: 7/9/2018
+title: Dial tone portability
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Dial tone portability
@@ -46,4 +48,5 @@ All three options follow the same basic steps:
     
 For detailed steps about how to perform a dial tone recovery, see [Perform a dial tone recovery](dial-tone-recovery.md).
   
+
 

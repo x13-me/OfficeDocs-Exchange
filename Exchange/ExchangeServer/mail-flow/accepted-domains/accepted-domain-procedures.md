@@ -1,15 +1,17 @@
 ---
-title: "Procedures for accepted domains in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create, modify, and remove accepted domains in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 11801f73-4934-4025-a1c1-3935dada7e9b
-description: "Summary: Learn how to create, modify, and remove accepted domains in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/6/2018
+title: Procedures for accepted domains in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Procedures for accepted domains in Exchange Server
@@ -267,4 +269,5 @@ To verify that you've configured Exchange to accept mail for multiple authoritat
     
 2. Send test messages from an affected mailbox to an external recipient, and verify the From address of the message.
     
+
 

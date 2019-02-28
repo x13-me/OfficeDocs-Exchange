@@ -1,14 +1,16 @@
 ---
-title: "Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+ms.author: dmaguire
+manager: serdars
+ms.topic: article
+author: msdmaguire
+ms.prod: exchange-server-it-pro
 ms.assetid: 0f98801d-ad5c-4109-a021-63645e9c9ca2
-description: "Learn how to migrate on-premises public folders from Exchange 2013 to Exchange 2016 or Exchange 2019."
+ms.collection: exchange-server
+description: Learn how to migrate on-premises public folders from Exchange 2013 to Exchange 2016 or Exchange 2019.
+ms.audience: ITPro
+title: Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019
+
 ---
 
 # Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019
@@ -146,3 +148,4 @@ To verify that you've successfully migrated all of your Exchange 2013 public fol
 
   In the list public folder mailboxes that are returned, verify that they've each been moved to an Exchange 2016 Mailbox server.
   
+
