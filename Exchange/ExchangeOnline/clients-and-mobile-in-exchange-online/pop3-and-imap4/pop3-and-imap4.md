@@ -1,15 +1,17 @@
 ---
-title: "POP3 and IMAP4"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: An overview of POP3 and IMAP4, and the differences between them.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: fce4cf21-02b4-4b42-82c8-ddb3c7eed4dc
-description: "Summary: An overview of POP3 and IMAP4, and the differences between them."
+ms.date: 6/24/2018
+title: POP3 and IMAP4
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # POP3 and IMAP4
@@ -74,5 +76,6 @@ If the device or computer that's running the POP3 or IMAP4 email application is 
 
 > [!NOTE]
 > If the user is using an IMAP4-compliant email application that supports the IMAP4 IDLE command, the user might be able to send email to and receive email from the Exchange mailbox in nearly real time. For this connection method to work, both the email server application and the client application must support the IMAP4 IDLE command. In most cases, users don't have to configure any settings in their IMAP4 programs to use this connection method.
+
 
 

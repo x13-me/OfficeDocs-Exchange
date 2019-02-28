@@ -1,15 +1,17 @@
 ---
-title: "Integrating sensitive information rules with mail flow rules in Exchange Online"
-ms.author: stephow
-author: stephow-msft
-manager: laurawi
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to combine DLP policies with mail flow rules in Exchange Online.
+ms.topic: article
+author: stephow-msft
+ms.author: stephow
 ms.assetid: feb014a7-89dd-4f2d-a06d-52806ce435d4
-description: "Admins can learn how to combine DLP policies with mail flow rules in Exchange Online."
+ms.date: 7/11/2018
+title: Integrating sensitive information rules with mail flow rules in Exchange Online
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Integrating sensitive information rules with mail flow rules in Exchange Online
@@ -51,5 +53,6 @@ The rules can also be used in the exception part of a rule definition. Their use
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md) Exchange Online
 
 [Create a custom DLP policy](create-custom-dlp-policy.md)
+
 
 

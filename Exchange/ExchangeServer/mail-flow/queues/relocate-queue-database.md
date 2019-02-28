@@ -1,15 +1,17 @@
 ---
-title: "Change the location of the queue database"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to move or recreate the message queue database in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: f170cb0c-04a9-4fa7-b594-206e3a787e14
-description: "Summary: Learn how to move or recreate the message queue database in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/6/2018
+title: Change the location of the queue database
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Change the location of the queue database
@@ -154,4 +156,5 @@ Although you'll need to move the existing queue database to preserve any undeliv
     
 3. Verify there are no queue database or transaction log files in the old location.
     
+
 

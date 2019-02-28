@@ -1,15 +1,17 @@
 ---
-title: "Manage and troubleshoot message approval in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to delete an arbitration mailbox that's being used by mailboxes in Exchange Online
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 860df43f-a05b-4da3-83f1-68d3123a923d
-description: "Learn how to delete an arbitration mailbox that's being used by mailboxes in Exchange Online"
+ms.date: 
+title: Manage and troubleshoot message approval in Exchange Online
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage and troubleshoot message approval in Exchange Online
@@ -82,3 +84,4 @@ Set-Mailbox "Human Resources" -ModerationEanbled $false
 The procedure was successful if you can delete the arbitration mailbox without receiving the error that it's being used.
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+

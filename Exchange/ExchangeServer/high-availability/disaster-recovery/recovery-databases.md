@@ -1,15 +1,17 @@
 ---
-title: "Recovery databases"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: An overview of recovery databases in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f3c6fd0b-2e25-442e-a0fc-46f663130c3e
-description: "Summary: An overview of recovery databases in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/9/2018
+title: Recovery databases
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Recovery databases
@@ -81,4 +83,5 @@ RDBs are generally not designed for scenarios in which you have to restore entir
   
 For detailed steps about how to create an RDB, see [Create a recovery database](create-recovery-dbs.md). For detailed steps about how to use an RDB, see [Restore data using a recovery database](restore-data-using-recovery-dbs.md).
   
+
 

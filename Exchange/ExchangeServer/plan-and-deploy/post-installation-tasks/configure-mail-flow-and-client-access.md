@@ -1,16 +1,19 @@
 ---
-title: "Configure mail flow and client access on Exchange servers"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/30/2018
-ms.audience: ITPro
-ms.topic: get-started-article
-ms.prod: exchange-server-it-pro
 localization_priority: Critical
-ms.collection: Strat_EX_Admin
+description: 'Summary: How to set up mail flow and client access in  and Exchange 2019.'
+ms.topic: get-started-article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 4acc7f2a-93ce-468c-9ace-d5f7eecbd8d4
-description: "Summary: How to set up mail flow and client access in  and Exchange 2019."
+ms.date: 7/30/2018
+title: Configure mail flow and client access on Exchange servers
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure mail flow and client access on Exchange servers
@@ -327,3 +330,4 @@ To verify that you've configured mail flow and external client access, do the fo
 3. In the external recipient's mailbox, reply to the message you just sent from the Exchange mailbox. Verify the Exchange mailbox receives the message.
     
 4. Go to https://owa.contoso.com/owa and verify that there are no certificate warnings.
+

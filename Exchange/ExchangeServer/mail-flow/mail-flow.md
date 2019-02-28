@@ -1,15 +1,17 @@
 ---
-title: "Mail flow and the transport pipeline"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about mail flow and the transport pipeline in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 14df5e1a-a5f7-4b0d-ba97-f53b76f0e7e0
-description: "Summary: Learn about mail flow and the transport pipeline in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 6/8/2018
+title: Mail flow and the transport pipeline
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Mail flow and the transport pipeline
@@ -191,5 +193,6 @@ The components of the Transport service on Edge Transport servers are identical 
 - **Categorizer**: On an Edge Transport server, categorization is a short process in which the message is put directly into a delivery queue for delivery to internal or external recipients.
 
 - **SMTP Send**: When an Edge Transport server is subscribed to an internal Active Directory site, two Send connectors are automatically created and configured. One named "EdgeSync - \<Active Directory site name\> to Internet" is responsible for sending outbound mail to Internet recipients; the other named "EdgeSync - Inbound to \<Active Directory site name\>" is responsible for sending inbound mail from the Internet to internal recipients. Inbound mail is sent to the Front End Transport service on an available Mailbox server in the subscribed Active Directory site.
+
 
 

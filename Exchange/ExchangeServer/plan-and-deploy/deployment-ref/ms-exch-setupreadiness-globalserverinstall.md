@@ -1,17 +1,19 @@
 ---
-title: "Cannot write to the Exchange organization container [GlobalServerInstall]"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 8/2/2018
-ms.audience: Developer
-ms.topic: reference
-f1_keywords:
-- 'ms.exch.setupreadiness.GlobalServerInstall'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Exchange Server 2016 or Exchange Server 2019 Setup can't continue because the user account doesn't have the required permissions.
+ms.topic: reference
+author: chrisda
+f1_keywords:
+- ms.exch.setupreadiness.GlobalServerInstall
+ms.author: chrisda
 ms.assetid: 17c4667b-7db1-4e0a-b824-1f6d51d980a9
-description: "Exchange Server 2016 or Exchange Server 2019 Setup can't continue because the user account doesn't have the required permissions."
+ms.date: 8/2/2018
+title: Cannot write to the Exchange organization container [GlobalServerInstall]
+ms.collection: exchange-server
+ms.audience: Developer
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Cannot write to the Exchange organization container [GlobalServerInstall]
@@ -33,3 +35,4 @@ To resolve this issue, run Exchange setup again using an account that has the ap
 > Cross-forest installation of Exchange isn't supported. Use an account in the Active Directory forest where you're installing Exchange.
   
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+

@@ -1,15 +1,17 @@
 ---
-title: "Disable a UM auto attendant"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: By default, when a Unified Messaging (UM) auto attendant is created, its status is set to disabled. After you create the UM auto attendant, you can change its status to control whether it can answer incoming calls. For example, you might want to disable the UM auto attendant when you're recording or re-recording customized prompts and messages.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: ad79f374-f68f-430b-8b9c-2c841e1c55ae
-description: "By default, when a Unified Messaging (UM) auto attendant is created, its status is set to disabled. After you create the UM auto attendant, you can change its status to control whether it can answer incoming calls. For example, you might want to disable the UM auto attendant when you're recording or re-recording customized prompts and messages."
+ms.date: 11/17/2014
+title: Disable a UM auto attendant
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Disable a UM auto attendant
@@ -48,5 +50,6 @@ This example disables a UM auto attendant named `MyUMAutoAttendant`.
 ```
 Disable-UMAutoAttendant -Identity MyUMAutoAttendant
 ```
+
 
 

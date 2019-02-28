@@ -1,15 +1,17 @@
 ---
-title: "Create user mailboxes in Exchange Server, create Exchange mailbox, Exchange Server create mailbox"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create mailboxes for users in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
-description: "Summary: Learn how to create mailboxes for users in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 
+title: Create user mailboxes in Exchange Server, create Exchange mailbox, Exchange Server create mailbox
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create user mailboxes in Exchange Server
@@ -213,5 +215,6 @@ To verify that you've successfully created a mailbox for an existing user, use e
   ```
   Get-Mailbox -Identity <Name> | Format-List Name,DisplayName,Alias,PrimarySmtpAddress,Database
   ```
+
 
 

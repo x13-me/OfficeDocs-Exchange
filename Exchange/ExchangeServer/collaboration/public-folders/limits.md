@@ -1,15 +1,17 @@
 ---
-title: "Limits for public folders"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about supported limits for public folders in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: reference
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 709b075e-9584-484b-bcaa-e781c26497b4
-description: "Summary: Learn about supported limits for public folders in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 
+title: Limits for public folders
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Limits for public folders
@@ -38,4 +40,5 @@ The following table lists the limits for public folders in on-premises Exchange 
 |Deleted item retention|We recommend that you set this as the same default that you use for regular mailboxes.|These settings can be set at the following levels:**Organizational level**: The _DefaultPublicFolderMovedItemRetention_ parameter on the **Set-OrganizationConfig** cmdlet.**Mailbox level**: The _RetainDeletedItemsFor_ on the **Set-Mailbox** cmdlet.**Folder level:**: The _RetainDeleteItemsFor_ parameter on the **Set-PublicFolder** cmdlet.|
 |Maximum number of public folders that can be migrated from Exchange 2010 to Exchange 2016|500,000|This is the maximum number of public folders you can move to Exchange from Exchange 2010 in a single migration. For details on migrating public folders, see [Use batch migration to migrate public folders from Exchange 2010 to Exchange 2016](batch-migration-from-previous-versions.md).|
    
+
 

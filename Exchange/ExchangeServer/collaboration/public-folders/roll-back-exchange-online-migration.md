@@ -1,14 +1,16 @@
 ---
-title: "Roll back a public folder migration from Exchange Server to Exchange Online"
+description: 'Summary: Follow these steps to return your public folder infrastructure to its pre-migration state in your Exchange Server on-premises organization.'
+localization_priority: Normal
 ms.author: dmaguire
+ms.topic: article
 author: msdmaguire
+ms.prod: exchange-server-it-pro
+ms.assetid: bcd54aa0-aa45-4c68-b504-1475842d4b96
+ms.collection: exchange-server
 ms.date: 6/8/2018
 ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
-localization_priority: Normal
-ms.assetid: bcd54aa0-aa45-4c68-b504-1475842d4b96
-description: "Summary: Follow these steps to return your public folder infrastructure to its pre-migration state in your Exchange Server on-premises organization."
+title: Roll back a public folder migration from Exchange Server to Exchange Online
+
 ---
 
 # Roll back a public folder migration from Exchange Server to Exchange Online
@@ -47,4 +49,5 @@ Note that if you roll back your migration, you will lose any content that was ad
 
 5. See [Configure Exchange 2013 public folders for a hybrid deployment](https://go.microsoft.com/fwlink/p/?linkid=845190) for instructions on reconfiguring access to your on-premises public folders, so that your Exchange Online users can access them.
     
+
 

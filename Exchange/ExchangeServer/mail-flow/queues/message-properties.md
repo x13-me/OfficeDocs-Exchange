@@ -1,15 +1,17 @@
 ---
-title: "Properties of messages in queues"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the filterable properties for messages in queues in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 8e6187c1-76f0-49da-bc24-2ab57cfb3c2c
-description: "Summary: Learn about the filterable properties for messages in queues in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/6/2018
+title: Properties of messages in queues
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Properties of messages in queues
@@ -57,4 +59,5 @@ The following table describes the message properties that you can use as filters
 |n/a  <br/> | `TrafficType` <br/> |n/a  <br/> |This property is reserved for internal Microsoft use, and isn't used in on-premises Exchange organizations.  <br/> In on-premises Exchange, this property is blank or has the value `Email`.  <br/> |
 |n/a  <br/> | `TrafficSubType` <br/> |n/a  <br/> |This property is reserved for internal Microsoft use, and isn't used in on-premises Exchange organizations.  <br/> |
    
+
 

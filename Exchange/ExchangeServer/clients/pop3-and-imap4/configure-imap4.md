@@ -1,15 +1,17 @@
 ---
-title: "Enable and configure IMAP4 on an Exchange server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to enable and configure IMAP4 on an Exchange server 2016 or 2019 for access by IMAP4 clients.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: c1ae10dd-14da-4400-b38d-2aeafde8abe6
-description: "Summary: Learn how to enable and configure IMAP4 on an Exchange server 2016 or 2019 for access by IMAP4 clients."
+ms.date: 7/5/2018
+title: Enable and configure IMAP4 on an Exchange server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Enable and configure IMAP4 on an Exchange server
@@ -221,4 +223,5 @@ To verify that you have enabled and configured IMAP4 on the Exchange server, per
 
 To enabled or disable IMAP4 access to individual mailboxes, see [Enable or disable POP3 or IMAP4 access to mailboxes in Exchange Server](configure-mailbox-access.md).
   
+
 

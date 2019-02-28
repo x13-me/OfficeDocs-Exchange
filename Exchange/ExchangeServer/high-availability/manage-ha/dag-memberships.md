@@ -1,15 +1,17 @@
 ---
-title: "Manage database availability group membership"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Add Exchange Server 2016 or Exchange Server 2019 to, or remove them from, a database availability group (DAG).'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: fb2ea15e-96d5-4045-b75b-b0aa5fc60479
-description: "Summary: Add Exchange Server 2016 or Exchange Server 2019 to, or remove them from, a database availability group (DAG)."
+ms.date: 7/9/2018
+title: Manage database availability group membership
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage database availability group membership
@@ -95,4 +97,5 @@ To verify that you've successfully managed DAG membership, do one of the followi
   
 [Remove-DatabaseAvailabilityGroupServer](http://technet.microsoft.com/library/49290be7-9d3d-4bc3-80ea-f1992fdd1d12.aspx)
   
+
 

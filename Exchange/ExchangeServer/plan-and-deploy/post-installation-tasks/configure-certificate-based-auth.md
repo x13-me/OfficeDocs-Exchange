@@ -1,16 +1,19 @@
 ---
-title: "Configure certificate based authentication in Exchange 2016"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how to configure Exchange 2016 CU1 or later to use certificate based authentication for Outlook on the web and ActiveSync.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 158fb77e-e238-4c22-9d85-a8c3109f78ec
-description: "Summary: Learn how to configure Exchange 2016 CU1 or later to use certificate based authentication for Outlook on the web and ActiveSync."
+ms.date: 
+title: Configure certificate based authentication in Exchange 2016
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure certificate based authentication in Exchange 2016
@@ -248,5 +251,6 @@ If your clients receive errors, you might need to increase the **uploadReadAhead
 ```
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/Microsoft-Server-ActiveSync/" -section:system.webserver/serverRuntime /uploadReadAheadSize:49152
 ```
+
 
 

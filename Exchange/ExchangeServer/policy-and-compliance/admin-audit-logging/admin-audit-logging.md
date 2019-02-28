@@ -1,15 +1,17 @@
 ---
-title: "Administrator audit logging in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/8/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about administrator audit logging in Exchange Server, and how you use the audit log to track changes to objects in your Exchange organization.'
+ms.topic: overview
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 22b17eb8-d8ee-4599-b202-d6a7928c20d9
-description: "Summary: Learn about administrator audit logging in Exchange Server, and how you use the audit log to track changes to objects in your Exchange organization."
+ms.date: 7/8/2018
+title: Administrator audit logging in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Administrator audit logging in Exchange Server
@@ -198,4 +200,5 @@ The Admin Audit Log built-in cmdlet extension agent performs admin audit logging
   
 The Admin Audit Log agent is enabled by default, which is required for admin audit logging to function. It can't be disabled, and its priority can't be changed. For more information about cmdlet extension agents, see [Cmdlet Extension Agents](http://technet.microsoft.com/library/0257790d-3988-46c3-8882-25ca11559e84.aspx).
   
+
 

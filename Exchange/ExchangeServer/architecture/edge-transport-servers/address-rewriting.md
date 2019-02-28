@@ -1,15 +1,17 @@
 ---
-title: "Address rewriting on Edge Transport servers"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/3/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how address rewriting on Edge Transport servers in Exchange Server can modify sender and recipient email addresses on email messages in transit.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 23f1eaf6-247a-4671-ad72-aae19d9b511d
-description: "Summary: Learn how address rewriting on Edge Transport servers in Exchange Server can modify sender and recipient email addresses on email messages in transit."
+ms.date: 7/3/2018
+title: Address rewriting on Edge Transport servers
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Address rewriting on Edge Transport servers
@@ -183,4 +185,5 @@ The following values aren't rewritten because the information is part of message
     
 - The boundary string parameter of the MIME content type.
     
+
 

@@ -1,15 +1,17 @@
 ---
-title: "Manage mail users"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create mail users and how to change mail user properties.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c72f46dc-8db3-486d-a998-0f01ffc1a843
-description: "Summary: Learn how to create mail users and how to change mail user properties."
+ms.date: 7/5/2018
+title: Manage mail users
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage mail users
@@ -345,3 +347,4 @@ To verify that you've successfully bulk edited mail users, do one of the followi
   ```
   Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Adatum')} | Format-List Name,Office,Manager
   ```
+

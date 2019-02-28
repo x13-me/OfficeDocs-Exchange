@@ -1,15 +1,17 @@
 ---
-title: "Managed availability"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about monitoring your Exchange Server 2016 or Exchange Server 2019 organization to quickly resolve issues for greater availability and reliability.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ceb99e6f-6dca-446d-abfb-3e6fc6a72704
-description: "Summary: Learn about monitoring your Exchange Server 2016 or Exchange Server 2019 organization to quickly resolve issues for greater availability and reliability."
+ms.date: 7/9/2018
+title: Managed availability
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Managed availability
@@ -217,4 +219,5 @@ There are 12 cmdlets used for managed availability, which are described in the f
 |[Set-ServerComponentState](http://technet.microsoft.com/library/bf0a92ce-9bcf-476e-b92b-8279c141f361.aspx) <br/> |Used to configure the state of one or more server components.  <br/> |
 |[Get-ServerComponentState](http://technet.microsoft.com/library/da7214fe-c641-4c6a-a479-df95a4136929.aspx) <br/> |Used to view the state of one or more server components.  <br/> |
    
+
 

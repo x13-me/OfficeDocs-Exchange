@@ -1,15 +1,17 @@
 ---
-title: "Enable a customized business hours greeting"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can enable a customized business hours greeting for a Unified Messaging (UM) auto attendant. The business hours greeting is the first thing callers hear when a UM auto attendant answers their call during business hours. You'll probably want to customize the greeting.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: a2272b7d-de88-4d3f-81e6-ad81f0ee6c5e
-description: "You can enable a customized business hours greeting for a Unified Messaging (UM) auto attendant. The business hours greeting is the first thing callers hear when a UM auto attendant answers their call during business hours. You'll probably want to customize the greeting."
+ms.date: 11/17/2014
+title: Enable a customized business hours greeting
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Enable a customized business hours greeting
@@ -71,5 +73,6 @@ This example configures a UM auto attendant named `MyAutoAttendant` and enables 
 ```
 Set-UMAutoAttendant -Identity MyAutoAttendant - BusinessHoursKeyMappingEnabled $true -BusinessHoursKeyMapping "1,Sales,,SalesAutoAttendant","2,Support,12345","3,Directions,,,directions.wav"
 ```
+
 
 

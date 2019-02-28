@@ -1,14 +1,16 @@
 ---
-title: "Procedures for address lists in Exchange Server"
+description: 'Summary: Learn the tasks that Exchange Server 2016 and Exchange Server 2019 administrators need to know to manage address lists and global address lists (GAL).'
+localization_priority: Normal
 ms.author: chrisda
+ms.topic: article
 author: chrisda
+ms.prod: exchange-server-it-pro
+ms.assetid: 236e8530-62dd-4c43-8a5d-8465623252e6
+ms.collection: exchange-server
 ms.date: 7/6/2018
 ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
-localization_priority: Normal
-ms.assetid: 236e8530-62dd-4c43-8a5d-8465623252e6
-description: "Summary: Learn the tasks that Exchange Server 2016 and Exchange Server 2019 administrators need to know to manage address lists and global address lists (GAL)."
+title: Procedures for address lists in Exchange Server
+
 ---
 
 # Procedures for address lists in Exchange Server
@@ -722,3 +724,4 @@ In the Exchange Management Shell, you can specify **precanned recipient filters*
   - After you use the **New-AddressList** cmdlet to create an address list that uses custom recipient filters, you can't modify the address list in the EAC. You need to use the **Set-AddressList** cmdlet with the _RecipientFilter_ parameter in the Exchange Management Shell.
     
  **Note**: The _RecipientContainer_ (organizational unit) recipient filter parameter is available to both precanned recipient filters and custom recipient filters.
+

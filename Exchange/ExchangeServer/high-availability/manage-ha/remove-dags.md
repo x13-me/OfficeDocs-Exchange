@@ -1,15 +1,17 @@
 ---
-title: "Remove a database availability group"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: How to remove a database availability group (DAG) in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 071296e9-31b0-40f4-9a02-177d97486ebd
-description: "Summary: How to remove a database availability group (DAG) in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/9/2018
+title: Remove a database availability group
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Remove a database availability group
@@ -61,4 +63,5 @@ To verify that you've successfully removed the DAG, do one of the following:
 
     If the DAG was successfully deleted, the preceding command will produce an error message indicating the object could not be found.
     
+
 

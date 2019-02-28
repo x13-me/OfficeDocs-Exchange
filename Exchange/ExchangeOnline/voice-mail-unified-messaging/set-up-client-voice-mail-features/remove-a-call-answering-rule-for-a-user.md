@@ -1,15 +1,17 @@
 ---
-title: "Remove a call answering rule for a user"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 4/8/2015
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can use Exchange Online PowerShell to remove one or more call answering rules for a user. You can also use the Remove-UMCallAnsweringRule cmdlet in a PowerShell script to remove one or more call answering rules for multiple users.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 1da3c5bc-7227-4b37-96f6-67ceefc084d5
-description: "You can use Exchange Online PowerShell to remove one or more call answering rules for a user. You can also use the Remove-UMCallAnsweringRule cmdlet in a PowerShell script to remove one or more call answering rules for multiple users."
+ms.date: 4/8/2015
+title: Remove a call answering rule for a user
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Remove a call answering rule for a user
@@ -55,5 +57,6 @@ This example removes the call answering rule `MyUMCallAnsweringRule` from the ma
 ```
 Remove-UMCallAnsweringRule -Identity MyUMCallAnsweringRule -Mailbox tonysmith
 ```
+
 
 

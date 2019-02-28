@@ -1,15 +1,17 @@
 ---
-title: "Sharing and collaboration permissions"
-ms.author: dmaguire
-author: msdmaguire
-manager: scotv
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about permissions that are required to manage sharing and collaboration features in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: reference
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b7fa4b7c-1266-45bd-a14b-f66be0459cc5
-description: "Summary: Learn about permissions that are required to manage sharing and collaboration features in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/5/2018
+title: Sharing and collaboration permissions
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Sharing and collaboration permissions
@@ -43,4 +45,5 @@ Users who are assigned the View-Only Management role group can view the configur
 |Site mailboxes  <br/> |[Organization Management](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Recipient Management](http://technet.microsoft.com/library/669d602e-68e3-41f9-a455-b942d212d130.aspx) <br/> |
 |Site mailbox provisioning policy  <br/> |[Organization Management](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Recipient Management](http://technet.microsoft.com/library/669d602e-68e3-41f9-a455-b942d212d130.aspx) <br/> |
    
+
 

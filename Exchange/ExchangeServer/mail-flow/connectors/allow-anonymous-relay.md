@@ -1,15 +1,17 @@
 ---
-title: "Allow anonymous relay on Exchange servers"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to configure anonymous relay in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 5b675b4e-3a33-4191-91ce-44e1c0923517
-description: "Summary: Learn how to configure anonymous relay in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/6/2018
+title: Allow anonymous relay on Exchange servers
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Allow anonymous relay on Exchange servers
@@ -264,4 +266,5 @@ To verify that you've successfully configured anonymous relay, do the following:
     
 - If anonymous relay works intermittently, you may need to modify the default message rate and throttling limits on the Receive connector. For more information, see [Message throttling on Receive connectors](../../mail-flow/message-rate-limits.md#ReceiveConn).
     
+
 

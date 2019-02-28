@@ -1,15 +1,17 @@
 ---
-title: "Switchovers and failovers"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: An overview of switchovers and failovers in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 75388645-cae1-402e-bf02-c4949d3e2c31
-description: "Summary: An overview of switchovers and failovers in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/9/2018
+title: Switchovers and failovers
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Switchovers and failovers
@@ -227,4 +229,5 @@ Since you can failover the namespace between datacenters, all that is needed to 
   
 If you only have two datacenters and would like to be able to configure automatic failover, you can utilize Microsoft Azure as your third location. You will need to create an Azure virtual network and connect it to your two datacenters using a multi-point VPN. You will then be able to place your witness server on a Microsoft Azure virtual machine. For more information, see [Using a Microsoft Azure VM as a DAG witness server](azure-vms-as-dag-witness-servers.md).
   
+
 

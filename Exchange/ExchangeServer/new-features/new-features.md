@@ -1,16 +1,18 @@
 ---
-title: "What's new in Exchange Server"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 9/20/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Critical
+description: 'Summary: Learn about the new features that are available in Exchange Server 2016 and Exchange Server 2019 when you upgrade from previous versions of Exchange.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 97501135-2149-4590-8373-98e638ac8eb1
-description: "Summary: Learn about the new features that are available in Exchange Server 2016 and Exchange Server 2019 when you upgrade from previous versions of Exchange."
-monikerRange: "exchserver-2016 || exchserver-2019"
+monikerRange: exchserver-2016 || exchserver-2019
+title: What's new in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.date: 9/20/2018
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # What's new in Exchange Server
@@ -842,3 +844,4 @@ There are two ways to manage Exchange workloads in Exchange 2016:
 
 For more information about these features, see [User workload management in Exchange 2016](../server-health/workload-management.md).
 ::: moniker-end
+

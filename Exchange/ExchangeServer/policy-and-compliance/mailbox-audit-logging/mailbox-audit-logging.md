@@ -1,15 +1,17 @@
 ---
-title: "Mailbox audit logging in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/8/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the specific logon types and user actions that can be audited when you enable mailbox audit logging for user mailboxes in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 29b67d58-eef9-4ad4-863f-562405ea8794
-description: "Summary: Learn about the specific logon types and user actions that can be audited when you enable mailbox audit logging for user mailboxes in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/8/2018
+title: Mailbox audit logging in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Mailbox audit logging in Exchange Server
@@ -134,4 +136,5 @@ The following table describes the fields logged in a mailbox audit log entry.
     
 - **Logging mailbox owner actions**: For mailboxes such as the Discovery Search Mailbox, which may contain more sensitive information, consider enabling mailbox audit logging for mailbox owner actions such as message deletion.
     
+
 

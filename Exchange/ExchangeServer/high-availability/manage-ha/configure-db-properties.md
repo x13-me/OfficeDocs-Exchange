@@ -1,15 +1,17 @@
 ---
-title: "Configure mailbox database copy properties"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: How to configure the properties of a mailbox database copy in Exchange Server, and what those properties are.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: cf186561-ab2c-45c0-90f5-8d3ecfabeeac
-description: "Summary: How to configure the properties of a mailbox database copy in Exchange Server, and what those properties are."
+ms.date: 7/9/2018
+title: Configure mailbox database copy properties
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure mailbox database copy properties
@@ -100,4 +102,5 @@ To verify that you've successfully configured a mailbox database copy, do one of
   
 [Get-MailboxDatabase](http://technet.microsoft.com/library/e12bd6d3-3793-49cb-9ab6-948d42dd409e.aspx)
   
+
 

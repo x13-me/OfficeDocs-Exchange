@@ -1,15 +1,17 @@
 ---
-title: "Datacenter switchovers"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: How to plan for, and then perform, a datacenter switchover in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ac208c12-04d0-4809-bacd-72478ff14983
-description: "Summary: How to plan for, and then perform, a datacenter switchover in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/9/2018
+title: Datacenter switchovers
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Datacenter switchovers
@@ -239,4 +241,5 @@ As with the DNS changes that were made during the switchover to the second datac
 
 After switchback to the primary datacenter is completed successfully, you can reestablish site resilience for the primary datacenter by verifying the health and status of each mailbox database copy in the second datacenter. In addition, if any database copies in the second datacenter were originally blocked for activation, you can reconfigure those settings at this time.
   
+
 

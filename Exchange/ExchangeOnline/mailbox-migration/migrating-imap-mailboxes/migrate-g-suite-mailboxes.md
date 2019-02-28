@@ -1,24 +1,26 @@
 ---
-title: "Migrate G Suite mailboxes to Office 365"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 9/19/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom:
-- Adm_O365
-- Adm_O365_Setup
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 665dc56c-581c-4e35-8028-6bc1e8497016
+ms.date: 9/19/2018
+description: ""
+title: Migrate G Suite mailboxes to Office 365
+ms.collection: exchange-online
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - MBS150
 - BCS160
-ms.assetid: 665dc56c-581c-4e35-8028-6bc1e8497016
-description: ""
+ms.audience: Admin
+ms.custom:
+- Adm_O365
+- Adm_O365_Setup
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Migrate G Suite mailboxes to Office 365
@@ -307,5 +309,6 @@ Were these steps helpful? If so, please let us know at the bottom of this topic.
 [Ways to migrate email to Office 365](../mailbox-migration.md)
 
 [Tips for optimizing IMAP migrations](optimizing-imap-migrations.md)
+
 
 

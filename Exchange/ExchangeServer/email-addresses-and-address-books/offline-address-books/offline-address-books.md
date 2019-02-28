@@ -1,14 +1,16 @@
 ---
-title: "Offline address books in Exchange Server"
+description: 'Summary: Learn how offline address books are created and distributed in Exchange Server 2016 and Exchange Server 2019.'
+localization_priority: Normal
 ms.author: chrisda
+ms.topic: article
 author: chrisda
+ms.prod: exchange-server-it-pro
+ms.assetid: a6bcb072-4ab9-400e-a5d0-c05264629097
+ms.collection: exchange-server
 ms.date: 7/6/2018
 ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
-localization_priority: Normal
-ms.assetid: a6bcb072-4ab9-400e-a5d0-c05264629097
-description: "Summary: Learn how offline address books are created and distributed in Exchange Server 2016 and Exchange Server 2019."
+title: Offline address books in Exchange Server
+
 ---
 
 # Offline address books in Exchange Server
@@ -183,4 +185,5 @@ In Exchange 2010, moving OAB generation to another server required you to specif
     
 Remember, you can configure multiple OABs to use the same organization mailbox, but you can't configure an OAB to use more than one organization mailbox. If you need multiple copies of the OAB in different locations (typically, in different Active Directory sites), verify that an organization mailbox is exists in the site, and enable shadow distribution for the OAB. For more information, see [Use the Exchange Management Shell to enable shadow distribution for offline address books](oab-procedures.md#OABEnableShadow).
   
+
 

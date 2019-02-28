@@ -1,15 +1,17 @@
 ---
-title: "Manage mail flow rules in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to view, create, modify, remove enable or disable, and import or export mail flow rules in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
-description: "Admins can learn how to view, create, modify, remove enable or disable, and import or export mail flow rules in Exchange Online."
+ms.date: 7/11/2018
+title: Manage mail flow rules in Exchange Online
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage mail flow rules in Exchange Online
@@ -384,3 +386,4 @@ Resources for Exchange Server:
 [Transport Rule Conditions](https://technet.microsoft.com/library/c918ea00-1e68-4b8b-8d51-6966b4432e2d.aspx)
 
 [Transport Rule Actions](https://technet.microsoft.com/library/5d11a955-b1cc-4150-a0b9-a8cc48ba9bde.aspx)
+

@@ -1,15 +1,17 @@
 ---
-title: "Voice mail in Exchange Online Unified Messaging"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 6/25/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Unified Messaging (UM) enables users to use voice mail features, including Outlook Voice Access and Call Answering Rules. UM combines voice messaging and email messaging into one mailbox that can be accessed from many different devices. Users can read or listen to their messages from their email Inbox or by using Outlook Voice Access from any telephone. You have control over how users place outgoing calls, and the experience callers have when they call in to your organization.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 7ddf1356-d4c0-41c7-a495-101633ae2f50
-description: "Unified Messaging (UM) enables users to use voice mail features, including Outlook Voice Access and Call Answering Rules. UM combines voice messaging and email messaging into one mailbox that can be accessed from many different devices. Users can read or listen to their messages from their email Inbox or by using Outlook Voice Access from any telephone. You have control over how users place outgoing calls, and the experience callers have when they call in to your organization."
+ms.date: 6/25/2018
+title: Voice mail in Exchange Online Unified Messaging
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Voice mail in Exchange Online: Unified Messaging
@@ -189,3 +191,4 @@ For more information about the EAC, see [Exchange admin center in Exchange Onlin
 Exchange Online PowerShell is a powerful command-line interface that enables automation of administrative tasks. Exchange Online PowerShell can perform every task that can be performed by the EAC plus tasks that can't be done in the EAC. In fact, when you do something in the EAC, it's Exchange Online PowerShell that's doing the work behind the scenes.
 
 For more information about Exchange Online PowerShell, see [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell).
+

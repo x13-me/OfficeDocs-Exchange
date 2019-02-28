@@ -1,15 +1,17 @@
 ---
-title: "Find queues and messages in queues in the Exchange Management Shell"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/10/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 5433c1d3-ad2e-4f82-b50d-b67964b32f26
-description: "Summary: Learn about identity, filtering, and command output for queues and messages in queues in the Exchange Management Shell in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/10/2018
+title: Find queues and messages in queues in the Exchange Management Shell
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Find queues and messages in queues in the Exchange Management Shell
@@ -225,5 +227,6 @@ This example returns the first 500 messages on the specified server in the speci
   ```
   Get-Message -Server mailbox01.contoso.com -BookmarkObject:$Temp -IncludeBookmark $false -ResultSize 500 -SortOrder +FromAddress,-Size
   ```
+
 
 

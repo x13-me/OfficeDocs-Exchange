@@ -1,15 +1,17 @@
 ---
-title: "Use Windows Server Backup to back up Exchange"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 6/4/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Step-by-step guidance for backing up your Exchange Server 2016 and Exchange Server 2019 Sdata.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 188a8291-0a41-4ca2-b6d2-94242e2b1ffc
-description: "Summary: Step-by-step guidance for backing up your Exchange Server 2016 and Exchange Server 2019 Sdata."
+ms.date: 6/4/2018
+title: Use Windows Server Backup to back up Exchange
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Use Windows Server Backup to back up Exchange
@@ -81,4 +83,5 @@ To verify that you've successfully backed up the data, do any of the following:
 
     The _SnapshotLastFullBackup_ and _LastFullBackup_ properties of the database indicate when the last successful backup was taken, and if it was a VSS full backup.
     
+
 

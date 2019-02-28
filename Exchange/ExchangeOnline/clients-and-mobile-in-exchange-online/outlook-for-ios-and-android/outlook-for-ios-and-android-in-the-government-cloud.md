@@ -1,16 +1,18 @@
 ---
-title: "Using Outlook for iOS and Android in the Government Community Cloud"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: How organizations in the Office 365 U.S. Government Community Cloud (GCC) can enable Outlook for iOS and Android for their users.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 73b693d9-39bb-4689-a1ff-4be505a5945b
-description: "Summary: How organizations in the Office 365 U.S. Government Community Cloud (GCC) can enable Outlook for iOS and Android for their users."
+ms.date: 
+title: Using Outlook for iOS and Android in the Government Community Cloud
+ms.collection: exchange-online
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Using Outlook for iOS and Android in the Government Community Cloud
@@ -108,7 +110,7 @@ Prior to Outlook for iOS and Android obtaining FedRAMP approval and certificatio
 
 ## Services and features not available
 
-By default, certain services and features of Outlook for iOS and Android are disabled automatically for the Office 365 U.S. Government Community Cloud (GCC) in order to meet the FedRAMP requirements:
+By default, certain services and features of Outlook for iOS and Android are disabled automatically for the Office 365 U.S. Government Community Cloud (GCC) because they do not meet FedRAMP requirements:
 
 - **In-app support**: Users will not be able to submit support tickets from within the app. They should contact their internal help desk and provide logs (via the Share Diagnostics Logs option in Setting -> Help). If necessary, the organization's IT department can then contact Microsoft Support directly.
 
@@ -144,7 +146,7 @@ At any time, access can be revoked by resetting the parameter back to the defaul
 
 Changing this setting typically takes affect within an hour. As this is an tenant-based change, all Outlook for iOS and Android users in the GCC organization will be affected. 
 
-    > [!NOTE]
-    > Users do not need to leverage the GCC mode option within the client with the above Exchange Online setting.
+> [!NOTE]
+> Users do not need to leverage the GCC mode option within the client with the above Exchange Online setting.
 
 For more information on the cmdlet, please see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig?view=exchange-ps). 

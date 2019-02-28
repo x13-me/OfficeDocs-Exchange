@@ -1,15 +1,17 @@
 ---
-title: "Public folders"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn about public folders and how they work in Exchange 2016 and Exchange 2019.
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9ca7a32d-2436-462f-b71a-94129d05b6fa
-description: "Learn about public folders and how they work in Exchange 2016 and Exchange 2019."
+ms.date: 6/8/2018
+title: Public folders
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Public folders
@@ -170,4 +172,5 @@ In all of these situations, the public folder or public folder mailbox is recove
   
 For more information, see [Restore public folders and public folder mailboxes from failed moves](http://technet.microsoft.com/library/2ade83c9-5f9b-4945-bf32-48fa8185b515.aspx).
   
+
 

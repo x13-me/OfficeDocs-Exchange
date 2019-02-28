@@ -1,15 +1,17 @@
 ---
-title: "Send connectors in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/10/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn about Send connectors in Exchange 2016 and Exchange 2019, and how they control mail flow from your Exchange organization.
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 6aa19a12-c7b2-4eac-a8dc-9a4d26919ac5
-description: "Learn about Send connectors in Exchange 2016 and Exchange 2019, and how they control mail flow from your Exchange organization."
+ms.date: 7/10/2018
+title: Send connectors in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Send connectors
@@ -204,5 +206,6 @@ To remove permissions from a security principal on a Send connector, use the fol
 ```
 Remove-ADPermission -Identity <SendConnector> -User <SecurityPrincipal> -ExtendedRights "<Permission1>","<Permission2>"...
 ```
+
 
 

@@ -1,15 +1,17 @@
 ---
-title: "Journaling procedures in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to configure journaling in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
-description: "Summary: Learn how to configure journaling in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 
+title: Journaling procedures in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Journaling procedures in Exchange Server
@@ -388,4 +390,5 @@ To enable journal report decryption, perform the following steps:
 
 For more information, see [Enable or Disable Journal Report Decryption](http://technet.microsoft.com/library/1dedbe73-2c1a-4b14-8799-5091aaec7965.aspx).
   
+
 

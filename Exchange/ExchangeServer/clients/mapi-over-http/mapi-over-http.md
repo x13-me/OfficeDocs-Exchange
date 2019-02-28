@@ -1,15 +1,17 @@
 ---
-title: "MAPI over HTTP in Exchange Server"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/10/2018
-ms.audience: ITPro
-ms.topic: conceptual
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn about the benefits and requirements for MAPI over HTTP in Exchange Server 2016 and Exchange Server 2019.
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 4663b5db-5b30-4a5a-a302-be6fef7fe5da
-description: "Learn about the benefits and requirements for MAPI over HTTP in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/10/2018
+title: MAPI over HTTP in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # MAPI over HTTP in Exchange Server
@@ -66,4 +68,5 @@ The following conditions are required for clients and servers to support MAPI ov
 - Supported Outlook clients (see the table in the previous section).
     
 - .NET Framework 4.5.2 or later. Note that this is no longer an issue for Exchange 2016 CU5 or later. For more information about the .NET Framework requirements for Exchange 2016, see [.NET Framework](../../plan-and-deploy/system-requirements.md#net-framework).
+
 

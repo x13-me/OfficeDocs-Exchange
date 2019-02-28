@@ -1,15 +1,17 @@
 ---
-title: "Managing high availability and site resilience"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: The operational tasks of managing DAGs, mailbox database copies, and other high availability elements of Exchange Server.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f9677392-88d2-457f-a488-245771a8c1f2
-description: "Summary: The operational tasks of managing DAGs, mailbox database copies, and other high availability elements of Exchange Server."
+ms.date: 7/9/2018
+title: Managing high availability and site resilience
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Managing high availability and site resilience
@@ -92,4 +94,5 @@ A *switchover* is a manual process in which an administrator manually activates 
   
 A *failover* is the automatic activation by the system of one or more database copies in reaction to a failure. For example, the loss of a disk drive in a RAID-less environment will trigger a database failover. The loss of the MAPI network or a power failure will trigger a server failover.
   
+
 

@@ -1,15 +1,17 @@
 ---
-title: "Provision recipients for offline address book downloads in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to assign offline address books (OABs) to mailboxes in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 141751ac-16d3-4e3c-b70c-004aeedcb5a0
-description: "Admins can learn how to assign offline address books (OABs) to mailboxes in Exchange Online."
+ms.date: 
+title: Provision recipients for offline address book downloads in Exchange Online
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Provision recipients for offline address book downloads in Exchange Online
@@ -61,3 +63,4 @@ To verify that you've successfully assigned an OAB to a mailbox, replace <Mailbo
 ```
 Get-Mailbox -Identity "<MailboxIdentity>" | Format-Table Name,OfflineAddressBook -Auto
 ```
+

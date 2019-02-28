@@ -1,17 +1,19 @@
 ---
-title: "Create a public folder"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 4/19/2018
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'Microsoft.Exchange.Management.PublicFolders.NewPublicFolderWizardForm.NewPublicFolderWizardPage'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create a public folder with the Exchange admin center (EAC) or with the Exchange Management Shell.'
+ms.topic: article
+author: msdmaguire
+f1_keywords:
+- Microsoft.Exchange.Management.PublicFolders.NewPublicFolderWizardForm.NewPublicFolderWizardPage
+ms.author: dmaguire
 ms.assetid: 6d252e60-c8d0-4efd-b9d7-ba5284a6f8ab
-description: "Summary: Learn how to create a public folder with the Exchange admin center (EAC) or with the Exchange Management Shell."
+ms.date: 4/19/2018
+title: Create a public folder
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create a public folder
@@ -90,4 +92,5 @@ To verify that you've successfully created a public folder, do the following:
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
   
+
 

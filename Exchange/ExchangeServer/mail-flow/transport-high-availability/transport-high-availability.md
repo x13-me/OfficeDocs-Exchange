@@ -1,15 +1,17 @@
 ---
-title: "Transport high availability in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn about transport high availability in Exchange 2016 and Exchange 2019 and the features that improve the reliability of message delivery.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: e9ec6d05-f441-4cca-8592-8f7469948299
-description: "Learn about transport high availability in Exchange 2016 and Exchange 2019 and the features that improve the reliability of message delivery."
+ms.date: 7/6/2018
+title: Transport high availability in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Transport high availability in Exchange Server
@@ -70,4 +72,5 @@ The Front End Transport service on a Mailbox server (part of the Client Access s
     
 Only after both the primary message and shadow message are successfully created, the end of data SMTP command is sent back to the sending SMTP server through the Front End Transport service.
   
+
 

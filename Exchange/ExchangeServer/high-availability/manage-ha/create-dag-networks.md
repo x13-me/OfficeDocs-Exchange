@@ -1,15 +1,17 @@
 ---
-title: "Create a database availability group network"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 4/19/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Create additional networks, if needed, for use in a database availability group (DAG).'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6caec7be-788a-4058-87a7-f31c575b870c
-description: "Summary: Create additional networks, if needed, for use in a database availability group (DAG)."
+ms.date: 4/19/2018
+title: Create a database availability group network
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create a database availability group network
@@ -83,4 +85,5 @@ To verify that you've successfully created a DAG network, do one of the followin
   
 [Remove-DatabaseAvailabilityGroupNetwork](http://technet.microsoft.com/library/8da3ddc3-72e0-4c1b-8d3f-848c3ab5584e.aspx)
   
+
 

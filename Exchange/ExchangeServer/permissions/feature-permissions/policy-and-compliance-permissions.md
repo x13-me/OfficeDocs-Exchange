@@ -1,15 +1,17 @@
 ---
-title: "Messaging policy and compliance permissions in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about permissions that are required to manage policy and compliance features in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: reference
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b
-description: "Summary: Learn about permissions that are required to manage policy and compliance features in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/5/2018
+title: Messaging policy and compliance permissions in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Messaging policy and compliance permissions in Exchange Server
@@ -54,4 +56,5 @@ Users who are assigned the View-Only Management role group can view the configur
 |Retention policies - Create  <br/> |See the entry for Messaging records management  <br/> |
 |Transport rules  <br/> |[Organization Management](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Records Management](http://technet.microsoft.com/library/0e0c95ce-6109-4591-b86d-c6cfd44d21f5.aspx) <br/> |
    
+
 

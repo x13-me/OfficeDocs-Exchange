@@ -1,15 +1,17 @@
 ---
-title: "Enable or disable Outlook Voice Access for users"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can enable or disable access to Outlook Voice Access for UM-enabled users who are associated with a Unified Messaging (UM) mailbox policy. Outlook Voice Access is a feature used by UM-enabled users to access their mailbox over a phone. By default, this setting is enabled.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: c0c244a0-ad2f-4adf-bc1f-1d55fd7ea2d5
-description: "You can enable or disable access to Outlook Voice Access for UM-enabled users who are associated with a Unified Messaging (UM) mailbox policy. Outlook Voice Access is a feature used by UM-enabled users to access their mailbox over a phone. By default, this setting is enabled."
+ms.date: 11/17/2014
+title: Enable or disable Outlook Voice Access for users
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Enable or disable Outlook Voice Access for users
@@ -56,5 +58,6 @@ This example prevents users who are associated with the UM mailbox policy `MyUMM
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -AllowSubscriberAccess $false
 ```
+
 
 
