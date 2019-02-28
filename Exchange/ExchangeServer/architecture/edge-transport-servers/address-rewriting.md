@@ -69,17 +69,17 @@ Address rewriting changes an email address by rewriting specific fields in the m
 
 |**Field name**|**Location**|**Outbound messages**|**Inbound messages**|
 |:-----|:-----|:-----|:-----|
-|**MAIL FROM** <br/> |Message envelope  <br/> |Rewritten  <br/> |Not rewritten  <br/> |
-|**RCPT TO** <br/> |Message envelope  <br/> |Not rewritten  <br/> |Rewritten  <br/> |
-|**To** <br/> |Message header  <br/> |Not Rewritten  <br/> |Rewritten  <br/> |
-|**Cc** <br/> |Message header  <br/> |Not Rewritten  <br/> |Rewritten  <br/> |
-|**From** <br/> |Message header  <br/> |Rewritten  <br/> |Not rewritten  <br/> |
-|**Sender** <br/> |Message header  <br/> |Rewritten  <br/> |Not rewritten  <br/> |
-|**Reply-To** <br/> |Message header  <br/> |Rewritten  <br/> |Not rewritten  <br/> |
-|**Return-Receipt-To** <br/> |Message header  <br/> |Rewritten  <br/> |Not rewritten  <br/> |
-|**Disposition-Notification-To** <br/> |Message header  <br/> |Rewritten  <br/> |Not rewritten  <br/> |
-|**Resent-From** <br/> |Message header  <br/> |Rewritten  <br/> |Not rewritten  <br/> |
-|**Resent-Sender** <br/> |Message header  <br/> |Rewritten  <br/> |Not rewritten  <br/> |
+|**MAIL FROM**|Message envelope|Rewritten|Not rewritten|
+|**RCPT TO**|Message envelope|Not rewritten|Rewritten|
+|**To**|Message header|Not Rewritten|Rewritten|
+|**Cc**|Message header|Not Rewritten|Rewritten|
+|**From**|Message header|Rewritten|Not rewritten|
+|**Sender**|Message header|Rewritten|Not rewritten|
+|**Reply-To**|Message header|Rewritten|Not rewritten|
+|**Return-Receipt-To**|Message header|Rewritten|Not rewritten|
+|**Disposition-Notification-To**|Message header|Rewritten|Not rewritten|
+|**Resent-From**|Message header|Rewritten|Not rewritten|
+|**Resent-Sender**|Message header|Rewritten|Not rewritten|
    
 ## What address rewriting doesn't change
 <a name="What"> </a>
@@ -100,7 +100,7 @@ Address rewriting doesn't modify any message header fields that would break SMTP
     
 Address rewriting ignores domains that aren't controlled by the Exchange organization. In other words, the domain needs to be configured as an authoritative accepted domain in the Exchange organization. Rewriting non-authoritative domains would cause an uncontrollable form of message relay.
   
-Address rewriting also doesn't modify the header fields of messages that are embedded in another message. Senders and recipients expect embedded messages to remain intact and be delivered without modification, as long as the messages don't trigger transport rules that are implemented between the sender and recipient.
+Address rewriting also doesn't modify the header fields of messages that are embedded in another message. Senders and recipients expect embedded messages to remain intact and be delivered without modification, as long as the messages don't trigger mail flow rules (also known as transport rules) that are implemented between the sender and recipient.
   
 ## Considerations for outbound-only address rewriting
 <a name="Consid1"> </a>

@@ -132,7 +132,7 @@ When a user's Recoverable Items folder exceeds the warning quota for recoverable
 ## Holds and email forwarding
 <a name="emailforwarding"> </a>
 
-Users with mailboxes on Exchange Server can use Outlook and Outlook on the web to set up email forwarding for their mailbox. Email forwarding lets users configure their mailbox to forward email messages sent to their mailbox to another mailbox located in or outside of their organization. Administrators can also set up transport rules to forward message to another mailbox. In both cases, email forwarding can be configured so that any message sent to the original mailbox isn't copied to that mailbox and is only sent to the forwarding address.
+Users with mailboxes on Exchange Server can use Outlook and Outlook on the web to set up email forwarding for their mailbox. Email forwarding lets users configure their mailbox to forward email messages sent to their mailbox to another mailbox located in or outside of their organization. Administrators can also set up mail flow rules (also known as transport rules) to forward message to another mailbox. In both cases, email forwarding can be configured so that any message sent to the original mailbox isn't copied to that mailbox and is only sent to the forwarding address.
   
 If email forwarding is set up for a mailbox and message aren't copied, what happens if the mailbox is on hold? During the delivery process, the hold settings for the mailbox are checked. If the message meets the hold criteria for the mailbox, a copy of the message is saved to the Recoverable Items folder. That means you can use In-Place eDiscovery to search the original mailbox to find messages that were forwarded to another mailbox.
   

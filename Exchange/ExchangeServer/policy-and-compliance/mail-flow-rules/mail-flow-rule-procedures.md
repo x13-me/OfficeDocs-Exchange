@@ -29,7 +29,7 @@ On Mailbox servers, you can manage mail flow rules in the Exchange admin center 
     
 - For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) (Exchange Server), or in [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx).
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow rules" entry in [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) (Exchange Server), or in [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx).
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
     
@@ -448,7 +448,7 @@ You can import a mail flow rule collection that you've previously exported as a 
     
 - You can't import a mail flow rule collection into Exchange 2010 if that rule collection was exported from Exchange 2013 or later.
     
-### Use the Exchange Management Shell to export a transport rule collection
+### Use the Exchange Management Shell to export a mail flow rule collection
 
 1. Run the following command:
     
@@ -470,7 +470,7 @@ You can import a mail flow rule collection that you've previously exported as a 
 
 For detailed syntax and parameter information, see [Export-TransportRuleCollection](http://technet.microsoft.com/library/bfdb6ced-cd81-49f1-a929-4d76dbaf5590.aspx).
   
-### Use the Exchange Management Shell to import a transport rule collection
+### Use the Exchange Management Shell to import a mail flow rule collection
 
 1. Use the following syntax:
     
@@ -505,23 +505,16 @@ For detailed syntax and parameter information, see [Import-TransportRuleCollecti
     
 - Resources for Exchange Online:
     
-  - [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)
+  - [Mail flow rules (transport rules) in Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)
     
-  - [Transport Rule Conditions](http://technet.microsoft.com/library/7235e5ed-f7f4-41b1-b1a0-47bb96223a2f.aspx)
+  - [Mail flow rule conditions and exceptions (predicates) in Exchange Online](http://technet.microsoft.com/library/7235e5ed-f7f4-41b1-b1a0-47bb96223a2f.aspx)
     
-  - [Transport Rule Actions](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx)
+  - [Mail flow rule actions in Exchange Online](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx)
     
   - [Transport and inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
     
 - Resources for Exchange Online Protection:
     
-  - [Transport rules](http://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
-    
-  - [Transport Rule Conditions](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx)
-    
-  - [Transport Rule Actions](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)
+  - [Mail flow rules (transport rules) in Exchange Online Protection](https://docs.microsoft.com/office365/SecurityCompliance/eop/mail-flow-rules-transport-rules-0)
     
   - [Transport and inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
-    
-
-
