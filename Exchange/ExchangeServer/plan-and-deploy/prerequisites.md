@@ -74,6 +74,9 @@ You can use any member of the Active Directory domain to prepare Active Director
     b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
      > [!NOTE]
+     > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+
+     > [!NOTE]
      > The Visual C++ Redistributable package is required if you're using the Exchange Setup Wizard to prepare Active Directory. If you're using unattended Setup from the command line to prepare Active Directory, this package isn't required. For more information, see [Prepare Active Directory and domains](prepare-ad-and-domains.md).
     
 2. Install the Remote Tools Administration Pack by running the following command in Windows PowerShell:
@@ -104,6 +107,9 @@ When you use one of these options, you don't need to restart the computer after 
     b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
     
     c. [Visual C++ Redistributable Package for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
+    
+     > [!NOTE]
+     > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
 2. Add the required Lync Server or Skype for Business Server components:
 
@@ -136,6 +142,9 @@ When you use one of these options, you don't need to restart the computer after 
 
 1. Install the [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
+> [!NOTE]
+> Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+
 2. If you aren't going to use Exchange Setup to install the required Windows components (in the wizard or from the command line), run the following command in Windows PowerShell:
 
     ```
@@ -145,6 +154,9 @@ When you use one of these options, you don't need to restart the computer after 
 ## Windows 10 client prerequisites for the Exchange 2019 management tools
 
 1. Install the [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
+
+> [!NOTE]
+> Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
 2. If you aren't going to use Exchange Setup to install the required Windows components (in the wizard or from the command line), run the following command in Windows PowerShell:
 
@@ -163,6 +175,9 @@ You can use any member of the Active Directory domain to prepare Active Director
     a. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
 
     b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
+
+     > [!NOTE]
+     > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
 2. Install the Remote Tools Administration Pack by running the following command in Windows PowerShell:
 
@@ -197,6 +212,9 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
 
     d. [Visual C++ Redistributable Package for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
 
+     > [!NOTE]
+     > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+
      > [!NOTE] 
      > Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Other Exchange installations (management tools and Edge Transport) only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
 
@@ -215,6 +233,9 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
     a. [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906)
 
     b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
+
+     > [!NOTE]
+     > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
 ## Windows Server 2012 and Windows Server 2012 R2 prerequisites for Exchange 2016
 
@@ -237,6 +258,9 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
     c. [Visual C++ Redistributable Package for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
 
      > [!NOTE]
+     > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+
+     > [!NOTE]
      > Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Installations of the Exchange management tools and Edge Transport servers only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
 
     d. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
@@ -255,11 +279,17 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
     b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
 
+     > [!NOTE]
+     > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+
 ## Windows client prerequisites for the Exchange 2016 management tools
 
 ### Exchange 2016 management tools on Windows 10
 
 1. Install [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
+
+> [!NOTE]
+> Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
 2. Run the following command in an elevated Windows PowerShell window (a Windows PowerShell window you open by selecting **Run as administrator**): 
 
@@ -272,6 +302,9 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 1. Install [.NET Framework 4.7.1](https://go.microsoft.com/fwlink/p/?linkid=866906).
 
 2. Install [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
+
+> [!NOTE]
+> Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
 3. Run the following command in an elevated Windows PowerShell window (a Windows PowerShell window you open by selecting **Run as administrator**): 
 
