@@ -7,7 +7,9 @@ ms.author: kwekua
 ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
 ms.date: 12/31/2017
 title: Enable or disable MAPI for a mailbox
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

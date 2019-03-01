@@ -7,7 +7,9 @@ ms.author: kwekua
 ms.assetid: 6ed2f969-6c03-4b45-8e2d-05de787de48d
 ms.date: 12/9/2016
 title: Create user mailboxes in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

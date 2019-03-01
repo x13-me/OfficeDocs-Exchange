@@ -1,13 +1,15 @@
 ---
 localization_priority: Normal
-ms.topic: get-started-article
+ms.topic: conceptual
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: d4524743-a63f-413f-b290-5f0d2f070392
 ms.date: 8/16/2018
 description: Steps to add an SSL certificate to Exhcange 2007,
 title: Add an SSL certificate to Exchange 2007
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150

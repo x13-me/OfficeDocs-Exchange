@@ -7,7 +7,9 @@ ms.author: dstrome
 ms.assetid: 3a219732-87e7-4f11-96bc-8edd2cc91926
 ms.date: 
 title: Permissions in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

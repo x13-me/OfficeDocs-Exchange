@@ -7,7 +7,9 @@ ms.author: markjjo
 ms.assetid: 6ccc80db-d201-44f7-8d4b-473a89c14b2f
 ms.date: 11/17/2014
 title: Apply a retention policy to mailboxes
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

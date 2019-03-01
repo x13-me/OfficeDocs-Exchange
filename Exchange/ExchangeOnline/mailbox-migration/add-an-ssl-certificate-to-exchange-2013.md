@@ -1,13 +1,15 @@
 ---
 localization_priority: Normal
-ms.topic: get-started-article
+ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 976c080c-fda1-400d-97f4-5b65991cdf4e
 ms.date: 8/16/2018
 description: Add an SSL certificate to your Exchange server 2013.
 title: Add an SSL certificate to Exchange 2013
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150

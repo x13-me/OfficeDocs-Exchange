@@ -9,7 +9,9 @@ ms.author: kwekua
 ms.assetid: bb8b8804-f730-4ad7-9173-896a4965b90f
 ms.date: 7/11/2018
 title: Manage mail users
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

@@ -1,13 +1,15 @@
 ---
 localization_priority: Normal
-ms.topic: get-started-article
+ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 8c1b16e6-475d-406d-a80c-1956fa781789
 ms.date: 8/16/2018
 description: Steps to add an SSL certificate to Exchange 2010.
 title: Add an SSL certificate to Exchange 2010
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
