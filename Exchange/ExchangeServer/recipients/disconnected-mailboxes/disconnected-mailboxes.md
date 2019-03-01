@@ -1,15 +1,17 @@
 ---
-title: "Disconnected mailboxes"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about different disconnected mailboxes and how to work with them.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 85ff95d4-0aa4-4964-ac4b-5b07a5a1039f
-description: "Summary: Learn about different disconnected mailboxes and how to work with them."
+ms.date: 7/5/2018
+title: Disconnected mailboxes
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Disconnected mailboxes
@@ -139,4 +141,5 @@ The following table contains links to topics that will help you manage disconnec
 |[Manage Mailbox Restore Requests](http://technet.microsoft.com/library/8e668a52-c601-4d96-a51c-ab60267e1321.aspx) <br/> |Learn how to manage mailbox restore requests using the Exchange Management Shell.  <br/> |
 |[Permanently delete a mailbox](permanently-delete-mailboxes.md) <br/> |Learn how to permanently delete a mailbox.  <br/> |
    
+
 

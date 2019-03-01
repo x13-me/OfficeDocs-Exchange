@@ -1,15 +1,17 @@
 ---
-title: "Mail flow and the transport pipeline"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about mail flow and the transport pipeline in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 14df5e1a-a5f7-4b0d-ba97-f53b76f0e7e0
-description: "Summary: Learn about mail flow and the transport pipeline in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 6/8/2018
+title: Mail flow and the transport pipeline
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Mail flow and the transport pipeline
@@ -184,12 +186,13 @@ The Transport service on a Mailbox server consists of the following components a
 
 The components of the Transport service on Edge Transport servers are identical to the components of the Transport service on Mailbox servers. However, what actually happens during each stage of processing on Edge Transport servers is different. The differences are described in the following list.
 
-- **SMTP Receive**: When an Edge Transport server is subscribed to an internal Active Directory site, the default Receive connector named "Default \<Edge Transport server name\>" is automatically configured to accept mail from internal Mailbox servers and from the Internet. When Internet messages arrive at the Edge Transport server, antispam agents filter connections and message contents and help identify the sender and the recipient while the message is being accepted into the organization. The antispam agents are installed and enabled by default. Additional attachment filtering and connection filtering features are available, but built-in malware filtering is not. Also, transport rules are controlled by the Edge Rule agent. Compared to the Transport Rule agent on Mailbox servers, only a small subset of transport rule conditions are available on Edge Transport servers. But, there are unique transport rule actions related to SMTP connections that are available only on Edge Transport servers.
+- **SMTP Receive**: When an Edge Transport server is subscribed to an internal Active Directory site, the default Receive connector named "Default \<Edge Transport server name\>" is automatically configured to accept mail from internal Mailbox servers and from the Internet. When Internet messages arrive at the Edge Transport server, antispam agents filter connections and message contents and help identify the sender and the recipient while the message is being accepted into the organization. The antispam agents are installed and enabled by default. Additional attachment filtering and connection filtering features are available, but built-in malware filtering is not. Also, mail flow rules (also known as transport rules) are controlled by the Edge Rule agent. Compared to the Transport Rule agent on Mailbox servers, only a small subset of mail flow rule conditions are available on Edge Transport servers. But, there are unique mail flow rule actions related to SMTP connections that are available only on Edge Transport servers.
 
 - **Submission**: On an Edge Transport server, messages typically enter the Submission queue through a Receive connector. However, the Pickup directory and the Replay directory are also available.
 
 - **Categorizer**: On an Edge Transport server, categorization is a short process in which the message is put directly into a delivery queue for delivery to internal or external recipients.
 
 - **SMTP Send**: When an Edge Transport server is subscribed to an internal Active Directory site, two Send connectors are automatically created and configured. One named "EdgeSync - \<Active Directory site name\> to Internet" is responsible for sending outbound mail to Internet recipients; the other named "EdgeSync - Inbound to \<Active Directory site name\>" is responsible for sending inbound mail from the Internet to internal recipients. Inbound mail is sent to the Front End Transport service on an available Mailbox server in the subscribed Active Directory site.
+
 
 

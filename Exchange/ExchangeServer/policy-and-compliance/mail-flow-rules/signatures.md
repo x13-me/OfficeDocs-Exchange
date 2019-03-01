@@ -1,15 +1,17 @@
 ---
-title: "Organization-wide disclaimers, signatures, footers, or headers in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about using mail flow rules (transport rules) to add disclaimers to email messages in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: e45e33c9-e53b-427c-ada5-70901bc399b8
-description: "Summary: Learn about using mail flow rules (transport rules) to add disclaimers to email messages in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/9/2018
+title: Organization-wide disclaimers, signatures, footers, or headers in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Organization-wide disclaimers, signatures, footers, or headers in Exchange Server
@@ -113,8 +115,6 @@ For a complete list of conditions and exceptions that you can use to target the 
   
 [Mail flow rules in Exchange Server](mail-flow-rules.md) (Exchange 2016 and Exchange 2019) 
   
-[Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) (Exchange Online) 
+[Mail flow rules (transport rules) in Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)
   
-[Transport Rules](http://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx) (Exchange Online Protection) 
-  
-
+[Mail flow rules (transport rules) in Exchange Online Protection](http://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)

@@ -1,24 +1,26 @@
 ---
-title: "What you need to know about a cutover email migration to Office 365"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/15/2018
-ms.audience: Admin
-ms.topic: conceptual
-f1_keywords:
-- 'O365E_ExchSetupMigrStepsCutover'
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: conceptual
+author: msdmaguire
+f1_keywords:
+- O365E_ExchSetupMigrStepsCutover
+ms.author: dmaguire
+ms.assetid: 961978ef-f434-472d-a811-1801733869da
+ms.date: 8/15/2018
+description: Learn what happens and what you need to do to prepare for a cutover migration to Office 365.
+title: What you need to know about a cutover email migration to Office 365
+ms.collection: exchange-online
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - MBS150
 - BCS160
-ms.assetid: 961978ef-f434-472d-a811-1801733869da
-description: "Learn what happens and what you need to do to prepare for a cutover migration to Office 365."
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # What you need to know about a cutover email migration to Office 365
@@ -100,4 +102,5 @@ If you're ready to begin a cutover migration, go to [Perform a cutover migration
 [Ways to migrate email to Office 365](mailbox-migration.md)
 
 [Use PowerShell to perform a cutover migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=615253)
+
 

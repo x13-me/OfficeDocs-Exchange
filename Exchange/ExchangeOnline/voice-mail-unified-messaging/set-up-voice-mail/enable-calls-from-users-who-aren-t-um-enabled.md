@@ -1,15 +1,17 @@
 ---
-title: "Enable calls from users who aren't UM-enabled"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can enable or disable calls from users who aren't enabled for Unified Messaging (UM). By default, Unified Messaging allows incoming calls from unauthenticated callers through an auto attendant to be transferred to UM-enabled users. With this option enabled, users from outside an organization can transfer calls to UM-enabled users.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 3c39c6df-6d7a-469f-b92b-85b3f14bad31
-description: "You can enable or disable calls from users who aren't enabled for Unified Messaging (UM). By default, Unified Messaging allows incoming calls from unauthenticated callers through an auto attendant to be transferred to UM-enabled users. With this option enabled, users from outside an organization can transfer calls to UM-enabled users."
+ms.date: 11/17/2014
+title: Enable calls from users who aren't UM-enabled
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Enable calls from users who aren't UM-enabled
@@ -44,5 +46,6 @@ This example allows Tony Smith to receive voice calls from callers who aren't UM
 ```
 Set UMMailbox -Identity tony@contoso.com -AllowUMCallsFromNonUsers SearchEnabled
 ```
+
 
 

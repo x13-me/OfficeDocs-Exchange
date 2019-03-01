@@ -1,15 +1,17 @@
 ---
-title: "Mailbox servers"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/3/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the Mailbox server role in Exchange Server'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b6403e43-d263-46b6-bfeb-f70f13c32ff1
-description: "Summary: Learn about the Mailbox server role in Exchange Server"
+ms.date: 7/3/2018
+title: Mailbox servers
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Mailbox servers
@@ -30,4 +32,5 @@ The following articles contain procedures for common Mailbox server management t
     
 - [Enable the MRS Proxy endpoint for remote moves](mrs-proxy-endpoint.md)
     
+
 

@@ -1,15 +1,17 @@
 ---
-title: "View or configure Outlook on the web mailbox policy properties"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to configure Outlook on the web mailbox policies in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa
-description: "Summary: Learn how to configure Outlook on the web mailbox policies in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/6/2018
+title: View or configure Outlook on the web mailbox policy properties
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # View or configure Outlook on the web mailbox policy properties
@@ -94,4 +96,5 @@ To verify that you've successfully edited an Outlook on the web mailbox policy:
 ## See also
 
 [Outlook on the web mailbox policies procedures](http://technet.microsoft.com/library/2f9fc960-6d0b-472a-a81a-6d8b629b4d5d.aspx)
+
 

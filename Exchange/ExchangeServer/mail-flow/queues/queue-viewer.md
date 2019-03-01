@@ -1,15 +1,17 @@
 ---
-title: "Queue Viewer"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn about Queue Viewer in Exchange 2016 and Exchange 2019.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: db892f88-5c13-4607-a38c-8845b35ab8b2
-description: "Learn about Queue Viewer in Exchange 2016 and Exchange 2019."
+ms.date: 7/11/2018
+title: Queue Viewer
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Queue Viewer
@@ -53,4 +55,5 @@ The topics in the following table contain procedures that use Queue Viewer:
 |[Procedures for queues](queue-procedures.md)|Explains how to view, retry, resubmit, suspend, and resume queues.|
 |[Procedures for messages in queues](message-procedures.md)|Explains how to remove, suspend, resume, and redirect messages in queues.|
    
+
 

@@ -1,15 +1,17 @@
 ---
-title: "Track messages with delivery reports"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn how administrators use Delivery Reports to search for the delivery status of email messages in an Exchange Server 2016 or Exchange Server 2019 organization.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: a14e4e62-08ca-4a7b-92e1-d39fe3e0a9e5
-description: "Learn how administrators use Delivery Reports to search for the delivery status of email messages in an Exchange Server 2016 or Exchange Server 2019 organization."
+ms.date: 7/6/2018
+title: Track messages with delivery reports
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Track messages with delivery reports
@@ -104,4 +106,5 @@ When you're done reviewing the report, click **Close**. Delivery reports aren't 
 
 If your search was successful, messages that fit the search criteria are listed in the **Search results** pane. To view the delivery information for a specific message, select it and then click **Details** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). If no messages are displayed in the **Search results** pane, change the search criteria and then re-run the search.
   
+
 

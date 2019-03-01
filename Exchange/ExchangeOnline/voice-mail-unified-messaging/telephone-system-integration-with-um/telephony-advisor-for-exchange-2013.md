@@ -1,16 +1,17 @@
 ---
-title: "Telephony advisor for Exchange 2013"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Unified Messaging (UM) requires that you integrate Microsoft Exchange with the existing telephony system for your organization. A successful deployment requires you to make a careful analysis of your existing telephony infrastructure and to perform the correct planning steps to deploy Unified Messaging.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: e9f760f2-5901-4ed2-95a5-724555cc700e
+ms.date: 6/24/2018
+title: Telephony advisor for Exchange 2013
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
 
-description: "Unified Messaging (UM) requires that you integrate Microsoft Exchange with the existing telephony system for your organization. A successful deployment requires you to make a careful analysis of your existing telephony infrastructure and to perform the correct planning steps to deploy Unified Messaging."
 ---
 
 # Telephony advisor for Exchange 2013
@@ -258,5 +259,6 @@ For on-premises and hybrid deployments, Exchange Unified Messaging can be deploy
 - [Microsoft Lync Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=202010)
 
 To find out more about the Microsoft Unified Communications Open Interoperability Program for enterprise telephony infrastructure, including finding qualified SIP PSTN gateways and IP PBXs and the process for telephony infrastructure vendors to join and participate in the program, see [Microsoft Unified Communications Open Interoperability Program](https://go.microsoft.com/fwlink/p/?linkId=132071).
+
 
 

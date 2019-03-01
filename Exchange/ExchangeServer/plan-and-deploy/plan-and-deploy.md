@@ -1,16 +1,19 @@
 ---
-title: "Planning and deployment for Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/27/2018
-ms.audience: ITPro
-ms.topic: hub-page
-ms.prod: exchange-server-it-pro
 localization_priority: Priority
-ms.collection: Strat_EX_Admin
+description: 'Summary: Guidance for planning and deploying Exchange 2016 or Exchange 2019.'
+ms.topic: hub-page
+author: chrisda
+ms.author: chrisda
 ms.assetid: 692c59e3-f0b0-4cef-a66e-751aa740abae
-description: "Summary: Guidance for planning and deploying Exchange 2016 or Exchange 2019."
+ms.date: 7/27/2018
+title: Planning and deployment for Exchange Server
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Planning and deployment for Exchange Server
@@ -148,3 +151,4 @@ Exchange setup includes the following modes:
 
   > [!NOTE]
   > You must complete one mode of Setup before you can use another mode.
+

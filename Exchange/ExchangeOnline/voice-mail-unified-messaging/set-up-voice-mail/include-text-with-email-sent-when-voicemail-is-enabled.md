@@ -1,15 +1,17 @@
 ---
-title: "Include text with the email message sent when a user Is enabled for voice mail"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: When a user's mailbox is enabled for Unified Messaging (UM) voice mail, an email message is sent that welcomes the user to Unified Messaging. This message contains the PIN information the user will use to first access the voice mail system.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 3e8292fb-0cdb-445d-8048-a59af7c38d63
-description: "When a user's mailbox is enabled for Unified Messaging (UM) voice mail, an email message is sent that welcomes the user to Unified Messaging. This message contains the PIN information the user will use to first access the voice mail system."
+ms.date: 11/17/2014
+title: Include text with the email message sent when a user Is enabled for voice mail
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Include text with the email message sent when a user Is enabled for voice mail
@@ -55,5 +57,6 @@ This example enables UM-enabled users who are associated with a UM mailbox polic
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -UMEnabledText "You've been enabled for Unified Messaging voice mail. To access your Exchange mailbox, call your internal telephone extension number. From outside your office, call 425-555-1234."
 ```
+
 
 

@@ -1499,10 +1499,10 @@
         - name: Update a global address list
           href: update-a-global-address-list-exchange-2013-help.md
     - name: Hierarchical address books
-      href: https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books
+      href: hierarchical-address-books-exchange-2013.md
       items:
       - name: Enable or disable hierarchical address books
-        href: https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/enable-or-disable-hierarchical-address-books
+        href: enable-or-disable-hierarchical-address-books-exchange-2013.md
   - name: Sharing
     href: sharing-exchange-2013-help.md
     items:

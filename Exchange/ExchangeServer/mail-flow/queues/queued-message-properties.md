@@ -1,17 +1,19 @@
 ---
-title: "View queued message properties in Queue Viewer"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'Microsoft.Exchange.Management.Edge.SystemManager.MessagePropertyPage'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to use the Queue Viewer in the Exchange Toolbox to view message properties in Exchange 2016 and Exchange 2019.'
+ms.topic: article
+author: chrisda
+f1_keywords:
+- Microsoft.Exchange.Management.Edge.SystemManager.MessagePropertyPage
+ms.author: chrisda
 ms.assetid: 9d15d8b8-e061-4288-9354-df58e282fb6b
-description: "Summary: Learn how to use the Queue Viewer in the Exchange Toolbox to view message properties in Exchange 2016 and Exchange 2019."
+ms.date: 7/11/2018
+title: View queued message properties in Queue Viewer
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # View queued message properties in Queue Viewer
@@ -115,4 +117,5 @@ For more information about queues, see [Queues and messages in queues](queues.md
     
   - The **Recipient Information** tab displays the **Address**, **Status**, and **Last Error** values for each recipient in the message. The **Status** value for a recipient can be **Complete**, **Ready**, or **Retry**.
     
+
 

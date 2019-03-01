@@ -1,15 +1,17 @@
 ---
-title: "Configure the group of users that can be contacted"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can specify the group of users that callers can contact when calling into a Unified Messaging (UM) auto attendant. By default, callers can contact users within the same dial plan that's associated with the UM auto attendant. However, you can change the grouping of users to allow callers to transfer calls or send voice messages to users who are located in the organization's address book or to a specific set of users.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 45d9d6d5-c9d6-4b73-8aa2-a23599a4381c
-description: "You can specify the group of users that callers can contact when calling into a Unified Messaging (UM) auto attendant. By default, callers can contact users within the same dial plan that's associated with the UM auto attendant. However, you can change the grouping of users to allow callers to transfer calls or send voice messages to users who are located in the organization's address book or to a specific set of users."
+ms.date: 11/17/2014
+title: Configure the group of users that can be contacted
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Configure the group of users that can be contacted
@@ -54,5 +56,6 @@ This example sets the scope of the users that callers can contact to all users i
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -ContactScope GlobalAddressList
 ```
+
 
 

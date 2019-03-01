@@ -1,15 +1,17 @@
 ---
-title: "UM reports procedures"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Review the voice mail calls in your organization
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 5b58a2ed-3780-4a0e-87f6-e19e6e49640c
-description: "Review the voice mail calls in your organization"
+ms.date: 11/17/2014
+title: UM reports procedures
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # UM reports procedures
@@ -23,5 +25,6 @@ description: "Review the voice mail calls in your organization"
 [Investigate the audio quality of voice calls for a user](audio-quality-of-voice-calls-for-user.md)
 
 [Interpret voice mail call records](interpret-voice-mail-call-records.md)
+
 
 

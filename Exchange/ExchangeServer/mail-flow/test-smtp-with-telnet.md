@@ -1,15 +1,17 @@
 ---
-title: "Use Telnet to test SMTP communication on Exchange servers"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to use Telnet to test SMTP connectivity and mail flow on Exchange servers.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 8a5f6715-baa4-48dd-8600-02c6b3d1aa9d
-description: "Summary: Learn how to use Telnet to test SMTP connectivity and mail flow on Exchange servers."
+ms.date: 6/8/2018
+title: Use Telnet to test SMTP communication on Exchange servers
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Use Telnet to test SMTP communication on Exchange servers
@@ -253,5 +255,6 @@ The table above is based on information provided by [RFC 5321 (Simple Mail Trans
  **Failure response**: `550 5.1.1 User unknown`
 
  **Possible reasons for failure**: The specified recipient doesn't exist.
+
 
 

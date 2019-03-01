@@ -1,15 +1,17 @@
 ---
-title: "Perform a dial tone recovery"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: How to perform a dial tone recovery in Exchange 2016 and Exchange 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 158817fa-4b17-4fa9-8341-a86609e6a388
-description: "Summary: How to perform a dial tone recovery in Exchange 2016 and Exchange 2019."
+ms.date: 7/9/2018
+title: Perform a dial tone recovery
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Perform a dial tone recovery
@@ -128,4 +130,5 @@ To verify that you've successfully moved a mailbox, do the following:
     
 - Open the mailbox using Microsoft Outlook.
     
+
 

@@ -1,15 +1,17 @@
 ---
-title: "Address rewriting procedures on Edge Transport servers"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/3/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to configure address rewriting on an Edge Transport server in Exchange Server, and how to verify the address rewriting configuration.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 323a0b55-f921-425d-b1b0-18ad0fac315c
-description: "Summary: Learn how to configure address rewriting on an Edge Transport server in Exchange Server, and how to verify the address rewriting configuration."
+ms.date: 7/3/2018
+title: Address rewriting procedures on Edge Transport servers
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Address rewriting procedures on Edge Transport servers
@@ -297,4 +299,5 @@ To verify that you have successfully removed an address rewrite entry, do the fo
     
 3. From the external mailbox, reply to the test message. Verify the original mailbox receives the reply and that the message is unaffected by the removed address rewrite entry.
     
+
 

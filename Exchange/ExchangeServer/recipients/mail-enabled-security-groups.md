@@ -1,15 +1,17 @@
 ---
-title: "Manage mail-enabled security groups in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: scotv
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create and manage mail-enabled security groups in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
-description: "Summary: Learn how to create and manage mail-enabled security groups in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/5/2018
+title: Manage mail-enabled security groups in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Manage mail-enabled security groups in Exchange Server
@@ -535,3 +537,4 @@ To verify that you've successfully mail-disabled an existing mail-enabled univer
   ```
   Get-Group -Filter {RecipientTypeDetails -eq 'UniversalSecurityGroup'}
   ```
+

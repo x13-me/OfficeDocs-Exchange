@@ -1,15 +1,17 @@
 ---
-title: "Place a mailbox on Litigation Hold"
-ms.author: serdars
-author: SerdarSoysal
-manager: scotv
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Place a mailbox on Litigation Hold to preserve all mailbox content, including deleted items and original versions of modified items.
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
-description: "Place a mailbox on Litigation Hold to preserve all mailbox content, including deleted items and original versions of modified items."
+ms.date: 7/6/2018
+title: Place a mailbox on Litigation Hold
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Place a mailbox on Litigation Hold
@@ -183,4 +185,5 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
 
     You can use other user mailbox properties in a filter to include or exclude mailboxes. For details, see [Filterable Properties for the -Filter Parameter](http://technet.microsoft.com/library/b02b0005-2fb6-4bc2-8815-305259fa5432.aspx).
     
+
 

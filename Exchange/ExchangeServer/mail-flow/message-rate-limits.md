@@ -1,15 +1,17 @@
 ---
-title: "Message rate limits and throttling"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how message rate limits affect mail flow and connections in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: fba87902-2a79-42ac-b394-46a9016f667e
-description: "Summary: Learn how message rate limits affect mail flow and connections in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/6/2018
+title: Message rate limits and throttling
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Message rate limits and throttling
@@ -103,5 +105,6 @@ For more information, see the following topics:
 - [Change User Throttling Settings for Specific Users](http://technet.microsoft.com/library/c5f834d6-189d-485e-9800-5e0066815ecf.aspx)
 
 - [Change User Throttling Settings for All Users in Your Organization](http://technet.microsoft.com/library/c45cacfc-768d-4605-9bb0-53e30273fe4d.aspx)
+
 
 

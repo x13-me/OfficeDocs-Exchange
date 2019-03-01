@@ -1,15 +1,17 @@
 ---
-title: "Default settings for Exchange virtual directories"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the default Client Access virtual directory settings on Mailbox servers in Exchange 2016 and Exchange 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d2d89ce6-4721-4737-a325-fba5ad9422e0
-description: "Summary: Learn about the default Client Access virtual directory settings on Mailbox servers in Exchange 2016 and Exchange 2019."
+ms.date: 7/5/2018
+title: Default settings for Exchange virtual directories
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Default settings for Exchange virtual directories
@@ -62,3 +64,4 @@ The following table lists the default settings on a stand-alone Exchange Mailbox
 ## See also
 
 [Virtual directory management](https://technet.microsoft.com/library/ff952752(v=exchg.150).aspx)
+

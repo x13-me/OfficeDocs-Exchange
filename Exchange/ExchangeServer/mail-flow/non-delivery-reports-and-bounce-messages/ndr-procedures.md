@@ -1,15 +1,17 @@
 ---
-title: "Procedures for DSNs and NDRs in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to view default and custom NDRs, and how to create, modify, and delete custom NDRs in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 23c9d844-6fc7-44c9-a308-587338281611
-description: "Summary: Learn how to view default and custom NDRs, and how to create, modify, and delete custom NDRs in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 6/8/2018
+title: Procedures for DSNs and NDRs in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Procedures for DSNs and NDRs in Exchange Server
@@ -22,7 +24,7 @@ You can use the default NDRs that are included in Exchange, or you can use the E
 
 - Estimated time to complete each procedure: less than 10 minutes.
     
-- The main focus of this topic is custom NDR text that replaces the text of default NDRs that are used by Exchange. You can create new NDRs for other enhanced status code values (for example, 5.999.999), but no one will see these NDRs if the enhanced status code isn't used by Exchange. You can use a range of custom enhanced status codes as part of an action for a transport rule. For more information, see [Mail flow rule actions in Exchange Server](../../policy-and-compliance/mail-flow-rules/actions.md).
+- The main focus of this topic is custom NDR text that replaces the text of default NDRs that are used by Exchange. You can create new NDRs for other enhanced status code values (for example, 5.999.999), but no one will see these NDRs if the enhanced status code isn't used by Exchange. You can use a range of custom enhanced status codes as part of an action for a mail flow rule (also known as a transport rule). For more information, see [Mail flow rule actions in Exchange Server](../../policy-and-compliance/mail-flow-rules/actions.md).
     
 - The procedures in this topic are available on Mailbox servers and Edge Transport servers.
     
@@ -566,5 +568,6 @@ This is an example of a custom NDR text value that uses HTML tags and escape cod
 ```
 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="https://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
 ```
+
 
 

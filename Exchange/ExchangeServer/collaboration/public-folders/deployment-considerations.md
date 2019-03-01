@@ -1,15 +1,17 @@
 ---
-title: "Considerations when deploying public folders"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Important considerations to read before you deploy public folders in your organization.'
+ms.topic: reference
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 2e416eed-b88f-45db-a482-1232fd2610fa
-description: "Summary: Important considerations to read before you deploy public folders in your organization."
+ms.date: 7/6/2018
+title: Considerations when deploying public folders
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Considerations when deploying public folders
@@ -50,4 +52,5 @@ This article contains factors to consider before you deploy public folders in yo
     
 - Retention policies aren't supported for public folder mailboxes.
     
+
 

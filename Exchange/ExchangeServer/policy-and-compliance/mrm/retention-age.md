@@ -1,15 +1,17 @@
 ---
-title: "How retention age is calculated in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how retention age is calculated in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: a7daf7aa-0411-4b26-a422-eefd1b113f9f
-description: "Summary: Learn how retention age is calculated in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/8/2018
+title: How retention age is calculated in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # How retention age is calculated in Exchange Server
@@ -50,4 +52,5 @@ If a mailbox is placed on In-Place Hold or Litigation Hold, expiring items are r
   
 In hybrid deployments, the same retention tags and retention policies must exist in your on-premises and Exchange Online organizations in order to consistently move and expire items across both organizations. See [Export and import retention tags](http://technet.microsoft.com/library/18405ea2-7ccc-475e-bd84-8b040e17bf44.aspx) for more information.
   
+
 

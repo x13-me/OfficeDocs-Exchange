@@ -1,15 +1,17 @@
 ---
-title: "Create an In-Place eDiscovery search in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 6/12/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create an In-Place eDiscovery search in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
-description: "Summary: Learn how to create an In-Place eDiscovery search in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 6/12/2018
+title: Create an In-Place eDiscovery search in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create an In-Place eDiscovery search in Exchange Server
@@ -223,4 +225,5 @@ Get-MailboxSearch "FY15 Q2 Financial Results" | Format-List Name,Status,LastRunB
     
     The reason is that it requires a lot of resources to return these properties for all eDiscovery searches in your organization.
     
+
 

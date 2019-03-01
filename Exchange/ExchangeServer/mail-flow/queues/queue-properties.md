@@ -1,15 +1,17 @@
 ---
-title: "Queue properties in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn about queue properties to use in filters in Exchange Server.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: fbfbdcab-e0d2-4ed9-8f7f-e5fa2c87360d
-description: "Learn about queue properties to use in filters in Exchange Server."
+ms.date: 7/6/2018
+title: Queue properties in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Queue properties in Exchange Server
@@ -59,4 +61,5 @@ For more information about Queue Viewer, see [Queue Viewer](queue-viewer.md). Fo
 |n/a  <br/> | `TlsDomain` <br/> |Equals (`-eq`)  <br/> Does Not Equal (`-ne`)  <br/> Contains (`-like`)  <br/> |The FQDN of the destination domain if the domain is configured for Domain Security (mutual TLS authentication).  <br/> |
 |n/a  <br/> | `Velocity` <br/> |Equals (`-eq`)  <br/> Does not equal (`-ne`)  <br/> Greater than (`-gt`)  <br/> Greater than or equal to (`-ge`)  <br/> Less than (`-lt`)  <br/> Less than or equal to (`-le`)  <br/> |A calculated number that indicates how effectively the queue is draining. For more information, see [IncomingRate, OutgoingRate, and Velocity](queues.md#incomingrate-outgoingrate-and-velocity) <br/> |
    
+
 

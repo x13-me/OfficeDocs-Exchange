@@ -1,16 +1,17 @@
 ---
-title: "Configuration notes for supported session border controllers"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 7/25/2017
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Session border controllers (SBCs) enable you to connect your on-premises telephony network to a Microsoft datacenter over a dedicated public WAN connection. An SBC sits on the edge of your on-premises IP network and connects to a second SBC in a Microsoft datacenter.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: d161f94a-a243-4294-93b3-2bf1dc17b59f
+ms.date: 7/25/2017
+title: Configuration notes for supported session border controllers
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
 
-description: "Session border controllers (SBCs) enable you to connect your on-premises telephony network to a Microsoft datacenter over a dedicated public WAN connection. An SBC sits on the edge of your on-premises IP network and connects to a second SBC in a Microsoft datacenter."
 ---
 
 # Configuration notes for supported session border controllers
@@ -40,3 +41,4 @@ The following SBCs have been successfully tested for interoperability with Excha
 |[Ingate](https://www.ingate.com/)|SIParator|Contact the hardware vendor for up to date instructions on how to set up their device.|Dedicated SBC|
 |[NET](http://www.net.com)|VX1200 & VX1800|Contact the hardware vendor for up to date instructions on how to set up their device.|SBC option for a VoIP gateway product|
 |[Sonus](http://www.sonus.net/)|SBC 1000/2000 2.2.1 or later|Contact the hardware vendor for up to date instructions on how to set up their device.|Dedicated SBC|
+

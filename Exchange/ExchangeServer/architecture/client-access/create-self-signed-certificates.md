@@ -1,16 +1,19 @@
 ---
-title: "Create a new Exchange Server self-signed certificate"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how to create a new self-signed certificate in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: ae826efe-7558-4007-b255-7dfe5933bbbf
-description: "Summary: Learn how to create a new self-signed certificate in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/5/2018
+title: Create a new Exchange Server self-signed certificate
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create a new Exchange Server self-signed certificate
@@ -155,5 +158,6 @@ To verify that you have successfully created an Exchange self-signed certificate
   ```
   Get-ExchangeCertificate | where {$_.Status -eq "Valid" -and $_.IsSelfSigned -eq $true} | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint,NotBefore,NotAfter
   ```
+
 
 

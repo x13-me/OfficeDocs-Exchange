@@ -1,15 +1,17 @@
 ---
-title: "AutoReseed"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Automatically restore a database in Exchange Server 2016 or Exchange Server 2019 with pre-provisioned spare disks.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 61f9a8be-070e-4c62-b505-52644fcff0c5
-description: "Summary: Automatically restore a database in Exchange Server 2016 or Exchange Server 2019 with pre-provisioned spare disks."
+ms.date: 7/9/2018
+title: AutoReseed
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # AutoReseed
@@ -77,4 +79,5 @@ In addition to the above conditions, the Disk Reclaimer will only attempt to for
 |Disk is unformatted, or formatted but empty, or formatted but contains files that have not been touched for 24 hours, and there are healthy active database copies in the local Active Directory site that can be used as a seeding source, but there are unknown files outside of the database file (EDB file) and log files.  <br/> |2 weeks  <br/> |
 |Disk is unformatted, or formatted but empty, or formatted but contains files that have not been touched for 24 hours, and there are healthy active database copies in the local Active Directory site that can be used as a seeding source, but there are one or more database files (EDB files) for databases that are not present in Active Directory.  <br/> |2 weeks  <br/> |
    
+
 

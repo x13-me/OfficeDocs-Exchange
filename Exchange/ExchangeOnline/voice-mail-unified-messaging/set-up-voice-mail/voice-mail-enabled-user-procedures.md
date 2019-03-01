@@ -1,15 +1,17 @@
 ---
-title: "Voice mail-enabled user procedures"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Enable a user for voice mail
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 57633cf1-9ed9-43ae-a2a8-965431b0a779
-description: "Enable a user for voice mail"
+ms.date: 11/17/2014
+title: Voice mail-enabled user procedures
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Voice mail-enabled user procedures
@@ -53,5 +55,6 @@ description: "Enable a user for voice mail"
 [Add an E.164 number](add-e-164-number.md)
 
 [Remove an E.164 number](remove-e-164-number.md)
+
 
 

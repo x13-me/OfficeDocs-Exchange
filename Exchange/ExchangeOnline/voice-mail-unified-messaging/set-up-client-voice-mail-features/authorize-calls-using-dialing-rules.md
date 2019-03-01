@@ -1,15 +1,17 @@
 ---
-title: "Authorize calls using dialing rules"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 3/9/2015
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: By default, users aren't able to place outgoing calls. To specify the kinds of calls users can make, you first create dialing rules, then authorize groups of these dialing rules on UM dial plans, UM mailbox policies, or UM auto attendants. Before you can authorize dialing rule groups, you have to define dialing rules on a UM dial plan. For details, see Create dialing rules for users.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 4c18bc07-f55c-42b7-81c1-729878aa93aa
-description: "By default, users aren't able to place outgoing calls. To specify the kinds of calls users can make, you first create dialing rules, then authorize groups of these dialing rules on UM dial plans, UM mailbox policies, or UM auto attendants. Before you can authorize dialing rule groups, you have to define dialing rules on a UM dial plan. For details, see Create dialing rules for users."
+ms.date: 3/9/2015
+title: Authorize calls using dialing rules
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Authorize calls using dialing rules
@@ -37,5 +39,6 @@ Where you authorize dialing rule groups depends on the types of callers that you
 |Unauthenticated callers who call in to a telephone number that's configured on a UM auto attendant|UM auto attendant. For details, see [Authorize calls for auto attendant callers](authorize-calls-for-auto-attendant-callers.md).|
 
 Depending on which users you're authorizing to make outbound calls, you'll use the **Dialing authorization** page in the Exchange admin center (EAC) for the dial plan, the auto attendant, or the UM mailbox policy.
+
 
 

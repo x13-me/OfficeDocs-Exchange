@@ -1,15 +1,17 @@
 ---
-title: "Setting up Outlook Voice Access"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Microsoft Outlook Voice Access lets users who are enabled for Exchange Unified Messaging (UM) access their mailboxes by using analog, digital, or cellular telephones.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 5ce8c877-35f3-4e55-a65e-5ca469aeae99
-description: "Microsoft Outlook Voice Access lets users who are enabled for Exchange Unified Messaging (UM) access their mailboxes by using analog, digital, or cellular telephones."
+ms.date: 6/24/2018
+title: Setting up Outlook Voice Access
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Setting up Outlook Voice Access
@@ -123,5 +125,6 @@ By default, when users dial in to Outlook Voice Access, they can use the telepho
 - Automatic Speech Recognition
 
 You can prevent users from receiving voice mail, but let them retain the ability to access their mailbox using Outlook Voice Access. You can enable a user for UM and configure the user's mailbox with an extension number that isn't currently being used by another user in the organization.
+
 
 

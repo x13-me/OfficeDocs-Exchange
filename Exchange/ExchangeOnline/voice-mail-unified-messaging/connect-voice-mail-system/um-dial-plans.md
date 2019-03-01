@@ -1,15 +1,17 @@
 ---
-title: "UM dial plans [ONP]"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Unified Messaging (UM) dial plans are the main component of Unified Messaging and are required to successfully deploy Unified Messaging voice mail on your network. The following sections discuss UM dial plans and how they're used in a UM deployment.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: ed7afc03-94af-4b23-8745-6a61f203c149
-description: "Unified Messaging (UM) dial plans are the main component of Unified Messaging and are required to successfully deploy Unified Messaging voice mail on your network. The following sections discuss UM dial plans and how they're used in a UM deployment."
+ms.date: 11/17/2014
+title: UM dial plans [ONP]
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # UM dial plans [ONP]
@@ -118,5 +120,6 @@ By default, when you create a UM dial plan, no Outlook Voice Access number is co
 You can use the **Outlook Voice Access numbers** box on the UM dial plan to add a telephone number or extension that a user will call to access the voice mail system using Outlook Voice Access. In most cases, you'll enter an extension number or an external telephone number. However, because this field accepts alphanumeric characters, a SIP URI can be used if you're using an IP PBX, a SIP-enabled PBX, Office Communications Server 2007 R2 or Microsoft Lync Server.
 
 Depending on the needs of your organization, you may want to configure one or more Outlook Voice Access number. You can have a single Outlook Voice Access number configured on a single UM dial plan or you can have multiple Outlook Voice Access numbers in a single UM dial plan, but you can't have a single Outlook Voice Access number that spans multiple UM dial plans.
+
 
 

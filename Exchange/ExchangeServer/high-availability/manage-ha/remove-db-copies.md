@@ -1,15 +1,17 @@
 ---
-title: "Remove a mailbox database copy"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: How to remove a copy of a mailbox database in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 99fecdde-b158-4dfc-9ca7-ff7c0ada7819
-description: "Summary: How to remove a copy of a mailbox database in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/9/2018
+title: Remove a mailbox database copy
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Remove a mailbox database copy
@@ -75,4 +77,5 @@ To verify that you've successfully removed a mailbox database copy, do one of th
 
     The removed passive copy is no longer listed.
     
+
 

@@ -1,16 +1,17 @@
 ---
-title: "Certificate procedures in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: A list of certificate management tasks in Exchange Server.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 8975848d-07f0-4643-9eac-20aece69945f
+ms.date: 7/5/2018
+title: Certificate procedures in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
 
-description: "Summary: A list of certificate management tasks in Exchange Server."
 ---
 
 # Certificate procedures in Exchange Server
@@ -39,4 +40,5 @@ The tasks that are associated with certificate management in Exchange are descri
 |Import (install) a certificate on an Exchange server.  <br/> |**Servers** \> **Certificates** \> select the server \> **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Import Exchange Certificate** <br/> |**Import-ExchangeCertificate** <br/> |[Import or install a certificate on an Exchange server](import-certificates.md) <br/> |Import a certificate that was exported from another server.  <br/> |
 |View existing certificates or certificate requests on an Exchange server, or view the details for a specific certificate or certificate request.  <br/> |**Servers** \> **Certificates** \> select the server  <br/> For details on a specific certificate or certificate request, select the item from the list, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).  <br/> |**Get-ExchangeCertificate** <br/> |n/a  <br/> |Some certificate properties are visible in the details pane in the EAC when you select the certificate or certificate request from the list.  <br/> Some certificate properties aren't visible in the standard view in the Exchange Management Shell. To see them, you need to specify the property name (exact name or wildcard match) with the **Format-Table** or **Format-List** cmdlets. For more information, see [Get-ExchangeCertificate](http://technet.microsoft.com/library/e368589a-6510-4209-9f10-171d1990cd7d.aspx).  <br/> |
    
+
 

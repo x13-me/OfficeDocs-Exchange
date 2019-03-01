@@ -1,15 +1,17 @@
 ---
-title: "In-Place Archiving in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Administrators can learn about In-Place Archiving and archive mailboxes in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: overview
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: b5e4c0e9-0558-4b90-bc12-f67adbfb59ac
-description: "Summary: Administrators can learn about In-Place Archiving and archive mailboxes in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/5/2018
+title: In-Place Archiving in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # In-Place Archiving in Exchange Server
@@ -128,4 +130,5 @@ In Exchange Server, creating and managing archive mailboxes is integrated with c
     
 - **Test archive connectivity**: In Exchange Server, you can use the [Test-ArchiveConnectivity](http://technet.microsoft.com/library/0db98a12-8cbb-4e9a-add4-c1847b057a44.aspx) cmdlet to test connectivity to a specified user's on-premises or cloud-based archive mailbox.
     
+
 

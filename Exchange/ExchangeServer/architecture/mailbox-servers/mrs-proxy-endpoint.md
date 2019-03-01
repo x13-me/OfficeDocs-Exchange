@@ -1,14 +1,16 @@
 ---
-title: "Enable the MRS Proxy endpoint for remote moves"
+description: "Summary: Learn how administrators can enable the MRS Proxy endpoint that's required for on-premises Exchange Server mailbox moves between Active Directory forests or Office 365."
+localization_priority: Normal
 ms.author: chrisda
+ms.topic: article
 author: chrisda
+ms.prod: exchange-server-it-pro
+ms.assetid: 9840f712-127e-4c2d-bfe5-1b35cdb2a31b
+ms.collection: exchange-server
 ms.date: 7/3/2018
 ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
-localization_priority: Normal
-ms.assetid: 9840f712-127e-4c2d-bfe5-1b35cdb2a31b
-description: "Summary: Learn how administrators can enable the MRS Proxy endpoint that's required for on-premises Exchange Server mailbox moves between Active Directory forests or Office 365."
+title: Enable the MRS Proxy endpoint for remote moves
+
 ---
 
 # Enable the MRS Proxy endpoint for remote moves
@@ -102,4 +104,5 @@ To verify that you've successfully enabled the MRS Proxy endpoint, do any of the
     
     For detailed syntax and parameter information, see [Test-MigrationServerAvailability](http://technet.microsoft.com/library/a0959dbe-94ae-4f2e-8e2c-e5d5bd5e1521.aspx).
     
+
 

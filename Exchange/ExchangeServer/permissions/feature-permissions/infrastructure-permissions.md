@@ -1,15 +1,17 @@
 ---
-title: "Exchange infrastructure and PowerShell permissions"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about permissions that are required to perform tasks to configure various components of Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: reference
+author: chrisda
+ms.author: chrisda
 ms.assetid: 3646a4e8-36b2-41fb-89a4-79b0963fcb11
-description: "Summary: Learn about permissions that are required to perform tasks to configure various components of Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/5/2018
+title: Exchange infrastructure and PowerShell permissions
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Exchange infrastructure and PowerShell permissions
@@ -79,4 +81,5 @@ Users who are assigned the View-Only Management role group can view the configur
 |Hybrid deployment configuration  <br/> |[Organization Management](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> |
 |Intra-Organization connectors  <br/> |[Organization Management](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Recipient Management](http://technet.microsoft.com/library/669d602e-68e3-41f9-a455-b942d212d130.aspx) <br/> [Records Management](http://technet.microsoft.com/library/0e0c95ce-6109-4591-b86d-c6cfd44d21f5.aspx) <br/> |
    
+
 
