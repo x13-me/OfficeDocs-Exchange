@@ -1,15 +1,17 @@
 ---
-title: "Configure email forwarding for a mailbox"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to use the Exchange admin center (EAC) to set up email forwarding.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
-description: "Summary: Learn how to use the Exchange admin center (EAC) to set up email forwarding."
+ms.date: 7/5/2018
+title: Configure email forwarding for a mailbox
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure email forwarding for a mailbox
@@ -95,4 +97,5 @@ For information about keyboard shortcuts that may apply to the procedures in thi
   
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
   
+
 

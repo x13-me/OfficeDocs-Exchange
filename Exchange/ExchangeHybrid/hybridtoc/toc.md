@@ -17,6 +17,7 @@
 ## [About the Best Practices Analyzer (BPA)](../about-the-office-365-best-practices-analyzer-for-exchange-server.md)
 ## [Decommission on-premises Exchange](../decommission-on-premises-exchange.md)
 ## [Hybrid Deployment](../hybrid-deployment/hybrid-deployment.md)
+### [Hybrid agent](../hybrid-deployment/hybrid-agent.md)
 ### [Deploy hybrid](../hybrid-deployment/deploy-hybrid.md)
 ### [Move mailboxes](../hybrid-deployment/move-mailboxes.md)
 ### [Set up legacy hybrid public folders](../hybrid-deployment/set-up-legacy-hybrid-public-folders.md)

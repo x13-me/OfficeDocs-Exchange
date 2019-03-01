@@ -1,16 +1,19 @@
 ---
-title: "Deploy new installations of Exchange"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/26/2018
-ms.audience: ITPro
-ms.topic: get-started-article
-ms.prod: exchange-server-it-pro
 localization_priority: Critical
-ms.collection: Strat_EX_Admin
+description: 'Summary: A collection of topic links that contain the information that you need to install Exchange 2016 or Exchange 2019 in various scenarios.'
+ms.topic: get-started-article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 681835cf-79fe-4aa7-8a28-4a39944d0efc
-description: "Summary: A collection of topic links that contain the information that you need to install Exchange 2016 or Exchange 2019 in various scenarios."
+ms.date: 7/26/2018
+title: Deploy new installations of Exchange
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Deploy new installations of Exchange
@@ -30,3 +33,4 @@ The following topics provide information about deploying new installations of Ex
 [Exchange dev/test environment in Azure](create-azure-test-environments.md)
   
 After you've completed your installation, see [Exchange post-installation tasks](../../plan-and-deploy/post-installation-tasks/post-installation-tasks.md).
+

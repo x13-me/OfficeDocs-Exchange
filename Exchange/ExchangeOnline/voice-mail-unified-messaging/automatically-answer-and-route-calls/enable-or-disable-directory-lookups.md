@@ -1,15 +1,17 @@
 ---
-title: "Enable or disable directory lookups"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 5/10/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can enable directory lookups so that callers who call in to a Unified Messaging (UM) auto attendant can look up names in the directory using their telephone keypad but not be able to search the directory using voice inputs. This setting is enabled by default. If this setting is disabled, callers won't be able to search the directory for a specific person using touchtone or voice commands.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: c0768815-8578-4385-8d4c-7d1e40304cec
-description: "You can enable directory lookups so that callers who call in to a Unified Messaging (UM) auto attendant can look up names in the directory using their telephone keypad but not be able to search the directory using voice inputs. This setting is enabled by default. If this setting is disabled, callers won't be able to search the directory for a specific person using touchtone or voice commands."
+ms.date: 5/10/2016
+title: Enable or disable directory lookups
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Enable or disable directory lookups
@@ -53,5 +55,6 @@ This example disables directory lookups on a UM auto attendant named `MyUMAutoAt
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -NameLookupEnabled $false
 ```
+
 
 

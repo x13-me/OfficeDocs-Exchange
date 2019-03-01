@@ -1,16 +1,19 @@
 ---
-title: "Export a certificate from an Exchange server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 6/7/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how to export a certificate from an Exchange server 2016 or 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 7e4c4013-8a2b-4c25-a287-b367c65e48aa
-description: "Summary: Learn how to export a certificate from an Exchange server 2016 or 2019."
+ms.date: 6/7/2018
+title: Export a certificate from an Exchange server
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Export a certificate from an Exchange server
@@ -78,4 +81,5 @@ Export-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e 
 
 To verify that you have successfully exported a certificate from an Exchange server, try importing the certificate file on another server. For more information, see [Import or install a certificate on an Exchange server](import-certificates.md).
   
+
 

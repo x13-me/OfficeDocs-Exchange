@@ -1,17 +1,19 @@
 ---
-title: "Configure mail flow using connectors in Office 365"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'ms.exch.eac.ConnectorSelection'
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to use connectors to control mail flow with Exchange Online or Exchange Online Protection.
+ms.topic: article
+author: chrisda
+f1_keywords:
+- ms.exch.eac.ConnectorSelection
+ms.author: chrisda
 ms.assetid: 854b5a50-4462-4836-a092-37e208d29624
-description: "Learn how to use connectors to control mail flow with Exchange Online or Exchange Online Protection."
+ms.date: 
+title: Configure mail flow using connectors in Office 365
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Configure mail flow using connectors in Office 365
@@ -126,3 +128,4 @@ Connector setup topics:
 [Set up connectors for secure mail flow with a partner organization](set-up-connectors-for-secure-mail-flow-with-a-partner.md)
 
 [What happens when I have multiple connectors for the same scenario?](set-up-connectors-to-route-mail.md#what-happens-when-i-have-multiple-connectors-for-the-same-scenario)
+

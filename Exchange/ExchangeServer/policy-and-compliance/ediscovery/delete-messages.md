@@ -1,15 +1,17 @@
 ---
-title: "Search for and delete messages in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 6/12/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to search for and purge messages from Exchange Server 2016 and Exchange Server 2019 mailboxes.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
-description: "Summary: Learn how to search for and purge messages from Exchange Server 2016 and Exchange Server 2019 mailboxes."
+ms.date: 6/12/2018
+title: Search for and delete messages in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Search for and delete messages in Exchange Server
@@ -123,4 +125,5 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
     
 - **How to get status on the search and delete operation?** Run the **Get-ComplianceSearchAction** to get the status on the delete operation. Note that the object that is created when you run the **New-ComplianceSearchAction** cmdlet is named by using this format: `<name of Compliance Search>_Purge`.
     
+
 

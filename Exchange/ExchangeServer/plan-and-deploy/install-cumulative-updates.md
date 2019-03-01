@@ -1,16 +1,19 @@
 ---
-title: "Upgrade Exchange to the latest Cumulative Update"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: get-started-article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn about installing Cumulative Updates (CUs) in Exchange 2016 or Exchange 2019.'
+ms.topic: get-started-article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 928a4a0b-0082-4d50-a696-bfaf2782f42d
-description: "Summary: Learn about installing Cumulative Updates (CUs) in Exchange 2016 or Exchange 2019."
+ms.date: 
+title: Upgrade Exchange to the latest Cumulative Update
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Upgrade Exchange to the latest Cumulative Update
@@ -128,3 +131,4 @@ For more information about unattended Setup from the command line, see [Install 
 ## How do you know this worked?
 
 To verify that you've successfully installed an Exchange CU, see [Verify Exchange Server installations](post-installation-tasks/verify-installation.md).
+

@@ -1,17 +1,19 @@
 ---
-title: "Installation of the first Exchange server in the organization can't be delegated [DelegatedBridgeheadFirstInstall]"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 8/2/2018
-ms.audience: ITPro
-ms.topic: reference
-f1_keywords:
-- 'ms.exch.setupreadiness.DelegatedBridgeheadFirstInstall'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Exchange Server 2016 or Exchange Server 2019 Setup can't continue because the account doesn't have permission to install the first Exchange server in the organization.
+ms.topic: reference
+author: chrisda
+f1_keywords:
+- ms.exch.setupreadiness.DelegatedBridgeheadFirstInstall
+ms.author: chrisda
 ms.assetid: bd1dbf09-5465-40fa-8668-ef99f753ba45
-description: "Exchange Server 2016 or Exchange Server 2019 Setup can't continue because the account doesn't have permission to install the first Exchange server in the organization."
+ms.date: 8/2/2018
+title: Installation of the first Exchange server in the organization can't be delegated [DelegatedBridgeheadFirstInstall]
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Installation of the first Exchange server in the organization can't be delegated [DelegatedBridgeheadFirstInstall]
@@ -27,3 +29,4 @@ Exchange Setup can't continue because this is the first Exchange server in the o
 To resolve this issue, run Exchange setup again using an account that's a member of the Enterprise Admins security group (add the current account or use a different account).
   
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+

@@ -1,15 +1,17 @@
 ---
-title: "Manage permissions for recipients"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to assign permissions for mailboxes and groups in Exchange Server 2016 or Exchange Server 2019 so other users can open the mailbox, send mail from the mailbox, or send mail from the group.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 749cdfe3-496b-453f-96eb-20a0bf28fd52
-description: "Summary: Learn how to assign permissions for mailboxes and groups in Exchange Server 2016 or Exchange Server 2019 so other users can open the mailbox, send mail from the mailbox, or send mail from the group."
+ms.date: 
+title: Manage permissions for recipients
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage permissions for recipients
@@ -292,3 +294,4 @@ For more information about how delegates can use the permissions that are assign
 - [Open and use a shared mailbox in Outlook on the Web](https://go.microsoft.com/fwlink/p/?LinkId=816870)
 
 - [Send email from another person or group in Outlook on the Web](https://go.microsoft.com/fwlink/p/?LinkId=823180)
+

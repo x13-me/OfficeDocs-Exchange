@@ -1,15 +1,17 @@
 ---
-title: "Move the mailbox database path for a mailbox database copy"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: When moving a mailbox database that has been copied to at least one other location, follow the procedures in this topic to move the path for the copy.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 324f255c-d95d-4a8a-a134-c8cee5c5b9cb
-description: "Summary: When moving a mailbox database that has been copied to at least one other location, follow the procedures in this topic to move the path for the copy."
+ms.date: 7/9/2018
+title: Move the mailbox database path for a mailbox database copy
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Move the mailbox database path for a mailbox database copy
@@ -19,7 +21,7 @@ If the mailbox database being moved is replicated to one or more mailbox databas
 > [!NOTE]
 > After you create a new mailbox database, you can move it to another volume, folder, location, or path by using either the EAC or the Exchange Management Shell. For step-by-step instructions about how to move the database path for a **non-replicated** mailbox database, see [Manage mailbox databases in Exchange Server](../../architecture/mailbox-servers/manage-databases.md).
   
-Looking for other management tasks related to mailbox database copies? Check out [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx).
+Looking for other management tasks related to mailbox database copies? Check out [Managing mailbox database copies](https://docs.microsoft.com/exchange/high-availability/manage-ha/manage-database-copies).
   
 ## What do you need to know before you begin?
 
@@ -118,4 +120,5 @@ To verify that you've successfully moved the path for a mailbox database copy, d
 
     The Status and Content Index State should both be Healthy.
     
+
 

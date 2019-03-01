@@ -1,15 +1,17 @@
 ---
-title: "Set the maximum delivery delay for a Voice Mail Preview partner"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can set the maximum delivery delay for a Voice Mail Preview partner on a Unified Messaging (UM) mailbox policy. After you've set the maximum delivery delay, the setting will apply to all UM-enabled users who are linked with that UM mailbox policy.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: c9a07f6d-6f7f-4036-9a4a-d668d21e2c76
-description: "You can set the maximum delivery delay for a Voice Mail Preview partner on a Unified Messaging (UM) mailbox policy. After you've set the maximum delivery delay, the setting will apply to all UM-enabled users who are linked with that UM mailbox policy."
+ms.date: 11/17/2014
+title: Set the maximum delivery delay for a Voice Mail Preview partner
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Set the maximum delivery delay for a Voice Mail Preview partner
@@ -45,5 +47,6 @@ This example sets the maximum delivery delay to 600 seconds (10 minutes) on a UM
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy - VoiceMailPreviewPartnerMaxDeliveryDelay 600
 ```
+
 
 

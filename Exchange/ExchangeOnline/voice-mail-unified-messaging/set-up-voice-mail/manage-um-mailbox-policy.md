@@ -1,17 +1,19 @@
 ---
-title: "Manage a UM mailbox policy"
-ms.author: tonysmit
-author: tonysmit
-manager: serdars
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMMailboxPolicyGeneralTab'
-ms.service: exchange-online
 localization_priority: Normal
+description: After you create a Unified Messaging (UM) mailbox policy, you can view and configure a variety of settings. For example, you can configure UM features like Voice Mail Preview or Play on Phone and other security-related options such as Protected Voice Mail and PIN policy settings.
+ms.topic: article
+author: tonysmit
+f1_keywords:
+- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMMailboxPolicyGeneralTab
+ms.author: tonysmit
 ms.assetid: 704b001c-3e6f-4ed5-bbe5-42a778f6ac0d
-description: "After you create a Unified Messaging (UM) mailbox policy, you can view and configure a variety of settings. For example, you can configure UM features like Voice Mail Preview or Play on Phone and other security-related options such as Protected Voice Mail and PIN policy settings."
+ms.date: 11/17/2014
+title: Manage a UM mailbox policy
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage a UM mailbox policy
@@ -249,5 +251,6 @@ This example returns the properties and values for a UM mailbox policy named `My
 ```
 Get-UMMailboxPolicy -Identity MyUMMailboxPolicy
 ```
+
 
 

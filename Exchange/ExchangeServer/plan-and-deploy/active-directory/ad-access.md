@@ -1,15 +1,17 @@
 ---
-title: "Access to Active Directory by Exchange servers"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/26/2018
-ms.audience: ITPro
-ms.topic: conceptual
-ms.prod: exchange-server-it-pro
 localization_priority: Priority
+description: 'Summary: Learn how Exchange 2016 and Exchange 2019 retrieve data from Active Directory and how to recover deleted objects.'
+ms.topic: conceptual
+author: chrisda
+ms.author: chrisda
 ms.assetid: 61080b45-8bce-4c23-b744-ed264d5f0b7d
-description: "Summary: Learn how Exchange 2016 and Exchange 2019 retrieve data from Active Directory and how to recover deleted objects."
+ms.date: 7/26/2018
+title: Access to Active Directory by Exchange servers
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Access to Active Directory by Exchange servers

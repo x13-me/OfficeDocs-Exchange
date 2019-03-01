@@ -1,15 +1,17 @@
 ---
-title: "Import address rewrite entries on Edge Transport servers"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/3/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create or import email address rewriting in bulk in Exchange Server.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: bd0942c6-9c66-4b4c-b9bc-2f5f783def76
-description: "Summary: Learn how to create or import email address rewriting in bulk in Exchange Server."
+ms.date: 7/3/2018
+title: Import address rewrite entries on Edge Transport servers
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Import address rewrite entries on Edge Transport servers
@@ -97,5 +99,6 @@ To verify that you have successfully imported address rewrite entries from a CSV
   ```
   Get-AddressRewriteEntry "<AddressRewriteIdentity>" | Format-List
   ```
+
 
 

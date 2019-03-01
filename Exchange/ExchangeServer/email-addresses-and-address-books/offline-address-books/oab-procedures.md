@@ -1,14 +1,16 @@
 ---
-title: "Procedures for offline address books in Exchange Server"
+description: 'Summary: Learn the tasks that administrators need to know to manage offline address books in Exchange Server 2016 and Exchange Server 2019.'
+localization_priority: Normal
 ms.author: chrisda
+ms.topic: article
 author: chrisda
+ms.prod: exchange-server-it-pro
+ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18
+ms.collection: exchange-server
 ms.date: 7/6/2018
 ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
-localization_priority: Normal
-ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18
-description: "Summary: Learn the tasks that administrators need to know to manage offline address books in Exchange Server 2016 and Exchange Server 2019."
+title: Procedures for offline address books in Exchange Server
+
 ---
 
 # Procedures for offline address books in Exchange Server
@@ -414,5 +416,6 @@ To verify that you've successfully assigned an OAB to a mailbox, replace _\<Mail
 ```
 Get-Mailbox -Identity "<MailboxIdentity>" | Format-Table -Auto Name,OfflineAddressBook
 ```
+
 
 

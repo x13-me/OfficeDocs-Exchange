@@ -1,14 +1,16 @@
 ---
-title: "Convert a mailbox in Exchange Server"
-ms.author: chrisda
-author: chrisda
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
+description: 'Summary: Learn about changing a mailbox from one type to another in Exchange Server 2016 or Exchange Server 2019.'
 localization_priority: Normal
+ms.author: chrisda
+ms.topic: article
+author: chrisda
+ms.date:
+ms.prod: exchange-server-it-pro
 ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79
-description: "Summary: Learn about changing a mailbox from one type to another in Exchange Server 2016 or Exchange Server 2019."
+ms.collection: exchange-server
+ms.audience: ITPro
+title: Convert a mailbox in Exchange Server
+
 ---
 
 # Convert a mailbox in Exchange Server
@@ -57,7 +59,7 @@ You can convert the following mailboxes to a different type:
 To convert a mailbox to a different type, use this syntax:
   
 ```
-Set-Mailbox -Identity <MailboxIdentity> -Type <Regular | Room | Equipment | Shared> [-Password (ConvertTo-SecureString -String '<Password>' -AsPlainText -Force)] [-EnableRoomMailboxAccount <$true | $false> [-RoomMailboxPassword (ConvertTo-SecureString -String '<Password>' -AsPlainText -Force)] [-ResetPasswordOnNextLogon <$true | $false>]
+Set-Mailbox -Identity <MailboxIdentity> -Type <Regular | Room | Equipment | Shared> [-Password (ConvertTo-SecureString -String '<Password>' -AsPlainText -Force)] [-EnableRoomMailboxAccount <$true | $false>] [-RoomMailboxPassword (ConvertTo-SecureString -String '<Password>' -AsPlainText -Force)] [-ResetPasswordOnNextLogon <$true | $false>]
 ```
 
 This example converts the shared mailbox named Marketing Dept 01 to a user mailbox with the new password P@ssw0rd25, and the requirement to change the password the next time the user logs in to the mailbox.
@@ -92,4 +94,5 @@ Get-Mailbox -Identity <MailboxIdentity> | Format-List Name,RecipientTypeDetails,
 
 For detailed syntax and parameter information, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
   
+
 

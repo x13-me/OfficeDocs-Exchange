@@ -1,15 +1,17 @@
 ---
-title: "Updates for Exchange Server, Cumulative Updates for Exchange Server, Exchange Server 2016 CU, Cumulative Update Exchange 2016"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/27/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the Cumulative Update strategy and delivery schedule in Exchange Server.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 9c1d8694-bd33-43af-a7ab-4caaada34745
-description: "Summary: Learn about the Cumulative Update strategy and delivery schedule in Exchange Server."
+ms.date: 7/27/2018
+title: Updates for Exchange Server, Cumulative Updates for Exchange Server, Exchange Server 2016 CU, Cumulative Update Exchange 2016
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Updates for Exchange Server
@@ -21,6 +23,7 @@ Because each CU is a full installation of Exchange that includes updates and cha
 ::: moniker range="exchserver-2019"
 |**Version**|**Blog post**|
 |:-----|:-----|
+|Exchange 2019 CU1|[Released: February 2019 Quarterly Exchange Updates](https://blogs.technet.microsoft.com/exchange/2019/02/12/released-february-2019-quarterly-exchange-updates/)|
 |Exchange 2019 RTM|[Exchange Server 2019 Now Available](https://blogs.technet.microsoft.com/exchange/2018/10/22/exchange-server-2019-now-available/)|
 
 For information about the new features you'll get when you upgrade to Exchange 2019 from previous versions of Exchange, see [What's new in Exchange Server](../new-features/new-features.md).
@@ -33,7 +36,8 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 
 |**Version**|**Blog post**|
 |:-----|:-----|
-|Exchange 2016 CU11|[Released: October 2018 Quarterly Exchange Updates](https://www.microsoft.com/download/details.aspx?id=57388)|
+|Exchange 2016 CU12|[Released: February 12, 2019 Exchange Updates](https://blogs.technet.microsoft.com/exchange/2019/02/12/released-february-2019-quarterly-exchange-updates/)|
+|Exchange 2016 CU11|[Released: October 2018 Quarterly Exchange Updates](https://blogs.technet.microsoft.com/exchange/2018/10/16/released-october-2018-quarterly-exchange-updates/)|
 |Exchange 2016 CU10|[Released: June 2018 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=2003013)|
 |Exchange 2016 CU9|[Released: March 2018 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=870404)|
 |Exchange 2016 CU8|[Released: December 2017 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=865293)|
@@ -52,3 +56,4 @@ For information about the new features you'll get when you upgrade to Exchange 2
 - To upgrade to the latest CU after you've downloaded it, see [Upgrade Exchange to the latest Cumulative Update](../plan-and-deploy/install-cumulative-updates.md).
 
 - For downloads and updates for other versions of Exchange, see [Exchange Server Updates: build numbers and release dates](https://go.microsoft.com/fwlink/p/?LinkId=512549).
+

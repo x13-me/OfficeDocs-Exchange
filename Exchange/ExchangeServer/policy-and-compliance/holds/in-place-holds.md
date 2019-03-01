@@ -1,15 +1,17 @@
 ---
-title: "Create or remove an In-Place Hold"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create and remove an In-Place Hold in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 9d5d8d37-a053-4830-9cb1-6e1ede25e963
-description: "Summary: Learn how to create and remove an In-Place Hold in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/6/2018
+title: Create or remove an In-Place Hold
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create or remove an In-Place Hold
@@ -164,4 +166,5 @@ The following illustration shows the subfolders in the Recoverable Items folders
 > [!NOTE]
 > If a mailbox is place on Litigation Hold, purged items are moved to the Purges subfolder and preserved for the hold duration configured for the Litigation Hold.
   
+
 

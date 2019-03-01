@@ -1,15 +1,17 @@
 ---
-title: "Create business hours navigation menus"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can enable business hours key mappings for a Unified Messaging (UM) auto attendant. After you create a UM auto attendant, a default system prompt will be used for the business hours main menu prompt greeting that callers hear after the business hours welcome greeting is played. The default business hours main menu prompt says,Welcome to the Microsoft Exchange auto attendant.Because no key mappings are defined by default, no menu options are available to callers, and they hear only the default main menu prompt.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: f76472fd-aa1a-4cd8-8e26-cc674421d375
-description: "You can enable business hours key mappings for a Unified Messaging (UM) auto attendant. After you create a UM auto attendant, a default system prompt will be used for the business hours main menu prompt greeting that callers hear after the business hours welcome greeting is played. The default business hours main menu prompt says,Welcome to the Microsoft Exchange auto attendant.Because no key mappings are defined by default, no menu options are available to callers, and they hear only the default main menu prompt."
+ms.date: 11/17/2014
+title: Create business hours navigation menus
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Create business hours navigation menus
@@ -82,5 +84,6 @@ This example configures a UM auto attendant named `MyAutoAttendant` and enables 
 ```
 Set-UMAutoAttendant -Identity MyAutoAttendant - BusinessHoursKeyMappingEnabled $true -BusinessHoursKeyMapping "1,Sales,,SalesAutoAttendant","2,Support,12345","3,Directions,,,directions.wav"
 ```
+
 
 

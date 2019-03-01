@@ -1,15 +1,17 @@
 ---
-title: "Configure Deleted Item retention and Recoverable Items quotas"
-ms.author: chrisda
-author: chrisda
-manager: scotv
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to configure the deleted item retention period for a mailbox or mailbox database in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: de7d667a-1c93-4364-a4f9-2aa5e3678b12
-description: "Summary: Learn how to configure the deleted item retention period for a mailbox or mailbox database in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/5/2018
+title: Configure Deleted Item retention and Recoverable Items quotas
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Configure Deleted Item retention and Recoverable Items quotas
@@ -106,4 +108,5 @@ Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -Recoverab
 
 For detailed syntax and parameter information, see [Set-MailboxDatabase](http://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx).
   
+
 

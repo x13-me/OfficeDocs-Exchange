@@ -1,15 +1,17 @@
 ---
-title: "Manage role groups"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to add, remove, copy, and view management role groups in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: dstrome
+ms.author: dstrome
 ms.assetid: ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c
-description: "Summary: Learn how to add, remove, copy, and view management role groups in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/5/2018
+title: Manage role groups
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage role groups
@@ -621,5 +623,6 @@ To verify that you have successfully changed the delegate list on a role group, 
   ```
 
 2. Verify that the delegates listed on the _ManagedBy_ property include only the delegates that should be able to manage the role group.
+
 
 

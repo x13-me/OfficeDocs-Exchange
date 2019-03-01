@@ -1,15 +1,17 @@
 ---
-title: "Configure mobile phones to access email"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to configure a mobile phone or device to use Exchange ActiveSync.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8d6e2cea-265a-43d9-a074-076f35658436
-description: "Summary: Learn how to configure a mobile phone or device to use Exchange ActiveSync."
+ms.date: 7/5/2018
+title: Configure mobile phones to access email
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure mobile phones to access email
@@ -35,4 +37,5 @@ Most mobile phones and devices are capable of using Autodiscover in Exchange to 
     
 If the mobile phone is unable to contact the Exchange server automatically through the Autodiscover service, you'll need to set up the mobile phone manually. Manual setup requires the user's email address and password, as well as the Exchange ActiveSync server name. In most organizations, the Exchange ActiveSync server name is the same as the Outlook on the web server name without the /owa, for example, mail.contoso.com.
   
+
 

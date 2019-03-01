@@ -1,15 +1,17 @@
 ---
-title: "Use Compliance Search to search all mailboxes in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to run a script to create an In-Place eDiscovery search that uses the list of source mailboxes and search query from a Compliance Search.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 9f0f4a3d-de9a-4d8a-9172-2edf4288d766
-description: "Summary: Learn how to run a script to create an In-Place eDiscovery search that uses the list of source mailboxes and search query from a Compliance Search."
+ms.date: 7/6/2018
+title: Use Compliance Search to search all mailboxes in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Use Compliance Search to search all mailboxes in Exchange Server
@@ -274,4 +276,5 @@ After you create and start the In-Place eDiscovery search that was created by th
     
     A window is displayed that contains status information about the export process.
     
+
 

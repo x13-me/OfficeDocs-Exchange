@@ -1,15 +1,17 @@
 ---
-title: "Telephone system integration with UM"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 3/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'To successfully deploy Unified Messaging (UM), you must have a good understanding of basic telephony concepts and telephony components. After you understand telephony basics, you can integrate UM into an Exchange organization. Basic concepts and components include the following:'
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: b8790117-b040-4c84-9d34-005c75088e76
-description: "To successfully deploy Unified Messaging (UM), you must have a good understanding of basic telephony concepts and telephony components. After you understand telephony basics, you can integrate UM into an Exchange organization. Basic concepts and components include the following:"
+ms.date: 3/5/2018
+title: Telephone system integration with UM
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Telephone system integration with UM
@@ -28,10 +30,10 @@ To successfully deploy Unified Messaging (UM), you must have a good understandin
 
 In an on-premises, hybrid, or Office 365 environment, connecting and configuring the required telephony components is the most complex and important step in successfully deploying UM, with or without Lync Server Enterprise Voice. You'll need to connect and configure VoIP gateways, advanced VoIP gateways, PBXs, IP PBXs, and session border controllers (SBCs) for a traditional telephony network and connect to a telephony network if you'll be using Microsoft Lync Server and UM.
 
-Planning and deploying a new deployment of UM or upgrading a legacy voice mail system can pose challenges for organizations. It requires significant knowledge about VoIP gateways, PBXs, IP PBXs, Microsoft Lync Server, and Unified Messaging. Depending on your technical experience with Exchange and voice mail systems, you might want to obtain the assistance of a Unified Messaging specialist. An Exchange Unified Messaging specialist will help make sure that there's a smooth transition from a legacy or third-party voice mail system to Exchange Unified Messaging. For more information about how to contact a Unified Messaging specialist, see [Microsoft Exchange Server 2013 Unified Messaging (UM) Specialists](https://go.microsoft.com/fwlink/p/?LinkId=262708).
+Planning and deploying a new deployment of UM or upgrading a legacy voice mail system can pose challenges for organizations. It requires significant knowledge about VoIP gateways, PBXs, IP PBXs, Microsoft Lync Server, and Unified Messaging. Depending on your technical experience with Exchange and voice mail systems, you might want to obtain the assistance of a Unified Messaging specialist. An Exchange Unified Messaging specialist will help make sure that there's a smooth transition from a legacy or third-party voice mail system to Exchange Unified Messaging.
 
-    > [!NOTE]
-    > Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end in July 2018. Please see the Exchange team blog [Discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/) for more information.
+> [!NOTE]
+> Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs has ended in July 2018. Please see the Exchange team blog [Discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/) for more information.
 
 ## Integrating your telephony network
 
@@ -79,5 +81,6 @@ For more information about Microsoft Lync Server, see [Microsoft Lync Server](ht
 
 > [!CAUTION]
 > When you're integrating Unified Messaging and Lync Server in an on-premises or hybrid deployment, missed call notifications aren't available to users who have a mailbox located on Exchange 2007 or Exchange 2010 Mailbox servers. A missed call notification is generated when a user disconnects before the call is sent to a Mailbox server.
+
 
 

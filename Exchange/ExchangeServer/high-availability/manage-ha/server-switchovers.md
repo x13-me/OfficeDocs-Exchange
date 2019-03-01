@@ -1,15 +1,17 @@
 ---
-title: "Perform a server switchover"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: How to move all active mailbox database copies from their current Mailbox server to one or more other Mailbox servers in an Exchange Server 2016 or Exchange Server 2019 DAG.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ffcefd56-b0a0-4229-9011-fff4197b7c74
-description: "Summary: How to move all active mailbox database copies from their current Mailbox server to one or more other Mailbox servers in an Exchange Server 2016 or Exchange Server 2019 DAG."
+ms.date: 7/9/2018
+title: Perform a server switchover
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Perform a server switchover
@@ -59,4 +61,5 @@ Move-ActiveMailboxDatabase -Server MBX4 -ActivateOnServer MBX5
 
 For detailed syntax and parameter information, see [Move-ActiveMailboxDatabase](http://technet.microsoft.com/library/755d1ecb-95d1-45e3-9a21-56df9f196f37.aspx).
   
+
 

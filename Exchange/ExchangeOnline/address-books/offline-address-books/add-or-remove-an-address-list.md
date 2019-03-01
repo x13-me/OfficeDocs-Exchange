@@ -1,15 +1,17 @@
 ---
-title: "Add an address list to or remove an address list from an offline address book in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to add or remove address lists in offline address books (OABs) in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 86bd5651-ad41-4516-bf23-6579f4e4da03
-description: "Admins can learn how to add or remove address lists in offline address books (OABs) in Exchange Online."
+ms.date: 
+title: Add an address list to or remove an address list from an offline address book in Exchange Online
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Add an address list to or remove an address list from an offline address book in Exchange Online
@@ -56,3 +58,4 @@ To verify that you've successfully added or removed address lists from an OAB, r
 ```
 Get-OfflineAddressBook | Format-List Name,AddressLists
 ```
+

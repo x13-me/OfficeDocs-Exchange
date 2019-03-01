@@ -1,16 +1,19 @@
 ---
-title: "Database availability groups"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn about database availability groups (DAGs) in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: cdaf6096-f23e-4e18-8130-40127e4a97be
-description: "Summary: Learn about database availability groups (DAGs) in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/9/2018
+title: Database availability groups
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Database availability groups
@@ -106,4 +109,5 @@ DAGs with an odd number of members use the failover cluster's Node Majority quor
   
 Quorum requires a majority of voters to be able to communicate with each other. Consider a DAG that has four members. Because this DAG has an even number of members, an external witness server is used to provide one of the cluster members with a fifth, tie-breaking vote. To maintain a majority of voters (and therefore quorum), at least three voters must be able to communicate with each other. At any time, a maximum of two voters can be offline without disrupting service and data access. If three or more voters are offline, the DAG loses quorum, and service and data access will be disrupted until you resolve the problem.
   
+
 

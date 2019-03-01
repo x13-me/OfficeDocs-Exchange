@@ -1,16 +1,19 @@
 ---
-title: "Accessibility for people with disabilities"
-ms.author: serdars
-author: SerdarSoysal
-manager: scotv
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Ent_O365_Hybrid
+description: 'Microsoft is committed to making its products and services easier for everyone to use. The following sections provide information about the features, products, and services that make Microsoft Exchange more accessible for people with disabilities:'
+ms.topic: reference
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
-description: "Microsoft is committed to making its products and services easier for everyone to use. The following sections provide information about the features, products, and services that make Microsoft Exchange more accessible for people with disabilities:"
+ms.date: 6/8/2018
+title: Accessibility for people with disabilities
+ms.collection:
+- Ent_O365_Hybrid
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Accessibility for people with disabilities
@@ -89,5 +92,6 @@ Microsoft Support Services are subject to the prices, terms, and conditions in p
 <a name="BKMK_AccessMS"> </a>
 
 For more information about how accessible technology for computers helps to improve the lives of people with disabilities, see [Microsoft Accessibility](https://go.microsoft.com/fwlink/p/?linkId=18139).
+
 
 
