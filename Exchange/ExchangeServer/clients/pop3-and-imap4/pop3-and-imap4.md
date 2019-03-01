@@ -1,15 +1,17 @@
 ---
-title: "POP3 and IMAP4 in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about support for POP3 and IMAP4 in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: a7dc91ee-2919-4db3-ae9c-cd665d2e09ea
-description: "Summary: Learn about support for POP3 and IMAP4 in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/5/2018
+title: POP3 and IMAP4 in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # POP3 and IMAP4 in Exchange Server
@@ -98,4 +100,5 @@ By default, Exchange uses the following settings for **internal** IMAP4 connecti
     
 To allow **external** IMAP4 clients to connect to mailboxes, you need to configure these settings for external connections. For more information, see [Enable and configure IMAP4 on an Exchange server](configure-imap4.md).
   
+
 

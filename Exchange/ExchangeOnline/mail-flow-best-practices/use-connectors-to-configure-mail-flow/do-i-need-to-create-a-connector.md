@@ -1,17 +1,19 @@
 ---
-title: "Do I need to create a connector in Exchange Online?"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'ms.exch.eac.ConnectorIsConnectorNeeded'
-ms.service: exchange-online
 localization_priority: Normal
+description: Find your mail flow scenario to see if you need to create a connector for your Exchange Online or Exchange Online Protection organization.
+ms.topic: article
+author: chrisda
+f1_keywords:
+- ms.exch.eac.ConnectorIsConnectorNeeded
+ms.author: chrisda
 ms.assetid: 16731ae9-c909-49dd-bffc-a46e6151fc29
-description: "Find your mail flow scenario to see if you need to create a connector for your Exchange Online or Exchange Online Protection organization."
+ms.date: 
+title: Do I need to create a connector in Exchange Online?
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Do I need to create a connector in Exchange Online?
@@ -27,3 +29,4 @@ Find your mail flow scenario to see if you need to create a connector for your E
 
 > [!NOTE]
 > For more information about these scenarios, see [Configure mail flow using connectors in Office 365](use-connectors-to-configure-mail-flow.md).
+

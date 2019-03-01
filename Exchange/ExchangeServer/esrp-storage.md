@@ -1,15 +1,17 @@
 ---
-title: "Exchange Solution Reviewed Program (ESRP) Storage"
-ms.author: serdars
+localization_priority: Priority
+description: The Exchange Solution Reviewed Program (ESRP) Storage is a Microsoft Exchange Server program designed to facilitate third-party storage testing and solution publishing for Exchange Server.
+ms.topic: reference
 author: serdarsoysal
-manager: serdars
+ms.author: serdars
 ms.date: 07/23/2018
+title: Exchange Solution Reviewed Program (ESRP) Storage
+ms.collection: exchange-server
 ms.reviewer: mattgos
 ms.audience: ITPro
-ms.topic: reference
 ms.prod: exchange-server-it-pro
-localization_priority: Priority
-description: "The Exchange Solution Reviewed Program (ESRP) Storage is a Microsoft Exchange Server program designed to facilitate third-party storage testing and solution publishing for Exchange Server."
+manager: serdars
+
 ---
 
 # Exchange Solution Reviewed Program (ESRP) Storage
@@ -574,3 +576,4 @@ IBM System Storage DCS3700 40,000 Mailbox Exchange 2010 Mailbox Resiliency Stora
 [Exchange 2010 mailbox server role requirements calculator](http://gallery.technet.microsoft.com/exchange/exchange-2010-mailbox-server-role-)
 
 [Exchange Server Jetstress 2013 Tool](https://www.microsoft.com/en-us/download/details.aspx?id=36849)
+

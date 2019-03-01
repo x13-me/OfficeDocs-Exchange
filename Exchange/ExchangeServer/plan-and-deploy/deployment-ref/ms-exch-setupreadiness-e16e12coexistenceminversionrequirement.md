@@ -1,17 +1,19 @@
 ---
-title: "Can't install Exchange 2016 or later in a forest that contains Exchange 2007 [E16E12CoexistenceMinVersionRequirement]"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 4/19/2018
-ms.audience: Developer
-ms.topic: reference
-f1_keywords:
-- 'ms.exch.setupreadiness.E16E12CoexistenceMinVersionRequirement'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Setup can't continue because the organization contains one or more Exchange 2007 servers.
+ms.topic: reference
+author: dstrome
+f1_keywords:
+- ms.exch.setupreadiness.E16E12CoexistenceMinVersionRequirement
+ms.author: dstrome
 ms.assetid: 4e1b9510-3188-43eb-9252-7c64cb2bc0e3
-description: "Setup can't continue because the organization contains one or more Exchange 2007 servers."
+ms.date: 4/19/2018
+title: Can't install Exchange 2016 or later in a forest that contains Exchange 2007 [E16E12CoexistenceMinVersionRequirement]
+ms.collection: exchange-server
+ms.audience: Developer
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Can't install Exchange 2016 or later in a forest that contains Exchange 2007 [E16E12CoexistenceMinVersionRequirement]

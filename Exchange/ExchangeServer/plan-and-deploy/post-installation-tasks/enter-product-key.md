@@ -1,18 +1,21 @@
 ---
-title: "Enter your Exchange Server product key"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 6/4/2018
-ms.audience: ITPro
-ms.topic: get-started-article
-f1_keywords:
-- 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.EnterProductKeyWizardForm.EnterProductKeyWizardPage'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+ms.topic: get-started-article
+author: dstrome
+f1_keywords:
+- Microsoft.Exchange.Management.SnapIn.Esm.Servers.EnterProductKeyWizardForm.EnterProductKeyWizardPage
+ms.author: dstrome
 ms.assetid: ccb14685-4bdc-42a4-a985-35cd2a1a415c
-description: "Summary: Learn how to enter the product key after installing Exchange 2016 or Exchange 2019."
+ms.date: 6/4/2018
+description: 'Summary: Learn how to enter the product key after installing Exchange 2016 or Exchange 2019.'
+title: Enter your Exchange Server product key
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Enter your Exchange Server product key
@@ -122,3 +125,4 @@ To verify that you've successfully licensed the Exchange server, do any of the f
     ```
     Get-ExchangeServer | Format-Table -Auto Name,Edition,*Trial*
     ```
+

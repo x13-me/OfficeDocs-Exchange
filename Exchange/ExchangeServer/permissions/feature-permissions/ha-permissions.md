@@ -1,15 +1,17 @@
 ---
-title: "High availability and site resilience permissions"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about permissions that are required to manage high availability in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: reference
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 66085107-4d4d-41c3-a425-82314acd9eee
-description: "Summary: Learn about permissions that are required to manage high availability in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/5/2018
+title: High availability and site resilience permissions
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # High availability and site resilience permissions
@@ -53,4 +55,5 @@ You can use the features in the following table to add, remove, update, and acti
 |Server switchover  <br/> |[Organization Management](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Copies](http://technet.microsoft.com/library/71a95f5b-1f75-4ae9-9ee9-515c3a19d394.aspx) <br/> |
 |Update a mailbox database copy  <br/> |[Organization Management](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Database Copies](http://technet.microsoft.com/library/71a95f5b-1f75-4ae9-9ee9-515c3a19d394.aspx) <br/> |
    
+
 

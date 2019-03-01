@@ -1,15 +1,17 @@
 ---
-title: "Set a business location"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can specify the location of a business on a Unified Messaging (UM) auto attendant so that the location will be played for callers. By default, no business location is entered.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 19bbc20d-d11e-4e75-9bb4-c5d85cf17fc5
-description: "You can specify the location of a business on a Unified Messaging (UM) auto attendant so that the location will be played for callers. By default, no business location is entered."
+ms.date: 11/17/2014
+title: Set a business location
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Set a business location
@@ -50,5 +52,6 @@ This example sets the business location on a UM auto attendant named `MyUMAutoAt
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -BusinessLocation 'Redmond'
 ```
+
 
 

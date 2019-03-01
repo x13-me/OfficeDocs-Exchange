@@ -1,15 +1,17 @@
 ---
-title: "Manage all mailboxes and mail flow using Office 365"
-ms.author: tirich
-author: tirich
-manager: scotv
-ms.date: 1/6/2017
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: How to use hosted mail flow with Office 365.'
+ms.topic: article
+author: tirich
+ms.author: tirich
 ms.assetid: 24cac303-c8de-474b-a894-e42683db30f1
-description: "Summary: How to use hosted mail flow with Office 365."
+ms.date: 1/6/2017
+title: Manage all mailboxes and mail flow using Office 365
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Manage all mailboxes and mail flow using Office 365
@@ -47,7 +49,7 @@ The Office 365 setup wizard walks you through the following steps.
 
     The following DNS records control mail flow:
 
-  - **MX record** - Point your MX record to Office 365 in the following format: \<domainKey\>-com.mail.protection.outlook.com.
+  - **MX record** - Point your MX record to Office 365 in the following format: \<domainKey\>.mail.protection.outlook.com.
 
     For example, the domain contoso.com should have the MX record contoso-com.mail.protection.outlook.com.
 
@@ -73,4 +75,5 @@ For a full list of setup instructions, check out [Set up Office 365 for business
 [Troubleshoot Office 365 mail flow](troubleshoot-mail-flow.md)
 
 [Test mail flow by validating your Office 365 connectors](test-mail-flow.md)
+
 

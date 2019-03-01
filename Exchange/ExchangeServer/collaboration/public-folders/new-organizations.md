@@ -1,15 +1,17 @@
 ---
-title: "Set up public folders in a new organization"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to get public folders configured and running in Exchange Server 2016 or Exchange Server 2019 for a new organization or in an organization that has never previously had public folders.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 7b419906-8977-47f0-8687-a87911b5ebec
-description: "Summary: Learn how to get public folders configured and running in Exchange Server 2016 or Exchange Server 2019 for a new organization or in an organization that has never previously had public folders."
+ms.date: 7/6/2018
+title: Set up public folders in a new organization
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Set up public folders in a new organization
@@ -81,4 +83,5 @@ The public folder will be mail-enabled and the name of the public folder will be
   
 For information about how to use the Exchange Management Shell to mail-enable a public folder, see [Enable-MailPublicFolder](http://technet.microsoft.com/library/6fc7ba9a-62a8-4f41-811f-608363aa1397.aspx).
   
+
 

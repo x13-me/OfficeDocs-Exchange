@@ -1,18 +1,20 @@
 ---
-title: "Fix issues with printers, scanners, and LOB applications that send email using Office 365"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.topic: troubleshooting
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: MiniMaven
+description: 'Fix issues with printers, scanners, and line of business applications that use Office 365 to send email. '
+ms.topic: troubleshooting
+author: chrisda
+ms.author: chrisda
+ms.assetid: c75542a8-c792-42c0-a8c5-291df987512d
+title: Fix issues with printers, scanners, and LOB applications that send email using Office 365
+ms.collection: exchange-online
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: c75542a8-c792-42c0-a8c5-291df987512d
-description: "Fix issues with printers, scanners, and line of business applications that use Office 365 to send email. "
+ms.custom: MiniMaven
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Fix issues with printers, scanners, and LOB applications that send email using Office 365
@@ -169,4 +171,5 @@ Office 365 SMTP relay requires your device to send email from a static IP addres
 ## See also
 
 [How to configure IIS for relay with Office 365](how-to-configure-iis-for-relay-with-office-365.md)
+
 

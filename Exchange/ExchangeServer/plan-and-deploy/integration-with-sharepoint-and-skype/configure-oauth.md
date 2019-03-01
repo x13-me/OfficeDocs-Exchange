@@ -1,16 +1,19 @@
 ---
-title: "Configure OAuth authentication with SharePoint 2013 and Lync 2013"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how to use the Open Authorization (OAuth) authentication protocol to authenticate applications to Exchange. The other applications need to be configured as partner applications in Exchange 2016.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ca3c78a3-80cc-4df2-859f-0106bbd57a07
-description: "Summary: Learn how to use the Open Authorization (OAuth) authentication protocol to authenticate applications to Exchange. The other applications need to be configured as partner applications in Exchange 2016."
+ms.date: 6/8/2018
+title: Configure OAuth authentication with SharePoint 2013 and Lync 2013
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure OAuth authentication with SharePoint 2013 and Lync 2013
@@ -68,4 +71,5 @@ To verify that you have successfully configured an enterprise partner applicatio
     
 - In on-premises deployments, you can configure server-to-server authentication between Exchange 2016 and SharePoint 2016 so administrators and compliance officers can search Exchange 2016 by using the SharePoint 2016 eDiscovery Center.. For more information, see [Configure Exchange for SharePoint eDiscovery Center](http://technet.microsoft.com/library/795c1a3b-295c-4ee5-ade9-52cf3fda3f19.aspx).
     
+
 

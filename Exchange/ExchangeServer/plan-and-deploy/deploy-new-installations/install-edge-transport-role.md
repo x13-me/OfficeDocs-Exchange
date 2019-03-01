@@ -1,16 +1,19 @@
 ---
-title: "Install Exchange Edge Transport servers using the Setup wizard"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/24/2018
-ms.audience: ITPro
-ms.topic: get-started-article
-ms.prod: exchange-server-it-pro
 localization_priority: Priority
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how to use the Setup wizard in Exchange 2016 or Exchange 2019 to install the Edge Transport server role on a computer.'
+ms.topic: get-started-article
+author: chrisda
+ms.author: chrisda
 ms.assetid: b8e51b0b-201e-4c64-92c8-3ac0db04b6e2
-description: "Summary: Learn how to use the Setup wizard in Exchange 2016 or Exchange 2019 to install the Edge Transport server role on a computer."
+ms.date: 7/24/2018
+title: Install Exchange Edge Transport servers using the Setup wizard
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Install Exchange Edge Transport servers using the Setup wizard
@@ -115,3 +118,4 @@ To install the Mailbox role on a computer, see [Install Exchange Mailbox servers
 - Complete your deployment by performing the tasks provided in [Exchange post-installation tasks](../../plan-and-deploy/post-installation-tasks/post-installation-tasks.md).
 
 - Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+

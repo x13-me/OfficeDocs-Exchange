@@ -1,15 +1,17 @@
 ---
-title: "Configure MAPI over HTTP in Exchange Server"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/10/2018
-ms.audience: ITPro
-ms.topic: get-started-article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to enable or disable MAPI over HTTP in your Exchange 2016 or Exchange 2019 organization.'
+ms.topic: get-started-article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 2c07b1e6-8d07-4e73-8800-b306e2266c7d
-description: "Summary: Learn how to enable or disable MAPI over HTTP in your Exchange 2016 or Exchange 2019 organization."
+ms.date: 7/10/2018
+title: Configure MAPI over HTTP in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure MAPI over HTTP in Exchange Server
@@ -147,4 +149,5 @@ You can manage the configuration of MAPI over HTTP by using the following cmdlet
     
 - [Remove-MapiVirtualDirectory](http://technet.microsoft.com/library/eff7df8c-3c92-4004-89dd-0a06511e8668.aspx)
     
+
 

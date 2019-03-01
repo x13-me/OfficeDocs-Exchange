@@ -1,16 +1,19 @@
 ---
-title: "Create a recovery database"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Step-by-step guidance for creating a recovery database in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 34d87491-b7b7-44a9-8d69-e1a9c1fe5852
-description: "Summary: Step-by-step guidance for creating a recovery database in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/9/2018
+title: Create a recovery database
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create a recovery database
@@ -60,4 +63,5 @@ To verify that you've successfully created a recovery database, do the following
 
 After you create a recovery database, you may also want to restore data using a recovery database. For detailed steps, see [Restore data using a recovery database](restore-data-using-recovery-dbs.md).
   
+
 

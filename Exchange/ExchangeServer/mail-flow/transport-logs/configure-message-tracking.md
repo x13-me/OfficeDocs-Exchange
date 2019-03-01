@@ -1,15 +1,17 @@
 ---
-title: "Configure message tracking"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to configure message tracking in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 50eb5213-cf27-4179-b427-38d751ee4a70
-description: "Summary: Learn how to configure message tracking in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/6/2018
+title: Configure message tracking
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure message tracking
@@ -107,4 +109,5 @@ Get-TransportService [<ServerIdentity> ] | Format-List MessageTrackingLog*
 
 You can also open the location of the message tracking log in Windows Explorer or File Explorer to verify that the log files exist, that data is being written to the files, and that they're being recycled based on the maximum file size and maximum directory size values that you configured.
   
+
 

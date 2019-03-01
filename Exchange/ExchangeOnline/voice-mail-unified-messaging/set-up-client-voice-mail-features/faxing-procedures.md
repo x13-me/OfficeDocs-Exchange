@@ -1,15 +1,17 @@
 ---
-title: "Faxing procedures"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Set the partner fax server URI to allow faxing
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 6732a834-c9d2-4757-8ad9-44aeff6be9f7
-description: "Set the partner fax server URI to allow faxing"
+ms.date: 11/17/2014
+title: Faxing procedures
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Faxing procedures
@@ -29,5 +31,6 @@ description: "Set the partner fax server URI to allow faxing"
 [Enable a user to receive faxes](enable-a-user-to-receive-faxes.md)
 
 [Prevent a user from receiving faxes](prevent-a-user-from-receiving-faxes.md)
+
 
 

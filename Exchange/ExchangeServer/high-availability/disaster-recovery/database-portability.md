@@ -1,15 +1,17 @@
 ---
-title: "Move a mailbox database using database portability"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Database portability is a feature that enables an Exchange Server 2016 or Exchange 2019 mailbox database to be moved to or mounted on any other Mailbox server in the same organization running Exchange 2016 or Exchange 2019 respectively, provided the target Mailbox server has databases with the same database schema version.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a765ead1-43bc-4786-ae93-1835cacfc8fc
-description: "Summary: Database portability is a feature that enables an Exchange Server 2016 or Exchange 2019 mailbox database to be moved to or mounted on any other Mailbox server in the same organization running Exchange 2016 or Exchange 2019 respectively, provided the target Mailbox server has databases with the same database schema version."
+ms.date: 7/9/2018
+title: Move a mailbox database using database portability
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Move a mailbox database using database portability
@@ -88,4 +90,5 @@ To verify that you've successfully moved a mailbox, do the following:
     
 - Open the mailbox using Microsoft Outlook.
     
+
 

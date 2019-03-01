@@ -1,15 +1,17 @@
 ---
-title: "Manage health sets and server health"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Exchange Management Shell cmdlets that can help you monitor the health of your Exchange organization.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a4f84312-6cfa-4f17-9707-676aadab1143
-description: "Summary: Exchange Management Shell cmdlets that can help you monitor the health of your Exchange organization."
+ms.date: 6/8/2018
+title: Manage health sets and server health
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage health sets and server health
@@ -103,4 +105,5 @@ Get-ServerHealth -HealthSet <HealthSetName> -Server <ServerName> | Format-Table 
 
 For detailed syntax and parameter information, see [Get-ServerHealth](http://technet.microsoft.com/library/ca9cff3a-ecda-422d-abd7-b7d8da71a6c7.aspx).
   
+
 

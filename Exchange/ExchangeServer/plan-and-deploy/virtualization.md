@@ -1,16 +1,19 @@
 ---
-title: "Exchange Server virtualization"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: conceptual
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: How to use hardware virtualization software with Exchange 2016 and Exchange 2019.'
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 36184b2f-4cd9-48f8-b100-867fe4c6b579
-description: "Summary: How to use hardware virtualization software with Exchange 2016 and Exchange 2019."
+ms.date: 6/8/2018
+title: Exchange Server virtualization
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Exchange Server virtualization
@@ -107,3 +110,4 @@ The following are answers to some frequently asked questions about host-based fa
 - **What does Microsoft mean by migration support?**
 
     Migration technology refers to any technology that allows a planned move of a virtual machine from one host machine to another host machine. This move could also be an automated move that occurs as part of resource load balancing, but it isn't related to a failure in the system. Migrations are supported as long as the virtual machines never come up from a saved state that's persisted on disk. This means that technology that moves a virtual machine by transporting the state and virtual machine memory over the network with no perceived downtime is supported for use with Exchange. A third-party hypervisor vendor must provide support for the migration technology, while Microsoft provides support for Exchange when used in this configuration.
+

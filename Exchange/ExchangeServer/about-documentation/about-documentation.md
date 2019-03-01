@@ -1,16 +1,19 @@
 ---
-title: "About Exchange documentation"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 6/7/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Ent_O365_Hybrid
+description: You're reading a collection of conceptual and procedural topics organized by subject or by technologies used by Microsoft Exchange. You can access each topic directly from the table of contents in the left pane, from a link in another Help topic, from the results of a search, or from your own custom list of favorite topics.
+ms.topic: reference
+author: dstrome
+ms.author: dstrome
 ms.assetid: cbc07e0d-2884-4e5d-8065-39b7f6299b9b
-description: "You're reading a collection of conceptual and procedural topics organized by subject or by technologies used by Microsoft Exchange. You can access each topic directly from the table of contents in the left pane, from a link in another Help topic, from the results of a search, or from your own custom list of favorite topics."
+ms.date: 6/7/2018
+title: About Exchange documentation
+ms.collection:
+- Ent_O365_Hybrid
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # About Exchange documentation
@@ -42,5 +45,6 @@ Looking for more than just documentation? Check out these other Exchange resourc
 - [Support for Microsoft Exchange Server](https://go.microsoft.com/fwlink/p/?LinkId=283967): Check out this page for support resources for multiple versions of Exchange.
 
 - [Accessibility for people with disabilities](accessibility.md) : This topic provides important information about features, products, and services that help make Microsoft Exchange more accessible for people with disabilities.
+
 
 

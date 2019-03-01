@@ -1,15 +1,17 @@
 ---
-title: "Transport logs in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about transport logging in Exchange Server 2016 and Exchange Server 2019 and the kinds of logs and information that is logged.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: f8cf635d-60c2-4aa3-9c06-244c29942cba
-description: "Summary: Learn about transport logging in Exchange Server 2016 and Exchange Server 2019 and the kinds of logs and information that is logged."
+ms.date: 7/6/2018
+title: Transport logs in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Transport logs in Exchange Server
@@ -188,4 +190,5 @@ Routing table logging periodically records snapshots of the routing table that E
     
 - **Transport service on Edge Transport servers**: `%ExchangeInstallPath%TransportRoles\Logs\Edge\Routing`
     
+
 

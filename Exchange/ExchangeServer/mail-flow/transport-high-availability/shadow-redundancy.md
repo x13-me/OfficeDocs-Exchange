@@ -1,15 +1,17 @@
 ---
-title: "Shadow redundancy in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/10/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn how shadow redundancy in Exchange 2016 and Exchange 2019 improves high availability for messages in the transport pipeline.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: a40dbe61-2a18-48a8-b2e0-4e81a6678d11
-description: "Learn how shadow redundancy in Exchange 2016 and Exchange 2019 improves high availability for messages in the transport pipeline."
+ms.date: 7/10/2018
+title: Shadow redundancy in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Shadow redundancy in Exchange Server
@@ -179,4 +181,5 @@ This table summarizes how shadow redundancy minimizes message loss due to server
 |Mailbox01 comes back online with a new queue database before the value of the _ShadowResubmitTimeSpan_ parameter has passed (by default, 3 hours).  <br/> This scenario can occur when the queue database is unrecoverable due to data corruption or hardware failure.  <br/> |When the new queue database ID is detected on Mailbox01, each server that has shadow messages queued for Mailbox01 will assume ownership of those messages and resubmit them. The messages are then delivered to their destinations.  <br/> The maximum delay for message submission after the new queue database is detected is the value of the _ShadowHeartbeatFrequency_ parameter (by default, 2 minutes).  <br/> |
 |Mailbox01 comes back online with the same database after the value of the _ShadowResubmitTimeSpan_ parameter has passed (by default, 3 hours)..  <br/> This scenario can occur after a network card failure, or time-consuming maintenance on the server.  <br/> |After Mailbox01 comes back online, it will deliver the messages in its queues, which have already been delivered by the servers that hold shadow copies of messages for Mailbox01. This will result in duplicate delivery of these messages. Exchange mailbox users won't see duplicate messages due to duplicate message detection. However, recipients on other messaging systems might see duplicate copies of messages.  <br/> The maximum delay for message submission is the value of the _ShadowResubmitTimeSpan_ parameter.  <br/> |
    
+
 

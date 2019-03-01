@@ -1,15 +1,17 @@
 ---
-title: "Activate a mailbox database copy"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: How to designate a passive copy of an Exchange Server 2016 or Exchange Server 2019 mailbox database as the new active copy.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d948269b-c902-4d8d-8c2b-269473359baa
-description: "Summary: How to designate a passive copy of an Exchange Server 2016 or Exchange Server 2019 mailbox database as the new active copy."
+ms.date: 7/9/2018
+title: Activate a mailbox database copy
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Activate a mailbox database copy
@@ -107,4 +109,5 @@ To verify that you've successfully activated a mailbox database copy, do one of 
   
 [Configure mailbox database copy properties](configure-db-properties.md)
   
+
 

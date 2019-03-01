@@ -1,15 +1,17 @@
 ---
-title: "Configure activation policy for a mailbox database copy"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: About activation policies in Exchange Server, and how to configure them on mailbox database copies.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 6b37ed6e-2e36-4688-b485-8fdbb8193ec8
-description: "Summary: About activation policies in Exchange Server, and how to configure them on mailbox database copies."
+ms.date: 7/9/2018
+title: Configure activation policy for a mailbox database copy
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure activation policy for a mailbox database copy
@@ -98,5 +100,6 @@ To verify that you've successfully configured the activation policy, do one of t
   ```
   Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
   ```
+
 
 

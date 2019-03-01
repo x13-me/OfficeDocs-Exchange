@@ -1,15 +1,17 @@
 ---
-title: "High availability and site resilience"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the high availability and site resilience capabilities available in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b1704c87-5f5c-464e-9dc5-1bb1bdf9ac2a
-description: "Summary: Learn about the high availability and site resilience capabilities available in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/9/2018
+title: High availability and site resilience
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # High availability and site resilience
@@ -176,4 +178,5 @@ The following table contains links to topics that will help you learn about and 
 |[Monitor database availability groups](manage-ha/monitor-dags.md) <br/> |Learn about the built-in cmdlets and scripts for monitoring DAGs and database copies.  <br/> |
 |[Backup, restore, and disaster recovery](disaster-recovery/disaster-recovery.md) <br/> |Learn about backing up and restoring Exchange databases, recovery databases, and server recovery.  <br/> |
  
+
 

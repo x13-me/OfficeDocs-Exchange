@@ -1,15 +1,17 @@
 ---
-title: "Configure client-specific message size limits"
-ms.author: chrisda
-author: chrisda
-manager: scotv
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to configure message size limits for Exchange ActiveSync, Exchange Web Services, and Outlook on the web clients in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: fef9ca78-b68f-4342-ada0-881ab985ce3c
-description: "Summary: Learn how to configure message size limits for Exchange ActiveSync, Exchange Web Services, and Outlook on the web clients in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/5/2018
+title: Configure client-specific message size limits
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Configure client-specific message size limits
@@ -201,4 +203,5 @@ Instead of using Notepad, you can also configure the client-specific message siz
 
 To verify that you have successfully configured the client-specific message size limit, you need to send a test message to and from a mailbox by using the affected client. You can try a few smaller attachments or one large attachment so the test messages are approximately 33% less than the value you configured. For example, a configured value of 85 MB results in a realistic maximum message size of approximately 64 MB.
   
+
 

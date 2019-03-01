@@ -1,15 +1,17 @@
 ---
-title: "Enable or disable mailbox audit logging for a mailbox"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to configure mailbox audit logging on mailboxes in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: c4bbfd52-6196-49c7-8c31-777fbbee11f2
-description: "Summary: Learn how to configure mailbox audit logging on mailboxes in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 6/8/2018
+title: Enable or disable mailbox audit logging for a mailbox
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Enable or disable mailbox audit logging for a mailbox
@@ -133,5 +135,6 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
   ```
   Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -AuditLogAgeLimit 60
   ```
+
 
 

@@ -1,15 +1,17 @@
 ---
-title: "Use Windows Server Backup to restore a backup of Exchange"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 2/19/2016
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Step-by-step guidance for restoring Exchange data from a previous back up.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 2d0f31dc-eb32-451a-8852-591269026506
-description: "Summary: Step-by-step guidance for restoring Exchange data from a previous back up."
+ms.date: 2/19/2016
+title: Use Windows Server Backup to restore a backup of Exchange
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Use Windows Server Backup to restore a backup of Exchange
@@ -74,4 +76,5 @@ The **Recovery Progress** page will indicate whether or not the recovery process
     
 - Open Event Viewer and verify that a restore completion event was logged in the Application event log.
     
+
 

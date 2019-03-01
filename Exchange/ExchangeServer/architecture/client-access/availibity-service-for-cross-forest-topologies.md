@@ -1,15 +1,17 @@
 ---
-title: "Configure the Availability service for cross-forest topologies"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to use and configure the Availability service in cross-forest topologies in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f1e7d407-f0d3-47a7-8cc3-03c5980445d5
-description: "Summary: Learn how to use and configure the Availability service in cross-forest topologies in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/5/2018
+title: Configure the Availability service for cross-forest topologies
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure the Availability service for cross-forest topologies
@@ -96,5 +98,6 @@ This example adds the Availability address space configuration object for the so
 ```
 Add-AvailabilityAddressspace -Forestname Contoso.com -Accessmethod OrgWideFB -Credential (Get-Credential)
 ```
+
 
 

@@ -1,22 +1,24 @@
 ---
-title: "Add an SSL certificate to Exchange 2007"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/16/2018
-ms.audience: Admin
-ms.topic: get-started-article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: get-started-article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: d4524743-a63f-413f-b290-5f0d2f070392
+ms.date: 8/16/2018
+description: Steps to add an SSL certificate to Exhcange 2007,
+title: Add an SSL certificate to Exchange 2007
+ms.collection: exchange-online
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - MBS150
 - BCS160
-ms.assetid: d4524743-a63f-413f-b290-5f0d2f070392
-description: "Steps to add an SSL certificate to Exhcange 2007,"
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Add an SSL certificate to Exchange 2007
@@ -102,4 +104,5 @@ After you receive the certificate from the CA, use the [Import-ExchangeCertifica
 <a name="BK_import"> </a>
 
 [Blog article on adding an SSL to Exchange Server 2007](https://go.microsoft.com/fwlink/p/?LinkId=615759)
+
 

@@ -1,17 +1,19 @@
 ---
-title: "Primary DNS Suffix is missing [ms.exch.setupreadiness.FqdnMissing]"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 8/3/2018
-ms.audience: ITPro
-ms.topic: reference
-f1_keywords:
-- 'ms.exch.setupreadiness.FqdnMissing'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Exchange Server 2016 or Exchange Server 2019 Setup can't continue because the primary DNS suffix hasn't been configured on the target server.
+ms.topic: reference
+author: chrisda
+f1_keywords:
+- ms.exch.setupreadiness.FqdnMissing
+ms.author: chrisda
 ms.assetid: 310765bf-a650-4a3d-a5e4-6173b559d4f6
-description: "Exchange Server 2016 or Exchange Server 2019 Setup can't continue because the primary DNS suffix hasn't been configured on the target server."
+ms.date: 8/3/2018
+title: Primary DNS Suffix is missing [ms.exch.setupreadiness.FqdnMissing]
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Primary DNS Suffix is missing [ms.exch.setupreadiness.FqdnMissing]
@@ -32,3 +34,4 @@ Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters 
 > Changing the computer name or primary DNS suffix after you install Exchange isn't supported.
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+

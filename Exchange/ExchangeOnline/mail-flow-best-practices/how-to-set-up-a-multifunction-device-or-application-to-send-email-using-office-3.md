@@ -1,20 +1,22 @@
 ---
-title: "How to set up a multifunction device or application to send email using Office 365"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: MiniMaven
+ms.topic: article
+author: chrisda
+ms.author: chrisda
+ms.assetid: 69f58e99-c550-4274-ad18-c805d654b4c4
+ms.date: 
+description: 'Learn how to set up printers, scanners, LOB applications to send email using Office 365. '
+title: How to set up a multifunction device or application to send email using Office 365
+ms.collection: exchange-online
 search.appverid:
 - BCS160
 - MOE150
 - MET150
-ms.assetid: 69f58e99-c550-4274-ad18-c805d654b4c4
-description: "Learn how to set up printers, scanners, LOB applications to send email using Office 365. "
+ms.audience: Admin
+ms.custom: MiniMaven
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # How to set up a multifunction device or application to send email using Office 365
@@ -328,3 +330,4 @@ If you have mailboxes in Office 365 and an email server that you manage (also ca
 [Fix issues with printers, scanners, and LOB applications that send email using Office 365](fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off.md)
 
 [How to configure IIS for relay with Office 365](how-to-configure-iis-for-relay-with-office-365.md)
+
