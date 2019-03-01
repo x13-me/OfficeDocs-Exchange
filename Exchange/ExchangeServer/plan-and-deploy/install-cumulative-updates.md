@@ -50,7 +50,7 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 
 - Test the new update in a non-production environment first to avoid any problems in the new update affecting the running production environment.
 
-- Have a tested and working backup of both the Active Directory(ies) and your Exchange Server(s).
+- Have a tested and working backup of both the Active Directory and your Exchange Server.
 
 - Backup any and all customizations. They will not survive the update.
 
