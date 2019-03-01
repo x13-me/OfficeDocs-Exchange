@@ -59,14 +59,14 @@ For additional management tasks related to users who are enabled for voice mail,
 
 ## Use Exchange Online PowerShell to remove the primary or a secondary SIP address
 
-This example removes the SIP address tsmith@contoso.com from the mailbox of Tony Smith, a UM-enabled user.
+This example removes the SIP address which is second in the list of available addresses from the mailbox of Tony Smith, a UM-enabled user.
 
 > [!NOTE]
 > Before you remove a SIP address using Exchange Online PowerShell, you need to determine the position of the EUM proxy address that you want to modify. To determine the position, use the **$mbx.EmailAddresses** command. The first EUM proxy address in the list will be 0.
 
 ```
 $mbx = Get-Mailbox tony.smith
-$mbx.EmailAddresses.Item(1) -="eum:tsmith@contoso.com;phone-context=MyDialPlan.contoso.com"
+$mbx.EmailAddresses.Remove($mbx.EmailAddresses.Item(1))
 Set-Mailbox tony.smith -EmailAddresses $mbx.EmailAddresses
 ```
 
