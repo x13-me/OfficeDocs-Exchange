@@ -542,7 +542,6 @@ Data loss prevention (DLP) capabilities help you protect your sensitive data and
 To learn more, see [Data loss prevention in Exchange 2016](../policy-and-compliance/data-loss-prevention/data-loss-prevention.md)
 
 #### Mail flow rules (transport rules)
-<a name="DLP2010"> </a>
 
 You can use Exchange mail flow rules (also known as transport rules) to look for specific conditions in messages that pass through your organization and take action on them. For example, your organization might require that certain types of messages are blocked or rejected in order to meet legal or compliance requirements, or to implement specific business needs. Mail flow rules are similar to the Inbox rules that are available in Outlook. The main difference between mail flow rules and Inbox rules is that mail flow rules take action on messages while they're in transit as opposed to after the message is delivered. Mail flow rules also contain a richer set of conditions, exceptions, and actions, which gives you the flexibility to implement many types of messaging policies.
 

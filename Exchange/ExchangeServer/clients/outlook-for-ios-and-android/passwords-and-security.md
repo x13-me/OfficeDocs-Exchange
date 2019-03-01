@@ -5,7 +5,7 @@ ms.topic: overview
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 82f23054-5433-41da-ac5b-90cd081aa993
-ms.date: 6/8/2018
+ms.date:
 title: Passwords and security in Outlook for iOS and Android for Exchange Server
 ms.collection: exchange-server
 ms.reviewer: smithre4
@@ -16,6 +16,11 @@ manager: serdars
 ---
 
 # Passwords and security in Outlook for iOS and Android for Exchange Server
+
+This article describes how passwords and security work in Outlook for iOS and Android with Exchange Server when using Basic authentication with the Exchange ActiveSync protocol.
+
+> [!IMPORTANT]
+> Outlook for iOS and Android supports hybrid Modern Authentication for on-premises mailboxes which eliminates the need to leverage basic authentication. The information contained in this article only pertains to basic authentication. For more information, please see [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
 
 ## Creating an account and protecting passwords
 

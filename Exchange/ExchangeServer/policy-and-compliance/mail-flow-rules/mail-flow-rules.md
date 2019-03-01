@@ -16,13 +16,13 @@ manager: serdars
 
 # Mail flow rules in Exchange Server
 
-You can use mail flow rules (also known as transport rules) to identify and take action on messages that flow through the transport pipeline in your Exchange 2016 and Exchange 2019 organization. Transport rules are similar to the Inbox rules that are available in Outlook and Outlook on the web (formerly known as Outlook Web App). The main difference is transport rules take action on messages while they're in transit, and not after the message is delivered to the mailbox. Transport rules contain a richer set of conditions, exceptions, and actions, which provides you with the flexibility to implement many types of messaging policies.
+You can use mail flow rules (also known as transport rules) to identify and take action on messages that flow through the transport pipeline in your Exchange 2016 and Exchange 2019 organization. Mail flow rules are similar to the Inbox rules that are available in Outlook and Outlook on the web (formerly known as Outlook Web App). The main difference is mail flow rules take action on messages while they're in transit, and not after the message is delivered to the mailbox. Mail flow rules contain a richer set of conditions, exceptions, and actions, which provides you with the flexibility to implement many types of messaging policies.
   
-This article explains the [components](#mail-flow-rule-components) of transport rules, and [how they work](#how-mail-flow-rules-are-applied).
+This article explains the [components](#mail-flow-rule-components) of mail flow rules, and [how they work](#how-mail-flow-rules-are-applied).
   
-You can use the Exchange admin center (EAC) or the Exchange Management Shell to manage mail flow rules. For instructions on how to manage transport rules, see [Procedures for mail flow rules in Exchange Server](mail-flow-rule-procedures.md).
+You can use the Exchange admin center (EAC) or the Exchange Management Shell to manage mail flow rules. For instructions on how to manage mail flow rules, see [Procedures for mail flow rules in Exchange Server](mail-flow-rule-procedures.md).
   
- For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test a transport rule](http://technet.microsoft.com/library/3d949e2a-8ba4-4261-8cfb-736fd2446ea1.aspx) and [Policy Tips](http://technet.microsoft.com/library/4266b83c-dd8a-4b3d-99ff-402e68fc810c.aspx).
+ For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test a mail flow rule](http://technet.microsoft.com/library/3d949e2a-8ba4-4261-8cfb-736fd2446ea1.aspx) and [Policy Tips](http://technet.microsoft.com/library/4266b83c-dd8a-4b3d-99ff-402e68fc810c.aspx).
   
 For steps to implement specific messaging policies, see the following topics:
   
@@ -92,7 +92,7 @@ For more information about transport agents, see [Transport Agents](http://techn
 ### Differences in processing based on message type
 <a name="MessageType"> </a>
 
-There are several types of messages that flow through an organization. The following table shows which messages types can be processed by transport rules.
+There are several types of messages that flow through an organization. The following table shows which messages types can be processed by mail flow rules.
   
 ****
 
@@ -131,9 +131,9 @@ There are two mixed environment scenarios that are common:
     
     **Important**: Even though there is a substantial overlap between the conditions and actions that are available in Office 365 and Exchange Server, there are differences. If you plan on creating the same rule in both locations, make sure that all conditions and actions you plan to use are available. To see the list of available conditions and actions that are available in Office 365, see the following topics:
     
-    [Transport Rule Conditions](http://technet.microsoft.com/library/7235e5ed-f7f4-41b1-b1a0-47bb96223a2f.aspx)
+    [Mail flow rule conditions and exceptions (predicates) in Exchange Online](http://technet.microsoft.com/library/7235e5ed-f7f4-41b1-b1a0-47bb96223a2f.aspx)
     
-    [Transport Rule Actions](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx)
+    [Mail flow rule actions in Exchange Online](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx)
     
 - **Coexistence with Exchange 2010**
     
