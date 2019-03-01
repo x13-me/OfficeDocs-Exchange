@@ -41,6 +41,29 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
+## Best Practices
+
+- Always keep your servers as up to date as possible. This especially applies to the installation of a new server.
+
+- Always install the latest Cumulative Update when creating a new server.
+
+- There is no need to install the RTM build or previous builds and then upgrade to the latest Cumulative Update. This is because    each Cumulative Update is a full build of the product.
+
+- Reboot the server beforehand.
+
+- Test the new update in a non-production environment first to avoid any problems in the new update affecting the running production environment.
+
+- Have a tested and working backup of both the Active Directory and your Exchange Server.
+
+- Backup any and all customizations. They will not survive the update.
+
+- Use an elevated command prompt to run the Cumulative Update.
+
+- Temporarily disable any anti-virus software during the update process.
+
+- Reboot your server upon completion of the update.
+
+
 ## Install an Exchange CU using the Setup wizard
 
 1. Download the latest version of Exchange on the target computer. For more information, see [Updates for Exchange Server](../new-features/updates.md).
