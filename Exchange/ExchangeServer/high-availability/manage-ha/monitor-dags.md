@@ -1,15 +1,17 @@
 ---
-title: "Monitor database availability groups"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Resources and methods for monitoring the health and status of DAGs in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f5bdfd6e-e93c-4d96-8bc2-548750d51930
-description: "Summary: Resources and methods for monitoring the health and status of DAGs in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/9/2018
+title: Monitor database availability groups
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Monitor database availability groups
@@ -247,5 +249,6 @@ The following example reads the data from all the files matching CounterData\* a
 ```
 CollectReplicationMetrics.ps1 -SummariseFiles (dir CounterData*) -Mode ProcessOnly -ReportPath
 ```
+
 
 

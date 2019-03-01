@@ -1,15 +1,17 @@
 ---
-title: "Mailbox database copies"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: What you should know about mailbox database copies in Exchange Server 2016 and Exchange Server 2019, and your options when creating them.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ce748bca-3e24-493b-b9e6-153157bffd6a
-description: "Summary: What you should know about mailbox database copies in Exchange Server 2016 and Exchange Server 2019, and your options when creating them."
+ms.date: 7/9/2018
+title: Mailbox database copies
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Mailbox database copies
@@ -59,4 +61,5 @@ Optionally, you can also specify:
 - _SeedingPostponed_: This parameter specifies that the task shouldn't automatically seed the database copy on the specified Mailbox server. This option is typically used when you intend to seed a new mailbox database copy by using an existing passive copy of the database (for example, adding a second copy of a specific database to a remote location). When you use this parameter, you must manually seed the database copy using the [Update-MailboxDatabaseCopy](http://technet.microsoft.com/library/37ebb66a-382e-4fd9-81f8-795f776a87b1.aspx) cmdlet.
     
 For more information about creating, using, and managing mailbox database copies, see [Managing mailbox database copies](https://docs.microsoft.com/en-us/exchange/high-availability/manage-ha/manage-database-copies?view=exchserver-2019)
+
 

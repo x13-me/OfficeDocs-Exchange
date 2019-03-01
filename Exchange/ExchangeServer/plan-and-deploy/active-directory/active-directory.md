@@ -1,16 +1,19 @@
 ---
-title: "Active Directory in Exchange organizations"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/26/2018
-ms.audience: ITPro
-ms.topic: conceptual
-ms.prod: exchange-server-it-pro
 localization_priority: Priority
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how Exchange 2016 and Exchange 2019 interact with Active Directory.'
+ms.topic: conceptual
+author: chrisda
+ms.author: chrisda
 ms.assetid: 8e8464df-2d1d-4d68-82de-b0c158c549c3
-description: "Summary: Learn how Exchange 2016 and Exchange 2019 interact with Active Directory."
+ms.date: 7/26/2018
+title: Active Directory in Exchange organizations
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Active Directory in Exchange Server organizations
@@ -34,3 +37,4 @@ To learn more about how Exchange stores and retrieves information in Active Dire
 For more information about Active Directory forest design, see [AD DS Design Guide](https://go.microsoft.com/fwlink/p/?LinkId=264957).
   
 To learn more about computers running Windows in an Active Directory domain and deploying Exchange 2013 or later in a domain that has a disjoint namespace, see [Disjoint Namespace Scenarios](https://technet.microsoft.com/library/bb676377(v=exchg.150).aspx).
+

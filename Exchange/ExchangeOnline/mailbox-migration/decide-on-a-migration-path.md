@@ -1,21 +1,23 @@
 ---
-title: "Decide on a migration path"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/15/2018
-ms.audience: Admin
-ms.topic: conceptual
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 0d4f2396-9cef-43b8-9bd6-306d01df1e27
+ms.date: 8/15/2018
+description: Deciding on the best migration path of your users' email to Office 365 can be difficult. This article gives guidance based on your current email system and other factors, such as how quickly you want to migrate to Office 365. Your migration performance will vary based on your network, mailbox size, migration speed, and so on.
+title: Decide on a migration path
+ms.collection: exchange-online
 search.appverid:
 - MET150
 - MOE150
 - MBS150
 - BCS160
-ms.assetid: 0d4f2396-9cef-43b8-9bd6-306d01df1e27
-description: "Deciding on the best migration path of your users' email to Office 365 can be difficult. This article gives guidance based on your current email system and other factors, such as how quickly you want to migrate to Office 365. Your migration performance will vary based on your network, mailbox size, migration speed, and so on."
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Decide on a migration path
@@ -111,5 +113,6 @@ You can also hire a partner to help you migrate your email data. You'll find a l
 <a name="BKMK_Comment"> </a>
 
 Were these instructions helpful? If so, please let us know at the bottom of this topic. If they weren't, and you're still having trouble deciding on a migration strategy, tell us what source email system you want to migrate from and we'll use your feedback to improve our content.
+
 
 

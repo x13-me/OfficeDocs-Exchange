@@ -1,15 +1,17 @@
 ---
-title: "Specify the administrators and users who can install and manage add-ins for Outlook"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can specify which administrators in your organization have permissions to install and manage add-ins for Outlook. You can also specify which users in your organization have permission to install and manage add-ins for their own use.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 7ee4302d-b8bb-40a0-9810-10d3a0271bcb
-description: "You can specify which administrators in your organization have permissions to install and manage add-ins for Outlook. You can also specify which users in your organization have permission to install and manage add-ins for their own use."
+ms.date: 
+title: Specify the administrators and users who can install and manage add-ins for Outlook
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Specify the administrators and users who can install and manage add-ins for Outlook
@@ -80,3 +82,4 @@ Get-ManagementRoleAssignment -Role "Org Marketplace Apps" -GetEffectiveUsers
 In the results, review the entries in the **Effective Users** column.
 
 For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/a3a6ee46-061b-444a-8639-43a416309445.aspx).
+

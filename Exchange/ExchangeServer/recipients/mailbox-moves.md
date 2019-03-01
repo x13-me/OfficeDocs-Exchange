@@ -1,15 +1,17 @@
 ---
-title: "Mailbox moves in Exchange Server"
-ms.author: dmaguire
-author: msdmaguire
-manager: scotv
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about moving and migrating mailboxes in Exchange Server 2016 and Exchange Server 2019, and the enhanced capabilities in the batch move architecture.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9c0a0bc9-2a39-4cf0-aa6e-6e5ef3fd38b5
-description: "Summary: Learn about moving and migrating mailboxes in Exchange Server 2016 and Exchange Server 2019, and the enhanced capabilities in the batch move architecture."
+ms.date: 7/5/2018
+title: Mailbox moves in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Mailbox moves in Exchange Server
@@ -90,4 +92,5 @@ The Mailbox Replication Service Proxy (MRS Proxy) facilitates cross-forest mailb
     
 For more information, see [Enable the MRS Proxy endpoint for remote moves](../architecture/mailbox-servers/mrs-proxy-endpoint.md).
   
+
 

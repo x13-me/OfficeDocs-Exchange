@@ -1,16 +1,19 @@
 ---
-title: "Import or install a certificate on an Exchange server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how to import (install) a certificate on Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 43fbe354-ccfc-45b0-9fbc-4b23c6c5ccf4
-description: "Summary: Learn how to import (install) a certificate on Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/5/2018
+title: Import or install a certificate on an Exchange server
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Import or install a certificate on an Exchange server
@@ -120,4 +123,5 @@ To verify that you have successfully imported (installed) a certificate on an Ex
 
 After you install the certificate on the server, you need to assign the certificate to one or more Exchange services before the Exchange server is able to use the certificate for encryption. For more information, see [Assign certificates to Exchange Server services](assign-certificates-to-services.md).
   
+
 

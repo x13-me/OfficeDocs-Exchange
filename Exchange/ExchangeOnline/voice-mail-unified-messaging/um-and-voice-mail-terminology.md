@@ -1,15 +1,17 @@
 ---
-title: "UM and voice mail terminology"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: This topic contains the terms and definitions that are used with Unified Messaging.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 3a6d93f2-1802-4aed-8b83-35c7fd004d0c
-description: "This topic contains the terms and definitions that are used with Unified Messaging."
+ms.date: 6/24/2018
+title: UM and voice mail terminology
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # UM and voice mail terminology
@@ -253,5 +255,6 @@ VoIP gateway
 welcome greeting
 
 > A greeting that is played when an external caller calls in to a UM auto attendant or when an Outlook Voice Access user or another caller calls a subscriber access number that is configured on a UM dial plan. The default welcome greetings can be changed by a customer to make them specific to an organization or location.
+
 
 

@@ -1,15 +1,17 @@
 ---
-title: "Procedures for messages in queues"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.assetid: 83358884-6036-4e91-87a8-35200541874d
 description: Learn how to remove, suspend, resume, and redirect messages in queues in Exchange 2016 and Exchange 2019."
+ms.topic: article
+author: chrisda
+ms.author: chrisda
+ms.assetid: 83358884-6036-4e91-87a8-35200541874d
+ms.date: 7/11/2018
+title: Procedures for messages in queues
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Procedures for messages in queues
@@ -305,5 +307,6 @@ To verify that you have successfully redirected messages in queues, use either o
   ```
   Get-Queue
   ```
+
 
 

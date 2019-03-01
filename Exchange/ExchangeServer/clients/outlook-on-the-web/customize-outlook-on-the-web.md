@@ -1,15 +1,17 @@
 ---
-title: "Customize the Outlook on the web sign-in, language selection, and error pages in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: scotv
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to customize the color and images of the sign-in, language selection, and error pages for Outlook on the web in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: d8d9f735-7181-428f-9049-b9886dce5159
-description: "Summary: Learn how to customize the color and images of the sign-in, language selection, and error pages for Outlook on the web in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/6/2018
+title: Customize the Outlook on the web sign-in, language selection, and error pages in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Customize the Outlook on the web sign-in, language selection, and error pages in Exchange Server
@@ -98,4 +100,5 @@ To verify that you've successfully customized the Outlook on the web sign-in, la
     
  **Note**: To see the effects of your changes, you can keep the .css file open and refresh the browser window after you save each change.
   
+
 

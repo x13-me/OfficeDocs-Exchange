@@ -1,15 +1,17 @@
 ---
-title: "Recover a database availability group member server, recover Exchange DAG member, Exchange DAG server recovery, DAG server recovery, Exchange DAG failover"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: How to recover an Exchange DAG member after a failure in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: eccd8f61-9706-4bb7-a62a-ec7c166f8019
-description: "Summary: How to recover an Exchange DAG member after a failure in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 
+title: Recover a database availability group member server, recover Exchange DAG member, Exchange DAG server recovery, DAG server recovery, Exchange DAG failover
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Recover a database availability group member server
@@ -106,4 +108,5 @@ To verify that you've successfully recovered the DAG member, do the following:
 
     All of the replication health tests should pass successfully, and the status of databases and their content indexes should be healthy.
     
+
 

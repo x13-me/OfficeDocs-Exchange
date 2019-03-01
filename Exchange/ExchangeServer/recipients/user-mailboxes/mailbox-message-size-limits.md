@@ -1,15 +1,17 @@
 ---
-title: "Configure message size limits for a mailbox"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: How to use the Exchange admin center (EAC) and the Exchange Management Shell to set message size limits for a user mailbox.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d1220685-14c0-4c4f-abb2-3920f3046212
-description: "Summary: How to use the Exchange admin center (EAC) and the Exchange Management Shell to set message size limits for a user mailbox."
+ms.date: 7/5/2018
+title: Configure message size limits for a mailbox
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure message size limits for a mailbox
@@ -81,5 +83,6 @@ Run the following command in the Exchange Management Shell.
 ```
 Get-Mailbox -Identity <Identity> | Format-List MaxSendSize,MaxReceiveSize
 ```
+
 
 

@@ -1,14 +1,16 @@
 ---
-title: "Procedures for mailbox exports to .pst files in Exchange Server"
+description: 'Summary: Learn how administrators can view, create, modify, delete, suspend and resume requests to export mailboxes to .pst files in Exchange Server 2016 or Exchange Server 2019.'
+localization_priority: Normal
 ms.author: chrisda
+ms.topic: article
 author: chrisda
+ms.prod: exchange-server-it-pro
+ms.assetid: 8c578226-ce38-4f33-846a-9f47c0177def
+ms.collection: exchange-server
 ms.date: 7/5/2018
 ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
-localization_priority: Normal
-ms.assetid: 8c578226-ce38-4f33-846a-9f47c0177def
-description: "Summary: Learn how administrators can view, create, modify, delete, suspend and resume requests to export mailboxes to .pst files in Exchange Server 2016 or Exchange Server 2019."
+title: Procedures for mailbox exports to .pst files in Exchange Server
+
 ---
 
 # Procedures for mailbox exports to .pst files in Exchange Server
@@ -338,5 +340,6 @@ To verify that you've successfully removed a mailbox export request, replace _\<
 ```
 Get-MailboxExportRequest -Mailbox <MailboxIdentity> | Format-List Name,FilePath,Mailbox,Status
 ```
+
 
 

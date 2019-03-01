@@ -1,18 +1,21 @@
 ---
-title: "Change the offline address book generation schedule in Exchange"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 6/7/2018
-ms.audience: ITPro
-ms.topic: get-started-article
-f1_keywords:
-- 'Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.OfflineAddressBookGeneralPage'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+ms.topic: get-started-article
+author: chrisda
+f1_keywords:
+- Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.OfflineAddressBookGeneralPage
+ms.author: chrisda
 ms.assetid: d2b4d527-311e-442d-9f1f-54fac8371b80
-description: "Summary: Learn how to configure the offline address book (OAB) update interval in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 6/7/2018
+description: 'Summary: Learn how to configure the offline address book (OAB) update interval in Exchange Server 2016 or Exchange Server 2019.'
+title: Change the offline address book generation schedule in Exchange
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Change the offline address book generation schedule in Exchange
@@ -115,4 +118,5 @@ To verify that you've configured the OAB generation schedule on one or more Exch
 ## See also
 
 [Procedures for offline address books in Exchange Server](../../email-addresses-and-address-books/offline-address-books/oab-procedures.md)
+
 

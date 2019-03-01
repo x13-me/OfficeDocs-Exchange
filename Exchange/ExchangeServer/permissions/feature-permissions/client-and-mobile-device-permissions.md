@@ -1,15 +1,17 @@
 ---
-title: "Clients and mobile devices permissions"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about permissions that are required to perform tasks for clients and mobile devices in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: reference
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 57eca42a-5a7f-4c65-89f0-7a84f2dbea19
-description: "Summary: Learn about permissions that are required to perform tasks for clients and mobile devices in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/5/2018
+title: Clients and mobile devices permissions
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Clients and mobile devices permissions
@@ -187,4 +189,5 @@ Users who are assigned the View-Only Management role group can view the configur
 |Text messaging settings  <br/> |[Recipient Management](http://technet.microsoft.com/library/669d602e-68e3-41f9-a455-b942d212d130.aspx) <br/> |
 |Text messaging user settings  <br/> |[Recipient Management](http://technet.microsoft.com/library/669d602e-68e3-41f9-a455-b942d212d130.aspx) <br/> |
    
+
 

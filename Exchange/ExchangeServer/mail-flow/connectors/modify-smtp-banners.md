@@ -1,15 +1,17 @@
 ---
-title: "Modify the SMTP banner on Receive connectors"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn how to modify the connection response that messaging servers receive after connecting to an Exchange server 2016 or 2019.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: d667704e-fd69-4aca-9c35-eef7006944b2
-description: "Learn how to modify the connection response that messaging servers receive after connecting to an Exchange server 2016 or 2019."
+ms.date: 7/6/2018
+title: Modify the SMTP banner on Receive connectors
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Modify the SMTP banner on Receive connectors
@@ -77,4 +79,5 @@ To verify that you have successfully modified the SMTP banner on a Receive conne
     
 Note that this procedure only works on Receive connectors that allow anonymous or Basic authentication. For more information, see [Use Telnet to test SMTP communication on Exchange servers](../../mail-flow/test-smtp-with-telnet.md).
   
+
 

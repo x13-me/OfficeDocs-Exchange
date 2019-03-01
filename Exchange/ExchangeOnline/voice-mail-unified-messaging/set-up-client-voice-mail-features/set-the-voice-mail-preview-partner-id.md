@@ -1,15 +1,17 @@
 ---
-title: "Set the Voice Mail Preview partner ID"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can set a Voice Mail Preview partner ID on a Unified Messaging (UM) mailbox policy. After you've set the Voice Mail Preview partner ID on a UM mailbox policy, the setting will apply to all UM-enabled users who are linked with that mailbox policy.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: ab98c320-9952-47a7-b141-ddfc2c0ad419
-description: "You can set a Voice Mail Preview partner ID on a Unified Messaging (UM) mailbox policy. After you've set the Voice Mail Preview partner ID on a UM mailbox policy, the setting will apply to all UM-enabled users who are linked with that mailbox policy."
+ms.date: 11/17/2014
+title: Set the Voice Mail Preview partner ID
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Set the Voice Mail Preview partner ID
@@ -46,5 +48,6 @@ This example sets the Voice Mail Preview partner ID to CON123-2010 on a UM mailb
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy
 -VoiceMailPreviewPartnerAssignedID CON123-2010
 ```
+
 
 

@@ -1,16 +1,18 @@
 ---
-title: "What's new in Exchange Server"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 9/20/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Critical
+description: 'Summary: Learn about the new features that are available in Exchange Server 2016 and Exchange Server 2019 when you upgrade from previous versions of Exchange.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 97501135-2149-4590-8373-98e638ac8eb1
-description: "Summary: Learn about the new features that are available in Exchange Server 2016 and Exchange Server 2019 when you upgrade from previous versions of Exchange."
-monikerRange: "exchserver-2016 || exchserver-2019"
+monikerRange: exchserver-2016 || exchserver-2019
+title: What's new in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.date: 9/20/2018
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # What's new in Exchange Server
@@ -540,7 +542,6 @@ Data loss prevention (DLP) capabilities help you protect your sensitive data and
 To learn more, see [Data loss prevention in Exchange 2016](../policy-and-compliance/data-loss-prevention/data-loss-prevention.md)
 
 #### Mail flow rules (transport rules)
-<a name="DLP2010"> </a>
 
 You can use Exchange mail flow rules (also known as transport rules) to look for specific conditions in messages that pass through your organization and take action on them. For example, your organization might require that certain types of messages are blocked or rejected in order to meet legal or compliance requirements, or to implement specific business needs. Mail flow rules are similar to the Inbox rules that are available in Outlook. The main difference between mail flow rules and Inbox rules is that mail flow rules take action on messages while they're in transit as opposed to after the message is delivered. Mail flow rules also contain a richer set of conditions, exceptions, and actions, which gives you the flexibility to implement many types of messaging policies.
 
@@ -842,3 +843,4 @@ There are two ways to manage Exchange workloads in Exchange 2016:
 
 For more information about these features, see [User workload management in Exchange 2016](../server-health/workload-management.md).
 ::: moniker-end
+

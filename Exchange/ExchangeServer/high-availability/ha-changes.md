@@ -1,15 +1,17 @@
 ---
-title: "Changes to high availability and site resilience over previous versions of Exchange Server"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/13/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: An overview of enhancements and additions to high availability and site resilience capabilities since Exchange 2010.
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: de53c00b-091c-4a31-aacc-1bd40c756ce2
-description: "An overview of enhancements and additions to high availability and site resilience capabilities since Exchange 2010."
+ms.date: 7/13/2018
+title: Changes to high availability and site resilience over previous versions of Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Changes to high availability and site resilience over previous versions of Exchange Server
@@ -315,5 +317,6 @@ Windows Server 2012 R2 or later enables you to create a failover cluster without
 - You can't manage the Windows failover cluster using the Failover Cluster Management tool. Instead, you need to use Windows PowerShell and you need to run the PowerShell cmdlets against the individual cluster members.
 
 Exchange 2013 SP1 or later running on Exchange on Windows Server 2012 R2 or later enables you to create a DAG without a cluster administrative access point. For more information, see [Creating DAGs](manage-ha/manage-dags.md#creating-dags) and [Create a database availability group](manage-ha/create-dags.md).
+
 
 

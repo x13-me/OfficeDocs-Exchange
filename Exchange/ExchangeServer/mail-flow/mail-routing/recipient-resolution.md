@@ -1,15 +1,17 @@
 ---
-title: "Recipient resolution in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about recipient resolution in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 09deda5a-d405-45b1-a3ff-fefd3d76cdea
-description: "Summary: Learn about recipient resolution in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/6/2018
+title: Recipient resolution in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Recipient resolution in Exchange Server
@@ -300,4 +302,5 @@ The log files are stored at `%ExchangeInstallPath%Logging\Resolver`.
 > [!NOTE]
 > Any customized Exchange or Internet Information Server (IIS) settings that you made in Exchange XML application configuration files on the Exchange server (for example, web.config files or the EdgeTransport.exe.config file) **will be overwritten** when you install an Exchange CU. Be sure save this information so you can easily re-apply the settings after the install. After you install the Exchange CU, you need to re-configure these settings.
   
+
 

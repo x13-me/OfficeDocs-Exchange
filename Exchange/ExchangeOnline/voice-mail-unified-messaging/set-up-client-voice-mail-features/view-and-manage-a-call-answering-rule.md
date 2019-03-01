@@ -1,15 +1,17 @@
 ---
-title: "View and manage a call answering rule"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 4/8/2015
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to use Exchange Online PowerShell to view or configure one or more call answering rules for a user.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: de6d9fa1-7878-49a9-bddb-e3317d94f4d8
-description: "Learn how to use Exchange Online PowerShell to view or configure one or more call answering rules for a user."
+ms.date: 4/8/2015
+title: View and manage a call answering rule
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # View and manage a call answering rule
@@ -101,5 +103,6 @@ This example changes the free/busy status to Away on the call answering rule `My
 ```
 Set-UMCallAnsweringRule -Name MyCallAnsweringRule -Priority 2 -Mailbox tonysmith@contoso.com -ScheduleStatus 0x8
 ```
+
 
 

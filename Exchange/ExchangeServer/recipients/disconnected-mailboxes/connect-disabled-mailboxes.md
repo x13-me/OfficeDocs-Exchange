@@ -1,15 +1,17 @@
 ---
-title: "Connect a disabled mailbox"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how you can use the Exchange admin center(EAC) or the Exchange Management Shell in Exchange to connect a disabled mailbox to an Active Directory user account.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: a8abd399-75fd-4ee2-b2e4-634b55e4f79f
-description: "Summary: Learn how you can use the Exchange admin center(EAC) or the Exchange Management Shell in Exchange to connect a disabled mailbox to an Active Directory user account."
+ms.date: 7/5/2018
+title: Connect a disabled mailbox
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Connect a disabled mailbox
@@ -115,4 +117,5 @@ To verify that you've successfully connected a disabled mailbox to a user accoun
 
     The **UserMailbox** value for the _RecipientType_ property indicates that the user account and the mailbox are connected. You can also run the **Get-Mailbox** cmdlet to verify that the mailbox exists.
     
+
 

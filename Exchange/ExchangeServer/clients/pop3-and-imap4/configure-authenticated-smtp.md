@@ -1,15 +1,17 @@
 ---
-title: "Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to configure the authenticated SMTP settings on an Exchange server 2016 or 2019 that are required by POP3 or IMAP4 clients to send email messages.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: bd22bf7e-3bf7-45e6-8790-919b780166f6
-description: "Summary: Learn how to configure the authenticated SMTP settings on an Exchange server 2016 or 2019 that are required by POP3 or IMAP4 clients to send email messages."
+ms.date: 7/5/2018
+title: Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure authenticated SMTP settings for POP3 and IMAP4 clients in Exchange Server
@@ -185,4 +187,5 @@ To verify that you've configured the authenticated SMTP settings on the Exchange
     
     **Note**: You can't use POP3 or IMAP4 to connect to the Administrator mailbox. This limitation was intentionally included in Exchange 2016 and Exchange 2019 to enhance the security of the Administrator mailbox.
     
+
 

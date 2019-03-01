@@ -1,15 +1,17 @@
 ---
-title: "Exchange Server data protection, Exchange disaster recovery, Exchange backup, Exchange VSS Writer, VSS Backup Exchange, Exchange Server data recovery, Exchange data recovery"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: An overview of Exchange features you can use to protect your data.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 34351f2f-ab6c-4267-91be-4f9649338275
-description: "Summary: An overview of Exchange features you can use to protect your data."
+ms.date: 
+title: Exchange Server data protection, Exchange disaster recovery, Exchange backup, Exchange VSS Writer, VSS Backup Exchange, Exchange Server data recovery, Exchange data recovery
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Backup, restore, and disaster recovery
@@ -122,4 +124,5 @@ The process for using dial tone portability is called a *dial tone recovery*. A 
   
 For more information, see [Dial tone portability](dial-tone-portability.md). For detailed steps to perform a dial tone recovery, see [Perform a dial tone recovery](dial-tone-recovery.md).
   
+
 

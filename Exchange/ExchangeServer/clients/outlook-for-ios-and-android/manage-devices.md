@@ -1,16 +1,18 @@
 ---
-title: "Managing devices for Outlook for iOS and Android for Exchange Server"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: This article describes how to manage mobile devices with Outlook for iOS and Android in your Exchange on-premises organization when using Basic authentication with the Exchange ActiveSync protocol.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8c566e98-72d8-4174-87fb-d0771c14f0dd
-description: "Summary: This article describes how to manage mobile devices with Outlook for iOS and Android in your Exchange on-premises organization when using Basic authentication with the Exchange ActiveSync protocol."
+ms.date: 7/5/2018
+title: Managing devices for Outlook for iOS and Android for Exchange Server
+ms.collection: exchange-server
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Managing devices for Outlook for iOS and Android for Exchange Server
@@ -87,4 +89,5 @@ Yes, Outlook for Android supports device encryption via Exchange mobile device m
   
 Even if the Android device is unencrypted and an attacker is in possession of the device, as long as a device PIN is enabled, the Outlook database remains inaccessible. This is true even with USB debugging enabled and the Android SDK installed. If an attacker attempts to root the device to bypass the PIN to gain access to this information, the rooting process wipes all device storage and removes all Outlook data. If the device is unencrypted and rooted by the user prior to being stolen, it is possible for an attacker to gain access to the Outlook database by enabling USB debugging on the device and plugging the device into a computer with the Android SDK installed.
   
+
 

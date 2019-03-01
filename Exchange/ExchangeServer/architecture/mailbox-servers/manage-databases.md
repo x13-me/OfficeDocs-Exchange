@@ -1,15 +1,17 @@
 ---
-title: "Manage mailbox databases in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/3/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to perform configuration tasks related to managing your mailbox databases in Exchange Server.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: ead4a96b-1717-435b-bcfc-9901ac4e3b58
-description: "Summary: Learn how to perform configuration tasks related to managing your mailbox databases in Exchange Server."
+ms.date: 7/3/2018
+title: Manage mailbox databases in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage mailbox databases in Exchange Server
@@ -234,4 +236,5 @@ To verify that you have successfully removed the mailbox database, do the follow
     
 - Verify that the mailbox database has been removed.
     
+
 

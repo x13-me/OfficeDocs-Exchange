@@ -1,15 +1,17 @@
 ---
-title: "UM IP gateway procedures"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Create a UM IP gateway
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 298e51f5-9e42-4395-b9ea-6f16c28a8422
-description: "Create a UM IP gateway"
+ms.date: 11/17/2014
+title: UM IP gateway procedures
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # UM IP gateway procedures
@@ -29,5 +31,6 @@ description: "Create a UM IP gateway"
 [Configure the listening port](configure-listening-port.md)
 
 [Delete a UM IP gateway](delete-um-ip-gateway.md)
+
 
 

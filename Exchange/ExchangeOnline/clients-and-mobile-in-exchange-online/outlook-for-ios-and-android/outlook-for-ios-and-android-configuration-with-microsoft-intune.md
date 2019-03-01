@@ -1,16 +1,18 @@
 ---
-title: "Deploying Outlook for iOS and Android app configuration settings"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: How to customize the behavior of Outlook for iOS and Android in your Exchange organization.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: e8a034f6-39b8-4dea-a3bc-9421aaa75d1d
-description: "Summary: How to customize the behavior of Outlook for iOS and Android in your Exchange organization."
+ms.date: 
+title: Deploying Outlook for iOS and Android app configuration settings
+ms.collection: exchange-online
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Deploying Outlook for iOS and Android app configuration settings
@@ -174,3 +176,4 @@ You assign the settings to groups of users in Azure Active Directory. When a use
 3. On the next blade, choose **Assignments**.
 
 4. On the **Assignments** blade, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.
+

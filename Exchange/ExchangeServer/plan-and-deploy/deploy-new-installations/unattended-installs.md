@@ -1,16 +1,19 @@
 ---
-title: "Use unattended mode in Exchange Setup"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: get-started-article
-ms.prod: exchange-server-it-pro
 localization_priority: Priority
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how to install, uninstall, upgrade, and recover Exchange 2016 or Exchange 2019 from the command line.'
+ms.topic: get-started-article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 386465e9-41da-4e26-9816-b3b69be1f8bf
-description: "Summary: Learn how to install, uninstall, upgrade, and recover Exchange 2016 or Exchange 2019 from the command line."
+ms.date: 
+title: Use unattended mode in Exchange Setup
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Use unattended mode in Exchange Setup
@@ -232,3 +235,4 @@ For more information, see [Delegate the installation of Exchange servers](delega
 - Complete your deployment by performing the tasks provided in [Exchange post-installation tasks](../../plan-and-deploy/post-installation-tasks/post-installation-tasks.md).
 
 - Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+

@@ -1,15 +1,17 @@
 ---
-title: "Configure database availability group network properties"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 6/7/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Each database availability group (DAG) network has several properties that you can configure.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 41197639-988f-476c-9788-51d5191a7dce
-description: "Summary: Each database availability group (DAG) network has several properties that you can configure."
+ms.date: 6/7/2018
+title: Configure database availability group network properties
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure database availability group network properties
@@ -78,4 +80,5 @@ To verify that you've successfully configured the DAG network, do the following:
   
 [Remove-DatabaseAvailabilityGroupNetwork](http://technet.microsoft.com/library/8da3ddc3-72e0-4c1b-8d3f-848c3ab5584e.aspx)
   
+
 

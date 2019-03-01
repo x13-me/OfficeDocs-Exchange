@@ -1,15 +1,17 @@
 ---
-title: "Voice Mail Preview procedures"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Configure Voice Mail Preview partner services for users
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 3154be11-1a9d-4e51-a2d0-592ddbcca7b1
-description: "Configure Voice Mail Preview partner services for users"
+ms.date: 11/17/2014
+title: Voice Mail Preview procedures
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Voice Mail Preview procedures
@@ -27,5 +29,6 @@ description: "Configure Voice Mail Preview partner services for users"
 [Enable Voice Mail Preview for users](enable-voice-mail-preview.md)
 
 [Disable Voice Mail Preview for users](disable-voice-mail-preview.md)
+
 
 

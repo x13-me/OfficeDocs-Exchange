@@ -1,14 +1,16 @@
 ---
-title: "Disable or delete a mailbox in Exchange Server"
+description: 'Summary: Learn how to disable or delete a mailbox in Exchange Server 2016 or Exchange Server 2019.'
+localization_priority: Normal
 ms.author: chrisda
+ms.topic: article
 author: chrisda
+ms.prod: exchange-server-it-pro
+ms.assetid: 31ad25d6-2942-4fd9-aecb-cdf9654163d2
+ms.collection: exchange-server
 ms.date: 7/5/2018
 ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
-localization_priority: Normal
-ms.assetid: 31ad25d6-2942-4fd9-aecb-cdf9654163d2
-description: "Summary: Learn how to disable or delete a mailbox in Exchange Server 2016 or Exchange Server 2019."
+title: Disable or delete a mailbox in Exchange Server
+
 ---
 
 # Disable or delete a mailbox in Exchange Server
@@ -218,4 +220,5 @@ When you delete the Active Directory user account that's associated with a mailb
     
 For more information, see [In-Place Hold and Litigation Hold in Exchange Server](../../policy-and-compliance/holds/holds.md).
   
+
 

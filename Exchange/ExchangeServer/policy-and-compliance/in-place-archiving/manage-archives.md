@@ -1,15 +1,17 @@
 ---
-title: "Manage In-Place Archives in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to enable, disable, and re-enable archive mailboxes in Exchange Server, and how to verify the archive mailbox settings for a user.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 49ef4a3e-d209-4fb2-80a3-6132b0f69bd0
-description: "Summary: Learn how to enable, disable, and re-enable archive mailboxes in Exchange Server, and how to verify the archive mailbox settings for a user."
+ms.date: 7/6/2018
+title: Manage In-Place Archives in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage In-Place Archives in Exchange Server
@@ -207,4 +209,5 @@ Get-Mailbox "Chris Ashton" | Format-List *Archive*
 
 As previously stated, if you re-enable an archive mailbox within 30 days of disabling it, the user will be able to access the original contents of their archive mailbox. If you re-enable the archive more than 30 days after disabling it, the new archive mailbox will be empty the first time the user accesses it.
   
+
 

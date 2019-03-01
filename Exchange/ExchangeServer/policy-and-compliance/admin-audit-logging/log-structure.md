@@ -1,15 +1,17 @@
 ---
-title: "Administrator audit log structure"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the contents of the administrator audit log in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 87e259c9-c884-4d53-bd78-d13f2300d73e
-description: "Summary: Learn about the contents of the administrator audit log in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/8/2018
+title: Administrator audit log structure
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Administrator audit log structure
@@ -78,4 +80,5 @@ Based on the information in this log entry, we know the following occurred:
   
 - The operation completed successfully without any errors.
     
+
 
