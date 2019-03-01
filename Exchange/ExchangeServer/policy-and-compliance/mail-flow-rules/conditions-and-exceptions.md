@@ -22,7 +22,7 @@ Most conditions and exceptions have one property that requires one or more value
   
 For more information about mail flow rules in Exchange Server, see [Mail flow rules in Exchange Server](mail-flow-rules.md).
   
-For more information about conditions and exceptions in mail flow rules in Exchange Online Protection or Exchange Online, see [Transport rule predicates](http://technet.microsoft.com/library/7235e5ed-f7f4-41b1-b1a0-47bb96223a2f.aspx) or [Transport rule predicates](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx).
+For more information about conditions and exceptions in mail flow rules in Exchange Online Protection or Exchange Online, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
   
 ## Conditions and exceptions for mail flow rules on Mailbox servers
 
@@ -249,9 +249,4 @@ The property types that are used in conditions and exceptions are described in t
 
 [Mail flow rule actions in Exchange Server](actions.md)
   
-[Transport rule conditions (predicates)](http://technet.microsoft.com/library/7235e5ed-f7f4-41b1-b1a0-47bb96223a2f.aspx) for Exchange Online 
-  
-[Transport rule conditions (predicates)](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx) for Exchange Online Protection 
-  
-
-
+[Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)

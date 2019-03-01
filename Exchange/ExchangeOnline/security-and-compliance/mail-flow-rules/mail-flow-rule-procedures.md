@@ -30,7 +30,7 @@ You can begin using mail flow rules (also known as transport rules) in Exchange 
 
 Topics related to preventing spam:
 
-[Create a transport rule that sets the Spam Confidence Level (SCL) of a message](https://docs.microsoft.com/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages)
+[Use mail flow rules to set the spam confidence level (SCL) in messages](https://docs.microsoft.com/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages)
 
 [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md)
 

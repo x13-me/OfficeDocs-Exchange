@@ -22,7 +22,7 @@ Message tracking records the message activity as mail flows through the transpor
   
 - Find out what happened to a message that was sent by a user to a specific recipient.
     
-- Find out if a transport rule acted on a message.
+- Find out if a mail flow rule (also known as a transport rule) acted on a message.
     
 - Find out if a message sent from an Internet sender made it into your Exchange organization.
     
