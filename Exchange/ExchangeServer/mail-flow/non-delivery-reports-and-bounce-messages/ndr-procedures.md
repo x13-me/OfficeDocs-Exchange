@@ -24,7 +24,7 @@ You can use the default NDRs that are included in Exchange, or you can use the E
 
 - Estimated time to complete each procedure: less than 10 minutes.
     
-- The main focus of this topic is custom NDR text that replaces the text of default NDRs that are used by Exchange. You can create new NDRs for other enhanced status code values (for example, 5.999.999), but no one will see these NDRs if the enhanced status code isn't used by Exchange. You can use a range of custom enhanced status codes as part of an action for a transport rule. For more information, see [Mail flow rule actions in Exchange Server](../../policy-and-compliance/mail-flow-rules/actions.md).
+- The main focus of this topic is custom NDR text that replaces the text of default NDRs that are used by Exchange. You can create new NDRs for other enhanced status code values (for example, 5.999.999), but no one will see these NDRs if the enhanced status code isn't used by Exchange. You can use a range of custom enhanced status codes as part of an action for a mail flow rule (also known as a transport rule). For more information, see [Mail flow rule actions in Exchange Server](../../policy-and-compliance/mail-flow-rules/actions.md).
     
 - The procedures in this topic are available on Mailbox servers and Edge Transport servers.
     

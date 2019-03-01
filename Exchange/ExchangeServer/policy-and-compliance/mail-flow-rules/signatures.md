@@ -115,9 +115,6 @@ For a complete list of conditions and exceptions that you can use to target the 
   
 [Mail flow rules in Exchange Server](mail-flow-rules.md) (Exchange 2016 and Exchange 2019) 
   
-[Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) (Exchange Online) 
+[Mail flow rules (transport rules) in Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)
   
-[Transport Rules](http://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx) (Exchange Online Protection) 
-  
-
-
+[Mail flow rules (transport rules) in Exchange Online Protection](http://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)

@@ -24,7 +24,7 @@ For more information about mail flow rules in Exchange Server, see [Mail flow ru
   
 For more information about conditions and exceptions in mail flow rules, see [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md).
   
-For more information about actions in mail flow rules in Exchange Online Protection or Exchange Online, see [Transport rule actions](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx) or [Transport rule actions](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx).
+For more information about actions in mail flow rules in Exchange Online Protection or Exchange Online, see [Mail flow rule actions in Exchange Online](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx).
   
 ## Actions for mail flow rules on Mailbox servers
 <a name="hub"> </a>
@@ -114,9 +114,4 @@ The property values that are used for actions in mail flow rules are described i
 
 [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md)
   
-[Transport rule actions](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx) for Exchange Online 
-  
-[Transport rule actions](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx) for Exchange Online Protection 
-  
-
-
+[Mail flow rule actions in Exchange Online](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx) for Exchange Online 
