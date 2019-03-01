@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: 3d949e2a-8ba4-4261-8cfb-736fd2446ea1
 ms.date: 
 title: Test a mail flow rule in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

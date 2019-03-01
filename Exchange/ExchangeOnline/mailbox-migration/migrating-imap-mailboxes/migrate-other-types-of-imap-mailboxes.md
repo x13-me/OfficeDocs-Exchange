@@ -7,7 +7,9 @@ ms.assetid: 58890ccd-ce5e-4d94-be75-560a3b70a706
 ms.date: 8/16/2018
 description: As part of the process of deploying Office 365, you can choose to migrate the contents of user mailboxes from an Internet Mail Access Protocol (IMAP) email service to Office 365.
 title: Migrate other types of IMAP mailboxes to Office 365
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150

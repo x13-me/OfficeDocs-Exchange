@@ -7,7 +7,9 @@ ms.author: markjjo
 ms.assetid: d2e2064f-4102-4018-b688-504d09da6d39
 ms.date: 7/11/2018
 title: Default folders that support Retention Policy Tags
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

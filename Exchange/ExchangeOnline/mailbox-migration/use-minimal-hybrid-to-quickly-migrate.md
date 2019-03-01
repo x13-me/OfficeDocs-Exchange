@@ -7,7 +7,9 @@ ms.assetid: fdecceed-0702-4af3-85be-f2a0013937ef
 ms.date: 8/16/2018
 description: Learn how to do an Express migration of on-premises Exchange mailboxes to Office 365..
 title: Use Minimal Hybrid to quickly migrate Exchange mailboxes to Office 365
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150

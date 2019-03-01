@@ -139,7 +139,6 @@
 #### [Migrate G Suite mailboxes](../mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes.md)
 #### [Migrate other types of IMAP mailboxes](../mailbox-migration/migrating-imap-mailboxes/migrate-other-types-of-imap-mailboxes.md)
 #### [IMAP migration in the admin center](../mailbox-migration/migrating-imap-mailboxes/imap-migration-in-the-admin-center.md)
-#### [Use the wizard to do an IMAP migration](../mailbox-migration/migrating-imap-mailboxes/use-the-wizard-to-do-an-imap-migration.md)
 #### [Setting up your IMAP server connection](../mailbox-migration/migrating-imap-mailboxes/setting-up-your-imap-server-connection.md)
 #### [Optimizing IMAP migrations](../mailbox-migration/migrating-imap-mailboxes/optimizing-imap-migrations.md)
 #### [CSV files for IMAP migrations](../mailbox-migration/migrating-imap-mailboxes/csv-files-for-imap-migrations.md)

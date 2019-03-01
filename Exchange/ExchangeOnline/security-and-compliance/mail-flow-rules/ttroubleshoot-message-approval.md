@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: 860df43f-a05b-4da3-83f1-68d3123a923d
 ms.date: 
 title: Manage and troubleshoot message approval in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

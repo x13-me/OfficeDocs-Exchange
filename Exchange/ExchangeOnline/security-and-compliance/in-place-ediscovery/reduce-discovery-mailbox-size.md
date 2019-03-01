@@ -7,7 +7,9 @@ ms.author: markjjo
 ms.assetid: fa762d14-f942-4728-8813-887d11441a68
 ms.date: 7/11/2018
 title: Reduce the size of a discovery mailbox in Exchange
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: Admin
 ms.service: exchange-online
 manager: scotv

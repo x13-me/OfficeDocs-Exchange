@@ -7,7 +7,9 @@ ms.assetid: 665dc56c-581c-4e35-8028-6bc1e8497016
 ms.date: 9/19/2018
 description: ""
 title: Migrate G Suite mailboxes to Office 365
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150

@@ -2,19 +2,14 @@
 localization_priority: Normal
 ms.topic: get-started-article
 author: msdmaguire
-f1_keywords:
-- O365P_MigrationsIMAPOutlookAppPass
-- O365P_MigrationsIMAPHotmailAppPass
-- O365M_MigrationsIMAPOutlookAppPass
-- O365M_MigrationsIMAPHotmailAppPass
-- O365E_MigrationsIMAPOutlookAppPass
-- O365E_MigrationsIMAPHotmailAppPass
 ms.author: dmaguire
 ms.assetid: b536d43c-724b-47a4-bc09-023cfdea5487
 ms.date: 8/15/2018
 description: Learn how to prepare your hotmail.com or outlook.com account for migration to Office 365
 title: Migrating your Outlook.com account to Office 365
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOP150

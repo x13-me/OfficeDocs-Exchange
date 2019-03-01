@@ -7,7 +7,9 @@ ms.author: dstrome
 ms.assetid: 3de9e885-73f5-4743-9b55-38ef59a387f2
 ms.date: 4/29/2016
 title: Remove an organization relationship in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

@@ -7,7 +7,9 @@ ms.author: dstrome
 ms.assetid: 58ac4338-b883-404f-a6be-eca38ccd8088
 ms.date: 11/17/2014
 title: Organization relationships in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

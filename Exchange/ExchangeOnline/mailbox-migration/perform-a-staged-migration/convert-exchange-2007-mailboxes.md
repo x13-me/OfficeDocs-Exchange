@@ -7,7 +7,9 @@ ms.assetid: a1f79f3c-4967-4a15-8b3a-f4933aac0c34
 ms.date: 8/15/2018
 description: Convert Exchange 2007 mailboxes to mail enabled users
 title: Convert Exchange 2007 mailboxes to mail-enabled users
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
