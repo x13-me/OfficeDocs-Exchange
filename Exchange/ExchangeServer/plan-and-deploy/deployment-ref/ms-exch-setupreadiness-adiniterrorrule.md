@@ -1,17 +1,19 @@
 ---
-title: "Duplicate Microsoft Exchange System Objects container exists in Active Directory [AdInitErrorRule]"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 8/2/2018
-ms.audience: Developer
-ms.topic: reference
-f1_keywords:
-- 'ms.exch.setupreadiness.AdInitErrorRule'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Exchange Server 2016 or Exchange Server 2019 Setup can't continue because another Microsoft Exchange System Object container exists in Active Directory.
+ms.topic: reference
+author: chrisda
+f1_keywords:
+- ms.exch.setupreadiness.AdInitErrorRule
+ms.author: chrisda
 ms.assetid: cd0f45ab-89de-4653-b50d-c1157c2329d5
-description: "Exchange Server 2016 or Exchange Server 2019 Setup can't continue because another Microsoft Exchange System Object container exists in Active Directory."
+ms.date: 8/2/2018
+title: Duplicate Microsoft Exchange System Objects container exists in Active Directory [AdInitErrorRule]
+ms.collection: exchange-server
+ms.audience: Developer
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Duplicate Microsoft Exchange System Objects container exists in Active Directory [AdInitErrorRule]
@@ -38,3 +40,4 @@ To resolve this issue, do the following steps:
 > To immediately replicate the change, you need to manually initiate replication between domain controllers.
   
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+

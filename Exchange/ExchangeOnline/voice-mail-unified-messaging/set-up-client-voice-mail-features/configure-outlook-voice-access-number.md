@@ -1,15 +1,17 @@
 ---
-title: "Configure an Outlook Voice Access number"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 12/9/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: An Outlook Voice Access number lets a user who is enabled for Unified Messaging (UM) and voice mail access their mailbox using Outlook Voice Access. When you configure an Outlook Voice Access or subscriber access number on a dial plan, UM-enabled users can call in to the number, sign in to their mailbox, and access their email, voice mail, calendar, and personal contact information.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 443c838e-f266-4893-b6b2-e5fc96579b55
-description: "An Outlook Voice Access number lets a user who is enabled for Unified Messaging (UM) and voice mail access their mailbox using Outlook Voice Access. When you configure an Outlook Voice Access or subscriber access number on a dial plan, UM-enabled users can call in to the number, sign in to their mailbox, and access their email, voice mail, calendar, and personal contact information."
+ms.date: 12/9/2016
+title: Configure an Outlook Voice Access number
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Configure an Outlook Voice Access number
@@ -66,5 +68,6 @@ This example sets the Outlook Voice Access number to 4255550100 for a UM dial pl
 ```
 Set-UMDialPlan -identity MyUMDialPlan -AccessTelephoneNumbers 4255550100
 ```
+
 
 

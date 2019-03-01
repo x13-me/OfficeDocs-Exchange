@@ -1,15 +1,17 @@
 ---
-title: "Manage administrator audit logging"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to configure, enable, and disable administrator audit logging in Exchange Server, and how to view the admit audit log settings.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 15c284c0-b8e6-42ca-9913-7c59fdb6885d
-description: "Summary: Learn how to configure, enable, and disable administrator audit logging in Exchange Server, and how to view the admit audit log settings."
+ms.date: 6/8/2018
+title: Manage administrator audit logging
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage administrator audit logging
@@ -158,5 +160,6 @@ To view the admin audit logging settings that you've configured for your organiz
 ```
 Get-AdminAuditLogConfig
 ```
+
 
 

@@ -1,14 +1,16 @@
 ---
-title: "Exchange Server 2010 load balancer deployment"
-ms.author: serdars
-author: serdarsoysal
-manager: serdars
-ms.date: 07/23/2018
 ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Priority
-description: "This page describes which server load balancer partners have completed solution testing with Exchange Server 2010 and contains pointers to accompanying deployment white papers hosted by the partner."
+ms.author: serdars
+manager: serdars
+ms.topic: reference
+author: serdarsoysal
+ms.prod: exchange-server-it-pro
+ms.collection: exchange-server
+description: This page describes which server load balancer partners have completed solution testing with Exchange Server 2010 and contains pointers to accompanying deployment white papers hosted by the partner.
+ms.date: 07/23/2018
+title: Exchange Server 2010 load balancer deployment
+
 ---
 
 # Exchange Server 2010 load balancer deployment

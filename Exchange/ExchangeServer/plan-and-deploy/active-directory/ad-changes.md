@@ -1,16 +1,19 @@
 ---
-title: "What changes in Active Directory when Exchange is installed?"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 9/20/2018
-ms.audience: ITPro
-ms.topic: conceptual
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how installing Exchange 2016 or Exchange 2019 affects Active Directory.'
+ms.topic: conceptual
+author: dstrome
+ms.author: dstrome
 ms.assetid: 07386078-6103-49a2-8698-2d41db9cec95
-description: "Summary: Learn how installing Exchange 2016 or Exchange 2019 affects Active Directory."
+ms.date: 9/20/2018
+title: What changes in Active Directory when Exchange is installed?
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # What changes in Active Directory when Exchange is installed?
@@ -201,3 +204,4 @@ Exchange makes the follwing changes to the Active Directory domains:
 - Permissions are assigned at the domain level for the Exchange Servers USG and the Organization Management USG.
     
 - The **objectVersion** property in the Microsoft Exchange System Objects container under DC=\<_root domain_\> is set. To verify that the Active Directory domains were successfully prepared, you can check the value stored in this attribute. For more information, see [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions).
+

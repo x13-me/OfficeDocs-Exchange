@@ -1,15 +1,17 @@
 ---
-title: "In-Place eDiscovery in Exchange Server"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about In-Place eDiscovery in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
-description: "Summary: Learn about In-Place eDiscovery in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/6/2018
+title: In-Place eDiscovery in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # In-Place eDiscovery in Exchange Server
@@ -283,3 +285,4 @@ The following table contains links to Exchange Server topics that will help you 
 |[Export eDiscovery search results to a PST file](export-results-to-pst.md) <br/> |Learn how to export the results of an eDiscovery search to a PST file.  <br/> |
 |[Message properties and search operators for In-Place eDiscovery in Exchange Server](message-properties-and-search-operators.md) <br/> |Learn which email message properties can be searched using In-Place eDiscovery. The topic provides syntax examples for each property, information about search operators such as **AND** and **OR**, and information about other search query techniques such as using double quotation marks (" ") and prefix wildcards.  <br/> |
 |[Search and place a hold on public folders using In-Place eDiscovery](search-public-folders.md) <br/> |Learn how to use In-Place eDiscovery to search and place a hold on all public folders in your organization.  <br/> |
+

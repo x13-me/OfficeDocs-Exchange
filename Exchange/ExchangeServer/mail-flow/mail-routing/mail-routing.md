@@ -1,15 +1,17 @@
 ---
-title: "Mail routing in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/10/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn how mail is routed between Exchange servers in an Exchange 2016 or Exchange 2019 organization.
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 6fd39079-9655-4fd9-9269-c7462c76e0a7
-description: "Learn how mail is routed between Exchange servers in an Exchange 2016 or Exchange 2019 organization."
+ms.date: 7/10/2018
+title: Mail routing in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Mail routing in Exchange Server
@@ -187,4 +189,5 @@ In organizations that have Exchange servers in multiple Active Directory sites, 
   
 For more information about how mail is routed to and from Edge Transport servers, see [Mail flow and the transport pipeline](../../mail-flow/mail-flow.md).
   
+
 

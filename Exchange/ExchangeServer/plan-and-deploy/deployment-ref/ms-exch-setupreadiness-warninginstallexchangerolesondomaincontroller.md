@@ -1,17 +1,19 @@
 ---
-title: "Installing Exchange on a domain controller is not recommended [WarningInstallExchangeRolesOnDomainController]"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 8/2/2018
-ms.audience: Developer
-ms.topic: reference
-f1_keywords:
-- 'ms.exch.setupreadiness.WarningInstallExchangeRolesOnDomainController'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Microsoft Exchange Server 2016 Setup has detected that the computer you're attempting to install Exchange 2016 on is an Active Directory domain controller. Installing Exchange 2016 on a domain controller isn't recommended.
+ms.topic: reference
+author: chrisda
+f1_keywords:
+- ms.exch.setupreadiness.WarningInstallExchangeRolesOnDomainController
+ms.author: chrisda
 ms.assetid: 48922de2-a68c-4092-96a5-d38c8e5f49f5
-description: "Microsoft Exchange Server 2016 Setup has detected that the computer you're attempting to install Exchange 2016 on is an Active Directory domain controller. Installing Exchange 2016 on a domain controller isn't recommended."
+ms.date: 8/2/2018
+title: Installing Exchange on a domain controller is not recommended [WarningInstallExchangeRolesOnDomainController]
+ms.collection: exchange-server
+ms.audience: Developer
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Installing Exchange on a domain controller is not recommended [WarningInstallExchangeRolesOnDomainController]
@@ -37,3 +39,4 @@ If you install Exchange on a domain controller, be aware of the following issues
 Therefore, we recommend that you install Exchange on a member server, not on a domain controller.
   
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+

@@ -1,14 +1,16 @@
 ---
-title: "Use batch migration to migrate Exchange 2010 public folders to Exchange 2016"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+ms.author: dmaguire
+manager: serdars
+ms.topic: article
+author: msdmaguire
+ms.prod: exchange-server-it-pro
 ms.assetid: da808e27-d2b7-4fbd-915c-a600751f526c
-description: "Summary: Learn how to migrate Exchange 2010 public folders to Exchange 2016."
+ms.collection: exchange-server
+description: 'Summary: Learn how to migrate Exchange 2010 public folders to Exchange 2016.'
+ms.audience: ITPro
+title: Use batch migration to migrate Exchange 2010 public folders to Exchange 2016
+
 ---
 
 # Use batch migration to migrate Exchange 2010 public folders to Exchange 2016
@@ -474,3 +476,4 @@ If you run into issues with the migration and need to reactivate your Exchange 2
    ```
    Set-OrganizationConfig -PublicFolderMigrationComplete $false
    ```
+

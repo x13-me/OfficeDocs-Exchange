@@ -1,15 +1,17 @@
 ---
-title: "Manage address lists in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to create, view the membership of, update, modify, remove, and hide recipients from address lists in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: cac74760-7bd1-482c-8d43-b0165e988ec0
-description: "Admins can learn how to create, view the membership of, update, modify, remove, and hide recipients from address lists in Exchange Online."
+ms.date: 
+title: Manage address lists in Exchange Online
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage address lists in Exchange Online
@@ -177,7 +179,7 @@ For example, suppose the address list named Oregon and Washington Users uses the
 To verify that you've successfully updated an address list, replace _\<AddressListIdentity\>_ with the name of the address list, and run the following command in Exchange Online PowerShell to verify the **RecipientFilterApplied** property value:
 
 ```
-Get-AddressList -Identity <AddressListIdentity> | Format-Table -Auto Name,RecipientFilterApplied
+Get-AddressList -Identity <AddressListIdentity> | Format-Table Name,RecipientFilterApplied -Auto
 ```
 
 ## Use Exchange Online PowerShell to modify address lists
@@ -323,3 +325,4 @@ You can verify that you've successfully hidden a recipient from address lists by
    ```
 
 - Open the GAL in Outlook or Outlook on the web (formerly known as Outlook Web App), and verify the recipient isn't visible.
+

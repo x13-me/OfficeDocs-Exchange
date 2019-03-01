@@ -1,17 +1,20 @@
 ---
-title: "Active Directory schema changes in Exchange Server"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 9/20/2018
-ms.audience: ITPro
-ms.topic: conceptual
-ms.prod: exchange-server-it-pro
 localization_priority: Critical
-ms.collection: Strat_EX_Admin
+monikerRange: exchserver-2016 || exchserver-2019
+description: 'Summary: Learn about the new and modified schema classes and attributes that are added to Active Directory by Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: conceptual
+author: dstrome
+ms.author: dstrome
 ms.assetid: 7e879e4e-1124-4a41-94d2-c64500beb24e
-description: "Summary: Learn about the new and modified schema classes and attributes that are added to Active Directory by Exchange Server 2016 or Exchange Server 2019."
-monikerRange: "exchserver-2016 || exchserver-2019"
+ms.date: 
+title: Active Directory schema changes in Exchange Server
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Active Directory schema changes in Exchange Server
@@ -1442,6 +1445,7 @@ The following table lists the extended rights that are added when you install Ex
 ::: moniker range="exchserver-2016"
 |**Current Exchange 2016 release installed**|**New Exchange 2016 release being installed**|**Are schema updates required?**|
 |:-----|:-----|:-----|
+|Cumulative Update 6|Cumulative Update 11|**Yes**, updates are required. Schema updates in CU7 need to be applied.|
 |Cumulative Update 3|Cumulative Update 4|**No**, no updates are required. No schema changes were made in CU4.|
 |Cumulative Update 2|Cumulative Update 4|**Yes**, updates are required. Schema updates in CU3 need to be applied.|
 |Release to Manufacturing|Cumulative Update 4|**Yes**, updates are required. Schema updates in CU1, CU2, and CU3 need to be applied.|
@@ -1467,7 +1471,7 @@ No changes were made to the Active Directory schema in Exchange 2016 in CU8.
   
 ## Exchange 2016 CU7 Active Directory schema changes
 
-This section summarizes the changes that are made to the Active Directory schema when you install Exchange 2016 CU3. This section includes the following subsections:
+This section summarizes the changes that are made to the Active Directory schema when you install Exchange 2016 CU7. This section includes the following subsections:
   
 - [Classes added by Exchange 2016 CU7](ad-schema-changes.md#ClassesAddCU7)
     
@@ -3082,3 +3086,4 @@ The following table lists the extended rights that are added when you install Ex
 |:-----|:-----|
 |CN=ms-Exch-SMTP-Accept-XProxyFrom,CN=Extended-Rights,\<ConfigurationContainerDN\>|changetype: ntdsSchemaAdd  <br/> displayName: Accept XProxyFrom  <br/> objectClass: controlAccessRight  <br/> rightsGuid: 5bee2b72-50d7-49c7-ba66-39a25daa1e92  <br/> validAccesses: 256|
 ::: moniker-end
+

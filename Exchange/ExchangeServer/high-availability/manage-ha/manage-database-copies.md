@@ -1,15 +1,17 @@
 ---
-title: "Manage mailbox database copies"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 6/12/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about managing mailbox database copies in the Mailbox server in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 28cedf1d-365a-4e36-b2ba-6bf81af8684f
-description: "Summary: Learn about managing mailbox database copies in the Mailbox server in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 6/12/2018
+title: Manage mailbox database copies
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage mailbox database copies
@@ -414,4 +416,5 @@ When you perform a database switchover, you also have the option of overriding t
   
 For detailed steps about how to perform a switchover of a database copy, see [Activate a mailbox database copy](activate-db-copies.md).
   
+
 

@@ -1,16 +1,19 @@
 ---
-title: "Upgrade Exchange to the latest Cumulative Update"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: get-started-article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn about installing Cumulative Updates (CUs) in Exchange 2016 or Exchange 2019.'
+ms.topic: get-started-article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 928a4a0b-0082-4d50-a696-bfaf2782f42d
-description: "Summary: Learn about installing Cumulative Updates (CUs) in Exchange 2016 or Exchange 2019."
+ms.date: 
+title: Upgrade Exchange to the latest Cumulative Update
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Upgrade Exchange to the latest Cumulative Update
@@ -37,6 +40,29 @@ If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgr
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+
+## Best Practices
+
+- Always keep your servers as up to date as possible. This especially applies to the installation of a new server.
+
+- Always install the latest Cumulative Update when creating a new server.
+
+- There is no need to install the RTM build or previous builds and then upgrade to the latest Cumulative Update. This is because    each Cumulative Update is a full build of the product.
+
+- Reboot the server beforehand.
+
+- Test the new update in a non-production environment first to avoid any problems in the new update affecting the running production environment.
+
+- Have a tested and working backup of both the Active Directory and your Exchange Server.
+
+- Backup any and all customizations. They will not survive the update.
+
+- Use an elevated command prompt to run the Cumulative Update.
+
+- Temporarily disable any anti-virus software during the update process.
+
+- Reboot your server upon completion of the update.
+
 
 ## Install an Exchange CU using the Setup wizard
 
@@ -105,3 +131,4 @@ For more information about unattended Setup from the command line, see [Install 
 ## How do you know this worked?
 
 To verify that you've successfully installed an Exchange CU, see [Verify Exchange Server installations](post-installation-tasks/verify-installation.md).
+

@@ -1,15 +1,17 @@
 ---
-title: "Remove a SIP address"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: When you enable a user for UM and link them to a SIP URI dial plan, two EUM proxy addresses are created. One contains the user's extension number and the other contains a SIP address for the user. The extension number is used when the user calls in to an Outlook Voice Access number.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: eaaff0b0-7d85-4845-a7b8-ac22b42bc415
-description: "When you enable a user for UM and link them to a SIP URI dial plan, two EUM proxy addresses are created. One contains the user's extension number and the other contains a SIP address for the user. The extension number is used when the user calls in to an Outlook Voice Access number."
+ms.date: 11/17/2014
+title: Remove a SIP address
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Remove a SIP address
@@ -57,15 +59,16 @@ For additional management tasks related to users who are enabled for voice mail,
 
 ## Use Exchange Online PowerShell to remove the primary or a secondary SIP address
 
-This example removes the SIP address tsmith@contoso.com from the mailbox of Tony Smith, a UM-enabled user.
+This example removes the SIP address which is second in the list of available addresses from the mailbox of Tony Smith, a UM-enabled user.
 
 > [!NOTE]
 > Before you remove a SIP address using Exchange Online PowerShell, you need to determine the position of the EUM proxy address that you want to modify. To determine the position, use the **$mbx.EmailAddresses** command. The first EUM proxy address in the list will be 0.
 
 ```
 $mbx = Get-Mailbox tony.smith
-$mbx.EmailAddresses.Item(1) -="eum:tsmith@contoso.com;phone-context=MyDialPlan.contoso.com"
+$mbx.EmailAddresses.Remove($mbx.EmailAddresses.Item(1))
 Set-Mailbox tony.smith -EmailAddresses $mbx.EmailAddresses
 ```
+
 
 

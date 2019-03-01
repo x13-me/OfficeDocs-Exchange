@@ -1,16 +1,19 @@
 ---
-title: "Assign certificates to Exchange Server services"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how to assign certificates to Exchange services in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: f4c170cd-76d3-499d-a34e-8a2bc8724c52
-description: "Summary: Learn how to assign certificates to Exchange services in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/5/2018
+title: Assign certificates to Exchange Server services
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Assign certificates to Exchange Server services
@@ -84,5 +87,6 @@ To verify that you have successfully assigned a certificate to one or more Excha
   ```
   Get-ExchangeCertificate | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint,Services
   ```
+
 
 

@@ -1,13 +1,15 @@
 ---
-title: "Exchange content updates"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.audience: ITPro
-ms.topic: get-started-article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-description: "Summary: Updates to Exchange Server and Exchange Online content."
+ms.author: dstrome
+manager: serdars
+ms.topic: get-started-article
+author: dstrome
+ms.prod: exchange-server-it-pro
+ms.collection: exchange-server
+description: 'Summary: Updates to Exchange Server and Exchange Online content.'
+ms.audience: ITPro
+title: Exchange content updates
+
 ---
 
 # Exchange content updates
@@ -15,3 +17,4 @@ description: "Summary: Updates to Exchange Server and Exchange Online content."
 This topic lists Exchange Server and Exchange Online topics that have been changed over the last several weeks. 
 
 [!INCLUDE [exchange-content-updates](../hub/includes/exchange-content-updates.md)]
+

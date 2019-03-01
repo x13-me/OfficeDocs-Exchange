@@ -1,15 +1,17 @@
 ---
-title: "Create a Send connector in Exchange Server to send mail to the internet"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn how to create the Send connector that's required to send mail to the internet in Exchange 2016 and Exchange 2019.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 6deaefa8-1152-40d9-b1ba-9c19bdf8a928
-description: "Learn how to create the Send connector that's required to send mail to the internet in Exchange 2016 and Exchange 2019."
+ms.date: 7/6/2018
+title: Create a Send connector in Exchange Server to send mail to the internet
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create a Send connector in Exchange Server to send mail to the internet
@@ -104,4 +106,5 @@ To verify that you have successfully created a Send Connector that sends mail to
   
 You can also turn on protocol logging for the Send connector, and view the information in the log. For more information, see [Protocol logging](protocol-logging.md).
   
+
 

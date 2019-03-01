@@ -1,15 +1,17 @@
 ---
-title: "Place a mailbox on Litigation Hold"
-ms.author: serdars
-author: SerdarSoysal
-manager: scotv
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Place a mailbox on Litigation Hold to preserve all mailbox content, including deleted items and original versions of modified items.
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
-description: "Place a mailbox on Litigation Hold to preserve all mailbox content, including deleted items and original versions of modified items."
+ms.date: 7/6/2018
+title: Place a mailbox on Litigation Hold
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Place a mailbox on Litigation Hold
@@ -151,7 +153,11 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
     
   - Placing all mailboxes on Litigation Hold can significantly impact mailbox sizes. In an Exchange 2016 or Exchange 2019 organization, plan for adequate storage to meet your organization's preservation requirements.
     
-  - The Recoverable Items folder has its own storage limit, so items in the folder don't count towards the mailbox storage limit. As previously explained, preserving mailbox data for a long period of time will result in growth of the Recoverable Items folder in a user's mailbox and archive. We recommend that you periodically monitor the size of this folder to ensure it doesn't reach the limit. For more information, see [Recoverable Items folder in Exchange Server](../../policy-and-compliance/recoverable-items-folder/recoverable-items-folder.md).
+  - The Recoverable Items folder has its own storage limit, so items in the folder don't count towards the mailbox storage limit. As previously explained, preserving mailbox data for a long period of time will result in growth of the Recoverable Items folder in a user's mailbox and archive. We recommend that you periodically monitor the size of this folder by using the **Get-MailboxFolderStatistics** cmdlet to ensure it doesn't reach the limit. For more information, see: 
+  
+    - [Get-MailboxFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxfolderstatistics)
+    
+    - [Clean up or delete items from the Recoverable Items folder](../recoverable-items-folder/clean-up-deleted-items.md).
     
 - The previous command to place a hold on all mailboxes uses a recipient filter that returns all user mailboxes. You can use other recipient properties to return a list of specific mailboxes that you can then pipe to the **Set-Mailbox** cmdlet to place a Litigation Hold on those mailboxes.
     
@@ -179,4 +185,5 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
 
     You can use other user mailbox properties in a filter to include or exclude mailboxes. For details, see [Filterable Properties for the -Filter Parameter](http://technet.microsoft.com/library/b02b0005-2fb6-4bc2-8815-305259fa5432.aspx).
     
+
 

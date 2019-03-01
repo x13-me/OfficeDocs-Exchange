@@ -1,18 +1,20 @@
 ---
-title: "No Exchange 2010 servers detected [NoE14ServerWarning]"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 6/12/2018
-ms.audience: ITPro
-ms.topic: reference
-f1_keywords:
-- 'ms.exch.setupreadiness.NoE14ServerWarning'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+monikerRange: exchserver-2016
+description: Microsoft Exchange Server 2016 Setup displayed this warning because no Exchange 2010 servers exist in the organization.
+ms.topic: reference
+author: dstrome
+f1_keywords:
+- ms.exch.setupreadiness.NoE14ServerWarning
+ms.author: dstrome
 ms.assetid: 789cabab-c769-4a16-a6c8-3db82cff8861
-description: "Microsoft Exchange Server 2016 Setup displayed this warning because no Exchange 2010 servers exist in the organization."
-monikerRange: "exchserver-2016"
+ms.date: 6/12/2018
+title: No Exchange 2010 servers detected [NoE14ServerWarning]
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # No Exchange 2010 servers detected [NoE14ServerWarning]
@@ -37,3 +39,4 @@ If you decide that you need to deploy Exchange 2010 servers, you need to do so b
 3. Exchange 2016
     
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+

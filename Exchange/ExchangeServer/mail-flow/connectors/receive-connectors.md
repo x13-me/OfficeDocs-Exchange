@@ -1,16 +1,19 @@
 ---
-title: "Receive connectors"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn about Receive connectors in Exchange Server 2016 or Exchange Server 2019, and how they control mail flow into your Exchange organization.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 17751a60-39fe-433f-84d2-bfc14ff4ba51
-description: "Summary: Learn about Receive connectors in Exchange Server 2016 or Exchange Server 2019, and how they control mail flow into your Exchange organization."
+ms.date: 7/6/2018
+title: Receive connectors
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Receive connectors
@@ -282,5 +285,6 @@ To remove permissions from a security principal on a Receive connector, use the 
 ```
 Remove-ADPermission -Identity <ReceiveConnector> -User <SecurityPrincipal> -ExtendedRights "<Permission1>","<Permission2>"...
 ```
+
 
 

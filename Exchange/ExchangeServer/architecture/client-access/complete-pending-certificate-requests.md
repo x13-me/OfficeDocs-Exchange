@@ -1,16 +1,19 @@
 ---
-title: "Complete a pending Exchange Server certificate request"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how to complete a pending certificate request in Exchange Server after you receive the certificate from the certification authority.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 3d2a8747-4afa-4db8-94d7-dcce6d90d21f
-description: "Summary: Learn how to complete a pending certificate request in Exchange Server after you receive the certificate from the certification authority."
+ms.date: 7/5/2018
+title: Complete a pending Exchange Server certificate request
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Complete a pending Exchange Server certificate request
@@ -115,4 +118,5 @@ To verify that you have successfully completed the certificate request and insta
 
 After you complete the pending certificate request by installing the certificate on the server, you need to assign the certificate to one or more Exchange services before the Exchange server is able to use the certificate for encryption. For more information, see [Assign certificates to Exchange services](assign-certificates-to-services.md).
   
+
 

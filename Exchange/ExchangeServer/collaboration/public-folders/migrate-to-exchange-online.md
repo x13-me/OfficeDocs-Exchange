@@ -1,14 +1,17 @@
 ---
-title: "Exchange public folder migration, migrate public folders to Office 365, public folder migration Exchange to Office, migrate Exchange public folders to Office"
-ms.author: dmaguire
-author: msdmaguire
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_EXOBlocker
+ms.author: dmaguire
+ms.topic: article
+author: msdmaguire
+ms.prod: exchange-server-it-pro
 ms.assetid: 25a5234c-dd2c-487b-8541-3655fbeb030a
-description: "Summary: This article tells you how to move modern public folders from Exchange Server to Office 365."
+ms.collection:
+- Strat_EX_EXOBlocker
+- exchange-server
+description: 'Summary: This article tells you how to move modern public folders from Exchange Server to Office 365.'
+ms.audience: ITPro
+title: Exchange public folder migration, migrate public folders to Office 365, public folder migration Exchange to Office, migrate Exchange public folders to Office
+
 ---
 
 # Use batch migration to migrate Exchange Server public folders to Exchange Online
@@ -600,3 +603,4 @@ The following are common public folder migration issues that you may encounter i
 After the migration is complete and you have verified that your public folders in Exchange Online are working as expected and contain all expected data, you can remove your on-premises public folder mailboxes.
   
 Be aware that this step is irreversible, because once public folder mailboxes are deleted, they cannot be recovered. Therefore we strongly recommend that, in addition to validating the success of your migration, that you also monitor your Exchange Online public folders for a few weeks before removing the on-premises public folder mailboxes.
+

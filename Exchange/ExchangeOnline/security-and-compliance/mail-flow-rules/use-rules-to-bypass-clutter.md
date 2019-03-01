@@ -1,15 +1,17 @@
 ---
-title: "Use mail flow rules so messages can bypass Clutter in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to create mail flow rules so messages aren't placed in the Clutter folder in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 58e413f0-aa27-4307-bffd-4df03090a15e
-description: "Learn how to create mail flow rules so messages aren't placed in the Clutter folder in Exchange Online."
+ms.date: 
+title: Use mail flow rules so messages can bypass Clutter in Exchange Online
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Use mail flow rules so messages can bypass Clutter in Exchange Online
@@ -59,3 +61,4 @@ You can check email message headers to see if the email messages are landing in 
 
 > [!NOTE]
 > Calendar items (accepted, sent, or declined meetings notifications) won't contain this header.
+

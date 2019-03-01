@@ -1,15 +1,17 @@
 ---
-title: "Permanently delete a mailbox"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 6/12/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to permanently delete a mailbox in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: df35765a-0bef-4561-9846-d91d69c0269c
-description: "Summary: Learn how to permanently delete a mailbox in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 6/12/2018
+title: Permanently delete a mailbox
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Permanently delete a mailbox
@@ -125,4 +127,5 @@ Get-MailboxDatabase | Get-MailboxStatistics | where {$_.DisplayName -eq "<displa
 
 If you successfully purged the mailbox, the command won't return any results. If the mailbox wasn't purged, the command will return information about the mailbox.
   
+
 

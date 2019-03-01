@@ -1,15 +1,17 @@
 ---
-title: "Autodiscover service in Exchange Server"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/3/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the Autodiscover service in Exchange 2016 and Exchange 2019, which lets client applications and users configure themselves with minimal input.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b03c0f21-cbc2-4be8-ad03-73a7dac16ffc
-description: "Summary: Learn about the Autodiscover service in Exchange 2016 and Exchange 2019, which lets client applications and users configure themselves with minimal input."
+ms.date: 7/3/2018
+title: Autodiscover service in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Autodiscover service in Exchange Server
@@ -176,7 +178,7 @@ You'll need to make sure that you have configured the correct external URLs for 
 |**Service**|**Exchange Management Shell**|**Modifies**|
 |:-----|:-----|:-----|
 |[Offline Address Book](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/Set-OabVirtualDirectory)|Get-OabVirtualDirectory \| Set-OabVirtualDirectory –ExternalURL|OAB virtual directories used in IIS|
-|[Exchange Web Sevices](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-WebServicesVirtualDirectory)|Get-WebServicesVirtualDirectory \| Set-WebServicesVirtualDirectory –ExternalURL https://mail.companycontoso.com/ews/exchange.asmx|Exchange Web Servicesvirtual directories in IIS|
+|[Exchange Web Sevices](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-WebServicesVirtualDirectory)|Get-WebServicesVirtualDirectory \| Set-WebServicesVirtualDirectory –ExternalURL https://mail.companycontoso.com/ews/exchange.asmx |Exchange Web Services virtual directories in IIS|
 |[Outlook Anywhere (RPC over HTTP)](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-OutlookAnywhere)|Get-OutlookAnywhere \| Set-OutlookAnywhere –ExternalHostname mail.contoso.com –ExternalClientsRequireSsl $true|Outlook Anywhere virtual directories in IIS|
 |[Messaging Application Programming Interface (MAPI) over HTTP](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-MapiVirtualDirectory) (Exchange 2013 SP1 or later)|Get-MapiVirtualDirectory \| Set-MapiVirtualDirectory –ExternalURL https://mail.companycontoso.com/mapi <br/> Set-OrganizationConfig -MapiHttpEnabled $true|MAPI virtual directories in IIS|
 
@@ -212,3 +214,4 @@ You can run the Exchange ActiveSync Autodiscover and Outlook Autodiscover tests 
   
 You can get help for planning and deploying Autodiscover services as part of your Exchange deployment in [Planning and deployment for Exchange Server](../../plan-and-deploy/plan-and-deploy.md).
   
+

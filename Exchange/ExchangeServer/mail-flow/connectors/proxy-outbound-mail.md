@@ -1,15 +1,17 @@
 ---
-title: "Configure Send connectors to proxy outbound mail"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Configure Send connectors to proxy outbound mail through the Front End Transport service.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 6eaa753a-523a-4ae7-b174-a639b819e729
-description: "Summary: Configure Send connectors to proxy outbound mail through the Front End Transport service."
+ms.date: 7/6/2018
+title: Configure Send connectors to proxy outbound mail
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure Send connectors to proxy outbound mail
@@ -81,4 +83,5 @@ To verify that a Send connector is configured for outbound proxy, perform either
 
     Verify the **FrontEndProxyEnabled** value is `True` for the Send connector.
     
+
 

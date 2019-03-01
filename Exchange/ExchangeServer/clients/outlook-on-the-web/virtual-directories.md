@@ -1,15 +1,17 @@
 ---
-title: "View or configure Outlook on the web virtual directories in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: scotv
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to view and configure the properties of Outlook on the web virtual directories in Exchange Server 2016 or Exchange Server 2019'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
-description: "Summary: Learn how to view and configure the properties of Outlook on the web virtual directories in Exchange Server 2016 or Exchange Server 2019"
+ms.date: 7/6/2018
+title: View or configure Outlook on the web virtual directories in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # View or configure Outlook on the web virtual directories in Exchange Server
@@ -280,4 +282,5 @@ Set-OwaVirtualDirectory -Identity "Contoso\owa (Default Web Site)" -ActionForUnk
 
 For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](http://technet.microsoft.com/library/7fadcc2e-6339-48b1-b15c-c89e45d4e430.aspx).
   
+
 

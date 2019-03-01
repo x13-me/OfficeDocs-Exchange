@@ -263,13 +263,13 @@ Whenever the Transport service on a Mailbox server or Edge Transport server dete
 
 There are two mixed environment scenarios that are common in Exchange 2013:
 
-  - **Hybrid deployments where part of your organization resides in UNRESOLVED\_TOKEN\_VAL(Office365)**
+  - **Hybrid deployments where part of your organization resides in Office 365**
     
-    In a hybrid environment, there's no replication of rules between your on-premises Exchange organization and UNRESOLVED\_TOKEN\_VAL(Office365). Therefore, when you create a rule in Exchange, you need to create a matching rule in UNRESOLVED\_TOKEN\_VAL(Office365). Rules you create in UNRESOLVED\_TOKEN\_VAL(Office365) are stored in the cloud, whereas the rules you create in your on-premises organization are stored locally in Active Directory. When you manage rules in a hybrid environment, you need to keep the two sets of rules synchronized by making the change in both places, or making the change in one environment and then exporting the rules and importing them in the other environment.
+    In a hybrid environment, there's no replication of rules between your on-premises Exchange organization and Office 365. Therefore, when you create a rule in Exchange, you need to create a matching rule in Office 365. Rules you create in Office 365 are stored in the cloud, whereas the rules you create in your on-premises organization are stored locally in Active Directory. When you manage rules in a hybrid environment, you need to keep the two sets of rules synchronized by making the change in both places, or making the change in one environment and then exporting the rules and importing them in the other environment.
     
 
     > [!IMPORTANT]
-    > Even though there is a substantial overlap between the conditions and actions that are available in UNRESOLVED_TOKEN_VAL(Office365) and Exchange Server, there are differences. If you plan on creating the same rule in both locations, make sure that all conditions and actions you plan to use are available. To see the list of available conditions and actions that are available in UNRESOLVED_TOKEN_VAL(Office365), see the following topics:<BR><A href="https://technet.microsoft.com/en-us/library/jj919235(v=exchg.150)">Mail flow rule conditions and exceptions (predicates) in Exchange Online</A><BR><A href="https://technet.microsoft.com/en-us/library/jj919237(v=exchg.150)">Mail flow rule actions in Exchange Online</A>
+    > Even though there is a substantial overlap between the conditions and actions that are available in Office 365 and Exchange Server, there are differences. If you plan on creating the same rule in both locations, make sure that all conditions and actions you plan to use are available. To see the list of available conditions and actions that are available in Office 365, see the following topics:<BR><A href="https://technet.microsoft.com/en-us/library/jj919235(v=exchg.150)">Mail flow rule conditions and exceptions (predicates) in Exchange Online</A><BR><A href="https://technet.microsoft.com/en-us/library/jj919237(v=exchg.150)">Mail flow rule actions in Exchange Online</A>
 
 
 

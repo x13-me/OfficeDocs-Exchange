@@ -1,15 +1,17 @@
 ---
-title: "Configure Protected Voice Mail from authenticated callers"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'You can configure Unified Messaging to answer an incoming call, and then determine whether it will apply protection to voice mail messages by using encryption. When a voice message is protected:'
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: f69e94a7-9768-4445-9ded-e78d732bd623
-description: "You can configure Unified Messaging to answer an incoming call, and then determine whether it will apply protection to voice mail messages by using encryption. When a voice message is protected:"
+ms.date: 11/17/2014
+title: Configure Protected Voice Mail from authenticated callers
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Configure Protected Voice Mail from authenticated callers
@@ -64,5 +66,6 @@ This example protects voice messages from all authenticated callers on the UM ma
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy ProtectAuthenticatedVoiceMail -All
 ```
+
 
 

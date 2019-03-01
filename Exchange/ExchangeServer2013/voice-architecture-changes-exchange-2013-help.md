@@ -127,9 +127,7 @@ The following table summarizes the Exchange 2013 ports and protocols, and whethe
 <td><p>RTP (Mailbox server - UM worker process)</p></td>
 <td><p>Not applicable</p></td>
 <td><p>Ports between 1024 and 65535.</p></td>
-<td><p>The range of ports can be changed through the registry (however, this isn’t a supported configuration):</p>
-<p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Speech Server\2.0\AudioConnectionMinPort</p>
-<p>HKLM\SOFTWARE\Microsoft\Microsoft Speech Server\2.0\AudioConnectionMaxPort</p></td>
+<td><p>Ports can be changed in the msexchangeum.config configuration file. The msexchangeum.config file is located in the \Program Files\Microsoft\Exchange\V15\bin folder on an Exchange 2013 Unified Messaging server.</p></td>
 </tr>
 </tbody>
 </table>

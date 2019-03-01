@@ -1,15 +1,17 @@
 ---
-title: "Assign an address book policy to users in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to assign address book policies (ABPs) to users in Exchange Online
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: bdfe6575-24c0-47d0-9cfb-ece910db248b
-description: "Admins can learn how to assign address book policies (ABPs) to users in Exchange Online"
+ms.date: 
+title: Assign an address book policy to users in Exchange Online
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Assign an address book policy to users in Exchange Online
@@ -170,9 +172,10 @@ To verify that you've successfully applied an ABP to a mailbox, use any of the f
 - In Exchange Online PowerShell, run the following command to verify the value of the **AddressBookPolicy** property:
 
     ```
-    Get-Mailbox -ResultSize unlimited | Format-Table -Auto Name,AddressBookPolicy
+    Get-Mailbox -ResultSize unlimited | Format-Table Name,AddressBookPolicy -Auto
     ```
 
 ## More information
 
 To remove the ABP assignment from a mailbox, you select the value **[No Policy]** in the EAC, or use the value `$null` for the _AddressBookPolicy_ parameter in Exchange Online PowerShell.
+

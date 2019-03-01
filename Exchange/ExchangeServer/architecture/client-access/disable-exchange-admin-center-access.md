@@ -1,16 +1,18 @@
 ---
-title: "Turn off access to the Exchange admin center"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 9/20/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to disable access to the Exchange admin center (EAC) in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 49f4fa77-1722-4703-81c9-8724ae0334fb
-description: "Summary: Learn how to disable access to the Exchange admin center (EAC) in Exchange Server 2016 or Exchange Server 2019."
-monikerRange: "exchserver-2016 || exchserver-2019"
+monikerRange: exchserver-2016 || exchserver-2019
+title: Turn off access to the Exchange admin center
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.date: 9/20/2018
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Turn off access to the Exchange admin center
@@ -258,3 +260,4 @@ To verify that you have successfully disabled access to the EAC on an Exchange s
 
   - **New EAC web site on the existing Exchange server**: If the IP address of the new EAC web site is 10.1.1.12, verify that https://10.1.1.12/ecp opens the EAC.
 ::: moniker-end 
+

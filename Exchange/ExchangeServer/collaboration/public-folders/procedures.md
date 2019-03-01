@@ -1,15 +1,17 @@
 ---
-title: "Public folder procedures"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 3/27/2017
-ms.audience: ITPro
-ms.topic: hub-page
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Create and manage public folders with one or more of these articles.'
+ms.topic: hub-page
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f5682d78-0cee-4def-ac45-64070798613a
-description: "Summary: Create and manage public folders with one or more of these articles."
+ms.date: 3/27/2017
+title: Public folder procedures
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Public folder procedures
@@ -50,4 +52,5 @@ Use one or more of the procedures listed below to get your public folder infrast
   
 [View statistics for public folders and public folder items](view-statistics.md)
   
+
 

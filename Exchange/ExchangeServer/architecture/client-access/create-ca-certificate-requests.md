@@ -1,16 +1,19 @@
 ---
-title: "Create an Exchange Server certificate request for a certification authority"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 6/7/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how to create a certificate request in Exchange Server that you provide to a certification authority.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: efb00de7-070b-46bf-a2fc-00d07ae085c1
-description: "Summary: Learn how to create a certificate request in Exchange Server that you provide to a certification authority."
+ms.date: 6/7/2018
+title: Create an Exchange Server certificate request for a certification authority
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create an Exchange Server certificate request for a certification authority
@@ -234,4 +237,5 @@ If the CA requires a binary certificate request that's encoded by DER (you used 
   
 After you receive the certificate from the CA, you need to complete the pending certificate request. For instructions, see [Complete a pending Exchange Server certificate request](complete-pending-certificate-requests.md).
   
+
 
