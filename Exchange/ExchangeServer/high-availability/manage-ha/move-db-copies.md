@@ -19,7 +19,7 @@ If the mailbox database being moved is replicated to one or more mailbox databas
 > [!NOTE]
 > After you create a new mailbox database, you can move it to another volume, folder, location, or path by using either the EAC or the Exchange Management Shell. For step-by-step instructions about how to move the database path for a **non-replicated** mailbox database, see [Manage mailbox databases in Exchange Server](../../architecture/mailbox-servers/manage-databases.md).
   
-Looking for other management tasks related to mailbox database copies? Check out [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx).
+Looking for other management tasks related to mailbox database copies? Check out [Managing mailbox database copies](https://docs.microsoft.com/exchange/high-availability/manage-ha/manage-database-copies).
   
 ## What do you need to know before you begin?
 
