@@ -1,15 +1,17 @@
 ---
-title: "Exchange linked mailboxes, linked mailboxes Exchange, create linked mailbox Exchange, change linked mailbox Exchange"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Linked mailboxes are mailboxes that users access in a separate, trusted forest. Learn how to create linked mailboxes in Exchange resource forests.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 76e12d4a-1c3a-42e2-b64c-c09d36e81bd3
-description: "Summary: Linked mailboxes are mailboxes that users access in a separate, trusted forest. Learn how to create linked mailboxes in Exchange resource forests."
+ms.date: 
+title: Exchange linked mailboxes, linked mailboxes Exchange, create linked mailbox Exchange, change linked mailbox Exchange
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage linked mailboxes
@@ -373,3 +375,4 @@ To verify that you have successfully changed properties for a linked mailbox, do
   ```
   Get-Mailbox "Ayla Kol" | Format-List LinkedMasterAccount
   ```
+

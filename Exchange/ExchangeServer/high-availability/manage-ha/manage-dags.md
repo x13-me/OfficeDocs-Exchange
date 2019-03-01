@@ -1,15 +1,17 @@
 ---
-title: "Manage database availability groups"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/13/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create, configure, and manage database availability group (DAG) in Exchange 2016 and Exchange 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 74be3f97-ec0f-4d2a-b5d8-7770cc489919
-description: "Summary: Learn how to create, configure, and manage database availability group (DAG) in Exchange 2016 and Exchange 2019."
+ms.date: 7/13/2018
+title: Manage database availability groups
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage database availability groups
@@ -573,4 +575,5 @@ Installing Exchange updates on a server that's a member of a DAG is a relatively
     
 For more information about the latest Exchange updates, see [Exchange Server Updates: build numbers and release dates](https://technet.microsoft.com/library/hh135098.aspx).
   
+
 

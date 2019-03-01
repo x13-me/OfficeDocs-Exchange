@@ -1,15 +1,17 @@
 ---
-title: "Set up connectors for secure mail flow with a partner organization"
-ms.author: supotter
-author: supotter
-manager: scotv
-ms.date: 6/23/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can create connectors to apply security restrictions to mail exchanges with a partner organization or service provider. A partner can be an organization you do business with, such as a bank. It can also be a third-party cloud service that provides services such as archiving, anti-spam, and filtering.
+ms.topic: article
+author: supotter
+ms.author: supotter
 ms.assetid: 1ce4d6a4-41ba-4d1e-9ca9-e826252c1041
-description: "You can create connectors to apply security restrictions to mail exchanges with a partner organization or service provider. A partner can be an organization you do business with, such as a bank. It can also be a third-party cloud service that provides services such as archiving, anti-spam, and filtering."
+ms.date: 6/23/2018
+title: Set up connectors for secure mail flow with a partner organization
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Set up connectors for secure mail flow with a partner organization
@@ -182,4 +184,5 @@ When you set these restrictions, all mail from your partner organization sent fr
 [About fixing connector validation errors](https://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx)
 
 [What happens when I have multiple connectors for the same scenario?](set-up-connectors-to-route-mail.md#what-happens-when-i-have-multiple-connectors-for-the-same-scenario)
+
 

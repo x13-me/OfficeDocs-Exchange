@@ -1,16 +1,18 @@
 ---
-title: "Using Basic authentication with Outlook for iOS and Android"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: conceptual
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android in an Exchange Server 2016 or Exchange Server 2019 on-premises environment when the app uses Basic authentication.'
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 4a124605-5824-472b-9865-3452c689be6d
-description: "Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android in an Exchange Server 2016 or Exchange Server 2019 on-premises environment when the app uses Basic authentication."
+ms.date: 7/5/2018
+title: Using Basic authentication with Outlook for iOS and Android
+ms.collection: exchange-server
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Using Basic authentication with Outlook for iOS and Android
@@ -73,4 +75,5 @@ You have three options for removing your information from the Outlook service.
 
 You can read about how our data is currently protected at the [Azure Trust Center](https://azure.microsoft.com/support/trust-center/). As noted previously, we're moving from Azure to Office 365. The security of these services is covered at [the Office 365 Trust Center](https://go.microsoft.com/fwlink/p/?LinkId=525776).
   
+
 

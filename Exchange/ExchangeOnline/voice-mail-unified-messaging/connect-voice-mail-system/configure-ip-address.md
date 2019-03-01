@@ -1,15 +1,17 @@
 ---
-title: "Configure the IP address"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Before you create a Unified Messaging (UM) IP gateway, you must first set the IP address or the fully qualified domain name (FQDN) on the VoIP gateway, IP PBX, or session border controller (SBC) that you're using. Then, when you create the UM IP gateway, you set the IP address or FQDN. You can change the IP address or FQDN later.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 100541c1-2297-4c46-9602-b304736541a8
-description: "Before you create a Unified Messaging (UM) IP gateway, you must first set the IP address or the fully qualified domain name (FQDN) on the VoIP gateway, IP PBX, or session border controller (SBC) that you're using. Then, when you create the UM IP gateway, you set the IP address or FQDN. You can change the IP address or FQDN later."
+ms.date: 11/17/2014
+title: Configure the IP address
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Configure the IP address
@@ -65,5 +67,6 @@ This example prevents the UM IP gateway named `MyUMIPGateway` from accepting inc
 ```
 Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
 ```
+
 
 

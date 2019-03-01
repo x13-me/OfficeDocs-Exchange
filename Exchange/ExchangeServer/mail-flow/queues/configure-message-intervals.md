@@ -1,15 +1,17 @@
 ---
-title: "Configure message retry, resubmit, and expiration intervals"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to configure message expiration intervals, message retries, and message resubmissions in the Transport service on a Mailbox server or on an Edge Transport server in Exchange 2016 and 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 5420124f-aa4c-4702-b493-40a9a7edb786
-description: "Summary: Learn how to configure message expiration intervals, message retries, and message resubmissions in the Transport service on a Mailbox server or on an Edge Transport server in Exchange 2016 and 2019."
+ms.date: 7/6/2018
+title: Configure message retry, resubmit, and expiration intervals
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure message retry, resubmit, and expiration intervals
@@ -290,5 +292,6 @@ To verify that you've configured the message expiration timeout interval, do any
   ```
   Get-TransportService | Format-List Name,MessageExpirationTimeout
   ```
+
 
 

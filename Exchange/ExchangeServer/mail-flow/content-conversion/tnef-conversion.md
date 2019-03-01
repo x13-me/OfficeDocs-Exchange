@@ -1,15 +1,17 @@
 ---
-title: "TNEF conversion options"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the TNEF message conversion and preservation options that are available in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 989a62fc-4bc1-448f-90c8-7c7b56fe1084
-description: "Summary: Learn about the TNEF message conversion and preservation options that are available in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/6/2018
+title: TNEF conversion options
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # TNEF conversion options
@@ -106,4 +108,5 @@ The setting at a higher level overrides the setting at a lower level. The TNEF s
   
  **Note**: Exchange never sends Summary Transport Neutral Encoding Format (STNEF) messages to external recipients. Only TNEF messages can be sent to recipients outside the Exchange organization.
   
+
 

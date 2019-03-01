@@ -1,17 +1,19 @@
 ---
-title: "Manage dynamic distribution groups"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDynamicGroupWizardForm.CreateDynamicGroupInformationWizardPage'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about dynamic distribution groups and how to create and manage them.'
+ms.topic: article
+author: msdmaguire
+f1_keywords:
+- Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDynamicGroupWizardForm.CreateDynamicGroupInformationWizardPage
+ms.author: dmaguire
 ms.assetid: 8ef85d0a-41df-4b5c-b8e7-ca8d09c048ca
-description: "Summary: Learn about dynamic distribution groups and how to create and manage them."
+ms.date: 7/5/2018
+title: Manage dynamic distribution groups
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage dynamic distribution groups
@@ -311,3 +313,4 @@ To verify that you've successfully changed properties for a dynamic distribution
   ```
   Get-Mailbox -OrganizationalUnit "Marketing" | Format-List Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
   ```
+

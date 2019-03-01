@@ -1,16 +1,18 @@
 ---
-title: "Using hybrid Modern Authentication with Outlook for iOS and Android"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Exchange 2016 and Exchange 2019 administrators can learn how to deploy hybrid Modern Authentication and Enterprise Mobility + Security features to enable support for Outlook for iOS and Android.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 0e701643-1f18-4cc3-8595-4fd4b15caf6c
-description: "Exchange 2016 and Exchange 2019 administrators can learn how to deploy hybrid Modern Authentication and Enterprise Mobility + Security features to enable support for Outlook for iOS and Android."
+ms.date: 
+title: Using hybrid Modern Authentication with Outlook for iOS and Android
+ms.collection: exchange-server
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Using hybrid Modern Authentication with Outlook for iOS and Android
@@ -101,8 +103,11 @@ The hybrid Modern Authentication architecture has the following technical requir
   - Intune
     
 3. **Exchange hybrid setup**: Requires full hybrid relationship between Exchange on-premises with Exchange Online.
+   
+  - Hybrid Office 365 tenant is configured in full hybrid configuration using Exchange Classic Hybrid Topology mode and is setup as specified in the [Exchange Deployment Assistant](https://technet.microsoft.com/exdeploy)
     
-  - Hybrid Office 365 tenant is configured in full hybrid configuration mode and is setup as specified in the [Exchange Deployment Assistant](https://technet.microsoft.com/exdeploy)
+    > [!Note]
+    > Hybrid Modern Authentication is not supported with the [Hybrid Agent](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent).
     
   - Requires an Office 365 Enterprise, Business, or Education tenant.
     
@@ -192,7 +197,7 @@ In addition to the above minimum policy requirements, you should consider deploy
   
 ### Enable hybrid Modern Authentication
 
-1. If you haven't enabled hybrid Modern Authentication, review the prerequisites as outlined in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](https://support.office.com/article/ef753b32-7251-4c9e-b442-1a5aec14e58d?). After you've completed the prereqsuisites, do the steps in [How to configure Exchange Server on-premises to use hybrid Modern Authentication](https://support.office.com/article/cef3044d-d4cb-4586-8e82-ee97bd3b14ad?).
+1. If you haven't enabled hybrid Modern Authentication, review the prerequisites as outlined in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview). After you've completed the prereqsuisites, do the steps in [How to configure Exchange Server on-premises to use hybrid Modern Authentication](https://docs.microsoft.com/office365/enterprise/configure-exchange-server-for-hybrid-modern-authentication).
   
 2. Create an Exchange on-premises device access allow rule to allow Exchange Online to connect to your on-premises environment using the ActiveSync protocol:
     
@@ -441,4 +446,5 @@ You can also create a scheduled task that executes the above command every 24 ho
   
 There are other issues that may prevent hybrid Modern Authentication from functioning correctly. For more information, see the troubleshooting section in [Announcing Hybrid Modern Authentication for Exchange On-Premises](https://blogs.technet.microsoft.com/exchange/2017/12/06/announcing-hybrid-modern-authentication-for-exchange-on-premises/).
   
+
 

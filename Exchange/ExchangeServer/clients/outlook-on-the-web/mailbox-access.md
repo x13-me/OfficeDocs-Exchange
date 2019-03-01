@@ -1,15 +1,17 @@
 ---
-title: "Enable or disable Outlook on the web access to mailboxes in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn how administrators can enable or disable Outlook on the web (formerly known as Outlook Web App) access to specific mailboxes in Exchange Server 2016 or Exchange Server 2019.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: abc19646-6211-4f18-a060-e347452dcc53
-description: "Learn how administrators can enable or disable Outlook on the web (formerly known as Outlook Web App) access to specific mailboxes in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/5/2018
+title: Enable or disable Outlook on the web access to mailboxes in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Enable or disable Outlook on the web access to mailboxes in Exchange Server
@@ -177,5 +179,6 @@ To verify that you've successfully enabled or disabled Outlook on the web access
   ```
   Get-CasMailbox -ResultSize unlimited -Filter {OWAEnabled -eq $false}
   ```
+
 
 

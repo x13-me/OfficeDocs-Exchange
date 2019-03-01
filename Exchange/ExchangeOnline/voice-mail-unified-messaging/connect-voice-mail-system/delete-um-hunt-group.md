@@ -1,15 +1,17 @@
 ---
-title: "Delete a UM hunt group"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: After you delete a Unified Messaging (UM) hunt group, the UM IP gateway associated with the UM hunt group will no longer service or answer incoming calls. If deleting the UM hunt group leaves the UM IP gateway without any remaining configured hunt groups, the UM IP gateway can't handle or process UM calls.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 11ac102d-b58d-486c-85b6-e096428e556d
-description: "After you delete a Unified Messaging (UM) hunt group, the UM IP gateway associated with the UM hunt group will no longer service or answer incoming calls. If deleting the UM hunt group leaves the UM IP gateway without any remaining configured hunt groups, the UM IP gateway can't handle or process UM calls."
+ms.date: 11/17/2014
+title: Delete a UM hunt group
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Delete a UM hunt group
@@ -53,5 +55,6 @@ This example deletes a UM hunt group named `MyUMHuntGroup`.
 ```
 Remove-UMHuntGroup -identity MyUMHuntGroup
 ```
+
 
 

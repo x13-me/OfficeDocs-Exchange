@@ -1,15 +1,17 @@
 ---
-title: "Set Outlook Voice Access PIN policies"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can set PIN policies on a Unified Messaging (UM) mailbox policy. UM mailbox policies can be configured to increase the level of security for UM-enabled users that use Outlook Voice Access by requiring users to comply with the predefined PIN policies for your organization.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 5b2800b7-bfa6-4282-975c-0706ae25ad64
-description: "You can set PIN policies on a Unified Messaging (UM) mailbox policy. UM mailbox policies can be configured to increase the level of security for UM-enabled users that use Outlook Voice Access by requiring users to comply with the predefined PIN policies for your organization."
+ms.date: 11/17/2014
+title: Set Outlook Voice Access PIN policies
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Set Outlook Voice Access PIN policies
@@ -70,5 +72,6 @@ This example sets the PIN settings for users associated with the UM mailbox poli
 ```
 Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
 ```
+
 
 

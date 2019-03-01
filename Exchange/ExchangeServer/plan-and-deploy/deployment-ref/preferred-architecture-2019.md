@@ -1,16 +1,18 @@
 ---
-title: "Exchange 2019 preferred architecture"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the preferred architecure (PA) for Exchange Server 2019'
+ms.topic: reference
+author: chrisda
+ms.author: chrisda
 ms.assetid: 
-description: "Summary: Learn about the preferred architecure (PA) for Exchange Server 2019"
-monikerRange: "exchserver-2019"
+monikerRange: exchserver-2019
+title: Exchange 2019 preferred architecture
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.date: 
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Exchange 2019 preferred architecture
@@ -226,3 +228,4 @@ At a minimum, you will want to deploy an Office Online Server (OOS) farm with at
 Exchange Server 2019 continues to improve upon the investments introduced in previous versions of Exchange as well as introduces additional technologies originally invented for use in Office 365.
 
 By aligning with the Preferred Architecture you will take advantage of these changes and provide the best on-premises user experience possible. You will continue the tradition of having a highly reliable, predictable, and resilient Exchange deployment.
+

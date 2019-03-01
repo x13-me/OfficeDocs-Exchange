@@ -1,15 +1,17 @@
 ---
-title: "Configure the number of input failures before Outlook Voice Access users are disconnected"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can configure the number of times that users who call in to an Outlook Voice Access number can enter incorrect data before they're disconnected. This setting applies to both Outlook Voice Access users and unauthenticated callers who use directory search.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 64c13d17-a26a-4c9b-b495-bd69c716456a
-description: "You can configure the number of times that users who call in to an Outlook Voice Access number can enter incorrect data before they're disconnected. This setting applies to both Outlook Voice Access users and unauthenticated callers who use directory search."
+ms.date: 11/17/2014
+title: Configure the number of input failures before Outlook Voice Access users are disconnected
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Configure the number of input failures before Outlook Voice Access users are disconnected
@@ -60,5 +62,6 @@ This example sets the input failures before disconnect to 5 on a UM dial plan na
 ```
 Set-UMDialPlan -identity MyUMDialPlan -InputFailuresBeforeDisconnect 5
 ```
+
 
 

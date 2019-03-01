@@ -1,15 +1,17 @@
 ---
-title: "Authorize calls for auto attendant callers"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can enable dialing authorizations on a Unified Messaging (UM) auto attendant. Dialing authorizations on an auto attendant are used to prohibit users who call in to the auto attendant from making in-country/region or international telephone calls, or outdialing. Outdialing happens when Unified Messaging makes an outgoing call for a user after they've called into a phone number that is configured on a UM auto attendant.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: c6c94fad-64df-44aa-a198-980f017ef716
-description: "You can enable dialing authorizations on a Unified Messaging (UM) auto attendant. Dialing authorizations on an auto attendant are used to prohibit users who call in to the auto attendant from making in-country/region or international telephone calls, or outdialing. Outdialing happens when Unified Messaging makes an outgoing call for a user after they've called into a phone number that is configured on a UM auto attendant."
+ms.date: 11/17/2014
+title: Authorize calls for auto attendant callers
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Authorize calls for auto attendant callers
@@ -62,5 +64,6 @@ This example enables the InCountry/RegionGroup1, InCountry/RegionGroup2. Interna
 ```
 Set-UMAutoAttendant -Identity MyUMAutoAttendant -AllowedInCountryOrRegionGroups InCountry/RegionGroup1,InCountry/RegionGroup2 -AllowedInternationalGroups InternationalGroup1,InternationalGroup2
 ```
+
 
 

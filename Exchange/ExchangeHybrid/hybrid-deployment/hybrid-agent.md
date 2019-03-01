@@ -66,6 +66,7 @@ The HCW establishes connections from your Client Access Server to domains.live.c
 
 Keep the following issues in mind before you install the Hybrid agent:
 
+- [Hybrid Modern Authentication](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview) is not supported with the Hybrid Agent. Customers will need to leverage the Classic Exchange Hybrid Topology and publish AutoDiscover, EWS, MAPI and OAB endpoints for hybrid Modern Authentication to function with various Outlook clients.
 - MailTips, Message Tracking, and Multi-mailbox search do not traverse the Hybrid agent. These Hybrid features require the classic connectivity model where Exchange Web Services (EWS) and Autodiscover are published on-premises and are externally available to Office 365.
 - The public preview only supports a single Hybrid agent install for the Exchange organization. Support multiple agent installs for redundancy is being worked on but isn't available yet. If the server where the Hybrid agent is installed goes offline, free/busy lookups from your tenant to your on-premises organization and mailbox migrations to or from your tenant won't work. If the server where the agent is installed is permanently offline, was rebuilt, or the agent was uninstalled, you can re-run the Hybrid Configuration wizard to reinstall the Hybrid agent directly on the new server. 
 

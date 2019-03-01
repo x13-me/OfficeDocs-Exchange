@@ -1,17 +1,19 @@
 ---
-title: "An incompatible operating system was found [ValidOSVersion]"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 7/22/2015
-ms.audience: Developer
-ms.topic: reference
-f1_keywords:
-- 'ms.exch.setupreadiness.ValidOSVersion'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Microsoft Exchange Server 2016 Setup can't continue because it detected an incompatible operating system. You must install a compatible operating system on this computer before you install Exchange 2016. The following table shows the operating systems that are compatible with Exchange 2016.
+ms.topic: reference
+author: dstrome
+f1_keywords:
+- ms.exch.setupreadiness.ValidOSVersion
+ms.author: dstrome
 ms.assetid: a3a948d9-4991-4088-9013-0a4c944295e4
-description: "Microsoft Exchange Server 2016 Setup can't continue because it detected an incompatible operating system. You must install a compatible operating system on this computer before you install Exchange 2016. The following table shows the operating systems that are compatible with Exchange 2016."
+ms.date: 7/22/2015
+title: An incompatible operating system was found [ValidOSVersion]
+ms.collection: exchange-server
+ms.audience: Developer
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # An incompatible operating system was found [ValidOSVersion]
@@ -33,3 +35,4 @@ Microsoft Exchange Server 2016 Setup can't continue because it detected an incom
 For more information, see [Exchange Server system requirements](../../plan-and-deploy/system-requirements.md).
   
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+

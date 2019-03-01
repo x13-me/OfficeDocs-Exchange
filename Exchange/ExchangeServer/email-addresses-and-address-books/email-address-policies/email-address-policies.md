@@ -1,15 +1,17 @@
 ---
-title: "Email address policies in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about email address policies in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: b63b63bb-6faf-4337-8441-50bc64b49bb8
-description: "Summary: Learn about email address policies in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/6/2018
+title: Email address policies in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Email address policies in Exchange Server
@@ -154,4 +156,5 @@ After you create or modify an email address policy in the EAC or the Exchange Ma
   
 If the updates affect a large number of recipients (our recommendation is more than 3000), you should use the Exchange Management Shell to apply the updates to the affected recipients. For more information, see [Apply email address policies to recipients](eap-procedures.md#ApplyEAP).
   
+
 

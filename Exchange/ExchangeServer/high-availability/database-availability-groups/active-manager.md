@@ -1,15 +1,17 @@
 ---
-title: "Active Manager"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about Active Manager in Exchange Server 2016 and Exchange Server 2019 and how best copy and server selection (BCSS) works.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f4be27b7-1d7c-47b4-87ac-bfdfcc046f00
-description: "Summary: Learn about Active Manager in Exchange Server 2016 and Exchange Server 2019 and how best copy and server selection (BCSS) works."
+ms.date: 7/9/2018
+title: Active Manager
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Active Manager
@@ -133,4 +135,5 @@ If none of the database copies meets the ninth set of criteria, Active Manager t
   
 After one or more copies are located that meet one or more sets of criteria, the ACLL process copies any log files from the original source to the potential new active copy. After the ACLL process has completed, the PAM issues a mount request and either the database mounts and is made available to clients, or the database doesn't mount and the PAM searches for the next best copy (if one is available).
   
+
 

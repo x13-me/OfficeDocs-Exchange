@@ -1,17 +1,20 @@
 ---
-title: "Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exchange 2019 Memory Requirements, Exchange 2019 Client Compatibility"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: conceptual
-ms.prod: exchange-server-it-pro
 localization_priority: Critical
-ms.collection: Strat_EX_Admin
+monikerRange: exchserver-2016 || exchserver-2019
+description: 'Summary: Learn about what you need in your environment before you install Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: conceptual
+author: chrisda
+ms.author: chrisda
 ms.assetid: 
-description: "Summary: Learn about what you need in your environment before you install Exchange Server 2016 or Exchange Server 2019."
-monikerRange: "exchserver-2016 || exchserver-2019"
+ms.date: 
+title: Exchange Server 2019 system requirements, Exchange 2019 Requirements, Exchange 2019 Memory Requirements, Exchange 2019 Client Compatibility
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Exchange Server system requirements
@@ -252,3 +255,4 @@ Exchange Server offers several well-known protocols, and publishes APIs that thi
 Microsoft makes no warranties, expressed or implied, as to the overall suitability, fitness, compatibility, or security of clients that are created by third-party developers.
 
 If you want to use a third-party client that uses our protocols or APIs, we recommend that you thoroughly review and test all considerations (functionality, security, maintenance, management, and so on) before you deploy the client in the enterprise workspace. We also recommend that you make sure that the third-party vendor offers an appropriate Enterprise Support Agreement (ESA).
+

@@ -1,15 +1,17 @@
 ---
-title: "Enable or disable single item recovery for a mailbox"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to enable or disable single item recovery for user mailboxes in Exchange Server 2016 and Exchange Server 2019'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 2e7f1bcd-8395-45ad-86ce-22868bd46af0
-description: "Summary: Learn how to enable or disable single item recovery for user mailboxes in Exchange Server 2016 and Exchange Server 2019"
+ms.date: 7/5/2018
+title: Enable or disable single item recovery for a mailbox
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Enable or disable single item recovery for a mailbox
@@ -78,4 +80,5 @@ You can use this same command to verify that single item recovery is disabled fo
     
 - If a mailbox is placed on In-Place Hold or Litigation Hold, messages in the Recoverable Items folder are retained until the hold duration expires. If the hold duration is unlimited, then items are retained until the hold is removed or the hold duration is changed.
     
+
 

@@ -1,15 +1,17 @@
 ---
-title: "Create a theme for Outlook on the web in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create a custom theme for Outlook on the web in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 7e1fa13c-3de3-45c2-b1fa-e74fc8487bda
-description: "Summary: Learn how to create a custom theme for Outlook on the web in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 
+title: Create a theme for Outlook on the web in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create a theme for Outlook on the web in Exchange Server
@@ -257,3 +259,4 @@ The built-in Outlook on the web themes are located in the folder `%ExchangeInsta
 |whimsical|Whimsical|220|Static|
 |wntrlnd|Winterland|260|Static|
 |wrld|One World|270|Static|
+

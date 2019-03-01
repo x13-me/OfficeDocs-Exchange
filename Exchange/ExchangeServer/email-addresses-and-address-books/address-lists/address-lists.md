@@ -1,14 +1,16 @@
 ---
-title: "Address lists in Exchange Server"
+description: 'Summary: Learn about address lists and global address lists (GALs) how administrators can use them to organize recipients in Exchange Server 2016 and Exchange Server 2019.'
+localization_priority: Normal
 ms.author: chrisda
+ms.topic: article
 author: chrisda
+ms.prod: exchange-server-it-pro
+ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
+ms.collection: exchange-server
 ms.date: 
 ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
-localization_priority: Normal
-ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
-description: "Summary: Learn about address lists and global address lists (GALs) how administrators can use them to organize recipients in Exchange Server 2016 and Exchange Server 2019."
+title: Address lists in Exchange Server
+
 ---
 
 # Address lists in Exchange Server
@@ -110,3 +112,4 @@ After you create or modify an address list, you need to update the membership.
 If the address list contains a large number of recipients (our recommendation is more than 3000), you should use the Exchange Management Shell to update the address list (not the EAC). For more information, see [Update address lists](address-list-procedures.md#UpdateAddressList).
 
 To update a GAL, you always need to use the Exchange Management Shell. For more information, see [Use the Exchange Management Shell to update global address lists](address-list-procedures.md#UpdateGAL).
+

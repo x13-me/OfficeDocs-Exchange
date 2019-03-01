@@ -1,15 +1,17 @@
 ---
-title: "Activate a lagged mailbox database copy"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: About lagged mailbox database copies and how to activate them in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 493d9c40-644d-49d6-9291-949acbcfdcb6
-description: "Summary: About lagged mailbox database copies and how to activate them in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/9/2018
+title: Activate a lagged mailbox database copy
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Activate a lagged mailbox database copy
@@ -143,5 +145,6 @@ To verify that you've successfully activated a lagged mailbox database copy, do 
   ```
   Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
   ```
+
 
 

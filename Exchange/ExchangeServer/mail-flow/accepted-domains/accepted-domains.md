@@ -1,15 +1,17 @@
 ---
-title: "Accepted domains in Exchange, Exchange acceepted domains, exchange authoritative domain, Internal relay domain, Exchange external relay, Exchange external relay domain"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the three types of accepted domains in Exchange Server 2016 or Exchange Server 2019: authoritative, internal relay, and external relay.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: c1839a5b-49f9-4c53-b247-f4e5d78efc45
-description: "Summary: Learn about the three types of accepted domains in Exchange Server 2016 or Exchange Server 2019: authoritative, internal relay, and external relay."
+ms.date: 
+title: Accepted domains in Exchange, Exchange acceepted domains, exchange authoritative domain, Internal relay domain, Exchange external relay, Exchange external relay domain
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Accepted domains in Exchange Server
@@ -105,3 +107,4 @@ Because the forest root FQDN is automatically configured as the first accepted d
 - The first default domain is used as the primary address for all recipients in the default email address policy. If you configure another accepted domain as the default domain, the default email address policy isn't automatically updated.
     
 - Although you can configure any accepted domain as the default domain, you typically specify an authoritative domain.
+

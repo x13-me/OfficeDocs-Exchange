@@ -1,15 +1,17 @@
 ---
-title: "Message encoding options in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the options that are available for message encoding in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: c1d9edbb-d87c-41e5-881b-cd612d83d7e4
-description: "Summary: Learn about the options that are available for message encoding in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/6/2018
+title: Message encoding options in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Message encoding options in Exchange Server
@@ -180,4 +182,5 @@ The following table describes the order of precedence from highest priority to l
 |Outlook or Outlook on the web  <br/> |Message format  <br/> |Plain text or HTML  <br/> |
 |Remote domain  <br/> |Content type  <br/> | `MimeHtmlText` (the default value), `MimeText`, or `MimeHtml` <br/> |
    
+
 

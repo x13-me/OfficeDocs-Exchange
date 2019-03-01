@@ -1,15 +1,17 @@
 ---
-title: "Procedures for address book policies in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to manage address book policies, how to assign address book policies to users, and how to install and enable the Address Book Policy Routing Agent in Exchange Server.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 6359abaf-e6f6-4667-8c2b-3860728b39a9
-description: "Summary: Learn how to manage address book policies, how to assign address book policies to users, and how to install and enable the Address Book Policy Routing Agent in Exchange Server."
+ms.date: 
+title: Procedures for address book policies in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Procedures for address book policies in Exchange Server
@@ -415,3 +417,4 @@ To verify that you've successfully installed and configured the ABP Routing Agen
   ```
 
 - Have a user that's assigned an ABP send an email message to an user that's assigned a different ABP, and verify that the sender's email address doesn't resolve to their display name.
+

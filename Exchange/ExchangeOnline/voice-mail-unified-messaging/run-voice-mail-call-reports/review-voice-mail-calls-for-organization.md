@@ -1,14 +1,15 @@
 ---
-title: "Review the voice mail calls in your organization"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
 ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+ms.author: tonysmit
+manager: scotv
+ms.topic: article
+author: tonysmit
+ms.service: exchange-online
 ms.assetid: f6fdbe17-d1d2-442a-aa13-06b908d9c33a
+ms.collection: exchange-online
+ms.date: 11/17/2014
+title: Review the voice mail calls in your organization
 
 ---
 
@@ -100,5 +101,6 @@ The UM Call Statistics report includes the following information:
 [Investigate the audio quality of voice calls in your organization](audio-quality-of-voice-calls-in-organization.md)
 
 [Interpret voice mail call records](interpret-voice-mail-call-records.md)
+
 
 

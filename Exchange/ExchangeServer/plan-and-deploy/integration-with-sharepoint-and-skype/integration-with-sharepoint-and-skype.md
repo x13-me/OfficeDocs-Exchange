@@ -1,16 +1,19 @@
 ---
-title: "Plan Exchange 2016 integration with SharePoint and Skype for Business"
-ms.author: dmaguire
-author: msdmaguire
-manager: scotv
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn about ways to help enterprises meet compliance and regulatory requirements using Exchange 2016, SharePoint Server 2016, and Skype for Business Server.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 056b29f6-e0e9-4974-b763-002518857a93
-description: "Summary: Learn about ways to help enterprises meet compliance and regulatory requirements using Exchange 2016, SharePoint Server 2016, and Skype for Business Server."
+ms.date: 6/8/2018
+title: Plan Exchange 2016 integration with SharePoint and Skype for Business
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Plan Exchange 2016 integration with SharePoint and Skype for Business
@@ -161,4 +164,5 @@ The user photos feature lets you store high resolution user photos in Exchange 2
   
 As with UCS, user photos allow your organization to maintain a consistent user profile photo that can be consumed by client applications without requiring each application to have its own user photos and different ways to add and manage them. Users can manage their own photos by using Outlook on the web, SharePoint 2016 or Skype for Business. For detail about managing photos on Outlook on the web, see [My account](https://go.microsoft.com/fwlink/p/?LinkId=269646).
   
+
 

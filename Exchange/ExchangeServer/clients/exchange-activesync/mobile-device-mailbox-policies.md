@@ -1,15 +1,17 @@
 ---
-title: "Mobile device mailbox policies"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about managing mobile device mailbox policies in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9317b3bc-44a1-4e54-bc51-4f0b194b6a55
-description: "Summary: Learn about managing mobile device mailbox policies in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/5/2018
+title: Mobile device mailbox policies
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Mobile device mailbox policies
@@ -131,4 +133,5 @@ The following table summarizes the settings you can specify using mobile device 
 |Require storage card encryption  <br/> |This setting specifies whether the storage card must be encrypted. Not all mobile device operating systems support storage card encryption. For more information, see your mobile device and mobile operating system documentation.  <br/> |
 |Unapproved InROM application list  <br/> |This setting specifies a list of applications that cannot be run in ROM.  <br/> |
    
+
 

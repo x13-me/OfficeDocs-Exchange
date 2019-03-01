@@ -1,15 +1,17 @@
 ---
-title: "Set up client voice mail features in Exchange Online"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: This topic describes the client features that give users who are enabled for Exchange Unified Messaging (UM) access to the email and voice mail messages in their mailbox. These features let you offer your users simplified access to voice mail and email and an improved overall user experience.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 58493d02-0f66-4ea0-9686-ece51828f9f9
-description: "This topic describes the client features that give users who are enabled for Exchange Unified Messaging (UM) access to the email and voice mail messages in their mailbox. These features let you offer your users simplified access to voice mail and email and an improved overall user experience."
+ms.date: 6/24/2018
+title: Set up client voice mail features in Exchange Online
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Set up client voice mail features in Exchange Online
@@ -54,5 +56,6 @@ UM forwards incoming fax calls for a UM-enabled user to a dedicated fax partner 
 - Set the partner fax server URI to allow inbound faxing.
 
 - Configure authentication between the Mailbox server and the fax partner server.
+
 
 

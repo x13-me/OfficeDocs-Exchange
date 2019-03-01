@@ -1,15 +1,17 @@
 ---
-title: "Restore data using a recovery database"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Step-by-step guidance for restoring a recovery database in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d64c18e7-16af-4bd8-a5c5-01206984d4d1
-description: "Summary: Step-by-step guidance for restoring a recovery database in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 7/9/2018
+title: Restore data using a recovery database
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Restore data using a recovery database
@@ -103,4 +105,5 @@ To verify that you have successfully recovered the mailbox data, open the target
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
   
+
 

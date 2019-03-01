@@ -1,15 +1,18 @@
 ---
-title: "Use batch migration to migrate Exchange Server public folders to Office 365 Groups"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_EXOBlocker
+ms.author: dmaguire
+manager: serdars
+ms.topic: article
+author: msdmaguire
+ms.prod: exchange-server-it-pro
 ms.assetid: 1d800576-957d-4916-ae2a-55c08ca75be1
-description: "Summary: How to move your Exchange Server public folders to Office 365 Groups."
+ms.collection:
+- Strat_EX_EXOBlocker
+- exchange-server
+description: 'Summary: How to move your Exchange Server public folders to Office 365 Groups.'
+ms.audience: ITPro
+title: Use batch migration to migrate Exchange Server public folders to Office 365 Groups
+
 ---
 
 # Use batch migration to migrate Exchange Server public folders to Office 365 Groups
@@ -385,4 +388,5 @@ Note also that it's not possible to restore a subset of public folders, which me
   
 The corresponding groups in Office 365 won't be deleted as part of the roll back process. You'll have to clean or delete those groups manually.
   
+
 

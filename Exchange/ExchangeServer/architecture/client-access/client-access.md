@@ -1,16 +1,19 @@
 ---
-title: "Client Access services"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/3/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: Overview of the Client Access services on Mailbox servers in Exchange Server'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 87e206ab-7a7b-4b4f-be1a-5035713c74d2
-description: "Summary: Overview of the Client Access services on Mailbox servers in Exchange Server"
+ms.date: 7/3/2018
+title: Client Access services
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Client Access services
@@ -42,4 +45,5 @@ The Client Access services have the following features:
     
 - **Kerberos authentication for load-balanced Client Access services**: For more information, see [Configure Kerberos authentication for load-balanced Client Access services](kerberos-auth-for-load-balanced-client-access.md).
     
+
 

@@ -1,15 +1,17 @@
 ---
-title: "Role management permissions"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about permissions that are required to manage role management in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: reference
+author: dstrome
+ms.author: dstrome
 ms.assetid: cb9591c4-fbb3-4199-8007-6bbfdfd5a2e9
-description: "Summary: Learn about permissions that are required to manage role management in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/5/2018
+title: Role management permissions
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Role management permissions
@@ -45,4 +47,5 @@ You can use the features in the following table to manage the management role gr
 |Legacy permissions  <br/> |[Organization Management](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> |
 |Active Directory split permissions  <br/> |[Organization Management](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> **Important**: To run the `setup.exe` command with the _PrepareAD_ and _ActiveDirectorySplitPermissions_ parameters, the account you use must be a member of the Schema Admins and Enterprise Administrators groups.  <br/> |
    
+
 

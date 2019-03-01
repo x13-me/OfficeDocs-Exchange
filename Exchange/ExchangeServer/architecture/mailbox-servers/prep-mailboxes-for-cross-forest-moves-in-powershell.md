@@ -1,15 +1,17 @@
 ---
-title: "Prepare mailboxes for cross-forest moves using the Exchange Management Shell"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to manage cross-forest mailbox moves and migrations in Exchange 2016 and Exchange 2019 by using the Prepare-MoveRequest.ps1 script in the Exchange Management Shell.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 2cea59fb-69b7-4a2f-833f-de4d93cf1810
-description: "Summary: Learn how to manage cross-forest mailbox moves and migrations in Exchange 2016 and Exchange 2019 by using the Prepare-MoveRequest.ps1 script in the Exchange Management Shell."
+ms.date: 7/9/2018
+title: Prepare mailboxes for cross-forest moves using the Exchange Management Shell
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Prepare mailboxes for cross-forest moves using the Exchange Management Shell
@@ -210,4 +212,5 @@ If the _LinkedMailUser_ parameter is set, the script copies the source **objectS
 
 When the **Update-Recipient** cmdlet is called to convert the target object into a mail user, a new **LegacyExchangeDN** attribute is generated for the target mail user. The script copies the **LegacyExchangeDN** attribute of the target mail user as an x500 address to the **proxyAddress** properties of the source mailbox user.
   
+
 

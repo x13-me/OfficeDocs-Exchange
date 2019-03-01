@@ -1,15 +1,17 @@
 ---
-title: "Enable a UM auto attendant"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: By default, when a Unified Messaging (UM) auto attendant is created, its status is set to disabled. After you create the UM auto attendant, you can change its status to enable it to answer incoming calls.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 16667a8f-50ab-4bb8-9a05-0389511974b1
-description: "By default, when a Unified Messaging (UM) auto attendant is created, its status is set to disabled. After you create the UM auto attendant, you can change its status to enable it to answer incoming calls."
+ms.date: 11/17/2014
+title: Enable a UM auto attendant
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Enable a UM auto attendant
@@ -48,5 +50,6 @@ This example enables the UM auto attendant named `MyUMAutoAttendant` to answer i
 ```
 Enable-UMAutoAttendant -Identity MyUMAutoAttendant
 ```
+
 
 

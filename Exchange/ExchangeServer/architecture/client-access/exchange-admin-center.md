@@ -1,17 +1,19 @@
 ---
-title: "Exchange admin center in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
-ms.assetid: a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d
-
 description: "Summary: Learn about the Exchange admin center, the web-based management console that's available in Exchange Server."
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
+ms.assetid: a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d
+ms.date: 6/8/2018
+title: Exchange admin center in Exchange Server
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Exchange admin center in Exchange Server
@@ -285,4 +287,5 @@ The levels of support for operating system and browser combinations that you can
 |Internet Explorer 10  <br/> |Unsupported  <br/> |Supported  <br/> |n/a  <br/> |n/a  <br/> |
 |Internet Explorer 11  <br/> |Supported  <br/> |n/a  <br/> |Supported  <br/> |Supported  <br/> |
    
+
 

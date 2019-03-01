@@ -1,15 +1,17 @@
 ---
-title: "Enable or disable multimedia playback of protected voice messages"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can force users who receive protected voice mail messages to use the Play on Phone feature to listen to their messages. Or, if the client software doesn't support rights management, users must use Outlook Voice Access to listen to messages.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 3c33370c-4262-42b1-8d83-d61fc7c426cd
-description: "You can force users who receive protected voice mail messages to use the Play on Phone feature to listen to their messages. Or, if the client software doesn't support rights management, users must use Outlook Voice Access to listen to messages."
+ms.date: 11/17/2014
+title: Enable or disable multimedia playback of protected voice messages
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Enable or disable multimedia playback of protected voice messages
@@ -79,5 +81,6 @@ This example prevents users who are associated with the UM mailbox policy named 
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -RequireProtectedPlayOnPhone $true
 ```
+
 
 

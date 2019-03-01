@@ -1,15 +1,17 @@
 ---
-title: "Use AD FS claims-based authentication with Outlook on the web"
-ms.author: chrisda
-author: chrisda
-manager: scotv
-ms.date: 7/10/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn how to configure AD FS claims-based authentication to connect to Outlook on the web and the Exchange admin center in Exchange 2016 and Exchange 2019.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 919a9bfb-c6df-490a-b2c4-51796b0f0596
-description: "Learn how to configure AD FS claims-based authentication to connect to Outlook on the web and the Exchange admin center in Exchange 2016 and Exchange 2019."
+ms.date: 7/10/2018
+title: Use AD FS claims-based authentication with Outlook on the web
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Use AD FS claims-based authentication with Outlook on the web
@@ -906,4 +908,5 @@ You can use AD FS authentication for Outlook on the web and the EAC when you hav
   
 In Exchange 2016 organizations, users with mailboxes on Exchange 2010 servers can access their mailboxes through an Exchange 2016 server that's configured for AD FS authentication. The initial client connection to the or Exchange 2016 server uses AD FS authentication. However, the proxied connection to Exchange 2010 uses Kerberos. There's no supported way to configure Exchange 2010 for direct AD FS authentication.
   
+
 

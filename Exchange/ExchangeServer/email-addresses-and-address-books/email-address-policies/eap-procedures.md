@@ -1,17 +1,19 @@
 ---
-title: "Procedures for email address policies in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.NewEmailAddressPolicyWizardForm.EmailAddressPolicyIntroductionPage'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create, modify, remove, and apply email address policies in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+f1_keywords:
+- Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.NewEmailAddressPolicyWizardForm.EmailAddressPolicyIntroductionPage
+ms.author: chrisda
 ms.assetid: eb2bf42e-2058-4e17-85d5-97546433b40a
-description: "Summary: Learn how to create, modify, remove, and apply email address policies in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/6/2018
+title: Procedures for email address policies in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Procedures for email address policies in Exchange Server
@@ -442,4 +444,5 @@ In the Exchange Management Shell, you can specify **precanned recipient filters*
     
  **Note**: The _RecipientContainer_ (organizational unit) recipient filter parameter is available to both precanned recipient filters and custom recipient filters.
   
+
 

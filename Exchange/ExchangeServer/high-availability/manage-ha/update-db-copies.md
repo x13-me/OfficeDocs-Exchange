@@ -1,15 +1,17 @@
 ---
-title: "Update a mailbox database copy"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: How to update, or seed , a mailbox database copy in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: bead3cc5-7d50-446f-95b7-e432bcb7968e
-description: "Summary: How to update, or seed , a mailbox database copy in Exchange Server 2016 or Exchange Server 2019."
+ms.date: 6/8/2018
+title: Update a mailbox database copy
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Update a mailbox database copy
@@ -164,4 +166,5 @@ To verify that you've successfully seeded a mailbox database copy, do one of the
 
     The Status and Content Index State should both be Healthy.
     
+
 

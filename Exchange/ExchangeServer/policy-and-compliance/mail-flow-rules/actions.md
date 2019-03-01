@@ -1,15 +1,17 @@
 ---
-title: "Mail flow rule actions in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: scotv
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: reference
+author: chrisda
+ms.author: chrisda
 ms.assetid: 5d11a955-b1cc-4150-a0b9-a8cc48ba9bde
-description: "Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/9/2018
+title: Mail flow rule actions in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Mail flow rule actions in Exchange Server
@@ -22,7 +24,7 @@ For more information about mail flow rules in Exchange Server, see [Mail flow ru
   
 For more information about conditions and exceptions in mail flow rules, see [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md).
   
-For more information about actions in mail flow rules in Exchange Online Protection or Exchange Online, see [Transport rule actions](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx) or [Transport rule actions](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx).
+For more information about actions in mail flow rules in Exchange Online Protection or Exchange Online, see [Mail flow rule actions in Exchange Online](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx).
   
 ## Actions for mail flow rules on Mailbox servers
 <a name="hub"> </a>
@@ -112,8 +114,4 @@ The property values that are used for actions in mail flow rules are described i
 
 [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md)
   
-[Transport rule actions](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx) for Exchange Online 
-  
-[Transport rule actions](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx) for Exchange Online Protection 
-  
-
+[Mail flow rule actions in Exchange Online](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx) for Exchange Online 

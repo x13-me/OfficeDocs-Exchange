@@ -1,15 +1,17 @@
 ---
-title: "Scenario Integrate Office 365 with an email add-on service"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to integrate Office 365 with a third-party service that affects mail flow.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 7c5b7408-bfa2-4695-a6b7-21ddc8084d52
-description: "Admins can learn how to integrate Office 365 with a third-party service that affects mail flow."
+ms.date: 
+title: Scenario Integrate Office 365 with an email add-on service
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Scenario: Integrate Office 365 with an email add-on service
@@ -327,3 +329,4 @@ To verify that you've successfully created an inbound connector to receive messa
    ```
    Get-InboundConnector -Identity "<Connector Name>" | Format-List Name,SenderDomains,ConnectorType,RequireTls,RestrictDomainsToCertificate,TlsSenderCertificateName,CloudServicesMailEnabled
    ```
+

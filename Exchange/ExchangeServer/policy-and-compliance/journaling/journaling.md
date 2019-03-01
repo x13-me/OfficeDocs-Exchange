@@ -1,15 +1,17 @@
 ---
-title: "Journaling in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/8/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about journaling in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 6a20f207-4485-44ef-b010-ec760eb5165b
-description: "Summary: Learn about journaling in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/8/2018
+title: Journaling in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Journaling in Exchange Server
@@ -165,4 +167,5 @@ Because journal rules are stored in Active Directory, they're read and applied b
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612). If you're having trouble with the alternate journaling mailbox, see [KB2829319](https://go.microsoft.com/fwlink/p/?LinkId=331674).
   
+
 
