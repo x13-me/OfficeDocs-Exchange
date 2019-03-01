@@ -19,7 +19,7 @@ manager: serdars
 # Exchange Server post-installation tasks
 
 Read the following topics to help you configure your new Exchange 2016 or Exchange 2016 organization.
-  
+
 |**Topic**|**Description**|
 |:-----|:-----|
 |[Enter your Exchange product key](enter-product-key.md)|Learn how to license your Exchange server.|
@@ -30,7 +30,7 @@ Read the following topics to help you configure your new Exchange 2016 or Exchan
 |[Change the offline address book generation schedule in Exchange](change-oab-generation-schedule.md)|Learn how to change the offline address book (OAB) generation schedule on specific Exchange servers or for the whole organization|
 |[Configure certificate based authentication in Exchange 2016](configure-certificate-based-auth.md)|Learn how to configure CBA in Exchange 2016 CU1 or later|
 |[Edge Subscriptions](../../architecture/edge-transport-servers/edge-subscriptions.md)|Learn how to configure an EdgeSync Subscription between a new Edge Transport server in the perimeter network and the Exchange Mailbox servers in an internal Active Directory site.|
-   
+
 **Note**:
 
 If you've enabled the Scripting Agent in your Exchange organization, and you keep a customized %ExchangeInstallPath%Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml file on all of your Mailbox servers, you need to copy that file to every new Mailbox server that you deploy in your organization (the file isn't used on Edge Transport servers).

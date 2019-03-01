@@ -19,9 +19,9 @@ manager: serdars
 # Cannot remove mailbox database [UnwillingToRemoveMailboxDatabase]
 
 Exchange Setup can't continue because it can't remove a user mailbox database from the local server without incurring potential data loss.
-  
+
 Before Exchange Setup removes the Mailbox server role from a server, Setup confirms that alll mailbox databases have been removed from the server, or that the mailboxes on the server don't contain active mailboxes. However, user mailboxes might still remain on the server.
-  
+
 To resolve this issue do either of these steps:
 
 - To preserve the mailboxes and their content, move the mailboxes to another server. For instructions, see [Mailbox moves in Exchange Server](../../recipients/mailbox-moves.md).
@@ -31,8 +31,8 @@ To resolve this issue do either of these steps:
 - Remove the mailbox databases if they're no longer required. For instructions, see [Manage mailbox databases in Exchange Server](../../architecture/mailbox-servers/manage-databases.md).
 
 After you deal with the mailbox databases on the server, run Exchange Setup again.
-  
+
 - For more information about how to identify a mailbox in the database, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
-    
+
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 

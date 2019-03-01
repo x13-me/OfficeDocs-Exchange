@@ -5,7 +5,7 @@ ms.topic: article
 author: SerdarSoysal
 ms.author: serdars
 ms.assetid: a5e6ac44-5901-4eab-9017-c6fae80a0f83
-ms.date: 
+ms.date:
 title: Connect or restore a deleted mailbox
 ms.collection: exchange-server
 ms.audience: ITPro
@@ -90,7 +90,7 @@ Use the **Connect-Mailbox** cmdlet in the Exchange Management Shell to connect a
 
 > [!NOTE]
 >  As previously stated, when you connect linked, resource, or shared mailboxes, the Active Directory user account that you're linking the mailbox to must be disabled.
-  
+
 This example connects a deleted user mailbox to a user account that isn't mail enabled. The _Identity_ parameter specifies the display name of the deleted mailbox retained in the mailbox database named MBXDB01. The _User_ parameter specifies the Active Directory user account to connect the mailbox to.
 
 ```

@@ -66,7 +66,7 @@ Organizational limits apply to all Exchange 2019 servers, Exchange 2016 servers,
 |Maximum number of recipients in a message|5000|**Mail flow** \> **Receive connectors** \> **More options** ![More Options icon](../media/ITPro_EAC_MoreOptionsIcon.png) \> **Organization transport settings** \> **Limits** **Maximum number of recipients**|Cmdlet: **Set-TransportConfig** <br/> Parameter: _MaxRecipientEnvelopeLimit_|
 |Maximum attachment size for a message that matches the conditions of the mail flow rule (also known as a transport rule)|Not configured|**Mail flow** \> **Rules** \> **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) \> **Create a new rule**, or select an existing rule, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png). <br/> Click **More options**. <br/> Use the condition **Apply this rule if** \> **The message** \> **size is greater than or equal to**, and enter a value in kilobytes (KB).|Cmdlets: **New-TransportRule**, **Set-TransportRule** <br/> Parameter: _AttachmentSizeOver_|
 |Maximum message size for a message that matches the conditions of the mail flow rule|Not configured|**Mail flow** \> **Rules** \> **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) \> **Create a new rule**, or select an existing rule, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png). <br/> Click **More options**. <br/> Use the condition **Apply this rule if** \> **The message** \> **size is greater than or equal to**, and enter a value in kilobytes (KB).|Cmdlets: **New-TransportRule**, **Set-TransportRule** <br/> Parameter: _MessageSizeOver_|
- 
+
 To see the values of these organizational limits, run the following commands in the Exchange Management Shell:
 
 ```
@@ -95,7 +95,7 @@ You can assign specific message size limits to the Delivery Agent connectors and
 |Maximum size of a message sent through the Active Directory site link|Unlimited|Not available|Cmdlet: **Set-AdSiteLink** <br/> Parameter: _MaxMessageSize_|
 |Maximum size of a message sent through the Delivery Agent connector|Unlimited|Not available|Cmdlets: **New-DeliveryAgentConnector**, **Set-DeliveryAgentConnector** <br/> Parameter: _MaxMessageSize_|
 |Maximum size of a message sent through the Foreign connector|Unlimited|Not available|Cmdlet: **Set-ForeignConnector** <br/> Parameter: _MaxMessageSize_|
- 
+
 To see the values of these connector limits, run the following command in the Exchange Management Shell:
 
 ```
@@ -112,7 +112,7 @@ Server limits apply to specific Mailbox servers or Edge Transport servers. You c
 |Maximum size for a message sent by Outlook on the web clients|35 MB|Not available|You configure this value in web.config XML application configuration files on the Mailbox server. For more information, see [Configure client-specific message size limits](../architecture/client-access/client-message-size-limits.md).|
 |Maximum size for a message sent by Exchange ActiveSync clients|10 MB|Not available|You configure this value in web.config XML application configuration files on the Mailbox server. For more information, see [Configure client-specific message size limits](../architecture/client-access/client-message-size-limits.md).|
 |Maximum size for a message sent by Exchange Web Services clients|64 MB|Not available|You configure this value in web.config XML application configuration files on the Mailbox server. For more information, see [Configure client-specific message size limits](../architecture/client-access/client-message-size-limits.md).|
- 
+
 The pickup directory that's available on Edge Transport servers and Mailbox servers also has messages size limits that you can configure. Typically, the pickup directory isn't used in everyday mail flow. It's is used by administrators for mail flow testing, or by applications that need to create and submit their own messages files. For more information, see [Configure the Pickup Directory and the Replay Directory](http://technet.microsoft.com/library/c9ca7358-9a08-4f57-89d0-910e4438df8a.aspx).
 
 - Maximum size of all header fields in a message file placed in the pickup directory: 64 KB.
@@ -129,7 +129,7 @@ Recipient limits apply to a specific user object, such as a mailbox, mail contac
 |Maximum size of a message that can be sent to the specific recipient|Site mailbox provisioning policies: 36 MB <br/> All other recipient types: unlimited|For mailboxes: <br/> **Recipients** \> **Mailboxes** \> **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) \> **Mailbox features** \> **Mail flow** section \> **Message size restrictions** section \> **View details** \> **Received messages** section \> **Maximum message size (KB)** <br/> For mail users: <br/> **Recipients** \> **Contacts** \> **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) \> **Mail flow settings** \> **Message size restrictions** \> **View details** \> **Received messages** section \> **Maximum message size (KB)** <br/> This setting available in the EAC for other types of recipients.|Cmdlets: <br/> **Set-DistributionGroup** <br/> **Set-DynamicDistributionGroup** <br/> **Set-Mailbox** <br/> **Set-MailContact** <br/> **Set-MailUser** <br/> **Set-MailPublicFolder** <br/> **New-SiteMailboxProvisioningPolicy** <br/> **Set-SiteMailboxProvisioningPolicy** <br/> Parameter: _MaxReceiveSize_|
 |Maximum size of a message that can be sent by the specific sender|Unlimited|For mailboxes: <br/> **Recipients** \> **Mailboxes** \> **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) \> **Mailbox features** \> **Mail flow** section \> **Message size restrictions** section \> **View details** \> **Sent messages** section \> **Maximum message size (KB)** <br/> For mail users: <br/> **Recipients** \> **Contacts** \> **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) \> **Mail flow settings** \> **Message size restrictions** section \> **View details** \> **Sent messages** section \> **Maximum message size (KB)** <br/> This setting available in the EAC for other types of senders.|Cmdlets: <br/> **Set-DistributionGroup** <br/> **Set-DynamicDistributionGroup** <br/> **Set-Mailbox** <br/> **Set-MailContact** <br/> **Set-MailUser** <br/> **Set-MailPublicFolder** <br/> Parameter: _MaxSendSize_|
 |Maximum number of recipients in a message that's sent by the specific sender|Unlimited|For mailboxes: <br/> **Recipients** \> **Mailboxes** \> **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) \> **Mailbox features** \> **Mail flow** section \> **View details** \> **Recipient limit** section \> **Maximum recipients** <br/> This setting isn't available in the EAC for mail users.|Cmdlets: <br/> **Set-Mailbox**, **Set-MailUser** <br/> Parameter: _RecipientLimits_|
- 
+
 To see the values of these limits, run the corresponding **Get-** cmdlet for the recipient type in the Exchange Management Shell.
 
 For example, to see the limits that are configured on a specific mailbox, run the following command:

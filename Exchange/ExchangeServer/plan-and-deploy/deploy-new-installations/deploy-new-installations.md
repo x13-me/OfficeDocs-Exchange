@@ -19,18 +19,18 @@ manager: serdars
 # Deploy new installations of Exchange
 
 Before you begin your installation of Exchange Server, see [Planning and deployment](../../plan-and-deploy/plan-and-deploy.md) for important planning information, and information about system requirements and prerequisites.
-  
+
 The following topics provide information about deploying new installations of Exchange 2019 in your organization:
-  
+
 [Install Exchange Mailbox servers using the Setup wizard](install-mailbox-role.md)
-  
+
 [Install Exchange using unattended mode](unattended-installs.md)
-  
+
 [Install Exchange Edge Transport servers using the Setup wizard](install-edge-transport-role.md)
-  
+
 [Delegate the installation of Exchange servers](delegate-installations.md)
-  
+
 [Exchange dev/test environment in Azure](create-azure-test-environments.md)
-  
+
 After you've completed your installation, see [Exchange post-installation tasks](../../plan-and-deploy/post-installation-tasks/post-installation-tasks.md).
 
