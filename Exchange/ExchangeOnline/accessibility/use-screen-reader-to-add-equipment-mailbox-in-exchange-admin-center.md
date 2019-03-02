@@ -7,7 +7,9 @@ ms.assetid: 848fdbc6-34f7-4c46-807b-7ac85a28f725
 ms.date: 
 description: Admins can learn how to use a screen reader to create an equipment mailbox in the Exchange admin center (EAC) in Exchange Online.
 title: Use a screen reader to add a new equipment mailbox in the Exchange admin center
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online

@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: 7c90d413-f978-4af5-8bc5-6b86d897edc3
 ms.date: 
 title: Address books in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

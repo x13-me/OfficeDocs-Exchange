@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: 2b5b8f6a-1bce-4872-8989-bac53ffafaa4
 ms.date: 12/9/2016
 title: Public attachment handling in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: laurawi

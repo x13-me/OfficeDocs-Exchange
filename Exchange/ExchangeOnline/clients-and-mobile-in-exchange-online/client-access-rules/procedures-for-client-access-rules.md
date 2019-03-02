@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: a0e11307-3577-499f-b407-6fcfae576844
 ms.date: 6/11/2018
 title: Procedures for Client Access Rules in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

@@ -7,7 +7,9 @@ ms.assetid: 69a5beef-a6e7-4d2e-9446-e2a0de9514f4
 ms.date: 
 description: Admins can learn how to use a screen reader to open the Exchange admin center (EAC) in Exchange Online.
 title: Use a screen reader to open the Exchange admin center in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online

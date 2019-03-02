@@ -7,7 +7,9 @@ ms.topic: article
 author: chrisda
 ms.service: exchange-online
 ms.assetid: 828cf844-0f26-44f4-9a76-20bdbd58b992
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.date: 6/24/2018
 title: Message format and transmission in Exchange Online
 
