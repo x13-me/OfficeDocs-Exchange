@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: 347207fa-cfb7-40a6-b19a-831dcdb54ad5
 ms.date: 
 title: Create an Outlook on the web mailbox policy in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

@@ -7,7 +7,9 @@ ms.assetid: 3d8f2b49-c27e-40c9-808b-4bc48f3cdb07
 ms.date: 
 description: Admins can learn how to use a screen reader to create mail flow rules (also known as transport rules) in the Exchange admin center (EAC) that use Office 365 Message Encryption (OME) to encrypt and decrypt messages in Exchange Online.
 title: Use a screen reader to define rules that encrypt or decrypt email messages in the Exchange admin center in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online

@@ -7,7 +7,9 @@ ms.assetid: 69f58e99-c550-4274-ad18-c805d654b4c4
 ms.date: 
 description: 'Learn how to set up printers, scanners, LOB applications to send email using Office 365. '
 title: How to set up a multifunction device or application to send email using Office 365
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - BCS160
 - MOE150

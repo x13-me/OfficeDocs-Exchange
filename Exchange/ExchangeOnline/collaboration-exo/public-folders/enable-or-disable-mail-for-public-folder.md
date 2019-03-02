@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: 3d69f76d-ff3c-46c1-b962-6a1baa425d8a
 ms.date: 6/15/2016
 title: Mail-enable or mail-disable a public folder
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: laurawi

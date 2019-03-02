@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: 1efe7737-b573-4f36-a0f2-27714d2ebdb0
 ms.date: 9/21/2018
 title: Account setup with modern authentication in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.reviewer: smithre4
 ms.audience: ITPro
 ms.service: exchange-online

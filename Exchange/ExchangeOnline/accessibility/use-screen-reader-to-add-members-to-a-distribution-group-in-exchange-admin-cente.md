@@ -7,7 +7,9 @@ ms.assetid: 86de703c-5c8e-477e-9a52-f466e5f66778
 ms.date: 
 description: Admins can learn how to use a screen reader to add members to a distribution group in the Exchange admin center (EAC) in Exchange Online.
 title: Use a screen reader to add members to a distribution group in the Exchange admin center in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online
