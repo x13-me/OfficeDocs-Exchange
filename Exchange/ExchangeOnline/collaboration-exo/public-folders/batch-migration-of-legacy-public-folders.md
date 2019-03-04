@@ -9,6 +9,7 @@ ms.assetid: e8ab9309-7d12-4f02-bfc4-14e61a373958
 ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-online
+- M365-email-calendar
 description: 'Summary: Use these procedures to move your Exchange 2010 public folders to Office 365.'
 ms.audience: ITPro
 title: Use batch migration to migrate legacy public folders to Office 365 and Exchange Online

@@ -7,7 +7,9 @@ ms.assetid: 4c70c606-5e95-4cf7-abce-cf85f1ac4179
 ms.date: 8/15/2018
 description: If you want to migrate email for your google app users to Office 365, the users need to create an app password that you will use together with their google apps password to connect to their Gmail. Before they can create an app password, you will have to allow them to turn on 2-step verification in the Google Admin console.
 title: Enable 2-step verification for your Google apps users
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150

@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: ff7f0d3d-1b9d-4c49-b7fe-1ab5d2805b00
 ms.date: 6/24/2018
 title: Exchange ActiveSync in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: laurawi

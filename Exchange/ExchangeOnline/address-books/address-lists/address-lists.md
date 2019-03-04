@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
 ms.date: 
 title: Address lists in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

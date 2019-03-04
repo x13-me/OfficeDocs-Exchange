@@ -6,7 +6,9 @@ author: dstrome
 ms.author: dstrome
 ms.assetid: f15297f3-32c3-44b6-87b5-dd64dc2bcf7e
 title: Automatically save sent items in delegator's mailbox
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - BCS160
 - MET150

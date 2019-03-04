@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: 51d8e269-b0d5-4bc7-9b3d-0460871e54fa
 ms.date: 
 title: Apply or remove an Outlook on the web mailbox policy on a mailbox in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

@@ -1,13 +1,15 @@
 ---
 localization_priority: Normal
-ms.topic: overview
+ms.topic: conceptual
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: d9acb371-fd6c-4c14-aa8e-db5cbe39aa57
 ms.date: 
 description: There are many paths to migrate data from an on-premises email organization to Microsoft Office 365. When planning a migration to Office 365, a common question is about how to improve the performance of data migration and optimize migration velocity.
 title: Office 365 migration performance and best practices
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150

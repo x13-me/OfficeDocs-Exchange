@@ -59,8 +59,8 @@ Users whose mailboxes are on Exchange Server 2013 or Exchange Server 2016 won’
 
 3.  Create a proxy mailbox within the new mailbox database and hide the mailbox from the address book. The SMTP of this mailbox will be returned by AutoDiscover as the *DefaultPublicFolderMailbox* SMTP, so that by resolving this SMTP the client can reach the legacy exchange server for public folder access.
     
-    ```powershell
-    New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
+    ```powershell    
+    New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> -EmailAddresses <email address> -UserPrincipalName <user principal name> -Password <password>
     ```
 
     ```powershell

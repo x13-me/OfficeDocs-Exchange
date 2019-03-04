@@ -7,7 +7,9 @@ ms.author: dstrome
 ms.assetid: 7a7bc6fe-3ab8-4d39-a655-ec3390a1437e
 ms.date: 3/9/2015
 title: Sharing in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

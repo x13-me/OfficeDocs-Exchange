@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: 87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8
 ms.date: 12/18/2017
 title: Monitoring, reporting, and message tracing in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

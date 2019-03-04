@@ -1,13 +1,15 @@
 ---
 localization_priority: Normal
 description: A basic overview of Outlook on the web in Exchange Online.
-ms.topic: article
+ms.topic: conceptual
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: c30ff7b8-0f12-455b-a70e-3447634f17ce
 ms.date: 
 title: Outlook on the web in Exchange Online
-ms.collection: exchange-online
+ms.collection: ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

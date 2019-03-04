@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: 2f9fc960-6d0b-472a-a81a-6d8b629b4d5d
 ms.date: 
 title: Outlook on the web mailbox policy procedures in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: 66023a62-1fd3-4019-be2b-4e7147db148a
 ms.date: 
 title: Supported character sets for remote domains in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

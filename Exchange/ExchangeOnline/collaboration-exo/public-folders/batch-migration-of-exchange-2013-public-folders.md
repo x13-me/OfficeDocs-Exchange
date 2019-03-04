@@ -9,6 +9,7 @@ ms.assetid: 25a5234c-dd2c-487b-8541-3655fbeb030a
 ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-online
+- M365-email-calendar
 description: 'Summary: This article tells you how to move modern public folders from Exchange 2013 to Office 365.'
 ms.audience: ITPro
 title: Use batch migration to migrate Exchange 2013 public folders to Exchange Online
