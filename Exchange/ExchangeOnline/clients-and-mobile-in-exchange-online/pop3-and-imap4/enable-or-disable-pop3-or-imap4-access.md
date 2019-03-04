@@ -7,7 +7,7 @@ ms.author: dmaguire
 ms.assetid: 4e351027-1a96-42c6-b4b2-8218d2070f25
 ms.date: 6/23/2017
 title: Enable or Disable POP3 or IMAP4 access for a user
-ms.collection: ms.collection: 
+ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
