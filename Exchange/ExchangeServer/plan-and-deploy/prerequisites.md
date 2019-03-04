@@ -5,8 +5,8 @@ description: 'Summary: Learn about the Windows operating system prerequisites fo
 ms.topic: conceptual
 author: chrisda
 ms.author: chrisda
-ms.assetid: 
-ms.date: 
+ms.assetid:
+ms.date:
 title: Exchange Server prerequisites, Exchange 2019 system requirements, Exchange 2019 requirements
 ms.collection:
 - Strat_EX_Admin
@@ -54,7 +54,7 @@ To actually install Exchange 2016 and Exchange 2019, see [Deploy new installatio
 > [!NOTE]
 > New to Exchange 2019 is the ability to upgrade your operating system to a newer version while Exchange is installed on Windows Server 2019 or later.
 ::: moniker-end
-    
+
 - Verify the computer is joined to the appropriate internal Active Directory domain.
 
 - Install the latest Windows updates on your computer. For more information, see [Deployment Security Checklist](https://technet.microsoft.com/library/aa996026(v=exchg.150).aspx).
@@ -78,7 +78,7 @@ You can use any member of the Active Directory domain to prepare Active Director
 
      > [!NOTE]
      > The Visual C++ Redistributable package is required if you're using the Exchange Setup Wizard to prepare Active Directory. If you're using unattended Setup from the command line to prepare Active Directory, this package isn't required. For more information, see [Prepare Active Directory and domains](prepare-ad-and-domains.md).
-    
+
 2. Install the Remote Tools Administration Pack by running the following command in Windows PowerShell:
 
     ```
@@ -95,7 +95,7 @@ The requirements to install Exchange 2019 on Windows Server 2019 computers are d
 - Use the /InstallWindowsComponents switch in unattended Setup mode.
 
 - Select the check box in the Exchange Setup Wizard to install Windows prerequisites.
- 
+
 When you use one of these options, you don't need to restart the computer after the Windows components have been added.
 
 ### Exchange 2019 Mailbox servers on Windows Server 2019
@@ -105,20 +105,20 @@ When you use one of these options, you don't need to restart the computer after 
     a. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/p/?linkid=863265) or later
 
     b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
-    
+
     c. [Visual C++ Redistributable Package for Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=2002913)
-    
+
      > [!NOTE]
      > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
 2. Add the required Lync Server or Skype for Business Server components:
 
     a. Install the Server Media Foundation windows feature by executing the following command in Windows PowerShell:
-    
+
       ```
       Install-WindowsFeature Server-Media-Foundation
       ```
-    
+
    b. Install [Unified Communications Managed API 4.0](https://www.microsoft.com/download/details.aspx?id=34992). This package is available for download and in the \UCMARedist folder on the Exchange Server media.
 
     > [!NOTE]
@@ -137,7 +137,7 @@ When you use one of these options, you don't need to restart the computer after 
       ```
       Install-WindowsFeature Server-Media-Foundation, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-PowerShell, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Metabase, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, RSAT-ADDS
       ```
-    
+
 ### Exchange 2019 Edge Transport servers on Windows Server 2019
 
 1. Install the [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
@@ -215,7 +215,7 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
      > [!NOTE]
      > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
-     > [!NOTE] 
+     > [!NOTE]
      > Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Other Exchange installations (management tools and Edge Transport) only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
 
     e. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
@@ -291,7 +291,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 > [!NOTE]
 > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
-2. Run the following command in an elevated Windows PowerShell window (a Windows PowerShell window you open by selecting **Run as administrator**): 
+2. Run the following command in an elevated Windows PowerShell window (a Windows PowerShell window you open by selecting **Run as administrator**):
 
     ```
     Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementScriptingTools,IIS-ManagementScriptingTools,IIS-IIS6ManagementCompatibility,IIS-LegacySnapIn,IIS-ManagementConsole,IIS-Metabase,IIS-WebServerManagementTools,IIS-WebServerRole
@@ -306,7 +306,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 > [!NOTE]
 > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
-3. Run the following command in an elevated Windows PowerShell window (a Windows PowerShell window you open by selecting **Run as administrator**): 
+3. Run the following command in an elevated Windows PowerShell window (a Windows PowerShell window you open by selecting **Run as administrator**):
 
     ```
     Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementScriptingTools,IIS-ManagementScriptingTools,IIS-IIS6ManagementCompatibility,IIS-LegacySnapIn,IIS-ManagementConsole,IIS-Metabase,IIS-WebServerManagementTools,IIS-WebServerRole

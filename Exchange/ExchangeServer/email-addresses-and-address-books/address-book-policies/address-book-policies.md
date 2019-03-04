@@ -5,7 +5,7 @@ ms.topic: article
 author: chrisda
 ms.author: chrisda
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
-ms.date: 
+ms.date:
 title: Address book policies in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
@@ -18,7 +18,7 @@ manager: serdars
 
 Address book policies (ABPs) lets administrators segment users into specific groups to provide customized views of the organization's global address list (GAL). The goal of an ABP is to provide a simpler mechanism for GAL segmentation (also known as *GAL segregation*) in on-premises organizations that require multiple GALs.
 
-An ABP contains these elements: 
+An ABP contains these elements:
 
 - One GAL. For more information about GALs, see [Global address lists](../address-lists/address-lists.md#global-address-lists).
 

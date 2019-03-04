@@ -39,7 +39,7 @@ Mail contacts are essentially contacts for people outside your Exchange or organ
 
 2. Click **New** ![Add icon](../media/ITPro_EAC_AddIcon.png) \> **Mail contact**.
 
-3. Complete the following boxes on the **New mail contact** page: 
+3. Complete the following boxes on the **New mail contact** page:
 
   - **First name**: Use this box to type the contact's first name.
 

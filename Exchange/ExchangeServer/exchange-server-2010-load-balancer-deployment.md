@@ -15,7 +15,7 @@ title: Exchange Server 2010 load balancer deployment
 
 # Exchange Server 2010 load balancer deployment
 
-This page describes which server load balancer partners have completed solution testing with Exchange Server 2010 and contains pointers to accompanying deployment white papers hosted by the partner. 
+This page describes which server load balancer partners have completed solution testing with Exchange Server 2010 and contains pointers to accompanying deployment white papers hosted by the partner.
 
 ## About the qualification program
 The qualification program for load balancers is designed to ensure that customers have seamless experiences with setup, support, and use of qualified load balancers with Microsoft's Exchange Server 2010. Only products that meet Exchange Server 2010 requirements will be listed.

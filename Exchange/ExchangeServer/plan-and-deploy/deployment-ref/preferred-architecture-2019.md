@@ -4,12 +4,12 @@ description: 'Summary: Learn about the preferred architecure (PA) for Exchange S
 ms.topic: reference
 author: chrisda
 ms.author: chrisda
-ms.assetid: 
+ms.assetid:
 monikerRange: exchserver-2019
 title: Exchange 2019 preferred architecture
 ms.collection: exchange-server
 ms.audience: ITPro
-ms.date: 
+ms.date:
 ms.prod: exchange-server-it-pro
 manager: serdars
 
@@ -45,7 +45,7 @@ The PA covers the following four areas of focus:
 
 1. [Namespace design](#namespace-design)
 
-2. [Site resilient datacenter pair design](#site-resilient-datacenter-pair-design) 
+2. [Site resilient datacenter pair design](#site-resilient-datacenter-pair-design)
 
 3. [Server design](#server-design)
 
@@ -97,7 +97,7 @@ In the PA, all servers are physical servers and use locally attached storage. Ph
 
 2. Virtualization comes with a slight performance penalty as well as adding an additional layer of management and complexity, which introduces additional recovery modes that do not add value, particularly since Exchange Server natively provides the same functionality.
 
-### Commodity servers 
+### Commodity servers
 
 Commodity server platforms are used in the PA. Current commodity platforms are and include:
 

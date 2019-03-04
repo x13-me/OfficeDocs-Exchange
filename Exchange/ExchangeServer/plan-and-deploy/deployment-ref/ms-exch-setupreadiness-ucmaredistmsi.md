@@ -19,9 +19,9 @@ manager: serdars
 # UCMA 4.0, Core Runtime not installed [UcmaRedistMsi]
 
 Exchange 2016 Setup requires the Unified Communications Managed API 4.0 Runtime for Unified Messaging (UM) services on the Mailbox server role. You need to install this update before Exchange 2016 Setup can continue.
-  
+
 Download and install the 64-bit update from [Unified Communications Managed API 4.0 Runtime](https://go.microsoft.com/fwlink/p/?linkId=258269), and then click **Retry** on the **Readiness Checks** page in the Exchange 2016 Setup wizard.
-  
+
 > [!NOTE]
 > If the installation of this update requires a reboot, you'll need to exit Exchange 2016 Setup, reboot, and then start Setup again.
 

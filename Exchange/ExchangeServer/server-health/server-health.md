@@ -20,7 +20,7 @@ Understanding server health and performance is critical to designing and maintai
 
 ## Managed availability
 
- *Managed availability* provides built-in monitoring and recovery actions that preserve the end-user experience. Managed availability is made of two processes: the Exchange Health Manager Service (MSExchangeHMHost.exe) and the Exchange Health Manager Worker process (MSExchangeHMWorker.exe), and the following components: 
+ *Managed availability* provides built-in monitoring and recovery actions that preserve the end-user experience. Managed availability is made of two processes: the Exchange Health Manager Service (MSExchangeHMHost.exe) and the Exchange Health Manager Worker process (MSExchangeHMWorker.exe), and the following components:
 
 - **Probe engine**: The *probe engine* takes measurements on the server.
 

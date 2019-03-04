@@ -7,7 +7,7 @@ ms.author: dmaguire
 ms.assetid: 4b2256d7-2250-40f4-b25f-4ac52c8c9647
 ms.date: 
 title: Clients and mobile in Exchange Online
-ms.collection: ms.collection: 
+ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro

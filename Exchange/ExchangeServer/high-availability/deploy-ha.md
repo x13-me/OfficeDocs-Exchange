@@ -5,7 +5,7 @@ ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 4c4e00a4-1f57-4fdb-b9b2-2779abf381a9
-ms.date: 
+ms.date:
 title: Exchange high availability, Exchange high availability step by step, Exchange site resilience, Site resilience Exchange, High availability for Exchange, High availability Exchange Server, Exchange DAG high availability, High availability DAG
 ms.collection: exchange-server
 ms.audience: ITPro
@@ -72,7 +72,7 @@ The settings for each network adapter in each node are detailed in the following
 |MBX2 (Replication)  <br/> |10.0.1.5  <br/> |255.255.0.0  <br/> |None  <br/> |
 |MBX3 (Replication)  <br/> |10.0.2.4  <br/> |255.255.0.0  <br/> |None  <br/> |
 |MBX4 (Replication)  <br/> |10.0.2.5  <br/> |255.255.0.0  <br/> |None  <br/> |
- 
+
 As shown in the preceding table, adapters used for Replication networks don't use default gateways. To provide network connectivity between each of the Replication network adapters, Contoso uses persistent static routes, which they configure by using the Netsh.exe tool.
 
 To configure routing for the Replication network adapters on MBX1 and MBX2, the following command was run on each server.

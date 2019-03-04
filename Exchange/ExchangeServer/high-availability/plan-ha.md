@@ -137,7 +137,7 @@ A network adapter intended for use by a MAPI network should be configured as des
 |Internet Protocol version 4 (TCP/IP v4)  <br/> |Enabled  <br/> |
 |Link-Layer Topology Discovery Mapper I/O Driver  <br/> |Enabled  <br/> |
 |Link-Layer Topology Discovery Responder  <br/> |Enabled  <br/> |
- 
+
 The TCP/IP v4 properties for a MAPI network adapter are configured as follows:
 
 - The IP address for a DAG member's MAPI network can be manually assigned or configured to use DHCP. If DHCP is used, we recommend using persistent reservations for the server's IP address.
@@ -161,7 +161,7 @@ A network adapter intended for use by a Replication network should be configured
 |Internet Protocol version 4 (TCP/IP v4)  <br/> |Enabled  <br/> |
 |Link-Layer Topology Discovery Mapper I/O Driver  <br/> |Enabled  <br/> |
 |Link-Layer Topology Discovery Responder  <br/> |Enabled  <br/> |
- 
+
 The TCP/IP v4 properties for a Replication network adapter are configured as follows:
 
 - The IP address for a DAG member's Replication network can be manually assigned or configured to use DHCP. If DHCP is used, we recommend using persistent reservations for the server's IP address.

@@ -68,6 +68,6 @@ The following table gives you a quick glance at each of the collaboration featur
 |**Shared calendar?** <br/> |No  <br/> |Yes  <br/> |Yes  <br/> |No  <br/> |
 |**Email arrives in user's personal Inbox?** <br/> |No. Email arrives in the site mailbox.  <br/> |No. Email arrives in the public folder.  <br/> |No. Email arrives in the Inbox of the shared mailbox.  <br/> |Yes. Email arrives in the Inbox of a distribution group member.  <br/> |
 |**Supported clients** <br/> |Outlook 2013 or later  <br/> SharePoint 2013  <br/> |Outlook 2007 or later  <br/> |Outlook 2007 or later  <br/> Outlook Web App  <br/> |Outlook 2007 or later  <br/> Outlook Web App  <br/> |
- 
+
 
 
