@@ -120,7 +120,7 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
   ...maxReceivedMessageSize="67108864"...
   ```
 
-    For example, to allow a Base64 encoded maximum message size of approximately 64 MB, change all instances of `67108864` to `89478486` (64\*4/3\*1048756): 
+   For example, to allow a Base64 encoded maximum message size of approximately 64 MB, change all instances of `67108864` to `89478486` (64\*4/3\*1048756): 
     
   ```
   <requestLimits maxAllowedContentLength="89478486" />
