@@ -1453,6 +1453,12 @@ The following table lists the extended rights that are added when you install Ex
 > [!NOTE]
 > The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2016 version. To verify that Active Directory has been successfully prepared, see the [How do you know this worked?](../prepare-ad-and-domains.md#how-do-you-know-this-worked) section in [Prepare Active Directory and domains for Exchange Server](../prepare-ad-and-domains.md).
 
+## Exchange 2016 CU12 Active Directory schema changes
+
+No changes were made to the Active Directory schema in Exchange 2016 in CU12.
+
+However, a reduction in Active Directory permissions was made: The AdminSDHolder object on the domain was updated to remove the "Allow" ACE that granted the "Exchange Trusted Subsystem" group the "Write DACL" right on the "Group" inherited object types. For more information, see [KB4490059](https://support.microsoft.com/help/4490059/using-shared-permissions-model-to-run-exchange-server).
+
 ## Exchange 2016 CU11 Active Directory schema changes
 
 No changes were made to the Active Directory schema in Exchange 2016 in CU11.
