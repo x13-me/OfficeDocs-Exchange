@@ -6,7 +6,9 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 65af7d77-3e79-44d4-9173-04fd991358b7
 title: How to migrate mailboxes from one Office 365 tenant to another
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150

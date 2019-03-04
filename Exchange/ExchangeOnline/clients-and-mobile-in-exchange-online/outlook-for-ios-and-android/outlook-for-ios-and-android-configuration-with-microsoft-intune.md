@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: e8a034f6-39b8-4dea-a3bc-9421aaa75d1d
 ms.date: 
 title: Deploying Outlook for iOS and Android app configuration settings
-ms.collection: exchange-online
+mms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.reviewer: smithre4
 ms.audience: ITPro
 ms.service: exchange-online

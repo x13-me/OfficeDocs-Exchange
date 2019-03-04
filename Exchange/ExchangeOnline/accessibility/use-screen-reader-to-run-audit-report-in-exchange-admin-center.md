@@ -7,7 +7,9 @@ ms.assetid: cdf7bb59-e1a5-457c-9a59-558904fbd68c
 ms.date: 
 description: Admins can learn how to use a screen reader to run audit reports in the Exchange admin center (EAC) in Exchange Online.
 title: Use a screen reader to run an audit report in the Exchange admin center in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online

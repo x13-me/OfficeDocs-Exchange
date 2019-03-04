@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: d0f509be-ee4b-46a2-9dc6-3bc3512a0a2d
 ms.date: 6/22/2018
 title: Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 description: Exchange Online is part of the Office 365 suite of products.
 ms.audience: ITPro
 ms.service: exchange-online

@@ -17,31 +17,31 @@ manager: serdars
 # Queue Viewer
 
 Queue Viewer is part of the Exchange Toolbox that's installed on Mailbox servers and Edge Transport servers in Exchange Server 2016 and Exchange Server 2019. Queue Viewer is an Microsoft Management Console (MMC) snap-in that you can use to view information about and take action on queues and messages in queues. Queue Viewer is useful for troubleshooting mail flow issues and identifying spam.
-  
+
 Queue Viewer is located in the **Mail flow tools** section of the Exchange Toolbox.
-  
+
 To find and open the Exchange Toolbox, use one of the following procedures:
-  
+
 - **Windows 10**: Click **Start** \> **All Apps** \> **Microsoft Exchange Server \<Version\> \>** **Exchange Toolbox**.
-    
+
 - **Windows Server 2012 R2 or Windows 8.1**: On the Start screen, open the Apps view by clicking the down arrow near the lower-left corner or swiping up from the middle of the screen. The **Exchange Toolbox** shortcut is in a group named **Microsoft Exchange Server \<Version\>**.
-    
-- **Windows Server 2012**: Use any of the following methods: 
-    
+
+- **Windows Server 2012**: Use any of the following methods:
+
     - On the Start screen, click an empty area, and type Exchange Toolbox.
-    
+
     - On the desktop or the Start screen, press Windows key + Q. In the Search charm, type Exchange Toolbox.
-    
+
     - On the desktop or the Start screen, move your cursor to the upper-right corner, or swipe left from the right edge of the screen to show the charms. Click the Search charm, and type Exchange Toolbox.
-    
+
     When the shortcut appears in the results, you can select it.
-    
+
 For more information about queues and messages in queues, see [Queues and messages in queues](queues.md).
-  
+
 ## Topics that contain Queue Viewer procedures
 
 The topics in the following table contain procedures that use Queue Viewer:
-  
+
 ****
 
 |**Topic**|**Description**|
@@ -54,6 +54,6 @@ The topics in the following table contain procedures that use Queue Viewer:
 |[Properties of messages in queues](message-properties.md)|Describes the message properties, and shows the properties that are available in Queue View versus the Exchange Management Shell.|
 |[Procedures for queues](queue-procedures.md)|Explains how to view, retry, resubmit, suspend, and resume queues.|
 |[Procedures for messages in queues](message-procedures.md)|Explains how to remove, suspend, resume, and redirect messages in queues.|
-   
+
 
 

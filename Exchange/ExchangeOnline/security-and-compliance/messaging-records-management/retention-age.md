@@ -7,7 +7,9 @@ ms.author: markjjo
 ms.assetid: a7daf7aa-0411-4b26-a422-eefd1b113f9f
 ms.date: 7/27/2016
 title: How retention age is calculated
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

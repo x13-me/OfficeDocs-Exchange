@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: 30e8c819-4d41-4458-a746-a9ba9a84a7c0
 ms.date: 
 title: Managing Outlook for iOS and Android in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.reviewer: smithre4
 ms.audience: ITPro
 ms.service: exchange-online

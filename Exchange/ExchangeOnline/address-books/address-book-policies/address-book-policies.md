@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
 ms.date: 
 title: Address book policies in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

@@ -10,6 +10,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - Strat_EX_EXOBlocker
 - exchange-online
+- M365-email-calendar
 description: 'Summary: Instructions for enabling Exchange Online users to access on-premises public folders in your Exchange Server environment.'
 ms.audience: ITPro
 title: Configure Exchange Server public folders for a hybrid deployment

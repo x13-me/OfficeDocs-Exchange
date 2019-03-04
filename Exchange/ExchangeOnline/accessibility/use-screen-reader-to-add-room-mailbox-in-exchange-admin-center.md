@@ -7,7 +7,9 @@ ms.assetid: ea55a30a-14b7-41ca-bfa3-4b7f0441f9a7
 ms.date: 
 description: Admins can learn how to use a screen reader to create a room mailbox in the Exchange admin center (EAC) in Exchange Online.
 title: Use a screen reader to add a new room mailbox in the Exchange admin center in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online

@@ -7,7 +7,9 @@ ms.author: tirich
 ms.assetid: 0c83cde6-5b09-4106-8587-c200cdc59094
 ms.date: 11/17/2014
 title: Trace an email message
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

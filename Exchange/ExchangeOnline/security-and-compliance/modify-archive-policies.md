@@ -7,7 +7,9 @@ ms.author: markjjo
 ms.assetid: 1e3002c2-801a-43ea-ae00-52ab34d76b9c
 ms.date: 6/23/2018
 title: Modify archive policies
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

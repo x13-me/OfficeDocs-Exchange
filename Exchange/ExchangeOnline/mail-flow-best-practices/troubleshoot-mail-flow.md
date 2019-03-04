@@ -6,7 +6,9 @@ ms.topic: article
 author: chrisda
 ms.service: exchange-online
 ms.assetid: ccb62ce1-a822-4859-a0db-3d546c5c1f50
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 description: Admins can learn about the mail flow troubleshooting options in Office 365.
 ms.audience: ITPro
 title: Troubleshoot Office 365 mail flow

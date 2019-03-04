@@ -7,7 +7,9 @@ ms.author: markjjo
 ms.assetid: 5c62072a-556d-4fea-9973-d668c6b9fd57
 ms.date: 7/11/2018
 title: View the administrator audit log
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: Admin
 ms.service: exchange-online
 manager: scotv

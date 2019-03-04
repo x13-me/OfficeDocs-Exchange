@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: fce4cf21-02b4-4b42-82c8-ddb3c7eed4dc
 ms.date: 6/24/2018
 title: POP3 and IMAP4
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: laurawi

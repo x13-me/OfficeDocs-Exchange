@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: 7b419906-8977-47f0-8687-a87911b5ebec
 ms.date: 7/11/2018
 title: Set up public folders in a new organization
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: laurawi
