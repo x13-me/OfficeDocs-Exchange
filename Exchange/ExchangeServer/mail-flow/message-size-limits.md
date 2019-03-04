@@ -35,7 +35,6 @@ As you plan the message size limits for your Exchange organization, consider the
 This topic provides guidance to help you answer these questions and to apply the appropriate message size limits in the appropriate locations.
 
 ## Types of message size limits
-<a name="Types"> </a>
 
 The following list describes the basic types of message size limits, and the message components that they apply to.
 
@@ -50,12 +49,10 @@ The following list describes the basic types of message size limits, and the mes
 - **Message header size limits**: Specifies the maximum size of all message header fields in a message. The size of the message body or attachments isn't considered. Because the header fields are plain text, the size of the header is determined by the number of characters in each header field and by the total number of header fields. Each text character consumes 1 byte.
 
 ## Scope of limits
-<a name="Scope"> </a>
 
 The following tables show the message limits at the Organization, Connector, Server, and Mailbox levels, including information about how to configure the limits in the Exchange admin center (EAC) or the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 ### Organizational limits
-<a name="Organizational"> </a>
 
 Organizational limits apply to all Exchange 2019 servers, Exchange 2016 servers, Exchange 2013 Mailbox servers, and Exchange 2010 Hub Transport servers that exist in your organization. On Edge Transport servers, any organizational limits that you configure are applied to the local server.
 
@@ -64,7 +61,7 @@ Organizational limits apply to all Exchange 2019 servers, Exchange 2016 servers,
 |Maximum size of a message received|10 MB|**Mail flow** \> **Receive connectors** \> **More options** ![More Options icon](../media/ITPro_EAC_MoreOptionsIcon.png) \> **Organization transport settings** \> **Limits** tab \> **Maximum receive message size (MB)**|Cmdlet: **Set-TransportConfig** <br/> Parameter: _MaxReceiveSize_|
 |Maximum size of a message sent|10 MB|**Mail flow** \> **Receive connectors** \> **More options** ![More Options icon](../media/ITPro_EAC_MoreOptionsIcon.png) \> **Organization transport settings** \> **Limits** \> **Maximum send message size (MB)**|Cmdlet: **Set-TransportConfig** <br/> Parameter: _MaxSendSize_|
 |Maximum number of recipients in a message|5000|**Mail flow** \> **Receive connectors** \> **More options** ![More Options icon](../media/ITPro_EAC_MoreOptionsIcon.png) \> **Organization transport settings** \> **Limits** **Maximum number of recipients**|Cmdlet: **Set-TransportConfig** <br/> Parameter: _MaxRecipientEnvelopeLimit_|
-|Maximum attachment size for a message that matches the conditions of the mail flow rule (also known as a transport rule)|Not configured|**Mail flow** \> **Rules** \> **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) \> **Create a new rule**, or select an existing rule, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png). <br/> Click **More options**. <br/> Use the condition **Apply this rule if** \> **The message** \> **size is greater than or equal to**, and enter a value in kilobytes (KB).|Cmdlets: **New-TransportRule**, **Set-TransportRule** <br/> Parameter: _AttachmentSizeOver_|
+|Maximum attachment size for a message that matches the conditions of the mail flow rule (also known as a transport rule)|Not configured|**Mail flow** \> **Rules** \> **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) \> **Create a new rule**, or select an existing rule, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png). <br/> Click **More options**. <br/> Use the condition **Apply this rule if** \> **Any attachment** \> **size is greater than or equal to**, and enter a value in kilobytes (KB).|Cmdlets: **New-TransportRule**, **Set-TransportRule** <br/> Parameter: _AttachmentSizeOver_|
 |Maximum message size for a message that matches the conditions of the mail flow rule|Not configured|**Mail flow** \> **Rules** \> **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) \> **Create a new rule**, or select an existing rule, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png). <br/> Click **More options**. <br/> Use the condition **Apply this rule if** \> **The message** \> **size is greater than or equal to**, and enter a value in kilobytes (KB).|Cmdlets: **New-TransportRule**, **Set-TransportRule** <br/> Parameter: _MessageSizeOver_|
 
 To see the values of these organizational limits, run the following commands in the Exchange Management Shell:
@@ -78,7 +75,6 @@ Get-TransportRule | where {($_.MessageSizeOver -ne $null) -or ($_.AttachmentSize
 ```
 
 ### Connector limits
-<a name="Connector"> </a>
 
 Connector limits apply to any messages that use the specified Send connector, Receive connector, Delivery Agent connector, or Foreign connector for message delivery.
 
@@ -103,7 +99,6 @@ Get-ReceiveConnector | Format-Table Name,Max*Size,MaxRecipientsPerMessage; Get-S
 ```
 
 ### Server limits
-<a name="Server"> </a>
 
 Server limits apply to specific Mailbox servers or Edge Transport servers. You can set these message size limits independently on each Mailbox server or Edge Transport server.
 
@@ -120,7 +115,6 @@ The pickup directory that's available on Edge Transport servers and Mailbox serv
 - Maximum number of recipients in a message file placed in the pickup directory: 100.
 
 ### Recipient limits
-<a name="User"> </a>
 
 Recipient limits apply to a specific user object, such as a mailbox, mail contact, mail user, distribution group, or a mail-enabled public folder.
 
@@ -145,7 +139,6 @@ $mb= Get-Mailbox -ResultSize unlimited; $mb | where {$_.RecipientTypeDetails -eq
 ```
 
 ## Order of precedence and placement of message size limits
-<a name="Order"> </a>
 
 The order of precedence for message size limits is the most restrictive limit is enforced. The only question is where that limit is enforced. The goal is to reject messages that are too large as early in the transport pipeline as possible. For example, it's a waste of system resources for the Internet Receive connector to accept large messages that are eventually rejected because of a lower organizational limit. Make sure that your organization, server, and connector limits are configured in a way that minimizes any unnecessary processing of messages. You do this by keeping the limits the same in all locations, or by configuring more restrictive limits where messages enter your Exchange organization.
 
@@ -156,7 +149,6 @@ Recipient limits between authenticated senders and recipients (typically, intern
 However, this exemption applies only to messages sent between authenticated senders and recipients (typically, internal senders and recipients). For messages sent between anonymous senders and recipients (typically, Internet senders or Internet recipients), the organizational limits apply. For example, suppose your organizational message size limit is 10 MB, but you configured the users in your marketing department to send and receive messages up to 50 MB. These users will be able to exchange large messages with each other, but not with Internet senders and recipients (unauthenticated senders and recipients).
 
 ## Messages exempt from size limits
-<a name="Exempt"> </a>
 
 The following list shows the types of messages that are generated by Mailbox servers or Edge Transport servers that are exempted from all message size limits except the organizational limit for the maximum number of recipients that are allowed in a message:
 
@@ -169,6 +161,3 @@ The following list shows the types of messages that are generated by Mailbox ser
 - Journal report messages
 
 - Quarantined messages
-
-
-

@@ -205,7 +205,7 @@ The affect of group delivery report redirection settings on regular messages tha
 
 The expansion process also enforces any message restrictions that are configured on recipients. These restrictions may be configured individually for each recipient or organizationally for all servers in the Exchange organization.
 
-For more information on message size limits, see [Recipient limits](../../mail-flow/message-size-limits.md#User) and [Organizational limits](../../mail-flow/message-size-limits.md#Organizational).
+For more information on message size limits, see [Recipient limits](../message-size-limits.md#recipient-limits) and [Organizational limits](../message-size-limits.md#organizational-limits).
 
 **Message restrictions on recipients**
 

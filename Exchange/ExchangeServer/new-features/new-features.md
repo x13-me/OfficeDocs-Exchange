@@ -654,7 +654,7 @@ How messages flow through an organization and what happens to them has changed s
 
 - **Routing**: Mail routing in Exchange 2016 recognizes DAG boundaries as well as Active Directory site boundaries. Also, mail routing has been improved to queue messages more directly for internal recipients. For more information, see [Mail routing](../mail-flow/mail-routing/mail-routing.md).
 
-- **Connectors**: The default maximum message size for a Send connector or a Receive connector has increased from 10MB to 25MB. For more information, see [Connector limits](../mail-flow/message-size-limits.md#Connector).
+- **Connectors**: The default maximum message size for a Send connector or a Receive connector has increased from 10MB to 25MB. For more information, see [Connector limits](../mail-flow/message-size-limits.md#connector-limits).
 
     You can configure Send connectors to route outbound mail through the Front End transport service on Mailbox servers. For more information, see [Configure Send connectors to proxy outbound mail](../mail-flow/connectors/proxy-outbound-mail.md).
 
