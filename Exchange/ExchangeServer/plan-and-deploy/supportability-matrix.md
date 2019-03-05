@@ -157,7 +157,7 @@ The following tables identify the mail clients that are supported for use togeth
 
 |**Client**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|:-----|
-|Outlook 2019|X|X|X|X|
+|Outlook 2019|X|X|X||
 |Outlook 2016|X<sup>1</sup>|X<sup>1</sup>|X|X|
 |Outlook 2013|X<sup>1</sup>|X<sup>1</sup>|X|X|
 |Outlook 2010||X<sup>1</sup>|X<sup>2</sup>|X|
@@ -192,7 +192,7 @@ The following table identifies the version of Microsoft Exchange that can be use
 
 ## Microsoft .NET Framework
 
-The following tables identify the versions of the Microsoft�.NET Framework that can be used with the specified versions of Exchange. Supported versions are identified by an X character.
+The following tables identify the versions of the Microsoft .NET Framework that can be used with the specified versions of Exchange. Supported versions are identified by an X character.
 
 > [!IMPORTANT]
 > **Versions of .NET Framework that aren't listed in the tables below are not supported on any version or release of Exchange.** This includes minor and patch-level releases of .NET Framework.
@@ -202,7 +202,7 @@ The following tables identify the versions of the Microsoft�.NET Framework tha
 
 ### Exchange 2019
 
-|**.NET Framework**|**2019**|
+|**.NET Framework**|**Exchange 2019**|
 |:-----|:-----|
 |.NET Framework 4.7.2|X|
 
@@ -224,7 +224,7 @@ The following tables identify the versions of the Microsoft�.NET Framework tha
 
 ### Exchange 2010 SP3
 
-|**.NET Framework**|**2010 SP3**|
+|**.NET Framework**|**Exchange 2010 SP3**|
 |:-----|:-----|
 |.NET Framework 4.5|X<sup>1,2</sup>|
 |.NET Framework 4.0|X<sup>1,2</sup>|
