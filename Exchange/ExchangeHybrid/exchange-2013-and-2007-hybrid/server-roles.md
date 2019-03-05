@@ -2,7 +2,7 @@
 title: "Server roles in Exchange 2013/Exchange 2007 hybrid deployments"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
+manager: serdars
 ms.date: 6/25/2018
 ms.audience: ITPro
 ms.topic: article

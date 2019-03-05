@@ -2,7 +2,7 @@
 title: "Transport options in Exchange 2013/Exchange 2010 hybrid deployments"
 ms.author: dmaguire
 author: msdmaguire
-manager: laurawi
+manager: serdars
 ms.date: 6/25/2018
 ms.audience: ITPro
 ms.topic: article

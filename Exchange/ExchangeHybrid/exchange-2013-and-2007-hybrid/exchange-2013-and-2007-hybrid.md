@@ -2,7 +2,7 @@
 title: "Hybrid deployments with Exchange 2013 and Exchange 2007"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
+manager: serdars
 ms.date: 7/7/2015
 ms.audience: ITPro
 ms.topic: article

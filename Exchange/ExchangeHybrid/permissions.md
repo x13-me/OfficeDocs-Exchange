@@ -3,14 +3,14 @@ title: "Permissions in Exchange hybrid deployments"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date:
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: 58b46b2c-a6b2-424a-8fc2-0f1fe1ad8e18
 description: "Learn about the Exchange permissions that are supported in hybrid environments"
 ---

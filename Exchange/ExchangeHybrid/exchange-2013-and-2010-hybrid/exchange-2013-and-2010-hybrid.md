@@ -2,9 +2,9 @@
 title: "Hybrid deployments with Exchange 2013 and Exchange 2010"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
+manager: serdars
 ms.date: 7/7/2015
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

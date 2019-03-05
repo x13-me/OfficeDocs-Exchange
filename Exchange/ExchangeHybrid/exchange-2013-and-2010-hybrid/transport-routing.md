@@ -2,7 +2,7 @@
 title: "Transport routing in Exchange 2013/Exchange 2010 hybrid deployments"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
+manager: serdars
 ms.date: 7/29/2016
 ms.audience: ITPro
 ms.topic: article

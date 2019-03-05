@@ -7,7 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: exchange-online
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection: 
+- Adm_O365
+- M365-email-calendar
 ms.custom:
 - Adm_O365
 - httpsfix

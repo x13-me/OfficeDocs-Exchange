@@ -2,9 +2,9 @@
 title: "Configure document collaboration with OneDrive for Business and Exchange 2016 on-premises"
 ms.author: dmaguire
 author: msdmaguire
-manager: laurawi
+manager: serdars
 ms.date: 12/9/2016
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
