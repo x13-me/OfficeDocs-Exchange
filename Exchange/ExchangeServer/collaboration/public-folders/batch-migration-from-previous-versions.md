@@ -357,7 +357,7 @@ Set-OrganizationConfig -PublicFoldersEnabled Remote
 Once that is done, you can complete the public folder migration by running the following command:
 
 ```
-Complete-MigrationBatch PublicFolderMigration
+Complete-MigrationBatch PFMigration
 
 ```
 
