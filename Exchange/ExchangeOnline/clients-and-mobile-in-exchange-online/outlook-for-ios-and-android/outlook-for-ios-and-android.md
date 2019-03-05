@@ -1,15 +1,19 @@
 ---
-title: "Outlook for iOS and Android in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: serdars
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android.'
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b5cf21f4-57d2-4bfc-abc6-1f0689826af8
-description: "Summary: This article contains architectural and security information for administrators about Outlook for iOS and Android."
+title: Outlook for iOS and Android in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Outlook for iOS and Android in Exchange Online
@@ -57,3 +61,4 @@ The native Microsoft sync technology offers several benefits:
 4. **Protocol consolidation**: Today, each Outlook client platform utilizes a different data sync protocol, which hinders the ability to innovate and deploy new features quickly across all Outlook clients. The native Microsoft sync technology that Outlook for iOS and Android is adopting has been in use by the native Windows 10 mail client for a number of years, and in the future, will be used by Outlook for Mac.
 
 5. **Unlocking new features**: The native Microsoft sync technology will enable Outlook for iOS and Android to take advantage of native Office 365 features it does not support today, such as S/MIME, Microsoft Information Protection labeling, and shared mailboxes. These and more Office 365 features will roll out soon after the architecture update.
+

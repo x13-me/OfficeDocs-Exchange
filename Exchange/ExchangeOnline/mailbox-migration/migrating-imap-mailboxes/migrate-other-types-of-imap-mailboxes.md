@@ -1,16 +1,15 @@
 ---
-title: "Migrate other types of IMAP mailboxes to Office 365"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/16/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom:
-- Adm_O365
-- Adm_O365_Setup
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 58890ccd-ce5e-4d94-be75-560a3b70a706
+ms.date: 8/16/2018
+description: As part of the process of deploying Office 365, you can choose to migrate the contents of user mailboxes from an Internet Mail Access Protocol (IMAP) email service to Office 365.
+title: Migrate other types of IMAP mailboxes to Office 365
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
@@ -20,8 +19,13 @@ search.appverid:
 - GPA150
 - GEA150
 - BCS160
-ms.assetid: 58890ccd-ce5e-4d94-be75-560a3b70a706
-description: "As part of the process of deploying Office 365, you can choose to migrate the contents of user mailboxes from an Internet Mail Access Protocol (IMAP) email service to Office 365."
+ms.audience: Admin
+ms.custom:
+- Adm_O365
+- Adm_O365_Setup
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Migrate other types of IMAP mailboxes to Office 365
@@ -357,4 +361,5 @@ When you delete the migration batch, the migration service cleans up any records
 [Ways to migrate email to Office 365](../mailbox-migration.md)
 
 [Tips for optimizing IMAP migrations](optimizing-imap-migrations.md)
+
 

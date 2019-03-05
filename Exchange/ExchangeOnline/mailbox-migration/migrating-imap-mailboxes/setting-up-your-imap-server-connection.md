@@ -1,23 +1,27 @@
 ---
-title: "Learn more about setting up your IMAP server connection"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/15/2018
-ms.audience: Admin
-ms.topic: article
-f1_keywords:
-- 'SetupIMAPOtherServerSettings619135'
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: article
+author: msdmaguire
+f1_keywords:
+- SetupIMAPOtherServerSettings619135
+ms.author: dmaguire
+ms.assetid: 49120f09-84fb-4f10-b49f-5d9ec7e69d1f
+ms.date: 8/15/2018
+description: To migrate your email by using Internet Message Access Protocol (IMAP) migration, Office 365 needs to know the name and connection settings of your IMAP server.
+title: Learn more about setting up your IMAP server connection
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - BCS160
-ms.assetid: 49120f09-84fb-4f10-b49f-5d9ec7e69d1f
-description: "To migrate your email by using Internet Message Access Protocol (IMAP) migration, Office 365 needs to know the name and connection settings of your IMAP server."
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Learn more about setting up your IMAP server connection
@@ -45,5 +49,6 @@ Office 365 also needs the values for the encryption method and the Transmission 
 - **Security**: This is the encryption method used by the IMAP server. The default value for secure sockets layer (SSL) is appropriate for most IMAP servers.
 
 - **Port**: This is the TCP port number used to connect to the IMAP server. Use port 143 for unencrypted connections, port 143 for Transport Layer Security (TLS) connections, or port 993 (the default), for SSL connections. Port 993 is appropriate for most IMAP servers.
+
 
 

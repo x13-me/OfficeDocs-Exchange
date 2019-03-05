@@ -1,15 +1,17 @@
 ---
-title: "Configure internet mail flow through Edge Transport servers without using EdgeSync"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how you can configure mail flow between your Exchange organization and an Edge Transport server without using an Edge Subscription.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 6bb98d10-6f12-4b08-a58e-36375f605d65
-description: "Summary: Learn how you can configure mail flow between your Exchange organization and an Edge Transport server without using an Edge Subscription."
+ms.date:
+title: Configure internet mail flow through Edge Transport servers without using EdgeSync
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Configure internet mail flow through Edge Transport servers without using EdgeSync
@@ -40,7 +42,7 @@ On a Mailbox server:
 
    - To provide encryption, you need to use a certificate. The self-signed certificate on the Edge Transport server won't be recognized by the internal Exchange Organization (again, the EdgeSync subscription usually takes care of this). You'll need to manually import the self-signed certificate on each Mailbox or use a certificate from a trusted third-party certification authority.
 
-- If you don't want the messages coming from the Edge Transport server to be identified as authenticated SMTP and therefore using the corresponding client Receive connectors, you can use Externally Secured as the authentication method, which means email traffic between the Edge Transport server and the internal Exchange organization isn't authenticated or encrypted _by Exchange_. If you use this method, you **must** configure and use an external encryption method (for example, IPsec or a VPN). 
+- If you don't want the messages coming from the Edge Transport server to be identified as authenticated SMTP and therefore using the corresponding client Receive connectors, you can use Externally Secured as the authentication method, which means email traffic between the Edge Transport server and the internal Exchange organization isn't authenticated or encrypted _by Exchange_. If you use this method, you **must** configure and use an external encryption method (for example, IPsec or a VPN).
 
 <sup>2</sup>Instead of a dedicated Receive connector, you can configure and use the default Receive connector on the Edge Transport server for both incoming internet messages and incoming messages from internal Mailbox servers (an EdgeSync subscription uses this Receive connector for both connections).
 
@@ -95,7 +97,7 @@ This Send connector requires the following configuration:
 
 - **Usage type**: Internal
 
-- **Address spaces**: `--` (indicates all accepted domains for the Exchange organization) 
+- **Address spaces**: `--` (indicates all accepted domains for the Exchange organization)
 
 - DNS routing disabled (smart host routing enabled)
 
@@ -121,7 +123,7 @@ Make the following configuration changes to the default Receive connector:
 
 - Change the network bindings to accept messages only from the network adapter that is accessible from the internet (for example, 10.1.1.1 and the standard SMTP TCP port value of 25).
 
-To modify the default Receive connector to only accept messages from the internet, replace \< _ServerName\>_ and bindings ith the name of your Edge Transport server and external network adapter configuration, and run this command: 
+To modify the default Receive connector to only accept messages from the internet, replace \< _ServerName\>_ and bindings ith the name of your Edge Transport server and external network adapter configuration, and run this command:
 
 ```
 Set-ReceiveConnector -Identity "Default internal Receive connector ServerName>" -Name "From Internet" -Bindings 10.1.1.1:25
@@ -195,7 +197,7 @@ This Send connector requires the following configuration:
 
    Click **Next**.
 
-3. On the next page, select **Route mail through smart hosts**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add smart host** dialog box that appears, identify the Edge Transport server by using one of these values: 
+3. On the next page, select **Route mail through smart hosts**, and then click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add smart host** dialog box that appears, identify the Edge Transport server by using one of these values:
 
    - **IP address**: For example, 10.1.1.2.
 
@@ -211,7 +213,7 @@ This Send connector requires the following configuration:
 
    Click **Next**.
 
-5. On the next page, in the **Address space** section, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** dialog box that appears, enter the following information: 
+5. On the next page, in the **Address space** section, click **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png). In the **Add domain** dialog box that appears, enter the following information:
 
    - **Type**: Verify SMTP is selected.
 
@@ -221,7 +223,7 @@ This Send connector requires the following configuration:
 
    Click **Save**.
 
-6. Back on the previous page, the **Scoped send connector** setting is important if your organization has Exchange servers installed in multiple Active Directory sites: 
+6. Back on the previous page, the **Scoped send connector** setting is important if your organization has Exchange servers installed in multiple Active Directory sites:
 
    - If you don't select **Scoped send connector**, the connector is usable by all transport servers (Exchange 2019 Mailbox servers, Exchange 2016 Mailbox servers, Exchange 2013 Mailbox servers, and Exchange 2010 Hub Transport servers) in the entire Active Directory forest. This is the default value.
 
@@ -252,3 +254,4 @@ To verify that you've successfully created a Send connector to send outgoing mes
    ```
    Get-SendConnector -Identity "To Edge" | Format-List Usage,AddressSpaces,DSNRoutingEnabled,SmartHosts,SourceTransportServers,SmartHostAuthMechanism
    ```
+

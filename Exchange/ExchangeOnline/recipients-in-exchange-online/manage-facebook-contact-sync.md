@@ -1,17 +1,21 @@
 ---
-title: "Manage Facebook contact sync in your organization"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 12/9/2016
-ms.audience: Developer
-ms.topic: article
-f1_keywords:
-- 'ms.exch.eac.EditOwaMailboxPolicy_Facebook'
-ms.service: exchange-online
 localization_priority: Normal
+description: Facebook contact synchronization lets people set up a connection between their Facebook account and their Office 365 account by using Outlook Web App. After they set up a Facebook connection, all their Facebook friends are listed as contacts in People in Office 365. They can then interact with their Facebook friends as they do with their other contacts. Facebook contact sync is turned on by default if the feature is available in your region.
+ms.topic: article
+author: msdmaguire
+f1_keywords:
+- ms.exch.eac.EditOwaMailboxPolicy_Facebook
+ms.author: dmaguire
 ms.assetid: 0f7e88eb-2b47-41ef-aedf-add22937c658
-description: "Facebook contact synchronization lets people set up a connection between their Facebook account and their Office 365 account by using Outlook Web App. After they set up a Facebook connection, all their Facebook friends are listed as contacts in People in Office 365. They can then interact with their Facebook friends as they do with their other contacts. Facebook contact sync is turned on by default if the feature is available in your region."
+ms.date: 12/9/2016
+title: Manage Facebook contact sync in your organization
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: Developer
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Manage Facebook contact sync in your organization
@@ -35,5 +39,6 @@ The information for each Facebook friend is stored as a read-only contact record
 During the Outlook Web App and Facebook connection setup, the contacts in the user's default contacts folder are uploaded to Facebook as part of a one-time synchronization with Facebook. Facebook uses this contact information as part of the "People you may know" friend suggestions on Facebook. The one-time upload of information also allows Facebook to include the information for your users' Outlook Web App contacts in Facebook applications that your users may choose to use, for example, mobile phone applications.
 
 For information about how your users can set up a connection to Facebook using a desktop version of Outlook, see [Social Connector for Microsoft Outlook](https://go.microsoft.com/fwlink/p/?LinkId=280216).
+
 
 

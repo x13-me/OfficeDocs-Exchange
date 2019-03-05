@@ -1,15 +1,17 @@
 ---
-title: "Set the maximum message duration for a Voice Mail Preview partner"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can set the maximum message duration for a Voice Mail Preview partner on a Unified Messaging (UM) mailbox policy. After you've set the maximum message duration, the setting will apply to all UM-enabled users who are linked with that mailbox policy.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 18f928ff-f4cc-4eed-a466-de13388780b3
-description: "You can set the maximum message duration for a Voice Mail Preview partner on a Unified Messaging (UM) mailbox policy. After you've set the maximum message duration, the setting will apply to all UM-enabled users who are linked with that mailbox policy."
+ms.date: 11/17/2014
+title: Set the maximum message duration for a Voice Mail Preview partner
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Set the maximum message duration for a Voice Mail Preview partner
@@ -45,5 +47,6 @@ This example sets the maximum message duration for a Voice Mail Preview partner 
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -VoiceMailPreviewPartnerMaxMessageDuration 300
 ```
+
 
 

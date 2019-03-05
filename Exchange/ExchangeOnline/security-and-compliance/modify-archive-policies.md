@@ -1,15 +1,19 @@
 ---
-title: "Modify archive policies"
-ms.author: markjjo
-author: markjjo
-manager: scotv
-ms.date: 6/23/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: In Exchange Online, you can use archive policies to automatically move mailbox items to personal (on-premises) or cloud-based archives. Archive policies are retention tags that use the Move to Archive retention action.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: 1e3002c2-801a-43ea-ae00-52ab34d76b9c
-description: "In Exchange Online, you can use archive policies to automatically move mailbox items to personal (on-premises) or cloud-based archives. Archive policies are retention tags that use the Move to Archive retention action."
+ms.date: 6/23/2018
+title: Modify archive policies
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Modify archive policies
@@ -100,5 +104,6 @@ This command retrieves properties of the `Default 2 year move to archive` retent
 ```
 Get-RetentionPolicyTag "Default 2 year move to archive" | Format-List
 ```
+
 
 

@@ -1,16 +1,19 @@
 ---
-title: "Public folders in Office 365 and Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization. Public folders help organize content in a deep hierarchy that's easy to browse. Users will see the full hierarchy in Outlook, which makes it easy for them to browse for the content they're interested in.
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: bf65842b-a4db-49a8-bb3a-d0bafb7d3e45
+ms.date: 7/11/2018
+title: Public folders in Office 365 and Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
 
-description: "Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization. Public folders help organize content in a deep hierarchy that's easy to browse. Users will see the full hierarchy in Outlook, which makes it easy for them to browse for the content they're interested in."
 ---
 
 # Public folders in Office 365 and Exchange Online
@@ -122,6 +125,7 @@ We recommend that you use batch migration instead of Outlook's PST export featur
   ```
   New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx
   ```
+
 
 
 

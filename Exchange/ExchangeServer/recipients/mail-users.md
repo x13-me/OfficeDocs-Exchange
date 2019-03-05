@@ -1,15 +1,17 @@
 ---
-title: "Manage mail users"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create mail users and how to change mail user properties.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c72f46dc-8db3-486d-a998-0f01ffc1a843
-description: "Summary: Learn how to create mail users and how to change mail user properties."
+ms.date: 7/5/2018
+title: Manage mail users
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage mail users
@@ -136,22 +138,21 @@ The estimated time to complete this task will vary based on the number of proper
 
 3. On the mail user properties page, click one of the following sections to view or change properties.
 
-  - [General](#General.md)
+   - [General](#general)
 
-  - [Contact Information](#ContactInformation.md)
+   - [Contact Information](#contact-information)
 
-  - [Organization](#Organization.md)
+   - [Organization](#organization)
 
-  - [Email Addresses](#EmailAddress.md)
+   - [Email Addresses](#email-addresses)
 
-  - [Mail Flow Settings](#Mailflow.md)
+   - [Mail Flow Settings](#mail-flow-settings)
 
-  - [Member Of](#MemberOf.md)
+   - [Member Of](#member-of)
 
-  - [MailTip](#MailTip.md)
+   - [MailTip](#mailtip)
 
 #### General
-<a name="General"> </a>
 
 Use the **General** section to view or change basic information about the mail user.
 
@@ -167,14 +168,13 @@ Use the **General** section to view or change basic information about the mail u
 
 - **Require password change on next logon**: Select this check box if you want the user to reset their password the next time they log on to the domain.
 
-Click **More options** to view or change these additional properties: 
+Click **More options** to view or change these additional properties:
 
 - **Organizational unit**: This read-only box displays the organizational unit (OU) that contains the mail user account. You have to use Active Directory Users and Computers to move the account to a different OU.
 
 - **Custom attributes**: This section displays the custom attributes defined for the mail user. To specify custom attribute values, click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png). You can specify up to 15 custom attributes for the recipient.
 
 #### Contact Information
-<a name="ContactInformation"> </a>
 
 Use the **Contact Information** section to view or change the user's contact information. The information on this page is displayed in the address book. Click **More options** to display additional boxes.
 
@@ -182,7 +182,6 @@ Use the **Contact Information** section to view or change the user's contact inf
 > You can use the **State/Province** box to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
 
 #### Organization
-<a name="Organization"> </a>
 
 Use the **Organization** section to record detailed information about the user's role in the organization. This information is displayed in the address book. Also, you can create a virtual organization chart that's accessible from email clients such as Outlook.
 
@@ -197,11 +196,10 @@ Use the **Organization** section to record detailed information about the user's
 - **Direct reports**: You can't modify this box. A *direct report* is a user who reports to a specific manager. If you've specified a manager for the user, that user appears as a direct report in the details of the manager's mailbox. For example, Kari manages Chris and Kate, so Kari is specified in the **Manager** box for Chris and Kate, and Chris and Kate appear in the **Direct reports** box in the properties of Kari's account.
 
 #### Email Addresses
-<a name="EmailAddress"> </a>
 
 Use the **Email Addresses** section to view or change the email addresses associated with the mail user. This includes the mail user's primary SMTP address, their external email address, and any associated proxy addresses. The primary SMTP address (also known as the *default reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column. By default, after the mail user is created, the primary SMTP address and the external email address are the same.
 
-- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types: 
+- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
@@ -214,9 +212,8 @@ Use the **Email Addresses** section to view or change the email addresses associ
 - **Automatically update email addresses based on the email address policy applied to this recipient**: Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization. This box is selected by default.
 
 #### Mail Flow Settings
-<a name="Mailflow"> </a>
 
-Use the **Mail Flow Settings** section to view or change the following settings: 
+Use the **Mail Flow Settings** section to view or change the following settings:
 
 - **Message Size Restrictions**: These settings control the size of messages that the mail user can send and receive. Click **View details** to view and change maximum size for sent and received messages.
 
@@ -241,12 +238,10 @@ Use the **Mail Flow Settings** section to view or change the following settings:
   - **Senders in the following list**: Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../media/ITPro_EAC_.png).
 
 #### Member Of
-<a name="MemberOf"> </a>
 
 Use the **Member Of** section to view a list of the distribution groups or security groups to which this user belongs. You can't change membership information on this page. Note that the user may match the criteria for one or more dynamic distribution groups in your organization. However, dynamic distribution groups aren't displayed on this page because their membership is calculated each time they're used.
 
 #### MailTip
-<a name="MailTip"> </a>
 
 Use the **MailTip** section to add a MailTip to alert users of potential issues before they send a message to this recipient. A MailTip is text that's displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
 
@@ -257,7 +252,7 @@ Use the **MailTip** section to add a MailTip to alert users of potential issues 
 
 Properties for a mail user are stored in both Active Directory and Exchange. In general, use the **Get-User** and **Set-User** cmdlets to view and change organization and contact information properties. Use the **Get-MailUser** and **Set-MailUser** cmdlets to view or change mail-related properties, such email addresses, the MailTip, custom attributes, and whether the mail user is hidden from address lists.
 
-Use the **Get-MailUser** and **Set-MailUser** cmdlets to view and change properties for mail users. For information, see the following topics: 
+Use the **Get-MailUser** and **Set-MailUser** cmdlets to view and change properties for mail users. For information, see the following topics:
 
 - [Get-User](http://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx)
 
@@ -304,7 +299,7 @@ To verify that you've successfully changed properties for mail users, do the fol
 - In the Exchange Management Shell, use the **Get-User** and **Get-MailUser** cmdlets to verify the changes. One advantage of using the Exchange Management Shell is that you can view multiple properties for multiple mail contacts.
 
   ```
-  Get-MailUser | Format-List Name,CustomAttribute1 
+  Get-MailUser | Format-List Name,CustomAttribute1
   ```
 
     In the example above where the Company property was set to Contoso for all mail contacts, run the following command to verify the changes:
@@ -316,7 +311,7 @@ To verify that you've successfully changed properties for mail users, do the fol
     In the example above where all mail users had the CustomAttribute1 property set to ContosoEmployee, run the following command to verify the changes.
 
   ```
-  Get-MailUser | Format-List Name,CustomAttribute1 
+  Get-MailUser | Format-List Name,CustomAttribute1
   ```
 
 ## Bulk edit mail users
@@ -330,7 +325,6 @@ When you bulk edit mail users, you can change the following property areas:
 - **Organization**: Change shared properties such as department name, company name, and the manager that the selected mail contacts or mail users report to.
 
 ### Use the EAC to bulk edit mail users
-<a name="bulkedit"> </a>
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
 
@@ -343,16 +337,14 @@ When you bulk edit mail users, you can change the following property areas:
 4. Make the changes on the properties page and then save your changes.
 
 ### How do you know this worked?
-<a name="bulkedit"> </a>
 
 To verify that you've successfully bulk edited mail users, do one of the following:
 
 - In the EAC, select each of the mail users that you bulk edited and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) to view the properties that you changed.
 
-- In the Exchange Management Shell, use the **Get-User** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail users from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in the Exchange Management Shell: 
+- In the Exchange Management Shell, use the **Get-User** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail users from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in the Exchange Management Shell:
 
   ```
   Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Adatum')} | Format-List Name,Office,Manager
   ```
-
 

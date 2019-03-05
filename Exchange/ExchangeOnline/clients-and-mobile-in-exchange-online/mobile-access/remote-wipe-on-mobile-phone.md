@@ -1,15 +1,19 @@
 ---
-title: "Perform a remote wipe on a mobile phone"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Your users carry sensitive corporate information in their pockets every day. If one of them loses their mobile phone, your data can end up in the hands of another person. If one of your users loses their mobile phone, you can use the Exchange admin center (EAC) or Exchange Online PowerShell to wipe their phone clean of all corporate and user information.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 67ba838e-031d-4a98-b277-170683b6f520
-description: "Your users carry sensitive corporate information in their pockets every day. If one of them loses their mobile phone, your data can end up in the hands of another person. If one of your users loses their mobile phone, you can use the Exchange admin center (EAC) or Exchange Online PowerShell to wipe their phone clean of all corporate and user information."
+ms.date: 11/17/2014
+title: Perform a remote wipe on a mobile phone
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Perform a remote wipe on a mobile phone
@@ -73,5 +77,6 @@ There are several ways to verify that the remote wipe completed.
 - In the EAC, check the status of the mobile device. The status will change from **Wipe Pending** to **Wipe Successful**.
 
 - In Outlook Web App, check the status of the mobile device. The status will change from **Wipe Pending** to **Wipe Successful**.
+
 
 

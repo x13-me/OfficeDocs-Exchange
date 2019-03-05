@@ -1,16 +1,20 @@
 ---
-title: "Outlook Exchange Online FAQ, Outlook for iOS Exchange FAQ, Outlook for Android FAQ, Outlook for iOS security concerns, Outlook for Android security concerns, Outlook for iOS cloud architecture, Outlook for Android cloud architecture, Outlook app Office 365 architecture, Outlook app attachment faq, Outlook app contacts faq, Outlook app license faq"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: laurawi
-ms.date:
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: This article covers the most common questions asked by customers and administrators about using Outlook for iOS and Android with Exchange Online and Office 365.'
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 747d4875-4b81-4b10-a206-fc2cbab83314
-description: "Summary: This article covers the most common questions asked by customers and administrators about using Outlook for iOS and Android with Exchange Online and Office 365."
+ms.date: 
+title: Outlook Exchange Online FAQ, Outlook for iOS Exchange FAQ, Outlook for Android FAQ, Outlook for iOS security concerns, Outlook for Android security concerns, Outlook for iOS cloud architecture, Outlook for Android cloud architecture, Outlook app Office 365 architecture, Outlook app attachment faq, Outlook app contacts faq, Outlook app license faq
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Outlook for iOS and Android in Exchange Online: FAQ
@@ -93,7 +97,13 @@ Background synchronization in Outlook for iOS and Android can also be temporaril
 
 - Not opening the app for a given period of time. iOS will [automatically freeze third-party apps](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html), like Outlook, based on usage patterns. Android [doze mode and app standby](https://developer.android.com/training/monitoring-device-state/doze-standby) features can also prevent background updates to the app while those features are active.
 
-- On some Android devices, you can also restrict background processing or network access per-app. In these cases, Outlook for Android will not be able to process updates in the background.
+- On some Android devices, you can also restrict background processing or network access per-app. In these cases, Outlook for Android will not be able to process updates in the background. Android device manufacturers can modify the way you can interact with settings, therefore it is not possible to document every device scenario, but in general, these are the steps you can take to remove battery optimization: 
+
+ 1. Open **Settings**.
+ 2. Tap **Battery**.
+ 3. Tap the ellipse and tap **Battery optimization**.
+ 4. Tap the down arrow and tap **All apps**.
+ 5. For the Microsoft Authenticator, Intune Company Portal and Outlook apps, tap **Not optimized** to turn off battery optimization.
 
 If the mobile operating system prevents background synchronization, users will experience the following:
 
@@ -141,7 +151,7 @@ The following questions are about the migration from the REST API data sync prot
 
 ### Q: Is there a minimum version of Outlook for iOS and Android required to use the native Microsoft sync technology?
 
-For Outlook for iOS, users should install 3.5.0 or later. For Outlook for Android, users should install 3.0.0 or later. As always, we recommend users keep the Outlook app up to date.
+For Outlook for iOS, users should install 3.10.1 or later. For Outlook for Android, users should install 3.0.14 or later. As always, we recommend users keep the Outlook app up to date.
 
 ### Q: What will my users experience when our tenant is migrated to the native Microsoft sync technology?
 
@@ -262,3 +272,4 @@ Outlook for iOS and Android synchronizes 500 items per folder, with up to 1000 i
 ### Q: Why are tasks and notes not available with Outlook for iOS and Android?
 
 Microsoft's strategic direction for task management and note taking on mobile devices is the To-Do and OneNote apps, respectively. To-Do provides integration with the tasks stored in Exchange Online mailboxes.
+

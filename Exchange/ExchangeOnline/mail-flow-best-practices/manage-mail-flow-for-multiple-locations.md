@@ -1,14 +1,18 @@
 ---
-title: "Manage mail flow with mailboxes in multiple locations (Exchange Online and on-premises)"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+ms.author: chrisda
+manager: serdars
+ms.topic: article
+author: chrisda
+ms.service: exchange-online
 ms.assetid: e1da5f2f-c732-4010-85c9-878b2cef3fb3
-description: "Learn how to manage mail flow in an Exchange hybrid environment (some mailboxes are on-premises and some are in Exchange Online)."
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+description: Learn how to manage mail flow in an Exchange hybrid environment (some mailboxes are on-premises and some are in Exchange Online).
+ms.date: 
+title: Manage mail flow with mailboxes in multiple locations (Exchange Online and on-premises)
+
 ---
 
 # Manage mail flow with mailboxes in multiple locations (Exchange Online and on-premises)
@@ -226,4 +230,5 @@ If the MX record for your domain needs to point to your on-premises IP address, 
 [Troubleshoot Office 365 mail flow](troubleshoot-mail-flow.md)
 
 [Test mail flow by validating your Office 365 connectors](test-mail-flow.md)
+
 

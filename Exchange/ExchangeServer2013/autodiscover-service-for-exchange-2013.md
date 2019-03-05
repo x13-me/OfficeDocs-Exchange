@@ -83,7 +83,7 @@ For external access, or using DNS, the client locates the Autodiscover service o
 
 
 > [!NOTE]
-> You must provide a host service (SRV) resource record in DNS for Outlook clients to discover the Autodiscover service by using DNS. For more information, see your Windows documentation for configuring DNS and also see the <A href="https://go.microsoft.com/fwlink/p/?linkid=85214">White Paper: Exchange 2007 Autodiscover Service</A>.
+> You must provide a record in DNS for Outlook clients to discover the Autodiscover service by using DNS. For more information, see your Windows documentation for configuring DNS and also see the <A href="https://go.microsoft.com/fwlink/p/?linkid=85214">White Paper: Exchange 2007 Autodiscover Service</A>.
 
 
 

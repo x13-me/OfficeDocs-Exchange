@@ -1,23 +1,27 @@
 ---
-title: "Use Minimal Hybrid to quickly migrate Exchange mailboxes to Office 365"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/16/2018
-ms.audience: Admin
-ms.topic: get-started-article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom:
-- Adm_O365
-- Adm_O365_Setup
+ms.topic: get-started-article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: fdecceed-0702-4af3-85be-f2a0013937ef
+ms.date: 8/16/2018
+description: Learn how to do an Express migration of on-premises Exchange mailboxes to Office 365..
+title: Use Minimal Hybrid to quickly migrate Exchange mailboxes to Office 365
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - BCS160
-ms.assetid: fdecceed-0702-4af3-85be-f2a0013937ef
-description: "Learn how to do an Express migration of on-premises Exchange mailboxes to Office 365.."
+ms.audience: Admin
+ms.custom:
+- Adm_O365
+- Adm_O365_Setup
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Use Minimal Hybrid to quickly migrate Exchange mailboxes to Office 365
@@ -146,4 +150,5 @@ Email systems use a DNS record called an MX record to figure out where to delive
 [Modify or remove Exchange 2010](https://go.microsoft.com/fwlink/p/?LinkId=217936)
 
 [How to remove an Exchange 2007 organization](https://go.microsoft.com/fwlink/p/?LinkID=100485)
+
 

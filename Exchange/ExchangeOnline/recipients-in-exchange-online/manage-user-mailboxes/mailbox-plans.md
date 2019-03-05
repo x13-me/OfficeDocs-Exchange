@@ -1,15 +1,19 @@
-﻿---
-title: "Mailbox plans in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
+---
 localization_priority: Normal
-ms.assetid:
-description: "Admins can learn about mailbox plans and how view, modify, and set the default mailbox plan in Exchange Online."
+description: Admins can learn about mailbox plans and how view, modify, and set the default mailbox plan in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
+ms.assetid: 
+ms.date: 
+title: Mailbox plans in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Mailbox plans in Exchange Online
@@ -157,7 +161,7 @@ To verify that you've successfully specified the default mailbox plan, use any o
 - In Exchange Online PowerShell, run the following command to verify the property values:
 
    ```
-   Get-MailboxPlan | Format-Table -Auto DisplayName,IsDefault
+   Get-MailboxPlan | Format-Table DisplayName,IsDefault -Auto
    ```
 
 - Create a new mailbox without assigning a license as described in [Create user mailboxes in Exchange Online](../create-user-mailboxes.md). Replace \<MailboxIdentity\> with the name, alias, account name, or email address of the mailbox, and run the following command in Exchange Online PowerShell to verify the **MailboxPlan** property value:
@@ -221,3 +225,4 @@ To verify that you've successfully modified a mailbox plan, use any of the follo
    ```
    Get-CasMailbox -Identity "<MailboxIdentity>" | Format-List ActiveSyncEnabled,ImapEnabled,PopEnabled,OwaMailboxPolicy
    ```
+

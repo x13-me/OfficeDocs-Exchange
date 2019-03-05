@@ -1,21 +1,15 @@
 ---
-title: "Migrating your Outlook.com account to Office 365"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/15/2018
-ms.audience: Admin
-ms.topic: get-started-article
-f1_keywords:
-- 'O365P_MigrationsIMAPOutlookAppPass'
-- 'O365P_MigrationsIMAPHotmailAppPass'
-- 'O365M_MigrationsIMAPOutlookAppPass'
-- 'O365M_MigrationsIMAPHotmailAppPass'
-- 'O365E_MigrationsIMAPOutlookAppPass'
-- 'O365E_MigrationsIMAPHotmailAppPass'
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365_Setup
+ms.topic: get-started-article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: b536d43c-724b-47a4-bc09-023cfdea5487
+ms.date: 8/15/2018
+description: Learn how to prepare your hotmail.com or outlook.com account for migration to Office 365
+title: Migrating your Outlook.com account to Office 365
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOP150
@@ -24,8 +18,11 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
-ms.assetid: b536d43c-724b-47a4-bc09-023cfdea5487
-description: "Learn how to prepare your hotmail.com or outlook.com account for migration to Office 365"
+ms.audience: Admin
+ms.custom: Adm_O365_Setup
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Migrating your Outlook.com account to Office 365
@@ -76,5 +73,6 @@ After you have setup two-step verification, you can also obtain an app password 
 9. You'll get a message that two-step verification is turned on. Print your new *recovery code*  (this isn't your app password). If you ever need to recover access to this account, this recovery code will help. It's a good idea to keep it tucked away in a safe place.
 
 10. Choose **Next**.
+
 
 

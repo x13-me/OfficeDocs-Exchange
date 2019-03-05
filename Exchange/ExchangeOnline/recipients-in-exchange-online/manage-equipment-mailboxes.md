@@ -1,15 +1,19 @@
 ---
-title: "Manage equipment mailboxes"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: An equipment mailbox is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the EAC and Exchange Online PowerShell to create an equipment mailbox or change equipment mailbox properties. For more information, see Recipients.
+ms.topic: article
+author: kwekua
+ms.author: kwekua
 ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18
-description: "An equipment mailbox is a resource mailbox assigned to a resource that's not location specific, such as a portable computer, projector, microphone, or a company car. After an administrator creates an equipment mailbox, users can easily reserve the piece of equipment by including the corresponding equipment mailbox in a meeting request. You can use the EAC and Exchange Online PowerShell to create an equipment mailbox or change equipment mailbox properties. For more information, see Recipients."
+ms.date: 6/24/2018
+title: Manage equipment mailboxes
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Manage equipment mailboxes
@@ -253,5 +257,6 @@ To verify that you've successfully changed properties for an equipment mailbox, 
   ```
   Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'EquipmentMailbox')} | Get-CalendarProcessing | Format-List Identity,ScheduleOnlyDuringWorkHours
   ```
+
 
 

@@ -1,15 +1,17 @@
 ---
-title: "Change the assignment policy on a mailbox"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to change the management role assignment policy assigned to a mailbox.'
+ms.topic: article
+author: dstrome
+ms.author: dstrome
 ms.assetid: 011690a5-233a-4c03-8842-92276f899a89
-description: "Summary: Learn how to change the management role assignment policy assigned to a mailbox."
+ms.date: 7/5/2018
+title: Change the assignment policy on a mailbox
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Change the assignment policy on a mailbox
@@ -58,7 +60,7 @@ Set-Mailbox Brian -RoleAssignmentPolicy "Engineering Users"
 > [!NOTE]
 > You can't use the EAC to change the assignment policy on a group of mailboxes all at once.
 
-This procedure makes use of pipelining, the **Where** cmdlet, and the _WhatIf_ parameter. For more information about these concepts, see the following topics: 
+This procedure makes use of pipelining, the **Where** cmdlet, and the _WhatIf_ parameter. For more information about these concepts, see the following topics:
 
 - [Pipelining](http://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
 
@@ -85,5 +87,6 @@ Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail"
 ```
 
 For detailed syntax and parameter information, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) or [Set-Mailbox](http://technet.microsoft.com/library/a0d413b9-d949-4df6-ba96-ac0906dedae2.aspx).
+
 
 

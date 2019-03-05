@@ -1,15 +1,19 @@
 ---
-title: "Create an address book policy in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to create address book policies (ABPs) in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 6359abaf-e6f6-4667-8c2b-3860728b39a9
-description: "Learn how to create address book policies (ABPs) in Exchange Online."
+ms.date: 
+title: Create an address book policy in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Create an address book policy in Exchange Online
@@ -79,3 +83,4 @@ To verify that you've successfully created an ABP, use either of these procedure
 ## For more information
 
 After you create an ABP, you need to assign the ABP to users. For instructions, see [Assign an address book policy to users in Exchange Online](assign-an-address-book-policy-to-mail-users.md).
+

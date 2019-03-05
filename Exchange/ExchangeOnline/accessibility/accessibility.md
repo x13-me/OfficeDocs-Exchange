@@ -1,15 +1,19 @@
 ---
-title: "Accessibility in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-ms.date:
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: A11y_Features
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 0f716f4a-7213-44f1-b2d4-b7fd0a1a336b
-description: "Links to topics for using screen readers to do admin tasks in Exchange Online."
+ms.date: 
+description: Links to topics for using screen readers to do admin tasks in Exchange Online.
+title: Accessibility in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.custom: A11y_Features
+ms.service: exchange-online
+
 ---
 
 # Accessibility in Exchange Online
@@ -81,3 +85,4 @@ The Disability Answer Desk support team is trained in using many popular assisti
 - [Use a screen reader to export and review audit logs in the Exchange admin center in Exchange Online](use-screen-reader-to-export-and-review-audit-logs-in-exchange-admin-center.md)
 
 - [Use a screen reader to trace an email message in the Exchange admin center in Exchange Online](use-screen-reader-to-trace-an-email-message-in-exchange-admin-center.md)
+

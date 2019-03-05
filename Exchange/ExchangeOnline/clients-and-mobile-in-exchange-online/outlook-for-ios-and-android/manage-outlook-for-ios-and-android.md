@@ -1,16 +1,20 @@
 ---
-title: "Managing Outlook for iOS and Android in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: laurawi
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: This article describes best practices for managing mobile devices with Outlook for iOS and Android in Exchange Online.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 30e8c819-4d41-4458-a746-a9ba9a84a7c0
-description: "Summary: This article describes best practices for managing mobile devices with Outlook for iOS and Android in Exchange Online."
+ms.date: 
+title: Managing Outlook for iOS and Android in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Managing Outlook for iOS and Android in Exchange Online
@@ -110,3 +114,4 @@ Exchange administrators can initiate a remote device wipe against Outlook for iO
 
 > [!NOTE]
 > Outlook for iOS and Android only supports the "Wipe Data" remote wipe command and does not support "Account Only Remote Wipe Device."
+

@@ -1,21 +1,25 @@
 ---
-title: "Office 365 migration performance and best practices"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date:
-ms.audience: Admin
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: d9acb371-fd6c-4c14-aa8e-db5cbe39aa57
+ms.date: 
+description: There are many paths to migrate data from an on-premises email organization to Microsoft Office 365. When planning a migration to Office 365, a common question is about how to improve the performance of data migration and optimize migration velocity.
+title: Office 365 migration performance and best practices
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - BCS160
-ms.assetid: d9acb371-fd6c-4c14-aa8e-db5cbe39aa57
-description: "There are many paths to migrate data from an on-premises email organization to Microsoft Office 365. When planning a migration to Office 365, a common question is about how to improve the performance of data migration and optimize migration velocity."
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Office 365 migration performance and best practices
@@ -61,7 +65,7 @@ The following table describes the different workloads involved in a typical migr
 
 When mailboxes are migrated within Microsoft 365 data centers, every mailbox move or bulk-mailbox move requires time for the operation to complete. There are a number of factors, such as Microsoft 365 service activity, that can affect exactly how much time. The service is designed to throttle discretionary workloads like mailbox moves, to ensure that the service runs optimally for all users. You can still expect mailbox moves to be processed, however, depending on the service's discretionary resource availability. More details about resource throttling can be found in [this blog post](https://blogs.technet.microsoft.com/exchange/2018/06/25/resource-based-throttling-and-prioritization-in-exchange-online-migrations/).
 
-###Estimated migration times
+### Estimated migration times
 
 To help you plan your migration, the following tables present guidelines about when to expect bulk mailbox migrations or individual migrations to complete. These estimates are based on a data analysis of previous customer migrations. Because every environment is unique, your exact migration velocity may vary.
 
@@ -379,3 +383,4 @@ For third-party migration solutions that use the RPC over HTTP Protocol, here's 
 ### Factor 5: Office 365 service
 
 Office 365 resource health-based throttling affects migrations using third-party migration tools. See [Office 365 resource health-based throttling](#office-365-resource-health-based-throttling) for more details.
+

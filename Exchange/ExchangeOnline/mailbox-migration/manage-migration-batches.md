@@ -1,22 +1,25 @@
 ---
-title: "Manage migration batches in Office 365"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/16/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: d164b35c-f624-4f83-ac58-b7cae96ab331
+ms.date: 8/16/2018
+description: You can use the Migration dashboard in the Office 365 Exchange admin center (EAC) to manage mailbox migration to Office 365 using a cutover or staged Exchange migration. You can also use the Migration dashboard to migrate the contents of users' mailboxes from an on-premises IMAP server to existing Office 365 mailboxes. The Migration dashboard displays statistics about the overall migration in addition to statistics about a specific migration batch. You can create, start, stop, pause, and edit migration batches.
+title: Manage migration batches in Office 365
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - BCS160
-ms.assetid: d164b35c-f624-4f83-ac58-b7cae96ab331
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
 
-description: "You can use the Migration dashboard in the Office 365 Exchange admin center (EAC) to manage mailbox migration to Office 365 using a cutover or staged Exchange migration. You can also use the Migration dashboard to migrate the contents of users' mailboxes from an on-premises IMAP server to existing Office 365 mailboxes. The Migration dashboard displays statistics about the overall migration in addition to statistics about a specific migration batch. You can create, start, stop, pause, and edit migration batches."
 ---
 
 # Manage migration batches in Office 365
@@ -57,7 +60,7 @@ Migration batches that are created are listed in the migration queue. The follow
 |**Failed**|The number of mailboxes in the migration batch for which the migration failed. You can display information about specific mailboxes that have migration errors. For more information, see [Migration users status report](migration-users-status-report.md).|
 
 > [!IMPORTANT]
-> Migration batches with a status of **Synced** that have no administrator-initiated activity (for example, no administrator has stopped and restarted a migration batch or edited a migration batch) for the last 90 days will be stopped and then deleted 30 days later if no further action is taken by the administrator.
+> Migration batches with a status of **Synced** that have no administrator-initiated activity (for example, no administrator has stopped and restarted a migration batch or edited a migration batch) for the last 60 days will be stopped. All batches with **Stopped** or **Failed** status will be removed after 90 days. All batches with **Completed** status will be removed after 60 days.
 
 The Migration dashboard contains a set of commands that you can use to manage migration batches. After you create a migration batch, you can select it, and then click one of the following commands. If a migration batch is in a status state that isn't supported by a command, the command is either dimmed or not displayed because it's unavailable.
 
@@ -94,5 +97,6 @@ The details pane in the Migration dashboard displays the following information a
 |**Initial sync duration**|The amount of time it took to complete the initial synchronization for all mailboxes in the migration batch.|
 |**Last sync time**|The last time the migration batch was restarted or the last time that incremental synchronization was performed for the batch. As previously stated, incremental synchronization occurs every 24 hours for IMAP migrations and cutover Exchange migrations.|
 |**Associated endpoint**|The name of the migration endpoint being used by the migration batch. You can click **View details** to view the migration endpoint settings. You can also edit the settings if none of the migration batches using the endpoint are currently running.|
+
 
 

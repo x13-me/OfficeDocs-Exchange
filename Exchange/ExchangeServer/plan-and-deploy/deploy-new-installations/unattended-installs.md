@@ -1,26 +1,29 @@
 ---
-title: "Use unattended mode in Exchange Setup"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: get-started-article
-ms.prod: exchange-server-it-pro
 localization_priority: Priority
-ms.collection: Strat_EX_Admin
+description: 'Summary: Learn how to install, uninstall, upgrade, and recover Exchange 2016 or Exchange 2019 from the command line.'
+ms.topic: get-started-article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 386465e9-41da-4e26-9816-b3b69be1f8bf
-description: "Summary: Learn how to install, uninstall, upgrade, and recover Exchange 2016 or Exchange 2019 from the command line."
+ms.date:
+title: Use unattended mode in Exchange Setup
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Use unattended mode in Exchange Setup
 
-Running Exchange Setup from the command line allows you to automate the installation of Exchange do and other related tasks on Exchange servers (for example, remove an existing Exchange server or recover a failed Exchange server). 
+Running Exchange Setup from the command line allows you to automate the installation of Exchange do and other related tasks on Exchange servers (for example, remove an existing Exchange server or recover a failed Exchange server).
 
 This topic describes the available command line switches, and provides examples.
 
 For more information about planning for Exchange 2016 or Exchange 2019, see [Planning and deployment for Exchange Server](../../plan-and-deploy/plan-and-deploy.md).
-  
+
 For information about tasks to complete after installation, see [Exchange Server post-installation tasks](../post-installation-tasks/post-installation-tasks.md).
 
 ## Primary command line switches for unattended mode
@@ -71,9 +74,9 @@ The optional (supporting) command line switches that are available in unattended
 
   > [!CAUTION]
   > After you install Exchange on a server, you must not change the server name. Renaming a server after you've installed an Exchange server role is not supported.
-  
+
 - For Mailbox servers:
-  
+
   - Estimated time to complete: 60 minutes
 
   - The target server must be a member of an Active Directory domain.
@@ -89,7 +92,7 @@ The optional (supporting) command line switches that are available in unattended
    <sup>*</sup> Members of the **Delegated Setup** role group can install Exchange on servers that have already been provisioned in Active Directory by an Exchange administrator. For more information, see [Delegate the installation of Exchange servers](../../plan-and-deploy/deploy-new-installations/delegate-installations.md).
 
 - For Edge Transport servers:
-  
+
   - Estimated time to complete: 40 minutes
 
   - We recommend that you install Edge Transport servers in a perimeter network that's outside of your organization's internal Active Directory forest. Installing the Edge Transport server role on domain-joined computers only enables domain management of Windows features and settings. Edge Transport servers don't directly access Active Directory. Instead, they use Active Directory Lightweight Directory Services (AD LDS) to store configuration and recipient information. For more information about the Edge Transport role, see [Edge Transport servers](../../architecture/edge-transport-servers/edge-transport-servers.md).
@@ -105,7 +108,7 @@ The optional (supporting) command line switches that are available in unattended
 ## Use Setup.exe to install Exchange in unattended mode
 
 1. On the target server, open File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. Note the virtual DVD drive letter that's assigned.
-  
+
 2. Open a Windows Command Prompt window. For example:
 
    - Press the Windows key + 'R' to open the **Run** dialog, type cmd.exe, and then press **OK**.
@@ -232,3 +235,4 @@ For more information, see [Delegate the installation of Exchange servers](delega
 - Complete your deployment by performing the tasks provided in [Exchange post-installation tasks](../../plan-and-deploy/post-installation-tasks/post-installation-tasks.md).
 
 - Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+

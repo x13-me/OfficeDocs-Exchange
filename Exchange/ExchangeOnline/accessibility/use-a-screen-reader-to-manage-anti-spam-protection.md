@@ -1,15 +1,19 @@
 ---
-title: "Use a screen reader to manage anti-spam protection in Exchange Online"
-ms.author: v-maleo
-author: maggsl
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: A11y_UseSR
+ms.topic: article
+author: maggsl
+ms.author: v-maleo
 ms.assetid: adad2c0d-7452-4392-a95e-058c4678c05e
-description: "Admins can learn how to use a screen reader to manage anti-spam settings in the Exchange admin center (EAC) in Exchange Online"
+ms.date: 
+description: Admins can learn how to use a screen reader to manage anti-spam settings in the Exchange admin center (EAC) in Exchange Online
+title: Use a screen reader to manage anti-spam protection in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.custom: A11y_UseSR
+ms.service: exchange-online
+
 ---
 
 # Use a screen reader to manage anti-spam protection in Exchange Online
@@ -206,3 +210,4 @@ To complete the steps for outbound spam customizations covered in this topic, mo
 3. To move the focus to one of your outbound spam filters, press the Up Arrow or Down arrow key until you hear the name of the filter whose details you want to hear.
 
 4. To move the focus to the details pane for the outbound spam filter, press the Tab key. You hear the details for the filter.
+

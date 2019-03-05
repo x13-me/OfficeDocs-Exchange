@@ -45,29 +45,30 @@ Before you start, make sure that you've done the following:
     
 ## Enable Group writeback in Azure AD Connect
 
-1. In the Azure AD Connect wizard, select **Customize synchronization options** and then click **Next**.
+1. Open the Azure AD Connect wizard, select **Configure** and then click **Next**.
+
+2. Select Customize synchronization options and then click Next.
     
-2. On the **Connect to Azure AD** page, enter your Office 365 and on-premises credentials. Click **Next**.
+3. On the **Connect to Azure AD** page, enter your Office 365 credentials. Click **Next**.
     
-3. On the **Optional features** page, verify that the options you previously configured are still selected. The most commonly-selected options are **Exchange hybrid** and **Password hash synchronization**. 
+4. On the **Optional features** page, verify that the options you previously configured are still selected. The most commonly-selected options are **Exchange hybrid** and **Password hash synchronization**. 
     
-4. Select **Group writeback** and then click **Next**. 
+5. Select **Group writeback (Preview)** and then click **Next**. 
     
-5. On the **Writeback** page, select an Active Directory organizational unit (OU) to store objects that are synchronized from Office 365 to your on-premises organization, and then click **Next**.
+6. On the **Writeback** page, select an Active Directory organizational unit (OU) to store objects that are synchronized from Office 365 to your on-premises organization, and then click **Next**.
     
-6. On the **Ready to configure** page, click **Configure**.
+7. On the **Ready to configure** page, click **Configure**.
     
-7. When the wizard is complete, click **Exit** on the **Configuration complete** page. 
+8. When the wizard is complete, click **Exit** on the **Configuration complete** page.
+
+9. Open Active Directory Users and Computers on an Active Directory domain controller and locate the user account that begins with **AAD_**. Make note of this account's name.
     
-8. Open Active Directory Users and Computers on an Active Directory domain controller and locate the user account that begins with **AAD_**. Make note of this account's name.
-    
-9. Open the Exchange Management Shell on an on-premises Exchange server, and run the following commands.
+10. Open the Windows PowerShell on the Azure Active Directory Connect server, and run the following commands.
     
   ```
-  $AzureADConnectSWritebackAccount = <AAD_ account name from step 8>
-  $GroupsOU = <writeback Active Directory OU selected in step 5>
-  Import-Module "C:\Program Files\Microsoft Azure Active Directory Connect\AdPrep\AdSyncPrep.psm1"
-  Initialize-ADSyncGroupWriteBack -ADConnectorAccount $AzureADConnectSWritebackAccount -GroupWriteBackContainerDN $GroupsOU
+  $AzureADConnectSWritebackAccountDN = <AAD_ account DN>
+  Import-Module "C:\Program Files\Microsoft Azure Active Directory Connect\AdSyncConfig\AdSyncConfig.psm1"
+  Set-ADSyncUnifiedGroupWritebackPermissions -ADConnectorAccountDN $AzureADConnectSWritebackAccountDN
   ```
 
 ## Configure a group domain

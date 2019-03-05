@@ -1,15 +1,19 @@
 ---
-title: "Best practices for configuring mail flow rules in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn about the recommendations for mail flow rules in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: abd863c3-c0ce-42f3-9470-a573adc3cbba
-description: "Learn about the recommendations for mail flow rules in Exchange Online."
+ms.date: 
+title: Best practices for configuring mail flow rules in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Best practices for configuring mail flow rules in Exchange Online
@@ -66,3 +70,4 @@ The text file can contain regular expressions for patterns. These expressions ar
 For an example that shows a text file with regular expressions and the Exchange module Windows PowerShell commands to use, see [Use mail flow rules to route email based on a list of words, phrases, or patterns in Exchange Online](use-rules-to-route-email.md).
 
 To learn how to specify patterns using regular expressions, see [Regular Expression Reference](https://go.microsoft.com/fwlink/p/?LinkId=532394).
+

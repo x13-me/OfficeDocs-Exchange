@@ -1,16 +1,20 @@
 ---
-title: "Migrate your public folders to Office 365 Groups"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/20/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.collection: Strat_EX_EXOBlocker
-ms.assetid: d89e727b-675a-4623-b572-260f8b44b966
 description: "Summary: Why you should or shouldn't migrate your Exchange public folders to Office 365 Groups."
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: d89e727b-675a-4623-b572-260f8b44b966
+ms.date: 7/20/2018
+title: Migrate your public folders to Office 365 Groups
+ms.collection:
+- Strat_EX_EXOBlocker
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Migrate your public folders to Office 365 Groups
@@ -121,5 +125,6 @@ Select the appropriate link below for step-by-step instructions on running a bat
 - [Use batch migration to migrate Exchange 2013 public folders to Office 365 Groups](https://technet.microsoft.com/library/mt843873(v=exchg.150).aspx)
 
 - [Use batch migration to migrate Exchange 2016 public folders to Office 365 Groups](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups)
+
 
 

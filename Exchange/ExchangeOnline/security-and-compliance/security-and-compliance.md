@@ -1,15 +1,19 @@
 ---
-title: "Security and compliance for Exchange Online"
-ms.author: markjjo
-author: markjjo
-manager: laurawi
-ms.date: 12/13/2017
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Email has become a reliable and ubiquitous communication medium for information workers in organizations of all sizes. Messaging stores and mailboxes have become repositories of valuable data. It's important for organizations to formulate messaging policies that dictate the fair use of their messaging systems, provide user guidelines for how to act on the policies, and where required, provide details about the types of communication that may not be allowed.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: 510524c6-6d3e-416f-9e27-fa25446b099a
-description: "Email has become a reliable and ubiquitous communication medium for information workers in organizations of all sizes. Messaging stores and mailboxes have become repositories of valuable data. It's important for organizations to formulate messaging policies that dictate the fair use of their messaging systems, provide user guidelines for how to act on the policies, and where required, provide details about the types of communication that may not be allowed."
+ms.date: 12/13/2017
+title: Security and compliance for Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Security and compliance for Exchange Online
@@ -38,5 +42,6 @@ The following table provides an overview of the security and compliance features
 |[S/MIME for Message Signing and Encryption](https://technet.microsoft.com/library/887c710b-0ec6-4ff0-8065-5f05f74afef3.aspx)|Secure/Multipurpose Internet Mail Extensions (S/MIME) allows email users to help protect sensitive information by sending signed and encrypted email within their organization. As an administrator, you can enable S/MIME-based security for your organization if you have mailboxes in either Exchange Server or Exchange Online.|
 |[Journaling in Exchange Online](journaling/journaling.md)|Journaling can help you meet legal, regulatory, and organizational compliance requirements by recording inbound and outbound email communications. In Exchange Online, you can create journal rules to deliver journal reports to your on-premises mailbox or archiving system, or to an external archiving service.|
 |[Mail flow rules (transport rules) in Exchange Online](mail-flow-rules/mail-flow-rules.md)|You can use mail flow rules (also known as transport rules) to inspect messages sent or received by your users and take actions such as blocking or bouncing a message, holding it for review by a manager or an administrator or delivering a copy to another recipient if the message matches specified conditions.|
+
 
 

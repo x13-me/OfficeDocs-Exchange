@@ -1,15 +1,19 @@
 ---
-title: "Shared mailboxes in Exchange Online"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: About shared mailboxes in Exchange Online, and how to create them.'
+ms.topic: article
+author: kwekua
+ms.author: kwekua
 ms.assetid: fdce3587-ed95-4433-9931-4cf74b52e8e0
-description: "Summary: About shared mailboxes in Exchange Online, and how to create them."
+ms.date: 6/24/2018
+title: Shared mailboxes in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Shared mailboxes in Exchange Online
@@ -94,5 +98,6 @@ For information about keyboard shortcuts that may apply to the procedures in thi
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+
 
 

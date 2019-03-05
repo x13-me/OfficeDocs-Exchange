@@ -1,15 +1,17 @@
 ---
-title: "Manage mail contacts"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how use Exchange admin center (EAC) or the Exchange Management Shell to create and change mail contacts for people outside your organization.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ed0438ea-f396-480e-b661-9f704b0a04e6
-description: "Summary: Learn how use Exchange admin center (EAC) or the Exchange Management Shell to create and change mail contacts for people outside your organization."
+ms.date: 7/5/2018
+title: Manage mail contacts
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage mail contacts
@@ -37,7 +39,7 @@ Mail contacts are essentially contacts for people outside your Exchange or organ
 
 2. Click **New** ![Add icon](../media/ITPro_EAC_AddIcon.png) \> **Mail contact**.
 
-3. Complete the following boxes on the **New mail contact** page: 
+3. Complete the following boxes on the **New mail contact** page:
 
   - **First name**: Use this box to type the contact's first name.
 
@@ -95,18 +97,17 @@ To verify that you've successfully created a mail contact, do one of the followi
 
 3. On the mail contact properties page, click one of the following sections to view or change properties.
 
-  - [General](#General.md)
+   - [General](#general)
 
-  - [Contact Information](#ContactInformation.md)
+   - [Contact Information](#contact-information)
 
-  - [Organization](#Organization.md)
+   - [Organization](#organization)
 
-  - [Email Options](#EmailOptions.md) (not available in Exchange Online) 
+   - [Email Options](#email-options)
 
-  - [MailTip](#MailTip.md)
+   - [MailTip](#mailtip)
 
 #### General
-<a name="General"> </a>
 
 Use the **General** section to view or change basic information about the mail contact.
 
@@ -123,12 +124,10 @@ Use the **General** section to view or change basic information about the mail c
 - Click **More options** to display the OU that contains the mail contact account. You have to use Active Directory Users and Computers to move the contact to a different OU.
 
 #### Contact Information
-<a name="ContactInformation"> </a>
 
 Use the **Contact Information** section to view or change the recipient's contact information, such as mailing address and telephone numbers. This information is displayed in the address book.
 
 #### Organization
-<a name="Organization"> </a>
 
 Use the **Organization** section to record detailed information about the mail contact's role in the organization. This information is displayed in the address book. Also, you can create a virtual organization chart that's accessible from email clients such as Outlook.
 
@@ -143,12 +142,10 @@ Use the **Organization** section to record detailed information about the mail c
 - **Direct reports**: You can't modify this box. A *direct report* is a recipient who reports to a specific manager. If you've specified a manager for the recipient, that recipient appears as a direct report in the details of the manager's mailbox. For example, Toby manages Ann and Spencer, who are mail contacts, so Toby is specified in the **Manager** box in the organization properties for Ann and Spencer, and Ann and Spencer appear in the **Direct reports** box in the properties of Toby's mailbox.
 
 #### Email Options
-<a name="EmailOptions"> </a>
 
 Use the **Email Options** section to add or remove proxy addresses for the mail contact or edit existing proxy addresses. The mail contact's primary SMTP address is also displayed in this section, but you can't change it. To change it, you have to change the contact's external email address in the **General** section.
 
 #### MailTip
-<a name="MailTip"> </a>
 
 Use the **MailTip** section to add a MailTip to alert users of potential issues before they send a message to this recipient. A MailTip is text that's displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
 
@@ -201,7 +198,7 @@ To verify that you've successfully changed properties for a mail contact, do the
   Get-MailContact | Format-List Name,CustomAttribute1,HiddenFromAddressListsEnabled
   ```
 
-    In the example above where the CustomAttribute15 was set for all mail contacts in the Public Relations department, run the following command to verify the changes.
+  In the example above where the CustomAttribute15 was set for all mail contacts in the Public Relations department, run the following command to verify the changes.
 
   ```
   Get-Contact -Filter "Department -eq 'Public Relations'" | Get-MailContact | Format-List Name,CustomAttribute15
@@ -241,5 +238,6 @@ To verify that you've successfully bulk edited mail contacts, do one of the foll
   ```
   Get-Contact -ResultSize unlimited -Filter {(Company -eq 'Adatum')} | Format-List Name,Office,Manager
   ```
+
 
 

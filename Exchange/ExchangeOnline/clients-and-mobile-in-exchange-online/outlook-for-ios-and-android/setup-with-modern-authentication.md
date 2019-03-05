@@ -1,16 +1,20 @@
 ---
-title: "Account setup with modern authentication in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: serdars
-ms.date: 9/21/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: How users with modern authentication-enabled accounts can quickly set up their Outlook for iOS and Android accounts in Exchange Online.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 1efe7737-b573-4f36-a0f2-27714d2ebdb0
-description: "Summary: How users with modern authentication-enabled accounts can quickly set up their Outlook for iOS and Android accounts in Exchange Online."
+ms.date: 9/21/2018
+title: Account setup with modern authentication in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Account setup with modern authentication in Exchange Online
@@ -72,3 +76,4 @@ In order to ensure these users can only access corporate email on enrolled devic
 1. The first policy allows Outlook for iOS and Android, and it blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online. See "Step 1 - Configure an Azure AD conditional access policy for Exchange Online", but for the fifth step select  "Require device to be marked as compliant", "Require approved client app", and "Require all the selected controls".
 
 2. The second policy prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online. See "Step 2 - Configure an Azure AD conditional access policy for Exchange Online with Active Sync (EAS)."
+

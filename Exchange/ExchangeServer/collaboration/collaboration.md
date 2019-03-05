@@ -1,15 +1,17 @@
 ---
-title: "Collaboration"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: An overview of the different collaboration methods available in Exchange 2016 and 2019: groups, site mailboxes, shared mailboxes, and public folders.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 3311562b-8fd3-4d66-a5f7-8e65a38c6b39
-description: "Summary: An overview of the different collaboration methods available in Exchange 2016 and 2019: groups, site mailboxes, shared mailboxes, and public folders."
+ms.date: 7/6/2018
+title: Collaboration
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Collaboration
@@ -66,5 +68,6 @@ The following table gives you a quick glance at each of the collaboration featur
 |**Shared calendar?** <br/> |No  <br/> |Yes  <br/> |Yes  <br/> |No  <br/> |
 |**Email arrives in user's personal Inbox?** <br/> |No. Email arrives in the site mailbox.  <br/> |No. Email arrives in the public folder.  <br/> |No. Email arrives in the Inbox of the shared mailbox.  <br/> |Yes. Email arrives in the Inbox of a distribution group member.  <br/> |
 |**Supported clients** <br/> |Outlook 2013 or later  <br/> SharePoint 2013  <br/> |Outlook 2007 or later  <br/> |Outlook 2007 or later  <br/> Outlook Web App  <br/> |Outlook 2007 or later  <br/> Outlook Web App  <br/> |
- 
+
+
 

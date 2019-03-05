@@ -1,15 +1,19 @@
 ---
-title: "View the administrator audit log"
-ms.author: markjjo
-author: markjjo
-manager: scotv
-ms.date: 7/11/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to view the administrator audit log in Exchange Online
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: 5c62072a-556d-4fea-9973-d668c6b9fd57
-description: "Learn how to view the administrator audit log in Exchange Online"
+ms.date: 7/11/2018
+title: View the administrator audit log
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: Admin
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # View the administrator audit log
@@ -70,5 +74,6 @@ If you've successfully run an administrator audit log report, configuration chan
 
 > [!NOTE]
 > When a change is made in your organization, it may take up to 15 minutes to appear in audit log search results. If a change doesn't appear in the administrator audit log, wait a few minutes and run the search again.
+
 
 

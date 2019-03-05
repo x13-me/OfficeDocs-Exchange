@@ -1,15 +1,17 @@
 ---
-title: "Set up connectors to route mail between Office 365 and your own email servers"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to use connectors to route mail between Exchange Online and on-premises email servers.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 2e93fd60-a5ef-4e64-8e62-2b862b2d1033
-description: "Admins can learn how to use connectors to route mail between Exchange Online and on-premises email servers."
+ms.date: 
+title: Set up connectors to route mail between Office 365 and your own email servers
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Set up connectors to route mail between Office 365 and your own email servers
@@ -163,7 +165,7 @@ Next, you must prepare your email server to send mail to Office 365. This enable
 
 On your Exchange server, configure a Send connector to send email via a smart host to Office 365. For instructions on how to do this with Exchange Server, see [Create a Send connector to route outbound email through a smart host ](https://technet.microsoft.com/library/4a9ef08e-bd62-4c6b-8790-d24fb0f8f24b.aspx). For instructions on how to do this with Exchange Server 2010, see [Create an SMTP Send Connector](https://technet.microsoft.com/library/38ae9dc8-f11b-4f57-867a-4d74b453c9a3.aspx).
 
-To create the Send connector in Exchange Server, use the following syntax in Exchange Online PowerShell. To learn how to open Exchange Online PowerShell in your on-premises Exchange organization, see **Open Exchange Online PowerShell**.
+To create the Send connector in Exchange Server, use the following syntax in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 ```
 New-SendConnector -Name <DescriptiveName> -AddressSpaces * -CloudServicesMailEnabled $true -Fqdn <CertificateHostNameValue> -RequireTLS $true -DNSRoutingEnabled $false -SmartHosts <YourDomain>-com.mail.protection.outlook.com -TlsAuthLevel CertificateValidation
@@ -250,3 +252,4 @@ For each email sent from Office 365 to mailboxes on your email server, Office 36
 [Validate connectors in Office 365](validate-connectors.md)
 
 [Set up connectors for secure mail flow with a partner organization](set-up-connectors-for-secure-mail-flow-with-a-partner.md)
+

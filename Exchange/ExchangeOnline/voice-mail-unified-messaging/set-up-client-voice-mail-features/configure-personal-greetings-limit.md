@@ -1,15 +1,17 @@
 ---
-title: "Configure the limit on personal greetings for Outlook Voice Access users"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: The Limit on personal greetings (minutes) setting enables you to enter the maximum number of minutes that users associated with the Unified Messaging (UM) mailbox policy can use to record their voice mail greetings. This setting applies to both their standard voice mail and their Out of Office voice mail greetings. By default, the maximum greeting duration is set to 5 minutes. However, you can configure the maximum greeting duration to any setting between 1 and 10 minutes.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: d400f250-0f55-45f5-9918-5f1d7819fbdf
-description: "The Limit on personal greetings (minutes) setting enables you to enter the maximum number of minutes that users associated with the Unified Messaging (UM) mailbox policy can use to record their voice mail greetings. This setting applies to both their standard voice mail and their Out of Office voice mail greetings. By default, the maximum greeting duration is set to 5 minutes. However, you can configure the maximum greeting duration to any setting between 1 and 10 minutes."
+ms.date: 11/17/2014
+title: Configure the limit on personal greetings for Outlook Voice Access users
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Configure the limit on personal greetings for Outlook Voice Access users
@@ -50,5 +52,6 @@ This example configures the maximum greeting duration on the UM mailbox policy `
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy MaxGreetingDuration 3
 ```
+
 
 

@@ -1,16 +1,20 @@
 ---
-title: "Using Outlook for iOS and Android in the Government Community Cloud"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: How organizations in the Office 365 U.S. Government Community Cloud (GCC) can enable Outlook for iOS and Android for their users.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 73b693d9-39bb-4689-a1ff-4be505a5945b
-description: "Summary: How organizations in the Office 365 U.S. Government Community Cloud (GCC) can enable Outlook for iOS and Android for their users."
+ms.date: 
+title: Using Outlook for iOS and Android in the Government Community Cloud
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Using Outlook for iOS and Android in the Government Community Cloud
@@ -19,7 +23,7 @@ description: "Summary: How organizations in the Office 365 U.S. Government Commu
 
 Outlook for iOS and Android is fully architected in the Microsoft Cloud and meets the security and compliance requirements needs of all United States Government customers. 
 
-For customers operating in Government Community Cloud (GCC) Moderate, Outlook for iOS and Android's [architecture](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android) routes routes data through Azure Government Community data centers (the Azure Government Community Cloud). This solution is FedRAMP-compliant and approved, which means the Outlook for iOS and Android architecture and underlying translation protocol service now meet the data-handling requirements for GCC tenants (these requirements are defined by NIST Special Publication 800-145). 
+For customers operating in Government Community Cloud (GCC) Moderate, Outlook for iOS and Android's [architecture](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android)  routes data through Azure Government Community data centers (the Azure Government Community Cloud). This solution is FedRAMP-compliant and approved, which means the Outlook for iOS and Android architecture and underlying translation protocol service now meet the data-handling requirements for GCC tenants (these requirements are defined by NIST Special Publication 800-145). 
 
 For customers operating GCC High or Department of Defense, Outlook for iOS and Android leverages the [native Microsoft sync technology](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android). This architecture meets GCC High and DoD requirements DISA SRG Level 4 (GCC-High) and Level 5 (DoD), Defense Federal Acquisition Regulations Supplement (DFARS), and International Traffic in Arms Regulations (ITAR), which have been approved by a third-party assessment organization and are FISMA compliant based on the NIST 800-53 rev 4.
 
@@ -108,7 +112,7 @@ Prior to Outlook for iOS and Android obtaining FedRAMP approval and certificatio
 
 ## Services and features not available
 
-The following services and features of Outlook for iOS and Android are not available for Government Community Cloud users in order to satisfy government compliance requirements:
+By default, certain services and features of Outlook for iOS and Android are disabled automatically for the Office 365 U.S. Government Community Cloud (GCC) because they do not meet FedRAMP requirements:
 
 - **In-app support**: Users will not be able to submit support tickets from within the app. They should contact their internal help desk and provide logs (via the Share Diagnostics Logs option in Setting -> Help). If necessary, the organization's IT department can then contact Microsoft Support directly.
 
@@ -118,9 +122,36 @@ The following services and features of Outlook for iOS and Android are not avail
 
 - **Calendar Apps**: Calendar apps (Facebook, Wunderlist, Evernote, Meetup) are not available with GCC accounts.
 
+- **Add-Ins**: Add-ins are not available with GCC accounts.
+
 - **Storage Providers**: Only the GCC user's OneDrive for Business storage account can be added within Outlook for iOS and Android. Third-party storage accounts (e.g., Dropbox, Box) cannot be added.
 
 - **Location services**: Bing location services are not available with GCC accounts. Features that rely on location services, like Cortana Time To Leave, are also unavailable.
 
 - **Favorites**: Favorite folders, groups and people are not available with GCC accounts.
 
+- **MailTips**: The External recipients MailTip is not available with GCC accounts.
+
+- **Office Lens**: Office Lens technology (e.g., scanning business cards, taking pictures) included in Outlook for iOS and Android is not available with GCC accounts.
+
+Executing the below Exchange Online cmdlet will enable GCC Moderate, High, or DoD customers using Outlook for iOS and Android access to features and services that are not FedRAMP compliant:
+
+ ```
+  Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $false
+ ```
+
+> [!NOTE]
+> Setting OutlookMobileGCCRestrictionsEnabled to false currently does not remove the service and feature restrictions placed on Outlook for iOS and Android. This behavior is planned to change in April 2019.
+
+At any time, access can be revoked by resetting the parameter back to the default value:
+
+ ```
+  Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $true
+ ```
+
+Changing this setting typically takes affect within an hour. As this is an tenant-based change, all Outlook for iOS and Android users in the GCC organization will be affected. 
+
+> [!NOTE]
+> Users do not need to leverage the GCC mode option within the client with the above Exchange Online setting.
+
+For more information on the cmdlet, please see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig?view=exchange-ps). 

@@ -1,14 +1,17 @@
 ---
-title: "Message format and transmission in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: laurawi
-ms.date: 6/24/2018
 ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+ms.author: chrisda
+manager: laurawi
+ms.topic: article
+author: chrisda
+ms.service: exchange-online
 ms.assetid: 828cf844-0f26-44f4-9a76-20bdbd58b992
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.date: 6/24/2018
+title: Message format and transmission in Exchange Online
 
 ---
 
@@ -78,5 +81,6 @@ Users can control the following settings:
     For more information on Outlook Web App settings, see [Create and respond to messages in Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkID=399384).
 
 [Return to top](message-format-and-transmission.md#RTT)
+
 
 

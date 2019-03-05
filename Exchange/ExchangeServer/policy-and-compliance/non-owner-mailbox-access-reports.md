@@ -1,15 +1,17 @@
 ---
-title: "Run a non-owner mailbox access report"
-ms.author: serdars
-author: SerdarSoysal
-manager: scotv
-ms.date: 7/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to enable mailbox audit logging in Exchange 2016 or Exchange 2019 so that you run reports on non-owner mailbox access.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: dbbef170-e726-4735-abf1-2857db9bb52d
-description: "Summary: Learn how to enable mailbox audit logging in Exchange 2016 or Exchange 2019 so that you run reports on non-owner mailbox access."
+ms.date: 7/8/2018
+title: Run a non-owner mailbox access report
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Run a non-owner mailbox access report
@@ -125,5 +127,6 @@ The following table describes the types of actions logged, and whether these act
 |**Send as** <br/> |A message was sent using SendAs permission. This means another user sent the message as though it came from the mailbox owner.  <br/> |Yes  <br/> |Yes  <br/> |
 |**Send on behalf of** <br/> |A message was sent using SendOnBehalf permission. This means another user sent the message on behalf of the mailbox owner. The message will indicate to the recipient who the message was sent on behalf of and who actually sent the message.  <br/> |Yes  <br/> |No  <br/> |
 |**MessageBind** <br/> |A message was viewed in the preview pane or opened.  <br/> |No  <br/> |No  <br/> |
- 
+
+
 

@@ -1,15 +1,19 @@
 ---
-title: "Manage message approval in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn about message approval in Exchange Online
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 43a89f71-8002-4cb0-b3c8-1c2b2597f227
-description: "Learn about message approval in Exchange Online"
+ms.date: 
+title: Manage message approval in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage message approval in Exchange Online
@@ -88,3 +92,4 @@ By default, one arbitration mailbox is used for each Exchange organization. If y
 [Manage mail flow rules](manage-mail-flow-rules.md)
 
 [Exchange Online PowerShell](https://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx)
+

@@ -1,15 +1,19 @@
 ---
-title: "Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: Admins can learn how to apply text to the top or bottom of outbound messages in Exchange Online'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 29ac61c2-77f1-4071-b14e-8cc64e3e76ba
-description: "Summary: Admins can learn how to apply text to the top or bottom of outbound messages in Exchange Online"
+ms.date: 
+title: Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online
@@ -98,3 +102,4 @@ To verify that you've successfully created a disclaimer, and that the disclaimer
 ## For more information
 
 After you configure a disclaimer or email header or footer, see [Manage mail flow rules](manage-mail-flow-rules.md) for information about how to view, modify, enable, disable, or remove a rule.
+

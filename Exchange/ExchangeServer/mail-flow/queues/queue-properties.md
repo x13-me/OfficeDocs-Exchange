@@ -1,37 +1,39 @@
 ---
-title: "Queue properties in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn about queue properties to use in filters in Exchange Server.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: fbfbdcab-e0d2-4ed9-8f7f-e5fa2c87360d
-description: "Learn about queue properties to use in filters in Exchange Server."
+ms.date: 7/6/2018
+title: Queue properties in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Queue properties in Exchange Server
 
 Filtering queues by one or more queue properties in Exchange Server allows you to quickly find and take action on those queues. The following scenarios are examples of how you might use queue filtering to manage mail flow:
-  
+
 - You receive a message from System Center Operations Manager that indicates a queue length has exceeded the established threshold. You want to investigate whether a server-wide mail flow problem exists.
-    
+
     You create a filter to view all the queues on a server whose message count exceeds what you consider to be typical. If a mail flow problem is indicated, you can select all the queues in the results and suspend the queues while you continue to investigate.
-    
+
 - You suspend several queues to investigate the cause of mail flow problems. You determine that the problem was caused by an incorrect connector configuration that is now fixed.
-    
+
     You can create a filter to view all the queues that have a status of Suspended, and then select all the queues in the filter results and resume the queues.
-    
+
 You can create queue filters in Queue Viewer in the Exchange Toolbox, or by using the _Filter_ parameter on the queue management cmdlets. Note that the queue management cmdlets support more filterable properties than Queue Viewer.
-  
+
 For more information about Queue Viewer, see [Queue Viewer](queue-viewer.md). For more information about the queue management cmdlets, see [Procedures for queues](queue-procedures.md) and [Find queues and messages in queues in the Exchange Management Shell](queues-and-messages-in-powershell.md).
-  
+
 ## Queue properties to use as filters
 
  The following table describes the queue properties that you can use as filters in Queue Viewer and the Exchange Management Shell.
-  
+
 |**Queue Viewer**|**Exchange Management Shell**|**Comparison operators**|**Description**|
 |:-----|:-----|:-----|:-----|
 |n/a  <br/> | `DeferredMessageCount` <br/> |Equals (`-eq`)  <br/> Does not equal (`-ne`)  <br/> Greater than (`-gt`)  <br/> Greater than or equal to (`-ge`)  <br/> Less than (`-lt`)  <br/> Less than or equal to (`-le`)  <br/> |The number of messages returned to the Submission queue because of transient errors that were encountered during recipient resolution. For more information about deferred messages, see [Recipient resolution in Exchange Server](../../mail-flow/mail-routing/recipient-resolution.md).  <br/> |
@@ -58,5 +60,6 @@ For more information about Queue Viewer, see [Queue Viewer](queue-viewer.md). Fo
 |**Status** <br/> | `Status` <br/> |**Equals** (`eq`)  <br/> **Does Not Equal** (`-ne`)  <br/> |The current queue status. A queue can have one of the following status values: Active, Connecting, Suspended, Ready, or Retry. For more information, see [Queue status](queues.md#queue-status).  <br/> |
 |n/a  <br/> | `TlsDomain` <br/> |Equals (`-eq`)  <br/> Does Not Equal (`-ne`)  <br/> Contains (`-like`)  <br/> |The FQDN of the destination domain if the domain is configured for Domain Security (mutual TLS authentication).  <br/> |
 |n/a  <br/> | `Velocity` <br/> |Equals (`-eq`)  <br/> Does not equal (`-ne`)  <br/> Greater than (`-gt`)  <br/> Greater than or equal to (`-ge`)  <br/> Less than (`-lt`)  <br/> Less than or equal to (`-le`)  <br/> |A calculated number that indicates how effectively the queue is draining. For more information, see [IncomingRate, OutgoingRate, and Velocity](queues.md#incomingrate-outgoingrate-and-velocity) <br/> |
-   
+
+
 

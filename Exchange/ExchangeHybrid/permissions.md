@@ -55,7 +55,18 @@ The following permissions **are** supported:
 
 The following permissions or capabilities **aren't** supported:
 
-- **Send-As**: Lets a user send mail as though it appears to be coming from another user's mailbox.
+- **Send-As**: Lets a user send mail as though it appears to be coming from another user's mailbox. Send-As permission does not synchronize automatically by Azure Ad Connect between On-premises and Office 365. That’s why at this point, cross Premises Send-As permission is not supported. However, if you add the send-as permission manually in both environments, Send-As will work in most of the scenarios. 
+    
+    For example, you want to grant send-as permission for an On-Premises mailbox called ONPREM1 to a cloud mailbox called EXO1,
+    
+    First run the following command on your on-premises server-
+
+    Add-ADPermission -Identity EXO1 -User ONPREM1 -AccessRights ExtendedRight -ExtendedRights "Send As"
+
+    Then run the corresponding command from Exchange Online PowerShell-
+
+    Add-RecipientPermission -Identity "EXO1" -Trustee ONPREM1 -AccessRights SendAs
+
 
 - **Auto-mapping**: Enables Outlook to automatically open any mailboxes that a user has been granted **Full Access** to on startup.
 

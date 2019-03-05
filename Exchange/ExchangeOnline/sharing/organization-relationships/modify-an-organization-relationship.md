@@ -1,15 +1,19 @@
 ---
-title: "Modify an organization relationship in Exchange Online"
-ms.author: dstrome
-author: dstrome
-manager: scotv
-ms.date: 4/29/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: An organization relationship lets users in your Office 365 organization share calendar free/busy information with other Office 365 or on-premises Exchange organizations. You may want to change the settings of an organization relationship, such as changing the name, temporarily disabling calendar sharing, changing the access level, or changing which security groups will share calendars.
+ms.topic: article
+author: dstrome
+ms.author: dstrome
 ms.assetid: 6875cd79-41d4-422c-80a7-549ded9a1ea7
-description: "An organization relationship lets users in your Office 365 organization share calendar free/busy information with other Office 365 or on-premises Exchange organizations. You may want to change the settings of an organization relationship, such as changing the name, temporarily disabling calendar sharing, changing the access level, or changing which security groups will share calendars."
+ms.date: 4/29/2016
+title: Modify an organization relationship in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Modify an organization relationship in Exchange Online
@@ -115,5 +119,6 @@ Get-OrganizationRelationship | format-list
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+
 
 

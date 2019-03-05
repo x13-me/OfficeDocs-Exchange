@@ -1,15 +1,19 @@
 ---
-title: "Test mail flow by validating your Office 365 connectors"
-ms.author: supotter
-author: supotter
-manager: scotv
-ms.date: 12/9/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.assetid: 6c8c2964-d553-4329-8166-6e508dd63fa0
 description: "To validate and troubleshoot mail flow from Office 365 to your organization's email server (also called on-premises server), validate your connectors. You can set up and validate connectors on the connectors page in the Exchange admin center (EAC). The built-in validation tests that your mail flow from Office 365 reaches:"
+ms.topic: article
+author: supotter
+ms.author: supotter
+ms.assetid: 6c8c2964-d553-4329-8166-6e508dd63fa0
+ms.date: 12/9/2016
+title: Test mail flow by validating your Office 365 connectors
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Test mail flow by validating your Office 365 connectors
@@ -36,3 +40,4 @@ Mail flow issues can also happen when your MX record is not setup correctly. To 
 [Fixing connector validation errors](https://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx)
 
 [When do I need a connector?](use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md#when-do-i-need-a-connector)
+

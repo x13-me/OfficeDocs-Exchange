@@ -1,16 +1,20 @@
 ---
-title: "Deploying Outlook for iOS and Android app configuration settings"
-ms.author: dmaguire
-author: msdmaguire
-ms.reviewer: smithre4
-manager: serdars
-ms.date: 11/26/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: How to customize the behavior of Outlook for iOS and Android in your Exchange organization.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: e8a034f6-39b8-4dea-a3bc-9421aaa75d1d
-description: "Summary: How to customize the behavior of Outlook for iOS and Android in your Exchange organization."
+ms.date: 
+title: Deploying Outlook for iOS and Android app configuration settings
+mms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.reviewer: smithre4
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Deploying Outlook for iOS and Android app configuration settings
@@ -23,6 +27,7 @@ Outlook for iOS and Android supports the following configuration scenarios:
 
 - Account setup configuration
 - Organization allowed accounts mode
+- General app configuration settings
 - Data protection settings
 
 Each configuration scenario will highlight its specific requirements; for example, whether the configuration scenario requires device enrollment, and thus work with any MDM provider, or requires Intune App Protection Policies.
@@ -52,6 +57,14 @@ For more information on organization allowed accounts mode, please see [Account 
 |IntuneMAMUPN|This value specifies the User Principal Name for the account.  <br/> **Value type**: String  <br/> **Accepted values**: UPN Address  <br/> **Required**: Yes  <br/> **Example**: userupn@companyname.com  <br/> **Intune Token**<sup>*</sup>: {{userprincipalname}}|iOS|Managed devices|
 |com.microsoft.intune.mam.AllowedAccountUPNs|This delimited value specifies the UPNs allowed for organization allowed account mode.  <br/> **Accepted values**: UPN Address  <br/> **Required**: Yes  <br/> **Example**: userupn@companyname.com  <br/> **Intune Token**<sup>*</sup>: {{userprincipalname}}|Android|Managed devices|
 
+## General app configuration settings
+Outlook for iOS and Android offers administrators the ability to customize the default configuration for several in-app settings. This capability only works with enrolled devices, however, it is supported with any MDM provider. If you are not using Intune, you will need to consult with your MDM documentation on how to deploy these settings.
+
+|**Key**|**Value**|**Device Enrollment Type**|
+|:-----|:-----|:-----|
+|com.microsoft.outlook.Mail.ExternalRecipientsToolTipEnabled|This value specifies whether the External Recipients MailTip is enabled. Setting the value to false will disable the MailTip. <br/> **Value type**: Boolean  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: false  <br/> **Required**: No  <br/> **Example**: false  <br/> |Managed devices|
+|com.microsoft.outlook.Mail.ExternalRecipientsToolTipEnabled.UserChangeAllowed|This value specifies whether the External Recipients MailTip setting can be changed by the end user. Note that at this time, there is no user configurable setting for MailTips.  <br/> **Value type**: Boolean  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Required**: No  <br/> **Example**: false  <br/> |Managed devices|
+
 ## Data protection settings
 Outlook for iOS and Android supports app configuration policies for the following data protection settings when the app is managed by Intune:
 - Managing the use of wearable technology
@@ -66,7 +79,7 @@ By default, Outlook for iOS and Android supports wearable technology, allowing t
 
 |**Key**|**Value**|**Device Enrollment Type**|
 |:-----|:-----|:-----|
-|com.microsoft.intune.mam.areWearablesAllowed|This value specifies if Outlook data can be synchronized to a wearable device. Setting the value to False disables wearable synchronization.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: False|Managed apps|
+|com.microsoft.intune.mam.areWearablesAllowed|This value specifies if Outlook data can be synchronized to a wearable device. Setting the value to false disables wearable synchronization.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: false|Managed apps|
 
 ### Configure Notifications for Outlook for iOS
 
@@ -76,10 +89,10 @@ The following configuration settings will disable notifications completely on iO
 
 |**Key**|**Value**|**Device Enrollment Type**|
 |:-----|:-----|:-----|
-|com.microsoft.outlook.Mail.NotificationsEnabled|This value specifies if Outlook will allow mail notifications. Setting the value to False disables mail notifications.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: False|Managed apps|
-|com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed|This value specifies if the user can adjust the mail notification setting within the app. Setting the value to False prevents the user from adjusting the mail notification setting.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: False|Managed apps|
-|com.microsoft.outlook.Calendar.NotificationsEnabled|This value specifies if Outlook will allow calendar reminder notifications. Setting the value to False disables calendar reminder notifications.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: False|Managed apps|
-|com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed|This value specifies if the user can adjust the calendar reminder notification setting within the app. Setting the value to False prevents the user from adjusting the calendar reminder notification setting.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: False|Managed apps|
+|com.microsoft.outlook.Mail.NotificationsEnabled|This value specifies if Outlook will allow mail notifications. Setting the value to false disables mail notifications.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: false|Managed apps|
+|com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed|This value specifies if the user can adjust the mail notification setting within the app. Setting the value to false prevents the user from adjusting the mail notification setting.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: false|Managed apps|
+|com.microsoft.outlook.Calendar.NotificationsEnabled|This value specifies if Outlook will allow calendar reminder notifications. Setting the value to false disables calendar reminder notifications.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: false|Managed apps|
+|com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed|This value specifies if the user can adjust the calendar reminder notification setting within the app. Setting the value to false prevents the user from adjusting the calendar reminder notification setting.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: false|Managed apps|
 
 ### Configure Contact Field Sync to native Contacts for Outlook for iOS and Android
 <a name="contacts"> </a>
@@ -91,24 +104,24 @@ The settings in the following table allow you to control the contact fields that
 
 |**Key**|**Value**|**Device Enrollment Type**|
 |:-----|:-----|:-----|
-|com.microsoft.outlook.ContactSync.AddressAllowed|This value specifies if the contact's address should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.BirthdayAllowed|This value specifies if the contact's birthday should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.CompanyAllowed|This value specifies if the contact's company name should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.DepartmentAllowed|This value specifies if the contact's department should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.EmailAllowed|This value specifies if the contact's email address should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.InstantMessageAllowed|This value specifies if the contact's instant messaging address should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.JobTitleAllowed|This value specifies if the contact's job title should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.NicknameAllowed|This value specifies if the contact's nickname should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.NotesAllowed|This value specifies if the contact's notes should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.PhoneHomeAllowed|This value specifies if the contact's home phone number should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.PhoneHomeFaxAllowed|This value specifies if the contact's home fax number should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.PhoneMobileAllowed|This value specifies if the contact's mobile phone number should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.PhoneOtherAllowed|This value specifies if the contact's other phone number should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.PhonePagerAllowed|This value specifies if the contact's pager phone number should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.PhoneWorkAllowed|This value specifies if the work phone number should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.PhoneWorkFaxAllowed|This value specifies if the contact's work fax number should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.PrefixAllowed|This value specifies if the contact's name prefix should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
-|com.microsoft.outlook.ContactSync.SuffixAllowed|This value specifies if the contact's name suffix should be synchronized to native contacts.  <br/> **Accepted values**: True, False  <br/> **Default if not specified**: True  <br/> **Example**: True|Managed apps|
+|com.microsoft.outlook.ContactSync.AddressAllowed|This value specifies if the contact's address should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.BirthdayAllowed|This value specifies if the contact's birthday should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.CompanyAllowed|This value specifies if the contact's company name should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.DepartmentAllowed|This value specifies if the contact's department should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.EmailAllowed|This value specifies if the contact's email address should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.InstantMessageAllowed|This value specifies if the contact's instant messaging address should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.JobTitleAllowed|This value specifies if the contact's job title should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.NicknameAllowed|This value specifies if the contact's nickname should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.NotesAllowed|This value specifies if the contact's notes should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.PhoneHomeAllowed|This value specifies if the contact's home phone number should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.PhoneHomeFaxAllowed|This value specifies if the contact's home fax number should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.PhoneMobileAllowed|This value specifies if the contact's mobile phone number should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.PhoneOtherAllowed|This value specifies if the contact's other phone number should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.PhonePagerAllowed|This value specifies if the contact's pager phone number should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.PhoneWorkAllowed|This value specifies if the work phone number should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.PhoneWorkFaxAllowed|This value specifies if the contact's work fax number should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.PrefixAllowed|This value specifies if the contact's name prefix should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
+|com.microsoft.outlook.ContactSync.SuffixAllowed|This value specifies if the contact's name suffix should be synchronized to native contacts.  <br/> **Accepted values**: true, false  <br/> **Default if not specified**: true  <br/> **Example**: true|Managed apps|
 
 ## Deploying the configuration scenarios with Microsoft Intune
 
@@ -165,3 +178,4 @@ You assign the settings to groups of users in Azure Active Directory. When a use
 3. On the next blade, choose **Assignments**.
 
 4. On the **Assignments** blade, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.
+

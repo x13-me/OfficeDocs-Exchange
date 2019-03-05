@@ -1,15 +1,19 @@
 ---
-title: "Clean up or delete items from the Recoverable Items folder in Exchange Online"
-ms.author: markjjo
-author: markjjo
-manager: laurawi
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Admins can learn how to remove items from the Recoverable Items folder in Exchange Online.'
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: 82c310f8-de2f-46f2-8e1a-edb6055d6e69
-description: "Summary: Admins can learn how to remove items from the Recoverable Items folder in Exchange Online."
+ms.date: 
+title: Clean up or delete items from the Recoverable Items folder in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: laurawi
+
 ---
 
 # Clean up or delete items from the Recoverable Items folder in Exchange Online
@@ -61,3 +65,4 @@ This example retrieves the size of the Recoverable Items folder and its subfolde
 ```
 Get-MailboxFolderStatistics -Identity "Gurinder Singh" -FolderScope RecoverableItems | Format-Table Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders -Auto
 ```
+

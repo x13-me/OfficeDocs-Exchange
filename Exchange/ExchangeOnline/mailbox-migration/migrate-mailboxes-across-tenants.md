@@ -1,19 +1,23 @@
 ---
-title: "How to migrate mailboxes from one Office 365 tenant to another"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+description: Learn how to migrate mailboxes and service settings from one tenant to another tenant in a business-merger scenario.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 65af7d77-3e79-44d4-9173-04fd991358b7
+title: How to migrate mailboxes from one Office 365 tenant to another
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - BCS160
-ms.assetid: 65af7d77-3e79-44d4-9173-04fd991358b7
-description: "Learn how to migrate mailboxes and service settings from one tenant to another tenant in a business-merger scenario."
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # How to migrate mailboxes from one Office 365 tenant to another
@@ -337,5 +341,6 @@ Set-Mailbox $_.Username -EmailAddresses @{Remove=$removeaddr}
 }
 ##### END OF REMOVE-PROXY.PS1
 ```
+
 
 

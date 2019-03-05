@@ -1,15 +1,19 @@
 ---
-title: "Use batch migration to migrate Exchange Online public folders to Office 365 Groups"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.collection: Strat_EX_EXOBlocker
+ms.author: dmaguire
+manager: serdars
+ms.topic: article
+author: msdmaguire
+ms.service: exchange-online
 ms.assetid: e0be0727-f27f-4673-8a6f-af6ab5dbdace
-description: "Summary: How to move your Exchange Online public folders to Office 365 Groups."
+ms.collection:
+- Strat_EX_EXOBlocker
+- exchange-online
+- M365-email-calendar
+description: 'Summary: How to move your Exchange Online public folders to Office 365 Groups.'
+ms.audience: ITPro
+title: Use batch migration to migrate Exchange Online public folders to Office 365 Groups
+
 ---
 
 # Use batch migration to migrate Exchange Online public folders to Office 365 Groups
@@ -346,5 +350,6 @@ Be aware that any items added to the groups in Office 365, or any edit operation
 Note also that it's not possible to restore a subset of public folders, which means all of the public folders there were migrated should be restored.
 
 The corresponding groups in Office 365 won't be deleted as part of the roll back process. You'll have to clean or delete those groups manually.
+
 
 

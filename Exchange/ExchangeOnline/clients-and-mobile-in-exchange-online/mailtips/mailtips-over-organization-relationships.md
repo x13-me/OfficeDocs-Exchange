@@ -1,15 +1,19 @@
 ---
-title: "MailTips over organization relationships"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Microsoft Exchange Server allows you to configure organization relationships with Microsoft Exchange Online or other Exchange organizations. Establishing an organization relationship allows you to enhance the user experience when dealing with the other organization. For example, you can share free or busy data, configure secure message flow, and enable message tracking across both organizations.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 1784256f-abe1-4503-b8c4-26d544b73452
-description: "Microsoft Exchange Server allows you to configure organization relationships with Microsoft Exchange Online or other Exchange organizations. Establishing an organization relationship allows you to enhance the user experience when dealing with the other organization. For example, you can share free or busy data, configure secure message flow, and enable message tracking across both organizations."
+ms.date: 7/11/2018
+title: MailTips over organization relationships
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # MailTips over organization relationships
@@ -42,5 +46,6 @@ To achieve this, you need to first create a group and add all users for whom you
 After you implement this restriction, your Client Access servers will first verify whether the recipient for whom they received a MailTips query is part of this group. If the recipient is a member of this group, the Client Access servers will proxy back all MailTips including the recipient-specific MailTips. Otherwise they won't include the recipient-specific MailTips in their response.
 
 For detailed steps about how to configure MailTips access levels, see [Manage MailTips for organization relationships](manage-mailtips-for-organization-relationships.md).
+
 
 

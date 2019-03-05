@@ -1,15 +1,17 @@
 ---
-title: "Disable voice mail for a user"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can disable Unified Messaging (UM) for a UM-enabled user. When you do this, the user can no longer use the voice mail features found in Unified Messaging. If you prefer, when you disable UM for a user, you can keep the UM settings for the user.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: cecc9c0d-377d-489e-9db4-d487e9c0b552
-description: "You can disable Unified Messaging (UM) for a UM-enabled user. When you do this, the user can no longer use the voice mail features found in Unified Messaging. If you prefer, when you disable UM for a user, you can keep the UM settings for the user."
+ms.date: 11/17/2014
+title: Disable voice mail for a user
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Disable voice mail for a user
@@ -52,5 +54,6 @@ This example disables Unified Messaging and voice mail for the user tonysmith@co
 ```
 Disable-UMMailbox -Identity tonysmith@contoso.com -KeepProperties $True
 ```
+
 
 

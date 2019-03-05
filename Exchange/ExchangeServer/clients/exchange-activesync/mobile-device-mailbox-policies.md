@@ -1,83 +1,85 @@
 ---
-title: "Mobile device mailbox policies"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about managing mobile device mailbox policies in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9317b3bc-44a1-4e54-bc51-4f0b194b6a55
-description: "Summary: Learn about managing mobile device mailbox policies in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/5/2018
+title: Mobile device mailbox policies
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Mobile device mailbox policies
 
 In Exchange Server, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. After you deploy Exchange ActiveSync in your Exchange Server organization, you can create new mobile device mailbox policies or modify existing policies. When you install Exchange Server, a default mobile device mailbox policy is created. All users are automatically assigned this default mobile device mailbox policy.
-  
+
 > [!CAUTION]
 > The iOS fingerprint reader is not supported as a device password. If you enable the fingerprint reader to secure your iOS device, you will still need to create and enter a password if your mobile device mailbox policies require a password.
-  
+
 ## Overview of mobile device mailbox policies
 
 You can use mobile device mailbox policies to manage many different settings. These include the following:
-  
+
 - Require a password
-    
+
 - Specify the minimum password length
-    
+
 - Require a number or special character in the password
-    
+
 - Designate how long a device can be inactive before requiring the user to re-enter a password
-    
+
 - Wipe a device after a specific number of failed password attempts
-    
+
 For more information about all the settings you can configure, see Mobile device policy settings.
-  
+
 ## Exchange ActiveSync mailbox policies
 
 Exchange ActiveSync is a client protocol that lets you synchronize a mobile device with your Exchange mailbox. Exchange ActiveSync is enabled by default when you install Exchange Server.
-  
+
 > [!IMPORTANT]
 > Most Windows mobile phones support a subset of all Exchange ActiveSync mailbox policy settings. For a complete list, see [Windows Phone synchronization](#WindowsPhone7.md).
-  
+
 You can create mobile device mailbox policies in the Exchange admin center (EAC) or the Exchange Management Shell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using the Exchange Management Shell.
-  
+
 ## Windows Phone synchronization
 <a name="WindowsPhone7"> </a>
 
-If you have Windows mobile phones in your organization, these phones will experience synchronization problems unless certain Exchange ActiveSync mailbox policy properties are configured. To allow Windowsmobile phones to synchronize with an Exchange mailbox, either set the **AllowNonProvisionableDevices** property to True or only configure the following Exchange ActiveSync mailbox policy properties: 
-  
+If you have Windows mobile phones in your organization, these phones will experience synchronization problems unless certain Exchange ActiveSync mailbox policy properties are configured. To allow Windowsmobile phones to synchronize with an Exchange mailbox, either set the **AllowNonProvisionableDevices** property to True or only configure the following Exchange ActiveSync mailbox policy properties:
+
 - AllowSimplePassword
-    
+
 - BlockInternetSharing
-    
+
 - BlockRemoteDesktop
-    
+
 - DisableDesktopSync
-    
+
 - DisableIrDA
-    
+
 - DisableRemovableStorage
-    
+
 - DeviceWipeThreshold
-    
+
 - MinPasswordLength
-    
+
 - IdleTimeoutFrequencyValue
-    
+
 - PasswordExpiration
-    
+
 - PasswordHistory
-    
+
 - PasswordRequired
-    
+
 ## Mobile device mailbox policy settings
 <a name="WindowsPhone7"> </a>
 
 The following table summarizes the settings you can specify using mobile device mailbox policies.
-  
+
 **Mobile device mailbox policy settings**
 
 |**Setting**|**Description**|
@@ -130,5 +132,6 @@ The following table summarizes the settings you can specify using mobile device 
 |Require signed S/MIME messages  <br/> |This setting specifies whether the mobile device must send signed S/MIME messages.  <br/> |
 |Require storage card encryption  <br/> |This setting specifies whether the storage card must be encrypted. Not all mobile device operating systems support storage card encryption. For more information, see your mobile device and mobile operating system documentation.  <br/> |
 |Unapproved InROM application list  <br/> |This setting specifies a list of applications that cannot be run in ROM.  <br/> |
-   
+
+
 

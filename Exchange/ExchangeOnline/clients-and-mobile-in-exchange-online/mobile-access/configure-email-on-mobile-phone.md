@@ -1,15 +1,19 @@
 ---
-title: "Configure mobile phones to access email"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 3/12/2015
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can configure a mobile phone, such as a Windows Phone, to use Microsoft Exchange ActiveSync. You should perform this procedure on each mobile phone in your organization.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8d6e2cea-265a-43d9-a074-076f35658436
-description: "You can configure a mobile phone, such as a Windows Phone, to use Microsoft Exchange ActiveSync. You should perform this procedure on each mobile phone in your organization."
+ms.date: 3/12/2015
+title: Configure mobile phones to access email
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Configure mobile phones to access email
@@ -40,5 +44,6 @@ If the mobile phone is unable to contact the Exchange server automatically throu
 If you're configuring a Windows Phone mobile phone to synchronize with an Exchange mailbox using Exchange ActiveSync, only a subset of mobile device mailbox policy settings are supported. Those policy settings are detailed in [Supported Mobile Device Mailbox Policies for Windows Phones and Devices](https://technet.microsoft.com/library/d76b1d4c-d1f6-4501-a7c9-854327aceda5.aspx).
 
 If you configure mobile device mailbox policy settings that are not supported for the version of Windows Phone you're using, you must also set the **AllowNonProvisionableDevices** policy setting to true or create a separate mobile device mailbox policy for Windows Phone mobile phones.
+
 
 

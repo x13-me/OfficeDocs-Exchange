@@ -1,23 +1,27 @@
 ---
-title: "Ways to migrate multiple email accounts to Office 365"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 9/19/2018
-ms.audience: Admin
-ms.topic: conceptual
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom:
-- Adm_O365
-- Adm_O365_Setup
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 0a4913fe-60fb-498f-9155-a86516418842
+ms.date: 9/19/2018
+description: Learn all the ways admins can use to migrate user mailboxes to Office 365.
+title: Ways to migrate multiple email accounts to Office 365
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - MBS150
-ms.assetid: 0a4913fe-60fb-498f-9155-a86516418842
-description: "Learn all the ways admins can use to migrate user mailboxes to Office 365."
+ms.audience: Admin
+ms.custom:
+- Adm_O365
+- Adm_O365_Setup
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Ways to migrate multiple email accounts to Office 365
@@ -110,5 +114,6 @@ If none of the types of migrations described will work for your organization, co
 <a name="Partner"> </a>
 
 [Use PowerShell for email migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=615247)
+
 
 

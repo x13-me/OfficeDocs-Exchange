@@ -1,15 +1,17 @@
 ---
-title: "Clients and mobile in Exchange Server"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the clients and client access methods you can use to access your Exchange Server 2016 or Exchange Server 2019 mailbox, and the topics available to assist you.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d67342e7-6ee0-4228-9f84-721b2a53fb4c
-description: "Summary: Learn about the clients and client access methods you can use to access your Exchange Server 2016 or Exchange Server 2019 mailbox, and the topics available to assist you."
+ms.date:
+title: Clients and mobile in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Clients and mobile in Exchange Server
@@ -30,3 +32,4 @@ The following table contains links to topics that will help you learn about and 
 |[Client Protocol Management](https://technet.microsoft.com/library/89ba6d24-d1d3-46d5-a0ae-61f0d4c6df21.aspx)|Learn about management of Exchange ActiveSync, Outlook on the web, POP3, IMAP4, the Autodiscover service, Exchange Web Services, and the Availability service.|
 |[Outlook on the web in Exchange Server](outlook-on-the-web/outlook-on-the-web.md)|Learn about Outlook on the web, which provides users access to their Exchange mailbox through a web browser.|
 |[MailTips](https://technet.microsoft.com/library/9c989167-cc0c-40a6-82ba-383f573bd2d5.aspx)|Learn about MailTips, the informative messages displayed to users while they're composing a message.|
+

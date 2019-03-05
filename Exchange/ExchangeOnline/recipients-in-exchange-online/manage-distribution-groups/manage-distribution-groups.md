@@ -1,17 +1,21 @@
 ---
-title: "Create and manage distribution groups"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDistributionGroupWizardForm.CreateDistributionGroupIntroductionWizardPage'
-ms.service: exchange-online
 localization_priority: Normal
+description: Use the Exchange admin center (EAC) or Exchange Online PowerShell to create a new distribution group in your Exchange Online organization or to mail-enable an existing group.
+ms.topic: article
+author: kwekua
+f1_keywords:
+- Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDistributionGroupWizardForm.CreateDistributionGroupIntroductionWizardPage
+ms.author: kwekua
 ms.assetid: c4c43493-55e1-46d2-bd4b-d6f6cecd747f
-description: "Use the Exchange admin center (EAC) or Exchange Online PowerShell to create a new distribution group in your Exchange Online organization or to mail-enable an existing group."
+ms.date: 7/11/2018
+title: Create and manage distribution groups
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Create and manage distribution groups
@@ -308,5 +312,6 @@ To verify that you've successfully changed properties for a distribution group, 
   ```
   Get-Mailbox -OrganizationalUnit "Marketing" | Format-List Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
   ```
+
 
 

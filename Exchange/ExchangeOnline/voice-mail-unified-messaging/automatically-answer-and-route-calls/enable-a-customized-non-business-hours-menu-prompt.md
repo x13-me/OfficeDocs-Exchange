@@ -1,15 +1,17 @@
 ---
-title: "Enable a customized non-business hours menu prompt"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can customize the menu prompt to be used by a Unified Messaging (UM) auto attendant outside business hours. After you create a UM auto attendant, a default system prompt (Welcome to Unified Messaging) is used as the menu prompt that callers hear after the non-business hours welcome greeting is played. Although the system prompt mustn't be replaced or changed, you can customize the greetings and menu prompts that are used with UM auto attendants. After you create a customized non-business hours menu prompt audio file, you must enable menu navigation entries on the UM auto attendant for non-business hours.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 094c50b2-072b-4929-aaf8-f7db5b19e9b6
-description: "You can customize the menu prompt to be used by a Unified Messaging (UM) auto attendant outside business hours. After you create a UM auto attendant, a default system prompt (Welcome to Unified Messaging) is used as the menu prompt that callers hear after the non-business hours welcome greeting is played. Although the system prompt mustn't be replaced or changed, you can customize the greetings and menu prompts that are used with UM auto attendants. After you create a customized non-business hours menu prompt audio file, you must enable menu navigation entries on the UM auto attendant for non-business hours."
+ms.date: 11/17/2014
+title: Enable a customized non-business hours menu prompt
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Enable a customized non-business hours menu prompt
@@ -68,5 +70,6 @@ Set-UMAutoAttendant -Identity MyAutoAttendant -
 AfterHoursKeyMappingEnabled $true -
 AfterHoursKeyMapping "1,Sales,,SalesAutoAttendant","2,Support,12345","3,Directions,,,directions.wav"
 ```
+
 
 

@@ -1,15 +1,19 @@
 ---
-title: "Monitoring, reporting, and message tracing in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 12/18/2017
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Exchange Online offers many different reports that can help you determine the overall status and health of your organization. There are also tools to help you troubleshoot specific events (such as a message not arriving to its intended recipients), and auditing reports to aid with compliance requirements. The following table describes the reports and troubleshooting tools that are available to Exchange Online administrators.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8
-description: "Exchange Online offers many different reports that can help you determine the overall status and health of your organization. There are also tools to help you troubleshoot specific events (such as a message not arriving to its intended recipients), and auditing reports to aid with compliance requirements. The following table describes the reports and troubleshooting tools that are available to Exchange Online administrators."
+ms.date: 12/18/2017
+title: Monitoring, reporting, and message tracing in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Monitoring, reporting, and message tracing in Exchange Online
@@ -41,5 +45,6 @@ The following table describes when Exchange Online reporting and message trace d
 
 > [!NOTE]
 > Data availability and latency is the same whether requested via the Office 365 admin center or remote PowerShell.
+
 
 

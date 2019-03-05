@@ -1,15 +1,17 @@
 ---
-title: "Change the UM dial plan"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You may need to move a user who is enabled for Unified Messaging (UM) to a different UM dial plan or change the dial plan that's associated with the user. For example, you might want to move a UM-enabled user from a Telephone Extension dial plan to a SIP URI dial plan.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 4a6b6b6f-c61c-44e8-91dd-c5d28835f441
-description: "You may need to move a user who is enabled for Unified Messaging (UM) to a different UM dial plan or change the dial plan that's associated with the user. For example, you might want to move a UM-enabled user from a Telephone Extension dial plan to a SIP URI dial plan."
+ms.date: 11/17/2014
+title: Change the UM dial plan
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Change the UM dial plan
@@ -54,5 +56,6 @@ For detailed instructions, see [Disable voice mail for a user](disable-voice-mai
 > If you're moving users to an environment with Office Communications Server 2007 R2 or Lync Server, you must also include a SIP Resource Identifier for the user when you enable them for UM. You must also select the UM mailbox policy that's associated with a SIP dial plan.
 
 For detailed instructions, see [Enable a user for voice mail](enable-a-user-for-voice-mail.md).
+
 
 

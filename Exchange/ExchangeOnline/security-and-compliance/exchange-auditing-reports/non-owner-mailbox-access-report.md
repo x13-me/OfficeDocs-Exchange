@@ -1,15 +1,19 @@
 ---
-title: "Run a non-owner mailbox access report"
-ms.author: markjjo
-author: markjjo
-manager: scotv
-ms.date: 6/23/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: The Non-Owner Mailbox Access Report in the Exchange admin center (EAC) lists the mailboxes that have been accessed by someone other than the person who owns the mailbox. When a mailbox is accessed by a non-owner, Microsoft Exchange logs information about this action in a mailbox audit log that's stored as an email message in a hidden folder in the mailbox being audited. Entries from this log are displayed as search results and include a list of mailboxes accessed by a non-owner, who accessed the mailbox and when, the actions performed by the non-owner, and whether the action was successful. By default, entries in the mailbox audit log are retained for 90 days.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: dbbef170-e726-4735-abf1-2857db9bb52d
-description: "The Non-Owner Mailbox Access Report in the Exchange admin center (EAC) lists the mailboxes that have been accessed by someone other than the person who owns the mailbox. When a mailbox is accessed by a non-owner, Microsoft Exchange logs information about this action in a mailbox audit log that's stored as an email message in a hidden folder in the mailbox being audited. Entries from this log are displayed as search results and include a list of mailboxes accessed by a non-owner, who accessed the mailbox and when, the actions performed by the non-owner, and whether the action was successful. By default, entries in the mailbox audit log are retained for 90 days."
+ms.date: 6/23/2018
+title: Run a non-owner mailbox access report
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Run a non-owner mailbox access report
@@ -131,5 +135,6 @@ The following table lists the actions performed by non-owners that can be logged
 
 > [!NOTE]
 > <sup>\*</sup> Audited by default if auditing is enabled for a mailbox.
+
 
 

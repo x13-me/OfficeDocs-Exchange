@@ -1,17 +1,19 @@
 ---
-title: "Create menu navigation"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.UnifiedMessaging.AutoAttendantKeyMappingControl'
-ms.service: exchange-online
 localization_priority: Normal
+description: You can use the New menu navigation entry page to create single or multiple key mappings for business or non-business hours main menu prompts for auto attendants. You can define the action that will be performed when a key on the telephone keypad is pressed, for example, transferring the call to an extension number or another auto attendant.
+ms.topic: article
+author: tonysmit
+f1_keywords:
+- Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.UnifiedMessaging.AutoAttendantKeyMappingControl
+ms.author: tonysmit
 ms.assetid: 3cfc9a01-0a61-4d15-9561-621568dc30d9
-description: "You can use the New menu navigation entry page to create single or multiple key mappings for business or non-business hours main menu prompts for auto attendants. You can define the action that will be performed when a key on the telephone keypad is pressed, for example, transferring the call to an extension number or another auto attendant."
+ms.date: 11/17/2014
+title: Create menu navigation
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Create menu navigation
@@ -104,5 +106,6 @@ $aa1 = Get-UMAutoAttendant -Identity MyAutoAttendant2
 $aa.BusinessHoursKeyMapping | Export-csv -path "C:\UMFiles\AutoAttendants\keymappings.csv"
 $aa1.BusinessHoursKeyMapping = (Import-csv -path "C:\UMFiles\AutoAttendants\keymappings.csv")
 ```
+
 
 

@@ -1,15 +1,19 @@
 ---
-title: "Delete or restore user mailboxes in Exchange Online"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: There are several things you should consider before you decide to delete a user mailbox. There's different kinds of deletions that you can do on a user mailbox and some of them won't allow you to restore or recover the mailbox. This article walks you through the deleted mailbox scenarios, as well as how to delete, recover or permanently remove a mailbox from Exchange Online.
+ms.topic: article
+author: kwekua
+ms.author: kwekua
 ms.assetid: be7f59a5-bbc9-4b7a-a28b-f47b26dd33a7
-description: "There are several things you should consider before you decide to delete a user mailbox. There's different kinds of deletions that you can do on a user mailbox and some of them won't allow you to restore or recover the mailbox. This article walks you through the deleted mailbox scenarios, as well as how to delete, recover or permanently remove a mailbox from Exchange Online."
+ms.date: 
+title: Delete or restore user mailboxes in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Delete or restore user mailboxes in Exchange Online
@@ -179,5 +183,6 @@ For info on removing a license from a user in Office 365 and Exchange Online, ch
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+
 
 

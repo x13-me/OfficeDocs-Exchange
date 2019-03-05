@@ -1,15 +1,19 @@
 ---
-title: "Create an organization relationship in Exchange Online"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Set up an organization relationship to share calendar information with an external business partner. Office 365 admins can set up an organization relationship with another Office 365 organization or with an Exchange on-premises organization.
+ms.topic: article
+author: dstrome
+ms.author: dstrome
 ms.assetid: 8b9a1782-f6be-46bc-bec9-49633be0dc1f
-description: "Set up an organization relationship to share calendar information with an external business partner. Office 365 admins can set up an organization relationship with another Office 365 organization or with an Exchange on-premises organization."
+ms.date: 
+title: Create an organization relationship in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Create an organization relationship in Exchange Online
@@ -108,5 +112,6 @@ Get-OrganizationRelationship | format-list
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+
 
 

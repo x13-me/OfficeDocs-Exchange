@@ -1,22 +1,25 @@
 ---
-title: "What you need to know about a staged email migration to Office 365"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/15/2018
-ms.audience: Admin
-ms.topic: conceptual
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 7e2c82be-5f3d-4e36-bc6b-e5b4d411e207
+ms.date: 8/15/2018
+description: "As part of an Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Office 365. When you do this over time, it's called a staged migration. A staged migration is recommended when:"
+title: What you need to know about a staged email migration to Office 365
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - MBS150
 - BCS160
-ms.assetid: 7e2c82be-5f3d-4e36-bc6b-e5b4d411e207
-description: "As part of an Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Office 365. When you do this over time, it's called a staged migration. A staged migration is recommended when:"
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
 ---
 
 # What you need to know about a staged email migration to Office 365
@@ -24,6 +27,8 @@ description: "As part of an Office 365 deployment, you can migrate the contents 
 As part of an Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Office 365. When you do this over time, it's called a staged migration. A staged migration is recommended when:
 
 - Your source email system is Microsoft Exchange Server 2003 or Microsoft Exchange Server 2007.
+    > [!NOTE]
+    > Microsoft Exchange Server 2003 and Microsoft Exchange Server 2007 are out of support. Support for Exchange 2003 ended on April 8, 2014. Support for Exchange 2007 ended on April 11, 2017.
 
     > [!NOTE]
     > You can't use a staged migration to migrate Exchange 2013 or Exchange 2010 mailboxes to Office 365. Consider using a cutover migration or a hybrid email migration instead.
@@ -155,4 +160,5 @@ If you're ready to begin a staged email migration, you can use the steps given i
 [Ways to migrate email to Office 365](mailbox-migration.md)
 
 [Use PowerShell to perform a staged migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=615255)
+
 

@@ -1,15 +1,19 @@
 ---
-title: "Create a discovery mailbox"
-ms.author: markjjo
-author: markjjo
-manager: scotv
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Microsoft Exchange Server Setup creates a discovery mailbox by default. In Exchange Online, a discovery mailbox is also created by default. Discovery mailboxes are used as target mailboxes for In-Place eDiscovery searches in the Exchange admin center (EAC). You can create additional discovery mailboxes as required. After you create a new discovery mailbox, you will have to assign Full Access permissions to the appropriate users so they can access eDiscovery search results that are copied to the discovery mailbox.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: bc20285d-35e2-4e49-9bd3-38abf96114ba
-description: "Microsoft Exchange Server Setup creates a discovery mailbox by default. In Exchange Online, a discovery mailbox is also created by default. Discovery mailboxes are used as target mailboxes for In-Place eDiscovery searches in the Exchange admin center (EAC). You can create additional discovery mailboxes as required. After you create a new discovery mailbox, you will have to assign Full Access permissions to the appropriate users so they can access eDiscovery search results that are copied to the discovery mailbox."
+ms.date: 7/11/2018
+title: Create a discovery mailbox
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Create a discovery mailbox
@@ -111,5 +115,6 @@ For detailed syntax and parameter information, see [Add-MailboxPermission](https
 - A discovery mailbox can't be repurposed or converted to another type of mailbox.
 
 - You can remove a discovery mailbox as you would any other type of mailbox.
+
 
 

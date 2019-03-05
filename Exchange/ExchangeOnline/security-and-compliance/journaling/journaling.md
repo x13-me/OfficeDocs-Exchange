@@ -1,15 +1,19 @@
 ---
-title: "Journaling in Exchange Online"
-ms.author: markjjo
-author: markjjo
-manager: laurawi
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Find information about journaling in Exchange Online. Learn the difference between journaling and data archiving, how journaling helps with compliance, and more.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: 1e7df155-02a3-4daf-94f9-8ea46f041a3a
-description: "Find information about journaling in Exchange Online. Learn the difference between journaling and data archiving, how journaling helps with compliance, and more."
+ms.date: 
+title: Journaling in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Journaling in Exchange Online
@@ -115,6 +119,15 @@ When implementing journaling, you must consider journaling reports and IRM-prote
 
 ## Troubleshooting
 
+When a message matches the scope of multiple journal rules, all matching rules will be triggered.
+
+- If the matching rules are configured with different journal mailboxes, a journal report will be sent to each journal mailbox.
+
+- If the matching rules are all configured with the same journal mailbox, only one journal report is sent to the journal mailbox.
+
+Journaling always identifies messages as internal if the email address in the SMTP **MAIL FROM** command is in a domain that's configured as an accepted domain in Exchange Online. This includes spoofed messages from external sources (messages where the **X-MS-Exchange-Organization-AuthAs** header value is also Anonymous). Therefore, journal rules that are scoped to external messages won't be triggered by spoofed messages with SMTP **MAIL FROM** email addresses in accepted domains.
+
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://go.microsoft.com/fwlink/p/?LinkId=331674).
+

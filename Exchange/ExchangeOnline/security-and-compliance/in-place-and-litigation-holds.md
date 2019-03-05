@@ -1,15 +1,19 @@
 ---
-title: "In-Place Hold and Litigation Hold"
-ms.author: markjjo
-author: markjjo
-manager: serdars
-ms.date:
-ms.audience: Admin
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
-ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
 description: "When a reasonable expectation of litigation exists, organizations are required to preserve electronically stored information (ESI), including email that's relevant to the case. This expectation often exists before the specifics of the case are known, and preservation is often broad. Organizations may need to preserve all email related to a specific topic or all email for certain individuals. Depending on the organization's electronic discovery (eDiscovery) practices, the following measures can be adopted to preserve email:"
+ms.topic: overview
+author: markjjo
+ms.author: markjjo
+ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
+ms.date: 
+title: In-Place Hold and Litigation Hold
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: Admin
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # In-Place Hold and Litigation Hold

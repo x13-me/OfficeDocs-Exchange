@@ -1,15 +1,19 @@
 ---
-title: "Back up email in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn about the deleted message recovery options and high-level methods that Exchange Online uses to protect mailbox data.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 94d2f62e-5d43-4200-b7ce-33b1f41f1d59
-description: "Admins can learn about the deleted message recovery options and high-level methods that Exchange Online uses to protect mailbox data."
+ms.date: 
+title: Back up email in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Backing up email in Exchange Online
@@ -70,3 +74,4 @@ To learn how to restore deleted items in Outlook on the web (formerly known as O
 ## Offboard a user from Office 365
 
 For more info what to do when a user in your organization leaves, check out [Remove a former employee from Office 365](https://go.microsoft.com/fwlink/p/?LinkId=816871). This topic discusses the steps you should take and how to secure your data after an employee leaves your organization.
+

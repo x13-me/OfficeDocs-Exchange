@@ -1,15 +1,19 @@
 ---
-title: "Use batch migration to migrate Exchange 2013 public folders to Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.collection: Strat_EX_EXOBlocker
+ms.author: dmaguire
+manager: serdars
+ms.topic: article
+author: msdmaguire
+ms.service: exchange-online
 ms.assetid: 25a5234c-dd2c-487b-8541-3655fbeb030a
-description: "Summary: This article tells you how to move modern public folders from Exchange 2013 to Office 365."
+ms.collection:
+- Strat_EX_EXOBlocker
+- exchange-online
+- M365-email-calendar
+description: 'Summary: This article tells you how to move modern public folders from Exchange 2013 to Office 365.'
+ms.audience: ITPro
+title: Use batch migration to migrate Exchange 2013 public folders to Exchange Online
+
 ---
 
 # Use batch migration to migrate Exchange 2013 public folders to Exchange Online
@@ -425,6 +429,18 @@ Set-OrganizationConfig -PublicFolderMailboxesLockedForNewConnections $true
 
 If your organization has public folder mailboxes on multiple Exchange 2013 servers, you'll need to wait until AD replication is complete. Once complete, you can confirm that all public folder mailboxes have picked up the `PublicFolderMailboxesLockedForNewConnections` flag, and that any pending changes users recently made to their public folders have converged across the organization. All of this could take several hours.
 
+Run the following On-Premises to ensure the public folders are locked:
+
+Get-PublicFolder \
+
+Expected outout, if public folders are locked, is:
+
+[PS] C:\>Get-PublicFolder \
+Couldn't find the public folder mailbox.
+    + CategoryInfo          : NotSpecified: (:) [Get-PublicFolder], ObjectNotFoundException
+
+
+
 ## Step 7: Finalize the public folder migration (public folder downtime required)
 <a name="Generatecsv"> </a>
 
@@ -603,3 +619,4 @@ The following are common public folder migration issues that you may experience 
 After the migration is complete and you have verified that your public folders in Exchange Online are working as expected and contain all expected data, you can remove your on-premises public folder mailboxes.
 
 Be aware that this step is irreversible, because once public folder mailboxes are deleted, they cannot be recovered. Therefore, we strongly recommend that, in addition to verifying the success of your migration, you also monitor your Exchange Online public folders for a few weeks before you remove the on-premises public folder mailboxes.
+

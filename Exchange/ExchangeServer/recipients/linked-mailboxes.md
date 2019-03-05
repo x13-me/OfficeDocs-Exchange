@@ -1,15 +1,17 @@
 ---
-title: "Exchange linked mailboxes, linked mailboxes Exchange, create linked mailbox Exchange, change linked mailbox Exchange"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Linked mailboxes are mailboxes that users access in a separate, trusted forest. Learn how to create linked mailboxes in Exchange resource forests.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 76e12d4a-1c3a-42e2-b64c-c09d36e81bd3
-description: "Summary: Linked mailboxes are mailboxes that users access in a separate, trusted forest. Learn how to create linked mailboxes in Exchange resource forests."
+ms.date:
+title: Exchange linked mailboxes, linked mailboxes Exchange, create linked mailbox Exchange, change linked mailbox Exchange
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage linked mailboxes
@@ -134,22 +136,19 @@ You can also change properties for multiple linked mailboxes at the same time. F
 
 3. On the mailbox properties page, click one of the following sections to view or change properties.
 
-  - [General](#General.md)
+   - [General](#general)
 
-  - [Mailbox Usage](#MailboxUsage.md)
+   - [Mailbox Usage](#mailbox-usage)
 
-  - [Email Address](#EmailAddress.md)
+   - [Email Address](#email-address)
 
-  - [Mailbox Features](#MailboxFeatures.md)
+   - [Mailbox Features](#mailbox-features)
 
-  - [Member Of](#MemberOf.md)
+   - [Member Of](#member-of)
 
-  - [MailTip](#MailTip.md)
-
-  - [Mailbox Delegation](#MailboxDelegation.md)
+   - [MailTip](#mailtip)
 
 #### General
-<a name="General"> </a>
 
 Use the **General** section to view or change basic information about the user.
 
@@ -159,13 +158,13 @@ Use the **General** section to view or change basic information about the user.
 
 - **\* User logon name**: For user mailboxes, this is the name that the user uses to sign in to their mailbox and to log on to the domain. For linked mailboxes, the corresponding user account that is created in the Exchange forest when the linked mailbox was created is disabled. The user uses their credentials from the account forest to sign in to the linked mailbox.
 
-    If you change this name, it must be unique in your organization.
+   If you change this name, it must be unique in your organization.
 
 - **Linked master account**: This read-only box displays the user (in the format domain\username format) from the account forest that is associated with the linked mailbox. To change the linked master account associated with the linked mailbox, you have to use the **Set-Mailbox** cmdlet in the Exchange Management Shell. If you change the linked master account, the user will have to use the credentials for the new linked master account to sign in to the linked mailbox. For the command syntax to change the linked master account, see [Use the Exchange management Shell to change linked mailbox properties](#usetheshell.md).
 
 - **Hide from address lists**: Select this check box to prevent the linked mailbox from appearing in the address book and other address lists that are defined in your Exchange organization. After you select this check box, users can still send messages to this user by using the email address.
 
-Click **More options** to view or change these additional properties: 
+Click **More options** to view or change these additional properties:
 
 - **Organizational unit**: This read-only box displays the organizational unit (OU) that contains the user account. You have to use Active Directory Users and Computers to move the user account to a different OU.
 
@@ -178,7 +177,6 @@ Click **More options** to view or change these additional properties:
 - **Custom attributes**: This section displays the custom attributes defined for the linked mailbox. To specify custom attribute values, click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png). You can specify up to 15 custom attributes for the recipient.
 
 #### Mailbox Usage
-<a name="MailboxUsage"> </a>
 
 Use the **Mailbox Usage** section to view or change the mailbox storage quota and deleted item retention settings for the linked mailbox. These settings are configured by default when the linked mailbox is created. They use the values that are configured for the mailbox database and apply to all mailboxes in that database. You can customize these settings for each mailbox instead of using the mailbox database defaults.
 
@@ -193,7 +191,7 @@ Click **More options** to view or change the mailbox storage quota and the delet
 
 - **Storage quota settings**: To customize these settings for the mailbox and not use the mailbox database defaults, click **Customize settings for this mailbox**, type a new value, and then click **Save**.
 
-    The value range for any of the storage quota settings is from 0 through 2047 gigabytes (GB).
+  The value range for any of the storage quota settings is from 0 through 2047 gigabytes (GB).
 
   - **Issue a warning at (GB)**: This box displays the maximum storage limit before a warning is issued to the user. If the mailbox size reaches or exceeds the value specified, Exchange sends a warning message to the user.
 
@@ -208,11 +206,10 @@ Click **More options** to view or change the mailbox storage quota and the delet
   - **Don't permanently delete items until the database is backed up**: Select this check box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
 
 #### Email Address
-<a name="EmailAddress"> </a>
 
 Use the **Email address** section to view or change the email addresses associated with the linked mailbox. This includes the user's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the *default reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types: 
+- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP**: This is the default address type. Click this radio button and then type the new SMTP address in the **\* Email address** box.
 
@@ -226,9 +223,8 @@ Use the **Email address** section to view or change the email addresses associat
 - **Automatically update email addresses based on the email address policy applied to this recipient**: Select this check box if you want the recipient's email addresses to be updated automatically when changes are made to email address policies in your organization. This box is selected by default.
 
 #### Mailbox Features
-<a name="MailboxFeatures"> </a>
 
-Use the **Mailbox Features** section to view or change the following mailbox features and settings: 
+Use the **Mailbox Features** section to view or change the following mailbox features and settings:
 
 - **Sharing policy**: This box shows the sharing policy applied to the mailbox. A sharing policy controls how users in your organization can share calendar and contact information with users outside your Exchange organization. The Default Sharing Policy is assigned to mailboxes when they are created. To change the sharing policy that's assigned to the user, select a different one from the drop-down list.
 
@@ -253,7 +249,7 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
 
 - **MAPI**: This feature is enabled by default. MAPI enables access to an Exchange mailbox from a MAPI client such as Outlook. Click **Disable** to disable MAPI for the mailbox.
 
-- **Litigation hold**: This feature is disabled by default. Litigation hold preserves deleted mailbox items and records changes made to mailbox items. Deleted items and all instances of changed items are returned in a discovery search. Click **Enable** to put the mailbox on litigation hold. If the mailbox is on litigation hold, click **Disable** to remove the litigation hold. If the mailbox is on litigation hold, click **Edit details** to view and change the following litigation hold settings: 
+- **Litigation hold**: This feature is disabled by default. Litigation hold preserves deleted mailbox items and records changes made to mailbox items. Deleted items and all instances of changed items are returned in a discovery search. Click **Enable** to put the mailbox on litigation hold. If the mailbox is on litigation hold, click **Disable** to remove the litigation hold. If the mailbox is on litigation hold, click **Edit details** to view and change the following litigation hold settings:
 
   - **Hold date**: This read-only box indicates date and time when the mailbox was put on litigation hold.
 
@@ -263,10 +259,10 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
 
   - **URL**: Use this box to provide a URL to a website that provides information or guidance about the litigation hold on the mailbox.
 
-    > [!NOTE]
-    > The text from these boxes appears in the user's mailbox only if they're using Outlook 2010 or later versions. It doesn't appear in Outlook on the web or other email clients. To view the text from the Note and URL boxes in Outlook, click the **File** tab and, on the **Info** page, under **Account Settings**, you'll see the litigation hold comment.
+      > [!NOTE]
+      > The text from these boxes appears in the user's mailbox only if they're using Outlook 2010 or later versions. It doesn't appear in Outlook on the web or other email clients. To view the text from the Note and URL boxes in Outlook, click the **File** tab and, on the **Info** page, under **Account Settings**, you'll see the litigation hold comment.
 
-- **Archiving**: If an archive mailbox doesn't exist for the user, this feature is disabled. To enable an archive mailbox, click **Enable**. If the user has an archive mailbox, the size of the archive mailbox and usage statistics are displayed. Click **Edit details** to view and change the following archive mailbox settings: 
+- **Archiving**: If an archive mailbox doesn't exist for the user, this feature is disabled. To enable an archive mailbox, click **Enable**. If the user has an archive mailbox, the size of the archive mailbox and usage statistics are displayed. Click **Edit details** to view and change the following archive mailbox settings:
 
   - **Status**: This read-only box indicates whether an archive mailbox exists.
 
@@ -286,8 +282,8 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
 
   - **Recipient limit**: This setting controls the maximum number of recipients the user can send a message to. Select the **Maximum recipients** check box to limit the number of recipients allowed on the To:, Cc:, and Bcc: lines of an email message, and then specify the maximum number of recipients.
 
-    > [!NOTE]
-    > For on-premises Exchange organizations, the recipient limit is unlimited. For Exchange Online organizations, the limit is 500 recipients.
+      > [!NOTE]
+      > For on-premises Exchange organizations, the recipient limit is unlimited. For Exchange Online organizations, the limit is 500 recipients.
 
 - **Message Size Restrictions**: These settings control the size of messages that the user can send and receive. Click **Edit details** to view and change the maximum size for sent and received messages.
 
@@ -312,12 +308,10 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
   - **Senders in the following list**: Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want to reject messages from, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**.
 
 #### Member Of
-<a name="MemberOf"> </a>
 
 Use the **Member Of** section to view a list of the distribution groups or security groups to which this user belongs. You can't change membership information on this page. Note that the user may match the criteria for one or more dynamic distribution groups in your organization. However, dynamic distribution groups aren't displayed on this page because their membership is calculated each time they're used.
 
 #### MailTip
-<a name="MailTip"> </a>
 
 Use the **MailTip** section to add a MailTip to alert users of potential issues if they send a message to this recipient. A MailTip is text that's displayed in the InfoBar when a recipient is added to the To, Cc, or Bcc lines of a new email message.
 
@@ -325,9 +319,8 @@ Use the **MailTip** section to add a MailTip to alert users of potential issues 
 >  MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
 #### Mailbox Delegation
-<a name="MailboxDelegation"> </a>
 
-Use the **Mailbox Delegation** section to assign permissions to other users (also called *delegates*) to allow them to sign in to the user's mailbox or send messages on behalf of the user. You can assign the following permissions: 
+Use the **Mailbox Delegation** section to assign permissions to other users (also called *delegates*) to allow them to sign in to the user's mailbox or send messages on behalf of the user. You can assign the following permissions:
 
 - **Send As**: This permission allows users other than the mailbox owner to use the mailbox to send messages. After this permission is assigned to a delegate, any message that a delegate sends from this mailbox will appear as if it was sent by the mailbox owner. However, this permission doesn't allow a delegate to sign in to the user's mailbox.
 
@@ -338,9 +331,8 @@ Use the **Mailbox Delegation** section to assign permissions to other users (als
 To assign permissions to delegates, click **Add** under the appropriate permission to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want assign delegate permissions to, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**.
 
 ### Use the Exchange management Shell to change linked mailbox properties
-<a name="usetheshell"> </a>
 
-Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for linked mailboxes. One advantage of using the Exchange Management Shell is the ability to change the properties for multiple linked mailboxes. For information about what parameters correspond to mailbox properties, see the following topics: 
+Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for linked mailboxes. One advantage of using the Exchange Management Shell is the ability to change the properties for multiple linked mailboxes. For information about what parameters correspond to mailbox properties, see the following topics:
 
 - [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
 
@@ -367,7 +359,6 @@ Set-Mailbox -Identity "Ayla Kol" -LinkedDomainController DC1.fabrikam.com -Linke
 ```
 
 ### How do you know this worked?
-<a name="usetheshell"> </a>
 
 To verify that you have successfully changed properties for a linked mailbox, do the following:
 
@@ -384,5 +375,4 @@ To verify that you have successfully changed properties for a linked mailbox, do
   ```
   Get-Mailbox "Ayla Kol" | Format-List LinkedMasterAccount
   ```
-
 

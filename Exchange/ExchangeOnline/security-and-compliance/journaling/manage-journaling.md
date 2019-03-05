@@ -1,15 +1,19 @@
 ---
-title: "Manage journaling in Exchange Online"
-ms.author: markjjo
-author: markjjo
-manager: laurawi
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to view, create, modify, enable, disable, and delete journal rules in Exchange Online.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
-description: "Admins can learn how to view, create, modify, enable, disable, and delete journal rules in Exchange Online."
+ms.date: 
+title: Manage journaling in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Manage journaling
@@ -117,7 +121,7 @@ To verify that you have successfully modified a journal rule, do one of the foll
 - From Exchange Online PowerShell, verify that you modified the journal rule successfully by running the following command. This command will list the properties you modified along with the name of the rule (the example below verifies the rule modified in Exchange Online PowerShell example above):
 
    ```
-   Get-TransportRule -Identity "TraderVault" | Format-List Name,Recipient,JournalEmailAddress,Scope
+   Get-JournalRule -Identity "TraderVault" | Format-List Name,Recipient,JournalEmailAddress,Scope
    ```
 
 ## Enable or disable a journal rule
@@ -200,3 +204,4 @@ To verify that you have successfully removed the journal rule, do one of the fol
 [Disable-JournalRule](https://technet.microsoft.com/library/0324144b-2818-4e7f-a483-d6d6a19f8276.aspx)
 
 [Remove-JournalRule](https://technet.microsoft.com/library/7cb9d691-2b0c-4f64-982d-ce69f3c3e757.aspx)
+

@@ -1,17 +1,20 @@
 ---
-title: "Configure legacy on-premises public folders for a hybrid deployment"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+ms.author: dmaguire
+manager: serdars
+ms.topic: article
+author: msdmaguire
+ms.service: exchange-online
+ms.assetid: bcb0ac98-2949-486b-a8ab-8549c021651b
 ms.collection:
 - Strat_EX_EXOBlocker
 - Ent_O365_Hybrid
-ms.assetid: bcb0ac98-2949-486b-a8ab-8549c021651b
-description: "Summary: Use the steps in this article to synchronize public folders between Office 365 and your Exchange Server 2010 on-premises deployment."
+- exchange-online
+- M365-email-calendar
+description: 'Summary: Use the steps in this article to synchronize public folders between Office 365 and your Exchange Server 2010 on-premises deployment.'
+ms.audience: ITPro
+title: Configure legacy on-premises public folders for a hybrid deployment
+
 ---
 
 # Configure legacy on-premises public folders for a hybrid deployment
@@ -164,3 +167,4 @@ Log on to Outlook for a user who is in Exchange Online, and then run the followi
  - Check permissions.
  - Create and delete public folders.
  - Post content to and delete content from a public folder.
+

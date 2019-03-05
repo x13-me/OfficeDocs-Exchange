@@ -1,15 +1,19 @@
 ---
-title: "Manage mail flow using a third-party cloud service with Exchange Online and on-premises mailboxes"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to manage mail flow with a third-party cloud service in an Exchange hybrid environment (where your mailboxes are in both an on-premises organization and in Exchange Online).
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: fb335522-11ba-48d7-956f-2d980c22ab51
-description: "Learn how to manage mail flow with a third-party cloud service in an Exchange hybrid environment (where your mailboxes are in both an on-premises organization and in Exchange Online)."
+ms.date: 
+title: Manage mail flow using a third-party cloud service with Exchange Online and on-premises mailboxes
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage mail flow using a third-party cloud service with Exchange Online and on-premises mailboxes
@@ -51,6 +55,10 @@ Alternatively, depending on the third-party's requirements, you might need to in
   v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com include:third_party_cloud_service.com -all
   ```
 
+### More information
+
+There are additional considerations in hybrid deployments between on-premise Exchange and Office 365. For more information, see [Exchange Server hybrid deployments](https://docs.microsoft.com/exchange/exchange-hybrid).
+
 ## See also
 
 [Mail flow best practices for Exchange Online and Office 365 (overview)](mail-flow-best-practices.md)
@@ -64,4 +72,5 @@ Alternatively, depending on the third-party's requirements, you might need to in
 [Troubleshoot Office 365 mail flow](troubleshoot-mail-flow.md)
 
 [Test mail flow by validating your Office 365 connectors](test-mail-flow.md)
+
 

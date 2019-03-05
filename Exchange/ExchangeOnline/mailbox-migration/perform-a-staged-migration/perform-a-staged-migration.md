@@ -1,22 +1,26 @@
 ---
-title: "Perform a staged migration of email to Office 365"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/16/2018
-ms.audience: Admin
-ms.topic: get-started-article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 83bc0b69-de47-4cc4-a57d-47e478e4894e
+ms.date: 8/16/2018
+description: You can migrate the contents of user mailboxes from an Exchange 2003 or Exchange 2007 email to Office 365 over time by using a staged migration.
+title: Perform a staged migration of email to Office 365
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - MBS150
 - BCS160
-ms.assetid: 83bc0b69-de47-4cc4-a57d-47e478e4894e
-description: "You can migrate the contents of user mailboxes from an Exchange 2003 or Exchange 2007 email to Office 365 over time by using a staged migration."
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Perform a staged migration of email to Office 365
@@ -399,4 +403,5 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
 [What you need to know about a staged email migration to Office 365](../what-to-know-about-a-staged-migration.md)
 
 [Ways to migrate email to Office 365](../mailbox-migration.md)
+
 

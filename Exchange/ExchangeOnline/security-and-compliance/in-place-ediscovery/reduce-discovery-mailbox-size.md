@@ -1,15 +1,19 @@
 ---
-title: "Reduce the size of a discovery mailbox in Exchange"
-ms.author: markjjo
-author: markjjo
-manager: scotv
-ms.date: 7/11/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Have a discovery mailbox that's exceeded the 50 GB limit? You can fix this issue by creating new discovery mailboxes and copying the search results from the large discovery mailbox to the new ones.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: fa762d14-f942-4728-8813-887d11441a68
-description: "Have a discovery mailbox that's exceeded the 50 GB limit? You can fix this issue by creating new discovery mailboxes and copying the search results from the large discovery mailbox to the new ones."
+ms.date: 7/11/2018
+title: Reduce the size of a discovery mailbox in Exchange
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: Admin
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Reduce the size of a discovery mailbox in Exchange
@@ -162,5 +166,6 @@ After you've deleted the eDiscovery searches to remove the results from the disc
 ```
 Get-Mailbox <name of discovery mailbox> | Get-MailboxStatistics | Format-List TotalItemSize
 ```
+
 
 

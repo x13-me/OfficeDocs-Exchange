@@ -1,15 +1,19 @@
 ---
-title: "Delete and re-create the default discovery mailbox in Exchange"
-ms.author: markjjo
-author: markjjo
-manager: laurawi
-ms.date: 7/11/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can use Exchange Online PowerShell to delete the default discovery mailbox, re-create it, and then assign permissions to it.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: 4bde0b00-bdf7-44b4-ba64-aa062bc10ca2
-description: "You can use Exchange Online PowerShell to delete the default discovery mailbox, re-create it, and then assign permissions to it."
+ms.date: 7/11/2018
+title: Delete and re-create the default discovery mailbox in Exchange
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: Admin
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Delete and re-create the default discovery mailbox in Exchange
@@ -59,5 +63,6 @@ How you resolve this depends on whether you want to save the search results from
   ```
   Add-MailboxPermission "DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}" -User "Discovery Management" -AccessRights FullAccess -InheritanceType all
   ```
+
 
 

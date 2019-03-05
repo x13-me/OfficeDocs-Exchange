@@ -1,15 +1,19 @@
 ---
-title: "Manage mail flow using a third-party cloud service with Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: A couple of different scenarios that illustrate how to configure Exchange Online mail flow through a third-party cloud service.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: d0d10ab1-08c1-4ffe-aaa5-f9dbd9a118ed
-description: "A couple of different scenarios that illustrate how to configure Exchange Online mail flow through a third-party cloud service."
+ms.date: 
+title: Manage mail flow using a third-party cloud service with Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage mail flow using a third-party cloud service with Exchange Online
@@ -73,6 +77,8 @@ We don't recommend or support this scenario because it causes Office 365 spam fi
 
 [Mail flow best practices for Exchange Online and Office 365 (overview)](mail-flow-best-practices.md)
 
+[Set up connectors for secure mail flow with a partner organization](use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner.md)
+
 [Manage all mailboxes and mail flow using Office 365](manage-mailboxes-with-office-365.md)
 
 [Manage mail flow with mailboxes in multiple locations (Office 365 and on-prem)](manage-mail-flow-for-multiple-locations.md)
@@ -82,4 +88,5 @@ We don't recommend or support this scenario because it causes Office 365 spam fi
 [Troubleshoot Office 365 mail flow](troubleshoot-mail-flow.md)
 
 [Test mail flow by validating your Office 365 connectors](test-mail-flow.md)
+
 

@@ -1,15 +1,19 @@
 ---
-title: "Enable or Disable POP3 or IMAP4 access for a user"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 6/23/2017
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: By default, POP3 and IMAP4 are enabled for all users in Exchange Online. You can disable them for individual users. For additional information related to POP3 and IMAP4, see POP3 and IMAP4.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 4e351027-1a96-42c6-b4b2-8218d2070f25
-description: "By default, POP3 and IMAP4 are enabled for all users in Exchange Online. You can disable them for individual users. For additional information related to POP3 and IMAP4, see POP3 and IMAP4."
+ms.date: 6/23/2017
+title: Enable or Disable POP3 or IMAP4 access for a user
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Enable or Disable POP3 or IMAP4 access for a user
@@ -92,5 +96,6 @@ Set-CASMailbox -Identity "Christa Knapp" -IMAPEnabled $false
   - If IMAP4 is enabled for the user, you will see **IMAP4: Enabled**.
 
 5. Click **Save**.
+
 
 

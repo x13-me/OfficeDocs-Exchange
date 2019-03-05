@@ -1,15 +1,19 @@
 ---
-title: "Manage role groups in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to view, create, copy, modify, and remove management role groups in Exchange Online.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c
-description: "Summary: Learn how to view, create, copy, modify, and remove management role groups in Exchange Online."
+ms.date: 
+title: Manage role groups in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage role groups in Exchange Online
@@ -461,3 +465,4 @@ To verify that you've removed a role group, do either of the following steps:
     ```
     Get-RoleGroup
     ```
+

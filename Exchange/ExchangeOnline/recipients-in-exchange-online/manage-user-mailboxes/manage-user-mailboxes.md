@@ -1,17 +1,21 @@
 ---
-title: "Manage user mailboxes"
-ms.author: kwekua
-author: kwekua
-manager: laurawi
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailboxWizardForm.NewMailboxIntroductionWizardPage'
-ms.service: exchange-online
 localization_priority: Normal
+description: After you create a user mailbox, you can make changes and set additional properties by using the EAC or Exchange Online PowerShell.
+ms.topic: article
+author: kwekua
+f1_keywords:
+- Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailboxWizardForm.NewMailboxIntroductionWizardPage
+ms.author: kwekua
 ms.assetid: 957ca61c-1fa1-42ab-a0e6-8488e4782566
-description: "After you create a user mailbox, you can make changes and set additional properties by using the EAC or Exchange Online PowerShell."
+ms.date: 7/11/2018
+title: Manage user mailboxes
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Manage user mailboxes
@@ -410,5 +414,6 @@ To verify that you've successfully bulk edited user mailboxes, do one of the fol
   ```
 
     For more information about the available parameters for the **Get-Mailbox** cmdlet, see [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
+
 
 

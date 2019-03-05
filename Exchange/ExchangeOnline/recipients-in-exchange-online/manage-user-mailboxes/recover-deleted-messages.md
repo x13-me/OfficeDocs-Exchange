@@ -1,15 +1,19 @@
 ---
-title: "Recover deleted messages in a user's mailbox"
-ms.author: markjjo
-author: markjjo
-manager: scotv
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Administrators can search for and recover deleted email messages in a user's mailbox.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12
-description: "Administrators can search for and recover deleted email messages in a user's mailbox."
+ms.date: 7/11/2018
+title: Recover deleted messages in a user's mailbox
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Recover deleted messages in a user's mailbox
@@ -186,5 +190,6 @@ To verify that you have successfully exported messages to a .pst file, use Outlo
 - This topic shows you how to use the **Search-Mailbox** cmdlet to search for and recover missing items. If you use this cmdlet, you can search only one mailbox at a time. If you want to search multiple mailboxes at the same time, you can use [In-Place eDiscovery](../../security-and-compliance/in-place-ediscovery/in-place-ediscovery.md) in the Exchange admin center (EAC) or the [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx) cmdlet in Windows PowerShell.
 
 - In addition to using this procedure to search for and recover deleted items, you can also use a similar procedure to search for items in user mailboxes and then delete those items from the source mailbox. For more information, see [Search and delete messages](https://technet.microsoft.com/library/8c36bb03-e716-4fdd-9958-4aa7a2a1db42.aspx).
+
 
 

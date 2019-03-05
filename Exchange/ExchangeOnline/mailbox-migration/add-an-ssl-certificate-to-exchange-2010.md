@@ -1,22 +1,26 @@
 ---
-title: "Add an SSL certificate to Exchange 2010"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/16/2018
-ms.audience: Admin
-ms.topic: get-started-article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 8c1b16e6-475d-406d-a80c-1956fa781789
+ms.date: 8/16/2018
+description: Steps to add an SSL certificate to Exchange 2010.
+title: Add an SSL certificate to Exchange 2010
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - MBS150
 - BCS160
-ms.assetid: 8c1b16e6-475d-406d-a80c-1956fa781789
-description: "Steps to add an SSL certificate to Exchange 2010."
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Add an SSL certificate to Exchange 2010
@@ -109,5 +113,6 @@ After you receive the certificate from the CA, complete the following steps.
 9. On the **Assign Services** page, choose **Assign**.
 
     If you receive the warning **Overwrite the existing default SMTP certificate?**, choose **Yes** \> **Finish**.
+
 
 

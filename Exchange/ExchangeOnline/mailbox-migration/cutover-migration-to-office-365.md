@@ -1,22 +1,26 @@
 ---
-title: "Migrate email using the Exchange cutover method"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date:
-ms.audience: Admin
-ms.topic: get-started-article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 9496e93c-1e59-41a8-9bb3-6e8df0cd81b4
+ms.date: 
+description: "As part of an Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Office 365. When you do this all at one time, it's called a cutover migration. Choosing a cutover migration is suggested when:"
+title: Migrate email using the Exchange cutover method
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - MBS150
 - BCS160
-ms.assetid: 9496e93c-1e59-41a8-9bb3-6e8df0cd81b4
-description: "As part of an Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Office 365. When you do this all at one time, it's called a cutover migration. Choosing a cutover migration is suggested when:"
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Migrate email using the Exchange cutover method
@@ -332,4 +336,5 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
 [Ways to migrate email to Office 365](mailbox-migration.md)
 
 [Decide on a migration path](decide-on-a-migration-path.md)
+
 

@@ -1,15 +1,19 @@
 ---
-title: "Search the role group changes or administrator audit logs in Exchange Online"
-ms.author: markjjo
-author: markjjo
-manager: laurawi
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to search the administrator audit logs to discover who made changes to your organization.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: c7188d53-e672-492b-b57d-cd711379ddb3
-description: "Learn how to search the administrator audit logs to discover who made changes to your organization."
+ms.date: 
+title: Search the role group changes or administrator audit logs in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Search the role group changes or administrator audit logs in Exchange Online
@@ -72,7 +76,7 @@ If any log entries are found using the criteria you specified, an XML file will 
 
 You can use Exchange Online PowerShell to search for audit log entries that meet the criteria you specify. For a list of search criteria, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). This procedure uses the **Search-AdminAuditLog** cmdlet and displays search results in Exchange Online PowerShell. You can use this cmdlet when you need to return a set of results that exceeds the limits defined on the **New-AdminAuditLogSearch** cmdlet or in the EAC Audit Reporting reports.
 
-If you want to send audit log search results in an email attachment to a recipient, see **Use Exchange Online PowerShell to search for audit log entries and send results to a recipient** later in this topic.
+If you want to send audit log search results in an email attachment to a recipient, see the [Use Exchange Online PowerShell to search for audit log entries and send results to a recipient](#use-exchange-online-powershell-to-search-for-audit-log-entries-and-send-results-to-a-recipient) section later in this topic.
 
 To search the audit log for criteria you specify, use the following syntax.
 
@@ -186,3 +190,4 @@ New-AdminAuditLogSearch -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,Prohi
 For more information about the format of the XML file, see [Administrator Audit Log Structure](https://technet.microsoft.com/library/87e259c9-c884-4d53-bd78-d13f2300d73e.aspx).
 
 For detailed syntax and parameter information, see [New-AdminAuditLogSearch](https://technet.microsoft.com/library/52a221e0-ded1-44dc-a626-ca264eca4113.aspx).
+

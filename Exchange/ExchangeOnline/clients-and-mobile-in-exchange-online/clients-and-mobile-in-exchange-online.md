@@ -1,15 +1,19 @@
 ---
-title: "Clients and mobile in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: A list of links to topics for admins in Exchange Online related to clients an mobile access to mailboxes.
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 4b2256d7-2250-40f4-b25f-4ac52c8c9647
-description: "A list of links to topics for admins in Exchange Online related to clients an mobile access to mailboxes."
+ms.date: 
+title: Clients and mobile in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Clients and mobile in Exchange Online
@@ -32,3 +36,4 @@ The following table contains links to topics that will help you learn about and 
 |[Client Access Rules in Exchange Online](client-access-rules/client-access-rules.md)|Learn how to use Client Access Rules to control connections to Exchange Online.|
 |[Disable Basic authentication in Exchange Online](disable-basic-authentication-in-exchange-online.md)|Learn how to disable Basic auth connections to your Exchange Online mailboxes.|
 |[Enable or disable modern authentication in Exchange Online](enable-or-disable-modern-authentication-in-exchange-online.md)|Learn how to require Modern auth connections to your Exchange Online mailboxes.|
+

@@ -1,15 +1,19 @@
 ---
-title: "Public folder procedures in Office 365 and Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Use batch migration to migrate legacy public folders to Office 365 and Exchange Online
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c0c561cb-3d25-4a26-b94a-ba3876c49fbf
-description: "Use batch migration to migrate legacy public folders to Office 365 and Exchange Online"
+ms.date: 7/11/2018
+title: Public folder procedures in Office 365 and Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Public folder procedures in Office 365 and Exchange Online
@@ -43,5 +47,6 @@ description: "Use batch migration to migrate legacy public folders to Office 365
 [Remove a public folder](remove-public-folder.md)
 
 [View statistics for public folders and public folder items](view-public-folder-statistics.md)
+
 
 

@@ -1,16 +1,19 @@
 ---
-title: "MailTips"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/19/2018
-ms.audience: Admin
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: MailTips are informative messages displayed to users while they're composing a message. Microsoft Exchange Server analyzes the message, including the list of recipients to which it's addressed, and if it detects a potential problem, it notifies the user with MailTips prior to sending the message. With the help of the information provided by MailTips, senders can adjust the message they're composing to avoid undesirable situations or non-delivery reports (NDRs).
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 9c989167-cc0c-40a6-82ba-383f573bd2d5
+ms.date: 7/19/2018
+title: MailTips
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: Admin
+ms.service: exchange-online
+manager: serdars
 
-description: "MailTips are informative messages displayed to users while they're composing a message. Microsoft Exchange Server analyzes the message, including the list of recipients to which it's addressed, and if it detects a potential problem, it notifies the user with MailTips prior to sending the message. With the help of the information provided by MailTips, senders can adjust the message they're composing to avoid undesirable situations or non-delivery reports (NDRs)."
 ---
 
 # MailTips
@@ -81,5 +84,6 @@ MailTips are subject to the following restrictions:
 - While older versions of Exchange Server would populate MailTips in their entirety, Exchange Online will only display up to 1000 characters.
 
 - If the sender starts composing a message and leaves it open for an extended period of time, the Automatic Replies and Mailbox Full MailTips are evaluated every two hours.
+
 
 

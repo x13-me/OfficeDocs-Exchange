@@ -1,15 +1,17 @@
 ---
-title: "Prevent a user from receiving faxes"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 12/9/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Prevent a Unified Messaging (UM) user from receiving faxes. Find out how to alter fax settings for new and existing UM users.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: b5d022b9-043a-4324-87fb-074d5e2c2ca3
-description: "Prevent a Unified Messaging (UM) user from receiving faxes. Find out how to alter fax settings for new and existing UM users."
+ms.date: 12/9/2016
+title: Prevent a user from receiving faxes
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Prevent a user from receiving faxes
@@ -51,5 +53,6 @@ This example prevents a UM-enabled user named Tony from receiving fax messages i
 ```
 Set-UMMailbox -Identity tony@contoso.com -FaxEnabled $false
 ```
+
 
 

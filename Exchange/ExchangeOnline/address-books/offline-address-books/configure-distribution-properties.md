@@ -1,17 +1,19 @@
 ---
-title: "Configure offline address book distribution properties"
-ms.author: dstrome
-author: dstrome
-manager: laurawi
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.ClientAccess.OabDistributionGeneralPage'
-ms.service: exchange-online
 localization_priority: Normal
+description: For each offline address book (OAB) distribution point in Exchange, you can configure two URLs—an internal URL that can be accessed only from your internal corporate network and an external URL that can be accessed from the Internet.
+ms.topic: article
+author: dstrome
+f1_keywords:
+- Microsoft.Exchange.Management.SnapIn.Esm.Servers.ClientAccess.OabDistributionGeneralPage
+ms.author: dstrome
 ms.assetid: 8df985e9-75ba-47ea-9cc3-aa98a5d8acf4
-description: "For each offline address book (OAB) distribution point in Exchange, you can configure two URLs—an internal URL that can be accessed only from your internal corporate network and an external URL that can be accessed from the Internet."
+ms.date: 11/17/2014
+title: Configure offline address book distribution properties
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Configure offline address book distribution properties
@@ -54,5 +56,6 @@ For detailed syntax and parameter information, see [set-OabVirtualDirectory](htt
 <a name="UseShell"> </a>
 
 [Understanding Offline Address Books](https://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx)
+
 
 

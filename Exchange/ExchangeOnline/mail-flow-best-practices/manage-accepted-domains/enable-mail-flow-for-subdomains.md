@@ -1,15 +1,19 @@
 ---
-title: "Enable mail flow for subdomains in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to enable mail flow for subdomains in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 4033a30a-f506-481c-8ef0-fd9a0508ae38
-description: "Admins can learn how to enable mail flow for subdomains in Exchange Online."
+ms.date: 02/01/2019
+title: Enable mail flow for subdomains in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Enable mail flow for subdomains in Exchange Online
@@ -17,7 +21,7 @@ description: "Admins can learn how to enable mail flow for subdomains in Exchang
 If you have a hybrid environment, with mailboxes hosted both in Exchange Online and on-premises Exchange, and you have subdomains of the accepted domains that only exist in your on-premises environment, you can enable email flow to and from these on-premises subdomains. For example, if you have an accepted domain called Contoso.com, and you enable match subdomains, users can send email to, or receive email from all subdomains of Contoso.com that exist in your on-premises environment, such as marketing.contoso.com and nwregion.contoso.com. In Microsoft Forefront Online Protection for Exchange (FOPE), this feature was called _catch-all domains_.
 
 > [!IMPORTANT]
-> If you have a limited number of subdomains, and know all the subdomain names, we recommend setting up each subdomain as an accepted domain by using the Office 365 admin center, rather than using the procedures in this topic. By setting up each subdomain separately, you can have finer control over mail flow, and include unique mail flow rules (also known transport rules) for each subdomain. For more information about adding a domain in the Office 365 admin center, see [Add your domain to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=282303). > > In order to enable match subdomains, an accepted domain must be set up as an internal relay domain. For information about setting the domain type to internal relay, see [Manage accepted domains in Exchange Online](manage-accepted-domains.md). > > After you enable match subdomains, in order for the service to deliver mail for all subdomains to your organization's email server (outside Office 365), you must also change the outbound connector. For instructions, see [Use the EAC to add the domain to your outbound connector](enable-mail-flow-for-subdomains.md#use-the-eac-to-add-the-domain-to-your-outbound-connector).
+> If you have a limited number of subdomains, and know all the subdomain names, we recommend setting up each subdomain as an accepted domain by using the Office 365 admin center, rather than using the procedures in this topic. By setting up each subdomain separately, you can have finer control over mail flow, and include unique mail flow rules (also known transport rules) for each subdomain. For more information about adding a domain in the Office 365 admin center, see [Add your domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide). > > In order to enable match subdomains, an accepted domain must be set up as an internal relay domain. For information about setting the domain type to internal relay, see [Manage accepted domains in Exchange Online](manage-accepted-domains.md). > > After you enable match subdomains, in order for the service to deliver mail for all subdomains to your organization's email server (outside Office 365), you must also change the outbound connector. For instructions, see [Use the EAC to add the domain to your outbound connector](enable-mail-flow-for-subdomains.md#use-the-eac-to-add-the-domain-to-your-outbound-connector).
 
 ## What do you need to know before you begin?
 
@@ -78,3 +82,4 @@ To verify that you've successfully added match subdomains to a domain using Exch
 ```
 Get-AcceptedDomain | Format-List Name,MatchSubdomains
 ```
+
