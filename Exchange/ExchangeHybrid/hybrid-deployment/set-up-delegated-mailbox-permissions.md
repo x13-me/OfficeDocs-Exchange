@@ -4,7 +4,7 @@ ms.author: dstrome
 author: dstrome
 manager: serdars
 ms.date:
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

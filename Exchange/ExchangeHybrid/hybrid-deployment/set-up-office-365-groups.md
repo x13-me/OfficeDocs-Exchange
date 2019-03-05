@@ -2,9 +2,9 @@
 title: "Configure Office 365 Groups with on-premises Exchange hybrid"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
+manager: serdars
 ms.date: 12/6/2016
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

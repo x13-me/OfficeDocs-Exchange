@@ -2,9 +2,9 @@
 title: "Simplify the Outlook Web App URL for Office 365 Hybrid"
 ms.author: chrisda
 author: chrisda
-manager: laurawi
+manager: serdars
 ms.date: 11/11/2016
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

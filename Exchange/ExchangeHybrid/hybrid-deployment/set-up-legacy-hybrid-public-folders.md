@@ -2,7 +2,7 @@
 title: "Configure legacy on-premises public folders for a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
-manager: laurawi
+manager: serdars
 ms.date: 6/24/2018
 ms.audience: ITPro
 ms.topic: article

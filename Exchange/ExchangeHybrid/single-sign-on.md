@@ -2,8 +2,7 @@
 title: "Single sign-on with hybrid deployments"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 6/25/2018
+manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -11,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: 050606f9-718d-4a1f-b7a6-50b08c6e9e07
 description: "Single sign-on enables users to access both the on-premises and Office 365 organizations with a single user name and password. It provides users with a familiar sign-on experience and can allow administrators to easily control account policies for Exchange Online organization mailboxes by using on-premises Active Directory management tools. While you don't have to configure a hybrid deployment with single sign-on enabled, we strongly recommend that you do. Without single sign-on, users will need to remember two different sets of credentials, one for your on-premises organization, and one for Office 365. Here are a few other advantages to single sign-on:"
 ---

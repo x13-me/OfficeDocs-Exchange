@@ -3,7 +3,6 @@ title: "Use the Office 365 mail migration advisors in Office 365"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 1/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -11,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 description: "Use the Office 365 mail migration advisors to perform a hybrid, cutover, staged, Gmail, or IMAP, migration to Office 365."
 ---
 
