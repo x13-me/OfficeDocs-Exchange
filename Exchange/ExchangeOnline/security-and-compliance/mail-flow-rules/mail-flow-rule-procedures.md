@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: ca8b52ef-0af7-4d3d-96df-13df297585e0
 ms.date: 
 title: Mail flow rule procedures in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

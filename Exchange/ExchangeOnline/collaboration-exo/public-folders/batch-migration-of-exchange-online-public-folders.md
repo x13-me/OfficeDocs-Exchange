@@ -9,6 +9,7 @@ ms.assetid: e0be0727-f27f-4673-8a6f-af6ab5dbdace
 ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-online
+- M365-email-calendar
 description: 'Summary: How to move your Exchange Online public folders to Office 365 Groups.'
 ms.audience: ITPro
 title: Use batch migration to migrate Exchange Online public folders to Office 365 Groups

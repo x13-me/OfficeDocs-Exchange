@@ -17,19 +17,19 @@ manager: serdars
 # Properties of messages in queues
 
 Filtering messages in queues by one or more message properties in Exchange Server allows you to quickly locate messages and take action on them. When an email message is sent to multiple recipients, the message might be located in multiple queues on the server. When you filter messages in queues by message properties, you can locate messages across all queues. The following scenarios are examples of how you might use message filtering to manage mail flow:
-  
+
 - The Submission queue on the Mailbox server or Edge Transport server that receives email from the Internet has a high volume of messages that are queued for delivery. Many of the messages have the same subject. Therefore, you suspect that spam is being sent to your organization. You can create a filter to view all the messages that meet the subject criteria. If you determine that the messages are spam, you can select them all and delete them from the delivery queue without sending an NDR.
-    
+
 - A user reports that mail flow is slow. You examine the queues and see that many messages with random subjects appear to be coming from a single domain. You can create a filter to view all the queued messages from that domain. If you determine that the messages are spam, you can select them all and delete them from the queues without sending an NDR.
-    
+
 You can create message filters in Queue Viewer in the Exchange Toolbox, or by using the _Filter_ parameter on the message management cmdlets. Note that the message management cmdlets support more filterable properties than Queue Viewer.
-  
+
 For more information about Queue Viewer, see [Queue Viewer](queue-viewer.md). For more information about the message management cmdlets, see [Procedures for messages in queues](message-procedures.md) and [Find queues and messages in queues in the Exchange Management Shell](queues-and-messages-in-powershell.md).
-  
+
 ## Message properties to use as filters
 
 The following table describes the message properties that you can use as filters in Queue Viewer and the Exchange Management Shell.
-  
+
 |**Queue Viewer**|**Exchange Management Shell**|**Comparison operators**|**Description**|
 |:-----|:-----|:-----|:-----|
 |n/a|`AccountForest`|n/a|his property is reserved for internal Microsoft use, and isn't used in on-premises Exchange organizations. <br/><br/> In on-premises Exchange, this property is the forest root domain where the mailbox resides (for example, contoso.com).|

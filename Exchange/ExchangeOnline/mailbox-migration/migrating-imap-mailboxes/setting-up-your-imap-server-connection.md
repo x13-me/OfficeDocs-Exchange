@@ -9,7 +9,9 @@ ms.assetid: 49120f09-84fb-4f10-b49f-5d9ec7e69d1f
 ms.date: 8/15/2018
 description: To migrate your email by using Internet Message Access Protocol (IMAP) migration, Office 365 needs to know the name and connection settings of your IMAP server.
 title: Learn more about setting up your IMAP server connection
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150

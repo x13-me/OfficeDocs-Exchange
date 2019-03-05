@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: 29ac61c2-77f1-4071-b14e-8cc64e3e76ba
 ms.date: 
 title: Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

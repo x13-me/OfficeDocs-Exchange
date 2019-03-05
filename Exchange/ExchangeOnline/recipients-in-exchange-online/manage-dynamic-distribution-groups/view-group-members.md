@@ -7,7 +7,9 @@ ms.author: kwekua
 ms.assetid: 40b100c6-864e-4c82-9f98-08dd5c83e378
 ms.date: 3/2/2018
 title: View members of a dynamic distribution group
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

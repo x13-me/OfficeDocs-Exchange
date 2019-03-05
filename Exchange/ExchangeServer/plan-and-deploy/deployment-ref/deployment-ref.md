@@ -19,11 +19,11 @@ manager: serdars
 # Deployment reference
 
 [Exchange Server readiness checks](readiness-checks.md)
-  
+
 [Exchange Server editions and versions](editions-and-versions.md)
-  
+
 [Exchange Server language support](language-support.md)
-  
+
 [Exchange Server storage configuration options](storage-configuration.md)
 
 [Network ports for clients and mail flow in Exchange](network-ports.md)

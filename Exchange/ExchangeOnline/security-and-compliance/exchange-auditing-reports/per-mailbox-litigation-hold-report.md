@@ -7,7 +7,9 @@ ms.author: markjjo
 ms.assetid: 98c46226-2f48-42c6-a741-34bb5944f519
 ms.date: 11/17/2014
 title: Run a per-mailbox litigation hold report
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

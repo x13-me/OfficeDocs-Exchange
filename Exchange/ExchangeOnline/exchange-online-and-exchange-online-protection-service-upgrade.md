@@ -7,7 +7,9 @@ ms.author: kwekua
 ms.assetid: 2d67e30a-cc97-4559-baf1-8cee44751c65
 ms.date: 7/11/2018
 title: Exchange Online and Exchange Online Protection service upgrade
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

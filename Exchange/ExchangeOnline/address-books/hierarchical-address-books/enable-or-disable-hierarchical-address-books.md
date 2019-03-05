@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: b4c3a175-ce5e-4bfb-a4a0-92d25f3644b3
 ms.date: 
 title: Enable or disable hierarchical address books in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

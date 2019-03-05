@@ -159,7 +159,7 @@ Some of the more interesting properties of the default self-signed certificates 
 |**RootCAType**|Registry|None|Registry|
 |**Services**|IMAP, POP, IIS, SMTP|SMTP|None|
 
-<sup>\*</sup>These properties aren't visible in the standard view in the Exchange Management Shell. To see them, you need to specify the property name (exact name or wildcard match) with the **Format-Table** or **Format-List** cmdlets. For example: 
+<sup>\*</sup>These properties aren't visible in the standard view in the Exchange Management Shell. To see them, you need to specify the property name (exact name or wildcard match) with the **Format-Table** or **Format-List** cmdlets. For example:
 
 - `Get-ExchangeCertificate -Thumbprint <Thumbprint> | Format-List *`
 

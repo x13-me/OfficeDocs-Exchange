@@ -19,9 +19,9 @@ manager: serdars
 # Primary DNS Suffix is missing [ms.exch.setupreadiness.FqdnMissing]
 
 Exchange Setup can't continue because the primary DNS suffix (for example, contoso.com) hasn't been configured on the target server. Typically, you'll encounter this error when you're trying to install the Edge Transport server role.
-  
+
 To resolve this issue, add a primary DNS suffix on the computer and then run Setup again.
-  
+
 1. Replace \<Value\> with the DNS suffix you want to use (for example, contoso.com), and run the following command in Winows Powershell on the target server:
 
 ```

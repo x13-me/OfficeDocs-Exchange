@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: a7b2fb51-0207-4d7d-938d-466ae110bb90
 ms.date: 6/24/2018
 title: Update the public folder hierarchy
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: laurawi

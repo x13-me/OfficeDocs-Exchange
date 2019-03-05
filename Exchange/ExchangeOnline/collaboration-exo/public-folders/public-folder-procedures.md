@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: c0c561cb-3d25-4a26-b94a-ba3876c49fbf
 ms.date: 7/11/2018
 title: Public folder procedures in Office 365 and Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: laurawi

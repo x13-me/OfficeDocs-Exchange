@@ -7,7 +7,9 @@ ms.author: kwekua
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
 ms.date: 6/24/2018
 title: Manage mail-enabled security groups
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

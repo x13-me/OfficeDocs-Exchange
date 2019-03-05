@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: dd886cdc-bfc1-42a4-8e67-66ae1d08af0f
 ms.date: 
 title: Outlook for iOS security, Outlook for Android security, Outlook for iOS data security, Outlook for Android data security, Outlook iOS Security MDM, Outlook Android security MDM, Outlook iOS security Exchange policies
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.reviewer: smithre4
 ms.audience: ITPro
 ms.service: exchange-online

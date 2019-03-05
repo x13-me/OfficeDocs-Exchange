@@ -6,7 +6,9 @@ ms.author: chrisda
 ms.assetid: b3e740b9-171d-4179-bcd1-e279a363fa75
 description: "When you can't send or receive Office 365 email, use these steps to find and fix problems with Outlook. "
 title: Fix Outlook connection problems in Office 365 and Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150

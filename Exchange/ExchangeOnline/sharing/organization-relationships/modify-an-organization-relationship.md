@@ -7,7 +7,9 @@ ms.author: dstrome
 ms.assetid: 6875cd79-41d4-422c-80a7-549ded9a1ea7
 ms.date: 4/29/2016
 title: Modify an organization relationship in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

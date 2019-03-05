@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: 8d6e2cea-265a-43d9-a074-076f35658436
 ms.date: 3/12/2015
 title: Configure mobile phones to access email
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: laurawi

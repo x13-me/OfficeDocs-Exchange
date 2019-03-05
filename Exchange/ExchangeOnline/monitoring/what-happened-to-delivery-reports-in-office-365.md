@@ -11,7 +11,10 @@ search.appverid:
 - BCS160
 - MET150
 ms.audience: Admin
-ms.custom: MiniMaven
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+- MiniMaven
 ms.service: exchange-online
 manager: serdars
 

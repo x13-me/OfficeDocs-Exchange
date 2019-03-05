@@ -6,7 +6,9 @@ ms.topic: article
 author: chrisda
 ms.service: exchange-online
 ms.assetid: ca7b7416-92ed-40ad-abdb-695be46ea2e4
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 description: Admins can learn how to configure Directory-Based Edge Blocking (DBDB) to reject messages sent to invalid recipients in Exchange Online and Exchange Online Protection during a migration.
 ms.audience: ITPro
 title: Use Directory Based Edge Blocking to reject messages sent to invalid recipients

@@ -7,7 +7,9 @@ ms.author: dianef
 ms.assetid: a86bb46f-0e5b-43a3-b6ef-7394f344a8da
 ms.date: 12/11/2017
 title: Allow/Block guest access to Office 365 groups
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

@@ -7,7 +7,9 @@ ms.author: tirich
 ms.assetid: 24cac303-c8de-474b-a894-e42683db30f1
 ms.date: 1/6/2017
 title: Manage all mailboxes and mail flow using Office 365
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv
