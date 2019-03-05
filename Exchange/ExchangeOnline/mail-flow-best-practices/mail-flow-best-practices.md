@@ -6,7 +6,9 @@ ms.topic: article
 author: chrisda
 ms.service: exchange-online
 ms.assetid: 0e6cd9d5-ad3e-418a-8ea9-3bf33332c491
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 description: Use Microsoft Exchange Online and Office 365 to manage mail flow. Find out how, and get tips and best practices for setting up and managing your email.
 ms.audience: ITPro
 title: Mail flow best practices for Exchange Online and Office 365 (overview)

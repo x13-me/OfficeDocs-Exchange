@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: 6e6b48ef-c41c-47ad-8063-66901765c2a5
 ms.date: 4/8/2015
 title: Manage MailTips for organization relationships
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: laurawi

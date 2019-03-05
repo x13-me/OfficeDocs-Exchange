@@ -7,7 +7,9 @@ ms.assetid: 4682f2e4-f720-4868-91ab-207f5b0c325d
 ms.date: 8/16/2018
 description: Learn how to perform an IMAP migration in the Admin Center preview.
 title: IMAP migration in the Office 365 admin center
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MED150

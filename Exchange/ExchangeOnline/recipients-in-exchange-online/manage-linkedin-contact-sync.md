@@ -9,7 +9,9 @@ ms.author: dmaguire
 ms.assetid: 54d9b046-4f36-4f36-b88a-95b1da4e1b4c
 ms.date: 12/9/2016
 title: Manage LinkedIn contact sync in your organization
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: Developer
 ms.service: exchange-online
 manager: laurawi

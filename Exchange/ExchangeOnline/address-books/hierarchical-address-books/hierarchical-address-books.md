@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: a1d277a0-5437-40af-aade-e4730a0d1308
 ms.date: 
 title: Hierarchical address books in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

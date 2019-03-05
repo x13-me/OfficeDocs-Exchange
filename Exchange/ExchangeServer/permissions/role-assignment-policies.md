@@ -132,7 +132,7 @@ In the EAC, you can view the list of assignment policies and the roles assigned 
 
 You can view a list of all the assignment policies in your organization by not specifying any assignment policies when you run the **Get-RoleAssignmentPolicy** cmdlet.
 
-This procedure makes use of pipelining and the **Format-Table** cmdlet. For more information about these concepts, see the following topics: 
+This procedure makes use of pipelining and the **Format-Table** cmdlet. For more information about these concepts, see the following topics:
 
 - [Pipelining](http://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
 
@@ -162,7 +162,7 @@ For detailed syntax and parameter information, see [Get-Mailbox](http://technet.
 
 You can view the details of a specific assignment policy by using the **Get-RoleAssignmentPolicy** cmdlet and piping the output to the **Format-List** cmdlet.
 
-This procedure makes use of pipelining and the **Format-List** cmdlet. For more information about these concepts, see the following topics: 
+This procedure makes use of pipelining and the **Format-List** cmdlet. For more information about these concepts, see the following topics:
 
 - [Pipelining](http://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
 
@@ -186,7 +186,7 @@ For detailed syntax and parameter information, see [Get-Mailbox](http://technet.
 
 You can find the default assignment policy by piping the output of the **Get-RoleAssignmentPolicy** cmdlet to the **Where** cmdlet. With the **Where** cmdlet, filter the data returned to display only the assignment policy that has its _IsDefault_ property set to `$True`.
 
-This procedure makes use of pipelining and the **Where** cmdlet. For more information about these concepts, see the following topics: 
+This procedure makes use of pipelining and the **Where** cmdlet. For more information about these concepts, see the following topics:
 
 - [Pipelining](http://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
 
@@ -204,7 +204,7 @@ For detailed syntax and parameter information, see [Get-Mailbox](http://technet.
 
 You can find all the mailboxes assigned a specific assignment policy by piping the output of the **Get-Mailbox** cmdlet to the **Where** cmdlet. With the **Where** cmdlet, filter the data returned to display only the mailboxes that have their _RoleAssignmentPolicy_ property set to the assignment policy name you specify.
 
-This procedure makes use of pipelining and the **Where** cmdlet. For more information about these concepts, see the following topics: 
+This procedure makes use of pipelining and the **Where** cmdlet. For more information about these concepts, see the following topics:
 
 - [Pipelining](http://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
 

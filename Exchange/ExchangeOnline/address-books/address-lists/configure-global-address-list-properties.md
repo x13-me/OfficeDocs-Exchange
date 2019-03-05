@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: 5fd2c96f-fe93-4b5a-8495-70c450511a37
 ms.date: 
 title: Configure global address list properties in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

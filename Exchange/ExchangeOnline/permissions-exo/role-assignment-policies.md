@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: 
 ms.date: 
 title: Role assignment policies in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

@@ -60,7 +60,7 @@ Set-Mailbox Brian -RoleAssignmentPolicy "Engineering Users"
 > [!NOTE]
 > You can't use the EAC to change the assignment policy on a group of mailboxes all at once.
 
-This procedure makes use of pipelining, the **Where** cmdlet, and the _WhatIf_ parameter. For more information about these concepts, see the following topics: 
+This procedure makes use of pipelining, the **Where** cmdlet, and the _WhatIf_ parameter. For more information about these concepts, see the following topics:
 
 - [Pipelining](http://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
 

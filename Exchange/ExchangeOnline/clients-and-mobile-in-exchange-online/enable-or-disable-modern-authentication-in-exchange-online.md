@@ -9,6 +9,7 @@ title: Enable modern authentication in Exchange Online
 ms.collection:
 - Adm_O365
 - exchange-online
+- M365-email-calendar
 search.appverid:
 - BCS160
 - MOE150

@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: 73b693d9-39bb-4689-a1ff-4be505a5945b
 ms.date: 
 title: Using Outlook for iOS and Android in the Government Community Cloud
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.reviewer: smithre4
 ms.audience: ITPro
 ms.service: exchange-online

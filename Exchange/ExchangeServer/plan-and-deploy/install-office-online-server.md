@@ -5,7 +5,7 @@ ms.topic: get-started-article
 author: dstrome
 ms.author: dstrome
 ms.assetid: 9c2b4186-be7d-4c57-b119-17a1c36fd6a0
-ms.date: 
+ms.date:
 title: Install Office Online Server in an Exchange organization
 ms.collection:
 - Strat_EX_Admin
@@ -80,7 +80,7 @@ To install Office Online Server, do the following on the computer where you want
 
 1. Download Office Online Server from the [Volume License Service Center](https://go.microsoft.com/fwlink/p/?linkId=195442).
 
-   **Note**: Office Online Server is part of the downloads for Office Professional Plus 2016 in the Volume License Service Center. If you qualify for Office Online Server but don't have access to the Volume License Servicing Center, you have the following options: 
+   **Note**: Office Online Server is part of the downloads for Office Professional Plus 2016 in the Volume License Service Center. If you qualify for Office Online Server but don't have access to the Volume License Servicing Center, you have the following options:
 
    - Volume License or Open customers can contact their [Support Center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx).
 
@@ -139,5 +139,5 @@ After you've configured the Office Online Server server, do the following on you
    ```
    Restart-WebAppPool MsExchangeOwaAppPool
    ```
-   
+
 

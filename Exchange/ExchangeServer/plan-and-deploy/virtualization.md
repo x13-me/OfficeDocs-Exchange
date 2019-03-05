@@ -26,7 +26,7 @@ The following terms are used in this discussion of Exchange virtualization:
 
 - **Saved state**: When a virtual machine is powered off, hypervisors typically have the ability to save the state of the virtual machine, so when the machine is powered back on, it returns to that *saved state* rather than going through a cold boot startup.
 
-- **Planned migration**: When a system administrator initiates the move of a virtual machine from one hypervisor host to another, the action is a *planned migration*. The action could be a single migration, or a system administrator could configure automation to move the virtual machine on a timed basis. A planned migration could also be the result of some other event that occurs in the system, other than hardware or software failure. 
+- **Planned migration**: When a system administrator initiates the move of a virtual machine from one hypervisor host to another, the action is a *planned migration*. The action could be a single migration, or a system administrator could configure automation to move the virtual machine on a timed basis. A planned migration could also be the result of some other event that occurs in the system, other than hardware or software failure.
 
   The key point of a planned migration is the Exchange virtual machine is operating normally and needs to be relocated for some reason. This relocation can be done via technology (for example, Live Migration or vMotion). However, if the Exchange virtual machine or the hypervisor host where the virtual machine is located experiences some sort of failure condition, the outcome isn't characterized as a planned migration.
 

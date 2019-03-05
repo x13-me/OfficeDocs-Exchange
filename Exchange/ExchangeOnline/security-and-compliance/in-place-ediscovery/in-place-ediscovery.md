@@ -7,7 +7,9 @@ ms.author: markjjo
 ms.assetid: 6377cb7a-3416-4e15-8571-c45d2160fc6f
 ms.date: 7/11/2018
 title: In-Place eDiscovery
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

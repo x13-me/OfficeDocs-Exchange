@@ -7,7 +7,9 @@ ms.assetid: 194c5bf8-845c-4804-82dd-e950ee74dfcf
 ms.date: 
 description: Admins can learn how to use a screen reader to manage mobile devices in the Exchange admin center (EAC) in Exchange Online.
 title: Use a screen reader to work with mobile clients in the Exchange admin center in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online

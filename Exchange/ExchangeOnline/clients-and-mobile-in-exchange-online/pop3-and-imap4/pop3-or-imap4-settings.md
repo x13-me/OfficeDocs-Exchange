@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: bf4ca453-e79c-4b87-a9a5-3ae1b21181e2
 ms.date: 4/29/2016
 title: Set POP3 or IMAP4 settings for a user
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: laurawi

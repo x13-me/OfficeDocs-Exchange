@@ -7,7 +7,9 @@ ms.assetid: adad2c0d-7452-4392-a95e-058c4678c05e
 ms.date: 
 description: Admins can learn how to use a screen reader to manage anti-spam settings in the Exchange admin center (EAC) in Exchange Online
 title: Use a screen reader to manage anti-spam protection in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online

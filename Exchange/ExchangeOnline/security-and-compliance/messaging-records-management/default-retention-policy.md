@@ -7,7 +7,9 @@ ms.author: markjjo
 ms.assetid: bcf31b2d-463b-4623-b488-c8ac40f14f62
 ms.date: 3/9/2015
 title: Default Retention Policy in Exchange Online and Exchange Server
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: Admin
 ms.service: exchange-online
 manager: scotv
