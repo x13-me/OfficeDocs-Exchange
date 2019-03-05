@@ -7,7 +7,7 @@ ms.date:
 ms.audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.custom: MiniMaven
 search.appverid:
 - BCS160
