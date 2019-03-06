@@ -97,7 +97,7 @@ Below are the three configuration options to help you identify which one is in u
 
     **220 BY1PR10CA0041.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 1 Jun 2015 12:00:00 +0000**
 
-5. If you can't connect to Office 365, your network firewall or Internet Service Provider (IDP) might have blocked port 587 or 25. Correct this so you can send email from your printer.
+5. If you can't connect to Office 365, your network firewall or Internet Service Provider (ISP) might have blocked port 587 or 25. Correct this so you can send email from your printer.
 
 6. If none of these issues applies to your device, it might not meet requirements for Transport Layer Security (TLS) encryption. Your device must support TLS version 1.0 or above. Update the firmware on the device to solve this, or try one of the other configuration options where TLS is optional.
 

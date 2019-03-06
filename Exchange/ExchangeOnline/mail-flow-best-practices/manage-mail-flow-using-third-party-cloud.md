@@ -31,7 +31,7 @@ This topic covers the following complex mail flow scenarios using Exchange Onlin
 
 ### Scenario 1 - MX record points to third-party spam filtering
 
-- I plan to use Exchange Online to host all my organization's mailboxes. My organization uses a third-party cloud service to filter spam and malware. All email that the Internet sends must be filtered by this third-party cloud service.
+- I plan to use Exchange Online to host all my organization's mailboxes. My organization uses a third-party cloud service to filter spam and malware. All email that the internet sends must be filtered by this third-party cloud service.
 
 For this scenario, your organization's mail flow setup looks like the following diagram.
 
