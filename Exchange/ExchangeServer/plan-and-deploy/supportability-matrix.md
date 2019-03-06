@@ -26,7 +26,6 @@ In Exchange Server 2010 and earlier, each update rollup package (RU) is cumulati
 
 In Exchange Server 2013 or later, we changed the way we deliver hotfixes and service packs by using a scheduled delivery model. In this model, cumulative updates (CUs) are released quarterly (every three months). A CU is released as a full, self-contained refresh of that version of Exchange, similar to a product upgrade or a service pack release. For more information, see [Updates for Exchange Server](../new-features/updates.md).
 
-
 |**Servicing release model**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013**|**Exchange 2010**|
 |:-----|:-----|:-----|:-----|:-----|
 |Cumulative updates (CUs)|X|X|X||
@@ -154,9 +153,9 @@ The following table identifies the Web browsers supported for the use of S/MIME 
 
 The following tables identify the mail clients that are supported for use together with each version of Exchange. Supported clients are identified by an X character.
 
-
 |**Client**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|:-----|
+|Office 365 ProPlus|X|X|X||
 |Outlook 2019|X|X|X||
 |Outlook 2016|X<sup>1</sup>|X<sup>1</sup>|X|X|
 |Outlook 2013|X<sup>1</sup>|X<sup>1</sup>|X|X|
@@ -180,7 +179,6 @@ The following tables identify the mail clients that are supported for use togeth
 |Windows Phone 8||X|X|X|
 |Windows Phone 7.5|||X|X|
 |Windows Phone 7|||X|X|
-
 
 ## Tools
 
@@ -251,9 +249,7 @@ The following table identifies the version of Microsoft Management Console (MMC)
 
 The following table identifies the version of Windows Installer that is used together with each version of Exchange. Supported versions are identified by an X character.
 
-
 |**Windows Installer**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|
 |Windows Installer 4.5|X|X|X|
 |Windows Installer 5.0|X|X||
-
