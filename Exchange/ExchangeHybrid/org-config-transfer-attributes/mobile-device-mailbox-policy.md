@@ -4,7 +4,6 @@ ms.author: kchandra
 author: ChandraKavya
 manager: serdars
 ms.reviewer: dstrome
-ms.date: 10/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -16,7 +15,7 @@ ms.collection:
 description: "Organization configuration transfer attributes can be copied by the Hybrid Configuration Wizard from your on-premises organization to Exchange Online to help simplify your hybrid deployment"
 ---
 
-#Mobile Device Mailbox Policy attributes
+# Mobile Device Mailbox Policy attributes
 
  The following attributes of Mobile Device Mailbox Policy are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 

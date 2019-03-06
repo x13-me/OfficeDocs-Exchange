@@ -4,7 +4,6 @@ ms.author: kchandra
 author: ChandraKavya
 manager: serdars
 ms.reviewer: dstrome
-ms.date: 10/10/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
