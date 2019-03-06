@@ -41,7 +41,7 @@ After a user enters their extension number and PIN, the voice mail system will l
 ## Reading and reviewing email
 <a name="readreviewemail"> </a>
 
-Users can listen to, reply to, create, and forward unread email messages using the telephone. For example, if a user is expecting an important email message, and does not have access to the Internet, they can use a mobile telephone to dial an Outlook Voice Access number.
+Users can listen to, reply to, create, and forward unread email messages using the telephone. For example, if a user is expecting an important email message, and does not have access to the internet, they can use a mobile telephone to dial an Outlook Voice Access number.
 
 ### Listen to email messages
 
