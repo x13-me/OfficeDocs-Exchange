@@ -110,6 +110,8 @@ We strongly recommend that you use the latest version of the .NET Framework that
 
 ## Supported clients
 
+- Office 365 ProPlus
+
 - Outlook 2019
 
 - Outlook 2016
@@ -234,6 +236,8 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 |Exchange 2016 CU5, CU6, CU7|||Supported|
 
 ## Supported clients (with latest updates)
+
+- Office 365 ProPlus
 
 - Outlook 2019
 
