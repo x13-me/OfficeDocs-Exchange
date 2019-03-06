@@ -2,9 +2,9 @@
 title: "Troubleshoot a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
-manager: laurawi
+manager: serdars
 ms.date: 4/30/2016
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

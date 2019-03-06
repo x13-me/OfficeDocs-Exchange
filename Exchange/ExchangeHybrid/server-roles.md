@@ -2,15 +2,15 @@
 title: "Server roles in Exchange hybrid deployments"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 6/25/2018
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: 7a7eaf17-d2b0-4d62-90a2-45a0d2faca54
 description: "You can configure hybrid deployments based on Exchange 2013 and Exchange 2016. The roles that need to be configured to support a hybrid deployment depend on the version of Exchange you're using."
 ---

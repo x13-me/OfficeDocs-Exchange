@@ -29,7 +29,7 @@ manager: serdars
 
 # Enable your Gmail account for IMAP
 
- Internet Message Access Protocol (IMAP) is a protocol that allows you to download messages from a mail provider's servers, such as those for Gmail, onto your computer so you can use Microsoft Outlook to view and edit your email, even when aren't connected to the Internet.
+ Internet Message Access Protocol (IMAP) is a protocol that allows you to download messages from a mail provider's servers, such as those for Gmail, onto your computer so you can use Microsoft Outlook to view and edit your email, even when aren't connected to the internet.
 
 ## Enable IMAP on for your Gmail account
 

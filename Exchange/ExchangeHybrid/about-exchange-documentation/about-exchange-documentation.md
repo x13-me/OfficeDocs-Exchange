@@ -2,7 +2,7 @@
 title: "About Exchange documentation"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
+manager: serdars
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article

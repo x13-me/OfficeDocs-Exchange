@@ -62,9 +62,9 @@ Adding an SSL certificate to Exchange 2010 is a three step process.
 
 6. On the **Exchange Configuration** page for each service in the list shown, verify that the external or internal server names that users will use to connect to the Exchange server are correct. For example:
 
-  - If you configured your internal and external URLs to be the same, Outlook Web App (when accessed from the Internet) and Outlook Web App (when accessed from the intranet) should show owa.contoso.com. Offline Address Book (OAB) (when accessed from the Internet) and OAB (when accessed from the intranet) should show mail.contoso.com.
+  - If you configured your internal and external URLs to be the same, Outlook Web App (when accessed from the internet) and Outlook Web App (when accessed from the intranet) should show owa.contoso.com. Offline Address Book (OAB) (when accessed from the internet) and OAB (when accessed from the intranet) should show mail.contoso.com.
 
-  - If you configured the internal URLs to be internal.contoso.com, Outlook Web App (when accessed from the Internet) should show owa.contoso.com, and Outlook Web App (when accessed from the intranet) should show internal.contoso.com.
+  - If you configured the internal URLs to be internal.contoso.com, Outlook Web App (when accessed from the internet) should show owa.contoso.com, and Outlook Web App (when accessed from the intranet) should show internal.contoso.com.
 
 7. These domains will be used to create the SSL certificate request. Choose **Next**.
 

@@ -35,7 +35,7 @@ The voice mail features found in UM offer benefits for both users and administra
 
 When you configure UM for your organization, users can access voice mail, email, personal Contacts and calendar information that's located in their mailbox from an email client, for example, Microsoft Outlook or Outlook Web App, from a mobile phone with Microsoft Exchange ActiveSync set up, such as a Windows Phone, or from a telephone. Additionally, users can use the following features:
 
-- **Access to their Exchange mailbox**: Users can access a full set of voice mail features from Internet-capable mobile phones, Outlook 2007 or later versions, and Outlook Web App. These features include many voice mail configuration options and the ability to play a voice message from either the reading pane, using an integrated Windows Media Player, or the message list, using computer speakers.
+- **Access to their Exchange mailbox**: Users can access a full set of voice mail features from internet-capable mobile phones, Outlook 2007 or later versions, and Outlook Web App. These features include many voice mail configuration options and the ability to play a voice message from either the reading pane, using an integrated Windows Media Player, or the message list, using computer speakers.
 
 - **Play on Phone**: The Play on Phone feature lets users play voice messages over a telephone. If the user works in an office cubicle, is using a public computer or a computer that isn't enabled for multimedia, or is listening to a voice message that's confidential, they might not want to or be able to listen to a voice message through computer speakers. They can play the voice message using any telephone, including a home, office, or mobile telephone.
 

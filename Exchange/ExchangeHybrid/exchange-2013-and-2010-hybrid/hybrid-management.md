@@ -2,9 +2,9 @@
 title: "Hybrid management in Exchange 2013/Exchange 2010 hybrid deployments"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
+manager: serdars
 ms.date: 12/9/2016
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

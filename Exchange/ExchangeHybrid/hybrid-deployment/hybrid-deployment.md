@@ -2,9 +2,9 @@
 title: "Hybrid Deployment procedures"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
+manager: serdars
 ms.date: 6/14/2017
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

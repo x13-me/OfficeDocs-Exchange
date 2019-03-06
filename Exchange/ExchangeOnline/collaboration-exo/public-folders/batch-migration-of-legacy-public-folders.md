@@ -118,7 +118,7 @@ Perform the following prerequisite steps before you begin the migration.
 
 #### Prerequisite steps on the legacy Exchange server
 
-1. On the legacy Exchange server, make sure that routing to the mail-enabled public folders that will exist in Office 365 or Exchange Online continues to work until all DNS caches over the Internet are updated to point to the Office 365 or Exchange Online DNS where your organization now resides. To do this, run the following command to configure an accepted domain with a well-known name that will properly route email messages to the Office 365 or Exchange Online domain.
+1. On the legacy Exchange server, make sure that routing to the mail-enabled public folders that will exist in Office 365 or Exchange Online continues to work until all DNS caches over the internet are updated to point to the Office 365 or Exchange Online DNS where your organization now resides. To do this, run the following command to configure an accepted domain with a well-known name that will properly route email messages to the Office 365 or Exchange Online domain.
 
     ```
     New-AcceptedDomain -Name "PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99" -DomainName contoso.onmicrosoft.com -DomainType InternalRelay

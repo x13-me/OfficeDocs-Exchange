@@ -2,15 +2,15 @@
 title: "Shared free/busy in Exchange hybrid deployments"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 4/30/2016
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: bd3884de-80ee-4ff2-a8a3-eacd5aa3e51b
 description: "Sharing free/busy (calendar availability) information between users located on-premises and in the Exchange Online organization is one of the primary benefits of a hybrid deployment. Users in both organizations can view each other's calendars just as if they were located in the same physical organization. This makes scheduling meetings and resources easy and efficient."
 ---

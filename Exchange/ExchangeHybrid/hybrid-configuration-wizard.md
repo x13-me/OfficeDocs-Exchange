@@ -2,9 +2,8 @@
 title: "Hybrid Configuration wizard"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 6/25/2018
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -12,6 +11,7 @@ ms.collection:
 - Strat_EX_EXOBlocker
 - Ent_O365_Hybrid
 - Hybrid
+- M365-email-calendar
 ms.assetid: 2e6ed294-ee74-4038-8b71-b61786372ba4
 description: ""
 ---

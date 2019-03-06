@@ -2,15 +2,15 @@
 title: "Performance factors and best practices for hybrid migrations"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 6/25/2018
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: 120a7832-d2d3-47d7-b305-918360c2ef66
 description: "There are many paths to migrate data from an on-premises email organization to Office 365. When planning a migration to Office 365, a common question is about how to improve the performance of data migration and optimize migration velocity. This article discusses migration performance for Exchange hybrid deployments, For performance information about other migration methods, see Office 365 migration performance and best practices."
 ---
