@@ -4,7 +4,6 @@ ms.author: kchandra
 author: ChandraKavya
 manager: serdars
 ms.reviewer: dstrome
-ms.date: 10/10/2018
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -12,6 +11,7 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365_Hybrid
 - Hybrid
+- M365-email-calendar
 description: "Policy tip config attributes can be copied by the Hybrid Configuration Wizard from your on-premises organization to Exchange Online to help simplify your hybrid deployment"
 ---
 
