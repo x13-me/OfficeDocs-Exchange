@@ -3,7 +3,6 @@ title: "Troubleshoot a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
 manager: serdars
-ms.date: 4/30/2016
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -11,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: bbae72f3-6a1e-4cbf-80da-d8f73d969c6b
 description: "Configuring a hybrid deployment in Exchange with the Hybrid Configuration wizard greatly minimizes the potential that the hybrid deployment will experience problems. However, there are some typical areas outside the scope of the Hybrid Configuration wizard that, if misconfigured, may present problems in a hybrid deployment. This topic discusses the following common areas where problems may arise and outlines basic steps to verify or correct issues:"
 ---

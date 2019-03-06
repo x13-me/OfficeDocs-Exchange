@@ -3,7 +3,6 @@ title: "Third-party copyright notices"
 ms.author: scotv
 author: scotvidican
 manager: scotv
-ms.date: 11/17/2014
 ms.audience: End User
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -11,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: e94f1244-acb8-4ddd-b54e-5cc37f903bbf
 description: "Outside In HTML Export © 1991, 2011 Oracle"
 ---
