@@ -3,7 +3,6 @@ title: "Hybrid Deployment procedures"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 6/14/2017
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -11,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: cbbe558d-1ae2-49ed-bd97-2013349fef35
 description: "Configuring and managing hybrid deployments are easier than ever with the latest improvements to the Hybrid Configuration wizard. Whether you want to connect your Exchange on-premises and Exchange Online organizations for long-term coexistence or as part of a cloud migration strategy, configuring a hybrid deployment is the first step for your Exchange organization."
 ---
