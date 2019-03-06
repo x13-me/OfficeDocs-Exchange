@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365_Hybrid
 - Hybrid
+- M365-email-calendar
 description: "Organization configuration transfer attributes can be copied by the Hybrid Configuration Wizard from your on-premises organization to Exchange Online to help simplify your hybrid deployment"
 ---
 
