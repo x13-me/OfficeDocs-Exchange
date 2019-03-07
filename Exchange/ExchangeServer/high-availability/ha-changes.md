@@ -1,15 +1,17 @@
 ---
-title: "Changes to high availability and site resilience over previous versions of Exchange Server"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/13/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: An overview of enhancements and additions to high availability and site resilience capabilities since Exchange 2010.
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: de53c00b-091c-4a31-aacc-1bd40c756ce2
-description: "An overview of enhancements and additions to high availability and site resilience capabilities since Exchange 2010."
+ms.date: 7/13/2018
+title: Changes to high availability and site resilience over previous versions of Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Changes to high availability and site resilience over previous versions of Exchange Server
@@ -50,12 +52,12 @@ As a result of these changes, Exchange now provides a significant reduction in I
 
 Managed Availability is the integration of built-in, active monitoring and the Exchange high availability platform. With Managed Availability, the system can make a determination on when to fail over a database based on service health. Managed Availability is an internal infrastructure that's deployed in the Client Access (frontend) services and backend services on Mailbox servers. Managed Availability includes three main asynchronous components that are constantly doing work:
 
-1. The first component is the probe engine, which is responsible for taking measurements on the server and collecting data. The results of those measurements flow into the second component, the monitor. 
+1. The first component is the probe engine, which is responsible for taking measurements on the server and collecting data. The results of those measurements flow into the second component, the monitor.
 
-2. The monitor contains all of the business logic used by the system based on what is considered healthy on the data collected. Similar to a pattern recognition engine, the monitor looks for the various different patterns on all the collected measurements, and then it decides whether something is considered healthy. 
+2. The monitor contains all of the business logic used by the system based on what is considered healthy on the data collected. Similar to a pattern recognition engine, the monitor looks for the various different patterns on all the collected measurements, and then it decides whether something is considered healthy.
 
 3. Finally, there is the responder engine, which is responsible for recovery actions.
- 
+
 When something is unhealthy, the first action is to attempt to recover that component. This could include multi-stage recovery actions; for example:
 
 1. Restart the application pool.
@@ -64,7 +66,7 @@ When something is unhealthy, the first action is to attempt to recover that comp
 
 3. Restart the server.
 
-4. Take the server offline so that it no longer accepts traffic. 
+4. Take the server offline so that it no longer accepts traffic.
 
 If the recovery actions are unsuccessful, the system escalates the issue to a human through event log notifications.
 
@@ -173,7 +175,7 @@ Even in JBOD environments, storage array controllers can have issues, such as cr
 |ESE Database Hung IO Detection  <br/> |ESE checks for outstanding I/Os  <br/> |Generates a failure item in the crimson channel to restart the server  <br/> |240 seconds  <br/> |
 |Failure Item Channel Heartbeat  <br/> |Ensures failure items can be written to and read from crimson channel  <br/> |Replication service heartbeats crimson channel and restart server on failures  <br/> |30 seconds  <br/> |
 |System Disk Heartbeat  <br/> |Verifies server's system disk state  <br/> |Periodically sends unbuffered I/O to system disk; restarts server on heartbeat time out  <br/> |120 seconds  <br/> |
- 
+
 Exchange 2013 and later enhances server and storage resilience by including behaviors for other serious conditions. These conditions and behaviors are described in the following table.
 
 |**Name**|**Check**|**Action**|**Threshold**|
@@ -183,7 +185,7 @@ Exchange 2013 and later enhances server and storage resilience by including beha
 |Replication service memory use  <br/> |Measure the working set of MSExchangeRepl.exe  <br/> |1: Log event 4395 in the crimson channel with a service termination request  <br/> 2: Initiate termination of MSExchangeRepl.exe  <br/> 3: If service termination fails, restart the server  <br/> |4 gigabyte (GB)  <br/> |
 |System Event 129 (Bus reset)  <br/> |Check for Event 129 in System event log  <br/> |Restart the server  <br/> |When event occurs  <br/> |
 |Cluster database hang  <br/> |Global Update Manager updates are blocked  <br/> |Restart the server  <br/> |When event occurs  <br/> |
- 
+
 ## Lagged copy enhancements
 
 Lagged copy enhancements include integration with Safety Net and automatic play down of log files in certain scenarios. Safety Net was introduced in Exchange 2013 to replace the Exchange 2010 feature known as the transport dumpster. Safety Net is similar to the transport dumpster, in that it's a delivery queue that's associated with the Transport service on a Mailbox server. This queue stores copies of messages that were successfully delivered to the active mailbox database on the Mailbox server. Each active mailbox database on the Mailbox server has its own queue that stores copies of the delivered messages. You can specify how long Safety Net stores copies of the successfully delivered messages before they expire and are automatically deleted.
@@ -300,7 +302,7 @@ Exchange 2013 CU2 or later includes the Microsoft Exchange DAG Management Servic
 
 ## DAGs without a cluster administrative access point
 
-All DAGs on Exchange servers running Windows Server 2008 R2 or Windows Server 2012 require at least one IP address on every subnet included in the MAPI network. The IP address(es) assigned to the DAG are used by the DAG's cluster with the cluster's administrative access point (also known as the cluster network name) to enable name resolution and connectivity to the cluster (or more precisely, connectivity to the cluster member that currently owns the cluster core resource group) using the cluster name. 
+All DAGs on Exchange servers running Windows Server 2008 R2 or Windows Server 2012 require at least one IP address on every subnet included in the MAPI network. The IP address(es) assigned to the DAG are used by the DAG's cluster with the cluster's administrative access point (also known as the cluster network name) to enable name resolution and connectivity to the cluster (or more precisely, connectivity to the cluster member that currently owns the cluster core resource group) using the cluster name.
 
 Windows Server 2012 R2 or later enables you to create a failover cluster without an administrative access point. Windows failover clusters without administrative access points have the following characteristics:
 
@@ -315,5 +317,6 @@ Windows Server 2012 R2 or later enables you to create a failover cluster without
 - You can't manage the Windows failover cluster using the Failover Cluster Management tool. Instead, you need to use Windows PowerShell and you need to run the PowerShell cmdlets against the individual cluster members.
 
 Exchange 2013 SP1 or later running on Exchange on Windows Server 2012 R2 or later enables you to create a DAG without a cluster administrative access point. For more information, see [Creating DAGs](manage-ha/manage-dags.md#creating-dags) and [Create a database availability group](manage-ha/create-dags.md).
+
 
 

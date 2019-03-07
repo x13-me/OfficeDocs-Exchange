@@ -1,15 +1,17 @@
 ---
-title: "Forwarding calls procedures"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Call answering rules
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: a19cf331-4a83-4d8e-909e-9330911c7fa2
-description: "Call answering rules"
+ms.date: 11/17/2014
+title: Forwarding calls procedures
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Forwarding calls procedures
@@ -25,5 +27,6 @@ description: "Call answering rules"
 [Enable or disable a call answering rule for a user](enable-or-disable-a-call-answering-rule-for-a-user.md)
 
 [Remove a call answering rule for a user](remove-a-call-answering-rule-for-a-user.md)
+
 
 

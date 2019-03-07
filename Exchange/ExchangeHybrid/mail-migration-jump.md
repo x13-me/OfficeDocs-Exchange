@@ -3,7 +3,6 @@ title: "Use the Office 365 mail migration advisors in Office 365"
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date: 1/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -11,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 description: "Use the Office 365 mail migration advisors to perform a hybrid, cutover, staged, Gmail, or IMAP, migration to Office 365."
 ---
 
@@ -27,7 +27,7 @@ To run the Office 365 migration advisor, you'll need the following:
 
 After you have everything you need, you can open the mail migration advisor by doing one of the following:
 
-- Open the mail migration advisor directly using the URL https://aka.ms.office365setup.
+- Open the mail migration advisor directly using the URL https://aka.ms/office365setup.
 - Open the [Office 365 admin portal](https://portal.office.com) and then select **Setup** \\ **Data migration** \\ **Exchange** \ **Mail migration advisor**.
 
 ## What options will I have when I run the migration advisor?

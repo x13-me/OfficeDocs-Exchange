@@ -1,15 +1,19 @@
 ---
-title: "Use a screen reader to add a new mail contact in the Exchange admin center in Exchange Online"
-ms.author: v-maleo
-author: maggsl
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: A11y_UseSR
+ms.topic: article
+author: maggsl
+ms.author: v-maleo
 ms.assetid: 723ab221-3abe-40ee-8143-eee45e9d0519
-description: "Admins can learn how to use a screen reader to create a new mail contact in the Exchange admin center (EAC) in Exchange Online."
+ms.date: 
+description: Admins can learn how to use a screen reader to create a new mail contact in the Exchange admin center (EAC) in Exchange Online.
+title: Use a screen reader to add a new mail contact in the Exchange admin center in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.custom: A11y_UseSR
+ms.service: exchange-online
+
 ---
 
 # Use a screen reader to add a new mail contact in the Exchange admin center in Exchange Online
@@ -69,3 +73,4 @@ To add a new mail contact, [use a screen reader to open the EAC](https://technet
    - **\*External email address**. Type the contact's email address that is outside of your organization. Email sent to the contact is forwarded to this email address.
 
 7. When you're finished, tab to the **Save** button. The **new mail contact** window closes, and the contact is added to the table in the **contacts** window.
+

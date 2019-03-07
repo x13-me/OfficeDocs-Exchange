@@ -1,15 +1,17 @@
 ---
-title: "Manage voice mail settings for a user"
-ms.author: tonysmit
-author: tonysmit
-manager: serdars
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.assetid: 73957938-048a-4f9c-bd0f-a3c2c3dcd638
 description: "You can view or set the Unified Messaging (UM) and voice mail features and configuration settings for a user that's been enabled for UM and voice mail. For example, you can do the following:"
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
+ms.assetid: 73957938-048a-4f9c-bd0f-a3c2c3dcd638
+ms.date: 11/17/2014
+title: Manage voice mail settings for a user
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage voice mail settings for a user
@@ -121,5 +123,6 @@ Get-UMMailbox -Identity tonysmith@contoso.com
 
 > [!IMPORTANT]
 > When you're running Exchange 2007 and Exchange 2013 and the user's mailbox is located on an Exchange 2007 Mailbox server, running the **Get-UMMailbox** cmdlet won't work correctly. To resolve the issue, run the **Get-UMMailbox** cmdlet from an Exchange 2007 server or a computer running the Exchange 2007 administrative tools.
+
 
 

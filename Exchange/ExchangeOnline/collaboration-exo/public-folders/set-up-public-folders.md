@@ -1,15 +1,19 @@
 ---
-title: "Set up public folders in a new organization"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: How to set up public folders, including assigning permissions to them in the EAC.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 7b419906-8977-47f0-8687-a87911b5ebec
-description: "Summary: How to set up public folders, including assigning permissions to them in the EAC."
+ms.date: 7/11/2018
+title: Set up public folders in a new organization
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Set up public folders in a new organization
@@ -81,5 +85,6 @@ If you want users to send mail to the public folder, you can mail-enable it. Thi
 The public folder will be mail-enabled and the name of the public folder will become the alias of the public folder. If you have multiple recipients with that name, the public folder's alias will be appended with a number. For example, if you have a distribution group named SalesTeam and you create a public folder named SalesTeam and then mail-enable it, the alias of that public folder will be SalesTeam1.
 
 For information about how to use Exchange Online PowerShell to mail-enable a public folder, see [Enable-MailPublicFolder](https://technet.microsoft.com/library/6fc7ba9a-62a8-4f41-811f-608363aa1397.aspx).
+
 
 

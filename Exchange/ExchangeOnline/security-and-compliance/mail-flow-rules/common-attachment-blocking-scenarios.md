@@ -1,15 +1,19 @@
 ---
-title: "Common attachment blocking scenarios for mail flow rules in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to use mail flow rules to block attachments in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 5c576439-d55b-4c7f-90ed-a7f72cbb16c2
-description: "Admins can learn how to use mail flow rules to block attachments in Exchange Online."
+ms.date: 
+title: Common attachment blocking scenarios for mail flow rules in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Common attachment blocking scenarios for mail flow rules in Exchange Online
@@ -108,4 +112,5 @@ If you have a malware outbreak, you might want to apply a rule with a time limit
 [Mail flow rules (Exchange Server)](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
 
 [Mail flow rules (Exchange Online Protection)](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
+
 

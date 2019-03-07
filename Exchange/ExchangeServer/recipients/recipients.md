@@ -1,15 +1,17 @@
 ---
-title: "Recipients"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: All about recipients, such as mailboxes and mail users, in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: abad5939-8826-4df1-94bf-2d734f07e929
-description: "Summary: All about recipients, such as mailboxes and mail users, in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 6/8/2018
+title: Recipients
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Recipients
@@ -18,7 +20,7 @@ The people and resources that send and receive messages are the core of any mess
 
 ## Exchange recipient types
 
-Exchange includes several explicit recipient types. Each recipient type is identified in the Exchange admin center (EAC) and has a unique value in the _RecipientTypeDetails_ property in the Exchange Management Shell. The use of explicit recipient types has the following benefits: 
+Exchange includes several explicit recipient types. Each recipient type is identified in the Exchange admin center (EAC) and has a unique value in the _RecipientTypeDetails_ property in the Exchange Management Shell. The use of explicit recipient types has the following benefits:
 
 - At a glance, you can differentiate between various recipient types.
 
@@ -49,7 +51,7 @@ The following table lists the available recipient types. All these recipient typ
 |User mailbox|A mailbox that's assigned to an individual user in your Exchange organization. It typically contains messages, calendar items, contacts, tasks, documents, and other important business data.|
 |Office 365 mailbox|In hybrid deployments, an Office 365 mailbox consists of a mail user that exists in Active Directory on-premises and an associated cloud mailbox that exists in Exchange Online.|
 |Linked user|A linked user is a user whose mailbox resides in a different forest than the forest in which the user resides.|
- 
+
 ### Mailboxes
 
 Mailboxes are the most common recipient type used by information workers in an Exchange organization. Each mailbox is associated with an Active Directory user account. The user can use the mailbox to send and receive messages, and to store messages, appointments, tasks, notes, and documents. Mailboxes are the primary messaging and collaboration tool for the users in your Exchange organization.
@@ -111,7 +113,7 @@ System mailboxes are created by Exchange in the root domain of the Active Direct
 |Discovery|DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852}|
 |Federated email|FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042|
 |Migration|Migration.8f3e7716-2011-43e4-96b1-aba62d229136|
- 
+
 If you want to decommission the last Mailbox server in your Exchange organization, you should first disable these system mailboxes by using the [Disable-Mailbox](http://technet.microsoft.com/library/33be55a3-1880-437d-a631-c1cca1736421.aspx) cmdlet. When you decommission a Mailbox server that contains these system mailboxes, you should move the system mailboxes to another Mailbox server to make sure that you don't lose functionality.
 
 #### Planning for mailboxes
@@ -145,7 +147,7 @@ Unlike regular distribution groups, the membership list for dynamic distribution
 > [!IMPORTANT]
 > A dynamic distribution group includes any recipient in Active Directory that has attributes that match the group's filter at the time a message is sent. If a recipient's properties are modified to match the group's filter, that recipient could inadvertently become a group member and start receiving messages that are sent to the dynamic distribution group. Well-defined, consistent account provisioning processes can reduce the chances of this issue occurring.
 
-To help you create recipient filters for dynamic distribution groups, you can use precanned filters. A *precanned filter* is a commonly used filter that you can use to meet a variety of recipient-filtering criteria. You can use these filters to specify the recipient types that you want to include in a dynamic distribution group. In addition, you can also specify a list of conditions that the recipients must meet. You can create precanned conditions based on the following properties: 
+To help you create recipient filters for dynamic distribution groups, you can use precanned filters. A *precanned filter* is a commonly used filter that you can use to meet a variety of recipient-filtering criteria. You can use these filters to specify the recipient types that you want to include in a dynamic distribution group. In addition, you can also specify a list of conditions that the recipients must meet. You can create precanned conditions based on the following properties:
 
 - Custom attributes 1-15
 
@@ -213,5 +215,6 @@ The following table contains links to topics that will help you learn about and 
 |[Filters in recipient Shell commands](http://technet.microsoft.com/library/fb4b1396-9aae-4037-be1a-b09e336b890e.aspx)|Learn how to use precanned or custom filters with commands to filter a set of recipients.|
 |[Manage permissions for recipients](mailbox-permissions.md)|Learn how to use the EAC or the Exchange Management Shell to assign permissions to users and groups.|
 |[Automatic Mailbox Distribution](http://technet.microsoft.com/library/f4db4636-948c-466b-839c-300c1a3a9544.aspx)|Learn about how automatic mailbox distribution works and how to control which mailbox databases are selected for new and moved mailboxes.|
- 
+
+
 

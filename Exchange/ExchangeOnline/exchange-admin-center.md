@@ -1,16 +1,19 @@
 ---
-title: "Exchange admin center in Exchange Online"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date:
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: You use the Exchange admin center to manage email settings for your organization.
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: ace44f6b-4084-4f9c-89b3-e0317962472b
+ms.date: 
+title: Exchange admin center in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
 
-description: "You use the Exchange admin center to manage email settings for your organization."
 ---
 
 # Exchange admin center in Exchange Online
@@ -97,19 +100,18 @@ The Centers tile allows you to change from one admin center to another. The Me t
 - **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit and object. You can turn off the Help bubble help or turn it on if it has been disabled.
 
 ## Supported browsers
-<a name="SB"> </a>
 
 See the following articles:
 
 - [Office 365 System Requirements](https://go.microsoft.com/fwlink/p/?LinkID=402699): lists supported browsers for Office 365 and the Exchange admin center.
 
-- [Supported Browsers for Outlook Web App](https://support.office.com/en-us/article/supported-browsers-for-outlook-web-app-c89774d6-0722-4c93-a547-ef45e693e006).
+- [Supported Browsers for Outlook on the web](https://support.office.com/article/c89774d6-0722-4c93-a547-ef45e693e006).
 
 ## Related articles
-<a name="SB"> </a>
 
 Are you using Exchange Server? See [Exchange admin center in Exchange Server](https://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
 
 Are you using Exchange Online Protection? See [Exchange admin center in Exchange Online Protection](https://technet.microsoft.com/library/97921f0e-832f-40c7-b56d-414faede5191.aspx).
+
 
 

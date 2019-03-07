@@ -1,18 +1,22 @@
 ---
-title: "Fix issues with printers, scanners, and LOB applications that send email using Office 365"
-ms.author: supotter
-author: supotter
-manager: scotv
-ms.topic: troubleshooting
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: MiniMaven
+description: 'Fix issues with printers, scanners, and line of business applications that use Office 365 to send email. '
+ms.topic: troubleshooting
+author: chrisda
+ms.author: chrisda
+ms.assetid: c75542a8-c792-42c0-a8c5-291df987512d
+title: Fix issues with printers, scanners, and LOB applications that send email using Office 365
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: c75542a8-c792-42c0-a8c5-291df987512d
-description: "Fix issues with printers, scanners, and line of business applications that use Office 365 to send email. "
+ms.custom: MiniMaven
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Fix issues with printers, scanners, and LOB applications that send email using Office 365
@@ -93,7 +97,7 @@ Below are the three configuration options to help you identify which one is in u
 
     **220 BY1PR10CA0041.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 1 Jun 2015 12:00:00 +0000**
 
-5. If you can't connect to Office 365, your network firewall or Internet Service Provider (IDP) might have blocked port 587 or 25. Correct this so you can send email from your printer.
+5. If you can't connect to Office 365, your network firewall or Internet Service Provider (ISP) might have blocked port 587 or 25. Correct this so you can send email from your printer.
 
 6. If none of these issues applies to your device, it might not meet requirements for Transport Layer Security (TLS) encryption. Your device must support TLS version 1.0 or above. Update the firmware on the device to solve this, or try one of the other configuration options where TLS is optional.
 
@@ -134,7 +138,7 @@ This can be caused by a number of issues.
 
 ### Error: Client was not authenticated to send anonymous mail during MAIL FROM
 
-This indicates that you are connecting to the SMTP client submission endpoint (smtp.office365.com), which can't be used for direct send. For direct send, use the MX endpoint for your Office 365 tenant, which ends with "mail.protection.outlook.com." You can find your MX endpoint by following the steps in [Option 2: Send mail directly from your printer or application to Office 365 (direct send)](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md#option2).
+This indicates that you are connecting to the SMTP client submission endpoint (smtp.office365.com), which can't be used for direct send. For direct send, use the MX endpoint for your Office 365 tenant, which ends with "mail.protection.outlook.com." You can find your MX endpoint by following the steps in [Option 2: Send mail directly from your printer or application to Office 365 (direct send)](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md#option-2-send-mail-directly-from-your-printer-or-application-to-office-365-direct-send).
 
 ### My emails are not sent to recipients who are not in my organization
 
@@ -149,7 +153,6 @@ It's not possible to use an IP address in place of an MX endpoint. This could re
 For direct send, we recommend using a device that sends from a static IP address. This allows you to set up a Sender Policy Framework (SPF) record to help prevent emails being marked as spam. Check that your SPF record is set up with your static IP address. A network or ISP change could change your static IP address. Update your SPF record to reflect this change. If you aren't sending from your own static IP address, consider SMTP client submission instead.
 
 ## Fix issues with Office 365 SMTP relay
-<a name="Troubleshootrelay"> </a>
 
 ### I set up my printer for Office 365 SMTP relay but it's not sending email -or- My device was sending email using SMTP relay, but it stopped working
 
@@ -161,14 +164,14 @@ This can be caused by a number of issues.
 
 ### Emails are no longer being sent to external recipients
 
-Network or ISP changes might change your static IP address. This results in your connector not identifying and relaying your messages to external recipients. Update your connector and your SPF record with the new IP address. Follow the steps in [Option 3: Configure a connector to send mail using Office 365 SMTP relay](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md#option3) to edit your existing connector settings.
+Network or ISP changes might change your static IP address. This results in your connector not identifying and relaying your messages to external recipients. Update your connector and your SPF record with the new IP address. Follow the steps in [Option 3: Configure a connector to send mail using Office 365 SMTP relay](how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md#option-3-configure-a-connector-to-send-mail-using-office-365-smtp-relay) to edit your existing connector settings.
 
 ### Emails from my device are marked as junk by Office 365
 
 Office 365 SMTP relay requires your device to send email from a static IP address. Check that your SPF record is set up with your static IP address. A network or ISP change could change your static IP address. Update your SPF record to reflect this change. If you aren't sending from your own static IP address, consider SMTP client submission instead.
 
 ## See also
-<a name="Troubleshootrelay"> </a>
 
 [How to configure IIS for relay with Office 365](how-to-configure-iis-for-relay-with-office-365.md)
+
 

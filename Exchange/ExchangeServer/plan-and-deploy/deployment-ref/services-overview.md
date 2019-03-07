@@ -1,29 +1,31 @@
 ---
-title: "Overview of Exchange services on Exchange servers"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/31/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Learn about the services that Exchange 2016 adds to a Windows server.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 2ed45d18-2ff3-4099-b841-050eb16a416b
-description: "Learn about the services that Exchange 2016 adds to a Windows server."
+ms.date: 7/31/2018
+title: Overview of Exchange services on Exchange servers
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Overview of Exchange services on Exchange servers
 
 During the installation of Exchange Server 2016 or Exchange Server 2019, Setup runs a set of tasks that install new services in Microsoft Windows. A service is a background process that can be launched during the startup of the server by the Windows Service Control Manager. Services are executable files designed to operate independently and without administrative intervention. A service can run using either a graphical user interface (GUI) mode or a console mode.
-  
+
 All previous versions of Exchange included components that are implemented as services. Each Exchange server role includes services that are part of (or may be needed by) the server role to perform its functions. Note that some services only become active when specific features are used.
-  
+
 The sections in this topic describe the various services that are installed by Exchange 2016 and Exchange 2016 on Mailbox servers and Edge Transport servers. For services that are labeled as optional, you can disable the service if you determine your organization doesn't need the functionality that's provided by the service.
-  
+
 ## Exchange services on Mailbox servers
 
 The following table describes the Exchange services that are installed on Mailbox servers.
-  
+
 |**Service name**|**Service short name**|**Description and dependencies**|**Default startup type**|**Security context**|**Dependencies**|**Required or optional**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Microsoft Exchange Active Directory Topology|MSExchangeADTopology|Provides Active Directory topology information to Exchange services. If this service is stopped, most Exchange services can't start.|Automatic|Local System|Net.TCP Port Sharing Service|Required|
@@ -57,11 +59,11 @@ The following table describes the Exchange services that are installed on Mailbo
 |Microsoft Exchange Transport Log Search|MSExchangeTransportLogSearch|Provides remote search capability for transport log files (for example, message tracking).|Automatic|Local System|Microsoft Exchange Active Directory Topology|Optional|
 |Microsoft Exchange Unified Messaging (Exchange 2016 only) |MSExchangeUM|Provides Unified Messaging (UM) features: allows voice and fax messages to be stored in Exchange 2016 and gives users telephone access to email, voice mail, calendar, contacts, or an auto attendant. If this service is stopped, Unified Messaging isn't available. <br/> If you don't use UM in Exchang 2016, you can disable this service.|Automatic|Local System|• CNG Key Isolation <br/>• Microsoft Exchange Active Directory Topology|Optional|
 |Microsoft Exchange Unified Messaging Call Router (Exchange 2016 only)|MSExchangeUMCR|Redirects UM client connections from the Client Access (frontend) services to the backend Unified Messaging service on Exchange 2016 Mailbox servers. <br/> If you don't use UM in Exchange 2016, you can disable this service.|Automatic|Local System|• CNG Key Isolation <br/>• Microsoft Exchange Active Directory Topology|Optional|
-   
+
 ## Exchange services on Edge Transport servers
 
 The following table describes the Exchange services that are installed on Edge Transport servers.
-  
+
 |**Service name**|**Service short name**|**Description**|**Default startup type**|**Security context**|**Dependencies**|**Required or optional**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Microsoft Exchange ADAM|ADAM_MSExchange|Stores configuration data and recipient data on the Edge Transport server. This service represents the named instance of the Active Directory Lightweight Directory Services (AD LDS) that's automatically created by Exchange Setup.|Automatic|Network Service|COM+ Event System|Required|
@@ -73,3 +75,4 @@ The following table describes the Exchange services that are installed on Edge T
 |Microsoft Exchange Service Host|MSExchangeServiceHost|Provides a service host for Exchange components that don't have their own services.|Automatic|Local System|Microsoft Exchange ADAM|Required|
 |Microsoft Exchange Transport|MSExchangeTransport|Provides SMTP server and transport stack.|Automatic|Network Service|Microsoft Exchange ADAM|Required|
 |Microsoft Exchange Transport Log Search|MSExchangeTransportLogSearch|Provides remote search capability for transport log files (for example, message tracking).|Automatic|Local System|Microsoft Exchange ADAM|Optional|
+

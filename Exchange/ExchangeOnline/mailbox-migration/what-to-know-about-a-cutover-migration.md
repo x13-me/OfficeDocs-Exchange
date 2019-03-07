@@ -1,24 +1,28 @@
 ---
-title: "What you need to know about a cutover email migration to Office 365"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/15/2018
-ms.audience: Admin
-ms.topic: conceptual
-f1_keywords:
-- 'O365E_ExchSetupMigrStepsCutover'
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: conceptual
+author: msdmaguire
+f1_keywords:
+- O365E_ExchSetupMigrStepsCutover
+ms.author: dmaguire
+ms.assetid: 961978ef-f434-472d-a811-1801733869da
+ms.date: 8/15/2018
+description: Learn what happens and what you need to do to prepare for a cutover migration to Office 365.
+title: What you need to know about a cutover email migration to Office 365
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - MBS150
 - BCS160
-ms.assetid: 961978ef-f434-472d-a811-1801733869da
-description: "Learn what happens and what you need to do to prepare for a cutover migration to Office 365."
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # What you need to know about a cutover email migration to Office 365
@@ -90,7 +94,7 @@ If you're comfortable setting up a migration to Office 365, here are the tasks t
 
 -  Set up Exchange Server by using the Exchange admin center.
 
-- Change your organization's MX record to point to Office 365 when the migration is complete. Your MX record is how other mail systems find the location of your email system. Changing your MX record allows other mail systems to begin to send email directly to the new mailboxes in Office 365. We provide instructions on how to do this for many DNS providers. To set up your public DNS servers, you need to change your organization's MX record to point to Office 365 if you choose to route all incoming Internet mail for your on-premises Exchange organization through Office 365.
+- Change your organization's MX record to point to Office 365 when the migration is complete. Your MX record is how other mail systems find the location of your email system. Changing your MX record allows other mail systems to begin to send email directly to the new mailboxes in Office 365. We provide instructions on how to do this for many DNS providers. To set up your public DNS servers, you need to change your organization's MX record to point to Office 365 if you choose to route all incoming internet mail for your on-premises Exchange organization through Office 365.
 
 If you're ready to begin a cutover migration, go to [Perform a cutover migration of email to Office 365](cutover-migration-to-office-365.md).
 
@@ -100,4 +104,5 @@ If you're ready to begin a cutover migration, go to [Perform a cutover migration
 [Ways to migrate email to Office 365](mailbox-migration.md)
 
 [Use PowerShell to perform a cutover migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=615253)
+
 

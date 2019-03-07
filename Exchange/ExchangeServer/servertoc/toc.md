@@ -324,6 +324,7 @@
 #### [DAC mode](../high-availability/database-availability-groups/dac-mode.md)
 #### [Database copies](../high-availability/database-availability-groups/database-copies.md)
 #### [AutoReseed](../high-availability/database-availability-groups/autoreseed.md)
+#### [MetaCacheDatabase setup](../high-availability/database-availability-groups/MetaCacheDatabase-setup.md)
 ### [Plan HA](../high-availability/plan-ha.md)
 ### [Deploy HA](../high-availability/deploy-ha.md)
 ### [Manage HA](../high-availability/manage-ha/manage-ha.md)

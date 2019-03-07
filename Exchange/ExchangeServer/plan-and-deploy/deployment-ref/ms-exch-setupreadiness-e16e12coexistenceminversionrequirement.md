@@ -1,17 +1,19 @@
 ---
-title: "Can't install Exchange 2016 or later in a forest that contains Exchange 2007 [E16E12CoexistenceMinVersionRequirement]"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 4/19/2018
-ms.audience: Developer
-ms.topic: reference
-f1_keywords:
-- 'ms.exch.setupreadiness.E16E12CoexistenceMinVersionRequirement'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Setup can't continue because the organization contains one or more Exchange 2007 servers.
+ms.topic: reference
+author: dstrome
+f1_keywords:
+- ms.exch.setupreadiness.E16E12CoexistenceMinVersionRequirement
+ms.author: dstrome
 ms.assetid: 4e1b9510-3188-43eb-9252-7c64cb2bc0e3
-description: "Setup can't continue because the organization contains one or more Exchange 2007 servers."
+ms.date: 4/19/2018
+title: Can't install Exchange 2016 or later in a forest that contains Exchange 2007 [E16E12CoexistenceMinVersionRequirement]
+ms.collection: exchange-server
+ms.audience: Developer
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Can't install Exchange 2016 or later in a forest that contains Exchange 2007 [E16E12CoexistenceMinVersionRequirement]
@@ -47,10 +49,10 @@ The coexistence (and therefore, upgrade) options for Exchange are described in t
 |Exchange 2013|Exchange 2019|
 
 When upgrading to Exchange 2010 or later, you can use the Exchange Deployment Assistant to help complete your deployment. For more information, see the following links:
-  
+
 - [Exchange 2010 Deployment Assistant](https://go.microsoft.com/fwlink/p/?LinkId=171086)
-    
+
 - [Exchange 2013 Deployment Assistant](https://go.microsoft.com/fwlink/p/?LinkId=277105)
-    
+
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
- 
+

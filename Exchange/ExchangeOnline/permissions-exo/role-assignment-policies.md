@@ -1,15 +1,19 @@
 ---
-title: "Role assignment policies in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.assetid:
-description: "Admins can learn about role assignment policies, and how to view, create, modify, remove, and assign them in Exchange Online."
+description: Admins can learn about role assignment policies, and how to view, create, modify, remove, and assign them in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
+ms.assetid: 
+ms.date: 
+title: Role assignment policies in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Role assignment policies in Exchange Online
@@ -397,3 +401,4 @@ To verify that you've successfully modified the role assignment policy assignmen
    ```
    $X | where {$_.RoleAssignmentPolicy -eq '<RoleAssignmentPolicyName>'}
    ```
+

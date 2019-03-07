@@ -1,15 +1,19 @@
 ---
-title: "Exchange auditing reports"
-ms.author: markjjo
-author: markjjo
-manager: scotv
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: Use audit logging to troubleshoot configuration issues by tracking specific changes made by administrators and to help you meet regulatory, compliance, and litigation requirements.
+ms.topic: overview
+author: markjjo
+ms.author: markjjo
 ms.assetid: 2b3e1529-1677-4564-be0b-ce22757ddc0d
-description: "Use audit logging to troubleshoot configuration issues by tracking specific changes made by administrators and to help you meet regulatory, compliance, and litigation requirements."
+ms.date: 7/11/2018
+title: Exchange auditing reports
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Exchange auditing reports
@@ -140,5 +144,6 @@ Run the following command to allow XML attachments in Outlook Web App.
 ```
 Set-OwaMailboxPolicy -Identity Default -AllowedFileTypes '.rpmsg','.xlsx','.xlsm','.xlsb','.tiff','.pptx','.pptm','.ppsx','.ppsm','.docx','.docm','.zip','.xls','.wmv','.wma','.wav','.vsd','.txt','.tif','.rtf','.pub','.ppt','.png','.pdf','.one','.mp3','.jpg','.gif','.doc','.bmp','.avi','.xml'
 ```
+
 
 

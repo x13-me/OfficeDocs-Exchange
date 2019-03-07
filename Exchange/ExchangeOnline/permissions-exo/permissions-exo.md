@@ -1,16 +1,19 @@
 ---
-title: "Permissions in Exchange Online"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Exchange Online in Office 365 includes a large set of predefined permissions, based on the Role Based Access Control (RBAC) permissions model, which you can use right away to easily grant permissions to your administrators and users. You can use the permissions features in Exchange Online so that you can get your new organization up and running quickly.
+ms.topic: article
+author: dstrome
+ms.author: dstrome
 ms.assetid: 3a219732-87e7-4f11-96bc-8edd2cc91926
+ms.date: 
+title: Permissions in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
 
-description: "Exchange Online in Office 365 includes a large set of predefined permissions, based on the Role Based Access Control (RBAC) permissions model, which you can use right away to easily grant permissions to your administrators and users. You can use the permissions features in Exchange Online so that you can get your new organization up and running quickly."
 ---
 
 # Permissions in Exchange Online
@@ -129,7 +132,7 @@ The following table lists the Office 365 roles and the Exchange Online role grou
 
 For a description of the Exchange Online role groups, see the table "Built-in role groups" in [Role groups](#role-groups).
 
-When you add a user to either the Global administrator or Password administrator Office 365 roles, the user is granted the rights provided by the respective Exchange Online role group. Other Office 365 roles don't have a corresponding Exchange Online role group and won't grant administrative permissions in Exchange Online. For more information about assigning an Office 365 role to a user, see [Assigning admin roles](https://go.microsoft.com/fwlink/p/?LinkId=293670).
+When you add a user to either the Global administrator or Password administrator Office 365 roles, the user is granted the rights provided by the respective Exchange Online role group. Other Office 365 roles don't have a corresponding Exchange Online role group and won't grant administrative permissions in Exchange Online. For more information about assigning an Office 365 role to a user, see [Assigning admin roles](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
 
 Users can be granted administrative rights in Exchange Online without adding them to Office 365 roles. This is done by adding the user as a member of an Exchange Online role group. When a user is added directly to an Exchange Online role group, they'll receive the permissions granted by that role group in Exchange Online. However, they won't be granted any permissions to other Office 365 components. They'll have administrative permissions only in Exchange Online. Users can be added to any of the role groups listed in the "Built-in role groups table" in [Role groups](#role-groups) with the exception of the Company Administrator and Help Desk Administrators role groups. For more information about adding a user directly to an Exchange Online role group, see [Work with role groups](#work-with-role-groups).
 
@@ -213,3 +216,4 @@ The following table contains links to topics that will help you learn about and 
 |[Role assignment policies in Exchange Online](role-assignment-policies.md)|Configure which features end-users have access to on their mailboxes using role assignment policies, view, create, modify, and remove role assignment policies, specify the default role assignment policy, and apply role assignment policies to mailboxes.|
 |[View Effective Permissions](https://technet.microsoft.com/library/ae6cb7cf-f998-44a6-a69a-02ad736c8260.aspx)|View who has permissions to administer Exchange Online features.|
 |[Feature permissions in Exchange Online](feature-permissions.md)|Learn more about the permissions required to manage Exchange Online features and services.|
+

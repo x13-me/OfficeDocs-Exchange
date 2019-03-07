@@ -1,15 +1,17 @@
 ---
-title: "Message rate limits and throttling"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how message rate limits affect mail flow and connections in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: fba87902-2a79-42ac-b394-46a9016f667e
-description: "Summary: Learn how message rate limits affect mail flow and connections in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/6/2018
+title: Message rate limits and throttling
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Message rate limits and throttling
@@ -41,7 +43,7 @@ The following table shows the message throttling options that are available on M
 |**Maximum connection rate per minute**: The maximum rate that connections are allowed to be opened with the Transport service.|1200|Cmdlet: **Set-TransportService** <br/> Parameter: _MaxConnectionRatePerMinute_|Not available|
 |**Maximum concurrent connections**: The maximum number of outbound connections that the Transport service can have open at a time.|1000 <br/> This value must be greater than or equal to the _MaxPerDomainOutboundConnections_ value.|Cmdlet: **Set-TransportService** <br/> Parameter: _MaxOutboundConnections_|**Servers** \> **Servers** \> **Properties** ![Edit icon](../media/ITPro_EAC_EditIcon.png) \> **Transport limits** section \> **Maximum concurrent connections**. <br/> **Note**: In the EAC, you can only set the values 100, 1000, 5000, or unlimited.|
 |**Maximum concurrent connections per domain**: The maximum number of outbound connections that the Transport service can have open to a single domain at a time.|20 <br/> This value must be less than or equal to the _MaxOutboundConnections_ value.|Cmdlet: **Set-TransportService** <br/> Parameter: _MaxPerDomainOutboundConnections_|**Servers** \> **Servers** \> **Properties** ![Edit icon](../media/ITPro_EAC_EditIcon.png) \> **Transport limits** section \> **Maximum concurrent connections per domain**. <br/> **Note**: In the EAC, you can only set the values 100, 1000, 5000, or unlimited.|
- 
+
 To see the values of these server message throttling settings, run the following command in the Exchange Management Shell:
 
 ```
@@ -60,7 +62,7 @@ The following table shows the message throttling options that are available on S
 |:-----|:-----|:-----|:-----|
 |**Connection inactivity time out**: The maximum amount of time that an open SMTP connection with a source messaging server can remain idle before the connection is closed.| `00:10:00` (10 minutes)|Cmdlet: **New-SendConnector** and **Set-SendConnector** <br/> Parameter: _ConnectionInactivityTimeOut_|Not available|
 |**Maximum messages per connection**: The maximum number of messages that can be sent over a single connection|20|Cmdlet: **New-SendConnector** and **Set-SendConnector** <br/> Parameter: _SmtpMaxMessagesPerConnection_|Not available|
- 
+
 To see the values of these Send connector throttling settings, run the following command in the Exchange Management Shell:
 
 ```
@@ -82,7 +84,7 @@ The following table shows the message throttling options that are available on R
 |**Message rate limit**: The maximum number of messages per minute that can be sent by a single source.| `unlimited` on the following default Receive connectors: <br/>• Default _\<ServerName\>_ in the Transport service on Mailbox servers. <br/>• Default Frontend _\<ServerName\>_ in the Front End Transport service on Mailbox servers. <br/>• Outbound Proxy Frontend _\<ServerName\>_ in the Front End Transport service on Mailbox servers. <br/> 5 on the following default Receive connectors: <br/>• Client Proxy _\<ServerName\>_ in the Transport service on Mailbox servers. <br/>• Client Frontend _\<ServerName\>_ in the Front End Transport service on Mailbox servers. <br/> 600 on the default Receive connector named Default internal Receive connector _\<ServerName\>_ on Edge Transport servers.|Cmdlet: **New-ReceiveConnector** and **Set-ReceiveConnector** <br/> Parameter: _MessageRateLimit_|Not available|
 |**Message rate source**: This indicates how the message submission rate is calculated. Valid values are: <br/> `User`: The rate is calculated for sending users (specified with the **MAIL FROM** SMTP command). <br/>• `IPAddress`: The rate is calculated for sending hosts. <br/>• `All`: The rate is calculated for both sending users and sending hosts.| `IPAddress` on the following default Receive connectors: <br/>• Default _\<ServerName\>_ in the Transport service on Mailbox servers. <br/>• Default Frontend _\<ServerName\>_ in the Front End Transport service on Mailbox servers. <br/>• Outbound Proxy Frontend _\<ServerName\>_ in the Front End Transport service on Mailbox servers. <br/>• Default internal Receive connector _\<ServerName\>_ on Edge Transport servers. <br/> `User` on the following default Receive connectors: <br/>• Client Proxy _\<ServerName\>_ in the Transport service on Mailbox servers. <br/>• Client Frontend _\<ServerName\>_ in the Front End Transport service on Mailbox servers.|Cmdlet: **New-ReceiveConnector** and **Set-ReceiveConnector** <br/> Parameter: _MessageRateSource_|Not available|
 |**Tarpit interval**: The amount of time to artificially delay SMTP responses to unauthenticated remote servers that appear to be abusing the connection. Authenticated connections are never delayed in this manner.|`00:00:05` (5 seconds)|Cmdlet: **New-ReceiveConnector** and **Set-ReceiveConnector** <br/> Parameter: _TarpitInterval_|Not available|
- 
+
 To see the values of these Receive connector message throttling settings, run the following command in the Exchange Management Shell:
 
 ```
@@ -103,5 +105,6 @@ For more information, see the following topics:
 - [Change User Throttling Settings for Specific Users](http://technet.microsoft.com/library/c5f834d6-189d-485e-9800-5e0066815ecf.aspx)
 
 - [Change User Throttling Settings for All Users in Your Organization](http://technet.microsoft.com/library/c45cacfc-768d-4605-9bb0-53e30273fe4d.aspx)
+
 
 

@@ -1,15 +1,19 @@
 ---
-title: "Create a custom management scope for In-Place eDiscovery searches"
-ms.author: markjjo
-author: markjjo
-manager: scotv
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can use a custom management scope to let specific people or groups use In-Place eDiscovery to search a subset of mailboxes in your Exchange Online organization. For example, you might want to let a discovery manager search only the mailboxes of users in a specific location or department. You can do this by creating a custom management scope. This custom management scope uses a recipient filter to control which mailboxes can be searched. Recipient filter scopes use filters to target specific recipients based on recipient type or other recipient properties.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: 1543aefe-3709-402c-b9cd-c11fe898aad1
-description: "You can use a custom management scope to let specific people or groups use In-Place eDiscovery to search a subset of mailboxes in your Exchange Online organization. For example, you might want to let a discovery manager search only the mailboxes of users in a specific location or department. You can do this by creating a custom management scope. This custom management scope uses a recipient filter to control which mailboxes can be searched. Recipient filter scopes use filters to target specific recipients based on recipient type or other recipient properties."
+ms.date: 7/11/2018
+title: Create a custom management scope for In-Place eDiscovery searches
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Create a custom management scope for In-Place eDiscovery searches
@@ -201,5 +205,6 @@ Here are some ways to verify if you've successfully implemented custom managemen
 - In Exchange Online, a custom management scope used for eDiscovery can't be used to search inactive mailboxes. This is because an inactive mailbox can't be a member of a distribution group. For example, let's say that a user is a member of a distribution group that was used to create a custom management scope for eDiscovery. Then that user leaves the organization and their mailbox is made inactive (by placing a Litigation Hold or In-Place hold on the mailbox and then deleting the corresponding Office 365 user account). The result is that the user is removed as a member from any distribution group, including the group that was used to create the custom management scope used for eDiscovery. If a discovery manager (who is a member of the role group that's assigned the custom management scope) tries to search the inactive mailbox, the search will fail. To search inactive mailboxes, a discover manager must be a member of the Discovery Management role group or any role group that has permissions to search the entire organization.
 
     For more information about inactive mailboxes, see [Inactive mailboxes in Exchange Online](https://technet.microsoft.com/library/2f2948c5-1c5a-4643-865c-b36e4ac1414b.aspx).
+
 
 

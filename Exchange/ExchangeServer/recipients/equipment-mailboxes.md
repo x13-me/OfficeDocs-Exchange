@@ -1,15 +1,17 @@
 ---
-title: "Manage equipment mailboxes"
-ms.author: serdars
-author: SerdarSoysal
-manager: scotv
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18
 description: "Summary: Learn how to create an Exchange equipment mailbox, which is a resource mailbox assigned to a resource that isn't location-specific."
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
+ms.assetid: e5f58b3a-83e1-4742-8846-85103a44ee18
+ms.date: 7/5/2018
+title: Manage equipment mailboxes
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Manage equipment mailboxes
@@ -119,7 +121,7 @@ Use the **General** section to view or change basic information about the resour
 
 - **Capacity**: Use this box to enter the maximum number of people who can use this resource, if applicable, For example, if the equipment mailbox corresponds to a compact car, you could enter **4**.
 
-Click **More options** to view or change these additional properties: 
+Click **More options** to view or change these additional properties:
 
 - **Organizational unit**: This read-only box displays the organizational unit (OU) that contains the account for the equipment mailbox. You have to use Active Directory Users and Computers to move the account to a different OU.
 
@@ -188,7 +190,7 @@ Use the **Contact Information** section to view or change the contact informatio
 
 Use the **Email Address** section to view or change the email addresses associated with the equipment mailbox. This includes the mailbox's primary SMTP address and any associated proxy addresses. The primary SMTP address (also known as the *reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types: 
+- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
@@ -267,5 +269,6 @@ To verify that you've successfully changed properties for an equipment mailbox, 
   ```
   Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'EquipmentMailbox')} | Get-CalendarProcessing | Format-List Identity,ScheduleOnlyDuringWorkHours
   ```
+
 
 

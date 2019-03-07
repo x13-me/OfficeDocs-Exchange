@@ -1,15 +1,19 @@
 ---
-title: "Manage remote domains in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to add, modify, and remove remote domains (message formatting settings for external domains) in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: d3dca7b0-c84c-429a-9698-0e92a95a0985
-description: "Admins can learn how to add, modify, and remove remote domains (message formatting settings for external domains) in Exchange Online."
+ms.date: 
+title: Manage remote domains in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage remote domains in Exchange Online
@@ -225,3 +229,4 @@ To verify that you've successfully removed a remote domain, do either of the fol
     ```
     Get-RemoteDomain
     ```
+

@@ -1,15 +1,19 @@
 ---
-title: "Procedures for Client Access Rules in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 6/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: Learn how to view, create, modify, delete, and test Client Access Rules in Exchange Online.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: a0e11307-3577-499f-b407-6fcfae576844
-description: "Summary: Learn how to view, create, modify, delete, and test Client Access Rules in Exchange Online."
+ms.date: 6/11/2018
+title: Procedures for Client Access Rules in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Procedures for Client Access Rules in Exchange Online
@@ -239,3 +243,4 @@ Test-ClientAccessRule -User julia@contoso.com -AuthenticationType BasicAuthentic
 ```
 
 For detailed syntax and parameter information, see [Test-ClientAccessRule](https://technet.microsoft.com/library/d17ee6d8-e5f4-4b5d-977c-85e8dadeaf48.aspx).
+

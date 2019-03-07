@@ -1,15 +1,19 @@
 ---
-title: "Address lists in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn about the different types of address lists that are available in Exchange Online.
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
-description: "Admins can learn about the different types of address lists that are available in Exchange Online."
+ms.date: 
+title: Address lists in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Address lists in Exchange Online
@@ -90,3 +94,4 @@ Although address lists are useful tools for users, poorly planned address lists 
 - Use a naming convention and location hierarchy for your address lists so users can immediately tell what the list is for (which recipients are included in the list). If you have difficulty naming your address lists, create fewer lists and remind users that they can find anyone in your organization by using the GAL.
 
 For detailed instructions about creating address lists in Exchange Server, see [Address list procedures in Exchange Online](address-list-procedures.md).
+

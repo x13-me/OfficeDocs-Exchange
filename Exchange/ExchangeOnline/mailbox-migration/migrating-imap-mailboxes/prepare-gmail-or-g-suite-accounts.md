@@ -1,18 +1,19 @@
 ---
-title: "Prepare your Gmail or G Suite account for connecting to Outlook and Office 365"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/15/2018
-ms.audience: Admin
-ms.topic: article
-f1_keywords:
-- 'O365P_MigrationsIMAPGmailAppPass'
-- 'O365M_MigrationsIMAPGmailAppPass'
-- 'O365E_MigrationsIMAPGmailAppPass'
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365_Setup
+ms.topic: article
+author: msdmaguire
+f1_keywords:
+- O365P_MigrationsIMAPGmailAppPass
+- O365M_MigrationsIMAPGmailAppPass
+- O365E_MigrationsIMAPGmailAppPass
+ms.author: dmaguire
+ms.assetid: b650957d-4446-425a-ab78-01b89cbead93
+ms.date: 8/15/2018
+description: Before you connect to your Gmail account from Outlook on the web, or add a Gmail account to Outlook, you need to prepare your Gmail account. You need to turn on 2-step verification for Gmail and then create an app password that Office 365 will use with your Gmail address to make the connection.
+title: Prepare your Gmail or G Suite account for connecting to Outlook and Office 365
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - ZOL150
 - MET150
@@ -25,8 +26,11 @@ search.appverid:
 - MPP160
 - ZOL160
 - BCS160
-ms.assetid: b650957d-4446-425a-ab78-01b89cbead93
-description: "Before you connect to your Gmail account from Outlook on the web, or add a Gmail account to Outlook, you need to prepare your Gmail account. You need to turn on 2-step verification for Gmail and then create an app password that Office 365 will use with your Gmail address to make the connection."
+ms.audience: Admin
+ms.custom: Adm_O365_Setup
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Prepare your Gmail or G Suite account for connecting to Outlook and Office 365
@@ -131,5 +135,6 @@ If you need the Gmail connection for a brief time only, for example for an IMAP 
 [Migrate email and contacts to Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e)
 
 [Ways to migrate multiple email accounts to Office 365](../mailbox-migration.md)
+
 
 

@@ -1,14 +1,15 @@
 ---
-title: "Convert Exchange 2003 mailboxes to mail-enabled users"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/15/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 5296a30b-00cb-44be-8855-ed9d14d93e17
+ms.date: 8/15/2018
+description: Convert Exchange 2007 mailboxes to mail enabled users.
+title: Convert Exchange 2003 mailboxes to mail-enabled users
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
@@ -18,8 +19,11 @@ search.appverid:
 - GPA150
 - GEA150
 - BCS160
-ms.assetid: 5296a30b-00cb-44be-8855-ed9d14d93e17
-description: "Convert Exchange 2007 mailboxes to mail enabled users."
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Convert Exchange 2003 mailboxes to mail-enabled users
@@ -550,5 +554,6 @@ Instead of using the input CSV file to convert a batch of mailboxes, you can run
   - targetAddress
 
     <sup>*</sup>As previously explained, the Exchange2003MBtoMEU.vbs script retains the **msExchMailboxGuid** value from the on-premises mailbox. To enable off-boarding from Office 365 to Exchange 2003, you have to replace the value for the **msExchMailboxGuid** property on the MEU with the Guid from the cloud-based mailbox.
+
 
 

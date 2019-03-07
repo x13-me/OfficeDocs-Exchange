@@ -1,15 +1,19 @@
 ---
-title: "Use batch migration to migrate legacy public folders to Office 365 and Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.collection: Strat_EX_EXOBlocker
+ms.author: dmaguire
+manager: serdars
+ms.topic: article
+author: msdmaguire
+ms.service: exchange-online
 ms.assetid: e8ab9309-7d12-4f02-bfc4-14e61a373958
-description: "Summary: Use these procedures to move your Exchange 2010 public folders to Office 365."
+ms.collection:
+- Strat_EX_EXOBlocker
+- exchange-online
+- M365-email-calendar
+description: 'Summary: Use these procedures to move your Exchange 2010 public folders to Office 365.'
+ms.audience: ITPro
+title: Use batch migration to migrate legacy public folders to Office 365 and Exchange Online
+
 ---
 
 # Use batch migration to migrate legacy public folders to Office 365 and Exchange Online
@@ -114,7 +118,7 @@ Perform the following prerequisite steps before you begin the migration.
 
 #### Prerequisite steps on the legacy Exchange server
 
-1. On the legacy Exchange server, make sure that routing to the mail-enabled public folders that will exist in Office 365 or Exchange Online continues to work until all DNS caches over the Internet are updated to point to the Office 365 or Exchange Online DNS where your organization now resides. To do this, run the following command to configure an accepted domain with a well-known name that will properly route email messages to the Office 365 or Exchange Online domain.
+1. On the legacy Exchange server, make sure that routing to the mail-enabled public folders that will exist in Office 365 or Exchange Online continues to work until all DNS caches over the internet are updated to point to the Office 365 or Exchange Online DNS where your organization now resides. To do this, run the following command to configure an accepted domain with a well-known name that will properly route email messages to the Office 365 or Exchange Online domain.
 
     ```
     New-AcceptedDomain -Name "PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99" -DomainName contoso.onmicrosoft.com -DomainType InternalRelay
@@ -622,3 +626,4 @@ If you still want to migrate your public folders by using PST files, follow thes
 
 > [!CAUTION]
 >  If you've already started a PST migration and have run into an issue where the primary mailbox is full, you have two options for recovering the PST migration: >  Wait for the auto-split to move the data from the primary mailbox. This may take up to two weeks. However, all the public folders in a completely filled public folder mailbox won't be able to receive new content until the auto-split completes. > [Create a public folder mailbox](create-public-folder-mailbox.md) and then use the **[New-PublicFolder]** cmdlet with the _Mailbox_ parameter to create the remaining public folders in the secondary public folder mailbox. This example creates a new public folder named PF201 in the secondary public folder mailbox.
+

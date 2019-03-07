@@ -1,15 +1,17 @@
 ---
-title: "Connect or restore a deleted mailbox"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to use the Exchange admin center (EAC) or the Exchange Management Shell to connect a deleted mailbox to an Active Directory user account in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: a5e6ac44-5901-4eab-9017-c6fae80a0f83
-description: "Summary: Learn how to use the Exchange admin center (EAC) or the Exchange Management Shell to connect a deleted mailbox to an Active Directory user account in Exchange Server 2016 or Exchange Server 2019."
+ms.date:
+title: Connect or restore a deleted mailbox
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Connect or restore a deleted mailbox
@@ -88,7 +90,7 @@ Use the **Connect-Mailbox** cmdlet in the Exchange Management Shell to connect a
 
 > [!NOTE]
 >  As previously stated, when you connect linked, resource, or shared mailboxes, the Active Directory user account that you're linking the mailbox to must be disabled.
-  
+
 This example connects a deleted user mailbox to a user account that isn't mail enabled. The _Identity_ parameter specifies the display name of the deleted mailbox retained in the mailbox database named MBXDB01. The _User_ parameter specifies the Active Directory user account to connect the mailbox to.
 
 ```
@@ -186,3 +188,4 @@ For more information, see:
 - [Get-MailboxRestoreRequest](http://technet.microsoft.com/library/6e2a5296-7820-4266-a96f-609588390a18.aspx)
 
 - [Get-MailboxRestoreRequestStatistics](http://technet.microsoft.com/library/b28d5835-1f8f-4cd9-8f72-9d592adef3d9.aspx)
+

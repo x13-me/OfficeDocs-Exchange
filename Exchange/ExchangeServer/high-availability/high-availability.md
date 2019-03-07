@@ -1,15 +1,17 @@
 ---
-title: "High availability and site resilience"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the high availability and site resilience capabilities available in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: b1704c87-5f5c-464e-9dc5-1bb1bdf9ac2a
-description: "Summary: Learn about the high availability and site resilience capabilities available in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/9/2018
+title: High availability and site resilience
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # High availability and site resilience
@@ -23,83 +25,83 @@ Exchange Server enables customers of all sizes and in all segments to economical
 
 The following key terms are important to understand high availability or site resilience:
 
- *Active Manager* 
+ *Active Manager*
 
 > An internal Exchange component which runs inside the Microsoft Exchange Replication service that's responsible for failure monitoring and corrective action through failover within a database availability group (DAG).
 
- *AutoDatabaseMountDial* 
+ *AutoDatabaseMountDial*
 
 > A property setting of a Mailbox server that determines whether a passive database copy will automatically mount as the new active copy, based on the number of log files missing by the copy being mounted.
 
- *Continuous replication - block mode* 
+ *Continuous replication - block mode*
 
 > In block mode, as each update is written to the active database copy's active log buffer, it's also shipped to a log buffer on each of the passive mailbox copies in block mode. When the log buffer is full, each database copy builds, inspects, and creates the next log file in the generation sequence.
 
- *Continuous replication - file mode* 
+ *Continuous replication - file mode*
 
 > In file mode, closed transaction log files are pushed from the active database copy to one or more passive database copies.
 
- *Database availability group* 
+ *Database availability group*
 
 > A group of up to 16 Exchange servers that hosts a set of replicated databases.
 
- *Database mobility* 
+ *Database mobility*
 
 > The ability of an Exchange Server mailbox database to be replicated to and mounted on other Exchange servers.
 
- *Datacenter* 
+ *Datacenter*
 
 > Typically this refers to an Active Directory site; however, it can also refer to a physical site. In the context of this documentation, datacenter equals Active Directory site.
 
- *Datacenter Activation Coordination mode* 
+ *Datacenter Activation Coordination mode*
 
 > A property of the DAG setting that, when enabled, forces the Microsoft Exchange Replication service to acquire permission to mount databases at startup.
 
- *Disaster recovery* 
+ *Disaster recovery*
 
 > Any process used to manually recover from a failure. This can be a failure that affects a single item, or it can be a failure that affects an entire physical location.
 
- *Exchange third-party replication API* 
+ *Exchange third-party replication API*
 
 > An Exchange-provided API that enables use of third-party synchronous replication for a DAG instead of continuous replication.
 
- *High availability* 
+ *High availability*
 
 > A solution that provides service availability, data availability, and automatic recovery from failures that affect the service or data (such as a network, storage, or server failure).
 
- *Incremental deployment* 
+ *Incremental deployment*
 
 > The ability to deploy high availability and site resilience after Exchange Server is installed.
 
- *Lagged mailbox database copy* 
+ *Lagged mailbox database copy*
 
 > A passive mailbox database copy that has a log replay lag time greater than zero.
 
- *Mailbox database copy* 
+ *Mailbox database copy*
 
 > A mailbox database (.edb file and logs), which is either active or passive.
 
- *Mailbox resiliency* 
+ *Mailbox resiliency*
 
 > The name of a unified high availability and site resilience solution in Exchange Server.
 
- *Managed availability* 
+ *Managed availability*
 
 > A set of internal processes made up of probes, monitors, and responders that incorporate monitoring and high availability across all server roles and all protocols.
 
- *\*over* (pronounced "star over") 
+ *\*over* (pronounced "star over")
 
 > Short for *switchovers* and *failovers*. A switchover is a manual activation of one or more database copies. A failover is an automatic activation of one or more database copies after a failure.
 
- *Safety Net* 
+ *Safety Net*
 
 > Formerly known as transport dumpster, this is a feature of the transport service that stores a copy of all messages for _X_ days. The default setting is 2 days.
 
- *Shadow redundancy* 
+ *Shadow redundancy*
 
 > A transport server feature that provides redundancy for messages for the entire time they're in transit.
 
- *Site resilience* 
+ *Site resilience*
 
 > A configuration that extends the messaging infrastructure to multiple Active Directory sites to provide operational continuity for the messaging system in the event of a failure affecting one of the sites.
 
@@ -175,5 +177,6 @@ The following table contains links to topics that will help you learn about and 
 |[Managing high availability and site resilience](manage-ha/manage-ha.md) <br/> |Learn about DAG management tasks, switchovers and failovers, and maintenance mode.  <br/> |
 |[Monitor database availability groups](manage-ha/monitor-dags.md) <br/> |Learn about the built-in cmdlets and scripts for monitoring DAGs and database copies.  <br/> |
 |[Backup, restore, and disaster recovery](disaster-recovery/disaster-recovery.md) <br/> |Learn about backing up and restoring Exchange databases, recovery databases, and server recovery.  <br/> |
- 
+
+
 

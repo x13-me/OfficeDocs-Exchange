@@ -1,15 +1,19 @@
 ---
-title: "Create a global address list in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to create of global address lists (GALs) in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 59e4955a-8999-4d17-be9f-23a41a23b929
-description: "Admins can learn how to create of global address lists (GALs) in Exchange Online."
+ms.date: 
+title: Create a global address list in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Create a global address list in Exchange Online
@@ -70,3 +74,4 @@ To verify that you've successfully created a GAL, replace _\<GAL Name\>_ with th
 ```
 Get-GlobalAddressList -Identity "<GAL Name>" | Format-List Name,RecipientFilterType,RecipientFilter,IncludedRecipients,Conditional*
 ```
+

@@ -1,15 +1,19 @@
 ---
-title: "Accessing public folders with Outlook 2016 for Mac"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 5/19/2017
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: The most recent supported Exchange topologies that allow users to access public folders with Outlook 2016 for Mac.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: bc9b8226-bd8b-4edc-882b-4f19cfe118eb
-description: "Summary: The most recent supported Exchange topologies that allow users to access public folders with Outlook 2016 for Mac."
+ms.date: 5/19/2017
+title: Accessing public folders with Outlook 2016 for Mac
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Accessing public folders with Outlook 2016 for Mac
@@ -47,5 +51,6 @@ The following articles describe how to deploy public folders in your Exchange or
 - [Configure Exchange 2013 public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md)
 
 - [Configure Exchange Online public folders for a hybrid deployment](set-up-exo-hybrid-public-folders.md)
+
 
 

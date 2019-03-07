@@ -1,15 +1,19 @@
 ---
-title: "Use a screen reader to identify your admin role in the Exchange admin center"
-ms.author: v-maleo
-author: maggsl
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: A11y_UseSR
+ms.topic: article
+author: maggsl
+ms.author: v-maleo
 ms.assetid: fab999d3-2c8d-481d-be3a-d684c6402768
-description: "Admins can learn how to use a screen reader to view admin role groups in the Exchange admin center (EAC) in Exchange Online."
+ms.date: 
+description: Admins can learn how to use a screen reader to view admin role groups in the Exchange admin center (EAC) in Exchange Online.
+title: Use a screen reader to identify your admin role in the Exchange admin center
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.custom: A11y_UseSR
+ms.service: exchange-online
+
 ---
 
 # Use a screen reader to identify your admin role in the Exchange admin center
@@ -47,3 +51,4 @@ To complete administrative tasks in the Exchange admin center (EAC) in Exchange 
    - If you're using JAWS, to hear the description of the admin role group, press the Down Arrow key, and then, to hear the rest of the text in the details pane, press Alt+Down Arrow.
 
 8. If you do not hear your name among the members, you have not been assigned the appropriate role to complete your task. Contact your Office 365 administrator.
+

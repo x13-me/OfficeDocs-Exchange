@@ -1,15 +1,19 @@
 ---
-title: "Assign eDiscovery permissions in Exchange"
-ms.author: markjjo
-author: markjjo
-manager: scotv
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: If you want users to be able to use Microsoft Exchange Server In-Place eDiscovery, you must first authorize them by adding them to the Discovery Management role group. Members of the Discovery Management role group have Full Access mailbox permissions for the Discovery mailbox that's created by Exchange Setup.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: 729e09d8-614b-431f-ae04-ae41fb4c628e
-description: "If you want users to be able to use Microsoft Exchange Server In-Place eDiscovery, you must first authorize them by adding them to the Discovery Management role group. Members of the Discovery Management role group have Full Access mailbox permissions for the Discovery mailbox that's created by Exchange Setup."
+ms.date: 7/11/2018
+title: Assign eDiscovery permissions in Exchange
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Assign eDiscovery permissions in Exchange
@@ -79,5 +83,6 @@ Get-RoleGroupMember -Identity "Discovery Management"
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+
 
 

@@ -1,14 +1,15 @@
 ---
-title: "Convert Exchange 2007 mailboxes to mail-enabled users"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/15/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: a1f79f3c-4967-4a15-8b3a-f4933aac0c34
+ms.date: 8/15/2018
+description: Convert Exchange 2007 mailboxes to mail enabled users
+title: Convert Exchange 2007 mailboxes to mail-enabled users
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
@@ -17,8 +18,11 @@ search.appverid:
 - GPA150
 - GEA150
 - BCS160
-ms.assetid: a1f79f3c-4967-4a15-8b3a-f4933aac0c34
-description: "Convert Exchange 2007 mailboxes to mail enabled users"
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Convert Exchange 2007 mailboxes to mail-enabled users
@@ -315,5 +319,6 @@ Follow these steps to complete the process.
   - proxyAddresses
 
   - targetAddress
+
 
 

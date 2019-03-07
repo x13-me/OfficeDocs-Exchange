@@ -1,15 +1,19 @@
 ---
-title: "Update the public folder hierarchy"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You only need to update the public folder hierarchy if you want to manually invoke the hierarchy synchronizer and the mailbox assistant. Both these are invoked at least once every 24 hours for each public folder mailbox in the organization. The hierarchy synchronizer is invoked every 15 minutes if any users are logged on to a secondary mailbox through Microsoft Outlook or a Microsoft Exchange Web Services client.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a7b2fb51-0207-4d7d-938d-466ae110bb90
-description: "You only need to update the public folder hierarchy if you want to manually invoke the hierarchy synchronizer and the mailbox assistant. Both these are invoked at least once every 24 hours for each public folder mailbox in the organization. The hierarchy synchronizer is invoked every 15 minutes if any users are logged on to a secondary mailbox through Microsoft Outlook or a Microsoft Exchange Web Services client."
+ms.date: 6/24/2018
+title: Update the public folder hierarchy
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Update the public folder hierarchy
@@ -44,5 +48,6 @@ This example updates all public folder mailboxes and suppresses the command's ou
 ```
 Get-Mailbox -PublicFolder | Update-PublicFolderMailbox -InvokeSynchronizer -SuppressStatus
 ```
+
 
 

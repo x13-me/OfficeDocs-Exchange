@@ -1,19 +1,21 @@
 ---
-title: "Address lists in Exchange Server"
-ms.author: chrisda
-author: chrisda
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
+description: 'Summary: Learn about address lists and global address lists (GALs) how administrators can use them to organize recipients in Exchange Server 2016 and Exchange Server 2019.'
 localization_priority: Normal
+ms.author: chrisda
+ms.topic: article
+author: chrisda
+ms.prod: exchange-server-it-pro
 ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
-description: "Summary: Learn about address lists and global address lists (GALs) how administrators can use them to organize recipients in Exchange Server 2016 and Exchange Server 2019."
+ms.collection: exchange-server
+ms.date:
+ms.audience: ITPro
+title: Address lists in Exchange Server
+
 ---
 
 # Address lists in Exchange Server
 
-An *address list* is a collection of mail-enabled recipient objects from Active Directory. Address lists are based on recipient filters, and are basically unchanged from Exchange 2010. You can filter by recipient type (for example, mailboxes and mail contacts), recipient properties (for example, Company or State or Province), or both. Address lists aren't static; they're updated dynamically. When you create or modify recipients in your organization, they're automatically added to the appropriate address lists. These are the different types of address lists that are available: 
+An *address list* is a collection of mail-enabled recipient objects from Active Directory. Address lists are based on recipient filters, and are basically unchanged from Exchange 2010. You can filter by recipient type (for example, mailboxes and mail contacts), recipient properties (for example, Company or State or Province), or both. Address lists aren't static; they're updated dynamically. When you create or modify recipients in your organization, they're automatically added to the appropriate address lists. These are the different types of address lists that are available:
 
 - **Global address lists (GALs)**: The built-in GAL that's automatically created by Exchange includes every mail-enabled object in the Active Directory forest. You can create additional GALs to separate users by organization or location, but a user can only see and use one GAL.
 
@@ -37,7 +39,7 @@ Recipient filters identify the recipients that are included in address lists and
 |:-----|:-----|:-----|:-----|
 |Precanned recipient filters|**Address lists**: Exchange admin center (EAC) and the Exchange Management Shell <br/><br/> **GALs**: Exchange Management Shell only|Limited to: <br/>• Recipient type (All recipient types or any combination of user mailboxes, resource mailboxes, mail contacts, mail users, and groups) <br/>• Company <br/>• Custom Attribute 1 to 15 <br/>• Department <br/>• State or Province|Property values require an exact match. Wildcards and partial matches aren't supported. For example, "Sales" doesn't match the value "Sales and Marketing". <br/><br/> Multiple values of the same property always use the **or** operator. For example, "Department equals Sales or Department equals Marketing". <br/><br/> Multiple properties always use the **and** operator. For example, "Department equals Sales and Company equals Contoso".|
 |Custom recipient filters|Exchange Management Shell only|You can use virtually any available recipient attributes. For more information, see [Filterable Properties for the -RecipientFilter Parameter](http://technet.microsoft.com/library/cf78aca5-6699-485c-9b15-e0adba252176.aspx).|You use OPATH filter syntax to specify any available Windows PowerShell filter operators. Wildcards and partial matches are supported.|
- 
+
  **Notes**:
 
 - You can't used precanned filters and customized filters at the same time.
@@ -76,7 +78,7 @@ By default, Exchange comes with five built-in address lists and one GAL. These a
 |All Users|Address list|Includes all user mailboxes, linked mailboxes, remote mailboxes (Office 365 mailboxes), shared mailboxes, room mailboxes, equipment mailboxes, and mail users in the organization. To learn more about these recipient types, see [Recipients](../../recipients/recipients.md).|`{((Alias -ne $null) -and (((((((ObjectCategory -like 'person') -and (ObjectClass -eq 'user') -and (-not(Database -ne $null)) -and (-not(ServerLegacyDN -ne $null)))) -or (((ObjectCategory -like 'person') -and (ObjectClass -eq 'user') -and (((Database -ne $null) -or (ServerLegacyDN -ne $null))))))) -and (-not(RecipientTypeDetailsValue -eq 'GroupMailbox')))))}`|
 |Default Global Address List|GAL|Includes all mail-enabled recipient objects in the organization (users, contacts, groups, dynamic distribution groups, and public folders.|`{((Alias -ne $null) -and (((ObjectClass -eq 'user') -or (ObjectClass -eq 'contact') -or (ObjectClass -eq 'msExchSystemMailbox') -or (ObjectClass -eq 'msExchDynamicDistributionList') -or (ObjectClass -eq 'group') -or (ObjectClass -eq 'publicFolder'))))}`|
 |Public Folders|Address list|Includes all mail-enabled public folders in your organization. Access permissions determine who can view and use public folders. For more information about public folders, see [Public Folders](http://technet.microsoft.com/library/94c4fb69-9234-4b34-8c1c-da2a0a11da65.aspx).|`{Alias -ne $null -and ObjectCategory -like 'publicFolder'}`|
- 
+
 ## Custom address lists
 
 An Exchange organization might contain thousands of recipients, so the built-in address lists could become quite large. To prevent this, you can create custom address lists to help users find what they're looking for.
@@ -110,3 +112,4 @@ After you create or modify an address list, you need to update the membership.
 If the address list contains a large number of recipients (our recommendation is more than 3000), you should use the Exchange Management Shell to update the address list (not the EAC). For more information, see [Update address lists](address-list-procedures.md#UpdateAddressList).
 
 To update a GAL, you always need to use the Exchange Management Shell. For more information, see [Use the Exchange Management Shell to update global address lists](address-list-procedures.md#UpdateGAL).
+

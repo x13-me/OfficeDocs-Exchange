@@ -1,15 +1,19 @@
 ---
-title: "Data loss prevention"
-ms.author: stephow
-author: stephow-msft
-manager: scotv
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn about DLP policies in Exchange Server and Exchange Online, including what they contain and how to test them. You'll also learn about a new feature in Exchange DLP.
+ms.topic: overview
+author: stephow-msft
+ms.author: stephow
 ms.assetid: 7c8ed3c1-ca91-4d9b-b16b-0a2b8ac89730
-description: "Learn about DLP policies in Exchange Server and Exchange Online, including what they contain and how to test them. You'll also learn about a new feature in Exchange DLP."
+ms.date: 7/11/2018
+title: Data loss prevention
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Data loss prevention
@@ -95,3 +99,4 @@ Exchange Online
 - [DLP Procedures](https://technet.microsoft.com/library/925290cc-f3b4-401e-b6c7-9a216a726f17.aspx)
 
 - [DLP policy detection reports](https://technet.microsoft.com/library/84295dda-5bf7-4fa5-a1ee-3f761501cfe8.aspx)
+

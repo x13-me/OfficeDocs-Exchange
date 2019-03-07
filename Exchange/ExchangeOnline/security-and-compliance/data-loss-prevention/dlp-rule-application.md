@@ -1,15 +1,19 @@
 ---
-title: "How DLP rules are applied to evaluate messages"
-ms.author: stephow
-author: stephow-msft
-manager: laurawi
-ms.date: 3/9/2015
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how data loss prevention (DLP) rules evaluate messages
+ms.topic: article
+author: stephow-msft
+ms.author: stephow
 ms.assetid: 1ac77020-26ff-410c-ab09-4f28a99d67a1
-description: "Learn how data loss prevention (DLP) rules evaluate messages"
+ms.date: 3/9/2015
+title: How DLP rules are applied to evaluate messages
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # How DLP rules are applied to evaluate messages
@@ -135,5 +139,6 @@ $rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_cla
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
 
 [Exchange Online PowerShell](https://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx)
+
 
 

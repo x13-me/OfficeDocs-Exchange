@@ -1,15 +1,19 @@
 ---
-title: "Add retention tags to or remove retention tags from a retention policy"
-ms.author: markjjo
-author: markjjo
-manager: scotv
-ms.date: 6/23/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can add retention tags to a retention policy when the policy is created or any time thereafter. For details about how to create a retention policy, including how to simultaneously add retention tags, see Create a Retention Policy.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: 3a5196ce-2764-453d-9bc1-5ec22d06b40d
-description: "You can add retention tags to a retention policy when the policy is created or any time thereafter. For details about how to create a retention policy, including how to simultaneously add retention tags, see Create a Retention Policy."
+ms.date: 6/23/2018
+title: Add retention tags to or remove retention tags from a retention policy
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Add retention tags to or remove retention tags from a retention policy
@@ -93,5 +97,6 @@ This example use the **Get-RetentionPolicy** cmdlet to retrieve retention tags a
 ```
 (Get-RetentionPolicy "Default MRM Policy").RetentionPolicyTagLinks | Format-Table name
 ```
+
 
 

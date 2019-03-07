@@ -1,15 +1,19 @@
 ---
-title: "Use a screen reader to work with mobile clients in the Exchange admin center in Exchange Online"
-ms.author: v-maleo
-author: maggsl
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: A11y_UseSR
+ms.topic: article
+author: maggsl
+ms.author: v-maleo
 ms.assetid: 194c5bf8-845c-4804-82dd-e950ee74dfcf
-description: "Admins can learn how to use a screen reader to manage mobile devices in the Exchange admin center (EAC) in Exchange Online."
+ms.date: 
+description: Admins can learn how to use a screen reader to manage mobile devices in the Exchange admin center (EAC) in Exchange Online.
+title: Use a screen reader to work with mobile clients in the Exchange admin center in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.custom: A11y_UseSR
+ms.service: exchange-online
+
 ---
 
 # Use a screen reader to work with mobile clients in the Exchange admin center in Exchange Online
@@ -117,3 +121,4 @@ With Outlook Web App, users can access their Exchange mailbox from almost any we
 8. Press the Tab key about 10 times until you hear "Show link." Press the Tab key once more. You hear "Enable link." Press Enter.
 
 9. An alert asks "Are you sure you want to enable Exchange ActiveSync for all the selected recipients?" With the focus on the **OK** button, press Enter.
+

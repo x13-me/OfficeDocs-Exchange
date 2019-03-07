@@ -1,15 +1,19 @@
-﻿---
-title: "Mailbox plans in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
+---
 localization_priority: Normal
-ms.assetid:
-description: "Admins can learn about mailbox plans and how view, modify, and set the default mailbox plan in Exchange Online."
+description: Admins can learn about mailbox plans and how view, modify, and set the default mailbox plan in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
+ms.assetid: 
+ms.date: 
+title: Mailbox plans in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Mailbox plans in Exchange Online
@@ -221,3 +225,4 @@ To verify that you've successfully modified a mailbox plan, use any of the follo
    ```
    Get-CasMailbox -Identity "<MailboxIdentity>" | Format-List ActiveSyncEnabled,ImapEnabled,PopEnabled,OwaMailboxPolicy
    ```
+

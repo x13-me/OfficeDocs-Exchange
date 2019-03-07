@@ -1,15 +1,19 @@
 ---
-title: "Default Retention Policy in Exchange Online and Exchange Server"
-ms.author: markjjo
-author: markjjo
-manager: scotv
-ms.date: 3/9/2015
-ms.audience: Admin
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: Exchange creates the retention policy Default MRM Policy in your Exchange Online and on-premises Exchange organization. The policy is automatically applied to new users in Exchange Online. In on-premises organizations, the policy is applied when you create an archive for the mailbox. You can change the retention policy applied to a user at any time.
+ms.topic: overview
+author: markjjo
+ms.author: markjjo
 ms.assetid: bcf31b2d-463b-4623-b488-c8ac40f14f62
-description: "Exchange creates the retention policy Default MRM Policy in your Exchange Online and on-premises Exchange organization. The policy is automatically applied to new users in Exchange Online. In on-premises organizations, the policy is applied when you create an archive for the mailbox. You can change the retention policy applied to a user at any time."
+ms.date: 3/9/2015
+title: Default Retention Policy in Exchange Online and Exchange Server
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: Admin
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Default Retention Policy in Exchange Online and Exchange Server
@@ -54,5 +58,6 @@ The following table lists the default retention tags linked to the Default MRM P
 - The Default MRM Policy doesn't include a DPT to automatically delete items (but it does contain personal tags with the delete retention action that users can apply to mailbox items). If you want to automatically delete items after a specified period, you can create a DPT with the required delete action and add it to the policy. For details, see [Create a Retention Policy](create-a-retention-policy.md) and [Add retention tags to or remove retention tags from a retention policy](add-or-remove-retention-tags.md).
 
 - Retention policies are applied to mailbox users. The same policy applies to the user's mailbox and archive.
+
 
 

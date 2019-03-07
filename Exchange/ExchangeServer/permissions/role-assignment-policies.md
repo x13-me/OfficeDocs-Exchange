@@ -1,15 +1,17 @@
 ---
-title: "Manage role assignment policies"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to manage and customize role assignment policies in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: dstrome
+ms.author: dstrome
 ms.assetid: f93d502e-5df4-4ba0-b68d-01a17ccffb4d
-description: "Summary: Learn how to manage and customize role assignment policies in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/5/2018
+title: Manage role assignment policies
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage role assignment policies
@@ -130,7 +132,7 @@ In the EAC, you can view the list of assignment policies and the roles assigned 
 
 You can view a list of all the assignment policies in your organization by not specifying any assignment policies when you run the **Get-RoleAssignmentPolicy** cmdlet.
 
-This procedure makes use of pipelining and the **Format-Table** cmdlet. For more information about these concepts, see the following topics: 
+This procedure makes use of pipelining and the **Format-Table** cmdlet. For more information about these concepts, see the following topics:
 
 - [Pipelining](http://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
 
@@ -160,7 +162,7 @@ For detailed syntax and parameter information, see [Get-Mailbox](http://technet.
 
 You can view the details of a specific assignment policy by using the **Get-RoleAssignmentPolicy** cmdlet and piping the output to the **Format-List** cmdlet.
 
-This procedure makes use of pipelining and the **Format-List** cmdlet. For more information about these concepts, see the following topics: 
+This procedure makes use of pipelining and the **Format-List** cmdlet. For more information about these concepts, see the following topics:
 
 - [Pipelining](http://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
 
@@ -184,7 +186,7 @@ For detailed syntax and parameter information, see [Get-Mailbox](http://technet.
 
 You can find the default assignment policy by piping the output of the **Get-RoleAssignmentPolicy** cmdlet to the **Where** cmdlet. With the **Where** cmdlet, filter the data returned to display only the assignment policy that has its _IsDefault_ property set to `$True`.
 
-This procedure makes use of pipelining and the **Where** cmdlet. For more information about these concepts, see the following topics: 
+This procedure makes use of pipelining and the **Where** cmdlet. For more information about these concepts, see the following topics:
 
 - [Pipelining](http://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
 
@@ -202,7 +204,7 @@ For detailed syntax and parameter information, see [Get-Mailbox](http://technet.
 
 You can find all the mailboxes assigned a specific assignment policy by piping the output of the **Get-Mailbox** cmdlet to the **Where** cmdlet. With the **Where** cmdlet, filter the data returned to display only the mailboxes that have their _RoleAssignmentPolicy_ property set to the assignment policy name you specify.
 
-This procedure makes use of pipelining and the **Where** cmdlet. For more information about these concepts, see the following topics: 
+This procedure makes use of pipelining and the **Where** cmdlet. For more information about these concepts, see the following topics:
 
 - [Pipelining](http://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
 
@@ -312,5 +314,6 @@ Get-ManagementRoleAssignment -RoleAssignee "Seattle Users" -Role MyVoicemail | R
 ```
 
 For detailed syntax and parameter information, see [Remove-ManagementRoleAssignment](http://technet.microsoft.com/library/e2fd10e1-c0ae-48a6-992d-5b34bc73880b.aspx).
+
 
 

@@ -1,16 +1,20 @@
 ---
-title: "Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 6/22/2018
-ms.audience: ITPro
-layout: LandingPage
-ms.topic: landing-page
-ms.service: exchange-online
 localization_priority: Normal
+ms.topic: landing-page
+layout: LandingPage
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: d0f509be-ee4b-46a2-9dc6-3bc3512a0a2d
-description: "Exchange Online is part of the Office 365 suite of products."
+ms.date: 6/22/2018
+title: Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+description: Exchange Online is part of the Office 365 suite of products.
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Exchange Online
@@ -90,5 +94,6 @@ Exchange Online is part of the Office 365 suite of products.
 <li><p><a href="https://go.microsoft.com/fwlink/p/?LinkID=534936">Office 365 for business - Admin Help</a>: how to get started with the Office 365 admin center, reset passwords, and more.</p></li>
 <li><p><a href="https://go.microsoft.com/fwlink/p/?LinkID=252604">Email in Office 365 for business - Admin Help</a>: how to set up email, fix problems, and import email.</p></li>
 </ul>
+
 
 

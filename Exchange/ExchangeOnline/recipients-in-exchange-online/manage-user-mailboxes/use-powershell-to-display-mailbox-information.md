@@ -1,16 +1,19 @@
 ---
-title: "Use Exchange Online PowerShell to display Office 365 mailbox information"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: serdars
-ms.date: 3/1/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.collection: Ent_O365
+description: Admins can learn how to use Exchange Online PowerShell to display information about mailboxes in their Office 365 organization.
+ms.topic: article
+author: JoeDavies-MSFT
+ms.author: josephd
 ms.assetid: e09b354c-1e3e-4bbf-a865-035d28d1a388
-description: "Admins can learn how to use Exchange Online PowerShell to display information about mailboxes in their Office 365 organization."
+ms.date: 3/1/2018
+title: Use Exchange Online PowerShell to display Office 365 mailbox information
+ms.collection:
+- Ent_O365
+- exchange-online
+ms.audience: Admin
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Use Exchange Online PowerShell to display Office 365 mailbox information
@@ -124,5 +127,6 @@ This is just one example. If you want to display a set of mailboxes based on a s
 1. Find the mailbox property that corresponds to the setting you're interested in by running the command `Get-Mailbox -Identity "<MailboxIdentity" | Select-Object *` to list all the properties of a mailbox. `<MailboxIdentity>` is any unique identifier for the mailbox (name, email address, alias, etc.)
 
 2. Construct your Office 365 PowerShell command like this: `Get-Mailbox -ResultSize unlimited | Where-Object {$_.<PropertyName> -<ComparisonOperator> <PropertyValue>}`
+
 
 

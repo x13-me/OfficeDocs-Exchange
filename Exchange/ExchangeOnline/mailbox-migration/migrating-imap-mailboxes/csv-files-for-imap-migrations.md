@@ -1,21 +1,25 @@
 ---
-title: "CSV files for IMAP migration batches"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/15/2018
-ms.audience: Admin
-ms.topic: get-started-article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 187ce085-9a83-4612-80a2-f562b3049fc2
+ms.date: 8/15/2018
+description: The comma-separated values (CSV) file that you use to migrate the contents of users' mailboxes in an IMAP migration contains a row for each user. Each row contains information about the user's Office 365 mailbox and IMAP mailbox, and Office 365 uses this information to process the migration.
+title: CSV files for IMAP migration batches
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - BCS160
-ms.assetid: 187ce085-9a83-4612-80a2-f562b3049fc2
-description: "The comma-separated values (CSV) file that you use to migrate the contents of users' mailboxes in an IMAP migration contains a row for each user. Each row contains information about the user's Office 365 mailbox and IMAP mailbox, and Office 365 uses this information to process the migration."
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # CSV files for IMAP migration batches
@@ -142,5 +146,6 @@ terrya@contoso.edu,mailadmin,P@ssw0rd,/users/terry.adams
 annb@contoso.edu,mailadmin,P@ssw0rd,/users/ann.beebe
 paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
 ```
+
 
 

@@ -1,15 +1,19 @@
 ---
-title: "Change the branding of Clutter notifications"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: The Clutter feature uses Inbox notifications to invite users and to send status messages. The default branding used for these notifications is Outlook, but you can modify the branding for your organization.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 34bb5558-be1b-4ed2-a6c1-cb5031a33317
-description: "The Clutter feature uses Inbox notifications to invite users and to send status messages. The default branding used for these notifications is Outlook, but you can modify the branding for your organization."
+ms.date: 6/24/2018
+title: Change the branding of Clutter notifications
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Change the branding of Clutter notifications
@@ -68,5 +72,6 @@ You can also create a new shared mailbox as the branding mailbox using PowerShel
   Set-Mailbox "IT Admin" -EmailAddresses SMTP: branding@contoso
 
   ```
+
 
 

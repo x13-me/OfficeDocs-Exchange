@@ -1,16 +1,18 @@
 ---
-title: "Release notes for Exchange Server"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 6/8/2018
-ms.audience: ITPro
-ms.topic: get-started-article
-ms.prod: exchange-server-it-pro
 localization_priority: Critical
+description: 'Summary: Important information that you need to know to successfully deploy Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: get-started-article
+author: dstrome
+ms.author: dstrome
 ms.assetid: 1879fd5e-3d63-4264-9cc2-9c050c6ab3c5
-description: "Summary: Important information that you need to know to successfully deploy Exchange Server 2016 or Exchange Server 2019."
-monikerRange: "exchserver-2016 || exchserver-2019"
+monikerRange: exchserver-2016 || exchserver-2019
+title: Release notes for Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.date: 6/8/2018
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Release notes for Exchange Server
@@ -67,11 +69,11 @@ Welcome to Microsoft Exchange Server 2016! This topic contains important informa
 
 - **Mailbox servers running different versions of Exchange can be added to the same database availability group**: The **Add-DatabaseAvailabilityGroupServer** cmdlet and the Exchange admin center incorrectly allow an Exchange 2013 server to be added to an Exchange 2016-based database availability group (DAG), and vice versa. Exchange supports adding only Mailbox servers running the same version (Exchange 2013 versus Exchange 2016, for example) to a DAG. Additionally, the Exchange admin center displays both Exchange 2013 and Exchange 2016 servers in the list of servers available to add to a DAG. This could allow an administrator to inadvertently add a server running an incompatible version of Exchange to a DAG (for example, adding an Exchange 2013 server to an Exchange 2016-based DAG).
 
-    There is currently no workaround for this issue. Administrators must be diligent when adding a Mailbox server to a DAG. Add only Exchange 2013 servers to Exchange 2013-based DAGs, and only Exchange 2016 servers to Exchange 2016-based DAGs. You can differentiate each version of Exchange by looking at the **Version** column in the list of servers in the Exchange admin center. The following are the server versions for Exchange 2013 and Exchange 2016: 
+    There is currently no workaround for this issue. Administrators must be diligent when adding a Mailbox server to a DAG. Add only Exchange 2013 servers to Exchange 2013-based DAGs, and only Exchange 2016 servers to Exchange 2016-based DAGs. You can differentiate each version of Exchange by looking at the **Version** column in the list of servers in the Exchange admin center. The following are the server versions for Exchange 2013 and Exchange 2016:
 
-  - **Exchange 2013** 15.0 (Build xxx.xx) 
+  - **Exchange 2013** 15.0 (Build xxx.xx)
 
-  - **Exchange 2016** 15.1 (Build xxx.xx) 
+  - **Exchange 2016** 15.1 (Build xxx.xx)
 
 - **Can't connect to archive mailbox when using MAPI over HTTP**: In Exchange 2016, MAPI over HTTP can be enabled per-mailbox. An issue exists that prevents users from accessing their archive mailbox, if one is configured, when the following are true:
 
@@ -97,7 +99,7 @@ Welcome to Microsoft Exchange Server 2016! This topic contains important informa
 
 ## Mail flow
 
-- **Edge Transport servers can reject mail sent to valid recipients** Exchange 2016 Edge Transport servers may reject messages sent to valid internal recipients when the following are true: 
+- **Edge Transport servers can reject mail sent to valid recipients** Exchange 2016 Edge Transport servers may reject messages sent to valid internal recipients when the following are true:
 
   - Exchange 2016 Cumulative Update 1 (CU1) is installed on the server.
 
@@ -105,7 +107,7 @@ Welcome to Microsoft Exchange Server 2016! This topic contains important informa
 
     When an Edge Transport rejects a message because of this issue, the sender will receive a non-delivery report (NDR) with the status code **5.1.10**, and the error **Recipient not found by SMTP address lookup**. The recipient won't receive the message.
 
-    To work around the issue, do **one** of the following: 
+    To work around the issue, do **one** of the following:
 
   - Disable recipient validation on the affected Edge Transport server(s) by running the following command.
 
@@ -126,3 +128,4 @@ Welcome to Microsoft Exchange Server 2016! This topic contains important informa
 
 - Configure your firewall or external MX DNS record to send mail to an Exchange 2016 Mailbox server. You might need to configure your firewall to allow TCP port 25 to connect to the new Internet-facing server.
 ::: moniker-end
+

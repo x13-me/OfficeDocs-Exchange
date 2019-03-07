@@ -1,15 +1,19 @@
 ---
-title: "Use a screen reader to add a new room mailbox in the Exchange admin center in Exchange Online"
-ms.author: v-maleo
-author: maggsl
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: A11y_UseSR
+ms.topic: article
+author: maggsl
+ms.author: v-maleo
 ms.assetid: ea55a30a-14b7-41ca-bfa3-4b7f0441f9a7
-description: "Admins can learn how to use a screen reader to create a room mailbox in the Exchange admin center (EAC) in Exchange Online."
+ms.date: 
+description: Admins can learn how to use a screen reader to create a room mailbox in the Exchange admin center (EAC) in Exchange Online.
+title: Use a screen reader to add a new room mailbox in the Exchange admin center in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.custom: A11y_UseSR
+ms.service: exchange-online
+
 ---
 
 # Use a screen reader to add a new room mailbox in the Exchange admin center in Exchange Online
@@ -80,3 +84,4 @@ If you want to add additional information to your new room mailbox, learn about 
 Microsoft wants to provide the best possible experience for all our customers. If you have a disability or have questions related to accessibility, please contact the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) for technical assistance.
 
 The Disability Answer Desk support team is trained in using many popular assistive technologies and can offer assistance in English, Spanish, French, and American Sign Language. Please visit the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) site to find the contact details for your region.
+

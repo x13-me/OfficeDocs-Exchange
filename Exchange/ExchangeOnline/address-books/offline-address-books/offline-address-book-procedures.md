@@ -1,15 +1,17 @@
 ---
-title: "Offline address book procedures"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: The list of procedures related to offline address books (OABs).
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: b7f26eca-b93b-4834-ba50-11febdefbb18
-description: "The list of procedures related to offline address books (OABs)."
+ms.date: 
+title: Offline address book procedures
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Offline address book procedures
@@ -23,3 +25,4 @@ description: "The list of procedures related to offline address books (OABs)."
 [Provision recipients for offline address book downloads](provision-recipients.md)
 
 [Remove an offline address book](remove-offline-address-book.md)
+

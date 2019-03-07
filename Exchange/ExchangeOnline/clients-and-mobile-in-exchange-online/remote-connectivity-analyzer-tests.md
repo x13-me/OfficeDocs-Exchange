@@ -1,20 +1,22 @@
 ---
-title: "Remote Connectivity Analyzer tests for Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: The Microsoft Exchange Remote Connectivity Analyzer (ExRCA) helps you make sure that connectivity for your Exchange servers is set up correctly. If you're having problems, it can also help you find and fix these problems. The ExRCA website can run tests to check for Microsoft Exchange ActiveSync, Exchange Web Services, Microsoft Outlook, and internet email connectivity.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 251505e6-0907-44cd-859f-bd9402e6a397
-description: "The Microsoft Exchange Remote Connectivity Analyzer (ExRCA) helps you make sure that connectivity for your Exchange servers is set up correctly. If you're having problems, it can also help you find and fix these problems. The ExRCA website can run tests to check for Microsoft Exchange ActiveSync, Exchange Web Services, Microsoft Outlook, and Internet email connectivity."
+ms.date: 11/17/2014
+title: Remote Connectivity Analyzer tests for Exchange Online
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Remote Connectivity Analyzer tests for Exchange Online
 
-The Microsoft Exchange Remote Connectivity Analyzer (ExRCA) helps you make sure that connectivity for your Exchange servers is set up correctly. If you're having problems, it can also help you find and fix these problems. The ExRCA website can run tests to check for Microsoft Exchange ActiveSync, Exchange Web Services, Microsoft Outlook, and Internet email connectivity.
+The Microsoft Exchange Remote Connectivity Analyzer (ExRCA) helps you make sure that connectivity for your Exchange servers is set up correctly. If you're having problems, it can also help you find and fix these problems. The ExRCA website can run tests to check for Microsoft Exchange ActiveSync, Exchange Web Services, Microsoft Outlook, and internet email connectivity.
 
 ## Remote Connectivity Analyzer tests
 
@@ -54,14 +56,12 @@ You can run the following tests for Outlook connectivity:
 
 ### Internet email tests
 
-You can run the following tests for Internet email:
+You can run the following tests for internet email:
 
-- **Inbound SMTP** **E-Mail**: This test walks through the steps an Internet email server uses to send inbound SMTP email to your domain.
+- **Inbound SMTP E-Mail**: This test walks through the steps an internet email server uses to send inbound SMTP email to your domain.
 
 - **Outbound SMTP E-Mail**: This test checks your outbound IP address for certain requirements. This includes Reverse DNS, Sender ID, and RBL checks.
 
 - **POP Email**: This test walks through the steps an email client uses to connect to a mailbox using POP3.
 
 - **IMAP Email**: This test walks through the steps an email client uses to connect to a mailbox using IMAP.
-
-

@@ -1,17 +1,21 @@
 ---
-title: "Manage mail users"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailUserWizardForm.NewMailUserIntroductionWizardPage'
-ms.service: exchange-online
 localization_priority: Normal
+description: Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange or Office 365 organization and can access resources. For more information, see Recipients.
+ms.topic: article
+author: kwekua
+f1_keywords:
+- Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailUserWizardForm.NewMailUserIntroductionWizardPage
+ms.author: kwekua
 ms.assetid: bb8b8804-f730-4ad7-9173-896a4965b90f
-description: "Mail users are similar to mail contacts. Both have external email addresses and both contain information about people outside your Exchange or Exchange Online organization that can be displayed in the shared address book and other address lists. However, unlike a mail contact, a mail user has logon credentials in your Exchange or Office 365 organization and can access resources. For more information, see Recipients."
+ms.date: 7/11/2018
+title: Manage mail users
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Manage mail users
@@ -372,3 +376,4 @@ Get the necessary permissions and prepare for directory synchronization, as desc
 5. Manage directory synchronization, as described in [Manage directory synchronization](https://go.microsoft.com/fwlink/p/?LinkId=308915).
 
 6. Verify that Exchange Online is synchronizing correctly. In the EAC, go to **Recipients** \> **Contacts** and view that the list of users was correctly synchronized from your on-premises environment.
+

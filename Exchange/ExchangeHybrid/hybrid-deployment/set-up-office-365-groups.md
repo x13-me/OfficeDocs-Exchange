@@ -2,15 +2,15 @@
 title: "Configure Office 365 Groups with on-premises Exchange hybrid"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 12/6/2016
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: 184dfcfe-4b8e-450a-adc6-e647213b9501
 
 description: "Learn how to enable on-premises Exchange users to use Office 365 Groups in a hybrid deployment."
@@ -45,23 +45,25 @@ Before you start, make sure that you've done the following:
     
 ## Enable Group writeback in Azure AD Connect
 
-1. In the Azure AD Connect wizard, select **Customize synchronization options** and then click **Next**.
+1. Open the Azure AD Connect wizard, select **Configure** and then click **Next**.
+
+2. Select Customize synchronization options and then click Next.
     
-2. On the **Connect to Azure AD** page, enter your Office 365 and on-premises credentials. Click **Next**.
+3. On the **Connect to Azure AD** page, enter your Office 365 credentials. Click **Next**.
     
-3. On the **Optional features** page, verify that the options you previously configured are still selected. The most commonly-selected options are **Exchange hybrid** and **Password hash synchronization**. 
+4. On the **Optional features** page, verify that the options you previously configured are still selected. The most commonly-selected options are **Exchange hybrid** and **Password hash synchronization**. 
     
-4. Select **Group writeback** and then click **Next**. 
+5. Select **Group writeback (Preview)** and then click **Next**. 
     
-5. On the **Writeback** page, select an Active Directory organizational unit (OU) to store objects that are synchronized from Office 365 to your on-premises organization, and then click **Next**.
+6. On the **Writeback** page, select an Active Directory organizational unit (OU) to store objects that are synchronized from Office 365 to your on-premises organization, and then click **Next**.
     
-6. On the **Ready to configure** page, click **Configure**.
+7. On the **Ready to configure** page, click **Configure**.
     
-7. When the wizard is complete, click **Exit** on the **Configuration complete** page. 
+8. When the wizard is complete, click **Exit** on the **Configuration complete** page.
+
+9. Open Active Directory Users and Computers on an Active Directory domain controller and locate the user account that begins with **AAD_**. Make note of this account's name.
     
-8. Open Active Directory Users and Computers on an Active Directory domain controller and locate the user account that begins with **AAD_**. Make note of this account's name.
-    
-9. Open the Windows PowerShell on the Azure Active Directory Connect server, and run the following commands.
+10. Open the Windows PowerShell on the Azure Active Directory Connect server, and run the following commands.
     
   ```
   $AzureADConnectSWritebackAccountDN = <AAD_ account DN>

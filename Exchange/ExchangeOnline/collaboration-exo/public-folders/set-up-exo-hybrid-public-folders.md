@@ -1,17 +1,20 @@
 ---
-title: "Configure Exchange Online public folders for a hybrid deployment"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+ms.author: dmaguire
+manager: laurawi
+ms.topic: article
+author: msdmaguire
+ms.service: exchange-online
+ms.assetid: d979edb3-967b-4431-8beb-0c236bf7f56d
 ms.collection:
 - Ent_O365_Hybrid
 - Strat_EX_EXOBlocker
-ms.assetid: d979edb3-967b-4431-8beb-0c236bf7f56d
-description: "Summary: Instructions for enabling on-premises Exchange Server users to access public folders in Exchange Online."
+- exchange-online
+- M365-email-calendar
+description: 'Summary: Instructions for enabling on-premises Exchange Server users to access public folders in Exchange Online.'
+ms.audience: ITPro
+title: Configure Exchange Online public folders for a hybrid deployment
+
 ---
 
 # Configure Exchange Online public folders for a hybrid deployment
@@ -113,3 +116,4 @@ Log on to Outlook for a user who is in Exchange Online and perform the following
  - Check permissions
  - Create and delete public folders.
  - Post content to and delete content from a public folder.
+

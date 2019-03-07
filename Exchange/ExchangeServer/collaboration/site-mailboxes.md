@@ -1,15 +1,17 @@
 ---
-title: "Site mailboxes"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about site mailboxes and how to use them.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 645154a1-fd8a-4332-a306-5ce0b4be1a05
-description: "Summary: Learn about site mailboxes and how to use them."
+ms.date: 7/6/2018
+title: Site mailboxes
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Site mailboxes
@@ -36,14 +38,14 @@ When one project member files mail or documents using the site mailbox, any proj
 ## Site mailbox provisioning policies
 <a name="policies"> </a>
 
-Site mailbox quotas can be set by using the **SiteMailboxProvisioningPolicy** cmdlets in the Exchange Management Shell. The Site mailbox provisioning policies only apply to the email that is sent to and from the site mailbox and the size of the site mailbox on the Exchange server. The document repository settings are configured in SharePoint. Although you can create multiple site mailbox provisioning policies using the **New-SiteMailboxProvisioningPolicy** cmdlet, only the default provisioning policy will be applied to all site mailboxes. You can't apply multiple policies within your organization. The provisioning policies allow you to set the following quotas: 
+Site mailbox quotas can be set by using the **SiteMailboxProvisioningPolicy** cmdlets in the Exchange Management Shell. The Site mailbox provisioning policies only apply to the email that is sent to and from the site mailbox and the size of the site mailbox on the Exchange server. The document repository settings are configured in SharePoint. Although you can create multiple site mailbox provisioning policies using the **New-SiteMailboxProvisioningPolicy** cmdlet, only the default provisioning policy will be applied to all site mailboxes. You can't apply multiple policies within your organization. The provisioning policies allow you to set the following quotas:
 
 |**Quota**|**Description**|**Default setting**|
 |:-----|:-----|:-----|
 |IssueWarningQuota  <br/> |The _IssueWarningQuota_ parameter specifies the site mailbox size that triggers a warning message to the site mailbox  <br/> |4.5 GB  <br/> |
 |MaxReceiveSize  <br/> |The _MaxReceiveSize_ parameter specifies the maximum size of email messages that can be received by the site mailbox.  <br/> |36 MB  <br/> |
 |ProhibitSendReceiveQuota  <br/> |The _ProhibitSendReceiveQuota_ parameter specifies the size at which the site mailbox can no longer send or receive messages.  <br/> |5 GB  <br/> |
- 
+
 For more information about how to configure site mailbox provisioning policies, see [Manage site mailbox provisioning policies](http://technet.microsoft.com/library/2f160d1a-a031-461f-8d29-c9cd49ca1645.aspx).
 
 ## Lifecycle policy and retention
@@ -72,5 +74,6 @@ Using the eDiscovery Console in SharePoint, site mailboxes can be part of the In
 Backup and Restore for the Exchange site mailboxes housed on the mailbox server will use the same backup and restore method that you use for all Exchange mailboxes. For more information, see [Database Availability Groups](http://technet.microsoft.com/library/ab9b88ce-2f44-4334-96ad-a666b95888a0.aspx).
 
 For SharePoint documents, you should backup and restore into the same place. If you restore your SharePoint content to same URLs, then the site mailbox will continue to work and no additional configuration is needed. If you restore to a different URL, then you'll need to run **Set-SiteMailbox** cmdlet to update the _SharePointURL_ property. We recommend that you don't restore SharePoint to a new forest.
+
 
 

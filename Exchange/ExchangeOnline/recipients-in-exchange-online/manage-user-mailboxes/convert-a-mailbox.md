@@ -1,15 +1,19 @@
 ---
-title: "Convert a mailbox"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 4/26/2017
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Converting a mailbox to a different type of mailbox is very similar to the experience in Exchange 2010. You must still use the Set-Mailbox cmdlet in Exchange Online PowerShell to do the conversion.
+ms.topic: article
+author: kwekua
+ms.author: kwekua
 ms.assetid: dfed045e-a740-4a90-aff9-c58d53592f79
-description: "Converting a mailbox to a different type of mailbox is very similar to the experience in Exchange 2010. You must still use the Set-Mailbox cmdlet in Exchange Online PowerShell to do the conversion."
+ms.date: 4/26/2017
+title: Convert a mailbox
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Convert a mailbox
@@ -71,5 +75,6 @@ For detailed syntax and parameter information, see [Get-Mailbox](https://technet
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+
 
 

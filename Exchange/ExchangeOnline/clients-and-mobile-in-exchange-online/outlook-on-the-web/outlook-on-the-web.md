@@ -1,15 +1,19 @@
 ---
-title: "Outlook on the web in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: A basic overview of Outlook on the web in Exchange Online.
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c30ff7b8-0f12-455b-a70e-3447634f17ce
-description: "A basic overview of Outlook on the web in Exchange Online."
+ms.date: 
+title: Outlook on the web in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Outlook on the web in Exchange Online
@@ -25,3 +29,4 @@ Fully supported web browsers give users access to features such as conversation 
 ## Managing Outlook on the web
 
 In Exchange Online, the most common Outlook on the web management tasks can be accomplished in the Exchange admin center (EAC). All these tasks, and many others, can be accomplished by using Exchange Online PowerShell.
+

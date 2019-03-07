@@ -1,17 +1,19 @@
 ---
-title: "Manage a UM dial plan"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 4/26/2018
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.DialPlanGeneralPropertyPage'
-ms.service: exchange-online
 localization_priority: Normal
+description: After you create a Unified Messaging (UM) dial plan, you can view and configure a variety of settings. For example, you can configure the level of Voice over IP (VoIP) security, the audio codec, and dialing restrictions. The settings that you configure on the UM dial plan affect all users who are linked with the dial plan through a UM mailbox policy.
+ms.topic: article
+author: tonysmit
+f1_keywords:
+- Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.DialPlanGeneralPropertyPage
+ms.author: tonysmit
 ms.assetid: a89735e4-36ec-49fb-ad0f-192fad37e801
-description: "After you create a Unified Messaging (UM) dial plan, you can view and configure a variety of settings. For example, you can configure the level of Voice over IP (VoIP) security, the audio codec, and dialing restrictions. The settings that you configure on the UM dial plan affect all users who are linked with the dial plan through a UM mailbox policy."
+ms.date: 4/26/2018
+title: Manage a UM dial plan
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Manage a UM dial plan
@@ -373,5 +375,6 @@ This example displays a formatted list of all of the settings on a UM dial plan 
 ```
 Get-UMDialplan -Identity MyUMDialPlan | Format-List
 ```
+
 
 

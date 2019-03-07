@@ -1,15 +1,19 @@
 ---
-title: "Create a custom DLP policy"
-ms.author: stephow
-author: stephow-msft
-manager: laurawi
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: A custom data loss prevention (DLP) policy allows you to establish conditions, rules, and actions that can help meet the specific needs of your organization, and which may not be covered in one of the pre-existing DLP templates.
+ms.topic: article
+author: stephow-msft
+ms.author: stephow
 ms.assetid: b3299a39-9663-41e4-b76e-9d2f7879d486
-description: "A custom data loss prevention (DLP) policy allows you to establish conditions, rules, and actions that can help meet the specific needs of your organization, and which may not be covered in one of the pre-existing DLP templates."
+ms.date: 7/11/2018
+title: Create a custom DLP policy
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 A custom data loss prevention (DLP) policy allows you to establish conditions, rules, and actions that can help meet the specific needs of your organization, and which may not be covered in one of the pre-existing DLP templates.
@@ -88,3 +92,4 @@ DLP policy templates are one type of feature Microsoft Exchange that can help yo
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md) Exchange Online
 
 [Integrating sensitive information rules with mail flow rules](integrate-sensitive-information-rules.md)
+

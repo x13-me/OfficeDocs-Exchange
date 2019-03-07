@@ -1,15 +1,17 @@
 ---
-title: "Delete a UM auto attendant"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: After you delete a Unified Messaging (UM) auto attendant, the incoming calls that were answered by the UM auto attendant must be answered by a human operator. A UM auto attendant can't be deleted if it's associated with a UM dial plan as the default UM auto attendant.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 92846bbc-e6b9-45fc-8702-ef5c92eeb08f
-description: "After you delete a Unified Messaging (UM) auto attendant, the incoming calls that were answered by the UM auto attendant must be answered by a human operator. A UM auto attendant can't be deleted if it's associated with a UM dial plan as the default UM auto attendant."
+ms.date: 11/17/2014
+title: Delete a UM auto attendant
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Delete a UM auto attendant
@@ -46,5 +48,6 @@ This example deletes a UM auto attendant named `MyUMAutoAttendant`.
 ```
 Remove-UMAutoAttendant -Identity MyUMAutoAttendant
 ```
+
 
 

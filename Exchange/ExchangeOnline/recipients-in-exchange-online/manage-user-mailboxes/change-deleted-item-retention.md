@@ -1,15 +1,19 @@
 ---
-title: "Change how long permanently deleted items are kept for an Exchange Online mailbox"
-ms.author: serdars
-author: serdars
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to use Exchange Online PowerShell to change the deleted item retention period for Exchange Online mailboxes.
+ms.topic: article
+author: serdars
+ms.author: serdars
 ms.assetid: ce17f1ec-b96c-4c9e-b20a-507fe0afc684
-description: "Learn how to use Exchange Online PowerShell to change the deleted item retention period for Exchange Online mailboxes."
+ms.date: 
+title: Change how long permanently deleted items are kept for an Exchange Online mailbox
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Change how long permanently deleted items are kept for an Exchange Online mailbox
@@ -90,5 +94,6 @@ Additional help:
 - If a user purges a deleted item, you can recover it before the deleted item retention period expires. For details, see [Recover deleted messages in a user's mailbox](recover-deleted-messages.md).
 
 - To learn more about deleted item retention, the Recoverable Items folder, In-Place Hold, and Litigation Hold, see [Understanding Recoverable Items](https://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx).
+
 
 

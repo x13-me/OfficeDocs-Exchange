@@ -1,15 +1,17 @@
 ---
-title: "Manage mail users"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create mail users and how to change mail user properties.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: c72f46dc-8db3-486d-a998-0f01ffc1a843
-description: "Summary: Learn how to create mail users and how to change mail user properties."
+ms.date: 7/5/2018
+title: Manage mail users
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage mail users
@@ -166,7 +168,7 @@ Use the **General** section to view or change basic information about the mail u
 
 - **Require password change on next logon**: Select this check box if you want the user to reset their password the next time they log on to the domain.
 
-Click **More options** to view or change these additional properties: 
+Click **More options** to view or change these additional properties:
 
 - **Organizational unit**: This read-only box displays the organizational unit (OU) that contains the mail user account. You have to use Active Directory Users and Computers to move the account to a different OU.
 
@@ -197,7 +199,7 @@ Use the **Organization** section to record detailed information about the user's
 
 Use the **Email Addresses** section to view or change the email addresses associated with the mail user. This includes the mail user's primary SMTP address, their external email address, and any associated proxy addresses. The primary SMTP address (also known as the *default reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column. By default, after the mail user is created, the primary SMTP address and the external email address are the same.
 
-- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types: 
+- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
@@ -211,7 +213,7 @@ Use the **Email Addresses** section to view or change the email addresses associ
 
 #### Mail Flow Settings
 
-Use the **Mail Flow Settings** section to view or change the following settings: 
+Use the **Mail Flow Settings** section to view or change the following settings:
 
 - **Message Size Restrictions**: These settings control the size of messages that the mail user can send and receive. Click **View details** to view and change maximum size for sent and received messages.
 
@@ -250,7 +252,7 @@ Use the **MailTip** section to add a MailTip to alert users of potential issues 
 
 Properties for a mail user are stored in both Active Directory and Exchange. In general, use the **Get-User** and **Set-User** cmdlets to view and change organization and contact information properties. Use the **Get-MailUser** and **Set-MailUser** cmdlets to view or change mail-related properties, such email addresses, the MailTip, custom attributes, and whether the mail user is hidden from address lists.
 
-Use the **Get-MailUser** and **Set-MailUser** cmdlets to view and change properties for mail users. For information, see the following topics: 
+Use the **Get-MailUser** and **Set-MailUser** cmdlets to view and change properties for mail users. For information, see the following topics:
 
 - [Get-User](http://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx)
 
@@ -297,7 +299,7 @@ To verify that you've successfully changed properties for mail users, do the fol
 - In the Exchange Management Shell, use the **Get-User** and **Get-MailUser** cmdlets to verify the changes. One advantage of using the Exchange Management Shell is that you can view multiple properties for multiple mail contacts.
 
   ```
-  Get-MailUser | Format-List Name,CustomAttribute1 
+  Get-MailUser | Format-List Name,CustomAttribute1
   ```
 
     In the example above where the Company property was set to Contoso for all mail contacts, run the following command to verify the changes:
@@ -309,7 +311,7 @@ To verify that you've successfully changed properties for mail users, do the fol
     In the example above where all mail users had the CustomAttribute1 property set to ContosoEmployee, run the following command to verify the changes.
 
   ```
-  Get-MailUser | Format-List Name,CustomAttribute1 
+  Get-MailUser | Format-List Name,CustomAttribute1
   ```
 
 ## Bulk edit mail users
@@ -340,8 +342,9 @@ To verify that you've successfully bulk edited mail users, do one of the followi
 
 - In the EAC, select each of the mail users that you bulk edited and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) to view the properties that you changed.
 
-- In the Exchange Management Shell, use the **Get-User** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail users from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in the Exchange Management Shell: 
+- In the Exchange Management Shell, use the **Get-User** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail users from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in the Exchange Management Shell:
 
   ```
   Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Adatum')} | Format-List Name,Office,Manager
   ```
+

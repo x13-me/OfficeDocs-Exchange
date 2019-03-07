@@ -1,15 +1,17 @@
 ---
-title: "Understanding back pressure"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/6/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how back pressure monitors system resources on Exchange 2016 and 2019 servers to prevent servers from being overwhelmed by the volume of incoming messages.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 03003544-e802-4988-9427-5fc4da64dcb8
-description: "Summary: Learn how back pressure monitors system resources on Exchange 2016 and 2019 servers to prevent servers from being overwhelmed by the volume of incoming messages."
+ms.date: 7/6/2018
+title: Understanding back pressure
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Understanding back pressure
@@ -35,7 +37,7 @@ The following system resources are monitored by back pressure:
 
 - **UsedVersionBuckets[%ExchangeInstallPath%TransportRoles\data\Queue\mail.que]**: The number of uncommitted message queue database transactions that exist in memory.
 
-For each monitored system resource on a Mailbox server or Edge Transport server, the following levels of resource utilization or *pressure* are defined: 
+For each monitored system resource on a Mailbox server or Edge Transport server, the following levels of resource utilization or *pressure* are defined:
 
 - **Low or Normal**: The resource isn't overused. The server accepts new connections and messages.
 
@@ -57,13 +59,13 @@ To change the default location of the message queue database, see [Change the lo
 
  **Pressure transitions (%)**:
 
-- **LowToMedium**: 96 
+- **LowToMedium**: 96
 
-- **MediumToHigh**: 99 
+- **MediumToHigh**: 99
 
-- **HighToMedium**: 97 
+- **HighToMedium**: 97
 
-- **MediumToLow**: 94 
+- **MediumToLow**: 94
 
  **Comments:**:
 
@@ -87,13 +89,13 @@ As you can see from the formula and the rounding down behavior, the hard drive n
 
  **Pressure transitions (%)**:
 
-- **LowToMedium**: 72 
+- **LowToMedium**: 72
 
-- **MediumToHigh**: 75 
+- **MediumToHigh**: 75
 
-- **HighToMedium**: 73 
+- **HighToMedium**: 73
 
-- **MediumToLow**: 71 
+- **MediumToLow**: 71
 
  **Comments**:
 
@@ -109,13 +111,13 @@ Exchange keeps a history of the memory utilization of the EdgeTransport.exe proc
 
  **Pressure transitions**:
 
-- **LowToMedium**: 9999 
+- **LowToMedium**: 9999
 
-- **MediumToHigh**: 15000 
+- **MediumToHigh**: 15000
 
-- **HighToMedium**: 10000 
+- **HighToMedium**: 10000
 
-- **MediumToLow**: 2000 
+- **MediumToLow**: 2000
 
  **Comments**:
 
@@ -131,13 +133,13 @@ Exchange keeps a history of Submission queue utilization. If the Submission queu
 
  **Pressure transitions (%)**:
 
-- **LowToMedium**: 88 
+- **LowToMedium**: 88
 
-- **MediumToHigh**: 94 
+- **MediumToHigh**: 94
 
-- **HighToMedium**: 89 
+- **HighToMedium**: 89
 
-- **MediumToLow**: 84 
+- **MediumToLow**: 84
 
  **Comments**:
 
@@ -151,13 +153,13 @@ When the server reaches the high level of memory utilization, *message dehydrati
 
  **Pressure transitions (%)**:
 
-- **LowToMedium**: 89 
+- **LowToMedium**: 89
 
-- **MediumToHigh**: 99 
+- **MediumToHigh**: 99
 
-- **HighToMedium**: 90 
+- **HighToMedium**: 90
 
-- **MediumToLow**: 80 
+- **MediumToLow**: 80
 
  **Comments:**:
 
@@ -186,13 +188,13 @@ The `%ExchangeInstallPath%Bin\EdgeTransport.exe.config` application configuratio
 
  **Pressure transitions (%)**:
 
-- **LowToMedium**: 89 
+- **LowToMedium**: 89
 
-- **MediumToHigh**: 99 
+- **MediumToHigh**: 99
 
-- **HighToMedium**: 90 
+- **HighToMedium**: 90
 
-- **MediumToLow**: 80 
+- **MediumToLow**: 80
 
  **Comments**:
 
@@ -214,13 +216,13 @@ As you can see from the formula and the rounding down behavior, the hard drive n
 
  **Pressure transitions**:
 
-- **LowToMedium**: 999 
+- **LowToMedium**: 999
 
-- **MediumToHigh**: 1500 
+- **MediumToHigh**: 1500
 
-- **HighToMedium**: 1000 
+- **HighToMedium**: 1000
 
-- **MediumToLow**: 800 
+- **MediumToLow**: 800
 
  **Comments:**:
 
@@ -253,7 +255,7 @@ The following table summarizes the actions taken by back pressure when a monitor
 |**UsedDiskSpace** (content conversion)  <br/> |High  <br/> |All actions taken at the medium utilization level.  <br/> Reject incoming messages from other Exchange servers.  <br/> Reject message submissions from mailbox databases by the Microsoft Exchange Mailbox Transport Submission service on Mailbox servers.  <br/> |
 |**UsedVersionBuckets** <br/> |Medium  <br/> |Introduce or increment the tarpitting delay to incoming messages. If normal level isn't reached for the entire version bucket history depth, take the following actions:  <br/> • Reject incoming messages from non-Exchange servers.  <br/> • Reject message submissions from the Pickup directory and the Replay directory.  <br/> |
 |**UsedVersionBuckets** <br/> |High  <br/> |All actions taken at the medium utilization level.  <br/> Reject incoming messages from other Exchange servers.  <br/> Reject message submissions from mailbox databases by the Microsoft Exchange Mailbox Transport Submission service on Mailbox servers.  <br/> Stop processing outgoing messages.  <br/> Remote delivery is paused.  <br/> |
- 
+
 ## View back pressure resource thresholds and utilization levels
 <a name="Pressure"> </a>
 
@@ -281,7 +283,7 @@ All configuration options for back pressure are done in the `%ExchangeInstallPat
 |:-----|:-----|
 | _ResourceMeteringInterval_ <br/> | `00:00:02` (2 seconds)  <br/> |
 | _DehydrateMessagesUnderMemoryPressure_ <br/> |true  <br/> |
- 
+
 **DatabaseUsedSpace settings**
 
 |**Key name**|**Default value (%)**|
@@ -290,7 +292,7 @@ All configuration options for back pressure are done in the `%ExchangeInstallPat
 | _DatabaseUsedSpace.MediumToHigh_ <br/> |99  <br/> |
 | _DatabaseUsedSpace.HighToMedium_ <br/> |97  <br/> |
 | _DatabaseUsedSpace.MediumToLow_ <br/> |94  <br/> |
- 
+
 **PrivateBytes settings**
 
 |**Key name**|**Default value (%)**|
@@ -300,7 +302,7 @@ All configuration options for back pressure are done in the `%ExchangeInstallPat
 | _PrivateBytes.HighToMedium_ <br/> |73  <br/> |
 | _PrivateBytes.MediumToLow_ <br/> |71  <br/> |
 | _PrivateBytesHistoryDepth_ <br/> |30  <br/> |
- 
+
 **QueueLength[SubmissionQueue] settings**
 
 |**Key name**|**Default value**|
@@ -310,7 +312,7 @@ All configuration options for back pressure are done in the `%ExchangeInstallPat
 | _QueueLength[SubmissionQueue].HighToMedium_ <br/> |10000  <br/> |
 | _QueueLength[SubmissionQueue].MediumToLow_ <br/> |2000  <br/> |
 | _SubmissionQueueHistoryDepth_ <br/> |300 (after 10 minutes)  <br/> |
- 
+
 **SystemMemory settings**
 
 |**Key name**|**Default value (%)**|
@@ -319,7 +321,7 @@ All configuration options for back pressure are done in the `%ExchangeInstallPat
 | _SystemMemory.MediumToHigh_ <br/> |94  <br/> |
 | _SystemMemory.HighToMedium_ <br/> |89  <br/> |
 | _SystemMemory.MediumToLow_ <br/> |84  <br/> |
- 
+
 **UsedDiskSpace settings (message queue database transaction logs)**
 
 |**Key name**|**Default value (%)**|
@@ -328,7 +330,7 @@ All configuration options for back pressure are done in the `%ExchangeInstallPat
 | _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data\Queue].MediumToHigh_ <br/> |99  <br/> |
 | _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data\Queue].HighToMedium_ <br/> |90  <br/> |
 | _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data\Queue].MediumToLow_ <br/> |80  <br/> |
- 
+
 > [!NOTE]
 > Values that contain only `UsedDiskSpace` (for example, `UsedDiskSpace.MediumToHigh`) apply to the message queue database transaction logs and to content conversion.
 
@@ -341,7 +343,7 @@ All configuration options for back pressure are done in the `%ExchangeInstallPat
 | _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data].HighToMedium_ <br/> |90  <br/> |
 | _UsedDiskSpace[%ExchangeInstallPath%TransportRoles\data].MediumToLow_ <br/> |80  <br/> |
 |TemporaryStoragePath  <br/> | `%ExchangeInstallPath%TransportRoles\data\Temp` <br/> |
- 
+
 **UsedVersionBuckets settings**
 
 |**Key name**|**Default value**|
@@ -351,7 +353,7 @@ All configuration options for back pressure are done in the `%ExchangeInstallPat
 | _UsedVersionBuckets.HighToMedium_ <br/> |1000  <br/> |
 | _UsedVersionBuckets.MediumToLow_ <br/> |800  <br/> |
 | _VersionBucketsHistoryDepth_ <br/> |10  <br/> |
- 
+
 ## Back pressure logging information
 <a name="Information"> </a>
 
@@ -404,5 +406,6 @@ The following list describes the event log entries that are generated by specifi
     Event ID: 15007
 
     Description: The Microsoft Exchange Transport service is rejecting message submissions because the service continues to consume more memory than the configured threshold. This may require that this service be restarted to continue normal operation.
+
 
 

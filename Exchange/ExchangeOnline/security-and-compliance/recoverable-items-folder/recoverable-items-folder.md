@@ -1,15 +1,19 @@
 ---
-title: "Recoverable Items folder in Exchange Online"
-ms.author: markjjo
-author: markjjo
-manager: laurawi
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Admins can learn how deleted items in mailboxes are protected in Exchange Online.'
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
-description: "Summary: Admins can learn how deleted items in mailboxes are protected in Exchange Online."
+ms.date: 
+title: Recoverable Items folder in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: laurawi
+
 ---
 
 # Recoverable Items folder in Exchange Online
@@ -183,3 +187,4 @@ If the mailbox is placed on In-Place Hold or Litigation Hold or assigned to an O
   - [Recover deleted items in Outlook for Windows](https://go.microsoft.com/fwlink/p/?linkId=821537)
 
   - [Recover deleted items or email in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=524924)
+

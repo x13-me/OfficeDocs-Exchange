@@ -1,17 +1,21 @@
 ---
-title: "Manage dynamic distribution groups"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDynamicGroupWizardForm.CreateDynamicGroupInformationWizardPage'
-ms.service: exchange-online
 localization_priority: Normal
+description: Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
+ms.topic: article
+author: kwekua
+f1_keywords:
+- Microsoft.Exchange.Management.SnapIn.Esm.Recipients.CreateDynamicGroupWizardForm.CreateDynamicGroupInformationWizardPage
+ms.author: kwekua
 ms.assetid: 8ef85d0a-41df-4b5c-b8e7-ca8d09c048ca
-description: "Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization."
+ms.date: 6/24/2018
+title: Manage dynamic distribution groups
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Manage dynamic distribution groups
@@ -301,5 +305,6 @@ To verify that you've successfully changed properties for a dynamic distribution
   ```
   Get-Mailbox -OrganizationalUnit "Marketing" | Format-List Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
   ```
+
 
 

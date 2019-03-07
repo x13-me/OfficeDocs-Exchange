@@ -1,15 +1,19 @@
 ---
-title: "Mail flow rule actions in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn about the actions that are available for mail flow rules in Exchange Online
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: a5dfe768-fe26-4290-a801-84b3499f1bc4
-description: "Learn about the actions that are available for mail flow rules in Exchange Online"
+ms.date: 
+title: Mail flow rule actions in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Mail flow rule actions in Exchange Online
@@ -97,9 +101,7 @@ The property values that are used for actions in mail flow rules are described i
 
 [Manage mail flow rules](manage-mail-flow-rules.md)
 
-[Transport Rule Actions](https://technet.microsoft.com/library/5d11a955-b1cc-4150-a0b9-a8cc48ba9bde.aspx) for Exchange Server
-
-[Transport Rule Actions](https://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx) for Exchange Online Protection
+[Mail flow rule actions in Exchange Server](https://technet.microsoft.com/library/5d11a955-b1cc-4150-a0b9-a8cc48ba9bde.aspx)
 
 [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](disclaimers-signatures-footers-or-headers.md)
 

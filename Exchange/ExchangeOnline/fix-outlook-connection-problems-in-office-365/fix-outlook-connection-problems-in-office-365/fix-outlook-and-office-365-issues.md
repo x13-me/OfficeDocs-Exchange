@@ -1,29 +1,32 @@
 ---
-title: "Fix Outlook and Office 365 issues with Support and Recovery Assistant for Office 365"
-ms.author: dianef
-author: dianef77
-manager: mnirkhe
-ms.audience: Admin
-ms.topic: troubleshooting
-ms.date:
-f1_keywords:
-- 'O365P_SARALearn'
-- 'O365M_SARALearn'
-- 'O365E_SARALearn'
-ms.service: exchange-online
 localization_priority: Normal
+ms.topic: troubleshooting
+author: dianef77
+f1_keywords:
+- O365P_SARALearn
+- O365M_SARALearn
+- O365E_SARALearn
+ms.author: dianef
+ms.assetid: 12cd632c-d672-4782-b0ce-beb82b511525
+ms.date: 
+description: Learn to fix issues relating to outlook, mobile devices, office setup and many such apps and services using Support and Recovery Assistant app.
+title: Fix Outlook and Office 365 issues with Support and Recovery Assistant for Office 365
 ms.collection:
 - Adm_UI_Elements
 - EU_O365_UI_Elements
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: 12cd632c-d672-4782-b0ce-beb82b511525
-description: "Learn to fix issues relating to outlook, mobile devices, office setup and many such apps and services using Support and Recovery Assistant app."
+ms.audience: Admin
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+ms.service: exchange-online
+manager: mnirkhe
+
 ---
 
 # Fix Outlook and Office 365 issues with Support and Recovery Assistant for Office 365

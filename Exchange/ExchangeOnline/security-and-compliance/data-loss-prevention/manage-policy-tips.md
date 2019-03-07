@@ -1,15 +1,19 @@
 ---
-title: "Manage policy tips"
-ms.author: stephow
-author: stephow-msft
-manager: laurawi
-ms.date: 7/20/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Policy Tips are informative notices that are displayed to email senders while they're composing a message. The purpose of the Policy Tip is to educate users that they might be violating the business practices or policies that you are enforcing with the data loss prevention (DLP) policies that you have established. The following procedures will help you begin using Policy Tips. Watch this video to learn more.
+ms.topic: article
+author: stephow-msft
+ms.author: stephow
 ms.assetid: cec50a35-1d00-47b3-b72f-ac1bb0fd630e
-description: "Policy Tips are informative notices that are displayed to email senders while they're composing a message. The purpose of the Policy Tip is to educate users that they might be violating the business practices or policies that you are enforcing with the data loss prevention (DLP) policies that you have established. The following procedures will help you begin using Policy Tips. Watch this video to learn more."
+ms.date: 7/20/2018
+title: Manage policy tips
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Manage policy tips
@@ -218,10 +222,11 @@ To verify that you have successfully created custom Policy Tip text, do the foll
 
 [Policy Tips](policy-tips.md)
 
-[Transport Rules](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx) Exchange 2016
+[Mail flow rules in Exchange Server](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
 
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
 
 [Exchange 2010 MailTips](https://go.microsoft.com/fwlink/p/?LinkId=265179)
+
 
 

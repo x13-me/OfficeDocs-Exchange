@@ -1,15 +1,17 @@
 ---
-title: "Include text with the email message sent when a voice message Is received"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can include additional text in the email message that's sent when a voice mail message is received by a user who is enabled for Unified Messaging (UM) voice mail. By default, the text that's included with a voice message indicates only that the user has received a voice message. However, you can create a custom message by adding text in the When a user receives a voice message box on a UM mailbox policy. For example, the text can include information about system security policies and describe the correct way to handle voice messages in your organization. After you add the text, it will be included in each email message that's sent when UM-enabled users associated with the UM mailbox policy receive a voice message.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: b2eec29c-e5eb-4263-80d8-0b9813dd56dc
-description: "You can include additional text in the email message that's sent when a voice mail message is received by a user who is enabled for Unified Messaging (UM) voice mail. By default, the text that's included with a voice message indicates only that the user has received a voice message. However, you can create a custom message by adding text in the When a user receives a voice message box on a UM mailbox policy. For example, the text can include information about system security policies and describe the correct way to handle voice messages in your organization. After you add the text, it will be included in each email message that's sent when UM-enabled users associated with the UM mailbox policy receive a voice message."
+ms.date: 11/17/2014
+title: Include text with the email message sent when a voice message Is received
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Include text with the email message sent when a voice message Is received
@@ -53,5 +55,6 @@ This example includes the additional text, "Do not forward voice messages to use
 ```
 Set-UMMailboxPolicy -identity MyUMMailboxPolicy -VoiceMailText "Do not forward voice messages to users outside this organization."
 ```
+
 
 

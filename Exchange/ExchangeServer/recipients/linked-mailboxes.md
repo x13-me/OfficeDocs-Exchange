@@ -1,15 +1,17 @@
 ---
-title: "Exchange linked mailboxes, linked mailboxes Exchange, create linked mailbox Exchange, change linked mailbox Exchange"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Linked mailboxes are mailboxes that users access in a separate, trusted forest. Learn how to create linked mailboxes in Exchange resource forests.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 76e12d4a-1c3a-42e2-b64c-c09d36e81bd3
-description: "Summary: Linked mailboxes are mailboxes that users access in a separate, trusted forest. Learn how to create linked mailboxes in Exchange resource forests."
+ms.date:
+title: Exchange linked mailboxes, linked mailboxes Exchange, create linked mailbox Exchange, change linked mailbox Exchange
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage linked mailboxes
@@ -162,7 +164,7 @@ Use the **General** section to view or change basic information about the user.
 
 - **Hide from address lists**: Select this check box to prevent the linked mailbox from appearing in the address book and other address lists that are defined in your Exchange organization. After you select this check box, users can still send messages to this user by using the email address.
 
-Click **More options** to view or change these additional properties: 
+Click **More options** to view or change these additional properties:
 
 - **Organizational unit**: This read-only box displays the organizational unit (OU) that contains the user account. You have to use Active Directory Users and Computers to move the user account to a different OU.
 
@@ -207,7 +209,7 @@ Click **More options** to view or change the mailbox storage quota and the delet
 
 Use the **Email address** section to view or change the email addresses associated with the linked mailbox. This includes the user's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the *default reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types: 
+- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP**: This is the default address type. Click this radio button and then type the new SMTP address in the **\* Email address** box.
 
@@ -222,7 +224,7 @@ Use the **Email address** section to view or change the email addresses associat
 
 #### Mailbox Features
 
-Use the **Mailbox Features** section to view or change the following mailbox features and settings: 
+Use the **Mailbox Features** section to view or change the following mailbox features and settings:
 
 - **Sharing policy**: This box shows the sharing policy applied to the mailbox. A sharing policy controls how users in your organization can share calendar and contact information with users outside your Exchange organization. The Default Sharing Policy is assigned to mailboxes when they are created. To change the sharing policy that's assigned to the user, select a different one from the drop-down list.
 
@@ -247,7 +249,7 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
 
 - **MAPI**: This feature is enabled by default. MAPI enables access to an Exchange mailbox from a MAPI client such as Outlook. Click **Disable** to disable MAPI for the mailbox.
 
-- **Litigation hold**: This feature is disabled by default. Litigation hold preserves deleted mailbox items and records changes made to mailbox items. Deleted items and all instances of changed items are returned in a discovery search. Click **Enable** to put the mailbox on litigation hold. If the mailbox is on litigation hold, click **Disable** to remove the litigation hold. If the mailbox is on litigation hold, click **Edit details** to view and change the following litigation hold settings: 
+- **Litigation hold**: This feature is disabled by default. Litigation hold preserves deleted mailbox items and records changes made to mailbox items. Deleted items and all instances of changed items are returned in a discovery search. Click **Enable** to put the mailbox on litigation hold. If the mailbox is on litigation hold, click **Disable** to remove the litigation hold. If the mailbox is on litigation hold, click **Edit details** to view and change the following litigation hold settings:
 
   - **Hold date**: This read-only box indicates date and time when the mailbox was put on litigation hold.
 
@@ -260,7 +262,7 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
       > [!NOTE]
       > The text from these boxes appears in the user's mailbox only if they're using Outlook 2010 or later versions. It doesn't appear in Outlook on the web or other email clients. To view the text from the Note and URL boxes in Outlook, click the **File** tab and, on the **Info** page, under **Account Settings**, you'll see the litigation hold comment.
 
-- **Archiving**: If an archive mailbox doesn't exist for the user, this feature is disabled. To enable an archive mailbox, click **Enable**. If the user has an archive mailbox, the size of the archive mailbox and usage statistics are displayed. Click **Edit details** to view and change the following archive mailbox settings: 
+- **Archiving**: If an archive mailbox doesn't exist for the user, this feature is disabled. To enable an archive mailbox, click **Enable**. If the user has an archive mailbox, the size of the archive mailbox and usage statistics are displayed. Click **Edit details** to view and change the following archive mailbox settings:
 
   - **Status**: This read-only box indicates whether an archive mailbox exists.
 
@@ -318,7 +320,7 @@ Use the **MailTip** section to add a MailTip to alert users of potential issues 
 
 #### Mailbox Delegation
 
-Use the **Mailbox Delegation** section to assign permissions to other users (also called *delegates*) to allow them to sign in to the user's mailbox or send messages on behalf of the user. You can assign the following permissions: 
+Use the **Mailbox Delegation** section to assign permissions to other users (also called *delegates*) to allow them to sign in to the user's mailbox or send messages on behalf of the user. You can assign the following permissions:
 
 - **Send As**: This permission allows users other than the mailbox owner to use the mailbox to send messages. After this permission is assigned to a delegate, any message that a delegate sends from this mailbox will appear as if it was sent by the mailbox owner. However, this permission doesn't allow a delegate to sign in to the user's mailbox.
 
@@ -330,7 +332,7 @@ To assign permissions to delegates, click **Add** under the appropriate permissi
 
 ### Use the Exchange management Shell to change linked mailbox properties
 
-Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for linked mailboxes. One advantage of using the Exchange Management Shell is the ability to change the properties for multiple linked mailboxes. For information about what parameters correspond to mailbox properties, see the following topics: 
+Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for linked mailboxes. One advantage of using the Exchange Management Shell is the ability to change the properties for multiple linked mailboxes. For information about what parameters correspond to mailbox properties, see the following topics:
 
 - [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
 
@@ -373,3 +375,4 @@ To verify that you have successfully changed properties for a linked mailbox, do
   ```
   Get-Mailbox "Ayla Kol" | Format-List LinkedMasterAccount
   ```
+

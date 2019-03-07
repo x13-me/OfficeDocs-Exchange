@@ -1,15 +1,19 @@
 ---
-title: "Use mail flow rules so messages can bypass Clutter in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to create mail flow rules so messages aren't placed in the Clutter folder in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 58e413f0-aa27-4307-bffd-4df03090a15e
-description: "Learn how to create mail flow rules so messages aren't placed in the Clutter folder in Exchange Online."
+ms.date: 
+title: Use mail flow rules so messages can bypass Clutter in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Use mail flow rules so messages can bypass Clutter in Exchange Online
@@ -55,7 +59,8 @@ For detailed syntax and parameter information, see [New-TransportRule](https://t
 
 ## How do you know this worked?
 
-You can check email message headers to see if the email messages are landing in the Inbox due to the Clutter mail flow rule bypass. Pick an email message from a mailbox in your organization that has the Clutter bypass mail flow rule applied. Look at the headers stamped on the message, and you should see the **X-MS-Exchange-Organization-BypassClutter: true** header. This means the bypass is working. Check out the [View the Internet header information for an email message](https://go.microsoft.com/fwlink/p/?LinkId=822530) topic for info on how to find the header information.
+You can check email message headers to see if the email messages are landing in the Inbox due to the Clutter mail flow rule bypass. Pick an email message from a mailbox in your organization that has the Clutter bypass mail flow rule applied. Look at the headers stamped on the message, and you should see the **X-MS-Exchange-Organization-BypassClutter: true** header. This means the bypass is working. Check out the [View the internet header information for an email message](https://go.microsoft.com/fwlink/p/?LinkId=822530) topic for info on how to find the header information.
 
 > [!NOTE]
 > Calendar items (accepted, sent, or declined meetings notifications) won't contain this header.
+

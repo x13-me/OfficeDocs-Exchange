@@ -1,16 +1,17 @@
 ---
-title: "Enable your Gmail account for IMAP"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/15/2018
-ms.audience: Admin
-ms.topic: article
-f1_keywords:
-- 'O365E_AdvSetupEnableGmailImap'
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: article
+author: msdmaguire
+f1_keywords:
+- O365E_AdvSetupEnableGmailImap
+ms.author: dmaguire
+ms.assetid: 16380df7-3911-4bc8-943b-cae9ace27827
+ms.date: 8/15/2018
+description: Enable yor Gmail account for IMAP so you can view and edit your mail in Microsoft Outlook app.
+title: Enable your Gmail account for IMAP
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOP150
@@ -19,13 +20,16 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
-ms.assetid: 16380df7-3911-4bc8-943b-cae9ace27827
-description: "Enable yor Gmail account for IMAP so you can view and edit your mail in Microsoft Outlook app."
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Enable your Gmail account for IMAP
 
- Internet Message Access Protocol (IMAP) is a protocol that allows you to download messages from a mail provider's servers, such as those for Gmail, onto your computer so you can use Microsoft Outlook to view and edit your email, even when aren't connected to the Internet.
+ Internet Message Access Protocol (IMAP) is a protocol that allows you to download messages from a mail provider's servers, such as those for Gmail, onto your computer so you can use Microsoft Outlook to view and edit your email, even when aren't connected to the internet.
 
 ## Enable IMAP on for your Gmail account
 
@@ -38,5 +42,6 @@ To make your Gmail messages accessible by Microsoft Outlook, you need to enable 
 3. Choose **Settings** \> **Forwarding and POP/IMAP**.
 
 4. Select **Enable IMAP**, and then choose **Save Changes**.
+
 
 

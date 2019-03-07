@@ -1,15 +1,19 @@
 ---
-title: "Mobile access in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Your users can access their Office 365 mailbox from a wide variety of devices: mobile phones, tablets, laptops, and even devices such as e-readers. These devices can use Exchange ActiveSync, POP3, or IMAP4 to access Office 365 mailbox data.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a7b29cdb-457f-4877-bad2-6343dd15413e
-description: "Your users can access their Office 365 mailbox from a wide variety of devices: mobile phones, tablets, laptops, and even devices such as e-readers. These devices can use Exchange ActiveSync, POP3, or IMAP4 to access Office 365 mailbox data."
+ms.date: 11/17/2014
+title: Mobile access in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Mobile access in Exchange Online
@@ -59,5 +63,6 @@ POP3 was designed to support offline mail processing. With POP3, email messages 
 ## IMAP4
 
 IMAP4 offers offline and online access but, like POP3, IMAP4 doesn't offer advanced collaboration features such as calendaring, contacts, and tasks.
+
 
 

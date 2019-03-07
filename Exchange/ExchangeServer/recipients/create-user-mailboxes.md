@@ -1,15 +1,17 @@
 ---
-title: "Create user mailboxes in Exchange Server, create Exchange mailbox, Exchange Server create mailbox"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create mailboxes for users in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
-description: "Summary: Learn how to create mailboxes for users in Exchange Server 2016 or Exchange Server 2019."
+ms.date:
+title: Create user mailboxes in Exchange Server, create Exchange mailbox, Exchange Server create mailbox
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create user mailboxes in Exchange Server
@@ -25,7 +27,7 @@ You can create user mailboxes in Exchange Server by using the Exchange admin cen
 |Alias  <br/> |Optional  <br/> |The Exchange alias (also known as the *mail nickname*) for the mailbox. The maximum length is 64 characters. Valid characters are letters, numbers and ASCII text characters that are allowed in email addresses. For example, periods are allowed, but each period must be surrounded by other valid characters (for example, pilar.pinilla).  <br/>  The alias value is used to generate the primary email address (_\<alias\>_@ _\<domain\>_). If you don't specify an alias value, the user name part of the account name (user principal name) is used.  <br/> The alias value must be unique.  <br/> **Note**: Don't use apostrophes (') or quotation marks (") in the alias. Although these characters are allowed, they might cause problems later.  <br/> |
 |Display name  <br/> |EAC: Required  <br/> Exchange Management Shell: Optional  <br/> |Identifies the mailbox in the EAC, and in address lists in Outlook and Outlook on the web (formerly known as Outlook Web App). The maximum length is 256 characters. Spaces and other text characters are allowed.  <br/> In the EAC, the display name is populated by the values that you enter for the first name, middle initial, and last name, but you can specify a custom value.  <br/> In the Exchange Management Shell, if you don't specify a value for the display name, the value of the **Name** property is used.  <br/> The display name value doesn't need to be unique, but having multiple mailboxes with the same display name would be confusing.  <br/> |
 |Name  <br/> |Required  <br/> |Species the name of the object in Active Directory. Only administrators see this value in Exchange or Active Directory management tools. The maximum length is 64 characters. Spaces and other text characters are allowed.  <br/> The name value must be unique.  <br/> |
- 
+
 ## What do you need to know before you begin?
 <a name="introduction"> </a>
 
@@ -86,7 +88,7 @@ The procedures in this section describe how to create a new mailbox and the asso
 
   - **Require password change on next logon**: Select this check box to force the user to change the initial password when they first sign in to the mailbox.
 
-4. You can click **Save** to create the mailbox and the associated Active Directory user account, or you can click **More options** to configure the following additional settings: 
+4. You can click **Save** to create the mailbox and the associated Active Directory user account, or you can click **More options** to configure the following additional settings:
 
   - **Mailbox database**: Click **Browse** to select the mailbox database that holds the mailbox.
 
@@ -124,7 +126,7 @@ This example creates a new mailbox and Active Directory user account for Pilar P
   - The alias value is `pilarp` because we aren't using the _Alias_ parameter, and `pilarp` is taken from the _UserPrincipalName_ parameter value.
 
 ```
-New-Mailbox -Name "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -FirstName Pilar -LastName Pinilla 
+New-Mailbox -Name "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -FirstName Pilar -LastName Pinilla
 ```
 
 For detailed syntax and parameter information, see [New-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
@@ -136,7 +138,7 @@ To verify that you've successfully created a user mailbox, use either of the fol
 
 - In the EAC, go to **Recipients** \> **Mailboxes**, and verify the mailbox is displayed in the list.
 
-- In the Exchange Management Shell, replace _\<Name\>_ with the _Name_ parameter value that you used, and run the following command: 
+- In the Exchange Management Shell, replace _\<Name\>_ with the _Name_ parameter value that you used, and run the following command:
 
   ```
   Get-Mailbox -Identity <Name> | Format-List Name,DisplayName,Alias,PrimarySmtpAddress,Database
@@ -166,7 +168,7 @@ When you mailbox-enable a user account, you can only select existing Active Dire
 
   - **Existing user** or **New user**: Verify **Existing user** is selected, and then click **Browse** to select an available account.
 
-4. You can click **Save** to create the mailbox, or you can click **More options** to configure the following additional settings: 
+4. You can click **Save** to create the mailbox, or you can click **More options** to configure the following additional settings:
 
   - **Mailbox database**: Click **Browse** to select the mailbox database that holds the mailbox.
 
@@ -208,10 +210,11 @@ To verify that you've successfully created a mailbox for an existing user, use e
 
 - In the EAC, go to **Recipients** \> **Mailboxes** and verify the mailbox is displayed in the list.
 
-- In the Exchange Management Shell, replace _\<Name\>_ with the name attribute of the user, and run the following command: 
+- In the Exchange Management Shell, replace _\<Name\>_ with the name attribute of the user, and run the following command:
 
   ```
   Get-Mailbox -Identity <Name> | Format-List Name,DisplayName,Alias,PrimarySmtpAddress,Database
   ```
+
 
 
