@@ -152,6 +152,6 @@ At any time, access can be revoked by resetting the parameter back to the defaul
 Changing this setting typically takes affect within an hour. As this is an tenant-based change, all Outlook for iOS and Android users in the GCC organization will be affected. 
 
 > [!NOTE]
-> Users do not need to leverage the GCC mode option within the client with the above Exchange Online setting.
+> After April 2019, users will not need to leverage the GCC mode option within the client with the above Exchange Online setting.
 
 For more information on the cmdlet, please see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig?view=exchange-ps). 
