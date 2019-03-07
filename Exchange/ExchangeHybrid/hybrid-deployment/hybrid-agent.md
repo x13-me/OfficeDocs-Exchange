@@ -11,6 +11,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - Strat_EX_EXOBlocker
 - Hybrid
+- M365-email-calendar
 description: "The Hybrid agent removes some of the challenges you can face when you configure an Exchange Hybrid environment."
 ---
 

@@ -2,15 +2,15 @@
 title: "Transport routing in Exchange 2013/Exchange 2007 hybrid deployments"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 7/29/2016
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: 75cb6e05-82f1-424c-8c13-4b472569a419
 description: "This topic discusses your routing options for inbound messages from the Internet and outbound messages to the Internet."
 ---

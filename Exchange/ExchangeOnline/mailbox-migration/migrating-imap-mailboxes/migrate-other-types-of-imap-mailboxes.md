@@ -229,7 +229,7 @@ To migrate email successfully, Office 365 needs to connect and communicate with 
 You use a migration batch to migrate groups of email to Office 365 mailboxes at the same time. The batch consists of the mailboxes that you listed in the migration file in the previous task.
 
 > [!TIP]
-> We recommend that you create a test migration batch with a small number of mailboxes to first test the process. > Use migration files with the same number of rows, and run the batches at similar times during the day. Then compare the total running time for each test batch. This comparison helps you estimate how long it could take to migrate all your mailboxes, how large each migration batch should be, and how many simultaneous connections to the source email system you should use to balance migration speed and Internet bandwidth.
+> We recommend that you create a test migration batch with a small number of mailboxes to first test the process. > Use migration files with the same number of rows, and run the batches at similar times during the day. Then compare the total running time for each test batch. This comparison helps you estimate how long it could take to migrate all your mailboxes, how large each migration batch should be, and how many simultaneous connections to the source email system you should use to balance migration speed and internet bandwidth.
 
 1. In the Exchange admin center, go to **Recipients** \> **Migration**.
 
@@ -282,7 +282,7 @@ You use a migration batch to migrate groups of email to Office 365 mailboxes at 
 
   - Choose **Automatically start the batch**. The migration starts as soon as you save the new migration batch. The batch status is first **Created** and changes to **Syncing** after the migration starts.
 
-    ![Micgration batch is syncing](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
+    ![Migration batch is syncing](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
 
  **Verify that this task worked**
 

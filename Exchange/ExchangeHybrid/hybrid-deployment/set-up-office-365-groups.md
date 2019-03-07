@@ -2,15 +2,15 @@
 title: "Configure Office 365 Groups with on-premises Exchange hybrid"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 12/6/2016
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: 184dfcfe-4b8e-450a-adc6-e647213b9501
 
 description: "Learn how to enable on-premises Exchange users to use Office 365 Groups in a hybrid deployment."

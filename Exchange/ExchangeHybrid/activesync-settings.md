@@ -2,9 +2,8 @@
 title: "Exchange ActiveSync device settings with Exchange hybrid deployments"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 1/27/2016
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -12,6 +11,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - Strat_EX_EXOBlocker
 - Hybrid
+- M365-email-calendar
 ms.assetid: 77f7cd72-2a8a-467e-9ffd-b93f5eeb2f69
 description: "Exchange ActiveSync devices are automatically reconfigured when a mailbox is moved from an Exchange on-premises organization to Office 365. Exchange ActiveSync will find the new mailbox location in Office 365 and update its configuration to talk directly to Office 365. The Exchange ActiveSync device won't try and contact the on-premises Exchange server after it's been successfully redirected to Office 365. With only a few exceptions (more on that below), the user no longer needs to manually set up their device for mail to keep working."
 ---
