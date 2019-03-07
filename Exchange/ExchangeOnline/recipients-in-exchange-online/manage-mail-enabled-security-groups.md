@@ -1,15 +1,19 @@
 ---
-title: "Manage mail-enabled security groups"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see Recipients.
+ms.topic: article
+author: kwekua
+ms.author: kwekua
 ms.assetid: 80b3b537-4786-4d02-9202-44e373811a25
-description: "A mail-enabled security group can be used to distribute messages as well as to grant access permissions to resources in Active Directory. For more information, see Recipients."
+ms.date: 6/24/2018
+title: Manage mail-enabled security groups
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Manage mail-enabled security groups
@@ -255,5 +259,6 @@ To verify that you've successfully changed properties for a security group, do t
   Get-DistributionGroup -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailUniversalSecurityGroup')} |
    fl Name,HiddenFromAddressListsEnabled
   ```
+
 
 

@@ -1,15 +1,19 @@
 ---
-title: "Set POP3 or IMAP4 settings for a user"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 4/29/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You use the Set-CASMailbox cmdlet to configure the PO3 and IMAP4 options for each user. The configuration options are described in the following table.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: bf4ca453-e79c-4b87-a9a5-3ae1b21181e2
-description: "You use the Set-CASMailbox cmdlet to configure the PO3 and IMAP4 options for each user. The configuration options are described in the following table."
+ms.date: 4/29/2016
+title: Set POP3 or IMAP4 settings for a user
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Set POP3 or IMAP4 settings for a user
@@ -139,5 +143,6 @@ Get-CASMailbox USER01 | format-list *EnableExact*,*UseProtocolDefaults
 [Enable or Disable POP3 or IMAP4 access for a user](enable-or-disable-pop3-or-imap4-access.md)
 
 [Set-CASMailbox](https://technet.microsoft.com/library/ff7d4dc5-755e-4005-a0a3-631eed3f9b3b.aspx)
+
 
 

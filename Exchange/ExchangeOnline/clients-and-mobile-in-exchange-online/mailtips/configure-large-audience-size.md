@@ -1,15 +1,19 @@
 ---
-title: "Configure the large audience size for your organization"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 4/8/2015
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can use Exchange Online PowerShell to configure various settings that define how you use MailTips in your organization.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8a37911c-4339-4921-b5d3-0a5a774d4517
-description: "You can use Exchange Online PowerShell to configure various settings that define how you use MailTips in your organization."
+ms.date: 4/8/2015
+title: Configure the large audience size for your organization
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Configure the large audience size for your organization
@@ -38,5 +42,6 @@ Set-OrganizationConfig -MailTipsLargeAudienceThreshold 50
 ```
 
 For detailed syntax and parameter information, see [set-OrganizationConfig](https://technet.microsoft.com/library/3b6df0fe-27c8-415f-ad0c-8b265f234c1a.aspx).
+
 
 

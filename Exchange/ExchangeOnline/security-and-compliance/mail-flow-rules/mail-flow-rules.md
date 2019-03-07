@@ -1,15 +1,19 @@
 ---
-title: "Mail flow rules (transport rules) in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn about mail flow rules in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 743bd525-0ca2-426d-b76c-b4a052bc8886
-description: "Learn about mail flow rules in Exchange Online."
+ms.date: 
+title: Mail flow rules (transport rules) in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Mail flow rules (transport rules) in Exchange Online
@@ -128,3 +132,4 @@ There are several types of messages that pass through an organization. The follo
 [Mail flow rule procedures in Exchange Online](mail-flow-rule-procedures.md)
 
 [Transport and Inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
+

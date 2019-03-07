@@ -1,16 +1,19 @@
 ---
-title: "Create and manage room mailboxes"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Strat_EX_Admin
+description: 'Summary: How to create a resource mailbox called a room mailbox, a room list, and how to change room mailbox properties.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: f70752ad-fce0-4e14-8428-fc5ac63f6c54
-description: "Summary: How to create a resource mailbox called a room mailbox, a room list, and how to change room mailbox properties."
+ms.date: 7/5/2018
+title: Create and manage room mailboxes
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create and manage room mailboxes
@@ -130,7 +133,7 @@ Use the **General** section to view or change basic information about the resour
 
 - **Capacity**: Use this box to enter the maximum number of people who can safely occupy the room.
 
-Click **More options** to view or change these additional properties: 
+Click **More options** to view or change these additional properties:
 
 - **Organizational unit**: This read-only box displays the organizational unit (OU) that contains the account for the room mailbox. You have to use Active Directory Users and Computers to move the account to a different OU.
 
@@ -161,7 +164,7 @@ Use the **Contact Information** section to view or change the contact informatio
 
 Use the **Email Address** section to view or change the email addresses associated with the room mailbox. This includes the mailbox's primary SMTP address and any associated proxy addresses. The primary SMTP address (also known as the *reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types: 
+- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
@@ -269,3 +272,4 @@ To verify that you've successfully changed properties for a room mailbox, do the
   ```
   Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'RoomMailbox')} | Get-CalendarProcessing | Format-List Identity,ScheduleOnlyDuringWorkHours,MaximumDurationInMinutes
   ```
+

@@ -1,17 +1,21 @@
 ---
-title: "Automatically save sent items in delegator's mailbox"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Set up mailboxes so messages sent by a delegate are stored in both the delegate and delegator's Sent Items.
+ms.topic: article
+author: dstrome
+ms.author: dstrome
+ms.assetid: f15297f3-32c3-44b6-87b5-dd64dc2bcf7e
+title: Automatically save sent items in delegator's mailbox
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: f15297f3-32c3-44b6-87b5-dd64dc2bcf7e
-description: "Set up mailboxes so messages sent by a delegate are stored in both the delegate and delegator's Sent Items."
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Automatically save sent items in delegator's mailbox
@@ -84,5 +88,6 @@ That's it! The manager will now automatically get a copy of any messages sent by
 
 > [!TIP]
 > You can turn this off by going through the steps above and replacing **$true** with **$false** in the **[Set-Mailbox]** command. For example, to turn it off for Mary, they'd run the command  `Set-Mailbox mary@contoso.com -MessageCopyForSendOnBehalfEnabled $false`.
+
 
 

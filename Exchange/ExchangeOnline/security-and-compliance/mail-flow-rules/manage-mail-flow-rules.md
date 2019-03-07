@@ -1,15 +1,19 @@
 ---
-title: "Manage mail flow rules in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to view, create, modify, remove enable or disable, and import or export mail flow rules in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: e7a81372-b6d7-4d1f-bc9e-a845a7facac2
-description: "Admins can learn how to view, create, modify, remove enable or disable, and import or export mail flow rules in Exchange Online."
+ms.date: 7/11/2018
+title: Manage mail flow rules in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage mail flow rules in Exchange Online
@@ -97,7 +101,7 @@ The EAC allows you to create mail flow rules by using a template, copying an exi
 
       - If the condition you want isn't listed, select **More options**. Additional conditions will be listed.
 
-   3. Specify how rule match data for this rule is displayed in the [Data Loss Prevention (DLP) reports](https://go.microsoft.com/fwlink/p/?LinkId=402768) and the [transport rule reports](https://go.microsoft.com/fwlink/p/?LinkId=402769).
+   3. Specify how rule match data for this rule is displayed in the [Data Loss Prevention (DLP) reports](https://go.microsoft.com/fwlink/p/?LinkId=402768) and the [Mail protection reports](https://go.microsoft.com/fwlink/p/?LinkId=402769).
 
     - Under **Audit this rule with severity level**, select a level to specify the severity level for this rule. The Office 365 activity reports for mail flow rules group rule matches by severity level. Severity level is just a filter to make the reports easier to use. The severity level has no impact on the priority in which the rule is processed.
 
@@ -365,22 +369,19 @@ Resources for Exchange Online:
 
 [Mail flow rule actions in Exchange Online](mail-flow-rule-actions.md)
 
-[Transport and inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
+[Journal, Transport, and Inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
 
 Resources for Exchange Online Protection:
 
-[Transport rules](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
+[Mail flow rules (transport rules) in Exchange Online Protection](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
 
-[Transport Rule Conditions](https://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx)
-
-[Transport Rule Actions](https://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)
-
-[Transport and inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
+[Journal, Transport, and Inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
 
 Resources for Exchange Server:
 
-[Transport Rules](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
+[Mail flow rules in Exchange Server](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
 
-[Transport Rule Conditions](https://technet.microsoft.com/library/c918ea00-1e68-4b8b-8d51-6966b4432e2d.aspx)
+[Mail flow rule conditions and exceptions (predicates) in Exchange Server](https://technet.microsoft.com/library/c918ea00-1e68-4b8b-8d51-6966b4432e2d.aspx)
 
-[Transport Rule Actions](https://technet.microsoft.com/library/5d11a955-b1cc-4150-a0b9-a8cc48ba9bde.aspx)
+[Mail flow rule actions in Exchange Server](https://technet.microsoft.com/library/5d11a955-b1cc-4150-a0b9-a8cc48ba9bde.aspx)
+

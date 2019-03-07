@@ -1,15 +1,19 @@
 ---
-title: "Modify the space used by Inbox rules in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to increase or decrease the space that's available to store Inbox rules in mailboxes in an Exchange Online organization.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 3f01edde-1cdc-4891-ad9d-7d01582664e9
-description: "Admins can learn how to increase or decrease the space that's available to store Inbox rules in mailboxes in an Exchange Online organization."
+ms.date: 
+title: Modify the space used by Inbox rules in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Modify the space used by Inbox rules in Exchange Online
@@ -126,3 +130,4 @@ To verify that you've modified the Inbox rules quota on a mailbox, use any of th
 - Inbox rules are run from top to bottom in the order in which they appear in the **Rules** window. To change the order of rules, click the rule you want to move, and then click the up or down arrow to move the rule to the position you want in the list.
 
 - When you create a forwarding rule, you can add more than one address to forward to. The number of addresses you can forward to may be limited, depending on the settings for your account. If you add more addresses than are allowed, your forwarding rule won't work. If you create a forwarding rule with more than one address, test it to be sure it works.
+

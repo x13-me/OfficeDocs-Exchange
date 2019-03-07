@@ -1,24 +1,28 @@
 ---
-title: "Enable modern authentication in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.collection: Adm_O365
-ms.custom:
+ms.topic: article
+author: chrisda
+ms.author: chrisda
+ms.assetid: 58018196-f918-49cd-8238-56f57f38d662
+description: Admins can learn how to require Modern Auth or require Basic Auth for connections to Exchange Online by Outlook 2013 or later.
+title: Enable modern authentication in Exchange Online
+ms.collection:
 - Adm_O365
-- Adm_O365_FullSet
-- MiniMaven
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - BCS160
 - MOE150
 - MED150
 - MET150
-ms.assetid: 58018196-f918-49cd-8238-56f57f38d662
-description: "Admins can learn how to require Modern Auth or require Basic Auth for connections to Exchange Online by Outlook 2013 or later."
+ms.audience: Admin
+ms.custom:
+- Adm_O365
+- Adm_O365_FullSet
+- MiniMaven
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Enable modern authentication in Exchange Online
@@ -66,3 +70,4 @@ When you disable modern authentication in Exchange Online, Outlook 2013 or later
 ## See also
 
 [Using Office 365 modern authentication with Office clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)
+

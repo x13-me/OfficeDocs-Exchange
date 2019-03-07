@@ -1,15 +1,19 @@
 ---
-title: "Create and manage room mailboxes"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to create and modify room mailboxes in Exchange Online.
+ms.topic: article
+author: kwekua
+ms.author: kwekua
 ms.assetid: f70752ad-fce0-4e14-8428-fc5ac63f6c54
-description: "Learn how to create and modify room mailboxes in Exchange Online."
+ms.date: 7/11/2018
+title: Create and manage room mailboxes
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Create and manage room mailboxes
@@ -284,5 +288,6 @@ For information about keyboard shortcuts that may apply to the procedures in thi
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+
 
 

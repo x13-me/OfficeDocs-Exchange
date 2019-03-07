@@ -1,15 +1,17 @@
 ---
-title: "Exchange Server architecture"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/3/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Critical
+description: 'Summary: Learn about the architecture of Exchange Server 2016 and Exchange Server 2019'
+ms.topic: reference
+author: chrisda
+ms.author: chrisda
 ms.assetid: 1aacc1c9-c81b-47d4-b222-ee73956cf968
-description: "Summary: Learn about the architecture of Exchange Server 2016 and Exchange Server 2019"
+ms.date: 7/3/2018
+title: Exchange Server architecture
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Exchange architecture
@@ -122,5 +124,6 @@ In Exchange 2016, telephony requests are different than other client connections
 - **Office Online Server Preview for Outlook on the web document preview**: In Exchange 2013 or earlier, Outlook Web App included WebReady Document Viewing for the built-in preview of Office and PDF documents. In Exchange 2016 or later, Outlook on the web uses Office Online Server Preview to provide rich preview and editing capabilities for documents. While this provides a consistent document experience with other products like SharePoint and Skype for Business, it does require you to deploy Office Online Server Preview in your on-premises environment if you don't already have it. For more information, see [Install Office Online Server in an Exchange organization](../plan-and-deploy/install-office-online-server.md).
 
 - **MAPI over HTTP is the default for Outlook connections**: MAPI over HTTP was introduced in Exchange 2013 Service Pack 1, and offers improvements over the traditional Outlook Anywhere (RPC over HTTP) connection method. In Exchange 2016 or later, MAPI over HTTP is enabled by default, and offers additional controls, such as the ability to enable or disable MAPI over HTTP per user, and whether to advertise it to external clients. For more information, see [MAPI over HTTP in Exchange Server](../clients/mapi-over-http/mapi-over-http.md).
+
 
 

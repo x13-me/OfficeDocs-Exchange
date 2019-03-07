@@ -1,17 +1,21 @@
 ---
-title: "Manage mail contacts"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 7/12/2018
-ms.audience: ITPro
-ms.topic: article
-f1_keywords:
-- 'Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailContactWizardForm.NewMailContactIntroductionWizardPage'
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to create, modify, and delete mail contacts in Exchange Online.
+ms.topic: article
+author: kwekua
+f1_keywords:
+- Microsoft.Exchange.Management.SnapIn.Esm.Recipients.NewMailContactWizardForm.NewMailContactIntroductionWizardPage
+ms.author: kwekua
 ms.assetid: 74c72aed-e9ff-4927-8eb7-c08a86e79ae0
-description: "Admins can learn how to create, modify, and delete mail contacts in Exchange Online."
+ms.date: 7/12/2018
+title: Manage mail contacts
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Manage mail contacts
@@ -243,5 +247,6 @@ To verify that you've successfully bulk edited mail contacts, do one of the foll
   ```
   Get-Contact -ResultSize unlimited -Filter {(Company -eq 'Adatum')} | Format-List Name,Office,Manager
   ```
+
 
 

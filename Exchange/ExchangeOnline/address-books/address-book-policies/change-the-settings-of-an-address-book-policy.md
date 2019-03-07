@@ -1,15 +1,19 @@
 ---
-title: "Change the settings of an address book policy in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to modify address book policies (ABPs) in Exchange Online
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: ba1ca350-71c2-4c60-a612-33bfa9320b5e
-description: "Admins can learn how to modify address book policies (ABPs) in Exchange Online"
+ms.date: 
+title: Change the settings of an address book policy in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Change the settings of an address book policy
@@ -81,3 +85,4 @@ To verify that you've successfully modify an ABP, replace _\<ABPName\>_ with the
 ```
 Get-AddressBookPolicy -Identity "<ABPName>" | Format-List
 ```
+

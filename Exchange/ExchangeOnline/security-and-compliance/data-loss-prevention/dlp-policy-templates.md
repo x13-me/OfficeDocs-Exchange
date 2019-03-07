@@ -1,15 +1,19 @@
 ---
-title: "DLP policy templates supplied in Exchange"
-ms.author: stephow
-author: stephow-msft
-manager: laurawi
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: In Microsoft Exchange Server and Exchange Online, you can use data loss prevention (DLP) policy templates as a starting point for building DLP policies that help you meet your specific regulatory and business policy needs. You can modify the templates to meet the specific needs of your organization.
+ms.topic: article
+author: stephow-msft
+ms.author: stephow
 ms.assetid: 7e1917ab-1920-4a52-97d1-7dfe2add6198
-description: "In Microsoft Exchange Server and Exchange Online, you can use data loss prevention (DLP) policy templates as a starting point for building DLP policies that help you meet your specific regulatory and business policy needs. You can modify the templates to meet the specific needs of your organization."
+ms.date: 7/11/2018
+title: DLP policy templates supplied in Exchange
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # DLP policy templates supplied in Exchange
@@ -73,5 +77,6 @@ The following table lists the DLP policy templates in Exchange. To learn more ab
 [Create a DLP policy from a template](create-dlp-policy-from-template.md)
 
 [Sensitive Information Types Inventory](https://technet.microsoft.com/library/98b81f9c-87bb-4905-8e53-04621c3ae74d.aspx)
+
 
 

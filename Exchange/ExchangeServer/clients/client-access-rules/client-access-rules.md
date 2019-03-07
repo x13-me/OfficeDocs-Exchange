@@ -1,15 +1,17 @@
 ---
-title: "Client Access Rules in Exchange 2019"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 9/12/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-server-it-pro
 localization_priority: Normal
-description: "Summary: Learn how administrators can use Client Access Rules to allow or block access to the Exchange admin center (EAC) and remote PowerShell in Exchange 2019."
-monikerRange: "exchserver-2019"
+description: 'Summary: Learn how administrators can use Client Access Rules to allow or block access to the Exchange admin center (EAC) and remote PowerShell in Exchange 2019.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
+monikerRange: exchserver-2019
+title: Client Access Rules in Exchange 2019
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.service: exchange-server-it-pro
+ms.date: 9/12/2018
+manager: serdars
+
 ---
 
 # Client Access Rules in Exchange 2019
@@ -26,15 +28,15 @@ For Client Access Rule procedures, see [Procedures for Client Access Rules in Ex
 
 A rule is made of conditions, exceptions, an action, and a priority value.
 
-- **Conditions**: Identify the client connections to apply the action to. For a complete list of conditions, see the [Client Access Rule conditions and exceptions](#client-access-rule-conditions-and-exceptions) section later in this topic. When a client connection matches the conditions of a rule, the action is applied to the client connection, and rule evaluation stops (no more rules are applied to the connection). 
+- **Conditions**: Identify the client connections to apply the action to. For a complete list of conditions, see the [Client Access Rule conditions and exceptions](#client-access-rule-conditions-and-exceptions) section later in this topic. When a client connection matches the conditions of a rule, the action is applied to the client connection, and rule evaluation stops (no more rules are applied to the connection).
 
 - **Exceptions**: Optionally identify the client connections that the action shouldn't apply to. Exceptions override conditions and prevent the rule action from being applied to a connection, even if the connection matches all of the configured conditions. Rule evaluation continues for client connections that are allowed by the exception, but a subsequent rule could still affect the connection.
 
 - **Action**: Specifies what to do to client connections that match the conditions in the rule, and don't match any of the exceptions. Valid actions are:
 
-  - Allow the connection (the `AllowAccess` value for the _Action_ parameter). 
+  - Allow the connection (the `AllowAccess` value for the _Action_ parameter).
 
-  - Block the connection (the `DenyAccess` value for the _Action_ parameter). 
+  - Block the connection (the `DenyAccess` value for the _Action_ parameter).
 
     **Note**: When you block connections for a specific protocol, other applications that rely on the same protocol might also be affected.
 
@@ -104,3 +106,4 @@ This table describes the conditions and exceptions that are available in Client 
 |_Scope_|n/a|Specifies the type of connections that the rule applies to. Valid values are: <br/>• `Users`: The rule only applies to end-user connections. <br/>• `All`: The rule applies to all types of connections (end-users and middle-tier apps).|
 |_UsernameMatchesAnyOfPatterns_|_ExceptUsernameMatchesAnyOfPatterns_|Accepts text and the wildcard character (\*) to identify the user's account name in the format `<Domain>\<UserName>` (for example, `contoso.com\jeff` or `*jeff*`, but not `jeff*`). Non-alphanumeric characters don't require an escape character. <br/> You can specify multiple values separated by commas.|
 |_UserRecipientFilter_|n/a|Uses OPath filter syntax to identify the user that the rule applies to. For example, `{City -eq 'Redmond'}`. The filterable attributes are: <br/>• `City` <br/>• `Company` <br/>• `CountryOrRegion` <br/>• `CustomAttribute1` to `CustomAttribute15` <br/>• `Department` <br/>• `Office` <br/>• `PostalCode` <br/>• `StateOrProvince` <br/>• `StreetAddress` <br/> The search criteria uses the syntax `{<Property> -<Comparison operator> '<Value>'}`. <br/>• `<Property>` is a filterable property. <br/>• `-<Comparison Operator>` is an OPATH comparison operator. For example `-eq` for exact matches (wildcards are not supported) and `-like` for string comparison (which requires at least one wildcard in the property value). For more information about comparison operators, see [about_Comparison_Operators](https://go.microsoft.com/fwlink/p/?LinkId=620712). <br/>• `<Value>` is the property value. Text values with or without spaces or values with wildcards (\*) need to be enclosed in quotation marks (for example, `'<Value>'` or `'*<Value>'`). Don't use quotation marks with the system value `$null` (for blank values) or integers. <br/> You can chain multiple search criteria together using the logical operators `-and` and `-or`. For example, `{<Criteria1>) -and <Criteria2>}` or `{(<Criteria1> -and <Criteria2>) -or <Criteria3>}`.|
+

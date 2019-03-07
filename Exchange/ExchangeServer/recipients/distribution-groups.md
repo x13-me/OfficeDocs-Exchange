@@ -1,15 +1,17 @@
 ---
-title: "Manage distribution groups in Exchange Server, Exchange distribution groups, Distribution group Exchange, AD distribution group, Active Directory distribution group"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about distribution groups and how to create and manage them.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 8e98f141-81d3-4d07-b36e-fcd2dbcc9572
-description: "Summary: Learn about distribution groups and how to create and manage them."
+ms.date:
+title: Manage distribution groups in Exchange Server, Exchange distribution groups, Distribution group Exchange, AD distribution group, Active Directory distribution group
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage distribution groups
@@ -25,7 +27,7 @@ There are two types of groups that can be used to distribute messages:
 It's important to note the terminology differences between Active Directory and Exchange. In Active Directory, a distribution group refers to any group that doesn't have a security context, whether it's mail-enabled or not. In contrast, in Exchange, all mail-enabled groups are referred to as distribution groups, whether they have a security context or not.
 
 > [!NOTE]
-> You can create or mail-enable only universal distribution groups. To convert a domain-local or a global group to a universal group, you can use the [Set-Group](http://technet.microsoft.com/library/924e6eb5-bb06-4e15-b122-cab414291cef.aspx) cmdlet using the Exchange Management Shell. You may have mail-enabled groups that were migrated from previous versions of Exchange that are not universal groups. You can use the EAC or the Exchange Management Shell to manage these groups 
+> You can create or mail-enable only universal distribution groups. To convert a domain-local or a global group to a universal group, you can use the [Set-Group](http://technet.microsoft.com/library/924e6eb5-bb06-4e15-b122-cab414291cef.aspx) cmdlet using the Exchange Management Shell. You may have mail-enabled groups that were migrated from previous versions of Exchange that are not universal groups. You can use the EAC or the Exchange Management Shell to manage these groups
 
 ## What do you need to know before you begin?
 
@@ -33,7 +35,7 @@ It's important to note the terminology differences between Active Directory and 
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" entry in the [Recipients Permissions](../permissions/feature-permissions/recipient-permissions.md) topic.
 
-- If your organization has configured a group naming policy, it's applied only to groups created by users. When you or other administrators use the EAC to create distribution groups, the group naming policy is ignored and isn't applied to the group name. However, if you use the Exchange Management Shell to create or rename a distribution group, the policy is applied unless you use the _IgnoreNamingPolicy_ parameter to override the group naming policy. For more information, see: 
+- If your organization has configured a group naming policy, it's applied only to groups created by users. When you or other administrators use the EAC to create distribution groups, the group naming policy is ignored and isn't applied to the group name. However, if you use the Exchange Management Shell to create or rename a distribution group, the policy is applied unless you use the _IgnoreNamingPolicy_ parameter to override the group naming policy. For more information, see:
 
   - [Create a Distribution Group Naming Policy](http://technet.microsoft.com/library/b2ffb654-345d-4be1-be8e-83d28901373e.aspx)
 
@@ -52,7 +54,7 @@ It's important to note the terminology differences between Active Directory and 
 
 2. Click **New** ![Add icon](../media/ITPro_EAC_AddIcon.png) \> **Distribution group**.
 
-3. On the **New distribution group** page, complete the following boxes: 
+3. On the **New distribution group** page, complete the following boxes:
 
    - **\* Display name**: Use this box to type the display name. This name appears in your organization's address book, on the To: line when email is sent to this group, and in the Groups list in the EAC. The display name is required and should be user-friendly so people recognize what it is. It also must be unique in the forest.
 
@@ -225,7 +227,7 @@ Use this section to set options for moderating the group. Moderators approve or 
 
 Use this section to view or change the email addresses associated with the group. This includes the group's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the *reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
-- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types: 
+- **Add**: Click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png) to add a new email address for this mailbox. Select one of following address types:
 
   - **SMTP**: This is the default address type. Click this button and then type the new SMTP address in the **\* Email address** box.
 
@@ -249,7 +251,7 @@ Use this section to add a MailTip to alert users of potential issues if they sen
 
 #### Group delegation
 
-Use this section to assign permissions to a user (called a *delegate*) to allow them to send messages as the group or send messages on behalf of the group. You can assign the following permissions: 
+Use this section to assign permissions to a user (called a *delegate*) to allow them to send messages as the group or send messages on behalf of the group. You can assign the following permissions:
 
 - **Send As**: This permission allows the delegate to send messages as the group. After this permission is assigned, the delegate has the option to add the group to the **From** line to indicate that the message was sent by the group.
 
@@ -259,7 +261,7 @@ To assign permissions to delegates, click **Add** under the appropriate permissi
 
 ### Use the Exchange Management Shell to change distribution group properties
 
-Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for distribution groups. Advantages of using the Exchange Management Shell are the ability to change the properties that aren't available in the EAC and to change properties for multiple groups. For information about which parameters correspond to distribution group properties, see the following topics: 
+Use the **Get-DistributionGroup** and **Set-DistributionGroup** cmdlets to view and change properties for distribution groups. Advantages of using the Exchange Management Shell are the ability to change the properties that aren't available in the EAC and to change properties for multiple groups. For information about which parameters correspond to distribution group properties, see the following topics:
 
 - [Get-DistributionGroup](http://technet.microsoft.com/library/d84f5670-f3ac-4d63-a6ac-af9de67677c5.aspx)
 
@@ -308,3 +310,4 @@ To verify that you've successfully changed properties for a distribution group, 
   ```
   Get-Mailbox -OrganizationalUnit "Marketing" | Format-List Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
   ```
+

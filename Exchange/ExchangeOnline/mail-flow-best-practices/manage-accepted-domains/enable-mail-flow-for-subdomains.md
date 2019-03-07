@@ -1,15 +1,19 @@
 ---
-title: "Enable mail flow for subdomains in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 02/01/2019
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to enable mail flow for subdomains in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 4033a30a-f506-481c-8ef0-fd9a0508ae38
-description: "Admins can learn how to enable mail flow for subdomains in Exchange Online."
+ms.date: 02/01/2019
+title: Enable mail flow for subdomains in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Enable mail flow for subdomains in Exchange Online
@@ -78,3 +82,4 @@ To verify that you've successfully added match subdomains to a domain using Exch
 ```
 Get-AcceptedDomain | Format-List Name,MatchSubdomains
 ```
+

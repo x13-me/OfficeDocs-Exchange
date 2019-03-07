@@ -1,15 +1,17 @@
 ---
-title: "Manage role group members"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to add, remove and view members of a management role group in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: dstrome
+ms.author: dstrome
 ms.assetid: c064729d-7cda-47fc-b105-acf4b300d430
-description: "Summary: Learn how to add, remove and view members of a management role group in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/5/2018
+title: Manage role group members
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage role group members
@@ -109,5 +111,6 @@ The members of a role group are granted the permissions provided by the manageme
 ### Use the Exchange Management Shell to view the members of a role group
 
 To view the members of a role group, see the "Examples" section in [Get-RoleGroupMember](http://technet.microsoft.com/library/1ff116aa-1a62-4283-bc8e-5963d12958e1.aspx).
+
 
 

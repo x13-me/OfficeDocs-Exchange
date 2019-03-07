@@ -1,15 +1,19 @@
 ---
-title: "View statistics for public folders and public folder items"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: This topic explains how to retrieve statistics about a public folder, such as the display name, creation time, last user modified time, last user access, and item size. You can use this information to make decisions about deleting or retaining public folders.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 4e412710-9a74-4649-ab01-502e969a7eda
-description: "This topic explains how to retrieve statistics about a public folder, such as the display name, creation time, last user modified time, last user access, and item size. You can use this information to make decisions about deleting or retaining public folders."
+ms.date: 6/24/2018
+title: View statistics for public folders and public folder items
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # View statistics for public folders and public folder items
@@ -98,5 +102,6 @@ Get-PublicFolderItemStatistics -Identity "\Marketing\Reports" | Select Subject,L
 ```
 
 For detailed syntax and parameter information, see [Get-PublicFolderItemStatistics](https://technet.microsoft.com/library/b978c72d-6c0d-428f-a4ea-b17e39aef408.aspx).
+
 
 

@@ -1,15 +1,17 @@
-﻿---
-title: "Exchange Server supportability matrix"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
+---
 localization_priority: Normal
+description: Learn about the support life cycle for Exchange
+ms.topic: article
+author: chrisda
+ms.author: chrisda
+ms.date:
+title: Exchange Server supportability matrix
+ms.collection: exchange-server
+ms.audience: ITPro
 ms:assetid: dbac2d40-da8b-469f-a265-1d1f948fe446
-description: "Learn about the support life cycle for Exchange"
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Exchange Server supportability matrix
@@ -24,7 +26,6 @@ In Exchange Server 2010 and earlier, each update rollup package (RU) is cumulati
 
 In Exchange Server 2013 or later, we changed the way we deliver hotfixes and service packs by using a scheduled delivery model. In this model, cumulative updates (CUs) are released quarterly (every three months). A CU is released as a full, self-contained refresh of that version of Exchange, similar to a product upgrade or a service pack release. For more information, see [Updates for Exchange Server](../new-features/updates.md).
 
-
 |**Servicing release model**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013**|**Exchange 2010**|
 |:-----|:-----|:-----|:-----|:-----|
 |Cumulative updates (CUs)|X|X|X||
@@ -33,7 +34,7 @@ In Exchange Server 2013 or later, we changed the way we deliver hotfixes and ser
 
 ## Support lifecycle
 
-For more information about the support lifecycle for a specific version of Exchange, or of the Microsoft Windows server or client operating systems, see the [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?linkid=55839) page. For more information about the Microsoft Support Lifecycle, see the [Microsoft Support Lifecycle Policy FAQ](https://go.microsoft.com/fwlink/p/?linkid=158902).
+For more information about the support lifecycle for a specific version of Exchange, or of the Microsoft�Windows server or client operating systems, see the [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?linkid=55839) page. For more information about the Microsoft Support Lifecycle, see the [Microsoft Support Lifecycle Policy FAQ](https://go.microsoft.com/fwlink/p/?linkid=158902).
 
 ## Exchange Server 2007 End-of life
 
@@ -43,19 +44,19 @@ Exchange 2007 reached end of support on April 11, 2017, per the [Microsoft Lifec
 
 The following tables identify the operating system platforms on which each version of Exchange can run. Supported platforms are identified by an X character.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > Releases of Windows Server and Windows client that aren't listed in the tables below are not supported for use with any version or release of Exchange.
 
 |**Server operating system**|**Exchange 2019**|**Exchange 2016 CU3 and later**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Windows Server 2019|X|||||
 |Windows Server 2016||X||||
-|Windows Server 2012 R2||X|X|X||
+|Windows Server 2012 R2||X|X|X|X|
 |Windows Server 2012||X|X|X|X|
 |Windows Server 2008 R2 SP1||||X|X|
 |Windows Server 2008 SP2|||||X|
 
-> [!NOTE]  
+> [!NOTE]
 >  Client operating systems only support the Exchange management tools.
 
 |**Client operating system**|**Exchange 2019**|**Exchange 2016 CU3 and later**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
@@ -70,7 +71,7 @@ The following tables identify the operating system platforms on which each versi
 
 The following table identifies the Active Directory environments that Exchange can communicate with. Supported environments are identified by an X character. An Active Directory server refers to both writable global catalog servers and to writable domain controllers. Read-only global catalog servers and read-only domain controllers aren't supported.
 
-|**Operating system environment**|**Exchange 2019**|**Exchange 2016 CU12 and later**|**Exchange 2016 CU3 and later**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3 RU22 or later**|**Exchange 2010 SP3 RU5 - RU21**|
+|**Operating system environment**|**Exchange 2019**|**Exchange 2016 CU7 and later**|**Exchange 2016 CU3 to CU6**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3 RU22 or later**|**Exchange 2010 SP3 RU5 - RU21**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Windows Server 2019 Active Directory servers|X|||||||
 |Windows Server 2016 Active Directory servers|X|X|X|X|X|X||
@@ -80,14 +81,14 @@ The following table identifies the Active Directory environments that Exchange c
 |Windows Server 2008 SP2 Active Directory servers|||X|X|X|X|X|
 |Windows Server 2003 SP2 Active Directory servers||||X|X|X|X|
 
-|**AD forest functional level**|**Exchange 2019**|**Exchange 2016 CU12 and later**|**Exchange 2016 CU3 and later**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3 RU22 or later**|**Exchange 2010 SP3 RU5 - RU21**|
+|**AD forest functional level**|**Exchange 2019**|**Exchange 2016 CU7 and later**|**Exchange 2016 CU3 to CU6**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3 RU22 or later**|**Exchange 2010 SP3 RU5 - RU21**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Windows Server 2016|X|X|X|X|X|X||
 |Windows Server 2012 R2|X|X|X|X|X|X|X|
 |Windows Server 2012||X|X|X|X|X|X|
-|Windows Server 2008 R2 SP1||X|X|X|X|X|X|
-|Windows Server 2008 SP2|||X|X|X|X|X|
-|Windows Server 2003 SP2||||X|X|X|X|
+|Windows Server 2008 R2||X|X|X|X|X|X|
+|Windows Server 2008|||X|X|X|X|X|
+|Windows Server 2003||||X|X|X|X|
 
 ## Web browsers supported for use with the premium version of Outlook Web App or Outlook on the web
 
@@ -95,13 +96,13 @@ The following table identifies the Web browsers supported for use together with 
 
 |**Browser**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|:-----|
-|Microsoft Edge|X|X|N/A|N/A| 
+|Microsoft Edge|X|X|N/A|N/A|
 |Internet Explorer 11|X|X|X|X|
 |Internet Explorer 10|||X|X|
 |Internet Explorer 9|||X|X|
 |Internet Explorer 8|||X|X|
 |Internet Explorer 7||||X|
-|Firefox|Current release of Firefox<sup>1</sup>|Current release of Firefox<sup>1</sup>|N/A|N/A| 
+|Firefox|Current release of Firefox<sup>1</sup>|Current release of Firefox<sup>1</sup>|N/A|N/A|
 |Firefox 3.0.1 or later||||X|
 |Firefox 12 or later|||X|X|
 |Safari|Current release of Safari|Current release of Safari|N/A|N/A|
@@ -117,8 +118,8 @@ The following table identifies the Web browsers supported for use together with 
 
 The following table identifies the Web browsers supported for use together with the light (basic) version of Outlook Web App or Outlook on the web. Supported browsers are identified by an X character.
 
-> [!NOTE]  
-> Outlook Web App Basic (Outlook Web App Light) is supported for use in mobile browsers. However, if rendering or authentication issues occur in a mobile browser, determine whether the issue can be reproduced by using Outlook Web App Light in the full client of a supported browser. For example, test the use of Outlook Web App Light in Safari, Chrome, or Internet Explorer. If the issue can’t be reproduced in the full client, we recommend that you contact the mobile device vendor for help. In these cases, we collaborate with the vendor as appropriate.
+> [!NOTE]
+> Outlook Web App Basic (Outlook Web App Light) is supported for use in mobile browsers. However, if rendering or authentication issues occur in a mobile browser, determine whether the issue can be reproduced by using Outlook Web App Light in the full client of a supported browser. For example, test the use of Outlook Web App Light in Safari, Chrome, or Internet Explorer. If the issue can�t be reproduced in the full client, we recommend that you contact the mobile device vendor for help. In these cases, we collaborate with the vendor as appropriate.
 
 |**Browser**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -152,15 +153,16 @@ The following table identifies the Web browsers supported for the use of S/MIME 
 
 The following tables identify the mail clients that are supported for use together with each version of Exchange. Supported clients are identified by an X character.
 
-
 |**Client**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|:-----|
+|Office 365 ProPlus|X|X|X||
+|Outlook 2019|X|X|X||
 |Outlook 2016|X<sup>1</sup>|X<sup>1</sup>|X|X|
-|Outlook 2013||X<sup>1</sup>|X|X|
+|Outlook 2013|X<sup>1</sup>|X<sup>1</sup>|X|X|
 |Outlook 2010||X<sup>1</sup>|X<sup>2</sup>|X|
 |Outlook 2007|||X<sup>3</sup>|X|
 |Outlook for Mac for Office 365||X<sup>1</sup>|X|X|
-|Entourage 2008 (EWS)||X<sup>4/sup>|X<sup>4</sup>|X<sup>4</sup>|
+|Entourage 2008 (EWS)||X<sup>4</sup>|X<sup>4</sup>|X<sup>4</sup>|
 
 <sup>1</sup>Supported with the latest Office service pack and public updates.
 
@@ -178,7 +180,6 @@ The following tables identify the mail clients that are supported for use togeth
 |Windows Phone 7.5|||X|X|
 |Windows Phone 7|||X|X|
 
-
 ## Tools
 
 The following table identifies the version of Microsoft Exchange that can be used together with the Microsoft Exchange Inter-Organization Replication tool (Exscfg.exe; Exssrv.exe). The tool is used to replicate public folder information (including free/busy information) between Exchange organizations. For more information, see [Microsoft Exchange Server Inter-Organization Replication](https://go.microsoft.com/fwlink/?linkid=22455). Supported versions are identified by an X character.
@@ -189,23 +190,44 @@ The following table identifies the version of Microsoft Exchange that can be use
 
 ## Microsoft .NET Framework
 
-The following table identifies the version of the Microsoft .NET Framework that can be used together with each version of Exchange. Supported versions are identified by an X character.
+The following tables identify the versions of the Microsoft .NET Framework that can be used with the specified versions of Exchange. Supported versions are identified by an X character.
 
-> [!IMPORTANT]  
-> <STRONG>Releases of .NET Framework that aren't listed in the table below are not supported on any version or release of Exchange.</STRONG> This includes minor and patch-level releases of .NET Framework.
+> [!IMPORTANT]
+> **Versions of .NET Framework that aren't listed in the tables below are not supported on any version or release of Exchange.** This includes minor and patch-level releases of .NET Framework.
 
-> [!NOTE]  
-> When upgrading Exchange from an unsupported CU to the current CU and no intermediate CUs are available, you should upgrade to the latest version of .NET that's supported by Exchange first and then immediately upgrade to the current CU. This method doesn't replace the need to keep your Exchange servers up to date and on the latest, supported, CU.<BR>Microsoft makes no claim that an upgrade failure will not occur using this method, which may result in the need to contact Microsoft Support Services.
+> [!NOTE]
+> When upgrading Exchange from an unsupported CU to the current CU and no intermediate CUs are available, you should upgrade to the latest version of .NET that's supported by Exchange first and then immediately upgrade to the current CU. This method doesn't replace the need to keep your Exchange servers up to date and on the latest supported, CU. <br/> Microsoft makes no claim that an upgrade failure will not occur using this method, which may result in the need to contact Microsoft Support Services.
 
-|**.NET Framework**|**Exchange 2019**|**Exchange 2016 CU11 or later**|**Exchange 2016 CU8 to CU10**|**Exchange 2016 CU4 to CU7**|**Exchange 2013 CU21 or later**|**Exchange 2013 CU19 to CU20**|**Exchange 2013 CU16 to CU18**|**Exchange 2010 SP3**|
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|.NET Framework 4.7.2|X|X|||X||||
-|.NET Framework 4.7.1|||X||X|X|||
-|.NET Framework 4.6.2||||X||X|X||
-|.NET Framework 4.5||||||X|X|X<sup>1,2</sup>|
-|.NET Framework 4.0||||||||X<sup>1,2</sup>|
-|.NET Framework 3.5 SP1||||||||X|
-|.NET Framework 3.5||||||||X<sup>1</sup>|
+### Exchange 2019
+
+|**.NET Framework**|**Exchange 2019**|
+|:-----|:-----|
+|.NET Framework 4.7.2|X|
+
+### Exchange 2016
+
+|**.NET Framework**|**CU11, CU12**|**CU10**|**CU8, CU9**|**CU5, CU6, CU7**|
+|:-----|:-----|:-----|:-----|:-----|
+|.NET Framework 4.7.2|X||||
+|.NET Framework 4.7.1|X|X|X||
+|.NET Framework 4.6.2|||X|X|
+
+### Exchange 2013
+
+|**.NET Framework**|**CU21 or later**|**CU19, CU20**|**CU16, CU17, CU18**|
+|:-----|:-----|:-----|:-----|
+|.NET Framework 4.7.2|X|||
+|.NET Framework 4.7.1|X|X||
+|.NET Framework 4.6.2||X|X|
+
+### Exchange 2010 SP3
+
+|**.NET Framework**|**Exchange 2010 SP3**|
+|:-----|:-----|
+|.NET Framework 4.5|X<sup>1,2</sup>|
+|.NET Framework 4.0|X<sup>1,2</sup>|
+|.NET Framework 3.5 SP|X|
+|.NET Framework 3.5|X<sup>1</sup>|
 
 <sup>1</sup>If you're using Windows Server 2012, the .NET Framework 3.5 must be installed before you can use Exchange 2010 SP3.
 
@@ -226,7 +248,6 @@ The following table identifies the version of Microsoft Management Console (MMC)
 ## Windows Installer
 
 The following table identifies the version of Windows Installer that is used together with each version of Exchange. Supported versions are identified by an X character.
-
 
 |**Windows Installer**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|

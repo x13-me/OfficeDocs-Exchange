@@ -1,15 +1,19 @@
 ---
-title: "Organization relationships in Exchange Online"
-ms.author: dstrome
-author: dstrome
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Set up an organization relationship to share calendar information with an external business partner. Office 365 admins can set up an organization relationship with another Office 365 organization or with an Exchange on-premises organization. If you want to share calendars with an on-premises Exchange organization, the on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known asfederation) and must meet minimum software requirements.
+ms.topic: article
+author: dstrome
+ms.author: dstrome
 ms.assetid: 58ac4338-b883-404f-a6be-eca38ccd8088
-description: "Set up an organization relationship to share calendar information with an external business partner. Office 365 admins can set up an organization relationship with another Office 365 organization or with an Exchange on-premises organization. If you want to share calendars with an on-premises Exchange organization, the on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known asfederation) and must meet minimum software requirements."
+ms.date: 11/17/2014
+title: Organization relationships in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Organization relationships in Exchange Online
@@ -38,5 +42,6 @@ The following topics will help you configure and manage organization relationshi
 [Modify an organization relationship in Exchange Online](modify-an-organization-relationship.md)
 
 [Remove an organization relationship in Exchange Online](remove-an-organization-relationship.md)
+
 
 

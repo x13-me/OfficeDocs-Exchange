@@ -1,15 +1,19 @@
 ---
-title: "Mobile device mailbox policies in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 4/29/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: In Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Office 365 organization.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: fa618cd2-29d0-42b3-a7a0-0ecd1aee6c20
-description: "In Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Office 365 organization."
+ms.date: 4/29/2016
+title: Mobile device mailbox policies in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Mobile device mailbox policies in Exchange Online
@@ -90,5 +94,6 @@ The following table summarizes the settings you can specify using mobile device 
 |Require signed S/MIME messages|This setting specifies whether the mobile device must send signed S/MIME messages.|
 |Require storage card encryption|This setting specifies whether the storage card must be encrypted. Not all mobile device operating systems support storage card encryption. For more information, see your mobile device and mobile operating system documentation.|
 |Unapproved InROM application list|This setting specifies a list of applications that cannot be run in ROM.|
+
 
 

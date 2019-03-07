@@ -1,15 +1,19 @@
 ---
-title: "Create user mailboxes in Exchange Online"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 12/9/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You have to use the Office 365 admin center or Exchange Online PowerShell to create an Exchange Online user mailbox. You can't create new user mailboxes using the Exchange admin center (EAC). However, after Exchange Online mailboxes are created, you can manage them using the EAC.
+ms.topic: article
+author: kwekua
+ms.author: kwekua
 ms.assetid: 6ed2f969-6c03-4b45-8e2d-05de787de48d
-description: "You have to use the Office 365 admin center or Exchange Online PowerShell to create an Exchange Online user mailbox. You can't create new user mailboxes using the Exchange admin center (EAC). However, after Exchange Online mailboxes are created, you can manage them using the EAC."
+ms.date: 12/9/2016
+title: Create user mailboxes in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Create user mailboxes in Exchange Online
@@ -69,5 +73,6 @@ To verify that you've successfully created a new mailbox, do one of the followin
   ```
 
     If a license is assigned to the mailbox, the value for the _SKUAssigned_ property is `True`. If a license hasn't been assigned, the value is blank.
+
 
 

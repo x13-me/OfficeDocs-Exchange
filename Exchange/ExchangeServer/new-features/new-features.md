@@ -1,16 +1,18 @@
 ---
-title: "What's new in Exchange Server"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 9/20/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Critical
+description: 'Summary: Learn about the new features that are available in Exchange Server 2016 and Exchange Server 2019 when you upgrade from previous versions of Exchange.'
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 97501135-2149-4590-8373-98e638ac8eb1
-description: "Summary: Learn about the new features that are available in Exchange Server 2016 and Exchange Server 2019 when you upgrade from previous versions of Exchange."
-monikerRange: "exchserver-2016 || exchserver-2019"
+monikerRange: exchserver-2016 || exchserver-2019
+title: What's new in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.date: 9/20/2018
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # What's new in Exchange Server
@@ -30,7 +32,7 @@ For more information about deploying Exchange 2019, see [Planning and deployment
 
 - **Block external access to Exchange admin center (EAC) and the Exchange Management Shell**: You can use Client Access Rules to only allow administration of Exchange from the internal network instead of using complex network and firewall rules.
 
-### Performance 
+### Performance
 
 - **Improved search infrastructure**: The completely rebuilt search infrastructure for cloud scale and reliability in Exchange Online is now available in Exchange 2019. This new search infrastructure allows for indexing of bigger files, simpler management, and better search performance.
 
@@ -432,7 +434,7 @@ Another advantage of the new architecture is that search scalability is improved
 ### Exchange admin center
 <a name="EAC2010"> </a>
 
-Exchange 2016 provides a single unified management console that allows for ease of use and is optimized for management of on-premises, online, or hybrid deployments. The *Exchange admin center* (EAC) in Exchange 2016 replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP) that were used in Exchange 2010 (but the name of the EAC virtual directory is still "ECP"). Some EAC features include: 
+Exchange 2016 provides a single unified management console that allows for ease of use and is optimized for management of on-premises, online, or hybrid deployments. The *Exchange admin center* (EAC) in Exchange 2016 replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP) that were used in Exchange 2010 (but the name of the EAC virtual directory is still "ECP"). Some EAC features include:
 
 - **List view**: The list view in EAC has been designed to remove key limitations that existed in ECP. ECP was limited to displaying up to 500 objects and, if you wanted to view objects that weren't listed in the details pane, you needed to use searching and filtering to find those specific objects. In Exchange 2016, the viewable limit from within the EAC list view is approximately 20,000 objects. After the EAC returns the results, the EAC client performs the searching and sorting, which greatly increases the performance compared to the ECP in Exchange 2010. In addition, paging has been added so that you can page to the results. You can also configure page size and export to a .csv file.
 
@@ -456,7 +458,7 @@ Exchange 2016 provides a single unified management console that allows for ease 
 
      You can also configure email addresses to receive these notifications in the EAC, or all events by using the **Set-Notification** cmdlet in the Exchange Management Shell.
 
-- **Groups enhancements**: By default, up to 500 recipients are returned when you open the **Select Members** window, however, you can choose to list up to 10,000 recipients by clicking **Get All Results** beneath the recipient list. We now support browsing more than 500 recipients by using the scroll bar, and we've also added enhanced search features so you can filter recipients in the recipient list. You can filter by: 
+- **Groups enhancements**: By default, up to 500 recipients are returned when you open the **Select Members** window, however, you can choose to list up to 10,000 recipients by clicking **Get All Results** beneath the recipient list. We now support browsing more than 500 recipients by using the scroll bar, and we've also added enhanced search features so you can filter recipients in the recipient list. You can filter by:
 
   - City
 
@@ -540,7 +542,6 @@ Data loss prevention (DLP) capabilities help you protect your sensitive data and
 To learn more, see [Data loss prevention in Exchange 2016](../policy-and-compliance/data-loss-prevention/data-loss-prevention.md)
 
 #### Mail flow rules (transport rules)
-<a name="DLP2010"> </a>
 
 You can use Exchange mail flow rules (also known as transport rules) to look for specific conditions in messages that pass through your organization and take action on them. For example, your organization might require that certain types of messages are blocked or rejected in order to meet legal or compliance requirements, or to implement specific business needs. Mail flow rules are similar to the Inbox rules that are available in Outlook. The main difference between mail flow rules and Inbox rules is that mail flow rules take action on messages while they're in transit as opposed to after the message is delivered. Mail flow rules also contain a richer set of conditions, exceptions, and actions, which gives you the flexibility to implement many types of messaging policies.
 
@@ -552,7 +553,7 @@ These features are new to mail flow rules in Exchange 2016:
 
 - With the new action **Notify the recipient with a message**, a mail flow rule can send a notification to the recipient with the text you specify. For example, you can inform the recipient that the message was rejected by a mail flow rule, or that it was marked as spam and will be delivered to their Junk Email folder.
 
-- The action **Generate incident report and send it to** has been updated to enable the notification of multiple recipients by allowing a group address to be configured as the recipient 
+- The action **Generate incident report and send it to** has been updated to enable the notification of multiple recipients by allowing a group address to be configured as the recipient
 
 - Additional mail flow rules predicates and actions.
 
@@ -653,7 +654,7 @@ How messages flow through an organization and what happens to them has changed s
 
 - **Routing**: Mail routing in Exchange 2016 recognizes DAG boundaries as well as Active Directory site boundaries. Also, mail routing has been improved to queue messages more directly for internal recipients. For more information, see [Mail routing](../mail-flow/mail-routing/mail-routing.md).
 
-- **Connectors**: The default maximum message size for a Send connector or a Receive connector has increased from 10MB to 25MB. For more information, see [Connector limits](../mail-flow/message-size-limits.md#Connector).
+- **Connectors**: The default maximum message size for a Send connector or a Receive connector has increased from 10MB to 25MB. For more information, see [Connector limits](../mail-flow/message-size-limits.md#connector-limits).
 
     You can configure Send connectors to route outbound mail through the Front End transport service on Mailbox servers. For more information, see [Configure Send connectors to proxy outbound mail](../mail-flow/connectors/proxy-outbound-mail.md).
 
@@ -842,3 +843,4 @@ There are two ways to manage Exchange workloads in Exchange 2016:
 
 For more information about these features, see [User workload management in Exchange 2016](../server-health/workload-management.md).
 ::: moniker-end
+

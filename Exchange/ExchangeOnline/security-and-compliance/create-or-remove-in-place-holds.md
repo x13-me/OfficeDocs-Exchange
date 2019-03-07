@@ -1,15 +1,19 @@
 ---
-title: "Create or remove an In-Place Hold"
-ms.author: markjjo
-author: markjjo
-manager: scotv
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: An In-Place Hold preserves all mailbox content, including deleted items and original versions of modified items. All such mailbox items are returned in an In-Place eDiscovery search. When you place an In-Place Hold on a user's mailbox on, the contents in the corresponding archive mailbox (if it's enabled) are also placed on hold, and returned in a eDiscovery search.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: 9d5d8d37-a053-4830-9cb1-6e1ede25e963
-description: "An In-Place Hold preserves all mailbox content, including deleted items and original versions of modified items. All such mailbox items are returned in an In-Place eDiscovery search. When you place an In-Place Hold on a user's mailbox on, the contents in the corresponding archive mailbox (if it's enabled) are also placed on hold, and returned in a eDiscovery search."
+ms.date: 7/11/2018
+title: Create or remove an In-Place Hold
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Create or remove an In-Place Hold
@@ -134,5 +138,6 @@ To verify that you have successfully removed an In-Place Hold, do one of the fol
 - Use the **Get-MailboxSearch** cmdlet to retrieve all mailbox searches and check that the search you removed is no longer listed. For an example of how to retrieve a mailbox search, see the examples in [Get-MailboxSearch](https://technet.microsoft.com/library/a2f3ab70-6ec6-4c06-b862-f32d498c3ef8.aspx).
 
 [Return to top](create-or-remove-in-place-holds.md#top)
+
 
 

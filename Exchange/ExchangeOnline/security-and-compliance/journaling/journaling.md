@@ -1,15 +1,19 @@
 ---
-title: "Journaling in Exchange Online"
-ms.author: markjjo
-author: markjjo
-manager: laurawi
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Find information about journaling in Exchange Online. Learn the difference between journaling and data archiving, how journaling helps with compliance, and more.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: 1e7df155-02a3-4daf-94f9-8ea46f041a3a
-description: "Find information about journaling in Exchange Online. Learn the difference between journaling and data archiving, how journaling helps with compliance, and more."
+ms.date: 
+title: Journaling in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Journaling in Exchange Online
@@ -126,3 +130,4 @@ Journaling always identifies messages as internal if the email address in the SM
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://go.microsoft.com/fwlink/p/?LinkId=331674).
+

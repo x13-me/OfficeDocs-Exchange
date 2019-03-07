@@ -1,14 +1,18 @@
 ---
-title: "Disable Basic authentication in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+ms.author: chrisda
+manager: serdars
+ms.topic: article
+author: chrisda
+ms.service: exchange-online
 ms.assetid: bba2059a-7242-41d0-bb3f-baaf7ec1abd7
-description: "Learn how to block Basic auth for client authentication in Exchange Online"
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+description: Learn how to block Basic auth for client authentication in Exchange Online
+ms.audience: Admin
+title: Disable Basic authentication in Exchange Online
+
 ---
 
 # Disable Basic authentication in Exchange Online
@@ -456,3 +460,4 @@ New-AuthenticationPolicy -Name "Marketing Policy" -AllowBasicAuthActiveSync $fal
 $users = Get-ADGroupMember "Marketing Department"
 foreach ($user in $users) {Set-User -Identity $user.SamAccountName -AuthenticationPolicy "Marketing Policy"}
 ```
+

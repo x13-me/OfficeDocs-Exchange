@@ -1,15 +1,17 @@
 ---
-title: "Email addresses and address books in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the different methods that Exchange Server 2016 and Exchange Server 2019 uses to organize and configure email addresses.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: b97d0f68-691a-42af-9a6c-4dcc37b28a42
-description: "Summary: Learn about the different methods that Exchange Server 2016 and Exchange Server 2019 uses to organize and configure email addresses."
+ms.date:
+title: Email addresses and address books in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Email addresses and address books in Exchange Server
@@ -24,3 +26,4 @@ Exchange uses address books to organize and store email address information for 
 |**Email address policies**|Email address policies are the rules that create email addresses for Exchange recipients.|[Email address policies in Exchange Server](email-address-policies/email-address-policies.md)|
 |**Hierarchical address books**|The hierarchical address book (HAB) presents recipients in the GAL by using your organization's unique business structure (for example, seniority or management hierarchy), which provides an efficient method for locating internal recipients.|[Hierarchical Address Books](http://technet.microsoft.com/library/a1d277a0-5437-40af-aade-e4730a0d1308.aspx)|
 |**Offline address books**|An offline address book (OAB) is a collection of address lists that can be downloaded and used in Outlook by users that are disconnected from the Exchange organization.|[Offline address books in Exchange Server](offline-address-books/offline-address-books.md)|
+

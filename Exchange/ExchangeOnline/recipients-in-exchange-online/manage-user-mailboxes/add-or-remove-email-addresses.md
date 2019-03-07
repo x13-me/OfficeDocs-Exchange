@@ -1,15 +1,19 @@
 ---
-title: "Add or remove email addresses for a mailbox"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can configure more than one email address for the same mailbox. The additional addresses are called proxy addresses. A proxy address lets a user receive email that's sent to a different email address. Any email message sent to the user's proxy address is delivered to their primary email address, which is also known as the primary SMTP address or the default reply address.
+ms.topic: article
+author: kwekua
+ms.author: kwekua
 ms.assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
-description: "You can configure more than one email address for the same mailbox. The additional addresses are called proxy addresses. A proxy address lets a user receive email that's sent to a different email address. Any email message sent to the user's proxy address is delivered to their primary email address, which is also known as the primary SMTP address or the default reply address."
+ms.date: 6/24/2018
+title: Add or remove email addresses for a mailbox
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Add or remove email addresses for a mailbox
@@ -210,5 +214,6 @@ Or
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
+
 
 

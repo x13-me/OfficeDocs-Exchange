@@ -1,22 +1,25 @@
 ---
-title: "Manage migration batches in Office 365"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/16/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: d164b35c-f624-4f83-ac58-b7cae96ab331
+ms.date: 8/16/2018
+description: You can use the Migration dashboard in the Office 365 Exchange admin center (EAC) to manage mailbox migration to Office 365 using a cutover or staged Exchange migration. You can also use the Migration dashboard to migrate the contents of users' mailboxes from an on-premises IMAP server to existing Office 365 mailboxes. The Migration dashboard displays statistics about the overall migration in addition to statistics about a specific migration batch. You can create, start, stop, pause, and edit migration batches.
+title: Manage migration batches in Office 365
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - BCS160
-ms.assetid: d164b35c-f624-4f83-ac58-b7cae96ab331
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
 
-description: "You can use the Migration dashboard in the Office 365 Exchange admin center (EAC) to manage mailbox migration to Office 365 using a cutover or staged Exchange migration. You can also use the Migration dashboard to migrate the contents of users' mailboxes from an on-premises IMAP server to existing Office 365 mailboxes. The Migration dashboard displays statistics about the overall migration in addition to statistics about a specific migration batch. You can create, start, stop, pause, and edit migration batches."
 ---
 
 # Manage migration batches in Office 365
@@ -94,5 +97,6 @@ The details pane in the Migration dashboard displays the following information a
 |**Initial sync duration**|The amount of time it took to complete the initial synchronization for all mailboxes in the migration batch.|
 |**Last sync time**|The last time the migration batch was restarted or the last time that incremental synchronization was performed for the batch. As previously stated, incremental synchronization occurs every 24 hours for IMAP migrations and cutover Exchange migrations.|
 |**Associated endpoint**|The name of the migration endpoint being used by the migration batch. You can click **View details** to view the migration endpoint settings. You can also edit the settings if none of the migration batches using the endpoint are currently running.|
+
 
 

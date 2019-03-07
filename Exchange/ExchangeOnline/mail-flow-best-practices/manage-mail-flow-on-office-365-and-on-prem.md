@@ -1,15 +1,19 @@
 ---
-title: "Manage mail flow using a third-party cloud service with Exchange Online and on-premises mailboxes"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to manage mail flow with a third-party cloud service in an Exchange hybrid environment (where your mailboxes are in both an on-premises organization and in Exchange Online).
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: fb335522-11ba-48d7-956f-2d980c22ab51
-description: "Learn how to manage mail flow with a third-party cloud service in an Exchange hybrid environment (where your mailboxes are in both an on-premises organization and in Exchange Online)."
+ms.date: 
+title: Manage mail flow using a third-party cloud service with Exchange Online and on-premises mailboxes
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage mail flow using a third-party cloud service with Exchange Online and on-premises mailboxes
@@ -68,4 +72,5 @@ There are additional considerations in hybrid deployments between on-premise Exc
 [Troubleshoot Office 365 mail flow](troubleshoot-mail-flow.md)
 
 [Test mail flow by validating your Office 365 connectors](test-mail-flow.md)
+
 

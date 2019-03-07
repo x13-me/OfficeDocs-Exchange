@@ -1,15 +1,17 @@
 ---
-title: "Manage mail contacts"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how use Exchange admin center (EAC) or the Exchange Management Shell to create and change mail contacts for people outside your organization.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: ed0438ea-f396-480e-b661-9f704b0a04e6
-description: "Summary: Learn how use Exchange admin center (EAC) or the Exchange Management Shell to create and change mail contacts for people outside your organization."
+ms.date: 7/5/2018
+title: Manage mail contacts
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage mail contacts
@@ -37,7 +39,7 @@ Mail contacts are essentially contacts for people outside your Exchange or organ
 
 2. Click **New** ![Add icon](../media/ITPro_EAC_AddIcon.png) \> **Mail contact**.
 
-3. Complete the following boxes on the **New mail contact** page: 
+3. Complete the following boxes on the **New mail contact** page:
 
   - **First name**: Use this box to type the contact's first name.
 
@@ -236,5 +238,6 @@ To verify that you've successfully bulk edited mail contacts, do one of the foll
   ```
   Get-Contact -ResultSize unlimited -Filter {(Company -eq 'Adatum')} | Format-List Name,Office,Manager
   ```
+
 
 

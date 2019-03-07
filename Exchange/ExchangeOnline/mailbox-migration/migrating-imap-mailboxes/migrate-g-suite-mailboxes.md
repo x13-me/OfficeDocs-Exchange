@@ -1,24 +1,28 @@
 ---
-title: "Migrate G Suite mailboxes to Office 365"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 9/19/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom:
-- Adm_O365
-- Adm_O365_Setup
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 665dc56c-581c-4e35-8028-6bc1e8497016
+ms.date: 9/19/2018
+description: ""
+title: Migrate G Suite mailboxes to Office 365
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - MBS150
 - BCS160
-ms.assetid: 665dc56c-581c-4e35-8028-6bc1e8497016
-description: ""
+ms.audience: Admin
+ms.custom:
+- Adm_O365
+- Adm_O365_Setup
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Migrate G Suite mailboxes to Office 365
@@ -145,7 +149,7 @@ To migrate Gmail mailboxes successfully, Office 365 needs to connect and communi
 You use a migration batch to migrate groups of Gmail mailboxes to Office 365 at the same time. The batch consists of the Gmail mailboxes that you listed in the migration file in the previous [Step 4: Connect Office 365 to Gmail](migrate-g-suite-mailboxes.md#BKMK_Task3).
 
 > [!TIP]
-> It's a good idea to create a test migration batch with a small number of mailboxes to first test the process. > Use migration files with the same number of rows, and run the batches at similar times during the day. Then compare the total running time for each test batch. This helps you estimate how long it could take to migrate all your mailboxes, how large each migration batch should be, and how many simultaneous connections to the source email system you should use to balance migration speed and Internet bandwidth.
+> It's a good idea to create a test migration batch with a small number of mailboxes to first test the process. > Use migration files with the same number of rows, and run the batches at similar times during the day. Then compare the total running time for each test batch. This helps you estimate how long it could take to migrate all your mailboxes, how large each migration batch should be, and how many simultaneous connections to the source email system you should use to balance migration speed and internet bandwidth.
 
 1. In the Office 365 admin center, navigate to **Admin centers** \> **Exchange**.
 
@@ -197,7 +201,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Office 365 at 
 
   - Choose **Automatically start the batch** \> **new**. The migration starts immediately with the status **Syncing**.
 
-    ![Micgration batch is syncing](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
+    ![Migration batch is syncing](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
 
 > [!NOTE]
 > If you have large user mailboxes and the status shows **Syncing** for a long time, you may be experiencing bandwidth limits set by Google. For more information, see [Bandwidth limits](https://support.google.com/a/answer/1071518) and [Sync limits](https://support.google.com/a/answer/2751577). You can try to unlock the Gmail user or use alternative method to migrate the users. For more information, see [Use network upload to import your organization PST files to Office 365](https://docs.microsoft.com/office365/securitycompliance/use-network-upload-to-import-pst-files) and [Third-party tools for Office 365 migrations](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#third-party-tools-for-office-365-migrations).
@@ -307,5 +311,6 @@ Were these steps helpful? If so, please let us know at the bottom of this topic.
 [Ways to migrate email to Office 365](../mailbox-migration.md)
 
 [Tips for optimizing IMAP migrations](optimizing-imap-migrations.md)
+
 
 

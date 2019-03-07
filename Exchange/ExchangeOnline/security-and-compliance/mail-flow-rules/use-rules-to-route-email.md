@@ -1,14 +1,18 @@
 ---
-title: "Use mail flow rules to route email based on a list of words, phrases, or patterns in Exchange Online"
+description: Learn how to use mail flow rules to route email messages based on their contents in Exchange Online.
+localization_priority: Normal
 ms.author: chrisda
+ms.topic: article
 author: chrisda
+ms.service: exchange-online
+ms.assetid: 4c5bee1b-58b5-4152-baef-86fa103050ae
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.date: 6/23/2018
 ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
-localization_priority: Normal
-ms.assetid: 4c5bee1b-58b5-4152-baef-86fa103050ae
-description: "Learn how to use mail flow rules to route email messages based on their contents in Exchange Online."
+title: Use mail flow rules to route email based on a list of words, phrases, or patterns in Exchange Online
+
 ---
 
 # Use mail flow rules to route email based on a list of words, phrases, or patterns
@@ -55,3 +59,4 @@ For example, this text file contains common misspellings of Microsoft.
 ```
 
 To learn how to specify patterns using regular expressions, see [Regular Expression Reference](https://go.microsoft.com/fwlink/p/?LinkId=532394).
+

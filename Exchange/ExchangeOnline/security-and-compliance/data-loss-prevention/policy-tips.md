@@ -1,15 +1,19 @@
 ---
-title: "Policy Tips"
-ms.author: stephow
-author: stephow-msft
-manager: laurawi
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can help to prevent your organization's Microsoft Outlook, Outlook Web App (OWA), and OWA for Devices email users from inappropriately sending sensitive information by creating data loss prevention (DLP) policies that include Policy Tip notification messages. Similar to MailTips that were introduced in Microsoft Exchange Server 2010, Policy Tip notification messages are displayed to users in Outlook while they are composing an email message. Policy Tip notification messages only show up if something about the sender's email message seems to violate a DLP policy that you have in place and that policy includes a rule to notify the sender when the conditions that you establish are met. Watch this video to learn more.
+ms.topic: article
+author: stephow-msft
+ms.author: stephow
 ms.assetid: 4266b83c-dd8a-4b3d-99ff-402e68fc810c
-description: "You can help to prevent your organization's Microsoft Outlook, Outlook Web App (OWA), and OWA for Devices email users from inappropriately sending sensitive information by creating data loss prevention (DLP) policies that include Policy Tip notification messages. Similar to MailTips that were introduced in Microsoft Exchange Server 2010, Policy Tip notification messages are displayed to users in Outlook while they are composing an email message. Policy Tip notification messages only show up if something about the sender's email message seems to violate a DLP policy that you have in place and that policy includes a rule to notify the sender when the conditions that you establish are met. Watch this video to learn more."
+ms.date: 7/11/2018
+title: Policy Tips
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Policy Tips
@@ -63,5 +67,6 @@ For procedures that explain how to create your own Policy Tips, see [Manage poli
 [Manage DLP Policies](https://technet.microsoft.com/library/ba81fabd-7f7f-4ef7-968f-ce851ada9d70.aspx)
 
 [Manage policy tips](manage-policy-tips.md)
+
 
 

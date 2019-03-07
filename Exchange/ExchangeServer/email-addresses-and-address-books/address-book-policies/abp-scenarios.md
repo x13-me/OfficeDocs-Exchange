@@ -1,15 +1,17 @@
 ---
-title: "Scenario Deploying address book policies in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to use address book polices to split single Exchange Server organizations into separate virtual organizations based on different requirements and scenarios.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 6ac3c87d-161f-447b-afb2-149ae7e3f1dc
-description: "Summary: Learn how to use address book polices to split single Exchange Server organizations into separate virtual organizations based on different requirements and scenarios."
+ms.date:
+title: Scenario Deploying address book policies in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Scenario: Deploying address book policies in Exchange Server
@@ -34,7 +36,7 @@ The GAL, offline address book (OAB), room list, and address lists that are requi
 |Offline address book|OAB_CON|OAB_HI|
 |Room list|AL_CON_Rooms|AL_HI_Rooms|
 |Address Lists|AL_CON_Groups <br/> AL_CON_Users <br/> AL_CON_Contacts|AL_HI_Groups <br/> AL_HI_Users <br/> AL_HI_Contacts|
- 
+
 ## Scenario 2: Two companies sharing a CEO in one Exchange organization
 
 This scenario applies to companies or divisions that share Exchange environment, and the only employees in common are in upper management.
@@ -62,7 +64,7 @@ The GAL, OAB, room list, and address lists that are required in the ABPs for thi
 |Offline address book|OAB_FAB|OAB_TAIL|Default Offline Address Book|
 |Room address list|AL_FAB_Rooms|AL_TAIL_Rooms|All Rooms|
 |Address lists|AL_FAB_Users_DGs <br/> AL_FAB_Contacts|AL_TAIL_Users_DGs <br/> AL_TAIL_Contacts|AL_FAB_Users_DGs <br/> AL_FAB_Contacts <br/> AL_TAIL_Users_DGs <br/> AL_TAIL_Contacts|
- 
+
 For a complete walkthrough of creating the required elements for this scenario, see the [Detailed deployment steps for Scenario 2: Two companies sharing a CEO in one Exchange organization](#detailed-deployment-steps-for-scenario-2-two-companies-sharing-a-ceo-in-one-exchange-organization) section at the end of this topic.
 
 ## Scenario 3: Education
@@ -87,7 +89,7 @@ The GAL, OAB, room list, and address lists that are required in the ABPs for thi
 |Offline address book|OAB_StudentsClassA|OAB_TeachersClassA|Default Offline Address Book|
 |Room address list|AL_BlankRoom|AL_BlankRoom|All Rooms|
 |Address Lists|AL_ClassAAL_Principal|AL_ClassAAL_AllTeachersAL_AllGroupsAL_Principal|AL_ClassA <br/> AL_ClassB <br/> AL_AllTeachers <br/> AL_AllStudents <br/> AL_AllGroups|
- 
+
 ## Considerations and best practices for address book policies
 
 These are the important issues to consider when you use ABPs in your organization:
@@ -98,7 +100,7 @@ These are the important issues to consider when you use ABPs in your organizatio
 
 - If you create ABPs in your organization and don't assign an ABP to some users, those recipients can see _all_ address lists.
 
-- To divide recipients into virtual organizations, we recommend using the **CustomAttribute1** to **CustomAttribute15** attributes on recipients. These attributes work better than the other pre-canned conditional attributes such as **Company**, **Department**, or **StateOrProvince** because: 
+- To divide recipients into virtual organizations, we recommend using the **CustomAttribute1** to **CustomAttribute15** attributes on recipients. These attributes work better than the other pre-canned conditional attributes such as **Company**, **Department**, or **StateOrProvince** because:
 
   - Not all recipient types support the **Company**, **Department** or **StateOrProvince** attributes (for example, distribution groups, dynamic distribution groups, and mail-enabled public folders).
 
@@ -301,7 +303,7 @@ This organization requires three ABPs:
 |Offline address book|OAB_FAB|OAB_TAIL|Default Offline Address Book|
 |Room address list|AL_FAB_Rooms|AL_TAIL_Rooms|All Rooms|
 |Address lists|AL_FAB_Users_DGs <br/> AL_FAB_Contacts|AL_TAIL_Users_DGs <br/> AL_TAIL_Contacts|AL_FAB_Users_DGs <br/> AL_FAB_Contacts <br/> AL_TAIL_Users_DGs <br/> AL_TAIL_Contacts|
- 
+
 This example creates the ABP named ABP_FAB that contains the GAL, OAB, room list and address lists for Fabrikam.
 
 ```
@@ -354,3 +356,4 @@ After you create or modify an address list or GAL, you need to update the member
 If the address list contains a large number of recipients (our recommendation is more than 3000), you should use the Exchange Management Shell to update the address list (not the Exchange admin center). For more information, see [Update address lists](../address-lists/address-list-procedures.md#update-address-lists).
 
 To update a GAL, you always need to use the Exchange Management Shell. For more information, see [Use the Exchange Management Shell to update global address lists](../address-lists/address-list-procedures.md#use-the-exchange-management-shell-to-update-global-address-lists).
+

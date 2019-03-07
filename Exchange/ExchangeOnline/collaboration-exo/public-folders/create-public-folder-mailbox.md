@@ -1,15 +1,19 @@
 ---
-title: "Create a public folder mailbox"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Before you can create a public folder, you must first create a public folder mailbox. Public folder mailboxes contain the hierarchy information plus the content for public folders. The first public folder mailbox you create will be the primary hierarchy mailbox, which contains the only writable copy of the hierarchy. Any additional public folder mailboxes you create will be secondary mailboxes, which contain a read-only copy of the hierarchy.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 64437ffd-231b-4c10-84df-232ccbe9538f
-description: "Before you can create a public folder, you must first create a public folder mailbox. Public folder mailboxes contain the hierarchy information plus the content for public folders. The first public folder mailbox you create will be the primary hierarchy mailbox, which contains the only writable copy of the hierarchy. Any additional public folder mailboxes you create will be secondary mailboxes, which contain a read-only copy of the hierarchy."
+ms.date: 7/11/2018
+title: Create a public folder mailbox
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Create a public folder mailbox
@@ -72,5 +76,6 @@ Get-OrganizationConfig | Format-List RootPublicFolderMailbox
 For detailed syntax and parameter information, see [get-OrganizationConfig](https://technet.microsoft.com/library/3e07e5cc-5066-40e7-8642-845ad080f9a9.aspx).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+
 
 

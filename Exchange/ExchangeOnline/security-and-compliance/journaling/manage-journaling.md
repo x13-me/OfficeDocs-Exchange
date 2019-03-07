@@ -1,15 +1,19 @@
 ---
-title: "Manage journaling in Exchange Online"
-ms.author: markjjo
-author: markjjo
-manager: laurawi
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to view, create, modify, enable, disable, and delete journal rules in Exchange Online.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
-description: "Admins can learn how to view, create, modify, enable, disable, and delete journal rules in Exchange Online."
+ms.date: 
+title: Manage journaling in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Manage journaling
@@ -200,3 +204,4 @@ To verify that you have successfully removed the journal rule, do one of the fol
 [Disable-JournalRule](https://technet.microsoft.com/library/0324144b-2818-4e7f-a483-d6d6a19f8276.aspx)
 
 [Remove-JournalRule](https://technet.microsoft.com/library/7cb9d691-2b0c-4f64-982d-ce69f3c3e757.aspx)
+

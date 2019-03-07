@@ -1,15 +1,19 @@
 ---
-title: "Configure email forwarding for a mailbox"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 12/9/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Email forwarding lets you to set up a mailbox to forward email messages sent to that mailbox to another user's mailbox in or outside of your organization.
+ms.topic: article
+author: kwekua
+ms.author: kwekua
 ms.assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
-description: "Email forwarding lets you to set up a mailbox to forward email messages sent to that mailbox to another user's mailbox in or outside of your organization."
+ms.date: 12/9/2016
+title: Configure email forwarding for a mailbox
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Configure email forwarding for a mailbox
@@ -70,5 +74,6 @@ This topic is for admins. If you want to forward your own email to another recip
 For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+
 
 

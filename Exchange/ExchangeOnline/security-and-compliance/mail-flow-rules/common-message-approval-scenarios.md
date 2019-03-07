@@ -1,15 +1,19 @@
 ---
-title: "Common message approval scenarios in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: Your organization may require certain types of messages be approved in order to meet legal or compliance requirements, or to implement a specific business workflow. This article discusses examples of common scenarios that you can set up by using Exchange.
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 5c13a07e-c21d-4502-a9f9-fb801197e1dd
-description: "Your organization may require certain types of messages be approved in order to meet legal or compliance requirements, or to implement a specific business workflow. This article discusses examples of common scenarios that you can set up by using Exchange."
+ms.date: 
+title: Common message approval scenarios in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Common message approval scenarios in Exchange Online
@@ -107,3 +111,4 @@ Here's an example where messages with sensitive information require approval. In
 ## See also
 
 [Manage message approval](manage-message-approval.md)
+

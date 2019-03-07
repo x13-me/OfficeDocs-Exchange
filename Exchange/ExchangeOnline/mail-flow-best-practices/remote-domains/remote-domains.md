@@ -1,15 +1,19 @@
 ---
-title: "Remote domains in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn about remote domains (message formatting settings for external domains) in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: f191e052-658d-4c74-bfe7-bcb1d525e4e3
-description: "Admins can learn about remote domains (message formatting settings for external domains) in Exchange Online."
+ms.date: 
+title: Remote domains in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Remote domains in Exchange Online
@@ -74,3 +78,4 @@ You can configure other message settings for remote domains by using Exchange On
 ## See also
 
 [Manage remote domains in Exchange Online](manage-remote-domains.md)
+

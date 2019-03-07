@@ -1,40 +1,42 @@
 ---
-title: "Mail flow rule actions in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: scotv
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: reference
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: reference
+author: chrisda
+ms.author: chrisda
 ms.assetid: 5d11a955-b1cc-4150-a0b9-a8cc48ba9bde
-description: "Summary: Learn about the actions that are available for mail flow rules (transport rules) in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/9/2018
+title: Mail flow rule actions in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Mail flow rule actions in Exchange Server
 
 Actions in mail flow rules (also known as transport rules) specify what you want to do to messages that match conditions of the rule. For example, you can create a rule that forwards message from specific senders to a moderator, or adds a disclaimer or personalized signature to all outbound messages.
-  
+
  Actions typically require additional properties. For example, when the rule redirects a message, you need to specify where to redirect the message. Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.
-  
+
 For more information about mail flow rules in Exchange Server, see [Mail flow rules in Exchange Server](mail-flow-rules.md).
-  
+
 For more information about conditions and exceptions in mail flow rules, see [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md).
-  
-For more information about actions in mail flow rules in Exchange Online Protection or Exchange Online, see [Transport rule actions](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx) or [Transport rule actions](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx).
-  
+
+For more information about actions in mail flow rules in Exchange Online Protection or Exchange Online, see [Mail flow rule actions in Exchange Online](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx).
+
 ## Actions for mail flow rules on Mailbox servers
 <a name="hub"> </a>
 
 The actions that are available in mail flow rules on Mailbox servers are described in the following table. Valid values for each property are described in [Property values](actions.md#prop) section.
-  
+
  **Notes**:
-  
+
 - After you select an action in the Exchange admin center (EAC), the value that's ultimately shown in the **Do the following** field is often different from the click path you selected. Also, when you create new rules, you can sometimes (depending on the selections you make) select a short action name from a template (a filtered list of actions) instead of following the complete click path. The short names and full click path values are shown in the EAC column in the table.
-    
+
 - The names of some of the actions that are returned by the **Get-TransportRuleAction** cmdlet are different than the corresponding parameter names, and multiple parameters might be required for an action.
-    
+
 |**Action in the EAC**|**Action parameter in the Exchange Management Shell**|**Property**|**Description**|**Available in**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Forward the message for approval to these people** <br/> **Forward the message for approval** \> **to these people** <br/> | _ModerateMessageByUser_ <br/> | `Addresses` <br/> |Forwards the message to the specified moderators as an attachment wrapped in an approval request. For more information, see [Common message approval scenarios ](http://technet.microsoft.com/library/5c13a07e-c21d-4502-a9f9-fb801197e1dd.aspx). You can't use a distribution group as a moderator.  <br/> |Exchange 2010 or later  <br/> |
@@ -61,12 +63,12 @@ The actions that are available in mail flow rules on Mailbox servers are describ
 |**Notify the recipient with a message** <br/> | _GenerateNotification_ <br/> | `NotificationMessageText` <br/> |Specifies the text, HTML tags, and message keywords to include in the notification message that's sent to the message's recipients. For example, you can notify recipients that the message was rejected by the rule, or marked as spam and delivered to their Junk Email folder.  <br/> |Exchange 2013 or later  <br/> |
 |**Properties of this rule** section \> **Audit this rule with severity level** <br/> | _SetAuditSeverity_ <br/> | `AuditSeverityLevel` <br/> |Specifies whether to:  <br/> • Prevent the generation of an incident report and the corresponding entry in the message tracking log.  <br/> • Generate an incident report and the corresponding entry in the message tracking log with the specified severity level (low, medium, or high).  <br/> |Exchange 2013 or later  <br/> |
 |**Properties of this rule** section \> **Stop processing more rules** <br/> **More options** \> **Properties of this rule** section \> **Stop processing more rules** <br/> | _StopRuleProcessing_ <br/> |n/a  <br/> |Specifies that after the message is affected by the rule, the message is exempt from processing by other rules.  <br/> |Exchange 2013 or later  <br/> |
-   
+
 ## Actions for mail flow rules on Edge Transport servers
 <a name="hub"> </a>
 
 A small subset of actions that are available on Mailbox servers are also available on Edge Transport servers, but there are also some actions that are only available on Edge Transport servers. There's no EAC on Edge Transport servers, so you can only manage mail flow rules in the Exchange Management Shell on the local Edge Transport server. The actions are described in the following table. The properties types are described in the [Property values](actions.md#prop) section.
-  
+
 |**Action parameter in the Exchange Management Shell**|**Property**|**Description**|**Available on**|**Available in**|
 |:-----|:-----|:-----|:-----|:-----|
 | _AddToRecipients_ <br/> | `Addresses` <br/> |Adds one or more recipients to the **To** field of the message. The original recipients can see the additional addresses.  <br/> |Mailbox servers and Edge Transport servers  <br/> |Exchange 2010 or later  <br/> |
@@ -83,12 +85,12 @@ A small subset of actions that are available on Mailbox servers are also availab
 | _SetSCL_ <br/> | `SCLValue` <br/> |Sets the SCL of the message to the specified value.  <br/> |Mailbox servers and Edge Transport servers  <br/> |Exchange 2010 or later  <br/> |
 | _SmtpRejectMessageRejectText_ <br/> _SmtpRejectMessageRejectStatusCode_ <br/> |First property: `String` <br/> Second property: `SMTPStatusCode` <br/> |Ends the SMTP connection between the sending server and the Edge Transport server with the specified SMTP status code and the specified rejection text. The recipient doesn't receive the original message or notification.  <br/> Valid values for the SMTP status code are integers from `400` through `500` as defined in RFC 3463.  <br/> If you specify the rejection text without specifying the SMTP status code, the default code `550` is used.  <br/> If you specify the SMTP status code without specifying the rejection text, the text that's used is `Delivery not authorized, message refused`.  <br/> |Edge Transport servers only  <br/> |Exchange 2010 or later  <br/> |
 | _StopRuleProcessing_ <br/> |n/a  <br/> |Specifies that after the message is affected by the rule, the message is exempt from processing by other rules.  <br/> |Mailbox servers and Edge Transport servers  <br/> |Exchange 2013 or later  <br/> |
-   
+
 ## Property values
 <a name="prop"> </a>
 
 The property values that are used for actions in mail flow rules are described in the following table.
-  
+
 |**Property**|**Valid values**|**Description**|
 |:-----|:-----|:-----|
 | `AddedManagerAction` <br/> |One of the following values:  <br/> **To** <br/> **Cc** <br/> **Bcc** <br/> **Redirect** <br/> |Specifies how to include the sender's manager in messages.  <br/> • If you select **To**, **Cc**, or **Bcc**, the sender's manager is added as a recipient in the specified field.  <br/> • If you select **Redirect**, the message is only delivered to the sender's manager without notifying the sender or the recipient.  <br/> This action only works if the sender's **Manager** attribute is defined in Active Directory.  <br/> |
@@ -106,14 +108,10 @@ The property values that are used for actions in mail flow rules are described i
 | `RMSTemplate` <br/> |Single RMS template object  <br/> |Specifies the Rights Management Services (RMS) template that's applied to the message.  <br/> In the EAC, you select the RMS template from a list.  <br/> In the Exchange Management Shell, use the **Get-RMSTemplate** cmdlet to see the RMS templates that are available.  <br/> RMS requires Exchange Enterprise client access licenses (CALs) for each mailbox. For more information about CALs, see [Exchange Server Licensing](https://go.microsoft.com/fwlink/p/?linkid=237292).  <br/> |
 | `SCLValue` <br/> |One of the following values:  <br/> **Bypass spam filtering** (`-1`)  <br/> Integers 0 through 9  <br/> |Specifies the spam confidence level (SCL) that's assigned to the message. A higher SCL value indicates that a message is more likely to be spam.  <br/> |
 | `String` <br/> |Single string  <br/> |Specifies the text that's applied to the specified message header field, NDR, or event log entry.  <br/> In the Exchange Management Shell, if the value contains spaces, enclose the value in quotation marks (").  <br/> |
-   
+
 ## For more information
 <a name="more"> </a>
 
 [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md)
-  
-[Transport rule actions](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx) for Exchange Online 
-  
-[Transport rule actions](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx) for Exchange Online Protection 
-  
 
+[Mail flow rule actions in Exchange Online](http://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx) for Exchange Online

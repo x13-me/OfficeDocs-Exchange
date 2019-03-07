@@ -1,15 +1,17 @@
 ---
-title: "Configure the number of sign-in failures before Outlook Voice Access users are disconnected"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can specify the number of sequential unsuccessful sign-in attempts that are allowed before a caller is disconnected. The value of this setting can be from 1 through 20. Setting this value too low can frustrate users. For most organizations, this value should be set to the default of three attempts.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 02f93888-168c-44bb-8cf6-17f5fcc3d733
-description: "You can specify the number of sequential unsuccessful sign-in attempts that are allowed before a caller is disconnected. The value of this setting can be from 1 through 20. Setting this value too low can frustrate users. For most organizations, this value should be set to the default of three attempts."
+ms.date: 11/17/2014
+title: Configure the number of sign-in failures before Outlook Voice Access users are disconnected
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Configure the number of sign-in failures before Outlook Voice Access users are disconnected
@@ -50,5 +52,6 @@ This example sets the number of sign-in failures before users are disconnected t
 ```
 Set-UMDialPlan -identity MyUMDialPlan -LogonFailuresBeforeDisconnect 5
 ```
+
 
 

@@ -1,15 +1,19 @@
 ---
-title: "Create an In-Place eDiscovery search"
-ms.author: markjjo
-author: markjjo
-manager: laurawi
-ms.date: 7/20/2017
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Use In-Place eDiscovery to search across all mailbox content, including deleted items and original versions of modified items for users placed on In-Place Hold and Litigation Hold.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: feedc0c9-4a44-4bb2-8520-cc29d66d4fc3
-description: "Use In-Place eDiscovery to search across all mailbox content, including deleted items and original versions of modified items for users placed on In-Place Hold and Litigation Hold."
+ms.date: 7/20/2017
+title: Create an In-Place eDiscovery search
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Create an In-Place eDiscovery search
@@ -197,5 +201,6 @@ Get-MailboxSearch "FY13 Q2 Financial Results" | Format-List Name,Status,LastRunB
     The reason is that it requires a lot of resources to return these properties for all eDiscovery searches in your organization.
 
 [Return to top](create-in-place-ediscovery-search.md#top)
+
 
 

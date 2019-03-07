@@ -1,23 +1,27 @@
 ---
-title: "Find and fix email delivery issues as an Office 365 for business admin"
-ms.author: chrisda
-author: chrisda
-manager: serdars`
-ms.audience: Admin
-ms.topic: troubleshooting
-f1_keywords:
-- 'O365P_MessageTrace'
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: MiniMaven
+ms.topic: troubleshooting
+author: chrisda
+f1_keywords:
+- O365P_MessageTrace
+ms.author: chrisda
+ms.assetid: e7758b99-1896-41db-bf39-51e2dba21de6
+description: Admins can learn how to fix email delivery issues in Exchange Online.
+title: Find and fix email delivery issues as an Office 365 for business admin
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - BCS160
 - MOE150
 - MED150
 - MBS150
 - MET150
-ms.assetid: e7758b99-1896-41db-bf39-51e2dba21de6
-description: "Admins can learn how to fix email delivery issues in Exchange Online."
+ms.audience: Admin
+ms.custom: MiniMaven
+ms.service: exchange-online
+manager: serdars`
+
 ---
 
 # Find and fix email delivery issues as an Office 365 for business admin
@@ -164,3 +168,4 @@ Possible causes include the following:
 - Latency in the service is causing delays.
 
 - The message was blocked by the filtering service.
+

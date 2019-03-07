@@ -1,23 +1,27 @@
 ---
-title: "IMAP migration in the Office 365 admin center"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/16/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom:
-- Adm_O365
-- Adm_O365_Setup
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 4682f2e4-f720-4868-91ab-207f5b0c325d
+ms.date: 8/16/2018
+description: Learn how to perform an IMAP migration in the Admin Center preview.
+title: IMAP migration in the Office 365 admin center
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MED150
 - MBS150
 - BCS160
-ms.assetid: 4682f2e4-f720-4868-91ab-207f5b0c325d
-description: "Learn how to perform an IMAP migration in the Admin Center preview."
+ms.audience: Admin
+ms.custom:
+- Adm_O365
+- Adm_O365_Setup
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # IMAP migration in the Office 365 admin center
@@ -108,5 +112,6 @@ To migrate Exchange mail to Office 365, see [Use express migration to migrate Ex
 [Prepare your Gmail or Google Apps account for connecting to Outlook and Office 365](prepare-gmail-or-g-suite-accounts.md)
 
 [Prepare your Outlook.com or Hotmail.com account for IMAP migration](migrating-your-outlook-com-account.md)
+
 
 

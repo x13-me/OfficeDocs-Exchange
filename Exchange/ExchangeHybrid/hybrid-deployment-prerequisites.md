@@ -2,9 +2,8 @@
 title: "Hybrid deployment prerequisites"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 7/25/2017
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -12,6 +11,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - Strat_EX_EXOBlocker
 - Hybrid
+- M365-email-calendar
 ms.assetid: e7454db0-fed4-4662-8890-9501126b1ba2
 description: "Summary: What your Exchange environment needs before you can set up a hybrid deployment."
 ---
@@ -102,16 +102,16 @@ The following prerequisites are required for configuring a hybrid deployment:
 
 Hybrid deployment features and components require certain incoming protocols, ports and connection endpoints to be accessible to Office 365 in order to work correctly. Before configuring your hybrid deployment, verify that your on-premises network and security configuration can support the features and components in the table below. In addition to allowing specific inbound protocols, ports, and endpoints, computers on your network also need to be able to access the IP addresses, ports, and URLs listed in [Office 365 URLs and IP address ranges](https://go.microsoft.com/fwlink/?LinkId=823100). 
   
-|**Transport Protocol**|**Upper Level Protocol**|**Feature/Component**|**On-premises Endpoint**|**On-premises Path**|**Authentication Provider**|**Authorization Method**|**Pre-Auth Supported?**|
+|**Transport Protocol**|**Upper Level Protocol**|**Feature/Component**|**On-premises Endpoint**|**On-premises Path**|**Authentication Provider**|**Authorization Method**| **Pre-Auth Supported?**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|TCP 25 (SMTP)  <br/> |SMTP/TLS  <br/> |Mail flow between Office 365 and on-premises  <br/> |Exchange 2019/2016 Mailbox/Edge  <br/> Exchange 2013 CAS/Edge  <br/> Exchange 2010 HUB/Edge  <br/> |N/A  <br/> |N/A  <br/> |Certificate-based  <br/> |No  <br/> |
-|TCP 443 (HTTPS)  <br/> |Autodiscover  <br/> |Autodiscover  <br/> |Exchange 2019/2016 Mailbox  <br/> Exchange 2013/2010 CAS  <br/> |/autodiscover/autodiscover.svc/wssecurity  <br/> /autodiscover/autodiscover.svc  <br/> |Azure AD authentication system  <br/> |WS-Security Authentication  <br/> |No  <br/> |
-|TCP 443 (HTTPS)  <br/> |EWS  <br/> |Free/busy, MailTips, Message Tracking  <br/> |Exchange 2019/2016 Mailbox  <br/> Exchange 2013/2010 CAS  <br/> |/ews/exchange.asmx/wssecurity  <br/> |Azure AD authentication system  <br/> |WS-Security Authentication  <br/> |No  <br/> |
-|TCP 443 (HTTPS)  <br/> |EWS  <br/> |Multi-mailbox search  <br/> |Exchange 2019/2016 Mailbox  <br/> Exchange 2013/2010 CAS  <br/> |/ews/exchange.asmx/wssecurity  <br/> /autodiscover/autodiscover.svc/wssecurity  <br/> /autodiscover/autodiscover.svc  <br/> |Auth Server  <br/> |WS-Security Authentication  <br/> |No  <br/> |
-|TCP 443 (HTTPS)  <br/> |EWS  <br/> |Mailbox migrations  <br/> |Exchange 2019/2016 Mailbox  <br/> Exchange 2013/2010 CAS  <br/> |/ews/mrsproxy.svc  <br/> |NTLM  <br/> |Basic  <br/> |Yes  <br/> |
-|TCP 443 (HTTPS)  <br/> |Autodiscover  <br/> EWS  <br/> |OAuth  <br/> |Exchange 2019/2016 Mailbox  <br/> Exchange 2013/2010 CAS  <br/> |/ews/exchange.asmx/wssecurity  <br/> /autodiscover/autodiscover.svc/wssecurity  <br/> /autodiscover/autodiscover.svc  <br/> |Auth Server  <br/> |WS-Security Authentication  <br/> |No  <br/> |
-|TCP 443 (HTTPS)  <br/> |N/A  <br/> |AD FS (included with Windows)  <br/> |Windows 2012 R2/2016 Server  <br/> |/adfs/\*  <br/> |Azure AD authentication system  <br/> |Varies per config.  <br/> |2-factor  <br/> |
-|TCP 443 (HTTPS)  <br/> |N/A  <br/> |Azure Active Directory Connect with AD FS  <br/> |Windows 2012 R2/2016 Server  <br/> |/adfs/\*  <br/> |Azure AD authentication system  <br/> |Varies per config.  <br/> |2-factor  <br/> |
+|TCP 25 (SMTP)|SMTP/TLS|Mail flow between Office 365 and on-premises|Exchange 2019/2016 Mailbox/Edge <br/><br/> Exchange 2013 CAS/Edge <br/><br/> Exchange 2010 HUB/Edge|N/A|N/A|Certificate-based|No|
+|TCP 443 (HTTPS)|Autodiscover|Autodiscover|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/autodiscover/autodiscover.svc/wssecurity <br/><br/> /autodiscover/autodiscover.svc|Azure AD authentication system|WS-Security Authentication|No|
+|TCP 443 (HTTPS)|EWS|Free/busy, MailTips, Message Tracking|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/ews/exchange.asmx/wssecurity|Azure AD authentication system|WS-Security Authentication|No|
+|TCP 443 (HTTPS)|EWS|Multi-mailbox search|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/ews/exchange.asmx/wssecurity <br/><br/> /autodiscover/autodiscover.svc/wssecurity <br/><br/> /autodiscover/autodiscover.svc|Auth Server|WS-Security Authentication|No|
+|TCP 443 (HTTPS)|EWS|Mailbox migrations|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/ews/mrsproxy.svc|NTLM|Basic|Yes|
+|TCP 443 (HTTPS)|Autodiscover <br/><br/> EWS|OAuth|Exchange 2019/2016 Mailbox <br/><br/> Exchange 2013/2010 CAS|/ews/exchange.asmx/wssecurity <br/><br/> /autodiscover/autodiscover.svc/wssecurity <br/><br/> /autodiscover/autodiscover.svc|Auth Server|WS-Security Authentication|No|
+|TCP 443 (HTTPS)|N/A|AD FS (included with Windows)|Windows 2012 R2/2016 Server|/adfs/\*|Azure AD authentication system|Varies per config.|2-factor|
+|TCP 443 (HTTPS)|N/A|Azure Active Directory Connect with AD FS|Windows 2012 R2/2016 Server|/adfs/\*|Azure AD authentication system|Varies per config.|2-factor|
    
 ## Recommended tools and services
 

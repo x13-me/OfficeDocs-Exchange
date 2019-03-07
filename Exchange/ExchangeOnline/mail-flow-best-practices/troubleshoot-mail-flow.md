@@ -1,14 +1,18 @@
 ---
-title: "Troubleshoot Office 365 mail flow"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+ms.author: chrisda
+manager: serdars
+ms.topic: article
+author: chrisda
+ms.service: exchange-online
 ms.assetid: ccb62ce1-a822-4859-a0db-3d546c5c1f50
-description: "Admins can learn about the mail flow troubleshooting options in Office 365."
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+description: Admins can learn about the mail flow troubleshooting options in Office 365.
+ms.audience: ITPro
+title: Troubleshoot Office 365 mail flow
+
 ---
 
 # Troubleshoot Office 365 mail flow
@@ -38,3 +42,4 @@ Mail flow issues can also happen when your MX record is not setup correctly. To 
 [Mail flow best practices for Exchange Online and Office 365 (overview)](mail-flow-best-practices.md)
 
 [Mail Flow in EOP](https://technet.microsoft.com/library/e109077e-cc85-4c19-ae40-d218ac7d0548.aspx)
+

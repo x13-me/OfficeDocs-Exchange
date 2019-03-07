@@ -1,15 +1,19 @@
 ---
-title: "Collaboration in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Office 365 and Exchange Online provides several features that can help your end users easily collaborate in email.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 7d433daa-c68f-4441-b2f5-1280991185c2
-description: "Office 365 and Exchange Online provides several features that can help your end users easily collaborate in email."
+ms.date: 
+title: Collaboration in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Collaboration in Exchange Online
@@ -56,3 +60,4 @@ The following table gives you a quick glance at each of the collaboration featur
 |**Shared calendar?**|Yes|Yes|No|
 |**Email arrives in user's personal Inbox?**|No. Email arrives in the public folder.|No. Email arrives in the Inbox of the shared mailbox.|Yes. Email arrives in the Inbox of a distribution group member.|
 |**Supported clients**|Outlook 2010 or later <br/> Outlook on the web <br/>|Outlook 2010 or later <br/> Outlook on the web|Outlook 2010 or later <br/> Outlook on the web|
+

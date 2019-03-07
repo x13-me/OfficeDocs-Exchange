@@ -1,17 +1,20 @@
 ---
-title: "Prepare Active Directory and domains for Exchange Server, Active Directory Exchange Server, Exchange Server Active Directory, Exchange 2019 Active Directory"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: get-started-article
-ms.prod: exchange-server-it-pro
 localization_priority: Critical
-ms.collection: Strat_EX_Admin
+monikerRange: exchserver-2016 || exchserver-2019
+description: 'Summary: Learn how to prepare Active Directory for Exchange 2016 or Exchange 2019.'
+ms.topic: get-started-article
+author: chrisda
+ms.author: chrisda
 ms.assetid: f895e1ce-d766-4352-ac46-ec959c9954a9
-description: "Summary: Learn how to prepare Active Directory for Exchange 2016 or Exchange 2019."
-monikerRange: "exchserver-2016 || exchserver-2019"
+ms.date:
+title: Prepare Active Directory and domains for Exchange Server, Active Directory Exchange Server, Exchange Server Active Directory, Exchange 2019 Active Directory
+ms.collection:
+- Strat_EX_Admin
+- exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Prepare Active Directory and domains for Exchange Server
@@ -21,7 +24,7 @@ Exchange uses Active Directory to store information about mailboxes and the conf
 - **Let the Exchange Setup wizard do it for you**: If you don't have a large Active Directory deployment, and you don't have a separate team that manages Active Directory, we recommend using the Setup wizard. Your account needs to be a member of both the Schema Admins and Enterprise Admins security groups. For more information about how to use the Setup wizard, check out [Install Exchange Mailbox servers using the Setup wizard](deploy-new-installations/install-mailbox-role.md).
 
 - **Follow the steps in this topic**: If you have a large Active Directory deployment, or if a separate team manages Active Directory, this topic is for you. Following the steps in this topic gives you much more control over each stage of preparation, and who can do each step. For example, Exchange administrators might not have the required permissions to extend the Active Directory schema.
- 
+
 For details on new schema classes and attributes that Exchange adds to Active Directory, including those made by Cumulative Updates (CUs), see [Active Directory schema changes in Exchange Server](active-directory/ad-schema-changes.md).
 
 For details about what's happening when Active Directory is being prepared for Exchange, see [What changes in Active Directory when Exchange is installed?](active-directory/ad-changes.md).
@@ -49,7 +52,7 @@ For details about what's happening when Active Directory is being prepared for E
 - The computer that you use for all procedures in this topic requires access to Setup.exe in the Exchange installation files:
 
     1. Download the latest version of Exchange. For more information, see [Updates for Exchange Server](../new-features/updates.md).
-    
+
     2. In File Explorer, right-click on the Exchange ISO image file that you downloaded, and then select **Mount**. Note the virtual DVD drive letter that's assigned.
 
     3. Open a Windows Command Prompt window. For example:
@@ -105,9 +108,9 @@ When you prepare Active Directory for Exchange, the following requirements apply
 - You need to select a name for the Exchange organization. The organization name is used internally by Exchange, isn't typically seen by users, doesn't affect the functionality of Exchange, and doesn't determine what you can use for email addresses.
 
   - The organization name can't contain more than 64 characters, and can't be blank.
-    
+
   - Valid characters are A to Z, a to z, 0 to 9, hyphen or dash (-), and space, but leading or trailing spaces aren't allowed.
-    
+
   - You can't change the organization name after it's set.
 
 To prepare Active Directory for Exchange, run the following command in a Windows Command Prompt window:
@@ -172,7 +175,7 @@ When you prepare specific domains in your Active Directory forest, the following
 - Your account needs to be a member of the Domain Admins group in the domain that you want to prepare.
 
 - If the domain that you want to prepare was created **after** you ran /PrepareAD in Step 2, your account also needs to be a member of the Organization Management role group in Exchange.
-  
+
 To a prepare a specific domain in your Active Directory forest, run the following command in a Windows Command Prompt window:
 
 ```
@@ -181,7 +184,7 @@ To a prepare a specific domain in your Active Directory forest, run the followin
 
 **Notes**:
 
-- If the computer is a member of the domain that you want to prepare, you can use the _/PrepareDomain_ switch by itself. Otherwise, you need to specify the FQDN of the domain. 
+- If the computer is a member of the domain that you want to prepare, you can use the _/PrepareDomain_ switch by itself. Otherwise, you need to specify the FQDN of the domain.
 
 - You need to run this command for each Active Directory domain where you'll install an Exchange server or where mail-enabled users will be located.
 
@@ -223,7 +226,8 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |**Exchange 2019 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
-|Exchange 2019 RTM|17000|13236|16751|
+|Exchange 2019 CU1|17000|13236|16752|
+|Exchange 2019 RTM|17000|13236|16752|
 |Exchange 2019 Preview|15332|13236|16213|
 ::: moniker-end
 
@@ -232,6 +236,7 @@ The tables in the following sections contain the Exchange objects in Active Dire
 
 |**Exchange 2016 version**|**rangeUpper**|**objectVersion (Default)**|**objectVersion (Configuration)**|
 |:-----|:-----|:-----|:-----|
+|Exchange 2016 CU12|15332|13236|16215|
 |Exchange 2016 CU11|15332|13236|16214|
 |Exchange 2016 CU10|15332|13236|16213|
 |Exchange 2016 CU9|15332|13236|16213|
@@ -246,3 +251,4 @@ The tables in the following sections contain the Exchange objects in Active Dire
 |Exchange 2016 RTM|15317|13236|16210|
 |Exchange 2016 Preview|15317|13236|16041|
 ::: moniker-end
+

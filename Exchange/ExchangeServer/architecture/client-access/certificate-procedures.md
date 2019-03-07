@@ -1,32 +1,33 @@
 ---
-title: "Certificate procedures in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: A list of certificate management tasks in Exchange Server.'
+ms.topic: overview
+author: chrisda
+ms.author: chrisda
 ms.assetid: 8975848d-07f0-4643-9eac-20aece69945f
+ms.date: 7/5/2018
+title: Certificate procedures in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
 
-description: "Summary: A list of certificate management tasks in Exchange Server."
 ---
 
 # Certificate procedures in Exchange Server
 
 Ensuring that certificates are installed and configured correctly is key to delivering a secure messaging infrastructure for the enterprise. In Exchange Server you can manage certificates in the Exchange admin center (EAC), and in the Exchange Management Shell. Certificate management in the EAC has been improved over certificate management in the Exchange Management Console in Exchange Server 2010. Specifically, certificate management in the EAC can help administrators by:
-  
+
 - Minimizing the number of certificates that are required.
-    
+
 - Minimizing the interaction that's required for certificates.
-    
+
 - Allowing the centralized installation and management of certificates on all Exchange servers in the organization.
-    
+
 For more information about certificates in Exchange, see [Digital certificates and encryption in Exchange Server](certificates.md).
-  
+
 The tasks that are associated with certificate management in Exchange are described in the following table.
-  
+
 |**Task**|**EAC**|**Exchange Management Shell**|**Topic**|**Comments**|
 |:-----|:-----|:-----|:-----|:-----|
 |Create a new self-signed certificate on an Exchange server.  <br/> |**Servers** \> **Certificates** \> select the server \> **Add** ![Add icon](../../media/ITPro_EAC_AddIcon.png) \> **Create a self-signed certificate** <br/> |**New-ExchangeCertificate** <br/> |[Create a new Exchange Server self-signed certificate](create-self-signed-certificates.md) <br/> |You can create new self-signed certificates and configure the certificates for Exchange services in one step.  <br/> |
@@ -38,5 +39,6 @@ The tasks that are associated with certificate management in Exchange are descri
 |Export an existing certificate or certificate request from an Exchange server.  <br/> |**Servers** \> **Certificates** \> select the server \> select the certificate \> **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Export Exchange Certificate** <br/> |**Export-ExchangeCertificate** <br/> |[Export a certificate from an Exchange server](export-certificates.md) <br/> |You can only export valid (unexpired) certificates where the **PrivateKeyExportable** property has the value `True`.  <br/> You can only export pending certificate requests in the Exchange Management Shell. You can't import an exported pending certificate request.  <br/> |
 |Import (install) a certificate on an Exchange server.  <br/> |**Servers** \> **Certificates** \> select the server \> **More options** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png) \> **Import Exchange Certificate** <br/> |**Import-ExchangeCertificate** <br/> |[Import or install a certificate on an Exchange server](import-certificates.md) <br/> |Import a certificate that was exported from another server.  <br/> |
 |View existing certificates or certificate requests on an Exchange server, or view the details for a specific certificate or certificate request.  <br/> |**Servers** \> **Certificates** \> select the server  <br/> For details on a specific certificate or certificate request, select the item from the list, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png).  <br/> |**Get-ExchangeCertificate** <br/> |n/a  <br/> |Some certificate properties are visible in the details pane in the EAC when you select the certificate or certificate request from the list.  <br/> Some certificate properties aren't visible in the standard view in the Exchange Management Shell. To see them, you need to specify the property name (exact name or wildcard match) with the **Format-Table** or **Format-List** cmdlets. For more information, see [Get-ExchangeCertificate](http://technet.microsoft.com/library/e368589a-6510-4209-9f10-171d1990cd7d.aspx).  <br/> |
-   
+
+
 

@@ -1,14 +1,18 @@
 ---
-title: "Use Directory Based Edge Blocking to reject messages sent to invalid recipients"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+ms.author: chrisda
+manager: serdars
+ms.topic: article
+author: chrisda
+ms.service: exchange-online
 ms.assetid: ca7b7416-92ed-40ad-abdb-695be46ea2e4
-description: "Admins can learn how to configure Directory-Based Edge Blocking (DBDB) to reject messages sent to invalid recipients in Exchange Online and Exchange Online Protection during a migration."
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+description: Admins can learn how to configure Directory-Based Edge Blocking (DBDB) to reject messages sent to invalid recipients in Exchange Online and Exchange Online Protection during a migration.
+ms.audience: ITPro
+title: Use Directory Based Edge Blocking to reject messages sent to invalid recipients
+
 ---
 
 # Use Directory Based Edge Blocking to reject messages sent to invalid recipients
@@ -54,3 +58,4 @@ If a message is sent to a valid email address in Office 365, the message continu
 - Until all of your valid recipients have been added to Exchange Online and replicated through the system, you should leave the accepted domain configured as **Internal relay**. Once the domain type has been changed to **Authoritative**, DBEB is designed to allow any SMTP address that has been added to the service (except for mail-enabled public folders). There might be infrequent instances where recipient addresses that do not exist in your Office 365 organization are allowed to relay through the service.
 
 - For more information about DBEB and mail-enabled public folders, see [Office 365 Directory Based Edge Blocking support for on-premises Mail Enabled Public Folders](https://blogs.technet.microsoft.com/exchange/2017/05/19/office-365-directory-based-edge-blocking-support-for-on-premises-mail-enabled-public-folders/).
+

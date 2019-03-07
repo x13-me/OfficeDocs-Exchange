@@ -1,15 +1,19 @@
 ---
-title: "Remove a public folder"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You may need to remove public folders that are no longer being used in your organization. To help determine which public folders should be removed, see View statistics for public folders and public folder items.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 334b831d-e372-4d85-a407-5c8a5d0e78de
-description: "You may need to remove public folders that are no longer being used in your organization. To help determine which public folders should be removed, see View statistics for public folders and public folder items."
+ms.date: 6/24/2018
+title: Remove a public folder
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Remove a public folder
@@ -62,5 +66,6 @@ Remove-PublicFolder -Identity "\Marketing" -Recurse:$True
 ```
 
 For detailed syntax and parameter information, see [Remove-PublicFolder](https://technet.microsoft.com/library/dda460e0-2601-49ae-a43f-c75c69719196.aspx).
+
 
 

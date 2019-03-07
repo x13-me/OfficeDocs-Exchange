@@ -1,15 +1,19 @@
 ---
-title: "Use mail flow rules to automatically add meetings to calendars in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to use mail flow rules to add meetings to calendars in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: c93c31a4-fe5e-479b-83b6-ee114d4f236c
-description: "Admins can learn how to use mail flow rules to add meetings to calendars in Exchange Online."
+ms.date: 
+title: Use mail flow rules to automatically add meetings to calendars in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Use mail flow rules to automatically add meetings to calendars in Exchange Online
@@ -139,3 +143,4 @@ To verify that you have successfully configured Direct to Calendar meeting invit
 - If the designated mailbox sends a meeting cancellation for a Direct to Calendar meeting, the cancelled meeting title is always changed to **CANCELED: \<previous meeting title\>**, and the cancelled meeting remains in the calendars of attendees until they manually remove it.
 
 - Meeting cancellation messages for Direct to Calendar meetings will always appear in the Inbox of recipients.
+

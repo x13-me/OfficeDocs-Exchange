@@ -1,15 +1,17 @@
 ---
-title: "Manage role groups"
-ms.author: dstrome
-author: dstrome
-manager: serdars
-ms.date: 7/5/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to add, remove, copy, and view management role groups in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: dstrome
+ms.author: dstrome
 ms.assetid: ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c
-description: "Summary: Learn how to add, remove, copy, and view management role groups in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/5/2018
+title: Manage role groups
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Manage role groups
@@ -426,7 +428,7 @@ When you use the EAC to change the scope on a role group, you're actually changi
 
 2. Select the role group you want to change the scope on, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
 
-3. Select one of the two following **Write scope** options: 
+3. Select one of the two following **Write scope** options:
 
   - A write scope from the drop-down box, where you can select either the default write scope or a custom write scope.
 
@@ -442,7 +444,7 @@ The scopes on the role assignments are managed using the **Set-ManagementRoleAss
 
 To change the scope of all the role assignments between a role group and a set of management roles at the same time, you need to first retrieve the role assignments on the role group, and then set the new scope on each of the assignments. You can do this by using the **Get-ManagementRoleAssignment** cmdlet to retrieve the role assignments, and then pipe them to the **Set-ManagementRoleAssignment** cmdlet.
 
-This procedure uses the concepts of pipelining and the _WhatIf_ switch. For more information, see the following topics: 
+This procedure uses the concepts of pipelining and the _WhatIf_ switch. For more information, see the following topics:
 
 - [Pipelining](http://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
 
@@ -473,7 +475,7 @@ Role assignments between the role group and the roles assigned to it can use the
 
 The scopes on the role assignments are managed using the **Set-ManagementRoleAssignment** cmdlet. You can't manage scopes using the **Set-RoleGroup** cmdlet.
 
-This procedure uses the concepts of pipelining and the **Format-List** cmdlet. For more information, see the following topics: 
+This procedure uses the concepts of pipelining and the **Format-List** cmdlet. For more information, see the following topics:
 
 - [Pipelining](http://technet.microsoft.com/library/59411ed3-926b-4eec-a462-84e6b26056c9.aspx)
 
@@ -538,7 +540,7 @@ Role group delegates are users or universal security groups (USGs) that can add 
 
 ### Use the Exchange Management Shell to add a delegate to a role group
 
-To change the list of delegates on a role group, you use the _ManagedBy_ parameter on the **Set-RoleGroup** cmdlet. The _ManagedBy_ parameter overwrites the entire delegate list on the role group. If you want to add delegates to the role group rather than replace the entire list of delegates, use the following steps: 
+To change the list of delegates on a role group, you use the _ManagedBy_ parameter on the **Set-RoleGroup** cmdlet. The _ManagedBy_ parameter overwrites the entire delegate list on the role group. If you want to add delegates to the role group rather than replace the entire list of delegates, use the following steps:
 
 1. Store the role group in a variable using the following command.
 
@@ -575,7 +577,7 @@ For detailed syntax and parameter information, see [Set-RoleGroup](http://techne
 
 ### Use the Exchange Management Shell to remove a delegate from a role group
 
-To change the list of delegates on a role group, you use the _ManagedBy_ parameter on the **Set-RoleGroup** cmdlet. The _ManagedBy_ parameter overwrites the entire delegate list on the role group. If you want to remove delegates from the role group rather than replace the entire list of delegates, use the following steps: 
+To change the list of delegates on a role group, you use the _ManagedBy_ parameter on the **Set-RoleGroup** cmdlet. The _ManagedBy_ parameter overwrites the entire delegate list on the role group. If you want to remove delegates from the role group rather than replace the entire list of delegates, use the following steps:
 
 1. Store the role group in a variable using the following command.
 
@@ -621,5 +623,6 @@ To verify that you have successfully changed the delegate list on a role group, 
   ```
 
 2. Verify that the delegates listed on the _ManagedBy_ property include only the delegates that should be able to manage the role group.
+
 
 

@@ -1,15 +1,19 @@
 ---
-title: "Manage mail flow using a third-party cloud service with Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: A couple of different scenarios that illustrate how to configure Exchange Online mail flow through a third-party cloud service.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: d0d10ab1-08c1-4ffe-aaa5-f9dbd9a118ed
-description: "A couple of different scenarios that illustrate how to configure Exchange Online mail flow through a third-party cloud service."
+ms.date: 
+title: Manage mail flow using a third-party cloud service with Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage mail flow using a third-party cloud service with Exchange Online
@@ -27,7 +31,7 @@ This topic covers the following complex mail flow scenarios using Exchange Onlin
 
 ### Scenario 1 - MX record points to third-party spam filtering
 
-- I plan to use Exchange Online to host all my organization's mailboxes. My organization uses a third-party cloud service to filter spam and malware. All email that the Internet sends must be filtered by this third-party cloud service.
+- I plan to use Exchange Online to host all my organization's mailboxes. My organization uses a third-party cloud service to filter spam and malware. All email that the internet sends must be filtered by this third-party cloud service.
 
 For this scenario, your organization's mail flow setup looks like the following diagram.
 
@@ -84,4 +88,5 @@ We don't recommend or support this scenario because it causes Office 365 spam fi
 [Troubleshoot Office 365 mail flow](troubleshoot-mail-flow.md)
 
 [Test mail flow by validating your Office 365 connectors](test-mail-flow.md)
+
 

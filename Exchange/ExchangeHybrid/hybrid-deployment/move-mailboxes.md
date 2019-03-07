@@ -2,8 +2,7 @@
 title: "Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 6/25/2018
+manager: serdars
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -13,6 +12,8 @@ localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
+- M365-email-calendar
 ms.assetid: d6289f7b-f67e-48db-9570-9fd3c9547548
 description: "With an Exchange-based hybrid deployment, you can choose to either move on-premises Exchange mailboxes to the Exchange Online organization or move Exchange Online mailboxes to the Exchange organization. When you move mailboxes between the on-premises and Exchange Online organizations, you use migration batches to perform the remote mailbox move request. This approach allows you to move existing mailboxes instead of creating new user mailboxes and importing user information. This approach is different than migrating user mailboxes from an on-premises Exchange organization to Exchange Online as part of a complete Exchange migration to the cloud. The mailbox moves discussed in this topic are part of administrative Exchange management in a longer-term coexistence relationship between on-premises Exchange and Exchange Online organizations."
 ---
@@ -24,7 +25,10 @@ With an Exchange-based hybrid deployment, you can choose to either move on-premi
 For more information about migrating on-premises Exchange organizations to Exchange Online, see [Ways to migrate multiple email accounts to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=524030).
   
 > [!IMPORTANT]
-> You must have configured a hybrid deployment between your on-premises and Exchange Online organizations to complete the mailbox moves procedures in this topic. For more information about hybrid deployments, see [Exchange Server Hybrid Deployments](../exchange-hybrid.md). > > Before you move Unified Messaging-enabled (UM) mailboxes to Exchange Online, you need to make sure that on-premises Skype for Business 2015, Skype for Business Online, and Exchange Online, all meet the requirements specified in [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md). For information on how to map your on-premises UM mailbox policies to policies in Exchange Online, see [Set-UMMailboxPolicy](http://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx). 
+> You must have configured a hybrid deployment between your on-premises and Exchange Online organizations to complete the mailbox moves procedures in this topic. For more information about hybrid deployments, see [Exchange Server Hybrid Deployments](../exchange-hybrid.md). 
+
+> [!IMPORTANT]
+> Before you move Unified Messaging-enabled (UM) mailboxes to Exchange Online, you need to make sure that on-premises Skype for Business 2015, Skype for Business Online, and Exchange Online, all meet the requirements specified in [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md). For information on how to map your on-premises UM mailbox policies to policies in Exchange Online, see [Set-UMMailboxPolicy](http://technet.microsoft.com/library/df67ae65-cfae-4f52-9d12-19f863808705.aspx). 
   
 ## What do you need to know before you begin?
 

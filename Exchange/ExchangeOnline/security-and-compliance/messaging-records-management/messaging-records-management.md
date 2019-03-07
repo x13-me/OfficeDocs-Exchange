@@ -1,15 +1,19 @@
 ---
-title: "Messaging records management"
-ms.author: markjjo
-author: markjjo
-manager: scotv
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: Users send and receive email every day. If left unmanaged, the volume of email generated and received each day can inundate users, impact user productivity, and expose your organization to risks. As a result, email lifecycle management is a critical component for most organizations.
+ms.topic: overview
+author: markjjo
+ms.author: markjjo
 ms.assetid: 0dd92e9c-881e-43c0-9bbf-f41fdc9dfd87
-description: "Users send and receive email every day. If left unmanaged, the volume of email generated and received each day can inundate users, impact user productivity, and expose your organization to risks. As a result, email lifecycle management is a critical component for most organizations."
+ms.date: 7/11/2018
+title: Messaging records management
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Messaging records management
@@ -82,5 +86,6 @@ Optionally, you can use RPTs and personal tags to allow users to clean up their 
 [Messaging Records Management Terminology in Exchange 2013](https://technet.microsoft.com/library/de3e3503-6de3-4666-aeb9-cd877efb93bb.aspx)
 
 [Retention tags and retention policies](retention-tags-and-policies.md)
+
 
 

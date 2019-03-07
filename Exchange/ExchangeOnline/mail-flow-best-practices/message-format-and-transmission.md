@@ -1,14 +1,17 @@
 ---
-title: "Message format and transmission in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: laurawi
-ms.date: 6/24/2018
 ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+ms.author: chrisda
+manager: laurawi
+ms.topic: article
+author: chrisda
+ms.service: exchange-online
 ms.assetid: 828cf844-0f26-44f4-9a76-20bdbd58b992
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.date: 6/24/2018
+title: Message format and transmission in Exchange Online
 
 ---
 
@@ -42,7 +45,7 @@ The following table describes the message transmission formats that Exchange Onl
 |**Transmission format**|**Description**|
 |:-----|:-----|
 |**Transport Neutral Encapsulation Format (TNEF)**| TNEF is a Microsoft-specific format for transmitting formatted email messages. A TNEF message contains a plain text version of the message and an attachment that packages the original formatted version of the message. Typically, this attachment is named Winmail.dat. The Winmail.dat attachment includes formatting, attachments, and Outlook-specific features such as meeting requests.  <br/>  An email client that fully understands TNEF, such as Outlook, processes the Winmail.dat attachment and displays the original message content without ever displaying the Winmail.dat attachment. An email client that doesn't understand TNEF may present a TNEF message in any of the following ways:  <br/>  The plain text version of the message is displayed, and the message contains an attachment named Winmail.dat, Win.dat, or some other generic name such as Att_nnnnn_.dat or Att_nnnnn_.eml where the _nnnnn_ placeholder represents a random number.  <br/>  The plain text version of the message is displayed. The TNEF attachment is ignored or removed. The result is a plain text message.  <br/>  There are third-party utilities that can help convert Winmail.dat attachments.|
-|Multipurpose Internet Mail Extensions (MIME)|MIME is an Internet standard that supports text in character sets other than ASCII, non-text attachments, message bodies with multiple parts, and header information in non-ASCII character sets.|
+|**Multipurpose Internet Mail Extensions (MIME)**|MIME is an internet standard that supports text in character sets other than ASCII, non-text attachments, message bodies with multiple parts, and header information in non-ASCII character sets.|
 
 ## Message format and transmission settings
 <a name="settings"> </a>
@@ -78,5 +81,6 @@ Users can control the following settings:
     For more information on Outlook Web App settings, see [Create and respond to messages in Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkID=399384).
 
 [Return to top](message-format-and-transmission.md#RTT)
+
 
 

@@ -1,15 +1,19 @@
 ---
-title: "Enable or disable MAPI for a mailbox"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 12/31/2017
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can use the Exchange admin center or Exchange Online PowerShell to enable or disable MAPI for a user mailbox. When MAPI is enabled, a user's mailbox can be accessed by Outlook or other MAPI email clients. When MAPI is disabled, it can't be accessed by Outlook or other MAPI clients. However, the mailbox will continue to receive email messages, and, assuming that the mailbox is enabled to support access by those clients, a user can access the mailbox to send and receive email by using Outlook Web App, a POP email client, or an IMAP client.
+ms.topic: article
+author: kwekua
+ms.author: kwekua
 ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
-description: "You can use the Exchange admin center or Exchange Online PowerShell to enable or disable MAPI for a user mailbox. When MAPI is enabled, a user's mailbox can be accessed by Outlook or other MAPI email clients. When MAPI is disabled, it can't be accessed by Outlook or other MAPI clients. However, the mailbox will continue to receive email messages, and, assuming that the mailbox is enabled to support access by those clients, a user can access the mailbox to send and receive email by using Outlook Web App, a POP email client, or an IMAP client."
+ms.date: 12/31/2017
+title: Enable or disable MAPI for a mailbox
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Enable or disable MAPI for a mailbox
@@ -91,5 +95,6 @@ Or
   ```
 
     If MAPI is enabled, the value for the _MapiEnabled_ property is `True`. If MAPI is disabled, the value is `False`.
+
 
 

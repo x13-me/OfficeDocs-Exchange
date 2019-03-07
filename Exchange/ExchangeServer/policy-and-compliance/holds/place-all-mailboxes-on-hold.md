@@ -1,15 +1,17 @@
 ---
-title: "Place all mailboxes on hold"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Administrators can learn about the differences between Litigation Hold and In-Place Hold, and how to place mailboxes on In-Place Hold.
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 4c141604-3210-44cc-b98e-f3e0f15613b8
-description: "Administrators can learn about the differences between Litigation Hold and In-Place Hold, and how to place mailboxes on In-Place Hold."
+ms.date:
+title: Place all mailboxes on hold
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Place all mailboxes on hold
@@ -52,7 +54,7 @@ You can use the EAC to select up to 500 mailboxes and place them on hold. For de
 
 To place more than 500 users on In-Place Hold, use the Exchange Management Shell. For details, see [New-MailboxSearch](http://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
 
-> [!TIP] 
+> [!TIP]
 > In hybrid environments, you can use the inactive mailbox feature in Exchange Online to retain mailboxes without consuming a license or requiring an account for the mailbox. The inactive mailbox feature requires an "Exchange Online Plan 2, Office 365 Enterprise E3 and E5 subscriptions" license. If you have an Exchange Online Plan 1 license, you need to assign a separate "Exchange Online Archiving" license to the mailbox. For more information, see [Inactive mailbox](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365).
 
 ## More information
@@ -86,3 +88,4 @@ To place more than 500 users on In-Place Hold, use the Exchange Management Shell
    ```
 
    You can use other user mailbox properties in a filter to include or exclude mailboxes. For details, see [Filterable Properties for the -Filter Parameter](http://technet.microsoft.com/library/b02b0005-2fb6-4bc2-8815-305259fa5432.aspx).
+

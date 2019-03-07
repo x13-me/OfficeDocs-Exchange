@@ -1,15 +1,17 @@
 ---
-title: "Create a theme for Outlook on the web in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn how to create a custom theme for Outlook on the web in Exchange Server 2016 or Exchange Server 2019.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 7e1fa13c-3de3-45c2-b1fa-e74fc8487bda
-description: "Summary: Learn how to create a custom theme for Outlook on the web in Exchange Server 2016 or Exchange Server 2019."
+ms.date:
+title: Create a theme for Outlook on the web in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Create a theme for Outlook on the web in Exchange Server
@@ -91,7 +93,7 @@ After you've identified the theme that's closest to what you want (for example, 
 
 You need to configure a unique display name and sort order for the new theme, because the new theme has the same display name and sort order as the theme you copied. The theme's display name appears in the **Change theme** panel in Outlook on the web. The sort order determines where the theme appears in the list of themes.
 
-1. Use Notepad to open the file named `themeinfo.xml` in the new theme folder `%ExchangeInstallPath%ClientAccess\OWA\prem\<ExchangeVersion>\resources\themes\<NewThemeFolder>` that you created in Step 1. The contents of the file look like this: 
+1. Use Notepad to open the file named `themeinfo.xml` in the new theme folder `%ExchangeInstallPath%ClientAccess\OWA\prem\<ExchangeVersion>\resources\themes\<NewThemeFolder>` that you created in Step 1. The contents of the file look like this:
 
    `<theme displayname="__<CopiedThemeName>__" sortorder="<CopiedThemeSortOrder>"/>`
 
@@ -124,12 +126,12 @@ The image files that exist in these folders are described in the following table
 |headerbgmaing2.png|2000 x 50|32|The header image for themes that use a static header image. The size of the file varies. <br/><br/> If the theme doesn't use a static header image, the file is 1 x 1, and the size is 2815 bytes.|
 |headerbgmaing2.gif|2000 x 50|24|The header image for themes that use an animated header image. The size of the file varies. <br/><br/> If the theme doesn't use an animated header image, the file is 1 x 1, and the size is 43 bytes.|
 |themepreview.png|64 x 64|24 or 8|The small square image that represents the theme in the **Change theme** panel in Outlook on the web. <br/><br/> For the Default theme and the Black theme, this file 1 x 1, and the preview image is a black square.|
- 
+
 You can edit the existing image file, or replace the file with a new file that has the same name and dimensions.
 
 ### Colors
 
-Theme colors are defined in the following files in the `%ExchangeInstallPath%ClientAccess\OWA\prem\<ExchangeVersion>\resources\styles` folder: 
+Theme colors are defined in the following files in the `%ExchangeInstallPath%ClientAccess\OWA\prem\<ExchangeVersion>\resources\styles` folder:
 
 - `fabric.color.theme.<ThemeFolderName>.css`
 
@@ -257,3 +259,4 @@ The built-in Outlook on the web themes are located in the folder `%ExchangeInsta
 |whimsical|Whimsical|220|Static|
 |wntrlnd|Winterland|260|Static|
 |wrld|One World|270|Static|
+

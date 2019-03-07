@@ -2,15 +2,15 @@
 title: "IRM in Exchange hybrid deployments"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 12/9/2016
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: ba6ec48b-8f79-4807-b74b-fd442bbbe82f
 description: "Summary: How IRM works in an Exchange hybrid environment, and how to configure IRM to work between Exchange Online and your on-premises Exchange servers."
 ---

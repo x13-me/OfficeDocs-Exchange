@@ -1,15 +1,19 @@
 ---
-title: "Manage accepted domains in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to view and modify accepted domains in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 0fc0ecc0-e133-48fa-9d72-cb4793a73960
-description: "Admins can learn how to view and modify accepted domains in Exchange Online."
+ms.date: 
+title: Manage accepted domains in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Manage accepted domains in Exchange Online
@@ -122,3 +126,4 @@ To verify that you've successfully configured the domain type, do either of the 
 - In the EAC at **Mail flow** \> **Accepted domains**, click **Refresh** ![Refresh Icon](../../media/ITPro_EAC_RefreshIcon.png). In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly.
 
 - In Exchange Online PowerShell, run the command `Get-AcceptedDomain`. In the list of accepted domains, verify the domain type value of the accepted domain is configured correctly.
+

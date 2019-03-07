@@ -94,7 +94,7 @@ The following table describes the Exchange services that are installed on Mailbo
 <tr class="odd">
 <td><p>Microsoft Exchange EdgeSync</p></td>
 <td><p>MSExchangeEdgeSync</p></td>
-<td><p>Replicates configuration and recipient data between the Mailbox server and UNRESOLVED_TOKEN_VAL(exADLDS_1st) (AD LDS) on subscribed Edge Transport servers over a secure LDAP channel.</p>
+<td><p>Replicates configuration and recipient data between the Mailbox server and Active Directory Lightweight Directory Services (AD LDS) on subscribed Edge Transport servers over a secure LDAP channel.</p>
 <p>If you don't have any subscribed Edge Transport servers, you can disable this service.</p></td>
 <td><p>Automatic</p></td>
 <td><p>Local System</p></td>
@@ -423,7 +423,7 @@ The following table describes the Exchange services that are installed on Edge T
 <tr class="odd">
 <td><p>Microsoft Exchange ADAM</p></td>
 <td><p>ADAM_MSExchange</p></td>
-<td><p>Stores configuration data and recipient data on the Edge Transport server. This service represents the named instance of the UNRESOLVED_TOKEN_VAL(exADLDS_1st) (AD LDS) that's automatically created by Exchange Setup.</p></td>
+<td><p>Stores configuration data and recipient data on the Edge Transport server. This service represents the named instance of the Active Directory Lightweight Directory Services (AD LDS) that's automatically created by Exchange Setup.</p></td>
 <td><p>Automatic</p></td>
 <td><p>Network Service</p></td>
 <td><p>COM+ Event System</p></td>
@@ -447,7 +447,7 @@ The following table describes the Exchange services that are installed on Edge T
 <tr class="odd">
 <td><p>Microsoft Exchange Credential Service</p></td>
 <td><p>MSExchangeEdgeCredential</p></td>
-<td><p>Monitors credential changes in UNRESOLVED_TOKEN_VAL(exADLDS_1st) (AD LDS) and installs the changes on the Edge Transport server.</p></td>
+<td><p>Monitors credential changes in Active Directory Lightweight Directory Services (AD LDS) and installs the changes on the Edge Transport server.</p></td>
 <td><p>Automatic</p></td>
 <td><p>Local System</p></td>
 <td><p>Microsoft Exchange ADAM</p></td>

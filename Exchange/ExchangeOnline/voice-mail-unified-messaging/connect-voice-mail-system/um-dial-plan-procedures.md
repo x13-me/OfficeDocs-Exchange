@@ -1,15 +1,17 @@
 ---
-title: "UM dial plan procedures [EXO]"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Create a UM dial plan
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 13db1242-4130-41fa-bde9-b4dff60fe1e6
-description: "Create a UM dial plan"
+ms.date: 11/17/2014
+title: UM dial plan procedures [EXO]
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # UM dial plan procedures [EXO]
@@ -31,5 +33,6 @@ description: "Create a UM dial plan"
 [Configure a dial plan for users who have similar names](configure-dial-plan-for-users-with-similar-names.md)
 
 [Delete a UM dial plan](delete-um-dial-plan.md)
+
 
 

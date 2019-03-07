@@ -1,15 +1,19 @@
 ---
-title: "Test a mail flow rule in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to test mail flow rules in Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 3d949e2a-8ba4-4261-8cfb-736fd2446ea1
-description: "Learn how to test mail flow rules in Exchange Online."
+ms.date: 
+title: Test a mail flow rule in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Test a mail flow rule in Exchange Online
@@ -146,3 +150,4 @@ To learn more, see [View mail protection reports](https://go.microsoft.com/fwlin
 [Mail flow rules (transport rules) in Exchange Online Protection](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
 
 [Mail flow rules (transport rules) in Exchange Server](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
+

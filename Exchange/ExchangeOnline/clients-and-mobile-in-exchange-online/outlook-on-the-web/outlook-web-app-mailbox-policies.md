@@ -1,15 +1,19 @@
 ---
-title: "Outlook on the web mailbox policies in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: overview
-ms.service: exchange-online
 localization_priority: Normal
+description: Use Microsoft Outlook on the web mailbox policies to create organization-level policies to manage access to features in Outlook on the web.
+ms.topic: overview
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 213b8b7a-1c29-49ee-8c98-d0364ddf4f9d
-description: "Use Microsoft Outlook on the web mailbox policies to create organization-level policies to manage access to features in Outlook on the web."
+ms.date: 
+title: Outlook on the web mailbox policies in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Outlook on the web mailbox policies in Exchange Online
@@ -19,3 +23,4 @@ In Exchange Online, Outlook on the web mailbox policies control the availability
 Every Exchange Online organization has a default Outlook on the web mailbox policy named OwaMailboxPolicy-Default that's applied to all user mailboxes. You can use this policy or create additional policies as necessary to meet the needs of your organization.
 
 For the procedures that you can do on Outlook on the web mailbox policies, see [Outlook on the web mailbox policy procedures in Exchange Online](outlook-web-app-mailbox-policy-procedures.md).
+

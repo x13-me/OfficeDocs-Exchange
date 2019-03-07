@@ -1,15 +1,19 @@
 ---
-title: "Use a screen reader to open the Exchange admin center in Exchange Online"
-ms.author: v-maleo
-author: maggsl
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: A11y_UseSR
+ms.topic: article
+author: maggsl
+ms.author: v-maleo
 ms.assetid: 69a5beef-a6e7-4d2e-9446-e2a0de9514f4
-description: "Admins can learn how to use a screen reader to open the Exchange admin center (EAC) in Exchange Online."
+ms.date: 
+description: Admins can learn how to use a screen reader to open the Exchange admin center (EAC) in Exchange Online.
+title: Use a screen reader to open the Exchange admin center in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.custom: A11y_UseSR
+ms.service: exchange-online
+
 ---
 
 # Use a screen reader to open the Exchange admin center in Exchange Online
@@ -46,3 +50,4 @@ The Exchange admin center (EAC) is a web-based app that lets you manage your Exc
 
    > [!TIP]
    > To move to the rest of the items in the navigation pane, press the Tab key. To open an item, press Enter. After you've opened an item, to move directly to one of its elements in the content area on a page, press Ctrl+F6. To identify the admin role groups to which you've been assigned, which determine the tasks you can perform in the EAC, refer to [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+

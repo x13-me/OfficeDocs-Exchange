@@ -1,15 +1,19 @@
 ---
-title: "Use a screen reader to define rules that encrypt or decrypt email messages in the Exchange admin center in Exchange Online"
-ms.author: v-maleo
-author: maggsl
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: A11y_UseSR
+ms.topic: article
+author: maggsl
+ms.author: v-maleo
 ms.assetid: 3d8f2b49-c27e-40c9-808b-4bc48f3cdb07
-description: "Admins can learn how to use a screen reader to create mail flow rules (also known as transport rules) in the Exchange admin center (EAC) that use Office 365 Message Encryption (OME) to encrypt and decrypt messages in Exchange Online."
+ms.date: 
+description: Admins can learn how to use a screen reader to create mail flow rules (also known as transport rules) in the Exchange admin center (EAC) that use Office 365 Message Encryption (OME) to encrypt and decrypt messages in Exchange Online.
+title: Use a screen reader to define rules that encrypt or decrypt email messages in the Exchange admin center in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.custom: A11y_UseSR
+ms.service: exchange-online
+
 ---
 
 # Use a screen reader to define rules that encrypt or decrypt email messages in the Exchange admin center in Exchange Online
@@ -131,3 +135,4 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
 
 > [!TIP]
 > To turn off a new rule, press the Tab key to tab through the elements of the **rules** content area of the page, use the Up Arrow and Down Arrow keys to select a rule, and then press Spacebar. To hear the settings for a selected rule, press the Tab key until the focus moves to the details pane for the selected rule, and you hear the details for the rule.
+

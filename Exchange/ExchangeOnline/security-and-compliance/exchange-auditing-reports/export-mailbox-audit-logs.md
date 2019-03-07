@@ -1,15 +1,19 @@
 ---
-title: "Export mailbox audit logs"
-ms.author: markjjo
-author: markjjo
-manager: scotv
-ms.date: 7/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: When mailbox auditing is enabled for a mailbox, Microsoft Exchange logs information in the mailbox audit log whenever a user other than the owner accesses the mailbox. Each log entry includes information about who accessed the mailbox and when, the actions performed by the non-owner, and whether the action was successful. Entries in the mailbox audit log are retained for 90 days by default. You can use the mailbox audit log to determine if a user other than the owner has accessed a mailbox.
+ms.topic: article
+author: markjjo
+ms.author: markjjo
 ms.assetid: b458a95a-3321-4647-8884-cf97f8e7186a
-description: "When mailbox auditing is enabled for a mailbox, Microsoft Exchange logs information in the mailbox audit log whenever a user other than the owner accesses the mailbox. Each log entry includes information about who accessed the mailbox and when, the actions performed by the non-owner, and whether the action was successful. Entries in the mailbox audit log are retained for 90 days by default. You can use the mailbox audit log to determine if a user other than the owner has accessed a mailbox."
+ms.date: 7/11/2018
+title: Export mailbox audit logs
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Export mailbox audit logs
@@ -205,5 +209,6 @@ To save and view the SearchResult.xml file:
 |Subject|The subject line of the email message that was affected by the non-owner.|
 
     [When mailbox auditing is enabled for a mailbox, Microsoft Exchange logs information in the mailbox audit log whenever a user other than the owner accesses the mailbox. Each log entry includes information about who accessed the mailbox and when, the actions performed by the non-owner, and whether the action was successful. Entries in the mailbox audit log are retained for 90 days by default. You can use the mailbox audit log to determine if a user other than the owner has accessed a mailbox.When you export entries from mailbox audit logs, Microsoft Exchange saves the entries in an XML file and attaches it to an email message sent to the specified recipients.](#Introduction.md)
+
 
 

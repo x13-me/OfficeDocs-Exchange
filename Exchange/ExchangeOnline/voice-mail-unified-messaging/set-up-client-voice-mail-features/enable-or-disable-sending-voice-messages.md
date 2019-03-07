@@ -1,15 +1,17 @@
 ---
-title: "Enable or disable sending voice messages from Outlook Voice Access"
-ms.author: tonysmit
-author: tonysmit
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can enable Outlook Voice Access users to send voice mail messages to other UM-enabled users who are associated with the same dial plan, or prevent them from doing so.
+ms.topic: article
+author: tonysmit
+ms.author: tonysmit
 ms.assetid: 63544ae2-6a28-40b2-82fc-3df83e93ee56
-description: "You can enable Outlook Voice Access users to send voice mail messages to other UM-enabled users who are associated with the same dial plan, or prevent them from doing so."
+ms.date: 11/17/2014
+title: Enable or disable sending voice messages from Outlook Voice Access
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Enable or disable sending voice messages from Outlook Voice Access
@@ -58,5 +60,6 @@ This example prevents Outlook Voice Access users associated with the UM dial pla
 ```
 Set-UMDialPlan -identity MyUMDialPlan -SendVoiceMsgEnabled $false
 ```
+
 
 

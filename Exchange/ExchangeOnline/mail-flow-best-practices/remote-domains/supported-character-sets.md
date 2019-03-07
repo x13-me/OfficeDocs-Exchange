@@ -1,15 +1,19 @@
 ---
-title: "Supported character sets for remote domains in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: MIME and non-MIME character sets that admins can configure in remote domains (message formatting settings for external domains) in Exchange Online
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 66023a62-1fd3-4019-be2b-4e7147db148a
-description: "MIME and non-MIME character sets that admins can configure in remote domains (message formatting settings for external domains) in Exchange Online"
+ms.date: 
+title: Supported character sets for remote domains in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Supported character sets for remote domains in Exchange Online
@@ -65,3 +69,4 @@ The following table describes the character sets that you can configure in remot
 |windows-1257|Baltic (Windows)|
 |windows-1258|Vietnamese (Windows)|
 |windows-874|Thai (Windows)|
+

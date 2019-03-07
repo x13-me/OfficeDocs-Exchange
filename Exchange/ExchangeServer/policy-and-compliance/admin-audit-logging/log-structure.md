@@ -1,25 +1,27 @@
 ---
-title: "Administrator audit log structure"
-ms.author: serdars
-author: SerdarSoysal
-manager: serdars
-ms.date: 7/8/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about the contents of the administrator audit log in Exchange Server 2016 and Exchange Server 2019.'
+ms.topic: article
+author: SerdarSoysal
+ms.author: serdars
 ms.assetid: 87e259c9-c884-4d53-bd78-d13f2300d73e
-description: "Summary: Learn about the contents of the administrator audit log in Exchange Server 2016 and Exchange Server 2019."
+ms.date: 7/8/2018
+title: Administrator audit log structure
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Administrator audit log structure
 
 Administrator audit logs contain a record of all the cmdlets and parameters that have been run in the Exchange Management Shell and by the Exchange admin center (EAC). They're created on-demand when you run the admin audit log report in the EAC, or when you run the **New-AdminAuditLogSearch** cmdlet in the Exchange Management Shell. For more information about audit logs, see [Administrator audit logging in Exchange Server](admin-audit-logging.md).
-  
+
 ## Audit log XML tags and attributes
 
 The audit logs are XML files and can contain multiple audit log entries. The following table describes each XML tag and its associated attributes.
-  
+
 |**Element**|**Attribute**|**Description**|
 |:-----|:-----|:-----|
 | `<?xml version="1.0" encoding="utf-8"?>` <br/> |N/A  <br/> |This is the XML document declaration tag. It's included in every audit log XML file and contains the XML version number and the character encoding value.  <br/> |
@@ -41,11 +43,11 @@ The audit logs are XML files and can contain multiple audit log entries. The fol
 || `Name` <br/> |This attribute contains the name of the property that was modified when the cmdlet was run.  <br/> |
 || `OldValue` <br/> |This attribute contains the value that was contained in the property specified in the `Name` attribute before it was changed.  <br/> |
 || `NewValue` <br/> |This attribute contains the value that the property in the `Name` attribute was changed to.  <br/> |
-   
+
 ## Example of an admin audit log entry
 
 The following is an example of a typical log entry in the admin audit log.
-  
+
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <SearchResults>
@@ -62,20 +64,21 @@ The following is an example of a typical log entry in the admin audit log.
 ```
 
 Based on the information in this log entry, we know the following occurred:
-  
+
 - On 10/18/2017 at 3:48 P.M. Pacific Daylight Time (UTC-7), the user `Administrator` ran the cmdlet **Set-Mailbox**.
-    
-- The two following parameters were provided when the **Set-Mailbox** cmdlet was run: 
-    
+
+- The two following parameters were provided when the **Set-Mailbox** cmdlet was run:
+
   - _Identity_ with a value of `david`
-    
+
   - _ProhibitSendReceiveQuota_ with a value of `10GB`
-    
+
 - The _ProhibitSendReceiveQuota_ property on the object `david` was modified with a new value of `10GB`, which replaced the old value of `35GB`.
-    
+
     > [!NOTE]
     > The modified properties are saved to the audit log because the _LogLevel_ parameter on the `Set-AdminAuditLogConfig` cmdlet was set to `Verbose` in this example.
-  
+
 - The operation completed successfully without any errors.
-    
+
+
 

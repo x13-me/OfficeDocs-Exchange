@@ -1,15 +1,19 @@
 ---
-title: "Use batch migration to migrate Exchange 2013 public folders to Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.collection: Strat_EX_EXOBlocker
+ms.author: dmaguire
+manager: serdars
+ms.topic: article
+author: msdmaguire
+ms.service: exchange-online
 ms.assetid: 25a5234c-dd2c-487b-8541-3655fbeb030a
-description: "Summary: This article tells you how to move modern public folders from Exchange 2013 to Office 365."
+ms.collection:
+- Strat_EX_EXOBlocker
+- exchange-online
+- M365-email-calendar
+description: 'Summary: This article tells you how to move modern public folders from Exchange 2013 to Office 365.'
+ms.audience: ITPro
+title: Use batch migration to migrate Exchange 2013 public folders to Exchange Online
+
 ---
 
 # Use batch migration to migrate Exchange 2013 public folders to Exchange Online
@@ -106,7 +110,7 @@ For your migration to be successful, you should:
 
 In the Exchange Management Shell (on-premises) perform the following steps:
 
-1. Once your migration is complete, it will take some time for DNS caches across the Internet to direct messages to your mail-enabled public folders in their new location in Exchange Online. You can ensure that your newly migrated mail-enabled public folders receive messages during this DNS transition period by creating an accepted domain with a well-known name. To do this, run the following command in your Exchange on-premises environment. In this example, `target domain` is your Office 365 or Exchange Online domain, for which a send connector has already been configured by the Hybrid Configuration Wizard.
+1. Once your migration is complete, it will take some time for DNS caches across the internet to direct messages to your mail-enabled public folders in their new location in Exchange Online. You can ensure that your newly migrated mail-enabled public folders receive messages during this DNS transition period by creating an accepted domain with a well-known name. To do this, run the following command in your Exchange on-premises environment. In this example, `target domain` is your Office 365 or Exchange Online domain, for which a send connector has already been configured by the Hybrid Configuration Wizard.
 
     ```
     New-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99 -DomainName <target domain> -DomainType InternalRelay
@@ -133,7 +137,7 @@ In the Exchange Management Shell (on-premises) perform the following steps:
     ```
 
     > [!NOTE]
-    > If you're expecting your mail-enabled public folders in Exchange Online to receive external emails from the Internet, you have to disable Directory Based Edge Blocking (DBEB) in Exchange Online and Exchange Online Protection (EOP). See [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](../../mail-flow-best-practices/use-directory-based-edge-blocking.md) for more information.
+    > If you're expecting your mail-enabled public folders in Exchange Online to receive external emails from the internet, you have to disable Directory Based Edge Blocking (DBEB) in Exchange Online and Exchange Online Protection (EOP). See [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](../../mail-flow-best-practices/use-directory-based-edge-blocking.md) for more information.
 
 2. If the name of a public folder contains a backslash **\\** or a forward slash **/**, it may not get migrated to its designated mailbox during the migration process. Before you migrate, rename any such folders to remove these characters.
 
@@ -615,3 +619,4 @@ The following are common public folder migration issues that you may experience 
 After the migration is complete and you have verified that your public folders in Exchange Online are working as expected and contain all expected data, you can remove your on-premises public folder mailboxes.
 
 Be aware that this step is irreversible, because once public folder mailboxes are deleted, they cannot be recovered. Therefore, we strongly recommend that, in addition to verifying the success of your migration, you also monitor your Exchange Online public folders for a few weeks before you remove the on-premises public folder mailboxes.
+

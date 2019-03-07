@@ -1,15 +1,19 @@
 ---
-title: "Enable message encryption and decryption in Office 365"
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 8/13/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Office 365 Message Encryption lets email users send encrypted messages to people inside or outside their organization.
+ms.topic: article
+author: kccross
+ms.author: krowley
 ms.assetid: e313c489-ce5e-4015-aadf-981c697ab51f
-description: "Office 365 Message Encryption lets email users send encrypted messages to people inside or outside their organization."
+ms.date: 8/13/2018
+title: Enable message encryption and decryption in Office 365
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Enable message encryption and decryption in Office 365
@@ -19,3 +23,4 @@ Office 365 Message Encryption lets email users send encrypted messages to people
 ## See also
 
 [Encryption in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=392525)
+

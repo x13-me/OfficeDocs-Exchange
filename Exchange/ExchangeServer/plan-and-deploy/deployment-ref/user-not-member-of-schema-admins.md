@@ -1,17 +1,19 @@
 ---
-title: "The logged-on user is not a member of the Schema Admins group [SchemaUpdateRequired]"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/22/2015
-ms.audience: Developer
-ms.topic: reference
-f1_keywords:
-- 'ms.exch.setupreadiness.SchemaUpdateRequired'
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: Exchange Server 2016 or Exchange 2019 Setup can't extend the Active Directory schema because the account isn't a member of the Schema Admins and Enterprise Admins security groups.
+ms.topic: reference
+author: chrisda
+f1_keywords:
+- ms.exch.setupreadiness.SchemaUpdateRequired
+ms.author: chrisda
 ms.assetid: a4a3f293-afb9-4c00-aa07-c438238b6a98
-description: "Exchange Server 2016 or Exchange 2019 Setup can't extend the Active Directory schema because the account isn't a member of the Schema Admins and Enterprise Admins security groups."
+ms.date: 7/22/2015
+title: The logged-on user is not a member of the Schema Admins group [SchemaUpdateRequired]
+ms.collection: exchange-server
+ms.audience: Developer
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # The logged-on user is not a member of the Schema Admins group [SchemaUpdateRequired]
@@ -25,10 +27,11 @@ Setup requires that the account you're using to install Exchange has permissions
 - After you prepare Active Directory for the version of Exchange that you're installing, your account needs to be a member of the Organization Management role group.
 
 For more information, see [Prepare Active Directory and domains for Exchange](../prepare-ad-and-domains.md).
- 
+
 To resolve this issue, run Exchange setup again using an account that has the appropriate permissions (grant permissions to the current account or use a different account).
- 
+
 > [!IMPORTANT]
 > Cross-forest installation of Exchange isn't supported. Use an account in the Active Directory forest where you're installing Exchange.
-  
+
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
+

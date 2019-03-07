@@ -1,15 +1,19 @@
 ---
-title: "POP3 and IMAP4"
-ms.author: dmaguire
-author: msdmaguire
-manager: laurawi
-ms.date: 6/24/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: 'Summary: An overview of POP3 and IMAP4, and the differences between them.'
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: fce4cf21-02b4-4b42-82c8-ddb3c7eed4dc
-description: "Summary: An overview of POP3 and IMAP4, and the differences between them."
+ms.date: 6/24/2018
+title: POP3 and IMAP4
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # POP3 and IMAP4
@@ -70,9 +74,10 @@ For information about how to configure these settings for the email application 
 
 The default setting on some email programs is to not keep a copy of messages on the server after they're retrieved. If the user wants to access messages from multiple email programs or devices, they should keep a copy of messages on the server.
 
-If the device or computer that's running the POP3 or IMAP4 email application is always connected to the Internet, the user might want to configure the email application to send and receive messages every set number of minutes. Connecting to the server at frequent intervals lets the user keep the email application up-to-date with the most current information on the server. However, if the device or computer that's running the POP3 or IMAP4 email application isn't always connected to the Internet, the user might want to configure the email application to send and receive messages manually.
+If the device or computer that's running the POP3 or IMAP4 email application is always connected to the internet, the user might want to configure the email application to send and receive messages every set number of minutes. Connecting to the server at frequent intervals lets the user keep the email application up-to-date with the most current information on the server. However, if the device or computer that's running the POP3 or IMAP4 email application isn't always connected to the internet, the user might want to configure the email application to send and receive messages manually.
 
 > [!NOTE]
 > If the user is using an IMAP4-compliant email application that supports the IMAP4 IDLE command, the user might be able to send email to and receive email from the Exchange mailbox in nearly real time. For this connection method to work, both the email server application and the client application must support the IMAP4 IDLE command. In most cases, users don't have to configure any settings in their IMAP4 programs to use this connection method.
+
 
 

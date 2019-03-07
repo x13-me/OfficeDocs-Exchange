@@ -1,15 +1,19 @@
 ---
-title: "Run a message trace and view the results in the Exchange admin center"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: troubleshooting
-ms.service: exchange-online
 localization_priority: Normal
+description: Learn how to use message trace in the Exchange admin center to find out what happened to email messages.
+ms.topic: troubleshooting
+author: chrisda
+ms.author: chrisda
 ms.assetid: 74a9fc59-7e0e-4832-baf9-2a86418b0079
-description: "Learn how to use message trace in the Exchange admin center to find out what happened to email messages."
+ms.date: 
+title: Run a message trace and view the results in the Exchange admin center
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Run a message trace and view the results in the Exchange admin center
@@ -292,3 +296,4 @@ When a message matches a mail flow rule, a sample custom_data entry would look s
 [Message Trace FAQ](message-trace-faq.md) presents messaging questions that a user may have, along with possible answers. It also describes how to use the message trace tool in order to get those answers and troubleshoot specific mail delivery issues.
 
 [Can I run a message trace via Exchange Online PowerShell or Exchange Online Protection PowerShell? What are the cmdlets to use?](message-trace-faq.md#can-i-run-a-message-trace-via-exchange-online-powershell-or-exchange-online-protection-powershell-what-are-the-cmdlets-to-use) gives information about the PowerShell cmdlets that you can use to run a message trace.
+

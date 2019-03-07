@@ -1,15 +1,19 @@
 ---
-title: "Use mail protection reports in Office 365 to view data about malware, spam, and rule detections"
-ms.author: deniseb
-author: denisebmsft
-manager: laurawi
-ms.date: 7/26/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
-ms.assetid: bcef7984-4bfa-4ca8-9fa5-a65af8618f5d
 description: Admins can learn how to use Office 365 protection reports for malware, spam, and mail flow rule detections.
+ms.topic: article
+author: denisebmsft
+ms.author: deniseb
+ms.assetid: bcef7984-4bfa-4ca8-9fa5-a65af8618f5d
+ms.date: 7/26/2018
+title: Use mail protection reports in Office 365 to view data about malware, spam, and rule detections
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: laurawi
+
 ---
 
 # Use mail protection reports in Office 365 to view data about malware, spam, and rule detections

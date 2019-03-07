@@ -1,15 +1,17 @@
 ---
-title: "Custom attributes"
-ms.author: chrisda
-author: chrisda
-manager: scotv
-ms.date: 4/19/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn to use the custom attributes in Exchange Server 2016 or Exchange Server 2019 to add information about a mail recipient.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 2b043878-0b34-4563-a9c2-28a9efa7447e
-description: "Summary: Learn to use the custom attributes in Exchange Server 2016 or Exchange Server 2019 to add information about a mail recipient."
+ms.date: 4/19/2018
+title: Custom attributes
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: scotv
+
 ---
 
 # Custom attributes
@@ -38,7 +40,7 @@ There are several advantages to using custom attributes:
 
 ### Multivalued custom attributes
 
-Starting with Exchange 2010 Service Pack 2 (SP2), five multivalued custom attributes were added to Exchange to allow you to store additional information for mail recipients if the traditional custom attributes didn't meet your needs. The _ExtensionCustomAttribute1_ to _ExtensionCustomAttribute5_ parameters can hold up to 1,300 values each. You can specify multiple values as a comma-delimited list. The following cmdlets support these new parameters: 
+Starting with Exchange 2010 Service Pack 2 (SP2), five multivalued custom attributes were added to Exchange to allow you to store additional information for mail recipients if the traditional custom attributes didn't meet your needs. The _ExtensionCustomAttribute1_ to _ExtensionCustomAttribute5_ parameters can hold up to 1,300 values each. You can specify multiple values as a comma-delimited list. The following cmdlets support these new parameters:
 
 - [Set-DistributionGroup](http://technet.microsoft.com/library/e3a8c709-770a-4900-9a57-adcf0d98ff68.aspx)
 
@@ -108,5 +110,6 @@ In this example, Kweku's _ExtensionCustomAttribute1_ values are updated to refle
 ```
 Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
 ```
+
 
 

@@ -1,15 +1,19 @@
 ---
-title: "Remove a global address list in Exchange Online"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: Admins can learn how to remove custom global address lists (GALs) from Exchange Online.
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 65d75b69-641b-4a37-a63c-47cf018f5f22
-description: "Admins can learn how to remove custom global address lists (GALs) from Exchange Online."
+ms.date: 
+title: Remove a global address list in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Remove a global address list in Exchange Online
@@ -58,3 +62,4 @@ To verify that you've successfully removed a GAL, run the following command in E
 ```
 Get-GlobalAddressList
 ```
+

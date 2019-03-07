@@ -1,22 +1,26 @@
 ---
-title: "Add an SSL certificate to Exchange 2010"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/16/2018
-ms.audience: Admin
-ms.topic: get-started-article
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: 8c1b16e6-475d-406d-a80c-1956fa781789
+ms.date: 8/16/2018
+description: Steps to add an SSL certificate to Exchange 2010.
+title: Add an SSL certificate to Exchange 2010
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - MBS150
 - BCS160
-ms.assetid: 8c1b16e6-475d-406d-a80c-1956fa781789
-description: "Steps to add an SSL certificate to Exchange 2010."
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Add an SSL certificate to Exchange 2010
@@ -58,9 +62,9 @@ Adding an SSL certificate to Exchange 2010 is a three step process.
 
 6. On the **Exchange Configuration** page for each service in the list shown, verify that the external or internal server names that users will use to connect to the Exchange server are correct. For example:
 
-  - If you configured your internal and external URLs to be the same, Outlook Web App (when accessed from the Internet) and Outlook Web App (when accessed from the intranet) should show owa.contoso.com. Offline Address Book (OAB) (when accessed from the Internet) and OAB (when accessed from the intranet) should show mail.contoso.com.
+  - If you configured your internal and external URLs to be the same, Outlook Web App (when accessed from the internet) and Outlook Web App (when accessed from the intranet) should show owa.contoso.com. Offline Address Book (OAB) (when accessed from the internet) and OAB (when accessed from the intranet) should show mail.contoso.com.
 
-  - If you configured the internal URLs to be internal.contoso.com, Outlook Web App (when accessed from the Internet) should show owa.contoso.com, and Outlook Web App (when accessed from the intranet) should show internal.contoso.com.
+  - If you configured the internal URLs to be internal.contoso.com, Outlook Web App (when accessed from the internet) should show owa.contoso.com, and Outlook Web App (when accessed from the intranet) should show internal.contoso.com.
 
 7. These domains will be used to create the SSL certificate request. Choose **Next**.
 
@@ -109,5 +113,6 @@ After you receive the certificate from the CA, complete the following steps.
 9. On the **Assign Services** page, choose **Assign**.
 
     If you receive the warning **Overwrite the existing default SMTP certificate?**, choose **Yes** \> **Finish**.
+
 
 

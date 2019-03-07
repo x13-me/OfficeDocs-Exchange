@@ -1,15 +1,19 @@
 ---
-title: "Create a distribution group naming policy"
-ms.author: kwekua
-author: kwekua
-manager: scotv
-ms.date: 11/17/2014
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: A group naming policy lets you standardize and manage the names of distribution groups created by users in your organization. You can require a specific prefix and suffix be added to the name for a distribution group when it's created, and you can block specific words from being used. This helps you minimize the use of inappropriate words in group names.
+ms.topic: article
+author: kwekua
+ms.author: kwekua
 ms.assetid: b2ffb654-345d-4be1-be8e-83d28901373e
-description: "A group naming policy lets you standardize and manage the names of distribution groups created by users in your organization. You can require a specific prefix and suffix be added to the name for a distribution group when it's created, and you can block specific words from being used. This helps you minimize the use of inappropriate words in group names."
+ms.date: 11/17/2014
+title: Create a distribution group naming policy
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Create a distribution group naming policy
@@ -116,5 +120,6 @@ To verify that you've successfully created a group naming policy, do the followi
   ```
   Get-OrganizationConfig | Format-List DistributionGroupNamingPolicy
   ```
+
 
 

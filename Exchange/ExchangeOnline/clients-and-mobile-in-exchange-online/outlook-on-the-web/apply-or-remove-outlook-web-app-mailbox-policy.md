@@ -1,15 +1,19 @@
 ---
-title: "Apply or remove an Outlook on the web mailbox policy on a mailbox in Exchange Online"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date:
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can apply an Outlook on the web mailbox policy to one or more mailboxes or remove one using either the EAC or Exchange Online PowerShell.
+ms.topic: article
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: 51d8e269-b0d5-4bc7-9b3d-0460871e54fa
-description: "You can apply an Outlook on the web mailbox policy to one or more mailboxes or remove one using either the EAC or Exchange Online PowerShell."
+ms.date: 
+title: Apply or remove an Outlook on the web mailbox policy on a mailbox in Exchange Online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
+ms.audience: ITPro
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Apply or remove an Outlook on the web mailbox policy on a mailbox in Exchange Online
@@ -194,3 +198,4 @@ To verify that you've removed an Outlook on the web mailbox policy assignment fr
     ```
     Get-CasMailbox -ResultSize unlimited | Format-Table Name,OwaMailboxPolicy -Auto
     ```
+

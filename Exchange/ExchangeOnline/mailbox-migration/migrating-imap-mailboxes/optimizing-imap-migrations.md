@@ -1,21 +1,25 @@
 ---
-title: "Tips for optimizing IMAP migrations"
-ms.author: dmaguire
-author: msdmaguire
-manager: serdars
-ms.date: 8/15/2018
-ms.audience: Admin
-ms.topic: conceptual
-ms.service: exchange-online
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.topic: conceptual
+author: msdmaguire
+ms.author: dmaguire
+ms.assetid: e6e4b0d0-4c3d-4826-a818-8aeab06b9b76
+ms.date: 8/15/2018
+description: When you undertake an Internet Message Access Protocol (IMAP) migration from an on-premises Exchange Server to Office 365, you have a few choices for optimizing the migration performance.
+title: Tips for optimizing IMAP migrations
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - BCS160
-ms.assetid: e6e4b0d0-4c3d-4826-a818-8aeab06b9b76
-description: "When you undertake an Internet Message Access Protocol (IMAP) migration from an on-premises Exchange Server to Office 365, you have a few choices for optimizing the migration performance."
+ms.audience: Admin
+ms.custom: Adm_O365
+ms.service: exchange-online
+manager: serdars
+
 ---
 
 # Tips for optimizing IMAP migrations
@@ -56,13 +60,13 @@ Here are some tips for optimizing an IMAP migration:
 
   - Verify that you can successfully migrate email by using administrator credentials, if applicable.
 
-  - Determine the optimal number of simultaneous connections to the IMAP server that minimize the impact on your Internet bandwidth.
+  - Determine the optimal number of simultaneous connections to the IMAP server that minimize the impact on your internet bandwidth.
 
   - Verify that folders you exclude aren't migrated to Office 365 mailboxes.
 
   - Determine how long it takes to migrate a batch of users.
 
-  - Use CSV files with the same number of rows and run the batches at similar times during the day. Then compare the total running time for each test batch. This comparison will help you estimate how long it will take to migrate all your mailboxes, how large each migration batch should be, and how many simultaneous connections to the IMAP server you should use to balance migration speed and Internet bandwidth.
+  - Use CSV files with the same number of rows and run the batches at similar times during the day. Then compare the total running time for each test batch. This comparison will help you estimate how long it will take to migrate all your mailboxes, how large each migration batch should be, and how many simultaneous connections to the IMAP server you should use to balance migration speed and internet bandwidth.
 
 - **Use administrator credentials in the CSV file to migrate email**: This method is the least disruptive and inconvenient for users, and it will help minimize synchronization errors caused when users change the password on their on-premises account. It also saves you from having to obtain or change user passwords. If you use this method, be sure to verify that the administrator account you use has the necessary permissions to access the mailboxes you're migrating.
 
@@ -82,5 +86,6 @@ Here are some tips for optimizing an IMAP migration:
   - Tell users which folders won't be migrated, if applicable.
 
   - Folders with a forward slash ( / ) in the folder name aren't migrated. If users want to migrate folders that contain forward slashes in their names, they have to rename the folders or replace the forward slashes with a different character, such as an underscore character ( _ ) or a dash ( - ).
+
 
 

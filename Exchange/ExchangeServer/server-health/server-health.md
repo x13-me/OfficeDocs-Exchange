@@ -1,15 +1,17 @@
 ---
-title: "Server health and performance in Exchange Server"
-ms.author: chrisda
-author: chrisda
-manager: serdars
-ms.date: 7/9/2018
-ms.audience: ITPro
-ms.topic: article
-ms.prod: exchange-server-it-pro
 localization_priority: Normal
+description: 'Summary: Learn about managed availability and workload management in Exchange Server.'
+ms.topic: article
+author: chrisda
+ms.author: chrisda
 ms.assetid: 9d1fdec8-8273-4c71-88f1-b4edfd542c4f
-description: "Summary: Learn about managed availability and workload management in Exchange Server."
+ms.date: 7/9/2018
+title: Server health and performance in Exchange Server
+ms.collection: exchange-server
+ms.audience: ITPro
+ms.prod: exchange-server-it-pro
+manager: serdars
+
 ---
 
 # Server health and performance in Exchange Server
@@ -18,7 +20,7 @@ Understanding server health and performance is critical to designing and maintai
 
 ## Managed availability
 
- *Managed availability* provides built-in monitoring and recovery actions that preserve the end-user experience. Managed availability is made of two processes: the Exchange Health Manager Service (MSExchangeHMHost.exe) and the Exchange Health Manager Worker process (MSExchangeHMWorker.exe), and the following components: 
+ *Managed availability* provides built-in monitoring and recovery actions that preserve the end-user experience. Managed availability is made of two processes: the Exchange Health Manager Service (MSExchangeHMHost.exe) and the Exchange Health Manager Worker process (MSExchangeHMWorker.exe), and the following components:
 
 - **Probe engine**: The *probe engine* takes measurements on the server.
 
@@ -37,5 +39,6 @@ Workload management is made of these components:
 - *System workload management* automatically throttles specific Exchange workloads by monitoring the health of key server resources. These settings should be customized only under the direction of Microsoft Customer Service and Support.
 
 For more information about user workload management, see [User workload management in Exchange Server](workload-management.md).
+
 
 

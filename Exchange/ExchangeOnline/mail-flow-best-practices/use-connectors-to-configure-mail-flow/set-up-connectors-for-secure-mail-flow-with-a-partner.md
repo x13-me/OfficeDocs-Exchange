@@ -1,15 +1,17 @@
 ---
-title: "Set up connectors for secure mail flow with a partner organization"
-ms.author: supotter
-author: supotter
-manager: scotv
-ms.date: 6/23/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: exchange-online
 localization_priority: Normal
+description: You can create connectors to apply security restrictions to mail exchanges with a partner organization or service provider. A partner can be an organization you do business with, such as a bank. It can also be a third-party cloud service that provides services such as archiving, anti-spam, and filtering.
+ms.topic: article
+author: supotter
+ms.author: supotter
 ms.assetid: 1ce4d6a4-41ba-4d1e-9ca9-e826252c1041
-description: "You can create connectors to apply security restrictions to mail exchanges with a partner organization or service provider. A partner can be an organization you do business with, such as a bank. It can also be a third-party cloud service that provides services such as archiving, anti-spam, and filtering."
+ms.date: 6/23/2018
+title: Set up connectors for secure mail flow with a partner organization
+ms.collection: exchange-online
+ms.audience: ITPro
+ms.service: exchange-online
+manager: scotv
+
 ---
 
 # Set up connectors for secure mail flow with a partner organization
@@ -139,7 +141,7 @@ To do this, specify your partner organization domain name to identify mail from 
 
 When you set these restrictions, all email sent from your partner organization domain, ContosoBank.com, or from your on-premises environment must be sent from the IP address or an address range you specify. Any mail that does not meet these conditions will be rejected.
 
-### Example 4: Require that all email sent to your organization from the Internet is sent from a specific IP address (third-party email service scenario)
+### Example 4: Require that all email sent to your organization from the internet is sent from a specific IP address (third-party email service scenario)
 <a name="Example3"> </a>
 
 Mail flow from a third-party email service to Office 365 works without a connector. However, in this scenario you can optionally use a connector to restrict all mail delivery to your organization. If you use the settings described in this example, they will apply to *all email sent to your organization*. When all email sent to your organization comes from a single third-party email service, you can optionally use a connector to restrict all mail delivery; only mail sent from a single IP address or address range will be delivered.
@@ -155,7 +157,7 @@ To restrict all mail sent to your organization from a specific IP address or add
 
 ![Enter your partner organization's IP address range](../../media/3a6896f0-3a60-4ef7-91e1-7cf7f24a8bc4.png)
 
-When you set these restrictions, all mail sent to your organization must be sent from a specific IP address range. Any Internet mail that does not originate from this IP address range will be rejected.
+When you set these restrictions, all mail sent to your organization must be sent from a specific IP address range. Any internet email that does not originate from this IP address range will be rejected.
 
 ### Example 5: Require that all mail sent from your partner organization IP address or address range is encrypted using TLS
 <a name="Example3"> </a>
@@ -182,4 +184,5 @@ When you set these restrictions, all mail from your partner organization sent fr
 [About fixing connector validation errors](https://technet.microsoft.com/library/abbae1e7-2cbe-434c-bd9f-ede00cebc170.aspx)
 
 [What happens when I have multiple connectors for the same scenario?](set-up-connectors-to-route-mail.md#what-happens-when-i-have-multiple-connectors-for-the-same-scenario)
+
 
