@@ -43,7 +43,7 @@ This architecture does not support Enterprise Mobility + Security features such 
 
 For improved performance, a subset of email, calendar, and file data from each user's mailbox is synchronized into the Outlook service. For on-premises mailboxes that are authenticating with Basic authentication, this service currently runs on Microsoft Azure.
 
-The information in the Outlook service is currently cached either in the United States or in Europe, depending on the IP address of the connecting client. As we move the Outlook service into Office 365, we will align to the principles of the Office 365 Trust Center with a regionalized data center strategy. In Office 365 a customer's country or region, which the customer's administrator inputs during the initial setup of the services, determines the primary storage location for that customer's data. For more information, see [the Office 365 Trust Center](https://go.microsoft.com/fwlink/p/?LinkId=525776).
+The information in the Outlook service is currently cached either in the United States or in Europe, depending on the IP address of the connecting client. As we move the Outlook service into Office 365, we will align to the principles of the Microsot Trust Center with a regionalized data center strategy. In Office 365 a customer's country or region, which the customer's administrator inputs during the initial setup of the services, determines the primary storage location for that customer's data. For more information, see [the Microsoft Trust Center](https://microsoft.com/trustcenter).
 
 ### Data caching FAQ
 
@@ -73,7 +73,5 @@ You have three options for removing your information from the Outlook service.
 
 ### How is the temporarily cached mailbox data secured while stored in the Outlook service?
 
-You can read about how our data is currently protected at the [Azure Trust Center](https://azure.microsoft.com/support/trust-center/). As noted previously, we're moving from Azure to Office 365. The security of these services is covered at [the Office 365 Trust Center](https://go.microsoft.com/fwlink/p/?LinkId=525776).
-
-
+You can read about how our data is currently protected at the [Azure Trust Center](https://azure.microsoft.com/support/trust-center/). As noted previously, we're moving from Azure to Office 365. The security of these services is covered at [the Microsoft Trust Center](https://microsoft.com/trustcenter).
 

@@ -101,7 +101,7 @@ If a user account becomes inactive (such as by disabling background app refresh 
 
 ### How is the temporarily cached mailbox data secured while stored in the Outlook service?
 
-You can read about how our data is currently protected at the [Azure Trust Center](https://azure.microsoft.com/support/trust-center/). As noted previously, we're moving from Azure to Office 365. The security of these services is covered at [the Office 365 Trust Center](https://go.microsoft.com/fwlink/p/?LinkId=525776).
+You can read about how our data is currently protected at the [Azure Trust Center](https://azure.microsoft.com/support/trust-center/). As noted previously, we're moving from Azure to Office 365. The security of these services is covered at [the Microsoft Trust Center]( https://microsoft.com/trustcenter).
 
 ### Is there a way to prevent the use of Basic authentication for on-premises mailboxes with Outlook for iOS and Android?
 
