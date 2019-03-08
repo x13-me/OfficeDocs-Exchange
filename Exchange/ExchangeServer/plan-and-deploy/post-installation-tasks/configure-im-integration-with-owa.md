@@ -30,7 +30,7 @@ Also, the following health set errors are generated on the Exchange server:
 
 - **Message**: `Owa InstantMessaging provider failed to initialize due to incorrect IM configuration on the server. Signin attempts to OWA IM will fail. Error Message: {Instant Messaging Certificate Thumbprint is null or empty on web.config).`
 
-Use the procedures in this topic to fix these errors and configure IM integration between Skype for Business Server and Exchange 2016 or Exchange 2019. IM integration between Lync Server 2013 and Exchange 2016 or later isn't supported.
+Use the procedures in this topic to fix these errors and configure IM integration between Skype for Business Server and Exchange 2016 or Exchange 2019. IM integration between Lync Server 2013 and Exchange 2016 or later isn't supported. For details on setting up Skype for Business Server with Outlook on the web(formerly known as Outlook Web App), see [Configure integration between on-premises Skype for Business Server and Outlook Web App](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/outlook-web-app?toc=/SkypeForBusiness/toc.json&bc=/SkypeForBusiness/breadcrumb/toc.json)
 
 ## What do you need to know before you begin?
 
