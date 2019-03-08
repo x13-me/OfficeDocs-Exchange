@@ -20,7 +20,7 @@ manager: serdars
 
 ---
 
-# How to migrate mailboxes from one Office 365 tenant to another
+# How to migrate mailboxes from one Office 365 tenant to another 
 
 This article explains how to migrate mailboxes and service settings from one Office 365 tenant to another Office 365 tenant in a business-merger scenario. If you have more than 500 users to migrate or a large amount of SharePoint data to migrate, it's a good idea to work with an [Office 365 partner](https://go.microsoft.com/fwlink/p/?LinkId=393485).
 
