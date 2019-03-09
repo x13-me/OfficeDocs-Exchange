@@ -31,7 +31,7 @@ Q: What versions of Exchange support the new Hybrid Configuration wizard?
     
 - **Exchange 2010** Exchange 2010 SP3 needs to be installed on at least one server running the Mailbox, Hub Transport, and Client Access server roles. We also strongly recommend that you install the latest available Update Rollup available for Exchange 2010 SP3. 
     
-- **Exchange 2013** The latest Exchange 2013 CU needs to be installed on at least one server running both the Mailbox and Client Access server roles. If you can't install the latest CU, the immediately previous release is also supported. Older CUs aren't supported. 
+- **Exchange 2013** The latest Exchange 2013 CU needs to be installed on at least one server running both the Mailbox and Client Access server roles. In instances where you have these roles split across multiple servers, you need to update each mailbox role and client access role server. If you can't install the latest CU, the immediately previous release is also supported. Older CUs aren't supported. 
     
 - **Exchange 2016** The latest release of Exchange 2016 needs to be installed on at least one server running the Mailbox server role. 
     
