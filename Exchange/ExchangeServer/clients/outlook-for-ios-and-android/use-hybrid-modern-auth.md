@@ -23,7 +23,7 @@ The Outlook app for iOS and Android is designed as the best way to experience Of
 
 Outlook for iOS and Android is a cloud-backed application. This means your experience consists of a locally installed app powered by a secure and scalable service running in the Microsoft Cloud.
 
-For Exchange Server mailboxes, Outlook for iOS and Android's new architecture is similar in design to its legacy architecture. However, as the service is now built directly into the Microsoft Cloud (using Office 365 and Microsoft Azure) customers receive the additional benefits of security, privacy, built-in compliance, and transparent operations that Microsoft commits to in the [Office 365 Trust Center](https://products.office.com/business/office-365-trust-center-welcome) and [Azure Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Azure).
+For Exchange Server mailboxes, Outlook for iOS and Android's new architecture is similar in design to its legacy architecture. However, as the service is now built directly into the Microsoft Cloud (using Office 365 and Microsoft Azure) customers receive the additional benefits of security, privacy, built-in compliance, and transparent operations that Microsoft commits to in the [Microsoft Trust Center](https://microsoft.com/trustcenter) and [Azure Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Azure).
 
 ![Hybrid modern authentication in Outlook for iOS and Android](../../media/a2f99c31-cd75-41e7-bf73-bf989976bccd.PNG)
 
@@ -39,7 +39,7 @@ Specifically, this new architecture has the following improvements:
 
 1. **Enterprise Mobility + Security support**: Customers can take advantage of Microsoft Enterprise Mobility + Security (EMS) including Microsoft Intune and Azure Active Directory Premium, to enable conditional access and Intune app protection policies, which control and secure corporate messaging data on the mobile device.
 
-2. **Fully powered by Microsoft Cloud**: The on-premises mailbox data is synchronized into Exchange Online, which provides the benefits of security, privacy, compliance and transparent operations that Microsoft commits to in the [Office 365 Trust Center](https://products.office.com/business/office-365-trust-center-welcome).
+2. **Fully powered by Microsoft Cloud**: The on-premises mailbox data is synchronized into Exchange Online, which provides the benefits of security, privacy, compliance and transparent operations that Microsoft commits to in the [Microsoft Trust Center](https://microsoft.com/trustcenter).
 
 3. **OAuth protects users' passwords**: Outlook leverages hybrid Modern Authentication (OAuth) to protect users' credentials. Hybrid Modern Authentication provides Outlook with a secure mechanism to access the Exchange data without ever touching or storing a user's credentials. At sign in, the user authenticates directly against an identity platform (either Azure Active Directory or an on-premises identity provider like ADFS) and receives an access token in return, which grants Outlook access to the user's mailbox or files. At no time does the service have access to the user's password.
 
@@ -111,7 +111,7 @@ The hybrid Modern Authentication architecture has the following technical requir
 
   - Requires an Office 365 Enterprise, Business, or Education tenant.
 
-  - The on-premises mailbox data is synchronized in the same datacenter region where that Office 365 tenant is setup. For more about where Office 365 data is located, visit the [Where is my data?](http://o365datacentermap.azurewebsites.net/) section Office 365 Trust Center.
+  - The on-premises mailbox data is synchronized in the same datacenter region where that Office 365 tenant is setup. For more about where Office 365 data is located, visit the Microsoft Trust Center.
 
   - Use of Office 365 US Government Community and Defense tenants, Office 365 Germany tenants, and Office 365 China operated by 21Vianet tenants are not supported.
 
