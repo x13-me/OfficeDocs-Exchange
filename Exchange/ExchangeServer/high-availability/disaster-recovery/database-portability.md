@@ -45,8 +45,8 @@ Database portability can help reduce overall recovery times for some failure sce
   ESEUTIL /R <Enn>
   ```
 
-    > [!NOTE]
-    > \<E _nn_\> specifies the log file prefix for the database into which you intend to replay the log files. The log file prefix specified by \<E _nn_\> is a required parameter for Eseutil /r.
+   > [!NOTE]
+   > \<E _nn_\> specifies the log file prefix for the database into which you intend to replay the log files. The log file prefix specified by \<E _nn_\> is a required parameter for Eseutil /r.
 
 2. Create a database on a server using the following syntax:
 
