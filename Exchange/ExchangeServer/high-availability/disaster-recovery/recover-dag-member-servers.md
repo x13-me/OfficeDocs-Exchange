@@ -67,8 +67,8 @@ Looking for other management tasks related to DAGs? Check out [Managing database
   Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
   ```
 
-    > [!NOTE]
-    > If the DAG member being removed is offline and can't be brought online, you must add the _ConfigurationOnly_ parameter to the preceding command. If you use the _ConfigurationOnly_ switch, you must also manually evict the node from the cluster.
+   > [!NOTE]
+   > If the DAG member being removed is offline and can't be brought online, you must add the `-ConfigurationOnly` parameter to the preceding command. If you use the `-ConfigurationOnly` switch, you must also manually evict the node from the cluster.
 
 4. Reset the server's computer account in Active Directory. For detailed steps, see [Reset a Computer Account](https://go.microsoft.com/fwlink/p/?linkId=167188).
 

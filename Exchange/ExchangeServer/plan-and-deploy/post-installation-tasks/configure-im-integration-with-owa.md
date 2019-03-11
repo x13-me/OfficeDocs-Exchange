@@ -5,7 +5,7 @@ ms.topic: get-started-article
 author: chrisda
 ms.author: chrisda
 ms.assetid: 0eda267b-41e5-4a60-a209-70a8522a9f41
-ms.date: 6/7/2018
+ms.date: 
 title: Configure instant messaging integration with Outlook on the web in Exchange
 ms.collection:
 - Strat_EX_Admin
@@ -30,7 +30,7 @@ Also, the following health set errors are generated on the Exchange server:
 
 - **Message**: `Owa InstantMessaging provider failed to initialize due to incorrect IM configuration on the server. Signin attempts to OWA IM will fail. Error Message: {Instant Messaging Certificate Thumbprint is null or empty on web.config).`
 
-Use the procedures in this topic to fix these errors and configure IM integration between Skype for Business Server and Exchange 2016 or Exchange 2019. IM integration between Lync Server 2013 and Exchange 2016 or later isn't supported.
+Use the procedures in this topic to fix these errors and configure IM integration between Skype for Business Server and Exchange 2016 or Exchange 2019. IM integration between Lync Server 2013 and Exchange 2016 or later isn't supported. For details on setting up Skype for Business Server with Outlook on the web (formerly known as Outlook Web App), see [Configure integration between on-premises Skype for Business Server and Outlook Web App](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/outlook-web-app)
 
 ## What do you need to know before you begin?
 
@@ -42,6 +42,8 @@ Use the procedures in this topic to fix these errors and configure IM integratio
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Client Access virtual directory settings" entry in the [Clients and mobile devices permissions](../../permissions/feature-permissions/client-and-mobile-device-permissions.md) topic.
 
+- Depending on your Skype for Business Server topology, you may have multiple FrontEnd pools, you should pick the regional endpoint (closest pool to the exchange AD site): `IMServerName=<Skype Server\pool Name>`.
+ 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
