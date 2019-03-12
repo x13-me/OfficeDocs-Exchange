@@ -152,7 +152,7 @@ Some of the more interesting properties of the default self-signed certificates 
 |**EnhancedKeyUsageList**<sup>\*</sup>|Server Authentication (1.3.6.1.5.5.7.3.1)|Server Authentication (1.3.6.1.5.5.7.3.1)|Server Authentication (1.3.6.1.5.5.7.3.1)|
 |**IISServices**<sup>\*</sup>|`IIS://<ServerName>/W3SVC/1, IIS://<ServerName>/W3SVC/2` (for example, `IIS://Mailbox01/W3SVC/1, IIS://Mailbox01/W3SVC/2`)|none|none|
 |**IsSelfSigned**|True|True|True|
-|**Issuer**|`CN=<ServerName>` (for example, `CN=Mailbox01`)|`CN=Microsoft Exchange Server Auth Certificate`|`CN=WMSvc-<ServerName>` (for example, `CN=WMSvc-Mailbox01)|
+|**Issuer**|`CN=<ServerName>` (for example, `CN=Mailbox01`)|`CN=Microsoft Exchange Server Auth Certificate`|`CN=WMSvc-<ServerName>` (for example, `CN=WMSvc-Mailbox01`)|
 |**NotBefore**|The date/time that Exchange was installed.|The date/time that Exchange was installed.|The date/time that the IIS Web Manager service was installed.|
 |**Expires on (NotAfter)**|5 years after `NotBefore`.|5 years after `NotBefore`.|10 years after `NotBefore`.|
 |**Public key size (PublicKeySize)**|2048|2048|2048|
