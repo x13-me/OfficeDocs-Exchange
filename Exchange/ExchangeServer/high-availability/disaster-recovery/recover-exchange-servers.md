@@ -113,7 +113,7 @@ If you previously enabled the Scripting Agent in your Exchange organization, the
 "Initialization failed: '"Scripting Agent initialization failed: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'.""' ---> Microsoft.Exchange.Provisioning.ProvisioningException: "Scripting Agent initialization failed: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."" ---> System.IO.FileNotFoundException: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."
 ```
 
-If you have other Exchange servers in your organization, you'11 need to:
+If you have other Exchange servers in your organization, you'll need to:
 
 1. Disable the Scripting Agent in the Exchange Management Shell on an existing server:
 
