@@ -137,13 +137,15 @@ Outlook for iOS and Android communicates via TCP port 443. The app accesses vari
 
 Yes, Outlook for iOS and Android supports proxy configurations when the proxy infrastructure meets the following requirements:
 
-- **Supports HTTP protocol without TLS decryption and inspection**. The Office 365-based architecture for Outlook for iOS and Android utilizes certificate pinning to mitigate man-in-the-middle based attacks.
-
-- **Supports and has SOCKS proxy capability enabled**. The Outlook for iOS and Android client utilizes TCP connections to our Office 365-based architecture. The IP ranges for the SOCKS connections are not restricted to a subset of Azure IP ranges, which means that customers cannot define a whitelist range.
+- **Supports HTTP protocol without TLS decryption and inspection**. 
 
 - **Does not perform authentication**.
 
-Outlook for iOS and Android will consume the proxy configuration as defined by the platform operating system. Typically, this configuration information is deployed via a PAC file. The PAC file must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no additional custom settings are supported.
+Outlook for iOS and Android will consume the proxy configuration as defined by the platform operating system. Typically, this configuration information is deployed via a PAC file. The PAC file must be configured to use hostnames instead of protocol; no additional custom settings are supported.
+
+For tenants that have not been migrated to the native Microsoft sync technology, the following additional requirement applies:
+
+- **Supports and has SOCKS proxy capability enabled**. The Outlook for iOS and Android client utilizes TCP connections to our Office 365-based architecture. The IP ranges for the SOCKS connections are not restricted to a subset of Azure IP ranges, which means that customers cannot define a whitelist range. The PAC must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no additional custom settings are supported.
 
 ## Native Microsoft sync technology migration
 
