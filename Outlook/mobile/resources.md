@@ -56,4 +56,4 @@ Open to all. These demo webinars will focus on end user value so invite your bus
 
 **What you will take away**
 
-Download the [Outlook for iOS and Android: tips and tricks that save you time reference sheet](media/outlook-mobile-time-saving-tips-and-tricks.pdf) to keep the information you learned handy.
+Download the [Outlook for iOS and Android: tips and tricks that save you time reference sheet](media/outlook-mobile-time-saving-tips-and-tricks.pdf) (PDF) to keep the information you learned handy.
