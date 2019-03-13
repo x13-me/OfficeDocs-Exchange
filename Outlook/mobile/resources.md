@@ -14,7 +14,7 @@ description: "Provides resources for IT Pros to plan, deliver, and adopt Outlook
 
 # Plan, deliver, and adopt Outlook for iOS and Android in your organization
 
-![Mobile phone on a desk showing Outlook for iOS and Android](images/banner.png)
+![Mobile phone on a desk showing Outlook for iOS and Android](media/banner.png)
 
 Outlook mobile brings the best of Office 365 – your email, calendar, documents, online meetings and more – in one place, right at your fingertips. It combines a fast, fluid experience with enterprise grade security so you accomplish the most important tasks in just a few seconds.
 
@@ -53,3 +53,7 @@ Starts March 14, 2019. Go to the [registration site](https://aka.ms/JoinOutlookm
 **Who should attend**
 
 Open to all. These demo webinars will focus on end user value so invite your business decision makers, end users, trainers, change management personnel, champions, and more!
+
+**What you will take away**
+
+Download the [Outlook for iOS and Android: tips and tricks that save you time reference sheet](media/outlook-mobile-time-saving-tips-and-tricks.pdf) (PDF) to keep the information you learned handy.
