@@ -13,6 +13,7 @@ ms.collection:
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars
+ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
