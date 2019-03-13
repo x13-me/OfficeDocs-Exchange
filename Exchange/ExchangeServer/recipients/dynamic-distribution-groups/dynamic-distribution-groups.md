@@ -155,7 +155,7 @@ To verify that you've successfully created a dynamic distribution group, do one 
 
    - [Ownership](#ownership)
 
-   - [Membership](#membership
+   - [Membership](#membership)
 
    - [Delivery management](#delivery-management)
 
