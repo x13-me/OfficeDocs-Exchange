@@ -308,14 +308,24 @@ New-ActiveSyncDeviceAccessRule -Characteristic UserAgent -QueryString "Outlook-A
 New-ActiveSyncDeviceAccessRule -Characteristic UserAgent -QueryString "Outlook-iOS/2.0" -AccessLevel Block
 ```
 
-## Exchange Web Services (EWS) application policies
+## Exchange Online controls
 <a name="additionalmethods"> </a>
+Beyond Microsoft Intune, MDM for Office 365, and Exchange mobile device policies, you can also manage the access that mobile devices have to information in your organization through various Exchange Online controls.
 
-Beyond Microsoft Intune, MDM for Office 365, and Exchange mobile device policies, you can also manage the access that mobile devices have to information in your organization through EWS application policies. An EWS application policy can control whether or not applications are allowed to leverage the REST API. Note that when you configure an EWS application policy that only allows specific applications access to your messaging environment, you must add the user-agent string for Outlook for iOS and Android to the EWS allow list.
+### Exchange Web Services (EWS) application policies
+An EWS application policy can control whether or not applications are allowed to leverage the REST API. Note that when you configure an EWS application policy that only allows specific applications access to your messaging environment, you must add the user-agent string for Outlook for iOS and Android to the EWS allow list.
 
 The following example shows how to add the user-agent strings to the EWS allow list:
 
 ```
 Set-OrganizationConfig -EwsAllowList @{Add="Outlook-iOS/*","Outlook-Android/*"}
+```
+
+### Exchange User controls
+
+With the native Microsoft sync technology, administrators can control usage of Outlook for iOS and Android at the mailbox level. By default, users are allowed to access mailbox data using Outlook for iOS and Android. The following example shows how to disable a user's mailbox access with Outlook for iOS and Android:
+
+```
+Set-CASMailbox jane@contoso.com -OutlookMobileEnabled $false
 ```
 
