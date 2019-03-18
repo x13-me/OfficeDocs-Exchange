@@ -476,4 +476,4 @@
 ### [Use screen reader to run audit report in Exchange admin center](../accessibility/use-screen-reader-to-run-audit-report-in-exchange-admin-center.md)
 ### [Use screen reader to trace an email message in Exchange admin center](../accessibility/use-screen-reader-to-trace-an-email-message-in-exchange-admin-center.md)
 ### [Use screen reader to work with mobile clients in Exchange admin center](../accessibility/use-screen-reader-to-work-with-mobile-clients-in-exchange-admin-center.md)
-
+## [Exchange Online Multi-Geo](https://docs.microsoft.com/Office365/Enterprise/multi-geo-capabilities-in-exchange-online)
