@@ -2548,7 +2548,7 @@
     - name: Find the internal and external URLs for the Exchange admin center
       href: find-the-internal-and-external-urls-for-the-exchange-admin-center-exchange-2013-help.md
     - name: Keyboard shortcuts in the Exchange admin center
-      href: keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md
+      href: keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md
   - name: Server health and performance
     href: server-health-and-performance-exchange-2013-help.md
     items:
