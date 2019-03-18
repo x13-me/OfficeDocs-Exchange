@@ -43,7 +43,7 @@ The following examples are scenarios in which your Exchange organization may hav
 
   - You need to configure Send connectors and Receive connectors so your Exchange organization can send email to and receive email from the Internet. The configuration of the Internet Send connectors and Receive connectors is determined by your Exchange topology. For more information about configuring connectors, see [Connectors](connectors-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

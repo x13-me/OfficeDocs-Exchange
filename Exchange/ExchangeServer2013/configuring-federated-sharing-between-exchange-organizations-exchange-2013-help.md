@@ -43,7 +43,7 @@ For additional management tasks related to federated sharing, see [Federation pr
 
   - Before you perform the procedures in this topic, make sure you understand the limitations associated with sharing free/busy information across Exchange organizations. For details, see [Limitations of free/busy sharing](sharing-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 ## What do you want to do?
 

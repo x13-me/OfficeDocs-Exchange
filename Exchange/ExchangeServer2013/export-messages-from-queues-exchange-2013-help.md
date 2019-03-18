@@ -37,7 +37,7 @@ When you export a message from a queue to a file, the message isn't removed from
     
       - When you specify a file name for the exported messages, be sure to include the .eml file name extension so the files can be opened easily by email client applications or processed correctly by the Replay directory.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

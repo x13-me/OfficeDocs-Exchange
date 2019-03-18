@@ -51,7 +51,7 @@ For information about tasks to complete after installation, see [Exchange 2013 p
     
     Administrators who are members of the Delegated Setup role group can deploy Exchange 2013 servers that have been previously provisioned by a member of the Organization Management management role group.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!WARNING]

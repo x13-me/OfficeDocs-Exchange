@@ -31,7 +31,7 @@ For additional management tasks related to mailbox audit logging, see [Mailbox a
 
   - You can’t use the EAC to search mailbox audit logs for owner access. The auditing section in EAC includes reports for non-owner mailbox access and also allows you to search for and export non-owner access events.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

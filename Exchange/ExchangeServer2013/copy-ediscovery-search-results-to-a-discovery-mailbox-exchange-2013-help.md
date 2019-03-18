@@ -27,7 +27,7 @@ After you create an In-Place eDiscovery search, you can use the EAC to copy the 
 
   - Exchange 2013 Setup creates a discovery mailbox called **Discovery Search Mailbox** to copy search results. The Discovery Search Mailbox is also created by default in Exchange Online. You can create additional discovery mailboxes. For details, see [Create a discovery mailbox](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/eop/exchange-online-protection-overview).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

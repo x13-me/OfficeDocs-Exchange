@@ -35,7 +35,7 @@ For additional tasks related to UM languages, see [UM languages, prompts, and gr
 
   - Verify that the Mailbox server is installed on a different computer than the Client Access server or that the Client Access and Mailbox servers are on the same hardware.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

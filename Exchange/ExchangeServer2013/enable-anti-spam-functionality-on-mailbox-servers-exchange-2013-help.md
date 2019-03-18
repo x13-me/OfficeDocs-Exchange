@@ -43,7 +43,7 @@ What happens if you install the available anti-spam agents in the Transport serv
 
   - The Connection Filter agent and the Attachment Filter agent aren't available on Mailbox servers. They're only available on an Edge Transport server. However, the Malware agent is installed and enabled by default on a Mailbox server. For more information, see [Anti-malware protection](anti-malware-protection-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

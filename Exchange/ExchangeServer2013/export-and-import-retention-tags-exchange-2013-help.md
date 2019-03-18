@@ -49,7 +49,7 @@ For additional management tasks related to Messaging Records Management, see [Me
 
   - You can't select specific retention tags or policies to export or import. The Export-RetentionTags.ps1 script exports all retention tags and policies from an organization. The Import-RetentionTags.ps1 script imports all retention tags and policies in the XML file being imported, replacing all existing retention tags and policies in an Exchange organization.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]
