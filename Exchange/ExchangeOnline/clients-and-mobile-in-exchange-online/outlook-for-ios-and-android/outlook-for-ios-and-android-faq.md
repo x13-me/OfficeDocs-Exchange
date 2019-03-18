@@ -13,7 +13,7 @@ ms.collection:
 ms.reviewer: smithre4
 ms.audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: serdars
 
 ---
 
@@ -65,7 +65,7 @@ For more information, see [How to enable cross-app SSO on iOS using ADAL](https:
 
 Two tokens are generated when a user authenticates through ADAL-enabled apps like Outlook for iOS and Android, the Authenticator app, or the Company Portal app: an access token and a refresh token. The access token is used to access the resource (Exchange message data), while a refresh token is used to obtain a new access or refresh token pair when the current access token expires.
 
-By default, the access token lifetime is one hour and the refresh token lifetime is fourteen days. These values can be adjusted; for more information see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-configurable-token-lifetimes). Note that if you choose to reduce these lifetimes, you can also reduce the performance of Outlook for iOS and Android, because a smaller lifetime increases the number of times the application must acquire a fresh access token.
+By default, the access token lifetime is one hour and the refresh token lifetime is 90 days. These values can be adjusted; for more information see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-configurable-token-lifetimes). Note that if you choose to reduce these lifetimes, you can also reduce the performance of Outlook for iOS and Android, because a smaller lifetime increases the number of times the application must acquire a fresh access token.
 
 ### Q: What happens to the access token when a user's password is changed?
 
