@@ -41,7 +41,7 @@ Recipient filtering is provided by the Recipient Filter agent. When recipient fi
 
   - If you disable recipient filtering using the procedure in this topic, recipient filtering functionality will be disabled, but the underlying Recipient Filter agent will remain enabled.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

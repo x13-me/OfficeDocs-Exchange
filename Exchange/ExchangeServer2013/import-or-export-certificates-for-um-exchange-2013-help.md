@@ -43,7 +43,7 @@ For additional management tasks related to managing certificates for Unified Mes
 
   - Before you export a certificate, use the **Get-ExchangeCertificate** cmdlet to verify that the *PrivateKeyExportable* attribute on the certificate is set to `$true`.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

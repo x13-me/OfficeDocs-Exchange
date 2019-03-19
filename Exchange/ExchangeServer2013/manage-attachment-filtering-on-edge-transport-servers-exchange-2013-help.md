@@ -29,7 +29,7 @@ Attachment filtering is provided by the Attachment Filter agent that's available
 
   - When you disable attachment filtering and restart the Microsoft Exchange Transport service, all attachment filtering features stop working.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

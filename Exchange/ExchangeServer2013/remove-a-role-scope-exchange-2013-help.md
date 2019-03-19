@@ -27,7 +27,7 @@ Management role scopes determine what objects are made available to a user who c
 
   - Before you can remove a scope, you must remove the scope from any management role assignments that might be using it. For more information about how to remove a scope from a role assignment, see [Change a role assignment](change-a-role-assignment-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

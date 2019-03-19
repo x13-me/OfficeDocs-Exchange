@@ -1629,18 +1629,6 @@
           href: configure-protocol-logging-for-pop3-and-imap4-exchange-2013-help.md
     - name: Outlook for iOS and Android
       href: outlook-for-ios-and-android-exchange-2013-help.md
-      items:
-      - name: Using hybrid Modern Authentication with Outlook for iOS and Android
-        href: using-hybrid-modern-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md
-      - name: Using Basic authentication with Outlook for iOS and Android
-        href: using-basic-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md
-        items:
-        - name: Account setup in Outlook for iOS and Android using Basic authentication
-          href: account-setup-in-outlook-for-ios-and-android-using-basic-authentication-exchange-2013-help.md
-        - name: Passwords and Security in Outlook for iOS and Android for Exchange Server
-          href: passwords-and-security-in-outlook-for-ios-and-android-for-exchange-server-exchange-2013-help.md
-        - name: Managing devices for Outlook for iOS and Android for Exchange Server
-          href: managing-devices-for-outlook-for-ios-and-android-for-exchange-server-exchange-2013-help.md
     - name: Client protocol management
       href: client-protocol-management-exchange-2013-help.md
       items:
@@ -2560,7 +2548,7 @@
     - name: Find the internal and external URLs for the Exchange admin center
       href: find-the-internal-and-external-urls-for-the-exchange-admin-center-exchange-2013-help.md
     - name: Keyboard shortcuts in the Exchange admin center
-      href: keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md
+      href: keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md
   - name: Server health and performance
     href: server-health-and-performance-exchange-2013-help.md
     items:

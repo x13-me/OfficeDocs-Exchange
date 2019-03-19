@@ -25,7 +25,7 @@ In-Place Archiving helps you regain control of your organization’s messaging d
 
   - It’s not supported to have a user’s primary mailbox reside on an older Exchange version than the user’s archive. If the user’s primary mailbox is still on Exchange 2010, you must move it to Exchange 2013 at the same time you move the archive to Exchange 2013.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

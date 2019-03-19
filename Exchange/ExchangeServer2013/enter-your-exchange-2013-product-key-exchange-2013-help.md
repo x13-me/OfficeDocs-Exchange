@@ -44,7 +44,7 @@ If you don't enter a product key, your server is automatically licensed as a tri
 
   - If you want to downgrade an Exchange server from an Enterprise Edition license to a Standard Edition license, you need to reinstall Exchange.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

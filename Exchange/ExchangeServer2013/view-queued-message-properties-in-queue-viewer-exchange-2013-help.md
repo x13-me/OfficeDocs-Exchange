@@ -27,7 +27,7 @@ You can use the Queue Viewer in the Exchange Toolbox to view the properties of a
 
   - You can also use the Get-Message cmdlet in the Exchange Management Shell to view additional message properties that aren't visible in Queue Viewer. For more information, see [Message filters](message-filters-exchange-2013-help.md) and [Use the Exchange Management Shell to manage queues](use-the-exchange-management-shell-to-manage-queues-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

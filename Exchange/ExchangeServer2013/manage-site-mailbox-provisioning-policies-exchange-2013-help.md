@@ -25,7 +25,7 @@ To learn more about site mailboxes, see [Site mailboxes](site-mailboxes-exchange
 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Site mailboxes" entry in the [Sharing and collaboration permissions](sharing-and-collaboration-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
   - Although you can create multiple site mailbox provisioning policies, only the default provisioning policy will be applied to all site mailboxes. You can’t apply multiple policies within your organization.
 

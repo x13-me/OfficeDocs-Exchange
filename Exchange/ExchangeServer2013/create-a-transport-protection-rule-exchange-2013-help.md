@@ -37,7 +37,7 @@ For additional management tasks related to Information Rights Management (IRM), 
 
   - After you create a transport protection rule, if the rule can't be applied to messages because an AD RMS server is unavailable, messages will be queued by the Transport service on Mailbox servers. Depending on the volume of these messages, additional disk space may be consumed on Mailbox servers. Exchange will attempt to IRM-protect the message three times. After these attempts, if the AD RMS server is unreachable or the message can't be IRM-protected, a non-delivery report (NDR) is sent to the sender.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

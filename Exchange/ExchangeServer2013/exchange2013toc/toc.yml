@@ -1704,14 +1704,14 @@
         - name: Configure group metrics
           href: ../configure-group-metrics-exchange-2013-help.md
     - name: Add-ins for Outlook
-      href: https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook
+      href: ../add-ins-for-outlook-2013-help.md
       items:
       - name: Install or remove add-ins for Outlook for your organization
-        href: https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/install-or-remove-outlook-add-ins
+        href: ../install-or-remove-outlook-add-ins-2013-help.md
       - name: Manage user access to add-ins for Outlook
-        href: https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/manage-user-access-to-add-ins
+        href: ../manage-user-access-to-add-ins-2013-help.md
       - name: Specify the administrators and users who can install and manage add-ins for Outlook
-        href: https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins
+        href: ../specify-who-can-install-and-manage-add-ins-2013-help.md
     - name: Configuring SSL offloading in Exchange 2013
       href: ../configuring-ssl-offloading-in-exchange-2013-exchange-2013-help.md
   - name: Unified Messaging
@@ -2560,7 +2560,7 @@
     - name: Find the internal and external URLs for the Exchange admin center
       href: ../find-the-internal-and-external-urls-for-the-exchange-admin-center-exchange-2013-help.md
     - name: Keyboard shortcuts in the Exchange admin center
-      href: ../keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md
+      href: ../keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md
   - name: Server health and performance
     href: ../server-health-and-performance-exchange-2013-help.md
     items:

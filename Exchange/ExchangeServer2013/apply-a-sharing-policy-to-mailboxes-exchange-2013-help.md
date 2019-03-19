@@ -27,7 +27,7 @@ To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.
 
   - A sharing policy must exist. For details, see [Create a sharing policy](create-a-sharing-policy-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 ## What do you want to do?
 
