@@ -18,7 +18,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
 - With the Exchange Management Shell, you can manage all the settings that you can with the EAC, as well as other settings. For example, you can limit availability to specific users in your organization.
 
-For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook.md).
+For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook-2013-help.md).
 
 ## What do you need to know before you begin?
 
@@ -30,7 +30,7 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook.m
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Add-ins for Outlook" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic. 
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
@@ -41,7 +41,7 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook.m
 
 1. In the EAC, navigate to **Organization** \> **Add-ins**.
 
-2. In the list view, select the add-in that you want to change settings for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
+2. In the list view, select the add-in that you want to change settings for, and then click **Edit** ![Edit icon](../images/ITPro_EAC_EditIcon.gif).
 
 3. If you don't want your users to use the add-in, clear the **Make this add-in available to users in your organization** check box, and then click **Save**.
 
