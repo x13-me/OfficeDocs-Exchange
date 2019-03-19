@@ -27,7 +27,7 @@ For additional management tasks related to address lists, see [Address list proc
 
   - You can't remove a parent address list that contains child address lists. However, you can remove both the child and parent address lists by pressing the CTRL key on the keyboard, and then selecting the parent and child address lists. If you attempt to remove a parent address list without removing the child address lists, you'll receive an error.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

@@ -45,7 +45,7 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
   - If you want to remove parameters from a role entry, the parameters you remove can't exist in the role entries of any child roles. You must remove the parameters from the role entries of the child roles. Use the "Use the Shell to remove one or more parameters from a role entry" procedure later in this topic to remove the parameters from the role entries of all child roles.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

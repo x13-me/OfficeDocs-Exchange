@@ -51,7 +51,7 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
   - All the procedures in this topic use the *SecurityGroup* parameter to assign roles to a USG. If you want to assign the role to a specific user, use the *User* parameter instead of the *SecurityGroup* parameter. All other syntax for each command is the same.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

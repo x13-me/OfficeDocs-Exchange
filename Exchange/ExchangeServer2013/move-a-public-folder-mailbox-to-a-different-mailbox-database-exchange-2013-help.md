@@ -29,7 +29,7 @@ For additional management tasks related to public folders, see [Public folder pr
 
   - Depending on the size of the public folder mailbox, the move may take several hours to complete. During that time, users won’t be able to access the public folders. Users also won’t have access to public folders for a brief period while the folder is in the “Completion in Progress” state.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

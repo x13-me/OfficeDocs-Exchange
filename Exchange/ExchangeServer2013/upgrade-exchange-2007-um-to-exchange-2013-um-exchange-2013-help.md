@@ -27,7 +27,7 @@ When you’re upgrading a Microsoft Exchange 2007 organization with Unified Mess
 
   - Verify that you've correctly installed and configured the Client Access servers running the Microsoft Exchange Unified Messaging Call Router (UM Call Router) service and Mailbox servers running the Microsoft Exchange Unified Messaging (UM) service. To learn more about UM services, see [UM services](um-services-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

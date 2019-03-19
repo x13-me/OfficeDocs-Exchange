@@ -27,7 +27,7 @@ You can also specify the server that Remote PowerShell uses to perform the speci
 
   - The procedures in this topic don't apply to Edge Transport servers. When you use Queue Viewer on an Edge Transport server, you can't change the focus of the tool.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

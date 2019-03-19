@@ -49,7 +49,7 @@ For additional management tasks related to Federation, see [Federation procedure
 
   - This topic also covers other federation management tasks, such as viewing and managing certificates used for the federation trust and viewing federation trust parameter information in the Shell.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 ## What do you want to do?
 
