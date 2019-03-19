@@ -103,7 +103,7 @@ To verify that you've successfully the FQDN on the "Client Frontend *\<Server na
 
 ## Step 2: Use the Exchange Management Shell to specify the certificate that's used to encrypt authenticated SMTP client connections
 
-The certificate needs to match or contain the FQDN value that you specified in the previous step, and the POP3 and SMTP clients need to trust the certificate, which likely means a certificate from a commercial certification authority. For more information, see [Certificate requirements for Exchange services](../../architecture/client-access/certificates.md#CertRequirements).
+The certificate needs to match or contain the FQDN value that you specified in the previous step, and the POP3 and SMTP clients need to trust the certificate, which likely means a certificate from a commercial certification authority. For more information, see [Certificate requirements for Exchange services](../../architecture/client-access/certificates.md#certificate-requirements-for-exchange-services).
 
 Also, you need to assign the certificate to the Exchange SMTP service. For more information, see [Assign certificates to Exchange Server services](../../architecture/client-access/assign-certificates-to-services.md).
 
