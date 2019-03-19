@@ -82,7 +82,7 @@ For syntax and parameters, see [New-App](https://technet.microsoft.com/library/f
 
 1. In the EAC, navigate to **Organization** \> **Add-ins**.
 
-2. In the list view, select the app that you want to remove, and then click **Delete** ![Delete icon](../images/ITPro_EAC_DeleteIcon.gif). 
+2. In the list view, select the app that you want to remove, and then click **Delete** ![Delete icon](images/ITPro_EAC_DeleteIcon.gif). 
 
 ### Use the Exchange Management Shell to remove an add-in
 
