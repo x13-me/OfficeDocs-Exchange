@@ -17,7 +17,7 @@ Content for the Exchange Deployment Assistant is updated on an occasional basis.
 
 **March 2019**
 
-  - A new release of the Exchange Deployment assistant was launched at https://aka.ms.eda.
+  - A new release of the Exchange Deployment assistant was launched at https://aka.ms/eda.
 
 **June 2016 (revision 3229)**
 
