@@ -343,7 +343,7 @@ To minimize the time it takes to activate a second datacenter, and allow the sec
 
   - For some services to be able to service users from the failed datacenter, they must have the proper server certificates configured. Some services don't allow instancing (for example, POP3 and IMAP4) and only allow the use of a single certificate. In these cases, either the certificate must be a SAN certificate that includes multiple names, or the multiple names must be similar enough so that a wildcard certificate can be used (assuming the security policies of the organization allows the use of wildcard certificates).
 
-  - The necessary services must be defined in the second datacenter. For example, if the first datacenter has three different SMTP URLs on different transport servers, the appropriate configuration must be defined in the second datacenter to enable at least one (if not all three) transport server to host the workload.
+  - The necessary services must be defined in the second datacenter. For example, if the first datacenter has three different SMTP destinations on different transport servers, the appropriate configuration must be defined in the second datacenter to enable at least one (if not all three) transport server to host the workload.
 
   - The necessary network configuration must be in place to support the datacenter switchover. This might mean making sure that the load balancing configurations are in place, that global DNS is configured, and that the Internet connection is enabled with the appropriate routing configured.
 
