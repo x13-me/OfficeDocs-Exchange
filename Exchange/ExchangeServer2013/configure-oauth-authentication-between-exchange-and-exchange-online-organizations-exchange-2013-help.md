@@ -51,14 +51,15 @@ We recommend that all mixed Exchange organizations that implement a hybrid deplo
 
 ## How do you configure OAuth authentication between your on-premises Exchange and Exchange Online organizations?
 
-## Step 1: Create an authorization server object for your Exchange Online organization
+## Step 1: Create the authorization server objects for your Exchange Online organization
 
-For this procedure, you have to specify a verified domain for your Exchange Online organization. This domain should be the same domain used as the primary SMTP domain used for the cloud-based email accounts. This domain is referred as *\<your verified domain\>* in the following procedure.
+For this procedure, you have to specify a verified domain for your Exchange Online organization and the Exchange Online Tenant Name. The first domain should be the same domain used as the primary SMTP domain used for the cloud-based email accounts. This domain is referred as *\<your verified domain\>* in the following procedure.  The second domain which is your actual tenant name like contoso.microsoft.com is referred to as *\<your tenant domain\>*
 
 Run the following command in the Exchange Management Shell (the Exchange PowerShell) in your on-premises Exchange organization.
 
 ```powershell
-    New-AuthServer -Name "evoSTS" -AuthMetadataUrl https://login.windows.net/<your verified domain>/FederationMetadata/2007-06/FederationMetadata.xml
+    New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl "https://accounts.accesscontrol.windows.net/<your verified domain>/metadata/json/1"
+    New-AuthServer -Name "evoSTS" -Type AzureAD -AuthMetadataUrl "https://login.windows.net/<your tenant domain>/federationmetadata/2007-06/federationmetadata.xml"
 ```
 
 ## Step 2: Enable the partner application for your Exchange Online organization
