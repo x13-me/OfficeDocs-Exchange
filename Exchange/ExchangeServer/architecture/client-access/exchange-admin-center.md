@@ -37,7 +37,7 @@ The URL of the EAC is controlled by the Internet Information Services (IIS) virt
 
   - A corresponding record in your public DNS.
 
-  - A TLS certificate that contains or matches the host name entry. Very likely, this will be a subject alternative name (SAN) certificate or a wildcard certificate, because most of the client services are all available under the same website on the Exchange server. For more information, see [Certificate requirements for Exchange services](certificates.md#CertRequirements).
+  - A TLS certificate that contains or matches the host name entry. Very likely, this will be a subject alternative name (SAN) certificate or a wildcard certificate, because most of the client services are all available under the same website on the Exchange server. For more information, see [Certificate requirements for Exchange services](certificates.md#certificate-requirements-for-exchange-services).
 
     After you configure the settings, a common external URL value for the EAC would resemble `https://mail.contoso.com/ecp`.
 
