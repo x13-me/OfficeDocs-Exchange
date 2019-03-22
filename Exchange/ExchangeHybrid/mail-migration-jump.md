@@ -1,5 +1,5 @@
 ---
-title: "Use the Office 365 mail migration advisors in Office 365"
+title: "Use the Office 365 mail migration advisor"
 ms.author: dstrome
 author: dstrome
 manager: serdars
@@ -14,7 +14,7 @@ ms.collection:
 description: "Use the Office 365 mail migration advisors to perform a hybrid, cutover, staged, Gmail, or IMAP, migration to Office 365."
 ---
 
-# Use the Office 365 mail migration advisor in Office 365
+# Use the Office 365 mail migration advisor
 
 For migrations from an existing on-premises Exchange Server environment, you can migrate all email, calendar, and contacts from user mailboxes to Office 365. Office 365 provides a [mail migration advisor](https://aka.ms/office365setup) to help you move mailboxes from your current mail system to Exchange Online in Office 365 with automated tools and step-by-step guidance. The advisor will recommend the best migration path for your organization based on your current mail system, the number of mailboxes you want to migrate, and how you plan to manage users and user access.
 
