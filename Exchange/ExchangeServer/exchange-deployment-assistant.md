@@ -15,9 +15,9 @@ description: "Summary:Customized step-by-step instructions to deploy Exchange Se
 
  **Summary**: Customized step-by-step instructions to deploy Exchange Server in your on-premises organization.
 
-The Exchange  Deployment Assistant is a web-based tool that asks you a few questions about your current environment and then generates a custom step-by-step checklist that will help you deploy Exchange Server in your on-premises organization. 
+The Exchange  Deployment Assistant is a web-based tool that asks you a few questions about your current environment and then generates a custom step-by-step checklist that will help you deploy Exchange Server in your on-premises organization.
 
-Looking for help with migrating your Exchange organization to Office 365 and Exchange Online? Check out [Use the Office 365 mail migration advisor in Office 365](../ExchangeHybrid/mail-migration-jump.md).
+Looking for help with migrating your Exchange organization to Office 365 and Exchange Online? Check out [Use the Office 365 mail migration advisor in Office 365](mail-migration-jump.md).
 
 [![Launch Deployment Assistant](media/ExchangeDeploymentAssistant.png)](https://aka.ms/eda)
 
@@ -50,20 +50,7 @@ following deployment scenarios are available for Exchange Server 2013:</big></p>
       </td>
       
     </tr>
-    <tr>
-      <td style="font-family: Segoe UI Light;">
-      <h3
- style="border: 0px none ; margin: 3px 0px; padding: 0px; font-style: normal; font-variant: normal; font-weight: 100; font-size: 1.538em; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(64, 65, 66); height: auto; white-space: normal; overflow: visible; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;">On-premises
-deployments</h3>
-      </td>
-      <td style="font-family: Segoe UI Light;">
-      <h3
- style="border: 0px none ; margin: 3px 0px; padding: 0px; font-style: normal; font-variant: normal; font-weight: 100; font-size: 1.538em; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(64, 65, 66); height: auto; white-space: normal; overflow: visible; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;">On-premises
-deployments</h3>
-      </td>
-      
-    </tr>
-    <tr>
+        <tr>
       <td style="font-family: Segoe UI; vertical-align: top;">
       <ul>
         <li>New installation of Exchange Server 2016</li>
