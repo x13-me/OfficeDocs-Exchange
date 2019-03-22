@@ -65,7 +65,7 @@ We don't recommend or support this scenario because the inbound mail flow throug
 
 #### Best practices for using a third-party cloud service with Office 365
 
-Don't use this scenario because it isn't currently supported. We recommend that you use the archiving and auditing solutions are provided by Office 365.
+Don't use this scenario because it isn't currently supported. We recommend that you use the archiving and auditing solutions that are provided by Office 365.
 
 ## See also
 
