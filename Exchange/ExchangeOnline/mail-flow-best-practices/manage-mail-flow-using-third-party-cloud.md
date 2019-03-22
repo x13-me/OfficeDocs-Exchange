@@ -45,15 +45,15 @@ For this scenario, your organization's mail flow setup looks like the following 
 
 3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://go.microsoft.com/fwlink/p/?LinkID=534835).) The following DNS records control mail flow:
 
-  - **MX record**: Your domain's MX record must point to your third-party service provider. Follow their guidelines for how to configure your MX record.
+   - **MX record**: Your domain's MX record must point to your third-party service provider. Follow their guidelines for how to configure your MX record.
 
-  - **SPF record**: All mail sent from your domain to the internet originates in Office 365, so your SPF record requires the standard value for Office 365:
+   - **SPF record**: All mail sent from your domain to the internet originates in Office 365, so your SPF record requires the standard value for Office 365:
 
-    ```
-    v=spf1 include:spf.protection.outlook.com -all
-    ```
+     ```
+     v=spf1 include:spf.protection.outlook.com -all
+     ```
 
-    You only need to include the third-party service in your SPF record if your organization sends **outbound** internet email through the service (where the third-party service would be a source for email from your domain).
+     You would only need to include the third-party service in your SPF record if your organization sends **outbound** internet email through the service (where the third-party service would be a source for email from your domain).
 
 ### Scenario 2 (unsupported) - MX record points to third-party solution without spam filtering
 
