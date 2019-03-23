@@ -9,7 +9,9 @@ ms.author: kwekua
 ms.assetid: 74c72aed-e9ff-4927-8eb7-c08a86e79ae0
 ms.date: 7/12/2018
 title: Manage mail contacts
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

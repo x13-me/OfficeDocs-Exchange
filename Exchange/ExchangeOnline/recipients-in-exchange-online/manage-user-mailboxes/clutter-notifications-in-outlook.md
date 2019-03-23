@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: abdd0474-db84-49b1-a915-f5710f206a58
 ms.date: 12/9/2016
 title: Clutter notifications in Outlook
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: laurawi

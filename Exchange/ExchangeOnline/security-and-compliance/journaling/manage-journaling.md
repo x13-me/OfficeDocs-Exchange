@@ -7,7 +7,9 @@ ms.author: markjjo
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
 ms.date: 
 title: Manage journaling in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: laurawi

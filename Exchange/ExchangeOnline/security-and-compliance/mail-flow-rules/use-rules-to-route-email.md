@@ -6,7 +6,9 @@ ms.topic: article
 author: chrisda
 ms.service: exchange-online
 ms.assetid: 4c5bee1b-58b5-4152-baef-86fa103050ae
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.date: 6/23/2018
 ms.audience: ITPro
 title: Use mail flow rules to route email based on a list of words, phrases, or patterns in Exchange Online

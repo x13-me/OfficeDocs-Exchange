@@ -1,13 +1,15 @@
 ---
 localization_priority: Normal
-ms.topic: overview
+ms.topic: conceptual
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: d9acb371-fd6c-4c14-aa8e-db5cbe39aa57
 ms.date: 
 description: There are many paths to migrate data from an on-premises email organization to Microsoft Office 365. When planning a migration to Office 365, a common question is about how to improve the performance of data migration and optimize migration velocity.
 title: Office 365 migration performance and best practices
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - MET150
 - MOE150
@@ -131,7 +133,7 @@ Use the Exchange Analyzer to get a deeper understanding of your network connecti
 |:-----|:-----|:-----|
 |Network capacity|The amount of time it takes to migrate mailboxes to Office 365 is determined by the available and maximum capacity of your network.|Identify your available network capacity and determine the maximum upload capacity. <br/> Contact your ISP to confirm your allocated bandwidth and to get details about restrictions, such as the total amount of data that can be transferred in a specific period of time. <br/> Use tools to evaluate your actual network capacity. Make sure you test the end-to-end flow of data from your on-premises data source to the Microsoft datacenter gateway servers. <br/> Identify other loads on your network (for example, backup utilities and scheduled maintenance) that can affect your network capacity.|
 |Network stability|A fast network doesn't always result in fast migrations. If the network isn't stable, data transfer takes longer because of error correction. Depending on the migration type, error correction can significantly affect migration performance.|Network hardware and driver issues often cause network stability problems. Work with your hardware vendors to understand your network devices and apply the vendor's latest recommended drivers and software updates.|
-|Network delays|Intrusion detection functionality configured on a network firewall often causes significant network delays and affects migration performance. <br/> Migrating data to Office 365 mailboxes relies on your Internet connection. Internet delays affect overall migration performance. <br/> Also, users in the same company might have cloud mailboxes that reside in datacenters in different geographical locations. Depending on the customer's ISP, migration performance may vary.|Evaluate network delays to all potential Microsoft datacenters to help ensure that the result is consistent. (This also helps ensure a consistent experience for end users.) Work with your ISP to address Internet-related issues. <br/> Add IP addresses for Microsoft datacenter servers to your allow list, or bypass all migration-related traffic from your network firewall. For more information about the Office 365 IP ranges, see [Office 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_Home).|
+|Network delays|Intrusion detection functionality configured on a network firewall often causes significant network delays and affects migration performance. <br/> Migrating data to Office 365 mailboxes relies on your internet connection. Internet delays affect overall migration performance. <br/> Also, users in the same company might have cloud mailboxes that reside in datacenters in different geographical locations. Depending on the customer's ISP, migration performance may vary.|Evaluate network delays to all potential Microsoft datacenters to help ensure that the result is consistent. (This also helps ensure a consistent experience for end users.) Work with your ISP to address internet-related issues. <br/> Add IP addresses for Microsoft datacenter servers to your allow list, or bypass all migration-related traffic from your network firewall. For more information about the Office 365 IP ranges, see [Office 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_Home).|
 
 For a deeper analysis of migrations within your environment, check out our [move analysis blog post](https://go.microsoft.com/fwlink/p/?LinkId=399457). The post includes a script to help you analyze move requests.
 
@@ -210,7 +212,7 @@ The following table describes the impact on migration by the source servers in y
 
 ### Factor 2: Migration server
 
-IMAP, cutover, and staged migrations are cloud-initiated data-pull migration methods, so there's no need for a dedicated migration server. The Internet-facing protocol hosts ( IMAP or RPC over HTTP Protocol), however, function as the migration server for migrating mailboxes and mailbox data to Office 365. Therefore, the migration performance factors and best practices, described in the previous section about the data source server for your current email organization, also apply to the Internet edge servers. For Exchange 2007, Exchange 2010, and Exchange 2013, organizations, the client access server functions as a migration server.
+IMAP, cutover, and staged migrations are cloud-initiated data-pull migration methods, so there's no need for a dedicated migration server. The internet-facing protocol hosts ( IMAP or RPC over HTTP Protocol), however, function as the migration server for migrating mailboxes and mailbox data to Office 365. Therefore, the migration performance factors and best practices, described in the previous section about the data source server for your current email organization, also apply to the internet edge servers. For Exchange 2007, Exchange 2010, and Exchange 2013, organizations, the client access server functions as a migration server.
 
 For more information, see:
 
@@ -243,9 +245,9 @@ For more information, see [Manage migration batches in Office 365](manage-migrat
 
 Depending on the migration method, you can try the following verification tests:
 
-- **IMAP migrations**: Prepopulate a source mailbox with sample data. Then from the Internet (outside your on-premises network), connect to the source mailbox by using a standard IMAP email client such as Microsoft Outlook, and then measure network performance by determining how long it takes to download all the data from the source mailbox. The throughput should be similar to what customers can get by using the IMAP migration tool in Office 365, given that there are no other constraints.
+- **IMAP migrations**: Prepopulate a source mailbox with sample data. Then from the internet (outside your on-premises network), connect to the source mailbox by using a standard IMAP email client such as Microsoft Outlook, and then measure network performance by determining how long it takes to download all the data from the source mailbox. The throughput should be similar to what customers can get by using the IMAP migration tool in Office 365, given that there are no other constraints.
 
-- **Cutover and staged Exchange migrations**: Prepopulate a source mailbox with sample data. Then, from the Internet (outside of your on-premises network), connect to the source mailbox with Outlook by using RPC over HTTP Protocol. Make sure that you're connecting by using [cache mode](https://go.microsoft.com/fwlink/p/?LinkId=623596). Measure network performance by checking how long it takes to synchronize all data from the source mailbox. The throughput should be similar to what customers can get by using the simple Exchange migration tools in Office 365, given that there are no other constraints.
+- **Cutover and staged Exchange migrations**: Prepopulate a source mailbox with sample data. Then, from the internet (outside of your on-premises network), connect to the source mailbox with Outlook by using RPC over HTTP Protocol. Make sure that you're connecting by using [cache mode](https://go.microsoft.com/fwlink/p/?LinkId=623596). Measure network performance by checking how long it takes to synchronize all data from the source mailbox. The throughput should be similar to what customers can get by using the simple Exchange migration tools in Office 365, given that there are no other constraints.
 
 There is some overhead during an actual IMAP, cutover, or staged Exchange migration. The actual throughput, however, should be similar to the results of these verification tests.
 
@@ -320,7 +322,7 @@ Third-party tools are mostly used in migration scenarios that don't involve Exch
 Most third-party tools for Office 365 migrations are client initiated and push data to Office 365. These tools typically require a migration server. Factors such as system performance, back-end tasks, and throttling policies for the source servers apply to these migration servers.
 
 > [!NOTE]
-> Some third-party migration solutions are hosted on the Internet as cloud-based services and don't require an on-premises migration server.
+> Some third-party migration solutions are hosted on the internet as cloud-based services and don't require an on-premises migration server.
 
  **Solution and practice**
 

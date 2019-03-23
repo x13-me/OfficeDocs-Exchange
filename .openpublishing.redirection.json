@@ -60,6 +60,36 @@
         "source_path": "Exchange/ExchangeOnline/clients-and-mobile-in-exchange-online/outlook-on-the-web/owa-for-devices-contact-sync.md",
         "redirect_url": "https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android",
         "redirect_document_id": true
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/outlook-for-ios-and-android-exchange-2013-help.md",
+        "redirect_url": "https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/outlook-for-ios-and-android?view=exchserver-2019",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/using-hybrid-modern-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/using-basic-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-basic-auth?view=exchserver-2019",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/account-setup-in-outlook-for-ios-and-android-using-basic-authentication-exchange-2013-help.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/account-setup?view=exchserver-2019",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/passwords-and-security-in-outlook-for-ios-and-android-for-exchange-server-exchange-2013-help.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/passwords-and-security?view=exchserver-2019",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Exchange/ExchangeServer2013/managing-devices-for-outlook-for-ios-and-android-for-exchange-server-exchange-2013-help.md",
+        "redirect_url": "https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/manage-devices?view=exchserver-2019",
+        "redirect_document_id": false
       }
     ]
 }

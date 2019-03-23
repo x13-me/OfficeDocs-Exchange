@@ -28,15 +28,15 @@ For Client Access Rule procedures, see [Procedures for Client Access Rules in Ex
 
 A rule is made of conditions, exceptions, an action, and a priority value.
 
-- **Conditions**: Identify the client connections to apply the action to. For a complete list of conditions, see the [Client Access Rule conditions and exceptions](#client-access-rule-conditions-and-exceptions) section later in this topic. When a client connection matches the conditions of a rule, the action is applied to the client connection, and rule evaluation stops (no more rules are applied to the connection). 
+- **Conditions**: Identify the client connections to apply the action to. For a complete list of conditions, see the [Client Access Rule conditions and exceptions](#client-access-rule-conditions-and-exceptions) section later in this topic. When a client connection matches the conditions of a rule, the action is applied to the client connection, and rule evaluation stops (no more rules are applied to the connection).
 
 - **Exceptions**: Optionally identify the client connections that the action shouldn't apply to. Exceptions override conditions and prevent the rule action from being applied to a connection, even if the connection matches all of the configured conditions. Rule evaluation continues for client connections that are allowed by the exception, but a subsequent rule could still affect the connection.
 
 - **Action**: Specifies what to do to client connections that match the conditions in the rule, and don't match any of the exceptions. Valid actions are:
 
-  - Allow the connection (the `AllowAccess` value for the _Action_ parameter). 
+  - Allow the connection (the `AllowAccess` value for the _Action_ parameter).
 
-  - Block the connection (the `DenyAccess` value for the _Action_ parameter). 
+  - Block the connection (the `DenyAccess` value for the _Action_ parameter).
 
     **Note**: When you block connections for a specific protocol, other applications that rely on the same protocol might also be affected.
 

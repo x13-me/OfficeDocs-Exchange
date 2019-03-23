@@ -2,15 +2,15 @@
 title: "Server roles in Exchange 2013/Exchange 2010 hybrid deployments"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 6/25/2018
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: 7d774948-94f9-4405-af2b-0c67c0405c0f
 description: "When you configure a hybrid deployment in an Exchange 2010 organization, we strongly recommend at least one Exchange 2013 server with the Client Access and Mailbox server roles in your existing Exchange 2010 organization. The Exchange 2013 Client Access and Mailbox servers coordinate communications between your existing Exchange 2010 on-premises organization and the Exchange Online organization. This communication includes message transport and messaging features between the on-premises and Exchange Online organizations."
 ---

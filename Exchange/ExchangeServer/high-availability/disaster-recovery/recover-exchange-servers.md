@@ -5,7 +5,7 @@ ms.topic: article
 author: chrisda
 ms.author: chrisda
 ms.assetid: 46e9a1cf-b64c-43c3-a898-6171176da761
-ms.date: 
+ms.date:
 title: Recover Exchange server, recover lost Exchange Server, Lost Exchange Server recovery
 ms.collection:
 - Strat_EX_Admin
@@ -113,7 +113,7 @@ If you previously enabled the Scripting Agent in your Exchange organization, the
 "Initialization failed: '"Scripting Agent initialization failed: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'.""' ---> Microsoft.Exchange.Provisioning.ProvisioningException: "Scripting Agent initialization failed: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."" ---> System.IO.FileNotFoundException: "File is not found: 'C:\Program Files\Microsoft\Exchange Server\V15\Bin\CmdletExtensionAgents\ScriptingAgentConfig.xml'."
 ```
 
-If you have other Exchange servers in your organization, you'11 need to:
+If you have other Exchange servers in your organization, you'll need to:
 
 1. Disable the Scripting Agent in the Exchange Management Shell on an existing server:
 
@@ -123,7 +123,7 @@ If you have other Exchange servers in your organization, you'11 need to:
 
 2. Run Exchange Setup in recovery mode as described earlier in this topic.
 
-3. Enable the Scripting Agent in the Exchange Management Shell after the Exchange server recovery is complete: 
+3. Enable the Scripting Agent in the Exchange Management Shell after the Exchange server recovery is complete:
 
     ```
     Enable-CmdletExtensionAgent -Identity "Scripting Agent"

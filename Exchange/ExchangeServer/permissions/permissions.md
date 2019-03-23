@@ -5,7 +5,7 @@ ms.topic: overview
 author: dstrome
 ms.author: dstrome
 ms.assetid: d8dd605e-0af1-4e18-9ce6-e51d04e161ba
-ms.date: 
+ms.date:
 title: Exchange Server permissions, permissions Exchange Server, Exchange Admin roles, Exchange admin permissions, role assignment policy Exchange
 ms.collection: exchange-server
 ms.audience: ITPro
@@ -78,7 +78,7 @@ Exchange Server includes several built-in role groups, each one providing permis
 |[Server Management](http://technet.microsoft.com/library/30cbc4de-adb3-42e8-922f-7661095bdb8c.aspx)|Administrators who are members of the Server Management role group can configure server-specific configuration of transport, Unified Messaging, client access, and mailbox features such as database copies, certificates, transport queues and Send connectors, virtual directories, and client access protocols. (**Note**: UM is not available on Exchange 2019.)|
 |[Delegated Setup](http://technet.microsoft.com/library/49362059-e53f-4135-ad2b-9edfbfff9a1e.aspx)|Administrators who are members of the Delegated Setup role group can deploy servers running Exchange Server that have been previously provisioned by a member of the Organization Management role group.|
 |[Compliance Management](http://technet.microsoft.com/library/b91b23a4-e9c7-4bd0-9ee3-ec5cb498da15.aspx)|Users who are members of the Compliance Management role group can configure and manage Exchange compliance settings in accordance with their organization's policy.|
- 
+
 If you work in a small organization that has only a few administrators, you might only ever use the Organization Management role group, and none of the others. If you work in a larger organization, you might have administrators who perform specific tasks administering Exchange, such as recipient or server management. In those cases, you might add one administrator to the Recipient Management role group, and another administrator to the Server Management role group. Those administrators can then manage their specific areas of Exchange Server but won't have permissions to manage areas they're not responsible for.
 
 If you can't find a built-in role group that fits the jobs your administrators need to do, you can create role groups and add roles to them. For more information, see [Work with role groups](#CustomRoleGroup.md) later in this topic.

@@ -164,7 +164,7 @@ Protected Voice Mail
 
 public switched telephone network (PSTN)
 
-> PSTN is a grouping of the world's public circuit-switched telephone networks. This grouping resembles the way that the Internet is a grouping of the world's public IP-based packet-switched networks.
+> PSTN is a grouping of the world's public circuit-switched telephone networks. This grouping resembles the way that the internet is a grouping of the world's public IP-based packet-switched networks.
 
 reset
 
@@ -180,7 +180,7 @@ RTAudio codec
 
 SIP-enabled PBX
 
-> A SIP-enabled PBX is a telephony device that acts as a networking switch for switching calls in a telephony or circuit-switched network. However, the difference between a SIP-enabled PBX and a traditional PBX is that the SIP-enabled PBX can connect to the Internet and use the SIP protocol to make calls over the Internet.
+> A SIP-enabled PBX is a telephony device that acts as a networking switch for switching calls in a telephony or circuit-switched network. However, the difference between a SIP-enabled PBX and a traditional PBX is that the SIP-enabled PBX can connect to the internet and use the SIP protocol to make calls over the internet.
 
 SIP notification
 

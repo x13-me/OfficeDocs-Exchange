@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: 94d2f62e-5d43-4200-b7ce-33b1f41f1d59
 ms.date: 
 title: Back up email in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

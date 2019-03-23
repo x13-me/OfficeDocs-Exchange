@@ -2,9 +2,8 @@
 title: "Create a cloud-based archive for an on-premises primary mailbox in an Exchange hybrid deployment"
 ms.author: markjjo
 author: markjjo
-manager: laurawi
-ms.date: 1/20/2017
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -12,6 +11,7 @@ ms.collection:
 - Strat_EX_EXOBlocker
 - Ent_O365_Hybrid
 - Hybrid
+- M365-email-calendar
 ms.assetid: ecc0a687-6c05-47bd-a079-a43d83cba9ea
 description: "In an Exchange hybrid deployment, you can configure an on-premises primary mailbox with a cloud-based archive mailbox in Exchange Online."
 ---

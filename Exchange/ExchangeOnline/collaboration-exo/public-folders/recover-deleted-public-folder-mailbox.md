@@ -6,7 +6,9 @@ ms.topic: article
 author: msdmaguire
 ms.service: exchange-online
 ms.assetid: b293b7e5-f9f7-4322-8d56-e30c75af6845
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 description: 'Summary: This article describes how to recover a public folder mailbox in Office 365 that was previously soft-deleted, meaning the mailbox retention period has not yet elapsed and the recycle bin has not been purged.'
 ms.audience: ITPro
 title: Recover a deleted public folder mailbox

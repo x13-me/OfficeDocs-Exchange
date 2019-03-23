@@ -45,7 +45,7 @@ For additional management tasks related to IRM, see [Information Rights Manageme
 
   - If a super users group is already configured on an AD RMS cluster, any modifications to the distribution group membership can take up to 24 hours to be refreshed by the AD RMS cluster. This is a result of caching the group membership on the cluster.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

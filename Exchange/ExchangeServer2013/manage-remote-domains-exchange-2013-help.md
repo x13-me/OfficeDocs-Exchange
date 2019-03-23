@@ -31,7 +31,7 @@ If you remove a remote domain entry, the settings for message transfer no longer
 
   - You can't create a remote domain for an address space that's configured as an accepted domain in your organization. For example, if your organization accepts mail for fabrikam.com, you can't create a remote domain for fabrikam.com.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

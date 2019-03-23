@@ -7,7 +7,9 @@ ms.author: markjjo
 ms.assetid: 71031c06-852d-44d8-b558-dff444eaef8c
 ms.date: 
 title: In-Place Hold and Litigation Hold
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: Admin
 ms.service: exchange-online
 manager: serdars

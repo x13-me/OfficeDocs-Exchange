@@ -39,7 +39,7 @@ Although traditional solutions to information leakage may protect the initial ac
 |:-----|:-----|:-----|
 |Transport Layer Security (TLS)|TLS is an Internet standard protocol that's used to encrypt network communications. In a messaging environment, TLS is used to encrypt server/server and client/server communications.  <br/> By default, Exchange uses TLS for all internal message transfers. Opportunistic TLS is also enabled by default for SMTP sessions with external hosts (TLS encryption is tried first, but if it isn't available, unencrypted communication is allowed). You can also configure domain security to enforce mutual TLS with external organizations.|TLS only protects the SMTP session between two SMTP hosts. In other words, TLS protects information in motion, and it doesn't provide protection at the message-level or for information at rest. Unless the messages are encrypted using another method, messages in sender and recipient mailboxes remain unprotected.  <br/> For email sent outside the organization, you can require TLS only for the first hop. After a remote SMTP host receives the message, it can relay it to another SMTP host over an unencrypted session.  <br/>  Because TLS is a transport layer technology that's used in mail flow, it can't provide control over what the recipient does with the message.|
 |Message encryption|Users can use technologies such as S/MIME to encrypt messages.|Users decide whether a message gets encrypted.  <br/> There are additional costs of a public key infrastructure (PKI) deployment, with the accompanying overhead of certificate management for users and protection of private keys.  <br/>  After a message is decrypted, there's no control over what the recipient can do with the information. Decrypted information can be copied, printed, or forwarded. By default, saved attachments aren't protected.  <br/> Messaging servers can't open and inspect messages that are encrypted by S/MIME. Therefore, the messaging servers can't enforce messaging policies, scan messages for viruses, or take other actions that require access to the content in messages.|
- 
+
 Finally, traditional solutions often lack enforcement tools that apply uniform messaging policies to prevent information leakage. For example, a user marks a message with **Company Confidential** and **Do Not Forward**. After the message is delivered to the recipient, the sender or the organization no longer has control over the message. The recipient can willfully or accidentally forward the message (using features such as automatic forwarding rules) to external email accounts, which subjects your organization to substantial information leakage risks.
 
 ## IRM in Exchange
@@ -109,7 +109,7 @@ This table describes the scenarios for sending messages, and whether IRM protect
 |Sending messages between different Active Directory forests in an on-premises organization.|Yes|For the requirements, see [Configuring AD RMS to Integrate with Exchange Server 2010 Across Multiple Forests](https://go.microsoft.com/fwlink/p/?linkId=199009).|
 |Sending messages between an on-premises Exchange organization and an Office 365 organization in a hybrid deployment.|Yes|For more information, see [IRM in Exchange 2013 Hybrid Deployments](http://technet.microsoft.com/library/ba6ec48b-8f79-4807-b74b-fd442bbbe82f.aspx).|
 |Sending messages to external recipients|No|Exchange doesn't include a solution for sending IRM-protected messages to external recipients in non-federated organizations. To create a federated trust between two Active Directory forests by using Active Directory Federation Services (AD FS), see [Understanding AD RMS Trust Policies](https://go.microsoft.com/fwlink/p/?linkId=182909).|
- 
+
 ## Decrypt IRM-protected messages to enforce messaging policies
 <a name="decrypting"> </a>
 
@@ -143,7 +143,7 @@ The built-in transport agents that are associated with IRM are described in this
 |RMS Encryption Agent|No|**OnRoutedMessage**|Applies IRM protection to messages flagged by the transport agent and re-encrypts transport decrypted messages.|
 |RMS Protocol Decryption Agent|No|**OnEndOfData**|Decrypts IRM-protected messages to allow access to the message content by transport agents.|
 |Transport Rule Agent|Yes|**OnRoutedMessage**|Flags messages that match the conditions in a transport protection rule to be IRM-protected by the RMS Encryption agent.|
- 
+
 For more information about transport agents, see [Transport Agents](http://technet.microsoft.com/library/e7389d63-3172-40d5-bf53-0d7cd7e78340.aspx).
 
 ## IRM requirements
@@ -157,7 +157,7 @@ By default, an Exchange organization is enabled for IRM. To actually implement I
 |Exchange|Exchange 2010 or later is required.  <br/> In a production environment, installing AD RMS and Exchange on the same server isn't supported.|
 |Outlook|AD RMS templates for protecting messages are available in Outlook 2007 or later.  <br/> Outlook protection rules in Exchange require Outlook 2010 or later,|
 |Exchange ActiveSync|IRM is available on mobile applications and devices that support Exchange ActiveSync protocol version 14.1 or later, and the included **RightsManagementInformation** tag (both introduced in Exchange 2010 Service Pack 1). Users with supported devices can use ActiveSync to view, reply to, forward, and create IRM-protected messages without connecting to a computer to activate the device for IRM. For more information, see [Understanding Information Rights Management in Exchange ActiveSync](http://technet.microsoft.com/library/ebf04460-4d61-4b00-86b9-85ec1dbbd6a1.aspx).<br/> |
- 
+
 Exchange IRM features support Office file formats. You can extend IRM protection to other file formats by deploying custom protectors. For more information about custom protectors, see Information Protection and Control Partners in [Microsoft partners](https://go.microsoft.com/fwlink/p/?linkId=210336).
 
 ## Configure and test IRM
@@ -165,7 +165,7 @@ Exchange IRM features support Office file formats. You can extend IRM protection
 
 You use the Exchange Management Shell to configure IRM features in Exchange. For procedures, see [Managing Rights Protection](http://technet.microsoft.com/library/e5b3c7d1-31d6-481f-82e7-a3766da9a510.aspx).
 
-After you install and configure a Mailbox server, you can use the **Test-IRMConfiguration** cmdlet to perform end-to-end tests of your IRM deployment. The cmdlet performs these tests: 
+After you install and configure a Mailbox server, you can use the **Test-IRMConfiguration** cmdlet to perform end-to-end tests of your IRM deployment. The cmdlet performs these tests:
 
 - Inspects IRM configuration for your Exchange organization.
 

@@ -2,8 +2,7 @@
 title: "Server roles in Exchange 2013/Exchange 2007 hybrid deployments"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 6/25/2018
+manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -11,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: d7104efe-6d2a-4260-bc4e-f05da477e30b
 description: "When you configure a hybrid deployment in an Exchange 2007 organization, you have to install at least one Exchange 2013 server with the Client Access and Mailbox server roles in your existing Exchange 2007 organization. The Exchange 2013 Client Access and Mailbox servers coordinate communications between your existing Exchange 2007 on-premises organization and the Exchange Online organization. This communication includes message transport and messaging features between the on-premises and Exchange Online organizations."
 ---

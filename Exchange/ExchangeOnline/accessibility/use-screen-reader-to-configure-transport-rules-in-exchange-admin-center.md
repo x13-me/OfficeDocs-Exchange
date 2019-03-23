@@ -7,7 +7,9 @@ ms.assetid: 708c71d5-7d6a-40b8-966b-eed82bc0d186
 ms.date: 
 description: Admins can learn how to use a screen reader to create mail flow rules (also known as transport rules) in the Exchange admin center (EAC) in Exchange Online.
 title: Use a screen reader to configure mail flow rules in the Exchange admin center in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.custom: A11y_UseSR
 ms.service: exchange-online

@@ -31,7 +31,7 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
   - Procedures in this topic require specific permissions. See each procedure for its permissions information.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

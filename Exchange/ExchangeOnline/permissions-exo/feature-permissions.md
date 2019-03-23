@@ -7,7 +7,9 @@ ms.author: dstrome
 ms.assetid: 15073ce1-0917-403b-8839-02a2ebc96e16
 ms.date: 
 title: Feature permissions in Exchange Online, permissions Exchange Online, Exchange Online management roles, Exchange Online management permissions, Exchange Online admin permissions, Exchange online features
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: laurawi

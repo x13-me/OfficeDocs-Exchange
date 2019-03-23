@@ -2,15 +2,15 @@
 title: "Hybrid Configuration wizard FAQs"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 12/9/2016
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: e911e6e0-e36e-4430-ac36-c745a10d6c26
 description: "Microsoft has released a new Hybrid Configuration wizard that simplifies the configuration of a hybrid deployment, allows for more flexibility with your hybrid configuration, and ensures you are always running the most up to date versions of the experience. This version of the hybrid wizard is built into Exchange 2016 and releases of Exchange 2013 starting with Cumulative Update 10, but even if you're running an older Exchange 2013 cumulative update (CU) or Exchange 2010 Service Pack 3 (SP3), you can still download the new wizard."
 ---
@@ -31,7 +31,7 @@ Q: What versions of Exchange support the new Hybrid Configuration wizard?
     
 - **Exchange 2010** Exchange 2010 SP3 needs to be installed on at least one server running the Mailbox, Hub Transport, and Client Access server roles. We also strongly recommend that you install the latest available Update Rollup available for Exchange 2010 SP3. 
     
-- **Exchange 2013** The latest Exchange 2013 CU needs to be installed on at least one server running both the Mailbox and Client Access server roles. If you can't install the latest CU, the immediately previous release is also supported. Older CUs aren't supported. 
+- **Exchange 2013** The latest Exchange 2013 CU needs to be installed on at least one server running both the Mailbox and Client Access server roles. In instances where you have these roles split across multiple servers, you need to update each mailbox role and client access role server. If you can't install the latest CU, the immediately previous release is also supported. Older CUs aren't supported. 
     
 - **Exchange 2016** The latest release of Exchange 2016 needs to be installed on at least one server running the Mailbox server role. 
     

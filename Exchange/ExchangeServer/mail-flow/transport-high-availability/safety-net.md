@@ -16,7 +16,7 @@ manager: serdars
 
 # Safety Net in Exchange Server
 
- 
+
 In Exchange 2010, the *transport dumpster* helped protect against data loss by maintaining a queue of successfully delivered messages that hadn't replicated to the passive mailbox database copies in the database availability group (DAG). When a mailbox database or server failure required the promotion of an out-of-date copy of the mailbox database, the messages in the transport dumpster were automatically resubmitted to the new active copy of the mailbox database.
 
 The transport dumpster was improved in Exchange 2013 and is now called *Safety Net*. Exchange 2016 and Exchange 2019 have these same improvements.

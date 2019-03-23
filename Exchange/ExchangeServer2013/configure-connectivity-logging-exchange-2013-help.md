@@ -25,7 +25,7 @@ Connectivity logging records the outbound connection activity that's used to tra
 
   - You can use the Exchange admin center (EAC) to enabled or disabled connectivity logging, or set the connectivity log path for the Transport service only. For all other connectivity logging options in other transport services, you need to use the Shell.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

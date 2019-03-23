@@ -2,9 +2,8 @@
 title: "Create a hybrid deployment with the Hybrid Configuration wizard"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 12/9/2016
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
@@ -12,6 +11,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - Strat_EX_EXOBlocker
 - Hybrid
+- M365-email-calendar
 ms.assetid: 997a25d3-7fb3-4d4e-bb28-defcbf542c99
 description: "By establishing a hybrid deployment, you can extend the feature-rich experience and administrative control you have with your existing on-premises Exchange Server organization to the cloud. A hybrid deployment also offers support for a cloud-based archiving solution for your on-premises mailboxes with Exchange Online Archiving and may also serve as an intermediate step towards a complete migration of your on-premises mailboxes to Exchange Online."
 ---

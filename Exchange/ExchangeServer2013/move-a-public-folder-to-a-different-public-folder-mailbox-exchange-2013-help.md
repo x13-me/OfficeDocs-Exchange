@@ -37,7 +37,7 @@ For additional management tasks related to public folders see [Public folder pro
 
   - To check the status of an ongoing public folder move request, run the [Get-PublicFolderMoveRequest](https://technet.microsoft.com/en-us/library/jj878076\(v=exchg.150\)) cmdlet.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

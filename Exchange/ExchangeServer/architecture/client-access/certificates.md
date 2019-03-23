@@ -65,7 +65,7 @@ When you install Exchange 2016 or Exchange 2019 on a server, two self-signed cer
 |Microsoft Exchange Server Auth Certificate|This Exchange self-signed certificate is used for server-to-server authentication and integration by using OAuth. For more information, see [Plan Exchange Server integration with SharePoint and Skype for Business](../../plan-and-deploy/integration-with-sharepoint-and-skype/integration-with-sharepoint-and-skype.md).|
 |WMSVC|This Windows self-signed certificate is used by the Web Management service in IIS to enable remote management of the web server and its associated web sites and applications. <br/> If you remove this certificate, the Web Management service will fail to start if no valid certificate is selected. Having the service in this state can prevent you from installing Exchange updates, or uninstalling Exchange from the server. For instructions on how to correct this issue, see [Event ID 1007 — IIS Web Management Service Authentication](https://go.microsoft.com/fwlink/p/?LinkId=746383)|
 
-The properties of these self-signed certificates are described in the [Properties of the default self-signed certificates](certificates.md#DefaultCertificateProperties) section.
+The properties of these self-signed certificates are described in the [Properties of the default self-signed certificates](#properties-of-the-default-self-signed-certificates) section.
 
 These are the key issues that you need to consider when it comes to certificates in Exchange:
 
@@ -90,7 +90,6 @@ The following elements of planning and deployment for Exchange Server are import
   - [Client Connectivity in an Exchange 2016 Coexistence Environment with Mixed Exchange Versions](https://blogs.technet.com/b/exchange/archive/2015/10/30/client-connectivity-in-an-exchange-2016-coexistence-environment-with-mixed-exchange-versions.aspx)
 
 ## Certificate requirements for Exchange services
-<a name="CertRequirements"> </a>
 
 The Exchange services that certificates can be assigned to are described in the following table.
 
@@ -106,7 +105,6 @@ The Exchange services that certificates can be assigned to are described in the 
 <sup>\*</sup> Kerberos authentication and Kerberos encryption are used for remote PowerShell access, from both the Exchange admin center and the Exchange Management Shell. Therefore, you don't need to configure your certificates for use with remote PowerShell, as long as you connect directly to an Exchange server (not to a load balanced namespace). To use remote PowerShell to connect to an Exchange server from a computer that isn't a member of the domain, or to connect from the Internet, you need to configure your certificates for use with remote PowerShell.
 
 ## Best practices for Exchange certificates
-<a name="BestPractices"> </a>
 
 Although the configuration of your organization's digital certificates will vary based on its specific needs, information about best practices has been included to help you choose the digital certificate configuration that's right for you.
 
@@ -117,8 +115,6 @@ Although the configuration of your organization's digital certificates will vary
 - **Use certificates from a commercial CA for client and external server connections**: Although you can configure most clients to trust any certificate or certificate issuer, it's much easier to use a certificate from a commercial CA for client connections to your Exchange servers. No configuration is required on the client to trust a certificate that's issued by a commercial CA. Many commercial CAs offer certificates that are configured specifically for Exchange. You can use the EAC or the Exchange Management Shell to generate certificate requests that work with most commercial CAs.
 
 - **Choose the right commercial CA**: Compare certificate prices and features between CAs. For example:
-
-  - Choose a CA that says it supports "Unified Communications" (UC) certificates for use with Exchange. For more information, see [Unified Communications certificate partners](https://go.microsoft.com/fwlink/p/?LinkID=282625).
 
   - Verify that the CA is trusted by the clients (operating systems, browsers, and mobile devices) that connect to your Exchange servers.
 
@@ -139,7 +135,6 @@ Although the configuration of your organization's digital certificates will vary
   - **autodiscover.contoso.com**: This specific host name is required by clients that support Autodiscover, including Outlook, Exchange ActiveSync, and Exchange Web Services clients. For more information, see [Autodiscover service](autodiscover.md).
 
 ## Properties of the default self-signed certificates
-<a name="DefaultCertificateProperties"> </a>
 
 Some of the more interesting properties of the default self-signed certificates that are visible in the Exchange admin center and/or the Exchange Management Shell on an Exchange server are described in the following table.
 
@@ -152,14 +147,14 @@ Some of the more interesting properties of the default self-signed certificates 
 |**EnhancedKeyUsageList**<sup>\*</sup>|Server Authentication (1.3.6.1.5.5.7.3.1)|Server Authentication (1.3.6.1.5.5.7.3.1)|Server Authentication (1.3.6.1.5.5.7.3.1)|
 |**IISServices**<sup>\*</sup>|`IIS://<ServerName>/W3SVC/1, IIS://<ServerName>/W3SVC/2` (for example, `IIS://Mailbox01/W3SVC/1, IIS://Mailbox01/W3SVC/2`)|none|none|
 |**IsSelfSigned**|True|True|True|
-|**Issuer**|`CN=<ServerName>` (for example, `CN=Mailbox01`)|`CN=Microsoft Exchange Server Auth Certificate`|`CN=WMSvc-<ServerName>` (for example, `CN=WMSvc-Mailbox01)|
+|**Issuer**|`CN=<ServerName>` (for example, `CN=Mailbox01`)|`CN=Microsoft Exchange Server Auth Certificate`|`CN=WMSvc-<ServerName>` (for example, `CN=WMSvc-Mailbox01`)|
 |**NotBefore**|The date/time that Exchange was installed.|The date/time that Exchange was installed.|The date/time that the IIS Web Manager service was installed.|
 |**Expires on (NotAfter)**|5 years after `NotBefore`.|5 years after `NotBefore`.|10 years after `NotBefore`.|
 |**Public key size (PublicKeySize)**|2048|2048|2048|
 |**RootCAType**|Registry|None|Registry|
 |**Services**|IMAP, POP, IIS, SMTP|SMTP|None|
 
-<sup>\*</sup>These properties aren't visible in the standard view in the Exchange Management Shell. To see them, you need to specify the property name (exact name or wildcard match) with the **Format-Table** or **Format-List** cmdlets. For example: 
+<sup>\*</sup>These properties aren't visible in the standard view in the Exchange Management Shell. To see them, you need to specify the property name (exact name or wildcard match) with the **Format-Table** or **Format-List** cmdlets. For example:
 
 - `Get-ExchangeCertificate -Thumbprint <Thumbprint> | Format-List *`
 

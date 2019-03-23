@@ -47,7 +47,7 @@ By default, delivery queues that have the status Active, Connecting, Ready, or R
 
   - Changes you make using **Set-TransportConfig** affect all Mailbox servers in your organization. Changes you make in the EdgeTransport.exe.config file affect the local Mailbox server only.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

@@ -38,7 +38,7 @@ The following table lists the default settings on an Exchange Mailbox server tha
 |owa|Basic authentication|SSL required <br/> Requires 128-bit encryption|EAC or Exchange Management Shell|
 |PowerShell|By default, all authentication methods are disabled.|Not required|EAC or Exchange Management Shell|
 |Rpc|Basic authentication <br/> Windows authentication|SSL required <br/> Requires 128-bit encryption|EAC or Exchange Management Shell|
- 
+
 ¹The API virtual directory is available in Exchange 2016 CU3 or newer.
 
 ## Back End Virtual Directories on Mailbox server

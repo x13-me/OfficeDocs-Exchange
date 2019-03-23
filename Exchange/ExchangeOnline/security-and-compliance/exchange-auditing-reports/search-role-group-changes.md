@@ -7,7 +7,9 @@ ms.author: markjjo
 ms.assetid: c7188d53-e672-492b-b57d-cd711379ddb3
 ms.date: 
 title: Search the role group changes or administrator audit logs in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: laurawi

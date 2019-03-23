@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: 874d1c78-a8ec-4938-b388-d3208c2fa971
 ms.date: 
 title: Use mail flow rules to inspect message attachments in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

@@ -29,7 +29,7 @@ The Pickup and replay directories are used by the Transport service on Mailbox s
 
   - Changing the location of the Pickup or Replay directories doesn't copy any existing message files from the old location to the new location. The new Pickup or Replay directory location is active almost immediately after the configuration change, but any existing message files are left in the old location.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

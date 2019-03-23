@@ -17,26 +17,26 @@ manager: serdars
 # Messaging policy and compliance permissions in Exchange Server
 
 The permissions required to configure messaging policy and compliance vary depending on the procedure being performed or the cmdlet you want to run. For more information about messaging policy and compliance, see [Messaging policy and compliance in Exchange Server](../../policy-and-compliance/policy-and-compliance.md).
-  
+
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:
-  
+
 1. In the table below, find the feature that is most related to the procedure you want to perform or the cmdlet you want to run.
-    
+
 2. Next, look at the permissions required for the feature. You must be assigned one of those role groups, an equivalent custom role group, or an equivalent management role. You can also click on a role group to see its management roles. If a feature lists more than one role group, you only need to be assigned one of the role groups to use the feature. For more information about role groups and management roles, see [Understanding Role Based Access Control](https://technet.microsoft.com/library/dd298183.aspx).
-    
+
 3. Now, run the **Get-ManagementRoleAssignment** cmdlet to look at the role groups or management roles assigned to you to see if you have the permissions that are necessary to manage the feature.
-    
+
     > [!NOTE]
     > You must be assigned the Role Management management role to run the **Get-ManagementRoleAssignment** cmdlet. If you don't have permissions to run the **Get-ManagementRoleAssignment** cmdlet, ask your Exchange administrator to retrieve the role groups or management roles assigned to you.
-  
+
 If you want to delegate the ability to manage a feature to another user, see [Delegate role assignments](https://technet.microsoft.com/library/dd351237.aspx).
-  
+
 ## Messaging policy and compliance permissions
 
 You can use the features in the following table to configure messaging policy and compliance features. The role groups that are required to configure each feature are listed.
-  
+
 Users who are assigned the View-Only Management role group can view the configuration of the features in the following table. For more information, see [View-Only Organization Management](http://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx).
-  
+
 |**Feature**|**Permissions required**|
 |:-----|:-----|
 |Data loss prevention (DLP)|[Compliance Management](http://technet.microsoft.com/library/b91b23a4-e9c7-4bd0-9ee3-ec5cb498da15.aspx)|
@@ -55,6 +55,6 @@ Users who are assigned the View-Only Management role group can view the configur
 |Retention policies - Apply|[Organization Management](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Recipient Management](http://technet.microsoft.com/library/669d602e-68e3-41f9-a455-b942d212d130.aspx) <br/> [Records Management](http://technet.microsoft.com/library/0e0c95ce-6109-4591-b86d-c6cfd44d21f5.aspx)|
 |Retention policies - Create|See the entry for Messaging records management|
 |Mail flow rules (also known as transport rules)|[Organization Management](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Records Management](http://technet.microsoft.com/library/0e0c95ce-6109-4591-b86d-c6cfd44d21f5.aspx)|
-   
+
 
 

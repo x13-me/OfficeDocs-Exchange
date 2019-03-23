@@ -35,7 +35,7 @@ The procedure in this topic shows you how to use Telnet Client, which is a compo
 
   - If you connect to a remote messaging server, consider performing the procedures in this topic on your Internet-facing Exchange server. This will help to avoid rejection of the test message by remote messaging servers that are configured to validate the source IP address, the corresponding domain name system (DNS) domain name, and the reverse lookup IP address of any Internet host that tries to send a message to the server.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

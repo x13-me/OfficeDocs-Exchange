@@ -61,7 +61,7 @@ For additional management tasks related to user access to mailboxes, see these t
 
 3. On the mailbox properties page that opens, click **Mailbox features**.
 
-4. In the **Email Connectivity** section, configure one of these settings: 
+4. In the **Email Connectivity** section, configure one of these settings:
 
   - If you see **MAPI: Enabled**, click **Disable** to disable it, and then click **Yes** in the warning message that appears.
 
@@ -121,7 +121,7 @@ For detailed syntax and parameter information, see [Set-CASMailbox](http://techn
 
 ### Use the Exchange Management Shell to enable or disable MAPI access to multiple mailboxes
 
-You can use the **Get-Mailbox**, **Get-User** or **Get-Content** cmdlets to identify the mailboxes that you want to modify. For example: 
+You can use the **Get-Mailbox**, **Get-User** or **Get-Content** cmdlets to identify the mailboxes that you want to modify. For example:
 
 - Use the _OrganizationalUnit_ parameter to filter the mailboxes by organizational unit (OU).
 
@@ -164,13 +164,13 @@ To verify that you've successfully enabled or disabled MAPI access to a mailbox,
 
     ![Protocol access settings for a mailbox in the EAC at Recipients \> select mailbox \> Edit \> Mailbox features \> Email connectivity](../media/8c2d9cda-aa53-4b6e-b83a-0f55b4b3fd3d.png)
 
-- In the Exchange Management Shell, replace _\<MailboxIdentity\>_ with the identity of the mailbox (for example, name, alias, or email address), and run this command: 
+- In the Exchange Management Shell, replace _\<MailboxIdentity\>_ with the identity of the mailbox (for example, name, alias, or email address), and run this command:
 
   ```
   Get-CasMailbox -Identity "<MailboxIdentity>"
   ```
 
-- Use the same filter that you used to identify the mailboxes, but use the **Get-CasMailbox** cmdlet instead of **Set-CasMailbox**. For example: 
+- Use the same filter that you used to identify the mailboxes, but use the **Get-CasMailbox** cmdlet instead of **Set-CasMailbox**. For example:
 
   ```
   Get-User -Filter {RecipientType -eq 'UserMailbox' -and Department -like 'Engineering*' -and StateOrProvince -eq 'WA'} | Get-CasMailbox

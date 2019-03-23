@@ -7,7 +7,9 @@ ms.author: kwekua
 ms.assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
 ms.date: 6/24/2018
 title: Add or remove email addresses for a mailbox
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

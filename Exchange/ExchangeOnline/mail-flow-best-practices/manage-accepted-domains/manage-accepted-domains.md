@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: 0fc0ecc0-e133-48fa-9d72-cb4793a73960
 ms.date: 
 title: Manage accepted domains in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

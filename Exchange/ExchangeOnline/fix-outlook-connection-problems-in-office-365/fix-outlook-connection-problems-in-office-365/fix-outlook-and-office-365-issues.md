@@ -15,6 +15,7 @@ ms.collection:
 - Adm_UI_Elements
 - EU_O365_UI_Elements
 - exchange-online
+- M365-email-calendar
 search.appverid:
 - BCS160
 - MET150

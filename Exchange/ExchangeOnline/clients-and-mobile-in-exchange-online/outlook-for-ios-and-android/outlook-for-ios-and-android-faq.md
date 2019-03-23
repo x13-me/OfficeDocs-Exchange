@@ -1,17 +1,19 @@
 ---
 localization_priority: Normal
 description: 'Summary: This article covers the most common questions asked by customers and administrators about using Outlook for iOS and Android with Exchange Online and Office 365.'
-ms.topic: overview
+ms.topic: conceptual
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 747d4875-4b81-4b10-a206-fc2cbab83314
 ms.date: 
 title: Outlook Exchange Online FAQ, Outlook for iOS Exchange FAQ, Outlook for Android FAQ, Outlook for iOS security concerns, Outlook for Android security concerns, Outlook for iOS cloud architecture, Outlook for Android cloud architecture, Outlook app Office 365 architecture, Outlook app attachment faq, Outlook app contacts faq, Outlook app license faq
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.reviewer: smithre4
 ms.audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: serdars
 
 ---
 
@@ -63,7 +65,7 @@ For more information, see [How to enable cross-app SSO on iOS using ADAL](https:
 
 Two tokens are generated when a user authenticates through ADAL-enabled apps like Outlook for iOS and Android, the Authenticator app, or the Company Portal app: an access token and a refresh token. The access token is used to access the resource (Exchange message data), while a refresh token is used to obtain a new access or refresh token pair when the current access token expires.
 
-By default, the access token lifetime is one hour and the refresh token lifetime is fourteen days. These values can be adjusted; for more information see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-configurable-token-lifetimes). Note that if you choose to reduce these lifetimes, you can also reduce the performance of Outlook for iOS and Android, because a smaller lifetime increases the number of times the application must acquire a fresh access token.
+By default, the access token lifetime is one hour and the refresh token lifetime is 90 days. These values can be adjusted; for more information see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-configurable-token-lifetimes). Note that if you choose to reduce these lifetimes, you can also reduce the performance of Outlook for iOS and Android, because a smaller lifetime increases the number of times the application must acquire a fresh access token.
 
 ### Q: What happens to the access token when a user's password is changed?
 
@@ -135,13 +137,15 @@ Outlook for iOS and Android communicates via TCP port 443. The app accesses vari
 
 Yes, Outlook for iOS and Android supports proxy configurations when the proxy infrastructure meets the following requirements:
 
-- **Supports HTTP protocol without TLS decryption and inspection**. The Office 365-based architecture for Outlook for iOS and Android utilizes certificate pinning to mitigate man-in-the-middle based attacks.
-
-- **Supports and has SOCKS proxy capability enabled**. The Outlook for iOS and Android client utilizes TCP connections to our Office 365-based architecture. The IP ranges for the SOCKS connections are not restricted to a subset of Azure IP ranges, which means that customers cannot define a whitelist range.
+- **Supports HTTP protocol without TLS decryption and inspection**. 
 
 - **Does not perform authentication**.
 
-Outlook for iOS and Android will consume the proxy configuration as defined by the platform operating system. Typically, this configuration information is deployed via a PAC file. The PAC file must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no additional custom settings are supported.
+Outlook for iOS and Android will consume the proxy configuration as defined by the platform operating system. Typically, this configuration information is deployed via a PAC file. The PAC file must be configured to use hostnames instead of protocol; no additional custom settings are supported.
+
+For tenants that have not been migrated to the native Microsoft sync technology, the following additional requirement applies:
+
+- **Supports and has SOCKS proxy capability enabled**. The Outlook for iOS and Android client utilizes TCP connections to our Office 365-based architecture. The IP ranges for the SOCKS connections are not restricted to a subset of Azure IP ranges, which means that customers cannot define a whitelist range. The PAC must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no additional custom settings are supported.
 
 ## Native Microsoft sync technology migration
 

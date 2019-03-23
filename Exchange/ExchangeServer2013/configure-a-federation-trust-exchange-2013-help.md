@@ -41,7 +41,7 @@ For additional management tasks related to federation, see [Federation procedure
 
   - You will need to add a TXT record to your public DNS. Review the requirements for adding a TXT record with the organization that hosts your public DNS records.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
   - Both Exchange organizations in a federated sharing relationship must use the same Azure AD authentication system for their federation trusts. This requirement applies when configuring federated sharing between two on-premises Exchange organizations or between an on-premises Exchange organization and an Exchange organization hosted by [Office 365](https://go.microsoft.com/fwlink/?linkid=392576).
 

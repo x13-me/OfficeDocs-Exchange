@@ -17,30 +17,30 @@ manager: serdars
 # Feature permissions
 
 Permissions in Microsoft Exchange Server are managed using the Role Based Access Control (RBAC) permissions model. The following topics identify the management role groups required to administer the features associated with each functional area in Exchange Server.
-  
+
 - [Role management permissions](rbac-permissions.md)
-    
+
 - [Messaging policy and compliance in Exchange Server](../../policy-and-compliance/policy-and-compliance.md)
-    
+
 - [Antispam and antimalware permissions](antispam-and-antimalware-permissions.md)
-    
+
 - [Mail flow permissions](mail-flow-permissions.md)
-    
+
 - [Recipients Permissions](recipient-permissions.md)
-    
+
 - [Email address and address book permissions](address-book-permissions.md)
-    
+
 - [Sharing and collaboration permissions](sharing-and-collaboration-permissions.md)
-    
+
 - [Clients and mobile devices permissions](client-and-mobile-device-permissions.md)
-    
+
 - [Unified Messaging permissions](um-permissions.md)
-    
+
 - [High availability and site resilience permissions](ha-permissions.md)
-    
+
 - [Exchange infrastructure and PowerShell permissions](infrastructure-permissions.md)
-    
+
 - [Server health and performance permissions](server-health-permissions.md)
-    
+
 
 

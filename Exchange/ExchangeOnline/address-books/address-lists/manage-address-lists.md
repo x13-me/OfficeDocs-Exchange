@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: cac74760-7bd1-482c-8d43-b0165e988ec0
 ms.date: 
 title: Manage address lists in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

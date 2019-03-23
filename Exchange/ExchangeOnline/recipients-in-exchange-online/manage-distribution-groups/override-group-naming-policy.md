@@ -7,7 +7,9 @@ ms.author: kwekua
 ms.assetid: 9eb23fc9-3f59-4d09-9077-85c89a051ee0
 ms.date: 11/17/2014
 title: Override the distribution group naming policy
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

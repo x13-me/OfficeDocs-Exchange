@@ -7,7 +7,9 @@ ms.author: dmaguire
 ms.assetid: 73b693d9-39bb-4689-a1ff-4be505a5945b
 ms.date: 
 title: Using Outlook for iOS and Android in the Government Community Cloud
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.reviewer: smithre4
 ms.audience: ITPro
 ms.service: exchange-online
@@ -43,14 +45,6 @@ GCC High and Department of Defense customers can leverage Outlook for iOS and An
 
 ## Enabling Outlook for iOS and Android for Office 365 GCC Moderate customers
 
-The instructions to enable Outlook for iOS and Android for Office 365 GCC Moderate customers depends on your existing deployment. There are:
-
-1. Organizations who are currently not using Outlook for iOS and Android at all.
-
-2. Organizations who are currently using Outlook for iOS and Android with the Azure public cloud, after they signed a waiver with Microsoft Support (the "Government Community Cloud Bypass Waiver").
-
-### For GCC Moderate organizations currently not using Outlook for iOS and Android
-
 For Office 365 GCC Moderate customers who are not currently using Outlook for iOS and Android, enabling the app requires unblocking Outlook for iOS and Android in the organization, downloading the app on users' devices, and having end-users enable GCC mode on their devices.
 
  **1. Unblock Outlook for iOS and Android**
@@ -67,7 +61,7 @@ End users need to install the app on their devices. How the installation happens
  **3. Have end users enable GCC mode on their devices**
 
 > [!IMPORTANT]
-> GCC High and DoD customers must not use the GCC mode option as that will prevent connectivity to Office 365.
+> GCC High and DoD customers must not use the GCC mode option as that will prevent connectivity to Office 365. The GCC mode toggle will be removed from Outlook for iOS and Android by April 1st.
 
 Share the following instructions with your end-users so that they can enable GCC mode on their devices. The instructions depend on the operating system of each device.
 
@@ -96,17 +90,6 @@ For Android devices that already have Outlook for Android installed:
 3. The app should automatically re-start. If it doesn't, manually close and re-start the app.
 
 4. Follow the on-screen instructions to add your Office 365 GCC account, making sure GCC mode is on.
-
-### For organizations currently using Outlook for iOS and Android after signing the Government Community Cloud Bypass Waiver
-
-Prior to Outlook for iOS and Android obtaining FedRAMP approval and certification, Office 365 Moderate GCC customers may have opted to use Outlook for iOS and Android through the Government Community Cloud Bypass Waiver process, which used the public Azure cloud architecture. For organizations that did this, you must use the following steps to leverage the new, end-to-end Office 365 GCC offering for Outlook for iOS and Android that uses the Azure Government Community Cloud.
-
-1. File a request with Microsoft Support to remove your tenant from the exception whitelist. Your tenant will then be blocked from the public Azure data centers.
-
-    > [!NOTE]
-    > Once this occurs, users will be blocked from connecting to their email using Outlook for iOS and Android, so be sure to notify your users in advance.
-
-2. Direct your end-users to follow the relevant steps in the preceding section in order to resume using Outlook for iOS and Android.
 
 ## Services and features not available
 
@@ -138,6 +121,9 @@ Executing the below Exchange Online cmdlet will enable GCC Moderate, High, or Do
   Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $false
  ```
 
+> [!NOTE]
+> Setting OutlookMobileGCCRestrictionsEnabled to false currently does not remove the service and feature restrictions placed on Outlook for iOS and Android. This behavior is planned to change in April 2019.
+
 At any time, access can be revoked by resetting the parameter back to the default value:
 
  ```
@@ -147,6 +133,6 @@ At any time, access can be revoked by resetting the parameter back to the defaul
 Changing this setting typically takes affect within an hour. As this is an tenant-based change, all Outlook for iOS and Android users in the GCC organization will be affected. 
 
 > [!NOTE]
-> Users do not need to leverage the GCC mode option within the client with the above Exchange Online setting.
+> After April 2019, users will not need to leverage the GCC mode option within the client with the above Exchange Online setting.
 
 For more information on the cmdlet, please see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig?view=exchange-ps). 

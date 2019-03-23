@@ -3,12 +3,13 @@ title: "Configure Exchange to support delegated mailbox permissions in a hybrid 
 ms.author: dstrome
 author: dstrome
 manager: serdars
-ms.date:
-ms.audience: Developer
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Hybrid
+ms.collection: 
+- Hybrid
+- M365-email-calendar
 ms.assetid: a2a10cb3-4557-4ff5-8191-c653522f4512
 description: "Delegated mailbox permissions enable someone to manage some part of another user's mailbox. A common example of this is an administrative assistant who needs to manage an executive's mailbox and calendar. Hybrid deployments between an on-premises Exchange organization and Office 365 support the Full Access and Send on Behalf of delegated mailbox permissions. However, depending on the version of Exchange you have installed in your on-premises organization, you might need to perform additional configuration to use delegated mailbox permissions in a hybrid deployment. The following lists the versions of Exchange that support delegated mailbox permissions in a hybrid deployment and whether additional configuration is needed for that version."
 ---

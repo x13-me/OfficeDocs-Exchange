@@ -5,9 +5,12 @@ author: chrisda
 manager: serdars
 ms.audience: Admin
 ms.topic: article
-ms.service: exchange-online
+ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection: 
+- Adm_O365
+- Hybrid
+- M365-email-calendar
 ms.custom:
 - Adm_O365
 - httpsfix

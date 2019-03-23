@@ -7,7 +7,9 @@ ms.author: chrisda
 ms.assetid: c93c31a4-fe5e-479b-83b6-ee114d4f236c
 ms.date: 
 title: Use mail flow rules to automatically add meetings to calendars in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: serdars

@@ -21,7 +21,7 @@ This topic describes the client features that give users who are enabled for Exc
 ## Voice mail client support
 <a name="clientsupport"> </a>
 
- **Exchange ActiveSync clients**: The Microsoft Exchange ActiveSync protocol is used to connect mobile clients, such as those found on Internet-capable mobile devices, to an Exchange mailbox. Users can use mobile devices to access their mailbox and view email messages, view and change calendar and contact information, and listen to their voice mail messages. They can also synchronize email, voice mail, calendar items, and contact information with other devices.
+ **Exchange ActiveSync clients**: The Microsoft Exchange ActiveSync protocol is used to connect mobile clients, such as those found on internet-capable mobile devices, to an Exchange mailbox. Users can use mobile devices to access their mailbox and view email messages, view and change calendar and contact information, and listen to their voice mail messages. They can also synchronize email, voice mail, calendar items, and contact information with other devices.
 
  **Integration with Outlook**: Microsoft Outlook enables users to access their Exchange mailbox and view email messages in their Inbox, view and change calendar information, and listen to voice messages by using Microsoft Windows Media Player, which is embedded inside the email messages. By using a supported email client, users gain additional features, such as the Play on Phone functionality.
 

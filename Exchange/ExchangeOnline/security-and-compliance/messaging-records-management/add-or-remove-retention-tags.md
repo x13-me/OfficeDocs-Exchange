@@ -7,7 +7,9 @@ ms.author: markjjo
 ms.assetid: 3a5196ce-2764-453d-9bc1-5ec22d06b40d
 ms.date: 6/23/2018
 title: Add retention tags to or remove retention tags from a retention policy
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

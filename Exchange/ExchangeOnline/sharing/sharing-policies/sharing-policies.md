@@ -7,7 +7,9 @@ ms.author: dstrome
 ms.assetid: a4f9c56a-cb9b-401b-9b45-d71c6e036871
 ms.date: 11/17/2014
 title: Sharing policies in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv

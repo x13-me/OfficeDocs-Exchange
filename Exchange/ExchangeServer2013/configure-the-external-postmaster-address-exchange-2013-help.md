@@ -33,7 +33,7 @@ By default, the value of the external postmaster address setting is blank. This 
 
   - If you have any Exchange 2007 Hub Transport servers or Edge Transport servers in your organization, you need to configure the custom external postmaster address on each one of those servers using the **Set-TransportServer** cmdlet. For more information, see [Managing the External Postmaster Address](https://go.microsoft.com/fwlink/?linkid=279922).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 ## What do you want to do?
 

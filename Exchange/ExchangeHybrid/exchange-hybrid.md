@@ -2,8 +2,7 @@
 title: "Exchange Server Hybrid Deployments"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 6/25/2018
+manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -12,6 +11,7 @@ ms.collection:
 - Strat_EX_EXOBlocker
 - Ent_O365_Hybrid
 - Hybrid
+- M365-email-calendar
 ms.assetid: 59e32000-4fcf-417f-a491-f1d8f9aeef9b
 description: "Summary: What you need to know to plan an Exchange hybrid deployment."
 ---
@@ -132,7 +132,9 @@ Active Directory synchronization between the on-premises and Office 365 organiza
 > [!NOTE]
 > If you choose to configure Azure AD Connect with AD FS, usernames and passwords of on-premises users will still be synchronized to Office 365 by default. However, users will authenticate with your on-premises Active Directory via AD FS as their primary method of authentication. In the event AD FS can't connect to your on-premises Active Directory for any reason, clients will attempt to fall back and authenticate against usernames and passwords synchronized to Office 365. 
 
-All customers of Azure Active Directory and Office 365 have a limit of 50,000 objects (users, mail-enabled contacts, and groups) by default. This limit determines how many objects you can create in your Office 365 organization. When you verify your first domain, this object limit is automatically increased to 300,000 objects. If you have verified a domain and need to synchronize more than 300,000 objects or you do not have any domains to verify, and need to synchronize more than 50,000 objects, you will need to contact Azure Active Directory Support to request an increase to your object quota limit.
+
+
+All customers of Azure Active Directory and Office 365 have a default limit of 50,000 objects (users, mail-enabled contacts, and groups) that determines how many objects you can create in your Office 365 organization. After you verify your first domain, this limit is automatically increased to 500,000 objects for Azure Active Directory Free, or an unlimited number of objects for Azure Active Directory Basic or Premium. For more information, see [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
  In addition to a server running Azure AD Connect, you'll also need to deploy a web application proxy server if you choose to configure AD FS. This server should be placed in your perimeter network and will act as an intermediary between your internal Azure AD Connect server and the Internet. The web application proxy server needs to accept connections from clients and servers on the Internet using TCP port 443. 
 

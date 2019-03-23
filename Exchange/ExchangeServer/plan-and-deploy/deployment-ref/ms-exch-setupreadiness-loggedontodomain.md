@@ -27,11 +27,11 @@ Setup requires that the account you're using to install Exchange has permissions
 - After you prepare Active Directory for the version of Exchange that you're installing, your account needs to be a member of the Organization Management role group.
 
 For more information, see [Prepare Active Directory and domains for Exchange](../prepare-ad-and-domains.md).
- 
+
 To resolve this issue, run Setup again using an account that has the appropriate permissions (grant permissions to the current account or use a different account).
- 
+
 > [!IMPORTANT]
 > Cross-forest installation of Exchange isn't supported. Use an account in the Active Directory forest where you're installing Exchange.
-  
+
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
 

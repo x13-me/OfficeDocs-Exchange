@@ -30,7 +30,7 @@ Microsoft Exchange Server 2013 uses delivery status notifications (DSN) to provi
 
   - You can't remove a built-in DSN message that's included with Exchange. To change a built-in DSN message, you need to create a custom DSN message for the DSN code that you want to customize. When you remove a custom DSN message, the DSN code associated with that message reverts to the built-in DSN message that's included with Exchange.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

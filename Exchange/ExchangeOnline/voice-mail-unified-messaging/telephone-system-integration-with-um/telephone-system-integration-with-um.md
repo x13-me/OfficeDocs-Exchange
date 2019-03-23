@@ -63,7 +63,7 @@ Unified Messaging can use Microsoft Lync Server to combine voice messaging, inst
 
 - Integration of instant messaging, voice messaging, conferencing, email, and other communication modes, which enables users to select the most appropriate mode for the task. Users can also switch from one mode to another as needed.
 
-- Availability of communications alternatives from any location where an Internet connection is available.
+- Availability of communications alternatives from any location where an internet connection is available.
 
 - A smart client (Microsoft Lync) for telephony, instant messaging, and conferencing.
 

@@ -7,7 +7,9 @@ ms.author: dstrome
 ms.assetid: 7a7bc6fe-3ab8-4d39-a655-ec3390a1437e
 ms.date: 3/9/2015
 title: Sharing in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv
@@ -26,7 +28,7 @@ The following sharing scenarios are supported in Exchange Online:
 |:-----|:-----|:-----|
 |Share calendars with another Office 365 organization|Organization relationships|None, ready to configure|
 |Share calendars with an on-premises Exchange organization|Organization relationships|The on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements|
-|Share an Office 365 user's calendar with another Internet user|Sharing policies|None, ready to configure|
+|Share an Office 365 user's calendar with another internet user|Sharing policies|None, ready to configure|
 |Share an Office 365 user's calendar with an Exchange on-premises user|Sharing policies|The on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements|
 
 ## Sharing documentation

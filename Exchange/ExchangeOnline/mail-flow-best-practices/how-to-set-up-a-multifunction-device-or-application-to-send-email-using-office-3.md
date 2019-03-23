@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+localization_priority: Priority
 ms.topic: article
 author: chrisda
 ms.author: chrisda
@@ -7,7 +7,9 @@ ms.assetid: 69f58e99-c550-4274-ad18-c805d654b4c4
 ms.date: 
 description: 'Learn how to set up printers, scanners, LOB applications to send email using Office 365. '
 title: How to set up a multifunction device or application to send email using Office 365
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 search.appverid:
 - BCS160
 - MOE150
@@ -117,7 +119,7 @@ Other scenarios when direct send may be your best choice:
 
 - You want to send bulk email or newsletters. Office 365 does not allow you to do this via SMTP client submission. Direct send allows you to send a high volume of messages.
 
-    Note that there is a risk of your email being marked as spam by Office 365. You might want to enlist the help of a bulk email provider to assist you. For example, they'll help you adhere to best practices, and can help ensure that your domains and IP addresses are not blocked by others on the Internet.
+    Note that there is a risk of your email being marked as spam by Office 365. You might want to enlist the help of a bulk email provider to assist you. For example, they'll help you adhere to best practices, and can help ensure that your domains and IP addresses are not blocked by others on the internet.
 
 ### Settings for direct send
 
@@ -311,7 +313,7 @@ Here's a comparison of each configuration option and the features they support.
 |:-----|:-----|:-----|:-----|
 |**Features**|
 |Send to recipients in your domain(s)|Yes|Yes|Yes|
-|Relay to Internet via Office 365|Yes|No. Direct delivery only.|Yes|
+|Relay to internet via Office 365|Yes|No. Direct delivery only.|Yes|
 |Bypasses antispam|Yes, if the mail is destined for an Office 365 mailbox.|No. Suspicious emails might be filtered. We recommend a custom Sender Policy Framework (SPF) record.|No. Suspicious emails might be filtered. We recommend a custom SPF record.|
 |Supports mail sent from applications hosted by a third party|Yes|No|No|
 |**Requirements**|

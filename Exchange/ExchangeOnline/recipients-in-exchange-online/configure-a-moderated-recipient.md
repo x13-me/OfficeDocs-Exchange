@@ -7,7 +7,9 @@ ms.author: kwekua
 ms.assetid: f0c3db25-653f-4252-acb1-2b5ba940ab80
 ms.date: 4/29/2016
 title: Configure a moderated recipient in Exchange Online
-ms.collection: exchange-online
+ms.collection: 
+- exchange-online
+- M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
 manager: scotv
