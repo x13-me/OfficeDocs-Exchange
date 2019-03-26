@@ -59,7 +59,7 @@ The configuration of the on-premises Exchange servers is typically the area wher
 
 To verify that you have successfully published your on-premises Exchange servers, use the Microsoft Remote Connectivity Analyzer to verify inbound Internet connectivity to your on-premises Exchange servers. Do the following:
   
-1. Go to the [Remote Connectivity Analyzer](https://www.testexchangeconnectivity.com/) tool. 
+1. Go to the [Remote Connectivity Analyzer](http://go.microsoft.com/fwlink/?linkid=154308) tool. 
     
 2. This step is for a general test of EWS tasks to confirm they are working, and that the EWS endpoint is configured. 
     
