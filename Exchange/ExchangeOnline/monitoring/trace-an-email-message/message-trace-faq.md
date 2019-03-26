@@ -193,7 +193,7 @@ The events section will tell you why the message was not yet delivered. When vie
 
 ## Was a message marked as spam?
 
-Messages can be marked as spam for several reasons. For example, the sending IP address may appear on one of the service's IP Block lists. A message can be marked as spam due to the content of the actual message, such as when it matches a rule in the spam content filter. The message trace tool only tracks spam content filter events; connection filter events (such as blocked IP addresses) are not traceable. For more information about spam filtering, including spam content filtering, see [Anti-Spam Protection](https://technet.microsoft.com/library/d5c58b9d-c9a2-4f2e-b4aa-b202aa4d5e7d.aspx).
+Messages can be marked as spam for several reasons. For example, the sending IP address may appear on one of the service's IP Block lists. A message can be marked as spam due to the content of the actual message, such as when it matches a rule in the spam content filter. The message trace tool only tracks spam content filter events; connection filter events (such as blocked IP addresses) are not traceable. For more information about spam filtering, including spam content filtering, see [Anti-Spam Protection](https://docs.microsoft.com/en-us/office365/SecurityCompliance/anti-spam-and-anti-malware-protection).
 
 To find out why a message was marked as spam:
 
