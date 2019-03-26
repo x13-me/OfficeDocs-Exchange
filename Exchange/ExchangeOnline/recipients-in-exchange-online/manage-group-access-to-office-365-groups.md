@@ -24,7 +24,7 @@ Or, let's say you want to block personal email address domains. You can set up a
 
 ## Important information about how block lists work
 
-- This feature is currently only in Preview and as part of an Office 365 license. On General Availability, this feature will become an Azure Active Directory (AAD) Premium offering and will require an AAD premium license.
+- This feature is currently only in Preview and as part of an Office 365 license. 
 
 - You can create either an Allow list or Block list. **But you can't set up both types of lists**. By default, whatever domains are not in an Allow list are on a Block list, and vice versa.
 
