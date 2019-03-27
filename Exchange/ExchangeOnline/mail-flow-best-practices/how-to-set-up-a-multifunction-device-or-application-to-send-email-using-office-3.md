@@ -25,8 +25,6 @@ manager: serdars
 
 Prerequisites: Office 365 Subscription, [Exchange Online Plan](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)
 
-From September 1st, 2018, Office 365 is slowly rolling out changes to SMTP client submission (also known as SMTP Authenticated Submission) which may affect your devices and applications that send emails. To find out more, visit the KB article [Improvements in SMTP Authenticated Submission client protocol](https://support.microsoft.com/help/4458479/improvements-in-smtp-authenticated-submission-client-protocol).
-
 This article explains how you can send email from devices and business applications when all of your mailboxes are in Office 365. For example:
 
 - You have a scanner, and you want to email scanned documents to yourself or someone else.
@@ -216,7 +214,7 @@ SMTP relay lets Office 365 relay emails on your behalf by using a connector that
 
 |**Device or application setting**|**Value**|
 |:-----|:-----|
-|Server/smart host|Your MX endpoint, e.g. _yourodomain_-com.mail.protection.outlook.com|
+|Server/smart host|Your MX endpoint, e.g. _yourdomain_-com.mail.protection.outlook.com|
 |Port|Port 25|
 |TLS/StartTLS|Enabled|
 |Email address|Any email address in one of your Office 365 verified domains. This email address does not need a mailbox.
@@ -314,8 +312,8 @@ Here's a comparison of each configuration option and the features they support.
 |**Features**|
 |Send to recipients in your domain(s)|Yes|Yes|Yes|
 |Relay to internet via Office 365|Yes|No. Direct delivery only.|Yes|
-|Bypasses antispam|Yes, if the mail is destined for an Office 365 mailbox.|No. Suspicious emails might be filtered. We recommend a custom Sender Policy Framework (SPF) record.|No. Suspicious emails might be filtered. We recommend a custom SPF record.|
-|Supports mail sent from applications hosted by a third party|Yes|No|No|
+|Bypasses antispam|Yes, if the mail is destined for one of your Office 365 mailboxes.|No. Suspicious emails might be filtered. We recommend a custom Sender Policy Framework (SPF) record.|No. Suspicious emails might be filtered. We recommend a custom SPF record.|
+|Supports mail sent from applications hosted by a third party|Yes|Yes. We recommend updating your SPF record to allow the third party to send as your domain. |No|
 |**Requirements**|
 |Open network port|Port 587 or port 25|Port 25|Port 25|
 |Device or application server must support TLS|Required|Optional|Optional|
