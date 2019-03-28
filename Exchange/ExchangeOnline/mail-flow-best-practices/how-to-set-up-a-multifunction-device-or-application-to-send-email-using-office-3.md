@@ -323,7 +323,11 @@ Here's a comparison of each configuration option and the features they support.
 
 ## Use your own email server to send email from multifunction devices and applications
 
-If you have mailboxes in Office 365 and an email server that you manage (also called an on-premises email server), always configure your devices and applications to use your local network and route email through your own email server. For details about setting up your Exchange server to receive email from systems that are not running Exchange (such as a multifunction printer), see [Create a Receive Connector to Receive Email from a System Not Running Exchange](https://docs.microsoft.com/exchange/create-a-receive-connector-to-receive-email-from-a-system-not-running-exchange-exchange-2013-help).
+If you happen to have an on-premises email server, you should seriously consider using that server for SMTP relay instead of Office 365. A local email server that you have physical access to is much easier to configure for SMTP relay by devices and applications on your local network. The details about how to do this depend on your on-premises email server. For Exchange Server, see the following topics:
+
+- [Allow anonymous relay on Exchange servers](https://docs.microsoft.com/Exchange/mail-flow/connectors/allow-anonymous-relay)
+
+- [Receive messages from a server, service, or device that doesn't use Exchange](https://docs.microsoft.com/Exchange/mail-flow/connectors/custom-receive-connectors#scenario-3-receive-messages-from-a-server-service-or-device-that-doesnt-use-exchange)
 
 ## Related Topics
 
