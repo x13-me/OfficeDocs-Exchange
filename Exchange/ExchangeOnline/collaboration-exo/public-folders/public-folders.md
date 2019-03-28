@@ -97,9 +97,7 @@ Although there are many advantages to using public folders in Office 365 and Exc
 
 - Although a full text search of public folder content is available, public folder content isn't searchable across public folders and the content isn't indexed by Exchange Search.
 
-- You must use Outlook 2007 or later to access public folders in Office 365 and Exchange Online.
-
-- Retention policies aren't supported for public folder mailboxes.
+- You must use Exchange Online supported Outlook client or later to access public folders in Office 365 and Exchange Online.
 
 ## Migrating public folders to Office 365 and Exchange Online
 <a name="Considerations"> </a>
