@@ -38,7 +38,7 @@ These are the important settings on Receive connectors:
 
 - **Usage type**: Configure the default permission groups and smart host authentication mechanisms for the Receive connector.
 
-- **Permission goups**: Configure who's allowed to use the Receive connector, and the permissions that they receive.
+- **Permission groups**: Configure who's allowed to use the Receive connector, and the permissions that they receive.
 
 A Receive connector listens for inbound connections that match the configuration settings of the connector. Each Receive connector on the Exchange server uses a unique combination of local IP address bindings, TCP ports, and remote IP address ranges that define if and how connections from SMTP clients or servers are accepted.
 
