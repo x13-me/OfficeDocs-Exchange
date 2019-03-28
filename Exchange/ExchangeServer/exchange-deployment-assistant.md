@@ -17,7 +17,7 @@ description: "Summary:Customized step-by-step instructions to deploy Exchange Se
 
 The Exchange  Deployment Assistant is a web-based tool that asks you a few questions about your current environment and then generates a custom step-by-step checklist that will help you deploy Exchange Server in your on-premises organization.
 
-Looking for help with migrating your Exchange organization to Office 365 and Exchange Online? Check out [Use the Office 365 mail migration advisor in Office 365](mail-migration-jump.md).
+Looking for help with migrating your Exchange organization to Office 365 and Exchange Online? Check out [Use the Office 365 mail migration advisor in Office 365](https://docs.microsoft.com/Exchange/mail-migration-jump).
 
 [![Launch Deployment Assistant](media/ExchangeDeploymentAssistant.png)](https://aka.ms/eda)
 

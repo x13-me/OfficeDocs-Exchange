@@ -108,7 +108,4 @@ For more information about these cmdlets, see the following topics:
 
   - **Preview search results**: This option lets you preview the search results returned by the search instead of having to copy them to a discovery mailbox to view. This lets you quickly determine whether the search results are relevant. After you preview the results, you can revise your search query to narrow the search results and rerun the search. Items in the preview page are read-only versions of the actual search results, so you can't move, edit, delete or forward on the preview page.
 
-    For more information, see [Use the EAC to estimate or preview search results](create-searches.md#estimate).
-
-
-
+    For more information, see [Use the EAC to estimate or preview search results](create-searches.md#use-the-eac-to-estimate-or-preview-search-results).

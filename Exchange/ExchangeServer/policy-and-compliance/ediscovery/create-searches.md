@@ -28,7 +28,7 @@ manager: serdars
 
 - When you create a search, messages returned in search results aren't copied automatically to a discovery mailbox. After you create the search, you can use the Exchange admin center (EAC) to estimate and preview search results or copy them to a discovery mailbox. You can also export the search results to a .pst file. For details, see:
 
-  - [Use the EAC to estimate or preview search results](create-searches.md#estimate) (later in this topic)
+  - [Use the EAC to estimate or preview search results](#use-the-eac-to-estimate-or-preview-search-results) (later in this topic)
 
   - [Copy eDiscovery search results to a discovery mailbox](copy-results-to-discovery-mailboxes.md)
 

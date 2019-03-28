@@ -107,7 +107,7 @@ Below are the three configuration options to help you identify which one is in u
 
 This can be caused by a number of issues:
 
-1.  Make sure that you entered the correct user name and password.
+1. Make sure that you entered the correct user name and password.
 
 2. Try logging into OWA with the printer's user name and password. Send an email to make sure that the mailbox is active and has not been blocked for sending spam.
 

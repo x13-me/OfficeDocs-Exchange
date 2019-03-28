@@ -59,7 +59,7 @@ The source tenant is the Fabrikam Office 365 tenant from which you are migrating
 1. Increase licenses in Target Office 365 tenant to accommodate all mailboxes that will be migrated from the source tenant.
 
 2. Create Administrator accounts in source and target tenants for use in migrating from Office 365 to another Office 365. Some migration tools may require more than one admin account in the source tenant to optimize the data throughput.
-   
+
 
  **Room, resource, distribution group, and user object creation in the target tenant**
 

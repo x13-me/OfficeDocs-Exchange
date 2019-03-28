@@ -176,7 +176,7 @@ You can add owners by clicking **Browse** and selecting the owner from the list.
 #### Membership
 <a name="membership"> </a>
 
-Use this section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see [Use the EAC to create a dynamic distribution group](#createddg.md) in the procedures for configuring membership when you use the EAC to create a new dynamic distribution group.
+Use this section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see [Use the EAC to create a dynamic distribution group](#use-the-eac-to-create-a-dynamic-distribution-group) in the procedures for configuring membership when you use the EAC to create a new dynamic distribution group.
 
 #### Delivery management
 <a name="deliverymanagement"> </a>
