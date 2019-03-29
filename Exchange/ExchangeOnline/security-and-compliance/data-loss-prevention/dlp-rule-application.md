@@ -7,7 +7,8 @@ ms.author: stephow
 ms.assetid: 1ac77020-26ff-410c-ab09-4f28a99d67a1
 ms.date: 3/9/2015
 title: How DLP rules are applied to evaluate messages
-ms.collection:- exchange-online
+ms.collection:
+- exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online

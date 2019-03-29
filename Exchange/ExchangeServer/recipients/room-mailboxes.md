@@ -52,18 +52,18 @@ If you want to learn about the types of recipients that are available in Exchang
 
 3. Use the options on the page to specify the settings for the new resource mailbox.
 
-  - **\* Room name**: Use this box to type a name for the room mailbox. This is the name that's listed in the resource mailbox list in the Exchange admin center and in your organization's address book. This name is required and it can't exceed 64 characters.
+   - **\* Room name**: Use this box to type a name for the room mailbox. This is the name that's listed in the resource mailbox list in the Exchange admin center and in your organization's address book. This name is required and it can't exceed 64 characters.
 
     > [!TIP]
     > Although there are other fields that describe the details of the room (for example, Location and Capacity) consider summarizing the most important details in the room name using a consistent naming convention. Why? So users can easily see the details when they select the room from the address book in the meeting request.
 
-  - **\* Alias**: A room mailbox has an email address so it can receive booking requests. The email address consists of an alias on the left side of the @ symbol, which must be unique in the forest, and your domain name on the right. The alias is required.
+   - **\* Alias**: A room mailbox has an email address so it can receive booking requests. The email address consists of an alias on the left side of the @ symbol, which must be unique in the forest, and your domain name on the right. The alias is required.
 
-  - **Location**, **Phone**, **Capacity**: You can use these fields to enter details about the room. However, as explained earlier, you can include some or all of this information in the room name so users can see it.
+   - **Location**, **Phone**, **Capacity**: You can use these fields to enter details about the room. However, as explained earlier, you can include some or all of this information in the room name so users can see it.
 
 4. When you're finished, click **Save** to create the room mailbox.
 
-After you've created a room mailbox, you can [Change how a room mailbox handles meeting requests](room-mailboxes.md#BookingOptions) (including whether it responds automatically or someone needs to decide what to do). By default, it'll automatically accept or decline requests depending on whether the requests conflict with any existing meetings on its calendar. It'll also allow meetings that repeat, and allow meetings up to 180 days from the current date (and decline any requests beyond that) that are up to 24 hours in duration. If you want to change other options, head down to [Change other room mailbox properties](room-mailboxes.md#RoomMbxProps).
+After you've created a room mailbox, you can [Change how a room mailbox handles meeting requests](#change-how-a-room-mailbox-handles-meeting-requests) (including whether it responds automatically or someone needs to decide what to do). By default, it'll automatically accept or decline requests depending on whether the requests conflict with any existing meetings on its calendar. It'll also allow meetings that repeat, and allow meetings up to 180 days from the current date (and decline any requests beyond that) that are up to 24 hours in duration. If you want to change other options, head down to [Change other room mailbox properties](#change-other-room-mailbox-properties).
 
 For information on how to create a room mailbox using the Exchange Management shell, see Examples 2 and 3 in [New-Mailbox](http://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
 
@@ -113,7 +113,7 @@ After you create a room mailbox, you can make changes and set additional propert
 
 2. In the list of resource mailboxes, click the room mailbox that you want to change the properties for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
 
-3. On the room mailbox properties page, click one of the following sections to view or change properties (for booking options, see [Change how a room mailbox handles meeting requests](room-mailboxes.md#BookingOptions)).
+3. On the room mailbox properties page, click one of the following sections to view or change properties (for booking options, see [Change how a room mailbox handles meeting requests](#change-how-a-room-mailbox-handles-meeting-requests).
 
    - [General](#general)
 

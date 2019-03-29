@@ -81,7 +81,7 @@ Exchange Server includes several built-in role groups, each one providing permis
 
 If you work in a small organization that has only a few administrators, you might only ever use the Organization Management role group, and none of the others. If you work in a larger organization, you might have administrators who perform specific tasks administering Exchange, such as recipient or server management. In those cases, you might add one administrator to the Recipient Management role group, and another administrator to the Server Management role group. Those administrators can then manage their specific areas of Exchange Server but won't have permissions to manage areas they're not responsible for.
 
-If you can't find a built-in role group that fits the jobs your administrators need to do, you can create role groups and add roles to them. For more information, see [Work with role groups](#CustomRoleGroup.md) later in this topic.
+If you can't find a built-in role group that fits the jobs your administrators need to do, you can create role groups and add roles to them. For more information, see [Work with role groups](#work-with-role-groups) later in this topic.
 
 ### Role assignment policies
 
@@ -105,14 +105,13 @@ When an end-user role is assigned to a role assignment policy, all of the mailbo
 
 ![Role, role assignment policy, mailbox relationship](../media/ITPro_Security_RBAC_SimplifiedRAPRelationship.gif)
 
-The Default Role Assignment Policy role assignment policy is included with Exchange Server. As the name implies, it's the default role assignment policy. If you want to change the permissions provided by this role assignment policy, or if you want to create role assignment policies, see [Work with role assignment policies](#CustomRAP.md) later in this topic.
+The Default Role Assignment Policy role assignment policy is included with Exchange Server. As the name implies, it's the default role assignment policy. If you want to change the permissions provided by this role assignment policy, or if you want to create role assignment policies, see [Work with role assignment policies](#work-with-role-assignment-policies) later in this topic.
 
 ## Work with role groups
-<a name="CustomRoleGroup"> </a>
 
 To manage your permissions using role groups in Exchange Server, we recommend that you use the Exchange admin center (EAC). When you use the EAC to manage role groups, you can add and remove roles and members, create role groups, and copy role groups with a few clicks of your mouse. The EAC provides simple dialog boxes, such as the **new role group** dialog box, shown in the following figure, to perform these tasks.
 
- **New role group dialog box in the EAC**
+### New role group dialog box in the EAC
 
 ![New role group dialog box in the EAC](../media/ITPro_Security_RBAC_SimplifiedEACRoleGroup.jpg)
 
@@ -136,11 +135,10 @@ Existing role groups can also be modified. You can add and remove roles from exi
 > Although you can change which roles are assigned to built-in role groups, we recommend that you copy built-in role groups, modify the role group copy, and then add members to the role group copy.
 
 ## Work with role assignment policies
-<a name="CustomRAP"> </a>
 
 To manage the permissions that you grant end users to manage their own mailbox in Exchange Server, we recommend that you use the EAC. When you use the EAC to manage end-user permissions, you can add roles, remove roles, and create role assignment policies with a few clicks of your mouse. The EAC provides simple dialog boxes, such as the **role assignment policy** dialog box, shown in the following figure, to perform these tasks.
 
- **Role assignment policy dialog box in the EAC**
+### Role assignment policy dialog box in the EAC
 
 ![Role assignment policy dialog box in the EAC](../media/ITPro_Security_RBAC_SimplifiedEACRAP.jpg)
 
@@ -166,7 +164,7 @@ If you want to assign different end-user permissions to the various types of use
 
 If you want to change which role assignment policy is the default, you needs to use the Exchange Management Shell. When you change the default role assignment policy, any mailboxes that are created will be associated with the new default role assignment policy if one wasn't explicitly specified. The role assignment policy associated with existing mailboxes doesn't change when you select a new default role assignment policy.
 
- **Notes**:
+**Notes**:
 
 - If you select a check box for a role that has child roles, the check boxes for the child roles are also selected. If you clear the check box for a role with child roles, the check boxes for the child roles are also cleared.
 
@@ -175,6 +173,3 @@ If you want to change which role assignment policy is the default, you needs to 
   - [Manage role assignment policies](role-assignment-policies.md)
 
   - [Change the assignment policy on a mailbox](policy-assignments-for-mailboxes.md)
-
-
-

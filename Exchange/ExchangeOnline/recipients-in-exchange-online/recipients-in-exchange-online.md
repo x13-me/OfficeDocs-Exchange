@@ -6,7 +6,8 @@ author: kwekua
 ms.author: kwekua
 ms.assetid: 50d16941-5cd7-435d-8715-e2b69f8410ab
 ms.date:title: Recipients in Exchange Online, Exchange Online mail recipients, Exchange recipients, MS Exchange recipient
-ms.collection:- exchange-online
+ms.collection:
+- exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online

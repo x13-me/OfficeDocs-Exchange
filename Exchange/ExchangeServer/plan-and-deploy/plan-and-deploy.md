@@ -28,7 +28,7 @@ This topic contains links to topics and information about planning for and then 
  Use the information at following links to help plan your deployment of Exchange 2016 or Exchange 2019 into your organization.
 
 > [!IMPORTANT]
-> See the [Establish a test environment](#establish-a-test-environment) section later in this topic for information about installing Exchange 2019 in a test environment.
+> See the [Establish an Exchange 2016 or Exchange 2019 test environment](#establish-an-exchange-2016-or-exchange-2019-test-environment) section later in this topic for information about installing Exchange 2019 in a test environment.
 
 [Exchange architecture](../architecture/architecture.md)
 

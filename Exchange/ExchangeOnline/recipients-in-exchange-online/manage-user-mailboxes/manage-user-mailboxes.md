@@ -9,7 +9,8 @@ ms.author: kwekua
 ms.assetid: 957ca61c-1fa1-42ab-a0e6-8488e4782566
 ms.date: 7/11/2018
 title: Manage user mailboxes
-ms.collection:- exchange-online
+ms.collection:
+- exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online

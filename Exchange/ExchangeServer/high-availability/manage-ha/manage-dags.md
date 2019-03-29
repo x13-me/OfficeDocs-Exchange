@@ -21,7 +21,6 @@ A database availability group (DAG) is a set of up to 16 Exchange Mailbox server
 When you create a DAG, it's initially empty. When you add the first server to a DAG, a failover cluster is automatically created for the DAG. In addition, the infrastructure that monitors the servers for network or server failures is initiated. The failover cluster heartbeat mechanism and cluster database are then used to track and manage information about the DAG that can change quickly, such as database mount status, replication status, and last mounted location.
 
 ## Creating DAGs
-<a name="Cr"> </a>
 
 A DAG can be created using the New Database Availability Group wizard in the Exchange admin center (EAC), or by running the **New-DatabaseAvailabilityGroup** cmdlet in the Exchange Management Shell. When creating a DAG, you provide a name for the DAG, and optional witness server and witness directory settings. In addition, you can assign one or more IP addresses to the DAG, either by using static IP addresses or by allowing the DAG to be automatically assigned the necessary IP addresses using Dynamic Host Configuration Protocol (DHCP). You can manually assign IP addresses to the DAG by using the _DatabaseAvailabilityGroupIpAddresses_ parameter. If you omit this parameter, the DAG attempts to obtain an IP address by using a DHCP server on your network.
 
@@ -71,11 +70,11 @@ The following table lists general witness server placement recommendations for d
 
 |**Deployment Scenario**|**Recommendations**|
 |:-----|:-----|
-|Single DAG deployed in a single datacenter  <br/> |Locate witness server in the same datacenter as DAG members  <br/> |
-|Single DAG deployed across two datacenters; no additional locations available  <br/> |Locate witness server on a Microsoft Azure virtual network to enable automatic datacenter failover, or  <br/> Locate witness server in primary datacenter  <br/> |
-|Multiple DAGs deployed in a single datacenter  <br/> |Locate witness server in the same datacenter as DAG members. Additional options include:  <br/> • Using the same witness server for multiple DAGs  <br/> • Using a DAG member to act as a witness server for a different DAG  <br/> |
-|Multiple DAGs deployed across two datacenters  <br/> |Locate witness server on a Microsoft Azure virtual network to enable automatic datacenter failover, or  <br/> Locate witness server in the datacenter that is considered primary for each DAG. Additional options include:  <br/> • Using the same witness server for multiple DAGs  <br/> • Using a DAG member to act as a witness server for a different DAG  <br/> |
-|Single or Multiple DAGs deployed across more than two datacenters  <br/> |In this configuration, the witness server should be located in the datacenter where you want the majority of quorum votes to exist.  <br/> |
+|Single DAG deployed in a single datacenter|Locate witness server in the same datacenter as DAG members|
+|Single DAG deployed across two datacenters; no additional locations available|Locate witness server on a Microsoft Azure virtual network to enable automatic datacenter failover, or  <br/> Locate witness server in primary datacenter|
+|Multiple DAGs deployed in a single datacenter|Locate witness server in the same datacenter as DAG members. Additional options include:  <br/> • Using the same witness server for multiple DAGs  <br/> • Using a DAG member to act as a witness server for a different DAG|
+|Multiple DAGs deployed across two datacenters|Locate witness server on a Microsoft Azure virtual network to enable automatic datacenter failover, or  <br/> Locate witness server in the datacenter that is considered primary for each DAG. Additional options include:  <br/> • Using the same witness server for multiple DAGs  <br/> • Using a DAG member to act as a witness server for a different DAG|
+|Single or Multiple DAGs deployed across more than two datacenters|In this configuration, the witness server should be located in the datacenter where you want the majority of quorum votes to exist.|
 
 When a DAG has been deployed across two datacenters, you can now use a third location for hosting the witness server. If your organization has a third location with a network infrastructure that is isolated from network failures that affect the two datacenters in which your DAG is deployed, then you can deploy the DAG's witness server in that third location, thereby configuring your DAG with the ability automatically failover databases to the other datacenter in response to a datacenter-level failure event. If your organization only has two physical locations, you can use a Microsoft Azure virtual network as a third location to place your witness server.
 
@@ -217,10 +216,10 @@ Network encryption is a property of the DAG and not a DAG network. You can confi
 
 |**Setting**|**Description**|
 |:-----|:-----|
-|Disabled  <br/> |Network encryption isn't used.  <br/> |
-|Enabled  <br/> |Network encryption is used on all DAG networks for replication and seeding.  <br/> |
-|InterSubnetOnly  <br/> |Network encryption is used on DAG networks when replicating across different subnets. This is the default setting.  <br/> |
-|SeedOnly  <br/> |Network encryption is used on all DAG networks for seeding only.  <br/> |
+|Disabled|Network encryption isn't used.|
+|Enabled|Network encryption is used on all DAG networks for replication and seeding.|
+|InterSubnetOnly|Network encryption is used on DAG networks when replicating across different subnets. This is the default setting.|
+|SeedOnly|Network encryption is used on all DAG networks for seeding only.|
 
 ### DAG network compression
 
@@ -232,10 +231,10 @@ As with network encryption, network compression is also a property of the DAG an
 
 |**Setting**|**Description**|
 |:-----|:-----|
-|Disabled  <br/> |Network compression isn't used.  <br/> |
-|Enabled  <br/> |Network compression is used on all DAG networks for replication and seeding.  <br/> |
-|InterSubnetOnly  <br/> |Network compression is used on DAG networks when replicating across different subnets. This is the default setting.  <br/> |
-|SeedOnly  <br/> |Network compression is used on all DAG networks for seeding only.  <br/> |
+|Disabled|Network compression isn't used.|
+|Enabled|Network compression is used on all DAG networks for replication and seeding.|
+|InterSubnetOnly|Network compression is used on DAG networks when replicating across different subnets. This is the default setting.|
+|SeedOnly|Network compression is used on all DAG networks for seeding only.|
 
 ## DAG networks
 <a name="Dat"> </a>
@@ -274,10 +273,10 @@ For example, consider DAG1, a two-member DAG where each member has two network a
 
 |**Server-network adapter**|**IP address/subnet mask**|**Default gateway**|
 |:-----|:-----|:-----|
-|EX1-MAPI  <br/> |192.168.1.15/24  <br/> |192.168.1.1  <br/> |
-|EX1-Replication  <br/> |10.0.0.15/24  <br/> |Not applicable  <br/> |
-|EX2-MAPI  <br/> |192.168.1.16  <br/> |192.168.1.1  <br/> |
-|EX2-Replication  <br/> |10.0.0.16  <br/> |Not applicable  <br/> |
+|EX1-MAPI|192.168.1.15/24|192.168.1.1|
+|EX1-Replication|10.0.0.15/24|Not applicable|
+|EX2-MAPI|192.168.1.16|192.168.1.1|
+|EX2-Replication|10.0.0.16|Not applicable|
 
 In the following configuration, there are two subnets configured in the DAG: 192.168.1.0 and 10.0.0.0. When EX1 and EX2 are added to the DAG, two subnets will be enumerated and two DAG networks will be created: MapiDagNetwork (192.168.1.0) and ReplicationDagNetwork01 (10.0.0.0). These networks will be configured as shown in the following table.
 
@@ -285,8 +284,8 @@ In the following configuration, there are two subnets configured in the DAG: 192
 
 |**Name**|**Subnets**|**Interfaces**|**MAPI access enabled**|**Replication enabled**|
 |:-----|:-----|:-----|:-----|:-----|
-|MapiDagNetwork  <br/> |192.168.1.0/24  <br/> |EX1 (192.168.1.15)  <br/> EX2 (192.168.1.16)  <br/> |True  <br/> |True  <br/> |
-|ReplicationDagNetwork01  <br/> |10.0.0.0/24  <br/> |EX1 (10.0.0.15)  <br/> EX2 (10.0.0.16)  <br/> |False  <br/> |True  <br/> |
+|MapiDagNetwork|192.168.1.0/24|EX1 (192.168.1.15)  <br/> EX2 (192.168.1.16)|True|True|
+|ReplicationDagNetwork01|10.0.0.0/24|EX1 (10.0.0.15)  <br/> EX2 (10.0.0.16)|False|True|
 
 To complete the configuration of ReplicationDagNetwork01 as the dedicated replication network, disable replication for MapiDagNetwork by running the following command.
 
@@ -306,10 +305,10 @@ For example, consider DAG2, a two-member DAG where each member has two network a
 
 |**Server-network adapter**|**IP address/subnet mask**|**Default gateway**|
 |:-----|:-----|:-----|
-|EX1-MAPI  <br/> |192.168.0.15/24  <br/> |192.168.0.1  <br/> |
-|EX1-Replication  <br/> |10.0.0.15/24  <br/> |Not applicable  <br/> |
-|EX2-MAPI  <br/> |192.168.1.15  <br/> |192.168.1.1  <br/> |
-|EX2-Replication  <br/> |10.0.1.15  <br/> |Not applicable  <br/> |
+|EX1-MAPI|192.168.0.15/24|192.168.0.1|
+|EX1-Replication|10.0.0.15/24|Not applicable|
+|EX2-MAPI|192.168.1.15|192.168.1.1|
+|EX2-Replication|10.0.1.15|Not applicable|
 
 In the following configuration, there are four subnets configured in the DAG: 192.168.0.0, 192.168.1.0, 10.0.0.0, and 10.0.1.0. When EX1 and EX2 are added to the DAG, four subnets will be enumerated, but only two DAG networks will be created: MapiDagNetwork (192.168.0.0, 192.168.1.0) and ReplicationDagNetwork01 (10.0.0.0, 10.0.1.0). These networks will be configured as shown in the following table.
 
@@ -317,8 +316,8 @@ In the following configuration, there are four subnets configured in the DAG: 19
 
 |**Name**|**Subnets**|**Interfaces**|**MAPI access enabled**|**Replication enabled**|
 |:-----|:-----|:-----|:-----|:-----|
-|MapiDagNetwork  <br/> |192.168.0.0/24  <br/> 192.168.1.0/24  <br/> |EX1 (192.168.0.15)  <br/> EX2 (192.168.1.15)  <br/> |True  <br/> |True  <br/> |
-|ReplicationDagNetwork01  <br/> |10.0.0.0/24  <br/> 10.0.1.0/24  <br/> |EX1 (10.0.0.15)  <br/> EX2 (10.0.1.15)  <br/> |False  <br/> |True  <br/> |
+|MapiDagNetwork|192.168.0.0/24  <br/> 192.168.1.0/24|EX1 (192.168.0.15)  <br/> EX2 (192.168.1.15)|True|True|
+|ReplicationDagNetwork01|10.0.0.0/24  <br/> 10.0.1.0/24|EX1 (10.0.0.15)  <br/> EX2 (10.0.1.15)|False|True|
 
 ### DAG networks and iSCSI networks
 
@@ -331,18 +330,16 @@ Set-DatabaseAvailabilityGroupNetwork -Identity DAG2\DAGNetwork02 -ReplicationEna
 This command will also disable the network for use by the cluster. Although the iSCSI networks will continue to appear as DAG networks, they won't be used for MAPI or replication traffic after running the above command.
 
 ## Configuring DAG members
-<a name="Cdm"> </a>
 
 Mailbox servers that are members of a DAG have some properties specific to high availability that should be configured as described in the following sections:
 
-- [Automatic database mount dial](#AutoDBMount.md)
+- [Automatic database mount dial](#automatic-database-mount-dial)
 
-- [Database copy automatic activation policy](#DBCopyAutoActivation.md)
+- [Database copy automatic activation policy](#database-copy-automatic-activation-policy)
 
-- [Maximum active databases](#MaxActiveDB.md)
+- [Maximum active databases](#maximum-active-databases)
 
 ### Automatic database mount dial
-<a name="AutoDBMount"> </a>
 
 The _AutoDatabaseMountDial_ parameter specifies the automatic database mount behavior after a database failover. You can use the [Set-MailboxServer](http://technet.microsoft.com/library/6a229126-b863-4f07-b024-a39c93b253f7.aspx) cmdlet to configure the _AutoDatabaseMountDial_ parameter with any of the following values:
 
@@ -363,7 +360,6 @@ Set-MailboxServer -Identity EX1 -AutoDatabaseMountDial GoodAvailability
 ```
 
 ### Database copy automatic activation policy
-<a name="DBCopyAutoActivation"> </a>
 
 The _DatabaseCopyAutoActivationPolicy_ parameter specifies the type of automatic activation available for mailbox database copies on the selected Mailbox servers. You can use the [Set-MailboxServer](http://technet.microsoft.com/library/6a229126-b863-4f07-b024-a39c93b253f7.aspx) cmdlet to configure the _DatabaseCopyAutoActivationPolicy_ parameter with any of the following values:
 
@@ -382,7 +378,6 @@ Set-MailboxServer -Identity EX1 -DatabaseCopyAutoActivationPolicy Blocked
 ```
 
 ### Maximum active databases
-<a name="MaxActiveDB"> </a>
 
 The _MaximumActiveDatabases_ parameter (also used with the [Set-MailboxServer](http://technet.microsoft.com/library/6a229126-b863-4f07-b024-a39c93b253f7.aspx) cmdlet) specifies the number of databases that can be mounted on a Mailbox server. You can configure Mailbox servers to meet your deployment requirements by ensuring that an individual Mailbox server doesn't become overloaded.
 
@@ -397,7 +392,6 @@ Set-MailboxServer -Identity EX1 -MaximumActiveDatabases 20
 ```
 
 ## Performing maintenance on DAG members
-<a name="Pm"> </a>
 
 Before performing any type of software or hardware maintenance on a DAG member, you should first put the DAG member in maintenance mode. The following scripts are provided with Exchange Server to assist with DAG maintenance procedures.
 
@@ -426,9 +420,9 @@ To begin maintenance procedures on a DAG member, including flushing the transpor
 
 1. To empty the transport queues, run the following command:
 
-  ```
-  Set-ServerComponentState <ServerName> -Component HubTransport -State Draining -Requester Maintenance
-  ```
+   ```
+   Set-ServerComponentState <ServerName> -Component HubTransport -State Draining -Requester Maintenance
+   ```
 
 2. To initiate the draining of the transport queues, run the following command:
 
@@ -450,9 +444,9 @@ To begin maintenance procedures on a DAG member, including flushing the transpor
 
 5. To run the StartDagServerMaintenance.ps1 script, run the following command:
 
-  ```
-  .\StartDagServerMaintenance.ps1 -ServerName <ServerName> -MoveComment Maintenance
-  ```
+   ```
+   .\StartDagServerMaintenance.ps1 -ServerName <ServerName> -MoveComment Maintenance
+   ```
 
     For the value of the _MoveComment_ parameter, you can make any notation you want. The above example uses "Maintenance."
 
@@ -461,9 +455,9 @@ To begin maintenance procedures on a DAG member, including flushing the transpor
 
 6. To redirect messages pending delivery in the local queues to the Exchange server specified by the Target parameter, run
 
-  ```
-  Redirect-Message -Server <ServerName> -Target <Server FQDN>
-  ```
+   ```
+   Redirect-Message -Server <ServerName> -Target <Server FQDN>
+   ```
 
 7. To place the server into maintenance mode, run:
 
@@ -554,14 +548,12 @@ If you're installing an Exchange update, and the update process fails, it can le
 3. `Set-ServerComponentState <ServerName> -Component RecoveryActionsEnabled -State Active -Requester Functional`
 
 ## Shutting down DAG members
-<a name="Sh"> </a>
 
 Exchange high availability solution is integrated with the Windows shutdown process. If an administrator or application initiates a shutdown of a Windows server in a DAG that has a mounted database that's replicated to one or more DAG members, the system attempts to activate another copy of the mounted database prior to allowing the shutdown process to complete.
 
 However, this new behavior doesn't guarantee that all of the databases on the server being shut down will experience a `lossless` activation. As a result, it's a best practice to perform a server switchover prior to shutting down a server that's a member of a DAG.
 
 ## Installing updates on DAG members
-<a name="In"> </a>
 
 Installing Exchange updates on a server that's a member of a DAG is a relatively straightforward process. When you install an update on a server that's a member of a DAG, several services are stopped during the installation, including all Exchange services and the Cluster service. The general process for applying updates to a DAG member is as follows:
 
@@ -574,6 +566,3 @@ Installing Exchange updates on a server that's a member of a DAG is a relatively
 4. Optionally, use the RedistributeActiveDatabases.ps1 script to rebalance the active database copies across the DAG.
 
 For more information about the latest Exchange updates, see [Exchange Server Updates: build numbers and release dates](https://technet.microsoft.com/library/hh135098.aspx).
-
-
-
