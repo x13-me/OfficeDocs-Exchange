@@ -43,6 +43,5 @@ Select a topic below to get started:
   
 [Troubleshoot a hybrid deployment](troubleshoot-a-hybrid-deployment.md)
   
-[Configure IRM in hybrid deployments](../irm.md#IRMConfig)
+[Configure IRM in hybrid deployments](../irm.md#configure-irm-in-hybrid-deployments)
   
-

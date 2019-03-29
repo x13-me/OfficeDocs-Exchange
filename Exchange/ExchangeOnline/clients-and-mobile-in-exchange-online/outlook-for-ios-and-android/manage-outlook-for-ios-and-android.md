@@ -90,7 +90,7 @@ For detailed information on MDM, see the following resources:
 - Instructions for your end-users to enroll a device in Office 365 MDM: [Enroll your mobile device in Office 365](https://support.office.com/article/c8ac722d-dcaf-4135-8345-3e6327f5d3c5)
 
 ### Using Third-Party Mobile Device Management Solutions
-Third-party MDM providers can deploy the Outlook for iOS and Android the same way they would deploy any iOS or Android app, using their existing tools. They can also apply device management controls like device PIN, device encryption, device wipe, and more, all of which are important for a secure email experience, but are also completely independent of Outlook for iOS and Android. 
+Third-party MDM providers can deploy the Outlook for iOS and Android the same way they would deploy any iOS or Android app, using their existing tools. They can also apply device management controls like device PIN, device encryption, device wipe, and more, all of which are important for a secure email experience, but are also completely independent of Outlook for iOS and Android.
 
 Third-party MDM providers can also deploy certain app configuration settings, like account setup, organization allowed accounts mode, and general app configuration settings, to Outlook for iOS and Android; for more information, please see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 

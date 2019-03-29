@@ -54,7 +54,7 @@ function O365Logon
 	$session = Get-PSSession | ?{$_.ConfigurationName -eq 'Microsoft.Exchange'}
 	if($session -ne $null)
 	{
-		$a = Read-Host "An open session to Office 365 already exists.  Do you want to use this session?  Enter y to use the open session, anything else to close and open a fresh session."
+		$a = Read-Host "An open session to Office 365 already exists. Do you want to use this session?  Enter y to use the open session, anything else to close and open a fresh session."
 		if($a.ToLower() -eq 'y')
 		{
 			Write-Host "Using existing Office 365 Powershell Session." -ForeGroundColor Green
@@ -88,7 +88,7 @@ function Main
 		if ($CloudEmailAddress.Count -gt 1)
 		{
 			$CloudEmailAddress = $CloudEmailAddress[0].ToString().ToLower().Replace('smtp:', '')
-			Write-Host "$user returned more than one cloud email address.  Using $CloudEmailAddress" -ForegroundColor Yellow
+			Write-Host "$user returned more than one cloud email address. Using $CloudEmailAddress" -ForegroundColor Yellow
 		}
 		else
 		{
@@ -102,7 +102,7 @@ function Main
 	#Check for existing csv file and overwrite if needed
 	if(Test-Path ".\cloud.csv")
 	{
-		$delete = Read-Host "The file cloud.csv already exists in the current directory.  Do you want to delete it?  Enter y to delete, anything else to exit this script."
+		$delete = Read-Host "The file cloud.csv already exists in the current directory. Do you want to delete it?  Enter y to delete, anything else to exit this script."
 		if($delete.ToString().ToLower() -eq 'y')
 		{
 			Write-Host "Deleting existing cloud.csv file" -ForeGroundColor Red
@@ -110,7 +110,7 @@ function Main
 		}
 		else
 		{
-			Write-Host "Will NOT delete current cloud.csv file.  Exiting script." -ForeGroundColor Green
+			Write-Host "Will NOT delete current cloud.csv file. Exiting script." -ForeGroundColor Green
 			Exit
 		}
 	}
@@ -163,7 +163,7 @@ ElseIf StrComp(WScript.Arguments(0), "-c", vbTextCompare) = 0 Then
     csvFileName = WScript.Arguments(1)
     domainController = WScript.Arguments(2)
     csvMode = TRUE
-    WScript.Echo("CSV mode detected.  Filename: " &amp; WScript.Arguments(1) &amp; vbCrLf)
+    WScript.Echo("CSV mode detected. Filename: " &amp; WScript.Arguments(1) &amp; vbCrLf)
 ElseIf wscript.Arguments.Count <> 4 Then
     'Invalid Arguments
     WScript.Echo WScript.Arguments.Count
@@ -245,7 +245,7 @@ Sub LookupADInformationFromSMTPAddress(ByRef info)
     Set objRecordSet = objCommand.Execute
     'Handle any errors that result from the query
     If Err.Number <> 0 Then
-        WScript.Echo "Error encountered on query " &amp; Query &amp; ".  Skipping user."
+        WScript.Echo "Error encountered on query " &amp; Query &amp; ". Skipping user."
         lastADLookupFailed = true
         return
     End If
@@ -337,7 +337,7 @@ Sub ProcessMailbox(User)
 	Mailbox.DeleteMailbox
     'Handle any errors deleting the mailbox
     If Err.Number <> 0 Then
-        WScript.Echo "Error " &amp; Err.number &amp; ".  Skipping User." &amp; vbCrLf &amp; "Description: " &amp; Err.Description &amp; vbCrLf
+        WScript.Echo "Error " &amp; Err.number &amp; ". Skipping User." &amp; vbCrLf &amp; "Description: " &amp; Err.Description &amp; vbCrLf
         Exit Sub
     End If
     On Error Goto 0

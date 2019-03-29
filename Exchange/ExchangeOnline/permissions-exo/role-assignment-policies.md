@@ -139,7 +139,7 @@ For detailed syntax and parameter information, see [New-ManagementRoleAssignment
 
 ### Use Exchange Online PowerShell to remove roles from a role assignment policy
 
-1. Use the procedure from the [Use Exchange Online PowerShell to view the roles assigned to a role assignment policy](#use-exchange-online-powershell-to-view-the-roles-assigned-to-a-role-assignment-policy) section earlier in this topic to find the name of the **role assignment** for the role that you want to remove (it's a combination of the names of the role and the role assignment policy).
+1. Use the procedure from the [Use Exchange Online PowerShell to view roles assigned to a role assignment policy](#use-exchange-online-powershell-to-view-roles-assigned-to-a-role-assignment-policy) section earlier in this topic to find the name of the **role assignment** for the role that you want to remove (it's a combination of the names of the role and the role assignment policy).
 
 
 2. To remove the role from the role assignment policy, use this syntax:

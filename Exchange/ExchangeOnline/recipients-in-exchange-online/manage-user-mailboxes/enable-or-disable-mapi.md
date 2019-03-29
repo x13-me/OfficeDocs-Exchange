@@ -58,7 +58,7 @@ For additional management tasks related to managing email client access to a mai
 
   - To enable MAPI, under **MAPI: Disabled**, click **Enable**.
 
-5.  Click **Save** to save your change.
+5. Click **Save** to save your change.
 
 ## Use Exchange Online PowerShell to enable or disable MAPI
 

@@ -16,16 +16,9 @@ title: Review the voice mail calls in your organization
 # Review the voice mail calls in your organization
 You can use the Call Statistics report to view information about the type and status of incoming calls handled by the Exchange servers in your organization. The report provides statistical information about the calls forwarded to or placed by Unified Messaging (UM) for your organization. You can use this information to track usage for capacity planning, monitor and troubleshoot the availability and audio quality of UM, and to troubleshoot failed calls.
 
-This topic answers these questions:
-
-- [How do I get call statistics for UM?](#howto.md)
-
-- [How do I interpret UM call statistics?](#interpret.md)
-
 For additional tasks related to UM reporting, see [UM reports procedures](um-reports-procedures.md).
 
-## How do I get call statistics for UM?
-<a name="howto"> </a>
+## How to get call statistics for UM
 
 1. In the Exchange admin center (EAC), click **Unified messaging** \> **More options** ![More Options Icon](../../media/ITPro_EAC_MoreOptionsIcon.gif) \> **Call statistics**.
 
@@ -58,10 +51,7 @@ For additional tasks related to UM reporting, see [UM reports procedures](um-rep
     > [!NOTE]
     > On the report page, you can download a Microsoft Excel template that you can use to import the .csv file for a specific day.
 
-[Return to top](#Introduction.md)
-
-## How do I interpret UM call statistics?
-<a name="interpret"> </a>
+## How to interpret UM call statistics
 
 The UM Call Statistics report includes the following information:
 
@@ -93,14 +83,8 @@ The UM Call Statistics report includes the following information:
 
 - **AUDIO QUALITY**: A graphical representation of the overall audio quality for the selected period of time for the organization.
 
-[Return to top](#Introduction.md)
-
 ## For more information
-<a name="fmi"> </a>
 
 [Investigate the audio quality of voice calls in your organization](audio-quality-of-voice-calls-in-organization.md)
 
 [Interpret voice mail call records](interpret-voice-mail-call-records.md)
-
-
-

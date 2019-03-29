@@ -7,7 +7,7 @@ ms.author: stephow
 ms.assetid: 7c8ed3c1-ca91-4d9b-b16b-0a2b8ac89730
 ms.date: 7/11/2018
 title: Data loss prevention
-ms.collection: 
+ms.collection:
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro

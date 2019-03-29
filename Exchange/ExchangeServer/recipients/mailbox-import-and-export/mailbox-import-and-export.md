@@ -28,7 +28,7 @@ Exchange Server uses the Microsoft Exchange Mailbox Replication service (MRS) to
 This feature was introduced in Exchange 2010 Service Pack 1 (SP1). In Exchange 2010, the MRS runs on Client Access servers. In Exchange 2013 or later, the MRS runs in the backend services on Mailbox servers (not in the frontend Client Access services).
 
 > [!NOTE]
-> Mailbox imports and exports are available only in the Mailbox Import Export role, and by default, that role isn't assigned to a role group. To use these features, you need to add the Mailbox Import Export role to a role group that you belong to (for example, the Organization Management role group). For more information, see [Add a role to a role group](../../permissions/role-groups.md#AddRemoveRGRole).
+> Mailbox imports and exports are available only in the Mailbox Import Export role, and by default, that role isn't assigned to a role group. To use these features, you need to add the Mailbox Import Export role to a role group that you belong to (for example, the Organization Management role group). For more information, see [Add a role to a role group](../../permissions/role-groups.md#add-a-role-to-a-role-group).
 
 ## Reasons to import or export mailboxes
 <a name="Reasons"> </a>

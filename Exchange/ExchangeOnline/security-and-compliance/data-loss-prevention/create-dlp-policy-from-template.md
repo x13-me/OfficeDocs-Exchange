@@ -7,7 +7,7 @@ ms.author: stephow
 ms.assetid: 4432ef8b-6108-48d3-b2af-43ef5b40d2bc
 ms.date: 7/11/2018
 title: Create a DLP policy from a template
-ms.collection: 
+ms.collection:
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro

@@ -66,10 +66,10 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
 > [!NOTE]
 > Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be viewable in the EExchange admin center. See the Get-MailPublicFolder command. To recreate the SendAs permissions in the cloud, use the Add-RecipientPermission command. 
   
-1. On the Exchange 2013 server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to O365.
+On the Exchange 2013 server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to O365.
     
-  ```
-  Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
+  ```powershell
+  .\Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
   ```
 
   Where  `Credential` is your Office 365 user name and password, and  `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format. 
@@ -84,7 +84,7 @@ The final step in this procedure is to configure the Exchange online organizatio
   
 Enable the exchange online organization to access the on-premises public folders. You will point to all of you on-premises public folder mailboxes.
   
-```
+```powershell
 Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes PFMailbox1,PFMailbox2,PFMailbox3
 ```
 

@@ -18,10 +18,9 @@ manager: serdars
 
 After you create a user mailbox, you can make changes and set additional properties by using the EAC or the Exchange Management Shell.
 
-You can also change properties for multiple user mailboxes at the same time. For more information, see [Bulk edit user mailboxes](#bulkedit.md).
+You can also change properties for multiple user mailboxes at the same time. For more information, see [Use the EAC to bulk edit user mailboxes](#use-the-eac-to-bulk-edit-user-mailboxes).
 
 ## What do you need to know before you begin?
-<a name="introduction"> </a>
 
 - Estimated time to complete each user mailbox task: 2 to 5 minutes.
 
@@ -33,7 +32,6 @@ You can also change properties for multiple user mailboxes at the same time. For
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
 
 ## Change user mailbox properties
-<a name="introduction"> </a>
 
 ### Use the EAC to change user mailbox properties
 
@@ -374,4 +372,3 @@ To verify that you've successfully bulk edited user mailboxes, do one of the fol
   ```
 
   For more information about the available parameters for the **Get-Mailbox** cmdlet, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
-

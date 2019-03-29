@@ -97,7 +97,7 @@ Soft-deleted items are moved to the Deletions subfolder of the Recoverable Items
 
 - [Recover deleted items or email messages in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=524924)
 
-Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for a mailbox database is 14 days. You can modify this period for a mailbox database or for a specific mailbox. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see [Recoverable Items mailbox quotas](#RIQuotas.md) later in this topic.
+Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for a mailbox database is 14 days. You can modify this period for a mailbox database or for a specific mailbox. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see [Recoverable Items mailbox quotas](#recoverable-items-mailbox-quotas) later in this topic.
 
 After the deleted item retention period expires, the item is moved to the Purges folder and is no longer visible to the user. When the Managed Folder Assistant processes the mailbox, items in the Purges subfolder are purged from the mailbox database.
 

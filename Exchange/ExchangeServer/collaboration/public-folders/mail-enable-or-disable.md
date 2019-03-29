@@ -26,7 +26,7 @@ For additional management tasks related to managing public folders, see [Public 
 
 - Estimated time to complete: 5 minutes
 
-- To ensure that users on the Internet can send e-mail messages to a mail-enabled public folder, the public folder needs to have at least the _CreateItems_ access right granted to the Anonymous account. If you want to learn how to do this, see [Allow anonymous users to send email to a mail-enabled public folder](#CreateItems.md) later in this article.
+- To ensure that users on the Internet can send e-mail messages to a mail-enabled public folder, the public folder needs to have at least the _CreateItems_ access right granted to the Anonymous account. If you want to learn how to do this, see [Allow anonymous users to send email to a mail-enabled public folder](#allow-anonymous-users-to-send-email-to-a-mail-enabled-public-folder) later in this article.
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](../../permissions/feature-permissions/sharing-and-collaboration-permissions.md) topic.
 
@@ -45,7 +45,7 @@ For additional management tasks related to managing public folders, see [Public 
 
 4. A warning box displays asking if you're sure you want to enable or disable email for the public folder. Click **Yes** to continue.
 
-If you want external users to send mail to this public folder, make sure you follow the steps in [Allow anonymous users to send email to a mail-enabled public folder](#CreateItems.md).
+If you want external users to send mail to this public folder, make sure you follow the steps in [Allow anonymous users to send email to a mail-enabled public folder](#allow-anonymous-users-to-send-email-to-a-mail-enabled-public-folder).
 
 ## Use the Exchange Management Shell to mail-enable a public folder
 
@@ -61,7 +61,7 @@ This example mail-enables the public folder Reports under the Marketing public f
 Enable-MailPublicFolder -Identity "\Marketing\Reports" -HiddenFromAddressListsEnabled $True
 ```
 
-If you want external users to send mail to this public folder, make sure you follow the steps in [Allow anonymous users to send email to a mail-enabled public folder](#CreateItems.md).
+If you want external users to send mail to this public folder, make sure you follow the steps in [Allow anonymous users to send email to a mail-enabled public folder](#allow-anonymous-users-to-send-email-to-a-mail-enabled-public-folder).
 
 For detailed syntax and parameter information, see [Enable-MailPublicFolder](http://technet.microsoft.com/library/6fc7ba9a-62a8-4f41-811f-608363aa1397.aspx).
 

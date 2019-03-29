@@ -181,7 +181,7 @@ Possible reasons include the following:
 
 - Latency in the service may be causing delays
 
-- The message may have been blocked, in which case you should refer to [Why didn't someone receive my message or why did I get this non-delivery report (NDR)?](message-trace-faq.md#BKMB_Whydidntsomeonereceivemymessage)
+- The message may have been blocked
 
 To find out what happened:
 

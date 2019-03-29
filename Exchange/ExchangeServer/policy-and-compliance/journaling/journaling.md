@@ -77,7 +77,7 @@ A *journal report* is the message that's recorded by journaling. The journal rep
 
 ### Journal reports and IRM-protected messages
 
-You need to consider the effects of IRM-protected messages on journal reports. Third-party archiving systems that don't have built-in RMS support can't decrypt the IRM-protected messages in journal reports, which negatively affects the search and discovery of content in journaled messages. In Exchange, you can configure journal report decryption to save a clear-text copy of the message in the journal report. For more information, see [Enable journal report decryption](journaling-procedures.md#IRMDecryption).
+You need to consider the effects of IRM-protected messages on journal reports. Third-party archiving systems that don't have built-in RMS support can't decrypt the IRM-protected messages in journal reports, which negatively affects the search and discovery of content in journaled messages. In Exchange, you can configure journal report decryption to save a clear-text copy of the message in the journal report. For more information, see [Enable journal report decryption](journaling-procedures.md#enable-journal-report-decryption).
 
 ## Journal rules
 <a name="rules"> </a>

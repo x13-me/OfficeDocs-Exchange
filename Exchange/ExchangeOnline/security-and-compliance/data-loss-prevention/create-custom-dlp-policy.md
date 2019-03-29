@@ -7,7 +7,7 @@ ms.author: stephow
 ms.assetid: b3299a39-9663-41e4-b76e-9d2f7879d486
 ms.date: 7/11/2018
 title: Create a custom DLP policy
-ms.collection: 
+ms.collection:
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
@@ -37,7 +37,7 @@ For additional management tasks related to creating a custom DLP policy, see [DL
 
 > [!NOTE]
 > Due to the variances in customer environments and content match requirements, Microsoft Support cannot assist in providing custom content matching definitions; e.g., defining Custom Classifications and/or Regular Expression patterns ("RegEx"). For custom content matching development, testing, and debugging, Office 365 customers will need to rely upon internal IT resources, or use an external
-consulting resource such as Microsoft Consulting Services (MCS).  Support engineers can provide limited support for the feature, but cannot provide assurances that any custom content matching development will fulfill the customer's requirements or obligations.  As an example of the type of support which can be provided, sample regular expression patterns may be provided for testing purposes. Or support can assist with troubleshooting an existing RegEx pattern which is not triggering as expected with a single specific content example.
+consulting resource such as Microsoft Consulting Services (MCS). Support engineers can provide limited support for the feature, but cannot provide assurances that any custom content matching development will fulfill the customer's requirements or obligations. As an example of the type of support which can be provided, sample regular expression patterns may be provided for testing purposes. Or support can assist with troubleshooting an existing RegEx pattern which is not triggering as expected with a single specific content example.
 
 For additional information on the .NET regex engine which is used for processing the text, see https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions.
 

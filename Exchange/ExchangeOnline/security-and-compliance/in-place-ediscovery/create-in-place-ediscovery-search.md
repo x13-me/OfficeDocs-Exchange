@@ -35,7 +35,7 @@ Use [In-Place eDiscovery](in-place-ediscovery.md) to search across all mailbox c
 
 - When you create an In-Place eDiscovery search, messages returned in search results aren't copied automatically to a discovery mailbox. After you create the search, you can use the Exchange admin center (EAC) to estimate and preview search results or copy them to a discovery mailbox. For details, see:
 
-  - [Estimate or preview search results](create-in-place-ediscovery-search.md#estimate) (later in this topic)
+  - [Use the EAC to estimate or preview search results](#use-the-eac-to-estimate-or-preview-search-results) (later in this topic)
 
   - [Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx)
 
@@ -81,8 +81,6 @@ As previously explained, to create eDiscovery searches, you have to sign in to a
 
 7. Click **Finish** to save the search and return an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Estimates are displayed in the details pane. Click **Refresh** ![Refresh Icon](../../media/ITPro_EAC_RefreshIcon.gif) to update the information displayed in the details pane.
 
-[Return to top](create-in-place-ediscovery-search.md#top)
-
 ## Use Exchange Online PowerShell to create an In-Place eDiscovery search
 <a name="newmailboxsearch"> </a>
 
@@ -122,8 +120,6 @@ After using Exchange Online PowerShell to create an In-Place eDiscovery search, 
 
 For detailed syntax and parameter information, see [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
 
-[Return to top](create-in-place-ediscovery-search.md#top)
-
 ## Use the EAC to estimate or preview search results
 <a name="newmailboxsearch"> </a>
 
@@ -143,8 +139,6 @@ After you create an In-Place eDiscovery search, you can use the EAC to get an es
     > The mailboxes that were searched are listed in the right pane in the **eDiscovery search preview** window. For each mailbox, the number of items returned and the total size of these items is also displayed. All items returned by the search are listed in the right pane, and can be sorted by newest or oldest date. Items from each mailbox can't be displayed in the right pane by clicking a mailbox in the left pane. To view the items returned from a specific mailbox, you can copy the search results and view the items in the discovery mailbox.
 
 ![Estimate or Preview Search Results](../../media/TA_Discovery_EstimatePreviewUI.gif)
-
-[Return to top](create-in-place-ediscovery-search.md#top)
 
 ## Use Exchange Online PowerShell to estimate search results
 <a name="newmailboxsearch"> </a>
@@ -170,8 +164,6 @@ To display specific information about the estimated search results from the prev
 ```
 Get-MailboxSearch "FY13 Q2 Financial Results" | Format-List Name,Status,LastRunBy,LastStartTime,LastEndTime,Sources,SearchQuery,ResultSizeEstimate,ResultNumberEstimate,Errors,KeywordHits
 ```
-
-[Return to top](create-in-place-ediscovery-search.md#top)
 
 ## More information about eDiscovery searches
 <a name="newmailboxsearch"> </a>
@@ -199,8 +191,3 @@ Get-MailboxSearch "FY13 Q2 Financial Results" | Format-List Name,Status,LastRunB
   - Errors
 
     The reason is that it requires a lot of resources to return these properties for all eDiscovery searches in your organization.
-
-[Return to top](create-in-place-ediscovery-search.md#top)
-
-
-

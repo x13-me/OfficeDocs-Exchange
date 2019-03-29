@@ -67,7 +67,7 @@ function O365Logon
 	$session = Get-PSSession | ?{$_.ConfigurationName -eq 'Microsoft.Exchange'}
 	if($session -ne $null)
 	{
-		$a = Read-Host "An open session to Office 365 already exists.  Do you want to use this session?  Enter y to use the open session, anything else to close and open a fresh session."
+		$a = Read-Host "An open session to Office 365 already exists. Do you want to use this session?  Enter y to use the open session, anything else to close and open a fresh session."
 		if($a.ToLower() -eq 'y')
 		{
 			Write-Host "Using existing Office 365 Powershell Session." -ForeGroundColor Green
@@ -104,7 +104,7 @@ function Main
 		if ($CloudEmailAddress.Count -gt 1)
 		{
 			$CloudEmailAddress = $CloudEmailAddress[0].ToString().ToLower().Replace('smtp:', '')
-			Write-Host "$user returned more than one cloud email address.  Using $CloudEmailAddress" -ForegroundColor Yellow
+			Write-Host "$user returned more than one cloud email address. Using $CloudEmailAddress" -ForegroundColor Yellow
 		}
 		else
 		{
@@ -120,7 +120,7 @@ function Main
 	#Check for existing csv file and overwrite if needed
 	if(Test-Path ".\cloud.csv")
 	{
-		$delete = Read-Host "The file cloud.csv already exists in the current directory.  Do you want to delete it?  Enter y to delete, anything else to exit this script."
+		$delete = Read-Host "The file cloud.csv already exists in the current directory. Do you want to delete it?  Enter y to delete, anything else to exit this script."
 		if($delete.ToString().ToLower() -eq 'y')
 		{
 			Write-Host "Deleting existing cloud.csv file" -ForeGroundColor Red
@@ -128,7 +128,7 @@ function Main
 		}
 		else
 		{
-			Write-Host "Will NOT delete current cloud.csv file.  Exiting script." -ForeGroundColor Green
+			Write-Host "Will NOT delete current cloud.csv file. Exiting script." -ForeGroundColor Green
 			Exit
 		}
 	}
@@ -172,7 +172,7 @@ function Main
 		Write-Host "Calling LookupADInformationFromSMTPAddress" -ForegroundColor Green
 		$UserInfo = LookupADInformationFromSMTPAddress($User)
 		
-		#Check existing proxies for On-Premise and Cloud Legacy DN's as x500 proxies.  If not present add them.
+		#Check existing proxies for On-Premise and Cloud Legacy DN's as x500 proxies. If not present add them.
 		$CloudLegacyDNPresent = $false
 		$LegacyDNPresent = $false
 		foreach($Proxy in $UserInfo.ProxyAddresses)
@@ -215,7 +215,7 @@ function Main
 		Write-Host "Adding EmailAddresses and WindowsEmailAddress" -ForegroundColor Green
 		Set-MailUser -Identity $UserInfo.Identity -EmailAddresses $UserInfo.ProxyAddresses -WindowsEmailAddress $UserInfo.Mail -DomainController $DomainController
 		
-		#Set Mailbox GUID.  Need to do this via S.DS as Set-MailUser doesn't expose this property.
+		#Set Mailbox GUID. Need to do this via S.DS as Set-MailUser doesn't expose this property.
 		$ADPath = "LDAP://" + $DomainController + "/" + $UserInfo.DistinguishedName
 		$ADUser = New-Object -TypeName System.DirectoryServices.DirectoryEntry -ArgumentList $ADPath
 		$MailboxGUID = New-Object -TypeName System.Guid -ArgumentList $UserInfo.MailboxGUID
