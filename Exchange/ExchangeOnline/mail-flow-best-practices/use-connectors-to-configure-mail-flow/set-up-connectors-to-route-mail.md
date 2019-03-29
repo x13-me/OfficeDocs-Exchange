@@ -23,7 +23,7 @@ This topic helps you set up the connectors you need for the following two scenar
 - You have (or intend to have) mailboxes in two places; some mailboxes in Office 365, and some of your mailboxes are on your organization email servers (also called on-premises servers).
 
 > [!NOTE]
-> Before you get started, make sure you check on your specific scenario in [What if I have my own email servers?](use-connectors-to-configure-mail-flow.md#what-if-i-have-my-own-email-servers).
+> Before you get started, make sure you check on your specific scenario in [f I have my own email servers](use-connectors-to-configure-mail-flow.md#i-have-my-own-email-servers).
 
 ## How do Office 365 connectors work with my on-premises email servers?
 

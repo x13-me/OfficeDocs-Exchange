@@ -7,7 +7,7 @@ ms.author: markjjo
 ms.assetid: 9d5d8d37-a053-4830-9cb1-6e1ede25e963
 ms.date: 7/11/2018
 title: Create or remove an In-Place Hold
-ms.collection: 
+ms.collection:
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
@@ -99,7 +99,6 @@ To verify that you have successfully created the In-Place Hold, do one of the fo
 
 - Use the **Get-MailboxSearch** cmdlet to retrieve the mailbox search and check the search parameters. For an example of how to retrieve a mailbox search, see the examples in [Get-MailboxSearch](https://technet.microsoft.com/library/a2f3ab70-6ec6-4c06-b862-f32d498c3ef8.aspx).
 
-[Return to top](create-or-remove-in-place-holds.md#top)
 
 ## Remove an In-Place Hold
 
@@ -136,8 +135,3 @@ To verify that you have successfully removed an In-Place Hold, do one of the fol
 - Use the EAC to verify that the In-Place Hold doesn't appear in the list view of the **In-place eDiscovery & hold** tab.
 
 - Use the **Get-MailboxSearch** cmdlet to retrieve all mailbox searches and check that the search you removed is no longer listed. For an example of how to retrieve a mailbox search, see the examples in [Get-MailboxSearch](https://technet.microsoft.com/library/a2f3ab70-6ec6-4c06-b862-f32d498c3ef8.aspx).
-
-[Return to top](create-or-remove-in-place-holds.md#top)
-
-
-

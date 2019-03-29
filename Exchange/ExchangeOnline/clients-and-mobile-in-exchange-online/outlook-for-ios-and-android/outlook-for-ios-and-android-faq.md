@@ -97,7 +97,7 @@ Background synchronization in Outlook for iOS and Android can also be temporaril
 
 - Not opening the app for a given period of time. iOS will [automatically freeze third-party apps](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html), like Outlook, based on usage patterns. Android [doze mode and app standby](https://developer.android.com/training/monitoring-device-state/doze-standby) features can also prevent background updates to the app while those features are active.
 
-- On some Android devices, you can also restrict background processing or network access per-app. In these cases, Outlook for Android will not be able to process updates in the background. Android device manufacturers can modify the way you can interact with settings, therefore it is not possible to document every device scenario, but in general, these are the steps you can take to remove battery optimization: 
+- On some Android devices, you can also restrict background processing or network access per-app. In these cases, Outlook for Android will not be able to process updates in the background. Android device manufacturers can modify the way you can interact with settings, therefore it is not possible to document every device scenario, but in general, these are the steps you can take to remove battery optimization:
 
  1. Open **Settings**.
  2. Tap **Battery**.
@@ -137,7 +137,7 @@ Outlook for iOS and Android communicates via TCP port 443. The app accesses vari
 
 Yes, Outlook for iOS and Android supports proxy configurations when the proxy infrastructure meets the following requirements:
 
-- **Supports HTTP protocol without TLS decryption and inspection**. 
+- **Supports HTTP protocol without TLS decryption and inspection**.
 
 - **Does not perform authentication**.
 

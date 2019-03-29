@@ -47,7 +47,7 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 ## Use the EAC to assign permissions to individual mailboxes
 
-1. In the EAC, click **Recipients** in the feature pane. Depending on the type of mailbox that you want to assign permissions for, click on one of the following tabs: 
+1. In the EAC, click **Recipients** in the feature pane. Depending on the type of mailbox that you want to assign permissions for, click on one of the following tabs:
 
    - **Mailboxes**: User or linked mailboxes.
 
@@ -57,7 +57,7 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 2. In the list of mailboxes, select the mailbox that you want to assign permissions for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
 
-3. On the mailbox properties page that opens, click **Mailbox delegation** and configure one or more of the following permissions: 
+3. On the mailbox properties page that opens, click **Mailbox delegation** and configure one or more of the following permissions:
 
    - **Send As**: Messages sent by a delegate appear to come from the mailbox.
 
@@ -91,7 +91,7 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 2. In the list of groups, select the group that you want to assign permissions for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
 
-3. On the group properties page that opens, click **Group delegation** and configure one of the following permissions: 
+3. On the group properties page that opens, click **Group delegation** and configure one of the following permissions:
 
    - **Send As**: Messages sent by a delegate appear to come from the group.
 
@@ -105,14 +105,14 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 ## Use Exchange Online PowerShell to assign the Full Access permission to mailboxes
 
-You use the **Add-MailboxPermission** and **Remove-MailboxPermission** cmdlets to manage the Full Access permission for mailboxes. These cmdlets use the same basic syntax: 
+You use the **Add-MailboxPermission** and **Remove-MailboxPermission** cmdlets to manage the Full Access permission for mailboxes. These cmdlets use the same basic syntax:
 
 ```
 Add-MailboxPermission -Identity <MailboxIdentity> -User <DelegateIdentity> -AccessRights FullAccess -InheritanceType All [-AutoMapping $false]
 ```
 
 ```
-Remove-MailboxPermission -Identity <MailboxIdentity> -User <DelegateIdentity> -AccessRights FullAccess -InheritanceType All 
+Remove-MailboxPermission -Identity <MailboxIdentity> -User <DelegateIdentity> -AccessRights FullAccess -InheritanceType All
 ```
 
 This example assigns the delegate Raymond Sam the Full Access permission to the mailbox of Terry Adams.
@@ -161,7 +161,7 @@ To verify that you've successfully assigned or removed the Full Access permissio
 
 ## Use Exchange Online PowerShell to assign the Send As permission to mailboxes and groups
 
-You use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets to manage the Send As permission for mailboxes and groups. These cmdlets use the same basic syntax: 
+You use the **Add-RecipientPermission** and **Remove-RecipientPermission** cmdlets to manage the Send As permission for mailboxes and groups. These cmdlets use the same basic syntax:
 
 ```
 <Add-RecipientPermission | Remove-RecipientPermission> -Identity <MailboxOrGroupIdentity> -Trustee <DelegateIdentity> -AccessRights SendAs
@@ -199,7 +199,7 @@ To verify that you've successfully assigned or removed the Send As permission fo
 
 ## Use Exchange Online PowerShell to assign the Send on Behalf permission to mailboxes and groups
 
-You use the _GrantSendOnBehalfTo_ parameter on the various mailbox and group **Set-** cmdlets to manage the Send on Behalf permission for mailboxes and groups: 
+You use the _GrantSendOnBehalfTo_ parameter on the various mailbox and group **Set-** cmdlets to manage the Send on Behalf permission for mailboxes and groups:
 
 - **Set-Mailbox**
 

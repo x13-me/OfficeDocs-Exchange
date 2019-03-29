@@ -148,7 +148,7 @@ To verify that you've successfully modified a Client Access Rule, use any of the
   Get-ClientAccessRule -Identity "<RuleName>" | Format-List
   ```
 
-- See which Client Access Rules would affect a specific client connection to Exchange by using the **Test-ClientAccessRule** cmdlet. For more information, see the [Use the Exchange Management Shell to test Client Access Rules](procedures-for-client-access-rules.md#TestCARs) section later in this topic.
+- See which Client Access Rules would affect a specific client connection to Exchange by using the **Test-ClientAccessRule** cmdlet. For more information, see the [Use the Exchange Management Shell to test Client Access Rules](#use-the-exchange-management-shell-to-test-client-access-rules) section later in this topic.
 
 ## Use the Exchange Management Shell to set the priority of Client Access Rules
 

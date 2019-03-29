@@ -80,9 +80,6 @@ Executing the below Exchange Online cmdlet will enable GCC Moderate customers us
   Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $false
  ```
 
-> [!NOTE]
-> Setting OutlookMobileGCCRestrictionsEnabled to false currently does not remove the service and feature restrictions placed on Outlook for iOS and Android. This behavior is planned to change in April 2019.
-
 At any time, access can be revoked by resetting the parameter back to the default value:
 
  ```

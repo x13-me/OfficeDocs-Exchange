@@ -90,7 +90,7 @@ If you no longer need a management role assignment policy, you can remove it.
 
 - All users assigned the assignment policy must be changed to another assignment policy. For more information about how to change an assignment policy on a mailbox, see [Change the assignment policy on a mailbox](policy-assignments-for-mailboxes.md).
 
-- All the management role assignments between the assignment policy and the assigned management roles must be removed. For more information about how to remove a role assignment from an assignment policy, see the [Use the Exchange Management Shell to remove a role from an assignment policy](#RemoveRole.md) section later in this topic.
+- All the management role assignments between the assignment policy and the assigned management roles must be removed. For more information about how to remove a role assignment from an assignment policy, see the [Remove a role from an assignment policy](#remove-a-role-from-an-assignment-policy) section later in this topic.
 
 - If you want to remove a default assignment policy, it must be the last assignment policy in the Exchange Server organization.
 
@@ -293,7 +293,6 @@ If you don't want end users to have permissions to manage certain features of th
 4. Click **Save** to save the changes to the assignment policy.
 
 #### Use the Exchange Management Shell to remove a role from an assignment policy
-<a name="RemoveRole"> </a>
 
 You can remove roles from assignment policies by retrieving the associated management role assignment using the **Get-ManagementRoleAssignment** cmdlet and then piping the role assignment returned to the **Remove-ManagementRoleAssignment** cmdlet.
 
@@ -314,6 +313,3 @@ Get-ManagementRoleAssignment -RoleAssignee "Seattle Users" -Role MyVoicemail | R
 ```
 
 For detailed syntax and parameter information, see [Remove-ManagementRoleAssignment](http://technet.microsoft.com/library/e2fd10e1-c0ae-48a6-992d-5b34bc73880b.aspx).
-
-
-

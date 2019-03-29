@@ -58,7 +58,7 @@ You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in Exchange Online Pow
 
 |**Parameter**|**Setting available in the EAC?**|**Description**|
 |:-----|:-----|:-----|
-|_AllowMessageWaitingIndicator_|Yes|The _AllowMessageWaitingIndicator_ parameter specifies whether users who are linked with a UM mailbox policy can receive MWI notifications when they receive a new voice message. The default value is `$true`.  <br/> When this setting is enabled, MWI notifications are sent to users who are linked with a single UM mailbox policy for calls taken by a UM IP gateway. This setting allows the UM IP gateway to receive and send SIP NOTIFY messages to UM-enabled users' phones or SIP endpoints.|
+|_AllowMessageWaitingIndicator_|Yes|The _AllowMessageWaitingIndicator_ parameter specifies whether users who are linked with a UM mailbox policy can receive MWI notifications when they receive a new voice message. The default value is `$true`. <br/> When this setting is enabled, MWI notifications are sent to users who are linked with a single UM mailbox policy for calls taken by a UM IP gateway. This setting allows the UM IP gateway to receive and send SIP NOTIFY messages to UM-enabled users' phones or SIP endpoints.|
 
 For more information about how to manage MWI settings on a UM mailbox policy, see the following topics:
 
@@ -80,7 +80,7 @@ You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in Exchange Online Pow
 
 |**Parameter**|**Setting available in the EAC?**|**Description**|
 |:-----|:-----|:-----|
-|_MessageWaitingIndicatorAllowed_|Yes|The _MessageWaitingIndicatorAllowed_ parameter specifies whether to enable the UM IP gateway to allow SIP NOTIFY messages to be sent to users associated with a UM dial plan. The default value is `$true`.  <br/> When this setting is enabled, voice mail notifications can be sent to users for calls that are received by the UM IP gateway. This setting allows the UM IP gateway to send message-waiting notifications to UM-enabled users.|
+|_MessageWaitingIndicatorAllowed_|Yes|The _MessageWaitingIndicatorAllowed_ parameter specifies whether to enable the UM IP gateway to allow SIP NOTIFY messages to be sent to users associated with a UM dial plan. The default value is `$true`. <br/> When this setting is enabled, voice mail notifications can be sent to users for calls that are received by the UM IP gateway. This setting allows the UM IP gateway to send message-waiting notifications to UM-enabled users.|
 
 For more information about how to manage MWI settings, see the following topics:
 
