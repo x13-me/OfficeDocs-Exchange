@@ -329,7 +329,7 @@ For detailed syntax and parameter information, see [Remove-AuthenticationPolicy]
 To confirm that the authentication policy was applied to users:
 
 1. Run the following command to find the distinguished name (DN) value of the authentication policy:
-   
+
    ```
    Get-AuthenticationPolicy | Format-List Name,DistinguishedName
    ```
@@ -372,13 +372,13 @@ Content-Length: 0
 
 This method uses one specific attribute as a filter for on-premises Active Directory group members that will be synchronized with Exchange Online. This method allows you to disable legacy protocols for specific groups without affecting the entire organization.
 
-Throughout this example, we'll use the **Department** attribute, because it's a common attributes that identifies users based on their department and role. To see all Active Directory user extended properties, go to [Active Directory: Get-ADUser Default and Extended Properties](https://social.technet.microsoft.com/wiki/contents/articles/12037.active-directory-get-aduser-default-and-extended-properties.aspx). 
+Throughout this example, we'll use the **Department** attribute, because it's a common attributes that identifies users based on their department and role. To see all Active Directory user extended properties, go to [Active Directory: Get-ADUser Default and Extended Properties](https://social.technet.microsoft.com/wiki/contents/articles/12037.active-directory-get-aduser-default-and-extended-properties.aspx).
 
 ### Step 1: Find the Active Directory users and setSet the Active Directory user attributes
 
 #### Get the members of an Active Directory group
 
-These steps require the Active Directory module for Windows PowerShell. To install this module on your PC, you need to download and install the [Remote Server Administration Tools (RSAT)](https://support.microsoft.com/help/2693643/remote-server-administration-tools-rsat-for-windows-operating-systems). 
+These steps require the Active Directory module for Windows PowerShell. To install this module on your PC, you need to download and install the [Remote Server Administration Tools (RSAT)](https://support.microsoft.com/help/2693643/remote-server-administration-tools-rsat-for-windows-operating-systems).
 
 Run the following command in Active Directory PowerShell to return all groups in Active Directory:
 

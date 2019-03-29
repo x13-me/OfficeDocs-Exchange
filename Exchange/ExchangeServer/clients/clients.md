@@ -18,8 +18,6 @@ manager: serdars
 
 There are many different clients that you can use to access information in an Exchange mailbox. These clients include desktop programs such as Outlook, Outlook on the web (formerly known as Outlook Web App), and mobile clients such as mobile phones, tablets, and other mobile devices. Each of these clients offers a variety of features.
 
-Looking for a list of all clients and mobile topics? See [Clients and mobile documentation](clients.md#doc).
-
 The following table contains links to topics that will help you learn about and manage some of the clients and client access methods that you can use to access your Exchange mailbox.
 
 |**Topic**|**Description**|
@@ -32,4 +30,3 @@ The following table contains links to topics that will help you learn about and 
 |[Client Protocol Management](https://technet.microsoft.com/library/89ba6d24-d1d3-46d5-a0ae-61f0d4c6df21.aspx)|Learn about management of Exchange ActiveSync, Outlook on the web, POP3, IMAP4, the Autodiscover service, Exchange Web Services, and the Availability service.|
 |[Outlook on the web in Exchange Server](outlook-on-the-web/outlook-on-the-web.md)|Learn about Outlook on the web, which provides users access to their Exchange mailbox through a web browser.|
 |[MailTips](https://technet.microsoft.com/library/9c989167-cc0c-40a6-82ba-383f573bd2d5.aspx)|Learn about MailTips, the informative messages displayed to users while they're composing a message.|
-

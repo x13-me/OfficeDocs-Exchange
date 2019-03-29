@@ -108,7 +108,7 @@ The Exchange services that certificates can be assigned to are described in the 
 
 Although the configuration of your organization's digital certificates will vary based on its specific needs, information about best practices has been included to help you choose the digital certificate configuration that's right for you.
 
-- **Use as few certificates as possible**: Very likely, this means using SAN certificates or wildcard certificates. In terms of interoperability with Exchange, both are functionally equivalent. The decision on whether to use a SAN certificate vs a wildcard certificate is more about the key capabilities or limitations (real or perceived) for each type of certificate as described in the [Digital certificates overview](certificates.md#Overview).
+- **Use as few certificates as possible**: Very likely, this means using SAN certificates or wildcard certificates. In terms of interoperability with Exchange, both are functionally equivalent. The decision on whether to use a SAN certificate vs a wildcard certificate is more about the key capabilities or limitations (real or perceived) for each type of certificate as described in the [Digital certificates overview](#digital-certificates-overview).
 
   For example, if all of your common names will be in the same level of contoso.com, it doesn't matter if you use a SAN certificate or a wildcard certificate. But, if need to use the certificate for autodiscover.contoso.com, autodiscover.fabrikam.com, and autodiscover.northamerica.contoso.com, you need to use a SAN certificate.
 

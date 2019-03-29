@@ -31,10 +31,9 @@ Place a mailbox on Litigation Hold to preserve all mailbox content, including de
 
 - Litigation Hold preserves deleted items and also preserves original versions of modified items until the hold is removed. You can optionally specify a hold duration, which preserves a mailbox item for the specified duration period. If you specify a hold duration period, it's calculated from the date a message is received or a mailbox item is created.
 
-- See the [More information](#moreinfo.md) section for a description of the Litigation Hold workflow process.
+- See the [More information](#more-information) section for a description of the Litigation Hold workflow process.
 
 ## Use the EAC to place a mailbox on Litigation Hold
-<a name="introduction"> </a>
 
 1. Go to **Recipients** \> **Mailboxes**.
 
@@ -57,7 +56,6 @@ Place a mailbox on Litigation Hold to preserve all mailbox content, including de
 6. Click **Save** on the **Litigation Hold** page, and then click **Save** on the mailbox properties page.
 
 ## Use the Exchange Management Shell to place a mailbox on Litigation Hold indefinitely
-<a name="introduction"> </a>
 
 This example places the mailbox bsuneja@contoso.com on Litigation Hold. Items in the mailbox are held indefinitely or until the hold is removed.
 
@@ -69,7 +67,6 @@ Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
 > When you place a mailbox on Litigation Hold indefinitely (by not specifying a duration period), the value for the _LitigationHoldDuration_ property mailbox is set to `Unlimited`.
 
 ## Use the Exchange Management Shell to place a mailbox on Litigation Hold and preserve items for a specified duration
-<a name="introduction"> </a>
 
 This example places the mailbox bsuneja@contoso.com on Litigation Hold and preserves items for 2555 days (approximately 7 years).
 
@@ -78,7 +75,6 @@ Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true -LitigationHoldDura
 ```
 
 ## Use the Exchange Management Shell to place all mailboxes on Litigation Hold
-<a name="introduction"> </a>
 
 Your organization may require that all mailbox data be preserved.
 
@@ -92,10 +88,9 @@ The example uses the [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9
 
 To place all user mailboxes on an indefinite hold, run the previous command but don't include the _LitigationHoldDuration_ parameter.
 
-See the [More information](#moreinfo.md) section for examples of using other recipient properties in a filter to include or exclude one or more mailboxes.
+See the [More information](#more-information) section for examples of using other recipient properties in a filter to include or exclude one or more mailboxes.
 
 ## Use the Exchange Management Shell to remove a mailbox from Litigation Hold
-<a name="introduction"> </a>
 
 This example removes the mailbox bsuneja@contoso.com from Litigation Hold.
 
@@ -104,7 +99,6 @@ Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
 ```
 
 ## How do you know this worked?
-<a name="introduction"> </a>
 
 To verify that you have successfully placed a mailbox on Litigation Hold, do the one of the following:
 
@@ -135,7 +129,6 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
     If a mailbox is placed on Litigation Hold indefinitely, the value for the _LitigationHoldDuration_ property mailbox is set to `Unlimited`.
 
 ## More information
-<a name="moreinfo"> </a>
 
 - **How does Litigation Hold work?** In the normal deleted item workflow, a mailbox item is moved to the Deletions subfolder in the Recoverable Items folder when a user permanently deletes it (Shift + Delete) or deletes it from the Deleted Items folder. A deletion policy (which is a retention tag configured with a Delete retention action) also moves items to the Deletions subfolder when the retention period expires. When a user purges an item in the Recoverable Items folder or when the deleted item retention period expires for an item, it's moved to the Purges subfolder in the Recoverable Items folder and marked for permanent deletion. It will be purged from Exchange the next time the mailbox is processed by the Managed Folder Assistant (MFA).
 
@@ -184,6 +177,3 @@ To verify that you have successfully placed a mailbox on Litigation Hold, do the
   ```
 
     You can use other user mailbox properties in a filter to include or exclude mailboxes. For details, see [Filterable Properties for the -Filter Parameter](http://technet.microsoft.com/library/b02b0005-2fb6-4bc2-8815-305259fa5432.aspx).
-
-
-
