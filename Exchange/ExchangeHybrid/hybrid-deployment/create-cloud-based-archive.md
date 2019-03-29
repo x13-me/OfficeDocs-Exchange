@@ -32,9 +32,9 @@ In an Exchange hybrid deployment, you can configure an on-premises primary mailb
 
 Use one of the following procedures to enable a cloud-based archive mailbox for an on-premises primary mailbox. Perform these steps in the Exchange admin center in your on-premises Exchange organization and in the Office 365 admin center.
 
-[Create a cloud-based archive mailbox for a new user](create-cloud-based-archive.md#newuser)
+- [Create a cloud-based archive mailbox for a new user](#create-a-cloud-based-archive-mailbox-for-a-new-user)
 
-[Create a cloud-based archive mailbox for an existing user](create-cloud-based-archive.md#existinguser)
+- [Create a cloud-based archive mailbox for an existing user](#create-a-cloud-based-archive-mailbox-for-an-existing-user)
 
 ### Create a cloud-based archive mailbox for a new user
 

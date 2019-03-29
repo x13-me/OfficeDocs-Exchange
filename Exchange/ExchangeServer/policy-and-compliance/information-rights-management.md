@@ -66,7 +66,7 @@ However, IRM in Exchange can't prevent the disclosure of information by using th
 IRM uses Active Directory Rights Management Services (AD RMS), an information protection technology in Windows Server that uses extensible rights markup language (XrML)-based certificates and licenses to certify computers and users, and to protect content. When a document or message is protected using AD RMS, an XrML license containing the rights that authorized users have to the content is attached. To access IRM-protected content, AD RMS-enabled applications must procure a use license for the authorized user from the AD RMS server. Office applications, such as Word, Excel, PowerPoint and Outlook are RMS-enabled and can be used to create and consume protected content.
 
 > [!NOTE]
-> The Exchange Prelicense Agent attaches a use license to messages that are protected by the AD RMS server in your organization. For more information, see the [Prelicensing](#prelicensing.md) section later in this topic.
+> The Exchange Prelicense Agent attaches a use license to messages that are protected by the AD RMS server in your organization. For more information, see the [Prelicensing](#prelicensing) section later in this topic.
 
 To learn more about Active Directory Rights Management Services, see [Active Directory Rights Management Services](https://go.microsoft.com/fwlink/p/?linkId=129823).
 
@@ -81,7 +81,6 @@ For more information about rights policy templates, see [AD RMS Policy Template 
 For more information about creating AD RMS rights policy templates, see [AD RMS Rights Policy Templates Deployment Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?linkId=136593).
 
 ## Apply IRM protection to messages
-<a name="applyingIRM"> </a>
 
 By default, an Exchange organization is enabled for IRM, but to apply IRM protection to messages, you need to use one or more of these methods:
 
@@ -115,7 +114,7 @@ To enforce messaging policies and for regulatory compliance, Exchange needs acce
 
 - **Transport decryption**: Allows access to message content by the transport agents that are installed on Exchange servers. For more information, see [Understanding Transport Decryption](http://technet.microsoft.com/library/4267c46d-f488-404d-a5cb-51f9127461c0.aspx).
 
-- **Journal report decryption**: Allows standard or premium journaling to save a clear-text copy of IRM-protected messages in journal reports. For more information, see [Enable journal report decryption](journaling/journaling-procedures.md#IRMDecryption).
+- **Journal report decryption**: Allows standard or premium journaling to save a clear-text copy of IRM-protected messages in journal reports. For more information, see [Enable journal report decryption](journaling/journaling-procedures.md#enable-journal-report-decryption).
 
 - **IRM decryption for Exchange Search**: Allows Exchange Search to index content in IRM-protected messages. When a discovery manager performs an In-Place eDiscovery search, IRM-protected messages that have been indexed are returned in the search results. For more information, see [Configure IRM for Exchange Search and In-Place eDiscovery](http://technet.microsoft.com/library/d96790e9-93ad-4a56-b90f-2dbfa2f2073c.aspx).
 
