@@ -51,15 +51,34 @@ We recommend that all mixed Exchange organizations that implement a hybrid deplo
 
 ## How do you configure OAuth authentication between your on-premises Exchange and Exchange Online organizations?
 
-## Step 1: Create the authorization server objects for your Exchange Online organization
+## Step 0: Get Initial Domain on Exchange Online 
+Connect to the [Exchange Online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 
-For this procedure, you have to specify a verified domain for your Exchange Online organization and the Exchange Online Tenant Name. The first domain should be the same domain used as the primary SMTP domain used for the cloud-based email accounts. This domain is referred as *\<your verified domain\>* in the following procedure.  The second domain which is your actual tenant name like contoso.microsoft.com is referred to as *\<your tenant domain\>*
+```Powershell
+$UserCredential = Get-Credential
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+Import-PSSession $Session -DisableNameChecking
+```
 
-Run the following command in the Exchange Management Shell (the Exchange PowerShell) in your on-premises Exchange organization.
+Then Get the initial domain by running:
+```Powershell
+Get-AcceptedDomain | where{ $_.InitialDomain -eq $true} | select -ExpandProperty DomainName
+```
+
+This information will be used on the step1
+
+## Step 1: Create an authorization server object for your Exchange Online organization
+
+
+For this procedure, you must use the initial domain for your tenant from the previous step, and should be the same domain used as the primary SMTP domain used for the cloud-based email accounts. This domain is referred as *\<initial domain\>* in the following procedure.
+Run the following command in your on-premises Exchange organization (Exchange Management Shell).
 
 ```powershell
-    New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl "https://accounts.accesscontrol.windows.net/<your verified domain>/metadata/json/1"
-    New-AuthServer -Name "evoSTS" -Type AzureAD -AuthMetadataUrl "https://login.windows.net/<your tenant domain>/federationmetadata/2007-06/federationmetadata.xml"
+    New-AuthServer -Name "evoSTS" -AuthMetadataUrl https://login.windows.net/<initial domain>/FederationMetadata/2007-06/FederationMetadata.xml
+```
+For example, for a initial ddomain: **contoso.onmicrosoft.com**, would be:
+```powershell
+    New-AuthServer -Name "evoSTS" -AuthMetadataUrl https://login.windows.net/contoso.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml
 ```
 
 ## Step 2: Enable the partner application for your Exchange Online organization
@@ -98,33 +117,47 @@ In this step, you have to run a PowerShell script to export the on-premises auth
     .\ExportAuthCert.ps1
     ```
 
-## Step 4: Upload the on-premises authorization certificate to Azure Active Directory ACS
+## Step 4: Upload the on-premises authorization certificate to Azure Active Directory Access Control Service (ACS)
 
 Next, you have to use Windows PowerShell to upload the on-premises authorization certificate that you exported in the previous step to Azure Active Directory Access Control Services (ACS). To do this, the Azure Active Directory Module for Windows PowerShell cmdlets has to be installed. If it’s not installed, go to <https://aka.ms/aadposh> to install the Azure Active Directory Module for Windows PowerShell. Complete the following steps after the Azure Active Directory Module for Windows PowerShell is installed.
 
 1.  Click the **Azure Active Directory Module for Windows PowerShell** shortcut to open a Windows PowerShell workspace that has the Azure AD cmdlets installed. All commands in this step will be run using the Windows PowerShell for Azure Active Directory console.
 
-2.  Save the following text to a PowerShell script file named, for example, **UploadAuthCert.ps1**.
+2.  Modify Line1 to your On-premises public Url ($EmailUrl), and save the following text to a PowerShell script file named, for example, **UploadAuthCert.ps1**.
     
     ```powershell
-        Connect-MsolService;
-        Import-Module msonlineextended;
-        
+        #Constant variables
+        $ServiceName = "00000002-0000-0ff1-ce00-000000000000"
         $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
+$url
+
+        #connect to MsolService and import extended module
+        Connect-MsolService;
+        Import-Module MSOnlineExt #or install the module install-module MSOnlineExt
         
+        #Create new FileSystemObject to get Absolute Path.
         $objFSO = New-Object -ComObject Scripting.FileSystemObject;
         $CertFile = $objFSO.GetAbsolutePathName($CertFile);
         
+        #Create the certificate object to import and read it to set it as $credvalue
         $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
         $cer.Import($CertFile);
         $binCert = $cer.GetRawCertData();
         $credValue = [System.Convert]::ToBase64String($binCert);
         
-        $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
-        
+        #Get the Msol Service Principal that has the $serviceName        
         $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
+        #Set up new MsolServicePrincipalCredential
         New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
+
     ```
+
+#Make sure that in your variable $p in the property "ServicePrincipalNames" is added your "mail.contoso.com" else you'd have to add it:
+````Powershell
+$guid= [System.Guid]::Parse("00000002-0000-0ff1-ce00-000000000000")
+$p = get-MSOLServicePrincipal -AppPrincipalId $guid
+$p.ServicePrincipalnames.Add("https://mail.contoso.com")
+```
 
 3.  Run the PowerShell script that you created in the previous step. For example:
     
@@ -154,7 +187,6 @@ Get-WebServicesVirtualDirectory | FL ExternalUrl
     
     ```powershell
         $externalAuthority="*.contoso.com"
-         
         $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
          
         $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName;
@@ -175,11 +207,22 @@ Get-WebServicesVirtualDirectory | FL ExternalUrl
 
 You must define a target address for your mailboxes that are hosted in Exchange Online. This target address is created automatically when your Office 365 tenant is created. For example, if your organization’s domain hosted in the Office 365 tenant is "contoso.com", your target service address would be "contoso.mail.onmicrosoft.com".
 
+
+
+
 Using Exchange PowerShell, run the following cmdlet in your on-premises organization:
 
 ```powershell
     New-IntraOrganizationConnector -name ExchangeHybridOnPremisesToOnline -DiscoveryEndpoint https://outlook.office365.com/autodiscover/autodiscover.svc -TargetAddressDomains <your service target address>
 ```
+
+>[!TIP]
+> Also you can find your domain service by runnint this :
+> ```Powershell 
+>    $ServiceDomain = Get-AcceptedDomain | where {$_.DomainName -like "*.mail.onmicrosoft.com"} | select -ExpandProperty Name 
+>    New-IntraOrganizationConnector -name ExchangeHybridOnPremisesToOnline -DiscoveryEndpoint https://outlook.office365.com/autodiscover/autodiscover.svc -TargetAddressDomains $ServiceDomain
+>```
+
 
 ## Step 7: Create an IntraOrganizationConnector from your Office 365 tenant to your on-premises Exchange organization
 
@@ -272,7 +315,7 @@ To verify that your Exchange Online organization can successfully connect to you
 ```
 
 So, as an example, Test-OAuthConnectivity -Service EWS -TargetUri https://lync.contoso.com/metadata/json/1 -Mailbox ExchangeOnlineBox1 -Verbose | fl
-
+  
 
 > [!IMPORTANT]
 > You can ignore the “The SMTP address has no mailbox associated with it.” error. It’s only important that the <EM>ResultTask</EM> parameter returns a value of <STRONG>Success</STRONG>. For example, the last section of the test output should read:<BR><CODE>ResultType: Success</CODE><BR><CODE>Identity: Microsoft.Exchange.Security.OAuth.ValidationResultNodeId</CODE><BR><CODE>IsValid: True</CODE><BR><CODE>ObjectState: New</CODE>
