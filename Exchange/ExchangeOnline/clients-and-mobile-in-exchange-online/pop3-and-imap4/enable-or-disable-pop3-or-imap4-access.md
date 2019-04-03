@@ -59,19 +59,19 @@ This example enables POP3 for the user Christa Knapp.
 Set-CASMailbox -Identity "Christa Knapp" -POPEnabled $true
 ```
 
-This example enables IMAP4 for the user John Smith.
+This example enables IMAP4 for the user Christa Knapp.
 
 ```
 Set-CASMailbox -Identity "Christa Knapp" -IMAPEnabled $true
 ```
 
-This example disables POP3 for the user John Smith.
+This example disables POP3 for the user Christa Knapp.
 
 ```
 Set-CASMailbox -Identity "Christa Knapp" -POPEnabled $false
 ```
 
-This example disables IMAP4 for the user John Smith.
+This example disables IMAP4 for the user Christa Knapp.
 
 ```
 Set-CASMailbox -Identity "Christa Knapp" -IMAPEnabled $false
