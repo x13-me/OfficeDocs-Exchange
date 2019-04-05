@@ -122,6 +122,9 @@ We strongly recommend that you use the latest version of the .NET Framework that
 
 - Outlook for Mac for Office 365
 
+> [!IMPORTANT]
+> You need KB3140245 to apply registry keys to enable TLS 1.1 & 1.2 support for Windows 7, otherwise Outlook 2013 and 2016 will not work on Windows 7.
+
 ## Lync/Skype For Business Server integration
 
 If integrating Lync presence and instant messaging with Exchange Server, Lync Server 2013 Cumulative Update 10 or later is required. If integrating Skype for Business presence and instant messaging with Exchange Server, Skype for Business Server Cumulative Update 7 or later is required.
