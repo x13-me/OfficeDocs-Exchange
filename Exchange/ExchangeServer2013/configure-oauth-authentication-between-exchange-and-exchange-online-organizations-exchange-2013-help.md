@@ -94,16 +94,16 @@ Run the following command in the Exchange PowerShell in your on-premises Exchang
 In this step, you have to run a PowerShell script to export the on-premises authorization certificate, which is then imported to your Exchange Online organization in the next step.
 
 1.  Save the following text to a PowerShell script file named, for example, **ExportAuthCert.ps1**.
-    
+
     ```powershell
         $thumbprint = (Get-AuthConfig).CurrentCertificateThumbprint
-         
+
         if((test-path $env:SYSTEMDRIVE\OAuthConfig) -eq $false)
         {
             md $env:SYSTEMDRIVE\OAuthConfig
         }
         cd $env:SYSTEMDRIVE\OAuthConfig
-         
+
         $oAuthCert = (dir Cert:\LocalMachine\My) | where {$_.Thumbprint -match $thumbprint}
         $certType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
         $certBytes = $oAuthCert.Export($certType)
@@ -112,7 +112,7 @@ In this step, you have to run a PowerShell script to export the on-premises auth
     ```
 
 2.  In Exchange PowerShell in your on-premises Exchange organization, run the PowerShell script that you created in the previous step. For example:
-    
+
     ```powershell
     .\ExportAuthCert.ps1
     ```
@@ -123,13 +123,13 @@ Next, you have to use Windows PowerShell to upload the on-premises authorization
 
 1.  Click the **Azure Active Directory Module for Windows PowerShell** shortcut to open a Windows PowerShell workspace that has the Azure AD cmdlets installed. All commands in this step will be run using the Windows PowerShell for Azure Active Directory console.
 
+
 2.  Modify Line1 to your On-premises public Url ($EmailUrl), and save the following text to a PowerShell script file named, for example, **UploadAuthCert.ps1**.
     
     ```powershell
         #Constant variables
         $ServiceName = "00000002-0000-0ff1-ce00-000000000000"
         $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
-$url
 
         #connect to MsolService and import extended module
         Connect-MsolService;
@@ -146,6 +146,9 @@ $url
         $credValue = [System.Convert]::ToBase64String($binCert);
         
         #Get the Msol Service Principal that has the $serviceName        
+
+
+        $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
         $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
         #Set up new MsolServicePrincipalCredential
         New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
@@ -160,7 +163,7 @@ $p.ServicePrincipalnames.Add("https://mail.contoso.com")
 ```
 
 3.  Run the PowerShell script that you created in the previous step. For example:
-    
+
     ```powershell
     .\UploadAuthCert.ps1
     ```
@@ -184,21 +187,21 @@ Get-WebServicesVirtualDirectory | FL ExternalUrl
 
 
 1.  Save the following text to a PowerShell script file named, for example, **RegisterEndpoints.ps1**. This example uses a wildcard to register all endpoints for contoso.com. Replace **contoso.com** with a hostname authority for your on-premises Exchange organization.
-    
+
     ```powershell
         $externalAuthority="*.contoso.com"
         $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
-         
+
         $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName;
-         
+
         $spn = [string]::Format("{0}/{1}", $ServiceName, $externalAuthority);
         $p.ServicePrincipalNames.Add($spn);
-         
+
         Set-MsolServicePrincipal -ObjectID $p.ObjectId -ServicePrincipalNames $p.ServicePrincipalNames;
     ```
 
 2.  In Windows PowerShell for Azure Active Directory, run the Windows PowerShell script that you created in the previous step. For example:
-    
+
     ```powershell
     .\RegisterEndpoints.ps1
     ```
@@ -244,11 +247,11 @@ Using Windows PowerShell, run the following cmdlet:
 
 ```powershell
     $UserCredential = Get-Credential
-    
+
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    
+
     Import-PSSession $Session
-    
+
     New-IntraOrganizationConnector -name ExchangeHybridOnlineToOnPremises -DiscoveryEndpoint <your on-premises Autodiscover endpoint> -TargetAddressDomains <your on-premises SMTP domain>
 ```
 
@@ -267,7 +270,7 @@ Before you complete the following step, make sure:
   - The servers have both the Mailbox and Client Access server roles
 
   - Any existing Exchange 2010/2007 Mailbox and Client Access servers have the latest Cumulative Update (CU) or Service Pack (SP) applied.
-    
+
 
     > [!NOTE]
     > Existing Exchange 2010/2007 Mailbox servers can continue to use Exchange 2010/2007 Client Access servers for frontend servers for non-hybrid feature connections. Only hybrid deployment feature requests from the Office 365 tenant need to connect to Exchange 2013 servers.
@@ -314,8 +317,8 @@ To verify that your Exchange Online organization can successfully connect to you
     Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of your Exchange On-Premises deployment>/metadata/json/1 -Mailbox <Exchange Online Mailbox> -Verbose | fl
 ```
 
-So, as an example, Test-OAuthConnectivity -Service EWS -TargetUri https://lync.contoso.com/metadata/json/1 -Mailbox ExchangeOnlineBox1 -Verbose | fl
-  
+So, as an example, Test-OAuthConnectivity -Service EWS -TargetUri https://mail.contoso.com/metadata/json/1 -Mailbox ExchangeOnlineBox1 -Verbose | fl
+
 
 > [!IMPORTANT]
 > You can ignore the “The SMTP address has no mailbox associated with it.” error. It’s only important that the <EM>ResultTask</EM> parameter returns a value of <STRONG>Success</STRONG>. For example, the last section of the test output should read:<BR><CODE>ResultType: Success</CODE><BR><CODE>Identity: Microsoft.Exchange.Security.OAuth.ValidationResultNodeId</CODE><BR><CODE>IsValid: True</CODE><BR><CODE>ObjectState: New</CODE>

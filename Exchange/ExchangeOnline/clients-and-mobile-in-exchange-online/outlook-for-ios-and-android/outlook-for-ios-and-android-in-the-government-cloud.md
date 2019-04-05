@@ -19,13 +19,16 @@ manager: serdars
 
 # Using Outlook for iOS and Android in the Government Community Cloud
 
- **Summary**: How organizations in the Office 365 U.S. Government Community Cloud (GCC) can enable Outlook for iOS and Android for their users.
+ **Summary**: How organizations in the Office 365 U.S. Government Community Cloud (GCC) can enable Outlook for iOS and Android for their Exchange Online users.
 
-Outlook for iOS and Android is fully architected in the Microsoft Cloud and meets the security and compliance requirements needs of all United States Government customers. 
+Outlook for iOS and Android is fully architected in the Microsoft Cloud and meets the security and compliance requirements needs of all United States Government customers when the mailboxes reside in Exchange Online. 
 
-For customers operating in the Government Community Cloud (GCC Moderate, GCC High or Department of Defense), Outlook for iOS and Android leverages the [native Microsoft sync technology](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android). This architecture is FedRAMP-compliant (defined by NIST Special Publication 800-145) and approved, and meets GCC High and DoD requirements DISA SRG Level 4 (GCC-High) and Level 5 (DoD), Defense Federal Acquisition Regulations Supplement (DFARS), and International Traffic in Arms Regulations (ITAR), which have been approved by a third-party assessment organization and are FISMA compliant based on the NIST 800-53 rev 4.
+For customers with Exchange Online mailboxes operating in the Government Community Cloud (GCC Moderate, GCC High or Department of Defense), Outlook for iOS and Android leverages the [native Microsoft sync technology](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android). This architecture is FedRAMP-compliant (defined by NIST Special Publication 800-145) and approved, and meets GCC High and DoD requirements DISA SRG Level 4 (GCC-High) and Level 5 (DoD), Defense Federal Acquisition Regulations Supplement (DFARS), and International Traffic in Arms Regulations (ITAR), which have been approved by a third-party assessment organization and are FISMA compliant based on the NIST 800-53 rev 4.
 
 For more information, please see the Office 365 FedRAMP System Security plan located in the FedRAMP Audit Reports section of the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/).
+
+> [!IMPORTANT]
+> Customers operating in the Government Community Cloud may have user mailboxes that also reside on-premises via an Exchange hybrid topology. Accessing on-premises mailboxes with Outlook for iOS and Android does not utilize an architecture that is FedRAMP-compliant. For more information on this architecture, see [Using Basic authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-basic-auth).
 
 This article covers how to:
 
