@@ -253,7 +253,7 @@ The following features are not supported for on-premises mailboxes using hybrid 
 
 - All Exchange Online FQDNs and IP subnet ranges as defined in [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
-- The AutoDetect FQDNs and IP subnet ranges defined in [Additional Office 365 IP Addresses and URLs not included in the web services](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls). This is required because the AutoDetect service establishes connections to the on-premises infrastructure..
+- The AutoDetect FQDNs and IP subnet ranges defined in [Additional Office 365 IP Addresses and URLs not included in the web services](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls). This is required because the AutoDetect service establishes connections to the on-premises infrastructure.
 
 - All Outlook iOS and Android and Office mobile app FQDNs as defined in [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
