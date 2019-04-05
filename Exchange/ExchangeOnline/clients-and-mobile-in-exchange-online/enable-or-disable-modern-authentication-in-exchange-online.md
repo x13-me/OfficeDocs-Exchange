@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+localization_priority: Priority
 ms.topic: article
 author: chrisda
 ms.author: chrisda

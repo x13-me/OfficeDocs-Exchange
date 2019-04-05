@@ -41,7 +41,7 @@ Exchange 2016 supports partner applications such as SharePoint Server 2016 and S
 
 ## Configure OAuth authentication with a partner application
 
-This procedure uses the `Configure-EntepriseApplication.ps1` script to configure OAuth authentication with partner applications. Access to resources depends on the permissions assigned to the partner application and/or the user it impersonates by using RBAC. After configuring OAuth authentication from Exchange, the partner application can use Exchange 2016 resources.
+This procedure uses the `Configure-EnterpriseApplication.ps1` script to configure OAuth authentication with partner applications. Access to resources depends on the permissions assigned to the partner application and/or the user it impersonates by using RBAC. After configuring OAuth authentication from Exchange, the partner application can use Exchange 2016 resources.
 
 1. This example configures OAuth authentication for SharePoint 2016.
 
