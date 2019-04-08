@@ -39,7 +39,7 @@ For additional management tasks related to federation, see [Federation procedure
     
       - Change the free/busy access level from *Calendar free/busy information with time, subject, and location* to *Calendar free/busy information with time only*.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 ## What do you want to do?
 

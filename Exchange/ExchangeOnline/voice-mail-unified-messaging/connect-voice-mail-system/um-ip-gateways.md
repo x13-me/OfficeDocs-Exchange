@@ -30,7 +30,7 @@ Traditionally, gateway is a term that describes a physical device that connects 
 
 IP PBXs are also used when connecting a circuit-switched telephony network to a data or packet-switched network. They are also used to translate circuit-switched protocols to protocols based on VoIP or IP, such as SIP, RTP, and Secure RTPC (SRTP).
 
-Session Border Controllers (SBCs) are somewhat different than VoIP gateways and IP PBXs. Instead of connecting a circuit-switched network to a packet-switched network, they're used to connect two data networks over a public network like the Internet or over a private WAN connection. In Unified Messaging, SBCs are used in a hybrid deployment of UM in which UM uses some components that are located on-premises and others, such as mailboxes, that are located in the cloud.
+Session Border Controllers (SBCs) are somewhat different than VoIP gateways and IP PBXs. Instead of connecting a circuit-switched network to a packet-switched network, they're used to connect two data networks over a public network like the internet or over a private WAN connection. In Unified Messaging, SBCs are used in a hybrid deployment of UM in which UM uses some components that are located on-premises and others, such as mailboxes, that are located in the cloud.
 
 ### VoIP device configurations
 

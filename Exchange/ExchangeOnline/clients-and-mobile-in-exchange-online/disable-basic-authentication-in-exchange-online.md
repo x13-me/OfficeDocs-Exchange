@@ -116,14 +116,13 @@ For email clients and apps that don't support modern authentication, you need to
 
 |**Client**|**Protocols and services**|
 |:-----|:-----|
-|Outlook 2013 and later|• Autodiscover <br/>• Exchange Web Services (EWS) <br/>• MAPI over HTTP <br/>• Outlook Anywhere (RPC over HTTP) <br/>• Offline Address Book (OAB)|
-|Outlook for Mac 2016|• Autodiscover <br/>• EWS|
-|Exchange ActiveSync clients (for example, iOS Mail 11.3.1)|• Autodiscover <br/>• ActiveSync (EAS)|
+|Older EWS clients|• Autodiscover <br/>• EWS|
+|Older ActiveSync clients|• Autodiscover <br/>• ActiveSync|
 |POP clients|• POP3 <br/>• Authenticated SMTP|
 |IMAP clients|• IMAP4 <br/>• Authenticated SMTP|
 
 > [!NOTE]
-> IBlocking Basic authentication will block app passwords in Exchange Online. For more information about app passwords, see [Create an app password for Office 365](https://support.office.com/article/3e7c860f-bda4-4441-a618-b53953ee1183.aspx).
+> Blocking Basic authentication will block app passwords in Exchange Online. For more information about app passwords, see [Create an app password for Office 365](https://support.office.com/article/3e7c860f-bda4-4441-a618-b53953ee1183.aspx).
 
 ### What do you need to know before you begin?
 
@@ -159,7 +158,7 @@ This example creates an authentication policy named Block Basic Auth.
 New-AuthenticationPolicy -Name "Block Basic Auth"
 ```
 
-For detailed syntax and parameter information, see [New-AuthenticationPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/set-authenticationpolicy).
+For detailed syntax and parameter information, see [New-AuthenticationPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/new-authenticationpolicy).
 
  **Notes**:
 
@@ -330,7 +329,7 @@ For detailed syntax and parameter information, see [Remove-AuthenticationPolicy]
 To confirm that the authentication policy was applied to users:
 
 1. Run the following command to find the distinguished name (DN) value of the authentication policy:
-   
+
    ```
    Get-AuthenticationPolicy | Format-List Name,DistinguishedName
    ```
@@ -373,13 +372,13 @@ Content-Length: 0
 
 This method uses one specific attribute as a filter for on-premises Active Directory group members that will be synchronized with Exchange Online. This method allows you to disable legacy protocols for specific groups without affecting the entire organization.
 
-Throughout this example, we'll use the **Department** attribute, because it's a common attributes that identifies users based on their department and role. To see all Active Directory user extended properties, go to [Active Directory: Get-ADUser Default and Extended Properties](https://social.technet.microsoft.com/wiki/contents/articles/12037.active-directory-get-aduser-default-and-extended-properties.aspx). 
+Throughout this example, we'll use the **Department** attribute, because it's a common attributes that identifies users based on their department and role. To see all Active Directory user extended properties, go to [Active Directory: Get-ADUser Default and Extended Properties](https://social.technet.microsoft.com/wiki/contents/articles/12037.active-directory-get-aduser-default-and-extended-properties.aspx).
 
 ### Step 1: Find the Active Directory users and setSet the Active Directory user attributes
 
 #### Get the members of an Active Directory group
 
-These steps require the Active Directory module for Windows PowerShell. To install this module on your PC, you need to download and install the [Remote Server Administration Tools (RSAT)](https://support.microsoft.com/help/2693643/remote-server-administration-tools-rsat-for-windows-operating-systems). 
+These steps require the Active Directory module for Windows PowerShell. To install this module on your PC, you need to download and install the [Remote Server Administration Tools (RSAT)](https://support.microsoft.com/help/2693643/remote-server-administration-tools-rsat-for-windows-operating-systems).
 
 Run the following command in Active Directory PowerShell to return all groups in Active Directory:
 

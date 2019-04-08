@@ -1,4 +1,4 @@
----
+﻿---
 localization_priority: Normal
 description: Learn about the support life cycle for Exchange
 ms.topic: article
@@ -26,7 +26,6 @@ In Exchange Server 2010 and earlier, each update rollup package (RU) is cumulati
 
 In Exchange Server 2013 or later, we changed the way we deliver hotfixes and service packs by using a scheduled delivery model. In this model, cumulative updates (CUs) are released quarterly (every three months). A CU is released as a full, self-contained refresh of that version of Exchange, similar to a product upgrade or a service pack release. For more information, see [Updates for Exchange Server](../new-features/updates.md).
 
-
 |**Servicing release model**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013**|**Exchange 2010**|
 |:-----|:-----|:-----|:-----|:-----|
 |Cumulative updates (CUs)|X|X|X||
@@ -35,7 +34,7 @@ In Exchange Server 2013 or later, we changed the way we deliver hotfixes and ser
 
 ## Support lifecycle
 
-For more information about the support lifecycle for a specific version of Exchange, or of the Microsoft�Windows server or client operating systems, see the [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?linkid=55839) page. For more information about the Microsoft Support Lifecycle, see the [Microsoft Support Lifecycle Policy FAQ](https://go.microsoft.com/fwlink/p/?linkid=158902).
+For more information about the support lifecycle for a specific version of Exchange, or of the Microsoft Windows server or client operating systems, see the [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?linkid=55839) page. For more information about the Microsoft Support Lifecycle, see the [Microsoft Support Lifecycle Policy FAQ](https://go.microsoft.com/fwlink/p/?linkid=158902).
 
 ## Exchange Server 2007 End-of life
 
@@ -120,7 +119,7 @@ The following table identifies the Web browsers supported for use together with 
 The following table identifies the Web browsers supported for use together with the light (basic) version of Outlook Web App or Outlook on the web. Supported browsers are identified by an X character.
 
 > [!NOTE]
-> Outlook Web App Basic (Outlook Web App Light) is supported for use in mobile browsers. However, if rendering or authentication issues occur in a mobile browser, determine whether the issue can be reproduced by using Outlook Web App Light in the full client of a supported browser. For example, test the use of Outlook Web App Light in Safari, Chrome, or Internet Explorer. If the issue can�t be reproduced in the full client, we recommend that you contact the mobile device vendor for help. In these cases, we collaborate with the vendor as appropriate.
+> Outlook Web App Basic (Outlook Web App Light) is supported for use in mobile browsers. However, if rendering or authentication issues occur in a mobile browser, determine whether the issue can be reproduced by using Outlook Web App Light in the full client of a supported browser. For example, test the use of Outlook Web App Light in Safari, Chrome, or Internet Explorer. If the issue can't be reproduced in the full client, we recommend that you contact the mobile device vendor for help. In these cases, we collaborate with the vendor as appropriate.
 
 |**Browser**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -154,9 +153,9 @@ The following table identifies the Web browsers supported for the use of S/MIME 
 
 The following tables identify the mail clients that are supported for use together with each version of Exchange. Supported clients are identified by an X character.
 
-
 |**Client**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|:-----|
+|Office 365 ProPlus|X|X|X||
 |Outlook 2019|X|X|X||
 |Outlook 2016|X<sup>1</sup>|X<sup>1</sup>|X|X|
 |Outlook 2013|X<sup>1</sup>|X<sup>1</sup>|X|X|
@@ -180,7 +179,6 @@ The following tables identify the mail clients that are supported for use togeth
 |Windows Phone 8||X|X|X|
 |Windows Phone 7.5|||X|X|
 |Windows Phone 7|||X|X|
-
 
 ## Tools
 
@@ -237,7 +235,7 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 ## Windows PowerShell
 
-Exchange 2010 requires Windows PowerShell 2.0 on all supported operating systems. Exchange 2013 and later versions require the version of PowerShell that is shipped together with the system, unless otherwise specified by a Setup-enforced prerequisite rule. Exchange does not support the use of the Windows Management Framework add-ons on any version of PowerShell or operating system. If there are other installed versions of PowerShell that support side-by-side operation, Exchange will use only the version that it requires.
+Exchange 2010 requires Windows PowerShell 2.0 on all supported versions of Windows. Exchange 2013 or later requires the version of Windows PowerShell that's included in Windows (unless otherwise specified by an Exchange Setup-enforced prerequisite rule). Exchange does not support the use of Windows Management Framework add-ons on any version of Windows PowerShell or Windows. If there are other installed versions of Windows PowerShell that support side-by-side operation, Exchange will use only the version that it requires.
 
 ## Microsoft Management Console
 
@@ -251,9 +249,7 @@ The following table identifies the version of Microsoft Management Console (MMC)
 
 The following table identifies the version of Windows Installer that is used together with each version of Exchange. Supported versions are identified by an X character.
 
-
 |**Windows Installer**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|
 |Windows Installer 4.5|X|X|X|
 |Windows Installer 5.0|X|X||
-

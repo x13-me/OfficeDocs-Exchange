@@ -41,7 +41,7 @@ You can create address rewrite entries that apply to a single recipient, to all 
 
   - Be careful when you configure address rewriting. Any changes that you make are immediately applied when you run the command. Consider running the command with the *WhatIf* parameter. For more information about the *WhatIf* parameter, see [WhatIf, Confirm, and ValidateOnly switches](whatif-confirm-and-validateonly-switches-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

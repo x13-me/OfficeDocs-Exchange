@@ -35,7 +35,7 @@ For additional management tasks related to Transport rules, see [Manage mail flo
 
   - You must perform the procedures below on servers that already have Exchange 2013 Mailbox server role installed. If you add additional Mailbox servers after you perform these procedures, you must perform them again on the newly provisioned servers.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

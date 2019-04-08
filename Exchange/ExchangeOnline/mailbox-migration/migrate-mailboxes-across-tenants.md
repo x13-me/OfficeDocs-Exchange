@@ -20,7 +20,7 @@ manager: serdars
 
 ---
 
-# How to migrate mailboxes from one Office 365 tenant to another
+# How to migrate mailboxes from one Office 365 tenant to another 
 
 This article explains how to migrate mailboxes and service settings from one Office 365 tenant to another Office 365 tenant in a business-merger scenario. If you have more than 500 users to migrate or a large amount of SharePoint data to migrate, it's a good idea to work with an [Office 365 partner](https://go.microsoft.com/fwlink/p/?LinkId=393485).
 
@@ -45,11 +45,12 @@ If using a third party migration tool to migrate your users, purchase the needed
 
  **Client considerations**
 
-For Outlook 2010 and Outlook 2013, you only need to delete the Outlook user profile.
+For Outlook 2010 or above, you only need to [remove the Outlook user profile](https://support.office.com/en-us/article/remove-a-profile-d5f0f365-c10d-4a97-aa74-3b38e40e7cdd) and [create it again](https://support.office.com/en-us/article/create-an-outlook-profile-f544c1ba-3352-4b3b-be0b-8d42a540459d).
 
-For Outlook 2007 and Outlook 2010, when you are restarting, auto-discover will configure the client and rebuild the .OST file.
+For Outlook 2007 and Outlook 2010, when you are restarting the client, auto-discover will configure the client and rebuild the .OST file.
 
-For the Lync client, you will need to add contacts once migration is complete.
+For the skype for business client, once migration is complete, since the process creates a new profile, you will need to [add contacts](https://support.office.com/en-us/article/video-add-a-contact-in-skype-for-business-3f102f2f-4bfc-4d67-a8e2-66aee1e7c0da).
+
 
  **Tenant preparation and licensing**
 
@@ -58,6 +59,7 @@ The source tenant is the Fabrikam Office 365 tenant from which you are migrating
 1. Increase licenses in Target Office 365 tenant to accommodate all mailboxes that will be migrated from the source tenant.
 
 2. Create Administrator accounts in source and target tenants for use in migrating from Office 365 to another Office 365. Some migration tools may require more than one admin account in the source tenant to optimize the data throughput.
+
 
  **Room, resource, distribution group, and user object creation in the target tenant**
 
@@ -203,13 +205,13 @@ Use the following sample Windows PowerShell scripts as a starting point for crea
 
 3. Use the Windows PowerShell command:
 
-  ```
+  ```Powershell
   Import-Csv password.csv|%{Set-MsolUserPassword -userPrincipalName $_.upn -NewPassword $_.newpassword -ForceChangePassword $false}
   ```
 
 ### Copy all Office 365 accounts with a specific proxy address into a CSV file
 
-```
+```Powershell
 ##########################################################################
 # Script: showproxies.ps1
 # Copies all accounts in Office 365 that contain/don't contain a specific
@@ -246,9 +248,10 @@ Invoke-Item addresses.csv
 ##### END OF SHOWPROXIES.PS1
 ```
 
+
 ### Bulk Create es in Office 365
 
-```
+```Powershell
 ################################################################################
 #  Script: create-rooms.ps1
 #  Description:*** RUN THIS SCRIPT FROM A WINDOWS POWERSHELL SESSION ***
@@ -292,7 +295,7 @@ New-mailbox -Name $_.RoomName -room -primarysmtpaddress $_.RoomSMTPAddress -reso
 
 ### Bulk remove secondary email address from mailboxes
 
-```
+```Powershell
 ##########################################################################
 #      Script:  remove-proxy.ps1
 #Description:*** RUN THIS SCRIPT FROM A WINDOWS POWERSHELL SESSION ***

@@ -39,7 +39,7 @@ You can convert the following mailboxes to a different type:
 
 - Room, equipment, and shared mailboxes have associated user accounts in Active Directory, but the accounts are disabled. When you convert one of these mailbox types to a regular (user) mailbox, you need to specify a password that satisfies the length and complexity requirements for your organization.
 
-    Overwriting an existing password requires the Reset Password role, which isn't assigned to any role groups by default. To assign the role to a role group that you belong to, see [Add a role to a role group](../../permissions/role-groups.md#AddRemoveRGRole). Note that changes in permission require you to log off and log on for the changes to take effect.
+    Overwriting an existing password requires the Reset Password role, which isn't assigned to any role groups by default. To assign the role to a role group that you belong to, see [Add a role to a role group](../../permissions/role-groups.md#add-a-role-to-a-role-group). Note that changes in permission require you to log off and log on for the changes to take effect.
 
 - When you convert a regular (user) mailbox to a room, equipment, or shared mailbox, the associated account is disabled.
 

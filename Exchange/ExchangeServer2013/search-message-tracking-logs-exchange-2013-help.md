@@ -43,7 +43,7 @@ You can use the **Get-MessageTrackingLog** cmdlet in the Exchange Management She
 
   - The Exchange 2013 **Get-MessageTrackingLog** cmdlet is able to search the message tracking logs on Exchange 2007 and Exchange 2010 servers in the same Active Directory site.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

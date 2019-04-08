@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: For each offline address book (OAB) distribution point in Exchange, you can configure two URLs—an internal URL that can be accessed only from your internal corporate network and an external URL that can be accessed from the Internet.
+description: For each offline address book (OAB) distribution point in Exchange, you can configure two URLs—an internal URL that can be accessed only from your internal corporate network and an external URL that can be accessed from the internet.
 ms.topic: article
 author: dstrome
 f1_keywords:
@@ -13,12 +13,13 @@ ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
 manager: laurawi
+ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
 # Configure offline address book distribution properties
 
-For each offline address book (OAB) distribution point in Exchange, you can configure two URLs—an internal URL that can be accessed only from your internal corporate network and an external URL that can be accessed from the Internet.
+For each offline address book (OAB) distribution point in Exchange, you can configure two URLs—an internal URL that can be accessed only from your internal corporate network and an external URL that can be accessed from the internet.
 
 For additional management tasks related to OABs, see [Offline address book procedures](offline-address-book-procedures.md).
 

@@ -45,7 +45,7 @@ For information about tasks to complete after installation, see [Exchange 2013 p
 
   - Make sure the account you use is a member of the local Administrators group on the computer you're installing the Edge Transport role.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!WARNING]

@@ -34,7 +34,7 @@ This topic shows you how to:
 ## What do you need to know before you begin?
 
 > [!IMPORTANT]
-> The procedures in this topic require the Mailbox Import Export role, which isn't assigned to any role groups by default. To assign the role to a role group that you belong to, see [Add a role to a role group](../../permissions/role-groups.md#AddRemoveRGRole). Note that changes in permission require you to log off and log on for the changes to take effect.
+> The procedures in this topic require the Mailbox Import Export role, which isn't assigned to any role groups by default. To assign the role to a role group that you belong to, see [Add a role to a role group](../../permissions/role-groups.md#add-a-role-to-a-role-group). Note that changes in permission require you to log off and log on for the changes to take effect.
 
 - Estimated time to complete each procedure: 5 minutes
 
@@ -93,7 +93,7 @@ This example creates a new mailbox import request with these settings:
 
 - **Mailbox import request name**: The default value `MailboxImport` is used, because we aren't using the _Name_ parameter. The unique identity of the mailbox import request is `<MailboxIdentity>\MailboxImportX` (_X_ is either not present, or has the value 0 to 9).
 
-- **Source .pst file**: \\SERVER01\PSTFiles\Archives\Vbarrios.pst
+- **Source .pst file**: \\\\SERVER01\PSTFiles\Archives\Vbarrios.pst
 
 - **Target mailbox**: Valeria Barrios
 
@@ -102,14 +102,14 @@ This example creates a new mailbox import request with these settings:
 - **Priority**: `Normal`, because we aren't using the _Priority_ parameter.
 
 ```
-New-MailboxImportRequest-FilePath \\SERVER01\PSTFiles\Archives\Vbarrios.pst -Mailbox "Valeria Barrios"
+New-MailboxImportRequest -FilePath \\SERVER01\PSTFiles\Archives\Vbarrios.pst -Mailbox "Valeria Barrios"
 ```
 
 This example creates a new mailbox import request with these settings:
 
 - **Mailbox import request name**: The custom name Kathleen Reiter Import is specified by the _Name_ parameter. Specifying a custom name allows more than 10 mailbox import requests for the mailbox. The unique identity value of the mailbox import request is `<MailboxIdentity>\<MailboxImportRequestName>` (for example, `kreiter\Kathleen Reiter Import`).
 
-- **Source .pst file**: \\SERVER01\PSTFiles\Archives\Recovered.pst
+- **Source .pst file**: \\\\SERVER01\PSTFiles\Archives\Recovered.pst
 
 - **Target mailbox**: The archive mailbox for Kathleen Reiter (Kathleen's primary mailbox alias is kreiter).
 

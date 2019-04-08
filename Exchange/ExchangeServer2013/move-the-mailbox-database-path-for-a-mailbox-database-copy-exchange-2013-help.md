@@ -31,7 +31,7 @@ Looking for other management tasks related to mailbox database copies? Check out
 
   - To perform the move operation, replication for the database must be disabled for all copies. It's not enough to suspend replication; you must disable it by using the [Remove-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd335119\(v=exchg.150\)) cmdlet to remove the database copies.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

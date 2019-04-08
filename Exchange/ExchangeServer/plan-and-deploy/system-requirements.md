@@ -110,6 +110,8 @@ We strongly recommend that you use the latest version of the .NET Framework that
 
 ## Supported clients
 
+- Office 365 ProPlus
+
 - Outlook 2019
 
 - Outlook 2016
@@ -119,6 +121,9 @@ We strongly recommend that you use the latest version of the .NET Framework that
 - Outlook 2013
 
 - Outlook for Mac for Office 365
+
+> [!IMPORTANT]
+> You need KB3140245 to apply registry keys to enable TLS 1.1 & 1.2 support for Windows 7, otherwise Outlook 2013 and 2016 will not work on Windows 7.
 
 ## Lync/Skype For Business Server integration
 
@@ -234,6 +239,8 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 |Exchange 2016 CU5, CU6, CU7|||Supported|
 
 ## Supported clients (with latest updates)
+
+- Office 365 ProPlus
 
 - Outlook 2019
 

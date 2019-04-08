@@ -41,7 +41,7 @@ For additional management tasks related to Client Access servers, see [UM servic
 
   - Before taking a server out of Maintenance Mode, verify the health of the server and make sure it’s ready to go into service.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

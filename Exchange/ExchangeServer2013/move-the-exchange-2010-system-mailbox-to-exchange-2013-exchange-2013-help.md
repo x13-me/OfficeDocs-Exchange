@@ -45,7 +45,7 @@ For more information about upgrading to Exchange 2013, see the following topics:
     
     The **AdminDisplayVersion** property indicates the version of Exchange that the server is running. The value `Version 14.x` indicates Exchange 2010; the value `Version 15.x` indicates Exchange 2013.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

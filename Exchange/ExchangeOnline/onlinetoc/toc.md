@@ -469,7 +469,6 @@
 ### [Fix Outlook and Office 365 issues](../fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/fix-outlook-and-office-365-issues.md)
 ### [Diagnostic log collection in Support and Recovery Assistant](../fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/diagnostic-log-collection-in-support-and-recovery-assistant.md)
 ### [Find and fix email delivery issues as an Office 365 for business admin](../fix-outlook-connection-problems-in-office-365/fix-outlook-connection-problems-in-office-365/find-and-fix-email-delivery-issues-as-an-office-365-for-business-admin.md)
-## [Exchange Online and Exchange Online Protection service upgrade](../exchange-online-and-exchange-online-protection-service-upgrade.md)
 ## [About Exchange documentation](../about-exchange-documentation.md)
 ## [Accessibility](../accessibility/accessibility.md)
 ### [Accessibility in Exchange admin center](../accessibility/accessibility-in-exchange-admin-center.md)
@@ -494,4 +493,4 @@
 ### [Use screen reader to run audit report in Exchange admin center](../accessibility/use-screen-reader-to-run-audit-report-in-exchange-admin-center.md)
 ### [Use screen reader to trace an email message in Exchange admin center](../accessibility/use-screen-reader-to-trace-an-email-message-in-exchange-admin-center.md)
 ### [Use screen reader to work with mobile clients in Exchange admin center](../accessibility/use-screen-reader-to-work-with-mobile-clients-in-exchange-admin-center.md)
-
+## [Exchange Online Multi-Geo](https://docs.microsoft.com/Office365/Enterprise/multi-geo-capabilities-in-exchange-online)

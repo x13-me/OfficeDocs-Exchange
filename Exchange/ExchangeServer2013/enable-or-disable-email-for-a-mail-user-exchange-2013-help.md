@@ -33,7 +33,7 @@ For additional management tasks related to mail users, see [Manage mail users](h
 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail users" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]
@@ -45,7 +45,7 @@ For additional management tasks related to mail users, see [Manage mail users](h
 
 ## Disable email for a mail user
 
-As previously stated, when you disable email for a mail user, the Exchange attributes are removed from the corresponding Active Directory mail user object, but the user is retained. The mail user is removed from the list of mail users in the EAC, but you can view and manage the corresponding Active Directory contact object by using Active Directory Users and Computers or by using the **Get-MailUser** and **Set-Set-MailUser** cmdlets in the Shell.
+As previously stated, when you disable email for a mail user, the Exchange attributes are removed from the corresponding Active Directory mail user object, but the user is retained. The mail user is removed from the list of mail users in the EAC, but you can view and manage the corresponding Active Directory contact object by using Active Directory Users and Computers or by using the **Get-MailUser** and **Set-MailUser** cmdlets in the Shell.
 
 ## Use the EAC to disable email for a mail user
 

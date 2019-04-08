@@ -47,8 +47,6 @@ The sender's messaging server generates a message envelope for the message by us
 
 Each server involved in the transmission of the message may insert message header fields related to the server's role in delivering the message or other application-specific message header fields into the message header. When the recipient opens the message by using an email client, the email client displays some of the more relevant information from the message header, such as the sender, the recipients, and the subject together with the message body.
 
-Return to top
-
 ## How the Pickup and Replay directories process messages
 
 In Exchange 2013, the default location of the Pickup directory is `%ExchangeInstallPath%TransportRoles\Pickup`. The default location of the Replay directory is `%ExchangeInstallPath%TransportRoles\Replay`. A correctly formatted .eml message file copied to the Pickup or Replay directory is processed for submission in the following steps:
@@ -62,8 +60,6 @@ In Exchange 2013, the default location of the Pickup directory is `%ExchangeInst
 4.  After the .tmp file is successfully converted into an email message, a **delete on close** command is issued to the .tmp file. The .tmp file appears to remain in the Pickup directory, but the file can't be opened.
 
 5.  After the message is successfully queued for delivery, a **close** command is issued, and the .tmp file is deleted from the Pickup directory. If the deletion fails, an event log error is generated. If the Microsoft Exchange Transport service is restarted when there are .tmp files in the Pickup directory, all .tmp files are renamed as .eml files and are reprocessed. This could lead to duplicate message transmission.
-
-Return to top
 
 ## Pickup directory message file requirements
 
@@ -85,7 +81,7 @@ A message file copied to the Pickup directory must meet the following requiremen
 
 This example shows a plain text message that uses acceptable formatting for the Pickup directory.
 
-```powershell
+```text
     To: mary@contoso.com
     From: bob@fabrikam.com
     Subject: Message subject
@@ -95,7 +91,7 @@ This example shows a plain text message that uses acceptable formatting for the 
 
 MIME content is also supported in Pickup directory message files. MIME defines a broad range of message content that includes languages that can't be represented in 7-bit ASCII text, HTML, and other multimedia content. A complete description of MIME and its requirements is beyond the scope of this topic. This example shows a simple MIME message that uses acceptable formatting for the Pickup directory.
 
-```powershell
+```text
     To: mary@contoso.com
     From: bob@fabrikam.com
     Subject: Message subject
@@ -111,8 +107,6 @@ MIME content is also supported in Pickup directory message files. MIME defines a
 
     </BODY></HTML>
 ```
-
-Return to top
 
 ## Pickup directory message header modifications
 
@@ -132,7 +126,7 @@ The Pickup directory removes any of the following message header fields from the
 
 The Pickup directory adds its own `Received` header field to a message as part of the message submission process. The `Received` header field is applied in the following format.
 
-```powershell
+```text
     Received: from localhost by Pickup with Microsoft SMTP Server id <ExchangeServerVersion><datetime>
 ```
 
@@ -141,8 +135,6 @@ The Pickup directory modifies the following message header fields if they're mis
   - **Message-Id**   If the `Message-Id` field is missing or empty, the Pickup directory adds a Message-Id field by using the format *\<GUID\>*@*\<defaultdomain\>*.
 
   - **Date**   If the `Date` field is missing or malformed, the Pickup directory adds the date and time of message processing by the Pickup directory.
-
-Return to top
 
 ## Replay directory message file requirements
 
@@ -164,7 +156,7 @@ The X-Headers described in the following list are required by messages in the Re
 
   - **X-Sender**   This X-Header replaces the `From` message header field requirement in a typical SMTP message. One `X-Sender` field that contains one email address must exist. The Replay directory ignores the `From` message header field if it's present, although the recipient's email client displays the value of the `From` message header field as the sender of the message. Other parameters usually exist in the `X-Sender` field, as shown in the following example.
     
-    ```powershell
+    ```text
     X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
     ```
     
@@ -176,7 +168,7 @@ The X-Headers described in the following list are required by messages in the Re
 
   - **X-Receiver**   This X-Header replaces the `To` message header field requirement in a typical SMTP message. At least one `X-Receiver` field that contains one email address must exist. Multiple `X-Receiver` fields are allowed for multiple recipients. The Replay directory ignores the `To` message header fields if they're present, although the recipient's email client displays the values of the `To` message header fields as the recipients of the message. Other optional parameters may exist in the `X-Receiver` fields, as shown in the following example.
     
-    ```powershell
+    ```text
     X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
     ```
     
@@ -202,11 +194,11 @@ The X-Headers described in the following list are optional for message files in 
 
 This example shows a plain text message that uses acceptable formatting for the Replay directory.
 
-```powershell
+```text
 X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
 ```
 
-```powershell
+```text
     X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345AB auth=<someAuth>
     Subject: Optional message subject
     
@@ -214,11 +206,11 @@ X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
 ```
 MIME content is also supported in Replay directory message files. MIME defines a broad range of message content that includes languages that can't be represented in 7-bit ASCII text, HTML, and other multimedia content. A complete description of MIME and its requirements is beyond the scope of this topic. This example shows a simple MIME message that uses acceptable formatting for the Replay directory.
 
-```powershell
+```text
 X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
 ```
 
-```powershell
+```text
     X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345ABCD auth=<someAuth>
     To: mary@contoso.com
     From: bob@fabrikam.com
@@ -236,15 +228,13 @@ X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
     </BODY></HTML>
 ```
 
-Return to top
-
 ## Replay directory message header modifications
 
 The Replay directory deletes the `Bcc` message header field from the message file.
 
 The Replay directory adds its own `Received` message header field to a message as part of the message submission process. The Received message header field is applied in the following format.
 
-```powershell
+```text
     Received: from <ReceivingServerName> by Replay with <ExchangeServerVersion><DateTime>
 ```
 
@@ -253,8 +243,6 @@ The Replay directory modifies the following message header fields in the message
   - **Message-ID**   If this message header field is missing or empty, the Replay directory adds a Message-ID message header field by using the format *\<GUID\>*@*\<defaultdomain\>*.
 
   - **Date**   If this message header field is missing or malformed, the Replay directory adds the Date message header field using the date and time of message processing by the Replay directory.
-
-Return to top
 
 ## Failures in Pickup and Replay directory message processing
 
@@ -276,10 +264,6 @@ A message file copied to the Pickup or Replay directories may not be successfull
     > [!NOTE]
     > Always compose and save message files in a different location before you copy them into the Pickup directory for delivery. The Pickup directory polls for new messages every five&nbsp;seconds. Therefore, if you try to compose and save the message files in the Pickup directory itself, the Pickup directory may try to process the message files before you finish composing them.
 
-
-
-Return to top
-
 ## Security considerations for the Pickup and Replay directories
 
 The following list describes security concerns that are common to the Pickup directory and the Replay directory:
@@ -298,8 +282,6 @@ Tighter security should be applied to the Replay directory because of the additi
 
 Both the Pickup directory and the Replay directory are enabled by default on all Mailbox servers and Edge Transport servers. If the Pickup directory or the Replay directory isn't required on a specific Mailbox server or Edge Transport server in your organization, you can disable the Pickup directory or the Replay directory on that server by setting the Pickup directory path or Replay directory path to the value `$null`. For more information, see [Configure the Pickup directory and the Replay directory](configure-the-pickup-directory-and-the-replay-directory-exchange-2013-help.md).
 
-Return to top
-
 ## Permissions for the Pickup and Replay directories
 
 The following permissions are required on the Pickup and Replay directories:
@@ -313,6 +295,4 @@ The following permissions are required on the Pickup and Replay directories:
 By default, the Microsoft Exchange Transport service uses the security credentials of the Network Service user account to manage the location and permissions of the Pickup and Replay directories. The Network Service account requires these permissions on the Pickup directory so that .eml files can be opened, renamed to .tmp and deleted, or renamed to .bad if the message is classified as badmail.
 
 You can move the location of these directories by using the *PickupDirectoryPath* and *ReplayDirectoryPath* parameters on the **Set-TransportService** cmdlet. Successfully changing the location of the Pickup directory depends on the rights granted to the Network Service account at the new directory locations, and whether the new directories already exist. If the directory doesn't exist, and the Network Service account has the rights required to create folders and apply permissions at the new location, the directory is created, and the correct permissions are applied to it. If the new directory already exists, the existing folder permissions aren't checked. Whenever you move the directory locations by using the *PickupDirectoryPath* or *ReplayDirectoryPath* parameter with the **Set-TransportService** cmdlet, always verify that the new directory exists and that the new directory has the correct permissions applied to it.
-
-Return to top
 

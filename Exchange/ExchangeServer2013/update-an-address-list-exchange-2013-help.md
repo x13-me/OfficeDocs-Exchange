@@ -29,7 +29,7 @@ For additional management tasks related to address lists, see [Address list proc
 
   - If the address list contains more than 3,000 recipients, we recommend that you use the Exchange Management Shell to update the address list.
 
-For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

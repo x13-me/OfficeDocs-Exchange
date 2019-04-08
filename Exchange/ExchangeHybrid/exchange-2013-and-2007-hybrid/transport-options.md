@@ -2,15 +2,15 @@
 title: "Transport options in Exchange 2013/Exchange 2007 hybrid deployments"
 ms.author: dmaguire
 author: msdmaguire
-manager: laurawi
-ms.date: 12/9/2016
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: 92d9e3ca-8d79-4872-9ff7-0067fcdbd434
 description: "In hybrid deployments, you can have mailboxes that reside in your on-premises Exchange organization and also in an Exchange Online organization. A critical component of making these two separate organizations appear as one combined organization to users and messages exchanged between them is hybrid transport. With hybrid transport, messages sent between recipients in either organization are authenticated, encrypted, and transferred using Transport Layer Security (TLS), and appear as internal to Exchange components such as transport rules, journaling, and anti-spam policies. Hybrid transport is automatically configured by the Hybrid Configuration wizard in Exchange 2013"
 ---

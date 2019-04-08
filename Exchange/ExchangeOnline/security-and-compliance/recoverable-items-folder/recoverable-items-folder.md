@@ -72,7 +72,7 @@ The Recoverable Items folder contains the following subfolders:
 
 - **Deletions**: This subfolder contains all items deleted from the Deleted Items folder. (In Outlook, a user can soft delete an item by pressing Shift+Delete.) This subfolder is available to users through the Recover Deleted Items feature in Outlook and Outlook on the web.
 
-- **Versions**: If In-Place Hold, Litigation Hold, or a Office 365 retention policy is enabled, this subfolder contains the original and modified copies of the deleted items. This folder isn't visible to end users.
+- **Versions**: If In-Place Hold, Litigation Hold, or a Office 365 retention policy is enabled, this subfolder contains the original copy of the item and also if the item is modified multiple times, a copy of the item before modification is saved. To understand what action is considered as modification, refer the Copy-on-Write section later in this article. This folder isn't visible to end users.
 
 - **Purges**: If either Litigation Hold or single item recovery is enabled, this subfolder contains all items that are hard deleted. This folder isn't visible to end users.
 
@@ -100,7 +100,7 @@ Soft-deleted items are moved to the Deletions subfolder of the Recoverable Items
 
 - [Recover deleted items or email messages in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=524924)
 
-Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for Exchange Online is 14 days. You can modify this period for mailboxes up to a maximum of 30 days. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see [Recoverable Items mailbox quotas](#RIQuotas.md) later in this topic.
+Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for Exchange Online is 14 days. You can modify this period for mailboxes up to a maximum of 30 days. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see [Recoverable Items mailbox quotas](#recoverable-items-mailbox-quotas) later in this topic.
 
 After the deleted item retention period expires, the item is moved to the Purges folder and is no longer visible to the user. When the Managed Folder Assistant (MFA) processes the mailbox, items in the Purges subfolder are purged from Exchange Online.
 

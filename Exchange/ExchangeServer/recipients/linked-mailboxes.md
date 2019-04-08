@@ -160,7 +160,7 @@ Use the **General** section to view or change basic information about the user.
 
    If you change this name, it must be unique in your organization.
 
-- **Linked master account**: This read-only box displays the user (in the format domain\username format) from the account forest that is associated with the linked mailbox. To change the linked master account associated with the linked mailbox, you have to use the **Set-Mailbox** cmdlet in the Exchange Management Shell. If you change the linked master account, the user will have to use the credentials for the new linked master account to sign in to the linked mailbox. For the command syntax to change the linked master account, see [Use the Exchange management Shell to change linked mailbox properties](#usetheshell.md).
+- **Linked master account**: This read-only box displays the user (in the format domain\username format) from the account forest that is associated with the linked mailbox. To change the linked master account associated with the linked mailbox, you have to use the **Set-Mailbox** cmdlet in the Exchange Management Shell. If you change the linked master account, the user will have to use the credentials for the new linked master account to sign in to the linked mailbox. For the command syntax to change the linked master account, see [Use the Exchange management Shell to change linked mailbox properties](#use-the-exchange-management-shell-to-change-linked-mailbox-properties).
 
 - **Hide from address lists**: Select this check box to prevent the linked mailbox from appearing in the address book and other address lists that are defined in your Exchange organization. After you select this check box, users can still send messages to this user by using the email address.
 

@@ -67,7 +67,7 @@ Configuring coexistence with Exchange 2007 and Exchange 2010
 
   - To use a new certificate, you must use EAC or the Shell to create, import, and enable the new certificate. For details, see [Exchange 2013 certificate management UI](exchange-2013-certificate-management-ui-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

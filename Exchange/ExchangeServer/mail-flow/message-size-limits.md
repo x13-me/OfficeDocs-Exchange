@@ -5,7 +5,7 @@ ms.topic: overview
 author: chrisda
 ms.author: chrisda
 ms.assetid: b6a3840d-b821-4e53-877b-59c16be77206
-ms.date: 7/6/2018
+ms.date: 
 title: Message size limits in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
@@ -56,6 +56,9 @@ The following tables show the message limits at the Organization, Connector, Ser
 
 Organizational limits apply to all Exchange 2019 servers, Exchange 2016 servers, Exchange 2013 Mailbox servers, and Exchange 2010 Hub Transport servers that exist in your organization. On Edge Transport servers, any organizational limits that you configure are applied to the local server.
 
+> [!NOTE]
+> Since the identity of unauthenticated (anonymous) senders can't be established, inbound messages from external senders are subject to the maximum sent message size organizational limit. Likewise, outbound messages to external recipients are subject to the maximum received message size organizational limit. In order for a message to be delivered successfully, the message size must be within the message size limits for both the sender and the recipient.
+
 |**Size limit**|**Default value**|**EAC configuration**|**Exchange Management Shell configuration**|
 |:-----|:-----|:-----|:-----|
 |Maximum size of a message received|10 MB|**Mail flow** \> **Receive connectors** \> **More options** ![More Options icon](../media/ITPro_EAC_MoreOptionsIcon.png) \> **Organization transport settings** \> **Limits** tab \> **Maximum receive message size (MB)**|Cmdlet: **Set-TransportConfig** <br/> Parameter: _MaxReceiveSize_|
@@ -78,7 +81,7 @@ Get-TransportRule | where {($_.MessageSizeOver -ne $null) -or ($_.AttachmentSize
 
 Connector limits apply to any messages that use the specified Send connector, Receive connector, Delivery Agent connector, or Foreign connector for message delivery.
 
- You can assign specific message size limits to the Active Directory site links in your organization. The Transport service on Mailbox servers uses Active Directory sites, and the costs that are assigned to the Active Directory IP site links as one of the factors to determine the least-cost routing path between Exchange servers in the organization.
+You can assign specific message size limits to the Active Directory site links in your organization. The Transport service on Mailbox servers uses Active Directory sites, and the costs that are assigned to the Active Directory IP site links as one of the factors to determine the least-cost routing path between Exchange servers in the organization.
 
 You can assign specific message size limits to the Delivery Agent connectors and Foreign connectors that are used to send non-SMTP messages in your organization.
 

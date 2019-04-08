@@ -13,7 +13,7 @@ ms.collection:
 ms.reviewer: smithre4
 ms.audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: serdars
 
 ---
 
@@ -65,7 +65,7 @@ For more information, see [How to enable cross-app SSO on iOS using ADAL](https:
 
 Two tokens are generated when a user authenticates through ADAL-enabled apps like Outlook for iOS and Android, the Authenticator app, or the Company Portal app: an access token and a refresh token. The access token is used to access the resource (Exchange message data), while a refresh token is used to obtain a new access or refresh token pair when the current access token expires.
 
-By default, the access token lifetime is one hour and the refresh token lifetime is fourteen days. These values can be adjusted; for more information see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-configurable-token-lifetimes). Note that if you choose to reduce these lifetimes, you can also reduce the performance of Outlook for iOS and Android, because a smaller lifetime increases the number of times the application must acquire a fresh access token.
+By default, the access token lifetime is one hour and the refresh token lifetime is 90 days. These values can be adjusted; for more information see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-configurable-token-lifetimes). Note that if you choose to reduce these lifetimes, you can also reduce the performance of Outlook for iOS and Android, because a smaller lifetime increases the number of times the application must acquire a fresh access token.
 
 ### Q: What happens to the access token when a user's password is changed?
 
@@ -97,7 +97,7 @@ Background synchronization in Outlook for iOS and Android can also be temporaril
 
 - Not opening the app for a given period of time. iOS will [automatically freeze third-party apps](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html), like Outlook, based on usage patterns. Android [doze mode and app standby](https://developer.android.com/training/monitoring-device-state/doze-standby) features can also prevent background updates to the app while those features are active.
 
-- On some Android devices, you can also restrict background processing or network access per-app. In these cases, Outlook for Android will not be able to process updates in the background. Android device manufacturers can modify the way you can interact with settings, therefore it is not possible to document every device scenario, but in general, these are the steps you can take to remove battery optimization: 
+- On some Android devices, you can also restrict background processing or network access per-app. In these cases, Outlook for Android will not be able to process updates in the background. Android device manufacturers can modify the way you can interact with settings, therefore it is not possible to document every device scenario, but in general, these are the steps you can take to remove battery optimization:
 
  1. Open **Settings**.
  2. Tap **Battery**.
@@ -137,13 +137,15 @@ Outlook for iOS and Android communicates via TCP port 443. The app accesses vari
 
 Yes, Outlook for iOS and Android supports proxy configurations when the proxy infrastructure meets the following requirements:
 
-- **Supports HTTP protocol without TLS decryption and inspection**. The Office 365-based architecture for Outlook for iOS and Android utilizes certificate pinning to mitigate man-in-the-middle based attacks.
-
-- **Supports and has SOCKS proxy capability enabled**. The Outlook for iOS and Android client utilizes TCP connections to our Office 365-based architecture. The IP ranges for the SOCKS connections are not restricted to a subset of Azure IP ranges, which means that customers cannot define a whitelist range.
+- **Supports HTTP protocol without TLS decryption and inspection**.
 
 - **Does not perform authentication**.
 
-Outlook for iOS and Android will consume the proxy configuration as defined by the platform operating system. Typically, this configuration information is deployed via a PAC file. The PAC file must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no additional custom settings are supported.
+Outlook for iOS and Android will consume the proxy configuration as defined by the platform operating system. Typically, this configuration information is deployed via a PAC file. The PAC file must be configured to use hostnames instead of protocol; no additional custom settings are supported.
+
+For tenants that have not been migrated to the native Microsoft sync technology, the following additional requirement applies:
+
+- **Supports and has SOCKS proxy capability enabled**. The Outlook for iOS and Android client utilizes TCP connections to our Office 365-based architecture. The IP ranges for the SOCKS connections are not restricted to a subset of Azure IP ranges, which means that customers cannot define a whitelist range. The PAC must be configured to use hostnames instead of protocol and return the SOCKS proxy information given the host URL; no additional custom settings are supported.
 
 ## Native Microsoft sync technology migration
 

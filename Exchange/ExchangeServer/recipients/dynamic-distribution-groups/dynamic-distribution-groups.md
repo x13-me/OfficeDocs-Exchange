@@ -46,36 +46,36 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 2. On the **New dynamic distribution group** page, complete the following boxes:
 
-  - **\* Display name**: Use this box to type the display name. This name appears in the shared address book, on the To: line when email is sent to this group, and in the Groups list in the EAC. The display name is required and should be user-friendly so people recognize what it is. It also must be unique in the forest.
+   - **\* Display name**: Use this box to type the display name. This name appears in the shared address book, on the To: line when email is sent to this group, and in the Groups list in the EAC. The display name is required and should be user-friendly so people recognize what it is. It also must be unique in the forest.
 
     > [!NOTE]
     > Group naming policy isn't applied to dynamic distribution groups.
 
-  - **\* Alias**: Use this box to type the name of the alias for the group. The alias cannot exceed 64 characters and must be unique in the forest. When a user types the alias in the To: line of an email message, it resolves to the group's display name.
+   - **\* Alias**: Use this box to type the name of the alias for the group. The alias cannot exceed 64 characters and must be unique in the forest. When a user types the alias in the To: line of an email message, it resolves to the group's display name.
 
-  - **Description**: Use this box to describe the group so people know what the purpose of the group is. This description appears in the shared address book.
+   - **Description**: Use this box to describe the group so people know what the purpose of the group is. This description appears in the shared address book.
 
-  - **Organizational unit**: You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the Active Directory domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
+   - **Organizational unit**: You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the Active Directory domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
 
-    To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
+     To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
 
-  - **Owner**: An owner for a dynamic distribution group is optional. You can add owners by clicking **Browse** and then selecting users from the list.
+   - **Owner**: An owner for a dynamic distribution group is optional. You can add owners by clicking **Browse** and then selecting users from the list.
 
 3. Use the **Members** section to specify the types of recipients for the group and set up rules that will determine membership. Select one of the following boxes:
 
-  - **All recipient types**: Choose this option to send messages that meet the criteria defined for this group to all recipient types.
+   - **All recipient types**: Choose this option to send messages that meet the criteria defined for this group to all recipient types.
 
-  - **Only the following recipient types**: Messages that meet the criteria defined for this group will be sent to one or more of the following recipient types:
+   - **Only the following recipient types**: Messages that meet the criteria defined for this group will be sent to one or more of the following recipient types:
 
-  - **Users with Exchange mailboxes**: Select this check box if you want to include users that have Exchange mailboxes. Users that have Exchange mailboxes are those that have a user domain account and a mailbox in the Exchange organization.
+   - **Users with Exchange mailboxes**: Select this check box if you want to include users that have Exchange mailboxes. Users that have Exchange mailboxes are those that have a user domain account and a mailbox in the Exchange organization.
 
-  - **Users with external email addresses**: Select this check box if you want to include users that have external email addresses. Users that have external email accounts have user domain accounts in Active Directory, but use email accounts that are external to the organization. This enables them to be included in the global address list (GAL) and added to distribution lists.
+   - **Users with external email addresses**: Select this check box if you want to include users that have external email addresses. Users that have external email accounts have user domain accounts in Active Directory, but use email accounts that are external to the organization. This enables them to be included in the global address list (GAL) and added to distribution lists.
 
-  - **Resource mailboxes**: Select this check box if you want to include Exchange resource mailboxes. Resource mailboxes allow you to administer company resources through a mailbox, such as a conference room or a company vehicle.
+   - **Resource mailboxes**: Select this check box if you want to include Exchange resource mailboxes. Resource mailboxes allow you to administer company resources through a mailbox, such as a conference room or a company vehicle.
 
-  - **Contacts with external email addresses**: Select this check box if you want to include contacts that have external email addresses. Contacts that have external email addresses don't have user domain accounts in Active Directory, but the external email address is available in the GAL.
+   - **Contacts with external email addresses**: Select this check box if you want to include contacts that have external email addresses. Contacts that have external email addresses don't have user domain accounts in Active Directory, but the external email address is available in the GAL.
 
-  - **Mail-enabled groups**: Select this check box if you want to include security groups or distribution groups that have been mail-enabled. Mail-enabled groups are similar to distribution groups. Email messages that are sent to a mail-enabled group account will be delivered to several recipients.
+   - **Mail-enabled groups**: Select this check box if you want to include security groups or distribution groups that have been mail-enabled. Mail-enabled groups are similar to distribution groups. Email messages that are sent to a mail-enabled group account will be delivered to several recipients.
 
 4. Click **Add a rule** to define the criteria for membership in this group.
 
@@ -101,8 +101,8 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 8. When you've finished, click **Save** to create the dynamic distribution group.
 
-  > [!NOTE]
-  > If you want to specify rules for attributes other than the ones available in the EAC, you must use the Exchange Management Shell to create a dynamic distribution group. Keep in mind that the filter and condition settings for dynamic distribution groups that have custom recipient filters can be managed only by using the Exchange Management Shell. For an example of how to create a dynamic distribution group with a custom query, see the next section on using the Exchange Management Shell to create a dynamic distribution group.
+   > [!NOTE]
+   > If you want to specify rules for attributes other than the ones available in the EAC, you must use the Exchange Management Shell to create a dynamic distribution group. Keep in mind that the filter and condition settings for dynamic distribution groups that have custom recipient filters can be managed only by using the Exchange Management Shell. For an example of how to create a dynamic distribution group with a custom query, see the next section on using the Exchange Management Shell to create a dynamic distribution group.
 
 ### Use the Exchange Management Shell to create a dynamic distribution group
 
@@ -155,7 +155,7 @@ To verify that you've successfully created a dynamic distribution group, do one 
 
    - [Ownership](#ownership)
 
-   - [Membership](#membership
+   - [Membership](#membership)
 
    - [Delivery management](#delivery-management)
 
@@ -189,7 +189,7 @@ You can add owners by clicking **Browse** and selecting the owner from the list.
 
 #### Membership
 
-Use this section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see [Use the EAC to create a dynamic distribution group](#createddg.md) in the procedures for configuring membership when you use the EAC to create a new dynamic distribution group.
+Use this section to change the criteria used to determine membership of the group. You can delete or change existing membership rules and add new rules. For procedures that tell you how to do this, see [Use the EAC to create a dynamic distribution group](#use-the-eac-to-create-a-dynamic-distribution-group) in the procedures for configuring membership when you use the EAC to create a new dynamic distribution group.
 
 #### Delivery management
 
@@ -313,4 +313,3 @@ To verify that you've successfully changed properties for a dynamic distribution
   ```
   Get-Mailbox -OrganizationalUnit "Marketing" | Format-List Name,IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
   ```
-

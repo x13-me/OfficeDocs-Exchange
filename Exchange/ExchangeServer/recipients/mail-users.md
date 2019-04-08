@@ -126,7 +126,7 @@ To verify that you've successfully created a mail user, do one of the following:
 
 After you create a mail user, you can make changes and set additional properties by using the EAC or the Exchange Management Shell.
 
-You can also change properties for multiple user mailboxes at the same time. For more information, see [Use the EAC to bulk edit mail users](#bulkedit.md).
+You can also change properties for multiple user mailboxes at the same time. For more information, see [Use the EAC to bulk edit mail users](#use-the-eac-to-bulk-edit-mail-users).
 
 The estimated time to complete this task will vary based on the number of properties you want to view or change.
 

@@ -39,7 +39,7 @@ For additional management tasks related to public folders, see [Public folder pr
 
   - Restoring public folder mailboxes differs from restoring regular mailboxes in that folders won’t be created if they don't exist in the target mailbox. Missing folders will be displayed in a warning message at the end of restore request.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

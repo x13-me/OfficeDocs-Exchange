@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+localization_priority: Priority
 ms.topic: article
 author: chrisda
 ms.author: chrisda
@@ -24,8 +24,6 @@ manager: serdars
 # How to set up a multifunction device or application to send email using Office 365
 
 Prerequisites: Office 365 Subscription, [Exchange Online Plan](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)
-
-From September 1st, 2018, Office 365 is slowly rolling out changes to SMTP client submission (also known as SMTP Authenticated Submission) which may affect your devices and applications that send emails. To find out more, visit the KB article [Improvements in SMTP Authenticated Submission client protocol](https://support.microsoft.com/help/4458479/improvements-in-smtp-authenticated-submission-client-protocol).
 
 This article explains how you can send email from devices and business applications when all of your mailboxes are in Office 365. For example:
 
@@ -119,7 +117,7 @@ Other scenarios when direct send may be your best choice:
 
 - You want to send bulk email or newsletters. Office 365 does not allow you to do this via SMTP client submission. Direct send allows you to send a high volume of messages.
 
-    Note that there is a risk of your email being marked as spam by Office 365. You might want to enlist the help of a bulk email provider to assist you. For example, they'll help you adhere to best practices, and can help ensure that your domains and IP addresses are not blocked by others on the Internet.
+    Note that there is a risk of your email being marked as spam by Office 365. You might want to enlist the help of a bulk email provider to assist you. For example, they'll help you adhere to best practices, and can help ensure that your domains and IP addresses are not blocked by others on the internet.
 
 ### Settings for direct send
 
@@ -216,7 +214,7 @@ SMTP relay lets Office 365 relay emails on your behalf by using a connector that
 
 |**Device or application setting**|**Value**|
 |:-----|:-----|
-|Server/smart host|Your MX endpoint, e.g. _yourodomain_-com.mail.protection.outlook.com|
+|Server/smart host|Your MX endpoint, e.g. _yourdomain_-com.mail.protection.outlook.com|
 |Port|Port 25|
 |TLS/StartTLS|Enabled|
 |Email address|Any email address in one of your Office 365 verified domains. This email address does not need a mailbox.
@@ -313,9 +311,9 @@ Here's a comparison of each configuration option and the features they support.
 |:-----|:-----|:-----|:-----|
 |**Features**|
 |Send to recipients in your domain(s)|Yes|Yes|Yes|
-|Relay to Internet via Office 365|Yes|No. Direct delivery only.|Yes|
-|Bypasses antispam|Yes, if the mail is destined for an Office 365 mailbox.|No. Suspicious emails might be filtered. We recommend a custom Sender Policy Framework (SPF) record.|No. Suspicious emails might be filtered. We recommend a custom SPF record.|
-|Supports mail sent from applications hosted by a third party|Yes|No|No|
+|Relay to internet via Office 365|Yes|No. Direct delivery only.|Yes|
+|Bypasses antispam|Yes, if the mail is destined for one of your Office 365 mailboxes.|No. Suspicious emails might be filtered. We recommend a custom Sender Policy Framework (SPF) record.|No. Suspicious emails might be filtered. We recommend a custom SPF record.|
+|Supports mail sent from applications hosted by a third party|Yes|Yes. We recommend updating your SPF record to allow the third party to send as your domain. |No|
 |**Requirements**|
 |Open network port|Port 587 or port 25|Port 25|Port 25|
 |Device or application server must support TLS|Required|Optional|Optional|
@@ -325,7 +323,11 @@ Here's a comparison of each configuration option and the features they support.
 
 ## Use your own email server to send email from multifunction devices and applications
 
-If you have mailboxes in Office 365 and an email server that you manage (also called an on-premises email server), always configure your devices and applications to use your local network and route email through your own email server. For details about setting up your Exchange server to receive email from systems that are not running Exchange (such as a multifunction printer), see [Create a Receive Connector to Receive Email from a System Not Running Exchange](https://docs.microsoft.com/exchange/create-a-receive-connector-to-receive-email-from-a-system-not-running-exchange-exchange-2013-help).
+If you happen to have an on-premises email server, you should seriously consider using that server for SMTP relay instead of Office 365. A local email server that you have physical access to is much easier to configure for SMTP relay by devices and applications on your local network. The details about how to do this depend on your on-premises email server. For Exchange Server, see the following topics:
+
+- [Allow anonymous relay on Exchange servers](https://docs.microsoft.com/Exchange/mail-flow/connectors/allow-anonymous-relay)
+
+- [Receive messages from a server, service, or device that doesn't use Exchange](https://docs.microsoft.com/Exchange/mail-flow/connectors/custom-receive-connectors#scenario-3-receive-messages-from-a-server-service-or-device-that-doesnt-use-exchange)
 
 ## Related Topics
 

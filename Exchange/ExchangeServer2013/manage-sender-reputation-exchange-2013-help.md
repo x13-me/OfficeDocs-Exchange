@@ -29,7 +29,7 @@ Sender reputation is provided by the Protocol Analysis agent. Sender reputation 
 
   - The Protocol Analysis agent is the underlying agent for sender reputation functionality. When you disable sender reputation, the Protocol Analysis agent is still enabled.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

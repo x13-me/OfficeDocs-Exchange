@@ -29,7 +29,7 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
   - Before you can remove a management role, you must remove all its management role assignments. For more information about how to remove a role assignment, see [Remove a role from a user or USG](remove-a-role-from-a-user-or-usg-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
+  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 
 > [!TIP]

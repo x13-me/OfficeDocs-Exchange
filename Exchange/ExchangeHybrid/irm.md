@@ -2,15 +2,15 @@
 title: "IRM in Exchange hybrid deployments"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
-ms.date: 12/9/2016
-ms.audience: Developer
+manager: serdars
+ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
 ms.collection:
 - Hybrid
 - Ent_O365_Hybrid
+- M365-email-calendar
 ms.assetid: ba6ec48b-8f79-4807-b74b-fd442bbbe82f
 description: "Summary: How IRM works in an Exchange hybrid environment, and how to configure IRM to work between Exchange Online and your on-premises Exchange servers."
 ---
@@ -53,7 +53,7 @@ IRM functionality that's available in your on-premises Exchange organization may
 
 Exchange uses AD RMS servers in the Active Directory forest in which the Exchange server is installed. For your on-premises Exchange servers, the on-premises AD RMS server is used. For your Exchange Online organization, AD RMS servers that are maintained within the Office 365 datacenters are used. The AD RMS configuration that each Exchange organization uses is independent of any other AD RMS deployment. 
   
-AD RMS configuration, and therefore IRM configuration, isn't automatically replicated between your on-premises Exchange organization and the Exchange Online organization. Any AD RMS templates that you've defined aren't automatically copied to the Exchange Online organization. If you want the same AD RMS templates to be available in the Exchange Online organization, you must manually export the templates from your on-premises organization and apply them to the Office 365 organization. See [Configure IRM in hybrid deployments](irm.md#IRMConfig) later in this topic. 
+AD RMS configuration, and therefore IRM configuration, isn't automatically replicated between your on-premises Exchange organization and the Exchange Online organization. Any AD RMS templates that you've defined aren't automatically copied to the Exchange Online organization. If you want the same AD RMS templates to be available in the Exchange Online organization, you must manually export the templates from your on-premises organization and apply them to the Office 365 organization. See [Configure IRM in hybrid deployments](#configure-irm-in-hybrid-deployments) later in this topic.
   
 ### User experience
 
