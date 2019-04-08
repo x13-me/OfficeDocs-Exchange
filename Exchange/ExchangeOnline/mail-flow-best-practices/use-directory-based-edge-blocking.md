@@ -60,5 +60,5 @@ If a message is sent to a valid email address in Office 365, the message continu
 - For more information about DBEB and mail-enabled public folders, see [Office 365 Directory Based Edge Blocking support for on-premises Mail Enabled Public Folders](https://blogs.technet.microsoft.com/exchange/2017/05/19/office-365-directory-based-edge-blocking-support-for-on-premises-mail-enabled-public-folders/).
 
 > [!NOTE]
-> External/Hybrid Exchange Server Dynamic Distribution Group are objects that do not sync to AAD and therefore are blocked by DBEB. To work around, a contact object is created with External SMTP address of that group.
+> In hybrid environments dynamic distribution groups do not sync to AAD and are therefore blocked by DBEB. As a work around, you can create a mail contact with the same external email address of the blocked dynamic distribution group.
 
