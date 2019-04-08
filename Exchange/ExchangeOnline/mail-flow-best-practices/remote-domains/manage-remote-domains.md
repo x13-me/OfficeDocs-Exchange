@@ -50,7 +50,7 @@ For information about when to configure remote domains, descriptions of the avai
 
 **Notes**:
 
-- You can configure a remote domain for any domain that's listed on the **Office 365 admin center** \> **Domains** page. For example, if fabrikam.com is one of your accepted domains, you can't create a remote domain for fabrikam.com.
+- You can't configure a remote domain for any domain that's listed on the **Office 365 admin center** \> **Domains** page. For example, if fabrikam.com is one of your accepted domains, you can't create a remote domain for fabrikam.com.
 
 - If you create a remote domain for a specific destination domain, and a setting for the specific remote domain conflicts with the same setting in the default remote domain, the setting for the specific remote domain overrides the setting in the default remote domain.
 
