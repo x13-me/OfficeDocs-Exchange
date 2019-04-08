@@ -22,6 +22,8 @@ Or, let's say you want to block personal email address domains. You can set up a
 
 ## Important information about how block lists work
 
+- This feature is currently only in Preview and as part of an Office 365 license. 
+
 - You can create either an Allow list or Block list. **But you can't set up both types of lists**. By default, whatever domains are not in an Allow list are on a Block list, and vice versa.
 
 - You can create only one policy per organization. You can update that policy with more domains, or you can delete that policy to create a new one.
