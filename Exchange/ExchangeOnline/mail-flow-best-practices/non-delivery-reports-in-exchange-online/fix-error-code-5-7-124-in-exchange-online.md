@@ -24,7 +24,7 @@ It's frustrating when you get an error after sending an email message. This topi
 |:-----|:-----|:-----|:-----|
 |![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm the group owner or email admin. How do I fix this?](#im-the-group-owner-or-email-admin-how-do-i-fix-this)|
 
-## I got this bounce message. How do fix it?
+## I got this bounce message. How do fix I it?
 
 Typically, members of a group can send messages to the group. If the group is in your Exchange Online organization, you can try to join the group in Outlook or Outlook on the web (formerly known as Outlook Web App). For instructions, see [Join a group in Outlook](https://support.office.com/article/e59e19c-b872-44c8-ae84-0acc4b79c45d).
 

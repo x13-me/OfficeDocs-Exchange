@@ -56,7 +56,7 @@ Typically, you can't fix the problem yourself. You'll need the recipient or the 
 
     - Large messages can't be sent to the group. However, senders of large messages will receive a different NDR. For more information about large messages, see the "Distribution group limits" section in [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkId=613633).
 
-   To resolve the issue, join the group, or ask the group's owner or moderator to approve your message. Refer them to the [I'm the owner of a restricted distribution group. What can I do?](#im-the-owner-of-a-restricted-distribution-group-what-can-i-do) section later in this topic.
+   To resolve the issue, join the group, or ask the group's owner or moderator to approve your message. Refer them to the [I'm the owner of a restricted group. What can I do?](#im-the-owner-of-a-restricted-group-what-can-i-do) section later in this topic.
 
 If none of the previous steps apply or solve your issue, contact the recipient's email administrator, and refer them to the [I'm an email admin. How can I fix this?](#im-an-email-admin-how-can-i-fix-this) section later in this topic.
 

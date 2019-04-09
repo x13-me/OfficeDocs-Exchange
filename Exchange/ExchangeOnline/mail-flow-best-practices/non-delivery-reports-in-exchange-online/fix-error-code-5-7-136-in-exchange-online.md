@@ -24,7 +24,7 @@ It's frustrating when you get an error after sending an email message. This topi
 |:-----|:-----|:-----|:-----|
 |![Email user icon](../../media/31425afd-41a9-435e-aa85-6886277c369b.png)|[I got this bounce message. How do fix it?](#i-got-this-bounce-message-how-do-i-fix-it)|![Email admin icon](../../media/3d4c569e-b819-4a29-86b1-4b9619cf2acf.png)|[I'm an email admin. How do I fix this?](#im-an-email-admin-how-do-i-fix-this)|
 
-## I got this bounce message. How do fix it?
+## I got this bounce message. How do I fix it?
 
 Only an email admin in the recipient's organization can fix this issue. Contact the email admin and refer them to this information so they can try to resolve the issue for you.
 
