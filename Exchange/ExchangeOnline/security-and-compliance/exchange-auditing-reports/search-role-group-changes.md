@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn how to search the administrator audit logs to discover who made changes to your organization.
 ms.topic: article
-author: markjjo
-ms.author: markjjo
+author: chrisda
+ms.author: chrisda
 ms.assetid: c7188d53-e672-492b-b57d-cd711379ddb3
 ms.date: 
 title: Search the role group changes or administrator audit logs in Exchange Online
@@ -12,7 +12,7 @@ ms.collection:
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: serdars
 
 ---
 
