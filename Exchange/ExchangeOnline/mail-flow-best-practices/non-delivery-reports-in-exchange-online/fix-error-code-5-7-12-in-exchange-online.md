@@ -80,7 +80,7 @@ Open the EAC and use one of the following procedures based on the recipient type
 
 Instead of allowing all external senders to send messages to this recipient, you can use the recipient's allowed senders list to selectively allow messages from all internal senders and the specified external senders.
 
-**Notes**: 
+**Notes**:
 
 - To add an external sender to a recipient's allowed senders list, you must first create a [mail contact](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-contacts) or a [mail user](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users) to represent the external sender in your organization.
 

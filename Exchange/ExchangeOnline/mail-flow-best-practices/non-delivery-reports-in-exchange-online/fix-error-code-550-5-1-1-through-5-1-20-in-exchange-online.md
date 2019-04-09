@@ -48,7 +48,7 @@ To remove invalid recipients or all recipients from your Auto-Complete list in O
 
 To remove recipients from your Auto-Complete list in Outlook on the web (formerly known as Outlook Web App), do one of the following procedures:
 
-**Remove a single recipient from your Outlook on the web Auto-Complete list**
+##### Remove a single recipient from your Outlook on the web Auto-Complete list
 
 1. In Outlook on the web, click **New mail**.
 
@@ -58,7 +58,7 @@ To remove recipients from your Auto-Complete list in Outlook on the web (formerl
 
 3. Use the Down Arrow and Up Arrow keys to select the recipient, and then press the Delete key.
 
-**Remove all recipients from your Outlook on the web Auto-Complete list**
+##### Remove all recipients from your Outlook on the web Auto-Complete list**
 
 You can only clear your Auto-Complete list in the light version of Outlook on the web. To open your mailbox in the light version of Outlook on the web, do either of the following steps:
 

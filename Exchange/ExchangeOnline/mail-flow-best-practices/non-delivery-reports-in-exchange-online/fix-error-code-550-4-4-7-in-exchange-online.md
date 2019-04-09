@@ -96,15 +96,15 @@ The NDR from Exchange Online for this specific error might contain some or all o
 
 - **User information section**
 
-   - The server has tried to deliver this message, without success, and has stopped trying. Please try sending this message again. If the problem continues, contact your help desk.
+  - The server has tried to deliver this message, without success, and has stopped trying. Please try sending this message again. If the problem continues, contact your help desk.
 
 - **Diagnostic information for administrators section**
 
-   - `#550 4.4.7 QUEUE.Expired; message expired ##`
+  - `#550 4.4.7 QUEUE.Expired; message expired ##`
 
-   - The message was considered too old by the rejecting system, either because it remained on that host too long or because the time-to-live value specified by the sender of the message was exceeded.
+  - The message was considered too old by the rejecting system, either because it remained on that host too long or because the time-to-live value specified by the sender of the message was exceeded.
 
-   - `450 4.7.0 Proxy session setup failed on Frontend with '451 4.4.0 Primary target IP address responded with ...` Be sure to record the error that follows this string and the last end point attempted.
+  - `450 4.7.0 Proxy session setup failed on Frontend with '451 4.4.0 Primary target IP address responded with ...` Be sure to record the error that follows this string and the last end point attempted.
 
 ## Still need help with error code 4.4.7?
 

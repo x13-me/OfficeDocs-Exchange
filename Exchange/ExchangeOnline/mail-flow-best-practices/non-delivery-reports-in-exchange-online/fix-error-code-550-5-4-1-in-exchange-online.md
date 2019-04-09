@@ -98,15 +98,15 @@ The Exchange Online non-delivery report (NDR) notification for this specific err
 
 - **User information section**
 
-   - Relay Access Denied
+  - Relay Access Denied
 
-   - The outbound connection attempt was not answered because either the remote system was busy or it was unable to take delivery of the message.
+  - The outbound connection attempt was not answered because either the remote system was busy or it was unable to take delivery of the message.
 
 - **Diagnostic information for administrators section**
 
-   - No answer from host.
+  - No answer from host.
 
-   - `#550 5.4.1 Relay Access Denied ##`
+  - `#550 5.4.1 Relay Access Denied ##`
 
 ## Still need help?
 

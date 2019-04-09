@@ -98,7 +98,7 @@ The NDR for this specific error might contain some or all of the following infor
 
 - **User information section**
 
-   - Delivery has failed to these recipients or groups:
+  - Delivery has failed to these recipients or groups:
 
      \<email addresses\>
 
@@ -108,7 +108,7 @@ The NDR for this specific error might contain some or all of the following infor
 
 - **Diagnostic information for administrators section**
 
-   - `#5.4.6 smtp;554 5.4.6 Hop count exceeded - possible mail loop> #SMTP#`
+  - `#5.4.6 smtp;554 5.4.6 Hop count exceeded - possible mail loop> #SMTP#`
 
 ## Still need help with error codes 5.4.6 through 5.4.20?
 

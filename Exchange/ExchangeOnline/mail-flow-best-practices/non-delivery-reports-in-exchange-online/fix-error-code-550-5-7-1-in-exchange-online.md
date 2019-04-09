@@ -28,7 +28,7 @@ This information also applies to error codes 5.7.0 through 5.7.999 in Exchange O
 
 ## Why did I get this bounce message?
 
-Typically, this error indicates a security setting in your organization is preventing your message from reaching the recipient. For example:
+Typically, this error indicates a security setting in your organization or the recipient's organization is preventing your message from reaching the recipient. For example:
 
 - You don't have permission to send to the recipient.
 
@@ -46,15 +46,15 @@ Typically, you can't fix the problem yourself. You'll need the recipient or the 
 
 - **If the recipient is an internal group**: You might not have permission to send to the group or to one of its subgroups. In this case, the NDR will include the names of the restricted groups that you don't have permission to send to. Ask the owner of the restricted group to grant you permission to send messages to the. If you don't know the group's owner, you can find it in Outlook or Outlook on the web (formerly known as Outlook Web App) by doing the following steps:
 
-   - **Outlook**: Select the NDR, double-click the group name on the **To** line, and then choose **Contact**.
+  - **Outlook**: Select the NDR, double-click the group name on the **To** line, and then choose **Contact**.
 
-   - **Outlook on the web**: Select the NDR, choose the group name on the **To** line, and then choose **Owner**.
+    - **Outlook on the web**: Select the NDR, choose the group name on the **To** line, and then choose **Owner**.
 
 - **If you're sending to a large distribution group**: Groups with more than 5,000 members have the following restrictions automatically applied to them:
 
-   - Messages sent to the group require approval by a moderator.
+  - Messages sent to the group require approval by a moderator.
 
-   - Large messages can't be sent to the group. However, senders of large messages will receive a different NDR. For more information about large messages, see the "Distribution group limits" section in [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkId=613633).
+    - Large messages can't be sent to the group. However, senders of large messages will receive a different NDR. For more information about large messages, see the "Distribution group limits" section in [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkId=613633).
 
    To resolve the issue, join the group, or ask the group's owner or moderator to approve your message. Refer them to the [I'm the owner of a restricted distribution group. What can I do?](#im-the-owner-of-a-restricted-distribution-group-what-can-i-do) section later in this topic.
 
@@ -66,25 +66,25 @@ If a message sender received this NDR when they attempted to send a message to y
 
 - **Remove the sender restriction**: Change your group settings to unblock the sender in one of the following ways:
 
-   - Add the sender to the group's allowed senders list. Note that you must create a [mail contact](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-contacts) or a [mail user](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users) to represent the external sender in your organization.
+  - Add the sender to the group's allowed senders list. Note that you must create a [mail contact](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-contacts) or a [mail user](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users) to represent the external sender in your organization.
 
-   - If the sender is restricted because they're external (outside your organization), configure the group to accept messages from external senders.
+  - If the sender is restricted because they're external (outside your organization), configure the group to accept messages from external senders.
 
-   - If you've configured a mail flow rule (also known a a transport rule) to restrict certain senders or groups of senders, you can modify the rule to accept messages from the sender.
+  - If you've configured a mail flow rule (also known a a transport rule) to restrict certain senders or groups of senders, you can modify the rule to accept messages from the sender.
 
 - **Restrictions on large groups**: Groups with more than 5,000 members have the following restrictions automatically applied:
 
-   - Messages sent to the group require approval by a moderator.
+  - Messages sent to the group require approval by a moderator.
 
-   - Large messages can't be sent to the group (but you'll receive a different NDR from this one if that's the issue). See [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkId=330039).
+  - Large messages can't be sent to the group (but you'll receive a different NDR from this one if that's the issue). See [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkId=330039).
 
    To resolve the issue for the sender, approve their message, or add them to the group.
 
 - **Managing distribution groups**
 
-   - [Configure a moderated recipient in Exchange Online](https://technet.microsoft.com/library/jj983442.aspx)
+  - [Configure a moderated recipient in Exchange Online](https://technet.microsoft.com/library/jj983442.aspx)
 
-   - [Manage Distribution Groups](https://technet.microsoft.com/library/bb124513.aspx)
+  - [Manage Distribution Groups](https://technet.microsoft.com/library/bb124513.aspx)
 
 ## I'm an email admin. How can I fix this?
 
@@ -98,7 +98,7 @@ If only this recipient is having difficulty accepting messages from external sen
 
 When the recipient is a mail-enabled public folder in your Exchange Online organization, an external sender will receive an NDR with the following error code:
 
-  ` Remote Server returned '<xxxxxxxx> #5.7.1 smtp;550 5.7.1 RESOLVER.RST.AuthRequired; authentication required [Stage: CreateMessage]'`
+  `Remote Server returned '<xxxxxxxx> #5.7.1 smtp;550 5.7.1 RESOLVER.RST.AuthRequired; authentication required [Stage: CreateMessage]'`
 
 To configure the public folder to accept messages from external senders, follow these steps:
 
@@ -156,15 +156,15 @@ The Sender Policy Framework (SPF) record for your domain might be incomplete, an
 
 If your domain is part of a hybrid deployment between on-premises Exchange and Exchange Online, the Hybrid Configuration Wizard should automatically configure the required connectors for mail flow. Even so, you can use the steps in this section to verify the connector settings.
 
-- 1. Open the Office 365 portal at https://portal.microsoftonline.com, and click **Admin** \> **Exchange**.
+1. Open the Office 365 portal at <https://portal.microsoftonline.com>, and click **Admin** \> **Exchange**.
 
-- 2. In the Exchange admin center, click **Mail Flow** \> **Connectors**. In the **Outbound connectors** section, select the connector that's used for hybrid, and choose **Edit**. Verify the following information:
+2. In the Exchange admin center, click **Mail Flow** \> **Connectors**. In the **Outbound connectors** section, select the connector that's used for hybrid, and choose **Edit**. Verify the following information:
 
-     - **Delivery**: If **Route mail through smart hosts** is selected, confirm the correct IP address or FQDN is specified. If **MX record associated with the recipient domain** is selected, confirm the MX record for the domain points to the correct mail server.
+   - **Delivery**: If **Route mail through smart hosts** is selected, confirm the correct IP address or FQDN is specified. If **MX record associated with the recipient domain** is selected, confirm the MX record for the domain points to the correct mail server.
 
        You can test your MX record and your ability to send mail from your Exchange Online organization by using the **Verify MX Record and Outbound Connector Test** at **Office 365** \> **Mail Flow Configuration** in the [Microsoft Remote Connectivity Analyzer](https://go.microsoft.com/fwlink/p/?LinkID=390941).
 
-     - **Scope**: If you need to route inbound internet mail to your on-premises Exchange organization, **Domains** needs to include all email domains that are used in your on-premises organization. You can use the value asterisk (\*) to also route all outbound internet mail through the on-premises organization.
+   - **Scope**: If you need to route inbound internet mail to your on-premises Exchange organization, **Domains** needs to include all email domains that are used in your on-premises organization. You can use the value asterisk (\*) to also route all outbound internet mail through the on-premises organization.
 
 If the connectors are configured incorrectly, your Exchange administrator needs to rerun the Hybrid Configuration Wizard in the on-premises Exchange organization.
 

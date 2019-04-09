@@ -80,11 +80,11 @@ If the steps in this section don't fix the problem for you, contact your email a
 
    If your original message had an attachment larger than 10 MB, the **Send Again** option might not be available or might not work. Instead, resend the message from your **Sent Items** folder.
 
-3. On the **To** line of the new copy of your message, choose the **Delete** icon ![Delete icon](../../media/c12e6d18-953d-4955-8c7b-11719aa2a326.png) delete the recipient's email address.
+2. On the **To** line of the new copy of your message, choose the **Delete** icon ![Delete icon](../../media/c12e6d18-953d-4955-8c7b-11719aa2a326.png) delete the recipient's email address.
 
    ![Screenshot shows the To line of an email message with the option to delete the recipient's email address.](../../media/09ddb461-f132-48c0-b7b8-d856163f1820.png)
 
-4. Remove the recipient's email address from the Auto-Complete list (a bad or outdated entry could be causing the problem):
+3. Remove the recipient's email address from the Auto-Complete list (a bad or outdated entry could be causing the problem):
 
    1. On the empty **To** line, start typing the recipient's name or email address until it appears in the Auto-Complete drop-down list.
 
@@ -92,9 +92,9 @@ If the steps in this section don't fix the problem for you, contact your email a
 
    2. Use the Down Arrow key to select the recipient from the Auto-Complete list, and then press the Delete key. Or, hover over the recipient's name and click the **Delete** icon ![Delete icon](../../media/c12e6d18-953d-4955-8c7b-11719aa2a326.png).
 
-5. On the **To** line, continue typing the recipient's entire email address. Be sure to spell the address correctly.
+4. On the **To** line, continue typing the recipient's entire email address. Be sure to spell the address correctly.
 
-6. Click **Send**.
+5. Click **Send**.
 
 ### Ask the recipient to check for broken forwarding rules or settings
 
@@ -204,9 +204,9 @@ Unlike Inbox rules which are associated with a user's mailbox, mail flow rules (
 
 - Message routing (especially in hybrid configurations) can be complex. Even if changing the accepted domain setting fixes the bounce message problem, it might not be right solution for you. In some cases, changing the accepted domain type might cause other unanticipated problems. Review [Manage accepted domains in Exchange Online](https://technet.microsoft.com/library/jj945194.aspx) and then proceed with caution.
 
-   - **If the accepted domain in Exchange Online is Authoritative**: The service looks for the recipient in the Exchange Online organization, and if the recipient isn't found, message delivery stops and the sender will receive this bounce message. On-premises users must be represented in the Exchange Online organization by mail contacts or mail users (created manually or by directory synchronization).
+  - **If the accepted domain in Exchange Online is Authoritative**: The service looks for the recipient in the Exchange Online organization, and if the recipient isn't found, message delivery stops and the sender will receive this bounce message. On-premises users must be represented in the Exchange Online organization by mail contacts or mail users (created manually or by directory synchronization).
 
-   - **If the accepted domain in Exchange Online is Internal Relay**: The service looks for the recipient in the Exchange Online organization, and if the recipient isn't found, the service relays the message to your on-premises Exchange Organization (assuming you've correctly set up the required connector to do so).
+  - **If the accepted domain in Exchange Online is Internal Relay**: The service looks for the recipient in the Exchange Online organization, and if the recipient isn't found, the service relays the message to your on-premises Exchange Organization (assuming you've correctly set up the required connector to do so).
 
 - When setting an accepted domain to Internal Relay, you must set up a corresponding Office 365 connector to your on-premises environment. Failing to do so will break mail flow to your on-premises recipients. For more information about connectors, see [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
@@ -214,15 +214,15 @@ Unlike Inbox rules which are associated with a user's mailbox, mail flow rules (
 
 If you have a hybrid configuration with an Office 365 connector configured to route messages to your on-premises environment, and you believe that Internal Relay is the correct setting for your domain, change the Accepted Domain from Authoritative to Internal Relay.
 
-1. Open the Exchange admin center (EAC). For instructions, see .
+1. Open the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
-1. From the EAC, choose **Mail flow** \> **Accepted domains** and select the recipient's domain.
+2. From the EAC, choose **Mail flow** \> **Accepted domains** and select the recipient's domain.
 
    ![Screenshot shows the Accepted Domains page of the Exchange admin center. Information about the name, accepted domain, and domain type is shown.](../../media/3d794bb4-09a7-4725-96d8-86671dad28ef.png)
 
-2. Double-click the domain name.
+3. Double-click the domain name.
 
-3. In the **Accepted Domain** dialog box, set the domain to **Internal Relay**, and then select **Save**.
+4. In the **Accepted Domain** dialog box, set the domain to **Internal Relay**, and then select **Save**.
 
    ![Screenshot shows the Accepted Domain dialog with the Internal Relay option selected for the specified accepted domain.](../../media/0d2d80b9-66b8-474e-851b-700127c1c1d0.png)
 

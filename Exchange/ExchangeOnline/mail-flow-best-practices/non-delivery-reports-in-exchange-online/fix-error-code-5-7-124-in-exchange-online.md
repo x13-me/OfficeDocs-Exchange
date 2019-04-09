@@ -67,7 +67,7 @@ If you decide that you don't need to restrict the message senders to this group,
 
    - Select **Senders inside and outside of my organization**.
 
-5. When you're finished, click **Save**.
+4. When you're finished, click **Save**.
 
 ## More information about groups
 
