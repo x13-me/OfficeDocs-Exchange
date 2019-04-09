@@ -152,11 +152,10 @@ Next, you have to use Windows PowerShell to upload the on-premises authorization
         $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
         #Set up new MsolServicePrincipalCredential
         New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
-
     ```
 
 #Make sure that in your variable $p in the property "ServicePrincipalNames" is added your "mail.contoso.com" else you'd have to add it:
-````Powershell
+```Powershell
 $guid= [System.Guid]::Parse("00000002-0000-0ff1-ce00-000000000000")
 $p = get-MSOLServicePrincipal -AppPrincipalId $guid
 $p.ServicePrincipalnames.Add("https://mail.contoso.com")

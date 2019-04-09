@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Learn about the requirements for the journaling mailbox and the alternate journaling mailbox in Exchange Online.
 ms.topic: article
-author: LauraWi
-ms.author: laurawi
+author: chrisda
+ms.author: chrisda
 ms.assetid: 3033715d-a6d0-485e-af0d-15876550fd4d
 ms.date: 
 title: Configure Journaling in Exchange Online
@@ -12,7 +12,7 @@ ms.collection:
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: serdars
 
 ---
 
