@@ -12,12 +12,14 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Online, Exchange Server 2013_
 
-Exchange 2013-only hybrid deployments configure OAuth authentication when using the Hybrid Configuration Wizard. For mixed Exchange 2013/2010 and Exchange 2013/2007 hybrid deployments, the new hybrid deployment OAuth-based authentication connection between Office 365 and on-premises Exchange organizations isn’t configured by the Hybrid Configuration wizard. These deployments continue to use the federation trust process by default. However, certain Exchange 2013 features are only fully available across your organization by using the new Exchange OAuth authentication protocol.
+Exchange 2013-only hybrid deployments configure OAuth authentication when using the Hybrid Configuration Wizard. For mixed Exchange 2013/2010 and Exchange 2013/2007 hybrid deployments, the new hybrid deployment OAuth-based authentication connection between Office 365 and on-premises Exchange organizations isn't configured by the Hybrid Configuration wizard. These deployments continue to use the federation trust process by default. However, certain Exchange 2013 features are only fully available across your organization by using the new Exchange OAuth authentication protocol.
 
 The new Exchange OAuth authentication process currently enables the following Exchange features:
 
 - Message Records Management (MRM)
+
 - Exchange In-place eDiscovery
+
 - Exchange In-place Archiving
 
 We recommend that all mixed Exchange organizations that implement a hybrid deployment with Exchange 2013 and Exchange Online configure Exchange OAuth authentication after configuring their hybrid deployment with the Hybrid Configuration Wizard.
@@ -27,9 +29,12 @@ We recommend that all mixed Exchange organizations that implement a hybrid deplo
 
 ## What do you need to know before you begin?
 
-- Estimated time to complete this task: 15 minutes
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the “Federation and certificates” permissions entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
+- Estimated time to complete this task: 15 minutes.
+
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Federation and certificates" permissions entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
+
 - Completed configuration of your hybrid deployment using the Hybrid Deployment Wizard. For more information, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/en-us/library/jj200581\(v=exchg.150\)).
+
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
@@ -39,8 +44,9 @@ We recommend that all mixed Exchange organizations that implement a hybrid deplo
 
 ### Step 1: Create the authorization server objects for your Exchange Online organization
 
-For this procedure, you have to specify a verified domain for your Exchange Online organization and the Exchange Online Tenant Name. The first domain should be the same domain used as the primary SMTP domain used for the cloud-based email accounts. This domain is referred as *\<your verified domain\>* in the following procedure.  The second domain which is your actual tenant name like contoso.onmicrosoft.com is referred to as *\<your tenant domain\>*
-Run the following command in the Exchange Management Shell (the Exchange PowerShell) in your on-premises Exchange organization.
+For this procedure, you have to specify a verified domain for your Exchange Online organization and the Exchange Online Tenant Name. The first domain should be the same domain used as the primary SMTP domain used for the cloud-based email accounts. This domain is referred as *\<your verified domain\>* in the following procedure.  The second domain which is your actual tenant name like contoso.onmicrosoft.com is referred to as *\<your tenant domain\>*.
+
+Run the following command in the Exchange Management Shell (Exchange PowerShell) in your on-premises Exchange organization:
 
 ```powershell
 New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl "https://accounts.accesscontrol.windows.net/<your verified domain>/metadata/json/1"
@@ -61,64 +67,65 @@ In this step, you have to run a PowerShell script to export the on-premises auth
 
 1. Save the following text to a PowerShell script file named, for example, **ExportAuthCert.ps1**.
 
-```powershell
-$thumbprint = (Get-AuthConfig).CurrentCertificateThumbprint
-if((test-path $env:SYSTEMDRIVE\OAuthConfig) -eq $false)
-{
-    md $env:SYSTEMDRIVE\OAuthConfig
-}
-cd $env:SYSTEMDRIVE\OAuthConfig
-$oAuthCert = (dir Cert:\LocalMachine\My) | where {$_.Thumbprint -match $thumbprint}
-$certType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
-$certBytes = $oAuthCert.Export($certType)
-$CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
-[System.IO.File]::WriteAllBytes($CertFile, $certBytes)
-```
+   ```powershell
+   $thumbprint = (Get-AuthConfig).CurrentCertificateThumbprint
+   if((test-path $env:SYSTEMDRIVE\OAuthConfig) -eq $false)
+   {
+      md $env:SYSTEMDRIVE\OAuthConfig
+   }
+   cd $env:SYSTEMDRIVE\OAuthConfig
+   $oAuthCert = (dir Cert:\LocalMachine\My) | where {$_.Thumbprint -match $thumbprint}
+   $certType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
+   $certBytes = $oAuthCert.Export($certType)
+   $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
+   [System.IO.File]::WriteAllBytes($CertFile, $certBytes)
+   ```
 
 2. In Exchange PowerShell in your on-premises Exchange organization, run the PowerShell script that you created in the previous step. For example:
 
-```powershell
-.\ExportAuthCert.ps1
-```
+   ```powershell
+   .\ExportAuthCert.ps1
+   ```
 
 ### Step 4: Upload the on-premises authorization certificate to Azure Active Directory Access Control Service (ACS)
 
-Next, you have to use Windows PowerShell to upload the on-premises authorization certificate that you exported in the previous step to Azure Active Directory Access Control Services (ACS). To do this, the Azure Active Directory Module for Windows PowerShell cmdlets has to be installed. If it’s not installed, go to <https://aka.ms/aadposh> to install the Azure Active Directory Module for Windows PowerShell. Complete the following steps after the Azure Active Directory Module for Windows PowerShell is installed.
+Next, you have to use Windows PowerShell to upload the on-premises authorization certificate that you exported in the previous step to Azure Active Directory Access Control Services (ACS). To do this, the Azure Active Directory Module for Windows PowerShell cmdlets has to be installed. If it's not installed, go to <https://aka.ms/aadposh> to install the Azure Active Directory Module for Windows PowerShell. Complete the following steps after the Azure Active Directory Module for Windows PowerShell is installed.
 
 1. Click the **Azure Active Directory Module for Windows PowerShell** shortcut to open a Windows PowerShell workspace that has the Azure AD cmdlets installed. All commands in this step will be run using the Windows PowerShell for Azure Active Directory console.
 
 2. Save the following text to a PowerShell script file named, for example, **UploadAuthCert.ps1**.
 
-```powershell
-Connect-MsolService;
-Import-Module msonlineextended;
-$CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
-$objFSO = New-Object -ComObject Scripting.FileSystemObject;
-$CertFile = $objFSO.GetAbsolutePathName($CertFile);
-$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
-$cer.Import($CertFile);
-$binCert = $cer.GetRawCertData();
-$credValue = [System.Convert]::ToBase64String($binCert);
-$ServiceName = "00000002-0000-0ff1-ce00-000000000000";
-$p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
-New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
-```
+   ```powershell
+   Connect-MsolService;
+   Import-Module msonlineextended;
+   $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
+   $objFSO = New-Object -ComObject Scripting.FileSystemObject;
+   $CertFile = $objFSO.GetAbsolutePathName($CertFile);
+   $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
+   $cer.Import($CertFile);
+   $binCert = $cer.GetRawCertData();
+   $credValue = [System.Convert]::ToBase64String($binCert);
+   $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
+   $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
+   New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
+   ```
 
 3. Run the PowerShell script that you created in the previous step. For example:
 
-```powershell
-.\UploadAuthCert.ps1
-```
+   ```powershell
+   .\UploadAuthCert.ps1
+   ```
 
 4. After you start the script, a credentials dialog box is displayed. Enter the credentials for the tenant administrator account in your Microsoft Online Azure AD organization. After running the script, leave the Windows PowerShell for Azure AD session open. You will use this to run a PowerShell script in the next step.
 
 ### Step 5: Register all hostname authorities for your external on-premises Exchange HTTP endpoints with Azure Active Directory
 
-You have to run the script in this step for each endpoint in your on-premises Exchange organization that is publically accessible. We recommended that you use wild cards, if possible. For example, assume that Exchange is externally available on **https://mail.contoso.com/ews/exchange.asmx**. In this case a single wildcard could be used: **\*.contoso.com**. This would cover autodiscover.contoso.com and mail.contoso.com endpoints. However, it doesn't cover the top-level domain, **contoso.com**. In cases where your Exchange 2013 Client Access servers are externally accessible with the top-level hostname authority, this hostname authority must also be registered as **contoso.com**. There isn’t a limit for registering additional external hostname authorities.
+You have to run the script in this step for each endpoint in your on-premises Exchange organization that is publically accessible. We recommended that you use wild cards, if possible. For example, assume that Exchange is externally available on **https://mail.contoso.com/ews/exchange.asmx**. In this case a single wildcard could be used: **\*.contoso.com**. This would cover autodiscover.contoso.com and mail.contoso.com endpoints. However, it doesn't cover the top-level domain, **contoso.com**. In cases where your Exchange 2013 Client Access servers are externally accessible with the top-level hostname authority, this hostname authority must also be registered as **contoso.com**. There isn't a limit for registering additional external hostname authorities.
+
 If you are not sure of the external Exchange endpoints in your on-premises Exchange organization, you can get a list of the external configured Web services endpoints by running the following command in Exchange PowerShell in your on-premises Exchange organization:
 
 ```powershell
-Get-WebServicesVirtualDirectory | FL ExternalUrl
+Get-WebServicesVirtualDirectory | Format-List ExternalUrl
 ```
 
 > [!NOTE]
@@ -126,24 +133,25 @@ Get-WebServicesVirtualDirectory | FL ExternalUrl
 
 1. Save the following text to a PowerShell script file named, for example, **RegisterEndpoints.ps1**. This example uses a wildcard to register all endpoints for contoso.com. Replace **contoso.com** with a hostname authority for your on-premises Exchange organization.
 
-```powershell
-$externalAuthority="*.contoso.com"
-$ServiceName = "00000002-0000-0ff1-ce00-000000000000";
-$p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName;
-$spn = [string]::Format("{0}/{1}", $ServiceName, $externalAuthority);
-$p.ServicePrincipalNames.Add($spn);
-Set-MsolServicePrincipal -ObjectID $p.ObjectId -ServicePrincipalNames $p.ServicePrincipalNames;
-```
+   ```powershell
+   $externalAuthority="*.contoso.com"
+   $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
+   $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName;
+   $spn = [string]::Format("{0}/{1}", $ServiceName, $externalAuthority);
+   $p.ServicePrincipalNames.Add($spn);
+   Set-MsolServicePrincipal -ObjectID $p.ObjectId -ServicePrincipalNames $p.ServicePrincipalNames;
+   ```
 
 2. In Windows PowerShell for Azure Active Directory, run the Windows PowerShell script that you created in the previous step. For example:
 
-```powershell
-.\RegisterEndpoints.ps1
-```
+   ```powershell
+   .\RegisterEndpoints.ps1
+   ```
 
 ### Step 6: Create an IntraOrganizationConnector from your on-premises organization to Office 365
 
-You must define a target address for your mailboxes that are hosted in Exchange Online. This target address is created automatically when your Office 365 tenant is created. For example, if your organization’s domain hosted in the Office 365 tenant is "contoso.com", your target service address would be "contoso.mail.onmicrosoft.com".
+You must define a target address for your mailboxes that are hosted in Exchange Online. This target address is created automatically when your Office 365 tenant is created. For example, if your organization's domain hosted in the Office 365 tenant is "contoso.com", your target service address would be "contoso.mail.onmicrosoft.com".
+
 Using Exchange PowerShell, run the following cmdlet in your on-premises organization:
 
 ```powershell
@@ -153,10 +161,11 @@ New-IntraOrganizationConnector -name ExchangeHybridOnPremisesToOnline -Discovery
 
 ### Step 7: Create an IntraOrganizationConnector from your Office 365 tenant to your on-premises Exchange organization
 
-You must define a target address for your mailboxes that are hosted in your on-premises organization. If you organization’s primary SMTP adddress is "contoso.com", this would be "contoso.com".
+You must define a target address for your mailboxes that are hosted in your on-premises organization. If you organization's primary SMTP adddress is "contoso.com", this would be "contoso.com".
 You must also define the external Autodiscover endpoint for your on-premises organization. If your company is "contoso.com" this is usually either of the following:
 
 - https://autodiscover.\<your primary SMTP domain\>/autodiscover/autodiscover.svc
+
 - https://\<your primary SMTP domain\>/autodiscover/autodiscover.svc
 
 > [!NOTE]
@@ -174,12 +183,17 @@ New-IntraOrganizationConnector -name ExchangeHybridOnlineToOnPremises -Discovery
 ### Step 8: Configure an AvailabilityAddressSpace for any pre-Exchange 2013 SP1 servers
 
 When you configure a hybrid deployment in a pre-Exchange 2013 organization, you have to install at least one Exchange 2013 SP1 or greater server with the Client Access and Mailbox server roles in your existing Exchange organization. The Exchange 2013 Client Access and Mailbox servers serve as frontend servers and coordinate communications between your existing Exchange on-premises organization and the Exchange Online organization. This communication includes message transport and messaging features between the on-premises and Exchange Online organizations. We highly recommend installing more than one Exchange 2013 server in your on-premises organization to help increase reliability and availability of hybrid deployment features.
+
 In a mixed deployment with Exchange 2013/2010 or Exchange 2013/2007, it is recommended that all the Internet-facing frontend servers for your on-premises organization are Client Access servers running Exchange 2013 SP1 or greater. All Exchange Web Services (EWS) requests originating from Office 365 and Exchange Online must connect to an Exchange 2013 Client Access server(s) in your on-premises deployment. Additionally, all EWS requests originating in your on-premises Exchange organizations for Exchange Online must be proxied through a Client Access server running Exchange 2013 SP1 or greater. Since these Exchange 2013 Client Access servers have to handle this additional incoming and outgoing EWS requests, it is important to have a sufficient number of Exchange 2013 Client Access servers available to handle the processing load and provide connection redundancy. The number of Client Access servers needed will depend on the average amount of EWS requests and will vary by organization.
+
 Before you complete the following step, make sure:
 
 - The frontend hybrid servers are Exchange 2013 SP1 or greater
+
 - You have a unique external EWS URL for the Exchange 2013 server(s). The Office 365 tenant must connect to these servers in order for cloud-based requests for hybrid features to work correctly.
+
 - The servers have both the Mailbox and Client Access server roles
+
 - Any existing Exchange 2010/2007 Mailbox and Client Access servers have the latest Cumulative Update (CU) or Service Pack (SP) applied.
 
 > [!NOTE]
@@ -188,7 +202,7 @@ Before you complete the following step, make sure:
 An *AvailabilityAddressSpace* must be configured on pre-Exchange 2013 Client Access servers that points to the Exchange Web Services endpoint of your on-premises Exchange 2013 SP1 Client Access server(s). This endpoint is the same endpoint as previously outlined in Step 5 or can be determined by running the following cmdlet on your on-premises Exchange 2013 SP1 Client Access server:
 
 ```powershell
-Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
+Get-WebServicesVirtualDirectory | Format-List AdminDisplayVersion,ExternalUrl
 ```
 
 > [!NOTE]
@@ -210,19 +224,19 @@ You can verify that the OAuth configuration is correct by using the [Test-OAuthC
 To verify that your on-premises Exchange organization can successfully connect to Exchange Online, run the following command in Exchange PowerShell in your on-premises organization:
 
 ```powershell
-Test-OAuthConnectivity -Service EWS -TargetUri https://outlook.office365.com/ews/exchange.asmx -Mailbox <On-Premises Mailbox> -Verbose | fl
+Test-OAuthConnectivity -Service EWS -TargetUri https://outlook.office365.com/ews/exchange.asmx -Mailbox <On-Premises Mailbox> -Verbose | Format-List
 ```
 
 To verify that your Exchange Online organization can successfully connect to your on-premises Exchange organization, use the [Remote PowerShell](https://technet.microsoft.com/en-us/library/jj984289\(v=exchg.150\)) to connect to your Exchange Online organization and run the following command:
 
 ```powershell
-Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of your Exchange On-Premises deployment>/metadata/json/1 -Mailbox <Exchange Online Mailbox> -Verbose | fl
+Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of your Exchange On-Premises deployment>/metadata/json/1 -Mailbox <Exchange Online Mailbox> -Verbose | Format-List
 ```
 
-So, as an example, Test-OAuthConnectivity -Service EWS -TargetUri https://mail.contoso.com/metadata/json/1 -Mailbox ExchangeOnlineBox1 -Verbose | fl
+So, as an example, Test-OAuthConnectivity -Service EWS -TargetUri https://mail.contoso.com/metadata/json/1 -Mailbox ExchangeOnlineBox1 -Verbose | Format-List
 
 > [!IMPORTANT]
-> You can ignore the “The SMTP address has no mailbox associated with it.” error. It’s only important that the <EM>ResultTask</EM> parameter returns a value of <STRONG>Success</STRONG>. For example, the last section of the test output should read:<BR><CODE>ResultType: Success</CODE><BR><CODE>Identity: Microsoft.Exchange.Security.OAuth.ValidationResultNodeId</CODE><BR><CODE>IsValid: True</CODE><BR><CODE>ObjectState: New</CODE>
+> You can ignore the "The SMTP address has no mailbox associated with it." error. It's only important that the <EM>ResultTask</EM> parameter returns a value of <STRONG>Success</STRONG>. For example, the last section of the test output should read:<BR><CODE>ResultType: Success</CODE><BR><CODE>Identity: Microsoft.Exchange.Security.OAuth.ValidationResultNodeId</CODE><BR><CODE>IsValid: True</CODE><BR><CODE>ObjectState: New</CODE>
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
