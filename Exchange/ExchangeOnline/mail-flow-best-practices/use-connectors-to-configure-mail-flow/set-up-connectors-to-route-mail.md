@@ -84,7 +84,7 @@ Prepare your on-premises email server so that it's ready to connect with Office 
 
 5. Open port 25 on your firewall so that Office 365 can connect to your email servers.
 
-6. Make sure your firewall accepts connections from all Office 365 IP addresses. See [Exchange Online Protection IP addresses](https://technet.microsoft.com/library/eb14f38b-7b55-4a47-84a0-4a56a59e4111.aspx) for the published IP address range.
+6. Make sure your firewall accepts connections from all Office 365 IP addresses. See [Exchange Online IP addresses and URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#exchange-online) for the published IP address ranges.
 
 7. Make a note of an email address for each domain in your organization. You'll need this later to test that your connector is working properly.
 
