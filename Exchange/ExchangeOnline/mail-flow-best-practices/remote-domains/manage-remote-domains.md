@@ -50,8 +50,6 @@ For information about when to configure remote domains, descriptions of the avai
 
 **Notes**:
 
-- You can't configure a remote domain for any domain that's listed on the **Office 365 admin center** \> **Domains** page. For example, if fabrikam.com is one of your accepted domains, you can't create a remote domain for fabrikam.com.
-
 - If you create a remote domain for a specific destination domain, and a setting for the specific remote domain conflicts with the same setting in the default remote domain, the setting for the specific remote domain overrides the setting in the default remote domain.
 
 - Once you've created a remote domain, you can't change or replace the domain inside the remote domain. Instead, create and configure a new remote domain with the new domain name.
@@ -62,29 +60,29 @@ For information about when to configure remote domains, descriptions of the avai
 
 2. To create a new domain:
 
-  1. Select **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png).
+   1. Select **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png).
 
-  2. In the **Name** box, enter a descriptive name for the domain.
+   2. In the **Name** box, enter a descriptive name for the domain.
 
-  3. In the **Remote Domain** box, enter the full domain name. Use the wildcard character (\*) for all subdomains of a specified domain, for example, \*.contoso.com.
+   3. In the **Remote Domain** box, enter the full domain name. Use the wildcard character (\*) for all subdomains of a specified domain, for example, \*.contoso.com.
 
 3. To change settings for the default domain, select **Default**, and then select **Edit**.
 
 4. Select the options you want:
 
-  - In the **Out of Office reply types** section, specify which type of out of office replies should be sent to people at this domain.
+   - In the **Out of Office reply types** section, specify which type of out of office replies should be sent to people at this domain.
 
-  - In the **Automatic replies** section, specify whether you want to allow automatic replies, automatic forwarding, or both.
+   - In the **Automatic replies** section, specify whether you want to allow automatic replies, automatic forwarding, or both.
 
-  - In the **Message reporting** section, specify:
+   - In the **Message reporting** section, specify:
 
-  - Whether you want to allow delivery reports and non-delivery reports.
+   - Whether you want to allow delivery reports and non-delivery reports.
 
-  - If a meeting set up by someone on the remote domain is forwarded to another person in your organization, whether the notification message should go to the meeting organizer on the remote domain.
+   - If a meeting set up by someone on the remote domain is forwarded to another person in your organization, whether the notification message should go to the meeting organizer on the remote domain.
 
-  - In the **Use Rich-text format** section, specify whether to follow each user's message settings, or whether to always or never preserve RTF formatting. Selecting **Never** means that RTF messages are sent as plain text or HTML.
+   - In the **Use Rich-text format** section, specify whether to follow each user's message settings, or whether to always or never preserve RTF formatting. Selecting **Never** means that RTF messages are sent as plain text or HTML.
 
-  - In the **Supported Character Set** area, specify which character set to use if the message doesn't specify the character set.
+   - In the **Supported Character Set** area, specify which character set to use if the message doesn't specify the character set.
 
 5. Click **Save**. If you created a new remote domain, it is added to the list.
 
@@ -180,9 +178,9 @@ To verify that you've successfully created and configured a remote domain, use e
 
 - In Exchange Online PowerShell, replace \<Remote Domain Name\> with the name of the remote domain and run the following command to verify the settings:
 
-    ```
-    Get-RemoteDomain -Identity "<Remote Domain Name>" | Format-List
-    ```
+  ```
+  Get-RemoteDomain -Identity "<Remote Domain Name>" | Format-List
+  ```
 
 ## Remove remote domains
 
@@ -226,7 +224,6 @@ To verify that you've successfully removed a remote domain, do either of the fol
 
 - In Exchange Online PowerShell, run the following command and verify that the remote domain isn't listed:
 
-    ```
-    Get-RemoteDomain
-    ```
-
+  ```
+  Get-RemoteDomain
+  ```
