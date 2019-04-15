@@ -17,7 +17,8 @@ manager: serdars
 ---
 
 # Remote domains in Exchange Online
-There are many reasons why you might want to control the types and the format of messages that your users send from Exchange Online to recipients in external domains (domains that _aren't_ configured as accepted domains in Exchange Online). For example:
+
+There are many reasons why you might want to control the types and the format of messages that your users send from Exchange Online to recipients in external domains. For example:
 
 - You don't want to let your users forward messages to recipients in other domains.
 
@@ -67,9 +68,7 @@ If you specify a particular message format for the remote domain, the format of 
 
 You can configure other message settings for remote domains by using Exchange Online PowerShell. For a complete list of settings, see [Set-RemoteDomain](https://technet.microsoft.com/library/4738bf25-39b8-4433-bd64-1d60252c2832.aspx).
 
-## What else do I need to know?
-
-- You can set up a remote domain only for an external domain. A domain is defined as external if it isn't listed on the **Office 365 admin center** \> **Domains** page. For example, if fabrikam.com is one of your domains, you can't create a remote domain for fabrikam.com.
+## More information
 
 - You can't remove the default remote domain.
 
@@ -78,4 +77,3 @@ You can configure other message settings for remote domains by using Exchange On
 ## See also
 
 [Manage remote domains in Exchange Online](manage-remote-domains.md)
-
