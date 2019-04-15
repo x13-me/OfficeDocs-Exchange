@@ -5,7 +5,7 @@ ms.topic: article
 author: JoeDavies-MSFT
 ms.author: josephd
 ms.assetid: d9fbf253-b6f1-4bcd-8548-87ccf49259f1
-ms.date: 7/26/2018
+ms.date: 04/15/2019
 title: Exchange dev/test environment in Azure
 ms.collection:
 - Strat_EX_Admin
@@ -42,32 +42,35 @@ If you don't already have an Azure subscription, you can sign up for an [Azure F
 
 You can create a new Azure virtual network with a domain controller with Azure PowerShell. You can run the following PowerShell commands from a Windows PowerShell command prompt or in the PowerShell Integrated Script Environment (ISE). If you have not installed Azure PowerShell, see [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/).
 
+<!--
 > [!NOTE]
 > These commands are for Azure PowerShell 1.0.0 and later. For a text file that contains all the PowerShell commands in this article, click [here](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5d0b899d).
+
+!-->
 
 1. Sign into your Azure account.
 
     ```
-    Login-AzureRMAccount
+    Connect-AzAccount
     ```
 
 2. Get your subscription name using the following command.
 
     ```
-    Get-AzureRMSubscription | Sort SubscriptionName | Select SubscriptionName
+    Get-AZSubscription | Sort SubscriptionName | Select SubscriptionName
     ```
 
 3. Set your Azure subscription with the following commands. Set the **$subscr** variable by replacing everything within the quotes, including the \< and \> characters, with the correct name.
 
     ```
-    $subscr="<subscription name>"
-    Get-AzureRmSubscription -SubscriptionName $subscr | Select-AzureRmSubscription
+    $subscrName="<subscription name>"
+    Select-AzSubscription -SubscriptionName $subscrName
     ```
 
 4. Create a new resource group. To determine a unique resource group name, use this command to list your existing resource groups.
 
     ```
-    Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
+    Get-AZResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
     ```
 
     Create your new resource group with these commands. Set the variables by replacing everything within the quotes, including the \< and \> characters, with the correct names.
@@ -75,19 +78,19 @@ You can create a new Azure virtual network with a domain controller with Azure P
     ```
     $rgName="<resource group name>"
     $locName="<location name, such as West US>"
-    New-AzureRMResourceGroup -Name $rgName -Location $locName
+    New-AZResourceGroup -Name $rgName -Location $locName
     ```
 
 5. Resource Manager-based virtual machines require a Resource Manager-based storage account. You must pick a globally unique name for your storage account *that contains only lowercase letters and numbers*. You can use this command to list the existing storage accounts.
 
     ```
-    Get-AzureRMStorageAccount | Sort StorageAccountName | Select StorageAccountName
+    Get-AZStorageAccount | Sort StorageAccountName | Select StorageAccountName
     ```
 
     Use this command to test whether a proposed storage account name is unique.
 
     ```
-    Get-AzureRmStorageAccountNameAvailability "<proposed name>"
+    Get-AZStorageAccountNameAvailability "<proposed name>"
     ```
 
     Create a new storage account for your new test environment with these commands.
@@ -95,23 +98,23 @@ You can create a new Azure virtual network with a domain controller with Azure P
     ```
     $rgName="<your new resource group name>"
     $saName="<storage account name>"
-    $locName=(Get-AzureRmResourceGroup -Name $rgName).Location
-    New-AzureRMStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
+    $locName=(Get-AZResourceGroup -Name $rgName).Location
+    New-AZStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
     ```
 
 6. Create the EXSrvrVnet Azure Virtual Network that will host the EXSrvrSubnet subnet and protect it with a network security group.
 
     ```
     $rgName="<name of your new resource group>"
-    $locName=(Get-AzureRmResourceGroup -Name $rgName).Location
-    $exSubnet=New-AzureRMVirtualNetworkSubnetConfig -Name EXSrvrSubnet -AddressPrefix 10.0.0.0/24
-    New-AzureRMVirtualNetwork -Name EXSrvrVnet -ResourceGroupName $rgName -Location $locName -AddressPrefix 10.0.0.0/16 -Subnet $exSubnet -DNSServer 10.0.0.4
-    $rule1 = New-AzureRMNetworkSecurityRuleConfig -Name "RDPTraffic" -Description "Allow RDP to all VMs on the subnet" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 3389
-    $rule2 = New-AzureRMNetworkSecurityRuleConfig -Name "ExchangeSecureWebTraffic" -Description "Allow HTTPS to the Exchange server" -Access Allow -Protocol Tcp -Direction Inbound -Priority 101 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix "10.0.0.5/32" -DestinationPortRange 443
-    New-AzureRMNetworkSecurityGroup -Name EXSrvrSubnet -ResourceGroupName $rgName -Location $locName -SecurityRules $rule1, $rule2
-    $vnet=Get-AzureRMVirtualNetwork -ResourceGroupName $rgName -Name EXSrvrVnet
-    $nsg=Get-AzureRMNetworkSecurityGroup -Name EXSrvrSubnet -ResourceGroupName $rgName
-    Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name EXSrvrSubnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
+    $locName=(Get-AZResourceGroup -Name $rgName).Location
+    $exSubnet=New-AZVirtualNetworkSubnetConfig -Name EXSrvrSubnet -AddressPrefix 10.0.0.0/24
+    New-AZVirtualNetwork -Name EXSrvrVnet -ResourceGroupName $rgName -Location $locName -AddressPrefix 10.0.0.0/16 -Subnet $exSubnet -DNSServer 10.0.0.4
+    $rule1 = New-AZNetworkSecurityRuleConfig -Name "RDPTraffic" -Description "Allow RDP to all VMs on the subnet" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 3389
+    $rule2 = New-AZNetworkSecurityRuleConfig -Name "ExchangeSecureWebTraffic" -Description "Allow HTTPS to the Exchange server" -Access Allow -Protocol Tcp -Direction Inbound -Priority 101 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix "10.0.0.5/32" -DestinationPortRange 443
+    New-AZNetworkSecurityGroup -Name EXSrvrSubnet -ResourceGroupName $rgName -Location $locName -SecurityRules $rule1, $rule2
+    $vnet=Get-AZVirtualNetwork -ResourceGroupName $rgName -Name EXSrvrVnet
+    $nsg=Get-AZNetworkSecurityGroup -Name EXSrvrSubnet -ResourceGroupName $rgName
+    Set-AZVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name EXSrvrSubnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
     ```
 
 7. Create the adVM virtual machine in Azure. adVM is a domain controller for the corp.contoso.com Windows Server AD domain and a DNS server for the virtual machines of the EXSrvrVnet virtual network.
@@ -121,22 +124,22 @@ You can create a new Azure virtual network with a domain controller with Azure P
     ```
     $rgName="<resource group name>"
     # Create an availability set for domain controller virtual machines
-    New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name dcAvailabilitySet -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
+    New-AZAvailabilitySet -ResourceGroupName $rgName -Name dcAvailabilitySet -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
     # Create the domain controller virtual machine
-    $vnet=Get-AzureRMVirtualNetwork -Name EXSrvrVnet -ResourceGroupName $rgName
-    $pip = New-AzureRMPublicIpAddress -Name adVM-NIC -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
-    $nic = New-AzureRMNetworkInterface -Name adVM-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress 10.0.0.4
-    $avSet=Get-AzureRMAvailabilitySet -Name dcAvailabilitySet -ResourceGroupName $rgName
-    $vm=New-AzureRMVMConfig -VMName adVM -VMSize Standard_D1_v2 -AvailabilitySetId $avSet.Id
-    $vm=Set-AzureRmVMOSDisk -VM $vm -Name adVM-OS -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
-    $diskConfig=New-AzureRmDiskConfig -AccountType "StandardLRS" -Location $locName -CreateOption Empty -DiskSizeGB 20
-    $dataDisk1=New-AzureRmDisk -DiskName adVM-DataDisk1 -Disk $diskConfig -ResourceGroupName $rgName
-    $vm=Add-AzureRmVMDataDisk -VM $vm -Name adVM-DataDisk1 -CreateOption Attach -ManagedDiskId $dataDisk1.Id -Lun 1
+    $vnet=Get-AZVirtualNetwork -Name EXSrvrVnet -ResourceGroupName $rgName
+    $pip = New-AZPublicIpAddress -Name adVM-NIC -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
+    $nic = New-AZNetworkInterface -Name adVM-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress 10.0.0.4
+    $avSet=Get-AZAvailabilitySet -Name dcAvailabilitySet -ResourceGroupName $rgName
+    $vm=New-AZVMConfig -VMName adVM -VMSize Standard_D1_v2 -AvailabilitySetId $avSet.Id
+    $vm=Set-AZVMOSDisk -VM $vm -Name adVM-OS -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
+    $diskConfig=New-AZDiskConfig -AccountType "StandardLRS" -Location $locName -CreateOption Empty -DiskSizeGB 20
+    $dataDisk1=New-AZDisk -DiskName adVM-DataDisk1 -Disk $diskConfig -ResourceGroupName $rgName
+    $vm=Add-AZVMDataDisk -VM $vm -Name adVM-DataDisk1 -CreateOption Attach -ManagedDiskId $dataDisk1.Id -Lun 1
     $cred=Get-Credential -Message "Type the name and password of the local administrator account for adVM."
-    $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName adVM -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-    $vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2012-R2-Datacenter -Version "latest"
-    $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-    New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+    $vm=Set-AZVMOperatingSystem -VM $vm -Windows -ComputerName adVM -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+    $vm=Set-AZVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2012-R2-Datacenter -Version "latest"
+    $vm=Add-AZVMNetworkInterface -VM $vm -Id $nic.Id
+    New-AZVM -ResourceGroupName $rgName -Location $locName -VM $vm
     ```
 
     You will be prompted for a user name and password. This article will refer to this user name as ADMIN_NAME. Use a strong password and record both in a secure location.
@@ -215,7 +218,7 @@ In this phase, you create an Exchange virtual machine in the EXSrvrVNet virtual 
 To create the Exchange virtual machine with Azure PowerShell, first log in to Azure with your Azure account from the Windows PowerShell command prompt (if needed).
 
 ```
-Login-AzureRmAccount
+Connect-AzAccount
 ```
 
 You must determine a globally unique DNS name for the exVM virtual machine. You must pick a globally unique DNS name *that contains only lowercase letters and numbers*. You can do this with the following PowerShell commands:
@@ -223,8 +226,8 @@ You must determine a globally unique DNS name for the exVM virtual machine. You 
 ```
 $vmDNSName="<DNS name to test>"
 $rgName="<resource group name>"
-$locName=(Get-AzureRmResourceGroup -Name $rgName).Location
-Test-AzureRmDnsAvailability -DomainQualifiedName $vmDNSName -Location $locName
+$locName=(Get-AZResourceGroup -Name $rgName).Location
+Test-AZDnsAvailability -DomainQualifiedName $vmDNSName -Location $locName
 ```
 
 If you see "True", your proposed name is globally unique.
@@ -237,30 +240,30 @@ $subscrName="<name of your Azure subscription>"
 $rgName="<your resource group name>"
 $vmDNSName="<unique, public DNS name for the Exchange server>"
 # Set the Azure subscription
-Get-AzureRmSubscription -SubscriptionName $subscrName | Select-AzureRmSubscription
+Select-AzSubscription -SubscriptionName $subscrName
 # Get the Azure location and storage account names
-$locName=(Get-AzureRmResourceGroup -Name $rgName).Location
-$saName=(Get-AzureRMStorageaccount | Where {$_.ResourceGroupName -eq $rgName}).StorageAccountName
+$locName=(Get-AZResourceGroup -Name $rgName).Location
+$saName=(Get-AZStorageaccount | Where {$_.ResourceGroupName -eq $rgName}).StorageAccountName
 # Create an availability set for Exchange virtual machines
-New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name exAvailabilitySet -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
+New-AZAvailabilitySet -ResourceGroupName $rgName -Name exAvailabilitySet -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 # Specify the virtual machine name and size
 $vmName="exVM"
 $vmSize="Standard_D3_v2"
-$vnet=Get-AzureRMVirtualNetwork -Name "EXSrvrVnet" -ResourceGroupName $rgName
-$avSet=Get-AzureRMAvailabilitySet -Name exAvailabilitySet -ResourceGroupName $rgName
-$vm=New-AzureRMVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avSet.Id
+$vnet=Get-AZVirtualNetwork -Name "EXSrvrVnet" -ResourceGroupName $rgName
+$avSet=Get-AZAvailabilitySet -Name exAvailabilitySet -ResourceGroupName $rgName
+$vm=New-AZVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avSet.Id
 # Create the NIC for the virtual machine
 $nicName=$vmName + "-NIC"
 $pipName=$vmName + "-PublicIP"
-$pip=New-AzureRMPublicIpAddress -Name $pipName -ResourceGroupName $rgName -DomainNameLabel $vmDNSName -Location $locName -AllocationMethod Dynamic
-$nic=New-AzureRMNetworkInterface -Name $nicName -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress "10.0.0.5"
+$pip=New-AZPublicIpAddress -Name $pipName -ResourceGroupName $rgName -DomainNameLabel $vmDNSName -Location $locName -AllocationMethod Dynamic
+$nic=New-AZNetworkInterface -Name $nicName -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress "10.0.0.5"
 # Create and configure the virtual machine
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for exVM."
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
-$vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2012-R2-Datacenter -Version "latest"
-$vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+$vm=Set-AZVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
+$vm=Set-AZVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+$vm=Set-AZVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2012-R2-Datacenter -Version "latest"
+$vm=Add-AZVMNetworkInterface -VM $vm -Id $nic.Id
+New-AZVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
@@ -290,7 +293,7 @@ In this phase, you configure Exchange on exVM and test mail delivery between two
 1. At the PowerShell command prompt on your local computer, run the following command:
 
   ```
-  Write-Host (Get-AzureRMPublicIpaddress -Name "exVM-PublicIP" -ResourceGroup $rgName).DnsSettings.Fqdn
+  Write-Host (Get-AZPublicIpaddress -Name "exVM-PublicIP" -ResourceGroup $rgName).DnsSettings.Fqdn
   ```
 
 2. Note or copy the full DNS name from the display of the command. This is the Internet DNS name of the exVM virtual machine. You will need this value later.
@@ -393,16 +396,16 @@ Azure virtual machines incur an ongoing cost when they are running. To help mini
 
 ```
 $rgName="<your resource group name>"
-Stop-AzureRMVM -Name exVM -ResourceGroupName $rgName -Force
-Stop-AzureRMVM -Name adVM -ResourceGroupName $rgName -Force
+Stop-AZVM -Name exVM -ResourceGroupName $rgName -Force
+Stop-AZVM -Name adVM -ResourceGroupName $rgName -Force
 ```
 
 To start them again, use these commands:
 
 ```
 $rgName="<your resource group name>"
-Start-AzureRMVM -Name adVM -ResourceGroupName $rgName
-Start-AzureRMVM -Name exVM -ResourceGroupName $rgName
+Start-AZVM -Name adVM -ResourceGroupName $rgName
+Start-AZVM -Name exVM -ResourceGroupName $rgName
 ```
 
 ## See also
