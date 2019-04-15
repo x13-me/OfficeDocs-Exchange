@@ -56,8 +56,15 @@ The following tables show the message limits at the Organization, Connector, Ser
 
 Organizational limits apply to all Exchange 2019 servers, Exchange 2016 servers, Exchange 2013 Mailbox servers, and Exchange 2010 Hub Transport servers that exist in your organization. On Edge Transport servers, any organizational limits that you configure are applied to the local server.
 
-> [!NOTE]
-> Since the identity of unauthenticated (anonymous) senders can't be established, inbound messages from external senders are subject to the maximum sent message size organizational limit. Likewise, outbound messages to external recipients are subject to the maximum received message size organizational limit. In order for a message to be delivered successfully, the message size must be within the message size limits for both the sender and the recipient.
+**Note**:
+
+Organizational limits also apply to external senders and external recipients (anonymous or unauthenticated senders or recipients):
+
+- For inbound messages from external senders, Exchange applies the organizational maximum send message size limit (the maximum receive message size limit as described in the [Recipient limits](#recipient-limits) section is applied to the internal recipient).
+
+- For outbound messages to external recipients, Exchange applies the organization maximum receive message size limit (the maximum send message size limit as described in the [Recipient limits](#recipient-limits) section is applied to the internal sender).
+
+Therefore, a message size must be within the message size limits for both the sender and the recipient. This concept is also explained in the [Order of precedence and placement of message size limits](#order-of-precedence-and-placement-of-message-size-limits) section later in this topic.
 
 |**Size limit**|**Default value**|**EAC configuration**|**Exchange Management Shell configuration**|
 |:-----|:-----|:-----|:-----|
