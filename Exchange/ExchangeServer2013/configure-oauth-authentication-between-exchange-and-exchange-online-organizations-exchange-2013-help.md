@@ -96,18 +96,24 @@ Next, you have to use Windows PowerShell to upload the on-premises authorization
 2. Save the following text to a PowerShell script file named, for example, **UploadAuthCert.ps1**.
 
    ```powershell
-   Connect-MsolService;
-   Import-Module msonlineextended;
-   $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
-   $objFSO = New-Object -ComObject Scripting.FileSystemObject;
-   $CertFile = $objFSO.GetAbsolutePathName($CertFile);
-   $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
-   $cer.Import($CertFile);
-   $binCert = $cer.GetRawCertData();
-   $credValue = [System.Convert]::ToBase64String($binCert);
-   $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
-   $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
-   New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
+#connect to MsolService and import extended module
+    Connect-MsolService;
+    Import-Module MSOnlineExt #or install the module install-module MSOnlineExt
+    
+    #Create new FileSystemObject to get Absolute Path.
+    $objFSO = New-Object -ComObject Scripting.FileSystemObject;
+    $CertFile = $objFSO.GetAbsolutePathName($CertFile);
+    
+    #Create the certificate object to import and read it to set it as $credvalue
+    $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
+    $cer.Import($CertFile);
+    $binCert = $cer.GetRawCertData();
+    $credValue = [System.Convert]::ToBase64String($binCert);
+    
+    #Get the Msol Service Principal that has the $serviceName        
+    $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
+    #Set up new MsolServicePrincipalCredential
+    New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
    ```
 
 3. Run the PowerShell script that you created in the previous step. For example:
