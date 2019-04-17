@@ -100,7 +100,7 @@ A retention policy can have the following retention tags:
 
 |**Retention tag type**|**Tags in a policy**|
 |:-----|:-----|
-|Default policy tag (DPT)  <br/> |One DPT with the **Move to archive** action  <br/> One DPT with the **Delete and allow Rrecovery** or **Permanently delete** actions  <br/> One DPT for voice mail messages with the **Delete and allow recovery** or **Permanently delete** action  <br/> |
+|Default policy tag (DPT)  <br/> |One DPT with the **Move to archive** action  <br/> One DPT with the **Delete and allow Recovery** or **Permanently delete** actions  <br/> One DPT for voice mail messages with the **Delete and allow recovery** or **Permanently delete** action  <br/> |
 |Retention policy tags (RPTs)  <br/> |One RPT for each supported default folder  <br/> **Note**: You can't link more than one RPT for a particular default folder (such as **Deleted Items**) to the same retention policy.  <br/> |
 |Personal tags  <br/> |Any number of personal tags  <br/> **Note**: Many personal tags in a policy can confuse users. We recommend adding no more than 10 personal tags to a retention policy.  <br/> |
 
