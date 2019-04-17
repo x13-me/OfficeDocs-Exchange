@@ -84,6 +84,9 @@ When Outlook for iOS and Android is enabled with hybrid Modern Authentication, t
 
 The hybrid Modern Authentication architecture has the following technical requirements:
 
+> [!Note]
+>  On-premises accounts leveraging hybrid Modern Authentication with Outlook mobile is not supported with Office 365 US Government Community and Defense tenants, Office 365 Germany tenants, and Office 365 China operated by 21Vianet tenants.
+
 1. **Exchange on-premises setup**:
 
   - Exchange Server 2016 Cumulative Update 8 (CU8) or later, or Exchange Server 2013 CU19 or later on all Exchange servers. In hybrid deployments (on-premises Exchange and Exchange Online) or in organizations that use Exchange Online Archiving (EOA) with their on-premises Exchange deployment, you need to deploy the most current CU or one CU prior to the most current.
@@ -112,8 +115,6 @@ The hybrid Modern Authentication architecture has the following technical requir
   - Requires an Office 365 Enterprise, Business, or Education tenant.
 
   - The on-premises mailbox data is synchronized in the same datacenter region where that Office 365 tenant is setup. For more about where Office 365 data is located, visit the Microsoft Trust Center.
-
-  - Use of Office 365 US Government Community and Defense tenants, Office 365 Germany tenants, and Office 365 China operated by 21Vianet tenants are not supported.
 
   - The external URL host names for Exchange ActiveSync and AutoDiscover must be published as service principals to Azure Active Directory through the Hybrid Configuration Wizard.
 
