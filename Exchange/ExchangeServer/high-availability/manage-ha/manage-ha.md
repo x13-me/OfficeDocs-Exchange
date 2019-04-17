@@ -51,7 +51,7 @@ The operational management tasks associated with DAGs include:
 
 - **Shutting down DAG members**: The Exchange Server high availability solution is integrated with the Windows shutdown process. If an administrator or application initiates a shutdown of a Windows server in a DAG that has a mounted database that's replicated to one or more DAG members, the system will try to activate another copy of the mounted databases prior to allowing the shutdown process to complete. However, this new behavior doesn't guarantee that all of the databases on the server being shut down will experience a lossless activation. As a result, it's a best practice to perform a server switchover prior to shutting down a server that's a member of a DAG.
 
-For detailed steps about how to create a DAG, see [Create a database availability group](create-dags.md). For detailed steps about how to configure DAGs and DAG properties, see [Configure database availability group properties](configure-dag-properties.md). For more information about each of the preceding management tasks, and about managing DAGs in general, see [Managing database availability groups](http://technet.microsoft.com/library/4abde67b-4995-4a57-894f-ba76aa72341c.aspx).
+For detailed steps about how to create a DAG, see [Create a database availability group](create-dags.md). For detailed steps about how to configure DAGs and DAG properties, see [Configure database availability group properties](configure-dag-properties.md). For more information about each of the preceding management tasks, and about managing DAGs in general, see [Manage database availability groups](manage-dags.md).
 
 ## Mailbox database copy management
 <a name="Ma"> </a>

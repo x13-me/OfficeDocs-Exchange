@@ -174,7 +174,7 @@ The feature pane is the first level of navigation for most of the tasks that you
 
   - [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx)
 
-  - [Managing database availability groups](http://technet.microsoft.com/library/4abde67b-4995-4a57-894f-ba76aa72341c.aspx)
+  - [Manage database availability groups](../../high-availability/manage-ha/manage-dags.md)
 
   - [Virtual Directory Management](http://technet.microsoft.com/library/1af30fd5-621c-4acb-b6df-d8fa64d719ba.aspx)
 
