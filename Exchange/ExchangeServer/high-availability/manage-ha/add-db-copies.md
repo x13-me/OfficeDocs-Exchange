@@ -20,7 +20,7 @@ manager: serdars
 
 When you add a copy of a mailbox database, continuous replication is automatically enabled between the existing database and the database copy. Database copies are automatically assigned an identity in the format of \< _DatabaseName_\>\\< _HostMailboxServerName_\>. For example, a copy of the database DB1 that's hosted on the server MBX3 would be DB1\MBX3.
 
-Looking for other management tasks related to mailbox database copies? Check out [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx).
+Looking for other management tasks related to mailbox database copies? Check out [Manage mailbox database copies](manage-database-copies.md).
 
 ## What do you need to know before you begin?
 
@@ -101,7 +101,4 @@ To verify that you have successfully created a mailbox database copy, do one of 
 
 [Mailbox database copies](../../high-availability/database-availability-groups/database-copies.md)
 
-[Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx)
-
-
-
+[Manage mailbox database copies](manage-database-copies.md)
