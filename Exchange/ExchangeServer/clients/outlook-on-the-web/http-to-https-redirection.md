@@ -87,7 +87,7 @@ Based on the information in the [Default Require SSL and HTTP Redirect settings 
 
     ![In IIS Manager, in the SSL settings of the virtual directory, select Require under Require SSL.](../../media/b6d83a19-4f5d-4f9a-b681-8945940a0adc.png)
 
-5. Repeat the previous steps on each virtual directory in the default website that had **Require SSL** enabled by default (except for /owa). The only virtual directories that don't have **Require SSL** enabled by default are /IES, /PowerShell, and /Rpc.
+5. Repeat the previous steps on each virtual directory in the default website that had **Require SSL** enabled by default (except for /owa). The only virtual directories that don't have **Require SSL** enabled by default are /PowerShell and /Rpc.
 
 **Note**: To perform these procedures on the command line, replace _\<VirtualDirectory\>_ with the name of the virtual directory, and run the following command in an elevated command prompt:
 
@@ -192,13 +192,11 @@ The default **Require SSL** and **HTTP Redirect** settings for the default websi
 |**Website**|**Virtual directory**|**Require SSL**|**HTTP Redirect**|
 |:-----|:-----|:-----|:-----|
 |Default Web Site|n/a|yes|none|
-|Default Web Site|_wmcs|yes|none|
 |Default Web Site|API|yes|none|
 |Default Web Site|aspnet_client (directory)|yes|none|
 |Default Web Site|Autodiscover|yes|none|
 |Default Web Site|ecp|yes|none|
 |Default Web Site|EWS|yes|none|
-|Default Web Site|IES|no|none|
 |Default Web Site|mapi|yes|none|
 |Default Web Site|Microsoft-Server-ActiveSync|yes|none|
 |Default Web Site|OAB|yes|none|
