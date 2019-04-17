@@ -70,7 +70,7 @@ The operational management tasks associated with mailbox database copies include
 
 - **Removing a mailbox database copy**: Occasionally, it may be necessary to remove a mailbox database copy. For example, you can't remove a Mailbox server from a DAG until all mailbox database copies are removed from the server. In addition, you must remove all copies of a mailbox database before you can change the path for a mailbox database.
 
-For detailed steps about how to add a mailbox database copy, see [Add a mailbox database copy](add-db-copies.md). For detailed steps about how to configure mailbox database copies, see [Configure mailbox database copy properties](configure-db-properties.md). For more information about each of the preceding management tasks, and about managing mailbox database copies in general, see [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx). For detailed steps about how to remove a mailbox database copy, see [Remove a mailbox database copy](remove-db-copies.md).
+For detailed steps about how to add a mailbox database copy, see [Add a mailbox database copy](add-db-copies.md). For detailed steps about how to configure mailbox database copies, see [Configure mailbox database copy properties](configure-db-properties.md). For more information about each of the preceding management tasks, and about managing mailbox database copies in general, see [Manage mailbox database copies](manage-database-copies.md). For detailed steps about how to remove a mailbox database copy, see [Remove a mailbox database copy](remove-db-copies.md).
 
 ## Proactive monitoring
 <a name="Pr"> </a>
