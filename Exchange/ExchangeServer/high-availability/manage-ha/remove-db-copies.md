@@ -18,7 +18,7 @@ manager: serdars
 
 You can use these procedures to remove a copy of a mailbox database, but you can't use them to remove the **last** copy of a mailbox database. For detailed steps about how to remove the last copy of a mailbox database, see [Remove a mailbox database](../../architecture/mailbox-servers/manage-databases.md#BKMK_Remove) or [Remove-MailboxDatabase](http://technet.microsoft.com/library/4d07d736-1dd7-43af-9f54-37d7c648572e.aspx).
 
-Looking for other management tasks related to mailbox database copies? Check out [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx).
+Looking for other management tasks related to mailbox database copies? Check out [Manage mailbox database copies](manage-database-copies.md).
 
 ## What do you need to know before you begin?
 

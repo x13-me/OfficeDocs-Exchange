@@ -18,7 +18,7 @@ manager: serdars
 
 When you add a server to a DAG, the server works with the other DAG members to provide automatic database-level recovery from database, server, or network failures. When you remove a server from a DAG, the server is no longer automatically protected from failures.
 
-Looking for other management tasks related to DAGs? Check out [Managing database availability groups](http://technet.microsoft.com/library/4abde67b-4995-4a57-894f-ba76aa72341c.aspx).
+Looking for other management tasks related to DAGs? Check out [Manage database availability groups](manage-dags.md).
 
 ## What do you need to know before you begin?
 

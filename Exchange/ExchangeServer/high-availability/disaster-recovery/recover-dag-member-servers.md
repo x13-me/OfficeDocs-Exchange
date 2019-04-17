@@ -22,7 +22,7 @@ Microsoft Exchange Server Setup includes the switch _/m:RecoverServer_ that can 
 
 After the server's configuration information is gathered from Active Directory, the original Exchange files and services are then installed on the server, and the roles and settings that were stored in Active Directory are then applied to the server.
 
-Looking for other management tasks related to DAGs? Check out [Managing database availability groups](http://technet.microsoft.com/library/4abde67b-4995-4a57-894f-ba76aa72341c.aspx).
+Looking for other management tasks related to DAGs? Check out [Manage database availability groups](../manage-ha/manage-dags.md).
 
 ## What do you need to know before you begin?
 
