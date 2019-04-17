@@ -162,6 +162,7 @@
 #### [Prepare Gmail or G Suite accounts](../mailbox-migration/migrating-imap-mailboxes/prepare-gmail-or-g-suite-accounts.md)
 #### [Migrating your Outlook.com account](../mailbox-migration/migrating-imap-mailboxes/migrating-your-outlook-com-account.md)
 #### [Enable 2-step verification for Google apps](../mailbox-migration/migrating-imap-mailboxes/enable-2-step-verification-for-google-apps.md)
+### [Perform a G Suite migration](../mailbox-migration/perform-G-Suite-migration.md)
 ### [Migrate mailboxes across tenants](../mailbox-migration/migrate-mailboxes-across-tenants.md)
 ### [Migrate from Lotus Notes](../mailbox-migration/migrate-from-lotus-notes.md)
 ### [Add an SSL certificate to Exchange 2013](../mailbox-migration/add-an-ssl-certificate-to-exchange-2013.md)
