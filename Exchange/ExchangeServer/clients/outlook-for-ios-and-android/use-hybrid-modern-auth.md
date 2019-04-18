@@ -84,8 +84,8 @@ When Outlook for iOS and Android is enabled with hybrid Modern Authentication, t
 
 The hybrid Modern Authentication architecture has the following technical requirements:
 
-> [!Note]
->  On-premises accounts leveraging hybrid Modern Authentication with Outlook mobile is not supported with Office 365 US Government Community and Defense tenants, Office 365 Germany tenants, and Office 365 China operated by 21Vianet tenants.
+> [!NOTE]
+> On-premises accounts leveraging hybrid Modern Authentication with Outlook mobile are not supported with Office 365 US Government Community and Defense tenants, Office 365 Germany tenants, and Office 365 China operated by 21Vianet tenants.
 
 1. **Exchange on-premises setup**:
 
