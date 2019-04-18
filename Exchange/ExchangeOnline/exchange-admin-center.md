@@ -22,11 +22,11 @@ You use the Exchange admin center to manage email settings for your organization
 
 ## Get to the Exchange admin center
 
-You must have [Office 365 admin permissions](https://go.microsoft.com/fwlink/p/?LinkID=255444) to access the Exchange admin center.
+You must have [Microsoft 365 admin permissions](https://go.microsoft.com/fwlink/p/?LinkID=255444) to access the Exchange admin center.
 
 1. [Sign in](https://go.microsoft.com/fwlink/p/?LinkID=529144) to Office 365 using your work or school account, and then choose the **Admin** tile.
 
-2. In the Office 365 admin center, choose **Admin centers** \> **Exchange**.
+2. In the Microsoft  365 admin center, choose **Admin centers** \> **Exchange**.
 
     ![Get to the Exchange admin center](media/ae439954-b836-47fa-9d02-3709b93cdb10.jpg)
 

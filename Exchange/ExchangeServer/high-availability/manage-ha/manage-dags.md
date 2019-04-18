@@ -223,7 +223,7 @@ Network encryption is a property of the DAG and not a DAG network. You can confi
 
 ### DAG network compression
 
-DAGs support built-in compression. When compression is enabled, DAG network communication uses XPRESS, which is the Microsoft implementation of the LZ77 algorithm. For details, see [An Explanation of the Deflate Algorithm](http://www.zlib.net/feldspar.mdl) and section 3.1.4.11.1.2.1 "LZ77 Compression Algorithm" of [Wire Format Protocol Specification](https://go.microsoft.com/fwlink/p/?linkId=179133). This is the same type of compression used in many Microsoft protocols, in particular, MAPI RPC compression between Microsoft Outlook and Exchange.
+DAGs support built-in compression. When compression is enabled, DAG network communication uses XPRESS, which is the Microsoft implementation of the LZ77 algorithm. For details, see [An Explanation of the Deflate Algorithm](https://www.zlib.net/feldspar.html) and section 3.1.4.11.1.2.1 "LZ77 Compression Algorithm" of [Wire Format Protocol Specification](https://go.microsoft.com/fwlink/p/?linkId=179133). This is the same type of compression used in many Microsoft protocols, in particular, MAPI RPC compression between Microsoft Outlook and Exchange.
 
 As with network encryption, network compression is also a property of the DAG and not a DAG network. You configure DAG network compression by using the [Set-DatabaseAvailabilityGroup](http://technet.microsoft.com/library/4353c3ab-75b7-485e-89ae-d4b09b44b646.aspx) cmdlet in the Exchange Management Shell. The possible compression settings for DAG network communications are shown in the following table.
 

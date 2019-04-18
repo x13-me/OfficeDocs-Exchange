@@ -21,7 +21,7 @@ Use the steps in this topic to configure AutoReseed for a database availability 
 > [!CAUTION]
 > The AutoReseed feature doesn't perform any prerequisite configuration tasks for you. Installing disks correctly, adding spare disks to the system, replacing bad disks, and formatting new disks must be done manually by an administrator.
 
-For additional management tasks related to DAGs, see [Managing database availability groups](http://technet.microsoft.com/library/4abde67b-4995-4a57-894f-ba76aa72341c.aspx).
+For additional management tasks related to DAGs, see [Manage database availability groups](manage-dags.md).
 
 ## What do you need to know before you begin?
 

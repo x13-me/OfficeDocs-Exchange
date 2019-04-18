@@ -16,7 +16,7 @@ manager: serdars
 
 # Configure mailbox database copy properties
 
-Each mailbox database copy has its own properties, which you can configure. These properties include the amount of time, if any, for replay lag and truncation lag, and the activation preference number. For more information about replay lag, truncation lag and the activation preference number, see [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx).
+Each mailbox database copy has its own properties, which you can configure. These properties include the amount of time, if any, for replay lag and truncation lag, and the activation preference number. For more information about replay lag, truncation lag and the activation preference number, see [Manage mailbox database copies](manage-database-copies.md).
 
 ## What do you need to know before you begin?
 

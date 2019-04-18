@@ -21,7 +21,7 @@ A database availability group (DAG) is a set of up to 16 Microsoft Exchange Serv
 > [!IMPORTANT]
 > All servers within a DAG must be running the same version of Exchange. You can't mix Exchange 2013 servers and Exchange servers in the same DAG.
 
-Looking for other management tasks related to DAGs? Check out [Managing database availability groups](http://technet.microsoft.com/library/4abde67b-4995-4a57-894f-ba76aa72341c.aspx).
+Looking for other management tasks related to DAGs? Check out [Manage database availability groups](manage-dags.md).
 
 ## What do you need to know before you begin?
 

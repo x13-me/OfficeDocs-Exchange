@@ -18,7 +18,7 @@ manager: serdars
 
 You may need to suspend or resume a database copy for a variety of reasons, such as maintenance on the disk that contains the database copy. Or you may need to suspend an individual database copy from activation for disaster recovery purposes.
 
-Looking for other management tasks related to mailbox database copies? Check out [Managing mailbox database copies](http://technet.microsoft.com/library/06df16b4-f209-4d3a-8c68-0805c745f9b2.aspx).
+Looking for other management tasks related to mailbox database copies? Check out [Manage mailbox database copies](manage-database-copies.md).
 
 ## What do you need to know before you begin?
 
