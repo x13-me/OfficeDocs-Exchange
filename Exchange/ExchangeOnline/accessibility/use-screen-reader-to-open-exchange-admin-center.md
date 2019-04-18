@@ -23,12 +23,12 @@ The Exchange admin center (EAC) is a web-based app that lets you manage your Exc
 > [!NOTE]
 > When you work in the EAC, we recommend that you use Internet Explorer as your web browser. For more information about the keyboard shortcuts you can use to navigate the EAC and about other accessibility features that are available for Exchange Online, see [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=786972) and [Accessibility in Exchange Online](accessibility.md).
 
-1. Sign in to your organization's Office 365 account. In the **App launcher**, move the focus to the **Admin** app. You hear "Go to the Office 365 admin center, Link." Press Enter.
+1. Sign in to your organization's Office 365 account. In the **App launcher**, move the focus to the **Admin** app. You hear "Go to the Microsoft 365 admin center, Link." Press Enter.
 
    > [!TIP]
    > If you use the **My apps** page to open your apps, to quickly move to the **Admin** app (sometimes one of the last apps on the list), move the focus to the **Search apps** box (one of the first elements on the page). In JAWS, you hear "Leaving menus, My apps, Edit, Type text." In Narrator, you hear "Search apps, Editing." Type admin, and then move the focus to the only search result on the page: **Admin** app. You hear "Admin link." Press Enter.
 
-2. As the **Office 365 admin center** opens, in JAWS, you hear "Office 365, Office admin center, Home." In Narrator, you hear "Office 365, Editing..
+2. As the **Microsoft 365 admin center** opens, in JAWS, you hear "Office 365, Microsoft admin center, Home." In Narrator, you hear "Office 365, Editing..
 
 3. To move the focus to the **Expand** link in the navigation pane, press the Tab key until you hear one of the following two options.
 
