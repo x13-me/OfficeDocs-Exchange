@@ -247,7 +247,7 @@ If you created a migration batch and configured it to be started manually, you c
 
 - You'll be able to follow the sync status on the migration dashboard. If there are errors, you can view a log file that gives you more information about them.
 
-- You can also verify that the users get created in the Office 365 admin center as the migration proceeds.
+- You can also verify that the users get created in the Microsoft 365 admin center as the migration proceeds.
 
     After the migration is done, the sync status is **Synced**.
 
@@ -294,7 +294,7 @@ When you delete a cutover migration batch, the migration service cleans up any r
 
 ## Step 7: Assign licenses to Office 365 users
 
- **Activate Office 365 user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period ends (30 days). To assign a license in the Office 365 admin center, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+ **Activate Office 365 user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period ends (30 days). To assign a license in the Microsoft 365 admin center, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
 
 ## Complete post migration tasks
 <a name="PostMigration"> </a>
