@@ -96,7 +96,7 @@ This example searches the message tracking logs using the following search crite
 - Write the output to a new file named `D:\Send Search.txt`
 
 ```
-Get-MessageTrackingLog -EventId Send | Format-List Send*,Recipient* > "D:\Send Search.txt"
+Get-MessageTrackingLog -EventId Send | Format-List Send*,Recipient* | Set-Content -Path "D:\Send Search.txt"
 ```
 
 ## Use the Exchange Management Shell to search the message tracking logs for message entries on multiple servers
@@ -124,6 +124,3 @@ $Servers = Get-ExchangeServer; $Servers | where {$_.isHubTransportServer -eq $tr
 ## Use the EAC to search the message tracking logs
 
 You can use the Delivery Reports for administrators feature in the Exchange admin center (EAC) to search the message tracking logs for information about messages sent by or received by a specific mailbox in your organization. For more information, see [Track messages with delivery reports](track-messages-with-delivery-reports.md).
-
-
-

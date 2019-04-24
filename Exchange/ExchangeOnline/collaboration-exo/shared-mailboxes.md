@@ -18,12 +18,10 @@ manager: scotv
 
 # Shared mailboxes in Exchange Online
 
- **Summary**: About shared mailboxes in Exchange Online, and how to create them.
-
 Shared mailboxes makes it easy for a group of people in your company to monitor and send email from a common account, such as info@contoso.com or support@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email looks like it was sent by the shared mailbox, not from the individual user.
 
 > [!IMPORTANT]
->  If you're using Office 365 for business, you should create your shared mailbox in the Microsoft 365 admin center. See [Create shared mailboxes in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=834766).
+> If you're using Office 365 for business, you should create your shared mailbox in the Microsoft 365 admin center. For more information, see [Create a shared mailbox](https://docs.microsoft.com/office365/admin/email/create-a-shared-mailbox).
 
 If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes. To learn more about shared mailboxes, see [Shared Mailboxes](https://technet.microsoft.com/library/1d71c01b-e261-408e-a633-1d1c9d00032a.aspx).
 
@@ -35,14 +33,14 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 2. Fill-in the required fields:
 
-  - **Display name**
+   - **Display name**
 
-  - **Email address**
+   - **Email address**
 
 3. To grant Full Access or Send As permissions, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif), and then select the users you want to grant permissions to. You can use the CTRL key to select multiple users. Confused about which permission to use? See [Which permission should you use?](https://technet.microsoft.com/library/d34bc827-1e83-4a7f-a219-8ba9c19fe24b.aspx#TypesOfPerms) later in this topic.
 
-    > [!NOTE]
-    > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
+   > [!NOTE]
+   > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
 
 4. Click **Save** to save your changes and create the shared mailbox.
 
@@ -54,8 +52,8 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 3. To grant or remove Full Access and Send As permissions, click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) or **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.gif) and then select the users you want to grant permissions to.
 
-    > [!NOTE]
-    > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
+   > [!NOTE]
+   > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
 
 4. Click **Save** to save your changes.
 
@@ -81,7 +79,6 @@ New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Al
 For detailed syntax and parameter information, see [new-Mailbox](https://technet.microsoft.com/library/42dbb25a-0b23-4775-ae15-7af62c089565.aspx).
 
 ## Which permissions should you use?
-<a name="TypesOfPerms"> </a>
 
 You can use the following permissions with a shared mailbox.
 
@@ -92,12 +89,8 @@ You can use the following permissions with a shared mailbox.
 - **Send on Behalf**: The Send on Behalf permission lets a user send email on behalf of the shared mailbox. For example, if John logs into the shared mailbox Reception Building 32 and sends an email, it look like the mail was sent by "John on behalf of Reception Building 32". You can't use the EAC to grant Send on Behalf permissions, you must use **Set-Mailbox** cmdlet with the _GrantSendonBehalf_ parameter.
 
 ## More information
-<a name="TypesOfPerms"> </a>
 
 For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
-
-
-
