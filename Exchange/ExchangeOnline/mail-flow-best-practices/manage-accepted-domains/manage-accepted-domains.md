@@ -18,9 +18,9 @@ manager: serdars
 
 # Manage accepted domains in Exchange Online
 
-When you add your domain to Office 365, it's called an accepted domain. This means that users in this domain can send and receive mail. For more information on how to add your domain to Office 365 using the Office 365 admin center, see [Add a domain to Office 365](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
+When you add your domain to Office 365, it's called an accepted domain. This means that users in this domain can send and receive mail. For more information on how to add your domain to Office 365 using the Microsoft 365 admin center, see [Add a domain to Office 365](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
 
-After you add your domain using the Office 365 admin center, you can use the Exchange admin center (EAC) to view your accepted domains and configure the domain type.
+After you add your domain using the Microsoft 365 admin center, you can use the Exchange admin center (EAC) to view your accepted domains and configure the domain type.
 
 There are two types of accepted domains in Exchange Online:
 
@@ -87,7 +87,7 @@ Get-AcceptedDomain -Identity contoso.com | Format-List
 
 ## Configure the domain type
 
-After you add a domain to your Exchange Online organization in the Office 365 admin center, you can configure the domain type.
+After you add a domain to your Exchange Online organization in the Microsoft 365 admin center, you can configure the domain type.
 
 ### Use the EAC to change the domain type
 
