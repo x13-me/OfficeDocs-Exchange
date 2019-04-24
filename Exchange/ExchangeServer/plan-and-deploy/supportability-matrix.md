@@ -71,15 +71,15 @@ The following tables identify the operating system platforms on which each versi
 
 The following table identifies the Active Directory environments that Exchange can communicate with. Supported environments are identified by an X character. An Active Directory server refers to both writable global catalog servers and to writable domain controllers. Read-only global catalog servers and read-only domain controllers aren't supported.
 
-|**Operating system environment**|**Exchange 2019**|**Exchange 2016 CU7 and later**|**Exchange 2016 CU3 to CU6**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3 RU22 or later**|**Exchange 2010 SP3 RU5 - RU21**|
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|Windows Server 2019 Active Directory servers|X|||||||
-|Windows Server 2016 Active Directory servers|X|X|X|X|X|X||
-|Windows Server 2012 R2 Active Directory servers|X|X|X|X|X|X|X|
-|Windows Server 2012 Active Directory servers||X|X|X|X|X|X|
-|Windows Server 2008 R2 SP1 Active Directory servers||X|X|X|X|X|X|
-|Windows Server 2008 SP2 Active Directory servers|||X|X|X|X|X|
-|Windows Server 2003 SP2 Active Directory servers||||X|X|X|X|
+|**Operating system environment**|**Exchange 2019**|**Exchange 2016 CU12 and later**|**Exchange 2016 CU7 and later**|**Exchange 2016 CU3 to CU6**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3 RU22 or later**|**Exchange 2010 SP3 RU5 - RU21**|
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|Windows Server 2019 Active Directory servers|X|X|||||||
+|Windows Server 2016 Active Directory servers|X|X|X|X|X|X|X||
+|Windows Server 2012 R2 Active Directory servers|X|X|X|X|X|X|X|X|
+|Windows Server 2012 Active Directory servers||X|X|X|X|X|X|X|
+|Windows Server 2008 R2 SP1 Active Directory servers||X|X|X|X|X|X|X|
+|Windows Server 2008 SP2 Active Directory servers||||X|X|X|X|X|
+|Windows Server 2003 SP2 Active Directory servers|||||X|X|X|X|
 
 |**AD forest functional level**|**Exchange 2019**|**Exchange 2016 CU7 and later**|**Exchange 2016 CU3 to CU6**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3 RU22 or later**|**Exchange 2010 SP3 RU5 - RU21**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
