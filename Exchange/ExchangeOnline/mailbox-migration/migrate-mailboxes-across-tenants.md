@@ -69,7 +69,7 @@ To create the resources in the target (Contoso) tenant:
 
    2. Verify that all new users and groups are synced to the Contoso.com target tenant via directory synchronization. The objects should appear as user@contoso.onmicrosoft.com in the new tenant since the Fabrikam domain has not been moved over at this time. The primary email address for the users and groups can be updated to @fabrikam.com after the domain move is complete.
 
-2. If directory synchronization will not be used, or if any Rooms, Resources, Groups or Users are managed in the Office 365 admin center of the source tenant; these objects must be created in the target tenant. Objects can be created manually in the Office 365 admin center or for larger numbers import a CSV file by using the bulk add feature in the Office 365 admin center, or by using Windows PowerShell.
+2. If directory synchronization will not be used, or if any Rooms, Resources, Groups or Users are managed in the Microsoft 365 admin center of the source tenant; these objects must be created in the target tenant. Objects can be created manually in the Microsoft 365 admin center or for larger numbers import a CSV file by using the bulk add feature in the Microsoft 365 admin center, or by using Windows PowerShell.
 
 #### End-user communications
 
@@ -89,7 +89,7 @@ To prepare the domain for migration, complete the following steps.
 
 1. Begin domain verification process on target (Contoso) tenant for the Fabrikam.com email domain.
 
-2. In the contoso.com Office 365 admin center, add the Fabrikam.com domain and create TXT records in Domain Name Systems (DNS) for verification.
+2. In the contoso.com Microsoft 365 admin center, add the Fabrikam.com domain and create TXT records in Domain Name Systems (DNS) for verification.
 
     > [!NOTE]
     > The verification will fail because the domain is still in use in the other tenant.
@@ -116,7 +116,7 @@ Next, you'll schedule the TTL test.
 
 #### Disable directory sync in source tenant
 
-In the source tenant Office 365 admin center, disable directory sync. This process can take 24 hours or more so it must be done ahead of the migration. Once disabled in the portal, any changes to the source tenant AD DS will no longer sync to the Office 365 tenant. Adjust your existing user and group provisioning process accordingly.
+In the source tenant Microsoft 365 admin center, disable directory sync. This process can take 24 hours or more so it must be done ahead of the migration. Once disabled in the portal, any changes to the source tenant AD DS will no longer sync to the Office 365 tenant. Adjust your existing user and group provisioning process accordingly.
 
 ### Migration: The day you migrate
 
