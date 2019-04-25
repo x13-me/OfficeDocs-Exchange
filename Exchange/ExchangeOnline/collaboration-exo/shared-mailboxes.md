@@ -47,7 +47,7 @@ You need to be assigned permissions before you can perform this procedure or pro
    > [!NOTE]
    > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
 
-4. Click **Save** to save your changes and create the shared mailbox.
+5. Click **Save** to save your changes and create the shared mailbox.
 
 ### Use the EAC to edit shared mailbox delegation
 
