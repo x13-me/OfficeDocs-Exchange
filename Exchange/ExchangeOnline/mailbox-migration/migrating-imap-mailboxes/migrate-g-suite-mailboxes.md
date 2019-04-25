@@ -33,10 +33,10 @@ Looking for Windows PowerShell commands? See [User PowerShell to perform an IMAP
 
 Want to migrate other types of IMAP mailboxes? See [Migrate other types of IMAP mailboxes to Office 365](migrate-other-types-of-imap-mailboxes.md) .
 
-## Migration from G Suite mailboxes using the Office 365 admin center
+## Migration from G Suite mailboxes using the Microsoft 365 admin center
 <a name="MigrationGSuite"> </a>
 
-You can use the setup wizard in the Office 365 admin center for an IMAP migration. See [IMAP migration in the Office 365 admin center](imap-migration-in-the-admin-center.md) for instructions.
+You can use the setup wizard in the Microsoft 365 admin center for an IMAP migration. See [IMAP migration in the Microsoft 365 admin center](imap-migration-in-the-admin-center.md) for instructions.
 
  **IMPORTANT**: IMAP migration will only migrate emails, not calendar and contact information. Users can import their own email, contacts, and other mailbox information to Office 365. See [Migrate email and contacts to Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e) to learn how.
 
@@ -55,7 +55,7 @@ In this task, you'll first verify to Office 365 that you own the domain you used
 > [!NOTE]
 > Another option is to use the *your company name*.onmicrosoft.com domain that is included with your Office 365 subscription instead of using your own custom domain. In that case, you can just add users as described in [Add users individually or in bulk to Office 365 - Admin Help](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec) and omit this task. Most people, however, prefer to use their own domain.
 
-Domain verification is a task you will go through as you setup Office 365. During the setup Office 365 setup wizard provides you with a TXT record you will add at your domain host provider. See [Add a domain to Office 365](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611) for the steps to complete in Office 365 admin center, and choose a domain registrar from the two following options to see how to complete add the TXT record that your DNS host provider.
+Domain verification is a task you will go through as you setup Office 365. During the setup Office 365 setup wizard provides you with a TXT record you will add at your domain host provider. See [Add a domain to Office 365](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611) for the steps to complete in Microsoft 365 admin center, and choose a domain registrar from the two following options to see how to complete add the TXT record that your DNS host provider.
 
 - **Your current DNS host provider is Google**: If you purchased your domain from Google and they are the DNS hosting provider, follow these instructions: [Create DNS records when your domain is managed by Google (Go Daddy)](https://support.office.com/article/f1369214-9880-48c0-923c-d28eb795ef7b).
 
@@ -88,9 +88,9 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
 
     ![User details in the Google apps admin center](../media/b3362fb5-c33f-465d-84bb-8555f0e310b4.PNG)
 
-4. [Sign in to the Office 365 admin center](https://portal.office.com/admin/default.aspx), and go to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the Office 365 admin center window open, too.
+4. [Sign in to the Microsoft 365 admin center](https://portal.office.com/admin/default.aspx), and go to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the Microsoft 365 admin center window open, too.
 
-    ![username column in the Office 365 admin center.](../media/4cb16a9d-43b8-4ca8-b37a-baf0847f1aa6.JPG)
+    ![username column in the Microsoft 365 admin center.](../media/4cb16a9d-43b8-4ca8-b37a-baf0847f1aa6.JPG)
 
 5. Start Excel.
 
@@ -106,11 +106,11 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
 
 7. Next enter the email address, username, and app password for each mailbox you want to migrate. Enter one mailbox per row.
 
-  - **Column A** is the email address of the Office 365 mailbox. This is what's shown in the **username** column in **Users** \> **Active users** in the Office 365 admin center.
+  - **Column A** is the email address of the Office 365 mailbox. This is what's shown in the **username** column in **Users** \> **Active users** in the Microsoft 365 admin center.
 
   - **Column B** is the sign-in name for the user's Gmail mailbox—for example, alberta@contoso.com.
 
-  - **Column C** is the app password for the user's Gmail mailbox. Creating the app password is described in [Migration from G Suite mailboxes using the Office 365 admin center](migrate-g-suite-mailboxes.md#MigrationGSuite).
+  - **Column C** is the app password for the user's Gmail mailbox. Creating the app password is described in [Migration from G Suite mailboxes using the Microsoft 365 admin center](migrate-g-suite-mailboxes.md#MigrationGSuite).
 
     ![A completed sample migration file.](../media/f2b5e8b7-b9c2-402c-b2bb-2e3a5a4eb64c.JPG)
 
@@ -151,7 +151,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Office 365 at 
 > [!TIP]
 > It's a good idea to create a test migration batch with a small number of mailboxes to first test the process. > Use migration files with the same number of rows, and run the batches at similar times during the day. Then compare the total running time for each test batch. This helps you estimate how long it could take to migrate all your mailboxes, how large each migration batch should be, and how many simultaneous connections to the source email system you should use to balance migration speed and internet bandwidth.
 
-1. In the Office 365 admin center, navigate to **Admin centers** \> **Exchange**.
+1. In the Microsoft 365 admin center, navigate to **Admin centers** \> **Exchange**.
 
     ![Go to Exchange admin center.](../media/bb23e948-0a4a-4242-8bd2-8a83c93df953.PNG)
 
@@ -304,7 +304,7 @@ Were these steps helpful? If so, please let us know at the bottom of this topic.
 ## Related Topics
 <a name="BKMK_Comment"> </a>
 
-[IMAP migration in the Office 365 admin center](imap-migration-in-the-admin-center.md)
+[IMAP migration in the Microsoft 365 admin center](imap-migration-in-the-admin-center.md)
 
 [Migrate your IMAP mailboxes to Office 365](migrating-imap-mailboxes.md)
 
