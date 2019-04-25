@@ -323,9 +323,9 @@ If you're using Exchange Online or Exchange Online Protection, you can check the
 > [!NOTE]
 > While most data is in the report within 24 hours, some data may take as long as 5 days to appear.
 
-### Use the Office 365 admin center to generate a rules report
+### Use the Microsoft 365 admin center to generate a rules report
 
-1. In the Office 365 admin center, select **Reports**.
+1. In the Microsoft 365 admin center, select **Reports**.
 
 2. In the **Rules** section, select **Top rule matches for mail** or **Rule matches for mail**.
 
@@ -333,7 +333,7 @@ To learn more, see [View mail protection reports](https://go.microsoft.com/fwlin
 
 ### Download an Excel version of the reports
 
-1. On the Reports page in the Office 365 admin center, select **Mail protection reports (Excel)**.
+1. On the Reports page in the Microsoft 365 admin center, select **Mail protection reports (Excel)**.
 
 2. If it is your first time using the Excel mail protection reports, a tab opens to the download page.
 
