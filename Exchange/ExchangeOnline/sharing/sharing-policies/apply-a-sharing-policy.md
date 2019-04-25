@@ -31,7 +31,7 @@ Sharing policies control how your users share their calendars with people outsid
 ## Use the Exchange admin center to apply a sharing policy to one mailbox
 <a name="BKMK_EAC"> </a>
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **recipients** \> **mailboxes**.
 
@@ -46,7 +46,7 @@ Sharing policies control how your users share their calendars with people outsid
 ## Use the Exchange admin center to apply a sharing policy to multiple mailboxes
 <a name="BKMK_EAC"> </a>
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **recipients** \> **mailboxes**.
 
