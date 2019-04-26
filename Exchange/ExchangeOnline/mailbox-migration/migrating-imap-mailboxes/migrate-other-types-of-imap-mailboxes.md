@@ -88,11 +88,11 @@ For more information, see [CSV files for IMAP migration batches](csv-files-for-i
 
    We'd give you the exact steps if we could, but there are so many different email systems out there that you need to find this out on your own. When you find the list of mailboxes, keep this window open.
 
-2. Go to the Office 365 admin center.
+2. Go to the Microsoft 365 admin center.
 
 3. Navigate to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the Office 365 admin center open, too.
 
-   ![username column in the Office 365 admin center](../media/12d5b34e-cbb2-495c-a5f0-2ce816b96622.png)
+   ![username column in the Microsoft 365 admin center](../media/12d5b34e-cbb2-495c-a5f0-2ce816b96622.png)
 
 4. Start Excel.
 
@@ -108,7 +108,7 @@ For more information, see [CSV files for IMAP migration batches](csv-files-for-i
 
 6. Next, enter the email address, username, and password for each mailbox you want to migrate. Enter one mailbox per row:
 
-   - **Column A** is the email address of the Office 365 mailbox. This is what is shown in the **username** column under **Users** \> **Active users** in the Office 365 admin center.
+   - **Column A** is the email address of the Office 365 mailbox. This is what is shown in the **username** column under **Users** \> **Active users** in the Microsoft 365 admin center.
 
    - **Column B** is the sign-in name—for example, alberta, or often, alberta@contoso.com—for the user's mailbox on the source email system.
 
@@ -139,9 +139,9 @@ You don't have to migrate all mailboxes at once. You can migrate them in batches
 
 1. Go to your source email system (the one you're migrating from), and navigate to the list of mailboxes you want to migrate. We'd give you the exact steps if we could, but there are so many different email systems out there that you need to find out these steps on your own. When you find the list of mailboxes, keep the window open so you can refer to them.
 
-2. Go to the Office 365 admin center.
+2. Go to the Microsoft 365 admin center.
 
-3. Navigate to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the Office 365 admin center page open, too.
+3. Navigate to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the Microsoft 365 admin center page open, too.
 
    ![username column in the Office 365 admin center](../media/12d5b34e-cbb2-495c-a5f0-2ce816b96622.png)
 
@@ -159,7 +159,7 @@ You don't have to migrate all mailboxes at once. You can migrate them in batches
 
 6. Next, enter the email address, username, and password for each mailbox you want to migrate. Enter one mailbox per row.
 
-   - **Column A** is the email address of the user's Office 365 mailbox. This is what's shown in the **username** column under **Users** \> **Active users** in the Office 365 admin center.
+   - **Column A** is the email address of the user's Office 365 mailbox. This is what's shown in the **username** column under **Users** \> **Active users** in the Microsoft 365 admin center.
 
    - **Column B** is the combination of the mailbox admin name and username that's specific to your source email system. See [Format mailbox admin credentials for different IMAP servers](#format-mailbox-admin-credentials-for-different-imap-servers) for formatting instructions.
 

@@ -74,7 +74,7 @@ During the migration, the Simple Mail Transfer Protocol (SMTP) address of each o
 
 On a computer that is domain joined to your on-premises organization, sign in to your Office 365 account by using your global admin credentials, and start the Exchange Hybrid Configuration Wizard on the **Data migration** page of the Office 365 admin page.
 
-1. In the Office 365 Admin center, go to **Setup** \> **Data migration**.
+1. In the Microsoft 365 Admin center, go to **Setup** \> **Data migration**.
 
     ![Go to Users \> Data migration on the Office 365 Admin page](media/95477fe8-d213-462d-bd77-a00e2354234b.png)
 
@@ -138,7 +138,7 @@ After you assign licences to your users you can go to the Data migration page to
 ## Step 6: Update DNS records
 <a name="DNS"> </a>
 
-Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your on-premises Exchange email system. Now that the email migration to Office 365 is complete, it's time to point your MX record at Office 365. You will also need to finish setting up your DNS records. In the Office 365 Admin center go to **Settings** \> **Domains** and then choose the domain name you want to update, for example contoso.com. The domains wizard will guide you through the update steps. See this article for instructions specific to your registrar or host: [Create DNS records at any DNS hosting provider for Office 365](https://support.office.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166#bkmk_add_mx).
+Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your on-premises Exchange email system. Now that the email migration to Office 365 is complete, it's time to point your MX record at Office 365. You will also need to finish setting up your DNS records. In the Microsoft 365 Admin center go to **Settings** \> **Domains** and then choose the domain name you want to update, for example contoso.com. The domains wizard will guide you through the update steps. See this article for instructions specific to your registrar or host: [Create DNS records at any DNS hosting provider for Office 365](https://support.office.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166#bkmk_add_mx).
 
 ## See also
 <a name="DNS"> </a>
