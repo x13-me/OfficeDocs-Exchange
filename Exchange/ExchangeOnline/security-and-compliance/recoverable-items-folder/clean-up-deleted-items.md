@@ -43,7 +43,7 @@ To learn more about In-Place Hold and Litigation Hold, see [In-Place Hold and Li
 
 This example permanently deletes items from the user Gurinder Singh's Recoverable Items folder and also copies the items to the GurinderSingh-RecoverableItems folder in the Discovery Search Mailbox (a built-in mailbox in Exchange Online).
 
-```
+```powershell
 Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
 ```
 
@@ -62,7 +62,7 @@ To verify that you've successfully cleaned up or deleted items from the Recovera
 
 This example retrieves the size of the Recoverable Items folder and its subfolders and an item count in the folder and each subfolder.
 
-```
+```powershell
 Get-MailboxFolderStatistics -Identity "Gurinder Singh" -FolderScope RecoverableItems | Format-Table Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders -Auto
 ```
 
