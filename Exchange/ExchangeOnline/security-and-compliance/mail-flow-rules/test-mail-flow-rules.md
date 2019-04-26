@@ -132,7 +132,7 @@ Here are some common problems and resolutions:
 
 If you're using Exchange Online or Exchange Online Protection, you can check the number of times each rule is matched by using a rules report. In order to be included in the reports, a rule must have the **Audit this rule with severity level** check box selected. These reports help you spot trends in rule usage and identify rules that are not matched.
 
-To view a rules report, in the Office 365 admin center, select **Reports**.
+To view a rules report, in the Microsoft 365 admin center, select **Reports**.
 
 > [!NOTE]
 > While most data is in the report within 24 hours, some data may take as long as 5 days to appear.

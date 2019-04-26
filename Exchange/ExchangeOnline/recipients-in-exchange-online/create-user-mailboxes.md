@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: You have to use the Office 365 admin center or Exchange Online PowerShell to create an Exchange Online user mailbox. You can't create new user mailboxes using the Exchange admin center (EAC). However, after Exchange Online mailboxes are created, you can manage them using the EAC.
+description: You have to use the Microsoft 365 admin center or Exchange Online PowerShell to create an Exchange Online user mailbox. You can't create new user mailboxes using the Exchange admin center (EAC). However, after Exchange Online mailboxes are created, you can manage them using the EAC.
 ms.topic: article
 author: kwekua
 ms.author: kwekua
@@ -18,7 +18,7 @@ manager: scotv
 
 # Create user mailboxes in Exchange Online
 
-You have to use the Office 365 admin center or Exchange Online PowerShell to create an Exchange Online user mailbox. You can't create new user mailboxes using the Exchange admin center (EAC). However, after Exchange Online mailboxes are created, you can manage them using the EAC.
+You have to use the Microsoft 365 admin center or Exchange Online PowerShell to create an Exchange Online user mailbox. You can't create new user mailboxes using the Exchange admin center (EAC). However, after Exchange Online mailboxes are created, you can manage them using the EAC.
 
 > [!NOTE]
 > After you create a new mailbox using Exchange Online PowerShell, you have to assign it an Exchange Online license or it will be disabled when the 30-day grace period ends.
@@ -38,9 +38,9 @@ You have to use the Office 365 admin center or Exchange Online PowerShell to cre
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)..
 
-## Use the Office 365 admin center to create a new mailbox
+## Use the Microsoft 365 admin center to create a new mailbox
 
-You can use the Office 365 admin center to create a new user account. When you assign the user account a license for Exchange Online, a mailbox is automatically created for the user. To create new user accounts in the Office 365 admin center, see the following topics:
+You can use the Microsoft 365 admin center to create a new user account. When you assign the user account a license for Exchange Online, a mailbox is automatically created for the user. To create new user accounts in the Microsoft 365 admin center, see the following topics:
 
 - [Create or edit users](https://go.microsoft.com/fwlink/p/?LinkId=276796)
 
@@ -54,7 +54,7 @@ This example creates an Exchange Online mailbox and Office 365 user account for 
 New-Mailbox -Alias hollyh -Name hollyh -FirstName Holly -LastName Holt -DisplayName "Holly Holt" -MicrosoftOnlineServicesID hollyh@corp.contoso.com -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force) -ResetPasswordOnNextLogon $true
 ```
 
-After you create a mailbox by running the previous command, an Office 365 user account is also created. You have to activate this user account by assigning a license. To assign a license in the Office 365 admin center, see [Assign or remove a license](https://go.microsoft.com/fwlink/p/?LinkId=276798).
+After you create a mailbox by running the previous command, an Office 365 user account is also created. You have to activate this user account by assigning a license. To assign a license in the Microsoft 365 admin center, see [Assign or remove a license](https://go.microsoft.com/fwlink/p/?LinkId=276798).
 
 ## How do you know this worked?
 
@@ -64,7 +64,7 @@ To verify that you've successfully created a new mailbox, do one of the followin
 
     Click **Refresh** ![Refresh Icon](../media/ITPro_EAC_RefreshIcon.gif) if the new mailbox isn't displayed at first.
 
-- In the Office 365 admin center, verify that the new user account is listed and that it's been assigned an Exchange Online license.
+- In the Microsoft 365 admin center, verify that the new user account is listed and that it's been assigned an Exchange Online license.
 
 - In Exchange Online PowerShell, run the following command to display information about the new user mailbox.
 
