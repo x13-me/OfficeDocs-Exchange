@@ -122,7 +122,7 @@ For another example, suppose you'd like to make sure that all of your users have
 Get-Mailbox -ResultSize unlimited | Get-MailboxJunkEmailConfiguration | Where-Object {$_.Enabled -eq $False}
 ```
 
-This is just one example. If you want to display a set of mailboxes based on a setting and can't filter on that setting in the Office 365 admin center, do these steps:
+This is just one example. If you want to display a set of mailboxes based on a setting and can't filter on that setting in the Microsoft 365 admin center, do these steps:
 
 1. Find the mailbox property that corresponds to the setting you're interested in by running the command `Get-Mailbox -Identity "<MailboxIdentity" | Select-Object *` to list all the properties of a mailbox. `<MailboxIdentity>` is any unique identifier for the mailbox (name, email address, alias, etc.)
 
