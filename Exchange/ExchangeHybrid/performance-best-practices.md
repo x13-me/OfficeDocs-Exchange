@@ -48,7 +48,7 @@ In addition to the applying the best practices previously described, we've teste
     
 For example, in real customer migrations, we have achieved consistent 30 GB/hour throughput by using the following configuration:
   
-- **Network** 500-MB outbound pipe to the Internet; internal network on 1 GB with a 10-GB fiber backbone. 
+- **Network** 500-mb outbound pipe to the Internet; internal network on 1 GB with a 10-GB fiber backbone. 
     
 - **Hardware** The specifications for the two client access/HUB (physical) servers are: 
     
