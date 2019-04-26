@@ -30,7 +30,7 @@ This article describes how to change the branding of Clutter notifications to ma
 
 To begin, you will need to sign in to Office 365 with your work or school account.
 
-1. Once signed in to Office 365, go to the Office 365 admin center.
+1. Once signed in to Office 365, go to the Microsoft 365 admin center.
 
 2. Click to expand **Users**, then select **Active Users**.
 

@@ -298,7 +298,7 @@ If you created a migration batch and configured it to be manually started, you c
 
 You'll be able to follow the sync status in the migration dashboard. If there is an issue, you can view a log file that gives you more information about the errors.
 
-You can also verify that the users get created in the Office 365 admin center as the migration proceeds.
+You can also verify that the users get created in the Microsoft 365 admin center as the migration proceeds.
 
 ## Convert on-premises mailboxes to mail-enabled users so that migrated users can get to their email
 <a name="BKMK_Step8"> </a>
@@ -374,7 +374,7 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
 
  **To complete post-migration tasks**
 
-1. **Activate Office 365 user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period (30 days) ends. To assign a license in the Office 365 admin center, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+1. **Activate Office 365 user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period (30 days) ends. To assign a license in the Microsoft 365 admin center, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
 
 2. **Create an Autodiscover DNS record so users can easily get to their mailboxes**: After all on-premises mailboxes are migrated to Office 365, you can configure an Autodiscover DNS record for your Office 365 organization to enable users to easily connect to their new Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com.
 
