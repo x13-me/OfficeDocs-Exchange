@@ -31,7 +31,7 @@ Set up an organization relationship to share calendar information with an extern
 ## Use the Exchange admin center to create an organization relationship
 <a name="BKMK_EAC"> </a>
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 
