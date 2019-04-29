@@ -41,7 +41,7 @@ To learn more about organization relationships, see [Organization relationships 
 ## Use the Exchange admin center to add a domain to an organization relationship
 <a name="BKMK_EAC"> </a>
 
-1. From the Office 365 admin center go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 
@@ -56,7 +56,7 @@ To learn more about organization relationships, see [Organization relationships 
 ## Use the Exchange admin center to disable free/busy sharing for the organization relationship
 <a name="BKMK_EAC2"> </a>
 
-1. From the Office 365 admin center go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 
@@ -71,7 +71,7 @@ To learn more about organization relationships, see [Organization relationships 
 ## Use the Exchange admin center to change the free/busy access level for the organization relationship
 <a name="BKMK_EAC3"> </a>
 
-1. From the Office 365 admin center go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 
