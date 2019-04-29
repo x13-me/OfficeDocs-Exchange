@@ -32,7 +32,7 @@ Included in this pack:
 - Posters and flyers to drive buzz and excitement
 - Tips and tricks email that shows you how Outlook mobile can help you stay on top of your day
 
-You can view resources for each phase of rollout below or download all the customer adoption resources from this Customer Adoption Pack .zip file. 
+You can view resources for each phase of rollout below or download customer adoption resources from this Customer Adoption Pack .zip file. 
 
 ## Why Outlook mobile
 
@@ -58,7 +58,7 @@ This is the broad scale deployment phase. Communication and guides are available
 - Rollout Announcement Email Template – Template informing employees of your Outlook mobile roll-out.
 - How to Install Outlook for [iOS](https://support.office.com/article/b2de2161-cc1d-49ef-9ef9-81acd1c8e234) and [Android](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872) - Product installation instructions used by employees when installing Outlook mobile on their devices.
 - Outlook for [iOS](https://aka.ms/iOSCheatSheet) and [Android](https://aka.ms/AndroidCheatSheet) Quick Reference Cheat Sheets - Document used to show Outlook mobile features and functionality on their devices. 
-- [Optimize the Outlook mobile App](https://aka.ms/OMoptimize) - Site informing employees of tips to optimize Outlook for their mobile device.
+- [Optimize the Outlook mobile app](https://aka.ms/OMoptimize) - Site informing employees of tips to optimize Outlook for their mobile device.
 
 ### *Post-launch*
 
