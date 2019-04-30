@@ -56,17 +56,17 @@ In this first phase, we focus on internal awareness and communication or engagem
 This is the broad scale deployment phase. Communication and guides are available to help end users get set up quickly and easily.
 
 - Rollout Announcement Email Template – Template informing employees of your Outlook mobile roll-out.
-- How to Install Outlook for [iOS](https://support.office.com/article/b2de2161-cc1d-49ef-9ef9-81acd1c8e234) and [Android](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872) - Product installation instructions used by employees when installing Outlook mobile on their devices.
-- Outlook for [iOS](https://aka.ms/iOSCheatSheet) and [Android](https://aka.ms/AndroidCheatSheet) Quick Reference Cheat Sheets - Document used to show Outlook mobile features and functionality on their devices. 
-- [Optimize the Outlook mobile app](https://aka.ms/OMoptimize) - Site informing employees of tips to optimize Outlook for their mobile device.
+- How to Install Outlook for [iOS](https://support.office.com/article/b2de2161-cc1d-49ef-9ef9-81acd1c8e234) and [Android](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872) - Installation instructions used by employees when installing Outlook mobile on their devices.
+- Outlook for [iOS](https://aka.ms/iOSCheatSheet) and [Android](https://aka.ms/AndroidCheatSheet) Quick Reference Cheat Sheets - PDF handout for users to show Outlook mobile features and functionality on their devices. 
+- [Optimize the Outlook mobile app](https://aka.ms/OMoptimize) - Article informing employees of tips to optimize Outlook for their mobile device.
 
 ### *Post-launch*
 
 During the post-launch phase, focus is placed on providing time saving tips to support employees as they start using Outlook mobile on a day-to-day basis.
 
-- Tips and Tricks Email Template – Email template sent to employees post launch with usage tips to stay more productive on the go. 
-- [Webinar: 10 time savings tips](https://Aka.ms/JoinOutlookmobile) – Invite your employees a Microsoft hosted LIVE webinar training showcasing time saving tips on Outlook mobile. Register now. 
-- [Outlook mobile Tips Reference Sheet](https://aka.ms/OutlookmobileTips) - Document used to show Outlook mobile features and functionality
+- Tips and Tricks Email Template – Email template sent to employees post launch with usage tips to stay more productive on the go.
+- [Webinar: 10 time savings tips](https://aka.ms/JoinOutlookmobile) – Invite your employees to live webinar training, hosted by Microsoft, showcasing time saving tips on Outlook mobile. Register now. 
+- [Outlook mobile Tips Reference Sheet](https://aka.ms/OutlookmobileTips) - PDF that provides time saving tips of Outlook mobile features and functionality.
 - [End user training videos](https://aka.ms/Omvideos) - Short videos to play during the launch events to create excitement and awareness.
 
 ## Outlook mobile webinar series
