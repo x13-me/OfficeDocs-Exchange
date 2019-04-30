@@ -56,7 +56,7 @@ Outlook for iOS and Android offers administrators the ability to restrict email 
 
 Outlook for iOS and Android offers administrators the ability to customize the default configuration for several in-app settings.
 
-For this first release, Outlook is supporting the following settings for configuration:
+Outlook supports the following settings for configuration:
 
 <table>
 <thead>
@@ -70,28 +70,35 @@ For this first release, Outlook is supporting the following settings for configu
 <tr class="odd">
 <td>Focused Inbox</td>
 <td>On</td>
-<td></td>
+<td>Focused Inbox separates your inbox into two tabs, Focused and Other. Your most important emails are on the Focused tab while the rest remain easily accessible—but out of the way—on the Other tab.</td>
 </tr>
 <tr class="even">
 <td>Require Biometrics to access the app</td>
 <td>Off</td>
-<td><p>This setting is only available for Outlook for iOS.</p>
+<td><p>Biometrics, such as TouchID or FaceID, can be required for users to access the app on their device. When required, biometrics are used in addition to the authentication method selected in this profile.</p>
+<p>This setting is only available for Outlook for iOS.</p>
 <p>If using App Protection Policies, Microsoft recommends disabling this setting to prevent dual access prompts.</p></td>
 </tr>
 <tr class="odd">
 <td>Save Contacts</td>
 <td>Off</td>
-<td>User must grant access to the native Contacts app for contact synchronization to occur.</td>
+<td><p>Saving contacts to the mobile device’s native address book allows new calls and text messages to be linked with the user’s existing Outlook contacts.</p>
+<p>The user must grant access to the native Contacts app for contact synchronization to occur.</td>
 </tr>
 <tr class="even">
 <td>External Recipients MailTip</td>
 <td>On</td>
-<td></td>
+<td>The External Recipients MailTip is displayed if the sender adds a recipient that's external or adds a distribution group that contains external recipients. This MailTip informs senders if a message they're composing will leave the organization, helping them make the correct decisions about wording, tone, and content.</td>
 </tr>
 <tr class="odd">
 <td>Block external images</td>
 <td>Off</td>
-<td></td>
+<td>When block external images is enabled, the app will prevent the download of images hosted on the Internet that are embedded in the message body by default (the user can still choose to download the images).</td>
+</tr>
+<tr class="even">
+<td>Default app signature</td>
+<td>On</td>
+<td>Indicates whether the app will use its default signature, “Get Outlook for [OS]”, during message composition. Users can add their own signature even when the default signature is disabled.</td>
 </tr>
 </tbody>
 </table>
@@ -200,12 +207,13 @@ The following steps will allow you to create an app configuration policy. After 
 12. If you want to deploy general app configuration settings, configure the desired settings accordingly:
 
     - For **Focused Inbox**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
-    - For **Require Biometrics to access the app**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). This setting is only available in Outlook for iOS.
+    - For **Require Biometrics to access the app**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting’s value. This setting is only available in Outlook for iOS. 
     > [!IMPORTANT]
     > If the account will be protected by an Intune App Protection Policy that requires a PIN to access the protected account, then the **Require Biometrics to access the app** setting should be disabled, otherwise the user will be prompted with multiple authentication prompts when accessing the app.
 
     - For **Save Contacts**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting’s value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting’s value.
-    - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting’s value. 
+    - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting’s value.
+    - For **Default app signature**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting’s value. 
     - For **Block external images**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting’s value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting’s value.
 
 13. When you are done, choose **OK**.
@@ -369,3 +377,4 @@ Outlook for iOS and Android offers administrators the ability to customize the d
 | com.microsoft.outlook.Mail.ExternalRecipientsToolTipEnabled  | This key specifies whether the External Recipients MailTip is enabled. Setting the value to false will disable the MailTip. **Value type**: Boolean **Accepted values**: true, false **Default if not specified**: true **Required**: No **Example**: false | iOS, Android | Managed devices            |
 | com.microsoft.outlook.Mail.BlockExternalImagesEnabled | This key specifies whether external images are blocked by default. Setting the value to true will enable blocking external images. **Value type**: Boolean **Accepted values**: true, false **Default if not specified**: false **Required**: No **Example**: false | iOS, Android | Managed devices            |
 | com.microsoft.outlook.Mail.BlockExternalImagesEnabled.UserChangeAllowed | This key specifies whether the Block External Images setting can be changed by the end user. **Value type**: Boolean **Accepted values**: true, false **Default if not specified**: true **Required**: No **Example**: false | iOS, Android | Managed devices            |
+| com.microsoft.outlook.Mail.DefaultSignatureEnabled | This key specifies whether the app uses its default signature. Setting the value to false will disable the app's default signature. **Value type**: Boolean **Accepted values**: true, false **Default if not specified**: true **Required**: No **Example**: false | iOS, Android | Managed devices            |
