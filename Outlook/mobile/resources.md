@@ -47,15 +47,15 @@ Learn more about why Outlook mobile is the right choice for your organization.
 
 In this first phase, we focus on internal awareness and communication or engagement events that create excitement and awareness for end users.
 
-- Flyer Template - Flyer hand out for your employees.
-- Poster Template - Poster used to help raise awareness of your Outlook mobile rollout.
-- Countdown Email Template - Email template informing employees of impending Outlook mobile roll-out within your organization.
+- [Flyer Template](media/outlook-mobile-editable-flyer.docx) - Flyer hand out for your employees.
+- [Poster Template](media/outlook-mobile-editable-poster.docx) - Poster used to help raise awareness of your Outlook mobile rollout.
+- [Countdown Email Template](media/outlook-mobile-countdown-email.zip) - Email template informing employees of impending Outlook mobile roll-out within your organization.
 
 ### *Launch Day*
 
 This is the broad scale deployment phase. Communication and guides are available to help end users get set up quickly and easily.
 
-- Rollout Announcement Email Template – Template informing employees of your Outlook mobile roll-out.
+- [Rollout Announcement Email Template](media/outlook-mobile-rollout-announcement-email.zip) – Template informing employees of your Outlook mobile roll-out.
 - How to Install Outlook for [iOS](https://support.office.com/article/b2de2161-cc1d-49ef-9ef9-81acd1c8e234) and [Android](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872) - Installation instructions used by employees when installing Outlook mobile on their devices.
 - Outlook for [iOS](https://aka.ms/iOSCheatSheet) and [Android](https://aka.ms/AndroidCheatSheet) Quick Reference Cheat Sheets - PDF handout for users to show Outlook mobile features and functionality on their devices. 
 - [Optimize the Outlook mobile app](https://aka.ms/OMoptimize) - Article informing employees of tips to optimize Outlook for their mobile device.
@@ -64,7 +64,7 @@ This is the broad scale deployment phase. Communication and guides are available
 
 During the post-launch phase, focus is placed on providing time saving tips to support employees as they start using Outlook mobile on a day-to-day basis.
 
-- Tips and Tricks Email Template – Email template sent to employees post launch with usage tips to stay more productive on the go.
+- [Tips and Tricks Email Template](media/outlook-mobile-tips-email.zip) – Email template sent to employees post launch with usage tips to stay more productive on the go.
 - [Webinar: 10 time savings tips](https://aka.ms/JoinOutlookmobile) – Invite your employees to live webinar training, hosted by Microsoft, showcasing time saving tips on Outlook mobile. Register now. 
 - [Outlook mobile Tips Reference Sheet](https://aka.ms/OutlookmobileTips) - PDF that provides time saving tips of Outlook mobile features and functionality.
 - [End user training videos](https://aka.ms/Omvideos) - Short videos to play during the launch events to create excitement and awareness.
