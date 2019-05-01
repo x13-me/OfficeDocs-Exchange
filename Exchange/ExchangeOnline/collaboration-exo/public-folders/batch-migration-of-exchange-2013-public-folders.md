@@ -414,7 +414,7 @@ Before moving on to *Step 6: Lock down the public folders on the Exchange 2013 s
 ## Step 6: Lock down the public folders in the Exchange 2013 environment for final migration (public folder downtime required)
 <a name="Generatecsv"> </a>
 
-Until this point in the migration process, users have been able to access your on-premises public folders. The following steps will now log off users off from Exchange 2013 public folders and then lock the folders as the migration process completes its final synchronization. Users won't be able to access public folders during this time, and any messages sent to these mail-enabled public folders will be queued and remain undelivered until the public folder migration is complete.
+Until this point in the migration process, users have been able to access your on-premises public folders. The following steps will now log users off from Exchange 2013 public folders and then lock the folders as the migration process completes its final synchronization. Users won't be able to access public folders during this time, and any messages sent to these mail-enabled public folders will be queued and remain undelivered until the public folder migration is complete.
 
 Before you run the `PublicFolderMailboxesLockedForNewConnections` command as described below, make sure that all jobs are in the **Synced** state. You can do this by running the `Get-PublicFolderMailboxMigrationRequest` command. Continue with this step only after you've verified that all jobs are in the **Synced** state.
 
