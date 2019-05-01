@@ -74,4 +74,4 @@ Email servers that supports the SMTP BDAT command can accept messages with bare 
 
 [RFC 6376 DomainKeys Identified Mail (DKIM) Signatures](https://go.microsoft.com/fwlink/p/?LinkId=784892)
 
-[RFC 1830 SMTP Service Extensions for Transmission of Large and Binary Mime Messages (BDAT Support)](https://go.microsoft.com/fwlink/p/?LinkId=784893)
+[RFC 3030 SMTP Service Extensions for Transmission of Large and Binary Mime Messages (BDAT Support)](https://go.microsoft.com/fwlink/p/?LinkId=784893)
