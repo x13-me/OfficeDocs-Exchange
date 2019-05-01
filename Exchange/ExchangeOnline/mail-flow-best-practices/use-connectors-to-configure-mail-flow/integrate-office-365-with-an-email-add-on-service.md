@@ -246,7 +246,7 @@ To verify that you've successfully created a mail flow rule to route unprocessed
 
    ![The TXT proof of domain ownership record for the custom certificate domain.](../../media/fd0ab875-925d-46ea-96fd-00924e6f298f.png)
 
-For more information, see [Add your domain to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=278775)
+For more information, see [Add your domain to Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain)
 
 ## Step 4: Create an inbound connector to receive messages from the email add-on service
 
