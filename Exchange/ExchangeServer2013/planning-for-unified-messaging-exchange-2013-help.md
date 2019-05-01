@@ -79,9 +79,7 @@ For more information about Microsoft Lync Server, see [Microsoft Lync Server](ht
 
 
 > [!NOTE]
-> Planning and deploying Unified Messaging can pose certain challenges. Depending on your technical experience with Exchange and voice mail systems, you might want to obtain the assistance of a Unified Messaging specialist. An Exchange Unified Messaging specialist will help make sure that there's a smooth transition from a legacy or third-party voice mail system to Exchange Unified Messaging. Performing a new deployment or upgrading a legacy voice mail system requires significant knowledge about VoIP gateways, PBXs, and Unified Messaging. For more information about how to contact a Unified Messaging specialist, see <A href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013 Unified Messaging (UM) Specialists</A>.
-
-
+> Planning and deploying Unified Messaging can pose certain challenges. Depending on your technical experience with Exchange and voice mail systems, you might want to obtain the assistance of a Unified Messaging specialist. An Exchange Unified Messaging specialist will help make sure that there's a smooth transition from a legacy or third-party voice mail system to Exchange Unified Messaging. Performing a new deployment or upgrading a legacy voice mail system requires significant knowledge about VoIP gateways, PBXs, and Unified Messaging. To contact a Unified Messaging specialist, see the [Microsoft solution providers](https://go.microsoft.com/fwlink/p/?LinkId=261951) page.
 
 ## Deployment steps
 
