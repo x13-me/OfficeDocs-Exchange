@@ -105,7 +105,7 @@ Running the script `Import-PublicFolderMailboxes.ps1` will import public folder 
     ```
 
    > [!NOTE]
-   > You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Force directory synchronization](https://technet.microsoft.com/library/jj151771.aspx).
+   > You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 30 minutes to complete. If you don't want to wait for the recurring synchronizations that occur every 30 minutes, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Force directory synchronization](https://technet.microsoft.com/library/jj151771.aspx).
 
 ## How do I know this worked?
 <a name="Access"> </a>
