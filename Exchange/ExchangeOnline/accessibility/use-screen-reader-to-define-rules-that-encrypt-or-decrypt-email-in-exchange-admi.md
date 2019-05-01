@@ -20,7 +20,7 @@ ms.service: exchange-online
 
 In the Exchange admin center (EAC) in Exchange Online, you can create mail flow rules (also known as transport rules) to enable or disable Office 365 Message Encryption. This lets you encrypt outgoing email messages and remove encryption from encrypted messages coming from inside your organization or from replies to encrypted messages sent from your organization.
 
- **Note**: To learn more about message encryption, go to [Encryption in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=526003). Your organization must have [Windows Azure Rights Management set up for Office 365 Message Encryption](https://go.microsoft.com/fwlink/p/?LinkId=797620) to complete the tasks in this topic.
+ **Note**: To learn more about message encryption, go to [Encryption in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=526003). Your organization must have [Set up new Office 365 Message Encryption capabilities](https://docs.microsoft.com/Office365/securitycompliance/set-up-new-message-encryption-capabilities) to complete the tasks in this topic.
 
 ## Get started
 

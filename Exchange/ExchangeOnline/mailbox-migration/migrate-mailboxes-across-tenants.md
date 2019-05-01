@@ -77,7 +77,7 @@ To communicate the migration to the end users in your organization:
 
 1. Create a communication plan and begin to notify users of the upcoming migration and service changes.
 
-2. After migration, the nickname cache will have to be cleared on all Outlook clients. See [How to reset the nickname and the automatic completion caches in Outlook](https://go.microsoft.com/fwlink/p/?LinkId=393486) for an automated fix-it-tool that can be run by the end users.
+2. After migration, the Auto-Complete List (also known as the nickname cache) will have to be cleared on all Outlook clients. To remove all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.office.com/article/dbe46e31-c098-4881-8cf7-66b037bce23e).
 
 3. Make users aware of how to connect to Outlook Web App with their new sign on information in case they have a problem after migration.
 
@@ -189,7 +189,7 @@ At the end of migration, Outlook 2007 and 2010 will sync the entire mailbox for 
 
 #### Post migration: Cleanup
 
-User may receive NDRs when replying to migrated email messages. The Outlook nickname cache needs to be cleared. See [How to reset the nickname and the automatic completion caches in Outlook](https://go.microsoft.com/fwlink/p/?LinkId=393486). Alternatively, add the old legacy DN as an x.500 proxy address to all users.
+User may receive NDRs when replying to migrated email messages. The Outlook Auto-Complete List (also known as the nickname cache) needs to be cleared. To remove all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.office.com/article/dbe46e31-c098-4881-8cf7-66b037bce23e). Alternatively, add the old legacy DN as an x.500 proxy address to all users.
 
 ## Sample Windows PowerShell scripts
 
