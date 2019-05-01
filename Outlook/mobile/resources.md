@@ -28,7 +28,7 @@ Use the resources in the [Outlook mobile Customer Adoption Pack](https://aka.ms/
  
 You can view resources for each phase of rollout below or download customer adoption resources from this [Customer Adoption Pack .zip file](https://aka.ms/OutlookmobileCAP). 
 
-## *Pre-launch*
+## Pre-launch
 
 In this first phase, we focus on internal awareness and communication or engagement events that create excitement and awareness for end users.
 
@@ -36,7 +36,7 @@ In this first phase, we focus on internal awareness and communication or engagem
 - [Poster template](media/outlook-mobile-editable-poster.docx) - Customizable poster used to help raise awareness of your Outlook mobile rollout.
 - [Countdown email template](media/outlook-mobile-countdown-email.zip) - Customizable email informing employees of upcoming Outlook mobile rollout within your organization.
 
-## *Launch Day*
+## Launch Day
 
 This is the broad scale deployment phase. Communication and guides are available to help end users get set up quickly and easily.
 
@@ -45,7 +45,7 @@ This is the broad scale deployment phase. Communication and guides are available
 - Quick reference cheat sheets for Outlook for [iOS](https://aka.ms/iOSCheatSheet) and [Android](https://aka.ms/AndroidCheatSheet) - PDF handout to get your employees familiar with Outlook mobile and get them started quickly.
 - [Optimize the Outlook mobile app](https://aka.ms/OMoptimize) - Article providing employees with tips on how to optimize Outlook for their needs.
 
-## *Post-launch*
+## Post-launch
 
 During the post-launch phase, focus is placed on providing time saving tips to support employees as they start using Outlook mobile on a day-to-day basis.
 
@@ -68,4 +68,4 @@ During the post-launch phase, focus is placed on providing time saving tips to s
 
   Open to all. These demo webinars will focus on end user value so invite your business decision makers, end users, trainers, change management personnel, champions, and more!
 
-  [Register now.](https://aka.ms/JoinOutlookmobile)
+  [Register now](https://aka.ms/JoinOutlookmobile)
