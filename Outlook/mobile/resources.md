@@ -39,7 +39,7 @@ You can view resources for each phase of rollout below or download customer adop
 Learn more about why Outlook mobile is the right choice for your organization. 
 
 - ["Why Outlook mobile" leave behind](media/why-outlook-mobile.pdf) – Learn and share the key benefits and capabilities of Outlook mobile. 
-- ["Why Outlook mobile" infographic](media/outlook-mobile-infogrpahic.pdf) - Social media asset you can use to show the benefits of Outlook mobile. 
+- ["Why Outlook mobile" infographic](media/outlook-mobile-infographic.pdf) - Social media asset you can use to show the benefits of Outlook mobile. 
 
 ## Driving Outlook mobile adoption checklist
 
