@@ -60,7 +60,8 @@ Before proceeding, review [How to set up a multifunction device or application t
 
 5. On the Select Server Roles page, select **Web Server (IIS)**, and then select **Next**. If a page that requests additional features is displayed, select **Add Features** and then select **Next**.
 
-6. On the Select Role Services page, make sure that Basic Authentication under Security is selected, and then select **Next**.
+6. On the Select Role Services page, make sure that Anonymous 
+under Security is selected, and then select **Next**.
 
 7. On the Confirm Installation Steps page, select **Install**.
 
@@ -84,7 +85,7 @@ Before proceeding, review [How to set up a multifunction device or application t
 
 4. In the IP Address box, specify the address of the server that's hosting the SMTP server.
 
-5. In the Port box, enter **587** and select **OK**.
+5. In the Port box, enter **25** and select **OK**.
 
 6. On the Access tab, do the following:
 
@@ -96,15 +97,15 @@ Before proceeding, review [How to set up a multifunction device or application t
 
 7. On the Delivery tab, select **Outbound Security**, and then do the following:
 
-1. Select **Basic Authentication**.
+1. Select **Anonymous Authentication**.
 
 2. Enter the credentials of the Office 365 user who you want to use to relay SMTP mail.
 
 3. Select **TLS Encryption**.
 
-4. Select **Outbound Connections**, and in the TCP Port box, enter **587** and select **OK**.
+4. Select **Outbound Connections**, and in the TCP Port box, enter **25** and select **OK**.
 
-5. Select **Advanced** and specify **SMTP.office365.com** as the Smart Host.
+5. Select **Advanced** and specify **contoso-com.mail.protection.outlook.com** as the Smart Host.
 
 4. **Restart the IIS service and the SMTP service.**
 
@@ -143,7 +144,7 @@ Before proceeding, review [How to set up a multifunction device or application t
 
 4. In the IP Address box, specify the address of the server that's hosting the SMTP server.
 
-5. In the Port box, enter **587** and select **OK**.
+5. In the Port box, enter **25** and select **OK**.
 
 6. On the Access tab, do the following:
 
@@ -155,15 +156,15 @@ Before proceeding, review [How to set up a multifunction device or application t
 
 7. On the Delivery tab, select **Outbound Security**, and then do the following:
 
-1. Select **Basic Authentication**.
+1. Select **Anonymous Authentication**.
 
 2. Enter the credentials of the Office 365 user who you want to use to relay SMTP mail.
 
 3. Select **TLS Encryption**.
 
-4. Select **Outbound Connections** and in the TCP Port box, enter **587** and select **OK**.
+4. Select **Outbound Connections** and in the TCP Port box, enter **25** and select **OK**.
 
-5. Select **Advanced** and specify **SMTP.office365.com** as the Smart Host.
+5. Select **Advanced** and specify **contoso-com.mail.protection.outlook.com** as the Smart Host.
 
 4. **Restart the IIS service and the SMTP service.**
 
