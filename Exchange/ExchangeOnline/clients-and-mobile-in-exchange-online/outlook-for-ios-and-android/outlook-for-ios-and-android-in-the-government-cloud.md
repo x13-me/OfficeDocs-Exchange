@@ -83,12 +83,12 @@ Executing the below Exchange Online cmdlet will enable GCC Moderate customers us
   Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $false
  ```
 
-At any time, access can be revoked by resetting the parameter back to the default value:
+At any time, access to these features can be revoked by resetting the parameter back to the default value:
 
  ```
   Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $true
  ```
 
-Changing this setting typically takes affect within an hour. As this is an tenant-based change, all Outlook for iOS and Android users in the GCC organization will be affected. 
+Changing this setting typically takes affect within 48 hours. As this is an tenant-based change, all Outlook for iOS and Android users in the GCC organization will be affected. 
 
 For more information on the cmdlet, please see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig?view=exchange-ps). 
