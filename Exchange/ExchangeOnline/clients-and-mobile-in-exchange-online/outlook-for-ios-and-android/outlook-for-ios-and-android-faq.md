@@ -39,7 +39,7 @@ For more information on the architecture, see [Outlook for iOS and Android in Ex
 
 ### Q: Can I add two different Office 365 accounts from different Office 365 regions to Outlook for iOS and Android?
 
-Yes. However, customers with the Office 365 Government plan may only have accounts connected to Outlook for iOS and Android from a single Office 365 region. This means that Office 365 Government customers can't have both a mailbox that is located in European Office 365 datacenters and an Office 365 Government plan mailbox within the same Outlook for iOS and Android app on the same device.
+Yes, provided both accounts do not have Intune App Protection Policies assigned. However, for Government Community Cloud customers, users may only add their own account and OneDrive for Business storage account to the app; adding personal or other commercial accounts is prevented to meet FedRAMP requirements. For more information on Government Community Cloud restrictions with Outlook for iOS and Android, please see [Using Outlook for iOS and Android in the Government Community Cloud](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-in-the-government-cloud).
 
 ### Q: What authentication mechanism is used for Outlook for iOS are Android? Are credentials stored in Office 365?
 
