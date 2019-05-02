@@ -104,7 +104,11 @@ We strongly recommend that you use the latest version of the .NET Framework that
 > [!IMPORTANT]
 > **Releases of .NET Framework that aren't listed in the table below aren't supported on any release of Exchange 2019**. This includes minor and patch-level releases of .NET Framework.
 
-|**Exchange version**|**.NET Framework 4.7.2**|
+> [!IMPORTANT]
+> The complete prerequisite list for [** exchange 2019 is available here**](https://docs.microsoft.com/exchange/plan-and-deploy/prerequisites?view=exchserver-2019)
+
+ 
+|**Exchange version**|**.NET Framework 4.7.2 or later**|
 |:-----|:-----|
 |Exchange 2019|Supported|
 
@@ -230,6 +234,10 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 
 > [!IMPORTANT]
 > **Releases of .NET Framework that aren't listed in the table below are not supported on any release of Exchange 2016**. This includes minor and patch-level releases of .NET Framework.
+
+> [!IMPORTANT]
+> The complete prerequisite list for [** exchange 2016 is available here**](https://docs.microsoft.com/exchange/plan-and-deploy/prerequisites?view=exchserver-2016)
+
 
 |**Exchange version**|**.NET Framework 4.7.2**|**.NET Framework 4.7.1**|**.NET Framework 4.6.2**|
 |:-----|:-----|:-----|:-----|
