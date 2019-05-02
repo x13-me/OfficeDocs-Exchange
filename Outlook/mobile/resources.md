@@ -55,7 +55,7 @@ During the post-launch phase, focus is placed on providing time saving tips to s
 ### Training
 
 - [End user training videos](https://aka.ms/Omvideos) - Short videos to play during the launch events to create excitement and awareness.
-- Webinar: 10 time saving tips ([register now](https://aka.ms/JoinOutlookmobile)) - Invite your employees to live webinar training, hosted by Microsoft, showcasing time saving tips on Outlook mobile. These 60-minute live monthly webinars will be delivered by Outlook mobile experts from Microsoft and are designed to get your employees up and running and learn cool tips and tricks that save them time.
+- *Webinar: 10 time saving tips* ([register now](https://aka.ms/JoinOutlookmobile)) - Invite your employees to live webinar training, hosted by Microsoft, showcasing time saving tips on Outlook mobile. These 60-minute live monthly webinars will be delivered by Outlook mobile experts from Microsoft and are designed to get your employees up and running and learn cool tips and tricks that save them time.
 
   In this webinar series, you'll learn the following:
   - Why Outlook mobile is the right choice for you
