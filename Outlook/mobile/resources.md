@@ -14,8 +14,6 @@ description: "Provides resources for IT Pros to plan, deliver, and adopt Outlook
 
 # Plan, deliver, and adopt Outlook for iOS and Android in your organization
 
-![Mobile phone on a desk showing Outlook for iOS and Android](media/banner.png)
-
 Outlook mobile brings the best of Office 365 – your email, calendar, documents, online meetings and more – in one place, right at your fingertips. It combines a fast, fluid experience with enterprise grade security so you accomplish the most important tasks in just a few seconds.
 
 Join the over 100 million customers across the world who trust Outlook mobile to stay connected, organized and get things done on the go.
@@ -57,7 +55,7 @@ During the post-launch phase, focus is placed on providing time saving tips to s
 ### Training
 
 - [End user training videos](https://aka.ms/Omvideos) - Short videos to play during the launch events to create excitement and awareness.
-- [Webinar: 10 time saving tips](https://aka.ms/JoinOutlookmobile) - Invite your employees to live webinar training, hosted by Microsoft, showcasing time saving tips on Outlook mobile. These 60-minute live monthly webinars will be delivered by Outlook mobile experts from Microsoft and are designed to get your employees up and running and learn cool tips and tricks that save them time.
+- Webinar: 10 time saving tips ([register now](https://aka.ms/JoinOutlookmobile)) - Invite your employees to live webinar training, hosted by Microsoft, showcasing time saving tips on Outlook mobile. These 60-minute live monthly webinars will be delivered by Outlook mobile experts from Microsoft and are designed to get your employees up and running and learn cool tips and tricks that save them time.
 
   In this webinar series, you'll learn the following:
   - Why Outlook mobile is the right choice for you
