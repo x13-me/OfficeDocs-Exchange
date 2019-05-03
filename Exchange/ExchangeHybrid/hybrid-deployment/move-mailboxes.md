@@ -78,6 +78,9 @@ You can use the remote move migration wizard on the **Office 365** tab in the EA
 3. On the **Select a migration type** page, select **Remote move migration** and then click **Next**.
     
 4. On the **Select the users** page, click **Add**![Add Icon](../media/ITPro_EAC_AddIcon.gif) and select the on-premises users to move to Office 365 and click **Add** and then click **OK**. Click **Next**.
+
+> [!NOTE]
+If shared mailbox accounts don't appear in the user selection list, you need to sync the shared mailbox on-premises AD accounts to Office 365 using Azure AD Connect. The shared mailbox AD accounts will appear as blocked accounts in the Office 365 portal and you will be able to select them from the user list.```
     
 5. On the **Enter the Windows user account credential** page, enter the on-premises administrator account name in the **On-premises administrator name** text field and enter the associated password for this account in the **On-premises administrator password** text field. For example, "corp\administrator" and a password. Click **Next**.
     
