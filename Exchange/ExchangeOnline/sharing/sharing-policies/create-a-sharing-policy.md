@@ -31,7 +31,7 @@ Create a new Sharing Policy to change how people in your organization share cale
 ## Use the wizard to create a sharing policy
 <a name="BKMK_EAC"> </a>
 
-1. From the Office 365 admin center dashboard, go to **Admin** \> **Exchange**.
+1. From the Microsoft 365 admin center dashboard, go to **Admin** \> **Exchange**.
 
 2. Go to **organization** \> **sharing**.
 

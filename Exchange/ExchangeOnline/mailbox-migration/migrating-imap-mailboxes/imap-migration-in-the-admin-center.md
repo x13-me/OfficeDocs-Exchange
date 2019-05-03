@@ -6,7 +6,7 @@ ms.author: dmaguire
 ms.assetid: 4682f2e4-f720-4868-91ab-207f5b0c325d
 ms.date: 8/16/2018
 description: Learn how to perform an IMAP migration in the Admin Center preview.
-title: IMAP migration in the Office 365 admin center
+title: IMAP migration in the Microsoft 365 admin center
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -24,11 +24,11 @@ manager: serdars
 
 ---
 
-# IMAP migration in the Office 365 admin center
+# IMAP migration in the Microsoft 365 admin center
 
 After you've added your users to Office 365, you can use Internet Message Access Protocol (IMAP) to migrate email for those users from their IMAP-enabled email servers.
 
-In the Office 365 admin center, go to **Setup** \> **Data migration** to start migrating IMAP enabled emails. The email migrations page is pre-configured for migrations from Gmail, Outlook, Hotmail and Yahoo. You can also enter your own IMAP server name and connection parameters to migrate from an email service that is not listed.
+In the Microsoft 365 admin center, go to **Setup** \> **Data migration** to start migrating IMAP enabled emails. The email migrations page is pre-configured for migrations from Gmail, Outlook, Hotmail and Yahoo. You can also enter your own IMAP server name and connection parameters to migrate from an email service that is not listed.
 
 > [!IMPORTANT]
 > Before you can use an IMAP migration for your users, they must have been first added to your Office 365 tenant. For instructions, see [Add users to Office 365 for business](https://support.office.com/article/435ccec3-09dd-4587-9ebd-2f3cad6bc2bc.aspx).
@@ -42,7 +42,7 @@ To migrate Exchange mail to Office 365, see [Use express migration to migrate Ex
 ## Migrate IMAP mailboxes to Office 365
 <a name="BK_migrate"> </a>
 
-1. Sign into the [About the Office 365 admin center](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
+1. Sign into the [About the Microsoft 365 admin center](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
 
 2. Navigate to **Setup** \> **Data migration**.
 

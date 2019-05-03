@@ -102,9 +102,9 @@ We don't support installing Office client or Office server software on Exchange 
 We strongly recommend that you use the latest version of the .NET Framework that's supported by the release of Exchange you're installing.
 
 > [!IMPORTANT]
-> **Releases of .NET Framework that aren't listed in the table below aren't supported on any release of Exchange 2019**. This includes minor and patch-level releases of .NET Framework.
+> **Releases of .NET Framework that aren't listed in the table below aren't supported on any release of Exchange 2019**. This includes minor and patch-level releases of .NET Framework. <br/><br/> The complete prerequisite list for Exchange 2019 is available [here](https://docs.microsoft.com/exchange/plan-and-deploy/prerequisites?view=exchserver-2019).
 
-|**Exchange version**|**.NET Framework 4.7.2**|
+|**Exchange version**|**.NET Framework 4.7.2 or later**|
 |:-----|:-----|
 |Exchange 2019|Supported|
 
@@ -116,11 +116,11 @@ We strongly recommend that you use the latest version of the .NET Framework that
 
 - Outlook 2016
 
-- Outlook 2016 for Mac
-
 - Outlook 2013
 
 - Outlook for Mac for Office 365
+
+- Outlook 2016 for Mac
 
 > [!IMPORTANT]
 > You need KB3140245 to apply registry keys to enable TLS 1.1 & 1.2 support for Windows 7, otherwise Outlook 2013 and 2016 will not work on Windows 7.
@@ -160,7 +160,7 @@ The following table lists the requirements for the network and the directory ser
 
 |**Component**|**Requirement**|
 |:-----|:-----|
-|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <br/>• Windows Server 2016 Standard or Datacenter <br/>• Windows Server 2012 R2 Standard or Datacenter <br/>• Windows Server 2012 Standard or Datacenter <br/>• Windows Server 2008 R2 Standard or Enterprise <br/>• Windows Server 2008 R2 Datacenter RTM or later|
+|Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <br/>• Windows Server 2019 Standard or Datacenter <br/>• Windows Server 2016 Standard or Datacenter <br/>• Windows Server 2012 R2 Standard or Datacenter <br/>• Windows Server 2012 Standard or Datacenter <br/>• Windows Server 2008 R2 Standard or Enterprise <br/>• Windows Server 2008 R2 Datacenter RTM or later|
 |Active Directory forest|The Active Directory forest functional level is Windows Server 2008 R2 or higher.|
 |Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.|
 |DNS namespace support|Exchange 2016 supports the following domain name system (DNS) namespaces: <br/>• Contiguous <br/>• Noncontiguous <br/>• Single label domains <br/>• Disjoint <br/> For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, [Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2269838).|
@@ -230,6 +230,10 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 
 > [!IMPORTANT]
 > **Releases of .NET Framework that aren't listed in the table below are not supported on any release of Exchange 2016**. This includes minor and patch-level releases of .NET Framework.
+
+> [!IMPORTANT]
+> The complete prerequisite list for [** exchange 2016 is available here**](https://docs.microsoft.com/exchange/plan-and-deploy/prerequisites?view=exchserver-2016)
+
 
 |**Exchange version**|**.NET Framework 4.7.2**|**.NET Framework 4.7.1**|**.NET Framework 4.6.2**|
 |:-----|:-----|:-----|:-----|

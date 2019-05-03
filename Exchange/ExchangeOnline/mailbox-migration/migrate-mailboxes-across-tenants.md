@@ -69,7 +69,7 @@ To create the resources in the target (Contoso) tenant:
 
    2. Verify that all new users and groups are synced to the Contoso.com target tenant via directory synchronization. The objects should appear as user@contoso.onmicrosoft.com in the new tenant since the Fabrikam domain has not been moved over at this time. The primary email address for the users and groups can be updated to @fabrikam.com after the domain move is complete.
 
-2. If directory synchronization will not be used, or if any Rooms, Resources, Groups or Users are managed in the Office 365 admin center of the source tenant; these objects must be created in the target tenant. Objects can be created manually in the Office 365 admin center or for larger numbers import a CSV file by using the bulk add feature in the Office 365 admin center, or by using Windows PowerShell.
+2. If directory synchronization will not be used, or if any Rooms, Resources, Groups or Users are managed in the Microsoft 365 admin center of the source tenant; these objects must be created in the target tenant. Objects can be created manually in the Microsoft 365 admin center or for larger numbers import a CSV file by using the bulk add feature in the Microsoft 365 admin center, or by using Windows PowerShell.
 
 #### End-user communications
 
@@ -77,7 +77,7 @@ To communicate the migration to the end users in your organization:
 
 1. Create a communication plan and begin to notify users of the upcoming migration and service changes.
 
-2. After migration, the nickname cache will have to be cleared on all Outlook clients. See [How to reset the nickname and the automatic completion caches in Outlook](https://go.microsoft.com/fwlink/p/?LinkId=393486) for an automated fix-it-tool that can be run by the end users.
+2. After migration, the Auto-Complete List (also known as the nickname cache) will have to be cleared on all Outlook clients. To remove all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.office.com/article/dbe46e31-c098-4881-8cf7-66b037bce23e).
 
 3. Make users aware of how to connect to Outlook Web App with their new sign on information in case they have a problem after migration.
 
@@ -89,7 +89,7 @@ To prepare the domain for migration, complete the following steps.
 
 1. Begin domain verification process on target (Contoso) tenant for the Fabrikam.com email domain.
 
-2. In the contoso.com Office 365 admin center, add the Fabrikam.com domain and create TXT records in Domain Name Systems (DNS) for verification.
+2. In the contoso.com Microsoft 365 admin center, add the Fabrikam.com domain and create TXT records in Domain Name Systems (DNS) for verification.
 
     > [!NOTE]
     > The verification will fail because the domain is still in use in the other tenant.
@@ -116,7 +116,7 @@ Next, you'll schedule the TTL test.
 
 #### Disable directory sync in source tenant
 
-In the source tenant Office 365 admin center, disable directory sync. This process can take 24 hours or more so it must be done ahead of the migration. Once disabled in the portal, any changes to the source tenant AD DS will no longer sync to the Office 365 tenant. Adjust your existing user and group provisioning process accordingly.
+In the source tenant Microsoft 365 admin center, disable directory sync. This process can take 24 hours or more so it must be done ahead of the migration. Once disabled in the portal, any changes to the source tenant AD DS will no longer sync to the Office 365 tenant. Adjust your existing user and group provisioning process accordingly.
 
 ### Migration: The day you migrate
 
@@ -189,7 +189,7 @@ At the end of migration, Outlook 2007 and 2010 will sync the entire mailbox for 
 
 #### Post migration: Cleanup
 
-User may receive NDRs when replying to migrated email messages. The Outlook nickname cache needs to be cleared. See [How to reset the nickname and the automatic completion caches in Outlook](https://go.microsoft.com/fwlink/p/?LinkId=393486). Alternatively, add the old legacy DN as an x.500 proxy address to all users.
+User may receive NDRs when replying to migrated email messages. The Outlook Auto-Complete List (also known as the nickname cache) needs to be cleared. To remove all recipients from your Auto-Complete list in Outlook 2010 later, see [Manage suggested recipients in the To, Cc, and Bcc boxes with Auto-Complete](https://support.office.com/article/dbe46e31-c098-4881-8cf7-66b037bce23e). Alternatively, add the old legacy DN as an x.500 proxy address to all users.
 
 ## Sample Windows PowerShell scripts
 

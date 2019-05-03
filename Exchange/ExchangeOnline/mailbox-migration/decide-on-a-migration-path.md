@@ -105,7 +105,7 @@ Depending on your source system, see one of the following:
 
     This topic includes the instructions for the migration CSV files for Exchange, Mirapoint, Dovecoat, and Courier IMAP.
 
-- [IMAP migration in the Office 365 admin center](migrating-imap-mailboxes/imap-migration-in-the-admin-center.md)
+- [IMAP migration in the Microsoft 365 admin center](migrating-imap-mailboxes/imap-migration-in-the-admin-center.md)
 
 If the mailboxes you're migrating contain a large amount of data, you can also use [Office 365 Import Service](https://go.microsoft.com/fwlink/p/?LinkId=624136) to import PST files to Office 365. You can use the Office 365 Import Service to either ship the files or to import them across the network.
 
