@@ -102,12 +102,8 @@ We don't support installing Office client or Office server software on Exchange 
 We strongly recommend that you use the latest version of the .NET Framework that's supported by the release of Exchange you're installing.
 
 > [!IMPORTANT]
-> **Releases of .NET Framework that aren't listed in the table below aren't supported on any release of Exchange 2019**. This includes minor and patch-level releases of .NET Framework.
+> **Releases of .NET Framework that aren't listed in the table below aren't supported on any release of Exchange 2019**. This includes minor and patch-level releases of .NET Framework. <br/><br/> The complete prerequisite list for Exchange 2019 is available [here](https://docs.microsoft.com/exchange/plan-and-deploy/prerequisites?view=exchserver-2019).
 
-> [!IMPORTANT]
-> The complete prerequisite list for [** exchange 2019 is available here**](https://docs.microsoft.com/exchange/plan-and-deploy/prerequisites?view=exchserver-2019)
-
- 
 |**Exchange version**|**.NET Framework 4.7.2 or later**|
 |:-----|:-----|
 |Exchange 2019|Supported|
@@ -120,11 +116,11 @@ We strongly recommend that you use the latest version of the .NET Framework that
 
 - Outlook 2016
 
-- Outlook 2016 for Mac
-
 - Outlook 2013
 
 - Outlook for Mac for Office 365
+
+- Outlook 2016 for Mac
 
 > [!IMPORTANT]
 > You need KB3140245 to apply registry keys to enable TLS 1.1 & 1.2 support for Windows 7, otherwise Outlook 2013 and 2016 will not work on Windows 7.
