@@ -296,6 +296,7 @@
 #### [Retention tags and retention policies](../policy-and-compliance/mrm/retention-tags-and-retention-policies.md)
 #### [Retention age](../policy-and-compliance/mrm/retention-age.md)
 #### [Create retention policies](../policy-and-compliance/mrm/create-retention-policies.md)
+#### [Default Folders that support tags](../policy-and-compliance/mrm/default-folders-that-support-tags.md)
 #### [Apply retention policies to mailboxes](../policy-and-compliance/mrm/apply-retention-policies-to-mailboxes.md)
 #### [Configure Managed Folder Assistant](../policy-and-compliance/mrm/configure-managed-folder-assistant.md)
 ### [Admin audit logging](../policy-and-compliance/admin-audit-logging/admin-audit-logging.md)
