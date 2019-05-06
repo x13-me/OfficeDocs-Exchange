@@ -24,7 +24,6 @@ Download links for the latest CU, RU, and SP for Exchange Server 2019, Exchange 
 
 **Note**: In the following sections, RTM stands for release to manufacturing (the first version of the product).
 
-
 ## Exchange Server 2019
 
 The table in this section provides build numbers and general release dates for each version of Microsoft Exchange Server 2019.
@@ -67,7 +66,6 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 |Exchange Server 2016 CU1|March 15, 2016|15.1.396.30|15.01.0396.030|
 |Exchange Server 2016 RTM|October 1, 2015|15.1.225.42|15.01.0225.042|
 |Exchange Server 2016 Preview|July 22, 2015|15.1.225.16|15.01.0225.016|
-
 
 ## Exchange Server 2013
 
@@ -119,6 +117,7 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
+|[Update Rollup 27 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=58196)|April 9, 2019|14.3.452.0|14.03.0452.000|
 |[Update Rollup 26 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57824)|February 12, 2019|14.3.442.0|14.03.0442.000|
 |[Update Rollup 25 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57759)|January 8, 2019|14.3.435.0|14.03.0435.000|
 |[Update Rollup 24 for Exchange Server 2010 SP3](https://www.microsoft.com/download/details.aspx?id=57306)|September 5, 2018|14.3.419.0|14.03.0419.000|
@@ -182,7 +181,6 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 |Update Rollup 2 for Exchange Server 2010|March 4, 2010|14.0.689.0|14.00.0689.000|
 |Update Rollup 1 for Exchange Server 2010|December 9, 2009|14.0.682.1|14.00.0682.001|
 |Exchange Server 2010 RTM|November 9, 2009|14.0.639.21|14.00.0639.021|
-
 
 ## Exchange Server 2007
 
@@ -257,7 +255,6 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 |Update Rollup 1 for Exchange Server 2007|April 17, 2007|8.0.708.3|8.00.0708.003|
 |Exchange Server 2007 RTM|March 8, 2007|8.0.685.25|8.00.0685.025|
 
-
 ## Exchange Server 2003
 
 The following table lists the build numbers and general release dates for each version of Microsoft Exchange Server 2003. To view the build number of Exchange Server 2003, open the **Properties** dialog box of the server object.
@@ -286,7 +283,6 @@ The following table lists the build numbers and general release dates for each v
 |Exchange 2000 Server SP1|June 21, 2001|6.0.4712|
 |Exchange 2000 Server|November 29, 2000|6.0.4417|
 
-
 ## Exchange Server 5.5
 
 The following table lists the build numbers and general release dates for each version of Microsoft Exchange Server version 5.5.
@@ -298,7 +294,6 @@ The following table lists the build numbers and general release dates for each v
 |Exchange Server version 5.5 SP2|December 23, 1998|5.5.2448|
 |Exchange Server version 5.5 SP1|August 5, 1998|5.5.2232|
 |Exchange Server version 5.5|February 3, 1998|5.5.1960|
-
 
 ## Exchange Server 5.0
 
@@ -320,4 +315,3 @@ The following table lists the build numbers and general release dates for each v
 |Exchange Server 4.0 SP2|July 19, 1996|4.0.993|
 |Exchange Server 4.0 SP1|May 1, 1996|4.0.838|
 |Exchange Server 4.0 Standard Edition|June 11, 1996|4.0.837|
-
