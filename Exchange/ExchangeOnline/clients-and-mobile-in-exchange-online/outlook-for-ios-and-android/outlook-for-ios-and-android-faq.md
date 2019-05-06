@@ -39,7 +39,7 @@ For more information on the architecture, see [Outlook for iOS and Android in Ex
 
 ### Q: Can I add two different Office 365 accounts from different Office 365 regions to Outlook for iOS and Android?
 
-Yes. However, customers with the Office 365 Government plan may only have accounts connected to Outlook for iOS and Android from a single Office 365 region. This means that Office 365 Government customers can't have both a mailbox that is located in European Office 365 datacenters and an Office 365 Government plan mailbox within the same Outlook for iOS and Android app on the same device.
+Yes, provided both accounts do not have Intune App Protection Policies assigned. However, for Government Community Cloud customers, users may only add their own account and OneDrive for Business storage account to the app; adding personal or other commercial accounts is prevented to meet FedRAMP requirements. For more information on Government Community Cloud restrictions with Outlook for iOS and Android, please see [Using Outlook for iOS and Android in the Government Community Cloud](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-in-the-government-cloud).
 
 ### Q: What authentication mechanism is used for Outlook for iOS are Android? Are credentials stored in Office 365?
 
@@ -128,6 +128,45 @@ In cases where Outlook for iOS and Android receives protected messages and promp
 
 > [!NOTE]
 > Outlook for iOS leverages iOS's native preview technology to quickly expose attachments to end users. iOS's preview technology does not support rights management and will report error "The operation couldn't be completed. (OfficeImportErrorDomain error 912)" when a user attempts to open a rights-protected attachment. Users will need to tap the respective Word, Excel, or PowerPoint app icon to open the rights-protected attachment in the native app.
+
+### Q: Does Outlook for iOS and Android support Teams meetings?
+
+Yes, Outlook for iOS and Android supports both Skype for Business and Teams meetings. The Teams coexistence mode at the Office 365 tenant level and the user level (the user setting takes precedence over the tenant setting) determines the meeting creation experience in Outlook for iOS and Android:
+
+<table>
+<thead>
+<tr class="header">
+<th><strong>Coexistence Mode</strong></th>
+<th><strong>Outlook for iOS and Android experience</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Islands</td>
+<td>Skype for Business</td>
+</tr>
+<tr class="even">
+<td>Skype for Business Only</td>
+<td>Skype for Business</td>
+</tr>
+<tr class="odd">
+<td>Skype for Business with Teams Collaboration</td>
+<td>Skype for Business</td>
+</tr>
+<tr class="even">
+<td>Teams Only</td>
+<td>Teams</td>
+</tr>
+<tr class="odd">
+<td>Skype for Business with Teams Collaboration and Meetings</td>
+<td>Teams</td>
+</tr>
+</tbody>
+</table>
+
+In addition, for users leveraging the native Microsoft sync technology, a Teams Join button is available in calendar events. This makes it easy to Join a Teams meeting and will be available for all coexistence modes. Users who are not leveraging the native Microsoft sync technology will be able to join Teams Meetings using the weblink in the meeting description.
+
+For more information on the Teams coexistence modes, please see [Choose your upgrade journey from Skype from Business to Teams](https://docs.microsoft.com/microsoftteams/upgrade-and-coexistence-of-skypeforbusiness-and-teams).
 
 ### Q: What ports and end points does Outlook for iOS and Android use?
 
