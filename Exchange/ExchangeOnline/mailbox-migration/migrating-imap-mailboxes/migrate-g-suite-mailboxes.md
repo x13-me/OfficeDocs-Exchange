@@ -4,9 +4,8 @@ ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 665dc56c-581c-4e35-8028-6bc1e8497016
-ms.date: 9/19/2018
-description: ""
-title: Migrate G Suite mailboxes to Office 365
+description: "For consumers who want to migrate their Gmail mailboxes to Office 365 with IMAP and app passwords."
+title: Migrate consumer G Suite mailboxes to Office 365 
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -25,7 +24,10 @@ manager: serdars
 
 ---
 
-# Migrate G Suite mailboxes to Office 365
+# Migrate consumer G Suite mailboxes to Office 365
+
+> [!NOTE]
+> This article explains how to migrate consumer Gmail mailboxes to Office 365. For organizations and enterprises interested in migrating G Suite content, including calendar and contacts information in addition to mailbox data, see [Perform a G Suite migration](../perform-G-Suite-migration.md).
 
 [Migrate your IMAP mailboxes to Office 365](migrating-imap-mailboxes.md) gives you an overview of the migration process. Read it first and when you're familiar with the contents of that article, return to this topic to learn how to migrate mailboxes from G Suite (formerly known as Google Apps) Gmail to Office 365. You must be a global admin in Office 365 to complete IMAP migration steps.
 
