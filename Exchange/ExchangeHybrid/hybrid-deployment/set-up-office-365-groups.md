@@ -65,7 +65,7 @@ Before you start, make sure that you've done the following:
     
 10. Open the Windows PowerShell on the Azure Active Directory Connect server, and run the following commands.
     
-  ```Powershell
+  ```
   $AzureADConnectSWritebackAccountDN = <AAD_ account DN>
   Import-Module "C:\Program Files\Microsoft Azure Active Directory Connect\AdSyncConfig\AdSyncConfig.psm1"
   Set-ADSyncUnifiedGroupWritebackPermissions -ADConnectorAccountDN $AzureADConnectSWritebackAccountDN
@@ -79,7 +79,7 @@ The primary SMTP domain of an Office 365 Group is called a group domain. By defa
     
 2. Add the group domain as an accepted domain in your on-premises Exchange organization using the following command. This is needed so that the hybrid Send connector can be used to deliver outbound mail to the group domain in Office 365.
     
-  ```Powershell
+  ```
   New-AcceptedDomain -Name groups.contoso.com -DomainName groups.contoso.com -DomainType InternalRelay
   ```
 
@@ -97,7 +97,7 @@ The primary SMTP domain of an Office 365 Group is called a group domain. By defa
   
 4. Add the group domain to the hybrid Send connector, created by the Hybrid Configuration wizard in your on-premises Exchange organization, using the following command.
     
-  ```Powershell
+  ```
   Set-SendConnector -Identity "Outbound to Office 365" -AddressSpaces "contoso.mail.onmicrosoft.com","groups.contoso.com"
   ```
 
@@ -149,7 +149,7 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
     
 - **New groups don't appear in the on-premises Exchange global address list (GAL)** When a new group is created in Office 365, it won't appear in the on-premises GAL automatically. To fix this issue, open the Exchange Management Shell on an on-premises Exchange server and run the following command. 
     
-  ```Powershell
+  ```
   Update-Recipient "<group name>"
   ```
 
