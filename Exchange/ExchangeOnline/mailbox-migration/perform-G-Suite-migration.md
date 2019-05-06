@@ -163,7 +163,7 @@ The primary email address that you provision for each user should be the same as
 10. After the batch status changes from **Syncing** to **Synced**, you can complete the batch. The batch status will then be **Completed**.  
 ![batch syncing](../media/gsuite-mig-18-eac-syncing.png)
 
-The final step is to set a fowarding email address for each migrated user on the G Suite side, so that any messages received at their G Suite mailboxes will be sent to their new Office 365 address. Similarly, if any user who has not yet been migrated receives a message at their Office 365 address, the message will get routed to their G Suite mailbox.
+During completion, another incremental sync is run to copy any changes that have been made to the G Suite mailbox. Additionally, the forwarding address that routes mail from O365 to G Suite is removed, and a forwarding address that routes mail from G Suite to O365 is added. This ensures that any  messages received by migrated users at their G Suite mailboxes will be sent to their new Office 365 address. Similarly, if any user who has not yet been migrated receives a message at their Office 365 address, the message will get routed to their G Suite mailbox.
 
 
 ## Start a G Suite migration with Exchange Online Powershell
