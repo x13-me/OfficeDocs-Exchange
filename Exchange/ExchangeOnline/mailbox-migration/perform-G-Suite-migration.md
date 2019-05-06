@@ -107,7 +107,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 1. Go to the [G Suite Admin page](https://admin.google.com/AdminHome) and sign in as a G Suite admin for your tenant.
 2. Click **Domains**, and then **Add/remove domains**, and then click **Add a domain or a domain alias**.
-3. Select **Add a domain alias of...** your domain. A sub-domain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain). Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions for [Create a migration batch in Office 365](#create-a-migration-batch-in-office-365).  
+3. Select **Add a domain alias of...** your domain. A sub-domain of your primary domain is recommended (such as "gsuite.fabrikaminc.net" when "fabrikaminc.net" is your primary domain). Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions for [Create a migration batch in Office 365](#create-a-migration-batch-in-office-365).  
 ![Add another domain](../media/gsuite-mig-9-sub-domain-0365.png)
 
 4. For your domain, make sure that the status is **Verified**. Follow any steps required to get the domain to a verified state. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain should have been verified automatically.  
@@ -120,7 +120,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 1. Go to the [G Suite Admin page](https://admin.google.com/AdminHome) and sign in as a G Suite admin for your tenant.
 2. Click **Domains**, and then **Add/remove domains**, and then click **Add a domain or a domain alias**.
-3. Select **Add another domain**. Enter the domain that you will use for routing mails to G Suite. A sub-domain of your primary domain is recommended (such as "gsuite.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified.  
+3. Select **Add another domain**. Enter the domain that you will use for routing mails to G Suite. A sub-domain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified.  
 ![Add another domain](../media/gsuite-mig-11-sub-domain-gsuite.png)
 
 4. For your newly created domain, make sure that the status is **Verified**. Follow any steps required to get the domain to a verified state. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain should have been verified automatically.  
