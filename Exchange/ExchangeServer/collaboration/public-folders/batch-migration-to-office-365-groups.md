@@ -43,7 +43,7 @@ Ensure that all of the following conditions are met before you begin preparing y
 
 - Office 365 Groups comes with a 50GB mailbox. Ensure that the sum of public folder data that you're migrating totals less than 50GB. In addition, leave storage space for additional content to be added by your users in the future, post-migration. We recommend migrating public folders no bigger than 25GB in total size.
 
-- This is not an "all or nothing" migration. You can pick and choose specific public folders to migrate, and only those public folders will be migrated. If the public folder being migrated has sub-folders, those sub-folders will not be automatically included in the migration. If you need to migrate them, you need to explicitly include them.
+- This is not an "all or nothing" migration. You can pick and choose specific public folders to migrate, and only those public folders will be migrated. If the public folder being migrated has sub-folders, those sub-folders will not be automatically included in the migration. If you need to migrate them, you need to explicitly include them. The migration batch allows for a mapping of a maximum two sub-folders to a single Office 365 Group mailbox.
 
 - The public folders will not be affected in any manner by this migration. However, once you use our lock-down script to make the migrated public folders read-only, your users will be forced to use Office 365 Groups instead of public folders.
 
@@ -117,6 +117,7 @@ An example .csv:
 ```
 "FolderPath","TargetGroupMailbox"
 "\Sales","sales@contoso.onmicrosoft.com"
+"\Sales\APAC","apacsales@contoso.onmicrosoft.com"
 "\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
 
 ```
