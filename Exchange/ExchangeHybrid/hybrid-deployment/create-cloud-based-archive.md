@@ -52,7 +52,7 @@ Use one of the following procedures to enable a cloud-based archive mailbox for 
 
 6. Click **Save** to create the mailbox and the cloud-based archive.
 
-Note on the **Mailboxes** page, the value **User (Archive)** is displayed in the **Mailbox type** column for the selected mailbox.
+   Note on the **Mailboxes** page, the value **User (Archive)** is displayed in the **Mailbox type** column for the selected mailbox.
 
 7. Wait up to 30 minutes for directory synchronization to create a corresponding user account in Office 365.
 
@@ -77,7 +77,7 @@ Note on the **Mailboxes** page, the value **User (Archive)** is displayed in the
 
 1. In the Office 365 admin center, go to **Users** \> **Active users**, and then select the user account that you want to create a cloud-base archive mailbox for.
 
-2. On the user properties page that's displayed, click **Edit** in the ** Product licenses ** section.
+2. On the user properties page that's displayed, click **Edit** in the **Product licenses** section.
 
     ![Click Edit in the details pane to assign a license to the selected user](../media/383a9068-53cb-420a-a05e-823e8b5a2c25.png)
 
@@ -105,7 +105,6 @@ Note on the **Mailboxes** page, the value **User (Archive)** is displayed in the
 
     > [!TIP]
     > In the Office 365 admin center, go to **Health** \> **Directory sync status** to see the last time that directory synchronization occurred.
-
 
 ## Step 2: Verify that the cloud-based archive mailbox is created
 
