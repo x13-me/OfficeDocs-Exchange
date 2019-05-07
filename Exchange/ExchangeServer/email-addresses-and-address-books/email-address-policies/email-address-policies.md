@@ -72,6 +72,8 @@ All SMTP email address formats in the Exchange Management Shell, or custom SMTP 
 |%g  <br/> |Given name (first name)  <br/> |
 |%i  <br/> |Middle initial  <br/> |
 |%m  <br/> |Exchange alias  <br/> |
+|%r_x_y_  <br/> |Replace all occurrences of _x_ with _y_  <br/> |
+|%r_x_x_  <br/> |Remove all occurrences of _x_  <br/> |
 |%s  <br/> |Surname (last name)  <br/> |
 |% _x_g  <br/> |The first _x_ letters of the first name. For example, `%2g` uses the first two letters of the first name.  <br/> |
 |% _x_s  <br/> |The first _x_ letters of the last name. For example, `%2s` uses the first two letters of the last name.  <br/> |
