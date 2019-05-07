@@ -42,6 +42,3 @@ The attributes listed in the following topics can be copied from an on-premises 
 [Retention Policy](retention-policy.md)
 
 [Retention Policy Tags](retention-policy-tags.md)
-
-
-

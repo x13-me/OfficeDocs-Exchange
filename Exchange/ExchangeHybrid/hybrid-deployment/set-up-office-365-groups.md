@@ -39,7 +39,7 @@ Before you start, make sure that you've done the following:
 
 - Installed a supported version of Exchange on-premises Exchange integration with Office 365 Groups is available in CU1 and newer releases of Exchange 2016, and CU11 and newer releases of Exchange 2013. However, Exchange hybrid requires the latest Exchange 2013 or Exchange 2016 Cumulative Update (CU) to be installed on your on-premises Exchange servers. If you can't install the latest CU, the update released immediately prior to the current CU can be used.
 
-- Configured single sign-on using Azure Active Directory Connect (Azure AD Connect). This is needed to allow users to click on the **View group files** or cloud attachment links in group email messages. 
+- Configured single sign-on using Azure Active Directory Connect (Azure AD Connect). This is needed to allow users to click on the **View group files** or cloud attachment links in group email messages.
 
   When configuring Azure AD Connect for single sign-on in an Exchange hybrid deployment, we recommend that you use password synchronization. Active Directory Federation Services (AD FS) should only be used if you're in a large organization; if you have a complex on-premises Active Directory deployment (for example, multiple Active Directory forests); if another Microsoft product requires AD FS to work with Office 365; or if, due to compliance policies, you're not able to synchronize passwords outside of your on-premises network. For more information about single sign-on, see [Integrating your on-premises identities with Azure Active Directory](http://go.microsoft.com/fwlink/p/?LinkID=723513).
 
@@ -65,11 +65,11 @@ Before you start, make sure that you've done the following:
 
 10. Open the Windows PowerShell on the Azure Active Directory Connect server, and run the following commands.
 
-  ```
-  $AzureADConnectSWritebackAccountDN = <AAD_ account DN>
-  Import-Module "C:\Program Files\Microsoft Azure Active Directory Connect\AdSyncConfig\AdSyncConfig.psm1"
-  Set-ADSyncUnifiedGroupWritebackPermissions -ADConnectorAccountDN $AzureADConnectSWritebackAccountDN
-  ```
+    ```
+    $AzureADConnectSWritebackAccountDN = <AAD_ account DN>
+    Import-Module "C:\Program Files\Microsoft Azure Active Directory Connect\AdSyncConfig\AdSyncConfig.psm1"
+    Set-ADSyncUnifiedGroupWritebackPermissions -ADConnectorAccountDN $AzureADConnectSWritebackAccountDN
+    ```
 
 ## Configure a group domain
 
@@ -79,27 +79,27 @@ The primary SMTP domain of an Office 365 Group is called a group domain. By defa
 
 2. Add the group domain as an accepted domain in your on-premises Exchange organization using the following command. This is needed so that the hybrid Send connector can be used to deliver outbound mail to the group domain in Office 365.
 
-  ```
-  New-AcceptedDomain -Name groups.contoso.com -DomainName groups.contoso.com -DomainType InternalRelay
-  ```
+   ```
+   New-AcceptedDomain -Name groups.contoso.com -DomainName groups.contoso.com -DomainType InternalRelay
+   ```
 
 3. Create the following public DNS records with your DNS provider.
 
-|**DNS record name**|**DNS record type**|**DNS record value**|
-|:-----|:-----|:-----|
-|groups.contoso.com|MX|groups-contoso-com.mail.protection.outlook.com<sup>1<sup/>|
-|autodiscover.groups.contoso.com|CNAME|autodiscover.outlook.com|
+   |**DNS record name**|**DNS record type**|**DNS record value**|
+   |:-----|:-----|:-----|
+   |groups.contoso.com|MX|groups-contoso-com.mail.protection.outlook.com<sup>1<sup/>|
+   |autodiscover.groups.contoso.com|CNAME|autodiscover.outlook.com|
 
-<sup>1<sup/>The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create Office 365 DNS records](https://support.office.com/article/77f90d4a-dc7f-4f09-8972-c1b03ea85a67).
+   <sup>1<sup/>The format of this DNS record value is _\<domain key\>_.mail.protection.outlook.com. To find out what your domain key is, check out [Gather the information you need to create Office 365 DNS records](https://support.office.com/article/77f90d4a-dc7f-4f09-8972-c1b03ea85a67).
 
    > [!CAUTION]
    > If the MX DNS record for the group domain is set to the on-premises Exchange server, mail flow won't work correctly between users in the on-premises Exchange organization and the Office 365 Group.
 
 4. Add the group domain to the hybrid Send connector, created by the Hybrid Configuration wizard in your on-premises Exchange organization, using the following command.
 
-  ```
-  Set-SendConnector -Identity "Outbound to Office 365" -AddressSpaces "contoso.mail.onmicrosoft.com","groups.contoso.com"
-  ```
+   ```
+   Set-SendConnector -Identity "Outbound to Office 365" -AddressSpaces "contoso.mail.onmicrosoft.com","groups.contoso.com"
+   ```
 
    > [!NOTE]
    > If the Send connector isn't updated, or if the group domain isn't added as an accepted domain in the on-premises Exchange organization, mail sent from an on-premises mailbox won't be delivered to the group unless the group is configured to receive mail from external senders.
@@ -156,9 +156,9 @@ To make sure that groups are working with your Exchange hybrid deployment, you s
 - **Groups don't receive messages from on-premises users**: An on-premises user won't be able to send mail to an Office 365 Group when the following conditions are true:
 
   - The group domain is configured as an authoritative domain in your on-premises Exchange organization.
-    
+
   - The group was recently created and its information hasn't been written back to your on-premises Active Directory yet.
-    
+
     This issue will resolve itself when Azure AD Connect performs its next synchronization between Office 365 and your on-premises organization. Azure AD Connect synchronization occurs every thirty minutes.
 
 - **On-premises users can't use links included in group message footers**: On-premises users can't use the **View group conversations** or **Unsubscribe** links that are included in the footer of each group message sent to them. To unsubscribe from a group, on-premises users need to contact a group administrator.
