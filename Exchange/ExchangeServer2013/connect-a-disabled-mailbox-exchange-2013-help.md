@@ -39,10 +39,11 @@ To learn more about disconnected mailboxes and perform other related management 
     
     For on-premises Exchange organizations, you can also verify this information in Active Directory Users and Computers.
 
-  - Run the following command to verify that the disabled mailbox that you want to connect a user account to exists in the mailbox database and isn’t a soft-deleted mailbox.
-    
+  - Replace \<DisplayName\> with the display name of the mailbox, and run the following command to verify that the disabled mailbox that you want to connect a user account to exists in the mailbox database and isn't a soft-deleted mailbox.
+
     ```powershell
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    $dbs = Get-MailboxDatabase
+    $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisplayName,Database,DisconnectReason
     ```
 
     To be able to connect a disabled mailbox, the mailbox has to exist in the mailbox database and the value for the *DisconnectReason* property has to be `Disabled`. If the mailbox has been purged from the database, the command won’t return any results.

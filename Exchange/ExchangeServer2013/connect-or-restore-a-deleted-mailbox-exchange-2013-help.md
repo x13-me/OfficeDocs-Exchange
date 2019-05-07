@@ -43,12 +43,11 @@ To learn more about disconnected mailboxes and perform other related management 
     > [!IMPORTANT]
     > When you connect deleted linked mailboxes, resource mailboxes, or shared mailboxes, the Active Directory user account that you’re connecting the mailbox to must be disabled.
 
+  - To verify that the deleted mailbox that you want to connect a user account to exists in the mailbox database and isn't a soft-deleted mailbox, replace _\<DisplayName\>_ with the display name of the mailbox, and run the following commands.
 
-
-  - To verify that the deleted mailbox that you want to connect a user account to exists in the mailbox database and isn’t a soft-deleted mailbox, run the following command.
-    
     ```powershell
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    $dbs = Get-MailboxDatabase
+    $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisplayName,Database,DisconnectReason
     ```
 
     The deleted mailbox has to exist in the mailbox database and the value for the *DisconnectReason* property has to be `Disabled`. If the mailbox has been purged from the database, the command won’t return any results.
@@ -158,25 +157,26 @@ You can use the Shell to restore a deleted mailbox to an existing mailbox using 
 
 After a mailbox restore request is successfully completed, it's retained for 30 days, by default, before it's removed. You can remove it sooner by using the **Remove-StoreMailbox** cmdlet.
 
-
 > [!NOTE]
 > You can't use the EAC to restore a deleted mailbox.
-
-
 
 ## Use the Shell to restore a deleted mailbox
 
 To create a mailbox restore request, you have to use the display name, legacy distinguished name (DN), or mailbox GUID of the deleted mailbox. Use the **Get-MailboxStatistics** cmdlet to display the values of the `DisplayName`, `MailboxGuid`, and `LegacyDN` properties for the deleted mailbox that you want to restore. For example, run the following command to return this information for all disabled and deleted mailboxes in your organization.
 
 ```powershell
-    Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "Disabled"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+$dbs = Get-MailboxDatabase
+$dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisconnectReason -eq "Disabled"} | Format-List DisplayName,MailboxGuid,LegacyDN,Database
 ```
 
 This example restores the deleted mailbox, which is identified by the *SourceStoreMailbox* parameter and is located on the MBXDB01 mailbox database, to the target mailbox Debra Garcia. The *AllowLegacyDNMismatch* parameter is used so the source mailbox can be restored to a different mailbox, one that doesn't have the same legacy DN value.
+
 ```powershell
     New-MailboxRestoreRequest -SourceStoreMailbox e4890ee7-79a2-4f94-9569-91e61eac372b -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
 ```
+
 This example restores Pilar Pinilla’s deleted archive mailbox to her current archive mailbox. The *AllowLegacyDNMismatch* parameter isn’t necessary because a primary mailbox and its corresponding archive mailbox have the same legacy DN.
+
 ```powershell
     New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
 ```
@@ -189,23 +189,21 @@ If you hard deleted a public folder mailbox that you now want to restore, and th
 
 You will need the GUID of the deleted public folder mailbox, as well as the GUID or name of the mailbox database that contained the public folder mailbox. If you don't have this information, you can take the following steps:
 
-1.  Get the Active Directory forest and domain controller fully-qualified domain name (FQDN) by running the following cmdlet:
+1. Get the Active Directory forest and domain controller fully-qualified domain name (FQDN) by running the following cmdlet:
     
     ```powershell
     Get-OrganizationConfig | fl OriginatingServer
     ```
 
-2.  With the information returned by Step 1, search the Deleted Objects container in Active Directory for the GUID of the public folder mailbox and for the GUID or name of the mailbox database that the deleted public folder mailbox was contained in.
+2. With the information returned by Step 1, search the Deleted Objects container in Active Directory for the GUID of the public folder mailbox and for the GUID or name of the mailbox database that the deleted public folder mailbox was contained in.
     
 
     > [!TIP]
     > You can search Deleted Objects using a custom script or by using the Ldp utility, which can be opened by typing <STRONG>ldp.exe</STRONG> at a Powershell prompt.
 
-
-
 When you know the deleted public folder mailbox GUID and the name or GUID of the mailbox database that contained the public folder mailbox, run the following commands to restore the public folder mailbox.
 
-1.  Create a new Active Directory object by running the following commands (you may be prompted to provide appropriate credentials):
+1. Create a new Active Directory object by running the following commands (you may be prompted to provide appropriate credentials):
     
     ```powershell
         New-MailUser <mailUserName> -ExternalEmailAddress <emailAddress> 
@@ -216,7 +214,7 @@ When you know the deleted public folder mailbox GUID and the name or GUID of the
 
     Where `<mailUserName>`, `<emailAddress>`, and `<mailUserName>` are values you choose. You will need to use the same `<mailUserName>` value in the next step.
 
-2.  Connect the deleted public folder mailbox to the Active Directory object you just created by running the following command:
+2. Connect the deleted public folder mailbox to the Active Directory object you just created by running the following command:
     
     ```powershell
         Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
@@ -225,9 +223,7 @@ When you know the deleted public folder mailbox GUID and the name or GUID of the
     > [!NOTE]
     > The <CODE>Identity</CODE> parameter specifies the mailbox object in the Exchange database to connect to an Active Directory user object. The above example specifies the GUID for the public folder mailbox, but you can also use the Display name value or the LegacyExchangeDN value.
 
-
-
-3.  Run `Update-StoreMailboxState` on the public folder mailbox, based on the following example:
+3. Run `Update-StoreMailboxState` on the public folder mailbox, based on the following example:
     
     ```powershell
         Update-StoreMailboxState -Identity <public folder mailbox GUID> -Database <database name or GUID>
@@ -244,4 +240,3 @@ For more information, see:
   - [Connect-Mailbox](https://technet.microsoft.com/en-us/library/aa997878\(v=exchg.150\))
 
   - [Update-StoreMailboxState](https://technet.microsoft.com/en-us/library/jj860462\(v=exchg.150\))
-

@@ -229,7 +229,7 @@ The following commands are associated with various tasks that you can use when a
 <p>The FileData parameter accepts data from a file on your local computer using this syntax on most cmdlets.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Export-RecipientDataProperty -Identity tony@contoso.com -SpokenName <em>| ForEach { $_.FileData | Add-Content C:\tonysmith.wma -Encoding Byte}</em></p></td>
+<td><p>Export-RecipientDataProperty -Identity tony@contoso.com -SpokenName <em>| ForEach {$_.FileData | Add-Content C:\tonysmith.wma -Encoding Byte}</em></p></td>
 <td><p>This command shows an example of the syntax, shown in italics, required to export a file from a remote Exchange 2013 server. The syntax encapsulates the data stored in the FileData property on the object returned by the cmdlet and then streams the data to your local computer. The data is then stored in the <em>C:\tonysmith.wma</em> file.</p>
 <p>Most cmdlets that output objects with a FileData property use this syntax to export data to a file on your local computer.</p></td>
 </tr>

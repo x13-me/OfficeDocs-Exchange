@@ -112,7 +112,7 @@ When you’re mail-enabling users in bulk, you first export the list of users th
 1.  Run the following command to export a list of existing users that aren't mail-enabled or don't have a mailbox in your organization to a file on the administrator's desktop named UsersToMailEnable.csv.
     
     ```powershell
-        Get-User | Where { $_.RecipientType -eq "User" } | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
+        Get-User | Where {$_.RecipientType -eq "User"} | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
     ```
 
     The resulting file will be similar to the following file.

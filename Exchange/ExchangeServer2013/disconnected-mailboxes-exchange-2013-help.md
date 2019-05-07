@@ -32,10 +32,11 @@ A *disconnected mailbox* is a mailbox object in the mailbox database that isn't 
     > If a mailbox is deleted using the <STRONG>Remove-Mailbox</STRONG> cmdlet and either the <EM>Permanent</EM> or <EM>StoreMailboxIdentity</EM> parameter, it will be immediately deleted from the mailbox database.
 
     
-    To identify the disabled mailboxes in your organization, run the following command in the Shell.
-    
+    To identify the disabled mailboxes in your organization, run the following commands in the Shell.
+
     ```powershell
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "Disabled" } | ft DisplayName,Database,DisconnectDate
+    $dbs = Get-MailboxDatabase
+    $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisconnectReason -eq "Disabled"} | Format-Table DisplayName,Database,DisconnectDate
     ```
 
   - **Soft-deleted mailboxes**   When a mailbox is moved to a different mailbox database, Exchange doesn't fully delete the mailbox from the source mailbox database when the move is complete. Instead, the mailbox in the source mailbox database is switched to a *soft-deleted* state. Like disabled mailboxes, soft-deleted mailboxes are retained in the source database either until the deleted mailbox retention period expires or until the **Remove-StoreMailbox** cmdlet is used to purge the mailbox.
@@ -43,7 +44,8 @@ A *disconnected mailbox* is a mailbox object in the mailbox database that isn't 
     Run the following command to identify soft-deleted mailboxes in your organization.
     
     ```powershell
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | ft DisplayName,Database,DisconnectDate
+    $dbs = Get-MailboxDatabase
+    $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisconnectReason -eq "SoftDeleted"} | Format-Table DisplayName,Database,DisconnectDate
     ```
     
 **Contents**

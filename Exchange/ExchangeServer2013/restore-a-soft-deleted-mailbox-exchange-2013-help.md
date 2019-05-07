@@ -31,29 +31,31 @@ To learn more about soft-deleted mailboxes and perform other related management 
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 2 minutes.
+- Estimated time to complete: 2 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - The procedures in this topic can only be performed in the Shell. You can’t use the EAC to restore soft-deleted mailboxes.
+- The procedures in this topic can only be performed in the Shell. You can’t use the EAC to restore soft-deleted mailboxes.
 
-  - Run the following command to verify that the soft-deleted mailbox that you want to connect a user account still exists in the mailbox database and is not a disabled mailbox.
-    
-    ```powershell
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,DisconnectReason,DisconnectDate
-    ```
+- Replace _\<DisplayName\>_ with the display name of the mailbox, and run the following commands to verify that the soft-deleted mailbox that you want to connect a user account still exists in the mailbox database and is not a disabled mailbox.
 
-    The soft-deleted mailbox has to exist in the mailbox database and the value for the *DisconnectReason* property has to be `SoftDeleted`. If the mailbox has been purged from the database, the command won’t return any results.
-    
-    Alternatively, run the following command to display all soft-deleted mailboxes in your organization.
-    
-    ```powershell
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | fl DisplayName,DisconnectReason,DisconnectDate
-    ```
+  ```powershell
+  $dbs = Get-MailboxDatabase
+  dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisplayName,DisconnectReason,DisconnectDate
+  ```
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+  The soft-deleted mailbox has to exist in the mailbox database and the value for the *DisconnectReason* property has to be `SoftDeleted`. If the mailbox has been purged from the database, the command won’t return any results.
 
-  - Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)..
+  Alternatively, run the following command to display all soft-deleted mailboxes in your organization.
+
+  ```powershell
+  $dbs = Get-MailboxDatabase
+  dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisconnectReason -eq "SoftDeleted"} | Format-List DisplayName,DisconnectReason,DisconnectDate
+  ```
+
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+
+- Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
 
 ## Use the Shell to restore a soft-deleted mailbox
 
@@ -61,10 +63,11 @@ You can use the Shell to restore a soft-deleted mailbox to an existing mailbox b
 
 After a soft-deleted mailbox is restored, the mailbox is retained in the mailbox database until it’s permanently deleted by an administrator or purged when the deleted mailbox retention period expires.
 
-To create a mailbox restore request, you have to use the display name, mailbox GUID, or legacy distinguished name (DN) of the soft-deleted mailbox. Use the **Get-MailboxStatistics** cmdlet to display the values of the **DisplayName**, **MailboxGuid**, and **LegacyDN** properties for the soft-deleted mailbox that you want to restore. For example, run the following command to return this information for all disabled and soft-deleted mailboxes in your organization.
+To create a mailbox restore request, you have to use the display name, mailbox GUID, or legacy distinguished name (DN) of the soft-deleted mailbox. Use the **Get-MailboxStatistics** cmdlet to display the values of the **DisplayName**, **MailboxGuid**, and **LegacyDN** properties for the soft-deleted mailbox that you want to restore. For example, run the following commands to return this information for all disabled and soft-deleted mailboxes in your organization.
 
 ```powershell
-    Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "SoftDeleted"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+$dbs = Get-MailboxDatabase
+$dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisconnectReason -eq "SoftDeleted"} | Format-List DisplayName,MailboxGuid,LegacyDN,Database
 ```
 
 This example restores a soft-deleted mailbox, which is identified by the display name in the *SourceStoreMailbox* parameter and is located on the MBXDB01 mailbox database, to the target mailbox named Debra Garcia. The *AllowLegacyDNMismatch* parameter is used so the source mailbox can be restored to a mailbox that doesn't have the same legacy DN value as the soft-deleted mailbox.
@@ -87,9 +90,8 @@ To verify that you’ve successfully restored a soft-deleted mailbox to the targ
 
 For more information, see:
 
-  - [Manage mailbox restore requests](manage-mailbox-restore-requests-exchange-2013-help.md)
+- [Manage mailbox restore requests](manage-mailbox-restore-requests-exchange-2013-help.md)
 
-  - [Get-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829907\(v=exchg.150\))
+- [Get-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829907\(v=exchg.150\))
 
-  - [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/en-us/library/ff829912\(v=exchg.150\))
-
+- [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/en-us/library/ff829912\(v=exchg.150\))
