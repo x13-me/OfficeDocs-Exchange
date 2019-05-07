@@ -106,7 +106,7 @@ When you’re mail-enabling contacts in bulk, you first export the list of conta
 1.  Run the following command to export a list of existing contacts that aren't mail-enabled to a file on the administrator's desktop named Contacts.csv.
     
     ```powershell
-        Get-Contact | Where { $_.RecipientType -eq "Contact" } | Out-File "C:\Users\Administrator\Desktop\Contacts.csv"
+        Get-Contact | Where {$_.RecipientType -eq "Contact"} | Out-File "C:\Users\Administrator\Desktop\Contacts.csv"
     ```
     
     The resulting file will be similar to the following file.

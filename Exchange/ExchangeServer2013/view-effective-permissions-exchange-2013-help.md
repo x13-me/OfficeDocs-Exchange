@@ -70,13 +70,13 @@ For detailed syntax and parameter information, see [Get-ManagementRoleAssignment
 To find a specific user that's been granted permissions by a management role, you must use the **Get-ManagementRoleAssignment** cmdlet to retrieve a list of all effective users, and then pipe the output of the cmdlet to the **Where** cmdlet. The **Where** cmdlet filters the output and returns only the user you specified. Use the following syntax.
 
 ```powershell
-    Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+    Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "<name of user>"}
 ```
 
 This example finds the user David Strome on the Journaling role.
 
 ```powershell
-    Get-ManagementRoleAssignment -Role Journaling -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" }
+    Get-ManagementRoleAssignment -Role Journaling -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "David Strome"}
 ```
 
 If you want to change what properties are returned in the list or export the list to a .csv file, see Use the Shell to customize output and display it later in this topic.
@@ -88,13 +88,13 @@ For detailed syntax and parameter information, see [Get-ManagementRoleAssignment
 To know every role that a user receives permissions from, you must use the **Get-ManagementRoleAssignment** cmdlet to retrieve all effective users on all management roles and then pipe the output of the cmdlet to the **Where** cmdlet. The **Where** cmdlet filters the output and returns only the role assignments that grant the user permissions.
 
 ```powershell
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+    Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "<name of user>"}
 ```
 
 This example finds all the role assignments that grant permissions to the user Kim Akers.
 
 ```powershell
-Get-ManagementRoleAssignment -GetEffectiveUsers | Where {     Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "Kim Akers" }.EffectiveUserName -Eq "Kim Akers" }
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "Kim Akers"}.EffectiveUserName -Eq "Kim Akers"}
 ```
 
 If you want to change what properties are returned in the list or export the list to a CSV file, see Use the Shell to customize output and display it later in this topic.
@@ -154,7 +154,7 @@ For more information about the **Format-Table** and **Select-Object** cmdlets, s
 This example finds the user David Strome on all roles, and displays the `EffectiveUserName`, `Role`, `CustomRecipientWriteScope`, and `CustomConfigWriteScope` properties.
 
 ```powershell
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Format-Table EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope
+    Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "David Strome"} | Format-Table EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope
 ```
 
 For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd351024\(v=exchg.150\)).
@@ -182,7 +182,7 @@ To export a list to a .csv file, you need to pipe the results of the **Get-Manag
 This example finds the user David Strome on all roles, and displays the `EffectiveUserName`, `Role`, `CustomRecipientWriteScope`, and `CustomConfigWriteScope` properties.
 
 ```powershell
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Select-Object EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope | Export-CSV c:\output.csv
+    Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "David Strome"} | Select-Object EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope | Export-CSV c:\output.csv
 ```
 
 You can now view the .csv file in a viewer of your choice.
