@@ -19,21 +19,21 @@ description: "Organization configuration transfer attributes can be copied by th
 
 The following attributes of Retention Policy Tags are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
-|**RetentionPolicyTag**  |**Available In**  |
+|**RetentionPolicyTag**|**Available In**|
 |:-----|:-----|
-| AgeLimitForRetention   | Exchange 2010, 2013, 2016   |
-| Comment   | Exchange 2010, 2013, 2016   |
-| Identity   | Exchange 2010, 2013, 2016   |
-| LegacyManagedFolder   | Exchange 2010, 2013, 2016   |
-| LocalizedComment   | Exchange 2010, 2013, 2016   |
-| LocalizedRetentionPolicyTagName   | Exchange 2010, 2013, 2016   |
-| MessageClass   | Exchange 2010, 2013, 2016   |
-| MustDisplayCommentEnabled   | Exchange 2010, 2013, 2016   |
-| Name   | Exchange 2010, 2013, 2016   |
-| RetentionAction   | Exchange 2010, 2013, 2016   |
-| RetentionEnabled   | Exchange 2010, 2013, 2016   |
-| RetentionId   | Exchange 2010, 2013, 2016   |
-| SystemTag   | Exchange 2010, 2013, 2016   |
-| Type   | Exchange 2010, 2013, 2016   |
-| IsDefaultAutoGroupPolicyTag   | Exchange 2013, 2016   |
-| IsDefaultModeratedRecipientsPolicyTag   | Exchange 2013, 2016   |
+|AgeLimitForRetention|Exchange 2010, 2013, 2016|
+|Comment|Exchange 2010, 2013, 2016|
+|Identity|Exchange 2010, 2013, 2016|
+|LegacyManagedFolder|Exchange 2010, 2013, 2016|
+|LocalizedComment|Exchange 2010, 2013, 2016|
+|LocalizedRetentionPolicyTagName|Exchange 2010, 2013, 2016|
+|MessageClass|Exchange 2010, 2013, 2016|
+|MustDisplayCommentEnabled|Exchange 2010, 2013, 2016|
+|Name|Exchange 2010, 2013, 2016|
+|RetentionAction|Exchange 2010, 2013, 2016|
+|RetentionEnabled|Exchange 2010, 2013, 2016|
+|RetentionId|Exchange 2010, 2013, 2016|
+|SystemTag|Exchange 2010, 2013, 2016|
+|Type|Exchange 2010, 2013, 2016|
+|IsDefaultAutoGroupPolicyTag|Exchange 2013, 2016|
+|IsDefaultModeratedRecipientsPolicyTag|Exchange 2013, 2016|
