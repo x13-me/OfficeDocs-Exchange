@@ -68,17 +68,18 @@ For detailed syntax and parameter information, see [Remove-Mailbox](https://tech
 
 To verify that you’ve permanently deleted an active mailbox, do the following:
 
-1.  Verify that the mailbox is no longer listed in the EAC.
+1. Verify that the mailbox is no longer listed in the EAC.
 
-2.  Verify that the associated user account is no longer listed in Active Directory Users and Computers.
+2. Verify that the associated user account is no longer listed in Active Directory Users and Computers.
 
-3.  Run the following command to verify that the mailbox was successfully purged from the Exchange mailbox database.
-    
-    ```powershell
-    Get-MailboxDatabase | Get-MailboxStatistics | Where {         Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
-    ```
-    
-    If you successfully purged the mailbox, the command won’t return any results. If the mailbox wasn’t purged, the command will return information about the mailbox.
+3. Replace _\<DisplayName\>_ with the display name of the mailbox, and run the following commands to verify that the mailbox was successfully purged from the Exchange mailbox database.
+
+   ```powershell
+   $dbs = Get-MailboxDatabase
+   $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"}
+   ```
+
+   If you successfully purged the mailbox, the command won’t return any results. If the mailbox wasn’t purged, the command will return information about the mailbox.
 
 ## Permanently delete a disconnected mailbox
 
@@ -86,18 +87,20 @@ To verify that you’ve permanently deleted an active mailbox, do the following:
 
 There are two types of disconnected mailboxes: disabled and soft-deleted. You must specify one of these types when running the cmdlet to permanently delete the mailbox. If the type you specify doesn't match the actual type of the disconnected mailbox, the command fails.
 
-Run the following command to determine whether a disconnected mailbox is disabled or soft-deleted.
+Replace _\<DisplayName\>_ with the display name of the mailbox, and run the following commands to determine whether a disconnected mailbox is disabled or soft-deleted.
 
 ```powershell
-Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+$dbs = Get-MailboxDatabase
+$dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisplayName,MailboxGuid,Database,DisconnectReason
 ```
 
 The value for the *DisconnectReason* property for disconnected mailboxes will be either `Disabled` or `SoftDeleted`.
 
-You can run the following command to display the type for all disconnected mailboxes in your organization.
+You can run the following commands to display the type for all disconnected mailboxes in your organization.
 
 ```powershell
-Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -ne $null } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+$dbs = Get-MailboxDatabase
+$dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisconnectReason -ne $null} | Format-List DisplayName,MailboxGuid,Database,DisconnectReason
 ```
 
 > [!WARNING]  
@@ -125,10 +128,11 @@ For detailed syntax and parameter information, see [Remove-StoreMailbox](https:/
 
 ## How do you know this worked?
 
-To verify that you’ve permanently deleted a disconnected mailbox and that it was successfully purged from the Exchange mailbox database, run the following command.
+To verify that you’ve permanently deleted a disconnected mailbox and that it was successfully purged from the Exchange mailbox database, replace _\<DisplayName\>_ with the display name of the mailbox, and run the following commands.
 
 ```powershell
-Get-MailboxDatabase | Get-MailboxStatistics | Where {     Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
+$dbs = Get-MailboxDatabase
+$dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"}
 ```
 
 If you successfully purged the mailbox, the command won’t return any results. If the mailbox wasn’t purged, the command will return information about the mailbox.

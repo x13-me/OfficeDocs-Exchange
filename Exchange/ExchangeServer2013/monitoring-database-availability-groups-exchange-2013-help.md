@@ -375,8 +375,8 @@ The following examples demonstrate ways that the summary HTML report may be filt
 
 ```powershell
     CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -Database MailboxDatabase123,MailboxDatabase456
-    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter { $_.DatabaseName -notlike "Mailbox Database*" }
-    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter { ($_.ActiveOnStart -like "ServerXYZ*") -and ($_.ActiveOnEnd -notlike "ServerXYZ*") }
+    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter {$_.DatabaseName -notlike "Mailbox Database*"}
+    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter {($_.ActiveOnStart -like "ServerXYZ*") -and ($_.ActiveOnEnd -notlike "ServerXYZ*")}
 ```
 
 ## CollectReplicationMetrics.ps1 script

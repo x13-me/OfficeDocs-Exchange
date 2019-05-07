@@ -119,13 +119,13 @@ To remove Exchange-related split permissions from Active Directory administrator
 1.  Remove the regular and delegating role assignments that assign the Mail Recipient Creation role to the role group or universal security group (USG) that contains the Active Directory administrators as members using the following command. This command uses the Active Directory Administrators role group as an example. The *WhatIf* switch lets you see what role assignments will be removed. Remove the *WhatIf* switch, and run the command again to remove the role assignments.
 
     ```powershell
-        Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+        Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where {$_.RoleAssigneeName -EQ "Active Directory Administrators"} | Remove-ManagementRoleAssignment -WhatIf
     ```
     
 2.  Remove the regular and delegating role assignments that assign the Security Group Creation and Membership role to the role group or USG that contains the Active Directory administrators as members using the following command. This command uses the Active Directory Administrators role group as an example. The *WhatIf* switch lets you see what role assignments will be removed. Remove the *WhatIf* switch, and run the command again to remove the role assignments.
 
     ```powershell
-        Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+        Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where {$_.RoleAssigneeName -EQ "Active Directory Administrators"} | Remove-ManagementRoleAssignment -WhatIf
     ```
     
 3.  Optional. If you want to remove all Exchange permissions from the Active Directory administrators, you can remove the role group or USG in which they're members. For more information about how to remove a role group, see [Manage role groups](manage-role-groups-exchange-2013-help.md).

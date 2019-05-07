@@ -147,7 +147,7 @@ The syntax to export files in Exchange 2013 is used any time you want to accept 
 The Shell must know that you want to save the data stored in the **FileData** property to your local computer. To do so, use the following syntax.
 
 ```command line
-<cmdlet> | ForEach {     <cmdlet> | ForEach { $_.FileData | Add-Content <local path to file> -Encoding Byte }.FileData | Add-Content <local path to file> -Encoding Byte }
+<cmdlet> | ForEach {     <cmdlet> | ForEach {$_.FileData | Add-Content <local path to file> -Encoding Byte}.FileData | Add-Content <local path to file> -Encoding Byte }
 ```
 
 For example, the following command exports the data stored in the **FileData** property on the object created by the **Export-SomeData** fictional cmdlet. The exported data is stored in a file you specify on the local computer, in this case MyData.dat.
@@ -159,7 +159,7 @@ For example, the following command exports the data stored in the **FileData** p
 
 
 ```powershell
-Export-SomeData | ForEach {     Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }.FileData | Add-Content C:\MyData.dat -Encoding Byte }
+Export-SomeData | ForEach {     Export-SomeData | ForEach {$_.FileData | Add-Content C:\MyData.dat -Encoding Byte}.FileData | Add-Content C:\MyData.dat -Encoding Byte }
 ```
 
 The following actions occur when the command is run:
