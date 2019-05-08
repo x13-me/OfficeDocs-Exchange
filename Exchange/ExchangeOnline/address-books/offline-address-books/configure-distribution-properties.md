@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: For each offline address book (OAB) distribution point in Exchange, you can configure two URLs: an internal URL that can be accessed only from your internal corporate network and an external URL that can be accessed from the internet.
+description: 
 ms.topic: article
 author: dstrome
 f1_keywords:
@@ -37,7 +37,6 @@ For additional management tasks related to OABs, see [Offline address book proce
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use Exchange Online PowerShell to configure OAB distribution properties
-<a name="UseShell"> </a>
 
 This example sets the polling interval for OAB distribution on the OAB virtual directory OAB (Default Web Site) to six hours.
 
@@ -54,7 +53,6 @@ Set-OABVirtualDirectory "OAB (Default Web Site)" -ExternalUrl https://contoso.co
 For detailed syntax and parameter information, see [set-OabVirtualDirectory](https://technet.microsoft.com/library/d1184716-920c-47cf-9e03-638434c16462.aspx).
 
 ## For More Information
-<a name="UseShell"> </a>
 
 [Understanding Offline Address Books](https://technet.microsoft.com/library/a6bcb072-4ab9-400e-a5d0-c05264629097.aspx)
 
