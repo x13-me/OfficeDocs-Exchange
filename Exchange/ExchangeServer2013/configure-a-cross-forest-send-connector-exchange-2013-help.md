@@ -27,7 +27,7 @@ Interested in scenarios where this procedure is used? See the following topics:
 
   - Estimated time to complete: 20 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Send connectors" entry and “Receive connectors” entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Send connectors" entry and "Receive connectors" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
   - See [Deploy a new installation of Exchange 2013](deploy-a-new-installation-of-exchange-2013-exchange-2013-help.md) if you are beginning your installation. After the installation you can use the steps in this topic to create connectors to configure a cross-forest topology.
 

@@ -47,7 +47,7 @@ For other management tasks related to address lists, see [Address list procedure
     
 
     > [!IMPORTANT]
-    > If you don’t add a rule, you’ll create an address list that’s redundant with one of the default address lists.
+    > If you don't add a rule, you'll create an address list that's redundant with one of the default address lists.
 
 
 
@@ -63,7 +63,7 @@ For other management tasks related to address lists, see [Address list procedure
 
 8.  Click **Save**.
 
-9.  You’ll get a warning that the address list won’t be applied until you update it. Depending on the size of your organization and the filters that you added to the address list, some address lists can contain thousands or tens of thousands of recipients. Updating address lists can impact your resources, so you may want to update the address during off-peak hours.
+9.  You'll get a warning that the address list won't be applied until you update it. Depending on the size of your organization and the filters that you added to the address list, some address lists can contain thousands or tens of thousands of recipients. Updating address lists can impact your resources, so you may want to update the address during off-peak hours.
     
     For details about updating an address list, see [Update an address list](update-an-address-list-exchange-2013-help.md).
 

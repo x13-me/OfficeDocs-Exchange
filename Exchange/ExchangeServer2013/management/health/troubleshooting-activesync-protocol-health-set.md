@@ -42,7 +42,7 @@ The ActiveSync.Protocol health set works in conjunction with the **ActiveSync** 
 
 ## User Action
 
-It’s possible that the ActiveSync service recovered after it issued the alert. Therefore, when you receive an alert that indicates that the ActiveSync health set is unhealthy, first verify that the issue still exists. For more information, see [Troubleshooting ActiveSync Health Set](troubleshooting-activesync-health-set.md).
+It's possible that the ActiveSync service recovered after it issued the alert. Therefore, when you receive an alert that indicates that the ActiveSync health set is unhealthy, first verify that the issue still exists. For more information, see [Troubleshooting ActiveSync Health Set](troubleshooting-activesync-health-set.md).
 
 </div>
 

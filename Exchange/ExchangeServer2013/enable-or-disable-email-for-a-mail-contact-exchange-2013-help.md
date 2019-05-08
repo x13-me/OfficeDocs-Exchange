@@ -65,7 +65,7 @@ For detailed syntax and parameter information, see [Disable-MailContact](https:/
 
 ## How do you know this worked?
 
-To verify that you’ve successfully disabled email for a mail contact, do one of the following:
+To verify that you've successfully disabled email for a mail contact, do one of the following:
 
 1.  In the EAC, navigate to **Recipients** \> **Contacts** and verify that the mail contact is no longer listed.
 
@@ -101,12 +101,12 @@ Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspint
 
 ## Use the Shell and a CSV file to mail-enable multiple contacts
 
-When you’re mail-enabling contacts in bulk, you first export the list of contacts that aren’t mail-enabled to a CSV (comma-separated values) file, and then add the external email addresses to the CSV file by using a text editor such as Notepad, or a spreadsheet application such as Microsoft Excel. Then you use the updated CSV file in the Shell command to mail-enable the contacts listed in the CSV file.
+When you're mail-enabling contacts in bulk, you first export the list of contacts that aren't mail-enabled to a CSV (comma-separated values) file, and then add the external email addresses to the CSV file by using a text editor such as Notepad, or a spreadsheet application such as Microsoft Excel. Then you use the updated CSV file in the Shell command to mail-enable the contacts listed in the CSV file.
 
 1.  Run the following command to export a list of existing contacts that aren't mail-enabled to a file on the administrator's desktop named Contacts.csv.
     
     ```powershell
-        Get-Contact | Where { $_.RecipientType -eq "Contact" } | Out-File "C:\Users\Administrator\Desktop\Contacts.csv"
+        Get-Contact | Where {$_.RecipientType -eq "Contact"} | Out-File "C:\Users\Administrator\Desktop\Contacts.csv"
     ```
     
     The resulting file will be similar to the following file.
@@ -143,7 +143,7 @@ When you’re mail-enabling contacts in bulk, you first export the list of conta
 
 ## How do you know this worked?
 
-To verify that you’ve successfully mail-enabled Active Directory contacts, do one of the following:
+To verify that you've successfully mail-enabled Active Directory contacts, do one of the following:
 
   - In the EAC, navigate to **Recipients** \> **Contacts**. New mail contacts are displayed in the contact list. Under **Contact Type**, the type is **Mail contact**.
     

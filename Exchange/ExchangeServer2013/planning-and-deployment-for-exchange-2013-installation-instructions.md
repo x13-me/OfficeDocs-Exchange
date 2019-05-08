@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-Do you need guidance doing an Exchange install? This article provides guidance for planning a deployment of Microsoft Exchange Server 2013 as well as links to articles that you’ll need during deployment.
+Do you need guidance doing an Exchange install? This article provides guidance for planning a deployment of Microsoft Exchange Server 2013 as well as links to articles that you'll need during deployment.
 
 The following sections contain links to information about planning for and then deploying Microsoft Exchange Server 2013.
 
@@ -106,7 +106,7 @@ Use the following links to access information to help you plan the deployment of
 <!-- end list -->
 
   - [Multi-tenancy in Exchange 2013](multi-tenancy-in-exchange-2013-exchange-2013-help.md)  
-    Read this topic to learn more about how you can configure Exchange 2013 to host multiple and discrete organizations or business units that ordinarily don’t share email, data, users, global address lists (GALs), or other commonly used Exchange objects.
+    Read this topic to learn more about how you can configure Exchange 2013 to host multiple and discrete organizations or business units that ordinarily don't share email, data, users, global address lists (GALs), or other commonly used Exchange objects.
 
 <!-- end list -->
 
@@ -117,7 +117,7 @@ Use the following links to access information to help you plan the deployment of
 
 Before installing Exchange 2013 for the first time, we recommend that you install it in an isolated test environment. This approach reduces the risk of end-user downtime and negative ramifications to the production environment.
 
-The test environment will act as your “proof of concept” for your new Exchange 2013 design and make it possible to move forward or roll back any implementations before deploying into your production environments. Having an exclusive test environment for validation and testing allows you to do pre-installation checks for your future production environments. By installing in a test environment first, we believe that your organization will have a better likelihood of success in a full production implementation.
+The test environment will act as your "proof of concept" for your new Exchange 2013 design and make it possible to move forward or roll back any implementations before deploying into your production environments. Having an exclusive test environment for validation and testing allows you to do pre-installation checks for your future production environments. By installing in a test environment first, we believe that your organization will have a better likelihood of success in a full production implementation.
 
 For many organizations, the costs of building a test lab may be high because of the need to duplicate the production environment. To reduce the hardware costs associated with a prototype lab, we recommend the use of virtualization by using Windows Server 2008 R2 or Windows Server 2012 Hyper-V technologies. Hyper-V enables server virtualization, allowing multiple virtual operating systems to run on a single physical machine.
 

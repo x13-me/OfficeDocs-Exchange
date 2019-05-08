@@ -17,7 +17,7 @@ _**Applies to:** Exchange Server 2013_
 
 How you disable Internet calendar publishing depends on how you enabled it. If you created a sharing policy dedicated to Internet calendar publishing, you can either disable the policy or delete it altogether. If you configured Internet calendar publishing as a sharing rule in the default sharing policy, you can just remove the sharing rule for the **Anonymous** domain.
 
-When you disable Internet calendar publishing, users who are provisioned to use the sharing policy won't be able to share calendar information with the **Anonymous** Internet domain specified in the policy. However, you can’t delete or disable a sharing policy that’s dedicated to Internet calendar publishing until all users who are provisioned to use that policy have the policy setting removed from their mailboxes. For details about changing the sharing policy setting for a user, see [Manage user mailboxes](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
+When you disable Internet calendar publishing, users who are provisioned to use the sharing policy won't be able to share calendar information with the **Anonymous** Internet domain specified in the policy. However, you can't delete or disable a sharing policy that's dedicated to Internet calendar publishing until all users who are provisioned to use that policy have the policy setting removed from their mailboxes. For details about changing the sharing policy setting for a user, see [Manage user mailboxes](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
 
 
 > [!NOTE]
@@ -87,9 +87,9 @@ To verify that you have successfully removed or updated the sharing policy, run 
 Get-SharingPolicy <policy name> | format-list
 ```
 
-If you’ve removed the dedicated Internet calendar publishing sharing policy, you won’t see the policy in the cmdlet results.
+If you've removed the dedicated Internet calendar publishing sharing policy, you won't see the policy in the cmdlet results.
 
-If you’ve updated the default sharing policy, verify that the `Anonymous` domain has been removed from the *Domains* parameter.
+If you've updated the default sharing policy, verify that the `Anonymous` domain has been removed from the *Domains* parameter.
 
 For detailed syntax and parameter information, see [Get-SharingPolicy](https://technet.microsoft.com/en-us/library/dd335081\(v=exchg.150\)).
 

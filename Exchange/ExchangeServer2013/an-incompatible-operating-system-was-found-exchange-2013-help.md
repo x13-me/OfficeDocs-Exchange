@@ -15,11 +15,11 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server_
 
 
-Microsoft Exchange Server 2013 Setup can’t continue because it detected an incompatible operating system. You must install a compatible operating system on this computer before you install Exchange 2013. The following table shows the operating systems that are compatible with Exchange 2013.
+Microsoft Exchange Server 2013 Setup can't continue because it detected an incompatible operating system. You must install a compatible operating system on this computer before you install Exchange 2013. The following table shows the operating systems that are compatible with Exchange 2013.
 
 
 > [!IMPORTANT]
-> Exchange 2013 doesn’t support the Server Core installation option of Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.
+> Exchange 2013 doesn't support the Server Core installation option of Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.
 
 
 
@@ -75,5 +75,5 @@ For more information, see [Exchange 2013 system requirements](exchange-2013-syst
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
 
-Did you find what you’re looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.
+Did you find what you're looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.
 

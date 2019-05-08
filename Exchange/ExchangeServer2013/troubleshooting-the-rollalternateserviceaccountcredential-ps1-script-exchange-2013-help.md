@@ -53,7 +53,7 @@ If a server is out of rotation for a longer period of time but is still a member
 
 To resolve this issue, remove the server from your deployment using Exchange Setup or run the script in attended mode until the server can be removed.
 
-If the server will only be down for a short time, and you don't want to permanently remove Exchange, you can adjust the script to run against specific servers using the parameter *ToSpecificServers* so that only active servers are targeted. Or, you can remove the RPC Client Access service from the non-responsive server’s Active Directory object by using the **Remove-ClientAccessArray** cmdlet, as shown in the following example.
+If the server will only be down for a short time, and you don't want to permanently remove Exchange, you can adjust the script to run against specific servers using the parameter *ToSpecificServers* so that only active servers are targeted. Or, you can remove the RPC Client Access service from the non-responsive server's Active Directory object by using the **Remove-ClientAccessArray** cmdlet, as shown in the following example.
 
 ```powershell
 Remove-RPCClientAccess -Server Server.Contoso.com

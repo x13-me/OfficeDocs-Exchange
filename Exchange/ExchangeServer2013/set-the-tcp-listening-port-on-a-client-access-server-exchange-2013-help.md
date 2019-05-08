@@ -19,7 +19,7 @@ You can configure the TCP port that's used to listen for SIP requests on a Clien
 
 You may have to configure the TCP listening port to 5061 if your VoIP gateways, IP PBXs, or session border controllers (SBCs) are configured to use a TCP port other than the SIP standard 5060.
 
-You can only configure Client Access server TCP and TLS ports. You can’t configure the ports for an Exchange 2013 Mailbox server. However, you can use the **Set-UMService** cmdlet to configure the TCP and TLS listening ports for Exchange 2010 UM servers.
+You can only configure Client Access server TCP and TLS ports. You can't configure the ports for an Exchange 2013 Mailbox server. However, you can use the **Set-UMService** cmdlet to configure the TCP and TLS listening ports for Exchange 2010 UM servers.
 
 For additional tasks related to Unified Messaging and Client Access servers, see [UM services procedures](um-services-procedures-exchange-2013-help.md).
 

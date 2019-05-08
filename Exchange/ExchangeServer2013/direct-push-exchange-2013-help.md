@@ -47,9 +47,9 @@ Direct Push operates in the following way:
 
 Direct Push depends on network conditions that support a long-standing HTTPS request. If the carrier network for the mobile device or the firewall doesn't support long-standing HTTPS requests, the HTTPS request is stopped. The following steps describe how Direct Push operates when the carrier network for a mobile device has a time-out value of 13 minutes.
 
-1.  A mobile device issues an HTTPS request to the server. The request tells the server to notify the device if any items change in the next 15 minutes in any folder that’s configured to synchronize. Otherwise, the server should return an HTTP 200 OK message. The mobile device then stands by.
+1.  A mobile device issues an HTTPS request to the server. The request tells the server to notify the device if any items change in the next 15 minutes in any folder that's configured to synchronize. Otherwise, the server should return an HTTP 200 OK message. The mobile device then stands by.
 
-2.  If the server doesn’t respond after 15 minutes, the mobile device wakes up and concludes that the connection to the server was timed out by the network. The device reissues the HTTPS request, but this time it uses a heartbeat interval of 8 minutes.
+2.  If the server doesn't respond after 15 minutes, the mobile device wakes up and concludes that the connection to the server was timed out by the network. The device reissues the HTTPS request, but this time it uses a heartbeat interval of 8 minutes.
 
 3.  After 8 minutes, the server sends an HTTP 200 OK message. The device then tries to gain a longer connection by issuing a new HTTPS request to the server that has a heartbeat interval of 12 minutes.
 

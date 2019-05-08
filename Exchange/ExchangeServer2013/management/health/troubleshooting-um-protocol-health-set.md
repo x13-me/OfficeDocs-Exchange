@@ -101,7 +101,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
     
     2.  Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be `Unhealthy`.
     
-    3.  Rerun the associated probe for the monitor that’s in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
+    3.  Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
         
             Invoke-MonitoringProbe <health set name>\<probe name> -Server <server name> | Format-List
         

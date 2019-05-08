@@ -205,7 +205,7 @@ To change the maximum message size for ActiveSync clients, you need to change th
 
   - To change the maximum message size for Outlook Web App clients, you need to change all of these values in both files, including both instances of *maxReceivedMessageSize* and *maxStringContentLength* in the `web.config` file on Mailbox servers.
 
-  - In the `web.config` file on Mailbox servers, there is also an instance of the value `maxStringContentLength="102400"` for the **MsOnlineShellService** binding that you don’t need to modify.
+  - In the `web.config` file on Mailbox servers, there is also an instance of the value `maxStringContentLength="102400"` for the **MsOnlineShellService** binding that you don't need to modify.
 
 For all message size limits, you need to set values that are larger than the actual sizes you want enforced. This increase in values is necessary to account for the inevitable message size increase that occurs after the message attachments and any other binary data are Base64 encoded. Base64 encoding increases the size of the message by approximately 33%, so the values you specify for any message size limits are approximately 33% larger than the actual usable message sizes. For example, if you specify a maximum message size value of 64 MB, you can expect a realistic maximum message size value of approximately 48 MB.
 

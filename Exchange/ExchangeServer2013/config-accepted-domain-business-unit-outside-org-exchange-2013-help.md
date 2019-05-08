@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-In some instances, you may want to configure an accepted domain for a business unit in which some or all recipients in the domain don’t have mailboxes in your Exchange organization. This can occur, for example, when an organization shares the same SMTP address space between two or more different email systems. For such scenarios, you can configure an accepted domain as an internal relay domain.
+In some instances, you may want to configure an accepted domain for a business unit in which some or all recipients in the domain don't have mailboxes in your Exchange organization. This can occur, for example, when an organization shares the same SMTP address space between two or more different email systems. For such scenarios, you can configure an accepted domain as an internal relay domain.
 
 ## What do you need to know before you begin?
 

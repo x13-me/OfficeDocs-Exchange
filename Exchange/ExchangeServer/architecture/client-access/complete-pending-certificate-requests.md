@@ -55,15 +55,15 @@ You might receive one or more of the following types of certificate files CA:
 
 3. A pending certificate request has the following properties:
 
-  - In the list of certificates, the value of the **Status** field is **Pending request**.
+   - In the list of certificates, the value of the **Status** field is **Pending request**.
 
-  - When you select the certificate request from the list, there's a **Complete** link in the details pane.
+   - When you select the certificate request from the list, there's a **Complete** link in the details pane.
 
-    Select the pending certificate request that you want to complete, and then click **Complete** in the details pane.
+   Select the pending certificate request that you want to complete, and then click **Complete** in the details pane.
 
 4. On the **Complete pending request** page that opens, in the **File to import from** field, enter the UNC path and filename for the certificate file. For example, `\\FileServer01\Data\ContosoCert.cer`. When you're finished, click **OK**.
 
-The certificate request becomes a certificate in the list of Exchange certificates with a **Status** value of **Valid**. For next steps, see the [Next steps](create-ca-certificate-requests.md#NextSteps) section.
+The certificate request becomes a certificate in the list of Exchange certificates with a **Status** value of **Valid**. For next steps, see the [Next steps](#next-steps) section.
 
 ## Use the Exchange Management Shell to complete a pending certificate request
 
@@ -78,7 +78,7 @@ Import-ExchangeCertificate -FileName "<FilePathOrUNCPath>\<FileName>" [-Password
 This example imports the binary certificate file `\\FileServer01\Data\Contoso Cert.cer` that's protected by the password P@ssw0rd1 on the local Exchange server.
 
 ```
-Import-ExchangeCertificate -FileName "Import-ExchangeCertificate -FileName "\\FileServer01\Data\Contoso Cert.cer" -Password (ConvertTo-SecureString -String 'P@ssw0rd1' -AsPlainText -Force)
+Import-ExchangeCertificate -FileName "\\FileServer01\Data\Contoso Cert.cer" -Password (ConvertTo-SecureString -String 'P@ssw0rd1' -AsPlainText -Force)
 ```
 
 To import a chain of certificates file (PKCS #7 text files that have .p7b or .p7c filename extensions), use the following syntax:
@@ -114,9 +114,5 @@ To verify that you have successfully completed the certificate request and insta
   ```
 
 ## Next steps
-<a name="NextSteps"> </a>
 
 After you complete the pending certificate request by installing the certificate on the server, you need to assign the certificate to one or more Exchange services before the Exchange server is able to use the certificate for encryption. For more information, see [Assign certificates to Exchange services](assign-certificates-to-services.md).
-
-
-

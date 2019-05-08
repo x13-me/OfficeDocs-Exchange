@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-Site mailbox provisioning policies apply only to email that’s sent to and from the site mailbox and to the size of the site mailbox on the Exchange server.
+Site mailbox provisioning policies apply only to email that's sent to and from the site mailbox and to the size of the site mailbox on the Exchange server.
 
 To learn more about site mailboxes, see [Site mailboxes](site-mailboxes-exchange-2013-help.md).
 
@@ -27,9 +27,9 @@ To learn more about site mailboxes, see [Site mailboxes](site-mailboxes-exchange
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-  - Although you can create multiple site mailbox provisioning policies, only the default provisioning policy will be applied to all site mailboxes. You can’t apply multiple policies within your organization.
+  - Although you can create multiple site mailbox provisioning policies, only the default provisioning policy will be applied to all site mailboxes. You can't apply multiple policies within your organization.
 
-  - You can’t use the Exchange Administration Center (EAC) to perform this procedure. You must use the Shell.
+  - You can't use the Exchange Administration Center (EAC) to perform this procedure. You must use the Shell.
 
 
 > [!TIP]

@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-You may have a scenario where you want to send messages to and receive messages from a fax-gateway server that doesn’t use SMTP as its primary transport mechanism. Follow the steps outlined in this procedure to create a Foreign connector that delivers messages to and receives messages from the foreign system.
+You may have a scenario where you want to send messages to and receive messages from a fax-gateway server that doesn't use SMTP as its primary transport mechanism. Follow the steps outlined in this procedure to create a Foreign connector that delivers messages to and receives messages from the foreign system.
 
 
 > [!TIP]
@@ -31,7 +31,7 @@ Interested in scenarios where this procedure is used? See the following topics:
 
   - Estimated time to complete this task: 30 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the “Foreign connectors” entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Foreign connectors" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

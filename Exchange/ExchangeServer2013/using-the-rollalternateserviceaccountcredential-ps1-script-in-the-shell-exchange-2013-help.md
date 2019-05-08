@@ -255,7 +255,7 @@ This example generates a new password for a user account ASA credential and dist
 
 ## Example 3
 
-This example schedules a once-a-month automated password roll scheduled task called “Exchange-RollAsa”. It will update the ASA credential for all Client Access servers in the entire forest with a new, script-generated password. The scheduled task is created, but the script is not run. When the scheduled task is run, the script runs in unattended mode.
+This example schedules a once-a-month automated password roll scheduled task called "Exchange-RollAsa". It will update the ASA credential for all Client Access servers in the entire forest with a new, script-generated password. The scheduled task is created, but the script is not run. When the scheduled task is run, the script runs in unattended mode.
 
 ```powershell
     .\RollAlternateServiceAccountPassword.ps1 -CreateScheduledTask "Exchange-RollAsa" -ToEntireForest -GenerateNewPasswordFor 'contoso\computerAccount$'
@@ -273,7 +273,7 @@ This example updates the ASA credential for all Client Access servers in the Cli
 
 This example shows how you can use the script to distribute the ASA to a new computer or to a computer that's being put back into service either because you're increasing the size of your server array or because you're re-introducing array members after maintenance.
 
-You need to update the ASA credential before the Client Access server receives traffic. Copy the shared ASA credential from any Client Access server that's already configured correctly. For example, if Server A currently has a working ASA credential and you’ve just added Server B to the array, you can use the script to copy the credential (including the password) from Server A to Server B. This is useful if Server B was down or not yet a member of the array when the password was rolled the last time.
+You need to update the ASA credential before the Client Access server receives traffic. Copy the shared ASA credential from any Client Access server that's already configured correctly. For example, if Server A currently has a working ASA credential and you've just added Server B to the array, you can use the script to copy the credential (including the password) from Server A to Server B. This is useful if Server B was down or not yet a member of the array when the password was rolled the last time.
 
 ```powershell
 .\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose

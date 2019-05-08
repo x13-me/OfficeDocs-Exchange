@@ -93,7 +93,7 @@ For more information about syntax and parameters, see [Set-PopSettings](https://
 
 ## How do you know this worked?
 
-To verify that you’ve successfully set connection limits, do one of the following:
+To verify that you've successfully set connection limits, do one of the following:
 
 1.  In the EAC, navigate to **Servers** **\>** **Servers**.
 

@@ -23,7 +23,7 @@ The remote device wipe feature also includes a confirmation function that writes
 
 
 > [!IMPORTANT]
-> A remote device wipe can reset a mobile phone to the factory default condition. Although the remote device wipe protocol as implemented in Exchange 2013 only requires the deletion of personal corporate data, all current mobile device manufacturers interpret the command as one that wipes all data on the phone. Many mobile device operating systems also wipe all data on any storage card that’s inserted in the mobile device. If you’re performing a remote device wipe on a mobile phone in your possession and want to keep the data on the storage card, we recommend removing the storage card before you initiate the remote device wipe.
+> A remote device wipe can reset a mobile phone to the factory default condition. Although the remote device wipe protocol as implemented in Exchange 2013 only requires the deletion of personal corporate data, all current mobile device manufacturers interpret the command as one that wipes all data on the phone. Many mobile device operating systems also wipe all data on any storage card that's inserted in the mobile device. If you're performing a remote device wipe on a mobile phone in your possession and want to keep the data on the storage card, we recommend removing the storage card before you initiate the remote device wipe.
 
 
 

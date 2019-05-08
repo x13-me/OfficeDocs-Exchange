@@ -95,7 +95,7 @@ Run the following command to view the probes, monitors and responders associated
 
 ## View a List of Monitors and Their Current Health
 
-The health of a monitor is reported by using the “worst of” monitors in the health set. You can view the details of a health set to see which monitors are healthy and which ones are unhealthy.
+The health of a monitor is reported by using the "worst of" monitors in the health set. You can view the details of a health set to see which monitors are healthy and which ones are unhealthy.
 
 ## Use the Shell to View a List of Monitors and Their Current Health
 

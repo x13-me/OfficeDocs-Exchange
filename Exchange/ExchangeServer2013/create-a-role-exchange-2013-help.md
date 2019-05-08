@@ -47,7 +47,7 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
 ## Step 1: Create the management role
 
-New management roles are based on existing roles. When you create a role, an existing role and its management role entries are copied to the new role. The existing role becomes the parent to the new child role. You must always choose a role that contains all the cmdlets and parameters you need to use, and then remove the ones you don't want. Child roles can't have management role entries that don’t exist in the parent role.
+New management roles are based on existing roles. When you create a role, an existing role and its management role entries are copied to the new role. The existing role becomes the parent to the new child role. You must always choose a role that contains all the cmdlets and parameters you need to use, and then remove the ones you don't want. Child roles can't have management role entries that don't exist in the parent role.
 
 Use the following syntax to create the new role.
 

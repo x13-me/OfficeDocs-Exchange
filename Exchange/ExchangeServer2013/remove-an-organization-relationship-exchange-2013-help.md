@@ -17,13 +17,13 @@ _**Applies to:** Exchange Server 2013_
 
 An organization relationship lets users in your Exchange organization share calendar free/busy information with an Office 365 organization or with another Exchange on-premises organization. You can remove an organization relationship to disable calendar sharing with the other organization.
 
-Before you can share calendars with another organization, you have to set up an authentication relationship with the Azure Active Directory authentication system (also known as “federation”) and must meet minimum software requirements. To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.md).
+Before you can share calendars with another organization, you have to set up an authentication relationship with the Azure Active Directory authentication system (also known as "federation") and must meet minimum software requirements. To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
   - Estimated time to complete: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the “Calendar and Sharing Permissions” section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Calendar and Sharing Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -51,7 +51,7 @@ For detailed syntax and parameter information, see [Remove-OrganizationRelations
 
 To verify that you have successfully removed the organization relationship, do one of the following:
 
-  - In the EAC, navigate to **Organization** \> **Sharing** and verify that the organization relationship isn’t displayed in the list view under **Organization Sharing**.
+  - In the EAC, navigate to **Organization** \> **Sharing** and verify that the organization relationship isn't displayed in the list view under **Organization Sharing**.
 
   - Run the following Shell command to verify the organization relationship information is removed.
     

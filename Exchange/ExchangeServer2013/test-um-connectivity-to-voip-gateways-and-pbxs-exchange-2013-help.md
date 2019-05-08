@@ -23,7 +23,7 @@ For additional management tasks related to troubleshooting UM, see [UM services 
 
   - Estimated time to complete: 3 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox server (UM service)" and “Client Access Server (UM call router service)” entries in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox server (UM service)" and "Client Access Server (UM call router service)" entries in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
   - To perform the following procedures, you must log on to the Mailbox server by using an account that's a member of the local Administrators group.
 

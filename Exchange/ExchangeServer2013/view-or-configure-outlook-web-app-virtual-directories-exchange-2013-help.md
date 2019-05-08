@@ -19,7 +19,7 @@ You can use the EAC or the Shell to view or configure the properties of an Outlo
 
 
 > [!WARNING]
-> In Exchange Online, administrators don’t have the ability to view or configure Outlook Web App virtual directories.
+> In Exchange Online, administrators don't have the ability to view or configure Outlook Web App virtual directories.
 
 
 
@@ -33,7 +33,7 @@ If you use the Shell to view the properties of an Outlook Web App virtual direct
 
 You can also retrieve information for a specific virtual directory on a specific server by using the available parameters. For more information about the parameters for the **Get-OWAVirtualDirectory** cmdlet, see [Get-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/aa998588\(v=exchg.150\)).
 
-If you use the EAC to view the properties of an Outlook Web App virtual directory, you'll be able to view most of the properties for the virtual directory that you’re viewing.
+If you use the EAC to view the properties of an Outlook Web App virtual directory, you'll be able to view most of the properties for the virtual directory that you're viewing.
 
 ## What do you need to know before you begin?
 
@@ -117,7 +117,7 @@ If you use the EAC to view the properties of an Outlook Web App virtual director
 
 6.  On the **File access** tab, use the check boxes to configure the file access and viewing options for users. File access lets a user open or view the contents of files attached to an email message.
     
-    File access can be controlled based on whether a user has signed in on a public or private computer. The option for users to select private computer access or public computer access are available only when you’re using forms-based authentication. All other forms of authentication default to private computer access.
+    File access can be controlled based on whether a user has signed in on a public or private computer. The option for users to select private computer access or public computer access are available only when you're using forms-based authentication. All other forms of authentication default to private computer access.
     
       - **Direct file access**   Select this check box if you want to enable direct file access. Direct file access lets users open files attached to email messages.
     
@@ -167,7 +167,7 @@ For more information about syntax and parameters, see [Get-OwaVirtualDirectory](
 
 ## How do you know this worked?
 
-To verify that you’ve successfully edited an Outlook Web App virtual directory:
+To verify that you've successfully edited an Outlook Web App virtual directory:
 
 1.  In the EAC, click **Servers** \> **Virtual Directories**, and then choose a specific Outlook Web App virtual directory.
 

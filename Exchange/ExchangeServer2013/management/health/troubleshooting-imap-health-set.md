@@ -155,7 +155,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
     
         Set-MailboxServer -Identity <ServerName> -DatabaseCopyActivationDisabledAndMoveNow $true
 
-4.  Verify that all databases have been moved off the server that’s reporting the issue. To do this, run the following command:
+4.  Verify that all databases have been moved off the server that's reporting the issue. To do this, run the following command:
     
         Get-MailboxDatabaseCopyStatus -Server server1.contoso.com | Group Status
     

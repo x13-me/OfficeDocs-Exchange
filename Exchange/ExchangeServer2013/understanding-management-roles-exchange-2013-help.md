@@ -147,7 +147,7 @@ Return to top
 
 ## Management role entries
 
-Every management role, whether it’s a custom Exchange role or an unscoped role, must have at least one management role entry. An entry consists of a single cmdlet and its parameters, a script, or a special permission that you want to make available. If a cmdlet or script doesn't appear as an entry on a management role, that cmdlet or script isn't accessible via that role. Likewise, if a parameter doesn't exist in an entry, the parameter on that cmdlet or script isn't accessible via that role.
+Every management role, whether it's a custom Exchange role or an unscoped role, must have at least one management role entry. An entry consists of a single cmdlet and its parameters, a script, or a special permission that you want to make available. If a cmdlet or script doesn't appear as an entry on a management role, that cmdlet or script isn't accessible via that role. Likewise, if a parameter doesn't exist in an entry, the parameter on that cmdlet or script isn't accessible via that role.
 
 Exchange 2013 enables you to manage role entries based on built-in Exchange management top-level roles and role entries based on unscoped top-level management roles. Roles based on built-in Exchange top-level roles can only contain role entries that are Exchange 2013 cmdlets. To add custom scripts or non-Exchange cmdlets so that your users can use them, you need to add them as unscoped role entries to an unscoped top-level role. For more information about unscoped role entries, see Unscoped Top-Level Role Entries later in this topic.
 
@@ -157,7 +157,7 @@ For more information about managing role entries, see [Management roles and role
 
 ## Parent and child management role relationship
 
-As mentioned previously, a management role entry, including the cmdlet and its parameters, must exist in the immediate parent role to add the entry to the child role. For example, if the parent role doesn’t have an entry for **New-Mailbox**, the child role can't be assigned that cmdlet. Additionally, if **Set-Mailbox** is on the parent role but the *Database* parameter has been removed from the entry, the *Database* parameter on the **Set-Mailbox** cmdlet can't be added to the entry on the child role.
+As mentioned previously, a management role entry, including the cmdlet and its parameters, must exist in the immediate parent role to add the entry to the child role. For example, if the parent role doesn't have an entry for **New-Mailbox**, the child role can't be assigned that cmdlet. Additionally, if **Set-Mailbox** is on the parent role but the *Database* parameter has been removed from the entry, the *Database* parameter on the **Set-Mailbox** cmdlet can't be added to the entry on the child role.
 
 Because you can't add management role entries to child roles if the entries don't appear in parent roles, and because the role is based on a specific role type, you must carefully choose the parent role to copy when you want to create a customized role.
 

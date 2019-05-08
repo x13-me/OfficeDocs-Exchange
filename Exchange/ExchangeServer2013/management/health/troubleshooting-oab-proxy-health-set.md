@@ -77,7 +77,7 @@ For more information about probes and monitors, see [Server health and performan
 
 This probe may fail for any of the following common reasons:
 
-  - The application pool that’s hosted on the monitored CAS is not working correctly.
+  - The application pool that's hosted on the monitored CAS is not working correctly.
 
   - The monitoring account credentials are incorrect.
 
@@ -145,7 +145,7 @@ To troubleshoot this issue, follow these steps:
 
 2.  Create a test user account, and then log on to the CAS by using the test user account. For example, log on by using: https:// *\<servername\>*/owa.
 
-3.  Start IIS Manager, and then connect to the server that’s reporting the issue to determine whether the **MSExchangeOABAppPool** application pool is running on the CAS.
+3.  Start IIS Manager, and then connect to the server that's reporting the issue to determine whether the **MSExchangeOABAppPool** application pool is running on the CAS.
 
 4.  Click **Application Pools**, and then recycle the **MSExchangeOABAppPool** application pool by running the following command from the Shell:
     

@@ -29,5 +29,5 @@ The following topics provide information about deploying a new installation of E
 
 [Delegate the installation of an Exchange 2013 server](delegate-the-installation-of-an-exchange-2013-server-exchange-2013-help.md)
 
-After you’ve completed your installation, see [Exchange 2013 post-Installation tasks](exchange-2013-post-installation-tasks-exchange-2013-help.md).
+After you've completed your installation, see [Exchange 2013 post-Installation tasks](exchange-2013-post-installation-tasks-exchange-2013-help.md).
 

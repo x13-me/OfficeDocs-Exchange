@@ -79,7 +79,7 @@ For more information about probes and monitors, see [Server health and performan
 
 This probe may fail for any of the following common reasons:
 
-  - The application pool that’s hosted on the monitored CAS is not working correctly.
+  - The application pool that's hosted on the monitored CAS is not working correctly.
 
   - The monitoring account credentials are incorrect.
 

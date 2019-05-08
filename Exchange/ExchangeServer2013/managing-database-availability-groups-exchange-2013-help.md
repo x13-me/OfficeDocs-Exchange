@@ -87,7 +87,7 @@ Neither the witness server nor the witness directory needs to be fault tolerant 
 
 ## Witness server placement considerations
 
-The placement of a DAG’s witness server will depend on your business requirements and the options available to your organization. Exchange 2013 includes support for new DAG configuration options that are not recommended or not possible in previous versions of Exchange. These options include using a third location, such as a third datacenter, a branch office, or a Microsoft Azure virtual network.
+The placement of a DAG's witness server will depend on your business requirements and the options available to your organization. Exchange 2013 includes support for new DAG configuration options that are not recommended or not possible in previous versions of Exchange. These options include using a third location, such as a third datacenter, a branch office, or a Microsoft Azure virtual network.
 
 The following table lists general witness server placement recommendations for different deployment scenarios.
 
@@ -140,7 +140,7 @@ The following table lists general witness server placement recommendations for d
 </table>
 
 
-When a DAG has been deployed across two datacenters, a new configuration option in Exchange 2013 is to use a third location for hosting the witness server. If your organization has a third location with a network infrastructure that is isolated from network failures that affect the two datacenters in which your DAG is deployed, then you can deploy the DAG’s witness server in that third location, thereby configuring your DAG with the ability automatically failover databases to the other datacenter in response to a datacenter-level failure event. If your organization only has two physical locations, you can use a Microsoft Azure virtual network as a third location to place your witness server.
+When a DAG has been deployed across two datacenters, a new configuration option in Exchange 2013 is to use a third location for hosting the witness server. If your organization has a third location with a network infrastructure that is isolated from network failures that affect the two datacenters in which your DAG is deployed, then you can deploy the DAG's witness server in that third location, thereby configuring your DAG with the ability automatically failover databases to the other datacenter in response to a datacenter-level failure event. If your organization only has two physical locations, you can use a Microsoft Azure virtual network as a third location to place your witness server.
 
 ## Specifying a witness server and witness directory during DAG creation
 
@@ -311,7 +311,7 @@ Configurable properties include:
 
   - **Witness directory**   The name of a directory that will be used to store file share witness data. This directory will automatically be created by the system on the specified witness server.
 
-  - **Database availability group IP addresses**   One or more IP addresses must be assigned to the DAG, unless the DAG members are running Windows Server 2012 R2 and you are creating a DAG without an IP address. Otherwise, the DAG’s IP addresses can be configured using manually assigned static IP addresses, or they can be automatically assigned to the DAG using a DHCP server in your organization.
+  - **Database availability group IP addresses**   One or more IP addresses must be assigned to the DAG, unless the DAG members are running Windows Server 2012 R2 and you are creating a DAG without an IP address. Otherwise, the DAG's IP addresses can be configured using manually assigned static IP addresses, or they can be automatically assigned to the DAG using a DHCP server in your organization.
 
 The Shell enables you to configure DAG properties that aren't available in the EAC, such as DAG IP addresses, network encryption and compression settings, network discovery, the TCP port used for replication, and alternate witness server and witness directory settings, and to enable Datacenter Activation Coordination mode.
 
