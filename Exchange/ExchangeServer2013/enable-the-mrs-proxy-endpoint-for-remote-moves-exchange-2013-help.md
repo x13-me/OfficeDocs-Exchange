@@ -35,9 +35,9 @@ The Client Access server on which to enable the MRS Proxy endpoint depends on th
 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Web Services permissions" section in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-  - If you've deployed more than one Client Access server in your Exchange organization, you should enable the MRS Proxy endpoint on each one. If you add additional Client Access servers, be sure to enable the MRS Proxy endpoint on the new servers. Cross-forest moves and remote move migrations can fail if the MRS Proxy endpoint isn’t enabled on all Client Access servers.
+  - If you've deployed more than one Client Access server in your Exchange organization, you should enable the MRS Proxy endpoint on each one. If you add additional Client Access servers, be sure to enable the MRS Proxy endpoint on the new servers. Cross-forest moves and remote move migrations can fail if the MRS Proxy endpoint isn't enabled on all Client Access servers.
 
-  - If you don’t perform cross-forest moves or remote move migrations, keep MRS Proxy endpoints disabled to reduce the attack surface of your organization.
+  - If you don't perform cross-forest moves or remote move migrations, keep MRS Proxy endpoints disabled to reduce the attack surface of your organization.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -83,7 +83,7 @@ Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabl
 
 ## How do you know this worked?
 
-To verify that you’ve successfully enabled the MRS Proxy endpoint, do one of the following:
+To verify that you've successfully enabled the MRS Proxy endpoint, do one of the following:
 
 1.  In the EAC, navigate to **Recipients** \> **Servers** \> **Virtual Directories**.
 

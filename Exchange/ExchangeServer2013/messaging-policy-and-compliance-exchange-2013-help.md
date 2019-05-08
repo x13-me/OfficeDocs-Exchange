@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-Email has become a reliable and ubiquitous communication medium for information workers in organizations of all sizes. Messaging stores and mailboxes have become repositories of valuable data. It’s important for organizations to formulate messaging policies that dictate the fair use of their messaging systems, provide user guidelines for how to act on the policies, and where required, provide details about the types of communication that may not be allowed.
+Email has become a reliable and ubiquitous communication medium for information workers in organizations of all sizes. Messaging stores and mailboxes have become repositories of valuable data. It's important for organizations to formulate messaging policies that dictate the fair use of their messaging systems, provide user guidelines for how to act on the policies, and where required, provide details about the types of communication that may not be allowed.
 
 Organizations must also create policies to manage email lifecycle, retain messages for the length of time based on business, legal, and regulatory requirements, preserve email records for litigation and investigation purposes, and be prepared to search and provide the required email records to fulfill eDiscovery requests.
 
@@ -48,7 +48,7 @@ The following table provides an overview of the messaging policy and compliance 
 <li><p>Where should the messages be retained?</p></li>
 <li><p>Should all messages be retained for the same period?</p></li>
 </ul>
-<p>Exchange 2013 includes MRM features that allow you to implement your organization’s email lifecycle policies. You can use MRM to apply uniform retention settings to all messages, use custom retention policies to apply a baseline retention setting for the mailbox, and optionally allow users to classify messages so that they can be retained for a specified duration.</p></td>
+<p>Exchange 2013 includes MRM features that allow you to implement your organization's email lifecycle policies. You can use MRM to apply uniform retention settings to all messages, use custom retention policies to apply a baseline retention setting for the mailbox, and optionally allow users to classify messages so that they can be retained for a specified duration.</p></td>
 <td><p><a href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/messaging-records-management">Messaging records management</a></p></td>
 </tr>
 <tr class="even">

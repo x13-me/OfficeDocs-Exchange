@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-If you’re in an Exchange 2013 hybrid deployment and use Exchange Online Archiving (EOA) for Exchange Server, you must configure OAuth authentication between your on-premises and Exchange Online organizations after upgrading to Exchange 2013 Cumulative Update 5 (CU5). EOA allows you to have a cloud-based archive for your users with on-premises mailboxes. In this scenario, the Messaging Records Management (MRM) assistant on your on-premises mailbox server applies archiving policies and moves messages automatically from a user’s mailbox to their cloud-based archive. In Exchange 2013 CU5, it uses OAuth authentication.
+If you're in an Exchange 2013 hybrid deployment and use Exchange Online Archiving (EOA) for Exchange Server, you must configure OAuth authentication between your on-premises and Exchange Online organizations after upgrading to Exchange 2013 Cumulative Update 5 (CU5). EOA allows you to have a cloud-based archive for your users with on-premises mailboxes. In this scenario, the Messaging Records Management (MRM) assistant on your on-premises mailbox server applies archiving policies and moves messages automatically from a user's mailbox to their cloud-based archive. In Exchange 2013 CU5, it uses OAuth authentication.
 
 For step-by-step instructions for configuring OAuth authentication, see [Configure OAuth authentication between Exchange and Exchange Online organizations](configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md).
 
@@ -29,7 +29,7 @@ OAuth authentication typically involves three parties: a single authorization se
 
 As previously stated, see [Configure OAuth authentication between Exchange and Exchange Online organizations](configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md) for instructions to configure OAuth authentication to support Archiving in an Exchange hybrid deployment.
 
-If OAuth isn’t configured for your Exchange hybrid deployment, you can’t use archive policies to automatically move items from a user’s primary mailbox in your on-premises organization to the user’s cloud-based archive in Exchange Online.
+If OAuth isn't configured for your Exchange hybrid deployment, you can't use archive policies to automatically move items from a user's primary mailbox in your on-premises organization to the user's cloud-based archive in Exchange Online.
 
 ## More information
 

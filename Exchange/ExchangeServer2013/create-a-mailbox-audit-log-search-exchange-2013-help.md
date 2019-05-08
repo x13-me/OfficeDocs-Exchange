@@ -29,7 +29,7 @@ For additional management tasks related to mailbox audit logging, see [Mailbox a
 
   - By default, mailbox audit logging is disabled for all mailboxes. For each mailbox you want to audit, you must enable audit logging and specify the mailbox owner, delegate, or administrator actions you want to audit. For more details, see [Enable or disable mailbox audit logging for a mailbox](enable-or-disable-mailbox-audit-logging-for-a-mailbox-exchange-2013-help.md).
 
-  - You can’t use the EAC to search mailbox audit logs for owner access. The auditing section in EAC includes reports for non-owner mailbox access and also allows you to search for and export non-owner access events.
+  - You can't use the EAC to search mailbox audit logs for owner access. The auditing section in EAC includes reports for non-owner mailbox access and also allows you to search for and export non-owner access events.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

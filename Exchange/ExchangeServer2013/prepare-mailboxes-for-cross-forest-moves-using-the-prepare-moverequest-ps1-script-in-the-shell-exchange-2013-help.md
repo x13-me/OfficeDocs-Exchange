@@ -66,6 +66,7 @@ To assign a specific authentication credential for the remote forest domain cont
     ```powershell
         Prepare-MoveRequest.ps1 -Identity JohnSmith@Fabrikan.com  -RemoteForestDomainController DC001.Fabrikam.com  -RemoteForestCredential $RemoteCredentials   -LocalForestDomainController DC001.Contoso.com  -LocalForestCredential $LocalCredentials
      ```
+
 ## Parameter set of the script
 
 The following table describes the parameter set for the script.

@@ -138,7 +138,7 @@ To bypass the warning that MRM features aren't supported for e-mail clients runn
 
   - Estimated time to complete: 1 minute.
 
-  - You can’t use the Exchange admin center (EAC) to perform these procedures. You must use the Shell.
+  - You can't use the Exchange admin center (EAC) to perform these procedures. You must use the Shell.
 
   - Procedures in this topic require specific permissions. See each procedure for its permissions information.
 

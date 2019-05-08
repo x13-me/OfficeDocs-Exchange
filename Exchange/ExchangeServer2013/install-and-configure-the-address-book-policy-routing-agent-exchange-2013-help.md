@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Online, Exchange Server 2013_
 
 
-The Address Book Policy Routing agent is a Transport agent that runs on the Mailbox server that controls how recipients are resolved in your organization. When the ABP Routing agent is installed and configured, users that are assigned to different GALs appear as external recipients in that they can’t view external recipients’ contact cards.
+The Address Book Policy Routing agent is a Transport agent that runs on the Mailbox server that controls how recipients are resolved in your organization. When the ABP Routing agent is installed and configured, users that are assigned to different GALs appear as external recipients in that they can't view external recipients' contact cards.
 
 For additional management tasks related to ABPs, see [Address book policy procedures](address-book-policy-procedures-exchange-2013-help.md).
 
@@ -27,7 +27,7 @@ Looking for the Exchange Online version of this topic? See [Turn on address book
 
   - After the ABP Routing agent is installed and configured, it may take up to 30 minutes for email in the organization to be evaluated by agent.
 
-  - You can’t use the EAC to perform this procedure. You must use the Shell.
+  - You can't use the EAC to perform this procedure. You must use the Shell.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -43,13 +43,13 @@ Looking for the Exchange Online version of this topic? See [Turn on address book
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport Agents" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-Install the ABP Routing agent by running the following command. This is the exact command and syntax you’ll need to use.
+Install the ABP Routing agent by running the following command. This is the exact command and syntax you'll need to use.
 
 ```powershell
     Install-TransportAgent -Name "ABP Routing Agent" -TransportAgentFactory "Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.AddressBookPolicyRoutingAgentFactory" -AssemblyPath $env:ExchangeInstallPath\TransportRoles\agents\AddressBookPolicyRoutingAgent\Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.dll
 ```
 
-You’ll get a warning that the Transport service needs to be restarted for your changes to take effect, but perform Step 2 first so you only have to restart the Transport service once.
+You'll get a warning that the Transport service needs to be restarted for your changes to take effect, but perform Step 2 first so you only have to restart the Transport service once.
 
 For detailed syntax and parameter information, see [Install-TransportAgent](https://technet.microsoft.com/en-us/library/aa997998\(v=exchg.150\)).
 

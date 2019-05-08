@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-Learn about the Exchange 2013 requirements that you need to know before you install Exchange 2013. For example, you’ll learn about the hardware, network, and operating system requirements.
+Learn about the Exchange 2013 requirements that you need to know before you install Exchange 2013. For example, you'll learn about the hardware, network, and operating system requirements.
 
 Before you install Microsoft Exchange Server 2013, we recommend that you review this topic to ensure that your network, hardware, software, clients, and other elements meet the requirements for Exchange 2013. In addition, make sure you understand the coexistence scenarios that are supported for Exchange 2013 and earlier versions of Exchange.
 
@@ -276,7 +276,7 @@ The following table lists the supported operating systems for Exchange 2013.
 
 
 > [!IMPORTANT]
-> We don’t support the installation of Exchange 2013 on a computer that’s running in Windows Server Core mode. The computer must be running the full installation of Windows Server. If you want to install Exchange 2013 on a computer that’s running in Windows Server Core mode, you must convert the server to a full installation of Windows Server by doing one of the following: 
+> We don't support the installation of Exchange 2013 on a computer that's running in Windows Server Core mode. The computer must be running the full installation of Windows Server. If you want to install Exchange 2013 on a computer that's running in Windows Server Core mode, you must convert the server to a full installation of Windows Server by doing one of the following: 
 > <UL>
 > <LI>
 > <P><STRONG>Windows Server 2008 R2</STRONG>&nbsp;&nbsp;&nbsp;Reinstall Windows Server and select the <STRONG>Full Installation</STRONG> option.</P>

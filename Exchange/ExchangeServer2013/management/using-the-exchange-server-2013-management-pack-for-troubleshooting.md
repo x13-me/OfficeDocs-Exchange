@@ -48,7 +48,7 @@ Running this command gives him the following output:
     Server1         Online          OWAProxyTestMonitor  MSExchangeOWAAppPool OWA.Proxy       Unhealthy  OwaProxy
     Server1         Online          OWAProxyTestMonitor  MSExchangeOWACale... OWA.Proxy       Healthy    OwaProxy
 ```
-Rob sees that the problem lies within the OWA Application Pool. The next step is to rerun the associated probe for the monitor that is in unhealthy state. Using the table in the “Troubleshooting OWA.Proxy Health Set” topic, he determines that the probe that he needs to rerun is OWAProxyTestProbe. He runs the following command:
+Rob sees that the problem lies within the OWA Application Pool. The next step is to rerun the associated probe for the monitor that is in unhealthy state. Using the table in the "Troubleshooting OWA.Proxy Health Set" topic, he determines that the probe that he needs to rerun is OWAProxyTestProbe. He runs the following command:
 ```Powershell
     Invoke-MonitoringProbe OWA.Proxy\OWAProxyTestProbe -Server Server1.contoso.com | Format-List
 ```
@@ -56,7 +56,7 @@ He scans the output for the ResultType value and sees that the probe failed:
 ```Powershell
     ResultType : Failed
 ```
-He proceeds to the “OWAProxyTestMonitor Recovery Actions” section of the article. He connects to Server1 using IIS Manager to see if the MSExchangeOWAAppPool is running on the IIS Server. Once he verifies that it is running, the next step instructs him to recycle the MSExchangeOWAAppPool:
+He proceeds to the "OWAProxyTestMonitor Recovery Actions" section of the article. He connects to Server1 using IIS Manager to see if the MSExchangeOWAAppPool is running on the IIS Server. Once he verifies that it is running, the next step instructs him to recycle the MSExchangeOWAAppPool:
 ```Powershell
     C:\Windows\System32\Inetsrv\Appcmd recycle APPPOOL MSExchangeOWAAppPool
 ```

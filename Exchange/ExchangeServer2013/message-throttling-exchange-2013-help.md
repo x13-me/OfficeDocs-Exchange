@@ -51,11 +51,11 @@ To provide more consistent message throughput and predictable message delivery l
 
   - Frequency of transmission
 
-Exchange 2013 transport servers track the average delivery cost of messages that are sent by individual users. By using message costs, Exchange 2013 provides a group of settings that can control the effect that a user or connection has on an Exchange organization. This group of settings is known as a *throttling policy*. When a user repeatedly sends costly messages, such as messages that have large attachments or messages that are sent to many recipients, the Exchange 2013-based transport servers use a throttling policy to assign a lower priority to higher-cost messages from the user while continuing to deliver lower-cost messages. This new behavior adds a “quality of service” aspect to the message throttling functionality in Exchange 2013.
+Exchange 2013 transport servers track the average delivery cost of messages that are sent by individual users. By using message costs, Exchange 2013 provides a group of settings that can control the effect that a user or connection has on an Exchange organization. This group of settings is known as a *throttling policy*. When a user repeatedly sends costly messages, such as messages that have large attachments or messages that are sent to many recipients, the Exchange 2013-based transport servers use a throttling policy to assign a lower priority to higher-cost messages from the user while continuing to deliver lower-cost messages. This new behavior adds a "quality of service" aspect to the message throttling functionality in Exchange 2013.
 
 
 > [!NOTE]
-> Message throttling doesn’t affect the message priority from a user’s perspective. Messages still retain the original priority set by the user. For example, messages retain a setting of Important or Urgent, and so on.
+> Message throttling doesn't affect the message priority from a user's perspective. Messages still retain the original priority set by the user. For example, messages retain a setting of Important or Urgent, and so on.
 
 
 
@@ -91,7 +91,7 @@ Time settings for a budget are set as a percentage of one minute. Therefore, a t
 
   - **OWAPercentTimeInMailboxRPC:** 1
 
-A user who has this policy applied has a budget of OWAPercentTimeInCAS of 600 milliseconds and of OWAPercentageTimeInMailboxRPC of 600 milliseconds. In this scenario, when the user is logged into Outlook Web App, the user can run Client Access code for up to 600 milliseconds. After the 600 millisecond-period, the connection is considered over budget and the Exchange server doesn’t allow any further Outlook Web App action until one minute after the budget limit is reached. After the one-minute period, the user can run Outlook Web App client access code for another 600 milliseconds.
+A user who has this policy applied has a budget of OWAPercentTimeInCAS of 600 milliseconds and of OWAPercentageTimeInMailboxRPC of 600 milliseconds. In this scenario, when the user is logged into Outlook Web App, the user can run Client Access code for up to 600 milliseconds. After the 600 millisecond-period, the connection is considered over budget and the Exchange server doesn't allow any further Outlook Web App action until one minute after the budget limit is reached. After the one-minute period, the user can run Outlook Web App client access code for another 600 milliseconds.
 
 Return to top
 
@@ -308,7 +308,7 @@ You can set all the message throttling options that are available on Mailbox ser
 
   - **Set-ThrottlingPolicy**
 
-You can use the **New-ThrottlingPolicy** and **Set-ThrottlingPolicy** cmdlets to configure how much activity a user can perform against Exchange over a specific connection or time period. These settings make up a user’s budget. You can establish throttling policies to control access to the following Exchange features:
+You can use the **New-ThrottlingPolicy** and **Set-ThrottlingPolicy** cmdlets to configure how much activity a user can perform against Exchange over a specific connection or time period. These settings make up a user's budget. You can establish throttling policies to control access to the following Exchange features:
 
   - Exchange ActiveSync
 

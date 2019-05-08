@@ -19,7 +19,7 @@ Because the Exchange admin center (EAC) is a web-based management console in Exc
 
 
 > [!NOTE]
-> The ECP is the web-based user interface developed for Exchange Server 2010. The EAC cmdlets for virtual directories still use “ECP” in the name, and these cmdlets can be used to manage Exchange 2010 and Exchange 2013 ECP virtual directories.
+> The ECP is the web-based user interface developed for Exchange Server 2010. The EAC cmdlets for virtual directories still use "ECP" in the name, and these cmdlets can be used to manage Exchange 2010 and Exchange 2013 ECP virtual directories.
 
 
 
@@ -29,7 +29,7 @@ To learn more about the EAC, see [Exchange admin center in Exchange 2013](exchan
 
   - Estimated time to complete: 5 minutes.
 
-  - You can’t use the EAC to perform this procedure. You must use the Shell.
+  - You can't use the EAC to perform this procedure. You must use the Shell.
 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Administration Center connectivity" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 

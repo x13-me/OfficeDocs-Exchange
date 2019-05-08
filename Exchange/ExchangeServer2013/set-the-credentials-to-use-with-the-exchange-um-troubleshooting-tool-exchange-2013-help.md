@@ -33,7 +33,7 @@ By default, when you're running the UM Troubleshooting Tool, it uses the credent
     
       - A UM IP gateway has been created. For detailed steps, see [Create a UM IP gateway](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway).
     
-      - An Exchange 2010 UM server has been added to the UM dial plan. If you’re using Exchange 2013 with Lync Server, add all Client Access and Mailbox servers to the SIP URI dial plans. For detailed steps, see [Add a UM Server to a Dial Plan](https://go.microsoft.com/fwlink/p/?linkid=313051) or [Add Mailbox and Client Access servers to a SIP URI dial plan](add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md).
+      - An Exchange 2010 UM server has been added to the UM dial plan. If you're using Exchange 2013 with Lync Server, add all Client Access and Mailbox servers to the SIP URI dial plans. For detailed steps, see [Add a UM Server to a Dial Plan](https://go.microsoft.com/fwlink/p/?linkid=313051) or [Add Mailbox and Client Access servers to a SIP URI dial plan](add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md).
 
   - Install the UM Troubleshooting Tool. For detailed steps, see [Install the Exchange UM Troubleshooting Tool](install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md).
     

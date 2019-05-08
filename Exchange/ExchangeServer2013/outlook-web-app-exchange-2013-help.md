@@ -31,7 +31,7 @@ For information about new features, see [What's new in Exchange 2013](what-s-new
 
 ## Overview of Outlook Web App
 
-Fully supported web browsers give users access to features such as conversation view, Inbox rules, the reading pane, and the Scheduling Assistant. Browsers that aren’t fully supported can still be used, but users will see the light version of Outlook Web App, which has fewer features. For information about new features in Outlook Web App, see [What's new for Outlook Web App in Exchange 2013](what-s-new-for-outlook-web-app-in-exchange-2013-exchange-2013-help.md).
+Fully supported web browsers give users access to features such as conversation view, Inbox rules, the reading pane, and the Scheduling Assistant. Browsers that aren't fully supported can still be used, but users will see the light version of Outlook Web App, which has fewer features. For information about new features in Outlook Web App, see [What's new for Outlook Web App in Exchange 2013](what-s-new-for-outlook-web-app-in-exchange-2013-exchange-2013-help.md).
 
 ## Managing Outlook Web App
 

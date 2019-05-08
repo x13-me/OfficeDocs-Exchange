@@ -30,7 +30,7 @@ _**Topic Last Modified:** 2013-02-11_
 
 The SiteMailbox Health set monitors the overall health and accessibility of the site mailboxes in your organization.
 
-If you receive an alert that specifies that SiteMailbox is unhealthy, this indicates that the contents of a user’s mailbox are not in a synchronized state.
+If you receive an alert that specifies that SiteMailbox is unhealthy, this indicates that the contents of a user's mailbox are not in a synchronized state.
 
 <span id="EXP"></span>
 

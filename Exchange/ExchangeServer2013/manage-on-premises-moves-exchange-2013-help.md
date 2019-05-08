@@ -101,7 +101,7 @@ log in to the EAC and perform the following steps:
 
 
 > [!WARNING]
-> Make sure that you don't set the Bad Item Limit to over 50 items. If you do, the move may fail. If you want to set the Bad Item Limit over 50 items, you must use the Exchange Management Shell and set the –<EM>AcceptLargeDataLoss</EM> parameter to true.
+> Make sure that you don't set the Bad Item Limit to over 50 items. If you do, the move may fail. If you want to set the Bad Item Limit over 50 items, you must use the Exchange Management Shell and set the -<EM>AcceptLargeDataLoss</EM> parameter to true.
 
 
 

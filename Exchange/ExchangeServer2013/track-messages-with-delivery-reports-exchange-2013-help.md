@@ -97,7 +97,7 @@ Depending on the delivery status of the message, you may see a variety of status
 
   - **Deferred** Indicates that a message is delayed.
 
-  - **Pending** If message delivery is pending because a message meets the criteria for an organization-wide rule or policy or because it’s subject to message approval, the status message explains what action a rule is performing or that the message must be approved by a moderator before delivery.
+  - **Pending** If message delivery is pending because a message meets the criteria for an organization-wide rule or policy or because it's subject to message approval, the status message explains what action a rule is performing or that the message must be approved by a moderator before delivery.
 
   - **Moderator**   The status indicates whether the message was approved or rejected by the moderator.
 

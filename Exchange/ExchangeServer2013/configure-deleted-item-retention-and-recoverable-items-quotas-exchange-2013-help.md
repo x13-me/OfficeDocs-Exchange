@@ -53,13 +53,13 @@ To learn more about deleted item retention, the Recoverable Items folder, In-Pla
 
 3.  On the mailbox property page, click **Mailbox usage**, click **More options**, and then select one of the following
     
-      - **Use the default retention settings from the mailbox database**   Use this setting to use the deleted item retention setting that’s configured for the mailbox database.
+      - **Use the default retention settings from the mailbox database**   Use this setting to use the deleted item retention setting that's configured for the mailbox database.
     
       - **Customize the settings for this mailbox**   Use this setting to configure deleted item retention settings for the mailbox.
         
-        **Keep deleted items for (days)**   This box displays the length of time that deleted items are retained before they’re permanently deleted and can’t be recovered by the user. When the mailbox is created, this value is based on the deleted item retention settings configured for the mailbox database. By default, a mailbox database is configured to retain deleted items for 14 days. The value range for this property is from 0 through 24,855 days.
+        **Keep deleted items for (days)**   This box displays the length of time that deleted items are retained before they're permanently deleted and can't be recovered by the user. When the mailbox is created, this value is based on the deleted item retention settings configured for the mailbox database. By default, a mailbox database is configured to retain deleted items for 14 days. The value range for this property is from 0 through 24,855 days.
     
-      - **Don’t permanently delete items until the database is backed up**   Select this check box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
+      - **Don't permanently delete items until the database is backed up**   Select this check box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
 
 **Use the Shell to configure deleted item retention for a mailbox**
 

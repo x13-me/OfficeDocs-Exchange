@@ -81,7 +81,7 @@ You create a new mobile device mailbox policy using the New-MobileDeviceMailboxP
 
 ## How do you know this worked?
 
-To verify that you’ve successfully created a mobile device mailbox policy, use one of the following options:
+To verify that you've successfully created a mobile device mailbox policy, use one of the following options:
 
 1.  In the EAC, click **Mobile** \> **Mobile Device mailbox policies**, and verify that your new policy is displayed in the List view.
 
@@ -133,9 +133,9 @@ You can use the Shell to edit a mobile device mailbox policy.
     
 ## How do you know this worked?
 
-To verify that you’ve successfully edited a mobile device mailbox policy, do one of the following:
+To verify that you've successfully edited a mobile device mailbox policy, do one of the following:
 
-1.  In the EAC, click **Mobile** \> **Mobile Device Mailbox Policy**, and then choose a specific policy. In the Details pane, you’ll see a number of the policy settings listed.
+1.  In the EAC, click **Mobile** \> **Mobile Device Mailbox Policy**, and then choose a specific policy. In the Details pane, you'll see a number of the policy settings listed.
 
 2.  In the Shell, run the following command.
     

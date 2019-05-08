@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-Microsoft’s [preferred architecture](https://blogs.technet.com/b/exchange/archive/2014/04/21/the-preferred-architecture.aspx) for Exchange Server 2013 leverages a concept known as Exchange Native Data Protection. Exchange Native Data Protection relies on native Exchange features to protect your mailbox data, without the use of traditional backups. But if you want to create backups, Exchange includes a plug-in for Windows Server Backup (WSB) that enables you to create Exchange-aware Volume Shadow Copy Service (VSS)-based backups of Exchange data. To take Exchange-aware backups, you must have the WSB feature installed.
+Microsoft's [preferred architecture](https://blogs.technet.com/b/exchange/archive/2014/04/21/the-preferred-architecture.aspx) for Exchange Server 2013 leverages a concept known as Exchange Native Data Protection. Exchange Native Data Protection relies on native Exchange features to protect your mailbox data, without the use of traditional backups. But if you want to create backups, Exchange includes a plug-in for Windows Server Backup (WSB) that enables you to create Exchange-aware Volume Shadow Copy Service (VSS)-based backups of Exchange data. To take Exchange-aware backups, you must have the WSB feature installed.
 
 The plug-in, WSBExchange.exe, runs as a service named Microsoft Exchange Server Extension for Windows Server Backup (the short name for this service is WSBExchange). This service is automatically installed and configured for manual startup on all Mailbox servers. The plug-in enables WSB to create Exchange-aware VSS backups.
 
@@ -47,21 +47,21 @@ The following table describes the supportability of the backup and recovery opti
 </colgroup>
 <thead>
 <tr class="header">
-<th>If you…</th>
-<th>Then…</th>
+<th>If you...</th>
+<th>Then...</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Back up the full server…</p></td>
+<td><p>Back up the full server...</p></td>
 <td><p>A VSS copy backup will be performed, and the transaction logs for the databases on the server will not be truncated.</p></td>
 </tr>
 <tr class="even">
-<td><p>Perform a custom backup and select one or more volumes to back up…</p></td>
+<td><p>Perform a custom backup and select one or more volumes to back up...</p></td>
 <td><p>A VSS full backup can be selected, allowing the transaction logs for the databases on the selected volumes to be truncated at the completion of a successful backup.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Perform a custom backup and select one or more folders to back up…</p></td>
+<td><p>Perform a custom backup and select one or more folders to back up...</p></td>
 <td><p>A VSS full backup can be selected and the log files will be truncated; however, restoration of the backup will be limited to file restore, as an Application level restore will not be available as an option.</p></td>
 </tr>
 </tbody>

@@ -67,25 +67,25 @@ The XML rule definition shown earlier includes pattern-matching, which improves 
 
 In the credit card rule, there is a section of XML code for patterns, which includes a primary identifier match and some additional corroborative evidence. All three of these requirements are explained here:
 
-1. `<IdMatch idRef="Func_credit_card" /> ` — This requires a match of a function, titled credit card, that is internally defined. This function includes a couple of validations as follows:
+1. `<IdMatch idRef="Func_credit_card" /> `: This requires a match of a function, titled credit card, that is internally defined. This function includes a couple of validations as follows:
 
-1. It matches a regular expression—in this instance for 16 digits—that could also include variations like a space delimiter so that it also matches **4111 1111 1111 1111** or a hyphen delimiter so that it also matches **4111-1111-1111-1111**.
+2. It matches a regular expression (in this instance for 16 digits) that could also include variations like a space delimiter so that it also matches **4111 1111 1111 1111** or a hyphen delimiter so that it also matches **4111-1111-1111-1111**.
 
-2. It evaluates the Lhun's checksum algorithm against the 16-digit number in order to ensure the likelihood of this being a credit card number is high.
+3. It evaluates the Lhun's checksum algorithm against the 16-digit number in order to ensure the likelihood of this being a credit card number is high.
 
-3. It requires a mandatory match, after which corroborative evidence is evaluated.
+4. It requires a mandatory match, after which corroborative evidence is evaluated.
 
-2. `<Any minMatches="1"> ` — This section indicates that the presence of at least one of the following items of evidence is required.
+5. `<Any minMatches="1">`: This section indicates that the presence of at least one of the following items of evidence is required.
 
-3. The corroborative evidence can be a match of one of these three:
+6. The corroborative evidence can be a match of one of these three:
 
-     `<Match idRef="Keyword_cc_verification">`
+   - `<Match idRef="Keyword_cc_verification">`
 
-     `<Match idRef="Keyword_cc_name">`
+   - `<Match idRef="Keyword_cc_name">`
 
-     `<Match idRef="Func_expiration_date">`
+   - `<Match idRef="Func_expiration_date">`
 
-    These three simply mean a list of keywords for credit cards, the names of the credit cards, or an expiration date is required. The expiration date is defined and evaluated internally as another function.
+   These three simply mean a list of keywords for credit cards, the names of the credit cards, or an expiration date is required. The expiration date is defined and evaluated internally as another function.
 
 ## The process of evaluating content against rules
 
@@ -93,9 +93,9 @@ The five steps here represent actions that Exchange takes to compare your rule w
 
 |**Step**|**Action**|
 |:-----|:-----|
-|1. Get Content|Spencer Badillo  <br/> Visa: 4111 1111 1111 1111  <br/> Expires: 2/2012|
+|1. Get Content|Spencer Badillo <br/><br/> Visa: 4111 1111 1111 1111 <br/><br/> Expires: 2/2012|
 |2. Regular Expression Analysis|4111 1111 1111 1111 -\> a 16-digit number is detected|
-|3. Function Analysis|4111 1111 1111 1111 -\> matches checksum  <br/>  1234 1234 1234 1234 -\> doesn't match|
+|3. Function Analysis|4111 1111 1111 1111 -\> matches checksum <br/><br/> 1234 1234 1234 1234 -\> doesn't match|
 |4. Additional Evidence|
 Keyword Visa is near the number. A regular expression for a date (2/2012) is near the number.|
 |5. Verdict|
@@ -139,6 +139,3 @@ $rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_cla
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
 
 [Exchange Online PowerShell](https://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx)
-
-
-

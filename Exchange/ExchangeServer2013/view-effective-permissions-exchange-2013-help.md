@@ -35,9 +35,9 @@ Looking for other management tasks related to managing permissions? Check out [P
 
   - Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role groups" or "Role assignment policy” entries in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role groups" or "Role assignment policy" entries in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - The procedures in this topic can only be performed in the Shell. You can’t use the Exchange Administration Center (EAC) to view effective permissions.
+  - The procedures in this topic can only be performed in the Shell. You can't use the Exchange Administration Center (EAC) to view effective permissions.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

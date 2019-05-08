@@ -34,25 +34,25 @@ For additional management tasks related to mobile device mailbox policies, see [
 
 ## What do you want to do?
 
-## Change a user’s mobile device mailbox policy
+## Change a user's mobile device mailbox policy
 
-You can use the EAC or the Shell to change a user’s mobile device mailbox policy.
+You can use the EAC or the Shell to change a user's mobile device mailbox policy.
 
-## Use the EAC to change a user’s mobile device mailbox policy
+## Use the EAC to change a user's mobile device mailbox policy
 
-You change a single user’s mobile device mailbox policy using the EAC.
+You change a single user's mobile device mailbox policy using the EAC.
 
 1. In the EAC, click **Recipients** \> **Mailboxes** and then select a mailbox.
 
 2. In the Details pane, scroll to **Phone and Voice Features** and select **View details** to display the **Mobile Device Details** screen.
 
-3. The mobile device mailbox policy that’s currently assigned is displayed. To change the mobile device mailbox policy, click **Browse**.
+3. The mobile device mailbox policy that's currently assigned is displayed. To change the mobile device mailbox policy, click **Browse**.
 
 4. Choose the appropriate mobile device mailbox policy from the list, click **OK** and then click **Save**.
 
 ## Use the Shell to add a user to a mobile device mailbox policy
 
-You can change a single user’s mobile device mailbox policy using the **Set-CASMailbox** cmdlet in the Shell.
+You can change a single user's mobile device mailbox policy using the **Set-CASMailbox** cmdlet in the Shell.
 
 In the Shell, run the following command.
 
@@ -62,7 +62,7 @@ Set-CASMailbox -Identity tony@contoso.com -ActiveSyncMailboxPolicy "Sales"
 
 ## How do you know this worked?
 
-To verify that you’ve successfully changed a user’s mobile device mailbox policy, do one of the following:
+To verify that you've successfully changed a user's mobile device mailbox policy, do one of the following:
 
 1. In the EAC, click **Recipients** \> **Mailboxes**, and then choose a specific recipient. In the Details pane, scroll down to **Phone and Voice Features** and click **View details**.
 
@@ -105,7 +105,7 @@ Get-Mailbox | where {$_.CustomAttribute1 -match "Manager"} | Set-CASMailbox -act
 
 ## How do you know this worked?
 
-To verify that you’ve successfully changed a user’s mobile device mailbox policy, do one of the following:
+To verify that you've successfully changed a user's mobile device mailbox policy, do one of the following:
 
 1. In the EAC, click **Recipients** \> **Mailboxes**, and choose a specific recipient. In the Details pane, scroll down to **Phone and Voice Features** and click **View details**.
 

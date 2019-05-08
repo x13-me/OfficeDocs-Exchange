@@ -15,13 +15,13 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-After you’ve installed the Exchange 2013 Client Access server, there are a variety of configuration tasks that you can perform. Although the Client Access server in Exchange 2013 doesn’t handle processing for the client protocols, several settings need to be applied to the Client Access server, including virtual directory settings and certificate settings.
+After you've installed the Exchange 2013 Client Access server, there are a variety of configuration tasks that you can perform. Although the Client Access server in Exchange 2013 doesn't handle processing for the client protocols, several settings need to be applied to the Client Access server, including virtual directory settings and certificate settings.
 
 ## Configuring server certificates
 
-In Exchange 2013, you can use the Certificate Wizard to request a digital certificate from a certification authority. After you’ve requested a digital certificate, you’ll need to install it on the Client Access server.
+In Exchange 2013, you can use the Certificate Wizard to request a digital certificate from a certification authority. After you've requested a digital certificate, you'll need to install it on the Client Access server.
 
-You don’t need to install digital certificates on the Mailbox servers in your organization. A self-signed certificate is installed by default on the Mailbox servers, and it doesn’t need to be replaced. The Client Access servers in your organization implicitly trust the self-signed certificate on the Mailbox servers. For more information, see [Exchange 2013 certificate management UI](exchange-2013-certificate-management-ui-exchange-2013-help.md).
+You don't need to install digital certificates on the Mailbox servers in your organization. A self-signed certificate is installed by default on the Mailbox servers, and it doesn't need to be replaced. The Client Access servers in your organization implicitly trust the self-signed certificate on the Mailbox servers. For more information, see [Exchange 2013 certificate management UI](exchange-2013-certificate-management-ui-exchange-2013-help.md).
 
 ## Configuring virtual directories
 

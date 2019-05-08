@@ -98,7 +98,7 @@ If you licensed an Exchange server running the Mailbox server role, do the follo
 
 ## How do you know this worked?
 
-To use the EAC to verify that you’ve successfully licensed the server as Standard Edition or Enterprise Edition, do the following:
+To use the EAC to verify that you've successfully licensed the server as Standard Edition or Enterprise Edition, do the following:
 
 1.  Enter your user name and password in **Domain\\user name** and **Password**, and then click **Sign in**.
 
@@ -106,7 +106,7 @@ To use the EAC to verify that you’ve successfully licensed the server as Stand
 
 3.  Select the server you want to view, and then look in the server details pane. If the product key has been accepted, **Licensed** will appear along with the Exchange 2013 edition.
 
-To use the Shell to verify that you’ve successfully licensed the server as Standard Edition or Enterprise Edition, do the following:
+To use the Shell to verify that you've successfully licensed the server as Standard Edition or Enterprise Edition, do the following:
 
 1.  Open the Shell.
 

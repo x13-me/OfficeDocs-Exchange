@@ -105,7 +105,7 @@ This probe can fail for any of the following common reasons:
 
   - The Domain Controllers are not responding, or they cannot communicate with the Mailbox server.
 
-  - The user’s database is not mounted, or the Information Store is unavailable for a specific mailbox.
+  - The user's database is not mounted, or the Information Store is unavailable for a specific mailbox.
 
 </div>
 
@@ -155,7 +155,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 This monitor alert is typically issued for Mailbox servers.
 
-1.  Start IIS Manager, and then connect to the server that’s reporting the issue to determine whether the MSExchangeServicesAppPool is running on both CA and Mailbox servers.
+1.  Start IIS Manager, and then connect to the server that's reporting the issue to determine whether the MSExchangeServicesAppPool is running on both CA and Mailbox servers.
 
 2.  Locate the MailboxDatabase for the failed probes, and then verify that the MailboxDatabase is active for the MailboxServer, and that the Information Store is healthy.
 

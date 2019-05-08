@@ -23,7 +23,7 @@ You can use the following types of attachment filtering to control attachments t
 
   - **Filtering based on file name or file name extension**   You specify the exact file name or file name extension that you want to filter. An example of a file name filter is `BadFileName.exe`. An example of a file name extension filter is `*.exe`.
 
-  - **Filtering based on file MIME content type**   You specify the MIME content type value that you want to filter. The MIME content type value indicates what the attachment is—for example, a JPEG image, an executable file, or a Microsoft Excel file. Content types are expressed as `type/subtype`. For example, a JPEG image file is expressed as `image/jpeg`.
+  - **Filtering based on file MIME content type**   You specify the MIME content type value that you want to filter. The MIME content type value indicates what the attachment is: for example, a JPEG image, an executable file, or a Microsoft Excel file. Content types are expressed as `type/subtype`. For example, a JPEG image file is expressed as `image/jpeg`.
     
     To view a complete list of file name extensions and content types that attachment filtering can detect, run the following command on the Edge Transport server:
     

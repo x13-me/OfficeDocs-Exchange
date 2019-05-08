@@ -349,7 +349,7 @@ The implementation of server-side filtering is specific to the cmdlet on which i
 
 Client-side filtering can be used with any cmdlet. This capability includes those cmdlets that also support server-side filtering. As described earlier in this topic, client-side filtering accepts all the data that is returned by a previous command in the pipeline, and in turn, returns only the results that match the filter that you specify. The **Where-Object** cmdlet performs this filtering. It can be shortened to **Where**.
 
-As data passes through the pipeline, the **Where** cmdlet receives the data from the previous object and then filters the data before passing it on to the next object. The filtering is based on a script block that is defined in the **Where** command. The script block filters data based on the object’s properties and values.
+As data passes through the pipeline, the **Where** cmdlet receives the data from the previous object and then filters the data before passing it on to the next object. The filtering is based on a script block that is defined in the **Where** command. The script block filters data based on the object's properties and values.
 
 The **Clear-Host** cmdlet is used to clear the console window. In this example, you can find all the defined aliases for the **Clear-Host** cmdlet if you run the following command:
 
@@ -392,7 +392,7 @@ The **Get-Alias** cmdlet and the **Where** command work together to return the l
 </tr>
 <tr class="even">
 <td><p><code>-eq</code></p></td>
-<td><p>This comparison operator for “equal to” is used to specify that the results must exactly match the property value that is supplied in the expression.</p></td>
+<td><p>This comparison operator for "equal to" is used to specify that the results must exactly match the property value that is supplied in the expression.</p></td>
 </tr>
 <tr class="odd">
 <td><p>&quot;<strong>Clear-Host</strong>&quot;</p></td>
