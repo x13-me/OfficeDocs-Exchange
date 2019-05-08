@@ -19,29 +19,29 @@ description: "Address list attributes can be copied by the Hybrid Configuration 
 
 The following attributes of Address lists are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
-| **AddressList**              | **Available In**          |
-|------------------------------|---------------------------|
-| Conditional Company          | Exchange 2010, 2013, 2016 |
-| ConditionalCustomAttribute1  | Exchange 2010, 2013, 2016 |
-| ConditionalCustomAttribute10 | Exchange 2010, 2013, 2016 |
-| ConditionalCustomAttribute11 | Exchange 2010, 2013, 2016 |
-| ConditionalCustomAttribute12 | Exchange 2010, 2013, 2016 |
-| ConditionalCustomAttribute13 | Exchange 2010, 2013, 2016 |
-| ConditionalCustomAttribute14 | Exchange 2010, 2013, 2016 |
-| ConditionalCustomAttribute15 | Exchange 2010, 2013, 2016 |
-| ConditionalCustomAttribute2  | Exchange 2010, 2013, 2016 |
-| ConditionalCustomAttribute3  | Exchange 2010, 2013, 2016 |
-| ConditionalCustomAttribute4  | Exchange 2010, 2013, 2016 |
-| ConditionalCustomAttribute5  | Exchange 2010, 2013, 2016 |
-| ConditionalCustomAttribute6  | Exchange 2010, 2013, 2016 |
-| ConditionalCustomAttribute7  | Exchange 2010, 2013, 2016 |
-| ConditionalCustomAttribute8  | Exchange 2010, 2013, 2016 |
-| ConditionalCustomAttribute9  | Exchange 2010, 2013, 2016 |
-| ConditionalDepartment        | Exchange 2010, 2013, 2016 |
-| ConditionalStateOrProvince   | Exchange 2010, 2013, 2016 |
-| Container                    | Exchange 2010, 2013, 2016 |
-| DisplayName                  | Exchange 2010, 2013, 2016 |
-| Identity                     | Exchange 2010, 2013, 2016 |
-| IncludedRecipients           | Exchange 2010, 2013, 2016 |
-| Name                         | Exchange 2010, 2013, 2016 |
-| RecipientFilter              | Exchange 2010, 2013, 2016 |
+|**AddressList**|**Available In**|
+|:-----|:-----|
+|Conditional Company|Exchange 2010, 2013, 2016|
+|ConditionalCustomAttribute1|Exchange 2010, 2013, 2016|
+|ConditionalCustomAttribute10|Exchange 2010, 2013, 2016|
+|ConditionalCustomAttribute11|Exchange 2010, 2013, 2016|
+|ConditionalCustomAttribute12|Exchange 2010, 2013, 2016|
+|ConditionalCustomAttribute13|Exchange 2010, 2013, 2016|
+|ConditionalCustomAttribute14|Exchange 2010, 2013, 2016|
+|ConditionalCustomAttribute15|Exchange 2010, 2013, 2016|
+|ConditionalCustomAttribute2|Exchange 2010, 2013, 2016|
+|ConditionalCustomAttribute3|Exchange 2010, 2013, 2016|
+|ConditionalCustomAttribute4|Exchange 2010, 2013, 2016|
+|ConditionalCustomAttribute5|Exchange 2010, 2013, 2016|
+|ConditionalCustomAttribute6|Exchange 2010, 2013, 2016|
+|ConditionalCustomAttribute7|Exchange 2010, 2013, 2016|
+|ConditionalCustomAttribute8|Exchange 2010, 2013, 2016|
+|ConditionalCustomAttribute9|Exchange 2010, 2013, 2016|
+|ConditionalDepartment|Exchange 2010, 2013, 2016|
+|ConditionalStateOrProvince|Exchange 2010, 2013, 2016|
+|Container|Exchange 2010, 2013, 2016|
+|DisplayName|Exchange 2010, 2013, 2016|
+|Identity|Exchange 2010, 2013, 2016|
+|IncludedRecipients|Exchange 2010, 2013, 2016|
+|Name|Exchange 2010, 2013, 2016|
+|RecipientFilter|Exchange 2010, 2013, 2016|

@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal
-ms.collection: 
+ms.collection:
 - Adm_O365
 - Hybrid
 - M365-email-calendar
