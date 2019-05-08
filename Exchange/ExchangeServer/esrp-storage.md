@@ -30,7 +30,7 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 
 ## Exchange Server 2013 and 2016
 
-###  Cisco: Greater than 5000 mailboxes
+### Cisco: Greater than 5000 mailboxes
 
 [Cisco C3160 Server 8,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Jun 19, 2015)](http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/ESRP_Exchange_2013_UCS_C3160.html)
 
@@ -281,7 +281,7 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 
 ## Exchange Server 2010
 
-###  Cisco: 1001-5000 mailboxes
+### Cisco: 1001-5000 mailboxes
 
 [Cisco UCS C210 M2 2500 Mailbox Exchange Server 2010 Mailbox Resiliency Storage Solution (Sep 13, 2012)](http://www.cisco.com/en/US/docs/unified_computing/ucs/UCS_CVDs/ESRP_3_C210_M2.pdf)
 

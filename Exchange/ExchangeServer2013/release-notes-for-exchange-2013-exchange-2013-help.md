@@ -195,6 +195,7 @@ For more information about how to install Exchange 2013, see [Planning and deplo
             %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiAddressBookAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiAddressBookAppPool_CLRConfig.config"
             %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiAddressBookAppPool"
       ```
+
 ## Exchange 2010 coexistence
 
   - **Requests to access Exchange 2010 mailboxes may not work when proxied through Exchange 2013 Client Access servers**   In some situations, the proxy request between the Exchange 2013 and Exchange 2010 Service Pack 3 (SP3) Client Access servers without any update rollups installed may not work correctly and an error appears. This can happen if all of the following conditions are true:
