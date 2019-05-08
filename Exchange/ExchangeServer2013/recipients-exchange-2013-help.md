@@ -50,7 +50,7 @@ The following table lists the available recipient types. All these recipient typ
 </tr>
 <tr class="even">
 <td><p>Equipment mailbox</p></td>
-<td><p>A resource mailbox that's assigned to a resource that’s not location-specific, such as a portable computer, projector, microphone, or a company car. Equipment mailboxes can be included as resources in meeting requests, providing a simple and efficient way of using resources for your users.</p></td>
+<td><p>A resource mailbox that's assigned to a resource that's not location-specific, such as a portable computer, projector, microphone, or a company car. Equipment mailboxes can be included as resources in meeting requests, providing a simple and efficient way of using resources for your users.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Linked mailbox</p></td>
@@ -161,20 +161,20 @@ Exchange supports the following mailbox types:
     
     ![Complex Exchange organization with resource forest](images/Aa998031.706725cf-e520-4b89-a275-acd8fb58943a(EXCHG.150).gif "Complex Exchange organization with resource forest")  
 
-  - **Office 365 mailboxes** When you create an Office 365 mailbox in Exchange Online in a hybrid deployment, the mail user is created in Active Directory on-premises. Directory synchronization, if it's configured, automatically synchronizes this new user object to Office 365, where it’s converted to a cloud mailbox in Exchange Online. You can create Office 365 mailboxes as regular user mailboxes, resource mailboxes for meeting rooms and equipment, and shared mailboxes.
+  - **Office 365 mailboxes** When you create an Office 365 mailbox in Exchange Online in a hybrid deployment, the mail user is created in Active Directory on-premises. Directory synchronization, if it's configured, automatically synchronizes this new user object to Office 365, where it's converted to a cloud mailbox in Exchange Online. You can create Office 365 mailboxes as regular user mailboxes, resource mailboxes for meeting rooms and equipment, and shared mailboxes.
 
   - **Shared mailboxes**   Shared mailboxes aren't primarily associated with individual users and are generally configured to allow access by multiple users.
     
     Although it's possible to assign additional users the logon access permissions to any mailbox type, shared mailboxes are dedicated for this functionality. The Active Directory user associated with a shared mailbox must be a disabled account. After you create a shared mailbox, you must assign permissions to all users that require access to the shared mailbox.
     
 > [!NOTE] 
-> A shared mailbox is not designed for direct logon. The user account for the shared mailbox itself should stay in a **Disabled** (or “disconnected”) state.
+> A shared mailbox is not designed for direct logon. The user account for the shared mailbox itself should stay in a **Disabled** (or "disconnected") state.
 
   - **Resource mailboxes**   Resource mailboxes are special mailboxes designed to be used for scheduling resources. Like all mailbox types, a resource mailbox has an associated Active Directory user account, but it must be a disabled account. The following are the types of resource mailboxes:
     
       - **Room mailboxes**   These mailboxes are assigned to meeting locations, such as conference rooms, auditoriums, and training rooms.
     
-      - **Equipment mailboxes**   These mailboxes are assigned to resources that aren’t location-specific, such as portable computers, projectors, microphones, or company cars.
+      - **Equipment mailboxes**   These mailboxes are assigned to resources that aren't location-specific, such as portable computers, projectors, microphones, or company cars.
     
     You can include both types of resource mailboxes in meeting requests, providing a simple and efficient way for your users to use resources. You can configure resource mailboxes to automatically process incoming meeting requests based on the resource booking policies that are defined by the resource owners. For example, you can configure a conference room to automatically accept incoming meeting requests except recurring meetings, which can be subject to approval by the resource owner.
 
@@ -268,7 +268,7 @@ Unlike regular distribution groups, the membership list for dynamic distribution
 
 To help you create recipient filters for dynamic distribution groups, you can use precanned filters. A *precanned filter* is a commonly used filter that you can use to meet a variety of recipient-filtering criteria. You can use these filters to specify the recipient types that you want to include in a dynamic distribution group. In addition, you can also specify a list of conditions that the recipients must meet. You can create precanned conditions based on the following properties:
 
-  - Custom attributes 1–15
+  - Custom attributes 1-15
 
   - State or province
 
@@ -282,7 +282,7 @@ You can also specify conditions based on recipient properties other than those p
 
 ## Mail contacts
 
-Mail contacts typically contain information about people or organizations that exist outside your Exchange organization. Mail contacts can appear in your organization’s shared address book (also called the global address list or GAL) and other address lists, and can be added as members to distribution groups. Each contact has an external email address, and all email messages that are sent to a contact are automatically forwarded to that address. Contacts are ideal for representing people external to your Exchange organization (in the shared address book) who don't need access to any internal resources. The following are mail contact types:
+Mail contacts typically contain information about people or organizations that exist outside your Exchange organization. Mail contacts can appear in your organization's shared address book (also called the global address list or GAL) and other address lists, and can be added as members to distribution groups. Each contact has an external email address, and all email messages that are sent to a contact are automatically forwarded to that address. Contacts are ideal for representing people external to your Exchange organization (in the shared address book) who don't need access to any internal resources. The following are mail contact types:
 
   - **Mail contacts**   These are mail-enabled Active Directory contacts that contain information about people or organizations that exist outside your Exchange organization.
 

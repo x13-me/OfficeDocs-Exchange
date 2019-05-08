@@ -17,7 +17,7 @@ _**Applies to:** Exchange Server 2013_
 
 You can control how resources are consumed by individual users in your Exchange organization by changing the default throttling settings.
 
-Controlling how resources are consumed by individual users was possible in Exchange Server 2010, and this capability has been expanded for Exchange Server 2013. The policy named GlobalThrottlingPolicy defines the default throttling settings for every new and existing user in your organization unless you’ve customized the throttling policies. In many typical Exchange deployment scenarios, the policy named GlobalThrottlingPolicy is adequate to manage users.
+Controlling how resources are consumed by individual users was possible in Exchange Server 2010, and this capability has been expanded for Exchange Server 2013. The policy named GlobalThrottlingPolicy defines the default throttling settings for every new and existing user in your organization unless you've customized the throttling policies. In many typical Exchange deployment scenarios, the policy named GlobalThrottlingPolicy is adequate to manage users.
 
 To customize throttling settings to apply only to specific users in your organization, create a new throttling policy with the scope assignment Regular. You can only change the default throttling settings by using the Shell.
 
@@ -65,7 +65,7 @@ For more information about syntax and parameters, see [New-ThrottlingPolicy](htt
 
 ## How do you know this worked?
 
-To verify that you’ve successfully created the Regular throttling policy, do the following:
+To verify that you've successfully created the Regular throttling policy, do the following:
 
 1.  Run the following command.
     

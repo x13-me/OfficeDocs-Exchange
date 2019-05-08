@@ -33,7 +33,7 @@ Testing Outlook Anywhere connectivity
 
 ## Outlook Anywhere and Exchange 2013
 
-The Windows RPC over HTTP Proxy component, which Outlook Anywhere clients use to connect, wraps remote procedure calls (RPCs) with an HTTP layer. This allows traffic to traverse network firewalls without requiring RPC ports to be opened. In Exchange 2013, this feature is enabled by default, because Exchange 2013 doesn’t allow direct RPC connectivity.
+The Windows RPC over HTTP Proxy component, which Outlook Anywhere clients use to connect, wraps remote procedure calls (RPCs) with an HTTP layer. This allows traffic to traverse network firewalls without requiring RPC ports to be opened. In Exchange 2013, this feature is enabled by default, because Exchange 2013 doesn't allow direct RPC connectivity.
 
 ## Benefits of using Outlook Anywhere
 

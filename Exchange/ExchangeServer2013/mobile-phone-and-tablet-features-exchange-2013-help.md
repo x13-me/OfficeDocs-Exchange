@@ -71,7 +71,7 @@ Mobile phones that have a version of Windows Phone software as their operating s
 </ul>
 
 > [!WARNING]
-> If your organization uses other mobile device mailbox policy settings, you’ll need to set the <STRONG>Allow non-provisionable devices</STRONG> policy to true. This can have security implications for your organization, because other mobile phones and devices that don’t meet all the requirements of your mobile device policy settings will be allowed to synchronize. For more information, see <A href="mobile-device-mailbox-policies-exchange-2013-help.md">Mobile device mailbox policies</A>.
+> If your organization uses other mobile device mailbox policy settings, you'll need to set the <STRONG>Allow non-provisionable devices</STRONG> policy to true. This can have security implications for your organization, because other mobile phones and devices that don't meet all the requirements of your mobile device policy settings will be allowed to synchronize. For more information, see <A href="mobile-device-mailbox-policies-exchange-2013-help.md">Mobile device mailbox policies</A>.
 
 
 </td>

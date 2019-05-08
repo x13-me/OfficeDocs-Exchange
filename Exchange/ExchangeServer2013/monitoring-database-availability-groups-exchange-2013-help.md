@@ -171,7 +171,7 @@ The **Test-ReplicationHealth** cmdlet is designed for the proactive monitoring o
 </tr>
 <tr class="even">
 <td><p>ServerLocatorService</p></td>
-<td><p>Verifies the Active Manager client/server processes on DAG members and on the Client Access Server that perform lookups in Active Directory and Active Manager to determine where a user’s mailbox database is active.</p></td>
+<td><p>Verifies the Active Manager client/server processes on DAG members and on the Client Access Server that perform lookups in Active Directory and Active Manager to determine where a user's mailbox database is active.</p></td>
 </tr>
 <tr class="odd">
 <td><p>DagMembersUp</p></td>
@@ -259,7 +259,7 @@ The ManagedAvailability channel contains recovery action logs and results and re
 
 ## Low Disk Space Monitor
 
-Exchange 2013 Managed Availability monitors hundreds of system metrics and components every minute, including the amount of free disk space on volumes used by the Mailbox server role. Prior to Exchange 2013 Service Pack 1 (SP1), Exchange monitors available space on all local volumes, including volumes that don’t contain any databases or log files. In SP1 and later, only volumes that contain Exchange databases and log files are monitored. In SP1, the default threshold for the low volume space monitor is 200 GB. In Exchange 2013 Cumulative Update 6 and later, the default threshold is 180 GB. In SP1 and later, you can configure the threshold by adding the following DWORD registry value (in MB) on each Mailbox server that you want to customize:
+Exchange 2013 Managed Availability monitors hundreds of system metrics and components every minute, including the amount of free disk space on volumes used by the Mailbox server role. Prior to Exchange 2013 Service Pack 1 (SP1), Exchange monitors available space on all local volumes, including volumes that don't contain any databases or log files. In SP1 and later, only volumes that contain Exchange databases and log files are monitored. In SP1, the default threshold for the low volume space monitor is 200 GB. In Exchange 2013 Cumulative Update 6 and later, the default threshold is 180 GB. In SP1 and later, you can configure the threshold by adding the following DWORD registry value (in MB) on each Mailbox server that you want to customize:
 
 Path: **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\ExchangeServer\\v15\\Replay\\Parameters**
 

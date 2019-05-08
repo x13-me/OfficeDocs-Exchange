@@ -33,7 +33,7 @@ To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.
 
   - An active federation trust for the on-premises Exchange organization must be configured. For details, see [Configure a federation trust](configure-a-federation-trust-exchange-2013-help.md).
 
-  - The external organization you want to configure in the organization relationship must also have a federation trust established with the Azure AD authentication system. You’ll use the primary federated domain for the external Exchange organization when configuring the organization relationship.
+  - The external organization you want to configure in the organization relationship must also have a federation trust established with the Azure AD authentication system. You'll use the primary federated domain for the external Exchange organization when configuring the organization relationship.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

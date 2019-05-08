@@ -73,7 +73,7 @@ By default, each time you create a dial plan in Unified Messaging, the dial plan
 
 The Telephone Extension URI type is the most common type of UM dial plan and is used with IP PBXs and PBXs. When you configure a telephone extension (TelExtn) dial plan, the VoIP gateways, PBXs, and IP PBXs you use must support the TelExtn URI type. Today, most PBXs and IP PBXs support this URI type.
 
-When a call is received by a PBX and the UM-enabled user isn't available to answer the call, the PBX will forward the call to a VoIP gateway. The VoIP gateway—or the IP PBX, if one is used—will translate the call from a circuit-based protocol to an IP based protocol. In the header for the SIP packet received from the VoIP gateway or IP PBX, the calling and called party information will be listed in one of the following formats:
+When a call is received by a PBX and the UM-enabled user isn't available to answer the call, the PBX will forward the call to a VoIP gateway. The VoIP gateway (or the IP PBX, if one is used) will translate the call from a circuit-based protocol to an IP based protocol. In the header for the SIP packet received from the VoIP gateway or IP PBX, the calling and called party information will be listed in one of the following formats:
 
 - Tel:512345
 

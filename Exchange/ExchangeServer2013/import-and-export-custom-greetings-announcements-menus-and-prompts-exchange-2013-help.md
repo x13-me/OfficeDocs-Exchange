@@ -15,13 +15,13 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
 
-You can import and export the audio files that you’ve recorded to use on Unified Messaging (UM) dial plans and auto attendants. For example, you might want to export and save a copy of an audio file if you’re upgrading from a previous version of Exchange. Or, you might need to import a copy of a recorded audio prompt before configuring a dial plan or auto attendant.
+You can import and export the audio files that you've recorded to use on Unified Messaging (UM) dial plans and auto attendants. For example, you might want to export and save a copy of an audio file if you're upgrading from a previous version of Exchange. Or, you might need to import a copy of a recorded audio prompt before configuring a dial plan or auto attendant.
 
 The audio files are used for the following purposes:
 
-  - On UM dial plans, audio files are used for customized welcome greetings and informational announcements. They’re played when Outlook Voice Access users call in to an Outlook Voice Access number.
+  - On UM dial plans, audio files are used for customized welcome greetings and informational announcements. They're played when Outlook Voice Access users call in to an Outlook Voice Access number.
 
-  - On UM auto attendants, audio files are used for customized non-business and business hours greetings, informational announcements, menu prompts, and navigation menus. They’re played when callers call in to a UM auto attendant.
+  - On UM auto attendants, audio files are used for customized non-business and business hours greetings, informational announcements, menu prompts, and navigation menus. They're played when callers call in to a UM auto attendant.
 
 The following audio file formats are supported for custom greetings, announcements, menus, and prompts:
 

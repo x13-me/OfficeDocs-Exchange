@@ -129,7 +129,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
     
     2.  Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be **Unhealthy**.
     
-    3.  Rerun the associated probe for the monitor that’s in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
+    3.  Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
         
             Invoke-MonitoringProbe <health set name>\<probe name> -Server <server name> | Format-List
         
@@ -137,7 +137,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
         
             Invoke-MonitoringProbe ActiveSync\ActiveSyncCTPProbe -Server server1.contoso.com | Format-List
     
-    4.  In the command output, review the “Result” section of the probe. If the value is **Succeeded**, the issue was a transient error, and it no longer exists. Otherwise, refer to the recovery steps outlined in the following sections.
+    4.  In the command output, review the "Result" section of the probe. If the value is **Succeeded**, the issue was a transient error, and it no longer exists. Otherwise, refer to the recovery steps outlined in the following sections.
 
 </div>
 
@@ -149,7 +149,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 This monitor alert is typically issued on Mailbox servers. To perform recovery actions, follow these steps:
 
-1.  Start IIS Manager, and then connect to the server that is reporting the issue. Click **Application Pools**, and then recycle the ActiveSync application pool that’s named **MSExchangeSyncAppPool**.
+1.  Start IIS Manager, and then connect to the server that is reporting the issue. Click **Application Pools**, and then recycle the ActiveSync application pool that's named **MSExchangeSyncAppPool**.
 
 2.  Rerun the associated probe as shown in step 2c in the Verifying the issue section.
 
@@ -193,9 +193,9 @@ This monitor alert is typically issued on CA servers (CAS).
 
 4.  Rerun the associated probe as shown in step 2c in the Verifying the issue section.
 
-5.  If the issue persists, you must verify the health status on the corresponding Mailbox server. The name of the Mailbox server is the `_Mbx:` value that’s given in the error message.
+5.  If the issue persists, you must verify the health status on the corresponding Mailbox server. The name of the Mailbox server is the `_Mbx:` value that's given in the error message.
     
-    1.  Run the following command for the appropriate Mailbox server. For example, run the following command a Mailbox server that’s named mailbox1.contoso.com:
+    1.  Run the following command for the appropriate Mailbox server. For example, run the following command a Mailbox server that's named mailbox1.contoso.com:
         
             Get-ServerHealth mailbox1.contoso.com | ?{$_.HealtSetName -like "ActiveSync*"}
     

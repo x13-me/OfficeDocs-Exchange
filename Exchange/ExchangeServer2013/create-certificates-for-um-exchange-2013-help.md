@@ -15,13 +15,13 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-You can use the New Exchange Certificate wizard in the EAC or the Shell to create self-signed certificates or certificate requests for an internal public key infrastructure (PKI) certificate. For Unified Messaging (UM), you can use one of these certificates for both the Microsoft Exchange Unified Messaging service and the Microsoft Exchange Unified Messaging Call Router services. You can use the same certificate for both services, or a different certificate for each service. You can also purchase and import a third-party commercial certificate for UM services. If you’re using a self-signed certificate for UM, you may need to include the name of your Client Access and Mailbox servers in the subject alternative name (SAN).
+You can use the New Exchange Certificate wizard in the EAC or the Shell to create self-signed certificates or certificate requests for an internal public key infrastructure (PKI) certificate. For Unified Messaging (UM), you can use one of these certificates for both the Microsoft Exchange Unified Messaging service and the Microsoft Exchange Unified Messaging Call Router services. You can use the same certificate for both services, or a different certificate for each service. You can also purchase and import a third-party commercial certificate for UM services. If you're using a self-signed certificate for UM, you may need to include the name of your Client Access and Mailbox servers in the subject alternative name (SAN).
 
 By default, when you install Exchange Server 2013, two self-signed certificates are created: **Microsoft Exchange Server Auth Certificate** and **Microsoft Exchange**. The **Microsoft Exchange** self-signed certificate can be used by UM to encrypt data, but you must assign the certificate to the UM and UM Call Router services. After you assign the certificate to the Unified Messaging services, it can be copied to and imported to the VoIP gateways, IP PBXs, and SIP-enabled PBXs. However, instead of using the default self-signed certificates, you may need to create another one specifically for Unified Messaging.
 
 
 > [!WARNING]
-> Self-signed certificates can’t be used when you’re integrating UM with Microsoft Lync Server.
+> Self-signed certificates can't be used when you're integrating UM with Microsoft Lync Server.
 
 
 
@@ -51,13 +51,13 @@ For additional management tasks related to managing certificates for Unified Mes
 
 3.  Enter a friendly name for the certificate, and then click **Next**.
 
-4.  If you don’t need a wildcard certificate, click **Next**. If you need a wildcard certificate, select **Request a wildcard certificate. A wildcard certificate can be used to secure all sub-domains under your root domain with a single certificate**, enter the name of the root domain, and then click **Next**.
+4.  If you don't need a wildcard certificate, click **Next**. If you need a wildcard certificate, select **Request a wildcard certificate. A wildcard certificate can be used to secure all sub-domains under your root domain with a single certificate**, enter the name of the root domain, and then click **Next**.
 
 5.  Under **Store certificate request on this server**, click **Browse** to go to the location where you want to store the file. You can store the certificate request on any Client Access or Mailbox server in your Exchange organization. Select the location, click **OK**, and then click **Next**.
 
 6.  If you requested a wildcard certificate, skip to step 9.
 
-7.  If you didn’t request a wildcard certificate, you’ll need to specify the domains you want to be included in your certificate. If you want to edit a domain, click **Edit**![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Next**.
+7.  If you didn't request a wildcard certificate, you'll need to specify the domains you want to be included in your certificate. If you want to edit a domain, click **Edit**![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Next**.
 
 8.  Under **Based on your selections, the following domains will be included in your certificate. You can add additional domains here, or make changes**, you can add, edit, remove, or check the name of domains that are listed under **Domain**. Then click **Next**.
 
@@ -99,7 +99,7 @@ This example creates a new Exchange certificate request for a Mailbox server nam
 
 
 > [!IMPORTANT]
-> When you use the EAC to create a self-signed certificate, you won’t be prompted to enable services for the certificate. After the certificate has been created, you can use the EAC or the <STRONG>Enable-ExchangeCertificate</STRONG> cmdlet in the Shell to enable the Exchange services. For more information about how to assign a certificate to UM services, see <A href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assign a certificate to the UM and UM Call Router services</A>.
+> When you use the EAC to create a self-signed certificate, you won't be prompted to enable services for the certificate. After the certificate has been created, you can use the EAC or the <STRONG>Enable-ExchangeCertificate</STRONG> cmdlet in the Shell to enable the Exchange services. For more information about how to assign a certificate to UM services, see <A href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assign a certificate to the UM and UM Call Router services</A>.
 
 
 
@@ -113,6 +113,6 @@ This example creates a new Exchange self-signed certificate for a Mailbox server
 
 
 > [!TIP]
-> When you specify the services you want to enable by using the <EM>Services</EM> parameter, you’ll be prompted to assign those services. In this example, you’ll be prompted to enable the certificate for the UM and UM Call Router services. For more information about how to enable a certificate for services, see <A href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assign a certificate to the UM and UM Call Router services</A>.
+> When you specify the services you want to enable by using the <EM>Services</EM> parameter, you'll be prompted to assign those services. In this example, you'll be prompted to enable the certificate for the UM and UM Call Router services. For more information about how to enable a certificate for services, see <A href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assign a certificate to the UM and UM Call Router services</A>.
 
 

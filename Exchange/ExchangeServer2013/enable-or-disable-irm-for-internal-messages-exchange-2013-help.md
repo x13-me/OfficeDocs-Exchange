@@ -63,5 +63,5 @@ For detailed syntax and parameter information, see [Set-IRMConfiguration](https:
 
 ## How do you know this worked?
 
-To verify that you’ve enabled or disabled IRM for internal messages, use the [Get-IRMConfiguration](https://technet.microsoft.com/en-us/library/dd776120\(v=exchg.150\)) cmdlet to check the configuration.
+To verify that you've enabled or disabled IRM for internal messages, use the [Get-IRMConfiguration](https://technet.microsoft.com/en-us/library/dd776120\(v=exchg.150\)) cmdlet to check the configuration.
 

@@ -35,17 +35,17 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 [Cisco C3160 Server 8,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Jun 19, 2015)](http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/ESRP_Exchange_2013_UCS_C3160.html)
 
 ### Dell: 1-1000 mailboxes
-[Dell PowerVault MD3820f 500 user Mailbox Exchange 2013 Resiliency Storage Solution — Direct Attach FC using dual QLogic QLE2662 16Gb FC adapter](http://en.community.dell.com/techcenter/extras/m/white_papers/20441948)
+[Dell PowerVault MD3820f 500 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach FC using dual QLogic QLE2662 16Gb FC adapter](http://en.community.dell.com/techcenter/extras/m/white_papers/20441948)
 
-[Dell PowerVault MD3820f 1,000 user Mailbox Exchange 2013 Resiliency Storage Solution — Direct Attach FC using dual QLogic QLE2662 16Gb FC adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441949)
+[Dell PowerVault MD3820f 1,000 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach FC using dual QLogic QLE2662 16Gb FC adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441949)
 
-[Dell PowerVault MD3820f 500 user Mailbox Exchange 2013 Resiliency Storage Solution — FC SAN using dual QLogic QLE2662 16Gb FC adapters and Brocade 6505 16Gb FC switch](http://en.community.dell.com/techcenter/extras/m/white_papers/20441955)
+[Dell PowerVault MD3820f 500 user Mailbox Exchange 2013 Resiliency Storage Solution - FC SAN using dual QLogic QLE2662 16Gb FC adapters and Brocade 6505 16Gb FC switch](http://en.community.dell.com/techcenter/extras/m/white_papers/20441955)
 
-[Dell PowerVault MD3820f 1,000 user Mailbox Exchange 2013 Resiliency Storage Solution — FC SAN using dual QLogic QLE2662 16Gb FC adapters and Brocade 6505 16Gb FC switch](http://en.community.dell.com/techcenter/extras/m/white_papers/20441956)
+[Dell PowerVault MD3820f 1,000 user Mailbox Exchange 2013 Resiliency Storage Solution - FC SAN using dual QLogic QLE2662 16Gb FC adapters and Brocade 6505 16Gb FC switch](http://en.community.dell.com/techcenter/extras/m/white_papers/20441956)
 
-[Dell PowerVault MD3820f 500 user Mailbox Exchange 2013 Resiliency Storage Solution — Direct Attach SAS using dual LSI 9300-8e 12Gb SAS adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441963)
+[Dell PowerVault MD3820f 500 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach SAS using dual LSI 9300-8e 12Gb SAS adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441963)
 
-[Dell PowerVault MD3820f 1,000 user Mailbox Exchange 2013 Resiliency Storage Solution — Direct Attach SAS using dual LSI 9300-8e 12Gb SAS adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441964)
+[Dell PowerVault MD3820f 1,000 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach SAS using dual LSI 9300-8e 12Gb SAS adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441964)
 
 ### Dell: 1001-5000 mailboxes
 [Dell EqualLogic PS 4210E Series 2,500 mailbox Exchange 2013 Mailbox Resiliency Storage Solution (Nov 19, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20440709/)
@@ -56,17 +56,17 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 
 [Dell PowerEdge R730xd 2,500 5GB Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Sep 28, 2015)](http://en.community.dell.com/techcenter/extras/m/white_papers/20441665)
 
-[Dell PowerVault MD3820f 3,000 user Mailbox Exchange 2013 Resiliency Storage Solution — Direct Attach FC using dual QLogic QLE2662 16Gb FC adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441950)
+[Dell PowerVault MD3820f 3,000 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach FC using dual QLogic QLE2662 16Gb FC adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441950)
 
-[Dell PowerVault MD3820f 3,000 user Mailbox Exchange 2013 Resiliency Storage Solution — Direct Attach SAS using dual LSI 9300-8e 12Gb SAS adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441965)
+[Dell PowerVault MD3820f 3,000 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach SAS using dual LSI 9300-8e 12Gb SAS adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441965)
 
-[Dell PowerVault MD3820f 3,000 user Mailbox Exchange 2013 Resiliency Storage Solution — FC SAN using dual QLogic QLE2662 16Gb FC adapters and Brocade 6505 16Gb FC switch](http://en.community.dell.com/techcenter/extras/m/white_papers/20441957)
+[Dell PowerVault MD3820f 3,000 user Mailbox Exchange 2013 Resiliency Storage Solution - FC SAN using dual QLogic QLE2662 16Gb FC adapters and Brocade 6505 16Gb FC switch](http://en.community.dell.com/techcenter/extras/m/white_papers/20441957)
 
-[Dell PowerVault MD3820f 5,000 user Mailbox Exchange 2013 Resiliency Storage Solution — Direct Attach FC using dual QLogic QLE2662 16Gb FC adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441951)
+[Dell PowerVault MD3820f 5,000 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach FC using dual QLogic QLE2662 16Gb FC adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441951)
 
-[Dell PowerVault MD3820f 5,000 user Mailbox Exchange 2013 Resiliency Storage Solution — Direct Attach SAS using dual LSI 9300-8e 12Gb SAS adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441966)
+[Dell PowerVault MD3820f 5,000 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach SAS using dual LSI 9300-8e 12Gb SAS adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441966)
 
-[Dell PowerVault MD3820f 5,000 user Mailbox Exchange 2013 Resiliency Storage Solution — FC SAN using dual QLogic QLE2662 16Gb FC adapters and Brocade 6505 16Gb FC switch](http://en.community.dell.com/techcenter/extras/m/white_papers/20441958)
+[Dell PowerVault MD3820f 5,000 user Mailbox Exchange 2013 Resiliency Storage Solution - FC SAN using dual QLogic QLE2662 16Gb FC adapters and Brocade 6505 16Gb FC switch](http://en.community.dell.com/techcenter/extras/m/white_papers/20441958)
 
 [Dell Storage Center 6.6 SCv2000 iSCSI 2,500 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Sep 17, 2015)](http://en.community.dell.com/techcenter/extras/m/white_papers/20441624)
 
@@ -101,17 +101,17 @@ To participate in the program, Microsoft Partners (storage original equipment ma
 
 [Dell PowerVault MD3260 15,000 Mailbox Microsoft Exchange 2013 Mailbox Resiliency Storage Solution (Apr 10, 2014)](http://en.community.dell.com/techcenter/extras/m/white_papers/20439083.aspx)
 
-[Dell PowerVault MD3860f 10,000 user Mailbox Exchange 2013 Resiliency Storage Solution — Direct Attach FC using dual QLogic QLE2662 16Gb FC adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441952)
+[Dell PowerVault MD3860f 10,000 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach FC using dual QLogic QLE2662 16Gb FC adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441952)
 
-[Dell PowerVault MD3860f 10,000 user Mailbox Exchange 2013 Resiliency Storage Solution — Direct Attach SAS using dual LSI 9300-8e 12Gb SAS adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441967)
+[Dell PowerVault MD3860f 10,000 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach SAS using dual LSI 9300-8e 12Gb SAS adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441967)
 
-[Dell PowerVault MD3860f 10,000 user Mailbox Exchange 2013 Resiliency Storage Solution — FC SAN using dual QLogic QLE2662 16Gb FC adapters and Brocade 6505 16Gb FC switch](http://en.community.dell.com/techcenter/extras/m/white_papers/20441959)
+[Dell PowerVault MD3860f 10,000 user Mailbox Exchange 2013 Resiliency Storage Solution - FC SAN using dual QLogic QLE2662 16Gb FC adapters and Brocade 6505 16Gb FC switch](http://en.community.dell.com/techcenter/extras/m/white_papers/20441959)
 
-[Dell PowerVault MD3860f 15,000 user Mailbox Exchange 2013 Resiliency Storage Solution — Direct Attach FC using dual QLogic QLE2662 16Gb FC adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441953)
+[Dell PowerVault MD3860f 15,000 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach FC using dual QLogic QLE2662 16Gb FC adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441953)
 
-[Dell PowerVault MD3860f 20,000 user Mailbox Exchange 2013 Resiliency Storage Solution — Direct Attach FC using dual QLogic QLE2662 16Gb FC adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441954)
+[Dell PowerVault MD3860f 20,000 user Mailbox Exchange 2013 Resiliency Storage Solution - Direct Attach FC using dual QLogic QLE2662 16Gb FC adapters](http://en.community.dell.com/techcenter/extras/m/white_papers/20441954)
 
-[Dell PowerVault MD3860f 20,000 user Mailbox Exchange 2013 Resiliency Storage Solution — FC SAN using dual QLogic QLE2662 16Gb FC adapters and Brocade 6505 16Gb FC switch](http://en.community.dell.com/techcenter/extras/m/white_papers/20441962)
+[Dell PowerVault MD3860f 20,000 user Mailbox Exchange 2013 Resiliency Storage Solution - FC SAN using dual QLogic QLE2662 16Gb FC adapters and Brocade 6505 16Gb FC switch](http://en.community.dell.com/techcenter/extras/m/white_papers/20441962)
 
 [Dell Storage Center SC4020 v6.5 with iSCSI 7,000 Mailbox Exchange 2013 Mailbox Resiliency Storage Solution (Jan 30, 2015)](http://en.community.dell.com/techcenter/extras/m/white_papers/20440957)
 
@@ -333,7 +333,7 @@ Compellent Storage Center 5.3 10,000 Mailbox Microsoft Exchange Server 2010 Mail
 
 [Dell Compellent Storage Center 50,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution (Jul 2, 2012)](http://en.community.dell.com/techcenter/extras/m/white_papers/20438036.aspx)
 
-[Dell Compellent Storage Center 50,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution –Virtualized with VMWare ESXi 5.0  (Oct 31, 2012)](http://en.community.dell.com/techcenter/extras/m/white_papers/20440261.aspx)
+[Dell Compellent Storage Center 50,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution -Virtualized with VMWare ESXi 5.0  (Oct 31, 2012)](http://en.community.dell.com/techcenter/extras/m/white_papers/20440261.aspx)
 
 [Dell Compellent Storage Center 6.3 10,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution (Jun 30, 2013)](http://en.community.dell.com/techcenter/extras/m/white_papers/20440259.aspx)
 
@@ -495,7 +495,7 @@ Compellent Storage Center 5.3 10,000 Mailbox Microsoft Exchange Server 2010 Mail
 
 ### IBM: 1001-5000 mailboxes
 
-IBM System Storage DS3524 and System x3650 M3 server “No-Touch” 3,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution (Nov 20, 2012)
+IBM System Storage DS3524 and System x3650 M3 server "No-Touch" 3,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution (Nov 20, 2012)
 
 ### IBM: Greater than 5000 mailboxes
 
@@ -509,11 +509,11 @@ IBM System Storage DS3524 and System x3650 M3 server “No-Touch” 3,000 Mailbo
 
 IBM System Storage DCS3700 40,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution  (Jun 15, 2012)
 
-[IBM System Storage DCS3700 and System x3650 M3 server “No-Touch” 16,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution  (Jul 23, 2013)](http://www.ibm.com/support/techdocs/atsmastr.nsf/WebIndex/WP102307)
+[IBM System Storage DCS3700 and System x3650 M3 server "No-Touch" 16,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution  (Jul 23, 2013)](http://www.ibm.com/support/techdocs/atsmastr.nsf/WebIndex/WP102307)
 
 [IBM System Storage DS3512 16,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution  (Jun 15, 2012)](http://www-03.ibm.com/support/techdocs/atsmastr.nsf/WebIndex/WP102135)
 
-[IBM System Storage DS3524 and System x3650 M3 server “No-Touch” 14,000 Mailbox Resiliency Exchange 2010 Solution  (Jul 23, 2013)](http://www.ibm.com/support/techdocs/atsmastr.nsf/WebIndex/WP102306)
+[IBM System Storage DS3524 and System x3650 M3 server "No-Touch" 14,000 Mailbox Resiliency Exchange 2010 Solution  (Jul 23, 2013)](http://www.ibm.com/support/techdocs/atsmastr.nsf/WebIndex/WP102306)
 
 [IBM XIV Gen3 Storage System Model 2TB Drive 120,000 Mailbox Exchange 2010 Mailbox Resiliency Storage Solution (Jul 19, 2011)](http://www-03.ibm.com/support/techdocs/atsmastr.nsf/WebIndex/WP101955)
 

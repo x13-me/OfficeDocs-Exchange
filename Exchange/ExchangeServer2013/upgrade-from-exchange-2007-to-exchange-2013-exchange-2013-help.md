@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Online, Exchange Server, Exchange Server 2013_
 
 
-Microsoft Exchange Server 2010 and Exchange Server 2007 have multiple server roles: Client Access, Mailbox, Hub Transport, Unified Messaging, and Edge Transport. With Exchange Server 2013, we reduced the number of server roles from five to three: Client Access, Mailbox, and Edge Transport. Unified Messaging is now considered a component or sub feature of the voice-related features that are offered in Exchange 2013. (For more details about the changes, see “Exchange 2013 architecture” in [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).)
+Microsoft Exchange Server 2010 and Exchange Server 2007 have multiple server roles: Client Access, Mailbox, Hub Transport, Unified Messaging, and Edge Transport. With Exchange Server 2013, we reduced the number of server roles from five to three: Client Access, Mailbox, and Edge Transport. Unified Messaging is now considered a component or sub feature of the voice-related features that are offered in Exchange 2013. (For more details about the changes, see "Exchange 2013 architecture" in [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).)
 
 When you're upgrading your existing Exchange 2007 organization to Exchange 2013, there's a period of time when Exchange 2007 and Exchange 2013 servers will coexist within your organization. You can maintain this mode for an indefinite period of time, or you can immediately complete the upgrade to Exchange 2013 by moving all resources from Exchange 2007 to Exchange 2013, and then decommissioning the Exchange 2007 servers. You have a coexistence scenario if the following conditions are true:
 
@@ -92,7 +92,7 @@ If you have Active Directory sites with both Exchange 2010 and Exchange 2007 ins
 
 ## Overview of the upgrade process
 
-To help you get an overview of the Exchange 2007 to Exchange 2013 upgrade process, we’ve gathered resources related to each key task in the following table. For specific step-by-step guidance, see [Checklist: Upgrade from Exchange 2007](checklist-upgrade-from-exchange-2007-exchange-2013-help.md).
+To help you get an overview of the Exchange 2007 to Exchange 2013 upgrade process, we've gathered resources related to each key task in the following table. For specific step-by-step guidance, see [Checklist: Upgrade from Exchange 2007](checklist-upgrade-from-exchange-2007-exchange-2013-help.md).
 
 
 <table>

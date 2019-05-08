@@ -45,7 +45,7 @@ You can use the following permissions with a shared mailbox.
 - **Send on Behalf**: The Send on Behalf permission lets a user send email on behalf of the shared mailbox. For example, if John logs into the shared mailbox Reception Building 32 and sends an email, it look like the mail was sent by "John on behalf of Reception Building 32". You can't use the EAC to grant Send on Behalf permissions, you must use **Set-Mailbox** cmdlet with the _GrantSendonBehalf_ parameter.
 
 > [!NOTE]
-> A shared mailbox is not designed for direct logon. The user account for the shared mailbox itself should stay in a Disabled (or “disconnected”) state.
+> A shared mailbox is not designed for direct logon. The user account for the shared mailbox itself should stay in a Disabled (or "disconnected") state.
 
 ## Converting shared mailboxes
 

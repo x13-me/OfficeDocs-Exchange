@@ -33,7 +33,7 @@ Digital certificates provide the following services:
 
 - **Encryption**: They help protect the data that's exchanged from theft or tampering.
 
-- **Authentication**: They verify that their holders—people, web sites, and even network devices such as routers—are truly who or what they claim to be. Typically, the authentication is one-way, where the source verifies the identity of the target, but mutual TLS authentication is also possible.
+- **Authentication**: They verify that their holders (people, web sites, and even network devices such as routers) are truly who or what they claim to be. Typically, the authentication is one-way, where the source verifies the identity of the target, but mutual TLS authentication is also possible.
 
 Certificates can be issued for several uses. For example: web user authentication, web server authentication, Secure/Multipurpose Internet Mail Extensions (S/MIME), Internet Protocol security (IPsec), and code signing.
 

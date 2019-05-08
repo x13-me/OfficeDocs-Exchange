@@ -53,7 +53,7 @@ This example enables POP3 users to access calendar information from the Internet
 Set-PopSettings -CalendarItemRetrievalOption InternetUrl
 ```
 
-This example enables POP3 users to access calendar information by using a direct Outlook Web App URL. If you’re using `Custom`, you must specify an Outlook Web App URL using the *OWAServerUrl* parameter.
+This example enables POP3 users to access calendar information by using a direct Outlook Web App URL. If you're using `Custom`, you must specify an Outlook Web App URL using the *OWAServerUrl* parameter.
 
 ```powershell
 Set-PopSettings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
@@ -65,7 +65,7 @@ For more information about syntax and parameters, see [Set-PopSettings](https://
 
 ## How do you know this worked?
 
-To verify that you’ve successfully set calendar options, do the following:
+To verify that you've successfully set calendar options, do the following:
 
 Run the following command in the Shell.
 

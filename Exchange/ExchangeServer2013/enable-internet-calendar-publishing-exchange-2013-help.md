@@ -41,9 +41,9 @@ For additional management tasks related to sharing policies, see [Sharing polici
 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Calendar and Sharing Permissions" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - An Exchange 2013 Client Access server exists in the Exchange organization that's sharing users’ calendar information.
+  - An Exchange 2013 Client Access server exists in the Exchange organization that's sharing users' calendar information.
 
-  - User mailboxes are on Exchange 2013 Mailbox servers in the Exchange organization that's sharing users’ calendar information.
+  - User mailboxes are on Exchange 2013 Mailbox servers in the Exchange organization that's sharing users' calendar information.
 
   - Only Outlook 2010 or later and Outlook Web App users can create sharing invitations.
 

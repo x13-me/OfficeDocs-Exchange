@@ -123,7 +123,7 @@ The following procedure shows how to disable a user mailbox. Use the same proced
 
 3.  Click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") and then click **Disable**.
 
-4.  A warning appears asking if you’re sure you want to disable the mailbox. Click **Yes** to disable the mailbox.
+4.  A warning appears asking if you're sure you want to disable the mailbox. Click **Yes** to disable the mailbox.
 
 The mailbox is removed from the mailbox list.
 
@@ -153,7 +153,7 @@ Disable-Mailbox sharedmbx@contoso.com
 
 ## How do you know this worked?
 
-To verify that you’ve successfully disabled a mailbox, do one of the following:
+To verify that you've successfully disabled a mailbox, do one of the following:
 
 - In the EAC, click **Recipients**, navigate to the appropriate page for the mailbox type that you disabled, and then verify that the mailbox is no longer listed.
 
@@ -181,7 +181,7 @@ To verify that you’ve successfully disabled a mailbox, do one of the following
 
 ## Delete a mailbox
 
-As previously stated, when you delete a mailbox, both the Exchange attributes and the Active Directory user account are deleted. The mailbox (and the archive mailbox, if it’s enabled) will be permanently deleted from the mailbox database after the mailbox retention period expires.
+As previously stated, when you delete a mailbox, both the Exchange attributes and the Active Directory user account are deleted. The mailbox (and the archive mailbox, if it's enabled) will be permanently deleted from the mailbox database after the mailbox retention period expires.
 
 ## Use the EAC to delete a mailbox
 
@@ -191,7 +191,7 @@ The following procedure shows how to delete a user mailbox. Use the same procedu
 
 2.  In the list of user mailboxes, click the mailbox that you want to delete, and then click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
 
-3.  A warning appears asking if you’re sure you want to delete the mailbox. Click **Yes** to delete the mailbox.
+3.  A warning appears asking if you're sure you want to delete the mailbox. Click **Yes** to delete the mailbox.
 
 The mailbox is removed from the mailbox list.
 
@@ -221,7 +221,7 @@ Remove-Mailbox corpprint
 
 ## How do you know this worked?
 
-To verify that you’ve successfully deleted a mailbox, do one of the following sets of verification procedures.
+To verify that you've successfully deleted a mailbox, do one of the following sets of verification procedures.
 
 1. In the EAC, click **Recipients** and then navigate to the appropriate page for the mailbox type that you deleted, and verify that the mailbox is no longer listed.
 
@@ -247,4 +247,4 @@ Or
    Get-User <identity>
    ```
 
-   The command will return an error stating that user couldn’t be found, verifying that the account was deleted.
+   The command will return an error stating that user couldn't be found, verifying that the account was deleted.

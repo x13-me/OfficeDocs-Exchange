@@ -190,7 +190,7 @@
 ##### [Create public folder mailbox](../collaboration-exo/public-folders/create-public-folder-mailbox.md)
 ##### [Create public folder](../collaboration-exo/public-folders/create-public-folder.md)
 ##### [Recover deleted public folder mailbox](../collaboration-exo/public-folders/recover-deleted-public-folder-mailbox.md)
-##### [Assign “Send As” or “Send on Behalf” permissions for mail-enabled public folders](../collaboration-exo/public-folders/assign-permissions-mail-enabled-pfs.md)
+##### [Assign "Send As" or "Send on Behalf" permissions for mail-enabled public folders](../collaboration-exo/public-folders/assign-permissions-mail-enabled-pfs.md)
 ##### [Use favorite public folders](../collaboration-exo/public-folders/use-favorite-public-folders.md)
 ##### [Enable or disable mail for public folder](../collaboration-exo/public-folders/enable-or-disable-mail-for-public-folder.md)
 ##### [Update public folder hierarchy](../collaboration-exo/public-folders/update-public-folder-hierarchy.md)

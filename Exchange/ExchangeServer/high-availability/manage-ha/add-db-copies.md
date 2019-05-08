@@ -54,7 +54,7 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 4. Optionally, configure the **Activation preference number** for the database copy.
 
-5. Click **More options…** to designate the database copy as a lagged database copy by configuring a replay lag time, or to postpone automatic seeding of the database copy.
+5. Click **More options...** to designate the database copy as a lagged database copy by configuring a replay lag time, or to postpone automatic seeding of the database copy.
 
 6. Click **Save** to save the configuration changes and add the mailbox database copy.
 

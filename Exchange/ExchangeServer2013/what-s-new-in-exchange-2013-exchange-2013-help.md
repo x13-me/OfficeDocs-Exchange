@@ -31,7 +31,7 @@ Microsoft Exchange Server 2013 brings a new rich set of technologies, features, 
 
 For information about the changes made to Exchange Server 2013 since release to manufacturing (RTM), see [Updates for Exchange 2013](updates-for-exchange-2013-exchange-2013-help.md).
 
-See the following sections for more information about what’s new in Exchange 2013:
+See the following sections for more information about what's new in Exchange 2013:
 
 Exchange admin center
 
@@ -71,11 +71,11 @@ Exchange workload management
 
 Exchange 2013 provides a single unified management console that allows for ease of use and is optimized for management of on-premises, online, or hybrid deployments. The *Exchange admin center* (EAC) in Exchange 2013 replaces the Exchange 2010 Exchange Management Console (EMC) and the Exchange Control Panel (ECP). (However, "ECP" is still the name of the virtual directory used by the EAC.) Some EAC features include:
 
-  - **List view**   The list view in EAC has been designed to remove key limitations that existed in ECP. ECP was limited to displaying up to 500 objects and, if you wanted to view objects that weren’t listed in the details pane, you needed to use searching and filtering to find those specific objects. In Exchange 2013, the viewable limit from within the EAC list view is approximately 20,000 objects. After the EAC returns the results, the EAC client performs the searching and sorting, which greatly increases the performance compared to the ECP in Exchange 2010. In addition, paging has been added so that you can page to the results. You can also configure page size and export to a .csv file.
+  - **List view**   The list view in EAC has been designed to remove key limitations that existed in ECP. ECP was limited to displaying up to 500 objects and, if you wanted to view objects that weren't listed in the details pane, you needed to use searching and filtering to find those specific objects. In Exchange 2013, the viewable limit from within the EAC list view is approximately 20,000 objects. After the EAC returns the results, the EAC client performs the searching and sorting, which greatly increases the performance compared to the ECP in Exchange 2010. In addition, paging has been added so that you can page to the results. You can also configure page size and export to a .csv file.
 
   - **Add/Remove columns to the Recipient list view**   You can choose which columns to view, and with local cookies, you can save your custom list views per machine that you use to access the EAC.
 
-  - **Secure the ECP virtual directory**   You can partition access from the Internet and intranets from within the ECP IIS virtual directory to allow or disallow management features. With this feature, you can permit or deny access to users trying to access the EAC from the Internet outside of your organizational environment, while still allowing access to an end-user’s Outlook Web App Options.
+  - **Secure the ECP virtual directory**   You can partition access from the Internet and intranets from within the ECP IIS virtual directory to allow or disallow management features. With this feature, you can permit or deny access to users trying to access the EAC from the Internet outside of your organizational environment, while still allowing access to an end-user's Outlook Web App Options.
 
   - **Public Folder management**   In Exchange 2010 and Exchange 2007, public folders were managed through the Public Folder administration console. Public folders are now in the EAC, and you don't need a separate tool to manage them.
 
@@ -119,11 +119,11 @@ The Exchange 2013 architecture provides the following benefits:
 
   - **Session indifference**   With Exchange 2010, session affinity to the Client Access server role was required for several protocols. In Exchange 2013, the client access and mailbox components reside on the same Mailbox server. Because the Client Access server simply proxies all connections for a user to a specific Mailbox server, no session affinity is required at the Client Access servers. This allows inbound connections to Client Access servers to be balanced using techniques provided by load-balancing technology like least connection or round-robin.
 
-  - **Deployment simplicity**   With an Exchange 2010 site-resilient design, you needed up to eight different namespaces: two Internet Protocol namespaces, two for Outlook Web App fallback, one for Autodiscover, two for RPC Client Access, and one for SMTP. A legacy namespace was also required if you were upgrading from Exchange 2003 or Exchange 2007. With Exchange 2013, the minimum number of namespaces drops to two. If you’re coexisting with Exchange 2007, you still need to create a legacy hostname, but if you’re coexisting with Exchange 2010 or you’re installing a new Exchange 2013 organization, the minimum number of namespaces you need is two: one for client protocols and one for Autodiscover. You may also need an SMTP namespace.
+  - **Deployment simplicity**   With an Exchange 2010 site-resilient design, you needed up to eight different namespaces: two Internet Protocol namespaces, two for Outlook Web App fallback, one for Autodiscover, two for RPC Client Access, and one for SMTP. A legacy namespace was also required if you were upgrading from Exchange 2003 or Exchange 2007. With Exchange 2013, the minimum number of namespaces drops to two. If you're coexisting with Exchange 2007, you still need to create a legacy hostname, but if you're coexisting with Exchange 2010 or you're installing a new Exchange 2013 organization, the minimum number of namespaces you need is two: one for client protocols and one for Autodiscover. You may also need an SMTP namespace.
 
 As a result of these architectural changes, there have been some changes to client connectivity. First, RPC is no longer a supported direct access protocol. This means that all Outlook connectivity must take place using RPC over HTTP (also known as Outlook Anywhere). At first glance, this may seem like a limitation, but it actually has some added benefits. The most obvious benefit is that there is no need to have the RPC client access service on the Client Access server. This results in the reduction of two namespaces that would normally be required for a site-resilient solution. In addition, there is no longer any requirement to provide affinity for the RPC client access service.
 
-Second, Outlook clients no longer connect to a server FQDN as they have done in all previous versions of Exchange. Outlook uses Autodiscover to create a new connection point comprised of mailbox GUID, @ symbol, and the domain portion of the user’s primary SMTP address. This simple change results in a near elimination of the unwelcome message of "Your administrator has made a change to your mailbox. Please restart." Only Outlook 2007 and higher versions are supported with Exchange 2013.
+Second, Outlook clients no longer connect to a server FQDN as they have done in all previous versions of Exchange. Outlook uses Autodiscover to create a new connection point comprised of mailbox GUID, @ symbol, and the domain portion of the user's primary SMTP address. This simple change results in a near elimination of the unwelcome message of "Your administrator has made a change to your mailbox. Please restart." Only Outlook 2007 and higher versions are supported with Exchange 2013.
 
 The high availability model of the mailbox component has not changed significantly since Exchange 2010. The unit of high availability is still the database availability group (DAG). The DAG still uses Windows Server failover clustering. Continuous replication still supports both file mode and block mode replication. However, there have been some improvements. Failover times have been reduced as a result of transaction log code improvements and deeper checkpoint on the passive databases. The Exchange Store service has been re-written in managed code (see the "Managed Store" section later in this topic). Now, each database runs under its own process, allowing for isolation of store issues to a single database.
 
@@ -153,11 +153,11 @@ For more information, see [Digital certificates and SSL](digital-certificates-an
 
 Setup has been completely rewritten so that installing Exchange 2013 and making sure you've got the latest product rollups and security fixes is easier than ever. Here are some of the improvements we've made:
 
-  - **Always up-to-date Setup**   When you run the Setup wizard, you'll be given the option to download and use the latest product rollups, security fixes, and language packs. This option doesn’t just update the files that'll be used to run Exchange; Setup itself can be updated. This design enables us to continue to improve Setup post-release and include and update readiness checks as requirements are updated or changed.
+  - **Always up-to-date Setup**   When you run the Setup wizard, you'll be given the option to download and use the latest product rollups, security fixes, and language packs. This option doesn't just update the files that'll be used to run Exchange; Setup itself can be updated. This design enables us to continue to improve Setup post-release and include and update readiness checks as requirements are updated or changed.
     
-    If you’re using unattended Setup mode, we can’t automatically download updates. However, you can still take advantage of running the latest version of Setup by downloading the latest updates beforehand, and use the `/UpdatesDir: <path>` parameter to allow Setup to update itself before the installation process begins.
+    If you're using unattended Setup mode, we can't automatically download updates. However, you can still take advantage of running the latest version of Setup by downloading the latest updates beforehand, and use the `/UpdatesDir: <path>` parameter to allow Setup to update itself before the installation process begins.
 
-  - **Improved readiness checks**   Readiness checks make sure that your computer and your organization are ready for Exchange 2013. After you’ve provided the necessary information about your installation to Setup, the readiness checks are run before installation begins. The new readiness check engine now runs through all checks before reporting back to you on what actions need to be performed before Setup can continue, and it does so faster than ever. As with previous versions of Exchange, you can tell Setup to install the Windows features required by Setup so you don't have to install them manually.
+  - **Improved readiness checks**   Readiness checks make sure that your computer and your organization are ready for Exchange 2013. After you've provided the necessary information about your installation to Setup, the readiness checks are run before installation begins. The new readiness check engine now runs through all checks before reporting back to you on what actions need to be performed before Setup can continue, and it does so faster than ever. As with previous versions of Exchange, you can tell Setup to install the Windows features required by Setup so you don't have to install them manually.
 
   - **Simplified and modern wizard**   We've removed all the steps in the Setup wizard that aren't absolutely required for you to install Exchange. What's left is an easy-to-follow wizard that takes you through the installation process one step at a time.
 
@@ -213,11 +213,11 @@ Exchange 2013 includes the following improvements to In-Place Archiving, retenti
 
   - **Search across primary and archive mailboxes in Outlook Web App**   Users can search across their primary and archive mailboxes in Outlook Web App. Two separate searches are no longer necessary.
 
-  - **Archive Lync content**   Exchange 2013 supports archiving of Lync 2013 content in a user’s mailbox. You can place Lync content on hold using In-Place Hold and use In-Place eDiscovery to search Lync content archived in Exchange.
+  - **Archive Lync content**   Exchange 2013 supports archiving of Lync 2013 content in a user's mailbox. You can place Lync content on hold using In-Place Hold and use In-Place eDiscovery to search Lync content archived in Exchange.
 
   - **Retention policies**   Retention policies help your organization reduce risks associated with email and other communications and also meet email retention requirements. Retention policies include the following enhancements:
     
-      - **Support for Calendar and Tasks retention tags**   You can create retention policy tags for the Calendar and Tasks default folders to expire items in these folders. Items in these folders are also moved to the user’s archive based on the archive policy settings applied to the mailbox.
+      - **Support for Calendar and Tasks retention tags**   You can create retention policy tags for the Calendar and Tasks default folders to expire items in these folders. Items in these folders are also moved to the user's archive based on the archive policy settings applied to the mailbox.
     
       - **Improved ability to retain items for a specified period**   You can use retention policy and a time-based In-Place Hold to enforce retention of items for a set period.
 
@@ -349,11 +349,11 @@ Exchange 2013 uses DAGs and mailbox database copies, along with other features s
 
   - **Automatic reseed**   Enables you to quickly restore database redundancy after disk failure. If a disk fails, the database copy stored on that disk is copied from the active database copy to a spare disk on the same server. If multiple database copies were stored on the failed disk, they can all be automatically re-seeded on a spare disk. This enables faster reseeds, as the active databases are likely to be on multiple servers and the data is copied in parallel.
 
-  - **Automatic recovery from storage failures**   This feature continues the innovation introduced in Exchange 2010 to allow the system to recover from failures that affect resiliency or redundancy. In addition to the Exchange 2010 bugcheck behaviors, Exchange 2013 includes additional recovery behaviors for long I/O times, excessive memory consumption by MSExchangeRepl.exe, and severe cases where the system is in such a bad state that threads can’t be scheduled.
+  - **Automatic recovery from storage failures**   This feature continues the innovation introduced in Exchange 2010 to allow the system to recover from failures that affect resiliency or redundancy. In addition to the Exchange 2010 bugcheck behaviors, Exchange 2013 includes additional recovery behaviors for long I/O times, excessive memory consumption by MSExchangeRepl.exe, and severe cases where the system is in such a bad state that threads can't be scheduled.
 
   - **Lagged copy enhancements**   Lagged copies can now care for themselves to a certain extent using automatic log play down. Lagged copies will automatically play down log files in a variety of situations, such as single page restore and low disk space scenarios. If the system detects that page patching is required for a lagged copy, the logs will be automatically replayed into the lagged copy to perform page patching. Lagged copies will also invoke this auto replay feature when a low disk space threshold has been reached, and when the lagged copy has been detected as the only available copy for a specific period of time. In addition, lagged copies can leverage Safety Net, making recovery or activation much easier. *Safety Net* is improved functionality in Exchange 2013 based on the transport dumpster of Exchange 2010.
 
-  - **Single copy alert enhancements**   The single copy alert introduced in Exchange 2010 is no longer a separate scheduled script. It’s now integrated into the managed availability components within the system and is a native function within Exchange.
+  - **Single copy alert enhancements**   The single copy alert introduced in Exchange 2010 is no longer a separate scheduled script. It's now integrated into the managed availability components within the system and is a native function within Exchange.
 
   - **DAG network auto-configuration**   DAGs networks can be automatically configured by the system based on configuration settings. In addition to manual configuration options, DAGs can also distinguish between MAPI and Replication networks and configure DAG networks automatically.
 
@@ -367,7 +367,7 @@ There are two ways to manage Exchange workloads in Exchange 2013:
 
   - **Monitor the health of system resources**   Managing workloads based on the health of system resources is new in Exchange 2013.
 
-  - **Control how resources are consumed by individual users**   Controlling how resources are consumed by individual users was possible in Exchange 2010 (where it’s called user throttling), and this capability has been expanded for Exchange 2013.
+  - **Control how resources are consumed by individual users**   Controlling how resources are consumed by individual users was possible in Exchange 2010 (where it's called user throttling), and this capability has been expanded for Exchange 2013.
 
 For more information about these features, see [Exchange workload management](exchange-workload-management-exchange-2013-help.md).
 

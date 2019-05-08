@@ -41,7 +41,7 @@ This topic contains the following sections:
 
   - **Setup incorrectly requests .NET Framework 4.0**   If you try to install Exchange 2013 without .NET Framework installed on the computer, Setup incorrectly requests that you install .NET Framework 4.0 when, in fact, .NET Framework 4.5 or later is required.
     
-    To work around this issue, install .NET Framework 4.5 or later. You don’t need to install .NET Framework 4.0. For a complete list of prerequisites, see [Exchange 2013 prerequisites](exchange-2013-prerequisites-exchange-2013-help.md).
+    To work around this issue, install .NET Framework 4.5 or later. You don't need to install .NET Framework 4.0. For a complete list of prerequisites, see [Exchange 2013 prerequisites](exchange-2013-prerequisites-exchange-2013-help.md).
 
   - **Exchange XML application configuration files are overwritten during cumulative update installation**   Any customized Exchange or Internet Information Server per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update or Service Pack. Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange Cumulative Update or Service Pack.
 
@@ -77,11 +77,11 @@ For more information about how to install Exchange 2013, see [Planning and deplo
     
     To prevent users from exceeding their mailbox size quotas, increase the database or mailbox quota values to accommodate the new quota calculation. To configure database or mailbox quota values, use the *IssueWarningQuota*, *ProhibitSendQuota*, and *ProhibitSendReceiveQuota* parameters on the **Set-MailboxDatabase** and **Set-Mailbox** cmdlets, respectively.
 
-  - **Outlook 2007 and Outlook 2010 clients may be unable to download the Offline Address Book**   If the Offline Address Book (OAB) internal URL isn’t accessible from the Internet, Outlook 2007 and Outlook 2010 clients may be unable to download the OAB.
+  - **Outlook 2007 and Outlook 2010 clients may be unable to download the Offline Address Book**   If the Offline Address Book (OAB) internal URL isn't accessible from the Internet, Outlook 2007 and Outlook 2010 clients may be unable to download the OAB.
     
-    To work around this issue for Outlook 2007 and Outlook 2010 clients, make the OAB internal URL accessible from the Internet. Outlook 2013 isn’t affected by this issue.
+    To work around this issue for Outlook 2007 and Outlook 2010 clients, make the OAB internal URL accessible from the Internet. Outlook 2013 isn't affected by this issue.
 
-  - **Installing Exchange 2013 in an existing Exchange organization may cause all clients to download the OAB**   Installing the first Exchange 2013 server into an existing Exchange 2007 or Exchange 2010 organization may cause all clients in the organization to download a new copy of the OAB, resulting in network saturation and server performance issues. This issue occurs because Exchange 2013 creates a new default OAB in the organization that supersedes the Exchange 2007 or Exchange 2010 OAB. Mailboxes that don’t have a specific OAB assigned, or that are located on a mailbox database that doesn’t have a specific OAB assigned, will download the new default OAB.
+  - **Installing Exchange 2013 in an existing Exchange organization may cause all clients to download the OAB**   Installing the first Exchange 2013 server into an existing Exchange 2007 or Exchange 2010 organization may cause all clients in the organization to download a new copy of the OAB, resulting in network saturation and server performance issues. This issue occurs because Exchange 2013 creates a new default OAB in the organization that supersedes the Exchange 2007 or Exchange 2010 OAB. Mailboxes that don't have a specific OAB assigned, or that are located on a mailbox database that doesn't have a specific OAB assigned, will download the new default OAB.
     
     To prevent clients from downloading a new copy of the OAB when Exchange 2013 is installed, assign an OAB to every mailbox or to the mailbox database the mailboxes are located on. This must be done prior to Exchange 2013 being installed in the organization.
 
@@ -95,7 +95,7 @@ For more information about how to install Exchange 2013, see [Planning and deplo
     
       - Your Client Access servers are running a release prior to CU5.
     
-    To work around this issue, make sure that you upgrade your Client Access servers to Exchange 2013 CU6 or later before you upgrade your Mailbox servers. This will make sure the Client Access servers know how to proxy the requests to the OAB generation mailbox that is responsible for generating the user’s OAB.
+    To work around this issue, make sure that you upgrade your Client Access servers to Exchange 2013 CU6 or later before you upgrade your Mailbox servers. This will make sure the Client Access servers know how to proxy the requests to the OAB generation mailbox that is responsible for generating the user's OAB.
     
     To read more about the OAB changes in Exchange 2013 CU5, see [OAB Improvements in Exchange 2013 Cumulative Update 5](https://go.microsoft.com/fwlink/p/?linkid=400642).
 
@@ -111,7 +111,7 @@ For more information about how to install Exchange 2013, see [Planning and deplo
 
 ## Mail flow
 
-  - **TransportAgent cmdlets on Client Access servers require local Windows PowerShell**   An issue exists with the **\*-TransportAgent** cmdlets that prevents those cmdlets from installing, uninstalling, and managing transport agents on Client Access servers using the Exchange Management Shell. To install, uninstall, and manage transport agents on Client Access servers, you must manually load the Exchange Windows PowerShell snap-in and then run the **\*-TransportAgent** cmdlets. If you attempt to install, uninstall, or manage transport agents using the Exchange Management Shell, your changes will be applied to the Exchange 2013 Mailbox server you’re connected to.
+  - **TransportAgent cmdlets on Client Access servers require local Windows PowerShell**   An issue exists with the **\*-TransportAgent** cmdlets that prevents those cmdlets from installing, uninstalling, and managing transport agents on Client Access servers using the Exchange Management Shell. To install, uninstall, and manage transport agents on Client Access servers, you must manually load the Exchange Windows PowerShell snap-in and then run the **\*-TransportAgent** cmdlets. If you attempt to install, uninstall, or manage transport agents using the Exchange Management Shell, your changes will be applied to the Exchange 2013 Mailbox server you're connected to.
     
     To install, uninstall, or manage transport agents on Client Access servers, do the following on the Client Access server you want to manage:
     
@@ -122,7 +122,7 @@ For more information about how to install Exchange 2013, see [Planning and deplo
     
 
     > [!IMPORTANT]
-    > Perform the following procedure on Client Access servers only. You don’t need to load the Exchange&nbsp;Windows PowerShell snap-in if you want to manage transport agents on Mailbox servers.
+    > Perform the following procedure on Client Access servers only. You don't need to load the Exchange&nbsp;Windows PowerShell snap-in if you want to manage transport agents on Mailbox servers.
 
     
     1.  Open a new Windows PowerShell window.
@@ -210,7 +210,7 @@ For more information about how to install Exchange 2013, see [Planning and deplo
     
       - The Exchange 2010 Client Access server was upgraded to Exchange 2010 SP3 from the release to manufacturing (RTM) version of Exchange 2010 or a previous Exchange 2010 service pack.
     
-    If all the conditions above are true, the user won’t be able to access the other user’s Exchange 2010 Outlook Web App options and a blank page may appear.
+    If all the conditions above are true, the user won't be able to access the other user's Exchange 2010 Outlook Web App options and a blank page may appear.
     
     To work around this issue, install Exchange 2010 SP3 Update Rollup 1 or later on each Exchange 2010 server.
 

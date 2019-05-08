@@ -95,7 +95,7 @@ Senders can control the default TNEF message conversion options for TNEF message
 
 
 > [!NOTE]
-> The following options define how messages containing Outlook rich text are handled when sent to external recipients. If the message format you're using is HTML or plain text, these settings don’t apply.
+> The following options define how messages containing Outlook rich text are handled when sent to external recipients. If the message format you're using is HTML or plain text, these settings don't apply.
 
 
 

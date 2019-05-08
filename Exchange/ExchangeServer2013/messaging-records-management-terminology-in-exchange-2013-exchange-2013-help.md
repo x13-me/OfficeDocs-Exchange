@@ -77,7 +77,7 @@ This topic defines the core components associated with messaging records managem
 <!-- end list -->
 
   - **retention policy**  
-    A retention policy is logical grouping of retention tags. When a retention policy is applied to a user’s mailbox, all retention tags linked to the policy are deployed in a single operation.
+    A retention policy is logical grouping of retention tags. When a retention policy is applied to a user's mailbox, all retention tags linked to the policy are deployed in a single operation.
 
 <!-- end list -->
 

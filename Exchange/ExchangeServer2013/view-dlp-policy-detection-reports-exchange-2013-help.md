@@ -57,9 +57,9 @@ S:TRA=ETR|ruleId=AB2AA60C9D811E0AFC076D34824019B|dlpid=1B81CC82C9DB11E09052C5D64
 
 S:TRA=ETRP|ruleId=C27D21EECA0311E0BCB896154924019B|LoadW=200|LoadC=100|ExecW=5500|ExecC=200;
 
-The Transport Rule Agent requires grouping of the rule ID, DLP Policy ID (optional), last modified date, action, severity, mode, detected data classification (optional), and sender override (optional) based on rule ID (indicated by “TRA=ETR” in the log line). It also requires the data classification ID, count, and confidence level of classifications to be grouped by classification name (indicated by “TRA=DC” in the log line).
+The Transport Rule Agent requires grouping of the rule ID, DLP Policy ID (optional), last modified date, action, severity, mode, detected data classification (optional), and sender override (optional) based on rule ID (indicated by "TRA=ETR" in the log line). It also requires the data classification ID, count, and confidence level of classifications to be grouped by classification name (indicated by "TRA=DC" in the log line).
 
-Additional groupings include data classification ID, sender override (optional), and override justification (optional) based on data classification ID for all classifications that were detected on the client (indicated by “TRA=CI” in the log line). The Transport Rule Agent also requires the rule ID, load Wall clock (optional), load CPU clock (optional), execution Wall clock (optional), and execution CPU clock (optional) be grouped by rule ID for all rules that exceed the load or execution Wall or CPU clock thresholds (indicated by “TRA=ETRP” in the log line).
+Additional groupings include data classification ID, sender override (optional), and override justification (optional) based on data classification ID for all classifications that were detected on the client (indicated by "TRA=CI" in the log line). The Transport Rule Agent also requires the rule ID, load Wall clock (optional), load CPU clock (optional), execution Wall clock (optional), and execution CPU clock (optional) be grouped by rule ID for all rules that exceed the load or execution Wall or CPU clock thresholds (indicated by "TRA=ETRP" in the log line).
 
 The following is a complete list of the data fields. All data in the MTL is type string. Format column describes how to recognize each field in the Message Tracking Log. Optional Field column specifies what fields might not be logged when a rule matches. DLP Specific column shows what fields are specific to the DLP feature.
 
@@ -139,16 +139,16 @@ The following is a complete list of the data fields. All data in the MTL is type
 <tr class="even">
 <td><p>sndOverride</p></td>
 <td><p>Sender override; the field is optional.</p>
-<p>In the TRA=CI line, when field is set to “or” signifies the data classification was overridden. If the field is set to “fp” signifies the data classification was reported as a false positive.</p>
-<p>In the TRA=ETR line, when the field is set to “or” signifies the rule or part of the rule was overridden. If the field is set to “fp” signifies the rule or part of the rule was reported as a false positive.</p></td>
+<p>In the TRA=CI line, when field is set to "or" signifies the data classification was overridden. If the field is set to "fp" signifies the data classification was reported as a false positive.</p>
+<p>In the TRA=ETR line, when the field is set to "or" signifies the rule or part of the rule was overridden. If the field is set to "fp" signifies the rule or part of the rule was reported as a false positive.</p></td>
 <td><p>sndOverride=or or fp</p>
-<p>Where “or” represents override and “fp” means false positive. The sndOverride field is present when an end-user had reported either an override or false positive for a rule.</p></td>
+<p>Where "or" represents override and "fp" means false positive. The sndOverride field is present when an end-user had reported either an override or false positive for a rule.</p></td>
 <td><p>Optional</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
 <td><p>just</p></td>
-<td><p>Justification; the field is optional and only available when the sender override field is equal to “or” in the TRA=CI line. Justification text provided by the end user as the reason the data classification should be overridden.</p></td>
+<td><p>Justification; the field is optional and only available when the sender override field is equal to "or" in the TRA=CI line. Justification text provided by the end user as the reason the data classification should be overridden.</p></td>
 <td><p>just=IW input justification string</p>
 <p>Justification field is only logged when end user reports an override.</p></td>
 <td><p>Optional</p></td>
@@ -163,7 +163,7 @@ The following is a complete list of the data fields. All data in the MTL is type
 </tr>
 <tr class="odd">
 <td><p>dlpId</p></td>
-<td><p>ID for a DLP Policy. The field is optional; if there is no dlpId then the rule doesn’t belong to a DLP Policy.</p></td>
+<td><p>ID for a DLP Policy. The field is optional; if there is no dlpId then the rule doesn't belong to a DLP Policy.</p></td>
 <td><p>dlpId=GUID</p></td>
 <td><p>Optional</p></td>
 <td><p>Yes</p></td>
@@ -249,7 +249,7 @@ The following is a complete list of the data fields. All data in the MTL is type
 </tr>
 <tr class="odd">
 <td><p>recipient-address</p></td>
-<td><p>Email address(es) of the message’s recipient(s)</p></td>
+<td><p>Email address(es) of the message's recipient(s)</p></td>
 <td><p>recipient-address=Email address</p></td>
 <td><p>Mandatory</p></td>
 <td><p>No</p></td>

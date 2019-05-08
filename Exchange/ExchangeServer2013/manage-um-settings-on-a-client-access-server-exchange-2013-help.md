@@ -19,7 +19,7 @@ After you install a Client Access server that is running the Microsoft Exchange 
 
 
 > [!NOTE]
-> It’s not required that Client Access servers be added to a UM dial plan before it can process calls for Unified Messaging (UM), except when you’re integrating UM and Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server. By default, all Client Access servers in an organization are available to answer incoming calls.
+> It's not required that Client Access servers be added to a UM dial plan before it can process calls for Unified Messaging (UM), except when you're integrating UM and Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server. By default, all Client Access servers in an organization are available to answer incoming calls.
 
 
 

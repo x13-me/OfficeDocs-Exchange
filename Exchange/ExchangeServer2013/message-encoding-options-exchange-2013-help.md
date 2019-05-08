@@ -145,7 +145,7 @@ As a sender, you can specify message encoding options in Outlook Web App at any 
 
   - By configuring the default message format to be either plain text or HTMLin the **Message format** section of the **Settings** \>**Options** \> **Settings** page.
 
-  - By setting the message format as you're composing it to either plain text or HTML by using the **More options** (…) menu, and selecting **Switch to plain text** or **Switch to HTML**.
+  - By setting the message format as you're composing it to either plain text or HTML by using the **More options** (...) menu, and selecting **Switch to plain text** or **Switch to HTML**.
 
 Return to top
 

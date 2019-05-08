@@ -231,7 +231,7 @@ For detailed syntax and parameter information, see [Get-Mailbox](https://technet
 
 ## Change the default assignment policy
 
-You can change the management role assignment policy assigned to new mailboxes that are created. Changing the default role assignment policy doesn’t change the assignment policy assigned to existing mailboxes. To change the assignment policy assigned to existing mailboxes, see [Change the assignment policy on a mailbox](change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md).
+You can change the management role assignment policy assigned to new mailboxes that are created. Changing the default role assignment policy doesn't change the assignment policy assigned to existing mailboxes. To change the assignment policy assigned to existing mailboxes, see [Change the assignment policy on a mailbox](change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md).
 
 
 > [!NOTE]

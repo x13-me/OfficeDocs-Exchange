@@ -19,7 +19,7 @@ With federated sharing in Exchange Server 2013, users can share information with
 
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn’t fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
+> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
 
 
 
@@ -53,7 +53,7 @@ For detailed instructions, see [Create an organization relationship](create-an-o
 
 ## Step 3: Create a sharing policy
 
-Sharing policies enable user-established, people-to-people sharing of calendar information with different types of external users. They support the sharing of calendar and contact information with external federated organizations, external non-federated organizations, and individuals with Internet access. If you don’t need to configure people-to-people or contact sharing (organization-level sharing only), you don’t need to configure a sharing policy.
+Sharing policies enable user-established, people-to-people sharing of calendar information with different types of external users. They support the sharing of calendar and contact information with external federated organizations, external non-federated organizations, and individuals with Internet access. If you don't need to configure people-to-people or contact sharing (organization-level sharing only), you don't need to configure a sharing policy.
 
 For detailed instructions, see [Create a sharing policy](create-a-sharing-policy-exchange-2013-help.md).
 

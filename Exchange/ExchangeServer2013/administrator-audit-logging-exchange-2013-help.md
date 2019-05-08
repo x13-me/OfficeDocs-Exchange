@@ -91,7 +91,7 @@ You must specify multiple years using the `dd` field. For example, 365 days equa
 
 ## Verbose logging
 
-By default, the administrator audit log records only the cmdlet name, cmdlet parameters (and values specified), the object that was modified, who ran the cmdlet, when the cmdlet was run, and on what server the cmdlet was run. The administrator audit log doesn’t log what properties were modified on the object. If you want the audit log to also include the properties of the object that were modified, you can enable verbose logging by setting the *LogLevel* parameter to `Verbose`. When you enable verbose logging, in addition to the information logged by default, the properties modified on an object, including their old and new values, are included in the audit log.
+By default, the administrator audit log records only the cmdlet name, cmdlet parameters (and values specified), the object that was modified, who ran the cmdlet, when the cmdlet was run, and on what server the cmdlet was run. The administrator audit log doesn't log what properties were modified on the object. If you want the audit log to also include the properties of the object that were modified, you can enable verbose logging by setting the *LogLevel* parameter to `Verbose`. When you enable verbose logging, in addition to the information logged by default, the properties modified on an object, including their old and new values, are included in the audit log.
 
 ## Test cmdlets
 

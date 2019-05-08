@@ -53,7 +53,7 @@ For detailed syntax and parameter information, see [Set-MailboxServer](https://t
 
 To verify that you have successfully configured the Managed Folder Assistant, use the [Get-MailboxServer](https://technet.microsoft.com/en-us/library/bb123539\(v=exchg.150\)) cmdlet to check the *ManagedFolderWorkCycle* parameter.
 
-This command retrieves all Mailbox servers in the organization and outputs the Managed Folder Assistant’s workcycle properties from each server in a table format. The *Auto* switch is used to automatically fit column width.
+This command retrieves all Mailbox servers in the organization and outputs the Managed Folder Assistant's workcycle properties from each server in a table format. The *Auto* switch is used to automatically fit column width.
 
 ```powershell
     Get-MailboxServer | Format-Table Name,ManagedFolderWorkCycle* -Auto

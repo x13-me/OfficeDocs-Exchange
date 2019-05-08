@@ -67,7 +67,7 @@ AD RMS, a component of Windows Server 2008 and later versions, is available to h
 
 An AD RMS system has both a server and a client component, including the following:
 
-  - A server that has Windows Server 2008 R2 or a later version installed that’s running the Active Directory Rights Management Services server role, which handles certificates and licensing.
+  - A server that has Windows Server 2008 R2 or a later version installed that's running the Active Directory Rights Management Services server role, which handles certificates and licensing.
 
   - A database server.
 
@@ -75,7 +75,7 @@ An AD RMS system has both a server and a client component, including the followi
 
 The server component is made up of several web services that run on a Microsoft server such as Windows Server 2008 or a later version. The client component can be run on either a client or server operating system and includes functions that enable an application to encrypt and decrypt content, retrieve templates and revocation lists, and acquire licenses and certificates from a server.
 
-By using AD RMS and the AD RMS client, you can augment an organization's security strategy by protecting information through persistent usage policies that remain with the information, regardless of where it's moved. You can use AD RMS to help prevent sensitive information—such as financial reports, product specifications, customer data, and confidential email and voice mail messages—from intentionally or accidentally getting into the wrong hands. For detailed information, see [AD RMS Overview](https://go.microsoft.com/fwlink/p/?linkid=199436).
+By using AD RMS and the AD RMS client, you can augment an organization's security strategy by protecting information through persistent usage policies that remain with the information, regardless of where it's moved. You can use AD RMS to help prevent sensitive information (such as financial reports, product specifications, customer data, and confidential email and voice mail messages) from intentionally or accidentally getting into the wrong hands. For detailed information, see [AD RMS Overview](https://go.microsoft.com/fwlink/p/?linkid=199436).
 
 In Exchange UM you can use Information Rights Management (IRM) features to apply persistent protection to messages and attachments.
 
@@ -172,7 +172,7 @@ The email client software that's used to listen to a Protected Voice Mail messag
 <tr class="even">
 <td><p>Windows Mobile or Windows Phone</p></td>
 <td><ul>
-<li><p>Windows Mobile doesn’t support Protected Voice Mail. However, Windows Phone 7 and Windows Phone 8 support Protected Voice Mail.</p></li>
+<li><p>Windows Mobile doesn't support Protected Voice Mail. However, Windows Phone 7 and Windows Phone 8 support Protected Voice Mail.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -199,7 +199,7 @@ There are actually two messages involved for each Protected Voice Mail message. 
 
 Protected voice messages are shown in the user's Inbox in the **Voice Mail** search folder. The user can listen to the voice messages by using the embedded audio player just as they would listen to a regular voice message, except that the Forward button will be disabled and a note will be shown at the top of the message stating that it's protected and that it can't be forwarded.
 
-For email clients that don't support Protected Voice Mail, the body of the outer message will be displayed. Administrators can include text when the client’s software doesn’t support Protected Voice Mail by using UM mailbox policies. You can customize the default text that's included in the email message by configuring a UM mailbox policy. For example, you could configure the UM mailbox policy with customized text such as, *"You can't open this voice mail message because it's protected. To view or listen to this voice message, sign in to your mailbox at https://mail.contoso.com or call +1 (425) 555-1234 to call in to Outlook Voice Access."*
+For email clients that don't support Protected Voice Mail, the body of the outer message will be displayed. Administrators can include text when the client's software doesn't support Protected Voice Mail by using UM mailbox policies. You can customize the default text that's included in the email message by configuring a UM mailbox policy. For example, you could configure the UM mailbox policy with customized text such as, *"You can't open this voice mail message because it's protected. To view or listen to this voice message, sign in to your mailbox at https://mail.contoso.com or call +1 (425) 555-1234 to call in to Outlook Voice Access."*
 
 Return to top
 
@@ -226,7 +226,7 @@ There are two situations in which protected voice messages can be created:
     
 
     > [!NOTE]
-    > If a caller is authenticated, the Protected Voice Mail settings on the UM mailbox policy that’s linked to the caller are applied, regardless of the UM mailbox policy settings for the intended recipient of the voice message.
+    > If a caller is authenticated, the Protected Voice Mail settings on the UM mailbox policy that's linked to the caller are applied, regardless of the UM mailbox policy settings for the intended recipient of the voice message.
 
     
     **Create a Protected Voice Mail message using the voice user interface**

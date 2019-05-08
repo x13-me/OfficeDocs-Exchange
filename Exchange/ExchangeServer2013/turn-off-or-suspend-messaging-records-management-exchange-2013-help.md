@@ -51,7 +51,7 @@ To learn more about In-Place Hold and litigation hold, see [In-Place Hold and Li
 
 To remove a retention tag from a mailbox, you unlink the tag from the retention policy. When you unlink a retention policy tag (RPT) for a default folder, the default mailbox tag applies to all items in that folder. When you unlink a personal tag, it's no longer available to the user. Tags applied to existing messages will continue to be processed unless you remove the tag from the Exchange organization.
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the “Messaging records management” entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
 This Shell example unlinks the retention tag Delete - 3 Days from the retention policy Corp-Users.
 
@@ -65,7 +65,7 @@ For detailed syntax and parameter information, see [Get-RetentionPolicy](https:/
 
 ## Remove retention policies from mailboxes
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the “Apply retention policies” entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Apply retention policies" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
 You can stop a retention policy from applying to a mailbox by removing the policy from the mailbox user's properties.
 
@@ -95,11 +95,11 @@ To turn off MRM for an organization, delete all retention tags and retention pol
 
 
 > [!WARNING]
-> Retention policies also include Move to Archive tags, which move messages to the user’s archive mailbox. If you remove a retention policy that has a Move to Archive tag, users who had the policy applied will no longer have messages moved to the archive by the Managed Folder Assistant.<BR>To avoid this, remove only the Delete and Allow Recovery and Permanently Delete tags from your organization and keep the policies that have the Move to Archive tags applied. Alternatively, users who have and archive enabled could manually move items to their archive mailbox using Outlook or Outlook Web App.<BR>Before removing retention tags or retention policies, we recommend that you check the settings of the tags being removed. Don’t delete tags with the Move to Archive retention action.
+> Retention policies also include Move to Archive tags, which move messages to the user's archive mailbox. If you remove a retention policy that has a Move to Archive tag, users who had the policy applied will no longer have messages moved to the archive by the Managed Folder Assistant.<BR>To avoid this, remove only the Delete and Allow Recovery and Permanently Delete tags from your organization and keep the policies that have the Move to Archive tags applied. Alternatively, users who have and archive enabled could manually move items to their archive mailbox using Outlook or Outlook Web App.<BR>Before removing retention tags or retention policies, we recommend that you check the settings of the tags being removed. Don't delete tags with the Move to Archive retention action.
 
 
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the “Messaging records management” entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
 
 > [!NOTE]

@@ -55,7 +55,7 @@ In most domain topologies, the primary DNS suffix of the computers in the domain
 
 In some cases, you may require these namespaces to be different. This is called a *disjoint namespace*. For example, a merger or acquisition may cause you to have a topology with a disjoint namespace. In addition, if DNS management in your company is split between administrators who manage Active Directory and administrators who manage networks, you may need to have a topology with a disjoint namespace.
 
-A disjoint namespace scenario is one in which the primary DNS suffix of a computer doesn’t match the DNS domain name where that computer resides. The computer with the primary DNS suffix that doesn't match is said to be *disjoint*. Another disjoint namespace scenario occurs if the NetBIOS domain name of a domain controller doesn't match the DNS domain name.
+A disjoint namespace scenario is one in which the primary DNS suffix of a computer doesn't match the DNS domain name where that computer resides. The computer with the primary DNS suffix that doesn't match is said to be *disjoint*. Another disjoint namespace scenario occurs if the NetBIOS domain name of a domain controller doesn't match the DNS domain name.
 
 ## Exchange 2013 and disjoint namespaces
 
