@@ -93,7 +93,7 @@ To verify that you've successfully configured mailbox audit logging, do the foll
   Get-Mailbox | Format-List Name,AuditEnabled
   ```
 
-    A value of `True` for the _AuditEnabled_ property verifies that audit logging is enabled.
+A value of `True` for the _AuditEnabled_ property verifies that audit logging is enabled.
 
 2. Run the following command to verify that XML attachments are allowed in Outlook Web App.
 
@@ -101,7 +101,7 @@ To verify that you've successfully configured mailbox audit logging, do the foll
   Get-OwaMailboxPolicy | Select-Object -ExpandProperty AllowedFileTypes
   ```
 
-    Verify that `.xml` is included in the list of allowed file types.
+Verify that `.xml` is included in the list of allowed file types.
 
 3. Run the following command to verify that XML attachments are removed from the blocked file list in Outlook Web App.
 
@@ -109,7 +109,7 @@ To verify that you've successfully configured mailbox audit logging, do the foll
   Get-OwaMailboxPolicy | Select-Object -ExpandProperty BlockedFileTypes
   ```
 
-    Verify that `.xml` isn't included in the list of blocked file types.
+Verify that `.xml` isn't included in the list of blocked file types.
 
 ## Export the mailbox audit log
 <a name="exportauditlog"> </a>
@@ -128,19 +128,19 @@ You need to be assigned permissions before you can perform this procedure or pro
 
   - **Type of non-owner access**: Select one of the following options to define the type of non-owner access to retrieve entries for:
 
-  - **All non-owners**: Search for access by administrators and delegated users inside your organization, and by Microsoft datacenter administrators in Exchange Online.
+    * **All non-owners**: Search for access by administrators and delegated users inside your organization, and by Microsoft datacenter administrators in Exchange Online.
 
-  - **External users**: Search for access by Microsoft datacenter administrators.
+    * **External users**: Search for access by Microsoft datacenter administrators.
 
-  - **Administrators and delegated users**: Search for access by administrators and delegated users inside your organization.
+    * **Administrators and delegated users**: Search for access by administrators and delegated users inside your organization.
 
-  - **Administrators**: Search for access by administrators in your organization.
+    * **Administrators**: Search for access by administrators in your organization.
 
   - **Recipients**: Select the users to send the mailbox audit log to.
 
 4. Click **Export**.
 
-    Microsoft Exchange retrieves entries in the mailbox audit log that meet your search criteria, saves them to a file named SearchResult.xml, and then attaches the XML file to an email message sent to the recipients that you specified.
+Microsoft Exchange retrieves entries in the mailbox audit log that meet your search criteria, saves them to a file named SearchResult.xml, and then attaches the XML file to an email message sent to the recipients that you specified.
 
 ### How do you know this worked?
 
@@ -207,8 +207,3 @@ To save and view the SearchResult.xml file:
 |MailboxOwnerUPN|The email address of the mailbox owner.|
 |LogonUserDN|The display name of the non-owner.|
 |Subject|The subject line of the email message that was affected by the non-owner.|
-
-    [When mailbox auditing is enabled for a mailbox, Microsoft Exchange logs information in the mailbox audit log whenever a user other than the owner accesses the mailbox. Each log entry includes information about who accessed the mailbox and when, the actions performed by the non-owner, and whether the action was successful. Entries in the mailbox audit log are retained for 90 days by default. You can use the mailbox audit log to determine if a user other than the owner has accessed a mailbox.When you export entries from mailbox audit logs, Microsoft Exchange saves the entries in an XML file and attaches it to an email message sent to the specified recipients.](#Introduction.md)
-
-
-
