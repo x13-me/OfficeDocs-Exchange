@@ -913,7 +913,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 <p>Identiteit</p>
 <p>Registratie</p>
 <p>Identificatie</p>
-<p>Carte d’identité</p>
+<p>Carte d'identité</p>
 <p>numéro d'immatriculation</p>
 <p>numéro d'identification</p>
 <p>identité</p>
@@ -2408,7 +2408,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 <p>expiration date</p>
 <p>exp date</p>
 <p>expiry date</p>
-<p>date d’expiration</p>
+<p>date d'expiration</p>
 <p>date d'exp</p>
 <p>date expiration</p>
 <p>bank card</p>

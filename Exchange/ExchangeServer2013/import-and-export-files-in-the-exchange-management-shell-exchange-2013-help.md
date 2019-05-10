@@ -27,7 +27,7 @@ Remote Shell in Exchange 2013 has two sessions, the local session and the remote
 
 The remote session is the Windows PowerShell session that's running on the remote Exchange server. This session is where all Exchange cmdlets are run. It has access to the Exchange server's file system.
 
-When you connect to a remote Exchange server, a connection is made between your local session on your computer and the remote session on the Exchange server. This connection enables you to run Exchange cmdlets on the remote Exchange server in your local session even though your local computer doesn't have any Exchange cmdlets installed. Even though the Exchange cmdlets appear to be running on your local computer, they’re actually running on the Exchange server.
+When you connect to a remote Exchange server, a connection is made between your local session on your computer and the remote session on the Exchange server. This connection enables you to run Exchange cmdlets on the remote Exchange server in your local session even though your local computer doesn't have any Exchange cmdlets installed. Even though the Exchange cmdlets appear to be running on your local computer, they're actually running on the Exchange server.
 
 
 > [!IMPORTANT]
@@ -39,7 +39,7 @@ The Exchange cmdlets that run in the remote session on the remote Exchange serve
 
 ## Importing and exporting files in remote Shell
 
-Importing and exporting files requires a specific syntax because Mailbox and Client Access servers use remote Shell and don’t have access to the local computer’s file system.
+Importing and exporting files requires a specific syntax because Mailbox and Client Access servers use remote Shell and don't have access to the local computer's file system.
 
 ## Importing files in remote Shell
 
@@ -147,7 +147,7 @@ The syntax to export files in Exchange 2013 is used any time you want to accept 
 The Shell must know that you want to save the data stored in the **FileData** property to your local computer. To do so, use the following syntax.
 
 ```command line
-<cmdlet> | ForEach {     <cmdlet> | ForEach { $_.FileData | Add-Content <local path to file> -Encoding Byte }.FileData | Add-Content <local path to file> -Encoding Byte }
+<cmdlet> | ForEach {     <cmdlet> | ForEach {$_.FileData | Add-Content <local path to file> -Encoding Byte}.FileData | Add-Content <local path to file> -Encoding Byte }
 ```
 
 For example, the following command exports the data stored in the **FileData** property on the object created by the **Export-SomeData** fictional cmdlet. The exported data is stored in a file you specify on the local computer, in this case MyData.dat.
@@ -159,7 +159,7 @@ For example, the following command exports the data stored in the **FileData** p
 
 
 ```powershell
-Export-SomeData | ForEach {     Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }.FileData | Add-Content C:\MyData.dat -Encoding Byte }
+Export-SomeData | ForEach {     Export-SomeData | ForEach {$_.FileData | Add-Content C:\MyData.dat -Encoding Byte}.FileData | Add-Content C:\MyData.dat -Encoding Byte }
 ```
 
 The following actions occur when the command is run:

@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-Use this checklist to install and deploy Unified Messaging (UM) and Microsoft Lync Server 2013. In this topic, “Lync Server” also refers to Lync Server 2010. However, Microsoft Office Communications Server 2007 R2 can also be deployed together with Unified Messaging.
+Use this checklist to install and deploy Unified Messaging (UM) and Microsoft Lync Server 2013. In this topic, "Lync Server" also refers to Lync Server 2010. However, Microsoft Office Communications Server 2007 R2 can also be deployed together with Unified Messaging.
 
 
 Before you start working with this checklist, make sure you're familiar with the concepts in:

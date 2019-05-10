@@ -194,7 +194,7 @@ The following table lists the default settings on a stand-alone Exchange 2013 Ma
 <li><p>SSL required</p></li>
 <li><p>Requires 128-bit encryption</p></li>
 </ul></td>
-<td><p>This virtual directory can’t be configured by the user.</p></td>
+<td><p>This virtual directory can't be configured by the user.</p></td>
 </tr>
 <tr class="even">
 <td><p>PowerShell</p></td>

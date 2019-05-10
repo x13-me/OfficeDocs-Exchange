@@ -449,7 +449,7 @@ The current status of a queue is stored in the **Status** property of the queue.
 
   - **Retry**   The last automatic or manual connection attempt failed, and the queue is waiting to retry the connection.
 
-  - **Suspended**   The queue has been manually suspended by an administrator to prevent message delivery. New messages can enter the queue, and messages that are in the act of being transmitted to the next hop will finish delivery and leave the queue. Otherwise, messages won't leave the queue until the queue is manually resumed by an administrator. Note that suspending a queue doesn’t change the status of the individual messages in the queue.
+  - **Suspended**   The queue has been manually suspended by an administrator to prevent message delivery. New messages can enter the queue, and messages that are in the act of being transmitted to the next hop will finish delivery and leave the queue. Otherwise, messages won't leave the queue until the queue is manually resumed by an administrator. Note that suspending a queue doesn't change the status of the individual messages in the queue.
     
     You can suspend a queue that has a status of Active or Retry. You can also suspend the Unreachable queue and the Submission queue.
     

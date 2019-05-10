@@ -37,7 +37,7 @@ For additional management tasks related to mobile devices, see [Exchange ActiveS
 
 ## Use the EAC to view mobile device information for users
 
-The EAC displays a list of mobile devices that are currently synchronizing with a user’s mailbox. You can view mobile devices by family, model, phone number, or status.
+The EAC displays a list of mobile devices that are currently synchronizing with a user's mailbox. You can view mobile devices by family, model, phone number, or status.
 
 1.  In the EAC, click **Recipients** \> **Mailboxes** and choose a mailbox.
 

@@ -43,7 +43,7 @@ Some of the advantages of using custom attributes include:
 
 ## Multivalued custom attributes
 
-In Exchange 2010 Service Pack 2 (SP2), five multivalued custom attributes were added to Exchange to allow you to store additional information for mail recipients if the traditional custom attributes didn’t meet your needs. The *ExtensionCustomAttribute1* to *ExtensionCustomAttribute5* parameters can hold up to 1,300 values each. You can specify multiple values as a comma-delimited list. The following cmdlets support these new parameters:
+In Exchange 2010 Service Pack 2 (SP2), five multivalued custom attributes were added to Exchange to allow you to store additional information for mail recipients if the traditional custom attributes didn't meet your needs. The *ExtensionCustomAttribute1* to *ExtensionCustomAttribute5* parameters can hold up to 1,300 values each. You can specify multiple values as a comma-delimited list. The following cmdlets support these new parameters:
 
   - [Set-DistributionGroup](https://technet.microsoft.com/en-us/library/bb124955\(v=exchg.150\))
 
@@ -98,7 +98,7 @@ This example creates a dynamic distribution group based on the recipients whose 
 
 ## Custom attribute example using ExtensionCustomAttributes parameter
 
-In this example, the mailbox for Kweku will have *ExtensionCustomAttribute1* updated to reflect that he’s enrolled in the following educational classes: MATH307, ECON202, and ENGL300.
+In this example, the mailbox for Kweku will have *ExtensionCustomAttribute1* updated to reflect that he's enrolled in the following educational classes: MATH307, ECON202, and ENGL300.
 
 ```powershell
 Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
@@ -110,7 +110,7 @@ Next, a dynamic distribution group for all students enrolled MATH307 is created 
     New-DynamicDistributionGroup -Name Students_MATH307 -RecipientFilter {ExtensionCustomAttribute1 -eq "MATH307"}
 ```
 
-In this example, Kweku’s *ExtensionCustomAttribute1* values are updated to reflect that he’s added the class ENGL210 and removed the class ECON202.
+In this example, Kweku's *ExtensionCustomAttribute1* values are updated to reflect that he's added the class ENGL210 and removed the class ECON202.
 
 ```powershell
 Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}

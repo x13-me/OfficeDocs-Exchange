@@ -25,17 +25,18 @@ A *disconnected mailbox* is a mailbox object in the mailbox database that isn't 
 
   - **Disabled mailboxes**   When a mailbox is disabled or deleted in the Exchange Administration Center (EAC) or using the **Disable-Mailbox** or **Remove-Mailbox** cmdlet in the Exchange Management Shell, Exchange retains the deleted mailbox in the mailbox database, and switches the mailbox to a disabled state. This is why mailboxes that are either disabled or deleted are referred to as *disabled mailboxes*. The difference is that when you disable a mailbox, the Exchange attributes are removed from the corresponding Active Directory user account, but the user account is retained. When you delete a mailbox, both the Exchange attributes and the Active Directory user account are deleted.
     
-    Disabled and deleted mailboxes are retained in the mailbox database until the deleted mailbox retention period expires, which is 30 days by default. After the retention period expires, the mailbox is permanently deleted (also called *purged*). If a mailbox is deleted using the **Remove-Mailbox** cmdlet, it’s also retained for the duration of the retention period.
+    Disabled and deleted mailboxes are retained in the mailbox database until the deleted mailbox retention period expires, which is 30 days by default. After the retention period expires, the mailbox is permanently deleted (also called *purged*). If a mailbox is deleted using the **Remove-Mailbox** cmdlet, it's also retained for the duration of the retention period.
     
 
     > [!IMPORTANT]
     > If a mailbox is deleted using the <STRONG>Remove-Mailbox</STRONG> cmdlet and either the <EM>Permanent</EM> or <EM>StoreMailboxIdentity</EM> parameter, it will be immediately deleted from the mailbox database.
 
     
-    To identify the disabled mailboxes in your organization, run the following command in the Shell.
-    
+    To identify the disabled mailboxes in your organization, run the following commands in the Shell.
+
     ```powershell
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "Disabled" } | ft DisplayName,Database,DisconnectDate
+    $dbs = Get-MailboxDatabase
+    $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisconnectReason -eq "Disabled"} | Format-Table DisplayName,Database,DisconnectDate
     ```
 
   - **Soft-deleted mailboxes**   When a mailbox is moved to a different mailbox database, Exchange doesn't fully delete the mailbox from the source mailbox database when the move is complete. Instead, the mailbox in the source mailbox database is switched to a *soft-deleted* state. Like disabled mailboxes, soft-deleted mailboxes are retained in the source database either until the deleted mailbox retention period expires or until the **Remove-StoreMailbox** cmdlet is used to purge the mailbox.
@@ -43,7 +44,8 @@ A *disconnected mailbox* is a mailbox object in the mailbox database that isn't 
     Run the following command to identify soft-deleted mailboxes in your organization.
     
     ```powershell
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | ft DisplayName,Database,DisconnectDate
+    $dbs = Get-MailboxDatabase
+    $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisconnectReason -eq "SoftDeleted"} | Format-Table DisplayName,Database,DisconnectDate
     ```
     
 **Contents**
@@ -60,13 +62,13 @@ Disconnected mailbox documentation
 
 ## Working with disabled mailboxes
 
-You can perform several operations on a disabled mailbox before it’s purged from the mailbox database:
+You can perform several operations on a disabled mailbox before it's purged from the mailbox database:
 
   - Reconnect it to the same user account.
 
-  - Connect it to a different user account that isn’t mail-enabled, which means the user account doesn’t have a mailbox.
+  - Connect it to a different user account that isn't mail-enabled, which means the user account doesn't have a mailbox.
 
-  - Restore it to a user account that has an existing mailbox. For example, if a user whose mailbox was deleted has a new mailbox, you can restore the user’s disabled mailbox to their new mailbox.
+  - Restore it to a user account that has an existing mailbox. For example, if a user whose mailbox was deleted has a new mailbox, you can restore the user's disabled mailbox to their new mailbox.
 
   - Permanently delete it from the Exchange mailbox database.
 
@@ -78,9 +80,9 @@ Here are scenarios in which you may want to connect or restore a disabled mailbo
 
   - You deleted a mailbox by using the EAC or the [Remove-Mailbox](https://technet.microsoft.com/en-us/library/aa995948\(v=exchg.150\)) cmdlet and now want to reconnect the mailbox to a different Active Directory user account.
 
-  - You deleted a mailbox and now want to restore the mailbox to an existing mailbox. For example, if a user whose mailbox was deleted has a new mailbox, you can restore the user’s disabled mailbox to their new mailbox.
+  - You deleted a mailbox and now want to restore the mailbox to an existing mailbox. For example, if a user whose mailbox was deleted has a new mailbox, you can restore the user's disabled mailbox to their new mailbox.
 
-  - You want to convert a user mailbox to a linked mailbox associated with a user account that’s external to the forest in which your Exchange organization exists. The resource forest scenario is an example of when you would want to associate a mailbox with an external account. In this scenario, user objects in the Exchange forest have mailboxes, but the user objects are disabled for logon. You must associate a mailbox in the Exchange forest with a user account in the external account forest.
+  - You want to convert a user mailbox to a linked mailbox associated with a user account that's external to the forest in which your Exchange organization exists. The resource forest scenario is an example of when you would want to associate a mailbox with an external account. In this scenario, user objects in the Exchange forest have mailboxes, but the user objects are disabled for logon. You must associate a mailbox in the Exchange forest with a user account in the external account forest.
 
 There are two ways you can reconnect or restore a disabled mailbox. The first method is to use the EAC or the **Connect-Mailbox** cmdlet to connect a disabled mailbox to a user account. For procedures to reconnect disabled mailboxes, see [Connect a disabled mailbox](connect-a-disabled-mailbox-exchange-2013-help.md).
 
@@ -96,7 +98,7 @@ Return to top
 
 ## Working with disabled archive mailboxes
 
-Archive mailboxes become disconnected when they’re disabled. Similar to a disabled primary mailbox, a disconnected archive mailbox can be connected by using the **Connect-Mailbox** cmdlet with the *Archive* parameter.
+Archive mailboxes become disconnected when they're disabled. Similar to a disabled primary mailbox, a disconnected archive mailbox can be connected by using the **Connect-Mailbox** cmdlet with the *Archive* parameter.
 
 The primary mailbox and the archive mailbox share the same legacy distinguished name (DN), so you must connect the archive mailbox to the same user mailbox that it was previously connected to. You can't connect the archive mailbox to a different user mailbox.
 
@@ -119,7 +121,7 @@ Return to top
 
 ## Working with soft-deleted mailboxes
 
-A soft-deleted mailbox is created when a mailbox is moved from one Exchange mailbox database to any other mailbox database. Exchange doesn’t fully delete the mailbox from the source database after a move in case an error occurs during the move that causes the mailbox on the destination database to fail. You can always restore the source mailbox and try again. Exchange will retain the soft-deleted mailbox for the duration of the mailbox retention period.
+A soft-deleted mailbox is created when a mailbox is moved from one Exchange mailbox database to any other mailbox database. Exchange doesn't fully delete the mailbox from the source database after a move in case an error occurs during the move that causes the mailbox on the destination database to fail. You can always restore the source mailbox and try again. Exchange will retain the soft-deleted mailbox for the duration of the mailbox retention period.
 
 You can perform two operations on a soft-deleted mailbox:
 

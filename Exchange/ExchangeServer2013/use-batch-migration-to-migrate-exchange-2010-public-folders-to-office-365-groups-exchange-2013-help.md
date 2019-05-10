@@ -30,7 +30,7 @@ Ensure that all of the following conditions are met before you begin preparing y
 
   - Outlook Anywhere needs to be enabled on the Exchange 2010 server that hosts your public folder databases. For details about enabling Outlook Anywhere on Exchange 2010 servers, see [Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?linkid=187249).
 
-  - You can’t use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2010 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.150\).aspx).
+  - You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2010 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.150\).aspx).
 
   - Only public folders of type calendar and mail can be migrated to Office 365 Groups at this time; migration of other types of public folders is not supported. Also, the target groups in Office 365 are expected to be created prior to the migration.
 
@@ -329,7 +329,7 @@ This script will read the permissions of the public folders being migrated and t
     
     In this case, User1 will be added as an owner to the group in Office 365.
 
-  - When the default permission of a public folder being migrated is 'Author' or above, the script will suggest setting the corresponding group's privacy setting as ‘Public’.
+  - When the default permission of a public folder being migrated is 'Author' or above, the script will suggest setting the corresponding group's privacy setting as 'Public'.
 
 This script can be run even after the lock-down of public folders, with parameter the `ArePublicFoldersLocked` set to` $true`. In this scenario, the script will read permissions from the back up file created during lock-down.
 
@@ -445,7 +445,7 @@ The permission entries will be modified as follows:
 
 2.  Access rights for users without read permissions will be left untouched, and they will continue to be blocked from read rights.
 
-3.  For users with custom roles, if access rights are not ReadItems, CreateSubfolders, FolderContact, or FolderVisible, they will be removed. In the event that the users don't have any access rights from the allowed list after filtering, these users' access right will be set to ‘None’.
+3.  For users with custom roles, if access rights are not ReadItems, CreateSubfolders, FolderContact, or FolderVisible, they will be removed. In the event that the users don't have any access rights from the allowed list after filtering, these users' access right will be set to 'None'.
 
 There might be an interruption in sending emails to mail-enabled public folders during the time between when the folders are mail-disabled and their SMTP addresses are added to Office 365 Groups.
 

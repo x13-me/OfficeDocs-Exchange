@@ -27,7 +27,7 @@ In these scenarios, the Managed Folder Assistant can correctly process an item t
 
 
 > [!WARNING]
-> To keep retention tags and retention policies synchronized between two organizations, every time you make changes to a retention tag or policy in the source organization, you must perform this procedure to export retention tags and policies from the source organization and import them in the destination organization.<BR>You can’t select specific retention tags or policies to export. The Export-RetentionTags.ps1 script exports all retention tags and policies from an organization.
+> To keep retention tags and retention policies synchronized between two organizations, every time you make changes to a retention tag or policy in the source organization, you must perform this procedure to export retention tags and policies from the source organization and import them in the destination organization.<BR>You can't select specific retention tags or policies to export. The Export-RetentionTags.ps1 script exports all retention tags and policies from an organization.
 
 
 

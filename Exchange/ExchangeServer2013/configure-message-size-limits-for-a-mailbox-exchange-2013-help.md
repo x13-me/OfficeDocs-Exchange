@@ -71,7 +71,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://technet
 
 ## How do you know this worked?
 
-To verify that you’ve successfully configured message size limits for a mailbox, do one of the following:
+To verify that you've successfully configured message size limits for a mailbox, do one of the following:
 
 1.  In the EAC, navigate to **Recipients** \> **Mailboxes**.
 

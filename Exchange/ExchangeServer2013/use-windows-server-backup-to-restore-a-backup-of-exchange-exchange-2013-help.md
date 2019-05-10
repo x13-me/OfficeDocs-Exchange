@@ -39,7 +39,7 @@ You can use Windows Server Backup to back up and restore Exchange databases. Exc
 
 2.  Select **Local Backup**.
 
-3.  In the Actions pane, click **Recover…** to start the Recovery Wizard.
+3.  In the Actions pane, click **Recover...** to start the Recovery Wizard.
 
 4.  On the **Getting Started** page, do either of the following:
     

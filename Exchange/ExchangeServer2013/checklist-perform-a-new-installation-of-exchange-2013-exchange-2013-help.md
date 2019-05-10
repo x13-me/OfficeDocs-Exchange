@@ -145,7 +145,7 @@ This checklist is generic in that it provides guidance for a typical scenario.
 <td><p>15. Configure additional Unified Messaging and Lync Server settings.</p>
 
 > [!NOTE]
-> This step is optional. It's only necessary if you’ve configured Unified Messaging in your organization and want to integrate it with Lync Server.
+> This step is optional. It's only necessary if you've configured Unified Messaging in your organization and want to integrate it with Lync Server.
 
 
 </td>

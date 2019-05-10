@@ -15,11 +15,11 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server_
 
 
-Microsoft Exchange Server 2013 Setup has detected that you’re attempting to install the Client Access server role; however, the role is already installed on the computer.
+Microsoft Exchange Server 2013 Setup has detected that you're attempting to install the Client Access server role; however, the role is already installed on the computer.
 
 If you want to reinstall the Client Access server role, you must first uninstall Exchange and then install the Client Access server role.
 
-You may also receive this message if a previous installation of Exchange didn’t complete successfully. If this happens, uninstall Exchange and then reinstall the Client Access server role. If the installation continues to fail, do the following:
+You may also receive this message if a previous installation of Exchange didn't complete successfully. If this happens, uninstall Exchange and then reinstall the Client Access server role. If the installation continues to fail, do the following:
 
   - Make sure that your organization and the computer you're installing Exchange on meet the [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
 
@@ -33,5 +33,5 @@ You may also receive this message if a previous installation of Exchange didn’
 
   - Search the Internet using your favorite search engine. Be sure to include the title of this topic in your search.
 
-Did you find what you’re looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.
+Did you find what you're looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.
 

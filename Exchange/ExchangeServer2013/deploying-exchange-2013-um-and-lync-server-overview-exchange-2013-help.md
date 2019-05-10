@@ -19,7 +19,7 @@ Unified Messaging (UM) and Microsoft Lync Server can be deployed together to pro
 
 
 > [!TIP]
-> Microsoft Office Communications Server 2007 R2 can also be deployed together with Unified Messaging. In this topic, “Microsoft Lync Server” refers to Microsoft Lync Server 2010 or Microsoft Lync Server 2013.
+> Microsoft Office Communications Server 2007 R2 can also be deployed together with Unified Messaging. In this topic, "Microsoft Lync Server" refers to Microsoft Lync Server 2010 or Microsoft Lync Server 2013.
 
 
 
@@ -75,17 +75,17 @@ You must have a certificate that's trusted by both the computers running Exchang
 
   - On your Lync servers, Client Access servers, Mailbox servers, Mediation Server, and media gateways, import a certificate that's valid and signed by a private or public CA. This should be a trusted third-party commercial certificate or a public key infrastructure (PKI) certificate.
 
-  - It’s less complex if you import the same third-party commercial or PKI certificate to each Exchange server. Also, install this trusted certificate on each computer running Microsoft Lync Server and Mediation Server. This will make your certificate deployment less complicated and reduce the administrative overhead associated with deploying certificates. However, make sure you obtain a trusted certificate that supports subject alternative names (SANs).
+  - It's less complex if you import the same third-party commercial or PKI certificate to each Exchange server. Also, install this trusted certificate on each computer running Microsoft Lync Server and Mediation Server. This will make your certificate deployment less complicated and reduce the administrative overhead associated with deploying certificates. However, make sure you obtain a trusted certificate that supports subject alternative names (SANs).
     
-    When you’re deploying Transport Layer Security (TLS) with UM, the certificates that are used on the Client Access server and the Mailbox server both must contain the local computer's fully qualified domain name (FQDN) in the certificate’s Subject Name. To work around this issue, use a public certificate and import the certificate on all Client Access and Mailbox servers, any VoIP gateways, IP PBXs, and all the Lync servers.
+    When you're deploying Transport Layer Security (TLS) with UM, the certificates that are used on the Client Access server and the Mailbox server both must contain the local computer's fully qualified domain name (FQDN) in the certificate's Subject Name. To work around this issue, use a public certificate and import the certificate on all Client Access and Mailbox servers, any VoIP gateways, IP PBXs, and all the Lync servers.
     
-    If your deployment includes VoIP gateways or IP PBXs, and if you use a SIP secured or Secured dial plan, a trusted certificate is required between the Client Access and Mailbox servers and the VoIP gateways or IP PBXs. A trusted certificate is also required if a direct SIP connection is used. If you use a SIP secured or Secured dial plan, you can use the same trusted certificate on your Lync and Exchange servers that’s used on your VoIP gateways or IP PBXs.
+    If your deployment includes VoIP gateways or IP PBXs, and if you use a SIP secured or Secured dial plan, a trusted certificate is required between the Client Access and Mailbox servers and the VoIP gateways or IP PBXs. A trusted certificate is also required if a direct SIP connection is used. If you use a SIP secured or Secured dial plan, you can use the same trusted certificate on your Lync and Exchange servers that's used on your VoIP gateways or IP PBXs.
 
-  - When you connect Exchange Client Access and Mailbox servers to Microsoft Lync servers or to third-party SIP gateways or Private Branch eXchange (PBX) telephony equipment, you must use a certificate that’s valid and signed by an internal or public, third-party certification authority (CA) to establish secured sessions. You can use a single certificate on all the Client Access and Mailbox servers as long as the certificate has the FQDNs of all the Client Access and Mailbox servers in its SAN list. Or, you can generate a different certificate for each Client Access and Mailbox server, with the FQDN of the local computer present in the subject common name (CN) or SAN list of the certificate for that server. Exchange UM doesn't support wildcard certificates with Microsoft Lync Server.
+  - When you connect Exchange Client Access and Mailbox servers to Microsoft Lync servers or to third-party SIP gateways or Private Branch eXchange (PBX) telephony equipment, you must use a certificate that's valid and signed by an internal or public, third-party certification authority (CA) to establish secured sessions. You can use a single certificate on all the Client Access and Mailbox servers as long as the certificate has the FQDNs of all the Client Access and Mailbox servers in its SAN list. Or, you can generate a different certificate for each Client Access and Mailbox server, with the FQDN of the local computer present in the subject common name (CN) or SAN list of the certificate for that server. Exchange UM doesn't support wildcard certificates with Microsoft Lync Server.
     
-    A non-wildcard Subject Name is required for Lync Server and Exchange to work together. UM and Lync Server use the Subject Name as a way to indicate that they’re trusted SIP peers. Lync Server also needs a non-wildcard Subject Name in some call-routing scenarios. The FQDN must be used as the “Issued to” value.
+    A non-wildcard Subject Name is required for Lync Server and Exchange to work together. UM and Lync Server use the Subject Name as a way to indicate that they're trusted SIP peers. Lync Server also needs a non-wildcard Subject Name in some call-routing scenarios. The FQDN must be used as the "Issued to" value.
     
-    For Exchange UM, it isn’t supported to put a wildcard in the Certificate Name. However, you can put a wildcard in the SAN.
+    For Exchange UM, it isn't supported to put a wildcard in the Certificate Name. However, you can put a wildcard in the SAN.
 
 The following table shows the certificate requirements for installing and configuring certificates for Exchange UM.
 
@@ -104,7 +104,7 @@ The following table shows the certificate requirements for installing and config
 <tbody>
 <tr class="odd">
 <td><p>Client Access and Mailbox on the same server (without Lync 2010 or 2013; non-SIP dial plans)</p></td>
-<td><p>A certificate is required between Client Access and Mailbox servers. This is the same certificate that’s used between the Client Access and Mailbox servers and the VoIP gateway, IP PBX, or SBC.</p></td>
+<td><p>A certificate is required between Client Access and Mailbox servers. This is the same certificate that's used between the Client Access and Mailbox servers and the VoIP gateway, IP PBX, or SBC.</p></td>
 </tr>
 <tr class="even">
 <td><p>Client Access and Mailbox on different servers (without Lync 2010 or 2013; non-SIP dial plans)</p></td>
@@ -136,7 +136,7 @@ You must complete the following steps to configure Unified Messaging to work wit
     
 
     > [!IMPORTANT]
-    > When you’re integrating Exchange UM and Lync Server, you'll probably find it unnecessary to configure dialing rules or dialing rule groups in Exchange UM. Lync Server is designed to perform call routing and number translation for users in your organization, and will also do this when the calls are made by Unified Messaging on behalf of users.
+    > When you're integrating Exchange UM and Lync Server, you'll probably find it unnecessary to configure dialing rules or dialing rule groups in Exchange UM. Lync Server is designed to perform call routing and number translation for users in your organization, and will also do this when the calls are made by Unified Messaging on behalf of users.
 
 
 
@@ -146,7 +146,7 @@ You must complete the following steps to configure Unified Messaging to work wit
     
 
     > [!WARNING]
-    > If you set your security setting to SIP Secured to require encryption for SIP traffic only, this setting is insufficient on a dial plan if the Front End pool is configured to require encryption (which means that the pool requires encryption for both SIP and RTP traffic). When the dial plan and pool security settings aren’t compatible, all calls to Exchange UM from the Front End pool will fail, resulting in an error indicating that you have an “Incompatible security setting”.
+    > If you set your security setting to SIP Secured to require encryption for SIP traffic only, this setting is insufficient on a dial plan if the Front End pool is configured to require encryption (which means that the pool requires encryption for both SIP and RTP traffic). When the dial plan and pool security settings aren't compatible, all calls to Exchange UM from the Front End pool will fail, resulting in an error indicating that you have an "Incompatible security setting".
 
     
     Although a UM dial plan can be configured as SIP secured or Secured, we recommend that you configure the dial plan as Secured to enable Lync Phone Edition devices to work correctly. This is recommended because of the default encryption level settings configured in Lync Server. A Lync Phone Edition device will work only if the encryption settings are configured as shown in the following table. This table shows the relationship between the encryption settings for Lync Server and UM dial plans.
@@ -192,7 +192,7 @@ You must complete the following steps to configure Unified Messaging to work wit
     
 
     > [!IMPORTANT]
-    > Users who are associated with a SIP URI dial plan can’t receive incoming faxes. This is because incoming voice and fax calls are routed through a Mediation Server and faxing isn't supported when using a Mediation Server.
+    > Users who are associated with a SIP URI dial plan can't receive incoming faxes. This is because incoming voice and fax calls are routed through a Mediation Server and faxing isn't supported when using a Mediation Server.
 
 
 
@@ -208,7 +208,7 @@ You must complete the following steps to configure Unified Messaging to work wit
 
 You must also complete the following tasks to configure Lync Server to work with Exchange UM:
 
-  - Create location profiles or Lync dial plans. The location profile name doesn’t have to match the FQDN of the corresponding UM dial plans.
+  - Create location profiles or Lync dial plans. The location profile name doesn't have to match the FQDN of the corresponding UM dial plans.
 
   - Assign location profiles to the Lync Server pools.
 
@@ -230,7 +230,7 @@ After you configure the Lync Server and the Unified Messaging servers, you must 
 
 
 > [!IMPORTANT]
-> When you’re integrating Unified Messaging and Lync Server, missed call notifications aren’t available to users who have a mailbox located on an Exchange 2007 or Exchange 2010 Mailbox server. A missed call notification is generated when a user disconnects before the call is sent to a Mailbox server.
+> When you're integrating Unified Messaging and Lync Server, missed call notifications aren't available to users who have a mailbox located on an Exchange 2007 or Exchange 2010 Mailbox server. A missed call notification is generated when a user disconnects before the call is sent to a Mailbox server.
 
 
 

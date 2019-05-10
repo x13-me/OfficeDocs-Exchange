@@ -143,7 +143,7 @@ You will need to license the users after they're created. You have 30 days to ad
 ## Create a list of mailboxes to migrate
 <a name="BKMK_Step3"> </a>
 
-After you identify the users whose on-premises mailboxes you want to migrate to Office 365, you'll use a comma separated value (CSV ) file to create a migration batch. Each row in the CSV file—used by Office 365 to run the migration—contains information about an on-premises mailbox.
+After you identify the users whose on-premises mailboxes you want to migrate to Office 365, you'll use a comma separated value (CSV ) file to create a migration batch. Each row in the CSV file (used by Office 365 to run the migration) contains information about an on-premises mailbox.
 
 > [!NOTE]
 > There isn't a limit for the number of mailboxes that you can migrate to Office 365 using a staged migration. The CSV file for a migration batch can contain a maximum of 2,000 rows. To migrate more than 2,000 mailboxes, create additional CSV files and use each file to create a new migration batch.
@@ -232,7 +232,7 @@ You create and then run a migration batch to migrate mailboxes to Office 365.
 
 ### Create a staged migration batch
 
-For a staged migration, you migrate mailboxes in batches—one batch for each CSV file you created.
+For a staged migration, you migrate mailboxes in batches: one batch for each CSV file you created.
 
  **To create a staged migration batch**
 
@@ -246,37 +246,37 @@ For a staged migration, you migrate mailboxes in batches—one batch for each CS
 
 4. On the **Select the users** page, choose **Browse** and select the CSV file to use for this migration batch.
 
-    After you select a CSV file, Office 365 checks the CSV file to make sure that:
+   After you select a CSV file, Office 365 checks the CSV file to make sure that:
 
-  - It isn't empty.
+   - It isn't empty.
 
-  - It uses comma-separated formatting.
+   - It uses comma-separated formatting.
 
-  - It doesn't contain more than 2,000 rows.
+   - It doesn't contain more than 2,000 rows.
 
-  - It includes the required **EmailAddress** column in the header row.
+   - It includes the required **EmailAddress** column in the header row.
 
-  - All rows have the same number of columns as the header row.
+   - All rows have the same number of columns as the header row.
 
-    If any one of these checks fails, you'll get an error that describes the reason for the failure. At this point, you must fix any errors in the CSV file and resubmit it to create a migration batch. After the CSV file is validated, the number of users listed in the CSV file is displayed as the number of mailboxes to migrate.
+   If any one of these checks fails, you'll get an error that describes the reason for the failure. At this point, you must fix any errors in the CSV file and resubmit it to create a migration batch. After the CSV file is validated, the number of users listed in the CSV file is displayed as the number of mailboxes to migrate.
 
 5. Choose **next**.
 
 6. On the **Confirm the migration endpoint** page, verify the migration endpoint information that is listed and then choose **next**.
 
-    ![New migration batch with confirmed endpoint.](../media/1c7ff17e-6754-4c98-8b29-5a479239df13.JPG)
+   ![New migration batch with confirmed endpoint.](../media/1c7ff17e-6754-4c98-8b29-5a479239df13.JPG)
 
 7. On the **Move configuration** page, type the name (no spaces or special characters) of the migration batch, and then choose **next**. This name is displayed in the list of migration batches on the **Migration** page after you create the migration batch.
 
 8. On the **Start the batch** page, choose one of the following:
 
-  - **Automatically start the batch**: The migration batch is started as soon as you save the new migration batch. The batch starts with a status of **Syncing**.
+   - **Automatically start the batch**: The migration batch is started as soon as you save the new migration batch. The batch starts with a status of **Syncing**.
 
-  - **Manually start the batch later**: The migration batch is created but not started. The status of the batch is set to **Created**. To start a migration batch, select it on the migration dashboard and then choose **Start**.
+   - **Manually start the batch later**: The migration batch is created but not started. The status of the batch is set to **Created**. To start a migration batch, select it on the migration dashboard and then choose **Start**.
 
 9. Choose **new** to create the migration batch.
 
-    The new migration batch is displayed on the migration dashboard.
+   The new migration batch is displayed on the migration dashboard.
 
 ### Start the staged migration batch
 <a name="StartMigBatch"> </a>
@@ -291,7 +291,7 @@ If you created a migration batch and configured it to be manually started, you c
 
 3. If a migration batch starts successfully, its status on the migration dashboard changes to **Syncing**.
 
-    ![Micgration batch is syncing](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
+   ![Micgration batch is syncing](../media/c6789813-6822-4a28-a47c-2c62e1da9b8c.png)
 
 ### Verify the migration step worked
 <a name="StartMigBatch"> </a>
@@ -325,13 +325,13 @@ When you're done migrating everyone to Office 365, you'll be ready to start send
 ## Optional: Reduce email delays
 <a name="BKMK_Step13"> </a>
 
- You don't need to do this task, but if you skip it, it might take longer for email to start showing up in the new Office 365 mailboxes.
+You don't need to do this task, but if you skip it, it might take longer for email to start showing up in the new Office 365 mailboxes.
 
 When people outside of your organization send you email, their email systems don't double-check where to send that email every time. Instead, their systems save the location of your email system based on a setting in your DNS server known as a time-to-live (TTL). If you change the location of your email system before the TTL expires, they'll try to send you email at the old location first before figuring out that the location changed. This can result in a mail delivery delay. One way to avoid this is to lower the TTL that your DNS server gives to servers outside of your organization. This will make the other organizations refresh the location of your email system more often.
 
 Using a short interval, such as 3,600 seconds (one hour) or less, means that most email systems will ask for an updated location every hour. We recommend that you set the interval at least this low before you start the email migration. This allows all the systems that send you email enough time to process the change. Then, when you make the final switch over to Office 365, you can change the TTL back to a longer interval.
 
- *The place to change the TTL setting is on your email system's mail exchanger record, also called an MX record*. This lives on your public facing DNS system. If you have more than one MX record, you need to change the value on each record to 3,600 or less.
+*The place to change the TTL setting is on your email system's mail exchanger record, also called an MX record*. This lives on your public facing DNS system. If you have more than one MX record, you need to change the value on each record to 3,600 or less.
 
 If you need some help configuring your DNS settings, go to our [Create DNS records at any DNS hosting provider for Office 365](https://support.office.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166).
 
@@ -355,13 +355,13 @@ After you change the MX record and verify that all email is being routed to Offi
 
 When you delete a staged migration batch, the migration service cleans up any records related to the migration batch and then deletes the migration batch. The batch is removed from the list of migration batches on the migration dashboard.
 
- **To delete the staged migration batch**
+### To delete the staged migration batch*
 
 1. In the Exchange admin center, go to **Recipients** \> **Migration**.
 
 2. On the migration dashboard, select the batch, and then choose **Delete**.
 
-    It might take a few minutes for the batch to get deleted.
+   It might take a few minutes for the batch to get deleted.
 
 3. In the Exchange admin center, go to **Recipients** \> **Migration**.
 
@@ -372,30 +372,30 @@ When you delete a staged migration batch, the migration service cleans up any re
 
 After migrating mailboxes to Office 365, there are post-migration tasks that must be completed.
 
- **To complete post-migration tasks**
+### To complete post-migration tasks
 
 1. **Activate Office 365 user accounts for the migrated accounts by assigning licenses**: If you don't assign a license, the mailbox is disabled when the grace period (30 days) ends. To assign a license in the Microsoft 365 admin center, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
 
 2. **Create an Autodiscover DNS record so users can easily get to their mailboxes**: After all on-premises mailboxes are migrated to Office 365, you can configure an Autodiscover DNS record for your Office 365 organization to enable users to easily connect to their new Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com.
 
-    Office 365 uses a CNAME record to implement the Autodiscover service for Outlook and mobile clients. The Autodiscover CNAME record must contain the following information:
+   Office 365 uses a CNAME record to implement the Autodiscover service for Outlook and mobile clients. The Autodiscover CNAME record must contain the following information:
 
-  - **Alias**:autodiscover
+   - **Alias**:autodiscover
 
-  - **Target**:autodiscover.outlook.com
+   - **Target**:autodiscover.outlook.com
 
     For more information, see [Create DNS records for Office 365 when you manage your DNS records](https://support.office.com/article/0669bf14-414d-4f51-8231-6b710ce7980b).
 
 3. **Decommission on-premises Exchange servers**: After you've verified that all email is being routed directly to the Office 365 mailboxes, have completed the migration, and no longer need to maintain your on-premises email organization, you can uninstall Exchange.
 
-    For more information, see the following:
+   For more information, see the following:
 
-  - [How to Remove an Exchange 2007 Organization](https://go.microsoft.com/fwlink/p/?LinkID=100485)
+   - [How to Remove an Exchange 2007 Organization](https://go.microsoft.com/fwlink/p/?LinkID=100485)
 
-  - [How to Uninstall Exchange Server 2003](https://go.microsoft.com/fwlink/p/?LinkID=56561)
+   - [How to Uninstall Exchange Server 2003](https://go.microsoft.com/fwlink/p/?LinkID=56561)
 
-    > [!NOTE]
-    > Decommissioning Exchange can have unintended consequences. Before decommissioning your on-premises Exchange organization, we recommend that you contact Microsoft Support.
+   > [!NOTE]
+   > Decommissioning Exchange can have unintended consequences. Before decommissioning your on-premises Exchange organization, we recommend that you contact Microsoft Support.
 
 ## See also
 <a name="PostMigrationstaged"> </a>
@@ -403,5 +403,3 @@ After migrating mailboxes to Office 365, there are post-migration tasks that mus
 [What you need to know about a staged email migration to Office 365](../what-to-know-about-a-staged-migration.md)
 
 [Ways to migrate email to Office 365](../mailbox-migration.md)
-
-

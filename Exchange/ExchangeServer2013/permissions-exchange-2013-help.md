@@ -285,7 +285,7 @@ The following table contains links to topics that will help you learn about and 
 <tbody>
 <tr class="odd">
 <td><p><a href="understanding-role-based-access-control-exchange-2013-help.md">Understanding Role Based Access Control</a></p></td>
-<td><p>Learn about each of the components that make up RBAC and how you can create advanced permissions models if role groups and management roles aren’t enough.</p></td>
+<td><p>Learn about each of the components that make up RBAC and how you can create advanced permissions models if role groups and management roles aren't enough.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="understanding-multiple-forest-permissions-exchange-2013-help.md">Understanding multiple-forest permissions</a></p></td>
@@ -305,7 +305,7 @@ The following table contains links to topics that will help you learn about and 
 </tr>
 <tr class="even">
 <td><p><a href="manage-role-group-members-exchange-2013-help.md">Manage role group members</a></p></td>
-<td><p>Add members to and from role groups. By adding and removing members to and from role groups, you configure who’s able to administer Exchange features.</p></td>
+<td><p>Add members to and from role groups. By adding and removing members to and from role groups, you configure who's able to administer Exchange features.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="manage-linked-role-groups-exchange-2013-help.md">Manage linked role groups</a></p></td>

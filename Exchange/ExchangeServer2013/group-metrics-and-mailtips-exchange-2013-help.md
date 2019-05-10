@@ -29,7 +29,7 @@ Group metrics data is used by the following MailTips:
 
   - **External Recipients**   This MailTip is displayed when a sender adds a distribution group that has members who are external to your organization.
 
-MailTips are evaluated every time a sender adds a recipient to a message. To provide this information, Exchange calculates group metrics data as a background process that can be scheduled to run outside of your organization’s regular business hours. When evaluating recipients for MailTips, Exchange reads group metrics data.
+MailTips are evaluated every time a sender adds a recipient to a message. To provide this information, Exchange calculates group metrics data as a background process that can be scheduled to run outside of your organization's regular business hours. When evaluating recipients for MailTips, Exchange reads group metrics data.
 
 ## Group Metrics generation
 

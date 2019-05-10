@@ -88,7 +88,7 @@ This example creates the DAG DAG1 that's configured to use the witness server FI
 New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer FILESRV1 -WitnessDirectory C:\DAG1
 ```
 
-This example creates the DAG DAG2. The system automatically selects a Client Access server in the local Active Directory site that does not contain the Mailbox server role as the DAG’s witness server. DAG2 is assigned a single static IP address because in this example all DAG members have the MAPI network on the same subnet.
+This example creates the DAG DAG2. The system automatically selects a Client Access server in the local Active Directory site that does not contain the Mailbox server role as the DAG's witness server. DAG2 is assigned a single static IP address because in this example all DAG members have the MAPI network on the same subnet.
 
 ```powershell
 New-DatabaseAvailabilityGroup -Name DAG2 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8

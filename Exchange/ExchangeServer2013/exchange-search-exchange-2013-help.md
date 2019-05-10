@@ -27,7 +27,7 @@ For more information about Exchange Search, see:
 
 Looking for management tasks related to Exchange Search? See [Exchange Search procedures](exchange-search-procedures-exchange-2013-help.md).
 
-## What’s New
+## What's New
 
 Exchange 2013 introduces the following changes to Exchange Search:
 

@@ -19,7 +19,7 @@ Information workers frequently need to collaborate with external recipients, ven
 
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn’t fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
+> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
 
 
 
@@ -106,7 +106,7 @@ The following table defines the core components associated with federation in Ex
 <!-- end list -->
 
   - **organization identifier (OrgID)**  
-    Defines which of the authoritative accepted domains configured in an organization are enabled for federation. Only recipients that have e-mail addresses with federated domains configured in the OrgID are recognized by the Azure Active Directory authentication system and are able to use federated sharing features. The OrgID is a combination of a pre-defined string and the first accepted domain selected for federation in the **Enable federation trust** wizard. For example, if you specify the federated domain contoso.com as your organization’s primary SMTP domain, the account namespace FYDIBOHF25SPDLT.contoso.com will be automatically created as the OrgID for the federation trust.
+    Defines which of the authoritative accepted domains configured in an organization are enabled for federation. Only recipients that have e-mail addresses with federated domains configured in the OrgID are recognized by the Azure Active Directory authentication system and are able to use federated sharing features. The OrgID is a combination of a pre-defined string and the first accepted domain selected for federation in the **Enable federation trust** wizard. For example, if you specify the federated domain contoso.com as your organization's primary SMTP domain, the account namespace FYDIBOHF25SPDLT.contoso.com will be automatically created as the OrgID for the federation trust.
 
 <!-- end list -->
 
@@ -136,7 +136,7 @@ Return to top
 
 The *federated organization identifier* (OrgID) defines which of the authoritative accepted domains configured in your organization are enabled for federation. Only recipients that have e-mail addresses with accepted domains configured in the OrgID are recognized by the Azure AD authentication system and are able to use federated sharing features. When you create a new federation trust, an OrgID is automatically created with the Azure AD authentication system. This OrgID is a combination of a pre-defined string and the accepted domain selected as the primary shared domain in the wizard. For example, in the Edit Sharing-Enabled Domains wizard, if you specify the federated domain **contoso.com** as the primary shared domain in your organization, the **FYDIBOHF25SPDLT.contoso.com** account namespace will be automatically created as the OrgID for the federation trust for your Exchange organization.
 
-Although typically the primary SMTP domain for the Exchange organization, this domain doesn’t have to be an accepted domain in your Exchange organization and doesn’t require a domain name system (DNS) proof of ownership TXT record. The only requirement is that accepted domains selected to be federated are limited to a maximum of 32 characters. The only purpose of this subdomain is to serve as the federated namespace for the Azure AD authentication system to maintain unique identifiers for recipients that request SAML delegation tokens. For more information about SAML tokens, see [SAML Tokens and Claims](https://go.microsoft.com/fwlink/?linkid=198561)
+Although typically the primary SMTP domain for the Exchange organization, this domain doesn't have to be an accepted domain in your Exchange organization and doesn't require a domain name system (DNS) proof of ownership TXT record. The only requirement is that accepted domains selected to be federated are limited to a maximum of 32 characters. The only purpose of this subdomain is to serve as the federated namespace for the Azure AD authentication system to maintain unique identifiers for recipients that request SAML delegation tokens. For more information about SAML tokens, see [SAML Tokens and Claims](https://go.microsoft.com/fwlink/?linkid=198561)
 
 You can add or remove accepted domains from the federation trust at any time. If you want to enable or disable all federation sharing features in your organization, all you have to do is enable or disable the OrgID for the federation trust.
 

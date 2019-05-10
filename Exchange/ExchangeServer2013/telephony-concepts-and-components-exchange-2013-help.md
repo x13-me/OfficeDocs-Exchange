@@ -97,7 +97,7 @@ Packet-switched networks exist to enable data communication on the Internet thro
 
 Packet-switched networks are also found in such network environments as LAN and WAN networks. A WAN packet-switched environment relies on telephone circuits, but the circuits are arranged so that they retain a permanent connection with their endpoint. In a LAN packet-switched environment, such as with an Ethernet network, the transmission of the data packets relies on packet switches, routers, and LAN cables. In a LAN, the switch establishes a connection between two segments only long enough to send the current packet. Incoming packets are saved to a temporary memory area or buffer in memory. In an Ethernet-based LAN, an Ethernet frame contains the payload or data portion of the packet and a special header that includes the media access control (MAC) address information for the source and destination of the packet. When the packets arrive at their destination, they are put back in order by a packet assembler. A packet assembler is needed because of the different routes that the packets may take.
 
-Packet-switched networking has made it possible for the Internet to exist and, at the same time, has made data networks—especially LAN-based IP networks—more available and widespread.
+Packet-switched networking has made it possible for the Internet to exist and, at the same time, has made data networks (especially LAN-based IP networks) more available and widespread.
 
 Return to top
 
@@ -145,7 +145,7 @@ A SIP-enabled PBX is a telephony device that acts as a networking switch for swi
 
 SIP-enabled PBXs use a format for calls that includes a SIP URI containing a global E.164 number and the "user=phone" parameter. For example: sip:+14255551234@contoso.com;user=phone
 
-The E164 number begins with a leading "+", and doesn’t contain a phone-context parameter or any separators. SIP-enabled PBXs support both TCP and UDP. UDP is still widely used with legacy systems. SIP-enabled PBXs also support Mutual Transport Layer Security (mutual TLS) and DNS lookups.
+The E164 number begins with a leading "+", and doesn't contain a phone-context parameter or any separators. SIP-enabled PBXs support both TCP and UDP. UDP is still widely used with legacy systems. SIP-enabled PBXs also support Mutual Transport Layer Security (mutual TLS) and DNS lookups.
 
 ## VoIP
 

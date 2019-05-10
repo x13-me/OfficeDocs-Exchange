@@ -23,7 +23,7 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
   - Estimated time to complete each procedure: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 settings" and “IMAP4 settings” entries in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 settings" and "IMAP4 settings" entries in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -124,7 +124,7 @@ For more information about syntax and parameters, see [Set-PopSettings](https://
 
 ## How do you know this worked?
 
-Do the following to verify that you’ve successfully set POP3 message retrieval settings on a server.
+Do the following to verify that you've successfully set POP3 message retrieval settings on a server.
 
 1.  Run the following command in the Shell.
     
@@ -223,7 +223,7 @@ For more information about syntax and parameters, see [Set-ImapSettings](https:/
 
 ## How do you know this worked?
 
-Do the following to verify that you’ve successfully set IMAP4 message retrieval settings on a server.
+Do the following to verify that you've successfully set IMAP4 message retrieval settings on a server.
 
 1.  Run the following command in the Shell.
     
@@ -294,7 +294,7 @@ For more information about syntax and parameters, see [Set-CASMailbox](https://t
 
 ## How do you know this worked?
 
-Do the following to verify that you’ve successfully set POP3 message retrieval format options for a user.
+Do the following to verify that you've successfully set POP3 message retrieval format options for a user.
 
 1.  Run the following command in the Shell.
     
@@ -365,7 +365,7 @@ For more information about syntax and parameters, see [Set-CASMailbox](https://t
 
 ## How do you know this worked?
 
-Do the following to verify that you’ve successfully set IMAP4 message retrieval format options for a user.
+Do the following to verify that you've successfully set IMAP4 message retrieval format options for a user.
 
 1.  Run the following command in the Shell.
     

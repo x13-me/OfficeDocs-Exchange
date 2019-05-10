@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-You can remove Client Access and Mailbox servers from SIP URI dial plans. When you’re deploying Microsoft Lync Server, to enable outbound calling to work correctly, you must manually add all Client Access and Mailbox servers to the SIP URI dial plans that you’ve created for Lync Server. However, you may need to remove a Client Access or Mailbox server from your Lync deployment, for example, if you’re performing maintenance or taking the server offline.
+You can remove Client Access and Mailbox servers from SIP URI dial plans. When you're deploying Microsoft Lync Server, to enable outbound calling to work correctly, you must manually add all Client Access and Mailbox servers to the SIP URI dial plans that you've created for Lync Server. However, you may need to remove a Client Access or Mailbox server from your Lync deployment, for example, if you're performing maintenance or taking the server offline.
 
 For additional management tasks related to UM dial plans, see [UM dial plan procedures](um-dial-plan-procedures-exchange-2013-help.md).
 

@@ -65,7 +65,7 @@ For more information about preparing for cross-forest moves, including descripti
     
       - Microsoft.Exchange.Sample.OneWayGALSync.MVRules.dll
 
-3.  Edit the file OneWaySync.xml that you copied to the ILM Extensions folder in step 1 to specify the distinguishedName (DN) of the TargetOU container in the target Exchange forest in which you want to create the mail users. You can use LDP.exe or ADSIEdit.exe to browse for the TargetOU container if you don’t know what its name is.
+3.  Edit the file OneWaySync.xml that you copied to the ILM Extensions folder in step 1 to specify the distinguishedName (DN) of the TargetOU container in the target Exchange forest in which you want to create the mail users. You can use LDP.exe or ADSIEdit.exe to browse for the TargetOU container if you don't know what its name is.
     
 
     > [!NOTE]

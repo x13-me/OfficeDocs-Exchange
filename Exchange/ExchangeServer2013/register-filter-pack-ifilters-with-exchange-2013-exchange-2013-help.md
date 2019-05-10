@@ -47,13 +47,13 @@ For additional management tasks related to Transport rules, see [Manage mail flo
 
 ## Register the Microsoft Office 2010 Filter Pack
 
-By default, the following Office file types aren’t supported by Exchange transport rules:
+By default, the following Office file types aren't supported by Exchange transport rules:
 
   - Office OneNote
 
   - Office Publisher
 
-If you want to support these files, you must deploy the Microsoft Office 2010 Filter Pack. This Filter Pack isn’t deployed during Exchange 2013 Setup and isn’t a prerequisite for deployment.
+If you want to support these files, you must deploy the Microsoft Office 2010 Filter Pack. This Filter Pack isn't deployed during Exchange 2013 Setup and isn't a prerequisite for deployment.
 
 ## Deploy the Microsoft Office 2010 Filter Pack
 
@@ -161,7 +161,7 @@ You can extend the attachment scanning capability for additional file types by r
 
 
 > [!IMPORTANT]
-> Microsoft hasn’t tested third-party IFilters with transport rules, therefore we recommend that you deploy and test any third-party IFilters in a test environment before deploying into your production environment.
+> Microsoft hasn't tested third-party IFilters with transport rules, therefore we recommend that you deploy and test any third-party IFilters in a test environment before deploying into your production environment.
 
 
 

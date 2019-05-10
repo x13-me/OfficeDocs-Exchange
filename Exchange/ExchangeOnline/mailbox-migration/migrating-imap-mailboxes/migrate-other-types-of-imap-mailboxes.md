@@ -110,7 +110,7 @@ For more information, see [CSV files for IMAP migration batches](csv-files-for-i
 
    - **Column A** is the email address of the Office 365 mailbox. This is what is shown in the **username** column under **Users** \> **Active users** in the Microsoft 365 admin center.
 
-   - **Column B** is the sign-in name—for example, alberta, or often, alberta@contoso.com—for the user's mailbox on the source email system.
+   - **Column B** is the sign-in name (for example, alberta, or often, alberta@contoso.com) for the user's mailbox on the source email system.
 
      > [!NOTE]
      > A lot of email systems use the entire email address as the sign-in name. Note also, if you are using the same domain in Office 365 and your source email system, the columns A and B can be identical.

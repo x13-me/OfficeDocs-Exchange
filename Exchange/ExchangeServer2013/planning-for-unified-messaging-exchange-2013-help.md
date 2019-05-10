@@ -17,7 +17,7 @@ _**Applies to:** Exchange Server 2013_
 
 When you plan your Unified Messaging (UM) deployment, there are many factors that you must consider to be able to successfully deploy UM. You must understand the different elements of Unified Messaging and each component and feature so that you can plan your Unified Messaging infrastructure and deployment appropriately. Allocating time to plan and work through these issues will help prevent problems when you deploy Unified Messaging in your organization.
 
-You may be deploying Unified Messaging in a new Exchange organization or upgrading from a legacy or third-party voice mail solution. If you’re upgrading, you need to decide whether to convert the devices that are accepting telephony circuit-based protocols to a data network using IP or whether to deploy an Enterprise Voice solution like Microsoft Lync Server. This is just the first step in preparing yourself to understand and deploy UM for your organization.
+You may be deploying Unified Messaging in a new Exchange organization or upgrading from a legacy or third-party voice mail solution. If you're upgrading, you need to decide whether to convert the devices that are accepting telephony circuit-based protocols to a data network using IP or whether to deploy an Enterprise Voice solution like Microsoft Lync Server. This is just the first step in preparing yourself to understand and deploy UM for your organization.
 
 ## Planning your voice mail system
 
@@ -25,11 +25,11 @@ UM provides voice mail, fax, and email messaging in one store that can be access
 
 Client Access servers running the Microsoft Exchange Unified Messaging Call Router service and Mailbox servers running the Microsoft Exchange Unified Messaging service are designed to provide voice mail features for users in your organization.
 
-Mailbox servers rely on Client Access servers to forward SIP traffic from incoming calls and then establish a connection with a VoIP gateway, IP PBX, or Session Border Controller (SBC) and accept the RTP/SRTP media traffic. All voice mail and fax messages are submitted from the Microsoft Exchange Unified Messaging service on a Mailbox server to be delivered to the user’s mailbox. For a user to use the voice mail features with Unified Messaging, they must have an Exchange mailbox.
+Mailbox servers rely on Client Access servers to forward SIP traffic from incoming calls and then establish a connection with a VoIP gateway, IP PBX, or Session Border Controller (SBC) and accept the RTP/SRTP media traffic. All voice mail and fax messages are submitted from the Microsoft Exchange Unified Messaging service on a Mailbox server to be delivered to the user's mailbox. For a user to use the voice mail features with Unified Messaging, they must have an Exchange mailbox.
 
 ## Planning your UM deployment
 
-Generally, the simpler the Unified Messaging topology, the easier UM is to deploy and maintain. Install as few Client Access and Mailbox servers and create as few Unified Messaging components—like UM dial plans, auto attendants, and UM mailbox policies—as you need to support your business and organizational goals. Large enterprises with complex network and telephony environments, multiple business units, or other complexities will require more planning than smaller organizations with relatively straightforward Unified Messaging needs.
+Generally, the simpler the Unified Messaging topology, the easier UM is to deploy and maintain. Install as few Client Access and Mailbox servers and create as few Unified Messaging components (like UM dial plans, auto attendants, and UM mailbox policies) as you need to support your business and organizational goals. Large enterprises with complex network and telephony environments, multiple business units, or other complexities will require more planning than smaller organizations with relatively straightforward Unified Messaging needs.
 
 The following are some of the areas that you should consider when planning for Unified Messaging in your organization:
 
@@ -49,7 +49,7 @@ The following are some of the areas that you should consider when planning for U
     
       - Which UM features and services you want to deploy, such as concurrent calls, internal and external access for users, incoming faxing, Voice Mail Preview, and so on.
     
-      - The number of Client Access and Mailbox servers you’ll need to deploy.
+      - The number of Client Access and Mailbox servers you'll need to deploy.
     
       - The storage requirements and quotas for voice mail users.
     

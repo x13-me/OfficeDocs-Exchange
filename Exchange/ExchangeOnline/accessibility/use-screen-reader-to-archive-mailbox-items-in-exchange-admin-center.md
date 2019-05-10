@@ -96,7 +96,7 @@ If you disable a user's archive, the existing content is retained for 30 days. T
 
 ## Apply a retention policy to a user
 
-The messaging records management (MRM) feature in Exchange Online helps you manage the life cycle of your organization's email; it allows you to set retention policies. Retention policies specify when certain types of mailbox items—including regular email messages, deleted items, and junk mail—should be moved, archived, or deleted. Exchange Online automatically applies the Default MRM Policy when you create a new mailbox with an archive or when you enable an archive for an existing mailbox user.
+The messaging records management (MRM) feature in Exchange Online helps you manage the life cycle of your organization's email; it allows you to set retention policies. Retention policies specify when certain types of mailbox items (including regular email messages, deleted items, and junk mail) should be moved, archived, or deleted. Exchange Online automatically applies the Default MRM Policy when you create a new mailbox with an archive or when you enable an archive for an existing mailbox user.
 
  **Note**: You can customize the Default MRM Policy by adding or removing retention tags or by modifying tag settings. You can also replace the default policy with any retention policies you create. To view, edit, or create a retention policy, on the EAC primary navigation pane, select the compliance management link and then, on the menu bar, select the retention policies link. [Learn more about retention policies](https://go.microsoft.com/fwlink/p/?LinkId=799151).
 

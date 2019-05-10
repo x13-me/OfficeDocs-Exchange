@@ -21,7 +21,7 @@ Looking for a list of all server health and performance topics? See Server healt
 
 ## Managed availability
 
-Exchange 2013 introduces the concept of *managed availability*. Managed availability runs on every Exchange 2013 server. It’s made up of two processes, the Exchange Health Manager Service (MSExchangeHMHost.exe) and the Exchange Health Manager Worker process (MSExchangeHMWorker.exe), and the following asynchronous components:
+Exchange 2013 introduces the concept of *managed availability*. Managed availability runs on every Exchange 2013 server. It's made up of two processes, the Exchange Health Manager Service (MSExchangeHMHost.exe) and the Exchange Health Manager Worker process (MSExchangeHMWorker.exe), and the following asynchronous components:
 
   - **Probe engine**   The *probe engine* takes measurements on the server.
 

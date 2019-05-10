@@ -51,5 +51,5 @@ You may want to configure an accepted domain for a business unit with email serv
 
 ## How do you know this worked?
 
-To verify that you have successfully configured an accepted domain as an external relay domain, send a message from the accepted domain you’ve configured as an external relay domain, and verify that it is received.
+To verify that you have successfully configured an accepted domain as an external relay domain, send a message from the accepted domain you've configured as an external relay domain, and verify that it is received.
 

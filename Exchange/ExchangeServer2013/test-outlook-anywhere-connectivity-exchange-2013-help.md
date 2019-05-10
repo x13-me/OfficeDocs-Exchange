@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-You can test for end-to-end client Outlook Anywhere connectivity by using either the Shell or the Exchange Remote Connectivity Analyzer (ExRCA). This includes testing for connectivity through the Autodiscover service, creating a user profile, and signing in to the user’s mailbox. All the required values are retrieved from the Autodiscover service.
+You can test for end-to-end client Outlook Anywhere connectivity by using either the Shell or the Exchange Remote Connectivity Analyzer (ExRCA). This includes testing for connectivity through the Autodiscover service, creating a user profile, and signing in to the user's mailbox. All the required values are retrieved from the Autodiscover service.
 
 For additional management tasks related to Outlook Anywhere, see [Outlook Anywhere](outlook-anywhere-exchange-2013-help.md).
 

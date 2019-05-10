@@ -25,7 +25,7 @@ The new Exchange OAuth authentication process currently enables the following Ex
 We recommend that all mixed Exchange organizations that implement a hybrid deployment with Exchange 2013 and Exchange Online configure Exchange OAuth authentication after configuring their hybrid deployment with the Hybrid Configuration Wizard.
 
 > [!IMPORTANT]
-> If your on-premises organization is running only Exchange 2013 servers with Cumulative Update 5 or later installed, run the Hybrid Deployment Wizard instead of performing the steps in this topic.<BR>This feature of Exchange Server 2013 isn’t fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
+> If your on-premises organization is running only Exchange 2013 servers with Cumulative Update 5 or later installed, run the Hybrid Deployment Wizard instead of performing the steps in this topic.<BR>This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
 
 ## What do you need to know before you begin?
 
@@ -96,23 +96,16 @@ Next, you have to use Windows PowerShell to upload the on-premises authorization
 2. Save the following text to a PowerShell script file named, for example, **UploadAuthCert.ps1**.
 
    ```powershell
-   #connect to MsolService and import extended module
-   Connect-MsolService;
-   Import-Module MSOnlineExt #or install the module install-module MSOnlineExt
-    
-   #Create new FileSystemObject to get Absolute Path.
-   $objFSO = New-Object -ComObject Scripting.FileSystemObject;
-   $CertFile = $objFSO.GetAbsolutePathName($CertFile);
-    
-   #Create the certificate object to import and read it to set it as $credvalue
+   Connect-MsolService
+   $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
+   $objFSO = New-Object -ComObject Scripting.FileSystemObject
+   $CertFile = $objFSO.GetAbsolutePathName($CertFile)
    $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
-   $cer.Import($CertFile);
-   $binCert = $cer.GetRawCertData();
-   $credValue = [System.Convert]::ToBase64String($binCert);
-    
-   #Get the Msol Service Principal that has the $serviceName        
+   $cer.Import($CertFile)
+   $binCert = $cer.GetRawCertData()
+   $credValue = [System.Convert]::ToBase64String($binCert)
+   $ServiceName = "00000002-0000-0ff1-ce00-000000000000"
    $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
-   #Set up new MsolServicePrincipalCredential
    New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
    ```
 
