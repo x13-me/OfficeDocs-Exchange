@@ -73,15 +73,15 @@ Perform the following procedures to allow XML attachments in Outlook Web App. In
 
 1. Run the following command to add XML to the list of allowed file types in Outlook Web App.
 
-  ```
-  Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -AllowedFileTypes @{add='.xml'}
-  ```
+   ```
+   Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -AllowedFileTypes @{add='.xml'}
+   ```
 
 2. Run the following command to remove XML from the list of blocked file types in Outlook Web App.
 
-  ```
-  Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -BlockedFileTypes @{remove='.xml'}
-  ```
+   ```
+   Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -BlockedFileTypes @{remove='.xml'}
+   ```
 
 ### How do you know this worked?
 
@@ -89,27 +89,27 @@ To verify that you've successfully configured mailbox audit logging, do the foll
 
 1. Run the following command to verify that audit logging is configured for mailboxes.
 
-  ```
-  Get-Mailbox | Format-List Name,AuditEnabled
-  ```
+   ```
+   Get-Mailbox | Format-List Name,AuditEnabled
+   ```
 
-A value of `True` for the _AuditEnabled_ property verifies that audit logging is enabled.
+   A value of `True` for the _AuditEnabled_ property verifies that audit logging is enabled.
 
 2. Run the following command to verify that XML attachments are allowed in Outlook Web App.
 
-  ```
-  Get-OwaMailboxPolicy | Select-Object -ExpandProperty AllowedFileTypes
-  ```
+   ```
+   Get-OwaMailboxPolicy | Select-Object -ExpandProperty AllowedFileTypes
+   ```
 
-Verify that `.xml` is included in the list of allowed file types.
+   Verify that `.xml` is included in the list of allowed file types.
 
 3. Run the following command to verify that XML attachments are removed from the blocked file list in Outlook Web App.
 
-  ```
-  Get-OwaMailboxPolicy | Select-Object -ExpandProperty BlockedFileTypes
-  ```
+   ```
+   Get-OwaMailboxPolicy | Select-Object -ExpandProperty BlockedFileTypes
+   ```
 
-Verify that `.xml` isn't included in the list of blocked file types.
+   Verify that `.xml` isn't included in the list of blocked file types.
 
 ## Export the mailbox audit log
 <a name="exportauditlog"> </a>
@@ -122,21 +122,21 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 3. Configure the following search criteria for exporting the entries from the mailbox audit log:
 
-  - **Start and end dates**: Select the date range for the entries to include in the exported file.
+   - **Start and end dates**: Select the date range for the entries to include in the exported file.
 
-  - **Mailboxes to search audit log for**: Select the mailboxes to retrieve audit log entries for.
+   - **Mailboxes to search audit log for**: Select the mailboxes to retrieve audit log entries for.
 
-  - **Type of non-owner access**: Select one of the following options to define the type of non-owner access to retrieve entries for:
+   - **Type of non-owner access**: Select one of the following options to define the type of non-owner access to retrieve entries for:
 
-    * **All non-owners**: Search for access by administrators and delegated users inside your organization, and by Microsoft datacenter administrators in Exchange Online.
+     - **All non-owners**: Search for access by administrators and delegated users inside your organization, and by Microsoft datacenter administrators in Exchange Online.
 
-    * **External users**: Search for access by Microsoft datacenter administrators.
+     - **External users**: Search for access by Microsoft datacenter administrators.
 
-    * **Administrators and delegated users**: Search for access by administrators and delegated users inside your organization.
+     - **Administrators and delegated users**: Search for access by administrators and delegated users inside your organization.
 
-    * **Administrators**: Search for access by administrators in your organization.
+     - **Administrators**: Search for access by administrators in your organization.
 
-  - **Recipients**: Select the users to send the mailbox audit log to.
+   - **Recipients**: Select the users to send the mailbox audit log to.
 
 4. Click **Export**.
 
@@ -164,34 +164,38 @@ To save and view the SearchResult.xml file:
 ## More information
 <a name="moreinfo"> </a>
 
-- **Entries in the mailbox audit log**: The following example shows an entry from the mailbox audit log contained in the SearchResult.xml file. Each entry is preceded by the **\<Event\>** XML tag and ends with the **\</Event\>** XML tag. This entry shows that the administrator purged the message with the subject, "Notification of litigation hold" from the Recoverable Items folder in David's mailbox on April 30, 2010.
+### Entries in the mailbox audit log
 
-  ```
-  <Event MailboxGuid="6d4fbdae-e3ae-4530-8d0b-f62a14687939"
-    Owner="PPLNSL-dom\david50001-1363917750"
-    LastAccessed="2010-04-30T11:01:55.140625-07:00"
-    Operation="HardDelete"
-    OperationResult="Succeeded"
-    LogonType="Admin"
-   FolderId="0000000073098C3277988F4CB882F5B82EBF64610100A7C317F68C24304BBD18ABE1F185E79B00000026BD4F0000"
-    FolderPathName="\Recoverable Items\Deletions"
-    ClientInfoString="Client=OWA;Action=ViaProxy"
-    ClientIPAddress="10.196.241.168"
-    InternalLogonType="Owner"
-    MailboxOwnerUPN="david@contoso.com"
-    MailboxOwnerSid="S-1-5-21-290112810-296651436-1966561949-1151"
-    CrossMailboxOperation="false"
-    LogonUserDN="Administrator"
-    LogonUserSid="S-1-5-21-290112810-296651436-1966561949-1149">
-    <SourceItems>
-     <ItemId="0000000073098C3277988F4CB882F5B82EBF64610700A7C317F68C24304BBD18ABE1F185E79B00000026BD4F0000A7C317F68C24304BBD18ABE1F185E79B00000026BD540"
-      Subject="Notification of litigation hold"
-      FolderPathName="\Recoverable Items\Deletions" />
-    </SourceItems>
-  </Event>
-  ```
+The following example shows an entry from the mailbox audit log contained in the SearchResult.xml file. Each entry is preceded by the **\<Event\>** XML tag and ends with the **\</Event\>** XML tag. This entry shows that the administrator purged the message with the subject, "Notification of litigation hold" from the Recoverable Items folder in David's mailbox on April 30, 2010.
 
-- **Useful fields in the mailbox audit log**: Here's a description of useful fields in the mailbox audit log. They can help you identify specific information about each instance of non-owner access of a mailbox.
+```
+<Event MailboxGuid="6d4fbdae-e3ae-4530-8d0b-f62a14687939"
+  Owner="PPLNSL-dom\david50001-1363917750"
+  LastAccessed="2010-04-30T11:01:55.140625-07:00"
+  Operation="HardDelete"
+  OperationResult="Succeeded"
+  LogonType="Admin"
+ FolderId="0000000073098C3277988F4CB882F5B82EBF64610100A7C317F68C24304BBD18ABE1F185E79B00000026BD4F0000"
+  FolderPathName="\Recoverable Items\Deletions"
+  ClientInfoString="Client=OWA;Action=ViaProxy"
+  ClientIPAddress="10.196.241.168"
+  InternalLogonType="Owner"
+  MailboxOwnerUPN="david@contoso.com"
+  MailboxOwnerSid="S-1-5-21-290112810-296651436-1966561949-1151"
+  CrossMailboxOperation="false"
+  LogonUserDN="Administraor"
+  LogonUserSid="S-1-5-21-290112810-296651436-1966561949-1149">
+<SourceItems>
+<ItemId="0000000073098C3277988F4CB882F5B82EBF64610700A7C317F68C24304BBD18ABE1F185E79B00000026BD4F0000A7C317F68C24304BBD18ABE1F185E79B00000026BD540"
+   Subject="Notification of litigation hold"
+   FolderPathName="\Recoverable Items\Deletions" />
+</SourceItems>
+</Event>
+```
+
+### Useful fields in the mailbox audit log
+
+Here's a description of useful fields in the mailbox audit log. They can help you identify specific information about each instance of non-owner access of a mailbox.
 
 |**Field**|**Description**|
 |:-----|:-----|
