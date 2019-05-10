@@ -120,6 +120,7 @@ The ports that need to be load balanced include some, such as those for IMAP4 or
 |**TCP Port**|**Roles**|**Uses**|
 |:-----|:-----|:-----|
 |25  <br/> |Mailbox  <br/> |Inbound SMTP  <br/> |
+|587  <br/> |Mailbox  <br/> |Inbound SMTP for clients  <br/> |
 |110  <br/> |Mailbox  <br/> |POP3 clients  <br/> |
 |143  <br/> |Mailbox  <br/> |IMAP4 clients  <br/> |
 |443  <br/> |Mailbox  <br/> |HTTPS (Outlook on the web, AutoDiscover, web services, ActiveSync, MAPI over HTTP, RPC over HTTP, OAB, EAC  <br/> |
