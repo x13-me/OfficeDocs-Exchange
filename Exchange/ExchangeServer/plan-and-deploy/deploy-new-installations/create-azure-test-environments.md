@@ -115,6 +115,7 @@ You can create a new Azure virtual network with a domain controller with Azure P
     $vnet=Get-AZVirtualNetwork -ResourceGroupName $rgName -Name EXSrvrVnet
     $nsg=Get-AZNetworkSecurityGroup -Name EXSrvrSubnet -ResourceGroupName $rgName
     Set-AZVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name EXSrvrSubnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
+    $vnet | Set-AzVirtualNetwork
     ```
 
 7. Create the adVM virtual machine in Azure. adVM is a domain controller for the corp.contoso.com Windows Server AD domain and a DNS server for the virtual machines of the EXSrvrVnet virtual network.
