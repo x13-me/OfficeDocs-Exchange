@@ -92,7 +92,7 @@ The following diagram gives you a conceptual overview of what you're environment
 
 - **Transport Layer Security (TLS)**: Your device must be able to use TLS version 1.2 and above.
 
-- **Port**: Port 587 (recommended) or port 25 is required and must be unblocked on your network. Some network firewalls or ISPs block ports—especially port 25.
+- **Port**: Port 587 (recommended) or port 25 is required and must be unblocked on your network. Some network firewalls or ISPs block ports, especially port 25.
 
 - **DNS**: You must use the DNS name smtp.office365.com. Do not use an IP address for the Office 365 server, as IP Addresses are not supported.
 

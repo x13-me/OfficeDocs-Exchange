@@ -99,7 +99,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://technet
 
 To verify that you have successfully enabled mailbox audit logging for a mailbox and specified the correct logging settings for administrator, delegate, or owner access, use the [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\)) cmdlet to retrieve the mailbox audit logging settings for that mailbox.
 
-This example retrieves Ben Smith’s mailbox settings and pipes the specified audit settings, including the audit log age limit, to the **Format-List** cmdlet.
+This example retrieves Ben Smith's mailbox settings and pipes the specified audit settings, including the audit log age limit, to the **Format-List** cmdlet.
 
 ```powershell
     Get-Mailbox "Ben Smith" | Format-List *audit*

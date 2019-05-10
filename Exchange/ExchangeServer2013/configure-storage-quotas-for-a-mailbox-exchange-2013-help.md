@@ -59,7 +59,7 @@ This topic shows you how to customize storage settings for a specific mailbox in
         
 
         > [!IMPORTANT]
-        > The message associated with the <STRONG>Issue warning</STRONG> quota won’t be sent to the user unless the value of this setting is greater than 50% of the value specified in the <STRONG>Prohibit send</STRONG> quota. For example, if you set the <STRONG>Prohibit send</STRONG> quota to 8 MB, you must set the <STRONG>Issue warning</STRONG> quota to at least 4 MB. If you don’t, the <STRONG>Issue warning</STRONG> quota message won’t be sent.
+        > The message associated with the <STRONG>Issue warning</STRONG> quota won't be sent to the user unless the value of this setting is greater than 50% of the value specified in the <STRONG>Prohibit send</STRONG> quota. For example, if you set the <STRONG>Prohibit send</STRONG> quota to 8 MB, you must set the <STRONG>Issue warning</STRONG> quota to at least 4 MB. If you don't, the <STRONG>Issue warning</STRONG> quota message won't be sent.
 
     
       - **Prohibit send at (GB)**   This box displays the *prohibit send* limit for the mailbox. If the mailbox size reaches or exceeds the specified limit, Exchange prevents the user from sending new messages and displays a descriptive error message.

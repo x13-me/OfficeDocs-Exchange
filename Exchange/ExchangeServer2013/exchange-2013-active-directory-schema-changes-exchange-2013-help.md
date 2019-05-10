@@ -55,7 +55,7 @@ Exchange 2013 schema updates are cumulative. Each release includes all of the ch
 
 
 > [!NOTE]
-> The Active Directory schema changes identified in this topic may not apply to all editions of an Exchange Server version.<BR>To verify that Active Directory has been successfully prepared, see the “How do you know this worked?” section in <A href="prepare-active-directory-and-domains-exchange-2013-help.md">Prepare Active Directory and domains</A>.
+> The Active Directory schema changes identified in this topic may not apply to all editions of an Exchange Server version.<BR>To verify that Active Directory has been successfully prepared, see the "How do you know this worked?" section in <A href="prepare-active-directory-and-domains-exchange-2013-help.md">Prepare Active Directory and domains</A>.
 
 
 

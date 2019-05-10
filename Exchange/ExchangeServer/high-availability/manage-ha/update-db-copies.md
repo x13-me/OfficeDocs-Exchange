@@ -83,7 +83,7 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 4. In the Details pane, under **Database Copies**, click **Update** under the passive database copy you want to seed.
 
-5. By default, the active copy of the database is used as the source database for seeding. If you prefer to use a passive copy of the database for seeding, click **browse…** to select the server containing the passive database copy you want to use for the source.
+5. By default, the active copy of the database is used as the source database for seeding. If you prefer to use a passive copy of the database for seeding, click **browse...** to select the server containing the passive database copy you want to use for the source.
 
 6. Click **save** to update the passive database copy.
 

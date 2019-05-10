@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-A delivery agent can deliver messages from your SMTP Exchange Server environment to a system that doesn’t use the SMTP protocol. Each delivery agent is associated with a Delivery Agent connector, which queues messages routed to the delivery agent for processing and delivery to the non-SMTP device or system.
+A delivery agent can deliver messages from your SMTP Exchange Server environment to a system that doesn't use the SMTP protocol. Each delivery agent is associated with a Delivery Agent connector, which queues messages routed to the delivery agent for processing and delivery to the non-SMTP device or system.
 
 
 > [!TIP]
@@ -77,7 +77,7 @@ When all of these steps are completed, messages to the foreign systems will be r
 
 A Delivery Agent connector in Exchange 2013 is similar to the Delivery Agent connector introduced in Exchange 2010. They route messages addressed to foreign systems that do not use the SMTP protocol. When a message is routed to a Delivery Agent connector, the associated delivery agent performs the content conversion and message delivery. Typically, delivery agents are created by a third-party and configured to work with a Delivery Agent connector in your organization.
 
-A Delivery Agent connector cannot be created in the Exchange Administration Center. Rather, you create a Delivery Agent connector in the Exchange Management Shell with the [New-DeliveryAgentConnector](https://technet.microsoft.com/en-us/library/dd351063\(v=exchg.150\)) cmdlet and edit the Delivery Agent connector’s properties with [Set-DeliveryAgentConnector](https://technet.microsoft.com/en-us/library/dd351159\(v=exchg.150\)). You can specify one or more host Mailbox servers for the connector, by using the optional *SourceTransportServers* parameter.
+A Delivery Agent connector cannot be created in the Exchange Administration Center. Rather, you create a Delivery Agent connector in the Exchange Management Shell with the [New-DeliveryAgentConnector](https://technet.microsoft.com/en-us/library/dd351063\(v=exchg.150\)) cmdlet and edit the Delivery Agent connector's properties with [Set-DeliveryAgentConnector](https://technet.microsoft.com/en-us/library/dd351159\(v=exchg.150\)). You can specify one or more host Mailbox servers for the connector, by using the optional *SourceTransportServers* parameter.
 
 ## Default text messaging Delivery Agent connector
 

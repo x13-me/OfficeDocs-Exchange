@@ -21,7 +21,7 @@ You can manage several of the Exchange ActiveSync application settings in Exchan
 
 You can modify the following properties and settings on the Exchange ActiveSync virtual directory:
 
-  - **InternalURL** The InternalURL is the URL that internal clients can use to access the virtual directory. It is usually in the format https://servername/Microsoft-Server-ActiveSync. For example, if the server’s NetBIOS name is Sequoia, the InternalURL would be https://sequoia/Microsoft-Server-ActiveSync.
+  - **InternalURL** The InternalURL is the URL that internal clients can use to access the virtual directory. It is usually in the format https://servername/Microsoft-Server-ActiveSync. For example, if the server's NetBIOS name is Sequoia, the InternalURL would be https://sequoia/Microsoft-Server-ActiveSync.
 
   - **ExternalURL** The ExternalURL is the URL that external clients can use to access the virtual directory. This URL should be accessible from outside your internal network. For example, your ExternalURL could be https://www.contoso.com/.
 

@@ -29,7 +29,7 @@ The architectural changes in Exchange 2013 are already documented on TechNet and
 
 
 
-In Exchange 2013, the Client Access server role is a stateless proxy server. Now the Client Access server role’s primary responsibility is to authenticate incoming requests and then proxy each request to the appropriate Mailbox server, the one hosting the active copy of the user mailbox. This means it's no longer necessary to configure affinity between the Client Access server and load balancer for specific protocols.
+In Exchange 2013, the Client Access server role is a stateless proxy server. Now the Client Access server role's primary responsibility is to authenticate incoming requests and then proxy each request to the appropriate Mailbox server, the one hosting the active copy of the user mailbox. This means it's no longer necessary to configure affinity between the Client Access server and load balancer for specific protocols.
 
 Another noteworthy change in Exchange 2013 is in the Information Store. The Information Store now consists of two kinds of processes: host and worker. Each database instance is associated with its own Microsoft.Exchange.Store.Worker.exe process. This allows for better isolation of problematic database issues, and can reduce the performance impact of a database problem to just the one worker instance for that database.
 

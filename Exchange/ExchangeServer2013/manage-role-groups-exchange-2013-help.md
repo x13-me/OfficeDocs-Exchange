@@ -224,7 +224,7 @@ Adding a management role to a role group is the best and simplest way to grant p
 
 3.  In the **Roles** section, select the roles you want to add to the role group.
 
-4.  When you’ve finished adding roles to the role group, click **Save**.
+4.  When you've finished adding roles to the role group, click **Save**.
 
 ## Use the Shell to create a role assignment with no scope
 
@@ -372,7 +372,7 @@ Removing a role from a management role group is the best and simplest way to rev
 
 3.  In the **Roles** section, select the roles you want to remove from the role group.
 
-4.  When you’ve finished removing roles from the role group, click **Save**.
+4.  When you've finished removing roles from the role group, click **Save**.
 
 ## Use the Shell to remove a role from a role group
 
@@ -519,7 +519,7 @@ To verify that you have successfully changed the scope of a role assignment on a
     
     1.  In the EAC, navigate to **Permissions**\> **Admin Roles**. All the role groups in your organization are listed here.
     
-    2.  Select a role group to view the scope that’s configured on the role group.
+    2.  Select a role group to view the scope that's configured on the role group.
 
   - If you used the Shell to configure the scope on the role group, do the following:
     

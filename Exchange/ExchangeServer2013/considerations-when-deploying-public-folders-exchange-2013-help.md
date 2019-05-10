@@ -43,11 +43,11 @@ This article contains factors to consider before you deploy public folders in yo
 
   - Exchange 2013 no longer supports public folder databases. Therefore, Outlook Web App users with Exchange 2013 mailboxes will not be able to access Exchange 2010 or Exchange 2007 public folders. Exchange 2013 users can access Exchange 2010 or Exchange 2007 public folders with Outlook or Outlook for Mac.
 
-  - Outlook Web App is supported, but with limitations. You can add and remove favorite public folders and perform item-level operations such as creating, editing, deleting posts, and replying to posts. However, you can’t create or delete public folders from Outlook Web App. Also, only Mail, Post, Calendar, and Contact public folders can be added to the Favorites list in Outlook Web App.
+  - Outlook Web App is supported, but with limitations. You can add and remove favorite public folders and perform item-level operations such as creating, editing, deleting posts, and replying to posts. However, you can't create or delete public folders from Outlook Web App. Also, only Mail, Post, Calendar, and Contact public folders can be added to the Favorites list in Outlook Web App.
 
-  - Although a full text search of public folder content is available, public folder content isn’t searchable across public folders and the content isn’t indexed by Exchange Search.
+  - Although a full text search of public folder content is available, public folder content isn't searchable across public folders and the content isn't indexed by Exchange Search.
 
   - You must use Outlook 2007 or later to access public folders on Exchange 2013 servers.
 
-  - Retention policies aren’t supported for public folder mailboxes.
+  - Retention policies aren't supported for public folder mailboxes.
 

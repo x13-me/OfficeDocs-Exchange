@@ -17,11 +17,11 @@ _**Applies to:** Exchange Server 2013_
 
 You can inspect email attachments in your organization by setting up transport rules. Exchange offers transport rules that provide the ability to examine email attachments as a part of your messaging security and compliance needs. When you inspect attachments, you can then take action on the messages that were inspected based on the content or characteristics of those attachments. Here are some attachment-related tasks you can do by using transport rules:
 
-  - Search files in compressed attachments such as .zip and .rar files and, if there’s any text that matches a pattern you specify, add a disclaimer to the end of the message.
+  - Search files in compressed attachments such as .zip and .rar files and, if there's any text that matches a pattern you specify, add a disclaimer to the end of the message.
 
-  - Inspect content within attachments and, if there are any keywords you specify, redirect the message to a moderator for approval before it’s delivered.
+  - Inspect content within attachments and, if there are any keywords you specify, redirect the message to a moderator for approval before it's delivered.
 
-  - Check for messages with attachments that can’t be inspected and then block the entire message from being sent.
+  - Check for messages with attachments that can't be inspected and then block the entire message from being sent.
 
   - Check for attachments that exceed a certain size and then notify the sender of the issue if you choose to prevent the message from being delivered.
 
@@ -33,7 +33,7 @@ Exchange administrators can create transport rules by going to **Exchange Admin 
 
 ![Dialog box to select attachment-related rules](images/JJ674307.2ae4a179-bfd2-4a0e-abe1-53ed4e9e3368(EXCHG.150).jpg "Dialog box to select attachment-related rules")
 
-For more information about transport rules, including the full range of conditions and actions that you can choose, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md). Exchange Online Protection (EOP) and hybrid customers can benefit from the transport rules best practices provided in [Best practices for configuring EOP](https://technet.microsoft.com/en-us/library/jj723164\(v=exchg.150\)). If you’re ready to start creating rules, see [Manage mail flow rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
+For more information about transport rules, including the full range of conditions and actions that you can choose, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md). Exchange Online Protection (EOP) and hybrid customers can benefit from the transport rules best practices provided in [Best practices for configuring EOP](https://technet.microsoft.com/en-us/library/jj723164\(v=exchg.150\)). If you're ready to start creating rules, see [Manage mail flow rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
 
 ## Inspect the content within attachments
 
@@ -78,7 +78,7 @@ Transport rules can inspect only the content of supported file types. If the tra
 
 ## Compressed archive files
 
-If the message contains a compressed archive file such as a .zip or .cab file, the transport rules agent will inspect the files contained within that attachment. Such messages are processed in a manner similar to messages that have multiple attachments. The properties of compressed archive files aren’t inspected. For example, if the container file type supports comments, that field isn’t inspected.
+If the message contains a compressed archive file such as a .zip or .cab file, the transport rules agent will inspect the files contained within that attachment. Such messages are processed in a manner similar to messages that have multiple attachments. The properties of compressed archive files aren't inspected. For example, if the container file type supports comments, that field isn't inspected.
 
 ## Supported file types for transport rule content inspection
 
@@ -102,8 +102,8 @@ The following table lists the file types supported by transport rules. The syste
 <tr class="odd">
 <td><p>Office 2013, Office 2010, and Office 2007</p></td>
 <td><p>.docm, .docx, .pptm, .pptx, .pub, .one, .xlsb, .xlsm, .xlsx</p></td>
-<td><p>Microsoft OneNote and Microsoft Publisher files aren’t supported by default. You can enable support for these file types by using IFilter integration. For more information, see <a href="register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md">Register Filter Pack IFilters with Exchange 2013</a>.</p>
-<p>The contents of any embedded parts contained within these file types are also inspected. However, any objects that aren’t embedded—for example, linked documents—aren’t inspected.</p></td>
+<td><p>Microsoft OneNote and Microsoft Publisher files aren't supported by default. You can enable support for these file types by using IFilter integration. For more information, see <a href="register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md">Register Filter Pack IFilters with Exchange 2013</a>.</p>
+<p>The contents of any embedded parts contained within these file types are also inspected. However, any objects that aren't embedded (for example, linked documents) aren't inspected.</p></td>
 </tr>
 <tr class="even">
 <td><p>Office 2003</p></td>
@@ -138,12 +138,12 @@ The following table lists the file types supported by transport rules. The syste
 <tr class="even">
 <td><p>OpenDocument</p></td>
 <td><p>.odp, .ods, .odt</p></td>
-<td><p>No parts of .odf files are processed. For example, if the .odf file contains an embedded document, the contents of that embedded document aren’t inspected.</p></td>
+<td><p>No parts of .odf files are processed. For example, if the .odf file contains an embedded document, the contents of that embedded document aren't inspected.</p></td>
 </tr>
 <tr class="odd">
 <td><p>AutoCAD Drawing</p></td>
 <td><p>.dxf</p></td>
-<td><p>AutoCAD 2013 files aren’t supported.</p></td>
+<td><p>AutoCAD 2013 files aren't supported.</p></td>
 </tr>
 <tr class="even">
 <td><p>Image</p></td>
@@ -189,7 +189,7 @@ The following transport rule conditions inspect the properties of a file that is
 <td><p>This condition matches messages with supported file type attachments when those attachments are larger than the size you specify.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Any attachment didn’t complete scanning</strong></p></td>
+<td><p><strong>Any attachment didn't complete scanning</strong></p></td>
 <td><p><code>AttachmentProcessingLimitExceeded</code></p></td>
 <td><p>This condition matches messages when an attachment is not inspected by the transport rules agent.</p></td>
 </tr>
@@ -306,7 +306,7 @@ To help you manage important business information in email, you can include any 
 
   - Create a DLP policy that inspects mail for passport-related sensitive information. Learn more at [DLP procedures](dlp-procedures-exchange-2013-help.md).
 
-  - Add the **Any attachment is password protected** exception in the **Except if…** transport rule area.
+  - Add the **Any attachment is password protected** exception in the **Except if...** transport rule area.
 
   - Define an action to take on mail that contains passport numbers that are not in the protected file.
 

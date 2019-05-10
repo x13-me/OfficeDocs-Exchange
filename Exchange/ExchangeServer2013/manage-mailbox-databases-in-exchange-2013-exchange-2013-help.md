@@ -221,7 +221,7 @@ For detailed syntax and parameter information, see [Remove-MailboxDatabase](http
     Remove-MailboxDatabase -Identity "MyDatabase"
     ```
 
-2.  When you’re prompted about whether you're sure that you want to perform the action, type **Y**.
+2.  When you're prompted about whether you're sure that you want to perform the action, type **Y**.
 
 3.  When the dialog box appears stating that the database was removed successfully, note the location of the Exchange 2013 database (.edb) file. If you want to remove this file from the hard drive, you must remove it manually.
 

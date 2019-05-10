@@ -76,7 +76,7 @@ Your user account needs to be a member of the Operations Manager Administrators 
 
 ## Verify agent security configuration
 
-Due to the security model under which Exchange 2013 has been tested, running the SCOM agent on your Exchange servers under any account other than **LocalSystem** isn’t supported. If you run the agent under any account other than LocalSystem, the synthetic transactions fail to run. You may also experience other issues.
+Due to the security model under which Exchange 2013 has been tested, running the SCOM agent on your Exchange servers under any account other than **LocalSystem** isn't supported. If you run the agent under any account other than LocalSystem, the synthetic transactions fail to run. You may also experience other issues.
 
 Your user account needs to be a member of the Server Management role group to perform this procedure.
 

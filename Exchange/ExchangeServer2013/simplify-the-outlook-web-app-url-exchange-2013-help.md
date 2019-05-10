@@ -19,7 +19,7 @@ _**Applies to:** Exchange Server 2013_
 
 You can simplify the Microsoft Outlook Web App URL that users use to access their Exchange Server 2013 mailbox.
 
-To simplify access to Outlook Web App for your users, you may want to configure the Outlook Web App Web page, which is usually the default website in IIS, to automatically redirect users to https. The procedure in the “Use IIS Manager to simplify the Outlook Web App URL and force redirection to SSL” section redirects a request for http://*server* to https://*server*/owa. To help secure the information that's sent between the client and the server, the default Web site is set to require Secure Sockets Layer (SSL) at installation.
+To simplify access to Outlook Web App for your users, you may want to configure the Outlook Web App Web page, which is usually the default website in IIS, to automatically redirect users to https. The procedure in the "Use IIS Manager to simplify the Outlook Web App URL and force redirection to SSL" section redirects a request for http://*server* to https://*server*/owa. To help secure the information that's sent between the client and the server, the default Web site is set to require Secure Sockets Layer (SSL) at installation.
 
 When you configure redirection from a top-level directory in Windows Server 2008, the settings are propagated to lower-level directories. For example, when you configure redirection on the default website to the /owa virtual directory, the settings that you configure also appear on the HTTP Redirect page of all the virtual directories, such as /Autodiscover, /Exchange, and /Public. Therefore, you must remove redirection from all the virtual directories except the one that you want redirected.
 
@@ -65,7 +65,7 @@ When you configure redirection from a top-level directory in Windows Server 2008
     
 
     > [!NOTE]
-    > If you don’t clear <STRONG>Require SSL</STRONG>, users won’t be redirected when they enter an unsecured URL. Instead, they’ll get an access denied error.
+    > If you don't clear <STRONG>Require SSL</STRONG>, users won't be redirected when they enter an unsecured URL. Instead, they'll get an access denied error.
 
 
 

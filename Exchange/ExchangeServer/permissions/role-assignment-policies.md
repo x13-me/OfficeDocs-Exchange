@@ -195,7 +195,7 @@ This procedure makes use of pipelining and the **Where** cmdlet. For more inform
 This example returns the default assignment policy.
 
 ```
-Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }
+Get-RoleAssignmentPolicy | Where {$_.IsDefault -eq $True}
 ```
 
 For detailed syntax and parameter information, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) or [Get-RoleAssignmentPolicy](http://technet.microsoft.com/library/da0ecaa3-ce67-4ea2-aca3-56e056555900.aspx).
@@ -213,13 +213,13 @@ This procedure makes use of pipelining and the **Where** cmdlet. For more inform
 Use the following syntax.
 
 ```
-Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }
+Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "<role assignment policy>"}
 ```
 
 This example finds all the mailboxes assigned the policy Vancouver End Users.
 
 ```
-Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }
+Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Vancouver End Users"}
 ```
 
 For detailed syntax and parameter information, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx) or [Get-RoleAssignmentPolicy](http://technet.microsoft.com/library/da0ecaa3-ce67-4ea2-aca3-56e056555900.aspx).

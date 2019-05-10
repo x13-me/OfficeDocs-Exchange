@@ -47,7 +47,7 @@ The protocol log files are text files that contain data in the comma-separated v
 </tr>
 <tr class="even">
 <td><p>connector-id</p></td>
-<td><p>This field isn’t used for POP3 and IMAP4 protocol logging.</p></td>
+<td><p>This field isn't used for POP3 and IMAP4 protocol logging.</p></td>
 </tr>
 <tr class="odd">
 <td><p>session-id</p></td>
@@ -78,11 +78,11 @@ The protocol log files are text files that contain data in the comma-separated v
 </tr>
 <tr class="even">
 <td><p>data</p></td>
-<td><p>Text information that’s associated with the POP3 or IMAP4 event.</p></td>
+<td><p>Text information that's associated with the POP3 or IMAP4 event.</p></td>
 </tr>
 <tr class="odd">
 <td><p>context</p></td>
-<td><p>This field isn’t used for POP3 and IMAP4 protocol logging.</p></td>
+<td><p>This field isn't used for POP3 and IMAP4 protocol logging.</p></td>
 </tr>
 </tbody>
 </table>

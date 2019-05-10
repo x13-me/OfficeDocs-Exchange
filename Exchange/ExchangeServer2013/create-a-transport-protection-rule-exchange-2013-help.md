@@ -96,7 +96,7 @@ For additional management tasks related to Information Rights Management (IRM), 
 
 To verify that you have successfully created a transport protection rule, do one of the following:
 
-  - Use the EAC to verify that the rule has been created, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to view the rule’s properties.
+  - Use the EAC to verify that the rule has been created, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to view the rule's properties.
 
   - Use the [Get-TransportRule](https://technet.microsoft.com/en-us/library/aa998585\(v=exchg.150\)) cmdlet to retrieve the rule. For an example of how to retrieve a rule, see [Examples](https://technet.microsoft.com/en-us/aa998585\(exchg.150\)#examples) in **Get-TransportRule**.
 

@@ -135,11 +135,11 @@ To replace the existing values, run the following command:
 
 This example configures the following exceptions in content filtering:
 
-  - The recipients laura@contoso.com and julia@contoso.com aren’t checked by content filtering.
+  - The recipients laura@contoso.com and julia@contoso.com aren't checked by content filtering.
 
-  - The senders steve@fabrikam.com and cindy@fabrikam.com aren’t checked by content filtering.
+  - The senders steve@fabrikam.com and cindy@fabrikam.com aren't checked by content filtering.
 
-  - All senders in the domain nwtraders.com and all subdomains aren’t checked by content filtering.
+  - All senders in the domain nwtraders.com and all subdomains aren't checked by content filtering.
 
 <!-- end list -->
 
@@ -155,13 +155,13 @@ To add or remove entries without modifying any existing values, run the followin
 
 This example configures the following exceptions in content filtering:
 
-  - Add tiffany@contoso.com and chris@contoso.com to the list of existing recipients who aren’t checked by content filtering.
+  - Add tiffany@contoso.com and chris@contoso.com to the list of existing recipients who aren't checked by content filtering.
 
-  - Add joe@fabrikam.com and michelle@fabrikam.com to the list of existing senders who aren’t checked by content filtering.
+  - Add joe@fabrikam.com and michelle@fabrikam.com to the list of existing senders who aren't checked by content filtering.
 
-  - Add blueyonderairlines.com to the list of existing domains whose senders aren’t checked by content filtering.
+  - Add blueyonderairlines.com to the list of existing domains whose senders aren't checked by content filtering.
 
-  - Remove the domain woodgrovebank.com and all subdomains from the list of existing domains whose senders aren’t checked by content filtering.
+  - Remove the domain woodgrovebank.com and all subdomains from the list of existing domains whose senders aren't checked by content filtering.
 
 <!-- end list -->
 

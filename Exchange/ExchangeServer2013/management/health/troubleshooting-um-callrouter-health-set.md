@@ -153,7 +153,7 @@ Renew the UM Call Router service certificate on the CAS.
 
 **Additional troubleshooting steps:**
 
-1.  Start IIS Manager, and then connect to the server that’s reporting the issue to determine whether the **MSExchangeServicesAppPool** application pool is running.
+1.  Start IIS Manager, and then connect to the server that's reporting the issue to determine whether the **MSExchangeServicesAppPool** application pool is running.
 
 2.  In IIS Manager, click **Application Pools**, and then recycle the **MSExchangeServicesAppPool** application pool by running the following command from the Shell:
     

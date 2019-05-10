@@ -49,7 +49,7 @@ For additional information related to IMAP4, see [POP3 and IMAP4 in Exchange Ser
     
       - **Authenticated time-out (seconds)**    Specifies the time to wait before closing an idle authenticated connection. The default value is 1,800. The possible values are from 30 through 86,400.
     
-      - **Unauthenticated time-out (seconds)**   Specifies the time to wait before closing an idle connection that isn’t authenticated. The default value is 60. The possible values are from 30 through 3,600.
+      - **Unauthenticated time-out (seconds)**   Specifies the time to wait before closing an idle connection that isn't authenticated. The default value is 60. The possible values are from 30 through 3,600.
 
 6.  Click **Apply**, and then click **OK** to save your changes.
 
@@ -75,7 +75,7 @@ For more information about syntax and parameters, see [Set-ImapSettings](https:/
 
 ## How do you know this worked?
 
-To verify that you’ve successfully set connection limits, do one of the following:
+To verify that you've successfully set connection limits, do one of the following:
 
 1.  In the EAC, navigate to **Servers** **\>** **Servers**.
 

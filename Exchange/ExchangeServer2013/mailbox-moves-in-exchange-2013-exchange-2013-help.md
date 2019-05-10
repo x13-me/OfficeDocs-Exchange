@@ -63,7 +63,7 @@ In Exchange 2013 you must move mailboxes between Exchange 2007 and Exchange 2010
 
 
 > [!NOTE]
-> You can’t move on-premises mailboxes from Exchange Server 2003 to Exchange 2013.
+> You can't move on-premises mailboxes from Exchange Server 2003 to Exchange 2013.
 
 
 

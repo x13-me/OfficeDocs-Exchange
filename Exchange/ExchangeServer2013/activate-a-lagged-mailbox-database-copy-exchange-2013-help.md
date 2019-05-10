@@ -136,7 +136,7 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
 
 
 
-2.  Determine the required logs for the lagged database copy by looking for the “Log Required:” value in ESEUTIL database header output
+2.  Determine the required logs for the lagged database copy by looking for the "Log Required:" value in ESEUTIL database header output
     
     ```powershell
     Eseutil /mh <DBPath> | findstr /c:"Log Required"

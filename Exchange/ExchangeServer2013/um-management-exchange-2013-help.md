@@ -35,7 +35,7 @@ You can use the following command to view a list of users or universal security 
 Get-RoleGroupMember "UM Management"
 ```
 
-For more information about the members of a role group, see the “View the members of a role group” section in [Manage role group members](manage-role-group-members-exchange-2013-help.md).
+For more information about the members of a role group, see the "View the members of a role group" section in [Manage role group members](manage-role-group-members-exchange-2013-help.md).
 
 ## Role group customization
 
@@ -51,7 +51,7 @@ For more information about how to customize this role group, see the following t
 
   - [Manage role group members](manage-role-group-members-exchange-2013-help.md)
 
-If you want to create a role group and assign some of the roles that are assigned to this role group to the new role group, see the “Create a role group” section in [Manage role groups](manage-role-groups-exchange-2013-help.md).
+If you want to create a role group and assign some of the roles that are assigned to this role group to the new role group, see the "Create a role group" section in [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
 ## Management roles assigned to this role group
 

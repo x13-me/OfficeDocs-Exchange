@@ -28,7 +28,7 @@ _**Applies to:** Exchange Server 2013_
 
 _**Topic Last Modified:** 2013-02-07_
 
-The IMAP.Protocol health set monitors the IMAP4 protocol on the Mailbox server. If you receive an alert that specifies that the IMAP.Protocol health set is unhealthy, this indicates an issue that affects the IMAP4 protocol on the Mailbox server that’s indicated in the alert.
+The IMAP.Protocol health set monitors the IMAP4 protocol on the Mailbox server. If you receive an alert that specifies that the IMAP.Protocol health set is unhealthy, this indicates an issue that affects the IMAP4 protocol on the Mailbox server that's indicated in the alert.
 
 <div>
 

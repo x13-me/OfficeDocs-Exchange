@@ -123,13 +123,13 @@ In Exchange Management Shell (on-premises) perform the following steps:
    To check if the accepted domain is already present in your on-premises environment, run the following:
 
    ```
-   Get-AcceptedDomain | Where { $_.DomainName -eq "<target domain>" }
+   Get-AcceptedDomain | Where {$_.DomainName -eq "<target domain>"}
    ```
 
    To rename the accepted domain to `PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99`, run the following:
 
    ```
-   Get-AcceptedDomain | Where { $_.DomainName -eq "<target domain>" } | Set-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99
+   Get-AcceptedDomain | Where {$_.DomainName -eq "<target domain>"} | Set-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99
    ```
 
    > [!NOTE]

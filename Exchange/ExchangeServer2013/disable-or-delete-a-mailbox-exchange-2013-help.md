@@ -123,7 +123,7 @@ The following procedure shows how to disable a user mailbox. Use the same proced
 
 3.  Click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") and then click **Disable**.
 
-4.  A warning appears asking if you’re sure you want to disable the mailbox. Click **Yes** to disable the mailbox.
+4.  A warning appears asking if you're sure you want to disable the mailbox. Click **Yes** to disable the mailbox.
 
 The mailbox is removed from the mailbox list.
 
@@ -153,37 +153,35 @@ Disable-Mailbox sharedmbx@contoso.com
 
 ## How do you know this worked?
 
-To verify that you’ve successfully disabled a mailbox, do one of the following:
+To verify that you've successfully disabled a mailbox, do one of the following:
 
-  - In the EAC, click **Recipients**, navigate to the appropriate page for the mailbox type that you disabled, and then verify that the mailbox is no longer listed.
+- In the EAC, click **Recipients**, navigate to the appropriate page for the mailbox type that you disabled, and then verify that the mailbox is no longer listed.
 
-  - In Active Directory Users and Computers, right-click the user account whose mailbox you disabled, and then click **Properties**. On the **General** tab, notice that the **E-mail** field is blank. This verifies that the mailbox is disabled, but the user account still exists.
+- In Active Directory Users and Computers, right-click the user account whose mailbox you disabled, and then click **Properties**. On the **General** tab, notice that the **E-mail** field is blank. This verifies that the mailbox is disabled, but the user account still exists.
 
-  - In the Shell, run the following command.
+- In the Shell, replace _\<DisplayName\>_ with the display name of the mailbox and run the following commands.
+
+  ```powershell
+  $dbs = Get-MailboxDatabase
+  $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisconnectReason,DisconnectDate
+  ```
+
+  The `Disabled` value in the *DisconnectReason* property indicates that the mailbox is disabled.
+
+  > [!NOTE]
+  > When you delete a mailbox, the value in the <EM>DisconnectReason</EM> property is also <CODE>Disabled</CODE>. However, the corresponding Active Directory user account is deleted.
+
+- In the Shell, run the following command.
     
-    ```powershell
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
-    ```
+  ```powershell
+  Get-User <identity>
+  ```
 
-    The `Disabled` value in the *DisconnectReason* property indicates that the mailbox is disabled.
-    
-
-    > [!NOTE]
-    > When you delete a mailbox, the value in the <EM>DisconnectReason</EM> property is also <CODE>Disabled</CODE>. However, the corresponding Active Directory user account is deleted.
-
-
-
-  - In the Shell, run the following command.
-    
-    ```powershell
-    Get-User <identity>
-    ```
-    
     Note that the value for the *RecipientType* property is `User`, instead of `UserMailbox`, which is the value for users with enabled mailboxes. This also verifies that the mailbox is disabled, but the user account is retained.
 
 ## Delete a mailbox
 
-As previously stated, when you delete a mailbox, both the Exchange attributes and the Active Directory user account are deleted. The mailbox (and the archive mailbox, if it’s enabled) will be permanently deleted from the mailbox database after the mailbox retention period expires.
+As previously stated, when you delete a mailbox, both the Exchange attributes and the Active Directory user account are deleted. The mailbox (and the archive mailbox, if it's enabled) will be permanently deleted from the mailbox database after the mailbox retention period expires.
 
 ## Use the EAC to delete a mailbox
 
@@ -193,7 +191,7 @@ The following procedure shows how to delete a user mailbox. Use the same procedu
 
 2.  In the list of user mailboxes, click the mailbox that you want to delete, and then click **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon").
 
-3.  A warning appears asking if you’re sure you want to delete the mailbox. Click **Yes** to delete the mailbox.
+3.  A warning appears asking if you're sure you want to delete the mailbox. Click **Yes** to delete the mailbox.
 
 The mailbox is removed from the mailbox list.
 
@@ -223,33 +221,30 @@ Remove-Mailbox corpprint
 
 ## How do you know this worked?
 
-To verify that you’ve successfully deleted a mailbox, do one of the following sets of verification procedures.
+To verify that you've successfully deleted a mailbox, do one of the following sets of verification procedures.
 
-1.  In the EAC, click **Recipients** and then navigate to the appropriate page for the mailbox type that you deleted, and verify that the mailbox is no longer listed.
+1. In the EAC, click **Recipients** and then navigate to the appropriate page for the mailbox type that you deleted, and verify that the mailbox is no longer listed.
 
-2.  In Active Directory Users and Computers, verify that the corresponding user account is no longer listed.
+2. In Active Directory Users and Computers, verify that the corresponding user account is no longer listed.
 
 Or
 
-1.  Run the following command to verify that the mailbox has been deleted.
-    
-    ```powershell
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
-    ```
+1. In the Shell, replace _\<DisplayName\>_ with the display name of the mailbox and run the following commands to verify that the mailbox has been deleted.
 
-    The `Disabled` value in the *DisconnectReason* property indicates that the mailbox has been deleted.
-    
+   ```powershell
+   $dbs = Get-MailboxDatabase
+   $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisconnectReason,DisconnectDate
+   ```
 
-    > [!NOTE]
-    > When you disable a mailbox, the value in the <EM>DisconnectReason</EM> property is also <CODE>Disabled</CODE>. However, the corresponding Active Directory user account is retained.
+   The `Disabled` value in the *DisconnectReason* property indicates that the mailbox has been deleted.
 
+   > [!NOTE]
+   > When you disable a mailbox, the value in the <EM>DisconnectReason</EM> property is also <CODE>Disabled</CODE>. However, the corresponding Active Directory user account is retained.
 
+2. Run the following command to verify that Active Directory user account has been deleted.
 
-2.  Run the following command to verify that Active Directory user account has been deleted.
-    
-    ```powershell
-    Get-User <identity>
-    ```
-    
-    The command will return an error stating that user couldn’t be found, verifying that the account was deleted.
+   ```powershell
+   Get-User <identity>
+   ```
 
+   The command will return an error stating that user couldn't be found, verifying that the account was deleted.

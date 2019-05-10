@@ -189,7 +189,7 @@ Renew the UM service certificate on the Mailbox server.
 
 **Additional troubleshooting steps:**
 
-1.  Start IIS Manager, and connect to the server that’s reporting the issue to determine whether the **MSExchangeServicesAppPool** application pool is running.
+1.  Start IIS Manager, and connect to the server that's reporting the issue to determine whether the **MSExchangeServicesAppPool** application pool is running.
 
 2.  In IIS Manager, click **Application Pools**, and then recycle the **MSExchangeServicesAppPool** application pool. To do this, run the following command from the Exchange Management Shell:
     

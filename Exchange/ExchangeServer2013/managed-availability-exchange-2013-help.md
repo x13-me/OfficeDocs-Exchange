@@ -31,7 +31,7 @@ Managed availability, also known as *Active Monitoring* or *Local Active Monitor
 
 The server role consolidation and other architectural changes in Exchange 2013 require a new approach to the monitoring methodologies and health model used in previous versions of Exchange. Managed availability is designed to address these changes by providing a native health monitoring and recovery solution. It moves away from monitoring individual separate slices of the system to monitoring the end-to-end user experience, and protecting the end user's experience through recovery-oriented actions.
 
-Managed availability is an internal process that runs on every Exchange 2013 server. It polls and analyzes hundreds of health metrics every second. If something is found to be wrong, most of the time it will be fixed automatically. But there will always be issues that managed availability won’t be able to fix on its own. In those cases, managed availability will escalate the issue to an administrator by means of event logging.
+Managed availability is an internal process that runs on every Exchange 2013 server. It polls and analyzes hundreds of health metrics every second. If something is found to be wrong, most of the time it will be fixed automatically. But there will always be issues that managed availability won't be able to fix on its own. In those cases, managed availability will escalate the issue to an administrator by means of event logging.
 
 Managed availability implemented in the form of two services:
 
@@ -65,9 +65,9 @@ Recurrent probes run every few minutes and check some aspect of service health. 
 
 All probes are defined on Health Manager service startup in the Microsoft.Exchange.ActiveMonitoring\\ProbeDefinition crimson channel. Each probe definitions has many properties, but the most relevant properties are:
 
-  - **Name** The name of the probe, which begins with a *SampleMask* of the probe’s monitor.
+  - **Name** The name of the probe, which begins with a *SampleMask* of the probe's monitor.
 
-  - **TypeName** The code object type of the probe that contains the probe’s logic.
+  - **TypeName** The code object type of the probe that contains the probe's logic.
 
   - **ServiceName** The name of the health set that contains this probe.
 
@@ -87,7 +87,7 @@ The basics of a recurrent probe are as follows: start every *RecurrenceIntervalS
 
 
 
-Notifications are probes that are not run by the health manager framework, but by some other service on the server. These services perform their own monitoring, and then feed their data into the Managed Availability framework by directly writing probe results. You won’t see these probes in the ProbeDefinition channel, as this channel only describes probes that will be run by the Managed Availability framework. For example, the ServerOneCopyMonitor Monitor is triggered by probe results written by the MSExchangeDAGMgmt service. This service performs its own monitoring, determines whether there is a problem, and logs a probe result. Most notification probes have the capability to log both a red event that turns the monitor unhealthy and a green event that makes the monitor healthy again.
+Notifications are probes that are not run by the health manager framework, but by some other service on the server. These services perform their own monitoring, and then feed their data into the Managed Availability framework by directly writing probe results. You won't see these probes in the ProbeDefinition channel, as this channel only describes probes that will be run by the Managed Availability framework. For example, the ServerOneCopyMonitor Monitor is triggered by probe results written by the MSExchangeDAGMgmt service. This service performs its own monitoring, determines whether there is a problem, and logs a probe result. Most notification probes have the capability to log both a red event that turns the monitor unhealthy and a green event that makes the monitor healthy again.
 
 Checks are probes that only log events when a performance counter passes above or below a defined threshold. They are really a special case of notification probes, as there is a service monitoring the performance counters on the server and logging events to the ProbeResult channel when the configured threshold is met.
 
@@ -109,7 +109,7 @@ From an administrative perspective, monitors have additional states that appear 
 
   - **Repairing**   An administrator sets the Repairing state to indicate to the system that corrective action is in process by a human, which allows the system and humans to differentiate between other failures that may occur at the same time corrective action is being taken (such as a database copy reseed operation).
 
-Every monitor has a *SampleMask* property in its definition. As the monitor executes, it looks for events in the ProbeResult channel that have a *ResultName* that matches the monitor’s *SampleMask*. These events could be from recurrent probes, notifications, or checks. If the monitor’s thresholds are achieved, it becomes Unhealthy. From the monitor’s perspective, all three probe types are the same as they each log to the ProbeResult channel.
+Every monitor has a *SampleMask* property in its definition. As the monitor executes, it looks for events in the ProbeResult channel that have a *ResultName* that matches the monitor's *SampleMask*. These events could be from recurrent probes, notifications, or checks. If the monitor's thresholds are achieved, it becomes Unhealthy. From the monitor's perspective, all three probe types are the same as they each log to the ProbeResult channel.
 
 It is worth noting that a single probe failure does not necessarily indicate that something is wrong with the server. It is the design of monitors to correctly identify when there is a real problem that needs fixing. This is why many monitors have thresholds of multiple probe failures before becoming Unhealthy. Even then, many of these problems can be fixed automatically by responders, so the best place to look for problems that require manual intervention is in the Microsoft.Exchange.ManagedAvailability\\Monitoring crimson channel. This will include the most recent probe error.
 
@@ -131,11 +131,11 @@ As their name implies, responders execute some sort of response to an alert that
 
 In addition to the above listed responders, some components also have specialized responders that are unique to their component.
 
-All responders include throttling behavior, which provide a built-in sequencing mechanism for controlling responder actions. The throttling behavior is designed to ensure that the system isn’t compromised or made worse as a result of responder recovery actions. All responders are throttled in some fashion. When throttling occurs, the responder recovery action may be skipped or delayed, depending on the responder action. For example, when the Bugcheck Responder is throttled, its action is skipped, and not delayed.
+All responders include throttling behavior, which provide a built-in sequencing mechanism for controlling responder actions. The throttling behavior is designed to ensure that the system isn't compromised or made worse as a result of responder recovery actions. All responders are throttled in some fashion. When throttling occurs, the responder recovery action may be skipped or delayed, depending on the responder action. For example, when the Bugcheck Responder is throttled, its action is skipped, and not delayed.
 
 ## Health Sets
 
-From a reporting perspective, managed availability has two views of health, one internal and one external. The internal view uses *health sets*. Each component in Exchange 2013 (for example, Outlook Web App, Exchange ActiveSync, the Information Store service, content indexing, transport services, etc.) is monitored by managed availability using probes, monitors, and responders. A group of probes, monitors and responders for a given component is called a *health set*. A health set is a group of probes, monitors, and responders that determine if that component is healthy. The current state of a health set (e.g., whether it is healthy or unhealthy) is determined by using the state of the health set’s monitors. If all of a health set’s monitors are healthy, then the health set is in a healthy state. If any monitor is not in a healthy state, then the health set state will be determined by its least healthy monitor.
+From a reporting perspective, managed availability has two views of health, one internal and one external. The internal view uses *health sets*. Each component in Exchange 2013 (for example, Outlook Web App, Exchange ActiveSync, the Information Store service, content indexing, transport services, etc.) is monitored by managed availability using probes, monitors, and responders. A group of probes, monitors and responders for a given component is called a *health set*. A health set is a group of probes, monitors, and responders that determine if that component is healthy. The current state of a health set (e.g., whether it is healthy or unhealthy) is determined by using the state of the health set's monitors. If all of a health set's monitors are healthy, then the health set is in a healthy state. If any monitor is not in a healthy state, then the health set state will be determined by its least healthy monitor.
 
 For detailed steps to view server health or health sets state, see [Manage health sets and server health](manage-health-sets-and-server-health-exchange-2013-help.md).
 
@@ -151,7 +151,7 @@ There are four primary health groups:
 
   - **Server Components** The physical resources of the server, such as disk space, memory and networking
 
-  - **Dependency Availability** The server’s ability to access necessary dependencies, such as Active Directory, DNS, etc.
+  - **Dependency Availability** The server's ability to access necessary dependencies, such as Active Directory, DNS, etc.
 
 When the Exchange Management Pack is installed, System Center Operations Manager (SCOM) acts as a health portal for viewing information related to the Exchange environment. The SCOM dashboard includes three views of Exchange server health:
 

@@ -128,7 +128,7 @@ The following table describes the rule properties that are available in mail flo
 <td><p><em>Priority</em></p></td>
 <td><p>Indicates the order that the rules are applied to messages. The default priority is based on when the rule is created (older rules have a higher priority than newer rules, and higher priority rules are processed before lower priority rules).</p>
 <p>You change the rule priority in the EAC by moving the rule up or down in the list of rules. In the PowerShell, you set the priority number (0 is the highest priority).</p>
-<p>For example, if you have one rule to reject messages that include a credit card number, and another one requiring approval, you’ll want the reject rule to happen first, and stop applying other rules.</p>
+<p>For example, if you have one rule to reject messages that include a credit card number, and another one requiring approval, you'll want the reject rule to happen first, and stop applying other rules.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules">Set the priority of mail flow rules</a>.</p></td>
 </tr>
 <tr class="even">

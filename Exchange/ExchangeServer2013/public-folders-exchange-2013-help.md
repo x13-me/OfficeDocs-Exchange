@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization. Public folders help organize content in a deep hierarchy that’s easy to browse. Users will see the full hierarchy in Outlook, which makes it easy for them to browse for the content they’re interested in.
+Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization. Public folders help organize content in a deep hierarchy that's easy to browse. Users will see the full hierarchy in Outlook, which makes it easy for them to browse for the content they're interested in.
 
 
 > [!NOTE]
@@ -31,7 +31,7 @@ Public folders can also be used as an archiving method for distribution groups. 
 
 
 
-Public folders aren’t designed to do the following:
+Public folders aren't designed to do the following:
 
   - **Data archiving** Users who have mailbox limits sometimes use public folders instead of mailboxes to archive data. This practice isn't recommended because it affects storage in public folders and undermines the goal of mailbox limits. Instead, we recommend that you use [In-Place Archiving in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md) as your archiving solution.
 
@@ -61,7 +61,7 @@ Disaster recovery
 
 ## Public folder architecture
 
-In Exchange 2013, public folders were re-engineered using mailbox infrastructure to take advantage of the existing high availability and storage technologies of the mailbox database. Public folder architecture uses specially designed mailboxes to store both the public folder hierarchy and the content. This also means that there’s no longer a public folder database. High availability for the public folder mailboxes is provided by a database availability group (DAG). To learn more about DAGs, see [Database availability groups (DAGs)](database-availability-groups-dags-exchange-2013-help.md).
+In Exchange 2013, public folders were re-engineered using mailbox infrastructure to take advantage of the existing high availability and storage technologies of the mailbox database. Public folder architecture uses specially designed mailboxes to store both the public folder hierarchy and the content. This also means that there's no longer a public folder database. High availability for the public folder mailboxes is provided by a database availability group (DAG). To learn more about DAGs, see [Database availability groups (DAGs)](database-availability-groups-dags-exchange-2013-help.md).
 
 The main architectural components of public folders are the public folder mailboxes, which can reside in one or more mailbox databases.
 
@@ -75,7 +75,7 @@ There are two types of public folder mailboxes: the *primary hierarchy mailbox* 
 
 
 > [!NOTE]
-> Retention policies aren’t supported for public folder mailboxes.
+> Retention policies aren't supported for public folder mailboxes.
 
 
 
@@ -101,15 +101,15 @@ A secondary hierarchy mailbox will serve only public folder hierarchy informatio
 
 ## Public folder hierarchy
 
-The public folder hierarchy contains the folders’ properties and organizational information, including tree structure. Each public folder mailbox contains a copy of the public folder hierarchy. There’s only one writeable copy of the hierarchy, which is in the primary public folder mailbox. For a specific folder, the hierarchy information is used to identify the following:
+The public folder hierarchy contains the folders' properties and organizational information, including tree structure. Each public folder mailbox contains a copy of the public folder hierarchy. There's only one writeable copy of the hierarchy, which is in the primary public folder mailbox. For a specific folder, the hierarchy information is used to identify the following:
 
   - Permissions on the folder
 
-  - The folder’s position in the public folder tree, including its parent and child folders
+  - The folder's position in the public folder tree, including its parent and child folders
 
 
 > [!NOTE]
-> The hierarchy doesn’t store information about email addresses for mail-enabled public folders. The email addresses are stored on the directory object in Active Directory.
+> The hierarchy doesn't store information about email addresses for mail-enabled public folders. The email addresses are stored on the directory object in Active Directory.
 
 
 
@@ -119,7 +119,7 @@ The public folder hierarchy synchronization process uses Incremental Change Sync
 
 
 > [!IMPORTANT]
-> Because there’s only one writeable copy of the hierarchy, folder creation is proxied to the hierarchy mailbox by the content mailbox users are connected to.
+> Because there's only one writeable copy of the hierarchy, folder creation is proxied to the hierarchy mailbox by the content mailbox users are connected to.
 
 
 
@@ -129,11 +129,11 @@ For more information, see [Create a public folder](https://docs.microsoft.com/en
 
 ## Public folder content
 
-Public folder content can include email messages, posts, documents, and eForms. The content is stored in the public folder mailbox but isn’t replicated across multiple public folders mailboxes. All users access the same public folder mailbox for the same set of content. Although a full text search of public folder content is available, public folder content isn’t searchable across public folders and the content isn’t indexed by Exchange Search.
+Public folder content can include email messages, posts, documents, and eForms. The content is stored in the public folder mailbox but isn't replicated across multiple public folders mailboxes. All users access the same public folder mailbox for the same set of content. Although a full text search of public folder content is available, public folder content isn't searchable across public folders and the content isn't indexed by Exchange Search.
 
 
 > [!NOTE]
-> Outlook Web App is supported, but with limitations. You can add and remove favorite public folders and perform item-level operations such as creating, editing, deleting posts, and replying to posts. However, you can’t create or delete public folders from Outlook Web App. Also, only Mail, Post, Calendar, and Contact public folders can be added to the Favorites list in Outlook Web App.
+> Outlook Web App is supported, but with limitations. You can add and remove favorite public folders and perform item-level operations such as creating, editing, deleting posts, and replying to posts. However, you can't create or delete public folders from Outlook Web App. Also, only Mail, Post, Calendar, and Contact public folders can be added to the Favorites list in Outlook Web App.
 
 
 
@@ -143,21 +143,21 @@ You can migrate your public folders from pervious version of Exchange Server to 
 
 If you already have Exchange 2010 SP3 or Exchange 2007 SP3 RU10 public folders in your organization prior to installing Exchange 2013, you must migrate those public folders to Exchange 2013. To do this, use the **PublicFolderMigrationRequst** cmdlets. For more information, see [Use batch migration to migrate public folders to Exchange 2013 from previous versions](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md). If your organization is moving to Exchange Online, you can migrate your public folders to the cloud and upgrade them at the same time. For details, see [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders) and [Use batch migration to migrate Exchange 2013 public folders to Exchange Online](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders).
 
-Due to the changes in how public folders are stored, legacy Exchange mailboxes are unable to access the public folder hierarchy on Exchange 2013 servers or on Exchange Online. However, user mailboxes on Exchange 2013 servers or Exchange Online can connect to legacy public folders. Exchange 2013 public folders and legacy public folders can’t exist in your Exchange organization simultaneously. This effectively means that there’s no coexistence between versions. Migrating public folders to Exchange Server 2013 or Exchange Online is currently a one-time cutover process.
+Due to the changes in how public folders are stored, legacy Exchange mailboxes are unable to access the public folder hierarchy on Exchange 2013 servers or on Exchange Online. However, user mailboxes on Exchange 2013 servers or Exchange Online can connect to legacy public folders. Exchange 2013 public folders and legacy public folders can't exist in your Exchange organization simultaneously. This effectively means that there's no coexistence between versions. Migrating public folders to Exchange Server 2013 or Exchange Online is currently a one-time cutover process.
 
-For this reason, it’s recommended that prior to migrating your public folders, you should first migrate your legacy mailboxes to Exchange 2013 or Exchange Online. For more information about migrating mailboxes, see [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md), [Perform a cutover migration of email to Office 365](https://go.microsoft.com/fwlink/p/?linkid=536689), and [Perform a staged migration of email to Office 365](https://go.microsoft.com/fwlink/p/?linkid=536687).
+For this reason, it's recommended that prior to migrating your public folders, you should first migrate your legacy mailboxes to Exchange 2013 or Exchange Online. For more information about migrating mailboxes, see [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md), [Perform a cutover migration of email to Office 365](https://go.microsoft.com/fwlink/p/?linkid=536689), and [Perform a staged migration of email to Office 365](https://go.microsoft.com/fwlink/p/?linkid=536687).
 
 ## Public folder moves
 
-You can move public folders to a different public folder mailbox, and you can move public folder mailboxes to different mailbox databases. To move public folders to different public folder mailboxes, use the **PublicFolderMoveRequest** set of cmdlets. Subfolders under the public folder that’s being moved won’t be moved by default. If you want to move a branch of public folders, you can use the `Move-PublicFolderBranch.ps1` script that’s installed by default with Exchange 2013. For more information, see [Move a public folder to a different public folder mailbox](move-a-public-folder-to-a-different-public-folder-mailbox-exchange-2013-help.md).
+You can move public folders to a different public folder mailbox, and you can move public folder mailboxes to different mailbox databases. To move public folders to different public folder mailboxes, use the **PublicFolderMoveRequest** set of cmdlets. Subfolders under the public folder that's being moved won't be moved by default. If you want to move a branch of public folders, you can use the `Move-PublicFolderBranch.ps1` script that's installed by default with Exchange 2013. For more information, see [Move a public folder to a different public folder mailbox](move-a-public-folder-to-a-different-public-folder-mailbox-exchange-2013-help.md).
 
 In addition to moving public folders, you can move public folder mailboxes to different mailbox databases by using the **MoveRequest** set of cmdlets. This is the same set of cmdlets that are used for moving regular mailboxes. For more information, see [Move a public folder mailbox to a different mailbox database](move-a-public-folder-mailbox-to-a-different-mailbox-database-exchange-2013-help.md).
 
-**PublicFolderMoveRequest** cmdlets and the **MoveRequest** cmdlets use the Mailbox Replication Service to move public folders asynchronously. That means that the cmdlet doesn’t do the actual work and, during most of the move, the public folder and public folder mailboxes will still be available to users. Because the Mailbox Replication Service performs mailbox moves, import and export requests, and public folder move requests, it’s important to consider throttling and workload management.
+**PublicFolderMoveRequest** cmdlets and the **MoveRequest** cmdlets use the Mailbox Replication Service to move public folders asynchronously. That means that the cmdlet doesn't do the actual work and, during most of the move, the public folder and public folder mailboxes will still be available to users. Because the Mailbox Replication Service performs mailbox moves, import and export requests, and public folder move requests, it's important to consider throttling and workload management.
 
 ## Public folder quotas
 
-When created, public folder mailboxes automatically inherit the size limits of the mailbox database defaults. As a result, to accurately evaluate the current storage quota status when using the [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\)) cmdlet, you must review at the *UseDatabaseQuotaDefaults* property in addition to the *ProhibitSendQuota*, *ProhibitSendReceiveQuota*, and *IssueWarningQuota* properties. If the *UseDatabaseQuotaDefaults* property is set to `true`, the per-mailbox settings are ignored and the mailbox database limits are used. If this property is set to `true` and the *ProhibitSendQuota*, *ProhibitSendReceiveQuota*, and *IssueWarningQuota* properties are set to `unlimited`, the mailbox size isn’t really unlimited. Instead, you must use the **Get-MailboxDatabase** cmdlet and review the mailbox database storage limits to find out what the limits for the mailbox are. If the *UseDatabaseQuotaDefaults* property is set to `false`, the per-mailbox settings are used. In Exchange 2013, the default mailbox database quota limits are as follows:
+When created, public folder mailboxes automatically inherit the size limits of the mailbox database defaults. As a result, to accurately evaluate the current storage quota status when using the [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\)) cmdlet, you must review at the *UseDatabaseQuotaDefaults* property in addition to the *ProhibitSendQuota*, *ProhibitSendReceiveQuota*, and *IssueWarningQuota* properties. If the *UseDatabaseQuotaDefaults* property is set to `true`, the per-mailbox settings are ignored and the mailbox database limits are used. If this property is set to `true` and the *ProhibitSendQuota*, *ProhibitSendReceiveQuota*, and *IssueWarningQuota* properties are set to `unlimited`, the mailbox size isn't really unlimited. Instead, you must use the **Get-MailboxDatabase** cmdlet and review the mailbox database storage limits to find out what the limits for the mailbox are. If the *UseDatabaseQuotaDefaults* property is set to `false`, the per-mailbox settings are used. In Exchange 2013, the default mailbox database quota limits are as follows:
 
   - *Issue warning quota*: 1.9 GB
 

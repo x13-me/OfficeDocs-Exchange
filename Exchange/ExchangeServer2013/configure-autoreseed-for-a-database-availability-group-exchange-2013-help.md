@@ -120,7 +120,7 @@ For every volume that will be used for databases (including spare volumes), use 
 
   - C:\\ExchangeVolumes\\Volume3
 
-The names of the mounted folders can be any folder name, as long as the folders are mounted under the root volume’s path.
+The names of the mounted folders can be any folder name, as long as the folders are mounted under the root volume's path.
 
 ## How do you know this step worked?
 

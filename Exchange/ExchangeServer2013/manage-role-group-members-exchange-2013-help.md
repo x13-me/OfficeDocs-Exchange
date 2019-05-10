@@ -109,5 +109,5 @@ The members of a role group are granted the permissions provided by the manageme
 
 ## Use the Shell to view the members of a role group
 
-To view the members of a role group, see the “Examples” section in [Get-RoleGroupMember](https://technet.microsoft.com/en-us/library/dd638093\(v=exchg.150\)).
+To view the members of a role group, see the "Examples" section in [Get-RoleGroupMember](https://technet.microsoft.com/en-us/library/dd638093\(v=exchg.150\)).
 

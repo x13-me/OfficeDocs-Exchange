@@ -30,7 +30,7 @@ The following resources provide information about common tasks associated with S
 
 <div>
 
-## System Center 2012 – Operations Manager
+## System Center 2012 - Operations Manager
 
   - [Management Pack Life Cycle](https://go.microsoft.com/fwlink/p/?linkid=232986)
 

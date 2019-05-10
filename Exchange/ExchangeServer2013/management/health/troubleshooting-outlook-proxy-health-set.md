@@ -145,7 +145,7 @@ To troubleshoot this issue, follow these steps:
 
 2.  Create a test user account, and then log on to the CAS by using the test user account. For example, log on by using: https:// *\<servername\>*/owa.
 
-3.  Start IIS Manager, and then connect to the server that’s reporting the issue to determine the **MSExchangeOABAppPool** application pool is running on CAS server.
+3.  Start IIS Manager, and then connect to the server that's reporting the issue to determine the **MSExchangeOABAppPool** application pool is running on CAS server.
 
 4.  Click **Application Pools**, and then recycle the **MSExchangeRpcProxyAppPool** application pool by running the following command from the Shell:
     

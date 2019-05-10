@@ -19,7 +19,7 @@ You can use sharing policies to control how users in your Exchange organization 
 
 
 > [!IMPORTANT]
-> Creating a sharing policy is one of several steps in setting up federated sharing in your Exchange organization. You have to set up a federation trust with the Azure Active Directory authentication system for your on-premises Exchange organization before you can share calendar information with other federated Exchange organizations. A federation trust isn’t required for Internet sharing policies.
+> Creating a sharing policy is one of several steps in setting up federated sharing in your Exchange organization. You have to set up a federation trust with the Azure Active Directory authentication system for your on-premises Exchange organization before you can share calendar information with other federated Exchange organizations. A federation trust isn't required for Internet sharing policies.
 
 
 

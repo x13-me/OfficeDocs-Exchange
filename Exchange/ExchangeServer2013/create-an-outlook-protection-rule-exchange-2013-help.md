@@ -60,9 +60,9 @@ For detailed syntax and parameter information, see [New-OutlookProtectionRule](h
 
 To verify that you have successfully created an Outlook protection rule, do the following:
 
-  - Run the [Get-OutlookProtectionRule](https://technet.microsoft.com/en-us/library/dd298004\(v=exchg.150\)) cmdlet to make sure that the rule has been created and to view the rule’s properties. For an example of how to retrieve an Outlook protection rule, see [Examples](https://technet.microsoft.com/en-us/dd298004\(exchg.150\)#examples) in **Get-OutlookProtectionRule**.
+  - Run the [Get-OutlookProtectionRule](https://technet.microsoft.com/en-us/library/dd298004\(v=exchg.150\)) cmdlet to make sure that the rule has been created and to view the rule's properties. For an example of how to retrieve an Outlook protection rule, see [Examples](https://technet.microsoft.com/en-us/dd298004\(exchg.150\)#examples) in **Get-OutlookProtectionRule**.
 
-  - Use Outlook 2010 to create a test message that meets the rule’s condition and make sure the rule is triggered on the client.
+  - Use Outlook 2010 to create a test message that meets the rule's condition and make sure the rule is triggered on the client.
     
 
     > [!NOTE]

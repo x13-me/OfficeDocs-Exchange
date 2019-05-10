@@ -15,7 +15,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-When you’re integrating Microsoft Lync Server with Exchange Unified Messaging (UM), you have to run the ExchUcUtil.ps1 script in the Shell. The ExchUcUtil.ps1 script does the following:
+When you're integrating Microsoft Lync Server with Exchange Unified Messaging (UM), you have to run the ExchUcUtil.ps1 script in the Shell. The ExchUcUtil.ps1 script does the following:
 
   - Creates a UM IP gateway for each Lync Server pool.
     
@@ -25,13 +25,13 @@ When you’re integrating Microsoft Lync Server with Exchange Unified Messaging 
 
 
 
-  - Creates a UM hunt group for each UM IP gateway. The pilot identifier of each hunt group specifies the UM SIP URI dial plan used by the Lync Server Front End pool or Standard Edition server that’s associated with the UM IP gateway.
+  - Creates a UM hunt group for each UM IP gateway. The pilot identifier of each hunt group specifies the UM SIP URI dial plan used by the Lync Server Front End pool or Standard Edition server that's associated with the UM IP gateway.
 
   - Grants Lync Server permission to read Active Directory UM container objects such as UM dial plans, auto attendants, UM IP gateways, and UM hunt groups.
 
 
 > [!IMPORTANT]
-> Each UM forest must be configured to trust the forest in which Lync Server 2013 is deployed, and the forest in which Lync Server 2013 is deployed must be configured to trust each UM forest. If Exchange UM is installed in multiple forests, the Exchange Server integration steps must be performed for each UM forest or you’ll have to specify the Lync Server domain. For example, <EM>ExchUcUtil.ps1 –Forest:&lt;lync-domain-controller-fqdn&gt;</EM>.
+> Each UM forest must be configured to trust the forest in which Lync Server 2013 is deployed, and the forest in which Lync Server 2013 is deployed must be configured to trust each UM forest. If Exchange UM is installed in multiple forests, the Exchange Server integration steps must be performed for each UM forest or you'll have to specify the Lync Server domain. For example, <EM>ExchUcUtil.ps1 -Forest:&lt;lync-domain-controller-fqdn&gt;</EM>.
 
 
 
@@ -41,7 +41,7 @@ For additional management tasks related to integrating Lync Server and Unified M
 
   - Estimated time to complete: 2 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions Cmdlets” entry in the [Exchange 2013 cmdlets](https://technet.microsoft.com/en-us/library/bb124413\(v=exchg.150\)) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions Cmdlets" entry in the [Exchange 2013 cmdlets](https://technet.microsoft.com/en-us/library/bb124413\(v=exchg.150\)) topic.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -53,7 +53,7 @@ For additional management tasks related to integrating Lync Server and Unified M
 
 ## Use the Shell to run the ExchUcUtil.ps1 script
 
-Run the ExchUcUtil.ps1 script on any Exchange server in your organization that’s in the same topology as Microsoft Lync Server. You can run the script from a Mailbox server using the Shell or you can run the script using Remote Windows PowerShell on a Client Access server. If you run the script on a Client Access server in your organization, the Client Access server will proxy the Remote Windows PowerShell session to a Mailbox server in the organization.
+Run the ExchUcUtil.ps1 script on any Exchange server in your organization that's in the same topology as Microsoft Lync Server. You can run the script from a Mailbox server using the Shell or you can run the script using Remote Windows PowerShell on a Client Access server. If you run the script on a Client Access server in your organization, the Client Access server will proxy the Remote Windows PowerShell session to a Mailbox server in the organization.
 
 
 > [!IMPORTANT]
@@ -69,7 +69,7 @@ Run the ExchUcUtil.ps1 script on any Exchange server in your organization that�
 
 1.  Open the Exchange Management Shell.
 
-2.  At the `C:\Windows\System32` prompt, type **cd “\<drive letter\>\\Program Files\\Microsoft\\Exchange Server\\V15\\Scripts\>.ExchUcUtil.ps1”**, and then press Enter.
+2.  At the `C:\Windows\System32` prompt, type **cd "\<drive letter\>\\Program Files\\Microsoft\\Exchange Server\\V15\\Scripts\>.ExchUcUtil.ps1"**, and then press Enter.
 
 ## How do you know this worked?
 

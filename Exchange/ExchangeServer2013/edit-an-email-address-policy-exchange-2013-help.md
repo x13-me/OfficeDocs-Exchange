@@ -49,9 +49,9 @@ For additional management tasks related to email address policies, see [Email ad
 
 3.  In **Email Address Policy**, click **Apply to** and modify the settings.
 
-## Use the EAC to change the email address policy’s priority
+## Use the EAC to change the email address policy's priority
 
-A user can have multiple proxy email addresses for the same email account (for example, ayla@exchange.mail.contoso.com or ayla@contoso.com). These email addresses can then be applied by priority. For example, consider this scenario: you have two email address policies, and you assign them priorities of 1 and 2. If you create another policy, it will automatically be assigned a priority of 3. However, let’s say you have two policies, and you specify that one of them is priority 1, but the other policy was assigned a default priority of 2 when it was created. In this case, the next policy you create will, by default, become the priority 2 policy. The previous priority 2 policy will be assigned a priority of 3.
+A user can have multiple proxy email addresses for the same email account (for example, ayla@exchange.mail.contoso.com or ayla@contoso.com). These email addresses can then be applied by priority. For example, consider this scenario: you have two email address policies, and you assign them priorities of 1 and 2. If you create another policy, it will automatically be assigned a priority of 3. However, let's say you have two policies, and you specify that one of them is priority 1, but the other policy was assigned a default priority of 2 when it was created. In this case, the next policy you create will, by default, become the priority 2 policy. The previous priority 2 policy will be assigned a priority of 3.
 
 1.  Navigate to **Mail flow** \> **Email address policies**.
 
