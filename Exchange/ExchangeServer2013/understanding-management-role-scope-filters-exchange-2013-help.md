@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Understanding management role scope filters: Exchange 2013 Help'
 TOCTitle: Understanding management role scope filters
 ms:assetid: 6acc2922-ee9c-41f1-8a0f-10a541e8c273
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298043(v=EXCHG.150)
 ms:contentKeyID: 49289288
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

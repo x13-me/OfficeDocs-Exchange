@@ -1,10 +1,14 @@
-﻿---
+---
 title: "What's new for transport rules: Exchange 2013 Help"
 TOCTitle: What's new for transport rules
 ms:assetid: 0c2fc0b5-3cd2-4d79-aa2b-0c7622ae15a8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150483(v=EXCHG.150)
 ms:contentKeyID: 47559940
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

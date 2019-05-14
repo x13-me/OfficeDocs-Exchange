@@ -1,8 +1,8 @@
 ---
 title: "Edge Transport servers in Exchange 2013/Exchange 2007 hybrid deployments"
-ms.author: dstrome
-author: dstrome
-manager: serdars
+ms.author: chrisda
+author: chrisda
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

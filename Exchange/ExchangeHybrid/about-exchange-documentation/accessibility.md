@@ -1,8 +1,8 @@
 ---
 title: "Accessibility for people with disabilities"
-ms.author: scotv
-author: scotvidican
-manager: scotv
+ms.author: dmaguire
+author: msdmaguire
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

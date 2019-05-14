@@ -1,8 +1,8 @@
 ---
 title: "Third-party copyright notices"
-ms.author: scotv
-author: scotvidican
-manager: scotv
+ms.author: dmaguire
+author: msdmaguire
+manager: dansimp
 ms.audience: End User
 ms.topic: article
 ms.prod: exchange-server-it-pro
