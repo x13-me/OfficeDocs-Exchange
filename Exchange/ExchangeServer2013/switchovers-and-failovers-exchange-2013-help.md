@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Switchovers and Failovers: Exchange 2013 Help'
 TOCTitle: Switchovers and Failovers
 ms:assetid: 75388645-cae1-402e-bf02-c4949d3e2c31
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298067(v=EXCHG.150)
 ms:contentKeyID: 62549505
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

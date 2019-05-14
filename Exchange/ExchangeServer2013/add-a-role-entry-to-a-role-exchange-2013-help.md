@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Add a role entry to a role: Exchange 2013 Help'
 TOCTitle: Add a role entry to a role
 ms:assetid: 30cd37bc-b3e8-4f39-a8ba-a4c20b1b27b7
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335180(v=EXCHG.150)
 ms:contentKeyID: 49289216
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

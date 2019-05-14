@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Set the TCP listening port on a Client Access server: Exchange 2013 Help'
 TOCTitle: Set the TCP listening port on a Client Access server
 ms:assetid: 5f48f21a-d8d4-48b2-868f-9a3647693841
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673530(v=EXCHG.150)
 ms:contentKeyID: 49315433
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

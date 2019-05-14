@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting Compliance Health Set
 TOCTitle: Troubleshooting Compliance Health Set
 ms:assetid: d8b6f1f4-1172-4413-acd0-ee694d919c0b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.compliance(v=EXCHG.150)
 ms:contentKeyID: 49720898
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

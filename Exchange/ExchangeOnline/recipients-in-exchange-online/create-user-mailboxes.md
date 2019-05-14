@@ -6,6 +6,7 @@ author: kwekua
 ms.author: kwekua
 ms.assetid: 6ed2f969-6c03-4b45-8e2d-05de787de48d
 ms.date: 12/9/2016
+ms.reviewer: 
 title: Create user mailboxes in Exchange Online
 ms.collection: 
 - exchange-online

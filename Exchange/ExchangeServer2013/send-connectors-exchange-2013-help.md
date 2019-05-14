@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Send connectors: Exchange 2013 Help'
 TOCTitle: Send connectors
 ms:assetid: 6aa19a12-c7b2-4eac-a8dc-9a4d26919ac5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998662(v=EXCHG.150)
 ms:contentKeyID: 49289286
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Receive connector procedures: Exchange 2013 Help'
 TOCTitle: Receive connector procedures
 ms:assetid: 86f7d6e7-a869-4c90-a570-0239fd0e5872
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657465(v=EXCHG.150)
 ms:contentKeyID: 49289331
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

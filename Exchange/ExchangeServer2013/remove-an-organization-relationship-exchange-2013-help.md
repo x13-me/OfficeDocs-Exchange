@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Remove an organization relationship: Exchange 2013 Help'
 TOCTitle: Remove an organization relationship
 ms:assetid: ff211394-f58b-4da7-bb3a-df6abcb5950e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657513(v=EXCHG.150)
 ms:contentKeyID: 49289477
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

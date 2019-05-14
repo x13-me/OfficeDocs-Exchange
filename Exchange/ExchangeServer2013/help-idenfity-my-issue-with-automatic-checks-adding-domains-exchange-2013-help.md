@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Help idenfity issue with automatic checks - adding domains'
 TOCTitle: Help Idenfity My Issue with Automatic Checks - Adding Domains
 ms:assetid: ea90a24b-7c9c-48d5-9475-0eb7777452f3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn793981(v=EXCHG.150)
 ms:contentKeyID: 62632395
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

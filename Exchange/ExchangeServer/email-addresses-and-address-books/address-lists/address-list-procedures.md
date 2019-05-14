@@ -8,6 +8,8 @@ ms.prod: exchange-server-it-pro
 ms.assetid: 236e8530-62dd-4c43-8a5d-8465623252e6
 ms.collection: exchange-server
 ms.date: 7/6/2018
+ms.reviewer: 
+manager: dansimp
 ms.audience: ITPro
 title: Procedures for address lists in Exchange Server
 

@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: e45e33c9-e53b-427c-ada5-70901bc399b8
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Organization-wide disclaimers, signatures, footers, or headers in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

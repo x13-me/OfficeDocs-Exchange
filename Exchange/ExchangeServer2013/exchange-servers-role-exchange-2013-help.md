@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Exchange Servers role: Exchange 2013 Help'
 TOCTitle: Exchange Servers role
 ms:assetid: 5a626746-8d23-409c-a604-7e565c429990
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876887(v=EXCHG.150)
 ms:contentKeyID: 49289259
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

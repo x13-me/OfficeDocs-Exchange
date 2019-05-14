@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Remove a role: Exchange 2013 Help'
 TOCTitle: Remove a role
 ms:assetid: 2fb6f453-f37a-4636-8353-3f9927f81298
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335178(v=EXCHG.150)
 ms:contentKeyID: 49289213
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

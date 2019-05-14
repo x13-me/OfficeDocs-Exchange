@@ -1,8 +1,8 @@
 ---
 title: "Hybrid Configuration wizard"
-ms.author: dstrome
-author: dstrome
-manager: serdars
+ms.author: chrisda
+author: chrisda
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -13,6 +13,7 @@ ms.collection:
 - Hybrid
 - M365-email-calendar
 ms.assetid: 2e6ed294-ee74-4038-8b71-b61786372ba4
+ms.reviewer: 
 description: ""
 ---
 

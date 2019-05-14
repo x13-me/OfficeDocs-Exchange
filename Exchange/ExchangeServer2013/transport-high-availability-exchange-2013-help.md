@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Transport high availability: Exchange 2013 Help'
 TOCTitle: Transport high availability
 ms:assetid: e9ec6d05-f441-4cca-8592-8f7469948299
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657506(v=EXCHG.150)
 ms:contentKeyID: 49289447
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

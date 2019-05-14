@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'IPv6 support in Exchange 2013: Exchange 2013 Help'
 TOCTitle: IPv6 support in Exchange 2013
 ms:assetid: 33543023-eb9a-4102-b990-84a818a52814
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg144561(v=EXCHG.150)
 ms:contentKeyID: 48384951
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

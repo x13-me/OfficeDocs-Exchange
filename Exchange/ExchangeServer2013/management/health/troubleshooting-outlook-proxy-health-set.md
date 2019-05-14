@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting Outlook.Proxy Health Set
 TOCTitle: Troubleshooting Outlook.Proxy Health Set
 ms:assetid: a85585c9-433e-4aa4-b016-28782a18144e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.outlook.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720847
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

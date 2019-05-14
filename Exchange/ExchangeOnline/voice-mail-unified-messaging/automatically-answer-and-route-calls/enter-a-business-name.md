@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: You can enter the name of your business in the Business name box on a UM auto attendant. By default, no business name is entered. If you enter a business name, a default greeting prompt with the business name will be played to callers when they call in to the Unified Messaging (UM) auto attendant.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: a0e7cb24-0f55-442d-8ae2-21b177940b78
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Enter a business name
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

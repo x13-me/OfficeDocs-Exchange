@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Global updates required: Exchange 2013 Help'
 TOCTitle: Global updates required
 ms:assetid: 0530f3c6-6fa6-456b-a33a-f3d2f7eaa2ef
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.globalupdaterequired(v=EXCHG.150)
 ms:contentKeyID: 46628788
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

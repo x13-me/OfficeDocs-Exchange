@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Checklist: Upgrade Exchange 2010 UM to Exchange 2013 UM: Exchange 2013 Help'
 TOCTitle: 'Checklist: Upgrade Exchange 2010 UM to Exchange 2013 UM'
 ms:assetid: 799bd1b1-a918-4bd8-911e-e6ca08bd7b52
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn169228(v=EXCHG.150)
 ms:contentKeyID: 53382782
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

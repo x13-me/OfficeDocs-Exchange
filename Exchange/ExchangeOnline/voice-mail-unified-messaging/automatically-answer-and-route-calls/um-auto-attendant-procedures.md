@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: Set up a UM auto attendant
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 9e59d68f-e11a-49b0-ac6b-88061761fd45
 ms.date: 11/17/2014
+ms.reviewer: 
 title: UM auto attendant procedures
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

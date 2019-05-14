@@ -5,6 +5,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 9496e93c-1e59-41a8-9bb3-6e8df0cd81b4
 ms.date: 
+ms.reviewer: 
 description: "As part of an Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Office 365. When you do this all at one time, it's called a cutover migration. Choosing a cutover migration is suggested when:"
 title: Migrate email using the Exchange cutover method
 ms.collection: 
@@ -19,7 +20,7 @@ search.appverid:
 ms.audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

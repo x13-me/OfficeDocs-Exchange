@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'TLS functionality and related terminology: Exchange 2013 Help'
 TOCTitle: TLS functionality and related terminology
 ms:assetid: 294ba2a9-892d-4a90-beec-9d298426b5f4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb430753(v=EXCHG.150)
 ms:contentKeyID: 50934214
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

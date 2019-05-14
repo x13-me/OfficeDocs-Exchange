@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Organization-wide disclaimers, signatures, footers, or headers'
 TOCTitle: Organization-wide disclaimers, signatures, footers, or headers
 ms:assetid: e45e33c9-e53b-427c-ada5-70901bc399b8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn600437(v=EXCHG.150)
 ms:contentKeyID: 61071241
 ms.date: 01/18/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

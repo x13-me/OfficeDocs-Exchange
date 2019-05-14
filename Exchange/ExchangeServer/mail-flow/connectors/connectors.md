@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 73559b0c-fc0e-41fd-84df-d07442137a0c
 ms.date:
+ms.reviewer: 
 title: Connectors, Exchange connector, Exchange send connector, Exchange receive connector
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

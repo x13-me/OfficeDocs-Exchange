@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 03003544-e802-4988-9427-5fc4da64dcb8
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Understanding back pressure
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

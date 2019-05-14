@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Fully-qualified domain name of the computer matches a recipient policy'
 TOCTitle: The fully-qualified domain name of the computer matches a recipient policy_ServerFQDNMatchesSMTPPolicy
 ms:assetid: f3ea61f8-1788-4cbf-814e-f7c088c1ac47
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.serverfqdnmatchessmtppolicy(v=EXCHG.150)
 ms:contentKeyID: 46629176
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

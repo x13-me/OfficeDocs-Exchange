@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: Configure Protected Voice Mail from authenticated callers
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 8547fc92-58f6-40f1-9685-3d43ba9b64a0
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Protected Voice Mail procedures
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

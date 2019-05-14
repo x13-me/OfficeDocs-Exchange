@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Deployment reference: Exchange 2013 Help'
 TOCTitle: Deployment reference
 ms:assetid: 1999c070-1441-4605-b36b-118a5d78defe
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150490(v=EXCHG.150)
 ms:contentKeyID: 47559952
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

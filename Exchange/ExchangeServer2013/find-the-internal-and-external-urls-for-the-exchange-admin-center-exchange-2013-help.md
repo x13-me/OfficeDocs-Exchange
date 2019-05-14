@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Find internal and external URLs for the Exchange admin center'
 TOCTitle: Find the internal and external URLs for the Exchange admin center
 ms:assetid: 3ddb30ff-a405-4b9d-8d77-2d7a3a5ab8fa
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ680108(v=EXCHG.150)
 ms:contentKeyID: 49558154
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

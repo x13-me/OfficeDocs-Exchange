@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enter your Exchange 2013 product key: Exchange 2013 Help'
 TOCTitle: Enter your Exchange 2013 product key
 ms:assetid: ccb14685-4bdc-42a4-a985-35cd2a1a415c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124582(v=EXCHG.150)
 ms:contentKeyID: 50643913
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.EnterProductKeyWizardForm.EnterProductKeyWizardPage

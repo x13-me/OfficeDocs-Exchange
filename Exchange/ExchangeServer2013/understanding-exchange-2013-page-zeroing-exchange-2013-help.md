@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Understanding Exchange 2013 page zeroing: Exchange 2013 Help'
 TOCTitle: Understanding Exchange 2013 page zeroing
 ms:assetid: 0ca7b188-efbc-4c0d-bcfe-5138cffc803c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg549096(v=EXCHG.150)
 ms:contentKeyID: 62279321
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

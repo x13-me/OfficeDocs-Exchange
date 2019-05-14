@@ -2,7 +2,7 @@
 title: "Configure document collaboration with OneDrive for Business and Exchange 2016 on-premises"
 ms.author: dmaguire
 author: msdmaguire
-manager: serdars
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -12,6 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: 799518aa-7cfe-4708-92ee-98057ff168f5
+ms.reviewer: 
 description: "Summary: How to allow your on-premises Exchange Server 2016 users to take advantage of using document collaboration with OneDrive for Business and SharePoint Online while in a hybrid configuration."
 ---
 

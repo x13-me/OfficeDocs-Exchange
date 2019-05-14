@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Test and troubleshoot with the Test-UMConnectivity cmdlet'
 TOCTitle: Testing and troubleshooting with the Test-UMConnectivity cmdlet
 ms:assetid: 08e67a99-e37f-4afd-bd58-455b62580af7
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa995978(v=EXCHG.150)
 ms:contentKeyID: 55129207
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

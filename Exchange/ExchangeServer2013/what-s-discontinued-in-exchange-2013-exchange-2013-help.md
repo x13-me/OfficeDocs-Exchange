@@ -1,10 +1,14 @@
-﻿---
+---
 title: "What's discontinued in Exchange 2013: Exchange 2013 Help"
 TOCTitle: What's discontinued in Exchange 2013
 ms:assetid: 0ac0001c-b314-4108-b895-d9c0e271b489
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ619283(v=EXCHG.150)
 ms:contentKeyID: 49289156
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

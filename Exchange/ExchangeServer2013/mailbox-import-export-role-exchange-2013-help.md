@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Mailbox Import Export role: Exchange 2013 Help'
 TOCTitle: Mailbox Import Export role
 ms:assetid: d7cdce7a-6c46-4750-b237-d1c1773e8d28
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee633482(v=EXCHG.150)
 ms:contentKeyID: 49289427
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

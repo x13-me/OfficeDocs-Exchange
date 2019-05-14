@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure Anti-Spam Settings on Mailboxes: Exchange 2013 Help'
 TOCTitle: Configure Anti-Spam Settings on Mailboxes
 ms:assetid: 868d7fd8-e817-46ba-9b67-edf2f50b9494
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb123559(v=EXCHG.150)
 ms:contentKeyID: 49345051
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

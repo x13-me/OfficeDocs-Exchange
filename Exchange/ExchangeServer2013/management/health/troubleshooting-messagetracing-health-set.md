@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting MessageTracing Health Set
 TOCTitle: Troubleshooting MessageTracing Health Set
 ms:assetid: 58a53525-9479-4377-9a2e-641bac6f3ad3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.messagetracing(v=EXCHG.150)
 ms:contentKeyID: 49720786
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure the Availability service for cross-forest topologies'
 TOCTitle: Configure the Availability service for cross-forest topologies
 ms:assetid: f1e7d407-f0d3-47a7-8cc3-03c5980445d5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125182(v=EXCHG.150)
 ms:contentKeyID: 51588094
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Messaging policy and compliance: Exchange 2013 Help'
 TOCTitle: Messaging policy and compliance
 ms:assetid: 65f20a20-27a4-4f6e-9b27-f8705d65b8d9
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998599(v=EXCHG.150)
 ms:contentKeyID: 48385169
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

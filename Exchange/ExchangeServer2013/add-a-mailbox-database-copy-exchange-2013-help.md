@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Add a mailbox database copy: Exchange 2013 Help'
 TOCTitle: Add a mailbox database copy
 ms:assetid: 784bf48f-8af5-422c-a63f-2f01fc0cf151
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298080(v=EXCHG.150)
 ms:contentKeyID: 48385258
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

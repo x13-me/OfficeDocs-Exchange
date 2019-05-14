@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Content filtering: Exchange 2013 Help'
 TOCTitle: Content filtering
 ms:assetid: d660ffbf-de05-46c2-940b-5200eca94e0a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124739(v=EXCHG.150)
 ms:contentKeyID: 49248690
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

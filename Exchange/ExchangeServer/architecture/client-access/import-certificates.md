@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 43fbe354-ccfc-45b0-9fbc-4b23c6c5ccf4
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Import or install a certificate on an Exchange server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

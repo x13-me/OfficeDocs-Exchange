@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting AntiSpam Health Set
 TOCTitle: Troubleshooting AntiSpam Health Set
 ms:assetid: 54f5f7e0-fba6-48cf-96e3-b3eb208109f3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.antispam(v=EXCHG.150)
 ms:contentKeyID: 49720782
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

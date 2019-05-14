@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Active Directory domain is mixed mode_LocalDomainModeMixed: Exchange 2013 Help'
 TOCTitle: Active Directory domain is mixed mode_LocalDomainModeMixed
 ms:assetid: a6affcfe-7264-455b-8e5c-683fa87383f1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.localdomainmodemixed(v=EXCHG.150)
 ms:contentKeyID: 46629068
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

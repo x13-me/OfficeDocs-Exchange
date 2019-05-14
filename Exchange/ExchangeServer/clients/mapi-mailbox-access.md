@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: c2c6718c-a2c0-4ed2-b4ed-364c3cb1f592
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Enable or disable MAPI access to mailboxes in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

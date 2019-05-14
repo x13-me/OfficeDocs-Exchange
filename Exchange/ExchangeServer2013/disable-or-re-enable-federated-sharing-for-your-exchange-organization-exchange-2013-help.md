@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Disable or re-enable federated sharing for your Exchange organization'
 TOCTitle: Disable or Re-enable federated sharing for your Exchange organization
 ms:assetid: d36490d8-0268-47b9-a6d4-e56427f1b02e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657497(v=EXCHG.150)
 ms:contentKeyID: 49289421
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

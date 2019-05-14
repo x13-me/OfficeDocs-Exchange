@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting ClientAccess.Proxy Health Set
 TOCTitle: Troubleshooting ClientAccess.Proxy Health Set
 ms:assetid: 9dca0c8d-ddde-4853-81e5-9416d3a4a2c2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.clientaccess.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720841
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

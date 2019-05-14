@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Connect to a server in Queue Viewer: Exchange 2013 Help'
 TOCTitle: Connect to a server in Queue Viewer
 ms:assetid: 6c1ad574-9ab5-4dcc-9398-ec10eca4fd11
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998669(v=EXCHG.150)
 ms:contentKeyID: 49286846
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Register Filter Pack IFilters with Exchange 2013: Exchange 2013 Help'
 TOCTitle: Register Filter Pack IFilters with Exchange 2013
 ms:assetid: 0338980f-3a64-49d3-bc3c-bf6f10f88cb4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ837174(v=EXCHG.150)
 ms:contentKeyID: 49940598
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

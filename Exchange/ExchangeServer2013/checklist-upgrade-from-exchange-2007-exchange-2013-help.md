@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Checklist: Upgrade from Exchange 2007: Exchange 2013 Help'
 TOCTitle: 'Checklist: Upgrade from Exchange 2007'
 ms:assetid: 53aaa370-4562-43e4-9b75-7a705400c5a5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff805032(v=EXCHG.150)
 ms:contentKeyID: 50874004
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

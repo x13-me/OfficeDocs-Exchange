@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'High availability and site resilience: Exchange 2013 Help'
 TOCTitle: High availability and site resilience
 ms:assetid: 6628285e-d07c-443d-866b-be784ad1ed1e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638137(v=EXCHG.150)
 ms:contentKeyID: 48385176
 ms.date: 12/15/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

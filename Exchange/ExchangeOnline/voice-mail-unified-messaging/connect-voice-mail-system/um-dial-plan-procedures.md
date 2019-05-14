@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: Create a UM dial plan
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 13db1242-4130-41fa-bde9-b4dff60fe1e6
 ms.date: 11/17/2014
+ms.reviewer: 
 title: UM dial plan procedures [EXO]
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

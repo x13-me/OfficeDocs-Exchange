@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 71fcbe4c-783b-4f77-aabb-a21aa7a4ef23
 ms.date: 7/27/2018
+ms.reviewer: 
 title: Install the Exchange management tools
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

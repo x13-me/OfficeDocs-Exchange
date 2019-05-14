@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting Autodiscover Health Set
 TOCTitle: Troubleshooting Autodiscover Health Set
 ms:assetid: bc933621-df73-4d1d-bdef-825b98be8e09
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.autodiscover(v=EXCHG.150)
 ms:contentKeyID: 49720860
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

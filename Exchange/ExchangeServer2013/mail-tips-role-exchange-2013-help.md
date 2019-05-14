@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Mail Tips role: Exchange 2013 Help'
 TOCTitle: Mail Tips role
 ms:assetid: 74495ded-6097-4f10-a829-c8ed81f5ba3e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876909(v=EXCHG.150)
 ms:contentKeyID: 49289308
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

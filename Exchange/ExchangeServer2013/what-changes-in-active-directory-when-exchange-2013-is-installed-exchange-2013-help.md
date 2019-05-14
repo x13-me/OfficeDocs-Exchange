@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'What changes in Active Directory when Exchange 2013 is installed?'
 TOCTitle: What changes in Active Directory when Exchange 2013 is installed?
 ms:assetid: 07386078-6103-49a2-8698-2d41db9cec95
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn750898(v=EXCHG.150)
 ms:contentKeyID: 62380197
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

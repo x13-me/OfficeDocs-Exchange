@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting Outlook Health Set
 TOCTitle: Troubleshooting Outlook Health Set
 ms:assetid: 5df8a44a-0644-4574-bd61-30440b1816f3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.outlook(v=EXCHG.150)
 ms:contentKeyID: 49720798
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

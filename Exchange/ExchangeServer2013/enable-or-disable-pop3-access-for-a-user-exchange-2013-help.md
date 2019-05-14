@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable or disable POP3 access for a user: Exchange 2013 Help'
 TOCTitle: Enable or disable POP3 access for a user
 ms:assetid: 57e12f07-3b14-45bd-9a82-e6032d14214f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb691018(v=EXCHG.150)
 ms:contentKeyID: 49315250
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

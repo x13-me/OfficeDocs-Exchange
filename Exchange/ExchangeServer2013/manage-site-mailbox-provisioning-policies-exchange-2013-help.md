@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage site mailbox provisioning policies: Exchange 2013 Help'
 TOCTitle: Manage site mailbox provisioning policies
 ms:assetid: 2f160d1a-a031-461f-8d29-c9cd49ca1645
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ710340(v=EXCHG.150)
 ms:contentKeyID: 49382860
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

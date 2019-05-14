@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Receive Connectors role: Exchange 2013 Help'
 TOCTitle: Receive Connectors role
 ms:assetid: a7c5a086-5066-4ece-9b22-cc1048d2f2bc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876927(v=EXCHG.150)
 ms:contentKeyID: 49289368
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
