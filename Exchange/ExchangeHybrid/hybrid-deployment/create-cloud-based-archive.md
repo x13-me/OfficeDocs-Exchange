@@ -13,6 +13,7 @@ ms.collection:
 - Hybrid
 - M365-email-calendar
 ms.assetid: ecc0a687-6c05-47bd-a079-a43d83cba9ea
+ms.reviewer: 
 description: "In an Exchange hybrid deployment, you can configure an on-premises primary mailbox with a cloud-based archive mailbox in Exchange Online."
 ---
 

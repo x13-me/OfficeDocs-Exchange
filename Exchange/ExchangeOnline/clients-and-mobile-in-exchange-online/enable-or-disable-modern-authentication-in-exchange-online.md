@@ -4,6 +4,7 @@ ms.topic: article
 author: chrisda
 ms.author: chrisda
 ms.assetid: 58018196-f918-49cd-8238-56f57f38d662
+ms.reviewer: 
 description: Admins can learn how to require Modern Auth or require Basic Auth for connections to Exchange Online by Outlook 2013 or later.
 title: Enable modern authentication in Exchange Online
 ms.collection:

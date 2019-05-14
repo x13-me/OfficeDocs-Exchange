@@ -6,6 +6,7 @@ ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.assetid: da808e27-d2b7-4fbd-915c-a600751f526c
+ms.reviewer: 
 ms.collection: exchange-server
 description: 'Summary: Learn how to migrate Exchange 2010 public folders to Exchange 2016.'
 ms.audience: ITPro

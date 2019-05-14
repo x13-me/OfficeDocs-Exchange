@@ -12,6 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: 4b4370d5-1645-4b44-b4e0-c585fcaf970f
+ms.reviewer: 
 description: "When you install a server running Microsoft Exchange Server 2013 in your Exchange 2007 on-premises organization, the Exchange 2013 management tools are automatically installed on the server. You'll use the following tools to configure and manage hybrid functionality for both the on-premises Exchange and the Exchange Online organization:"
 ---
 

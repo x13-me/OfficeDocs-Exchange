@@ -12,6 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: 233f9f34-3ff5-47e1-a9e8-3244ee868d6e
+ms.reviewer: 
 description: "When you install an Exchange server, the Exchange management tools are automatically installed on the server. You'll use the following tools to configure and manage both the on-premises Exchange and the Exchange Online organization:"
 ---
 

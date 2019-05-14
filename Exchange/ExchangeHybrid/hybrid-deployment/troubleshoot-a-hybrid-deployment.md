@@ -12,6 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: bbae72f3-6a1e-4cbf-80da-d8f73d969c6b
+ms.reviewer: 
 description: "Configuring a hybrid deployment in Exchange with the Hybrid Configuration wizard greatly minimizes the potential that the hybrid deployment will experience problems. However, there are some typical areas outside the scope of the Hybrid Configuration wizard that, if misconfigured, may present problems in a hybrid deployment. This topic discusses the following common areas where problems may arise and outlines basic steps to verify or correct issues:"
 ---
 

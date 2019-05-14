@@ -12,6 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: 184dfcfe-4b8e-450a-adc6-e647213b9501
+ms.reviewer: 
 
 description: "Learn how to enable on-premises Exchange users to use Office 365 Groups in a hybrid deployment."
 ---

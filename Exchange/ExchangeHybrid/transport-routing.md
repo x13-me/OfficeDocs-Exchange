@@ -12,6 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: 36c2cea3-2e2f-40ac-88bd-7e1b6bd27828
+ms.reviewer: 
 description: "This topic discusses your routing options for inbound messages from the Internet and outbound messages to the Internet."
 ---
 

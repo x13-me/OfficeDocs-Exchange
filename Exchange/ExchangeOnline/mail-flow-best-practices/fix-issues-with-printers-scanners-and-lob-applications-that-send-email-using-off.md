@@ -5,6 +5,7 @@ ms.topic: troubleshooting
 author: chrisda
 ms.author: chrisda
 ms.assetid: c75542a8-c792-42c0-a8c5-291df987512d
+ms.reviewer: 
 title: Fix issues with printers, scanners, and LOB applications that send email using Office 365
 ms.collection: 
 - exchange-online
