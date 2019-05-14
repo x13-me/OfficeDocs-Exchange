@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'IPv6 support in Unified Messaging: Exchange 2013 Help'
 TOCTitle: IPv6 support in Unified Messaging
 ms:assetid: 91242c85-ce4e-422a-954e-ab623d3d6939
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150536(v=EXCHG.150)
 ms:contentKeyID: 47560052
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

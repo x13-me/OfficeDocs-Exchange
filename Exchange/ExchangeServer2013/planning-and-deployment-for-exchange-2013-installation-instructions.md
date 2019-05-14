@@ -1,10 +1,14 @@
-﻿---
+---
 title: Planning and deployment for Exchange 2013 (Installation instructions)
 TOCTitle: Planning and deployment
 ms:assetid: 692c59e3-f0b0-4cef-a66e-751aa740abae
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998636(v=EXCHG.150)
 ms:contentKeyID: 48385187
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

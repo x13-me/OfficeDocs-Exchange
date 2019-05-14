@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Prepare mailboxes for cross-forest move requests: Exchange 2013 Help'
 TOCTitle: Prepare mailboxes for cross-forest move requests
 ms:assetid: fdbed4fc-a77e-40d5-a211-863b05d74784
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee633491(v=EXCHG.150)
 ms:contentKeyID: 49360516
 ms.date: 11/22/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Appendix B: Additional resources'
 TOCTitle: 'Appendix B: Additional resources'
 ms:assetid: 3bcfb237-604a-4902-a003-b366cbf5a600
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn195905(v=EXCHG.150)
 ms:contentKeyID: 53181781
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

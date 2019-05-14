@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Transport decryption: Exchange 2013 Help'
 TOCTitle: Transport decryption
 ms:assetid: 4267c46d-f488-404d-a5cb-51f9127461c0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638122(v=EXCHG.150)
 ms:contentKeyID: 49319908
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

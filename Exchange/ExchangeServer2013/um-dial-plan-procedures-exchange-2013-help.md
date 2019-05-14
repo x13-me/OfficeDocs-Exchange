@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'UM dial plan procedures: Exchange 2013 Help'
 TOCTitle: UM dial plan procedures
 ms:assetid: 1bda77c8-c4e2-4ae0-a001-76ae029bf843
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ822152(v=EXCHG.150)
 ms:contentKeyID: 49980466
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

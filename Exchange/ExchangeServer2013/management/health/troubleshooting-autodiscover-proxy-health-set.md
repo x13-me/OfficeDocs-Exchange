@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting Autodiscover.Proxy Health Set
 TOCTitle: Troubleshooting Autodiscover.Proxy Health Set
 ms:assetid: b6a817cf-0b85-4620-adb7-cc3616c11268
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.autodiscover.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720876
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: "Setup can't install Exchange on a read-only domain controller"
 TOCTitle: Setup cannot install Exchange to a read-only domain controller_ComputerRODC
 ms:assetid: 4934d755-65be-47e2-86b0-6ea1ab148a96
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.computerrodc(v=EXCHG.150)
 ms:contentKeyID: 46628890
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Disable Internet calendar publishing: Exchange 2013 Help'
 TOCTitle: Disable Internet calendar publishing
 ms:assetid: f26dbf04-9dae-460f-a987-2ad3dfbc7b7e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ853047(v=EXCHG.150)
 ms:contentKeyID: 50390856
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

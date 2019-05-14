@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: bd0942c6-9c66-4b4c-b9bc-2f5f783def76
 ms.date: 7/3/2018
+ms.reviewer: 
 title: Import address rewrite entries on Edge Transport servers
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

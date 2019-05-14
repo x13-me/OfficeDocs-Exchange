@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 4e412710-9a74-4649-ab01-502e969a7eda
 ms.date: 6/24/2018
+ms.reviewer: 
 title: View statistics for public folders and public folder items
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: dansimp
 
 ---
 

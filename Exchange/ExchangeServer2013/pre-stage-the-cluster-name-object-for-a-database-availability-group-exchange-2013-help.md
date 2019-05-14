@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Pre-stage the cluster name object for a database availability group'
 TOCTitle: Pre-stage the cluster name object for a database availability group
 ms:assetid: 51ebf2f6-8a02-44ef-a489-ca361cb0f63a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff367878(v=EXCHG.150)
 ms:contentKeyID: 48385079
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

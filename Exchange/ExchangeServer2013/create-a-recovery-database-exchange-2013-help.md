@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a recovery database: Exchange 2013 Help'
 TOCTitle: Create a recovery database
 ms:assetid: 34d87491-b7b7-44a9-8d69-e1a9c1fe5852
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee332321(v=EXCHG.150)
 ms:contentKeyID: 48384961
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

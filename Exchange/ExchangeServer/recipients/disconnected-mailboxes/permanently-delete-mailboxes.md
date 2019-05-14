@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: Learn how to permanently delete a mailbox in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: SerdarSoysal
-ms.author: serdars
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: df35765a-0bef-4561-9846-d91d69c0269c
 ms.date: 6/12/2018
+ms.reviewer: 
 title: Permanently delete a mailbox
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

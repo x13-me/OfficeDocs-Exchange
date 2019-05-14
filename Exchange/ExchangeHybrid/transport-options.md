@@ -1,8 +1,8 @@
 ---
 title: "Transport options in Exchange hybrid deployments"
-ms.author: dstrome
-author: dstrome
-manager: serdars
+ms.author: chrisda
+author: chrisda
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -12,6 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: da605a78-5429-4de8-8b04-bc4c45a41ba1
+ms.reviewer: 
 description: "In hybrid deployments, you can have mailboxes that reside in your on-premises Exchange organization and also in an Exchange Online organization. A critical component of making these two separate organizations appear as one combined organization to users and messages exchanged between them is hybrid transport. With hybrid transport, messages sent between recipients in either organization are authenticated, encrypted, and transferred using Transport Layer Security (TLS). These messages appear as internal to Exchange components such as transport rules, journaling, and anti-spam policies. Hybrid transport is automatically configured by the Hybrid Configuration wizard."
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage mailbox restore requests: Exchange 2013 Help'
 TOCTitle: Manage mailbox restore requests
 ms:assetid: 8e668a52-c601-4d96-a51c-ab60267e1321
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ863437(v=EXCHG.150)
 ms:contentKeyID: 50387723
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

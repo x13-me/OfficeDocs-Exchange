@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'My Marketplace Apps role: Exchange 2013 Help'
 TOCTitle: My Marketplace Apps role
 ms:assetid: 5c208d2d-8f76-46a7-9d2e-7c616f21ee67
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657450(v=EXCHG.150)
 ms:contentKeyID: 49289263
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

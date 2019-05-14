@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Import address rewrite entries on Edge Transport servers: Exchange 2013 Help'
 TOCTitle: Import address rewrite entries on Edge Transport servers
 ms:assetid: bd0942c6-9c66-4b4c-b9bc-2f5f783def76
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb331966(v=EXCHG.150)
 ms:contentKeyID: 61200296
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

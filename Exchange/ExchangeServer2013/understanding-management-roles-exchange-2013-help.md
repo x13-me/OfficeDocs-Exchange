@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Understanding management roles: Exchange 2013 Help'
 TOCTitle: Understanding management roles
 ms:assetid: 887b0a64-84b1-4b8c-9547-e456ea6f5dbd
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298116(v=EXCHG.150)
 ms:contentKeyID: 49289340
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

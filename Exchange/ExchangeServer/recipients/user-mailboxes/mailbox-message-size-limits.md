@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: d1220685-14c0-4c4f-abb2-3920f3046212
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Configure message size limits for a mailbox
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

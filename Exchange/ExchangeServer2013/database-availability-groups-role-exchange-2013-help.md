@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Database Availability Groups role: Exchange 2013 Help'
 TOCTitle: Database Availability Groups role
 ms:assetid: 0b3e0f7a-21e5-4209-8d5b-b63c6b9de3cc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876847(v=EXCHG.150)
 ms:contentKeyID: 49289157
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

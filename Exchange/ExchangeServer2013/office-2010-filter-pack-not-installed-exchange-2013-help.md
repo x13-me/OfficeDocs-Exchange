@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Office 2010 Filter Pack not installed: Exchange 2013 Help'
 TOCTitle: Office 2010 Filter Pack not installed
 ms:assetid: 6a09ac9e-67a6-44db-94f0-aa8c89e94468
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.msfilterpackv2notinstalled(v=EXCHG.150)
 ms:contentKeyID: 47899800
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

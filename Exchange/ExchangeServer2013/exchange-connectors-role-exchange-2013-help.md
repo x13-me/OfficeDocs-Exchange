@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Exchange Connectors role: Exchange 2013 Help'
 TOCTitle: Exchange Connectors role
 ms:assetid: 73f98c82-bde0-443d-9bcf-274047e84e15
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876908(v=EXCHG.150)
 ms:contentKeyID: 49289307
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

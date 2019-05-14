@@ -1,10 +1,10 @@
 ---
 localization_priority: Normal
 ms.topic: article
-author: dstrome
+author: chrisda
 f1_keywords:
 - ms.exch.setupreadiness.IsServerCoreInstalled
-ms.author: dstrome
+ms.author: chrisda
 ms.assetid: 3d297c4f-7b5a-4faa-bf5e-320fe0529dfe
 monikerRange: exchserver-2016
 description: Exchange Server 2016 Setup can't continue because it detected that the local computer is running Windows Server Core or Windows Nano Server.
@@ -12,6 +12,8 @@ title: Windows Server Core or Windows Nano Server is installed [IsServerCoreInst
 ms.collection: exchange-server
 ms.audience: Developer
 ms.date: 6/12/2018
+ms.reviewer: 
+manager: dansimp
 ms.prod: exchange-server-it-pro
 
 ---

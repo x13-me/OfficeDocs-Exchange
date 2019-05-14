@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Group metrics and MailTips: Exchange 2013 Help'
 TOCTitle: Group metrics and MailTips
 ms:assetid: 74a55072-4ba9-45bb-a18f-41afbf3de30b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ674302(v=EXCHG.150)
 ms:contentKeyID: 49319920
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

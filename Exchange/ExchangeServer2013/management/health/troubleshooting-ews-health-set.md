@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting EWS Health Set
 TOCTitle: Troubleshooting EWS Health Set
 ms:assetid: f5aaacdd-7f4a-4d63-8440-1c564e644dfc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.ews(v=EXCHG.150)
 ms:contentKeyID: 49720924
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

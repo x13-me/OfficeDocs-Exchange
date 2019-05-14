@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'View performance counters for messaging records management: Exchange 2013 Help'
 TOCTitle: View performance counters for messaging records management
 ms:assetid: ec374d31-2797-4f8b-8c96-3839d01a662c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb397227(v=EXCHG.150)
 ms:contentKeyID: 50873815
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

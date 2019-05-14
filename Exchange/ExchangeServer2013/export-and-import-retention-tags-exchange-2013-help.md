@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Export and import retention tags: Exchange 2013 Help'
 TOCTitle: Export and import retention tags
 ms:assetid: 18405ea2-7ccc-475e-bd84-8b040e17bf44
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ907307(v=EXCHG.150)
 ms:contentKeyID: 50639770
 ms.date: 12/10/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

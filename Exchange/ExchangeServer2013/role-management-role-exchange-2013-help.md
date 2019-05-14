@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Role Management role: Exchange 2013 Help'
 TOCTitle: Role Management role
 ms:assetid: 71d8553c-150d-4306-8de0-89be6efb5e40
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876906(v=EXCHG.150)
 ms:contentKeyID: 49289304
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

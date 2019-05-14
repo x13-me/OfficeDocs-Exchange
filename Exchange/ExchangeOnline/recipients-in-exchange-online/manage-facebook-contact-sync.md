@@ -8,13 +8,14 @@ f1_keywords:
 ms.author: dmaguire
 ms.assetid: 0f7e88eb-2b47-41ef-aedf-add22937c658
 ms.date: 12/9/2016
+ms.reviewer: 
 title: Manage Facebook contact sync in your organization
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: Developer
 ms.service: exchange-online
-manager: laurawi
+manager: dansimp
 
 ---
 

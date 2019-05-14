@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Apply a sharing policy to mailboxes: Exchange 2013 Help'
 TOCTitle: Apply a sharing policy to mailboxes
 ms:assetid: dd4cc765-8469-4176-bb6e-d5b0f5235927
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657501(v=EXCHG.150)
 ms:contentKeyID: 49289435
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

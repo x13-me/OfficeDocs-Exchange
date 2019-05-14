@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Permanently delete a mailbox: Exchange 2013 Help'
 TOCTitle: Permanently delete a mailbox
 ms:assetid: df35765a-0bef-4561-9846-d91d69c0269c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ863440(v=EXCHG.150)
 ms:contentKeyID: 50387725
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

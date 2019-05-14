@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 681835cf-79fe-4aa7-8a28-4a39944d0efc
 ms.date: 7/26/2018
+ms.reviewer: 
 title: Deploy new installations of Exchange
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

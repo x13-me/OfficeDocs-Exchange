@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 056b29f6-e0e9-4974-b763-002518857a93
 ms.date: 6/8/2018
+ms.reviewer: 
 title: Plan Exchange 2016 integration with SharePoint and Skype for Business
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: scotv
+manager: dansimp
 
 ---
 

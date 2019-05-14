@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Messaging policy and compliance permissions: Exchange 2013 Help'
 TOCTitle: Messaging policy and compliance permissions
 ms:assetid: ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638205(v=EXCHG.150)
 ms:contentKeyID: 48385692
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

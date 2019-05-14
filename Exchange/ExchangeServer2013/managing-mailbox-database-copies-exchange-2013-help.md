@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Managing mailbox database copies: Exchange 2013 Help'
 TOCTitle: Managing mailbox database copies
 ms:assetid: 28cedf1d-365a-4e36-b2ba-6bf81af8684f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335158(v=EXCHG.150)
 ms:contentKeyID: 48384912
 ms.date: 08/26/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

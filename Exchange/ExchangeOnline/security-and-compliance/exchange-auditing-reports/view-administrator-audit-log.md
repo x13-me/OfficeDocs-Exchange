@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 5c62072a-556d-4fea-9973-d668c6b9fd57
 ms.date: 7/11/2018
+ms.reviewer: 
 title: View the administrator audit log
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: Admin
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

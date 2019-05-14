@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: cdaf6096-f23e-4e18-8130-40127e4a97be
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Database availability groups
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 3311562b-8fd3-4d66-a5f7-8e65a38c6b39
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Collaboration
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

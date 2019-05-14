@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'TNEF conversion options: Exchange 2013 Help'
 TOCTitle: TNEF conversion options
 ms:assetid: 989a62fc-4bc1-448f-90c8-7c7b56fe1084
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb310786(v=EXCHG.150)
 ms:contentKeyID: 50934221
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

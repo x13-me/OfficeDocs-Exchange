@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 989a62fc-4bc1-448f-90c8-7c7b56fe1084
 ms.date: 7/6/2018
+ms.reviewer: 
 title: TNEF conversion options
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

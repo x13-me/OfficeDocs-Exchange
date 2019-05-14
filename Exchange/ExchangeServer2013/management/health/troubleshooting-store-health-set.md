@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting Store Health Set
 TOCTitle: Troubleshooting Store Health Set
 ms:assetid: e9c84dd2-4436-41e6-98ff-3f7ac801614c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.store(v=EXCHG.150)
 ms:contentKeyID: 49720907
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

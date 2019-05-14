@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: In-Place Hold and Litigation Hold allow you to preserve mailbox content to meet regulatory compliance and eDiscovery requirements. Information about recipients directly addressed in the To and Cc fields of a message is included in all messages by default, but your organization may require the ability to search for and reproduce details about all recipients of a message.
 ms.topic: article
-author: SerdarSoysal
-ms.author: serdars
+author: chrisda
+ms.author: chrisda
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Preserve Bcc and expanded distribution group recipients for eDiscovery
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

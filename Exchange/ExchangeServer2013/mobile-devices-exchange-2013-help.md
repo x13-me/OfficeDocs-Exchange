@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Mobile devices: Exchange 2013 Help'
 TOCTitle: Mobile devices
 ms:assetid: 93a949e7-b3ef-43ea-ae0c-6698826fc8d2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232129(v=EXCHG.150)
 ms:contentKeyID: 49360512
 ms.date: 08/16/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

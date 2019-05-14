@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting EventAssistants Health Set
 TOCTitle: Troubleshooting EventAssistants Health Set
 ms:assetid: fdae7c16-2474-4fcc-9a4b-8fa1e15324c1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.eventassistants(v=EXCHG.150)
 ms:contentKeyID: 49720928
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

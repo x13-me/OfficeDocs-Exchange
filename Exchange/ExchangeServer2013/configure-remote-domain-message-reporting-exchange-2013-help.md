@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure remote domain message reporting: Exchange 2013 Help'
 TOCTitle: Configure remote domain message reporting
 ms:assetid: 73dc686a-e7a3-44c7-b82f-f52ff9273199
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ649325(v=EXCHG.150)
 ms:contentKeyID: 49318499
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

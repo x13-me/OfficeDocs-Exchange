@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 1e7df155-02a3-4daf-94f9-8ea46f041a3a
 ms.date: 
+ms.reviewer: 
 title: Journaling in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

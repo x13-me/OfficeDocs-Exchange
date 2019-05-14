@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: 9d15d8b8-e061-4288-9354-df58e282fb6b
 ms.date: 7/11/2018
+ms.reviewer: 
 title: View queued message properties in Queue Viewer
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

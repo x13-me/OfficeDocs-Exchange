@@ -5,6 +5,10 @@ ms.assetid: a1d277a0-5437-40af-aade-e4730a0d1308
 ms:mtpsurl: 
 ms:contentKeyID: 
 ms.date: 
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

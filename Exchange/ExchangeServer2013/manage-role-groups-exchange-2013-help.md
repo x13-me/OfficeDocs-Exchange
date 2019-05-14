@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage role groups: Exchange 2013 Help'
 TOCTitle: Manage role groups
 ms:assetid: ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657480(v=EXCHG.150)
 ms:contentKeyID: 49289369
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

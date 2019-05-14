@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure mail flow and client access: Exchange 2013 Help'
 TOCTitle: Configure mail flow and client access
 ms:assetid: 4acc7f2a-93ce-468c-9ace-d5f7eecbd8d4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ218640(v=EXCHG.150)
 ms:contentKeyID: 48385058
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

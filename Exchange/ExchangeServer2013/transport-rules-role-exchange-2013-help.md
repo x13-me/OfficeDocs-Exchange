@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Transport Rules role: Exchange 2013 Help'
 TOCTitle: Transport Rules role
 ms:assetid: 53c5b1a5-e989-4373-ac70-7db16000c645
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876885(v=EXCHG.150)
 ms:contentKeyID: 49289254
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

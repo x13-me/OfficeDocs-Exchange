@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage attachment filtering on Edge Transport servers: Exchange 2013 Help'
 TOCTitle: Manage attachment filtering on Edge Transport servers
 ms:assetid: 2ec91cc6-6ade-48ee-88bb-66153874393d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997139(v=EXCHG.150)
 ms:contentKeyID: 61200281
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

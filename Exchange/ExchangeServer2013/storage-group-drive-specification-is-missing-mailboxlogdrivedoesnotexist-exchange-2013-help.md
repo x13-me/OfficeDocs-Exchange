@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Storage group drive specification is missing'
 TOCTitle: Storage group drive specification is missing_MailboxLogDriveDoesNotExist
 ms:assetid: fe210f29-60cb-4d34-877e-1356a21dc02a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.mailboxlogdrivedoesnotexist(v=EXCHG.150)
 ms:contentKeyID: 46629193
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
