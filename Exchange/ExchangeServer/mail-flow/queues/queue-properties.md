@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: fbfbdcab-e0d2-4ed9-8f7f-e5fa2c87360d
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Queue properties in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

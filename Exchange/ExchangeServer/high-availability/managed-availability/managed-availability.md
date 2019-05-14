@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: ceb99e6f-6dca-446d-abfb-3e6fc6a72704
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Managed availability
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

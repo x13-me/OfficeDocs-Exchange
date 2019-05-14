@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 5433c1d3-ad2e-4f82-b50d-b67964b32f26
 ms.date: 7/10/2018
+ms.reviewer: 
 title: Find queues and messages in queues in the Exchange Management Shell
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

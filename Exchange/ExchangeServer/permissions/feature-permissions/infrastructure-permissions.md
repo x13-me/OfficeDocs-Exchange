@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 3646a4e8-36b2-41fb-89a4-79b0963fcb11
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Exchange infrastructure and PowerShell permissions
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
