@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create an Email Address Policy: Exchange 2013 Help'
 TOCTitle: Create an Email Address Policy
 ms:assetid: eb2bf42e-2058-4e17-85d5-97546433b40a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125137(v=EXCHG.150)
 ms:contentKeyID: 49289449
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.NewEmailAddressPolicyWizardForm.EmailAddressPolicyIntroductionPage
@@ -136,7 +140,7 @@ For detailed instructions about how to create an email address policy, see the f
     
 
     > [!CAUTION]
-    > If you apply too many rules, it’s possible to restrict the email address policy to the point that it doesn’t contain any users.
+    > If you apply too many rules, it's possible to restrict the email address policy to the point that it doesn't contain any users.
 
 
 
@@ -144,7 +148,7 @@ For detailed instructions about how to create an email address policy, see the f
 
 5.  Click **Save** to save your changes and create the policy.
 
-6.  You’ll get a warning that the email address policy won’t be applied until you update it. After it’s created, select it, and then, in the details pane, click **Apply**.
+6.  You'll get a warning that the email address policy won't be applied until you update it. After it's created, select it, and then, in the details pane, click **Apply**.
 
 ## Use the Shell to create an email address policy
 

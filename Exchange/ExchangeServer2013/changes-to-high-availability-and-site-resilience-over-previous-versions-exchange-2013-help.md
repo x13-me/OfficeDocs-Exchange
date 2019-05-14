@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Changes to high availability and site resilience over previous versions'
 TOCTitle: Changes to high availability and site resilience over previous versions
 ms:assetid: de53c00b-091c-4a31-aacc-1bd40c756ce2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn789066(v=EXCHG.150)
 ms:contentKeyID: 62523708
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -71,7 +75,7 @@ For more information about managed availability, see [Managed Availability](mana
 
 All previous versions of Exchange Server, from Exchange Server 4.0 to Exchange Server 2010, have supported running a single instance of the Information Store process (Store.exe) on the Mailbox server role. This single Store instance hosts all databases on the server: active, passive, lagged, and recovery. In the previous Exchange architectures, there is little, if any, isolation between the different databases hosted on a Mailbox server. An issue with a single mailbox database has the potential to negatively affect all other databases, and crashes resulting from a mailbox corruption can affect service for all users whose databases are hosted on that server.
 
-Another challenge with a single Store instance in previous versions of Exchange is that the Extensible Storage Engine (ESE) scales well to 8-12 processor cores, but beyond that, cross-processor communication and cache synchronization issues lead to negative scale. Given today’s much larger servers, with 16+ core systems available, this would mean impose the administrative challenge of managing the affinity of 8-12 cores for ESE and using the other cores for non-Store processes (for example, Assistants, Search Foundation, Managed Availability, etc.). Moreover, the previous architecture restricted scale-up for the Store process.
+Another challenge with a single Store instance in previous versions of Exchange is that the Extensible Storage Engine (ESE) scales well to 8-12 processor cores, but beyond that, cross-processor communication and cache synchronization issues lead to negative scale. Given today's much larger servers, with 16+ core systems available, this would mean impose the administrative challenge of managing the affinity of 8-12 cores for ESE and using the other cores for non-Store processes (for example, Assistants, Search Foundation, Managed Availability, etc.). Moreover, the previous architecture restricted scale-up for the Store process.
 
 The Store.exe process has evolved considerably throughout the years as Exchange Server itself evolved, but as a single process, ultimately its scalability is limited, and it represents a single point of failure. Because of these limits, Store.exe is gone in Exchange 2013 and replaced by the Managed Store.
 
@@ -281,7 +285,7 @@ Single copy conditions include, but aren't limited to:
 
   - Failure of the system to accurately know the current log generation of the active copy.
 
-Because it's a top priority for administrators to know when they're down to a single healthy copy of a database, the CheckDatabaseRedundancy.ps1 script has been replaced with integrated, native functionality that's part of managed availability’s DataProtection Health Set.
+Because it's a top priority for administrators to know when they're down to a single healthy copy of a database, the CheckDatabaseRedundancy.ps1 script has been replaced with integrated, native functionality that's part of managed availability's DataProtection Health Set.
 
 The native functionality still alerts administrators through event log notifications, and to distinguish Exchange 2013 alerts from Exchange 2010, Exchange 2013 uses the following Event IDs:
 
@@ -331,7 +335,7 @@ Cumulative Update 2 (CU2) for the Release to Manufacturing (RTM) version of Exch
 
 ## DAGs without a cluster administrative access point
 
-All DAGs running Windows Server 2008 R2 or Windows Server 2012 require at least one IP address on every subnet included in the MAPI network. The IP address(es) assigned to the DAG are used by the DAG’s cluster with the cluster’s administrative access point (also known as the cluster network name) to enable name resolution and connectivity to the cluster (or more precisely, connectivity to the cluster member that currently owns the cluster core resource group) using the cluster name. Windows Server 2012 R2 enables you to create a failover cluster without an administrative access point. Windows failover clusters without administrative access points have the following characteristics:
+All DAGs running Windows Server 2008 R2 or Windows Server 2012 require at least one IP address on every subnet included in the MAPI network. The IP address(es) assigned to the DAG are used by the DAG's cluster with the cluster's administrative access point (also known as the cluster network name) to enable name resolution and connectivity to the cluster (or more precisely, connectivity to the cluster member that currently owns the cluster core resource group) using the cluster name. Windows Server 2012 R2 enables you to create a failover cluster without an administrative access point. Windows failover clusters without administrative access points have the following characteristics:
 
   - There is no IP address assigned to the cluster, and therefore no IP Address Resource in the cluster core resource group.
 

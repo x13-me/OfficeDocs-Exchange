@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'UM protocols, ports, and services: Exchange 2013 Help'
 TOCTitle: UM protocols, ports, and services
 ms:assetid: 5997ce29-1755-48bb-8ff4-b08da549482a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998265(v=EXCHG.150)
 ms:contentKeyID: 49315424
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -37,7 +41,7 @@ Exchange 2013 Unified Messaging features and services rely on static and dynamic
 
 5.  **UMService (TCP-In)**
 
-6.  **UMWorkerProcess – RPC (TCP-In)**
+6.  **UMWorkerProcess - RPC (TCP-In)**
 
 7.  **UMWorkerProcess (GFW) (TCP-In)**
 
@@ -67,7 +71,7 @@ The following Unified Messaging client features rely on Unified Messaging Web se
 
 ## UM ports
 
-The Microsoft Exchange Unified Messaging Call Router service found on a Client Access server uses SIP over either Transmission Control Protocol (TCP) or mutual Transport Layer Security (mutual TLS) to communicate with Mailbox servers that are running the Microsoft Exchange Unified Messaging service. To avoid TCP/User Datagram Protocol (UDP) port conflicts, the Microsoft Exchange Unified Messaging Call Router service and Microsoft Exchange Unified Messaging service default to and listen on different TCP ports. They can accept both unsecured and secured connections, depending on whether mutual TLS is used with SIP and RTP traffic. By default, a Client Access server listens for SIP requests on both TCP port 5060 in Unsecured mode and TCP port 5061 in SIP Secured mode when mutual TLS is used. These ports are configurable using the **Set-UMCallRouterSettings** cmdlet. The Microsoft Exchange Unified Messaging Call Router service on the Client Access server doesn’t handle media (RTP or SRTP) traffic, so only TCP ports and no UDP ports are used. By default, a Mailbox server listens for SIP requests on both TCP port 5062 in Unsecured mode and TCP port 5063 in SIP Secured mode when mutual TLS is used. These ports aren’t configurable using Exchange Management Shell cmdlets. The Microsoft Exchange Unified Messaging service on the Mailbox server will accept connections from a Client Access server on SIP ports 5062 and 5063. After the Client Access server redirects the SIP request to a Mailbox server, an RTP or SRTP media channel is created using a VoIP gateway, IP PBX, or SBC, and the Microsoft Exchange Unified Messaging worker process on the Mailbox server.
+The Microsoft Exchange Unified Messaging Call Router service found on a Client Access server uses SIP over either Transmission Control Protocol (TCP) or mutual Transport Layer Security (mutual TLS) to communicate with Mailbox servers that are running the Microsoft Exchange Unified Messaging service. To avoid TCP/User Datagram Protocol (UDP) port conflicts, the Microsoft Exchange Unified Messaging Call Router service and Microsoft Exchange Unified Messaging service default to and listen on different TCP ports. They can accept both unsecured and secured connections, depending on whether mutual TLS is used with SIP and RTP traffic. By default, a Client Access server listens for SIP requests on both TCP port 5060 in Unsecured mode and TCP port 5061 in SIP Secured mode when mutual TLS is used. These ports are configurable using the **Set-UMCallRouterSettings** cmdlet. The Microsoft Exchange Unified Messaging Call Router service on the Client Access server doesn't handle media (RTP or SRTP) traffic, so only TCP ports and no UDP ports are used. By default, a Mailbox server listens for SIP requests on both TCP port 5062 in Unsecured mode and TCP port 5063 in SIP Secured mode when mutual TLS is used. These ports aren't configurable using Exchange Management Shell cmdlets. The Microsoft Exchange Unified Messaging service on the Mailbox server will accept connections from a Client Access server on SIP ports 5062 and 5063. After the Client Access server redirects the SIP request to a Mailbox server, an RTP or SRTP media channel is created using a VoIP gateway, IP PBX, or SBC, and the Microsoft Exchange Unified Messaging worker process on the Mailbox server.
 
 The following table summarizes the Exchange 2013 ports and protocols, and whether the ports can be changed.
 
@@ -90,22 +94,22 @@ The following table summarizes the Exchange 2013 ports and protocols, and whethe
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>SIP (Client Access server – Microsoft Unified Messaging Call Router service)</p></td>
+<td><p>SIP (Client Access server - Microsoft Unified Messaging Call Router service)</p></td>
 <td><p>5060 (unsecured), 5061 (secured). The service listens on both ports.</p></td>
 <td><p>Not applicable</p></td>
 <td><p>Yes, using the <strong>Set-UMCallRouterSettings</strong> cmdlet.</p></td>
 </tr>
 <tr class="even">
-<td><p>SIP (Mailbox server – Microsoft Exchange Unified Messaging service)</p></td>
+<td><p>SIP (Mailbox server - Microsoft Exchange Unified Messaging service)</p></td>
 <td><p>5062 (unsecured), 5063 (secured). The service listens on both ports.</p></td>
 <td><p>Not applicable</p></td>
-<td><p>Ports can’t be changed.</p></td>
+<td><p>Ports can't be changed.</p></td>
 </tr>
 <tr class="odd">
 <td><p>SIP (Mailbox server - UM worker process)</p></td>
 <td><p>5065 and 5067 for TCP (unsecured). 5065 and 5067 for mutual TLS (secured). If you have set it to Dual mode 5066 and 5068 are also used.</p></td>
 <td><p>Not applicable</p></td>
-<td><p>Ports can’t be changed.</p></td>
+<td><p>Ports can't be changed.</p></td>
 </tr>
 <tr class="even">
 <td><p>RTP (Mailbox server - UM worker process)</p></td>

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Test UM operation: Exchange 2013 Help'
 TOCTitle: Test UM operation
 ms:assetid: 06c9ab4e-8272-47b1-a217-e366f7e9dbaa
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa995957(v=EXCHG.150)
 ms:contentKeyID: 55129206
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -25,7 +29,7 @@ For additional management tasks related to Client Access and Mailbox servers, se
 
   - Estimated time to complete: 3 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox server (UM service)" and “Client Access Server (UM call router service)” entries in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox server (UM service)" and "Client Access Server (UM call router service)" entries in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
   - To perform the following procedures, you must log on to the Mailbox server by using an account that's a member of the local Administrators group.
 

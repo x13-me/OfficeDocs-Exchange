@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage on-premises moves: Exchange 2013 Help'
 TOCTitle: Manage on-premises moves
 ms:assetid: 1691b658-f5af-49c6-9170-5c3cb66c7306
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150487(v=EXCHG.150)
 ms:contentKeyID: 47559947
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -101,7 +105,7 @@ log in to the EAC and perform the following steps:
 
 
 > [!WARNING]
-> Make sure that you don't set the Bad Item Limit to over 50 items. If you do, the move may fail. If you want to set the Bad Item Limit over 50 items, you must use the Exchange Management Shell and set the –<EM>AcceptLargeDataLoss</EM> parameter to true.
+> Make sure that you don't set the Bad Item Limit to over 50 items. If you do, the move may fail. If you want to set the Bad Item Limit over 50 items, you must use the Exchange Management Shell and set the -<EM>AcceptLargeDataLoss</EM> parameter to true.
 
 
 

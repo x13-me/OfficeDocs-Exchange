@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Move an address list: Exchange 2013 Help'
 TOCTitle: Move an address list
 ms:assetid: c843bbd5-6c0e-41e1-b749-7ae87c1beb25
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124534(v=EXCHG.150)
 ms:contentKeyID: 49289405
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -25,7 +29,7 @@ For additional management tasks related to address lists, see [Address list proc
 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address Lists" entry in the [Email address and address book permissions](email-address-and-address-book-permissions-exchange-2013-help.md) topic.
 
-  - You can’t use the Exchange Administration Center (EAC) to perform this procedure. You must use the Shell.
+  - You can't use the Exchange Administration Center (EAC) to perform this procedure. You must use the Shell.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

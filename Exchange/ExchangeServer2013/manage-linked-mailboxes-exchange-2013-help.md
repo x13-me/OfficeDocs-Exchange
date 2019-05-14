@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage linked mailboxes: Exchange 2013 Help'
 TOCTitle: Manage linked mailboxes
 ms:assetid: 76e12d4a-1c3a-42e2-b64c-c09d36e81bd3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673532(v=EXCHG.150)
 ms:contentKeyID: 49315442
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -17,7 +21,7 @@ _**Applies to:** Exchange Server 2013_
 
 Linked mailboxes are mailboxes that are accessed by users in a separate, trusted forest. Linked mailboxes may be necessary for organizations that deploy Exchange in a resource forest. The resource forest scenario allows an organization to centralize Exchange in a single forest, while allowing access to the Exchange organization with user accounts that are located in one or more trusted forests (called *account forests*). The user account that accesses the linked mailbox doesn't exist in the forest where Exchange is deployed. Therefore, a disabled user account that exists in the same forest as Exchange is created and associated with the corresponding linked mailbox.
 
-The following figure illustrates the relationship between the linked user account used to access the linked mailbox (located in the account forest) and the disabled user account in the Exchange resource forest that’s associated with the linked mailbox.
+The following figure illustrates the relationship between the linked user account used to access the linked mailbox (located in the account forest) and the disabled user account in the Exchange resource forest that's associated with the linked mailbox.
 
 **Linked mailboxes**
 
@@ -37,7 +41,7 @@ The following figure illustrates the relationship between the linked user accoun
 
   - A user account (called the *linked master account*) must exist in the account forest before you can create a linked mailbox. This is because the linked mailbox is associated with a user in the account forest.
 
-  - If you’ve configured a one-way outgoing trust where the Exchange forest trusts the account forest, you’ll need administrator credentials in the account forest to create a linked mailbox.
+  - If you've configured a one-way outgoing trust where the Exchange forest trusts the account forest, you'll need administrator credentials in the account forest to create a linked mailbox.
     
     To create a linked mailbox without being prompted for administrator credentials in the account forest, you have to create a two-way trust, or create another one-way outgoing trust where the account forest also trusts the Exchange forest. This step also requires administrator credentials in the account forest.
 
@@ -59,13 +63,13 @@ The following figure illustrates the relationship between the linked user accoun
 
 2.  Click **New** \> **Linked mailbox**.
 
-3.  On the **New linked mailbox** page, in the **Trusted forest or domain** box, select the name of the account forest that contains the user account that you’re creating the linked mailbox for. Click **Next**.
+3.  On the **New linked mailbox** page, in the **Trusted forest or domain** box, select the name of the account forest that contains the user account that you're creating the linked mailbox for. Click **Next**.
 
-4.  If your organization has configured a one-way outgoing trust where the Exchange forest trusts the account forest, you’re prompted for administrator credentials in the account forest so that you can gain access to a domain controller in the trusted forest. Type the user name and password for an administrator account in the account forest, and then click **Next**.
+4.  If your organization has configured a one-way outgoing trust where the Exchange forest trusts the account forest, you're prompted for administrator credentials in the account forest so that you can gain access to a domain controller in the trusted forest. Type the user name and password for an administrator account in the account forest, and then click **Next**.
     
 
     > [!NOTE]
-    > You won’t be prompted for administrator credentials if you’ve created a two-way trust or have created another one-way outgoing trust where the account forest trusts the Exchange forest.
+    > You won't be prompted for administrator credentials if you've created a two-way trust or have created another one-way outgoing trust where the account forest trusts the Exchange forest.
 
 
 
@@ -77,7 +81,7 @@ The following figure illustrates the relationship between the linked user accoun
 
 6.  Click **Next** and complete the following boxes on the **Enter general information** page.
     
-      - **&#42; Name**   Use this box to type a name for the user. This is the name used as the display name in the EAC and your organization’s address book, and the name that's listed in Active Directory. This name is required.
+      - **&#42; Name**   Use this box to type a name for the user. This is the name used as the display name in the EAC and your organization's address book, and the name that's listed in Active Directory. This name is required.
     
       - **Organizational unit**   You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the Active Directory domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
         
@@ -87,13 +91,13 @@ The following figure illustrates the relationship between the linked user accoun
         
 
         > [!NOTE]
-        > Because the user account that is created in the Exchange forest is disabled when you create a linked mailbox, the user doesn’t use the user logon name to sign in to the linked mailbox. They sign in using their credentials from the account forest.
+        > Because the user account that is created in the Exchange forest is disabled when you create a linked mailbox, the user doesn't use the user logon name to sign in to the linked mailbox. They sign in using their credentials from the account forest.
 
 
 
 7.  Click **More options** to configure the following boxes. Otherwise, skip to Step 8 to save the new linked mailbox.
     
-      - **Alias**   Type the alias, which specifies the email alias for the linked mailbox. The user’s alias is the portion of the email address on the left side of the at (@) symbol. It must be unique in the forest.
+      - **Alias**   Type the alias, which specifies the email alias for the linked mailbox. The user's alias is the portion of the email address on the left side of the at (@) symbol. It must be unique in the forest.
         
 
         > [!NOTE]
@@ -123,7 +127,7 @@ For syntax and parameter information, see [New-Mailbox](https://technet.microsof
 
 ## How do you know this worked?
 
-To verify that you’ve successfully created a linked mailbox, do one of the following:
+To verify that you've successfully created a linked mailbox, do one of the following:
 
   - In the EAC, navigate to **Recipients**  \> **Mailboxes**. The new linked mailbox is displayed in the mailbox list. Under **Mailbox Type**, the type is **Linked**.
 
@@ -173,7 +177,7 @@ Use the **General** section to view or change basic information about the user.
 
   - **\* Linked mailbox name**   This is the name that's listed in Active Directory. If you change this name, it can't exceed 64 characters.
 
-  - **\* Display name**   This name appears in your organization’s address book, on the To: and From: lines in email, and in the Mailboxes list in the EAC. This name can’t contain empty spaces before or after the display name.
+  - **\* Display name**   This name appears in your organization's address book, on the To: and From: lines in email, and in the Mailboxes list in the EAC. This name can't contain empty spaces before or after the display name.
 
   - **\* User logon name**    For user mailboxes, this is the name that the user uses to sign in to their mailbox and to log on to the domain. For linked mailboxes, the corresponding user account that is created in the Exchange forest when the linked mailbox was created is disabled. The user uses their credentials from the account forest to sign in to the linked mailbox.
     
@@ -205,7 +209,7 @@ Use the **Mailbox Usage** section to view or change the mailbox storage quota an
 
 
 > [!NOTE]
-> To obtain the information that's displayed in the previous two boxes, the EAC queries the mailbox database that hosts the mailbox. If the EAC can’t communicate with the Exchange store that contains the mailbox database, these boxes will be blank. A warning message is displayed if the user hasn't signed in to the mailbox for the first time.
+> To obtain the information that's displayed in the previous two boxes, the EAC queries the mailbox database that hosts the mailbox. If the EAC can't communicate with the Exchange store that contains the mailbox database, these boxes will be blank. A warning message is displayed if the user hasn't signed in to the mailbox for the first time.
 
 
 
@@ -223,13 +227,13 @@ Click **More options** to view or change the mailbox storage quota and the delet
 
   - **Deleted item retention settings**   To customize these settings for the mailbox and not use the mailbox database defaults, click **Customize settings for this mailbox**, type a new value, and then click **Save**.
     
-      - **Keep deleted items for (days)**   This box displays the length of time that deleted items are retained before they’re permanently deleted and can’t be recovered by the user. When the mailbox is created, this length of time is based on the deleted item retention settings configured for the mailbox database. By default, a mailbox database is configured to retain deleted items for 14 days. The value range for this property is from 0 through 24855 days.
+      - **Keep deleted items for (days)**   This box displays the length of time that deleted items are retained before they're permanently deleted and can't be recovered by the user. When the mailbox is created, this length of time is based on the deleted item retention settings configured for the mailbox database. By default, a mailbox database is configured to retain deleted items for 14 days. The value range for this property is from 0 through 24855 days.
     
-      - **Don’t permanently delete items until the database is backed up**   Select this check box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
+      - **Don't permanently delete items until the database is backed up**   Select this check box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
 
 ## Email Address
 
-Use the **Email address** section to view or change the email addresses associated with the linked mailbox. This includes the user’s primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the *default reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
+Use the **Email address** section to view or change the email addresses associated with the linked mailbox. This includes the user's primary SMTP addresses and any associated proxy addresses. The primary SMTP address (also known as the *default reply address*) is displayed in bold text in the address list, with the uppercase **SMTP** value in the **Type** column.
 
   - **Add**  Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add a new email address for this mailbox. Select one of following address types:
     
@@ -251,15 +255,15 @@ Use the **Email address** section to view or change the email addresses associat
 
 Use the **Mailbox Features** section to view or change the following mailbox features and settings:
 
-  - **Sharing policy**   This box shows the sharing policy applied to the mailbox. A sharing policy controls how users in your organization can share calendar and contact information with users outside your Exchange organization. The Default Sharing Policy is assigned to mailboxes when they are created. To change the sharing policy that’s assigned to the user, select a different one from the drop-down list.
+  - **Sharing policy**   This box shows the sharing policy applied to the mailbox. A sharing policy controls how users in your organization can share calendar and contact information with users outside your Exchange organization. The Default Sharing Policy is assigned to mailboxes when they are created. To change the sharing policy that's assigned to the user, select a different one from the drop-down list.
 
-  - **Role assignment policy**   This box shows the role assignment policy assigned to the mailbox. The role assignment policy specifies the role-based access control (RBAC) roles that are assigned to the user and controls which mailbox and distribution group configuration settings users can modify. To change the role assignment policy that’s assigned to the user, select a different one from the drop-down list.
+  - **Role assignment policy**   This box shows the role assignment policy assigned to the mailbox. The role assignment policy specifies the role-based access control (RBAC) roles that are assigned to the user and controls which mailbox and distribution group configuration settings users can modify. To change the role assignment policy that's assigned to the user, select a different one from the drop-down list.
 
-  - **Retention policy**   This box shows the retention policy assigned to the mailbox. A retention policy is a group of retention tags that are applied to the user’s mailbox. The tags allow you to control how long to keep items in users' mailboxes and define which action to take on items that have reached a certain age. A retention policy isn’t assigned to mailboxes when they are created. To assign a retention policy to the user, select one from the drop-down list.
+  - **Retention policy**   This box shows the retention policy assigned to the mailbox. A retention policy is a group of retention tags that are applied to the user's mailbox. The tags allow you to control how long to keep items in users' mailboxes and define which action to take on items that have reached a certain age. A retention policy isn't assigned to mailboxes when they are created. To assign a retention policy to the user, select one from the drop-down list.
 
-  - **Address Book policy**   This box shows the address book policy applied to the mailbox. An address book policy allows you to segment users into specific groups to provide customized views of the address book. To apply or change the address book policy that’s applied to the mailbox, select one from the drop-down list.
+  - **Address Book policy**   This box shows the address book policy applied to the mailbox. An address book policy allows you to segment users into specific groups to provide customized views of the address book. To apply or change the address book policy that's applied to the mailbox, select one from the drop-down list.
 
-  - **Unified Messaging**   This feature is disabled by default. When you enable Unified Messaging (UM) the user will be able to use your organization’s UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a user for voice mail](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail).
+  - **Unified Messaging**   This feature is disabled by default. When you enable Unified Messaging (UM) the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a user for voice mail](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail).
     
 
     > [!NOTE]
@@ -289,7 +293,7 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
         
 
         > [!NOTE]
-        > The text from these boxes appears in the user's mailbox only if they’re using Outlook 2010 or later versions. It doesn't appear in Outlook Web App or other email clients. To view the text from the Note and URL boxes in Outlook, click the <STRONG>File</STRONG> tab and, on the <STRONG>Info</STRONG> page, under <STRONG>Account Settings</STRONG>, you'll see the litigation hold comment.
+        > The text from these boxes appears in the user's mailbox only if they're using Outlook 2010 or later versions. It doesn't appear in Outlook Web App or other email clients. To view the text from the Note and URL boxes in Outlook, click the <STRONG>File</STRONG> tab and, on the <STRONG>Info</STRONG> page, under <STRONG>Account Settings</STRONG>, you'll see the litigation hold comment.
 
 
 
@@ -331,23 +335,23 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
         
           - **All senders**   Select this option to specify that the user can accept messages from all senders. This includes both senders in your Exchange organization and external senders. This option is selected by default. This option includes external users only if you clear the **Require that all senders are authenticated** check box. If you select this check box, messages from external users will be rejected.
         
-          - **Only senders in the following list**   Select this option to specify that the user can accept messages only from a specified set of senders in your Exchange organization. Click **Add** to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient’s name in the search box and then clicking **Search**.
+          - **Only senders in the following list**   Select this option to specify that the user can accept messages only from a specified set of senders in your Exchange organization. Click **Add** to display the **Select Recipients** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**.
         
           - **Require that all senders are authenticated**   Select this option to prevent anonymous users from sending messages to the user.
     
       - **Reject messages from**   Use this section to block people from sending messages to this user.
         
-          - **No senders**   Select this option to specify that the mailbox won’t reject messages from any senders in the Exchange organization. This option is selected by default.
+          - **No senders**   Select this option to specify that the mailbox won't reject messages from any senders in the Exchange organization. This option is selected by default.
         
-          - **Senders in the following list**   Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want to reject messages from, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient’s name in the search box and then clicking **Search**.
+          - **Senders in the following list**   Select this option to specify that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization. Select the recipients you want to reject messages from, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**.
 
 ## Member Of
 
-Use the **Member Of** section to view a list of the distribution groups or security groups to which this user belongs. You can't change membership information on this page. Note that the user may match the criteria for one or more dynamic distribution groups in your organization. However, dynamic distribution groups aren't displayed on this page because their membership is calculated each time they’re used.
+Use the **Member Of** section to view a list of the distribution groups or security groups to which this user belongs. You can't change membership information on this page. Note that the user may match the criteria for one or more dynamic distribution groups in your organization. However, dynamic distribution groups aren't displayed on this page because their membership is calculated each time they're used.
 
 ## MailTip
 
-Use the **MailTip** section to add a MailTip to alert users of potential issues if they send a message to this recipient. A MailTip is text that’s displayed in the InfoBar when a recipient is added to the To, Cc, or Bcc lines of a new email message.
+Use the **MailTip** section to add a MailTip to alert users of potential issues if they send a message to this recipient. A MailTip is text that's displayed in the InfoBar when a recipient is added to the To, Cc, or Bcc lines of a new email message.
 
 
 > [!NOTE]
@@ -357,15 +361,15 @@ Use the **MailTip** section to add a MailTip to alert users of potential issues 
 
 ## Mailbox Delegation
 
-Use the **Mailbox Delegation** section to assign permissions to other users (also called *delegates*) to allow them to sign in to the user’s mailbox or send messages on behalf of the user. You can assign the following permissions:
+Use the **Mailbox Delegation** section to assign permissions to other users (also called *delegates*) to allow them to sign in to the user's mailbox or send messages on behalf of the user. You can assign the following permissions:
 
-  - **Send As**   This permission allows users other than the mailbox owner to use the mailbox to send messages. After this permission is assigned to a delegate, any message that a delegate sends from this mailbox will appear as if it was sent by the mailbox owner. However, this permission doesn’t allow a delegate to sign in to the user’s mailbox.
+  - **Send As**   This permission allows users other than the mailbox owner to use the mailbox to send messages. After this permission is assigned to a delegate, any message that a delegate sends from this mailbox will appear as if it was sent by the mailbox owner. However, this permission doesn't allow a delegate to sign in to the user's mailbox.
 
   - **Send on Behalf Of**   This permission also allows a delegate to use this mailbox to send messages. However, after this permission is assigned to a delegate, the **From:** address in any message sent by the delegate indicates that the message was sent by the delegate on behalf of the mailbox owner.
 
-  - **Full Access**   This permission allows a delegate to sign in to the user’s mailbox and view the contents of the mailbox. However, after this permission is assigned to a delegate, the delegate can’t send messages from the mailbox. To allow a delegate to send email from the user’s mailbox, you still have to assign the delegate the Send As or the Send on Behalf Of permission.
+  - **Full Access**   This permission allows a delegate to sign in to the user's mailbox and view the contents of the mailbox. However, after this permission is assigned to a delegate, the delegate can't send messages from the mailbox. To allow a delegate to send email from the user's mailbox, you still have to assign the delegate the Send As or the Send on Behalf Of permission.
 
-To assign permissions to delegates, click **Add** under the appropriate permission to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want assign delegate permissions to, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient’s name in the search box and then clicking **Search**.
+To assign permissions to delegates, click **Add** under the appropriate permission to display the **Select Recipient** page, which displays a list of all recipients in your Exchange organization that can be assigned the permission. Select the recipients you want assign delegate permissions to, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search**.
 
 ## Use the Shell to change linked mailbox properties
 

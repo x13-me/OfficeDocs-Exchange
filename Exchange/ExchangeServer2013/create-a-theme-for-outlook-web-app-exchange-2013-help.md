@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a theme for Outlook Web App: Exchange 2013 Help'
 TOCTitle: Create a theme for Outlook Web App
 ms:assetid: 7e1fa13c-3de3-45c2-b1fa-e74fc8487bda
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb201700(v=EXCHG.150)
 ms:contentKeyID: 53957626
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -49,7 +53,7 @@ After you create a theme, you may also want to [Customize the Outlook Web App si
 
   - You need local server administrator access to perform these procedures.
 
-  - You’ll need a text editor to change the default colors, and a graphics editor to change the images. If you must match a specific color and you can't find a match for it at [Color Table](https://go.microsoft.com/fwlink/p/?linkid=280679), you can use an image editing tool to sample a color and determine its HTML RGB value.
+  - You'll need a text editor to change the default colors, and a graphics editor to change the images. If you must match a specific color and you can't find a match for it at [Color Table](https://go.microsoft.com/fwlink/p/?linkid=280679), you can use an image editing tool to sample a color and determine its HTML RGB value.
 
   - As a best practice, we recommend that you use the following guidelines any time that you change or create an Outlook Web App theme:
     
@@ -83,7 +87,7 @@ To start, you'll create a folder for a new theme, and then copy the files from a
 
 To set the display name for your new theme, do the following:
 
-1.  Open the copy of themeinfo.xml that’s in the custom theme folder you just created.
+1.  Open the copy of themeinfo.xml that's in the custom theme folder you just created.
 
 2.  Find the theme `displayname` value, and change the value to the name you want to use. For example `displayname = "Fourth Coffee Theme"`.
 
@@ -95,15 +99,15 @@ If you want, you can change the sort order of the new theme by editing the theme
 
 To change the sort order of the new theme by using the themeinfo.xml file, do the following:
 
-1.  Open the copy of themeinfo.xml that’s in the custom theme folder.
+1.  Open the copy of themeinfo.xml that's in the custom theme folder.
 
-2.  Find the theme `sortorder` value, and change the value to reflect where you want your new theme to appear in the list. The themes will be ordered by the numeric value in increasing order. By default, the base theme is the first one and its `sortorder` value is “0”. For example `sortorder="<number>"`.
+2.  Find the theme `sortorder` value, and change the value to reflect where you want your new theme to appear in the list. The themes will be ordered by the numeric value in increasing order. By default, the base theme is the first one and its `sortorder` value is "0". For example `sortorder="<number>"`.
 
 3.  Save and close themeinfo.xml.
 
 ## Step 4: Modify your new theme
 
-Now that you’ve copied over the files and have named your theme, you can customize it. The following elements can be customized in an Outlook Web App theme:
+Now that you've copied over the files and have named your theme, you can customize it. The following elements can be customized in an Outlook Web App theme:
 
   - Image files, which define the header area and icons.
 
@@ -115,7 +119,7 @@ Theme images are stored in two folders in \\themes*\\\<theme name\>*\\images\\. 
 
 
 > [!NOTE]
-> Some of the images in the \images\rtl folder are the same the images as in the \images\0 folder, but they’re mirrored.
+> Some of the images in the \images\rtl folder are the same the images as in the \images\0 folder, but they're mirrored.
 
 
 
@@ -123,17 +127,17 @@ To customize the theme, you can use an image editing tool to open and modify the
 
   - Headerbgmain.png
     
-      - This is the main header image. We recommend that the image doesn’t exceed the header height of 30 pixels. The default theme doesn’t use a background image, so this image is transparent. For an example of a theme that has a custom background image, see the image in the **Blueprint** theme folder.
+      - This is the main header image. We recommend that the image doesn't exceed the header height of 30 pixels. The default theme doesn't use a background image, so this image is transparent. For an example of a theme that has a custom background image, see the image in the **Blueprint** theme folder.
 
   - Headerbgright.png
     
-      - This is used as a tiling image behind the header. The default theme doesn’t use a tiling background image, so this image is transparent. For an example of a theme that has a custom tiling background image, see the image in the **Blueprint** theme folder.
+      - This is used as a tiling image behind the header. The default theme doesn't use a tiling background image, so this image is transparent. For an example of a theme that has a custom tiling background image, see the image in the **Blueprint** theme folder.
 
   - sprite1.mouse.png
     
       - This contains most of the images used in a theme. You can change the color of the images to match your theme, and also change the default Outlook Web App text logo.
     
-      - To avoid any issues, don’t change the size of any individual icons in the sprite, and make sure that it’s saved as a transparent .png file.
+      - To avoid any issues, don't change the size of any individual icons in the sprite, and make sure that it's saved as a transparent .png file.
 
   - themepreview.png
     
@@ -157,7 +161,7 @@ You can use a text editor like Notepad to search for and replace all the instanc
 
 ## Step 5: Set the default Outlook Web App theme
 
-Setting a new default theme will only affect users who haven’t changed their theme through the Settings menu in Outlook Web App.
+Setting a new default theme will only affect users who haven't changed their theme through the Settings menu in Outlook Web App.
 
 To force all users to use the default theme, you must disable theme selection in addition to setting a default theme.
 
@@ -189,15 +193,15 @@ For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](htt
 
 ## Step 6: Run iisreset/noforce to save your changes
 
-If you add or change a theme, change the name of a theme, or change the sort order of a theme, you must stop and start Internet Information Services (IIS) for the change to take effect. To do this, open a Command Prompt window on the server where you’ve created your new theme, and run the command **iisresest /nforce**.
+If you add or change a theme, change the name of a theme, or change the sort order of a theme, you must stop and start Internet Information Services (IIS) for the change to take effect. To do this, open a Command Prompt window on the server where you've created your new theme, and run the command **iisresest /nforce**.
 
 ## How do you know this task worked?
 
-1.  Sign in to Outlook Web App using the virtual directory on the server where you’ve created your new theme. If you’re testing the changes to the default website on the Exchange server that’s hosting the Outlook Web App virtual directory, you can test your theme by opening Internet Explorer and entering the URL https://localhost/owa.
+1.  Sign in to Outlook Web App using the virtual directory on the server where you've created your new theme. If you're testing the changes to the default website on the Exchange server that's hosting the Outlook Web App virtual directory, you can test your theme by opening Internet Explorer and entering the URL https://localhost/owa.
 
 2.  Switch to your custom theme by selecting the Settings menu \> **Change theme** and selecting your custom theme.
 
-## If you don’t see your latest changes and have run iisreset/noforce
+## If you don't see your latest changes and have run iisreset/noforce
 
 1.  On the Internet Explorer toolbar, select the Settings menu \> **Internet options**.
 
@@ -207,5 +211,5 @@ If you add or change a theme, change the name of a theme, or change the sort ord
 
 4.  Select **Refresh** to see your changes.
 
-You may have to repeat these steps to see your changes every time that you make a change to the theme files. If you’re making several changes, you can leave Outlook Web App open and repeat running **iisreset/noforce** on the server and clearing temporary files from Internet Explorer as needed.
+You may have to repeat these steps to see your changes every time that you make a change to the theme files. If you're making several changes, you can leave Outlook Web App open and repeat running **iisreset/noforce** on the server and clearing temporary files from Internet Explorer as needed.
 

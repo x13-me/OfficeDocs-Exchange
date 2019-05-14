@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 28cedf1d-365a-4e36-b2ba-6bf81af8684f
 ms.date: 6/12/2018
+ms.reviewer: 
 title: Manage mailbox database copies
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -281,7 +282,7 @@ In all scenarios, the passive database copy must meet the following conditions:
 
 ****
 
-|**If the _DataMoveReplicationConstraint_ parameter is set to…**|**Then, for a given database…**|
+|**If the _DataMoveReplicationConstraint_ parameter is set to...**|**Then, for a given database...**|
 |:-----|:-----|
 | `SecondCopy` <br/> |At least one passive database copy for a replicated database must meet the previously described conditions.  <br/> |
 | `SecondDatacenter` <br/> |At least one passive database copy in another Active Directory site must meet the previously described conditions.  <br/> |
@@ -294,7 +295,7 @@ The Data Guarantee API can also be used to validate that a prerequisite number o
 
 Before moving large numbers of mailboxes to or from replication databases within a DAG, we recommend that you configure the _DataMoveReplicationConstraint_ parameter on each mailbox database according to the following:
 
-|**If you're deploying…**|**Set DataMoveReplicationConstraint to…**|
+|**If you're deploying...**|**Set DataMoveReplicationConstraint to...**|
 |:-----|:-----|
 |Mailbox databases that don't have any database copies  <br/> | `None` <br/> |
 |A DAG within a single Active Directory site  <br/> | `SecondCopy` <br/> |

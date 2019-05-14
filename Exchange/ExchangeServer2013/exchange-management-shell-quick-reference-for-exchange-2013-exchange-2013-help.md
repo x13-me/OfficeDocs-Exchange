@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Exchange Management Shell quick reference for Exchange 2013'
 TOCTitle: Exchange Management Shell quick reference for Exchange 2013
 ms:assetid: 3ea4a105-a93c-48ba-96ce-6170125354e1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ619302(v=EXCHG.150)
 ms:contentKeyID: 49352789
 ms.date: 03/23/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -229,7 +233,7 @@ The following commands are associated with various tasks that you can use when a
 <p>The FileData parameter accepts data from a file on your local computer using this syntax on most cmdlets.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Export-RecipientDataProperty -Identity tony@contoso.com -SpokenName <em>| ForEach { $_.FileData | Add-Content C:\tonysmith.wma -Encoding Byte}</em></p></td>
+<td><p>Export-RecipientDataProperty -Identity tony@contoso.com -SpokenName <em>| ForEach {$_.FileData | Add-Content C:\tonysmith.wma -Encoding Byte}</em></p></td>
 <td><p>This command shows an example of the syntax, shown in italics, required to export a file from a remote Exchange 2013 server. The syntax encapsulates the data stored in the FileData property on the object returned by the cmdlet and then streams the data to your local computer. The data is then stored in the <em>C:\tonysmith.wma</em> file.</p>
 <p>Most cmdlets that output objects with a FileData property use this syntax to export data to a file on your local computer.</p></td>
 </tr>

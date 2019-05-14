@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Use Windows Server Backup to restore a backup of Exchange: Exchange 2013 Help'
 TOCTitle: Use Windows Server Backup to restore a backup of Exchange
 ms:assetid: 2d0f31dc-eb32-451a-8852-591269026506
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876864(v=EXCHG.150)
 ms:contentKeyID: 48384931
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -39,7 +43,7 @@ You can use Windows Server Backup to back up and restore Exchange databases. Exc
 
 2.  Select **Local Backup**.
 
-3.  In the Actions pane, click **Recover…** to start the Recovery Wizard.
+3.  In the Actions pane, click **Recover...** to start the Recovery Wizard.
 
 4.  On the **Getting Started** page, do either of the following:
     

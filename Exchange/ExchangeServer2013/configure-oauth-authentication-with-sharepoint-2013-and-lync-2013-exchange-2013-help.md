@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure OAuth authentication with SharePoint 2013 and Lync 2013'
 TOCTitle: Configure OAuth authentication with SharePoint 2013 and Lync 2013
 ms:assetid: ca3c78a3-80cc-4df2-859f-0106bbd57a07
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ649094(v=EXCHG.150)
 ms:contentKeyID: 49317458
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -31,7 +35,7 @@ In Exchange 2013, OAuth configuration with partner applications such as SharePoi
 
   - Examples in this topic use the following default location of the `\Scripts` directory: `C:\Program Files\Microsoft\Exchange Server\V15\Scripts`.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the “Partner applications - configure" entry in the [Sharing and collaboration permissions](sharing-and-collaboration-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Partner applications - configure" entry in the [Sharing and collaboration permissions](sharing-and-collaboration-permissions-exchange-2013-help.md) topic.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

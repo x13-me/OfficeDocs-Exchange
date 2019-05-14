@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Troubleshoot the RollAlternateServiceAccountCredential.ps1 script'
 TOCTitle: Troubleshooting the RollAlternateServiceAccountCredential.ps1 Script
 ms:assetid: 2bbf36d3-eb89-4f92-a8de-259a7cb64d62
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff808310(v=EXCHG.150)
 ms:contentKeyID: 63937187
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -53,7 +57,7 @@ If a server is out of rotation for a longer period of time but is still a member
 
 To resolve this issue, remove the server from your deployment using Exchange Setup or run the script in attended mode until the server can be removed.
 
-If the server will only be down for a short time, and you don't want to permanently remove Exchange, you can adjust the script to run against specific servers using the parameter *ToSpecificServers* so that only active servers are targeted. Or, you can remove the RPC Client Access service from the non-responsive server’s Active Directory object by using the **Remove-ClientAccessArray** cmdlet, as shown in the following example.
+If the server will only be down for a short time, and you don't want to permanently remove Exchange, you can adjust the script to run against specific servers using the parameter *ToSpecificServers* so that only active servers are targeted. Or, you can remove the RPC Client Access service from the non-responsive server's Active Directory object by using the **Remove-ClientAccessArray** cmdlet, as shown in the following example.
 
 ```powershell
 Remove-RPCClientAccess -Server Server.Contoso.com

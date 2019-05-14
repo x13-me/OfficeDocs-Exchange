@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Track messages with delivery reports: Exchange 2013 Help'
 TOCTitle: Track messages with delivery reports
 ms:assetid: a14e4e62-08ca-4a7b-92e1-d39fe3e0a9e5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150554(v=EXCHG.150)
 ms:contentKeyID: 47560081
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -97,7 +101,7 @@ Depending on the delivery status of the message, you may see a variety of status
 
   - **Deferred** Indicates that a message is delayed.
 
-  - **Pending** If message delivery is pending because a message meets the criteria for an organization-wide rule or policy or because it’s subject to message approval, the status message explains what action a rule is performing or that the message must be approved by a moderator before delivery.
+  - **Pending** If message delivery is pending because a message meets the criteria for an organization-wide rule or policy or because it's subject to message approval, the status message explains what action a rule is performing or that the message must be approved by a moderator before delivery.
 
   - **Moderator**   The status indicates whether the message was approved or rejected by the moderator.
 

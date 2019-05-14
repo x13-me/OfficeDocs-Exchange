@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure Outlook client blocking: Exchange 2013 Help'
 TOCTitle: Configure Outlook client blocking
 ms:assetid: 3a579c83-8bc7-4adc-a25c-8eb6eed7220c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335207(v=EXCHG.150)
 ms:contentKeyID: 50873794
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -138,7 +142,7 @@ To bypass the warning that MRM features aren't supported for e-mail clients runn
 
   - Estimated time to complete: 1 minute.
 
-  - You can’t use the Exchange admin center (EAC) to perform these procedures. You must use the Shell.
+  - You can't use the Exchange admin center (EAC) to perform these procedures. You must use the Shell.
 
   - Procedures in this topic require specific permissions. See each procedure for its permissions information.
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Allow POP3, IMAP4, and SMTP server settings to be viewed by end users in Outlook Web App'
 TOCTitle: Allow POP3, IMAP4, and SMTP server settings to be viewed by end users in Outlook Web App
 ms:assetid: bd22bf7e-3bf7-45e6-8790-919b780166f6
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg298947(v=EXCHG.150)
 ms:contentKeyID: 49300683
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,7 +19,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-If you have users who use POP3 or IMAP4 to connect to their Microsoft Exchange Server 2013 mailboxes, they need to know the correct server settings to connect. After a default Exchange 2013 installation, your users can’t look up their own incoming POP3 or IMAP4 server settings or outgoing SMTP server settings. However, you can configure Exchange so that your users can look up their own settings using Microsoft Outlook Web App.
+If you have users who use POP3 or IMAP4 to connect to their Microsoft Exchange Server 2013 mailboxes, they need to know the correct server settings to connect. After a default Exchange 2013 installation, your users can't look up their own incoming POP3 or IMAP4 server settings or outgoing SMTP server settings. However, you can configure Exchange so that your users can look up their own settings using Microsoft Outlook Web App.
 
 After you perform these procedures, your users can look up their server settings in Outlook Web App as follows:
 
@@ -61,7 +65,7 @@ Set-ImapSettings -ExternalConnectionSettings {Dublin01.Contoso.com:993:SSL}
 
 For detailed syntax and parameter information, see [Set-ImapSettings](https://technet.microsoft.com/en-us/library/aa998252\(v=exchg.150\)).
 
-To apply these changes, you must restart IIS. You don’t need to restart the POP3 services. To restart IIS, from a command prompt, enter the following:
+To apply these changes, you must restart IIS. You don't need to restart the POP3 services. To restart IIS, from a command prompt, enter the following:
 
 ```powershell
 iisreset
@@ -69,7 +73,7 @@ iisreset
 
 ## How do you know this worked?
 
-To verify that you’ve configured Exchange to allow users to view their POP3 server settings:
+To verify that you've configured Exchange to allow users to view their POP3 server settings:
 
 1.  Run the following command in the Shell.
     
@@ -79,7 +83,7 @@ To verify that you’ve configured Exchange to allow users to view their POP3 se
 
 2.  Verify that the *ExternalConnectionSettings* property is set.
 
-To verify that you’ve configured Exchange to allow users to view their IMAP4 server settings:
+To verify that you've configured Exchange to allow users to view their IMAP4 server settings:
 
 1.  Run the following command in the Shell.
     
@@ -103,7 +107,7 @@ For detailed syntax and parameter information, see [Set-ReceiveConnector](https:
 
 ## How do you know this worked?
 
-To verify that you’ve configured Exchange to allow users to view their SMTP server settings:
+To verify that you've configured Exchange to allow users to view their SMTP server settings:
 
 1.  Run the following command in the Shell.
     
@@ -111,7 +115,7 @@ To verify that you’ve configured Exchange to allow users to view their SMTP se
     Get-ReceiveConnector | format-list
     ```
 
-2.  If the *AdvertiseClientSettings* property is set to `true`, users can view their SMTP server settings in Outlook Web App. If *AdvertiseClientSettings* is set to `false`, users can’t view their SMTP server settings in Outlook Web App.
+2.  If the *AdvertiseClientSettings* property is set to `true`, users can view their SMTP server settings in Outlook Web App. If *AdvertiseClientSettings* is set to `false`, users can't view their SMTP server settings in Outlook Web App.
 
 ## For more information
 

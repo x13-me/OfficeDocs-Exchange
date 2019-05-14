@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Add a mailbox database copy: Exchange 2013 Help'
 TOCTitle: Add a mailbox database copy
 ms:assetid: 784bf48f-8af5-422c-a63f-2f01fc0cf151
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298080(v=EXCHG.150)
 ms:contentKeyID: 48385258
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -55,7 +59,7 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 4.  Optionally, configure the **Activation preference number** for the database copy.
 
-5.  Click **More options…** to designate the database copy as a lagged database copy by configuring a replay lag time, or to postpone automatic seeding of the database copy.
+5.  Click **More options...** to designate the database copy as a lagged database copy by configuring a replay lag time, or to postpone automatic seeding of the database copy.
 
 6.  Click **Save** to save the configuration changes and add the mailbox database copy.
 

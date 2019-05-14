@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: c3d2031c-fb7b-4866-8ae1-32928d0138ef
 ms.date: 7/13/2018
+ms.reviewer: 
 title: Mail flow rules in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -33,7 +34,6 @@ For steps to implement specific messaging policies, see the following topics:
 - [Using mail flow rules to inspect message attachments](http://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx)
 
 ## Mail flow rule components
-<a name="Components"> </a>
 
 A rule is made of conditions, exceptions, actions, and properties:
 
@@ -47,10 +47,9 @@ A rule is made of conditions, exceptions, actions, and properties:
 
     For a complete list of mail flow rule actions available, see [Mail flow rule actions in Exchange Server](actions.md).
 
-- **Properties**: Specify other rules settings that aren't conditions, exceptions or actions. For example, when the rule should be applied, whether to enforce or test the rule, and the time period when the rule is active. For more information, see the [Mail flow rule properties](mail-flow-rules.md#Properties) section in this topic.
+- **Properties**: Specify other rules settings that aren't conditions, exceptions or actions. For example, when the rule should be applied, whether to enforce or test the rule, and the time period when the rule is active. For more information, see the [Mail flow rule properties](#mail-flow-rule-properties) section in this topic.
 
 ### Multiple conditions, exceptions, and actions
-<a name="Multiple"> </a>
 
 The following table shows how multiple conditions, condition values, exceptions, and actions are handled in a rule.
 
@@ -62,7 +61,6 @@ The following table shows how multiple conditions, condition values, exceptions,
 |Multiple actions|AND|Messages that match a rule's conditions get all the actions that are specified in the rule. For example, if the actions **Prepend the subject of the message with** and **Add recipients to the Bcc box** are selected, both actions are applied to the message. <br/> Keep in mind that some actions, such as the **Delete the message without notifying anyone** action, prevent subsequent rules from being applied to a message. Other actions such as **Forward the message** do not allow additional actions. <br/> You can also set an action on a rule so that when that rule is applied, subsequent rules are not applied to the message.|
 
 ### Mail flow rule properties
-<a name="Properties"> </a>
 
 The following table describes the rule properties that are available in mail flow rules.
 
@@ -78,7 +76,6 @@ The following table describes the rule properties that are available in mail flo
 |**Comments**| _Comments_|**Comments** You can enter descriptive comments about the rule.|
 
 ## How mail flow rules are applied
-<a name="HowApplied"> </a>
 
 Mail flow rules are applied by a transport agent on Mailbox servers and Edge Transport servers. On Mailbox servers, rules are applied by the Transport Rule agent. On Edge Transport servers, rules are applied by Edge Rule agent. Although similar in functionality, the agents have some differences. The important differences are summarized in the following table:
 
@@ -90,7 +87,6 @@ Mail flow rules are applied by a transport agent on Mailbox servers and Edge Tra
 For more information about transport agents, see [Transport Agents](http://technet.microsoft.com/library/e7389d63-3172-40d5-bf53-0d7cd7e78340.aspx).
 
 ### Differences in processing based on message type
-<a name="MessageType"> </a>
 
 There are several types of messages that flow through an organization. The following table shows which messages types can be processed by mail flow rules.
 
@@ -107,7 +103,6 @@ There are several types of messages that flow through an organization. The follo
 |**Read reports**: Reports that are generated in response to read receipt requests by senders. Read reports have a message class of `IPM.Note*.MdnRead` or `IPM.Note*.MdnNotRead`.|Yes|
 
 ### Rule storage and replication
-<a name="Replication"> </a>
 
 Mail flow rules that you create and configure on Mailbox servers are stored in Active Directory, and they're read and applied by the Transport service on all Mailbox servers in the organization. When you create, modify, or remove a mail flow rule, the change is replicated between the domain controllers in your organization. This allows Exchange to provide a consistent set of mail flow rules across the organization.
 
@@ -142,7 +137,4 @@ There are two mixed environment scenarios that are common:
 
     When you coexist with Exchange 2010, all mail flow rules are stored in Active Directory and replicated across your organization regardless of the Exchange Server version you used to create the rules. However, all mail flow rules are associated with the Exchange server version that was used to create them and are stored in a version-specific container in Active Directory. When you first deploy Exchange 2016 in your organization, any existing rules are imported to Exchange 2016 as part of the setup process. However, any changes afterwards would need to be made with both versions. For example, if you change an existing rule in Exchange 2016 (Exchange Management Shell or the EAC), you need to make the same change in Exchange 2010 (Exchange Management Shell or the Exchange Management Console).
 
-    Exchange 2010 can't process rules that have the **Version** or **RuleVersion** value 15. _n_. _n_. _n_. To be sure all your rules can be processed, only use rules that have the value 14. _n_. _n_. _n_.
-
-
-
+    Exchange 2010 can't process rules that have the **Version** or **RuleVersion** value 15._n_._n_._n_. To be sure all your rules can be processed, only use rules that have the value 14._n_._n_._n_.

@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting DataProtection Health Set
 TOCTitle: Troubleshooting DataProtection Health Set
 ms:assetid: cde3cc34-2076-4e30-8d3c-265b66d00ae8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.dataprotection(v=EXCHG.150)
 ms:contentKeyID: 49720873
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -157,7 +161,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
         
         Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be `Unhealthy`.
     
-    2.  Identify the probe that the monitor is based on. Note that most probes share the same name prefix. By using the previous example, search for “**ClusterNetwork\***”:
+    2.  Identify the probe that the monitor is based on. Note that most probes share the same name prefix. By using the previous example, search for "**ClusterNetwork\***":
         
             Get-MonitoringItemIdentity -Identity DataProtection -Server server1.contoso.com | ?{$_.Name -like "ClusterNet ItemType  
             work*"}
@@ -188,7 +192,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
         </tbody>
         </table>
     
-    3.  Rerun the associated probe for the monitor that’s in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
+    3.  Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
         
             Invoke-MonitoringProbe <health set name>\<probe name> -Server <server name> | Format-List
         

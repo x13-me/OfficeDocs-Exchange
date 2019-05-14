@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage health sets and server health: Exchange 2013 Help'
 TOCTitle: Manage health sets and server health
 ms:assetid: a4f84312-6cfa-4f17-9707-676aadab1143
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn482054(v=EXCHG.150)
 ms:contentKeyID: 59888995
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -95,7 +99,7 @@ Run the following command to view the probes, monitors and responders associated
 
 ## View a List of Monitors and Their Current Health
 
-The health of a monitor is reported by using the “worst of” monitors in the health set. You can view the details of a health set to see which monitors are healthy and which ones are unhealthy.
+The health of a monitor is reported by using the "worst of" monitors in the health set. You can view the details of a health set to see which monitors are healthy and which ones are unhealthy.
 
 ## Use the Shell to View a List of Monitors and Their Current Health
 

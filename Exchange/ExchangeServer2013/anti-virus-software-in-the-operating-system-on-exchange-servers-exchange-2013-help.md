@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Anti-virus software in the operating system on Exchange servers'
 TOCTitle: Anti-Virus Software in the Operating System on Exchange Servers
 ms:assetid: 7cef6017-7a55-41f3-a636-1ca4fce575b1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb332342(v=EXCHG.150)
 ms:contentKeyID: 48385271
 ms.date: 07/22/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -67,7 +71,7 @@ You must exclude specific directories for each Exchange server on which you run 
         
           - All the items listed in the **Mailbox databases** list, and the cluster quorum database that exists at %Windir%\\Cluster.
         
-          - The witness directory files. These files are located on another server in the environment, typically a Client Access server that isn’t installed on the same computer as a Mailbox server. By default, the witness directory files are located in %SystemDrive%:\\DAGFileShareWitnesses\\\<DAGFQDN\>.
+          - The witness directory files. These files are located on another server in the environment, typically a Client Access server that isn't installed on the same computer as a Mailbox server. By default, the witness directory files are located in %SystemDrive%:\\DAGFileShareWitnesses\\\<DAGFQDN\>.
     
       - **Transport service**
         
@@ -81,7 +85,7 @@ You must exclude specific directories for each Exchange server on which you run 
         
           - The temporary folders that are used to perform conversions:
             
-              - By default, content conversions are performed in the Exchange server’s %TMP% folder.
+              - By default, content conversions are performed in the Exchange server's %TMP% folder.
             
               - By default, rich text format (RTF) to MIME/HTML conversions are performed in %ExchangeInstallPath%\\Working\\OleConverter folder.
         

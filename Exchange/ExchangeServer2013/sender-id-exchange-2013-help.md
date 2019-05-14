@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Sender ID: Exchange 2013 Help'
 TOCTitle: Sender ID
 ms:assetid: 0f628f83-df8c-43fb-bf49-7aaa9ec69ab1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996295(v=EXCHG.150)
 ms:contentKeyID: 49248676
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -12,7 +12,7 @@ ms.collection:
 ms.reviewer: smithre4
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -28,11 +28,11 @@ The Outlook app for iOS and Android is designed to bring together email, calenda
 The Outlook for iOS and Android app is fully powered by the Microsoft Cloud. All Office 365 Enterprise, Business, and Education accounts are supported natively, which means there is no mailbox data cached outside of Office 365. Data simply stays in its current Exchange Online mailbox, and it's protected by TLS-secured connections end-to-end, between Office 365 and the app. Outlook for iOS and Android is  fully delivered through Microsoft services that provide a strong commitment to security, privacy, and compliance.
 
 The Office 365-based architecture provides the following benefits:
-1. **Data locality**: User mailbox data stays in place, and therefore continues to respect the data locality and regionality promises of Office 365 for data at rest. In other words, the user’s mailbox data is stored within the region in which the tenant is located.
+1. **Data locality**: User mailbox data stays in place, and therefore continues to respect the data locality and regionality promises of Office 365 for data at rest. In other words, the user's mailbox data is stored within the region in which the tenant is located.
 
 2. **Device ID**: Each Outlook for iOS and Android connection registers in the Office 365 Admin console and is able to be managed as a unique connection.
 
-3. **Modern Authentication (OAuth)**: Outlook for iOS and Android leverages Modern Authentication (OAuth) to protect user’s credentials. Modern authentication provides Outlook for iOS and Android with a secure mechanism to access Office 365 data without ever touching a user’s credentials. At sign in, the user authenticates directly against an identity platform (either Azure AD or an on-premises identity provider like ADFS) and receives an access token in return, which grants Outlook for iOS and Android access to the user’s mailbox or files. At no time does the service have access to the user’s password in any form.
+3. **Modern Authentication (OAuth)**: Outlook for iOS and Android leverages Modern Authentication (OAuth) to protect user's credentials. Modern authentication provides Outlook for iOS and Android with a secure mechanism to access Office 365 data without ever touching a user's credentials. At sign in, the user authenticates directly against an identity platform (either Azure AD or an on-premises identity provider like ADFS) and receives an access token in return, which grants Outlook for iOS and Android access to the user's mailbox or files. At no time does the service have access to the user's password in any form.
 
 4. **Enterprise Mobility + Security support**: Customers can take advantage of Microsoft Enterprise Mobility + Security (EMS) including Microsoft Intune and Azure Active Directory Premium, to enable conditional access and Intune app protection policies, which control and secure corporate messaging data on the mobile device.
 

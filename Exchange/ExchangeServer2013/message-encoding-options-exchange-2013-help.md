@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Message encoding options: Exchange 2013 Help'
 TOCTitle: Message encoding options
 ms:assetid: c1d9edbb-d87c-41e5-881b-cd612d83d7e4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb310794(v=EXCHG.150)
 ms:contentKeyID: 49318586
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -145,7 +149,7 @@ As a sender, you can specify message encoding options in Outlook Web App at any 
 
   - By configuring the default message format to be either plain text or HTMLin the **Message format** section of the **Settings** \>**Options** \> **Settings** page.
 
-  - By setting the message format as you're composing it to either plain text or HTML by using the **More options** (…) menu, and selecting **Switch to plain text** or **Switch to HTML**.
+  - By setting the message format as you're composing it to either plain text or HTML by using the **More options** (...) menu, and selecting **Switch to plain text** or **Switch to HTML**.
 
 Return to top
 

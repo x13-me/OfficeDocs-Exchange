@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Managing mailbox database copies: Exchange 2013 Help'
 TOCTitle: Managing mailbox database copies
 ms:assetid: 28cedf1d-365a-4e36-b2ba-6bf81af8684f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335158(v=EXCHG.150)
 ms:contentKeyID: 48384912
 ms.date: 08/26/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -269,7 +273,7 @@ Enabling loose truncation and configuring loose truncation parameters is perform
 </table>
 
 
-When using the LooseTruncation\_MinLogsToProtect registry value, note that the behavior is different for active and passive database copies. On the active database copy, this is the number of extra logs that are retained preceding those that are required by the protected passive copies and the required range of the active copy.On a passive database copy, this is the number of logs maintained from the latest available log. One tenth of this number is also used to maintain logs prior to the required range of this passive copy. The two limits are in place to ensure that lagged database copies don’t take up too much space, since their required range is typically very large.
+When using the LooseTruncation\_MinLogsToProtect registry value, note that the behavior is different for active and passive database copies. On the active database copy, this is the number of extra logs that are retained preceding those that are required by the protected passive copies and the required range of the active copy.On a passive database copy, this is the number of logs maintained from the latest available log. One tenth of this number is also used to maintain logs prior to the required range of this passive copy. The two limits are in place to ensure that lagged database copies don't take up too much space, since their required range is typically very large.
 
 ## Database activation policy
 
@@ -326,8 +330,8 @@ When the Data Guarantee API is executed to evaluate the health of the database c
 </colgroup>
 <thead>
 <tr class="header">
-<th>If the <em>DataMoveReplicationConstraint</em> parameter is set to…</th>
-<th>Then, for a given database…</th>
+<th>If the <em>DataMoveReplicationConstraint</em> parameter is set to...</th>
+<th>Then, for a given database...</th>
 <th>Conditions</th>
 </tr>
 </thead>
@@ -376,8 +380,8 @@ Before moving large numbers of mailboxes to or from replication databases within
 </colgroup>
 <thead>
 <tr class="header">
-<th>If you're deploying…</th>
-<th>Set DataMoveReplicationConstraint to…</th>
+<th>If you're deploying...</th>
+<th>Set DataMoveReplicationConstraint to...</th>
 </tr>
 </thead>
 <tbody>

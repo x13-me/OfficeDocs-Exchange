@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create an unscoped role: Exchange 2013 Help'
 TOCTitle: Create an unscoped role
 ms:assetid: 5a042ccf-4d5f-4609-a91b-21c20d1e6459
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876886(v=EXCHG.150)
 ms:contentKeyID: 49289258
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -153,7 +157,7 @@ Here are the steps to create an unscoped child role:
 
 ## Step 1: Create the unscoped child role
 
-New, unscoped child roles can be based on existing unscoped roles. When you create a role, an existing role and its management role entries are copied to the new role. The existing role becomes the parent to the new child role. If you create an unscoped role that's based on another unscoped role, you must choose a role that contains all the cmdlets and parameters you need to use, and then remove the ones you don't want. Child unscoped roles can't have management role entries that don’t exist in the parent role.
+New, unscoped child roles can be based on existing unscoped roles. When you create a role, an existing role and its management role entries are copied to the new role. The existing role becomes the parent to the new child role. If you create an unscoped role that's based on another unscoped role, you must choose a role that contains all the cmdlets and parameters you need to use, and then remove the ones you don't want. Child unscoped roles can't have management role entries that don't exist in the parent role.
 
 
 > [!NOTE]

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Recipient Management: Exchange 2013 Help'
 TOCTitle: Recipient Management
 ms:assetid: 669d602e-68e3-41f9-a455-b942d212d130
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298028(v=EXCHG.150)
 ms:contentKeyID: 49289275
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -51,7 +55,7 @@ For more information about how to customize this role group, see the following t
 
   - [Manage role group members](manage-role-group-members-exchange-2013-help.md)
 
-If you want to create a role group and assign some of the roles that are assigned to this role group to the new role group, see the “Create a role group” section in [Manage role groups](manage-role-groups-exchange-2013-help.md).
+If you want to create a role group and assign some of the roles that are assigned to this role group to the new role group, see the "Create a role group" section in [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
 If the creation of security principals in your organization, such as user accounts, is controlled by a specific group other than the Exchange administrators, you can create a role group and move the Mail Recipient Creation role and the Security Group Creation and Membership role to the new role group. Doing so prevents members of the Recipient Management role group from creating Active Directory objects. They can, however, continue to mail-enable the new Active Directory objects. For more information about split permissions, see [Understanding split permissions](understanding-split-permissions-exchange-2013-help.md).
 

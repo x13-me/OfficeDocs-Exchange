@@ -2,8 +2,9 @@
 title: "Email non-delivery reports in Exchange Online"
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 ms.date: 10/12/2018
+ms.reviewer: 
 ms.audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -79,7 +80,7 @@ Information provided in the newest style NDRs is designed to help the typical em
 |:-----|:-----|
 |**Office 365 logo**|This indicates that Office 365 generated the NDR. The logo doesn't mean that Office 365 was responsible for the error. This tells which messaging endpoints or services are involved in the email transaction, which is not always clear in older style NDRs.|
 |**Cause**|This section provides the reason that the message wasn't delivered.|
-|**Fix-it owner indicator**|This section provides an at-a-glance view of the issue and who needs to fix it. The image shows the three basic parties in an Office 365 email transaction—the sender, Office 365, and the recipient. The area marked in red is where the problem usually must be fixed.|
+|**Fix-it owner indicator**|This section provides an at-a-glance view of the issue and who needs to fix it. The image shows the three basic parties in an Office 365 email transaction: the sender, Office 365, and the recipient. The area marked in red is where the problem usually must be fixed.|
 |**How to fix it**|This section is designed for the end-user or the email sender who receives the NDR. It explains how to fix the issue.|
 |**More info for email admins**|This section provides a detailed explanation of the problem and solution along with technical details and a link to a web-based article that has detailed reference information.|
 |**Message hops**|This section contains times and system references for the message, which allows an admin to follow the message's hops or server-to-server path. With this info, an admin might quickly spot problems between message hops.|

@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting IMAP Health Set
 TOCTitle: Troubleshooting IMAP Health Set
 ms:assetid: 2a06e671-4cc2-4ce5-bf53-6243ea140f20
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.imap(v=EXCHG.150)
 ms:contentKeyID: 49720747
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -155,7 +159,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
     
         Set-MailboxServer -Identity <ServerName> -DatabaseCopyActivationDisabledAndMoveNow $true
 
-4.  Verify that all databases have been moved off the server that’s reporting the issue. To do this, run the following command:
+4.  Verify that all databases have been moved off the server that's reporting the issue. To do this, run the following command:
     
         Get-MailboxDatabaseCopyStatus -Server server1.contoso.com | Group Status
     

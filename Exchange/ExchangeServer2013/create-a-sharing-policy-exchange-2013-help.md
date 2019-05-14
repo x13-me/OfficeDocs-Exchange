@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a sharing policy: Exchange 2013 Help'
 TOCTitle: Create a sharing policy
 ms:assetid: cae8cab0-6265-448b-8add-5202cdb20678
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657494(v=EXCHG.150)
 ms:contentKeyID: 49289410
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -19,7 +23,7 @@ You can use sharing policies to control how users in your Exchange organization 
 
 
 > [!IMPORTANT]
-> Creating a sharing policy is one of several steps in setting up federated sharing in your Exchange organization. You have to set up a federation trust with the Azure Active Directory authentication system for your on-premises Exchange organization before you can share calendar information with other federated Exchange organizations. A federation trust isn’t required for Internet sharing policies.
+> Creating a sharing policy is one of several steps in setting up federated sharing in your Exchange organization. You have to set up a federation trust with the Azure Active Directory authentication system for your on-premises Exchange organization before you can share calendar information with other federated Exchange organizations. A federation trust isn't required for Internet sharing policies.
 
 
 

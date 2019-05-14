@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Prepare mailboxes for cross-forest moves using the Prepare-MoveRequest.ps1 script in the Shell'
 TOCTitle: Prepare mailboxes for cross-forest moves using the Prepare-MoveRequest.ps1 script in the Shell
 ms:assetid: 2cea59fb-69b7-4a2f-833f-de4d93cf1810
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee861103(v=EXCHG.150)
 ms:contentKeyID: 49360509
 ms.date: 11/22/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -66,6 +70,7 @@ To assign a specific authentication credential for the remote forest domain cont
     ```powershell
         Prepare-MoveRequest.ps1 -Identity JohnSmith@Fabrikan.com  -RemoteForestDomainController DC001.Fabrikam.com  -RemoteForestCredential $RemoteCredentials   -LocalForestDomainController DC001.Contoso.com  -LocalForestCredential $LocalCredentials
      ```
+
 ## Parameter set of the script
 
 The following table describes the parameter set for the script.

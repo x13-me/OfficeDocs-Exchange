@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'View mobile device information for users: Exchange 2013 Help'
 TOCTitle: View mobile device information for users
 ms:assetid: 4fd263c0-ad61-416c-bd68-339bf66605cf
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997974(v=EXCHG.150)
 ms:contentKeyID: 49345045
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -37,7 +41,7 @@ For additional management tasks related to mobile devices, see [Exchange ActiveS
 
 ## Use the EAC to view mobile device information for users
 
-The EAC displays a list of mobile devices that are currently synchronizing with a user’s mailbox. You can view mobile devices by family, model, phone number, or status.
+The EAC displays a list of mobile devices that are currently synchronizing with a user's mailbox. You can view mobile devices by family, model, phone number, or status.
 
 1.  In the EAC, click **Recipients** \> **Mailboxes** and choose a mailbox.
 

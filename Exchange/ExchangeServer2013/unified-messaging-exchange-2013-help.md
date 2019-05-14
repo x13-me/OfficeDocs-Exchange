@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Unified Messaging: Exchange 2013 Help'
 TOCTitle: Unified Messaging
 ms:assetid: 004b5d1a-cae8-4034-ab65-db41bd2f7b97
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150478(v=EXCHG.150)
 ms:contentKeyID: 47559933
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -35,7 +39,7 @@ Unified Messaging documentation
 
 ## New features
 
-Unified Messaging (UM) was first introduced in Microsoft Exchange Server 2007 and was also available in Exchange 2010. The Unified Messaging feature set in Exchange 2013 is similar to previous versions of Exchange. However, new features have been added and there have been architectural changes. Unified Messaging is now considered a component or sub feature of the voice-related features that are offered in Exchange 2013. The term *Unified Messaging* is still widely used in Exchange Management Shell cmdlets and UM-related services, and all Unified Messaging components—including dial plans, auto attendants, UM mailbox policies, and UM IP gateways—along with the ability to manage those UM components, are located within the Unified Messaging node in the navigation pane of the Exchange Administration Center (EAC).
+Unified Messaging (UM) was first introduced in Microsoft Exchange Server 2007 and was also available in Exchange 2010. The Unified Messaging feature set in Exchange 2013 is similar to previous versions of Exchange. However, new features have been added and there have been architectural changes. Unified Messaging is now considered a component or sub feature of the voice-related features that are offered in Exchange 2013. The term *Unified Messaging* is still widely used in Exchange Management Shell cmdlets and UM-related services, and all Unified Messaging components (including dial plans, auto attendants, UM mailbox policies, and UM IP gateways) along with the ability to manage those UM components, are located within the Unified Messaging node in the navigation pane of the Exchange Administration Center (EAC).
 
 The following topics are gateways to information about new or enhanced features found in Exchange 2013 Unified Messaging:
 
@@ -97,7 +101,7 @@ When you deploy Unified Messaging, users can access voice mail, email, and calen
     
       - Listen to calendar information
     
-      - Access or dial contacts who are stored in the organization’s directory or a single contact or contact group located in their personal Contacts.
+      - Access or dial contacts who are stored in the organization's directory or a single contact or contact group located in their personal Contacts.
     
       - Accept or cancel meeting requests
     
@@ -179,11 +183,11 @@ There are many areas that you must consider and evaluate to be able to successfu
 
   - Your current Active Directory environment.
 
-  - The number of users that you’ll have to support.
+  - The number of users that you'll have to support.
 
-  - The number of Client Access and Mailbox servers you’ll need.
+  - The number of Client Access and Mailbox servers you'll need.
 
-  - Whether you’ll be integrating UM with Microsoft Lync Server to enable Enterprise Voice.
+  - Whether you'll be integrating UM with Microsoft Lync Server to enable Enterprise Voice.
 
   - The placement of VoIP gateways, telephony equipment, and Client Access and Mailbox servers.
 
@@ -199,11 +203,11 @@ Return to top
 
 Exchange 2013 provides a single unified management console for your organization that includes all UM components and features. The Exchange Administration Center (EAC) provides a streamlined, optimized interface for management of on-premises, online, or hybrid deployments. The EAC in Exchange 2013 replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP) in Exchange 2010. Some of the EAC features include:
 
-  - **List view**   The list view in EAC has been designed to remove limitations that existed in ECP. ECP was limited to displaying up to 500 objects and, if you wanted to view objects that weren’t listed in the details pane, you needed to use searching and filtering to find those specific objects. In Exchange 2013, the viewable limit from within the EAC list view is approximately 20,000 objects. In addition, paging has been added so that you can page to the results. You can also configure page size and export to a CSV file.
+  - **List view**   The list view in EAC has been designed to remove limitations that existed in ECP. ECP was limited to displaying up to 500 objects and, if you wanted to view objects that weren't listed in the details pane, you needed to use searching and filtering to find those specific objects. In Exchange 2013, the viewable limit from within the EAC list view is approximately 20,000 objects. In addition, paging has been added so that you can page to the results. You can also configure page size and export to a CSV file.
 
   - **Add/Remove columns to the Recipient list view**   You can choose which columns to view, and you can save your custom list views.
 
-  - **Secure the ECP virtual directory**   You can partition access from the Internet and Intranets from within the ECP IIS virtual directory to allow or disallow management features. With this feature, you can permit or deny access to users trying to access the EAC from the Internet outside of your organizational environment, while still allowing access to an end user’s Outlook Web App Options.
+  - **Secure the ECP virtual directory**   You can partition access from the Internet and Intranets from within the ECP IIS virtual directory to allow or disallow management features. With this feature, you can permit or deny access to users trying to access the EAC from the Internet outside of your organizational environment, while still allowing access to an end user's Outlook Web App Options.
 
   - **Public Folder management**   In Exchange 2010 and Exchange 2007, public folders were managed through the Public Folder administration console. Public folders are now in the EAC, and you don't need a separate tool to manage them.
 

@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: fba87902-2a79-42ac-b394-46a9016f667e
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Message rate limits and throttling
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a role: Exchange 2013 Help'
 TOCTitle: Create a role
 ms:assetid: e614ad8f-5946-4135-b130-89ea626afcd4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351214(v=EXCHG.150)
 ms:contentKeyID: 49289443
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -47,7 +51,7 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
 ## Step 1: Create the management role
 
-New management roles are based on existing roles. When you create a role, an existing role and its management role entries are copied to the new role. The existing role becomes the parent to the new child role. You must always choose a role that contains all the cmdlets and parameters you need to use, and then remove the ones you don't want. Child roles can't have management role entries that don’t exist in the parent role.
+New management roles are based on existing roles. When you create a role, an existing role and its management role entries are copied to the new role. The existing role becomes the parent to the new child role. You must always choose a role that contains all the cmdlets and parameters you need to use, and then remove the ones you don't want. Child roles can't have management role entries that don't exist in the parent role.
 
 Use the following syntax to create the new role.
 

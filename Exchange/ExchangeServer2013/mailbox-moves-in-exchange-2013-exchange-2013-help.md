@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Mailbox moves in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Mailbox moves in Exchange 2013
 ms:assetid: 9c0a0bc9-2a39-4cf0-aa6e-6e5ef3fd38b5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150543(v=EXCHG.150)
 ms:contentKeyID: 47560063
 ms.date: 06/04/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -63,7 +67,7 @@ In Exchange 2013 you must move mailboxes between Exchange 2007 and Exchange 2010
 
 
 > [!NOTE]
-> You can’t move on-premises mailboxes from Exchange Server 2003 to Exchange 2013.
+> You can't move on-premises mailboxes from Exchange Server 2003 to Exchange 2013.
 
 
 

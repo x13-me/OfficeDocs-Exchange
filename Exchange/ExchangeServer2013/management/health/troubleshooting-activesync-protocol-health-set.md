@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting ActiveSync.Protocol Health Set
 TOCTitle: Troubleshooting ActiveSync.Protocol Health Set
 ms:assetid: 7351f881-08b2-4504-99f2-63e7acdfcc35
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.activesync.protocol(v=EXCHG.150)
 ms:contentKeyID: 49720823
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -42,7 +46,7 @@ The ActiveSync.Protocol health set works in conjunction with the **ActiveSync** 
 
 ## User Action
 
-It’s possible that the ActiveSync service recovered after it issued the alert. Therefore, when you receive an alert that indicates that the ActiveSync health set is unhealthy, first verify that the issue still exists. For more information, see [Troubleshooting ActiveSync Health Set](troubleshooting-activesync-health-set.md).
+It's possible that the ActiveSync service recovered after it issued the alert. Therefore, when you receive an alert that indicates that the ActiveSync health set is unhealthy, first verify that the issue still exists. For more information, see [Troubleshooting ActiveSync Health Set](troubleshooting-activesync-health-set.md).
 
 </div>
 

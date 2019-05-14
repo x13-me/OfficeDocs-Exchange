@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Test UM connectivity to VoIP gateways and PBXs: Exchange 2013 Help'
 TOCTitle: Test UM connectivity to VoIP gateways and PBXs
 ms:assetid: 2aca8631-a99a-4e29-aff0-e462385f03b2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996906(v=EXCHG.150)
 ms:contentKeyID: 55129209
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -23,7 +27,7 @@ For additional management tasks related to troubleshooting UM, see [UM services 
 
   - Estimated time to complete: 3 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox server (UM service)" and “Client Access Server (UM call router service)” entries in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox server (UM service)" and "Client Access Server (UM call router service)" entries in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
   - To perform the following procedures, you must log on to the Mailbox server by using an account that's a member of the local Administrators group.
 

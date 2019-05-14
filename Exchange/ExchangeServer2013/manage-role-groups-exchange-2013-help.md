@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage role groups: Exchange 2013 Help'
 TOCTitle: Manage role groups
 ms:assetid: ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657480(v=EXCHG.150)
 ms:contentKeyID: 49289369
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -224,7 +228,7 @@ Adding a management role to a role group is the best and simplest way to grant p
 
 3.  In the **Roles** section, select the roles you want to add to the role group.
 
-4.  When you’ve finished adding roles to the role group, click **Save**.
+4.  When you've finished adding roles to the role group, click **Save**.
 
 ## Use the Shell to create a role assignment with no scope
 
@@ -372,7 +376,7 @@ Removing a role from a management role group is the best and simplest way to rev
 
 3.  In the **Roles** section, select the roles you want to remove from the role group.
 
-4.  When you’ve finished removing roles from the role group, click **Save**.
+4.  When you've finished removing roles from the role group, click **Save**.
 
 ## Use the Shell to remove a role from a role group
 
@@ -519,7 +523,7 @@ To verify that you have successfully changed the scope of a role assignment on a
     
     1.  In the EAC, navigate to **Permissions**\> **Admin Roles**. All the role groups in your organization are listed here.
     
-    2.  Select a role group to view the scope that’s configured on the role group.
+    2.  Select a role group to view the scope that's configured on the role group.
 
   - If you used the Shell to configure the scope on the role group, do the following:
     

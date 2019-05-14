@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Add a role entry to an unscoped top-level role: Exchange 2013 Help'
 TOCTitle: Add a role entry to an unscoped top-level role
 ms:assetid: 52fd3f20-c348-49d5-9bdb-f2cbf780cf2d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd979789(v=EXCHG.150)
 ms:contentKeyID: 49289252
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

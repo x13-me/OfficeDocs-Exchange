@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a database availability group: Exchange 2013 Help'
 TOCTitle: Create a database availability group
 ms:assetid: d6b98299-e203-488b-af73-50753fe152c8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351172(v=EXCHG.150)
 ms:contentKeyID: 48385609
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -88,7 +92,7 @@ This example creates the DAG DAG1 that's configured to use the witness server FI
 New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer FILESRV1 -WitnessDirectory C:\DAG1
 ```
 
-This example creates the DAG DAG2. The system automatically selects a Client Access server in the local Active Directory site that does not contain the Mailbox server role as the DAG’s witness server. DAG2 is assigned a single static IP address because in this example all DAG members have the MAPI network on the same subnet.
+This example creates the DAG DAG2. The system automatically selects a Client Access server in the local Active Directory site that does not contain the Mailbox server role as the DAG's witness server. DAG2 is assigned a single static IP address because in this example all DAG members have the MAPI network on the same subnet.
 
 ```powershell
 New-DatabaseAvailabilityGroup -Name DAG2 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8

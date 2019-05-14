@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Recovery databases: Exchange 2013 Help'
 TOCTitle: Recovery databases
 ms:assetid: f3c6fd0b-2e25-442e-a0fc-46f663130c3e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876954(v=EXCHG.150)
 ms:contentKeyID: 48385711
 ms.date: 06/06/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting UM.CallRouter Health Set
 TOCTitle: Troubleshooting UM.CallRouter Health Set
 ms:assetid: 444a9038-0952-4823-98fb-99fa59f4a378
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.um.callrouter(v=EXCHG.150)
 ms:contentKeyID: 49720778
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -153,7 +157,7 @@ Renew the UM Call Router service certificate on the CAS.
 
 **Additional troubleshooting steps:**
 
-1.  Start IIS Manager, and then connect to the server that’s reporting the issue to determine whether the **MSExchangeServicesAppPool** application pool is running.
+1.  Start IIS Manager, and then connect to the server that's reporting the issue to determine whether the **MSExchangeServicesAppPool** application pool is running.
 
 2.  In IIS Manager, click **Application Pools**, and then recycle the **MSExchangeServicesAppPool** application pool by running the following command from the Shell:
     

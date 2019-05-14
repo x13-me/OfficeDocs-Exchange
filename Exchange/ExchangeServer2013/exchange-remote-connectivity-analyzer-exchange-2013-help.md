@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Exchange Remote Connectivity Analyzer: Exchange 2013 Help'
 TOCTitle: Exchange Remote Connectivity Analyzer
 ms:assetid: dd26698e-d00c-47f5-a7aa-c3894fe86c75
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff701693(v=EXCHG.150)
 ms:contentKeyID: 49289433
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,7 +19,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-The Microsoft Exchange Remote Connectivity Analyzer (ExRCA) helps you make sure that connectivity for your Exchange servers is set up correctly. If you’re having problems, it can also help you find and fix these problems. The ExRCA website can run tests to check for Microsoft Exchange ActiveSync, Exchange Web Services, Microsoft Outlook, and Internet email connectivity.
+The Microsoft Exchange Remote Connectivity Analyzer (ExRCA) helps you make sure that connectivity for your Exchange servers is set up correctly. If you're having problems, it can also help you find and fix these problems. The ExRCA website can run tests to check for Microsoft Exchange ActiveSync, Exchange Web Services, Microsoft Outlook, and Internet email connectivity.
 
 ## Remote Connectivity Analyzer tests
 
@@ -41,9 +45,9 @@ You can run the following tests for Exchange ActiveSync:
 
 The Exchange Web Services tests check the settings for many of the Exchange Web Services. You can run the following tests for Exchange Web Services:
 
-  - **Synchronization, Notification, Availability, and Automatic Replies:** These tests walk through many basic Exchange Web Services tasks to confirm that they’re working. This is useful for IT administrators who want to troubleshoot external access using Entourage EWS or other Web Services clients.
+  - **Synchronization, Notification, Availability, and Automatic Replies:** These tests walk through many basic Exchange Web Services tasks to confirm that they're working. This is useful for IT administrators who want to troubleshoot external access using Entourage EWS or other Web Services clients.
 
-  - **Service Account Access (Developers):** This test verifies a service account’s ability to access a specified mailbox, create and delete items in it, and access it via Exchange impersonation. This test is primarily used by application developers to test the ability to access mailboxes with alternate credentials.
+  - **Service Account Access (Developers):** This test verifies a service account's ability to access a specified mailbox, create and delete items in it, and access it via Exchange impersonation. This test is primarily used by application developers to test the ability to access mailboxes with alternate credentials.
 
 ## Microsoft Office Outlook Connectivity tests
 

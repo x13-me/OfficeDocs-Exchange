@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure calendar options for POP3: Exchange 2013 Help'
 TOCTitle: Configure calendar options for POP3
 ms:assetid: ac3d60a0-8697-4c06-9e93-f8d2c4b157b6
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124133(v=EXCHG.150)
 ms:contentKeyID: 50395403
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -53,7 +57,7 @@ This example enables POP3 users to access calendar information from the Internet
 Set-PopSettings -CalendarItemRetrievalOption InternetUrl
 ```
 
-This example enables POP3 users to access calendar information by using a direct Outlook Web App URL. If you’re using `Custom`, you must specify an Outlook Web App URL using the *OWAServerUrl* parameter.
+This example enables POP3 users to access calendar information by using a direct Outlook Web App URL. If you're using `Custom`, you must specify an Outlook Web App URL using the *OWAServerUrl* parameter.
 
 ```powershell
 Set-PopSettings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
@@ -65,7 +69,7 @@ For more information about syntax and parameters, see [Set-PopSettings](https://
 
 ## How do you know this worked?
 
-To verify that you’ve successfully set calendar options, do the following:
+To verify that you've successfully set calendar options, do the following:
 
 Run the following command in the Shell.
 

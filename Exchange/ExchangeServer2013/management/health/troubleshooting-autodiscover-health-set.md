@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting Autodiscover Health Set
 TOCTitle: Troubleshooting Autodiscover Health Set
 ms:assetid: bc933621-df73-4d1d-bdef-825b98be8e09
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.autodiscover(v=EXCHG.150)
 ms:contentKeyID: 49720860
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -91,7 +95,7 @@ This probe can fail for any of the following common reasons:
 
 ## User Action
 
-It’s possible that the service recovered after it issued the alert. Therefore, when you receive an alert that specifies that the health set is unhealthy, first verify that the issue still exists. If the issue does exist, perform the appropriate recovery actions outlined in the following sections.
+It's possible that the service recovered after it issued the alert. Therefore, when you receive an alert that specifies that the health set is unhealthy, first verify that the issue still exists. If the issue does exist, perform the appropriate recovery actions outlined in the following sections.
 
 <span id="verify"></span>
 
@@ -113,7 +117,7 @@ It’s possible that the service recovered after it issued the alert. Therefore,
     
     2.  Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert is `Unhealthy`.
     
-    3.  Rerun the associated probe for the monitor that’s in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
+    3.  Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
         
             Invoke-MonitoringProbe <health set name>\<probe name> -Server <server name> | Format-List
         
@@ -157,7 +161,7 @@ To troubleshoot this issue, follow these steps:
 
 2.  Create a test user account, and then log on to the CAS by using the test user account. For example, log on by using: https://*\<servername\>*/autodiscover/autodiscover.xml.
     
-    If test user account name passes, an issue may affect the mailbox server that’s hosting the monitored mailbox.
+    If test user account name passes, an issue may affect the mailbox server that's hosting the monitored mailbox.
     
     Try to repeat the previous steps by using a test account on the Mailbox server. If this attempt fails, try to perform the test against a different CAS to verify that the problem is occurring on a specific CAS and not on the Mailbox server.
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting Outlook.Proxy Health Set
 TOCTitle: Troubleshooting Outlook.Proxy Health Set
 ms:assetid: a85585c9-433e-4aa4-b016-28782a18144e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.outlook.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720847
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -145,7 +149,7 @@ To troubleshoot this issue, follow these steps:
 
 2.  Create a test user account, and then log on to the CAS by using the test user account. For example, log on by using: https:// *\<servername\>*/owa.
 
-3.  Start IIS Manager, and then connect to the server that’s reporting the issue to determine the **MSExchangeOABAppPool** application pool is running on CAS server.
+3.  Start IIS Manager, and then connect to the server that's reporting the issue to determine the **MSExchangeOABAppPool** application pool is running on CAS server.
 
 4.  Click **Application Pools**, and then recycle the **MSExchangeRpcProxyAppPool** application pool by running the following command from the Shell:
     

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Managed Store Limits: Exchange 2013 Help'
 TOCTitle: Managed Store Limits
 ms:assetid: bea9ec15-bfb5-4716-b14e-010e389c9f9e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt741981(v=EXCHG.150)
 ms:contentKeyID: 73225999
 ms.date: 09/16/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

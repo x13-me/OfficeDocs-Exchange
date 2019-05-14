@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Recoverable Items folder: Exchange 2013 Help'
 TOCTitle: Recoverable Items folder
 ms:assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee364755(v=EXCHG.150)
 ms:contentKeyID: 49289452
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -92,7 +96,7 @@ The Recoverable Items folder contains the following subfolders:
 
   - **DiscoveryHolds**   If In-Place Hold is enabled, this subfolder contains all items that meet the hold query parameters and are purged.
 
-  - **Calendar Logging**   This subfolder contains calendar changes that occur within a mailbox. This folder isn’t available to users.
+  - **Calendar Logging**   This subfolder contains calendar changes that occur within a mailbox. This folder isn't available to users.
 
 The following illustration shows the subfolders in the Recoverable Items folders. It also shows the deleted item retention, single item recovery, and hold workflow processes that are described in the following sections.
 

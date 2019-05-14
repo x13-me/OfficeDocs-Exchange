@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Outlook Web App: Exchange 2013 Help'
 TOCTitle: Outlook Web App
 ms:assetid: 3814b665-01e8-4881-9a44-163f14789ee4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657718(v=EXCHG.150)
 ms:contentKeyID: 49300478
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -31,7 +35,7 @@ For information about new features, see [What's new in Exchange 2013](what-s-new
 
 ## Overview of Outlook Web App
 
-Fully supported web browsers give users access to features such as conversation view, Inbox rules, the reading pane, and the Scheduling Assistant. Browsers that aren’t fully supported can still be used, but users will see the light version of Outlook Web App, which has fewer features. For information about new features in Outlook Web App, see [What's new for Outlook Web App in Exchange 2013](what-s-new-for-outlook-web-app-in-exchange-2013-exchange-2013-help.md).
+Fully supported web browsers give users access to features such as conversation view, Inbox rules, the reading pane, and the Scheduling Assistant. Browsers that aren't fully supported can still be used, but users will see the light version of Outlook Web App, which has fewer features. For information about new features in Outlook Web App, see [What's new for Outlook Web App in Exchange 2013](what-s-new-for-outlook-web-app-in-exchange-2013-exchange-2013-help.md).
 
 ## Managing Outlook Web App
 

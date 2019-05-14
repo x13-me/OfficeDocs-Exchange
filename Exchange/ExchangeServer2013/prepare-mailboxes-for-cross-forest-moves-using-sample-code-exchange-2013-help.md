@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Prepare mailboxes for cross-forest moves using sample code: Exchange 2013 Help'
 TOCTitle: Prepare mailboxes for cross-forest moves using sample code
 ms:assetid: f35ac7a5-bb84-4653-b6d0-65906e93627b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee861124(v=EXCHG.150)
 ms:contentKeyID: 49360517
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -65,7 +69,7 @@ For more information about preparing for cross-forest moves, including descripti
     
       - Microsoft.Exchange.Sample.OneWayGALSync.MVRules.dll
 
-3.  Edit the file OneWaySync.xml that you copied to the ILM Extensions folder in step 1 to specify the distinguishedName (DN) of the TargetOU container in the target Exchange forest in which you want to create the mail users. You can use LDP.exe or ADSIEdit.exe to browse for the TargetOU container if you don’t know what its name is.
+3.  Edit the file OneWaySync.xml that you copied to the ILM Extensions folder in step 1 to specify the distinguishedName (DN) of the TargetOU container in the target Exchange forest in which you want to create the mail users. You can use LDP.exe or ADSIEdit.exe to browse for the TargetOU container if you don't know what its name is.
     
 
     > [!NOTE]

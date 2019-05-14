@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Assign a certificate to the UM and UM Call Router services: Exchange 2013 Help'
 TOCTitle: Assign a certificate to the UM and UM Call Router services
 ms:assetid: 8a900e5f-9779-4213-92d7-ec157b15fbc5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn205140(v=EXCHG.150)
 ms:contentKeyID: 53908378
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,13 +19,13 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-You can use the EAC or the Shell to assign a self-signed, internal public key infrastructure (PKI), or third-party commercial certificate for specific Exchange services. When you use the **New-ExchangeCertificate** cmdlet to assign the certificate to Exchange services with the *Services* parameter, you’re prompted to assign the certificate to Exchange services. If you use the EAC to create a certificate, the New Exchange Certificate wizard won’t prompt you to assign the certificate to Exchange services. You need to edit the properties of the certificate and assign the certificate by selecting which services you want to assign it to.
+You can use the EAC or the Shell to assign a self-signed, internal public key infrastructure (PKI), or third-party commercial certificate for specific Exchange services. When you use the **New-ExchangeCertificate** cmdlet to assign the certificate to Exchange services with the *Services* parameter, you're prompted to assign the certificate to Exchange services. If you use the EAC to create a certificate, the New Exchange Certificate wizard won't prompt you to assign the certificate to Exchange services. You need to edit the properties of the certificate and assign the certificate by selecting which services you want to assign it to.
 
 Different services have different certificate requirements. For example, some services may only require a server name in the **Subject Name** or **Subject Alternative Name** boxes of a certificate and other services may require a fully qualified domain name (FQDN). Make sure that the certificate name can support the uses required by the services you enable it for.
 
 
 > [!WARNING]  
-> Self-signed certificates can’t be used when you’re integrating Unified Messaging (UM) with Microsoft Lync Server.
+> Self-signed certificates can't be used when you're integrating Unified Messaging (UM) with Microsoft Lync Server.
 
 
 

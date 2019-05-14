@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Clean up the Recoverable Items folder: Exchange 2013 Help'
 TOCTitle: Clean up the Recoverable Items folder
 ms:assetid: 82c310f8-de2f-46f2-8e1a-edb6055d6e69
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff678798(v=EXCHG.150)
 ms:contentKeyID: 50470877
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 f1_keywords:
 - classified message spillage
@@ -47,7 +51,7 @@ To learn more about the Recoverable Items folder, see [Recoverable Items folder]
     
       - **Mailbox Import Export**   This role allows you to delete messages from a user's mailbox. By default, this role isn't assigned to any role group. To delete messages from users' mailboxes, you can add the Mailbox Import Export role to the Organization Management role group. For more information, see the "Add a role to a role group" section in [Manage role groups](manage-role-groups-exchange-2013-help.md) .
 
-  - Because incorrectly cleaning up the Recoverable Items folder can result in data loss, it’s important that you're familiar with the Recoverable Items folder and the impact of removing its contents. Before performing this procedure, we recommend that you review the information in [Recoverable Items folder](recoverable-items-folder-exchange-2013-help.md).
+  - Because incorrectly cleaning up the Recoverable Items folder can result in data loss, it's important that you're familiar with the Recoverable Items folder and the impact of removing its contents. Before performing this procedure, we recommend that you review the information in [Recoverable Items folder](recoverable-items-folder-exchange-2013-help.md).
 
   - You can't use the Exchange Admin Center (EAC) to perform these procedures. You must use the Shell.
 

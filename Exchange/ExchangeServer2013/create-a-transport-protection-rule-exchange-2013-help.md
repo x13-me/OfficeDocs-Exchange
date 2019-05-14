@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a Transport Protection Rule: Exchange 2013 Help'
 TOCTitle: Create a Transport Protection Rule
 ms:assetid: 3a857185-ee16-4ee7-9e57-8be95f7e753a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd302432(v=EXCHG.150)
 ms:contentKeyID: 49319907
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -96,7 +100,7 @@ For additional management tasks related to Information Rights Management (IRM), 
 
 To verify that you have successfully created a transport protection rule, do one of the following:
 
-  - Use the EAC to verify that the rule has been created, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to view the rule’s properties.
+  - Use the EAC to verify that the rule has been created, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to view the rule's properties.
 
   - Use the [Get-TransportRule](https://technet.microsoft.com/en-us/library/aa998585\(v=exchg.150\)) cmdlet to retrieve the rule. For an example of how to retrieve a rule, see [Examples](https://technet.microsoft.com/en-us/aa998585\(exchg.150\)#examples) in **Get-TransportRule**.
 

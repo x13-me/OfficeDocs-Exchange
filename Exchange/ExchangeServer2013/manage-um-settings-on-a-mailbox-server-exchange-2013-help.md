@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage UM settings on a Mailbox server: Exchange 2013 Help'
 TOCTitle: Manage UM settings on a Mailbox server
 ms:assetid: 6df4853d-21d2-473f-b0ca-ebc996d8794a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998815(v=EXCHG.150)
 ms:contentKeyID: 49315441
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.Servers.UnifiedMessaging.UMServerPropertiesPropertyPage
@@ -21,7 +25,7 @@ After you install a Mailbox server that is running the Microsoft Exchange Unifie
 
 
 > [!IMPORTANT]
-> It’s not required that Mailbox servers be added to a UM dial plan before it can process calls for Unified Messaging (UM), except when you’re integrating UM and Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server. By default, all Mailbox servers in an organization are available to answer incoming calls.
+> It's not required that Mailbox servers be added to a UM dial plan before it can process calls for Unified Messaging (UM), except when you're integrating UM and Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server. By default, all Mailbox servers in an organization are available to answer incoming calls.
 
 
 

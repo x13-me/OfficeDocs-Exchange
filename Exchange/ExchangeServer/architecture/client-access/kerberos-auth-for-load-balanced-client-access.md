@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
 ms.date:
+ms.reviewer: 
 title: Configure Kerberos authentication for load-balanced Client Access services
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -358,7 +359,7 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
    In hybrid environments with Exchange Online or if you use OAuth internally, run the following commands on your Exchange 2016 or Exchange 2019 server that's running Client Access services:
 
    ```
-   $mapidir = Get-MapiVirtualDirectory –Server CAS-1
+   $mapidir = Get-MapiVirtualDirectory -Server CAS-1
    $mapidir | Set-MapiVirtualDirectory -IISAuthenticationMethods ($mapidir.IISAuthenticationMethods +='Negotiate')
    ```
 

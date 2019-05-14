@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Change user throttling settings for specific users: Exchange 2013 Help'
 TOCTitle: Change user throttling settings for specific users
 ms:assetid: c5f834d6-189d-485e-9800-5e0066815ecf
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ863577(v=EXCHG.150)
 ms:contentKeyID: 50395404
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -17,7 +21,7 @@ _**Applies to:** Exchange Server 2013_
 
 You can control how resources are consumed by individual users in your Exchange organization by changing the default throttling settings.
 
-Controlling how resources are consumed by individual users was possible in Exchange Server 2010, and this capability has been expanded for Exchange Server 2013. The policy named GlobalThrottlingPolicy defines the default throttling settings for every new and existing user in your organization unless you’ve customized the throttling policies. In many typical Exchange deployment scenarios, the policy named GlobalThrottlingPolicy is adequate to manage users.
+Controlling how resources are consumed by individual users was possible in Exchange Server 2010, and this capability has been expanded for Exchange Server 2013. The policy named GlobalThrottlingPolicy defines the default throttling settings for every new and existing user in your organization unless you've customized the throttling policies. In many typical Exchange deployment scenarios, the policy named GlobalThrottlingPolicy is adequate to manage users.
 
 To customize throttling settings to apply only to specific users in your organization, create a new throttling policy with the scope assignment Regular. You can only change the default throttling settings by using the Shell.
 
@@ -65,7 +69,7 @@ For more information about syntax and parameters, see [New-ThrottlingPolicy](htt
 
 ## How do you know this worked?
 
-To verify that you’ve successfully created the Regular throttling policy, do the following:
+To verify that you've successfully created the Regular throttling policy, do the following:
 
 1.  Run the following command.
     

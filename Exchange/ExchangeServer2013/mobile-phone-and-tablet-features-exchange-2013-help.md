@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Mobile phone and tablet features: Exchange 2013 Help'
 TOCTitle: Mobile phone and tablet features
 ms:assetid: ad54d9e6-7a1c-4fb0-b5a9-0b042b98ada3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232162(v=EXCHG.150)
 ms:contentKeyID: 50396326
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -71,7 +75,7 @@ Mobile phones that have a version of Windows Phone software as their operating s
 </ul>
 
 > [!WARNING]
-> If your organization uses other mobile device mailbox policy settings, you’ll need to set the <STRONG>Allow non-provisionable devices</STRONG> policy to true. This can have security implications for your organization, because other mobile phones and devices that don’t meet all the requirements of your mobile device policy settings will be allowed to synchronize. For more information, see <A href="mobile-device-mailbox-policies-exchange-2013-help.md">Mobile device mailbox policies</A>.
+> If your organization uses other mobile device mailbox policy settings, you'll need to set the <STRONG>Allow non-provisionable devices</STRONG> policy to true. This can have security implications for your organization, because other mobile phones and devices that don't meet all the requirements of your mobile device policy settings will be allowed to synchronize. For more information, see <A href="mobile-device-mailbox-policies-exchange-2013-help.md">Mobile device mailbox policies</A>.
 
 
 </td>

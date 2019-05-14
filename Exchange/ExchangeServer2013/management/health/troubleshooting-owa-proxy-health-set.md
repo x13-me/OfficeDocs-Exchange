@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting OWA.Proxy Health Set
 TOCTitle: Troubleshooting OWA.Proxy Health Set
 ms:assetid: 1eaa26ad-b489-402a-ad2d-bfae3b083f42
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.owa.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720734
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -83,7 +87,7 @@ For more information about probes and monitors, see [Server health and performan
 
 This probe may fail for any of the following common reasons:
 
-  - The application pool that’s hosted on the monitored Client Access server (CAS) is not working correctly.
+  - The application pool that's hosted on the monitored Client Access server (CAS) is not working correctly.
 
   - The monitoring account credentials are incorrect.
 
@@ -117,7 +121,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
     
     2.  Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be `Unhealthy`.
     
-    3.  Rerun the associated probe for the monitor that’s in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
+    3.  Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
         
             Invoke-MonitoringProbe <health set name>\<probe name> -Server <server name> | Format-List
         
@@ -151,7 +155,7 @@ To troubleshoot this issue, follow these steps:
 
 2.  Create a test user account, and then log on to the CAS by using the test user account. For example, log on by using: https:// *\<servername\>*/owa.
 
-3.  Start IIS Manager, and then connect to the server that’s reporting the issue to determine whether the **MSExchangeServicesAppPools** application pools are running on the CAS.
+3.  Start IIS Manager, and then connect to the server that's reporting the issue to determine whether the **MSExchangeServicesAppPools** application pools are running on the CAS.
 
 4.  Click **Application Pools**, and then recycle the **MSExchangeOWAAppPool** and **MSExchangeOWACalendarAppPool** application pools by running the following command from the Shell:
     

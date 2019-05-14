@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Modify an organization relationship: Exchange 2013 Help'
 TOCTitle: Modify an organization relationship
 ms:assetid: 3713ef83-f01a-41bb-b127-62ca242dd7a4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673055(v=EXCHG.150)
 ms:contentKeyID: 49289228
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -17,7 +21,7 @@ _**Applies to:** Exchange Server 2013_
 
 An organization relationship lets users in your Exchange organization share calendar free/busy information with an Office 365 organization or another on-premises Exchange organization. You may want to change the settings of an organization relationship, such as changing the name, temporarily disabling calendar sharing, changing the access level, or changing which security groups will share calendars.
 
-Before you can share calendars with another organization, you have to set up an authentication relationship with the cloud (also known as “federation”) and must meet minimum software requirements. To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.md).
+Before you can share calendars with another organization, you have to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements. To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.md).
 
 For additional management tasks related to federation, see [Federation procedures](federation-procedures-exchange-2013-help.md).
 
@@ -49,7 +53,7 @@ For additional management tasks related to federation, see [Federation procedure
 
 2.  In list view, under **Organization Sharing**, select the organization relationship Contoso, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3.  In **organization relationship**, **general** don’t change the **Name** for the organization relationship
+3.  In **organization relationship**, **general** don't change the **Name** for the organization relationship
 
 4.  In the **Domains to share with** box, enter the domain **service.contoso.com**, then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 

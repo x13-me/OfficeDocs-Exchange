@@ -5,6 +5,8 @@ author: maggsl
 ms.author: v-maleo
 ms.assetid: 708c71d5-7d6a-40b8-966b-eed82bc0d186
 ms.date: 
+ms.reviewer: 
+manager: dansimp
 description: Admins can learn how to use a screen reader to create mail flow rules (also known as transport rules) in the Exchange admin center (EAC) in Exchange Online.
 title: Use a screen reader to configure mail flow rules in the Exchange admin center in Exchange Online
 ms.collection: 
@@ -46,7 +48,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
 
 ## Create a mail flow rule
 
-1. In the EAC, to move the focus to the first link in the navigation pane— **Dashboard** —press Ctrl+F6 *twice*. You hear "Dashboard, Primary navigation link..
+1. In the EAC, to move the focus to the first link in the navigation pane (**Dashboard**) press Ctrl+F6 *twice*. You hear "Dashboard, Primary navigation link..
 
 2. To move the focus to the **mail flow** link in the navigation pane, press the Tab key until you hear "Mail flow, Primary navigation link." Press Enter.
 

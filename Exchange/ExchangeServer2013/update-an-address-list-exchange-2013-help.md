@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Update an address list: Exchange 2013 Help'
 TOCTitle: Update an address list
 ms:assetid: 163e7099-cf14-4bb0-a84c-1401e9db670e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996375(v=EXCHG.150)
 ms:contentKeyID: 49289182
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.UpdateAddressListWizardForm.ScheduleWizardPage

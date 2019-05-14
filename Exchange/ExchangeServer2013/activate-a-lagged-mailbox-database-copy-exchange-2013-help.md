@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Activate a lagged mailbox database copy: Exchange 2013 Help'
 TOCTitle: Activate a lagged mailbox database copy
 ms:assetid: 493d9c40-644d-49d6-9291-949acbcfdcb6
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd979786(v=EXCHG.150)
 ms:contentKeyID: 48385050
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -136,7 +140,7 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
 
 
 
-2.  Determine the required logs for the lagged database copy by looking for the “Log Required:” value in ESEUTIL database header output
+2.  Determine the required logs for the lagged database copy by looking for the "Log Required:" value in ESEUTIL database header output
     
     ```powershell
     Eseutil /mh <DBPath> | findstr /c:"Log Required"

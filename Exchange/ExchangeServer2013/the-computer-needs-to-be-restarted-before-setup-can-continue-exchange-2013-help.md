@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Computer must be restarted before Setup can continue'
 TOCTitle: The computer needs to be restarted before Setup can continue
 ms:assetid: d5c73280-4e54-473a-b328-9673af11e2c0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.rebootpending(v=EXCHG.150)
 ms:contentKeyID: 46629129
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,7 +19,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server_
 
 
-Microsoft Exchange Server 2013 Setup can’t continue because it detected that the local computer needs to be restarted to complete the installation of other programs or Windows updates.
+Microsoft Exchange Server 2013 Setup can't continue because it detected that the local computer needs to be restarted to complete the installation of other programs or Windows updates.
 
 ## Why is this happening?
 

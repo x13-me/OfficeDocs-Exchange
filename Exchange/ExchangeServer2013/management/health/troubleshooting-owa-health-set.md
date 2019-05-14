@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting OWA Health Set
 TOCTitle: Troubleshooting OWA Health Set
 ms:assetid: eae9dbd7-2ce6-43ce-b9a1-b114fd0c3ab4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.owa(v=EXCHG.150)
 ms:contentKeyID: 49720915
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -78,13 +82,13 @@ For more information about probes and monitors, see [Server health and performan
 
 This probe can fail for several reasons. The following are some of the more common reasons:
 
-  - The Outlook Web App application pool that’s hosted on the monitored Client Access server (CAS) is not responding, or the application pool that’s hosted on the Mailbox server is not responding.
+  - The Outlook Web App application pool that's hosted on the monitored Client Access server (CAS) is not responding, or the application pool that's hosted on the Mailbox server is not responding.
 
-  - The CAS is experiencing networking issues, and it can’t connect to the Mailbox server or the Domain Controller.
+  - The CAS is experiencing networking issues, and it can't connect to the Mailbox server or the Domain Controller.
 
   - The monitoring account credentials are incorrect.
 
-  - The user’s database is not mounted, or the Information Store is inaccessible for that mailbox.
+  - The user's database is not mounted, or the Information Store is inaccessible for that mailbox.
 
   - The Information Store is not responding.
 
@@ -118,7 +122,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
     
     2.  Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert is `Unhealthy`.
     
-    3.  Rerun the associated probe for the monitor that’s in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
+    3.  Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
         
             Invoke-MonitoringProbe <health set name>\<probe name> -Server <server name> | Format-List
         
@@ -162,9 +166,9 @@ An email alert from a health set contains the following information:
     
     The exception trace contains an important field named **FailingComponent**. The probe tries to determine the failure, such as in the following example:
     
-      - **Mailbox**   The probe can reach Outlook Web App, but it can’t connect to the Mailbox Store. In this case, the probe failed, or the mailbox access latency caused the probe to fail and generate a **ScenarioTimeout** error. When these kinds of failures occur, you should check the health of the Mailbox servers.
+      - **Mailbox**   The probe can reach Outlook Web App, but it can't connect to the Mailbox Store. In this case, the probe failed, or the mailbox access latency caused the probe to fail and generate a **ScenarioTimeout** error. When these kinds of failures occur, you should check the health of the Mailbox servers.
     
-      - **Active Directory**   The probe can reach Outlook Web App, but it can’t connect to Active Directory. In this case, the probe failed or the Active Directory call latencies may have caused the probe time-out. When these types of failures occur, you should check the health of the Domain Controllers, and also check the network connections between the CA and Mailbox servers, and Domain Controllers.
+      - **Active Directory**   The probe can reach Outlook Web App, but it can't connect to Active Directory. In this case, the probe failed or the Active Directory call latencies may have caused the probe time-out. When these types of failures occur, you should check the health of the Domain Controllers, and also check the network connections between the CA and Mailbox servers, and Domain Controllers.
     
       - **Owa**   This typically means that an error occurred inside the Outlook Web App layer. When these kinds of failures occur, you must verify the health of the Outlook Web App process on the CA and Mailbox servers, and also check the network connections.
     
@@ -186,7 +190,7 @@ To troubleshoot this issue, follow these steps:
 
 3.  Check for alerts on the OWA.Protocol health set that may indicate an issue that affects a specific Mailbox server. For more information, see [Troubleshooting OWA.Protocol Health Set](troubleshooting-owa-protocol-health-set.md).
 
-4.  Start IIS Manager, and then connect to the server that’s reporting the issue to verify that the MSExchangeOwaAppPool application pool is running on the CAS.
+4.  Start IIS Manager, and then connect to the server that's reporting the issue to verify that the MSExchangeOwaAppPool application pool is running on the CAS.
 
 5.  In IIS Manager, verify that the Default website is running.
 
@@ -202,7 +206,7 @@ To troubleshoot this issue, follow these steps:
     
         Get-Mailbox -Monitoring -Identity HealthMailboxdf8b87828ab0427cb91e985bbdfcec62@yourdomain.com
     
-    In the returned object, you can locate the user’s database name, and you can also determine where the currently active database resides.
+    In the returned object, you can locate the user's database name, and you can also determine where the currently active database resides.
 
 8.  If you have configured redirection between sites, you may see probes failing and generating a MissingKeyword error. This occurs because, by default, CA probes are run on accounts for any location, and also because the probe does not try to test a CAS on a different site when it uses redirection. To resolve this problem, make sure that the servers on each site are contained in MonitoringGroups. CA servers in a given monitoring group test only together with Mailbox servers in the same group.
     

@@ -13,7 +13,7 @@ ms.collection:
 ms.reviewer: smithre4
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -240,7 +240,7 @@ Customers with a Microsoft Premier agreement can open support cases with Custome
 
 To gather the logs:
 
-1. Within Outlook for iOS and Android’s settings, tap Help & Feedback.
+1. Within Outlook for iOS and Android's settings, tap Help & Feedback.
 
 2. Tap Collect Diagnostics.
 

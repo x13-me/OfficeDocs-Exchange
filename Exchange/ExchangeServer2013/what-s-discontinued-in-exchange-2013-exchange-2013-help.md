@@ -1,10 +1,14 @@
-﻿---
+---
 title: "What's discontinued in Exchange 2013: Exchange 2013 Help"
 TOCTitle: What's discontinued in Exchange 2013
 ms:assetid: 0ac0001c-b314-4108-b895-d9c0e271b489
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ619283(v=EXCHG.150)
 ms:contentKeyID: 49289156
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -99,7 +103,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Outlook 2003 is not supported</p></td>
-<td><p>To connect Microsoft Outlook to Exchange 2013, the use of the Autodiscover service is required. However, Microsoft Outlook 2003 doesn’t support the use of the Autodiscover service.</p></td>
+<td><p>To connect Microsoft Outlook to Exchange 2013, the use of the Autodiscover service is required. However, Microsoft Outlook 2003 doesn't support the use of the Autodiscover service.</p></td>
 </tr>
 <tr class="even">
 <td><p>RPC/TCP access for Outlook clients</p></td>
@@ -134,7 +138,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tr>
 <tr class="odd">
 <td><p>Message flags</p></td>
-<td><p>The ability to set a custom date on a message flag isn’t available in Outlook Web App. You can use Outlook to set custom dates.</p></td>
+<td><p>The ability to set a custom date on a message flag isn't available in Outlook Web App. You can use Outlook to set custom dates.</p></td>
 </tr>
 <tr class="even">
 <td><p>Chat contact list</p>
@@ -143,7 +147,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tr>
 <tr class="odd">
 <td><p>Search folders</p></td>
-<td><p>The ability for users to use Search folders isn’t currently available in Outlook Web App.</p></td>
+<td><p>The ability for users to use Search folders isn't currently available in Outlook Web App.</p></td>
 </tr>
 </tbody>
 </table>
@@ -222,7 +226,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Managed Folders</p></td>
-<td><p>In Exchange 2010, you use managed folders for messaging retention management (MRM). In Exchange 2013, managed folders aren’t supported. You must use retention policies for MRM.</p>
+<td><p>In Exchange 2010, you use managed folders for messaging retention management (MRM). In Exchange 2013, managed folders aren't supported. You must use retention policies for MRM.</p>
 
 > [!NOTE]
 > Cmdlets related to managed folders are still available. You can create managed folders, managed content settings and managed folder mailbox policies, and apply a managed folder mailbox policy to a user, but the MRM assistant skips processing of mailboxes that have a managed folder mailbox policy applied.
@@ -232,7 +236,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 </tr>
 <tr class="even">
 <td><p>Port Managed Folder wizard</p></td>
-<td><p>In Exchange 2010, you use the Port Managed Folder wizard to create retention tags based on managed folder and managed content settings. In Exchange 2013, the Exchange admin center doesn’t include this functionality. You can use the <strong>New-RetentionPolicyTag</strong> cmdlet with the <em>ManagedFolderToUpgrade</em> parameter to create a retention tag based on a managed folder.</p></td>
+<td><p>In Exchange 2010, you use the Port Managed Folder wizard to create retention tags based on managed folder and managed content settings. In Exchange 2013, the Exchange admin center doesn't include this functionality. You can use the <strong>New-RetentionPolicyTag</strong> cmdlet with the <em>ManagedFolderToUpgrade</em> parameter to create a retention tag based on a managed folder.</p></td>
 </tr>
 </tbody>
 </table>
@@ -256,7 +260,7 @@ This section lists the Exchange Server 2010 features that are no longer availabl
 <tr class="odd">
 <td><p>Directory lookups using Automatic Speech Recognition (ASR)</p></td>
 <td><p>In Exchange 2010, Outlook Voice Access users can use speech inputs using Automatic Speech Recognition (ASR) to search for users listed in the directory. Speech inputs could be also used in Outlook Voice Access to navigate menus, messages, and other options. However, even if an Outlook Voice Access user is able to use speech inputs, they have to use the telephone key pad to enter their PIN, and navigate personal options.</p>
-<p>In Exchange 2013, authenticated and non-authenticated Outlook Voice Access users can’t search for users in the directory using speech inputs or ASR in any language. However, callers that call into an auto attendant can use speech inputs in multiple languages to navigate auto attendant menus and search for users in the directory.</p></td>
+<p>In Exchange 2013, authenticated and non-authenticated Outlook Voice Access users can't search for users in the directory using speech inputs or ASR in any language. However, callers that call into an auto attendant can use speech inputs in multiple languages to navigate auto attendant menus and search for users in the directory.</p></td>
 </tr>
 </tbody>
 </table>
@@ -445,8 +449,8 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Client authentication using Integrated Windows authentication (NTLM) for POP3 and IMAP4 users</p></td>
-<td><p>NTLM isn't supported for POP3 or IMAP4 client connectivity in Exchange 2013. Connections from POP3 or IMAP4 client programs using NTLM will fail. If you’re running the RTM version of Exchange 2013, the recommended alternative to NTLM is to use Plain Text Authentication with SSL.</p>
-<p>If you’re using Exchange 2013, to use NTLM, you must retain an Exchange 2007 server in your Exchange 2013 organization.</p></td>
+<td><p>NTLM isn't supported for POP3 or IMAP4 client connectivity in Exchange 2013. Connections from POP3 or IMAP4 client programs using NTLM will fail. If you're running the RTM version of Exchange 2013, the recommended alternative to NTLM is to use Plain Text Authentication with SSL.</p>
+<p>If you're using Exchange 2013, to use NTLM, you must retain an Exchange 2007 server in your Exchange 2013 organization.</p></td>
 </tr>
 </tbody>
 </table>
@@ -469,11 +473,11 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Document access</p></td>
-<td><p>Outlook Web App can’t be used to access Microsoft SharePoint document libraries and Windows file shares.</p></td>
+<td><p>Outlook Web App can't be used to access Microsoft SharePoint document libraries and Windows file shares.</p></td>
 </tr>
 <tr class="even">
 <td><p>Message flags</p></td>
-<td><p>The ability to set a custom date on a message flag isn’t available in Outlook Web App 2013. You can use Outlook to set custom dates.</p></td>
+<td><p>The ability to set a custom date on a message flag isn't available in Outlook Web App 2013. You can use Outlook to set custom dates.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Spell check</p></td>
@@ -481,7 +485,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 </tr>
 <tr class="even">
 <td><p>Search Folders</p></td>
-<td><p>The ability for users to use Search folders isn’t currently available in Outlook Web App.</p></td>
+<td><p>The ability for users to use Search folders isn't currently available in Outlook Web App.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Maximum Cached Views</p></td>
@@ -539,7 +543,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Managed Folders</p></td>
-<td><p>In Exchange 2007, you use managed folders for messaging retention management (MRM). In Exchange 2013, managed folders aren’t supported. You must use retention policies for MRM.</p>
+<td><p>In Exchange 2007, you use managed folders for messaging retention management (MRM). In Exchange 2013, managed folders aren't supported. You must use retention policies for MRM.</p>
 
 > [!NOTE]
 > Cmdlets related to managed folders are still available. You can create managed folders, managed content settings and managed folder mailbox policies, and apply a managed folder mailbox policy to a user, but the MRM assistant skips processing of mailboxes that have a managed folder mailbox policy applied.
@@ -568,8 +572,8 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Directory lookups using Automatic Speech Recognition (ASR) for Outlook Voice Access</p></td>
-<td><p>In Exchange 2007, Outlook Voice Access users can use speech inputs using Automatic Speech Recognition (ASR) in English (US) – (en-US) to search for users listed in the directory. Speech inputs could be also used in Outlook Voice Access to navigate menus, messages, and other options. However, even if an Outlook Voice Access user is able to use speech inputs, they have to use the telephone key pad to enter their PIN, and navigate personal options.</p>
-<p>In Exchange 2013, authenticated and non-authenticated Outlook Voice Access users can’t search for users in the directory using speech inputs or ASR in any language. However, callers that call into an auto attendant can use speech inputs in multiple languages to navigate auto attendant menus and search for users in the directory.</p></td>
+<td><p>In Exchange 2007, Outlook Voice Access users can use speech inputs using Automatic Speech Recognition (ASR) in English (US) - (en-US) to search for users listed in the directory. Speech inputs could be also used in Outlook Voice Access to navigate menus, messages, and other options. However, even if an Outlook Voice Access user is able to use speech inputs, they have to use the telephone key pad to enter their PIN, and navigate personal options.</p>
+<p>In Exchange 2013, authenticated and non-authenticated Outlook Voice Access users can't search for users in the directory using speech inputs or ASR in any language. However, callers that call into an auto attendant can use speech inputs in multiple languages to navigate auto attendant menus and search for users in the directory.</p></td>
 </tr>
 </tbody>
 </table>

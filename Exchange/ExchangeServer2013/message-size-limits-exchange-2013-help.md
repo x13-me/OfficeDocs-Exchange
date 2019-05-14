@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Message size limits: Exchange 2013 Help'
 TOCTitle: Message size limits
 ms:assetid: b6a3840d-b821-4e53-877b-59c16be77206
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124345(v=EXCHG.150)
 ms:contentKeyID: 49284660
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -47,7 +51,7 @@ Messages exempt from size limits
 
 Following are the basic categories of the size limits available for individual messages:
 
-  - **Message header size limits**   These limits apply to the total size of all message header fields that are present in a message. The size of the message body or attachments isn’t considered. Because the header fields are plain text, the size of the header is determined by the number of characters in each header field and by the total number of header fields. Each character of text consumes 1 byte.
+  - **Message header size limits**   These limits apply to the total size of all message header fields that are present in a message. The size of the message body or attachments isn't considered. Because the header fields are plain text, the size of the header is determined by the number of characters in each header field and by the total number of header fields. Each character of text consumes 1 byte.
     
 
     > [!NOTE]
@@ -373,7 +377,7 @@ You can set different message size limits at different levels in the Exchange or
 
 One exception to this approach is the user limits. User level limits take precedence over other message size restrictions. Therefore, you can configure a user to exceed the default message size limits for your organization. For example, you can allow a specific group of user mailboxes to send larger messages than the rest of the organization by configuring custom send and receive limits for those mailboxes.
 
-The exceptions for the user limits only apply to message exchanges between authenticated users. If a message is sent to or received by a recipient on the Internet, the organizational limits will be applied. For example, assume that you have an organizational message size restriction of 10 MB, but you have configured the users in your marketing department to send and receive messages up to 50 MB. These users will be able to exchange large messages with each other, but they still won’t be able to receive large messages from Internet users because such messages will be coming from unauthenticated senders.
+The exceptions for the user limits only apply to message exchanges between authenticated users. If a message is sent to or received by a recipient on the Internet, the organizational limits will be applied. For example, assume that you have an organizational message size restriction of 10 MB, but you have configured the users in your marketing department to send and receive messages up to 50 MB. These users will be able to exchange large messages with each other, but they still won't be able to receive large messages from Internet users because such messages will be coming from unauthenticated senders.
 
 Return to top
 

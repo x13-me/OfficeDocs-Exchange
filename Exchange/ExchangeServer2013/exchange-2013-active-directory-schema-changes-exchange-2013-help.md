@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Exchange 2013 Active Directory schema changes: Exchange 2013 Help'
 TOCTitle: Exchange 2013 Active Directory schema changes
 ms:assetid: 7e879e4e-1124-4a41-94d2-c64500beb24e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb738144(v=EXCHG.150)
 ms:contentKeyID: 49289322
 ms.date: 05/18/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -55,7 +59,7 @@ Exchange 2013 schema updates are cumulative. Each release includes all of the ch
 
 
 > [!NOTE]
-> The Active Directory schema changes identified in this topic may not apply to all editions of an Exchange Server version.<BR>To verify that Active Directory has been successfully prepared, see the “How do you know this worked?” section in <A href="prepare-active-directory-and-domains-exchange-2013-help.md">Prepare Active Directory and domains</A>.
+> The Active Directory schema changes identified in this topic may not apply to all editions of an Exchange Server version.<BR>To verify that Active Directory has been successfully prepared, see the "How do you know this worked?" section in <A href="prepare-active-directory-and-domains-exchange-2013-help.md">Prepare Active Directory and domains</A>.
 
 
 

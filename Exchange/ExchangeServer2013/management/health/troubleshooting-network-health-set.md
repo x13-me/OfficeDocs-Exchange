@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting Network Health Set
 TOCTitle: Troubleshooting Network Health Set
 ms:assetid: 8acb3d8e-df63-443a-b0f7-ea14e7755e01
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.network(v=EXCHG.150)
 ms:contentKeyID: 49720833
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -28,7 +32,7 @@ _**Applies to:** Exchange Server 2013_
 
 _**Topic Last Modified:** 2012-10-11_
 
-Thanks for clicking the link that brought you to this page. Although we don’t currently have troubleshooting guidance for this health set, your attempt to locate content helps us prioritize the Exchange 2013 Management Pack troubleshooting guidance articles. Here are some recommended actions that may help you troubleshoot this health set:
+Thanks for clicking the link that brought you to this page. Although we don't currently have troubleshooting guidance for this health set, your attempt to locate content helps us prioritize the Exchange 2013 Management Pack troubleshooting guidance articles. Here are some recommended actions that may help you troubleshoot this health set:
 
   - Review the Application log and System log on your computers running Exchange 2013 for events related to this feature.
 

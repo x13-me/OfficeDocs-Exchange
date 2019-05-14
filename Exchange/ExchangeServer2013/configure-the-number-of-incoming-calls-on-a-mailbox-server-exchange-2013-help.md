@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure the number of incoming calls on a Mailbox server: Exchange 2013 Help'
 TOCTitle: Configure the number of incoming calls on a Mailbox server
 ms:assetid: 419e1de9-2bf8-48a8-824d-2a536b0a6d90
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997637(v=EXCHG.150)
 ms:contentKeyID: 49315399
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,7 +19,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server, Exchange Server 2013_
 
 
-You can configure the number of incoming concurrent connections that a Mailbox server that’s running the Microsoft Exchange Unified Messaging service will accept. This includes all incoming calls including Outlook Voice Access, call answering, auto attendants, and fax calls. When you increase the number of concurrent connections on a Mailbox server, more system resources are required than if you decrease the number of concurrent calls. Decreasing the number of concurrent calls is especially important on slower computers on which Unified Messaging services are installed. The range for the number of concurrent voice calls is 0 to 200. The default setting is 100.
+You can configure the number of incoming concurrent connections that a Mailbox server that's running the Microsoft Exchange Unified Messaging service will accept. This includes all incoming calls including Outlook Voice Access, call answering, auto attendants, and fax calls. When you increase the number of concurrent connections on a Mailbox server, more system resources are required than if you decrease the number of concurrent calls. Decreasing the number of concurrent calls is especially important on slower computers on which Unified Messaging services are installed. The range for the number of concurrent voice calls is 0 to 200. The default setting is 100.
 
 For additional tasks related to Unified Messaging and Mailbox servers, see [UM services procedures](um-services-procedures-exchange-2013-help.md).
 
@@ -25,7 +29,7 @@ For additional tasks related to Unified Messaging and Mailbox servers, see [UM s
 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox server (UM service)" entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
-  - Verify that you’ve correctly installed the Client Access and Mailbox servers.
+  - Verify that you've correctly installed the Client Access and Mailbox servers.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

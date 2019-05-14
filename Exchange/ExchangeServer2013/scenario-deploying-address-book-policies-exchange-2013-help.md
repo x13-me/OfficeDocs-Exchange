@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Scenario: Deploying address book policies: Exchange 2013 Help'
 TOCTitle: 'Scenario: Deploying address book policies'
 ms:assetid: 6ac3c87d-161f-447b-afb2-149ae7e3f1dc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657455(v=EXCHG.150)
 ms:contentKeyID: 49289287
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -144,7 +148,7 @@ This scenario is applicable to schools or universities where a division of class
 
   - Teachers can see all other teachers and the principal.
 
-  - Distribution groups are created for each class’s parents and the faculty.
+  - Distribution groups are created for each class's parents and the faculty.
 
 ![Address Book Policies Education Scenario](images/JJ657455.435f3b1a-9752-4c61-ab8a-80115c643d12(EXCHG.150).gif "Address Book Policies Education Scenario")
 
@@ -201,33 +205,33 @@ Consider the following when using ABPs in your organization:
 
   - For ABPs to work correctly, the user mailbox to which you apply the ABP must be on an Exchange 2010 SP3 or an Exchange 2013 server.
 
-  - Don’t run the Exchange 2010 Client Access server role on the global catalog server. Doing so results in Active Directory being used for Name Service Provider Interface (NSPI) instead of the Microsoft Exchange Address Book service. You can run Exchange 2013 server roles on a global catalog server and have ABPs work correctly, however we don’t recommend installing Exchange on a domain controller.
+  - Don't run the Exchange 2010 Client Access server role on the global catalog server. Doing so results in Active Directory being used for Name Service Provider Interface (NSPI) instead of the Microsoft Exchange Address Book service. You can run Exchange 2013 server roles on a global catalog server and have ABPs work correctly, however we don't recommend installing Exchange on a domain controller.
 
   - You can't use hierarchical address books (HABs) and ABPs simultaneously. To learn more, see [Hierarchical address books](https://docs.microsoft.com/en-us/exchange/address-books/hierarchical-address-books/hierarchical-address-books).
 
   - Any user assigned an ABP should exist in their own GAL.
 
-  - If you allow client applications to access Active Directory directly through LDAP, they will bypass the logic built into ABPs. Because Outlook for Mac 2011 and Entourage 2008 use direct LDAP queries to access Active Directory, those client applications won’t function properly with ABPs if a domain controller or global catalog server is specified or provided to them by the Autodiscover service. Outlook for Mac 2011 can use EWS or a local OAB to access directory information. However, if Outlook for Mac 2011 can directly access an LDAP service, it will attempt to do so.
+  - If you allow client applications to access Active Directory directly through LDAP, they will bypass the logic built into ABPs. Because Outlook for Mac 2011 and Entourage 2008 use direct LDAP queries to access Active Directory, those client applications won't function properly with ABPs if a domain controller or global catalog server is specified or provided to them by the Autodiscover service. Outlook for Mac 2011 can use EWS or a local OAB to access directory information. However, if Outlook for Mac 2011 can directly access an LDAP service, it will attempt to do so.
 
-  - The GAL used in an ABP must, at a minimum, contain all of the address lists, including the room address list, defined and specified in an ABP. Don’t create a GAL that contains fewer objects than any of the address lists in the same ABP.
+  - The GAL used in an ABP must, at a minimum, contain all of the address lists, including the room address list, defined and specified in an ABP. Don't create a GAL that contains fewer objects than any of the address lists in the same ABP.
 
   - We recommend creating distribution groups that don't cross virtual organization boundaries. Creating distribution groups that contain members of multiple virtual organizations results in the following issues:
     
-      - If group members request delivery or read receipts when sending mail to the distribution group, they’ll be able to see the email addresses of the group members in other virtual organizations
+      - If group members request delivery or read receipts when sending mail to the distribution group, they'll be able to see the email addresses of the group members in other virtual organizations
     
-      - If an encrypted message is sent to the distribution group and some group members don’t have valid digital IDs, the sender will receive a warning message that includes the total number of members who don’t have valid IDs and a list of their email addresses. However, if some of those members without valid digital IDs are in a different organization than the sender, the warning message will include the correct count but won’t include the email addresses of the members in the other organization. As a result, the total count won’t match the list of member addresses.
+      - If an encrypted message is sent to the distribution group and some group members don't have valid digital IDs, the sender will receive a warning message that includes the total number of members who don't have valid IDs and a list of their email addresses. However, if some of those members without valid digital IDs are in a different organization than the sender, the warning message will include the correct count but won't include the email addresses of the members in the other organization. As a result, the total count won't match the list of member addresses.
         
-        For example, let’s say a distribution group contains five members total from two organizations, Agency A and Agency B. Three group members are from Agency A, and one of those members has as invalid digital ID. The other two members are from Agency B, and both of them have invalid digital IDs. If a member from Agency A sends an encrypted message to the distribution group, that member will receive a warning message stating that there are a total of three recipients without valid digital IDs. However, only the email address for the recipient from Agency A will be listed in the warning message.
+        For example, let's say a distribution group contains five members total from two organizations, Agency A and Agency B. Three group members are from Agency A, and one of those members has as invalid digital ID. The other two members are from Agency B, and both of them have invalid digital IDs. If a member from Agency A sends an encrypted message to the distribution group, that member will receive a warning message stating that there are a total of three recipients without valid digital IDs. However, only the email address for the recipient from Agency A will be listed in the warning message.
     
-      - ABP's don’t apply to the **Get-Group** cmdlets. Therefore, any user or process that is able to run **Get-Group** will see all members of any group they have access to.
+      - ABP's don't apply to the **Get-Group** cmdlets. Therefore, any user or process that is able to run **Get-Group** will see all members of any group they have access to.
         
-        We recommend that you modify the group management settings of the OWA Options so users can’t use Outlook Web App to manage groups. To prevent users from using OWA Options to manage groups, exclude the users from the MyDistributionGroupMembership RBAC role. For details, see [MyDistributionGroupMembership role](mydistributiongroupmembership-role-exchange-2013-help.md).
+        We recommend that you modify the group management settings of the OWA Options so users can't use Outlook Web App to manage groups. To prevent users from using OWA Options to manage groups, exclude the users from the MyDistributionGroupMembership RBAC role. For details, see [MyDistributionGroupMembership role](mydistributiongroupmembership-role-exchange-2013-help.md).
     
       - If you allow users to use Outlook or Outlook Web App to manage groups, the group owners must have full visibility to the group membership list.
 
   - All ABPs must contain a room address list. However, if your organization doesn't use room address lists, you can create a default empty room address list.
 
-  - Deploying ABPs doesn't prevent users in one virtual organization from sending email to users in another virtual organization. If you want to prevent users from sending email across organizations, we recommend that you create a transport rule. For example, to create a transport rule that prevents Contoso users from receiving messages from Fabrikam users, but still allows Fabrikam’s senior leadership team to send messages to Contoso users, run the following Shell command:
+  - Deploying ABPs doesn't prevent users in one virtual organization from sending email to users in another virtual organization. If you want to prevent users from sending email across organizations, we recommend that you create a transport rule. For example, to create a transport rule that prevents Contoso users from receiving messages from Fabrikam users, but still allows Fabrikam's senior leadership team to send messages to Contoso users, run the following Shell command:
     
     ```powershell
         New-TransportRule -Name "StopFabrikamtoContosoMail" -FromMemberOf "AllFabrikamEmployees" -SentToMemberOf "AllContosoEmployees" -DeleteMessage -ExceptIfFrom seniorleadership@fabrikam.com
@@ -243,13 +247,13 @@ If your organization configured the Exchange 2007 address list segregation solut
 
 ## New deployment of ABPs
 
-If your organization is deploying Exchange 2013 ABPs and hasn’t used the Exchange 2007 address list segregation, you can use these instructions to deploy ABPs in your organization.
+If your organization is deploying Exchange 2013 ABPs and hasn't used the Exchange 2007 address list segregation, you can use these instructions to deploy ABPs in your organization.
 
 The steps in this section will walk you through Scenario 2: Two companies sharing a CEO. In this scenario, two companies (Fabrikam and Tailspin Toys) are separate but share a CEO and senior leadership team.
 
 ## Step 1: Install and configure the Address Book Policy Routing agent
 
-If you’re using ABPs, and you don’t want users in separate virtual organizations to view each other’s potentially private information, you can turn on the Address Book Policy Routing agent. The Address Book Policy Routing agent is a Transport agent that runs on the Mailbox server that controls how recipients are resolved in the organization. When the Address Book Policy Routing Agent is installed and configured, users that are assigned different GALs appear as external recipients in that they can’t view external recipients’ contact cards.
+If you're using ABPs, and you don't want users in separate virtual organizations to view each other's potentially private information, you can turn on the Address Book Policy Routing agent. The Address Book Policy Routing agent is a Transport agent that runs on the Mailbox server that controls how recipients are resolved in the organization. When the Address Book Policy Routing Agent is installed and configured, users that are assigned different GALs appear as external recipients in that they can't view external recipients' contact cards.
 
 For detailed instructions, see [Install and configure the Address Book Policy Routing agent](install-and-configure-the-address-book-policy-routing-agent-exchange-2013-help.md).
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Supported languages for system messages: Exchange 2013 Help'
 TOCTitle: Supported languages for system messages
 ms:assetid: d8e315d5-af0e-4725-9770-7a22dffe5334
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124759(v=EXCHG.150)
 ms:contentKeyID: 48385616
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

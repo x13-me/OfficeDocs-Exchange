@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Restore public folders and public folder mailboxes from failed moves'
 TOCTitle: Restore public folders and public folder mailboxes from failed moves
 ms:assetid: 2ade83c9-5f9b-4945-bf32-48fa8185b515
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ983802(v=EXCHG.150)
 ms:contentKeyID: 51407261
 ms.date: 03/27/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -31,13 +35,13 @@ For additional management tasks related to public folders, see [Public folder pr
 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox restore request" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - You can’t use the EAC to perform this procedure. You must use the Shell.
+  - You can't use the EAC to perform this procedure. You must use the Shell.
 
   - To create a restore request, you must provide the values for the *DisplayName*, *LegacyDN*, or *MailboxGUID* parameters for the soft-deleted public folder mailbox.
 
   - By default, dumpster folders will be restored along with regular folders. This can be prevented by using the *ExcludeDumpster* parameter.
 
-  - Restoring public folder mailboxes differs from restoring regular mailboxes in that folders won’t be created if they don't exist in the target mailbox. Missing folders will be displayed in a warning message at the end of restore request.
+  - Restoring public folder mailboxes differs from restoring regular mailboxes in that folders won't be created if they don't exist in the target mailbox. Missing folders will be displayed in a warning message at the end of restore request.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

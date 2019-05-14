@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure an accepted domain for an independent business unit'
 TOCTitle: Configure an accepted domain for an independent business unit
 ms:assetid: bc95dbdc-3669-4c06-ab94-90093bc0dbfd
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657491(v=EXCHG.150)
 ms:contentKeyID: 49289397
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -51,5 +55,5 @@ You may want to configure an accepted domain for a business unit with email serv
 
 ## How do you know this worked?
 
-To verify that you have successfully configured an accepted domain as an external relay domain, send a message from the accepted domain you’ve configured as an external relay domain, and verify that it is received.
+To verify that you have successfully configured an accepted domain as an external relay domain, send a message from the accepted domain you've configured as an external relay domain, and verify that it is received.
 

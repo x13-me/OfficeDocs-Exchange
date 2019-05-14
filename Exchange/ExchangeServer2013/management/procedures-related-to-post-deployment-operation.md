@@ -1,10 +1,14 @@
-﻿---
+---
 title: Procedures related to post-deployment operation
 TOCTitle: Procedures related to post-deployment operation
 ms:assetid: d9613a5c-5661-4bce-9a2c-e2c7b601e723
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn198286(v=EXCHG.150)
 ms:contentKeyID: 53496601
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -80,11 +84,11 @@ Depending on your needs, you may want to disable or enable specific alerts withi
 
 ## Enable or disable an alert using SCOM console
 
-Let’s say you see an alert in the **Active Alerts** for the Store health set on a server named Server1 and this server doesn’t currently have any databases with active mailboxes on it. In this case, you may not want to get alerted for the Store health set on this server. You will still be able to see the health of Server1 in the SCOM console, but won’t get alerted for the Store health set.
+Let's say you see an alert in the **Active Alerts** for the Store health set on a server named Server1 and this server doesn't currently have any databases with active mailboxes on it. In this case, you may not want to get alerted for the Store health set on this server. You will still be able to see the health of Server1 in the SCOM console, but won't get alerted for the Store health set.
 
 To disable this alert in the SCOM console:
 
-1.  Right click on the alert, and then select **Overrides** \> **Disable the Monitor** \> **For the object: Server1 – Store**.
+1.  Right click on the alert, and then select **Overrides** \> **Disable the Monitor** \> **For the object: Server1 - Store**.
 
 2.  In the **Override Properties** window, clear the checkbox for the **Parameter Name** **Enabled**.
 
@@ -98,15 +102,15 @@ To disable this alert in the SCOM console:
 
 ## Enable or disable a health set using the Shell
 
-Let’s say that you don’t use the POP3 feature in your organization. You may want to disable monitoring support for that feature on your mailbox servers in your organization. You can do so using the following steps:
+Let's say that you don't use the POP3 feature in your organization. You may want to disable monitoring support for that feature on your mailbox servers in your organization. You can do so using the following steps:
 
 1.  Start the Exchange Management Shell
 
-2.  First, you need to determine the list of monitors associated with the POP3 service on a Mailbox server. The list in [Appendix A: Exchange health sets](appendix-a-exchange-health-sets.md) shows that the health set associated with POP3 service on a mailbox server is POP.Protocol. You need to run the [Get-MonitoringItemIdentity](https://technet.microsoft.com/en-us/library/jj218668\(v=exchg.150\)) cmdlet to get a list of all monitors associated with the POP.Protocol healthset. The following command returns all monitoring items for POP.Protocol health set and stores them in the temporary variable `$POPMonitoringItems`. Note that the command uses a mailbox server to get this list as the POP.Protocol health set won’t be present on a server that doesn’t have the Mailbox role installed.
+2.  First, you need to determine the list of monitors associated with the POP3 service on a Mailbox server. The list in [Appendix A: Exchange health sets](appendix-a-exchange-health-sets.md) shows that the health set associated with POP3 service on a mailbox server is POP.Protocol. You need to run the [Get-MonitoringItemIdentity](https://technet.microsoft.com/en-us/library/jj218668\(v=exchg.150\)) cmdlet to get a list of all monitors associated with the POP.Protocol healthset. The following command returns all monitoring items for POP.Protocol health set and stores them in the temporary variable `$POPMonitoringItems`. Note that the command uses a mailbox server to get this list as the POP.Protocol health set won't be present on a server that doesn't have the Mailbox role installed.
     ```Powershell
         $POPMonitoringItems = Get-MonitoringItemIdentity -Identity POP.Protocol -Server Mailbox1
 	```
-3.  The `$POPMonitoringItems` contains all monitoring items including probes, monitors and responders. Let’s separate just the monitors and store them in the temporary variable `$POPMonitors`by running the following command:
+3.  The `$POPMonitoringItems` contains all monitoring items including probes, monitors and responders. Let's separate just the monitors and store them in the temporary variable `$POPMonitors`by running the following command:
     ```Powershell
         $POPMonitors = $POPMonitoringItems | Where {$_.ItemType -eq "Monitor"}
 	```
@@ -126,7 +130,7 @@ Let’s say that you don’t use the POP3 feature in your organization. You may 
 
 ## Modify monitoring thresholds
 
-You also may need to modify specific thresholds for various monitor properties. For example, assume that your organization doesn’t have a large internal message volume. By default, Exchange will raise an alert if the internal aggregate delivery queue exceeds 250 messages for high priority messages and 500 for low priority messages. Let’s assume that these thresholds are high enough that you don’t get notified soon enough that there is a problem. You determine that if these queues exceed 50 and 150 messages respectively you need to get notified. You can change the corresponding thresholds by following the steps below:
+You also may need to modify specific thresholds for various monitor properties. For example, assume that your organization doesn't have a large internal message volume. By default, Exchange will raise an alert if the internal aggregate delivery queue exceeds 250 messages for high priority messages and 500 for low priority messages. Let's assume that these thresholds are high enough that you don't get notified soon enough that there is a problem. You determine that if these queues exceed 50 and 150 messages respectively you need to get notified. You can change the corresponding thresholds by following the steps below:
 
 1.  Start the Exchange Management Shell.
 

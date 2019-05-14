@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'No Exchange 2010 or Exchange 2007 servers detected: Exchange 2013 Help'
 TOCTitle: No Exchange 2010 or Exchange 2007 servers detected
 ms:assetid: 789cabab-c769-4a16-a6c8-3db82cff8861
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.noe14serverwarning(v=EXCHG.150)
 ms:contentKeyID: 46628970
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -19,7 +23,7 @@ Microsoft Exchange Server 2013 Setup displayed this warning because no Exchange 
 
 
 > [!WARNING]
-> If you continue with Exchange Server 2013 installation, you won’t be able to add Exchange 2010 or Exchange 2007 servers to the organization at a future date.
+> If you continue with Exchange Server 2013 installation, you won't be able to add Exchange 2010 or Exchange 2007 servers to the organization at a future date.
 
 
 
@@ -39,5 +43,5 @@ If you decide that you need to deploy Exchange 2010 or Exchange 2007 servers, yo
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
 
-Did you find what you’re looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.
+Did you find what you're looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.
 

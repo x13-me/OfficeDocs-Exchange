@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'High availability and site resilience: Exchange 2013 Help'
 TOCTitle: High availability and site resilience
 ms:assetid: 6628285e-d07c-443d-866b-be784ad1ed1e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638137(v=EXCHG.150)
 ms:contentKeyID: 48385176
 ms.date: 12/15/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -187,7 +191,7 @@ The benefits include the following:
 
   - In Exchange 2010, if you lose the load balancer in your primary datacenter and you don't have another one in that site, you had to do a datacenter switchover. In Exchange 2013, if you lose the load balancer in your primary site, you simply turn it off (or maybe turn off the VIP) and repair or replace it. Clients that aren't already using the VIP in the secondary datacenter will automatically fail over to the secondary VIP without any change of namespace, and without any change in DNS. Not only does that mean you no longer have to perform a switchover, but it also means that all of the time normally associated with a datacenter switchover recovery isn't spent. In Exchange 2010, you had to handle DNS latency (hence, the recommendation to set the Time to Live (TTL) to 5 minutes, and the introduction of the failback URL). In Exchange 2013, you don't need to do that because you get fast failover (20 seconds) of the namespace between VIPs (datacenters).
 
-  - Because you can fail over the namespace between datacenters, all that's needed to achieve a datacenter failover is a mechanism for failover of the Mailbox server role across datacenters. To get automatic failover for the DAG, you simply architect a solution where the DAG is evenly split between two datacenters, and then place the witness server in a third location so that it can be arbitrated by DAG members in either datacenter, regardless of the state of the network between the datacenters that contain the DAG members. If you only have two datacenters and a third physical location isn’t available, you can place the witness server on a Microsoft Azure virtual machine. See [Using a Microsoft Azure VM as a DAG witness server](using-a-microsoft-azure-vm-as-a-dag-witness-server-exchange-2013-help.md) for more information.
+  - Because you can fail over the namespace between datacenters, all that's needed to achieve a datacenter failover is a mechanism for failover of the Mailbox server role across datacenters. To get automatic failover for the DAG, you simply architect a solution where the DAG is evenly split between two datacenters, and then place the witness server in a third location so that it can be arbitrated by DAG members in either datacenter, regardless of the state of the network between the datacenters that contain the DAG members. If you only have two datacenters and a third physical location isn't available, you can place the witness server on a Microsoft Azure virtual machine. See [Using a Microsoft Azure VM as a DAG witness server](using-a-microsoft-azure-vm-as-a-dag-witness-server-exchange-2013-help.md) for more information.
 
   - In this scenario, the administrator's efforts are geared toward simply fixing the problem, and not spent restoring service. You simply fix the thing that failed; while service has been running and data integrity has been maintained. The urgency and stress level you feel when fixing a broken device is nothing like the urgency and stress you feel when you're working to restore service. It's better for the end user, and less stressful for the administrator.
 
@@ -205,7 +209,7 @@ Exchange 2013 also includes a third-party replication API that enables organizat
 
 When deploying a solution that uses the built-in third-party replication API, be aware that the solution vendor is responsible for primary support of the solution. Microsoft supports Exchange data for both replicated and non-replicated solutions. Solutions that use data replication must adhere to the Microsoft support policy for data replication, as described in Microsoft Knowledge Base article 895847, [Multi-site data replication support for Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=895847). In addition, solutions that utilize the Windows Failover Cluster resource model must meet Windows cluster supportability requirements as described in Microsoft Knowledge Base article 943984, [The Microsoft Support Policy for Windows Server 2008 or Windows Server 2008 R2 Failover Clusters](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=943984) or [The Microsoft Support Policy for Windows Server 2012 Failover Clusters](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2775067).
 
-Microsoft’s backup and restore support policy for deployments that use third-party replication API-based solutions is the same as for native continuous replication deployments.
+Microsoft's backup and restore support policy for deployments that use third-party replication API-based solutions is the same as for native continuous replication deployments.
 
 If you're a partner seeking information about the third-party API, contact your Microsoft representative.
 

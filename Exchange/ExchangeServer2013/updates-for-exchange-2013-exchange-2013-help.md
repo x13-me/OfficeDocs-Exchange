@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Updates for Exchange 2013: Exchange 2013 Help'
 TOCTitle: Updates for Exchange 2013
 ms:assetid: 9c1d8694-bd33-43af-a7ab-4caaada34745
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ907309(v=EXCHG.150)
 ms:contentKeyID: 50639772
 ms.date: 03/20/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -21,7 +25,7 @@ With Microsoft Exchange Server 2013, we changed the way we deliver hotfixes and 
 
 To get the latest version of Exchange 2013, download and install [Microsoft Exchange Server 2013 Cumulative Update 21](https://go.microsoft.com/fwlink/p/?LinkId=2003011). Because each CU is a full installation of Exchange and includes updates and changes from all previous CU's, you don't need to install any previous CU's or service packs first.
 
-For more information about updates as they relate to Exchange 2013, including an extensive FAQ, see [Servicing Exchange 2013](https://go.microsoft.com/fwlink/p/?linkid=282528) and “Servicing Model Update” in [Released: Exchange Server 2013 Cumulative Update 2](https://go.microsoft.com/fwlink/p/?linkid=313613).
+For more information about updates as they relate to Exchange 2013, including an extensive FAQ, see [Servicing Exchange 2013](https://go.microsoft.com/fwlink/p/?linkid=282528) and "Servicing Model Update" in [Released: Exchange Server 2013 Cumulative Update 2](https://go.microsoft.com/fwlink/p/?linkid=313613).
 
 The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2013 CUs.
 
@@ -160,7 +164,7 @@ Exchange 2013 SP1 now supports S/MIME-based message security with Outlook Web Ap
 
 ## DLP Policy Tips available in the desktop and mobile version of Outlook Web App
 
-Data loss prevention (DLP) [Policy Tips](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/policy-tips) are informative notices that are displayed to senders in Outlook when they try sending sensitive information. In Exchange 2013 SP1, this functionality has been extended to both the desktop version of Outlook Web App and the mobile version (named OWA for Devices). You’ll see it in action if you have an existing DLP policy with Policy Tips turned on for Outlook. If your policy already includes Policy Tips for Outlook, you don't need to set up anything else. Go ahead and try it out\!
+Data loss prevention (DLP) [Policy Tips](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/policy-tips) are informative notices that are displayed to senders in Outlook when they try sending sensitive information. In Exchange 2013 SP1, this functionality has been extended to both the desktop version of Outlook Web App and the mobile version (named OWA for Devices). You'll see it in action if you have an existing DLP policy with Policy Tips turned on for Outlook. If your policy already includes Policy Tips for Outlook, you don't need to set up anything else. Go ahead and try it out\!
 
 Not currently using Policy Tips? To get started, [Create a DLP policy from a template](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template), then add a policy tip by editing the policy and adding a **Notify the sender with a Policy Tip** action.
 
@@ -244,7 +248,7 @@ For more information, see [Configure OAuth authentication between Exchange and E
 
 ## Hybrid deployments with multiple Active Directory forests
 
-New in Exchange 2013 SP1, hybrid deployments are now supported in organizations with multiple Active Directory forests. For hybrid deployment features and considerations, multi-forest organizations are defined as organizations having Exchange servers deployed in multiple Active Directory forests. Organizations that utilize a resource forest for user accounts, but maintain all Exchange servers in a single forest, aren’t classified as multi-forest in hybrid deployment scenarios. These types of organizations should consider themselves a single forest organization when planning and configuring a hybrid deployment.
+New in Exchange 2013 SP1, hybrid deployments are now supported in organizations with multiple Active Directory forests. For hybrid deployment features and considerations, multi-forest organizations are defined as organizations having Exchange servers deployed in multiple Active Directory forests. Organizations that utilize a resource forest for user accounts, but maintain all Exchange servers in a single forest, aren't classified as multi-forest in hybrid deployment scenarios. These types of organizations should consider themselves a single forest organization when planning and configuring a hybrid deployment.
 
 For more information, see [Hybrid deployments with multiple Active Directory forests](https://technet.microsoft.com/en-us/library/jj873754\(v=exchg.150\)).
 

@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: Learn how to perform configuration tasks related to managing your mailbox databases in Exchange Server.'
 ms.topic: article
-author: SerdarSoysal
-ms.author: serdars
+author: chrisda
+ms.author: chrisda
 ms.assetid: ead4a96b-1717-435b-bcfc-9901ac4e3b58
 ms.date: 7/3/2018
+ms.reviewer: 
 title: Manage mailbox databases in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

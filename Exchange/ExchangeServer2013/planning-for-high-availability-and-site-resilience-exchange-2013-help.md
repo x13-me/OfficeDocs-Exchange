@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Planning for high availability and site resilience: Exchange 2013 Help'
 TOCTitle: Planning for high availability and site resilience
 ms:assetid: 29bb0358-fc8e-4437-8feb-d2959ed0f102
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638104(v=EXCHG.150)
 ms:contentKeyID: 48384921
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -139,7 +143,7 @@ At any specific time, the cluster for the DAG will use only one of the assigned 
 
 
 > [!NOTE]
-> Although the cluster's IP address and network name are used internally by the system, there is no hard dependency in Exchange 2013 that these resources be available. Even if the underlying cluster's administrative access point (e.g., it’s IP address and Network Name resources) is offline, internal communication still occurs within the DAG by using the DAG member server names. However, we recommend that you periodically monitor the availability of these resources to ensure that they aren't offline for more than 30 days. If the underlying cluster is offline for more than 30 days, the cluster CNO account may be invalidated by the garbage collection mechanism in Active Directory.
+> Although the cluster's IP address and network name are used internally by the system, there is no hard dependency in Exchange 2013 that these resources be available. Even if the underlying cluster's administrative access point (e.g., it's IP address and Network Name resources) is offline, internal communication still occurs within the DAG by using the DAG member server names. However, we recommend that you periodically monitor the availability of these resources to ensure that they aren't offline for more than 30 days. If the underlying cluster is offline for more than 30 days, the cluster CNO account may be invalidated by the garbage collection mechanism in Active Directory.
 
 
 

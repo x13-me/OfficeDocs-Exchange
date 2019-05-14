@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: Learn about how retention tags and retention policies in Exchange Server 2016 and Exchange Server 2019 help manage the email life cycle.'
 ms.topic: article
-author: SerdarSoysal
-ms.author: serdars
+author: chrisda
+ms.author: chrisda
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
 ms.date: 7/8/2018
+ms.reviewer: 
 title: Retention tags and retention policies in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -48,7 +49,7 @@ Retention tags allow users to tag their own mailbox folders and individual items
 
 Retention tags are classified into the following three types based on who can apply them and where in a mailbox they can be applied.
 
-|**Type of retention tag**|**Applied...**|**Applied by...**|**Available actions…**|**Details**|
+|**Type of retention tag**|**Applied...**|**Applied by...**|**Available actions...**|**Details**|
 |:-----|:-----|:-----|:-----|:-----|
 |Default policy tag (DPT)  <br/> |Automatically to entire mailbox  <br/> A DPT applies to *untagged* items, which are mailbox items that don't have a retention tag applied directly or by inheritance from the folder.  <br/> |Administrator  <br/> |Move to archive  <br/> Delete and allow recovery  <br/> Permanently delete  <br/> |Users can't change DPTs applied to a mailbox.  <br/> |
 |Retention policy tag (RPT)  <br/> |Automatically to a default folder  <br/> Default folders are folders created automatically in all mailboxes, for example: **Inbox**, **Deleted Items**, and **Sent Items**. See the list of supported default folders in [Default folders that support Retention Policy Tags](http://technet.microsoft.com/library/d2e2064f-4102-4018-b688-504d09da6d39.aspx).  <br/> |Administrator  <br/> |Delete and allow recovery  <br/> Permanently delete  <br/> |Users can't change the RPT applied to a default folder.  <br/> |
@@ -82,7 +83,7 @@ You can also create retention tags with retention disabled or disable tags after
 
 When creating or configuring a retention tag, you can select one of the following retention actions to be taken when an item reaches its retention age:
 
-|**Retention action**|**Action taken…**|**Except…**|
+|**Retention action**|**Action taken...**|**Except...**|
 |:-----|:-----|:-----|
 |**Move to archive** <br/> |Moves the message to the user's archive mailbox  <br/> Only available for DPTs and personal tags  <br/> For details about archiving, see [In-Place Archiving in Exchange Server](../../policy-and-compliance/in-place-archiving/in-place-archiving.md).  <br/> |If the user doesn't have an archive mailbox, no action is taken.  <br/> |
 |**Delete and allow recovery**:  <br/> |Emulates the behavior when the user empties the Deleted Items folder.  <br/> Items are moved to the [Recoverable Items folder in Exchange Server](../../policy-and-compliance/recoverable-items-folder/recoverable-items-folder.md) in the mailbox and preserved until the *deleted item retention* period.  <br/> Provides the user a second chance to recover the item using the **Recover Deleted Items** dialog box in Outlook or Outlook on the web  <br/> |If you've set the deleted item retention period to zero days, items are permanently deleted. For details, see [Configure Deleted Item retention and Recoverable Items quotas](../../recipients/user-mailboxes/deleted-item-retention-and-recoverable-items-quotas.md).  <br/> |

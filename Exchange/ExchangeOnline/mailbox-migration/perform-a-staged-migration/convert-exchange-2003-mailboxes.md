@@ -5,6 +5,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 5296a30b-00cb-44be-8855-ed9d14d93e17
 ms.date: 8/15/2018
+ms.reviewer: 
 description: Convert Exchange 2007 mailboxes to mail enabled users.
 title: Convert Exchange 2003 mailboxes to mail-enabled users
 ms.collection: 
@@ -22,7 +23,7 @@ search.appverid:
 ms.audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -32,7 +33,7 @@ After you have completed a staged migration, convert the mailboxes to mail-enabl
 
 ## Why convert mailboxes to mail-enabled users?
 
-If you've completed a staged Exchange migration to migrate your organization's Exchange 2003 on-premises mailboxes to Office 365 and you want to manage cloud-based users from your on-premises organization—using Active Directory—you should convert the on-premises mailboxes to mail-enabled users (MEUs).
+If you've completed a staged Exchange migration to migrate your organization's Exchange 2003 on-premises mailboxes to Office 365 and you want to manage cloud-based users from your on-premises organization (using Active Directory) you should convert the on-premises mailboxes to mail-enabled users (MEUs).
 
 This article includes a Windows PowerShell script that collects information from the cloud-based mailboxes and a Visual Basic (VB) script that you can run to convert Exchange 2003 mailboxes to MEUs. When you run this script, the proxy addresses from the cloud-based mailbox are copied to the MEU, which resides in Active Directory. Also, the properties of the MEU enable the Microsoft Online Services Directory Synchronization tool (DirSync) to match the MEU with its corresponding cloud mailbox
 
@@ -491,17 +492,17 @@ Instead of using the input CSV file to convert a batch of mailboxes, you can run
 
 1. Run the ExportO365UserInfo in your cloud organization. Use the CSV file for the migration batch as the input file. The script creates a CSV file named Cloud.csv.
 
-    ```
-    .\ExportO365UserInfo.ps1 <CSV input file>
-    ```
+   ```
+   .\ExportO365UserInfo.ps1 <CSV input file>
+   ```
 
-    For example:
+   For example:
 
-    ```
-    .\ExportO365UserInfo.ps1 .\MigrationBatch1.csv
-    ```
+   ```
+   .\ExportO365UserInfo.ps1 .\MigrationBatch1.csv
+   ```
 
-    This example assumes that the script and input CSV file are located in the same directory.
+   This example assumes that the script and input CSV file are located in the same directory.
 
 2. Copy Exchange2003MBtoMEU.vbs and Cloud.csv to the same directory in your on-premises organization.
 
@@ -531,29 +532,26 @@ Instead of using the input CSV file to convert a batch of mailboxes, you can run
 
 4. Verify that the new MEUs have been created. In Active Directory Users and Computers, do the following:
 
-  1. Click **Action** \> **Find**.
+   1. Click **Action** \> **Find**.
 
-  2. Click the **Exchange tab**.
+   2. Click the **Exchange tab**.
 
-  3. Select **Show only Exchange recipients**, and then select **Users with external email address**.
+   3. Select **Show only Exchange recipients**, and then select **Users with external email address**.
 
-  4. Click **Find Now**.
+   4. Click **Find Now**.
 
-    The mailboxes that were converted to MEUs are listed under **Search results**.
+      The mailboxes that were converted to MEUs are listed under **Search results**.
 
 5. Use Active Directory Users and Computers, ADSI Edit, or Ldp.exe to verify that the following MEU properties are populated with the correct information.
 
-  - legacyExchangeDN
+   - legacyExchangeDN
 
-  - mail
+   - mail
 
-  - msExchMailboxGuid<sup>*</sup>
+   - msExchMailboxGuid<sup>*</sup>
 
-  - proxyAddresses
+   - proxyAddresses
 
-  - targetAddress
+   - targetAddress
 
     <sup>*</sup>As previously explained, the Exchange2003MBtoMEU.vbs script retains the **msExchMailboxGuid** value from the on-premises mailbox. To enable off-boarding from Office 365 to Exchange 2003, you have to replace the value for the **msExchMailboxGuid** property on the MEU with the Guid from the cloud-based mailbox.
-
-
-

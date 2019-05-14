@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'UM Management: Exchange 2013 Help'
 TOCTitle: UM Management
 ms:assetid: c91f0387-615c-4a1d-87d4-133ddac1e407
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351142(v=EXCHG.150)
 ms:contentKeyID: 49289406
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -35,7 +39,7 @@ You can use the following command to view a list of users or universal security 
 Get-RoleGroupMember "UM Management"
 ```
 
-For more information about the members of a role group, see the “View the members of a role group” section in [Manage role group members](manage-role-group-members-exchange-2013-help.md).
+For more information about the members of a role group, see the "View the members of a role group" section in [Manage role group members](manage-role-group-members-exchange-2013-help.md).
 
 ## Role group customization
 
@@ -51,7 +55,7 @@ For more information about how to customize this role group, see the following t
 
   - [Manage role group members](manage-role-group-members-exchange-2013-help.md)
 
-If you want to create a role group and assign some of the roles that are assigned to this role group to the new role group, see the “Create a role group” section in [Manage role groups](manage-role-groups-exchange-2013-help.md).
+If you want to create a role group and assign some of the roles that are assigned to this role group to the new role group, see the "Create a role group" section in [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
 ## Management roles assigned to this role group
 

@@ -1,11 +1,12 @@
 ---
 localization_priority: Normal
 ms.author: dmaguire
-manager: serdars
+manager: dansimp
 ms.topic: article
 author: msdmaguire
 ms.service: exchange-online
 ms.assetid: 25a5234c-dd2c-487b-8541-3655fbeb030a
+ms.reviewer: 
 ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-online

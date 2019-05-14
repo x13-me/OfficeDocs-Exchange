@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'IIS is in 32-bit compatibility mode_IIS32BitMode: Exchange 2013 Help'
 TOCTitle: IIS is in 32-bit compatibility mode_IIS32BitMode
 ms:assetid: 742dfc32-353c-46a2-830e-68aed6a68ce0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.iis32bitmode(v=EXCHG.150)
 ms:contentKeyID: 46628968
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

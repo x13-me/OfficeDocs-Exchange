@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage content filtering: Exchange 2013 Help'
 TOCTitle: Manage content filtering
 ms:assetid: 05bd9d39-81dc-4514-8b75-7be386d5bcad
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa995953(v=EXCHG.150)
 ms:contentKeyID: 49248674
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -135,11 +139,11 @@ To replace the existing values, run the following command:
 
 This example configures the following exceptions in content filtering:
 
-  - The recipients laura@contoso.com and julia@contoso.com aren’t checked by content filtering.
+  - The recipients laura@contoso.com and julia@contoso.com aren't checked by content filtering.
 
-  - The senders steve@fabrikam.com and cindy@fabrikam.com aren’t checked by content filtering.
+  - The senders steve@fabrikam.com and cindy@fabrikam.com aren't checked by content filtering.
 
-  - All senders in the domain nwtraders.com and all subdomains aren’t checked by content filtering.
+  - All senders in the domain nwtraders.com and all subdomains aren't checked by content filtering.
 
 <!-- end list -->
 
@@ -155,13 +159,13 @@ To add or remove entries without modifying any existing values, run the followin
 
 This example configures the following exceptions in content filtering:
 
-  - Add tiffany@contoso.com and chris@contoso.com to the list of existing recipients who aren’t checked by content filtering.
+  - Add tiffany@contoso.com and chris@contoso.com to the list of existing recipients who aren't checked by content filtering.
 
-  - Add joe@fabrikam.com and michelle@fabrikam.com to the list of existing senders who aren’t checked by content filtering.
+  - Add joe@fabrikam.com and michelle@fabrikam.com to the list of existing senders who aren't checked by content filtering.
 
-  - Add blueyonderairlines.com to the list of existing domains whose senders aren’t checked by content filtering.
+  - Add blueyonderairlines.com to the list of existing domains whose senders aren't checked by content filtering.
 
-  - Remove the domain woodgrovebank.com and all subdomains from the list of existing domains whose senders aren’t checked by content filtering.
+  - Remove the domain woodgrovebank.com and all subdomains from the list of existing domains whose senders aren't checked by content filtering.
 
 <!-- end list -->
 

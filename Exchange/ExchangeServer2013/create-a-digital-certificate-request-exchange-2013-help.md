@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a digital certificate request: Exchange 2013 Help'
 TOCTitle: Create a digital certificate request
 ms:assetid: efb00de7-070b-46bf-a2fc-00d07ae085c1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125165(v=EXCHG.150)
 ms:contentKeyID: 51492809
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -43,7 +47,7 @@ In Exchange Server 2013, you can manage certificates using the EAC or the Shell.
 
 4.  Enter a friendly name for the certificate and select **Next**.
 
-5.  If you didn’t choose a self-signed certificate and you want a wildcard certificate, select the box marked **Request a wildcard certificate**, enter the root domain, for example \*.contoso.com, and then select **Next**. If you chose a self-signed certificate, skip this step.
+5.  If you didn't choose a self-signed certificate and you want a wildcard certificate, select the box marked **Request a wildcard certificate**, enter the root domain, for example \*.contoso.com, and then select **Next**. If you chose a self-signed certificate, skip this step.
 
 6.  Select the servers that you want to apply this certificate to and select **Next**.
 
@@ -55,7 +59,7 @@ In Exchange Server 2013, you can manage certificates using the EAC or the Shell.
 
 10. Enter a location to save the certificate request and select **Finish**.
 
-If you didn’t select a self-signed certificate, you’ll need to send the certificate request file to the certification authority for processing.
+If you didn't select a self-signed certificate, you'll need to send the certificate request file to the certification authority for processing.
 
 ## Use the Shell to create a new certificate request
 

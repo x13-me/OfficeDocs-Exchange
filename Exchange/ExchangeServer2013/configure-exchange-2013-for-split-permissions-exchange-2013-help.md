@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure Exchange 2013 for split permissions: Exchange 2013 Help'
 TOCTitle: Configure Exchange 2013 for split permissions
 ms:assetid: 8c74f893-a6f3-4869-8571-3bc0f662cc87
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638155(v=EXCHG.150)
 ms:contentKeyID: 49289342
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -160,7 +164,7 @@ To configure RBAC split permissions, do the following:
         > If you want to remove all of the regular and delegating role assignments to the Mail Recipient Creation role on any role assignee other than the Active Directory Administrators role group, use the following command. The <EM>WhatIf</EM> switch lets you see what role assignments will be removed. Remove the <EM>WhatIf</EM> switch and run the command again to remove the role assignments.
 
         ```powershell
-            Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+            Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where {$_.RoleAssigneeName -NE "Active Directory Administrators"} | Remove-ManagementRoleAssignment -WhatIf
         ```
 
     7.  Find all of the regular and delegating role assignments to the Security Group Creation and Membership role using the following command. The command displays only the **Name**, **Role**, and **RoleAssigneeName** properties.
@@ -180,7 +184,7 @@ To configure RBAC split permissions, do the following:
         > You can use the same command in the preceding Note to remove all of the regular and delegating role assignments to the Security Group Creation and Membership role on any role assignee other than the Active Directory Administrators role group, as shown in this example.
 
         ```powershell
-            Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+            Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where {$_.RoleAssigneeName -NE "Active Directory Administrators"} | Remove-ManagementRoleAssignment -WhatIf
         ```
 
 For detailed syntax and parameter information, see the following topics:

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create or modify a mobile device mailbox policy: Exchange 2013 Help'
 TOCTitle: Create or modify a mobile device mailbox policy
 ms:assetid: b4a37a81-25e3-40ff-a18a-a62ae4493635
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124315(v=EXCHG.150)
 ms:contentKeyID: 49345057
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -81,7 +85,7 @@ You create a new mobile device mailbox policy using the New-MobileDeviceMailboxP
 
 ## How do you know this worked?
 
-To verify that you’ve successfully created a mobile device mailbox policy, use one of the following options:
+To verify that you've successfully created a mobile device mailbox policy, use one of the following options:
 
 1.  In the EAC, click **Mobile** \> **Mobile Device mailbox policies**, and verify that your new policy is displayed in the List view.
 
@@ -133,9 +137,9 @@ You can use the Shell to edit a mobile device mailbox policy.
     
 ## How do you know this worked?
 
-To verify that you’ve successfully edited a mobile device mailbox policy, do one of the following:
+To verify that you've successfully edited a mobile device mailbox policy, do one of the following:
 
-1.  In the EAC, click **Mobile** \> **Mobile Device Mailbox Policy**, and then choose a specific policy. In the Details pane, you’ll see a number of the policy settings listed.
+1.  In the EAC, click **Mobile** \> **Mobile Device Mailbox Policy**, and then choose a specific policy. In the Details pane, you'll see a number of the policy settings listed.
 
 2.  In the Shell, run the following command.
     

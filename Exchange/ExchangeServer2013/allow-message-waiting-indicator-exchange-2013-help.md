@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Allow Message Waiting Indicator: Exchange 2013 Help'
 TOCTitle: Allow Message Waiting Indicator
 ms:assetid: 57fb439e-8208-499f-a20b-814677843a8c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298001(v=EXCHG.150)
 ms:contentKeyID: 53908377
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -21,7 +25,7 @@ Message Waiting Indicator (MWI) is a feature that's found in most legacy voice m
 
 Overview
 
-The Mailbox server’s role in MWI
+The Mailbox server's role in MWI
 
 MWI SIP NOTIFY messages
 
@@ -33,11 +37,11 @@ Text message (SMS) notifications for voice mail messages and missed calls
 
 ## Overview
 
-MWI notifications can include any mechanism that indicates the existence of a new or unheard voice message. The message can be in a new email message or one that’s marked as unread. The MWI notification might take any of the following forms:
+MWI notifications can include any mechanism that indicates the existence of a new or unheard voice message. The message can be in a new email message or one that's marked as unread. The MWI notification might take any of the following forms:
 
   - A new voice message seen from Microsoft Outlook or Outlook Web App.
 
-  - A text or Short Messaging Service (SMS) message sent to a mobile phone that’s configured to receive text messages.
+  - A text or Short Messaging Service (SMS) message sent to a mobile phone that's configured to receive text messages.
 
   - An outbound call made from Exchange Unified Messaging (UM).
 
@@ -67,7 +71,7 @@ There are two ways callers can leave voice messages: using call answering and Ou
 
 Return to top
 
-## The Mailbox server’s role in MWI
+## The Mailbox server's role in MWI
 
 When a caller calls a UM-enabled user and the user doesn't answer their phone, the Microsoft Exchange Unified Messaging service on a Mailbox server receives MWI state change information and uses a SIP NOTIFY message to send the request for a change of notification to a VoIP gateway, IP PBX, or SIP-enabled PBX. The change of notification includes the following information:
 
@@ -87,7 +91,7 @@ When a caller calls a UM-enabled user and the user doesn't answer their phone, t
 
   - The security type of the UM dial plan (Unsecured, SIP secured, or Secured). This information will be used to determine whether the connection to the VoIP gateway or IP PBX must be SIP over TCP or SIP over TLS. Transport Layer Security (TLS) is supported for MWI SIP NOTIFY.
 
-A Mailbox server uses the diversion information on the header of the incoming call to determine the extension number or phone number of the UM-enabled user. When the extension or phone number is determined, the Mailbox server sends the request to the SIP peer. The SIP peer then changes the MWI state and turns on the notification on the user’s phone.
+A Mailbox server uses the diversion information on the header of the incoming call to determine the extension number or phone number of the UM-enabled user. When the extension or phone number is determined, the Mailbox server sends the request to the SIP peer. The SIP peer then changes the MWI state and turns on the notification on the user's phone.
 
 
 > [!NOTE]
@@ -103,7 +107,7 @@ MWI notifications use SIP NOTIFY messages to communicate with SIP peers. MWI sta
 
 MWI is based on RFC 3842. RFC 3842 states that SIP event notifications must be used for message-waiting notifications. MWI is based on the SIP model, and is driven by the endpoints found in a unified messaging system. SIP endpoints, also called SIP peers, that obtain MWI information must send a SIP SUBSCRIBE message to the Unified Messaging service. The service replies with a NOTIFY message indicating that the subscription has been accepted. All MWI state change information will be conveyed from the Unified Messaging system to a SIP endpoint using NOTIFY messages that are embedded within the subscription that was previously created. The exact syntax of the SIP NOTIFY message to be sent to the SIP peer. is based on the format described in RFC 3842.
 
-When the Unified Messaging service on a Mailbox server sends an MWI NOTIFY message to the SIP peer, the event header is set to “message-summary”, which indicates that this is an MWI-related NOTIFY message. The To header field indicates the SIP endpoint for which the MWI service must be provided. The Subscription-State header must be set to “terminated” instead of “active”. The following actions occur in response to the SIP NOTIFY message:
+When the Unified Messaging service on a Mailbox server sends an MWI NOTIFY message to the SIP peer, the event header is set to "message-summary", which indicates that this is an MWI-related NOTIFY message. The To header field indicates the SIP endpoint for which the MWI service must be provided. The Subscription-State header must be set to "terminated" instead of "active". The following actions occur in response to the SIP NOTIFY message:
 
 1.  The SIP peer conveys this information to the PBX using a circuit-switched protocol such as SMDI.
 
@@ -121,15 +125,15 @@ In a traditional telephony environment, the call flow and MWI notification are a
 
 2.  The VoIP gateway or IP PBX submits the call to a Mailbox server running the Microsoft Exchange Unified Messaging service.
 
-3.  The Mailbox server performs an LDAP query to locate the UM-enabled user's information, such as the user’s extension number and personal greetings. The greetings for the UM-enabled user are played.
+3.  The Mailbox server performs an LDAP query to locate the UM-enabled user's information, such as the user's extension number and personal greetings. The greetings for the UM-enabled user are played.
 
 4.  The voice message that was created by the Unified Messaging service is submitted to the Microsoft Exchange Transport service on the same Mailbox server.
 
-5.  The Transport service on the Mailbox server submits the voice message to the Mailbox server that contains the user’s mailbox. The Mailbox Assistant receives a MAPI event for a new voice message.
+5.  The Transport service on the Mailbox server submits the voice message to the Mailbox server that contains the user's mailbox. The Mailbox Assistant receives a MAPI event for a new voice message.
 
 6.  The Mailbox Assistant reads the UM dial plan and the UM mailbox policy to determine whether MWI notifications should be sent to the UM-enabled user. The Mailbox Assistant queries for all Mailbox servers that are associated with the UM dial plan of the UM-enabled user. The Mailbox Assistant tries to send the RPC event to the first Mailbox server that's returned. If this fails, it tries the next one. It will keep retrying for five minutes, or until all Mailbox servers have been tried. If all the RPC calls fail, the Mailbox Assistant logs the error in Event Viewer. The Mailbox server queries for all UM IP gateways that are associated with the UM dial plan of the UM-enabled user's mailbox.
 
-7.  UM sends a SIP NOTIFY message to the first VoIP gateway or IP PBX that's returned from the query. If this fails, the Mailbox server will choose the next VoIP gateway or IP PBX. The Mailbox server will keep trying for a VoIP gateway or IP PBX for five minutes. If all attempts to find a VoIP gateway or IP PBX fail, the Mailbox server will log an error. If a VoIP gateway or IP PBX is located successfully, the VoIP gateway will send the notification to the PBX, and the PBX in turn will send a notification of the MWI event to the user's phone to light the phone lamp. If an IP PBX is used, the MWI notification is processed by the IP PBX and it will then light the user’s phone lamp. Other MWI notification mechanisms are listed in the Overview section. The type of notification depends on the PBX or IP PBX hardware vendor and whether Lync Server is being used. It also depends on the type of phone—analog, digital, or VoIP—that’s being used.
+7.  UM sends a SIP NOTIFY message to the first VoIP gateway or IP PBX that's returned from the query. If this fails, the Mailbox server will choose the next VoIP gateway or IP PBX. The Mailbox server will keep trying for a VoIP gateway or IP PBX for five minutes. If all attempts to find a VoIP gateway or IP PBX fail, the Mailbox server will log an error. If a VoIP gateway or IP PBX is located successfully, the VoIP gateway will send the notification to the PBX, and the PBX in turn will send a notification of the MWI event to the user's phone to light the phone lamp. If an IP PBX is used, the MWI notification is processed by the IP PBX and it will then light the user's phone lamp. Other MWI notification mechanisms are listed in the Overview section. The type of notification depends on the PBX or IP PBX hardware vendor and whether Lync Server is being used. It also depends on the type of phone (analog, digital, or VoIP) that's being used.
 
 Return to top
 
@@ -149,13 +153,13 @@ In a telephony environment with Lync Server, the call flow and MWI notification 
 
 2.  The incoming call is received by the Lync Server front-end server pool and sent on to the phone or SIP endpoint of the UM-enabled user. The user doesn't answer and the caller is prompted to leave a voice message.
 
-3.  The Lync Server front-end server pool submits the call to a Mailbox server within the on-premises network and the user’s mailbox is found.
+3.  The Lync Server front-end server pool submits the call to a Mailbox server within the on-premises network and the user's mailbox is found.
 
 4.  The Mailbox server performs an LDAP query to locate information for the UM-enabled user, such as their extension number and greetings. The greetings are played, and the caller is prompted to leave a voice message.
 
 5.  The voice message that was created by the Unified Messaging service is submitted to the Transport service on the same Mailbox server within the same site.
 
-6.  The Transport service submits the voice message to the Mailbox server that contains the user’s mailbox. The Mailbox Assistant receives a MAPI event for the new voice message.
+6.  The Transport service submits the voice message to the Mailbox server that contains the user's mailbox. The Mailbox Assistant receives a MAPI event for the new voice message.
 
 7.  The Mailbox Assistant reads the UM dial plan and the UM mailbox policy to decide whether MWI notifications should be sent to the user. The Mailbox Assistant queries for all Mailbox servers that are associated with UM dial plan of the user. The Mailbox Assistant tries to send the RPC event to the first Mailbox server that's returned. If this attempt fails, the Mailbox Assistant tries the next one. It will keep trying to find a Mailbox server for five minutes or until all servers have been tried. If all the RPC calls fail, the Mailbox Assistant will log an error in the Event Viewer. The Mailbox server queries Active Directory for all UM IP gateways that are associated with the UM dial plan of the UM-enabled user.
 
@@ -165,7 +169,7 @@ Return to top
 
 ## MWI resilience
 
-When you're deploying Mailbox and Client Access servers, UM dial plans, and UM IP gateways, and you’re using MWI for UM-enabled users, it's best to deploy multiple Mailbox and Client Access servers as well as multiple VoIP gateways and IP PBXs to create fault tolerance and resilience. Doing this also creates MWI resilience because it provides multiple ways to send MWI notifications, as described in the preceding section.
+When you're deploying Mailbox and Client Access servers, UM dial plans, and UM IP gateways, and you're using MWI for UM-enabled users, it's best to deploy multiple Mailbox and Client Access servers as well as multiple VoIP gateways and IP PBXs to create fault tolerance and resilience. Doing this also creates MWI resilience because it provides multiple ways to send MWI notifications, as described in the preceding section.
 
 To enable fault tolerance for MWI in Unified Messaging, you must create and configure one or more of the following:
 
@@ -226,7 +230,7 @@ For more information about how to manage MWI settings on a UM mailbox policy, se
 
 ## UM IP gateways and MWI
 
-If you disable MWI on a UM IP gateway, you'll disable MWI notifications for all users who connect to the VoIP gateway or IP PBX that's represented by the UM IP gateway. Disabling MWI on a single UM IP gateway that’s linked to a UM dial plan can disable MWI notifications for all UM-enabled users associated with a single or multiple UM dial plans or a single or multiple UM mailbox policies. To learn more about UM mailbox policies, including how to enable or disable MWI for a group of UM-enabled users, see [Manage a UM mailbox policy](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy).
+If you disable MWI on a UM IP gateway, you'll disable MWI notifications for all users who connect to the VoIP gateway or IP PBX that's represented by the UM IP gateway. Disabling MWI on a single UM IP gateway that's linked to a UM dial plan can disable MWI notifications for all UM-enabled users associated with a single or multiple UM dial plans or a single or multiple UM mailbox policies. To learn more about UM mailbox policies, including how to enable or disable MWI for a group of UM-enabled users, see [Manage a UM mailbox policy](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy).
 
 You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in the Shell to configure the MWI setting, as shown in the following table.
 
@@ -272,7 +276,7 @@ Return to top
 
 As mentioned earlier, an MWI notification is any mechanism that indicates the existence of a new voice mail message. In addition to the mechanisms already discussed, users can be notified that they have a voice message waiting via a text message, also called an SMS (Short Message Service) message. This is a different type of MWI notification for new voice messages than the traditional light or other mechanisms.
 
-A text message is sent to a user's mobile phone when a caller leaves a new voice message. Users can also receive a text message that notifies them when they miss a phone call and a voice message isn’t left. The missed call notification text message can be sent to the user along with the new voice mail notification.
+A text message is sent to a user's mobile phone when a caller leaves a new voice message. Users can also receive a text message that notifies them when they miss a phone call and a voice message isn't left. The missed call notification text message can be sent to the user along with the new voice mail notification.
 
 
 > [!NOTE]
@@ -280,11 +284,11 @@ A text message is sent to a user's mobile phone when a caller leaves a new voice
 
 
 
-Text message notifications use different settings than the MWI settings on the UM IP gateway or the UM mailbox policy. Text message notifications for new voice mail and missed calls are configured on UM mailbox policies and UM mailboxes. You can enable or disable text message notifications by using the **Set-UMMailboxPolicy** cmdlet and the **Set-UMMailbox** cmdlet in the Shell. You can view the status of text message notifications by using the **Get-UMMailboxPolicy** cmdlet and the **Get-UMMailbox** cmdlet. It’s not possible to configure text message notifications in the EAC.
+Text message notifications use different settings than the MWI settings on the UM IP gateway or the UM mailbox policy. Text message notifications for new voice mail and missed calls are configured on UM mailbox policies and UM mailboxes. You can enable or disable text message notifications by using the **Set-UMMailboxPolicy** cmdlet and the **Set-UMMailbox** cmdlet in the Shell. You can view the status of text message notifications by using the **Get-UMMailboxPolicy** cmdlet and the **Get-UMMailbox** cmdlet. It's not possible to configure text message notifications in the EAC.
 
 The following table shows the parameter on a UM mailbox that must be configured for a user to receive text messages for voice mail and missed call notifications:
 
-### Text message notification settings on a user’s mailbox
+### Text message notification settings on a user's mailbox
 
 <table>
 <colgroup>
@@ -303,7 +307,7 @@ The following table shows the parameter on a UM mailbox that must be configured 
 </table>
 
 
-For more information about how to manage text message notification settings on a user’s mailbox, see the following topics:
+For more information about how to manage text message notification settings on a user's mailbox, see the following topics:
 
   - [Manage voice mail settings for a user](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings)
 
@@ -347,19 +351,19 @@ For text message notifications for voice mail and missed calls to work correctly
 
 1.  Use either the EAC or the Shell to enable the user for UM and link them to the correct UM mailbox policy.
 
-2.  On the UM mailbox policy that’s linked to the user, verify that the *AllowSMSNotification* parameter is set to `$true`. To set the parameter to `$true`, run the following command: `Set-UMMailboxPolicy -id MyUMMailboxPolicy - AllowSMSNotification $true`.
+2.  On the UM mailbox policy that's linked to the user, verify that the *AllowSMSNotification* parameter is set to `$true`. To set the parameter to `$true`, run the following command: `Set-UMMailboxPolicy -id MyUMMailboxPolicy - AllowSMSNotification $true`.
 
-3.  On the user’s mailbox, enable text message notifications by setting the *UMSMSNotificationOption* parameter to `VoiceMailAndMissedCalls` or `VoiceMail`.
+3.  On the user's mailbox, enable text message notifications by setting the *UMSMSNotificationOption* parameter to `VoiceMailAndMissedCalls` or `VoiceMail`.
 
 4.  Because the default setting is `None`, you must run the following command from the Shell and set the text message notification option to either `VoiceMailAndMissedCalls` or `VoiceMail`. For example: `Set-UMMailbox- -id MyUMMailbox -UMSMSNotificationOption VoiceMailAndMissedCalls`.
     
 
     > [!IMPORTANT]
-    > The <EM>AllowSMSNotification</EM> parameter on the UM mailbox policy and the <EM>UMSMSNotificationOption</EM> parameter on the user’s mailbox must both be set to <CODE>$true</CODE> for SMS notifications to work.
+    > The <EM>AllowSMSNotification</EM> parameter on the UM mailbox policy and the <EM>UMSMSNotificationOption</EM> parameter on the user's mailbox must both be set to <CODE>$true</CODE> for SMS notifications to work.
 
 
 
-In addition to your configuring the UM mailbox policy and the user’s mailbox to enable text message notifications for new voice mail and missed calls, the user must enable and configure text message notifications when they sign in to Outlook Web App. To set up and configure text message notifications, the user must:
+In addition to your configuring the UM mailbox policy and the user's mailbox to enable text message notifications for new voice mail and missed calls, the user must enable and configure text message notifications when they sign in to Outlook Web App. To set up and configure text message notifications, the user must:
 
 1.  Sign in to Outlook Web App and go to **Options** \> **Phone** \> **Voice mail**.
 
@@ -369,7 +373,7 @@ In addition to your configuring the UM mailbox policy and the user’s mailbox t
     
 
     > [!WARNING]
-    > Don’t click <STRONG>Voice mail notifications</STRONG> or it will take you back to the <STRONG>Voice mail</STRONG> page.
+    > Don't click <STRONG>Voice mail notifications</STRONG> or it will take you back to the <STRONG>Voice mail</STRONG> page.
 
 
 
@@ -377,11 +381,11 @@ In addition to your configuring the UM mailbox policy and the user’s mailbox t
 
 5.  On the **Text messaging** page, under **Mobile operator**, use the drop-down list to select the text messaging mobile operator, and then click **Next**.
 
-6.  On the **Text messaging** page, in the **Enter your phone number and click Next** box, enter the mobile phone number that’s used for text message notifications, and then click **Next**. A six-digit passcode will be sent to the mobile phone. If you didn’t receive a passcode, click **I didn’t receive a passcode and need it sent again**.
+6.  On the **Text messaging** page, in the **Enter your phone number and click Next** box, enter the mobile phone number that's used for text message notifications, and then click **Next**. A six-digit passcode will be sent to the mobile phone. If you didn't receive a passcode, click **I didn't receive a passcode and need it sent again**.
 
 7.  Enter the passcode in the **Passcode** box, and then click **Finish**.
 
-8.  After the user enables text message notifications, they can click **Set up voice mail notifications** on the **Text Messaging** page. They’ll be taken back to the voice mail page, where they can scroll down to the **Notifications** section and set up text message notification options for missed calls and voice mail.
+8.  After the user enables text message notifications, they can click **Set up voice mail notifications** on the **Text Messaging** page. They'll be taken back to the voice mail page, where they can scroll down to the **Notifications** section and set up text message notification options for missed calls and voice mail.
 
 Return to top
 

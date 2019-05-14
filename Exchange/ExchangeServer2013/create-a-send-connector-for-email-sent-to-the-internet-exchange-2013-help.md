@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a Send connector for email sent to the Internet: Exchange 2013 Help'
 TOCTitle: Create a Send connector for email sent to the Internet
 ms:assetid: 6deaefa8-1152-40d9-b1ba-9c19bdf8a928
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657457(v=EXCHG.150)
 ms:contentKeyID: 49289297
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,7 +19,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-By default, Microsoft Exchange Server 2013 doesn’t allow you to send mail outside of your domain. To send mail outside your domain, you need to create a Send connector. The following graphic illustrates mail flow when you create a Send connector to send mail to the Internet.
+By default, Microsoft Exchange Server 2013 doesn't allow you to send mail outside of your domain. To send mail outside your domain, you need to create a Send connector. The following graphic illustrates mail flow when you create a Send connector to send mail to the Internet.
 
 ![connector\_send\_onprem\_internet](images/JJ657457.e8963e4f-7dce-461f-bbcf-660278cefa35(EXCHG.150).gif "connector_send_onprem_internet")
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'MAPI over HTTP: Exchange 2013 Help'
 TOCTitle: MAPI over HTTP
 ms:assetid: 4663b5db-5b30-4a5a-a302-be6fef7fe5da
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn635177(v=EXCHG.150)
 ms:contentKeyID: 61218727
 ms.date: 05/10/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -25,13 +29,13 @@ MAPI over HTTP offers the following benefits to clients that support it:
 
   - Enables future innovation in authentication by using an HTTP based protocol.
 
-  - Provides faster reconnection times after a communications break because only TCP connections—not RPC connections—need to be rebuilt. Examples of a communication break include:
+  - Provides faster reconnection times after a communications break because only TCP connections (not RPC connections) need to be rebuilt. Examples of a communication break include:
     
       - Device hibernation
     
       - Changing from a wired network to a wireless or cellular network
 
-  - Offers a session context that is not dependent on the connection. The server maintains the session context for a configurable period of time—even if the user changes networks.
+  - Offers a session context that is not dependent on the connection. The server maintains the session context for a configurable period of time, even if the user changes networks.
 
 ## Deploy MAPI over HTTP
 

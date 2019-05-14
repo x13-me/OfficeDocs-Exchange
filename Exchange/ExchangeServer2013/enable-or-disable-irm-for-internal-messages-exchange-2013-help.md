@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable or Disable IRM for Internal Messages: Exchange 2013 Help'
 TOCTitle: Enable or Disable IRM for Internal Messages
 ms:assetid: a6a17f57-5304-41f1-954d-7301857d54a1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124077(v=EXCHG.150)
 ms:contentKeyID: 49319927
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -63,5 +67,5 @@ For detailed syntax and parameter information, see [Set-IRMConfiguration](https:
 
 ## How do you know this worked?
 
-To verify that you’ve enabled or disabled IRM for internal messages, use the [Get-IRMConfiguration](https://technet.microsoft.com/en-us/library/dd776120\(v=exchg.150\)) cmdlet to check the configuration.
+To verify that you've enabled or disabled IRM for internal messages, use the [Get-IRMConfiguration](https://technet.microsoft.com/en-us/library/dd776120\(v=exchg.150\)) cmdlet to check the configuration.
 

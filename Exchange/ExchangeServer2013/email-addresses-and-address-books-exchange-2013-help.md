@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Email addresses and address books: Exchange 2013 Help'
 TOCTitle: Email addresses and address books
 ms:assetid: b97d0f68-691a-42af-9a6c-4dcc37b28a42
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657488(v=EXCHG.150)
 ms:contentKeyID: 49289386
 ms.date: 06/04/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -22,7 +26,7 @@ Recipients (which include users, resources, contacts, and groups) are any mail-e
 The following terms define the core components associated with email addresses and address books in Exchange 2013.
 
   - **address book policies**  
-    Address book policies (ABPs) allow you to segment users into specific groups to provide customized views of your organization’s global address list (GAL). When creating an ABP, you assign a GAL, an offline address book (OAB), a room list, and one or more address lists to the policy. You can then assign the ABP to mailbox users, providing them with access to a customized GAL in Outlook and Outlook Web App. The goal is to provide a simpler mechanism to accomplish GAL segmentation for on-premises organizations that require multiple GALs.
+    Address book policies (ABPs) allow you to segment users into specific groups to provide customized views of your organization's global address list (GAL). When creating an ABP, you assign a GAL, an offline address book (OAB), a room list, and one or more address lists to the policy. You can then assign the ABP to mailbox users, providing them with access to a customized GAL in Outlook and Outlook Web App. The goal is to provide a simpler mechanism to accomplish GAL segmentation for on-premises organizations that require multiple GALs.
 
 <!-- end list -->
 
@@ -79,11 +83,11 @@ The following table contains links to topics that will help you learn about and 
 </tr>
 <tr class="odd">
 <td><p><a href="https://docs.microsoft.com/en-us/exchange/address-books/hierarchical-address-books/hierarchical-address-books">Hierarchical address books</a></p></td>
-<td><p>Learn more about how to customize the GAL and address lists to meet your organization’s unique business structure.</p></td>
+<td><p>Learn more about how to customize the GAL and address lists to meet your organization's unique business structure.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="offline-address-books-exchange-2013-help.md">Offline address books</a></p></td>
-<td><p>Learn more about providing users with offline access to your organization’s address lists.</p></td>
+<td><p>Learn more about providing users with offline access to your organization's address lists.</p></td>
 </tr>
 </tbody>
 </table>

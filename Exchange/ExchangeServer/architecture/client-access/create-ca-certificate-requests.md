@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: efb00de7-070b-46bf-a2fc-00d07ae085c1
 ms.date: 6/7/2018
+ms.reviewer: 
 title: Create an Exchange Server certificate request for a certification authority
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -24,7 +25,7 @@ You can create certificate requests in the Exchange admin center (EAC) or in the
 
 ## What do you need to know before you begin?
 
-- Estimated time to complete: 5 minutes to complete the new certificate request. However, more time is required before the request results in a certificate. For more information, see [Next steps](create-ca-certificate-requests.md#NextSteps).
+- Estimated time to complete: 5 minutes to complete the new certificate request. However, more time is required before the request results in a certificate. For more information, see [Next steps](#next-steps).
 
 - You need to plan carefully to choose the type of certificate that you want, and the host names that are required in the certificate. For more information, see [Digital certificates and encryption in Exchange Server](certificates.md).
 
@@ -117,7 +118,7 @@ You can create certificate requests in the Exchange admin center (EAC) or in the
 
 10. On the **Save the certificate request to the following file** page, enter the UNC path and filename for the certificate request. For example, `\\FileServer01\Data\ExchCertRequest.req`. When you're finished, click **Finish**.
 
-The certificate request appears in the list of Exchange certificates with a status value of **Pending**. For next steps, see the [Next steps](create-ca-certificate-requests.md#NextSteps) section.
+The certificate request appears in the list of Exchange certificates with a status value of **Pending**. For next steps, see the [Next steps](#next-steps) section.
 
 ## Use the Exchange Management Shell to create a new certificate request
 
@@ -200,7 +201,6 @@ To verify that you have successfully created a new certificate request, perform 
   ```
 
 ## Next steps
-<a name="NextSteps"> </a>
 
 The content of a Base64 encoded certificate request file looks like this:
 
@@ -236,6 +236,3 @@ You need to send this information to the CA. How you send it depends on the CA, 
 If the CA requires a binary certificate request that's encoded by DER (you used the **New-ExchangeCertificate** cmdlet with the _BinaryEncoded_ switch), you typically send the whole certificate request file to the CA.
 
 After you receive the certificate from the CA, you need to complete the pending certificate request. For instructions, see [Complete a pending Exchange Server certificate request](complete-pending-certificate-requests.md).
-
-
-

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Recipients Permissions: Exchange 2013 Help'
 TOCTitle: Recipients Permissions
 ms:assetid: 5b690bcb-c6df-4511-90e1-08ca91f43b37
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638132(v=EXCHG.150)
 ms:contentKeyID: 48385139
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -71,7 +75,7 @@ Users who are assigned the View-Only Management role group can view the configur
 <p><a href="server-management-exchange-2013-help.md">Server Management</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>Exchange Search – diagnostics</p></td>
+<td><p>Exchange Search - diagnostics</p></td>
 <td><p><a href="organization-management-exchange-2013-help.md">Organization Management</a></p>
 <p><a href="view-only-organization-management-exchange-2013-help.md">View-only Organization Management</a></p>
 <p>Support Diagnostics role</p>

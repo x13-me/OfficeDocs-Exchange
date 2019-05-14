@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'In-Place Archiving in Exchange 2013: Exchange 2013 Help'
 TOCTitle: In-Place Archiving in Exchange 2013
 ms:assetid: b5e4c0e9-0558-4b90-bc12-f67adbfb59ac
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd979800(v=EXCHG.150)
 ms:contentKeyID: 48385465
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -128,13 +132,13 @@ There are several ways to move messages to archive mailboxes:
 
 
 
-  - **Import messages from .pst files**   In Exchange 2013, you can use a mailbox import request to import messages from a .pst file to a user's archive or primary mailbox. For details, see [Mailbox import and export requests](mailbox-import-and-export-requests-exchange-2013-help.md). You can also use the PST Capture tool to search for .pst files on computers in your organization and import .pst file data to users’ archives.
+  - **Import messages from .pst files**   In Exchange 2013, you can use a mailbox import request to import messages from a .pst file to a user's archive or primary mailbox. For details, see [Mailbox import and export requests](mailbox-import-and-export-requests-exchange-2013-help.md). You can also use the PST Capture tool to search for .pst files on computers in your organization and import .pst file data to users' archives.
 
 ## Archive and retention policies
 
 In Exchange 2013, you can apply archive policies to a mailbox to automatically move messages from a user's primary mailbox to the archive mailbox after a specified period. Archive policies are implemented by creating retention tags that use the **Move to Archive** retention action.
 
-Messages are moved to a folder in the archive mailbox that has the same name as the source folder in the primary mailbox. If a folder with the same name doesn't exist in the archive mailbox, it’s created when the Managed Folder Assistant moves a message. Re-creating the same folder hierarchy in the archive mailbox allows users to find messages easily.
+Messages are moved to a folder in the archive mailbox that has the same name as the source folder in the primary mailbox. If a folder with the same name doesn't exist in the archive mailbox, it's created when the Managed Folder Assistant moves a message. Re-creating the same folder hierarchy in the archive mailbox allows users to find messages easily.
 
 To learn more about retention policies, retention tags, and the **Move to Archive** retention action, see [Retention tags and retention policies](https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies).
 
@@ -273,7 +277,7 @@ This section explains the functionality between In-Place Archives and various Ex
     
 
     > [!IMPORTANT]
-    > You can’t use In-Place eDiscovery to search a disconnected mailbox.
+    > You can't use In-Place eDiscovery to search a disconnected mailbox.
 
 
 
@@ -281,7 +285,7 @@ This section explains the functionality between In-Place Archives and various Ex
 
   - **Recoverable Items folder**   The archive mailbox contains its own Recoverable Items folder and is subject to the same Recoverable Items folder quotas as the primary mailbox. To learn more about recoverable items, see [Recoverable Items folder](recoverable-items-folder-exchange-2013-help.md).
 
-  - **Archiving Lync content in Exchange**   You can archive instant messaging conversations and shared online meeting documents in the user’s primary mailbox. The mailbox must reside on an Exchange 2013 Mailbox server and you must have Microsoft Lync 2013 deployed in your organization. For details, see [Integration with SharePoint and Lync](integration-with-sharepoint-and-lync-exchange-2013-help.md).
+  - **Archiving Lync content in Exchange**   You can archive instant messaging conversations and shared online meeting documents in the user's primary mailbox. The mailbox must reside on an Exchange 2013 Mailbox server and you must have Microsoft Lync 2013 deployed in your organization. For details, see [Integration with SharePoint and Lync](integration-with-sharepoint-and-lync-exchange-2013-help.md).
 
 ## Managing archive mailboxes
 
@@ -293,7 +297,7 @@ In Exchange 2013, creating and managing archive mailboxes is integrated with com
     
 
     > [!IMPORTANT]
-    > Locating a user’s mailbox and archive on different versions of Exchange Server is not supported.
+    > Locating a user's mailbox and archive on different versions of Exchange Server is not supported.
 
 
 
@@ -301,5 +305,5 @@ In Exchange 2013, creating and managing archive mailboxes is integrated with com
 
   - **Retrieving mailbox statistics and folder statistics**   You can retrieve mailbox statistics and mailbox folder statistics for a user's archive mailbox by using the *Archive* switch with the [Get-MailboxStatistics](https://technet.microsoft.com/en-us/library/bb124612\(v=exchg.150\)) and [Get-MailboxFolderStatistics](https://technet.microsoft.com/en-us/library/aa996762\(v=exchg.150\)) cmdlets.
 
-  - **Test archive connectivity**   In Exchange 2013, you can use the [Test-ArchiveConnectivity](https://technet.microsoft.com/en-us/library/hh529914\(v=exchg.150\)) cmdlet to test connectivity to a specified user’s on-premises or cloud-based archive.
+  - **Test archive connectivity**   In Exchange 2013, you can use the [Test-ArchiveConnectivity](https://technet.microsoft.com/en-us/library/hh529914\(v=exchg.150\)) cmdlet to test connectivity to a specified user's on-premises or cloud-based archive.
 

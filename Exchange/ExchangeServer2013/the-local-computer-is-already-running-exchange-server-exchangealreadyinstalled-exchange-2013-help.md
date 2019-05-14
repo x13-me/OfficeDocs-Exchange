@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'The local computer is already running Exchange Server'
 TOCTitle: The local computer is already running Exchange Server_ExchangeAlreadyInstalled
 ms:assetid: 3f168b5d-9910-418f-86fb-e99d852dcb5e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.exchangealreadyinstalled(v=EXCHG.150)
 ms:contentKeyID: 46628873
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

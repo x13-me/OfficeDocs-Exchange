@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure mail flow and client access: Exchange 2013 Help'
 TOCTitle: Configure mail flow and client access
 ms:assetid: 4acc7f2a-93ce-468c-9ace-d5f7eecbd8d4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ218640(v=EXCHG.150)
 ms:contentKeyID: 48385058
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -181,7 +185,7 @@ Before clients can connect to your new server from the Internet, you need to con
 
 5.  In the **Specify the external hostname** field, specify the externally accessible FQDN of the Client Access server. For example, mail.contoso.com.
 
-6.  While you’re here, let’s also set the internally accessible FQDN of the Client Access server. In the **Specify the internal hostname** field, insert the FQDN you used in the previous step. For example, mail.contoso.com.
+6.  While you're here, let's also set the internally accessible FQDN of the Client Access server. In the **Specify the internal hostname** field, insert the FQDN you used in the previous step. For example, mail.contoso.com.
 
 7.  Click **Save**.
 
@@ -189,7 +193,7 @@ Before clients can connect to your new server from the Internet, you need to con
 
 9.  Under **Select the Client Access servers to use with the external URL**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon")
 
-10. Select the Client Access servers you want to configure and then click **Add**. After you’ve added all of the Client Access servers you want to configure, click **OK**.
+10. Select the Client Access servers you want to configure and then click **Add**. After you've added all of the Client Access servers you want to configure, click **OK**.
 
 11. In **Enter the domain name you will use with your external Client Access servers**, type the external domain you want to apply. For example, mail.contoso.com. Click **Save**.
     
@@ -322,9 +326,9 @@ To verify that you have successfully configured your public DNS records, do the 
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "*\<Service\>* virtual directory settings" entry in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-Before clients can connect to your new server from yourintranet, you need to configure the internal domains, or URLs, on the Client Access server’s virtual directories and then configure your private domain name service (DNS) records.
+Before clients can connect to your new server from yourintranet, you need to configure the internal domains, or URLs, on the Client Access server's virtual directories and then configure your private domain name service (DNS) records.
 
-The procedure below lets you choose whether you want users to use the same URL on your intranet and on the Internet to access your Exchange server or whether they should use a different URL. What you choose depends on the addressing scheme you have in place already or that you want to implement. If you’re implementing a new addressing scheme, we recommend that you use the same URL for both internal and external URLs. Using the same URL makes it easier for users to access your Exchange server because they only have to remember one address. Regardless of the choice you make, you need to make sure you configure a private DNS zone for the address space you configure. For more information about administering DNS zones, see [Administering DNS Server](https://go.microsoft.com/fwlink/p/?linkid=190631).
+The procedure below lets you choose whether you want users to use the same URL on your intranet and on the Internet to access your Exchange server or whether they should use a different URL. What you choose depends on the addressing scheme you have in place already or that you want to implement. If you're implementing a new addressing scheme, we recommend that you use the same URL for both internal and external URLs. Using the same URL makes it easier for users to access your Exchange server because they only have to remember one address. Regardless of the choice you make, you need to make sure you configure a private DNS zone for the address space you configure. For more information about administering DNS zones, see [Administering DNS Server](https://go.microsoft.com/fwlink/p/?linkid=190631).
 
 For more information about internal and external URLs on virtual directories, see [Virtual directory management](virtual-directory-management-exchange-2013-help.md).
 
@@ -338,7 +342,7 @@ For more information about internal and external URLs on virtual directories, se
     $HostName = "Ex2013CAS"
     ```
 
-3.  Run each of the following commands in the Shell to configure each internal URL to match the virtual directory’s external URL.
+3.  Run each of the following commands in the Shell to configure each internal URL to match the virtual directory's external URL.
     
     ```powershell
         Set-EcpVirtualDirectory "$HostName\ECP (Default Web Site)" -InternalUrl ((Get-EcpVirtualDirectory "$HostName\ECP (Default Web Site)").ExternalUrl)
@@ -360,7 +364,7 @@ For more information about internal and external URLs on virtual directories, se
         Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
     ```
     
-After you've configured the internal URL on the Client Access server virtual directories, you need to configure your private DNS records for Outlook Web App, and other connectivity. Depending on your configuration, you’ll need to configure your private DNS records to point to the internal or external IP address or fully qualified domain name (FQDN) of your Client Access server. The following are examples of recommended DNS records that you should create to enable internal client connectivity.
+After you've configured the internal URL on the Client Access server virtual directories, you need to configure your private DNS records for Outlook Web App, and other connectivity. Depending on your configuration, you'll need to configure your private DNS records to point to the internal or external IP address or fully qualified domain name (FQDN) of your Client Access server. The following are examples of recommended DNS records that you should create to enable internal client connectivity.
 
 
 <table>
@@ -474,7 +478,7 @@ To verify that you have successfully configured your private DNS records, do the
     
 
     > [!NOTE]
-    > The ECP and OWA virtual directory internal URLs must be the same.<BR>You can’t set an internal URL on the Autodiscover virtual directory.
+    > The ECP and OWA virtual directory internal URLs must be the same.<BR>You can't set an internal URL on the Autodiscover virtual directory.
 
 
 
@@ -484,7 +488,7 @@ To verify that you have successfully configured your private DNS records, do the
         Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
     ```
     
-After you've configured the internal URL on the Client Access server virtual directories, you need to configure your private DNS records for Outlook Web App, and other connectivity. Depending on your configuration, you’ll need to configure your private DNS records to point to the internal or external IP address or FQDN of your Client Access server. The following is an example of recommended DNS record that you should create to enable internal client connectivity if you’ve configured your virtual directory internal URLs to use internal.contoso.com.
+After you've configured the internal URL on the Client Access server virtual directories, you need to configure your private DNS records for Outlook Web App, and other connectivity. Depending on your configuration, you'll need to configure your private DNS records to point to the internal or external IP address or FQDN of your Client Access server. The following is an example of recommended DNS record that you should create to enable internal client connectivity if you've configured your virtual directory internal URLs to use internal.contoso.com.
 
 
 <table>

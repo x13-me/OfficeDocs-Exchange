@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'PBX and IP PBX configurations: Exchange 2013 Help'
 TOCTitle: PBX and IP PBX configurations
 ms:assetid: fb086680-6e3e-477a-a5d8-e24ca30196ee
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb430797(v=EXCHG.150)
 ms:contentKeyID: 53908382
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -45,13 +49,13 @@ Different types or categories of telephone systems found in businesses and organ
 
   - **Centrex:** Centrex is a type of telephone service that telephone companies lease to businesses and organizations. A traditional Centrex telephone system eliminates the need for a business or organization to purchase the telephony hardware used onsite to support the organization's telephone system. Typically, Centrex systems are used by small offices that rent Centrex services from a telephone company on a line-by-line and month-by-month basis. Centrex telephony systems are sometimes used by larger organizations, but are most frequently found in government, public, and private organizations. Centrex frequently uses analog telephone lines for the connections to a business or organization. But it can also use T1-circuits with a demultiplexer onsite to support analog and digital telephones or ISDN lines.
     
-    In a Centrex-based telephony system, the telephone company's central office acts as the telephone exchange. It's designed specifically to support the needs of a given organization. The central telephone office routes the calls that originate from inside the company to the appropriate internal or external telephone number. Centrex uses the telephone company’s central office exchange to route internal calls back to an extension. For example, with Centrex, the telephone exchange or telephone company's central office knows which extensions are internal. So an employee who's located within the organization's telephony network can dial another employee in the same telephony network or dial plan by using a four-digit extension number. When a call is dialed to the internal telephone extension number, it's forwarded to the telephone company’s central office and then routed back to the extension number that initiated the call.
+    In a Centrex-based telephony system, the telephone company's central office acts as the telephone exchange. It's designed specifically to support the needs of a given organization. The central telephone office routes the calls that originate from inside the company to the appropriate internal or external telephone number. Centrex uses the telephone company's central office exchange to route internal calls back to an extension. For example, with Centrex, the telephone exchange or telephone company's central office knows which extensions are internal. So an employee who's located within the organization's telephony network can dial another employee in the same telephony network or dial plan by using a four-digit extension number. When a call is dialed to the internal telephone extension number, it's forwarded to the telephone company's central office and then routed back to the extension number that initiated the call.
 
-A variation of a traditional Centrex telephony system is called *IP Centrex*. In an IP Centrex telephone system, the call is sent through a Voice over IP (VoIP) gateway located at a telephone company’s central office or located onsite at a service provider. In this kind of telephone system, the VoIP gateway translates the call into IP-based data packets that can be sent over the Internet or over a VoIP–based network. However, if the call is sent over the Internet, there's typically another VoIP gateway that receives the call and then translates the call back to a traditional circuit-switched call.
+A variation of a traditional Centrex telephony system is called *IP Centrex*. In an IP Centrex telephone system, the call is sent through a Voice over IP (VoIP) gateway located at a telephone company's central office or located onsite at a service provider. In this kind of telephone system, the VoIP gateway translates the call into IP-based data packets that can be sent over the Internet or over a VoIP-based network. However, if the call is sent over the Internet, there's typically another VoIP gateway that receives the call and then translates the call back to a traditional circuit-switched call.
 
 Organizations that currently have a traditional Centrex telephone system in place have to install, deploy, and maintain one or more VoIP gateways for Unified Messaging to work correctly. Unified Messaging may require that you install, deploy, and maintain VoIP gateways to work with IP Centrex. Several variables will determine whether you need a VoIP gateway. These variables include the type of telephones used in your organization (analog, digital, or IP) and the protocols supported by the IP Centrex system.
 
-  - **Key telephone:** In a Key telephone system, the telephone company’s central office is connected to the organization using standard analog or digital telephone lines. A single telephone extension number is connected to multiple telephones so when a call is placed into the organization using this telephone number, all the telephones associated with that line or extension number will ring at the same time.
+  - **Key telephone:** In a Key telephone system, the telephone company's central office is connected to the organization using standard analog or digital telephone lines. A single telephone extension number is connected to multiple telephones so when a call is placed into the organization using this telephone number, all the telephones associated with that line or extension number will ring at the same time.
 
 With Key telephone systems, individual users share lines across telephones. Therefore, callers won't experience frequent busy signals when they try to call into an organization. Key telephone systems are typically used by small offices where internal call volume is high but external call volume is low.
 
@@ -101,7 +105,7 @@ In addition to the three functions included in the previous list, PBXs may offer
 
 Although there are several manufacturers of PBXs, they all fit into two basic categories: analog and digital. These types of PBXs are frequently known as *legacy* or *traditional* PBXs.
 
-Typically, PBX systems are connected to the telephone company’s central office by using special telephone lines, known as T1- and E1-lines. T1- and E1-lines have multiple channels. These telephone lines are also known as *trunk lines.* They let the central office or the PBX send multiple calls over the same line for better efficiency using a simplified wiring layout. A PBX can also work with analog or ISDN lines.
+Typically, PBX systems are connected to the telephone company's central office by using special telephone lines, known as T1- and E1-lines. T1- and E1-lines have multiple channels. These telephone lines are also known as *trunk lines.* They let the central office or the PBX send multiple calls over the same line for better efficiency using a simplified wiring layout. A PBX can also work with analog or ISDN lines.
 
 By correctly configuring your PBX, you can control how many channels or lines you want to configure to receive calls that come from external callers and how many channels or lines to devote to calls that come from callers inside your organization. Configuring the number of channels or lines helps prevent busy signals and lets you configure the number of channels or lines devoted to applications such as call centers. Correctly configuring your PBX is a cost-effective method for managing the channels or lines in your organization because it reduces the number of leased lines required.
 
@@ -111,7 +115,7 @@ Return to top
 
 ## Analog and digital PBXs
 
-Analog PBXs send voice and call signaling information, such as the touch tones of a dialed telephone number, as an analog sound. Therefore, the sound is never digitized. To correctly direct the call, the PBX and the telephone company’s central office have to listen for the signaling information.
+Analog PBXs send voice and call signaling information, such as the touch tones of a dialed telephone number, as an analog sound. Therefore, the sound is never digitized. To correctly direct the call, the PBX and the telephone company's central office have to listen for the signaling information.
 
 
 > [!NOTE]

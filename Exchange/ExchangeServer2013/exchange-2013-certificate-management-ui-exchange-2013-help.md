@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Exchange 2013 certificate management UI: Exchange 2013 Help'
 TOCTitle: Exchange 2013 certificate management UI
 ms:assetid: 8975848d-07f0-4643-9eac-20aece69945f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ984582(v=EXCHG.150)
 ms:contentKeyID: 51541779
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -19,7 +23,7 @@ Managing certificates in an Exchange Server deployment is one of the most import
 
 ## Client Access server certificates
 
-The Client Access server in Exchange 2013 is a stateless thin server designed to accept incoming client connections and proxy them to the correct Mailbox server. The Exchange Certificate Management UI on the Client Access server can help you with a variety of tasks, including requesting new certificates and renewing expired or soon–to-expire certificates.
+The Client Access server in Exchange 2013 is a stateless thin server designed to accept incoming client connections and proxy them to the correct Mailbox server. The Exchange Certificate Management UI on the Client Access server can help you with a variety of tasks, including requesting new certificates and renewing expired or soon-to-expire certificates.
 
 ## Understanding the Certificate Management UI
 
@@ -27,7 +31,7 @@ You can access the Exchange Certificate Management UI through the EAC by selecti
 
   - **Create a new certificate**   Selecting **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") launches the New Exchange Certificate wizard.
 
-  - **Edit an existing certificate**   Selecting **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") on a valid certificate allows you to see the certificate’s property page.
+  - **Edit an existing certificate**   Selecting **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") on a valid certificate allows you to see the certificate's property page.
 
   - **Delete a certificate**   Selecting **Delete** ![Delete icon](images/Dd298078.14f639f6-61e8-4418-bbfb-0db14de9d2f5(EXCHG.150).gif "Delete icon") when a certificate is selected launches the delete confirmation dialog box.
 
@@ -35,7 +39,7 @@ You can access the Exchange Certificate Management UI through the EAC by selecti
 
 ## Certificate expiration
 
-In previous versions of Microsoft Exchange, you couldn’t easily see when a digital certificate was nearing expiration. In Exchange 2013, the Notifications center displays warnings when a certificate stored on any Exchange 2013 Client Access server is about to expire.
+In previous versions of Microsoft Exchange, you couldn't easily see when a digital certificate was nearing expiration. In Exchange 2013, the Notifications center displays warnings when a certificate stored on any Exchange 2013 Client Access server is about to expire.
 
 ## Mailbox server certificates
 

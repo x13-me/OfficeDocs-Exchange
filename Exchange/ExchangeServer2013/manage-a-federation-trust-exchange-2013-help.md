@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage a federation trust: Exchange 2013 Help'
 TOCTitle: Manage a federation trust
 ms:assetid: 0439839f-2052-4bc9-9d30-aa6e7d51b733
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673036(v=EXCHG.150)
 ms:contentKeyID: 49289152
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,7 +19,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-A federation trust establishes a trust relationship between a Microsoft Exchange 2013 organization and the Azure Active Directory authentication system and supports federated sharing with other federated Exchange organizations. Normally, you shouldn’t have to manage or modify the federation trust after it’s created. However, there may be circumstances that require adding or removing federated domains or resetting the domain used to configure the organization identifier (OrgID) for the federation trust.
+A federation trust establishes a trust relationship between a Microsoft Exchange 2013 organization and the Azure Active Directory authentication system and supports federated sharing with other federated Exchange organizations. Normally, you shouldn't have to manage or modify the federation trust after it's created. However, there may be circumstances that require adding or removing federated domains or resetting the domain used to configure the organization identifier (OrgID) for the federation trust.
 
 
 > [!NOTE]
@@ -27,7 +31,7 @@ For additional management tasks related to Federation, see [Federation procedure
 
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn’t fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
+> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
 
 
 
@@ -59,7 +63,7 @@ For additional management tasks related to Federation, see [Federation procedure
 
 2.  In the **Federation Trust** section, click **Modify**.
 
-3.  In **Sharing-Enabled Domains**, skip **Step 1** because the primary sharing domain isn’t changing.
+3.  In **Sharing-Enabled Domains**, skip **Step 1** because the primary sharing domain isn't changing.
 
 4.  In **Step 2**, select the **service.contoso.com** domain and then click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon") to remove the domain from the federated trust.
 
@@ -105,7 +109,7 @@ Run the following Shell commands to manage other aspects of a federation trust:
 
 2.  **View federation trust certificates**
     
-    This example displays the previous, current, and next certificates used by the federation trust ”Azure AD authentication”.
+    This example displays the previous, current, and next certificates used by the federation trust "Azure AD authentication".
     
     ```powershell
         Get-FederationTrust "Azure AD authentication" | Select Org*certificate
@@ -121,7 +125,7 @@ Run the following Shell commands to manage other aspects of a federation trust:
 
 4.  **Configure the federation trust to use a certificate as the next certificate**
     
-    This example configures the federation trust ”Azure AD authentication” to use the certificate with the provided thumbprint as the next certificate. After the certificate is deployed to all Exchange servers in the organization, you can use the *PublishCertificate* switch to configure the federation trust to use this certificate as the current certificate.
+    This example configures the federation trust "Azure AD authentication" to use the certificate with the provided thumbprint as the next certificate. After the certificate is deployed to all Exchange servers in the organization, you can use the *PublishCertificate* switch to configure the federation trust to use this certificate as the current certificate.
     
     ```powershell
     Set-FederationTrust "Azure AD authentication" -Thumbprint AC00F35CBA8359953F4126E0984B5CCAFA2F4F17

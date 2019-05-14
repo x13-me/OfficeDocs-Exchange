@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting UM Health Set
 TOCTitle: Troubleshooting UM Health Set
 ms:assetid: db947791-63ce-45dd-8634-1dfa5f55e2c2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.um(v=EXCHG.150)
 ms:contentKeyID: 49720901
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -189,7 +193,7 @@ Renew the UM service certificate on the Mailbox server.
 
 **Additional troubleshooting steps:**
 
-1.  Start IIS Manager, and connect to the server that’s reporting the issue to determine whether the **MSExchangeServicesAppPool** application pool is running.
+1.  Start IIS Manager, and connect to the server that's reporting the issue to determine whether the **MSExchangeServicesAppPool** application pool is running.
 
 2.  In IIS Manager, click **Application Pools**, and then recycle the **MSExchangeServicesAppPool** application pool. To do this, run the following command from the Exchange Management Shell:
     

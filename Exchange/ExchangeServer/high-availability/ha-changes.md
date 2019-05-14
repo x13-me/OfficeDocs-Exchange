@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: de53c00b-091c-4a31-aacc-1bd40c756ce2
 ms.date: 7/13/2018
+ms.reviewer: 
 title: Changes to high availability and site resilience over previous versions of Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

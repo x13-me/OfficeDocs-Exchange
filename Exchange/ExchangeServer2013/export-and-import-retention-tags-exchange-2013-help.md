@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Export and import retention tags: Exchange 2013 Help'
 TOCTitle: Export and import retention tags
 ms:assetid: 18405ea2-7ccc-475e-bd84-8b040e17bf44
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ907307(v=EXCHG.150)
 ms:contentKeyID: 50639770
 ms.date: 12/10/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -27,7 +31,7 @@ In these scenarios, the Managed Folder Assistant can correctly process an item t
 
 
 > [!WARNING]
-> To keep retention tags and retention policies synchronized between two organizations, every time you make changes to a retention tag or policy in the source organization, you must perform this procedure to export retention tags and policies from the source organization and import them in the destination organization.<BR>You can’t select specific retention tags or policies to export. The Export-RetentionTags.ps1 script exports all retention tags and policies from an organization.
+> To keep retention tags and retention policies synchronized between two organizations, every time you make changes to a retention tag or policy in the source organization, you must perform this procedure to export retention tags and policies from the source organization and import them in the destination organization.<BR>You can't select specific retention tags or policies to export. The Export-RetentionTags.ps1 script exports all retention tags and policies from an organization.
 
 
 

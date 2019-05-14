@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Sharing: Exchange 2013 Help'
 TOCTitle: Sharing
 ms:assetid: 09e6732a-4e99-44d0-801d-9463fdc57a9b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638083(v=EXCHG.150)
 ms:contentKeyID: 48384809
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -19,7 +23,7 @@ You may need to coordinate schedules with people in different organizations or w
 
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn’t fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
+> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
 
 
 
@@ -59,7 +63,7 @@ The following sharing scenarios are supported in Exchange 2013:
 <tr class="odd">
 <td><p>Share calendars with an Office 365 organization</p></td>
 <td><p>Organization relationships</p></td>
-<td><p>The Office 365 organization is ready to configure. The on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as “federation”) and must meet minimum software requirements. To learn more about setting up federation, see <a href="federation-exchange-2013-help.md">Federation</a>.</p></td>
+<td><p>The Office 365 organization is ready to configure. The on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements. To learn more about setting up federation, see <a href="federation-exchange-2013-help.md">Federation</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Share calendars with another on-premises Exchange organization</p></td>
@@ -67,12 +71,12 @@ The following sharing scenarios are supported in Exchange 2013:
 <td><p>Both on-premises Exchange organizations have to set up federation and must meet minimum software requirements</p></td>
 </tr>
 <tr class="odd">
-<td><p>Share an Exchange user’s calendar with an Internet user</p></td>
+<td><p>Share an Exchange user's calendar with an Internet user</p></td>
 <td><p>Sharing policies</p></td>
 <td><p>None, ready to configure</p></td>
 </tr>
 <tr class="even">
-<td><p>Share an Exchange user’s calendar with another Exchange on-premises user</p></td>
+<td><p>Share an Exchange user's calendar with another Exchange on-premises user</p></td>
 <td><p>Sharing policies</p></td>
 <td><p>Both on-premises Exchange organizations have to set up federation and must meet minimum software requirements.</p></td>
 </tr>
@@ -163,7 +167,7 @@ Return to top
 
 The following limitations apply when sharing free/busy information between Exchange organizations:
 
-1.  **Outlook Web Access 2003**   When a user in an Exchange 2003 organization uses Outlook Web Access to access free/busy for users in a remote Exchange 2013 organization, the request will fail. Outlook Web Access connections from Exchange 2003 can’t make WebDAV (Web-based Distributed Authoring and Versioning) connections to a free/busy system folder to retrieve the free/busy information for remote users. Because Exchange 2013 doesn’t support WebDAV connections, the Exchange 2003 server can't connect to External (FYDIBOHF25SPDLT) on the Exchange 2013 CAS server for Outlook Web Access requests. Outlook clients don’t experience this limitation because they use MAPI instead of WebDAV when connecting to External (FYDIBOHF25SPDLT).
+1.  **Outlook Web Access 2003**   When a user in an Exchange 2003 organization uses Outlook Web Access to access free/busy for users in a remote Exchange 2013 organization, the request will fail. Outlook Web Access connections from Exchange 2003 can't make WebDAV (Web-based Distributed Authoring and Versioning) connections to a free/busy system folder to retrieve the free/busy information for remote users. Because Exchange 2013 doesn't support WebDAV connections, the Exchange 2003 server can't connect to External (FYDIBOHF25SPDLT) on the Exchange 2013 CAS server for Outlook Web Access requests. Outlook clients don't experience this limitation because they use MAPI instead of WebDAV when connecting to External (FYDIBOHF25SPDLT).
 
 2.  **Wide Area Network (WAN) latency**   In Exchange 2003 organizations, the replicas for all free/busy folders must reside on Exchange 2010 SP2 or higher Mailbox servers. In environments where Exchange 2003 public folder databases are located in multiple physical sites, there may be excessive latency and performance issues if internal free/busy queries have to traverse WAN links to access Exchange 2010 public folder databases not located in the same physical site.
 
@@ -180,16 +184,16 @@ The following limitations apply when sharing free/busy information between Excha
     
     2.  Locate the **appSettings** section in the web.config file.
     
-    3.  Add a new key “\<add key="maximumQueryIntervalDays" value="62" /\>” and save the web.config file.
+    3.  Add a new key "\<add key="maximumQueryIntervalDays" value="62" /\>" and save the web.config file.
         
 
         > [!NOTE]
-        > The maximumQueryIntervalDays value isn’t present by default. When this value isn’t present, Exchange 2007 uses the default interval of 42 days.
+        > The maximumQueryIntervalDays value isn't present by default. When this value isn't present, Exchange 2007 uses the default interval of 42 days.
 
     
     4.  Stop and restart the Microsoft Internet Information Services (IIS) on all the Exchange 2007 CAS servers.
 
-4.  **Exchange organizations that have both on-premises and cloud users**   If you set up calendar sharing with another Exchange organization that is configured in a hybrid deployment with Microsoft Office 365, free/busy availability lookups for Office 365-based or remote users that have been moved to the cloud will fail. Because the organization relationship for your Exchange organization is with the remote on-premises Exchange organization, not the Office 365-based Exchange Online organization, the free/busy request can’t query the Office 365-based users. Exchange 2013 doesn’t support functionality to proxy these availability requests through the on-premises organization to the Office 365 service.
+4.  **Exchange organizations that have both on-premises and cloud users**   If you set up calendar sharing with another Exchange organization that is configured in a hybrid deployment with Microsoft Office 365, free/busy availability lookups for Office 365-based or remote users that have been moved to the cloud will fail. Because the organization relationship for your Exchange organization is with the remote on-premises Exchange organization, not the Office 365-based Exchange Online organization, the free/busy request can't query the Office 365-based users. Exchange 2013 doesn't support functionality to proxy these availability requests through the on-premises organization to the Office 365 service.
 
 For details about how to configure free/busy sharing between common Exchange deployments, see [Configuring federated sharing between Exchange organizations](configuring-federated-sharing-between-exchange-organizations-exchange-2013-help.md).
 

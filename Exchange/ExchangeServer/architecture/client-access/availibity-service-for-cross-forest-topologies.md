@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: f1e7d407-f0d3-47a7-8cc3-03c5980445d5
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Configure the Availability service for cross-forest topologies
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

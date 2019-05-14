@@ -1,10 +1,14 @@
-﻿---
+---
 title: "Can't determine the name of the Active Directory site"
 TOCTitle: Cannot determine the name of the Active Directory site_InvalidADSite
 ms:assetid: ef96e077-08a0-4108-9f7d-0d61758abcd4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.invalidadsite(v=EXCHG.150)
 ms:contentKeyID: 46629185
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -27,5 +31,5 @@ To resolve this issue, verify that the local server is a member of a valid Activ
 
 You can use the **/DsGetSite** option of the Nltest.exe command line tool to verify and display site membership. For more information, see "Nltest.exe: NLTest Overview" in the "Tools and Settings Collection" of *Windows Server 2003 Technical Reference* ([https://go.microsoft.com/fwlink/?LinkId=27734](https://go.microsoft.com/fwlink/?linkid=27734)).
 
-For more information about Active Directory troubleshooting, see “Troubleshooting Active Directory Operations” in *Windows Server 2003: Operations* (<https://go.microsoft.com/fwlink/?linkid=68099>).
+For more information about Active Directory troubleshooting, see "Troubleshooting Active Directory Operations" in *Windows Server 2003: Operations* (<https://go.microsoft.com/fwlink/?linkid=68099>).
 

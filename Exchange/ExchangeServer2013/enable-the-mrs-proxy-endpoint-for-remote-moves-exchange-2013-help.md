@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable the MRS Proxy endpoint for remote moves: Exchange 2013 Help'
 TOCTitle: Enable the MRS Proxy endpoint for remote moves
 ms:assetid: 9840f712-127e-4c2d-bfe5-1b35cdb2a31b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn155787(v=EXCHG.150)
 ms:contentKeyID: 53903965
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -35,9 +39,9 @@ The Client Access server on which to enable the MRS Proxy endpoint depends on th
 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Web Services permissions" section in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-  - If you've deployed more than one Client Access server in your Exchange organization, you should enable the MRS Proxy endpoint on each one. If you add additional Client Access servers, be sure to enable the MRS Proxy endpoint on the new servers. Cross-forest moves and remote move migrations can fail if the MRS Proxy endpoint isn’t enabled on all Client Access servers.
+  - If you've deployed more than one Client Access server in your Exchange organization, you should enable the MRS Proxy endpoint on each one. If you add additional Client Access servers, be sure to enable the MRS Proxy endpoint on the new servers. Cross-forest moves and remote move migrations can fail if the MRS Proxy endpoint isn't enabled on all Client Access servers.
 
-  - If you don’t perform cross-forest moves or remote move migrations, keep MRS Proxy endpoints disabled to reduce the attack surface of your organization.
+  - If you don't perform cross-forest moves or remote move migrations, keep MRS Proxy endpoints disabled to reduce the attack surface of your organization.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -83,7 +87,7 @@ Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabl
 
 ## How do you know this worked?
 
-To verify that you’ve successfully enabled the MRS Proxy endpoint, do one of the following:
+To verify that you've successfully enabled the MRS Proxy endpoint, do one of the following:
 
 1.  In the EAC, navigate to **Recipients** \> **Servers** \> **Virtual Directories**.
 

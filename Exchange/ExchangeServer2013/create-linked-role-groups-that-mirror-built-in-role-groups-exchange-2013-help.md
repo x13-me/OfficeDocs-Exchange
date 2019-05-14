@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create linked role groups that mirror built-in role groups: Exchange 2013 Help'
 TOCTitle: Create linked role groups that mirror built-in role groups
 ms:assetid: 89dfcbb3-0568-4bbf-a885-746b91ba307e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876918(v=EXCHG.150)
 ms:contentKeyID: 49289333
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

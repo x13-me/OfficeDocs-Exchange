@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Disable or enable Exchange Search: Exchange 2013 Help'
 TOCTitle: Disable or enable Exchange Search
 ms:assetid: 195b25be-53fb-4215-90a5-04340d640bcc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996416(v=EXCHG.150)
 ms:contentKeyID: 51407260
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,7 +19,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-By default, Exchange Search is enabled for all new mailbox databases and doesn’t require additional configuration. However, if you want to stop Exchange Search from indexing mailbox content, you can disable it for individual mailbox databases or for an entire Mailbox server.
+By default, Exchange Search is enabled for all new mailbox databases and doesn't require additional configuration. However, if you want to stop Exchange Search from indexing mailbox content, you can disable it for individual mailbox databases or for an entire Mailbox server.
 
 
 > [!WARNING]
@@ -41,11 +45,11 @@ Having problems? Ask for help in the Exchange forums. Visit the forums at [Excha
 
 ## Disable or enable Exchange Search for a mailbox database
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the “Exchange Search” entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Search" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 
 > [!NOTE]
-> You can’t use the EAC to disable or enable Exchange Search for a mailbox database.
+> You can't use the EAC to disable or enable Exchange Search for a mailbox database.
 
 
 
@@ -67,7 +71,7 @@ For detailed syntax and parameter information, see [Set-MailboxDatabase](https:/
 
 To disable Exchange Search for a Mailbox server, you have to disable and stop the Microsoft Exchange Search service. Similarly, to enable Exchange Search for a Mailbox server, you have to enable and start the Microsoft Exchange Search service. You can use either the Services console or the Shell to do this.
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the “Manage Exchange Search service on a Mailbox server” entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Manage Exchange Search service on a Mailbox server" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 **Use the Services console**
 

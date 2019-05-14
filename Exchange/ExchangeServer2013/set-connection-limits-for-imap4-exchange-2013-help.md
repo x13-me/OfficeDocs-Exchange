@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Set connection limits for IMAP4: Exchange 2013 Help'
 TOCTitle: Set connection limits for IMAP4
 ms:assetid: 8e3aa366-e77c-4c70-b78d-ddbb178cb521
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb123712(v=EXCHG.150)
 ms:contentKeyID: 50395402
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -93,7 +97,7 @@ For more information about syntax and parameters, see [Set-ImapSettings](https:/
 
 ## How do you know this worked?
 
-To verify that you’ve successfully set connection limits, do one of the following:
+To verify that you've successfully set connection limits, do one of the following:
 
 1.  In the EAC, navigate to **Servers** **\>** **Servers**.
 

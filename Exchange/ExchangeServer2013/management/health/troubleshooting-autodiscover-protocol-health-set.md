@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting Autodiscover.Protocol Health Set
 TOCTitle: Troubleshooting Autodiscover.Protocol Health Set
 ms:assetid: 06afdcc8-7920-4e88-b85a-98e67a19d221
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.autodiscover.protocol(v=EXCHG.150)
 ms:contentKeyID: 49720718
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -109,7 +113,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
     
     2.  Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be `Unhealthy`.
     
-    3.  Rerun the associated probe for the monitor that’s in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
+    3.  Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
         
             Invoke-MonitoringProbe <health set name>\<probe name> -Server <server name> | Format-List
         
@@ -147,7 +151,7 @@ To troubleshoot this issue, follow these steps:
 
 2.  Create a test user account, and then log on to the Mailbox server by using the test user account in the address. For example, log on by using: https://*\<servername\>*:444/autodiscover/autodiscover.xml.
     
-    If the test user account name passes, an issue may affect the mailbox server that’s hosting the monitored mailbox.
+    If the test user account name passes, an issue may affect the mailbox server that's hosting the monitored mailbox.
 
 3.  Try to repeat the previous steps by using a test account on the Mailbox server.
 

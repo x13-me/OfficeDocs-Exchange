@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: fbd93b77-637b-4237-a824-8e95166cde11
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Shared mailboxes
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -45,7 +46,7 @@ You can use the following permissions with a shared mailbox.
 - **Send on Behalf**: The Send on Behalf permission lets a user send email on behalf of the shared mailbox. For example, if John logs into the shared mailbox Reception Building 32 and sends an email, it look like the mail was sent by "John on behalf of Reception Building 32". You can't use the EAC to grant Send on Behalf permissions, you must use **Set-Mailbox** cmdlet with the _GrantSendonBehalf_ parameter.
 
 > [!NOTE]
-> A shared mailbox is not designed for direct logon. The user account for the shared mailbox itself should stay in a Disabled (or “disconnected”) state.
+> A shared mailbox is not designed for direct logon. The user account for the shared mailbox itself should stay in a Disabled (or "disconnected") state.
 
 ## Converting shared mailboxes
 

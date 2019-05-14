@@ -8,6 +8,8 @@ ms.prod: exchange-server-it-pro
 ms.assetid: 31ad25d6-2942-4fd9-aecb-cdf9654163d2
 ms.collection: exchange-server
 ms.date: 7/5/2018
+ms.reviewer: 
+manager: dansimp
 ms.audience: ITPro
 title: Disable or delete a mailbox in Exchange Server
 
@@ -42,17 +44,17 @@ When you disable a mailbox, all Exchange attributes are removed from the associa
 
 1. In the EAC, go to **Recipients**, and click the tab for the type of mailbox that you want to disable:
 
-  - **Mailboxes** for user mailboxes and linked mailboxes.
+   - **Mailboxes** for user mailboxes and linked mailboxes.
 
-  - **Shared** for shared mailboxes.
+   - **Shared** for shared mailboxes.
 
 2. Find and select the mailbox that you want to disable. For example:
 
-  - Scroll through the list. You can also click the column headers to sort the mailboxes.
+   - Scroll through the list. You can also click the column headers to sort the mailboxes.
 
-  - Click **Search** and enter the text to filter the list of mailboxes.
+   - Click **Search** and enter the text to filter the list of mailboxes.
 
-  - Select multiple mailboxes by selecting a mailbox, holding the Shift key, and selecting a mailbox farther down in the list, or by holding down the CTRL key as you select each mailbox.
+   - Select multiple mailboxes by selecting a mailbox, holding the Shift key, and selecting a mailbox farther down in the list, or by holding down the CTRL key as you select each mailbox.
 
 3. After you've selected the mailbox or mailboxes that you want to disable, click **More** ![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png), select **Disable**, and then click **Yes** in the warning message that appears.
 
@@ -92,13 +94,14 @@ To verify that you've successfully disabled a mailbox, do any of these steps:
 
 - In Active Directory Users and Computers, right-click the user account whose mailbox you disabled, and then click **Properties**. On the **General** tab, verify that the **E-mail** field is blank.
 
-- In the Exchange Management Shell replace _\<DisplayName\>_ with the user's display name, and run this command to verify the **DisconnectReason** property value is `Disabled` (which indicates the mailbox has been marked for removal):
+- In the Exchange Management Shell, replace _\<DisplayName\>_ with the user's display name, and run the following commands to verify the **DisconnectReason** property value is `Disabled` (which indicates the mailbox has been marked for removal):
 
   ```
-  Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisconnectReason,DisconnectDate
+  $dbs = Get-MailboxDatabase
+  $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisconnectReason,DisconnectDate
   ```
 
-    **Notes**:
+  **Notes**:
 
   - The **DisconnectReason** property doesn't distinguish between disabled and deleted mailboxes (the value for both is `Disabled`). The presence of the associated user account indicates whether the mailbox was disabled.
 
@@ -112,10 +115,10 @@ To verify that you've successfully disabled a mailbox, do any of these steps:
 
     Then, run the previous command, which should now return results.
 
-- In the Exchange Management Shell, replace _\<UserIdentity\>_ with the name or user principal name of the user (for example, user@contoso.com), and run this command to verify that the **RecipientType** property value is `User`,not `UserMailbox`.
+- In the Exchange Management Shell, replace _\<UserIdentity\>_ with the name or user principal name of the user (for example, user@contoso.com), and run this command to verify that the **RecipientType** property value is `User`, not `UserMailbox`.
 
   ```
-  Get-User <UserIdentity>
+  Get-User -Identity <UserIdentity>
   ```
 
 ## Delete mailboxes
@@ -128,21 +131,21 @@ When you delete a mailbox, the mailbox is disconnected from the associated user 
 
 1. In the EAC, go to the location for the type of mailbox that you want to delete:
 
-  - **Recipients** \> **Mailboxes** for user mailboxes and linked mailboxes.
+   - **Recipients** \> **Mailboxes** for user mailboxes and linked mailboxes.
 
-  - **Recipients** \> **Resources** for room and equipment mailboxes.
+   - **Recipients** \> **Resources** for room and equipment mailboxes.
 
-  - **Recipients** \> **Shared** for shared mailboxes.
+   - **Recipients** \> **Shared** for shared mailboxes.
 
-  - **Public folders** \> **Public folder mailboxes** for public folder mailboxes.
+   - **Public folders** \> **Public folder mailboxes** for public folder mailboxes.
 
 2. Find and select the mailbox that you want to disable. For example:
 
-  - Scroll through the list. You can also click the column headers to sort the mailboxes.
+   - Scroll through the list. You can also click the column headers to sort the mailboxes.
 
-  - Click **Search** and enter the text to filter the list of mailboxes.
+   - Click **Search** and enter the text to filter the list of mailboxes.
 
-  - Select multiple mailboxes by selecting a mailbox, holding the Shift key, and selecting a mailbox farther down in the list, or by holding down the CTRL key as you select each mailbox.
+   - Select multiple mailboxes by selecting a mailbox, holding the Shift key, and selecting a mailbox farther down in the list, or by holding down the CTRL key as you select each mailbox.
 
 3. After you've selected the mailbox or mailboxes that you want to delete, click **Delete** ![Delete icon](../../media/ITPro_EAC_DeleteIcon.png), and then click **Yes** in the warning message that appears.
 
@@ -174,7 +177,7 @@ Remove-Mailbox corpprint
 
 For detailed syntax and parameter information, see [Remove-Mailbox](http://technet.microsoft.com/library/0477708c-768c-4040-bad2-8f980606fcf4.aspx).
 
- **Note**: If you use the **Remove-Mailbox** cmdlet with the _Purge_ switch, the mailbox is immediately purged and isn't recoverable. For more information, see [Permanently delete a mailbox](permanently-delete-mailboxes.md).
+**Note**: If you use the **Remove-Mailbox** cmdlet with the _Purge_ switch, the mailbox is immediately purged and isn't recoverable. For more information, see [Permanently delete a mailbox](permanently-delete-mailboxes.md).
 
 ### How do you know this worked?
 
@@ -184,21 +187,22 @@ To verify that you've successfully deleted a mailbox, do any of these steps:
 
 - In Active Directory Users and Computers, verify that the associated account is no longer listed. Note that mailbox types other than user and linked mailboxes also have associated user accounts that are disabled (for example, room, equipment, arbitration, shared, and public folder mailboxes).
 
-- In the Exchange Management Shell replace _\<DisplayName\>_ with the user's display name, and run this command to verify the **DisconnectReason** property value is `Disabled` (which indicates the mailbox has been marked for removal):
+- In the Exchange Management Shell replace _\<DisplayName\>_ with the user's display name, and run the following commands to verify the **DisconnectReason** property value is `Disabled` (which indicates the mailbox has been marked for removal):
 
   ```
-  Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisconnectReason,DisconnectDate
+  $dbs = Get-MailboxDatabase
+  $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisconnectReason,DisconnectDate
   ```
 
-    **Notes**:
+  **Notes**:
 
   - The **DisconnectReason** property doesn't distinguish between disabled and deleted mailboxes (the value for both is `Disabled`). The absence of the associated user account indicates whether the mailbox was deleted.
 
-  - If the command returns no results, replace _\<DatabaseName\>_ with the name of the mailbox database where the disconnected mailbox resides, and run this command to synchronize the mailbox state for all disconnected mailboxes on the database:
+  - If the command returns no results, replace _\<DatabaseName\>_ with the name of the mailbox database where the disconnected mailbox resides, and run the following command to synchronize the mailbox state for all disconnected mailboxes on the database:
 
-  ```
-  Get-MailboxStatistics -Database "<DatabaseName>" | foreach {Update-StoreMailboxState -Database $_.Database -Identity $_.MailboxGuid -Confirm:$false}
-  ```
+    ```
+    Get-MailboxStatistics -Database "<DatabaseName>" | foreach {Update-StoreMailboxState -Database $_.Database -Identity $_.MailboxGuid -Confirm:$false}
+    ```
 
     Then, run the previous command, which should now return results.
 
@@ -219,6 +223,3 @@ When you delete the Active Directory user account that's associated with a mailb
 - Retain the mailbox until all data has been expunged, or until preserving the data is no longer required.
 
 For more information, see [In-Place Hold and Litigation Hold in Exchange Server](../../policy-and-compliance/holds/holds.md).
-
-
-

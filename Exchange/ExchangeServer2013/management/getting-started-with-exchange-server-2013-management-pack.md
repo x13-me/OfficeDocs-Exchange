@@ -1,10 +1,14 @@
-﻿---
+---
 title: Getting started with Exchange Server 2013 Management Pack
 TOCTitle: Getting started with Exchange Server 2013 Management Pack
 ms:assetid: 72d1609f-ab32-44d8-aa40-b1de587442d2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn195908(v=EXCHG.150)
 ms:contentKeyID: 53181782
 ms.date: 05/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -32,7 +36,7 @@ The Exchange Server 2013 Management Pack adds a container in the **Monitoring** 
 
 <div>
 
-## Active Alerts – Is there anything wrong with Exchange?
+## Active Alerts - Is there anything wrong with Exchange?
 
 The **Active Alerts** view shows you all the alerts that are raised and are currently active in your Exchange organization. You can click on any alert and see more information about the alert in the details pane. This view is essentially providing you with a Yes/No answer for "is there anything wrong in my Exchange deployment?" Each alert corresponds to one or more issues for a particular health set. Also, depending on the particular issue, there may be more than one alert raised.
 
@@ -40,7 +44,7 @@ The **Active Alerts** view shows you all the alerts that are raised and are curr
 
 <div>
 
-## Organization Health – What is the impact?
+## Organization Health - What is the impact?
 
 If you see an alert for in the Active Alerts view, the first thing you want to do is check the **Organization Health** view. This is the primary source of information for the overall health of your organization. It gives you specifically what is impacted in your organization like Active Directory Sites and Database Availability Groups.
 
@@ -50,7 +54,7 @@ If you see an alert for in the Active Alerts view, the first thing you want to d
 
 <div>
 
-## Server Health – Which server do I need to troubleshoot?
+## Server Health - Which server do I need to troubleshoot?
 
 The **Server Health** view provides details about individual servers in your organization. Here you can see the individual health of all your servers. Using this view, you can narrow down any issues to a particular server.
 

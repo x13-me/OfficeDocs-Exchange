@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: d0a916a1-e3ed-49ae-b116-a559be0dcce6
 ms.date:
+ms.reviewer: 
 title: Address book policies in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

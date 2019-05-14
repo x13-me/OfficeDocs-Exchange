@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Deploying voice mail and UM: Exchange 2013 Help'
 TOCTitle: Deploying voice mail and UM
 ms:assetid: 3df61b62-a1e4-41fb-969c-319189ae4e42
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673519(v=EXCHG.150)
 ms:contentKeyID: 49315394
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,9 +19,9 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-Exchange Unified Messaging (UM) enables you to provide voice mail services to users in your organization. When you deploy Unified Messaging, you must either integrate your Exchange Server deployment with the existing telephony system for your organization or integrate it with Microsoft Lync Server. A successful deployment requires you to make a careful analysis of your existing telephony infrastructure and perform the correct planning steps to deploy and manage voice mail in Unified Messaging. If you’re integrating Exchange with Lync Server, you must also familiarize yourself with that product.
+Exchange Unified Messaging (UM) enables you to provide voice mail services to users in your organization. When you deploy Unified Messaging, you must either integrate your Exchange Server deployment with the existing telephony system for your organization or integrate it with Microsoft Lync Server. A successful deployment requires you to make a careful analysis of your existing telephony infrastructure and perform the correct planning steps to deploy and manage voice mail in Unified Messaging. If you're integrating Exchange with Lync Server, you must also familiarize yourself with that product.
 
-When you’re deploying Unified Messaging, you have multiple options depending on the telephony hardware found in your organization. If you’re connecting UM to your telephony network, you may have one of the following telephony configurations in your organization:
+When you're deploying Unified Messaging, you have multiple options depending on the telephony hardware found in your organization. If you're connecting UM to your telephony network, you may have one of the following telephony configurations in your organization:
 
   - One or multiple VoIP gateways with one or multiple PBXs
 
@@ -29,7 +33,7 @@ When you’re deploying Unified Messaging, you have multiple options depending o
 
 
 > [!WARNING]
-> When you’re deploying Exchange UM in a hosted or hybrid environment, you must deploy session border controllers (SBCs). SBCs don’t enable UM to connect to a telephony network or provide a dial tone for an organization. However, they do connect your on-premises UM deployment to a datacenter using the IP protocol over a public or private WAN.
+> When you're deploying Exchange UM in a hosted or hybrid environment, you must deploy session border controllers (SBCs). SBCs don't enable UM to connect to a telephony network or provide a dial tone for an organization. However, they do connect your on-premises UM deployment to a datacenter using the IP protocol over a public or private WAN.
 
 
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Perform a dial tone recovery: Exchange 2013 Help'
 TOCTitle: Perform a dial tone recovery
 ms:assetid: 158817fa-4b17-4fa9-8341-a86609e6a388
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd979810(v=EXCHG.150)
 ms:contentKeyID: 50873788
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Set connection time-out limits for POP3: Exchange 2013 Help'
 TOCTitle: Set connection time-out limits for POP3
 ms:assetid: 40003115-be4e-4cf1-97b4-f5ca05b314dc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997604(v=EXCHG.150)
 ms:contentKeyID: 50395396
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -49,7 +53,7 @@ For additional information related to POP3, see [POP3 and IMAP4 in Exchange Serv
     
       - **Authenticated time-out (seconds)**    Specifies the time to wait before closing an idle authenticated connection. The default value is 1,800. The possible values are from 30 through 86,400.
     
-      - **Unauthenticated time-out (seconds)**   Specifies the time to wait before closing an idle connection that isn’t authenticated. The default value is 60. The possible values are from 30 through 3,600.
+      - **Unauthenticated time-out (seconds)**   Specifies the time to wait before closing an idle connection that isn't authenticated. The default value is 60. The possible values are from 30 through 3,600.
 
 6.  Click **Apply**, and then click **OK** to save your changes.
 
@@ -75,7 +79,7 @@ For more information about syntax and parameters, see [Set-PopSettings](https://
 
 ## How do you know this worked?
 
-To verify that you’ve successfully set connection limits, do one of the following:
+To verify that you've successfully set connection limits, do one of the following:
 
 1.  In the EAC, navigate to **Servers** **\>** **Servers**.
 

@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: After a voice mail message arrives, users can choose either to listen to the voice mail message through their computer speakers or headphones or to use the Play on Phone feature. The Play on Phone feature is included with Microsoft Outlook and Outlook Web App, and settings for Play on Phone are available in the Play on phone section under Voice mail options. This topic discusses how a Unified Messaging (UM)-enabled user can use the Play on Phone feature.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 511e4950-340a-48cc-a020-35d11e76b993
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Play on Phone
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
@@ -20,7 +21,7 @@ After a voice mail message arrives, users can choose either to listen to the voi
 
 ## What is Play on Phone?
 
-The Play on Phone feature lets UM-enabled users play voice messages over a telephone. If a UM-enabled user sits in an office cubicle, is using a public computer or a computer that's not enabled for multimedia, or is listening to a voice message that's confidential, the user might not want to—or be able to—listen to a voice message through their computer speakers. Alternatively, they can play back the voice mail message using any telephone, including home, office, or mobile phones. To review settings for Play on Phone, in Outlook, go to **File** \> **Info** \> **Manage voice mail**. Clicking the **Manage voice mail** button will automatically sign you in to Outlook Web App. or you can sign in to Outlook Web App using a web browser. In Outlook Web App, go to **Options** \> **Phone** \> **Voice Mail** \> **Play on Phone** section on the **Voice Mail** page.
+The Play on Phone feature lets UM-enabled users play voice messages over a telephone. If a UM-enabled user sits in an office cubicle, is using a public computer or a computer that's not enabled for multimedia, or is listening to a voice message that's confidential, the user might not want to (or be able to) listen to a voice message through their computer speakers. Alternatively, they can play back the voice mail message using any telephone, including home, office, or mobile phones. To review settings for Play on Phone, in Outlook, go to **File** \> **Info** \> **Manage voice mail**. Clicking the **Manage voice mail** button will automatically sign you in to Outlook Web App. or you can sign in to Outlook Web App using a web browser. In Outlook Web App, go to **Options** \> **Phone** \> **Voice Mail** \> **Play on Phone** section on the **Voice Mail** page.
 
 When the user clicks the Play on Phone toolbar option in the voice mail form, the **Play on Phone** dialog box appears. The **Play on Phone** box provides the controls for selecting or inputting the telephone number to use to play a voice message, starting and ending the call, and a status message for monitoring the call. If the user is linked to a SIP URI dial plan, their SIP address will appear in the **Dial** box. If they are linked to an E.164 dial plan, their full E.164 number will appear in the **Dial** box.
 

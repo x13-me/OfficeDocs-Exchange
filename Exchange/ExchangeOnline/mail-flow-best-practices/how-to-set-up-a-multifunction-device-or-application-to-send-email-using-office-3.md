@@ -5,6 +5,7 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 69f58e99-c550-4274-ad18-c805d654b4c4
 ms.date: 
+ms.reviewer: 
 description: 'Learn how to set up printers, scanners, LOB applications to send email using Office 365. '
 title: How to set up a multifunction device or application to send email using Office 365
 ms.collection: 
@@ -17,7 +18,7 @@ search.appverid:
 ms.audience: Admin
 ms.custom: MiniMaven
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -92,7 +93,7 @@ The following diagram gives you a conceptual overview of what you're environment
 
 - **Transport Layer Security (TLS)**: Your device must be able to use TLS version 1.2 and above.
 
-- **Port**: Port 587 (recommended) or port 25 is required and must be unblocked on your network. Some network firewalls or ISPs block ports—especially port 25.
+- **Port**: Port 587 (recommended) or port 25 is required and must be unblocked on your network. Some network firewalls or ISPs block ports, especially port 25.
 
 - **DNS**: You must use the DNS name smtp.office365.com. Do not use an IP address for the Office 365 server, as IP Addresses are not supported.
 

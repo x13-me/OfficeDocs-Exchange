@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Organization-wide disclaimers, signatures, footers, or headers'
 TOCTitle: Organization-wide disclaimers, signatures, footers, or headers
 ms:assetid: e45e33c9-e53b-427c-ada5-70901bc399b8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn600437(v=EXCHG.150)
 ms:contentKeyID: 61071241
 ms.date: 01/18/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -35,7 +39,7 @@ Scoping your disclaimer
 
 Formatting your disclaimer
 
-Fallback options if the disclaimer can’t be added
+Fallback options if the disclaimer can't be added
 
 For more information
 
@@ -59,11 +63,11 @@ Here are a few ideas for how to use disclaimers.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Legal – outgoing messages</p></td>
+<td><p>Legal - outgoing messages</p></td>
 <td><p>This email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you have received this email in error, please notify the system manager.</p></td>
 </tr>
 <tr class="even">
-<td><p>Legal – incoming messages</p></td>
+<td><p>Legal - incoming messages</p></td>
 <td><p>Employees are expressly required not to make defamatory statements and not to infringe or authorize any infringement of copyright or any other legal right by email communications. Employees who receive such an email must notify their supervisor immediately.</p></td>
 </tr>
 <tr class="odd">
@@ -71,7 +75,7 @@ Here are a few ideas for how to use disclaimers.
 <td><p>This message was sent to the Sales discussion group.</p></td>
 </tr>
 <tr class="even">
-<td><p>Signature – pulls in data for each employee</p></td>
+<td><p>Signature - pulls in data for each employee</p></td>
 <td><p>Kathleen Mayer<br />
 Sales Department<br />
 Contoso<br />
@@ -111,7 +115,7 @@ Here are some examples of the conditions and exceptions you can use.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Outside your organization, if the original message doesn’t include text from your disclaimer, such as “CONTOSO LEGAL NOTICE”</p></td>
+<td><p>Outside your organization, if the original message doesn't include text from your disclaimer, such as "CONTOSO LEGAL NOTICE"</p></td>
 <td><p>Condition: <strong>The recipient is located</strong> &gt; <strong>Outside the organization</strong></p>
 <p>Exception: <strong>The subject or body</strong> &gt; <strong>Subject or body matches these text patterns</strong> &gt; <strong>CONTOSO LEGAL NOTICE</strong></p></td>
 <td>
@@ -158,7 +162,7 @@ Here are some examples of the conditions and exceptions you can use.
 <td><p>Prepend an advertisement to outgoing messages for one month</p></td>
 <td><p>Condition 1: <strong>The recipient is located</strong> &gt; <strong>Outside the organization</strong></p>
 <p>Specify the dates at the bottom of the <strong>New rule</strong> dialog.</p></td>
-<td><p>-ApplyHtmlDisclaimerLocation 'Prepend' -SentToScope 'NotInOrganization' –ActivationDate ‘03/1/2014’ –ExpiryDate ‘03/31/2014’</p></td>
+<td><p>-ApplyHtmlDisclaimerLocation 'Prepend' -SentToScope 'NotInOrganization' -ActivationDate '03/1/2014' -ExpiryDate '03/31/2014'</p></td>
 </tr>
 </tbody>
 </table>
@@ -174,7 +178,7 @@ For a complete list of transport rule conditions you can use to target the discl
 
 ## Formatting your disclaimer
 
-You can format your disclaimer as needed. Here’s what can be included in your disclaimer text.
+You can format your disclaimer as needed. Here's what can be included in your disclaimer text.
 
 
 <table>
@@ -206,14 +210,14 @@ You can format your disclaimer as needed. Here’s what can be included in your 
 <tr class="even">
 <td><p>Add information for personalized signatures</p></td>
 <td><p>If you want everyone to have signatures formatted the same way with the same information, you can add unique information for each employee, such as <code>DisplayName</code>, <code>FirstName</code>, <code>LastName</code>, <code>PhoneNumber</code>, <code>Email</code>, <code>FaxNumber</code>, and <code>Department</code>. This information must be enclosed in two percent signs (%%) on each side of the information. For example, to use <code>DisplayName</code>, you must use <strong>%%DisplayName%%</strong> in your disclaimer.</p>
-<p>When a disclaimer rule is triggered, the corresponding values for that user are inserted. The data comes from the sender's Active Directory user account (for on-premises Exchange Server), or from the sender’s Office 365 account for Exchange Online.</p>
+<p>When a disclaimer rule is triggered, the corresponding values for that user are inserted. The data comes from the sender's Active Directory user account (for on-premises Exchange Server), or from the sender's Office 365 account for Exchange Online.</p>
 <p>For a complete list of attributes that can be used in disclaimers and personalized signatures, see the description for the <code>ADAttribute</code> property in <a href="mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md">Transport rule conditions (predicates)</a> (Exchange Server), <a href="https://technet.microsoft.com/en-us/library/jj919235(v=exchg.150)">Mail flow rule conditions (predicates)</a> (Exchange Online), or <a href="https://technet.microsoft.com/en-us/library/jj919234(v=exchg.150)">Transport rule conditions (predicates)</a> (Exchange Online Protection).</p></td>
 </tr>
 </tbody>
 </table>
 
 
-For example, here’s an example of an HTML disclaimer that includes a signature, an `IMG` tag, and embedded CSS.
+For example, here's an example of an HTML disclaimer that includes a signature, an `IMG` tag, and embedded CSS.
 
 ```HTML
     <div style="font-size:9pt;  font-family: 'Calibri',sans-serif;">
@@ -231,7 +235,7 @@ For example, here’s an example of an HTML disclaimer that includes a signature
     </div>
 ```
 
-## Fallback options if the disclaimer can’t be added
+## Fallback options if the disclaimer can't be added
 
 Some messages, such as encrypted messages, prevent Exchange from modifying the content of the original message. You can control how your organization handles these messages. You specify whether to wrap a message that can't be modified in a message envelope that contains the disclaimer, reject the message if a disclaimer can't be added, or ignore the disclaimer action and deliver the message without a disclaimer.
 

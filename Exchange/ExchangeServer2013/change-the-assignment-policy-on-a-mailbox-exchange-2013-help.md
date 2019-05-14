@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Change the assignment policy on a mailbox: Exchange 2013 Help'
 TOCTitle: Change the assignment policy on a mailbox
 ms:assetid: 011690a5-233a-4c03-8842-92276f899a89
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638076(v=EXCHG.150)
 ms:contentKeyID: 49289145
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -76,19 +80,19 @@ This procedure makes use of pipelining, the **Where** cmdlet, and the *WhatIf* p
 If you want to change the assignment policy for a group of mailboxes that are assigned a specific policy, use the following syntax.
 
 ```powershell
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<assignment policy to find>" } | Set-Mailbox -RoleAssignmentPolicy <assignment policy to set>
+    Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "<assignment policy to find>"} | Set-Mailbox -RoleAssignmentPolicy <assignment policy to set>
 ```
 
 This example finds all the mailboxes assigned to the Redmond Users - No Voicemail assignment policy and changes the assignment policy to Redmond Users - Voicemail Enabled.
 
 ```powershell
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail" } | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled"
+    Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail"} | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled"
 ```
 
 This example includes the *WhatIf* parameter so that you can see all the mailboxes that would be changed without committing any changes.
 
 ```powershell
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail" } | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled" -WhatIf
+    Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail"} | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled" -WhatIf
 ```
 
 For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\)) or [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)).

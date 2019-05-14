@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable or disable email for a mail user: Exchange 2013 Help'
 TOCTitle: Enable or disable email for a mail user
 ms:assetid: 1e2571d4-ff84-4fda-bb1d-825e96e1bd26
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996598(v=EXCHG.150)
 ms:contentKeyID: 50382995
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -107,12 +111,12 @@ Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys
 
 ## Use the Shell and a CSV file to mail-enable multiple users
 
-When you’re mail-enabling users in bulk, you first export the list of users that aren't mail-enabled to a CSV (comma-separated values) file, and then add the external email addresses to the CSV file by using a text editor such as Notepad, or a spreadsheet application such as Microsoft Excel. Then you use the updated CSV file in the Shell command to mail-enable the users listed in the CSV file.
+When you're mail-enabling users in bulk, you first export the list of users that aren't mail-enabled to a CSV (comma-separated values) file, and then add the external email addresses to the CSV file by using a text editor such as Notepad, or a spreadsheet application such as Microsoft Excel. Then you use the updated CSV file in the Shell command to mail-enable the users listed in the CSV file.
 
 1.  Run the following command to export a list of existing users that aren't mail-enabled or don't have a mailbox in your organization to a file on the administrator's desktop named UsersToMailEnable.csv.
     
     ```powershell
-        Get-User | Where { $_.RecipientType -eq "User" } | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
+        Get-User | Where {$_.RecipientType -eq "User"} | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
     ```
 
     The resulting file will be similar to the following file.
@@ -134,7 +138,7 @@ When you’re mail-enabling users in bulk, you first export the list of users th
 
 2.  Make the following changes to the CSV file:
     
-      - Delete any users that you don’t want to mail-enable from the CSV file. For example, you would delete the first three entries in the previous example because they’re default system accounts.
+      - Delete any users that you don't want to mail-enable from the CSV file. For example, you would delete the first three entries in the previous example because they're default system accounts.
     
       - Delete the **RecipientType** column and all the instances of `User`.
     
@@ -163,7 +167,7 @@ When you’re mail-enabling users in bulk, you first export the list of users th
 
 ## How do you know this worked?
 
-To verify that you’ve successfully mail-enabled Active Directory users, do one of the following:
+To verify that you've successfully mail-enabled Active Directory users, do one of the following:
 
   - In the EAC, navigate to **Recipients** \> **Contacts**. New mail users are displayed in the contact list. Under **Contact Type**, the type is **Mail user**.
     

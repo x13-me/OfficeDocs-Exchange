@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Messaging policy and compliance permissions: Exchange 2013 Help'
 TOCTitle: Messaging policy and compliance permissions
 ms:assetid: ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638205(v=EXCHG.150)
 ms:contentKeyID: 48385692
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -123,7 +127,7 @@ Users who are assigned the View-Only Management role group can view the configur
 <p><a href="organization-management-exchange-2013-help.md">Organization Management</a></p>
 
 > [!IMPORTANT]
-> To create a query-based In-Place Hold, a user requires the Mailbox Search and Litigation Hold roles to be assigned directly or via membership in a role group that has both roles assigned. To create an In-Place Hold without using a query, which places all mailbox items on hold, you must have the Litigation Hold role assigned. The Discovery Management role group is assigned both roles.<BR>The Organization Management role group is assigned the Litigation Hold role. Members of the Organization Management role group can place an In-Place Hold on all items in a mailbox, but can’t create a query-based In-Place Hold.
+> To create a query-based In-Place Hold, a user requires the Mailbox Search and Litigation Hold roles to be assigned directly or via membership in a role group that has both roles assigned. To create an In-Place Hold without using a query, which places all mailbox items on hold, you must have the Litigation Hold role assigned. The Discovery Management role group is assigned both roles.<BR>The Organization Management role group is assigned the Litigation Hold role. Members of the Organization Management role group can place an In-Place Hold on all items in a mailbox, but can't create a query-based In-Place Hold.
 
 
 </td>
@@ -134,7 +138,7 @@ Users who are assigned the View-Only Management role group can view the configur
 <p><a href="recipient-management-exchange-2013-help.md">Recipient Management</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>In-Place Archive – Test connectivity</p></td>
+<td><p>In-Place Archive - Test connectivity</p></td>
 <td><p><a href="organization-management-exchange-2013-help.md">Organization Management</a></p>
 <p><a href="server-management-exchange-2013-help.md">Server Management</a></p></td>
 </tr>
@@ -144,7 +148,7 @@ Users who are assigned the View-Only Management role group can view the configur
 <p><a href="organization-management-exchange-2013-help.md">Organization Management</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>Retention policies – Apply</p></td>
+<td><p>Retention policies - Apply</p></td>
 <td><p><a href="organization-management-exchange-2013-help.md">Organization Management</a></p>
 <p><a href="recipient-management-exchange-2013-help.md">Recipient Management</a></p>
 <p><a href="records-management-exchange-2013-help.md">Records Management</a></p></td>

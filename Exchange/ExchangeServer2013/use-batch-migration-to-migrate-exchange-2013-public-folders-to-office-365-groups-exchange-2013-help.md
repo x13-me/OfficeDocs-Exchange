@@ -1,7 +1,11 @@
-﻿---
+---
 title: 'Use batch migration to migrate Exchange 2013 public folders to Office 365 Groups'
 TOCTitle: Use batch migration to migrate Exchange 2013 public folders to Office 365 Groups
 ms:assetid: 1d800576-957d-4916-ae2a-55c08ca75be1
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt843873(v=EXCHG.150)
 ms:contentKeyID: 74468675
 mtps_version: v=EXCHG.150
@@ -30,7 +34,7 @@ Ensure that all of the following conditions are met before you begin preparing y
 
   - MRS Proxy needs to be enabled on at least one Exchange server, and that server must also be hosting public folder mailboxes. See [Enable the MRS Proxy endpoint for remote moves](enable-the-mrs-proxy-endpoint-for-remote-moves-exchange-2013-help.md) for details.
 
-  - You can’t use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2013 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.150\).aspx).
+  - You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2013 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.150\).aspx).
 
   - Only public folders of type calendar and mail can be migrated to Office 365 Groups at this time; migration of other types of public folders is not supported. Also, the target groups in Office 365 are expected to be created prior to the migration.
 
@@ -299,7 +303,7 @@ This script will read the permissions of the public folders being migrated and t
     
     In this case, User1 will be added as an owner to the group in Office 365.
 
-  - When the default permission of a public folder being migrated is 'Author' or above, the script will suggest setting the corresponding group's privacy setting as ‘Public’.
+  - When the default permission of a public folder being migrated is 'Author' or above, the script will suggest setting the corresponding group's privacy setting as 'Public'.
 
 This script can be run even after the lock-down of public folders, with parameter the `ArePublicFoldersLocked` set to` $true`. In this scenario, the script will read permissions from the back up file created during lock-down.
 
@@ -415,7 +419,7 @@ The permission entries will be modified as follows:
 
 2.  Access rights for users without read permissions will be left untouched, and they will continue to be blocked from read rights.
 
-3.  For users with custom roles, all the access rights that are not in **ListOfAccessRightsAllowed** will be removed. In the event that the users don't have any access rights from the allowed list after filtering, these users' access right will be set to ‘None’.
+3.  For users with custom roles, all the access rights that are not in **ListOfAccessRightsAllowed** will be removed. In the event that the users don't have any access rights from the allowed list after filtering, these users' access right will be set to 'None'.
 
 There might be an interruption in sending emails to mail-enabled public folders during the time between when the folders are mail-disabled and their SMTP addresses are added to Office 365 Groups.
 

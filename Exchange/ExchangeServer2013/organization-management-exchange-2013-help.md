@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Organization Management: Exchange 2013 Help'
 TOCTitle: Organization Management
 ms:assetid: 0bfd21c1-86ac-4369-86b7-aeba386741c8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335087(v=EXCHG.150)
 ms:contentKeyID: 49289160
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -59,7 +63,7 @@ For more information about how to customize this role group, see the following t
 
   - [Manage role group members](manage-role-group-members-exchange-2013-help.md)
 
-If you want to create a role group and assign some of the roles that are assigned to this role group to the new role group, see the “Create a role group” section in [Manage role groups](manage-role-groups-exchange-2013-help.md).
+If you want to create a role group and assign some of the roles that are assigned to this role group to the new role group, see the "Create a role group" section in [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
 The following are some ways you might want to customize this role:
 

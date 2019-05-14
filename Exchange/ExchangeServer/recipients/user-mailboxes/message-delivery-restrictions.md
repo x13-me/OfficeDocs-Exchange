@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: c4b8b89f-3dbe-4cb8-8839-9a4e8067e00c
 ms.date: 6/8/2018
+ms.reviewer: 
 title: Configure message delivery restrictions for a mailbox
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

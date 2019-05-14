@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Setup failure occurred while uninstalling a server role'
 TOCTitle: Setup failure occurred while uninstalling a server role_InterruptedUninstallNotContinued
 ms:assetid: 187967b2-cb28-45d7-8858-2a083c1ebe58
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.interrupteduninstallnotcontinued(v=EXCHG.150)
 ms:contentKeyID: 46628824
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

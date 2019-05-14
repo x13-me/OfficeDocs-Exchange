@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure IP addresses and ports for POP3 and IMAP4 access: Exchange 2013 Help'
 TOCTitle: Configure IP addresses and ports for POP3 and IMAP4 access
 ms:assetid: 8292747b-6626-4d7f-ba73-1e17f5d99fa4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb123530(v=EXCHG.150)
 ms:contentKeyID: 50395401
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -29,7 +33,7 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
   - Estimated time to complete each procedure: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 settings" and “IMAP4 settings” entries in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 settings" and "IMAP4 settings" entries in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'User call logs are used to view the following information about specific Unified Messaging (UM) users:'
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 95768fe3-3ae2-43bd-9cbf-18c3b85c4592
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Review the voice mail calls for a user
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

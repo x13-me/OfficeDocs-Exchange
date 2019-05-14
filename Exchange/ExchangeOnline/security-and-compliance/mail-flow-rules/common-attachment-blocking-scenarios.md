@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 5c576439-d55b-4c7f-90ed-a7f72cbb16c2
 ms.date: 
+ms.reviewer: 
 title: Common attachment blocking scenarios for mail flow rules in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

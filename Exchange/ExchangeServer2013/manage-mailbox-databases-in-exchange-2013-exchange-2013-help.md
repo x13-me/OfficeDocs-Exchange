@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage mailbox databases in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Manage mailbox databases in Exchange 2013
 ms:assetid: ead4a96b-1717-435b-bcfc-9901ac4e3b58
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150580(v=EXCHG.150)
 ms:contentKeyID: 47560127
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -221,7 +225,7 @@ For detailed syntax and parameter information, see [Remove-MailboxDatabase](http
     Remove-MailboxDatabase -Identity "MyDatabase"
     ```
 
-2.  When you’re prompted about whether you're sure that you want to perform the action, type **Y**.
+2.  When you're prompted about whether you're sure that you want to perform the action, type **Y**.
 
 3.  When the dialog box appears stating that the database was removed successfully, note the location of the Exchange 2013 database (.edb) file. If you want to remove this file from the hard drive, you must remove it manually.
 

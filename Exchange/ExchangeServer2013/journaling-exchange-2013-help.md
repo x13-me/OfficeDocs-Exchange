@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Journaling: Exchange 2013 Help'
 TOCTitle: Journaling
 ms:assetid: 6a20f207-4485-44ef-b010-ec760eb5165b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998649(v=EXCHG.150)
 ms:contentKeyID: 49354855
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -35,7 +39,7 @@ Troubleshooting
 
 ## Why journaling is important
 
-First, it’s important to understand the difference between journaling and a data archiving strategy:
+First, it's important to understand the difference between journaling and a data archiving strategy:
 
   - *Journaling* is the ability to record all communications, including email communications, in an organization for use in the organization's email retention or archival strategy. To meet an increasing number of regulatory and compliance requirements, many organizations must maintain records of communications that occur when employees perform daily business tasks.
 
@@ -63,7 +67,7 @@ The following list shows some of the more well-known U.S. and international regu
 
   - European Union Data Protection Directive (EUDPD)
 
-  - Japan’s Personal Information Protection Act
+  - Japan's Personal Information Protection Act
 
 Return to top
 
@@ -131,7 +135,7 @@ The journaling mailbox is used to collect journal reports. How you configure the
 
 
 > [!IMPORTANT]
-> You can't designate an Office 365 mailbox as a journaling mailbox. You can deliver journal reports to an on-premises archiving system or a third-party archiving service. If you’re running a hybrid deployment with your mailboxes split between on-premises servers and Office 365, you can designate an on-premises mailbox as the journaling mailbox for your Office 365 and on-premises mailboxes.
+> You can't designate an Office 365 mailbox as a journaling mailbox. You can deliver journal reports to an on-premises archiving system or a third-party archiving service. If you're running a hybrid deployment with your mailboxes split between on-premises servers and Office 365, you can designate an on-premises mailbox as the journaling mailbox for your Office 365 and on-premises mailboxes.
 
 
 
@@ -167,7 +171,7 @@ When you configure an alternate journaling mailbox, you should use the same crit
 
 
 > [!IMPORTANT]
-> The alternate journaling mailbox should be treated as a special dedicated mailbox. Any messages addressed directly to the alternate journaling mailbox aren’t journaled.
+> The alternate journaling mailbox should be treated as a special dedicated mailbox. Any messages addressed directly to the alternate journaling mailbox aren't journaled.
 
 
 
@@ -205,7 +209,7 @@ Return to top
 
 ## Interoperability with Exchange 2007
 
-There isn’t much difference between journaling functionality in Exchange 2013, Exchange 2010, and Exchange 2007. However, in Exchange 2010 and later, Setup creates a separate container in Active Directory to store journal rules. When you set up the first Exchange 2010 or later server in an Exchange 2007 organization, Setup creates a copy of the existing journal rules in Exchange 2007 and stores them in the new container. When Setup completes, the journal rules in both versions of Exchange are consistent.
+There isn't much difference between journaling functionality in Exchange 2013, Exchange 2010, and Exchange 2007. However, in Exchange 2010 and later, Setup creates a separate container in Active Directory to store journal rules. When you set up the first Exchange 2010 or later server in an Exchange 2007 organization, Setup creates a copy of the existing journal rules in Exchange 2007 and stores them in the new container. When Setup completes, the journal rules in both versions of Exchange are consistent.
 
 After Setup, if you change the journal rule configuration on Exchange 2010 (or later), you must make the same change on Exchange 2007 servers to make sure they're consistent. Similarly, changes made to Journal rules on Exchange 2007 must be also be made in Exchange 2010 or later. You can also export journal rules from Exchange 2007 and import them to Exchange 2013.
 
@@ -213,5 +217,5 @@ Return to top
 
 ## Troubleshooting
 
-Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).. If you’re having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don’t work as expected](https://go.microsoft.com/fwlink/p/?linkid=331674).
+Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).. If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://go.microsoft.com/fwlink/p/?linkid=331674).
 

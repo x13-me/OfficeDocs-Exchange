@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Public Folder Management: Exchange 2013 Help'
 TOCTitle: Public Folder Management
 ms:assetid: e167d95e-bb39-43fd-b960-204ab0de27da
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876947(v=EXCHG.150)
 ms:contentKeyID: 49289438
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -49,7 +53,7 @@ For more information about how to customize this role group, see the following t
 
   - [Manage role group members](manage-role-group-members-exchange-2013-help.md)
 
-If you want to create a role group and assign some of the roles that are assigned to this role group to the new role group, see the “Create a role group” section in [Manage role groups](manage-role-groups-exchange-2013-help.md).
+If you want to create a role group and assign some of the roles that are assigned to this role group to the new role group, see the "Create a role group" section in [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
 ## Management roles assigned to this role group
 

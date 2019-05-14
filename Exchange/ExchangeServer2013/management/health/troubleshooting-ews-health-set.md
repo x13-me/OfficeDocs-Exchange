@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting EWS Health Set
 TOCTitle: Troubleshooting EWS Health Set
 ms:assetid: f5aaacdd-7f4a-4d63-8440-1c564e644dfc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.ews(v=EXCHG.150)
 ms:contentKeyID: 49720924
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -96,7 +100,7 @@ This probe can fail for any of the following common reasons:
 
   - A mismatch exists between the authentication mechanism that is used by the probe and the authentication mechanism that is used on the CAS virtual directory.
 
-  - The EWS Application pool in the CAS that’s being monitored is not responding.
+  - The EWS Application pool in the CAS that's being monitored is not responding.
 
   - The CAS is experiencing networking issues when it connects to the Mailbox server.
 
@@ -106,7 +110,7 @@ This probe can fail for any of the following common reasons:
 
   - The EWS Application pool that resides on one or more Mailbox servers is not responding.
 
-  - The user’s database is not mounted, or the Information Store is unavailable for a specific mailbox.
+  - The user's database is not mounted, or the Information Store is unavailable for a specific mailbox.
 
   - The Information Store service on one or more Mailbox servers is experiencing issues.
 
@@ -158,7 +162,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
     
     2.  Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be `Unhealthy`.
     
-    3.  Rerun the associated probe for the monitor that‘s in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
+    3.  Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
         
             Invoke-MonitoringProbe <health set name>\<probe name> -Server <server name> | Format-List
         
@@ -176,7 +180,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 ## EwsCtpMonitor Recovery Actions
 
-1.  Start IIS Manager, and then connect to the server that’s reporting the issue to determine whether the **MSExchangeServicesAppPool** application pool is running on both CA and Mailbox servers.
+1.  Start IIS Manager, and then connect to the server that's reporting the issue to determine whether the **MSExchangeServicesAppPool** application pool is running on both CA and Mailbox servers.
 
 2.  Locate the MailboxDatabase for the failed probes. The, verify that the Mailbox database is active for the Mailbox server, and that the Information Store is healthy.
 

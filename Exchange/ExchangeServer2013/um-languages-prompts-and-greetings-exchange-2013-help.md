@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'UM languages, prompts, and greetings: Exchange 2013 Help'
 TOCTitle: UM languages, prompts, and greetings
 ms:assetid: d48df962-9669-420b-838f-44bfe1012e2f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124728(v=EXCHG.150)
 ms:contentKeyID: 49315533
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -19,7 +23,7 @@ You can install and configure language packs to support multiple languages in Un
 
 UM language packs enable callers and Outlook Voice Access users to interact with the voice mail system in multiple languages. After you install an additional language on a Mailbox server, callers and Outlook Voice Access users can hear email messages and interact with the voice mail system in that language.
 
-There are several key components that rely on UM language packs to enable users and callers to interact effectively with Unified Messaging in multiple languages. Each UM language pack includes a Text-to-Speech (TTS) engine, the pre-recorded prompts and support for Automatic Speech Recognition (ASR), and Voice Mail Preview for a specific language. This topic discusses UM language packs, the UM components that use the UM language packs, and how UM language packs—after they're installed—can be used to configure UM dial plans and UM auto attendants to use other languages.
+There are several key components that rely on UM language packs to enable users and callers to interact effectively with Unified Messaging in multiple languages. Each UM language pack includes a Text-to-Speech (TTS) engine, the pre-recorded prompts and support for Automatic Speech Recognition (ASR), and Voice Mail Preview for a specific language. This topic discusses UM language packs, the UM components that use the UM language packs, and how UM language packs (after they're installed) can be used to configure UM dial plans and UM auto attendants to use other languages.
 
 Exchange Unified Messaging language packs are version-specific and platform-specific. Since Exchange Server 2007, there have been multiple releases for UM language packs, including the RTM version of Exchange 2007, Exchange 2007 SP1, SP2, and SP3, the RTM version of Exchange Server 2010, Exchange 2010 SP1 and SP2, and Exchange 2013. For some of these versions, both 32-bit and 64-bit downloads are available, but for other releases only 64-bit downloads are available.
 
@@ -47,7 +51,7 @@ Client language selection process
 
 Unified Messaging language packs allow a Mailbox server to speak additional languages to callers and recognize other languages when callers use ASR or when voice messages are transcribed. UM language packs contain:
 
-  - Pre-recorded prompts in the language of the UM language pack. For example, "After the tone, please record your message. When you’ve finished recording, hang up, or press the \# key for more options."
+  - Pre-recorded prompts in the language of the UM language pack. For example, "After the tone, please record your message. When you've finished recording, hang up, or press the \# key for more options."
 
   - Grammar files in the language of the UM language pack that are used by a Mailbox server to look up the names of given users in the directory.
 
@@ -387,7 +391,7 @@ The default language is important to callers. When an Outlook Voice Access user 
 
 ## UM auto attendant languages
 
-By default, because UM auto attendants are associated with a UM dial plan when they’re created, they use the default language setting of the associated UM dial plan. However, this setting can be changed after the UM auto attendant is created.
+By default, because UM auto attendants are associated with a UM dial plan when they're created, they use the default language setting of the associated UM dial plan. However, this setting can be changed after the UM auto attendant is created.
 
 The UM auto attendant language setting is needed because Unified Messaging may have to use TTS conversion or play a standard audio prompt to a caller. Unified Messaging doesn't check whether the language of custom prompts for the auto attendant matches the language setting on the auto attendant. However, as a best practice, make sure that the language setting of the auto attendant matches the language of the custom prompts. Otherwise, the caller may hear the system shift from one language to another.
 
@@ -399,9 +403,9 @@ UM language packs enable callers and Outlook Voice Access users to interact with
 
 To support a specific language, a UM client language pack for that language must be installed on each Mailbox server.
 
-In some cases, if a UM language pack for a specific language hasn’t been installed and isn’t available, a client fallback language may be used. Fallback UM client languages are available to be used in place of some languages but, for other languages, no fallback language is available. If there isn’t a UM language pack installed for a specific language, and no fallback language is available for that language, en-US (US English) will be used.
+In some cases, if a UM language pack for a specific language hasn't been installed and isn't available, a client fallback language may be used. Fallback UM client languages are available to be used in place of some languages but, for other languages, no fallback language is available. If there isn't a UM language pack installed for a specific language, and no fallback language is available for that language, en-US (US English) will be used.
 
-The following table includes a list of client languages and the fallback languages that are used when a specific UM language pack hasn’t been installed on a Mailbox server.
+The following table includes a list of client languages and the fallback languages that are used when a specific UM language pack hasn't been installed on a Mailbox server.
 
 ### Client fallback languages for UM
 

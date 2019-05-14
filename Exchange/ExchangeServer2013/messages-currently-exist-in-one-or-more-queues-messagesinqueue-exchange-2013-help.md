@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Messages currently exist in one or more queues'
 TOCTitle: Messages currently exist in one or more queues_MessagesInQueue
 ms:assetid: 3ffcdc7e-c1b7-49a7-8e5f-b30c0397908d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.messagesinqueue(v=EXCHG.150)
 ms:contentKeyID: 46628874
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

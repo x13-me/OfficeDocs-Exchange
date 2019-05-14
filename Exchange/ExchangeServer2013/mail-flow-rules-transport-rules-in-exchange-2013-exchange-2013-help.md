@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Mail flow rules (transport rules) in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Mail flow rules (transport rules)
 ms:assetid: c3d2031c-fb7b-4866-8ae1-32928d0138ef
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351127(v=EXCHG.150)
 ms:contentKeyID: 49289403
 ms.date: 04/28/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -128,7 +132,7 @@ The following table describes the rule properties that are available in mail flo
 <td><p><em>Priority</em></p></td>
 <td><p>Indicates the order that the rules are applied to messages. The default priority is based on when the rule is created (older rules have a higher priority than newer rules, and higher priority rules are processed before lower priority rules).</p>
 <p>You change the rule priority in the EAC by moving the rule up or down in the list of rules. In the PowerShell, you set the priority number (0 is the highest priority).</p>
-<p>For example, if you have one rule to reject messages that include a credit card number, and another one requiring approval, you’ll want the reject rule to happen first, and stop applying other rules.</p>
+<p>For example, if you have one rule to reject messages that include a credit card number, and another one requiring approval, you'll want the reject rule to happen first, and stop applying other rules.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules">Set the priority of mail flow rules</a>.</p></td>
 </tr>
 <tr class="even">

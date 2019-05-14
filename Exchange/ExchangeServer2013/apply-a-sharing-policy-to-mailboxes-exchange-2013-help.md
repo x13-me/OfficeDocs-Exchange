@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Apply a sharing policy to mailboxes: Exchange 2013 Help'
 TOCTitle: Apply a sharing policy to mailboxes
 ms:assetid: dd4cc765-8469-4176-bb6e-d5b0f5235927
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657501(v=EXCHG.150)
 ms:contentKeyID: 49289435
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,7 +19,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-Sharing policies are a part of federated sharing and enable user-established, people-to-people sharing of calendar information with different types of external users. The sharing policy that an admin applies to the user’s mailbox determines what level of access a user can share and with whom. If you don’t change anything, then the default sharing policy applies to all users. If you create a new sharing policy, you have to apply that policy to mailboxes before it takes effect. A sharing policy can be applied to a single user mailbox or to multiple user mailboxes simultaneously. An admin can also disable a user’s sharing policy to prevent external access to calendars.
+Sharing policies are a part of federated sharing and enable user-established, people-to-people sharing of calendar information with different types of external users. The sharing policy that an admin applies to the user's mailbox determines what level of access a user can share and with whom. If you don't change anything, then the default sharing policy applies to all users. If you create a new sharing policy, you have to apply that policy to mailboxes before it takes effect. A sharing policy can be applied to a single user mailbox or to multiple user mailboxes simultaneously. An admin can also disable a user's sharing policy to prevent external access to calendars.
 
 To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.md).
 

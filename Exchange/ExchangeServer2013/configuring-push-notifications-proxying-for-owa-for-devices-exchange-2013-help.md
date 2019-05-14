@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configuring push notifications proxying for OWA for Device'
 TOCTitle: Configuring push notifications proxying for OWA for Devices
 ms:assetid: c0f4912d-8bd3-4a54-9097-03619c645c6a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn511017(v=EXCHG.150)
 ms:contentKeyID: 59954036
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,7 +19,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Online, Exchange Server 2013_
 
 
-Enabling push notifications for OWA for Devices (OWA for iPhone and OWA for iPad) for an on-premises deployment of Microsoft Exchange 2013 lets a user receive updates on the Outlook Web App icon on his or her OWA for iPhone and OWA for iPad indicating the number of unseen messages in the user’s inbox. If push notifications aren’t configured and enabled, a user with OWA for Devices has no way of knowing that unseen messages are in the inbox without launching the app. When a new message is available, the OWA for Devices badge is updated on the user’s device and looks like the following badge.
+Enabling push notifications for OWA for Devices (OWA for iPhone and OWA for iPad) for an on-premises deployment of Microsoft Exchange 2013 lets a user receive updates on the Outlook Web App icon on his or her OWA for iPhone and OWA for iPad indicating the number of unseen messages in the user's inbox. If push notifications aren't configured and enabled, a user with OWA for Devices has no way of knowing that unseen messages are in the inbox without launching the app. When a new message is available, the OWA for Devices badge is updated on the user's device and looks like the following badge.
 
 ![OWA for Devices Badge](images/Dn511017.f399ba74-5395-4d24-ae7d-d16bf0ac7b35(EXCHG.150).png "OWA for Devices Badge")
 
@@ -37,7 +41,7 @@ To enable push notifications, the admin must:
 
 ## Enroll your organization in Office 365 for business
 
-Office 365 is a cloud-based service that is designed to help meet your organization’s needs for robust security, reliability, and user productivity. Office 365 refers to subscription plans that include access to Office applications plus other productivity services that are enabled over the Internet (cloud services), such as Lync web conferencing and Exchange Online hosted email for business.
+Office 365 is a cloud-based service that is designed to help meet your organization's needs for robust security, reliability, and user productivity. Office 365 refers to subscription plans that include access to Office applications plus other productivity services that are enabled over the Internet (cloud services), such as Lync web conferencing and Exchange Online hosted email for business.
 
 Many Office 365 plans also include the desktop version of the latest Office applications, which users can install across multiple computers and devices. All Office 365 plans are paid for on a subscription basis, monthly or annually. To find out more or to enroll in Office 365 for your organization, see [What is Office 365 for business?](https://go.microsoft.com/fwlink/?linkid=335705). For more about each of the services offered through Office 365, see [Office 365 Service Descriptions](https://go.microsoft.com/fwlink/?linkid=335704).
 
@@ -47,7 +51,7 @@ Cumulative Update 3 (CU3) for Exchange Server 2013 resolves issues that were fou
 
 ## Set up On-premises Exchange 2013 to Office 365 Authentication
 
-Using a single, standardized method for server-to-server authentication is the approach used by Exchange Server 2013. [Exchange Server 2013](https://go.microsoft.com/fwlink/?linkid=290946) (as well as [Lync Server 2013](https://go.microsoft.com/fwlink/?linkid=273796) and [SharePoint 2013](https://go.microsoft.com/fwlink/?linkid=335701)) and [Office 2013](https://go.microsoft.com/fwlink/?linkid=335696) support the OAuth (Open Authorization) protocol for server-to-server authentication and authorization. With OAuth, a standard authorization protocol used by a number of major websites, user credentials and passwords aren’t passed from one computer to another. Instead, authentication and authorization are based on the OAuth security tokens; these tokens grant access to a specific set of resources for a specific amount of time.
+Using a single, standardized method for server-to-server authentication is the approach used by Exchange Server 2013. [Exchange Server 2013](https://go.microsoft.com/fwlink/?linkid=290946) (as well as [Lync Server 2013](https://go.microsoft.com/fwlink/?linkid=273796) and [SharePoint 2013](https://go.microsoft.com/fwlink/?linkid=335701)) and [Office 2013](https://go.microsoft.com/fwlink/?linkid=335696) support the OAuth (Open Authorization) protocol for server-to-server authentication and authorization. With OAuth, a standard authorization protocol used by a number of major websites, user credentials and passwords aren't passed from one computer to another. Instead, authentication and authorization are based on the OAuth security tokens; these tokens grant access to a specific set of resources for a specific amount of time.
 
 OAuth authentication typically involves three components: a single authorization server and the two realms that need to communicate with one another. Security tokens are issued by the authorization server (also known as a security token server) to the two realms that need to communicate; these tokens verify that communications originating from one realm should be trusted by the other realm. For example, the authorization server might issue tokens that verify that users from a specific Lync Server 2013 realm are able to access a specified Exchange 2013 realm, and vice versa.
 
@@ -61,7 +65,7 @@ However, for on-premises server-to-server authentication there is no need to use
 
 In order to configure server-to-server authentication for an on-premises implementation of Exchange Server 2013 to Office 365, you must complete two steps:
 
-  -  **Step 1 – Assign a certificate to the built-in token issuer of the on-premises Exchange Server.** First, an on-premises Exchange admin must use the following Exchange Management Shell script to create a certificate if one wasn’t created before and assign it to the built-in token issuer of the on-premises Exchange Server. This is a one-time process; after a certificate has been created, that certificate should be reused for other authentication scenarios and not replaced. Make sure to update the value of *$tenantDomain* to be the name of your domain. To do this, copy and paste the following code.
+  -  **Step 1 - Assign a certificate to the built-in token issuer of the on-premises Exchange Server.** First, an on-premises Exchange admin must use the following Exchange Management Shell script to create a certificate if one wasn't created before and assign it to the built-in token issuer of the on-premises Exchange Server. This is a one-time process; after a certificate has been created, that certificate should be reused for other authentication scenarios and not replaced. Make sure to update the value of *$tenantDomain* to be the name of your domain. To do this, copy and paste the following code.
    
         > [!WARNING]  
         > Copying and pasting the code into a text editor like Notepad and saving it with a .ps1 extension makes it easier to run Shell scripts.
@@ -137,11 +141,11 @@ Complete.
 ```
     
 > [!WARNING]  
-> Before you continue, the Azure Active Directory Module for Windows PowerShell cmdlets is required. If the Azure Active Directory Module for Windows PowerShell cmdlets (previously known as the Microsoft Online Services Module for Windows PowerShell) hasn’t been installed, you can install it from <A href="https://aka.ms/aadposh">Manage Azure AD using Windows PowerShell</A>.
+> Before you continue, the Azure Active Directory Module for Windows PowerShell cmdlets is required. If the Azure Active Directory Module for Windows PowerShell cmdlets (previously known as the Microsoft Online Services Module for Windows PowerShell) hasn't been installed, you can install it from <A href="https://aka.ms/aadposh">Manage Azure AD using Windows PowerShell</A>.
 
 
 
-  -  **Step 2 – Configure Office 365 to communicate with Exchange 2013 on-premises.** Configure the Office 365 server that Exchange Server 2013 will communicate with to be a partner application. For example, if Exchange Server 2013 on-premises needs to communicate with Office 365, you need to configure Exchange on-premises to be a partner application. A partner application is any application that Exchange 2013 can directly exchange security tokens with, without having to go through a third-party security token server. An on-premises Exchange 2013 administrator must use the following Exchange Management Shell script to configure the Office 365 tenant that Exchange 2013 will communicate with to be a partner application. During execution, there will be a prompt to enter the administrator user name and password of the Office 365 tenant domain—for example, administrator@fabrikam.com. Make sure to update the value of *$CertFile* to the location of the certificate if not created from the previous script. To do this, copy and paste the following code.
+  -  **Step 2 - Configure Office 365 to communicate with Exchange 2013 on-premises.** Configure the Office 365 server that Exchange Server 2013 will communicate with to be a partner application. For example, if Exchange Server 2013 on-premises needs to communicate with Office 365, you need to configure Exchange on-premises to be a partner application. A partner application is any application that Exchange 2013 can directly exchange security tokens with, without having to go through a third-party security token server. An on-premises Exchange 2013 administrator must use the following Exchange Management Shell script to configure the Office 365 tenant that Exchange 2013 will communicate with to be a partner application. During execution, there will be a prompt to enter the administrator user name and password of the Office 365 tenant domain (for example, administrator@fabrikam.com). Make sure to update the value of *$CertFile* to the location of the certificate if not created from the previous script. To do this, copy and paste the following code.
     
 
         ```powershell
@@ -225,7 +229,7 @@ The expected result should be similar to the following output.
 
 After the preceding steps have been completed, push notifications can be tested by one of the following:
 
-  - **Sending a test email message to the user’s mailbox:**
+  - **Sending a test email message to the user's mailbox:**
     
     1.  Set up an account in OWA for Devices on a mobile device to subscribe for notifications.
     

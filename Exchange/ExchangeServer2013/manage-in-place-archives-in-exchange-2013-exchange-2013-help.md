@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage In-Place Archives in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Manage In-Place Archives in Exchange 2013
 ms:assetid: 49ef4a3e-d209-4fb2-80a3-6132b0f69bd0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ651146(v=EXCHG.150)
 ms:contentKeyID: 49352793
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,7 +19,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-In-Place Archiving helps you regain control of your organization’s messaging data by eliminating the need for personal store (.pst) files and allowing you to meet your organization’s message retention and eDiscovery requirements. With archiving enabled, users can store messages in an archive mailbox, which is accessible by using Microsoft Outlook and Outlook Web App.
+In-Place Archiving helps you regain control of your organization's messaging data by eliminating the need for personal store (.pst) files and allowing you to meet your organization's message retention and eDiscovery requirements. With archiving enabled, users can store messages in an archive mailbox, which is accessible by using Microsoft Outlook and Outlook Web App.
 
 ## What do you need to know before you begin?
 
@@ -23,7 +27,7 @@ In-Place Archiving helps you regain control of your organization’s messaging d
 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place Archive" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-  - It’s not supported to have a user’s primary mailbox reside on an older Exchange version than the user’s archive. If the user’s primary mailbox is still on Exchange 2010, you must move it to Exchange 2013 at the same time you move the archive to Exchange 2013.
+  - It's not supported to have a user's primary mailbox reside on an older Exchange version than the user's archive. If the user's primary mailbox is still on Exchange 2010, you must move it to Exchange 2013 at the same time you move the archive to Exchange 2013.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -53,7 +57,7 @@ In-Place Archiving helps you regain control of your organization’s messaging d
 
 4.  Select one of the following options:
     
-      - **Existing user**   Click this button and then click **Browse** to open the **Select User – Entire Forest** dialog box. This dialog box displays a list of Active Directory user accounts in the forest that aren't mail-enabled or don't have Exchange mailboxes. Select the user account you want to mail-enable, and then click **OK**. If you select this option, you don’t have to provide user account information because this information already exists in Active Directory.
+      - **Existing user**   Click this button and then click **Browse** to open the **Select User - Entire Forest** dialog box. This dialog box displays a list of Active Directory user accounts in the forest that aren't mail-enabled or don't have Exchange mailboxes. Select the user account you want to mail-enable, and then click **OK**. If you select this option, you don't have to provide user account information because this information already exists in Active Directory.
     
       - **New user**   Click this button to create a new user account in Active Directory and create a mailbox for the user. If you select this option, you'll have to provide the required user account information.
     
@@ -65,7 +69,7 @@ In-Place Archiving helps you regain control of your organization’s messaging d
 
 5.  Click **More options** to configure the following settings.
     
-      - **Mailbox database**   Click **Browse** to select a mailbox database in which to store the mailbox. If you don’t select a database, Exchange will automatically assign one.
+      - **Mailbox database**   Click **Browse** to select a mailbox database in which to store the mailbox. If you don't select a database, Exchange will automatically assign one.
     
       - **Archive**   Select this check box to create an archive mailbox for the mailbox. If you create an archive mailbox, mailbox items will be moved automatically from the primary mailbox to the archive, based on the default retention policy settings or those you define.
         
@@ -90,7 +94,7 @@ For detailed syntax and parameter information, see [New-Mailbox](https://technet
 
 ## How do you know this worked?
 
-To verify that you’ve successfully created a user mailbox with an on-premises archive, do one of the following:
+To verify that you've successfully created a user mailbox with an on-premises archive, do one of the following:
 
   - In the EAC, navigate to **Recipients**  \> **Mailboxes**, and then select the new user mailbox from the list. In the details pane, under **In-Place Archive**, confirm that it is set to **Enabled**. Click **View details** to view archive properties, including archive status and the mailbox database in which it is created.
 
@@ -104,7 +108,7 @@ To verify that you’ve successfully created a user mailbox with an on-premises 
 
 ## Enable an on-premises archive for existing mailbox
 
-You can also create archives for existing users that have a mailbox but aren’t archive-enabled. This is known as *enabling an archive* for an existing mailbox.
+You can also create archives for existing users that have a mailbox but aren't archive-enabled. This is known as *enabling an archive* for an existing mailbox.
 
 ## Use the EAC
 
@@ -130,7 +134,7 @@ This example enables the archive for Tony Smith's mailbox.
 Enable-Mailbox "Tony Smith" -Archive
 ```
 
-This example retrieves mailboxes in database DB01 that don’t have an on-premises or cloud-based archive enabled and don’t have a name starting with DiscoverySearchMailbox. It pipes the result to the **Enable-Mailbox** cmdlet to enable the archive for all mailboxes on mailbox database DB01.
+This example retrieves mailboxes in database DB01 that don't have an on-premises or cloud-based archive enabled and don't have a name starting with DiscoverySearchMailbox. It pipes the result to the **Enable-Mailbox** cmdlet to enable the archive for all mailboxes on mailbox database DB01.
 
 ```powershell
     Get-Mailbox -Database DB01 -Filter {ArchiveGuid -Eq $null -AND ArchiveDomain -eq $null -AND Name -NotLike "DiscoverySearchMailbox*"} | Enable-Mailbox -Archive
@@ -140,7 +144,7 @@ For detailed syntax and parameter information, see [Enable-Mailbox](https://tech
 
 ## How do you know this worked?
 
-To verify that you’ve successfully enabled an on-premises archive for an existing mailbox, do one of the following:
+To verify that you've successfully enabled an on-premises archive for an existing mailbox, do one of the following:
 
   - In the EAC, navigate to **Recipients**  \> **Mailboxes**, and then select the mailbox from the list. In the details pane, under **In-Place Archive**, confirm that it is set to **Enabled**. Click **View details** to view archive properties, including archive status and the mailbox database in which it is created.
 
@@ -241,13 +245,13 @@ When you disable an archive mailbox, it becomes disconnected. A disconnected arc
 
 
 > [!WARNING]
-> If you disable an archive for a user and then enable an archive for that same user, the user will get a new archive. The new archive won’t contain the data that was in the user’s disconnected archive. If you want to reconnect a user to his or her disconnected archive, you must perform this procedure.
+> If you disable an archive for a user and then enable an archive for that same user, the user will get a new archive. The new archive won't contain the data that was in the user's disconnected archive. If you want to reconnect a user to his or her disconnected archive, you must perform this procedure.
 
 
 
 
 > [!NOTE]
-> You can’t use the EAC to connect a disconnected archive to a mailbox user.
+> You can't use the EAC to connect a disconnected archive to a mailbox user.
 
 
 
@@ -275,7 +279,7 @@ For detailed syntax and parameter information, see the following topics:
 
 ## How do you know this worked?
 
-To verify that you have successfully connected a disconnected archive to a mailbox user, run the following Shell command to retrieve the mailbox user’s archive properties and verify the values returned for the *ArchiveGuid* and *ArchiveDatabase* properties.:
+To verify that you have successfully connected a disconnected archive to a mailbox user, run the following Shell command to retrieve the mailbox user's archive properties and verify the values returned for the *ArchiveGuid* and *ArchiveDatabase* properties.:
 
 ```powershell
     Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*

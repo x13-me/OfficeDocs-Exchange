@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Update a mailbox database copy: Exchange 2013 Help'
 TOCTitle: Update a mailbox database copy
 ms:assetid: bead3cc5-7d50-446f-95b7-e432bcb7968e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351100(v=EXCHG.150)
 ms:contentKeyID: 48385503
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -85,7 +89,7 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 4.  In the Details pane, under **Database Copies**, click **Update** under the passive database copy you want to seed.
 
-5.  By default, the active copy of the database is used as the source database for seeding. If you prefer to use a passive copy of the database for seeding, click **browse…** to select the server containing the passive database copy you want to use for the source.
+5.  By default, the active copy of the database is used as the source database for seeding. If you prefer to use a passive copy of the database for seeding, click **browse...** to select the server containing the passive database copy you want to use for the source.
 
 6.  Click **save** to update the passive database copy.
 

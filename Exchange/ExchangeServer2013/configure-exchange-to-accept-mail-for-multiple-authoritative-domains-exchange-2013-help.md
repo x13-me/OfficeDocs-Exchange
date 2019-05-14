@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure Exchange to accept mail for multiple authoritative domains'
 TOCTitle: Configure Exchange to accept mail for multiple authoritative domains
 ms:assetid: 11801f73-4934-4025-a1c1-3935dada7e9b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996314(v=EXCHG.150)
 ms:contentKeyID: 50874000
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -113,7 +117,7 @@ To change the primary (reply to) email address assigned to recipients and keep t
 
 4.  On the **Email Address Policy** page, click **Save** to save your changes to the policy.
 
-5.  You’ll get a warning that the email address policy won’t be applied until you update it. After it’s created, select it, and then, in the details pane, click **Apply**.
+5.  You'll get a warning that the email address policy won't be applied until you update it. After it's created, select it, and then, in the details pane, click **Apply**.
 
 ## Use the Shell to change the existing primary email address
 
@@ -183,7 +187,7 @@ To create additional email addresses that will be used as the primary email addr
     
 
     > [!WARNING]
-    > If you apply too many rules, it’s possible to restrict the email address policy to the point that it doesn’t contain any users.
+    > If you apply too many rules, it's possible to restrict the email address policy to the point that it doesn't contain any users.
 
 
 
@@ -193,7 +197,7 @@ To create additional email addresses that will be used as the primary email addr
     
     Click **Save** to save your changes and create the policy.
 
-8.  You’ll get a warning that the email address policy won’t be applied until you update it. After it’s created, select it, and then, in the details pane, click **Apply**.
+8.  You'll get a warning that the email address policy won't be applied until you update it. After it's created, select it, and then, in the details pane, click **Apply**.
 
 ## Use the Shell to replace the existing primary email address for a filtered set of recipients
 

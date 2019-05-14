@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Register Filter Pack IFilters with Exchange 2013: Exchange 2013 Help'
 TOCTitle: Register Filter Pack IFilters with Exchange 2013
 ms:assetid: 0338980f-3a64-49d3-bc3c-bf6f10f88cb4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ837174(v=EXCHG.150)
 ms:contentKeyID: 49940598
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -47,13 +51,13 @@ For additional management tasks related to Transport rules, see [Manage mail flo
 
 ## Register the Microsoft Office 2010 Filter Pack
 
-By default, the following Office file types aren’t supported by Exchange transport rules:
+By default, the following Office file types aren't supported by Exchange transport rules:
 
   - Office OneNote
 
   - Office Publisher
 
-If you want to support these files, you must deploy the Microsoft Office 2010 Filter Pack. This Filter Pack isn’t deployed during Exchange 2013 Setup and isn’t a prerequisite for deployment.
+If you want to support these files, you must deploy the Microsoft Office 2010 Filter Pack. This Filter Pack isn't deployed during Exchange 2013 Setup and isn't a prerequisite for deployment.
 
 ## Deploy the Microsoft Office 2010 Filter Pack
 
@@ -161,7 +165,7 @@ You can extend the attachment scanning capability for additional file types by r
 
 
 > [!IMPORTANT]
-> Microsoft hasn’t tested third-party IFilters with transport rules, therefore we recommend that you deploy and test any third-party IFilters in a test environment before deploying into your production environment.
+> Microsoft hasn't tested third-party IFilters with transport rules, therefore we recommend that you deploy and test any third-party IFilters in a test environment before deploying into your production environment.
 
 
 

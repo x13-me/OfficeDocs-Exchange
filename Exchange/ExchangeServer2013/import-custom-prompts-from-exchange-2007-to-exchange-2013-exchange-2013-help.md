@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Import custom prompts from Exchange 2007 to Exchange 2013: Exchange 2013 Help'
 TOCTitle: Import custom prompts from Exchange 2007 to Exchange 2013
 ms:assetid: 70c0b0bc-c0de-4e3c-8144-1fe59f86ebf4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg309147(v=EXCHG.150)
 ms:contentKeyID: 53382779
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -19,9 +23,9 @@ You can import the audio files that contain custom greetings, announcements, men
 
 The audio files, in .wav or .wma format, are used as follows:
 
-  - On UM dial plans, audio files are used for customized welcome greetings and informational announcements. They’re played when Outlook Voice Access users call in to an Outlook Voice Access number.
+  - On UM dial plans, audio files are used for customized welcome greetings and informational announcements. They're played when Outlook Voice Access users call in to an Outlook Voice Access number.
 
-  - On UM auto attendants, audio files are used for customized non-business and business hours greetings, informational announcements, menu prompts, and navigation menus. They’re played when callers call in to a UM auto attendant.
+  - On UM auto attendants, audio files are used for customized non-business and business hours greetings, informational announcements, menu prompts, and navigation menus. They're played when callers call in to a UM auto attendant.
 
 You use the MigrateUMCustomPrompts.ps1 script to migrate a copy of all Exchange Server 2007 UM custom greetings, announcements, menus, and prompts to Exchange 2013 UM for all Exchange 2007 UM dial plans and UM auto attendants.
 

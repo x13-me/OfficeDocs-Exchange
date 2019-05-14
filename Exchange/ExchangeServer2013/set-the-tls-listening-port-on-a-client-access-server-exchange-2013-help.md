@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Set the TLS listening port on a Client Access server: Exchange 2013 Help'
 TOCTitle: Set the TLS listening port on a Client Access server
 ms:assetid: f4401923-61fa-4dc5-95f8-c0d2f515b2ea
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673576(v=EXCHG.150)
 ms:contentKeyID: 49315561
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -29,7 +33,7 @@ You may have to configure the TLS listening port to 5061 if you want to:
 
 If you want to use mutual TLS between a UM IP gateway and a dial plan operating in either SIP Secured or Secured mode, when you create the UM IP gateway you must configure it with a fully qualified domain name (FQDN) and then configure the UM IP gateway to listen on TLS port 5061. You must also verify that any VoIP gateways, PBXs enabled for SIP, IP PBXs, or SBCs have also been configured to listen for mutual TLS requests on port 5061.
 
-You can only configure Client Access server TCP and TLS ports. You can’t configure the ports for an Exchange 2013 Mailbox server. However, you can use the **Set-UMService** cmdlet to configure the TCP and TLS listening ports for Exchange 2010 UM servers.
+You can only configure Client Access server TCP and TLS ports. You can't configure the ports for an Exchange 2013 Mailbox server. However, you can use the **Set-UMService** cmdlet to configure the TCP and TLS listening ports for Exchange 2010 UM servers.
 
 For additional tasks related to Unified Messaging and Client Access servers, see [UM services procedures](um-services-procedures-exchange-2013-help.md).
 

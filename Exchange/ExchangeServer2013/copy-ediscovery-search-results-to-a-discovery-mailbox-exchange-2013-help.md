@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Copy eDiscovery search results to a discovery mailbox: Exchange 2013 Help'
 TOCTitle: Copy eDiscovery search results to a discovery mailbox
 ms:assetid: bff2ce89-9e6f-494a-bd6a-2f2011507845
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn624163(v=EXCHG.150)
 ms:contentKeyID: 61200239
 ms.date: 12/10/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -47,7 +51,7 @@ After you create an In-Place eDiscovery search, you can use the EAC to copy the 
 
 4.  In **Copy Search Results**, select from the following options:
     
-      - **Include unsearchable items**   Select this check box to include mailbox items that couldn’t be searched (for example, messages with attachments of file types that couldn’t be indexed by Exchange Search). For more information, see [Unsearchable items in Exchange eDiscovery](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md).
+      - **Include unsearchable items**   Select this check box to include mailbox items that couldn't be searched (for example, messages with attachments of file types that couldn't be indexed by Exchange Search). For more information, see [Unsearchable items in Exchange eDiscovery](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md).
     
       - **Enable de-duplication**   Select this check box to exclude duplicate messages. Only a single instance of a message will be copied to the discovery mailbox.
     
@@ -101,13 +105,13 @@ To copy the results of this search to a discovery mailbox, you would run the fol
 
   - For more information about unsearchable items, see [Unsearchable items in Exchange eDiscovery](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md).
 
-  - If you’re copying all mailbox content within a specific date range (by not specifying any keywords in the search criteria), then all unsearchable items within that date range will be automatically included in the search results. Therefore, don’t select the **Include unsearchable items** checkbox when copying search results. Otherwise, a duplicate copy of all unsearchable items will be copied to the discovery mailbox.
+  - If you're copying all mailbox content within a specific date range (by not specifying any keywords in the search criteria), then all unsearchable items within that date range will be automatically included in the search results. Therefore, don't select the **Include unsearchable items** checkbox when copying search results. Otherwise, a duplicate copy of all unsearchable items will be copied to the discovery mailbox.
 
   - In addition to copying the search results to a discovery mailbox, you can also estimate or preview the search results for a selected search.
     
       - **Estimate search results**   This option returns an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Estimates are displayed in the details pane in the EAC.
     
-      - **Preview search results**   This option lets you preview the search results returned by the search instead of having to copy them to a discovery mailbox to view. This lets you quickly determine whether the search results are relevant. After you preview the results, you can revise your search query to narrow the search results and rerun the search. Items in the preview page are read-only versions of the actual search results, so you can’t move, edit, delete or forward on the preview page.
+      - **Preview search results**   This option lets you preview the search results returned by the search instead of having to copy them to a discovery mailbox to view. This lets you quickly determine whether the search results are relevant. After you preview the results, you can revise your search query to narrow the search results and rerun the search. Items in the preview page are read-only versions of the actual search results, so you can't move, edit, delete or forward on the preview page.
     
     For more information, see [Estimate or preview search results](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search).
 

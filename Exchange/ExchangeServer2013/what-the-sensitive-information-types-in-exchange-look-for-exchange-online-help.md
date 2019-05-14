@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'What the sensitive information types in Exchange look for'
 TOCTitle: What the sensitive information types look for
 ms:assetid: 98b81f9c-87bb-4905-8e53-04621c3ae74d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150541(v=EXCHG.150)
 ms:contentKeyID: 47560060
 ms.date: 05/05/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -913,7 +917,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 <p>Identiteit</p>
 <p>Registratie</p>
 <p>Identificatie</p>
-<p>Carte d’identité</p>
+<p>Carte d'identité</p>
 <p>numéro d'immatriculation</p>
 <p>numéro d'identification</p>
 <p>identité</p>
@@ -2408,7 +2412,7 @@ A sensitive information type is defined by a pattern that can be identified by a
 <p>expiration date</p>
 <p>exp date</p>
 <p>expiry date</p>
-<p>date d’expiration</p>
+<p>date d'expiration</p>
 <p>date d'exp</p>
 <p>date expiration</p>
 <p>bank card</p>

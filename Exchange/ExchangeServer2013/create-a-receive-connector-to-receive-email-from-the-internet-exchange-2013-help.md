@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a Receive connector to receive email from the Internet'
 TOCTitle: Create a Receive connector to receive email from the Internet
 ms:assetid: 534bbd32-a0db-4d50-9579-4933b156d7b3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657447(v=EXCHG.150)
 ms:contentKeyID: 49289253
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -19,7 +23,7 @@ This procedure shows you how to configure a Receive connector to receive email f
 
 
 > [!NOTE]
-> In most cases, you won’t need to explicitly set up a Receive connector to receive mail from the Internet, because a Receive connector to accept mail from the Internet is implicitly created upon installation of Exchange. See <A href="receive-connectors-exchange-2013-help.md">Receive connectors</A> for more information.
+> In most cases, you won't need to explicitly set up a Receive connector to receive mail from the Internet, because a Receive connector to accept mail from the Internet is implicitly created upon installation of Exchange. See <A href="receive-connectors-exchange-2013-help.md">Receive connectors</A> for more information.
 
 
 
@@ -55,7 +59,7 @@ Interested in scenarios where this procedure is used? See the following topics:
     
 
     > [!NOTE]
-    > If you have multiple network adapters, on this page you can add an IP address that is assigned to a specific network adapter on the local server, but this isn’t required.
+    > If you have multiple network adapters, on this page you can add an IP address that is assigned to a specific network adapter on the local server, but this isn't required.
 
 
 

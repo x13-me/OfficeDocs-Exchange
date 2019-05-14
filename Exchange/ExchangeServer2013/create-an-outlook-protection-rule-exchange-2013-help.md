@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create an Outlook Protection Rule: Exchange 2013 Help'
 TOCTitle: Create an Outlook Protection Rule
 ms:assetid: da64750d-faaf-44de-ad8c-888eba7fbdbf
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638196(v=EXCHG.150)
 ms:contentKeyID: 49319935
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -60,9 +64,9 @@ For detailed syntax and parameter information, see [New-OutlookProtectionRule](h
 
 To verify that you have successfully created an Outlook protection rule, do the following:
 
-  - Run the [Get-OutlookProtectionRule](https://technet.microsoft.com/en-us/library/dd298004\(v=exchg.150\)) cmdlet to make sure that the rule has been created and to view the rule’s properties. For an example of how to retrieve an Outlook protection rule, see [Examples](https://technet.microsoft.com/en-us/dd298004\(exchg.150\)#examples) in **Get-OutlookProtectionRule**.
+  - Run the [Get-OutlookProtectionRule](https://technet.microsoft.com/en-us/library/dd298004\(v=exchg.150\)) cmdlet to make sure that the rule has been created and to view the rule's properties. For an example of how to retrieve an Outlook protection rule, see [Examples](https://technet.microsoft.com/en-us/dd298004\(exchg.150\)#examples) in **Get-OutlookProtectionRule**.
 
-  - Use Outlook 2010 to create a test message that meets the rule’s condition and make sure the rule is triggered on the client.
+  - Use Outlook 2010 to create a test message that meets the rule's condition and make sure the rule is triggered on the client.
     
 
     > [!NOTE]

@@ -1,10 +1,14 @@
-﻿---
+---
 title: Autodiscover service for Exchange 2013
 TOCTitle: Autodiscover service
 ms:assetid: b03c0f21-cbc2-4be8-ad03-73a7dac16ffc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124251(v=EXCHG.150)
 ms:contentKeyID: 50396327
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,7 +19,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-Learn about the Exchange Autodiscover service for Microsoft Exchange 2013. You’ll learn what the Exchange Autodiscover service does and how it works as well as what the deployment options are.
+Learn about the Exchange Autodiscover service for Microsoft Exchange 2013. You'll learn what the Exchange Autodiscover service does and how it works as well as what the deployment options are.
 
 Microsoft Exchange 2013 includes a service named the Autodiscover service. This topic gives an overview of the service and explains how it works, how it configures Outlook clients, and what options there are for deploying the Autodiscover service in your messaging environment.
 
@@ -41,13 +45,13 @@ Configuring Autodiscover for cross-forest moves
 
 The Autodiscover service makes it easier to configure Outlook 2007, Outlook 2010, or Outlook 2013 and some mobile phones. You can't use the Autodiscover service with versions of Outlook earlier than Office Outlook 2007. In earlier versions of Microsoft Exchange (Exchange 2003 SP2 or earlier) and Outlook (Outlook 2003 or earlier), you had to configure all user profiles manually to access Exchange. Extra work was required to manage these profiles if changes occurred to the messaging environment. Otherwise, the Outlook clients would stop functioning correctly.
 
-Through the Autodiscover service, Outlook finds a new connection point made up of the user’s mailbox GUID + @ + the domain portion of the user’s primary SMTP address. The Autodiscover service returns the following information to the client:
+Through the Autodiscover service, Outlook finds a new connection point made up of the user's mailbox GUID + @ + the domain portion of the user's primary SMTP address. The Autodiscover service returns the following information to the client:
 
-  - The user’s display name
+  - The user's display name
 
   - Separate connection settings for internal and external connectivity
 
-  - The location of the user’s Mailbox server
+  - The location of the user's Mailbox server
 
   - The URLs for various Outlook features that govern functionality such as free/busy information, Unified Messaging, and the offline address book
 

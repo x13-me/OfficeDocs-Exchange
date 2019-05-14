@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting ECP Health Set
 TOCTitle: Troubleshooting ECP Health Set
 ms:assetid: 0a1cfcd5-585c-4a0a-9d3c-28dc49e16a6c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.ecp(v=EXCHG.150)
 ms:contentKeyID: 49720722
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -117,7 +121,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
     
     2.  Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be `Unhealthy`.
     
-    3.  Rerun the associated probe for the monitor that’s in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
+    3.  Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
         
             Invoke-MonitoringProbe <HealthSetName>\<ProbeName> -Server <ServerName> | Format-List
         
@@ -135,7 +139,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 ## EacSelfTestMonitor and EacDeepTestMonitor Recovery Actions
 
-1.  Start IIS Manager, and then connect to the server that’s reporting the issue. Click **Application Pools**, and then recycle the ECP application pool named **MSExchangeECPAppPool**.
+1.  Start IIS Manager, and then connect to the server that's reporting the issue. Click **Application Pools**, and then recycle the ECP application pool named **MSExchangeECPAppPool**.
 
 2.  Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 

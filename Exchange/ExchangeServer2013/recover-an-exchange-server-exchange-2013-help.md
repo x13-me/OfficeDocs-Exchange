@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Recover an Exchange Server: Exchange 2013 Help'
 TOCTitle: Recover an Exchange Server
 ms:assetid: 46e9a1cf-b64c-43c3-a898-6171176da761
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876880(v=EXCHG.150)
 ms:contentKeyID: 48385039
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -44,7 +48,7 @@ Looking for other management tasks related to backing up and restoring data? Che
 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange infrastructure permissions" section in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-  - The server on which recovery is being performed must be running the same operating system as the lost server. For example, you can't recover a server that was running Exchange 2013 and Windows Server 2008 R2 on a server running Windows Server 2012, or vice versa. Likewise, you can’t recover a server that was running Exchange 2013 and Windows Server 2012 on a server running Windows Server 2012 R2, or vice versa.
+  - The server on which recovery is being performed must be running the same operating system as the lost server. For example, you can't recover a server that was running Exchange 2013 and Windows Server 2008 R2 on a server running Windows Server 2012, or vice versa. Likewise, you can't recover a server that was running Exchange 2013 and Windows Server 2012 on a server running Windows Server 2012 R2, or vice versa.
 
   - The same disk drive letters on the failed server for mounted databases must exist on the server on which you're running recovery.
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: Procedures related to deployment
 TOCTitle: Procedures related to deployment
 ms:assetid: 6b7682bd-fe3d-43b9-a7db-66c0ac17656f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn195909(v=EXCHG.150)
 ms:contentKeyID: 53181784
 ms.date: 05/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -76,7 +80,7 @@ Your user account needs to be a member of the Operations Manager Administrators 
 
 ## Verify agent security configuration
 
-Due to the security model under which Exchange 2013 has been tested, running the SCOM agent on your Exchange servers under any account other than **LocalSystem** isn’t supported. If you run the agent under any account other than LocalSystem, the synthetic transactions fail to run. You may also experience other issues.
+Due to the security model under which Exchange 2013 has been tested, running the SCOM agent on your Exchange servers under any account other than **LocalSystem** isn't supported. If you run the agent under any account other than LocalSystem, the synthetic transactions fail to run. You may also experience other issues.
 
 Your user account needs to be a member of the Server Management role group to perform this procedure.
 

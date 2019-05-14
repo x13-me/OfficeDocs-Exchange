@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: Unified Messaging (UM) requires that you integrate Microsoft Exchange with the existing telephony system for your organization. A successful deployment requires you to make a careful analysis of your existing telephony infrastructure and to perform the correct planning steps to deploy Unified Messaging.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: e9f760f2-5901-4ed2-95a5-724555cc700e
 ms.date: 6/24/2018
+ms.reviewer: 
 title: Telephony advisor for Exchange 2013
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: d2d89ce6-4721-4737-a325-fba5ad9422e0
 ms.date: 
+ms.reviewer: 
 title: Default settings for Exchange virtual directories
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

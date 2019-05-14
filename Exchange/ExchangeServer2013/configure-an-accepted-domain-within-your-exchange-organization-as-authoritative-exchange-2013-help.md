@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure an accepted domain within your Exchange organization as authoritative'
 TOCTitle: Configure an accepted domain within your Exchange organization as authoritative
 ms:assetid: e182d54f-e58a-47ba-a5c1-28c0dfa86eed
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657734(v=EXCHG.150)
 ms:contentKeyID: 49300733
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -39,7 +43,7 @@ If a domain belonging to your organization hosts mailboxes for all the recipient
 
 ## Use the EAC to configure an accepted domain as authoritative
 
-If an accepted domain for your Exchange organization hosts all the mailboxes for recipients within that domain’s SMTP namespace, you may want to configure it as an authoritative domain.
+If an accepted domain for your Exchange organization hosts all the mailboxes for recipients within that domain's SMTP namespace, you may want to configure it as an authoritative domain.
 
 1.  In the EAC, navigate to **Mail flow** \> **Accepted domains**, and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 

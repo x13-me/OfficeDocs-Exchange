@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Remove an email address policy: Exchange 2013 Help'
 TOCTitle: Remove an email address policy
 ms:assetid: f1d05223-7d41-406d-8fae-f4227be1c1c2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125181(v=EXCHG.150)
 ms:contentKeyID: 49289454
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -25,9 +29,9 @@ For additional management tasks related to e-mail address policies, see [Email a
 
   - If you remove an email address policy that's used by recipients as the primary policy and no other policies have been configured for recipients, the default policy will be used.
 
-  - You can’t delete the default policy. If you want to delete the default policy, you must first assign a different policy as the default.
+  - You can't delete the default policy. If you want to delete the default policy, you must first assign a different policy as the default.
 
-  - If the email address policy you’re deleting contains more than 3,000 recipients, you should use the Shell to perform this procedure.
+  - If the email address policy you're deleting contains more than 3,000 recipients, you should use the Shell to perform this procedure.
 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Email address policies" entry in the [Email addresses and address books](email-addresses-and-address-books-exchange-2013-help.md) topic.
 

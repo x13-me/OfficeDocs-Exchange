@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 58e413f0-aa27-4307-bffd-4df03090a15e
 ms.date: 
+ms.reviewer: 
 title: Use mail flow rules so messages can bypass Clutter in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

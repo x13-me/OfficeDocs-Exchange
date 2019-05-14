@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Install Exchange 2013 using unattended mode: Exchange 2013 Help'
 TOCTitle: Install Exchange 2013 using unattended mode
 ms:assetid: 386465e9-41da-4e26-9816-b3b69be1f8bf
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997281(v=EXCHG.150)
 ms:contentKeyID: 48384985
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -180,5 +184,5 @@ To verify that you've successfully installed Exchange 2013, see [Verify an Excha
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
 
-Did you find what you’re looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.
+Did you find what you're looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.
 

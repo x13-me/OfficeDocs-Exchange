@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Deploy Exchange 2013 UM: Exchange 2013 Help'
 TOCTitle: Deploy Exchange 2013 UM
 ms:assetid: d147d4b1-32d7-476b-b76f-ee3c0b35ba49
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673564(v=EXCHG.150)
 ms:contentKeyID: 49315527
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -45,7 +49,7 @@ Before you deploy Unified Messaging, we recommend that you familiarize yourself 
 
 ## Deploying Unified Messaging
 
-Whether you’re deploying UM using IP Private Branch eXchanges (IP PBXs), VoIP gateways, or Microsoft Lync Server, all the deployment options for Unified Messaging have several steps in common. These steps are required to create a scalable and highly available system to support large numbers of Unified Messaging users. These steps are as follows:
+Whether you're deploying UM using IP Private Branch eXchanges (IP PBXs), VoIP gateways, or Microsoft Lync Server, all the deployment options for Unified Messaging have several steps in common. These steps are required to create a scalable and highly available system to support large numbers of Unified Messaging users. These steps are as follows:
 
 1.  Deploy and configure your telephony components for Unified Messaging.
 
@@ -81,7 +85,7 @@ Return to top
 
 ## Install the Mailbox and Client Access servers
 
-Different deployment paths are available for organizations that plan to deploy Exchange Unified Messaging. Although these paths all lead to the same end—a successful deployment of Unified Messaging—each path is slightly different because each customer's needs and starting points are different. However, generally there are common starting points and paths that cover all supported deployment scenarios, including new installations and upgrades. Follow these steps to deploy your Client Access and Mailbox servers:
+Different deployment paths are available for organizations that plan to deploy Exchange Unified Messaging. Although these paths all lead to the same end (a successful deployment of Unified Messaging) each path is slightly different because each customer's needs and starting points are different. However, generally there are common starting points and paths that cover all supported deployment scenarios, including new installations and upgrades. Follow these steps to deploy your Client Access and Mailbox servers:
 
 1.  Verify that your existing infrastructure meets certain prerequisites. For details, see [Exchange 2013 prerequisites](exchange-2013-prerequisites-exchange-2013-help.md).
 
@@ -99,7 +103,7 @@ Different deployment paths are available for organizations that plan to deploy E
 
 UM language packs enable callers and Outlook Voice Access users to interact with the voice mail system in multiple languages. After you install an additional language pack on a Mailbox server, callers and Outlook Voice Access users can hear email messages and interact with the voice mail system in that language.
 
-When you first install Exchange, U.S. English will be the default language, and the only available language option for your dial plan. After you install a UM language pack on a Mailbox server, the language associated with the language pack will be listed as an available option when you configure the default language for the dial plan. By default, because UM auto attendants are associated with a UM dial plan when they’re created, they use the default language setting of the associated UM dial plan. However, this setting can be changed after the UM auto attendant is created.
+When you first install Exchange, U.S. English will be the default language, and the only available language option for your dial plan. After you install a UM language pack on a Mailbox server, the language associated with the language pack will be listed as an available option when you configure the default language for the dial plan. By default, because UM auto attendants are associated with a UM dial plan when they're created, they use the default language setting of the associated UM dial plan. However, this setting can be changed after the UM auto attendant is created.
 
 You can add UM language packs by using the Setup.exe command or by running the *\<UMLanguagePack\>*.exe installation program after you've downloaded the UM language pack from [Exchange Server 2013 UM Language Packs](https://go.microsoft.com/fwlink/p/?linkid=266542). However, you have to use the Setup.exe command to remove a UM language pack. There's no Exchange Management Shell cmdlet that you can use to add or remove languages from a Mailbox server. For more information about how to install a UM language pack, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md).
 
@@ -140,7 +144,7 @@ Perform the following procedure to create a new UM dial plan.
         
         This is a required box that has a value range from 1 through 20. The typical extension length is from 3 through 7 numbers. If your existing telephony environment includes extension numbers, you must specify a number of digits that matches the number of digits in those extensions.
         
-        When you create a Telephone extension dial plan, you’re required to enter an extension number for the user when they’re linked to a Telephone extension dial plan. An extension number is also required with Session Initiation Protocol (SIP) dial plans or E.164 dial plans when a UM-enabled user is linked to a SIP URI or E.164 dial plan. This extension number is used by Outlook Voice Access users when they access their Exchange mailbox.
+        When you create a Telephone extension dial plan, you're required to enter an extension number for the user when they're linked to a Telephone extension dial plan. An extension number is also required with Session Initiation Protocol (SIP) dial plans or E.164 dial plans when a UM-enabled user is linked to a SIP URI or E.164 dial plan. This extension number is used by Outlook Voice Access users when they access their Exchange mailbox.
     
       - **Dial plan type**   A Uniform Resource Identifier (URI) is a string of characters that identifies or names a resource. The main purpose of this identification is to enable VoIP devices to communicate with other devices over a network using specific protocols. URIs are defined in schemes that define a specific syntax and format and the protocols for the call. In simple terms, this format is passed from the IP PBX or PBX. After you create a UM dial plan, you won't be able to change the URI type without deleting the dial plan, and then re-creating the dial plan to include the correct URI type. You can select one of the following URI types for the dial plan:
         
@@ -169,7 +173,7 @@ Perform the following procedure to create a new UM dial plan.
     
 
     > [!IMPORTANT]
-    > In previous versions of Exchange, the Unified Messaging server had to be added to a UM dial plan. In Exchange 2013, Client Access and Mailbox servers can’t be associated with a Telephone extension or E.164 dial plan. Client Access and Mailbox servers will answer all incoming calls for all types of dial plans. However, if you’re integrating UM with Microsoft Lync Server, you must add all Client Access and Mailbox servers to all SIP URI dial plans to enable call routing to work correctly with Lync Server.
+    > In previous versions of Exchange, the Unified Messaging server had to be added to a UM dial plan. In Exchange 2013, Client Access and Mailbox servers can't be associated with a Telephone extension or E.164 dial plan. Client Access and Mailbox servers will answer all incoming calls for all types of dial plans. However, if you're integrating UM with Microsoft Lync Server, you must add all Client Access and Mailbox servers to all SIP URI dial plans to enable call routing to work correctly with Lync Server.
 
 
 
@@ -197,7 +201,7 @@ Perform the following procedure to create a new UM IP gateway.
         
         You can enter alphabetical and numeric characters in this box. IPv4 addresses, IPv6 addresses, and FQDNs are supported. If you want to use mutual TLS between a UM IP gateway and a dial plan operating in either SIP secured or Secured mode, you must configure the UM IP gateway with an FQDN. You must also configure it to listen on port 5061 and verify that any VoIP gateways or IP PBXs have also been configured to listen for mutual TLS requests on port 5061. To configure a UM IP gateway, run the following command: `Set-UMIPGateway -identity MyUMIPGateway -Port 5061`.
         
-        If you use an FQDN, you must also make sure that you’ve correctly configured a DNS host record for the VoIP gateway so that the host name will be correctly resolved to an IP address. Also, if you use an FQDN instead of an IP address, and the DNS configuration for the UM IP gateway is changed, you must disable and then enable the UM IP gateway to make sure that configuration information for the UM IP gateway is updated correctly
+        If you use an FQDN, you must also make sure that you've correctly configured a DNS host record for the VoIP gateway so that the host name will be correctly resolved to an IP address. Also, if you use an FQDN instead of an IP address, and the DNS configuration for the UM IP gateway is changed, you must disable and then enable the UM IP gateway to make sure that configuration information for the UM IP gateway is updated correctly
     
       - **UM dial plan**   Click **Browse** to select the UM dial plan that you want to associate with the UM IP gateway. When you select a UM dial plan to associate with a UM IP gateway, a default UM hunt group is also created and associated with the UM dial plan that you selected. If you don't select a UM dial plan, you must manually create a UM hunt group and then associate that UM hunt group with the UM IP gateway that you create.
 
@@ -223,7 +227,7 @@ When you create a UM hunt group, you enable all Mailbox servers that are specifi
     
       - **Associated UM IP gateway**   This display-only box shows the name of the UM IP gateway that will be associated with the UM hunt group.
     
-      - **Name**   Use this box to create the display name for the UM hunt group. A UM hunt group name is required and must be unique, but it's used only for display purposes in the EAC and the Shell. If you have to change the display name of the hunt group after it’s been created, you must first delete the existing hunt group and then create another hunt group that has the appropriate name.
+      - **Name**   Use this box to create the display name for the UM hunt group. A UM hunt group name is required and must be unique, but it's used only for display purposes in the EAC and the Shell. If you have to change the display name of the hunt group after it's been created, you must first delete the existing hunt group and then create another hunt group that has the appropriate name.
         
         If your organization uses multiple hunt groups, we recommend that you use meaningful names for your hunt groups. The maximum length of a UM hunt group name is 64 characters, and it can include spaces. However, it can't include any of the following characters: " / \\ \[ \] : ; | = , + \* ? \< \>.
     
@@ -253,9 +257,9 @@ Every time that you create a UM dial plan, a UM mailbox policy is also created. 
 
 3.  On the **New UM Mailbox Policy** page, in the **Name** text box, enter the name of the new UM mailbox policy.
     
-    Use this box to specify a unique name for the UM mailbox policy. This is a display name that appears in the EAC. If you must change the display name of the UM mailbox policy after it's been created, you must first delete the existing UM mailbox policy, and then create another UM mailbox policy that has the appropriate name. You can’t delete a UM mailbox policy if any UM-enabled users are associated with it.
+    Use this box to specify a unique name for the UM mailbox policy. This is a display name that appears in the EAC. If you must change the display name of the UM mailbox policy after it's been created, you must first delete the existing UM mailbox policy, and then create another UM mailbox policy that has the appropriate name. You can't delete a UM mailbox policy if any UM-enabled users are associated with it.
     
-    The UM mailbox policy name is required, but it is used for display purposes only. Because your organization may use multiple UM mailbox policies, we recommend that you use meaningful names for your UM mailbox policies. The maximum length of a UM mailbox policy name is 64 characters, and it can include spaces. However, it can’t include any of the following characters: " / \\ \[ \] : ; | = , + \* ? \< \>.
+    The UM mailbox policy name is required, but it is used for display purposes only. Because your organization may use multiple UM mailbox policies, we recommend that you use meaningful names for your UM mailbox policies. The maximum length of a UM mailbox policy name is 64 characters, and it can include spaces. However, it can't include any of the following characters: " / \\ \[ \] : ; | = , + \* ? \< \>.
 
 4.  Click **Save** to save the new UM mailbox policy. When you save the UM mailbox policy, all of the default settings including PIN policies, voice mail features, and Protected Voice Mail settings are enabled. If you want to customize or change any default settings, use the **Set-UMMailbox** cmdlet to change the settings for the UM mailbox policy you just created.
 
@@ -281,7 +285,7 @@ Creating and using auto attendants is optional in Unified Messaging. However, if
         
         If you have to change the display name of the auto attendant after it's created, you must first delete the existing UM auto attendant and then create another auto attendant that has the appropriate name. If your organization uses multiple UM auto attendants, we recommend that you use meaningful names for your UM auto attendants. The maximum length of a UM auto attendant name is 64 characters, and it can include spaces.
         
-        Although you can name a new UM auto attendant to include spaces, if you integrate Unified Messaging with Office Communications Server 2007 R2 or Microsoft Lync Server, the name of the auto attendant can’t include spaces. Therefore, if you created an auto attendant that has spaces in the display name and you’re integrating with Office Communications Server 2007 R2 or Lync Server, you must first delete that auto attendant and then create another auto attendant that doesn't include spaces in the display name.
+        Although you can name a new UM auto attendant to include spaces, if you integrate Unified Messaging with Office Communications Server 2007 R2 or Microsoft Lync Server, the name of the auto attendant can't include spaces. Therefore, if you created an auto attendant that has spaces in the display name and you're integrating with Office Communications Server 2007 R2 or Lync Server, you must first delete that auto attendant and then create another auto attendant that doesn't include spaces in the display name.
     
       - **Create this auto attendant as enabled**   Select this check box to enable the auto attendant to answer incoming calls when you finish creating the UM auto attendant. By default, a new auto attendant is created as disabled.
         
@@ -335,7 +339,7 @@ In Unified Messaging, PIN policies are defined and configured on a UM mailbox po
 
 ## Set up client voice mail features
 
-After you’ve deployed your servers and the required UM components, there are several optional voice mail-related features that you can configure. For more information, see the following:
+After you've deployed your servers and the required UM components, there are several optional voice mail-related features that you can configure. For more information, see the following:
 
   - [Setting up Outlook Voice Access](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access)
 

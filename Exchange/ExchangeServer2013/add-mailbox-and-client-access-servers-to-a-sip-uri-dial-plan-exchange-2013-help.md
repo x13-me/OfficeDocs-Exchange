@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Add Mailbox and Client Access servers to a SIP URI dial plan'
 TOCTitle: Add Mailbox and Client Access servers to a SIP URI dial plan
 ms:assetid: 17fed308-ff0d-4e61-b9f9-e6680b6eccaa
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996399(v=EXCHG.150)
 ms:contentKeyID: 51439477
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,9 +19,9 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-You can add Client Access and Mailbox servers to SIP URI dial plans. Client Access and Mailbox servers can’t be associated with Telephone Extension or E.164 dial plans, but the servers will answer all incoming calls.
+You can add Client Access and Mailbox servers to SIP URI dial plans. Client Access and Mailbox servers can't be associated with Telephone Extension or E.164 dial plans, but the servers will answer all incoming calls.
 
-If you’re deploying Microsoft Lync Server, to enable outbound calling to work correctly, you must manually add all Client Access and Mailbox servers to all SIP URI dial plans that you’ve created for Lync Server.
+If you're deploying Microsoft Lync Server, to enable outbound calling to work correctly, you must manually add all Client Access and Mailbox servers to all SIP URI dial plans that you've created for Lync Server.
 
 For additional management tasks related to UM dial plans, see [UM dial plan procedures](um-dial-plan-procedures-exchange-2013-help.md).
 

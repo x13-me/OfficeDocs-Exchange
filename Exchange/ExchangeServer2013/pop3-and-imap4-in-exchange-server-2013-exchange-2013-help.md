@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'POP3 and IMAP4 in Exchange Server 2013: Exchange 2013 Help'
 TOCTitle: POP3 and IMAP4
 ms:assetid: a7dc91ee-2919-4db3-ae9c-cd665d2e09ea
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657728(v=EXCHG.150)
 ms:contentKeyID: 49300645
 ms.date: 08/16/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -49,7 +53,7 @@ The POP3 and IMAP4 protocols have the following benefits and limitations:
 
   - **IMAP4**   IMAP4 offers offline and online access but, like POP3, IMAP4 doesn't offer advanced collaboration features such as calendaring, contacts, and tasks.
 
-POP3 and IMAP4 email applications don’t use POP3 and IMAP4 to send messages to the email server; they rely on the SMTP protocol to send messages. The connector for receiving email submissions from client applications that use POP3 or IMAP4 is created automatically when you install Exchange. For more information about connectors, see [Receive connectors](receive-connectors-exchange-2013-help.md).
+POP3 and IMAP4 email applications don't use POP3 and IMAP4 to send messages to the email server; they rely on the SMTP protocol to send messages. The connector for receiving email submissions from client applications that use POP3 or IMAP4 is created automatically when you install Exchange. For more information about connectors, see [Receive connectors](receive-connectors-exchange-2013-help.md).
 
 
 > [!NOTE]
@@ -69,7 +73,7 @@ You can't use an Anonymous account or Guest account to sign in to an Exchange 20
 
 **POP3** POP3 is a frequently used email Internet protocol. By default, when POP3 email applications download email messages to a client computer, the downloaded messages are removed from the server. When a copy of your user's email isn't kept on the email server, the user can't access the same email messages from multiple computers. However, some POP3 email applications can be configured to keep copies of the messages on the server so that the same email messages can be accessed from another computer. POP3 client applications can only be used to download messages from the email server to a single folder (usually the Inbox) on the client computer. The POP3 protocol can't synchronize multiple folders on the email server with multiple folders on the client computer.
 
-**IMAP4** Email client applications that use IMAP4 are more flexible and generally offer more features than email client applications that use POP3. By default, when IMAP4 email applications download email messages to a client computer, a copy of downloaded messages remains on the email server. Because a copy of the user’s email message is kept on the email server, the user can access the same email message from multiple computers. With IMAP4 email, the user can access and create multiple email folders on the email server. Users can then access any of their messages on the server from computers in multiple locations. For example, most IMAP4 applications can be configured to keep a copy of a user's sent items on the server so that they can view their sent items from any other computer. IMAP4 supports additional features that are supported by most IMAP4 applications. For example, some IMAP4 applications include a feature that lets the user view only the headers of their email messages on the server—who the message is from and the subject—and then download only the messages that they want to read. IMAP4 also doesn't support public folder access.
+**IMAP4** Email client applications that use IMAP4 are more flexible and generally offer more features than email client applications that use POP3. By default, when IMAP4 email applications download email messages to a client computer, a copy of downloaded messages remains on the email server. Because a copy of the user's email message is kept on the email server, the user can access the same email message from multiple computers. With IMAP4 email, the user can access and create multiple email folders on the email server. Users can then access any of their messages on the server from computers in multiple locations. For example, most IMAP4 applications can be configured to keep a copy of a user's sent items on the server so that they can view their sent items from any other computer. IMAP4 supports additional features that are supported by most IMAP4 applications. For example, some IMAP4 applications include a feature that lets the user view only the headers of their email messages on the server (who the message is from and the subject) and then download only the messages that they want to read. IMAP4 also doesn't support public folder access.
 
 
 > [!NOTE]
@@ -125,7 +129,7 @@ To connect from inside the corporate network, users will need the following info
 
   - Internal SMTP (outgoing server) encryption method
 
-To connect from the Internet, they’ll need the following information:
+To connect from the Internet, they'll need the following information:
 
   - External POP3 or IMAP4 server name
 
@@ -143,7 +147,7 @@ You can make these settings available to your users through email or other manua
 
 **Configure Exchange so users can look up their POP3, IMAP4, and SMTP server settings**
 
-By default, users can’t look up their POP3, IMAP4, and SMTP server settings through Outlook Web App. To allow your users to do this, you need to use the **Set-PopSettings** and **Set-ImapSettings** cmdlets. To allow your users to look up their SMTP (outgoing) server settings, you must use the **Set-ReceiveConnector** cmdlet.
+By default, users can't look up their POP3, IMAP4, and SMTP server settings through Outlook Web App. To allow your users to do this, you need to use the **Set-PopSettings** and **Set-ImapSettings** cmdlets. To allow your users to look up their SMTP (outgoing) server settings, you must use the **Set-ReceiveConnector** cmdlet.
 
 Do the following to allow users to look up their own POP3, IMAP4, and SMTP settings:
 

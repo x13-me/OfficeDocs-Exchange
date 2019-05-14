@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Queues: Exchange 2013 Help'
 TOCTitle: Queues
 ms:assetid: e7ad0ba5-3789-4a2b-9825-6bb1b321609c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125022(v=EXCHG.150)
 ms:contentKeyID: 50646240
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -449,7 +453,7 @@ The current status of a queue is stored in the **Status** property of the queue.
 
   - **Retry**   The last automatic or manual connection attempt failed, and the queue is waiting to retry the connection.
 
-  - **Suspended**   The queue has been manually suspended by an administrator to prevent message delivery. New messages can enter the queue, and messages that are in the act of being transmitted to the next hop will finish delivery and leave the queue. Otherwise, messages won't leave the queue until the queue is manually resumed by an administrator. Note that suspending a queue doesn’t change the status of the individual messages in the queue.
+  - **Suspended**   The queue has been manually suspended by an administrator to prevent message delivery. New messages can enter the queue, and messages that are in the act of being transmitted to the next hop will finish delivery and leave the queue. Otherwise, messages won't leave the queue until the queue is manually resumed by an administrator. Note that suspending a queue doesn't change the status of the individual messages in the queue.
     
     You can suspend a queue that has a status of Active or Retry. You can also suspend the Unreachable queue and the Submission queue.
     

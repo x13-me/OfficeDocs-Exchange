@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage role assignment policies: Exchange 2013 Help'
 TOCTitle: Manage role assignment policies
 ms:assetid: f93d502e-5df4-4ba0-b68d-01a17ccffb4d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657511(v=EXCHG.150)
 ms:contentKeyID: 49289465
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -200,7 +204,7 @@ This procedure makes use of pipelining and the **Where** cmdlet. For more inform
 This example returns the default assignment policy.
 
 ```powershell
-Get-RoleAssignmentPolicy | Where {     Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }.IsDefault -eq $True }
+Get-RoleAssignmentPolicy | Where {Get-RoleAssignmentPolicy | Where {$_.IsDefault -eq $True}.IsDefault -eq $True }
 ```
 
 For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\)) or [Get-RoleAssignmentPolicy](https://technet.microsoft.com/en-us/library/dd638195\(v=exchg.150\)).
@@ -218,20 +222,20 @@ This procedure makes use of pipelining and the **Where** cmdlet. For more inform
 Use the following syntax.
 
 ```powershell
-Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }.RoleAssignmentPolicy -Eq "<role assignment policy>" }
+Get-Mailbox | Where {Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "<role assignment policy>"}.RoleAssignmentPolicy -Eq "<role assignment policy>" }
 ```
 
 This example finds all the mailboxes assigned the policy Vancouver End Users.
 
 ```powershell
-Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }.RoleAssignmentPolicy -Eq "Vancouver End Users" }
+Get-Mailbox | Where {Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Vancouver End Users"}.RoleAssignmentPolicy -Eq "Vancouver End Users" }
 ```
 
 For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\)) or [Get-RoleAssignmentPolicy](https://technet.microsoft.com/en-us/library/dd638195\(v=exchg.150\)).
 
 ## Change the default assignment policy
 
-You can change the management role assignment policy assigned to new mailboxes that are created. Changing the default role assignment policy doesn’t change the assignment policy assigned to existing mailboxes. To change the assignment policy assigned to existing mailboxes, see [Change the assignment policy on a mailbox](change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md).
+You can change the management role assignment policy assigned to new mailboxes that are created. Changing the default role assignment policy doesn't change the assignment policy assigned to existing mailboxes. To change the assignment policy assigned to existing mailboxes, see [Change the assignment policy on a mailbox](change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md).
 
 
 > [!NOTE]

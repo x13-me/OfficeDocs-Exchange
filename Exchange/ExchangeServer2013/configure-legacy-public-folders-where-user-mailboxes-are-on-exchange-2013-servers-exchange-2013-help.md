@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure legacy public folders when user mailboxes are on Exchange 2013 servers'
 TOCTitle: Configure legacy public folders where user mailboxes are on Exchange 2013 servers
 ms:assetid: 1d5ca19e-696e-4054-a634-15dd34d952b7
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn690134(v=EXCHG.150)
 ms:contentKeyID: 62380198
 ms.date: 03/27/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -19,7 +23,7 @@ How to enable Exchange 2013 or Exchange 2016 users to access Exchange 2010 or ea
 
 ## What do you need to know before you begin?
 
-Users whose mailboxes are on Exchange Server 2013 or Exchange Server 2016 won’t be able to access legacy public folders from Outlook Web App, Outlook on the web, or Outlook for Mac. The steps in this article work for both Exchange 2013 and Exchange 2016.
+Users whose mailboxes are on Exchange Server 2013 or Exchange Server 2016 won't be able to access legacy public folders from Outlook Web App, Outlook on the web, or Outlook for Mac. The steps in this article work for both Exchange 2013 and Exchange 2016.
 
 
 > [!NOTE]
@@ -29,11 +33,11 @@ Users whose mailboxes are on Exchange Server 2013 or Exchange Server 2016 won’
 
 ## Step 1: Make the Exchange 2010 public folders discoverable
 
-1.  If your public folders are on servers that are running Exchange Server 2010 or a later version, you must install the Client Access server (CAS) role on all mailbox servers that have a public folder database. You must also enable Outlook Anywhere on all public folder servers. This allows the Microsoft Exchange RpcClientAccess service to run so that all clients can access public folders. For Exchange Server 2007 public folder servers, the CAS role isn’t required, and this step isn’t necessary. For more information, see [Install Exchange Server 2010](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md).
+1.  If your public folders are on servers that are running Exchange Server 2010 or a later version, you must install the Client Access server (CAS) role on all mailbox servers that have a public folder database. You must also enable Outlook Anywhere on all public folder servers. This allows the Microsoft Exchange RpcClientAccess service to run so that all clients can access public folders. For Exchange Server 2007 public folder servers, the CAS role isn't required, and this step isn't necessary. For more information, see [Install Exchange Server 2010](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md).
     
 
     > [!NOTE]
-    > This server doesn’t have to be part of the Client Access load balancing. For more information, see <A href="https://technet.microsoft.com/en-us/library/ff625247(v=exchg.141).aspx">Understanding Load Balancing in Exchange 2010</A>.
+    > This server doesn't have to be part of the Client Access load balancing. For more information, see <A href="https://technet.microsoft.com/en-us/library/ff625247(v=exchg.141).aspx">Understanding Load Balancing in Exchange 2010</A>.
 
 
 
@@ -53,7 +57,7 @@ Users whose mailboxes are on Exchange Server 2013 or Exchange Server 2016 won’
     
 
     > [!NOTE]  
-    > We recommend that the only mailbox that you add to this database is the proxy mailbox that you’ll create in step&nbsp;3. No other mailboxes should be created on this mailbox database.
+    > We recommend that the only mailbox that you add to this database is the proxy mailbox that you'll create in step&nbsp;3. No other mailboxes should be created on this mailbox database.
 
 
 
@@ -68,7 +72,7 @@ Users whose mailboxes are on Exchange Server 2013 or Exchange Server 2016 won’
     ```
     
 
-4.  For Exchange 2010, enable AutoDiscover to return the proxy public folder mailboxes. This step isn’t necessary for Exchange 2007.
+4.  For Exchange 2010, enable AutoDiscover to return the proxy public folder mailboxes. This step isn't necessary for Exchange 2007.
     
     ```powershell
     Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
@@ -99,7 +103,7 @@ Log on to Outlook for a user whose mailbox is on an Exchange Server 2013 CU5 or 
 
 2.  Hold down the CTRL key, and then right-click on the Outlook icon in the notification area on the right side of the Windows task bar.
 
-3.  Select **Test E-Mail Auto Configuration…**
+3.  Select **Test E-Mail Auto Configuration...**
 
 4.  Make sure the Text E-mail Auto Configuration tool returns the following information in the XML tab:
     

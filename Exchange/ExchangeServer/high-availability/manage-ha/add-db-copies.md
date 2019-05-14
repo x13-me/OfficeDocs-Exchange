@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 784bf48f-8af5-422c-a63f-2f01fc0cf151
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Add a mailbox database copy
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -54,7 +55,7 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 4. Optionally, configure the **Activation preference number** for the database copy.
 
-5. Click **More options…** to designate the database copy as a lagged database copy by configuring a replay lag time, or to postpone automatic seeding of the database copy.
+5. Click **More options...** to designate the database copy as a lagged database copy by configuring a replay lag time, or to postpone automatic seeding of the database copy.
 
 6. Click **Save** to save the configuration changes and add the mailbox database copy.
 

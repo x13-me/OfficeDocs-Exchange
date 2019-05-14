@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Address book policy procedures: Exchange 2013 Help'
 TOCTitle: Address book policy procedures
 ms:assetid: 1204db89-ee4b-459a-8c14-e8d60dd6c4a4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Hh529916(v=EXCHG.150)
 ms:contentKeyID: 49289177
 ms.date: 06/04/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

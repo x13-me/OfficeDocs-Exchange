@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Perform a Server Switchover: Exchange 2013 Help'
 TOCTitle: Perform a Server Switchover
 ms:assetid: ffcefd56-b0a0-4229-9011-fff4197b7c74
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298187(v=EXCHG.150)
 ms:contentKeyID: 62523709
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

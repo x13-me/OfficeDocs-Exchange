@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Install the Exchange 2013 management tools: Exchange 2013 Help'
 TOCTitle: Install the Exchange 2013 management tools
 ms:assetid: 71fcbe4c-783b-4f77-aabb-a21aa7a4ef23
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232090(v=EXCHG.150)
 ms:contentKeyID: 49289303
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -19,7 +23,7 @@ With the Microsoft Exchange Server 2013 management tools, you can configure and 
 
 
 > [!NOTE]
-> You don’t need to perform this procedure to use the Exchange Administration Center (EAC) remotely. The EAC is a web-based console that’s hosted on computers running the Exchange 2013 Client Access server role. For more information about accessing the EAC remotely, see <A href="exchange-admin-center-in-exchange-2013-exchange-2013-help.md">Exchange admin center in Exchange 2013</A>.
+> You don't need to perform this procedure to use the Exchange Administration Center (EAC) remotely. The EAC is a web-based console that's hosted on computers running the Exchange 2013 Client Access server role. For more information about accessing the EAC remotely, see <A href="exchange-admin-center-in-exchange-2013-exchange-2013-help.md">Exchange admin center in Exchange 2013</A>.
 
 
 
@@ -78,7 +82,7 @@ For more information about managing Exchange 2013, see [Exchange admin center in
 
 9.  On the **Installation Space and Location** page, either accept the default installation location or click **Browse** to choose a new location. Make sure that you have enough disk space available in the location where you want to install Exchange. Click **Next** to continue.
 
-10. If this is the first time you’ve run Exchange 2013 Setup in your organization, on the **Exchange Organization** page, type a name for your Exchange organization. The Exchange organization name can contain only the following characters:
+10. If this is the first time you've run Exchange 2013 Setup in your organization, on the **Exchange Organization** page, type a name for your Exchange organization. The Exchange organization name can contain only the following characters:
     
       - A through Z
     

@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting IMAP.Proxy Health Set
 TOCTitle: Troubleshooting IMAP.Proxy Health Set
 ms:assetid: 0edbfa5f-34cd-4bbd-ba23-c2b7d84762f8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.imap.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720728
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -28,7 +32,7 @@ _**Applies to:** Exchange Server 2013_
 
 _**Topic Last Modified:** 2013-02-07_
 
-The IMAP.Proxy health set monitors the availability of the IMAP4 proxy infrastructure on the Client Access server (CAS). If you receive an alert that specifies that the IMAP.Proxy health set is unhealthy, this indicates an issue that affects the IMAP components on the CAS that’s indicated in the alert.
+The IMAP.Proxy health set monitors the availability of the IMAP4 proxy infrastructure on the Client Access server (CAS). If you receive an alert that specifies that the IMAP.Proxy health set is unhealthy, this indicates an issue that affects the IMAP components on the CAS that's indicated in the alert.
 
 <div>
 

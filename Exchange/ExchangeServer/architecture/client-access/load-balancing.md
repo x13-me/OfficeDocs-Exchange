@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: f572c193-6f3a-400e-9085-a9d3e5e18c59
 ms.date: 6/8/2018
+ms.reviewer: 
 title: Load balancing in Exchange Server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: scotv
+manager: dansimp
 
 ---
 
@@ -120,6 +121,7 @@ The ports that need to be load balanced include some, such as those for IMAP4 or
 |**TCP Port**|**Roles**|**Uses**|
 |:-----|:-----|:-----|
 |25  <br/> |Mailbox  <br/> |Inbound SMTP  <br/> |
+|587  <br/> |Mailbox  <br/> |Inbound SMTP for clients  <br/> |
 |110  <br/> |Mailbox  <br/> |POP3 clients  <br/> |
 |143  <br/> |Mailbox  <br/> |IMAP4 clients  <br/> |
 |443  <br/> |Mailbox  <br/> |HTTPS (Outlook on the web, AutoDiscover, web services, ActiveSync, MAPI over HTTP, RPC over HTTP, OAB, EAC  <br/> |

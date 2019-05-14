@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure protocol logging for POP3 and IMAP4: Exchange 2013 Help'
 TOCTitle: Configure protocol logging for POP3 and IMAP4
 ms:assetid: 451b337b-cb6b-4460-8687-be0b19c469bc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997690(v=EXCHG.150)
 ms:contentKeyID: 50395397
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -23,7 +27,7 @@ Protocol logging lets you review the POP3 and IMAP4 connections in your Exchange
 
   - Estimated time to complete: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 settings” and “IMAP4 settings" entries in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 settings" and "IMAP4 settings" entries in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -45,7 +49,7 @@ This example enables protocol logging for IMAP4 or POP3 on the Client Access ser
 ```
 
 > [!NOTE]
-> After you've changed protocol logging settings for POP3 or IMAP4, you must restart whichever services you’re using: POP3 or IMAP4. For information about how to restart the POP3 and IMAP4 services, see <A href="start-and-stop-the-pop3-services-exchange-2013-help.md">Start and stop the POP3 services</A> and <A href="start-and-stop-the-imap4-services-exchange-2013-help.md">Start and stop the IMAP4 services</A>.
+> After you've changed protocol logging settings for POP3 or IMAP4, you must restart whichever services you're using: POP3 or IMAP4. For information about how to restart the POP3 and IMAP4 services, see <A href="start-and-stop-the-pop3-services-exchange-2013-help.md">Start and stop the POP3 services</A> and <A href="start-and-stop-the-imap4-services-exchange-2013-help.md">Start and stop the IMAP4 services</A>.
 
 
 
@@ -61,7 +65,7 @@ This example disables protocol logging for IMAP4 or POP3 on the Client Access se
 ```
 
 > [!NOTE]
-> After you've changed protocol logging settings for POP3 or IMAP4, you must restart whichever services you’re using: POP3 or IMAP4. For information about how to restart the POP3 and IMAP4 services, see <A href="start-and-stop-the-pop3-services-exchange-2013-help.md">Start and stop the POP3 services</A> and <A href="start-and-stop-the-imap4-services-exchange-2013-help.md">Start and stop the IMAP4 services</A>.
+> After you've changed protocol logging settings for POP3 or IMAP4, you must restart whichever services you're using: POP3 or IMAP4. For information about how to restart the POP3 and IMAP4 services, see <A href="start-and-stop-the-pop3-services-exchange-2013-help.md">Start and stop the POP3 services</A> and <A href="start-and-stop-the-imap4-services-exchange-2013-help.md">Start and stop the IMAP4 services</A>.
 
 
 
@@ -109,7 +113,7 @@ To modify POP3 or IMAP4 logging settings, run the **Set-ImapSettings** or **Set-
 
 
 > [!NOTE]
-> After you've changed protocol logging settings for POP3 or IMAP4, you must restart whichever services you’re using: POP3 or IMAP4. For information about how to restart the POP3 and IMAP4 services, see <A href="start-and-stop-the-pop3-services-exchange-2013-help.md">Start and stop the POP3 services</A> and <A href="start-and-stop-the-imap4-services-exchange-2013-help.md">Start and stop the IMAP4 services</A>.
+> After you've changed protocol logging settings for POP3 or IMAP4, you must restart whichever services you're using: POP3 or IMAP4. For information about how to restart the POP3 and IMAP4 services, see <A href="start-and-stop-the-pop3-services-exchange-2013-help.md">Start and stop the POP3 services</A> and <A href="start-and-stop-the-imap4-services-exchange-2013-help.md">Start and stop the IMAP4 services</A>.
 
 
 

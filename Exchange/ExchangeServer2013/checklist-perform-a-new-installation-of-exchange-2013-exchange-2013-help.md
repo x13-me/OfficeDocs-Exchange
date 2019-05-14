@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Checklist: Perform a new installation of Exchange 2013: Exchange 2013 Help'
 TOCTitle: 'Checklist: Perform a new installation of Exchange 2013'
 ms:assetid: f70d9dd3-7370-472e-b05e-1ea1671272b2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff805042(v=EXCHG.150)
 ms:contentKeyID: 49289467
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -145,7 +149,7 @@ This checklist is generic in that it provides guidance for a typical scenario.
 <td><p>15. Configure additional Unified Messaging and Lync Server settings.</p>
 
 > [!NOTE]
-> This step is optional. It's only necessary if you’ve configured Unified Messaging in your organization and want to integrate it with Lync Server.
+> This step is optional. It's only necessary if you've configured Unified Messaging in your organization and want to integrate it with Lync Server.
 
 
 </td>

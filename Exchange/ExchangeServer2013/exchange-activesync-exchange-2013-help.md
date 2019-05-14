@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Exchange ActiveSync: Exchange 2013 Help'
 TOCTitle: Exchange ActiveSync
 ms:assetid: 5fafaff3-eb37-4fdb-95f0-e56c45ea5884
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998357(v=EXCHG.150)
 ms:contentKeyID: 48385136
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,7 +19,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-Learn about the Exchange ActiveSync client protocol for Exchange Server 2013. You’ll learn about the features of Exchange ActiveSync including security features, the things you can manage, how to make it secure, and how to avoid problems synching to Windows Phone 7.
+Learn about the Exchange ActiveSync client protocol for Exchange Server 2013. You'll learn about the features of Exchange ActiveSync including security features, the things you can manage, how to make it secure, and how to avoid problems synching to Windows Phone 7.
 
 
 > [!TIP]
@@ -128,7 +132,7 @@ In addition to the ability to configure security options for communications betw
     
 
     > [!WARNING]
-    > The iOS7 fingerprint reader technology cannot be used as a device password. If you choose to use the iOS7 fingerprint reader, you’ll still need to create and enter a device password if the mobile device mailbox policy for your organization requires a device password.
+    > The iOS7 fingerprint reader technology cannot be used as a device password. If you choose to use the iOS7 fingerprint reader, you'll still need to create and enter a device password if the mobile device mailbox policy for your organization requires a device password.
 
     
     The device password options include the following:
@@ -151,7 +155,7 @@ In addition to the ability to configure security options for communications betw
     
       - **Require encryption on device**   Select this check box to require encryption on the mobile device. This increases security by encrypting all information on the mobile device.
     
-      - **Require encryption on storage cards**   Select this check box to require encryption on the mobile device’s removable storage card. This increases security by encrypting all information on the storage cards for the mobile device.
+      - **Require encryption on storage cards**   Select this check box to require encryption on the mobile device's removable storage card. This increases security by encrypting all information on the storage cards for the mobile device.
 
 ## Windows Phone 7 synchronization
 

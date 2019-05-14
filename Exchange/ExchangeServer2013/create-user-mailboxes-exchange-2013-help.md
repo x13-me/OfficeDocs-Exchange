@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create user mailboxes: Exchange 2013 Help'
 TOCTitle: Create user mailboxes
 ms:assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ991919(v=EXCHG.150)
 ms:contentKeyID: 51588093
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -17,13 +21,13 @@ _**Applies to:** Exchange Online, Exchange Server 2013_
 
 Mailboxes are the most common recipient type used by information workers in an Exchange organization. Each mailbox is associated with an Active Directory user account. The user can use the mailbox to send and receive messages, and to store messages, appointments, tasks, notes, and documents. Use the EAC or the Shell to create user mailboxes.
 
-You can also create user mailboxes for existing users that have an Active Directory user account but don’t have a corresponding mailbox. This is known as *mailbox-enabling* existing users.
+You can also create user mailboxes for existing users that have an Active Directory user account but don't have a corresponding mailbox. This is known as *mailbox-enabling* existing users.
 
 ## What do you need to know before you begin?
 
   - Estimated time to complete each user mailbox task: 2 to 5 minutes.
 
-  - When you create a new user mailbox, you can’t use an apostrophe (') or a quotation mark (") in the alias or the user logon name because these characters aren’t supported. Although you might not receive an error if you create a new mailbox using unsupported characters, these characters can cause problems later. For example, users that have been assigned access permissions to a mailbox that was created using an unsupported character may experience problems or unexpected behavior.
+  - When you create a new user mailbox, you can't use an apostrophe (') or a quotation mark (") in the alias or the user logon name because these characters aren't supported. Although you might not receive an error if you create a new mailbox using unsupported characters, these characters can cause problems later. For example, users that have been assigned access permissions to a mailbox that was created using an unsupported character may experience problems or unexpected behavior.
 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
@@ -45,7 +49,7 @@ You can also create user mailboxes for existing users that have an Active Direct
 
 2.  Click **New** \> **User mailbox**.
 
-3.  On the **New user mailbox** page, in the **Alias** box, type the user’s alias, which specifies the email alias for the user. The user’s alias is the portion of the email address on the left side of the at (@) symbol. It must be unique in the forest.
+3.  On the **New user mailbox** page, in the **Alias** box, type the user's alias, which specifies the email alias for the user. The user's alias is the portion of the email address on the left side of the at (@) symbol. It must be unique in the forest.
     
 
     > [!NOTE]
@@ -57,7 +61,7 @@ You can also create user mailboxes for existing users that have an Active Direct
     
       - **Existing user**   Select to mail-enable and create a mailbox for an existing user.
         
-        Click **Browse** to open the **Select User – Entire Forest** dialog box. This dialog box displays a list of Active Directory user accounts in the forest that aren't mail-enabled or don't have Exchange mailboxes. Select the user account you want to mail-enable, and then click **OK**. If you select this option, you don’t have to provide user account information because this information already exists in Active Directory.
+        Click **Browse** to open the **Select User - Entire Forest** dialog box. This dialog box displays a list of Active Directory user accounts in the forest that aren't mail-enabled or don't have Exchange mailboxes. Select the user account you want to mail-enable, and then click **OK**. If you select this option, you don't have to provide user account information because this information already exists in Active Directory.
     
       - **New user**   Select to create a new user account in Active Directory and create a mailbox for this user. If you select this option, you'll have to provide the required user account information.
     
@@ -75,7 +79,7 @@ You can also create user mailboxes for existing users that have an Active Direct
     
       - **Last name**   Use this box to type the last name of the user.
     
-      - **\* Display name**   Use this box to type a display name for the user. This is the name that's listed in the mailbox list in the EAC and in the shared address book. By default, this box is populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it’s required. The name can't exceed 64 characters.
+      - **\* Display name**   Use this box to type a display name for the user. This is the name that's listed in the mailbox list in the EAC and in the shared address book. By default, this box is populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it's required. The name can't exceed 64 characters.
     
       - **\* Name**   Use this box to type a name for the user. This is the name that's listed in Active Directory. This box is also populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name because this box is required. This name also can't exceed 64 characters.
     
@@ -83,11 +87,11 @@ You can also create user mailboxes for existing users that have an Active Direct
         
         To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the desired OU, and then click **OK**.
     
-      - **\* User logon name**    Use this box to type the name that the user will use to sign in to the mailbox and to log on to the domain. The user logon name consists of a user name on the left side of the at (@) symbol and a suffix on the right side. Typically, the suffix is the domain name in which the user account resides. Note that you can’t use an apostrophe (') or a quotation mark (") in the user logon name because these characters aren’t supported.
+      - **\* User logon name**    Use this box to type the name that the user will use to sign in to the mailbox and to log on to the domain. The user logon name consists of a user name on the left side of the at (@) symbol and a suffix on the right side. Typically, the suffix is the domain name in which the user account resides. Note that you can't use an apostrophe (') or a quotation mark (") in the user logon name because these characters aren't supported.
         
 
         > [!NOTE]
-        > If the value for the user name is different than the value used in the <STRONG>Alias</STRONG> box, then the user’s email address and the user logon name will be different.
+        > If the value for the user name is different than the value used in the <STRONG>Alias</STRONG> box, then the user's email address and the user logon name will be different.
 
     
       - **\* New Password**   Use this box to type the password that the user must use to sign in to his or her mailbox.
@@ -145,7 +149,7 @@ For syntax and parameter information, see [New-Mailbox](https://technet.microsof
 
 ## How do you know this worked?
 
-To verify that you’ve successfully created a user mailbox, do one of the following:
+To verify that you've successfully created a user mailbox, do one of the following:
 
   - In the EAC, navigate to **Recipients**  \> **Mailboxes**. The new user mailbox is displayed in the mailbox list. Under **Mailbox Type**, the type is **User**.
 
@@ -157,7 +161,7 @@ To verify that you’ve successfully created a user mailbox, do one of the follo
 
 ## Create a mailbox for an existing user
 
-You can also create user mailboxes for existing users that have an Active Directory user account but don’t have a corresponding mailbox. This is known as *mailbox-enabling* existing users. After you mailbox-enable an existing user, the user can send and receive email messages.
+You can also create user mailboxes for existing users that have an Active Directory user account but don't have a corresponding mailbox. This is known as *mailbox-enabling* existing users. After you mailbox-enable an existing user, the user can send and receive email messages.
 
 ## Use the EAC to create a mailbox for an existing user
 
@@ -165,7 +169,7 @@ You can also create user mailboxes for existing users that have an Active Direct
 
 2.  Click **New** \> **User mailbox**.
 
-3.  On the **New user mailbox** page, in the **Alias** box, type the user’s alias, which specifies the email alias for the user. The user’s alias is the portion of the email address on the left side of the at (@) symbol. It must be unique in the forest.
+3.  On the **New user mailbox** page, in the **Alias** box, type the user's alias, which specifies the email alias for the user. The user's alias is the portion of the email address on the left side of the at (@) symbol. It must be unique in the forest.
     
 
     > [!NOTE]
@@ -175,9 +179,9 @@ You can also create user mailboxes for existing users that have an Active Direct
 
 4.  Click **Existing user**.
 
-5.  Click **Browse** to open the **Select User – Entire Forest** dialog box. This dialog box displays a list of Active Directory user accounts in the forest that aren't mail-enabled or don't have Exchange mailboxes. Select the user account you want to mail-enable, and then click **OK**.
+5.  Click **Browse** to open the **Select User - Entire Forest** dialog box. This dialog box displays a list of Active Directory user accounts in the forest that aren't mail-enabled or don't have Exchange mailboxes. Select the user account you want to mail-enable, and then click **OK**.
     
-    When you create a mailbox for an existing user, you don’t have to provide account information because this information already exists in Active Directory.
+    When you create a mailbox for an existing user, you don't have to provide account information because this information already exists in Active Directory.
     
 
     > [!NOTE]
@@ -211,7 +215,7 @@ Enable-Mailbox estherv@contoso.com -Database UsersMailboxDatabase
 
 You can also use the **Enable-Mailbox** cmdlet to mail-enable multiple users. You can do this by piping the results of the **Get-User** cmdlet to the **Enable-Mailbox** cmdlet. When you run the **Get-User** cmdlet, you must return only users that aren't already mail-enabled. To do this, you need to specify the value User with the *RecipientTypeDetails* parameter. You can also limit the results returned by using the *Filter* parameter to request only users that meet the criteria you specify. You then pipe the results to the **Enable-Mailbox** cmdlet.
 
-For example, the following command mailbox-enables users who aren't already mail-enabled and that have a value in the **UserPrincipalName** property, which helps ensure that you don’t inadvertently convert a system account to a mailbox.
+For example, the following command mailbox-enables users who aren't already mail-enabled and that have a value in the **UserPrincipalName** property, which helps ensure that you don't inadvertently convert a system account to a mailbox.
 
 ```powershell
 Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | Enable-Mailbox
@@ -223,7 +227,7 @@ For more information about pipelining, see [Pipelining](https://technet.microsof
 
 ## How do you know this worked?
 
-To verify that you’ve successfully created a mailbox for an existing user, do one of the following:
+To verify that you've successfully created a mailbox for an existing user, do one of the following:
 
   - In the EAC, navigate to **Recipients**  \> **Mailboxes**. The new mailbox-enabled user is displayed in the mailbox list. Under **Mailbox Type**, the type is **User**.
 

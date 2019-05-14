@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Disable or re-enable federated sharing for your Exchange organization'
 TOCTitle: Disable or Re-enable federated sharing for your Exchange organization
 ms:assetid: d36490d8-0268-47b9-a6d4-e56427f1b02e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657497(v=EXCHG.150)
 ms:contentKeyID: 49289421
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -19,7 +23,7 @@ There may be situations when you need to temporarily disable federated sharing f
 
 
 > [!WARNING]
-> For hybrid deployments with Office&nbsp;365, disabling the federation trust for your on-premises servers will also disable hybrid features such as shared calendar free/busy information, MailTips, and message tracking. However, secure mail transport won’t be disabled in the hybrid deployment if the federation trust for the on-premises organization is disabled.
+> For hybrid deployments with Office&nbsp;365, disabling the federation trust for your on-premises servers will also disable hybrid features such as shared calendar free/busy information, MailTips, and message tracking. However, secure mail transport won't be disabled in the hybrid deployment if the federation trust for the on-premises organization is disabled.
 
 
 
@@ -29,7 +33,7 @@ For additional management tasks related to federated sharing, see [Federation pr
 
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn’t fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
+> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
 
 
 
@@ -39,9 +43,9 @@ For additional management tasks related to federated sharing, see [Federation pr
 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the *Federation and certificates* permissions entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-  - Any existing organization relationships and sharing policies for other federated Exchange organizations won’t be modified and won’t be functional. Sharing policies that are configured to provide Internet recipients with access to calendar information won’t be affected.
+  - Any existing organization relationships and sharing policies for other federated Exchange organizations won't be modified and won't be functional. Sharing policies that are configured to provide Internet recipients with access to calendar information won't be affected.
 
-  - You can’t use the Exchange Administration Center (EAC) to disable or enable the OrgID for a federation trust. You must use the Shell.
+  - You can't use the Exchange Administration Center (EAC) to disable or enable the OrgID for a federation trust. You must use the Shell.
 
 ## Use the Shell to disable or re-enable federated sharing
 

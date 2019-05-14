@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting ECP.Proxy Health Set
 TOCTitle: Troubleshooting ECP.Proxy Health Set
 ms:assetid: f2289f81-56cb-40b5-9108-8782976cccc8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.ecp.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720923
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -79,7 +83,7 @@ For more information about probes and monitors, see [Server health and performan
 
 This probe may fail for any of the following common reasons:
 
-  - The application pool that’s hosted on the monitored CAS is not working correctly.
+  - The application pool that's hosted on the monitored CAS is not working correctly.
 
   - The monitoring account credentials are incorrect.
 

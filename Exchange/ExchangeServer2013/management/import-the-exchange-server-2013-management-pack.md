@@ -1,10 +1,14 @@
-﻿---
+---
 title: Import the Exchange Server 2013 Management Pack
 TOCTitle: Import the Exchange Server 2013 Management Pack
 ms:assetid: dc929928-61b8-448b-9ae5-d3fa73a18ee9
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn195914(v=EXCHG.150)
 ms:contentKeyID: 53181787
 ms.date: 02/06/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -70,7 +74,7 @@ Use the following steps to import the Exchange Server 2013 Management Pack. This
 
 7.  On the **Select Management Packs** page, the Exchange Server 2013 Management Pack is listed. Click **Install**.
 
-8.  The **Import Management Packs** page appears and shows the progress. If there’s a problem at any stage of the import process, select the management pack in the list to view the status details.
+8.  The **Import Management Packs** page appears and shows the progress. If there's a problem at any stage of the import process, select the management pack in the list to view the status details.
 
 9.  When the import is complete, click **Close**.
 

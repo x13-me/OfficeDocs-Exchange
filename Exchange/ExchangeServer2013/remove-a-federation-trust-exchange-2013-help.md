@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Remove a federation trust: Exchange 2013 Help'
 TOCTitle: Remove a federation trust
 ms:assetid: dc4d126d-b567-470d-a5d0-e1402bf8f369
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657500(v=EXCHG.150)
 ms:contentKeyID: 49289432
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -21,7 +25,7 @@ For additional management tasks related to federation trusts, see [Federation pr
 
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn’t fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
+> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
 
 
 
@@ -29,7 +33,7 @@ For additional management tasks related to federation trusts, see [Federation pr
 
   - Estimated time to complete: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the “Federation and certificates” permissions entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Federation and certificates" permissions entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
   - After removing the federation trust, you can remove the TXT records from your public DNS server for each federated domain. Review the requirements for removing a TXT record with the organization that hosts your public DNS records.
 
@@ -63,7 +67,7 @@ To verify that you have successfully removed the federation trust, do one of the
 
   - In the EAC, navigate to **organization** \> **sharing**. If you successfully removed the federation trust, only the **Enable** button will be available under **Federation Trust**.
 
-  - In the Shell, run the following command to verify that federation trust information isn’t returned for your Exchange organization.
+  - In the Shell, run the following command to verify that federation trust information isn't returned for your Exchange organization.
     
     ```powershell
     Get-FederationTrust

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure Kerberos authentication for load-balanced Client Access servers'
 TOCTitle: Configuring Kerberos authentication for load-balanced Client Access servers
 ms:assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff808312(v=EXCHG.150)
 ms:contentKeyID: 62853455
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -37,13 +41,13 @@ All Client Access servers that share the same namespaces and URLs need to use th
 
 When you set up the ASA credential, keep these guidelines in mind:
 
-  - **Account type.** We recommend that you create a computer account instead of a user account. A computer account doesn’t allow interactive logon and may have simpler security policies than a user account. If you create a computer account, the password doesn’t expire, but we recommend you update the password periodically anyway. You can use local group policy to specify a maximum age for the computer account and scripts to periodically delete computer accounts that do not meet current policies. Your local security policy also determines when you need to change the password. Although we recommend you use a computer account, you can create a user account.
+  - **Account type.** We recommend that you create a computer account instead of a user account. A computer account doesn't allow interactive logon and may have simpler security policies than a user account. If you create a computer account, the password doesn't expire, but we recommend you update the password periodically anyway. You can use local group policy to specify a maximum age for the computer account and scripts to periodically delete computer accounts that do not meet current policies. Your local security policy also determines when you need to change the password. Although we recommend you use a computer account, you can create a user account.
 
   - **Account name.** There are no requirements for the name of the account. You can use any name that conforms to your naming scheme.
 
   - **Account group.** The account you use for the ASA credential doesn't need special security privileges. If you are using a computer account then the account only needs to be a member of the Domain Computers security group. If you are using a user account then the account only needs to be a member of the Domain Users security group.
 
-  - **Account password.** The password you provide when you create the account will be used. So when you create the account, you should use a complex password and ensure that the password conforms to your organization’s password requirements.
+  - **Account password.** The password you provide when you create the account will be used. So when you create the account, you should use a complex password and ensure that the password conforms to your organization's password requirements.
 
 **To create the ASA credential as a computer account**
 
@@ -135,7 +139,7 @@ You would also need to associate the following SPNs with the ASA credential that
 
 ## Configure and then verify configuration of the ASA credential on each Client Access server
 
-After you’ve created the account, you need to verify that the account has replicated to all AD DS domain controllers. Specifically, the account needs to be present on each Client Access server that will use the ASA credential. Next, you configure the account as the ASA credential on each Client Access server in your deployment.
+After you've created the account, you need to verify that the account has replicated to all AD DS domain controllers. Specifically, the account needs to be present on each Client Access server that will use the ASA credential. Next, you configure the account as the ASA credential on each Client Access server in your deployment.
 
 You configure the ASA credential by using the Exchange Management Shell as described in one of these procedures:
 
@@ -390,7 +394,7 @@ After you've successfully configured Kerberos and the ASA credential, verify tha
 
 ## Verify that the Microsoft Exchange Service Host service is running
 
-The Microsoft Exchange Service Host service (MSExchangeServiceHost) on the Client Access server is responsible for managing the ASA credential. If this service isn’t running, Kerberos authentication isn’t possible. By default, the service is configured to automatically start when the computer starts.
+The Microsoft Exchange Service Host service (MSExchangeServiceHost) on the Client Access server is responsible for managing the ASA credential. If this service isn't running, Kerberos authentication isn't possible. By default, the service is configured to automatically start when the computer starts.
 
 **To verify the Microsoft Exchange Service Host service is started**
 
@@ -436,5 +440,5 @@ To configure your Client Access server so that it doesn't use Kerberos, disassoc
     Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
     ```
 
-2.  Although you don’t have to do this immediately, you should eventually restart all client computers to clear the Kerberos ticket cache from the computer.
+2.  Although you don't have to do this immediately, you should eventually restart all client computers to clear the Kerberos ticket cache from the computer.
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable or disable mailbox audit logging for a mailbox: Exchange 2013 Help'
 TOCTitle: Enable or disable mailbox audit logging for a mailbox
 ms:assetid: c4bbfd52-6196-49c7-8c31-777fbbee11f2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff461937(v=EXCHG.150)
 ms:contentKeyID: 49300697
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -99,7 +103,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://technet
 
 To verify that you have successfully enabled mailbox audit logging for a mailbox and specified the correct logging settings for administrator, delegate, or owner access, use the [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\)) cmdlet to retrieve the mailbox audit logging settings for that mailbox.
 
-This example retrieves Ben Smith’s mailbox settings and pipes the specified audit settings, including the audit log age limit, to the **Format-List** cmdlet.
+This example retrieves Ben Smith's mailbox settings and pipes the specified audit settings, including the audit log age limit, to the **Format-List** cmdlet.
 
 ```powershell
     Get-Mailbox "Ben Smith" | Format-List *audit*

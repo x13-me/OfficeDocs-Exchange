@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Using OAuth authentication to support eDiscovery in Exchange hybrid deployment'
 TOCTitle: Using OAuth authentication to support eDiscovery in an Exchange hybrid deployment
 ms:assetid: b069f8db-fbe1-4047-ad97-d00172ee6a12
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn497703(v=EXCHG.150)
 ms:contentKeyID: 61310597
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -80,7 +84,7 @@ The follow table identifies the eDiscovery scenarios in an Exchange hybrid deplo
 
 As previously stated, see [Configure OAuth authentication between Exchange and Exchange Online organizations](configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md) for instructions to configure OAuth authentication to support eDiscovery in an Exchange hybrid deployment.
 
-If OAuth isn’t configured for your Exchange hybrid deployment, you can’t use eDiscovery to search Exchange on-premises and Exchange Online mailboxes in the same eDiscovery search. You will have to search on-premises mailboxes from an eDiscovery search initiated from your on-premises organization. Similarly, you can only search Exchange Online mailboxes from an eDiscovery search initiated from your Exchange Online organization or by using the eDiscovery Center in SharePoint Online. Additionally, you won’t be able to search primary on-premises mailboxes if their corresponding archive mailbox resides in Exchange Online or in an Exchange Online Archiving organization.
+If OAuth isn't configured for your Exchange hybrid deployment, you can't use eDiscovery to search Exchange on-premises and Exchange Online mailboxes in the same eDiscovery search. You will have to search on-premises mailboxes from an eDiscovery search initiated from your on-premises organization. Similarly, you can only search Exchange Online mailboxes from an eDiscovery search initiated from your Exchange Online organization or by using the eDiscovery Center in SharePoint Online. Additionally, you won't be able to search primary on-premises mailboxes if their corresponding archive mailbox resides in Exchange Online or in an Exchange Online Archiving organization.
 
 ## More information
 

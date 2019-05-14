@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: Unified Messaging (UM) dial plans are the main component of Unified Messaging and are required to successfully deploy Unified Messaging voice mail on your network. The following sections discuss UM dial plans and how they're used in a UM deployment.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: ed7afc03-94af-4b23-8745-6a61f203c149
 ms.date: 11/17/2014
+ms.reviewer: 
 title: UM dial plans [ONP]
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
@@ -73,7 +74,7 @@ By default, each time you create a dial plan in Unified Messaging, the dial plan
 
 The Telephone Extension URI type is the most common type of UM dial plan and is used with IP PBXs and PBXs. When you configure a telephone extension (TelExtn) dial plan, the VoIP gateways, PBXs, and IP PBXs you use must support the TelExtn URI type. Today, most PBXs and IP PBXs support this URI type.
 
-When a call is received by a PBX and the UM-enabled user isn't available to answer the call, the PBX will forward the call to a VoIP gateway. The VoIP gateway—or the IP PBX, if one is used—will translate the call from a circuit-based protocol to an IP based protocol. In the header for the SIP packet received from the VoIP gateway or IP PBX, the calling and called party information will be listed in one of the following formats:
+When a call is received by a PBX and the UM-enabled user isn't available to answer the call, the PBX will forward the call to a VoIP gateway. The VoIP gateway (or the IP PBX, if one is used) will translate the call from a circuit-based protocol to an IP based protocol. In the header for the SIP packet received from the VoIP gateway or IP PBX, the calling and called party information will be listed in one of the following formats:
 
 - Tel:512345
 

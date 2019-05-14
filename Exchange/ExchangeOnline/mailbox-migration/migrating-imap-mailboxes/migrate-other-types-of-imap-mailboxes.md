@@ -5,6 +5,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 58890ccd-ce5e-4d94-be75-560a3b70a706
 ms.date: 8/16/2018
+ms.reviewer: 
 description: Admins can learn how to migrate mailboxes from email systems other than Exchange to Office 365.
 title: Migrate other types of IMAP mailboxes to Office 365
 ms.collection: 
@@ -24,7 +25,7 @@ ms.custom:
 - Adm_O365
 - Adm_O365_Setup
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -110,7 +111,7 @@ For more information, see [CSV files for IMAP migration batches](csv-files-for-i
 
    - **Column A** is the email address of the Office 365 mailbox. This is what is shown in the **username** column under **Users** \> **Active users** in the Microsoft 365 admin center.
 
-   - **Column B** is the sign-in name—for example, alberta, or often, alberta@contoso.com—for the user's mailbox on the source email system.
+   - **Column B** is the sign-in name (for example, alberta, or often, alberta@contoso.com) for the user's mailbox on the source email system.
 
      > [!NOTE]
      > A lot of email systems use the entire email address as the sign-in name. Note also, if you are using the same domain in Office 365 and your source email system, the columns A and B can be identical.

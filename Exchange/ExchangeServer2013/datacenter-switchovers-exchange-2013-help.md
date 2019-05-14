@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Datacenter Switchovers: Exchange 2013 Help'
 TOCTitle: Datacenter Switchovers
 ms:assetid: ac208c12-04d0-4809-bacd-72478ff14983
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351049(v=EXCHG.150)
 ms:contentKeyID: 62549506
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,9 +19,9 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013 SP1_
 
 
-In a site resilient configuration, automatic recovery in response to a site-level failure can occur within a DAG, allowing the messaging system to remain in a functional state. This configuration requires at least three locations, as it requires deploying DAG members in two locations and the DAG’s witness server in a third location.
+In a site resilient configuration, automatic recovery in response to a site-level failure can occur within a DAG, allowing the messaging system to remain in a functional state. This configuration requires at least three locations, as it requires deploying DAG members in two locations and the DAG's witness server in a third location.
 
-If you don’t have three locations, or even if you do have three locations, but you want to control datacenter-level recovery actions, you can configure a DAG for manual recovery in the event of a site-level failure. In that event, you would perform a process called a *datacenter switchover*. As with many disaster recovery scenarios, prior planning and preparation for a datacenter switchover can simplify your recovery process and reduce the duration of your outage.
+If you don't have three locations, or even if you do have three locations, but you want to control datacenter-level recovery actions, you can configure a DAG for manual recovery in the event of a site-level failure. In that event, you would perform a process called a *datacenter switchover*. As with many disaster recovery scenarios, prior planning and preparation for a datacenter switchover can simplify your recovery process and reduce the duration of your outage.
 
 There are four basic steps that you complete to perform a datacenter switchover, after making the initial decision to activate the second datacenter:
 
@@ -35,7 +39,7 @@ There are four basic steps that you complete to perform a datacenter switchover,
     
     If the DAG is in DAC mode, you can use the Exchange site resilience cmdlets to terminate a partially failed datacenter (if necessary) and activate the Mailbox servers. For example, in DAC mode, this step is performed by using the [Stop-DatabaseAvailabilityGroup](https://technet.microsoft.com/en-us/library/dd335133\(v=exchg.150\)) cmdlet. In some cases, the servers must be marked as unavailable twice (once in each datacenter). Next, the [Restore-DatabaseAvailabilityGroup](https://technet.microsoft.com/en-us/library/dd351169\(v=exchg.150\)) cmdlet is run to restore the remaining members of the database availability group (DAG) in the second datacenter by reducing the DAG members to those that are still operational, thereby reestablishing quorum. If the DAG isn't in DAC mode, you must use the Windows Failover Cluster tools to activate the Mailbox servers. After either process is complete, the database copies that were previously passive in the second datacenter can become active and be mounted. At this point, Mailbox server recovery is complete.
 
-4.  **Activate the Client Access servers**   This involves using the URL mapping information and the Domain Name System (DNS) change methodology to perform all required DNS updates. The mapping information describes what DNS changes to perform. The amount of time required to complete the update depends on the methodology used and the Time to Live (TTL) settings on the DNS record (and whether the deployment’s infrastructure honors the TTL).
+4.  **Activate the Client Access servers**   This involves using the URL mapping information and the Domain Name System (DNS) change methodology to perform all required DNS updates. The mapping information describes what DNS changes to perform. The amount of time required to complete the update depends on the methodology used and the Time to Live (TTL) settings on the DNS record (and whether the deployment's infrastructure honors the TTL).
 
 Users should start to have access to messaging services sometime after steps 3 and 4 are completed. Steps 3 and 4 are described in greater detail later in this topic.
 

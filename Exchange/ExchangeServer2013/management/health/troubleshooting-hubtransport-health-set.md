@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting HubTransport Health Set
 TOCTitle: Troubleshooting HubTransport Health Set
 ms:assetid: e3932ce3-836c-4230-9f64-63af1b704d79
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.hubtransport(v=EXCHG.150)
 ms:contentKeyID: 49720900
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -574,7 +578,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
     
     2.  Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be **Unhealthy**.
     
-    3.  Rerun the associated probe for the monitor that’s in an unhealthy state. Refer to the table in the [Explanation](troubleshooting-activesync-health-set.md) section to find the associated probe. To do this, run the following command:
+    3.  Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the [Explanation](troubleshooting-activesync-health-set.md) section to find the associated probe. To do this, run the following command:
         
             Invoke-MonitoringProbe <health set name>\<probe name> -Server <server name> | Format-List
         

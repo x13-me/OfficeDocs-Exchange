@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 59e4955a-8999-4d17-be9f-23a41a23b929
 ms.date: 
+ms.reviewer: 
 title: Create a global address list in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

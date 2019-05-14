@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Digital certificates and SSL: Exchange 2013 Help'
 TOCTitle: Digital certificates and SSL
 ms:assetid: a9e2e08c-d46a-4135-a387-eb653212b676
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351044(v=EXCHG.150)
 ms:contentKeyID: 48385423
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -35,7 +39,7 @@ Digital certificates are electronic files that work like an online password to v
 
 Digital certificates do the following:
 
-  - They authenticate that their holders—people, websites, and even network resources such as routers—are truly who or what they claim to be.
+  - They authenticate that their holders (people, websites, and even network resources such as routers) are truly who or what they claim to be.
 
   - They protect data that's exchanged online from theft or tampering.
 
@@ -55,7 +59,7 @@ When you install Exchange 2013, a self-signed certificate is automatically confi
 
 
 > [!NOTE]
-> By default, the digital certificate installed on the Mailbox server or servers is a self-signed certificate. You don’t need to replace the self-signed certificate on the Mailbox servers in your organization with a trusted third-party certificate. The Client Access server automatically trusts the self-signed certificate on the Mailbox server and no other configuration is needed for certificates on the Mailbox server.
+> By default, the digital certificate installed on the Mailbox server or servers is a self-signed certificate. You don't need to replace the self-signed certificate on the Mailbox servers in your organization with a trusted third-party certificate. The Client Access server automatically trusts the self-signed certificate on the Mailbox server and no other configuration is needed for certificates on the Mailbox server.
 
 
 
@@ -89,7 +93,7 @@ When you choose the type of certificate to install, there are several things to 
 
 By default, Exchange installs a self-signed certificate on both the Client Access server and the Mailbox server so that all network communication is encrypted. Encrypting all network communication requires that every Exchange server have an X.509 certificate that it can use. You should replace this self-signed certificate on the Client Access server with one that is automatically trusted by your clients.
 
-“Self-signed” means that a certificate was created and signed only by the Exchange server itself. Because it wasn't created and signed by a generally trusted CA, the default self-signed certificate won't be trusted by any software except other Exchange servers in the same organization. The default certificate is enabled for all Exchange services. It has a subject alternative name (SAN) that corresponds to the server name of the Exchange server that it's installed on. It also has a list of SANs that include both the server name and the fully qualified domain name (FQDN) of the server.
+"Self-signed" means that a certificate was created and signed only by the Exchange server itself. Because it wasn't created and signed by a generally trusted CA, the default self-signed certificate won't be trusted by any software except other Exchange servers in the same organization. The default certificate is enabled for all Exchange services. It has a subject alternative name (SAN) that corresponds to the server name of the Exchange server that it's installed on. It also has a list of SANs that include both the server name and the fully qualified domain name (FQDN) of the server.
 
 Although other Exchange servers in your Exchange organization trust this certificate automatically, clients like web browsers, Outlook clients, mobile phones, and other email clients in addition to external email servers won't automatically trust it. Therefore, consider replacing this certificate with a trusted third-party certificate on your Exchange Client Access servers. If you have your own internal PKI, and all your clients trust that entity, you can also use certificates that you issue yourself.
 
@@ -127,7 +131,7 @@ A separate certificate can be used for each receive connector that you configure
 
 ## Digital certificates and proxying
 
-Proxying is the method by which one server sends client connections to another server. In the case of Exchange 2013, this happens when the Client Access server proxies an incoming client request to the Mailbox server that contains the active copy of the client’s mailbox.
+Proxying is the method by which one server sends client connections to another server. In the case of Exchange 2013, this happens when the Client Access server proxies an incoming client request to the Mailbox server that contains the active copy of the client's mailbox.
 
 When Client Access servers proxy requests, SSL is used for encryption but not for authentication. The self-signed certificate on the Mailbox server encrypts the traffic between the Client Access server and the Mailbox server.
 
@@ -161,9 +165,9 @@ A certification authority (CA) is a company that issues and ensures the validity
 
   - Ensure the CA is trusted by the client software (operating systems, browsers, and mobile phones) that will connect to your Exchange servers.
 
-  - Choose a CA that says it supports “Unified Communications certificates” for use with Exchange server.
+  - Choose a CA that says it supports "Unified Communications certificates" for use with Exchange server.
 
-  - Make sure that the CA supports the kinds of certificates that you’ll use. Consider using subject alternative name (SAN) certificates. Not all CAs support SAN certificates, and other CAs don't support as many host names as you might need.
+  - Make sure that the CA supports the kinds of certificates that you'll use. Consider using subject alternative name (SAN) certificates. Not all CAs support SAN certificates, and other CAs don't support as many host names as you might need.
 
   - Make sure that the license you buy for the certificates allows you to put the certificate on the number of servers that you intend to use. Some CAs only allow you to put a certificate on one server.
 

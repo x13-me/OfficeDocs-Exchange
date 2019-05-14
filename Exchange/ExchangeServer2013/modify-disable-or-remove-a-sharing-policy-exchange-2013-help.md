@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Modify, disable, or remove a sharing policy: Exchange 2013 Help'
 TOCTitle: Modify, disable, or remove a sharing policy
 ms:assetid: 714af42d-ca29-4bb4-ac48-f0b3d4fd1c15
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657460(v=EXCHG.150)
 ms:contentKeyID: 49289300
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -25,7 +29,7 @@ For details about how to create a sharing policy, see [Create a sharing policy](
 
   - Estimated time to complete each procedure: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the “Calendar and Sharing Permissions” entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Calendar and Sharing Permissions" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

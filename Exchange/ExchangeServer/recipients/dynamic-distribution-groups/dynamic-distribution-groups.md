@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: dmaguire
 ms.assetid: 8ef85d0a-41df-4b5c-b8e7-ca8d09c048ca
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Manage dynamic distribution groups
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -81,7 +82,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 5. Select one of the following recipient attributes from the drop-down list and provide a value. If the value for the selected attribute matches that value you define, the recipient receives a message sent to this group.
 
-    |**Attribute**|**Send message to a recipient if…**|
+    |**Attribute**|**Send message to a recipient if...**|
     |:-----|:-----|
     |**Recipient container** <br/> |The recipient object resides in the specified domain or OU.  <br/> |
     |**State or province** <br/> |The specified value matches the recipient's State or province property.  <br/> |

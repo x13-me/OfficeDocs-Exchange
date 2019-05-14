@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a regular or exclusive scope: Exchange 2013 Help'
 TOCTitle: Create a regular or exclusive scope
 ms:assetid: b97a5be3-15cc-4954-ba30-a824a95e21be
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351083(v=EXCHG.150)
 ms:contentKeyID: 49289387
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

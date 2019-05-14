@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure the startup mode on a Mailbox server: Exchange 2013 Help'
 TOCTitle: Configure the startup mode on a Mailbox server
 ms:assetid: 4457d6a0-52bd-4269-8cb5-d34d7fe9bfc3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee423544(v=EXCHG.150)
 ms:contentKeyID: 49315402
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,11 +19,11 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server 2013_
 
 
-You can specify the startup mode for the Microsoft Exchange Unified Messaging service on a Mailbox server. By default, the Mailbox server will start up in TCP mode, but if you’re using Transport Layer Security (TLS) to encrypt Voice over IP (VoIP) traffic, you must configure the Mailbox server to use TLS or Dual mode. We recommend that Mailbox servers be configured to use Dual as the startup mode. This is because all Client Access servers and Mailbox servers can answer incoming calls for all UM dial plans, and those dial plans can have different security settings (Unsecured, SIP secured, or Secured). If you change the startup mode, you must restart the Microsoft Exchange Unified Messaging service for the change to take effect.
+You can specify the startup mode for the Microsoft Exchange Unified Messaging service on a Mailbox server. By default, the Mailbox server will start up in TCP mode, but if you're using Transport Layer Security (TLS) to encrypt Voice over IP (VoIP) traffic, you must configure the Mailbox server to use TLS or Dual mode. We recommend that Mailbox servers be configured to use Dual as the startup mode. This is because all Client Access servers and Mailbox servers can answer incoming calls for all UM dial plans, and those dial plans can have different security settings (Unsecured, SIP secured, or Secured). If you change the startup mode, you must restart the Microsoft Exchange Unified Messaging service for the change to take effect.
 
 
 > [!IMPORTANT]
-> By default, Mailbox servers are available to answer incoming calls. You don’t have to add a Mailbox server to a UM dial plan to process UM calls unless you’re integrating UM and Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server.
+> By default, Mailbox servers are available to answer incoming calls. You don't have to add a Mailbox server to a UM dial plan to process UM calls unless you're integrating UM and Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server.
 
 
 
@@ -53,7 +57,7 @@ For additional management tasks related to Unified Messaging and Mailbox servers
 
 4.  Under **UM Service settings** \> **UM startup mode**, select one of the following from the drop-down list:
     
-      - **TCP**   Use this option if you aren’t using mTLS and are using only Unsecured dial plans.
+      - **TCP**   Use this option if you aren't using mTLS and are using only Unsecured dial plans.
     
       - **TLS**   Use this option if you are using mTLS and using only SIP Secured or Secured dial plans.
     

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'ExecutionPolicy GPO is defined: Exchange 2013 Help'
 TOCTitle: ExecutionPolicy GPO is defined
 ms:assetid: 63de83e2-9a6b-4f57-85b9-df445bea18dd
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.powershellexecutionpolicycheckset(v=EXCHG.150)
 ms:contentKeyID: 61200286
 ms.date: 12/15/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -15,7 +19,7 @@ mtps_version: v=EXCHG.150
 _**Applies to:** Exchange Server_
 
 
-Microsoft Exchange Server 2013 Setup can’t continue because it detected that the **ExecutionPolicy** Group Policy Object (GPO) defines one or both of the following policies:
+Microsoft Exchange Server 2013 Setup can't continue because it detected that the **ExecutionPolicy** Group Policy Object (GPO) defines one or both of the following policies:
 
   - **MachinePolicy**
 
@@ -37,5 +41,5 @@ For information on how to remove any definitions of **MachinePolicy** or **UserP
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
 
-Did you find what you’re looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.
+Did you find what you're looking for? Please take a minute to [send us feedback](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) about the information you were hoping to find.
 

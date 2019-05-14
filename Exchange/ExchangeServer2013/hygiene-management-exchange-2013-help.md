@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Hygiene Management: Exchange 2013 Help'
 TOCTitle: Hygiene Management
 ms:assetid: fc0a9ec2-9c3d-42f6-8442-8603fb29d464
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd776125(v=EXCHG.150)
 ms:contentKeyID: 49289468
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -33,7 +37,7 @@ You can use the following command to view a list of users or universal security 
 Get-RoleGroupMember "Hygiene Management"
 ```
 
-For more information about the members of a role group, see the “View the members of a role group” section in [Manage role group members](manage-role-group-members-exchange-2013-help.md).
+For more information about the members of a role group, see the "View the members of a role group" section in [Manage role group members](manage-role-group-members-exchange-2013-help.md).
 
 ## Role group customization
 
@@ -49,7 +53,7 @@ For more information about how to customize this role group, see the following t
 
   - [Manage role group members](manage-role-group-members-exchange-2013-help.md)
 
-If you want to create a role group and assign some of the roles that are assigned to this role group to the new role group, see the “Create a role group” section in [Manage role groups](manage-role-groups-exchange-2013-help.md).
+If you want to create a role group and assign some of the roles that are assigned to this role group to the new role group, see the "Create a role group" section in [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
 ## Management roles assigned to this role group
 

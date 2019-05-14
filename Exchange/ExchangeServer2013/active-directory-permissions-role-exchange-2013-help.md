@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Active Directory Permissions role: Exchange 2013 Help'
 TOCTitle: Active Directory Permissions role
 ms:assetid: 0908b4cb-08fd-44f6-bab6-c66af64b2d1a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876845(v=EXCHG.150)
 ms:contentKeyID: 49289155
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -168,13 +172,13 @@ The following are the most common steps to create a customized role and assign i
 
 3.  If you want to replace the built-in role with this new customized role, remove any role assignments associated with the built-in role. For more information, see the following topics:
     
-      - “Add or remove a role to or from a role group” section in [Manage role groups](manage-role-groups-exchange-2013-help.md)
+      - "Add or remove a role to or from a role group" section in [Manage role groups](manage-role-groups-exchange-2013-help.md)
     
       - [Remove a role from a user or USG](remove-a-role-from-a-user-or-usg-exchange-2013-help.md)
 
 4.  Add the new customized role to the required role assignees. For more information, see the following topics:
     
-      - “Add or remove a role to or from a role group” section in [Manage role groups](manage-role-groups-exchange-2013-help.md)
+      - "Add or remove a role to or from a role group" section in [Manage role groups](manage-role-groups-exchange-2013-help.md)
     
       - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
         

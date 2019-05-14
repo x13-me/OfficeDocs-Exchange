@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 158817fa-4b17-4fa9-8341-a86609e6a388
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Perform a dial tone recovery
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

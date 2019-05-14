@@ -5,6 +5,8 @@ author: maggsl
 ms.author: v-maleo
 ms.assetid: 723ab221-3abe-40ee-8143-eee45e9d0519
 ms.date: 
+ms.reviewer: 
+manager: dansimp
 description: Admins can learn how to use a screen reader to create a new mail contact in the Exchange admin center (EAC) in Exchange Online.
 title: Use a screen reader to add a new mail contact in the Exchange admin center in Exchange Online
 ms.collection: 
@@ -18,7 +20,7 @@ ms.service: exchange-online
 
 # Use a screen reader to add a new mail contact in the Exchange admin center in Exchange Online
 
-Using a screen reader with Exchange Online, you can use the Exchange admin center (EAC) to set up a *mail contact*  —a mail-enabled directory service object containing information about a person or entity that exists outside of your Exchange Online organization. Each mail contact has an external email address. For more information about mail contacts, refer to the [Recipients](https://go.microsoft.com/fwlink/p/?LinkId=798820) TechNet article.
+Using a screen reader with Exchange Online, you can use the Exchange admin center (EAC) to set up a *mail contact*: a mail-enabled directory service object containing information about a person or entity that exists outside of your Exchange Online organization. Each mail contact has an external email address. For more information about mail contacts, refer to the [Recipients](https://go.microsoft.com/fwlink/p/?LinkId=798820) TechNet article.
 
 ## Get started
 

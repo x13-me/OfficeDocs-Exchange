@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Exchange and Shell infrastructure permissions: Exchange 2013 Help'
 TOCTitle: Exchange and Shell infrastructure permissions
 ms:assetid: 3646a4e8-36b2-41fb-89a4-79b0963fcb11
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638114(v=EXCHG.150)
 ms:contentKeyID: 48384969
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Client protocol management: Exchange 2013 Help'
 TOCTitle: Client protocol management
 ms:assetid: 89ba6d24-d1d3-46d5-a0ae-61f0d4c6df21
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657727(v=EXCHG.150)
 ms:contentKeyID: 49300565
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -25,7 +29,7 @@ Most of the settings that affect which Outlook Web App features are available to
 
 In Exchange 2010, all client access protocols were implemented and managed on a single server role, the Client Access server role. Management of the protocols was performed on a single instance of IIS, there was a single virtual directory object in Active Directory for each client protocol, and a single set of cmdlets were used to configure the virtual directory.
 
-In Exchange 2013, the client protocol management for Exchange ActiveSync is split between the Client Access server and the Mailbox server. Because of this architecture change, you can run different virtual directory management tasks on both the Client Access server and the Mailbox server. If these two servers aren’t installed on the same physical computer, the parameters that you use with the virtual directory cmdlets will change based on the server role on which you are running them.
+In Exchange 2013, the client protocol management for Exchange ActiveSync is split between the Client Access server and the Mailbox server. Because of this architecture change, you can run different virtual directory management tasks on both the Client Access server and the Mailbox server. If these two servers aren't installed on the same physical computer, the parameters that you use with the virtual directory cmdlets will change based on the server role on which you are running them.
 
 For more information about the architecture changes in Exchange 2013, see [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).
 
@@ -35,11 +39,11 @@ There are two types of settings that can be applied to the Exchange ActiveSync v
 
   - Settings applicable to the server and the virtual directory
 
-The settings that are applicable to the mailbox session are user session settings. When a user connects to a Client Access server, the connection is proxied to the Mailbox server that contains the user’s mailbox. A unique identifier of the virtual directory is included with the proxied request. The Mailbox server then retrieves the virtual directory settings from Active Directory and applies them to the session. The virtual directory settings are cached on the Mailbox server to improve performance.
+The settings that are applicable to the mailbox session are user session settings. When a user connects to a Client Access server, the connection is proxied to the Mailbox server that contains the user's mailbox. A unique identifier of the virtual directory is included with the proxied request. The Mailbox server then retrieves the virtual directory settings from Active Directory and applies them to the session. The virtual directory settings are cached on the Mailbox server to improve performance.
 
 If the connection is proxied to a different Active Directory site, the virtual directory settings will be loaded from the Client Access server in the same site as the Mailbox server, not from the Client Access server where the connection originated.
 
-The following tables indicate which virtual directory settings can be managed on which servers. If you try to manage a particular setting on a server for which it isn’t applicable, you will receive an error message indicating that the property you are trying to set is read-only for the server that you are operating on.
+The following tables indicate which virtual directory settings can be managed on which servers. If you try to manage a particular setting on a server for which it isn't applicable, you will receive an error message indicating that the property you are trying to set is read-only for the server that you are operating on.
 
 **Exchange ActiveSync virtual directory settings on Client Access servers**
 

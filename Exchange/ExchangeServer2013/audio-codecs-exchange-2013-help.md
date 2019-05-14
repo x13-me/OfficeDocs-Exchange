@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Audio codecs: Exchange 2013 Help'
 TOCTitle: Audio codecs
 ms:assetid: 6c39d65c-c2d3-4128-aae9-8596602819c3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998670(v=EXCHG.150)
 ms:contentKeyID: 49315434
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -137,7 +141,7 @@ When you plan for UM, you must balance the size and the relative quality of the 
 </table>
 
 
-In UM, the file type created for a voice message depends on the audio codec that’s used to create the voice message audio file. The MP3 audio codec creates .mp3 audio files, the WMA audio codec creates .wma audio files, and the GSM 06.10 and G.711 PCM Linear audio codecs create .wav audio files. All these audio files are sent together with an email message to the recipient of the voice message.
+In UM, the file type created for a voice message depends on the audio codec that's used to create the voice message audio file. The MP3 audio codec creates .mp3 audio files, the WMA audio codec creates .wma audio files, and the GSM 06.10 and G.711 PCM Linear audio codecs create .wav audio files. All these audio files are sent together with an email message to the recipient of the voice message.
 
 Frequently, but not always, coding and decoding the digital data also involves compression or decompression. Audio compression is a form of data compression that reduces the size of audio data files. The audio compression algorithm used by the audio codec compresses the .wma or .wav audio files. In UM, the type of audio compression algorithm that is used is based on the type of audio codec selected in the UM dial plan properties. After the audio file is created and compressed, it's attached to the voice message.
 
@@ -147,7 +151,7 @@ RTAudio wideband or high fidelity audio for recording voice messages is also ava
 
 
 > [!IMPORTANT]
-> RTAudio is not available in environments where Lync Server is not deployed. This is because, in environments that haven’t integrated Lync Server, the dial plan will be set to Telephone Extension or E.164 and not to SIP URI.
+> RTAudio is not available in environments where Lync Server is not deployed. This is because, in environments that haven't integrated Lync Server, the dial plan will be set to Telephone Extension or E.164 and not to SIP URI.
 
 
 
@@ -217,7 +221,7 @@ The size of UM voice messages depends on the size of the attachment that holds t
 
   - The duration of the voice mail recording
 
-  - The audio codec that’s used
+  - The audio codec that's used
 
   - The audio file storage format
 
@@ -243,7 +247,7 @@ WMA is the most highly compressed audio codec of the three kinds of codecs. The 
 
 
 > [!NOTE]
-> If you using push notifications from your on-premises deployment for OWA for Devices, you can’t use the WMA format. OWA for Devices only supports the MP3 file format.
+> If you using push notifications from your on-premises deployment for OWA for Devices, you can't use the WMA format. OWA for Devices only supports the MP3 file format.
 
 
 

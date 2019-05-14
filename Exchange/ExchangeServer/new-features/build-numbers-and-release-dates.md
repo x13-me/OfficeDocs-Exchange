@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 6a8091d0-4f19-4ae7-9e44-fd1c9f5fbe19
 ms.date:
+ms.reviewer: 
 title: Exchange Server build numbers and release dates
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -186,7 +187,7 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 
 The tables in this section provide build numbers and general release dates for each version of Microsoft Exchange Server 2007.
 
-**Note**: The version information for Exchange Server 2007 SP1 is displayed correctly in the Exchange Management Console, in the Exchange Management Shell, and in the **About Exchange Server 2007 Help** dialog box. However, after you apply Exchange 2007 SP1 to an Edge Transport server that's running the RTM version of Exchange 2007, the version information for the Edge Transport server isn’t updated in the Exchange Management Console unless the Edge Transport server is resubscribed to the Active Directory site. This is because the Edge Transport server doesn’t directly update Active Directory by using any configuration information. Instead, the version information for Edge Transport servers is recorded in Active Directory during the creation of an Edge Subscription.
+**Note**: The version information for Exchange Server 2007 SP1 is displayed correctly in the Exchange Management Console, in the Exchange Management Shell, and in the **About Exchange Server 2007 Help** dialog box. However, after you apply Exchange 2007 SP1 to an Edge Transport server that's running the RTM version of Exchange 2007, the version information for the Edge Transport server isn't updated in the Exchange Management Console unless the Edge Transport server is resubscribed to the Active Directory site. This is because the Edge Transport server doesn't directly update Active Directory by using any configuration information. Instead, the version information for Edge Transport servers is recorded in Active Directory during the creation of an Edge Subscription.
 
 To view the build number of an Exchange 2007 server, run the following command in the Exchange Management Shell:
 
@@ -212,7 +213,7 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 |Update Rollup 10 for Exchange Server 2007 SP3|February 11, 2013|8.3.298.3|8.03.0298.003|
 |Update Rollup 9 for Exchange Server 2007 SP3|December 10, 2012|8.3.297.2|8.03.0297.002|
 |Update Rollup 8-v3 for Exchange Server 2007 SP3|November 13, 2012|8.3.279.6|8.03.0279.006|
-|Update Rollup 8–v2 for Exchange Server 2007 SP3|October 9, 2012|8.3.279.5|8.03.0279.005|
+|Update Rollup 8-v2 for Exchange Server 2007 SP3|October 9, 2012|8.3.279.5|8.03.0279.005|
 |Update Rollup 8 for Exchange Server 2007 SP3|August 13, 2012|8.3.279.3|8.03.0279.003|
 |Update Rollup 7 for Exchange Server 2007 SP3|April 16, 2012|8.3.264.0|8.03.0264.000|
 |Update Rollup 6 for Exchange Server 2007 SP3|January 26, 2012|8.3.245.2|8.03.0245.002|

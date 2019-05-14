@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Using Outlook Web App Web parts: Exchange 2013 Help'
 TOCTitle: Using Outlook Web App Web parts
 ms:assetid: 7272e3ab-430c-4d6c-8621-9535236ce463
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt574711(v=EXCHG.150)
 ms:contentKeyID: 70319891
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
