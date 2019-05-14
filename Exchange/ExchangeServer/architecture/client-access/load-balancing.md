@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: f572c193-6f3a-400e-9085-a9d3e5e18c59
 ms.date: 6/8/2018
+ms.reviewer: 
 title: Load balancing in Exchange Server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: scotv
+manager: dansimp
 
 ---
 

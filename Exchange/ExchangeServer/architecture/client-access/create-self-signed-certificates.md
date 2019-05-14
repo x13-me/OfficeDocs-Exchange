@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: ae826efe-7558-4007-b255-7dfe5933bbbf
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Create a new Exchange Server self-signed certificate
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

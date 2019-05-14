@@ -8,6 +8,8 @@ ms.prod: exchange-server-it-pro
 ms.assetid: 8ee2672a-3a45-4897-8cc0-fa23c374dbf9
 ms.collection: exchange-server
 ms.date:
+ms.reviewer: 
+manager: dansimp
 ms.audience: ITPro
 title: Address lists in Exchange Server
 

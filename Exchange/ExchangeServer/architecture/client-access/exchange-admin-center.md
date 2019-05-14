@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d
 ms.date: 6/8/2018
+ms.reviewer: 
 title: Exchange admin center in Exchange Server
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
