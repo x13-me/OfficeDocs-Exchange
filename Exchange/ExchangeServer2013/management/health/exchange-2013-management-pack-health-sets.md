@@ -1,10 +1,14 @@
-﻿---
+---
 title: Exchange 2013 Management Pack Health Sets
 TOCTitle: '@NoTitle'
 ms:assetid: 3a12acb0-a6b7-4452-9306-a3d000c94a50
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn195892(v=EXCHG.150)
 ms:contentKeyID: 53181763
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting SiteMailbox Health Set
 TOCTitle: Troubleshooting SiteMailbox Health Set
 ms:assetid: ac00985c-c9a5-44bf-b152-4b99d8ae24ed
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.sitemailbox(v=EXCHG.150)
 ms:contentKeyID: 49720849
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

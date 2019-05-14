@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting FfoTransport Health Set
 TOCTitle: Troubleshooting FfoTransport Health Set
 ms:assetid: c058cfab-cdbd-4d2e-a97a-3c836768ef9a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.ffotransport(v=EXCHG.150)
 ms:contentKeyID: 49720881
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

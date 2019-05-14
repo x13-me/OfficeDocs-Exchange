@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting POP Health Set
 TOCTitle: Troubleshooting POP Health Set
 ms:assetid: 6114e9fe-d037-4cb9-a643-933eb5fabc45
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.pop(v=EXCHG.150)
 ms:contentKeyID: 49720812
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting OWA Health Set
 TOCTitle: Troubleshooting OWA Health Set
 ms:assetid: eae9dbd7-2ce6-43ce-b9a1-b114fd0c3ab4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.owa(v=EXCHG.150)
 ms:contentKeyID: 49720915
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

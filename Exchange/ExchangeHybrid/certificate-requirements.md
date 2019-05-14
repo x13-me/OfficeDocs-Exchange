@@ -2,6 +2,7 @@
 title: "Certificate requirements for hybrid deployments"
 ms.author: chrisda
 author: chrisda
+ms.reviewer: 
 manager: dansimp
 ms.audience: ITPro
 ms.topic: article

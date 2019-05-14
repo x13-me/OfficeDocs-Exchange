@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting SMTP Health Set
 TOCTitle: Troubleshooting SMTP Health Set
 ms:assetid: e8233533-88f2-4291-9a90-722517b382c8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.smtp(v=EXCHG.150)
 ms:contentKeyID: 49720905
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
