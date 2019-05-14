@@ -25,7 +25,7 @@ keywords:
 - Outlook 365 doesn't work
 - fix office 365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

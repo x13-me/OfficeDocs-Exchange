@@ -21,7 +21,7 @@ ms.custom:
 - Adm_O365_FullSet
 - MiniMaven
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

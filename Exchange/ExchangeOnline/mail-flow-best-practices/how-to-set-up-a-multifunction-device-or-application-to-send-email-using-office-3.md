@@ -5,6 +5,7 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 69f58e99-c550-4274-ad18-c805d654b4c4
 ms.date: 
+ms.reviewer: 
 description: 'Learn how to set up printers, scanners, LOB applications to send email using Office 365. '
 title: How to set up a multifunction device or application to send email using Office 365
 ms.collection: 
@@ -17,7 +18,7 @@ search.appverid:
 ms.audience: Admin
 ms.custom: MiniMaven
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

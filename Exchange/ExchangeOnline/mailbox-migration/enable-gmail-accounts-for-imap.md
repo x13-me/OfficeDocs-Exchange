@@ -7,6 +7,7 @@ f1_keywords:
 ms.author: dmaguire
 ms.assetid: 16380df7-3911-4bc8-943b-cae9ace27827
 ms.date: 8/15/2018
+ms.reviewer: 
 description: Enable yor Gmail account for IMAP so you can view and edit your mail in Microsoft Outlook app.
 title: Enable your Gmail account for IMAP
 ms.collection: 
@@ -23,7 +24,7 @@ search.appverid:
 ms.audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

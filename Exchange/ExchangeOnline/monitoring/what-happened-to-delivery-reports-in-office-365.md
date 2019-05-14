@@ -16,7 +16,7 @@ ms.collection:
 - M365-email-calendar
 - MiniMaven
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

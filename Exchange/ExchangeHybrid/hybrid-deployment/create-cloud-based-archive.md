@@ -2,7 +2,7 @@
 title: "Create a cloud-based archive for an on-premises primary mailbox in an Exchange hybrid deployment"
 ms.author: markjjo
 author: markjjo
-manager: serdars
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

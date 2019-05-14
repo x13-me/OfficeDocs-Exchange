@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 ms.custom: MiniMaven
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

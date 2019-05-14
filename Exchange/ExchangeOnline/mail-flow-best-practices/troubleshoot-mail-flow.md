@@ -1,7 +1,7 @@
 ---
 localization_priority: Normal
 ms.author: chrisda
-manager: serdars
+manager: dansimp
 ms.topic: article
 author: chrisda
 ms.service: exchange-online

@@ -2,7 +2,7 @@
 title: "Configure Exchange 2013 public folders for a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
-manager: serdars
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
