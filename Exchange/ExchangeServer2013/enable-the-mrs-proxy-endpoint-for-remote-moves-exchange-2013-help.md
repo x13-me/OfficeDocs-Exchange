@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable the MRS Proxy endpoint for remote moves: Exchange 2013 Help'
 TOCTitle: Enable the MRS Proxy endpoint for remote moves
 ms:assetid: 9840f712-127e-4c2d-bfe5-1b35cdb2a31b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn155787(v=EXCHG.150)
 ms:contentKeyID: 53903965
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

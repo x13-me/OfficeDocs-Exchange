@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable or disable email for a mail user: Exchange 2013 Help'
 TOCTitle: Enable or disable email for a mail user
 ms:assetid: 1e2571d4-ff84-4fda-bb1d-825e96e1bd26
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996598(v=EXCHG.150)
 ms:contentKeyID: 50382995
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

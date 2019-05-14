@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable anti-spam functionality on Mailbox servers: Exchange 2013 Help'
 TOCTitle: Enable anti-spam functionality on Mailbox servers
 ms:assetid: 59d22c5e-64bc-4879-8ad1-364862b6ba11
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb201691(v=EXCHG.150)
 ms:contentKeyID: 49248681
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

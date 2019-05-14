@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable and configure priority queuing: Exchange 2013 Help'
 TOCTitle: Enable and configure priority queuing
 ms:assetid: 1975d85d-2f1d-4852-8d19-e74ba4ba3853
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ891104(v=EXCHG.150)
 ms:contentKeyID: 50646230
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

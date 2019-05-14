@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable or disable email for a mail contact: Exchange 2013 Help'
 TOCTitle: Enable or disable email for a mail contact
 ms:assetid: ca47441f-1aa4-4958-aba5-18d51e59837e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124552(v=EXCHG.150)
 ms:contentKeyID: 50383001
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
