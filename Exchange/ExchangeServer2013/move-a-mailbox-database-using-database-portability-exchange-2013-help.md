@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Move a mailbox database using database portability: Exchange 2013 Help'
 TOCTitle: Move a mailbox database using database portability
 ms:assetid: a765ead1-43bc-4786-ae93-1835cacfc8fc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876926(v=EXCHG.150)
 ms:contentKeyID: 50873806
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

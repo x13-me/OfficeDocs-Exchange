@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'MyMobileInformation role: Exchange 2013 Help'
 TOCTitle: MyMobileInformation role
 ms:assetid: b1048d12-3394-41c6-b10a-c01c1e0fdeb3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff461935(v=EXCHG.150)
 ms:contentKeyID: 49289373
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

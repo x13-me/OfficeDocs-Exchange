@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Monitoring role: Exchange 2013 Help'
 TOCTitle: Monitoring role
 ms:assetid: ba4cb787-8e17-4565-bccd-74e846c06a4f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876933(v=EXCHG.150)
 ms:contentKeyID: 49289390
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
