@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: b97d0f68-691a-42af-9a6c-4dcc37b28a42
 ms.date:
+ms.reviewer: 
 title: Email addresses and address books in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

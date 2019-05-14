@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
 ms.date:
+ms.reviewer: 
 title: Create user mailboxes in Exchange Server, create Exchange mailbox, Exchange Server create mailbox
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
