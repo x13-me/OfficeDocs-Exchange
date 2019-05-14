@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Set connection limits for POP3: Exchange 2013 Help'
 TOCTitle: Set connection limits for POP3
 ms:assetid: 512d61c2-2a34-4813-92a9-875339d3388b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997988(v=EXCHG.150)
 ms:contentKeyID: 50395399
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

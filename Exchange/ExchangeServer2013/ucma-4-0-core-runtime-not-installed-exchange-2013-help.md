@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'UCMA 4.0, Core Runtime not installed: Exchange 2013 Help'
 TOCTitle: UCMA 4.0, Core Runtime not installed
 ms:assetid: b26b628b-116d-4f13-ab86-bac80e2a2e1f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.ucmaredistmsi(v=EXCHG.150)
 ms:contentKeyID: 46629086
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
