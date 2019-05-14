@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Dial tone portability: Exchange 2013 Help'
 TOCTitle: Dial tone portability
 ms:assetid: ea62fae0-5e0a-460c-beb6-52532c8c8dbc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876950(v=EXCHG.150)
 ms:contentKeyID: 50873816
 ms.date: 06/06/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

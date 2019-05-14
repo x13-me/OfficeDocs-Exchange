@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Connect a disabled mailbox: Exchange 2013 Help'
 TOCTitle: Connect a disabled mailbox
 ms:assetid: a8abd399-75fd-4ee2-b2e4-634b55e4f79f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ863439(v=EXCHG.150)
 ms:contentKeyID: 50387720
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

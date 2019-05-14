@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Domain Controller Override is set in the Registry'
 TOCTitle: Domain Controller Override is set in the Registry_ConfigDCHostNameMismatch
 ms:assetid: 3aef5470-d510-4b59-a4b6-36d274a984ae
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.configdchostnamemismatch(v=EXCHG.150)
 ms:contentKeyID: 46628888
 ms.date: 12/15/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

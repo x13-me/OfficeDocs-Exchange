@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Deploy Exchange 2013 in a cross-forest topology: Exchange 2013 Help'
 TOCTitle: Deploy Exchange 2013 in a cross-forest topology
 ms:assetid: 65be650f-d435-4f60-9ff0-5cb88a726abb
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998597(v=EXCHG.150)
 ms:contentKeyID: 50406264
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
