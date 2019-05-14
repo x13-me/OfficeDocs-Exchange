@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'UM languages, prompts, and greetings procedures: Exchange 2013 Help'
 TOCTitle: UM languages, prompts, and greetings procedures
 ms:assetid: 935bcf76-f27d-406e-962b-3adb014cf76e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ863293(v=EXCHG.150)
 ms:contentKeyID: 50387248
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

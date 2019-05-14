@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable IMAP4 in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Enable IMAP4
 ms:assetid: c1ae10dd-14da-4400-b38d-2aeafde8abe6
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124489(v=EXCHG.150)
 ms:contentKeyID: 49315255
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'WhatIf, Confirm, and ValidateOnly switches: Exchange 2013 Help'
 TOCTitle: WhatIf, Confirm, and ValidateOnly switches
 ms:assetid: a850eea7-431e-49c5-b877-1ebde2a2b48f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124088(v=EXCHG.150)
 ms:contentKeyID: 49289365
 ms.date: 03/23/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

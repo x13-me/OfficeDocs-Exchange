@@ -6,6 +6,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: d89e727b-675a-4623-b572-260f8b44b966
 ms.date: 7/20/2018
+ms.reviewer: 
 title: Migrate your public folders to Office 365 Groups
 ms.collection:
 - Strat_EX_EXOBlocker
@@ -13,7 +14,7 @@ ms.collection:
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

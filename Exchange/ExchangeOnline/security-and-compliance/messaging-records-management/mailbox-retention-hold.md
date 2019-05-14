@@ -6,13 +6,14 @@ author: markjjo
 ms.author: markjjo
 ms.assetid: 2baac4a7-3402-4142-bfb3-1649a950e677
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Place a mailbox on retention hold
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

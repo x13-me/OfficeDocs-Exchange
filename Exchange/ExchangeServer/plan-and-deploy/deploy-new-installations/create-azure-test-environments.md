@@ -2,10 +2,11 @@
 localization_priority: Normal
 description: 'Summary: Learn how to create a single-server Exchange 2016 or Exchange 2019 dev/test environment in Microsoft Azure infrastructure services.'
 ms.topic: article
-author: JoeDavies-MSFT
-ms.author: josephd
+author: chrisda
+ms.author: chrisda
 ms.assetid: d9fbf253-b6f1-4bcd-8548-87ccf49259f1
 ms.date: 04/15/2019
+ms.reviewer: 
 title: Exchange dev/test environment in Azure
 ms.collection:
 - Strat_EX_Admin
@@ -13,7 +14,7 @@ ms.collection:
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

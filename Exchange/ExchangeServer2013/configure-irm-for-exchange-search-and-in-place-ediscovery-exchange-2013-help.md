@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure IRM for Exchange Search and In-Place eDiscovery: Exchange 2013 Help'
 TOCTitle: Configure IRM for Exchange Search and In-Place eDiscovery
 ms:assetid: d96790e9-93ad-4a56-b90f-2dbfa2f2073c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg588319(v=EXCHG.150)
 ms:contentKeyID: 49319934
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

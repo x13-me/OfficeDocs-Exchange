@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable or disable IMAP4 access for a user: Exchange 2013 Help'
 TOCTitle: Enable or disable IMAP4 access for a user
 ms:assetid: a685fae4-b6f1-42fe-8bdc-5f99f9617799
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb676481(v=EXCHG.150)
 ms:contentKeyID: 49315252
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

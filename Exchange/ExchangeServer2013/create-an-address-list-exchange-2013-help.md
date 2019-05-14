@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create an address list: Exchange 2013 Help'
 TOCTitle: Create an address list
 ms:assetid: e86ba1b7-c41c-4050-bc29-13996cf53c59
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125036(v=EXCHG.150)
 ms:contentKeyID: 49289446
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.Mailbox.NewAddressListWizardForm.AddressListIntroductionPage

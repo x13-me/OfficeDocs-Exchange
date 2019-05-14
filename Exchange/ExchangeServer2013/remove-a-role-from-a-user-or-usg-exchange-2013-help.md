@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Remove a role from a user or USG: Exchange 2013 Help'
 TOCTitle: Remove a role from a user or USG
 ms:assetid: df3510ef-e0c2-4d3c-81b0-7dc3e70c01a0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351196(v=EXCHG.150)
 ms:contentKeyID: 49289437
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Understanding split permissions: Exchange 2013 Help'
 TOCTitle: Understanding split permissions
 ms:assetid: 2b709e15-63a2-4841-94bc-b289b71166d0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638106(v=EXCHG.150)
 ms:contentKeyID: 49289207
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

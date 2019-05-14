@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: d948269b-c902-4d8d-8c2b-269473359baa
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Activate a mailbox database copy
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

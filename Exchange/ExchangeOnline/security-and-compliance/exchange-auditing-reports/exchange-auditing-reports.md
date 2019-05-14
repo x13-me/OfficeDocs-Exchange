@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 2b3e1529-1677-4564-be0b-ce22757ddc0d
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Exchange auditing reports
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

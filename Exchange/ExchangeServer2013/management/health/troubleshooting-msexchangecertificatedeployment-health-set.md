@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting MSExchangeCertificateDeployment Health Set
 TOCTitle: Troubleshooting MSExchangeCertificateDeployment Health Set
 ms:assetid: 27410f8f-25bd-4bde-b4d5-5597c15d9ec7
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.msexchangecertificatedeployment(v=EXCHG.150)
 ms:contentKeyID: 49720742
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

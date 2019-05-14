@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Activate a mailbox database copy: Exchange 2013 Help'
 TOCTitle: Activate a mailbox database copy
 ms:assetid: d948269b-c902-4d8d-8c2b-269473359baa
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee364750(v=EXCHG.150)
 ms:contentKeyID: 48385619
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

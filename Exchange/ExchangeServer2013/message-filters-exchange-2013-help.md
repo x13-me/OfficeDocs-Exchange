@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Message filters: Exchange 2013 Help'
 TOCTitle: Message filters
 ms:assetid: 8e6187c1-76f0-49da-bc24-2ab57cfb3c2c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb123714(v=EXCHG.150)
 ms:contentKeyID: 49286849
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

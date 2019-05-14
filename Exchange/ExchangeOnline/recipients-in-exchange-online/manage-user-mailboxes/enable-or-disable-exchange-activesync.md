@@ -6,6 +6,7 @@ author: kwekua
 ms.author: kwekua
 ms.assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Enable or disable Exchange ActiveSync for a mailbox
 ms.collection: 
 - exchange-online

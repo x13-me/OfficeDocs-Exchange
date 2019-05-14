@@ -6,6 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 ms.assetid: a86bb46f-0e5b-43a3-b6ef-7394f344a8da
+ms.reviewer: 
 title: Allow/Block guest access to Office 365 groups
 ms.collection: 
 - exchange-online

@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: e5833dec-a23a-439e-ac03-92671817bff8
 ms.date: 
+ms.reviewer: 
 title: Manage user access to add-ins for Outlook in Exchange Online
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

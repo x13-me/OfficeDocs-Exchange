@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: d517f27e-f80a-4a06-988c-cbbf981c701d
 ms.date:
+ms.reviewer: 
 title: Journaling procedures in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Test and troubleshoot voice mail: Exchange 2013 Help'
 TOCTitle: Test and troubleshoot voice mail
 ms:assetid: eafb53fe-2fa9-437c-9369-aec324cc13ce
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351227(v=EXCHG.150)
 ms:contentKeyID: 55129215
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage role assignment policies: Exchange 2013 Help'
 TOCTitle: Manage role assignment policies
 ms:assetid: f93d502e-5df4-4ba0-b68d-01a17ccffb4d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657511(v=EXCHG.150)
 ms:contentKeyID: 49289465
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

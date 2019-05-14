@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage linked role groups: Exchange 2013 Help'
 TOCTitle: Manage linked role groups
 ms:assetid: e2a07395-90c2-4d62-b15d-ac3ff28fe786
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657502(v=EXCHG.150)
 ms:contentKeyID: 49289439
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

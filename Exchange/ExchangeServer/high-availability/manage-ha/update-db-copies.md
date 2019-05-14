@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: bead3cc5-7d50-446f-95b7-e432bcb7968e
 ms.date: 6/8/2018
+ms.reviewer: 
 title: Update a mailbox database copy
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

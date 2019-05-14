@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 7c8ed3c1-ca91-4d9b-b16b-0a2b8ac89730
 ms.date: 7/8/2018
+ms.reviewer: 
 title: Data loss prevention in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: laurawi
+manager: dansimp
 
 ---
 

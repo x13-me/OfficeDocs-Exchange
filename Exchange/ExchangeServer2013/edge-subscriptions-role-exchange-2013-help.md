@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Edge Subscriptions role: Exchange 2013 Help'
 TOCTitle: Edge Subscriptions role
 ms:assetid: 7de1a663-96fb-4fb5-898a-effa82653597
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876912(v=EXCHG.150)
 ms:contentKeyID: 49289320
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

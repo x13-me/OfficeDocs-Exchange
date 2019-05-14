@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Release quarantined messages from the spam quarantine mailbox'
 TOCTitle: Release quarantined messages from the spam quarantine mailbox
 ms:assetid: 7a86bfde-f868-4689-bdec-5f01e52b510d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998920(v=EXCHG.150)
 ms:contentKeyID: 49345049
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

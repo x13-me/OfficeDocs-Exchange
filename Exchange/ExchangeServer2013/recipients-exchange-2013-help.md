@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Recipients: Exchange 2013 Help'
 TOCTitle: Recipients
 ms:assetid: 40300ed4-85a5-463d-bb3a-cf787bd44e9d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb201680(v=EXCHG.150)
 ms:contentKeyID: 49315395
 ms.date: 06/04/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

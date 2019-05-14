@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 28cedf1d-365a-4e36-b2ba-6bf81af8684f
 ms.date: 6/12/2018
+ms.reviewer: 
 title: Manage mailbox database copies
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

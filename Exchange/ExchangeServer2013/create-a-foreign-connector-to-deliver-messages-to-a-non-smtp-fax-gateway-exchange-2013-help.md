@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a Foreign connector to deliver messages to a non-SMTP fax gateway'
 TOCTitle: Create a Foreign connector to deliver messages to a non-SMTP fax gateway
 ms:assetid: 589db487-3c4c-409a-92e3-c78dd8f639b6
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ710163(v=EXCHG.150)
 ms:contentKeyID: 49369578
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'FAQ: Public folders: Exchange 2013 Help'
 TOCTitle: 'FAQ: Public folders'
 ms:assetid: 1cdcdcb7-f11b-45ca-ad23-7c38f640208c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ552408(v=EXCHG.150)
 ms:contentKeyID: 48679371
 ms.date: 03/27/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

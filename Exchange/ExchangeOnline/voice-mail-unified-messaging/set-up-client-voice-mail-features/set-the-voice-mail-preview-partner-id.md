@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: You can set a Voice Mail Preview partner ID on a Unified Messaging (UM) mailbox policy. After you've set the Voice Mail Preview partner ID on a UM mailbox policy, the setting will apply to all UM-enabled users who are linked with that mailbox policy.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: ab98c320-9952-47a7-b141-ddfc2c0ad419
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Set the Voice Mail Preview partner ID
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

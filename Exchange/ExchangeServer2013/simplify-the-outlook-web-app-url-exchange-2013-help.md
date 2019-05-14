@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Simplify the Outlook Web App URL: Exchange 2013 Help'
 TOCTitle: Simplify the Outlook Web App URL
 ms:assetid: 5fb6a873-f3cf-4f82-87d1-2ff6e47a0080
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998359(v=EXCHG.150)
 ms:contentKeyID: 53957625
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Move Mailboxes role: Exchange 2013 Help'
 TOCTitle: Move Mailboxes role
 ms:assetid: 46576498-5d73-495b-8925-b8ce39cfa55e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876879(v=EXCHG.150)
 ms:contentKeyID: 49289242
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

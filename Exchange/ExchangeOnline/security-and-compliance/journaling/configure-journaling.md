@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 3033715d-a6d0-485e-af0d-15876550fd4d
 ms.date: 
+ms.reviewer: 
 title: Configure Journaling in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

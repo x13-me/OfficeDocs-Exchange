@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 4a8bd779-b52a-40ed-8040-4d76eabeb41e
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Configure AutoReseed for a database availability group
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

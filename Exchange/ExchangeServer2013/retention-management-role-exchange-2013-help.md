@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Retention Management role: Exchange 2013 Help'
 TOCTitle: Retention Management role
 ms:assetid: ef16b495-c424-4ded-b5da-304e69ce31bb
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876953(v=EXCHG.150)
 ms:contentKeyID: 49289456
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage database availability group membership: Exchange 2013 Help'
 TOCTitle: Manage database availability group membership
 ms:assetid: fb2ea15e-96d5-4045-b75b-b0aa5fc60479
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351278(v=EXCHG.150)
 ms:contentKeyID: 48385730
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

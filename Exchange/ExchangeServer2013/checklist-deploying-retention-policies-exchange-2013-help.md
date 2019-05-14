@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Checklist: Deploying retention policies: Exchange 2013 Help'
 TOCTitle: 'Checklist: Deploying retention policies'
 ms:assetid: 59e299fd-b6a8-48f5-88ae-dc20dbe32e90
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee364743(v=EXCHG.150)
 ms:contentKeyID: 49318577
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

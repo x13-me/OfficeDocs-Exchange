@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 23f1eaf6-247a-4671-ad72-aae19d9b511d
 ms.date: 7/3/2018
+ms.reviewer: 
 title: Address rewriting on Edge Transport servers
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Deploy multiple forest topologies for Exchange 2013: Exchange 2013 Help'
 TOCTitle: Deploy multiple forest topologies for Exchange 2013
 ms:assetid: d51f2b7d-9045-40cf-8b9f-43787a6fff6d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124734(v=EXCHG.150)
 ms:contentKeyID: 50406267
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

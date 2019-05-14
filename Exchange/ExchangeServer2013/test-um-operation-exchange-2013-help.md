@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Test UM operation: Exchange 2013 Help'
 TOCTitle: Test UM operation
 ms:assetid: 06c9ab4e-8272-47b1-a217-e366f7e9dbaa
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa995957(v=EXCHG.150)
 ms:contentKeyID: 55129206
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

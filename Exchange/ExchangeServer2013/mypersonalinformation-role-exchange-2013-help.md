@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'MyPersonalInformation role: Exchange 2013 Help'
 TOCTitle: MyPersonalInformation role
 ms:assetid: 76848ea9-79db-4ac8-bdfa-eecc79394461
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff461932(v=EXCHG.150)
 ms:contentKeyID: 49289309
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

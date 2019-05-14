@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable voice mail users to receive faxes: Exchange 2013 Help'
 TOCTitle: Enable voice mail users to receive faxes
 ms:assetid: 451ab0ea-21e1-4c1f-ae62-4ba7cdfd1e4d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232022(v=EXCHG.150)
 ms:contentKeyID: 49315404
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

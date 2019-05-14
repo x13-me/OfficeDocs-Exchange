@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'High availability and site resilience permissions: Exchange 2013 Help'
 TOCTitle: High availability and site resilience permissions
 ms:assetid: 66085107-4d4d-41c3-a425-82314acd9eee
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638136(v=EXCHG.150)
 ms:contentKeyID: 48385175
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

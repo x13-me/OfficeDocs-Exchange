@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Anti-spam protection: Exchange 2013 Help'
 TOCTitle: Anti-spam protection
 ms:assetid: 6af88a08-687d-40b1-8b22-80704184403d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ218660(v=EXCHG.150)
 ms:contentKeyID: 48385197
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

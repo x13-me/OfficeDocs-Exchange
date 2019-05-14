@@ -5,6 +5,10 @@ ms:assetid: dc2c1062-ad79-404b-8da3-5b5798dbb73b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb684908(v=EXCHG.150)
 ms:contentKeyID: 49289431
 ms.date: 03/23/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

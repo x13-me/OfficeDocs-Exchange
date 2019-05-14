@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Mailbox and Client Access servers: Exchange 2013 Help'
 TOCTitle: Mailbox and Client Access servers
 ms:assetid: 5bc54c8c-e445-494e-9047-9a1a5af7b7fa
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150519(v=EXCHG.150)
 ms:contentKeyID: 47560017
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

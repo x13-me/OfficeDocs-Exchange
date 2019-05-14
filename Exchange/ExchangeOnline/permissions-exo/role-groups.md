@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c
 ms.date: 
+ms.reviewer: 
 title: Manage role groups in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

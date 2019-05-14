@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Exchange 2013 language support: Exchange 2013 Help'
 TOCTitle: Exchange 2013 language support
 ms:assetid: 934686fb-53a2-4b13-aaf0-498e4011d61a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298152(v=EXCHG.150)
 ms:contentKeyID: 48385357
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

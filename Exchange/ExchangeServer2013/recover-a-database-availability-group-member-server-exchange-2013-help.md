@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Recover a database availability group member server: Exchange 2013 Help'
 TOCTitle: Recover a database availability group member server
 ms:assetid: eccd8f61-9706-4bb7-a62a-ec7c166f8019
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638206(v=EXCHG.150)
 ms:contentKeyID: 48385683
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

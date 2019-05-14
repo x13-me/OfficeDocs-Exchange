@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'View-only Organization Management: Exchange 2013 Help'
 TOCTitle: View-only Organization Management
 ms:assetid: c514c6d0-0157-4c52-9ec6-441d9a30f3df
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351130(v=EXCHG.150)
 ms:contentKeyID: 49289404
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

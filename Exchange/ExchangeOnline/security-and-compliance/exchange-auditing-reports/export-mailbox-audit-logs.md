@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: b458a95a-3321-4647-8884-cf97f8e7186a
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Export mailbox audit logs
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

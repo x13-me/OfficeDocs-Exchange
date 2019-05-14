@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 919a9bfb-c6df-490a-b2c4-51796b0f0596
 ms.date: 7/10/2018
+ms.reviewer: 
 title: Use AD FS claims-based authentication with Outlook on the web
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: scotv
+manager: dansimp
 
 ---
 

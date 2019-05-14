@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Journaling  role: Exchange 2013 Help'
 TOCTitle: Journaling  role
 ms:assetid: 64608dbe-d4b4-444e-a7df-bc536c4da202
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876894(v=EXCHG.150)
 ms:contentKeyID: 49289280
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

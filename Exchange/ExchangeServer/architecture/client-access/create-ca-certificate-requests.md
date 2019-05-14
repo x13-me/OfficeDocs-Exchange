@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: efb00de7-070b-46bf-a2fc-00d07ae085c1
 ms.date: 6/7/2018
+ms.reviewer: 
 title: Create an Exchange Server certificate request for a certification authority
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

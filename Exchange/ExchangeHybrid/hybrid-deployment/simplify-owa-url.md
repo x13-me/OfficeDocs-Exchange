@@ -2,7 +2,7 @@
 title: "Simplify the Outlook Web App URL for Office 365 Hybrid"
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -11,6 +11,7 @@ ms.collection:
 - Hybrid
 - M365-email-calendar
 ms.assetid: 19449aee-3796-4298-90c6-c7579b8d2f7a
+ms.reviewer: 
 description: "Learn how to configure a URL for Outlook on the web (Outlook Web App) for cloud mailbox users in a hybrid environment."
 ---
 
