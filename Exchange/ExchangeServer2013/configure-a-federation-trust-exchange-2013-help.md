@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure a federation trust: Exchange 2013 Help'
 TOCTitle: Configure a federation trust
 ms:assetid: 7c2b539f-faed-4374-8578-9f329ca628db
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657462(v=EXCHG.150)
 ms:contentKeyID: 49289316
 ms.date: 07/26/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

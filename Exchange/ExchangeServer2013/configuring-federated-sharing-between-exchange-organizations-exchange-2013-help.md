@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure federated sharing between Exchange organizations'
 TOCTitle: Configuring federated sharing between Exchange organizations
 ms:assetid: 94e31454-b027-4757-b52f-d3c2ead6d916
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657473(v=EXCHG.150)
 ms:contentKeyID: 49289355
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

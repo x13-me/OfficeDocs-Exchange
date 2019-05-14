@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure legacy public folders when user mailboxes are on Exchange 2013 servers'
 TOCTitle: Configure legacy public folders where user mailboxes are on Exchange 2013 servers
 ms:assetid: 1d5ca19e-696e-4054-a634-15dd34d952b7
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn690134(v=EXCHG.150)
 ms:contentKeyID: 62380198
 ms.date: 03/27/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

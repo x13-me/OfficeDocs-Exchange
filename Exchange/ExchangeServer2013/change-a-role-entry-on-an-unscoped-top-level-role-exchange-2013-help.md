@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Change a role entry on an unscoped top-level role: Exchange 2013 Help'
 TOCTitle: Change a role entry on an unscoped top-level role
 ms:assetid: 65c0bfb3-aafd-4c64-8429-7616c57adf1c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876896(v=EXCHG.150)
 ms:contentKeyID: 49289281
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
