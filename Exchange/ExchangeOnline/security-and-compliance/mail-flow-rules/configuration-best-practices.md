@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: abd863c3-c0ce-42f3-9470-a573adc3cbba
 ms.date: 
+ms.reviewer: 
 title: Best practices for configuring mail flow rules in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

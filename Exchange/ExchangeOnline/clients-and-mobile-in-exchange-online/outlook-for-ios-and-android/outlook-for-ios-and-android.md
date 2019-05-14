@@ -12,7 +12,7 @@ ms.collection:
 ms.reviewer: smithre4
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

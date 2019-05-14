@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Details templates: Exchange 2013 Help'
 TOCTitle: Details templates
 ms:assetid: 26f02e47-1540-4840-afe0-600c97368cac
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673049(v=EXCHG.150)
 ms:contentKeyID: 49289204
 ms.date: 06/04/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Domain preparation required_DomainPrepRequired: Exchange 2013 Help'
 TOCTitle: Domain preparation required_DomainPrepRequired
 ms:assetid: f6feae6f-7404-4b1f-887f-ed63c26a6bcd
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.domainpreprequired(v=EXCHG.150)
 ms:contentKeyID: 46629205
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

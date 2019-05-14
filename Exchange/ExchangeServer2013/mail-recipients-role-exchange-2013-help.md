@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Mail Recipients role: Exchange 2013 Help'
 TOCTitle: Mail Recipients role
 ms:assetid: 7cf1f1c7-4f32-4446-ac04-99a7f9df2059
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876911(v=EXCHG.150)
 ms:contentKeyID: 49289318
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

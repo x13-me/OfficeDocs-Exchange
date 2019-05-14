@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Insufficient permissions to run /PrepareDomain'
 TOCTitle: Insufficient permissions to run /PrepareDomain_PrepareDomainNotAdmin
 ms:assetid: c33a2bc0-5b07-49b8-a1c1-53baa4933d44
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.preparedomainnotadmin(v=EXCHG.150)
 ms:contentKeyID: 46629108
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

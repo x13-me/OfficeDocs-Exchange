@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: d0d10ab1-08c1-4ffe-aaa5-f9dbd9a118ed
 ms.date: 
+ms.reviewer: 
 title: Manage mail flow using a third-party cloud service with Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

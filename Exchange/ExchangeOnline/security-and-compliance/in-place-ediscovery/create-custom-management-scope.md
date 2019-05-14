@@ -6,13 +6,14 @@ author: markjjo
 ms.author: markjjo
 ms.assetid: 1543aefe-3709-402c-b9cd-c11fe898aad1
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Create a custom management scope for In-Place eDiscovery searches
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

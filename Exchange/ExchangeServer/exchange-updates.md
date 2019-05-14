@@ -1,9 +1,9 @@
 ---
 localization_priority: Normal
-ms.author: dstrome
-manager: serdars
+ms.author: chrisda
+manager: dansimp
 ms.topic: get-started-article
-author: dstrome
+author: chrisda
 ms.prod: exchange-server-it-pro
 ms.collection: exchange-server
 description: 'Summary: Updates to Exchange Server and Exchange Online content.'

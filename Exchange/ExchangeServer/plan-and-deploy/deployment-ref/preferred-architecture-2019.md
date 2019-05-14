@@ -10,8 +10,9 @@ title: Exchange 2019 preferred architecture
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.date:
+ms.reviewer: 
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

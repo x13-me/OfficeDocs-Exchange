@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create an organization relationship: Exchange 2013 Help'
 TOCTitle: Create an organization relationship
 ms:assetid: 5ea61b96-c8ca-44fc-b8b5-ca4341af36a6
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657451(v=EXCHG.150)
 ms:contentKeyID: 49289267
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

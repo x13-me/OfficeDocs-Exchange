@@ -5,6 +5,10 @@ ms:assetid: 28b6f2a1-a235-4023-b561-6fd304962775
 ms:mtpsurl: 
 ms:contentKeyID: 
 ms.date: 
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

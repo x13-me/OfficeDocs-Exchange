@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Update Exchange organization when Daylight Saving Time or time zone changes'
 TOCTitle: Update your Exchange organization when Daylight Saving Time or the time zone changes
 ms:assetid: 5b12615c-24cf-4f46-bf3c-2334dc734ef8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Hh530051(v=EXCHG.150)
 ms:contentKeyID: 66452205
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

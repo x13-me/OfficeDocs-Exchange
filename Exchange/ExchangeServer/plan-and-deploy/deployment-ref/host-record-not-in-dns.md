@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: 2f18cb65-29fe-4b72-8d68-52fd503d5673
 ms.date: 8/2/2018
+ms.reviewer: 
 title: The Host record for the local computer cannot be found in the DNS database [HostRecordMissing]
 ms.collection: exchange-server
 ms.audience: Developer
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: Filterable properties for the -ContentFilter parameter
 TOCTitle: Filterable properties for the -ContentFilter parameter
 ms:assetid: cf504a59-1938-489c-bb48-b27b2ac3234e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff601762(v=EXCHG.150)
 ms:contentKeyID: 49895015
 ms.date: 02/22/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Queue Viewer: Exchange 2013 Help'
 TOCTitle: Queue Viewer
 ms:assetid: db892f88-5c13-4607-a38c-8845b35ab8b2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124789(v=EXCHG.150)
 ms:contentKeyID: 49286852
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

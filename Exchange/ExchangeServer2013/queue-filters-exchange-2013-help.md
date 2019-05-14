@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Queue filters: Exchange 2013 Help'
 TOCTitle: Queue filters
 ms:assetid: fbfbdcab-e0d2-4ed9-8f7f-e5fa2c87360d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125237(v=EXCHG.150)
 ms:contentKeyID: 49286856
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

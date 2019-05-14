@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: Learn how to use the Exchange admin center (EAC) or the Exchange Management Shell to connect a deleted mailbox to an Active Directory user account in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: article
-author: SerdarSoysal
-ms.author: serdars
+author: msdmaguire
+ms.author: dmaguire
 ms.assetid: a5e6ac44-5901-4eab-9017-c6fae80a0f83
 ms.date:
+ms.reviewer: 
 title: Connect or restore a deleted mailbox
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Remote device wipe: Exchange 2013 Help'
 TOCTitle: Remote device wipe
 ms:assetid: cd615210-cd8a-48de-b3e3-8f9ec39ca380
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124591(v=EXCHG.150)
 ms:contentKeyID: 49352799
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Active Directory Permissions role: Exchange 2013 Help'
 TOCTitle: Active Directory Permissions role
 ms:assetid: 0908b4cb-08fd-44f6-bab6-c66af64b2d1a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876845(v=EXCHG.150)
 ms:contentKeyID: 49289155
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

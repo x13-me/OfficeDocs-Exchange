@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Change user throttling settings for specific users: Exchange 2013 Help'
 TOCTitle: Change user throttling settings for specific users
 ms:assetid: c5f834d6-189d-485e-9800-5e0066815ecf
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ863577(v=EXCHG.150)
 ms:contentKeyID: 50395404
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

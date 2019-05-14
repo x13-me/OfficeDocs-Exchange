@@ -6,6 +6,7 @@ author: kwekua
 ms.author: kwekua
 ms.assetid: fdce3587-ed95-4433-9931-4cf74b52e8e0
 ms.date: 6/24/2018
+ms.reviewer: 
 title: Shared mailboxes in Exchange Online
 ms.collection: 
 - exchange-online

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create certificates for UM: Exchange 2013 Help'
 TOCTitle: Create certificates for UM
 ms:assetid: 66807ee7-3d3f-482d-a3ac-d4e9baca3271
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn205141(v=EXCHG.150)
 ms:contentKeyID: 53908379
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

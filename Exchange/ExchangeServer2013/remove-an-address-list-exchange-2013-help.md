@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Remove an address list: Exchange 2013 Help'
 TOCTitle: Remove an address list
 ms:assetid: 39a313f3-41d4-4c8f-af67-df2316f3687f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997294(v=EXCHG.150)
 ms:contentKeyID: 49289233
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

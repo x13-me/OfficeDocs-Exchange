@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Mail Recipient Creation role: Exchange 2013 Help'
 TOCTitle: Mail Recipient Creation role
 ms:assetid: 81081845-9ebf-4888-8f9f-fe7cf2704486
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876915(v=EXCHG.150)
 ms:contentKeyID: 49289326
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting ActiveSync.Proxy Health Set
 TOCTitle: Troubleshooting ActiveSync.Proxy Health Set
 ms:assetid: f10acbb8-4d2e-43fb-b3a5-6dbb7a529e04
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.activesync.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720912
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

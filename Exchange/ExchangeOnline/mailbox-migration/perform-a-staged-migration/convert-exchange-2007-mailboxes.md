@@ -5,6 +5,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: a1f79f3c-4967-4a15-8b3a-f4933aac0c34
 ms.date: 8/15/2018
+ms.reviewer: 
 description: Convert Exchange 2007 mailboxes to mail enabled users
 title: Convert Exchange 2007 mailboxes to mail-enabled users
 ms.collection: 
@@ -21,7 +22,7 @@ search.appverid:
 ms.audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

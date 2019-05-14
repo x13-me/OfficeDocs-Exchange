@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 85ff95d4-0aa4-4964-ac4b-5b07a5a1039f
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Disconnected mailboxes
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

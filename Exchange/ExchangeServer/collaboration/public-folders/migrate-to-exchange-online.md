@@ -5,6 +5,8 @@ ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.assetid: 25a5234c-dd2c-487b-8541-3655fbeb030a
+ms.reviewer: 
+manager: dansimp
 ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-server

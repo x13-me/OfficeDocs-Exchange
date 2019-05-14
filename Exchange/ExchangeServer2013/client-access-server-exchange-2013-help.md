@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Client Access server: Exchange 2013 Help'
 TOCTitle: Client Access server
 ms:assetid: 87e206ab-7a7b-4b4f-be1a-5035713c74d2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298114(v=EXCHG.150)
 ms:contentKeyID: 48385301
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

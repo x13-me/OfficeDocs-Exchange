@@ -2,17 +2,18 @@
 localization_priority: Normal
 description: 'Summary: Learn how to verify ord troubleshoot your Exchange 2016 or Exchange 2019 installation.'
 ms.topic: get-started-article
-author: dstrome
-ms.author: dstrome
+author: chrisda
+ms.author: chrisda
 ms.assetid: fdd20a2a-c8c1-4d17-b813-3c05d88a4411
 ms.date: 6/8/2018
+ms.reviewer: 
 title: Verify Exchange Server installations
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

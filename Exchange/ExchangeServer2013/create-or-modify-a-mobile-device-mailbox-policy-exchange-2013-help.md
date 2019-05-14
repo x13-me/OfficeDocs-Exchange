@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create or modify a mobile device mailbox policy: Exchange 2013 Help'
 TOCTitle: Create or modify a mobile device mailbox policy
 ms:assetid: b4a37a81-25e3-40ff-a18a-a62ae4493635
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124315(v=EXCHG.150)
 ms:contentKeyID: 49345057
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

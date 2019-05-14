@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Restore a soft-deleted mailbox: Exchange 2013 Help'
 TOCTitle: Restore a soft-deleted mailbox
 ms:assetid: 4f3f5ce4-9d12-4ed8-9f70-d8a6aa8a1b2e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ863435(v=EXCHG.150)
 ms:contentKeyID: 50387715
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

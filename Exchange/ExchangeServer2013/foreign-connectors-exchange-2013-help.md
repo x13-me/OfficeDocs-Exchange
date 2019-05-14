@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Foreign connectors: Exchange 2013 Help'
 TOCTitle: Foreign connectors
 ms:assetid: 21c6a7a9-f4d2-4359-9ac9-930701b63a4e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996779(v=EXCHG.150)
 ms:contentKeyID: 49300447
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

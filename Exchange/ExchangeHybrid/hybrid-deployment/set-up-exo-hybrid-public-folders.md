@@ -2,7 +2,7 @@
 title: "Configure Exchange Online public folders for a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
-manager: serdars
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -13,6 +13,7 @@ ms.collection:
 - Hybrid
 - M365-email-calendar
 ms.assetid: d979edb3-967b-4431-8beb-0c236bf7f56d
+ms.reviewer: 
 description: "Summary: Instructions for enabling on-premises Exchange 2013 users to access public folders in Exchange Online."
 ---
 

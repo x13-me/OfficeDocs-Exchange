@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Header firewall: Exchange 2013 Help'
 TOCTitle: Header firewall
 ms:assetid: 9b148f7b-47a9-4379-a55b-8d5310c1772f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232136(v=EXCHG.150)
 ms:contentKeyID: 50934222
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 f1_keywords:
 - header firewall, organization X-headers

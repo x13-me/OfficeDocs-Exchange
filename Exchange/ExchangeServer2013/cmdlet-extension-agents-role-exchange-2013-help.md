@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Cmdlet Extension Agents role: Exchange 2013 Help'
 TOCTitle: Cmdlet Extension Agents role
 ms:assetid: 20f9f7c2-a8e5-468e-b1a8-c87c562a2be7
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876857(v=EXCHG.150)
 ms:contentKeyID: 49289191
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

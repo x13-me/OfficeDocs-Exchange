@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure Edge Transport server using cloned configuration: Exchange 2013 Help'
 TOCTitle: Configure Edge Transport server using cloned configuration
 ms:assetid: 0bbc83e3-e5e8-4480-a8a6-15f035360856
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996008(v=EXCHG.150)
 ms:contentKeyID: 61200276
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

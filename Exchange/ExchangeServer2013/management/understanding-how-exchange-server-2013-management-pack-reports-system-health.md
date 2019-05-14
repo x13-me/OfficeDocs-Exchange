@@ -1,10 +1,14 @@
-﻿---
+---
 title: Understanding how Exchange Server 2013 Management Pack reports system health
 TOCTitle: Understanding how Exchange Server 2013 Management Pack reports system health
 ms:assetid: 6ca8847f-93fe-458d-bd43-7afad7fdd2f4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn195910(v=EXCHG.150)
 ms:contentKeyID: 53181786
 ms.date: 05/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

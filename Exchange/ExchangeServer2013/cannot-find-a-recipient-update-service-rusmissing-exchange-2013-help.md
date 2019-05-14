@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Cannot find a recipient update service_RUSMissing: Exchange 2013 Help'
 TOCTitle: Cannot find a recipient update service_RUSMissing
 ms:assetid: 920fbf51-d5e4-4ac6-869f-7f1c5d9a3024
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.rusmissing(v=EXCHG.150)
 ms:contentKeyID: 46629034
 ms.date: 12/15/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

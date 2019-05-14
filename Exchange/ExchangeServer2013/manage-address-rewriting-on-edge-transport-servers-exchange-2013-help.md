@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage address rewriting on Edge Transport servers: Exchange 2013 Help'
 TOCTitle: Manage address rewriting on Edge Transport servers
 ms:assetid: 323a0b55-f921-425d-b1b0-18ad0fac315c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997185(v=EXCHG.150)
 ms:contentKeyID: 61200282
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

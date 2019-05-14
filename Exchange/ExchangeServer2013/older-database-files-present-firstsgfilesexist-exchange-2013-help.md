@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Older database files present_FirstSGFilesExist: Exchange 2013 Help'
 TOCTitle: Older database files present_FirstSGFilesExist
 ms:assetid: 907faeb8-1c6d-49fc-95a1-417f415a9d79
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.firstsgfilesexist(v=EXCHG.150)
 ms:contentKeyID: 46629029
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

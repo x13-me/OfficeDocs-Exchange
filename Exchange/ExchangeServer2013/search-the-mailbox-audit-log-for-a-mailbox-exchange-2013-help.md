@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Search the mailbox audit log for a mailbox: Exchange 2013 Help'
 TOCTitle: Search the mailbox audit log for a mailbox
 ms:assetid: 5b518a08-3b51-4ba3-bfbd-0e35cc5ff374
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff461930(v=EXCHG.150)
 ms:contentKeyID: 49300503
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

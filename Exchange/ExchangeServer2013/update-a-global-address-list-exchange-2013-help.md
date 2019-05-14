@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Update a global address list: Exchange 2013 Help'
 TOCTitle: Update a global address list
 ms:assetid: 236e8530-62dd-4c43-8a5d-8465623252e6
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb266966(v=EXCHG.150)
 ms:contentKeyID: 49289195
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

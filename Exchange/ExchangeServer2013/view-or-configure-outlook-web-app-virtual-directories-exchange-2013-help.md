@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'View or configure Outlook Web App virtual directories: Exchange 2013 Help'
 TOCTitle: View or configure Outlook Web App virtual directories
 ms:assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298140(v=EXCHG.150)
 ms:contentKeyID: 49315461
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

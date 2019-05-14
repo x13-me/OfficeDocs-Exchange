@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 98b81f9c-87bb-4905-8e53-04621c3ae74d
 ms.date: 7/8/2018
+ms.reviewer: 
 title: Sensitive information types in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 keywords:
 - data loss prevention in office 365,Data loss prevetion in Exchange,DLP,sensitive information types
 ms.prod: exchange-server-it-pro
-manager: scotv
+manager: dansimp
 
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Use the Setup wizard to install the Exchange 2013 Edge Transport role'
 TOCTitle: Install the Exchange 2013 Edge Transport role using the Setup wizard
 ms:assetid: b8e51b0b-201e-4c64-92c8-3ac0db04b6e2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn635117(v=EXCHG.150)
 ms:contentKeyID: 61200304
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

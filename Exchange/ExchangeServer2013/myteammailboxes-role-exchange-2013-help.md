@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'MyTeamMailboxes role: Exchange 2013 Help'
 TOCTitle: MyTeamMailboxes role
 ms:assetid: 269bf64a-5028-40e4-96ec-17c362a73e69
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673048(v=EXCHG.150)
 ms:contentKeyID: 49289203
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

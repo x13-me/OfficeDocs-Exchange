@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Set up client voice mail features: Exchange 2013 Help'
 TOCTitle: Set up client voice mail features
 ms:assetid: 5e661cfd-d34e-4caa-91a5-967bbecb75eb
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673529(v=EXCHG.150)
 ms:contentKeyID: 49315432
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

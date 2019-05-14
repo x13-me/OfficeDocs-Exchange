@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: ece00da0-743b-4e26-83f5-a2eb68c7de4e
 ms.date: 
+ms.reviewer: 
 title: Configure the external postmaster address in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

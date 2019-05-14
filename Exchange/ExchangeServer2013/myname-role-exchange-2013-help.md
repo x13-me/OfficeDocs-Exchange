@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'MyName role: Exchange 2013 Help'
 TOCTitle: MyName role
 ms:assetid: 6c8320d3-7a71-4975-b8b3-c1b1b52dd7df
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff461931(v=EXCHG.150)
 ms:contentKeyID: 49289291
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

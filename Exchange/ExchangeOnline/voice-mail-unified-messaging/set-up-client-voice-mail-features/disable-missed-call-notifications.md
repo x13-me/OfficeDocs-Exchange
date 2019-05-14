@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: You can enable or disable missed call notifications for a Unified Messaging (UM) mailbox policy by using Exchange Online PowerShell or the EAC. A missed call notification is an email message that's sent to a user when the user doesn't answer an incoming call and the caller doesn't leave a voice message. This is a different email message than the one that contains the voice message that's left for a user.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: e54937d5-3074-454f-b561-e601fecfc6ad
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Disable missed call notifications for a user
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Access control list (ACL) inheritance is blocked'
 TOCTitle: Access control list (ACL) inheritance is blocked_InhBlockPublicFolderTree
 ms:assetid: e3b89c8a-d6f8-4864-8bf0-35a78ce87cc4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.inhblockpublicfoldertree(v=EXCHG.150)
 ms:contentKeyID: 46629148
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

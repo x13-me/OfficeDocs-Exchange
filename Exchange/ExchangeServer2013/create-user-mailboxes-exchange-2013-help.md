@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create user mailboxes: Exchange 2013 Help'
 TOCTitle: Create user mailboxes
 ms:assetid: 51a8b4c6-a53e-41c5-8bb1-ea4c0eaa0174
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ991919(v=EXCHG.150)
 ms:contentKeyID: 51588093
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

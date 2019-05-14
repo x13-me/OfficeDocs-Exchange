@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Understanding exclusive scopes: Exchange 2013 Help'
 TOCTitle: Understanding exclusive scopes
 ms:assetid: 32492622-3b01-4e3b-8288-ed39525eea75
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638110(v=EXCHG.150)
 ms:contentKeyID: 49289222
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
