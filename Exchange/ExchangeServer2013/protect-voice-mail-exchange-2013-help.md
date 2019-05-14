@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Protect voice mail: Exchange 2013 Help'
 TOCTitle: Protect voice mail
 ms:assetid: a88d41d5-2e70-4193-bcd3-dec50dff412b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351041(v=EXCHG.150)
 ms:contentKeyID: 49315484
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

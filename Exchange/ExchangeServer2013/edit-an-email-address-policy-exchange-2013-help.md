@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Edit an email address policy: Exchange 2013 Help'
 TOCTitle: Edit an email address policy
 ms:assetid: cc8b36a0-95f4-43e9-bc64-87646d2e14e4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124580(v=EXCHG.150)
 ms:contentKeyID: 49289411
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.EditEmailAddressPolicyWizardForm.EmailAddressPolicyIntroductionPage

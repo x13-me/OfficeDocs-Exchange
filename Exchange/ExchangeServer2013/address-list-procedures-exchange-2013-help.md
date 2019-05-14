@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Address list procedures: Exchange 2013 Help'
 TOCTitle: Address list procedures
 ms:assetid: 44c87349-964b-4700-9ce9-87bd4cb2249e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997686(v=EXCHG.150)
 ms:contentKeyID: 49289241
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

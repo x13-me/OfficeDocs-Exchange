@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Get Recoverable Items folder statistics: Exchange 2013 Help'
 TOCTitle: Get Recoverable Items folder statistics
 ms:assetid: dee77958-ee87-4908-85e4-ad053bacd8b0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff714343(v=EXCHG.150)
 ms:contentKeyID: 51439484
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

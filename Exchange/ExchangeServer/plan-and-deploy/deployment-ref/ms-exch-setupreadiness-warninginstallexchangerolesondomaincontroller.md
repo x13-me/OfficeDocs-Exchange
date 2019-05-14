@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: 48922de2-a68c-4092-96a5-d38c8e5f49f5
 ms.date: 8/2/2018
+ms.reviewer: 
 title: Installing Exchange on a domain controller is not recommended [WarningInstallExchangeRolesOnDomainController]
 ms.collection: exchange-server
 ms.audience: Developer
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

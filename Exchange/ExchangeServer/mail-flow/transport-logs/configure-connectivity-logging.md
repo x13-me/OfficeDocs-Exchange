@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 24e46a79-33ea-44e9-b03c-549db1c86a6f
 ms.date: 7/10/2018
+ms.reviewer: 
 title: Configure connectivity logging in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

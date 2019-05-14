@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Local computer is responsible for expanding group membership'
 TOCTitle: The local computer is responsible for expanding group membership_ServerIsDynamicGroupExpansionServer
 ms:assetid: f6fdd8e1-fda1-45be-b8a2-0d356dbe7d83
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.serverisdynamicgroupexpansionserver(v=EXCHG.150)
 ms:contentKeyID: 46629180
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

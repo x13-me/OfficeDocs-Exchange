@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 4acc7f2a-93ce-468c-9ace-d5f7eecbd8d4
 ms.date: 7/30/2018
+ms.reviewer: 
 title: Configure mail flow and client access on Exchange servers
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

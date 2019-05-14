@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting Search Health Set
 TOCTitle: Troubleshooting Search Health Set
 ms:assetid: 4e4402b4-2cb7-4057-be41-45f01d31641f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.search(v=EXCHG.150)
 ms:contentKeyID: 49720788
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

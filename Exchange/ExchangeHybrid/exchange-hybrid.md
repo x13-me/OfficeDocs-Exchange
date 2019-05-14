@@ -1,8 +1,8 @@
 ---
 title: "Exchange Server Hybrid Deployments"
-ms.author: dstrome
-author: dstrome
-manager: serdars
+ms.author: chrisda
+author: chrisda
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -13,6 +13,7 @@ ms.collection:
 - Hybrid
 - M365-email-calendar
 ms.assetid: 59e32000-4fcf-417f-a491-f1d8f9aeef9b
+ms.reviewer: 
 description: "Summary: What you need to know to plan an Exchange hybrid deployment."
 ---
 

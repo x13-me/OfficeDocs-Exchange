@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Change a role scope: Exchange 2013 Help'
 TOCTitle: Change a role scope
 ms:assetid: 9180e1e0-c352-4ccd-8da6-885a2e309867
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298145(v=EXCHG.150)
 ms:contentKeyID: 49289346
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

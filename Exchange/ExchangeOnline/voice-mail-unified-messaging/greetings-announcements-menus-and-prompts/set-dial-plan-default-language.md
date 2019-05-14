@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: You can set the default language for a Unified Messaging (UM) dial plan. Each dial plan you create will initially use English (en-US) as the default language.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 7a1d2e7e-4053-40af-9ec1-ec714df12ad4
 ms.date: 7/12/2018
+ms.reviewer: 
 title: Set the default language on a dial plan
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

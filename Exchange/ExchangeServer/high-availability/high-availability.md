@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: b1704c87-5f5c-464e-9dc5-1bb1bdf9ac2a
 ms.date: 7/9/2018
+ms.reviewer: 
 title: High availability and site resilience
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

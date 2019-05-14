@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'An incompatible operating system was found: Exchange 2013 Help'
 TOCTitle: An incompatible operating system was found
 ms:assetid: a3a948d9-4991-4088-9013-0a4c944295e4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.validosversion(v=EXCHG.150)
 ms:contentKeyID: 49090988
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

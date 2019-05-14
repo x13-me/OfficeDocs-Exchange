@@ -5,6 +5,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 4682f2e4-f720-4868-91ab-207f5b0c325d
 ms.date: 8/16/2018
+ms.reviewer: 
 description: Learn how to perform an IMAP migration in the Admin Center preview.
 title: IMAP migration in the Microsoft 365 admin center
 ms.collection: 
@@ -20,7 +21,7 @@ ms.custom:
 - Adm_O365
 - Adm_O365_Setup
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

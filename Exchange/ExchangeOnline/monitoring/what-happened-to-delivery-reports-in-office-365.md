@@ -5,6 +5,7 @@ ms.topic: article
 author: chrisda
 ms.author: chrisda
 ms.assetid: f7efced3-6964-41da-bd54-e14620e8a0de
+ms.reviewer: 
 title: What happened to delivery reports in Office 365?
 ms.collection: exchange-online
 search.appverid:
@@ -16,7 +17,7 @@ ms.collection:
 - M365-email-calendar
 - MiniMaven
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

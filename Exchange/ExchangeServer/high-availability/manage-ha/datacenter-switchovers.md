@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: ac208c12-04d0-4809-bacd-72478ff14983
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Datacenter switchovers
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

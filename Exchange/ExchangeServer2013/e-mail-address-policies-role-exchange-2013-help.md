@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'E-Mail Address Policies role: Exchange 2013 Help'
 TOCTitle: E-Mail Address Policies role
 ms:assetid: d272e672-81ea-417c-b5d6-76a5efd5c036
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876944(v=EXCHG.150)
 ms:contentKeyID: 49289418
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

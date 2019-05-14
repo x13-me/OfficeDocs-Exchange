@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: cfff9f59-afac-447c-8297-afcebe49a52d
 ms.date: 7/3/2018
+ms.reviewer: 
 title: Edge Transport servers
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

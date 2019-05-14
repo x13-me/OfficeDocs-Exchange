@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Unified Messaging: Exchange 2013 Help'
 TOCTitle: Unified Messaging
 ms:assetid: 004b5d1a-cae8-4034-ab65-db41bd2f7b97
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150478(v=EXCHG.150)
 ms:contentKeyID: 47559933
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

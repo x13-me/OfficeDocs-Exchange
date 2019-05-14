@@ -8,13 +8,14 @@ f1_keywords:
 ms.author: dmaguire
 ms.assetid: 74c72aed-e9ff-4927-8eb7-c08a86e79ae0
 ms.date: 
+ms.reviewer: 
 title: Manage mail contacts
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

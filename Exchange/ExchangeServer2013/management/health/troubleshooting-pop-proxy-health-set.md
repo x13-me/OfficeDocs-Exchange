@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting POP.Proxy Health Set
 TOCTitle: Troubleshooting POP.Proxy Health Set
 ms:assetid: ea634068-aa8c-4421-a3fc-d8695ea73b80
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.pop.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720910
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

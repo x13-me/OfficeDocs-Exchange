@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: Learn about permissions that are required to manage high availability in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: reference
-author: SerdarSoysal
-ms.author: serdars
+author: chrisda
+ms.author: chrisda
 ms.assetid: 66085107-4d4d-41c3-a425-82314acd9eee
 ms.date: 7/5/2018
+ms.reviewer: 
 title: High availability and site resilience permissions
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 8975848d-07f0-4643-9eac-20aece69945f
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Certificate procedures in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

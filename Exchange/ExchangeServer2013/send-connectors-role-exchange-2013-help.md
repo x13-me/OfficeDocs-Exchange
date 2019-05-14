@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Send Connectors role: Exchange 2013 Help'
 TOCTitle: Send Connectors role
 ms:assetid: 8021e279-2b74-469e-aa6d-d0197f34ba6c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876913(v=EXCHG.150)
 ms:contentKeyID: 49289325
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

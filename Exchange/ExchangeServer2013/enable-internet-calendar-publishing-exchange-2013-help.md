@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable Internet calendar publishing: Exchange 2013 Help'
 TOCTitle: Enable Internet calendar publishing
 ms:assetid: b4c71696-52bb-492c-8259-0e419acd0bbc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ853046(v=EXCHG.150)
 ms:contentKeyID: 50390855
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

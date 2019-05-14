@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Import or export certificates for UM: Exchange 2013 Help'
 TOCTitle: Import or export certificates for UM
 ms:assetid: ee688c33-2e08-47e7-95fc-04ba10238341
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn205143(v=EXCHG.150)
 ms:contentKeyID: 53908380
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create an Email Address Policy: Exchange 2013 Help'
 TOCTitle: Create an Email Address Policy
 ms:assetid: eb2bf42e-2058-4e17-85d5-97546433b40a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125137(v=EXCHG.150)
 ms:contentKeyID: 49289449
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.NewEmailAddressPolicyWizardForm.EmailAddressPolicyIntroductionPage

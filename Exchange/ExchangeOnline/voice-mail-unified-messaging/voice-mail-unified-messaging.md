@@ -6,11 +6,12 @@ author: tonysmit
 ms.author: tonysmit
 ms.assetid: 7ddf1356-d4c0-41c7-a495-101633ae2f50
 ms.date: 6/25/2018
+ms.reviewer: 
 title: Voice mail in Exchange Online Unified Messaging
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: serdars
 
 ---
 

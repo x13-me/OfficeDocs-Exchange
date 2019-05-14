@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: d6734ca6-e443-4367-9eb7-0308aa87b9ff
 ms.date: 8/3/2018
+ms.reviewer: 
 title: KB2619234 update not installed [Win7RpcHttpAssocCookieGuidUpdateNotInstalled]
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: ca3c78a3-80cc-4df2-859f-0106bbd57a07
 ms.date: 6/8/2018
+ms.reviewer: 
 title: Configure OAuth authentication with SharePoint 2013 and Lync 2013
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

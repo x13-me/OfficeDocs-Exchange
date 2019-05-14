@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Add the Federation Mailbox to the AD RMS Super Users Group: Exchange 2013 Help'
 TOCTitle: Add the Federation Mailbox to the AD RMS Super Users Group
 ms:assetid: 44618df9-54f0-4474-a450-dcba48a02901
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee424431(v=EXCHG.150)
 ms:contentKeyID: 49319909
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

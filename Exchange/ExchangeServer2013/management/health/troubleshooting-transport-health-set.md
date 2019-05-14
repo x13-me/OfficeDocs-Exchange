@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting Transport Health Set
 TOCTitle: Troubleshooting Transport Health Set
 ms:assetid: 4bd6524c-dd34-440d-a5ec-2f974b81112a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.transport(v=EXCHG.150)
 ms:contentKeyID: 49720776
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Shadow redundancy: Exchange 2013 Help'
 TOCTitle: Shadow redundancy
 ms:assetid: a40dbe61-2a18-48a8-b2e0-4e81a6678d11
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351027(v=EXCHG.150)
 ms:contentKeyID: 49289359
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

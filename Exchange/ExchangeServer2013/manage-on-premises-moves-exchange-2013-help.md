@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage on-premises moves: Exchange 2013 Help'
 TOCTitle: Manage on-premises moves
 ms:assetid: 1691b658-f5af-49c6-9170-5c3cb66c7306
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150487(v=EXCHG.150)
 ms:contentKeyID: 47559947
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

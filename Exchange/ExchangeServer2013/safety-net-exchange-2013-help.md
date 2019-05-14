@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Safety Net: Exchange 2013 Help'
 TOCTitle: Safety Net
 ms:assetid: d0abb807-3b12-4c7d-bc7e-769b87c84ccb
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657495(v=EXCHG.150)
 ms:contentKeyID: 49289415
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

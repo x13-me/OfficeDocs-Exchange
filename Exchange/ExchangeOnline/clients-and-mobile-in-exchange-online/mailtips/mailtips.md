@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 9c989167-cc0c-40a6-82ba-383f573bd2d5
 ms.date: 
+ms.reviewer: 
 title: MailTips
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: Admin
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

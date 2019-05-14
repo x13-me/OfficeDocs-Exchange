@@ -1,11 +1,12 @@
 ---
 localization_priority: Normal
 ms.author: dmaguire
-manager: serdars
+manager: dansimp
 ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.assetid: bcb0ac98-2949-486b-a8ab-8549c021651b
+ms.reviewer: 
 ms.collection:
 - Ent_O365_Hybrid
 - Strat_EX_EXOBlocker

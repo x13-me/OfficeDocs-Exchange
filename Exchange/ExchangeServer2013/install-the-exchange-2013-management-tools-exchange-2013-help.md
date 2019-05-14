@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Install the Exchange 2013 management tools: Exchange 2013 Help'
 TOCTitle: Install the Exchange 2013 management tools
 ms:assetid: 71fcbe4c-783b-4f77-aabb-a21aa7a4ef23
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232090(v=EXCHG.150)
 ms:contentKeyID: 49289303
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

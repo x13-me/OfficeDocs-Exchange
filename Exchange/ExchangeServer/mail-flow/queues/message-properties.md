@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 8e6187c1-76f0-49da-bc24-2ab57cfb3c2c
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Properties of messages in queues
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

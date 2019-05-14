@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Exchange admin center in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Exchange admin center in Exchange 2013
 ms:assetid: a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150562(v=EXCHG.150)
 ms:contentKeyID: 47560086
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Direct Push: Exchange 2013 Help'
 TOCTitle: Direct Push
 ms:assetid: 373c1629-3d4b-4828-b014-9e103de4ef25
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997252(v=EXCHG.150)
 ms:contentKeyID: 48384981
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

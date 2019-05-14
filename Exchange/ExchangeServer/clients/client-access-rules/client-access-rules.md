@@ -10,7 +10,8 @@ ms.collection: exchange-server
 ms.audience: ITPro
 ms.service: exchange-server-it-pro
 ms.date: 9/12/2018
-manager: serdars
+ms.reviewer: 
+manager: dansimp
 
 ---
 

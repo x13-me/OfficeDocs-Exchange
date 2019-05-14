@@ -1,8 +1,8 @@
 ---
 title: "Accessibility for people with disabilities"
-ms.author: scotv
-author: scotvidican
-manager: scotv
+ms.author: dmaguire
+author: msdmaguire
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -12,6 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
+ms.reviewer: 
 description: "Microsoft is committed to making its products and services easier for everyone to use. The following sections provide information about the features, products, and services that make Microsoft Exchange more accessible for people with disabilities:"
 ---
 

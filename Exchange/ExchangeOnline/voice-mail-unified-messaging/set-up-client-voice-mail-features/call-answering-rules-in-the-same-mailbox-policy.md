@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: You can allow users who are associated with a Unified Messaging (UM) mailbox policy to configure call answering rules, or prevent them from doing so. If the option to configure call answering rules is disabled on a UM dial plan, the Call Answering Rules feature won't be available to UM-enabled users associated with the UM mailbox policy. The default setting is enabled.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: e44acaa6-d5a8-41e8-94aa-100be0bd6391
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Call answering rules in the same mailbox policy
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

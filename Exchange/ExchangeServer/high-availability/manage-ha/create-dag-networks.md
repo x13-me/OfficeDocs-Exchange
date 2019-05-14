@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 6caec7be-788a-4058-87a7-f31c575b870c
 ms.date: 4/19/2018
+ms.reviewer: 
 title: Create a database availability group network
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

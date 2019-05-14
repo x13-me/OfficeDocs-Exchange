@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure message size limits for a mailbox: Exchange 2013 Help'
 TOCTitle: Configure message size limits for a mailbox
 ms:assetid: d1220685-14c0-4c4f-abb2-3920f3046212
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124708(v=EXCHG.150)
 ms:contentKeyID: 50383002
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

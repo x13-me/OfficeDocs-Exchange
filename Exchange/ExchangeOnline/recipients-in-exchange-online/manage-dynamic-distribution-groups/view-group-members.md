@@ -6,6 +6,7 @@ author: kwekua
 ms.author: kwekua
 ms.assetid: 40b100c6-864e-4c82-9f98-08dd5c83e378
 ms.date: 3/2/2018
+ms.reviewer: 
 title: View members of a dynamic distribution group
 ms.collection: 
 - exchange-online

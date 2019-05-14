@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'AD LDS directory exists in default location: Exchange 2013 Help'
 TOCTitle: AD LDS directory exists in default location
 ms:assetid: cf830dec-dd74-47b2-bee2-b8956f8023ce
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.adamdatapathexists(v=EXCHG.150)
 ms:contentKeyID: 46629121
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

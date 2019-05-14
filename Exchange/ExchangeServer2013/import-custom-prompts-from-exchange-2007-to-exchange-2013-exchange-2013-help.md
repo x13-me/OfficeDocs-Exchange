@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Import custom prompts from Exchange 2007 to Exchange 2013: Exchange 2013 Help'
 TOCTitle: Import custom prompts from Exchange 2007 to Exchange 2013
 ms:assetid: 70c0b0bc-c0de-4e3c-8144-1fe59f86ebf4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg309147(v=EXCHG.150)
 ms:contentKeyID: 53382779
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

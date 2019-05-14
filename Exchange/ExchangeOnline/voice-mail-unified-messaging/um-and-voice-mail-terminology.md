@@ -6,11 +6,12 @@ author: tonysmit
 ms.author: tonysmit
 ms.assetid: 3a6d93f2-1802-4aed-8b83-35c7fd004d0c
 ms.date: 6/24/2018
+ms.reviewer: 
 title: UM and voice mail terminology
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: serdars
 
 ---
 

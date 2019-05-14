@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Use transport rules to inspect message attachments: Exchange 2013 Help'
 TOCTitle: Use transport rules to inspect message attachments
 ms:assetid: c0de687e-e33c-4e8a-b253-771494678795
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ674307(v=EXCHG.150)
 ms:contentKeyID: 49319929
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

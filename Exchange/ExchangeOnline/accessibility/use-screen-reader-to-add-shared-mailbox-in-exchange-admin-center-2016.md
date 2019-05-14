@@ -5,6 +5,8 @@ author: maggsl
 ms.author: v-maleo
 ms.assetid: d3856e24-9358-4957-a6d9-b7ec0d0e5fae
 ms.date: 
+ms.reviewer: 
+manager: dansimp
 description: Admins can learn how to use a screen reader to create a shared mailbox in the Exchange admin center (EAC) in Exchange Online.
 title: Use a screen reader to add a new shared mailbox in the Exchange admin center in Exchange Online
 ms.collection: 

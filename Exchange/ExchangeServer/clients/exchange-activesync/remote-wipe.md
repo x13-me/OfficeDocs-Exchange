@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 67ba838e-031d-4a98-b277-170683b6f520
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Perform a remote wipe on a mobile phone
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

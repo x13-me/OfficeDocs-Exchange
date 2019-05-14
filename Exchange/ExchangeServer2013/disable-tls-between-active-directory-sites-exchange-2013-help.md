@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Disable TLS between Active Directory sites: Exchange 2013 Help'
 TOCTitle: Disable TLS between Active Directory sites
 ms:assetid: 1e1a0acf-24e7-4f94-9b33-603a4e0a812c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876856(v=EXCHG.150)
 ms:contentKeyID: 50934212
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

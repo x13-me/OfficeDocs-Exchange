@@ -6,6 +6,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.assetid: bcef7984-4bfa-4ca8-9fa5-a65af8618f5d
 ms.date: 7/26/2018
+ms.reviewer: 
 title: Use mail protection reports in Office 365 to view data about malware, spam, and rule detections
 ms.collection: 
 - exchange-online

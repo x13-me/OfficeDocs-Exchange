@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Set the TLS listening port on a Client Access server: Exchange 2013 Help'
 TOCTitle: Set the TLS listening port on a Client Access server
 ms:assetid: f4401923-61fa-4dc5-95f8-c0d2f515b2ea
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673576(v=EXCHG.150)
 ms:contentKeyID: 49315561
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

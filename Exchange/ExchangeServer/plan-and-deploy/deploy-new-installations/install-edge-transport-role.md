@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: b8e51b0b-201e-4c64-92c8-3ac0db04b6e2
 ms.date: 7/24/2018
+ms.reviewer: 
 title: Install Exchange Edge Transport servers using the Setup wizard
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 51ebf2f6-8a02-44ef-a489-ca361cb0f63a
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Pre-stage the cluster name object for a database availability group
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

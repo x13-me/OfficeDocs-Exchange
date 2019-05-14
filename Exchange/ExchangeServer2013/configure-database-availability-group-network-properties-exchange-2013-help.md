@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure database availability group network properties: Exchange 2013 Help'
 TOCTitle: Configure database availability group network properties
 ms:assetid: 41197639-988f-476c-9788-51d5191a7dce
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd297927(v=EXCHG.150)
 ms:contentKeyID: 48385020
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

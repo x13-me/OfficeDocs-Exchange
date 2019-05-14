@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: bcd54aa0-aa45-4c68-b504-1475842d4b96
 ms.date: 7/20/2018
+ms.reviewer: 
 title: Roll back a public folder migration from Exchange Server to Exchange Online
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
