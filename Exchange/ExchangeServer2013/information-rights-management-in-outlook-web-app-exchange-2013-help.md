@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Information Rights Management in Outlook Web App: Exchange 2013 Help'
 TOCTitle: Information Rights Management in Outlook Web App
 ms:assetid: 60a49dab-17ac-4d2c-9b41-7d87250d6c00
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876891(v=EXCHG.150)
 ms:contentKeyID: 49319918
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

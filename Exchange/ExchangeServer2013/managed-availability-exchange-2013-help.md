@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Managed Availability: Exchange 2013 Help'
 TOCTitle: Managed Availability
 ms:assetid: ceb99e6f-6dca-446d-abfb-3e6fc6a72704
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn482056(v=EXCHG.150)
 ms:contentKeyID: 59888992
 ms.date: 03/29/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

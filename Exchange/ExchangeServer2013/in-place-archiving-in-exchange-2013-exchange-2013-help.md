@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'In-Place Archiving in Exchange 2013: Exchange 2013 Help'
 TOCTitle: In-Place Archiving in Exchange 2013
 ms:assetid: b5e4c0e9-0558-4b90-bc12-f67adbfb59ac
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd979800(v=EXCHG.150)
 ms:contentKeyID: 48385465
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

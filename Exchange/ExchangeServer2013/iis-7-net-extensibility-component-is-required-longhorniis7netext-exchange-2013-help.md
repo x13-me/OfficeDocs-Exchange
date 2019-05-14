@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'IIS 7 .NET Extensibility component is required'
 TOCTitle: IIS 7 .NET Extensibility component is required_LonghornIIS7NetExt
 ms:assetid: 8b481626-b68a-4fba-b66e-a02c03856bfd
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.longhorniis7netext(v=EXCHG.150)
 ms:contentKeyID: 46629018
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

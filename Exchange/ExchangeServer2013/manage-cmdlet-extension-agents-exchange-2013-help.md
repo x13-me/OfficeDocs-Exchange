@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage cmdlet extension agents: Exchange 2013 Help'
 TOCTitle: Manage cmdlet extension agents
 ms:assetid: 9141b3cb-ad13-4415-be2f-aa89f91445f5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298143(v=EXCHG.150)
 ms:contentKeyID: 50117645
 ms.date: 03/23/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
