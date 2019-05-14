@@ -1,10 +1,14 @@
-﻿---
+---
 title: Autodiscover service for Exchange 2013
 TOCTitle: Autodiscover service
 ms:assetid: b03c0f21-cbc2-4be8-ad03-73a7dac16ffc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124251(v=EXCHG.150)
 ms:contentKeyID: 50396327
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

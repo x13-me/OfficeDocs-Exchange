@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Assign a certificate to the UM and UM Call Router services: Exchange 2013 Help'
 TOCTitle: Assign a certificate to the UM and UM Call Router services
 ms:assetid: 8a900e5f-9779-4213-92d7-ec157b15fbc5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn205140(v=EXCHG.150)
 ms:contentKeyID: 53908378
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

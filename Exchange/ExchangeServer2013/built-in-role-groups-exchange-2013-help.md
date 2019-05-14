@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Built-in role groups: Exchange 2013 Help'
 TOCTitle: Built-in role groups
 ms:assetid: f786b88a-8263-4475-a3c5-104fbb322ec5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351266(v=EXCHG.150)
 ms:contentKeyID: 49289461
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

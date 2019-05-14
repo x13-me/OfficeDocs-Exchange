@@ -3,15 +3,16 @@ localization_priority: Normal
 description: 'Summary: All the information and resources you need to get started with Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: landing-page
 layout: LandingPage
-author: dstrome
-ms.author: dstrome
+author: chrisda
+ms.author: chrisda
 ms.assetid: d2ce4e55-208e-46b0-a775-e7e266132100
 ms.date: 7/3/2018
+ms.reviewer: 
 title: Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
