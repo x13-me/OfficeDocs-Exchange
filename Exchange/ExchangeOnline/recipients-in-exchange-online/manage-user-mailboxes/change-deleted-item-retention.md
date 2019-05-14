@@ -2,17 +2,18 @@
 localization_priority: Normal
 description: Learn how to use Exchange Online PowerShell to change the deleted item retention period for Exchange Online mailboxes.
 ms.topic: article
-author: serdars
-ms.author: serdars
+author: chrisda
+ms.author: chrisda
 ms.assetid: ce17f1ec-b96c-4c9e-b20a-507fe0afc684
 ms.date: 
+ms.reviewer: 
 title: Change how long permanently deleted items are kept for an Exchange Online mailbox
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

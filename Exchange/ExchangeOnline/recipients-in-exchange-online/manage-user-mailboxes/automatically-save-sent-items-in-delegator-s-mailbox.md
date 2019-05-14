@@ -2,8 +2,8 @@
 localization_priority: Normal
 description: Set up mailboxes so messages sent by a delegate are stored in both the delegate and delegator's Sent Items.
 ms.topic: article
-author: dstrome
-ms.author: dstrome
+author: chrisda
+ms.author: chrisda
 ms.assetid: f15297f3-32c3-44b6-87b5-dd64dc2bcf7e
 title: Automatically save sent items in delegator's mailbox
 ms.collection: 
@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 
