@@ -8,6 +8,8 @@ ms.prod: exchange-server-it-pro
 ms.assetid: d2edc746-6647-41c4-a99a-b086caf893fa
 ms.collection: exchange-server
 ms.date: 7/5/2018
+ms.reviewer: 
+manager: dansimp
 ms.audience: ITPro
 title: Procedures for mailbox imports from .pst files in Exchange Server
 

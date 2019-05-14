@@ -2,8 +2,9 @@
 title: "Fix email delivery issues for error code 5.1.8 in Exchange Online"
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 ms.date: 
+ms.reviewer: 
 ms.audience: Admin
 ms.topic: article
 ms.prod: office-online-server

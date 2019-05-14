@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Planning for high availability and site resilience: Exchange 2013 Help'
 TOCTitle: Planning for high availability and site resilience
 ms:assetid: 29bb0358-fc8e-4437-8feb-d2959ed0f102
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638104(v=EXCHG.150)
 ms:contentKeyID: 48384921
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

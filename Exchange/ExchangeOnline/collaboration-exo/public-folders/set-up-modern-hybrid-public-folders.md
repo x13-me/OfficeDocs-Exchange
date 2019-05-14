@@ -1,7 +1,7 @@
 ---
 localization_priority: Normal
 ms.author: dmaguire
-manager: laurawi
+manager: dansimp
 ms.topic: article
 author: msdmaguire
 ms.service: exchange-online

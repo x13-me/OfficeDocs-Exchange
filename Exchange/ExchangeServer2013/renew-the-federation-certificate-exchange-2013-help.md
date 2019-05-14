@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Renew the federation certificate: Exchange 2013 Help'
 TOCTitle: Renew the federation certificate
 ms:assetid: 0f390713-3058-44d0-9c07-3c982616e790
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Mt779252(v=EXCHG.150)
 ms:contentKeyID: 74429166
 ms.date: 02/28/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

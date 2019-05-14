@@ -2,7 +2,7 @@
 ms.audience: ITPro
 localization_priority: Normal
 ms.author: chrisda
-manager: laurawi
+manager: dansimp
 ms.topic: article
 author: chrisda
 ms.service: exchange-online
@@ -11,6 +11,7 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 ms.date: 6/24/2018
+ms.reviewer: 
 title: Message format and transmission in Exchange Online
 
 ---

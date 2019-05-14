@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'TeamMailboxLifecycleApplication role: Exchange 2013 Help'
 TOCTitle: TeamMailboxLifecycleApplication role
 ms:assetid: 3cd2cd6f-65e1-4e66-a017-054060c46fe1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673057(v=EXCHG.150)
 ms:contentKeyID: 49289236
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

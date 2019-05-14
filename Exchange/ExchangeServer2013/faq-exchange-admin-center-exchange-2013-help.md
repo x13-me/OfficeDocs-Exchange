@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'FAQ: Exchange admin center: Exchange 2013 Help'
 TOCTitle: 'FAQ: Exchange admin center'
 ms:assetid: 3de0042f-74a6-458f-947c-3cd6eeacd6ab
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ552409(v=EXCHG.150)
 ms:contentKeyID: 48679374
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

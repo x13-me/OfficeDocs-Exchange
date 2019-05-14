@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Remove Mailbox and Client Access servers from a SIP URI dial plan'
 TOCTitle: Remove Mailbox and Client Access servers from a SIP URI dial plan
 ms:assetid: 367441e1-1a0f-42c8-9fa8-8abe80b3d015
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997238(v=EXCHG.150)
 ms:contentKeyID: 53401614
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

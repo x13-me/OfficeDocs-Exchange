@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: If your organization is experiencing problems with the audio quality of Unified Messaging (UM) calls and voice mail messages, use the Call Statistics report to help you understand what's causing the problems.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 8a87694b-1678-4a01-859f-5ad3b2c73db5
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Investigate the audio quality of voice calls in your organization
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

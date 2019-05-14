@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable or disable mailbox audit logging for a mailbox: Exchange 2013 Help'
 TOCTitle: Enable or disable mailbox audit logging for a mailbox
 ms:assetid: c4bbfd52-6196-49c7-8c31-777fbbee11f2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff461937(v=EXCHG.150)
 ms:contentKeyID: 49300697
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Exchange 2013 Performance Counters: Exchange 2013 Help'
 TOCTitle: Exchange 2013 Performance Counters
 ms:assetid: 9143dd77-7c30-4769-8de1-28c717cfa9e9
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn904093(v=EXCHG.150)
 ms:contentKeyID: 63917938
 ms.date: 02/06/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

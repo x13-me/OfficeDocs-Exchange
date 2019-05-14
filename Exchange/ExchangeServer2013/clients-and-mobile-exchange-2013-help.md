@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Clients and mobile: Exchange 2013 Help'
 TOCTitle: Clients and mobile
 ms:assetid: d67342e7-6ee0-4228-9f84-721b2a53fb4c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150572(v=EXCHG.150)
 ms:contentKeyID: 47560112
 ms.date: 08/16/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

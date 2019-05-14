@@ -2,8 +2,9 @@
 title: "Fix email delivery issues for error code 5.7.133 in Exchange Online"
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 ms.date:
+ms.reviewer: 
 ms.audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration

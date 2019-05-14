@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Server health and performance permissions: Exchange 2013 Help'
 TOCTitle: Server health and performance permissions
 ms:assetid: 00b23fd3-6679-4b06-a3d4-51df3112b9cd
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150479(v=EXCHG.150)
 ms:contentKeyID: 47559932
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

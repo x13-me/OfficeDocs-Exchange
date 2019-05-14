@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Mailbox database copies: Exchange 2013 Help'
 TOCTitle: Mailbox database copies
 ms:assetid: ce748bca-3e24-493b-b9e6-153157bffd6a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd979802(v=EXCHG.150)
 ms:contentKeyID: 48385558
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

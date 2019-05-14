@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Integration with SharePoint and Lync: Exchange 2013 Help'
 TOCTitle: Integration with SharePoint and Lync
 ms:assetid: 056b29f6-e0e9-4974-b763-002518857a93
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150480(v=EXCHG.150)
 ms:contentKeyID: 47559934
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

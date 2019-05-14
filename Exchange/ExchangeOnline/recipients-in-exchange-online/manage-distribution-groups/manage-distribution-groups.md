@@ -8,6 +8,7 @@ f1_keywords:
 ms.author: kwekua
 ms.assetid: c4c43493-55e1-46d2-bd4b-d6f6cecd747f
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Create and manage distribution groups
 ms.collection: 
 - exchange-online

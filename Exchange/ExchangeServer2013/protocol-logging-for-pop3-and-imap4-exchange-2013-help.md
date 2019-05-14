@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Protocol logging for POP3 and IMAP4: Exchange 2013 Help'
 TOCTitle: Protocol logging for POP3 and IMAP4
 ms:assetid: 212ed3d5-0c98-4346-a860-1cfcac5d73c4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335141(v=EXCHG.150)
 ms:contentKeyID: 50395394
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

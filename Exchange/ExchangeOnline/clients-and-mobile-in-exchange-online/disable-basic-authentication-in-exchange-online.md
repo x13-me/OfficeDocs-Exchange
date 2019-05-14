@@ -1,11 +1,12 @@
 ---
 localization_priority: Normal
 ms.author: chrisda
-manager: serdars
+manager: dansimp
 ms.topic: article
 author: chrisda
 ms.service: exchange-online
 ms.assetid: bba2059a-7242-41d0-bb3f-baaf7ec1abd7
+ms.reviewer: 
 ms.collection: 
 - exchange-online
 - M365-email-calendar

@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting ActiveSync Health Set
 TOCTitle: Troubleshooting ActiveSync Health Set
 ms:assetid: 8a0b8b26-b4ef-41b8-8f71-8271c1735a69
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.activesync(v=EXCHG.150)
 ms:contentKeyID: 49720831
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Change a role entry: Exchange 2013 Help'
 TOCTitle: Change a role entry
 ms:assetid: 5aa4f39c-16a4-4815-ac4f-2cdcfa2b3ee1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298005(v=EXCHG.150)
 ms:contentKeyID: 49289260
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

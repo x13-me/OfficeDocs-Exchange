@@ -1,10 +1,14 @@
-﻿---
+---
 title: Import the Exchange Server 2013 Management Pack
 TOCTitle: Import the Exchange Server 2013 Management Pack
 ms:assetid: dc929928-61b8-448b-9ae5-d3fa73a18ee9
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn195914(v=EXCHG.150)
 ms:contentKeyID: 53181787
 ms.date: 02/06/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

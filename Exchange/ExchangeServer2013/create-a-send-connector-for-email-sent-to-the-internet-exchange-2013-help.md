@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a Send connector for email sent to the Internet: Exchange 2013 Help'
 TOCTitle: Create a Send connector for email sent to the Internet
 ms:assetid: 6deaefa8-1152-40d9-b1ba-9c19bdf8a928
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657457(v=EXCHG.150)
 ms:contentKeyID: 49289297
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

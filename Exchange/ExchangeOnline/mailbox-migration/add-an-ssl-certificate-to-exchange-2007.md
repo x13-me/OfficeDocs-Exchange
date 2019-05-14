@@ -5,6 +5,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: d4524743-a63f-413f-b290-5f0d2f070392
 ms.date: 8/16/2018
+ms.reviewer: 
 description: Steps to add an SSL certificate to Exchange 2007,
 title: Add an SSL certificate to Exchange 2007
 ms.collection: 
@@ -19,7 +20,7 @@ search.appverid:
 ms.audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Clean up the Recoverable Items folder: Exchange 2013 Help'
 TOCTitle: Clean up the Recoverable Items folder
 ms:assetid: 82c310f8-de2f-46f2-8e1a-edb6055d6e69
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff678798(v=EXCHG.150)
 ms:contentKeyID: 50470877
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 f1_keywords:
 - classified message spillage

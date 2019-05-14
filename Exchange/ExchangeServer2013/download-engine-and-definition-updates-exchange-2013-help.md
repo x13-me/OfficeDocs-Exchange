@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Download engine and definition updates: Exchange 2013 Help'
 TOCTitle: Download engine and definition updates
 ms:assetid: 8f2ca383-e463-4df0-aa5d-29afe2f81aaf
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657471(v=EXCHG.150)
 ms:contentKeyID: 49289349
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

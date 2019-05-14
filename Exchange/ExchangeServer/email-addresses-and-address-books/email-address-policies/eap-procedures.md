@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: eb2bf42e-2058-4e17-85d5-97546433b40a
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Procedures for email address policies in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

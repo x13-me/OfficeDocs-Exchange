@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Planning to use Active Directory sites for routing mail: Exchange 2013 Help'
 TOCTitle: Planning to use Active Directory sites for routing mail
 ms:assetid: 0f697cee-bcaa-4c69-b80c-7a2afd1817d2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996299(v=EXCHG.150)
 ms:contentKeyID: 49289169
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

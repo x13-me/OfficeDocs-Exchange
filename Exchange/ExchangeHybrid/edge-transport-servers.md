@@ -1,8 +1,8 @@
 ---
 title: "Edge Transport servers with hybrid deployments"
-ms.author: dstrome
-author: dstrome
-manager: serdars
+ms.author: chrisda
+author: chrisda
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -12,6 +12,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: 166b1490-5c56-40df-a17b-e8bb36224fd9
+ms.reviewer: 
 description: "The Edge Transport server role is an optional role that's typically deployed on a computer located in an Exchange organization's perimeter network and is designed to minimize the attack surface of the organization. The Edge Transport server role handles all Internet-facing mail flow, which provides SMTP relay and smart host services for the internal on-premises Exchange servers in your organization."
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Information Rights Management role: Exchange 2013 Help'
 TOCTitle: Information Rights Management role
 ms:assetid: bb40c2ec-1eb8-43d4-af7c-4fa74c7c3ce2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876934(v=EXCHG.150)
 ms:contentKeyID: 49289395
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

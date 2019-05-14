@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'DNS query failure sensitivity: Exchange 2013 Help'
 TOCTitle: DNS query failure sensitivity
 ms:assetid: a3c3980c-20ca-4b54-a2e6-76d49af620b4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb676467(v=EXCHG.150)
 ms:contentKeyID: 50934223
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

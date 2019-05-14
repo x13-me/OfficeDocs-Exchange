@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Windows Process Activation Service - Process Model component is required'
 TOCTitle: The Windows Process Activation Service - Process Model component is required_LonghornWASProcessModelInstalled
 ms:assetid: 8cc13dbb-4921-4c07-8602-d26613d7730a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.longhornwasprocessmodelinstalled(v=EXCHG.150)
 ms:contentKeyID: 46629022
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

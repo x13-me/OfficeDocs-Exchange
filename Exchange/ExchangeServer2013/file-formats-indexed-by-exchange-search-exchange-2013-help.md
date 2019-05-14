@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'File formats indexed by Exchange Search: Exchange 2013 Help'
 TOCTitle: File formats indexed by Exchange Search
 ms:assetid: e5110ac1-28e1-4554-acc3-85d08c997bc5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee633485(v=EXCHG.150)
 ms:contentKeyID: 51407274
 ms.date: 06/04/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

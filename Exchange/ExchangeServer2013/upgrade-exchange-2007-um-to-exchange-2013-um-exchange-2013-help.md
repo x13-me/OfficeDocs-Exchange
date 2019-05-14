@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Upgrade Exchange 2007 UM to Exchange 2013 UM: Exchange 2013 Help'
 TOCTitle: Upgrade Exchange 2007 UM to Exchange 2013 UM
 ms:assetid: 642c922d-7e85-40f0-bb9b-0f20da692be3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn169227(v=EXCHG.150)
 ms:contentKeyID: 53382781
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

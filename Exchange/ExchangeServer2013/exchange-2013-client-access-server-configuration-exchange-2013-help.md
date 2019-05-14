@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Exchange 2013 Client Access server configuration: Exchange 2013 Help'
 TOCTitle: Exchange 2013 Client Access server configuration
 ms:assetid: 01432ae4-2a00-44a4-a4dd-4eb8d7e6cfae
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Hh529912(v=EXCHG.150)
 ms:contentKeyID: 49668969
 ms.date: 07/25/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

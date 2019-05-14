@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage In-Place Archives in Exchange 2013: Exchange 2013 Help'
 TOCTitle: Manage In-Place Archives in Exchange 2013
 ms:assetid: 49ef4a3e-d209-4fb2-80a3-6132b0f69bd0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ651146(v=EXCHG.150)
 ms:contentKeyID: 49352793
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

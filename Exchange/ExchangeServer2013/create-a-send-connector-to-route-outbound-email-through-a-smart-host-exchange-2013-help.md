@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a Send connector to route outbound email through a smart host'
 TOCTitle: Create a Send connector to route outbound email through a smart host
 ms:assetid: 4a9ef08e-bd62-4c6b-8790-d24fb0f8f24b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673059(v=EXCHG.150)
 ms:contentKeyID: 49289246
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

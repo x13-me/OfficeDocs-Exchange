@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Administrator audit log structure: Exchange 2013 Help'
 TOCTitle: Administrator audit log structure
 ms:assetid: 87e259c9-c884-4d53-bd78-d13f2300d73e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff459251(v=EXCHG.150)
 ms:contentKeyID: 50117644
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

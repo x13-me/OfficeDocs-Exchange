@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create an Outlook Protection Rule: Exchange 2013 Help'
 TOCTitle: Create an Outlook Protection Rule
 ms:assetid: da64750d-faaf-44de-ad8c-888eba7fbdbf
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638196(v=EXCHG.150)
 ms:contentKeyID: 49319935
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

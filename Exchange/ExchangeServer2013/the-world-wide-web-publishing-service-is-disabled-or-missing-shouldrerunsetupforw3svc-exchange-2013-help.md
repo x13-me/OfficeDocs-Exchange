@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'World Wide Web Publishing Service is disabled or missing'
 TOCTitle: The World Wide Web Publishing Service is disabled or missing_ShouldReRunSetupForW3SVC
 ms:assetid: f1815a6d-d16b-4271-9fab-84087465529e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.shouldrerunsetupforw3svc(v=EXCHG.150)
 ms:contentKeyID: 46629190
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

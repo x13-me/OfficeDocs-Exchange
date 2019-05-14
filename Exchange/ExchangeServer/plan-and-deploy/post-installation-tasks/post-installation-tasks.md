@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: bd99aaa4-b82c-427c-ab65-b9230ff63fb2
 ms.date: 7/27/2016
+ms.reviewer: 
 title: Exchange Server post-installation tasks
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

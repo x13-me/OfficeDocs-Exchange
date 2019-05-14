@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Management role scopes: Exchange 2013 Help'
 TOCTitle: Management role scopes
 ms:assetid: f8f5b205-dd47-4fc3-8322-3fa115ae475a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351270(v=EXCHG.150)
 ms:contentKeyID: 49289472
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -9,11 +9,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: a115b182-cbd2-4d31-aa0e-375240939301
 ms.date: 8/3/2018
+ms.reviewer: 
 title: Can't install Exchange 2016 in a forest that contains Exchange 2000 or Exchange 2003 servers. [Exchange2000or2003PresentInOrg]
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

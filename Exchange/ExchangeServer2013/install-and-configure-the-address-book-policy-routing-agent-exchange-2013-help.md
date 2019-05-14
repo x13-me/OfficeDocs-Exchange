@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Install and configure the Address Book Policy Routing agent'
 TOCTitle: Install and configure the Address Book Policy Routing agent
 ms:assetid: 20e8a43d-4508-4388-a2c9-aa3073593cc2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ907308(v=EXCHG.150)
 ms:contentKeyID: 50639771
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

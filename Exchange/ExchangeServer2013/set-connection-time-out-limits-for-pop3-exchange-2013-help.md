@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Set connection time-out limits for POP3: Exchange 2013 Help'
 TOCTitle: Set connection time-out limits for POP3
 ms:assetid: 40003115-be4e-4cf1-97b4-f5ca05b314dc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997604(v=EXCHG.150)
 ms:contentKeyID: 50395396
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

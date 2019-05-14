@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Cannot remove mailbox database: Exchange 2013 Help'
 TOCTitle: Cannot remove mailbox database
 ms:assetid: 5881e4c0-c2e2-48db-84b4-7f9ce3cf46a7
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.unwillingtoremovemailboxdatabase(v=EXCHG.150)
 ms:contentKeyID: 46628948
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

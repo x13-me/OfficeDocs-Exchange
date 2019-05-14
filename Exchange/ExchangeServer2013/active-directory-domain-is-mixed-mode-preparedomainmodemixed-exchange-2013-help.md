@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Active Directory domain is mixed mode'
 TOCTitle: Active Directory domain is mixed mode_PrepareDomainModeMixed
 ms:assetid: 97c9f480-7a2b-482e-8f51-f7b965fe1556
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.preparedomainmodemixed(v=EXCHG.150)
 ms:contentKeyID: 46629042
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

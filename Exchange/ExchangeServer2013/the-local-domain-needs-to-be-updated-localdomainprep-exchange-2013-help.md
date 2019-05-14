@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'The local domain needs to be updated_LocalDomainPrep: Exchange 2013 Help'
 TOCTitle: The local domain needs to be updated_LocalDomainPrep
 ms:assetid: f33e6785-e85a-495e-a124-ebcb2b763e75
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.localdomainprep(v=EXCHG.150)
 ms:contentKeyID: 46629174
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable or Disable IRM for Internal Messages: Exchange 2013 Help'
 TOCTitle: Enable or Disable IRM for Internal Messages
 ms:assetid: a6a17f57-5304-41f1-954d-7301857d54a1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124077(v=EXCHG.150)
 ms:contentKeyID: 49319927
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

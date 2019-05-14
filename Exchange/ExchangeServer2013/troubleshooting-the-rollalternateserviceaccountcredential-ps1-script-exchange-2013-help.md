@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Troubleshoot the RollAlternateServiceAccountCredential.ps1 script'
 TOCTitle: Troubleshooting the RollAlternateServiceAccountCredential.ps1 Script
 ms:assetid: 2bbf36d3-eb89-4f92-a8de-259a7cb64d62
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff808310(v=EXCHG.150)
 ms:contentKeyID: 63937187
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

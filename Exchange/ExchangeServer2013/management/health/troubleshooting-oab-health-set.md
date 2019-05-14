@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting OAB Health Set
 TOCTitle: Troubleshooting OAB Health Set
 ms:assetid: 2d29c28c-91e6-4055-a177-7b76fc23f10a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.oab(v=EXCHG.150)
 ms:contentKeyID: 49720750
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

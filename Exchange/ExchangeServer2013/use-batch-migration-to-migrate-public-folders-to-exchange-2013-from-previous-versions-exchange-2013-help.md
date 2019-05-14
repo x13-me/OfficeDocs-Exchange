@@ -1,7 +1,11 @@
-﻿---
+---
 title: 'Use batch migration to migrate public folders to Exchange 2013 from previous versions'
 TOCTitle: Use batch migration to migrate public folders to Exchange 2013 from previous versions
 ms:assetid: da808e27-d2b7-4fbd-915c-a600751f526c
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn912663(v=EXCHG.150)
 ms:contentKeyID: 64568564
 mtps_version: v=EXCHG.150

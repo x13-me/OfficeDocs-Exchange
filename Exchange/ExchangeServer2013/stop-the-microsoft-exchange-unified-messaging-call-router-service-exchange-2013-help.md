@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Stop the Microsoft Exchange Unified Messaging Call Router service'
 TOCTitle: Stop the Microsoft Exchange Unified Messaging Call Router service
 ms:assetid: 79935528-1a8c-4f22-826c-8f9a60f4f6f4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673535(v=EXCHG.150)
 ms:contentKeyID: 49315446
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

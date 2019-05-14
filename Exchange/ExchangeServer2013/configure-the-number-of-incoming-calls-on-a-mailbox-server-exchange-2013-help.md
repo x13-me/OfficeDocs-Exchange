@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure the number of incoming calls on a Mailbox server: Exchange 2013 Help'
 TOCTitle: Configure the number of incoming calls on a Mailbox server
 ms:assetid: 419e1de9-2bf8-48a8-824d-2a536b0a6d90
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997637(v=EXCHG.150)
 ms:contentKeyID: 49315399
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

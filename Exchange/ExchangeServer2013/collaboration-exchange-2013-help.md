@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Collaboration: Exchange 2013 Help'
 TOCTitle: Collaboration
 ms:assetid: f45c1be1-2a66-4610-a28d-4adc6d212769
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ218725(v=EXCHG.150)
 ms:contentKeyID: 48385713
 ms.date: 06/04/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Exchange 2013 storage configuration options: Exchange 2013 Help'
 TOCTitle: Exchange 2013 storage configuration options
 ms:assetid: 37cdeacf-74f9-4399-9860-4d1dbec12bb1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee832792(v=EXCHG.150)
 ms:contentKeyID: 49685283
 ms.date: 12/15/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

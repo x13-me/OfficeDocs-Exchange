@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Connect a VoIP gateway to communicate with a PBX: Exchange 2013 Help'
 TOCTitle: Connect a VoIP gateway to communicate with a PBX
 ms:assetid: 76bcdc54-3ec2-408a-bdbe-37826580dd62
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998872(v=EXCHG.150)
 ms:contentKeyID: 49315440
 ms.date: 02/06/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

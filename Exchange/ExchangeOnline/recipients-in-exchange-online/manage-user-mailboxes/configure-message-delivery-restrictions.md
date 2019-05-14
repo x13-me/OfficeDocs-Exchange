@@ -6,6 +6,7 @@ author: kwekua
 ms.author: kwekua
 ms.assetid: c4b8b89f-3dbe-4cb8-8839-9a4e8067e00c
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Configure message delivery restrictions for a mailbox
 ms.collection: 
 - exchange-online
