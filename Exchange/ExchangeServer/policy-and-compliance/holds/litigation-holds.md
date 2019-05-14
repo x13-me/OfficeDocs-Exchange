@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: Place a mailbox on Litigation Hold to preserve all mailbox content, including deleted items and original versions of modified items.
 ms.topic: article
-author: SerdarSoysal
-ms.author: serdars
+author: chrisda
+ms.author: chrisda
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Place a mailbox on Litigation Hold
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: scotv
+manager: dansimp
 
 ---
 

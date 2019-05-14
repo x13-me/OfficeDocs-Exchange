@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: cf830dec-dd74-47b2-bee2-b8956f8023ce
 ms.date: 8/2/2018
+ms.reviewer: 
 title: AD LDS directory exists in default location [ADAMDataPathExists]
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
