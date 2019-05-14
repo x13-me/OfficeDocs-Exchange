@@ -14,7 +14,6 @@ description: "Provides resources for IT Pros to plan, deliver, and adopt Outlook
 
 # Plan, deliver, and adopt Outlook for iOS and Android in your organization
 
-![Close-up picture of a mobile phone showing Outlook for iOS and Android](media/new-banner.jpg)
 ![Close-up picture of a mobile phone showing Outlook for iOS and Android](media/banner-new.jpg)
 
 
