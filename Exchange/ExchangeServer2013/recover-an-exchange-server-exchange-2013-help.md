@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Recover an Exchange Server: Exchange 2013 Help'
 TOCTitle: Recover an Exchange Server
 ms:assetid: 46e9a1cf-b64c-43c3-a898-6171176da761
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876880(v=EXCHG.150)
 ms:contentKeyID: 48385039
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

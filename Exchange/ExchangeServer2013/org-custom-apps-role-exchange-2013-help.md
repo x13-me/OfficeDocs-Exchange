@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Org Custom Apps role: Exchange 2013 Help'
 TOCTitle: Org Custom Apps role
 ms:assetid: ab2aac13-f783-43e6-a369-75cce1d4943f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657482(v=EXCHG.150)
 ms:contentKeyID: 49289371
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

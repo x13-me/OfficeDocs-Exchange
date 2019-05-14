@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Prepare Active Directory and domains: Exchange 2013 Help'
 TOCTitle: Prepare Active Directory and domains
 ms:assetid: f895e1ce-d766-4352-ac46-ec959c9954a9
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125224(v=EXCHG.150)
 ms:contentKeyID: 48385726
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

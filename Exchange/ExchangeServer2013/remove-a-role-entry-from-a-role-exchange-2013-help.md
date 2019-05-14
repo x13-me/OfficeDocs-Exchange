@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Remove a role entry from a role: Exchange 2013 Help'
 TOCTitle: Remove a role entry from a role
 ms:assetid: 4736367a-750f-44d3-8a20-5149bd35e9ff
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd297947(v=EXCHG.150)
 ms:contentKeyID: 49289243
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

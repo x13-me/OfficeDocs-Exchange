@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Scenario: Deploying address book policies: Exchange 2013 Help'
 TOCTitle: 'Scenario: Deploying address book policies'
 ms:assetid: 6ac3c87d-161f-447b-afb2-149ae7e3f1dc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657455(v=EXCHG.150)
 ms:contentKeyID: 49289287
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

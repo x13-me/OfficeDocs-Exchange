@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Primary DNS Suffix is missing: Exchange 2013 Help'
 TOCTitle: Primary DNS Suffix is missing
 ms:assetid: 310765bf-a650-4a3d-a5e4-6173b559d4f6
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.fqdnmissing(v=EXCHG.150)
 ms:contentKeyID: 61200284
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
