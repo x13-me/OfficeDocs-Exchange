@@ -5,6 +5,7 @@ ms.topic: article
 author: dianef77
 ms.author: dianef
 ms.assetid: 5f76de29-9ee3-47de-84ce-2d49fdc32174
+ms.reviewer: 
 title: Turn off diagnostic log collection in Support and Recovery Assistant for Office 365
 ms.collection: 
 - exchange-online

@@ -5,6 +5,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 8c1b16e6-475d-406d-a80c-1956fa781789
 ms.date: 8/16/2018
+ms.reviewer: 
 description: Steps to add an SSL certificate to Exchange 2010.
 title: Add an SSL certificate to Exchange 2010
 ms.collection: 
@@ -19,7 +20,7 @@ search.appverid:
 ms.audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

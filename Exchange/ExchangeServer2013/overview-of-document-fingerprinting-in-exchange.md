@@ -1,10 +1,14 @@
-﻿---
+---
 title: Overview of Document Fingerprinting in Exchange
 TOCTitle: Document Fingerprinting
 ms:assetid: 1e0c579c-26e0-462a-a1b0-d7506dfe05fa
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn635176(v=EXCHG.150)
 ms:contentKeyID: 61218308
 ms.date: 12/10/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

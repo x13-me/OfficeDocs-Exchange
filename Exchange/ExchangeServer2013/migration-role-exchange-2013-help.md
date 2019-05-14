@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Migration role: Exchange 2013 Help'
 TOCTitle: Migration role
 ms:assetid: 8b5a3385-7dc0-4492-9f00-a4616982016b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876920(v=EXCHG.150)
 ms:contentKeyID: 49289335
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

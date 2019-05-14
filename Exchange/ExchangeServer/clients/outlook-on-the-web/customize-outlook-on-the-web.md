@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: d8d9f735-7181-428f-9049-b9886dce5159
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Customize the Outlook on the web sign-in, language selection, and error pages in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: scotv
+manager: dansimp
 
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Remove a UM language pack: Exchange 2013 Help'
 TOCTitle: Remove a UM language pack
 ms:assetid: a2bc2753-2c25-4ea0-a9d5-e3d42a699c6c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124004(v=EXCHG.150)
 ms:contentKeyID: 49315473
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

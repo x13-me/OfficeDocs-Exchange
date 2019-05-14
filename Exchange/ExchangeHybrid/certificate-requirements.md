@@ -1,8 +1,9 @@
 ---
 title: "Certificate requirements for hybrid deployments"
-ms.author: dstrome
-author: dstrome
-manager: serdars
+ms.author: chrisda
+author: chrisda
+ms.reviewer: 
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

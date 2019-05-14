@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Pipeline tracing: Exchange 2013 Help'
 TOCTitle: Pipeline tracing
 ms:assetid: e7780499-9a6f-48b1-aea8-df88ecd8b18a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125018(v=EXCHG.150)
 ms:contentKeyID: 50934225
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

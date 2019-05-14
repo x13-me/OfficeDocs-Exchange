@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: b63b63bb-6faf-4337-8441-50bc64b49bb8
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Email address policies in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -68,13 +69,15 @@ All SMTP email address formats in the Exchange Management Shell, or custom SMTP 
 
 |**Variable**|**Value**|
 |:-----|:-----|
-|%d  <br/> |Display name  <br/> |
-|%g  <br/> |Given name (first name)  <br/> |
-|%i  <br/> |Middle initial  <br/> |
-|%m  <br/> |Exchange alias  <br/> |
-|%s  <br/> |Surname (last name)  <br/> |
-|% _x_g  <br/> |The first _x_ letters of the first name. For example, `%2g` uses the first two letters of the first name.  <br/> |
-|% _x_s  <br/> |The first _x_ letters of the last name. For example, `%2s` uses the first two letters of the last name.  <br/> |
+|%d|Display name|
+|%g|Given name (first name)|
+|%i|Middle initial|
+|%m|Exchange alias|
+|%r*xy*|Replace all occurrences of *x* with *y*|
+|%r*xx*|Remove all occurrences of *x*|
+|%s|Surname (last name)|
+|%*n*g|The first *n* letters of the first name. For example, `%2g` uses the first two letters of the first name.|
+|%*n*s|The first *n* letters of the last name. For example, `%2s` uses the first two letters of the last name.|
 
 In addition to variables, you can also use US ASCII text characters that are allowed in Exchange email addresses (for example, periods (`.`) or underscores (`_`). Note that each period needs to be surrounded by other valid characters (for example `%g.%s`).
 
@@ -82,13 +85,13 @@ In the EAC, you can selected from a short list of precanned SMTP email address f
 
 |**Example**|**Exchange Management Shell equivalent**|
 |:-----|:-----|
-| `<alias>@contoso.com` <br/> | `%m@contoso.com` <br/> |
-| `john.smith@contoso.com` <br/> | `%g.%s@contoso.com` <br/> |
-| `jsmith@contoso.com` <br/> | `%1g%s@contoso.com` <br/> |
-| `johns@contoso.com` <br/> | `%g%1s@contoso.com` <br/> |
-| `smith.john@contoso.com` <br/> | `%s.%g@contoso.com` <br/> |
-| `sjohn@contoso.com` <br/> | `%1s%g@contoso.com` <br/> |
-| `smithj@contoso.com` <br/> | `%s%1g@contoso.com` <br/> |
+|`<alias>@contoso.com`|`%m@contoso.com`|
+|`john.smith@contoso.com`|`%g.%s@contoso.com`|
+|`jsmith@contoso.com`|`%1g%s@contoso.com`|
+|`johns@contoso.com`|`%g%1s@contoso.com`|
+|`smith.john@contoso.com`|`%s.%g@contoso.com`|
+|`sjohn@contoso.com`|`%1s%g@contoso.com`|
+|`smithj@contoso.com`|`%s%1g@contoso.com`|
 
 ## Recipient filters for email address policies
 
@@ -98,8 +101,8 @@ Recipient filters identify the recipients that the email address policy applies 
 
 |**Recipient filtering method**|**User interface**|**Filterable recipient properties**|**Filter operators**|
 |:-----|:-----|:-----|:-----|
-|Precanned recipient filters  <br/> |Exchange admin center (EAC) and the Exchange Management Shell  <br/> |Limited to:  <br/> • Recipient type (All recipient types or any combination of user mailboxes, resource mailboxes, mail contacts, mail users, and groups)  <br/> • Company  <br/> • Custom Attribute 1 to 15  <br/> • State or Province  <br/> • Department  <br/> |Property values require an exact match. Wildcards and partial matches aren't supported. For example, "Sales" doesn't match the value "Sales and Marketing".  <br/> Multiple values of the same property always use the **or** operator. For example, "Department equals Sales or Department equals Marketing".  <br/> Multiple properties always use the **and** operator. For example, "Department equals Sales and Company equals Contoso".  <br/> |
-|Custom recipient filters  <br/> |Exchange Management Shell only  <br/> |You can use virtually any available recipient attributes.  <br/> |You use OPATH filter syntax to specify any available Windows PowerShell filter operators. Wildcards and partial matches are supported.  <br/> |
+|Precanned recipient filters|Exchange admin center (EAC) and the Exchange Management Shell|Limited to: <br/>• Recipient type (All recipient types or any combination of user mailboxes, resource mailboxes, mail contacts, mail users, and groups) <br/>• Company <br/> • Custom Attribute 1 to 15 <br/>• State or Province <br/>• Department|Property values require an exact match. Wildcards and partial matches aren't supported. For example, "Sales" doesn't match the value "Sales and Marketing".  <br/> Multiple values of the same property always use the **or** operator. For example, "Department equals Sales or Department equals Marketing". <br/><br/> Multiple properties always use the **and** operator. For example, "Department equals Sales and Company equals Contoso".|
+|Custom recipient filters|Exchange Management Shell only|You can use virtually any available recipient attributes.|You use OPATH filter syntax to specify any available Windows PowerShell filter operators. Wildcards and partial matches are supported.|
 
  **Notes**:
 
@@ -155,6 +158,3 @@ You can't delete the default email address policy, and you can't designate anoth
 After you create or modify an email address policy in the EAC or the Exchange Management Shell, the policy needs to be applied to the affected recipients.
 
 If the updates affect a large number of recipients (our recommendation is more than 3000), you should use the Exchange Management Shell to apply the updates to the affected recipients. For more information, see [Apply email address policies to recipients](eap-procedures.md#ApplyEAP).
-
-
-

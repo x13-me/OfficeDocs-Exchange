@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 8a37911c-4339-4921-b5d3-0a5a774d4517
 ms.date: 4/8/2015
+ms.reviewer: 
 title: Configure the large audience size for your organization
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: dansimp
 
 ---
 

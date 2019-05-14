@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Remove a federation trust: Exchange 2013 Help'
 TOCTitle: Remove a federation trust
 ms:assetid: dc4d126d-b567-470d-a5d0-e1402bf8f369
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657500(v=EXCHG.150)
 ms:contentKeyID: 49289432
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

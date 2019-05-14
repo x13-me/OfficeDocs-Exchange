@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Mail Enabled Public Folders role: Exchange 2013 Help'
 TOCTitle: Mail Enabled Public Folders role
 ms:assetid: 22289ae1-f9e8-4c98-aaad-ee623e05eadd
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876859(v=EXCHG.150)
 ms:contentKeyID: 49289193
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

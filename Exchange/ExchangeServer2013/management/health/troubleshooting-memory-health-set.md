@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting Memory Health Set
 TOCTitle: Troubleshooting Memory Health Set
 ms:assetid: 2025728a-6d56-4232-a2ba-2aae61abae19
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.memory(v=EXCHG.150)
 ms:contentKeyID: 49720738
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

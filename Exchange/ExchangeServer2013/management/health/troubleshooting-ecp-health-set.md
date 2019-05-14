@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting ECP Health Set
 TOCTitle: Troubleshooting ECP Health Set
 ms:assetid: 0a1cfcd5-585c-4a0a-9d3c-28dc49e16a6c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.ecp(v=EXCHG.150)
 ms:contentKeyID: 49720722
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

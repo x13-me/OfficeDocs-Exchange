@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a theme for Outlook Web App: Exchange 2013 Help'
 TOCTitle: Create a theme for Outlook Web App
 ms:assetid: 7e1fa13c-3de3-45c2-b1fa-e74fc8487bda
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb201700(v=EXCHG.150)
 ms:contentKeyID: 53957626
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

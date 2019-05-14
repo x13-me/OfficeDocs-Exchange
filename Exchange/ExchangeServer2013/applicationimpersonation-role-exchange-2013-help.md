@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'ApplicationImpersonation role: Exchange 2013 Help'
 TOCTitle: ApplicationImpersonation role
 ms:assetid: d6e43a2f-9b1f-463e-8c56-ca38d9127a5a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd776119(v=EXCHG.150)
 ms:contentKeyID: 49289425
 ms.date: 11/30/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

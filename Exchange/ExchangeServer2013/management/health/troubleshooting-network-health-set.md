@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting Network Health Set
 TOCTitle: Troubleshooting Network Health Set
 ms:assetid: 8acb3d8e-df63-443a-b0f7-ea14e7755e01
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.network(v=EXCHG.150)
 ms:contentKeyID: 49720833
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

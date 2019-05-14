@@ -1,8 +1,8 @@
 ---
 title: "Hybrid deployment prerequisites"
-ms.author: dstrome
-author: dstrome
-manager: serdars
+ms.author: chrisda
+author: chrisda
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
@@ -13,6 +13,7 @@ ms.collection:
 - Hybrid
 - M365-email-calendar
 ms.assetid: e7454db0-fed4-4662-8890-9501126b1ba2
+ms.reviewer: 
 description: "Summary: What your Exchange environment needs before you can set up a hybrid deployment."
 ---
 

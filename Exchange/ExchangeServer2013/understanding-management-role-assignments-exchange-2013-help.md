@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Understanding management role assignments: Exchange 2013 Help'
 TOCTitle: Understanding management role assignments
 ms:assetid: 1dc33dd6-52fb-4852-a5ce-027bc73e1d8f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335131(v=EXCHG.150)
 ms:contentKeyID: 49289190
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

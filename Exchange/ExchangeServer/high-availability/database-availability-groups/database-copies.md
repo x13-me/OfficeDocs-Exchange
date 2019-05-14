@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: ce748bca-3e24-493b-b9e6-153157bffd6a
 ms.date: 7/9/2018
+ms.reviewer: 
 title: Mailbox database copies
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

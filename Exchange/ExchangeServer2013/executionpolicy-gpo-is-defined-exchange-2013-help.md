@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'ExecutionPolicy GPO is defined: Exchange 2013 Help'
 TOCTitle: ExecutionPolicy GPO is defined
 ms:assetid: 63de83e2-9a6b-4f57-85b9-df445bea18dd
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.powershellexecutionpolicycheckset(v=EXCHG.150)
 ms:contentKeyID: 61200286
 ms.date: 12/15/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

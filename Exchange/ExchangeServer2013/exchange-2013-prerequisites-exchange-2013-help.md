@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Exchange 2013 prerequisites: Exchange 2013 Help'
 TOCTitle: Exchange 2013 prerequisites
 ms:assetid: e21cf744-7813-48b3-9293-5cecd89a6c25
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb691354(v=EXCHG.150)
 ms:contentKeyID: 48385640
 ms.date: 03/20/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Mailbox import and export requests: Exchange 2013 Help'
 TOCTitle: Mailbox import and export requests
 ms:assetid: 157a7d88-d3aa-4056-9a50-df67451b14be
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee633455(v=EXCHG.150)
 ms:contentKeyID: 49360508
 ms.date: 06/04/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

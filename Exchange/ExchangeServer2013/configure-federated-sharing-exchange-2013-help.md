@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure federated sharing: Exchange 2013 Help'
 TOCTitle: Configure federated sharing
 ms:assetid: b25ae450-def3-4797-a5fc-6e9bcee71a5d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657483(v=EXCHG.150)
 ms:contentKeyID: 49289377
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

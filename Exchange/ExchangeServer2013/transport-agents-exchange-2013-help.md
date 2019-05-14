@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Transport agents: Exchange 2013 Help'
 TOCTitle: Transport agents
 ms:assetid: e7389d63-3172-40d5-bf53-0d7cd7e78340
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125012(v=EXCHG.150)
 ms:contentKeyID: 48385663
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

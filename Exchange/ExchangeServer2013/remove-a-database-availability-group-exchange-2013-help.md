@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Remove a database availability group: Exchange 2013 Help'
 TOCTitle: Remove a database availability group
 ms:assetid: 071296e9-31b0-40f4-9a02-177d97486ebd
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335069(v=EXCHG.150)
 ms:contentKeyID: 48384792
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

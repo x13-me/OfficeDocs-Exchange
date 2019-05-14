@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 17751a60-39fe-433f-84d2-bfc14ff4ba51
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Receive connectors
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

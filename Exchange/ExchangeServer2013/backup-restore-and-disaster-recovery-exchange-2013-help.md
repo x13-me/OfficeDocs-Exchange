@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Backup, restore, and disaster recovery: Exchange 2013 Help'
 TOCTitle: Backup, restore, and disaster recovery
 ms:assetid: 394fc4ed-fa02-41fa-9159-cc2754ff8875
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876874(v=EXCHG.150)
 ms:contentKeyID: 48384978
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

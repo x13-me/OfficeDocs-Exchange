@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage linked mailboxes: Exchange 2013 Help'
 TOCTitle: Manage linked mailboxes
 ms:assetid: 76e12d4a-1c3a-42e2-b64c-c09d36e81bd3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673532(v=EXCHG.150)
 ms:contentKeyID: 49315442
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

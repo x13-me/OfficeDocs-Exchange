@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure mailbox database copy properties: Exchange 2013 Help'
 TOCTitle: Configure mailbox database copy properties
 ms:assetid: cf186561-ab2c-45c0-90f5-8d3ecfabeeac
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351151(v=EXCHG.150)
 ms:contentKeyID: 48385566
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

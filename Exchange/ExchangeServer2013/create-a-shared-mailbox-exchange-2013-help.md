@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a shared mailbox: Exchange 2013 Help'
 TOCTitle: Create a shared mailbox
 ms:assetid: d34bc827-1e83-4a7f-a219-8ba9c19fe24b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150570(v=EXCHG.150)
 ms:contentKeyID: 47560108
 ms.date: 12/10/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

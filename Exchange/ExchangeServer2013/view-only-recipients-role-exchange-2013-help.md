@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'View-Only Recipients role: Exchange 2013 Help'
 TOCTitle: View-Only Recipients role
 ms:assetid: 37e66b92-81d3-412f-b7a9-e1bb8cbeb468
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876872(v=EXCHG.150)
 ms:contentKeyID: 49289230
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

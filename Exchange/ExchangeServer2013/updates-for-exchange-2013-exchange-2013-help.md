@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Updates for Exchange 2013: Exchange 2013 Help'
 TOCTitle: Updates for Exchange 2013
 ms:assetid: 9c1d8694-bd33-43af-a7ab-4caaada34745
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ907309(v=EXCHG.150)
 ms:contentKeyID: 50639772
 ms.date: 03/20/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

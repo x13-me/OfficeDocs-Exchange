@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Delivery reports for administrators: Exchange 2013 Help'
 TOCTitle: Delivery reports for administrators
 ms:assetid: d98623d3-e0b7-4cb9-93fb-6351b4a06137
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ919241(v=EXCHG.150)
 ms:contentKeyID: 50646520
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

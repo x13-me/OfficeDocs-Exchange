@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure OAuth authentication between Exchange and Exchange Online'
 TOCTitle: Configure OAuth authentication between Exchange and Exchange Online organizations
 ms:assetid: f703e153-98e2-4268-8a6e-07a86b0a1d22
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn594521(v=EXCHG.150)
 ms:contentKeyID: 61200240
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -96,23 +100,16 @@ Next, you have to use Windows PowerShell to upload the on-premises authorization
 2. Save the following text to a PowerShell script file named, for example, **UploadAuthCert.ps1**.
 
    ```powershell
-   #connect to MsolService and import extended module
-   Connect-MsolService;
-   Import-Module MSOnlineExt #or install the module install-module MSOnlineExt
-    
-   #Create new FileSystemObject to get Absolute Path.
-   $objFSO = New-Object -ComObject Scripting.FileSystemObject;
-   $CertFile = $objFSO.GetAbsolutePathName($CertFile);
-    
-   #Create the certificate object to import and read it to set it as $credvalue
+   Connect-MsolService
+   $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
+   $objFSO = New-Object -ComObject Scripting.FileSystemObject
+   $CertFile = $objFSO.GetAbsolutePathName($CertFile)
    $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
-   $cer.Import($CertFile);
-   $binCert = $cer.GetRawCertData();
-   $credValue = [System.Convert]::ToBase64String($binCert);
-    
-   #Get the Msol Service Principal that has the $serviceName        
+   $cer.Import($CertFile)
+   $binCert = $cer.GetRawCertData()
+   $credValue = [System.Convert]::ToBase64String($binCert)
+   $ServiceName = "00000002-0000-0ff1-ce00-000000000000"
    $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
-   #Set up new MsolServicePrincipalCredential
    New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
    ```
 

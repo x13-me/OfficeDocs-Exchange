@@ -7,6 +7,7 @@ f1_keywords:
 ms.author: dmaguire
 ms.assetid: 961978ef-f434-472d-a811-1801733869da
 ms.date: 8/15/2018
+ms.reviewer: 
 description: Learn what happens and what you need to do to prepare for a cutover migration to Office 365.
 title: What you need to know about a cutover email migration to Office 365
 ms.collection: 
@@ -21,7 +22,7 @@ search.appverid:
 ms.audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

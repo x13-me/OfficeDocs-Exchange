@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: 0f4c5b2f-85ae-4160-9a53-f4b890d8ccdb
 ms.date: 8/2/2018
+ms.reviewer: 
 title: Installation of the first Exchange server in the organization can't be delegated [DelegatedFrontendTransportFirstInstall]
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

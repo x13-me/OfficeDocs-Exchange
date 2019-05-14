@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting OWA.Protocol Health Set
 TOCTitle: Troubleshooting OWA.Protocol Health Set
 ms:assetid: fe172da8-65d3-43e0-ba62-d36a1b05fc11
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.owa.protocol(v=EXCHG.150)
 ms:contentKeyID: 49720929
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

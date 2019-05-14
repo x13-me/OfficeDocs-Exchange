@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 645154a1-fd8a-4332-a306-5ce0b4be1a05
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Site mailboxes
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

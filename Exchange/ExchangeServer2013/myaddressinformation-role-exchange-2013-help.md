@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'MyAddressInformation role: Exchange 2013 Help'
 TOCTitle: MyAddressInformation role
 ms:assetid: b1be0e3d-53b9-4810-a225-3d0b203d90d4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff461936(v=EXCHG.150)
 ms:contentKeyID: 49289374
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

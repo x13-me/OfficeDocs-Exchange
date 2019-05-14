@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 37cdeacf-74f9-4399-9860-4d1dbec12bb1
 ms.date: 6/8/2018
+ms.reviewer: 
 title: Exchange Server storage configuration options
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

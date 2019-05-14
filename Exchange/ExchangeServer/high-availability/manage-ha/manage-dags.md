@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 74be3f97-ec0f-4d2a-b5d8-7770cc489919
 ms.date: 7/13/2018
+ms.reviewer: 
 title: Manage database availability groups
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

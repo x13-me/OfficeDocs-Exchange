@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Database portability: Exchange 2013 Help'
 TOCTitle: Database portability
 ms:assetid: 387b727a-ce51-4910-b5c4-613c693fa5bd
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876873(v=EXCHG.150)
 ms:contentKeyID: 50873792
 ms.date: 01/30/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

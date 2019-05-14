@@ -8,6 +8,7 @@ f1_keywords:
 ms.author: deniseb
 ms.assetid: 51832055-1696-4443-8579-bc76b8db92a3
 ms.date: 7/26/2018
+ms.reviewer: 
 title: Customize and schedule mail protection reports in Office 365 to be automatically sent to your inbox
 ms.collection: 
 - exchange-online

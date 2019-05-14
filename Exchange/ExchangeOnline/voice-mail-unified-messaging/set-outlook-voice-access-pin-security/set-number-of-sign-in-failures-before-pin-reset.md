@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: You can configure the number of sign-in failures allowed before the PIN is reset for an Outlook Voice Access user to a value from 1 through 998. The default is 5. The number of sign-in failures allowed before a PIN is reset is configured on a Unified Messaging (UM) mailbox policy and applies to all Outlook Voice Access users associated with the UM mailbox policy.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 4de38499-0a6f-4f00-8697-eeff805d7266
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Set the number of sign-in failures before a voice mail PIN is reset
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Exchange ActiveSync: Exchange 2013 Help'
 TOCTitle: Exchange ActiveSync
 ms:assetid: 5fafaff3-eb37-4fdb-95f0-e56c45ea5884
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998357(v=EXCHG.150)
 ms:contentKeyID: 48385136
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

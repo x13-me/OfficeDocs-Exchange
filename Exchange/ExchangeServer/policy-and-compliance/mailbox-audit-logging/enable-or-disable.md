@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: Learn how to configure mailbox audit logging on mailboxes in Exchange Server 2016 and Exchange Server 2019.'
 ms.topic: article
-author: SerdarSoysal
-ms.author: serdars
+author: chrisda
+ms.author: chrisda
 ms.assetid: c4bbfd52-6196-49c7-8c31-777fbbee11f2
 ms.date: 6/8/2018
+ms.reviewer: 
 title: Enable or disable mailbox audit logging for a mailbox
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Queues: Exchange 2013 Help'
 TOCTitle: Queues
 ms:assetid: e7ad0ba5-3789-4a2b-9825-6bb1b321609c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125022(v=EXCHG.150)
 ms:contentKeyID: 50646240
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

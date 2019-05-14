@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting HubTransport Health Set
 TOCTitle: Troubleshooting HubTransport Health Set
 ms:assetid: e3932ce3-836c-4230-9f64-63af1b704d79
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.hubtransport(v=EXCHG.150)
 ms:contentKeyID: 49720900
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

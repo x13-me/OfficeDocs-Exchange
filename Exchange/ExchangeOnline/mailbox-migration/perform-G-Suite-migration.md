@@ -2,7 +2,7 @@
 title: "Perform a G Suite migration"
 ms.author: dmaguire
 author: msdmaguire
-manager: serdars
+manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: exchange-online
@@ -120,11 +120,11 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 2. Click **Domains**, and then **Add/remove domains**, and then click **Add a domain or a domain alias**.
 
-3. Select **Add a domain alias of...** your domain. A sub-domain of your primary domain is recommended (such as "gsuite.fabrikaminc.net" when "fabrikaminc.net" is your primary domain). Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions for [Create a migration batch in Office 365](#create-a-migration-batch-in-office-365).  
+3. Select **Add another domain**. Enter the domain that you will use for routing mails to Office 365. A sub-domain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified. Keep track of the name of the domain you enter because you will need it for the following steps, and later in the instructions as the Target Delivery Domain when you [Create a migration batch in Office 365](#create-a-migration-batch-in-office-365).
 
-   ![Add another domain](../media/gsuite-mig-9-sub-domain-0365.png)
+   ![Add another domain](../media/gsuite-mig-11-sub-domain-gsuite.png)
 
-4. For your domain, make sure that the status is **Verified**. Follow any steps required to get the domain to a verified state. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain should have been verified automatically.  
+4. For your newly created domain, make sure that the status is **Verified**. Follow any steps required to get the domain to a verified state. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain should have been verified automatically.
 
    ![Skip Google mx](../media/gsuite-mig-10-skip-google-mx.png)
 
@@ -138,15 +138,15 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
 2. Click **Domains**, and then **Add/remove domains**, and then click **Add a domain or a domain alias**.
 
-3. Select **Add another domain**. Enter the domain that you will use for routing mails to G Suite. A sub-domain of your primary domain is recommended (such as "o365.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified.  
+3. Select **Add a domain alias of...** your domain. Enter the domain that you will use for routing mails to G Suite. A sub-domain of your primary domain is recommended (such as "gsuite.fabrikaminc.net" when "fabrikaminc.net" is your primary domain) so that it will be automatically verified.
 
-   ![Add another domain](../media/gsuite-mig-11-sub-domain-gsuite.png)
+   ![Add another domain](../media/gsuite-mig-9-sub-domain-0365.png)
 
 4. For your newly created domain, make sure that the status is **Verified**. Follow any steps required to get the domain to a verified state. Note that if you chose a subdomain of your primary domain in step 3 above, your new domain should have been verified automatically.  
 
    ![Set up Google mx](../media/gsuite-mig-12-set-up-google-mx.png)
 
-5. Click **Set up Google MX records**, and then follow the instructions from your service provider.
+5. Click **Set up Google MX records**, and then follow the instructions that are listed for your DNS provider.
 
 ## Provision users in O365
 
@@ -181,7 +181,7 @@ The primary email address that you provision for each user should be the same as
    > [!NOTE]
    > Click to select **Skip verification** if you don't want to verify the migration endpoint.
 
-8. In the fields under **Move configuration**, name your migration batch and specify the target delivery domain, which is the domain used for routing from the G Suite source organization to the Office 365 target organization. Optionally, you can also specify a bad item limit and a large item limit, and you can specify any folders that should be excluded from the migration. When done, click **Next**.  
+8. In the fields under **Move configuration**, name your migration batch and specify the target delivery domain, which is the domain used for routing mail to the Office 365 target organization from the G Suite source organization. Optionally, you can also specify a bad item limit and a large item limit, and you can specify any folders that should be excluded from the migration. When done, click **Next**.  
 
    ![batch name](../media/gsuite-mig-16-eac-batch.png)
 

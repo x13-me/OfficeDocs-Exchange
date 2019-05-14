@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Access to Active Directory: Exchange 2013 Help'
 TOCTitle: Access to Active Directory
 ms:assetid: 61080b45-8bce-4c23-b744-ed264d5f0b7d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998561(v=EXCHG.150)
 ms:contentKeyID: 49289272
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting PublicFolders Health Set
 TOCTitle: Troubleshooting PublicFolders Health Set
 ms:assetid: 79666be3-250d-4db0-961d-8351866d722c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.publicfolders(v=EXCHG.150)
 ms:contentKeyID: 49720811
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

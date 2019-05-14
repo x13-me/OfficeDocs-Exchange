@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'CSV files for mailbox migration: Exchange 2013 Help'
 TOCTitle: CSV files for mailbox migration
 ms:assetid: e67b3455-3946-4335-b80c-97823c76ac54
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn170437(v=EXCHG.150)
 ms:contentKeyID: 53890559
 ms.date: 11/16/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

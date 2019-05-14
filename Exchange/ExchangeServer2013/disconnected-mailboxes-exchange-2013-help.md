@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Disconnected mailboxes: Exchange 2013 Help'
 TOCTitle: Disconnected mailboxes
 ms:assetid: 508ebe2b-387d-4867-bdb0-028ef351ce56
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232039(v=EXCHG.150)
 ms:contentKeyID: 50387716
 ms.date: 06/04/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

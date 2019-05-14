@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Remove a role scope: Exchange 2013 Help'
 TOCTitle: Remove a role scope
 ms:assetid: ad17cba0-a8d3-4f40-b3c9-c37e6e5c3f36
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351051(v=EXCHG.150)
 ms:contentKeyID: 49289375
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

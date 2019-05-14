@@ -8,6 +8,8 @@ ms.prod: exchange-server-it-pro
 ms.assetid: 9840f712-127e-4c2d-bfe5-1b35cdb2a31b
 ms.collection: exchange-server
 ms.date: 7/3/2018
+ms.reviewer: 
+manager: dansimp
 ms.audience: ITPro
 title: Enable the MRS Proxy endpoint for remote moves
 

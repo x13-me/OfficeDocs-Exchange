@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: Learn how to enable, disable, and re-enable archive mailboxes in Exchange Server, and how to verify the archive mailbox settings for a user.'
 ms.topic: article
-author: SerdarSoysal
-ms.author: serdars
+author: chrisda
+ms.author: chrisda
 ms.assetid: 49ef4a3e-d209-4fb2-80a3-6132b0f69bd0
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Manage In-Place Archives in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure activation policy for a mailbox database copy: Exchange 2013 Help'
 TOCTitle: Configure activation policy for a mailbox database copy
 ms:assetid: 6b37ed6e-2e36-4688-b485-8fdbb8193ec8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298046(v=EXCHG.150)
 ms:contentKeyID: 48385199
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

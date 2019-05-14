@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Copy eDiscovery search results to a discovery mailbox: Exchange 2013 Help'
 TOCTitle: Copy eDiscovery search results to a discovery mailbox
 ms:assetid: bff2ce89-9e6f-494a-bd6a-2f2011507845
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn624163(v=EXCHG.150)
 ms:contentKeyID: 61200239
 ms.date: 12/10/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

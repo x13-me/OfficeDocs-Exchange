@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: b03c0f21-cbc2-4be8-ad03-73a7dac16ffc
 ms.date: 7/3/2018
+ms.reviewer: 
 title: Autodiscover service in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

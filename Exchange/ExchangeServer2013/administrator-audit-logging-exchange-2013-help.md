@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Administrator audit logging: Exchange 2013 Help'
 TOCTitle: Administrator audit logging
 ms:assetid: 22b17eb8-d8ee-4599-b202-d6a7928c20d9
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335144(v=EXCHG.150)
 ms:contentKeyID: 50117641
 ms.date: 03/05/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

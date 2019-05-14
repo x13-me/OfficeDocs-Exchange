@@ -2,10 +2,11 @@
 localization_priority: Normal
 description: 'Summary: Learn how to create a single-server Exchange 2016 or Exchange 2019 dev/test environment in Microsoft Azure infrastructure services.'
 ms.topic: article
-author: JoeDavies-MSFT
-ms.author: josephd
+author: chrisda
+ms.author: chrisda
 ms.assetid: d9fbf253-b6f1-4bcd-8548-87ccf49259f1
 ms.date: 04/15/2019
+ms.reviewer: 
 title: Exchange dev/test environment in Azure
 ms.collection:
 - Strat_EX_Admin
@@ -13,7 +14,7 @@ ms.collection:
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -132,7 +133,7 @@ You can create a new Azure virtual network with a domain controller with Azure P
     $nic = New-AZNetworkInterface -Name adVM-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress 10.0.0.4
     $avSet=Get-AZAvailabilitySet -Name dcAvailabilitySet -ResourceGroupName $rgName
     $vm=New-AZVMConfig -VMName adVM -VMSize Standard_D1_v2 -AvailabilitySetId $avSet.Id
-    $vm=Set-AZVMOSDisk -VM $vm -Name adVM-OS -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
+    $vm=Set-AZVMOSDisk -VM $vm -Name adVM-OS -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "Standard_LRS"
     $diskConfig=New-AZDiskConfig -AccountType "StandardLRS" -Location $locName -CreateOption Empty -DiskSizeGB 20
     $dataDisk1=New-AZDisk -DiskName adVM-DataDisk1 -Disk $diskConfig -ResourceGroupName $rgName
     $vm=Add-AZVMDataDisk -VM $vm -Name adVM-DataDisk1 -CreateOption Attach -ManagedDiskId $dataDisk1.Id -Lun 1
@@ -260,7 +261,7 @@ $pip=New-AZPublicIpAddress -Name $pipName -ResourceGroupName $rgName -DomainName
 $nic=New-AZNetworkInterface -Name $nicName -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress "10.0.0.5"
 # Create and configure the virtual machine
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for exVM."
-$vm=Set-AZVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
+$vm=Set-AZVMOSDisk -VM $vm -Name ($vmName +"-OS") -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "Standard_LRS"
 $vm=Set-AZVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AZVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2012-R2-Datacenter -Version "latest"
 $vm=Add-AZVMNetworkInterface -VM $vm -Id $nic.Id

@@ -10,8 +10,9 @@ title: What's discontinued in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.date: 9/20/2018
+ms.reviewer: 
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

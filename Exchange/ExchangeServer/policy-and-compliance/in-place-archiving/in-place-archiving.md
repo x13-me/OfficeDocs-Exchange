@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'Summary: Administrators can learn about In-Place Archiving and archive mailboxes in Exchange Server 2016 or Exchange Server 2019.'
 ms.topic: overview
-author: SerdarSoysal
-ms.author: serdars
+author: chrisda
+ms.author: chrisda
 ms.assetid: b5e4c0e9-0558-4b90-bc12-f67adbfb59ac
 ms.date: 7/5/2018
+ms.reviewer: 
 title: In-Place Archiving in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

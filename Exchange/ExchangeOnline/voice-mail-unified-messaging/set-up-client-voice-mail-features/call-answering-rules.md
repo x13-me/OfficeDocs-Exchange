@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: You can specify whether you want individual users to be able to create and manage their own call answering rules by configuring their mailbox properties. By default, they can create call answering rules.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 81863440-8b21-4523-bdab-6a2311889a0d
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Call answering rules
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

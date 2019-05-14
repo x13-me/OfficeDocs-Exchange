@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Remove an Outlook Protection Rule: Exchange 2013 Help'
 TOCTitle: Remove an Outlook Protection Rule
 ms:assetid: 569fc3be-b269-43f5-8797-73ab0691e685
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee633467(v=EXCHG.150)
 ms:contentKeyID: 49319914
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

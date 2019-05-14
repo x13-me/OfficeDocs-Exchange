@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Automatic mailbox distribution: Exchange 2013 Help'
 TOCTitle: Automatic mailbox distribution
 ms:assetid: f4db4636-948c-466b-839c-300c1a3a9544
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff477621(v=EXCHG.150)
 ms:contentKeyID: 56474986
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

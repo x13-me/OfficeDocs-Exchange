@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Disable or enable Exchange Search: Exchange 2013 Help'
 TOCTitle: Disable or enable Exchange Search
 ms:assetid: 195b25be-53fb-4215-90a5-04340d640bcc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996416(v=EXCHG.150)
 ms:contentKeyID: 51407260
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

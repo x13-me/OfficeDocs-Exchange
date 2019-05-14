@@ -1,10 +1,14 @@
-﻿---
+---
 title: "Install of first Exchange server in the organization can't be delegated"
 TOCTitle: Installation of the first Exchange server in the organization can't be delegated
 ms:assetid: 0f4c5b2f-85ae-4160-9a53-f4b890d8ccdb
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.delegatedfrontendtransportfirstinstall(v=EXCHG.150)
 ms:contentKeyID: 46628810
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

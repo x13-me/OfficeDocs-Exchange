@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Legal Hold role: Exchange 2013 Help'
 TOCTitle: Legal Hold role
 ms:assetid: c98ce8ca-3477-479a-ad23-a8e6459bc4d0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876939(v=EXCHG.150)
 ms:contentKeyID: 49289408
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

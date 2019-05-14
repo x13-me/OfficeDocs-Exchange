@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Distributed Transaction Coordinator Service must start before setup can continue'
 TOCTitle: The Distributed Transaction Coordinator Service must be started before setup can continue_MSDTCStopped
 ms:assetid: 96e33c94-348e-4a0b-9585-9bee81be4355
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.msdtcstopped(v=EXCHG.150)
 ms:contentKeyID: 46629047
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

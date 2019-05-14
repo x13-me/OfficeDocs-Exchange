@@ -5,6 +5,8 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 0f716f4a-7213-44f1-b2d4-b7fd0a1a336b
 ms.date: 
+ms.reviewer: 
+manager: dansimp
 description: Links to topics for using screen readers to do admin tasks in Exchange Online.
 title: Accessibility in Exchange Online
 ms.collection: 
