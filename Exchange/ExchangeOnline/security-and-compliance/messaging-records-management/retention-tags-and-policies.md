@@ -6,13 +6,14 @@ author: markjjo
 ms.author: markjjo
 ms.assetid: 48c13be5-3f01-4849-a089-766210e54f89
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Retention tags and retention policies
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

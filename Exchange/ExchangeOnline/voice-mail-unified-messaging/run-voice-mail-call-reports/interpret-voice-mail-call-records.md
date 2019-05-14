@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: To view detailed information about calls handled by the Exchange servers on a specific day, export the call data for that day from the Call Statistics report. Daily call data, which is available for the past 90 days, can help you diagnose problems with audio quality or rejected calls, and provide information for audits or reports on Exchange servers in your organization.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 368d9c58-61a2-43d5-8189-d3469a9e2a8d
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Interpret voice mail call records
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
