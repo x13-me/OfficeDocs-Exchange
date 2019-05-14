@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: 'You can configure Unified Messaging to answer an incoming call, and then determine whether it will apply protection to voice mail messages by using encryption. When a voice mail message is protected:'
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 106bfa0a-a0fa-4a1b-bd59-4b6df1d0d61d
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Configure Protected Voice Mail from unauthenticated callers
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
