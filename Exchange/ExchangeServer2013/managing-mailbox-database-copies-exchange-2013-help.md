@@ -149,9 +149,9 @@ Replay lag time is a property of a mailbox database copy that specifies the amou
 
 A strategy that uses database copies and the litigation hold features in Exchange 2013 can provide protection against a range of failures that would ordinarily cause data loss. However, these features can't provide protection against data loss in the event of logical corruption, which although rare, can cause data loss. Lagged copies are designed to prevent loss of data in the case of logical corruption. Generally, there are two types of logical corruption:
 
-  - **Database logical corruption**   The database pages checksum matches, but the data on the pages is wrong logically. This can occur when ESE attempts to write a database page and even though the operating system returns a success message, the data is either never written to the disk or it's written to the wrong place. This is referred to as a *lost flush*. To prevent lost flushes from losing data, ESE includes a lost flush detection mechanism in the database along with a page patching feature (single page restore).
+  - **Database logical corruption**: The database pages checksum matches, but the data on the pages is wrong logically. This can occur when ESE attempts to write a database page and even though the operating system returns a success message, the data is either never written to the disk or it's written to the wrong place. This is referred to as a *lost flush*. To prevent lost flushes from losing data, ESE includes a lost flush detection mechanism in the database along with a page patching feature (single page restore).
 
-  - **Store logical corruption**   Data is added, deleted, or manipulated in a way that the user doesn't expect. These cases are generally caused by third-party applications. It's generally only corruption in the sense that the user views it as corruption. The Exchange store considers the transaction that produced the logical corruption to be a series of valid MAPI operations. The litigation hold feature in Exchange 2013 provides protection from store logical corruption (because it prevents content from being permanently deleted by a user or application). However, there may be scenarios where a user mailbox becomes so corrupted that it would be easier to restore the database to a point in time prior to the corruption, and then export the user mailbox to retrieve uncorrupted data.
+  - **Store logical corruption**: Data is added, deleted, or manipulated in a way that the user doesn't expect. These cases are generally caused by third-party applications. It's generally only corruption in the sense that the user views it as corruption. The Exchange store considers the transaction that produced the logical corruption to be a series of valid MAPI operations. The litigation hold feature in Exchange 2013 provides protection from store logical corruption (because it prevents content from being permanently deleted by a user or application). However, there may be scenarios where a user mailbox becomes so corrupted that it would be easier to restore the database to a point in time prior to the corruption, and then export the user mailbox to retrieve uncorrupted data.
 
 The combination of database copies, hold policy, and ESE single page restore leaves only the rare but catastrophic store logical corruption case. Your decision on whether to use a database copy with a replay lag (a lagged copy) will depend on which third-party applications you use and your organization's history with store logical corruption.
 
@@ -293,17 +293,17 @@ For more information about configuring database activation policy, see [Configur
 
 On a very busy mailbox database with a high log generation rate, there is a greater chance for data loss if replication to the passive database copies can't keep up with log generation. One scenario that can introduce a high log generation rate is mailbox moves. Exchange 2013 includes a Data Guarantee API that's used by services such as the Microsoft Exchange Mailbox Replication service (MRS) to check the health of the database copy architecture based on the value of the *DataMoveReplicationConstraint* parameter that was set by the system or an administrator. Specifically, the Data Guarantee API can be used to:
 
-  - **Check replication health**   Confirms that the prerequisite number of database copies is available.
+  - **Check replication health**: Confirms that the prerequisite number of database copies is available.
 
-  - **Check replication flush**   Confirms that the required log files have been replayed against the prerequisite number of database copies.
+  - **Check replication flush**: Confirms that the required log files have been replayed against the prerequisite number of database copies.
 
 When executed, the API returns the following status information to the calling application:
 
-  - **Retry**   Signifies that there are transient errors that prevent a condition from being checked against the database.
+  - **Retry**: Signifies that there are transient errors that prevent a condition from being checked against the database.
 
-  - **Satisfied**   Signifies that the database meets the required conditions or the database isn't replicated.
+  - **Satisfied**: Signifies that the database meets the required conditions or the database isn't replicated.
 
-  - **NotSatisfied**   Signifies that the database doesn't meet the required conditions. In addition, information is provided to the calling application as to why the **NotSatisfied** response was returned.
+  - **NotSatisfied**: Signifies that the database doesn't meet the required conditions. In addition, information is provided to the calling application as to why the **NotSatisfied** response was returned.
 
 The value of the *DataMoveReplicationConstraint* parameter for the mailbox database determines how many database copies should be evaluated as part of the request. The *DataMoveReplicationConstraint* parameter has the following possible values:
 
@@ -484,9 +484,9 @@ You can use the RedistributeActiveDatabases.ps1 script to balance the active mai
 
 The script provides two options for balancing active database copies within a DAG:
 
-  - **BalanceDbsByActivationPreference**   When this option is specified, the script attempts to move databases to their most preferred copy (based on activation preference) without regard to the Active Directory site.
+  - **BalanceDbsByActivationPreference**: When this option is specified, the script attempts to move databases to their most preferred copy (based on activation preference) without regard to the Active Directory site.
 
-  - **BalanceDbsBySiteAndActivationPreference**   When this option is specified, the script attempts to move active databases to their most preferred copy, while also trying to balance active databases within each Active Directory site.
+  - **BalanceDbsBySiteAndActivationPreference**: When this option is specified, the script attempts to move active databases to their most preferred copy, while also trying to balance active databases within each Active Directory site.
 
 After running the script with the first option, the preceding unbalanced DAG becomes balanced, as shown in the following table.
 

@@ -157,7 +157,7 @@ Exchange supports the following mailbox types:
 
   - **User mailboxes** User mailboxes are assigned to individual users in your Exchange organization. User mailboxes provide your users with a rich collaboration platform. Users can send and receive messages, manage their contacts, schedule meetings, and maintain a task list. They can also have voice mail messages delivered to their mailboxes. User mailboxes are the most commonly used mailbox type and are typically the mailbox type assigned to users in your organization.
 
-  - **Linked mailboxes**   Linked mailboxes are mailboxes that are accessed by users in a separate, trusted forest. Linked mailboxes may be necessary for organizations that deploy Exchange in a resource forest. The resource forest scenario allows an organization to centralize Exchange in a single forest, while allowing access to the Exchange organization with user accounts in one or more trusted forests.
+  - **Linked mailboxes**: Linked mailboxes are mailboxes that are accessed by users in a separate, trusted forest. Linked mailboxes may be necessary for organizations that deploy Exchange in a resource forest. The resource forest scenario allows an organization to centralize Exchange in a single forest, while allowing access to the Exchange organization with user accounts in one or more trusted forests.
     
     As stated earlier, every mailbox must have a user account associated with it. However, the user account that accesses the linked mailbox doesn't exist in the forest where Exchange is deployed. Therefore, a disabled user account that exists in the same forest as Exchange is associated with each linked mailbox. The following figure illustrates the relationship between the linked user account used to access the linked mailbox and the disabled user account in the Exchange resource forest associated with the linked mailbox.
     
@@ -167,18 +167,18 @@ Exchange supports the following mailbox types:
 
   - **Office 365 mailboxes** When you create an Office 365 mailbox in Exchange Online in a hybrid deployment, the mail user is created in Active Directory on-premises. Directory synchronization, if it's configured, automatically synchronizes this new user object to Office 365, where it's converted to a cloud mailbox in Exchange Online. You can create Office 365 mailboxes as regular user mailboxes, resource mailboxes for meeting rooms and equipment, and shared mailboxes.
 
-  - **Shared mailboxes**   Shared mailboxes aren't primarily associated with individual users and are generally configured to allow access by multiple users.
+  - **Shared mailboxes**: Shared mailboxes aren't primarily associated with individual users and are generally configured to allow access by multiple users.
     
     Although it's possible to assign additional users the logon access permissions to any mailbox type, shared mailboxes are dedicated for this functionality. The Active Directory user associated with a shared mailbox must be a disabled account. After you create a shared mailbox, you must assign permissions to all users that require access to the shared mailbox.
     
 > [!NOTE] 
 > A shared mailbox is not designed for direct logon. The user account for the shared mailbox itself should stay in a **Disabled** (or "disconnected") state.
 
-  - **Resource mailboxes**   Resource mailboxes are special mailboxes designed to be used for scheduling resources. Like all mailbox types, a resource mailbox has an associated Active Directory user account, but it must be a disabled account. The following are the types of resource mailboxes:
+  - **Resource mailboxes**: Resource mailboxes are special mailboxes designed to be used for scheduling resources. Like all mailbox types, a resource mailbox has an associated Active Directory user account, but it must be a disabled account. The following are the types of resource mailboxes:
     
-      - **Room mailboxes**   These mailboxes are assigned to meeting locations, such as conference rooms, auditoriums, and training rooms.
+      - **Room mailboxes**: These mailboxes are assigned to meeting locations, such as conference rooms, auditoriums, and training rooms.
     
-      - **Equipment mailboxes**   These mailboxes are assigned to resources that aren't location-specific, such as portable computers, projectors, microphones, or company cars.
+      - **Equipment mailboxes**: These mailboxes are assigned to resources that aren't location-specific, such as portable computers, projectors, microphones, or company cars.
     
     You can include both types of resource mailboxes in meeting requests, providing a simple and efficient way for your users to use resources. You can configure resource mailboxes to automatically process incoming meeting requests based on the resource booking policies that are defined by the resource owners. For example, you can configure a conference room to automatically accept incoming meeting requests except recurring meetings, which can be subject to approval by the resource owner.
 
@@ -246,11 +246,11 @@ Distribution groups are mail-enabled Active Directory group objects that are pri
 
 Exchange supports the following types of distribution groups:
 
-  - **Distribution groups**   These are Active Directory universal distribution group objects that are mail-enabled. They can be used only to distribute messages to a group of recipients.
+  - **Distribution groups**: These are Active Directory universal distribution group objects that are mail-enabled. They can be used only to distribute messages to a group of recipients.
 
-  - **Mail-enabled security groups**   These are Active Directory universal security group objects that are mail-enabled. They can be used to assign access permissions to resources in Active Directory and can also be used to distribute messages.
+  - **Mail-enabled security groups**: These are Active Directory universal security group objects that are mail-enabled. They can be used to assign access permissions to resources in Active Directory and can also be used to distribute messages.
 
-  - **Mail-enabled non-universal groups**   These are Active Directory global or local group objects that are mail-enabled. You can create or mail-enable only universal distribution groups. You may have mail-enabled groups that were migrated from previous versions of Exchange that aren't universal groups. These groups can still be managed by using the EAC or the Shell.
+  - **Mail-enabled non-universal groups**: These are Active Directory global or local group objects that are mail-enabled. You can create or mail-enable only universal distribution groups. You may have mail-enabled groups that were migrated from previous versions of Exchange that aren't universal groups. These groups can still be managed by using the EAC or the Shell.
     
 
     > [!NOTE]
@@ -288,9 +288,9 @@ You can also specify conditions based on recipient properties other than those p
 
 Mail contacts typically contain information about people or organizations that exist outside your Exchange organization. Mail contacts can appear in your organization's shared address book (also called the global address list or GAL) and other address lists, and can be added as members to distribution groups. Each contact has an external email address, and all email messages that are sent to a contact are automatically forwarded to that address. Contacts are ideal for representing people external to your Exchange organization (in the shared address book) who don't need access to any internal resources. The following are mail contact types:
 
-  - **Mail contacts**   These are mail-enabled Active Directory contacts that contain information about people or organizations that exist outside your Exchange organization.
+  - **Mail contacts**: These are mail-enabled Active Directory contacts that contain information about people or organizations that exist outside your Exchange organization.
 
-  - **Mail forest contacts**   These represent recipient objects from another forest. These contacts are typically created by directory synchronization. Mail forest contacts are read-only recipient objects that can be updated or removed only by means of synchronization. You can't use Exchange management interfaces to modify or remove a mail forest contact.
+  - **Mail forest contacts**: These represent recipient objects from another forest. These contacts are typically created by directory synchronization. Mail forest contacts are read-only recipient objects that can be updated or removed only by means of synchronization. You can't use Exchange management interfaces to modify or remove a mail forest contact.
 
 ## Mail users
 

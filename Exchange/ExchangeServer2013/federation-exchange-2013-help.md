@@ -170,19 +170,19 @@ To establish a federation trust with the Azure AD authentication system, either 
 
 If you want to use an X.509 certificate signed by an external CA, the certificate must meet the following requirements:
 
-  - **Trusted CA**   If possible, the X.509 Secure Sockets Layer (SSL) certificate should be issued from a CA trusted by Windows Live. However, you can use certificates issued by CAs that aren't currently certified by Microsoft. For a current list of trusted CAs, see [Trusted root certification authorities for federation trusts](trusted-root-certification-authorities-for-federation-trusts-exchange-2013-help.md).
+  - **Trusted CA**: If possible, the X.509 Secure Sockets Layer (SSL) certificate should be issued from a CA trusted by Windows Live. However, you can use certificates issued by CAs that aren't currently certified by Microsoft. For a current list of trusted CAs, see [Trusted root certification authorities for federation trusts](trusted-root-certification-authorities-for-federation-trusts-exchange-2013-help.md).
 
-  - **Subject key identifier**   The certificate must have a subject key identifier field. Most X.509 certificates issued by commercial CAs have this identifier.
+  - **Subject key identifier**: The certificate must have a subject key identifier field. Most X.509 certificates issued by commercial CAs have this identifier.
 
-  - **CryptoAPI cryptographic service provider (CSP)**   The certificate must use a CryptoAPI CSP. Certificates that use Cryptography API: Next Generation (CNG) providers aren't supported for federation. If you use Exchange to create a certificate request, a CryptoAPI provider is used. For more information, see [Cryptography API: Next Generation](https://go.microsoft.com/fwlink/?linkid=187890).
+  - **CryptoAPI cryptographic service provider (CSP)**: The certificate must use a CryptoAPI CSP. Certificates that use Cryptography API: Next Generation (CNG) providers aren't supported for federation. If you use Exchange to create a certificate request, a CryptoAPI provider is used. For more information, see [Cryptography API: Next Generation](https://go.microsoft.com/fwlink/?linkid=187890).
 
-  - **RSA signature algorithm**   The certificate must use RSA as the signature algorithm.
+  - **RSA signature algorithm**: The certificate must use RSA as the signature algorithm.
 
-  - **Exportable private key**   The private key used to generate the certificate must be exportable. You can specify that the private key be exportable when you create the certificate request using the **New Exchange certificate** wizard in the EAC or the [New-ExchangeCertificate](https://technet.microsoft.com/en-us/library/aa998327\(v=exchg.150\)) cmdlet in the Shell.
+  - **Exportable private key**: The private key used to generate the certificate must be exportable. You can specify that the private key be exportable when you create the certificate request using the **New Exchange certificate** wizard in the EAC or the [New-ExchangeCertificate](https://technet.microsoft.com/en-us/library/aa998327\(v=exchg.150\)) cmdlet in the Shell.
 
-  - **Current certificate**   The certificate must be current. You can't use an expired or revoked certificate to create a federation trust.
+  - **Current certificate**: The certificate must be current. You can't use an expired or revoked certificate to create a federation trust.
 
-  - **Enhanced key usage**   The certificate must include the enhanced key usage (EKU) type **Client Authentication (1.3.6.1.5.5.7.3.2)**. This usage type is used to prove your identity to a remote computer. If you use the EAC or the Shell to generate a certificate request, this usage type is included by default.
+  - **Enhanced key usage**: The certificate must include the enhanced key usage (EKU) type **Client Authentication (1.3.6.1.5.5.7.3.2)**. This usage type is used to prove your identity to a remote computer. If you use the EAC or the Shell to generate a certificate request, this usage type is included by default.
 
 
 > [!NOTE]

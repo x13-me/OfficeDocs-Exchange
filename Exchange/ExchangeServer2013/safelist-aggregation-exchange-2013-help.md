@@ -47,11 +47,11 @@ A *safelist collection* is the combined data from the user's Safe Senders List, 
 
 The following types of information are stored in an Outlook user's safelist collection:
 
-  - **Safe senders and safe recipients**   The From message header indicates a sender. The To field of the email message indicates a recipient. Safe senders and safe recipients are represented by full SMTP addresses, such as masato@contoso.com. Outlook users can add senders and recipients to their safe lists.
+  - **Safe senders and safe recipients**: The From message header indicates a sender. The To field of the email message indicates a recipient. Safe senders and safe recipients are represented by full SMTP addresses, such as masato@contoso.com. Outlook users can add senders and recipients to their safe lists.
 
-  - **Blocked senders**   Just like safe senders, users can block unwanted senders by adding them to their Blocked Senders Lists.
+  - **Blocked senders**: Just like safe senders, users can block unwanted senders by adding them to their Blocked Senders Lists.
 
-  - **Safe domain**   The domain is the part of an SMTP address that follows the @ symbol. For example, contoso.com is the domain in the masato@contoso.com address. Outlook users can add sending domains to their safe lists.
+  - **Safe domain**: The domain is the part of an SMTP address that follows the @ symbol. For example, contoso.com is the domain in the masato@contoso.com address. Outlook users can add sending domains to their safe lists.
     
 
     > [!IMPORTANT]
@@ -59,7 +59,7 @@ The following types of information are stored in an Outlook user's safelist coll
 
 
 
-  - **External contacts**   Two types of external contacts can be included in the safelist aggregation. The first type of external contact includes contacts to whom Outlook users have sent mail. This class of contact is added to the Safe Senders List only if an Outlook user selects the corresponding option in the Junk Email settings in Outlook 2007.
+  - **External contacts**: Two types of external contacts can be included in the safelist aggregation. The first type of external contact includes contacts to whom Outlook users have sent mail. This class of contact is added to the Safe Senders List only if an Outlook user selects the corresponding option in the Junk Email settings in Outlook 2007.
     
     The second type of external contact includes the users' Outlook contacts. Users can add or import these contacts into Outlook. This class of contact is added to the Safe Senders List only if an Outlook user selects the corresponding option in the Junk Email Filter settings in Outlook 2010 or Outlook 2007.
 
@@ -83,9 +83,9 @@ Safelist collection entries are hashed (SHA-256) one way before they are stored 
 
 One-way hashing of safelist collection entries performs the following important functions:
 
-  - **Minimizes storage and replication space**   Most of the time, hashing reduces the size of the data hashed. Therefore, saving and transmitting a hashed version of a safelist collection entry conserves storage space and replication time. For example, a user who has 200 entries in his or her safelist collection would create about 800 bytes of hashed data stored and replicated in Active Directory.
+  - **Minimizes storage and replication space**: Most of the time, hashing reduces the size of the data hashed. Therefore, saving and transmitting a hashed version of a safelist collection entry conserves storage space and replication time. For example, a user who has 200 entries in his or her safelist collection would create about 800 bytes of hashed data stored and replicated in Active Directory.
 
-  - **Renders user safelist collections unusable by malicious users**   Because one-way hash values are impossible to reverse-engineer into the original SMTP address or domain, the safelist collections don't yield usable email addresses for malicious users who might compromise an Exchange server.
+  - **Renders user safelist collections unusable by malicious users**: Because one-way hash values are impossible to reverse-engineer into the original SMTP address or domain, the safelist collections don't yield usable email addresses for malicious users who might compromise an Exchange server.
 
 Return to top
 

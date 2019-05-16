@@ -79,15 +79,15 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
         
         Active Directory synchronization must be configured for all users that need to share free/busy information between the organizations. You can either configure the Active Directory synchronization manually or use an automated Active Directory synchronization service. To configure Active Directory synchronization, see the steps below:
         
-          - **Prerequisites**   Make sure your organization meets the requirements for installing Active Directory synchronization.
+          - **Prerequisites**: Make sure your organization meets the requirements for installing Active Directory synchronization.
             
             To learn more, see [Prepare for Active Directory Synchronization](https://go.microsoft.com/fwlink/p/?linkid=247302)
         
-          - **Plan**   Understand the Microsoft Online Services Directory Synchronization tool and installation roadmap.
+          - **Plan**: Understand the Microsoft Online Services Directory Synchronization tool and installation roadmap.
             
             To learn more, see [Active Directory Synchronization: Roadmap](http://go.microsoft.com/fwlink/p/?linkid=203007)
         
-          - **Install and Configure**   Configure Active Directory synchronization between your on-premises organization and the Office 365 tenant service organization.
+          - **Install and Configure**: Configure Active Directory synchronization between your on-premises organization and the Office 365 tenant service organization.
             
             To learn more, see [Install and Upgrade the Microsoft Online Services Directory Synchronization tool](https://go.microsoft.com/fwlink/p/?linkid=247303)
     
@@ -126,15 +126,15 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
         
         Active Directory synchronization must be configured for all users that need to share free/busy information between the organizations. You can either configure the Active Directory synchronization manually or use an automated Active Directory synchronization service. To learn more about Active Directory synchronization, see [Forefront Identity Management](https://go.microsoft.com/fwlink/?linkid=294645).
         
-          - **Prerequisites**   Make sure your organization meets the requirements for installing Active Directory synchronization.
+          - **Prerequisites**: Make sure your organization meets the requirements for installing Active Directory synchronization.
             
             To learn more, see [Prepare for Active Directory Synchronization](https://go.microsoft.com/fwlink/p/?linkid=247302)
         
-          - **Plan**   Understand the Microsoft Online Services Directory Synchronization tool and installation roadmap.
+          - **Plan**: Understand the Microsoft Online Services Directory Synchronization tool and installation roadmap.
             
             To learn more, see [Active Directory Synchronization: Roadmap](http://go.microsoft.com/fwlink/p/?linkid=203007)
         
-          - **Install and Configure**   Configure Active Directory synchronization between your on-premises organization and the Office 365 tenant service organization.
+          - **Install and Configure**: Configure Active Directory synchronization between your on-premises organization and the Office 365 tenant service organization.
             
             To learn more, see [Install and Upgrade the Microsoft Online Services Directory Synchronization tool](https://go.microsoft.com/fwlink/p/?linkid=247303)
     

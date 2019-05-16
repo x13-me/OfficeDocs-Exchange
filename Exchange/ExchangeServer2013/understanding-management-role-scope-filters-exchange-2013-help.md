@@ -25,17 +25,17 @@ To use management role scope filters, you must be familiar with management role 
 
 Filtered custom scopes in Microsoft Exchange Server 2013 are created by using the **New-ManagementScope** cmdlet. The two types of filtered scopes, recipient and configuration (which consists of server and database scopes), are divided into regular scopes and exclusive scopes. The following list shows which parameter on the **New-ManagementScope** cmdlet to use to create each type of filtered scope:
 
-  - **Recipient regular filtered scope**   To create this type of filtered scope, use the *RecipientRestrictionFilter* parameter.
+  - **Recipient regular filtered scope**: To create this type of filtered scope, use the *RecipientRestrictionFilter* parameter.
 
-  - **Recipient exclusive filtered scope**   To create this type of filtered scope, use the *RecipientRestrictionFilter* parameter along with the *Exclusive* switch.
+  - **Recipient exclusive filtered scope**: To create this type of filtered scope, use the *RecipientRestrictionFilter* parameter along with the *Exclusive* switch.
 
-  - **Server-based configuration regular filtered scope**   To create this type of filtered scope, use the *ServerRestrictionFilter* parameter.
+  - **Server-based configuration regular filtered scope**: To create this type of filtered scope, use the *ServerRestrictionFilter* parameter.
 
-  - **Server-based configuration exclusive filtered scope**   To create this type of filtered scope, use the *ServerRestrictionFilter* parameter along with the *Exclusive* switch.
+  - **Server-based configuration exclusive filtered scope**: To create this type of filtered scope, use the *ServerRestrictionFilter* parameter along with the *Exclusive* switch.
 
-  - **Database-based configuration regular filtered scope**   To create this type of filtered scope, use the *DatabaseRestrictionFilter* parameter.
+  - **Database-based configuration regular filtered scope**: To create this type of filtered scope, use the *DatabaseRestrictionFilter* parameter.
 
-  - **Database-based configuration exclusive filtered scope**   To create this type of filtered scope, use the *DatabaseRestrictionFilter* parameter along with the *Exclusive* switch.
+  - **Database-based configuration exclusive filtered scope**: To create this type of filtered scope, use the *DatabaseRestrictionFilter* parameter along with the *Exclusive* switch.
 
 When you create a filtered custom scope, the scope attempts to match the filter with any objects accessible within the implicit read scope of the management role. If an object is found, it's included in the results returned by the filter, and the object is made available to the management role by the custom scope. A filter can't return results that are outside of the implicit read scope of the management role.
 
@@ -47,21 +47,21 @@ To create a management scope using the filterable properties included in this to
 
 Both recipient and configuration filters use the same syntax to create a filter query. All filter queries must have, at minimum, the following components:
 
-  - **Opening bracket**   The opening brace ({) indicates the start of the filter query.
+  - **Opening bracket**: The opening brace ({) indicates the start of the filter query.
 
-  - **Property to examine**   The property is the value on an object that you want to test. For example, this can be the city or department on a recipient object, an Active Directory site name or server name on a server configuration object, or a database name on a database configuration object.
+  - **Property to examine**: The property is the value on an object that you want to test. For example, this can be the city or department on a recipient object, an Active Directory site name or server name on a server configuration object, or a database name on a database configuration object.
 
-  - **Comparison operator**   The comparison operator directs how the query should evaluate the value that you specify against the value that's stored in the property. For example, comparison operators can be **Eq**, which means equal to; **Ne**, which means not equal to; **Like**, which means similar to, and so on. For a full list of operators that you can use in the Exchange Management Shell, see [Comparison operators](https://technet.microsoft.com/en-us/library/bb125229\(v=exchg.150\)).
+  - **Comparison operator**: The comparison operator directs how the query should evaluate the value that you specify against the value that's stored in the property. For example, comparison operators can be **Eq**, which means equal to; **Ne**, which means not equal to; **Like**, which means similar to, and so on. For a full list of operators that you can use in the Exchange Management Shell, see [Comparison operators](https://technet.microsoft.com/en-us/library/bb125229\(v=exchg.150\)).
 
-  - **Value to compare**   The value you specify in the filter query will be compared to the value that's stored in the property you specified. The value you specify must be enclosed in quotation marks ("). If you want to specify a partial string, you can enclose the string you provide in wildcard characters (\*) and use a comparison operator that supports wildcard characters, such as **Like**. Any string that contains the partial string will match the filter query.
+  - **Value to compare**: The value you specify in the filter query will be compared to the value that's stored in the property you specified. The value you specify must be enclosed in quotation marks ("). If you want to specify a partial string, you can enclose the string you provide in wildcard characters (\*) and use a comparison operator that supports wildcard characters, such as **Like**. Any string that contains the partial string will match the filter query.
 
-  - **Closing bracket**   The closing brace (}) indicates the end of the filter query.
+  - **Closing bracket**: The closing brace (}) indicates the end of the filter query.
 
 The following components are optional and enable you to create more complex filter queries:
 
-  - **Parentheses**   As in mathematics, parentheses, ( ), in a filter query enable you to force the order in which an operation occurs. Innermost parentheses are evaluated first and the filter query works outward to the outermost parentheses.
+  - **Parentheses**: As in mathematics, parentheses, ( ), in a filter query enable you to force the order in which an operation occurs. Innermost parentheses are evaluated first and the filter query works outward to the outermost parentheses.
 
-  - **Logical operators**   Logical operators tie together one or more comparison operations and require the filter query to evaluate the entire statement. For example, logical operators include **And**, **Or**, and **Not**.
+  - **Logical operators**: Logical operators tie together one or more comparison operations and require the filter query to evaluate the entire statement. For example, logical operators include **And**, **Or**, and **Not**.
 
 When put together, a simple query looks like `{ City -Eq "Vancouver" }`. This filter matches any recipient where the value in the property **City** equals the string "Vancouver".
 

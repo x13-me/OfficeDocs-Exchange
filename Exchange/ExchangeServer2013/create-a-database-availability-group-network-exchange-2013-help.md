@@ -51,11 +51,11 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
 3.  On the **new database availability group network** page, provide the following information:
     
-      - **Database availability group network name**   Use this field to type a name for the network that's unique in the DAG.
+      - **Database availability group network name**: Use this field to type a name for the network that's unique in the DAG.
     
-      - **Description**   Use this field to provide a text description of the DAG network.
+      - **Description**: Use this field to provide a text description of the DAG network.
     
-      - **Subnets**   Use this field to associate one or more subnets with the DAG network. Click ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add a subnet, click ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to edit a subnet, and click minus (-) to remove a subnet.
+      - **Subnets**: Use this field to associate one or more subnets with the DAG network. Click ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add a subnet, click ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to edit a subnet, and click minus (-) to remove a subnet.
 
 4.  Click **Save** to create the DAG network.
 

@@ -57,13 +57,13 @@ Looking for management tasks related to management roles? See [Permissions](perm
 
 Exchange 2013 provides many built-in management roles that you can use to administer your organization. Each role includes the cmdlets and parameters necessary for users to manage specific Exchange components. The following are examples of some built-in management roles:
 
-  - **Mail Recipients**   Enables administrators to manage mailboxes, contacts, and mail users.
+  - **Mail Recipients**: Enables administrators to manage mailboxes, contacts, and mail users.
 
-  - **Transport Rules**   Enables administrators or specialist users assigned the role to manage the transport rules feature.
+  - **Transport Rules**: Enables administrators or specialist users assigned the role to manage the transport rules feature.
 
-  - **Distribution Groups**   Enables administrators or specialist users assigned the role to manage distribution groups and distribution group members.
+  - **Distribution Groups**: Enables administrators or specialist users assigned the role to manage distribution groups and distribution group members.
 
-  - **MyPersonalInformation**   Enables end users to modify their own home phone number and Web site address.
+  - **MyPersonalInformation**: Enables end users to modify their own home phone number and Web site address.
 
 For a complete list of the management roles included with Exchange 2013, see [Built-in management roles](built-in-management-roles-exchange-2013-help.md).
 
@@ -232,13 +232,13 @@ Management role types are the foundation of all management roles. Types define t
 
 Management role types are split into the following categories:
 
-  - **Administrative or specialist**   Roles associated with an administrative or specialist role types have a broader scope of impact in the Exchange organization. Roles of this role type enable tasks such as server or recipient management, organization configuration, compliance administration, auditing, and more.
+  - **Administrative or specialist**: Roles associated with an administrative or specialist role types have a broader scope of impact in the Exchange organization. Roles of this role type enable tasks such as server or recipient management, organization configuration, compliance administration, auditing, and more.
 
-  - **User-focused**   Roles associated with a user-focused role type have a scope of impact closely tied with an individual user. Roles of this role type enable tasks such as user profile configuration and self management, management of user-owned distribution groups, and more.
+  - **User-focused**: Roles associated with a user-focused role type have a scope of impact closely tied with an individual user. Roles of this role type enable tasks such as user profile configuration and self management, management of user-owned distribution groups, and more.
     
     The names of roles associated with user-focused role types and user-focused role type names begin with My.
 
-  - **Specialty**   Roles associated with specialty role types enable tasks that aren't administrative or user-focused role types. Roles of this role type enable tasks such as application impersonation and the use of non-Exchange cmdlets or scripts.
+  - **Specialty**: Roles associated with specialty role types enable tasks that aren't administrative or user-focused role types. Roles of this role type enable tasks such as application impersonation and the use of non-Exchange cmdlets or scripts.
 
 The following table lists all of the administrative management role types in Exchange 2013 and whether the configuration that's permitted by the role type is applied across the whole Exchange organization or only to an individual server. For more information about each of the management roles associated with these role types, including a description of each role, who may benefit from being assigned the role, and other information, see [Built-in management roles](built-in-management-roles-exchange-2013-help.md).
 
