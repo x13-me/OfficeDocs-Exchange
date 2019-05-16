@@ -1,4 +1,4 @@
-﻿---
+---
 localization_priority: Normal
 description: 'Administrators can learn about Unified Messaging in Exchange Server 2016.'
 ms.topic: overview
@@ -12,7 +12,6 @@ ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
-
 ---
 
 # Unified Messaging in Exchange Server 2016
