@@ -27,11 +27,11 @@ By using keyboard shortcuts in the Exchange admin center (EAC), you can quickly 
 
 |**To do this**|**Use this keyboard shortcut**|
 |:-----|:-----|
-|Move between areas or between controls in the EAC  <br/> |Tab  <br/> Shift-Tab  <br/> |
-|Move between items in drop-down menus in the EAC  <br/> |Up arrow key  <br/> Down arrow key  <br/> Note that you can't use Tab or SHIFT-Tab to move between items in drop-down menus  <br/> |
-|Move within lists from one item to another  <br/> |Up arrow key  <br/> Down arrow key  <br/> Page Up  <br/> Page Down  <br/> Home  <br/> End  <br/> Note that you can also use the Up, Down, Left, and Right arrow keys to:  <br/> • Move between option buttons.  <br/> • Move within a group of associated check boxes.  <br/> |
-|Move within primary property pages from one item to another  <br/> |Up arrow key  <br/> Down arrow key  <br/> Page Up  <br/> Page Down  <br/> Home  <br/> End  <br/> Tab  <br/> Shift-Tab  <br/> You can use Enter or the Spacebar to activate your selection.  <br/> |
-|Move within secondary property pages from one item to another  <br/> |Up arrow key  <br/> Down arrow key  <br/> Page Up  <br/> Page Down  <br/> Home  <br/> End  <br/> Tab  <br/> Shift-Tab  <br/> You can use Enter or the Spacebar to activate your selection.  <br/> |
+|Move between areas or between controls in the EAC|Tab  <br/> Shift-Tab|
+|Move between items in drop-down menus in the EAC|Up arrow key  <br/> Down arrow key  <br/> Note that you can't use Tab or SHIFT-Tab to move between items in drop-down menus|
+|Move within lists from one item to another|Up arrow key  <br/> Down arrow key  <br/> Page Up  <br/> Page Down  <br/> Home  <br/> End  <br/> Note that you can also use the Up, Down, Left, and Right arrow keys to:  <br/> • Move between option buttons.  <br/> • Move within a group of associated check boxes.|
+|Move within primary property pages from one item to another|Up arrow key  <br/> Down arrow key  <br/> Page Up  <br/> Page Down  <br/> Home  <br/> End  <br/> Tab  <br/> Shift-Tab  <br/> You can use Enter or the Spacebar to activate your selection.|
+|Move within secondary property pages from one item to another|Up arrow key  <br/> Down arrow key  <br/> Page Up  <br/> Page Down  <br/> Home  <br/> End  <br/> Tab  <br/> Shift-Tab  <br/> You can use Enter or the Spacebar to activate your selection.|
 
 ## Keyboard shortcuts in other Microsoft products and services
 

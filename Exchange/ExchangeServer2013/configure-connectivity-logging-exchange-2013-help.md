@@ -49,9 +49,9 @@ Connectivity logging records the outbound connection activity that's used to tra
 
 4.  In the **Connectivity log** section, change any of the following:
     
-      - **Enable connectivity log**   To disable connectivity logging on the server, clear the check box. To enable connectivity logging on the server, select the check box.
+      - **Enable connectivity log**: To disable connectivity logging on the server, clear the check box. To enable connectivity logging on the server, select the check box.
     
-      - **Connectivity log path**   The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
+      - **Connectivity log path**: The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
     
     When you are finished, click **Save**.
 

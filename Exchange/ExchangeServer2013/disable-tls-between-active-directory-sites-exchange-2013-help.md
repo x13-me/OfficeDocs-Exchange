@@ -69,9 +69,9 @@ Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
 
 2.  On the first page of the **New Receive connector** wizard, enter the following values
     
-      - **Name**   Enter a descriptive value.
+      - **Name**: Enter a descriptive value.
     
-      - **Type**   Internal
+      - **Type**: Internal
     
     When you are finished, click **Next**.
 

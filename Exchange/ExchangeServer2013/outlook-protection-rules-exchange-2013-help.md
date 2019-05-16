@@ -57,9 +57,9 @@ When creating a rule, you can specify whether the user can override it, either b
 
 Outlook protection rules allow you to use three predicates to automatically apply IRM protection in Outlook 2010:
 
-  - **FromDepartment**   The *FromDepartment* predicate looks up the sender's department attribute in Active Directory and automatically IRM-protects the message if the sender's department matches the department specified in the rule. For example, you can create an Outlook protection rule to automatically protect all messages sent by the Research department.
+  - **FromDepartment**: The *FromDepartment* predicate looks up the sender's department attribute in Active Directory and automatically IRM-protects the message if the sender's department matches the department specified in the rule. For example, you can create an Outlook protection rule to automatically protect all messages sent by the Research department.
 
-  - **SentTo**   Your organization may need to protect messages sent to certain sensitive recipients, such as the All Company or Finance distribution groups. Using the *SentTo* predicate, you can create an Outlook protection rule to automatically IRM-protect messages sent to specified recipients.
+  - **SentTo**: Your organization may need to protect messages sent to certain sensitive recipients, such as the All Company or Finance distribution groups. Using the *SentTo* predicate, you can create an Outlook protection rule to automatically IRM-protect messages sent to specified recipients.
 
-  - **SentToScope**   The *SentToScope* predicate allows you to create an Outlook protection rule to automatically IRM-protect messages sent inside or outside the organization. For example, you can use the *SentToScope* predicate with the *FromDepartment* predicate to IRM-protect messages sent by a particular department to internal users.
+  - **SentToScope**: The *SentToScope* predicate allows you to create an Outlook protection rule to automatically IRM-protect messages sent inside or outside the organization. For example, you can use the *SentToScope* predicate with the *FromDepartment* predicate to IRM-protect messages sent by a particular department to internal users.
 

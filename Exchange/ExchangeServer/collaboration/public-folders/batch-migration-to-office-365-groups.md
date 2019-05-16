@@ -345,17 +345,17 @@ The permission entries will be modified as follows:
 
 |**Before lock down**|**After lock down**|
 |:-----|:-----|
-|None  <br/> |None  <br/> |
-|AvailabilityOnly  <br/> |AvailabilityOnly  <br/> |
-|LimitedDetails  <br/> |LimitedDetails  <br/> |
-|Contributor  <br/> |FolderVisible  <br/> |
-|Reviewer  <br/> |ReadItems, FolderVisible  <br/> |
-|NonEditingAuthor  <br/> |ReadItems, FolderVisible  <br/> |
-|Aughor  <br/> |ReadItems, FolderVisible  <br/> |
-|Editor  <br/> |ReadItems, FolderVisible  <br/> |
-|PublishingAuthor  <br/> |ReadItems, CreateSubfolders, FolderVisible  <br/> |
-|PublishingEditor  <br/> |ReadItems, CreateSubfolders, FolderVisible  <br/> |
-|Owner  <br/> |ReadItems, CreateSubfolders, FolderContact, FolderVisible  <br/> |
+|None|None|
+|AvailabilityOnly|AvailabilityOnly|
+|LimitedDetails|LimitedDetails|
+|Contributor|FolderVisible|
+|Reviewer|ReadItems, FolderVisible|
+|NonEditingAuthor|ReadItems, FolderVisible|
+|Aughor|ReadItems, FolderVisible|
+|Editor|ReadItems, FolderVisible|
+|PublishingAuthor|ReadItems, CreateSubfolders, FolderVisible|
+|PublishingEditor|ReadItems, CreateSubfolders, FolderVisible|
+|Owner|ReadItems, CreateSubfolders, FolderContact, FolderVisible|
 
 - Access rights for users without read permissions will be left untouched, and they will continue to be blocked from read rights.
 

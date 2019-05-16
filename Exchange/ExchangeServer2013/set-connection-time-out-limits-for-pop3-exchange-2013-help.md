@@ -51,9 +51,9 @@ For additional information related to POP3, see [POP3 and IMAP4 in Exchange Serv
 
 5.  Under **Time-out settings**, use the following settings:
     
-      - **Authenticated time-out (seconds)**    Specifies the time to wait before closing an idle authenticated connection. The default value is 1,800. The possible values are from 30 through 86,400.
+      - **Authenticated time-out (seconds)**:  Specifies the time to wait before closing an idle authenticated connection. The default value is 1,800. The possible values are from 30 through 86,400.
     
-      - **Unauthenticated time-out (seconds)**   Specifies the time to wait before closing an idle connection that isn't authenticated. The default value is 60. The possible values are from 30 through 3,600.
+      - **Unauthenticated time-out (seconds)**: Specifies the time to wait before closing an idle connection that isn't authenticated. The default value is 60. The possible values are from 30 through 3,600.
 
 6.  Click **Apply**, and then click **OK** to save your changes.
 

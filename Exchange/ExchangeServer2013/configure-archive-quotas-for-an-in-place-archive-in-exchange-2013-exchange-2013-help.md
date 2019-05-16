@@ -21,9 +21,9 @@ _**Applies to:** Exchange Server 2013_
 
 In on-premises deployments, In-Place Archives are created with unlimited storage quotas by default. As a result, you'll need to edit a mailbox's properties to set storage quotas for the archive. You can set the following quotas for an archive:
 
-  - **Archive warning quota**   When an In-Place Archive exceeds the specified archive warning quota, an event is logged for the Exchange administrator and a warning message is sent to the mailbox user.
+  - **Archive warning quota**: When an In-Place Archive exceeds the specified archive warning quota, an event is logged for the Exchange administrator and a warning message is sent to the mailbox user.
 
-  - **Archive quota**   When an In-Place Archive exceeds the specified archive quota, messages are no longer moved to the archive and a warning message is sent to the mailbox user.
+  - **Archive quota**: When an In-Place Archive exceeds the specified archive quota, messages are no longer moved to the archive and a warning message is sent to the mailbox user.
 
 To learn more about In-Place Archives, see [In-Place Archiving in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md).
 

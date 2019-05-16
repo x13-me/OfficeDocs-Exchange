@@ -147,11 +147,11 @@ Although AD FS doesn't require certificates be issued by a CA, the SSL certifica
 
 When you are setting up Exchange 2013 SP1, AD FS, and Web Application Proxy, follow these certificate recommendations:
 
-  - **Mailbox servers**   The certificates that are used on the Mailbox servers are self-signed certificates are they are created when Exchange 2013 is installed. Because all clients connect to an Exchange 2013 Mailbox server through an Exchange 2013 Client Access server, the only certificates that you need to manage are those on the Client Access servers.
+  - **Mailbox servers**: The certificates that are used on the Mailbox servers are self-signed certificates are they are created when Exchange 2013 is installed. Because all clients connect to an Exchange 2013 Mailbox server through an Exchange 2013 Client Access server, the only certificates that you need to manage are those on the Client Access servers.
 
-  - **Client Access servers**   An SSL certificate used for service communications is required. If your existing SSL certificate already includes the FQDN you are using to set up the relying party trust endpoint, no additional certificates are required.
+  - **Client Access servers**: An SSL certificate used for service communications is required. If your existing SSL certificate already includes the FQDN you are using to set up the relying party trust endpoint, no additional certificates are required.
 
-  - **AD FS**   Two types of certificates are required by AD FS:
+  - **AD FS**: Two types of certificates are required by AD FS:
     
       - SSL certificate used for service communications
         

@@ -49,9 +49,9 @@ Message tracking records the SMTP transport activity of all messages transferred
 
 4.  In the **Message tracking log** section, change any of the following:
     
-      - **Enable message tracking log**   To disable message tracking on the server, clear the check box. To enable message tracking on the server, select the check box.
+      - **Enable message tracking log**: To disable message tracking on the server, clear the check box. To enable message tracking on the server, select the check box.
     
-      - **Message tracking log path**   The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
+      - **Message tracking log path**: The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
 
 5.  Click **Save**.
 

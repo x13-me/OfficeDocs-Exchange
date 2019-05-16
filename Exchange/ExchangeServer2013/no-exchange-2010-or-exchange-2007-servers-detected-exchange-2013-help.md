@@ -29,9 +29,9 @@ Microsoft Exchange Server 2013 Setup displayed this warning because no Exchange 
 
 Before deploying Exchange 2013, consider the following factors that may require you to deploy Exchange 2010 or Exchange 2007 servers prior to deploying Exchange 2013:
 
-  - **Third-party or in-house developed applications**   Applications developed for earlier versions of Exchange may not be compatible with Exchange 2013. You may need to maintain Exchange 2010 or Exchange 2007 servers to support these applications.
+  - **Third-party or in-house developed applications**: Applications developed for earlier versions of Exchange may not be compatible with Exchange 2013. You may need to maintain Exchange 2010 or Exchange 2007 servers to support these applications.
 
-  - **Coexistence or migration requirements**   If you plan on migrating mailboxes into your organization, some solutions may require the use of Exchange 2010 or Exchange 2007 servers.
+  - **Coexistence or migration requirements**: If you plan on migrating mailboxes into your organization, some solutions may require the use of Exchange 2010 or Exchange 2007 servers.
 
 If you decide that you need to deploy Exchange 2010 or Exchange 2007 servers, you must do so before you deploy Exchange 2013. Active Directory must be prepared for each Exchange version in the following order:
 

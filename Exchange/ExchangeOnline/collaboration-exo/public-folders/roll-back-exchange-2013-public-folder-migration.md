@@ -32,7 +32,7 @@ Note that if you roll back your migration, you will lose any content that was ad
    Set-OrganizationConfig -PublicFolderMailboxesLockedForNewConnections:$false -PublicFolderMailboxesMigrationComplete:$false -PublicFoldersEnabled Local
    ```
 
-2. In your Exchange on-premises environment, revert the `ExternalEmailAddress` of any mail-enabled public folder that was updated by SetMailPublicFolderExternalAddress.ps1 (the script used in *Step 8: Test and unlock public folders in Exchange Online*  of [Use batch migration to migrate Exchange Server public folders to Exchange Online](batch-migration-of-exchange-2013-public-folders.md)). You can refer to the summary file created by the script to identify the ones that were modified, or use the file OnPrem_MEPF.xml file generated earlier in the same batch migriont process to get the original properties for all mail-enabled public folders.
+2. In your Exchange on-premises environment, revert the `ExternalEmailAddress` of any mail-enabled public folder that was updated by SetMailPublicFolderExternalAddress.ps1 (the script used in *Step 8: Test and unlock public folders in Exchange Online* of [Use batch migration to migrate Exchange Server public folders to Exchange Online](batch-migration-of-exchange-2013-public-folders.md)). You can refer to the summary file created by the script to identify the ones that were modified, or use the file OnPrem_MEPF.xml file generated earlier in the same batch migration process to get the original properties for all mail-enabled public folders.
 
 3. In Exchange Online PowerShell, run the following commands to remove all Exchange Online public folders and mailboxes:
 

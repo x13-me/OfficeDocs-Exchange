@@ -41,11 +41,11 @@ For additional management tasks related to role groups, see [Permissions](permis
 
   - You must have the following information about the foreign Active Directory forest:
     
-      - **Credentials**   You must have a user name and password that can access the foreign Active Directory forest. This information is used with the *LinkedCredential* parameter on the **New-RoleGroup** and **Set-RoleGroup** cmdlets.
+      - **Credentials**: You must have a user name and password that can access the foreign Active Directory forest. This information is used with the *LinkedCredential* parameter on the **New-RoleGroup** and **Set-RoleGroup** cmdlets.
     
-      - **Domain controller**   You must have the fully qualified domain name (FQDN) of an Active Directory domain controller in the foreign Active Directory forest. This information is used with the *LinkedDomainController* parameter on the **New-RoleGroup** and **Set-RoleGroup** cmdlets.
+      - **Domain controller**: You must have the fully qualified domain name (FQDN) of an Active Directory domain controller in the foreign Active Directory forest. This information is used with the *LinkedDomainController* parameter on the **New-RoleGroup** and **Set-RoleGroup** cmdlets.
     
-      - **Foreign USG**   You must have the full name of a USG in the foreign Active Directory forest that contains the members you want to associate with the linked role group. This information is used with the *LinkedForeignGroup* parameter on the **New-RoleGroup** and **Set-RoleGroup** cmdlet.
+      - **Foreign USG**: You must have the full name of a USG in the foreign Active Directory forest that contains the members you want to associate with the linked role group. This information is used with the *LinkedForeignGroup* parameter on the **New-RoleGroup** and **Set-RoleGroup** cmdlet.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

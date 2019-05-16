@@ -220,7 +220,7 @@ To migrate email successfully, Office 365 needs to connect and communicate with 
 
 5. On the **IMAP migration configuration** page, enter the following information:
 
-   - **\* IMAP server**: Type the *messaging server name*  (for example, imap.contoso.com) of the source email server.
+   - **\* IMAP server**: Type the *messaging server name* (for example, imap.contoso.com) of the source email server.
 
    - Leave the remaining information as the default settings; these will work for most cases.
 
@@ -271,7 +271,7 @@ You use a migration batch to migrate groups of email to Office 365 mailboxes at 
 
 8. On this page, select the migration endpoint that you created in [Step 3: Connect Office 365 to your email system](#step-3-connect-office-365-to-your-email-system).
 
-9. On the **Move configuration** page, type the *name*  (no spaces or special characters) of the migration batch, for example, Test5-migration, and then click **Next**.
+9. On the **Move configuration** page, type the *name (no spaces or special characters) of the migration batch, for example, Test5-migration, and then click **Next**.
 
    The default migration batch name that's displayed is the name of the migration file that you specified. The migration batch name is displayed in the list on the migration dashboard after you create the migration batch.
 

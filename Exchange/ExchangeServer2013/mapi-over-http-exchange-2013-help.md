@@ -41,11 +41,11 @@ MAPI over HTTP offers the following benefits to clients that support it:
 
 Consider the following requirements to enable MAPI over HTTP.
 
-  - **Supportability**   Verify that your intended configuration versions are supported.
+  - **Supportability**: Verify that your intended configuration versions are supported.
 
-  - **Prerequisites**   Verify that your environment has been upgraded and prepared for MAPI over HTTP.
+  - **Prerequisites**: Verify that your environment has been upgraded and prepared for MAPI over HTTP.
 
-  - **Configuration**   Configure the virtual directories, and enable MAPI for your organization.
+  - **Configuration**: Configure the virtual directories, and enable MAPI for your organization.
 
 ## Supportability
 
@@ -165,7 +165,7 @@ Complete the following steps to prepare the clients and servers to support MAPI 
 
 Complete the following steps to configure MAPI over HTTP for your organization.
 
-1.  **Virtual directory configuration**   By default, Exchange 2013 SP1 creates a virtual directory for MAPI over HTTP. You use the **Set-MapiVirtualDirectory** cmdlet to configure the virtual directory. You must configure an internal URL, an external URL, or both. For more information see, [Set-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595082\(v=exchg.150\)).
+1.  **Virtual directory configuration**: By default, Exchange 2013 SP1 creates a virtual directory for MAPI over HTTP. You use the **Set-MapiVirtualDirectory** cmdlet to configure the virtual directory. You must configure an internal URL, an external URL, or both. For more information see, [Set-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595082\(v=exchg.150\)).
     
     For example, to configure the default MAPI virtual directory on the local Exchange server by setting the internal URL value to https://contoso.com/mapi, and the authentication method to `Negotiate`, run the following command:
 
@@ -173,9 +173,9 @@ Complete the following steps to configure MAPI over HTTP for your organization.
         Set-MapiVirtualDirectory -Identity "Contoso\mapi (Default Web Site)" -InternalUrl https://Contoso.com/mapi -IISAuthenticationMethods Negotiate
     ```
 
-2.  **Certificate configuration**   The digital certificate used by your Exchange environment must include the same *InternalURL* and *ExternalURL* values that are defined on the MAPI virtual directory. For more information on Exchange 2013 certificate management, see [Digital certificates and SSL](digital-certificates-and-ssl-exchange-2013-help.md). Make sure the Exchange certificate is trusted on the Outlook client workstation and that there are no certificate errors, especially when you access the URLs configured on the MAPI virtual directory.
+2.  **Certificate configuration**: The digital certificate used by your Exchange environment must include the same *InternalURL* and *ExternalURL* values that are defined on the MAPI virtual directory. For more information on Exchange 2013 certificate management, see [Digital certificates and SSL](digital-certificates-and-ssl-exchange-2013-help.md). Make sure the Exchange certificate is trusted on the Outlook client workstation and that there are no certificate errors, especially when you access the URLs configured on the MAPI virtual directory.
 
-3.  **Update server rules**   Verify that your load balancers, reverse proxies, and firewalls are configured to allow access to the MAPI over HTTP virtual directory.
+3.  **Update server rules**: Verify that your load balancers, reverse proxies, and firewalls are configured to allow access to the MAPI over HTTP virtual directory.
 
 4.  **Enable MAPI over HTTP in your Exchange Organization**
     

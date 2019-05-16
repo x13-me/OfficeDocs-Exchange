@@ -37,15 +37,15 @@ Use the Details Templates Editor to customize the client-side graphical user int
     
     In the details pane, the following columns are displayed:
     
-      - **Language**   This column lists the language in which the template was created.
+      - **Language**: This column lists the language in which the template was created.
     
-      - **Template Type**   This column lists the type of template that you can customize.
+      - **Template Type**: This column lists the type of template that you can customize.
     
-      - **Identity**   This column lists the unique identity of the template.
+      - **Identity**: This column lists the unique identity of the template.
     
-      - **Created**   This column lists the date and time that the template was created.
+      - **Created**: This column lists the date and time that the template was created.
     
-      - **Modified**   This column lists the date and time that the template was last modified.
+      - **Modified**: This column lists the date and time that the template was last modified.
 
 3.  To edit a template, click the template you want, and then, in the action pane, click **Edit**. For example, the **English (United States)** contacts details template is shown in the following figure.
     
