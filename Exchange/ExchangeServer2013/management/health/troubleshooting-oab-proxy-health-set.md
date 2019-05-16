@@ -139,7 +139,7 @@ When you receive an alert from a health set, the email message contains the foll
 
   - Full exception trace of the last error, including diagnostic data and specific HTTP header information  
     
-    **Note**   You can use the information in the full exception trace to help troubleshoot the issue.
+    **Note**: You can use the information in the full exception trace to help troubleshoot the issue.
 
   - Time and date when the issue occurred
 

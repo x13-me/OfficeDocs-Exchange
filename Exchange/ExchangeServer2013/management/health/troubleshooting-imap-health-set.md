@@ -205,7 +205,7 @@ This monitor alert is typically issued on CAS servers.
         
             Get-ServerHealth mailbox1.contoso.com | ?{$_.HealtSetName -like "IMAP*"}
         
-        **Note**   In this command, replace *mailbox1.contoso.com* with the actual Mailbox server name.
+        **Note**: In this command, replace *mailbox1.contoso.com* with the actual Mailbox server name.
     
     7.  If any of the monitors that are listed in the command output are reported as unhealthy, you must address those monitors first. Follow the troubleshooting steps outlined in the ImapTestDeepMonitor and ImapSelfTestMonitor Recovery Actions section.
 
@@ -251,7 +251,7 @@ This monitor alert is typically issued on CA and Mailbox servers.
     
         Get-ServerHealth server1.contoso.com | ?{$_.HealthSetName -like "IMAP*"}
     
-    **Note**   In this command, replace *server1.contoso.com* with the actual server name.
+    **Note**: In this command, replace *server1.contoso.com* with the actual server name.
 
 3.  Wait 10 minutes, and then run the command shown in step 2 again to see whether the monitor stays healthy.
 
@@ -261,7 +261,7 @@ This monitor alert is typically issued on CA and Mailbox servers.
         
             Set-MailboxServer server1.contoso.com -DatabaseCopyActivationDisabledAndMoveNow $true
         
-        **Note**   In this and all subsequent code examples, replace *server1.contoso.com* with the actual server name.
+        **Note**: In this and all subsequent code examples, replace *server1.contoso.com* with the actual server name.
     
     2.  Verify that all databases have been moved off the server that is reporting the issue. To do this, run the following command:
         

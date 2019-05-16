@@ -57,9 +57,9 @@ To use the EAC to enable or disable protocol logging on a Send connector or a Re
 
 3.  On the **General** tab in the **Protocol logging level** section, select one of the following options:
     
-      - **None**   Protocol logging disabled on the connector.
+      - **None**: Protocol logging disabled on the connector.
     
-      - **Verbose**   Protocol logging is enabled on the connector.
+      - **Verbose**: Protocol logging is enabled on the connector.
     
     When you are finished, click **Save**.
 
@@ -73,9 +73,9 @@ To use the EAC to configure the protocol log paths for the Send connectors and R
 
 4.  In the **Protocol log** section, change any of the following settings:
     
-      - **Send protocol log path**   The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
+      - **Send protocol log path**: The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
     
-      - **Receive protocol log path**   The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
+      - **Receive protocol log path**: The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
     
     When you are finished, click **Save**.
 

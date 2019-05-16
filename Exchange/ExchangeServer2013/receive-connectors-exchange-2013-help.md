@@ -61,9 +61,9 @@ Certain Receive connectors are created by default when you install the Mailbox s
 
 When you install a Mailbox server running the Transport service, two Receive connectors are created. No additional Receive connectors are needed for typical operation, and in most cases the default Receive connectors don't require a configuration change. These connectors are the following:
 
-  - **Default \<server name\>**   Accepts connections from Mailbox servers running the Transport service and from Edge servers.
+  - **Default \<server name\>**: Accepts connections from Mailbox servers running the Transport service and from Edge servers.
 
-  - **Client Proxy \<server name\>**   Accepts connections from front-end servers. Typically, messages are sent to a front-end server over SMTP.
+  - **Client Proxy \<server name\>**: Accepts connections from front-end servers. Typically, messages are sent to a front-end server over SMTP.
 
 Each connector is assigned a *TransportRole* value. You can use it to determine the role the connector is running in. This can be helpful in cases where you are running multiple roles on a single server. In the case of each Receive connector previously mentioned, their *TransportRole* value is **HubTransport**.
 
@@ -73,11 +73,11 @@ To view the default Receive connectors and their parameter values, you can use t
 
 During installation, three Receive connectors are created on the Front End transport, or Client Access server. The default Front End Receive connector is configured to accept SMTP communications from all IP address ranges. Additionally, there is a Receive connector that can act as an outbound proxy for messages sent to the front-end server from Mailbox servers. Finally, there is a secure Receive connector configured to accept messages encrypted with Transport Layer Security (TLS). These connectors are the following:
 
-  - **Default FrontEnd \<server name\>**   Accepts connections from SMTP senders over port 25. This is the common messaging entry point into your organization.
+  - **Default FrontEnd \<server name\>**: Accepts connections from SMTP senders over port 25. This is the common messaging entry point into your organization.
 
-  - **Outbound Proxy Frontend \<server name\>**   Accepts messages from a Send Connector on a back-end server, with front-end proxy enabled.
+  - **Outbound Proxy Frontend \<server name\>**: Accepts messages from a Send Connector on a back-end server, with front-end proxy enabled.
 
-  - **Client Frontend \<server name\>**   Accepts secure connections, with Transport Layer Security (TLS) applied.
+  - **Client Frontend \<server name\>**: Accepts secure connections, with Transport Layer Security (TLS) applied.
 
 In a typical installation, no additional Receive connectors are required.
 
@@ -99,15 +99,15 @@ Permission groups include *Anonymous*, *ExchangeUsers*, *ExchangeServers*, *Exch
 
 The type determines the default permission groups that are assigned to the Receive connector and the default authentication mechanisms that are available for session authentication. The following list describes the available types:
 
-1.  **Client**   Typically used to connect to clients not using Microsoft Office Outlook. It can use TLS authentication.
+1.  **Client**: Typically used to connect to clients not using Microsoft Office Outlook. It can use TLS authentication.
 
-2.  **Custom**   Typically used in a cross-forest scenario, or in a scenario where your organization receives messages from an SMTP message transfer agent.
+2.  **Custom**: Typically used in a cross-forest scenario, or in a scenario where your organization receives messages from an SMTP message transfer agent.
 
-3.  **Internal**   Used for communication between servers running the Transport service, or between Mailbox servers running the Transport service and third-party transfer agents.
+3.  **Internal**: Used for communication between servers running the Transport service, or between Mailbox servers running the Transport service and third-party transfer agents.
 
-4.  **Internet**   Used to receive SMTP mail from the Internet.
+4.  **Internet**: Used to receive SMTP mail from the Internet.
 
-5.  **Partner**   Use this type when you want to configure secure communication with a partner.
+5.  **Partner**: Use this type when you want to configure secure communication with a partner.
 
 Each type is appropriate for a specific connection scenario. Select the type that has the default settings most applicable to the configuration that you want. You can modify permissions by using the **Add-ADPermission** and **Remove-ADPermission** cmdlets. For more information, see the following topics:
 

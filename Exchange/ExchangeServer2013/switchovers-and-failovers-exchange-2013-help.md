@@ -493,9 +493,9 @@ A server failover occurs when the DAG member is no longer able to service the MA
 
 1.  The Cluster service on the PAM sends a notification to the PAM for one of two conditions:
     
-    1.  **Node Down**   The server is reachable but is unable to participate in DAG operations.
+    1.  **Node Down**: The server is reachable but is unable to participate in DAG operations.
     
-    2.  **MAPI Network Down**   The server can't be contacted over the MAPI network and therefore can't participate in DAG operations.
+    2.  **MAPI Network Down**: The server can't be contacted over the MAPI network and therefore can't participate in DAG operations.
 
 2.  If the server is reachable, the PAM contacts the Active Manager on the affected server and requests that all databases be immediately dismounted.
 

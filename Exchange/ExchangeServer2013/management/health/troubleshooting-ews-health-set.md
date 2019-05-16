@@ -144,11 +144,11 @@ It's possible that the service recovered after it issued the alert. Therefore, w
     
     The exception trace information provides the most important clue as to why the probe is failing. The escalation message also contains the following HTTP headers:
     
-    1.  **X-FEServer**   Indicates on which CAS the probe was run
+    1.  **X-FEServer**: Indicates on which CAS the probe was run
     
-    2.  **X-TargetBEServer**   Indicates to which MBX server the request is routed
+    2.  **X-TargetBEServer**: Indicates to which MBX server the request is routed
     
-    3.  **X-DiagInfo**   Indicates the MBX server that received the request
+    3.  **X-DiagInfo**: Indicates the MBX server that received the request
 
 2.  The message details provide information about the exact cause of the alert. In most cases, the message details provide sufficient troubleshooting information to identify the root cause. If the message details are not clear, do the following:
     
@@ -208,7 +208,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
     
         Set-MailboxServer server1.contoso.com -DatabaseCopyActivationDisabledAndMoveNow $true
     
-    **Note**   In this and all subsequent code examples, replace *server1.contoso.com* with the actual server name.
+    **Note**: In this and all subsequent code examples, replace *server1.contoso.com* with the actual server name.
 
 13. Verify that all the databases have been moved off the server that is reporting the issue. To do this, run the following command:
     

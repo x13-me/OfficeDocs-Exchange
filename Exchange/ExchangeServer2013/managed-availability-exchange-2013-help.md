@@ -27,11 +27,11 @@ Exchange 2013 takes a new approach to monitoring and preserving the end user exp
 
 Managed availability, also known as *Active Monitoring* or *Local Active Monitoring*, is the integration of built-in monitoring and recovery actions with the Exchange high availability platform. It's designed to detect and recover from problems as soon as they occur and are discovered by the system. Unlike previous external monitoring solutions and techniques for Exchange, managed availability doesn't try to identify or communicate the root cause of an issue. It's instead focused on recovery aspects that address three key areas of the user experience:
 
-  - **Availability**   Can users access the service?
+  - **Availability**: Can users access the service?
 
-  - **Latency**   How is the experience for users?
+  - **Latency**: How is the experience for users?
 
-  - **Errors**   Are users able to accomplish what they want?
+  - **Errors**: Are users able to accomplish what they want?
 
 The server role consolidation and other architectural changes in Exchange 2013 require a new approach to the monitoring methodologies and health model used in previous versions of Exchange. Managed availability is designed to address these changes by providing a native health monitoring and recovery solution. It moves away from monitoring individual separate slices of the system to monitoring the end-to-end user experience, and protecting the end user's experience through recovery-oriented actions.
 
@@ -39,9 +39,9 @@ Managed availability is an internal process that runs on every Exchange 2013 ser
 
 Managed availability implemented in the form of two services:
 
-  - **Exchange Health Manager Service (MSExchangeHMHost.exe)**   This is a controller process used to manage worker processes. It's used to build, execute, and start and stop the worker process, as needed. It's also used to recover the worker process in case that process fails, to prevent the worker process from being a single point of failure.
+  - **Exchange Health Manager Service (MSExchangeHMHost.exe)**: This is a controller process used to manage worker processes. It's used to build, execute, and start and stop the worker process, as needed. It's also used to recover the worker process in case that process fails, to prevent the worker process from being a single point of failure.
 
-  - **Exchange Health Manager Worker process (MSExchangeHMWorker.exe)**   This is the worker process responsible for performing run-time tasks within the managed availability framework.
+  - **Exchange Health Manager Worker process (MSExchangeHMWorker.exe)**: This is the worker process responsible for performing run-time tasks within the managed availability framework.
 
 Managed availability uses persistent storage to perform its functions:
 
@@ -99,19 +99,19 @@ To find the counter and threshold that is considered unhealthy, you can look at 
 
 Monitors query the data collected by probes to determine if action needs to be taken based on a predefined rule set. Depending on the rule or the nature of the issue, a monitor can either initiate a responder or escalate the issue to a human via an event log entry. In addition, monitors define how much time after a failure that a responder is executed, as well as the workflow of the recovery action. Monitors have various states. From a system state perspective, monitors have two states:
 
-  - **Healthy**   The monitor is operating properly and all collected metrics are within normal operating parameters
+  - **Healthy**: The monitor is operating properly and all collected metrics are within normal operating parameters
 
-  - **Unhealthy**   The monitor isn't healthy and has either initiated recovery through a responder or notified an administrator through escalation.
+  - **Unhealthy**: The monitor isn't healthy and has either initiated recovery through a responder or notified an administrator through escalation.
 
 From an administrative perspective, monitors have additional states that appear in the Shell:
 
-  - **Degraded**   When a monitor is in an unhealthy state from 0 through 60 seconds, it's considered Degraded. If a monitor is unhealthy for more than 60 seconds, it is considered Unhealthy.
+  - **Degraded**: When a monitor is in an unhealthy state from 0 through 60 seconds, it's considered Degraded. If a monitor is unhealthy for more than 60 seconds, it is considered Unhealthy.
 
-  - **Disabled**   The monitor has been explicitly disabled by an administrator.
+  - **Disabled**: The monitor has been explicitly disabled by an administrator.
 
-  - **Unavailable**   The Microsoft Exchange Health service periodically queries each monitor for its state. If it doesn't get a response to the query, the monitor state becomes Unavailable.
+  - **Unavailable**: The Microsoft Exchange Health service periodically queries each monitor for its state. If it doesn't get a response to the query, the monitor state becomes Unavailable.
 
-  - **Repairing**   An administrator sets the Repairing state to indicate to the system that corrective action is in process by a human, which allows the system and humans to differentiate between other failures that may occur at the same time corrective action is being taken (such as a database copy reseed operation).
+  - **Repairing**: An administrator sets the Repairing state to indicate to the system that corrective action is in process by a human, which allows the system and humans to differentiate between other failures that may occur at the same time corrective action is being taken (such as a database copy reseed operation).
 
 Every monitor has a *SampleMask* property in its definition. As the monitor executes, it looks for events in the ProbeResult channel that have a *ResultName* that matches the monitor's *SampleMask*. These events could be from recurrent probes, notifications, or checks. If the monitor's thresholds are achieved, it becomes Unhealthy. From the monitor's perspective, all three probe types are the same as they each log to the ProbeResult channel.
 

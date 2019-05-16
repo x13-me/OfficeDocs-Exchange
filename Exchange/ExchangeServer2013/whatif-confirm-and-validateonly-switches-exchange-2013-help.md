@@ -93,17 +93,17 @@ When you run this example command, the following confirmation prompt is returned
 
 The confirmation prompt gives you the following choices:
 
-  - **\[Y\] Yes**   Type **Y** to instruct the command to continue the operation. The next operation will present another confirmation prompt. `[Y] Yes` is the default choice.
+  - **\[Y\] Yes**: Type **Y** to instruct the command to continue the operation. The next operation will present another confirmation prompt. `[Y] Yes` is the default choice.
 
-  - **\[A\] Yes to All**   Type **A** to instruct the command to continue the operation and all subsequent operations. You will not receive additional confirmation prompts for the duration of this command.
+  - **\[A\] Yes to All**: Type **A** to instruct the command to continue the operation and all subsequent operations. You will not receive additional confirmation prompts for the duration of this command.
 
-  - **\[N\] No**   Type **N** to instruct the command to skip this operation and continue with the next operation. The next operation will present another confirmation prompt.
+  - **\[N\] No**: Type **N** to instruct the command to skip this operation and continue with the next operation. The next operation will present another confirmation prompt.
 
-  - **\[L\] No to All**   Type **L** to instruct the command to skip this operation and all subsequent operations.
+  - **\[L\] No to All**: Type **L** to instruct the command to skip this operation and all subsequent operations.
 
-  - **\[S\] Suspend**   Type **S** to pause the current pipeline and return to the command line. Type **Exit** to resume the pipeline.
+  - **\[S\] Suspend**: Type **S** to pause the current pipeline and return to the command line. Type **Exit** to resume the pipeline.
 
-  - **\[?\] Help**   Type **?** to display confirmation prompt Help on the command line.
+  - **\[?\] Help**: Type **?** to display confirmation prompt Help on the command line.
 
 If you want to override the default behavior of the Shell and suppress the confirmation prompt for cmdlets on which it is automatically applied, you can include the *Confirm* switch with a value of `$False`, as in the following example:
 

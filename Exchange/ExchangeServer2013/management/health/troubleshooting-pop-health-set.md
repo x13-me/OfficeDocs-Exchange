@@ -254,7 +254,7 @@ This monitor alert is typically issued on CA or Mailbox servers.
         
             Set-MailboxServer -Identity <ServerName> -DatabaseCopyActivationDisabledAndMoveNow $true
         
-        **Note**   In this and all subsequent code examples, replace *server1.contoso.com* with the actual server name.
+        **Note**: In this and all subsequent code examples, replace *server1.contoso.com* with the actual server name.
     
     2.  Verify that all databases have been moved off the server that's reporting the issue. To do this, run the following command:
         

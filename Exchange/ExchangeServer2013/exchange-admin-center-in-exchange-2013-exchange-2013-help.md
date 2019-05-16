@@ -39,9 +39,9 @@ Supported browsers
 
 Because the EAC is now a web-based management console, you'll need to use the ECP virtual directory URL to access the console from your web browser. In most cases the EAC's URL will look similar to the following:
 
-  - **Internal URL: `https://<CASServerName>/ecp`**   The internal URL is used to access the EAC from within your organization's firewall.
+  - **Internal URL: `https://<CASServerName>/ecp`**: The internal URL is used to access the EAC from within your organization's firewall.
 
-  - **External URL: `https://mail.contoso.com/ecp`**   The external URL is used to access the EAC from outside of your organization's firewall. Some organizations may want to turn off external access to the EAC. For details, see [Turn off access to the Exchange admin center](turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md).
+  - **External URL: `https://mail.contoso.com/ecp`**: The external URL is used to access the EAC from outside of your organization's firewall. Some organizations may want to turn off external access to the EAC. For details, see [Turn off access to the Exchange admin center](turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md).
 
 To locate the internal or external URL for the EAC, you can use the [Get-EcpVirtualDirectory](https://technet.microsoft.com/en-us/library/dd351058\(v=exchg.150\)) cmdlet. For details, see [Find the internal and external URLs for the Exchange admin center](find-the-internal-and-external-urls-for-the-exchange-admin-center-exchange-2013-help.md).
 
@@ -171,9 +171,9 @@ The EAC includes a notification viewer that displays the status of long-running 
 
 The *Me tile* allows you to sign out of the EAC and sign in as a different user. From the Help ![Help Icon](images/JJ150562.a32eac4e-345d-4236-a284-204390aff4ee(EXCHG.150).gif "Help Icon") drop-down menu, you can perform the following actions:
 
-  - **Help**   Click ![Help Icon](images/JJ150562.a32eac4e-345d-4236-a284-204390aff4ee(EXCHG.150).gif "Help Icon") to view the online help content.
+  - **Help**: Click ![Help Icon](images/JJ150562.a32eac4e-345d-4236-a284-204390aff4ee(EXCHG.150).gif "Help Icon") to view the online help content.
 
-  - **Disable Help bubble**   The Help bubble displays contextual help for fields when you create or edit and object. You can turn off the Help bubble help or turn it on if it has been disabled.
+  - **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit and object. You can turn off the Help bubble help or turn it on if it has been disabled.
 
   - **Copyright and Privacy** Click the privacy or copyright link to read the copyright and privacy information for Exchange 2013.
 

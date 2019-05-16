@@ -25,9 +25,9 @@ Edge Transport server configuration information is stored in Active Directory Li
 
 Two Shell scripts are used to perform cloned configuration tasks:
 
-  - **ExportEdgeConfig.ps1**   Exports all user-configured settings and data from an Edge Transport server and stores that data in an XML file.
+  - **ExportEdgeConfig.ps1**: Exports all user-configured settings and data from an Edge Transport server and stores that data in an XML file.
 
-  - **ImportEdgeConfig.ps1**   During the validate configuration step, the ImportEdgeConfig.ps1 script checks the exported XML file to see whether the server-specific export settings are valid for the target server. If settings need to be modified, the script writes the invalid settings to an answer file you can modify to specify target server information, which is then used during the import configuration step. During the import configuration step, the script imports all user-configured settings and data stored in the intermediate XML file created by the ExportEdgeConfig.ps1 script.
+  - **ImportEdgeConfig.ps1**: During the validate configuration step, the ImportEdgeConfig.ps1 script checks the exported XML file to see whether the server-specific export settings are valid for the target server. If settings need to be modified, the script writes the invalid settings to an answer file you can modify to specify target server information, which is then used during the import configuration step. During the import configuration step, the script imports all user-configured settings and data stored in the intermediate XML file created by the ExportEdgeConfig.ps1 script.
 
 Both these scripts are located in the %ExchangeInstallPath%Scripts folder.
 

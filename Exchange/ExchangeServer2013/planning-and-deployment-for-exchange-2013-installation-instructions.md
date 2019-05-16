@@ -198,9 +198,9 @@ Exchange 2013 is available in two server editions: Standard Edition and Enterpri
 
 You have the following options for Exchange 2013 Setup:
 
-  - **Exchange Setup UI**   Running Setup.exe without any command-line switches provides an interactive experience where you are guided by the Exchange 2013 Setup wizard.
+  - **Exchange Setup UI**: Running Setup.exe without any command-line switches provides an interactive experience where you are guided by the Exchange 2013 Setup wizard.
 
-  - **Exchange Unattended Setup**   Running Setup.exe with command-line switches enables you to install Exchange from an interactive command line or through a script.
+  - **Exchange Unattended Setup**: Running Setup.exe with command-line switches enables you to install Exchange from an interactive command line or through a script.
 
 Setup.exe is available from the Exchange 2013 DVD or the downloaded source files.
 
@@ -208,11 +208,11 @@ Setup.exe is available from the Exchange 2013 DVD or the downloaded source files
 
 Setup for Exchange 2013 includes several installation modes:
 
-  - **Install**   Use this mode when you're installing a new server role or adding a server role to an existing installation (maintenance mode). You can use this mode from both the Exchange Setup wizard and the unattended install.
+  - **Install**: Use this mode when you're installing a new server role or adding a server role to an existing installation (maintenance mode). You can use this mode from both the Exchange Setup wizard and the unattended install.
 
-  - **Uninstall**   Use this mode when you're removing the Exchange installation from a computer. You can use this mode from both the Exchange Setup wizard and the unattended install.
+  - **Uninstall**: Use this mode when you're removing the Exchange installation from a computer. You can use this mode from both the Exchange Setup wizard and the unattended install.
 
-  - **Upgrade**   Select this mode used when you have an existing installation of Exchange and you're installing a cumulative update or service pack. You can use this mode from both the Exchange Setup wizard and the unattended install.
+  - **Upgrade**: Select this mode used when you have an existing installation of Exchange and you're installing a cumulative update or service pack. You can use this mode from both the Exchange Setup wizard and the unattended install.
     
 
     > [!NOTE]
@@ -220,7 +220,7 @@ Setup for Exchange 2013 includes several installation modes:
 
 
 
-  - **RecoverServer**   Use this mode when there has been a catastrophic failure of a server, and you need to recover data. You must install a server using the same fully qualified domain name (FQDN) as the failed server, and then run Setup with the **/m:RecoverServer** switch. Don't specify the roles to restore. Setup detects the Exchange Server object in Active Directory and installs the corresponding files and configuration automatically. After you recover the server, you can restore databases and reconfigure any additional settings. To run in **RecoverServer** mode, you can't have Exchange installed on the server. The Exchange server object must exist in Active Directory. You can only use this mode during an unattended installation.
+  - **RecoverServer**: Use this mode when there has been a catastrophic failure of a server, and you need to recover data. You must install a server using the same fully qualified domain name (FQDN) as the failed server, and then run Setup with the **/m:RecoverServer** switch. Don't specify the roles to restore. Setup detects the Exchange Server object in Active Directory and installs the corresponding files and configuration automatically. After you recover the server, you can restore databases and reconfigure any additional settings. To run in **RecoverServer** mode, you can't have Exchange installed on the server. The Exchange server object must exist in Active Directory. You can only use this mode during an unattended installation.
 
 
 > [!NOTE]
