@@ -309,17 +309,17 @@ The following Outlook Web App features are currently unavailable in Exchange 201
 
   - **Search scope** The ability for Outlook Web App users to search their primary mailbox and their online archive simultaneously is no longer available in Exchange 2013. To search an online archive, users must first navigate to the archive and then conduct their search.
 
-  - **Distribution list moderation**   The ability to moderate distribution lists from Microsoft Outlook Web App isn't currently available in Exchange 2013.
+  - **Distribution list moderation**: The ability to moderate distribution lists from Microsoft Outlook Web App isn't currently available in Exchange 2013.
 
-  - **Custom date on message flags**   The ability to set a custom date on a message flag isn't available in Outlook Web App 2013. You can use Outlook to set custom dates.
+  - **Custom date on message flags**: The ability to set a custom date on a message flag isn't available in Outlook Web App 2013. You can use Outlook to set custom dates.
 
-  - **Reading pane at the bottom of the window**   The option to display the reading pane at the bottom of the Outlook Web App window isn't currently available in Exchange 2013.
+  - **Reading pane at the bottom of the window**: The option to display the reading pane at the bottom of the Outlook Web App window isn't currently available in Exchange 2013.
 
-  - **Reply to embedded email messages**   The ability for users to reply to email messages sent as attachments isn't currently available in Exchange 2013.
+  - **Reply to embedded email messages**: The ability for users to reply to email messages sent as attachments isn't currently available in Exchange 2013.
 
-  - **Search folders**   The ability for users to use Search folders isn't currently available in Exchange 2013.
+  - **Search folders**: The ability for users to use Search folders isn't currently available in Exchange 2013.
 
-  - **Access to legacy public folders**   The ability for users to access public folders located on servers running previous versions of Exchange isn't currently available in Exchange 2013.
+  - **Access to legacy public folders**: The ability for users to access public folders located on servers running previous versions of Exchange isn't currently available in Exchange 2013.
 
-  - **Show Recovery option**   The ability for users to work with recovery passwords for their mobile devices with Outlook Web App isn't currently available in Exchange 2013.
+  - **Show Recovery option**: The ability for users to work with recovery passwords for their mobile devices with Outlook Web App isn't currently available in Exchange 2013.
 

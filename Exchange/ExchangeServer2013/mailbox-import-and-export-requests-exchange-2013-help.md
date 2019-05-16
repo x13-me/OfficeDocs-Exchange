@@ -37,11 +37,11 @@ Exporting mailbox data
 
 You may want to import or export mailbox data for the following reasons:
 
-  - **Satisfy compliance requirements**   You can export mailbox content to a .pst file for legal discovery purposes. After the export is complete, you can import the content to a mailbox used specifically for compliance purposes.
+  - **Satisfy compliance requirements**: You can export mailbox content to a .pst file for legal discovery purposes. After the export is complete, you can import the content to a mailbox used specifically for compliance purposes.
 
-  - **Create a point-in-time snapshot of a mailbox**   By creating a snapshot of specific mailboxes, you avoid having to retain an entire backup set for a mailbox database.
+  - **Create a point-in-time snapshot of a mailbox**: By creating a snapshot of specific mailboxes, you avoid having to retain an entire backup set for a mailbox database.
 
-  - **Move a user's .pst file into his or her mailbox or personal archive**   Microsoft Outlook users can save their email locally as .pst files. Using the [New-MailboxImportRequest](https://technet.microsoft.com/en-us/library/ff607310\(v=exchg.150\)) cmdlet, you can move data from a user's .pst file to his or her mailbox or personal archive. This is an easy method for transferring email from a user's local computer to Exchange servers.
+  - **Move a user's .pst file into his or her mailbox or personal archive**: Microsoft Outlook users can save their email locally as .pst files. Using the [New-MailboxImportRequest](https://technet.microsoft.com/en-us/library/ff607310\(v=exchg.150\)) cmdlet, you can move data from a user's .pst file to his or her mailbox or personal archive. This is an easy method for transferring email from a user's local computer to Exchange servers.
 
 ## Advantages to using import and export requests
 

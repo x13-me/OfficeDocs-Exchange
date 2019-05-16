@@ -139,11 +139,11 @@ An IPv6 address is 128-bits long. The address is described by using colon-hexade
 
 You can express an IPv6 address by using the following methods:
 
-  - **Suppress leading zeros**   You can omit the leading zeros in any of the eight 4-digit hexadecimal numbers in an IPv6 address.
+  - **Suppress leading zeros**: You can omit the leading zeros in any of the eight 4-digit hexadecimal numbers in an IPv6 address.
 
-  - **Double-colon compression**   You can use two colons (::) to represent contiguous 16-bit hexadecimal digits that contain all zeros. These all-zero digits may exist at the beginning, middle, or end of the IPv6 address. You can only use double-colon compression one time in an IPv6 address.
+  - **Double-colon compression**: You can use two colons (::) to represent contiguous 16-bit hexadecimal digits that contain all zeros. These all-zero digits may exist at the beginning, middle, or end of the IPv6 address. You can only use double-colon compression one time in an IPv6 address.
 
-  - **Trailing dotted-decimal notation**   You may express the last 32 bits at the end of an IPv6 address in dotted-decimal notation by separating the 8-bit digits with a period (.). Trailing dotted-decimal notation is frequently used with IPv4-compatible addresses.
+  - **Trailing dotted-decimal notation**: You may express the last 32 bits at the end of an IPv6 address in dotted-decimal notation by separating the 8-bit digits with a period (.). Trailing dotted-decimal notation is frequently used with IPv4-compatible addresses.
 
 The following table provides examples of the IPv6 address notation and the equivalent IPv6 address syntax.
 
@@ -183,19 +183,19 @@ The following table provides examples of the IPv6 address notation and the equiv
 
 IPv6 addresses are categorized into the following types:
 
-  - **Unicast address**   A packet is delivered to one interface.
+  - **Unicast address**: A packet is delivered to one interface.
 
-  - **Multicast address**   A packet is delivered to multiple interfaces.
+  - **Multicast address**: A packet is delivered to multiple interfaces.
 
-  - **Anycast address**   A packet is delivered to the nearest of multiple interfaces. The distance between interfaces is defined by the routing cost.
+  - **Anycast address**: A packet is delivered to the nearest of multiple interfaces. The distance between interfaces is defined by the routing cost.
 
 IPv6 unicast addresses have the following possible scopes:
 
-  - **Link local**   The scope of the IPv6 address is the local subnet. IPv6 link local addresses are comparable to IPv4 link local addresses used in Automatic Private IP Addressing (APIPA).
+  - **Link local**: The scope of the IPv6 address is the local subnet. IPv6 link local addresses are comparable to IPv4 link local addresses used in Automatic Private IP Addressing (APIPA).
 
-  - **Site local**   The scope of the IPv6 address is the local organization. Site local addresses were deprecated by RFC 3879 and replaced by unique local addresses as defined in RFC 4193. IPv6 site local addresses and IPv6 unique local addresses are comparable to IPv4 private IP addresses.
+  - **Site local**: The scope of the IPv6 address is the local organization. Site local addresses were deprecated by RFC 3879 and replaced by unique local addresses as defined in RFC 4193. IPv6 site local addresses and IPv6 unique local addresses are comparable to IPv4 private IP addresses.
 
-  - **Global**   The scope of the IPv6 address is the whole world. IPv6 global addresses are comparable to IPv4 public IP addresses.
+  - **Global**: The scope of the IPv6 address is the whole world. IPv6 global addresses are comparable to IPv4 public IP addresses.
 
 The following table provides a comparison of IPv4 elements and IPv6 elements.
 

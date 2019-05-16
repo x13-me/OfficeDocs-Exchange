@@ -131,13 +131,13 @@ A network adapter intended for use by a MAPI network should be configured as des
 
 |**Networking features**|**Settings**|
 |:-----|:-----|
-|Client for Microsoft Networks  <br/> |Enabled  <br/> |
-|QoS Packet Scheduler  <br/> |Optionally enabled  <br/> |
-|File and Printer Sharing for Microsoft Networks  <br/> |Enabled  <br/> |
-|Internet Protocol version 6 (TCP/IP v6)  <br/> |Enabled  <br/> |
-|Internet Protocol version 4 (TCP/IP v4)  <br/> |Enabled  <br/> |
-|Link-Layer Topology Discovery Mapper I/O Driver  <br/> |Enabled  <br/> |
-|Link-Layer Topology Discovery Responder  <br/> |Enabled  <br/> |
+|Client for Microsoft Networks|Enabled|
+|QoS Packet Scheduler|Optionally enabled|
+|File and Printer Sharing for Microsoft Networks|Enabled|
+|Internet Protocol version 6 (TCP/IP v6)|Enabled|
+|Internet Protocol version 4 (TCP/IP v4)|Enabled|
+|Link-Layer Topology Discovery Mapper I/O Driver|Enabled|
+|Link-Layer Topology Discovery Responder|Enabled|
 
 The TCP/IP v4 properties for a MAPI network adapter are configured as follows:
 
@@ -155,13 +155,13 @@ A network adapter intended for use by a Replication network should be configured
 
 |**Networking features**|**Settings**|
 |:-----|:-----|
-|Client for Microsoft Networks  <br/> |Disabled  <br/> |
-|QoS Packet Scheduler  <br/> |Optionally enabled  <br/> |
-|File and Printer Sharing for Microsoft Networks  <br/> |Disabled  <br/> |
-|Internet Protocol version 6 (TCP/IP v6)  <br/> |Enabled  <br/> |
-|Internet Protocol version 4 (TCP/IP v4)  <br/> |Enabled  <br/> |
-|Link-Layer Topology Discovery Mapper I/O Driver  <br/> |Enabled  <br/> |
-|Link-Layer Topology Discovery Responder  <br/> |Enabled  <br/> |
+|Client for Microsoft Networks|Disabled|
+|QoS Packet Scheduler|Optionally enabled|
+|File and Printer Sharing for Microsoft Networks|Disabled|
+|Internet Protocol version 6 (TCP/IP v6)|Enabled|
+|Internet Protocol version 4 (TCP/IP v4)|Enabled|
+|Link-Layer Topology Discovery Mapper I/O Driver|Enabled|
+|Link-Layer Topology Discovery Responder|Enabled|
 
 The TCP/IP v4 properties for a Replication network adapter are configured as follows:
 

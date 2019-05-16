@@ -181,9 +181,9 @@ For detailed syntax and parameter information, see [Set-ManagementRoleAssignment
 
 To change exclusive recipient or exclusive configuration scopes, you can use the procedures provided in the "Use the Shell to change a recipient filter scope on a role assignment," "Use the Shell to change the server filter or list-based configuration scope on a role assignment," and "Use the Shell to change the database filter or list-based configuration scope on a role assignment" sections earlier in this topic. The only difference is that when you change an exclusive scope, you must specify the following exclusive parameters depending on whether you're changing an exclusive recipient scope or an exclusive configuration scope:
 
-  - **Exclusive recipient scopes**   Use the *ExclusiveRecipientWriteScope* parameter instead of the *CustomRecipientWriteScope* parameter.
+  - **Exclusive recipient scopes**: Use the *ExclusiveRecipientWriteScope* parameter instead of the *CustomRecipientWriteScope* parameter.
 
-  - **Exclusive server and database configuration scopes**   Use the *ExclusiveConfigWriteScope* parameter instead of the *CustomConfigWriteScope* parameter.
+  - **Exclusive server and database configuration scopes**: Use the *ExclusiveConfigWriteScope* parameter instead of the *CustomConfigWriteScope* parameter.
 
 As with regular recipient and configuration scopes, if you add or change an exclusive scope, any previously defined recipient or configuration scopes are replaced.
 

@@ -73,9 +73,9 @@ You can also specify the server that Remote PowerShell uses to perform the speci
 
 4.  In the **Queue Viewer - \<server name\> Properties** dialog box, select one of the following options:
     
-      - **Connect to the automatically selected server**   Select this option to automatically connect to the server where you're managing queues to run Remote PowerShell.
+      - **Connect to the automatically selected server**: Select this option to automatically connect to the server where you're managing queues to run Remote PowerShell.
     
-      - **Specify a server to connect to**   Select this option to specify a server to run Remote PowerShell. If you select this option, click **Browse** to open the **Select Exchange Server** dialog box. Select the server where you want to run Remote PowerShell, and then click **OK**.
+      - **Specify a server to connect to**: Select this option to specify a server to run Remote PowerShell. If you select this option, click **Browse** to open the **Select Exchange Server** dialog box. Select the server where you want to run Remote PowerShell, and then click **OK**.
 
 ## How do you know this worked?
 

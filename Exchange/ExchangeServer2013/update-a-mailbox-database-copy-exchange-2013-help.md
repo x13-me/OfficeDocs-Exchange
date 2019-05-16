@@ -33,13 +33,13 @@ Updating, also known as *seeding*, is the process in which a copy of a mailbox d
 
 You can perform seeding by using the following methods:
 
-  - **Automatic seeding**   An automatic seed produces a passive copy of the active database on the target Mailbox server. Automatic seeding occurs during the creation of a database.
+  - **Automatic seeding**: An automatic seed produces a passive copy of the active database on the target Mailbox server. Automatic seeding occurs during the creation of a database.
 
-  - **Seeding using the Update-MailboxDatabaseCopy cmdlet**   You can use the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd335201\(v=exchg.150\)) cmdlet in the Shell to seed a database copy at any time.
+  - **Seeding using the Update-MailboxDatabaseCopy cmdlet**: You can use the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd335201\(v=exchg.150\)) cmdlet in the Shell to seed a database copy at any time.
 
-  - **Seeding using the Update Mailbox Database Copy wizard**   You can use the Update Mailbox Database Copy wizard in the EAC to seed a database copy at any time.
+  - **Seeding using the Update Mailbox Database Copy wizard**: You can use the Update Mailbox Database Copy wizard in the EAC to seed a database copy at any time.
 
-  - **Manually copying the offline database**   You can dismount the active copy of the database and copy the database file to the same location on another Mailbox server in the same DAG. If you use this method, there will be an interruption in service because the process requires you to dismount the database.
+  - **Manually copying the offline database**: You can dismount the active copy of the database and copy the database file to the same location on another Mailbox server in the same DAG. If you use this method, there will be an interruption in service because the process requires you to dismount the database.
 
 Updating a database copy can take a long time, especially if the database being copied is large, or if there is high network latency or low network bandwidth. After the seeding process has started, don't close the EAC or the Shell until the process has completed. If you do, the seeding operation will be terminated.
 

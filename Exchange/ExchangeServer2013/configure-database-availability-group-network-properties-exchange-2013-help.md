@@ -47,11 +47,11 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
 2.  Select the DAG you want to configure, and in the Details pane, under the DAG network you want to configure, choose:
     
-      - **Disable Replication** or **Enable Replication**   Configures the replication settings for the DAG network.
+      - **Disable Replication** or **Enable Replication**: Configures the replication settings for the DAG network.
     
-      - **Remove**   Removes a DAG network. Before you can remove a DAG network, you must first remove all associated subnets from the DAG network.
+      - **Remove**: Removes a DAG network. Before you can remove a DAG network, you must first remove all associated subnets from the DAG network.
     
-      - **View details**   Configures DAG network properties, such as the name, description, and associated subnets for the DAG network. You can also view the network interfaces associated with those subnets, and enable or disable replication for the DAG network.
+      - **View details**: Configures DAG network properties, such as the name, description, and associated subnets for the DAG network. You can also view the network interfaces associated with those subnets, and enable or disable replication for the DAG network.
 
 ## Use the Shell to configure database availability group network properties
 

@@ -25,15 +25,15 @@ In some cases, the ACL isn't applied on the usual property, **ntSecurityDescript
 
 The columns of each permissions table include the following information:
 
-  - **Account**   The security principal granted or denied the permissions.
+  - **Account**: The security principal granted or denied the permissions.
 
-  - **ACE type**   Access control entry (ACE) type
+  - **ACE type**: Access control entry (ACE) type
     
-      - **Allow ACE**   An allow ACE allows the user or group associated with the ACE to access an item.
+      - **Allow ACE**: An allow ACE allows the user or group associated with the ACE to access an item.
     
-      - **Deny ACE**   A deny ACE prevents the user or group associated with the ACE from accessing an item.
+      - **Deny ACE**: A deny ACE prevents the user or group associated with the ACE from accessing an item.
 
-  - **Inheritance**   The type of inheritance used for child objects.
+  - **Inheritance**: The type of inheritance used for child objects.
     
       - **All** indicates that the permissions apply to the object and all sub-objects.
     
@@ -41,11 +41,11 @@ The columns of each permissions table include the following information:
     
       - **None** indicates those permissions only apply the object.
 
-  - **Permissions**   The permissions granted to the account.
+  - **Permissions**: The permissions granted to the account.
 
-  - **On Property/Applies To**   In some cases, permissions apply only to a given property, property set, or object class. These limited permissions are specified here.
+  - **On Property/Applies To**: In some cases, permissions apply only to a given property, property set, or object class. These limited permissions are specified here.
 
-  - **Comments**   When applicable, this column explains why the permissions are required or provides other information about the permissions.
+  - **Comments**: When applicable, this column explains why the permissions are required or provides other information about the permissions.
 
 The permissions are generally listed in the table by the names that are used on the Active Directory Service Interfaces (ADSI) Edit (AdsiEdit.msc) **Security** property page in the **Advanced** view on the **View/Edit** tab. The ADSI Edit **Security** property page lists a much more condensed view of the permissions. The LDP tool (Ldp.exe) displays the access mask directly as a numeric value. The setup code refers to the permissions by predefined constants.
 

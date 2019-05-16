@@ -438,7 +438,7 @@ When you use the EAC to change the scope on a role group, you're actually changi
     
       - A write scope from the drop-down box, where you can select either the default write scope or a custom write scope.
     
-      - **Organizational unit**   Select this option and provide an organizational unit (OU) if you want to scope this role group to an OU.
+      - **Organizational unit**: Select this option and provide an organizational unit (OU) if you want to scope this role group to an OU.
 
 4.  Click **Save** to save the changes to the role group.
 

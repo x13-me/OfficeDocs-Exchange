@@ -241,7 +241,7 @@ Some messages, such as encrypted messages, prevent Exchange from modifying the c
 
 The following list describes each fallback action:
 
-  - **Wrap**   If the disclaimer can't be inserted into the original message, Exchange encloses, or "wraps," the original message in a new message envelope. Then the disclaimer is inserted into the new message. If the original message can't be wrapped in a new message envelope, the original message is not delivered. The sender of the message receives a non-delivery report (NDR) that explains why the message was not delivered.
+  - **Wrap**: If the disclaimer can't be inserted into the original message, Exchange encloses, or "wraps," the original message in a new message envelope. Then the disclaimer is inserted into the new message. If the original message can't be wrapped in a new message envelope, the original message is not delivered. The sender of the message receives a non-delivery report (NDR) that explains why the message was not delivered.
     
 
     > [!IMPORTANT]
@@ -249,9 +249,9 @@ The following list describes each fallback action:
 
 
 
-  - **Reject**   If the disclaimer can't be inserted into the original message, Exchange doesn't deliver the message. The sender of the message receives an NDR that explains why the message wasn't delivered.
+  - **Reject**: If the disclaimer can't be inserted into the original message, Exchange doesn't deliver the message. The sender of the message receives an NDR that explains why the message wasn't delivered.
 
-  - **Ignore**   If the disclaimer can't be inserted into the original message, Exchange delivers the original message unmodified. No disclaimer is added.
+  - **Ignore**: If the disclaimer can't be inserted into the original message, Exchange delivers the original message unmodified. No disclaimer is added.
 
 ## For more information
 

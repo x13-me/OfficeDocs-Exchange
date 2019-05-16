@@ -155,11 +155,11 @@ If you no longer require certain types of mailbox actions to be audited, you sho
 
 You can use the following methods to search mailbox audit log entries:
 
-  - **Synchronously search a single mailbox**   You can use the [Search-MailboxAuditLog](https://technet.microsoft.com/en-us/library/ff522360\(v=exchg.150\)) cmdlet to synchronously search mailbox audit log entries for a single mailbox. The cmdlet displays search results in the Exchange Management Shell window. For details, see [Search the mailbox audit log for a mailbox](search-the-mailbox-audit-log-for-a-mailbox-exchange-2013-help.md).
+  - **Synchronously search a single mailbox**: You can use the [Search-MailboxAuditLog](https://technet.microsoft.com/en-us/library/ff522360\(v=exchg.150\)) cmdlet to synchronously search mailbox audit log entries for a single mailbox. The cmdlet displays search results in the Exchange Management Shell window. For details, see [Search the mailbox audit log for a mailbox](search-the-mailbox-audit-log-for-a-mailbox-exchange-2013-help.md).
 
-  - **Asynchronously search one or more mailboxes**   You can create a mailbox audit log search to asynchronously search mailbox audit logs for one or more mailboxes, and then have the search results sent to a specified email address. The search results are sent as an XML attachment. To create the search, use the [New-MailboxAuditLogSearch](https://technet.microsoft.com/en-us/library/ff522362\(v=exchg.150\)) cmdlet. For details, see [Create a mailbox audit log search](create-a-mailbox-audit-log-search-exchange-2013-help.md).
+  - **Asynchronously search one or more mailboxes**: You can create a mailbox audit log search to asynchronously search mailbox audit logs for one or more mailboxes, and then have the search results sent to a specified email address. The search results are sent as an XML attachment. To create the search, use the [New-MailboxAuditLogSearch](https://technet.microsoft.com/en-us/library/ff522362\(v=exchg.150\)) cmdlet. For details, see [Create a mailbox audit log search](create-a-mailbox-audit-log-search-exchange-2013-help.md).
 
-  - **Use auditing reports in the Exchange Admin Center (EAC)**   You can use the **Auditing** tab in the EAC to run a non-owner mailbox access report or export entries from the mailbox audit log. For details, see:
+  - **Use auditing reports in the Exchange Admin Center (EAC)**: You can use the **Auditing** tab in the EAC to run a non-owner mailbox access report or export entries from the mailbox audit log. For details, see:
     
       - [Run a non-owner mailbox access report](https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
     
@@ -336,7 +336,7 @@ The following table describes the fields logged in a mailbox audit log entry.
 
 ## More information
 
-  - **Administrator access to mailboxes**   Mailboxes are considered to be accessed by an administrator only in the following scenarios:
+  - **Administrator access to mailboxes**: Mailboxes are considered to be accessed by an administrator only in the following scenarios:
     
       - [In-Place eDiscovery](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) is used to search a mailbox.
     
@@ -344,9 +344,9 @@ The following table describes the fields logged in a mailbox audit log entry.
     
       - [Microsoft Exchange Server MAPI Editor](https://go.microsoft.com/fwlink/p/?linkid=204086) is used to access the mailbox.
 
-  - **Bypassing mailbox auditing logging**   Mailbox access by authorized automated processes such as accounts used by third-party tools or accounts used for lawful monitoring can create a large number of mailbox audit log entries and may not be of interest to your organization. You can configure such accounts to bypass mailbox audit logging. For details, see [Bypass a user account from mailbox audit logging](bypass-a-user-account-from-mailbox-audit-logging-exchange-2013-help.md).
+  - **Bypassing mailbox auditing logging**: Mailbox access by authorized automated processes such as accounts used by third-party tools or accounts used for lawful monitoring can create a large number of mailbox audit log entries and may not be of interest to your organization. You can configure such accounts to bypass mailbox audit logging. For details, see [Bypass a user account from mailbox audit logging](bypass-a-user-account-from-mailbox-audit-logging-exchange-2013-help.md).
 
-  - **Logging mailbox owner actions**   For mailboxes such as the Discovery Search Mailbox, which may contain more sensitive information, consider enabling mailbox audit logging for mailbox owner actions such as message deletion.
+  - **Logging mailbox owner actions**: For mailboxes such as the Discovery Search Mailbox, which may contain more sensitive information, consider enabling mailbox audit logging for mailbox owner actions such as message deletion.
 
 Return to top
 

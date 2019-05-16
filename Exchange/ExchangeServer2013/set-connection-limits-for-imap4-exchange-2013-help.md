@@ -53,13 +53,13 @@ For additional information related to IMAP4, see [POP3 and IMAP4 in Exchange Ser
 
 5.  Under **Connection limits**, use the following settings:
     
-      - **Maximum connections**   Specifies the total number of connections the specified server will accept. This includes authenticated and unauthenticated connections. The default value is 2,147,483,647. The possible values are from 1 through 2,147,483,647.
+      - **Maximum connections**: Specifies the total number of connections the specified server will accept. This includes authenticated and unauthenticated connections. The default value is 2,147,483,647. The possible values are from 1 through 2,147,483,647.
     
-      - **Maximum connections from a single IP address**   Specifies the number of connections that the server will accept from a single IP address. The default value is 2,147,483,647. The possible values are from 1 through 2,147,483,647.
+      - **Maximum connections from a single IP address**: Specifies the number of connections that the server will accept from a single IP address. The default value is 2,147,483,647. The possible values are from 1 through 2,147,483,647.
     
-      - **Maximum connections from a single user**   Specifies the maximum number of connections that the server will accept from a particular user. The default value is 16. The possible values are from 1 through 2,147,483,647.
+      - **Maximum connections from a single user**: Specifies the maximum number of connections that the server will accept from a particular user. The default value is 16. The possible values are from 1 through 2,147,483,647.
     
-      - **Maximum command size (bytes)**   Specifies the maximum size of a single command. The default size is 10,240. The possible values are from 1,024 through 16,384.
+      - **Maximum command size (bytes)**: Specifies the maximum size of a single command. The default size is 10,240. The possible values are from 1,024 through 16,384.
 
 6.  Click **Apply**, and then click **OK** to save your changes.
 

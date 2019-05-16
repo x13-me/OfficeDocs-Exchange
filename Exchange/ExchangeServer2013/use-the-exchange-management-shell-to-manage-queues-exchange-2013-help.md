@@ -109,19 +109,19 @@ The *\<Server\>* placeholder is the hostname or FQDN of the Exchange server, for
 
 The \<*Queue*\> placeholder accepts one of the following values:
 
-  - **Persistent queue name**   Persistent queues have unique, consistent names on all Mailbox or Edge Transport servers. The persistent queue names are:
+  - **Persistent queue name**: Persistent queues have unique, consistent names on all Mailbox or Edge Transport servers. The persistent queue names are:
     
-      - **Submission**   This queue contains messages waiting to be processed by the categorizer.
+      - **Submission**: This queue contains messages waiting to be processed by the categorizer.
     
-      - **Unreachable**   This queue contains messages that can't be routed. This queue doesn't exist until messages are placed in it.
+      - **Unreachable**: This queue contains messages that can't be routed. This queue doesn't exist until messages are placed in it.
     
-      - **Poison**   This queue contains messages that are determined to be harmful to the Exchange server. This queue doesn't exist until messages are placed in it.
+      - **Poison**: This queue contains messages that are determined to be harmful to the Exchange server. This queue doesn't exist until messages are placed in it.
 
-  - **Delivery queue name**   The name of a delivery queue is the value of the **NextHopDomain** property of the queue. For example, the queue name could be the address space of a Send connector, the name of an Active Directory site, or the name of a DAG. For more information, see the "NextHopSolutionKey" section in the [Queues](queues-exchange-2013-help.md) topic.
+  - **Delivery queue name**: The name of a delivery queue is the value of the **NextHopDomain** property of the queue. For example, the queue name could be the address space of a Send connector, the name of an Active Directory site, or the name of a DAG. For more information, see the "NextHopSolutionKey" section in the [Queues](queues-exchange-2013-help.md) topic.
 
-  - **Queue integer**   Delivery queues and shadow queues are assigned a unique integer value in the queue database. However, you need to run the **Get-Queue** cmdlet to find the integer value for the queue in the **Identity** or **QueueIdentity** properties.
+  - **Queue integer**: Delivery queues and shadow queues are assigned a unique integer value in the queue database. However, you need to run the **Get-Queue** cmdlet to find the integer value for the queue in the **Identity** or **QueueIdentity** properties.
 
-  - **Shadow queue name**   A shadow queue uses the syntax `Shadow\`*\<QueueInteger\>*
+  - **Shadow queue name**: A shadow queue uses the syntax `Shadow\`*\<QueueInteger\>*
 
 The following table summarizes the syntax you can use with *Identity* parameter on the queue management cmdlets. In all values, *\<Server\>* is the hostname or FQDN of the server.
 

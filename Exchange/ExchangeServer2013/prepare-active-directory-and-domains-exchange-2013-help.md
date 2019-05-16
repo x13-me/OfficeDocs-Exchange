@@ -169,9 +169,9 @@ Before you prepare the domains in your Active Directory forest, keep the followi
 
   - The account you use needs permissions depending on when the domain was created.
     
-      - **Domain created before PrepareAD was run**   If the domain was created **before** you ran the *PrepareAD* command in step 2 above, then the account you use needs to be a member of the Domain Admins group in the domain you want to prepare.
+      - **Domain created before PrepareAD was run**: If the domain was created **before** you ran the *PrepareAD* command in step 2 above, then the account you use needs to be a member of the Domain Admins group in the domain you want to prepare.
     
-      - **Domain created after PrepareAD was run**   If the domain was created **after** you ran the *PrepareAD* command in step 2 above, then the account you use needs to 1) be a member of the Organization Management role group and 2) be a member of the Domain Admins group in the domain you want to prepare.
+      - **Domain created after PrepareAD was run**: If the domain was created **after** you ran the *PrepareAD* command in step 2 above, then the account you use needs to 1) be a member of the Organization Management role group and 2) be a member of the Domain Admins group in the domain you want to prepare.
 
   - Wait until Active Directory has replicated the changes made in step 2 to all of your domain controllers. If you don't, you might get an error when you try to prepare the domain.
 

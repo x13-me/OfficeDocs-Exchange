@@ -109,7 +109,7 @@ To change the primary (reply to) email address assigned to recipients and keep t
 
 3.  On the **Email Address Format** page that appears, make the following selections:
     
-      - **Select an accepted domain**   Click the drop-down list, and select the new authoritative domain.
+      - **Select an accepted domain**: Click the drop-down list, and select the new authoritative domain.
     
       - Select **Make this format the reply email address**.
     
@@ -167,23 +167,23 @@ To create additional email addresses that will be used as the primary email addr
 
 2.  On the **Email Address Policy** page, complete the following fields:
     
-    1.  **Policy name**   Enter a unique, descriptive name.
+    1.  **Policy name**: Enter a unique, descriptive name.
     
-    2.  **Email address format**   Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). On the **Email Address Format** page that appears, make the following selections:
+    2.  **Email address format**: Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). On the **Email Address Format** page that appears, make the following selections:
         
-          - **Select an accepted domain**   Click the drop-down list, and select the new authoritative domain.
+          - **Select an accepted domain**: Click the drop-down list, and select the new authoritative domain.
         
-          - **Email address format**   Select the appropriate email address format for your organization.
+          - **Email address format**: Select the appropriate email address format for your organization.
         
           - Select **Make this format the reply email address**.
         
         When you are finished, click **Save**.
 
-3.  **Run this policy in this sequence with other policies**   Typically, policies that apply to specific users should have a higher priority (indicated by a lower integer value) than other email address policies, including the default policy.
+3.  **Run this policy in this sequence with other policies**: Typically, policies that apply to specific users should have a higher priority (indicated by a lower integer value) than other email address policies, including the default policy.
 
-4.  **Specify the types of recipients this email address will apply to**   Select the recipient types to which you want the email address policy applied.
+4.  **Specify the types of recipients this email address will apply to**: Select the recipient types to which you want the email address policy applied.
 
-5.  **Create rules to further define the recipients that this email address policy applies to**   Click **Add a rule** to restrict the recipients that this policy will apply to. This creates a Boolean **And** statement. Repeat this step as many times as necessary.
+5.  **Create rules to further define the recipients that this email address policy applies to**: Click **Add a rule** to restrict the recipients that this policy will apply to. This creates a Boolean **And** statement. Repeat this step as many times as necessary.
     
 
     > [!WARNING]

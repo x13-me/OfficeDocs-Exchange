@@ -43,17 +43,17 @@ Like all transport agents, each anti-spam agent is assigned a priority value. A 
 
 Based on the default priority value of the anti-spam agent, and the SMTP event in the transport pipeline where the anti-spam agent is registered, the following list describes the agents and the default order in which they are applied to messages on a Mailbox server:
 
-1.  **Sender Filter agent**   Sender filtering compares the sender on the MAIL FROM: SMTP command to an administrator-defined list of senders or sender domains who are prohibited from sending messages to the organization to determine what action, if any, to take on an inbound message. For more information, see [Sender filtering](sender-filtering-exchange-2013-help.md).
+1.  **Sender Filter agent**: Sender filtering compares the sender on the MAIL FROM: SMTP command to an administrator-defined list of senders or sender domains who are prohibited from sending messages to the organization to determine what action, if any, to take on an inbound message. For more information, see [Sender filtering](sender-filtering-exchange-2013-help.md).
 
-2.  **Sender ID agent**   Sender ID relies on the IP address of the sending server and the Purported Responsible Address (PRA) of the sender to determine whether the sender is spoofed or not. For more information, see [Sender ID](sender-id-exchange-2013-help.md).
+2.  **Sender ID agent**: Sender ID relies on the IP address of the sending server and the Purported Responsible Address (PRA) of the sender to determine whether the sender is spoofed or not. For more information, see [Sender ID](sender-id-exchange-2013-help.md).
 
-3.  **Content Filter agent**   Content filtering assesses the contents of a message. For more information, see [Content filtering](content-filtering-exchange-2013-help.md).
+3.  **Content Filter agent**: Content filtering assesses the contents of a message. For more information, see [Content filtering](content-filtering-exchange-2013-help.md).
     
     Spam quarantine is a feature of the Content Filter agent that reduces the risk of losing legitimate messages that are incorrectly classified as spam. Spam quarantine provides a temporary storage location for messages that are identified as spam and that shouldn't be delivered to a user mailbox inside the organization. For more information, see [Spam quarantine](spam-quarantine-exchange-2013-help.md).
     
     Content filtering also acts on the safelist aggregation feature. Safelist aggregation collects data from the anti-spam safe lists that Microsoft Outlook and Outlook Web App users configure and makes this data available to the Content Filter agent. For more information, see [Safelist Aggregation](safelist-aggregation-exchange-2013-help.md).
 
-4.  **Protocol Analysis agent**   The Protocol Analysis agent is the underlying agent that implements the sender reputation functionality. Sender reputation relies on persisted data about the IP address of the sending server to determine what action, if any, to take on an inbound message. A sender reputation level (SRL) is calculated from several sender characteristics that are derived from message analysis and external tests. For more information, see [Sender reputation and the Protocol Analysis agent](sender-reputation-and-the-protocol-analysis-agent-exchange-2013-help.md).
+4.  **Protocol Analysis agent**: The Protocol Analysis agent is the underlying agent that implements the sender reputation functionality. Sender reputation relies on persisted data about the IP address of the sending server to determine what action, if any, to take on an inbound message. A sender reputation level (SRL) is calculated from several sender characteristics that are derived from message analysis and external tests. For more information, see [Sender reputation and the Protocol Analysis agent](sender-reputation-and-the-protocol-analysis-agent-exchange-2013-help.md).
 
 Return to top
 
@@ -61,9 +61,9 @@ Return to top
 
 If your organization has an Edge Transport server installed in the perimeter network, all of the anti-spam agents that are available on a Mailbox server are installed and enabled by default on the Edge Transport server. However, the following anti-spam agents are only available on an Edge Transport server:
 
-  - **Connection Filtering agent**   Connection filtering inspects the IP address of the remote server that's trying to send messages to determine what action, if any, to take on an inbound message. Connection filtering uses an IP Block list, IP Allow list, IP Block List provider services and IP Allow List provider services to determine whether the connection IP should be blocked or allowed. For more information, see [Connection Filtering on Edge Transport Servers](connection-filtering-on-edge-transport-servers-exchange-2013-help.md).
+  - **Connection Filtering agent**: Connection filtering inspects the IP address of the remote server that's trying to send messages to determine what action, if any, to take on an inbound message. Connection filtering uses an IP Block list, IP Allow list, IP Block List provider services and IP Allow List provider services to determine whether the connection IP should be blocked or allowed. For more information, see [Connection Filtering on Edge Transport Servers](connection-filtering-on-edge-transport-servers-exchange-2013-help.md).
 
-  - **Recipient Filter agent**   Recipient filtering compares the message recipients on the RCPT TO: SMTP command to an administrator-defined Recipient Block list. If a match is found, the message isn't permitted to enter the organization. The recipient filter also compares recipients on inbound messages to the local recipient directory to determine whether the message is addressed to valid recipients. When a message isn't addressed to valid recipients, the message is rejected. For more information, see [Recipient filtering on Edge Transport servers](recipient-filtering-on-edge-transport-servers-exchange-2013-help.md).
+  - **Recipient Filter agent**: Recipient filtering compares the message recipients on the RCPT TO: SMTP command to an administrator-defined Recipient Block list. If a match is found, the message isn't permitted to enter the organization. The recipient filter also compares recipients on inbound messages to the local recipient directory to determine whether the message is addressed to valid recipients. When a message isn't addressed to valid recipients, the message is rejected. For more information, see [Recipient filtering on Edge Transport servers](recipient-filtering-on-edge-transport-servers-exchange-2013-help.md).
     
 
     > [!NOTE]
@@ -71,7 +71,7 @@ If your organization has an Edge Transport server installed in the perimeter net
 
 
 
-  - **Attachment Filtering agent**   Attachment filtering blocks messages based on attachment file name, file name extension, or file MIME content type. You can configure attachment filtering to block a message and its attachment, to strip the attachment and allow the message to pass through, or to silently delete the message and its attachment. For more information, see [Attachment filtering on Edge Transport servers](attachment-filtering-on-edge-transport-servers-exchange-2013-help.md).
+  - **Attachment Filtering agent**: Attachment filtering blocks messages based on attachment file name, file name extension, or file MIME content type. You can configure attachment filtering to block a message and its attachment, to strip the attachment and allow the message to pass through, or to silently delete the message and its attachment. For more information, see [Attachment filtering on Edge Transport servers](attachment-filtering-on-edge-transport-servers-exchange-2013-help.md).
 
 Based on the default priority value of the anti-spam agent, and the SMTP event in the transport pipeline where the anti-spam agent is registered, this is the default order in which the anti-spam agents are applied on an Edge Transport server:
 

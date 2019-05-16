@@ -109,11 +109,11 @@ You can view the user objects in the Active Lightweight Directory Services (AD 
 
 There are three safelist collection attributes for each user object:
 
-  - **msExchSafeRecipientsHash**   This attribute stores the hash of the Safe Recipients List collection for the user.
+  - **msExchSafeRecipientsHash**: This attribute stores the hash of the Safe Recipients List collection for the user.
 
-  - **msExchSafeSendersHash**   This attribute stores the hash of the Safe Senders List collection for the user.
+  - **msExchSafeSendersHash**: This attribute stores the hash of the Safe Senders List collection for the user.
 
-  - **msExchBlockedSendersHash**   This attribute stores the hash of the Blocked Senders List collection for the user.
+  - **msExchBlockedSendersHash**: This attribute stores the hash of the Blocked Senders List collection for the user.
 
 If a hexadecimal string, such as `0xac 0xbd 0x03 0xca`, is present on the attribute, the user object was updated. If the attribute has a value of `<Not Set>`, the attribute wasn't updated.
 

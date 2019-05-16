@@ -57,11 +57,11 @@ For additional management tasks related to Unified Messaging and Mailbox servers
 
 4.  Under **UM Service settings** \> **UM startup mode**, select one of the following from the drop-down list:
     
-      - **TCP**   Use this option if you aren't using mTLS and are using only Unsecured dial plans.
+      - **TCP**: Use this option if you aren't using mTLS and are using only Unsecured dial plans.
     
-      - **TLS**   Use this option if you are using mTLS and using only SIP Secured or Secured dial plans.
+      - **TLS**: Use this option if you are using mTLS and using only SIP Secured or Secured dial plans.
     
-      - **DUAL**   Use this option if you are using mTLS and using Unsecured, SIP Secured, and Secured dial plans.
+      - **DUAL**: Use this option if you are using mTLS and using Unsecured, SIP Secured, and Secured dial plans.
 
 5.  After you select the UM startup mode, click **Save**.
 

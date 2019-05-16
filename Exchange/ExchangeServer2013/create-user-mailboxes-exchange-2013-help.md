@@ -59,11 +59,11 @@ You can also create user mailboxes for existing users that have an Active Direct
 
 4.  Select one of the following options:
     
-      - **Existing user**   Select to mail-enable and create a mailbox for an existing user.
+      - **Existing user**: Select to mail-enable and create a mailbox for an existing user.
         
         Click **Browse** to open the **Select User - Entire Forest** dialog box. This dialog box displays a list of Active Directory user accounts in the forest that aren't mail-enabled or don't have Exchange mailboxes. Select the user account you want to mail-enable, and then click **OK**. If you select this option, you don't have to provide user account information because this information already exists in Active Directory.
     
-      - **New user**   Select to create a new user account in Active Directory and create a mailbox for this user. If you select this option, you'll have to provide the required user account information.
+      - **New user**: Select to create a new user account in Active Directory and create a mailbox for this user. If you select this option, you'll have to provide the required user account information.
     
 
     > [!NOTE]
@@ -73,17 +73,17 @@ You can also create user mailboxes for existing users that have an Active Direct
 
 5.  If you selected **New user** in Step 4, complete the following boxes on the **New user mailbox** page. Otherwise skip to Step 7.
     
-      - **First name**   Use this box to type the first name of the user.
+      - **First name**: Use this box to type the first name of the user.
     
-      - **Initials**   Use this box to type the initials of the user.
+      - **Initials**: Use this box to type the initials of the user.
     
-      - **Last name**   Use this box to type the last name of the user.
+      - **Last name**: Use this box to type the last name of the user.
     
-      - **\* Display name**   Use this box to type a display name for the user. This is the name that's listed in the mailbox list in the EAC and in the shared address book. By default, this box is populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it's required. The name can't exceed 64 characters.
+      - **\* Display name**: Use this box to type a display name for the user. This is the name that's listed in the mailbox list in the EAC and in the shared address book. By default, this box is populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it's required. The name can't exceed 64 characters.
     
-      - **\* Name**   Use this box to type a name for the user. This is the name that's listed in Active Directory. This box is also populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name because this box is required. This name also can't exceed 64 characters.
+      - **\* Name**: Use this box to type a name for the user. This is the name that's listed in Active Directory. This box is also populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name because this box is required. This name also can't exceed 64 characters.
     
-      - **Organizational unit**   You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the Active Directory domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
+      - **Organizational unit**: You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the Active Directory domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
         
         To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the desired OU, and then click **OK**.
     
@@ -94,30 +94,30 @@ You can also create user mailboxes for existing users that have an Active Direct
         > If the value for the user name is different than the value used in the <STRONG>Alias</STRONG> box, then the user's email address and the user logon name will be different.
 
     
-      - **\* New Password**   Use this box to type the password that the user must use to sign in to his or her mailbox.
+      - **\* New Password**: Use this box to type the password that the user must use to sign in to his or her mailbox.
         
 
         > [!NOTE]
         > Make sure that the password you supply complies with the password length, complexity, and history requirements of the domain in which you are creating the user account.
 
     
-      - **\* Confirm password**   Use this box to confirm the password that you typed in the **Password** box.
+      - **\* Confirm password**: Use this box to confirm the password that you typed in the **Password** box.
     
-      - **Require password change on next logon**   Select this check box if you want the user to reset the password when they first sign in to the mailbox.
+      - **Require password change on next logon**: Select this check box if you want the user to reset the password when they first sign in to the mailbox.
         
         If you select this check box, at first sign-in, the new user will be prompted with a dialog box in which to change the password. The user won't be allowed to perform any tasks until the password is successfully changed.
 
 6.  Click **More options** to configure the following boxes. Otherwise, skip to Step 7 to save the new user mailbox.
     
-      - **Specify the mailbox database**   Use this option to specify a mailbox database instead of allowing Exchange to select a database for you. Click **Browse** to open the **Select Mailbox Database** dialog box. This dialog box lists all the mailbox databases in your Exchange organization. By default, the mailbox databases are sorted by name. You can also click the title of the corresponding column to sort the databases by server name or version. Select the mailbox database you want to use, and then click **OK**.
+      - **Specify the mailbox database**: Use this option to specify a mailbox database instead of allowing Exchange to select a database for you. Click **Browse** to open the **Select Mailbox Database** dialog box. This dialog box lists all the mailbox databases in your Exchange organization. By default, the mailbox databases are sorted by name. You can also click the title of the corresponding column to sort the databases by server name or version. Select the mailbox database you want to use, and then click **OK**.
     
-      - **Create local archive storage for this user**   Select this check box to create an archive mailbox for the mailbox. If you create an archive mailbox, mailbox items will be moved automatically from the primary mailbox to the archive, based on the default retention policy settings or those you define.
+      - **Create local archive storage for this user**: Select this check box to create an archive mailbox for the mailbox. If you create an archive mailbox, mailbox items will be moved automatically from the primary mailbox to the archive, based on the default retention policy settings or those you define.
         
         Click **Browse** to select a database that resides in the local forest to store the archive mailbox.
         
         To learn more, see [In-Place Archiving in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md).
     
-      - **Address book policy**   Use this option to specify an address book policy (ABP) for the mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to mailbox users, an ABP provides them with access to a customized GAL in Outlook and Outlook Web App. To learn more, see [Address book policies](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies).
+      - **Address book policy**: Use this option to specify an address book policy (ABP) for the mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to mailbox users, an ABP provides them with access to a customized GAL in Outlook and Outlook Web App. To learn more, see [Address book policies](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies).
         
         In the drop-down list, select the policy that you want associated with this mailbox.
 
@@ -191,15 +191,15 @@ You can also create user mailboxes for existing users that have an Active Direct
 
 6.  Click **More options** to configure the following boxes. Otherwise, skip to Step 7 to save the new user mailbox.
     
-      - **Specify the mailbox database**   Use this option to specify a mailbox database instead of allowing Exchange to select a database for you. Click **Browse** to open the **Select Mailbox Database** dialog box. This dialog box lists all the mailbox databases in your Exchange organization. By default, the mailbox databases are sorted by name. You can also click the title of the corresponding column to sort the databases by server name or version. Select the mailbox database you want to use, and then click **OK**.
+      - **Specify the mailbox database**: Use this option to specify a mailbox database instead of allowing Exchange to select a database for you. Click **Browse** to open the **Select Mailbox Database** dialog box. This dialog box lists all the mailbox databases in your Exchange organization. By default, the mailbox databases are sorted by name. You can also click the title of the corresponding column to sort the databases by server name or version. Select the mailbox database you want to use, and then click **OK**.
     
-      - **Create local archive storage for this user**   Select this check box to create an archive mailbox for the mailbox. If you create an archive mailbox, mailbox items will be moved automatically from the primary mailbox to the archive, based on the default retention policy settings or those you define.
+      - **Create local archive storage for this user**: Select this check box to create an archive mailbox for the mailbox. If you create an archive mailbox, mailbox items will be moved automatically from the primary mailbox to the archive, based on the default retention policy settings or those you define.
         
         Click **Browse** to select a database that resides in the local forest to store the archive mailbox.
         
         To learn more, see [In-Place Archiving in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md).
     
-      - **Address book policy**   Use this option to specify an address book policy (ABP) for the mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to mailbox users, an ABP provides them with access to a customized GAL in Outlook and Outlook Web App. To learn more, see [Address book policies](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies).
+      - **Address book policy**: Use this option to specify an address book policy (ABP) for the mailbox. ABPs contain a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to mailbox users, an ABP provides them with access to a customized GAL in Outlook and Outlook Web App. To learn more, see [Address book policies](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies).
         
         In the drop-down list, select the policy that you want associated with this mailbox.
 

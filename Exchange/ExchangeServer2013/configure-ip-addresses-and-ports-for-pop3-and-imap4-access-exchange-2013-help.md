@@ -59,11 +59,11 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
 5.  On the **Add IP address** page, under **IP address**, choose one of the following:
     
-      - **All available IPv4 addresses**   Use all available IPv4 IP addresses for a server.
+      - **All available IPv4 addresses**: Use all available IPv4 IP addresses for a server.
     
-      - **All available IPv6 addresses**   Use all available IPv6 IP addresses for a server.
+      - **All available IPv6 addresses**: Use all available IPv6 IP addresses for a server.
     
-      - **Specify an IP address**   Use a specific IP address.
+      - **Specify an IP address**: Use a specific IP address.
 
 6.  Under **Port**, enter a port number, or accept the default port.
 
@@ -115,11 +115,11 @@ Do the following to verify that you have changed POP3 IP address and port settin
 
 5.  On the **Add IP address** page, under **IP address**, choose one of the following:
     
-      - **All available IPv4 addresses**   Use all available IPv4 IP addresses for a server.
+      - **All available IPv4 addresses**: Use all available IPv4 IP addresses for a server.
     
-      - **All available IPv6 addresses**   Use all available IPv6 IP addresses for a server.
+      - **All available IPv6 addresses**: Use all available IPv6 IP addresses for a server.
     
-      - **Specify an IP address**   Use a specific IP address.
+      - **Specify an IP address**: Use a specific IP address.
 
 6.  Under **Port**, enter a port number, or accept the default port.
 

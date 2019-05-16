@@ -71,7 +71,7 @@ The delivery report shows delivery status and detailed delivery information for 
 
   - **From** Alias, display name, or email address of the person who sent the message.
 
-  - **To**   Alias, display name, or email address for each recipient of the message.
+  - **To**: Alias, display name, or email address for each recipient of the message.
 
   - **Sent** Date and time the message was sent.
 
@@ -81,7 +81,7 @@ This section appears in the delivery report if a message was sent to more than o
 
   - **Summary to date** Displays total number of recipients, and if there are messages Pending, Delivered, or Unsuccessful. Click the hyperlinks to sort by status.
 
-  - **Search box**   The search box is useful if you sent the message to a group of more than 30 recipients. In the search box, type an email address that you want to get delivery information about and click the magnifying glass.
+  - **Search box**: The search box is useful if you sent the message to a group of more than 30 recipients. In the search box, type an email address that you want to get delivery information about and click the magnifying glass.
 
   - **To** Shows the email address of the recipient.
 
@@ -91,9 +91,9 @@ This section appears in the delivery report if a message was sent to more than o
 
 This section contains detailed delivery information for a message sent to the recipient you select in the Summary to date section.
 
-  - **Delivery Report for**   The email address of the selected recipient is shown here.
+  - **Delivery Report for**: The email address of the selected recipient is shown here.
 
-  - **Submitted**   Date and time that the message was submitted for delivery by the system.
+  - **Submitted**: Date and time that the message was submitted for delivery by the system.
 
 Depending on the delivery status of the message, you may see a variety of status states, including:
 
@@ -103,11 +103,11 @@ Depending on the delivery status of the message, you may see a variety of status
 
   - **Pending** If message delivery is pending because a message meets the criteria for an organization-wide rule or policy or because it's subject to message approval, the status message explains what action a rule is performing or that the message must be approved by a moderator before delivery.
 
-  - **Moderator**   The status indicates whether the message was approved or rejected by the moderator.
+  - **Moderator**: The status indicates whether the message was approved or rejected by the moderator.
 
   - **Groups Expanded** If a message was sent to a group, the individual users are shown in the **Summary to date** section so you can see the delivery status for each recipient. If you need to remove or add a user to a group during a delivery report investigation, you can modify a group by clicking **Edit Groups**.
 
-  - **Failed**   Shows the date, time, and reason for a message delivery failure. For example, an organization-wide rule may be blocking message delivery or the message couldn't be delivered.
+  - **Failed**: Shows the date, time, and reason for a message delivery failure. For example, an organization-wide rule may be blocking message delivery or the message couldn't be delivered.
 
 When you're done reviewing the report, click **Close**. Delivery reports aren't saved, but you can re-run a report at any time. Remember there is a two-week search window.
 

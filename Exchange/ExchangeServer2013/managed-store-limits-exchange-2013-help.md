@@ -51,9 +51,9 @@ Previous versions of Exchange set limits on the number of connections to the Man
 
 The types of connection limits in Exchange 2013 are as follows:
 
-  - **Max sessions per process**   Specifies the maximum number of sessions that an Exchange service can have open at one time on a mailbox database.
+  - **Max sessions per process**: Specifies the maximum number of sessions that an Exchange service can have open at one time on a mailbox database.
 
-  - **Max user sessions per process**   Specifies the maximum number of sessions for a particular protocol for a single user.
+  - **Max user sessions per process**: Specifies the maximum number of sessions for a particular protocol for a single user.
 
 The following section, "Configure Session Limits," describes how to modify these limits.
 
@@ -196,11 +196,11 @@ You can modify the default session limits.
 
 4.  Rename the key to one of the following values, and then press Enter:
     
-      - **Maximum Allowed Sessions Per User**   This limit specifies the maximum allowable sessions per user.
+      - **Maximum Allowed Sessions Per User**: This limit specifies the maximum allowable sessions per user.
     
-      - **Maximum Allowed Service Sessions Per User**   This limit specifies the maximum allowed service sessions per user.
+      - **Maximum Allowed Service Sessions Per User**: This limit specifies the maximum allowed service sessions per user.
     
-      - **Maximum Allowed Exchange Sessions Per Service**   This limit specifies the maximum allowed Exchange sessions per service. The default value is 10,000.
+      - **Maximum Allowed Exchange Sessions Per Service**: This limit specifies the maximum allowed Exchange sessions per service. The default value is 10,000.
 
 5.  Right-click the newly created key, and then click **Modify**.
 
