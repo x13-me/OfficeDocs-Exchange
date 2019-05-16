@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Active Directory
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Microsoft Exchange Server 2013 uses Active Directory to store and share directory information with Windows. Active Directory forest design for Exchange 2013 is similar to Exchange Server 2010, except in a few ways, which are discussed below.
 
@@ -38,4 +35,3 @@ To learn more about how Exchange 2013 stores and retrieves information in Active
 For more information about Active Directory forest design, see [AD DS Design Guide](https://go.microsoft.com/fwlink/p/?linkid=264957).
 
 To learn more about computers running Windows in an Active Directory domain and deploying Exchange 2013 in a domain that has a disjoint namespace, see [Disjoint namespace scenarios](disjoint-namespace-scenarios-exchange-2013-help.md).
-

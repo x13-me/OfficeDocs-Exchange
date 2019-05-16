@@ -44,7 +44,6 @@ If you receive an alert that indicates that the **HubTransport** health set is u
 
 The **HubTransport** service is monitored using the following probes and monitors.
 
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -547,7 +546,6 @@ The **HubTransport** service is monitored using the following probes and monitor
 </tbody>
 </table>
 
-
 For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
 
 </div>
@@ -564,29 +562,29 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 ## Verifying the issue
 
-1.  Identify the health set name and server name that are given in the alert.
+1. Identify the health set name and server name that are given in the alert.
 
-2.  The message details provide information about the exact cause of the alert. In most cases, the message details provide sufficient troubleshooting information to help identify the root cause. If the message details are not clear, do the following:
-    
-    1.  Open the Exchange Management Shell, and run the following command to retrieve the details of the health set that issued the alert:
-        
+2. The message details provide information about the exact cause of the alert. In most cases, the message details provide sufficient troubleshooting information to help identify the root cause. If the message details are not clear, do the following:
+
+    1. Open the Exchange Management Shell, and run the following command to retrieve the details of the health set that issued the alert:
+
             Get-ServerHealth <server name> | ?{$_.HealthSetName -eq "<health set name>"}
-        
+
         For example, to retrieve the **HubTransport** health set details about mailbox1.contoso.com, run the following command:
-        
+
             Get-ServerHealth mailbox1.contoso.com | ?{$_.HealthSetName -eq "HubTransport"}
-    
-    2.  Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be **Unhealthy**.
-    
-    3.  Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the [Explanation](troubleshooting-activesync-health-set.md) section to find the associated probe. To do this, run the following command:
-        
+
+    2. Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be **Unhealthy**.
+
+    3. Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the [Explanation](troubleshooting-activesync-health-set.md) section to find the associated probe. To do this, run the following command:
+
             Invoke-MonitoringProbe <health set name>\<probe name> -Server <server name> | Format-List
-        
+
         For example, assume that the failing monitor is **ActiveQueueDrainFailureMonitor**. The probe associated with that monitor is **ActiveQueueDrainFailureProbe**. To run this probe on mailbox1.contoso.com, run the following command:
-        
+
             Invoke-MonitoringProbe HubTransport\ActiveQueueDrainFailureProbe -Server mailbox1.contoso.com | Format-List
-    
-    4.  In the command output, review the "Result" section of the probe. If the value is **Succeeded**, the issue was a transient error, and it no longer exists.
+
+    4. In the command output, review the "Result" section of the probe. If the value is **Succeeded**, the issue was a transient error, and it no longer exists.
 
 </div>
 
@@ -601,4 +599,3 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 </div>
 
 </div>
-

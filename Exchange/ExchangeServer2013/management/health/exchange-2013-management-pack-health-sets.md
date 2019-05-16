@@ -189,4 +189,3 @@ The Exchange Server 2013 Management Pack relies on the Managed Availability feat
 </div>
 
 </div>
-

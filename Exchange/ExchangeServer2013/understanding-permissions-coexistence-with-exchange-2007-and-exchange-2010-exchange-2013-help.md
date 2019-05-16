@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
 When you install Microsoft Exchange Server 2013 into an existing Microsoft Exchange Server 2010 or Microsoft Exchange Server 2007 organization, you need to understand how permissions will work in the new organization. Read the section below that applies to your organization.
 
@@ -143,7 +142,6 @@ The Exchange 2013 RBAC permissions model consists of management role groups assi
 </tbody>
 </table>
 
-
 This table shows that Exchange 2013 provides a granular level of control over the permissions that you grant to your administrators. You can choose among 12 role groups in Exchange 2013. For a complete list of role groups and the permissions that they provide, see [Built-in role groups](built-in-role-groups-exchange-2013-help.md).
 
 Because Exchange 2013 provides many role groups and because further customization is possible by creating role groups that have different role combinations, the manipulation of access control lists (ACLs) on Active Directory objects is no longer necessary and has no effect. ACLs are no longer used to apply permissions to individual administrators or groups in Exchange 2013. All tasks, such as an administrator creating a mailbox or a user accessing a mailbox, are managed by RBAC. RBAC authorizes the task, and then Exchange performs the task on behalf of the user if allowed. Exchange performs the task in the Exchange Trusted Subsystem universal security group (USG). With some exceptions, all the ACLs on objects in Active Directory that Exchange 2010 has to access are granted to the Exchange Trusted Subsystem USG. This is a fundamental change from how permissions are handled in Exchange 2007.
@@ -234,7 +232,6 @@ In Exchange 2007, you can separate administrators by assigning them various role
 </tbody>
 </table>
 
-
 If you need to make more granular permission assignments, you can modify the ACLs on individual Exchange 2007 objects, such as address lists or databases. You must add the user or security group of which the user is a member directly to the ACL. Then, the actions are performed in the context of the particular user.
 
 For more information about how to manage permissions in Exchange 2007, see [Configuring Permissions in Exchange Server 2007](http://go.microsoft.com/fwlink/p/?linkid=90671).
@@ -253,11 +250,8 @@ Because the permissions models for Exchange 2013 and for Exchange 2007 differ, E
 
 If you want Exchange 2007 administrators to administer Exchange 2013 servers, the Exchange 2007 administrators must be added as members of one or more Exchange 2013 role groups. You can add either users or USGs to role groups. The permissions granted to the role groups are then applied to the users or the USGs that you add as members.
 
-
 > [!IMPORTANT]
 > If you use domain local or global Active Directory security groups, you must change them to USGs if you want to add them as members of an Exchange 2013 role group. Exchange 2013 supports only USGs.
-
-
 
 The following table describes the mapping between Exchange 2007 administrator roles and Exchange 2013 role groups.
 
@@ -303,28 +297,24 @@ The following table describes the mapping between Exchange 2007 administrator ro
 </tbody>
 </table>
 
-
 If all your Exchange 2007 administrators are members of one of the Exchange 2007 administrative roles, you can add the members of each of the administrative groups to their equivalent Exchange 2013 role group. For example, if you want to give all Exchange 2007 organization administrators full access to Exchange 2013 objects, add the Exchange Organization Administrators USG to the Organization Management role group.
 
 For more information about how to add users and USGs to role groups, see [Manage role group members](manage-role-group-members-exchange-2013-help.md).
 
 If you modify ACLs on Exchange 2007 objects to grant more granular permissions to Exchange 2007 administrators, and if you want to assign similar permissions to Exchange 2013 servers to those administrators, follow these steps:
 
-1.  Review the ACL customizations that have been made to the Exchange 2007 objects, and locate the administrators who have been granted permissions to each object.
+1. Review the ACL customizations that have been made to the Exchange 2007 objects, and locate the administrators who have been granted permissions to each object.
 
-2.  Categorize each Exchange 2007 object. For example, determine whether the object is a database, server, or recipient object.
+2. Categorize each Exchange 2007 object. For example, determine whether the object is a database, server, or recipient object.
 
-3.  Map the objects to the corresponding Exchange 2013 role group. For a list of built-in role groups, see [Built-in role groups](built-in-role-groups-exchange-2013-help.md).
+3. Map the objects to the corresponding Exchange 2013 role group. For a list of built-in role groups, see [Built-in role groups](built-in-role-groups-exchange-2013-help.md).
 
-4.  Add the USGs or users for each kind of object to the corresponding Exchange 2013 role groups. For more information about how to add users and USGs to role groups, see [Manage role group members](manage-role-group-members-exchange-2013-help.md).
+4. Add the USGs or users for each kind of object to the corresponding Exchange 2013 role groups. For more information about how to add users and USGs to role groups, see [Manage role group members](manage-role-group-members-exchange-2013-help.md).
 
 After you complete these steps, the Exchange 2007 administrators will be members of the specific role group that's mapped to the appropriate Exchange 2013 objects. The Exchange 2007 administrators can use the Exchange 2013 management tools to manage the Exchange 2013 servers and recipients.
 
-
 > [!IMPORTANT]
 > In general, Exchange 2007 servers and recipients must be managed by using Exchange 2007 management tools, and Exchange 2013 servers and recipients must be managed by using Exchange 2013 management tools.
-
-
 
 If the built-in role groups don't provide the specific set of permissions that you want to grant to some administrators, you can create custom role groups. When you create a custom role group, you can select which roles to add to it. You can define the specific features you want members of the role group to manage. For example, if you want administrators to manage only distribution groups, you can create a custom role group, and then select only the Distribution Groups role. After you do this, members of that custom role group can manage only distribution groups. For more information about how to create custom role groups, see [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
@@ -369,4 +359,3 @@ Management scopes are used with management roles, management role assignments, a
 To create the same permissions model in Exchange 2013 using management scopes that you might have defined using customized ACLs, you must inventory the ACLs that you've customized, and then create management scopes that match them. You can use the filterable properties available on recipient, server, and database objects to create management scopes that include the objects to which you want each management scope to control access. For more information about the properties that you can use with management scope filters, see [Understanding management role scope filters](understanding-management-role-scope-filters-exchange-2013-help.md).
 
 For more information about how to create management scopes, see [Create a regular or exclusive scope](create-a-regular-or-exclusive-scope-exchange-2013-help.md).
-

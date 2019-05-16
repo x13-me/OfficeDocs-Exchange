@@ -16,18 +16,14 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 ## Page Zeroing in Exchange 2013
 
 *Zeroing* is a security mechanism that writes either zeros or a binary pattern over deleted data so that the deleted data more difficult to recover. In Exchange Server 2013, an ESE database uses *pages* as its unit of storage, and as a result it implements *page zeroing*. Page zeroing is enabled by default, and it cannot be disabled. Page zeroing operations are recorded in the transaction log files so that all copies of a database are page-zeroed in a similar manner. Zeroing a page on an active database causes the page to get zeroed on a passive copy of the database.
 
-
 > [!NOTE]
 > There is no mechanism for the Extensible Storage Engine (ESE) to prioritize the reutilization of zeroed pages over allocating new space. Tables which have sequential space allocation assigned will intentionally skip fragmented or zeroed pages in favor of using new or free sequential pages. This approach reduces database IOPs.
-
-
 
 In Exchange 2013 page zeroing reduces the performance impact on servers when they're performing zeroing functions. This includes:
 
@@ -68,7 +64,6 @@ Page zeroing writes a binary pattern over a hard-deleted record. The page-zeroin
 </tbody>
 </table>
 
-
 The following table lists the fill patterns that correspond to specific operations that occur during ESE background database maintenance.
 
 ### Fill pattern of page zeroing during ESE background database maintenance
@@ -103,7 +98,6 @@ The following table lists the fill patterns that correspond to specific operatio
 </tr>
 </tbody>
 </table>
-
 
 ## Background Database Maintenance
 
@@ -152,7 +146,6 @@ The following table discusses database delete scenarios, and when page zeroing f
 </tbody>
 </table>
 
-
 ## Monitoring Page Zeroing Behavior
 
 You can measure and monitor page zeroing functionality by viewing two ESE counters:
@@ -161,11 +154,8 @@ You can measure and monitor page zeroing functionality by viewing two ESE counte
 
   - MSExchange Database -\> Database Maintenance Pages Zeroed/sec: Indicates the rate at which pages are zeroed.
 
-
 > [!NOTE]
 > To learn how to enable these counters, see <A href="https://go.microsoft.com/fwlink/p/?linkid=101194">How to Enable Extended ESE Performance Counters</A>.
-
-
 
 Page zeroing is a database maintenance function, so performance information related to both page zeroing for run-time transactions and page zeroing due to background database maintenance is included in these counters.
 
@@ -174,10 +164,9 @@ Page zeroing is a database maintenance function, so performance information rela
 The following Mailbox data types have no provisions for page zeroing:
 
   - Mailbox database transaction logs (.log)
-    
+
     When transaction logs are deleted (due to truncation via backup or circular logging), there is no process to zero the blocks in the NTFS file system that stored the deleted log file(s). It's likely that NTFS will quickly re-utilize that free space for newly created logs, but there is no guarantee that this will happen.
 
   - Content index catalog files
-    
-    Exchange 2013 uses Search Foundation for search indexing functionality. The search index catalog is comprised of several dozen files stored on the same volume as the mailbox database file. When a message is hard-deleted from the mailbox database, the associated content in the search catalog isn't immediately deleted. Content deletion occurs when Search Foundation does a shadow, or master merge, of many small catalog files in to a single larger file. After the master merge completes, the smaller catalog files are deleted. There is no process to zero the blocks which stored the deleted catalog files.
 
+    Exchange 2013 uses Search Foundation for search indexing functionality. The search index catalog is comprised of several dozen files stored on the same volume as the mailbox database file. When a message is hard-deleted from the mailbox database, the associated content in the search catalog isn't immediately deleted. Content deletion occurs when Search Foundation does a shadow, or master merge, of many small catalog files in to a single larger file. After the master merge completes, the smaller catalog files are deleted. There is no process to zero the blocks which stored the deleted catalog files.

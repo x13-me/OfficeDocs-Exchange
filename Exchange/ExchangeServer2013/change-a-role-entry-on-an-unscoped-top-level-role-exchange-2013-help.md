@@ -14,18 +14,12 @@ mtps_version: v=EXCHG.150
 
 # Change a role entry on an unscoped top-level role
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Management role entries on unscoped top-level management roles refer to the scripts and non-Exchange cmdlets, and their parameters, that you want to make available to those assigned the role. By changing the parameters available on a role entry, you control what those assigned the role can do with the script or non-Exchange cmdlet. For more information about unscoped role entries, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
 
-
 > [!NOTE]
 > If you want to change a role entry on a management role that contains Exchange cmdlets, see <A href="change-a-role-entry-exchange-2013-help.md">Change a role entry</A>.
-
-
 
 Looking for other management tasks related to roles? Check out [Advanced permissions](advanced-permissions-exchange-2013-help.md).
 
@@ -38,18 +32,15 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
   - You must use the Shell to perform these procedures.
 
   - The ability to change a role entry on an unscoped top-level role isn't included in any management role group by default. You must first assign the Unscoped Role Management role to a user, or to a universal security group (USG) or role group of which the user is a member, before the user is able to add or change an unscoped top-level role entry. For more information about adding a role to a user, USG, or role group, see the following topics:
-    
+
       - [Manage role groups](manage-role-groups-exchange-2013-help.md)
-    
+
       - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -87,11 +78,8 @@ To remove parameters from a role entry, you need to do the following:
 
   - Specify the *UnscopedTopLevel* parameter to indicate that you're changing a role entry on an unscoped top-level role. If you don't specify this parameter when you change a role entry on an unscoped role, an error occurs.
 
-
 > [!WARNING]
 > You can't undo remove operations. If you mistakenly remove a parameter from a role entry, you must add it again manually.
-
-
 
 To remove parameters from a role entry, use the following syntax.
 
@@ -119,11 +107,8 @@ Removing all the parameters from a role entry is most useful when you want to ma
 
 If you don't want the role to have access to a script or non-Exchange cmdlet, remove the associated role entry from the role completely instead of just removing the parameters. For more information about how to remove a role entry from a role, see [Remove a role entry from a role](remove-a-role-entry-from-a-role-exchange-2013-help.md).
 
-
 > [!WARNING]
 > You can't undo remove operations. If you mistakenly remove all the parameters from a role entry, you must add them again manually.
-
-
 
 To remove all the parameters from a role entry, use the following syntax.
 
@@ -147,11 +132,8 @@ If you want only a specific set of parameters to be included on a role entry, yo
 
   - Specify the *UnscopedTopLevel* parameter to indicate that you're changing a role entry on an unscoped role. If you don't specify this parameter when you change a role entry on an unscoped top-level role, an error occurs.
 
-
 > [!WARNING]
 > When you specify only the <EM>Parameters</EM> parameter, only the parameters you specify in the command are included on the role entry. All other parameters are removed.
-
-
 
 To specify a specific set of parameters, use the following syntax.
 
@@ -180,4 +162,3 @@ After you change a role entry on an unscoped top-level role, you may also want t
 [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
 [Remove a role from a user or USG](remove-a-role-from-a-user-or-usg-exchange-2013-help.md)
-

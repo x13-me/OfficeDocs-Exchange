@@ -14,18 +14,12 @@ mtps_version: v=EXCHG.150
 
 # Add a role entry to an unscoped top-level role
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 You can add scripts and non-Exchange cmdlets to unscoped top-level management roles if you want to make new scripts or non-Exchange cmdlets available to existing unscoped roles. These scripts and non-Exchange cmdlets are added as management role entries to unscoped top-level management roles. They can then be used by those unscoped top-level role entries or any unscoped roles derived from the top-level roles. For more information about unscoped role entries, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
 
-
 > [!NOTE]
 > If you want to change a role entry on a management role that contains Exchange cmdlets, see <A href="change-a-role-entry-exchange-2013-help.md">Change a role entry</A>.
-
-
 
 Looking for other management tasks related to roles? Check out [Advanced permissions](advanced-permissions-exchange-2013-help.md).
 
@@ -38,18 +32,15 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
   - You must use the Shell to perform these procedures.
 
   - The ability to add a role entry on an unscoped top-level role isn't included in any management role group by default. You must first assign the Unscoped Role Management role to a user, or to a universal security group (USG) or role group of which the user is a member, before the user is able to add an unscoped top-level role entry. For more information about adding a role to a role group, user, or USG, see the following topics:
-    
+
       - [Manage role groups](manage-role-groups-exchange-2013-help.md)
-    
+
       - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -73,8 +64,6 @@ This example adds the BulkProvisionUsers.ps1 script to the IT Scripts role with 
 > [!NOTE]
 > The <STRONG>Add-ManagementRoleEntry</STRONG> cmdlet performs basic validation to make sure that you add only the parameters that exist in the script. However, no further validation is done after the role entry is added. If parameters are later added or removed, you must manually update the role entries that contain the script.
 
-
-
 ## Add a non-Exchange cmdlet role entry to an unscoped top-level role
 
 If you want to add a non-Exchange cmdlet to an existing unscoped role, use this procedure. If you want to add a script to an existing unscoped role, see "Add a script role entry to an unscoped top-level role" earlier in this topic.
@@ -95,8 +84,6 @@ This example adds the **Set-WidgetConfiguration** cmdlet in the Contoso.Admin.Cm
 > [!NOTE]
 > The <STRONG>Add-ManagementRoleEntry</STRONG> cmdlet performs basic validation to make sure that you add only the parameters that exist in the cmdlet. However, no further validation is done after the role entry is added. If the cmdlet is later changed, and parameters are added or removed, you must manually update the role entries that contain the cmdlet.
 
-
-
 ## Other tasks
 
 After you add a role entry or an unscoped top-level role, you may also want to:
@@ -110,4 +97,3 @@ After you add a role entry or an unscoped top-level role, you may also want to:
 [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
 [Remove a role from a user or USG](remove-a-role-from-a-user-or-usg-exchange-2013-help.md)
-

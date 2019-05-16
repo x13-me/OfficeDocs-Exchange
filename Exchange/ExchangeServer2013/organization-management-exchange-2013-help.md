@@ -16,18 +16,14 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 The Organization Management management role group is one of several built-in role groups that make up the Role Based Access Control (RBAC) permissions model in Microsoft Exchange Server 2013. Role groups are assigned one or more management roles that contain the permissions required to perform a given set of tasks. The members of a role group are granted access to the management roles assigned to the role group. For more information about role groups, see [Understanding management role groups](understanding-management-role-groups-exchange-2013-help.md).
 
 Administrators that are members of the Organization Management role group have administrative access to the entire Exchange 2013 organization and can perform almost any task against any Exchange 2013 object, with some exceptions. By default, members of this role group can't perform mailbox searches and management of unscoped top-level management roles. For more information, see the "Delegating Only Role Assignments" section later in this topic.
 
-
 > [!IMPORTANT]
 > The Organization Management role group is a very powerful role and as such, only users or universal security groups (USGs) that perform organizational-level administrative tasks that can potentially impact the entire Exchange organization should be members of this role group.
-
-
 
 This role group is equivalent to the Exchange Organization Administrators role in Exchange Server 2007.
 
@@ -81,11 +77,8 @@ Any role can be added to or removed from this role group, with the following lim
 
 These limitations are intended to help prevent you from inadvertently locking yourself out of the system. By requiring that at least one delegating role assignment exists between every role and one or more role groups or USGs, you will always be able to assign roles to role assignees. By requiring that at least one regular role assignment exists between the Role Management role and one or more role groups or USGs, you will always be able to configure role groups and role assignments.
 
-
 > [!IMPORTANT]
 > These limitations require that role groups or USGs be the targets of the delegating and regular role assignments. You can't remove a delegating role assignment or the regular assignment for the Role Management role if the last assignment is to a user.
-
-
 
 ## Delegating only role assignments
 
@@ -839,4 +832,3 @@ For more information about role assignments and management scopes, see the follo
 </tr>
 </tbody>
 </table>
-

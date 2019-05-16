@@ -28,7 +28,7 @@ mtps_version: v=EXCHG.150
 
 <span> </span>
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:**: Exchange Server 2013_
 
 _**Topic Last Modified:** 2012-10-11_
 
@@ -53,4 +53,3 @@ Thanks for clicking the link that brought you to this page. Although we don't cu
 </div>
 
 </div>
-

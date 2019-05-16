@@ -28,7 +28,7 @@ mtps_version: v=EXCHG.150
 
 <span> </span>
 
-_**Applies to:** Exchange Server 2013, Project Server 2013_
+_**Applies to:**: Exchange Server 2013, Project Server 2013_
 
 _**Topic Last Modified:** 2013-02-11_
 
@@ -61,4 +61,3 @@ The POP.Protocol health set works in conjunction with the POP health set. For de
 </div>
 
 </div>
-

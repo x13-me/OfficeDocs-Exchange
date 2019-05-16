@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 The following procedures enable you to perform advanced permissions management. You should only use these procedures if management role groups and management role assignment policies don't meet the needs of your organization.
 
 [Create a role](create-a-role-exchange-2013-help.md)
@@ -48,4 +47,3 @@ For more information about managing role groups and role assignment policies, se
 [Manage linked role groups](manage-linked-role-groups-exchange-2013-help.md)
 
 [Manage role assignment policies](manage-role-assignment-policies-exchange-2013-help.md)
-

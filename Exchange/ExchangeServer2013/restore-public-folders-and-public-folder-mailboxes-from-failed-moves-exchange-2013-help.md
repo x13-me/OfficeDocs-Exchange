@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
-
+_**Applies to:**: Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 If a move request for a public folder or public folder mailbox fails, you can restore the folder or mailbox as long as the following conditions apply:
 
@@ -45,11 +44,8 @@ For additional management tasks related to public folders, see [Public folder pr
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -68,4 +64,3 @@ This example restores the public folder mailbox PF\_Singapore to the new public 
     New-MailboxRestoreRequest -SourceStoreMailbox PF_Singapore -SourceDatabase MBX_DB01 -TargetMailbox PF_Singapore_Restore -AllowLegacyDNMismatch
 ```
 For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829875\(v=exchg.150\)).
-

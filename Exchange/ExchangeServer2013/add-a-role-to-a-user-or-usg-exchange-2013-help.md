@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Add a role to a user or USG
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Management role assignments can assign a management role to a user or universal security group (USG). By assigning a role to a user or USG, you enable those users to perform tasks dependent on cmdlets or scripts and their parameters defined on the management role.
 
@@ -48,7 +45,7 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
   - Although you can assign roles directly to users and USGs, the recommended method of granting permissions to administrators and end users is to use management role groups and management role assignment policies. When you use role groups and assignment policies, you simplify your permissions model.
 
   - Role assignments are additive. This means that all the roles are added together when they're evaluated. If two roles are assigned to a user and one role contains a cmdlet but the other doesn't, the cmdlet will still be available to the user.
-    
+
     By default, role assignments don't grant the ability to assign roles to other users. To enable a user to assign roles to other users or USGs, see [Delegate role assignments](delegate-role-assignments-exchange-2013-help.md).
 
   - If you create an assignment with a scope, the scope overrides the role's implicit write scope. However, the role's implicit read scope still applies. The new scope can't return objects outside of the role's implicit read scope. For more information, see [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md).
@@ -57,11 +54,8 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -180,4 +174,3 @@ This example assigns the Mail Recipients role to the Protected User Admins USG a
 ```
 
 For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335193\(v=exchg.150\)).
-

@@ -16,20 +16,16 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online Protection, Exchange Server 2013_
-
+_**Applies to:**: Exchange Online Protection, Exchange Server 2013_
 
 You can add an email disclaimer, legal disclaimer, disclosure statement, signature, or other information to the top or bottom of email messages that enter or leave your organization. This might be needed for legal, business, or regulatory requirements, to identify potentially unsafe e-mail messages, or for other reasons unique to your organization.
 
 To set up a disclaimer, you create a transport rule that includes the conditions, such when the sender is in a specific group or when the message includes specific text patterns, and the text to add. To apply multiple disclaimers to a single email message, you use multiple transport rules.
 
-
 > [!IMPORTANT]
 > <UL>
 > <LI>
 > <P>If you want the information to be added only to outgoing messages, you must add a condition such as recipients located outside the organization. By default, transport rules are applied to both incoming and outgoing messages.</P></LI></UL>
-
-
 
 **Contents**
 
@@ -48,7 +44,6 @@ Looking for procedures? See [Add an email disclaimer, legal disclaimer, common s
 ## Examples
 
 Here are a few ideas for how to use disclaimers.
-
 
 <table>
 <colgroup>
@@ -90,7 +85,6 @@ cell: 111-222-1234</p></td>
 </tbody>
 </table>
 
-
 The examples in this article are not intended for use as-is. Modify them for your needs.
 
 ## Scoping your disclaimer
@@ -98,7 +92,6 @@ The examples in this article are not intended for use as-is. Modify them for you
 As you work on your disclaimers, consider which messages they should apply to. For example, you might want different disclaimers for internal and external messages or for messages sent by users in specific departments. To make sure only the first message in a conversation gets a disclaimer, add an exception that looks for unique text in your disclaimer.
 
 Here are some examples of the conditions and exceptions you can use.
-
 
 <table>
 <colgroup>
@@ -167,7 +160,6 @@ Here are some examples of the conditions and exceptions you can use.
 </tbody>
 </table>
 
-
 For a complete list of transport rule conditions you can use to target the disclaimer, see one of the following:
 
   - [Mail flow rule conditions (predicates)](https://technet.microsoft.com/en-us/library/jj919235\(v=exchg.150\)) (Exchange Online)
@@ -179,7 +171,6 @@ For a complete list of transport rule conditions you can use to target the discl
 ## Formatting your disclaimer
 
 You can format your disclaimer as needed. Here's what can be included in your disclaimer text.
-
 
 <table>
 <colgroup>
@@ -216,7 +207,6 @@ You can format your disclaimer as needed. Here's what can be included in your di
 </tbody>
 </table>
 
-
 For example, here's an example of an HTML disclaimer that includes a signature, an `IMG` tag, and embedded CSS.
 
 ```HTML
@@ -242,12 +232,9 @@ Some messages, such as encrypted messages, prevent Exchange from modifying the c
 The following list describes each fallback action:
 
   - **Wrap**: If the disclaimer can't be inserted into the original message, Exchange encloses, or "wraps," the original message in a new message envelope. Then the disclaimer is inserted into the new message. If the original message can't be wrapped in a new message envelope, the original message is not delivered. The sender of the message receives a non-delivery report (NDR) that explains why the message was not delivered.
-    
 
     > [!IMPORTANT]
     > If an original message is wrapped in a new message envelope, subsequent transport rules are applied to the new message envelope, not to the original message. Therefore, you must configure transport rules with disclaimer actions that wrap original messages in a new message body after you configure other transport rules.
-
-
 
   - **Reject**: If the disclaimer can't be inserted into the original message, Exchange doesn't deliver the message. The sender of the message receives an NDR that explains why the message wasn't delivered.
 

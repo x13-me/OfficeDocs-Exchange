@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Anti-spam agent logging
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Agent logs record the actions performed on a message by specific anti-spam agents in Microsoft Exchange Server 2013. Only the following agents can write information to the agent log:
 
@@ -33,11 +30,8 @@ Agent logs record the actions performed on a message by specific anti-spam agent
 
   - Sender ID agent
 
-
-> [!NOTE]  
+> [!NOTE]
 > The Connection Filtering agent and the Edge Rules agent aren't available on Mailbox servers.
-
-
 
 The information written to the agent log depends on the agent, the SMTP event, and the action performed on the message.
 
@@ -113,12 +107,8 @@ The following table lists the SMTP events in order of occurrence and the agents 
 </tbody>
 </table>
 
-
-
 > [!NOTE]
 > The Connection Filtering agent and the Edge Rules agent aren't available on Mailbox servers.
-
-
 
 For more information about agents, SMTP events, and agent priority, see [Transport agents](transport-agents-exchange-2013-help.md).
 
@@ -261,7 +251,6 @@ The agent log stores each agent transaction on a single line in the log. The inf
 </tbody>
 </table>
 
-
 Return to top
 
 ## Search the agent logs
@@ -287,4 +276,3 @@ Get-Help -Detailed .\Get-AntiSpamFilteringReport.ps1
 ```
 
 Return to top
-

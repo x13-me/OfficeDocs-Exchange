@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Microsoft Exchange Server 2013 supports disabling TLS for SMTP communication between Mailbox servers in certain topologies where WAN Optimization Controller (WOC) devices that compress SMTP traffic are used.
 
 This topic provides step-by-step instructions on how to configure the Transport service in your affected Mailbox servers to disable TLS, and to ensure your Active Directory routing topology is configured to correctly route messages. To learn more about this scenario, see [Scenario: Configure Exchange to support WAN Optimization Controllers](scenario-configure-exchange-to-support-wan-optimization-controllers-exchange-2013-help.md).
@@ -39,11 +38,8 @@ This topic provides step-by-step instructions on how to configure the Transport 
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -65,17 +61,17 @@ Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
 
 ## Use the EAC to create the Receive connector
 
-1.  In the Exchange admin center (EAC), click **Mail flow** \> **Receive connectors**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the Exchange admin center (EAC), click **Mail flow** \> **Receive connectors**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-2.  On the first page of the **New Receive connector** wizard, enter the following values
-    
+2. On the first page of the **New Receive connector** wizard, enter the following values
+
       - **Name**: Enter a descriptive value.
-    
+
       - **Type**: Internal
-    
+
     When you are finished, click **Next**.
 
-3.  On the second page of the **New Receive connector** wizard, in the **Remote settings** section, enter the IP addresses or IP address ranges for the target Active Directory site. When you are finished, click **Finish**.
+3. On the second page of the **New Receive connector** wizard, in the **Remote settings** section, enter the IP addresses or IP address ranges for the target Active Directory site. When you are finished, click **Finish**.
 
 ## Use the Shell to create the Receive connector
 
@@ -142,4 +138,3 @@ This example configures an Exchange-specific cost of 15 on the IP site link name
 ```powershell
 Set-AdSiteLink "Branch Office 2-Branch Office 1" -ExchangeCost 15
 ```
-

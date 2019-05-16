@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 Microsoft's [preferred architecture](https://blogs.technet.com/b/exchange/archive/2014/04/21/the-preferred-architecture.aspx) for Exchange Server 2013 leverages a concept known as Exchange Native Data Protection. Exchange Native Data Protection relies on native Exchange features to protect your mailbox data, without the use of traditional backups. But if you want to create backups, Exchange includes a plug-in for Windows Server Backup (WSB) that enables you to create Exchange-aware Volume Shadow Copy Service (VSS)-based backups of Exchange data. To take Exchange-aware backups, you must have the WSB feature installed.
 
@@ -42,7 +41,6 @@ Before using WSB to back up Exchange data, we recommend that you familiarize you
   - Bare metal restores are supported when using WSB; however, the recommended recovery approach for Exchange servers is to recover the Exchange server and then restore the data. If you are using a third-party backup application (e.g., non-Microsoft), then support for bare metal restores of Exchange may be available from your backup application vendor.
 
 The following table describes the supportability of the backup and recovery options available for Exchange 2013 with WSB.
-
 
 <table>
 <colgroup>
@@ -71,8 +69,6 @@ The following table describes the supportability of the backup and recovery opti
 </tbody>
 </table>
 
-
 For detailed steps to back up Exchange using WSB, see [Use Windows Server Backup to back up Exchange](use-windows-server-backup-to-back-up-exchange-exchange-2013-help.md).
 
 For detailed steps to restore data from a backup taken with WSB, see [Use Windows Server Backup to restore a backup of Exchange](use-windows-server-backup-to-restore-a-backup-of-exchange-exchange-2013-help.md).
-

@@ -20,14 +20,10 @@ f1_keywords:
 
 _**Applies to:** Exchange Server 2013_
 
-
 After you install a Mailbox server that is running the Microsoft Exchange Unified Messaging service, you can configure several options, including the number of concurrent calls, the TCP and Transport Layer Security (TLS) listening ports, the status, and the UM startup mode.
-
 
 > [!IMPORTANT]
 > It's not required that Mailbox servers be added to a UM dial plan before it can process calls for Unified Messaging (UM), except when you're integrating UM and Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server. By default, all Mailbox servers in an organization are available to answer incoming calls.
-
-
 
 For additional management tasks related to Unified Messaging and Mailbox servers, see [UM services procedures](um-services-procedures-exchange-2013-help.md).
 
@@ -41,11 +37,8 @@ For additional management tasks related to Unified Messaging and Mailbox servers
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
@@ -60,13 +53,13 @@ Set-UMService -Identity MyMailboxServer -DialPlans $null
 This example adds the Mailbox server named `MyMailboxServer` to a UM SIP dial plan named `MySIPDialPlanName` and also sets the maximum number of incoming voice calls.
 
 ```powershell
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -MaxCalls 150 
+    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -MaxCalls 150
 ```
 
 This example sets the startup mode to Dual mode on a Mailbox server named `MyUMServer`.
 
 ```powershell
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -UMStartUpMode -Dual 
+    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -UMStartUpMode -Dual
 ```
 
 ## Use the Shell to view Mailbox server properties
@@ -82,4 +75,3 @@ This example displays a formatted list of properties for the Mailbox server name
 ```powershell
 Get-UMService -Identity MyMailboxServer | Format-List
 ```
-

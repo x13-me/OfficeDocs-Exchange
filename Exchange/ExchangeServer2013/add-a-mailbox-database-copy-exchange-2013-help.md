@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Add a mailbox database copy
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 When you add a copy of a mailbox database, continuous replication is automatically enabled between the existing database and the database copy. Database copies are automatically assigned an identity in the format of \<*DatabaseName*\>\\\<*HostMailboxServerName*\>. For example, a copy of the database DB1 that's hosted on the server MBX3 would be DB1\\MBX3.
 
@@ -41,29 +38,26 @@ Looking for other management tasks related to mailbox database copies? Check out
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
 ## Use the EAC to add a mailbox database copy
 
-1.  In the EAC, go to **Servers** \> **Databases**.
+1. In the EAC, go to **Servers** \> **Databases**.
 
-2.  Select the database that you want to copy, and then click ![Add database copy](images/Dd298080.435c15ff-abf2-4de8-b280-f053db1afa13(EXCHG.150).gif "Add database copy").
+2. Select the database that you want to copy, and then click ![Add database copy](images/Dd298080.435c15ff-abf2-4de8-b280-f053db1afa13(EXCHG.150).gif "Add database copy").
 
-3.  On the **add mailbox database copy** page, click **browse...**, select the Mailbox server that will host the database copy, and then click **OK**.
+3. On the **add mailbox database copy** page, click **browse...**, select the Mailbox server that will host the database copy, and then click **OK**.
 
-4.  Optionally, configure the **Activation preference number** for the database copy.
+4. Optionally, configure the **Activation preference number** for the database copy.
 
-5.  Click **More options...** to designate the database copy as a lagged database copy by configuring a replay lag time, or to postpone automatic seeding of the database copy.
+5. Click **More options...** to designate the database copy as a lagged database copy by configuring a replay lag time, or to postpone automatic seeding of the database copy.
 
-6.  Click **Save** to save the configuration changes and add the mailbox database copy.
+6. Click **Save** to save the configuration changes and add the mailbox database copy.
 
-7.  Click **OK** to acknowledge any messages that appear.
+7. Click **OK** to acknowledge any messages that appear.
 
 ## Use the Shell to add a mailbox database copy
 
@@ -92,11 +86,11 @@ To verify that you have successfully created a mailbox database copy, do one of 
   - In the EAC, navigate to **Servers** \> **Databases**. Select the database that was copied. In the Details pane, the status of the database copy and its content index are displayed, along with the current copy queue length.
 
   - In the Shell, run the following command to verify the mailbox database copy was created and is healthy.
-    
+
     ```powershell
     Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
     ```
-    
+
     The Status and Content Index State should both be Healthy.
 
 ## For more information
@@ -104,4 +98,3 @@ To verify that you have successfully created a mailbox database copy, do one of 
 [Mailbox database copies](mailbox-database-copies-exchange-2013-help.md)
 
 [Managing mailbox database copies](managing-mailbox-database-copies-exchange-2013-help.md)
-

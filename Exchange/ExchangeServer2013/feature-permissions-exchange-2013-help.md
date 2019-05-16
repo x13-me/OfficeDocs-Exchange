@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Online, Exchange Server 2013_
 
-
 Permissions in Microsoft Exchange Server 2013 are managed using the Role Based Access Control (RBAC) permissions model. The following topics identify the management role groups required to administer the features associated with each functional area in Exchange 2013.
 
   - [Role management permissions](role-management-permissions-exchange-2013-help.md)
@@ -44,4 +43,3 @@ Permissions in Microsoft Exchange Server 2013 are managed using the Role Based A
   - [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md)
 
   - [Server health and performance permissions](server-health-and-performance-permissions-exchange-2013-help.md)
-

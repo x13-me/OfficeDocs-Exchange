@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Using Microsoft Outlook protection rules, you can protect messages with Information Rights Management (IRM) by applying an Active Directory Rights Management Services (AD RMS) template in Outlook 2010 before the messages are sent.
 
 For additional management tasks related to IRM, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
@@ -37,11 +36,8 @@ For additional management tasks related to IRM, see [Information Rights Manageme
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## Use the Shell to create an Outlook protection rule
 
@@ -54,8 +50,6 @@ This example creates the Outlook protection rule Project Contoso. The rule prote
 > [!NOTE]
 > When you use the <CODE>SentTo</CODE> predicate for an Outlook protection rule and specify a distribution group, only messages addressed to the distribution group in the To, Cc, or Bcc fields are IRM-protected. IRM protection isn't applied to messages addressed to individual members of the distribution group.
 
-
-
 You can also use the `FromDepartment` and `SentToScope` predicates to apply IRM protection to messages sent from users in the specified department or messages sent to the specified scope (`InOrganization` for internal messages, `All` for all recipients).
 
 For detailed syntax and parameter information, see [New-OutlookProtectionRule](https://technet.microsoft.com/en-us/library/dd298182\(v=exchg.150\)).
@@ -67,9 +61,6 @@ To verify that you have successfully created an Outlook protection rule, do the 
   - Run the [Get-OutlookProtectionRule](https://technet.microsoft.com/en-us/library/dd298004\(v=exchg.150\)) cmdlet to make sure that the rule has been created and to view the rule's properties. For an example of how to retrieve an Outlook protection rule, see [Examples](https://technet.microsoft.com/en-us/dd298004\(exchg.150\)#examples) in **Get-OutlookProtectionRule**.
 
   - Use Outlook 2010 to create a test message that meets the rule's condition and make sure the rule is triggered on the client.
-    
 
     > [!NOTE]
     > It may take some time for an Outlook protection rule to be available in Outlook.
-
-

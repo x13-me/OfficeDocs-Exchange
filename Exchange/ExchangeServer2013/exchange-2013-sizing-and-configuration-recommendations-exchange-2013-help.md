@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Exchange 2013 is more demanding of system resources than previous versions of Exchange. By correctly sizing your Exchange 2013 infrastructure, and then making some recommended configurations to Exchange-related components within that infrastructure, you can lay the groundwork for an optimally performing deployment.
 
 ## Exchange 2013 Sizing
@@ -50,7 +49,6 @@ Turn off hyper-threading on physical Exchange servers. If virtualizing, hyper-th
 In Exchange Server 2013 Service Pack 1 or later, you can enable SSL offloading to help reduce CPU consumption by Client Access servers, but the complex configuration of SSL offloading may not be worth the benefit.
 
 ## .NET Framework
-
 
 <table>
 <colgroup>
@@ -88,7 +86,6 @@ In Exchange Server 2013 Service Pack 1 or later, you can enable SSL offloading t
 </tr>
 </tbody>
 </table>
-
 
 1 .NET Framework 4.6.1 requires post-release fixes if you want to install it on a server running Exchange 2013 CU13. For more information. see [Exchange 2013 prerequisites](exchange-2013-prerequisites-exchange-2013-help.md).
 
@@ -221,4 +218,3 @@ As a best practice, uninstall or disable third party software while troubleshoot
   - Auditing software, for both files and users
 
   - Archiving solutions
-

@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Apply a sharing policy to mailboxes
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Sharing policies are a part of federated sharing and enable user-established, people-to-people sharing of calendar information with different types of external users. The sharing policy that an admin applies to the user's mailbox determines what level of access a user can share and with whom. If you don't change anything, then the default sharing policy applies to all users. If you create a new sharing policy, you have to apply that policy to mailboxes before it takes effect. A sharing policy can be applied to a single user mailbox or to multiple user mailboxes simultaneously. An admin can also disable a user's sharing policy to prevent external access to calendars.
 
@@ -37,29 +34,29 @@ To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.
 
 ## Use the EAC to apply a sharing policy to a single mailbox
 
-1.  Navigate to **recipients** \> **mailboxes**.
+1. Navigate to **recipients** \> **mailboxes**.
 
-2.  In the list view, select the mailbox you want, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the mailbox you want, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3.  In **User Mailbox**, click **mailbox features**.
+3. In **User Mailbox**, click **mailbox features**.
 
-4.  In the **Sharing policy** list, select the sharing policy you want to apply to this mailbox.
+4. In the **Sharing policy** list, select the sharing policy you want to apply to this mailbox.
 
-5.  Click **save** to apply the sharing policy.
+5. Click **save** to apply the sharing policy.
 
 ## Use the EAC to apply a sharing policy to multiple mailboxes
 
-1.  Navigate to **recipients** \> **mailboxes**.
+1. Navigate to **recipients** \> **mailboxes**.
 
-2.  In the list view, hold the Ctrl key while you select multiple mailboxes..
+2. In the list view, hold the Ctrl key while you select multiple mailboxes..
 
-3.  In the details pane, the mailbox properties will be configured for bulk editing. Click **More options**.
+3. In the details pane, the mailbox properties will be configured for bulk editing. Click **More options**.
 
-4.  Under **Sharing policy**, click **Update**.
+4. Under **Sharing policy**, click **Update**.
 
-5.  In **bulk assign sharing policy**, use the **Select the sharing policy** list to select a sharing policy to assign to the mailboxes.
+5. In **bulk assign sharing policy**, use the **Select the sharing policy** list to select a sharing policy to assign to the mailboxes.
 
-6.  Click **save** to apply the sharing policy to the selected mailboxes.
+6. Click **save** to apply the sharing policy to the selected mailboxes.
 
 ## Use the Shell to apply a sharing policy to one or more mailboxes
 
@@ -90,13 +87,10 @@ To verify that you have successfully applied the sharing policy to a user mailbo
   - In the EAC, navigate to **Recipients** \> **Mailboxes**, and then select the mailbox to which you applied the sharing policy. Click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), click **mailbox features**, and then confirm that the correct sharing policy appears in the **Sharing policy** list.
 
   - Run the following Shell command to verify the sharing policy was assigned to a user mailbox. Verify that the correct sharing policy is listed in the *SharingPolicy* parameter.
-    
+
     ```powershell
     Get-Mailbox <user name> | format-list
     ```
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-

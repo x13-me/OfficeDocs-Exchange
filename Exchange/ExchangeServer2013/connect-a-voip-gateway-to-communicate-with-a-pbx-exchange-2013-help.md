@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
-
 When you configure your telephony and data networks for Unified Messaging (UM) in Microsoft Exchange Server 2013, you must configure the VoIP gateways so they communicate with Client Access servers running the Microsoft Exchange Unified Messaging Call Router service and Mailbox servers running the Microsoft Exchange Unified Messaging service. You must also configure the VoIP gateways to communicate with the Private Branch eXchanges (PBXs) in your organization. You can use the information and links in this topic to configure a VoIP gateway to communicate with a PBX.
 
 ## Configuring a VoIP gateway
@@ -42,4 +41,3 @@ We recommend that all customers who plan to deploy Unified Messaging obtain the 
 [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
 [Connect UM to a supported VoIP gateway](connect-um-to-a-supported-voip-gateway-exchange-2013-help.md)
-

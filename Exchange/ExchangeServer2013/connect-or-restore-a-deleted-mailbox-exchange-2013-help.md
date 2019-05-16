@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can use the EAC or the Shell to connect a deleted mailbox to an Active Directory user account. When you delete a mailbox, Exchange retains the mailbox in the mailbox database and switches the mailbox to a disabled state. The associated Active Directory user account is also deleted. The mailbox is retained until the deleted mailbox retention period expires, which is 30 days by default, and then it's permanently deleted (or *purged*) from the mailbox database.
 
 Until a deleted mailbox is permanently deleted from the Exchange mailbox database, you can use the EAC or the Shell to connect it to an Active Directory user account. You can also use the Shell to restore the contents of the deleted mailbox to an existing mailbox.
@@ -40,9 +39,8 @@ To learn more about disconnected mailboxes and perform other related management 
   - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
   - Create a new user account in Active Directory to connect the deleted mailbox to. Or use the **Get-User** cmdlet in the Shell to verify that the Active Directory user account that you want to connect the deleted mailbox to exists and that it isn't already associated with another mailbox. To connect a deleted mailbox to a user account, the account must exist and the value for the *RecipientType* property has to be `User`, which indicates that the account isn't already mailbox-enabled.
-    
+
     For on-premises Exchange organizations, you can also verify this information in Active Directory Users and Computers.
-    
 
     > [!IMPORTANT]
     > When you connect deleted linked mailboxes, resource mailboxes, or shared mailboxes, the Active Directory user account that you're connecting the mailbox to must be disabled.
@@ -70,37 +68,31 @@ When you connect a deleted mailbox, you associate the mailbox with a user accoun
 
 The following procedure shows how to connect a deleted user mailbox to a user account. You can also use this procedure to connect linked mailboxes, resource mailboxes, and shared mailboxes that have been deleted to a user account.
 
-1.  In the EAC, navigate to **Recipients** \> **Mailboxes**.
+1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
 
-2.  Click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Connect a mailbox**.
-    
+2. Click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Connect a mailbox**.
+
     A list of mailboxes that are disconnected on the selected Exchange server in your Exchange organization will be displayed.
-    
 
     > [!NOTE]
     > This list of disconnected mailboxes includes disabled mailboxes, deleted mailboxes, and soft-deleted mailboxes.
 
+3. Click the deleted mailbox that you want to connect a user to, and then click **Connect**.
 
+4. In the window that asks if you're sure that you want to connect the mailbox, click **Yes**.
 
-3.  Click the deleted mailbox that you want to connect a user to, and then click **Connect**.
-
-4.  In the window that asks if you're sure that you want to connect the mailbox, click **Yes**.
-    
     A list of user accounts that aren't mail-enabled is displayed.
 
-5.  Click the user that you want to connect the deleted mailbox to, and then click **OK**.
-    
+5. Click the user that you want to connect the deleted mailbox to, and then click **OK**.
+
     Exchange will connect the deleted mailbox to the user account that you selected.
 
 ## Use the Shell to connect a deleted mailbox
 
 Use the **Connect-Mailbox** cmdlet in the Shell to connect a deleted mailbox to a user account that isn't mail enabled. You have to specify the type of mailbox that you're connecting. The following examples show the syntax for reconnecting user, linked, room, equipment, and shared mailboxes. In all examples, the optional *Alias* parameter is used to specify the email alias, which is the portion of the email address on the left side of the at (@) symbol. If you don't include the *Alias* parameter, the value specified in the *User* or *LinkedMasterAccount* parameter is used to create the alias for the email address for the reconnected mailbox.
 
-
 > [!NOTE]
 > As previously stated, when you connect linked, resource, or shared mailboxes, the Active Directory user account that you're linking the mailbox to must be disabled.
-
-
 
 This example connects a user mailbox. The *Identity* parameter specifies the display name of the deleted mailbox retained in the mailbox database named MBXDB01. The *User* parameter specifies the Active Directory user account to connect the mailbox to.
 
@@ -108,11 +100,8 @@ This example connects a user mailbox. The *Identity* parameter specifies the dis
 Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
 ```
 
-
 > [!NOTE]
 > You can also use the values for the <CODE>LegacyDN</CODE> or <CODE>MailboxGuid</CODE> properties to identify the deleted mailbox.
-
-
 
 This example connects a linked mailbox. The *Identity* parameter specifies the deleted mailbox on the mailbox database named MBXDB02. The *LinkedMasterAccount* parameter specifies the Active Directory user account in the account forest that you want to connect the mailbox to. The *LinkedDomainController* parameter specifies a domain controller in the account forest.
 
@@ -135,8 +124,6 @@ This example connects a shared mailbox.
 > [!NOTE]
 > You can also use the <CODE>LegacyDN</CODE> or <CODE>MailboxGuid</CODE> values to identify the deleted mailbox.
 
-
-
 For detailed syntax and parameter information, see [Connect-Mailbox](https://technet.microsoft.com/en-us/library/aa997878\(v=exchg.150\)).
 
 ## How do you know this worked?
@@ -148,11 +135,11 @@ To verify that you've successfully connected a deleted mailbox to a user account
   - In Active Directory Users and Computers, right-click the user account that you connected to the mailbox, and then click **Properties**. On the **General** tab, notice that the **E-mail** box is populated with the email address for the connected mailbox.
 
   - In the Shell, run the following command.
-    
+
     ```powershell
     Get-User <identity>
     ```
-    
+
     The **UserMailbox** value for the *RecipientType* property indicates that the user account and the mailbox are connected. You can also run the **Get-Mailbox \<identity\>** command to verify that the mailbox was connected.
 
 ## Restore a deleted mailbox
@@ -194,13 +181,12 @@ If you hard deleted a public folder mailbox that you now want to restore, and th
 You will need the GUID of the deleted public folder mailbox, as well as the GUID or name of the mailbox database that contained the public folder mailbox. If you don't have this information, you can take the following steps:
 
 1. Get the Active Directory forest and domain controller fully-qualified domain name (FQDN) by running the following cmdlet:
-    
+
     ```powershell
     Get-OrganizationConfig | fl OriginatingServer
     ```
 
 2. With the information returned by Step 1, search the Deleted Objects container in Active Directory for the GUID of the public folder mailbox and for the GUID or name of the mailbox database that the deleted public folder mailbox was contained in.
-    
 
     > [!TIP]
     > You can search Deleted Objects using a custom script or by using the Ldp utility, which can be opened by typing <STRONG>ldp.exe</STRONG> at a Powershell prompt.
@@ -208,9 +194,9 @@ You will need the GUID of the deleted public folder mailbox, as well as the GUID
 When you know the deleted public folder mailbox GUID and the name or GUID of the mailbox database that contained the public folder mailbox, run the following commands to restore the public folder mailbox.
 
 1. Create a new Active Directory object by running the following commands (you may be prompted to provide appropriate credentials):
-    
+
     ```powershell
-        New-MailUser <mailUserName> -ExternalEmailAddress <emailAddress> 
+        New-MailUser <mailUserName> -ExternalEmailAddress <emailAddress>
     ```
     ```powershell
         Get-MailUser <mailUserName> | Disable-MailUser
@@ -219,7 +205,7 @@ When you know the deleted public folder mailbox GUID and the name or GUID of the
     Where `<mailUserName>`, `<emailAddress>`, and `<mailUserName>` are values you choose. You will need to use the same `<mailUserName>` value in the next step.
 
 2. Connect the deleted public folder mailbox to the Active Directory object you just created by running the following command:
-    
+
     ```powershell
         Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
     ```
@@ -228,11 +214,11 @@ When you know the deleted public folder mailbox GUID and the name or GUID of the
     > The <CODE>Identity</CODE> parameter specifies the mailbox object in the Exchange database to connect to an Active Directory user object. The above example specifies the GUID for the public folder mailbox, but you can also use the Display name value or the LegacyExchangeDN value.
 
 3. Run `Update-StoreMailboxState` on the public folder mailbox, based on the following example:
-    
+
     ```powershell
         Update-StoreMailboxState -Identity <public folder mailbox GUID> -Database <database name or GUID>
     ```
-    
+
     As in Step 2, the `Identity` parameter will accept GUID, Display Name, or LegacyExchangeDN values for the public folder mailbox.
 
 ## How do you know this worked?

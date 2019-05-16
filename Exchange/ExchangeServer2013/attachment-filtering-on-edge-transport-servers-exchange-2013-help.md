@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Attachment filtering on Edge Transport servers
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 In Microsoft Exchange Server 2013, you can use attachment filtering on Edge Transport servers to control the attachments that users receive in email messages. Attachment filtering is performed by the Attachment Filtering agent, which is available only on Edge Transport servers.
 
@@ -28,9 +25,9 @@ You can use the following types of attachment filtering to control attachments t
   - **Filtering based on file name or file name extension**: You specify the exact file name or file name extension that you want to filter. An example of a file name filter is `BadFileName.exe`. An example of a file name extension filter is `*.exe`.
 
   - **Filtering based on file MIME content type**: You specify the MIME content type value that you want to filter. The MIME content type value indicates what the attachment is: for example, a JPEG image, an executable file, or a Microsoft Excel file. Content types are expressed as `type/subtype`. For example, a JPEG image file is expressed as `image/jpeg`.
-    
+
     To view a complete list of file name extensions and content types that attachment filtering can detect, run the following command on the Edge Transport server:
-    
+
     ```powershell
     Get-AttachmentFilterEntry | Format-List
     ```
@@ -45,8 +42,5 @@ After you define the files to look for, you can configure the action to take on 
 
 For more information, see [Manage attachment filtering on Edge Transport servers](manage-attachment-filtering-on-edge-transport-servers-exchange-2013-help.md).
 
-
 > [!NOTE]
 > You can't retrieve messages that have been blocked or attachments that have been stripped. When you configure attachment filters, carefully examine all possible file name matches and verify that legitimate attachments won't be affected by the filter.<BR>Also, don't remove attachments from digitally signed, encrypted, or rights-protected email messages. If you remove attachments from such messages, you invalidate the digitally signed messages and make encrypted and rights-protected messages unreadable.
-
-

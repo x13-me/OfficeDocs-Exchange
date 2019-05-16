@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Dial tone portability is a feature of Microsoft Exchange Server 2013 that provides a limited business continuity solution for failures that affect a mailbox database, a server, or an entire site. Dial tone portability enables users to have a temporary mailbox for sending and receiving email while their original mailbox is being restored or repaired. The temporary mailbox can be on the same Exchange 2013 Mailbox server or on any other Exchange 2013 Mailbox server in your organization that has databases with the same database schema version. This allows an alternative server to host the mailboxes of users who were previously on a server that is no longer available. Clients that support Autodiscover are automatically redirected to the new server without having to manually update the user's desktop profile. After the user's original mailbox data has been restored, an administrator can merge a user's recovered mailbox and the user's dial tone mailbox into a single, up-to-date mailbox.
 
 The process for using dial tone portability is called a *dial tone recovery*. A dial tone recovery involves creating an empty database on a Mailbox server to replace a failed database. This empty database, referred to as a *dial tone database*, allows users to send and receive email messages while the failed database is recovered.
@@ -33,21 +32,20 @@ There are three options for performing a dial tone recovery:
 
 All three options follow the same basic steps:
 
-1.  **Create an empty dial tone database to replace the failed database.**
-    
+1. **Create an empty dial tone database to replace the failed database.**
+
     This new database will allow users who had mailboxes on the failed database to send and receive new messages. Dial tone portability allows you to point a user to a different database without moving the mailbox. If you created the dial tone database on a different server than the server that housed the failed database, you need to move the mailbox configuration to that new server.
 
-2.  **Restore the old database.**
-    
+2. **Restore the old database.**
+
     Use the backup and recovery software you typically use to restore the failed database. If there is no backup of the failed database, recover the failed database using other means if possible. If you're using the same server for dial tone recovery, you need to restore the database to a recovery database (RDB).
 
-3.  **Swap the dial tone database with the restored database.**
-    
+3. **Swap the dial tone database with the restored database.**
+
     After the failed database is restored, swap it with the dial tone database. This gives the users the ability to send and receive email and access all the data in the restored database. If users were moved to a dial tone database on another server, you need to move the mailbox configuration back to the original server.
 
-4.  **Merge the databases.**
-    
+4. **Merge the databases.**
+
     To get the data from the dial tone database into the restored database, you merge the data using the [New-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829875\(v=exchg.150\)) cmdlet.
 
 For detailed steps about how to perform a dial tone recovery, see [Perform a dial tone recovery](perform-a-dial-tone-recovery-exchange-2013-help.md).
-

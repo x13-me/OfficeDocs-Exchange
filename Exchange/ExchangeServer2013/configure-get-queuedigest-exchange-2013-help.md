@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 The **Get-QueueDigest** cmdlet allows you to view information about some or all of the queues in your Exchange organization by using a single command.
 
 By default, the results returned by the **Get-QueueDigest** cmdlet are between one and two minutes old. These values are controlled by the following settings:
@@ -53,46 +52,43 @@ By default, delivery queues that have the status Active, Connecting, Ready, or R
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
 
-
-
 ## Configure Get-QueueDigest
 
-1.  In a Command Prompt window, open the EdgeTransport.exe.config file in Notepad by running the following command:
-    
+1. In a Command Prompt window, open the EdgeTransport.exe.config file in Notepad by running the following command:
+
     ```powershell
         Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
     ```
 
-2.  Add one or both of the following keys in the `<appSettings>` section.
+2. Add one or both of the following keys in the `<appSettings>` section.
     ```Command&nbsp;Line
         <add key="QueueLoggingThreshold" value="<integer>" />
         <add key="QueueLoggingInterval" value="<hh:mm:ss>" />
     ```
-    
+
     For example, to set the **QueueLoggingThreshold** value to 1 and the **QueueLoggingInterval** value to 30 seconds, use the following values:
     ```Command&nbsp;Line
         <add key="QueueLoggingThreshold" value="1" />
         <add key="QueueLoggingInterval" value="00:00:30" />
     ```
 
-3.  When you are finished, save and close the EdgeTransport.exe.config file.
+3. When you are finished, save and close the EdgeTransport.exe.config file.
 
-4.  Restart the Microsoft Exchange Transport service by running the following command:
+4. Restart the Microsoft Exchange Transport service by running the following command:
     ```powershell
         net stop MSExchangeTransport && net start MSExchangeTransport
     ```
-5.  To change the value of the *QueueDiagnosticsAggregationInterval* parameter in the Exchange Management Shell, use the following syntax:
-    
+5. To change the value of the *QueueDiagnosticsAggregationInterval* parameter in the Exchange Management Shell, use the following syntax:
+
     ```powershell
         Set-TransportConfig -QueueDiagnosticsAggregationInterval <hh:mm:ss>
     ```
-    
+
     For example, to change the value to 30 seconds, run the following command:
-    
+
     ```powershell
         Set-TransportConfig -QueueDiagnosticsAggregationInterval 00:00:30
     ```
@@ -101,9 +97,9 @@ By default, delivery queues that have the status Active, Connecting, Ready, or R
 
 To verify that you have successfully configured **Get-QueueDigest**, do the following:
 
-1.  Verify the values of the **QueueLoggingThreshold** and **QueueLoggingInterval** keys in the EdgeTransport.exe.config file. If the keys aren't present, the default values are used.
+1. Verify the values of the **QueueLoggingThreshold** and **QueueLoggingInterval** keys in the EdgeTransport.exe.config file. If the keys aren't present, the default values are used.
 
-2.  Verify the value of the *QueueDiagnosticsAggregationInterval* parameter by running the following command:
+2. Verify the value of the *QueueDiagnosticsAggregationInterval* parameter by running the following command:
     ```powershell
         Get-TransportConfig | Format-List *queue*
     ```

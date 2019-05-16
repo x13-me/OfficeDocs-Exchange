@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Every day, information workers use e-mail to exchange sensitive information such as financial reports and data, legal contracts, confidential product information, sales reports and projections, competitive analysis, research and patent information, and customer and employee information. Because people can now access their e-mail from just about anywhere, mailboxes have transformed into repositories containing large amounts of potentially sensitive information. As a result, information leakage can be a serious threat to organizations. To help prevent information leakage, Microsoft Exchange Server 2013 includes Information Rights Management (IRM) features, which provide persistent online and offline protection of e-mail messages and attachments.
 
 **Contents**
@@ -94,7 +93,6 @@ Although traditional solutions to information leakage may protect initial access
 </tbody>
 </table>
 
-
 Finally, traditional solutions often lack enforcement tools that apply uniform messaging policies to prevent information leakage. For example, a user sends a message containing sensitive information and marks it as **Company Confidential** and **Do Not Forward**. After the message is delivered to the recipient, the sender or the organization no longer has control over the information. The recipient can willfully or inadvertently forward the message (using features such as automatic forwarding rules) to external e-mail accounts, subjecting your organization to substantial information leakage risks.
 
 Return to top
@@ -105,11 +103,8 @@ In Exchange 2013, you can use IRM features to apply persistent protection to mes
 
 AD RMS uses extensible rights markup language (XrML)-based certificates and licenses to certify computers and users, and to protect content. When content such as a document or a message is protected using AD RMS, an XrML license containing the rights that authorized users have to the content is attached. To access IRM-protected content, AD RMS-enabled applications must procure a use license for the authorized user from the AD RMS cluster.
 
-
 > [!NOTE]
 > In Exchange 2013, the Prelicensing agent attaches a use license to messages protected using the AD&nbsp;RMS cluster in your organization. For more details, see Prelicensing later in this topic.
-
-
 
 Applications used to create content must be RMS-enabled to apply persistent protection to content using AD RMS. Microsoft Office applications, such as Word, Excel, PowerPoint and Outlook are RMS-enabled and can be used to create and consume protected content.
 
@@ -158,12 +153,9 @@ In Exchange 2010, IRM protection can be applied to messages using the following 
   - **Automatically in Outlook 2010 and later**: You can create Outlook protection rules to automatically IRM-protect messages in Outlook 2010 and later. Outlook protection rules are deployed automatically to Outlook 2010 clients, and IRM-protection is applied by Outlook 2010 when the user is composing a message. For more information about Outlook protection rules, see [Outlook protection rules](outlook-protection-rules-exchange-2013-help.md).
 
   - **Automatically on Mailbox servers**: You can create transport protection rules to automatically IRM-protect messages on Exchange 2013 Mailbox servers. For more information about transport protection rules, see [Transport protection rules](transport-protection-rules-exchange-2013-help.md).
-    
 
     > [!NOTE]
     > IRM protection isn't applied again to messages that are already IRM-protected. For example, if a user IRM-protects a message in Outlook or Outlook Web App, IRM protection isn't applied to the message using a transport protection rule.
-
-
 
 Return to top
 
@@ -214,7 +206,6 @@ Scenarios for IRM protection are described in the following table.
 </tbody>
 </table>
 
-
 Return to top
 
 ## Decrypting IRM-protected messages to enforce messaging policies
@@ -226,12 +217,9 @@ To enforce messaging policies and for regulatory compliance, you must be able to
   - **Journal report decryption**: To meet compliance or business requirements, organizations can use journaling to preserve messaging content. The Journaling agent creates a journal report for messages subject to journaling and includes metadata about the message in the report. The original message is attached to the journal report. If the message in a journal report is IRM-protected, journal report decryption attaches a cleartext copy of the message to the journal report. For more information, see [Journal report decryption](journal-report-decryption-exchange-2013-help.md).
 
   - **IRM decryption for Exchange Search**: With IRM decryption for Exchange Search, Exchange Search can index content in IRM-protected messages. When a discovery manager performs an In-Place eDiscovery search, IRM-protected messages that have been indexed are returned in search results. For more information, see [In-Place eDiscovery](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
-    
 
     > [!NOTE]
     > In Exchange 2010 SP1 and later, members of the Discovery Management role group can access IRM-protected messages returned by a discovery search and residing in a discovery mailbox. To enable this functionality, use the <EM>EDiscoverySuperUserEnabled</EM> parameter with <A href="https://technet.microsoft.com/en-us/library/dd979792(v=exchg.150)">Set-IRMConfiguration</A> cmdlet. For more information, see <A href="configure-irm-for-exchange-search-and-https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">Configure IRM for Exchange Search and In-Place eDiscovery</A>.
-
-
 
 To enable these decryption features, Exchange servers must have access to the message. This is accomplished by adding the Federation mailbox, a system mailbox created by Exchange Setup, to the super users group on the AD RMS server. For details, see [Add the Federation Mailbox to the AD RMS Super Users Group](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
 
@@ -247,11 +235,8 @@ Return to top
 
 In Exchange 2013, IRM functionality is enabled using transport agents in the Transport service on Mailbox servers. IRM agents are installed by Exchange Setup on a Mailbox server. You can't control IRM agents using the management tasks for transport agents.
 
-
 > [!NOTE]
 > In Exchange 2013, IRM agents are built-in agents. Built-in agents aren't included in the list of agents returned by the <STRONG>Get-TransportAgent</STRONG> cmdlet. For more information, see <A href="transport-agents-exchange-2013-help.md">Transport agents</A>.
-
-
 
 The following table lists the IRM agents implemented in the Transport service on Mailbox servers.
 
@@ -298,7 +283,6 @@ The following table lists the IRM agents implemented in the Transport service on
 </tr>
 </tbody>
 </table>
-
 
 For more information about transport agents, see [Transport agents](transport-agents-exchange-2013-help.md).
 
@@ -359,18 +343,11 @@ To implement IRM in your Exchange 2013 organization, your deployment must meet t
 </tbody>
 </table>
 
-
-
 > [!NOTE]
 > <EM>AD&nbsp;RMS</EM> <EM>cluster</EM> is the term used for an AD&nbsp;RMS deployment in an organization, including a single server deployment. AD&nbsp;RMS is a Web service. It doesn't require that you set up a Windows Server failover cluster. For high availability and load-balancing, you can deploy multiple AD&nbsp;RMS servers in the cluster and use Network Load Balancing.
 
-
-
-
 > [!IMPORTANT]
 > In a production environment, installing AD&nbsp;RMS and Exchange on the same server isn't supported.
-
-
 
 Exchange 2013 IRM features support Microsoft Office file formats. You can extend IRM protection to other file formats by deploying custom protectors. For more information about custom protectors, see Information Protection and Control Partners in [Independent Software Vendors](https://go.microsoft.com/fwlink/p/?linkid=210336).
 
@@ -403,4 +380,3 @@ Return to top
 The Microsoft Rights Management connector (RMS connector) is an optional application that enhances data protection for your Exchange 2013 server by employing cloud-based Microsoft Rights Management services. Once you install the RMS connector, it provides continuous data protection during the lifespan of the information and because these services are customizable, you can define the level of protection you need. For example, you can limit email message access to specific users or set view-only rights for certain messages.
 
 To learn more about the RMS connector and how to install it, see [Rights Management connector](https://technet.microsoft.com/en-us/library/dn375964.aspx).
-

@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Online, Exchange Server 2013 SP1_
 
-
 Ensuring that users have a good email experience has always been the primary objective for messaging system administrators. To help ensure the availability and reliability of your Microsoft Exchange Server 2013 organization, all aspects of the system must be actively monitored, and any detected issues must be resolved quickly. In previous versions of Exchange, monitoring critical system components typically involved using an external application such as Microsoft System Center 2012 Operations Manager to collect data, and to provide recovery action for problems detected as a result of analyzing the collected data. Exchange 2010 and previous versions included health manifests and correlation engines in the form of management packs. These components enabled Operations Manager to make a determination as to whether a particular component was healthy or unhealthy. In addition, Operations Manager also used the diagnostic cmdlet infrastructure built into Exchange 2010 to run synthetic transactions against various aspects of the system.
 
 Exchange 2013 takes a new approach to monitoring and preserving the end user experience natively using a feature called *Managed Availability* that provides built-in monitoring and recovery actions.
@@ -85,11 +84,8 @@ There are hundreds of recurrent probes. Many of these probes are per-database, s
 
 The basics of a recurrent probe are as follows: start every *RecurrenceIntervalSeconds* and check (or probe) some aspect of health. If the component is healthy, the probe passes and writes an informational event to the Microsoft.Exchange.ActiveMonitoring\\ProbeResult channel with a *ResultType* of 3. If the check fails or times out, the probe fails and writes an error event to the same channel. A *ResultType* of 4 means the check failed and a *ResultType* of 1 means that it timed out. Many probes will re-run if they timeout, up to the value of the *MaxRetryAttempts* property.
 
-
 > [!NOTE]
 > <STRONG>Note</STRONG> The ProbeResult crimson channel can get very busy with hundreds of probes running every few minutes and logging an event, so there can be a real impact on the performance of your Exchange server if you try expensive queries against the event logs in a production environment.
-
-
 
 Notifications are probes that are not run by the health manager framework, but by some other service on the server. These services perform their own monitoring, and then feed their data into the Managed Availability framework by directly writing probe results. You won't see these probes in the ProbeDefinition channel, as this channel only describes probes that will be run by the Managed Availability framework. For example, the ServerOneCopyMonitor Monitor is triggered by probe results written by the MSExchangeDAGMgmt service. This service performs its own monitoring, determines whether there is a problem, and logs a probe result. Most notification probes have the capability to log both a red event that turns the monitor unhealthy and a green event that makes the monitor healthy again.
 
@@ -197,7 +193,6 @@ The two primary management tools for managed availability are the Windows Event 
 
 There are 12 cmdlets used for managed availability, which are described in the following table.
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -260,4 +255,3 @@ There are 12 cmdlets used for managed availability, which are described in the f
 </tr>
 </tbody>
 </table>
-

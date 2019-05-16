@@ -18,14 +18,10 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can configure specific anti-spam settings on individual mailboxes that are different than the anti-spam settings that are applied to the rest of the mailboxes in your Exchange organization. When you configure an anti-spam setting on a mailbox, that setting overrides the corresponding organization-wide content filtering or organization configuration anti-spam setting.
-
 
 > [!NOTE]
 > On November 1, 2016, Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook. The existing SmartScreen spam definitions will be left in place, but their effectiveness will likely degrade over time. For more information, see <A href="https://go.microsoft.com/fwlink/p/?linkid=835894">Deprecating support for SmartScreen in Outlook and Exchange</A>.
-
-
 
 ## What do you need to know before you begin?
 
@@ -41,11 +37,8 @@ You can configure specific anti-spam settings on individual mailboxes that are d
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -67,12 +60,12 @@ Set-Mailbox "Jeff Phillips" -AntispamBypassEnabled $true -SCLJunkEnabled $true -
 
 To verify that you have successfully configured the anti-spam features on a single mailbox, do the following:
 
-1.  Run the following command:
+1. Run the following command:
 
-    ```powershell    
+    ```powershell
         Get-Mailbox <MailboxIdentity> | Format-List SCL*,Bypass*,*SenderAuth*
     ```
-2.  Verify the value displayed is the value you configured.
+2. Verify the value displayed is the value you configured.
 
 ## Use the Shell to configure anti-spam features on multiple mailboxes
 
@@ -92,13 +85,13 @@ This example enables the SCL quarantine threshold with a value of 7 on all mailb
 
 To verify that you have successfully configured the anti-spam features on multiple mailboxes, do the following:
 
-1.  Run the following command:
+1. Run the following command:
 
-    ```powershell    
+    ```powershell
         Get-Mailbox [<Filter>] | Format-List Name,SCL*,*SenderAuth*
     ```
 
-2.  Verify the values displayed are the values you configured.
+2. Verify the values displayed are the values you configured.
 
 ## Use the Shell to configure the junk email threshold for all mailboxes in your organization
 
@@ -118,11 +111,10 @@ Set-OrganizationConfig -SCLJunkThreshold 5
 
 To verify that you have successfully configured the junk email threshold for all mailboxes in your organization, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-OrganizationConfig | Format-List SCLJunkThreshold
     ```
 
-2.  Verify the value displayed is the value you configured.
-
+2. Verify the value displayed is the value you configured.

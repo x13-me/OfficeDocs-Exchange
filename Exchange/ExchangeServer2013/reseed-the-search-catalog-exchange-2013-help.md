@@ -16,11 +16,9 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 If the content index catalog for a mailbox database copy gets corrupted, you may need to reseed the catalog. Corrupted content indexes are indicated in the Application event log by the following event.
-
 
 <table>
 <colgroup>
@@ -46,7 +44,6 @@ If the content index catalog for a mailbox database copy gets corrupted, you may
 </tr>
 </tbody>
 </table>
-
 
 If the mailbox database copy is located on a server that is part of a database availability group (DAG), you can reseed the content index catalog from another DAG member.
 
@@ -92,9 +89,8 @@ For detailed syntax and parameter information, see [Update-MailboxDatabaseCopy](
 
 If there is only one copy of the mailbox database, you have to manually reseed the search catalog by recreating the content index catalog.
 
-1.  Run the following commands to stop the Microsoft Exchange Search and Microsoft Exchange Search Host Controller services.
-    
-        
+1. Run the following commands to stop the Microsoft Exchange Search and Microsoft Exchange Search Host Controller services.
+
     ```powershell
     Stop-Service MSExchangeFastSearch
     ```
@@ -103,25 +99,21 @@ If there is only one copy of the mailbox database, you have to manually reseed t
     Stop-Service HostControllerService
     ```
 
-2.  Delete, move, or rename the folder that contains the Exchange content index catalog. This folder is named `%ExchangeInstallPath\Mailbox\<name of mailbox database>_Catalog\<GUID>12.1.Single`. For example, you might rename the folder `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 0657134726_Catalog\F0627A72-9F1D-494A-839A-D7C915C279DB12.1.Single_OLD`.
-    
+2. Delete, move, or rename the folder that contains the Exchange content index catalog. This folder is named `%ExchangeInstallPath\Mailbox\<name of mailbox database>_Catalog\<GUID>12.1.Single`. For example, you might rename the folder `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 0657134726_Catalog\F0627A72-9F1D-494A-839A-D7C915C279DB12.1.Single_OLD`.
 
     > [!NOTE]
     > Deleting this folder will make additional disk space available. Alternatively, you might want to rename or move the folder to keep it for troubleshooting purposes.
 
+3. Run the following commands to restart the Microsoft Exchange Search and Microsoft Exchange Search Host Controller services.
 
-
-3.  Run the following commands to restart the Microsoft Exchange Search and Microsoft Exchange Search Host Controller services.
-    
     ```powershell
     Start-Service MSExchangeFastSearch
     ```
-    
+
     ```powershell
     Start-Service HostControllerService
     ```
-    
-    
+
     After you restart these services, Exchange Search will rebuild the content index catalog.
 
 ## How do you know this worked?
@@ -133,4 +125,3 @@ It might take a while for Exchange Search to reseed the content index catalog. R
 ```
 
 When the reseeding of the search catalog is in progress, the value of the *ContentIndexState* property is **Crawling**. When the reseeding is complete, this value is changed to **Healthy**.
-

@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:**: Exchange Server_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -30,4 +29,3 @@ Exchange 2010 setup requires that a failed server role uninstall be successfully
 To address this issue, uninstall the failed server role(s), and then rerun setup.
 
 For more information about how to remove a server role, see the Exchange 2007 product documentation topic, "How to Remove Exchange 2007 Server Roles" (<https://go.microsoft.com/fwlink/?linkid=86649>).
-

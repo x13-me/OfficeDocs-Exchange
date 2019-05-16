@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Welcome to Microsoft Exchange Server 2013\! We know you're eager to get started, but there are a few things you should be aware of before you start working with Exchange 2013 and using this content.
 
   - If you want a quick overview of what's new in Exchange 2013, check out [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).
@@ -28,33 +27,28 @@ Welcome to Microsoft Exchange Server 2013\! We know you're eager to get started,
   - If you need more help or want to share ideas, the [Exchange Server forums](https://go.microsoft.com/fwlink/p/?linkid=60612) are a great place to start.
 
   - To get started with Exchange 2013, head for [Planning and deployment](planning-and-deployment-for-exchange-2013-installation-instructions.md). It lays out the recommended sequence for preparing for and then installing Exchange 2013 and includes the following important topics:
-    
+
       - [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md)
-    
+
       - [Exchange 2013 prerequisites](exchange-2013-prerequisites-exchange-2013-help.md)
-    
+
       - [Prepare Active Directory and domains](prepare-active-directory-and-domains-exchange-2013-help.md)
-    
+
       - [Install Exchange 2013 using the Setup wizard](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md)
-    
+
       - [Install Exchange 2013 using unattended mode](install-exchange-2013-using-unattended-mode-exchange-2013-help.md)
-    
+
       - [Exchange 2013 post-Installation tasks](exchange-2013-post-installation-tasks-exchange-2013-help.md)
-    
+
      
-    
 
     > [!TIP]
     > Have you heard about the Exchange Server Deployment Assistant? It's a free online tool that helps you quickly deploy Exchange 2013 in your organization by asking you a few questions and creating a customized deployment checklist just for you. If you want to learn more about it, go to <A href="exchange-server-deployment-assistant-exchange-2013-help.md">Exchange Server Deployment Assistant</A>.
 
-    
      
-    
 
     > [!IMPORTANT]
     > Make sure you read <A href="release-notes-for-exchange-2013-exchange-2013-help.md">Release notes for Exchange 2013</A> before you begin your deployment. The release notes contain important information about issues you might run into during and after your deployment.
-
-
 
   - For information on how to download Exchange 2013, see [Updates for Exchange 2013](updates-for-exchange-2013-exchange-2013-help.md).
 
@@ -100,13 +94,9 @@ The Help content for Exchange 2013 consists of the following top-level categorie
 
   - [About Exchange documentation](https://docs.microsoft.com/en-us/exchange/about-exchange-documentation)
 
-
 > [!NOTE]
 > Check out our other Exchange content:<BR><A href="https://technet.microsoft.com/en-us/library/jj200580(v=exchg.150)">Exchange Online</A><BR><A href="https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150)">Exchange Server Hybrid Deployments</A><BR><A href="https://technet.microsoft.com/en-us/library/jj723137(v=exchg.150)">Exchange Online Protection</A>
-
-
 
 ## Tell us what you think
 
 If you have comments or questions about our topics or about the overall Help experience, we'd love to hear from you. Just send your feedback to [Exchange 2013 Help Feedback](mailto:ex2013helpfeedback@microsoft.com). Your comments will help us provide the most accurate and concise content.
-

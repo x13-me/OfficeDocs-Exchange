@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Exchange 2013 provides the following rich features that can help your end users easily collaborate in email:
 
   - Site mailboxes
@@ -62,7 +61,6 @@ To learn more, see [Recipients](recipients-exchange-2013-help.md).
 ## Which one to use?
 
 The following table gives you a quick glance at each of the collaboration features to help you decide which one to use.
-
 
 <table>
 <colgroup>
@@ -143,4 +141,3 @@ The following table gives you a quick glance at each of the collaboration featur
 </tr>
 </tbody>
 </table>
-

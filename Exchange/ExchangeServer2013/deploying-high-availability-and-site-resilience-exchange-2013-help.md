@@ -18,26 +18,25 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Microsoft Exchange Server 2013 uses the concept known as *incremental deployment* for both high availability and site resilience. You simply install two or more Exchange 2013 Mailbox servers as stand-alone servers, and then incrementally configure them and mailbox databases for high availability and site resilience, as needed.
 
 ## Overview of the deployment process
 
 While the actual steps used by each organization may vary slightly, the overall process for deploying Exchange 2013 in a highly available or site resilient configuration is generally the same. After performing the necessary planning and design tasks for building and deploying a database availability group (DAG) and creating mailbox database copies, you would:
 
-1.  Create a DAG. For detailed steps, see [Create a database availability group](create-a-database-availability-group-exchange-2013-help.md).
+1. Create a DAG. For detailed steps, see [Create a database availability group](create-a-database-availability-group-exchange-2013-help.md).
 
-2.  If necessary, pre-stage the cluster name object (CNO). Pre-staging the CNO is required when deploying a DAG with Mailbox servers running Windows Server 2012. If you are deploying a DAG without an administrative access point using Mailbox servers running Windows Server 2012 R2, then you do not need to pre-stage a CNO. Pre-staging is also required in environments where computer account creation is restricted or where computer accounts are created in a container other than the default computers container. For detailed steps, see [Pre-stage the cluster name object for a database availability group](pre-stage-the-cluster-name-object-for-a-database-availability-group-exchange-2013-help.md).
+2. If necessary, pre-stage the cluster name object (CNO). Pre-staging the CNO is required when deploying a DAG with Mailbox servers running Windows Server 2012. If you are deploying a DAG without an administrative access point using Mailbox servers running Windows Server 2012 R2, then you do not need to pre-stage a CNO. Pre-staging is also required in environments where computer account creation is restricted or where computer accounts are created in a container other than the default computers container. For detailed steps, see [Pre-stage the cluster name object for a database availability group](pre-stage-the-cluster-name-object-for-a-database-availability-group-exchange-2013-help.md).
 
-3.  Add two or more Mailbox servers to the DAG. For detailed steps, see [Manage database availability group membership](manage-database-availability-group-membership-exchange-2013-help.md).
+3. Add two or more Mailbox servers to the DAG. For detailed steps, see [Manage database availability group membership](manage-database-availability-group-membership-exchange-2013-help.md).
 
-4.  Configure the DAG properties as needed:
-    
-    1.  Optionally configure DAG encryption and compression, replication port, DAG IP addresses, and other DAG properties. For detailed steps, see [Configure database availability group properties](configure-database-availability-group-properties-exchange-2013-help.md).
-    
-    2.  Enable Datacenter Activation Coordination (DAC) mode for the DAG. This protects the DAG from database-level split brain conditions during switchback to the primary datacenter after a datacenter switchover has been performed, and it enables the use of the built-in DAG recovery cmdlets. For more information, see [Datacenter Activation Coordination mode](datacenter-activation-coordination-mode-exchange-2013-help.md).
+4. Configure the DAG properties as needed:
 
-5.  Add mailbox database copies across Mailbox servers in the DAG. For detailed steps, see [Add a mailbox database copy](add-a-mailbox-database-copy-exchange-2013-help.md).
+    1. Optionally configure DAG encryption and compression, replication port, DAG IP addresses, and other DAG properties. For detailed steps, see [Configure database availability group properties](configure-database-availability-group-properties-exchange-2013-help.md).
+
+    2. Enable Datacenter Activation Coordination (DAC) mode for the DAG. This protects the DAG from database-level split brain conditions during switchback to the primary datacenter after a datacenter switchover has been performed, and it enables the use of the built-in DAG recovery cmdlets. For more information, see [Datacenter Activation Coordination mode](datacenter-activation-coordination-mode-exchange-2013-help.md).
+
+5. Add mailbox database copies across Mailbox servers in the DAG. For detailed steps, see [Add a mailbox database copy](add-a-mailbox-database-copy-exchange-2013-help.md).
 
 ## Example deployment: four-member DAG in two datacenters
 
@@ -66,7 +65,6 @@ The following figure illustrates the Contoso configuration.
 As illustrated in the previous figure, the solution involves the use of multiple subnets and multiple networks. Each Mailbox server in the DAG has two network adapters on separate subnets. In each Mailbox server, one network adapter will be used for the MAPI network (192.168.*x*.*x*) and one network adapter will be used for the Replication network (10.0.*x*.*x*). Only the MAPI network provides connectivity to Active Directory, DNS services, other Exchange servers and clients. The adapter used for the Replication network in each member provides connectivity only to the Replication network adapters in the other members of the DAG.
 
 The settings for each network adapter in each node are detailed in the following table.
-
 
 <table>
 <colgroup>
@@ -135,7 +133,6 @@ The settings for each network adapter in each node are detailed in the following
 </tbody>
 </table>
 
-
 As shown in the preceding table, adapters used for Replication networks don't use default gateways. To provide network connectivity between each of the Replication network adapters, Contoso uses persistent static routes, which they configure by using the Netsh.exe tool.
 
 To configure routing for the Replication network adapters on MBX1 and MBX2, the following command was run on each server.
@@ -184,10 +181,8 @@ The preceding command creates the DAG DAG1, configures CAS1 to act as the witnes
 
 The preceding command configures DAG1 to use an alternate witness server of CAS4 and an alternate witness directory on CAS4 that uses the same path that was configured on CAS1.
 
-
 > [!NOTE]
 > Using the same path isn't required; Contoso has chosen to do this to standardize their configuration.
-
 
 ```powershell
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
@@ -265,11 +260,8 @@ In the preceding examples for the **Add-MailboxDatabaseCopy** cmdlet, the *Activ
 
 Although there are two copies of each active database across the WAN in the other location, seeding over the WAN was only performed once. This is because Contoso is leveraging the Exchange 2013 ability to use a passive copy of a database as the source for seeding. Using the [Add-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd298105\(v=exchg.150\)) cmdlet with the *SeedingPostponed* parameter prevents the task from automatically seeding the new database copy being created. Then, the administrator can suspend the un-seeded copy, and by using the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd335201\(v=exchg.150\)) cmdlet with the *SourceServer* parameter, the administrator can specify the local copy of the database as the source of the seeding operation. As a result, seeding of the second database copy added to each location happens locally and not over the WAN.
 
-
 > [!NOTE]
 > In the preceding example, the non-lagged database copy is seeded over the WAN, and that copy is then used to seed the lagged copy of the database that's in the same datacenter as the non-lagged copy.
-
-
 
 Contoso has configured one of the passive copies of each mailbox database as a lagged database copy to provide protection against the extremely rare but catastrophic case of database logical corruption. As a result, the administrator is configuring the lagged copies as blocked for activation by using the [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd351074\(v=exchg.150\)) cmdlet with the *ActivationOnly* parameter. This ensures that the lagged database copies won't be activated if a database or server failover occurs.
 
@@ -304,4 +296,3 @@ After the solution has been deployed, it can be extended further using increment
   - Perform database switchovers as needed. For detailed steps about how to perform a database switchover, see [Activate a mailbox database copy](activate-a-mailbox-database-copy-exchange-2013-help.md).
 
 For more information about managing the solution, see [Managing high availability and site resilience](managing-high-availability-and-site-resilience-exchange-2013-help.md).
-

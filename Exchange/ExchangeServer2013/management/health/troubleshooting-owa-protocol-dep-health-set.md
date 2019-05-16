@@ -28,7 +28,7 @@ mtps_version: v=EXCHG.150
 
 <span> </span>
 
-_**Applies to:** Exchange Server 2013, Project Server 2013_
+_**Applies to:**: Exchange Server 2013, Project Server 2013_
 
 _**Topic Last Modified:** 2015-11-10_
 
@@ -43,7 +43,6 @@ If you receive an alert that indicates that the **OWA.Protocol.DEP** health set 
 ## Explanation
 
 The **OWA.Protocol.DEP** service is monitored using the following probes and monitors.
-
 
 <table>
 <colgroup>
@@ -71,7 +70,6 @@ The **OWA.Protocol.DEP** service is monitored using the following probes and mon
 </tr>
 </tbody>
 </table>
-
 
 For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
 
@@ -115,24 +113,24 @@ To fix this issue, reinstall UCMA 4.0. For more information, see [Unified Commun
 
 This error indicates the Lync 2013 server isn't defined in the Outlook Web App application configuration (web.config) file on the Mailbox server. This `web.config` file is located at `%ExchangeInstallPath%ClientAccess\Owa`, and should contain a key named **IMServerName** that specifies the FQDN of the Lync 2013 server. To fix this issue, follow these steps:
 
-1.  In a Command prompt window, open the Outlook Web App web.config file in Notepad by running the following command:
-    
+1. In a Command prompt window, open the Outlook Web App web.config file in Notepad by running the following command:
+
         Notepad %ExchangeInstallPath%ClientAccess\Owa\web.config
 
-2.  Search for a key named **IMServerName**. If it's found, verify the FQDN of the Lync 2013 server. If the key is not found, add it by performing the following steps.
-    
-    1.  Find the tag named **\<appSection\>**.
-    
-    2.  In the **\<appSection\>** node, add the following line:
-        
+2. Search for a key named **IMServerName**. If it's found, verify the FQDN of the Lync 2013 server. If the key is not found, add it by performing the following steps.
+
+    1. Find the tag named **\<appSection\>**.
+
+    2. In the **\<appSection\>** node, add the following line:
+
             <add key="IMServerName" value="Lync Server FQDN" />
-        
+
         For example:
-        
+
             <add key="IMServerName" value="lync01.contoso.com" />
-    
-    3.  To apply the changes in Outlook Web App, run the following command:
-        
+
+    3. To apply the changes in Outlook Web App, run the following command:
+
             %windir%\system32\inetsrv\appcmd.exe recycle apppool /apppool.name:"MSExchangeOWAAppPool"
 
 </div>
@@ -147,24 +145,24 @@ You can get the certificate's thumbprint value by using the **Get-ExchangeCertif
 
 To fix this issue, follow these steps:
 
-1.  In a Command prompt window, open the Outlook Web App web.config file in Notepad by running the following command:
-    
+1. In a Command prompt window, open the Outlook Web App web.config file in Notepad by running the following command:
+
         Notepad %ExchangeInstallPath%ClientAccess\Owa\web.config
 
-2.  Search for a key named **IMCertificateThumbprint**. If it's found, verify the thumbprint value is correct. If the key is not found, add it by performing the following steps:
-    
-    1.  Find the tag named **\<appSection\>**.
-    
-    2.  In the **\<appSection\>** node, add the following line:
-        
+2. Search for a key named **IMCertificateThumbprint**. If it's found, verify the thumbprint value is correct. If the key is not found, add it by performing the following steps:
+
+    1. Find the tag named **\<appSection\>**.
+
+    2. In the **\<appSection\>** node, add the following line:
+
             <add key="IMCertificateThumbprint" value="thumbprint"/>
-        
+
         For example:
-        
+
             <add key="IMCertificateThumbprint" value="35CB4C441D55506C88E59B7946B567A4F45B3B5C" />
-    
-    3.  To apply the changes in Outlook Web App, run the following command:
-        
+
+    3. To apply the changes in Outlook Web App, run the following command:
+
             %windir%\system32\inetsrv\appcmd.exe recycle apppool /apppool.name:"MSExchangeOWAAppPool"
 
 </div>
@@ -216,4 +214,3 @@ This error indicates the certificate that's used to integrate Lync 2013 and Outl
 </div>
 
 </div>
-

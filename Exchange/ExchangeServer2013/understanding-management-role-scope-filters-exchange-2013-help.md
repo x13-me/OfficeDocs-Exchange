@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:**: Exchange Online, Exchange Server 2013_
 
 Management role scope filters can be used to define management scopes that are highly customizable. Using scope filters, you can create a scope that matches how you segment your recipients, databases, and servers so that administrators can manage only those objects they should have access to. Scope filters can use nearly any recipient, database, or server object property.
 
@@ -67,18 +66,18 @@ When put together, a simple query looks like `{ City -Eq "Vancouver" }`. This fi
 
 Another, more complex, query is `{ ((City -Eq "Vancouver") -And (Department -Eq "Sales")) -Or (Title -Like "*Manager*") }`. The filter query is evaluated in the following order:
 
-1.  The properties **City** and **Department** are evaluated. Each is set to either `True` or `False`, depending on the values stored in each property.
+1. The properties **City** and **Department** are evaluated. Each is set to either `True` or `False`, depending on the values stored in each property.
 
-2.  The results of the **City** and **Department** statements are then evaluated. If both are `True`, the entire **And** statement becomes `True`. If one or both are `False`, the entire **And** statement becomes `False`. The following applies:
-    
+2. The results of the **City** and **Department** statements are then evaluated. If both are `True`, the entire **And** statement becomes `True`. If one or both are `False`, the entire **And** statement becomes `False`. The following applies:
+
       - If the **And** statement evaluates as `True`, the entire filter query becomes `True` because the **Or** operator indicates that one side of the query, or the other, must be `True`. The object is exposed to the role assignment.
-    
+
       - If the **And** statement is `False`, the filter query continues on to evaluate the **Title** property.
 
-3.  The **Title** property is then evaluated. It's set to `True` or `False`, depending on the value that's stored in the **Title** property. The following applies:
-    
+3. The **Title** property is then evaluated. It's set to `True` or `False`, depending on the value that's stored in the **Title** property. The following applies:
+
       - If the **Title** property evaluates as `True`, the entire filter query becomes `True` because the **Or** operator indicates that one side of the query, or the other, must be `True`. The object is exposed to the role assignment.
-    
+
       - If the **Title** property evaluates as `False`, the entire filter query evaluates as `False`, and the object isn't exposed to the role assignment.
 
 The following table shows an example with values, which indicates when the complex query would evaluate as `True`, and when it would evaluate as `False`.
@@ -116,7 +115,6 @@ The following table shows an example with values, which indicates when the compl
 > [!NOTE]
 > IT Manager matches the filter query because the <STRONG>Like</STRONG> comparison operator was used, which matches partial strings when wildcard characters (*) are used in the filter query.
 
-
 </td>
 </tr>
 <tr class="odd">
@@ -127,7 +125,6 @@ The following table shows an example with values, which indicates when the compl
 </tr>
 </tbody>
 </table>
-
 
 ## Filterable recipient properties
 
@@ -238,4 +235,3 @@ You can use the following database properties when you create a management scope
   - **WhenCreated**
 
   - **WhenCreatedUTC**
-

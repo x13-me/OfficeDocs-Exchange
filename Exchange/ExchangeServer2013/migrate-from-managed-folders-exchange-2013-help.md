@@ -18,22 +18,15 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 In Microsoft Exchange Server 2013, messaging records management (MRM) is performed by using retention tags and retention policies. A retention policy is a group of retention tags that can be applied to a mailbox. For more details, see [Retention tags and retention policies](https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies). Managed folders, the MRM technology introduced in Exchange Server 2007, aren't supported.
 
 A mailbox that has a managed folder mailbox policy applied can be migrated to use a retention policy. To do so, you must create retention tags that are equivalent to the managed folders linked to the user's managed folder mailbox policy.
 
-
 > [!IMPORTANT]
 > Before you migrate from managed folders to retention policies in your production environment, we recommend that you test the process in a test environment.
 
-
-
-
 > [!TIP]
 > You can place mailboxes on retention hold to halt processing of retention policies or managed folder mailbox policies. Placing mailboxes on retention hold can be helpful in migration scenarios to avoid deleting messages or moving them to archive until new policy settings have been tested on test mailboxes or a small number of production mailboxes. For details, see <A href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">Place a mailbox on retention hold</A>.
-
-
 
 For other management tasks related to MRM, see [Messaging Records Management Procedures](https://docs.microsoft.com/en-us/office365/securitycompliance/inactive-mailboxes-in-office-365).
 
@@ -43,11 +36,8 @@ Unlike managed folders, which require users to move items to a managed folder ba
 
 Managed folders support different managed content settings for a folder, each with a different message class (such as email items or calendar items). Retention tags don't require a separate managed content settings object because the retention settings are specified in the tag's properties. It isn't supported to create retention tags for particular message classes, with the exception of a default policy tag (DPT) for voicemail messages. Retention tags also don't allow you to use journaling performed by the Managed Folder Assistant.
 
-
 > [!NOTE]
 > Journal rules, which are used to send copies of messages with a journal report to a journaling mailbox, are enforced in the transport pipeline by the Journaling agent and are independent of MRM. For more details, see <A href="journaling-exchange-2013-help.md">Journaling</A>.
-
-
 
 The following table compares the MRM functionality available when using retention tags or managed folders.
 
@@ -130,7 +120,6 @@ The following table compares the MRM functionality available when using retentio
 </tbody>
 </table>
 
-
 ## What do you need to know before you begin?
 
   - Estimated time to complete: 20 minutes.
@@ -147,19 +136,16 @@ Having problems? Ask for help in the Exchange forums. Visit the forums at [Excha
 
 The following are general steps for migrating users from this managed folder mailbox policy to a retention policy. Each step is detailed later in this topic:
 
-1.  Gather information about managed folder mailbox policies applied to all Exchange 2010 and Exchange 2007 mailboxes, managed folders in each policy and managed content settings for each managed folder. You can use the EMC or the Shell on an Exchange 2010 or Exchange 2007 server to obtain this information.
+1. Gather information about managed folder mailbox policies applied to all Exchange 2010 and Exchange 2007 mailboxes, managed folders in each policy and managed content settings for each managed folder. You can use the EMC or the Shell on an Exchange 2010 or Exchange 2007 server to obtain this information.
 
-2.  Create retention tags for the migration.
+2. Create retention tags for the migration.
 
-3.  Create a retention policy and link the newly created retention tags to the policy.
+3. Create a retention policy and link the newly created retention tags to the policy.
 
-4.  Remove the managed folder mailbox policy and then apply the retention policy to user mailboxes.
-    
+4. Remove the managed folder mailbox policy and then apply the retention policy to user mailboxes.
 
     > [!IMPORTANT]
     > After you apply the retention policy to a user and the Managed Folder Assistant runs, the managed folders in the user's mailbox become unmanaged.
-
-
 
 For the following procedures, Contoso mailboxes have a managed folder mailbox policy applied containing the following managed folders.
 
@@ -235,7 +221,6 @@ For the following procedures, Contoso mailboxes have a managed folder mailbox po
 </tbody>
 </table>
 
-
 ## How do you do this?
 
 ## Step 1: Create retention tags for the migration
@@ -245,20 +230,14 @@ You need to be assigned permissions before you can perform this procedure or pro
 There are two methods you can use for this step:
 
   - **Create retention tags based on the managed folders and their corresponding managed content settings**: With this method, you use the **New-RetentionPolicyTag** cmdlet with the *ManagedFolderToUpgrade* parameter. When you specify this parameter, the corresponding retention tag is automatically applied to the managed folder.
-    
 
     > [!IMPORTANT]
     > If the managed folder you want to port has multiple managed content settings for different message classes, only one retention tag is created, and the highest retention age of all the managed content settings is used as the retention age for the ported tag, irrespective of the message class of the managed content settings.<BR>For example, review the following managed content settings for the managed folder Corp-DeletedItems.
 
-
-
   - **Create retention tags by manually specifying the retention settings**: With this method, you use the **New-RetentionPolicyTag** cmdlet without the *ManagedFolderToUpgrade* parameter. When you don't specify this parameter, any retention policy tags you add to the policy are applied to the default folders, and the default policy tag is applied to the entire mailbox. However, any personal tags you add to the policy aren't automatically applied to the managed folders.
-
 
 > [!NOTE]
 > If you are in a mixed environment with Exchange 2013 and Exchange 2010 servers, you can use the <STRONG>Port Managed Folder</STRONG> wizard in the Exchange Management Console (EMC) on an Exchange 2010 server to easily port managed folder and corresponding managed content setting to retention tags.
-
-
 
 **Create retention tags based on managed folders**
 
@@ -278,11 +257,8 @@ For detailed syntax and parameter information, see [New-RetentionPolicyTag](http
 
 **Create retention tags manually**
 
-
 > [!NOTE]
 > You can also use the EAC to create retention tags manually (not based on settings in managed folders). For details, see <A href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">Create a Retention Policy</A>.
-
-
 
 This example creates retention tags based on the managed folders and corresponding managed content settings shown in the Contoso managed folder mailbox policy. The retention settings are specified manually without using the *ManagedFolderToUpgrade* parameter.
 
@@ -302,11 +278,8 @@ For detailed syntax and parameter information, see [New-RetentionPolicyTag](http
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-
 > [!NOTE]
 > You can also use the EAC to create a retention policy and add retention tags to the policy. For details, see <A href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">Create a Retention Policy</A>.
-
-
 
 This example creates the retention policy RP-Corp and links the newly created retention tags to the policy.
 
@@ -330,11 +303,8 @@ Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Applying retention policies" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-
 > [!NOTE]
 > You can also use the EAC to apply a retention policy to users. For details, see <A href="https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">Apply a retention policy to mailboxes</A>.
-
-
 
 This example applies the newly created retention policy RP-Corp to the mailbox user Ken Kwok.
 
@@ -349,18 +319,17 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://technet
 To verify that you have migrated from managed folders to retention policies, do the following:
 
   - Generate a report of all user mailboxes and the retention policy applied to them.
-    
+
     This command retrieves the retention policy applied to all mailboxes in an organization, and their retention hold status.
-    
+
     ```powershell
         Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*"} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
     ```
 
   - After the Managed Folder Assistant has processed a mailbox with a retention policy, use the [Get-RetentionPolicyTag](https://technet.microsoft.com/en-us/library/dd298009\(v=exchg.150\)) cmdlet to retrieve the retention tags provisioned in the user mailbox.
-    
+
     This command retrieves the retention tags actually applied to April Stewart's mailbox.
-    
+
     ```powershell
     Get-RetentionPolicyTag -Mailbox astewart
     ```
-

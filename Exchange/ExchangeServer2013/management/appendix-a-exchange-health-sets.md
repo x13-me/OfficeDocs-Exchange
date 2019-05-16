@@ -39,7 +39,6 @@ The Exchange Server 2013 Management Pack relies on the Managed Availability feat
 
 ## Customer Touch Points Health Sets
 
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -122,13 +121,11 @@ The Exchange Server 2013 Management Pack relies on the Managed Availability feat
 </tbody>
 </table>
 
-
 </div>
 
 <div>
 
 ## Service Components Health Sets
-
 
 <table>
 <colgroup>
@@ -407,13 +404,11 @@ The Exchange Server 2013 Management Pack relies on the Managed Availability feat
 </tbody>
 </table>
 
-
 </div>
 
 <div>
 
 ## Server Resources Health Sets
-
 
 <table>
 <colgroup>
@@ -452,13 +447,11 @@ The Exchange Server 2013 Management Pack relies on the Managed Availability feat
 </tbody>
 </table>
 
-
 </div>
 
 <div>
 
 ## Key Dependencies Health Sets
-
 
 <table>
 <colgroup>
@@ -492,7 +485,6 @@ The Exchange Server 2013 Management Pack relies on the Managed Availability feat
 </tbody>
 </table>
 
-
 </div>
 
 </div>
@@ -504,4 +496,3 @@ The Exchange Server 2013 Management Pack relies on the Managed Availability feat
 </div>
 
 </div>
-

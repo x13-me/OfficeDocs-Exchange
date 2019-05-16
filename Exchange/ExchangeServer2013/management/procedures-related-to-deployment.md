@@ -42,11 +42,11 @@ Before you import the Exchange Server 2013 Management Pack, verify that the SCOM
 
 Your user account needs to be a member of the Operations Manager Administrators role to perform this procedure.
 
-1.  Log on to your SCOM server and open the SCOM console.
+1. Log on to your SCOM server and open the SCOM console.
 
-2.  Click **Monitoring** and then click **Windows Computers**.
+2. Click **Monitoring** and then click **Windows Computers**.
 
-3.  Make sure that all of your Exchange servers show **Healthy**.
+3. Make sure that all of your Exchange servers show **Healthy**.
 
 ![Healthy agents in SCOM console](images/Dn195909.7d1ff0bb-419e-40dc-babf-5fa2fb7229a8(EXCHG.150).png "Healthy agents in SCOM console")
 
@@ -62,15 +62,15 @@ Before you import the Exchange Server 2013 Management Pack, verify that the agen
 
 Your user account needs to be a member of the Operations Manager Administrators role to perform this procedure.
 
-1.  Log on to your SCOM server and open the SCOM console.
+1. Log on to your SCOM server and open the SCOM console.
 
-2.  In the Operations console, click **Administration**.
+2. In the Operations console, click **Administration**.
 
-3.  Click **Agent Managed**. , right-click your Exchange server, and then select **Properties**.
+3. Click **Agent Managed**. , right-click your Exchange server, and then select **Properties**.
 
-4.  On the **Security** tab, verify that the **Allow this agent to act as a proxy and discover managed objects on other computers** check box is selected.
+4. On the **Security** tab, verify that the **Allow this agent to act as a proxy and discover managed objects on other computers** check box is selected.
 
-5.  Click **OK**.
+5. Click **OK**.
 
 </div>
 
@@ -84,23 +84,23 @@ Due to the security model under which Exchange 2013 has been tested, running the
 
 Your user account needs to be a member of the Server Management role group to perform this procedure.
 
-1.  Log on to your Exchange server.
+1. Log on to your Exchange server.
 
-2.  Click **Start** \> **Administrative Tools** \> **Services**.
+2. Click **Start** \> **Administrative Tools** \> **Services**.
 
-3.  Scroll down the list of services to find the **System Center Management** service.
+3. Scroll down the list of services to find the **System Center Management** service.
 
-4.  Verify that the **Log On As** column shows **Local System**.
+4. Verify that the **Log On As** column shows **Local System**.
 
-5.  If the **Log on As** column shows anything else, change the service log on to Local System.
-    
-    1.  Right click on **System Center Management** service and select **Properties**.
-    
-    2.  Select the **Log On** tab.
-    
-    3.  Click **Local System account** option.
-    
-    4.  Click **OK**.
+5. If the **Log on As** column shows anything else, change the service log on to Local System.
+
+    1. Right click on **System Center Management** service and select **Properties**.
+
+    2. Select the **Log On** tab.
+
+    3. Click **Local System account** option.
+
+    4. Click **OK**.
 
 </div>
 
@@ -113,4 +113,3 @@ Your user account needs to be a member of the Server Management role group to pe
 </div>
 
 </div>
-

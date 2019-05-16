@@ -44,7 +44,6 @@ If you receive an alert that indicates that the **FIPS** health set is unhealthy
 
 The **FIPS** service is monitored using the following probes and monitors.
 
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -97,7 +96,6 @@ The **FIPS** service is monitored using the following probes and monitors.
 </tbody>
 </table>
 
-
 For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
 
 </div>
@@ -114,19 +112,19 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 ## Verifying the issue
 
-1.  Identify the health set name and server name that are given in the alert.
+1. Identify the health set name and server name that are given in the alert.
 
-2.  The message details provide information about the exact cause of the alert. In most cases, the message details provide sufficient troubleshooting information to help identify the root cause. If the message details are not clear, do the following:
-    
-    1.  Open the Exchange Management Shell, and run the following command to retrieve the details of the health set that issued the alert:
-        
+2. The message details provide information about the exact cause of the alert. In most cases, the message details provide sufficient troubleshooting information to help identify the root cause. If the message details are not clear, do the following:
+
+    1. Open the Exchange Management Shell, and run the following command to retrieve the details of the health set that issued the alert:
+
             Get-ServerHealth <server name> | ?{$_.HealthSetName -eq "<health set name>"}
-        
+
         For example, to retrieve the **FIPS** health set details about server1.contoso.com, run the following command:
-        
+
             Get-ServerHealth server1.contoso.com | ?{$_.HealthSetName -eq "FIPS"}
-    
-    2.  Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be **Unhealthy**.
+
+    2. Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be **Unhealthy**.
 
 </div>
 
@@ -141,4 +139,3 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 </div>
 
 </div>
-

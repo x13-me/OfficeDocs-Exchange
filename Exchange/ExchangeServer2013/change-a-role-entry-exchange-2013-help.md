@@ -14,26 +14,17 @@ mtps_version: v=EXCHG.150
 
 # Change a role entry
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Each management role entry on a management role represents a single cmdlet. By adding parameters to or removing parameters from a role entry, which is then added to a management role, you control whether those parameters are available on that cmdlet. For more information about management role entries in Microsoft Exchange Server 2013, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
 
 You can't modify the role entries on built-in management roles.
 
-
 > [!NOTE]
 > This topic doesn't discuss how to modify unscoped management role entries on an unscoped management role. For more information about how to modify unscoped role entries, see <A href="create-a-role-exchange-2013-help.md">Create a role</A>.
 
-
-
-
 > [!WARNING]
 > To add or remove parameters from a role entry, you must use the <EM>AddParameter</EM> or <EM>RemoveParameter</EM> parameters. If you omit the <EM>AddParameter</EM> or <EM>RemoveParameter</EM> parameter when you run the <STRONG>Set-ManagementRoleEntry</STRONG> cmdlet, only the parameters you specify using the <EM>Parameters</EM> parameter will be included in the role entry. All other parameters on the role entry will be removed.
-
-
 
 Looking for other management tasks related to roles? Check out [Advanced permissions](advanced-permissions-exchange-2013-help.md).
 
@@ -51,11 +42,8 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -101,22 +89,19 @@ To remove all the parameters from a role entry, you need to specify the value `$
 
 Removing all the parameters from a role entry is most useful when you want to make only a few parameters available on a cmdlet and exclude all of the other parameters. If you don't want the role to have access to a cmdlet, remove the associated role entry from the role completely instead of just removing the parameters. For more information about how to remove a role entry from a role, see [Remove a role entry from a role](remove-a-role-entry-from-a-role-exchange-2013-help.md).
 
-
 > [!WARNING]
 > You can't undo remove operations. If you mistakenly remove all the parameters from a role entry, you must add them again manually.
-
-
 
 To remove all the parameters from a role entry, use the following syntax.
 
 ```powershell
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters $Null 
+    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters $Null
 ```
 
 This example removes all the parameters from the **Set-CASMailbox** cmdlet on the Recipient Administrators role.
 
 ```powershell
-    Set-ManagementRoleEntry "Recipient Administrators\Set-CASMailbox" -Parameters $Null 
+    Set-ManagementRoleEntry "Recipient Administrators\Set-CASMailbox" -Parameters $Null
 ```
 
 For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd351162\(v=exchg.150\)).
@@ -138,4 +123,3 @@ This example includes only the *Identity*, *DisplayName*, *MissedCallNotificatio
 ```
 
 For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd351162\(v=exchg.150\)).
-

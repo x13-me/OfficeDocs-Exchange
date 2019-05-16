@@ -16,18 +16,14 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 Data loss prevention (DLP) policy detection management broadly defines the activities that an organization performs in order to identify, investigate, and resolve DLP policy violations. In order to manage incidents, you need access to information that identifies what was detected by your DLP policies. This detection information is integrated with existing Microsoft Exchange Server 2013 data and log formats so that you can leverage an existing rich system of data to manage your mail flow incidents.
 
 For information about creating an incident report along with a single policy detection event, see [Create incident reports for DLP policy detections](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md). For more information about message logs, see [Track messages with delivery reports](track-messages-with-delivery-reports-exchange-2013-help.md).
 
-
 > [!NOTE]
 > Exchange 2013: DLP is a premium feature that requires an Exchange Enterprise Client Access License (CAL). For more information about CALs and server licensing, see <A href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server Licensing</A>.
-
-
 
 ## Audit information
 
@@ -66,7 +62,6 @@ The Transport Rule Agent requires grouping of the rule ID, DLP Policy ID (option
 Additional groupings include data classification ID, sender override (optional), and override justification (optional) based on data classification ID for all classifications that were detected on the client (indicated by "TRA=CI" in the log line). The Transport Rule Agent also requires the rule ID, load Wall clock (optional), load CPU clock (optional), execution Wall clock (optional), and execution CPU clock (optional) be grouped by rule ID for all rules that exceed the load or execution Wall or CPU clock thresholds (indicated by "TRA=ETRP" in the log line).
 
 The following is a complete list of the data fields. All data in the MTL is type string. Format column describes how to recognize each field in the Message Tracking Log. Optional Field column specifies what fields might not be logged when a rule matches. DLP Specific column shows what fields are specific to the DLP feature.
-
 
 <table>
 <colgroup>
@@ -268,7 +263,6 @@ The following is a complete list of the data fields. All data in the MTL is type
 </tbody>
 </table>
 
-
 ## For more information
 
 [Data loss prevention](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
@@ -276,4 +270,3 @@ The following is a complete list of the data fields. All data in the MTL is type
 [Create incident reports for DLP policy detections](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md)
 
 [Track messages with delivery reports](track-messages-with-delivery-reports-exchange-2013-help.md)
-

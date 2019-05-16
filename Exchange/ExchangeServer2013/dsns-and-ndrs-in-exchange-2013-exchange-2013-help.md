@@ -18,12 +18,8 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
-
 > [!NOTE]
 > If you need help with NDRs in Office 365 or Exchange Online, see <A href="https://go.microsoft.com/fwlink/p/?linkid=524931">Email non-delivery reports in Office 365</A>.
-
-
 
 When there's a problem delivering a message, Exchange Server 2013 will send a delivery status notification (DSN) to the message sender. These system-generated messages are also known as bounce messages, and they contain an error code, technical details about the problem, and sometimes troubleshooting steps for the message sender. Non-delivery report (NDR) messages are a common type of status notification. This topic for email administrators describes likely causes and solutions for many NDR status codes. It also tells how to read and interpret NDR messages.
 
@@ -38,7 +34,6 @@ Examples of NDR messages
 ## Common enhanced status codes
 
 The following table contains a list of the enhanced status codes that are returned in NDRs for the most common message delivery failures.
-
 
 <table>
 <colgroup>
@@ -263,7 +258,6 @@ The following table contains a list of the enhanced status codes that are return
 </tbody>
 </table>
 
-
 Return to top
 
 ## NDR sections
@@ -297,11 +291,11 @@ The **Diagnostic information for administrators** section contains more detailed
   - **Generating server**: The generating server is the SMTP server that created the NDR. The generating server takes the enhanced status code that is explained later in this topic. This code creates an easy-to-read NDR. If no remote server is listed below the email address of the sender in the **Diagnostic information for administrators** section, the generating server is also the server that rejected the original email message. If message delivery fails when the message is sent to another recipient in the Exchange organization, the same server typically rejects the original message and generates the NDR.
 
   - **Rejected recipient**: The rejected recipient is the email address of the recipient to which delivery of the original message failed. If delivery to more than one recipient has failed, the email address for each recipient is listed. The rejected recipient field also contains the following subfields for each email address listed:
-    
+
       - **Remote server**: The remote server field contains the FQDN of the server that rejects delivery of the message during the SMTP conversation. The remote server field is only populated when delivery has been attempted to a remote server, and that delivery attempt has been rejected before the receiving server successfully acknowledges the message after the message body is sent. If the original message is successfully acknowledged by the receiving server and is then rejected because of content restrictions, for example, the remote server field is not populated.
-    
+
       - **Enhanced status code**: The enhanced status code is the code returned by the server that rejected the original message. The enhanced status code indicates why the original message was rejected. The enhanced status code is not rewritten by Exchange but is used to determine what text to display in the user information section. The enhanced status codes you're most likely to encounter are listed in "Common Enhanced Status Codes" later in this topic. For a detailed list of enhanced status codes, see RFC 3463.
-    
+
       - **SMTP response**: The SMTP response is the machine readable text returned by the server that rejected the original message. The SMTP response typically contains a short string that provides an explanation of the enhanced status code that is also returned. The SMTP response is not rewritten by Exchange. Additionally, this response is always presented in US-ASCII format.
 
   - **Original message headers**: The original message headers section contains the message headers of the rejected message. These headers can provide useful diagnostic information, such as information that can help you determine the path that the message took before it was rejected or whether the **To** field matches the email address that is specified in the rejected recipient field.
@@ -342,6 +336,4 @@ Return to top
 
 ## See Also
 
-
 [What are Exchange NDRs in Exchange Online and Office 365](https://go.microsoft.com/fwlink/p/?linkid=524931)
-

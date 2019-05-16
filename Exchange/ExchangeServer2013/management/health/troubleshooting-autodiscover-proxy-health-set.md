@@ -46,7 +46,6 @@ If you receive an alert that specifies that the Autodiscover.Proxy is unhealthy,
 
 The Autodiscover service is monitored by using the following probes and monitors.
 
-
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -71,7 +70,6 @@ The Autodiscover service is monitored by using the following probes and monitors
 </tr>
 </tbody>
 </table>
-
 
 For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
 
@@ -103,29 +101,29 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 ## Verifying the issue still exists
 
-1.  Identify the health set name and the server name in the alert.
+1. Identify the health set name and the server name in the alert.
 
-2.  The message details provide information about the exact cause of the alert. In most cases, the message details provide sufficient troubleshooting information to identify the root cause. If the message details are not clear, do the following:
-    
-    1.  Open the Exchange Management Shell, and then run the following command to retrieve the details of the health set that issued the alert:
-        
+2. The message details provide information about the exact cause of the alert. In most cases, the message details provide sufficient troubleshooting information to identify the root cause. If the message details are not clear, do the following:
+
+    1. Open the Exchange Management Shell, and then run the following command to retrieve the details of the health set that issued the alert:
+
             Get-ServerHealth <server name> | ?{$_.HealthSetName -eq "<health set name>"}
-        
+
         For example, to retrieve the Autodiscover.Protocol health set details about server1.contoso.com, run the following command:
-        
+
             Get-ServerHealth server1.contoso.com | ?{$_.HealthSetName -eq "Autodiscover.Protocol"}
-    
-    2.  Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be `Unhealthy`.
-    
-    3.  Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
-        
+
+    2. Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be `Unhealthy`.
+
+    3. Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
+
             Invoke-MonitoringProbe <health set name>\<probe name> -Server <server name> | Format-List
-        
+
         For example, assume that the failing monitor is **AutodiscoverSelfTestMonitor**. The probe associated with that monitor is **AutodiscoverSelfTestProbe**. To run that probe on server1.contoso.com, run the following command:
-        
+
             Invoke-MonitoringProbe Autodiscover.Protocol\AutodiscoverSelfTestProbe -Server server1.contoso.com | Format-List
-    
-    4.  In the command output, review the **Result** value of the probe. If the value is **Succeeded**, the issue was a transient error, and it no longer exists. Otherwise, refer to the recovery steps outlined in the following sections.
+
+    4. In the command output, review the **Result** value of the probe. If the value is **Succeeded**, the issue was a transient error, and it no longer exists. Otherwise, refer to the recovery steps outlined in the following sections.
 
 </div>
 
@@ -140,32 +138,32 @@ When you receive an alert from a health set, the email message contains the foll
   - Name of the CAS that sent the alert
 
   - Full exception trace of the last error, including diagnostic data and specific HTTP header information
-    
+
     You can use the information in the full exception trace to help troubleshoot the issue.
 
   - Time and date when the issue occurred
 
 To troubleshoot this issue, follow these steps:
 
-1.  Review the protocol logs on the CAS. Protocol logs are located in the *\<exchange server installation directory\>*\\Logging\\HttpProxy*\\\<protocol\>* folder on the CAS.
+1. Review the protocol logs on the CAS. Protocol logs are located in the *\<exchange server installation directory\>*\\Logging\\HttpProxy*\\\<protocol\>* folder on the CAS.
 
-2.  Create a test user account, and then log on to the CAS by using the test user account. For example, log on by using: https:// *\<servername\>*/owa.
+2. Create a test user account, and then log on to the CAS by using the test user account. For example, log on by using: https:// *\<servername\>*/owa.
 
-3.  Start IIS Manager, and then connect to the server that's reporting the issue. Verify that the MSExchangeAutodiscoverAppPool is running on CAS.
+3. Start IIS Manager, and then connect to the server that's reporting the issue. Verify that the MSExchangeAutodiscoverAppPool is running on CAS.
 
-4.  Click **Application Pools**, and then recycle the **MSExchangeAutoDiscoverAppPool** application pool by running the following command from the Shell:
-    
+4. Click **Application Pools**, and then recycle the **MSExchangeAutoDiscoverAppPool** application pool by running the following command from the Shell:
+
         %SystemRoot%\System32\inetsrv\Appcmd recycle MSExchangeAutoDiscoverAppPool
 
-5.  Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
+5. Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
-6.  If the issue still exists, recycle the IIS service by using the IISReset utility.
+6. If the issue still exists, recycle the IIS service by using the IISReset utility.
 
-7.  Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
+7. Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
-8.  If the issue still exists, restart the server.
+8. If the issue still exists, restart the server.
 
-9.  After the server restarts, rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
+9. After the server restarts, rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
 10. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](http://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
@@ -192,4 +190,3 @@ To troubleshoot this issue, follow these steps:
 </div>
 
 </div>
-

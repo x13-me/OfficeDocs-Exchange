@@ -60,7 +60,6 @@ The following sections of this guide provide detailed information about the mana
 
 ## Guide history
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -80,7 +79,6 @@ The following sections of this guide provide detailed information about the mana
 </tbody>
 </table>
 
-
 </div>
 
 </div>
@@ -92,4 +90,3 @@ The following sections of this guide provide detailed information about the mana
 </div>
 
 </div>
-

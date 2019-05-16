@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 Management roles that are no longer required can be removed from your organization. You can only remove management roles that you created. Built-in management roles can't be removed. For more information about management roles in Microsoft Exchange Server 2013, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
 
@@ -35,11 +34,8 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -63,11 +59,8 @@ For detailed syntax and parameter information, see [Remove-ManagementRole](https
 
 If a role that you want to remove has child roles, you must remove all the child roles also. You receive an error message if you try to remove a role that has child roles unless you use the *Recurse* switch. If you use the *Recurse* switch when you remove a role, the role you specify and all its child roles are removed.
 
-
 > [!WARNING]
 > If you use the <EM>Recurse</EM> switch, all child roles of the specified role you want to remove are also removed. Make sure that you're aware of what roles will be removed before you run this command.
-
-
 
 To make sure that you remove only the roles that you want to remove, use the *WhatIf* switch with your command to verify that it's correct. Use the following syntax.
 
@@ -96,4 +89,3 @@ Remove-ManagementRole "Custom IT Scripts" -Recurse -UnScopedTopLevel
 As with removing other roles, you should use the *WhatIf* switch to verify that you're removing the correct roles.
 
 For detailed syntax and parameter information, see [Remove-ManagementRole](https://technet.microsoft.com/en-us/library/dd351170\(v=exchg.150\)).
-

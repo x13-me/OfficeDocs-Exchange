@@ -18,14 +18,10 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 The Availability service improves information workers' free/busy information by providing secure, consistent, and up-to-date free/busy information to clients that are running Microsoft Outlook. By default, this service is installed with Exchange Server 2013. In cross-forest topologies where all connecting clients are running Outlook, the Availability service is the only method of retrieving free/busy information. You can use the Shell to configure the Availability service for cross-forest topologies.
-
 
 > [!NOTE]
 > You can't use the EAC to configure the Availability service for cross-forest topologies.
-
-
 
 ## Using the Availability service in trusted and untrusted forests
 
@@ -49,11 +45,8 @@ To enable GAL synchronization, you create management agents that import mail-ena
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
@@ -74,8 +67,6 @@ Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUser
 
 > [!NOTE]
 > To configure bidirectional cross-forest availability, repeat these steps in the target forest.
-
-
 
 If you choose to configure cross-forest availability with trust, and also choose to use a service account (instead of specifying organization-wide or per-user credentials), you must extend permissions as shown in the example in the "Use the Shell to configure trusted cross-forest availability with a service account" section. Performing that procedure in the target forest gives Mailbox servers in the source forest permission to serialize the original user context.
 

@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You create a Receive connector of the **Internal** type when you want to receive mail from an Exchange server. Use this type of connector to control mail routing within your organization: for example, when you want to route mail from the Transport service on a Mailbox server to a specific Edge Transport server, or from one Mailbox server to another.
 
 Interested in scenarios where this procedure is used? See the following topics:
@@ -35,23 +34,20 @@ Interested in scenarios where this procedure is used? See the following topics:
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
 
-
-
 ## Create a Receive Connector to Receive Messages from an Internal Exchange Server
 
-1.  In the EAC, navigate to **Mail flow** \> **Receive connectors**. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to create a new Receive connector.
+1. In the EAC, navigate to **Mail flow** \> **Receive connectors**. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to create a new Receive connector.
 
-2.  On the **New receive connector** page, specify a name for the Receive connector and then select **Hub transport** for the **Role**. In this case we assume you want to route mail within your network, not into and out of the organization.
+2. On the **New receive connector** page, specify a name for the Receive connector and then select **Hub transport** for the **Role**. In this case we assume you want to route mail within your network, not into and out of the organization.
 
-3.  Choose **Internal** for the type. The connector is configured with Exchange server authentication.
+3. Choose **Internal** for the type. The connector is configured with Exchange server authentication.
 
-4.  If the Remote network settings page lists 0.0.0.0-255.255.255.255, which means that the Receive connector receives connections from all IP addresses, click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon") to remove it. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"), add the IP address for the server you want to receive mail from, such as 192.168.1.1, and click **Save**.
+4. If the Remote network settings page lists 0.0.0.0-255.255.255.255, which means that the Receive connector receives connections from all IP addresses, click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon") to remove it. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"), add the IP address for the server you want to receive mail from, such as 192.168.1.1, and click **Save**.
 
-5.  Click **Finish** to create the connector.
+5. Click **Finish** to create the connector.
 
 Once you have created the Receive connector, it appears in the Receive connector list. If you would like to see an example of how to create a Receive connector with a cmdlet, see [New-ReceiveConnector](https://technet.microsoft.com/en-us/library/bb125139\(v=exchg.150\)).
 
@@ -64,4 +60,3 @@ To verify that you have successfully created a Receive connector to receive mess
 [Create a Receive connector to receive email from the Internet](create-a-receive-connector-to-receive-email-from-the-internet-exchange-2013-help.md)
 
 [Create a secure Receive connector to receive email from a partner](create-a-secure-receive-connector-to-receive-email-from-a-partner-exchange-2013-help.md)
-

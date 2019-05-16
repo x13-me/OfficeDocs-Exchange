@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 ## Analyzing Log Parser Studio Reports
 
 Log Parser Studio is a utility that allows you to search through and create reports from several types of log files, including those for Internet Information Services (IIS). It builds on top of Log Parser 2.2 and has a full user interface for easy creation and management of related SQL queries.
@@ -76,4 +75,3 @@ A .zip file containing the Log Parser Studio reports listed here, and additional
   - **OWA\_WP: Requests per user (Top 10k)**. Lists OWA requests per user for the top 10,000 users.
 
   - **OWA\_WP: Top Talkers (CSV)**. Lists the top OWA clients from highest to lowest request count and sends the result to a CSV file.
-

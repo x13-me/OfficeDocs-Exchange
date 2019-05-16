@@ -14,9 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Basic concepts in Exchange Management Shell
 
- 
-
-
 ## Getting help
 
 [Getting help](https://technet.microsoft.com/en-us/library/aa997174\(v=exchg.150\))
@@ -60,4 +57,3 @@ mtps_version: v=EXCHG.150
 [Shell variables](https://technet.microsoft.com/en-us/library/bb124036\(v=exchg.150\))
 
 [User-defined variables](https://technet.microsoft.com/en-us/library/bb123690\(v=exchg.150\))
-

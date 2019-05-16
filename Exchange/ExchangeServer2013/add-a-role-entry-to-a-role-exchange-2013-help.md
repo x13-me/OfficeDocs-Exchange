@@ -14,20 +14,14 @@ mtps_version: v=EXCHG.150
 
 # Add a role entry to a role
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 If you want to grant access to a cmdlet, you need to add the associated management role entry to a management role. After you add the role entry to a role, the users assigned the role will be able to access that cmdlet. For more information about management role entries in Microsoft Exchange Server 2013, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
 
 You can't add role entries to built-in roles. If you want to customize roles, you must create a new role. For more information about how to create a new role, see [Create a role](create-a-role-exchange-2013-help.md).
 
-
 > [!NOTE]
 > This topic doesn't discuss how to add unscoped management role entries to an unscoped management role. For more information about how to add unscoped role entries, see <A href="add-a-role-entry-to-an-unscoped-top-level-role-exchange-2013-help.md">Add a role entry to an unscoped top-level role</A>.
-
-
 
 Looking for other management tasks related to roles? Check out [Advanced permissions](advanced-permissions-exchange-2013-help.md).
 
@@ -45,11 +39,8 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -110,4 +101,3 @@ If the role entries already exist on the child role, you can include the *Overwr
 For more information about retrieving a list of management role entries, see [View role entries](view-role-entries-exchange-2013-help.md).
 
 For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd335210\(v=exchg.150\)) and [Add-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd351236\(v=exchg.150\)).
-

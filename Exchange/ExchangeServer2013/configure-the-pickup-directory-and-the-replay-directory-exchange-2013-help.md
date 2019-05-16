@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 The Pickup and replay directories are used by the Transport service on Mailbox servers and Edge Transport servers to insert message files directly into the transport pipeline. Correctly formatted email message files that you copy to the Pickup or Replay directories are submitted for delivery. The Pickup directory is used by administrators for mail flow testing, or by applications that must create and submit their own messages. The Replay directory receives messages from non-SMTP foreign gateway servers and resubmits messages that you exported from the queues of Microsoft Exchange servers.
 
 ## What do you need to know before you begin?
@@ -35,11 +34,8 @@ The Pickup and replay directories are used by the Transport service on Mailbox s
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What Do You Want to Do?
 
@@ -66,15 +62,12 @@ This example makes the following changes to the Pickup directory on the Mailbox 
     Set-TransportService Exchange01 -PickupDirectoryPath "D:\Pickup Directory" -PickupDirectoryMaxHeaderSize 96KB -PickupDirectoryMaxRecipientsPerMessage 250 -PickupDirectoryMaxMessagesPerMinute 200
 ```
 
-
 > [!NOTE]
 > <UL>
 > <LI>
 > <P>Setting the <EM>PickupDirectoryPath</EM> parameter to the value <CODE>$null</CODE> disables the Pickup directory.</P>
 > <LI>
 > <P>The directory specified by the <EM>PickupDirectoryPath</EM> parameter and the <EM>ReplayDirectoryPath</EM> parameter can't be the same.</P></LI></UL>
-
-
 
 ## Use the Shell to configure the Replay directory
 
@@ -101,17 +94,14 @@ This example makes the following changes to the Replay directory on the Mailbox 
 > <LI>
 > <P>The directory specified by the <EM>PickupDirectoryPath</EM> parameter and the <EM>ReplayDirectoryPath</EM> parameter can't be the same.</P></LI></UL>
 
-
-
 ## How do you know this worked?
 
 To verify that you have successfully configured the Pickup and Replay directories, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
         Get-TransportService <ServerIdentity> | Format-List Pickup*,Replay*
     ```
-    
-2.  Verify the values displayed are the values you configured.
 
+2. Verify the values displayed are the values you configured.

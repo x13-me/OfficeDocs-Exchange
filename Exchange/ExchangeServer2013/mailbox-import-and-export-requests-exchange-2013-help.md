@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Using the **MailboxImportRequest** or **MailboxExportRequest** cmdlet sets in the Exchange Management Shell, you can import data from or export data to .pst files. After you initiate a mailbox import or export request, the process is completed asynchronously by the Microsoft Exchange Mailbox Replication service (MRS). MRS resides on all Exchange 2010 Client Access servers and is the service responsible for moving mailboxes and importing and exporting .pst files.
 
 **Contents**
@@ -77,11 +76,8 @@ Before you import or export mailbox data, consider the following:
 
 Use the **MailboxImportRequest** cmdlet set to import data from a .pst file to a mailbox or personal archive. The following is a list of options you can specify when importing mailbox data from a .pst file:
 
-
 > [!NOTE]
 > The mailbox to which you import the data must exist. You can't import data to a user account that doesn't have a mailbox.
-
-
 
   - You can import data to a different user account than the one from which it was exported. For example, you can export data from john@contoso.com and import it to legaldiscovery@contoso.com.
 
@@ -96,7 +92,6 @@ Use the **MailboxImportRequest** cmdlet set to import data from a .pst file to a
 ## Mailbox import request cmdlets
 
 Use the following cmdlets for mailbox import requests.
-
 
 <table>
 <colgroup>
@@ -141,7 +136,6 @@ Use the following cmdlets for mailbox import requests.
 </tbody>
 </table>
 
-
 ## Exporting mailbox data
 
 Use the **MailboxExportRequest** cmdlet set to export mailbox data to a .pst file. You can export one mailbox or several mailboxes, but only one request is written to each .pst file at a time. The following is a list of options you can specify when exporting mailbox data to a .pst file:
@@ -157,7 +151,6 @@ Use the **MailboxExportRequest** cmdlet set to export mailbox data to a .pst fil
 ## Mailbox export request cmdlets
 
 Use the following cmdlets for mailbox export requests.
-
 
 <table>
 <colgroup>
@@ -201,4 +194,3 @@ Use the following cmdlets for mailbox export requests.
 </tr>
 </tbody>
 </table>
-

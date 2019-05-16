@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, Transport Layer Security (TLS) encryption is mandatory for all SMTP communication in the Transport service between Mailbox servers. This increases overall security of Transport service communication between Mailbox servers. However, in certain topologies where WAN Optimization Controller (WOC) devices are used, the TLS encryption of SMTP traffic may be undesirable. You can disable TLS for Transport service communication between Mailbox servers for these specific scenarios.
 
@@ -37,13 +36,13 @@ The recommended configuration is to limit the non-encrypted SMTP traffic to only
 
 To achieve this end result, you need to do the following actions, in the specified order, on every Mailbox server in the sites that contain the WOC devices (Central Office Site 1 and Branch Office 1 in the sample topology):
 
-1.  Enable downgraded Exchange Server authentication.
+1. Enable downgraded Exchange Server authentication.
 
-2.  Create a dedicated Receive connector to handle the traffic over the connection that has WOC devices.
-    
-    1.  Configure the remote IP address range property of the dedicated Receive connector to the IP address ranges of the Mailbox servers in the remote Active Directory site.
-    
-    2.  Disable TLS on the dedicated Receive connector.
+2. Create a dedicated Receive connector to handle the traffic over the connection that has WOC devices.
+
+    1. Configure the remote IP address range property of the dedicated Receive connector to the IP address ranges of the Mailbox servers in the remote Active Directory site.
+
+    2. Disable TLS on the dedicated Receive connector.
 
 In addition, you need to do the following actions to ensure all SMTP traffic over the WAN is handled by the dedicated Receive connectors you created:
 
@@ -77,13 +76,13 @@ To restrict the dedicated Receive connectors to only the traffic over the WAN, y
 
 Going back to the sample topology, assume that the class C subnet 10.0.1.0/24 is used for the Central Office Site 1 and 10.0.2.0/24 is used for the Branch Office 1. To prepare for disabling TLS between these two sites, you need to:
 
-1.  Create a Receive connector named WAN on each Mailbox server in Central Office Site 1 and Branch Office 1.
+1. Create a Receive connector named WAN on each Mailbox server in Central Office Site 1 and Branch Office 1.
 
-2.  Configure the remote IP address range of 10.0.2.0/24 on each dedicated Receive connector in Central Office Site 1.
+2. Configure the remote IP address range of 10.0.2.0/24 on each dedicated Receive connector in Central Office Site 1.
 
-3.  Configure the remote IP address range of 10.0.1.0/24 on each dedicated Receive connector in Branch Office 1.
+3. Configure the remote IP address range of 10.0.1.0/24 on each dedicated Receive connector in Branch Office 1.
 
-4.  Disable TLS on all of the dedicated Receive connectors.
+4. Disable TLS on all of the dedicated Receive connectors.
 
 The end result is shown in the following figure (with the remote IP address range property of the Receive connectors named WAN shown in parentheses). Only a single Mailbox server is shown in Branch Office 1, and Branch Office 2 is omitted for clarity purposes.
 
@@ -118,4 +117,3 @@ To avoid this issue, you need to designate an Exchange-specific cost that is hig
 For more information, see [Configure Exchange mail routing settings in Active Directory](configure-exchange-mail-routing-settings-in-active-directory-exchange-2013-help.md).
 
 Return to top
-

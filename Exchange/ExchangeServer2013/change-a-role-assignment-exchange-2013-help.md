@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Change a role assignment
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Management role assignments assign a management role to a role assignee. By changing the role assignment, you can control what objects role assignees assigned a role can change. Management role scopes applied to role assignments override the role's implicit write scope. However, the role's implicit read scope still applies. Scopes that you apply can't return objects outside of the role's implicit read scope.
 
@@ -39,11 +36,8 @@ Looking for other management tasks related to role assignments? Check out [Advan
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -194,4 +188,3 @@ This example changes an exclusive recipient write scope.
 ```
 
 For detailed syntax and parameter information, see [Set-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335173\(v=exchg.150\)).
-

@@ -28,7 +28,7 @@ mtps_version: v=EXCHG.150
 
 <span> </span>
 
-_**Applies to:** Exchange Server 2013_
+_**Applies to:**: Exchange Server 2013_
 
 _**Topic Last Modified:** 2013-02-11_
 
@@ -69,4 +69,3 @@ For detailed information about the POP health set, see [Troubleshooting POP Heal
 </div>
 
 </div>
-

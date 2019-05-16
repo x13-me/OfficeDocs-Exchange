@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Access to Active Directory
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Microsoft Exchange Server 2013 stores all configuration and recipient information in the Active Directory directory service database. When a computer running Exchange 2013 requires information about recipients and information about the configuration of the Exchange organization, it must query Active Directory to access the information. Active Directory servers must be available for Exchange 2013 to function correctly.
 
@@ -89,11 +86,8 @@ Exchange 2013 is an Active Directory site-aware application that prefers to comm
 
 By default, whenever an Exchange 2013 server starts, it binds to a randomly selected domain controller and global catalog server in its own site. You can view the selected directory servers by using the **Get-ExchangeServer** cmdlet in the Exchange Management Shell. You can also use the **Set-ExchangeServer** cmdlet to configure a static list of domain controllers to which an Exchange 2013 server should bind or a list of domain controllers that should be excluded.
 
-
 > [!IMPORTANT]
 > A Windows Server 2008 domain controller can be configured as a read-only directory server. This configuration is useful when you want to deploy a domain controller or global catalog server in a remote site for authentication and authorization purposes, but you don't want to allow administrators in that site to write changes to Active Directory. However, you can't deploy an Exchange 2013 server in any site that contains only read-only directory servers.
-
-
 
 ## Mailbox server role
 
@@ -128,4 +122,3 @@ The following guidelines will help you minimize problems or issues when you reco
 [Introduction to Active Directory Administrative Center Enhancements (Level 100)](https://go.microsoft.com/fwlink/p/?linkid=267641)
 
 [Advanced AD DS Management Using Active Directory Administrative Center (Level 200)](https://go.microsoft.com/fwlink/p/?linkid=267642)
-

@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Group metrics is the collection of the following data about distribution groups and dynamic distribution groups in your organization:
 
   - Number of members
@@ -48,4 +47,3 @@ Group metrics generation is handled by an arbitration mailbox, which is also cal
 The Mailbox server generates full group metrics data for all distribution groups and dynamic distribution groups the first time the Group Metrics mailbox assistant runs, and incremental updates for any groups that were modified since the last full generation. By default, group metrics data is generated daily at a random time when the Exchange server workload is light. If the workload is constantly high, group metrics generation may be skipped.
 
 To configure group metrics generation, see [Configure group metrics](configure-group-metrics-exchange-2013-help.md).
-

@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 Set up an organization relationship to share calendar information with an external business partner. Exchange admins can set up an organization relationship with an Office 365 organization or with another Exchange on-premises organization. If you want to share calendars with another on-premises Exchange organization, both on-premises Exchange administrators have to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements.
 
@@ -31,11 +30,8 @@ There are three of levels of access that you can specify:
 
   - Access to free/busy, including time, subject, and location
 
-
 > [!NOTE]
 > If users don't want to share their free/busy information with others, they can change the Default permission entry in Outlook. To do this, users go to the <STRONG>Calendar Properties</STRONG> &gt; <STRONG>Permissions</STRONG> tab, select the <STRONG>Default</STRONG> permission, and select <STRONG>None</STRONG> from the <STRONG>Permission Level</STRONG> list. Their free/busy information won't be seen by internal or external users, even if an organization relationship exists. The permissions set by the user will apply.
-
-
 
 The following topics will help you configure and manage organization relationships as a part of sharing for your organization:
 
@@ -46,4 +42,3 @@ The following topics will help you configure and manage organization relationshi
 [Remove an organization relationship](remove-an-organization-relationship-exchange-2013-help.md)
 
 Looking for more information about federated sharing? See [Sharing](sharing-exchange-2013-help.md).
-

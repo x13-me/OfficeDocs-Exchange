@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can use the EAC or the Shell to import or export self-signed, internal public key infrastructure (PKI), or third-party commercial certificates. For Unified Messaging (UM), you can use one of these certificates for the Microsoft Exchange Unified Messaging service and the Microsoft Exchange Unified Messaging Call Router service. You can use the same certificate for both services, or a different certificate for each service.
 
 Importing certificates for Exchange can be useful when you want to:
@@ -49,21 +48,18 @@ For additional management tasks related to managing certificates for Unified Mes
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
 ## Use the EAC to export a certificate
 
-1.  In the EAC, click **Servers** \> **Certificates** \> **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Export Exchange certificate**.
+1. In the EAC, click **Servers** \> **Certificates** \> **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Export Exchange certificate**.
 
-2.  On the **Export Exchange certificate** page, in the **File to export to** box, enter the name of the certificate file.
+2. On the **Export Exchange certificate** page, in the **File to export to** box, enter the name of the certificate file.
 
-3.  In the **Password** box, enter the password that you want to use to protect the private key, and then click **OK**.
+3. In the **Password** box, enter the password that you want to use to protect the private key, and then click **OK**.
 
 ## Use the Shell to export a certificate
 
@@ -75,11 +71,11 @@ This example exports the certificate with the Thumbprint A36DE2B9B62980A717EBD0C
 
 This example does the following:
 
-1.  Uses the **Get-ExchangeCertificate** cmdlet to find the certificate that you want to export.
+1. Uses the **Get-ExchangeCertificate** cmdlet to find the certificate that you want to export.
 
-2.  Uses the **Export-ExchangeCertificate** cmdlet to set the password for the certificate.
+2. Uses the **Export-ExchangeCertificate** cmdlet to set the password for the certificate.
 
-3.  Outputs the certificate to a file after you input the user name and password.
+3. Outputs the certificate to a file after you input the user name and password.
 
 <!-- end list -->
 
@@ -93,11 +89,11 @@ This example does the following:
 
 ## Use the EAC to import a certificate
 
-1.  In the EAC, click **Servers** \> **Certificates** \> **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Import Exchange certificate**.
+1. In the EAC, click **Servers** \> **Certificates** \> **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Import Exchange certificate**.
 
-2.  On the **Import Exchange certificate** page, in the **File to import from** box, enter the shared folder path and the name of the certificate file. If the certificate is protected with a password, enter the password in the **Password** box, and then click **Next**.
+2. On the **Import Exchange certificate** page, in the **File to import from** box, enter the shared folder path and the name of the certificate file. If the certificate is protected with a password, enter the password in the **Password** box, and then click **Next**.
 
-3.  Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to select the servers that you want to apply the certificate to, and then click **OK**. If you want to remove a server from the list view, click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon"), and then click **Finish**.
+3. Click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to select the servers that you want to apply the certificate to, and then click **OK**. If you want to remove a server from the list view, click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon"), and then click **Finish**.
 
 ## Use the Shell to import a certificate
 

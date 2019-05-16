@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:**: Exchange Server_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -30,7 +29,6 @@ ADC replicates objects from Exchange Server version 5.5 to the Active Directory
 Exchange 2007 or Exchange 2010 setup requires that all ADC components be removed.
 
 To resolve this issue, remove all ADC components, and rerun Exchange 2007 or Exchange 2010 setup.
-
 
 <table>
 <colgroup>
@@ -52,13 +50,11 @@ To resolve this issue, remove all ADC components, and rerun Exchange 2007 or Ex
 > [!IMPORTANT]
 > You must complete step 6 and <STRONG>Remove All</STRONG> ADC components to resolve this issue. It is insufficient to disable the ADC service.
 
-
 </li>
 </ol></td>
 </tr>
 </tbody>
 </table>
-
 
 For more information about ADC, see the following Microsoft Knowledge Base articles:
 
@@ -67,4 +63,3 @@ For more information about ADC, see the following Microsoft Knowledge Base artic
   - 325221, "Support WebCast: Microsoft Advanced Active Directory Connector" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325221)).
 
   - 312632, "How To Install and Configure the Active Directory Connector in Exchange 2000 Server" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052&kbid=312632)).
-

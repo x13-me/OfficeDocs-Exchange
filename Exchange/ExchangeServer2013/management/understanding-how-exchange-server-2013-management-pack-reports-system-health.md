@@ -41,11 +41,11 @@ In Exchange Server 2013, several architectural changes were made. One of the key
 ![Managed availability](images/Dn195910.dd5febae-d05e-4089-a3f5-1691b2d9a3d7(EXCHG.150).png "Managed availability")
 
   - **Probes**: These are sets of data collectors that measure various components. There are three distinct types of probes:
-    
+
       - Synthetic transactions that measure synthetic end-to-end user operations and checks that measure actual traffic.
-    
+
       - Checks that measure actual customer traffic.
-    
+
       - Notifications that allow Exchange to take immediate action. A good example of this is the notification that is triggered when a certificate expires.
 
   - **Monitors**: The data collected by probes are passed on to monitors that analyze the data for specific conditions and depending on those conditions determine if the particular component is healthy or unhealthy.
@@ -75,7 +75,6 @@ To learn more about Managed Availability, see [Server health and performance](ht
 ## How health rolls up
 
 This topic provides information about how the Exchange Server 2013 Management Pack monitors and reports Exchange system health. In the Exchange 2013 Management Pack, health state information is rolled up in a simple manner. Whenever a health set is unhealthy and the escalate responder is triggered, the following event is logged in the Windows event log:
-
 
 <table>
 <colgroup>
@@ -126,9 +125,7 @@ This topic provides information about how the Exchange Server 2013 Management Pa
 </tbody>
 </table>
 
-
 The Management Pack agent detects and processes this event. Using this event, Managed Availability is able to generate alerts within SCOM. When the corresponding issue is resolved, and the health set returns back to the healthy state, the following event is logged in the Windows event log:
-
 
 <table>
 <colgroup>
@@ -179,7 +176,6 @@ The Management Pack agent detects and processes this event. Using this event, Ma
 </tbody>
 </table>
 
-
 The management packs that monitored previous versions of Exchange were completely centralized. Agents on each Exchange server would collect data and a central correlation engine would compare and evaluate all the data reported by the agents to determine overall service health. In large scale environments, this process resulted in complex correlations, causing delays in alert generation. In Exchange 2013, alert correlation is no longer used. Instead, each server performs its own monitoring and alerts SCOM if necessary, allowing for a highly scalable architecture.
 
 Depending on the impact of the event, and the health set that triggers it, the problem is shown in the SCOM console in a different category. If the event causes user impact, then the customer touch points indicator is shown as unhealthy. If it causes an entire component like OWA to be unavailable, then the service component indicator is shown as unhealthy. If it's a problem with a particular server, then the corresponding server health indicator is shown as unhealthy. Finally if the problem is related to a resource that Exchange depends on, the key dependencies indicator is shown as unhealthy. For more information about these categories, see [Getting started with Exchange Server 2013 Management Pack](getting-started-with-exchange-server-2013-management-pack.md).
@@ -195,4 +191,3 @@ Depending on the impact of the event, and the health set that triggers it, the p
 </div>
 
 </div>
-

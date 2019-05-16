@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 In Microsoft Exchange Server 2013, you can use the Queue Viewer in the Exchange Toolbox or the Exchange Management Shell to manage messages in queues. For more information about using the message management cmdlets in the Exchange Management Shell, see [Use the Exchange Management Shell to manage queues](use-the-exchange-management-shell-to-manage-queues-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
@@ -29,11 +28,8 @@ In Microsoft Exchange Server 2013, you can use the Queue Viewer in the Exchange 
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -43,21 +39,18 @@ A message that's being sent to multiple recipients might be located in more than
 
 ## Use Queue Viewer in the Exchange Toolbox to remove messages
 
-1.  Click **Start** \> **All Programs** \> **Microsoft Exchange 2013** \> **Exchange Toolbox**.
+1. Click **Start** \> **All Programs** \> **Microsoft Exchange 2013** \> **Exchange Toolbox**.
 
-2.  In the **Mail flow tools** section, double-click **Queue Viewer** to open the tool in a new window.
+2. In the **Mail flow tools** section, double-click **Queue Viewer** to open the tool in a new window.
 
-3.  In Queue Viewer, click the **Messages** tab. A list of all messages on the server to which you're connected is displayed. To adjust the action to a single queue, click the **Queues** tab, double-click the queue name, and then click the *Server\\Queue* tab that appears.
+3. In Queue Viewer, click the **Messages** tab. A list of all messages on the server to which you're connected is displayed. To adjust the action to a single queue, click the **Queues** tab, double-click the queue name, and then click the *Server\\Queue* tab that appears.
 
-4.  Select one or more messages from the list, right-click, and then select **Remove Messages (with NDR)** or **Remove Messages (without NDR)**. A dialog box appears that confirms the selected action and displays, **Do you want to continue?** Click **Yes**.
+4. Select one or more messages from the list, right-click, and then select **Remove Messages (with NDR)** or **Remove Messages (without NDR)**. A dialog box appears that confirms the selected action and displays, **Do you want to continue?** Click **Yes**.
 
-5.  To remove all messages from a particular queue, click the **Queues** tab. Select a queue, right-click, and then select **Remove Messages (with NDR)** or **Remove Messages (without NDR)**. A dialog box appears that confirms the selected action and displays, **Do you want to continue?** Click **Yes**.
-    
+5. To remove all messages from a particular queue, click the **Queues** tab. Select a queue, right-click, and then select **Remove Messages (with NDR)** or **Remove Messages (without NDR)**. A dialog box appears that confirms the selected action and displays, **Do you want to continue?** Click **Yes**.
 
     > [!NOTE]
     > If you're working with a filtered list, the displayed page may not include all items in the filter. In this case, a prompt appears that displays: <STRONG>This action will affect all items on this page. To expand the scope of this action to include all items in this filter, check the following box before you click OK.</STRONG>
-
-
 
 ## Use the Shell to remove messages
 
@@ -93,23 +86,23 @@ You can resume a message that currently has a status of Suspended. By resuming a
 
 ## Use Queue Viewer in the Exchange Toolbox to resume messages
 
-1.  Click **Start** \> **All Programs** \> **Microsoft Exchange 2013** \> **Exchange Toolbox**.
+1. Click **Start** \> **All Programs** \> **Microsoft Exchange 2013** \> **Exchange Toolbox**.
 
-2.  In the **Mail flow tools** section, double-click **Queue Viewer** to open the tool in a new window.
+2. In the **Mail flow tools** section, double-click **Queue Viewer** to open the tool in a new window.
 
-3.  In Queue Viewer, click the **Messages** tab. A list of all messages on the server to which you're connected is displayed. To adjust the action to focus on a single queue, click the **Queues** tab, double-click the queue name, and then click the *Server\\Queue* tab that appears.
+3. In Queue Viewer, click the **Messages** tab. A list of all messages on the server to which you're connected is displayed. To adjust the action to focus on a single queue, click the **Queues** tab, double-click the queue name, and then click the *Server\\Queue* tab that appears.
 
-4.  Click **Create Filter**, and enter your filter expression as follows:
-    
-    1.  Select **Status** from the message property drop-down list.
-    
-    2.  Select **Equals** from the comparison operator drop-down list.
-    
-    3.  Select **Suspended** from the value drop-down list.
+4. Click **Create Filter**, and enter your filter expression as follows:
 
-5.  Click **Apply Filter**. All messages that have a status of Suspended are displayed.
+    1. Select **Status** from the message property drop-down list.
 
-6.  Select one or more messages from the list, right-click, and select **Resume**.
+    2. Select **Equals** from the comparison operator drop-down list.
+
+    3. Select **Suspended** from the value drop-down list.
+
+5. Click **Apply Filter**. All messages that have a status of Suspended are displayed.
+
+6. Select one or more messages from the list, right-click, and select **Resume**.
 
 ## Use the Shell to resume messages
 
@@ -151,13 +144,13 @@ A message being sent to multiple recipients might be located in multiple queues.
 
 ## Use Queue Viewer in the Exchange Toolbox to suspend messages
 
-1.  Click **Start** \> **All Programs** \> **Microsoft Exchange 2013** \> **Exchange Toolbox**.
+1. Click **Start** \> **All Programs** \> **Microsoft Exchange 2013** \> **Exchange Toolbox**.
 
-2.  In the **Mail flow tools** section, double-click **Queue Viewer** to open the tool in a new window.
+2. In the **Mail flow tools** section, double-click **Queue Viewer** to open the tool in a new window.
 
-3.  In Queue Viewer, click the **Messages** tab. A list of all messages on the server to which you're connected is displayed. To limit the view to a single queue, click the **Queues** tab, double-click the queue name, and then click the *Server\\Queue* tab that appears.
+3. In Queue Viewer, click the **Messages** tab. A list of all messages on the server to which you're connected is displayed. To limit the view to a single queue, click the **Queues** tab, double-click the queue name, and then click the *Server\\Queue* tab that appears.
 
-4.  Select one or more messages, right-click, and then select **Suspend**.
+4. Select one or more messages, right-click, and then select **Suspend**.
 
 ## Use the Shell to suspend messages
 
@@ -186,4 +179,3 @@ To verify that you have successfully suspended messages in queues, do one of the
   - In Queue Viewer, select the queue or create a filter to verify messages are suspended.
 
   - Use the **Get-Message** cmdlet with the *Queue* or *Filter* parameters to verify the messages are suspended. For more information, see [Get-Message](https://technet.microsoft.com/en-us/library/bb124738\(v=exchg.150\)).
-

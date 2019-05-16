@@ -44,7 +44,6 @@ If you receive an alert that specifies that Autodiscover.Protocol is unhealthy, 
 
 The Autodiscover.Protocol service is monitored by using the following probes and monitors.
 
-
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -69,7 +68,6 @@ The Autodiscover.Protocol service is monitored by using the following probes and
 </tr>
 </tbody>
 </table>
-
 
 For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/en-us/library/jj150551\(v=exchg.150\)).
 
@@ -99,29 +97,29 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 ## Verifying the issue still exists
 
-1.  Identify the health set name and the server name in the alert.
+1. Identify the health set name and the server name in the alert.
 
-2.  The message details provide information about the exact cause of the alert. In most cases, the message details provide sufficient troubleshooting information to identify the root cause. If the message details are not clear, do the following:
-    
-    1.  Open the Exchange Management Shell, and then run the following command to retrieve the details of the health set that issued the alert:
-        
+2. The message details provide information about the exact cause of the alert. In most cases, the message details provide sufficient troubleshooting information to identify the root cause. If the message details are not clear, do the following:
+
+    1. Open the Exchange Management Shell, and then run the following command to retrieve the details of the health set that issued the alert:
+
             Get-ServerHealth <server name> | ?{$_.HealthSetName -eq "<health set name>"}
-        
+
         For example, to retrieve the Autodiscover.Protocol health set details about server1.contoso.com, run the following command:
-        
+
             Get-ServerHealth server1.contoso.com | ?{$_.HealthSetName -eq "Autodiscover.Protocol"}
-    
-    2.  Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be `Unhealthy`.
-    
-    3.  Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
-        
+
+    2. Review the command output to determine which monitor reported the error. The **AlertValue** value for the monitor that issued the alert will be `Unhealthy`.
+
+    3. Rerun the associated probe for the monitor that's in an unhealthy state. Refer to the table in the Explanation section to find the associated probe. To do this, run the following command:
+
             Invoke-MonitoringProbe <health set name>\<probe name> -Server <server name> | Format-List
-        
+
         For example, assume that the failing monitor is **AutodiscoverSelfTestMonitor**. The probe associated with that monitor is **AutodiscoverSelfTestProbe**. To run that probe on server1.contoso.com, run the following command:
-        
+
             Invoke-MonitoringProbe Autodiscover.Protocol\AutodiscoverSelfTestProbe -Server server1.contoso.com | Format-List
-    
-    4.  In the command output, review the **Result** value of the probe. If the value is **Succeeded**, the issue was a transient error, and it no longer exists. Otherwise, refer to the recovery steps outlined in the following sections.
+
+    4. In the command output, review the **Result** value of the probe. If the value is **Succeeded**, the issue was a transient error, and it no longer exists. Otherwise, refer to the recovery steps outlined in the following sections.
 
 </div>
 
@@ -147,28 +145,28 @@ You can use the information in the full exception trace to help troubleshoot the
 
 To troubleshoot this issue, follow these steps:
 
-1.  Review protocol logs on the Mailbox servers. By default, Protocol log files on the Mailbox server are located in the ***\<exchange server installation directory\>*\\Logging\\Autodiscover** folder.
+1. Review protocol logs on the Mailbox servers. By default, Protocol log files on the Mailbox server are located in the ***\<exchange server installation directory\>*\\Logging\\Autodiscover** folder.
 
-2.  Create a test user account, and then log on to the Mailbox server by using the test user account in the address. For example, log on by using: https://*\<servername\>*:444/autodiscover/autodiscover.xml.
-    
+2. Create a test user account, and then log on to the Mailbox server by using the test user account in the address. For example, log on by using: https://*\<servername\>*:444/autodiscover/autodiscover.xml.
+
     If the test user account name passes, an issue may affect the mailbox server that's hosting the monitored mailbox.
 
-3.  Try to repeat the previous steps by using a test account on the Mailbox server.
+3. Try to repeat the previous steps by using a test account on the Mailbox server.
 
-4.  Check for alerts on the Autodiscover.Proxy Health Set that may indicate an issue that affects a specific Mailbox server. For more information, see [Troubleshooting Autodiscover.Proxy Health Set](troubleshooting-autodiscover-proxy-health-set.md).
+4. Check for alerts on the Autodiscover.Proxy Health Set that may indicate an issue that affects a specific Mailbox server. For more information, see [Troubleshooting Autodiscover.Proxy Health Set](troubleshooting-autodiscover-proxy-health-set.md).
 
-5.  Check for alerts on the Autodiscover Health Set that may indicate a problem that affects specific Mailbox servers. For more information, see [Troubleshooting Autodiscover Health Set](troubleshooting-autodiscover-health-set.md).
+5. Check for alerts on the Autodiscover Health Set that may indicate a problem that affects specific Mailbox servers. For more information, see [Troubleshooting Autodiscover Health Set](troubleshooting-autodiscover-health-set.md).
 
-6.  Start IIS Manager, and then connect to the Mailbox server that is reporting the issue. Verify that the **MSExchangeAutodiscoverAppPool** application pool is running on the Mailbox server.
+6. Start IIS Manager, and then connect to the Mailbox server that is reporting the issue. Verify that the **MSExchangeAutodiscoverAppPool** application pool is running on the Mailbox server.
 
-7.  In IIS Manager, click **Application Pools**, and then recycle the **MSExchangeAutodiscoverAppPool** application pool by running the following command from the Shell:
-    
+7. In IIS Manager, click **Application Pools**, and then recycle the **MSExchangeAutodiscoverAppPool** application pool by running the following command from the Shell:
+
         %SystemRoot%\System32\inetsrv\Appcmd recycle MSExchangeAutodiscoverAppPool
 
-8.  Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
+8. Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
-9.  If the issue still exists, recycle the IIS service using the IISReset utility or by running the following command:
-    
+9. If the issue still exists, recycle the IIS service using the IISReset utility or by running the following command:
+
         Iisreset /noforce
 
 10. Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
@@ -202,4 +200,3 @@ To troubleshoot this issue, follow these steps:
 </div>
 
 </div>
-

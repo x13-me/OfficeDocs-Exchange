@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Change a role scope
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Management role scopes determine what objects are made available to a user so that the objects can be changed using the cmdlets and parameters assigned to them. By changing a scope, you can change what objects are made available to users to create, change, or remove.
 
@@ -41,11 +38,8 @@ Looking for other management tasks related to role scopes? Check out [Advanced p
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -121,13 +115,13 @@ For more information about server filters and to see a list of filterable server
 
 You can't change the list of servers on a scope. If you need to change the server list, you need to do the following:
 
-1.  If needed, retrieve the current server list in the scope to be replaced by using the "View a specific scope" procedure in the [View role scopes](view-role-scopes-exchange-2013-help.md) topic.
+1. If needed, retrieve the current server list in the scope to be replaced by using the "View a specific scope" procedure in the [View role scopes](view-role-scopes-exchange-2013-help.md) topic.
 
-2.  Create a scope with the new server list by using the "Step 1: Create a custom scope" procedure in the [Create a regular or exclusive scope](create-a-regular-or-exclusive-scope-exchange-2013-help.md) topic.
+2. Create a scope with the new server list by using the "Step 1: Create a custom scope" procedure in the [Create a regular or exclusive scope](create-a-regular-or-exclusive-scope-exchange-2013-help.md) topic.
 
-3.  Change all the management role assignments that use the old scope to use the new scope by using the "Use the Shell to change the server filter or list-based scope on a role assignment" procedure in the [Change a role assignment](change-a-role-assignment-exchange-2013-help.md) topic.
+3. Change all the management role assignments that use the old scope to use the new scope by using the "Use the Shell to change the server filter or list-based scope on a role assignment" procedure in the [Change a role assignment](change-a-role-assignment-exchange-2013-help.md) topic.
 
-4.  Remove the old scope by using the procedure in the [Remove a role scope](remove-a-role-scope-exchange-2013-help.md) topic.
+4. Remove the old scope by using the procedure in the [Remove a role scope](remove-a-role-scope-exchange-2013-help.md) topic.
 
 ## Change a database filter on a scope
 
@@ -151,11 +145,10 @@ For more information about database filters and to see a list of filterable data
 
 You can't change the list of databases on a scope. If you need to change the database list, you need to do the following:
 
-1.  If needed, retrieve the current database list in the scope to be replaced by using the "View a specific scope" procedure in the [View role scopes](view-role-scopes-exchange-2013-help.md) topic.
+1. If needed, retrieve the current database list in the scope to be replaced by using the "View a specific scope" procedure in the [View role scopes](view-role-scopes-exchange-2013-help.md) topic.
 
-2.  Create a scope with the new database list by using the "Step 1: Create a custom scope" procedure in the [Create a regular or exclusive scope](create-a-regular-or-exclusive-scope-exchange-2013-help.md) topic.
+2. Create a scope with the new database list by using the "Step 1: Create a custom scope" procedure in the [Create a regular or exclusive scope](create-a-regular-or-exclusive-scope-exchange-2013-help.md) topic.
 
-3.  Change all the management role assignments that use the old scope to use the new scope by using the "Use the Shell to change the database filter or list-based scope on a role assignment" procedure in the [Change a role assignment](change-a-role-assignment-exchange-2013-help.md) topic.
+3. Change all the management role assignments that use the old scope to use the new scope by using the "Use the Shell to change the database filter or list-based scope on a role assignment" procedure in the [Change a role assignment](change-a-role-assignment-exchange-2013-help.md) topic.
 
-4.  Remove the old scope by using the procedure in the [Remove a role scope](remove-a-role-scope-exchange-2013-help.md) topic.
-
+4. Remove the old scope by using the procedure in the [Remove a role scope](remove-a-role-scope-exchange-2013-help.md) topic.

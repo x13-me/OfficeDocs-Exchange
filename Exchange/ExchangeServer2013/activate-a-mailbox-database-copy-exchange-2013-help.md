@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Activate a mailbox database copy
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Activating a mailbox database copy is the process of designating a specific passive copy as the new active copy of a mailbox database. This process is referred to as a *database switchover*. A database switchover involves dismounting the current active database and mounting the database copy on the specified server as the new active mailbox database copy. The database copy that will become the active mailbox database must be healthy and current.
 
@@ -31,23 +28,20 @@ Looking for other management tasks related to mailbox database copies? Check out
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
 ## Use the EAC to move the active mailbox database
 
-1.  In the EAC, go to **Servers** \> **Databases**.
+1. In the EAC, go to **Servers** \> **Databases**.
 
-2.  Select the database whose copy you want to activate.
+2. Select the database whose copy you want to activate.
 
-3.  In the Details pane, under **Database Copies**, click **Activate** under the database copy you want to activate.
+3. In the Details pane, under **Database Copies**, click **Activate** under the database copy you want to activate.
 
-4.  Click **yes** to activate the database copy.
+4. Click **yes** to activate the database copy.
 
 ## Use the Shell to move the active mailbox database
 
@@ -100,7 +94,7 @@ To verify that you've successfully activated a mailbox database copy, do one of 
   - In the EAC, navigate to **Servers** \> **Databases**. Select the appropriate database, and in the Details pane, click **View details** to view the database copy properties.
 
   - In the Shell, run the following command to display status information for a database copy.
-    
+
     ```powershell
     Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
     ```
@@ -110,4 +104,3 @@ To verify that you've successfully activated a mailbox database copy, do one of 
 [Mailbox database copies](mailbox-database-copies-exchange-2013-help.md)
 
 [Configure mailbox database copy properties](configure-mailbox-database-copy-properties-exchange-2013-help.md)
-

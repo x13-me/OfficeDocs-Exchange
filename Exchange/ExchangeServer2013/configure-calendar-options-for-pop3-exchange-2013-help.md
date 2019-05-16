@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can use the Shell to configure calendaring access settings for your users who connect to their mailboxes using POP3 connections. The settings you specify determine how your POP3 users can access their calendar and exchange calendar information (for example, send or respond to a meeting request) with other users.
 
 For additional information related to POP3, see [POP3 and IMAP4 in Exchange Server 2013](pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md).
@@ -31,11 +30,8 @@ For additional information related to POP3, see [POP3 and IMAP4 in Exchange Serv
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## Use the Shell to set the calendar options for POP3
 
@@ -48,7 +44,7 @@ Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
 This example enables POP3 users to access calendar information from an internal server.
 
 ```powershell
-    Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+    Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl
 ```
 
 This example enables POP3 users to access calendar information from the Internet on an external server.
@@ -86,4 +82,3 @@ After you set the calendar options for POP3, you may also want to:
 [Configure POP3 and IMAP4 message retrieval format options](configure-pop3-and-imap4-message-retrieval-format-options-exchange-2013-help.md)
 
 [Set connection time-out limits for POP3](set-connection-time-out-limits-for-pop3-exchange-2013-help.md)
-
