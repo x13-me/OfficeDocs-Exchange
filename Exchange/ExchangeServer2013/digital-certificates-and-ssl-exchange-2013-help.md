@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Digital certificates and SSL: Exchange 2013 Help'
 TOCTitle: Digital certificates and SSL
 ms:assetid: a9e2e08c-d46a-4135-a387-eb653212b676
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351044(v=EXCHG.150)
 ms:contentKeyID: 48385423
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -187,11 +191,11 @@ The most important step you can take to reduce the number of host names that you
 
 The host names you must include in your Exchange certificates are the host names used by client applications to connect to Exchange. The following is a list of typical host names that would be required for a company named Contoso:
 
-  - **Mail.contoso.com**   This host name covers most connections to Exchange, including Microsoft Outlook, Outlook Web App, Outlook Anywhere, the Offline Address Book, Exchange Web Services, POP3, IMAP4, SMTP, Exchange Control Panel, and ActiveSync.
+  - **Mail.contoso.com**: This host name covers most connections to Exchange, including Microsoft Outlook, Outlook Web App, Outlook Anywhere, the Offline Address Book, Exchange Web Services, POP3, IMAP4, SMTP, Exchange Control Panel, and ActiveSync.
 
-  - **Autodiscover.contoso.com**   This host name is used by clients that support Autodiscover, including Microsoft Office Outlook 2007 and later versions, Exchange ActiveSync, and Exchange Web Services clients.
+  - **Autodiscover.contoso.com**: This host name is used by clients that support Autodiscover, including Microsoft Office Outlook 2007 and later versions, Exchange ActiveSync, and Exchange Web Services clients.
 
-  - **Legacy.contoso.com**   This host name is required in a coexistence scenario with Exchange 2007 and Exchange 2013. If you'll have clients with mailboxes on Exchange 2007 and Exchange 2013, configuring a legacy host name prevents your users from having to learn a second URL during the upgrade process.
+  - **Legacy.contoso.com**: This host name is required in a coexistence scenario with Exchange 2007 and Exchange 2013. If you'll have clients with mailboxes on Exchange 2007 and Exchange 2013, configuring a legacy host name prevents your users from having to learn a second URL during the upgrade process.
 
 ## Understanding wildcard certificates
 

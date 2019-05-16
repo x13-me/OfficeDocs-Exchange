@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Edge Subscriptions: Exchange 2013 Help'
 TOCTitle: Edge Subscriptions
 ms:assetid: 3addd71a-4165-401f-a009-002bcd8baba6
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997438(v=EXCHG.150)
 ms:contentKeyID: 61200285
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -370,9 +374,9 @@ Before you can subscribe your Edge Transport server to your Exchange organizatio
 
   - Verify that the perimeter network firewall separating the Edge Transport server from the Exchange organization is configured to enable communications through the correct ports. The Edge Transport server uses non-standard LDAP ports. If your environment requires specific ports, you can modify the ports used by AD LDS using the ConfigureAdam.ps1 script provided with Exchange. For more information, see [Modify AD LDS configuration](modify-ad-lds-configuration-exchange-2013-help.md). Modify the ports before you create the Edge Subscription. If you modify the ports after you create the Edge Subscription, you will need to remove the Edge Subscription and then create a new Edge subscription. By default, the following LDAP ports are used to access AD LDS:
     
-      - **LDAP**   Port 50389/TCP is used locally to bind to the AD LDS instance. This port doesn't have to be open on the perimeter network firewall.
+      - **LDAP**: Port 50389/TCP is used locally to bind to the AD LDS instance. This port doesn't have to be open on the perimeter network firewall.
     
-      - **Secure LDAP**   Port 50636/TCP is used for directory synchronization from Mailbox servers to AD LDS. This port must be open on the firewall for successful EdgeSync synchronization.
+      - **Secure LDAP**: Port 50636/TCP is used for directory synchronization from Mailbox servers to AD LDS. This port must be open on the firewall for successful EdgeSync synchronization.
 
   - Verify that DNS host name resolution is successful from the Edge Transport server to the Mailbox servers and from the Mailbox servers to the Edge Transport server.
 
@@ -380,11 +384,11 @@ Before you can subscribe your Edge Transport server to your Exchange organizatio
 
   - Configure the following transport settings for propagation to the Edge Transport server:
     
-      - **Internal SMTP servers**   Use the *InternalSMTPServers* parameter on the **Set-TransportConfig** cmdlet to specify a list of internal SMTP server IP addresses or IP address ranges to be ignored by the Sender ID and Connection Filtering agents on the Edge Transport server.
+      - **Internal SMTP servers**: Use the *InternalSMTPServers* parameter on the **Set-TransportConfig** cmdlet to specify a list of internal SMTP server IP addresses or IP address ranges to be ignored by the Sender ID and Connection Filtering agents on the Edge Transport server.
     
-      - **Accepted domains**   Configure all authoritative domains, internal relay domains, and external relay domains.
+      - **Accepted domains**: Configure all authoritative domains, internal relay domains, and external relay domains.
     
-      - **Remote domains**   Configure remote domain settings.
+      - **Remote domains**: Configure remote domain settings.
 
 Return to top
 

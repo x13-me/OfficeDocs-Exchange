@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Journaling: Exchange 2013 Help'
 TOCTitle: Journaling
 ms:assetid: 6a20f207-4485-44ef-b010-ec760eb5165b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998649(v=EXCHG.150)
 ms:contentKeyID: 49354855
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -79,9 +83,9 @@ In an Exchange 2013 organization, all email traffic is routed by Mailbox servers
 
 Exchange 2013 provides the following journaling options:
 
-  - **Standard journaling**   Standard journaling is configured on a mailbox database. It enables the Journaling agent to journal all messages sent to and from mailboxes located on a specific mailbox database. To journal all messages to and from all recipients and senders, you must configure journaling on all mailbox databases on all Mailbox servers in the organization.
+  - **Standard journaling**: Standard journaling is configured on a mailbox database. It enables the Journaling agent to journal all messages sent to and from mailboxes located on a specific mailbox database. To journal all messages to and from all recipients and senders, you must configure journaling on all mailbox databases on all Mailbox servers in the organization.
 
-  - **Premium journaling**   Premium journaling enables the Journaling agent to perform more granular journaling by using journal rules. Instead of journaling all mailboxes residing on a mailbox database, you can configure journal rules to match your organization's needs by journaling individual recipients or members of distribution groups. You must have an Exchange Enterprise client access license (CAL) to use premium journaling.
+  - **Premium journaling**: Premium journaling enables the Journaling agent to perform more granular journaling by using journal rules. Instead of journaling all mailboxes residing on a mailbox database, you can configure journal rules to match your organization's needs by journaling individual recipients or members of distribution groups. You must have an Exchange Enterprise client access license (CAL) to use premium journaling.
 
 When you enable standard journaling on a mailbox database, this information is saved in Active Directory and is read by the Journaling agent. Similarly, journal rules configured with premium journaling are also saved in Active Directory and applied by the Journaling agent. For more information about how to configure standard and premium journaling, see [Manage journaling](https://docs.microsoft.com/en-us/exchange/security-and-compliance/journaling/manage-journaling).
 
@@ -91,21 +95,21 @@ Return to top
 
 The following are key aspects of journal rules:
 
-  - **Journal rule scope**   Defines which messages are journaled by the Journaling agent.
+  - **Journal rule scope**: Defines which messages are journaled by the Journaling agent.
 
-  - **Journal recipient**   Specifies the SMTP address of the recipient you want to journal.
+  - **Journal recipient**: Specifies the SMTP address of the recipient you want to journal.
 
-  - **Journaling mailbox**   Specifies one or more mailboxes used for collecting journal reports.
+  - **Journaling mailbox**: Specifies one or more mailboxes used for collecting journal reports.
 
 ## Journal rule scope
 
 You can use a journal rule to journal only internal messages, only external messages, or both. The following list describes these scopes:
 
-  - **Internal messages only**   Journal rules with the scope set to journal internal messages sent between the recipients inside your Exchange organization.
+  - **Internal messages only**: Journal rules with the scope set to journal internal messages sent between the recipients inside your Exchange organization.
 
-  - **External messages only**   Journal rules with the scope set to journal external messages sent to recipients or received from senders outside your Exchange organization.
+  - **External messages only**: Journal rules with the scope set to journal external messages sent to recipients or received from senders outside your Exchange organization.
 
-  - **All messages**   Journal rules with the scope set to journal all messages that pass through your organization regardless of origin or destination. These include messages that may have already been processed by journal rules in the Internal and External scopes.
+  - **All messages**: Journal rules with the scope set to journal all messages that pass through your organization regardless of origin or destination. These include messages that may have already been processed by journal rules in the Internal and External scopes.
 
 ## Journal recipient
 

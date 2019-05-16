@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting EDS Health Set
 TOCTitle: Troubleshooting EDS Health Set
 ms:assetid: 2625a6fe-12ca-4e15-8165-37fafc23289a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.eds(v=EXCHG.150)
 ms:contentKeyID: 49720743
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

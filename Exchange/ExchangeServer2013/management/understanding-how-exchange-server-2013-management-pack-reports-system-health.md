@@ -1,10 +1,14 @@
-﻿---
+---
 title: Understanding how Exchange Server 2013 Management Pack reports system health
 TOCTitle: Understanding how Exchange Server 2013 Management Pack reports system health
 ms:assetid: 6ca8847f-93fe-458d-bd43-7afad7fdd2f4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn195910(v=EXCHG.150)
 ms:contentKeyID: 53181786
 ms.date: 05/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -36,7 +40,7 @@ In Exchange Server 2013, several architectural changes were made. One of the key
 
 ![Managed availability](images/Dn195910.dd5febae-d05e-4089-a3f5-1691b2d9a3d7(EXCHG.150).png "Managed availability")
 
-  - **Probes**   These are sets of data collectors that measure various components. There are three distinct types of probes:
+  - **Probes**: These are sets of data collectors that measure various components. There are three distinct types of probes:
     
       - Synthetic transactions that measure synthetic end-to-end user operations and checks that measure actual traffic.
     
@@ -44,9 +48,9 @@ In Exchange Server 2013, several architectural changes were made. One of the key
     
       - Notifications that allow Exchange to take immediate action. A good example of this is the notification that is triggered when a certificate expires.
 
-  - **Monitors**   The data collected by probes are passed on to monitors that analyze the data for specific conditions and depending on those conditions determine if the particular component is healthy or unhealthy.
+  - **Monitors**: The data collected by probes are passed on to monitors that analyze the data for specific conditions and depending on those conditions determine if the particular component is healthy or unhealthy.
 
-  - **Responders**   If a monitor determines that a component is unhealthy, it will trigger a responder. If the problem is recoverable, the responder attempts to recover the component using the built-in logic. There are several responders available for each component, but the one responder that's relevant for the Exchange 2013 Management Pack is the *Escalate Responder*. When the Escalate Responder is triggered, it generates an event that the Exchange 2013 Management Pack recognizes and feeds the appropriate information into that alert that provides administrators with the information necessary to address the problem.
+  - **Responders**: If a monitor determines that a component is unhealthy, it will trigger a responder. If the problem is recoverable, the responder attempts to recover the component using the built-in logic. There are several responders available for each component, but the one responder that's relevant for the Exchange 2013 Management Pack is the *Escalate Responder*. When the Escalate Responder is triggered, it generates an event that the Exchange 2013 Management Pack recognizes and feeds the appropriate information into that alert that provides administrators with the information necessary to address the problem.
 
 Each component in Exchange 2013 uses a specific set of probes, monitors and responders to monitor itself. These collections of probes and monitors are referred to as *health sets*. For example, there are a number of probes that collect data about various aspects of the ActiveSync service. This data is processed by a designated set of monitors that trigger the appropriate responders to correct any issues that they detect in the ActiveSync service. Collectively, these components make up the ActiveSync health set.
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Recipient resolution: Exchange 2013 Help'
 TOCTitle: Recipient resolution
 ms:assetid: 09deda5a-d405-45b1-a3ff-fefd3d76cdea
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb430743(v=EXCHG.150)
 ms:contentKeyID: 50934209
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -164,7 +168,7 @@ Expansion occurs after top-level resolution. Expansion completely expands nested
 
 The following list describes the kinds of recipients that require expansion:
 
-  - **Distribution groups and dynamic distribution groups**   Distribution groups are expanded based on the **memberOf** Active Directory property. Dynamic distribution groups are expanded by using the Active Directory query definition. If the *ExpansionServer* parameter is set on the group, the group isn't expanded by the current server. The distribution group is routed to the specified server for expansion.
+  - **Distribution groups and dynamic distribution groups**: Distribution groups are expanded based on the **memberOf** Active Directory property. Dynamic distribution groups are expanded by using the Active Directory query definition. If the *ExpansionServer* parameter is set on the group, the group isn't expanded by the current server. The distribution group is routed to the specified server for expansion.
     
 
     > [!NOTE]
@@ -172,15 +176,15 @@ The following list describes the kinds of recipients that require expansion:
 
 
 
-  - **Alternative recipients**   The *ForwardingAddress* parameter may be set on mailboxes and mail-enabled public folders. The *ForwardingAddress* parameter redirects all messages to the specified alternative recipient. This is known as a *forwarded recipient*. When an alternative delivery address is specified in the *ForwardingAddress* parameter and the *DeliverToMailboxAndForward* parameter is set to `$true`, the message is delivered to the original recipient and the alternative recipient. This is known as *delivered and forwarded recipient*.
+  - **Alternative recipients**: The *ForwardingAddress* parameter may be set on mailboxes and mail-enabled public folders. The *ForwardingAddress* parameter redirects all messages to the specified alternative recipient. This is known as a *forwarded recipient*. When an alternative delivery address is specified in the *ForwardingAddress* parameter and the *DeliverToMailboxAndForward* parameter is set to `$true`, the message is delivered to the original recipient and the alternative recipient. This is known as *delivered and forwarded recipient*.
 
-  - **Contact chains**   A *contact chain* is a mail user or mail contact that has the *ExternalEmailAddress* parameter set to the email address of another recipient in the Exchange organization.
+  - **Contact chains**: A *contact chain* is a mail user or mail contact that has the *ExternalEmailAddress* parameter set to the email address of another recipient in the Exchange organization.
 
 ## Detection of recipient loops
 
 As the distribution groups, alternative recipients, and contacts chains are expanded, the categorizer checks for *recipient loops*. A recipient loop is a recipient configuration problem that causes message delivery to the same recipients in an endless circle. The following list describes the different types of recipient loops:
 
-  - **Harmless recipient loop**   A harmless recipient loop results in successful message delivery. The following list describes two scenarios when harmless recipient loops occur:
+  - **Harmless recipient loop**: A harmless recipient loop results in successful message delivery. The following list describes two scenarios when harmless recipient loops occur:
     
       - When two distribution groups contain one another as members.
     
@@ -188,7 +192,7 @@ As the distribution groups, alternative recipients, and contacts chains are expa
     
     When a harmless recipient loop is detected, the message is delivered to the recipient, but no additional attempts are made to deliver the message to the same recipient.
 
-  - **Broken recipient loop**   A broken recipient loop can't result in successful message delivery. An example of a broken recipient loop is when mailboxes or mail-enabled public folders have the *ForwardingAddress* parameter set to one another. When the categorizer detects a broken recipient loop, expansion activity for the current recipient stops, and an NDR is generated for the recipient.
+  - **Broken recipient loop**: A broken recipient loop can't result in successful message delivery. An example of a broken recipient loop is when mailboxes or mail-enabled public folders have the *ForwardingAddress* parameter set to one another. When the categorizer detects a broken recipient loop, expansion activity for the current recipient stops, and an NDR is generated for the recipient.
 
 Detection of recipient loops doesn't prevent duplicate message delivery. For example, Distribution Group C will experience duplicate message delivery if the following conditions are true:
 
@@ -202,9 +206,9 @@ When a distribution group is expanded, the message type is checked to determine 
 
 The following list describes the delivery report redirection settings that are available for distribution groups and dynamic distribution groups:
 
-  - **ReportToManagerEnabled**   This parameter enables delivery reports to be sent to the distribution group manager. Valid values are `$true` or `$false`. The default value is `$false`. For a distribution group, the manager is controlled by the *ManagedBy* parameter in the **Set-Group** cmdlet. For a dynamic distribution group, the manager is controlled by the *ManagedBy* parameter in the **Set-DynamicDistributionGroup** cmdlet.
+  - **ReportToManagerEnabled**: This parameter enables delivery reports to be sent to the distribution group manager. Valid values are `$true` or `$false`. The default value is `$false`. For a distribution group, the manager is controlled by the *ManagedBy* parameter in the **Set-Group** cmdlet. For a dynamic distribution group, the manager is controlled by the *ManagedBy* parameter in the **Set-DynamicDistributionGroup** cmdlet.
 
-  - **ReportToOriginatorEnabled**   This parameter enables delivery reports to be sent to the sender of email messages that are sent to this distribution group. Valid values are `$true` or `$false`. The default value is `$true`.
+  - **ReportToOriginatorEnabled**: This parameter enables delivery reports to be sent to the sender of email messages that are sent to this distribution group. Valid values are `$true` or `$false`. The default value is `$true`.
     
 
     > [!NOTE]
@@ -214,21 +218,21 @@ The following list describes the delivery report redirection settings that are a
 
 The following list describes the available delivery report messages:
 
-  - **Delivery receipt (DR)**   This report confirms that a message was delivered to its intended recipient.
+  - **Delivery receipt (DR)**: This report confirms that a message was delivered to its intended recipient.
 
-  - **Delivery status notification (DSN)**   This report describes the result of an attempt to deliver a message. For more information about DSN messages, see [DSNs and NDRs in Exchange 2013](dsns-and-ndrs-in-exchange-2013-exchange-2013-help.md).
+  - **Delivery status notification (DSN)**: This report describes the result of an attempt to deliver a message. For more information about DSN messages, see [DSNs and NDRs in Exchange 2013](dsns-and-ndrs-in-exchange-2013-exchange-2013-help.md).
 
-  - **Message disposition notification (MDN)**   This report describes the status of a message after it has been successfully delivered to a recipient. A read notification (RN) and a non-read notification (NRN) are both examples of an MDN message. MDN messages are defined in RFC 2298 and are controlled by the **Disposition-Notification-To:** header field in the message header. MDN settings that use the `Disposition-Notification-To:` header field are compatible with many different message servers. MDN settings can also be defined by using MAPI properties in Microsoft Outlook and Exchange.
+  - **Message disposition notification (MDN)**: This report describes the status of a message after it has been successfully delivered to a recipient. A read notification (RN) and a non-read notification (NRN) are both examples of an MDN message. MDN messages are defined in RFC 2298 and are controlled by the **Disposition-Notification-To:** header field in the message header. MDN settings that use the `Disposition-Notification-To:` header field are compatible with many different message servers. MDN settings can also be defined by using MAPI properties in Microsoft Outlook and Exchange.
 
-  - **Non-delivery report (NDR)**   This report indicates to the message sender that the message couldn't be delivered to the specified recipients.
+  - **Non-delivery report (NDR)**: This report indicates to the message sender that the message couldn't be delivered to the specified recipients.
 
-  - **Non-read notification (NRN)**   This report indicates that a message was deleted before it was read.
+  - **Non-read notification (NRN)**: This report indicates that a message was deleted before it was read.
 
-  - **Out of office (OOF)**   This report indicates that the recipient won't respond to email messages. The acronym OOF dates back to the original Microsoft messaging system where the corresponding notification was named "out of facility."
+  - **Out of office (OOF)**: This report indicates that the recipient won't respond to email messages. The acronym OOF dates back to the original Microsoft messaging system where the corresponding notification was named "out of facility."
 
-  - **Read notification (RN)**   This report indicates that a message was read.
+  - **Read notification (RN)**: This report indicates that a message was read.
 
-  - **Recall Report**   This report indicates the status of a recall request for a specific recipient. A recall request is when a sender tries to recall a sent message by using Outlook.
+  - **Recall Report**: This report indicates the status of a recall request for a specific recipient. A recall request is when a sender tries to recall a sent message by using Outlook.
 
 When a delivery report message is sent to a distribution group, the following settings cause the report message to be deleted:
 
@@ -306,9 +310,9 @@ The expansion process also enforces any message restrictions that are configured
 
 Certain types of messages that are sent by authenticated senders are exempt from restrictions. The following list describes the messages that are exempt from recipient restrictions:
 
-  - **All messages that are sent by the Microsoft Exchange recipient**   These messages include DSN messages, journal reports, quota messages, and other system-generated messages that are sent to internal message senders. For more information about the Microsoft recipient, see [Recipients](recipients-exchange-2013-help.md).
+  - **All messages that are sent by the Microsoft Exchange recipient**: These messages include DSN messages, journal reports, quota messages, and other system-generated messages that are sent to internal message senders. For more information about the Microsoft recipient, see [Recipients](recipients-exchange-2013-help.md).
 
-  - **All messages that are sent by the external postmaster address**   These messages include DSN messages and other system-generated messages that are sent to external message senders. For more information about the external postmaster address, see [Configure the external postmaster address](configure-the-external-postmaster-address-exchange-2013-help.md).
+  - **All messages that are sent by the external postmaster address**: These messages include DSN messages and other system-generated messages that are sent to external message senders. For more information about the external postmaster address, see [Configure the external postmaster address](configure-the-external-postmaster-address-exchange-2013-help.md).
 
 Certain types of messages are blocked when they are sent from the Exchange organization to external domains. The settings are controlled by the following parameters in the **Set-RemoteDomain** cmdlet:
 
@@ -330,9 +334,9 @@ Return to top
 
 Because the complete list of message recipients is expanded and resolved by recipient resolution, there are occasions when different copies of the same message must be created. These occasions are described by the following scenarios:
 
-  - **When message recipients require different message settings**   Message properties such as read receipts may have to be enabled for some recipients and blocked for other recipients. Creating a new version of the message that has slightly different properties than the original message is called *bifurcation*.
+  - **When message recipients require different message settings**: Message properties such as read receipts may have to be enabled for some recipients and blocked for other recipients. Creating a new version of the message that has slightly different properties than the original message is called *bifurcation*.
 
-  - **To limit the number of envelope recipients in a single message**   The recipient expansion process can generate thousands of individual recipients when large distribution groups are expanded. In Exchange, instead of creating a single copy of the message that has thousands of envelope recipients, multiple copies of the same message that have a limited number of envelope recipients are created.
+  - **To limit the number of envelope recipients in a single message**: The recipient expansion process can generate thousands of individual recipients when large distribution groups are expanded. In Exchange, instead of creating a single copy of the message that has thousands of envelope recipients, multiple copies of the same message that have a limited number of envelope recipients are created.
 
 ## Bifurcation
 

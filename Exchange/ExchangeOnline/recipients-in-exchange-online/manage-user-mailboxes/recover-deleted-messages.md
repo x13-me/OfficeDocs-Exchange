@@ -6,13 +6,14 @@ author: markjjo
 ms.author: markjjo
 ms.assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Recover deleted messages in a user's mailbox
 ms.collection:
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

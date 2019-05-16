@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure a spam quarantine mailbox: Exchange 2013 Help'
 TOCTitle: Configure a spam quarantine mailbox
 ms:assetid: 907d2f90-2a62-4d59-a4cf-945fef2e963f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb123746(v=EXCHG.150)
 ms:contentKeyID: 49300568
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -57,9 +61,9 @@ For more information, see [Manage content filtering](manage-content-filtering-ex
 
 To create a dedicated spam quarantine mailbox, follow these steps:
 
-  - **Create a dedicated Exchange database**   We recommend that you create a dedicated database for the spam quarantine mailbox. The spam quarantine mailbox should have a large database, because if the storage quota limit is reached, messages will be lost. For more information, see [Manage mailbox databases in Exchange 2013](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md).
+  - **Create a dedicated Exchange database**: We recommend that you create a dedicated database for the spam quarantine mailbox. The spam quarantine mailbox should have a large database, because if the storage quota limit is reached, messages will be lost. For more information, see [Manage mailbox databases in Exchange 2013](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md).
 
-  - **Create a dedicated mailbox and user account**   We recommend that you create a dedicated mailbox and Active Directory user account for the spam quarantine mailbox. For more information, see [Create user mailboxes](create-user-mailboxes-exchange-2013-help.md).
+  - **Create a dedicated mailbox and user account**: We recommend that you create a dedicated mailbox and Active Directory user account for the spam quarantine mailbox. For more information, see [Create user mailboxes](create-user-mailboxes-exchange-2013-help.md).
     
     You may apply recipient policies, such as messaging records management, mailbox quotas, and delegation rights, according to your organization's compliance policies and needs. For more information, see [Messaging records management](https://docs.microsoft.com/en-us/exchange/security-and-compliance/messaging-records-management/messaging-records-management).
     
@@ -69,7 +73,7 @@ To create a dedicated spam quarantine mailbox, follow these steps:
 
 
 
-  - **Configure Outlook**   You need to configure the Outlook delegate access permissions to meet the needs of your organization. In addition, we recommend that you configure the Outlook profile to show the original `Sender[#0x0069001E]`, `Recipient[#0x0E04001E]`, and `Bcc[#0x0E02001E]` fields in the **Message** view. For more information, see [Release quarantined messages from the spam quarantine mailbox](release-quarantined-messages-from-the-spam-quarantine-mailbox-exchange-2013-help.md).
+  - **Configure Outlook**: You need to configure the Outlook delegate access permissions to meet the needs of your organization. In addition, we recommend that you configure the Outlook profile to show the original `Sender[#0x0069001E]`, `Recipient[#0x0E04001E]`, and `Bcc[#0x0E02001E]` fields in the **Message** view. For more information, see [Release quarantined messages from the spam quarantine mailbox](release-quarantined-messages-from-the-spam-quarantine-mailbox-exchange-2013-help.md).
 
 ## Step 3: Specify the spam quarantine mailbox
 

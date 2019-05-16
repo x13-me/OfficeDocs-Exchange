@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Transport protection rules: Exchange 2013 Help'
 TOCTitle: Transport protection rules
 ms:assetid: 9bd6d049-165e-4e51-a79f-3b8ff409da55
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298166(v=EXCHG.150)
 ms:contentKeyID: 49319926
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

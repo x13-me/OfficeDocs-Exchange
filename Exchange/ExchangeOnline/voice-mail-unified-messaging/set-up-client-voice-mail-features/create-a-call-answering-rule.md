@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: You can use Exchange Online PowerShell to create one or more call answering rules for a user. You can also use the New-UMCallAnsweringRule cmdlet in a PowerShell script to create call answering rules for multiple users.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 0976f8f2-3449-44f1-b0d1-20c91622e827
 ms.date: 4/8/2015
+ms.reviewer: 
 title: Create a call answering rule
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

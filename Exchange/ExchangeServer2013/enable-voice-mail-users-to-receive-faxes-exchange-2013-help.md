@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable voice mail users to receive faxes: Exchange 2013 Help'
 TOCTitle: Enable voice mail users to receive faxes
 ms:assetid: 451ab0ea-21e1-4c1f-ae62-4ba7cdfd1e4d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232022(v=EXCHG.150)
 ms:contentKeyID: 49315404
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -85,7 +89,7 @@ Return to top
 
 There are several options for sending and receiving faxes, including the following:
 
-**Traditional fax machines and computer-based faxing**   A scanner, a fax modem in a computer, a printer with built-in faxing capabilities, or a dedicated fax machine can be used to send and receive faxes. All of these can be used to transmit data in the form of pulses by using a telephone line to another fax device, usually another fax machine or computer that has a fax modem. The pulses are then transformed into images or used to print the image on paper.
+**Traditional fax machines and computer-based faxing**: A scanner, a fax modem in a computer, a printer with built-in faxing capabilities, or a dedicated fax machine can be used to send and receive faxes. All of these can be used to transmit data in the form of pulses by using a telephone line to another fax device, usually another fax machine or computer that has a fax modem. The pulses are then transformed into images or used to print the image on paper.
 
 The traditional fax method requires at least a single telephone line on the sending and receiving device, and only one fax can be sent or received at a time. A disadvantage of sending and receiving faxes by using a fax modem is that the computer must be turned on and running fax software or a fax service. This kind of computer-based faxing doesn't use the Internet to send or receive faxes.
 
@@ -93,7 +97,7 @@ The traditional fax method requires at least a single telephone line on the send
 
 ![Traditional Faxing](images/Bb232022.7bdc1cab-9504-4314-a6e0-eccdfe2a9cd6(EXCHG.150).gif "Traditional Faxing")
 
-**Fax servers or gateways and Internet fax services**   There are several ways to send and receive faxes over the Internet. These include using a software application on a computer or using an email client to receive faxes. In most cases, this kind of faxing involves using a fax server or fax gateway to convert between faxes and email. This method has become increasingly popular because it enables organizations to remove or avoid purchasing additional fax machines. It also eliminates the need to install additional telephone lines. This kind of faxing involves creating a document, including a fax cover page with the correct identifying information, and then sending the document to a traditional fax machine. For example, the user uses a software application such as Microsoft Word or Microsoft Outlook to create and send the fax to the fax server or gateway. The fax server or gateway receives the fax and then sends it by using a traditional telephone line to a fax machine or a fax modem that's installed on a computer.
+**Fax servers or gateways and Internet fax services**: There are several ways to send and receive faxes over the Internet. These include using a software application on a computer or using an email client to receive faxes. In most cases, this kind of faxing involves using a fax server or fax gateway to convert between faxes and email. This method has become increasingly popular because it enables organizations to remove or avoid purchasing additional fax machines. It also eliminates the need to install additional telephone lines. This kind of faxing involves creating a document, including a fax cover page with the correct identifying information, and then sending the document to a traditional fax machine. For example, the user uses a software application such as Microsoft Word or Microsoft Outlook to create and send the fax to the fax server or gateway. The fax server or gateway receives the fax and then sends it by using a traditional telephone line to a fax machine or a fax modem that's installed on a computer.
 
 **Faxing by using fax servers or gateways**
 
@@ -119,7 +123,7 @@ The following figure shows how Internet fax services can be used to send and rec
 
 ![Internet Fax Services](images/Bb232022.5d0fb3d6-95f4-4fbf-80e5-64f5de553e65(EXCHG.150).gif "Internet Fax Services")
 
-**Faxing by using an email client application**   Faxes can be sent and received by a fax machine over the Internet and then received by an email client such as Outlook.
+**Faxing by using an email client application**: Faxes can be sent and received by a fax machine over the Internet and then received by an email client such as Outlook.
 
 The T.37 protocol was designed to enable a fax machine to send fax messages over the Internet to an email client. The faxes are sent over the Internet as email attachments, typically as .tif or .pdf files. In this kind of faxing, a fax machine that supports iFax or T.37 is required, in addition to an email address for the sending and receiving fax machines. To work with traditional fax machines and fax modems, all T.37 fax machines support standard faxing by using a telephone line. However, in some cases, T.37 fax machines can be used when a fax gateway is also being used. The following figure shows how T.37-based fax machines and email clients can be used to send and receive faxes.
 
@@ -127,7 +131,7 @@ The T.37 protocol was designed to enable a fax machine to send fax messages over
 
 ![Faxing with email](images/Bb232022.086f086b-dc39-4439-a694-7a98e03e65d1(EXCHG.150).gif "Faxing with email")
 
-**Faxing by using a VoIP network**   VoIP is a technology that provides hardware and software that enables people to use an IP-based network as the transmission medium for telephone calls. On a VoIP network, voice and fax data is sent in packets by using IP instead of traditional circuit transmissions or the circuit-switched telephone lines of the PSTN. A VoIP gateway that you connect to your IP network uses VoIP to send voice data packets between a Client Access server running the Microsoft Exchange Unified Messaging Call Router service and a Mailbox server running the Microsoft Exchange Unified Messaging service and a Private Branch eXchange (PBX) system. You can also use an IP PBX to perform the functions of both a VoIP gateway and a PBX.
+**Faxing by using a VoIP network**: VoIP is a technology that provides hardware and software that enables people to use an IP-based network as the transmission medium for telephone calls. On a VoIP network, voice and fax data is sent in packets by using IP instead of traditional circuit transmissions or the circuit-switched telephone lines of the PSTN. A VoIP gateway that you connect to your IP network uses VoIP to send voice data packets between a Client Access server running the Microsoft Exchange Unified Messaging Call Router service and a Mailbox server running the Microsoft Exchange Unified Messaging service and a Private Branch eXchange (PBX) system. You can also use an IP PBX to perform the functions of both a VoIP gateway and a PBX.
 
 There are two basic types of networks: circuit-switched and packet-switched. A circuit-switched network is a network in which there exists a dedicated connection. A dedicated connection is a circuit or channel that's set up between two nodes so that they can communicate. After a call is established between two nodes, the connection can be used only by these two nodes. When the call is ended by one of the nodes, the connection is canceled. In circuit-switched networks, such as the PSTN, multiple calls are transmitted across the same transmission medium. Frequently, the medium that's used in the PSTN is copper. However, fiber optic cable might also be used.
 
@@ -297,11 +301,11 @@ If you configure two DID extension numbers for a specific user, the DID extensio
 
 You have the following options when you're configuring multiple DID extension numbers for UM-enabled users:
 
-  - **One extension for fax without Unified Messaging and one for voice**   This type of configuration is enabled on a per-user basis and is used when you have extra or unused DID extension numbers available. One DID extension number is published as the user's voice mail number and the other DID extension number is published as the user's fax number. Voice calls that are answered because the user doesn't answer the phone or a busy signal is encountered are forwarded to a Mailbox server, and a voice message is created and sent to the UM-enabled user's mailbox. The other extension number can be connected to a fax machine or to another computer that has a fax modem. With this configuration, a Mailbox server doesn't process fax calls, and fax messages aren't sent to the UM-enabled user's mailbox.
+  - **One extension for fax without Unified Messaging and one for voice**: This type of configuration is enabled on a per-user basis and is used when you have extra or unused DID extension numbers available. One DID extension number is published as the user's voice mail number and the other DID extension number is published as the user's fax number. Voice calls that are answered because the user doesn't answer the phone or a busy signal is encountered are forwarded to a Mailbox server, and a voice message is created and sent to the UM-enabled user's mailbox. The other extension number can be connected to a fax machine or to another computer that has a fax modem. With this configuration, a Mailbox server doesn't process fax calls, and fax messages aren't sent to the UM-enabled user's mailbox.
 
-  - **One extension for fax and one for voice**   This type of configuration is enabled on a per-user basis and can be used when your organization has many DID extension numbers available. In this configuration, both DID extension numbers that are answered because the user doesn't answer the phone or a busy signal is encountered are forwarded to a Mailbox server, which creates a voice or fax message depending on the DID extension number that's called. Although the user publishes one number for voice and one for fax, the Mailbox server detects the type of call that's being received on the DID extension number and can create a voice or fax message from calls to either of the DID extension numbers. This is very useful when a user doesn't have a separate fax machine or a dedicated computer that has a fax modem to answer incoming fax calls.
+  - **One extension for fax and one for voice**: This type of configuration is enabled on a per-user basis and can be used when your organization has many DID extension numbers available. In this configuration, both DID extension numbers that are answered because the user doesn't answer the phone or a busy signal is encountered are forwarded to a Mailbox server, which creates a voice or fax message depending on the DID extension number that's called. Although the user publishes one number for voice and one for fax, the Mailbox server detects the type of call that's being received on the DID extension number and can create a voice or fax message from calls to either of the DID extension numbers. This is very useful when a user doesn't have a separate fax machine or a dedicated computer that has a fax modem to answer incoming fax calls.
 
-  - **One "phantom" extension for fax and one for voice**   This type of configuration is enabled on a per-user basis. It's essentially the same as the configuration that uses two DID numbers (one for fax and one for voice). However, in this configuration, the number that's published for fax calls for the UM-enabled user is configured on the PBX as a "phantom" extension. Incoming calls that are received on this "phantom" DID extension number are always forwarded to a Mailbox server.
+  - **One "phantom" extension for fax and one for voice**: This type of configuration is enabled on a per-user basis. It's essentially the same as the configuration that uses two DID numbers (one for fax and one for voice). However, in this configuration, the number that's published for fax calls for the UM-enabled user is configured on the PBX as a "phantom" extension. Incoming calls that are received on this "phantom" DID extension number are always forwarded to a Mailbox server.
     
     The advantage of this type of configuration is that incoming fax calls are answered by a Mailbox server. When the phone rings but isn't answered, a fax is created and forwarded by the Mailbox server to the UM-enabled user's mailbox without disturbing the user. This happens automatically because no telephone or fax device is positioned close to the user, and the user doesn't hear the ring of the incoming call.
     

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Working with command output: Exchange 2013 Help'
 TOCTitle: Working with command output
 ms:assetid: 8320e1a5-d3f5-4615-878d-b23e2aaa6b1e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb123533(v=EXCHG.150)
 ms:contentKeyID: 49289327
 ms.date: 03/23/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -279,11 +283,11 @@ Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
 
 The Shell gives you access to a large quantity of information about your servers, mailboxes, Active Directory, and other objects in your organization. Although access to this information helps you better understand your environment, this much information can be overwhelming. The Shell lets you control this information and return only the data that you want to see by using filtering. The following types of filtering are available:
 
-  - **Server-side filtering**   Server-side filtering takes the filter that you specify on the command line and submits it to the Exchange server that you query. That server processes the query and returns only the data that matches the filter that you specified.
+  - **Server-side filtering**: Server-side filtering takes the filter that you specify on the command line and submits it to the Exchange server that you query. That server processes the query and returns only the data that matches the filter that you specified.
     
     Server-side filtering is performed only on objects where tens or hundreds of thousands of results could be returned. Therefore, only the recipient management cmdlets, such as the **Get-Mailbox** cmdlet, and queue management cmdlets, such as the **Get-Queue** cmdlet, support server-side filtering. These cmdlets support the *Filter* parameter. This parameter takes the filter expression that you specify and submits it to the server for processing.
 
-  - **Client-side filtering**   Client-side filtering is performed on the objects in the local console window in which you are currently working. When you use client-side filtering, the cmdlet retrieves all the objects that match the task that you are performing to the local console window. The Shell then takes all the returned results, applies the client-side filter to those results, and returns to you only the results that match your filter. All cmdlets support client-side filtering. This is invoked by piping the results of a command to the **Where-Object** cmdlet.
+  - **Client-side filtering**: Client-side filtering is performed on the objects in the local console window in which you are currently working. When you use client-side filtering, the cmdlet retrieves all the objects that match the task that you are performing to the local console window. The Shell then takes all the returned results, applies the client-side filter to those results, and returns to you only the results that match your filter. All cmdlets support client-side filtering. This is invoked by piping the results of a command to the **Where-Object** cmdlet.
 
 ## Server-side filtering
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Understanding management role groups: Exchange 2013 Help'
 TOCTitle: Understanding management role groups
 ms:assetid: 2a92e06c-523e-4fd4-a937-152562b7741d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638105(v=EXCHG.150)
 ms:contentKeyID: 49289206
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -49,17 +53,17 @@ Role group creation workflow
 
 The following are the layers that make up the role group model:
 
-  - **Role group member**   A *role group member* is a mailbox, universal security group (USG), or other role group that can be added as a member of a role group. When a mailbox, USG, or another role group is added as a member of a role group, the assignments that have been made between management roles and a role group are applied to the new member. This grants the new member all of the permissions provided by the management roles.
+  - **Role group member**: A *role group member* is a mailbox, universal security group (USG), or other role group that can be added as a member of a role group. When a mailbox, USG, or another role group is added as a member of a role group, the assignments that have been made between management roles and a role group are applied to the new member. This grants the new member all of the permissions provided by the management roles.
 
-  - **Management role group**   The *management role group* is a special USG that contains mailboxes, USGs, and other role groups that are members of the role group. This is where you add and remove members, and it's also what management roles are assigned to. The combination of all the roles on a role group defines everything that members added to a role group can manage in the Exchange organization.
+  - **Management role group**: The *management role group* is a special USG that contains mailboxes, USGs, and other role groups that are members of the role group. This is where you add and remove members, and it's also what management roles are assigned to. The combination of all the roles on a role group defines everything that members added to a role group can manage in the Exchange organization.
 
-  - **Management role assignment**   A *management role assignment* links a management role and a role group. Assigning a management role to a role group grants members of the role group the ability to use the cmdlets and parameters defined in the management role. Role assignments can use management scopes to control where the assignment can be used. For more information, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
+  - **Management role assignment**: A *management role assignment* links a management role and a role group. Assigning a management role to a role group grants members of the role group the ability to use the cmdlets and parameters defined in the management role. Role assignments can use management scopes to control where the assignment can be used. For more information, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
 
-  - **Management role scope**   A *management role scope* is the scope of influence or impact on a role assignment. When a role is assigned with a scope to a role group, the management scope targets specifically what objects that assignment is allowed to manage. The assignment, and its scope, are then given to the members of the role group, which restricts what those members can manage. A scope can be made up of lists of servers or databases, organizational units, or filters on server, database or recipient objects. For more information, see [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md).
+  - **Management role scope**: A *management role scope* is the scope of influence or impact on a role assignment. When a role is assigned with a scope to a role group, the management scope targets specifically what objects that assignment is allowed to manage. The assignment, and its scope, are then given to the members of the role group, which restricts what those members can manage. A scope can be made up of lists of servers or databases, organizational units, or filters on server, database or recipient objects. For more information, see [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md).
 
-  - **Management role**   A *management role* is a container for a grouping of management role entries. Roles are used to define the specific tasks that can be performed by the members of a role group assigned the role. For more information, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
+  - **Management role**: A *management role* is a container for a grouping of management role entries. Roles are used to define the specific tasks that can be performed by the members of a role group assigned the role. For more information, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
 
-  - **Management role entries**   *Management role entries* are the individual entries on a management role that provide access to cmdlets, scripts, and other special permissions that enable access to perform a specific task. Most often, role entries consist of a single cmdlet or script and the parameters that can be accessed by the management role, and therefore the role group to which the role is assigned.
+  - **Management role entries**: *Management role entries* are the individual entries on a management role that provide access to cmdlets, scripts, and other special permissions that enable access to perform a specific task. Most often, role entries consist of a single cmdlet or script and the parameters that can be accessed by the management role, and therefore the role group to which the role is assigned.
 
 The following figure shows each of the role group layers in the preceding list and how each of the layers relates to the other.
 
@@ -211,9 +215,9 @@ For more information about permissions in multiple-forest topologies, see [Under
 
 A linked role group consists of two parts:
 
-  - **Linked role group**   The linked role group is a container object that associates the foreign USG with the management role assignments assigned to the role group.
+  - **Linked role group**: The linked role group is a container object that associates the foreign USG with the management role assignments assigned to the role group.
 
-  - **Foreign USG**   The foreign USG contains the members that should be granted the permissions provided by the linked role group.
+  - **Foreign USG**: The foreign USG contains the members that should be granted the permissions provided by the linked role group.
 
 When you create a linked role group, you provide a domain controller in the foreign forest that contains the users you want to manage the Exchange forest and the USG that contains those users as members, the foreign USG name, and the credentials required to access the foreign forest. Exchange adds the security identifier (SID) of the foreign USG to the linked role group. Because the USG SID is the only identification of the foreign USG, we strongly recommend that you specify the foreign forest in the name of the role group if you have multiple foreign forests.
 

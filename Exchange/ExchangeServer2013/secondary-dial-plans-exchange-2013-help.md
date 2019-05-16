@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Secondary dial plans: Exchange 2013 Help'
 TOCTitle: Secondary dial plans
 ms:assetid: ecf474c2-042d-4aaf-9f5b-d5138c56ef39
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff629383(v=EXCHG.150)
 ms:contentKeyID: 54817012
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -132,9 +136,9 @@ If you need to change SIP addresses or E.164 numbers for UM-enabled users, see:
 
 Unified Messaging provides both of the following:
 
-  - **Call answering**   Occurs when a user doesn't answer their phone and UM takes the call.
+  - **Call answering**: Occurs when a user doesn't answer their phone and UM takes the call.
 
-  - **Outlook Voice Access**   Used by users when they dial in to the voice mail system to access their mailbox.
+  - **Outlook Voice Access**: Used by users when they dial in to the voice mail system to access their mailbox.
 
 Two configurations are used frequently:
 
@@ -156,11 +160,11 @@ You may want UM-enabled users to be able to sign in to Outlook Voice Access from
 
 **Usage scenarios**
 
-  - **Single extension with Outlook Voice Access**   If the user has a single primary extension, they must always call the Outlook Voice Access number for their primary UM dial plan. If they call from their extension number, they won't be prompted to enter the extension number, and step 2 of the preceding steps will be skipped.
+  - **Single extension with Outlook Voice Access**: If the user has a single primary extension, they must always call the Outlook Voice Access number for their primary UM dial plan. If they call from their extension number, they won't be prompted to enter the extension number, and step 2 of the preceding steps will be skipped.
 
-  - **Two extensions in the primary dial plan with Outlook Voice Access**   If the user has only two extensions, primary and secondary, and both the primary and secondary extension are in the same UM dial plan, they must always call the Outlook Voice Access number of the dial plan. If they call from either the primary or secondary extension, they won't be prompted to enter the extension number, and step 2 of the preceding steps will be skipped. Outlook Voice Access features will work the same way, whichever extension is used to sign in.
+  - **Two extensions in the primary dial plan with Outlook Voice Access**: If the user has only two extensions, primary and secondary, and both the primary and secondary extension are in the same UM dial plan, they must always call the Outlook Voice Access number of the dial plan. If they call from either the primary or secondary extension, they won't be prompted to enter the extension number, and step 2 of the preceding steps will be skipped. Outlook Voice Access features will work the same way, whichever extension is used to sign in.
 
-  - **Extensions in the primary dial plan and in a secondary dial plan with Outlook Voice Access**   If the user has only two extensions, primary and secondary, and the primary and secondary extensions are in different UM dial plans (primary and secondary); they should call the Outlook Voice Access number appropriate to their dial plan. From their primary extension, they should call the Outlook Voice Access number of the primary dial plan, and from their secondary extension, they should call the Outlook Voice Access number of the secondary dial plan. If they do this, they won't be prompted to enter the extension number, and step 2 of the preceding steps will be skipped.
+  - **Extensions in the primary dial plan and in a secondary dial plan with Outlook Voice Access**: If the user has only two extensions, primary and secondary, and the primary and secondary extensions are in different UM dial plans (primary and secondary); they should call the Outlook Voice Access number appropriate to their dial plan. From their primary extension, they should call the Outlook Voice Access number of the primary dial plan, and from their secondary extension, they should call the Outlook Voice Access number of the secondary dial plan. If they do this, they won't be prompted to enter the extension number, and step 2 of the preceding steps will be skipped.
     
     Outlook Voice Access features that don't involve outbound dialing (for example "Call the sender" or "Call the office") will work the same way, whichever extension is used to sign in. However, Outlook Voice Access features that do require outbound dialing won't work as expected when the user signs in to the secondary dial plan unless the outbound dialing rules are exactly the same in both dial plans. For the behavior of outbound dialing to be exactly the same, you must ensure that the following properties are configured identically on the primary and secondary dial plans:
     
@@ -212,9 +216,9 @@ A search of the directory for a user who hasn't been authenticated will follow t
 
 When a user calls in to Outlook Voice Access and chooses the option to Call the Sender, they can send either an email message or a voice mail message to a UM-enabled user. The options available depend on whether the caller is associated with the same dial plan as the sender they're calling. Calls to a UM-enabled user when the caller dials in to an Outlook Voice Access number and the caller is authenticated will follow these rules:
 
-  - **Email messages**   If the sender of the email message is a UM-enabled user, choosing the option to call the sender will result in a call to the sender's primary extension that's configured on the user's primary dial plan. In the case where the sender's primary extension is on a dial plan that's different from the caller's, the prompt to "Call the Sender" will only be provided if there's a business, home, or mobile phone configured for the sender and the dialing rules are configured to allow the call.
+  - **Email messages**: If the sender of the email message is a UM-enabled user, choosing the option to call the sender will result in a call to the sender's primary extension that's configured on the user's primary dial plan. In the case where the sender's primary extension is on a dial plan that's different from the caller's, the prompt to "Call the Sender" will only be provided if there's a business, home, or mobile phone configured for the sender and the dialing rules are configured to allow the call.
 
-  - **Voice mail messages**   If the caller is a UM-enabled user, the option to call the sender will always result in a call to the extension that the sender uses to leave their voice message. If this extension has a number of digits different from the called dial plan, the prompt to call the sender won't be provided unless there are dialing rules in place that would permit the call. For example:
+  - **Voice mail messages**: If the caller is a UM-enabled user, the option to call the sender will always result in a call to the extension that the sender uses to leave their voice message. If this extension has a number of digits different from the called dial plan, the prompt to call the sender won't be provided unless there are dialing rules in place that would permit the call. For example:
     
       - The "Call the sender" option will be offered if the sender uses an extension on the dial plan that was used to send the voice message.
     

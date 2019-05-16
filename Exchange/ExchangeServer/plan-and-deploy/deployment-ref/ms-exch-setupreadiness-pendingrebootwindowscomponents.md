@@ -8,11 +8,12 @@ f1_keywords:
 ms.author: chrisda
 ms.assetid: f2d8e504-18c1-4b86-9b97-7654d0391b19
 ms.date: 8/3/2018
+ms.reviewer: 
 title: The computer needs to be restarted before Setup can continue [PendingRebootWindowsComponents]
 ms.collection: exchange-server
 ms.audience: Developer
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

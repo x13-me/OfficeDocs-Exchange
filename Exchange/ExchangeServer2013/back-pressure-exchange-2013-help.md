@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Back pressure: Exchange 2013 Help'
 TOCTitle: Back pressure
 ms:assetid: 03003544-e802-4988-9427-5fc4da64dcb8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb201658(v=EXCHG.150)
 ms:contentKeyID: 50934208
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -49,11 +53,11 @@ The following system resources are monitored as part of the back pressure featur
 
 For each monitored system resource on a Mailbox server or Edge Transport server, the following three levels of resource utilization are applied:
 
-  - **Normal**   The resource isn't overused. The server accepts new connections and messages.
+  - **Normal**: The resource isn't overused. The server accepts new connections and messages.
 
-  - **Medium**   The resource is slightly overused. Back pressure is applied to the server in a limited manner. Mail from senders in the authoritative domain can flow. However, depending on the specific resource under pressure, the server uses tarpitting to delay server response or rejects incoming **MAIL FROM** commands from other sources.
+  - **Medium**: The resource is slightly overused. Back pressure is applied to the server in a limited manner. Mail from senders in the authoritative domain can flow. However, depending on the specific resource under pressure, the server uses tarpitting to delay server response or rejects incoming **MAIL FROM** commands from other sources.
 
-  - **High**   The resource is severely overused. Full back pressure is applied. All message flow stops, and the server rejects all new incoming **MAIL FROM** commands.
+  - **High**: The resource is severely overused. Full back pressure is applied. All message flow stops, and the server rejects all new incoming **MAIL FROM** commands.
 
 The following sections explain how Exchange handles the situation when a specific resource is under pressure.
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage administrator audit logging: Exchange 2013 Help'
 TOCTitle: Manage administrator audit logging
 ms:assetid: 15c284c0-b8e6-42ca-9913-7c59fdb6885d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335109(v=EXCHG.150)
 ms:contentKeyID: 50117640
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -103,13 +107,13 @@ The audit log age limit determines how long audit log entries will be retained. 
 
 You can specify the number of days, hours, minutes, and seconds that audit log entries should be kept. To specify a value, use the format dd.hh.mm:ss where the following applies:
 
-  - **dd**   Number of days to keep the audit log entry
+  - **dd**: Number of days to keep the audit log entry
 
-  - **hh**   Number of hours to keep the audit log entry
+  - **hh**: Number of hours to keep the audit log entry
 
-  - **mm**   Number of minutes to keep the audit log entry
+  - **mm**: Number of minutes to keep the audit log entry
 
-  - **ss**   Number of seconds to keep the audit log entry
+  - **ss**: Number of seconds to keep the audit log entry
 
 > [!WARNING]  
 > You can set the audit log age limit to a value that's less than the current age limit. If you do this, any audit log entry whose age exceeds the new age limit will be deleted.<BR>If you set the age limit to 0, Exchange deletes all the entries in the audit log.<BR>We recommend that you grant permissions to configure the audit log age limit only to highly trusted users.

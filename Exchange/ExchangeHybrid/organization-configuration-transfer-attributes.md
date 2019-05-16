@@ -1,9 +1,10 @@
 ---
 title: "Organization Configuration Transfer Attributes"
-ms.author: dstrome
-author: dstrome
-manager: serdars
+ms.author: chrisda
+author: chrisda
+manager: dansimp
 ms.date: 6/25/2018
+ms.reviewer: 
 ms.audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro

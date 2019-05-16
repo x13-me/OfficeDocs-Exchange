@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure content transfer encoding: Exchange 2013 Help'
 TOCTitle: Configure content transfer encoding
 ms:assetid: c4922362-18d4-42f7-9189-9076720eb1d8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg144562(v=EXCHG.150)
 ms:contentKeyID: 49318587
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -17,11 +21,11 @@ _**Applies to:** Exchange Online, Exchange Server 2013_
 
 *Content transfer encoding* defines encoding methods for transforming binary email message data into the US-ASCII plain text format. This transformation allows the message to travel through older SMTP messaging servers that only support messages in US-ASCII text. Content transfer encoding is defined in RFC 2045. The transfer encoding method is stored in the **Content-Transfer-Encoding** header field in the message. In Microsoft Exchange Server 2013, the following content transfer encoding methods are available:
 
-  - **7-bit**   This value indicates that the message body data is already in the US ASCII plain text format, and no message encoding has been done to the message.
+  - **7-bit**: This value indicates that the message body data is already in the US ASCII plain text format, and no message encoding has been done to the message.
 
-  - **Quoted-printable (QP)**   This encoding method uses printable US-ASCII characters to encode the message body data. If the original message text is mostly US-ASCII text, QP encoding gives somewhat readable and compact results. By default, Exchange 2013 uses QP for encoding binary message data.
+  - **Quoted-printable (QP)**: This encoding method uses printable US-ASCII characters to encode the message body data. If the original message text is mostly US-ASCII text, QP encoding gives somewhat readable and compact results. By default, Exchange 2013 uses QP for encoding binary message data.
 
-  - **Base64**   This encoding method is based primarily on the privacy-enhanced mail (PEM) standard defined in RFC 1421. Base64 encoding uses the 64-character alphabet encoding method and output padding characters defined by PEM to encode the message body data. Base64 encoding creates a predictable increase in message size and is optimal for binary data and non-US-ASCII text.
+  - **Base64**: This encoding method is based primarily on the privacy-enhanced mail (PEM) standard defined in RFC 1421. Base64 encoding uses the 64-character alphabet encoding method and output padding characters defined by PEM to encode the message body data. Base64 encoding creates a predictable increase in message size and is optimal for binary data and non-US-ASCII text.
 
 You configure the transfer encoding method using the *ByteEncoderTypeFor7BitCharsets* parameter on the **Set-OrganizationConfig** and **Set-RemoteDomain** cmdlets. The content transfer encoding settings you configure with **Set-OrganizationConfig** apply to all messages in the Exchange organization. The content transfer encoding settings you configure with **Set-RemoteDomain** apply only to message sent to external recipients in the remote domain.
 

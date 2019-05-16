@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure IP addresses and ports for POP3 and IMAP4 access: Exchange 2013 Help'
 TOCTitle: Configure IP addresses and ports for POP3 and IMAP4 access
 ms:assetid: 8292747b-6626-4d7f-ba73-1e17f5d99fa4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb123530(v=EXCHG.150)
 ms:contentKeyID: 50395401
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -55,11 +59,11 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
 5.  On the **Add IP address** page, under **IP address**, choose one of the following:
     
-      - **All available IPv4 addresses**   Use all available IPv4 IP addresses for a server.
+      - **All available IPv4 addresses**: Use all available IPv4 IP addresses for a server.
     
-      - **All available IPv6 addresses**   Use all available IPv6 IP addresses for a server.
+      - **All available IPv6 addresses**: Use all available IPv6 IP addresses for a server.
     
-      - **Specify an IP address**   Use a specific IP address.
+      - **Specify an IP address**: Use a specific IP address.
 
 6.  Under **Port**, enter a port number, or accept the default port.
 
@@ -111,11 +115,11 @@ Do the following to verify that you have changed POP3 IP address and port settin
 
 5.  On the **Add IP address** page, under **IP address**, choose one of the following:
     
-      - **All available IPv4 addresses**   Use all available IPv4 IP addresses for a server.
+      - **All available IPv4 addresses**: Use all available IPv4 IP addresses for a server.
     
-      - **All available IPv6 addresses**   Use all available IPv6 IP addresses for a server.
+      - **All available IPv6 addresses**: Use all available IPv6 IP addresses for a server.
     
-      - **Specify an IP address**   Use a specific IP address.
+      - **Specify an IP address**: Use a specific IP address.
 
 6.  Under **Port**, enter a port number, or accept the default port.
 

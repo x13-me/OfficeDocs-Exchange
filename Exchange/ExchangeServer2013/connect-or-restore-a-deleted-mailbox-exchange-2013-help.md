@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Connect or restore a deleted mailbox: Exchange 2013 Help'
 TOCTitle: Connect or restore a deleted mailbox
 ms:assetid: a5e6ac44-5901-4eab-9017-c6fae80a0f83
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ863438(v=EXCHG.150)
 ms:contentKeyID: 50387719
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

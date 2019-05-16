@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting EWS.Proxy Health Set
 TOCTitle: Troubleshooting EWS.Proxy Health Set
 ms:assetid: 5bfbf7e9-d52d-4a3d-91ac-72427c6cb37d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.ews.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720789
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

@@ -2,7 +2,7 @@
 title: "Active Sync Mailbox Policy attributes"
 ms.author: kchandra
 author: ChandraKavya
-manager: serdars
+manager: dansimp
 ms.reviewer: dstrome
 ms.audience: ITPro
 ms.topic: article

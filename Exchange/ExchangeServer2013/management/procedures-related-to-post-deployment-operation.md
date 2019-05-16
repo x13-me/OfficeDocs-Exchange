@@ -1,10 +1,14 @@
-﻿---
+---
 title: Procedures related to post-deployment operation
 TOCTitle: Procedures related to post-deployment operation
 ms:assetid: d9613a5c-5661-4bce-9a2c-e2c7b601e723
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn198286(v=EXCHG.150)
 ms:contentKeyID: 53496601
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

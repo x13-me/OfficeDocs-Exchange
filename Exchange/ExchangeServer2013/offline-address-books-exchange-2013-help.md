@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Offline address books: Exchange 2013 Help'
 TOCTitle: Offline address books
 ms:assetid: a6bcb072-4ab9-400e-a5d0-c05264629097
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232155(v=EXCHG.150)
 ms:contentKeyID: 49289363
 ms.date: 08/17/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -71,13 +75,13 @@ To benefit most from Web-based distribution, client computers must be running Ou
 
 To function properly, Web-based distribution depends on the following components:
 
-  - **OAB generation process**   This is the process by which Exchange creates and updates the OAB. To create and update the OAB, the OABGen service runs on the Mailbox server on which the organization mailbox is located. To support OAB distribution, this server must be an Exchange Mailbox server.
+  - **OAB generation process**: This is the process by which Exchange creates and updates the OAB. To create and update the OAB, the OABGen service runs on the Mailbox server on which the organization mailbox is located. To support OAB distribution, this server must be an Exchange Mailbox server.
 
-  - **OAB distribution**   If a client initiates the OAB distribution request, the request be directed through a Client Access server. The Client Access server then routes the request to the Mailbox server that's hosting the OAB files. The OAB files are then distributed directly from the Mailbox server to the client.
+  - **OAB distribution**: If a client initiates the OAB distribution request, the request be directed through a Client Access server. The Client Access server then routes the request to the Mailbox server that's hosting the OAB files. The OAB files are then distributed directly from the Mailbox server to the client.
 
-  - **OAB virtual directory**   The OAB virtual directory is the distribution point used by the Web-based distribution method. By default, when Exchange is installed, a new virtual directory named **OAB** is created in the default internal website in Internet Information Services (IIS). If you have client-side users that connect to Outlook from outside your organization's firewall, you can add an external website. Alternatively, when you run the **New-OABVirtualDirectory** cmdlet in the Shell, a new virtual directory named OAB is created in the default IIS website on the local Exchange Client Access server. For information, see [Create an offline address book virtual directory](https://docs.microsoft.com/en-us/exchange/address-books/offline-address-books/create-virtual-directory).
+  - **OAB virtual directory**: The OAB virtual directory is the distribution point used by the Web-based distribution method. By default, when Exchange is installed, a new virtual directory named **OAB** is created in the default internal website in Internet Information Services (IIS). If you have client-side users that connect to Outlook from outside your organization's firewall, you can add an external website. Alternatively, when you run the **New-OABVirtualDirectory** cmdlet in the Shell, a new virtual directory named OAB is created in the default IIS website on the local Exchange Client Access server. For information, see [Create an offline address book virtual directory](https://docs.microsoft.com/en-us/exchange/address-books/offline-address-books/create-virtual-directory).
 
-  - **Autodiscover service**   This is a feature available in Outlook 2013, Outlook 2010, Outlook 2007, and in some mobile devices that automatically configure the clients for access to Exchange. The service runs on a Client Access server and returns the correct OAB URL for a specific client connection.
+  - **Autodiscover service**: This is a feature available in Outlook 2013, Outlook 2010, Outlook 2007, and in some mobile devices that automatically configure the clients for access to Exchange. The service runs on a Client Access server and returns the correct OAB URL for a specific client connection.
 
 ## OAB considerations
 

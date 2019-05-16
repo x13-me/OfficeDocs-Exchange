@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a mailbox audit log search: Exchange 2013 Help'
 TOCTitle: Create a mailbox audit log search
 ms:assetid: 48ba22cf-b1f2-4dbc-98fc-fed22d97db14
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff461929(v=EXCHG.150)
 ms:contentKeyID: 49300496
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

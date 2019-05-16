@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Change a role assignment: Exchange 2013 Help'
 TOCTitle: Change a role assignment
 ms:assetid: 0fa77efc-e393-461f-b3c0-232cc56cee85
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335096(v=EXCHG.150)
 ms:contentKeyID: 49289170
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -177,9 +181,9 @@ For detailed syntax and parameter information, see [Set-ManagementRoleAssignment
 
 To change exclusive recipient or exclusive configuration scopes, you can use the procedures provided in the "Use the Shell to change a recipient filter scope on a role assignment," "Use the Shell to change the server filter or list-based configuration scope on a role assignment," and "Use the Shell to change the database filter or list-based configuration scope on a role assignment" sections earlier in this topic. The only difference is that when you change an exclusive scope, you must specify the following exclusive parameters depending on whether you're changing an exclusive recipient scope or an exclusive configuration scope:
 
-  - **Exclusive recipient scopes**   Use the *ExclusiveRecipientWriteScope* parameter instead of the *CustomRecipientWriteScope* parameter.
+  - **Exclusive recipient scopes**: Use the *ExclusiveRecipientWriteScope* parameter instead of the *CustomRecipientWriteScope* parameter.
 
-  - **Exclusive server and database configuration scopes**   Use the *ExclusiveConfigWriteScope* parameter instead of the *CustomConfigWriteScope* parameter.
+  - **Exclusive server and database configuration scopes**: Use the *ExclusiveConfigWriteScope* parameter instead of the *CustomConfigWriteScope* parameter.
 
 As with regular recipient and configuration scopes, if you add or change an exclusive scope, any previously defined recipient or configuration scopes are replaced.
 

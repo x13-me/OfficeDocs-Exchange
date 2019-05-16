@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting POP Health Set
 TOCTitle: Troubleshooting POP Health Set
 ms:assetid: 6114e9fe-d037-4cb9-a643-933eb5fabc45
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.pop(v=EXCHG.150)
 ms:contentKeyID: 49720812
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -250,7 +254,7 @@ This monitor alert is typically issued on CA or Mailbox servers.
         
             Set-MailboxServer -Identity <ServerName> -DatabaseCopyActivationDisabledAndMoveNow $true
         
-        **Note**   In this and all subsequent code examples, replace *server1.contoso.com* with the actual server name.
+        **Note**: In this and all subsequent code examples, replace *server1.contoso.com* with the actual server name.
     
     2.  Verify that all databases have been moved off the server that's reporting the issue. To do this, run the following command:
         

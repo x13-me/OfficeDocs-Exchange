@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'POP3 and IMAP4 in Exchange Server 2013: Exchange 2013 Help'
 TOCTitle: POP3 and IMAP4
 ms:assetid: a7dc91ee-2919-4db3-ae9c-cd665d2e09ea
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657728(v=EXCHG.150)
 ms:contentKeyID: 49300645
 ms.date: 08/16/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -45,9 +49,9 @@ This section describes the POP3 and IMAP4 functionality for Exchange 2013.
 
 The POP3 and IMAP4 protocols have the following benefits and limitations:
 
-  - **POP3**   POP3 was designed to support offline mail processing. With POP3, email messages are removed from the server and stored on the local POP3 client unless the client has been set to leave mail on the server. This puts the data management and security responsibility in the hands of the user. POP3 doesn't offer advanced collaboration features such as calendaring, contacts, and tasks.
+  - **POP3**: POP3 was designed to support offline mail processing. With POP3, email messages are removed from the server and stored on the local POP3 client unless the client has been set to leave mail on the server. This puts the data management and security responsibility in the hands of the user. POP3 doesn't offer advanced collaboration features such as calendaring, contacts, and tasks.
 
-  - **IMAP4**   IMAP4 offers offline and online access but, like POP3, IMAP4 doesn't offer advanced collaboration features such as calendaring, contacts, and tasks.
+  - **IMAP4**: IMAP4 offers offline and online access but, like POP3, IMAP4 doesn't offer advanced collaboration features such as calendaring, contacts, and tasks.
 
 POP3 and IMAP4 email applications don't use POP3 and IMAP4 to send messages to the email server; they rely on the SMTP protocol to send messages. The connector for receiving email submissions from client applications that use POP3 or IMAP4 is created automatically when you install Exchange. For more information about connectors, see [Receive connectors](receive-connectors-exchange-2013-help.md).
 
@@ -147,15 +151,15 @@ By default, users can't look up their POP3, IMAP4, and SMTP server settings thro
 
 Do the following to allow users to look up their own POP3, IMAP4, and SMTP settings:
 
-  - **POP3 settings**   Run the **Set-POPSettings** cmdlet with the *ExternalConnectionSettings* parameter. Use the format `Set-POPSettings -ExternalConnectionSetting {<FQDN>:995:SSL}`. For example, run `Set-PopSettings -ExternalConnectionSetting {Dublin01.Contoso.com:995:SSL}` if you want clients that connect through the server with FQDN Dublin01.Contoso.com to be able to look up their own POP settings.
+  - **POP3 settings**: Run the **Set-POPSettings** cmdlet with the *ExternalConnectionSettings* parameter. Use the format `Set-POPSettings -ExternalConnectionSetting {<FQDN>:995:SSL}`. For example, run `Set-PopSettings -ExternalConnectionSetting {Dublin01.Contoso.com:995:SSL}` if you want clients that connect through the server with FQDN Dublin01.Contoso.com to be able to look up their own POP settings.
     
     You must restart IIS after applying this setting.
 
-  - **IMAP4 settings**   Run the **Set-IMAPSettings** cmdlet with the *ExternalConnectionSettings* parameter. Use the format `Set-ImapSettings -ExternalConnectionSetting {<FQDN>:993:SSL}`. For example, run `Set-IMAPSettings -ExternalConnectionSetting {Dublin01.Contoso.com:993:SSL}` if you want clients that connect through the server with FQDN Dublin01.Contoso.com to be able to look up their own IMAP setting.
+  - **IMAP4 settings**: Run the **Set-IMAPSettings** cmdlet with the *ExternalConnectionSettings* parameter. Use the format `Set-ImapSettings -ExternalConnectionSetting {<FQDN>:993:SSL}`. For example, run `Set-IMAPSettings -ExternalConnectionSetting {Dublin01.Contoso.com:993:SSL}` if you want clients that connect through the server with FQDN Dublin01.Contoso.com to be able to look up their own IMAP setting.
     
     You must restart IIS after applying this setting.
 
-  - **SMTP settings**   Run the **Set-ReceiveConnector** cmdlet with the *AdvertiseClientSettings* parameter. Use the format `Set-ReceiveConnector "Client Frontend <Server Name>" -AdvertiseClientSettings $True -FQDN <FQDN>`. For example, run `Set-ReceiveConnector "Client Frontend <Server Name>" -AdvertiseClientSettings $True -FQDN Dublin01.Contoso.com` if you want clients that connect through the server with FQDN Dublin01.Contoso.com to be able to look up their own SMTP setting.
+  - **SMTP settings**: Run the **Set-ReceiveConnector** cmdlet with the *AdvertiseClientSettings* parameter. Use the format `Set-ReceiveConnector "Client Frontend <Server Name>" -AdvertiseClientSettings $True -FQDN <FQDN>`. For example, run `Set-ReceiveConnector "Client Frontend <Server Name>" -AdvertiseClientSettings $True -FQDN Dublin01.Contoso.com` if you want clients that connect through the server with FQDN Dublin01.Contoso.com to be able to look up their own SMTP setting.
     
     You must restart IIS after applying this setting.
 

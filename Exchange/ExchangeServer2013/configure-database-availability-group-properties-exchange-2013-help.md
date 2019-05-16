@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure database availability group properties: Exchange 2013 Help'
 TOCTitle: Configure database availability group properties
 ms:assetid: 50daeac5-a16f-4362-a325-19e0fe25d59d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd297985(v=EXCHG.150)
 ms:contentKeyID: 48385082
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -51,13 +55,13 @@ You can use the EAC or the Shell to configure the properties of a database avail
 
 3.  Use the **General** page to view DAG membership and operational status, and to configure the DAG's witness server, witness directory, and automatic network configuration:
     
-      - **Witness server**   The host name or fully qualified domain name (FQDN) of the witness server for the DAG. Although this is a required property for all DAGs, the witness server is used when there is an even number of DAG members and the quorum model in use by the cluster is Node and File Share Majority.
+      - **Witness server**: The host name or fully qualified domain name (FQDN) of the witness server for the DAG. Although this is a required property for all DAGs, the witness server is used when there is an even number of DAG members and the quorum model in use by the cluster is Node and File Share Majority.
     
-      - **Witness directory**   The full path of the directory used to store the witness.log file on the witness server. Although this is a required property for all DAGs, the witness directory is used only when the DAG's witness server is in use.
+      - **Witness directory**: The full path of the directory used to store the witness.log file on the witness server. Although this is a required property for all DAGs, the witness directory is used only when the DAG's witness server is in use.
     
-      - **Operational servers**   A read-only field that displays a list of DAG members and their current operational status.
+      - **Operational servers**: A read-only field that displays a list of DAG members and their current operational status.
     
-      - **Configure the database group network manually**   A check box that you select when you want to configure all DAG networks manually. When you leave the check box clear, the system configures DAG networks automatically based on network interface configuration. If the check box is clear, the **Set-DatabaseAvailabilityGroupNetwork** and **New-DatabaseAvailabilityGroupNetwork** cmdlets are disabled for administrative use against the DAG.
+      - **Configure the database group network manually**: A check box that you select when you want to configure all DAG networks manually. When you leave the check box clear, the system configures DAG networks automatically based on network interface configuration. If the check box is clear, the **Set-DatabaseAvailabilityGroupNetwork** and **New-DatabaseAvailabilityGroupNetwork** cmdlets are disabled for administrative use against the DAG.
 
 4.  Use the **IP Addresses** page to view and modify the IP addresses assigned to the DAG:
     

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Set connection time-out limits for IMAP4: Exchange 2013 Help'
 TOCTitle: Set connection time-out limits for IMAP4
 ms:assetid: 6b6a5bd1-a878-4a70-8e21-14d5042a58f1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998665(v=EXCHG.150)
 ms:contentKeyID: 50395405
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -47,9 +51,9 @@ For additional information related to IMAP4, see [POP3 and IMAP4 in Exchange Ser
 
 5.  Under **Time-out settings**, use the following settings:
     
-      - **Authenticated time-out (seconds)**    Specifies the time to wait before closing an idle authenticated connection. The default value is 1,800. The possible values are from 30 through 86,400.
+      - **Authenticated time-out (seconds)**:  Specifies the time to wait before closing an idle authenticated connection. The default value is 1,800. The possible values are from 30 through 86,400.
     
-      - **Unauthenticated time-out (seconds)**   Specifies the time to wait before closing an idle connection that isn't authenticated. The default value is 60. The possible values are from 30 through 3,600.
+      - **Unauthenticated time-out (seconds)**: Specifies the time to wait before closing an idle connection that isn't authenticated. The default value is 60. The possible values are from 30 through 3,600.
 
 6.  Click **Apply**, and then click **OK** to save your changes.
 

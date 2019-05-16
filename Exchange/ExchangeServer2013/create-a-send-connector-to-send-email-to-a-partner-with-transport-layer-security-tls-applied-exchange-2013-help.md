@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a Send connector to send email to a partner, with Transport Layer Security applied'
 TOCTitle: Create a Send connector to send email to a partner, with Transport Layer Security (TLS) applied
 ms:assetid: ff2abefc-dd3e-4431-b947-df942fbf82d9
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657514(v=EXCHG.150)
 ms:contentKeyID: 49289478
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

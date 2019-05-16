@@ -6,13 +6,14 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 67ba838e-031d-4a98-b277-170683b6f520
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Perform a remote wipe on a mobile phone
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: laurawi
+manager: dansimp
 
 ---
 

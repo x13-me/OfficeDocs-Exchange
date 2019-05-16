@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure Outlook to show the original sender in the quarantine mailbox'
 TOCTitle: Configure Outlook to show the original sender in the quarantine mailbox
 ms:assetid: 9249425d-1b06-48a0-ad95-c4eefb641ff4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee861109(v=EXCHG.150)
 ms:contentKeyID: 49345054
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -120,15 +124,15 @@ By default, you can't select these fields in Microsoft Outlook. Before you can a
     
 2.  Save the file in your Office Forms folder using the following values:
     
-      - **Path**   *\<Office Install Path\>*\\\<*OfficeVersion\>*\\Forms\\*\<LCID\>*
+      - **Path**: *\<Office Install Path\>*\\\<*OfficeVersion\>*\\Forms\\*\<LCID\>*
         
-          - *\<Office Install Path\>*   For 32-bit versions of Office on 32-bit versions of Microsoft Windows, or 64-bit versions of Office on 64-bit versions of Windows, the default path is `C:\Program Files\Microsoft Office`. For 32-bit versions of Office on 64-bit versions of Windows, the default path is `C:\Program Files (x86)\Microsoft Office`.
+          - *\<Office Install Path\>*: For 32-bit versions of Office on 32-bit versions of Microsoft Windows, or 64-bit versions of Office on 64-bit versions of Windows, the default path is `C:\Program Files\Microsoft Office`. For 32-bit versions of Office on 64-bit versions of Windows, the default path is `C:\Program Files (x86)\Microsoft Office`.
         
-          - *\<OfficeVersion\>*   For Outlook 2007, the value is `Office12`. For Outlook 2010, the value is `Office14`. For Outlook 2013, the value is `Office15`.
+          - *\<OfficeVersion\>*: For Outlook 2007, the value is `Office12`. For Outlook 2010, the value is `Office14`. For Outlook 2013, the value is `Office15`.
         
-          - *\<LCID\>*   This is your locale ID (LCID) value. For example, the LCID for US English is 1033. For more information, see [KB221435: List of supported locale identifiers in Word](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=221435).
+          - *\<LCID\>*: This is your locale ID (LCID) value. For example, the LCID for US English is 1033. For more information, see [KB221435: List of supported locale identifiers in Word](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=221435).
     
-      - **Name**   For the rest of this procedure, assume the file is named `QTNE.cfg`. The name of the file isn't important, but be sure to enclose the value in quotation marks so the file is saved as QTNE.cfg and not QTNE.cfg.txt.
+      - **Name**: For the rest of this procedure, assume the file is named `QTNE.cfg`. The name of the file isn't important, but be sure to enclose the value in quotation marks so the file is saved as QTNE.cfg and not QTNE.cfg.txt.
     
     For example, for a 32-bit US English version of Outlook 2013 installed on a 64-bit version of Windows, save the file as:
     
@@ -167,11 +171,11 @@ Use one of the following procedures based on the version of Outlook that's insta
 
 10. In the **Show Columns** dialog box, in the **Available Columns** section, select one or more of the following fields and click **Add** after each field you select.
     
-      - **ReceivedRepresentingEmailAddress**   Original sender
+      - **ReceivedRepresentingEmailAddress**: Original sender
     
-      - **DisplayTo**   Original recipient (note that this appears as **To** after you add it)
+      - **DisplayTo**: Original recipient (note that this appears as **To** after you add it)
     
-      - **OriginalScl**   Original SCL
+      - **OriginalScl**: Original SCL
     
     Use the **Move Up** or **Move Down** buttons to position the columns in the view. For best results, position the three new fields after the **Attachment** field, and before the **From** field. When you are finished, click **OK** twice to return to the main Outlook interface.
 
@@ -197,11 +201,11 @@ Use one of the following procedures based on the version of Outlook that's insta
 
 10. In the **Show Fields** dialog box, in the **Available Fields** section, select one or more of the following fields and click **Add** after each field you select.
     
-      - **ReceivedRepresentingEmailAddress**   Original sender
+      - **ReceivedRepresentingEmailAddress**: Original sender
     
-      - **DisplayTo**   Original recipient (note that this appears as **To** after you add it)
+      - **DisplayTo**: Original recipient (note that this appears as **To** after you add it)
     
-      - **OriginalScl**   Original SCL
+      - **OriginalScl**: Original SCL
     
     Use the **Move Up** or **Move Down** buttons to position the columns in the view. For best results, position the three new fields after the **Attachment** field, and before the **From** field. When you are finished, click **OK** twice to return to the main Outlook 2007 interface.
 

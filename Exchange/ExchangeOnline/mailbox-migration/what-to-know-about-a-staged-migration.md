@@ -5,6 +5,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 7e2c82be-5f3d-4e36-bc6b-e5b4d411e207
 ms.date: 8/15/2018
+ms.reviewer: 
 description: "As part of an Office 365 deployment, you can migrate the contents of user mailboxes from a source email system to Office 365. When you do this over time, it's called a staged migration. A staged migration is recommended when:"
 title: What you need to know about a staged email migration to Office 365
 ms.collection: 
@@ -19,7 +20,7 @@ search.appverid:
 ms.audience: Admin
 ms.custom: Adm_O365
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 ---
 
 # What you need to know about a staged email migration to Office 365
@@ -88,9 +89,9 @@ Here's a description of the staged migration shown in the illustration.
 
   - Converts the Office 365 mail-enabled user to an Exchange Online mailbox for each user in the migration batch.
 
-  - Begins initial synchronization. Exchange Online processes up to *N*  migration requests at one time. *N*  represents the maximum number of concurrent migrations that the administrator specified when creating the migration endpoint used for the migration batch. By default, initial synchronization is performed on 20 mailboxes at a time until all mailboxes in the migration batch are migrated.
+  - Begins initial synchronization. Exchange Online processes up to *N* migration requests at one time. *N* represents the maximum number of concurrent migrations that the administrator specified when creating the migration endpoint used for the migration batch. By default, initial synchronization is performed on 20 mailboxes at a time until all mailboxes in the migration batch are migrated.
 
-  - Configures mail forwarding. The *TargetAddress*  property on the on-premises mailbox is configured with the email address of the Exchange Online mailbox. This process means that mail sent to the on-premises mailbox is forwarded to the corresponding Exchange Online mailbox.
+  - Configures mail forwarding. The *TargetAddress* property on the on-premises mailbox is configured with the email address of the Exchange Online mailbox. This process means that mail sent to the on-premises mailbox is forwarded to the corresponding Exchange Online mailbox.
 
 4. After it creates the Exchange Online mailbox and configures mail forwarding for each user in the CSV file, Exchange Online sends a status email message to the administrator. This status message lists the number of mailboxes that were successfully migrated and how many couldn't be migrated. The message also includes links to migration statistics and error reports that contain more detailed information. At this point, users can start using their Exchange Online mailboxes.
 

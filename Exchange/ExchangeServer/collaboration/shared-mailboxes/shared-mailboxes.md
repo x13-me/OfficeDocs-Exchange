@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: fbd93b77-637b-4237-a824-8e95166cde11
 ms.date: 7/6/2018
+ms.reviewer: 
 title: Shared mailboxes
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Receive connector authentication mechanisms: Exchange 2013 Help'
 TOCTitle: Receive connector authentication mechanisms
 ms:assetid: 926424e1-83e3-4c4b-b2dd-bf814d81e877
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657472(v=EXCHG.150)
 ms:contentKeyID: 49289352
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

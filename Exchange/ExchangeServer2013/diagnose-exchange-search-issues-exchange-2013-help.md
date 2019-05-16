@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Diagnose Exchange Search issues: Exchange 2013 Help'
 TOCTitle: Diagnose Exchange Search issues
 ms:assetid: 8cfa26f4-ccf0-42dd-8570-67018188b4e8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb123701(v=EXCHG.150)
 ms:contentKeyID: 51407264
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -47,13 +51,13 @@ For more information about unsearchable items, see :
 
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Search" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-1.  **Check service state**   Is the Microsoft Exchange Search (MSExchangeFastSearch) service started on the Mailbox server? If yes, go to Step 2. If no, use the Services MMC snap-in to verify that the MSExchangeFastSearch service is running as follows:
+1.  **Check service state**: Is the Microsoft Exchange Search (MSExchangeFastSearch) service started on the Mailbox server? If yes, go to Step 2. If no, use the Services MMC snap-in to verify that the MSExchangeFastSearch service is running as follows:
     
     1.  Click **Start**, point to **Administrative Tools**, and then click **Services**.
     
     2.  In **Services**, verify that the **Status** for the **Microsoft Exchange Search** service is listed as **Started**.
 
-2.  **Check mailbox database configuration**   Is the *IndexEnabled* parameter set to true for the user's mailbox database? If yes, go to Step 3. If no, run the following command in the Shell to verify that the *IndexEnabled* flag is set to true.
+2.  **Check mailbox database configuration**: Is the *IndexEnabled* parameter set to true for the user's mailbox database? If yes, go to Step 3. If no, run the following command in the Shell to verify that the *IndexEnabled* flag is set to true.
     
     ```powershell
     Get-MailboxDatabase | Format-Table Name,IndexEnabled
@@ -61,7 +65,7 @@ You need to be assigned permissions before you can perform this procedure or pro
     
     For detailed syntax and parameter information, see [Get-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb124924\(v=exchg.150\)).
 
-3.  **Check mailbox database crawl state**   Has the Exchange database been crawled? If yes, go to Step 4. If no, use Reliability and Performance Monitor to check the **Crawler: Mailboxes Remaining** counter of the **MSExchange Search Indexes** performance object. Perform the following steps:
+3.  **Check mailbox database crawl state**: Has the Exchange database been crawled? If yes, go to Step 4. If no, use Reliability and Performance Monitor to check the **Crawler: Mailboxes Remaining** counter of the **MSExchange Search Indexes** performance object. Perform the following steps:
     
     1.  Open **Performance Monitor** (perfmon.exe).
     
@@ -83,7 +87,7 @@ You need to be assigned permissions before you can perform this procedure or pro
     
     For information about using Performance Monitor, see [Performance and Reliability Monitoring Getting Started Guide for Windows Server 2008](https://go.microsoft.com/fwlink/p/?linkid=178005)
 
-4.  **Check the database copy indexing health**   Is the content index healthy? Use the **Get-MailboxDatabaseCopyStatus** cmdlet to check the content indexing health for a database copy.
+4.  **Check the database copy indexing health**: Is the content index healthy? Use the **Get-MailboxDatabaseCopyStatus** cmdlet to check the content indexing health for a database copy.
     
     ```powershell
         Get-MailboxDatabaseCopyStatus -Server $env:ComputerName | Format-Table Name,Status,ContentIndex* -Auto
@@ -91,7 +95,7 @@ You need to be assigned permissions before you can perform this procedure or pro
     
     For detailed syntax and parameter information, see [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/en-us/library/dd298044\(v=exchg.150\)).
 
-5.  **Run the Test-ExchangeSearch cmdlet**   If the mailbox database has already been crawled, you can run the **Test-ExchangeSearch** cmdlet for the mailbox database or for a specific mailbox.
+5.  **Run the Test-ExchangeSearch cmdlet**: If the mailbox database has already been crawled, you can run the **Test-ExchangeSearch** cmdlet for the mailbox database or for a specific mailbox.
     
     ```powershell
     Test-ExchangeSearch -Identity AlanBrewer@contoso.com
@@ -99,7 +103,7 @@ You need to be assigned permissions before you can perform this procedure or pro
     
     For detailed syntax and parameter information, see [Test-ExchangeSearch](https://technet.microsoft.com/en-us/library/bb124733\(v=exchg.150\)).
 
-6.  **Check the Application event log**   Using Event Viewer or the Shell, check the Application event log for search-related error messages. Check for following event sources.
+6.  **Check the Application event log**: Using Event Viewer or the Shell, check the Application event log for search-related error messages. Check for following event sources.
     
       - **MSExchangeFastSearch**
     
@@ -107,11 +111,11 @@ You need to be assigned permissions before you can perform this procedure or pro
     
     For more information, follow the link in the event log entry.
 
-7.  **Restart the Microsoft Exchange Search service**   Use the Services MMC snap-in or the Shell to stop and then restart the Microsoft Exchange Search (MSExchangeFastSearch) service:
+7.  **Restart the Microsoft Exchange Search service**: Use the Services MMC snap-in or the Shell to stop and then restart the Microsoft Exchange Search (MSExchangeFastSearch) service:
     
     1.  Click **Start**, point to **Administrative Tools**, and then click **Services**.
     
     2.  In **Services**, right-click **Microsoft Exchange Search**, and then click **Stop**. After the service is stopped, right-click the service again, and then click **Start**.
 
-8.  **Reseed the search catalog**   In some cases, such as when the search catalog is corrupted, you may need to reseed the catalog. When a search catalog needs to be reseeded, Exchange Search notifies you by logging entries in the Application event log. For more information about reseeding the Search catalog, see [Reseed the search catalog](reseed-the-search-catalog-exchange-2013-help.md).
+8.  **Reseed the search catalog**: In some cases, such as when the search catalog is corrupted, you may need to reseed the catalog. When a search catalog needs to be reseeded, Exchange Search notifies you by logging entries in the Application event log. For more information about reseeding the Search catalog, see [Reseed the search catalog](reseed-the-search-catalog-exchange-2013-help.md).
 

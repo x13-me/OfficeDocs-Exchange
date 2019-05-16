@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting OWA.Proxy Health Set
 TOCTitle: Troubleshooting OWA.Proxy Health Set
 ms:assetid: 1eaa26ad-b489-402a-ad2d-bfae3b083f42
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.owa.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720734
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -141,7 +145,7 @@ When you receive an alert from a health set, the email message contains the foll
 
   - Full exception trace of the last error, including diagnostic data and specific HTTP header information  
     
-    **Note**   You can use the information in the full exception trace to help troubleshoot the issue.
+    **Note**: You can use the information in the full exception trace to help troubleshoot the issue.
 
   - Time and date when the issue occurred
 

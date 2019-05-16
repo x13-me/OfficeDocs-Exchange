@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Integration with SharePoint and Lync: Exchange 2013 Help'
 TOCTitle: Integration with SharePoint and Lync
 ms:assetid: 056b29f6-e0e9-4974-b763-002518857a93
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150480(v=EXCHG.150)
 ms:contentKeyID: 47559934
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -124,7 +128,7 @@ When Exchange 2013 receives an access request from a partner application via Exc
 
 In Exchange 2013, there are two configuration objects you must manage for OAuth authentication with partner applications:
 
-  - **AuthConfig**   The AuthConfig is created by Exchange 2013 Setup and is used to publish the auth metadata. You don't need to manage the auth config except to provision a new certificate when the existing certificate is close to expiration. When this happens, you can renew the existing certificate and configure the new certificate as the next certificate in the AuthConfig along with its effective date. The new certificate is automatically replicated to other Exchange 2013 in the organization, the auth metadata document is refreshed with details of the new certificate, and the AuthConfig rolls over to the new certificate on the effective date.
+  - **AuthConfig**: The AuthConfig is created by Exchange 2013 Setup and is used to publish the auth metadata. You don't need to manage the auth config except to provision a new certificate when the existing certificate is close to expiration. When this happens, you can renew the existing certificate and configure the new certificate as the next certificate in the AuthConfig along with its effective date. The new certificate is automatically replicated to other Exchange 2013 in the organization, the auth metadata document is refreshed with details of the new certificate, and the AuthConfig rolls over to the new certificate on the effective date.
 
-  - **Partner applications**   To enable partner applications to request access tokens from Exchange 2013, you must create a partner application configuration. Exchange 2013 provides the `Configure-EnterprisePartnerApplication.ps1` script, which allows you to quickly and easily create partner application configurations and minimize configuration errors. For details, see [Configure OAuth authentication with SharePoint 2013 and Lync 2013](configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help.md).
+  - **Partner applications**: To enable partner applications to request access tokens from Exchange 2013, you must create a partner application configuration. Exchange 2013 provides the `Configure-EnterprisePartnerApplication.ps1` script, which allows you to quickly and easily create partner application configurations and minimize configuration errors. For details, see [Configure OAuth authentication with SharePoint 2013 and Lync 2013](configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help.md).
 

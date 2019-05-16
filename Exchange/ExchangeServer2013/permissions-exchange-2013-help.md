@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Permissions: Exchange 2013 Help'
 TOCTitle: Permissions
 ms:assetid: d8dd605e-0af1-4e18-9ce6-e51d04e161ba
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351175(v=EXCHG.150)
 ms:contentKeyID: 48385617
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -41,9 +45,9 @@ In Exchange 2013, the permissions that you grant to administrators and users are
 
 There are two types of roles, administrative roles and end-user roles:
 
-  - **Administrative roles**   These roles contain permissions that can be assigned to administrators or specialist users using role groups that manage a part of the Exchange organization, such as recipients, servers, or databases.
+  - **Administrative roles**: These roles contain permissions that can be assigned to administrators or specialist users using role groups that manage a part of the Exchange organization, such as recipients, servers, or databases.
 
-  - **End-user roles**   These roles, assigned using role assignment policies, enable users to manage aspects of their own mailbox and distribution groups that they own. End-user roles begin with the prefix `My`.
+  - **End-user roles**: These roles, assigned using role assignment policies, enable users to manage aspects of their own mailbox and distribution groups that they own. End-user roles begin with the prefix `My`.
 
 Roles give permissions to perform tasks to administrators and users by making cmdlets available to those who are assigned the roles. Because the Exchange Administration Center (EAC) and Exchange Management Shell use cmdlets to manage Exchange, granting access to a cmdlet gives the administrator or user permission to perform the task in each of the Exchange management interfaces.
 
@@ -55,9 +59,9 @@ Return to top
 
 Roles grant permissions to perform tasks in Exchange 2013, but you need an easy way to assign them to administrators and users. Exchange 2013 provides you with the following to help you do that:
 
-  - **Role groups**   Role groups enable you to grant permissions to administrators and specialist users.
+  - **Role groups**: Role groups enable you to grant permissions to administrators and specialist users.
 
-  - **Role assignment policies**   Role assignment policies enable you to grant permissions to end users to change settings on their own mailbox or distribution groups that they own.
+  - **Role assignment policies**: Role assignment policies enable you to grant permissions to end users to change settings on their own mailbox or distribution groups that they own.
 
 For more information about role groups and role assignment policies, see the following sections.
 

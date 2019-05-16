@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Help Identify My Issue with Automatic Checks - SSO: Exchange 2013 Help'
 TOCTitle: Help Identify My Issue with Automatic Checks - SSO
 ms:assetid: b7d8418d-f6a9-4bed-af84-0b2ad0554aa9
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn793975(v=EXCHG.150)
 ms:contentKeyID: 62632389
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

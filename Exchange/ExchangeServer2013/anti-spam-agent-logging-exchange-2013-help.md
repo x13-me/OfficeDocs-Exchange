@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Anti-spam agent logging: Exchange 2013 Help'
 TOCTitle: Anti-spam agent logging
 ms:assetid: dbd478d2-7993-4931-80db-5b2f7d4269bd
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124795(v=EXCHG.150)
 ms:contentKeyID: 49287005
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -134,15 +138,15 @@ Information is written to the log file until the file size reaches its maximum s
 
 The agent log files are text files that contain data in the comma-separated value file (CSV) format. Each agent log file has a header that contains the following information:
 
-  - **\#Software**   Name of the software that created the agent log file. Typically, the value is Microsoft Exchange Server.
+  - **\#Software**: Name of the software that created the agent log file. Typically, the value is Microsoft Exchange Server.
 
-  - **\#Version**   Version number of the software that created the agent log file. Currently, the value is 15.0.0.0.
+  - **\#Version**: Version number of the software that created the agent log file. Currently, the value is 15.0.0.0.
 
-  - **\#Log-Type**   Log type value, which is Agent Log.
+  - **\#Log-Type**: Log type value, which is Agent Log.
 
-  - **\#Date**   UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
+  - **\#Date**: UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
 
-  - **\#Fields**   Comma delimited field names used in the agent log files.
+  - **\#Fields**: Comma delimited field names used in the agent log files.
 
 Return to top
 

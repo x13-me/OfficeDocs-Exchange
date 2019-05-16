@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 989a62fc-4bc1-448f-90c8-7c7b56fe1084
 ms.date: 7/6/2018
+ms.reviewer: 
 title: TNEF conversion options
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 
@@ -51,9 +52,9 @@ The TNEF conversion options for remote domains are described in this table:
 
 |**Setting**|**Value in the EAC**|**Value in Exchange Management Shell**|
 |:-----|:-----|:-----|
-|Use TNEF for all messages sent to the remote domain.  <br/> |**Always** <br/> | `$true` <br/> |
-|Never use TNEF for any messages sent to the remote domain.  <br/> |**Never** <br/> | `$false` <br/> |
-|TNEF messages aren't specifically allowed or prevented for recipients in the remote domain. This is the default value.  <br/> Whether TNEF messages are sent to recipients in the remote domain depends on the specific setting on the mail contact or mail user, or the setting specified by the sender in Outlook.  <br/> |**Follow user settings** <br/> | `$null` (blank)  <br/> |
+|Use TNEF for all messages sent to the remote domain.|**Always**| `$true`|
+|Never use TNEF for any messages sent to the remote domain.|**Never**| `$false`|
+|TNEF messages aren't specifically allowed or prevented for recipients in the remote domain. This is the default value.  <br/> Whether TNEF messages are sent to recipients in the remote domain depends on the specific setting on the mail contact or mail user, or the setting specified by the sender in Outlook.|**Follow user settings**| `$null` (blank)|
 
 ## TNEF conversion options for mail contacts and mail users
 <a name="MailContacts"> </a>

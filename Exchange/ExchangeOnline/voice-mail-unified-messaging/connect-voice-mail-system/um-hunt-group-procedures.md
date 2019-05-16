@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: Create a UM hunt group
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 4251c24a-9616-4923-92da-ed783aa8d802
 ms.date: 11/17/2014
+ms.reviewer: 
 title: UM hunt group procedures
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

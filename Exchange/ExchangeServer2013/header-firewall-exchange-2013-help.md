@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Header firewall: Exchange 2013 Help'
 TOCTitle: Header firewall
 ms:assetid: 9b148f7b-47a9-4379-a55b-8d5310c1772f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232136(v=EXCHG.150)
 ms:contentKeyID: 50934222
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 f1_keywords:
 - header firewall, organization X-headers
@@ -24,9 +28,9 @@ _**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, *header firewall* is a mechanism that removes specific header fields from inbound and outbound messages. There are two different types of header fields that are affected by header firewall:
 
-  - **X-headers**   An *X-header* is a user-defined, unofficial header field. X-headers aren't specifically mentioned in RFC 2822, but the use of an undefined header field starting with **X-** has become an accepted way to add unofficial header fields to a message. Messaging applications, such as anti-spam, antivirus, and messaging servers may add their own X-headers to a message. In Exchange, the X-header fields contain details about the actions that are performed on the message by the Transport service, such as the spam confidence level (SCL), content filtering results, and rules processing status. Revealing this information to unauthorized sources could pose a potential security risk.
+  - **X-headers**: An *X-header* is a user-defined, unofficial header field. X-headers aren't specifically mentioned in RFC 2822, but the use of an undefined header field starting with **X-** has become an accepted way to add unofficial header fields to a message. Messaging applications, such as anti-spam, antivirus, and messaging servers may add their own X-headers to a message. In Exchange, the X-header fields contain details about the actions that are performed on the message by the Transport service, such as the spam confidence level (SCL), content filtering results, and rules processing status. Revealing this information to unauthorized sources could pose a potential security risk.
 
-  - **Routing headers**   Routing headers are standard SMTP header fields that are defined in RFC 2821 and RFC 2822. Routing headers stamp a message by using information about the different messaging servers that were used to deliver the message to the recipient. Routing headers that are inserted into messages by malicious users can misrepresent the routing path that a message traveled to reach a recipient.
+  - **Routing headers**: Routing headers are standard SMTP header fields that are defined in RFC 2821 and RFC 2822. Routing headers stamp a message by using information about the different messaging servers that were used to deliver the message to the recipient. Routing headers that are inserted into messages by malicious users can misrepresent the routing path that a message traveled to reach a recipient.
 
 Header firewall prevents the spoofing of these Exchange-related X-headers by removing them from inbound messages that enter the Exchange organization from untrusted sources. Header firewall prevents the disclosure of these Exchange-related X-headers by removing them from outbound messages sent to untrusted destinations outside the Exchange organization. Header firewall also prevents the spoofing of standard routing headers that are used to track the routing history of a message.
 
@@ -48,15 +52,15 @@ Organization X-headers and forest X-headers in Exchange
 
 The following types of X-headers and routing headers are affected by header firewall:
 
-  - **Organization X-headers**   These X-header fields start with **X-MS-Exchange-Organization-**.
+  - **Organization X-headers**: These X-header fields start with **X-MS-Exchange-Organization-**.
 
-  - **Forest X-headers**   These X-header fields start with **X-MS-Exchange-Forest-**.
+  - **Forest X-headers**: These X-header fields start with **X-MS-Exchange-Forest-**.
     
     For examples of organization X-headers and forest X-headers, see the Organization X-headers and forest X-headers in Exchange section at the end of this topic.
 
-  - **Received: routing headers**   A different instance of this header field is added to the message header by every messaging server that accepted and forwarded the message to the recipient. The **Received:** header typically includes the name of the messaging server and a date-timestamp.
+  - **Received: routing headers**: A different instance of this header field is added to the message header by every messaging server that accepted and forwarded the message to the recipient. The **Received:** header typically includes the name of the messaging server and a date-timestamp.
 
-  - **Resent-\*: routing headers**   Resent header fields are informational header fields that can be used to determine whether a message has been forwarded by a user. The following resent header fields are available: **Resent-Date:**, **Resent-From:**, **Resent-Sender:**, **Resent-To:**, **Resent-Cc:**, **Resent-Bcc:**, and **Resent-Message-ID:**. The **Resent-** fields are used so that the message appears to the recipient as if it was sent directly by the original sender. The recipient can view the message header to discover who forwarded the message.
+  - **Resent-\*: routing headers**: Resent header fields are informational header fields that can be used to determine whether a message has been forwarded by a user. The following resent header fields are available: **Resent-Date:**, **Resent-From:**, **Resent-Sender:**, **Resent-To:**, **Resent-Cc:**, **Resent-Bcc:**, and **Resent-Message-ID:**. The **Resent-** fields are used so that the message appears to the recipient as if it was sent directly by the original sender. The recipient can view the message header to discover who forwarded the message.
 
 Exchange uses two different ways to apply header firewall to organization X-headers, forest X-headers, and routing headers that exist in messages:
 
@@ -332,7 +336,7 @@ Return to top
 
 Messages can enter the transport pipeline on a Mailbox server or an Edge Transport server without using Send connectors or Receive connectors. Header firewall is applied to these other message sources as described in the following list:
 
-  - **Pickup directory and Replay directory**   The Pickup directory is used by administrators or applications to submit message files. The Replay directory is used to resubmit messages that have been exported from Exchange message queues. For more information about the Pickup and Replay directories, see [Pickup directory and Replay directory](pickup-directory-and-replay-directory-exchange-2013-help.md).
+  - **Pickup directory and Replay directory**: The Pickup directory is used by administrators or applications to submit message files. The Replay directory is used to resubmit messages that have been exported from Exchange message queues. For more information about the Pickup and Replay directories, see [Pickup directory and Replay directory](pickup-directory-and-replay-directory-exchange-2013-help.md).
     
     Organization X-headers, forest X-headers, and routing headers are removed from the message files in the Pickup directory.
     
@@ -346,13 +350,13 @@ Messages can enter the transport pipeline on a Mailbox server or an Edge Transpo
     
       - If the **X-CreatedBy:** header field doesn't exist in the message file, organization X-headers and forest X-headers are removed from messages.
 
-  - **Drop directory**   The Drop directory is used by Foreign connectors on Mailbox servers to send messages to messaging servers that don't use SMTP to transfer messages. For more information about Foreign connectors, see [Foreign connectors](foreign-connectors-exchange-2013-help.md).
+  - **Drop directory**: The Drop directory is used by Foreign connectors on Mailbox servers to send messages to messaging servers that don't use SMTP to transfer messages. For more information about Foreign connectors, see [Foreign connectors](foreign-connectors-exchange-2013-help.md).
     
     Organization X-headers and forest X-headers are removed from message files before they're put in the Drop directory.
     
     Routing headers are preserved in messages submitted by the Drop directory.
 
-  - **Mailbox Transport**   The Mailbox Transport service exists on Mailbox servers to transmit messages to and from mailboxes on Mailbox servers. For more information about the Mailbox Transport service, see [Mail flow](mail-flow-exchange-2013-help.md).
+  - **Mailbox Transport**: The Mailbox Transport service exists on Mailbox servers to transmit messages to and from mailboxes on Mailbox servers. For more information about the Mailbox Transport service, see [Mail flow](mail-flow-exchange-2013-help.md).
     
     Organization X-headers, forest X-headers, and routing headers are removed from outgoing messages that are sent from mailboxes by the Mailbox Transport Submission service.
     
@@ -372,9 +376,9 @@ Messages can enter the transport pipeline on a Mailbox server or an Edge Transpo
     
       - **X-MS-Exchange-Organization-OriginalSize**
 
-  - **DSN messages**   Organization X-headers, forest X-headers, and routing headers are removed from the original message or the original message header that's attached to the DSN message. For more information about DSN messages, see [DSNs and NDRs in Exchange 2013](dsns-and-ndrs-in-exchange-2013-exchange-2013-help.md).
+  - **DSN messages**: Organization X-headers, forest X-headers, and routing headers are removed from the original message or the original message header that's attached to the DSN message. For more information about DSN messages, see [DSNs and NDRs in Exchange 2013](dsns-and-ndrs-in-exchange-2013-exchange-2013-help.md).
 
-  - **Transport agent submission**   Organization X-headers, forest X-headers, and routing headers are preserved in messages that are submitted by transport agents.
+  - **Transport agent submission**: Organization X-headers, forest X-headers, and routing headers are preserved in messages that are submitted by transport agents.
 
 Return to top
 

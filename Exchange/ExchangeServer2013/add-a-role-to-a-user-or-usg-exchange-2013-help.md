@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Add a role to a user or USG: Exchange 2013 Help'
 TOCTitle: Add a role to a user or USG
 ms:assetid: ae5608de-a141-4714-8876-bce7d2a22cb5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351056(v=EXCHG.150)
 ms:contentKeyID: 49289370
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -161,9 +165,9 @@ For detailed syntax and parameter information, see [New-ManagementRoleAssignment
 
 To create an exclusive role assignment with an exclusive recipient or configuration scope, the same procedures provided in the Create a role assignment with a recipient filter-based scope and Create a role assignment with a server or database filter or list-based configuration scope sections can be used. The only difference is that when you create a role assignment with an exclusive scope, you must specify the following exclusive parameters depending on whether you're using an exclusive recipient scope or an exclusive configuration scope:
 
-  - **Exclusive recipient scopes**   Use the *ExclusiveRecipientWriteScope* parameter instead of the *CustomRecipientWriteScope* parameter.
+  - **Exclusive recipient scopes**: Use the *ExclusiveRecipientWriteScope* parameter instead of the *CustomRecipientWriteScope* parameter.
 
-  - **Exclusive configuration scopes**   Use the *ExclusiveConfigWriteScope* parameter instead of the *CustomConfigWriteScope* parameter.
+  - **Exclusive configuration scopes**: Use the *ExclusiveConfigWriteScope* parameter instead of the *CustomConfigWriteScope* parameter.
 
 When you perform this procedure, the role assignees assigned the role can perform actions against the objects included in the exclusive scope. For more information about exclusive scopes, see [Understanding exclusive scopes](understanding-exclusive-scopes-exchange-2013-help.md).
 

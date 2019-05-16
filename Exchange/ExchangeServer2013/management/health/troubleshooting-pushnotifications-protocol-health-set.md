@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting PushNotifications.Protocol Health Set
 TOCTitle: Troubleshooting PushNotifications.Protocol Health Set
 ms:assetid: ef8dfb26-cfe4-4bcc-b18a-5f15f1f8c99e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.pushnotifications.protocol(v=EXCHG.150)
 ms:contentKeyID: 49720919
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

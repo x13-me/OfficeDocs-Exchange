@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Remote domains: Exchange 2013 Help'
 TOCTitle: Remote domains
 ms:assetid: 10fb7d62-4d78-40a3-82db-d62bcd27ba42
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996309(v=EXCHG.150)
 ms:contentKeyID: 49289173
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -47,9 +51,9 @@ In Exchange 2013, users can specify different automatic replies for internal and
 
 In Exchange 2013, there are two types of automatic replies:
 
-  - **External**   Supported by Exchange 2013 and Exchange 2010. Can only be set by Outlook 2010 or Office Outlook 2007, or using Microsoft Office Outlook Web App.
+  - **External**: Supported by Exchange 2013 and Exchange 2010. Can only be set by Outlook 2010 or Office Outlook 2007, or using Microsoft Office Outlook Web App.
 
-  - **Internal**   Supported by Exchange 2013 and Exchange 2010. Can only be set by Outlook 2010 or Outlook 2007, or using Outlook Web App.
+  - **Internal**: Supported by Exchange 2013 and Exchange 2010. Can only be set by Outlook 2010 or Outlook 2007, or using Outlook Web App.
 
 The following table describes various client and server combinations and the types of automatic replies that can be used in each scenario.
 

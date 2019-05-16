@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure Edge Transport server using cloned configuration: Exchange 2013 Help'
 TOCTitle: Configure Edge Transport server using cloned configuration
 ms:assetid: 0bbc83e3-e5e8-4480-a8a6-15f035360856
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996008(v=EXCHG.150)
 ms:contentKeyID: 61200276
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -21,9 +25,9 @@ Edge Transport server configuration information is stored in Active Directory Li
 
 Two Shell scripts are used to perform cloned configuration tasks:
 
-  - **ExportEdgeConfig.ps1**   Exports all user-configured settings and data from an Edge Transport server and stores that data in an XML file.
+  - **ExportEdgeConfig.ps1**: Exports all user-configured settings and data from an Edge Transport server and stores that data in an XML file.
 
-  - **ImportEdgeConfig.ps1**   During the validate configuration step, the ImportEdgeConfig.ps1 script checks the exported XML file to see whether the server-specific export settings are valid for the target server. If settings need to be modified, the script writes the invalid settings to an answer file you can modify to specify target server information, which is then used during the import configuration step. During the import configuration step, the script imports all user-configured settings and data stored in the intermediate XML file created by the ExportEdgeConfig.ps1 script.
+  - **ImportEdgeConfig.ps1**: During the validate configuration step, the ImportEdgeConfig.ps1 script checks the exported XML file to see whether the server-specific export settings are valid for the target server. If settings need to be modified, the script writes the invalid settings to an answer file you can modify to specify target server information, which is then used during the import configuration step. During the import configuration step, the script imports all user-configured settings and data stored in the intermediate XML file created by the ExportEdgeConfig.ps1 script.
 
 Both these scripts are located in the %ExchangeInstallPath%Scripts folder.
 

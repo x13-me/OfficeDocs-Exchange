@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create linked role groups that mirror built-in role groups: Exchange 2013 Help'
 TOCTitle: Create linked role groups that mirror built-in role groups
 ms:assetid: 89dfcbb3-0568-4bbf-a885-746b91ba307e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876918(v=EXCHG.150)
 ms:contentKeyID: 49289333
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -39,11 +43,11 @@ Looking for other management tasks related to role groups? Check out [Permission
 
   - You must have the following information about the foreign Active Directory forest:
     
-      - **Credentials**   You must have a user name and password that can access the foreign Active Directory forest. This information is used with the *LinkedCredential* parameter on the **New-RoleGroup** cmdlet. This information is obtained by running the **Get-Credential** cmdlet. The format of the user name is *domain*\\*username*.
+      - **Credentials**: You must have a user name and password that can access the foreign Active Directory forest. This information is used with the *LinkedCredential* parameter on the **New-RoleGroup** cmdlet. This information is obtained by running the **Get-Credential** cmdlet. The format of the user name is *domain*\\*username*.
     
-      - **Domain controller**   You must have the fully qualified domain name (FQDN) of an Active Directory domain controller in the foreign Active Directory forest. This information is used with the *LinkedDomainController* parameter on the **New-RoleGroup** cmdlet.
+      - **Domain controller**: You must have the fully qualified domain name (FQDN) of an Active Directory domain controller in the foreign Active Directory forest. This information is used with the *LinkedDomainController* parameter on the **New-RoleGroup** cmdlet.
     
-      - **Foreign USG**   You must have the full name of a USG in the foreign Active Directory forest that contains the members you want to associate with the linked role group. This information is used with the *LinkedForeignGroup* parameter on the **New-RoleGroup** cmdlet.
+      - **Foreign USG**: You must have the full name of a USG in the foreign Active Directory forest that contains the members you want to associate with the linked role group. This information is used with the *LinkedForeignGroup* parameter on the **New-RoleGroup** cmdlet.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -95,9 +99,9 @@ To re-create the Organization Management role group as a linked role group, you 
 
 This example assumes the following values are used for each parameter:
 
-  - **LinkedForeignGroup**   `Organization Management Administrators`
+  - **LinkedForeignGroup**: `Organization Management Administrators`
 
-  - **LinkedDomainController**   `DC01.users.contoso.com`
+  - **LinkedDomainController**: `DC01.users.contoso.com`
 
 Using the preceding values, this example re-creates the Organization Management role group as a linked role group.
 
@@ -141,13 +145,13 @@ New-RoleGroup "<role group name> - Linked" -LinkedForeignGroup <name of foreign 
 
 This example assumes the following values are used for each parameter:
 
-  - **LinkedDomainController**   `DC01.users.contoso.com`
+  - **LinkedDomainController**: `DC01.users.contoso.com`
 
-  - **Built-in role groups to be re-created as linked role groups**   `Recipient Management, Server Management`
+  - **Built-in role groups to be re-created as linked role groups**: `Recipient Management, Server Management`
 
-  - **Foreign group for Recipient Management linked role group**   `Recipient Management Administrators`
+  - **Foreign group for Recipient Management linked role group**: `Recipient Management Administrators`
 
-  - **Foreign group for Server Management linked role group**   `Server Management Administrators`
+  - **Foreign group for Server Management linked role group**: `Server Management Administrators`
 
 Using the preceding values, this example re-creates the Recipient Management and Server Management role groups as linked role groups.
 

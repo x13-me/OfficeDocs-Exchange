@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'View anti-spam stamps in Outlook: Exchange 2013 Help'
 TOCTitle: View anti-spam stamps in Outlook
 ms:assetid: cddb5dbf-ad1e-471c-9fc8-28ddcf7ec1d0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124595(v=EXCHG.150)
 ms:contentKeyID: 49345061
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure storage quotas for a mailbox: Exchange 2013 Help'
 TOCTitle: Configure storage quotas for a mailbox
 ms:assetid: 5f5fe292-c80e-4a0b-b3e6-e193ea5171d0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998353(v=EXCHG.150)
 ms:contentKeyID: 50387717
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -55,16 +59,16 @@ This topic shows you how to customize storage settings for a specific mailbox in
 
 4.  Click **Customize the settings for this mailbox**, and then configure the following boxes. The value range for any of the storage quota settings is from 0 through 2047 gigabytes (GB).
     
-      - **Issue a warning at (GB)**   This box displays the maximum storage limit before a warning is issued to the user. If the mailbox size reaches or exceeds the value specified, Exchange sends a warning message to the user.
+      - **Issue a warning at (GB)**: This box displays the maximum storage limit before a warning is issued to the user. If the mailbox size reaches or exceeds the value specified, Exchange sends a warning message to the user.
         
 
         > [!IMPORTANT]
         > The message associated with the <STRONG>Issue warning</STRONG> quota won't be sent to the user unless the value of this setting is greater than 50% of the value specified in the <STRONG>Prohibit send</STRONG> quota. For example, if you set the <STRONG>Prohibit send</STRONG> quota to 8 MB, you must set the <STRONG>Issue warning</STRONG> quota to at least 4 MB. If you don't, the <STRONG>Issue warning</STRONG> quota message won't be sent.
 
     
-      - **Prohibit send at (GB)**   This box displays the *prohibit send* limit for the mailbox. If the mailbox size reaches or exceeds the specified limit, Exchange prevents the user from sending new messages and displays a descriptive error message.
+      - **Prohibit send at (GB)**: This box displays the *prohibit send* limit for the mailbox. If the mailbox size reaches or exceeds the specified limit, Exchange prevents the user from sending new messages and displays a descriptive error message.
     
-      - **Prohibit send and receive at (GB)**   This box displays the *prohibit send and receive* limit for the mailbox. If the mailbox size reaches or exceeds the specified limit, Exchange prevents the mailbox user from sending new messages and won't deliver any new messages to the mailbox. Any messages sent to the mailbox are returned to the sender with a descriptive error message.
+      - **Prohibit send and receive at (GB)**: This box displays the *prohibit send and receive* limit for the mailbox. If the mailbox size reaches or exceeds the specified limit, Exchange prevents the mailbox user from sending new messages and won't deliver any new messages to the mailbox. Any messages sent to the mailbox are returned to the sender with a descriptive error message.
 
 5.  Click **Save** to save your changes.
 

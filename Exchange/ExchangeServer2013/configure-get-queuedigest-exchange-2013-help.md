@@ -5,6 +5,10 @@ ms:assetid: f730c520-4ba5-4a15-8846-132bff500bb8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn505733(v=EXCHG.150)
 ms:contentKeyID: 59603968
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -19,9 +23,9 @@ The **Get-QueueDigest** cmdlet allows you to view information about some or all 
 
 By default, the results returned by the **Get-QueueDigest** cmdlet are between one and two minutes old. These values are controlled by the following settings:
 
-  - **QueueLoggingInterval key in EdgeTransport.exe.config**   This key specifies how frequently queue data is logged and is available to **Get-QueueDigest**. The default value is `00:01:00` (one minute). To specify a value, enter it as a time span: *hh:mm:ss* where *h* = hours, *m* = minutes, and *s* = seconds. By default, this key isn't present in the EdgeTransport.exe.config file.
+  - **QueueLoggingInterval key in EdgeTransport.exe.config**: This key specifies how frequently queue data is logged and is available to **Get-QueueDigest**. The default value is `00:01:00` (one minute). To specify a value, enter it as a time span: *hh:mm:ss* where *h* = hours, *m* = minutes, and *s* = seconds. By default, this key isn't present in the EdgeTransport.exe.config file.
 
-  - **QueueDiagnosticsAggregationInterval parameter on Set-TransportConfig**   This parameter specifies how frequently queue data is shared between Mailbox servers. The default value is `00:01:00` (one minute). To specify a value, enter it as a time span: *hh:mm:ss* where *h* = hours, *m* = minutes, and *s* = seconds.
+  - **QueueDiagnosticsAggregationInterval parameter on Set-TransportConfig**: This parameter specifies how frequently queue data is shared between Mailbox servers. The default value is `00:01:00` (one minute). To specify a value, enter it as a time span: *hh:mm:ss* where *h* = hours, *m* = minutes, and *s* = seconds.
 
 The sum of the **QueueLoggingInterval** key and *QueueDiagnosticsAggregationInterval* parameter values determine the maximum age of the results returned by **Get-QueueDigest**.
 

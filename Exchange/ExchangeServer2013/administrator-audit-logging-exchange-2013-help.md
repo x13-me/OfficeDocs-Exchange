@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Administrator audit logging: Exchange 2013 Help'
 TOCTitle: Administrator audit logging
 ms:assetid: 22b17eb8-d8ee-4599-b202-d6a7928c20d9
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335144(v=EXCHG.150)
 ms:contentKeyID: 50117641
 ms.date: 03/05/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -73,13 +77,13 @@ In addition to specifying which cmdlets you want to log, you can also indicate t
 
 By default, audit logging is configured to store audit log entries for 90 days. After 90 days, the audit log entry is deleted. You can change the audit log age limit using the *AdminAuditLogAgeLimit* parameter. You can specify the number of days, hours, minutes, and seconds that audit log entries should be kept. To specify a value, use the format `dd.hh:mm:ss` where the following applies:
 
-  - **dd**   The number of days to keep the audit log entry.
+  - **dd**: The number of days to keep the audit log entry.
 
-  - **hh**   The number of hours to keep the audit log entry.
+  - **hh**: The number of hours to keep the audit log entry.
 
-  - **mm**   The number of minutes to keep the audit log entry.
+  - **mm**: The number of minutes to keep the audit log entry.
 
-  - **ss**   The number of seconds to keep the audit log entry.
+  - **ss**: The number of seconds to keep the audit log entry.
 
 You must specify multiple years using the `dd` field. For example, 365 days equals one year; 730 days equals two years; 913 days equals two years and six months. For example, to set the audit log age limit to two years and six months, use the syntax `913.00:00:00`.
 
@@ -193,9 +197,9 @@ Return to top
 
 The **auditing** page in the EAC has several reports that provide information about various types of compliance and administrative configuration changes. The following reports provide information about configuration changes in your organization:
 
-  - **Administrator role group report**   This report enables you to search for changes to management role groups that you specify within a specified timeframe. The results that are returned include the role groups that have been changed, who changed them and when, and what changes were made. A maximum of 3,000 entries can be returned. If your search might return more than 3,000 entries, use the **Administrator audit log** report or the **Search-AdminAuditLog** cmdlet.
+  - **Administrator role group report**: This report enables you to search for changes to management role groups that you specify within a specified timeframe. The results that are returned include the role groups that have been changed, who changed them and when, and what changes were made. A maximum of 3,000 entries can be returned. If your search might return more than 3,000 entries, use the **Administrator audit log** report or the **Search-AdminAuditLog** cmdlet.
 
-  - **Administrator audit log**   This report enables you to export the audit log entries recorded within a specified timeframe to a XML file and then send the file via email to a recipient you specify. For more information about the contents of the XML file, see [Administrator audit log structure](administrator-audit-log-structure-exchange-2013-help.md).
+  - **Administrator audit log**: This report enables you to export the audit log entries recorded within a specified timeframe to a XML file and then send the file via email to a recipient you specify. For more information about the contents of the XML file, see [Administrator audit log structure](administrator-audit-log-structure-exchange-2013-help.md).
 
 For information about how to use these reports, see [Search the role group changes or administrator audit logs](https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes).
 
@@ -205,19 +209,19 @@ For information about the other reports included on the **auditing** page see [E
 
 When you run the **Search-AdminAuditLog** cmdlet, all the audit log entries that match the search criteria you specify are returned. You can specify the following search criteria:
 
-  - **Cmdlets**   Specifies the cmdlets you want to search for in the administrator audit log.
+  - **Cmdlets**: Specifies the cmdlets you want to search for in the administrator audit log.
 
-  - **Parameters**   Specifies the parameters, separated by commas, you want to search for in the administrator audit log. You can only search for parameters if you specify a cmdlet to search for.
+  - **Parameters**: Specifies the parameters, separated by commas, you want to search for in the administrator audit log. You can only search for parameters if you specify a cmdlet to search for.
 
-  - **End date**   Scopes the administrator audit log results to log entries that occurred on or before the specified date.
+  - **End date**: Scopes the administrator audit log results to log entries that occurred on or before the specified date.
 
-  - **Start date**   Scopes the administrator audit log results to log entries that occurred on or after the specified date.
+  - **Start date**: Scopes the administrator audit log results to log entries that occurred on or after the specified date.
 
-  - **Object IDs**   Specifies that only administrator audit log entries that contain the specified changed objects should be returned
+  - **Object IDs**: Specifies that only administrator audit log entries that contain the specified changed objects should be returned
 
-  - **User IDs**   Specifies that only the administrator audit log entries that contain the specified IDs of the user who ran the cmdlet should be returned.
+  - **User IDs**: Specifies that only the administrator audit log entries that contain the specified IDs of the user who ran the cmdlet should be returned.
 
-  - **Successful completion**   Specifies whether only administrator audit log entries that indicated a success or failure should be returned.
+  - **Successful completion**: Specifies whether only administrator audit log entries that indicated a success or failure should be returned.
 
 Each audit log entry returned contains the information described in the table in Audit Log Contents. By default, only the first 1,000 log entries that match the criteria you specify are returned. However, you can override this default and return more or fewer entries using the *ResultSize* parameter. You can specify a value of `Unlimited` with the *ResultSize* parameter to return all log entries that match the specified criteria.
 

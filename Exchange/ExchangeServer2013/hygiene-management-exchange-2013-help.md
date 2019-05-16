@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Hygiene Management: Exchange 2013 Help'
 TOCTitle: Hygiene Management
 ms:assetid: fc0a9ec2-9c3d-42f6-8442-8603fb29d464
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd776125(v=EXCHG.150)
 ms:contentKeyID: 49289468
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -55,17 +59,17 @@ If you want to create a role group and assign some of the roles that are assigne
 
 The following table lists all the management roles that are assigned to this role group and the following attributes of each role assignment:
 
-  - **Regular assignment**   Enables members of the role group to access the management role entries made available by the associated management role.
+  - **Regular assignment**: Enables members of the role group to access the management role entries made available by the associated management role.
 
-  - **Delegating assignment**   Gives members of the role group the ability to assign the specified role to other role groups, role assignment policies, users, or USGs.
+  - **Delegating assignment**: Gives members of the role group the ability to assign the specified role to other role groups, role assignment policies, users, or USGs.
 
-  - **Recipient read scope**   Determines what recipient objects members of the role group are allowed to read from Active Directory.
+  - **Recipient read scope**: Determines what recipient objects members of the role group are allowed to read from Active Directory.
 
-  - **Recipient write scope**   Determines what recipient objects members of the role group are allowed to modify in Active Directory.
+  - **Recipient write scope**: Determines what recipient objects members of the role group are allowed to modify in Active Directory.
 
-  - **Configuration read scope**   Determines what configuration and server objects members of the role group are allowed to read from Active Directory.
+  - **Configuration read scope**: Determines what configuration and server objects members of the role group are allowed to read from Active Directory.
 
-  - **Configuration write scope**   Determines what organizational and server objects members of the role group are allowed to modify in Active Directory.
+  - **Configuration write scope**: Determines what organizational and server objects members of the role group are allowed to modify in Active Directory.
 
 For more information about role assignments and management scopes, see the following topics:
 

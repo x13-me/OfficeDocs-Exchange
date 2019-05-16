@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Message encoding options: Exchange 2013 Help'
 TOCTitle: Message encoding options
 ms:assetid: c1d9edbb-d87c-41e5-881b-cd612d83d7e4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb310794(v=EXCHG.150)
 ms:contentKeyID: 49318586
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -99,13 +103,13 @@ Return to top
 
 When you configure message encoding options for a mail contact or a mail user, that option is applied to all messages sent to that specific recipient. For mail contacts and mail users in your organization, you have the following configuration options for message encoding:
 
-  - **UsePreferMessageFormat**   This parameter specifies whether the message format settings configured for the mail contact override the global settings configured for the remote domain. If you disable this setting, Exchange ignores other message encoding options for this recipient and the message encoding is determined by the configuration of the remote domain or the settings configured by the message sender.
+  - **UsePreferMessageFormat**: This parameter specifies whether the message format settings configured for the mail contact override the global settings configured for the remote domain. If you disable this setting, Exchange ignores other message encoding options for this recipient and the message encoding is determined by the configuration of the remote domain or the settings configured by the message sender.
 
-  - **MessageFormat**   This parameter specifies the message format. You can either specify Text or Mime as the message format. The value of this setting is dependent on the *MessageBodyFormat* parameter. If the message body format is Html or TextAndHtml, you must set this parameter to Mime.
+  - **MessageFormat**: This parameter specifies the message format. You can either specify Text or Mime as the message format. The value of this setting is dependent on the *MessageBodyFormat* parameter. If the message body format is Html or TextAndHtml, you must set this parameter to Mime.
 
-  - **MessageBodyFormat**   This parameter specifies the message body format. You can specify Text, Html, or TextAndHtml. The value of this setting is dependent on the *MessageFormat* parameter. If the message format is Text, you must also set this parameter to Text.
+  - **MessageBodyFormat**: This parameter specifies the message body format. You can specify Text, Html, or TextAndHtml. The value of this setting is dependent on the *MessageFormat* parameter. If the message format is Text, you must also set this parameter to Text.
 
-  - **MacAttachmentFormat**   This parameter specifies the Apple Macintosh operating system attachment format for messages. You can specify BinHex, UuEncode, AppleSingle, or AppleDouble. The value of this setting is dependent on the *MessageFormat* parameter. If the message format is set to Text, you must set this parameter to either BinHex or UuEncode. If the message format is set to Mime, you must set this parameter to BinHex, AppleSingle or AppleDouble.
+  - **MacAttachmentFormat**: This parameter specifies the Apple Macintosh operating system attachment format for messages. You can specify BinHex, UuEncode, AppleSingle, or AppleDouble. The value of this setting is dependent on the *MessageFormat* parameter. If the message format is set to Text, you must set this parameter to either BinHex or UuEncode. If the message format is set to Mime, you must set this parameter to BinHex, AppleSingle or AppleDouble.
 
 You need to use these parameters in the Exchange Management Shell to set the message encoding options for mail users and mail contacts. For more information, see the following topics:
 

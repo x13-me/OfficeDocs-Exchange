@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: e7ad0ba5-3789-4a2b-9825-6bb1b321609c
 ms.date: 7/10/2018
+ms.reviewer: 
 title: Queues and messages in queues in Exchange Server
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

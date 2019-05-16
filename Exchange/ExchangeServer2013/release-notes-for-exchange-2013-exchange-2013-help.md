@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Release notes for Exchange 2013: Exchange 2013 Help'
 TOCTitle: Release notes for Exchange 2013
 ms:assetid: 1879fd5e-3d63-4264-9cc2-9c050c6ab3c5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150489(v=EXCHG.150)
 ms:contentKeyID: 47559950
 ms.date: 04/16/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -39,11 +43,11 @@ This topic contains the following sections:
     
     This behavior is expected as the value of *msExchProductId* doesn't reflect the version of Exchange 2013 being installed. This property reflects the version of Exchange 2013 that last made changes to the Active Directory schema. To avoid confusion, we recommend that you follow the steps in the [How do you know this worked?](prepare-active-directory-and-domains-exchange-2013-help.md) section of [Prepare Active Directory and domains](prepare-active-directory-and-domains-exchange-2013-help.md) to verify that your Active Directory has been updated and is ready for the release of Exchange 2013 you're installing.
 
-  - **Setup incorrectly requests .NET Framework 4.0**   If you try to install Exchange 2013 without .NET Framework installed on the computer, Setup incorrectly requests that you install .NET Framework 4.0 when, in fact, .NET Framework 4.5 or later is required.
+  - **Setup incorrectly requests .NET Framework 4.0**: If you try to install Exchange 2013 without .NET Framework installed on the computer, Setup incorrectly requests that you install .NET Framework 4.0 when, in fact, .NET Framework 4.5 or later is required.
     
     To work around this issue, install .NET Framework 4.5 or later. You don't need to install .NET Framework 4.0. For a complete list of prerequisites, see [Exchange 2013 prerequisites](exchange-2013-prerequisites-exchange-2013-help.md).
 
-  - **Exchange XML application configuration files are overwritten during cumulative update installation**   Any customized Exchange or Internet Information Server per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update or Service Pack. Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange Cumulative Update or Service Pack.
+  - **Exchange XML application configuration files are overwritten during cumulative update installation**: Any customized Exchange or Internet Information Server per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update or Service Pack. Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange Cumulative Update or Service Pack.
 
   - **Installing Exchange using Delegate Admin permissions causes Setup to fail** When a user who's a member of only the Delegated Setup role group attempts to install Exchange on a pre-provisioned server, Setup will fail. This happens because the Delegated Setup group lacks the permissions required to create and configure certain objects in Active Directory.
     
@@ -73,19 +77,19 @@ For more information about how to install Exchange 2013, see [Planning and deplo
     
       - **Exchange 2016** 15.1 (Build xxx.xx)
 
-  - **Mailbox size increase when migrating from previous Exchange versions**   When you move a mailbox from a previous version of Exchange to Exchange 2013, the mailbox size reported may increase 30 percent to 40 percent. Disk space used by the mailbox database has not increased, only the attribution of space used by each mailbox has increased. The increase in mailbox size is due to the inclusion of all item properties into quota calculations, providing a more accurate computation of space consumed by items within their mailbox. This increase may cause some users to exceed their mailbox size quotas when their mailbox is moved to Exchange 2013.
+  - **Mailbox size increase when migrating from previous Exchange versions**: When you move a mailbox from a previous version of Exchange to Exchange 2013, the mailbox size reported may increase 30 percent to 40 percent. Disk space used by the mailbox database has not increased, only the attribution of space used by each mailbox has increased. The increase in mailbox size is due to the inclusion of all item properties into quota calculations, providing a more accurate computation of space consumed by items within their mailbox. This increase may cause some users to exceed their mailbox size quotas when their mailbox is moved to Exchange 2013.
     
     To prevent users from exceeding their mailbox size quotas, increase the database or mailbox quota values to accommodate the new quota calculation. To configure database or mailbox quota values, use the *IssueWarningQuota*, *ProhibitSendQuota*, and *ProhibitSendReceiveQuota* parameters on the **Set-MailboxDatabase** and **Set-Mailbox** cmdlets, respectively.
 
-  - **Outlook 2007 and Outlook 2010 clients may be unable to download the Offline Address Book**   If the Offline Address Book (OAB) internal URL isn't accessible from the Internet, Outlook 2007 and Outlook 2010 clients may be unable to download the OAB.
+  - **Outlook 2007 and Outlook 2010 clients may be unable to download the Offline Address Book**: If the Offline Address Book (OAB) internal URL isn't accessible from the Internet, Outlook 2007 and Outlook 2010 clients may be unable to download the OAB.
     
     To work around this issue for Outlook 2007 and Outlook 2010 clients, make the OAB internal URL accessible from the Internet. Outlook 2013 isn't affected by this issue.
 
-  - **Installing Exchange 2013 in an existing Exchange organization may cause all clients to download the OAB**   Installing the first Exchange 2013 server into an existing Exchange 2007 or Exchange 2010 organization may cause all clients in the organization to download a new copy of the OAB, resulting in network saturation and server performance issues. This issue occurs because Exchange 2013 creates a new default OAB in the organization that supersedes the Exchange 2007 or Exchange 2010 OAB. Mailboxes that don't have a specific OAB assigned, or that are located on a mailbox database that doesn't have a specific OAB assigned, will download the new default OAB.
+  - **Installing Exchange 2013 in an existing Exchange organization may cause all clients to download the OAB**: Installing the first Exchange 2013 server into an existing Exchange 2007 or Exchange 2010 organization may cause all clients in the organization to download a new copy of the OAB, resulting in network saturation and server performance issues. This issue occurs because Exchange 2013 creates a new default OAB in the organization that supersedes the Exchange 2007 or Exchange 2010 OAB. Mailboxes that don't have a specific OAB assigned, or that are located on a mailbox database that doesn't have a specific OAB assigned, will download the new default OAB.
     
     To prevent clients from downloading a new copy of the OAB when Exchange 2013 is installed, assign an OAB to every mailbox or to the mailbox database the mailboxes are located on. This must be done prior to Exchange 2013 being installed in the organization.
 
-  - **Users may be routed to an OAB generation mailbox that's not responsible for the requested OAB**   Exchange 2013 CU5 and later CUs have changed how OABs are linked to OAB generation mailboxes. This change makes it possible for a user to be routed to an OAB generation mailbox that isn't responsible for the OAB that the user is requesting. This can happen if all of the following are true:
+  - **Users may be routed to an OAB generation mailbox that's not responsible for the requested OAB**: Exchange 2013 CU5 and later CUs have changed how OABs are linked to OAB generation mailboxes. This change makes it possible for a user to be routed to an OAB generation mailbox that isn't responsible for the OAB that the user is requesting. This can happen if all of the following are true:
     
       - You have more than one OAB generation mailbox in your organization.
     
@@ -101,7 +105,7 @@ For more information about how to install Exchange 2013, see [Planning and deplo
 
 ## Public folders
 
-  - **Unauthorized senders can no longer send messages to mail-enabled public folders**   Prior to Exchange 2013 CU6, unauthorized senders could send messages to mail-enabled public folders. This allowed the possibility for external senders to send mail to mail-enabled public folders regardless of the permissions set on the public folder.
+  - **Unauthorized senders can no longer send messages to mail-enabled public folders**: Prior to Exchange 2013 CU6, unauthorized senders could send messages to mail-enabled public folders. This allowed the possibility for external senders to send mail to mail-enabled public folders regardless of the permissions set on the public folder.
     
     Starting with Exchange 2013 CU6, if you want external senders to send mail to a mail-enabled public folders, the **Anonymous** user needs to be granted at least the **Create Items** permission. If you've set up mail-enabled public folders and haven't done this, external senders will receive a delivery failure notification and the messages won't be delivered to the mail-enabled public folder.
     
@@ -111,7 +115,7 @@ For more information about how to install Exchange 2013, see [Planning and deplo
 
 ## Mail flow
 
-  - **TransportAgent cmdlets on Client Access servers require local Windows PowerShell**   An issue exists with the **\*-TransportAgent** cmdlets that prevents those cmdlets from installing, uninstalling, and managing transport agents on Client Access servers using the Exchange Management Shell. To install, uninstall, and manage transport agents on Client Access servers, you must manually load the Exchange Windows PowerShell snap-in and then run the **\*-TransportAgent** cmdlets. If you attempt to install, uninstall, or manage transport agents using the Exchange Management Shell, your changes will be applied to the Exchange 2013 Mailbox server you're connected to.
+  - **TransportAgent cmdlets on Client Access servers require local Windows PowerShell**: An issue exists with the **\*-TransportAgent** cmdlets that prevents those cmdlets from installing, uninstalling, and managing transport agents on Client Access servers using the Exchange Management Shell. To install, uninstall, and manage transport agents on Client Access servers, you must manually load the Exchange Windows PowerShell snap-in and then run the **\*-TransportAgent** cmdlets. If you attempt to install, uninstall, or manage transport agents using the Exchange Management Shell, your changes will be applied to the Exchange 2013 Mailbox server you're connected to.
     
     To install, uninstall, or manage transport agents on Client Access servers, do the following on the Client Access server you want to manage:
     
@@ -139,7 +143,7 @@ For more information about how to install Exchange 2013, see [Planning and deplo
 
 ## Client connectivity
 
-  - **NTLM authentication fails for non-domain joined clients**   Authentication between a client, such as Windows Live Mail, and Exchange 2013 may fail when the following conditions are true:
+  - **NTLM authentication fails for non-domain joined clients**: Authentication between a client, such as Windows Live Mail, and Exchange 2013 may fail when the following conditions are true:
     
       - Then authentication method the client uses is NTLM.
     
@@ -151,13 +155,13 @@ For more information about how to install Exchange 2013, see [Planning and deplo
     
       - Change the authentication type the client uses from NTLM to Basic Auth over TLS.
 
-  - **GSSAPI authentication fails when used with the Send-MailMessage cmdlet**   Generic Security Service Application Program Interface (GSSAPI) authentication may fail when the **Send-MailMessage** cmdlet, which is included with default installs of Windows PowerShell, is used to send authenticated mail to Exchange 2013. When this happens, you'll see an entry in the **Application** event log on the Exchange 2013 Client Access server that received the connection with the following information:
+  - **GSSAPI authentication fails when used with the Send-MailMessage cmdlet**: Generic Security Service Application Program Interface (GSSAPI) authentication may fail when the **Send-MailMessage** cmdlet, which is included with default installs of Windows PowerShell, is used to send authenticated mail to Exchange 2013. When this happens, you'll see an entry in the **Application** event log on the Exchange 2013 Client Access server that received the connection with the following information:
     
-      - **Source**   MSExchangeFrontEndTransport
+      - **Source**: MSExchangeFrontEndTransport
     
-      - **Event ID**   1035
+      - **Event ID**: 1035
     
-      - **Description**   Inbound authentication failed with error `IllegalMessage` for Receive connector Client Frontend \<*server name*\>. The authentication mechanism is Gssapi. The source IP address of the client who tried to authenticate to Exchange is \[\<*client IP address*\>\].
+      - **Description**: Inbound authentication failed with error `IllegalMessage` for Receive connector Client Frontend \<*server name*\>. The authentication mechanism is Gssapi. The source IP address of the client who tried to authenticate to Exchange is \[\<*client IP address*\>\].
     
     To work around this issue, you need to remove the `Integrated` authentication method from the client receive connector on your Exchange 2013 Client Access servers. To remove the `Integrated` authentication method from a client receive connector, run the following command on each Exchange 2013 Client Access server that could receive connections from computers running the **Send-MailMessage** cmdlet:
     
@@ -165,7 +169,7 @@ For more information about how to install Exchange 2013, see [Planning and deplo
         Set-ReceiveConnector "<server name>\Client Frontend <server name>" -AuthMechanism Tls, BasicAuth, BasicAuthRequireTLS
     ```
 
-  - **MAPI over HTTP may experience poor performance when you upgrade to Exchange 2013 SP1**   If you upgrade from an Exchange 2013 cumulative update to Exchange 2013 SP1 and enable MAPI over HTTP, clients that connect to an Exchange 2013 SP1 server using the protocol may experience poor performance. This is because required settings aren't configured during an upgrade from a cumulative update to Exchange 2013 SP1. This issue doesn't occur if you upgrade to Exchange 2013 SP1 from Exchange 2013 RTM or if you install a new Exchange 2013 SP1 or later server.
+  - **MAPI over HTTP may experience poor performance when you upgrade to Exchange 2013 SP1**: If you upgrade from an Exchange 2013 cumulative update to Exchange 2013 SP1 and enable MAPI over HTTP, clients that connect to an Exchange 2013 SP1 server using the protocol may experience poor performance. This is because required settings aren't configured during an upgrade from a cumulative update to Exchange 2013 SP1. This issue doesn't occur if you upgrade to Exchange 2013 SP1 from Exchange 2013 RTM or if you install a new Exchange 2013 SP1 or later server.
     
 
     > [!NOTE]
@@ -198,7 +202,7 @@ For more information about how to install Exchange 2013, see [Planning and deplo
 
 ## Exchange 2010 coexistence
 
-  - **Requests to access Exchange 2010 mailboxes may not work when proxied through Exchange 2013 Client Access servers**   In some situations, the proxy request between the Exchange 2013 and Exchange 2010 Service Pack 3 (SP3) Client Access servers without any update rollups installed may not work correctly and an error appears. This can happen if all of the following conditions are true:
+  - **Requests to access Exchange 2010 mailboxes may not work when proxied through Exchange 2013 Client Access servers**: In some situations, the proxy request between the Exchange 2013 and Exchange 2010 Service Pack 3 (SP3) Client Access servers without any update rollups installed may not work correctly and an error appears. This can happen if all of the following conditions are true:
     
       - A user with an Exchange 2013 mailbox tries to open an Exchange 2010 mailbox using one of the following methods:
         

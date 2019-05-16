@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'UM protocols, ports, and services: Exchange 2013 Help'
 TOCTitle: UM protocols, ports, and services
 ms:assetid: 5997ce29-1755-48bb-8ff4-b08da549482a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998265(v=EXCHG.150)
 ms:contentKeyID: 49315424
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

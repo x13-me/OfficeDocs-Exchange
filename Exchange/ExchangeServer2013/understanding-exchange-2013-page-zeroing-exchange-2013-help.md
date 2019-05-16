@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Understanding Exchange 2013 page zeroing: Exchange 2013 Help'
 TOCTitle: Understanding Exchange 2013 page zeroing
 ms:assetid: 0ca7b188-efbc-4c0d-bcfe-5138cffc803c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg549096(v=EXCHG.150)
 ms:contentKeyID: 62279321
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -27,9 +31,9 @@ _**Applies to:** Exchange Server 2013_
 
 In Exchange 2013 page zeroing reduces the performance impact on servers when they're performing zeroing functions. This includes:
 
-  - **Optimized storage and network capacity**   ESE writes a page-zeroing record to the transaction log file instead of logging the entire page image. This approach reduces log write I/O, and reduces the bandwidth requirements for shipping log files.
+  - **Optimized storage and network capacity**: ESE writes a page-zeroing record to the transaction log file instead of logging the entire page image. This approach reduces log write I/O, and reduces the bandwidth requirements for shipping log files.
 
-  - **Optimized database disk I/O**   In Exchange 2010 RTM and earlier, page zeroing occurred only during a backup, or during scheduled maintenance, and it caused significant database disk I/O. In Exchange 2010 SP1 and later (including Exchange 2013), page zeroing occurs by default and happens at transaction time. In the majority of cases, zeroing occurs immediately after a hard delete. This design allows the database to leverage the checkpoint depth capability of the engine, which ensures that dirty pages stay in the database cache for a certain amount of time so that additional page updates that occur in close time proximity don't cause additional database write I/Os. Because of this design, page zeroing has no significant database I/O impact, which is why it's enabled by default.
+  - **Optimized database disk I/O**: In Exchange 2010 RTM and earlier, page zeroing occurred only during a backup, or during scheduled maintenance, and it caused significant database disk I/O. In Exchange 2010 SP1 and later (including Exchange 2013), page zeroing occurs by default and happens at transaction time. In the majority of cases, zeroing occurs immediately after a hard delete. This design allows the database to leverage the checkpoint depth capability of the engine, which ensures that dirty pages stay in the database cache for a certain amount of time so that additional page updates that occur in close time proximity don't cause additional database write I/Os. Because of this design, page zeroing has no significant database I/O impact, which is why it's enabled by default.
 
 ## Implementation of Page Zeroing in the ESE Database
 

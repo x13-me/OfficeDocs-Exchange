@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure connectivity logging: Exchange 2013 Help'
 TOCTitle: Configure connectivity logging
 ms:assetid: 24e46a79-33ea-44e9-b03c-549db1c86a6f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996827(v=EXCHG.150)
 ms:contentKeyID: 49288901
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -45,9 +49,9 @@ Connectivity logging records the outbound connection activity that's used to tra
 
 4.  In the **Connectivity log** section, change any of the following:
     
-      - **Enable connectivity log**   To disable connectivity logging on the server, clear the check box. To enable connectivity logging on the server, select the check box.
+      - **Enable connectivity log**: To disable connectivity logging on the server, clear the check box. To enable connectivity logging on the server, select the check box.
     
-      - **Connectivity log path**   The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
+      - **Connectivity log path**: The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
     
     When you are finished, click **Save**.
 

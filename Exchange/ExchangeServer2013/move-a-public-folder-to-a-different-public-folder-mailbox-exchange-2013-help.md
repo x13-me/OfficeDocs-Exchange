@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Move a public folder to a different public folder mailbox: Exchange 2013 Help'
 TOCTitle: Move a public folder to a different public folder mailbox
 ms:assetid: b8744934-a3cb-443e-acce-a9a6ca5d88f6
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ906435(v=EXCHG.150)
 ms:contentKeyID: 50630968
 ms.date: 03/27/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

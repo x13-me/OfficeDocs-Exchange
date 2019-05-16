@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Understanding split permissions: Exchange 2013 Help'
 TOCTitle: Understanding split permissions
 ms:assetid: 2b709e15-63a2-4841-94bc-b289b71166d0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638106(v=EXCHG.150)
 ms:contentKeyID: 49289207
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -129,9 +133,9 @@ If your organization separates Exchange management and Active Directory manageme
 
 Exchange 2013 supports the two following types of split permissions:
 
-  - **RBAC split permissions**   Permissions to create security principals in the Active Directory domain partition are controlled by RBAC. Only Exchange servers, services, and those who are members of the appropriate role groups can create security principals.
+  - **RBAC split permissions**: Permissions to create security principals in the Active Directory domain partition are controlled by RBAC. Only Exchange servers, services, and those who are members of the appropriate role groups can create security principals.
 
-  - **Active Directory split permissions**   Permissions to create security principals in the Active Directory domain partition are completely removed from any Exchange user, service, or server. No option is provided in RBAC to create security principals. Creation of security principals in Active Directory must be performed using Active Directory management tools.
+  - **Active Directory split permissions**: Permissions to create security principals in the Active Directory domain partition are completely removed from any Exchange user, service, or server. No option is provided in RBAC to create security principals. Creation of security principals in Active Directory must be performed using Active Directory management tools.
     
 
     > [!IMPORTANT]

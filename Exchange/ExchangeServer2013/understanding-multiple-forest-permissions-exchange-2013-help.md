@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Understanding multiple-forest permissions: Exchange 2013 Help'
 TOCTitle: Understanding multiple-forest permissions
 ms:assetid: 8241033f-e201-4799-b17c-4f120c6e6445
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298099(v=EXCHG.150)
 ms:contentKeyID: 49289329
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -19,9 +23,9 @@ Many organizations deploy multiple forests to create security boundaries within 
 
 Microsoft Exchange Server 2013 supports two types of multiple forest topologies:
 
-  - **Cross-forest**   Cross-forest topologies can have multiple forests, each with their own installation of Exchange.
+  - **Cross-forest**: Cross-forest topologies can have multiple forests, each with their own installation of Exchange.
 
-  - **Resource forest**   Resource forest topologies have an Exchange forest and one or more accounts forests.
+  - **Resource forest**: Resource forest topologies have an Exchange forest and one or more accounts forests.
 
 For the purposes of this topic, the forest that contains the universal security groups (USGs) and users outside of the forest where Exchange 2013 is installed, whether it's an accounts forest or other resource forest, is called a foreign forest.
 

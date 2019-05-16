@@ -1,10 +1,14 @@
-﻿---
+---
 title: "Can't install Exchange 2007 roles after preparing Active Directory for Exchange 2010"
 TOCTitle: Cannot install Exchange 2007 roles after you prepare Active Directory for Exchange 2010_NoE12ServerWarning
 ms:assetid: 4e579f69-0de9-421c-ba31-4e63a25e6a45
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.noe12serverwarning(v=EXCHG.150)
 ms:contentKeyID: 46628900
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -36,9 +40,9 @@ When you run Microsoft Exchange Server 2010 **Setup /PrepareAD**, the Microsoft 
 
 Before deploying Exchange Server 2010, consider the following factors that may require you to deploy an Exchange 2007 server with all server roles installed prior to deploying Exchange 2007:
 
-  - **Third-party or in-house developed applications**   Applications developed for Exchange 2003 may not be compatible with Exchange 2010, and thus need to be upgraded or replaced. You can maintain these applications and the associated user population on Exchange 2003; move to Exchange 2007; or replace the software with a compatible version for Exchange 2010.
+  - **Third-party or in-house developed applications**: Applications developed for Exchange 2003 may not be compatible with Exchange 2010, and thus need to be upgraded or replaced. You can maintain these applications and the associated user population on Exchange 2003; move to Exchange 2007; or replace the software with a compatible version for Exchange 2010.
 
-  - **Coexistence or migration requirements**   If you plan on migrating mailboxes into your organization, you can either deploy Exchange 2007 and use the Microsoft Transporter Suite, or you can use a third-party coexistence or migration solution. To download the Microsoft Transporter Suite, go to [Microsoft Transporter Suite](http://go.microsoft.com/fwlink/?linkid=82688) at the Microsoft Download Center.
+  - **Coexistence or migration requirements**: If you plan on migrating mailboxes into your organization, you can either deploy Exchange 2007 and use the Microsoft Transporter Suite, or you can use a third-party coexistence or migration solution. To download the Microsoft Transporter Suite, go to [Microsoft Transporter Suite](http://go.microsoft.com/fwlink/?linkid=82688) at the Microsoft Download Center.
 
 In addition, when evaluating the options for your organization, make sure you have considered the following questions:
 

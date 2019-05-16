@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure message size limits for a mailbox: Exchange 2013 Help'
 TOCTitle: Configure message size limits for a mailbox
 ms:assetid: d1220685-14c0-4c4f-abb2-3920f3046212
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124708(v=EXCHG.150)
 ms:contentKeyID: 50383002
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -53,9 +57,9 @@ For additional management tasks related to user mailboxes, see [Manage user mail
 
 4.  Under **Message Size Restrictions**, click **View details** to view and change the following message size limits:
     
-      - **Sent messages**   To specify a maximum size for messages sent by this user, select the **Maximum message size (KB)** check box and type a value in the box. The message size must be between 0 and 2,097,151 KB. If the user sends a message larger than the specified size, the message will be returned to the user with a descriptive error message.
+      - **Sent messages**: To specify a maximum size for messages sent by this user, select the **Maximum message size (KB)** check box and type a value in the box. The message size must be between 0 and 2,097,151 KB. If the user sends a message larger than the specified size, the message will be returned to the user with a descriptive error message.
     
-      - **Received messages**   To specify a maximum size for messages received by this user, select the **Maximum message size (KB)** check box and type a value in the box. The message size must be between 0 and 2,097,151 KB. If the user receives a message larger than the specified size, the message will be returned to the sender with a descriptive error message.
+      - **Received messages**: To specify a maximum size for messages received by this user, select the **Maximum message size (KB)** check box and type a value in the box. The message size must be between 0 and 2,097,151 KB. If the user receives a message larger than the specified size, the message will be returned to the sender with a descriptive error message.
 
 5.  Click **OK**, and then click **Save** to save your changes.
 

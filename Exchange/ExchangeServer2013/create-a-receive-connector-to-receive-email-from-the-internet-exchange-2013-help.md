@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a Receive connector to receive email from the Internet'
 TOCTitle: Create a Receive connector to receive email from the Internet
 ms:assetid: 534bbd32-a0db-4d50-9579-4933b156d7b3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657447(v=EXCHG.150)
 ms:contentKeyID: 49289253
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

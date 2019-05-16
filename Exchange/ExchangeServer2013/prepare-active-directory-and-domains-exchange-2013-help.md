@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Prepare Active Directory and domains: Exchange 2013 Help'
 TOCTitle: Prepare Active Directory and domains
 ms:assetid: f895e1ce-d766-4352-ac46-ec959c9954a9
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb125224(v=EXCHG.150)
 ms:contentKeyID: 48385726
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -165,9 +169,9 @@ Before you prepare the domains in your Active Directory forest, keep the followi
 
   - The account you use needs permissions depending on when the domain was created.
     
-      - **Domain created before PrepareAD was run**   If the domain was created **before** you ran the *PrepareAD* command in step 2 above, then the account you use needs to be a member of the Domain Admins group in the domain you want to prepare.
+      - **Domain created before PrepareAD was run**: If the domain was created **before** you ran the *PrepareAD* command in step 2 above, then the account you use needs to be a member of the Domain Admins group in the domain you want to prepare.
     
-      - **Domain created after PrepareAD was run**   If the domain was created **after** you ran the *PrepareAD* command in step 2 above, then the account you use needs to 1) be a member of the Organization Management role group and 2) be a member of the Domain Admins group in the domain you want to prepare.
+      - **Domain created after PrepareAD was run**: If the domain was created **after** you ran the *PrepareAD* command in step 2 above, then the account you use needs to 1) be a member of the Organization Management role group and 2) be a member of the Domain Admins group in the domain you want to prepare.
 
   - Wait until Active Directory has replicated the changes made in step 2 to all of your domain controllers. If you don't, you might get an error when you try to prepare the domain.
 

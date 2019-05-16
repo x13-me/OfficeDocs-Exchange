@@ -2,17 +2,18 @@
 localization_priority: Normal
 description: After you create a Unified Messaging (UM) auto attendant, incoming calls to an external telephone number that a human operator would ordinarily answer are answered by the auto attendant. Unlike with other Unified Messaging components, such as UM dial plans and UM IP gateways, you aren't required to create UM auto attendants. However, auto attendants help internal and external callers locate users or departments that exist in an organization and transfer calls to them.
 ms.topic: article
-author: tonysmit
+author: chrisda
 f1_keywords:
 - Microsoft.Exchange.Management.SnapIn.Esm.OrganizationConfiguration.UnifiedMessaging.CreateAutoAttendantWizardForm.CreateAutoAttendantWizardPage
-ms.author: tonysmit
+ms.author: chrisda
 ms.assetid: 773f53fb-d80f-4a79-8bd3-bd753942489f
 ms.date: 11/17/2014
+ms.reviewer: 
 title: Create a UM auto attendant
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage safelist aggregation: Exchange 2013 Help'
 TOCTitle: Manage safelist aggregation
 ms:assetid: 5ac17168-f411-4cb7-ae98-ebefb865b210
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998280(v=EXCHG.150)
 ms:contentKeyID: 49248682
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -105,11 +109,11 @@ You can view the user objects in the Active Lightweight Directory Services (AD 
 
 There are three safelist collection attributes for each user object:
 
-  - **msExchSafeRecipientsHash**   This attribute stores the hash of the Safe Recipients List collection for the user.
+  - **msExchSafeRecipientsHash**: This attribute stores the hash of the Safe Recipients List collection for the user.
 
-  - **msExchSafeSendersHash**   This attribute stores the hash of the Safe Senders List collection for the user.
+  - **msExchSafeSendersHash**: This attribute stores the hash of the Safe Senders List collection for the user.
 
-  - **msExchBlockedSendersHash**   This attribute stores the hash of the Blocked Senders List collection for the user.
+  - **msExchBlockedSendersHash**: This attribute stores the hash of the Blocked Senders List collection for the user.
 
 If a hexadecimal string, such as `0xac 0xbd 0x03 0xca`, is present on the attribute, the user object was updated. If the attribute has a value of `<Not Set>`, the attribute wasn't updated.
 

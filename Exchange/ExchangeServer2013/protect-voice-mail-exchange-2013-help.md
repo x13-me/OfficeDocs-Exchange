@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Protect voice mail: Exchange 2013 Help'
 TOCTitle: Protect voice mail
 ms:assetid: a88d41d5-2e70-4193-bcd3-dec50dff412b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351041(v=EXCHG.150)
 ms:contentKeyID: 49315484
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -207,7 +211,7 @@ Return to top
 
 There are two situations in which protected voice messages can be created:
 
-  - **Call answering**   Call answering occurs when a caller calls a UM-enabled user, but the user isn't available to answer the call or forwards it directly to voice mail. In call-answering scenarios, the voice mail system will play a series of voice prompts after the caller records a voice message.
+  - **Call answering**: Call answering occurs when a caller calls a UM-enabled user, but the user isn't available to answer the call or forwards it directly to voice mail. In call-answering scenarios, the voice mail system will play a series of voice prompts after the caller records a voice message.
     
     The caller can then choose from additional message options, including the option to mark the voice message as private by pressing the pound (\#) key. If the caller presses the \# key, they can follow the instructions provided by UM to mark the message as private, remove the private marking from the private voice message, or mark the voice message with High importance. The following diagram shows the menu options that are available to callers when they leave a private voice message for a user.
     
@@ -220,7 +224,7 @@ There are two situations in which protected voice messages can be created:
     
     ![Create protected voice mail using call answering](images/Dd351041.4e9f50bf-5066-4d0a-b3eb-0515a2fc4560(EXCHG.150).jpg "Create protected voice mail using call answering")  
 
-  - **Outlook Voice Access**   Outlook Voice Access lets UM-enabled users access their mailbox using analog, digital, or cellular telephones by dialing their Outlook Voice Access number. There are two Unified Messaging user interfaces available to UM-enabled users: the telephone user interface (TUI) and the voice user interface (VUI).
+  - **Outlook Voice Access**: Outlook Voice Access lets UM-enabled users access their mailbox using analog, digital, or cellular telephones by dialing their Outlook Voice Access number. There are two Unified Messaging user interfaces available to UM-enabled users: the telephone user interface (TUI) and the voice user interface (VUI).
     
     Outlook Voice Access users can search for contacts in the directory and send them voice messages. If Protected Voice Mail has been enabled for the UM-enabled recipients, callers can mark the messages as private after they're recorded. Alternatively, administrators can configure a UM mailbox policy to ensure that all voice messages sent by authenticated users are protected by UM.
     

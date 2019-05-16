@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable or disable Information Rights Management on Client Access servers'
 TOCTitle: Enable or Disable Information Rights Management on Client Access Servers
 ms:assetid: c7ce069b-a572-4755-90a3-7105472e4c83
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd876938(v=EXCHG.150)
 ms:contentKeyID: 49319932
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -47,9 +51,9 @@ For additional management tasks related to IRM, see [Information Rights Manageme
     
     You can control IRM in Outlook Web App at the following levels:
     
-      - **Per-Outlook Web App virtual directory**   To enable or disable IRM in Outlook Web App for an Outlook Web App virtual directory, use the **Set-OWAVirtualDirectory** cmdlet and set the *IRMEnabled* parameter to `$false` or `$true` (default). This allows you to disable IRM in Outlook Web App for one virtual directory on an Exchange 2013 Client Access server, while keeping it enabled on another virtual directory on a different Client Access server.
+      - **Per-Outlook Web App virtual directory**: To enable or disable IRM in Outlook Web App for an Outlook Web App virtual directory, use the **Set-OWAVirtualDirectory** cmdlet and set the *IRMEnabled* parameter to `$false` or `$true` (default). This allows you to disable IRM in Outlook Web App for one virtual directory on an Exchange 2013 Client Access server, while keeping it enabled on another virtual directory on a different Client Access server.
     
-      - **Per-Outlook Web App mailbox policy**   To enable or disable IRM in Outlook Web App for an Outlook Web App mailbox policy, use the **Set-OWAMailboxPolicy** cmdlet and set the *IRMEnabled* parameter to `$false` or `$true` (default). This allows you to enable IRM in Outlook Web App for one set of users and disable it for another set of users by assigning them a different Outlook Web App mailbox policy.
+      - **Per-Outlook Web App mailbox policy**: To enable or disable IRM in Outlook Web App for an Outlook Web App mailbox policy, use the **Set-OWAMailboxPolicy** cmdlet and set the *IRMEnabled* parameter to `$false` or `$true` (default). This allows you to enable IRM in Outlook Web App for one set of users and disable it for another set of users by assigning them a different Outlook Web App mailbox policy.
     
     You can control IRM in Exchange ActiveSync per Exchange ActiveSync mailbox policy. To disable or enable IRM in Exchange ActiveSync for an Exchange ActiveSync mailbox policy, use the **Set-ActiveSyncMailboxPolicy** cmdlet and set the *IRMEnabled* parameter to `$false` or `$true` (default). This allows you to enable IRM in Exchange ActiveSync for one set of users and disable it for another set of users by assigning them a different Exchange ActiveSync mailbox policy.
 

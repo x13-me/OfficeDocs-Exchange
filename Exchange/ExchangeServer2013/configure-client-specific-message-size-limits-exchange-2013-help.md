@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure client-specific message size limits: Exchange 2013 Help'
 TOCTitle: Configure client-specific message size limits
 ms:assetid: fef9ca78-b68f-4342-ada0-881ab985ce3c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Hh529949(v=EXCHG.150)
 ms:contentKeyID: 50934227
 ms.date: 01/26/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

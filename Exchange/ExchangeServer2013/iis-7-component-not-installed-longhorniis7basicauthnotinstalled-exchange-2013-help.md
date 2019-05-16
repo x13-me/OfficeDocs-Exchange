@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'IIS 7 component not installed'
 TOCTitle: IIS 7 component not installed_LonghornIIS7BasicAuthNotInstalled
 ms:assetid: 2eb3290c-9ce2-4c01-ad47-a26ef60bddb5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.longhorniis7basicauthnotinstalled(v=EXCHG.150)
 ms:contentKeyID: 46628851
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Connectivity logging: Exchange 2013 Help'
 TOCTitle: Connectivity logging
 ms:assetid: c31fd710-4ae4-4d9a-8936-d056e7ca2748
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124500(v=EXCHG.150)
 ms:contentKeyID: 49287004
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -51,11 +55,11 @@ Information written to the connectivity log
 
 By default, the connectivity log files exist in the following locations:
 
-  - **Transport service**   %ExchangeInstallPath%TransportRoles\\Logs\\Hub\\Connectivity
+  - **Transport service**: %ExchangeInstallPath%TransportRoles\\Logs\\Hub\\Connectivity
 
-  - **Front End Transport service**   %ExchangeInstallPath%TransportRoles\\Logs\\FrontEnd\\Connectivity
+  - **Front End Transport service**: %ExchangeInstallPath%TransportRoles\\Logs\\FrontEnd\\Connectivity
 
-  - **Mailbox Transport service**   %ExchangeInstallPath%TransportRoles\\Logs\\Mailbox\\Connectivity
+  - **Mailbox Transport service**: %ExchangeInstallPath%TransportRoles\\Logs\\Mailbox\\Connectivity
 
 The naming convention for the connectivity log files is CONNECTLOG*yyymmdd-nnnn*.log. The placeholders represent the following information:
 
@@ -67,15 +71,15 @@ Information is written to the log file until the file size reaches its maximum s
 
 The connectivity log files are text files that contain data in the comma-separated value file (CSV) format. Each connectivity log file has a header that contains the following information:
 
-  - **\#Software**   Name of the software that created the connectivity log file. Typically, the value is Microsoft Exchange Server.
+  - **\#Software**: Name of the software that created the connectivity log file. Typically, the value is Microsoft Exchange Server.
 
-  - **\#Version**   Version number of the software that created the connectivity log file. Currently, the value is 15.0.0.0.
+  - **\#Version**: Version number of the software that created the connectivity log file. Currently, the value is 15.0.0.0.
 
-  - **\#Log-Type**   Log type value, which is Transport Connectivity Log.
+  - **\#Log-Type**: Log type value, which is Transport Connectivity Log.
 
-  - **\#Date**   UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
+  - **\#Date**: UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
 
-  - **\#Fields**   Comma delimited field names used in the connectivity log files.
+  - **\#Fields**: Comma delimited field names used in the connectivity log files.
 
 Return to top
 

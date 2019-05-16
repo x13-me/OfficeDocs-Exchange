@@ -1,11 +1,12 @@
 ---
 localization_priority: Normal
 ms.author: dmaguire
-manager: serdars
+manager: dansimp
 ms.topic: article
 author: msdmaguire
 ms.prod: exchange-server-it-pro
 ms.assetid: 1d800576-957d-4916-ae2a-55c08ca75be1
+ms.reviewer: 
 ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-server
@@ -344,17 +345,17 @@ The permission entries will be modified as follows:
 
 |**Before lock down**|**After lock down**|
 |:-----|:-----|
-|None  <br/> |None  <br/> |
-|AvailabilityOnly  <br/> |AvailabilityOnly  <br/> |
-|LimitedDetails  <br/> |LimitedDetails  <br/> |
-|Contributor  <br/> |FolderVisible  <br/> |
-|Reviewer  <br/> |ReadItems, FolderVisible  <br/> |
-|NonEditingAuthor  <br/> |ReadItems, FolderVisible  <br/> |
-|Aughor  <br/> |ReadItems, FolderVisible  <br/> |
-|Editor  <br/> |ReadItems, FolderVisible  <br/> |
-|PublishingAuthor  <br/> |ReadItems, CreateSubfolders, FolderVisible  <br/> |
-|PublishingEditor  <br/> |ReadItems, CreateSubfolders, FolderVisible  <br/> |
-|Owner  <br/> |ReadItems, CreateSubfolders, FolderContact, FolderVisible  <br/> |
+|None|None|
+|AvailabilityOnly|AvailabilityOnly|
+|LimitedDetails|LimitedDetails|
+|Contributor|FolderVisible|
+|Reviewer|ReadItems, FolderVisible|
+|NonEditingAuthor|ReadItems, FolderVisible|
+|Aughor|ReadItems, FolderVisible|
+|Editor|ReadItems, FolderVisible|
+|PublishingAuthor|ReadItems, CreateSubfolders, FolderVisible|
+|PublishingEditor|ReadItems, CreateSubfolders, FolderVisible|
+|Owner|ReadItems, CreateSubfolders, FolderContact, FolderVisible|
 
 - Access rights for users without read permissions will be left untouched, and they will continue to be blocked from read rights.
 

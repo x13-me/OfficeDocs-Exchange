@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Mailbox server: Exchange 2013 Help'
 TOCTitle: Mailbox server
 ms:assetid: 1aacc1c9-c81b-47d4-b222-ee73956cf968
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ150491(v=EXCHG.150)
 ms:contentKeyID: 47559954
 ms.date: 06/02/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

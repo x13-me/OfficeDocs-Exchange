@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Connect to a server in Queue Viewer: Exchange 2013 Help'
 TOCTitle: Connect to a server in Queue Viewer
 ms:assetid: 6c1ad574-9ab5-4dcc-9398-ec10eca4fd11
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa998669(v=EXCHG.150)
 ms:contentKeyID: 49286846
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -69,9 +73,9 @@ You can also specify the server that Remote PowerShell uses to perform the speci
 
 4.  In the **Queue Viewer - \<server name\> Properties** dialog box, select one of the following options:
     
-      - **Connect to the automatically selected server**   Select this option to automatically connect to the server where you're managing queues to run Remote PowerShell.
+      - **Connect to the automatically selected server**: Select this option to automatically connect to the server where you're managing queues to run Remote PowerShell.
     
-      - **Specify a server to connect to**   Select this option to specify a server to run Remote PowerShell. If you select this option, click **Browse** to open the **Select Exchange Server** dialog box. Select the server where you want to run Remote PowerShell, and then click **OK**.
+      - **Specify a server to connect to**: Select this option to specify a server to run Remote PowerShell. If you select this option, click **Browse** to open the **Select Exchange Server** dialog box. Select the server where you want to run Remote PowerShell, and then click **OK**.
 
 ## How do you know this worked?
 

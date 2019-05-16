@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Managing database availability groups: Exchange 2013 Help'
 TOCTitle: Managing database availability groups
 ms:assetid: 74be3f97-ec0f-4d2a-b5d8-7770cc489919
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd298065(v=EXCHG.150)
 ms:contentKeyID: 48385234
 ms.date: 10/04/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -295,9 +299,9 @@ Mailbox servers can be removed from a DAG by using the Manage Database Availabil
 
 There are scenarios in which you must remove a Mailbox server from a DAG before performing certain operations. These scenarios include:
 
-  - **Performing a server recovery operation**   If a Mailbox server that's a member of a DAG is lost, or otherwise fails and is unrecoverable and needs replacement, you can perform a server recovery operation using the **Setup /m:RecoverServer** switch. However, before you can perform the recovery operation, you must first remove the server from the DAG using the [Remove-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/en-us/library/dd297956\(v=exchg.150\)) cmdlet with the *ConfigurationOnly* parameter.
+  - **Performing a server recovery operation**: If a Mailbox server that's a member of a DAG is lost, or otherwise fails and is unrecoverable and needs replacement, you can perform a server recovery operation using the **Setup /m:RecoverServer** switch. However, before you can perform the recovery operation, you must first remove the server from the DAG using the [Remove-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/en-us/library/dd297956\(v=exchg.150\)) cmdlet with the *ConfigurationOnly* parameter.
 
-  - **Removing the database availability group**   There may be situations in which you need to remove a DAG (for example, when disabling third-party replication mode). If you need to remove a DAG, you must first remove all servers from the DAG. If you attempt to remove a DAG that contains any members, the task fails.
+  - **Removing the database availability group**: There may be situations in which you need to remove a DAG (for example, when disabling third-party replication mode). If you need to remove a DAG, you must first remove all servers from the DAG. If you attempt to remove a DAG that contains any members, the task fails.
 
 Return to top
 
@@ -307,11 +311,11 @@ After servers have been added to the DAG, you can use the EAC or the Shell to co
 
 Configurable properties include:
 
-  - **Witness server**   The name of the server that you want to host the file share for the file share witness. We recommend that you specify a Client Access server as the witness server. This enables the system to automatically configure, secure, and use the share, as needed, and enables the messaging administrator to be aware of the availability of the witness server.
+  - **Witness server**: The name of the server that you want to host the file share for the file share witness. We recommend that you specify a Client Access server as the witness server. This enables the system to automatically configure, secure, and use the share, as needed, and enables the messaging administrator to be aware of the availability of the witness server.
 
-  - **Witness directory**   The name of a directory that will be used to store file share witness data. This directory will automatically be created by the system on the specified witness server.
+  - **Witness directory**: The name of a directory that will be used to store file share witness data. This directory will automatically be created by the system on the specified witness server.
 
-  - **Database availability group IP addresses**   One or more IP addresses must be assigned to the DAG, unless the DAG members are running Windows Server 2012 R2 and you are creating a DAG without an IP address. Otherwise, the DAG's IP addresses can be configured using manually assigned static IP addresses, or they can be automatically assigned to the DAG using a DHCP server in your organization.
+  - **Database availability group IP addresses**: One or more IP addresses must be assigned to the DAG, unless the DAG members are running Windows Server 2012 R2 and you are creating a DAG without an IP address. Otherwise, the DAG's IP addresses can be configured using manually assigned static IP addresses, or they can be automatically assigned to the DAG using a DHCP server in your organization.
 
 The Shell enables you to configure DAG properties that aren't available in the EAC, such as DAG IP addresses, network encryption and compression settings, network discovery, the TCP port used for replication, and alternate witness server and witness directory settings, and to enable Datacenter Activation Coordination mode.
 
@@ -429,13 +433,13 @@ After you've enabled manual DAG network configuration, you can use the **New-Dat
 
 You can use the **Set-DatabaseAvailabilityGroupNetwork** cmdlet in the Shell to configure DAG network properties. For detailed steps about how to configure DAG network properties, see [Configure database availability group network properties](configure-database-availability-group-network-properties-exchange-2013-help.md). Each DAG network has required and optional parameters to configure:
 
-  - **Network name**   A unique name for the DAG network of up to 128 characters.
+  - **Network name**: A unique name for the DAG network of up to 128 characters.
 
-  - **Network description**   An optional description for the DAG network of up to 256 characters.
+  - **Network description**: An optional description for the DAG network of up to 256 characters.
 
-  - **Network subnets**   One or more subnets entered using a format of *IPAddress/Bitmask* (for example, 192.168.1.0/24 for Internet Protocol version 4 (IPv4) subnets; 2001:DB8:0:C000::/64 for Internet Protocol version 6 (IPv6) subnets).
+  - **Network subnets**: One or more subnets entered using a format of *IPAddress/Bitmask* (for example, 192.168.1.0/24 for Internet Protocol version 4 (IPv4) subnets; 2001:DB8:0:C000::/64 for Internet Protocol version 6 (IPv6) subnets).
 
-  - **Enable replication**   In the EAC, select the check box to dedicate the DAG network to replication traffic and block MAPI traffic. Clear the check box to prevent replication from using the DAG network and to enable MAPI traffic. In the Shell, use the *ReplicationEnabled* parameter in the [Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/en-us/library/dd298008\(v=exchg.150\)) cmdlet to enable and disable replication.
+  - **Enable replication**: In the EAC, select the check box to dedicate the DAG network to replication traffic and block MAPI traffic. Clear the check box to prevent replication from using the DAG network and to enable MAPI traffic. In the Shell, use the *ReplicationEnabled* parameter in the [Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/en-us/library/dd298008\(v=exchg.150\)) cmdlet to enable and disable replication.
 
 
 > [!NOTE]

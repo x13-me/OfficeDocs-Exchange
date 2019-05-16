@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Modify AD LDS configuration: Exchange 2013 Help'
 TOCTitle: Modify AD LDS configuration
 ms:assetid: 381f582c-15ec-43bc-b674-5399fad72c97
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997269(v=EXCHG.150)
 ms:contentKeyID: 61200283
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

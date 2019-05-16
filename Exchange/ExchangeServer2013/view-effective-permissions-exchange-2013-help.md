@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'View effective permissions: Exchange 2013 Help'
 TOCTitle: View effective permissions
 ms:assetid: ae6cb7cf-f998-44a6-a69a-02ad736c8260
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638167(v=EXCHG.150)
 ms:contentKeyID: 49289376
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -105,27 +109,27 @@ For detailed syntax and parameter information, see [Get-ManagementRoleAssignment
 
 The default output of the **Get-ManagementRoleAssignment** cmdlet might not have the information you want. The output of the cmdlet contains many more properties that you can access. The following are some of the properties that could be useful:
 
-  - **EffectiveUserName**   Name of the user.
+  - **EffectiveUserName**: Name of the user.
 
-  - **Role**   Role that's granting the permissions.
+  - **Role**: Role that's granting the permissions.
 
-  - **RoleAssigneeName**   Role group, assignment policy, or USG that's assigned to the role and contains the user in the `EffectiveUserName` property.
+  - **RoleAssigneeName**: Role group, assignment policy, or USG that's assigned to the role and contains the user in the `EffectiveUserName` property.
 
-  - **RoleAssigneeType**   Indicates whether the role assignment is to a role group, assignment policy, USG, or user.
+  - **RoleAssigneeType**: Indicates whether the role assignment is to a role group, assignment policy, USG, or user.
 
-  - **AssignmentMethod**   Indicates whether the assignment between the role and the role assignee is direct or indirect.
+  - **AssignmentMethod**: Indicates whether the assignment between the role and the role assignee is direct or indirect.
 
-  - **CustomRecipientWriteScope**   Indicates the custom recipient write scope, if any, that was applied to the role assignment when it was created. The scope specified in this property overrides the implicit recipient write scope specified in the `RecipientWriteScope` property.
+  - **CustomRecipientWriteScope**: Indicates the custom recipient write scope, if any, that was applied to the role assignment when it was created. The scope specified in this property overrides the implicit recipient write scope specified in the `RecipientWriteScope` property.
 
-  - **CustomConfigWriteScope**   Indicates the custom configuration write scope, if any, that was applied to the role assignment when it was created. The scope specified in this property overrides the implicit configuration write scope specified in the `ConfigWriteScope` property.
+  - **CustomConfigWriteScope**: Indicates the custom configuration write scope, if any, that was applied to the role assignment when it was created. The scope specified in this property overrides the implicit configuration write scope specified in the `ConfigWriteScope` property.
 
-  - **RecipientReadScope**   Indicates the implicit recipient read scope that's applied to the role.
+  - **RecipientReadScope**: Indicates the implicit recipient read scope that's applied to the role.
 
-  - **RecipientWriteScope**   Indicates the implicit recipient write scope that's applied to the role.
+  - **RecipientWriteScope**: Indicates the implicit recipient write scope that's applied to the role.
 
-  - **ConfigReadScope**   Indicates the implicit configuration read scope that's applied to the role.
+  - **ConfigReadScope**: Indicates the implicit configuration read scope that's applied to the role.
 
-  - **ConfigWriteScope**   Indicates the implicit configuration write scope that's applied to the role.
+  - **ConfigWriteScope**: Indicates the implicit configuration write scope that's applied to the role.
 
 To select the properties you want to display in your list, you use commands similar to those used in the Use the Shell to list all effective users, Use the Shell to find a specific user on a role, and Use the Shell to find a specific user on all roles sections. The difference is that you pipe the results of those commands to the **Format-Table** or **Select-Object** cmdlets. The **Format-Table** cmdlet is useful to output the list of results to your screen. The **Select-Object** cmdlet is useful to output the list of your results to a .csv file.
 

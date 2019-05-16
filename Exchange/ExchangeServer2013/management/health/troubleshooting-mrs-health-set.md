@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting MRS Health Set
 TOCTitle: Troubleshooting MRS Health Set
 ms:assetid: 21947ed6-1584-4db9-9cd6-f6c1de22e352
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.mrs(v=EXCHG.150)
 ms:contentKeyID: 49720741
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -135,7 +139,7 @@ This indicates that a mailbox is locked. To unlock the mailbox, run the followin
 
     New-MailboxRepairRequest -CorruptionType LockedMoveTarget -Identity <mailboxIdentity> [-Archive]
 
-**Note**   In this command, replace \<*mailboxIdentity*\> with the name of the mailbox that's provided in the email message as **MailboxIdentity**. If the mailbox is an archive mailbox, you must include the **-Archive** flag. You can determine whether a mailbox is a primary or archive mailbox by viewing the **MailboxGuid** field in the alert.
+**Note**: In this command, replace \<*mailboxIdentity*\> with the name of the mailbox that's provided in the email message as **MailboxIdentity**. If the mailbox is an archive mailbox, you must include the **-Archive** flag. You can determine whether a mailbox is a primary or archive mailbox by viewing the **MailboxGuid** field in the alert.
 
 **Corrupt Migration Job**
 

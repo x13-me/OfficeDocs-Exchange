@@ -6,11 +6,12 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 1aacc1c9-c81b-47d4-b222-ee73956cf968
 ms.date: 7/3/2018
+ms.reviewer: 
 title: Exchange Server architecture
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

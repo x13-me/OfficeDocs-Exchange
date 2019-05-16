@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting DataProtection Health Set
 TOCTitle: Troubleshooting DataProtection Health Set
 ms:assetid: cde3cc34-2076-4e30-8d3c-265b66d00ae8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.dataprotection(v=EXCHG.150)
 ms:contentKeyID: 49720873
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 

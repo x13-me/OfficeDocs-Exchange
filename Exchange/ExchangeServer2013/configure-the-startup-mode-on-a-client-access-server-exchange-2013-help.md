@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure the startup mode on a Client Access server: Exchange 2013 Help'
 TOCTitle: Configure the startup mode on a Client Access server
 ms:assetid: 71cc9061-9e3c-4b4a-8dbe-f590ca5bcee8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673533(v=EXCHG.150)
 ms:contentKeyID: 49315443
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -53,11 +57,11 @@ For additional management tasks related to Unified Messaging and Client Access s
 
 4.  Under **UM Call Router settings** \> **UM startup mode**, select one of the following from the drop-down list:
     
-      - **TCP**   Use this option if you aren't using mTLS and are using only Unsecured dial plans.
+      - **TCP**: Use this option if you aren't using mTLS and are using only Unsecured dial plans.
     
-      - **TLS**   Use this option if you are using mTLS and using only SIP Secured or Secured dial plans.
+      - **TLS**: Use this option if you are using mTLS and using only SIP Secured or Secured dial plans.
     
-      - **DUAL**   Use this option if you are using mTLS and using Unsecured, SIP Secured, and Secured dial plans.
+      - **DUAL**: Use this option if you are using mTLS and using Unsecured, SIP Secured, and Secured dial plans.
 
 5.  After you select the UM startup mode, click **Save**.
 

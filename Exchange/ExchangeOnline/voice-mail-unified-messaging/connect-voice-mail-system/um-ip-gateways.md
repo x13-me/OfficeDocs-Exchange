@@ -2,15 +2,16 @@
 localization_priority: Normal
 description: A Unified Messaging (UM) IP gateway represents a physical Voice over IP (VoIP) gateway, IP Private Branch eXchange (PBX), or session border controller (SBC) hardware device. Before a VoIP gateway, IP PBX, or SBC can be used to answer incoming calls and send outgoing calls for voice mail users, a UM IP gateway must be created in the directory service.
 ms.topic: article
-author: tonysmit
-ms.author: tonysmit
+author: chrisda
+ms.author: chrisda
 ms.assetid: 991d77e0-3995-44ab-bedf-52ff7a0301ab
 ms.date: 7/12/2018
+ms.reviewer: 
 title: UM IP gateways
 ms.collection: exchange-online
 ms.audience: ITPro
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure Kerberos authentication for load-balanced Client Access servers'
 TOCTitle: Configuring Kerberos authentication for load-balanced Client Access servers
 ms:assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff808312(v=EXCHG.150)
 ms:contentKeyID: 62853455
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -93,7 +97,7 @@ If you have a cross-forest or resource-forest deployment, and you have users tha
 
 After you create the ASA credential, you need to associate Exchange Service Principal Names (SPNs) with the ASA credential. The list of Exchange SPNs may vary with your configuration, but should include at least the following:
 
-  - **http/**   Use this SPN for Outlook Anywhere, MAPI over HTTP, Exchange Web Services, Autodiscover, and Offline Address Book.
+  - **http/**: Use this SPN for Outlook Anywhere, MAPI over HTTP, Exchange Web Services, Autodiscover, and Offline Address Book.
 
 The SPN values need to match the service name on the network load balancer instead of on individual servers. To help plan which SPN values you should use, consider the following scenarios:
 

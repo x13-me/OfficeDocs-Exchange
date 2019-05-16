@@ -6,13 +6,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: 43a89f71-8002-4cb0-b3c8-1c2b2597f227
 ms.date: 
+ms.reviewer: 
 title: Manage message approval in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: ITPro
 ms.service: exchange-online
-manager: serdars
+manager: dansimp
 
 ---
 

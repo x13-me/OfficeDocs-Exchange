@@ -6,11 +6,12 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 5b690bcb-c6df-4511-90e1-08ca91f43b37
 ms.date: 7/5/2018
+ms.reviewer: 
 title: Recipients Permissions
 ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

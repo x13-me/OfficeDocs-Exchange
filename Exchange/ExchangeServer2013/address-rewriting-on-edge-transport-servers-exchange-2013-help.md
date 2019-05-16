@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Address rewriting on Edge Transport servers: Exchange 2013 Help'
 TOCTitle: Address rewriting on Edge Transport servers
 ms:assetid: 23f1eaf6-247a-4671-ad72-aae19d9b511d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa996806(v=EXCHG.150)
 ms:contentKeyID: 61200279
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -47,7 +51,7 @@ Digitally signed, encrypted, and rights-protected messages
 
 The following scenarios are examples of how you can use address rewriting:
 
-  - **Group consolidation**   Some organizations segment their internal businesses into separate domains that are based on business or technical requirements. This configuration can cause email messages to appear as if they come from separate groups or even separate organizations.
+  - **Group consolidation**: Some organizations segment their internal businesses into separate domains that are based on business or technical requirements. This configuration can cause email messages to appear as if they come from separate groups or even separate organizations.
     
     The following example shows how an organization, Contoso, Ltd., can hide its internal subdomains from external recipients:
     
@@ -55,7 +59,7 @@ The following scenarios are examples of how you can use address rewriting:
     
       - Inbound messages to contoso.com recipients are relayed by the Edge Transport server to a Mailbox server. The message is delivered to the correct recipient based on the proxy address that's configured on the recipient's mailbox.
 
-  - **Mergers and acquisitions**   An acquired company might continue to run as a separate business, but you can use address rewriting to make the two organizations appear as if they're one integrated organization.
+  - **Mergers and acquisitions**: An acquired company might continue to run as a separate business, but you can use address rewriting to make the two organizations appear as if they're one integrated organization.
     
     The following example shows how Contoso, Ltd. can hide the email domain of the newly acquired company, Fourth Coffee:
     
@@ -63,7 +67,7 @@ The following scenarios are examples of how you can use address rewriting:
     
       - Inbound messages to *user*@contoso.com are rewritten and routed to *user*@fourthcoffee.com mailboxes. Inbound messages that are sent to *user*@fourthcoffee.com are routed directly to Fourth Coffee's email servers.
 
-  - **Partners**   Many organizations use external partners to provide services for their customers, other organizations, or their own organization. To avoid confusion, the organization might replace the email domain of the partner organization with its own email domain.
+  - **Partners**: Many organizations use external partners to provide services for their customers, other organizations, or their own organization. To avoid confusion, the organization might replace the email domain of the partner organization with its own email domain.
     
     The following example shows how Contoso, Ltd. can hide a partner's email domain:
     
@@ -215,11 +219,11 @@ Return to top
 
 When you flatten multiple internal domains or subdomains into a single external domain, you need to consider the following factors:
 
-  - **Verify unique aliases**   All email aliases (the part to the left of the @ sign) must be unique across all subdomains. For example, if there is a joe@sales.contoso.com, there can't be a joe@marketing.contoso.com because the rewritten email address for both users would be joe@contoso.com.
+  - **Verify unique aliases**: All email aliases (the part to the left of the @ sign) must be unique across all subdomains. For example, if there is a joe@sales.contoso.com, there can't be a joe@marketing.contoso.com because the rewritten email address for both users would be joe@contoso.com.
 
-  - **Add proxy addresses**   The rewritten email address must be configured as a proxy address for all affected senders in the affected domains. For example, if joe@sales.contoso.com is rewritten to joe@contoso.com, you need to add the proxy address joe@contoso.com to Joe's mailbox. This allows replies and inbound messages to be delivered correctly.
+  - **Add proxy addresses**: The rewritten email address must be configured as a proxy address for all affected senders in the affected domains. For example, if joe@sales.contoso.com is rewritten to joe@contoso.com, you need to add the proxy address joe@contoso.com to Joe's mailbox. This allows replies and inbound messages to be delivered correctly.
 
-  - **Mail contacts for non-Exchange organizations**   If you're rewriting email addresses from a non-Exchange email system, you need to create email contacts in Exchange to represent the users in the non-Exchange email system. These email contacts must contain the original email addresses and the rewritten email addresses. For example, if joe@unix.contoso.com is rewritten to joe@contoso.com, you need to create a mail contact with joe@unix.contoso.com as the external email address and joe@contoso.com as a proxy address.
+  - **Mail contacts for non-Exchange organizations**: If you're rewriting email addresses from a non-Exchange email system, you need to create email contacts in Exchange to represent the users in the non-Exchange email system. These email contacts must contain the original email addresses and the rewritten email addresses. For example, if joe@unix.contoso.com is rewritten to joe@contoso.com, you need to create a mail contact with joe@unix.contoso.com as the external email address and joe@contoso.com as a proxy address.
 
 ## Verify unique aliases
 
@@ -249,11 +253,11 @@ Return to top
 
 If a user's email address matches multiple address rewrite entries, the email address is only rewritten once based on the closest match. The following list describes the order of precedence of address rewrite entries from highest priority to lowest priority:
 
-1.  **Individual email addresses**   An address rewrite entry is configured to rewrite the email address of john@contoso.com to support@contoso.com.
+1.  **Individual email addresses**: An address rewrite entry is configured to rewrite the email address of john@contoso.com to support@contoso.com.
 
-2.  **Domain or subdomain mapping**   An address rewrite entry is configured to rewrite all contoso.com email addresses to northwindtraders.com or all sales.contoso.com email addresses to contoso.com.
+2.  **Domain or subdomain mapping**: An address rewrite entry is configured to rewrite all contoso.com email addresses to northwindtraders.com or all sales.contoso.com email addresses to contoso.com.
 
-3.  **Domain flattening**   An address rewrite entry is configured to rewrite \*.contoso.com email addresses to contoso.com.
+3.  **Domain flattening**: An address rewrite entry is configured to rewrite \*.contoso.com email addresses to contoso.com.
 
 For example, consider an Edge Transport server where the following outbound address rewrite entries are configured:
 

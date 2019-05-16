@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'This server is the source for a send connector'
 TOCTitle: This Server is the Source for a Send Connector_ServerIsSourceForSendConnector
 ms:assetid: 151c0014-c90c-4c52-8e74-4b3f1bc7aaf1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.setupreadiness.serverissourceforsendconnector(v=EXCHG.150)
 ms:contentKeyID: 46628815
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

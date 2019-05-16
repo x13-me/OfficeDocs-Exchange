@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Active Manager: Exchange 2013 Help'
 TOCTitle: Active Manager
 ms:assetid: f4be27b7-1d7c-47b4-87ac-bfdfcc046f00
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd776123(v=EXCHG.150)
 ms:contentKeyID: 48385718
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -61,13 +65,13 @@ In Exchange 2010, the BCS process evaluated several aspects of each database cop
 
 In Exchange 2013, Active Manager runs through all of the same BCS checks and phases, but it now also includes the use of a constraint of the decreasing order of health states. Specifically, BCSS includes several new health checks that are part of the built in managed availability monitoring components in Exchange 2013. There are four new additional checks performed by Active Manager (listed in the order in which they are performed):
 
-1.  **All Healthy**   Checks for a server hosting a copy of the affected database that has all monitoring components in a healthy state.
+1.  **All Healthy**: Checks for a server hosting a copy of the affected database that has all monitoring components in a healthy state.
 
-2.  **Up to Normal Healthy**   Checks for a server hosting a copy of the affected database that has all monitoring components with Normal priority in a healthy state.
+2.  **Up to Normal Healthy**: Checks for a server hosting a copy of the affected database that has all monitoring components with Normal priority in a healthy state.
 
-3.  **All Better than Source**   Checks for a server hosting a copy of the affected database that has monitoring components in a state that's better than the current server hosting the affected copy.
+3.  **All Better than Source**: Checks for a server hosting a copy of the affected database that has monitoring components in a state that's better than the current server hosting the affected copy.
 
-4.  **Same as Source**   Checks for a server hosting a copy of the affected database that has monitoring components in a state that's the same as the current server hosting the affected copy.
+4.  **Same as Source**: Checks for a server hosting a copy of the affected database that has monitoring components in a state that's the same as the current server hosting the affected copy.
 
 If BCSS is invoked as a result of a failover that's triggered by a monitoring component (for example, via a Failover responder), an additional mandatory constraint is enforced where the target server's component health must be better than the server on which the failover occurred. For example, if a failure of Microsoft Office Outlook Web App triggers a failover via a Failover responder, BCSS must select a server hosting a copy of the affected database on which Outlook Web App is healthy.
 

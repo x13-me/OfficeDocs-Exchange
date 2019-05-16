@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Mobile phone and tablet features: Exchange 2013 Help'
 TOCTitle: Mobile phone and tablet features
 ms:assetid: ad54d9e6-7a1c-4fb0-b5a9-0b042b98ada3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb232162(v=EXCHG.150)
 ms:contentKeyID: 50396326
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -29,11 +33,11 @@ Users can take advantage of the rich features of Exchange ActiveSync by selectin
 
 Mobile phones that are compatible with Microsoft Exchange include the following:
 
-  - **Apple**   The Apple iPhone, iPod Touch, and iPad all support Exchange ActiveSync.
+  - **Apple**: The Apple iPhone, iPod Touch, and iPad all support Exchange ActiveSync.
 
-  - **Windows Phone**   Windows Phone 8, Windows Phone 7, and previous versions all support Exchange ActiveSync.
+  - **Windows Phone**: Windows Phone 8, Windows Phone 7, and previous versions all support Exchange ActiveSync.
 
-  - **Android**   Many mobile phones and tablets with the Android operating system support Exchange ActiveSync. However, these mobile devices may not support all available mobile device mailbox policies. For more information, see [Mobile device mailbox policies](mobile-device-mailbox-policies-exchange-2013-help.md).
+  - **Android**: Many mobile phones and tablets with the Android operating system support Exchange ActiveSync. However, these mobile devices may not support all available mobile device mailbox policies. For more information, see [Mobile device mailbox policies](mobile-device-mailbox-policies-exchange-2013-help.md).
 
 ## Windows Phone software features
 

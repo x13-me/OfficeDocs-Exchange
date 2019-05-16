@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Message tracking: Exchange 2013 Help'
 TOCTitle: Message tracking
 ms:assetid: bada2ea7-6d7c-4630-b7f1-67f56818f0ff
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124375(v=EXCHG.150)
 ms:contentKeyID: 50646522
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -59,11 +63,11 @@ Security concerns for the message tracking log
 
 Message tracking logs contain vast amounts of data as messages move through an Exchange 2013 Mailbox server. When it comes to searching the message tracking logs, you have different options.
 
-  - **Get-MessageTrackingLog**   Administrators can use this cmdlet to search the message tracking log for information about messages using a wide range of filter criteria. For more information, see [Search message tracking logs](search-message-tracking-logs-exchange-2013-help.md).
+  - **Get-MessageTrackingLog**: Administrators can use this cmdlet to search the message tracking log for information about messages using a wide range of filter criteria. For more information, see [Search message tracking logs](search-message-tracking-logs-exchange-2013-help.md).
 
-  - **Delivery reports for administrators**   Administrators can use the **Delivery reports** tab in the Exchange admin center (EAC) or the underlying **Search-MessageTrackingReport** and **Get-MesageTrackingReport** cmdlets to search the message tracking logs for information about messages sent by or received by a specific mailbox in the organization. For more information see [Delivery reports for administrators](delivery-reports-for-administrators-exchange-2013-help.md).
+  - **Delivery reports for administrators**: Administrators can use the **Delivery reports** tab in the Exchange admin center (EAC) or the underlying **Search-MessageTrackingReport** and **Get-MesageTrackingReport** cmdlets to search the message tracking logs for information about messages sent by or received by a specific mailbox in the organization. For more information see [Delivery reports for administrators](delivery-reports-for-administrators-exchange-2013-help.md).
 
-  - **Delivery reports for users**   Users can use the **Delivery reports** tab in Outlook Web App to search the message tracking logs for information about messages sent to or sent by their own mailbox. For more information, see [Delivery Reports for Users](https://go.microsoft.com/fwlink/?linkid=279920).
+  - **Delivery reports for users**: Users can use the **Delivery reports** tab in Outlook Web App to search the message tracking logs for information about messages sent to or sent by their own mailbox. For more information, see [Delivery Reports for Users](https://go.microsoft.com/fwlink/?linkid=279920).
 
 Return to top
 
@@ -73,13 +77,13 @@ By default, the message tracking log files exist in %ExchangeInstallPath%Transpo
 
 The naming convention for log files in the message tracking log directory is `MSGTRK`*yyyymmdd-nnnn*`.log`, `MSGTRKMA`*yyyymmdd-nnnn*`.log`, `MSGTRKMD`*yyyymmdd-nnnn*`.log`, and `MSGTRKMS`*yyyymmdd-nnnn*`.log` . The different logs are used by the following services:
 
-  - **MSGTRK**   These logs are associated with the Transport service.
+  - **MSGTRK**: These logs are associated with the Transport service.
 
-  - **MSGTRKMA**   These logs are associated with the approvals and rejections used by moderated transport. For more information, see [Manage message approval](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-message-approval).
+  - **MSGTRKMA**: These logs are associated with the approvals and rejections used by moderated transport. For more information, see [Manage message approval](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-message-approval).
 
-  - **MSGTRKMD**   These logs are associated with messages delivered to mailboxes by the Mailbox Transport Delivery service.
+  - **MSGTRKMD**: These logs are associated with messages delivered to mailboxes by the Mailbox Transport Delivery service.
 
-  - **MSGTRKMS**   These logs are associated with messages sent from mailboxes by the Mailbox Transport Submission service.
+  - **MSGTRKMS**: These logs are associated with messages sent from mailboxes by the Mailbox Transport Submission service.
 
 The placeholders in the log file names represent the following information:
 
@@ -101,15 +105,15 @@ Information is written to each log file until the file size reaches its maximum 
 
 The message tracking log files are text files that contain data in the comma-separated value (CSV) format. Each message tracking log file has a header that contains the following information:
 
-  - **\#Software:**   Name of the software that created the message tracking log file. Typically, the value is Microsoft Exchange Server.
+  - **\#Software:**: Name of the software that created the message tracking log file. Typically, the value is Microsoft Exchange Server.
 
-  - **\#Version:**   Version number of the software that created the message tracking log file. Currently, the value is 15.0.0.0.
+  - **\#Version:**: Version number of the software that created the message tracking log file. Currently, the value is 15.0.0.0.
 
-  - **\#Log-Type:**   Log type value, which is Message Tracking Log.
+  - **\#Log-Type:**: Log type value, which is Message Tracking Log.
 
-  - **\#Date:**   The UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
+  - **\#Date:**: The UTC date-time when the log file was created. The UTC date-time is represented in the ISO 8601 date-time format: *yyyy-mm-dd*T*hh:mm:ss.fff*Z, where *yyyy* = year, *mm* = month, *dd* = day, T indicates the beginning of the time component, *hh* = hour, *mm* = minute, *ss* = second, *fff* = fractions of a second, and Z signifies Zulu, which is another way to denote UTC.
 
-  - **\#Fields:**   Comma-delimited field names used in the message tracking log files.
+  - **\#Fields:**: Comma-delimited field names used in the message tracking log files.
 
 Return to top
 

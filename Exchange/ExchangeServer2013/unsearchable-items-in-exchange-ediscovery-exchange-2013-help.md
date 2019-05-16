@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Unsearchable items in Exchange eDiscovery: Exchange 2013 Help'
 TOCTitle: Unsearchable items in Exchange eDiscovery
 ms:assetid: 32550081-9af9-474b-ae7b-28f1e68cad41
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn602498(v=EXCHG.150)
 ms:contentKeyID: 61071880
 ms.date: 12/10/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

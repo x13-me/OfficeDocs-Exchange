@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Checklist: Deploy Exchange 2013 UM: Exchange 2013 Help'
 TOCTitle: 'Checklist: Deploy Exchange 2013 UM'
 ms:assetid: 41b666a2-0d0d-471f-90a3-07c3c562af85
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673520(v=EXCHG.150)
 ms:contentKeyID: 49315398
 ms.date: 05/13/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

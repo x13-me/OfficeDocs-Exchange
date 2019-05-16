@@ -6,13 +6,14 @@ author: markjjo
 ms.author: markjjo
 ms.assetid: 402b74e4-8853-4c51-9737-1a9c19f8e3dd
 ms.date: 7/11/2018
+ms.reviewer: 
 title: Message properties and search operators for In-Place eDiscovery
 ms.collection: 
 - exchange-online
 - M365-email-calendar
 ms.audience: Admin
 ms.service: exchange-online
-manager: scotv
+manager: dansimp
 
 ---
 
@@ -56,7 +57,7 @@ Boolean search operators, such as **AND**, **OR**, help you define more-precise 
 |**Operator**|**Usage**|**Description**|
 |:-----|:-----|:-----|
 |AND|keyword1 AND keyword2|Returns messages that include all of the specified keywords or `property:value` expressions.|
-|+|keyword1 +keyword2 +keyword3|Returns items that contain *either* `keyword2` or `keyword3` *and*  that also contain `keyword1`. Therefore, this example is equivalent to the query `(keyword2 OR keyword3) AND keyword1`. <br/> Note that the query `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the **AND** operator. This query would be equivalent to `"keyword1 + keyword2"` and return items with the exact phase `"keyword1 + keyword2"`.|
+|+|keyword1 +keyword2 +keyword3|Returns items that contain *either* `keyword2` or `keyword3` *and* that also contain `keyword1`. Therefore, this example is equivalent to the query `(keyword2 OR keyword3) AND keyword1`. <br/> Note that the query `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the **AND** operator. This query would be equivalent to `"keyword1 + keyword2"` and return items with the exact phase `"keyword1 + keyword2"`.|
 |OR|keyword1 OR keyword2|Returns messages that include one or more of the specified keywords or `property:value` expressions.|
 |NOT|keyword1 NOT keyword2 <br/><br/> NOT from:"Ann Beebe"|Excludes messages specified by a keyword or a `property:value` expression. For example, `NOT from:"Ann Beebe"` excludes messages sent by Ann Beebe.|
 |-|keyword1 -keyword2|The same as the **NOT** operator. This query returns items that contain `keyword1` and excludes items that contain `keyword2`.|

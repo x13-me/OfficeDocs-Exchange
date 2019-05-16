@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable or Disable Transport Decryption: Exchange 2013 Help'
 TOCTitle: Enable or Disable Transport Decryption
 ms:assetid: 4663f54e-dd0a-4a42-983e-8765e2adc412
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638126(v=EXCHG.150)
 ms:contentKeyID: 49319910
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -25,9 +29,9 @@ Enabling transport decryption allows the Transport Rules agent on Microsoft Exch
 
 When enabling transport decryption, you can specify the following settings:
 
-  - **Mandatory**   Rejects messages that can't be decrypted and returns a non-delivery report (NDR) to the sender.
+  - **Mandatory**: Rejects messages that can't be decrypted and returns a non-delivery report (NDR) to the sender.
 
-  - **Optional**   Uses a best-effort approach to decryption. If possible, messages are decrypted, but they're delivered even if decryption fails. This is the default setting.
+  - **Optional**: Uses a best-effort approach to decryption. If possible, messages are decrypted, but they're delivered even if decryption fails. This is the default setting.
 
 To learn more about transport decryption, see [Transport decryption](transport-decryption-exchange-2013-help.md).
 

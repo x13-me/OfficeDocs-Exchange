@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable or Disable Information Rights Management Logging: Exchange 2013 Help'
 TOCTitle: Enable or Disable Information Rights Management Logging
 ms:assetid: 6933bc65-4d98-4878-9167-0e9eaac68b6b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff686962(v=EXCHG.150)
 ms:contentKeyID: 49319919
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -19,15 +23,15 @@ In Exchange Server 2013, you can use Information Rights Management (IRM) logs to
 
 IRM logs use the following common set of parameters:
 
-  - *IrmLogEnabled*   Enables or disables IRM logging. Default: `$true`.
+  - *IrmLogEnabled*: Enables or disables IRM logging. Default: `$true`.
 
-  - *IrmLogMaxAge*   Specifies the maximum age of IRM log files. Files older than the specified age are deleted. Default: 30 days.
+  - *IrmLogMaxAge*: Specifies the maximum age of IRM log files. Files older than the specified age are deleted. Default: 30 days.
 
-  - *IrmLogMaxDirectorySize*   Specifies the maximum size of the directory that contains IRM logs. When a directory reaches its maximum file size, the server deletes the oldest log files first. Default: 250 MB.
+  - *IrmLogMaxDirectorySize*: Specifies the maximum size of the directory that contains IRM logs. When a directory reaches its maximum file size, the server deletes the oldest log files first. Default: 250 MB.
 
-  - *IrmLogMaxFileSize*   Specifies the maximum size of each IRM log file. When a log file reaches the specified size, a new log file is created. Default: 10 MB.
+  - *IrmLogMaxFileSize*: Specifies the maximum size of each IRM log file. When a log file reaches the specified size, a new log file is created. Default: 10 MB.
 
-  - *IrmLogPath*   Specifies the location of the IRM log directory. Default: `%ExchangeInstallPath%Logging\IRMLogs`.
+  - *IrmLogPath*: Specifies the location of the IRM log directory. Default: `%ExchangeInstallPath%Logging\IRMLogs`.
 
 For additional management tasks related to IRM, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
 

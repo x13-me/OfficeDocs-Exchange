@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Create a Transport Protection Rule: Exchange 2013 Help'
 TOCTitle: Create a Transport Protection Rule
 ms:assetid: 3a857185-ee16-4ee7-9e57-8be95f7e753a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd302432(v=EXCHG.150)
 ms:contentKeyID: 49319907
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -55,18 +59,18 @@ For additional management tasks related to Information Rights Management (IRM), 
 
 3.  In **New Rule**, first click **More options**, and then complete the following fields:
     
-      - **Name**   Type a name for the transport rule.
+      - **Name**: Type a name for the transport rule.
     
-      - **Apply this rule if**   Select a condition and enter any required values for the condition. To add more conditions, click **Add condition**.
+      - **Apply this rule if**: Select a condition and enter any required values for the condition. To add more conditions, click **Add condition**.
         
 
         > [!IMPORTANT]
         > If you don't select any conditions when creating a transport protection rule, all messages handled by Exchange 2013 servers with the Transport service in your organization are IRM-protected. IRM-protecting all messages requires more resources. Therefore, we recommend that you plan your Mailbox server and AD&nbsp;RMS deployment accordingly.
 
     
-      - **Do the following**   Select **Apply rights protection to the message with** and then use the **Select RMS template** dialog box to select a template.
+      - **Do the following**: Select **Apply rights protection to the message with** and then use the **Select RMS template** dialog box to select a template.
     
-      - **Except if**   (Optional) Click **Add exception** to specify an exception to the rule.
+      - **Except if**: (Optional) Click **Add exception** to specify an exception to the rule.
 
 4.  Click **Save** to create the transport rule.
 

@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Deploy Exchange 2013 UM: Exchange 2013 Help'
 TOCTitle: Deploy Exchange 2013 UM
 ms:assetid: d147d4b1-32d7-476b-b76f-ee3c0b35ba49
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ673564(v=EXCHG.150)
 ms:contentKeyID: 49315527
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -61,21 +65,21 @@ To successfully deploy Unified Messaging in an Exchange organization, the Exchan
 
 Generally, you need to complete three tasks to successfully configure the telephony components that UM requires:
 
-1.  **Provision PBX lines**   The first step in deploying a scalable UM solution is to provision PBX lines.
+1.  **Provision PBX lines**: The first step in deploying a scalable UM solution is to provision PBX lines.
 
-2.  **Organize channels**   After you provision PBX-based voice channels, you can organize the channels into hunt groups.
+2.  **Organize channels**: After you provision PBX-based voice channels, you can organize the channels into hunt groups.
 
-3.  **Deploy VoIP gateways**   After you organize your voice channels as hunt groups, you need to end these channels at VoIP gateways. VoIP gateways are used with a legacy PBX to convert the circuit-switched protocols found on a telephony network to IP-based packet-switched protocols.
+3.  **Deploy VoIP gateways**: After you organize your voice channels as hunt groups, you need to end these channels at VoIP gateways. VoIP gateways are used with a legacy PBX to convert the circuit-switched protocols found on a telephony network to IP-based packet-switched protocols.
 
 When you integrate your organization's telephony and data networks during the deployment of Unified Messaging, you need to configure the telephony and data networking components correctly. You also need to configure the following components or interfaces to successfully deploy Unified Messaging:
 
-  - **Configure the connection from the PBXs in your organization to communicate with your VoIP gateways.**   For details, see [Connect a VoIP gateway to communicate with a PBX](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md).
+  - **Configure the connection from the PBXs in your organization to communicate with your VoIP gateways.**: For details, see [Connect a VoIP gateway to communicate with a PBX](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md).
 
-  - **Configure the connection from the VoIP gateway interface to the PBX.**   For more information about how to configure your PBX interface to communicate with your supported VoIP gateway, see the product documentation that's specific to your PBX or see [Connect a VoIP gateway to communicate with a PBX](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md).
+  - **Configure the connection from the VoIP gateway interface to the PBX.**: For more information about how to configure your PBX interface to communicate with your supported VoIP gateway, see the product documentation that's specific to your PBX or see [Connect a VoIP gateway to communicate with a PBX](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md).
 
-  - **Configure the connection from the VoIP gateway interface to the Client Access and Mailbox servers.**   For details, see [Connect a VoIP gateway, IP PBX, or session border controller to UM](connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md).
+  - **Configure the connection from the VoIP gateway interface to the Client Access and Mailbox servers.**: For details, see [Connect a VoIP gateway, IP PBX, or session border controller to UM](connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md).
 
-  - **Configure the connection from Client Access and Mailbox servers to the VoIP gateway interface.**   For details, see [Connect UM to a supported VoIP gateway](connect-um-to-a-supported-voip-gateway-exchange-2013-help.md).
+  - **Configure the connection from Client Access and Mailbox servers to the VoIP gateway interface.**: For details, see [Connect UM to a supported VoIP gateway](connect-um-to-a-supported-voip-gateway-exchange-2013-help.md).
 
 Return to top
 
@@ -129,41 +133,41 @@ Perform the following procedure to create a new UM dial plan.
 
 2.  On the **New UM Dial Plan** page, complete the following boxes:
     
-      - **Name**   Type the name of the dial plan. A UM dial plan name is required and must be unique. The name you type is used only for display purposes in the EAC and the Shell. The maximum length of a UM dial plan name is 64 characters, and it can include spaces. However, it can't include any of the following characters: " / \\ \[ \] : ; | = , + \* ? \< \>.
+      - **Name**: Type the name of the dial plan. A UM dial plan name is required and must be unique. The name you type is used only for display purposes in the EAC and the Shell. The maximum length of a UM dial plan name is 64 characters, and it can include spaces. However, it can't include any of the following characters: " / \\ \[ \] : ; | = , + \* ? \< \>.
         
 
         > [!IMPORTANT]
         > Although the box for the name of the dial plan can accept 64&nbsp;characters, the name of the dial plan can't be longer than 49&nbsp;characters. This is because, when you create a dial plan, a default UM mailbox policy is also created that has the name <EM>&lt;DialPlanName&gt;</EM> Default Policy. The <EM>name</EM> parameter for both the UM dial plan and UM mailbox policy can be 64&nbsp;characters long.
 
     
-      - **Extension length (digits)**   Enter the number of digits for extension numbers in the dial plan. The number of digits for extension numbers is based on the telephony dial plan created on a PBX. For example, if a user associated with a telephony dial plan dials a four-digit extension to call another user in the same telephony dial plan, you select 4 as the number of digits in the extension.
+      - **Extension length (digits)**: Enter the number of digits for extension numbers in the dial plan. The number of digits for extension numbers is based on the telephony dial plan created on a PBX. For example, if a user associated with a telephony dial plan dials a four-digit extension to call another user in the same telephony dial plan, you select 4 as the number of digits in the extension.
         
         This is a required box that has a value range from 1 through 20. The typical extension length is from 3 through 7 numbers. If your existing telephony environment includes extension numbers, you must specify a number of digits that matches the number of digits in those extensions.
         
         When you create a Telephone extension dial plan, you're required to enter an extension number for the user when they're linked to a Telephone extension dial plan. An extension number is also required with Session Initiation Protocol (SIP) dial plans or E.164 dial plans when a UM-enabled user is linked to a SIP URI or E.164 dial plan. This extension number is used by Outlook Voice Access users when they access their Exchange mailbox.
     
-      - **Dial plan type**   A Uniform Resource Identifier (URI) is a string of characters that identifies or names a resource. The main purpose of this identification is to enable VoIP devices to communicate with other devices over a network using specific protocols. URIs are defined in schemes that define a specific syntax and format and the protocols for the call. In simple terms, this format is passed from the IP PBX or PBX. After you create a UM dial plan, you won't be able to change the URI type without deleting the dial plan, and then re-creating the dial plan to include the correct URI type. You can select one of the following URI types for the dial plan:
+      - **Dial plan type**: A Uniform Resource Identifier (URI) is a string of characters that identifies or names a resource. The main purpose of this identification is to enable VoIP devices to communicate with other devices over a network using specific protocols. URIs are defined in schemes that define a specific syntax and format and the protocols for the call. In simple terms, this format is passed from the IP PBX or PBX. After you create a UM dial plan, you won't be able to change the URI type without deleting the dial plan, and then re-creating the dial plan to include the correct URI type. You can select one of the following URI types for the dial plan:
         
-          - **Telephone extension**   This is the most common URI type. The calling and called party information from the VoIP gateway or IP Private Branch eXchange (PBX) is listed in one of the following formats: Tel:512345 or 512345@\<*IP address*\>. This is the default URI type for dial plans.
+          - **Telephone extension**: This is the most common URI type. The calling and called party information from the VoIP gateway or IP Private Branch eXchange (PBX) is listed in one of the following formats: Tel:512345 or 512345@\<*IP address*\>. This is the default URI type for dial plans.
         
-          - **SIP URI**   Use this URI type if you must have a Session Initiation Protocol (SIP) URI dial plan such as an IP PBX that supports SIP routing or if you're integrating Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server and Unified Messaging. The calling and called party information from the VoIP gateway. IP PBX, or Communications Server 2007 R2 or Lync Server is listed as a SIP address in the following format: sip:\<*username*\>@\<*domain* or *IP address*\>:Port.
+          - **SIP URI**: Use this URI type if you must have a Session Initiation Protocol (SIP) URI dial plan such as an IP PBX that supports SIP routing or if you're integrating Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server and Unified Messaging. The calling and called party information from the VoIP gateway. IP PBX, or Communications Server 2007 R2 or Lync Server is listed as a SIP address in the following format: sip:\<*username*\>@\<*domain* or *IP address*\>:Port.
         
-          - **E.164**   E.164 is an international numbering plan for public telephone systems in which each assigned number contains a country code, a national destination code, and a subscriber number. The calling and called party information sent from the VoIP gateway or IP PBX is listed in the following format: Tel:+14255550123.
+          - **E.164**: E.164 is an international numbering plan for public telephone systems in which each assigned number contains a country code, a national destination code, and a subscriber number. The calling and called party information sent from the VoIP gateway or IP PBX is listed in the following format: Tel:+14255550123.
         
 
         > [!WARNING]
         > After you create a dial plan, you will be unable to change the URI type without deleting the dial plan, and then re-creating the dial plan to include the correct URI type.
 
     
-      - **VoIP security mode**   Use this drop-down list to select the VoIP security setting for the UM dial plan. You can select one of the following security settings for the dial plan:
+      - **VoIP security mode**: Use this drop-down list to select the VoIP security setting for the UM dial plan. You can select one of the following security settings for the dial plan:
         
-          - **Unsecured**   By default, when you create a UM dial plan, it is set to not encrypt the SIP signaling or RTP traffic. In unsecured mode, the Client Access and Mailbox servers associated the UM dial plan send and receive data from VoIP gateways, IP PBXs, SBCs and other Client Access and Mailbox servers using no encryption. In unsecured mode, neither the Realtime Transport Protocol (RTP) media channel nor the SIP signaling information is encrypted.
+          - **Unsecured**: By default, when you create a UM dial plan, it is set to not encrypt the SIP signaling or RTP traffic. In unsecured mode, the Client Access and Mailbox servers associated the UM dial plan send and receive data from VoIP gateways, IP PBXs, SBCs and other Client Access and Mailbox servers using no encryption. In unsecured mode, neither the Realtime Transport Protocol (RTP) media channel nor the SIP signaling information is encrypted.
         
           - **SIP secured**  When you select **SIP secured**, only the SIP signaling traffic is encrypted, and the RTP media channels still use TCP, which isn't encrypted. With SIP secured, Mutual Transport Layer Security (TLS) is used to encrypt the SIP signaling traffic and VoIP data.
         
-          - **Secured**   When you select **Secured**, both the SIP signaling traffic and the RTP media channels are encrypted. Both the secure signaling media channel that uses Secure Realtime Transport Protocol (SRTP) and the SIP signaling traffic use mutual TLS to encrypt the VoIP data.
+          - **Secured**: When you select **Secured**, both the SIP signaling traffic and the RTP media channels are encrypted. Both the secure signaling media channel that uses Secure Realtime Transport Protocol (SRTP) and the SIP signaling traffic use mutual TLS to encrypt the VoIP data.
     
-      - **Country/Region code**   Use this box to type the country/region code number to be used for outgoing calls. This number will automatically be prepended to the telephone number that's dialed. This box accepts from 1 through 4 digits. For example, in the United States, the country/region code is 1. In the United Kingdom, it's 44.
+      - **Country/Region code**: Use this box to type the country/region code number to be used for outgoing calls. This number will automatically be prepended to the telephone number that's dialed. This box accepts from 1 through 4 digits. For example, in the United States, the country/region code is 1. In the United Kingdom, it's 44.
 
 3.  Click **Save**.
     
@@ -191,15 +195,15 @@ Perform the following procedure to create a new UM IP gateway.
 
 2.  On the **New UM IP gateway** page, enter the following information:
     
-      - **Name**   Use this box to specify a unique name for the UM IP gateway. This is a display name that appears in the EAC. If you have to change the display name of the UM IP gateway after it's been created, you must first delete the existing UM IP gateway, and then create another UM IP gateway that has the appropriate name. The UM IP gateway name is required, but it's used for display purposes only. Because your organization may use multiple UM IP gateways, we recommend that you use meaningful names for your UM IP gateways. The maximum length of a UM IP gateway name is 64 characters, and it can include spaces. However, it can't include any of the following characters: " / \\ \[ \] : ; | = , + \* ? \< \>.
+      - **Name**: Use this box to specify a unique name for the UM IP gateway. This is a display name that appears in the EAC. If you have to change the display name of the UM IP gateway after it's been created, you must first delete the existing UM IP gateway, and then create another UM IP gateway that has the appropriate name. The UM IP gateway name is required, but it's used for display purposes only. Because your organization may use multiple UM IP gateways, we recommend that you use meaningful names for your UM IP gateways. The maximum length of a UM IP gateway name is 64 characters, and it can include spaces. However, it can't include any of the following characters: " / \\ \[ \] : ; | = , + \* ? \< \>.
     
-      - **Address**   You can configure a UM IP gateway with either an IP address or a fully qualified domain name (FQDN). Use this box to specify the IP address configured on the VoIP gateway, SIP-enabled PBX, IP PBX, or SBC, or an FQDN. This box accepts only FQDNs that are valid and formatted correctly.
+      - **Address**: You can configure a UM IP gateway with either an IP address or a fully qualified domain name (FQDN). Use this box to specify the IP address configured on the VoIP gateway, SIP-enabled PBX, IP PBX, or SBC, or an FQDN. This box accepts only FQDNs that are valid and formatted correctly.
         
         You can enter alphabetical and numeric characters in this box. IPv4 addresses, IPv6 addresses, and FQDNs are supported. If you want to use mutual TLS between a UM IP gateway and a dial plan operating in either SIP secured or Secured mode, you must configure the UM IP gateway with an FQDN. You must also configure it to listen on port 5061 and verify that any VoIP gateways or IP PBXs have also been configured to listen for mutual TLS requests on port 5061. To configure a UM IP gateway, run the following command: `Set-UMIPGateway -identity MyUMIPGateway -Port 5061`.
         
         If you use an FQDN, you must also make sure that you've correctly configured a DNS host record for the VoIP gateway so that the host name will be correctly resolved to an IP address. Also, if you use an FQDN instead of an IP address, and the DNS configuration for the UM IP gateway is changed, you must disable and then enable the UM IP gateway to make sure that configuration information for the UM IP gateway is updated correctly
     
-      - **UM dial plan**   Click **Browse** to select the UM dial plan that you want to associate with the UM IP gateway. When you select a UM dial plan to associate with a UM IP gateway, a default UM hunt group is also created and associated with the UM dial plan that you selected. If you don't select a UM dial plan, you must manually create a UM hunt group and then associate that UM hunt group with the UM IP gateway that you create.
+      - **UM dial plan**: Click **Browse** to select the UM dial plan that you want to associate with the UM IP gateway. When you select a UM dial plan to associate with a UM IP gateway, a default UM hunt group is also created and associated with the UM dial plan that you selected. If you don't select a UM dial plan, you must manually create a UM hunt group and then associate that UM hunt group with the UM IP gateway that you create.
 
 3.  
     
@@ -221,15 +225,15 @@ When you create a UM hunt group, you enable all Mailbox servers that are specifi
 
 3.  On the **New UM Hunt Group** page, complete the following boxes:
     
-      - **Associated UM IP gateway**   This display-only box shows the name of the UM IP gateway that will be associated with the UM hunt group.
+      - **Associated UM IP gateway**: This display-only box shows the name of the UM IP gateway that will be associated with the UM hunt group.
     
-      - **Name**   Use this box to create the display name for the UM hunt group. A UM hunt group name is required and must be unique, but it's used only for display purposes in the EAC and the Shell. If you have to change the display name of the hunt group after it's been created, you must first delete the existing hunt group and then create another hunt group that has the appropriate name.
+      - **Name**: Use this box to create the display name for the UM hunt group. A UM hunt group name is required and must be unique, but it's used only for display purposes in the EAC and the Shell. If you have to change the display name of the hunt group after it's been created, you must first delete the existing hunt group and then create another hunt group that has the appropriate name.
         
         If your organization uses multiple hunt groups, we recommend that you use meaningful names for your hunt groups. The maximum length of a UM hunt group name is 64 characters, and it can include spaces. However, it can't include any of the following characters: " / \\ \[ \] : ; | = , + \* ? \< \>.
     
-      - **Dial plan**   Click **Browse** to select the dial plan that will be associated with the UM hunt group. Associating a hunt group with a dial plan is required. A UM hunt group can be associated with only one UM IP gateway and one UM dial plan.
+      - **Dial plan**: Click **Browse** to select the dial plan that will be associated with the UM hunt group. Associating a hunt group with a dial plan is required. A UM hunt group can be associated with only one UM IP gateway and one UM dial plan.
     
-      - **Pilot identifier**   Use this box to specify a string that uniquely identifies the pilot identifier or pilot ID configured on the PBX or IP PBX.
+      - **Pilot identifier**: Use this box to specify a string that uniquely identifies the pilot identifier or pilot ID configured on the PBX or IP PBX.
         
         An extension number or a Session Initiation Protocol (SIP) Uniform Resource Identifier (URI) can be used in this box. Alphanumeric characters are accepted in this box. For legacy PBXs, a numeric value is used as a pilot identifier. However, some IP PBXs can use SIP URIs.
 
@@ -277,21 +281,21 @@ Creating and using auto attendants is optional in Unified Messaging. However, if
 
 3.  On the **New UM auto attendant** page, complete the following boxes:
     
-      - **Name**   Use this box to create the display name for the UM auto attendant. A UM auto attendant name is required and must be unique. However, it's used only for display purposes in the EAC and the Shell.
+      - **Name**: Use this box to create the display name for the UM auto attendant. A UM auto attendant name is required and must be unique. However, it's used only for display purposes in the EAC and the Shell.
         
         If you have to change the display name of the auto attendant after it's created, you must first delete the existing UM auto attendant and then create another auto attendant that has the appropriate name. If your organization uses multiple UM auto attendants, we recommend that you use meaningful names for your UM auto attendants. The maximum length of a UM auto attendant name is 64 characters, and it can include spaces.
         
         Although you can name a new UM auto attendant to include spaces, if you integrate Unified Messaging with Office Communications Server 2007 R2 or Microsoft Lync Server, the name of the auto attendant can't include spaces. Therefore, if you created an auto attendant that has spaces in the display name and you're integrating with Office Communications Server 2007 R2 or Lync Server, you must first delete that auto attendant and then create another auto attendant that doesn't include spaces in the display name.
     
-      - **Create this auto attendant as enabled**   Select this check box to enable the auto attendant to answer incoming calls when you finish creating the UM auto attendant. By default, a new auto attendant is created as disabled.
+      - **Create this auto attendant as enabled**: Select this check box to enable the auto attendant to answer incoming calls when you finish creating the UM auto attendant. By default, a new auto attendant is created as disabled.
         
         If you decide to create the UM auto attendant as disabled, you can use the EAC or the Shell to enable the auto attendant after you finish creating the auto attendant.
     
-      - **Set the auto attendant to respond to voice commands**   Select this check box to speech-enable the UM auto attendant. If the auto attendant is speech-enabled, callers can respond to the system or custom prompts used by the UM auto attendant using touchtone or voice inputs. By default, the auto attendant won't be speech-enabled when it's created.
+      - **Set the auto attendant to respond to voice commands**: Select this check box to speech-enable the UM auto attendant. If the auto attendant is speech-enabled, callers can respond to the system or custom prompts used by the UM auto attendant using touchtone or voice inputs. By default, the auto attendant won't be speech-enabled when it's created.
         
         For callers to use a speech-enabled auto attendant in a language other than U.S. English (en-US), you must install the appropriate UM language pack and configure the properties of the auto attendant to use this language. The en-US UM language pack is installed by default when you install a Mailbox server.
     
-      - **Access numbers**   Use this box to enter the extension or telephone numbers that callers will use to reach the auto attendant. Type an extension number or telephone number in the box, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add the number to the list. The number of digits in the extension number or telephone number that you provide doesn't have to match the number of digits for an extension number configured on the associated UM dial plan. This is because direct calls are allowed to UM auto attendants.
+      - **Access numbers**: Use this box to enter the extension or telephone numbers that callers will use to reach the auto attendant. Type an extension number or telephone number in the box, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add the number to the list. The number of digits in the extension number or telephone number that you provide doesn't have to match the number of digits for an extension number configured on the associated UM dial plan. This is because direct calls are allowed to UM auto attendants.
         
         The number of extension numbers or pilot identifiers you can enter is unlimited. However, you may create a new auto attendant without listing an extension number or telephone number. An extension number or telephone number isn't required.
         

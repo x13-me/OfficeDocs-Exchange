@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Set connection limits for POP3: Exchange 2013 Help'
 TOCTitle: Set connection limits for POP3
 ms:assetid: 512d61c2-2a34-4813-92a9-875339d3388b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997988(v=EXCHG.150)
 ms:contentKeyID: 50395399
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -49,13 +53,13 @@ For additional information related to POP3, see [POP3 and IMAP4 in Exchange Serv
 
 5.  Under **Connection limits**, use the following settings:
     
-      - **Maximum connections**   Specifies the total number of connections the specified server will accept. This includes authenticated and unauthenticated connections. The default value is 2,147,483,647. The possible values are from 1 through 2,147,483,647.
+      - **Maximum connections**: Specifies the total number of connections the specified server will accept. This includes authenticated and unauthenticated connections. The default value is 2,147,483,647. The possible values are from 1 through 2,147,483,647.
     
-      - **Maximum connections from a single IP address**   Specifies the number of connections that the server will accept from a single IP address. The default value is 2,147,483,647. The possible values are from 1 through 2,147,483,647.
+      - **Maximum connections from a single IP address**: Specifies the number of connections that the server will accept from a single IP address. The default value is 2,147,483,647. The possible values are from 1 through 2,147,483,647.
     
-      - **Maximum connections from a single user**   Specifies the maximum number of connections that the server will accept from a particular user. The default value is 16. The possible values are from 1 through 2,147,483,647.
+      - **Maximum connections from a single user**: Specifies the maximum number of connections that the server will accept from a particular user. The default value is 16. The possible values are from 1 through 2,147,483,647.
     
-      - **Maximum command size (bytes)**   specifies the maximum size of a single command. The default size is 512. The possible values are from 40 through 1,024.
+      - **Maximum command size (bytes)**: specifies the maximum size of a single command. The default size is 512. The possible values are from 40 through 1,024.
 
 6.  Click **Apply**, and then click **OK** to save your changes.
 

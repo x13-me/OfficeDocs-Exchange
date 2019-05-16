@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Enable the MRS Proxy endpoint for remote moves: Exchange 2013 Help'
 TOCTitle: Enable the MRS Proxy endpoint for remote moves
 ms:assetid: 9840f712-127e-4c2d-bfe5-1b35cdb2a31b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn155787(v=EXCHG.150)
 ms:contentKeyID: 53903965
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -19,9 +23,9 @@ The Mailbox Replication Service Proxy (MRS Proxy) facilitates cross-forest mailb
 
 The Client Access server on which to enable the MRS Proxy endpoint depends on the type and direction of the mailbox move.
 
-  - **Cross-forest enterprise moves**   For cross-forest moves that are initiated from the target environment (known as a *pull* move type), you have to enable the MRS Proxy endpoint on Client Access servers in the source environment. For cross-forest moves that are initiated from the source environment (known as a *push* move type), you have to enable the MRS Proxy endpoint on Client Access servers in the target environment.
+  - **Cross-forest enterprise moves**: For cross-forest moves that are initiated from the target environment (known as a *pull* move type), you have to enable the MRS Proxy endpoint on Client Access servers in the source environment. For cross-forest moves that are initiated from the source environment (known as a *push* move type), you have to enable the MRS Proxy endpoint on Client Access servers in the target environment.
 
-  - **Remote move migrations between an on-premises Exchange organization and Exchange Online**   For both onboarding and offboarding remote move migrations, you have to enable the MRS Proxy endpoint on Client Access servers in your on-premises organization.
+  - **Remote move migrations between an on-premises Exchange organization and Exchange Online**: For both onboarding and offboarding remote move migrations, you have to enable the MRS Proxy endpoint on Client Access servers in your on-premises organization.
 
 
 > [!NOTE]

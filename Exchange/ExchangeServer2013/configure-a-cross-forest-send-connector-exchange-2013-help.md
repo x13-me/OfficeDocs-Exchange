@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure a cross-forest Send connector: Exchange 2013 Help'
 TOCTitle: Configure a cross-forest Send connector
 ms:assetid: 7840d172-071e-4f13-9379-2fe1eee1a7cc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ945053(v=EXCHG.150)
 ms:contentKeyID: 51423387
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

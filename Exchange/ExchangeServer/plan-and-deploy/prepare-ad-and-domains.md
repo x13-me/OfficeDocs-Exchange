@@ -7,13 +7,14 @@ author: chrisda
 ms.author: chrisda
 ms.assetid: f895e1ce-d766-4352-ac46-ec959c9954a9
 ms.date:
+ms.reviewer: 
 title: Prepare Active Directory and domains for Exchange Server, Active Directory Exchange Server, Exchange Server Active Directory, Exchange 2019 Active Directory
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
-manager: serdars
+manager: dansimp
 
 ---
 

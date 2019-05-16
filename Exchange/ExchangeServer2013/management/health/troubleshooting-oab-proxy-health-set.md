@@ -1,10 +1,14 @@
-﻿---
+---
 title: Troubleshooting OAB.Proxy Health Set
 TOCTitle: Troubleshooting OAB.Proxy Health Set
 ms:assetid: b717fc00-a787-44d6-8ccb-0eb4b2ea9e73
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/ms.exch.scom.oab.proxy(v=EXCHG.150)
 ms:contentKeyID: 49720877
 ms.date: 10/08/2015
+ms.reviewer: 
+manager: dansimp
+ms.author: chrisda
+author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
@@ -135,7 +139,7 @@ When you receive an alert from a health set, the email message contains the foll
 
   - Full exception trace of the last error, including diagnostic data and specific HTTP header information  
     
-    **Note**   You can use the information in the full exception trace to help troubleshoot the issue.
+    **Note**: You can use the information in the full exception trace to help troubleshoot the issue.
 
   - Time and date when the issue occurred
 

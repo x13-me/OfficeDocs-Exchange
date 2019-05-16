@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Manage linked role groups: Exchange 2013 Help'
 TOCTitle: Manage linked role groups
 ms:assetid: e2a07395-90c2-4d62-b15d-ac3ff28fe786
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657502(v=EXCHG.150)
 ms:contentKeyID: 49289439
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -37,11 +41,11 @@ For additional management tasks related to role groups, see [Permissions](permis
 
   - You must have the following information about the foreign Active Directory forest:
     
-      - **Credentials**   You must have a user name and password that can access the foreign Active Directory forest. This information is used with the *LinkedCredential* parameter on the **New-RoleGroup** and **Set-RoleGroup** cmdlets.
+      - **Credentials**: You must have a user name and password that can access the foreign Active Directory forest. This information is used with the *LinkedCredential* parameter on the **New-RoleGroup** and **Set-RoleGroup** cmdlets.
     
-      - **Domain controller**   You must have the fully qualified domain name (FQDN) of an Active Directory domain controller in the foreign Active Directory forest. This information is used with the *LinkedDomainController* parameter on the **New-RoleGroup** and **Set-RoleGroup** cmdlets.
+      - **Domain controller**: You must have the fully qualified domain name (FQDN) of an Active Directory domain controller in the foreign Active Directory forest. This information is used with the *LinkedDomainController* parameter on the **New-RoleGroup** and **Set-RoleGroup** cmdlets.
     
-      - **Foreign USG**   You must have the full name of a USG in the foreign Active Directory forest that contains the members you want to associate with the linked role group. This information is used with the *LinkedForeignGroup* parameter on the **New-RoleGroup** and **Set-RoleGroup** cmdlet.
+      - **Foreign USG**: You must have the full name of a USG in the foreign Active Directory forest that contains the members you want to associate with the linked role group. This information is used with the *LinkedForeignGroup* parameter on the **New-RoleGroup** and **Set-RoleGroup** cmdlet.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

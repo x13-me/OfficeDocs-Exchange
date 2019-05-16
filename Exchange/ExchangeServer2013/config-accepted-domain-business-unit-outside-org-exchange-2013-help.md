@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure accepted domain for business unit with mailboxes outside your Exchange organization'
 TOCTitle: Configure an accepted domain for a business unit with mailboxes outside your Exchange organization
 ms:assetid: ff46310b-5392-4eac-97bc-d39d397e1ce1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ657737(v=EXCHG.150)
 ms:contentKeyID: 49300759
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

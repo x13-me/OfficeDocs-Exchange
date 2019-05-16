@@ -5,6 +5,10 @@ ms:assetid: baebc865-ec3e-48ca-ac48-7aac8b34c003
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Bb124376(v=EXCHG.150)
 ms:contentKeyID: 61200297
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -312,9 +316,9 @@ Add-IPBlockListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priori
 
 This example creates an IP Block List provider named "Contoso IP Block List Provider" with the following options:
 
-  - **FQDN to use the provider**   rbl.contoso.com
+  - **FQDN to use the provider**: rbl.contoso.com
 
-  - **Bitmask code to use from the provider**   127.0.0.1
+  - **Bitmask code to use from the provider**: 127.0.0.1
 
 <!-- end list -->
 
@@ -648,9 +652,9 @@ Add-IPAllowListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priori
 
 This example creates an IP Allow List provider named "Contoso IP Allow List Provider" with the following options:
 
-  - **FQDN to use the provider**   allow.contoso.com
+  - **FQDN to use the provider**: allow.contoso.com
 
-  - **Bitmask code to use from the provider**   127.0.0.1
+  - **Bitmask code to use from the provider**: 127.0.0.1
 
 <!-- end list -->
 

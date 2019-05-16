@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Restore public folders and public folder mailboxes from failed moves'
 TOCTitle: Restore public folders and public folder mailboxes from failed moves
 ms:assetid: 2ade83c9-5f9b-4945-bf32-48fa8185b515
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ983802(v=EXCHG.150)
 ms:contentKeyID: 51407261
 ms.date: 03/27/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -17,9 +21,9 @@ _**Applies to:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 If a move request for a public folder or public folder mailbox fails, you can restore the folder or mailbox as long as the following conditions apply:
 
-  - **Failed public folder move**   A soft-deleted copy of the public folder still exists in the source public folder mailbox and is still within the retention period.
+  - **Failed public folder move**: A soft-deleted copy of the public folder still exists in the source public folder mailbox and is still within the retention period.
 
-  - **Failed public folder mailbox move**   A soft-deleted copy of the public folder mailbox still exists in the source mailbox database and is still within the mailbox retention period.
+  - **Failed public folder mailbox move**: A soft-deleted copy of the public folder mailbox still exists in the source mailbox database and is still within the mailbox retention period.
 
 If the mailbox retention period has elapsed, you can recover an individual public folder mailbox from backup. You then extract data from the restored mailbox and copy it to a target folder or merge it with another mailbox. For more information, see [Restore data using a recovery database](restore-data-using-a-recovery-database-exchange-2013-help.md).
 

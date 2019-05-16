@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Recoverable Items folder: Exchange 2013 Help'
 TOCTitle: Recoverable Items folder
 ms:assetid: efc48fb4-2ed8-4d05-93af-f3505fbc389d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee364755(v=EXCHG.150)
 ms:contentKeyID: 49289452
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -49,18 +53,17 @@ Recoverable Items mailbox quotas
 
 Knowledge of the following terms will help you understand the content in this topic.
 
-  - **Delete**  
-    Describes when an item is deleted from any folder and placed in the Deleted Items default folder.
+- **Delete**:
 
-<!-- end list -->
+  Describes when an item is deleted from any folder and placed in the Deleted Items default folder.
 
-  - **Permanently delete**  
-    Describes when an item is deleted from the Deleted Items default folder and placed in the Recoverable Items folder. Additionally describes when a Microsoft Outlook user deletes an item by pressing Shift+Delete, which bypasses the Deleted Items folder and places the item directly in the Recoverable Items folder.
+- **Permanently delete**:
 
-<!-- end list -->
+  Describes when an item is deleted from the Deleted Items default folder and placed in the Recoverable Items folder. Additionally describes when a Microsoft Outlook user deletes an item by pressing Shift+Delete, which bypasses the Deleted Items folder and places the item directly in the Recoverable Items folder.
 
-  - **Purged**  
-    Describes when an item is marked to be purged from the mailbox database. This is also known as a *store hard delete*.
+- **Purged**:
+
+  Describes when an item is marked to be purged from the mailbox database. This is also known as a *store hard delete*.
 
 Return to top
 
@@ -82,17 +85,17 @@ This architectural change provides the following key benefits:
 
 The Recoverable Items folder contains the following subfolders:
 
-  - **Deletions**   This subfolder contains all items deleted from the Deleted Items folder. (In Outlook, a user can permanently delete an item by pressing Shift+Delete.) This subfolder is exposed to users through the Recover Deleted Items feature in Outlook and Outlook Web App.
+  - **Deletions**: This subfolder contains all items deleted from the Deleted Items folder. (In Outlook, a user can permanently delete an item by pressing Shift+Delete.) This subfolder is exposed to users through the Recover Deleted Items feature in Outlook and Outlook Web App.
 
-  - **Versions**   If In-Place Hold or Litigation Hold is enabled, this subfolder contains the original and modified copies of the deleted items. This folder isn't visible to end users.
+  - **Versions**: If In-Place Hold or Litigation Hold is enabled, this subfolder contains the original and modified copies of the deleted items. This folder isn't visible to end users.
 
-  - **Purges**   If either Litigation Hold or single item recovery is enabled, this subfolder contains all items that are purged. This folder isn't visible to end users.
+  - **Purges**: If either Litigation Hold or single item recovery is enabled, this subfolder contains all items that are purged. This folder isn't visible to end users.
 
-  - **Audits**   If mailbox audit logging is enabled for a mailbox, this subfolder contains the audit log entries. To learn more about mailbox audit logging, see [Mailbox audit logging](mailbox-audit-logging-exchange-2013-help.md).
+  - **Audits**: If mailbox audit logging is enabled for a mailbox, this subfolder contains the audit log entries. To learn more about mailbox audit logging, see [Mailbox audit logging](mailbox-audit-logging-exchange-2013-help.md).
 
-  - **DiscoveryHolds**   If In-Place Hold is enabled, this subfolder contains all items that meet the hold query parameters and are purged.
+  - **DiscoveryHolds**: If In-Place Hold is enabled, this subfolder contains all items that meet the hold query parameters and are purged.
 
-  - **Calendar Logging**   This subfolder contains calendar changes that occur within a mailbox. This folder isn't available to users.
+  - **Calendar Logging**: This subfolder contains calendar changes that occur within a mailbox. This folder isn't available to users.
 
 The following illustration shows the subfolders in the Recoverable Items folders. It also shows the deleted item retention, single item recovery, and hold workflow processes that are described in the following sections.
 

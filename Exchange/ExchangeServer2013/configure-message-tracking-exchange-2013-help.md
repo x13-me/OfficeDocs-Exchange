@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Configure message tracking: Exchange 2013 Help'
 TOCTitle: Configure message tracking
 ms:assetid: 50eb5213-cf27-4179-b427-38d751ee4a70
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa997984(v=EXCHG.150)
 ms:contentKeyID: 50646521
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -45,9 +49,9 @@ Message tracking records the SMTP transport activity of all messages transferred
 
 4.  In the **Message tracking log** section, change any of the following:
     
-      - **Enable message tracking log**   To disable message tracking on the server, clear the check box. To enable message tracking on the server, select the check box.
+      - **Enable message tracking log**: To disable message tracking on the server, clear the check box. To enable message tracking on the server, select the check box.
     
-      - **Message tracking log path**   The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
+      - **Message tracking log path**: The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
 
 5.  Click **Save**.
 

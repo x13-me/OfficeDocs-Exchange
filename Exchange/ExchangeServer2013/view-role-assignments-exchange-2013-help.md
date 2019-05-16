@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'View role assignments: Exchange 2013 Help'
 TOCTitle: View role assignments
 ms:assetid: 0be4def9-af6d-476a-9c97-7155ae11b587
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd335086(v=EXCHG.150)
 ms:contentKeyID: 49289159
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -139,13 +143,13 @@ For detailed syntax and parameter information, see [Get-ManagementRoleAssignment
 
 To view a list of role assignments that use a specific custom scope, you need to first determine whether the scope is a recipient scope, configuration scope, exclusive recipient scope, or exclusive configuration scope. Each type of scope uses a different parameter on the **Get-ManagementRoleAssignment** cmdlet. The following lists each scope and its associated parameter:
 
-  - **Recipient scopes**   *CustomRecipientWriteScope*
+  - **Recipient scopes**: *CustomRecipientWriteScope*
 
-  - **Configuration scopes**   *CustomConfigWriteScope*
+  - **Configuration scopes**: *CustomConfigWriteScope*
 
-  - **Exclusive recipient scopes**   *ExclusiveRecipientWriteScope*
+  - **Exclusive recipient scopes**: *ExclusiveRecipientWriteScope*
 
-  - **Exclusive configuration scopes**   *ExclusiveConfigWriteScope*
+  - **Exclusive configuration scopes**: *ExclusiveConfigWriteScope*
 
 The syntax for each parameter is the same. Specify the name of the scope with the parameter that matches the type of scope it is.
 

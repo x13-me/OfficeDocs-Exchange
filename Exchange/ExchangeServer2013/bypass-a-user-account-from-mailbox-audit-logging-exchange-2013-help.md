@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Bypass a user account from mailbox audit logging: Exchange 2013 Help'
 TOCTitle: Bypass a user account from mailbox audit logging
 ms:assetid: 98a87071-fe31-4b67-beb8-a73799e54df2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff461934(v=EXCHG.150)
 ms:contentKeyID: 49300631
 ms.date: 12/09/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 

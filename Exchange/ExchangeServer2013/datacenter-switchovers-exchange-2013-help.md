@@ -1,10 +1,14 @@
-﻿---
+---
 title: 'Datacenter Switchovers: Exchange 2013 Help'
 TOCTitle: Datacenter Switchovers
 ms:assetid: ac208c12-04d0-4809-bacd-72478ff14983
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd351049(v=EXCHG.150)
 ms:contentKeyID: 62549506
 ms.date: 07/14/2016
+ms.reviewer: 
+manager: dansimp
+ms.author: dmaguire
+author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
@@ -21,7 +25,7 @@ If you don't have three locations, or even if you do have three locations, but y
 
 There are four basic steps that you complete to perform a datacenter switchover, after making the initial decision to activate the second datacenter:
 
-1.  **Terminate a partially running datacenter**   This step involves terminating Exchange services in the primary datacenter, if any services are still running. This is particularly important for the Mailbox server role because it uses an active/passive high availability model. If services in a partially failed datacenter aren't stopped, it's possible for problems from the partially failed datacenter to negatively affect the services during a switchover back to the primary datacenter.
+1.  **Terminate a partially running datacenter**: This step involves terminating Exchange services in the primary datacenter, if any services are still running. This is particularly important for the Mailbox server role because it uses an active/passive high availability model. If services in a partially failed datacenter aren't stopped, it's possible for problems from the partially failed datacenter to negatively affect the services during a switchover back to the primary datacenter.
     
 
     > [!IMPORTANT]
@@ -29,13 +33,13 @@ There are four basic steps that you complete to perform a datacenter switchover,
 
 
 
-2.  **Validate and confirm the prerequisites for the second datacenter**   This step can be performed in parallel with step 1 because validation of the health of the infrastructure dependences in the second datacenter is largely independent of the first datacenter services. Each organization typically requires its own method for performing this step. For example, you may decide to complete this step by reviewing health information collected and filtered by an infrastructure monitoring application, or by using a tool that's unique to your organization's infrastructure. This is a critical step, because activating the second datacenter when its infrastructure is unhealthy and unstable is likely to yield poor results.
+2.  **Validate and confirm the prerequisites for the second datacenter**: This step can be performed in parallel with step 1 because validation of the health of the infrastructure dependences in the second datacenter is largely independent of the first datacenter services. Each organization typically requires its own method for performing this step. For example, you may decide to complete this step by reviewing health information collected and filtered by an infrastructure monitoring application, or by using a tool that's unique to your organization's infrastructure. This is a critical step, because activating the second datacenter when its infrastructure is unhealthy and unstable is likely to yield poor results.
 
-3.  **Activate the Mailbox servers**   This step begins the process of activating the second datacenter. This step can be performed in parallel with step 4 because the Microsoft Exchange services can handle database outages and recover. Activating the Mailbox servers involves a process of marking the failed servers from the primary datacenter as unavailable followed by activation of the servers in the second datacenter. The activation process for Mailbox servers depends on whether the DAG is in database activation coordination (DAC) mode. For more information about database activation coordination mode, see [Datacenter Activation Coordination mode](datacenter-activation-coordination-mode-exchange-2013-help.md).
+3.  **Activate the Mailbox servers**: This step begins the process of activating the second datacenter. This step can be performed in parallel with step 4 because the Microsoft Exchange services can handle database outages and recover. Activating the Mailbox servers involves a process of marking the failed servers from the primary datacenter as unavailable followed by activation of the servers in the second datacenter. The activation process for Mailbox servers depends on whether the DAG is in database activation coordination (DAC) mode. For more information about database activation coordination mode, see [Datacenter Activation Coordination mode](datacenter-activation-coordination-mode-exchange-2013-help.md).
     
     If the DAG is in DAC mode, you can use the Exchange site resilience cmdlets to terminate a partially failed datacenter (if necessary) and activate the Mailbox servers. For example, in DAC mode, this step is performed by using the [Stop-DatabaseAvailabilityGroup](https://technet.microsoft.com/en-us/library/dd335133\(v=exchg.150\)) cmdlet. In some cases, the servers must be marked as unavailable twice (once in each datacenter). Next, the [Restore-DatabaseAvailabilityGroup](https://technet.microsoft.com/en-us/library/dd351169\(v=exchg.150\)) cmdlet is run to restore the remaining members of the database availability group (DAG) in the second datacenter by reducing the DAG members to those that are still operational, thereby reestablishing quorum. If the DAG isn't in DAC mode, you must use the Windows Failover Cluster tools to activate the Mailbox servers. After either process is complete, the database copies that were previously passive in the second datacenter can become active and be mounted. At this point, Mailbox server recovery is complete.
 
-4.  **Activate the Client Access servers**   This involves using the URL mapping information and the Domain Name System (DNS) change methodology to perform all required DNS updates. The mapping information describes what DNS changes to perform. The amount of time required to complete the update depends on the methodology used and the Time to Live (TTL) settings on the DNS record (and whether the deployment's infrastructure honors the TTL).
+4.  **Activate the Client Access servers**: This involves using the URL mapping information and the Domain Name System (DNS) change methodology to perform all required DNS updates. The mapping information describes what DNS changes to perform. The amount of time required to complete the update depends on the methodology used and the Time to Live (TTL) settings on the DNS record (and whether the deployment's infrastructure honors the TTL).
 
 Users should start to have access to messaging services sometime after steps 3 and 4 are completed. Steps 3 and 4 are described in greater detail later in this topic.
 
