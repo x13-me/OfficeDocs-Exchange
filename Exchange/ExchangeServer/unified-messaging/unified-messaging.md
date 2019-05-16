@@ -12,7 +12,6 @@ ms.collection: exchange-server
 ms.audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: serdars
-
 ---
 
 # Unified Messaging in Exchange Server 2016
