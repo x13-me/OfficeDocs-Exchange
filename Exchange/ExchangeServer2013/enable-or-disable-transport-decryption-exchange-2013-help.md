@@ -29,9 +29,9 @@ Enabling transport decryption allows the Transport Rules agent on Microsoft Exch
 
 When enabling transport decryption, you can specify the following settings:
 
-  - **Mandatory**   Rejects messages that can't be decrypted and returns a non-delivery report (NDR) to the sender.
+  - **Mandatory**: Rejects messages that can't be decrypted and returns a non-delivery report (NDR) to the sender.
 
-  - **Optional**   Uses a best-effort approach to decryption. If possible, messages are decrypted, but they're delivered even if decryption fails. This is the default setting.
+  - **Optional**: Uses a best-effort approach to decryption. If possible, messages are decrypted, but they're delivered even if decryption fails. This is the default setting.
 
 To learn more about transport decryption, see [Transport decryption](transport-decryption-exchange-2013-help.md).
 

@@ -98,11 +98,11 @@ For example, if three agents are registered on the **OnEndofData** event but onl
 
 The message snapshot files that are created are described in the following list:
 
-  - **Original.eml**   This file contains the original unmodified contents of the email message before it encounters any SMTP events or transport agents.
+  - **Original.eml**: This file contains the original unmodified contents of the email message before it encounters any SMTP events or transport agents.
 
-  - **Routingnnnn.eml**   These files contain the contents of the email message as it encounters transport the SMTP events and transport agents registered on those events in the categorization part of the Transport service. The placeholder *nnnn* represents an integer value that starts with `0001`. The value is incremented for every SMTP event and transport agent registered on those events in the order in which the events and agents act on the message. The Mailbox Transport Delivery service doesn't generate these **Routing** snapshot files.
+  - **Routingnnnn.eml**: These files contain the contents of the email message as it encounters transport the SMTP events and transport agents registered on those events in the categorization part of the Transport service. The placeholder *nnnn* represents an integer value that starts with `0001`. The value is incremented for every SMTP event and transport agent registered on those events in the order in which the events and agents act on the message. The Mailbox Transport Delivery service doesn't generate these **Routing** snapshot files.
 
-  - **SmtpReceivennnn.eml**   These files contain the contents of the email message as it encounters the **OnEndofData** and **OnEndOfHeaders** SMTP events and transport agents registered on those events during the SMTP receive part of the Transport service or the Mailbox Transport Delivery service. The placeholder *nnnn* represents an integer value that starts with `0001`. The value is incremented for every SMTP event and transport agent registered on those events in the order in which the events and agents act on the message.
+  - **SmtpReceivennnn.eml**: These files contain the contents of the email message as it encounters the **OnEndofData** and **OnEndOfHeaders** SMTP events and transport agents registered on those events during the SMTP receive part of the Transport service or the Mailbox Transport Delivery service. The placeholder *nnnn* represents an integer value that starts with `0001`. The value is incremented for every SMTP event and transport agent registered on those events in the order in which the events and agents act on the message.
 
 You can open the message snapshot files by using Notepad or any text editor.
 

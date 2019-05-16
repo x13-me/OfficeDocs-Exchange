@@ -215,7 +215,7 @@ If you didn't include routing details when running the message trace, the follow
 
 - **directionality**: This field denotes whether the message was sent inbound (1) to your organization, or whether it was sent outbound (2) from your organization.
 
-- **connector_id**: The name of the source or destination Send connector or Receive connector. For example, *ServerName*  \ *ConnectorName*  or *ConnectorName*.
+- **connector_id**: The name of the source or destination Send connector or Receive connector. For example, *ServerName*\\*ConnectorName* or *ConnectorName*.
 
 - **delivery_priority**: Denotes whether the message was sent with **High**, **Low**, or **Normal** priority.
 

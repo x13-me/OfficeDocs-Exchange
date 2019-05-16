@@ -69,18 +69,18 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
 3.  On the **new database availability group** page, provide the following information for the DAG:
     
-      - **Database availability group name**   Use this field to type a valid and unique name for the DAG of up to 15 characters. The name is equivalent to a computer name, and a corresponding CNO will be created in Active Directory with that name. This name will be both the name of the DAG and the name of the underlying cluster.
+      - **Database availability group name**: Use this field to type a valid and unique name for the DAG of up to 15 characters. The name is equivalent to a computer name, and a corresponding CNO will be created in Active Directory with that name. This name will be both the name of the DAG and the name of the underlying cluster.
     
-      - **Witness server**   Use this field to specify a witness server for the DAG. If you leave this field blank, the system will attempt to automatically select a Client Access server in the local Active Directory site that isn't installed on a computer with the Mailbox server to be used as the witness server.
+      - **Witness server**: Use this field to specify a witness server for the DAG. If you leave this field blank, the system will attempt to automatically select a Client Access server in the local Active Directory site that isn't installed on a computer with the Mailbox server to be used as the witness server.
         
 
         > [!NOTE]
         > If you specify a witness server, you must use either a host name or a fully qualified domain name (FQDN). Using an IP address or a wildcard name isn't supported. In addition, the witness server can't be a member of the DAG.
 
     
-      - **Witness directory**   Use this field to type the path to a directory on the witness server that will be used to store witness data. If the directory doesn't exist, the system will create it for you on the witness server. If you leave this field blank, the default directory (%SystemDrive%\\DAGFileShareWitnesses\\\<DAG FQDN\>) will be created on the witness server.
+      - **Witness directory**: Use this field to type the path to a directory on the witness server that will be used to store witness data. If the directory doesn't exist, the system will create it for you on the witness server. If you leave this field blank, the default directory (%SystemDrive%\\DAGFileShareWitnesses\\\<DAG FQDN\>) will be created on the witness server.
     
-      - **Database availability group IP addresses**   Use this field to assign one or more static IPv4 addresses to the DAG. Enter an IPv4 address and click ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add it. Leave this field blank if you want the DAG to use Dynamic Host Configuration Protocol (DHCP) to obtain the necessary IPv4 addresses. Optionally, enter 255.255.255.255 to create a DAG without an IP address or cluster administrative access point, which applies only to DAGs that will contain Mailbox servers running Windows Server 2012 R2.
+      - **Database availability group IP addresses**: Use this field to assign one or more static IPv4 addresses to the DAG. Enter an IPv4 address and click ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add it. Leave this field blank if you want the DAG to use Dynamic Host Configuration Protocol (DHCP) to obtain the necessary IPv4 addresses. Optionally, enter 255.255.255.255 to create a DAG without an IP address or cluster administrative access point, which applies only to DAGs that will contain Mailbox servers running Windows Server 2012 R2.
 
 4.  Click **Save** to create the DAG.
 

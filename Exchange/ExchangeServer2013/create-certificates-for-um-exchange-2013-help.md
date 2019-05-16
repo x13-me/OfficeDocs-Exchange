@@ -75,7 +75,7 @@ For additional management tasks related to managing certificates for Unified Mes
     
       - **State/Province**
     
-      - **County/Region name**   For this option, use the drop-down list to select the country or region.
+      - **County/Region name**: For this option, use the drop-down list to select the country or region.
 
 10. Under **Save the certificate request to the following file**, enter the name of the certificate file, and then click **Finish**.
 

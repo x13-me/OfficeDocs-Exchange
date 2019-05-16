@@ -105,13 +105,13 @@ Return to top
 
 IRM log files are text files that contain data in comma-separated value (CSV) format. Each IRM log has a header that contains the following information:
 
-  - **\#Software**   Name of the software that created the IRM log file. Typically, the value is `Microsoft Exchange Server`.
+  - **\#Software**: Name of the software that created the IRM log file. Typically, the value is `Microsoft Exchange Server`.
 
-  - **\#Version**   Version number of the software that created the IRM log file.
+  - **\#Version**: Version number of the software that created the IRM log file.
 
-  - **\#Log-type**   Log type value, which is `Rms Client Manager Log`.
+  - **\#Log-type**: Log type value, which is `Rms Client Manager Log`.
 
-  - **\#Date**   The UTC date and time when the log file was created. The UTC date and time is represented in the ISO 8601 date-time format: *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss.fff*Z, where:
+  - **\#Date**: The UTC date and time when the log file was created. The UTC date and time is represented in the ISO 8601 date-time format: *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss.fff*Z, where:
     
       - yyyy = year
     
@@ -131,7 +131,7 @@ IRM log files are text files that contain data in comma-separated value (CSV) fo
     
       - Z = Zulu, which is another way to denote UTC
 
-  - **\#Fields**   Comma-delimited field names used in IRM log files.
+  - **\#Fields**: Comma-delimited field names used in IRM log files.
     
     The IRM log stores each RMS transaction event on a single line, organized in comma-separated fields. The following table lists the fields in IRM logs for all server roles that have IRM features enabled.
     

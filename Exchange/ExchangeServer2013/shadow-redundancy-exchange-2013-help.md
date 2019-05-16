@@ -408,9 +408,9 @@ Return to top
 
 Shadow redundancy minimizes message loss due to server outages. When a transport server comes back online after an outage, there are two scenarios:
 
-  - **The server comes back online with a new transport database**   In this scenario, the transport database is unrecoverable due to data corruption or hardware failure. In this case, because the transport server will have a new database ID, it will be recognized as a new route by the other transport servers in the organization. This also applies to the situation where a server couldn't be recovered, and a new server was provisioned as a replacement.
+  - **The server comes back online with a new transport database**: In this scenario, the transport database is unrecoverable due to data corruption or hardware failure. In this case, because the transport server will have a new database ID, it will be recognized as a new route by the other transport servers in the organization. This also applies to the situation where a server couldn't be recovered, and a new server was provisioned as a replacement.
 
-  - **The server comes back online with the same transport database**   In this scenario, the particular transport server didn't fail, but was offline long enough for the shadow server to assume ownership of the messages and resubmit them. For example, a network card failure, or a long maintenance on the server would cause this scenario.
+  - **The server comes back online with the same transport database**: In this scenario, the particular transport server didn't fail, but was offline long enough for the shadow server to assume ownership of the messages and resubmit them. For example, a network card failure, or a long maintenance on the server would cause this scenario.
 
 The following table summarizes how shadow redundancy reacts to these two scenarios. For clarity, assume that the server that had an outage is named Mailbox01.
 

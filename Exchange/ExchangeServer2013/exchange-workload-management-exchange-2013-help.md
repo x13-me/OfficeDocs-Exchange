@@ -39,13 +39,13 @@ By default, user throttling in Exchange 2013 allows users to increase resource c
 
 Here are some highlights of the way Exchange controls how resources are consumed by individual users in Exchange 2013:
 
-  - **Burst allowances**   Burst allowances let your users perform short periods of increased resource consumption without experiencing any throttling.
+  - **Burst allowances**: Burst allowances let your users perform short periods of increased resource consumption without experiencing any throttling.
 
-  - **Recharge rate**   Recharge rate manages your users' resource consumption by using a resource budget system. You can set the rate at which your users' resource budgets are recharged. For example, a value of 600,000 (in milliseconds) implies that users' budgets get recharged at a rate of ten minutes of usage per hour.
+  - **Recharge rate**: Recharge rate manages your users' resource consumption by using a resource budget system. You can set the rate at which your users' resource budgets are recharged. For example, a value of 600,000 (in milliseconds) implies that users' budgets get recharged at a rate of ten minutes of usage per hour.
 
-  - **Traffic shaping**   When a user's resource usage reaches the configured limit over a period of time, that user is delayed for very short periods of time well in advance of causing a significant impact on a server. Users generally don't notice these "microdelays." This process enables Exchange 2013 to efficiently shape traffic without blocking users from being productive. Traffic shaping has less impact on your users than early lockout, and it significantly reduces the chance that a lockout will occur.
+  - **Traffic shaping**: When a user's resource usage reaches the configured limit over a period of time, that user is delayed for very short periods of time well in advance of causing a significant impact on a server. Users generally don't notice these "microdelays." This process enables Exchange 2013 to efficiently shape traffic without blocking users from being productive. Traffic shaping has less impact on your users than early lockout, and it significantly reduces the chance that a lockout will occur.
 
-  - **Maximum usage**   In rare circumstances, a user may consume a very high amount of resources over a short period of time. As a precaution, a user who reaches a maximum usage threshold may be temporarily blocked from using resources. Users who are temporarily blocked from resource usage are unblocked as soon as their usage budgets are recharged.
+  - **Maximum usage**: In rare circumstances, a user may consume a very high amount of resources over a short period of time. As a precaution, a user who reaches a maximum usage threshold may be temporarily blocked from using resources. Users who are temporarily blocked from resource usage are unblocked as soon as their usage budgets are recharged.
 
 For a list of cmdlets you can use to control how resources are consumed by individual users, see "Cmdlets to control how resources are used by individual users" later in this topic.
 

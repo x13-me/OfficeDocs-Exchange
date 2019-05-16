@@ -143,13 +143,13 @@ For detailed syntax and parameter information, see [Get-ManagementRoleAssignment
 
 To view a list of role assignments that use a specific custom scope, you need to first determine whether the scope is a recipient scope, configuration scope, exclusive recipient scope, or exclusive configuration scope. Each type of scope uses a different parameter on the **Get-ManagementRoleAssignment** cmdlet. The following lists each scope and its associated parameter:
 
-  - **Recipient scopes**   *CustomRecipientWriteScope*
+  - **Recipient scopes**: *CustomRecipientWriteScope*
 
-  - **Configuration scopes**   *CustomConfigWriteScope*
+  - **Configuration scopes**: *CustomConfigWriteScope*
 
-  - **Exclusive recipient scopes**   *ExclusiveRecipientWriteScope*
+  - **Exclusive recipient scopes**: *ExclusiveRecipientWriteScope*
 
-  - **Exclusive configuration scopes**   *ExclusiveConfigWriteScope*
+  - **Exclusive configuration scopes**: *ExclusiveConfigWriteScope*
 
 The syntax for each parameter is the same. Specify the name of the scope with the parameter that matches the type of scope it is.
 

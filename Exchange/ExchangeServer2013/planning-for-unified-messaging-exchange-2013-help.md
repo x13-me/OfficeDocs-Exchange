@@ -37,17 +37,17 @@ Generally, the simpler the Unified Messaging topology, the easier UM is to deplo
 
 The following are some of the areas that you should consider when planning for Unified Messaging in your organization:
 
-  - **Organizational requirements**   Evaluate your business needs, the usefulness of deploying a voice mail system, your physical network and business topology, and security requirements for your organization.
+  - **Organizational requirements**: Evaluate your business needs, the usefulness of deploying a voice mail system, your physical network and business topology, and security requirements for your organization.
 
-  - **Telephony requirements**   Review your existing telephony, circuit-switched network, and voice mail system.
+  - **Telephony requirements**: Review your existing telephony, circuit-switched network, and voice mail system.
 
-  - **Network requirements**   Analyze your network topology, your current packet-switched IP network design including your LAN and WAN connectivity points, and devices.
+  - **Network requirements**: Analyze your network topology, your current packet-switched IP network design including your LAN and WAN connectivity points, and devices.
 
-  - **Active Directory (directory service)**   Inspect your current implementation and design and think about how to integrate UM.
+  - **Active Directory (directory service)**: Inspect your current implementation and design and think about how to integrate UM.
 
-  - **Deployment model**   Decide whether you want to have a hybrid, online-only, or on-premises UM deployment.
+  - **Deployment model**: Decide whether you want to have a hybrid, online-only, or on-premises UM deployment.
 
-  - **Exchange requirements**   Determine the following:
+  - **Exchange requirements**: Determine the following:
     
       - How many users will be using voice mail.
     
@@ -59,7 +59,7 @@ The following are some of the areas that you should consider when planning for U
     
       - The best design for high availability and site resiliency. This includes UM system requirements, providing a highly available and scalable UM deployment, and system hardware requirements to ensure performance.
 
-  - **Integration with telephony components and devices**   Decide whether to use traditional telephony equipment or Microsoft Lync Server. Consider where to place VoIP gateways, telephony equipment, and Client Access and Mailbox servers, and whether you want to enable Enterprise Voice in your organization.
+  - **Integration with telephony components and devices**: Decide whether to use traditional telephony equipment or Microsoft Lync Server. Consider where to place VoIP gateways, telephony equipment, and Client Access and Mailbox servers, and whether you want to enable Enterprise Voice in your organization.
 
 ## Connecting your telephony network
 
@@ -67,7 +67,7 @@ Unified Messaging requires that you integrate your Exchange Server deployment wi
 
 **VoIP gateways** Choosing the correct VoIP gateway, IP PBX, SIP-enabled PBX, or SBC is just the first step in integrating your telephony network with UM. You must configure those devices to work with UM, deploy the required Client Access and Mailbox servers, and create and configure all necessary UM components. These components allow you to make the connection from your circuit-based protocol network to your IP data network and enable voice mail for your users.
 
-**Microsoft Lync Server**   Unified Messaging can use Microsoft Lync Server to combine voice messaging, instant messaging, enhanced presence, audio/video conferencing, and email into a familiar, integrated communications experience. Integrating UM and Microsoft Lync Server has the following benefits:
+**Microsoft Lync Server**: Unified Messaging can use Microsoft Lync Server to combine voice messaging, instant messaging, enhanced presence, audio/video conferencing, and email into a familiar, integrated communications experience. Integrating UM and Microsoft Lync Server has the following benefits:
 
   - Enhanced presence notifications across a variety of applications that keep users informed of the availability of contacts.
 
