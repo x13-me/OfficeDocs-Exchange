@@ -35,11 +35,11 @@ Receiving faxes
 
 ## Voice mail client support
 
-**Exchange ActiveSync clients**   The Microsoft Exchange ActiveSync protocol is used to connect mobile clients, such as those found on Internet-capable mobile devices, to an Exchange mailbox. Users can use mobile devices to access their mailbox and view email messages, view and change calendar and contact information, and listen to their voice mail messages. They can also synchronize email, voice mail, calendar items, and contact information with other devices.
+**Exchange ActiveSync clients**: The Microsoft Exchange ActiveSync protocol is used to connect mobile clients, such as those found on Internet-capable mobile devices, to an Exchange mailbox. Users can use mobile devices to access their mailbox and view email messages, view and change calendar and contact information, and listen to their voice mail messages. They can also synchronize email, voice mail, calendar items, and contact information with other devices.
 
-**Integration with Outlook**   Microsoft Outlook enables users to access their Exchange mailbox and view email messages in their Inbox, view and change calendar information, and listen to voice messages by using Microsoft Windows Media Player, which is embedded inside the email messages. By using a supported email client, users gain additional features, such as the Play on Phone functionality.
+**Integration with Outlook**: Microsoft Outlook enables users to access their Exchange mailbox and view email messages in their Inbox, view and change calendar information, and listen to voice messages by using Microsoft Windows Media Player, which is embedded inside the email messages. By using a supported email client, users gain additional features, such as the Play on Phone functionality.
 
-**Integration with Outlook Web App**   Microsoft Outlook Web App provides users with a set of UM interfaces and tools comparable to a full-featured email client like Outlook. With Outlook Web App, users can access their Exchange mailbox by using a compliant web browser. Like Outlook, Outlook Web App provides Windows Media Player embedded in email messages so that users can listen to voice messages, and enables users to access other features such as Play on Phone.
+**Integration with Outlook Web App**: Microsoft Outlook Web App provides users with a set of UM interfaces and tools comparable to a full-featured email client like Outlook. With Outlook Web App, users can access their Exchange mailbox by using a compliant web browser. Like Outlook, Outlook Web App provides Windows Media Player embedded in email messages so that users can listen to voice messages, and enables users to access other features such as Play on Phone.
 
 ## Outlook Voice Access
 

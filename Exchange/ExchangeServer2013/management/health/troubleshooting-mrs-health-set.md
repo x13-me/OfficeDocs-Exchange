@@ -139,7 +139,7 @@ This indicates that a mailbox is locked. To unlock the mailbox, run the followin
 
     New-MailboxRepairRequest -CorruptionType LockedMoveTarget -Identity <mailboxIdentity> [-Archive]
 
-**Note**   In this command, replace \<*mailboxIdentity*\> with the name of the mailbox that's provided in the email message as **MailboxIdentity**. If the mailbox is an archive mailbox, you must include the **-Archive** flag. You can determine whether a mailbox is a primary or archive mailbox by viewing the **MailboxGuid** field in the alert.
+**Note**: In this command, replace \<*mailboxIdentity*\> with the name of the mailbox that's provided in the email message as **MailboxIdentity**. If the mailbox is an archive mailbox, you must include the **-Archive** flag. You can determine whether a mailbox is a primary or archive mailbox by viewing the **MailboxGuid** field in the alert.
 
 **Corrupt Migration Job**
 

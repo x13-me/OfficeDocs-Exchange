@@ -97,7 +97,7 @@ When you receive an alert from a health set, the email message contains the foll
 
   - Full exception trace of the last error, including diagnostic data and specific HTTP header information
     
-    **Note**   You can use the information in the full exception trace to help troubleshoot the issue.
+    **Note**: You can use the information in the full exception trace to help troubleshoot the issue.
 
 It's possible that the service recovered after it issued the alert. Therefore, when you receive an alert that specifies that the health set is unhealthy, first verify that the issue still exists. If the issue does exist, perform the appropriate recovery actions outlined in the following sections.
 

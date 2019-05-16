@@ -93,17 +93,17 @@ To connect to a destination SMTP server by using Telnet on port 25, you must use
 
 In this example, the following values are used:
 
-  - **Destination SMTP server**   mail1.fabrikam.com
+  - **Destination SMTP server**: mail1.fabrikam.com
 
-  - **Source domain**   contoso.com
+  - **Source domain**: contoso.com
 
-  - **Sender's e-mail address**   chris@contoso.com
+  - **Sender's e-mail address**: chris@contoso.com
 
-  - **Recipient's e-mail address**   kate@fabrikam.com
+  - **Recipient's e-mail address**: kate@fabrikam.com
 
-  - **Message subject**   Test from Contoso
+  - **Message subject**: Test from Contoso
 
-  - **Message body**   This is a test message
+  - **Message body**: This is a test message
 
 
 > [!NOTE]
@@ -180,9 +180,9 @@ This section provides information about responses that may be provided to the fo
 
 ## Open mail1.fabrikam.com 25
 
-**Successful Response**   `220 mail1.fabrikam.com Microsoft ESMTP MAIL Service ready at <day-date-time>`
+**Successful Response**: `220 mail1.fabrikam.com Microsoft ESMTP MAIL Service ready at <day-date-time>`
 
-**Failure Response**   `Connecting to mail1.fabrikam.com...Could not open connection to the host, on port 25: Connect failed`
+**Failure Response**: `Connecting to mail1.fabrikam.com...Could not open connection to the host, on port 25: Connect failed`
 
 **Possible Reasons for Failure**
 
@@ -198,11 +198,11 @@ This section provides information about responses that may be provided to the fo
 
 ## EHLO contoso.com
 
-**Successful Response**   `250 mail1.fabrikam.com Hello [<sourceIPaddress>]`
+**Successful Response**: `250 mail1.fabrikam.com Hello [<sourceIPaddress>]`
 
-**Failure Response**   `501 5.5.4 Invalid domain name`
+**Failure Response**: `501 5.5.4 Invalid domain name`
 
-**Possible Reasons for Failure**   There are invalid characters in the domain name. Alternatively, there are connection restrictions on the destination SMTP server.
+**Possible Reasons for Failure**: There are invalid characters in the domain name. Alternatively, there are connection restrictions on the destination SMTP server.
 
 
 > [!NOTE]
@@ -212,21 +212,21 @@ This section provides information about responses that may be provided to the fo
 
 ## MAIL FROM:chris@contoso.com
 
-**Successful Response**   `250 2.1.0 Sender OK`
+**Successful Response**: `250 2.1.0 Sender OK`
 
-**Failure Response**   `550 5.1.7 Invalid address`
+**Failure Response**: `550 5.1.7 Invalid address`
 
-**Possible Reasons for Failure**   There is a syntax error in the sender's e-mail address.
+**Possible Reasons for Failure**: There is a syntax error in the sender's e-mail address.
 
-**Failure Response**   `530 5.7.1 Client was not authenticated`
+**Failure Response**: `530 5.7.1 Client was not authenticated`
 
-**Possible Reasons for Failure**   The destination server does not accept anonymous message submissions. You receive this error if you try to use Telnet to submit a message directly to a Hub Transport server.
+**Possible Reasons for Failure**: The destination server does not accept anonymous message submissions. You receive this error if you try to use Telnet to submit a message directly to a Hub Transport server.
 
 ## RCPT TO:kate@fabrikam.com NOTIFY=success,failure
 
-**Successful Response**   `250 2.1.5 Recipient OK`
+**Successful Response**: `250 2.1.5 Recipient OK`
 
-**Failure Response**   `550 5.1.1 User unknown`
+**Failure Response**: `550 5.1.1 User unknown`
 
-**Possible Reasons for Failure**   The specified recipient does not exist in the organization.
+**Possible Reasons for Failure**: The specified recipient does not exist in the organization.
 

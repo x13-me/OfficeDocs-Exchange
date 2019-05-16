@@ -29,9 +29,9 @@ _**Applies to:** Exchange Online, Exchange Server 2013_
 
 Every management role, whether it's a built-in role or a custom role, has management scopes. Management scopes can be either of the following:
 
-  - **Regular**   A *regular scope* isn't exclusive. It determines where, in Active Directory, objects can be viewed or modified by users assigned the management role. In general, a management role indicates what you can create or modify, and a management role scope indicates where you can create or modify. Regular scopes can be either implicit or explicit scopes, both of which are discussed later in this topic.
+  - **Regular**: A *regular scope* isn't exclusive. It determines where, in Active Directory, objects can be viewed or modified by users assigned the management role. In general, a management role indicates what you can create or modify, and a management role scope indicates where you can create or modify. Regular scopes can be either implicit or explicit scopes, both of which are discussed later in this topic.
 
-  - **Exclusive**   An *exclusive scope* behaves almost the same as a regular scope. The key difference is that it enables you to deny users access to objects contained within the exclusive scope if those users aren't assigned a role associated with the exclusive scope. All exclusive scopes are explicit scopes, which are discussed later in this topic.
+  - **Exclusive**: An *exclusive scope* behaves almost the same as a regular scope. The key difference is that it enables you to deny users access to objects contained within the exclusive scope if those users aren't assigned a role associated with the exclusive scope. All exclusive scopes are explicit scopes, which are discussed later in this topic.
     
     For more information about exclusive scopes, see [Understanding exclusive scopes](understanding-exclusive-scopes-exchange-2013-help.md).
 
@@ -51,13 +51,13 @@ Scopes can be inherited from the management role, specified as a predefined rela
 
 Each role can have the following types of scopes:
 
-  - **Recipient read scope**   The implicit recipient read scope determines what recipient objects the user assigned the management role is allowed to read from Active Directory.
+  - **Recipient read scope**: The implicit recipient read scope determines what recipient objects the user assigned the management role is allowed to read from Active Directory.
 
-  - **Recipient write scope**   The implicit recipient write scope determines what recipient objects the user assigned the management role is allowed to modify in Active Directory.
+  - **Recipient write scope**: The implicit recipient write scope determines what recipient objects the user assigned the management role is allowed to modify in Active Directory.
 
-  - **Configuration read scope**   The implicit configuration read scope determines what configuration objects the user assigned the management role is allowed to read from Active Directory.
+  - **Configuration read scope**: The implicit configuration read scope determines what configuration objects the user assigned the management role is allowed to read from Active Directory.
 
-  - **Configuration write scope**    The implicit configuration write scope determines what organizational, database, and server objects the user assigned the management role is allowed to modify in Active Directory.
+  - **Configuration write scope**:  The implicit configuration write scope determines what organizational, database, and server objects the user assigned the management role is allowed to modify in Active Directory.
 
 Recipient objects include mailboxes, distribution groups, mail enabled users, and other objects. Configuration objects include servers running Microsoft Exchange Server 2013, and databases located on servers running Exchange. Each type of scope can be either an implicit scope or explicit scope.
 
@@ -783,11 +783,11 @@ Custom scopes are needed when neither the implicit write scope nor the predefine
 
 As with predefined relative scopes, custom scopes override the implicit write and organization configuration scopes defined on management roles. The implicit read scope on management roles continue to apply and the resulting custom scope must not exceed the boundaries of the implicit read scope. You can create the following three types of custom scopes:
 
-  - **OU scope**   An OU scope, which is the simplest custom scope, is created using the *RecipientOrganizationalUnitScope* parameter on the **New-ManagementRoleAssignment** cmdlet. By specifying an OU scope when a role is assigned, the role assignee assigned the role can modify only recipient objects within that OU. For more information about how to add a management role assignment with an OU scope, see [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md).
+  - **OU scope**: An OU scope, which is the simplest custom scope, is created using the *RecipientOrganizationalUnitScope* parameter on the **New-ManagementRoleAssignment** cmdlet. By specifying an OU scope when a role is assigned, the role assignee assigned the role can modify only recipient objects within that OU. For more information about how to add a management role assignment with an OU scope, see [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md).
 
-  - **Recipient filter scope**   Recipient filter scopes use filters to target specific recipients based on recipient type or other recipient properties such as department, manager, location, and more. For more information, see the Recipient Filter Scopes section.
+  - **Recipient filter scope**: Recipient filter scopes use filters to target specific recipients based on recipient type or other recipient properties such as department, manager, location, and more. For more information, see the Recipient Filter Scopes section.
 
-  - **Configuration scope**   Configuration scopes use filters or lists to target specific servers based on server lists or filterable properties that can be defined on servers, such as an Active Directory site or a server role. Configuration scopes can also use database scopes to target specific databases based on database lists or filterable database properties. For more information, see the Configuration Scopes section.
+  - **Configuration scope**: Configuration scopes use filters or lists to target specific servers based on server lists or filterable properties that can be defined on servers, such as an Active Directory site or a server role. Configuration scopes can also use database scopes to target specific databases based on database lists or filterable database properties. For more information, see the Configuration Scopes section.
 
 Simple and broad or complex and granular recipient and configuration custom scopes can be created by using the **New-ManagementScope** cmdlet. When you create either a recipient or configuration scope, only the recipient, server, or database objects that match their respective scopes are returned. When these scopes are applied to a role assignment using the **New-ManagementRoleAssignment** or **Set-ManagementRoleAssignment** cmdlets, only the objects that match the scopes can be modified by the role assignees who are assigned the role. After a custom scope has been created, you can't change the scope type. A recipient scope is always a recipient scope and a configuration scope is always a configuration scope.
 
@@ -809,17 +809,17 @@ For more information about filter syntax and for a full list of filterable recip
 
 The following are the two types of configuration scopes offered in Exchange 2013:
 
-  - **Server scopes**   There are two types of server scopes, server filter scopes and server list scopes. Server configuration, including Receive connectors, transport queues, server certificates, virtual directories, and so on, can be managed if a server object is included in a server scope.
+  - **Server scopes**: There are two types of server scopes, server filter scopes and server list scopes. Server configuration, including Receive connectors, transport queues, server certificates, virtual directories, and so on, can be managed if a server object is included in a server scope.
     
-      - **Server filter scopes**   Server filter scopes enable you to control which server objects role assignees can manage by evaluating one or more properties on a server object against a value that you specify in a filter statement. To create a server filter scope, use the *ServerRestrictionFilter* parameter on the **New-ManagementScope** cmdlet.
+      - **Server filter scopes**: Server filter scopes enable you to control which server objects role assignees can manage by evaluating one or more properties on a server object against a value that you specify in a filter statement. To create a server filter scope, use the *ServerRestrictionFilter* parameter on the **New-ManagementScope** cmdlet.
     
-      - **Server list scopes**   Server list scopes enable you to control which server objects role assignees can manage by defining a list of servers that a role assignee can access. To create a server list scope, use the *ServerList* parameter on the **New-ManagementScope** cmdlet.
+      - **Server list scopes**: Server list scopes enable you to control which server objects role assignees can manage by defining a list of servers that a role assignee can access. To create a server list scope, use the *ServerList* parameter on the **New-ManagementScope** cmdlet.
 
-  - **Database scopes**   There are two types of database scopes, database filter scopes and database list scopes. Database configuration that can be managed if a database object is included in a database scope include database quota limits, database maintenance, public folder replication, whether a database is mounted, and so on. In addition to database configuration, database scopes can also be used to control which databases recipients can be created in. If you have pre-Exchange 2010 SP1 servers in your organization, see the Database scopes and previous versions of Exchange section later in this topic.
+  - **Database scopes**: There are two types of database scopes, database filter scopes and database list scopes. Database configuration that can be managed if a database object is included in a database scope include database quota limits, database maintenance, public folder replication, whether a database is mounted, and so on. In addition to database configuration, database scopes can also be used to control which databases recipients can be created in. If you have pre-Exchange 2010 SP1 servers in your organization, see the Database scopes and previous versions of Exchange section later in this topic.
     
-      - **Database filter scopes**   Database filter scopes enable you to control which database objects role assignees can manage by evaluating one or more properties on a database object against a value that you specify in a filter statement. To create a database filter scope, use the *DatabaseRestrictionFilter* parameter on the **New-ManagementScope** cmdlet.
+      - **Database filter scopes**: Database filter scopes enable you to control which database objects role assignees can manage by evaluating one or more properties on a database object against a value that you specify in a filter statement. To create a database filter scope, use the *DatabaseRestrictionFilter* parameter on the **New-ManagementScope** cmdlet.
     
-      - **Database list scopes**   Database list scopes enable you to control which database objects role assignees can manage by defining a list of databases that a role assignee can access. To create a database list scope, use the *DatabaseList* parameter on the **New-ManagementScope** cmdlet.
+      - **Database list scopes**: Database list scopes enable you to control which database objects role assignees can manage by defining a list of databases that a role assignee can access. To create a database list scope, use the *DatabaseList* parameter on the **New-ManagementScope** cmdlet.
 
 For more information about filter syntax and for a full list of filterable server and database properties, see [Understanding management role scope filters](understanding-management-role-scope-filters-exchange-2013-help.md).
 
@@ -839,13 +839,13 @@ Exchange features may require either server scopes, database scopes, or both, to
 
 Some cmdlets may use configuration scopes that aren't immediately obvious. The following table includes a list of cmdlets and the configuration scopes that you can use to control their usage. For cmdlets included in the recipients feature area, configuration scopes enable you to control on which databases recipients can be created. They don't control which recipients can be managed. The **Required scopes** column can contain the following:
 
-  - **Database**   To run the cmdlet, the role assignee must be assigned a role assignment with a database scope that includes the database to be managed or the role's implicit configuration write scope must include the database to be managed.
+  - **Database**: To run the cmdlet, the role assignee must be assigned a role assignment with a database scope that includes the database to be managed or the role's implicit configuration write scope must include the database to be managed.
 
-  - **Server**   To run the cmdlet, the role assignee must be assigned a role assignment with a server scope that includes the server to be managed or the role's implicit configuration write scope must include the server to be managed.
+  - **Server**: To run the cmdlet, the role assignee must be assigned a role assignment with a server scope that includes the server to be managed or the role's implicit configuration write scope must include the server to be managed.
 
-  - **Server or database**   To run the cmdlet, the role assignee must be assigned a role assignment where either a database scope includes the database being managed, or where a server scope includes the server where the database is located. Or, the role's implicit configuration write scope must contain the database to be managed, or contain the server where the database is located, and the role assignment can't have a custom write scope.
+  - **Server or database**: To run the cmdlet, the role assignee must be assigned a role assignment where either a database scope includes the database being managed, or where a server scope includes the server where the database is located. Or, the role's implicit configuration write scope must contain the database to be managed, or contain the server where the database is located, and the role assignment can't have a custom write scope.
 
-  - **Server and database**   To run this cmdlet, the role assignee must be assigned two role assignments. The first role assignment must include a database scope that includes the database to be managed. The second role assignment must include a server scope that includes the server where the database is located. The role assignments can have custom configuration scopes defined, or the role assignments can inherit the implicit configuration write scope from the role. To inherit the implicit write scope from the role, the role assignment can't have a custom write scope.
+  - **Server and database**: To run this cmdlet, the role assignee must be assigned two role assignments. The first role assignment must include a database scope that includes the database to be managed. The second role assignment must include a server scope that includes the server where the database is located. The role assignments can have custom configuration scopes defined, or the role assignments can inherit the implicit configuration write scope from the role. To inherit the implicit write scope from the role, the role assignment can't have a custom write scope.
 
 ### Feature areas and applicable database and server scopes
 

@@ -31,11 +31,11 @@ You can add an Edge Transport server to an existing Exchange 2013 organization. 
 
 When you're planning to deploy Edge Transport servers, you should consider the following issues:
 
-  - **Server Capacity**   Planning for server capacity includes planning to conduct performance monitoring of the Edge Transport server. Performance monitoring will help you understand how hard the server is working. This information will determine the capacity of your current hardware configuration.
+  - **Server Capacity**: Planning for server capacity includes planning to conduct performance monitoring of the Edge Transport server. Performance monitoring will help you understand how hard the server is working. This information will determine the capacity of your current hardware configuration.
 
-  - **Transport Features**   The Edge Transport server can provide anti-spam protection at the edge of the network. As part of your planning process, you should determine the anti-spam features that you will enable at the Edge Transport server and how they will be configured.
+  - **Transport Features**: The Edge Transport server can provide anti-spam protection at the edge of the network. As part of your planning process, you should determine the anti-spam features that you will enable at the Edge Transport server and how they will be configured.
 
-  - **Security**   The Edge Transport server role is designed to have a minimal attack surface. Therefore, it's important to correctly secure and manage both the physical access and network access to the server. Planning for security will help you make sure that IP connections are only enabled from authorized servers and from authorized users. For more information, see the [Deployment security checklist](deployment-security-checklist-exchange-2013-help.md).
+  - **Security**: The Edge Transport server role is designed to have a minimal attack surface. Therefore, it's important to correctly secure and manage both the physical access and network access to the server. Planning for security will help you make sure that IP connections are only enabled from authorized servers and from authorized users. For more information, see the [Deployment security checklist](deployment-security-checklist-exchange-2013-help.md).
     
     The recommended practice is to put the Edge Transport server within a perimeter network. To make sure that the server can send and receive e-mail and receive recipient and configuration data updates from the Microsoft Exchange EdgeSync service, you must allow communication through the ports that are listed in the following table.
     
@@ -96,7 +96,7 @@ When you're planning to deploy Edge Transport servers, you should consider the f
 
 
 
-  - **EdgeSync**   The recommended deployment process is to create an Edge Subscription to subscribe the Edge Transport server to the Exchange organization. When you create an Edge Subscription, recipient and configuration data is replicated from Active Directory to AD LDS. You subscribe an Edge Transport server to an Active Directory site. Then the Microsoft Exchange EdgeSync service that is running on the Mailbox servers in that site periodically updates AD LDS by synchronizing data from Active Directory. The Edge Subscription process automatically provisions the Send connectors that are required to enable mail flow from the Exchange organization to the Internet through an Edge Transport server. If you're using the recipient lookup or safelist aggregation features on the Edge Transport server, you must subscribe the Edge Transport server to the organization.
+  - **EdgeSync**: The recommended deployment process is to create an Edge Subscription to subscribe the Edge Transport server to the Exchange organization. When you create an Edge Subscription, recipient and configuration data is replicated from Active Directory to AD LDS. You subscribe an Edge Transport server to an Active Directory site. Then the Microsoft Exchange EdgeSync service that is running on the Mailbox servers in that site periodically updates AD LDS by synchronizing data from Active Directory. The Edge Subscription process automatically provisions the Send connectors that are required to enable mail flow from the Exchange organization to the Internet through an Edge Transport server. If you're using the recipient lookup or safelist aggregation features on the Edge Transport server, you must subscribe the Edge Transport server to the organization.
 
 ## Configure DNS settings for the Edge Transport server role
 

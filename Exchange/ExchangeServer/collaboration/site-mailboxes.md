@@ -43,9 +43,9 @@ Site mailbox quotas can be set by using the **SiteMailboxProvisioningPolicy** cm
 
 |**Quota**|**Description**|**Default setting**|
 |:-----|:-----|:-----|
-|IssueWarningQuota  <br/> |The _IssueWarningQuota_ parameter specifies the site mailbox size that triggers a warning message to the site mailbox  <br/> |4.5 GB  <br/> |
-|MaxReceiveSize  <br/> |The _MaxReceiveSize_ parameter specifies the maximum size of email messages that can be received by the site mailbox.  <br/> |36 MB  <br/> |
-|ProhibitSendReceiveQuota  <br/> |The _ProhibitSendReceiveQuota_ parameter specifies the size at which the site mailbox can no longer send or receive messages.  <br/> |5 GB  <br/> |
+|IssueWarningQuota|The _IssueWarningQuota_ parameter specifies the site mailbox size that triggers a warning message to the site mailbox|4.5 GB|
+|MaxReceiveSize|The _MaxReceiveSize_ parameter specifies the maximum size of email messages that can be received by the site mailbox.|36 MB|
+|ProhibitSendReceiveQuota|The _ProhibitSendReceiveQuota_ parameter specifies the size at which the site mailbox can no longer send or receive messages.|5 GB|
 
 For more information about how to configure site mailbox provisioning policies, see [Manage site mailbox provisioning policies](http://technet.microsoft.com/library/2f160d1a-a031-461f-8d29-c9cd49ca1645.aspx).
 

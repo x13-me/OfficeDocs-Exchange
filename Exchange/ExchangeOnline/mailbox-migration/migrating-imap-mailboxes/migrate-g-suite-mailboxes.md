@@ -183,7 +183,7 @@ You use a migration batch to migrate groups of Gmail mailboxes to Office 365 at 
 
 9. On the **IMAP migration configuration** page, accept the default values, and click **Next**.
 
-10. On the **Move configuration** page, type the *name*  (no spaces or special characters) of the migration batch in the box (for example, Test5-migration). The default migration batch name that's displayed is the name of the migration file that you specified. The migration batch name is displayed in the list on the migration dashboard after you create the migration batch.
+10. On the **Move configuration** page, type the *name* (no spaces or special characters) of the migration batch in the box (for example, Test5-migration). The default migration batch name that's displayed is the name of the migration file that you specified. The migration batch name is displayed in the list on the migration dashboard after you create the migration batch.
 
     You can also enter the names of the folders you want to exclude from migration. For example, Shared, Junk Email, and Deleted. Click **Add** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to add them to the excluded list. You can also click **Edit** ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to change a folder name and **Delete** ![Remove icon](../media/adf01106-cc79-475c-8673-065371c1897b.gif) to delete the folder name.
 

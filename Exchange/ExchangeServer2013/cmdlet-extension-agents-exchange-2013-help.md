@@ -145,13 +145,13 @@ You can use the `Scripting agent` cmdlet extension agent in Exchange 2013 to ins
 
 Every time an Exchange cmdlet is run, the cmdlet invokes the `Scripting agent` cmdlet extension agent. When this agent is invoked, the cmdlet checks whether any scripts are configured to be invoked by the cmdlet. If a script should be run for a cmdlet, the cmdlet tries to invoke any APIs defined in the script. The following APIs are available and are invoked in the following order:
 
-1.  **ProvisionDefaultProperties**   This API can be used to set values of properties on objects when they're created. When you set a value, that value is returned to the cmdlet and the cmdlet sets the value on the property. You can fill in values on properties if the user didn't specify a value, or you can override the value specified by the user. This API respects the values set by higher priority agents. The `Scripting agent` cmdlet extension agent won't overwrite the values set by higher priority agents.
+1.  **ProvisionDefaultProperties**: This API can be used to set values of properties on objects when they're created. When you set a value, that value is returned to the cmdlet and the cmdlet sets the value on the property. You can fill in values on properties if the user didn't specify a value, or you can override the value specified by the user. This API respects the values set by higher priority agents. The `Scripting agent` cmdlet extension agent won't overwrite the values set by higher priority agents.
 
-2.  **UpdateAffectedIConfigurable**   This API can be used to set values of properties on objects after all other processing has been completed, but the `Validate` API hasn't yet been invoked. This API respects the values set by higher priority agents. The `Scripting agent` cmdlet extension agent won't overwrite the values set by higher priority agents.
+2.  **UpdateAffectedIConfigurable**: This API can be used to set values of properties on objects after all other processing has been completed, but the `Validate` API hasn't yet been invoked. This API respects the values set by higher priority agents. The `Scripting agent` cmdlet extension agent won't overwrite the values set by higher priority agents.
 
-3.  **Validate**   This API can be used to validate the values on an object's properties that are about to be set by the cmdlet. This API is called just before a cmdlet writes any data. You can configure validation checks that allow a cmdlet to either succeed or fail. If a cmdlet passes the validation checks in this API, the cmdlet is allowed to write the data. If the cmdlet fails the validation checks, it returns any errors defined in this API.
+3.  **Validate**: This API can be used to validate the values on an object's properties that are about to be set by the cmdlet. This API is called just before a cmdlet writes any data. You can configure validation checks that allow a cmdlet to either succeed or fail. If a cmdlet passes the validation checks in this API, the cmdlet is allowed to write the data. If the cmdlet fails the validation checks, it returns any errors defined in this API.
 
-4.  **OnComplete**   This API is used after all cmdlet processing is complete. It can be used to perform post-processing tasks, such as writing data to an external database.
+4.  **OnComplete**: This API is used after all cmdlet processing is complete. It can be used to perform post-processing tasks, such as writing data to an external database.
 
 
 > [!NOTE]

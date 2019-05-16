@@ -426,7 +426,7 @@ Set-OrganizationConfig -PublicFolderMailboxesLockedForNewConnections $true
 ```
 
 > [!NOTE]
-> If you are not able to access the `-PublicFolderMailboxesLockedForNewConnections` parameter, it could be because your Active Directory was not prepared during the CU upgrade, as we advised above in *What do you need to know before you begin?*  See [Prepare Active Directory and Domains](https://technet.microsoft.com/library/f895e1ce-d766-4352-ac46-ec959c9954a9.aspx) for more information. > Also note that any users who need access to public folders should be migrated first, **before** you migrate the public folders themselves.
+> If you are not able to access the `-PublicFolderMailboxesLockedForNewConnections` parameter, it could be because your Active Directory was not prepared during the CU upgrade, as we advised above in *What do you need to know before you begin?*. See [Prepare Active Directory and Domains](https://technet.microsoft.com/library/f895e1ce-d766-4352-ac46-ec959c9954a9.aspx) for more information. > Also note that any users who need access to public folders should be migrated first, **before** you migrate the public folders themselves.
 
 If your organization has public folder mailboxes on multiple Exchange 2013 servers, you'll need to wait until AD replication is complete. Once complete, you can confirm that all public folder mailboxes have picked up the `PublicFolderMailboxesLockedForNewConnections` flag, and that any pending changes users recently made to their public folders have converged across the organization. All of this could take several hours.
 

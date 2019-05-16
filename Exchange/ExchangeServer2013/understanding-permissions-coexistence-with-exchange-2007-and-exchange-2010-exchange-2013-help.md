@@ -158,15 +158,15 @@ The Exchange 2007 administrative model leverages Active Directory forests to def
 
 Exchange 2007 provides the following predefined administrator roles:
 
-  - **Exchange Organization Administrator role**   This role grants permissions to control all aspects of the Exchange 2007 organization. Additionally, an administrator who has this role can grant permissions to other Exchange administrators. This role is granted to the account that you use to install Exchange 2007.
+  - **Exchange Organization Administrator role**: This role grants permissions to control all aspects of the Exchange 2007 organization. Additionally, an administrator who has this role can grant permissions to other Exchange administrators. This role is granted to the account that you use to install Exchange 2007.
 
-  - **Exchange View-Only Administrator role**   This role grants permissions to view Exchange configuration. However, an administrator who has this role can't modify objects in the Exchange 2007 organization.
+  - **Exchange View-Only Administrator role**: This role grants permissions to view Exchange configuration. However, an administrator who has this role can't modify objects in the Exchange 2007 organization.
 
-  - **Exchange Recipient Administrator role**   This role grants permissions to manage e-mail recipients. An administrator who has this role can modify Exchange-related items for users, groups, contacts, and distribution groups.
+  - **Exchange Recipient Administrator role**: This role grants permissions to manage e-mail recipients. An administrator who has this role can modify Exchange-related items for users, groups, contacts, and distribution groups.
 
-  - **Exchange Server Administrator role**   This role grants permissions to manage a specific server. However, this role doesn't grant permissions to perform actions that have a global impact on the Exchange 2007 organization.
+  - **Exchange Server Administrator role**: This role grants permissions to manage a specific server. However, this role doesn't grant permissions to perform actions that have a global impact on the Exchange 2007 organization.
 
-  - **Exchange Public Folder Administrator role**   This role was added in Exchange 2007 Service Pack 1**.** This role grants permissions to manage public folders in the Exchange 2007 organization.
+  - **Exchange Public Folder Administrator role**: This role was added in Exchange 2007 Service Pack 1**.** This role grants permissions to manage public folders in the Exchange 2007 organization.
 
 This permissions model uses USGs for all roles except for the Exchange Server Administrator role. When you run the Exchange 2007 **Setup /PrepareAD** command, the Setup program creates the USGs in the root domain and gives a forest-wide scope to the USGs. The USGs are assigned ACLs to manage Exchange objects throughout Active Directory.
 
@@ -344,15 +344,15 @@ Management scopes provide built-in scopes and custom scopes to define the object
 
 You can create the following types of management scopes:
 
-  - **Predefined relative**   Predefined relative scopes are included in Exchange 2013. You can control what a user sees and what a user modifies. For example, predefined relative scopes can control whether users see only information about themselves or information about the entire organization.
+  - **Predefined relative**: Predefined relative scopes are included in Exchange 2013. You can control what a user sees and what a user modifies. For example, predefined relative scopes can control whether users see only information about themselves or information about the entire organization.
 
-  - **Recipient**   Recipient scopes control which recipients an administrator can create, modify, or delete. These selections can be based on an organizational unit (OU), a recipient filter, or both. Recipient filters specify the criteria that a recipient must match to be included in the scope. For example, you might create a recipient filter scope that includes all users in a certain location or in a specific department. You can even combine OUs and recipient filters to match only users who are within a specific OU and who report to a specific manager.
+  - **Recipient**: Recipient scopes control which recipients an administrator can create, modify, or delete. These selections can be based on an organizational unit (OU), a recipient filter, or both. Recipient filters specify the criteria that a recipient must match to be included in the scope. For example, you might create a recipient filter scope that includes all users in a certain location or in a specific department. You can even combine OUs and recipient filters to match only users who are within a specific OU and who report to a specific manager.
 
-  - **Server**   Server scopes control which servers an administrator can manage. You can specify either server lists or server filters. For server lists, you define a static list of servers that can be managed. Server filters work in the same manner as recipient filters in that you can specify the criteria that have to be matched. For example, you might create a server scope that matches all servers within a particular Active Directory site.
+  - **Server**: Server scopes control which servers an administrator can manage. You can specify either server lists or server filters. For server lists, you define a static list of servers that can be managed. Server filters work in the same manner as recipient filters in that you can specify the criteria that have to be matched. For example, you might create a server scope that matches all servers within a particular Active Directory site.
 
-  - **Database**   Database scopes control which databases an administrator can manage. They can also control which databases mailboxes can be created on or which databases mailboxes can be moved to. Like server scopes, they can be defined as lists or as filters. For example, you might create a list or filter that allows administrators to create mailboxes on or move mailboxes to specific mailbox databases managed by a specific subsidiary.
+  - **Database**: Database scopes control which databases an administrator can manage. They can also control which databases mailboxes can be created on or which databases mailboxes can be moved to. Like server scopes, they can be defined as lists or as filters. For example, you might create a list or filter that allows administrators to create mailboxes on or move mailboxes to specific mailbox databases managed by a specific subsidiary.
 
-  - **Exclusive**   Recipient, server, and database scopes can also be created as exclusive scopes. Exclusive scopes work in the same manner as deny access ACEs in ACLs. If anything matches an exclusive scope, only the administrators assigned an exclusive scope can manage that object. This is true even if another scope that isn't exclusive matches the same object. This is especially useful when you might want only a few, highly trusted individuals to be able to manage an executive's mailbox. Even if another regular recipient scope is broader and includes the executive's mailbox in the scope, the administrators assigned the broader, regular recipient scope won't be able to manage that executive's mailbox unless they are also assigned the exclusive scope.
+  - **Exclusive**: Recipient, server, and database scopes can also be created as exclusive scopes. Exclusive scopes work in the same manner as deny access ACEs in ACLs. If anything matches an exclusive scope, only the administrators assigned an exclusive scope can manage that object. This is true even if another scope that isn't exclusive matches the same object. This is especially useful when you might want only a few, highly trusted individuals to be able to manage an executive's mailbox. Even if another regular recipient scope is broader and includes the executive's mailbox in the scope, the administrators assigned the broader, regular recipient scope won't be able to manage that executive's mailbox unless they are also assigned the exclusive scope.
 
 Management scopes are used with management roles, management role assignments, and management role groups to control who can manage what objects and in what manner they can manage those objects. For more information, see the following topics:
 

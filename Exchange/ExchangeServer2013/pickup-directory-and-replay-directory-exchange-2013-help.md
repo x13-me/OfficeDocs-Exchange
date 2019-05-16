@@ -136,9 +136,9 @@ The Pickup directory adds its own `Received` header field to a message as part o
 
 The Pickup directory modifies the following message header fields if they're missing or malformed:
 
-  - **Message-Id**   If the `Message-Id` field is missing or empty, the Pickup directory adds a Message-Id field by using the format *\<GUID\>*@*\<defaultdomain\>*.
+  - **Message-Id**: If the `Message-Id` field is missing or empty, the Pickup directory adds a Message-Id field by using the format *\<GUID\>*@*\<defaultdomain\>*.
 
-  - **Date**   If the `Date` field is missing or malformed, the Pickup directory adds the date and time of message processing by the Pickup directory.
+  - **Date**: If the `Date` field is missing or malformed, the Pickup directory adds the date and time of message processing by the Pickup directory.
 
 ## Replay directory message file requirements
 
@@ -158,7 +158,7 @@ A message file copied to the Replay directory must meet the following requiremen
 
 The X-Headers described in the following list are required by messages in the Replay directory:
 
-  - **X-Sender**   This X-Header replaces the `From` message header field requirement in a typical SMTP message. One `X-Sender` field that contains one email address must exist. The Replay directory ignores the `From` message header field if it's present, although the recipient's email client displays the value of the `From` message header field as the sender of the message. Other parameters usually exist in the `X-Sender` field, as shown in the following example.
+  - **X-Sender**: This X-Header replaces the `From` message header field requirement in a typical SMTP message. One `X-Sender` field that contains one email address must exist. The Replay directory ignores the `From` message header field if it's present, although the recipient's email client displays the value of the `From` message header field as the sender of the message. Other parameters usually exist in the `X-Sender` field, as shown in the following example.
     
     ```text
     X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
@@ -170,7 +170,7 @@ The X-Headers described in the following list are required by messages in the Re
 
 
 
-  - **X-Receiver**   This X-Header replaces the `To` message header field requirement in a typical SMTP message. At least one `X-Receiver` field that contains one email address must exist. Multiple `X-Receiver` fields are allowed for multiple recipients. The Replay directory ignores the `To` message header fields if they're present, although the recipient's email client displays the values of the `To` message header fields as the recipients of the message. Other optional parameters may exist in the `X-Receiver` fields, as shown in the following example.
+  - **X-Receiver**: This X-Header replaces the `To` message header field requirement in a typical SMTP message. At least one `X-Receiver` field that contains one email address must exist. Multiple `X-Receiver` fields are allowed for multiple recipients. The Replay directory ignores the `To` message header fields if they're present, although the recipient's email client displays the values of the `To` message header fields as the recipients of the message. Other optional parameters may exist in the `X-Receiver` fields, as shown in the following example.
     
     ```text
     X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
@@ -184,17 +184,17 @@ The X-Headers described in the following list are required by messages in the Re
 
 The X-Headers described in the following list are optional for message files in the Replay directory:
 
-  - **X-CreatedBy**   Used for header firewall functionality. If this X-Header exists, it must not be blank. If the `X-CreatedBy` field doesn't exist, it's added with a value of **Unspecified**. Typically, the value of this field is **MSExchange15**, but it also may contain the non-SMTP address space type set on a Send connector, such as **Notes**.
+  - **X-CreatedBy**: Used for header firewall functionality. If this X-Header exists, it must not be blank. If the `X-CreatedBy` field doesn't exist, it's added with a value of **Unspecified**. Typically, the value of this field is **MSExchange15**, but it also may contain the non-SMTP address space type set on a Send connector, such as **Notes**.
 
-  - **X-EndOfInjectedXHeaders**   Size in bytes of all the X-Headers present. This X-Header may be used as a marker to indicate the last X-Header before the regular message header fields start.
+  - **X-EndOfInjectedXHeaders**: Size in bytes of all the X-Headers present. This X-Header may be used as a marker to indicate the last X-Header before the regular message header fields start.
 
-  - **X-ExtendedMessageProps**   Extended message properties for the message.
+  - **X-ExtendedMessageProps**: Extended message properties for the message.
 
-  - **X-HeloDomain**   HELO/EHLO domain string presented during the initial SMTP protocol conversation.
+  - **X-HeloDomain**: HELO/EHLO domain string presented during the initial SMTP protocol conversation.
 
-  - **X-Source**   Used by Queue Viewer under the **MessageSourceName** column. If the value of this X-Header isn't specified, the value of **Replay** is used. Other possible values for this X-Header are **Smtp Receive Connector** and **Smtp Send Connector**.
+  - **X-Source**: Used by Queue Viewer under the **MessageSourceName** column. If the value of this X-Header isn't specified, the value of **Replay** is used. Other possible values for this X-Header are **Smtp Receive Connector** and **Smtp Send Connector**.
 
-  - **X-SourceIPAddress**   IP address of the sending server. This field is `0.0.0.0` if no IP address is specified.
+  - **X-SourceIPAddress**: IP address of the sending server. This field is `0.0.0.0` if no IP address is specified.
 
 This example shows a plain text message that uses acceptable formatting for the Replay directory.
 
@@ -244,15 +244,15 @@ The Replay directory adds its own `Received` message header field to a message a
 
 The Replay directory modifies the following message header fields in the message header:
 
-  - **Message-ID**   If this message header field is missing or empty, the Replay directory adds a Message-ID message header field by using the format *\<GUID\>*@*\<defaultdomain\>*.
+  - **Message-ID**: If this message header field is missing or empty, the Replay directory adds a Message-ID message header field by using the format *\<GUID\>*@*\<defaultdomain\>*.
 
-  - **Date**   If this message header field is missing or malformed, the Replay directory adds the Date message header field using the date and time of message processing by the Replay directory.
+  - **Date**: If this message header field is missing or malformed, the Replay directory adds the Date message header field using the date and time of message processing by the Replay directory.
 
 ## Failures in Pickup and Replay directory message processing
 
 A message file copied to the Pickup or Replay directories may not be successfully queued for delivery. The following categories of message submission failure can occur:
 
-  - **Delivery failures**   A correctly formatted message file together with a valid sender that can't be successfully submitted for delivery generates a non-delivery report (NDR). Malformed content or Pickup directory message restriction violations could also cause an NDR. When an NDR is generated during message processing, the original message file is attached to the NDR message, and the message file is deleted from the Pickup directory or the Replay directory.
+  - **Delivery failures**: A correctly formatted message file together with a valid sender that can't be successfully submitted for delivery generates a non-delivery report (NDR). Malformed content or Pickup directory message restriction violations could also cause an NDR. When an NDR is generated during message processing, the original message file is attached to the NDR message, and the message file is deleted from the Pickup directory or the Replay directory.
     
 
     > [!NOTE]
@@ -260,7 +260,7 @@ A message file copied to the Pickup or Replay directories may not be successfull
 
 
 
-  - **Badmail**   A message classified as *badmail* has serious problems that prevent the Pickup or Replay directories from submitting the message for delivery. The other condition that causes badmail is when the message is formatted correctly, but the recipients aren't valid, and an NDR message can't be sent to the sender because the sender isn't valid.
+  - **Badmail**: A message classified as *badmail* has serious problems that prevent the Pickup or Replay directories from submitting the message for delivery. The other condition that causes badmail is when the message is formatted correctly, but the recipients aren't valid, and an NDR message can't be sent to the sender because the sender isn't valid.
     
     Message files determined to be badmail are left in the Pickup or Replay directories and are renamed from *\<filename\>*.eml to *\<filename\>*.bad. If the *\<filename\>*.bad file already exists, the file is renamed to *\<filename\>\<datetime\>*.bad. If badmail exists in the Pickup or Replay directories, an event log error is generated, but the same badmail messages don't generate repeated event log errors.
     

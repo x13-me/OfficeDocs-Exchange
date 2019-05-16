@@ -51,9 +51,9 @@ In Exchange 2013, users can specify different automatic replies for internal and
 
 In Exchange 2013, there are two types of automatic replies:
 
-  - **External**   Supported by Exchange 2013 and Exchange 2010. Can only be set by Outlook 2010 or Office Outlook 2007, or using Microsoft Office Outlook Web App.
+  - **External**: Supported by Exchange 2013 and Exchange 2010. Can only be set by Outlook 2010 or Office Outlook 2007, or using Microsoft Office Outlook Web App.
 
-  - **Internal**   Supported by Exchange 2013 and Exchange 2010. Can only be set by Outlook 2010 or Outlook 2007, or using Outlook Web App.
+  - **Internal**: Supported by Exchange 2013 and Exchange 2010. Can only be set by Outlook 2010 or Outlook 2007, or using Outlook Web App.
 
 The following table describes various client and server combinations and the types of automatic replies that can be used in each scenario.
 

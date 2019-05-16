@@ -51,15 +51,15 @@ After you create an In-Place eDiscovery search, you can use the EAC to copy the 
 
 4.  In **Copy Search Results**, select from the following options:
     
-      - **Include unsearchable items**   Select this check box to include mailbox items that couldn't be searched (for example, messages with attachments of file types that couldn't be indexed by Exchange Search). For more information, see [Unsearchable items in Exchange eDiscovery](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md).
+      - **Include unsearchable items**: Select this check box to include mailbox items that couldn't be searched (for example, messages with attachments of file types that couldn't be indexed by Exchange Search). For more information, see [Unsearchable items in Exchange eDiscovery](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md).
     
-      - **Enable de-duplication**   Select this check box to exclude duplicate messages. Only a single instance of a message will be copied to the discovery mailbox.
+      - **Enable de-duplication**: Select this check box to exclude duplicate messages. Only a single instance of a message will be copied to the discovery mailbox.
     
-      - **Enable full logging**   Select this check box to include a full log in search results.
+      - **Enable full logging**: Select this check box to include a full log in search results.
     
-      - **Send me mail when the copy is completed**   Select this check box to get an email notification when the search is completed.
+      - **Send me mail when the copy is completed**: Select this check box to get an email notification when the search is completed.
     
-      - **Copy results to this discovery mailbox**   Click **Browse** to select the discovery mailbox where you want the search results copied to.
+      - **Copy results to this discovery mailbox**: Click **Browse** to select the discovery mailbox where you want the search results copied to.
         
         ![Copy Search Results](images/Dn624163.875e25ed-8308-408c-92c4-8c76fc9d9bfc(EXCHG.150).gif "Copy Search Results")  
 
@@ -109,9 +109,9 @@ To copy the results of this search to a discovery mailbox, you would run the fol
 
   - In addition to copying the search results to a discovery mailbox, you can also estimate or preview the search results for a selected search.
     
-      - **Estimate search results**   This option returns an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Estimates are displayed in the details pane in the EAC.
+      - **Estimate search results**: This option returns an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Estimates are displayed in the details pane in the EAC.
     
-      - **Preview search results**   This option lets you preview the search results returned by the search instead of having to copy them to a discovery mailbox to view. This lets you quickly determine whether the search results are relevant. After you preview the results, you can revise your search query to narrow the search results and rerun the search. Items in the preview page are read-only versions of the actual search results, so you can't move, edit, delete or forward on the preview page.
+      - **Preview search results**: This option lets you preview the search results returned by the search instead of having to copy them to a discovery mailbox to view. This lets you quickly determine whether the search results are relevant. After you preview the results, you can revise your search query to narrow the search results and rerun the search. Items in the preview page are read-only versions of the actual search results, so you can't move, edit, delete or forward on the preview page.
     
     For more information, see [Estimate or preview search results](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search).
 

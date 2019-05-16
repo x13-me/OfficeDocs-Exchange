@@ -59,13 +59,13 @@ Before you can use an RDB, there are certain requirements that must be met. An R
 
 An RDB can be used to recover data in several situations, such as:
 
-  - **Same server dial tone recovery**   You can perform a recovery from an RDB after the original database has been restored from backup, as part of a dial tone recovery operation.
+  - **Same server dial tone recovery**: You can perform a recovery from an RDB after the original database has been restored from backup, as part of a dial tone recovery operation.
 
-  - **Alternate server dial tone recovery**   You can use an alternate server to host the dial tone database, and then later recover data from an RDB after the original database has been restored from backup.
+  - **Alternate server dial tone recovery**: You can use an alternate server to host the dial tone database, and then later recover data from an RDB after the original database has been restored from backup.
 
-  - **Mailbox recovery**   You can recover an individual mailbox from backup when the deleted mailbox retention period has elapsed. You then extract data from the restored mailbox and copy it to a target folder or merge it with another mailbox.
+  - **Mailbox recovery**: You can recover an individual mailbox from backup when the deleted mailbox retention period has elapsed. You then extract data from the restored mailbox and copy it to a target folder or merge it with another mailbox.
 
-  - **Specific item recovery**   You can restore from backup data that has been deleted or purged from a mailbox.
+  - **Specific item recovery**: You can restore from backup data that has been deleted or purged from a mailbox.
 
 
 > [!NOTE]
