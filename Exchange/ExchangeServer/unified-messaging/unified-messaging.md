@@ -1,4 +1,4 @@
-﻿---
+---
 localization_priority: Normal
 description: 'Administrators can learn about Unified Messaging in Exchange Server 2016.'
 ms.topic: overview
