@@ -14,6 +14,8 @@ description: "Provides resources for IT Pros to plan, deliver, and adopt Outlook
 
 # Plan, deliver, and adopt Outlook for iOS and Android in your organization
 
+![Close-up picture of a mobile phone showing Outlook for iOS and Android](media/banner.jpg)
+
 Outlook mobile brings the best of Office 365 – your email, calendar, documents, online meetings and more – in one place, right at your fingertips. It combines a fast, fluid experience with enterprise grade security so you accomplish the most important tasks in just a few seconds.
 
 Join the over 100 million customers across the world who trust Outlook mobile to stay connected, organized and get things done on the go.
