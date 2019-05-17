@@ -62,7 +62,7 @@ Before you start, make sure that you've done the following:
 
 8. When the wizard is complete, click **Exit** on the **Configuration complete** page.
 
-9. Open Active Directory Users and Computers on an Active Directory domain controller and locate the user account that begins with **AAD\_**. Make note of this account's name. You can also locate the user account using [Determine your AD DS Connector Account](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-configure-ad-ds-connector-account#determine-your-ad-ds-connector-account).
+9. Open Active Directory Users and Computers on an Active Directory domain controller and locate the user account that begins with **AAD\_**. Make note of this account's name. You can also use a PowerShell command to [Determine your AD DS Connector Account](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-configure-ad-ds-connector-account#determine-your-ad-ds-connector-account)
 
 10. Open the Windows PowerShell on the Azure Active Directory Connect server, and run the following commands.
 
