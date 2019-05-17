@@ -34,9 +34,9 @@ To resolve this issue, follow these steps to raise the domain functional level t
 
 3. In **Select an available domain functional level**, use one of the following procedures:
 
-      - To raise the domain functional level to Windows 2000 Server native, click **Windows 2000 native**, and then click **Raise**.
+   - To raise the domain functional level to Windows 2000 Server native, click **Windows 2000 native**, and then click **Raise**.
 
-      - To raise domain functional level to Windows Server® 2003, click **Windows Server 2003**, and then click **Raise.**
+   - To raise domain functional level to Windows Server® 2003, click **Windows Server 2003**, and then click **Raise.**
 
 > [!WARNING]
 > <BR>If you have or will have any domain controllers running Windows NT®&nbsp;4.0 and earlier, do not raise the domain functional level to Windows&nbsp;2000 Server native. After the domain functional level is set to Windows&nbsp;2000 Server native, it cannot be changed back to Windows&nbsp;2000 Server mixed.<BR>If you have or will have any domain controllers running Windows NT&nbsp;4.0 and earlier or Windows&nbsp;2000 Server, do not raise the domain functional level to Windows Server&nbsp;2003. After the domain functional level is set to Windows Server&nbsp;2003, it cannot be changed back to Windows&nbsp;2000 Server mixed or Windows&nbsp;2000 Server native.

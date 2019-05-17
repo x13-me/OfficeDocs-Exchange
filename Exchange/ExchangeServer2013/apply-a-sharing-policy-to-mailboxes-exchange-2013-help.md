@@ -22,13 +22,13 @@ To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 5 minutes.
+- Estimated time to complete: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the *Recipient Provisioning Permissions* entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the *Recipient Provisioning Permissions* entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - A sharing policy must exist. For details, see [Create a sharing policy](create-a-sharing-policy-exchange-2013-help.md).
+- A sharing policy must exist. For details, see [Create a sharing policy](create-a-sharing-policy-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 ## What do you want to do?
 
@@ -75,7 +75,7 @@ Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "C
 This example returns all mailboxes that have the sharing policy Contoso applied, and it sorts the users into a table that displays only their aliases and email addresses.
 
 ```powershell
-    Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso" } | format-table Alias, EmailAddresses
+Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso" } | format-table Alias, EmailAddresses
 ```
 
 For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)) and [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\)).
@@ -84,13 +84,13 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://technet
 
 To verify that you have successfully applied the sharing policy to a user mailbox, do one of the following:
 
-  - In the EAC, navigate to **Recipients** \> **Mailboxes**, and then select the mailbox to which you applied the sharing policy. Click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), click **mailbox features**, and then confirm that the correct sharing policy appears in the **Sharing policy** list.
+- In the EAC, navigate to **Recipients** \> **Mailboxes**, and then select the mailbox to which you applied the sharing policy. Click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), click **mailbox features**, and then confirm that the correct sharing policy appears in the **Sharing policy** list.
 
-  - Run the following Shell command to verify the sharing policy was assigned to a user mailbox. Verify that the correct sharing policy is listed in the *SharingPolicy* parameter.
+- Run the following Shell command to verify the sharing policy was assigned to a user mailbox. Verify that the correct sharing policy is listed in the *SharingPolicy* parameter.
 
-    ```powershell
-    Get-Mailbox <user name> | format-list
-    ```
+  ```powershell
+  Get-Mailbox <user name> | format-list
+  ```
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.

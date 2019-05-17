@@ -22,11 +22,11 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 1 minute
+- Estimated time to complete this task: 1 minute
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
@@ -91,13 +91,13 @@ Move-ActiveMailboxDatabase DB5 MBX6 -SkipClientExperienceChecks
 
 To verify that you've successfully activated a mailbox database copy, do one of the following:
 
-  - In the EAC, navigate to **Servers** \> **Databases**. Select the appropriate database, and in the Details pane, click **View details** to view the database copy properties.
+- In the EAC, navigate to **Servers** \> **Databases**. Select the appropriate database, and in the Details pane, click **View details** to view the database copy properties.
 
-  - In the Shell, run the following command to display status information for a database copy.
+- In the Shell, run the following command to display status information for a database copy.
 
-    ```powershell
-    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
-    ```
+  ```powershell
+  Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+  ```
 
 ## For more information
 

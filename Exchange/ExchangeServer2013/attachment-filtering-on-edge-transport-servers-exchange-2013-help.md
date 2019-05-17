@@ -22,23 +22,23 @@ In Microsoft Exchange Server 2013, you can use attachment filtering on Edge Tran
 
 You can use the following types of attachment filtering to control attachments that enter or leave your organization through an Edge Transport server:
 
-  - **Filtering based on file name or file name extension**: You specify the exact file name or file name extension that you want to filter. An example of a file name filter is `BadFileName.exe`. An example of a file name extension filter is `*.exe`.
+- **Filtering based on file name or file name extension**: You specify the exact file name or file name extension that you want to filter. An example of a file name filter is `BadFileName.exe`. An example of a file name extension filter is `*.exe`.
 
-  - **Filtering based on file MIME content type**: You specify the MIME content type value that you want to filter. The MIME content type value indicates what the attachment is: for example, a JPEG image, an executable file, or a Microsoft Excel file. Content types are expressed as `type/subtype`. For example, a JPEG image file is expressed as `image/jpeg`.
+- **Filtering based on file MIME content type**: You specify the MIME content type value that you want to filter. The MIME content type value indicates what the attachment is: for example, a JPEG image, an executable file, or a Microsoft Excel file. Content types are expressed as `type/subtype`. For example, a JPEG image file is expressed as `image/jpeg`.
 
-    To view a complete list of file name extensions and content types that attachment filtering can detect, run the following command on the Edge Transport server:
+  To view a complete list of file name extensions and content types that attachment filtering can detect, run the following command on the Edge Transport server:
 
-    ```powershell
-    Get-AttachmentFilterEntry | Format-List
-    ```
+  ```powershell
+  Get-AttachmentFilterEntry | Format-List
+  ```
 
 After you define the files to look for, you can configure the action to take on messages that contain these attachments. You can't specify different actions for different types of attachments. You configure one of the following actions for all the messages that match any of the attachment filters:
 
-  - **Reject (block) the message**: The message is blocked. The sender receives a non-delivery report (NDR) that explains that the message wasn't delivered because it contained an unacceptable attachment. You can customize the text in the NDR. The default text is: `Message rejected due to unacceptable attachments`.
+- **Reject (block) the message**: The message is blocked. The sender receives a non-delivery report (NDR) that explains that the message wasn't delivered because it contained an unacceptable attachment. You can customize the text in the NDR. The default text is: `Message rejected due to unacceptable attachments`.
 
-  - **Strip the attachment but allow the message through**: The attachment is removed from the message. However, the message itself and any other attachments that don't match the filter are allowed through. If an attachment is stripped, it's replaced with a text file that explains why the attachment was removed. This is the default action.
+- **Strip the attachment but allow the message through**: The attachment is removed from the message. However, the message itself and any other attachments that don't match the filter are allowed through. If an attachment is stripped, it's replaced with a text file that explains why the attachment was removed. This is the default action.
 
-  - **Silently delete the message**: The message is deleted. Neither the sender nor the recipient receives notification.
+- **Silently delete the message**: The message is deleted. Neither the sender nor the recipient receives notification.
 
 For more information, see [Manage attachment filtering on Edge Transport servers](manage-attachment-filtering-on-edge-transport-servers-exchange-2013-help.md).
 

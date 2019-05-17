@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Configure activation policy for a mailbox database copy
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 *Activation* is the process of changing a mailbox database copy from a passive copy to an active copy. Activation occurs automatically by the system as part of a database or server failover operation, and it can be performed manually by an administrator as part of a database or server switchover operation. Blocking a database for activation prevents it from becoming the active copy during a database or server failover.
@@ -24,11 +22,11 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 1 minute
+- Estimated time to complete this task: 1 minute
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
@@ -89,14 +87,14 @@ For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy]
 
 To verify that you've successfully configured the activation policy, do one of the following:
 
-  - In the Shell, run the following command to verify activation settings for a database copy.
+- In the Shell, run the following command to verify activation settings for a database copy.
 
-    ```powershell
-    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
-    ```
+  ```powershell
+  Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
+  ```
 
-  - In the Shell, run the following command to verify activation settings for a DAG member.
+- In the Shell, run the following command to verify activation settings for a DAG member.
 
-    ```powershell
-    Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
-    ```
+  ```powershell
+  Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
+  ```

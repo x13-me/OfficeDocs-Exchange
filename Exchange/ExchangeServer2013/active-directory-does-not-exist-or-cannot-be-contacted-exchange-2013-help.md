@@ -22,15 +22,15 @@ To resolve this issue, verify that the user account running Exchange Setup is an
 
 For more information about Active Directory troubleshooting and configuration for Exchange, see the following topics:
 
-  - [Prepare Active Directory and domains](prepare-active-directory-and-domains-exchange-2013-help.md)
+- [Prepare Active Directory and domains](prepare-active-directory-and-domains-exchange-2013-help.md)
 
-  - [Troubleshooting Active Directory Domain Services](https://go.microsoft.com/fwlink/p/?linkid=272144)
+- [Troubleshooting Active Directory Domain Services](https://go.microsoft.com/fwlink/p/?linkid=272144)
 
-  - [Configuring a Computer for Troubleshooting](https://go.microsoft.com/fwlink/p/?linkid=272141)
+- [Configuring a Computer for Troubleshooting](https://go.microsoft.com/fwlink/p/?linkid=272141)
 
-  - [Troubleshooting Active Directory Replication Problems](https://go.microsoft.com/fwlink/p/?linkid=272142)
+- [Troubleshooting Active Directory Replication Problems](https://go.microsoft.com/fwlink/p/?linkid=272142)
 
-  - [Monitoring and Troubleshooting Active Directory Replication Using Repadmin](https://go.microsoft.com/fwlink/p/?linkid=272143)
+- [Monitoring and Troubleshooting Active Directory Replication Using Repadmin](https://go.microsoft.com/fwlink/p/?linkid=272143)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
 

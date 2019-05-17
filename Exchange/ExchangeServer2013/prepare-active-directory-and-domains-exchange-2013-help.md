@@ -41,15 +41,15 @@ Curious about what's happening when Active Directory is being prepared for Excha
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 10-15 minutes or more (not including Active Directory replication), depending on organization size and the number of child domains.
+- Estimated time to complete: 10-15 minutes or more (not including Active Directory replication), depending on organization size and the number of child domains.
 
-  - The computer you use to run these steps needs to meet the [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md). Also, your Active Directory forest needs to meet the requirements in the "Network and directory servers" section in [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
+- The computer you use to run these steps needs to meet the [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md). Also, your Active Directory forest needs to meet the requirements in the "Network and directory servers" section in [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
 
-  - If your organization has multiple Active Directory domains, we recommend the following:
+- If your organization has multiple Active Directory domains, we recommend the following:
 
-      - Do the steps below from an Active Directory site that has an Active Directory server from every domain.
+  - Do the steps below from an Active Directory site that has an Active Directory server from every domain.
 
-      - Install the first Exchange server in an Active Directory site with a writeable global catalog server from every domain.
+  - Install the first Exchange server in an Active Directory site with a writeable global catalog server from every domain.
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
@@ -60,13 +60,13 @@ The first step in getting your organization ready for Exchange 2013 is to extend
 
 Before you extend your schema, there are a few things to keep in mind:
 
-  - The account you're logged in as needs to be a member of the Schema Admins and Enterprise Admins security groups.
+- The account you're logged in as needs to be a member of the Schema Admins and Enterprise Admins security groups.
 
-  - The computer where you'll run the command to extend the schema needs to be in the same Active Directory domain and site as the schema master.
+- The computer where you'll run the command to extend the schema needs to be in the same Active Directory domain and site as the schema master.
 
-  - If you use the *DomainController* parameter, make sure to use the name of the domain controller that's the schema master.
+- If you use the *DomainController* parameter, make sure to use the name of the domain controller that's the schema master.
 
-  - The only way to extend the schema for Exchange is to use the steps in this topic or use Exchange 2013 Setup. Other ways of extending the schema aren't supported.
+- The only way to extend the schema for Exchange is to use the steps in this topic or use Exchange 2013 Setup. Other ways of extending the schema aren't supported.
 
 > [!TIP]
 > If you don't have a separate team that manages your Active Directory schema, you can skip this step and go directly to Step 2. Prepare Active Directory. If the schema isn't extended in step 1, the commands in step 2 will extend the schema for you. If you decide to skip step 1, the information you need to keep in mind above still applies.
@@ -91,33 +91,34 @@ Now that the Active Directory schema has been extended, you can prepare other pa
 
 Before you prepare Active Directory for Exchange, there are a few things to keep in mind:
 
-  - The account you're logged in as needs to be a member of the Enterprise Admins security group. If you skipped step 1 because you want the *PrepareAD* command to extend the schema, the account you use also needs to be a member of the Schema Admins security group.
+- The account you're logged in as needs to be a member of the Enterprise Admins security group. If you skipped step 1 because you want the *PrepareAD* command to extend the schema, the account you use also needs to be a member of the Schema Admins security group.
 
-  - The computer where you'll run the command needs to be in the same Active Directory domain and site as the schema master. It'll also need to contact all of the domains in the forest on TCP port 389.
+- The computer where you'll run the command needs to be in the same Active Directory domain and site as the schema master. It'll also need to contact all of the domains in the forest on TCP port 389.
 
-  - Wait until Active Directory has replicated the changes made in step 1 to all of your domain controllers before you do this step.
+- Wait until Active Directory has replicated the changes made in step 1 to all of your domain controllers before you do this step.
 
 When you run the command below to prepare Active Directory for Exchange, you'll need to name the Exchange organization. This name is used internally by Exchange and isn't normally seen by users. The name of the company where Exchange is being installed is often used for the organization name. The name you use won't affect the functionality of Exchange or determine what you can use for email addresses. You can name it anything you want, as long as you keep the following in mind:
 
-  - You can use any uppercase or lowercase letters from A to Z.
+- You can use any uppercase or lowercase letters from A to Z.
 
-  - You can use numbers 0 to 9.
+- You can use numbers 0 to 9.
 
-  - The name can contain spaces as long as they're not at the beginning or end of the name.
+- The name can contain spaces as long as they're not at the beginning or end of the name.
 
-  - You can use a hyphen or dash in the name.
+- You can use a hyphen or dash in the name.
 
-  - The name can be up to 64 characters but can't be blank.
+- The name can be up to 64 characters but can't be blank.
 
-  - The name can't be changed after it's set.
+- The name can't be changed after it's set.
 
 When you're ready, do the following to prepare Active Directory for Exchange. If the organization name you want to use has spaces, enclose the name in quotation marks (").
 
 1. Open a Windows Command Prompt window and go to where you downloaded the Exchange installation files.
 
 2. Run the following command:
+
     ```powershell
-        Setup.exe /PrepareAD /OrganizationName:"<organization name>" /IAcceptExchangeServerLicenseTerms
+    Setup.exe /PrepareAD /OrganizationName:"<organization name>" /IAcceptExchangeServerLicenseTerms
     ```
 
 > [!IMPORTANT]
@@ -137,9 +138,9 @@ To prepare all of your Active Directory domains, you can use the *PrepareAllDoma
 
 Before you prepare all of the domains in your Active Directory forest, keep the following in mind:
 
-  - The account you use needs to be a member of the Enterprise Admins security group.
+- The account you use needs to be a member of the Enterprise Admins security group.
 
-  - Wait until Active Directory has replicated the changes made in step 2 to all of your domain controllers. If you don't, you might get an error when you try to prepare the domain.
+- Wait until Active Directory has replicated the changes made in step 2 to all of your domain controllers. If you don't, you might get an error when you try to prepare the domain.
 
 When you're ready, do the following to prepare all of the domains in your Active Directory forest for Exchange.
 
@@ -157,17 +158,17 @@ If you want to choose which Active Directory domains you want to prepare, you ca
 
 Before you prepare the domains in your Active Directory forest, keep the following in mind:
 
-  - The account you use needs permissions depending on when the domain was created.
+- The account you use needs permissions depending on when the domain was created.
 
-      - **Domain created before PrepareAD was run**: If the domain was created **before** you ran the *PrepareAD* command in step 2 above, then the account you use needs to be a member of the Domain Admins group in the domain you want to prepare.
+  - **Domain created before PrepareAD was run**: If the domain was created **before** you ran the *PrepareAD* command in step 2 above, then the account you use needs to be a member of the Domain Admins group in the domain you want to prepare.
 
-      - **Domain created after PrepareAD was run**: If the domain was created **after** you ran the *PrepareAD* command in step 2 above, then the account you use needs to 1) be a member of the Organization Management role group and 2) be a member of the Domain Admins group in the domain you want to prepare.
+  - **Domain created after PrepareAD was run**: If the domain was created **after** you ran the *PrepareAD* command in step 2 above, then the account you use needs to 1) be a member of the Organization Management role group and 2) be a member of the Domain Admins group in the domain you want to prepare.
 
-  - Wait until Active Directory has replicated the changes made in step 2 to all of your domain controllers. If you don't, you might get an error when you try to prepare the domain.
+- Wait until Active Directory has replicated the changes made in step 2 to all of your domain controllers. If you don't, you might get an error when you try to prepare the domain.
 
-  - You need to prepare every domain where an Exchange server will be installed. You'll also need to prepare any domain that'll contain mail-enabled users, even if those domains won't contain any Exchange servers.
+- You need to prepare every domain where an Exchange server will be installed. You'll also need to prepare any domain that'll contain mail-enabled users, even if those domains won't contain any Exchange servers.
 
-  - You don't need to run the *PrepareDomain* command in the domain where the *PrepareAD* command was run. The *PrepareAD* command prepares that domain automatically.
+- You don't need to run the *PrepareDomain* command in the domain where the *PrepareAD* command was run. The *PrepareAD* command prepares that domain automatically.
 
 When you're ready, do the following to prepare an individual domain in your Active Directory forest for Exchange.
 
@@ -190,17 +191,11 @@ Once you've done all the steps above, you can check to make sure everything's go
 
 After Exchange extends your Active Directory schema and prepares Active Directory for Exchange, several properties are updated to show that preparation is complete. Use the information in the following list to make sure these properties have the right values. Each property needs to match the value in the table below for the release of Exchange 2013 that you're installing.
 
-  - In the **Schema** naming context, verify that the **rangeUpper** property on **ms-Exch-Schema-Verision-Pt** is set to the value shown for your version of Exchange 2013 in the Exchange 2013 Active Directory versions table.
+- In the **Schema** naming context, verify that the **rangeUpper** property on **ms-Exch-Schema-Verision-Pt** is set to the value shown for your version of Exchange 2013 in the Exchange 2013 Active Directory versions table.
 
-     
+- In the **Configuration** naming context, verify that the **objectVersion** property in the CN=\<*your organization*\>,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\<*domain*\> container is set to the value shown for your version of Exchange 2013 in the Exchange 2013 Active Directory versions table.
 
-  - In the **Configuration** naming context, verify that the **objectVersion** property in the CN=\<*your organization*\>,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\<*domain*\> container is set to the value shown for your version of Exchange 2013 in the Exchange 2013 Active Directory versions table.
-
-     
-
-  - In the **Default** naming context, verify that the **objectVersion** property in the **Microsoft Exchange System Objects** container under DC=\<*root domain* is set to the value shown for your version of Exchange 2013 in the Exchange 2013 Active Directory versions table.
-
-     
+- In the **Default** naming context, verify that the **objectVersion** property in the **Microsoft Exchange System Objects** container under DC=\<*root domain* is set to the value shown for your version of Exchange 2013 in the Exchange 2013 Active Directory versions table.
 
 You can also check the Exchange setup log to verify that Active Directory preparation has completed successfully. For more information, see [Verify an Exchange 2013 installation](verify-an-exchange-2013-installation-exchange-2013-help.md). You won't be able to use the **Get-ExchangeServer** cmdlet mentioned in the [Verify an Exchange 2013 installation](verify-an-exchange-2013-installation-exchange-2013-help.md) topic until you've completed the installation of at least one Mailbox server role and one Client Access server role in an Active Directory site.
 

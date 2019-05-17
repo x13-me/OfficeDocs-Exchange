@@ -24,17 +24,17 @@ Microsoft Exchange Server 2007 or Exchange Server 2010 setup cannot continue b
 
 Exchange setup requires that inheritance for permissions be enabled on the following Exchange objects:
 
-  - Exchange Organization object
+- Exchange Organization object
 
-  - Exchange Administrative Group object
+- Exchange Administrative Group object
 
-  - Exchange Servers container object
+- Exchange Servers container object
 
-  - Exchange Address List object
+- Exchange Address List object
 
-  - Exchange Public Folder object
+- Exchange Public Folder object
 
-  - Exchange Public Folder tree object
+- Exchange Public Folder tree object
 
 Failure to enable inheritance for permissions on these objects may result in mail flow problems, store mounting issues, and other service outages.
 

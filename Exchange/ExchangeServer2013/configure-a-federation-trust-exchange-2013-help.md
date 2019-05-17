@@ -30,31 +30,31 @@ For additional management tasks related to federation, see [Federation procedure
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 30 minutes.
+- Estimated time to complete: 30 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Federation and certificates" permissions entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Federation and certificates" permissions entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-  - The domain used for establishing a federation trust should be resolvable from the Internet. This requires that the domain be registered with a domain registrar and the Domain Name System (DNS) zone for the domain to be hosted on a DNS server accessible from the Internet. If the organization receives Internet email for the domain, these requirements are already met.
+- The domain used for establishing a federation trust should be resolvable from the Internet. This requires that the domain be registered with a domain registrar and the Domain Name System (DNS) zone for the domain to be hosted on a DNS server accessible from the Internet. If the organization receives Internet email for the domain, these requirements are already met.
 
-  - You will need to add a TXT record to your public DNS. Review the requirements for adding a TXT record with the organization that hosts your public DNS records.
+- You will need to add a TXT record to your public DNS. Review the requirements for adding a TXT record with the organization that hosts your public DNS records.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-  - Both Exchange organizations in a federated sharing relationship must use the same Azure AD authentication system for their federation trusts. This requirement applies when configuring federated sharing between two on-premises Exchange organizations or between an on-premises Exchange organization and an Exchange organization hosted by [Office 365](https://go.microsoft.com/fwlink/?linkid=392576).
+- Both Exchange organizations in a federated sharing relationship must use the same Azure AD authentication system for their federation trusts. This requirement applies when configuring federated sharing between two on-premises Exchange organizations or between an on-premises Exchange organization and an Exchange organization hosted by [Office 365](https://go.microsoft.com/fwlink/?linkid=392576).
 
-  - When you create a federation trust with the Azure AD authentication system for your Exchange 2013 organization, the federation trust will use the business instance of the Azure AD authentication system. However, other federated Exchange organizations with previous versions of Exchange and existing federation trusts may be using either the business or consumer instance of the Azure AD authentication system.
+- When you create a federation trust with the Azure AD authentication system for your Exchange 2013 organization, the federation trust will use the business instance of the Azure AD authentication system. However, other federated Exchange organizations with previous versions of Exchange and existing federation trusts may be using either the business or consumer instance of the Azure AD authentication system.
 
-    The following Exchange organizations use the business instance of the Azure AD authentication system by default:
+  The following Exchange organizations use the business instance of the Azure AD authentication system by default:
 
-      - Exchange 2013 organizations by using the **Enable federation trust** wizard and self-signed certificates for a federation trust.
+  - Exchange 2013 organizations by using the **Enable federation trust** wizard and self-signed certificates for a federation trust.
 
-      - Exchange 2010 SP1 or later organizations by using the **New Federation Trust** wizard and self-signed certificates for a federation trust.
+  - Exchange 2010 SP1 or later organizations by using the **New Federation Trust** wizard and self-signed certificates for a federation trust.
 
-      - Exchange organizations hosted by Office 365, such as the Exchange Online.
+  - Exchange organizations hosted by Office 365, such as the Exchange Online.
 
     The following Exchange organizations use the consumer instance of the Azure AD authentication system by default:
 
-      - Release to manufacturing (RTM) version of Exchange 2010 organizations using certificates issued by third-party certification authorities.
+  - Release to manufacturing (RTM) version of Exchange 2010 organizations using certificates issued by third-party certification authorities.
 
     We recommend that all Exchange organizations use the business instance of the Azure AD authentication system for federation trusts. Before configuring federated sharing between the two Exchange organizations, you need to verify which Azure AD authentication system instance each Exchange organization is using for any existing federation trusts. To determine which Azure AD authentication system instance an Exchange organization is using for an existing federation trust, run the following Shell command.
 
@@ -106,83 +106,84 @@ For additional management tasks related to federation, see [Federation procedure
 1. Run this command to create a unique subject key identifier for the federation trust certificate:
 
     ```powershell
-        $ski = [System.Guid]::NewGuid().ToString("N")
+    $ski = [System.Guid]::NewGuid().ToString("N")
     ```
 
 2. Use this syntax to create a self-signed certificate for the federation trust:
 
     ```powershell
-        New-ExchangeCertificate -FriendlyName "<Descriptive Name>" -DomainName <domain> -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
+    New-ExchangeCertificate -FriendlyName "<Descriptive Name>" -DomainName <domain> -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
     ```
 
     This example creates a self-signed certificate for the federation trust with the Azure AD authentication system. The certificate uses the friendly name value Exchange Federated Sharing, and the domain value is retrieved from the **USERDNSDOMAIN** environment variable.
 
     ```powershell
-        New-ExchangeCertificate -FriendlyName "Exchange Federated Sharing" -DomainName $env:USERDNSDOMAIN -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
+    New-ExchangeCertificate -FriendlyName "Exchange Federated Sharing" -DomainName $env:USERDNSDOMAIN -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
     ```
 
 3. To create the federation trust and automatically deploy the self-signed certificate that you created in the previous step to the Exchange servers in your organization, use this syntax:
 
     ```powershell
-        Get-ExchangeCertificate | ?{$_.FriendlyName -eq "<FriendlyName>"} | New-FederationTrust -Name "<Descriptive Name>"
+    Get-ExchangeCertificate | ?{$_.FriendlyName -eq "<FriendlyName>"} | New-FederationTrust -Name "<Descriptive Name>"
     ```
 
     This example creates the federation trust named Azure AD Authentication and deploys the self-signed certificate named Exchange Federated Sharing.
+
     ```powershell
-        Get-ExchangeCertificate | ?{$_.FriendlyName -eq "Exchange Federated Sharing"} | New-FederationTrust -Name "Azure AD Authentication"
+    Get-ExchangeCertificate | ?{$_.FriendlyName -eq "Exchange Federated Sharing"} | New-FederationTrust -Name "Azure AD Authentication"
     ```
 
 4. Use this syntax to return the proof of domain ownership TXT record that's required for any domain that you'll configure for the federation trust.
 
-    ```powershell
-    Get-FederatedDomainProof -DomainName <domain>
-    ```
+   ```powershell
+   Get-FederatedDomainProof -DomainName <domain>
+   ```
 
-    This example returns the proof of domain ownership TXT record that's required for the primary shared domain contoso.com.
+   This example returns the proof of domain ownership TXT record that's required for the primary shared domain contoso.com.
 
-    ```powershell
-    Get-FederatedDomainProof -DomainName contoso.com
-    ```
+   ```powershell
+   Get-FederatedDomainProof -DomainName contoso.com
+   ```
 
-    **Notes**:
+   **Notes**:
 
-      - Each domain or subdomain that's configured for the federation trust requires a proof of domain ownership TXT record, so you might need to run this command multiple times using different *DomainName* values.
+   - Each domain or subdomain that's configured for the federation trust requires a proof of domain ownership TXT record, so you might need to run this command multiple times using different *DomainName* values.
 
-      - We recommend that you copy the domain proof string by right-clicking in the Shell, selecting **Mark**, selecting the **Proof** value, and then pressing Enter so you can use it when you create the TXT record. If you create the TXT record with an incorrect federated domain proof string, the Azure AD authentication system can't verify your ownership of the domain, and you won't be able to add it to the federated organization identifier.
+   - We recommend that you copy the domain proof string by right-clicking in the Shell, selecting **Mark**, selecting the **Proof** value, and then pressing Enter so you can use it when you create the TXT record. If you create the TXT record with an incorrect federated domain proof string, the Azure AD authentication system can't verify your ownership of the domain, and you won't be able to add it to the federated organization identifier.
 
 5. Using the information from the previous step, create TXT records on your public DNS server in every domain that will be included in the federation trust. Depending on the update schedule of your public DNS host, replication of DNS changes may take 15 minutes or longer. Continue after you've verified that the new TXT records are available.
 
 6. Run this command to retrieve the metadata and certificate from Azure AD:
 
-    ```powershell
-    Set-FederationTrust -RefreshMetadata -Identity "Azure AD authentication"
-    ```
+   ```powershell
+   Set-FederationTrust -RefreshMetadata -Identity "Azure AD authentication"
+   ```
 
 7. Use this syntax to configure the primary shared domain for the federation trust that you created in Step 3. The domain that you specify will be used to configure the organization identifier (OrgID) for the federation trust. For more information about the OrgID, see [Federated organization identifier](federation-exchange-2013-help.md).
 
-    ```powershell
-        Set-FederatedOrganizationIdentifier -DelegationFederationTrust "<Federation Trust Name>" -AccountNamespace <Accepted Domain> -Enabled $true
-    ```
+   ```powershell
+   Set-FederatedOrganizationIdentifier -DelegationFederationTrust "<Federation Trust Name>" -AccountNamespace <Accepted Domain> -Enabled $true
+   ```
 
-    This example configures the accepted domain contoso.com as the primary shared domain for the federation trust named Azure AD Authentication.
+   This example configures the accepted domain contoso.com as the primary shared domain for the federation trust named Azure AD Authentication.
 
-    ```powershell
-        Set-FederatedOrganizationIdentifier -DelegationFederationTrust "Azure AD authentication" -AccountNamespace contoso.com -Enabled $true
-    ```
+   ```powershell
+   Set-FederatedOrganizationIdentifier -DelegationFederationTrust "Azure AD authentication" -AccountNamespace contoso.com -Enabled $true
+   ```
 
 8. To add other domains to the federation trust, use this syntax:
 
-    ```powershell
-    Add-FederatedDomain -DomainName <AdditionalDomain>
-    ```
+   ```powershell
+   Add-FederatedDomain -DomainName <AdditionalDomain>
+   ```
 
-    This examples adds the subdomain sales.contoso.com to the federated trust, because users with email addresses in the sales.contoso.com domain require federated sharing features.
+   This examples adds the subdomain sales.contoso.com to the federated trust, because users with email addresses in the sales.contoso.com domain require federated sharing features.
 
-    ```powershell
-    Add-FederatedDomain -DomainName sales.contoso.com
-    ```
+   ```powershell
+   Add-FederatedDomain -DomainName sales.contoso.com
+   ```
 
-    Remember, any domain or subdomain that you add to the federation trust requires a proof of domain ownership TXT record,
+   Remember, any domain or subdomain that you add to the federation trust requires a proof of domain ownership TXT record,
 
 For detailed syntax and parameter information, see [New-ExchangeCertificate](https://technet.microsoft.com/en-us/library/aa998327\(v=exchg.150\)), [New-FederationTrust](https://technet.microsoft.com/en-us/library/dd351047\(v=exchg.150\)), [Get-FederatedDomainProof](https://technet.microsoft.com/en-us/library/ff717833\(v=exchg.150\)), [Set-FederationTrust](https://technet.microsoft.com/en-us/library/dd298034\(v=exchg.150\)), [Set-FederatedOrganizationIdentifier](https://technet.microsoft.com/en-us/library/dd351037\(v=exchg.150\)), and [Add-FederatedDomain](https://technet.microsoft.com/en-us/library/dd351208\(v=exchg.150\)).
 
@@ -194,15 +195,15 @@ To further verify that you have successfully created and configured the federati
 
 1. Run the following Shell command to verify the federation trust information.
 
-    ```powershell
-    Get-FederationTrust | Format-List
-    ```
+   ```powershell
+   Get-FederationTrust | Format-List
+   ```
 
 2. Replace *\<PrimarySharedDomain\>* with your primary shared domain, and run the following Shell command to verify that federation information can be retrieved from your organization.
 
-    ```powershell
-    Get-FederationInformation -DomainName <PrimarySharedDomain>
-    ```
+   ```powershell
+   Get-FederationInformation -DomainName <PrimarySharedDomain>
+   ```
 
 For detailed syntax and parameter information, see [Get-FederationTrust](https://technet.microsoft.com/en-us/library/dd351262\(v=exchg.150\)) and [Get-FederationInformation](https://technet.microsoft.com/en-us/library/dd351221\(v=exchg.150\)).
 

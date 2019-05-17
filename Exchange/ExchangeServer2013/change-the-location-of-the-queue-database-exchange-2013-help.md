@@ -62,25 +62,25 @@ The location of the queue database and the queue database transaction logs is co
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 15 minutes.
+- Estimated time to complete: 15 minutes.
 
-  - Exchange permissions don't apply to the procedures in this topic. These procedures are performed in the operating system of the Exchange Server.
+- Exchange permissions don't apply to the procedures in this topic. These procedures are performed in the operating system of the Exchange Server.
 
-  - When you stop or restart the Microsoft Exchange Transport service, mail flow on the server is interrupted.
+- When you stop or restart the Microsoft Exchange Transport service, mail flow on the server is interrupted.
 
-  - When you change the location of the queue database or the transaction logs, the existing queue database and transaction log files aren't moved. A new queue database and new transaction logs are created at the new location. The existing files are left at the old location. However, they're no longer used. If you want to reuse the existing queue database or transaction log files at the new location, you must move the existing files to the new location after the Microsoft Exchange Transport service is stopped, but before the service is started.
+- When you change the location of the queue database or the transaction logs, the existing queue database and transaction log files aren't moved. A new queue database and new transaction logs are created at the new location. The existing files are left at the old location. However, they're no longer used. If you want to reuse the existing queue database or transaction log files at the new location, you must move the existing files to the new location after the Microsoft Exchange Transport service is stopped, but before the service is started.
 
-  - If the target folder for the queue database or transaction logs doesn't exist, it will be created for you if the parent folder has the following permissions applied to it:
+- If the target folder for the queue database or transaction logs doesn't exist, it will be created for you if the parent folder has the following permissions applied to it:
 
-      - Network Service: Full Control
+  - Network Service: Full Control
 
-      - System: Full Control
+  - System: Full Control
 
-      - Administrators: Full Control
+  - Administrators: Full Control
 
-  - Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
+- Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 ## What do you want to do?
 
@@ -90,31 +90,31 @@ The location of the queue database and the queue database transaction logs is co
 
 2. In a Command prompt window, open the EdgeTransport.exe.config file in Notepad by running the following command:
 
-    ```powershell
-    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-    ```
+   ```powershell
+   Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+   ```
 
 3. Modify the following keys in the `<appSettings>` section.
 
-    ```powershell
-        <add key="QueueDatabasePath" value="<LocalPath>" />
-        <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
-    ```
+   ```powershell
+   <add key="QueueDatabasePath" value="<LocalPath>" />
+   <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
+   ```
 
     For example, to create a new queue database in D:\\Queue\\QueueDB and new transaction logs in D:\\Queue\\QueueLogs, use the following values:
 
     ```powershell
-        <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
-        <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
+    <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
     ```
 
 4. When you are finished, save and close the EdgeTransport.exe.config file.
 
 5. Restart the Microsoft Exchange Transport service by running the following command:
 
-    ```powershell
-        net stop MSExchangeTransport && net start MSExchangeTransport
-    ```
+   ```powershell
+   net stop MSExchangeTransport && net start MSExchangeTransport
+   ```
 
 ## How do you know this worked?
 
@@ -128,8 +128,6 @@ To verify that you successfully created a new queue database and new transaction
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
 
-Return to top
-
 ## Use the Command Prompt to move the existing queue database and transaction logs to a new location
 
 Only disaster recovery scenarios where the Microsoft Exchange Transport service wasn't shut down correctly or a hard disk drive failure would require that you restore and relocate an existing queue database and its existing transaction logs.
@@ -142,31 +140,31 @@ Use the following procedure to move the existing queue database and transaction 
 
 2. In a Command prompt window, open the EdgeTransport.exe.config file in Notepad by running the following command:
 
-    ```powershell
-    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-    ```
+   ```powershell
+   Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+   ```
 
 3. Modify the following keys in the `<appSettings>` section:
 
-    ```powershell
-        <add key="QueueDatabasePath" value="<LocalPath>" />
-        <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
-    ```
+   ```powershell
+   <add key="QueueDatabasePath" value="<LocalPath>" />
+   <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
+   ```
 
     For example, to change the location of the queue database to D:\\Queue\\QueueDB and the transaction logs to D:\\Queue\\QueueLogs, use the following values:
 
     ```powershell
-        <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
-        <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
+    <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
     ```
 
 4. When you are finished, save and close the EdgeTransport.exe.config file.
 
 5. Stop the Microsoft Exchange Transport service by running the following command:
 
-    ```powershell
-    net stop MSExchangeTransport
-    ```
+   ```powershell
+   net stop MSExchangeTransport
+   ```
 
 6. Move the existing database files Mail.que and Trn.chk from the original location to the new location.
 
@@ -174,9 +172,9 @@ Use the following procedure to move the existing queue database and transaction 
 
 8. Start the Microsoft Exchange Transport service by running the following command:
 
-    ```powershell
-    net start MSExchangeTransport
-    ```
+   ```powershell
+   net start MSExchangeTransport
+   ```
 
 ## How do you know this worked?
 
@@ -189,5 +187,3 @@ To verify that you successfully moved the existing queue database and transactio
 3. Verify there are no queue database or transaction log files at the original location.
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
-
-Return to top

@@ -25,19 +25,19 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management roles" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management roles" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - You must use the Shell to perform these procedures.
+- You must use the Shell to perform these procedures.
 
-  - The ability to add a role entry on an unscoped top-level role isn't included in any management role group by default. You must first assign the Unscoped Role Management role to a user, or to a universal security group (USG) or role group of which the user is a member, before the user is able to add an unscoped top-level role entry. For more information about adding a role to a role group, user, or USG, see the following topics:
+- The ability to add a role entry on an unscoped top-level role isn't included in any management role group by default. You must first assign the Unscoped Role Management role to a user, or to a universal security group (USG) or role group of which the user is a member, before the user is able to add an unscoped top-level role entry. For more information about adding a role to a role group, user, or USG, see the following topics:
 
-      - [Manage role groups](manage-role-groups-exchange-2013-help.md)
+  - [Manage role groups](manage-role-groups-exchange-2013-help.md)
 
-      - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
+  - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
@@ -53,12 +53,14 @@ To add a Windows PowerShell script to an unscoped top-level role, you must add a
 The script must reside in the Scripts directory in the Microsoft Exchange Server 2013 installation path on every server running Exchange 2013 where users might connect to run the script. If a user has access to run a script, but the script isn't located on the Exchange 2013 server the user is connected to, an error occurs. By default, the path to the Scripts directory is C:\\Program Files\\Microsoft\\Exchange Server\\V15\\Scripts.
 
 After you copy the script to the appropriate Exchange 2013 servers and you decide what script parameters should be used, create the role entry using the following syntax.
+
 ```powershell
-    Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
 ```
 This example adds the BulkProvisionUsers.ps1 script to the IT Scripts role with the *Name* and *Location* parameters.
+
 ```powershell
-    Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
 ```
 
 > [!NOTE]
@@ -73,12 +75,15 @@ To add a non-Exchange cmdlet to an unscoped top-level role, you must add a manag
 If you add non-Exchange cmdlets to the new role, the cmdlets must be installed on every Exchange 2013 server where users might connect to run the cmdlets. To learn how to properly install and register the Windows PowerShell snap-ins that contain the cmdlets you want to use, refer to the documentation for your product.
 
 After you install the Windows PowerShell snap-in that contains the cmdlets on the appropriate the Exchange 2013 servers and you decide what cmdlet parameters should be used, create the role entry using the following syntax.
+
 ```powershell
-    Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
 ```
+
 This example adds the **Set-WidgetConfiguration** cmdlet in the Contoso.Admin.Cmdlets snap-in to the Widget Cmdlets role with the *Database* and *Size* parameters.
+
 ```powershell
-    Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
 ```
 
 > [!NOTE]

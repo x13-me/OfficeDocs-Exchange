@@ -12,29 +12,11 @@ author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Procedures related to post-deployment operation
 
-</div>
-
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-12-09_
+_**Applies to:** Exchange Server 2013_
 
 This topic contains the procedures that you can use as a reference when managing the Exchange Server 2013 Management Pack. For procedures related to deployment, see [Procedures related to deployment](procedures-related-to-deployment.md).
-
-<span id="ViewMonitors"></span>
-
-<div>
 
 ## View Exchange 2013 Management Pack monitors
 
@@ -54,33 +36,23 @@ Your user account needs to be a member of the Operations Manager Administrators 
 
 6. Expand **Entity Health** to view the following four key dependency monitors for Exchange Server 2013:
 
-      - Customer Touch Points
+   - Customer Touch Points
 
-      - Key Dependencies
+   - Key Dependencies
 
-      - Server Resources
+   - Server Resources
 
-      - Service Components
+   - Service Components
 
 7. Expand any of these monitors to view a list of the monitors that apply to that Exchange Server.
-
-</div>
-
-<span id="Tuning"></span>
-
-<div>
 
 ## Create overrides
 
 Exchange Server 2013 management pack is designed to be simple to deploy and use. It is engineered to scale with your environment, and in most cases no additional configuration changes are required once you import it. However, if you see alerts that are not valuable to you, you can configure overrides to turn these specific alerts off. Use these overrides only if you are experiencing specific problems.
 
-<div>
-
 ## Enable or disable monitors
 
 Depending on your needs, you may want to disable or enable specific alerts within the SCOM console or entire health sets using the Shell. The following sections provide examples of both approaches.
-
-<div>
 
 ## Enable or disable an alert using SCOM console
 
@@ -96,10 +68,6 @@ To disable this alert in the SCOM console:
 
 ![Disabling an alert in SCOM console](images/Dn198286.1c4f15b5-4978-4442-b26b-cc65ba577c9c(EXCHG.150).png "Disabling an alert in SCOM console")
 
-</div>
-
-<div>
-
 ## Enable or disable a health set using the Shell
 
 Let's say that you don't use the POP3 feature in your organization. You may want to disable monitoring support for that feature on your mailbox servers in your organization. You can do so using the following steps:
@@ -107,26 +75,28 @@ Let's say that you don't use the POP3 feature in your organization. You may want
 1. Start the Exchange Management Shell
 
 2. First, you need to determine the list of monitors associated with the POP3 service on a Mailbox server. The list in [Appendix A: Exchange health sets](appendix-a-exchange-health-sets.md) shows that the health set associated with POP3 service on a mailbox server is POP.Protocol. You need to run the [Get-MonitoringItemIdentity](https://technet.microsoft.com/en-us/library/jj218668\(v=exchg.150\)) cmdlet to get a list of all monitors associated with the POP.Protocol healthset. The following command returns all monitoring items for POP.Protocol health set and stores them in the temporary variable `$POPMonitoringItems`. Note that the command uses a mailbox server to get this list as the POP.Protocol health set won't be present on a server that doesn't have the Mailbox role installed.
-    ```Powershell
-        $POPMonitoringItems = Get-MonitoringItemIdentity -Identity POP.Protocol -Server Mailbox1
-	```
+
+   ```powershell
+   $POPMonitoringItems = Get-MonitoringItemIdentity -Identity POP.Protocol -Server Mailbox1
+   ```
+
 3. The `$POPMonitoringItems` contains all monitoring items including probes, monitors and responders. Let's separate just the monitors and store them in the temporary variable `$POPMonitors`by running the following command:
-    ```Powershell
-        $POPMonitors = $POPMonitoringItems | Where {$_.ItemType -eq "Monitor"}
-	```
+
+   ```powershell
+   $POPMonitors = $POPMonitoringItems | Where {$_.ItemType -eq "Monitor"}
+   ```
+
 4. For each of the monitors for POP.Protocol, you will need to create a global override using the **Add-GlobalMonitoringOverride** cmdlet. Instead of doing them one by one, you can just pipe each monitor in the `$POPMonitors` variable to the **Add-GlobalMonitoringOverride** cmdlet by running the following command.
-    ```Powershell
-        $POPMonitors | Where {Add-GlobalMonitoringOverride -Item Monitor -Identity $($_.HealthSetName+"\"+$_.Name) -PropertyName Enabled -PropertyValue 0 -Duration 60
-	```
+
+   ```powershell
+   $POPMonitors | Where {Add-GlobalMonitoringOverride -Item Monitor -Identity $($_.HealthSetName+"\"+$_.Name) -PropertyName Enabled -PropertyValue 0 -Duration 60
+   ```
+
 5. To verify that you have correctly created the global overrides, run the following command:
-    ```Powershell
-        Get-GlobalMonitoringOverride | Where {$_.Identity -like "*POP.Protocol*"} | Format-Table Identity, ItemType, PropertyName, PropertyValue
-	```
-</div>
 
-</div>
-
-<div>
+   ```powershell
+   Get-GlobalMonitoringOverride | Where {$_.Identity -like "*POP.Protocol*"} | Format-Table Identity, ItemType, PropertyName, PropertyValue
+   ```
 
 ## Modify monitoring thresholds
 
@@ -135,48 +105,36 @@ You also may need to modify specific thresholds for various monitor properties. 
 1. Start the Exchange Management Shell.
 
 2. The delivery queues are monitored by the HubTransport health set. First you need to get the list of monitors associated with this healthset that are responsible for internal delivery queues.
-    ```Powershell
-        Get-MonitoringItemIdentity -Identity HubTransport -Server Mailbox1 | Where {$_.Name -like "*InternalAggregateDeliveryQueue*" -and $_.ItemType -eq "Monitor"} | Format-Table Name
-	```
-3. You will see that there are two monitors for internal aggregate delivery queues: InternalAggregateDeliveryQueueLengthLowPriorityMonitor and InternalAggregateDeliveryQueueLengthHighPriorityMonitor. You then add global overrides for each monitor using the commands below:
-    ```Powershell
-        Add-GlobalMonitoringOverride -Item Monitor -Identity HubTransport\InternalAggregateDeliveryQueueLengthLowPriorityMonitor -PropertyName MonitoringThreshold -PropertyValue 150 -Duration 60
-        Add-GlobalMonitoringOverride -Item Monitor -Identity HubTransport\InternalAggregateDeliveryQueueLengthHighPriorityMonitor -PropertyName MonitoringThreshold -PropertyValue 50 -Duration 60
-	```
-4. To verify that you have correctly created the global overrides, run the following command:
-    ```Powershell
-        Get-GlobalMonitoringOverride | Where {$_.Identity -like "*HubTransport*"} | Format-Table Identity, ItemType, PropertyName, PropertyValue
-	```
-</div>
 
-<div>
+   ```powershell
+   Get-MonitoringItemIdentity -Identity HubTransport -Server Mailbox1 | Where {$_.Name -like "*InternalAggregateDeliveryQueue*" -and $_.ItemType -eq "Monitor"} | Format-Table Name
+   ```
+
+3. You will see that there are two monitors for internal aggregate delivery queues: InternalAggregateDeliveryQueueLengthLowPriorityMonitor and InternalAggregateDeliveryQueueLengthHighPriorityMonitor. You then add global overrides for each monitor using the commands below:
+
+   ```powershell
+   Add-GlobalMonitoringOverride -Item Monitor -Identity HubTransport\InternalAggregateDeliveryQueueLengthLowPriorityMonitor -PropertyName MonitoringThreshold -PropertyValue 150 -Duration 60
+   Add-GlobalMonitoringOverride -Item Monitor -Identity HubTransport\InternalAggregateDeliveryQueueLengthHighPriorityMonitor -PropertyName MonitoringThreshold -PropertyValue 50 -Duration 60
+   ```
+
+4. To verify that you have correctly created the global overrides, run the following command:
+
+   ```powershell
+   Get-GlobalMonitoringOverride | Where {$_.Identity -like "*HubTransport*"} | Format-Table Identity, ItemType, PropertyName, PropertyValue
+   ```
 
 ## Cmdlet reference for monitoring overrides
 
 See the following topics for more information about the cmdlets you can use to configure monitoring overrides.
 
-  - [Add-GlobalMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272114)
+- [Add-GlobalMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272114)
 
-  - [Get-GlobalMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272115)
+- [Get-GlobalMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272115)
 
-  - [Remove-GlobalMonitoringOverride](https://go.microsoft.com/fwlink/?linkid=272116)
+- [Remove-GlobalMonitoringOverride](https://go.microsoft.com/fwlink/?linkid=272116)
 
-  - [Add-ServerMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272117)
+- [Add-ServerMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272117)
 
-  - [Get-ServerMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272118)
+- [Get-ServerMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272118)
 
-  - [Get-MonitoringItemIdentity](https://technet.microsoft.com/en-us/library/jj218668\(v=exchg.150\))
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+- [Get-MonitoringItemIdentity](https://technet.microsoft.com/en-us/library/jj218668\(v=exchg.150\))

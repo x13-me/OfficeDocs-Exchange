@@ -24,19 +24,19 @@ This topic explains how Exchange 2013 stores and retrieves information in Active
 
 The Active Directory database stores information in three types of logical partitions that are described in the following sections:
 
-  - Schema partition
+- Schema partition
 
-  - Configuration partition
+- Configuration partition
 
-  - Domain partition
+- Domain partition
 
 ## Schema partition
 
 The schema partition stores the following two types of information:
 
-  - **Schema classes** define all the types of objects that can be created and stored in Active Directory.
+- **Schema classes** define all the types of objects that can be created and stored in Active Directory.
 
-  - **Schema attributes** define all the properties that can be used to describe the objects that are stored in Active Directory.
+- **Schema attributes** define all the properties that can be used to describe the objects that are stored in Active Directory.
 
 When you install the first Exchange 2013 server role in the forest or run the Active Directory preparation process, the Active Directory preparation process adds many classes and attributes to the Active Directory schema. The classes that are added to the schema are used to create Exchange-specific objects, such as agents and connectors. The attributes that are added to the schema are used to configure the Exchange-specific objects and the mail-enabled users and groups. These attributes include properties, such as Microsoft Office Outlook Web Access settings and Microsoft Exchange Unified Messaging (UM) settings. Every domain controller and global catalog server in the forest contains a complete replica of the schema partition.
 
@@ -46,27 +46,27 @@ For more information about schema modifications in Exchange 2013, see [Exchange 
 
 The configuration partition stores information about the forest-wide configuration. This configuration information includes the configuration of Active Directory sites, Exchange global settings, transport settings, and mailbox policies. Each type of configuration information is stored in a container in the configuration partition. Exchange configuration information is stored in a subfolder under the configuration partition's Services container. The information that is stored in this container includes the following:
 
-  - Address lists
+- Address lists
 
-  - Address book mailbox policies
+- Address book mailbox policies
 
-  - Administrative groups
+- Administrative groups
 
-  - Client access settings
+- Client access settings
 
-  - Connections
+- Connections
 
-  - Mobile Mailbox Settings
+- Mobile Mailbox Settings
 
-  - Global settings
+- Global settings
 
-  - Monitoring Settings
+- Monitoring Settings
 
-  - System policies
+- System policies
 
-  - Retention policies container
+- Retention policies container
 
-  - Transport settings
+- Transport settings
 
 Every domain controller and global catalog server in the forest contains a complete replica of the configuration partition.
 
@@ -103,17 +103,17 @@ Active Directory Recycle Bin helps minimize directory service downtime by enhanc
 
 The most important thing to understand about recovering deleted Exchange-related Active Directory objects is that Exchange objects don't exist in isolation. For example, when you mail-enable a user, several different policies and links are calculated for the user based on your current Exchange configuration. Two problems that may arise when you restore a deleted Exchange configuration or recipient object are:
 
-  - **Collisions**: Some Exchange attributes must be unique across a forest. For example, proxy (email) addresses must not be the same for two different users. Active Directory doesn't enforce proxy address uniqueness, Exchange administrative tools check for uniqueness. Exchange email address policies also automatically resolve possible conflicts in proxy address assignment based on deterministic rules. Therefore, it's possible to restore an Exchange user object and, as a result, create a collision with proxy addresses or other attributes that should be unique.
+- **Collisions**: Some Exchange attributes must be unique across a forest. For example, proxy (email) addresses must not be the same for two different users. Active Directory doesn't enforce proxy address uniqueness, Exchange administrative tools check for uniqueness. Exchange email address policies also automatically resolve possible conflicts in proxy address assignment based on deterministic rules. Therefore, it's possible to restore an Exchange user object and, as a result, create a collision with proxy addresses or other attributes that should be unique.
 
-  - **Misconfigurations**: Exchange has automated rules that assign various policies or settings. If you delete a recipient, and then change the rules or policies, restoring an Exchange user object may result in a user being assigned to the wrong policy (or even to a policy that no longer exists).
+- **Misconfigurations**: Exchange has automated rules that assign various policies or settings. If you delete a recipient, and then change the rules or policies, restoring an Exchange user object may result in a user being assigned to the wrong policy (or even to a policy that no longer exists).
 
 The following guidelines will help you minimize problems or issues when you recover deleted Exchange-related objects:
 
-  - If you deleted an Exchange configuration object using Exchange management tools, don't restore the object. Instead, create the object again using the Exchange management tools (Exchange admin center or Exchange Management Shell).
+- If you deleted an Exchange configuration object using Exchange management tools, don't restore the object. Instead, create the object again using the Exchange management tools (Exchange admin center or Exchange Management Shell).
 
-  - If you deleted an Exchange configuration object without using the Exchange management tools, recover the object as soon as possible. The more administrative and configuration changes that have been made in the system since the deletion, the more likely it is that restoring the objects will result in misconfiguration.
+- If you deleted an Exchange configuration object without using the Exchange management tools, recover the object as soon as possible. The more administrative and configuration changes that have been made in the system since the deletion, the more likely it is that restoring the objects will result in misconfiguration.
 
-  - If you recover deleted Exchange recipients (contacts, users, or distribution groups), monitor closely for collisions and errors relating to the recovered objects. If Exchange policies or other configuration relating to recipients may have been modified since the deletion, re-apply current policies to the restored recipients to ensure that they're configured correctly.
+- If you recover deleted Exchange recipients (contacts, users, or distribution groups), monitor closely for collisions and errors relating to the recovered objects. If Exchange policies or other configuration relating to recipients may have been modified since the deletion, re-apply current policies to the restored recipients to ensure that they're configured correctly.
 
 ## For more information
 

@@ -28,11 +28,11 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 5 minutes.
+- Estimated time to complete: 5 minutes.
 
-  - Procedures in this topic require specific permissions. See each procedure for its permissions information.
+- Procedures in this topic require specific permissions. See each procedure for its permissions information.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
@@ -71,9 +71,9 @@ To verify that you've configured Exchange to allow users to view their POP3 serv
 
 1. Run the following command in the Shell.
 
-    ```powershell
-    Get-PopSettings | format-list
-    ```
+   ```powershell
+   Get-PopSettings | format-list
+   ```
 
 2. Verify that the *ExternalConnectionSettings* property is set.
 
@@ -81,9 +81,9 @@ To verify that you've configured Exchange to allow users to view their IMAP4 ser
 
 1. Run the following command in the Shell.
 
-    ```powershell
-    Get-ImapSettings | format-list
-    ```
+   ```powershell
+   Get-ImapSettings | format-list
+   ```
 
 2. Verify that the *ExternalConnectionSettings* property is set.
 
@@ -94,7 +94,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 This example allows internal and external SMTP server settings to be viewed by end users using Outlook Web App.
 
 ```powershell
-    Get-ReceiveConnector "*Client Frontend*" | Set-ReceiveConnector -Fqdn Server.Contoso.com -AdvertiseClientSettings $true
+Get-ReceiveConnector "*Client Frontend*" | Set-ReceiveConnector -Fqdn Server.Contoso.com -AdvertiseClientSettings $true
 ```
 
 For detailed syntax and parameter information, see [Set-ReceiveConnector](https://technet.microsoft.com/en-us/library/bb125140\(v=exchg.150\)).
@@ -105,9 +105,9 @@ To verify that you've configured Exchange to allow users to view their SMTP serv
 
 1. Run the following command in the Shell.
 
-    ```powershell
-    Get-ReceiveConnector | format-list
-    ```
+   ```powershell
+   Get-ReceiveConnector | format-list
+   ```
 
 2. If the *AdvertiseClientSettings* property is set to `true`, users can view their SMTP server settings in Outlook Web App. If *AdvertiseClientSettings* is set to `false`, users can't view their SMTP server settings in Outlook Web App.
 

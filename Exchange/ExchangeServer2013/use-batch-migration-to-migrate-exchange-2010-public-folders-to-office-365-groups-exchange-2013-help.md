@@ -149,6 +149,7 @@ In this step, you gather information from your Exchange environment, and then yo
 2. In Exchange Online PowerShell, use the information that was returned above in step 1 to run the following commands. The variables in these commands will be the values from step 1.
 
     1. Pass the credential of a user with administrator permissions in the Exchange 2010 environment into the variable `$Source_Credential`. When you eventually run the migration request in Exchange Online, you will use this credential to gain access to your Exchange 2010 servers through Outlook Anywhere in order to copy the content over.
+
         ```powershell
             $Source_Credential = Get-Credential
             <source_domain>\<PublicFolder_Administrator_Account>

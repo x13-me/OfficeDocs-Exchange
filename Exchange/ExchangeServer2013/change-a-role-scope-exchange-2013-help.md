@@ -22,21 +22,21 @@ You can change a custom management scope. You can change either exclusive or reg
 
 For more information about management role scopes and assignments in Microsoft Exchange Server 2013, see the following topics:
 
-  - [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md)
+- [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md)
 
-  - [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md)
+- [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md)
 
 Looking for other management tasks related to role scopes? Check out [Advanced permissions](advanced-permissions-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management scopes" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management scopes" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - You must use the Shell to perform these procedures.
+- You must use the Shell to perform these procedures.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
@@ -104,7 +104,7 @@ Set-ManagementScope <scope name> -ServerRestrictionFilter { <new server filter> 
 This example changes the server filter to match all the server objects where the **ServerSite** property is set to 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com'.
 
 ```powershell
-    Set-ManagementScope "Company Scope" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+Set-ManagementScope "Company Scope" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
 ```
 
 For detailed syntax and parameter information, see [Set-ManagementScope](https://technet.microsoft.com/en-us/library/dd297996\(v=exchg.150\)).
@@ -134,7 +134,7 @@ Set-ManagementScope <scope name> -DatabaseRestrictionFilter { <new database filt
 This example changes the database filter to match all the database objects where the **Name** property contains the string "Executive".
 
 ```powershell
-    Set-ManagementScope "Database Executive Scope" -DatabaseRestrictionFilter { Name -Like "*Executive*" }
+Set-ManagementScope "Database Executive Scope" -DatabaseRestrictionFilter { Name -Like "*Executive*" }
 ```
 
 For detailed syntax and parameter information, see [Set-ManagementScope](https://technet.microsoft.com/en-us/library/dd297996\(v=exchg.150\)).

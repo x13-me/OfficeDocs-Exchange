@@ -29,17 +29,17 @@ For additional management tasks related to Mailbox servers, see [UM services pro
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 3 minutes.
+- Estimated time to complete: 3 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Server Configuration Settings" entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Server Configuration Settings" entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
-  - Verify that the Mailbox server is installed, either on the same computer as the Client Access server or on a separate computer.
+- Verify that the Mailbox server is installed, either on the same computer as the Client Access server or on a separate computer.
 
-  - If you're putting a Mailbox server into Maintenance Mode, verify that there's enough redundancy of all database copies to allow the server to go out of service.
+- If you're putting a Mailbox server into Maintenance Mode, verify that there's enough redundancy of all database copies to allow the server to go out of service.
 
-  - Before taking a server out of Maintenance Mode, verify the health of the server and make sure it's ready to go into service.
+- Before taking a server out of Maintenance Mode, verify the health of the server and make sure it's ready to go into service.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
@@ -49,11 +49,11 @@ For additional management tasks related to Mailbox servers, see [UM services pro
 This example enables a Mailbox server `UMMBXr-05x.contoso.com` to answer incoming voice, fax, auto attendant, and Outlook Voice Access calls from VoIP gateways, IP PBXs, SIP-enabled PBXs, and SBCs, and writes the change to the registry on the UMMBX-05x server.
 
 ```powershell
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
 ```
 
 This example prevents a Mailbox server `UMMBX-05x.contoso.com` from answering incoming voice, fax, auto attendant, and Outlook Voice Access calls from VoIP gateways, IP PBXs, SIP-enabled PBXs, and SBCs, and writes the change only to Active Directory.
 
 ```powershell
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
 ```

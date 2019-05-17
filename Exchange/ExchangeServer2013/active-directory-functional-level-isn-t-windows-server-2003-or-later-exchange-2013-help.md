@@ -22,9 +22,9 @@ For information about how to raise the forest functional level of the current Ac
 
 For more information about Active Directory functional levels, see the following topics:
 
-  - [What are Active Directory Functional Levels?](https://go.microsoft.com/fwlink/p/?linkid=294832)
+- [What are Active Directory Functional Levels?](https://go.microsoft.com/fwlink/p/?linkid=294832)
 
-  - [How Active Directory Functional Levels Work](https://go.microsoft.com/fwlink/p/?linkid=294833)
+- [How Active Directory Functional Levels Work](https://go.microsoft.com/fwlink/p/?linkid=294833)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
 

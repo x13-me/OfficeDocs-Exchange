@@ -27,17 +27,17 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management roles" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management roles" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - You must use the Shell to perform these procedures.
+- You must use the Shell to perform these procedures.
 
-  - A role entry that you want to add to a management role must exist in that role's immediate parent management role.
+- A role entry that you want to add to a management role must exist in that role's immediate parent management role.
 
-  - This topic makes use of pipelining. For more information about pipelining, see [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\)).
+- This topic makes use of pipelining. For more information about pipelining, see [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\)).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
@@ -67,7 +67,7 @@ For detailed syntax and parameter information, see [Add-ManagementRoleEntry](htt
 If you want to add a role entry from a parent role, but you want to include only specific parameters in the role entry on the child role, use the following syntax.
 
 ```powershell
-    Add-ManagementRoleEntry <child role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+Add-ManagementRoleEntry <child role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
 ```
 
 This example adds the **Set-Mailbox** cmdlet to the Help Desk role, but includes only the *DisplayName* and *EmailAddresses* parameters in the entry on the child role.
@@ -87,13 +87,13 @@ If you want to add more than one role entry to a role, you need to retrieve a li
 To add multiple entries from a parent role to a child role, use the following syntax.
 
 ```powershell
-    Get-ManagementRoleEntry <parent role name>\*<partial cmdlet name>* | Add-ManagementRoleEntry -Role <child role name>
+Get-ManagementRoleEntry <parent role name>\*<partial cmdlet name>* | Add-ManagementRoleEntry -Role <child role name>
 ```
 
 This example adds all the role entries that contain the string `Mailbox` in the cmdlet name on the Mail Recipients parent role to the Seattle Mail Recipients child role.
 
 ```powershell
-    Get-ManagementRoleEntry "Mail Recipients\*Mailbox*" | Add-ManagementRoleEntry -Role "Seattle Mail Recipients"
+Get-ManagementRoleEntry "Mail Recipients\*Mailbox*" | Add-ManagementRoleEntry -Role "Seattle Mail Recipients"
 ```
 
 If the role entries already exist on the child role, you can include the *Overwrite* parameter to overwrite the existing role entries.

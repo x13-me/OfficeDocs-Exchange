@@ -22,11 +22,11 @@ Looking for other management tasks related to permissions? Check out [Permission
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role groups" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role groups" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
@@ -62,28 +62,28 @@ Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
 
 This procedure makes use of pipelining, the **Where** cmdlet, and the *WhatIf* parameter. For more information about these concepts, see the following topics:
 
-  - [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
+- [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
 
-  - [Working with command output](working-with-command-output-exchange-2013-help.md)
+- [Working with command output](working-with-command-output-exchange-2013-help.md)
 
-  - [WhatIf, Confirm, and ValidateOnly switches](whatif-confirm-and-validateonly-switches-exchange-2013-help.md)
+- [WhatIf, Confirm, and ValidateOnly switches](whatif-confirm-and-validateonly-switches-exchange-2013-help.md)
 
 If you want to change the assignment policy for a group of mailboxes that are assigned a specific policy, use the following syntax.
 
 ```powershell
-    Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "<assignment policy to find>"} | Set-Mailbox -RoleAssignmentPolicy <assignment policy to set>
+Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "<assignment policy to find>"} | Set-Mailbox -RoleAssignmentPolicy <assignment policy to set>
 ```
 
 This example finds all the mailboxes assigned to the Redmond Users - No Voicemail assignment policy and changes the assignment policy to Redmond Users - Voicemail Enabled.
 
 ```powershell
-    Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail"} | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled"
+Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail"} | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled"
 ```
 
 This example includes the *WhatIf* parameter so that you can see all the mailboxes that would be changed without committing any changes.
 
 ```powershell
-    Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail"} | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled" -WhatIf
+Get-Mailbox | Where {$_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail"} | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled" -WhatIf
 ```
 
 For detailed syntax and parameter information, see [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\)) or [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)).

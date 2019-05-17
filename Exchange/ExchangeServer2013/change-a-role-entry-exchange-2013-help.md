@@ -30,17 +30,17 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management roles" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management roles" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - You must use the Shell to perform these procedures.
+- You must use the Shell to perform these procedures.
 
-  - If you want to add parameters to a role entry, the parameters you add must exist in the role entry in the parent role. The parameters must also exist on the cmdlet you specify.
+- If you want to add parameters to a role entry, the parameters you add must exist in the role entry in the parent role. The parameters must also exist on the cmdlet you specify.
 
-  - If you want to remove parameters from a role entry, the parameters you remove can't exist in the role entries of any child roles. You must remove the parameters from the role entries of the child roles. Use the "Use the Shell to remove one or more parameters from a role entry" procedure later in this topic to remove the parameters from the role entries of all child roles.
+- If you want to remove parameters from a role entry, the parameters you remove can't exist in the role entries of any child roles. You must remove the parameters from the role entries of the child roles. Use the "Use the Shell to remove one or more parameters from a role entry" procedure later in this topic to remove the parameters from the role entries of all child roles.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
@@ -54,13 +54,13 @@ To add parameters to a role entry, you need to specify the parameters you want t
 To add parameters to a role entry, use the following syntax.
 
 ```powershell
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter
 ```
 
 This example adds the *EmailAddresses* and *Type* parameters to the **Set-Mailbox** cmdlet on the Recipient Administrators role.
 
 ```powershell
-    Set-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" -Parameters EmailAddresses, Type -AddParameter
+Set-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" -Parameters EmailAddresses, Type -AddParameter
 ```
 
 For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd351162\(v=exchg.150\)).
@@ -72,13 +72,13 @@ To remove parameters from a role entry, you need to specify the parameters you w
 To remove parameters from a role entry, use the following syntax.
 
 ```powershell
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter
 ```
 
 This example removes the *Port*, *ProtocolLoggingLevel*, and *SmartHostAuthMechanism* parameters from the **Set-SendConnector** cmdlet on the Tier 1 Server Administrators role.
 
 ```powershell
-    Set-ManagementRoleEntry "Tier 1 Server Administrators\Set-SendConnector" -Parameters Port, ProtocolLoggingLevel, SmartHostAuthMechanism -RemoveParameter
+Set-ManagementRoleEntry "Tier 1 Server Administrators\Set-SendConnector" -Parameters Port, ProtocolLoggingLevel, SmartHostAuthMechanism -RemoveParameter
 ```
 
 For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd351162\(v=exchg.150\)).
@@ -95,13 +95,13 @@ Removing all the parameters from a role entry is most useful when you want to ma
 To remove all the parameters from a role entry, use the following syntax.
 
 ```powershell
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters $Null
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters $Null
 ```
 
 This example removes all the parameters from the **Set-CASMailbox** cmdlet on the Recipient Administrators role.
 
 ```powershell
-    Set-ManagementRoleEntry "Recipient Administrators\Set-CASMailbox" -Parameters $Null
+Set-ManagementRoleEntry "Recipient Administrators\Set-CASMailbox" -Parameters $Null
 ```
 
 For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd351162\(v=exchg.150\)).
@@ -113,13 +113,13 @@ If you want only a specific set of parameters to be included on a role entry, sp
 To specify a specific set of parameters, use the following syntax.
 
 ```powershell
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
 ```
 
 This example includes only the *Identity*, *DisplayName*, *MissedCallNotificationEnabled*, and *PersonalAuthAttendantEnabled* parameters on the **Set-UMMailbox** cmdlet on the Seattle Mail Recipients role.
 
 ```powershell
-    Set-ManagementRoleEntry "Seattle Mail Recipients\Set-UMMailbox" -Parameters Identity, DisplayName, MissedCallNotificationEnabled, PersonalAutoAttendantEnabled
+Set-ManagementRoleEntry "Seattle Mail Recipients\Set-UMMailbox" -Parameters Identity, DisplayName, MissedCallNotificationEnabled, PersonalAutoAttendantEnabled
 ```
 
 For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/en-us/library/dd351162\(v=exchg.150\)).

@@ -49,9 +49,9 @@ By default, when the first Exchange 2013 Mailbox server is installed, one accept
 
 To learn more, see:
 
-  - [Configure an accepted domain within your Exchange organization as authoritative](configure-an-accepted-domain-within-your-exchange-organization-as-authoritative-exchange-2013-help.md)
+- [Configure an accepted domain within your Exchange organization as authoritative](configure-an-accepted-domain-within-your-exchange-organization-as-authoritative-exchange-2013-help.md)
 
-  - [Configure Exchange to accept mail for multiple authoritative domains](configure-exchange-to-accept-mail-for-multiple-authoritative-domains-exchange-2013-help.md)
+- [Configure Exchange to accept mail for multiple authoritative domains](configure-exchange-to-accept-mail-for-multiple-authoritative-domains-exchange-2013-help.md)
 
 ## Relay domains
 
