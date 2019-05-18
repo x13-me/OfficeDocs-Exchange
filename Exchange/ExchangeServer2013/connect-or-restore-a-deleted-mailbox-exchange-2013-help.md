@@ -24,39 +24,39 @@ Until a deleted mailbox is permanently deleted from the Exchange mailbox databas
 
 To learn more about disconnected mailboxes and perform other related management tasks, see the following topics:
 
-  - [Disconnected mailboxes](disconnected-mailboxes-exchange-2013-help.md)
+- [Disconnected mailboxes](disconnected-mailboxes-exchange-2013-help.md)
 
-  - [Disable or delete a mailbox](disable-or-delete-a-mailbox-exchange-2013-help.md)
+- [Disable or delete a mailbox](disable-or-delete-a-mailbox-exchange-2013-help.md)
 
-  - [Connect a disabled mailbox](connect-a-disabled-mailbox-exchange-2013-help.md)
+- [Connect a disabled mailbox](connect-a-disabled-mailbox-exchange-2013-help.md)
 
-  - [Permanently delete a mailbox](permanently-delete-a-mailbox-exchange-2013-help.md)
+- [Permanently delete a mailbox](permanently-delete-a-mailbox-exchange-2013-help.md)
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 2 minutes.
+- Estimated time to complete: 2 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - Create a new user account in Active Directory to connect the deleted mailbox to. Or use the **Get-User** cmdlet in the Shell to verify that the Active Directory user account that you want to connect the deleted mailbox to exists and that it isn't already associated with another mailbox. To connect a deleted mailbox to a user account, the account must exist and the value for the *RecipientType* property has to be `User`, which indicates that the account isn't already mailbox-enabled.
+- Create a new user account in Active Directory to connect the deleted mailbox to. Or use the **Get-User** cmdlet in the Shell to verify that the Active Directory user account that you want to connect the deleted mailbox to exists and that it isn't already associated with another mailbox. To connect a deleted mailbox to a user account, the account must exist and the value for the *RecipientType* property has to be `User`, which indicates that the account isn't already mailbox-enabled.
 
-    For on-premises Exchange organizations, you can also verify this information in Active Directory Users and Computers.
+  For on-premises Exchange organizations, you can also verify this information in Active Directory Users and Computers.
 
-    > [!IMPORTANT]
-    > When you connect deleted linked mailboxes, resource mailboxes, or shared mailboxes, the Active Directory user account that you're connecting the mailbox to must be disabled.
+  > [!IMPORTANT]
+  > When you connect deleted linked mailboxes, resource mailboxes, or shared mailboxes, the Active Directory user account that you're connecting the mailbox to must be disabled.
 
-  - To verify that the deleted mailbox that you want to connect a user account to exists in the mailbox database and isn't a soft-deleted mailbox, replace _\<DisplayName\>_ with the display name of the mailbox, and run the following commands.
+- To verify that the deleted mailbox that you want to connect a user account to exists in the mailbox database and isn't a soft-deleted mailbox, replace _\<DisplayName\>_ with the display name of the mailbox, and run the following commands.
 
-    ```powershell
-    $dbs = Get-MailboxDatabase
-    $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisplayName,Database,DisconnectReason
-    ```
+  ```powershell
+  $dbs = Get-MailboxDatabase
+  $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$_.DisplayName -eq "<DisplayName>"} | Format-List DisplayName,Database,DisconnectReason
+   ```
 
-    The deleted mailbox has to exist in the mailbox database and the value for the *DisconnectReason* property has to be `Disabled`. If the mailbox has been purged from the database, the command won't return any results.
+  The deleted mailbox has to exist in the mailbox database and the value for the *DisconnectReason* property has to be `Disabled`. If the mailbox has been purged from the database, the command won't return any results.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-  - Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)..
+- Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)..
 
 ## What do you want to do?
 
@@ -72,20 +72,20 @@ The following procedure shows how to connect a deleted user mailbox to a user ac
 
 2. Click **More** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), and then click **Connect a mailbox**.
 
-    A list of mailboxes that are disconnected on the selected Exchange server in your Exchange organization will be displayed.
+   A list of mailboxes that are disconnected on the selected Exchange server in your Exchange organization will be displayed.
 
-    > [!NOTE]
-    > This list of disconnected mailboxes includes disabled mailboxes, deleted mailboxes, and soft-deleted mailboxes.
+   > [!NOTE]
+   > This list of disconnected mailboxes includes disabled mailboxes, deleted mailboxes, and soft-deleted mailboxes.
 
 3. Click the deleted mailbox that you want to connect a user to, and then click **Connect**.
 
 4. In the window that asks if you're sure that you want to connect the mailbox, click **Yes**.
 
-    A list of user accounts that aren't mail-enabled is displayed.
+   A list of user accounts that aren't mail-enabled is displayed.
 
 5. Click the user that you want to connect the deleted mailbox to, and then click **OK**.
 
-    Exchange will connect the deleted mailbox to the user account that you selected.
+   Exchange will connect the deleted mailbox to the user account that you selected.
 
 ## Use the Shell to connect a deleted mailbox
 
@@ -108,17 +108,23 @@ This example connects a linked mailbox. The *Identity* parameter specifies the d
 ```powershell
     Connect-Mailbox -Identity "Temp User" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount danpark@fabrikam.com -Alias dpark
 ```
+
 This example connects a room mailbox.
+
 ```powershell
-    Connect-Mailbox -Identity "rm2121" -Database "MBXResourceDB" -User "Conference Room 2121" -Alias ConfRm2121 -Room
+Connect-Mailbox -Identity "rm2121" -Database "MBXResourceDB" -User "Conference Room 2121" -Alias ConfRm2121 -Room
 ```
+
 This example connects an equipment mailbox.
+
 ```powershell
-    Connect-Mailbox -Identity "MotorPool01" -Database "MBXResourceDB" -User "Van01 (12 passengers)" -Alias van01 -Equipment
+Connect-Mailbox -Identity "MotorPool01" -Database "MBXResourceDB" -User "Van01 (12 passengers)" -Alias van01 -Equipment
 ```
+
 This example connects a shared mailbox.
+
 ```powershell
-    Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
+Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
 ```
 
 > [!NOTE]
@@ -130,17 +136,17 @@ For detailed syntax and parameter information, see [Connect-Mailbox](https://tec
 
 To verify that you've successfully connected a deleted mailbox to a user account, do one of the following:
 
-  - In the EAC, click **Recipients**, navigate to the appropriate page for the mailbox type that you connected, click **Refresh** ![Refresh Icon](images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif "Refresh Icon"), and verify that the mailbox is listed.
+- In the EAC, click **Recipients**, navigate to the appropriate page for the mailbox type that you connected, click **Refresh** ![Refresh Icon](images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif "Refresh Icon"), and verify that the mailbox is listed.
 
-  - In Active Directory Users and Computers, right-click the user account that you connected to the mailbox, and then click **Properties**. On the **General** tab, notice that the **E-mail** box is populated with the email address for the connected mailbox.
+- In Active Directory Users and Computers, right-click the user account that you connected to the mailbox, and then click **Properties**. On the **General** tab, notice that the **E-mail** box is populated with the email address for the connected mailbox.
 
-  - In the Shell, run the following command.
+- In the Shell, run the following command.
 
-    ```powershell
-    Get-User <identity>
-    ```
+  ```powershell
+  Get-User <identity>
+  ```
 
-    The **UserMailbox** value for the *RecipientType* property indicates that the user account and the mailbox are connected. You can also run the **Get-Mailbox \<identity\>** command to verify that the mailbox was connected.
+  The **UserMailbox** value for the *RecipientType* property indicates that the user account and the mailbox are connected. You can also run the **Get-Mailbox \<identity\>** command to verify that the mailbox was connected.
 
 ## Restore a deleted mailbox
 
@@ -163,13 +169,13 @@ $dbs | foreach {Get-MailboxStatistics -Database $_.DistinguishedName} | where {$
 This example restores the deleted mailbox, which is identified by the *SourceStoreMailbox* parameter and is located on the MBXDB01 mailbox database, to the target mailbox Debra Garcia. The *AllowLegacyDNMismatch* parameter is used so the source mailbox can be restored to a different mailbox, one that doesn't have the same legacy DN value.
 
 ```powershell
-    New-MailboxRestoreRequest -SourceStoreMailbox e4890ee7-79a2-4f94-9569-91e61eac372b -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+New-MailboxRestoreRequest -SourceStoreMailbox e4890ee7-79a2-4f94-9569-91e61eac372b -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
 ```
 
 This example restores Pilar Pinilla's deleted archive mailbox to her current archive mailbox. The *AllowLegacyDNMismatch* parameter isn't necessary because a primary mailbox and its corresponding archive mailbox have the same legacy DN.
 
 ```powershell
-    New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
+New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
 ```
 
 For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/en-us/library/ff829875\(v=exchg.150\)).
@@ -182,44 +188,45 @@ You will need the GUID of the deleted public folder mailbox, as well as the GUID
 
 1. Get the Active Directory forest and domain controller fully-qualified domain name (FQDN) by running the following cmdlet:
 
-    ```powershell
-    Get-OrganizationConfig | fl OriginatingServer
-    ```
+   ```powershell
+   Get-OrganizationConfig | fl OriginatingServer
+   ```
 
 2. With the information returned by Step 1, search the Deleted Objects container in Active Directory for the GUID of the public folder mailbox and for the GUID or name of the mailbox database that the deleted public folder mailbox was contained in.
 
-    > [!TIP]
-    > You can search Deleted Objects using a custom script or by using the Ldp utility, which can be opened by typing <STRONG>ldp.exe</STRONG> at a Powershell prompt.
+   > [!TIP]
+   > You can search Deleted Objects using a custom script or by using the Ldp utility, which can be opened by typing <STRONG>ldp.exe</STRONG> at a Powershell prompt.
 
 When you know the deleted public folder mailbox GUID and the name or GUID of the mailbox database that contained the public folder mailbox, run the following commands to restore the public folder mailbox.
 
 1. Create a new Active Directory object by running the following commands (you may be prompted to provide appropriate credentials):
 
-    ```powershell
-        New-MailUser <mailUserName> -ExternalEmailAddress <emailAddress>
-    ```
-    ```powershell
-        Get-MailUser <mailUserName> | Disable-MailUser
-    ```
+   ```powershell
+   New-MailUser <mailUserName> -ExternalEmailAddress <emailAddress>
+   ```
 
-    Where `<mailUserName>`, `<emailAddress>`, and `<mailUserName>` are values you choose. You will need to use the same `<mailUserName>` value in the next step.
+   ```powershell
+   Get-MailUser <mailUserName> | Disable-MailUser
+   ```
+
+   Where `<mailUserName>`, `<emailAddress>`, and `<mailUserName>` are values you choose. You will need to use the same `<mailUserName>` value in the next step.
 
 2. Connect the deleted public folder mailbox to the Active Directory object you just created by running the following command:
 
-    ```powershell
-        Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
-    ```
+   ```powershell
+   Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
+   ```
 
-    > [!NOTE]
-    > The <CODE>Identity</CODE> parameter specifies the mailbox object in the Exchange database to connect to an Active Directory user object. The above example specifies the GUID for the public folder mailbox, but you can also use the Display name value or the LegacyExchangeDN value.
+   > [!NOTE]
+   > The <CODE>Identity</CODE> parameter specifies the mailbox object in the Exchange database to connect to an Active Directory user object. The above example specifies the GUID for the public folder mailbox, but you can also use the Display name value or the LegacyExchangeDN value.
 
 3. Run `Update-StoreMailboxState` on the public folder mailbox, based on the following example:
 
-    ```powershell
-        Update-StoreMailboxState -Identity <public folder mailbox GUID> -Database <database name or GUID>
-    ```
+   ```powershell
+   Update-StoreMailboxState -Identity <public folder mailbox GUID> -Database <database name or GUID>
+   ```
 
-    As in Step 2, the `Identity` parameter will accept GUID, Display Name, or LegacyExchangeDN values for the public folder mailbox.
+   As in Step 2, the `Identity` parameter will accept GUID, Display Name, or LegacyExchangeDN values for the public folder mailbox.
 
 ## How do you know this worked?
 
@@ -227,6 +234,6 @@ To verify that you've successfully restored a deleted public folder mailbox, run
 
 For more information, see:
 
-  - [Connect-Mailbox](https://technet.microsoft.com/en-us/library/aa997878\(v=exchg.150\))
+- [Connect-Mailbox](https://technet.microsoft.com/en-us/library/aa997878\(v=exchg.150\))
 
-  - [Update-StoreMailboxState](https://technet.microsoft.com/en-us/library/jj860462\(v=exchg.150\))
+- [Update-StoreMailboxState](https://technet.microsoft.com/en-us/library/jj860462\(v=exchg.150\))

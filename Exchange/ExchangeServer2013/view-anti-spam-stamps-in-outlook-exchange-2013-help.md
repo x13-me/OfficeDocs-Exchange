@@ -60,4 +60,3 @@ You can use Microsoft Outlook to view the anti-spam stamps that Microsoft Exchan
         X-MS-Exchange-Organization-SCL:6
         X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
     ```
-

@@ -4,7 +4,7 @@ TOCTitle: Import the Exchange Server 2013 Management Pack
 ms:assetid: dc929928-61b8-448b-9ae5-d3fa73a18ee9
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn195914(v=EXCHG.150)
 ms:contentKeyID: 53181787
-ms.date: 02/06/2017
+ms.date: 
 ms.reviewer: 
 manager: dansimp
 ms.author: chrisda
@@ -12,49 +12,25 @@ author: chrisda
 mtps_version: v=EXCHG.150
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Import the Exchange Server 2013 Management Pack
 
-</div>
-
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2017-02-06_
-
 Let's start with importing the management pack to your SCOM deployment.
-
-<div>
 
 ## Prerequisites
 
 Before you can import the management pack, verify that the following conditions are met:
 
-  - You have one of the following versions of System Center Operations Manager deployed in your organization:
+- You have one of the following versions of System Center Operations Manager deployed in your organization:
 
-      - System Center Operations Manager 2012 R2 SP1 or later
+  - System Center Operations Manager 2012 R2 SP1 or later
 
-  - You have already deployed SCOM agents to your Exchange Servers. [Show me how](procedures-related-to-deployment.md).
+- You have already deployed SCOM agents to your Exchange Servers. [Show me how](procedures-related-to-deployment.md).
 
-  - The SCOM agents on your Exchange Servers are running under the local system account. [Show me how](procedures-related-to-deployment.md).
+- The SCOM agents on your Exchange Servers are running under the local system account. [Show me how](procedures-related-to-deployment.md).
 
-  - The SCOM agents on your Exchange Servers are configured to act as a proxy and discover managed objects on other computers. [Show me how](procedures-related-to-deployment.md).
+- The SCOM agents on your Exchange Servers are configured to act as a proxy and discover managed objects on other computers. [Show me how](procedures-related-to-deployment.md).
 
-  - Your user account is a member of the Operations Manager Administrators role.
-
-</div>
-
-<span id="import"></span>
-
-<div>
+- Your user account is a member of the Operations Manager Administrators role.
 
 ## Import the Exchange Server 2013 Management Pack
 
@@ -81,15 +57,3 @@ Use the following steps to import the Exchange Server 2013 Management Pack. This
 10. Click **View** and then **Refresh**, or press F5, to see the Microsoft Exchange Server 2013 management pack in the list of Management Packs.
 
 Now that you have imported the management pack, see [Getting started with Exchange Server 2013 Management Pack](getting-started-with-exchange-server-2013-management-pack.md) to learn about the new dashboard.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>

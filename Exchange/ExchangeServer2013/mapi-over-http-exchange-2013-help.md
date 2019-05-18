@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # MAPI over HTTP
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 Messaging Application Programming Interface (MAPI) over HTTP is a new transport protocol implemented in Microsoft Exchange Server 2013 Service Pack 1 (SP1). MAPI over HTTP improves the reliability and stability of the Outlook and Exchange connections by moving the transport layer to the industry-standard HTTP model. This allows a higher level of visibility of transport errors and enhanced recoverability. Additional functionality includes support for an explicit pause-and-resume function. This enables supported clients to change networks or resume from hibernation while maintaining the same server context.
@@ -26,25 +24,25 @@ Implementing MAPI over HTTP does not mean that it is the only protocol that can 
 
 MAPI over HTTP offers the following benefits to clients that support it:
 
-  - Enables future innovation in authentication by using an HTTP based protocol.
+- Enables future innovation in authentication by using an HTTP based protocol.
 
-  - Provides faster reconnection times after a communications break because only TCP connections (not RPC connections) need to be rebuilt. Examples of a communication break include:
+- Provides faster reconnection times after a communications break because only TCP connections (not RPC connections) need to be rebuilt. Examples of a communication break include:
 
-      - Device hibernation
+  - Device hibernation
 
-      - Changing from a wired network to a wireless or cellular network
+  - Changing from a wired network to a wireless or cellular network
 
-  - Offers a session context that is not dependent on the connection. The server maintains the session context for a configurable period of time, even if the user changes networks.
+- Offers a session context that is not dependent on the connection. The server maintains the session context for a configurable period of time, even if the user changes networks.
 
 ## Deploy MAPI over HTTP
 
 Consider the following requirements to enable MAPI over HTTP.
 
-  - **Supportability**: Verify that your intended configuration versions are supported.
+- **Supportability**: Verify that your intended configuration versions are supported.
 
-  - **Prerequisites**: Verify that your environment has been upgraded and prepared for MAPI over HTTP.
+- **Prerequisites**: Verify that your environment has been upgraded and prepared for MAPI over HTTP.
 
-  - **Configuration**: Configure the virtual directories, and enable MAPI for your organization.
+- **Configuration**: Configure the virtual directories, and enable MAPI for your organization.
 
 ## Supportability
 
@@ -150,8 +148,8 @@ Complete the following steps to prepare the clients and servers to support MAPI 
 
 2. Upgrade Client Access and Mailbox servers to the latest Exchange 2013 cumulative update (CU). For information about how to upgrade, see [Upgrade Exchange 2013 to the latest cumulative update or service pack](upgrade-exchange-2013-to-the-latest-cumulative-update-or-service-pack-exchange-2013-help.md).
 
-    > [!NOTE]
-    > All Client Access servers must be upgraded to the latest Exchange 2013 CU, or the immediately previous CU. Otherwise, Outlook can fail to connect to mailboxes.<BR>Failure to upgrade the all the Mailbox servers in a Database Availability Group (DAG) can result in email delays and a client requirement to restart Outlook in case of a database failover.
+   > [!NOTE]
+   > All Client Access servers must be upgraded to the latest Exchange 2013 CU, or the immediately previous CU. Otherwise, Outlook can fail to connect to mailboxes.<BR>Failure to upgrade the all the Mailbox servers in a Database Availability Group (DAG) can result in email delays and a client requirement to restart Outlook in case of a database failover.
 
 3. On all Exchange 2013 servers, install the Microsoft .NET Framework version supported by the CU running on your Exchange server. For more information see [Exchange Server Supportability Matrix](exchange-server-supportability-matrix-exchange-2013-help.md) and [Installing the .NET Framework](https://go.microsoft.com/fwlink/p/?linkid=518380).
 
@@ -161,11 +159,11 @@ Complete the following steps to configure MAPI over HTTP for your organization.
 
 1. **Virtual directory configuration**: By default, Exchange 2013 SP1 creates a virtual directory for MAPI over HTTP. You use the **Set-MapiVirtualDirectory** cmdlet to configure the virtual directory. You must configure an internal URL, an external URL, or both. For more information see, [Set-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595082\(v=exchg.150\)).
 
-    For example, to configure the default MAPI virtual directory on the local Exchange server by setting the internal URL value to https://contoso.com/mapi, and the authentication method to `Negotiate`, run the following command:
+   For example, to configure the default MAPI virtual directory on the local Exchange server by setting the internal URL value to `https://contoso.com/mapi`, and the authentication method to `Negotiate`, run the following command:
 
-    ```powershell
-        Set-MapiVirtualDirectory -Identity "Contoso\mapi (Default Web Site)" -InternalUrl https://Contoso.com/mapi -IISAuthenticationMethods Negotiate
-    ```
+   ```powershell
+   Set-MapiVirtualDirectory -Identity "Contoso\mapi (Default Web Site)" -InternalUrl https://Contoso.com/mapi -IISAuthenticationMethods Negotiate
+   ```
 
 2. **Certificate configuration**: The digital certificate used by your Exchange environment must include the same *InternalURL* and *ExternalURL* values that are defined on the MAPI virtual directory. For more information on Exchange 2013 certificate management, see [Digital certificates and SSL](digital-certificates-and-ssl-exchange-2013-help.md). Make sure the Exchange certificate is trusted on the Outlook client workstation and that there are no certificate errors, especially when you access the URLs configured on the MAPI virtual directory.
 
@@ -173,11 +171,11 @@ Complete the following steps to configure MAPI over HTTP for your organization.
 
 4. **Enable MAPI over HTTP in your Exchange Organization**
 
-    Run the following command:
+   Run the following command:
 
-    ```powershell
-    Set-OrganizationConfig -MapiHttpEnabled $true
-    ```
+   ```powershell
+   Set-OrganizationConfig -MapiHttpEnabled $true
+   ```
 
 ## Test MAPI over HTTP connections
 
@@ -192,29 +190,29 @@ Test-OutlookConnectivity -RunFromServerId ContosoMail -ProbeIdentity OutlookMapi
 A successful test returns output that's similar to the following example:
 
 ```powershell
-    MonitorIdentity                                          StartTime              EndTime                Result      Error     Exception
-    ---------------                                          ---------              -------                ------      -----     ---------
-    OutlookMapiHttp.Protocol\OutlookMapiHttpSelfTestProbe    2/14/2014 7:15:00 AM   2/14/2014 7:15:10 AM   Succeeded
+MonitorIdentity                                        StartTime              EndTime                Result      Error     Exception
+---------------                                        ---------              -------                ------      -----     ---------
+OutlookMapiHttp.Protocol\OutlookMapiHttpSelfTestProbe  2/14/2014 7:15:00 AM   2/14/2014 7:15:10 AM   Succeeded
 ```
 
 For more information, see [Test-OutlookConnectivity](https://technet.microsoft.com/en-us/library/dd638082\(v=exchg.150\)).
 
 Logs for MAPI over HTTP activity are at the following locations:
 
-  - %ExchangeInstallPath%Logging\\MAPI Address Book Service\\
+- %ExchangeInstallPath%Logging\\MAPI Address Book Service\\
 
-  - %ExchangeInstallPath%Logging\\MAPI Client Access\\
+- %ExchangeInstallPath%Logging\\MAPI Client Access\\
 
-  - %ExchangeInstallPath%Logging\\HttpProxy\\Mapi\\
+- %ExchangeInstallPath%Logging\\HttpProxy\\Mapi\\
 
 ## Manage MAPI over HTTP
 
 You can manage the configuration of MAPI over HTTP by using the following cmdlets:
 
-  - [Set-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595082\(v=exchg.150\))
+- [Set-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595082\(v=exchg.150\))
 
-  - [Get-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595080\(v=exchg.150\))
+- [Get-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595080\(v=exchg.150\))
 
-  - [New-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595081\(v=exchg.150\))
+- [New-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595081\(v=exchg.150\))
 
-  - [Remove-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595083\(v=exchg.150\))
+- [Remove-MapiVirtualDirectory](https://technet.microsoft.com/en-us/library/dn595083\(v=exchg.150\))
