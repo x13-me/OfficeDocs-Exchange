@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 The Exchange Admin Center (EAC) is the web-based management console in Microsoft Exchange Server 2013 that's optimized for on-premises, online, and hybrid Exchange deployments. The EAC replaces the Exchange Management Console (EMC) and the Exchange Control Panel (ECP), which were the two interfaces used to manage Exchange Server 2010.
 
 One advantage a web-based EAC provides is that you can partition Internet and intranet access from within the ECP IIS virtual directory. With this functionality, you can control whether users are allowed to have Internet access to the EAC from outside of your organization, while still allowing an end user to access Outlook Web App Options. For more information, see [Turn off access to the Exchange admin center](turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md).
@@ -91,7 +90,6 @@ The tabs are your second level of navigation. Each of the feature areas contains
 
 When you click most tabs, you'll see a toolbar. The toolbar has icons that perform a specific action. The following table describes the most common icons and their actions. To display the action associated with an icon, simply hover over the icon.
 
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -154,7 +152,6 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 </tbody>
 </table>
 
-
 ## List view
 
 When you select a tab, in most cases you'll see a list view. The list view in EAC is designed to remove limitations that existed in ECP. ECP can only display up to 500 objects, and if you want to view objects that aren't listed in the details pane, you need to use search and filter options to find those specific objects. In Exchange 2013, the viewable limit from within the EAC list view is approximately 20,000 objects for on-premises deployments and 10,000 objects in Exchange Online. In addition, paging is included so you can page to the results. In the **Recipients** list view, you can also configure page size and export the data to a CSV file.
@@ -181,18 +178,14 @@ The *Me tile* allows you to sign out of the EAC and sign in as a different user.
 
 For the best experience with the EAC, use one of the operating system and browser combinations labeled "Premium".
 
-
 > [!NOTE]
 > Other operating system and browser combinations not listed in the table are unsupported, including touch.
-
-
 
   - **Premium:** All functional features are supported and fully tested.
 
   - **Supported:** Has same functional feature support as premium. However, supported browsers will be missing features that the browser and operating system combination doesn't support.
 
   - **Unsupported:** The browser and operating system isn't supported or tested.
-
 
 <table style="width:100%;">
 <colgroup>
@@ -270,4 +263,3 @@ For the best experience with the EAC, use one of the operating system and browse
 </tr>
 </tbody>
 </table>
-

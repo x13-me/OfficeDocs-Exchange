@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Recipients (which include users, resources, contacts, and groups) are any mail-enabled object in Active Directory to which Microsoft Exchange can deliver or route messages. For a recipient to send or receive email messages, the recipient must have an email address. Address books are the method by which users find each other in order to send email. There are many different methods for organizing address books. See Key terminology for detailed descriptions of address book features in Exchange Server 2013.
 
 ## Key terminology
@@ -87,4 +86,3 @@ The following table contains links to topics that will help you learn about and 
 </tr>
 </tbody>
 </table>
-

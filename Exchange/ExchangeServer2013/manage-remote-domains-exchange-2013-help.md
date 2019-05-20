@@ -20,7 +20,6 @@ f1_keywords:
 
 _**Applies to:** Exchange Server 2013_
 
-
 Remote domains are SMTP domains that are external to your Microsoft Exchange organization. You can create remote domain entries to define the settings for message transferred between your Exchange organization and specific external domains. The settings in the remote domain entry for a specific external domain override the settings in the default remote domain that normally apply to all external recipients. The remote domain settings are global for the Exchange organization.
 
 If you remove a remote domain entry, the settings for message transfer no longer apply to messages sent to the remote domain. Removing a remote domain entry doesn't disable mail flow to the remote domain. After a remote domain entry is removed, the configuration settings of the default remote domain apply to new messages sent to that domain. You can't remove the default remote domain.
@@ -37,11 +36,8 @@ If you remove a remote domain entry, the settings for message transfer no longer
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What Do You Want to Do?
 
@@ -69,9 +65,9 @@ This example creates a remote domain entry for messages sent to the fabrikam.com
 
 To verify that you have successfully created a remote domain, do the following:
 
-1.  Run the command **Get-RemoteDomain** and verify that the remote domain is listed.
+1. Run the command **Get-RemoteDomain** and verify that the remote domain is listed.
 
-2.  Run the command `Get-RemoteDomain <Remote Domain Name> | Format-List` to verify the settings on the new remote domain. Send a test message to a recipient in the address space that's specified in the new remote domain entry, and verify that the message settings match those specified by the new remote domain entry.
+2. Run the command `Get-RemoteDomain <Remote Domain Name> | Format-List` to verify the settings on the new remote domain. Send a test message to a recipient in the address space that's specified in the new remote domain entry, and verify that the message settings match those specified by the new remote domain entry.
 
 ## Use the Shell to configure a remote domain
 
@@ -103,7 +99,6 @@ Remove-RemoteDomain Contoso
 
 To verify that you have successfully removed the remote domain, do the following:
 
-1.  Run the command **Get-RemoteDomain** and verify that the remote domain is isn't listed.
+1. Run the command **Get-RemoteDomain** and verify that the remote domain is isn't listed.
 
-2.  Run the command `Get-RemoteDomain Default | Format-List` to verify the settings on the default remote domain. Send a test message to a recipient in the address space that was specified in the removed remote domain, and verify that the message settings match those specified by the default remote domain.
-
+2. Run the command `Get-RemoteDomain Default | Format-List` to verify the settings on the default remote domain. Send a test message to a recipient in the address space that was specified in the removed remote domain, and verify that the message settings match those specified by the default remote domain.

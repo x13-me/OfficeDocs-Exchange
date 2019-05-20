@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Learn about Exchange DAG in Exchange Server 2013. This article discusses the database availability group (DAG) lifecycle, as well as using a DAG for high availability and for site resilience.
 
 A database availability group (DAG) is the base component of the Mailbox server high availability and site resilience framework built into Microsoft Exchange Server 2013. A DAG is a group of up to 16 Mailbox servers that hosts a set of databases and provides automatic database-level recovery from failures that affect individual servers or databases.
@@ -39,11 +38,8 @@ Using a database availability group for site resilience
 
 DAGs leverage the concept of *incremental deployment*, which is the ability to deploy service and data availability for all Mailbox servers and databases after Exchange is installed. After you deploy Exchange 2013 Mailbox servers, you can create a DAG, add Mailbox servers to the DAG, and then replicate mailbox databases between the DAG members.
 
-
 > [!NOTE]
 > It's supported to create a DAG that contains a combination of physical Mailbox servers and virtualized Mailbox servers, provided that the servers and solution comply with the <A href="exchange-2013-system-requirements-exchange-2013-help.md">Exchange 2013 system requirements</A> and the requirements set forth in <A href="exchange-2013-virtualization-exchange-2013-help.md">Exchange 2013 virtualization</A>. As with all Exchange high availability configurations, you must ensure that all Mailbox servers in the DAG are sized appropriately to handle the necessary workload during scheduled and unscheduled outages.
-
-
 
 A DAG is created by using the [New-DatabaseAvailabilityGroup](https://technet.microsoft.com/en-us/library/dd351107\(v=exchg.150\)) cmdlet. A DAG is initially created as an empty object in Active Directory. This directory object is used to store relevant information about the DAG, such as server membership information and some DAG configuration settings. When you add the first server to a DAG, a failover cluster is automatically created for the DAG. This failover cluster is used exclusively by the DAG, and the cluster must be dedicated to the DAG. Use of the cluster for any other purpose isn't supported.
 
@@ -180,4 +176,3 @@ In the preceding example, the majority of voters are located in the Redmond data
 To eliminate the WAN as a single point of failure when you need to provide site resilience for multiple datacenters that each have an active user population, you should deploy multiple DAGs, where each DAG has a majority of voters in a separate datacenter. When a WAN outage occurs, replication will be blocked until connectivity is restored. Users will have messaging service, because each DAG continues to service its local user population.
 
 Return to top
-

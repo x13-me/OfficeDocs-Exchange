@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 *Safelist aggregation* refers to anti-spam functionality that's shared from Microsoft Outlook to Microsoft Exchange Server 2013. This functionality collects data from the Safe Recipients Lists, Safe Senders Lists, Blocked Senders Lists, and contact data that Outlook users configure, and makes this data available to the Exchange anti-spam agents. Safelist aggregation can help reduce the instances of false-positives in anti-spam filtering performed by the Exchange servers where the anti-spam agents are running.
 
 ## What do you need to know before you begin?
@@ -35,11 +34,8 @@ _**Applies to:** Exchange Server 2013_
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -63,13 +59,13 @@ Set-Mailbox john@contoso.com -MaxSafeSenders 2000 -MaxBlockedSenders 200
 
 To verify that you have successfully configured the mailbox safelist collection limits, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
         Get-Mailbox <Identity> | Format-List Name,Max*Senders
     ```
 
-2.  Verify the values displayed match the values you configured.
+2. Verify the values displayed match the values you configured.
 
 ## Use the Shell to run the Update-Safelist command
 
@@ -89,14 +85,14 @@ To verify that you have successfully configured safelist aggregation, perform th
 
 ## Step 1: Use the Shell to verify the Content Filter agent is enabled on the Exchange server
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-ContentFilterConfig | Format-List Enabled
     ```
 
-2.  If the output shows the *Enabled* parameter to be `True`, content filtering is enabled. If it isn't, run the following command to enable content filtering and the Content Filter agent on the Exchange server:
-    
+2. If the output shows the *Enabled* parameter to be `True`, content filtering is enabled. If it isn't, run the following command to enable content filtering and the Content Filter agent on the Exchange server:
+
     ```powershell
     Set-ContentFilterConfig -Enabled $true
     ```
@@ -123,17 +119,16 @@ You can search for and view the attributes by using the AD LDS Active Directory
 
 To test whether safelist aggregation is functioning, you need to send yourself a message from a safe sender that would otherwise be blocked by content filtering. If safelist aggregation is functioning, the message should arrive in your Inbox.
 
-1.  Find an existing external email account to use, or create an email account at a free web-based email provider like Microsoft Hotmail.
+1. Find an existing external email account to use, or create an email account at a free web-based email provider like Microsoft Hotmail.
 
-2.  Add that account to your Safe Senders List in Microsoft Outlook.
+2. Add that account to your Safe Senders List in Microsoft Outlook.
 
-3.  Use the **Update-SafeList** cmdlet to have the safelist collection from that mailbox copied to Active Directory.
+3. Use the **Update-SafeList** cmdlet to have the safelist collection from that mailbox copied to Active Directory.
 
-4.  Optional: if you are running the Content Filter agent on an Edge Transport server in the perimeter network, run the **Start-EdgeSynchronization** cmdlet to force EdgeSync replication.
+4. Optional: if you are running the Content Filter agent on an Edge Transport server in the perimeter network, run the **Start-EdgeSynchronization** cmdlet to force EdgeSync replication.
 
-5.  Add a specific word as a blocked phrase to your content filtering configuration. For detailed steps, see [Manage content filtering](manage-content-filtering-exchange-2013-help.md).
+5. Add a specific word as a blocked phrase to your content filtering configuration. For detailed steps, see [Manage content filtering](manage-content-filtering-exchange-2013-help.md).
 
-6.  From the external email account in step 1, send a message to your Exchange mailbox that includes the blocked phrase you configured in step 5.
-    
+6. From the external email account in step 1, send a message to your Exchange mailbox that includes the blocked phrase you configured in step 5.
+
     If the message is successfully delivered to your Inbox, safelist aggregation is working correctly.
-

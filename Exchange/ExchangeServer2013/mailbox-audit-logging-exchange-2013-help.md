@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Because mailboxes can contain sensitive, high business impact (HBI) information and personally identifiable information (PII), it's important that you track who logs on to the mailboxes in your organization and what actions are taken. It's especially important to track access to mailboxes by users other than the mailbox owner. These users are referred to as *delegate users*.
 
 By using *mailbox audit logging*, you can log mailbox access by mailbox owners, delegates (including administrators with full access permissions to mailboxes), and administrators.
@@ -44,7 +43,6 @@ When you enable mailbox audit logging for a mailbox, access to the mailbox and c
 ## Mailbox actions logged by mailbox audit logging
 
 The following table lists the actions logged by mailbox audit logging, including the logon types for which the action can be logged.
-
 
 <table>
 <colgroup>
@@ -144,7 +142,6 @@ The following table lists the actions logged by mailbox audit logging, including
 </tbody>
 </table>
 
-
 \* Audited by default if auditing is enabled for a mailbox.
 
 \*\* Entries for folder bind actions performed by delegates are consolidated. One log entry is generated for individual folder access within a time span of 24 hours.
@@ -160,15 +157,14 @@ You can use the following methods to search mailbox audit log entries:
   - **Asynchronously search one or more mailboxes**: You can create a mailbox audit log search to asynchronously search mailbox audit logs for one or more mailboxes, and then have the search results sent to a specified email address. The search results are sent as an XML attachment. To create the search, use the [New-MailboxAuditLogSearch](https://technet.microsoft.com/en-us/library/ff522362\(v=exchg.150\)) cmdlet. For details, see [Create a mailbox audit log search](create-a-mailbox-audit-log-search-exchange-2013-help.md).
 
   - **Use auditing reports in the Exchange Admin Center (EAC)**: You can use the **Auditing** tab in the EAC to run a non-owner mailbox access report or export entries from the mailbox audit log. For details, see:
-    
+
       - [Run a non-owner mailbox access report](https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
-    
+
       - [Export mailbox audit logs](https://docs.microsoft.com/en-us/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
 ## Mailbox audit log entries
 
 The following table describes the fields logged in a mailbox audit log entry.
-
 
 <table>
 <colgroup>
@@ -333,15 +329,14 @@ The following table describes the fields logged in a mailbox audit log entry.
 </tbody>
 </table>
 
-
 ## More information
 
   - **Administrator access to mailboxes**: Mailboxes are considered to be accessed by an administrator only in the following scenarios:
-    
+
       - [In-Place eDiscovery](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) is used to search a mailbox.
-    
+
       - The [New-MailboxExportRequest](https://technet.microsoft.com/en-us/library/ff607299\(v=exchg.150\)) cmdlet is used to export a mailbox.
-    
+
       - [Microsoft Exchange Server MAPI Editor](https://go.microsoft.com/fwlink/p/?linkid=204086) is used to access the mailbox.
 
   - **Bypassing mailbox auditing logging**: Mailbox access by authorized automated processes such as accounts used by third-party tools or accounts used for lawful monitoring can create a large number of mailbox audit log entries and may not be of interest to your organization. You can configure such accounts to bypass mailbox audit logging. For details, see [Bypass a user account from mailbox audit logging](bypass-a-user-account-from-mailbox-audit-logging-exchange-2013-help.md).
@@ -349,4 +344,3 @@ The following table describes the fields logged in a mailbox audit log entry.
   - **Logging mailbox owner actions**: For mailboxes such as the Discovery Search Mailbox, which may contain more sensitive information, consider enabling mailbox audit logging for mailbox owner actions such as message deletion.
 
 Return to top
-

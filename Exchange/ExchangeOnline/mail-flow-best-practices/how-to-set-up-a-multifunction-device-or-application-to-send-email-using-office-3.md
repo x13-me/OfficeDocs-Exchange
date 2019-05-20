@@ -19,6 +19,7 @@ ms.audience: Admin
 ms.custom: MiniMaven
 ms.service: exchange-online
 manager: dansimp
+localization_priority: Priority
 
 ---
 

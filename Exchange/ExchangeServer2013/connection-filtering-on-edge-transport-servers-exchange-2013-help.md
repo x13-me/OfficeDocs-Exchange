@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Connection filtering is an anti-spam feature in Microsoft Exchange Server 2013 that allows or blocks email based on the message source. Connection filtering is performed by the Connection Filtering agent that's available only on Edge Transport servers. The Connection Filtering agent relies on the IP address of the connecting mail server to determine what action, if any, to take on an inbound message.
 
 By default, the Connection Filtering agent is the first anti-spam agent to evaluate an inbound message on an Edge Transport server. The source IP address of the SMTP connection is checked against the allowed and blocked IP addresses. If the source IP address is specifically allowed, the message is sent to the recipients in your organization without additional processing by other anti-spam agents. If the source IP address is specifically blocked, the SMTP connection is dropped. If the source IP address isn't specifically allowed or blocked, the message flows through the other anti-spam agents on the Edge Transport server.
@@ -112,7 +111,6 @@ For bitmask data types, the IP Block List provider service returns a status code
 </tbody>
 </table>
 
-
 For absolute value types, the IP Block List provider returns explicit responses that define why the IP address is defined in their block lists. The following table shows examples of absolute values and the explicit responses.
 
 ### Values and status codes for absolute value data types
@@ -144,7 +142,6 @@ For absolute value types, the IP Block List provider returns explicit responses 
 </tbody>
 </table>
 
-
 Return to top
 
 ## IP Allow List providers
@@ -168,4 +165,3 @@ Every mail server that accepts and relays an SMTP message along the delivery pat
 If the Edge Transport server doesn't accept messages directly from the Internet, you need to use the *InternalSMTPServers* parameter on the **Set-TransportConfig** cmdlet on an Exchange 2013 Mailbox server to identify the IP address of the mail server that sit between the Edge Transport server and the Internet. The IP address data is replicated to Edge Transport servers by EdgeSync. When messages are received by the Edge Transport server, the Connection Filtering agent assumes an IP address in a **Received** header field that doesn't match a value specified by the *InternalSMTPServers* parameter is the source IP address that needs to be checked. Therefore, you need specify all internal SMTP servers in order for connection filtering to function correctly.
 
 Return to top
-

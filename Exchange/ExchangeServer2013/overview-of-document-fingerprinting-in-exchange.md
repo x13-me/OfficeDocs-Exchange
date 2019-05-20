@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:**: Exchange Online, Exchange Server 2013_
 
 Information workers in your organization handle many kinds of sensitive information during a typical day. *Document Fingerprinting* makes it easier for you to protect this information by identifying standard forms that are used throughout your organization. This topic describes the concepts behind Document Fingerprinting. If you'd like to learn how to create a document fingerprint, see [Protect form data with document fingerprinting](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/protect-data-with-fingerprinting).
 
@@ -68,4 +67,3 @@ The Document Fingerprinting DLP agent won't detect sensitive information in the 
 [Integrating sensitive information rules with transport rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)
 
 [DLP procedures](https://technet.microsoft.com/en-us/library/jj938003\(v=exchg.150\))
-

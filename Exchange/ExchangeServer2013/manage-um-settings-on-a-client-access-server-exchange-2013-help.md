@@ -18,14 +18,10 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 After you install a Client Access server that is running the Microsoft Exchange Unified Messaging Call Router service, you can configure several options, including the number of concurrent calls, the TCP and Transport Layer Security (TLS) listening ports, the status, and the startup mode.
-
 
 > [!NOTE]
 > It's not required that Client Access servers be added to a UM dial plan before it can process calls for Unified Messaging (UM), except when you're integrating UM and Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server. By default, all Client Access servers in an organization are available to answer incoming calls.
-
-
 
 For additional tasks related to Unified Messaging and Client Access servers, see [UM services procedures](um-services-procedures-exchange-2013-help.md).
 
@@ -39,11 +35,8 @@ For additional tasks related to Unified Messaging and Client Access servers, see
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
@@ -64,7 +57,7 @@ Set-UMCallRouterSettings -DialPlans MySIPDialPlan -MaxCalls 150 -Server MyClient
 This example sets the SIP TCP listening port to 5077 and the startup mode to Dual mode on a Client Access server named `MyClientAccessServer`.
 
 ```powershell
-    Set-UMCallRouterSettings  -Server MyClientAccessServer-SipTCPListeningPort 5077 -UMStartUpMode -Dual 
+    Set-UMCallRouterSettings  -Server MyClientAccessServer-SipTCPListeningPort 5077 -UMStartUpMode -Dual
 ```
 
 ## Use the Shell to view Client Access server properties
@@ -80,4 +73,3 @@ This example displays a formatted list of properties for the Client Access serve
 ```powershell
 Get-UMCallRouterSettings | Format-List
 ```
-

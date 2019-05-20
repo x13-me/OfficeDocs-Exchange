@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Internet Protocol version 6 (IPv6) is the most recent version of the Internet Protocol (IP). IPv6 is intended to correct many of the shortcomings of IPv4, which was the previous version of the IP.
 
 In Microsoft Exchange Server 2013, IPv6 is supported only when IPv4 is also installed and enabled. If Exchange 2013 is deployed in this configuration, and the network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses.
@@ -97,7 +96,6 @@ The following table describes the components in Exchange 2013 that are affected 
 > [!NOTE]
 > If you want to specify an IPv6 address for the <EM>SourceIPAddress</EM> parameter, make sure that the appropriate DNS AAAA and mail exchange (MX) records are configured correctly. This helps ensure message delivery if a remote messaging server tries any kind of reverse lookup test on the specified IPv6 address.
 
-
 <p>For more information, see <a href="send-connectors-exchange-2013-help.md">Send connectors</a>.</p></td>
 </tr>
 <tr class="odd">
@@ -119,7 +117,6 @@ The following table describes the components in Exchange 2013 that are affected 
 </tr>
 </tbody>
 </table>
-
 
 Return to top
 
@@ -179,7 +176,6 @@ The following table provides examples of the IPv6 address notation and the equiv
 </tr>
 </tbody>
 </table>
-
 
 IPv6 addresses are categorized into the following types:
 
@@ -250,7 +246,6 @@ The following table provides a comparison of IPv4 elements and IPv6 elements.
 </tbody>
 </table>
 
-
 For more information about IPv6 addressing, see [IPv6 Address Types](https://go.microsoft.com/fwlink/p/?linkid=98357).
 
 ## Supported IPv6 Address Input Formats
@@ -300,7 +295,6 @@ The following table provides examples of the acceptable IPv6 address input forma
 </tbody>
 </table>
 
-
 In Exchange 2013, the following input formats are supported:
 
   - Suppression of leading zeros
@@ -310,4 +304,3 @@ In Exchange 2013, the following input formats are supported:
   - Trailing dotted-decimal notation
 
 Return to top
-

@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 Management role scopes determine what objects are made available to a user so that the objects can be changed using the cmdlets and parameters assigned to them. You can view scopes to determine what scopes have been added to your organization, the configuration of a specific scope, or what scopes are orphans.
 
@@ -34,18 +33,15 @@ Looking for other management tasks related to role scopes? Check out [Advanced p
   - You must use the Shell to perform these procedures.
 
   - This topic makes use of pipelining and the **Format-List** cmdlet. For more information about these concepts, see the following topics:
-    
+
       - [Pipelining](https://technet.microsoft.com/en-us/library/aa998260\(v=exchg.150\))
-    
+
       - [Working with command output](working-with-command-output-exchange-2013-help.md)
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -112,4 +108,3 @@ Get-ManagementScope -Exclusive $false
 ```
 
 For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/en-us/library/dd298180\(v=exchg.150\)).
-

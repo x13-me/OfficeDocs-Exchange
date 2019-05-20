@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Cannot find a recipient update service\_RUSMissing
 
- 
-
 _**Applies to:** Exchange Server_
-
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -30,7 +27,6 @@ Microsoft Exchange setup requires that each domain in the existing Exchange orga
 If an instance of the Recipient Update Service is missing for a domain, new user objects created in the domain will not receive e-mail addresses issued to them.
 
 To resolve this issue, verify that an instance of the Recipient Update Service exists for each domain and create an instance of the Recipient Update Service for the domains that do not have one and then rerun Microsoft Exchange setup.
-
 
 <table>
 <colgroup>
@@ -53,7 +49,6 @@ To resolve this issue, verify that an instance of the Recipient Update Service e
 </tbody>
 </table>
 
-
 For more information about the Recipient Update Service, see the following Microsoft Knowledge Base articles:
 
   - "How the Recipient Update Service applies recipient policies" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=328738](https://go.microsoft.com/fwlink/?linkid=3052&kbid=328738)).
@@ -63,4 +58,3 @@ For more information about the Recipient Update Service, see the following Micro
   - "How to check the progress of the Exchange Recipient Update Service" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=246127](https://go.microsoft.com/fwlink/?linkid=3052&kbid=246127)).
 
   - "Tasks performed by the Exchange Recipient Update Service" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253770](https://go.microsoft.com/fwlink/?linkid=3052&kbid=253770)).
-

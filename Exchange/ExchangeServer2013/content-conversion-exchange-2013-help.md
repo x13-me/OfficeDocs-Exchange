@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 *Content conversion* is the process of correctly formatting a message for each recipient. The decision to perform content conversion on a message depends on the destination and format of the message being processed. In Microsoft Exchange Server 2013, there are two different kinds of content conversion:
 
   - **Message conversion for external recipients**: This type of content conversion includes the Transport Neutral Encapsulation Format (TNEF) conversion options and message encoding options for external recipients. Messages sent to recipients inside the Exchange organization don't require this type of content conversion. This type of content conversion is handled by the categorizer in the Transport service on Mailbox server. Categorization on each message happens after a newly arrived message is put in the Submission queue. In addition to recipient resolution and routing resolution, content conversion is performed on the message before the message is put in a delivery queue. If a single message contains multiple recipients, the categorizer determines the appropriate encoding for each message recipient. Content conversion tracing doesn't capture any content conversion failures that the categorizer encounters as it converts messages sent to external recipients.
@@ -40,49 +39,49 @@ Understanding the structure of email messages
 The following list describes the basic message formats available in Exchange and Microsoft Outlook:
 
   - **Plain text**: A plain text message uses only US-ASCII text as described in RFC 2822. The message can't contain different fonts or other text formatting. The following two formats can be used for a plain text message:
-    
+
       - The message headers and the message body are composed of US-ASCII text. Attachments must be encoded by using *Uuencode*. Uuencode represents Unix-to-Unix encoding and defines an encoding algorithm to store binary attachments in the body of an email message by using US-ASCII text characters.
-    
+
       - The message is MIME-encoded with a Content-Type value of text/plain, and a Content-Transfer-Encoding value of 7bit for the text parts of a multipart message. Any message attachments are encoded by using Quoted-printable or Base64 encoding. By default, when you compose and send a plain text message in Outlook, the message is MIME-encoded with a Content-Type value of text/plain.
 
   - **HTML**: An HTML message supports text formatting, background images, tables, bullet points, and other graphical elements. By definition, an HTML-formatted message must be MIME-encoded to preserve these formatting elements.
 
   - **Rich text format (RTF)**: RTF supports text formatting and other graphical elements. RTF is synonymous with TNEF. TNEF and RTF can be used interchangeably. The rich text message format is completely different from the rich text document format available in Microsoft Word.
-    
+
     Only Outlook and a few other MAPI email clients understand RTF messages.
 
   - **TNEF**: The Transport Neutral Encapsulation Format is a Microsoft-specific format for encapsulating MAPI message properties. A TNEF message contains a plain text version of the message and an attachment that packages the original formatted version of the message. Typically, this attachment is named Winmail.dat. The Winmail.dat attachment includes the following information:
-    
+
       - Original formatted version of the message, including, for example, fonts, text sizes, and text colors
-    
+
       - OLE objects, including, for example, embedded pictures or embedded Microsoft Office documents
-    
+
       - Special Outlook features, including, for example, custom forms, voting buttons, or meeting requests
-    
+
       - Regular message attachments that were in the original message
-    
+
     The resulting plain text message can be represented in the following formats:
-    
+
       - RFC 2822-compliant message composed of only US-ASCII text with a Winmail.dat attachment encoded in Uuencode
-    
+
       - Multipart MIME-encoded message that has a Winmail.dat attachment
-    
+
     A MAPI-compliant email client that fully understands TNEF, such as Outlook, processes the Winmail.dat attachment and displays the original message content without ever displaying the Winmail.dat attachment. An email client that doesn't understand TNEF may present a TNEF message in any of the following ways:
-    
+
       - The plain text version of the message is displayed, and the message contains an attachment named Winmail.dat, Win.dat, or some other generic name such as Att*nnnnn*.dat or Att*nnnnn*.eml where the *nnnnn* placeholder represents a random number.
-    
+
       - The plain text version of the message is displayed. The TNEF attachment is ignored or removed. The result is a plain text message.
-    
+
       - Messaging servers that understand TNEF can be configured to remove TNEF attachments from incoming messages. The result is a plain text message. Moreover, some email clients such as Microsoft Outlook Express may not understand TNEF, but recognize and ignore TNEF attachments. The result is a plain text message.
-    
+
     There are third-party utilities that can help convert Winmail.dat attachments.
-    
+
     TNEF is understood by all versions of Exchange since Exchange Server version 5.5.
 
   - **Summary Transport Neutral Encapsulation Format (STNEF)**: STNEF is equivalent to TNEF. However, STNEF messages are encoded differently than TNEF messages. Specifically, STNEF messages are always MIME-encoded and always have a Content-Transfer-Encoding value of Binary. Therefore, there's no plain text representation of the message, and there's no distinct Winmail.dat attachment contained in the body of the message. The whole message is represented by using only binary data. Messages that have a Content-Transfer-Encoding value of Binary can only be transferred between SMTP messaging servers that support and advertise the BINARYMIME and CHUNKING SMTP extensions as defined in RFC 3030. The messages are always transferred between SMTP messaging by using the BDAT command, instead of the standard DATA command.
-    
+
     STNEF is understood by all versions of Exchange since Exchange 2000. STNEF is automatically used for all messages transferred between Exchange servers in the organization since native mode Exchange Server 2003.
-    
+
     Exchange never sends STNEF messages to external recipients. Only TNEF messages can be sent to recipients outside the Exchange organization.
 
 Return to top
@@ -104,15 +103,15 @@ You can specify the content conversion at various levels of the Exchange organiz
   - **Mail user and mail contact settings**: Mail users and mail contacts are similar because both have external email addresses and contain information about people outside the Exchange organization. The main difference is mail users have accounts that can be used to log on to the Active Directory domain and access resources in the organization.
 
   - **Outlook settings**: In Outlook, you can set the message formatting and encoding options described in the following list:
-    
+
       - **Message format**: You can set the default message format for all messages. You can override the default message format as you compose a specific message.
-    
+
       - **Internet message format**: You can control whether TNEF messages are sent to remote recipients or whether they are first converted to a more compatible format. You can also specify various message encoding options for messages sent to remote recipients. These settings don't apply to messages sent to recipients in the Exchange organization.
-    
+
       - **Internet recipient message format**: You can control whether TNEF messages are sent to specific recipients or whether they are first converted to a more compatible format. You can set the conversion options for specific contacts in your Contacts folder, and you can override the conversion options for a specific recipient in the To, Cc, or Bcc fields as you compose a message. These conversion options aren't available for recipients in the Exchange organization.
-    
+
       - **Internet recipient message encoding options**: You can control the MIME or plain text encoding options for specific contacts in your Contacts folder, and you can override the conversion options for a specific recipient in the To, Cc, or Bcc fields as you compose a message. These conversion options aren't available for recipients in the Exchange organization.
-    
+
       - **International options**: You can control the character sets used in messages.
 
 ## TNEF conversion options
@@ -124,11 +123,11 @@ You can specify the TNEF conversion options at the following levels:
   - Mail user and mail contact settings
 
   - Outlook settings, including:
-    
+
       - Message format
-    
+
       - Internet message format
-    
+
       - Internet recipient message format
 
 ## Message encoding options
@@ -140,13 +139,13 @@ You can specify the message encoding options at the following levels:
   - Mail user and mail contact settings
 
   - Outlook settings, including:
-    
+
       - Message format
-    
+
       - Internet message
-    
+
       - Internet recipient message format
-    
+
       - Message character set encoding options
 
 For detailed information, see [Message encoding options](message-encoding-options-exchange-2013-help.md).
@@ -160,13 +159,13 @@ To better understand the content conversion options for external recipients, you
   - **Message envelope**: The message envelope is defined in RFC 2821. The message envelope contains information required to transmit and deliver the message. Recipients never see the message envelope, because it's generated by the message transmission process and isn't actually part of the message contents.
 
   - **Message contents**: The message contents are defined in RFC 2822. The message contents consist of the following elements:
-    
+
       - **Message header**: The message header is a collection of header fields. Header fields consist of a field name, followed by a colon (:) character, followed by a field body, and ended by a carriage return/line feed (CR/LF) character combination.
-        
+
         A field name must be composed of printable US-ASCII text characters except the colon (:) character. Specifically, ASCII characters that have values from 33 through 57 and 59 through 126 are permitted.
-        
+
         A field body may be composed of any US-ASCII characters, except for the carriage return (CR) character and the line feed (LF) character. However, a field body may contain the CR/LF character combination when used in *header folding*. Header folding is the separation of a single header field body into multiple lines as described in section 2.2.3 of RFC 2822. Other field body syntax requirements are described in sections 3 and 4 of RFC 2822.
-    
+
       - **Message body**: The message body is a collection of lines of US-ASCII text characters that appears after the message header. The message header and the message body are separated by a blank line that ends with the CR/LF character combination. The message body is optional. Any line of text in the message body must be less than 998 characters. The CR and LF characters can only appear together to indicate the end of a line.
 
 When SMTP messages contain elements that aren't plain US-ASCII text, the message must be encoded to preserve those elements. The MIME standard defines a method of encoding content in messages that isn't text. MIME allows for text in other character sets, attachments without text, multipart message bodies, and header fields in other character sets. MIME is defined in RFC 2045, RFC 2046, RFC 2047, RFC 2048, and RFC 2077. MIME defines a collection of header fields that specifies additional message attributes. The following table describes some important MIME header fields.
@@ -259,6 +258,4 @@ When SMTP messages contain elements that aren't plain US-ASCII text, the message
 </tbody>
 </table>
 
-
 Return to top
-

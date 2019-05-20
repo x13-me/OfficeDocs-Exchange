@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can include text in a customized delivery status notification (DSN) message in Microsoft Exchange Server 2013, and you can format that text in HTML.
 
 You can include any information that you want to display to the recipient of the DSN message. For example, you can include a detailed description of the DSN, contact information for your help desk, and a link to your support department's Web site. Each DSN message can contain a maximum of 512 characters.
@@ -78,12 +77,8 @@ Because DSN messages can be displayed in HTML, you can embed HTML formatting tag
 </tbody>
 </table>
 
-
-
 > [!NOTE]
 > By default, Exchange sends HTML DSN messages, but you can configure whether Exchange sends HTML DSN messages to internal senders, external senders, or both. To configure this behavior, modify the <EM>InternalDsnSendHtml</EM> parameter and the <EM>ExternalDsnSendHtml</EM> parameter with the <STRONG>Set-TransportService</STRONG> command.<BR>If the <EM>InternalDsnSendHtml</EM> parameter is set to <CODE>$false</CODE>, Exchange suppresses HTML tags in DSN messages sent to internal senders. If the <EM>ExternalDsnSendHtml</EM> parameter is set to <CODE>$false</CODE>, Exchange suppresses HTML tags in DSN messages sent to external senders.
-
-
 
 The following characters that Exchange uses in DSN message text have special meanings:
 
@@ -132,9 +127,5 @@ For example, if you want to display the message `"Please contact the Help Desk a
 </tbody>
 </table>
 
-
-
 > [!IMPORTANT]
 > If you include an HTML tag in your DSN message text that contains quotation marks ("), such as <CODE>&lt;A HREF="url"&gt;</CODE>, you must use single quotation marks (') around the whole DSN message text. You will receive an error message if you use double quotation marks around the whole DSN message text and around an HTML tag.
-
-

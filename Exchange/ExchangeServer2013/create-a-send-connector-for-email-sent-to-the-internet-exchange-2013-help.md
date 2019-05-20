@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 By default, Microsoft Exchange Server 2013 doesn't allow you to send mail outside of your domain. To send mail outside your domain, you need to create a Send connector. The following graphic illustrates mail flow when you create a Send connector to send mail to the Internet.
 
 ![connector\_send\_onprem\_internet](images/JJ657457.e8963e4f-7dce-461f-bbcf-660278cefa35(EXCHG.150).gif "connector_send_onprem_internet")
@@ -37,29 +36,26 @@ Interested in scenarios where this procedure is used? See the following topics:
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
 ## Use the EAC to create a send connector for email sent to the Internet
 
-1.  In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-2.  In the **New send connector** wizard, specify a name for the send connector and then select **Internet** for the **Type**. Click **Next**.
+2. In the **New send connector** wizard, specify a name for the send connector and then select **Internet** for the **Type**. Click **Next**.
 
-3.  Verify that **MX record associated with recipient domain** is selected, which specifies that the connector uses the domain name system (DNS) to route mail. Click **Next**.
+3. Verify that **MX record associated with recipient domain** is selected, which specifies that the connector uses the domain name system (DNS) to route mail. Click **Next**.
 
-4.  Under **Address space**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter \*, which indicates that this send connector applies to messages addressed to any domain. Click **Save**.
+4. Under **Address space**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter \*, which indicates that this send connector applies to messages addressed to any domain. Click **Save**.
 
-5.  Make sure **Scoped send connector** is not selected and then click **Next**.
+5. Make sure **Scoped send connector** is not selected and then click **Next**.
 
-6.  For **Source server**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Select a server** window, select a Mailbox server that will be used to send mail to the Internet via the Client Access server and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). After you've selected the server, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). Click **OK**.
+6. For **Source server**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Select a server** window, select a Mailbox server that will be used to send mail to the Internet via the Client Access server and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). After you've selected the server, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). Click **OK**.
 
-7.  Click **Finish**.
+7. Click **Finish**.
 
 Once you have created the Send connector, it appears in the Send connector list.
 
@@ -82,4 +78,3 @@ To verify that you have successfully created a Send Connector for email sent to 
 [Send connectors](send-connectors-exchange-2013-help.md)
 
 [Create a Send connector to route outbound email through a smart host](create-a-send-connector-to-route-outbound-email-through-a-smart-host-exchange-2013-help.md)
-

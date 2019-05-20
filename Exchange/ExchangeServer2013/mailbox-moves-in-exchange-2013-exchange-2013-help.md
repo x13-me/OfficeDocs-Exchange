@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 When you move a mailbox, you're moving it from a *source mailbox database* to a *target mailbox database*. The target mailbox database can be on the same server, on a different server, in a different domain, in a different Active Directory site, or in another forest.
 
 ## Reasons for moving mailboxes
@@ -59,17 +58,11 @@ Microsoft Exchange Server 2013 introduces the concept of *batch moves* and *migr
 
 In Exchange 2013 you must move mailboxes between Exchange 2007 and Exchange 2010 and Exchange 2013 from the Exchange 2013 admin center (EAC) and the Exchange Management Shell.
 
-
 > [!NOTE]
 > You can still perform single mailbox moves in Exchange 2013 similar to Exchange Server 2010 by using either the EAC or the move request or migration batch cmdlets.
 
-
-
-
 > [!NOTE]
 > You can't move on-premises mailboxes from Exchange Server 2003 to Exchange 2013.
-
-
 
 For more information about managing new and existing moves, see [Manage on-premises moves](manage-on-premises-moves-exchange-2013-help.md).
 
@@ -142,8 +135,6 @@ The following table shows the migration endpoint types and values that you can m
 </tbody>
 </table>
 
-
 For more information about migration endpoints, see the **Migration** user interface in the EAC and [New-MigrationEndpoint](https://technet.microsoft.com/en-us/library/jj218611\(v=exchg.150\)).
 
 For more information about managing new and existing moves, see [Manage on-premises moves](manage-on-premises-moves-exchange-2013-help.md).
-

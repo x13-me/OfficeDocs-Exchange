@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 [Manage UM settings on a Mailbox server](manage-um-settings-on-a-mailbox-server-exchange-2013-help.md)
 
@@ -44,4 +43,3 @@ _**Applies to:** Exchange Server 2013_
 [Set the TCP listening port on a Client Access server](set-the-tcp-listening-port-on-a-client-access-server-exchange-2013-help.md)
 
 [Set the TLS listening port on a Client Access server](set-the-tls-listening-port-on-a-client-access-server-exchange-2013-help.md)
-

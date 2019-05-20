@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 With delivery reports for administrators, you can track delivery information about messages sent by or received from any specific mailbox in your organization. Specifically, delivery reports for administrators uses the Exchange admin center (EAC) to perform a targeted search of the message tracking logs. The search is always scoped to a specific mailbox. You can search for messages sent by the mailbox, or sent to the mailbox, and you can filter the search results by the message subject.
 
 The content of the message body isn't returned in a delivery report, but the subject line is displayed in the results. If you want to search the mailboxes in your organization for specific email messages based on message content, see [In-Place eDiscovery](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
@@ -42,8 +41,7 @@ After you create a delivery report search, the resulting delivery report will sh
   - Users can track their own messages. For more information, see [Delivery Reports for Users](https://go.microsoft.com/fwlink/?linkid=279920).
 
   - If your organization contains a previous version of Exchange, you need to consider how the delivery reports feature in Exchange 2013 works across Exchange versions.
-    
-      - Exchange 2013 delivery reports can track messages across Exchange 2010 servers in the same Active Directory site.
-    
-      - Exchange 2013 delivery reports can't track messages across Exchange 2007 servers in the same Active Directory site. The delivery reports feature uses a remote procedure call and a web service interface that doesn't exist in Exchange 2007.
 
+      - Exchange 2013 delivery reports can track messages across Exchange 2010 servers in the same Active Directory site.
+
+      - Exchange 2013 delivery reports can't track messages across Exchange 2007 servers in the same Active Directory site. The delivery reports feature uses a remote procedure call and a web service interface that doesn't exist in Exchange 2007.

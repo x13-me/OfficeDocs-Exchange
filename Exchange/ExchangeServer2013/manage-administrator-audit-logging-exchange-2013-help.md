@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Administrator audit logging in Microsoft Exchange Server 2013 enables you to create a log entry each time a specified cmdlet is run. Log entries provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected. For more information about administrator audit logging, see [Administrator audit logging](administrator-audit-logging-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
@@ -37,11 +36,8 @@ Administrator audit logging in Microsoft Exchange Server 2013 enables you to cre
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -89,8 +85,7 @@ You can specify which parameters you want to audit by using the *AdminAuditLogPa
 
   - `*Region`
 
-
-> [!NOTE]  
+> [!NOTE]
 > For an audit log entry to be created when a command is run, the command must include at least one or more parameters that exist on at least one or more cmdlets specified with the <EM>AdminAuditLogCmdlets</EM> parameter.
 
 This example audits the parameters specified in the preceding list.
@@ -115,7 +110,7 @@ You can specify the number of days, hours, minutes, and seconds that audit log e
 
   - **ss**: Number of seconds to keep the audit log entry
 
-> [!WARNING]  
+> [!WARNING]
 > You can set the audit log age limit to a value that's less than the current age limit. If you do this, any audit log entry whose age exceeds the new age limit will be deleted.<BR>If you set the age limit to 0, Exchange deletes all the entries in the audit log.<BR>We recommend that you grant permissions to configure the audit log age limit only to highly trusted users.
 
 This example specifies an age limit of two years and six months.
@@ -167,4 +162,3 @@ To view the administrator audit logging settings that you've configured for your
 ```powershell
 Get-AdminAuditLogConfig
 ```
-

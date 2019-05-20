@@ -18,24 +18,17 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 For Microsoft Exchange 2013, there have been major architectural changes to the Exchange server roles. Instead of the five server roles that were present in Exchange 2010 and Exchange 2007, in Exchange 2013, the number of server roles has been reduced to three: the Client Access server and the Mailbox server, and with Service Pack 1, the Edge Transport server role.
-
 
 > [!NOTE]
 > Exchange 2013 can also work with the Exchange 2010 Edge Transport server role.
-
-
 
 The Exchange 2013 Mailbox server includes all many of the server components found in Exchange 2010: client access protocols, transport services, mailbox databases, and Unified Messaging services (the Client Access server redirects SIP traffic generated from incoming calls to the Mailbox server). For more information about the Exchange 2013 Mailbox server, see [Mailbox server](mailbox-server-exchange-2013-help.md).
 
 The Client Access server provides authentication, proxy, and limited redirection services, and offers all the usual client access protocols: HTTP, POP, IMAP, and SMTP. The Client Access server is a thin and stateless server that doesn't do any data rendering. There's never anything queued or stored on the Client Access server. For more information about the new Exchange 2013 architecture, see [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).
 
-
 > [!WARNING]
 > Client Access servers are not supported in perimeter networks, and they must be deployed within your internal Active Directory environment. Every Active Directory site that contains a Mailbox server must also contain a Client Access server.
-
-
 
 As a result of these architectural changes, there have been some changes to client connectivity. First, RPC/TCP is no longer a supported direct access protocol. This means that all Outlook connectivity must occur using RPC over HTTPS (also known as Outlook Anywhere), or with Exchange 2013 SP1 and Outlook 2013 SP1, MAPI over HTTP. As a result of these changes, there's no need to have the RPC Client Access service on the Client Access server. In addition, fewer namespaces are required for a site-resilient solution than were required in Exchange 2010, and it's no longer necessary to provide affinity for the RPC Client Access service. Also, Outlook clients no longer connect to a server fully qualified domain name (FQDN) as they've done in all previous versions of Exchange. Using Autodiscover, Outlook finds a new connection point made up of the user's mailbox GUID + @ + the domain portion of the user's primary SMTP address. This change makes it much less likely that users will see the dreaded message "Your administrator has made a change to your mailbox." Only Outlook 2007 and later versions are supported with Exchange 2013.
 
@@ -52,4 +45,3 @@ The Client Access server has the following features:
 ## Management tasks on the Client Access server
 
 In Exchange 2013, there are several key tasks that can be performed on the Client Access server. The management of digital certificates is primarily performed on the Client Access server and some of the client protocol management for Exchange ActiveSync, POP3, and IMAP4 is also handled on the Client Access server.
-

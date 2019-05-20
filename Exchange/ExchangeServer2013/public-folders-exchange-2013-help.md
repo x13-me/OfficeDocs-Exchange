@@ -16,24 +16,17 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 Public folders are designed for shared access and provide an easy and effective way to collect, organize, and share information with other people in your workgroup or organization. Public folders help organize content in a deep hierarchy that's easy to browse. Users will see the full hierarchy in Outlook, which makes it easy for them to browse for the content they're interested in.
-
 
 > [!NOTE]
 > Public folders are available in the following Outlook clients: Outlook Web App for Exchange 2013, Outlook 2007, Outlook 2010, Outlook 2013, and Outlook for Mac.
 
-
-
 Public folders can also be used as an archiving method for distribution groups. When you mail-enable a public folder and add it as a member of the distribution group, email sent to the group is automatically added to the public folder for later reference.
-
 
 > [!NOTE]
 > You must use Outlook 2007 or later to access public folders on Exchange 2013 servers.
-
-
 
 Public folders aren't designed to do the following:
 
@@ -77,24 +70,21 @@ There are two types of public folder mailboxes: the *primary hierarchy mailbox* 
 
   - **Secondary hierarchy mailboxes**: Secondary hierarchy mailboxes contain public folder content as well and a read-only copy of the public folder hierarchy.
 
-
 > [!NOTE]
 > Retention policies aren't supported for public folder mailboxes.
-
-
 
 There are two ways you can manage public folder mailboxes:
 
   - In the Exchange admin center (EAC), navigate to **Public folders** \> **Public folder mailboxes**.
 
   - In the Exchange Management Shell, use the **\*-Mailbox** set of cmdlets. The following parameters have been added to the [New-Mailbox](https://technet.microsoft.com/en-us/library/aa997663\(v=exchg.150\)) cmdlet to support public folder mailboxes:
-    
+
       - *PublicFolder*: This parameter is used with the **New-Mailbox** cmdlet to create a public folder mailbox. When you create a public folder mailbox, a new mailbox is created with the mailbox type of `PublicFolder`. For more information, see [Create a public folder mailbox](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/create-public-folder-mailbox).
-    
+
       - *HoldForMigration*: This parameter is used only if you are migrating public folders from a previous version to Exchange 2013. For more information, see Migrate Public folders from previous versions later in this topic.
-    
+
       - *IsHierarchyReady*: This parameter indicates whether the public folder mailbox is ready to serve the public folder hierarchy to users. It's set to `$True` only after the entire hierarchy has been synced to the public folder mailbox. If the parameter is set to $False, users won't use it to access the hierarchy. However, if you set the *DefaultPublicFolderMailbox* property on a user mailbox to a specific public folder mailbox, the user will still access the specified public folder mailbox even if the *IsHierarchyReady* parameter is set to `$False`.
-    
+
       - *IsExcludedFromServingHierarchy*: This parameter prevents users from accessing the public folder hierarchy on the specified public folder mailbox. For load-balancing purposes, users are equally distributed across public folder mailboxes by default. When this parameter is set on a public folder mailbox, that mailbox isn't included in this automatic load balancing and won't be accessed by users to retrieve the public folder hierarchy. However, if you set the *DefaultPublicFolderMailbox* property on a user mailbox to a specific public folder mailbox, the user will still access the specified public folder mailbox even if the *IsExcludedFromServingHierarchy* parameter is set for that public folder mailbox.
 
 A secondary hierarchy mailbox will serve only public folder hierarchy information to users if it's specified explicitly on the users' mailboxes using the *DefaultPublicFolderMailbox* property, or if the following conditions are met:
@@ -111,21 +101,15 @@ The public folder hierarchy contains the folders' properties and organizational 
 
   - The folder's position in the public folder tree, including its parent and child folders
 
-
 > [!NOTE]
 > The hierarchy doesn't store information about email addresses for mail-enabled public folders. The email addresses are stored on the directory object in Active Directory.
-
-
 
 ## Hierarchy synchronization
 
 The public folder hierarchy synchronization process uses Incremental Change Synchronization (ICS), which provides a mechanism to monitor and synchronize changes to an Exchange store hierarchy or content. The changes include creating, modifying, and deleting folders and messages. When users are connected to and using content mailboxes, synchronization occurs every 15 minutes. If no users are connected to content mailbox, synchronization will be triggered less often (every 24 hours).If a write operation such as a creating a folder is performed on the primary hierarchy, synchronization is triggered immediately (synchronously) to the content mailbox.
 
-
 > [!IMPORTANT]
 > Because there's only one writeable copy of the hierarchy, folder creation is proxied to the hierarchy mailbox by the content mailbox users are connected to.
-
-
 
 In a large organization, when you create a new public folder mailbox, the hierarchy must synchronize to that public folder before users can connect to it. Otherwise, users may see an incomplete public folder structure when connecting with Outlook. To allow time for this synchronization to occur without users attempting to connect to the new public folder mailbox, set the *IsExcludedFromServingHierarchy* parameter on the **New-Mailbox** cmdlet when creating the public folder mailbox. This parameter prevents users from connecting to the newly created public folder mailbox. When synchronization is complete, run the [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)) cmdlet with the *IsExcludedFromServingHierarchy* parameter set to `false`, indicating that the public folder mailbox is ready to be connected to. You can use also the [Get-PublicFolderMailboxDiagnostics](https://technet.microsoft.com/en-us/library/jj218720\(v=exchg.150\)) cmdlet to view the sync status by the *SyncInfo* and the *AssistantInfo* properties.
 
@@ -135,11 +119,8 @@ For more information, see [Create a public folder](https://docs.microsoft.com/en
 
 Public folder content can include email messages, posts, documents, and eForms. The content is stored in the public folder mailbox but isn't replicated across multiple public folders mailboxes. All users access the same public folder mailbox for the same set of content. Although a full text search of public folder content is available, public folder content isn't searchable across public folders and the content isn't indexed by Exchange Search.
 
-
 > [!NOTE]
 > Outlook Web App is supported, but with limitations. You can add and remove favorite public folders and perform item-level operations such as creating, editing, deleting posts, and replying to posts. However, you can't create or delete public folders from Outlook Web App. Also, only Mail, Post, Calendar, and Contact public folders can be added to the Favorites list in Outlook Web App.
-
-
 
 ## Migrate public folders
 
@@ -188,4 +169,3 @@ In addition to the overall disaster recovery scenario, you can also restore publ
 In all of these situations, the public folder or public folder mailbox is recoverable by using the **MailboxRestoreRequest** cmdlets.
 
 For more information, see [Restore public folders and public folder mailboxes from failed moves](restore-public-folders-and-public-folder-mailboxes-from-failed-moves-exchange-2013-help.md).
-

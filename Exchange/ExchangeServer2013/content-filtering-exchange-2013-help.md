@@ -18,12 +18,8 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
-
 > [!NOTE]
 > On November 1, 2016, Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook. The existing SmartScreen spam definitions will be left in place, but their effectiveness will likely degrade over time. For more information, see <A href="https://go.microsoft.com/fwlink/p/?linkid=835894">Deprecating support for SmartScreen in Outlook and Exchange</A>.
-
-
 
 The Content Filter agent evaluates inbound email messages and assesses the probability that an inbound message is legitimate or spam. Unlike many other filtering technologies, the Content Filter agent uses characteristics from a statistically significant sample of email messages. The inclusion of legitimate messages in this sample reduces the chance of mistakes. Because the Content Filter agent recognizes characteristics of legitimate messages and spam, its accuracy is increased. Updates to the Content Filter agent are available periodically through [Microsoft Update](https://go.microsoft.com/fwlink/p/?linkid=54836).
 
@@ -51,11 +47,8 @@ For example, you may determine that messages that have an SCL rating of 7 or hig
 
 You can adjust the SCL threshold behavior by assigning different SCL ratings to each of these actions. For more information about how to adjust the SCL threshold to suit your organization's requirements and about per-recipient SCL thresholds, see [Spam Confidence Level Threshold](spam-confidence-level-threshold-exchange-2013-help.md).
 
-
 > [!NOTE]
 > Messages that are over 11&nbsp;MB aren't scanned by the Intelligent Message Filter. Instead, they pass through the Content Filter without being scanned.
-
-
 
 ## Allow phrases and Block phrases
 
@@ -85,15 +78,11 @@ In Exchange 2013, the Content Filter agent uses the Outlook Safe Senders Lists, 
 
 You configure the Content Filter agent by using the Exchange Management Shell.
 
-
 > [!IMPORTANT]
 > Configuration changes that you make to the Content Filter agent in the Exchange Management Shell are only made on the local computer. If you have the Content Filter agent running on multiple Exchange servers in your organization, you must make Content Filter configuration changes to each computer.
-
-
 
 The Content Filter agent depends on updates to determine whether a message can be delivered with confidence that it isn't spam. These updates contain data about phishing Web sites, Microsoft SmartScreen spam heuristics, and other Intelligent Message Filter updates. Content filter updates generally contain about 6 MB of data that's useful for longer periods of time than other anti-spam update data.
 
 Content filter updates are available from [Microsoft Update](https://go.microsoft.com/fwlink/p/?linkid=54836). The content filter update data is updated and available for download every two weeks.
 
 For more information about how to configure content filtering, see [Manage content filtering](manage-content-filtering-exchange-2013-help.md).
-

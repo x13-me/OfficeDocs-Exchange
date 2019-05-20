@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 Protocol logging records the SMTP conversations that occur between messaging servers as part of message delivery. These SMTP conversations occur on Send connectors and Receive connectors that exist in the Front End Transport service on Client Access servers, the Transport service on Mailbox servers, and the Mailbox Transport service on Mailbox servers. You can use protocol logging to diagnose mail flow problems.
 
@@ -38,11 +37,11 @@ By default, Exchange uses circular logging to limit the protocol logs based on f
 A special Send connector named the intra-organization Send connector exists in the Transport service on every Mailbox server, and in the Front End Transport service on every Client Access server. This connector is implicitly created, invisible, and requires no management. The intra-organization Send connector is used by the following transport services:
 
   - **Transport service on Mailbox servers**
-    
+
       - Relays messages to the Transport service and the Mailbox Transport service on other Exchange 2013 Mailbox servers in the organization.
-    
+
       - Relays messages to other Exchange 2007 or Exchange 2010 Hub Transport servers in the organization.
-    
+
       - Relays messages to Edge Transport servers in the perimeter network.
 
   - **Front End Transport service on Client Access servers**: Relays messages to the Transport service on Exchange 2013 Mailbox servers in the organization.
@@ -161,8 +160,6 @@ The protocol log stores each SMTP protocol event on a single line in the protoco
 </tbody>
 </table>
 
-
 A single SMTP conversation that represents the sending or receiving of a single email message generates multiple SMTP events. These SMTP events cause multiple lines to be written to the protocol log. Multiple SMTP conversations that represent the sending or receiving of multiple email messages can occur at the same time. This creates protocol log entries from different SMTP conversations that are interspersed. You can use the session-id and sequence-number fields to sort the protocol log entries by SMTP conversation.
 
 Return to top
-

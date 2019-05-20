@@ -18,14 +18,10 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Users can access their email, calendar, contacts, and task information on mobile phones, tablets, and other portable devices through Microsoft Exchange ActiveSync. They can also use it to set up their signature and automatic replies. A wide variety of mobile phones and devices work with Exchange ActiveSync.
-
 
 > [!NOTE]
 > Although we consistently refer to devices that access Exchange Server 2013 as mobile phones, there are many devices that can access Exchange 2013 but don't have cellular phone functionality. The term "mobile phone" in this documentation refers to those devices, as well.
-
-
 
 ## Exchange ActiveSync-compatible devices
 
@@ -77,7 +73,6 @@ Mobile phones that have a version of Windows Phone software as their operating s
 > [!WARNING]
 > If your organization uses other mobile device mailbox policy settings, you'll need to set the <STRONG>Allow non-provisionable devices</STRONG> policy to true. This can have security implications for your organization, because other mobile phones and devices that don't meet all the requirements of your mobile device policy settings will be allowed to synchronize. For more information, see <A href="mobile-device-mailbox-policies-exchange-2013-help.md">Mobile device mailbox policies</A>.
 
-
 </td>
 </tr>
 <tr class="even">
@@ -100,4 +95,3 @@ Mobile phones that have a version of Windows Phone software as their operating s
 </tr>
 </tbody>
 </table>
-

@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Online, Exchange Server 2013 SP1_
 
-
 You can use the built-in health reporting cmdlets to perform a variety of tasks related to managed availability, such as:
 
   - Viewing the health of a server or group of servers
@@ -35,11 +34,8 @@ You can use the built-in health reporting cmdlets to perform a variety of tasks 
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -108,4 +104,3 @@ Run the following command to view a list of the monitors and their current healt
 ```powershell
     Get-ServerHealth -HealthSet <HealthSetName> -Server <ServerName> | Format-Table Name, AlertValue -Auto
 ```
-

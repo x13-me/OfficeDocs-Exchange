@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 Shadow redundancy was introduced in Microsoft Exchange Server 2010 to provide redundant copies of messages before they're delivered to mailboxes. In Exchange 2010, shadow redundancy delayed deleting a message from the transport database on a transport server until the server verified the next hop in the message delivery path completed delivery. If the next hop failed before reporting successful delivery back to the transport server, the transport server resubmitted the message to that next hop. Exchange 2010 servers used the XSHADOW verb to advertise their shadow redundancy support. If an SMTP server didn't support shadow redundancy, Exchange 2010 used delayed acknowledgement based on a configured time interval on the Receive connector to make a redundant copy of the message.
 
@@ -42,7 +41,6 @@ Message processing after an outage
 ## Shadow redundancy components
 
 The following table describes the components of shadow redundancy. These terms are used throughout the topic.
-
 
 <table>
 <colgroup>
@@ -111,7 +109,6 @@ The following table describes the components of shadow redundancy. These terms a
 </tbody>
 </table>
 
-
 Return to top
 
 ## Requirements for shadow redundancy
@@ -175,7 +172,6 @@ The following table describes the parameters that enable shadow redundancy.
 </tbody>
 </table>
 
-
 Return to top
 
 ## How shadow messages are created
@@ -202,17 +198,17 @@ When the Transport service on an Exchange 2013 Mailbox server receives a message
 
 ![Shadow message creation](images/Dd351027.a97d383b-6ae4-458d-af3a-1ac0a41cd52b(EXCHG.150).gif "Shadow message creation")
 
-1.  An SMTP server transmits a message to the Transport service on a Mailbox server. The Mailbox server is the primary server, and the message is the primary message.
+1. An SMTP server transmits a message to the Transport service on a Mailbox server. The Mailbox server is the primary server, and the message is the primary message.
 
-2.  While the original SMTP session with the SMTP server is still active, the Transport service on primary server opens a new, simultaneous SMTP session with the Transport service on a different Mailbox server in the organization to create a redundant copy of the message.
-    
+2. While the original SMTP session with the SMTP server is still active, the Transport service on primary server opens a new, simultaneous SMTP session with the Transport service on a different Mailbox server in the organization to create a redundant copy of the message.
+
       - If the primary server is a member of a DAG, the primary server connects to a different Mailbox server in the same DAG. If the DAG spans multiple Active Directory sites, a Mailbox server in a different Active Directory site is preferred by default. This setting is controlled by the *ShadowMessagePreference* parameter on the **Set-TransportService** cmdlet. The default value is `PreferRemote`, but you can change it to `RemoteOnly` or `LocalOnly`.
-    
+
       - If the primary server isn't a member of a DAG, the primary server connects to a different Mailbox server in the same Active Directory Site, regardless of the value of the *ShadowMessagePreference* parameter.
 
-3.  The primary server transmits a copy of the message to the Transport service on other Mailbox server, and Transport service on the other Mailbox server acknowledges that the copy of the message was created successfully. The copy of the message is the shadow message, and the Mailbox server that holds it is the shadow server for the primary server. The message exists in a shadow queue on the shadow server.
+3. The primary server transmits a copy of the message to the Transport service on other Mailbox server, and Transport service on the other Mailbox server acknowledges that the copy of the message was created successfully. The copy of the message is the shadow message, and the Mailbox server that holds it is the shadow server for the primary server. The message exists in a shadow queue on the shadow server.
 
-4.  After the primary server receives acknowledgement from the shadow server, the primary server acknowledges the receipt of the primary message to the original SMTP server in the original SMTP session, and the SMTP session is closed.
+4. After the primary server receives acknowledgement from the shadow server, the primary server acknowledges the receipt of the primary message to the original SMTP server in the original SMTP session, and the SMTP session is closed.
 
 ## Messages sent outside a transport high availability boundary
 
@@ -321,7 +317,6 @@ The following table describes the parameters that control the creation of shadow
 </tbody>
 </table>
 
-
 Return to top
 
 ## How shadow messages are maintained
@@ -357,7 +352,6 @@ Shadow Redundancy Manager is responsible for the following for all the shadow me
   - Tracking message bifurcations and other side-effect messages like delivery status notifications (DSNs) and journal reports to verify the redundant copy of the message isn't released until all forks of the message are fully processed.
 
 The following table describes the parameters that control how shadow messages are maintained.
-
 
 <table>
 <colgroup>
@@ -401,7 +395,6 @@ The following table describes the parameters that control how shadow messages ar
 </tbody>
 </table>
 
-
 Return to top
 
 ## Message processing after an outage
@@ -441,6 +434,4 @@ The following table summarizes how shadow redundancy reacts to these two scenari
 </tbody>
 </table>
 
-
 Return to top
-

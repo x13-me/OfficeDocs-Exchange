@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can use the details in this topic for monitoring the health and status of mailbox database copies for database availability groups (DAGs), for gathering diagnostic information, and for configuring the low disk space monitoring threshold.
 
 ## Get-MailboxDatabaseCopyStatus cmdlet
@@ -105,7 +104,6 @@ You can use the [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/en
 </tr>
 </tbody>
 </table>
-
 
 The **Get-MailboxDatabaseCopyStatus** cmdlet also returns details about the in-use replication networks, including *IncomingLogCopyingNetwork*, which is returned for passive database copies, and *OutgoingConnections*, which is returned for active databases that have more than one copy, as well as any database copy being used as a source for a database seeding operation. Outgoing connection information is provided for database copies that are in file mode replication. Outgoing connection information is not provided for database copies that are in block mode replication.
 
@@ -228,7 +226,6 @@ The **Test-ReplicationHealth** cmdlet is designed for the proactive monitoring o
 </tbody>
 </table>
 
-
 ## Test-ReplicationHealth example
 
 This example uses the **Test-ReplicationHealth** cmdlet to test the health of replication for the Mailbox server MBX1.
@@ -247,11 +244,11 @@ The Applications and Services logs category includes four subtypes: Admin, Opera
 
 Exchange 2013 logs events to crimson channels in the Applications and Services logs area. You can view these channels by performing these steps:
 
-1.  Open Event Viewer.
+1. Open Event Viewer.
 
-2.  In the console tree, navigate to **Applications and Services Logs** \> **Microsoft** \> **Exchange**.
+2. In the console tree, navigate to **Applications and Services Logs** \> **Microsoft** \> **Exchange**.
 
-3.  Under **Exchange**, select a crimson channel, such as **HighAvailability** or **MailboxDatabaseFailureItems** to see DAG and database copy-related events, or **ActiveMontoring** or **ManagedAvailability** to see events related to Managed Availability.
+3. Under **Exchange**, select a crimson channel, such as **HighAvailability** or **MailboxDatabaseFailureItems** to see DAG and database copy-related events, or **ActiveMontoring** or **ManagedAvailability** to see events related to Managed Availability.
 
 The HighAvailability channel contains events related to startup and shutdown of the Microsoft Exchange Replication service, and the various components that run within the Microsoft Exchange Replication service, such as Active Manager, the third-party synchronous replication API, the tasks RPC server, TCP listener, and Volume Shadow Copy Service (VSS) writer. The HighAvailability channel is also used by Active Manager to log events related to Active Manager role monitoring and database action events, such as a database mount operation and log truncation, and to record events related to the DAG's underlying cluster.
 
@@ -366,7 +363,6 @@ The script supports parameters that allow you to customize the script's behavior
 </tbody>
 </table>
 
-
 ## CollectOverMetrics.ps1 examples
 
 The following example collects metrics for all databases that match DB\* (which includes a wildcard character) in the DAG DAG1. After the metrics are collected, an HTML report is generated and displayed.
@@ -456,7 +452,6 @@ The CollectReplicationMetrics.ps1 script supports parameters that allow you to c
 </tr>
 </tbody>
 </table>
-
 
 ## CollectReplicationMetrics.ps1 example
 

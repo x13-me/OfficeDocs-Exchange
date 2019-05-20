@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Microsoft Exchange Server 2013 features are designed to help improve the security of your messaging environment. Generally, for Exchange 2013, the following conditions are true:
 
   - Accounts that are used by Exchange 2013 have the minimum rights that are required to perform the given task sets.
@@ -34,7 +33,6 @@ Microsoft Exchange Server 2013 features are designed to help improve the securit
 This topic lists steps that we recommend you take to harden the messaging environment before you install Microsoft Exchange. We recommend that you refer to this checklist every time that you install a new Exchange server role.
 
 Before installing Exchange 2013, perform the following procedures.
-
 
 <table>
 <colgroup>
@@ -62,4 +60,3 @@ Before installing Exchange 2013, perform the following procedures.
 </tr>
 </tbody>
 </table>
-

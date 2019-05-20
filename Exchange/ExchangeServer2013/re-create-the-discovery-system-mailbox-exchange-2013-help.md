@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 In-Place eDiscovery uses a system mailbox to store In-Place eDiscovery search metadata. This Discovery system mailbox has the display name **SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}**. Because system mailboxes aren't visible in the Exchange Administration Center (EAC) or in Exchange address lists, they are rarely deleted inadvertently.
 
@@ -33,17 +32,15 @@ However, if the Discovery system mailbox is deleted accidentally, discovery mana
 
 ## Use the Shell to re-create the Discovery system mailbox
 
-1.  Delete the SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9} user account from Active Directory, if it exists. By default, Exchange Server 2013 Setup creates the mailbox in the Users container in Active Directory. For details about how to delete a user account from Active Directory, see [Delete a User Account](https://go.microsoft.com/fwlink/p/?linkid=215850).
+1. Delete the SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9} user account from Active Directory, if it exists. By default, Exchange Server 2013 Setup creates the mailbox in the Users container in Active Directory. For details about how to delete a user account from Active Directory, see [Delete a User Account](https://go.microsoft.com/fwlink/p/?linkid=215850).
 
-2.  Use the Shell to enable the Discovery system mailbox.
-    
+2. Use the Shell to enable the Discovery system mailbox.
 
     > [!NOTE]
     > You can't use the EAC to enable the Discovery system mailbox.<BR>The following command must be run from the same directory where you extracted the Exchange installation media.
 
-    
     To re-create the Discovery system mailbox, run the following command:
-    
+
     ```powershell
     .\Setup /preparead /IAcceptExchangeServerLicenseTerms
     ```
@@ -52,8 +49,5 @@ However, if the Discovery system mailbox is deleted accidentally, discovery mana
 
 To verify that you have successfully re-created the Discovery system mailbox, use the **Get-Mailbox** cmdlet with the *Arbitration* switch to retrieve system mailboxes. View the results of the command to verify that the system mailbox `SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}` has been re-created.
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-

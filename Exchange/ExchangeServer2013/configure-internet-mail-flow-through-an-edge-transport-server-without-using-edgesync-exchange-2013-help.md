@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 We recommend you use the Edge Subscription process to establish mail flow between your Exchange organization and an Edge Transport server. However, certain situations may prevent you from subscribing the Edge Transport server to your Exchange organization using the Edge Subscription process. To manually establish mail flow between your Exchange organization and an Edge Transport server, you must create and configure the Send connectors and Receive connectors on the Edge Transport server and on the Mailbox servers in your Exchange organization.
 
 ## Before you begin
@@ -34,12 +33,9 @@ We recommend you use the Edge Subscription process to establish mail flow betwee
   - An Edge Transport server is typically *multihomed*. This means that the Edge Transport server has network adapters connected to multiple network segments. Each of these network adapters has a unique IP configuration. The network adapter that's connected to the external, or public, network segment should be configured to use a public Domain Name System (DNS) server for name resolution. This enables the server to resolve SMTP domain names to MX resource records and route mail to the Internet. The network adapter that's connected to the internal, or private, network segment should be configured to use a DNS server in the perimeter network or should have a Hosts file available.
 
   - You need to create a user account in Active Directory and add the account to the universal security group on the Exchange Server computer. This account is used by the Send connector on the Edge Transport server to authenticate to the destination Mailbox server in the Exchange organization.
-    
 
     > [!IMPORTANT]
     > This account is granted the permissions associated with the computers running Exchange Server. Make sure you safeguard the account credentials to prevent misuse of the account. You can configure the account to allow logon to specific computers only.
-
-
 
 ## Edge Transport Server Procedures
 
@@ -57,11 +53,8 @@ By default, a single Receive connector is created during the installation of the
 
 The following sections walk you through all the configuration steps required to prepare your Edge Transport server to communicate with your Exchange organization.
 
-
 > [!NOTE]
 > You can only use the Shell to perform these procedures on Edge Transport servers.
-
-
 
 ## Step 1: Create a Send connector configured to send messages to the Internet
 
@@ -87,11 +80,8 @@ For detailed syntax and parameter information, see [New-SendConnector](https://t
 
 Use the **New-SendConnector** cmdlet to create a Send connector.
 
-
 > [!NOTE]
 > Before you create the Send connector, you first need to run the <STRONG>Get-Credential</STRONG> command to save the user name and password you will use in a temporary variable. You need to do this because the <STRONG>New-SendConnector</STRONG> cmdlet will not accept user credentials in plain text.
-
-
 
 This Send connector requires the following configuration:
 

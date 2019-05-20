@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:**: Exchange Online, Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, several improvements have been made to transport rules. This topic provides a brief overview of some of the key changes and enhancements. To learn more about transport rules, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 
@@ -70,4 +69,3 @@ For detailed information about using these new predicates and actions, see [Tran
   - **Detailed Transport rule information in message tracking logs**: Detailed information about Transport rules is now included in message tracking logs. The information includes which rules were triggered for a specific message and the actions taken as a result of processing those rules.
 
   - **New rule monitoring functionality**: Exchange 2013 monitors Transport rules that are configured and measures the cost of running these rules both when you're creating the rule and also during regular operation. Exchange can detect and generate alerts for rules that are causing delays in mail delivery.
-

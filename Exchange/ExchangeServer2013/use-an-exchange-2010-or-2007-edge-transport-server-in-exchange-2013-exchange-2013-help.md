@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 The Edge Transport server is available in Microsoft Exchange Server 2013 Service Pack 1 (SP1). However, you can continue to use existing Exchange Server 2007 or Exchange Server 2010 Edge Transport servers that you have deployed in your perimeter network. Or, you can install a new Exchange 2007 or Exchange 2010 Edge Transport server in your perimeter network for a new or upgraded Exchange 2013 organization.
 
@@ -28,8 +27,7 @@ Here are the things you need to know:
   - You can subscribe an Exchange 2007 or Exchange 2010 Edge Transport server to an Active Directory site that contains only Exchange 2013 servers. You can import the Edge Subscription file and run EdgeSync on a standalone Exchange 2013 Mailbox server, or on a server where the Mailbox server and the Client Access server are installed on the same computer. You can't import the Edge Subscription file or run EdgeSync on a standalone Exchange 2013 Client Access server.
 
   - The procedures to deploy a new Exchange 2007 or Exchange 2010 Edge Transport server in your Exchange 2013 organization are basically the same as in previous versions of Exchange. However, any procedures that are performed on the Hub Transport server are performed on the Mailbox server in Exchange 2013. The procedures are:
-    
-      - [Configure Internet Mail Flow Through a Subscribed Edge Transport Server](https://go.microsoft.com/fwlink/p/?linkid=275859)
-    
-      - [Configure Mail Flow Between an Edge Transport Server and Hub Transport Servers Without Using EdgeSync](https://go.microsoft.com/fwlink/p/?linkid=276661)
 
+      - [Configure Internet Mail Flow Through a Subscribed Edge Transport Server](https://go.microsoft.com/fwlink/p/?linkid=275859)
+
+      - [Configure Mail Flow Between an Edge Transport Server and Hub Transport Servers Without Using EdgeSync](https://go.microsoft.com/fwlink/p/?linkid=276661)

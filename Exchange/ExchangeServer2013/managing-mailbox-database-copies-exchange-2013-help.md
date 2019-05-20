@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 After a database availability group (DAG) has been created, configured, and populated with Mailbox server members, you can use the Exchange Admin Center (EAC) or the Exchange Management Shell to add mailbox database copies in a flexible and granular way.
 
 ## Managing database copies
@@ -59,11 +58,8 @@ To use a specific copy as a source for seeding when adding a new database copy, 
 
 In addition to selecting a specific source server for seeding a mailbox database copy, you can also use the Shell to specify which DAG networks to use, and optionally override the DAG network's compression and encryption settings during the seed operation.
 
-
 > [!NOTE]
 > Seeding a context index catalog is only possible over a MAPI network. This is true even if you use the <CODE>-Network</CODE> parameter in the Update-MailboxDatabaseCopy cmdlet.
-
-
 
 To specify the networks you want to use for seeding, use the *Network* parameter when running the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd335201\(v=exchg.150\)) cmdlet and specify the DAG networks that you want to use. If you don't use the *Network* parameter, the system uses the following default behavior for selecting a network to use for the seeding operation:
 
@@ -79,23 +75,23 @@ At the DAG level, DAG networks are configured for encryption and compression. Th
 
 When you initiate a seeding process by using the [Add-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd298105\(v=exchg.150\)) or [Update-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd335201\(v=exchg.150\)) cmdlets, the following tasks are performed:
 
-1.  Database properties from Active Directory are read to validate the specified database and servers, and to verify that the source and target servers are running Exchange 2013, they are both members of the same DAG, and that the specified database isn't a recovery database. The database file paths are also read.
+1. Database properties from Active Directory are read to validate the specified database and servers, and to verify that the source and target servers are running Exchange 2013, they are both members of the same DAG, and that the specified database isn't a recovery database. The database file paths are also read.
 
-2.  Preparations occur for reseed checks from the Microsoft Exchange Replication service on the target server.
+2. Preparations occur for reseed checks from the Microsoft Exchange Replication service on the target server.
 
-3.  The Microsoft Exchange Replication service on the target server checks for the presence of database and transaction log files in the file directories read by the Active Directory checks in step 1.
+3. The Microsoft Exchange Replication service on the target server checks for the presence of database and transaction log files in the file directories read by the Active Directory checks in step 1.
 
-4.  The Microsoft Exchange Replication service returns the status information from the target server to the administrative interface from where the cmdlet was run.
+4. The Microsoft Exchange Replication service returns the status information from the target server to the administrative interface from where the cmdlet was run.
 
-5.  If all preliminary checks have passed, you're prompted to confirm the operation before continuing. If you confirm the operation, the process continues. If an error is encountered during the preliminary checks, the error is reported and the operation fails.
+5. If all preliminary checks have passed, you're prompted to confirm the operation before continuing. If you confirm the operation, the process continues. If an error is encountered during the preliminary checks, the error is reported and the operation fails.
 
-6.  The seed operation is started from the Microsoft Exchange Replication service on the target server.
+6. The seed operation is started from the Microsoft Exchange Replication service on the target server.
 
-7.  The Microsoft Exchange Replication service suspends database replication for the active database copy.
+7. The Microsoft Exchange Replication service suspends database replication for the active database copy.
 
-8.  The state information for the database is updated by the Microsoft Exchange Replication service to reflect a status of Seeding.
+8. The state information for the database is updated by the Microsoft Exchange Replication service to reflect a status of Seeding.
 
-9.  If the target server doesn't already have the directories for the target database and log files, they are created.
+9. If the target server doesn't already have the directories for the target database and log files, they are created.
 
 10. A request to seed the database is passed from the Microsoft Exchange Replication service on the target server to the Microsoft Exchange Replication service on the source server using TCP. This request and the subsequent communications for seeding the database occur on a DAG network that has been configured as a replication network.
 
@@ -239,7 +235,6 @@ The required number of healthy copies, the free disk space threshold, and the nu
 
 Enabling loose truncation and configuring loose truncation parameters is performed by editing the Windows registry on each DAG member. There are three registry values that can be configured, that are all stored under HKLM\\Software\\Microsoft\\ExchangeServer\\v15\\BackupInformation. The BackupInformation key the following DWORD values do not exist by default and must be manually created. The DWORD registry values under BackupInformation are described in the following table:
 
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -271,7 +266,6 @@ Enabling loose truncation and configuring loose truncation parameters is perform
 </tr>
 </tbody>
 </table>
-
 
 When using the LooseTruncation\_MinLogsToProtect registry value, note that the behavior is different for active and passive database copies. On the active database copy, this is the number of extra logs that are retained preceding those that are required by the protected passive copies and the required range of the active copy.On a passive database copy, this is the number of logs maintained from the latest available log. One tenth of this number is also used to maintain logs prior to the required range of this passive copy. The two limits are in place to ensure that lagged database copies don't take up too much space, since their required range is typically very large.
 
@@ -321,7 +315,6 @@ The value of the *DataMoveReplicationConstraint* parameter for the mailbox datab
 
 When the Data Guarantee API is executed to evaluate the health of the database copy infrastructure, several items are evaluated.
 
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -365,13 +358,11 @@ When the Data Guarantee API is executed to evaluate the health of the database c
 </tbody>
 </table>
 
-
 **Check Replication Flush**
 
 The Data Guarantee API can also be used to validate that a prerequisite number of database copies have replayed the required transaction logs. This is verified by comparing the last log replayed timestamp with that of the calling service's commit timestamp (in most cases, this is the timestamp of the last log file that contains required data) plus an additional five seconds (to deal with system time clock skews or drift). If the replay timestamp is greater than the commit timestamp, the *DataMoveReplicationConstraint* parameter is satisfied. If the replay timestamp is less than the commit timestamp, the *DataMoveReplicationConstraint* isn't satisfied.
 
 Before moving large numbers of mailboxes to or from replication databases within a DAG, we recommend that you configure the *DataMoveReplicationConstraint* parameter on each mailbox database according to the following:
-
 
 <table>
 <colgroup>
@@ -412,7 +403,6 @@ Before moving large numbers of mailboxes to or from replication databases within
 </tr>
 </tbody>
 </table>
-
 
 ## Balancing database copies
 
@@ -474,7 +464,6 @@ Due to the inherent nature of DAGs, as the result of database switchovers and fa
 </tr>
 </tbody>
 </table>
-
 
 In the preceding example, there are four copies of each database, and therefore, only four possible values for activation preference (1, 2, 3, or 4). The **Preference count list** column shows the count of the number of databases with each of these values. For example, on EX3, there are 13 database copies with an activation preference of 1, two copies with an activation preference of 2, one copy with an activation preference of 3, and no copies with an activation preference of 4.
 
@@ -547,7 +536,6 @@ After running the script with the first option, the preceding unbalanced DAG bec
 </tbody>
 </table>
 
-
 As shown in the preceding table, this DAG is now balanced in terms of number of active and passive databases on each server and activation preference across the servers.
 
 The following table lists the available parameters for the RedistributeActiveDatabases.ps1 script.
@@ -613,7 +601,6 @@ The following table lists the available parameters for the RedistributeActiveDat
 </tbody>
 </table>
 
-
 ## RedistributeActiveDatabases.ps1 examples
 
 This example shows the current database distribution for a DAG, including preference count list.
@@ -663,4 +650,3 @@ There are several internal checks that will be performed before activating a pas
 When performing a database switchover, you also have the option of overriding the mount dial settings configured for the server that hosts the passive database copy being activated. Using the *MountDialOverride* parameter of the **Move-ActiveMailboxDatabase** cmdlet instructs the target server to override its own mount dial settings and use those specified by the *MountDialOverride* parameter.
 
 For detailed steps about how to perform a switchover of a database copy, see [Activate a mailbox database copy](activate-a-mailbox-database-copy-exchange-2013-help.md).
-

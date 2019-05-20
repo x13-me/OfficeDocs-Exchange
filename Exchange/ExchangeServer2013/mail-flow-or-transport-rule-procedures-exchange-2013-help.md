@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server, Exchange Server 2013_
 
-
 You can begin using transport rules by using the following procedures. To learn about concepts and objectives for transport rules, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 
 [Add an email disclaimer, legal disclaimer, common signature, or email footer or header](https://technet.microsoft.com/en-us/library/dn600323\(v=exchg.150\))   Information to help you set up a legal disclaimer, email disclaimer, consistent signature, email header, or email footer by using transport rules.
@@ -32,4 +31,3 @@ You can begin using transport rules by using the following procedures. To learn 
 [Manage mail flow rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)   Information to help you create, view, modify, enable, disable, or remove a transport rule, and information about importing and exporting transport rule collections.
 
 [Best practices for configuring mail flow rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)   Information to help you avoid common configuration errors.
-

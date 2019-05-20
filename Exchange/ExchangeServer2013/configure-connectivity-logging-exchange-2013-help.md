@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Connectivity logging records the outbound connection activity that's used to transmit messages from a transport service on an Exchange server. Connectivity logging records the connection source, destination, number of messages and bytes transmitted, and connection failure information.
 
 ## What do you need to know before you begin?
@@ -31,28 +30,25 @@ Connectivity logging records the outbound connection activity that's used to tra
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
 ## Use the EAC to configure connectivity logging in the Transport service
 
-1.  In the EAC, navigate to **Servers** \> **Servers**.
+1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2.  Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. Select the Mailbox server you want to configure, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3.  On the server properties page, click **Transport Logs**.
+3. On the server properties page, click **Transport Logs**.
 
-4.  In the **Connectivity log** section, change any of the following:
-    
+4. In the **Connectivity log** section, change any of the following:
+
       - **Enable connectivity log**: To disable connectivity logging on the server, clear the check box. To enable connectivity logging on the server, select the check box.
-    
+
       - **Connectivity log path**: The value you specify must be on the local Exchange server. If the folder doesn't exist, it will be created for you when you click **Save**.
-    
+
     When you are finished, click **Save**.
 
 ## Use the Shell to configure connectivity logging
@@ -88,17 +84,14 @@ This example sets the following connectivity log settings in the Transport servi
 > <LI>
 > <P>Setting the <EM>ConnectivityLogMaxAge</EM> parameter to the value <CODE>00:00:00</CODE> prevents the automatic removal of connectivity log files because of their age.</P></LI></UL>
 
-
-
 ## How do you know this worked?
 
 To verify that you have successfully configured connectivity logging, do the following:
 
-1.  In the Shell, run the following command:
-    
+1. In the Shell, run the following command:
+
     ```powershell
         <Get-TransportService | Get-FrontEndTransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List ConnectivityLog*
     ```
-    
-2.  Verify the values displayed are the values you configured.
 
+2. Verify the values displayed are the values you configured.

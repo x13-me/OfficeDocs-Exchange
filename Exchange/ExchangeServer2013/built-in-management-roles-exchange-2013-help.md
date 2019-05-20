@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Built-in management roles
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Microsoft Exchange Server 2013 includes many management roles by default. The following roles are assigned to management role groups or management role assignment policies in various combinations that grant permissions to manage and use the features provided by Exchange 2013. For more information about roles, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
 
@@ -186,4 +183,3 @@ Microsoft Exchange Server 2013 includes many management roles by default. The fo
 [View-Only Configuration role](view-only-configuration-role-exchange-2013-help.md)
 
 [View-Only Recipients role](view-only-recipients-role-exchange-2013-help.md)
-

@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Add Mailbox and Client Access servers to a SIP URI dial plan
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 You can add Client Access and Mailbox servers to SIP URI dial plans. Client Access and Mailbox servers can't be associated with Telephone Extension or E.164 dial plans, but the servers will answer all incoming calls.
 
@@ -35,25 +32,22 @@ For additional management tasks related to UM dial plans, see [UM dial plan proc
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
 ## Use the EAC to add a Mailbox server to a SIP URI dial plan
 
-1.  In the EAC, navigate to **Servers** \> **Servers**.
+1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2.  In the list view, select the Mailbox server you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the Mailbox server you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3.  On the **Exchange Server** page, click **Unified Messaging**.
+3. On the **Exchange Server** page, click **Unified Messaging**.
 
-4.  Under **UM Service settings** \> **Associated dial plans**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+4. Under **UM Service settings** \> **Associated dial plans**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-5.  In the **Select a UM Dial Plan** window, select the SIP URI dial plan, click **Add**, click **OK**, and then click **Save**.
+5. In the **Select a UM Dial Plan** window, select the SIP URI dial plan, click **Add**, click **OK**, and then click **Save**.
 
 ## Use the Shell to add a Mailbox server to a SIP URI dial plan
 
@@ -79,15 +73,15 @@ Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan, MySIPDialPlan2
 
 ## Use the EAC to add a Client Access server to a SIP URI dial plan
 
-1.  In the EAC, navigate to **Servers** \> **Servers**.
+1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2.  In the list view, select the Client Access server you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the Client Access server you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3.  On the **Exchange Server** page, click **Unified Messaging**.
+3. On the **Exchange Server** page, click **Unified Messaging**.
 
-4.  Under **UM Call Router settings** \> **Associated dial plans**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+4. Under **UM Call Router settings** \> **Associated dial plans**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-5.  In the **Select a UM Dial Plan** window, select the SIP URI dial plan, click **Add**, click **OK**, and then click **Save**.
+5. In the **Select a UM Dial Plan** window, select the SIP URI dial plan, click **Add**, click **OK**, and then click **Save**.
 
 ## Use the Shell to add a Client Access server to a SIP URI dial plan
 
@@ -102,4 +96,3 @@ This example adds the Client Access server named `MyClientAccessServer` to two S
 ```powershell
 Set-UMCallRouterSettings -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -Server MyClientAccessServer
 ```
-

@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 A part of federated sharing, sharing policies enable user-established, people-to-people sharing of calendar information with different types of external users. Sharing polices are assigned to user mailboxes and allow your users to self-manage and share their free/busy information (including the Calendar folder) with recipients in external Office 365 organizations or other federated Exchange on-premises organizations. If you want to share calendars with recipients that aren't in one of these types of organizations, sharing policies allow people-to-people sharing of calendar information with any email recipient through the use of Internet Calendar Publishing.
 
@@ -30,4 +29,3 @@ The following topics will help you configure and manage sharing policies as a pa
 [Modify, disable, or remove a sharing policy](modify-disable-or-remove-a-sharing-policy-exchange-2013-help.md)
 
 Looking for more information about federated sharing? See [Sharing](sharing-exchange-2013-help.md)
-
