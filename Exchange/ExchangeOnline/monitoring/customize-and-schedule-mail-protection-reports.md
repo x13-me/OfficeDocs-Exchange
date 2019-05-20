@@ -13,7 +13,7 @@ title: Customize and schedule mail protection reports in Office 365 to be automa
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: laurawi
 

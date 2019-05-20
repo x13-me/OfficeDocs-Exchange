@@ -11,7 +11,7 @@ title: View or configure Outlook on the web mailbox policy properties in Exchang
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

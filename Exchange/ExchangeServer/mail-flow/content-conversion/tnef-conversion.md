@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: TNEF conversion options
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

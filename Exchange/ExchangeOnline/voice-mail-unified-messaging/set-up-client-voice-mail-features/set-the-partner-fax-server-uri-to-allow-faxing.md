@@ -9,7 +9,7 @@ ms.date: 12/9/2016
 ms.reviewer: 
 title: Set the partner fax server URI to allow faxing
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

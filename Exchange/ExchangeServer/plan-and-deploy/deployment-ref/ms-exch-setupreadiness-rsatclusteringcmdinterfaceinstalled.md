@@ -11,7 +11,7 @@ ms.date: 7/22/2015
 ms.reviewer: 
 title: Failover Cluster Command Interface Windows feature not installed [RsatClusteringCmdInterfaceInstalled]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

@@ -10,7 +10,7 @@ ms.collection: exchange-server
 ms.date: 7/6/2018
 ms.reviewer: 
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 title: Procedures for offline address books in Exchange Server
 
 ---

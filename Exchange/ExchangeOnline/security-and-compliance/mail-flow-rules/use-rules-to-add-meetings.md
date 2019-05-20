@@ -11,7 +11,7 @@ title: Use mail flow rules to automatically add meetings to calendars in Exchang
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

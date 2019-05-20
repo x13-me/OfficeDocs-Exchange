@@ -3,7 +3,7 @@ title: "Troubleshoot a hybrid deployment"
 ms.author: dmaguire
 author: msdmaguire
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

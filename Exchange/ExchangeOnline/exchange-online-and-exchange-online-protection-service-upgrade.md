@@ -11,7 +11,7 @@ title: Exchange Online and Exchange Online Protection service upgrade
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 ROBOTS: NOINDEX, NOFOLLOW

@@ -9,7 +9,7 @@ ms.date:
 title: Using hybrid Modern Authentication with Outlook for iOS and Android
 ms.collection: exchange-server
 ms.reviewer: smithre4
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

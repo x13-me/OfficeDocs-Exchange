@@ -9,7 +9,7 @@ ms.date: 4/8/2015
 ms.reviewer: 
 title: Create a call answering rule
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

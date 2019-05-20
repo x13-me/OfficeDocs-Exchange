@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Manage distribution groups in Exchange Server, Exchange distribution groups, Distribution group Exchange, AD distribution group, Active Directory distribution group
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

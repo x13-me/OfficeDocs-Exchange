@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Network ports for clients and mail flow in Exchange
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

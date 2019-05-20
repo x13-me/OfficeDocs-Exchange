@@ -10,7 +10,7 @@ monikerRange: exchserver-2016
 description: Exchange Server 2016 Setup can't continue because it detected that the local computer is running Windows Server Core or Windows Nano Server.
 title: Windows Server Core or Windows Nano Server is installed [IsServerCoreInstalled]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.date: 6/12/2018
 ms.reviewer: 
 manager: dansimp

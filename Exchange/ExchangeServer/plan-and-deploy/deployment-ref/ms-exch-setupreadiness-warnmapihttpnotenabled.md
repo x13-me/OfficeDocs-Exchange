@@ -11,7 +11,7 @@ ms.date: 7/22/2015
 ms.reviewer: 
 title: MAPI over HTTP isn't enabled [WarnMapiHttpNotEnabled]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

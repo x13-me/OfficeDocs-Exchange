@@ -9,7 +9,7 @@ ms.date: 7/8/2018
 ms.reviewer: 
 title: Sensitive information types in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 keywords:
 - data loss prevention in office 365,Data loss prevetion in Exchange,DLP,sensitive information types
 ms.prod: exchange-server-it-pro

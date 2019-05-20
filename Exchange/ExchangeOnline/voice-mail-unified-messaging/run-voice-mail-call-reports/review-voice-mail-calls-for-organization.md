@@ -1,5 +1,5 @@
 ---
-ms.audience: ITPro
+audience: ITPro
 localization_priority: Normal
 ms.author: chrisda
 manager: dansimp

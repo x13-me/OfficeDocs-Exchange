@@ -13,7 +13,7 @@ title: Manage LinkedIn contact sync in your organization
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: Developer
+audience: Developer
 ms.service: exchange-online
 manager: dansimp
 

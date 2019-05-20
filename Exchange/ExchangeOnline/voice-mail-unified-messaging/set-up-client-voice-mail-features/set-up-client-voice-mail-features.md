@@ -9,7 +9,7 @@ ms.date: 6/24/2018
 ms.reviewer: 
 title: Set up client voice mail features in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

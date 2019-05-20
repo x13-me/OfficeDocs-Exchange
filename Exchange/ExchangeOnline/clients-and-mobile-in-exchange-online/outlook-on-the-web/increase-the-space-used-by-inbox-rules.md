@@ -11,7 +11,7 @@ title: Modify the space used by Inbox rules in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

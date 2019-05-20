@@ -9,7 +9,7 @@ ms.date: 11/17/2014
 ms.reviewer: 
 title: Investigate the audio quality of voice calls in your organization
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
