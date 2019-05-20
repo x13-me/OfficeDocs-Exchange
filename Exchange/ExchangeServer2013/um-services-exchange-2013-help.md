@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 Client Access servers running the Microsoft Exchange Unified Messaging Call Router service and Mailbox servers running the Microsoft Exchange Unified Messaging service enable you to deploy Unified Messaging (UM) and voice mail functionality for users in your organization.
 
@@ -84,4 +83,3 @@ After a dial plan is linked with a UM IP gateway, the Client Access and Mailbox 
 If the UM IP gateway identifies any changes to the configuration, the Client Access or Mailbox server reacts accordingly, and either starts using or stops using the appropriate VoIP gateway, IP PBX, or SBC. After the Client Access and Mailbox servers answer incoming calls for users linked with a UM dial plan and they're correctly communicating with VoIP gateways, IP PBXs, and SBCs, you can run a set of diagnostic operations to verify that they're operating correctly and that connectivity between the Exchange servers and VoIP gateways, IP PBXs, or SBCs is working correctly.
 
 Return to top
-

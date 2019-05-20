@@ -16,18 +16,14 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 A federation trust establishes a trust relationship between a Microsoft Exchange 2013 organization and the Azure Active Directory authentication system and supports sharing with other federated Exchange organizations. Removing a federation trust from your on-premises Exchange organization will disable federated sharing with other federated Exchange organizations and with Office 365 organizations connected to your organization as part of a hybrid deployment. You should carefully consider the overall impact to your organization before removing a federation trust.
 
 For additional management tasks related to federation trusts, see [Federation procedures](federation-procedures-exchange-2013-help.md).
 
-
 > [!IMPORTANT]
 > This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
-
-
 
 ## What do you need to know before you begin?
 
@@ -43,13 +39,13 @@ For additional management tasks related to federation trusts, see [Federation pr
 
 ## Use the EAC to remove a federation trust
 
-1.  On an Exchange 2013 server in your on-premises organization, navigate to **organization** \> **sharing**.
+1. On an Exchange 2013 server in your on-premises organization, navigate to **organization** \> **sharing**.
 
-2.  In the **Federation Trust** section, click **Remove**.
+2. In the **Federation Trust** section, click **Remove**.
 
-3.  In the warning, click **yes** to confirm that you want to remove the federation trust.
+3. In the warning, click **yes** to confirm that you want to remove the federation trust.
 
-4.  After the federation trust is removed, click **Close**.
+4. After the federation trust is removed, click **Close**.
 
 ## Use the Shell to remove a federation trust
 
@@ -68,12 +64,11 @@ To verify that you have successfully removed the federation trust, do one of the
   - In the EAC, navigate to **organization** \> **sharing**. If you successfully removed the federation trust, only the **Enable** button will be available under **Federation Trust**.
 
   - In the Shell, run the following command to verify that federation trust information isn't returned for your Exchange organization.
-    
+
     ```powershell
     Get-FederationTrust
     ```
-    
+
     For detailed syntax and parameter information, see [Get-FederationTrust](https://technet.microsoft.com/en-us/library/dd351262\(v=exchg.150\)).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
-

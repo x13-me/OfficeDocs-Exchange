@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 This topic explains how to use Telnet to test Simple Mail Transfer Protocol (SMTP) communication between messaging servers. By default, SMTP listens on port 25. If you use Telnet on port 25, you can enter the SMTP commands that are used to connect to an SMTP server and send a message exactly as if your Telnet session was an SMTP messaging server. You can see the success or failure of each step in the connection and message submission process.
 
@@ -41,11 +40,8 @@ The procedure in this topic shows you how to use Telnet Client, which is a compo
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## How do you do this?
 
@@ -57,37 +53,32 @@ By default, the Telnet Client isn't installed in most client or server versions 
 
 To connect to a destination SMTP server by using Telnet on port 25, you must use the fully qualified domain name (FQDN) or the IP address of the SMTP server. If the FQDN or IP address is unknown, the easiest way to find this information is to use the Nslookup command-line tool to find the MX record for the destination domain.
 
-1.  At a command prompt, type **nslookup**, and then press ENTER. This command opens the Nslookup session.
+1. At a command prompt, type **nslookup**, and then press ENTER. This command opens the Nslookup session.
 
-2.  Type **set type=mx** and then press ENTER.
+2. Type **set type=mx** and then press ENTER.
 
-3.  Type **set timeout=20** and then press ENTER. By default, Windows DNS servers have a 15-second recursive DNS query time-out limit.
+3. Type **set timeout=20** and then press ENTER. By default, Windows DNS servers have a 15-second recursive DNS query time-out limit.
 
-4.  Type the name of the domain for which you want to find the MX record. For example, to find the MX record for the fabrikam.com domain, type **fabrikam.com.**, and then press ENTER.
-    
+4. Type the name of the domain for which you want to find the MX record. For example, to find the MX record for the fabrikam.com domain, type **fabrikam.com.**, and then press ENTER.
 
     > [!NOTE]
     > The trailing period (&nbsp;<STRONG>.</STRONG>&nbsp;) indicates a FQDN. The use of the trailing period prevents any default DNS suffixes that are configured for your network from being unintentionally added to the domain name.
 
-    
     The output of the command will resemble the following:
-    
+
     ```powershell
         fabrikam.com mx preference=10, mail exchanger = mail1.fabrikam.com
         fabrikam.com mx preference=20, mail exchanger = mail2.fabrikam.com
         mail1.fabrikam.com internet address = 192.168.1.10
         mail2 fabrikam.com internet address = 192.168.1.20
     ```
-    
+
     You can use any of the host names or IP addresses that are associated with the MX records as the destination SMTP server. A lower value of preference indicates a preferred SMTP server. You can use multiple MX records and different values of preference for load balancing and fault tolerance.
 
-5.  When you're ready to end the Nslookup session, type **exit**, and then press ENTER.
-
+5. When you're ready to end the Nslookup session, type **exit**, and then press ENTER.
 
 > [!NOTE]
 > Firewall or Internet proxy restrictions that are imposed on your organization's internal network may prevent you from using the Nslookup tool to query public DNS servers on the Internet.
-
-
 
 ## Step 3: Use Telnet on Port 25 to test SMTP communication
 
@@ -105,55 +96,52 @@ In this example, the following values are used:
 
   - **Message body**: This is a test message
 
-
 > [!NOTE]
 > <UL>
 > <LI>
 > <P>The commands in Telnet Client are not case-sensitive. The SMTP command verbs are capitalized for clarity.</P>
 > <LI>
 > <P>You can't use the backspace key after you have connected to the destination SMTP server within the Telnet session. If you make a mistake as you type an SMTP command, you must press ENTER and then type the command again. Unrecognized SMTP commands or syntax errors result in an error message that resembles the following:</P>
-> 
+>
 > ```powershell
 > 500 5.3.3 Unrecognized command
 > ```
 > </LI></UL>
 
+1. At a command prompt, type **telnet**, and then press ENTER. This command opens the Telnet session.
 
+2. Type **set localecho** and then press ENTER. This optional command lets you view the characters as you type them. This setting may be required for some SMTP servers.
 
-1.  At a command prompt, type **telnet**, and then press ENTER. This command opens the Telnet session.
+3. Type **set logfile** *\<filename\>*. This optional command enables logging of the Telnet session to the specified log file. If you only specify a file name, the location of the log file is the current working directory. If you specify a path and a file name, the path must be local to the computer. Both the path and the file name that you specify must be entered in the Microsoft DOS 8.3 format. The path that you specify must already exist. If you specify a log file that doesn't exist, it will be created for you.
 
-2.  Type **set localecho** and then press ENTER. This optional command lets you view the characters as you type them. This setting may be required for some SMTP servers.
+4. Type **open mail1.fabrikam.com 25** and then press ENTER.
 
-3.  Type **set logfile** *\<filename\>*. This optional command enables logging of the Telnet session to the specified log file. If you only specify a file name, the location of the log file is the current working directory. If you specify a path and a file name, the path must be local to the computer. Both the path and the file name that you specify must be entered in the Microsoft DOS 8.3 format. The path that you specify must already exist. If you specify a log file that doesn't exist, it will be created for you.
+5. Type **EHLO contoso.com** and then press ENTER.
 
-4.  Type **open mail1.fabrikam.com 25** and then press ENTER.
+6. Type **MAIL FROM:chris@contoso.com** and then press ENTER.
 
-5.  Type **EHLO contoso.com** and then press ENTER.
+7. Type **RCPT TO:kate@fabrikam.com NOTIFY=success,failure** and then press ENTER. The optional NOTIFY command defines the particular delivery status notification (DSN) messages that the destination SMTP server must provide to the sender. DSN messages are defined in RFC 1891. In this case, you're requesting a DSN message for successful or failed message delivery.
 
-6.  Type **MAIL FROM:chris@contoso.com** and then press ENTER.
+8. Type **DATA** and then press ENTER. You will receive a response that resembles the following:
 
-7.  Type **RCPT TO:kate@fabrikam.com NOTIFY=success,failure** and then press ENTER. The optional NOTIFY command defines the particular delivery status notification (DSN) messages that the destination SMTP server must provide to the sender. DSN messages are defined in RFC 1891. In this case, you're requesting a DSN message for successful or failed message delivery.
-
-8.  Type **DATA** and then press ENTER. You will receive a response that resembles the following:
-    
     ```powershell
     354 Start mail input; end with <CLRF>.<CLRF>
     ```
 
-9.  Type **Subject: Test from Contoso** and then press ENTER.
+9. Type **Subject: Test from Contoso** and then press ENTER.
 
 10. Press ENTER. RFC 2822 requires a blank line between the `Subject:` header field and the message body.
 
 11. Type **This is a test message** and then press ENTER.
 
 12. Press ENTER, type a period ( **.** ) and then press ENTER. You will receive a response that resembles the following:
-    
+
     ```powershell
     250 2.6.0 <GUID> Queued mail for delivery
     ```
 
 13. To disconnect from the destination SMTP server, type **QUIT** and then press ENTER. You will receive a response that resembles the following:
-    
+
     ```powershell
     221 2.0.0 Service closing transmission channel
     ```
@@ -171,12 +159,9 @@ This section provides information about responses that may be provided to the fo
   - MAIL FROM:chris@contoso.com
 
   - RCPT TO:kate@fabrikam.com NOTIFY=success,failure
-    
 
     > [!NOTE]
     > The 3-digit SMTP response codes that are defined in RFC 2821 are the same for all SMTP messaging servers. The text descriptions may differ slightly for some SMTP messaging servers.
-
-
 
 ## Open mail1.fabrikam.com 25
 
@@ -204,11 +189,8 @@ This section provides information about responses that may be provided to the fo
 
 **Possible Reasons for Failure**: There are invalid characters in the domain name. Alternatively, there are connection restrictions on the destination SMTP server.
 
-
 > [!NOTE]
 > EHLO is the Extended Simple Message Transfer Protocol (ESMTP) verb that is defined in RFC 2821. ESMTP servers can advertise their capabilities during the initial connection. These capabilities include their maximum accepted message size and their supported authentication methods. HELO is the older SMTP verb that is defined in RFC 821. Most SMTP messaging servers support ESMTP and EHLO.
-
-
 
 ## MAIL FROM:chris@contoso.com
 
@@ -229,4 +211,3 @@ This section provides information about responses that may be provided to the fo
 **Failure Response**: `550 5.1.1 User unknown`
 
 **Possible Reasons for Failure**: The specified recipient does not exist in the organization.
-

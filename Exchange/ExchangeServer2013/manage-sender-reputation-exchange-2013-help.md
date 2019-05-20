@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Sender reputation is provided by the Protocol Analysis agent. Sender reputation blocks messages according to various characteristics of the sender. Sender reputation relies on persisted data about the sender to determine what action, if any, to take on an inbound message.
 
 ## What do you need to know before you begin?
@@ -35,11 +34,8 @@ Sender reputation is provided by the Protocol Analysis agent. Sender reputation 
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -61,14 +57,14 @@ Set-SenderReputationConfig -Enabled $true
 
 To verify that you have successfully enabled or disabled sender reputation, do the following:
 
-1.  Verify the Protocol Analysis agent is installed and enabled by running the following command:
-    
+1. Verify the Protocol Analysis agent is installed and enabled by running the following command:
+
     ```powershell
     Get-TransportAgent
     ```
 
-2.  Verify the sender reputation values you configured by running the following command:
-    
+2. Verify the sender reputation values you configured by running the following command:
+
     ```powershell
         Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
     ```
@@ -105,13 +101,13 @@ Set-SenderReputationConfig -InternalMailEnabled $true
 
 To verify that you have successfully enabled or disabled sender reputation for internal and external messages, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
         Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
     ```
 
-2.  Verify the values displayed match the values you configured.
+2. Verify the values displayed match the values you configured.
 
 ## Use the Shell to configure sender reputation properties
 
@@ -131,18 +127,17 @@ Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
 
 To verify that you have successfully configured the sender reputation properties, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-SenderReputationConfig
     ```
 
-2.  Verify the values displayed match the values you configured.
+2. Verify the values displayed match the values you configured.
 
 ## Use the Shell to configure outbound access for the detection of open proxy servers
 
 You may need to perform additional steps to allow sender reputation to traverse any firewalls that are between the Internet and the Exchange server that's running the Protocol Analysis agent. The following table lists the outbound ports that are required for sender reputation.
-
 
 <table>
 <colgroup>
@@ -171,7 +166,6 @@ You may need to perform additional steps to allow sender reputation to traverse 
 </tbody>
 </table>
 
-
 To configure outbound access for the detection of open proxy servers, run the following command:
 
 ```powershell
@@ -188,11 +182,10 @@ This example configures sender reputation to use the open proxy server named SER
 
 To verify that you have successfully configured outbound access for detection of open proxy servers, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
         Get-SenderReputationConfig | Format-List ProxyServer*
     ```
-    
-2.  Verify the values displayed are the values you configured.
 
+2. Verify the values displayed are the values you configured.

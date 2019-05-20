@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 When you plan your Unified Messaging (UM) deployment, there are many factors that you must consider to be able to successfully deploy UM. You must understand the different elements of Unified Messaging and each component and feature so that you can plan your Unified Messaging infrastructure and deployment appropriately. Allocating time to plan and work through these issues will help prevent problems when you deploy Unified Messaging in your organization.
 
@@ -48,15 +47,15 @@ The following are some of the areas that you should consider when planning for U
   - **Deployment model**: Decide whether you want to have a hybrid, online-only, or on-premises UM deployment.
 
   - **Exchange requirements**: Determine the following:
-    
+
       - How many users will be using voice mail.
-    
+
       - Which UM features and services you want to deploy, such as concurrent calls, internal and external access for users, incoming faxing, Voice Mail Preview, and so on.
-    
+
       - The number of Client Access and Mailbox servers you'll need to deploy.
-    
+
       - The storage requirements and quotas for voice mail users.
-    
+
       - The best design for high availability and site resiliency. This includes UM system requirements, providing a highly available and scalable UM deployment, and system hardware requirements to ensure performance.
 
   - **Integration with telephony components and devices**: Decide whether to use traditional telephony equipment or Microsoft Lync Server. Consider where to place VoIP gateways, telephony equipment, and Client Access and Mailbox servers, and whether you want to enable Enterprise Voice in your organization.
@@ -81,7 +80,6 @@ Unified Messaging requires that you integrate your Exchange Server deployment wi
 
 For more information about Microsoft Lync Server, see [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752).
 
-
 > [!NOTE]
 > Planning and deploying Unified Messaging can pose certain challenges. Depending on your technical experience with Exchange and voice mail systems, you might want to obtain the assistance of a Unified Messaging specialist. An Exchange Unified Messaging specialist will help make sure that there's a smooth transition from a legacy or third-party voice mail system to Exchange Unified Messaging. Performing a new deployment or upgrading a legacy voice mail system requires significant knowledge about VoIP gateways, PBXs, and Unified Messaging. To contact a Unified Messaging specialist, see the [Microsoft solution providers](https://go.microsoft.com/fwlink/p/?LinkId=261951) page.
 
@@ -89,15 +87,14 @@ For more information about Microsoft Lync Server, see [Microsoft Lync Server](ht
 
 Many deployment options are available for Unified Messaging. Each option has several steps in common that are required to create a scalable and highly-available system to support large numbers of users. These steps are as follows:
 
-1.  Deploy and configure your telephony components or Microsoft Lync Server with Unified Messaging.
+1. Deploy and configure your telephony components or Microsoft Lync Server with Unified Messaging.
 
-2.  Verify that you've correctly installed the Client Access and Mailbox servers that are required by Unified Messaging.
+2. Verify that you've correctly installed the Client Access and Mailbox servers that are required by Unified Messaging.
 
-3.  Create and configure the required Unified Messaging components, including UM dial plans, UM IP gateways, UM hunt groups, and UM mailbox policies.
+3. Create and configure the required Unified Messaging components, including UM dial plans, UM IP gateways, UM hunt groups, and UM mailbox policies.
 
-4.  Perform post-deployment tasks, including obtaining certificates for mutual TLS, creating UM auto attendants, and configuring faxing.
+4. Perform post-deployment tasks, including obtaining certificates for mutual TLS, creating UM auto attendants, and configuring faxing.
 
 For details about deploying Unified Messaging, see [Deploy Exchange 2013 UM](deploy-exchange-2013-um-exchange-2013-help.md).
 
 If you're integrating your Unified Messaging environment with Microsoft Lync Server, there are additional planning considerations. For details, see [Deploying Exchange 2013 UM and Lync Server overview](deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md).
-

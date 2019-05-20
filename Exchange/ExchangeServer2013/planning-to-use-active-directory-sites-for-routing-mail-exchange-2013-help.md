@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 Microsoft Exchange Server 2013 recognizes Active Directory sites and database availability groups (DAGs) as routing boundaries. However, Exchange 2013 still uses Active Directory site topology to determine how messages are transported between Exchange servers in different DAGs or sites within the organization. For more information, see [Mail routing](mail-routing-exchange-2013-help.md).
 
@@ -118,4 +117,3 @@ After you have diagrammed these objects, plan the placement of Exchange servers.
   - Client Access servers provide a connectivity point to the Exchange organization for users who are accessing Exchange remotely. A Client Access server must be deployed in each Active Directory site that contains Mailbox servers.
 
 After you plan your Exchange 2013 server placement, you may identify areas where you can modify the Active Directory site topology to improve communication flow. You may want to adjust IP site links and site link costs to optimize mail delivery. An efficient Active Directory topology doesn't require any changes to support Exchange 2013
-

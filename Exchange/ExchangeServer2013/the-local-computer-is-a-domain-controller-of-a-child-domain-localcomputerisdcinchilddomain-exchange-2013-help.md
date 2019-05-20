@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:**: Exchange Server_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -31,15 +30,14 @@ To resolve this issue, promote the domain controller to a global catalog server 
 
 **To correct this warning by making the Exchange server a global catalog server**
 
-1.  On the domain controller, click **Start**, point to **Programs**, click **Administrative Tools**, and then click **Active Directory Sites and Services**.
+1. On the domain controller, click **Start**, point to **Programs**, click **Administrative Tools**, and then click **Active Directory Sites and Services**.
 
-2.  In the console tree, double-click **Sites**, double-click the name of the site, and then double-click **Servers**.
+2. In the console tree, double-click **Sites**, double-click the name of the site, and then double-click **Servers**.
 
-3.  Double-click the target domain controller.
+3. Double-click the target domain controller.
 
-4.  In the results pane, right-click **NTDS Settings**, and then click **Properties**.
+4. In the results pane, right-click **NTDS Settings**, and then click **Properties**.
 
-5.  On the **General** tab, click to select the **Global catalog** check box.
+5. On the **General** tab, click to select the **Global catalog** check box.
 
-6.  Restart the domain controller.
-
+6. Restart the domain controller.

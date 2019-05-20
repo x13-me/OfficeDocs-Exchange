@@ -1,10 +1,10 @@
 ---
 title: 'Enable or disable hierarchical address books in Exchange Server'
-TOCTitle: 
+TOCTitle:
 ms.assetid: b4c3a175-ce5e-4bfb-a4a0-92d25f3644b3
-ms:mtpsurl: 
-ms:contentKeyID: 
-ms.date: 
+ms:mtpsurl:
+ms:contentKeyID:
+ms.date:
 ms.reviewer: 
 manager: dansimp
 ms.author: dmaguire

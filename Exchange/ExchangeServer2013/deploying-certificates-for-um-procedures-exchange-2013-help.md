@@ -18,10 +18,8 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 [Create certificates for UM](create-certificates-for-um-exchange-2013-help.md)
 
 [Import or export certificates for UM](import-or-export-certificates-for-um-exchange-2013-help.md)
 
 [Assign a certificate to the UM and UM Call Router services](assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md)
-

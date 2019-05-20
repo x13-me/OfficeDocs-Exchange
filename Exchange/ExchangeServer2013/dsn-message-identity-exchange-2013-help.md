@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can identify a customized delivery status notification (DSN) message based on its syntax. The identity is the customized DSN message's GUID or a string that consists of the following values:
 
   - **Locale**: This variable specifies the locale of the language that the DSN message is displayed in. For a list of locale codes that you can use with the **New-SystemMessage** command, see [Supported languages for system messages](supported-languages-for-system-messages-exchange-2013-help.md).
@@ -63,4 +62,3 @@ For each DSN code, you can create more than one customized DSN message, which ca
 </tr>
 </tbody>
 </table>
-

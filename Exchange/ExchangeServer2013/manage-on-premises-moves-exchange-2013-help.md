@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 A move request is the process of moving a mailbox from one mailbox database to another. A local move request is a mailbox move that occurs within a single forest. In Microsoft Exchange Server 2013, mailboxes and personal archive mailboxes can reside on separate databases. Using the move request functionality, you can move the primary mailbox and the associated archive to the same database or to separate ones. The procedures in this topic will help you with on-premises mailbox moves.
 
 Use the following procedures to move mailboxes in your on-premises organization. These procedures use the Exchange Management Shell and the Exchange Center (EAC).
@@ -41,11 +40,8 @@ For more information about mailbox moves, see [Mailbox moves in Exchange 2013](m
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -65,11 +61,11 @@ For detailed syntax and parameter information, see [New-MigrationBatch](https://
 
 To create a local move request, log in to the EAC and perform the following steps:
 
-1.  In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-2.  In the **New local mailbox move** wizard, select the user you want to move click **OK** and then click **Next**.
+2. In the **New local mailbox move** wizard, select the user you want to move click **OK** and then click **Next**.
 
-3.  On the **Move configuration** page, specify a name for the new batch. Select which options you want for the archive mailbox, and mailbox database location and click **New**.
+3. On the **Move configuration** page, specify a name for the new batch. Select which options you want for the archive mailbox, and mailbox database location and click **New**.
 
 ## Use the Shell to create a local move request
 
@@ -84,7 +80,7 @@ To verify that you have successfully completed your migration, do the following:
   - Verify that your move was successful in the EAC by clicking **Status For All Batches**.
 
   - From the Shell, run the following command to retrieve mailbox move information.
-    
+
     ```powershell
     Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
     ```
@@ -97,17 +93,14 @@ For more information, see [Get-MigrationUserStatistics](https://technet.microsof
 
 log in to the EAC and perform the following steps:
 
-1.  In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-2.  In the **New local mailbox move** wizard, select the users you want to move, click **OK** and then click **Next**.
+2. In the **New local mailbox move** wizard, select the users you want to move, click **OK** and then click **Next**.
 
-3.  On the **Move configuration** page, specify a name for the new batch. Select which options you want for the archive mailbox, and mailbox database location and click **New**.
-
+3. On the **Move configuration** page, specify a name for the new batch. Select which options you want for the archive mailbox, and mailbox database location and click **New**.
 
 > [!WARNING]
 > Make sure that you don't set the Bad Item Limit to over 50 items. If you do, the move may fail. If you want to set the Bad Item Limit over 50 items, you must use the Exchange Management Shell and set the -<EM>AcceptLargeDataLoss</EM> parameter to true.
-
-
 
 ## Use the Shell to create a batch move request
 
@@ -130,7 +123,7 @@ To verify that you have successfully completed your migration, do the following:
   - Verify that your move was successful in the EAC by clicking **Status For All Batches**.
 
   - From the Shell, run the following command to retrieve mailbox move information.
-    
+
     ```powershell
     Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
     ```
@@ -145,11 +138,11 @@ For an example of how to use the Shell to display a migration batch, see Example
 
 ## Use the EAC to move only a user's primary mailbox
 
-1.  In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-2.  In the **New local mailbox move** wizard, select the user whose primary mailbox you want to move, click **OK** and then click **next**.
+2. In the **New local mailbox move** wizard, select the user whose primary mailbox you want to move, click **OK** and then click **next**.
 
-3.  On the **Move configuration** page, specify a name for the new batch. Select **Move primary mailbox only**, select which options you want for the mailbox database location, and then click **New**.
+3. On the **Move configuration** page, specify a name for the new batch. Select **Move primary mailbox only**, select which options you want for the mailbox database location, and then click **New**.
 
 ## Use the Shell to move only a user's primary mailbox
 
@@ -168,7 +161,7 @@ To verify that you have successfully completed your migration, do the following:
   - In the EAC, click **Status For All Batches**.
 
   - From the Shell, run the following command to retrieve mailbox move information.
-    
+
     ```powershell
     Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
     ```
@@ -180,7 +173,7 @@ For more information, see [Get-MigrationUserStatistics](https://technet.microsof
 This example configures the migration endpoint, and then creates a cross-forest batch move from the source forest to the target forest using a .csv file.
 
 ```powershell
-New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
+New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith)
 
 $csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
 New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
@@ -201,7 +194,7 @@ For detailed syntax and parameter information, see [New-MigrationBatch](https://
 To verify that you have successfully completed your migration, do the following:
 
   - From the Shell, run the following command to retrieve mailbox move information.
-    
+
     ```powershell
     Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
     ```
@@ -212,11 +205,11 @@ For more information, see [Get-MigrationUserStatistics](https://technet.microsof
 
 ## Use the EAC to move only an archive mailbox
 
-1.  In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-2.  In the **New local mailbox move** wizard, select the user whose archive mailbox you want to move, click **OK** and then click **Next**.
+2. In the **New local mailbox move** wizard, select the user whose archive mailbox you want to move, click **OK** and then click **Next**.
 
-3.  On the **Move configuration** page, specify a name for the new batch. Select **Move archive mailbox only**, select which options you want for the mailbox database location, and then click **New**.
+3. On the **Move configuration** page, specify a name for the new batch. Select **Move archive mailbox only**, select which options you want for the mailbox database location, and then click **New**.
 
 ## Use the Shell to move only an archive mailbox
 
@@ -233,7 +226,7 @@ For detailed syntax and parameter information, see [New-MigrationBatch](https://
 To verify that you have successfully completed your migration, do the following:
 
   - From the Shell, run the following command to retrieve mailbox move information.
-    
+
     ```powershell
     Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
     ```
@@ -255,7 +248,7 @@ For detailed syntax and parameter information, see [New-MigrationBatch](https://
 To verify that you have successfully completed your migration, do the following:
 
   - From the Shell, run the following command to retrieve mailbox move information.
-    
+
     ```powershell
     Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
     ```
@@ -266,13 +259,13 @@ For more information, see [Get-MigrationUserStatistics](https://technet.microsof
 
 ## Use the EAC to move a user's primary mailbox and allow a large bad item limit
 
-1.  In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Recipients** \> **Migration**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-2.  In the **New local mailbox move** wizard, select the user whose primary mailbox you want to move, click **OK**, and then click **Next**.
+2. In the **New local mailbox move** wizard, select the user whose primary mailbox you want to move, click **OK**, and then click **Next**.
 
-3.  On the **Move configuration** page, specify a name for the new batch. Select **Move primary mailbox only**, and then select which options you want for the mailbox database location.
+3. On the **Move configuration** page, specify a name for the new batch. Select **Move primary mailbox only**, and then select which options you want for the mailbox database location.
 
-4.  Click **More Options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), enter the bad item limit, and then click **OK**.
+4. Click **More Options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon"), enter the bad item limit, and then click **OK**.
 
 ## Use the Shell to move a user's primary mailbox and allow a large bad item limit
 
@@ -289,10 +282,9 @@ For detailed syntax and parameter information, see [New-MigrationBatch](https://
 To verify that you have successfully completed your migration, do the following:
 
   - From the Shell, run the following command to retrieve mailbox move information.
-    
+
     ```powershell
     Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
     ```
 
 For more information, see [Get-MigrationUserStatistics](https://technet.microsoft.com/en-us/library/jj218695\(v=exchg.150\)).
-

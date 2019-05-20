@@ -16,16 +16,12 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 For Microsoft Exchange Server 2013, we've added several new features to Microsoft Outlook Web App and updated its design.
 
-
 > [!NOTE]
 > For more details about using Outlook Web App in your Exchange Server 2013 organization, see <A href="outlook-web-app-exchange-2013-help.md">Outlook Web App</A>.<BR>Outlook Web App users in your organization now have the ability to add public folders to, or remove them from, their Favorites. Previously, this could only be done in Outlook.
-
-
 
 ## Apps in Outlook Web App
 
@@ -148,18 +144,11 @@ In the table below, the following definitions apply:
 </tbody>
 </table>
 
-
-
 > [!NOTE]
 > In previous versions, Outlook Web App had a built-in spell checker. In Exchange Server 2013, Outlook Web App relies on the web browser for spell checking, which Internet Explorer prior to version 10 doesn't provide.
 
-
-
-
 > [!NOTE]
 > Office 365 users will be limited to the light version of Outlook Web App when using Internet Explorer 8. Users whose mailboxes are on a locally managed Exchange server will continue to see the standard version of Outlook Web App when using Internet Explorer 8, but may experience slow or otherwise unsatisfactory performance.
-
-
 
 ### Other Windows operating system and browser combination
 
@@ -193,12 +182,8 @@ In the table below, the following definitions apply:
 </tbody>
 </table>
 
-
-
 > [!NOTE]
 > Operating system and browser combinations not listed display the light version of Outlook Web App.
-
-
 
 ## Supported browsers for tablets and smartphones
 
@@ -245,7 +230,6 @@ You can use the web browser on a tablet or smartphone to sign in to Outlook Web 
 </tbody>
 </table>
 
-
 ## OWA for Devices app
 
 The OWA for Devices app lets users in an Exchange 2013 on-premises deployment with an Office 365 mailbox or in an Office 365 only organization use their iPhone or iPad access their mailbox. The OWA for iPhone and OWA for iPad apps simplify signing in to their mailbox and allows them access their mailbox even when they don't have an Internet connection. The OWA for iPhone or OWA for iPad apps are recommended instead of using your iPhone's or iPad's browser. For Exchange on-premises deployments, you need to enable push notifications for OWA for Devices to work, see [Configuring push notifications proxying for OWA for Devices](configuring-push-notifications-proxying-for-owa-for-devices-exchange-2013-help.md).
@@ -253,7 +237,6 @@ The OWA for Devices app lets users in an Exchange 2013 on-premises deployment wi
 You can download the OWA for iPhone and OWA for iPad apps from the Apple App Store by searching for OWA for iPhone or OWA for iPad or download them from [OWA for iPhone in the Apple Store](https://itunes.apple.com/app/owa-for-iphone/id659503543) or [OWA for iPad in the Apple Store](https://itunes.apple.com/app/owa-for-ipad/id659524331). The table below shows the versions of iPad and iPhone that are supported.
 
 To learn more about OWA for iPhone and OWA for iPad, see [OWA for iPhone and OWA for iPad](https://go.microsoft.com/fwlink/p/?linkid=528333).
-
 
 <table>
 <colgroup>
@@ -276,7 +259,6 @@ To learn more about OWA for iPhone and OWA for iPad, see [OWA for iPhone and OWA
 </tbody>
 </table>
 
-
 ## OWA for Android
 
 OWA for Android lets you interact with your Office 365 mailbox to get to your email, Calendar, and People from anywhere using your Android phone running Kit Kat 4.4 or higher. You can download the OWA for Android app at the [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.exchange.mowa%26referrer=utm_source=office365blog%26utm_medium=blog%26utm_content=launchdaypost%26utm_campaign=launchday)
@@ -297,11 +279,8 @@ With the OWA for Android app, you can:
 
 Learn more about the background behind OWA for Android on this week's Garage Series. See [The Garage Series Under the Hood: Evolving Exchange ActiveSync and OWA for Devices](https://blogs.office.com/2014/6/11/the-garage-series-under-the-hood-evolving-exchange-activesync-and-owa-for-devices)
 
-
 > [!NOTE]
 > This app won't work with Outlook.com (formerly Hotmail) mailboxes.
-
-
 
 ## Unavailable features
 
@@ -322,4 +301,3 @@ The following Outlook Web App features are currently unavailable in Exchange 201
   - **Access to legacy public folders**: The ability for users to access public folders located on servers running previous versions of Exchange isn't currently available in Exchange 2013.
 
   - **Show Recovery option**: The ability for users to work with recovery passwords for their mobile devices with Outlook Web App isn't currently available in Exchange 2013.
-

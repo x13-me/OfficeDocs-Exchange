@@ -16,23 +16,19 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:**: Exchange Online, Exchange Server 2013_
 
 *Management role scopes* enable you to define the specific scope of impact or influence of a management role when a management role assignment is created. When you apply a scope, the role assignee assigned to the role can only modify the objects contained within that scope. A role assignee can be a management role group, management role, management role assignment policy, user, or universal security group (USG). For more information about management roles, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 
-
 > [!NOTE]
 > This topic focuses on advanced RBAC functionality. If you want to manage basic Exchange 2013 permissions, such as using the Exchange admin center (EAC) to add and remove members to and from role groups, create and modify role groups, or create and modify role assignment policies, see <A href="permissions-exchange-2013-help.md">Permissions</A>.
-
-
 
 Every management role, whether it's a built-in role or a custom role, has management scopes. Management scopes can be either of the following:
 
   - **Regular**: A *regular scope* isn't exclusive. It determines where, in Active Directory, objects can be viewed or modified by users assigned the management role. In general, a management role indicates what you can create or modify, and a management role scope indicates where you can create or modify. Regular scopes can be either implicit or explicit scopes, both of which are discussed later in this topic.
 
   - **Exclusive**: An *exclusive scope* behaves almost the same as a regular scope. The key difference is that it enables you to deny users access to objects contained within the exclusive scope if those users aren't assigned a role associated with the exclusive scope. All exclusive scopes are explicit scopes, which are discussed later in this topic.
-    
+
     For more information about exclusive scopes, see [Understanding exclusive scopes](understanding-exclusive-scopes-exchange-2013-help.md).
 
 Scopes can be inherited from the management role, specified as a predefined relative scope on a management role assignment, or created using custom filters and added to a management role assignment. Scopes inherited from management roles are called *implicit scopes* while predefined and custom scopes are called *explicit scopes*. The following sections describe each type of scope:
@@ -44,9 +40,9 @@ Scopes can be inherited from the management role, specified as a predefined rela
   - Predefined Relative Scopes
 
   - Custom Scopes
-    
+
       - Recipient Filter Scopes
-    
+
       - Configuration Scopes
 
 Each role can have the following types of scopes:
@@ -118,7 +114,6 @@ The following tables list all of the implicit scopes that can be defined on mana
 </tbody>
 </table>
 
-
 If a role is assigned to a role assignee and no predefined or custom scopes are specified, the implicit scopes defined on the role are used to control the recipient or organization objects the user can view or modify.
 
 The implicit write scope of a role is always equal to, or less than, the implicit read scope. This means that a role can never modify objects that can't be seen by the scope.
@@ -128,7 +123,6 @@ You can't change the implicit scopes defined on management roles. You can, howev
 Expand the following table to see a list of all the built-in management roles and their implicit scopes. For more information about each built-in role, see [Built-in management roles](built-in-management-roles-exchange-2013-help.md).
 
 ## Built-in management role implicit scopes
-
 
 <table>
 <colgroup>
@@ -718,7 +712,6 @@ Expand the following table to see a list of all the built-in management roles an
 </tbody>
 </table>
 
-
 ## Explicit scopes
 
 Explicit scopes are scopes that you set yourself to control which objects a management role can modify. Although implicit scopes are defined on a management role, explicit scopes are defined on a management role assignment. This enables the implicit scopes to be applied consistently across all management roles unless you choose to use an overriding explicit scope. For more information about management role assignments, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
@@ -772,7 +765,6 @@ Exchange 2013 provides several predefined relative write scopes that you can use
 </tbody>
 </table>
 
-
 Predefined relative scopes are applied when you create a new management role assignment. During the creation of the role assignment, using the **New-ManagementRoleAssignment** cmdlet, you can specify a predefined relative scope using the *RecipientRelativeWriteScope* parameter. When the new role assignment is created, the new predefined role overrides the implicit write scope of the management role. You can't specify a custom recipient scope when you create a role assignment with a predefined relative scope. You can, however, specify a custom configuration scope if needed.
 
 For more information about how to add a management role assignment with a predefined relative scope, see [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md).
@@ -810,15 +802,15 @@ For more information about filter syntax and for a full list of filterable recip
 The following are the two types of configuration scopes offered in Exchange 2013:
 
   - **Server scopes**: There are two types of server scopes, server filter scopes and server list scopes. Server configuration, including Receive connectors, transport queues, server certificates, virtual directories, and so on, can be managed if a server object is included in a server scope.
-    
+
       - **Server filter scopes**: Server filter scopes enable you to control which server objects role assignees can manage by evaluating one or more properties on a server object against a value that you specify in a filter statement. To create a server filter scope, use the *ServerRestrictionFilter* parameter on the **New-ManagementScope** cmdlet.
-    
+
       - **Server list scopes**: Server list scopes enable you to control which server objects role assignees can manage by defining a list of servers that a role assignee can access. To create a server list scope, use the *ServerList* parameter on the **New-ManagementScope** cmdlet.
 
   - **Database scopes**: There are two types of database scopes, database filter scopes and database list scopes. Database configuration that can be managed if a database object is included in a database scope include database quota limits, database maintenance, public folder replication, whether a database is mounted, and so on. In addition to database configuration, database scopes can also be used to control which databases recipients can be created in. If you have pre-Exchange 2010 SP1 servers in your organization, see the Database scopes and previous versions of Exchange section later in this topic.
-    
+
       - **Database filter scopes**: Database filter scopes enable you to control which database objects role assignees can manage by evaluating one or more properties on a database object against a value that you specify in a filter statement. To create a database filter scope, use the *DatabaseRestrictionFilter* parameter on the **New-ManagementScope** cmdlet.
-    
+
       - **Database list scopes**: Database list scopes enable you to control which database objects role assignees can manage by defining a list of databases that a role assignee can access. To create a database list scope, use the *DatabaseList* parameter on the **New-ManagementScope** cmdlet.
 
 For more information about filter syntax and for a full list of filterable server and database properties, see [Understanding management role scope filters](understanding-management-role-scope-filters-exchange-2013-help.md).
@@ -829,11 +821,8 @@ When you add a server or database configuration scope to a role assignment, spec
 
 In addition to controlling which databases role assignees can manage, database scopes also enable you to control which databases role assignees can create mailboxes on. This is separate from controlling which recipients a role assignee can manage. If a role assignee has permissions to create a new mailbox, mail-enable an existing user, or move mailboxes, you can further refine their permissions by using database scopes to control the database on which the mailbox is created, or which database a mailbox is moved to. Controlling which recipients a role assignee can manage is done using a recipient scope specified in the *CustomRecipientWriteScope* parameter on the **New-ManagementRoleAssignment** or **Set-ManagementRoleAssignment** cmdlet. Controlling which databases a mailbox can be created on or moved to is controlled using a database scope specified in the *CustomConfigurationWriteScope* parameter on the same cmdlets.
 
-
 > [!NOTE]
 > Automatic mailbox distribution can be controlled using database scopes.
-
-
 
 Exchange features may require either server scopes, database scopes, or both, to be managed. If a feature requires both server and database scopes to be managed, two role assignments must be created and assigned to the role assignee that should have access to manage the feature. One role assignment should be associated with the server scope, and one role assignment should be associated with the database scope.
 
@@ -961,7 +950,6 @@ Some cmdlets may use configuration scopes that aren't immediately obvious. The f
 </tbody>
 </table>
 
-
 ## Database scopes and previous versions of Exchange
 
 Database scopes were first introduced in Microsoft Exchange 2010 Service Pack 1 (SP1) and continue to be supported in Exchange 2013. Versions of Exchange prior to Exchange 2010 SP1 support only recipient scopes and server configuration scopes. When you create a new database scope on an Exchange 2010 SP1 or later server, you'll receive the following warning:
@@ -975,4 +963,3 @@ When you create a database scope, it's only applied to users who connect to serv
 A database scope can include any database in your Exchange organization. This includes Exchange Server 2007, Exchange 2010, and Exchange 2013 servers. This enables you to control which databases, regardless of Exchange version, that users can manage. As with other database scopes, role assignments associated with database scopes that contain Exchange 2007 and Exchange 2010 databases are only applied to users when they connect to an Exchange 2010 SP1 or later server.
 
 Users who connect to a pre-Exchange 2010 SP1 server can view and modify role assignments associated with database scopes. This includes changing the configuration scope on an existing role assignment to a server scope if it's currently associated with a database scope. However, if the configuration scope on a role assignment is changed to a server scope and a user later wants to change it back to a database scope, or if the user wants to change the configuration scope to another database scope, the user must make the change while connected to an Exchange 2010 SP1 or later server. Users can only specify server scopes when they change the configuration scope on a role assignment if they're connected to a pre-Exchange 2010 SP1 server.
-

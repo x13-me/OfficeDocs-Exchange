@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can deploy Microsoft Exchange Server 2013 in a virtualized environment. This topic provides an overview of the scenarios that are supported for deploying Exchange 2013 on hardware virtualization software.
 
 **Contents**
@@ -46,21 +45,18 @@ The following terms are used in this discussion of Exchange virtualization:
 Microsoft supports Exchange 2013 in production on hardware virtualization software only when all the following conditions are true:
 
   - The hardware virtualization software is running one of the following:
-    
+
       - Any version of Windows Server with Hyper-V technology or Microsoft Hyper-V Server
-    
+
       - Any third-party hypervisor that has been validated under the [Windows Server Virtualization Validation Program](https://go.microsoft.com/fwlink/p/?linkid=125375).
-    
 
     > [!NOTE]
     > Deployment of Exchange 2013 on Infrastructure-as-a-Service (IaaS) providers is supported if all supportability requirements are met. In the case of providers who are provisioning virtual machines, these requirements include ensuring that the hypervisor being used for Exchange virtual machines is fully supported, and that the infrastructure to be utilized by Exchange meets the performance requirements that were determined during the sizing process. Deployment on Microsoft Azure virtual machines is supported if all storage volumes used for Exchange databases and database transaction logs (including transport databases) are configured for Azure Premium Storage.
 
-
-
   - The Exchange guest virtual machine has the following conditions:
-    
+
       - It's running Exchange 2013.
-    
+
       - It's deployed on Windows Server 2008 R2 SP1 (or later versions), Windows Server 2012, or on Windows Server 2012 R2.
 
 For deployments of Exchange 2013:
@@ -78,7 +74,7 @@ For deployments of Exchange 2013:
   - When calculating the total number of virtual processors required by the host machine, you must also account for both I/O and operating system requirements. In most cases, the equivalent number of virtual processors required in the host operating system for a system hosting Exchange virtual machines is 2. This value should be used as a baseline for the host operating system virtual processor when calculating the overall ratio of physical cores to virtual processors. If performance monitoring of the host operating system indicates you're consuming more processor utilization than the equivalent of 2 processors, you should reduce the count of virtual processors assigned to guest virtual machines accordingly and verify that the overall virtual processor-to-physical core ratio is no greater than 2:1.
 
   - The operating system for an Exchange guest machine must use a disk that has a size equal to at least 15 gigabytes (GB) plus the size of the virtual memory that's allocated to the guest machine. This requirement is necessary to account for the operating system and paging file disk requirements. For example, if the guest machine is allocated 16 GB of memory, the minimum disk space needed for the guest operating system disk is 31 GB.
-    
+
     In addition, it's possible that guest virtual machines may be prevented from directly communicating with Fibre Channel or SCSI host bus adapters (HBAs) installed in the host machine. In this event, you must configure the adapters in the host machine's operating system and present the logical unit numbers (LUNs) to guest virtual machines as either a virtual disk or a pass-through disk.
 
   - The only supported way to send emails to external domains from Azure compute resources is via an SMTP relay (otherwise known as an SMTP smart host). The Azure compute resource sends the email to the SMTP relay and then the SMTP relay provider delivers the email to the external domain. Microsoft Exchange Online Protection is one provider of an SMTP relay, but there are a number of third party providers as well. For more information, see the Microsoft Azure Support Team Blog post [Sending E-mail from Azure Compute Resource to External Domains](https://go.microsoft.com/fwlink/p/?linkid=799723).
@@ -124,16 +120,15 @@ Return to top
 The following are answers to some frequently asked questions about host-based failover clustering and migration technology with Exchange 2013 DAGs:
 
   - **Does Microsoft support third-party migration technology?**
-    
+
     Microsoft can't make support statements for the integration of third party hypervisor products using these technologies with Exchange, because these technologies aren't part of the Server Virtualization Validation Program (SVVP). The SVVP covers the other aspects of Microsoft support for third-party hypervisors. You need to ensure that your hypervisor vendor supports the combination of their migration and clustering technology with Exchange. If your hypervisor vendor supports their migration technology with Exchange, Microsoft supports Exchange with their migration technology.
 
   - **How does Microsoft define host-based failover clustering?**
-    
+
     Host-based failover clustering refers to any technology that provides the automatic ability to react to host-level failures and start affected virtual machines on alternate servers. Use of this technology is supported given that, in a failure scenario, the virtual machine is coming up from a cold boot on the alternate host. This technology helps to make sure that the virtual machine never comes up from a saved state that's persisted on disk because it will be stale relative to the rest of the DAG members.
 
   - **What does Microsoft mean by migration support?**
-    
+
     Migration technology refers to any technology that allows a planned move of a virtual machine from one host machine to another host machine. This move could also be an automated move that occurs as part of resource load balancing, but it isn't related to a failure in the system. Migrations are supported as long as the virtual machines never come up from a saved state that's persisted on disk. This means that technology that moves a virtual machine by transporting the state and virtual machine memory over the network with no perceived downtime is supported for use with Exchange. A third-party hypervisor vendor must provide support for the migration technology, while Microsoft provides support for Exchange when used in this configuration.
 
 Return to top
-

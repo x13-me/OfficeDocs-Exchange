@@ -18,14 +18,13 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Messaging records management (MRM) generates events that you can view in Event Viewer. This allows you to troubleshoot and verify the performance of the Managed Folder Assistant. Event Viewer tracks the following kinds of events in the following order, based on importance:
 
-1.  Error events
+1. Error events
 
-2.  Warning events
+2. Warning events
 
-3.  Informational events
+3. Informational events
 
 ## MRM Errors and Events
 
@@ -114,7 +113,6 @@ The following tables provide lists of events that you can use to troubleshoot MR
 </tbody>
 </table>
 
-
 ### MRM events in the Assistants category
 
 <table>
@@ -165,7 +163,6 @@ The following tables provide lists of events that you can use to troubleshoot MR
 
 > [!NOTE]
 > The Managed Folder Assistant will resume where it left off the next time it runs.
-
 
 </td>
 </tr>
@@ -262,4 +259,3 @@ The following tables provide lists of events that you can use to troubleshoot MR
 </tr>
 </tbody>
 </table>
-

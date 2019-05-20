@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Azure: Help Identify My issue with Automatic Checks - DNS Records
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 One of the most common configuration setup issues is incorrectly configuring DNS records. You can use the automatic checks listed below to validate your configuration and help you update your environment.
 
@@ -32,7 +29,6 @@ The Azure Active Directory Sign-in Assistant comes in two versions: [32 bit](htt
 The Azure Active Directory Module for Windows PowerShell comes in two versions: [32 bit](https://go.microsoft.com/fwlink/?linkid=286258) and [64 bit](https://go.microsoft.com/fwlink/?linkid=286259).
 
 ## DNS Records Checks
-
 
 <table>
 <colgroup>
@@ -93,4 +89,3 @@ The Azure Active Directory Module for Windows PowerShell comes in two versions: 
 </tr>
 </tbody>
 </table>
-

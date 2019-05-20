@@ -18,10 +18,8 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 [Disable or enable Exchange Search](disable-or-enable-exchange-search-exchange-2013-help.md)
 
 [Diagnose Exchange Search issues](diagnose-exchange-search-issues-exchange-2013-help.md)
 
 [Reseed the search catalog](reseed-the-search-catalog-exchange-2013-help.md)
-

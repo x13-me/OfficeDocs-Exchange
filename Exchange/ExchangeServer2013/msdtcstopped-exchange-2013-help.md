@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:**: Exchange Server_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -37,15 +36,14 @@ To resolve this issue, verify that the Distributed Transaction Coordinator servi
 
 **To set the status of the Distributed Transaction Coordinator service to 'Started'**
 
-1.  Right-click **My Computer**, and then click **Manage**.
+1. Right-click **My Computer**, and then click **Manage**.
 
-2.  Expand the **Services and Applications** node, and then click the **Services** node.
+2. Expand the **Services and Applications** node, and then click the **Services** node.
 
-3.  In the right pane, locate the **Distributed Transaction Coordinator**.
+3. In the right pane, locate the **Distributed Transaction Coordinator**.
 
-4.  Right-click **Distributed Transaction Coordinator**, and then click **Properties**.
+4. Right-click **Distributed Transaction Coordinator**, and then click **Properties**.
 
-5.  Set the **Startup Type** to **Automatic** and the **Service status** to **Started**.
+5. Set the **Startup Type** to **Automatic** and the **Service status** to **Started**.
 
-6.  Click **Apply**, and then click **OK**.
-
+6. Click **Apply**, and then click **OK**.

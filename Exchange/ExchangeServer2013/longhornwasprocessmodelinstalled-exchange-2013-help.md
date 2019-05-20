@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server_
 
-
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
@@ -33,15 +32,14 @@ To resolve this issue, install the Windows Process Activation Service - Process 
 
 **Install the Windows Process Activation Service - Process Model feature by using the Server Manager tool**
 
-1.  Click **Start**, click **Administrative Tools** and then **Server Manager**.
+1. Click **Start**, click **Administrative Tools** and then **Server Manager**.
 
-2.  In the left navigation pane, right-click **Features**, and then click **Add Features**.
+2. In the left navigation pane, right-click **Features**, and then click **Add Features**.
 
-3.  On the **Select Features** pane, scroll down to **Windows Process Activation Service**.
+3. On the **Select Features** pane, scroll down to **Windows Process Activation Service**.
 
-4.  Select the check boxes for **Process Model**.
+4. Select the check boxes for **Process Model**.
 
-5.  Click **Next** from the **Select Features** pane, and then click **Install** at the **Confirm Installations Selections** pane.
+5. Click **Next** from the **Select Features** pane, and then click **Install** at the **Confirm Installations Selections** pane.
 
-6.  Click **Close** to leave the Add Role Services wizard.
-
+6. Click **Close** to leave the Add Role Services wizard.

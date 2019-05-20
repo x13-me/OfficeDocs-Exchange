@@ -16,16 +16,12 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 Delivery Reports is a message tracking tool in the Exchange Administration Center (EAC) that you can use to search for delivery status on email messages sent to or from users in your organization's address book, with a certain subject. You can track delivery information about messages sent by or received from any specific mailbox in your organization. The content of the message body isn't returned in a delivery report, but the subject line is displayed in the results. You can track messages for up to 14 days after they were sent or received.
 
-
 > [!NOTE]
 > Delivery Reports tracks messages sent by people using the Microsoft Outlook or Outlook Web App email clients. It doesn't track messages sent from POP or IMAP email clients, such as Windows Mail, Outlook Express, or Mozilla Thunderbird.
-
-
 
 ## What do you need to know before you begin?
 
@@ -45,21 +41,21 @@ Use the EAC to review a delivery report
 
 ## Use the EAC to track messages
 
-1.  In the EAC, navigate to **Mail Flow** \> **Delivery Reports**.
+1. In the EAC, navigate to **Mail Flow** \> **Delivery Reports**.
 
-2.  Enter the following information:
-    
+2. Enter the following information:
+
       - **&#42; Mailbox to search:** Click **Browse** to select the mailbox from the address book and then click **OK**. Selecting the mailbox to search is required.
-    
+
       - Select one of the following:
-        
+
           - **Search for messages sent to** Use this option to search for messages sent to specific users. Click **Select users** and then pick users from the address book by selecting a user from the list and clicking **Add**. You can select more than one user here. When you're finished selecting users, click **OK** to return to the **Delivery Reports** page. If you select this option, you can also leave the field blank to find messages sent to anyone.
-        
+
           - **Search for messages received from** Use this option to search for messages received from a specific user. Again, just select the user from the address book and click **OK** to return to the **Delivery Reports** page. If you select this option, you have to specify a sender.
-    
+
       - **Search for these words in the subject line** Enter subject line information here, or leave it blank to expand your search.
 
-3.  When you are finished, click **Search**. If you want to start over, click **Clear**.
+3. When you are finished, click **Search**. If you want to start over, click **Clear**.
 
 ## Use the EAC to review a delivery report
 
@@ -114,4 +110,3 @@ When you're done reviewing the report, click **Close**. Delivery reports aren't 
 ## How do you know this worked?
 
 If your search was successful, messages that fit the search criteria are listed in the **Search results** pane. To view the delivery information for a specific message, select it and then click **Details**. If no messages are displayed in the **Search results** pane, change the search criteria and then re-run the search.
-

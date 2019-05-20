@@ -18,14 +18,10 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 In some situations you may want to route email through a third-party smart host, such as in an instance where you have a network appliance that you want to perform policy checks on outbound messages.
-
 
 > [!NOTE]
 > The third-party smart host must use SMTP for transport. If it does not, you should use a Foreign connector or Delivery Agent connector.
-
-
 
 Interested in scenarios where this procedure is used? See the following topics:
 
@@ -41,33 +37,27 @@ Interested in scenarios where this procedure is used? See the following topics:
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
 
-
-
 ## Use the EAC to create a Send connector to route outbound email through a smart host
 
-1.  In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-2.  In the **New send connector** wizard, specify a name for the send connector and then select **Custom** for the **Type**. You typically choose this selection when you want to route messages to computers not running Microsoft Exchange Server 2013. Click **Next**.
+2. In the **New send connector** wizard, specify a name for the send connector and then select **Custom** for the **Type**. You typically choose this selection when you want to route messages to computers not running Microsoft Exchange Server 2013. Click **Next**.
 
-3.  Choose **Route mail through smart hosts**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add smart host** window, specify the IP address, such as 192.168.100.1, or the fully qualified domain name (FQDN), such as contoso.com. Click **Save**.
-    
+3. Choose **Route mail through smart hosts**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add smart host** window, specify the IP address, such as 192.168.100.1, or the fully qualified domain name (FQDN), such as contoso.com. Click **Save**.
+
     For **Smart host authentication**, choose the type of authentication required by the smart host. If you choose **Basic authentication**, you must provide a user name and password.
-    
 
     > [!NOTE]
     > If you choose Basic authentication, we recommend that you use an encrypted connection because the user name and password are sent in clear text.
 
+4. Under **Address space**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter \* to specify that this send connector applies to messages sent to any domain. Click **Save**.
 
+5. For **Source server**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Select a server** window, choose a server and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). Click **OK**.
 
-4.  Under **Address space**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter \* to specify that this send connector applies to messages sent to any domain. Click **Save**.
-
-5.  For **Source server**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Select a server** window, choose a server and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). Click **OK**.
-
-6.  Click **Finish**.
+6. Click **Finish**.
 
 Once you have created the send connector, it appears in the Send connector list.
 
@@ -80,4 +70,3 @@ To verify that you have successfully created a Send connector to route outbound 
 [Create a Send connector for email sent to the Internet](create-a-send-connector-for-email-sent-to-the-internet-exchange-2013-help.md)
 
 [Send connectors](send-connectors-exchange-2013-help.md)
-

@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 Check out all of the newest capabilities in Exchange 2013.
 
@@ -65,11 +64,8 @@ Batch mailbox moves
 
 Exchange workload management
 
-
 > [!NOTE]
 > For information about features in earlier versions of Exchange that have been removed, discontinued, or replaced in Exchange Server 2013, see <A href="what-s-discontinued-in-exchange-2013-exchange-2013-help.md">What's discontinued in Exchange 2013</A>. Also, you may be interested in <A href="release-notes-for-exchange-2013-exchange-2013-help.md">Release notes for Exchange 2013</A>.
-
-
 
 ## Exchange admin center
 
@@ -90,17 +86,17 @@ Exchange 2013 provides a single unified management console that allows for ease 
   - **Unified Messaging Tools**: In Exchange 2010, you could use the Call Statistics and User Call Logs tools to help provide UM statistics and information about specific calls for a UM-enabled user. In Exchange 2013, the Call Statistics and User Call Logs tools are now in the EAC and you don't need a separate tool to manage them.
 
   - **Groups enhancements**: The Exchange Admin Center (EAC) can now display up to 10,000 recipients in the **Groups** **Select Members** window. By default, up to 500 recipients are returned when you open the **Select Members** window, however, you can choose to list up to 10,000 recipients by clicking **Get All Results** beneath the recipient list. We now support browsing more than 500 recipients by using the scroll bar and we've also added enhanced search features to enable you to filter recipients that are displayed in the recipient list. You can filter by:
-    
+
       - city
-    
+
       - company
-    
+
       - country/region
-    
+
       - department
-    
+
       - office
-    
+
       - title
 
 For more information, see [Exchange admin center in Exchange 2013](exchange-admin-center-in-exchange-2013-exchange-2013-help.md).
@@ -158,7 +154,7 @@ For more information, see [Digital certificates and SSL](digital-certificates-an
 Setup has been completely rewritten so that installing Exchange 2013 and making sure you've got the latest product rollups and security fixes is easier than ever. Here are some of the improvements we've made:
 
   - **Always up-to-date Setup**: When you run the Setup wizard, you'll be given the option to download and use the latest product rollups, security fixes, and language packs. This option doesn't just update the files that'll be used to run Exchange; Setup itself can be updated. This design enables us to continue to improve Setup post-release and include and update readiness checks as requirements are updated or changed.
-    
+
     If you're using unattended Setup mode, we can't automatically download updates. However, you can still take advantage of running the latest version of Setup by downloading the latest updates beforehand, and use the `/UpdatesDir: <path>` parameter to allow Setup to update itself before the installation process begins.
 
   - **Improved readiness checks**: Readiness checks make sure that your computer and your organization are ready for Exchange 2013. After you've provided the necessary information about your installation to Setup, the readiness checks are run before installation begins. The new readiness check engine now runs through all checks before reporting back to you on what actions need to be performed before Setup can continue, and it does so faster than ever. As with previous versions of Exchange, you can tell Setup to install the Windows features required by Setup so you don't have to install them manually.
@@ -186,43 +182,40 @@ To learn more about these features see:
 Exchange 2013 includes the following improvements to In-Place Archiving, retention, and eDiscovery to help your organization meet its compliance needs:
 
   - **In-Place Hold**: In-Place Hold is a new unified hold model that allows you to meet legal hold requirements in the following scenarios:
-    
+
       - Preserve the results of the query (query-based hold), which allows for scoped immutability across mailboxes.
-    
+
       - Place a time-based hold to meet retention requirements (for example, retain all items in a mailbox for seven years, a scenario that required the use of Single Item Recovery/Deleted Item Retention in Exchange 2010).
-    
+
       - Place a mailbox on indefinite hold (similar to litigation hold in Exchange 2010).
-    
+
       - Place a user on multiple holds to meet different case requirements.
 
   - **In-Place eDiscovery**: In-Place eDiscovery allows authorized users to search mailbox data across all mailboxes and In-Place Archives in an Exchange 2013 organization and copy messages to a discovery mailbox for review. In Exchange 2013, In-Place eDiscovery has been enhanced to allow discovery managers to perform more efficient searches and hold. These enhancements include:
-    
+
       - **Federated search** allows you to search and preserve data across multiple data repositories. With Exchange 2013, you can perform in-place eDiscovery searches across Exchange, SharePoint 2013, and Lync 2013. You can use the eDiscovery Center in SharePoint 2013 to perform In-Place eDiscovery search and hold.
-    
+
       - **Query-based In-Place Hold** allows you to save the results of the query, which allows for scoped immutability across mailboxes.
-    
+
       - **Export search results** Discovery Managers can export mailbox content to a .pst file from the SharePoint 2013 eDiscovery Console. Mailbox export request cmdlets are no longer required to export a mailbox to a .pst file.
-    
+
       - **Keyword statistics**: Search statistics are offered on a per search term basis. This enables a Discovery Manager to quickly make intelligent decisions about how to further refine the search query to provide better results. eDiscovery search results are sorted by relevance.
-    
+
       - **KQL syntax**: Discovery Managers can use Keyword Query Language (KQL) syntax in search queries. KQL is similar to the Advanced Query Syntax (AQS), which was used for discovery searches in Exchange 2010.
-    
+
       - **In-Place eDiscovery and Hold wizard**: Discovery Managers can use the new In-Place eDiscovery and Hold wizard to perform eDiscovery and hold operations.
-        
 
         > [!NOTE]
         > If SharePoint 2013 isn't available, a subset of the eDiscovery functionality is available in the Exchange admin center.
-
-
 
   - **Search across primary and archive mailboxes in Outlook Web App**: Users can search across their primary and archive mailboxes in Outlook Web App. Two separate searches are no longer necessary.
 
   - **Archive Lync content**: Exchange 2013 supports archiving of Lync 2013 content in a user's mailbox. You can place Lync content on hold using In-Place Hold and use In-Place eDiscovery to search Lync content archived in Exchange.
 
   - **Retention policies**: Retention policies help your organization reduce risks associated with email and other communications and also meet email retention requirements. Retention policies include the following enhancements:
-    
+
       - **Support for Calendar and Tasks retention tags**: You can create retention policy tags for the Calendar and Tasks default folders to expire items in these folders. Items in these folders are also moved to the user's archive based on the archive policy settings applied to the mailbox.
-    
+
       - **Improved ability to retain items for a specified period**: You can use retention policy and a time-based In-Place Hold to enforce retention of items for a set period.
 
 For more information, see [Messaging policy and compliance](messaging-policy-and-compliance-exchange-2013-help.md).
@@ -260,7 +253,7 @@ How messages flow through an organization and what happens to them has changed s
   - **Routing**: Mail routing in Exchange 2013 recognizes DAG boundaries as well as Active Directory site boundaries. Also, mail routing has been improved to queue messages more directly for internal recipients. For more information, see [Mail routing](mail-routing-exchange-2013-help.md).
 
   - **Connectors**: The default maximum message size for a Send connector or a Receive connector, as specified by the *MaxMessageSize* parameter, has been increased from 10MB to 25MB. For more information about how to set parameters on a connector, see [Set-SendConnector](https://technet.microsoft.com/en-us/library/aa998294\(v=exchg.150\)) and [Set-ReceiveConnector](https://technet.microsoft.com/en-us/library/bb125140\(v=exchg.150\)).
-    
+
     You can set a Send connector in the Transport service of a Mailbox server to route outbound mail through a Front End transport server in the local Active Directory site, by means of the *FrontEndProxyEnabled* parameter of the **Set-SendConnector** cmdlet, thus consolidating how email is routed from the Transport service.
 
   - **Edge Transport**: You can optionally install an Edge Transport server in your perimeter network to reduce your attack surface and provide message protection and security. For more information, see [Edge Transport servers](edge-transport-servers-exchange-2013-help.md).
@@ -270,11 +263,11 @@ How messages flow through an organization and what happens to them has changed s
 This section describes the enhancements for managing recipients in Exchange 2013:
 
   - **Group naming policy**: Administrators can now use the EAC to create a *group naming policy*, which lets you standardize and manage the names of distribution groups created by users in your organization. You can require a specific prefix and suffix be added to the name for a distribution group when it's created, and you can block specific words from being used. This capability helps you minimize the use of inappropriate words in group names.
-    
+
     For more information, see [Create a distribution group naming policy](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
   - **Message tracking**: Administrators can also use the EAC to track delivery information for email messages sent to or received by any user in your organization. You just select a mailbox, and then search for messages sent to or received by a different user. You can narrow the search by searching for specific words in the subject line. The resulting delivery report tracks a message through the delivery process and specifies if the message was successfully delivered, pending delivery, or if it wasn't delivered.
-    
+
     For more information, see [Track messages with delivery reports](track-messages-with-delivery-reports-exchange-2013-help.md).
 
 ## Sharing and collaboration
@@ -282,19 +275,19 @@ This section describes the enhancements for managing recipients in Exchange 2013
 This section describes the sharing and collaboration enhancements in Exchange 2013.
 
   - **Public folders**: Public folders now take advantage of the existing high availability and storage technologies of the mailbox store. The public folder architecture uses specially designed mailboxes to store both the hierarchy and the public folder content. This new design also means that there is no longer a public folder database. Public folder replication now uses the continuous replication model. High availability for the hierarchy and content mailboxes is provided by the database availability group (DAG). With this design, we're moving away from a multi-master replication model to a single-master replication model.
-    
+
     Outlook Web App users in your organization now have the ability to add public folders to, or remove them from, their Favorites. Previously, this could only be done in Outlook.
-    
+
     For more information, see [Public folders](public-folders-exchange-2013-help.md).
 
   - **Site mailboxes**: Email and documents are traditionally kept in two unique and separate data repositories. Most teams would typically collaborate using both mediums. The challenge is that email and documents are accessed using different clients, which usually results in a reduction in user productivity and a degraded user experience.
-    
+
     The *site mailbox* is a new concept in Exchange 2013 that attempts to solve these problems. Site mailboxes improve collaboration and user productivity by allowing access to both documents in a SharePoint site and email messages in Outlook 2013, using the same client interface. A site mailbox is functionally comprised of SharePoint site membership (owners and members), shared storage through an Exchange mailbox for email messages and a SharePoint site for documents, and a management interface that addresses provisioning and lifecycle needs.
-    
+
     For more information, see [Site mailboxes](site-mailboxes-exchange-2013-help.md).
 
   - **Shared mailboxes**: In previous versions of Exchange, creating a shared mailbox was a multi-step process in which you had to use the Exchange Management Shell to set the delegate permissions. In Exchange 2013, you can now create a shared mailbox in one step via the Exchange admin center. In the EAC, go to **Recipients** \> **Shared Mailboxes** to create a shared mailbox. Shared mailbox is now a recipient type, so you can easily search for your shared mailboxes in either the user interface or by using the Shell.
-    
+
     For more information, see [Shared mailboxes](shared-mailboxes-exchange-2013-help.md).
 
 ## Integration with SharePoint and Lync
@@ -374,4 +367,3 @@ There are two ways to manage Exchange workloads in Exchange 2013:
   - **Control how resources are consumed by individual users**: Controlling how resources are consumed by individual users was possible in Exchange 2010 (where it's called user throttling), and this capability has been expanded for Exchange 2013.
 
 For more information about these features, see [Exchange workload management](exchange-workload-management-exchange-2013-help.md).
-

@@ -18,14 +18,10 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You may have a scenario where you want to send messages to and receive messages from a fax-gateway server that doesn't use SMTP as its primary transport mechanism. Follow the steps outlined in this procedure to create a Foreign connector that delivers messages to and receives messages from the foreign system.
-
 
 > [!TIP]
 > In most cases where you must deliver outbound messages to a non-SMTP system, we recommend Delivery Agent connectors, because they allow for queue management of messages, messages do not have to be written to the file system, and other benefits. The <A href="delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md">Delivery agents and Delivery Agent connectors</A> topic provides more details.
-
-
 
 Interested in scenarios where this procedure is used? See the following topics:
 
@@ -39,22 +35,19 @@ Interested in scenarios where this procedure is used? See the following topics:
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## How do you do this?
 
 ## Step 1: Use the Shell to create a Foreign connector that sends messages to a non-SMTP gateway server
 
-1.  Run the following command to create the Foreign connector:
-    
+1. Run the following command to create the Foreign connector:
+
     ```powershell
         New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
     ```
-    
+
     In this example, Hub01 and Hub02 are source servers in your organization that you designate to deliver messages to the foreign system. Using more than one source server provides fault tolerance.
 
 Once you have created the Foreign Connector, you can configure the Drop Pickup, and Replay directories, depending on the requirements for your organization.
@@ -75,8 +68,8 @@ The Drop directory for a Mailbox server running the Transport service is used to
 
 You create a directory to use as the Drop directory on your local file system. You can also use a directory on a network file share.
 
-1.  Run the following script to specify the Drop directory for your Foreign connector (change the value for the *DropDirectory* parameter to a path appropriate for your environment):
-    
+1. Run the following script to specify the Drop directory for your Foreign connector (change the value for the *DropDirectory* parameter to a path appropriate for your environment):
+
     ```powershell
     Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
     ```
@@ -124,4 +117,3 @@ Get-TransportService | Format-List ReplayDirectoryPath
 [Foreign connectors](foreign-connectors-exchange-2013-help.md)
 
 [Delivery agents and Delivery Agent connectors](delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md)
-

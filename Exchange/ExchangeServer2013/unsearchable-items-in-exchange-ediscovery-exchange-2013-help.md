@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
-
+_**Applies to:**: Exchange Online, Exchange Server 2013_
 
 In In-Place eDiscovery for Exchange Server 2013 and Exchange Online, unsearchable items are mailbox items that can't be indexed by Exchange Search or that have been only partially indexed. An unsearchable item typically contains a file, which can't be indexed, attached to an email message. Here are a few reasons why files can't be indexed for search and are returned as an unsearchable item when attached to an email message:
 
@@ -84,6 +83,5 @@ For more information about including unsearchable items in search results, see:
   - As previously stated, because message properties and metadata are indexed, a keyword search may return results if that keyword appears in the indexed metadata. However, that same keyword search may not return the same item if the keyword only appears in the content of an attached item with an unsupported file type. In this case, the item would be returned only as an unsearchable item.
 
   - In eDiscovery in Exchange 2010, there is the concept of a *safelist*. These are file types that contain content that isn't searchable and so aren't indexed by Exchange Search; for example, Windows Media Video (.wmv) and Waveform Audio (.wav) files. Because these types of files don't contain searchable content, they aren't considered unsearchable items in Exchange 2010. Mailbox items containing these file types weren't returned as unsearchable items and weren't copied to a discovery mailbox.
-    
-    There is no longer a safelist in Exchange 2013 or Exchange Online. File types are either enabled or disabled for indexing or they are unsupported. Disabled and unsupported file types are considered unsearchable items.
 
+    There is no longer a safelist in Exchange 2013 or Exchange Online. File types are either enabled or disabled for indexing or they are unsupported. Disabled and unsupported file types are considered unsearchable items.

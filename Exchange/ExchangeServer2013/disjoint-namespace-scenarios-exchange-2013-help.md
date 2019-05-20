@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 This topic provides information about the concept of disjoint namespaces and the supported scenarios for deploying Microsoft Exchange 2013 in a domain that has a disjoint namespace.
 
 **Contents**
@@ -43,11 +42,8 @@ A computer running Windows in an Active Directory domain has both a DNS domain n
 
   - **NetBIOS domain name**: Typically, the NetBIOS domain name is the subdomain of the DNS domain name. For example, if the DNS domain name is contoso.com, the NetBIOS domain name is contoso. If the DNS domain name is corp.contoso.com, the NetBIOS domain name is corp.
 
-
 > [!NOTE]
 > To find DNS and NetBIOS information for computers running Windows Server 2008, see View DNS and NetBIOS name-related information of a computer running Windows Server 2008.
-
-
 
 A computer in an Active Directory domain also has a primary DNS suffix and can have additional DNS suffixes. By default, the primary DNS suffix is the same as the DNS domain name. For detailed steps about how to change the primary DNS suffix, see the procedures later in this topic.
 
@@ -73,11 +69,8 @@ Exchange 2013 supports the following three scenarios for deploying Exchange in a
 
 These scenarios are detailed in the following sections.
 
-
 > [!NOTE]
 > It's supported to run Exchange 2013 in the disjoint namespace scenarios described in this topic. However, if you have a disjoint namespace scenario that isn't one of the scenarios described in this topic, you must work with Microsoft Services to deploy Exchange 2013. For more information, see <A href="https://go.microsoft.com/fwlink/p/?linkid=94845">Microsoft Services</A>.
-
-
 
 ## Scenario: Primary DNS suffix and DNS domain name are different
 
@@ -111,17 +104,16 @@ For detailed steps about how to configure the DNS suffix search list Group Polic
 
 ## View DNS and NetBIOS name-related information of a computer running Windows Server 2008
 
-1.  Click **Start**, right-click **Computer**, and then click **Properties**.
+1. Click **Start**, right-click **Computer**, and then click **Properties**.
 
-2.  In **System**, the DNS host name and primary DNS suffix are displayed under **Computer name, domain, and workgroup settings** next to **Full computer name**. The DNS domain name is displayed next to **Domain**.
+2. In **System**, the DNS host name and primary DNS suffix are displayed under **Computer name, domain, and workgroup settings** next to **Full computer name**. The DNS domain name is displayed next to **Domain**.
 
-3.  Click **Change settings**.
+3. Click **Change settings**.
 
-4.  In **System Properties**, on the **Computer Name** tab, click **Change**.
+4. In **System Properties**, on the **Computer Name** tab, click **Change**.
 
-5.  In **Computer Name/Domain Changes**, click **More**. The primary DNS suffix is displayed under **Primary DNS suffix of this computer**. The NetBIOS computer name is displayed under **NetBIOS computer name**.
-    
+5. In **Computer Name/Domain Changes**, click **More**. The primary DNS suffix is displayed under **Primary DNS suffix of this computer**. The NetBIOS computer name is displayed under **NetBIOS computer name**.
+
     To change the primary DNS suffix, type the new primary DNS suffix under **Primary DNS suffix of this computer**, and then click **OK**.
 
-6.  From a Command Prompt window, type **set**. The variable USERDNSDOMAIN displays the DNS domain name. The variable USERDOMAIN displays the NetBIOS domain name.
-
+6. From a Command Prompt window, type **set**. The variable USERDNSDOMAIN displays the DNS domain name. The variable USERDOMAIN displays the NetBIOS domain name.

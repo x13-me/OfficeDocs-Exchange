@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 If you want to ensure secure, encrypted communication with a partner, you can create a Send connector that is configured to enforce Transport Layer Security (TLS) for messages sent to a partner domain. TLS provides secure communication over the Internet.
 
 Interested in scenarios where this procedure is used? See the following topics:
@@ -35,27 +34,24 @@ Interested in scenarios where this procedure is used? See the following topics:
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## Use the EAC to create a Send connector to send email to a partner, with TLS applied
 
 To create a Send connector for this scenario, log in to the EAC and perform the following steps:
 
-1.  In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+1. In the EAC, navigate to **Mail flow** \> **Send connectors**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-2.  In the **New send connector** wizard, specify a name for the send connector and then select **Partner** for the **Type**. When you select **Partner**, the connector is configured to allow connections only to servers that authenticate with TLS certificates. Click **Next**.
+2. In the **New send connector** wizard, specify a name for the send connector and then select **Partner** for the **Type**. When you select **Partner**, the connector is configured to allow connections only to servers that authenticate with TLS certificates. Click **Next**.
 
-3.  Verify that **MX record associated with recipient domain** is selected, which specifies that the connector uses the domain name system (DNS) to route mail. Click **Next**.
+3. Verify that **MX record associated with recipient domain** is selected, which specifies that the connector uses the domain name system (DNS) to route mail. Click **Next**.
 
-4.  Under **Address space**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter the name of your partner domain. Click **Save**.
+4. Under **Address space**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter the name of your partner domain. Click **Save**.
 
-5.  For **Source server**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Select a server** window, select a Mailbox server that will be used to send mail to the Internet via the Client Access server and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). After you've selected the server, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). Click **OK**.
+5. For **Source server**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Select a server** window, select a Mailbox server that will be used to send mail to the Internet via the Client Access server and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). After you've selected the server, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). Click **OK**.
 
-6.  Click **Finish**.
+6. Click **Finish**.
 
 Once you have created the Send connector, it appears in the Send connector list.
 
@@ -68,4 +64,3 @@ To verify that you have successfully created a Send connector to send email to a
 [Create a Send connector for email sent to the Internet](create-a-send-connector-for-email-sent-to-the-internet-exchange-2013-help.md)
 
 [Create a Send connector to route outbound email through a smart host](create-a-send-connector-to-route-outbound-email-through-a-smart-host-exchange-2013-help.md)
-

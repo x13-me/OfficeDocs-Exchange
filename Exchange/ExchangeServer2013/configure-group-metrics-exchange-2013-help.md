@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 MailTips that provide information about the size of distribution groups and dynamic distribution groups rely on group metrics data. Group metrics data is generated on designated Mailbox servers. For more information about group metrics, see [Group metrics and MailTips](group-metrics-and-https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips).
 
 You can enable or disable group metrics generation on a Mailbox server.
@@ -35,19 +34,13 @@ You can enable or disable group metrics generation on a Mailbox server.
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
 
-
-
 ## Use the Shell to enable or disable group metrics generation
-
 
 > [!NOTE]
 > By default, group metrics data is generated on any server responsible for generating the offline address book (OAB). These examples are only necessary for organizations that don't use OABs.
-
-
 
 To enable or disable group metrics generation on a Mailbox server, run the following command:
 
@@ -65,11 +58,10 @@ Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
 
 To verify that you have successfully enabled or disabled group metrics generation in an organization that doesn't use OABs, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
     ```
 
-2.  Verify the setting displayed is the setting you configured.
-
+2. Verify the setting displayed is the setting you configured.

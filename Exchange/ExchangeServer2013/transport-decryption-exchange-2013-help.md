@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, Microsoft Outlook 2010 and later, and Microsoft Office Outlook Web App, users can use Information Rights Management (IRM) to protect their messages. You can create Outlook protection rules to automatically apply IRM protection to messages before they're sent from an Outlook 2010 client. You can also create transport protection rules to apply IRM protection to messages in transit that match the rule conditions. Transport decryption allows access to IRM-protected messaging content to enforce messaging policies.
 
@@ -37,11 +36,8 @@ If it's critical that your organization protects sensitive information, includin
 
 In Exchange 2013, IRM features address these challenges. If messages are IRM-protected, transport decryption allows you to decrypt them in transit. IRM-protected messages are decrypted by the Decryption agent, a compliance-focused transport agent.
 
-
 > [!NOTE]
 > In Exchange 2013, the Decryption agent is a built-in agent. Built-in agents aren't included in the list of agents returned by the <STRONG>Get-TransportAgent</STRONG> cmdlet. For more details, see <A href="transport-agents-exchange-2013-help.md">Transport agents</A>.
-
-
 
 The Decryption agent decrypts the following types of IRM-protected messages:
 
@@ -51,17 +47,11 @@ The Decryption agent decrypts the following types of IRM-protected messages:
 
   - Messages IRM-protected automatically by Outlook protection rules in Exchange 2013 and Outlook 2010.
 
-
 > [!IMPORTANT]
 > Only messages IRM-protected by the AD&nbsp;RMS server in your organization are decrypted by the Decryption agent.
 
-
-
-
 > [!NOTE]
 > Messages protected in-transit using transport protection rules aren't required to be decrypted by the Decryption agent. The Decryption agent fires on the <STRONG>OnEndOfData</STRONG> and <STRONG>OnSubmit</STRONG> transport events. Transport protection rules are applied by the Transport Rules agent, which fires on the <STRONG>OnRoutedMessage</STRONG> event, and IRM-protection is applied by the Encryption agent on the <STRONG>OnRoutedMessage</STRONG> event. For more information about transport agents and a list of SMTP events on which they can be registered, see <A href="transport-agents-exchange-2013-help.md">Transport agents</A>.
-
-
 
 Transport decryption is performed on the first Exchange 2013 Transport service that handles a message in an Active Directory forest. If a message is transferred to a Transport service in another Active Directory forest, the message is decrypted again. After decryption, unencrypted content is available to other transport agents on that server. For example, the Transport Rules agent on a Transport service can inspect message content and apply transport rules. Any actions specified in the rule, such as applying a disclaimer or modifying the message in any other way, can be taken on the unencrypted message. Third-party transport agents, such as antivirus scanners, can scan the message for viruses and malware. After other transport agents have inspected the message and possibly made modifications to it, it's encrypted again with the same user rights that it had before being decrypted by the Decryption agent. The same message isn't decrypted again by other the Transport service on other Mailbox servers in the organization.
 
@@ -71,21 +61,15 @@ Messages decrypted by the Decryption agent don't leave the Transport service wit
 
   - If the permanent error occurs during re-encryption, an NDR is always sent without the decrypted message.
 
-
 > [!IMPORTANT]
 > Any custom or third-party agents installed on a Transport service have access to the decrypted message. You must consider the behavior of such transport agents. We recommend that you test all custom and third-party transport agents thoroughly before you deploy them in a production environment.<BR>After a message is decrypted by the Decryption agent, if a transport agent creates a new message and embeds (attaches) the original message to the new one, only the new message is protected. The original message, which becomes an attachment to the new message, doesn't get re-encrypted. A recipient receiving such a message can open the attached message and take actions such as forwarding or replying, which would bypass rights enforcement.
-
-
 
 ## Configuring transport decryption
 
 Transport decryption is configured by using the [Set-IRMConfiguration](https://technet.microsoft.com/en-us/library/dd979792\(v=exchg.150\)) cmdlet in the Exchange Management Shell. However, before you configure transport decryption, you must provide Exchange 2013 servers the right to decrypt content protected by your AD RMS server. This is done by adding the Federation mailbox to the super users group configured on the AD RMS cluster in your organization.
 
-
 > [!IMPORTANT]
 > In cross-forest AD&nbsp;RMS deployments where you have an AD&nbsp;RMS cluster deployed in each forest, you must add the Federation mailbox to the super users group on the AD&nbsp;RMS cluster in each forest to allow the Transport service on an Exchange 2013 Mailbox server or an Exchange 2010 Hub Transport server to decrypt the messages protected against each AD&nbsp;RMS cluster.
-
-
 
 For details, see [Add the Federation Mailbox to the AD RMS Super Users Group](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
 
@@ -96,4 +80,3 @@ Exchange 2013 allows two different settings when enabling transport decryption:
   - **Optional**: When transport decryption is set to Optional, the Decryption agent uses a best-effort approach. Messages that can be decrypted are decrypted, but messages with a permanent error on decryption are also delivered. If your organization prioritizes message delivery over messaging policy, you must use this setting.
 
 For more information about configuring transport decryption, see [Enable or Disable Transport Decryption](enable-or-disable-transport-decryption-exchange-2013-help.md).
-

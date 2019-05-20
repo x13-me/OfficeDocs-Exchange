@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 This topic provides solutions and information about common errors that may occur when you use the RollAlternateServiceAccountPassword.ps1 script.
 
@@ -65,11 +64,8 @@ Remove-RPCClientAccess -Server Server.Contoso.com
 
 After the RPC Client Access service has been removed, the server won't be returned as an array member by [Get-ClientAccessArray](https://technet.microsoft.com/en-us/library/dd297976\(v=exchg.150\)) and the script won't target it. As soon as the server is functional again, you can re-add the RPC Client Access service by using the **New-RpcClientAccess** cmdlet. When the RPC Client Access service is re-added, be sure to restart the Microsoft Exchange Address Book service on the affected server.
 
-
 > [!WARNING]
 > Before you remove the RPC Client Access service from a server, see the topic <A href="https://technet.microsoft.com/en-us/library/dd298151(v=exchg.150)">Remove-RpcClientAccess</A>.
-
-
 
 ## For More Information
 
@@ -78,4 +74,3 @@ For more information about how to use Kerberos authentication with a Client Acce
   - [Configuring Kerberos authentication for load-balanced Client Access servers](configuring-kerberos-authentication-for-load-balanced-client-access-servers-exchange-2013-help.md)
 
   - [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](using-the-rollalternateserviceaccountcredential-ps1-script-in-the-shell-exchange-2013-help.md)
-

@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Access control list (ACL) inheritance is blocked\_InhBlockPublicFolderTree
 
- 
-
 _**Applies to:** Exchange Server_
-
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -27,22 +24,21 @@ Microsoft Exchange Server 2007 or Exchange Server 2010 setup cannot continue b
 
 Exchange setup requires that inheritance for permissions be enabled on the following Exchange objects:
 
-  - Exchange Organization object
+- Exchange Organization object
 
-  - Exchange Administrative Group object
+- Exchange Administrative Group object
 
-  - Exchange Servers container object
+- Exchange Servers container object
 
-  - Exchange Address List object
+- Exchange Address List object
 
-  - Exchange Public Folder object
+- Exchange Public Folder object
 
-  - Exchange Public Folder tree object
+- Exchange Public Folder tree object
 
 Failure to enable inheritance for permissions on these objects may result in mail flow problems, store mounting issues, and other service outages.
 
 To resolve this issue, make sure that the "Allow permissions to propagate to this object and child objects" setting is enabled for the object, and then rerun Exchange Server 2007 or Exchange 2010 setup.
-
 
 <table>
 <colgroup>
@@ -70,7 +66,6 @@ To resolve this issue, make sure that the "Allow permissions to propagate to thi
 > [!NOTE]
 > By default, the <STRONG>Security</STRONG> tab is not enabled in the configuration object properties box.
 
-
 </li>
 <li><p>Open Exchange System Manager, find the object in question, right-click the object and select <strong>Properties</strong>.</p></li>
 <li><p>Select the <strong>Security</strong> tab and then click <strong>Advanced</strong>.</p></li>
@@ -81,13 +76,8 @@ To resolve this issue, make sure that the "Allow permissions to propagate to thi
 </tbody>
 </table>
 
-
-
 > [!WARNING]
 > If you incorrectly modify the attributes of Active Directory objects when you use ADSI Edit, the LDP tool, or another LDAP version&nbsp;3 client, you may cause serious problems. These problems may require that you reinstall Microsoft Windows&nbsp;Server™&nbsp;2003, Exchange&nbsp;Server, or both. Modify Active Directory object attributes at your own risk.
-
-
-
 
 <table>
 <colgroup>
@@ -110,4 +100,3 @@ To resolve this issue, make sure that the "Allow permissions to propagate to thi
 </tr>
 </tbody>
 </table>
-

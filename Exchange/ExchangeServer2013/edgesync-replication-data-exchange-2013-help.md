@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 When you deploy an Edge Transport server, it doesn't have access to Active Directory. To perform recipient lookup and safelist aggregation tasks, and to implement domain security by using Mutual Transport Layer Security (MTLS) authentication, the Edge Transport server needs data from Active Directory. This data is replicated to the Edge Transport server using EdgeSync; the Edge Transport server stores all replicated information in Active Directory Lightweight Directory Services (AD LDS).
 
 This topic focuses on data replicated from Active Directory to AD LDS on an Edge Transport server subscribed to an Active Directory site. To learn more about EdgeSync and Edge Subscriptions, see [Edge Subscriptions](edge-subscriptions-exchange-2013-help.md).
@@ -78,7 +77,6 @@ The schema extensions in the following table are specific to Edge Subscriptions.
 </tbody>
 </table>
 
-
 Return to top
 
 ## Configuration information
@@ -112,12 +110,9 @@ Recipient information replicated to AD LDS includes only a subset of recipient 
   - **Proxy addresses**: All proxy addresses assigned to each recipient are replicated to AD LDS as hashed data. This is a one-way hash using Secure Hash Algorithm (SHA)-256. SHA-256 generates a 256-bit message digest of the original data. Storing proxy addresses as hashed data helps secure this information in case the Edge Transport server or AD LDS is compromised. Proxy addresses are referenced when the Edge Transport server performs the recipient lookup antispam task.
 
   - **Safe Senders List, Blocked Senders List, and Safe Recipients List**: Safe Senders Lists, Blocked Senders Lists and Safe Recipients Lists defined in each recipient's Outlook instance are aggregated and replicated to AD LDS. These settings are stored in the mailbox database where the recipient's mailbox resides. An Outlook user's safelist collection is the combined data from the user's Safe Senders List, Safe Recipients List, Blocked Senders List, and external contacts. Having safelist collection data available in AD LDS enables the Edge Transport server to screen senders appropriately, reducing operational overhead for filtering mail. This information is sent as hashed data.
-    
 
     > [!IMPORTANT]
     > Although the safe recipient data is stored in Outlook and can be aggregated into the safelist collection on the AD&nbsp;LDS instance on the Edge Transport server, the content filtering functionality doesn't act on safe recipient data.
-
-
 
   - **Per recipient anti spam settings**: You can use the **Set-Mailbox** cmdlet to assign anti spam threshold settings per recipient that differ from the organization-wide anti spam settings. If you configure per recipient anti spam settings, these settings override organization-wide settings. By replicating these settings to AD LDS, the per recipient settings can be considered before the message is relayed to the Exchange organization. This information is sent as hashed data.
 
@@ -128,4 +123,3 @@ Return to top
 The topology information includes notification of newly subscribed Edge Transport servers or removed Edge Subscriptions. This data is refreshed every five minutes.
 
 Return to top
-

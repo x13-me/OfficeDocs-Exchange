@@ -18,14 +18,10 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Set up an organization relationship to share calendar information with an external business partner. You can configure an organization relationship between two federated Exchange 2013 organizations or between a federated Exchange 2013 organization and federated Exchange 2010 organizations. You can also set up an organization relationship between your on-premises Exchange organization and an Office 365 organization.
-
 
 > [!IMPORTANT]
 > Creating an organization relationship is one of several steps in setting up federated sharing in your Exchange organization and requires the configuration of a federation trust for your on-premises Exchange organization.
-
-
 
 To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.md).
 
@@ -45,31 +41,31 @@ To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.
 
 ## Use the EAC to create an organization relationship
 
-1.  On an Exchange 2013 server in your on-premises organization, navigate to **organization** \> **sharing**.
+1. On an Exchange 2013 server in your on-premises organization, navigate to **organization** \> **sharing**.
 
-2.  Under **Organization Sharing**, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
+2. Under **Organization Sharing**, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
-3.  In **new organization relationship**, in the **Relationship name** box, type a friendly name for the organization relationship.
+3. In **new organization relationship**, in the **Relationship name** box, type a friendly name for the organization relationship.
 
-4.  In the **Domains to share with** box, type the federated domain or federated subdomain for the Office 365 or Exchange on-premises organization you want to let see your calendars. If you need to enter multiple domains for the external organization, separate the domains with a comma. For example, **contoso.com, service.contoso.com**.
+4. In the **Domains to share with** box, type the federated domain or federated subdomain for the Office 365 or Exchange on-premises organization you want to let see your calendars. If you need to enter multiple domains for the external organization, separate the domains with a comma. For example, **contoso.com, service.contoso.com**.
 
-5.  Select the **Enable calendar free/busy information sharing** check box to turn on calendar sharing with the domains you listed. Set the sharing level for calendar free/busy information and set which users can share calendar free/busy information.
-    
+5. Select the **Enable calendar free/busy information sharing** check box to turn on calendar sharing with the domains you listed. Set the sharing level for calendar free/busy information and set which users can share calendar free/busy information.
+
     To set the free/busy access level, select one of the following:
-    
+
       - **Calendar free/busy information with time only**
-    
+
       - **Calendar free/busy with time, subject, and location**
-    
+
     To set which users will share calendar free/busy information, select one of the following:
-    
+
       - **Everyone in your organization**
-    
+
       - **A specified security group**
-        
+
         To specify a security group, click **browse**.
 
-6.  Click **save** to create the organization relationship.
+6. Click **save** to create the organization relationship.
 
 ## Use the Shell to create an organization relationship
 
@@ -125,8 +121,5 @@ To further verify that you have successfully created the organization relationsh
 Get-OrganizationRelationship | format-list
 ```
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-

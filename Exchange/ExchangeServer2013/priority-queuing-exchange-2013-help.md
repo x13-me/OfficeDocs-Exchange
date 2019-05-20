@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 *Priority queuing* is a feature of Microsoft Exchange Server 2013 that enables the sender-defined priority of a message to influence the processing of the message by the Transport service on the Mailbox server.
 
@@ -110,7 +109,6 @@ The following table explains each key in more detail.
 </tbody>
 </table>
 
-
 ## How priority queuing affects other message limits on Mailbox servers
 
 All messages that pass through the Transport service are subject to a variety of message retry, resubmit, and expiration limits. For more information, see [Message size limits](message-size-limits-exchange-2013-help.md).
@@ -156,7 +154,6 @@ Some message limits available in the **Set-TransportService** cmdlet have corres
 </tbody>
 </table>
 
-
 When priority queuing is disabled, all the priority queuing message limits that exist in the EdgeTransport.exe.config configuration file are ignored. All the message limits on the **Set-TransportService** cmdlet apply to all messages that travel through the Transport service on the Mailbox server.
 
 When priority queuing is enabled, the priority queuing message limits in the EdgeTransport.exe.config configuration file override the corresponding message limits in the **Set-TransportService** cmdlet. All other message limits in the **Set-TransportService** cmdlet still apply to Low priority, Normal priority, and High priority messages that travel through the Transport service on the Mailbox server.
@@ -164,4 +161,3 @@ When priority queuing is enabled, the priority queuing message limits in the Edg
 ## User Settings for Priority Queuing
 
 The **Set-Mailbox** cmdlet has the *DowngradeHighPriorityMessagesEnabled* parameter. The default value is `$false`. When this parameter is set to `$true`, any High priority messages sent from the mailbox are automatically downgraded to Normal priority.
-

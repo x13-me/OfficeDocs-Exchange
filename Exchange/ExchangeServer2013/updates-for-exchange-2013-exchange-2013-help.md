@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server, Exchange Server 2013_
-
+_**Applies to:**: Exchange Online, Exchange Server, Exchange Server 2013_
 
 Learn how the update process for Microsoft Exchange Server 2013 has changed. This article also provides links to information about the features and improvements that were included in current, and previous, releases of Exchange 2013.
 
@@ -34,7 +33,6 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
   - For information about the new features you'll get when you upgrade to Exchange 2013 from previous versions of Exchange, see [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).
 
   - For downloads and updates for other versions of Exchange, see [Exchange Server Updates: build numbers and release dates](https://go.microsoft.com/fwlink/p/?linkid=512549).
-
 
 <table>
 <colgroup>
@@ -142,7 +140,6 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 </tr>
 </tbody>
 </table>
-
 
 ## New features, improvements, and updates included in Exchange 2013 SP1
 
@@ -261,4 +258,3 @@ For more information, see [High availability and site resilience](high-availabil
 ## UM Language Packs
 
 The UM language packs for Exchange 2013 SP1 are available. If you install SP1 on your Mailbox servers, you must install the Exchange 2013 SP1 UM language packs. See [Exchange Server 2013 SP1 UM Language Packs](https://go.microsoft.com/fwlink/?linkid=392817) to download them. UM language packs are specific to the version of Exchange and the Service Pack (SP) installed.
-

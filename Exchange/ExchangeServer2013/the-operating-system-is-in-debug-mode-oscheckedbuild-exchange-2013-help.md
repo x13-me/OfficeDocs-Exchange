@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:**: Exchange Server_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -33,15 +32,14 @@ To eliminate this error, edit the Boot.ini file and remove the **/debug** parame
 
 ## To correct this error
 
-1.  In Windows Explorer, navigate to the System Partition. This is the partition that holds the hardware specific files such as Boot.ini and NTLDR.
+1. In Windows Explorer, navigate to the System Partition. This is the partition that holds the hardware specific files such as Boot.ini and NTLDR.
 
-2.  If you cannot see the Boot.ini file, it could be because the **Folder Options** are set to **Hide protected operating system files**. If this is the case, in the Windows Explorer window, click **Tools**, click **Folder Options**, and then click **View**. Clear the **Hide protected operating system files (Recommended)** check box. When prompted, click **Yes**.
+2. If you cannot see the Boot.ini file, it could be because the **Folder Options** are set to **Hide protected operating system files**. If this is the case, in the Windows Explorer window, click **Tools**, click **Folder Options**, and then click **View**. Clear the **Hide protected operating system files (Recommended)** check box. When prompted, click **Yes**.
 
-3.  When the Boot.ini file is visible in Windows Explorer, right-click the file, click **Open With**, and then select **Notepad** to open the file.
+3. When the Boot.ini file is visible in Windows Explorer, right-click the file, click **Open With**, and then select **Notepad** to open the file.
 
-4.  In the **\[Operating Systems\]** section, remove the **/debug** parameter.
+4. In the **\[Operating Systems\]** section, remove the **/debug** parameter.
 
-5.  Save and close the file, and then restart the Exchange Server computer for the change to take effect.
+5. Save and close the file, and then restart the Exchange Server computer for the change to take effect.
 
 For more information about the parameters that can be used in the Boot.ini file, see the Microsoft Knowledge Base article 833721, "Available switch options for the Windows XP and Windows Server 2003 Boot.ini files" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=833721](https://go.microsoft.com/fwlink/?linkid=3052&kbid=833721)).
-

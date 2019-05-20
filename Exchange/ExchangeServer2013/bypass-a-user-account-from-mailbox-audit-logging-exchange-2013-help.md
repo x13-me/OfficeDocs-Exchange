@@ -14,20 +14,14 @@ mtps_version: v=EXCHG.150
 
 # Bypass a user account from mailbox audit logging
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 When you enable mailbox audit logging for a mailbox, specified mailbox access events (for example, accessing a folder or a message, or permanently deleting a message) are logged. However, access by some authorized accounts, such as accounts used by third-party tools or accounts used for lawful monitoring, can create a large number of mailbox audit log entries and may not be of interest to your organization.
 
 You can configure a user or computer account to bypass mailbox audit logging, so actions taken by that user or account for any mailbox aren't logged. By bypassing trusted user or computer accounts that need frequent access to mailboxes, you can reduce the noise in mailbox audit logs.
 
-
 > [!WARNING]
 > If you use mailbox audit logging to audit mailbox access and actions, you must monitor mailbox audit bypass associations at regular intervals. If a mailbox audit bypass association is added for an account, the account can access any mailbox in the organization to which it has been assigned permissions, without any mailbox audit logging entries being generated for such access or any actions taken (such as message deletions).
-
-
 
 For additional management tasks related to mailbox audit logging, see [Mailbox audit logging procedures](mailbox-audit-logging-procedures-exchange-2013-help.md).
 
@@ -43,11 +37,8 @@ For additional management tasks related to mailbox audit logging, see [Mailbox a
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## Use the Shell to enable or disable mailbox audit logging bypass for an account
 
@@ -60,4 +51,3 @@ For an example of how to disable mailbox audit logging bypass for an account, se
 After you have bypassed a user account from mailbox audit logging, you can check the bypass settings by running the [Get-MailboxAuditBypassAssociation](https://technet.microsoft.com/en-us/library/ff696741\(v=exchg.150\)) cmdlet.
 
 For examples of how to check mailbox audit bypass associations, see [Examples](https://technet.microsoft.com/en-us/ff696741\(exchg.150\)#examples) in [Get-MailboxAuditBypassAssociation](https://technet.microsoft.com/en-us/library/ff696741\(v=exchg.150\)).
-

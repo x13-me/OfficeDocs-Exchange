@@ -23,7 +23,6 @@ f1_keywords:
 
 _**Applies to:** Exchange Server 2013_
 
-
 Microsoft Exchange Server 2013 uses delivery status notifications (DSN) to provide non-delivery reports (NDRs) and other status messages to message senders. You can use the built-in DSNs, or you can create custom DSN messages to meet the needs of your organization.
 
 ## What do you need to know before you begin?
@@ -36,11 +35,8 @@ Microsoft Exchange Server 2013 uses delivery status notifications (DSN) to provi
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -94,15 +90,15 @@ This example creates a custom HTML DSN message for the DSN code 5.1.2 that's sen
 
 To verify that you have successfully created a custom DNS message, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
     ```
 
-2.  Verify the values you see are the values you configured.
+2. Verify the values you see are the values you configured.
 
-3.  Send a test message that will generate the custom DSN you configured.
+3. Send a test message that will generate the custom DSN you configured.
 
 ## Use the Shell to change the text of a custom DSN message
 
@@ -122,13 +118,13 @@ This example changes the text assigned to the custom DSN message for DSN code 5.
 
 To verify that you have successfully changed the text of a custom DNS message, do the following:
 
-1.  Run the following command: `Get-SystemMessage`.
-    
+1. Run the following command: `Get-SystemMessage`.
+
     ```powershell
     Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> | Format-List -Text
     ```
 
-2.  Verify the value displayed is the value you configured.
+2. Verify the value displayed is the value you configured.
 
 ## Use the Shell to remove a custom DSN message
 
@@ -148,9 +144,9 @@ Remove-SystemMessage En\Internal\5.1.2
 
 To verify that you have successfully removed a custom DNS message, do the following:
 
-1.  Run the command: `Get-SystemMessage`.
+1. Run the command: `Get-SystemMessage`.
 
-2.  Verify a DSN for the locale, internal or external recipients, and DSN code you deleted isn't listed.
+2. Verify a DSN for the locale, internal or external recipients, and DSN code you deleted isn't listed.
 
 ## Forward copies of DSN messages to the Exchange recipient mailbox
 
@@ -160,16 +156,16 @@ You can specify a list of DSN codes that you want to monitor by having the DSN m
 
 To assign a mailbox to the Exchange recipient, perform the following steps:
 
-1.  Due to the potentially high volume of email, consider creating a dedicated mailbox and Active Directory user account for the Exchange recipient. For more information, see [Create user mailboxes](create-user-mailboxes-exchange-2013-help.md). Otherwise, identify the existing mailbox you want to associate with the Exchange recipient.
+1. Due to the potentially high volume of email, consider creating a dedicated mailbox and Active Directory user account for the Exchange recipient. For more information, see [Create user mailboxes](create-user-mailboxes-exchange-2013-help.md). Otherwise, identify the existing mailbox you want to associate with the Exchange recipient.
 
-2.  Run the following command:
-    
+2. Run the following command:
+
     ```powershell
     Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
     ```
-    
+
     For example, to assign the existing mailbox named "Contoso System Mailbox" to the Exchange recipient, run the following command:
-    
+
     ```powershell
     Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
     ```
@@ -178,9 +174,9 @@ To assign a mailbox to the Exchange recipient, perform the following steps:
 
 ## Use the EAC to specify the DSN codes
 
-1.  In the EAC, navigate to **Mail flow** \> **Receive connectors** \> **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") \> **Organization transport settings** \> **Delivery**.
+1. In the EAC, navigate to **Mail flow** \> **Receive connectors** \> **More options** ![More Options Icon](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "More Options Icon") \> **Organization transport settings** \> **Delivery**.
 
-2.  In the **DNS codes** section, type the DSN codes you want to monitor using the format *\<x.y.z\>*, and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). Select an existing entry and click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to modify it, or click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon") to remove it. When you are finished, click **Save**.
+2. In the **DNS codes** section, type the DSN codes you want to monitor using the format *\<x.y.z\>*, and click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). Select an existing entry and click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to modify it, or click **Remove** ![Remove icon](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Remove icon") to remove it. When you are finished, click **Save**.
 
 ## Use the Shell to specify the DSN codes
 
@@ -211,4 +207,3 @@ Set-TransportConfig -GenerateCopyOfDSNFor @{Add="5.7.5"; Remove="5.7.1"}
 ## How do you know this worked?
 
 To verify that you successfully configured copies of DNS messages to be sent to the mailbox of the Exchange recipient, monitor the mailbox that's associated with the Exchange recipient, and verify the DSN messages contain the DSN codes you specified.
-

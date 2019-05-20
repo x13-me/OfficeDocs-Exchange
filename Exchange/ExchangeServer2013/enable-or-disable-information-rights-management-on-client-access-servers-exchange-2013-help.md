@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Enabling Information Rights Management (IRM) on Client Access servers enables the following features:
 
   - Microsoft Office Outlook Web App
@@ -27,11 +26,8 @@ Enabling Information Rights Management (IRM) on Client Access servers enables th
 
 When IRM is enabled on Client Access servers, Outlook Web App users can IRM-protect messages by applying an [Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx) template created on your AD RMS cluster. Outlook Web App users can also view IRM-protected messages and supported attachments. Before you enable IRM on Client Access servers, you must add the Federation mailbox to the super users group on the AD RMS cluster.
 
-
 > [!IMPORTANT]
 > Members of the super users group are granted an owner use license when they request a license from the AD&nbsp;RMS cluster. This allows them to decrypt all RMS-protected content by that cluster.
-
-
 
 For additional management tasks related to IRM, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
 
@@ -48,13 +44,13 @@ For additional management tasks related to IRM, see [Information Rights Manageme
   - IRM features must be enabled for the organization. For detailed instructions, see [Enable or Disable IRM for Internal Messages](enable-or-disable-irm-for-internal-messages-exchange-2013-help.md).
 
   - You can use the **Set-IRMConfiguration** cmdlet to enable or disable IRM in Outlook Web App and IRM in Exchange ActiveSync for the entire Exchange organization or at specific levels.
-    
+
     You can control IRM in Outlook Web App at the following levels:
-    
+
       - **Per-Outlook Web App virtual directory**: To enable or disable IRM in Outlook Web App for an Outlook Web App virtual directory, use the **Set-OWAVirtualDirectory** cmdlet and set the *IRMEnabled* parameter to `$false` or `$true` (default). This allows you to disable IRM in Outlook Web App for one virtual directory on an Exchange 2013 Client Access server, while keeping it enabled on another virtual directory on a different Client Access server.
-    
+
       - **Per-Outlook Web App mailbox policy**: To enable or disable IRM in Outlook Web App for an Outlook Web App mailbox policy, use the **Set-OWAMailboxPolicy** cmdlet and set the *IRMEnabled* parameter to `$false` or `$true` (default). This allows you to enable IRM in Outlook Web App for one set of users and disable it for another set of users by assigning them a different Outlook Web App mailbox policy.
-    
+
     You can control IRM in Exchange ActiveSync per Exchange ActiveSync mailbox policy. To disable or enable IRM in Exchange ActiveSync for an Exchange ActiveSync mailbox policy, use the **Set-ActiveSyncMailboxPolicy** cmdlet and set the *IRMEnabled* parameter to `$false` or `$true` (default). This allows you to enable IRM in Exchange ActiveSync for one set of users and disable it for another set of users by assigning them a different Exchange ActiveSync mailbox policy.
 
   - You can't use the Exchange Administration Center (EAC) to enable or disable IRM on Client Access servers. You must use the Shell.
@@ -86,8 +82,7 @@ For detailed syntax and parameter information, see [Set-IRMConfiguration](https:
 To verify that you have successfully enabled or disabled IRM on Client Access servers, do the following:
 
   - Run the **Get-IRMConfiguration** cmdlet and check the value of the *ClientAccessServerEnabled* property.
-    
+
     For an example of how to retrieve the IRM configuration, see [Examples](https://technet.microsoft.com/en-us/e1821219-fe18-4642-a9c2-58eb0aadd61a\(exchg.150\)#examples) in **Get-IRMConfiguration**.
 
   - Use Outlook Web App to create or read an IRM-protected message.
-

@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 After you create an In-Place eDiscovery search, you can use the EAC to copy the results to a discovery mailbox. You can also use the Shell to start an eDiscovery search that was created using the **New-MailboxSearch** cmdlet, which will copy the results to the discovery mailbox that was specified when you created the search.
 
 ## What do you need to know before you begin?
@@ -33,41 +32,38 @@ After you create an In-Place eDiscovery search, you can use the EAC to copy the 
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
 ## Use the EAC to copy search results
 
-1.  In the EAC, go to **Compliance management** \> **In-place eDiscovery & hold**.
+1. In the EAC, go to **Compliance management** \> **In-place eDiscovery & hold**.
 
-2.  In the list view, select an eDiscovery search.
+2. In the list view, select an eDiscovery search.
 
-3.  Click **Search** ![Search icon](images/Dn624163.773574d0-9b92-4cab-9f6b-81532c7418b9(EXCHG.150).gif "Search icon"), and then click **Copy search results** from the drop-down list.
+3. Click **Search** ![Search icon](images/Dn624163.773574d0-9b92-4cab-9f6b-81532c7418b9(EXCHG.150).gif "Search icon"), and then click **Copy search results** from the drop-down list.
 
-4.  In **Copy Search Results**, select from the following options:
-    
+4. In **Copy Search Results**, select from the following options:
+
       - **Include unsearchable items**: Select this check box to include mailbox items that couldn't be searched (for example, messages with attachments of file types that couldn't be indexed by Exchange Search). For more information, see [Unsearchable items in Exchange eDiscovery](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md).
-    
+
       - **Enable de-duplication**: Select this check box to exclude duplicate messages. Only a single instance of a message will be copied to the discovery mailbox.
-    
+
       - **Enable full logging**: Select this check box to include a full log in search results.
-    
+
       - **Send me mail when the copy is completed**: Select this check box to get an email notification when the search is completed.
-    
+
       - **Copy results to this discovery mailbox**: Click **Browse** to select the discovery mailbox where you want the search results copied to.
-        
-        ![Copy Search Results](images/Dn624163.875e25ed-8308-408c-92c4-8c76fc9d9bfc(EXCHG.150).gif "Copy Search Results")  
 
-5.  Click **Copy** to start the process to copy the search results to the specified discovery mailbox.
+        ![Copy Search Results](images/Dn624163.875e25ed-8308-408c-92c4-8c76fc9d9bfc(EXCHG.150).gif "Copy Search Results")
 
-6.  Click **Refresh** ![Refresh Icon](images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif "Refresh Icon") to update the information about the copying status that is displayed in the details pane.
+5. Click **Copy** to start the process to copy the search results to the specified discovery mailbox.
 
-7.  When copying is complete, click **Open** to open the discovery mailbox to view the search results.
+6. Click **Refresh** ![Refresh Icon](images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif "Refresh Icon") to update the information about the copying status that is displayed in the details pane.
+
+7. When copying is complete, click **Open** to open the discovery mailbox to view the search results.
 
 ## Use the Shell to copy search results
 
@@ -108,10 +104,9 @@ To copy the results of this search to a discovery mailbox, you would run the fol
   - If you're copying all mailbox content within a specific date range (by not specifying any keywords in the search criteria), then all unsearchable items within that date range will be automatically included in the search results. Therefore, don't select the **Include unsearchable items** checkbox when copying search results. Otherwise, a duplicate copy of all unsearchable items will be copied to the discovery mailbox.
 
   - In addition to copying the search results to a discovery mailbox, you can also estimate or preview the search results for a selected search.
-    
-      - **Estimate search results**: This option returns an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Estimates are displayed in the details pane in the EAC.
-    
-      - **Preview search results**: This option lets you preview the search results returned by the search instead of having to copy them to a discovery mailbox to view. This lets you quickly determine whether the search results are relevant. After you preview the results, you can revise your search query to narrow the search results and rerun the search. Items in the preview page are read-only versions of the actual search results, so you can't move, edit, delete or forward on the preview page.
-    
-    For more information, see [Estimate or preview search results](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search).
 
+      - **Estimate search results**: This option returns an estimate of the total size and number of items that will be returned by the search based on the criteria you specified. Estimates are displayed in the details pane in the EAC.
+
+      - **Preview search results**: This option lets you preview the search results returned by the search instead of having to copy them to a discovery mailbox to view. This lets you quickly determine whether the search results are relevant. After you preview the results, you can revise your search query to narrow the search results and rerun the search. Items in the preview page are read-only versions of the actual search results, so you can't move, edit, delete or forward on the preview page.
+
+    For more information, see [Estimate or preview search results](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search).
