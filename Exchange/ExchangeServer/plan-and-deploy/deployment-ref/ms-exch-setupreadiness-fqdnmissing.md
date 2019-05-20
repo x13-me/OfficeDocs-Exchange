@@ -11,7 +11,7 @@ ms.date: 8/3/2018
 ms.reviewer: 
 title: Primary DNS Suffix is missing [ms.exch.setupreadiness.FqdnMissing]
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

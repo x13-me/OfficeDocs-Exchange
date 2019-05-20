@@ -9,7 +9,7 @@ ms.date: 7/12/2018
 ms.reviewer: 
 title: Select the language for an auto attendant
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

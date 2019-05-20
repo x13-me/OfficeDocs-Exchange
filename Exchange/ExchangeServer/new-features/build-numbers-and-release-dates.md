@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Exchange Server build numbers and release dates
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

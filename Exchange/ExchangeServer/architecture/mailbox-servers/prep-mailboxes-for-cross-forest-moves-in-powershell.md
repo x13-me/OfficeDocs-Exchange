@@ -9,7 +9,7 @@ ms.date: 7/9/2018
 ms.reviewer: 
 title: Prepare mailboxes for cross-forest moves using the Exchange Management Shell
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

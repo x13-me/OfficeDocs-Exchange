@@ -10,7 +10,7 @@ ms.collection: exchange-server
 ms.date: 6/7/2018
 ms.reviewer: 
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 title: Outlook on the web in Exchange Server
 
 ---

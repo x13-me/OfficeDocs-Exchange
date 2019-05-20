@@ -11,7 +11,7 @@ ms.date: 8/2/2018
 ms.reviewer: 
 title: Active Directory does not exist or cannot be contacted [CannotAccessAD]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

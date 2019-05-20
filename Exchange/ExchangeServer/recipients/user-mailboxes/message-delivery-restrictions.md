@@ -9,7 +9,7 @@ ms.date: 6/8/2018
 ms.reviewer: 
 title: Configure message delivery restrictions for a mailbox
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

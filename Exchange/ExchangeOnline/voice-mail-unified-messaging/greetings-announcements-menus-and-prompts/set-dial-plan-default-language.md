@@ -9,7 +9,7 @@ ms.date: 7/12/2018
 ms.reviewer: 
 title: Set the default language on a dial plan
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

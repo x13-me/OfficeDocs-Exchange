@@ -11,7 +11,7 @@ title: Recover deleted messages in a user's mailbox
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

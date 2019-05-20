@@ -11,7 +11,7 @@ ms.collection: exchange-online
 search.appverid:
 - BCS160
 - MET150
-ms.audience: Admin
+audience: Admin
 ms.collection: 
 - exchange-online
 - M365-email-calendar

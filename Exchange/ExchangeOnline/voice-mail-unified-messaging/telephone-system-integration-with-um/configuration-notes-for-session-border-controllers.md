@@ -9,7 +9,7 @@ ms.date: 7/25/2017
 ms.reviewer: 
 title: Configuration notes for supported session border controllers
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

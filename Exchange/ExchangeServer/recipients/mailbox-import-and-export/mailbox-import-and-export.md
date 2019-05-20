@@ -10,7 +10,7 @@ ms.collection: exchange-server
 ms.date: 7/5/2018
 ms.reviewer: 
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 title: Mailbox imports and exports in Exchange Server
 
 ---

@@ -12,7 +12,7 @@ ms.collection:
 - Strat_EX_EXOBlocker
 - exchange-server
 description: 'Summary: Use the steps in this article to synchronize public folders between Exchange Online and your on-premises Exchange deployment.'
-ms.audience: ITPro
+audience: ITPro
 title: Configure legacy on-premises public folders for a hybrid deployment
 
 ---

@@ -11,7 +11,7 @@ title: Manage mail flow using a third-party cloud service with Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
