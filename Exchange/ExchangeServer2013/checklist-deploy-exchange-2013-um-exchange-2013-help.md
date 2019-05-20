@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Checklist: Deploy Exchange 2013 UM
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Use this checklist to help you install and deploy Unified Messaging (UM) in your organization.
 
@@ -32,7 +29,6 @@ Before you start working with this checklist, make sure you're familiar with the
 For step-by-step guidance about how to deploy UM and Microsoft Lync Server, see [Checklist: Integrate Exchange 2013 UM with Lync Server](checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md).
 
 ## Checklist for deploying Unified Messaging
-
 
 <table>
 <colgroup>
@@ -69,7 +65,6 @@ For step-by-step guidance about how to deploy UM and Microsoft Lync Server, see 
 
 > [!WARNING]
 > You must deploy at least one Exchange 2013 Mailbox server in your organization before you configure the VoIP gateways or IP PBXs to send UM SIP and RTP traffic to the Exchange 2013 Client Access servers.
-
 
 </td>
 <td><p><a href="install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md">Install Exchange 2013 using the Setup wizard</a></p></td>
@@ -164,6 +159,4 @@ For step-by-step guidance about how to deploy UM and Microsoft Lync Server, see 
 </tbody>
 </table>
 
-
 Return to top
-

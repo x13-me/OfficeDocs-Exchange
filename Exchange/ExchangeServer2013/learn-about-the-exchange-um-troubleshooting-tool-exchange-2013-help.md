@@ -18,16 +18,12 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Online, Exchange Server 2013_
 
-
 The Microsoft Exchange 2010 Unified Messaging Troubleshooting Tool is an Exchange Management Shell cmdlet named **Test-ExchangeUMCallFlow**. You can use this tool to conduct a series of diagnostic tests for Unified Messaging (UM) in your organization. If any of the tests fail, the tool reports the reason for the failure and possible solutions to fix the problem. You can only use the UM Troubleshooting Tool on Exchange 2010 or later servers.
 
 The UM Troubleshooting Tool can be used to test whether voice mail is functioning correctly in both on-premises and cross-premises deployments. You can use this tool in UM deployments that include Microsoft Office Communications Server 2007 R2 or Microsoft Lync Server 2010 or later, or in UM deployments that include VoIP gateways, IP Private Branch eXchanges (IP PBXs), or session border controllers (SBCs).
 
-
 > [!NOTE]
 > The UM Troubleshooting Tool is used for testing and troubleshooting. The <STRONG>Test-UMConnectivity</STRONG> cmdlet, on the other hand, should be used for monitoring. The <STRONG>Test-UMConnectivity</STRONG> cmdlet is used with System Center Operations Manager (SCOM) management packs that are used for monitoring Exchange 2010 UM servers or Exchange 2013 Client Access and Mailbox servers and the telephony components. The <STRONG>Test-UMConnectivity</STRONG> cmdlet performs local SIP tests and local logon tests to mailboxes, and can be run as an SCOM task.
-
-
 
 To download the UM Troubleshooting Tool, see [Unified Messaging Troubleshooting Tool](https://go.microsoft.com/fwlink/p/?linkid=182625).
 
@@ -122,13 +118,13 @@ The UM Troubleshooting Tool sends a sample .wav file for 15 seconds. After the a
   - % of packet loss
 
   - The NMOS classification and rating that will be used to determine the audio quality will be:
-    
+
       - NMOS less than 2 = Poor
-    
+
       - NMOS greater than 2 but less than 3 = Average
-    
+
       - NMOS greater than 3 but less than 4 = Good
-    
+
       - NMOS greater than 4 but less than 5 = Excellent
 
 The UM Troubleshooting Tool supports testing UM dial plans that use Secured, SIP Secured, and Unsecured calls. If you choose Secured or SIP Secured, the thumbprint of the certificate that's used is checked to determine whether the certificate is expired and the type of certificate that's used for TLS (Transport Layer Security) communications. The certificate is used to correctly identify and ensure the identity of the remote computer. When Secured or SIP Secured mode is selected, the UM Troubleshooting Tool verifies whether the following are true:
@@ -220,12 +216,9 @@ The UM Troubleshooting Tool can be installed on a local Unified Messaging server
 If you're using the UM Troubleshooting Tool on a 64-bit version of Windows 7, Windows 8, or the 64-bit edition of Windows Server 2008, the following components must be installed before you can install the UM Troubleshooting Tool:
 
   - Microsoft .NET Framework 3.5 Service Pack 1 (SP1)   See [Microsoft .NET Framework 3.5 Service Pack 1](https://go.microsoft.com/fwlink/p/?linkid=152380).
-    
 
     > [!NOTE]
     > If the tool will be run on a Windows Vista or Windows Server 2008 computer, see <A href="https://go.microsoft.com/fwlink/p/?linkid=178998">Microsoft .NET Framework 3.5 Family Update for Windows Vista x64, and Windows Server 2008 x64</A>.
-
-
 
   - Windows Remote Management (WinRM) 2.0 and Windows PowerShell V2 (Windows6.0-KB968930.msu)   See Microsoft Knowledge Base article 968930, [Windows Management Framework Core package (Windows PowerShell 2.0 and WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
 
@@ -305,6 +298,4 @@ The following table includes the parameters you can use with the **Test-Exchange
 </tbody>
 </table>
 
-
 Return to top
-

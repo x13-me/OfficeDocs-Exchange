@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
 You can test the operation of Unified Messaging (UM) and related connected telephony equipment. When you perform the following procedure, the Client Access and Mailbox server tests the full end-to-end operation of the voice mail system. This includes the telephony components connected to the Client Access and Mailbox servers, including VoIP gateways, Private Branch eXchanges (PBXs), IP PBXs, and cabling.
 
@@ -37,11 +36,8 @@ For additional management tasks related to troubleshooting UM, see [UM services 
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## Use the Shell to test the operation of the Unified Messaging and telephony components
 
@@ -63,8 +59,5 @@ This example tests the Outlook Voice Access number on a dial plan by using a SIP
 Test-UMConnectivity -UMIPGateway OCSGateway1 -Phone "sip:SIPdialplan.contoso.com@contoso.com"
 ```
 
-
 > [!NOTE]
 > You can set the <CODE>-Timeout</CODE> parameter with a value of less than 5 seconds. However, we recommend that you always configure this parameter with a value of 5 seconds or more. Use mode 2 when the <CODE>&shy;UMIPGateway</CODE> parameter is specified in the command-line syntax.
-
-

@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Online, Exchange Server 2013_
 
-
 Unified Messaging (UM) combines voice messaging and email messaging into one mailbox that can be accessed from many different devices. Users can listen to their voice mail messages from their email Inbox or by using Outlook Voice Access from any telephone.
 
 When you're deploying UM in a Microsoft Exchange organization, you must install, deploy, and configure a single or multiple Voice over IP (VoIP) gateways to connect to the Private Branch eXchanges (PBXs) in your telephony network or install, deploy, and configure Session Initiation Protocol (SIP)-enabled PBXs or IP PBXs. If you're upgrading your current voice mail system, you'll need to deploy the devices that connect to your telephony network, install your Exchange Client Access and Mailbox servers, and then create the required UM components that allow your telephony network to connect to your data network. This enables incoming calls from the telephony network to connect to your VoIP gateways, IP PBXs, or SIP-enabled PBXs, and those devices to connect to your Exchange organization.
@@ -32,4 +31,3 @@ The following information will help you set up and deploy UM and enable voice ma
   - [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)   Learn about supported VoIP gateways, IP PBXs, and PBXs.
 
   - [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)  Learn how to set up your VoIP gateways, IP PBXs, and PBXs.
-

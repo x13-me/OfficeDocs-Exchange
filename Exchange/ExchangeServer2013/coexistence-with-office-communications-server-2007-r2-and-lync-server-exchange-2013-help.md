@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Communications Server 2007 R2 and Lync Server provide many end-user features, including instant messaging (IM), presence, multiparty IM, and their voice mail functionality can be integrated with Exchange Unified Messaging (UM). For deployments that integrate Lync Server 2010 or 2013, users can be enabled for Enterprise Voice, which lets users who are enabled for voice mail access their voice mail by using Lync Server components.
 
 When you integrate UM with the earlier versions of Office Communications Server or Lync Server, not all features are available. For users to take full advantage of the new enhanced end-user features such as high-resolution photos, the unified contact store, and Lync Archiving Integration, they must have user accounts on Lync Server 2013 and Exchange Server 2013, and must be using the latest version of the Lync 2013 client software. For example, the unified contact store isn't available to users who've been enabled for Enterprise Voice on Lync Server 2010. Also, high-resolution photos can't be displayed in Lync 2010.
@@ -28,7 +27,6 @@ When you're integrating Exchange UM with Office Communications Server 2007 R2 or
 ## Required hotfixes, rollups, cumulative updates, and service packs
 
 The following table shows the fixes that are required for each version of the products for integration with UM.
-
 
 <table>
 <colgroup>
@@ -50,4 +48,3 @@ The following table shows the fixes that are required for each version of the pr
 </tr>
 </tbody>
 </table>
-

@@ -16,16 +16,12 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013, Outlook 2013_
-
+_**Applies to:**: Exchange Server 2013, Outlook 2013_
 
 You may need to coordinate schedules with people in different organizations or with friends and family members so that you can work together on projects or plan social events. With Exchange 2013, administrators can set up different levels of calendar access to allow businesses to collaborate with other businesses and to let users share their schedules with others. Business-to-business calendar sharing is set up by creating *organization relationships*. User-to-user calendar sharing is set up by applying *sharing policies*.
 
-
 > [!IMPORTANT]
 > This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
-
-
 
 **Contents**
 
@@ -44,7 +40,6 @@ Sharing Documentation
 ## Sharing Scenarios in Exchange 2013
 
 The following sharing scenarios are supported in Exchange 2013:
-
 
 <table>
 <colgroup>
@@ -82,7 +77,6 @@ The following sharing scenarios are supported in Exchange 2013:
 </tr>
 </tbody>
 </table>
-
 
 The following table lists the differences between organization relationships and sharing policies.
 
@@ -160,40 +154,35 @@ The following table lists the differences between organization relationships and
 </tbody>
 </table>
 
-
 Return to top
 
 ## Limitations of free/busy sharing
 
 The following limitations apply when sharing free/busy information between Exchange organizations:
 
-1.  **Outlook Web Access 2003**: When a user in an Exchange 2003 organization uses Outlook Web Access to access free/busy for users in a remote Exchange 2013 organization, the request will fail. Outlook Web Access connections from Exchange 2003 can't make WebDAV (Web-based Distributed Authoring and Versioning) connections to a free/busy system folder to retrieve the free/busy information for remote users. Because Exchange 2013 doesn't support WebDAV connections, the Exchange 2003 server can't connect to External (FYDIBOHF25SPDLT) on the Exchange 2013 CAS server for Outlook Web Access requests. Outlook clients don't experience this limitation because they use MAPI instead of WebDAV when connecting to External (FYDIBOHF25SPDLT).
+1. **Outlook Web Access 2003**: When a user in an Exchange 2003 organization uses Outlook Web Access to access free/busy for users in a remote Exchange 2013 organization, the request will fail. Outlook Web Access connections from Exchange 2003 can't make WebDAV (Web-based Distributed Authoring and Versioning) connections to a free/busy system folder to retrieve the free/busy information for remote users. Because Exchange 2013 doesn't support WebDAV connections, the Exchange 2003 server can't connect to External (FYDIBOHF25SPDLT) on the Exchange 2013 CAS server for Outlook Web Access requests. Outlook clients don't experience this limitation because they use MAPI instead of WebDAV when connecting to External (FYDIBOHF25SPDLT).
 
-2.  **Wide Area Network (WAN) latency**: In Exchange 2003 organizations, the replicas for all free/busy folders must reside on Exchange 2010 SP2 or higher Mailbox servers. In environments where Exchange 2003 public folder databases are located in multiple physical sites, there may be excessive latency and performance issues if internal free/busy queries have to traverse WAN links to access Exchange 2010 public folder databases not located in the same physical site.
+2. **Wide Area Network (WAN) latency**: In Exchange 2003 organizations, the replicas for all free/busy folders must reside on Exchange 2010 SP2 or higher Mailbox servers. In environments where Exchange 2003 public folder databases are located in multiple physical sites, there may be excessive latency and performance issues if internal free/busy queries have to traverse WAN links to access Exchange 2010 public folder databases not located in the same physical site.
 
-3.  **Free/busy information period**: Free/busy information requests to an Exchange 2007 organization from an Exchange 2013 organization may fail due to a mismatch in the requested free/busy information period. By default, Exchange 2007 accepts availability requests for 42 days of free/busy information and Exchange 2013 may request 62 days of free/busy information. If the request exceeds the default 42 limit imposed by Exchange 2007, the request will fail.
-    
+3. **Free/busy information period**: Free/busy information requests to an Exchange 2007 organization from an Exchange 2013 organization may fail due to a mismatch in the requested free/busy information period. By default, Exchange 2007 accepts availability requests for 42 days of free/busy information and Exchange 2013 may request 62 days of free/busy information. If the request exceeds the default 42 limit imposed by Exchange 2007, the request will fail.
+
     Follow the steps below to configure your Exchange 2007 CAS servers to accept longer period free/busy information requests:
-    
-    1.  On all your Exchange 2007 CAS servers, open the following file with a text editor such as Notepad: \<Exchange Installation Path\>\\V14\\ClientAccess\\ExchWeb\\EWS\\web.config
-        
+
+    1. On all your Exchange 2007 CAS servers, open the following file with a text editor such as Notepad: \<Exchange Installation Path\>\\V14\\ClientAccess\\ExchWeb\\EWS\\web.config
 
         > [!CAUTION]
         > Before you make any changes to the web.config file, make a copy of the file and store it in a safe location.
 
-    
-    2.  Locate the **appSettings** section in the web.config file.
-    
-    3.  Add a new key "\<add key="maximumQueryIntervalDays" value="62" /\>" and save the web.config file.
-        
+    2. Locate the **appSettings** section in the web.config file.
+
+    3. Add a new key "\<add key="maximumQueryIntervalDays" value="62" /\>" and save the web.config file.
 
         > [!NOTE]
         > The maximumQueryIntervalDays value isn't present by default. When this value isn't present, Exchange 2007 uses the default interval of 42 days.
 
-    
-    4.  Stop and restart the Microsoft Internet Information Services (IIS) on all the Exchange 2007 CAS servers.
+    4. Stop and restart the Microsoft Internet Information Services (IIS) on all the Exchange 2007 CAS servers.
 
-4.  **Exchange organizations that have both on-premises and cloud users**: If you set up calendar sharing with another Exchange organization that is configured in a hybrid deployment with Microsoft Office 365, free/busy availability lookups for Office 365-based or remote users that have been moved to the cloud will fail. Because the organization relationship for your Exchange organization is with the remote on-premises Exchange organization, not the Office 365-based Exchange Online organization, the free/busy request can't query the Office 365-based users. Exchange 2013 doesn't support functionality to proxy these availability requests through the on-premises organization to the Office 365 service.
+4. **Exchange organizations that have both on-premises and cloud users**: If you set up calendar sharing with another Exchange organization that is configured in a hybrid deployment with Microsoft Office 365, free/busy availability lookups for Office 365-based or remote users that have been moved to the cloud will fail. Because the organization relationship for your Exchange organization is with the remote on-premises Exchange organization, not the Office 365-based Exchange Online organization, the free/busy request can't query the Office 365-based users. Exchange 2013 doesn't support functionality to proxy these availability requests through the on-premises organization to the Office 365 service.
 
 For details about how to configure free/busy sharing between common Exchange deployments, see [Configuring federated sharing between Exchange organizations](configuring-federated-sharing-between-exchange-organizations-exchange-2013-help.md).
 
@@ -223,7 +212,6 @@ Return to top
 
 The following table contains links to topics that will help you learn about and manage sharing in Exchange 2013.
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -251,4 +239,3 @@ The following table contains links to topics that will help you learn about and 
 </tr>
 </tbody>
 </table>
-

@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Microsoft Exchange Server 2013 includes 15 extension attributes. You can use these attributes to add information about a recipient, such as an employee ID, organizational unit (OU), or some other custom value for which there isn't an existing attribute. These custom attributes are labeled in Active Directory as **ms-Exch-Extension-Attribute1** through **ms-Exch-Extension-Attribute15**. In the Exchange Management Shell, the corresponding parameters are *CustomAttribute1* through *CustomAttribute15*. These attributes aren't used by any Exchange components. They can be used to store Active Directory data without having to extend the Active Directory schema.
 
 In Exchange Server 2003 and earlier, if you wanted to store this information in Active Directory, you had to create an attribute by extending the Active Directory schema. Schema extension requires planning, procuring object identifiers (OIDs) for new attributes, and testing the extension process in a test environment before you implement it in a production environment. In Exchange 2013, schema extensions can't be used in recipient filters used by address lists, e-mail address policies, and dynamic distribution groups.
@@ -67,11 +66,8 @@ For more information about multivalued properties, see [Modifying multivalued pr
 
 In many Exchange deployments, creating an e-mail address policy for all recipients in an OU is a common scenario. The OU isn't a filterable property that can be used in the *RecipientFilter* parameter of an e-mail address policy or an address list.
 
-
 > [!NOTE]
 > Dynamic distribution groups have an additional parameter that you can use to restrict it to recipients in a particular OU or container.
-
-
 
 If the recipients in that OU don't share any common properties that you can filter by, such as department or location, you can populate one of the custom attributes with a common value, as shown in this example.
 
@@ -98,8 +94,6 @@ This example creates a dynamic distribution group based on the recipients whose 
 > [!NOTE]
 > You must use the <EM>IncludedRecipients</EM> parameter if you use a <EM>Conditional</EM> parameter. In addition, you can't use <EM>Conditional</EM> parameters if you use the <EM>RecipientFilter</EM> parameter. If you want to include additional filters to create your dynamic distribution group, email address policies, or address lists, you should use the <EM>RecipientFilter</EM> parameter.
 
-
-
 ## Custom attribute example using ExtensionCustomAttributes parameter
 
 In this example, the mailbox for Kweku will have *ExtensionCustomAttribute1* updated to reflect that he's enrolled in the following educational classes: MATH307, ECON202, and ENGL300.
@@ -119,4 +113,3 @@ In this example, Kweku's *ExtensionCustomAttribute1* values are updated to refle
 ```powershell
 Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
 ```
-

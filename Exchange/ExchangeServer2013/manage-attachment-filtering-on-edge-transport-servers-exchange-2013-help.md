@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Attachment filtering is provided by the Attachment Filter agent that's available only on Edge Transport servers. Attachment filtering can help prevent files that are attached in email messages from entering your organization. You can configure one or more attachment filter entries to filter attachments either by content type or by file name.
 
 ## What do you need to know before you begin?
@@ -35,11 +34,8 @@ Attachment filtering is provided by the Attachment Filter agent that's available
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -69,13 +65,13 @@ Restart-Service MSExchangeTransport
 
 To verify that you successfully enabled or disabled attachment filtering, do the following:
 
-1.  Run the following command:
-    
+1. Run the following command:
+
     ```powershell
     Get-TransportAgent "Attachment Filtering Agent"
     ```
 
-2.  If the value of **Enabled** is `True`, attachment filtering is enabled. If the value is `False`, attachment filtering is disabled.
+2. If the value of **Enabled** is `True`, attachment filtering is enabled. If the value is `False`, attachment filtering is disabled.
 
 ## Use the Shell to view attachment filtering entries
 
@@ -139,13 +135,13 @@ The following example filters attachments that have the .jpg file name extension
 
 To verify that you successfully added an attachment filtering entry, do the following:
 
-1.  Run the following command to verify that the filtering entry exists.
-    
+1. Run the following command to verify that the filtering entry exists.
+
     ```powershell
     Get-AttachmentFilterEntry | Format-Table
     ```
 
-2.  Send a test message that contains a prohibited attachment from an external mailbox to an internal recipient and verify that the message is rejected, stripped, or deleted.
+2. Send a test message that contains a prohibited attachment from an external mailbox to an internal recipient and verify that the message is rejected, stripped, or deleted.
 
 ## Use the Shell to remove attachment filtering entries
 
@@ -177,13 +173,13 @@ The following example removes the file name entry for the .jpg file name extensi
 
 To verify that you successfully removed an attachment filtering entry, do the following:
 
-1.  Run the following command to verify that the filtering entry was removed.
-    
+1. Run the following command to verify that the filtering entry was removed.
+
     ```powershell
     Get-AttachmentFilterEntry | Format-Table
     ```
 
-2.  Send a test message that contains an allowed attachment from an external mailbox to an internal recipient and verify that the message was successfully delivered with the attachment.
+2. Send a test message that contains an allowed attachment from an external mailbox to an internal recipient and verify that the message was successfully delivered with the attachment.
 
 ## Use the Shell to view the attachment filtering action
 
@@ -218,4 +214,3 @@ For more information, see [Set-AttachmentFilterListConfig](https://technet.micro
 ## How do you know this worked?
 
 To verify that you successfully configured the attachment filtering action, send a test message that contains a prohibited attachment from an external mailbox to an internal recipient and verify that the message and the attachment are processed as you expect.
-

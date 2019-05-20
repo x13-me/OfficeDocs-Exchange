@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:**: Exchange Server_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -41,8 +40,8 @@ To resolve this issue:
 
 **To verify the local TCP/IP configuration**
 
-1.  Review the local TCP/IP configuration:
-    
+1. Review the local TCP/IP configuration:
+
     For more information, see "Configure TCP/IP to use DNS" ([https://go.microsoft.com/fwlink/?LinkId=68094](https://go.microsoft.com/fwlink/?linkid=68094)).
 
 <!-- end list -->
@@ -51,15 +50,14 @@ To resolve this issue:
 
 **To verify that the DNS server is running and can be contacted**
 
-1.  Verify that the DNS server is running by doing one or more of the following checks:
-    
-      - Look at the DNS server status from the DNS Administration program on the DNS server.
-    
-      - Restart the DNS server.
-        
-        For more information, see "Start, stop, pause, or restart a DNS server" ([https://go.microsoft.com/fwlink/?LinkId=62999](https://go.microsoft.com/fwlink/?linkid=62999)).
-    
-      - Verify the DNS server responsiveness by using the **nslookup** command.
-        
-        For more information, see the instructions in "Verify DNS server responsiveness using the nslookup command" ([https://go.microsoft.com/fwlink/?LinkId=63000](https://go.microsoft.com/fwlink/?linkid=63000)).
+1. Verify that the DNS server is running by doing one or more of the following checks:
 
+      - Look at the DNS server status from the DNS Administration program on the DNS server.
+
+      - Restart the DNS server.
+
+        For more information, see "Start, stop, pause, or restart a DNS server" ([https://go.microsoft.com/fwlink/?LinkId=62999](https://go.microsoft.com/fwlink/?linkid=62999)).
+
+      - Verify the DNS server responsiveness by using the **nslookup** command.
+
+        For more information, see the instructions in "Verify DNS server responsiveness using the nslookup command" ([https://go.microsoft.com/fwlink/?LinkId=63000](https://go.microsoft.com/fwlink/?linkid=63000)).

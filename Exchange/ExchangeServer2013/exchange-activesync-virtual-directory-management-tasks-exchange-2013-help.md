@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can manage several of the Exchange ActiveSync application settings in Exchange Server 2013 through the Exchange ActiveSync virtual directory. A virtual directory is used by Internet Information Services (IIS) to allow access to a web application such as Exchange ActiveSync. Some of the virtual directory settings you can manage for Exchange ActiveSync include authentication, security, and reporting.
 
 ## Exchange ActiveSync virtual directory settings
@@ -30,4 +29,3 @@ You can modify the following properties and settings on the Exchange ActiveSync 
   - **ExternalURL** The ExternalURL is the URL that external clients can use to access the virtual directory. This URL should be accessible from outside your internal network. For example, your ExternalURL could be https://www.contoso.com/.
 
   - **Authentication settings** The two methods of authentication you can configure for the Exchange ActiveSync virtual directory are Basic authentication and Client certificate authentication.
-

@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 If you're in an Exchange 2013 hybrid deployment and use Exchange Online Archiving (EOA) for Exchange Server, you must configure OAuth authentication between your on-premises and Exchange Online organizations after upgrading to Exchange 2013 Cumulative Update 5 (CU5). EOA allows you to have a cloud-based archive for your users with on-premises mailboxes. In this scenario, the Messaging Records Management (MRM) assistant on your on-premises mailbox server applies archiving policies and moves messages automatically from a user's mailbox to their cloud-based archive. In Exchange 2013 CU5, it uses OAuth authentication.
 
@@ -44,4 +43,3 @@ If OAuth isn't configured for your Exchange hybrid deployment, you can't use arc
   - You can configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so administrators and compliance officers can use the eDiscovery Center in SharePoint 2013 to search Exchange 2013 mailboxes. For more information, see [Configure Exchange for SharePoint eDiscovery Center](configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md).
 
   - You can configure an Exchange hybrid deployment using the Hybrid Configuration Wizard in Exchange 2013. For a customized, step-by-step hybrid deployment configuration checklist, see the [Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/p/?linkid=277105).
-

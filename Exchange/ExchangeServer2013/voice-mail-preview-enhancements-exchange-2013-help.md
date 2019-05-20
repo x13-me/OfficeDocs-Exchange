@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 Voice Mail Preview is a feature that's available to users who receive their voice mail messages using Microsoft Exchange Server 2010 or Exchange Server 2013 Unified Messaging (UM). Voice Mail Preview enhances UM voice mail functionality by providing a text version of audio recordings. The voice mail text is displayed in an email message within Microsoft Office Outlook Web App, Outlook 2010, and other email programs.
 
@@ -42,4 +41,3 @@ Some organizations require consistently error-free or near-error-free transcript
   - **Transcription performance**: Voice Mail Preview is a CPU-intensive operation that requires roughly twice the time it takes to process an audio file. If generating the voice mail preview text takes too long, CPU throttling stops processing the preview. In Exchange 2010, UM didn't try to transcribe any voice message that was longer than 75 seconds. In Exchange 2013, the entire voice message is transcribed, but the text for the message isn't included if it extends past 75 seconds.
 
   - **Color schemes**: Because of the confusion over the colors that were used to distinguish between low, medium, and high confidence for a voice mail preview, the color scheme has been removed in Exchange 2013 for Outlook Web App and Outlook.
-

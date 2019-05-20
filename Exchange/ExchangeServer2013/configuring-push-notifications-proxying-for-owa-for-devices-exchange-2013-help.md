@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Online, Exchange Server 2013_
 
-
 Enabling push notifications for OWA for Devices (OWA for iPhone and OWA for iPad) for an on-premises deployment of Microsoft Exchange 2013 lets a user receive updates on the Outlook Web App icon on his or her OWA for iPhone and OWA for iPad indicating the number of unseen messages in the user's inbox. If push notifications aren't configured and enabled, a user with OWA for Devices has no way of knowing that unseen messages are in the inbox without launching the app. When a new message is available, the OWA for Devices badge is updated on the user's device and looks like the following badge.
 
 ![OWA for Devices Badge](images/Dn511017.f399ba74-5395-4d24-ae7d-d16bf0ac7b35(EXCHG.150).png "OWA for Devices Badge")
@@ -31,13 +30,13 @@ In order to enable push notifications, the on-premises Exchange 2013 servers mus
 
 To enable push notifications, the admin must:
 
-1.  Enroll your organization in Office 365 for business.
+1. Enroll your organization in Office 365 for business.
 
-2.  Update all on-premises servers to Exchange Server 2013 Cumulative Update 3 (CU3) or later.
+2. Update all on-premises servers to Exchange Server 2013 Cumulative Update 3 (CU3) or later.
 
-3.  Set up On-premises Exchange 2013 to Office 365 Authentication
+3. Set up On-premises Exchange 2013 to Office 365 Authentication
 
-4.  Enable push notifications from the on-premises Exchange Server 2013 to Office 365 and verify that push notifications are working.
+4. Enable push notifications from the on-premises Exchange Server 2013 to Office 365 and verify that push notifications are working.
 
 ## Enroll your organization in Office 365 for business
 
@@ -55,28 +54,25 @@ Using a single, standardized method for server-to-server authentication is the a
 
 OAuth authentication typically involves three components: a single authorization server and the two realms that need to communicate with one another. Security tokens are issued by the authorization server (also known as a security token server) to the two realms that need to communicate; these tokens verify that communications originating from one realm should be trusted by the other realm. For example, the authorization server might issue tokens that verify that users from a specific Lync Server 2013 realm are able to access a specified Exchange 2013 realm, and vice versa.
 
-
-> [!TIP]  
+> [!TIP]
 > A realm is a security container.
-
-
 
 However, for on-premises server-to-server authentication there is no need to use a third-party token server. Server products such as Lync Server 2013 and Exchange 2013 each have a built-in token server that can be used for authentication purposes with other Microsoft servers (such as SharePoint Server) that support server-to-server authentication. For example, Lync Server 2013 can issue and sign a security token by itself, then use that token to communicate with Exchange 2013. In a case like this, there is no need for a third-party token server.
 
 In order to configure server-to-server authentication for an on-premises implementation of Exchange Server 2013 to Office 365, you must complete two steps:
 
   -  **Step 1 - Assign a certificate to the built-in token issuer of the on-premises Exchange Server.** First, an on-premises Exchange admin must use the following Exchange Management Shell script to create a certificate if one wasn't created before and assign it to the built-in token issuer of the on-premises Exchange Server. This is a one-time process; after a certificate has been created, that certificate should be reused for other authentication scenarios and not replaced. Make sure to update the value of *$tenantDomain* to be the name of your domain. To do this, copy and paste the following code.
-   
-        > [!WARNING]  
+
+        > [!WARNING]
         > Copying and pasting the code into a text editor like Notepad and saving it with a .ps1 extension makes it easier to run Shell scripts.
 
         ```powershell
         # Make sure to update the following $tenantDomain with your Office 365 tenant domain.
-        
+
         $tenantDomain = "Fabrikam.com"
-        
+
         # Check whether the cert returned from Get-AuthConfig is valid and keysize must be >= 2048
-        
+
         $c = Get-ExchangeCertificate | ?{$_.CertificateDomains -eq $env:USERDNSDOMAIN -and $_.Services -ge "SMTP" -and $_.PublicKeySize -ge 2048 -and $_.FriendlyName -match "OAuth"}
         If ($c.Count -eq 0)
         {
@@ -90,29 +86,29 @@ In order to configure server-to-server authentication for an on-premises impleme
         {
             $c = $c[0]
         }
-        
+
         $a = $c | ?{$_.Thumbprint -eq (get-authconfig).CurrentCertificateThumbprint}
         If ($a.Count -eq 0)
         {
             Set-AuthConfig -CertificateThumbprint $c.Thumbprint
         }
         Write-Host "Configured Certificate Thumbprint is:"(get-authconfig).CurrentCertificateThumbprint
-        
+
         # Export the certificate
-        
+
         Write-Host "Exporting certificate..."
         if((test-path $env:SYSTEMDRIVE\OAuthConfig) -eq $false)
         {
             md $env:SYSTEMDRIVE\OAuthConfig
         }
         cd $env:SYSTEMDRIVE\OAuthConfig
-        
+
         $oAuthCert = (dir Cert:\LocalMachine\My) | where {$_.FriendlyName -match "OAuth"}
         $certType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
         $certBytes = $oAuthCert.Export($certType)
         $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
         [System.IO.File]::WriteAllBytes($CertFile, $certBytes)
-        
+
         # Set AuthServer
         $authServer = Get-AuthServer MicrosoftSts;
         if ($authServer.Length -eq 0)
@@ -139,46 +135,43 @@ Configured Certificate Thumbprint is: 7595DBDEA83DACB5757441D44899BCDB9911253C
 Exporting certificate...
 Complete.
 ```
-    
-> [!WARNING]  
+
+> [!WARNING]
 > Before you continue, the Azure Active Directory Module for Windows PowerShell cmdlets is required. If the Azure Active Directory Module for Windows PowerShell cmdlets (previously known as the Microsoft Online Services Module for Windows PowerShell) hasn't been installed, you can install it from <A href="https://aka.ms/aadposh">Manage Azure AD using Windows PowerShell</A>.
 
-
-
   -  **Step 2 - Configure Office 365 to communicate with Exchange 2013 on-premises.** Configure the Office 365 server that Exchange Server 2013 will communicate with to be a partner application. For example, if Exchange Server 2013 on-premises needs to communicate with Office 365, you need to configure Exchange on-premises to be a partner application. A partner application is any application that Exchange 2013 can directly exchange security tokens with, without having to go through a third-party security token server. An on-premises Exchange 2013 administrator must use the following Exchange Management Shell script to configure the Office 365 tenant that Exchange 2013 will communicate with to be a partner application. During execution, there will be a prompt to enter the administrator user name and password of the Office 365 tenant domain (for example, administrator@fabrikam.com). Make sure to update the value of *$CertFile* to the location of the certificate if not created from the previous script. To do this, copy and paste the following code.
-    
 
         ```powershell
         # Make sure to update the following $CertFile with the path to the cert if not using the previous script.
-        
+
         $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
-        
+
         If (Test-Path $CertFile)
         {
             $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
-        
+
             $objFSO = New-Object -ComObject Scripting.FileSystemObject;
             $CertFile = $objFSO.GetAbsolutePathName($CertFile);
-        
+
             $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
             $cer.Import($CertFile);
             $binCert = $cer.GetRawCertData();
             $credValue = [System.Convert]::ToBase64String($binCert);
-        
+
             Write-Host "Please enter the administrator user name and password of the Office 365 tenant domain..."
-        
+
             Connect-MsolService;
             Import-Module msonlineextended;
-        
+
             Write-Host "Adding a key to Service Principal..."
-        
+
             $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
             New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue -StartDate $cer.GetEffectiveDateString() -EndDate $cer.GetExpirationDateString()
         }
         Else
         {
             Write-Error "Cannot find certificate."
-        } 
+        }
         ```
 
         The expected result should be as follows.
@@ -188,7 +181,6 @@ Complete.
         Adding a key to Service Principal...
         Complete.
         ```
-
 
 ## Enable push notifications proxying
 
@@ -230,20 +222,20 @@ The expected result should be similar to the following output.
 After the preceding steps have been completed, push notifications can be tested by one of the following:
 
   - **Sending a test email message to the user's mailbox:**
-    
-    1.  Set up an account in OWA for Devices on a mobile device to subscribe for notifications.
-    
-    2.  Return to the device home screen, which puts OWA for Devices in the background.
-    
-    3.  Send an email message from another device, such as a PC, that goes to the inbox of the account set up on the mobile device.
-    
-    4.  This should result in an unseen count being indicated on the app icon within a few minutes.
+
+    1. Set up an account in OWA for Devices on a mobile device to subscribe for notifications.
+
+    2. Return to the device home screen, which puts OWA for Devices in the background.
+
+    3. Send an email message from another device, such as a PC, that goes to the inbox of the account set up on the mobile device.
+
+    4. This should result in an unseen count being indicated on the app icon within a few minutes.
 
   - **Enabling monitoring.** An alternate method to test push notifications, or to investigate why notifications are failing, is to enable monitoring on a mailbox server in your organization. An on-premises Exchange 2013 server admin must invoke push notification proxy monitoring by using the following script. To do this, copy and paste the following code.
-    
+
     ```powershell
         # Send a push notification to verify connectivity.
-        
+
         $s = Get-ExchangeServer | ?{$_.ServerRole -match "Mailbox"}
         If ($s.Count -gt 1)
         {
@@ -253,10 +245,10 @@ After the preceding steps have been completed, push notifications can be tested 
         {
             # Restart the monitoring service to clear the cache from when push was previously disabled.
             Restart-Service MSExchangeHM
-        
+
             # Give the monitoring service enough time to load.
             Start-Sleep -Seconds:120
-        
+
             Invoke-MonitoringProbe PushNotifications.Proxy\PushNotificationsEnterpriseConnectivityProbe -Server:$s.Fqdn | fl ResultType, Error, Exception
         }
         Else
@@ -266,7 +258,7 @@ After the preceding steps have been completed, push notifications can be tested 
     ```
 
     The expected result should be similar to the following output.
-    
+
     ```powershell
         ResultType : Succeeded
         Error      :

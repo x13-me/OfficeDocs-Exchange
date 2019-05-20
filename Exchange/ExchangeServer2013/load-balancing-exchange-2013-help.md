@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Load balancing is a way to manage which of your servers receive traffic. Load balancing helps distribute incoming client connections over a variety of endpoints (for example, Client Access servers) to ensure that no one endpoint takes on a disproportional share of the load. Load balancing can also provide failover redundancy in case one or more endpoints fails. By using load balancing with Exchange Server 2013, you ensure that your users continue to receive Exchange service in case of a computer failure. Load balancing also enables your deployment to handle more traffic than one server can process while offering a single host name for your clients.
 
 Load balancing serves two primary purposes. It reduces the impact of a single Client Access server failure within one of your Active Directory sites. In addition, load balancing ensures that the load on each of your Client Access servers is evenly distributed.
@@ -70,4 +69,3 @@ Windows Network Load Balancing (WNLB) is a common software load balancer used fo
   - Using WNLB can result in port flooding, which can overwhelm networks.
 
   - Because WNLB only performs client affinity using the source IP address, it's not an effective solution when the source IP pool is small. This can occur when the source IP pool is from a remote network subnet or when your organization is using network address translation.
-

@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Datacenter Activation Coordination (DAC) mode is a property of a database availability group (DAG). DAC mode is disabled by default but should be enabled for all DAGs with two or more members that use continuous replication. DAC mode shouldn't be enabled for DAGs that use third-party replication mode unless specified by the third-party vendor.
 
 DAC mode is used to control the database mount on startup behavior of a DAG. This control is designed to prevent split brain from occurring at the database level during a datacenter switchback. Split brain, also known as split brain syndrome, is a condition that results in a database copying being mounted as an active copy on two members of the same DAG that are unable to communicate. Split brain is prevented using DAC mode because DAC mode requires DAG members to obtain permission to mount databases before they can be mounted.
@@ -43,11 +42,8 @@ DAGs with two members have inherent limitations that prevent the DACP bit alone 
 
   - If the time that the DACP bit was set is more recent than the boot time of the witness server, the system assumes that the DAG member was rebooted for some other reason (perhaps a scheduled outage in which maintenance was performed or perhaps a system crash or power loss isolated to the DAG member), and the DAG member is permitted to mount databases.
 
-
 > [!IMPORTANT]
 > Because the witness server's boot time is used to determine whether a DAG member can mount its active databases on startup, you should never restart the witness server and the sole DAG member at the same time. Doing so may leave the DAG member in a state where it can't mount databases on startup. If this happens, you must run the <A href="https://technet.microsoft.com/en-us/library/dd351169(v=exchg.150)">Restore-DatabaseAvailabilityGroup</A> cmdlet on the DAG. This resets the DACP bit and permits the DAG member to mount databases.
-
-
 
 ## Other benefits of DAC mode
 
@@ -72,4 +68,3 @@ Set-DatabaseAvailabilityGroup -Identity DAG2 -DatacenterActivationMode DagOnly
 In the preceding example, DAG2 is enabled for DAC mode.
 
 For more information about enabling DAC mode, see [Configure database availability group properties](configure-database-availability-group-properties-exchange-2013-help.md) and [Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/en-us/library/dd297934\(v=exchg.150\)).
-

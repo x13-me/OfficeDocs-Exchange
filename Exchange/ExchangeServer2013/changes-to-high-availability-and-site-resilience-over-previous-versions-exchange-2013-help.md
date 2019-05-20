@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Changes to high availability and site resilience over previous versions
 
- 
-
 _**Applies to:** Exchange Server 2013 SP1_
-
 
 Exchange 2013 uses DAGs and mailbox database copies, along with other features such as single item recovery, retention policies, and lagged database copies, to provide high availability, site resilience, and Exchange native data protection. The high availability platform, Exchange Information Store and Extensible Storage Engine (ESE) have all been enhanced to provide greater availability and easier management, and to reduce costs. These enhancements include:
 
@@ -139,7 +136,6 @@ Automatic recovery from storage failures continues the innovation introduced in 
 
 Even in JBOD environments, storage array controllers can have issues, such as crashing or hanging. Exchange 2010 included hung I/O detection and recovery features that provided enhanced resilience. These features are listed in the following table.
 
-
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -177,9 +173,7 @@ Even in JBOD environments, storage array controllers can have issues, such as cr
 </tbody>
 </table>
 
-
 Exchange 2013 enhances server and storage resilience by including new behaviors for other serious conditions. These conditions and behaviors are described in the following table.
-
 
 <table>
 <colgroup>
@@ -233,7 +227,6 @@ Exchange 2013 enhances server and storage resilience by including new behaviors 
 </tr>
 </tbody>
 </table>
-
 
 ## Lagged copy enhancements
 
@@ -319,13 +312,13 @@ In Exchange 2013, Active Manager performs the same BCS checks and phases to dete
 
 BCSS includes several new health checks that are part of the built in managed availability monitoring components in Exchange 2013. There are four new additional checks performed by Active Manager (listed in the order in which they're performed):
 
-1.  **All Healthy**: Checks for a server hosting a copy of the affected database that has all monitoring components in a healthy state.
+1. **All Healthy**: Checks for a server hosting a copy of the affected database that has all monitoring components in a healthy state.
 
-2.  **Up to Normal Healthy**: Checks for a server hosting a copy of the affected database that has all monitoring components with Normal priority in a healthy state.
+2. **Up to Normal Healthy**: Checks for a server hosting a copy of the affected database that has all monitoring components with Normal priority in a healthy state.
 
-3.  **All Better than Source**: Checks for a server hosting a copy of the affected database that has monitoring components in a state that's better than the current server hosting the affected copy.
+3. **All Better than Source**: Checks for a server hosting a copy of the affected database that has monitoring components in a state that's better than the current server hosting the affected copy.
 
-4.  **Same as Source**: Checks for a server hosting a copy of the affected database that has monitoring components in a state that's the same as the current server hosting the affected copy.
+4. **Same as Source**: Checks for a server hosting a copy of the affected database that has monitoring components in a state that's the same as the current server hosting the affected copy.
 
 If BCSS is invoked as a result of a failover that's triggered by a managed availability monitoring component (for example, via a Failover responder), an additional mandatory constraint is enforced where the target server's component health must be better than the server on which the failover occurred. For example, if a failure of Microsoft Office Outlook Web App triggers a managed availability failover via a Failover responder, BCSS must select a server hosting a copy of the affected database on which Outlook Web App is healthy.
 
@@ -348,4 +341,3 @@ All DAGs running Windows Server 2008 R2 or Windows Server 2012 require at least 
   - The Windows failover cluster cannot be managed using the Failover Cluster Management tool. It must be managed using Windows PowerShell, and the PowerShell cmdlets must be run against individual cluster members.
 
 When running on Windows Server 2012 R2 or later, Service Pack 1 (SP1) for Exchange 2013 and later enable you to create a DAG without a cluster administrative access point. You can create a DAG without an administrative access point using the Exchange Admin Center or by using the Shell. For more information, see [Creating DAGs](managing-database-availability-groups-exchange-2013-help.md) and [Create a database availability group](create-a-database-availability-group-exchange-2013-help.md).
-

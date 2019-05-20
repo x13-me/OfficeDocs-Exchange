@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-
 Understanding storage options and requirements for the Mailbox server role in Microsoft Exchange Server 2013 is an important part of your Mailbox server storage design solution.
 
 **Contents**
@@ -70,7 +69,6 @@ The following table describes supported storage architectures and provides best 
 </tr>
 </tbody>
 </table>
-
 
 A network-attached storage (NAS) unit is a self-contained computer connected to a network, with the sole purpose of supplying file-based data storage services to other devices on the network. The operating system and other software on the NAS unit provide the functionality of data storage, file systems, and access to files, and the management of these functionalities (for example, file storage).
 
@@ -170,7 +168,6 @@ The following table provides a list of supported physical disk types and provide
 </tr>
 </tbody>
 </table>
-
 
 ## Factors to consider when choosing disk types
 
@@ -340,7 +337,6 @@ From a performance perspective, using large, slower disks for Exchange storage i
 </tbody>
 </table>
 
-
 Return to top
 
 ## Best practices for supported storage configurations
@@ -369,9 +365,9 @@ While JBOD is supported in high availability architectures that have 3 or more h
 
 Mailbox database and log volume co-location is not recommended in standalone architectures. In high availability architectures, there are two possibilities for this scenario:
 
-1.  Single database per volume
+1. Single database per volume
 
-2.  Multiple databases per volume
+2. Multiple databases per volume
 
 **Single Database Per Volume**
 
@@ -418,7 +414,6 @@ From an Exchange perspective, JBOD means having both the database and its associ
 </tbody>
 </table>
 
-
 To deploy on JBOD with the primary datacenter servers, you need three or more highly available database copies within the DAG. If mixing lagged copies on the same server hosting highly available database copies (for example, not using dedicated lagged database copy servers), you need at least two lagged database copies.
 
 For the secondary datacenter servers to use JBOD, you should have at least two highly available database copies in the secondary datacenter. The loss of a copy in the secondary datacenter won't result in requiring a reseed across the WAN or having a single point of failure in the event the secondary datacenter is activated. If mixing lagged database copies on the same server hosting highly available database copies (for example, not using dedicated lagged database copy servers), you need at least two lagged database copies.
@@ -458,7 +453,6 @@ Multiple databases per volume is a new JBOD scenario available in Exchange 2013 
 </tbody>
 </table>
 
-
 The following table provides guidance about storage array configurations for Exchange 2013.
 
 ### Supported RAID types for the Exchange 2013 Mailbox server role
@@ -494,7 +488,6 @@ The following table provides guidance about storage array configurations for Exc
 </tr>
 </tbody>
 </table>
-
 
 The following table provides guidance about database and log file choices.
 
@@ -572,7 +565,6 @@ The following table provides guidance about database and log file choices.
 </tbody>
 </table>
 
-
 The following table provides guidance about Windows disk types.
 
 ### Windows disk types for the Exchange 2013 Mailbox server role
@@ -609,7 +601,6 @@ The following table provides guidance about Windows disk types.
 </tr>
 </tbody>
 </table>
-
 
 The following table provides guidance on volume configurations.
 
@@ -751,6 +742,4 @@ The following table provides guidance on volume configurations.
 </tbody>
 </table>
 
-
 Return to top
-

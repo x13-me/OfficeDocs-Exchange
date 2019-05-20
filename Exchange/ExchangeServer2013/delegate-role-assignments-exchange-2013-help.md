@@ -18,22 +18,15 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Management role delegation enables role assignees to assign a specified management role to other management role groups, management role assignment policies, users, or universal security groups (USG). By default, only members of the Organization Management management role group can delegate role assignments. When a new installation of Microsoft Exchange Server 2013 is deployed, only the user account that installed Exchange 2013 is a member of the Organization Management role group.
 
 If you assign a delegating role assignment to a role group, any member of the role group can delegate the associated management role to other role assignees.
 
-
 > [!IMPORTANT]
 > Delegating role assignments doesn't give the role assignee the permissions granted by the role, only the ability to assign the role to others. If you want to also give the permissions granted by the role to the role assignee, you must also create a regular role assignment. To create a regular role assignment, see the following topics:<BR><A href="manage-role-groups-exchange-2013-help.md">Manage role groups</A><BR><A href="manage-role-assignment-policies-exchange-2013-help.md">Manage role assignment policies</A><BR><A href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">Add a role to a user or USG</A>
 
-
-
-
 > [!NOTE]
 > This topic discusses management role assignment delegation. If you want to delegate who can add members to or remove members from role groups, which is the recommended method of delegation, see <A href="manage-role-groups-exchange-2013-help.md">Manage role groups</A>.
-
-
 
 For more information about regular role assignments and delegating management role assignments, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
 
@@ -49,11 +42,8 @@ Looking for other management tasks related to managing permissions? Check out [A
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## Use the Shell to delegate a management role
 
@@ -63,11 +53,8 @@ You can create delegating role assignments using the same predefined scopes, rec
 
   - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
-
 > [!NOTE]
 > You can't create a delegating role assignment to a management role assignment policy.
-
-
 
 This example creates a delegating role assignment to enable members of the Senior Admins role group to assign the Mail Recipients role to any role assignee in the Exchange organization.
 
@@ -82,4 +69,3 @@ This example creates a delegating role assignment to enable members of the Senio
 ```
 
 For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335193\(v=exchg.150\)).
-

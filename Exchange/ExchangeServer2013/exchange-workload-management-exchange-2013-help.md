@@ -18,16 +18,12 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Online, Exchange Server 2013_
 
-
 An Exchange workload is an Exchange Server feature, protocol, or service that's been explicitly defined for the purposes of Exchange system resource management. Each Exchange workload consumes system resources such as CPU, mailbox database operations, or Active Directory requests to run user requests or background work. Examples of Exchange workloads include Outlook Web App, Exchange ActiveSync, mailbox migration, and mailbox assistants.
 
 You manage Exchange workloads by controlling how resources are consumed by individual users (sometimes called user throttling in Exchange 2010). Controlling how Exchange system resources are consumed by individual users was possible in Exchange Server 2010, and this capability has been expanded for Exchange Server 2013.
 
-
 > [!NOTE]
 > Managing workloads by monitoring the health of system resources on the Exchange servers in your organization should only be done under the direction of Microsoft Customer Service and Support.
-
-
 
 ## Managing workloads by controlling how resources are consumed by individual users
 
@@ -87,8 +83,5 @@ Assign throttling policies
 
   - [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/en-us/library/ff459231\(v=exchg.150\))
 
-
 > [!NOTE]
 > The <STRONG>&#42;-ResourcePolicy</STRONG>, <STRONG>&#42;-WorkloadManagementPolicy</STRONG> and <STRONG>&#42;-WorkloadPolicy</STRONG> system workload management cmdlets have been deprecated. System workload management settings should be customized only under the direction of Microsoft Customer Service and Support.
-
-

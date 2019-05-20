@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 You can inspect email attachments in your organization by setting up transport rules. Exchange offers transport rules that provide the ability to examine email attachments as a part of your messaging security and compliance needs. When you inspect attachments, you can then take action on the messages that were inspected based on the content or characteristics of those attachments. Here are some attachment-related tasks you can do by using transport rules:
 
@@ -42,7 +41,6 @@ For more information about transport rules, including the full range of conditio
 ## Inspect the content within attachments
 
 You can use the transport rule conditions in the following table to examine the content of attachments to messages. For these conditions, only the first 150 KB of an attachment is inspected. In order to start using these conditions when inspecting messages, you need to add them to a transport rule. Learn about creating or changing rules at [Manage mail flow rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
-
 
 <table>
 <colgroup>
@@ -71,7 +69,6 @@ You can use the transport rule conditions in the following table to examine the 
 </tbody>
 </table>
 
-
 The Exchange Management Shell names for the conditions listed here are parameters that require the `TransportRule` cmdlet.
 
   -  Learn more about the cmdlet at [New-TransportRule](https://technet.microsoft.com/en-us/library/bb125138\(v=exchg.150\)).
@@ -87,7 +84,6 @@ If the message contains a compressed archive file such as a .zip or .cab file, t
 ## Supported file types for transport rule content inspection
 
 The following table lists the file types supported by transport rules. The system automatically detects file types by inspecting file properties rather than the actual file name extension, thus helping to prevent malicious hackers from being able to bypass transport rule filtering by renaming a file extension. A list of file types with executable code that can be checked within the context of transport rules is listed later in this topic.
-
 
 <table>
 <colgroup>
@@ -157,11 +153,9 @@ The following table lists the file types supported by transport rules. The syste
 </tbody>
 </table>
 
-
 ## Inspect the file properties of attachments
 
 The following transport rule conditions inspect the properties of a file that is attached to a message. In order to start using these conditions when inspecting messages, you need to add them to a transport rule. A list of supported file types with executable code that can be checked within the context of transport rules is listed here. For more information about creating or changing rules, see [Manage mail flow rules](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
-
 
 <table>
 <colgroup>
@@ -210,7 +204,6 @@ The following transport rule conditions inspect the properties of a file that is
 </tbody>
 </table>
 
-
 The Exchange Management Shell names for the conditions listed here are parameters that require the `TransportRule` cmdlet.
 
   -  Learn more about the cmdlet at [New-TransportRule](https://technet.microsoft.com/en-us/library/bb125138\(v=exchg.150\)).
@@ -220,7 +213,6 @@ The Exchange Management Shell names for the conditions listed here are parameter
 ## Supported executable file types for transport rule inspection
 
 The transport agent uses true type detection by inspecting file properties rather than merely the file extensions. This helps to prevent malicious hackers from being able to bypass your rule by renaming a file extension. The following table lists the executable file types supported by these conditions. If a file is found that is not listed here, the `AttachmentIsUnsupported` condition is triggered.
-
 
 <table>
 <colgroup>
@@ -297,7 +289,6 @@ The transport agent uses true type detection by inspecting file properties rathe
 </tbody>
 </table>
 
-
 ## Extending the number of supported file types
 
 The supported file types listed in this topic can be revised at any time using IFilter integration. For more information, see [Register Filter Pack IFilters with Exchange 2013](register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md).
@@ -325,4 +316,3 @@ DLP policies and attachment-related conditions can help you enforce your busines
 [Transport rule conditions (predicates)](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)
 
 [Use mail flow rules to inspect message attachments](https://technet.microsoft.com/en-us/library/jj919236\(v=exchg.150\)) in Exchange Online
-

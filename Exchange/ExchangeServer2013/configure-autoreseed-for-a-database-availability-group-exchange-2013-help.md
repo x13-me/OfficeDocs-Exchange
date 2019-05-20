@@ -18,14 +18,10 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 AutoReseed is a feature for quickly restoring database redundancy after a disk failure. If a disk fails, the database copies stored on that disk are automatically reseeded to a preconfigured spare disk on the Mailbox server. You can use the steps in this topic to configure AutoReseed for a database availability group (DAG).
-
 
 > [!WARNING]
 > The AutoReseed feature doesn't perform any prerequisite configuration tasks for you. Installing disks correctly, adding spare disks to the system, replacing bad disks, and formatting new disks must be done manually by an administrator.
-
-
 
 For additional management tasks related to DAGs, see [Managing database availability groups](managing-database-availability-groups-exchange-2013-help.md).
 
@@ -41,11 +37,8 @@ For additional management tasks related to DAGs, see [Managing database availabi
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## How do you do this?
 
@@ -260,14 +253,14 @@ Database properties that are returned should indicate that the database file and
 
 To verify that you've configured AutoReseed for a DAG, do the following:
 
-1.  Run the following command to verify the DAG is configured correctly.
-    
+1. Run the following command to verify the DAG is configured correctly.
+
     ```powershell
     Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
     ```
-    
-2.  Run the following command to verify the directory structure is configured correctly (below are the default paths; if necessary, substitute the paths for the paths you're using).
-        
+
+2. Run the following command to verify the directory structure is configured correctly (below are the default paths; if necessary, substitute the paths for the paths you're using).
+
     ```powershell
     Dir C:\ExchangeDatabases /s
     ```
@@ -275,5 +268,3 @@ To verify that you've configured AutoReseed for a DAG, do the following:
     ```powershell
     Dir c:\ExchangeVolumes /s
     ```
-
-

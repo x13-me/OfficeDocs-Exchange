@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 *Message throttling* refers to a group of limits that are set on the number of messages and connections that can be processed by a Microsoft Exchange Server 2013 computer. These limits prevent the accidental or intentional exhaustion of system resources on the Exchange server.
 
 **Contents**
@@ -57,32 +56,29 @@ To provide more consistent message throughput and predictable message delivery l
 
 Exchange 2013 transport servers track the average delivery cost of messages that are sent by individual users. By using message costs, Exchange 2013 provides a group of settings that can control the effect that a user or connection has on an Exchange organization. This group of settings is known as a *throttling policy*. When a user repeatedly sends costly messages, such as messages that have large attachments or messages that are sent to many recipients, the Exchange 2013-based transport servers use a throttling policy to assign a lower priority to higher-cost messages from the user while continuing to deliver lower-cost messages. This new behavior adds a "quality of service" aspect to the message throttling functionality in Exchange 2013.
 
-
 > [!NOTE]
 > Message throttling doesn't affect the message priority from a user's perspective. Messages still retain the original priority set by the user. For example, messages retain a setting of Important or Urgent, and so on.
-
-
 
 To support this functionality, Exchange 2013 uses the following mechanisms:
 
   - **Internal prioritization agent**: This agent is triggered on the **OnResolvedMessage** event and assigns a lower priority to messages from the same sender that have a high accumulated cost. This cost is measured over a period of one minute and affects messages that have more than 500 recipients or that are larger than 1 megabyte (MB).
 
   - **Quota-based priority queuing for the MapiDelivery queue type**: This mechanism causes Exchange to deliver messages in a normal-priority queue more frequently than messages in a low-priority queue. By default, the normal-to-low message ratio is 20:1. However, new messages from a lower priority queue are never delivered sooner than new items from a higher priority queue. For example, consider the following scenario:
-    
-    1.  Twenty normal priority messages are delivered. By default, the next delivered message is a lower priority message.
-    
-    2.  Two new messages are received by the transport server: One message from a higher priority queue and one message from a lower priority queue.
-    
+
+    1. Twenty normal priority messages are delivered. By default, the next delivered message is a lower priority message.
+
+    2. Two new messages are received by the transport server: One message from a higher priority queue and one message from a lower priority queue.
+
     In this scenario, the message from the higher priority queue is delivered first. Then, the message from the lower priority queue is delivered.
 
   - **Throttle concurrent connections based on messaging database health**: This mechanism monitors the health of the Exchange messaging database (MDB) health and throttles concurrent connections to Exchange transport servers based on an assigned Health Measure value. The MDB is monitored by the Resource Health Monitor API in the Transport service on the Mailbox server and is assigned a health value from -1 through 100. This value is based on the RPC performance statistics that are included with each RPC response from the Store.exe process in the Mailbox Transport service. The Resource Health framework uses both the **Requests/Second** rate performance counter and the **Average RPC Latency** performance counter to calculate a health value for the database. To help maintain a consistent interactive user experience, Exchange reduces the number of concurrent connections as the health value decreases. The following health value ranges are available:
-    
+
       - **-1:** This value indicates that the MDB health state is unknown. This value is assigned when the database starts. In this scenario, the database is considered healthy.
-    
+
       - **0:** This value is assigned if the database is in an unhealthy state. In this state, the database should not be contacted.
-    
+
       - **1 through 99:** These values represent a fair health state. A lower value represents a less healthy database.
-    
+
       - **100:** This value represents a healthy database.
 
 The Microsoft Exchange Throttling service provides the framework for mail flow throttling. The Microsoft Exchange Throttling service keeps track of mail flow throttling settings for a specific user and caches the throttling information in memory. Mail flow throttling settings are also known as a *budget*. Restarting the Microsoft Exchange Throttling service also resets mail flow throttling budgets.
@@ -176,7 +172,6 @@ The following table shows the message throttling options that are available on t
 </tbody>
 </table>
 
-
 Return to top
 
 ## Message throttling on Send connectors
@@ -209,7 +204,6 @@ The following table shows the message throttling option that's available on Send
 </tr>
 </tbody>
 </table>
-
 
 Return to top
 
@@ -287,7 +281,6 @@ The following table shows the message throttling options that are available on R
 </tbody>
 </table>
 
-
 Return to top
 
 ## Message throttling policies
@@ -296,11 +289,8 @@ In Exchange 2013, each mailbox has a *ThrottlingPolicy* setting. The default val
 
 A default throttling policy exists to provide a default set budget configuration for users who connect to Exchange. To configure customized budget settings for one or more users, create a new throttling policy. Then, apply the policy to the appropriate user or group.
 
-
 > [!IMPORTANT]
 > We recommend that you don't modify the default throttling policy.
-
-
 
 You can set all the message throttling options that are available on Mailbox servers in the Exchange Management Shell. The following cmdlets are available to manage throttling policies:
 
@@ -335,4 +325,3 @@ You can use the **New-ThrottlingPolicy** and **Set-ThrottlingPolicy** cmdlets to
   - CPU usages
 
 Return to top
-

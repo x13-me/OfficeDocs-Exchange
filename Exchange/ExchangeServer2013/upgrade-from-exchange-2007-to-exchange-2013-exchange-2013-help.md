@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server, Exchange Server 2013_
-
+_**Applies to:**: Exchange Online, Exchange Server, Exchange Server 2013_
 
 Microsoft Exchange Server 2010 and Exchange Server 2007 have multiple server roles: Client Access, Mailbox, Hub Transport, Unified Messaging, and Edge Transport. With Exchange Server 2013, we reduced the number of server roles from five to three: Client Access, Mailbox, and Edge Transport. Unified Messaging is now considered a component or sub feature of the voice-related features that are offered in Exchange 2013. (For more details about the changes, see "Exchange 2013 architecture" in [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).)
 
@@ -29,11 +28,8 @@ When you're upgrading your existing Exchange 2007 organization to Exchange 2013,
 
 You can't upgrade an existing Exchange 2003 organization directly to Exchange 2013. You must first upgrade the Exchange 2003 organization to either an Exchange 2007 or Exchange 2010 organization, and then you can upgrade the Exchange 2007 or Exchange 2010 organization to Exchange 2013. We recommend that you upgrade your organization from Exchange 2003 to Exchange 2010, and then upgrade from Exchange 2010 to Exchange 2013.
 
-
 > [!WARNING]
 > You need to remove all instances of Exchange 2003 from your organization before you can upgrade to Exchange 2013.
-
-
 
 You can migrate all your Exchange 2003 mailboxes to Exchange Online. For more information about this approach, see [Ways to migrate multiple email accounts to Office 365](https://go.microsoft.com/fwlink/p/?linkid=524030).
 
@@ -85,7 +81,6 @@ The following table lists the scenarios in which coexistence between Exchange 20
 </tbody>
 </table>
 
-
 1   If you want to create an EdgeSync Subscription between an Exchange 2007 Hub Transport server and an Exchange 2013 SP1 Edge Transport server, you need to install Exchange 2007 SP3 Update Rollup 13 or later on the Exchange 2007 Hub Transport server.
 
 2   If you want to create an EdgeSync Subscription between an Exchange 2010 Hub Transport server and an Exchange 2013 SP1 Edge Transport server, you need to install Exchange 2010 SP3 Update Rollup 5 or later on the Exchange 2010 Hub Transport server.
@@ -97,7 +92,6 @@ If you have Active Directory sites with both Exchange 2010 and Exchange 2007 ins
 ## Overview of the upgrade process
 
 To help you get an overview of the Exchange 2007 to Exchange 2013 upgrade process, we've gathered resources related to each key task in the following table. For specific step-by-step guidance, see [Checklist: Upgrade from Exchange 2007](checklist-upgrade-from-exchange-2007-exchange-2013-help.md).
-
 
 <table>
 <colgroup>
@@ -153,4 +147,3 @@ To help you get an overview of the Exchange 2007 to Exchange 2013 upgrade proces
 </tr>
 </tbody>
 </table>
-

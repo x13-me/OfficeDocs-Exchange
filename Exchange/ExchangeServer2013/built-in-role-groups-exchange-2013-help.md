@@ -14,18 +14,12 @@ mtps_version: v=EXCHG.150
 
 # Built-in role groups
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 Microsoft Exchange Server 2013 includes several management role groups by default. The following built-in role groups provide you with a preconfigured set of roles that you can assign to various administrator and specialist users in your organization.
 
-
 > [!NOTE]
 > Role groups don't control access to end-user mailbox features. To control access to end-user mailbox features, see <A href="understanding-management-role-assignment-policies-exchange-2013-help.md">Understanding management role assignment policies</A>.
-
-
 
   - [Organization Management](organization-management-exchange-2013-help.md)
 
@@ -52,4 +46,3 @@ Microsoft Exchange Server 2013 includes several management role groups by defaul
   - [Delegated Setup](delegated-setup-exchange-2013-help.md)
 
 For more information about role groups, see [Understanding management role groups](understanding-management-role-groups-exchange-2013-help.md).
-

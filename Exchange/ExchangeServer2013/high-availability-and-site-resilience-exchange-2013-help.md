@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 You can protect your Exchange Server 2013 mailbox databases and the data they contain by configuring your Mailbox servers and databases for high availability and site resilience. Exchange 2013 minimizes the cost and complexity of deploying a highly available and resilient messaging solution while providing high levels of service and data availability and support for very large mailboxes.
 
 Exchange 2013 enables customers of all sizes and in all segments to economically deploy a messaging continuity service in their organization by building on the native replication capabilities and high availability architecture introduced in Exchange 2010. For a list of changes over Exchange 2010 and Exchange 2007, see [Changes to high availability and site resilience over previous versions](changes-to-high-availability-and-site-resilience-over-previous-versions-exchange-2013-help.md).
@@ -43,102 +42,102 @@ High availability and site resilience documentation
 
 The following key terms are important to understand high availability or site resilience:
 
-  - *Active Manager*  
+  - *Active Manager*
     An internal Exchange component which runs inside the Microsoft Exchange Replication service that's responsible for failure monitoring and corrective action through failover within a database availability group (DAG).
 
 <!-- end list -->
 
-  - *AutoDatabaseMountDial*  
+  - *AutoDatabaseMountDial*
     A property setting of a Mailbox server that determines whether a passive database copy will automatically mount as the new active copy, based on the number of log files missing by the copy being mounted.
 
 <!-- end list -->
 
-  - *Continuous replication - block mode*  
+  - *Continuous replication - block mode*
     In block mode, as each update is written to the active database copy's active log buffer, it's also shipped to a log buffer on each of the passive mailbox copies in block mode. When the log buffer is full, each database copy builds, inspects, and creates the next log file in the generation sequence.
 
 <!-- end list -->
 
-  - *Continuous replication - file mode*  
+  - *Continuous replication - file mode*
     In file mode, closed transaction log files are pushed from the active database copy to one or more passive database copies.
 
 <!-- end list -->
 
-  - *Database availability group*  
+  - *Database availability group*
     A group of up to 16 Exchange 2013 Mailbox servers that hosts a set of replicated databases.
 
 <!-- end list -->
 
-  - *Database mobility*  
+  - *Database mobility*
     The ability of an Exchange 2013 mailbox database to be replicated to and mounted on other Exchange 2013 Mailbox servers.
 
 <!-- end list -->
 
-  - *Datacenter*  
+  - *Datacenter*
     Typically this refers to an Active Directory site; however, it can also refer to a physical site. In the context of this documentation, datacenter equals Active Directory site.
 
 <!-- end list -->
 
-  - *Datacenter Activation Coordination mode*  
+  - *Datacenter Activation Coordination mode*
     A property of the DAG setting that, when enabled, forces the Microsoft Exchange Replication service to acquire permission to mount databases at startup.
 
 <!-- end list -->
 
-  - *Disaster recovery*  
+  - *Disaster recovery*
     Any process used to manually recover from a failure. This can be a failure that affects a single item, or it can be a failure that affects an entire physical location.
 
 <!-- end list -->
 
-  - *Exchange third-party replication API*  
+  - *Exchange third-party replication API*
     An Exchange-provided API that enables use of third-party synchronous replication for a DAG instead of continuous replication.
 
 <!-- end list -->
 
-  - *High availability*  
+  - *High availability*
     A solution that provides service availability, data availability, and automatic recovery from failures that affect the service or data (such as a network, storage, or server failure).
 
 <!-- end list -->
 
-  - *Incremental deployment*  
+  - *Incremental deployment*
     The ability to deploy high availability and site resilience after Exchange 2013 is installed.
 
 <!-- end list -->
 
-  - *Lagged mailbox database copy*  
+  - *Lagged mailbox database copy*
     A passive mailbox database copy that has a log replay lag time greater than zero.
 
 <!-- end list -->
 
-  - *Mailbox database copy*  
+  - *Mailbox database copy*
     A mailbox database (.edb file and logs), which is either active or passive.
 
 <!-- end list -->
 
-  - *Mailbox resiliency*  
+  - *Mailbox resiliency*
     The name of a unified high availability and site resilience solution in Exchange 2013.
 
 <!-- end list -->
 
-  - *Managed availability*  
+  - *Managed availability*
     A set of internal processes made up of probes, monitors, and responders that incorporate monitoring and high availability across all server roles and all protocols.
 
 <!-- end list -->
 
-  - *\*over* (pronounced "star over")  
+  - *\*over* (pronounced "star over")
     Short for *switchovers* and *failovers*. A switchover is a manual activation of one or more database copies. A failover is an automatic activation of one or more database copies after a failure.
 
 <!-- end list -->
 
-  - *Safety Net*  
+  - *Safety Net*
     Formerly known as transport dumpster, this is a feature of the transport service that stores a copy of all messages for *X* days. The default setting is 2 days.
 
 <!-- end list -->
 
-  - *Shadow redundancy*  
+  - *Shadow redundancy*
     A transport server feature that provides redundancy for messages for the entire time they're in transit.
 
 <!-- end list -->
 
-  - *Site resilience*  
+  - *Site resilience*
     A configuration that extends the messaging infrastructure to multiple Active Directory sites to provide operational continuity for the messaging system in the event of a failure affecting one of the sites.
 
 Return to top
@@ -219,7 +218,6 @@ Return to top
 
 The following table contains links to topics that will help you learn about and manage DAGs, mailbox database copies, and backup and restore for Exchange 2013.
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -259,6 +257,4 @@ The following table contains links to topics that will help you learn about and 
 </tbody>
 </table>
 
-
 Return to top
-

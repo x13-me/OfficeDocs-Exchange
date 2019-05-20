@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Address book policy procedures
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 [Create an address book policy](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/create-an-address-book-policy)
 
@@ -26,4 +23,3 @@ _**Applies to:** Exchange Server 2013_
 [Change the settings of an address book policy](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/change-the-settings-of-an-address-book-policy)
 
 [Remove an address book policy](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/remove-an-address-book-policy)
-

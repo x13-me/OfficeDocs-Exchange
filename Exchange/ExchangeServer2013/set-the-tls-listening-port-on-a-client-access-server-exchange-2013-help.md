@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 You can configure the Transport Layer Security (TLS) port that's used to listen for SIP requests on a Client Access server running the Microsoft Exchange Unified Messaging Call Router service. By default, when you install a Client Access server, the SIP TLS listening port number is set to 5061.
 
@@ -47,23 +46,20 @@ For additional tasks related to Unified Messaging and Client Access servers, see
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>..
-
-
 
 ## What do you want to do?
 
 ## Use the EAC to configure the TLS listening port on a Client Access server
 
-1.  In the EAC, navigate to **Servers** \> **Servers**.
+1. In the EAC, navigate to **Servers** \> **Servers**.
 
-2.  In the list view, select the Exchange server you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
+2. In the list view, select the Exchange server you want to modify, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
-3.  On the **Exchange Server** page, click **Unified Messaging**.
+3. On the **Exchange Server** page, click **Unified Messaging**.
 
-4.  Under **UM Service settings**, under **TLS listening port**, enter the number for the TLS port, and then click **Save**.
+4. Under **UM Service settings**, under **TLS listening port**, enter the number for the TLS port, and then click **Save**.
 
 ## Use the Shell to configure the TLS listening port on a Client Access server
 
@@ -72,4 +68,3 @@ This example sets the TLS listening port on a Client Access server named `MyClie
 ```powershell
 Set-UMCallRouterSettings -Server MyClientAccessServer -SipTlsListeningPort 5561
 ```
-

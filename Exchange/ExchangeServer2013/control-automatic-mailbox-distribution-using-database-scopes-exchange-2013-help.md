@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Automatic mailbox distribution is a feature in Microsoft Exchange Server 2013 that randomly selects a mailbox database to store a new or moved mailbox when you don't specify a database explicitly. This feature can be helpful when you want to allow junior administrators or help desk staff to create mailboxes without needing to know which mailbox databases mailboxes should be created on.
 
 You can use database management scopes to control which mailbox databases can be selected by automatic mailbox distribution. When you apply database scopes to an administrator, only the databases that match the defined database scope are available to the administrator. Because automatic mailbox distribution uses the context of the current user, it's also constrained by the database scopes applied to the administrator.
@@ -43,11 +42,8 @@ Looking for other management tasks related to scopes? Check out [Advanced permis
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## How do you do this?
 
@@ -55,11 +51,8 @@ Looking for other management tasks related to scopes? Check out [Advanced permis
 
 In this step, decide which databases you want to include in the database scope. Also, decide whether you want to specify a static list of databases, or whether you want to create a database filter that includes only the databases that match the criteria you specify.
 
-
 > [!IMPORTANT]
 > Role assignments associated with database scopes are applied only to users who connect to servers running Microsoft Exchange Server 2010 Service Pack&nbsp;1 (SP1) or later or Exchange 2013. If a user assigned a role assignment associated with a database scope connects to a pre-Exchange 2010 SP1 server, the role assignment isn't applied to the user, and the user won't be granted any permissions provided by the role assignment.
-
-
 
 ## Use a database list scope
 
@@ -149,13 +142,9 @@ For detailed syntax and parameter information, see [Get-ManagementRoleAssignment
 
 If you want to add members to a role group, see [Manage role group members](manage-role-group-members-exchange-2013-help.md).
 
-
 > [!IMPORTANT]
 > If you add members to this role group to restrict what databases they can create users on, or move mailboxes to, make sure they aren't members of other role groups that could grant extra permissions.
-
-
 
 ## Step 4: Remove members from a role group (if applicable)
 
 If you've added members to a new role group that restricts what databases they can create mailbox on, or move mailboxes to, and they're members of another role group that has additional permissions, remove them from the old role group. For more information, see [Manage role group members](manage-role-group-members-exchange-2013-help.md).
-

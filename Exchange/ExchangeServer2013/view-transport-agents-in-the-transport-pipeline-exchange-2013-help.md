@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 You can use the Exchange Management Shell to view a list of transport agents in the transport pipeline on Microsoft Exchange Server 2013 Mailbox servers and Client Access servers. Specifically, the **Get-TransportPipeline** cmdlet shows information about the following types of transport agents in the transport pipeline:
 
@@ -39,11 +38,8 @@ You can view a list of all the enabled transport agents that have encountered me
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## Use the Shell to view a list of transport agents in the transport pipeline
 
@@ -62,4 +58,3 @@ Get-TransportPipeline | Format-List > "C:\My Documents\Transport Agents.txt"
 ## How do you know this worked?
 
 Only transport agents that have encountered messages in the transport pipeline between the time when the transport service was started and the time when the **Get-TransportPipeline** cmdlet was run are displayed by the cmdlet. A transport agent that hasn't encountered a message in the transport pipeline won't appear in the results displayed by the **Get-TransportPipeline** cmdlet, even if that transport agent is enabled.
-

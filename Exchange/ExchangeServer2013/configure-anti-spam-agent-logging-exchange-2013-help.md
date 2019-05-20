@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 Agent logging records the actions performed by specific Exchange anti-spam agents. The information written to the agent log depends on the agent, the SMTP event, and the action performed on the message.
 
 ## What do you need to know before you begin?
@@ -33,11 +32,8 @@ Agent logging records the actions performed by specific Exchange anti-spam agent
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## Use the Shell to configure anti-spam agent logging
 
@@ -63,7 +59,6 @@ This example sets the following agent log settings on the Mailbox server named M
     Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogMaxFileSize 20MB -AgentLogMaxDirectorySize 400MB -AgentLogMaxAge 14.00:00:00
 ```
 
-
 > [!NOTE]
 > <UL>
 > <LI>
@@ -71,19 +66,16 @@ This example sets the following agent log settings on the Mailbox server named M
 > <LI>
 > <P>Setting the <EM>AgentLogMaxAge</EM> parameter to the value <CODE>00:00:00</CODE> prevents the automatic removal of agent log files because of their age.</P></LI></UL>
 
-
-
 For detailed syntax and parameter information, see the *AgentLog* parameters in [Set-TransportService](https://technet.microsoft.com/en-us/library/jj215682\(v=exchg.150\)).
 
 ## How do you know this worked?
 
 To verify that you have successfully configured anti-spam agent logging, do the following:
 
-1.  In the Shell, run the following command:
-    
+1. In the Shell, run the following command:
+
     ```powershell
         Get-TransportService <ServerIdentity> | Format-List AgentLog*
     ```
-    
-2.  Verify the values displayed are the values you configured.
 
+2. Verify the values displayed are the values you configured.

@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 The Help Desk management role group is one of several built-in role groups that make up the Role Based Access Control (RBAC) permissions model in Microsoft Exchange Server 2013. Role groups are assigned one or more management roles that contain the permissions required to perform a given set of tasks. The members of a role group are granted access to the management roles assigned to the role group. For more information about role groups, see [Understanding management role groups](understanding-management-role-groups-exchange-2013-help.md).
 
 Users who are members of the Help Desk role group can perform limited recipient management of Exchange 2013 recipients.
@@ -27,11 +26,8 @@ The Help Desk role group, by default, enables members to view and modify the Out
 
 The members of this role group can only modify the Outlook Web App options that the user can modify. This means that if a user can modify his or her display name, a member of the Help Desk role group can also modify that user's display name. However, if another user isn't allowed to modify his or her display name, a member of the Help Desk role group can't modify that user's display name.
 
-
 > [!WARNING]
 > The limitations on which Outlook Web App options a member of the Help Desk role group can modify are enforced by the Exchange Administration Center (EAC). If a member of the Help Desk role group has access to the Exchange Management Shell, he or she can modify any Outlook Web App option for any user. You should carefully consider who you make a member of the Help Desk role group and whether they should also be given access to the Shell.
-
-
 
 The Help Desk role group doesn't enable any other tasks because there are so many different types of organizations. Instead, you can add management roles to this role group to create a Help Desk role group that matches the needs of your organization. For example, if you want members of the Help Desk role group to be able to manage mailboxes, mail contacts, and mail-enabled users, assign the Mail Recipients management role to this role group. For more information about how to add management roles to this role group, see the "Role Group Customization" section later in this topic.
 
@@ -133,4 +129,3 @@ For more information about role assignments and management scopes, see the follo
 </tr>
 </tbody>
 </table>
-

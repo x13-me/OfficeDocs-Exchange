@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Online, Exchange Server 2013_
 
-
 *Content transfer encoding* defines encoding methods for transforming binary email message data into the US-ASCII plain text format. This transformation allows the message to travel through older SMTP messaging servers that only support messages in US-ASCII text. Content transfer encoding is defined in RFC 2045. The transfer encoding method is stored in the **Content-Transfer-Encoding** header field in the message. In Microsoft Exchange Server 2013, the following content transfer encoding methods are available:
 
   - **7-bit**: This value indicates that the message body data is already in the US ASCII plain text format, and no message encoding has been done to the message.
@@ -30,7 +29,6 @@ _**Applies to:** Exchange Online, Exchange Server 2013_
 You configure the transfer encoding method using the *ByteEncoderTypeFor7BitCharsets* parameter on the **Set-OrganizationConfig** and **Set-RemoteDomain** cmdlets. The content transfer encoding settings you configure with **Set-OrganizationConfig** apply to all messages in the Exchange organization. The content transfer encoding settings you configure with **Set-RemoteDomain** apply only to message sent to external recipients in the remote domain.
 
 The following table lists the values that you can use to set the transfer encoding method.
-
 
 <table>
 <colgroup>
@@ -84,7 +82,6 @@ The following table lists the values that you can use to set the transfer encodi
 </tbody>
 </table>
 
-
 For more details about **Content-Transfer-Encoding** header field, see the "Understanding the structure of email messages" section in [Content conversion](content-conversion-exchange-2013-help.md).
 
 For more information about remote domains, see [Remote domains](remote-domains-exchange-2013-help.md).
@@ -97,11 +94,8 @@ For more information about remote domains, see [Remote domains](remote-domains-e
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## What do you want to do?
 
@@ -137,7 +131,6 @@ Set- RemoteDomain -ByteEncoderTypeFor7BitCharsets UseBase64
 
 To verify that you have successfully configured the method for content transfer encoding, do the following:
 
-1.  Send a test message that contains a mixture of US-ASCII text and binary data or non-US-ASCII text to an internal or external test account. Use an internal account to test organization settings, and an external account in the remote domain to test remote domain settings.
+1. Send a test message that contains a mixture of US-ASCII text and binary data or non-US-ASCII text to an internal or external test account. Use an internal account to test organization settings, and an external account in the remote domain to test remote domain settings.
 
-2.  In an email client, view the **Content-Transfer-Encoding** header field in the message, and verify the content transfer encoding method that was used on the message matches the method you configured.
-
+2. In an email client, view the **Content-Transfer-Encoding** header field in the message, and verify the content transfer encoding method that was used on the message matches the method you configured.

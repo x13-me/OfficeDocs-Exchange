@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
-
+_**Applies to:**: Exchange Server_
 
 The content in this topic hasn't been updated for Microsoft Exchange Server 2013. While it hasn't been updated yet, it may still be applicable to Exchange 2013. If you still need help, check out the community resources below.
 
@@ -32,4 +31,3 @@ To resolve this issue, change the value of the SMTP address in the recipient pol
 For more information about managing recipient policies in Exchange Server 2007, see "Managing E-Mail Address Policies" ([https://go.microsoft.com/fwlink/?LinkId=86653](https://go.microsoft.com/fwlink/?linkid=86653)).
 
 For more information about managing recipient policies in Exchange Server 2010, see "Managing E-Mail Address Policies" ([https://go.microsoft.com/fwlink/?LinkId=179519](https://go.microsoft.com/fwlink/?linkid=179519)).
-

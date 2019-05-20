@@ -16,8 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server 2013_
-
+_**Applies to:**: Exchange Server 2013_
 
 **Summary:** Learn how to manage cross-forest mailbox moves and migrations in Exchange 2013 by using the Prepare-MoveRequest.ps1 script in the Exchange Management Shell.
 
@@ -36,16 +35,13 @@ Looking for other management tasks related to remote move requests? Check out [M
   - Locate the script in the following location: Program Files\\Microsoft\\Exchange Server\\V15\\Scripts
 
   - To run the sample script, you need the following:
-    
-      - An Exchange source forest, where the mailbox currently resides. This can be an Exchange 2010 or Exchange 2013 mailbox.
-    
-      - A target forest with Exchange 2013 installed, where the mailbox will be moved to.
 
+      - An Exchange source forest, where the mailbox currently resides. This can be an Exchange 2010 or Exchange 2013 mailbox.
+
+      - A target forest with Exchange 2013 installed, where the mailbox will be moved to.
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
-
-
 
 ## Use the Prepare-MoveRequest.ps1 script to prepare mailboxes for cross-forest moves
 
@@ -53,20 +49,17 @@ Run the script from the Shell on a server role running Exchange 2013 in the targ
 
 To assign a specific authentication credential for the remote forest domain controller, you must first run the Windows PowerShell **Get-Credential** cmdlet and store the user input in a temporary variable. When you run the **Get-Credential** cmdlet, the cmdlet asks for the user name and password of the account used during authentication with the remote forest domain controller. You can then use the temporary variable in the Prepare-MoveRequest.ps1 script. For more information about the **Get-Credential** cmdlet, see [Get-Credential](https://go.microsoft.com/fwlink/p/?linkid=142122).
 
-
 > [!NOTE]
 > Make sure that you use two separate credentials for the local forest and the remote forest when calling this script.
 
+1. Run the following commands to get the local forest and remote forest credentials.
 
-
-1.  Run the following commands to get the local forest and remote forest credentials.
-    
     ```powershell
         $LocalCredentials = Get-Credential
         $RemoteCredentials = Get-Credential
     ```
-2.  Run the following commands to pass the credential information to the *LocalForestCredential* and *RemoteForestCredential* parameters in the Prepare-MoveRequest.ps1 script.
-    
+2. Run the following commands to pass the credential information to the *LocalForestCredential* and *RemoteForestCredential* parameters in the Prepare-MoveRequest.ps1 script.
+
     ```powershell
         Prepare-MoveRequest.ps1 -Identity JohnSmith@Fabrikan.com  -RemoteForestDomainController DC001.Fabrikam.com  -RemoteForestCredential $RemoteCredentials   -LocalForestDomainController DC001.Contoso.com  -LocalForestCredential $LocalCredentials
      ```
@@ -122,7 +115,6 @@ The following table describes the parameter set for the script.
 > [!NOTE]
 > When you specify this parameter, the <STRONG>MailUser</STRONG> object won't have e-mail address mapping in the local forest domain stamped. This is usually stamped by the EAP.
 
-
 </td>
 </tr>
 <tr class="odd">
@@ -168,7 +160,6 @@ The following table describes the parameter set for the script.
 </tbody>
 </table>
 
-
 ## Examples
 
 This section contains several examples of how you can use the Prepare-MoveRequest.ps1 script.
@@ -177,31 +168,31 @@ This section contains several examples of how you can use the Prepare-MoveReques
 
 This example provisions a single linked mail-enabled user in the local forest, when there is forest trust between the remote forest and local forest.
 
-1.  Run the following commands to get the local forest and remote forest credentials.
-    
+1. Run the following commands to get the local forest and remote forest credentials.
+
     ```powershell
         $LocalCredentials = Get-Credential
         $RemoteCredentials = Get-Credential
     ```
 
-2.  Run the following command to pass the credential information to the *LocalForestCredential* and *RemoteForestCredential* parameters in the Prepare-MoveRequest.ps1 script.
-    
+2. Run the following command to pass the credential information to the *LocalForestCredential* and *RemoteForestCredential* parameters in the Prepare-MoveRequest.ps1 script.
+
     ```powershell
-        Prepare-MoveRequest.ps1 -Identity JamesAlvord@Contoso.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials -LinkedMailUser 
+        Prepare-MoveRequest.ps1 -Identity JamesAlvord@Contoso.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials -LinkedMailUser
     ```
 
 ## Example: Pipelining
 
 This example supports pipelining if you supply a list of mailbox identities.
 
-1.  Run the following command.
-    
+1. Run the following command.
+
     ```powershell
     $UserCredentials = Get-Credential
     ```
 
-2.  Run the following command to pass the credential information to the *RemoteForestCredential* parameter in the Prepare-MoveRequest.ps1 script.
-    
+2. Run the following command to pass the credential information to the *RemoteForestCredential* parameter in the Prepare-MoveRequest.ps1 script.
+
     ```powershell
         "IanP@Contoso.com", "JoeAn@Contoso.com" | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
     ```
@@ -222,18 +213,18 @@ Cindy@contoso.com
 
 This example calls a .csv file to bulk create the target mail-enabled users.
 
-1.  Run the following command to get the remote forest credentials.
-    
+1. Run the following command to get the remote forest credentials.
+
     ```powershell
     $UserCredentials = Get-Credential
     ```
 
-2.  Run the following command to pass the credential information to the *RemoteForestCredential* parameter in the Prepare-MoveRequest.ps1 script.
+2. Run the following command to pass the credential information to the *RemoteForestCredential* parameter in the Prepare-MoveRequest.ps1 script.
 
     ```powershell
         Import-Csv Test.csv | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
     ```
-    
+
 ## Script behavior per target object
 
 This section describes how the script performs in relation to several scenarios for target objects.
@@ -243,9 +234,9 @@ This section describes how the script performs in relation to several scenarios 
 When the script attempts to create a target mail-enabled user from the source mailbox user, and it detects a duplicate local mail-enabled object, it uses the following logic:
 
   - If the source mailbox user's **masterAccountSid** attribute equals any target object's **objectSid** or **masterAccountSid** attribute:
-    
+
       - If the target object isn't mail-enabled, the script returns an error because the script doesn't support converting an object that isn't mail-enabled to a mail-enabled user.
-    
+
       - If the target object is mail-enabled, the target object is a duplicate.
 
   - If an address in the source mailbox user's **proxyAddress** properties (smtp/x500 only) equals an address in a target object's **proxyAddress** properties (smtp/x500 only), the target object is a duplicate.
@@ -287,4 +278,3 @@ If the *LinkedMailUser* parameter is set, the script copies the source **objectS
 ## LegacyExchangeDN attribute
 
 When the **Update-Recipient** cmdlet is called to convert the target object into a mail-enabled user, a new **LegacyExchangeDN** attribute is generated for the target mail-enabled user. The script copies the **LegacyExchangeDN** attribute of the target mail-enabled user as an x500 address to the **proxyAddress** properties of the source mailbox user.
-

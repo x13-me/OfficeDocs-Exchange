@@ -14,10 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Availability service in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
-
 
 The Exchange 2013 Availability service makes free/busy information available to Microsoft Outlook and Outlook Web App clients. The Availability service improves information workers' calendaring and meeting scheduling experience by providing secure, consistent, and up-to-date free/busy information.
 
@@ -69,16 +66,12 @@ Using Network Load Balancing (NLB) on your Client Access servers that are runnin
 
 The internal URL is used from the intranet, and the external URL is used from the Internet. If you want to use the same URL for both internal and external traffic, make sure that DNS is correctly configured to route internal traffic directly to the internal URL. Also, make sure that the URL can be accessed both internally and externally. For the Autodiscover and Availability services to work, DNS must be configured so that mail.\<*domain name*\>.com and autodiscover.mail.\<*domain name*\>.com point to the virtual IP (VIP) of your load-balancing solution, where \<*domain name*\> is the name of your domain.
 
-
 > [!NOTE]
 > For more information, see <A href="https://go.microsoft.com/fwlink/p/?linkid=45959">Network Load Balancing Technical Reference</A> and <A href="https://go.microsoft.com/fwlink/p/?linkid=49315">Network Load Balancing Clusters</A>. You can also search for third-party load-balancing software websites.
-
-
 
 ## Methods used to retrieve free/busy information
 
 The following table lists the different methods used to retrieve free/busy information in different single-forest topologies.
-
 
 <table>
 <colgroup>
@@ -122,4 +115,3 @@ The following table lists the different methods used to retrieve free/busy infor
 </tr>
 </tbody>
 </table>
-

@@ -18,7 +18,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-
 In Microsoft Exchange Server 2013, there are several different message size limits that apply to messages as they travel through your Exchange organization. For more information, see [Message size limits](message-size-limits-exchange-2013-help.md).
 
 However, there are client-specific message size limits you can configure for Outlook Web App and email clients that use ActiveSync or Exchange Web Services (EWS). If you change the Exchange organization-wide message size limits, you need to verify that the message size limits for Outlook Web App, ActiveSync, and Exchange Web Services are set accordingly. You configure these values in web.config files on Client Access servers and Mailbox servers. These limits are described in the following tables.
@@ -74,22 +73,21 @@ However, there are client-specific message size limits you can configure for Out
 </tbody>
 </table>
 
-
 **Comments on ActiveSync limits**
 
 By default, there is no *maxAllowedContentLength* key in the `web.config` files for ActiveSync. However, the maximum message size for ActiveSync is affected by the **maxAllowedContentLength** value that is applied to all web sites on the server. The default value is 30000000 bytes (30 MB). To see these values for ActiveSync on Client Access Servers and Mailbox servers in IIS Manager, perform the following steps:
 
-1.  Do one of the following steps:
-    
+1. Do one of the following steps:
+
       - On Client Access servers, open **IIS Manager**, navigate to **Sites** \> **Default Web Site** and select **Microsoft-Server-ActiveSync**.
-    
+
       - On Mailbox servers, open **IIS Manager**, navigate to **Sites** \> **Exchange Back End** and select **Microsoft-Server-ActiveSync**.
 
-2.  Verify **Features View** is selected, and double-click **Configuration Editor** in the **Management** section.
+2. Verify **Features View** is selected, and double-click **Configuration Editor** in the **Management** section.
 
-3.  Click the dropdown arrow in the **Section** field, navigate to **system.webServer** \> **security** and select **requestFiltering**.
+3. Click the dropdown arrow in the **Section** field, navigate to **system.webServer** \> **security** and select **requestFiltering**.
 
-4.  In the results, expand **requestLimits**, and you'll see **maxAllowedContentLength** and the default value 30000000 (bytes).
+4. In the results, expand **requestLimits**, and you'll see **maxAllowedContentLength** and the default value 30000000 (bytes).
 
 To change the **maxAllowedContentLength** value, enter a new value in bytes, and click **Apply**. You need to change the value on Client Access servers and on Mailbox servers. After you change the value in IIS Manager, a new *maxAllowedContentLength* key is written to the corresponding `web.config` file (`%ExchangeInstallPath%FrontEnd\HttpProxy\Sync\web.config` on Client Access servers, and `%ExchangeInstallPath%ClientAccess\Sync\web.config` on Mailbox servers).
 
@@ -133,7 +131,6 @@ To change the maximum message size for ActiveSync clients, you need to change th
 </tr>
 </tbody>
 </table>
-
 
 **Comments on Exchange Web Services limits**
 
@@ -202,7 +199,6 @@ To change the maximum message size for ActiveSync clients, you need to change th
 </tbody>
 </table>
 
-
 **Comments on Outlook Web App limits**
 
   - In the `web.config` file on Mailbox servers, there are two separate instances of the values `maxReceivedMessageSize="35000000"` and `maxStringContentLength="35000000"` that correspond to http and https bindings.
@@ -227,39 +223,36 @@ For all message size limits, you need to set values that are larger than the act
 
   - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
-
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at <A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>, <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>, or <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>.
 
-
-
 ## Use Notepad to configure a client-specific message size limit
 
-1.  Open the appropriate web.config files in Notepad. For example, to open the web.config files for Exchange Web Services clients, run the following commands:
-    
+1. Open the appropriate web.config files in Notepad. For example, to open the web.config files for Exchange Web Services clients, run the following commands:
+
     ```powershell
         Notepad %ExchangeInstallPath%ClientAccess\exchweb\ews\web.config
         Notepad %ExchangeInstallPath%FrontEnd\HttpProxy\ews\web.config
     ```
 
-2.  Find the relevant keys in the appropriate web.config files as described in the tables earlier in the topic. For example, for Exchange Web Services clients, find the *maxAllowedContentLength* key in both files and all 14 instances of the value `maxReceivedMessageSize="67108864"` in the `web.config` file on Mailbox servers.
-    
+2. Find the relevant keys in the appropriate web.config files as described in the tables earlier in the topic. For example, for Exchange Web Services clients, find the *maxAllowedContentLength* key in both files and all 14 instances of the value `maxReceivedMessageSize="67108864"` in the `web.config` file on Mailbox servers.
+
     ```powershell
         <requestLimits maxAllowedContentLength="67108864" />
         ...maxReceivedMessageSize="67108864"...
     ```
 
     For example, to allow a Base64 encoded maximum message size of approximately 64 MB, change all instances of `67108864` to `89478486` (64\*4/3\*1048756):
-    
+
     ```powershell
         <requestLimits maxAllowedContentLength="89478486" />
         ...maxReceivedMessageSize="89478486"...
     ```
 
-3.  When you are finished, save and close the web.config files.
+3. When you are finished, save and close the web.config files.
 
-4.  Restart IIS by running the following command:
-    
+4. Restart IIS by running the following command:
+
     ```powershell
     IISReset /noforce
     ```
@@ -321,4 +314,3 @@ Instead of using Notepad, you can also configure the client-specific message siz
 ## How do you know this worked?
 
 To verify that you have successfully configured the client-specific message size limit, you need to send a test message to and from a mailbox that's being accessed by the affected client. You can try a few smaller attachments or one large attachment so the test messages are approximately 33% less than the value you configured. For example, a configured value of 85 MB results in a realistic maximum message size of approximately 64 MB.
-
