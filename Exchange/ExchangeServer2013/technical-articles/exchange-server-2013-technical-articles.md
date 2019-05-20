@@ -14,6 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Exchange Server 2013 Technical Articles
 
- 
+_**Applies to:** Exchange Server 2013_
 
 These technical articles can help you manage your Microsoft Exchange Server 2013 environment.

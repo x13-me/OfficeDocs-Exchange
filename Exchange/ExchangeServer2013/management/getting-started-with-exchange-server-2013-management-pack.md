@@ -44,12 +44,12 @@ While going through the three views in the Exchange Server 2013 dashboard, you m
 
 Each of these health indicators give you an overview of specific aspects of your Exchange deployment.
 
-- **Customer Touch Points** This shows you what your users are experiencing. If this indicator is healthy, it means that the problem is probably not impacting your users. For example, assume that a DAG member is having problems, but the database failed over successfully. In this case, you will see unhealthy indicators for that particular DAG, but the customer touch points indicator will show healthy because the users are not experiencing any service interruption.
+- **Customer Touch Points**: This shows you what your users are experiencing. If this indicator is healthy, it means that the problem is probably not impacting your users. For example, assume that a DAG member is having problems, but the database failed over successfully. In this case, you will see unhealthy indicators for that particular DAG, but the customer touch points indicator will show healthy because the users are not experiencing any service interruption.
 
-- **Service Components** This shows you the state of the particular service associated with the component. For example, the service component indicator for OWA indicates whether the overall OWA service is healthy.
+- **Service Components**: This shows you the state of the particular service associated with the component. For example, the service component indicator for OWA indicates whether the overall OWA service is healthy.
 
-- **Server Resources** This shows you the state of physical resources that impact the functionality of a server.
+- **Server Resources**: This shows you the state of physical resources that impact the functionality of a server.
 
-- **Key Dependencies** This shows you the state of the external resources that the Exchange depends on like network connectivity, DNS or Active Directory.
+- **Key Dependencies**: This shows you the state of the external resources that the Exchange depends on like network connectivity, DNS or Active Directory.
 
 Exchange Server 2013 management pack views provide a simple, but powerful view that makes it easy and fast to determine that your organization is healthy. However, the views are also structured in a way to quickly guide you to the root of the problem in case of an alert. See [Using the Exchange Server 2013 Management Pack for troubleshooting](using-the-exchange-server-2013-management-pack-for-troubleshooting.md) to learn more about using the Exchange Server 2013 Management Pack to resolve problems.

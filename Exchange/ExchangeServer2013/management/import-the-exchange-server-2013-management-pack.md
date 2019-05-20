@@ -16,6 +16,8 @@ mtps_version: v=EXCHG.150
 
 Let's start with importing the management pack to your SCOM deployment.
 
+_**Applies to:** Exchange Server 2013_
+
 ## Prerequisites
 
 Before you can import the management pack, verify that the following conditions are met:
