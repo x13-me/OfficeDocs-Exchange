@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Scenario Conditional mail routing in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

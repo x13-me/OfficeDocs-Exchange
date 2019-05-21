@@ -11,7 +11,7 @@ ms.date: 4/19/2018
 ms.reviewer: 
 title: Create a public folder
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

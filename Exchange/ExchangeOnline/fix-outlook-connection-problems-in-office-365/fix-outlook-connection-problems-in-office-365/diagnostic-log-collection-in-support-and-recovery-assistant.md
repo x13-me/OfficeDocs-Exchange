@@ -14,7 +14,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.audience: Admin
+audience: Admin
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven

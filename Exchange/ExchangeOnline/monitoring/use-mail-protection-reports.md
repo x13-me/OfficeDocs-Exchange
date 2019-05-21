@@ -11,7 +11,7 @@ title: Use mail protection reports in Office 365 to view data about malware, spa
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: laurawi
 

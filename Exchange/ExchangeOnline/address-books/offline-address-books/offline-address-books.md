@@ -9,7 +9,7 @@ ms.date: 7/19/2018
 ms.reviewer: 
 title: Offline address books in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

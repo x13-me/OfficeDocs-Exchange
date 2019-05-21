@@ -11,7 +11,7 @@ ms.date: 7/22/2015
 ms.reviewer: 
 title: Global updates required [GlobalUpdateRequired]
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

@@ -9,7 +9,7 @@ ms.date: 7/11/2018
 ms.reviewer: 
 title: Create an offline address book virtual directory
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 ROBOTS: NOINDEX, NOFOLLOW

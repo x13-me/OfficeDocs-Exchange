@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Scenario Integrate Office 365 with an email add-on service
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

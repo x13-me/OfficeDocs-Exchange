@@ -11,7 +11,7 @@ title: Use Exchange Online PowerShell to display Office 365 mailbox information
 ms.collection:
 - Ent_O365
 - exchange-online
-ms.audience: Admin
+audience: Admin
 ms.service: exchange-online
 manager: laurawi
 

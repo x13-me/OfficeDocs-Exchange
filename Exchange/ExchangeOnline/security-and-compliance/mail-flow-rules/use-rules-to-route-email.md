@@ -12,7 +12,7 @@ ms.collection:
 ms.date: 6/23/2018
 ms.reviewer: 
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 title: Use mail flow rules to route email based on a list of words, phrases, or patterns in Exchange Online
 
 ---

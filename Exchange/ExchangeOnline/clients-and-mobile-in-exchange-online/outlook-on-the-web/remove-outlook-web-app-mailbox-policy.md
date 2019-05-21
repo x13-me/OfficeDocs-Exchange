@@ -11,7 +11,7 @@ title: Remove an Outlook on the web mailbox policy from Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

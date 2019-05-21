@@ -9,7 +9,7 @@ ms.date: 3/27/2017
 ms.reviewer: 
 title: Public folder procedures
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

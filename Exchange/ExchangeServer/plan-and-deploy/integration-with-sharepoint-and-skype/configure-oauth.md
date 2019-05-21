@@ -11,7 +11,7 @@ title: Configure OAuth authentication with SharePoint 2013 and Lync 2013
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

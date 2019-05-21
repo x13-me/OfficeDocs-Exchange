@@ -3,7 +3,7 @@ title: "Perform a G Suite migration"
 ms.author: dmaguire
 author: msdmaguire
 manager: dansimp
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal

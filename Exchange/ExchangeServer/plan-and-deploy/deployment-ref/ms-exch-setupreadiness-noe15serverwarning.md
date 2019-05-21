@@ -11,7 +11,7 @@ ms.date: 6/12/2018
 ms.reviewer: 
 title: No Exchange 2013 servers detected [NoE15ServerWarning]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

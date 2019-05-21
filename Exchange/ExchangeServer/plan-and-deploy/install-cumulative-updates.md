@@ -11,7 +11,7 @@ title: Upgrade Exchange to the latest Cumulative Update
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 
