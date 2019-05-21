@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Mobile phones, tablets, and other devices can store sensitive corporate data and provide access to many corporate resources. If a mobile device is lost or stolen, that data can be compromised. Through Microsoft Exchange mobile device mailbox policies, you can add a password requirement to your mobile devices. This requires users to enter a password to access their mobile devices. We recommend that, in addition to requiring a device password, you configure your mobile devices to automatically prompt for a password after a period of inactivity. The combination of a device password and inactivity locking provides enhanced security for your corporate data.
 

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013 SP1_
+_**Applies to:** Exchange Server 2013 SP1_
 
 **Summary**:
 

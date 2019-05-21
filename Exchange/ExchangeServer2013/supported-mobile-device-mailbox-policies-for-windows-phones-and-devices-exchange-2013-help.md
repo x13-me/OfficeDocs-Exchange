@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 With the release of Windows Phone 8, Windows 8, and Windows RT, there are a number of devices that support Exchange ActiveSync and mobile device mailbox policies. Each device operating system supports a specific set of mobile device mailbox policy settings.
 

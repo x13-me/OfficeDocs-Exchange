@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The Exchange Management Shell offers several methods that you can use to format command output. This topic discusses the following subjects:
 

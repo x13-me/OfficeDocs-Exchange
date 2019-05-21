@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 An Active Directory site is a logical configuration component that's based on the physical aspects of the network. The primary purpose for creating an Active Directory site is to define which subnets in the network are connected in a way that optimizes control of Active Directory replication traffic. Microsoft Exchange Server 2013 recognizes both database availability groups (DAGs) and Active Directory sites as routing boundaries, and Exchange 2013 servers make routing decisions based on the Active Directory site topology.
 

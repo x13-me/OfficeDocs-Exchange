@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 When you plan your Unified Messaging (UM) deployment, there are many factors that you must consider to be able to successfully deploy UM. You must understand the different elements of Unified Messaging and each component and feature so that you can plan your Unified Messaging infrastructure and deployment appropriately. Allocating time to plan and work through these issues will help prevent problems when you deploy Unified Messaging in your organization.
 
@@ -36,47 +36,47 @@ Generally, the simpler the Unified Messaging topology, the easier UM is to deplo
 
 The following are some of the areas that you should consider when planning for Unified Messaging in your organization:
 
-  - **Organizational requirements**: Evaluate your business needs, the usefulness of deploying a voice mail system, your physical network and business topology, and security requirements for your organization.
+- **Organizational requirements**: Evaluate your business needs, the usefulness of deploying a voice mail system, your physical network and business topology, and security requirements for your organization.
 
-  - **Telephony requirements**: Review your existing telephony, circuit-switched network, and voice mail system.
+- **Telephony requirements**: Review your existing telephony, circuit-switched network, and voice mail system.
 
-  - **Network requirements**: Analyze your network topology, your current packet-switched IP network design including your LAN and WAN connectivity points, and devices.
+- **Network requirements**: Analyze your network topology, your current packet-switched IP network design including your LAN and WAN connectivity points, and devices.
 
-  - **Active Directory (directory service)**: Inspect your current implementation and design and think about how to integrate UM.
+- **Active Directory (directory service)**: Inspect your current implementation and design and think about how to integrate UM.
 
-  - **Deployment model**: Decide whether you want to have a hybrid, online-only, or on-premises UM deployment.
+- **Deployment model**: Decide whether you want to have a hybrid, online-only, or on-premises UM deployment.
 
-  - **Exchange requirements**: Determine the following:
+- **Exchange requirements**: Determine the following:
 
-      - How many users will be using voice mail.
+  - How many users will be using voice mail.
 
-      - Which UM features and services you want to deploy, such as concurrent calls, internal and external access for users, incoming faxing, Voice Mail Preview, and so on.
+  - Which UM features and services you want to deploy, such as concurrent calls, internal and external access for users, incoming faxing, Voice Mail Preview, and so on.
 
-      - The number of Client Access and Mailbox servers you'll need to deploy.
+  - The number of Client Access and Mailbox servers you'll need to deploy.
 
-      - The storage requirements and quotas for voice mail users.
+  - The storage requirements and quotas for voice mail users.
 
-      - The best design for high availability and site resiliency. This includes UM system requirements, providing a highly available and scalable UM deployment, and system hardware requirements to ensure performance.
+  - The best design for high availability and site resiliency. This includes UM system requirements, providing a highly available and scalable UM deployment, and system hardware requirements to ensure performance.
 
-  - **Integration with telephony components and devices**: Decide whether to use traditional telephony equipment or Microsoft Lync Server. Consider where to place VoIP gateways, telephony equipment, and Client Access and Mailbox servers, and whether you want to enable Enterprise Voice in your organization.
+- **Integration with telephony components and devices**: Decide whether to use traditional telephony equipment or Microsoft Lync Server. Consider where to place VoIP gateways, telephony equipment, and Client Access and Mailbox servers, and whether you want to enable Enterprise Voice in your organization.
 
 ## Connecting your telephony network
 
 Unified Messaging requires that you integrate your Exchange Server deployment with your existing telephony system or integrate it with Microsoft Lync Server. You need to make a careful analysis of your existing telephony infrastructure and Microsoft Lync Server, and then follow the correct planning steps so you can deploy and manage UM voice mail successfully.
 
-**VoIP gateways** Choosing the correct VoIP gateway, IP PBX, SIP-enabled PBX, or SBC is just the first step in integrating your telephony network with UM. You must configure those devices to work with UM, deploy the required Client Access and Mailbox servers, and create and configure all necessary UM components. These components allow you to make the connection from your circuit-based protocol network to your IP data network and enable voice mail for your users.
+**VoIP gateways**: Choosing the correct VoIP gateway, IP PBX, SIP-enabled PBX, or SBC is just the first step in integrating your telephony network with UM. You must configure those devices to work with UM, deploy the required Client Access and Mailbox servers, and create and configure all necessary UM components. These components allow you to make the connection from your circuit-based protocol network to your IP data network and enable voice mail for your users.
 
 **Microsoft Lync Server**: Unified Messaging can use Microsoft Lync Server to combine voice messaging, instant messaging, enhanced presence, audio/video conferencing, and email into a familiar, integrated communications experience. Integrating UM and Microsoft Lync Server has the following benefits:
 
-  - Enhanced presence notifications across a variety of applications that keep users informed of the availability of contacts.
+- Enhanced presence notifications across a variety of applications that keep users informed of the availability of contacts.
 
-  - Integration of instant messaging, voice messaging, conferencing, email, and other communication methods, which enables users to select the most appropriate method for the task. Users can also switch from one method to another as needed.
+- Integration of instant messaging, voice messaging, conferencing, email, and other communication methods, which enables users to select the most appropriate method for the task. Users can also switch from one method to another as needed.
 
-  - Availability of communications alternatives from any location where an Internet connection is available.
+- Availability of communications alternatives from any location where an Internet connection is available.
 
-  - A smart client (Microsoft Lync) for telephony, instant messaging, and conferencing.
+- A smart client (Microsoft Lync) for telephony, instant messaging, and conferencing.
 
-  - Continuity of the user experience across multiple devices.
+- Continuity of the user experience across multiple devices.
 
 For more information about Microsoft Lync Server, see [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752).
 

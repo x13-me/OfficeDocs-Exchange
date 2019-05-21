@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013 SP1_
+_**Applies to:** Exchange Server 2013 SP1_
 
 You can use the built-in health reporting cmdlets to perform a variety of tasks related to managed availability, such as:
 

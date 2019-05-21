@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 This topic shows you how to add, remove, copy, and view management role groups in Microsoft Exchange Server 2013. It also shows you how to add, remove, and list management roles on role groups and how to change management scopes and delegates on role groups. For more information about role groups in Exchange 2013, see [Understanding management role groups](understanding-management-role-groups-exchange-2013-help.md).
 

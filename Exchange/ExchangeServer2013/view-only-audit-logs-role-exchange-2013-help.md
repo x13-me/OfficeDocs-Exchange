@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The `View-Only Audit Logs` management role enables administrators and specialist users to search the administrator audit logs in an organization.
 

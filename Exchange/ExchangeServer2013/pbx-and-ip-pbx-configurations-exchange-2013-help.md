@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Increasingly, organizations are purchasing, installing, and maintaining the hardware components, for example, Private Branch eXchanges (PBXs) or IP PBXs, that are required to support their own telephony systems. Many organizations are buying their own telephony equipment and training their staff to reduce expenses associated with maintaining their telephony systems and because they want more control over the telephony features they offer.
 
@@ -43,7 +43,7 @@ A circuit-switched network is a network in which there exists a dedicated connec
 
 Different types or categories of telephone systems found in businesses and organizations include a circuit-based network, an IP-based network, or both. Each type of telephone system has distinct advantages and disadvantages you need to consider when planning and implementing a telephony system.
 
-  - **Centrex:** Centrex is a type of telephone service that telephone companies lease to businesses and organizations. A traditional Centrex telephone system eliminates the need for a business or organization to purchase the telephony hardware used onsite to support the organization's telephone system. Typically, Centrex systems are used by small offices that rent Centrex services from a telephone company on a line-by-line and month-by-month basis. Centrex telephony systems are sometimes used by larger organizations, but are most frequently found in government, public, and private organizations. Centrex frequently uses analog telephone lines for the connections to a business or organization. But it can also use T1-circuits with a demultiplexer onsite to support analog and digital telephones or ISDN lines.
+- **Centrex**: Centrex is a type of telephone service that telephone companies lease to businesses and organizations. A traditional Centrex telephone system eliminates the need for a business or organization to purchase the telephony hardware used onsite to support the organization's telephone system. Typically, Centrex systems are used by small offices that rent Centrex services from a telephone company on a line-by-line and month-by-month basis. Centrex telephony systems are sometimes used by larger organizations, but are most frequently found in government, public, and private organizations. Centrex frequently uses analog telephone lines for the connections to a business or organization. But it can also use T1-circuits with a demultiplexer onsite to support analog and digital telephones or ISDN lines.
 
     In a Centrex-based telephony system, the telephone company's central office acts as the telephone exchange. It's designed specifically to support the needs of a given organization. The central telephone office routes the calls that originate from inside the company to the appropriate internal or external telephone number. Centrex uses the telephone company's central office exchange to route internal calls back to an extension. For example, with Centrex, the telephone exchange or telephone company's central office knows which extensions are internal. So an employee who's located within the organization's telephony network can dial another employee in the same telephony network or dial plan by using a four-digit extension number. When a call is dialed to the internal telephone extension number, it's forwarded to the telephone company's central office and then routed back to the extension number that initiated the call.
 
@@ -51,13 +51,13 @@ A variation of a traditional Centrex telephony system is called *IP Centrex*. In
 
 Organizations that currently have a traditional Centrex telephone system in place have to install, deploy, and maintain one or more VoIP gateways for Unified Messaging to work correctly. Unified Messaging may require that you install, deploy, and maintain VoIP gateways to work with IP Centrex. Several variables will determine whether you need a VoIP gateway. These variables include the type of telephones used in your organization (analog, digital, or IP) and the protocols supported by the IP Centrex system.
 
-  - **Key telephone:** In a Key telephone system, the telephone company's central office is connected to the organization using standard analog or digital telephone lines. A single telephone extension number is connected to multiple telephones so when a call is placed into the organization using this telephone number, all the telephones associated with that line or extension number will ring at the same time.
+- **Key telephone**: In a Key telephone system, the telephone company's central office is connected to the organization using standard analog or digital telephone lines. A single telephone extension number is connected to multiple telephones so when a call is placed into the organization using this telephone number, all the telephones associated with that line or extension number will ring at the same time.
 
 With Key telephone systems, individual users share lines across telephones. Therefore, callers won't experience frequent busy signals when they try to call into an organization. Key telephone systems are typically used by small offices where internal call volume is high but external call volume is low.
 
 Key telephone systems have become more sophisticated over time and can work with Unified Messaging if a VoIP gateway is added. However, some less sophisticated systems may not work even if a supported VoIP gateway is used.
 
-  - **PBX:** A legacy PBX is a telephony device that switches calls in a telephony or circuit-switched network. A legacy PBX is a PBX that doesn't have a network adapter and can't pass IP packets. Because they can't pass IP packets, some businesses and organizations have replaced legacy PBXs with IP PBXs. For a list of PBXs supported by Unified Messaging, see [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013).
+- **PBX**: A legacy PBX is a telephony device that switches calls in a telephony or circuit-switched network. A legacy PBX is a PBX that doesn't have a network adapter and can't pass IP packets. Because they can't pass IP packets, some businesses and organizations have replaced legacy PBXs with IP PBXs. For a list of PBXs supported by Unified Messaging, see [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013).
 
     PBXs are used by most medium- and larger-sized companies. A PBX enables users or subscribers of the PBX to share a certain number of outside lines for making telephone calls considered external to the PBX. A PBX is a much less expensive solution than giving each user in a business a dedicated external telephone line. Telephones, in addition to fax machines, modems, and many other communication devices, can be connected to a PBX.
 
@@ -65,7 +65,7 @@ Key telephone systems have become more sophisticated over time and can work with
 
     To enable a legacy PBX to be used with Unified Messaging, you need to deploy a supported VoIP gateway. For a list of supported VoIP gateways, see [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013).
 
-  - **IP PBX:** An IP PBX is a PBX that has a network adapter that supports the IP protocol. It's a piece of telephone switching equipment that generally resides in an organization or business instead of being located at a telephone company office. There are two types of IP PBXs: traditional IP PBXs and hybrid IP PBXs. Both traditional IP PBXs and hybrid IP PBXs support the IP protocol for sending voice conversations in packets to VoIP-based telephones. However, hybrid IP PBXs also connect traditional analog and digital telephones.
+- **IP PBX**: An IP PBX is a PBX that has a network adapter that supports the IP protocol. It's a piece of telephone switching equipment that generally resides in an organization or business instead of being located at a telephone company office. There are two types of IP PBXs: traditional IP PBXs and hybrid IP PBXs. Both traditional IP PBXs and hybrid IP PBXs support the IP protocol for sending voice conversations in packets to VoIP-based telephones. However, hybrid IP PBXs also connect traditional analog and digital telephones.
 
     IP PBXs are frequently easier to administer than legacy PBXs, because administrators can more easily configure IP PBX services using an Internet browser or another IP-based tool. Also, no additional wiring, cabling, or patch panels have to be installed. With an IP PBX, you can move an IP-based telephone by merely unplugging the telephone and plugging it in at a new location. This lets you avoid the costly service calls required to move a telephone from legacy PBX vendors. Additionally, organizations that own an IP PBX don't have to incur the additional infrastructure costs required to maintain and manage separate circuit-switched and packet-switched networks. For a list of IP PBXs supported for Unified Messaging, see [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013).
 
@@ -75,29 +75,29 @@ Key telephone systems have become more sophisticated over time and can work with
 
 On telephony networks that have legacy or traditional PBXs, a PBX does the following:
 
-  - Creates connections or circuits between the telephone sets of two users.
+- Creates connections or circuits between the telephone sets of two users.
 
-  - Maintains the connection as long as the users need the connection.
+- Maintains the connection as long as the users need the connection.
 
-  - Provides information for accounting purposes (for example, meters calls).
+- Provides information for accounting purposes (for example, meters calls).
 
 In addition to the three functions included in the previous list, PBXs may offer other calling features such as:
 
-  - Auto attendants
+- Auto attendants
 
-  - Call accounting
+- Call accounting
 
-  - Call pick-up
+- Call pick-up
 
-  - Call transfer
+- Call transfer
 
-  - Call waiting
+- Call waiting
 
-  - Conference calling
+- Conference calling
 
-  - Direct Inward Dialing (DID)
+- Direct Inward Dialing (DID)
 
-  - Do Not Disturb (DND)
+- Do Not Disturb (DND)
 
 Although there are several manufacturers of PBXs, they all fit into two basic categories: analog and digital. These types of PBXs are frequently known as *legacy* or *traditional* PBXs.
 
@@ -127,9 +127,9 @@ This kind of PBX environment can also include advanced features, such as call tr
 
 In a telephony environment that includes a single or multiple analog or digital PBXs, a VoIP gateway is required between the PBX and the Exchange 2013 Client Access and Mailbox servers to convert the circuit-based protocols found on a telephony network into the IP-based protocols found on a data network. For more information about VoIP gateways, see the following topics:
 
-  - [UM IP gateways](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)
+- [UM IP gateways](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)
 
-  - [Connect a VoIP gateway to communicate with a PBX](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md)
+- [Connect a VoIP gateway to communicate with a PBX](connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md)
 
 For a list of VoIP gateways supported for Unified Messaging, see [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013).
 
@@ -166,20 +166,20 @@ Return to top
 
 Calling or called party identification is a telephone company service that can tell the person who is receiving the call the telephone number and sometimes the name of the person who is calling and other information about the call. This information is sent over a serial cable by using call signaling. When a call is received by a PBX or IP PBX from a telephone company, the call includes calling identification information such as the following:
 
-  - The calling party's number
+- The calling party's number
 
-  - The called party's number
+- The called party's number
 
-  - Status codes such as a ring-no-answer, the state or condition of the line, line busy, and call forward always
+- Status codes such as a ring-no-answer, the state or condition of the line, line busy, and call forward always
 
-  - The line or port number that's being used for the call
+- The line or port number that's being used for the call
 
-  - In telephony, the signaling information is used to exchange information between endpoints on a network to set up, control, and end calls. Several signaling methods used by VoIP gateways and IP PBXs are supported by Unified Messaging. The signaling method that's used depends on the type of device that's being used and the type of signaling method that's used by the telephone company. The most important factor is that the device that's connecting to the telephone company and to the VoIP gateway or IP PBX must support at least one of the signaling methods that enable calling or called party information to be sent and received by callers. For more information about signaling configuration information for a supported VoIP gateway, see [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013).
+- In telephony, the signaling information is used to exchange information between endpoints on a network to set up, control, and end calls. Several signaling methods used by VoIP gateways and IP PBXs are supported by Unified Messaging. The signaling method that's used depends on the type of device that's being used and the type of signaling method that's used by the telephone company. The most important factor is that the device that's connecting to the telephone company and to the VoIP gateway or IP PBX must support at least one of the signaling methods that enable calling or called party information to be sent and received by callers. For more information about signaling configuration information for a supported VoIP gateway, see [Telephony advisor for Exchange 2013](https://docs.microsoft.com/en-us/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013).
 
 Although other signaling methods can be used, the two most popular signaling methods are as follows:
 
-  - **Simplified Message Desk Interface (SMDI):** SMDI is a protocol that's used to provide signaling, call control, and calling identification information from an interface between a telephone system and a voice mail system. It's used to provide the voice mail system with the information it needs to process an incoming call. Every time an incoming call is sent by using SMDI over a serial interface or RS-232 interface, the information that's sent will identify the line or port, the type of call, and the calling or called party numbers. The SMDI cable connects from a device such as a PBX to a serial connection on the VoIP gateway. However, SMDI is also used with IP PBXs. The SMDI protocol allows for a maximum of only 10 digits for each calling and called number. This is a limitation of the protocol and can't be changed.
+- **Simplified Message Desk Interface (SMDI)**: SMDI is a protocol that's used to provide signaling, call control, and calling identification information from an interface between a telephone system and a voice mail system. It's used to provide the voice mail system with the information it needs to process an incoming call. Every time an incoming call is sent by using SMDI over a serial interface or RS-232 interface, the information that's sent will identify the line or port, the type of call, and the calling or called party numbers. The SMDI cable connects from a device such as a PBX to a serial connection on the VoIP gateway. However, SMDI is also used with IP PBXs. The SMDI protocol allows for a maximum of only 10 digits for each calling and called number. This is a limitation of the protocol and can't be changed.
 
-  - **In-band:** In-band signaling allows for the exchange of signaling, call control, and calling identification information from a telephone company. This information is sent over the same channel and in the same band (300 Hz to 3.4 kHz) as the voice and other sounds that are being made during the call. For example, when a user places a call by using DTMF or touchtone dialing and talks to the called party, both the touchtone and the voice conversation use the same channel and band. In-band signaling is less secure because the control signals are exposed to the user and is a less popular signaling method than SMDI. In-band signaling applies only to Channel Associated Signaling (CAS).
+- **In-band:** In-band signaling allows for the exchange of signaling, call control, and calling identification information from a telephone company. This information is sent over the same channel and in the same band (300 Hz to 3.4 kHz) as the voice and other sounds that are being made during the call. For example, when a user places a call by using DTMF or touchtone dialing and talks to the called party, both the touchtone and the voice conversation use the same channel and band. In-band signaling is less secure because the control signals are exposed to the user and is a less popular signaling method than SMDI. In-band signaling applies only to Channel Associated Signaling (CAS).
 
 Return to top

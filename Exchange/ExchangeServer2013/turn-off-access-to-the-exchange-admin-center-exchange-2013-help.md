@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 For security purposes, some organizations may want to restrict access to the Exchange admin center (EAC) for users coming from the Internet. This procedure shows you how to turn off access to the EAC. This procedure doesn't prevent users from accessing the Options in Outlook Web App.
 

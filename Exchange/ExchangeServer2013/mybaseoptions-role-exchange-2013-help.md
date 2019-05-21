@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The `MyBaseOptions` management role enables individual users to view and modify the basic configuration of their own mailbox and associated settings.
 

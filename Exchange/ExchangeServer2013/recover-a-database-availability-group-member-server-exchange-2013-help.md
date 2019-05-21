@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 If a Mailbox server that's a member of a database availability group (DAG) is lost or otherwise fails and is unrecoverable and needs replacement, you can perform a server recovery operation. Microsoft Exchange Server 2013 Setup includes the switch */m:RecoverServer* that can be used to perform the server recovery operation. Running Setup with the */m:RecoverServer* switch causes Setup to read the server's configuration information from Active Directory for a server with the same name as the server from which you're running Setup. After the server's configuration information is gathered from Active Directory, the original Exchange files and services are then installed on the server, and the roles and settings that were stored in Active Directory are then applied to the server.
 

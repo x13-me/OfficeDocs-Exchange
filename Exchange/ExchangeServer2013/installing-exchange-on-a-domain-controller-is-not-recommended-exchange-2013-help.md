@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup has detected that the computer you're attempting to install Exchange 2013 on is an Active Directory domain controller. Installing Exchange 2013 on a domain controller isn't recommended.
 

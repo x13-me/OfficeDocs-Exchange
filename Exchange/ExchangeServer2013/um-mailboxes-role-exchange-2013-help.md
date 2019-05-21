@@ -14,9 +14,7 @@ mtps_version: v=EXCHG.150
 
 # UM Mailboxes role
 
- 
-
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The `UM Mailboxes` management role enables administrators to manage the Unified Messaging configuration of mailboxes and other recipients in an organization.
 

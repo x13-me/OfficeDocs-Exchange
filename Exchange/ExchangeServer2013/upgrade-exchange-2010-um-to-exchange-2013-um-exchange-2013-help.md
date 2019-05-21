@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 When you're upgrading a Microsoft Exchange 2010 organization with Unified Messaging (UM) to Exchange 2013 Unified Messaging, there are steps that are required and other steps that were already completed as part of your Exchange 2010 UM deployment. Depending on your telephony environment and the UM components that were created and configured to support Unified Messaging in Exchange 2010, you may need to deploy additional telephony equipment including Voice over IP (VoIP) gateways, IP Private Branch eXchanges (PBXs), or traditional or SIP-enabled PBXs and then create and configure any additional UM components that will be required for Exchange 2013 UM.
 

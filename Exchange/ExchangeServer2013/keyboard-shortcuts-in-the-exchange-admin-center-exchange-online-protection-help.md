@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft is committed to making its products and services easier for everyone to use. The following sections provide information about the keyboard shortcuts that make Microsoft Exchange and other Microsoft products and services more accessible for people with disabilities.
 

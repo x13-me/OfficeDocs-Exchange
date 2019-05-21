@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can use the Exchange Management Shell to view a list of transport agents in the transport pipeline on Microsoft Exchange Server 2013 Mailbox servers and Client Access servers. Specifically, the **Get-TransportPipeline** cmdlet shows information about the following types of transport agents in the transport pipeline:
 
