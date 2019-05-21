@@ -97,7 +97,7 @@ If your project doesn't already have all of the required APIs enabled, you must 
 
    - Google Calendar API
 
-   - Google Contacts API
+   - Contacts API
 
 ## Grant access to the service account for your Google tenant
 
