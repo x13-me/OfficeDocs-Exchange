@@ -172,7 +172,7 @@ The primary email address that you provision for each user should be the same as
 
 5. After selecting the CSV file, click **Open**. Back on the **new migration batch** page, click **Next**.
 
-6. Enter an email address from the G Suite environment. This email address will be used to test connectivity between G Suite and Office 365.
+6. Enter an email address for a user within the G Suite environment. This email address will be used to test connectivity between G Suite and Office 365.
 
 7. Under **Specify the service account credentials using the JSON key file**,click **Choose File**, and then select the JSON file that was downloaded automatically when you created your service account. This file contains the private key for the service account. Click **Open** to select the file, and then, back on the **new migration batch** page, click **Next**.
 
@@ -181,7 +181,7 @@ The primary email address that you provision for each user should be the same as
    > [!NOTE]
    > Click to select **Skip verification** if you don't want to verify the migration endpoint.
 
-8. In the fields under **Move configuration**, name your migration batch and specify the target delivery domain, which is the domain used for routing mail to the Office 365 target organization from the G Suite source organization. Optionally, you can also specify a bad item limit and a large item limit, and you can specify any folders that should be excluded from the migration. When done, click **Next**.  
+8. In the fields under **Move configuration**, name your migration batch and enter the target delivery domain, which is the domain [you created](#create-a-sub-domain-for-mail-routing-to-office-365) for routing mail to the Office 365 target organization from the G Suite source organization. Optionally, you can also specify a bad item limit and a large item limit, and you can specify any folders that should be excluded from the migration. When done, click **Next**.  
 
    ![batch name](../media/gsuite-mig-16-eac-batch.png)
 
