@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting OWA.Protocol.Dep Health Set
 
-_**Applies to:**: Exchange Server 2013, Project Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The **OWA.Protocol.DEP** health set monitors the overall health of instant messaging (IM) services in Outlook Web App that are integrated between Lync 2013 and Exchange 2013. For more information about enabling instant messaging in Outlook Web App, see [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](http://go.microsoft.com/fwlink/p/?linkid=280418).
 

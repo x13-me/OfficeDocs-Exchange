@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The permissions required to perform tasks on Client Access servers that are running the Microsoft Exchange Unified Messaging Call Router service and Mailbox servers that are running the Microsoft Exchange Unified Messaging service vary depending on the procedure being performed or the cmdlet you want to run.
 

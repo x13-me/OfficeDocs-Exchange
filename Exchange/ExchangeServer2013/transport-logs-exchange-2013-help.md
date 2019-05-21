@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Transport logs provide information about what's happening in the transport pipeline. The following transport logs are available in Microsoft Exchange Server 2013:
 

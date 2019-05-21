@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Many organizations are bound by legal or regulatory requirements to preserve or deliver all legitimate email messages. In Microsoft Exchange Server 2013, spam quarantine is a feature of the Content Filter agent that reduces the risk of losing legitimate messages. Spam quarantine provides a temporary storage location for messages identified as spam that shouldn't be delivered to a user mailbox inside the organization.
 

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Online, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 A *management role assignment*, which is part of the Role Based Access Control (RBAC) permissions model in Microsoft Exchange Server 2013, is the link between a management role and a role assignee. A *role assignee* is a role group, role assignment policy, user, or universal security group (USG). A role must be assigned to a role assignee for it to take effect. For more information about RBAC, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 

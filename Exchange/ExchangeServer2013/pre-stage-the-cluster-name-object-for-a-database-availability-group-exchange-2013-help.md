@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 In environments where computer account creation is restricted or where computer accounts are created in a container other than the default computers container, you can pre-stage the cluster name object (CNO) and then provision the CNO by assigning permissions to it. Pre-staging the CNO is also required for Windows Server 2012 and Windows Server 2012 R2 DAG members due to permissions changes in Windows for computer objects. When deploying a database availability group (DAG) using Mailbox servers that are running Windows Server 2012 or Windows Server 2012 R2, you must pre-stage and provision the CNO, unless you are deploying a DAG without a cluster administrative access point. DAGs without cluster administrative access points do not use CNOs; therefore pre-staging is not required for those DAGs.
 

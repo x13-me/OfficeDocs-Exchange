@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 To meet individual, IT, or business requirements, you may need to turn off or temporarily suspend messaging records management (MRM) for an individual user or for a Mailbox server. Reasons you may need to turn off or suspend MRM include:
 

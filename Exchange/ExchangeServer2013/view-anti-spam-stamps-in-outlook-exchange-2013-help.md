@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can use Microsoft Outlook to view the anti-spam stamps that Microsoft Exchange applied to an email message. Anti-spam stamps help you diagnose spam-related problems by applying diagnostic metadata, or stamps, such as sender-specific information, puzzle validation results, and content filtering results to messages as the messages pass through the anti-spam agents that filter inbound messages from the Internet.
 

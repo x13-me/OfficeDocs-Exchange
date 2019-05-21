@@ -34,15 +34,15 @@ All Client Access servers that share the same namespaces and URLs need to use th
 
 When you set up the ASA credential, keep these guidelines in mind:
 
-  - **Account type.** We recommend that you create a computer account instead of a user account. A computer account doesn't allow interactive logon and may have simpler security policies than a user account. If you create a computer account, the password doesn't expire, but we recommend you update the password periodically anyway. You can use local group policy to specify a maximum age for the computer account and scripts to periodically delete computer accounts that do not meet current policies. Your local security policy also determines when you need to change the password. Although we recommend you use a computer account, you can create a user account.
+- **Account type**: We recommend that you create a computer account instead of a user account. A computer account doesn't allow interactive logon and may have simpler security policies than a user account. If you create a computer account, the password doesn't expire, but we recommend you update the password periodically anyway. You can use local group policy to specify a maximum age for the computer account and scripts to periodically delete computer accounts that do not meet current policies. Your local security policy also determines when you need to change the password. Although we recommend you use a computer account, you can create a user account.
 
-  - **Account name.** There are no requirements for the name of the account. You can use any name that conforms to your naming scheme.
+- **Account name**: There are no requirements for the name of the account. You can use any name that conforms to your naming scheme.
 
-  - **Account group.** The account you use for the ASA credential doesn't need special security privileges. If you are using a computer account then the account only needs to be a member of the Domain Computers security group. If you are using a user account then the account only needs to be a member of the Domain Users security group.
+- **Account group**: The account you use for the ASA credential doesn't need special security privileges. If you are using a computer account then the account only needs to be a member of the Domain Computers security group. If you are using a user account then the account only needs to be a member of the Domain Users security group.
 
-  - **Account password.** The password you provide when you create the account will be used. So when you create the account, you should use a complex password and ensure that the password conforms to your organization's password requirements.
+- **Account password**: The password you provide when you create the account will be used. So when you create the account, you should use a complex password and ensure that the password conforms to your organization's password requirements.
 
-**To create the ASA credential as a computer account**
+### To create the ASA credential as a computer account
 
 1. On a domain-joined computer, run Windows PowerShell or the Exchange Management Shell.
 
@@ -90,13 +90,13 @@ If you have a cross-forest or resource-forest deployment, and you have users tha
 
 After you create the ASA credential, you need to associate Exchange Service Principal Names (SPNs) with the ASA credential. The list of Exchange SPNs may vary with your configuration, but should include at least the following:
 
-  - **http/**: Use this SPN for Outlook Anywhere, MAPI over HTTP, Exchange Web Services, Autodiscover, and Offline Address Book.
+**http/**: Use this SPN for Outlook Anywhere, MAPI over HTTP, Exchange Web Services, Autodiscover, and Offline Address Book.
 
 The SPN values need to match the service name on the network load balancer instead of on individual servers. To help plan which SPN values you should use, consider the following scenarios:
 
-  - Single Active Directory site
+- Single Active Directory site
 
-  - Multiple Active Directory sites
+- Multiple Active Directory sites
 
 In each of these scenarios, assume that the load-balanced, fully-qualified domain names (FQDNs) have been deployed for the internal URLs, external URLs, and the autodiscover internal URI used by the Client Access server members. For more information, see Understanding proxying and redirection.
 
@@ -108,9 +108,9 @@ If you have a single Active Directory site, your environment may resemble the on
 
 Based on the FQDNs that are used by the internal Outlook clients in the preceding figure, you need to associate the following SPNs with the ASA credential:
 
-  - http/mail.corp.tailspintoys.com
+- http/mail.corp.tailspintoys.com
 
-  - http/autodiscover.corp.tailspintoys.com
+- http/autodiscover.corp.tailspintoys.com
 
 ## Multiple Active Directory sites
 
@@ -120,15 +120,15 @@ If you have multiple Active Directory sites, your environment may resemble the o
 
 Based on the FQDNs that are used by the Outlook clients in the preceding figure, you would need to associate the following SPNs with the ASA credential that is used by the Client Access servers in ADSite 1:
 
-  - http/mail.corp.tailspintoys.com
+- http/mail.corp.tailspintoys.com
 
-  - http/autodiscover.corp.tailspintoys.com
+- http/autodiscover.corp.tailspintoys.com
 
 You would also need to associate the following SPNs with the ASA credential that is used by the Client Access servers in ADSite 2:
 
-  - http/mailsdc.corp.tailspintoys.com
+- http/mailsdc.corp.tailspintoys.com
 
-  - http/autodiscoversdc.corp.tailspintoys.com
+- http/autodiscoversdc.corp.tailspintoys.com
 
 ## Configure and then verify configuration of the ASA credential on each Client Access server
 
@@ -136,9 +136,9 @@ After you've created the account, you need to verify that the account has replic
 
 You configure the ASA credential by using the Exchange Management Shell as described in one of these procedures:
 
-  - Deploy the ASA credential to the first Exchange 2013 Client Access server
+- Deploy the ASA credential to the first Exchange 2013 Client Access server
 
-  - Deploy the ASA credential to subsequent Exchange 2013 Client Access servers
+- Deploy the ASA credential to subsequent Exchange 2013 Client Access servers
 
 The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](using-the-rollalternateserviceaccountcredential-ps1-script-in-the-shell-exchange-2013-help.md). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
 
@@ -265,32 +265,32 @@ The following is an example of the output that's shown when you run the RollAlte
 
 ## Verify the deployment of the ASA credential
 
-  - Open the Exchange Management Shell on an Exchange 2013 server.
+- Open the Exchange Management Shell on an Exchange 2013 server.
 
-  - Run the following command to check the settings on a Client Access server:
+- Run the following command to check the settings on a Client Access server:
 
-    ```powershell
-        Get-ClientAccessServer CAS-3 -IncludeAlternateServiceAccountCredentialStatus | Format-List Name, AlternateServiceAccountConfiguration
-    ```
+  ```powershell
+  Get-ClientAccessServer CAS-3 -IncludeAlternateServiceAccountCredentialStatus | Format-List Name, AlternateServiceAccountConfiguration
+  ```
 
-  - Repeat Step 2 on each Client Access server where you want to verify the deployment of the ASA credential.
+- Repeat Step 2 on each Client Access server where you want to verify the deployment of the ASA credential.
 
 The following is an example of the output that's shown when you run the Get-ClientAccessServer command above and no previous ASA credential was set.
 
 ```powershell
-    Name                                 : CAS-1
-    AlternateServiceAccountConfiguration : Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
-                                           Previous: <Not set>
-                                               ...
+Name                                 : CAS-1
+AlternateServiceAccountConfiguration : Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
+                                       Previous: <Not set>
+                                           ...
 ```
 
 The following is an example of the output that's shown when you run the Get-ClientAccessServer command above and an ASA credential was previously set. The previous ASA credential and the date and time it was set are returned.
 
 ```powershell
-    Name                                 : CAS-3
-    AlternateServiceAccountConfiguration : Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
-                                           Previous: 7/15/2014 12:58:35 PM, tailspin\oldSharedServiceAccountName$
-                                               ...
+Name                                 : CAS-3
+AlternateServiceAccountConfiguration : Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
+                                       Previous: 7/15/2014 12:58:35 PM, tailspin\oldSharedServiceAccountName$
+                                           ...
 ```
 
 ## Associate Service Principal Names (SPNs) with the ASA credential
@@ -300,25 +300,25 @@ The following is an example of the output that's shown when you run the Get-Clie
 
 Before you associate the SPNs with the ASA credential, you need to verify that the target SPNs aren't already associated with a different account in the forest. The ASA credential need to be the only account in the forest with which these SPNs are associated. You can verify that no other account in the forest is associated with the SPNs by running the **setspn** command from the command line.
 
-**Verify an SPN is not already associated with an account in a forest by running the setspn command**
+### Verify an SPN is not already associated with an account in a forest by running the setspn command
 
 1. Press **Start**. In the **Search** box, type **Command Prompt**, then in the list of results, select **Command Prompt**.
 
 2. At the command prompt, type the following command:
 
-    ```powershell
-    setspn -F -Q <SPN>
-    ```
+   ```powershell
+   setspn -F -Q <SPN>
+   ```
 
     Where \<SPN\> is the SPN you want to associate with the ASA credential. For example:
 
-    ```powershell
-    setspn -F -Q http/mail.corp.tailspintoys.com
-    ```
+   ```powershell
+   setspn -F -Q http/mail.corp.tailspintoys.com
+   ```
 
-    The command should return nothing. If it returns something, another account is already associated with the SPN. Repeat this step once for each SPN you want to associate with the ASA credential.
+   The command should return nothing. If it returns something, another account is already associated with the SPN. Repeat this step once for each SPN you want to associate with the ASA credential.
 
-**Associate an SPN with an ASA credential by using the setspn command**
+### Associate an SPN with an ASA credential by using the setspn command
 
 1. Press **Start**. In the **Search** box, type **Command Prompt**, then in the list of results, select **Command Prompt**.
 
@@ -336,23 +336,23 @@ Before you associate the SPNs with the ASA credential, you need to verify that t
 
     Run this command once for each SPN you want to associate with the ASA credential.
 
-**Verify you associated the SPNs with the ASA credentials by using the setspn command**
+### Verify you associated the SPNs with the ASA credentials by using the setspn command
 
 1. Press **Start**. In the **Search** box, type **Command Prompt**, then in the list of results, select **Command Prompt**.
 
 2. At the command prompt, type the following command:
 
-    ```powershell
-    setspn -L <Account>$
-    ```
+   ```powershell
+   setspn -L <Account>$
+   ```
 
-    Where \<Account\> is the account associated with the ASA credential. For example:
+   Where \<Account\> is the account associated with the ASA credential. For example:
 
-    ```powershell
-    setspn -L tailspin\EXCH2013ASA$
-    ```
+   ```powershell
+   setspn -L tailspin\EXCH2013ASA$
+   ```
 
-    You only need to run this command once.
+   You only need to run this command once.
 
 ## Enable Kerberos authentication for Outlook clients
 
@@ -360,15 +360,15 @@ Before you associate the SPNs with the ASA credential, you need to verify that t
 
 2. To enable Kerberos authentication for Outlook Anywhere clients, run the following command on your Client Access server:
 
-    ```powershell
-        Get-OutlookAnywhere -server CAS-1 | Set-OutlookAnywhere -InternalClientAuthenticationMethod  Negotiate
-    ```
+   ```powershell
+   Get-OutlookAnywhere -server CAS-1 | Set-OutlookAnywhere -InternalClientAuthenticationMethod  Negotiate
+   ```
 
 3. To enable Kerberos authentication for MAPI over HTTP clients, run the following on your Exchange 2013 Client Access server:
 
-    ```powershell
-        Get-MapiVirtualDirectory -Server CAS-1 | Set-MapiVirtualDirectory -IISAuthenticationMethods Ntlm, Negotiate
-    ```
+   ```powershell
+   Get-MapiVirtualDirectory -Server CAS-1 | Set-MapiVirtualDirectory -IISAuthenticationMethods Ntlm, Negotiate
+   ```
 
 4. Repeat steps 2 and 3 for each Exchange 2013 Client Access server where you want to enable Kerberos authentication.
 
@@ -380,7 +380,7 @@ After you've successfully configured Kerberos and the ASA credential, verify tha
 
 The Microsoft Exchange Service Host service (MSExchangeServiceHost) on the Client Access server is responsible for managing the ASA credential. If this service isn't running, Kerberos authentication isn't possible. By default, the service is configured to automatically start when the computer starts.
 
-**To verify the Microsoft Exchange Service Host service is started**
+### To verify the Microsoft Exchange Service Host service is started
 
 1. Click **Start**, type **services.msc**, and then select **services.msc** from the list.
 
@@ -392,21 +392,21 @@ The Microsoft Exchange Service Host service (MSExchangeServiceHost) on the Clien
 
 When you configured the ASA credential on each Client Access server, you ran the **set-ClientAccessServer** cmdlet. Once you have run this cmdlet, you can use the logs to verify successful Kerberos connections.
 
-**To validate that Kerberos is working correctly by using the HttpProxy log file**
+### To validate that Kerberos is working correctly by using the HttpProxy log file
 
 1. In a text editor, browse to the folder where the HttpProxy log is stored. By default, the log is stored in the following folder:
 
-    ```powershell
-        %ExchangeInstallPath%\\Logging\\HttpProxy\\RpcHttp
-    ```
+   ```powershell
+   %ExchangeInstallPath%\\Logging\\HttpProxy\\RpcHttp
+   ```
 
 2. Open the most recent log file and look for the word **Negotiate**. The line in the log file will look something like the following example:
 
-    ```powershell
-        2014-02-19T13:30:49.219Z,e19d08f4-e04c-42da-a6be-b7484b396db0,15,0,775,22,,RpcHttp,mail.corp.tailspintoys.com,/rpc/rpcproxy.dll,,Negotiate,True,tailspin\Wendy,tailspintoys.com,MailboxGuid~ad44b1e0-e44f-4a16-9396-3a437f594f88,MSRPC,192.168.1.77,EXCH1,200,200,,RPC_OUT_DATA,Proxy,exch2.tailspintoys.com,15.00.0775.000,IntraForest,MailboxGuidWithDomain,,,,76,462,1,,1,1,,0,,0,,0,0,16272.3359,0,0,3,0,23,0,25,0,16280,1,16274,16230,16233,16234,16282,?ad44b1e0-e44f-4a16-9396-3a437f594f88@tailspintoys.com:6001,,BeginRequest=2014-02-19T13:30:32.946Z;BeginGetRequestStream=2014-02-19T13:30:32.946Z;OnRequestStreamReady=2014-02-19T13:30:32.946Z;BeginGetResponse=2014-02-19T13:30:32.946Z;OnResponseReady=2014-02-19T13:30:32.977Z;EndGetResponse=2014-02-19T13:30:32.977Z;,PossibleException=IOException;
-    ```
+   ```powershell
+   2014-02-19T13:30:49.219Z,e19d08f4-e04c-42da-a6be-b7484b396db0,15,0,775,22,,RpcHttp,mail.corp.tailspintoys.com,/rpc/rpcproxy.dll,,Negotiate,True,tailspin\Wendy,tailspintoys.com,MailboxGuid~ad44b1e0-e44f-4a16-9396-3a437f594f88,MSRPC,192.168.1.77,EXCH1,200,200,,RPC_OUT_DATA,Proxy,exch2.tailspintoys.com,15.00.0775.000,IntraForest,MailboxGuidWithDomain,,,,76,462,1,,1,1,,0,,0,,0,0,16272.3359,0,0,3,0,23,0,25,0,16280,1,16274,16230,16233,16234,16282,?ad44b1e0-e44f-4a16-9396-3a437f594f88@tailspintoys.com:6001,,BeginRequest=2014-02-19T13:30:32.946Z;BeginGetRequestStream=2014-02-19T13:30:32.946Z;OnRequestStreamReady=2014-02-19T13:30:32.946Z;BeginGetResponse=2014-02-19T13:30:32.946Z;OnResponseReady=2014-02-19T13:30:32.977Z;EndGetResponse=2014-02-19T13:30:32.977Z;,PossibleException=IOException;
+   ```
 
-    If you see the **AuthenticationType** value is **Negotiate**, then the server is successfully creating Kerberos authenticated connections.
+   If you see the **AuthenticationType** value is **Negotiate**, then the server is successfully creating Kerberos authenticated connections.
 
 ## Maintain the ASA credential
 
@@ -416,12 +416,12 @@ If you need to refresh the password on the ASA credential periodically, use the 
 
 To configure your Client Access server so that it doesn't use Kerberos, disassociate or remove the SPNs from the ASA credential. If the SPNs are removed, Kerberos authentication won't be attempted by your clients, and clients configured to use Negotiate authentication will use NTLM instead. Clients configured to use only Kerberos will be unable to connect. Once the SPNs are removed you should also delete the account.
 
-**To remove the ASA credential**
+### To remove the ASA credential
 
 1. Open the Exchange Management Shell on an Exchange 2013 server and run the following command:
 
-    ```powershell
-    Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
-    ```
+   ```powershell
+   Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+   ```
 
 2. Although you don't have to do this immediately, you should eventually restart all client computers to clear the Kerberos ticket cache from the computer.

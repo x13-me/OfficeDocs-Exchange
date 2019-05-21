@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013 SP1_
+_**Applies to:** Exchange Server 2013 SP1_
 
 A server switchover is a task that you perform to move all active mailbox database copies from their current Mailbox server to one or more other Mailbox servers in a database availability group (DAG). This task is performed as part of preparation for a scheduled outage for the current Mailbox server.
 

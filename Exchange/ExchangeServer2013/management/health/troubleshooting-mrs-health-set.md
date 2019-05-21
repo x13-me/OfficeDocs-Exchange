@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting MRS Health Set
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The Mailbox Replication Service (MRS) health set monitors the overall health of the MRS service.
 

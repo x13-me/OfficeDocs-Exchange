@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Each management role entry represents a single cmdlet or script. The parameters included on a role entry determine what parameters on the cmdlet or script a user can access.
 

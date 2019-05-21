@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Understanding server health and performance is critical to designing and maintaining a high-performance messaging infrastructure. Microsoft Exchange Server 2013 introduces improvements in server health and performance.
 

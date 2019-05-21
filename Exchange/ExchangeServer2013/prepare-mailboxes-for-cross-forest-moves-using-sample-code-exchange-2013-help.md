@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange 2013 supports mailbox moves and migrations using the **New-MoveRequest** and **New-MigrationBatch** cmdlets. You can also move the mailbox via the Exchange admin center (EAC). You can move a mailbox from a source Exchange forest to a target Exchange 2010 forest.
 

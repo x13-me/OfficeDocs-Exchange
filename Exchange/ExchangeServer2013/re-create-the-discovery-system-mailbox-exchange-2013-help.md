@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 In-Place eDiscovery uses a system mailbox to store In-Place eDiscovery search metadata. This Discovery system mailbox has the display name **SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}**. Because system mailboxes aren't visible in the Exchange Administration Center (EAC) or in Exchange address lists, they are rarely deleted inadvertently.
 

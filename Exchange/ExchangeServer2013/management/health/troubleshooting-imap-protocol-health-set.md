@@ -16,8 +16,6 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-_**Applies to:** Exchange Server 2013_
-
 The IMAP.Protocol health set monitors the IMAP4 protocol on the Mailbox server. If you receive an alert that specifies that the IMAP.Protocol health set is unhealthy, this indicates an issue that affects the IMAP4 protocol on the Mailbox server that's indicated in the alert.
 
 ## Explanation

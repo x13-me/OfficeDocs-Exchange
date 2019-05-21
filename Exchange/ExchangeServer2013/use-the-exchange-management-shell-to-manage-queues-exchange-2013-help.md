@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 As in previous versions of Exchange, you can use the Exchange Management Shell in Microsoft Exchange Server 2013 to view information about queues and the messages in those queues, and to perform management actions on queues and messages. In Exchange 2013, queues exist on Mailbox servers and Edge Transport servers. This topic refers to these servers as *transport servers*.
 

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can use the Services snap-in in Microsoft Management Console (MMC) or cmd.exe at a command prompt to start the Microsoft Exchange Unified Messaging service on a Mailbox server. By default, the Microsoft Exchange Unified Messaging service is started after a Mailbox server is installed. However, there may be times when you have to restart the Microsoft Exchange Unified Messaging service manually, for example, when you've taken the Mailbox server offline and have to bring it back online.
 

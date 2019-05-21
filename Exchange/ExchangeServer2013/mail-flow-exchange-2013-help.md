@@ -105,7 +105,7 @@ The Transport service on a Mailbox server consists of the following components a
 
       - Content conversion.
 
-    Additionally, mail flow rules that are defined by the organization are applied. After messages have been categorized, they're put into a delivery queue that's based on the destination of the message. Messages are queued by the destination mailbox database, DAG, Active Directory site, Active Directory forest or external domain.
+    Additionally, transport rules that are defined by the organization are applied. After messages have been categorized, they're put into a delivery queue that's based on the destination of the message. Messages are queued by the destination mailbox database, DAG, Active Directory site, Active Directory forest or external domain.
 
   - **SMTP Send**: How messages are routed from the Transport service depends on the location of the message recipients relative to the Mailbox server where categorization occurred. The message could be routed to one of the following locations:
 

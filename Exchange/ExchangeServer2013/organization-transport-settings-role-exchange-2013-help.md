@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The `Organization Transport Settings` management role enables administrators to manage organization-wide transport settings, such as system messages, Active Directory site configuration, and transport configuration settings for the whole Exchange organization.
 

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Delivery Reports is a message tracking tool in the Exchange Administration Center (EAC) that you can use to search for delivery status on email messages sent to or from users in your organization's address book, with a certain subject. You can track delivery information about messages sent by or received from any specific mailbox in your organization. The content of the message body isn't returned in a delivery report, but the subject line is displayed in the results. You can track messages for up to 14 days after they were sent or received.
 

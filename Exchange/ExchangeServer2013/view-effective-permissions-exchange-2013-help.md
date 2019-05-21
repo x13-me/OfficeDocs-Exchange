@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Permissions in Microsoft Exchange Server 2013 are granted using management roles that are assigned to management role groups, management role assignment policies, universal security groups (USGs), or directly to users. Users are granted the permissions if they're members of the role groups or USGs, or are assigned role assignment policies.
 

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The `WorkloadManagement` management role enables administrators to manage workload management policies. Administrators can configure resource health definitions, workload classifications, and enable or disable workload management. Changes should only be made under the direction of Microsoft Customer Service and Support.
 

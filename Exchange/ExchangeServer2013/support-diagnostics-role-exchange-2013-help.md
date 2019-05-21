@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The `Support Diagnostics` management role enables administrators to perform advanced diagnostics under the direction of Microsoft Customer Service and Support in an organization.
 

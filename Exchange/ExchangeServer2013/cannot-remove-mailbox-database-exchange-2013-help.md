@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Cannot remove mailbox database
 
-_**Applies to:** Exchange Server_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because it can't remove a user mailbox database from the local server without incurring potential data loss.
 

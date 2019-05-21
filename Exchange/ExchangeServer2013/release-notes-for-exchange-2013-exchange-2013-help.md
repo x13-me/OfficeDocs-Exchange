@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Welcome to Microsoft Exchange Server 2013\! This topic contains important information that you need to know to successfully deploy Exchange 2013. Please read this topic completely before beginning your deployment.
 

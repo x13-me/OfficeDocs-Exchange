@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Understanding storage options and requirements for the Mailbox server role in Microsoft Exchange Server 2013 is an important part of your Mailbox server storage design solution.
 

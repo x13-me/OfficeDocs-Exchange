@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because it detected one or more Microsoft Exchange Server 2010 servers haven't been upgraded to Service Pack 3 (SP3) for Exchange Server 2010. Before you can install Exchange 2013, all Exchange 2010 servers in your organization must be upgraded to Exchange 2010 SP3. This requirement includes Exchange 2010 Edge Transport servers. For more information, see [Upgrade from Exchange 2010 to Exchange 2013](upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md).
 

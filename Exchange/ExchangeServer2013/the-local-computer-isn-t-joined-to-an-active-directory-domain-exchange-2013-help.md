@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because it detected that the local computer isn't a member of an Active Directory domain. You must join the local computer to an Active Directory domain before you can install Exchange Server 2013. You may also see this message if you log into a local user account on the computer instead of a domain user account with sufficient administrative rights to install Exchange 2013.
 

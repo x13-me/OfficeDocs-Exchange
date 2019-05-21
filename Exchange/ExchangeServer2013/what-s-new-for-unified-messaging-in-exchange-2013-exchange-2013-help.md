@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, we're enhancing earlier releases of Exchange by introducing new features and architectural changes. Unified Messaging (UM) in Exchange 2013 includes the same feature set as Exchange 2010 and Exchange 2007, however Unified Messaging is no longer a separate server role. It's now a component of the voice-related features offered in Exchange 2013.
 

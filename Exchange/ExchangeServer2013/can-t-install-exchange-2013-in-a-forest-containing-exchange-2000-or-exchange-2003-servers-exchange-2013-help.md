@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Can't install Exchange 2013 in a forest containing Exchange 2000 or Exchange 2003 servers.
 
-_**Applies to:** Exchange Server_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 can't continue because one or more computers running Exchange 2000 Server or Exchange Server 2003 were found in the Active Directory forest. Before you can install Exchange 2013, all Exchange 2000 and Exchange 2003 servers must be removed from the forest. Mailboxes, public folders, and all other Exchange objects or components must be upgraded to either Exchange Server 2007 or Exchange Server 2010. You can't upgrade from Exchange 2000 or Exchange 2003 directly to Exchange 2013.
 

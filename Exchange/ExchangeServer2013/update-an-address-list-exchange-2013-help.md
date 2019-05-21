@@ -18,7 +18,7 @@ f1_keywords:
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Address lists are a collection of recipient and other Active Directory objects. You apply an address list when the address list filter rule has been edited. To update the membership of the address list to include new recipients and remove those who no longer meet the filtering criteria, you must apply the address list.
 

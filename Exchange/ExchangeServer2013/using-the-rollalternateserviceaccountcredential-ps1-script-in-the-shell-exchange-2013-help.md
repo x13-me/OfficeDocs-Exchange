@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can use the RollAlternateServiceAccountPassword.ps1 script in Exchange Server 2013 fto update an alternate service account credential (ASA credential) and distribute the update to specified Client Access servers.
 

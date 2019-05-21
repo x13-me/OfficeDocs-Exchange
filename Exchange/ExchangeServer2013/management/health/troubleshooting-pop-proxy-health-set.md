@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting POP.Proxy Health Set
 
-_**Applies to:**: Exchange Server 2013_
-
 _**Applies to:** Exchange Server 2013_
 
 The POP.Proxy health set monitors the availability of the Microsoft Exchange POP3 proxy infrastructure on the Client Access server (CAS). If you receive an alert that specifies that the POP.Proxy health set is unhealthy, this indicates an issue that affects the POP components on the CAS indicated in the alert.
