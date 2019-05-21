@@ -14,8 +14,6 @@ mtps_version: v=EXCHG.150
 
 # Mail flow rules (transport rules) in Exchange 2013
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 You can use mail flow rules (also known as transport rules) to identify and take action on messages that flow through your Exchange 2013 organization. Mail flow rules are similar to the Inbox rules that are available in Outlook and Outlook Web App. The main difference is mail flow rules take action on messages while they're in transit, and not after the message is delivered to the mailbox. Mail flow rules contain a richer set of conditions, exceptions, and actions, which provides you with the flexibility to implement many types of messaging policies.
