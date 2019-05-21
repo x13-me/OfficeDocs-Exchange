@@ -11,7 +11,7 @@ title: Common attachment blocking scenarios for mail flow rules in Exchange Onli
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

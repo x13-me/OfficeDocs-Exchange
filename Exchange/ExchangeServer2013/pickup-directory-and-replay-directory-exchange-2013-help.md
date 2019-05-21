@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 By default, the Pickup and Replay directories exist on every Microsoft Exchange Server 2013 Mailbox server or Edge Transport server. Correctly formatted email message files that you copy to the Pickup or Replay directories are submitted for delivery. The Pickup directory is used by administrators for mail flow testing, or by applications that must create and submit their own messages. The Replay directory receives messages from foreign gateway servers and can also be used to resubmit messages that administrators export from the queues of Exchange servers.
 

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Management role entries on a management role determine what cmdlets and parameters are available on a management role. By removing role entries or parameters on a role entry, you can restrict what users assigned the management role can perform. For more information about management role entries in Microsoft Exchange Server 2013, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
 

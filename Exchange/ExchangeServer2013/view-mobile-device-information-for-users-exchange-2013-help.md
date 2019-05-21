@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Users can configure multiple mobile devices for synchronization with Microsoft Exchange Server 2013. You can use the EAC or the Shell to view a list of mobile devices that are associated with a specific user.
 

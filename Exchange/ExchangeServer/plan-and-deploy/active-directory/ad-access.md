@@ -9,7 +9,7 @@ ms.date: 7/26/2018
 ms.reviewer: 
 title: Access to Active Directory by Exchange servers
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

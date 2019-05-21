@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Online, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, several improvements have been made to transport rules. This topic provides a brief overview of some of the key changes and enhancements. To learn more about transport rules, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 
@@ -36,29 +36,29 @@ For detailed information about using these new predicates and actions, see [Tran
 
 ## New predicates
 
-  -  **AttachmentExtensionMatchesWords**: Used to detect messages that contain attachments with specific extensions.
+- **AttachmentExtensionMatchesWords**: Used to detect messages that contain attachments with specific extensions.
 
-  -  **AttachmentHasExecutableContent**: Used to detect messages that contain attachments with executable content.
+- **AttachmentHasExecutableContent**: Used to detect messages that contain attachments with executable content.
 
-  -  **HasSenderOverride** Used to detect messages where the sender has chosen to override a DLP policy restriction.
+- **HasSenderOverride**: Used to detect messages where the sender has chosen to override a DLP policy restriction.
 
-  -  **MessageContainsDataClassifications**: Used to detect sensitive information in the message body and any of the attachments. For a list of data classifications available, see [What the sensitive information types in Exchange look for](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md).
+- **MessageContainsDataClassifications**: Used to detect sensitive information in the message body and any of the attachments. For a list of data classifications available, see [What the sensitive information types in Exchange look for](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md).
 
-  -  **MessageSizeOver**: Used to detect messages whose overall size is greater than or equal to the specified limit.
+- **MessageSizeOver**: Used to detect messages whose overall size is greater than or equal to the specified limit.
 
-  -  **SenderIPRanges**: Used to detect messages sent from a specific set of IP address ranges.
+- **SenderIPRanges**: Used to detect messages sent from a specific set of IP address ranges.
 
 ## New actions
 
-  -  **GenerateIncidentReport**: Generates an incident report that is sent to a specified SMTP address. The action also has a parameter called *IncidentReportOriginalMail* that accepts one of two values: IncludeOriginalMail or DoNotIncludeOriginalMail.
+- **GenerateIncidentReport**: Generates an incident report that is sent to a specified SMTP address. The action also has a parameter called *IncidentReportOriginalMail* that accepts one of two values: IncludeOriginalMail or DoNotIncludeOriginalMail.
 
-  -  **NotifySender**: Controls how the sender of a message that goes against a DLP policy is notified. You can choose to simply inform the sender and route the message normally, or you can choose to reject the message and notify the sender.
+- **NotifySender**: Controls how the sender of a message that goes against a DLP policy is notified. You can choose to simply inform the sender and route the message normally, or you can choose to reject the message and notify the sender.
 
-  -  **StopRuleProcessing**: Stops the processing of all subsequent rules on the message.
+- **StopRuleProcessing**: Stops the processing of all subsequent rules on the message.
 
-  -  **ReportSeverityLevel**: Sets the specified severity level in the incident report. Values for the action are: Informational, Low, Medium, High, and Off.
+- **ReportSeverityLevel**: Sets the specified severity level in the incident report. Values for the action are: Informational, Low, Medium, High, and Off.
 
-  -  **RouteMessageOutboundRequireTLS**: Requires Transport Layer Security (TLS) encryption when routing this message outside your organization. If TLS encryption isn't supported, the message is rejected and not delivered.
+- **RouteMessageOutboundRequireTLS**: Requires Transport Layer Security (TLS) encryption when routing this message outside your organization. If TLS encryption isn't supported, the message is rejected and not delivered.
 
 ## Other changes in Transport rules
 

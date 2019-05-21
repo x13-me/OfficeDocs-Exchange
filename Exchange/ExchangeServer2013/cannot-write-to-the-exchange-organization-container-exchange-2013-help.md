@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Cannot write to the Exchange organization container
 
-_**Applies to:** Exchange Server_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because the logged-on user doesn't have the account permissions that are required to write to the organization container in the Active Directory directory service.
 

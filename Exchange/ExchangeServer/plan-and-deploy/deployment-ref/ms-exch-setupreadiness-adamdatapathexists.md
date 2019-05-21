@@ -11,7 +11,7 @@ ms.date: 8/2/2018
 ms.reviewer: 
 title: AD LDS directory exists in default location [ADAMDataPathExists]
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

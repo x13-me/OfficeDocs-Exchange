@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Active Directory functional level isn't Windows Server 2003 or later
 
-_**Applies to:** Exchange Server_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because it detected that the forest functional level of the current Active Directory forest isn't Windows Server 2003 native or later. Before you can install Exchange 2013, you must raise the forest functional level to Windows Server 2003 or later.
 

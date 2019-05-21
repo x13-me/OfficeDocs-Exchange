@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Sender reputation is part of the Exchange anti-spam functionality that blocks messages according to many characteristics of the sender. Sender reputation relies on persisted data about the sender to determine what action, if any, to take on an inbound message. The Protocol Analysis agent is the underlying agent for sender reputation functionality.
 

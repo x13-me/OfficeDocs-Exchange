@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 **Summary:** Learn how to manage cross-forest mailbox moves and migrations in Exchange 2013 by using the Prepare-MoveRequest.ps1 script in the Exchange Management Shell.
 

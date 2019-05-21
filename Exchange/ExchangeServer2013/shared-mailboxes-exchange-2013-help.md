@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Learn about the Exchange shared mailbox in Microsoft Exchange Server 2013, the reasons to use them, and how to convert a delegated mailbox to an Exchange shared mailbox.
 

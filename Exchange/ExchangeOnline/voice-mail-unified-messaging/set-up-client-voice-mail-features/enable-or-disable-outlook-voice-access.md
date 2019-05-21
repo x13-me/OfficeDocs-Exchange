@@ -9,7 +9,7 @@ ms.date: 11/17/2014
 ms.reviewer: 
 title: Enable or disable Outlook Voice Access for users
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013, Outlook 2013_
+_**Applies to:** Exchange Server 2013_
 
 You may need to coordinate schedules with people in different organizations or with friends and family members so that you can work together on projects or plan social events. With Exchange 2013, administrators can set up different levels of calendar access to allow businesses to collaborate with other businesses and to let users share their schedules with others. Business-to-business calendar sharing is set up by creating *organization relationships*. User-to-user calendar sharing is set up by applying *sharing policies*.
 

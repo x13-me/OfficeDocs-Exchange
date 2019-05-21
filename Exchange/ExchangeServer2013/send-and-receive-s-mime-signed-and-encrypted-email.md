@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Send and receive S/MIME signed and encrypted email in Exchange Online
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Sending or replying to an S/MIME-encrypted message in Microsoft Outlook is very similar to the experience with a non-encrypted message. For more information about reading or sending S/MIME-encrypted messages from an email program such as Outlook Web App, see [Use Outlook to send and reply to S/MIME encrypted messages](https://go.microsoft.com/fwlink/p/?LinkId=392520).
 

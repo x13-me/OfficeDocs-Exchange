@@ -11,7 +11,7 @@ title: Default Retention Policy in Exchange Online and Exchange Server
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: Admin
+audience: Admin
 ms.service: exchange-online
 manager: dansimp
 

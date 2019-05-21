@@ -9,7 +9,7 @@ ms.date: 6/24/2018
 ms.reviewer: 
 title: Telephony advisor for Exchange 2013
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 
@@ -34,7 +34,7 @@ It's challenging to create guidelines for deploying telephony networks. They can
 - **Configuration Notes for Supported Session Border Controllers**: These configuration notes contain settings and other information that's very useful when you're configuring session border controllers (SBCs) to communicate with the Unified Messaging servers in hybrid and Exchange Online UM deployments. For more information, see [Configuration notes for supported session border controllers](configuration-notes-for-session-border-controllers.md).
 
     > [!NOTE]
-    > Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end in July 2018. Please see the Exchange team blog [Discontinuation of support for session border controllers in Exchange Online unified messaging](https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/) for more information.
+    > Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end in December 2019. Please see the Exchange team blog [New date for discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://blogs.technet.microsoft.com/exchange/2018/04/24/new-date-for-discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/) for more information.
 
 Before you engage a Unified Messaging specialist, you should be able to answer key questions that they'll ask. Having the answers to the following questions will help make the conversation between you and the UM specialist productive:
 

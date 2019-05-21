@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Restore public folders and public folder mailboxes from failed moves
 
-_**Applies to:**: Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013_
 
 If a move request for a public folder or public folder mailbox fails, you can restore the folder or mailbox as long as the following conditions apply:
 

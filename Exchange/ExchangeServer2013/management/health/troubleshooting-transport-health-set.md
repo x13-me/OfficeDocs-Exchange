@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting Transport Health Set
 
-_**Applies to:**: Exchange Server 2013, Project Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Thanks for clicking the link that brought you to this page. Although we don't currently have troubleshooting guidance for this health set, your attempt to locate content helps us prioritize the Exchange 2013 Management Pack troubleshooting guidance articles. Here are some recommended actions that may help you troubleshoot this health set:
 

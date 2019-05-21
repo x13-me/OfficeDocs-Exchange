@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The Edge Transport server is available in Microsoft Exchange Server 2013 Service Pack 1 (SP1). However, you can continue to use existing Exchange Server 2007 or Exchange Server 2010 Edge Transport servers that you have deployed in your perimeter network. Or, you can install a new Exchange 2007 or Exchange 2010 Edge Transport server in your perimeter network for a new or upgraded Exchange 2013 organization.
 

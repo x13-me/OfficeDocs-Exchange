@@ -9,7 +9,7 @@ ms.date:
 title: Passwords and security in Outlook for iOS and Android for Exchange Server
 ms.collection: exchange-server
 ms.reviewer: smithre4
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

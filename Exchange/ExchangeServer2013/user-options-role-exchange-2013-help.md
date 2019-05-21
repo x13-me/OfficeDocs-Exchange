@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The `User Options` management role enables administrators to view the Outlook Web App options of a user in an organization. This role can be used to help diagnose configuration problems.
 

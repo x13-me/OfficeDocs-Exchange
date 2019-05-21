@@ -9,7 +9,7 @@ ms.date: 11/17/2014
 ms.reviewer: 
 title: Configure Protected Voice Mail from unauthenticated callers
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

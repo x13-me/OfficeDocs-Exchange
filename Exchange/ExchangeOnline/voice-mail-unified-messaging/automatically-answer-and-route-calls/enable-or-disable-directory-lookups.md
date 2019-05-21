@@ -9,7 +9,7 @@ ms.date: 5/10/2016
 ms.reviewer: 
 title: Enable or disable directory lookups
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

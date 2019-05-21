@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Active Directory does not exist or cannot be contacted
 
-_**Applies to:** Exchange Server_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because it can't contact a valid Active Directory directory service site. Setup requires that the server you're installing Exchange on is able to locate the configuration naming context in Active Directory.
 

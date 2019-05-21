@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 In Microsoft Exchange Server 2013, *safelist aggregation* refers to anti-spam functionality shared across Microsoft Outlook and Exchange. This functionality collects data from the anti-spam Safe Recipients Lists, Safe Senders Lists, Blocked Senders Lists, and contact data that Outlook users configure, and makes this data available to the Exchange anti-spam agents.
 

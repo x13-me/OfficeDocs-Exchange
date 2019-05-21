@@ -13,7 +13,7 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting FIPS Health Set
 
-_**Applies to:** Exchange Server 2013, Project Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The **FIPS** health set monitors the overall health of the Federal Information Processing Standards (FIPS) settings on Exchange servers. For more information about FIPS 140, see [FIPS 140 Validation](http://go.microsoft.com/fwlink/p/?linkid=521913).
 

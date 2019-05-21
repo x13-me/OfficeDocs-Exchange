@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Server_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because the local computer requires a software update. You'll need to install this update before Exchange 2013 Setup can continue.
 

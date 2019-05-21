@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting ECP Health Set
 
-_**Applies to:** Exchange Server 2013, Project Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The Exchange Control Panel (ECP) health set monitors the overall health of the Exchange Administration Center (EAC) and of the Outlook Web App (OWA) user setting service. The ECP health set is closely related to the following health set:
 

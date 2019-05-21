@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Management role assignments assign a management role to a user or universal security group (USG). If you remove a role assignment, the users assigned the role will no longer have access to the cmdlets available on that role. For more information about management role assignments in Microsoft Exchange Server 2013, see [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md).
 

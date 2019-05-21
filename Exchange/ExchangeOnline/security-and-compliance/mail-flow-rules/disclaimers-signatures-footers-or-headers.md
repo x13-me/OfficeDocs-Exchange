@@ -11,7 +11,7 @@ title: Organization-wide message disclaimers, signatures, footers, or headers in
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

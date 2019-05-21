@@ -27,7 +27,7 @@ search.appverid:
 - MPP160
 - ZOL160
 - BCS160
-ms.audience: Admin
+audience: Admin
 ms.custom: Adm_O365_Setup
 ms.service: exchange-online
 manager: dansimp

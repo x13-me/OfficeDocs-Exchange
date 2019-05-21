@@ -14,13 +14,11 @@ mtps_version: v=EXCHG.150
 
 # Disable Internet calendar publishing
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 How you disable Internet calendar publishing depends on how you enabled it. If you created a sharing policy dedicated to Internet calendar publishing, you can either disable the policy or delete it altogether. If you configured Internet calendar publishing as a sharing rule in the default sharing policy, you can just remove the sharing rule for the **Anonymous** domain.
 
-When you disable Internet calendar publishing, users who are provisioned to use the sharing policy won't be able to share calendar information with the **Anonymous** Internet domain specified in the policy. However, you can't delete or disable a sharing policy that's dedicated to Internet calendar publishing until all users who are provisioned to use that policy have the policy setting removed from their mailboxes. For details about changing the sharing policy setting for a user, see [Manage user mailboxes](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
+When you disable Internet calendar publishing, users who are provisioned to use the sharing policy won't be able to share calendar information with the **Anonymous** internet domain specified in the policy. However, you can't delete or disable a sharing policy that's dedicated to Internet calendar publishing until all users who are provisioned to use that policy have the policy setting removed from their mailboxes. For details about changing the sharing policy setting for a user, see [Manage user mailboxes](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
 
 > [!NOTE]
 > If you disable or delete a sharing policy, users provisioned to use the policy will continue to share information until the Sharing Policy Assistant runs. To specify how often the Sharing Policy Assistant runs, use the <A href="https://technet.microsoft.com/en-us/library/aa998651(v=exchg.150)">Set-MailboxServer</A> cmdlet with the <EM>SharingPolicySchedule</EM> parameter.

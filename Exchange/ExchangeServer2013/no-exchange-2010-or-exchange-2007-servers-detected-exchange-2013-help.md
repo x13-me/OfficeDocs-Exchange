@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup displayed this warning because no Exchange Server 2010 or Exchange Server 2007 server roles exist in the organization.
 

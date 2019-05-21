@@ -3,7 +3,7 @@ title: "Transport options in Exchange 2013/Exchange 2007 hybrid deployments"
 ms.author: dmaguire
 author: msdmaguire
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

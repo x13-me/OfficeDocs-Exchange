@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Filtering generates different views of queues. You use the queue properties as filter options. By specifying filter criteria, you can quickly locate queues and take action on them. The following scenarios are examples of how you might use queue filtering to manage mail flow:
 

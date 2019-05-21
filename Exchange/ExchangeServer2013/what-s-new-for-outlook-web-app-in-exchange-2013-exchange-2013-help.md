@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 For Microsoft Exchange Server 2013, we've added several new features to Microsoft Outlook Web App and updated its design.
 
@@ -37,17 +37,17 @@ In addition, we encourage third-party developers to create additional apps for O
 
 ## People
 
-  - Now, users can link multiple entries for the same person and view the information in a single contact card. For example, if a user has two entries for Holly Holt in his Contacts folder, one entry copied from the organization's address list and one entry that he added manually, he can link the two entries in his Contacts folder and view all the information in one place. Contact linking is done automatically, but the user can also manually link and unlink contacts.
+- Now, users can link multiple entries for the same person and view the information in a single contact card. For example, if a user has two entries for Holly Holt in his Contacts folder, one entry copied from the organization's address list and one entry that he added manually, he can link the two entries in his Contacts folder and view all the information in one place. Contact linking is done automatically, but the user can also manually link and unlink contacts.
 
-  - Connected accounts have been extended to include the ability to connect to a user's LinkedIn account. After the link is established, Outlook Web App automatically adds the user's LinkedIn contacts to the Contacts folder.
+- Connected accounts have been extended to include the ability to connect to a user's LinkedIn account. After the link is established, Outlook Web App automatically adds the user's LinkedIn contacts to the Contacts folder.
 
 ## Calendar
 
-  - Users can now view multiple calendars in a merged view. Entries from each calendar have their own color, making it easy for users to identify which calendar an entry belongs to. In the day view, users can view multiple calendars in a merged view or in separate columns.
+- Users can now view multiple calendars in a merged view. Entries from each calendar have their own color, making it easy for users to identify which calendar an entry belongs to. In the day view, users can view multiple calendars in a merged view or in separate columns.
 
-  - The month view now includes an agenda for the selected day, providing users with helpful information as they review the day's activities.
+- The month view now includes an agenda for the selected day, providing users with helpful information as they review the day's activities.
 
-  - In all calendar views, users can click an item to view a pop-up of the item's details. In addition to the details, controls are now available to accept or decline the item if it's a meeting, to edit or delete if it's an appointment, or, if a meeting item, to join the meeting if an online meeting link is included.
+- In all calendar views, users can click an item to view a pop-up of the item's details. In addition to the details, controls are now available to accept or decline the item if it's a meeting, to edit or delete if it's an appointment, or, if a meeting item, to join the meeting if an online meeting link is included.
 
 ## Tablets and smartphones
 
@@ -61,11 +61,11 @@ To experience all Outlook Web App features, use one of the operating system and 
 
 In the table below, the following definitions apply:
 
-  - Best:   All Outlook Web App features are supported.
+- Best: All Outlook Web App features are supported.
 
-  - Good:   Most Outlook Web App features are supported.
+- Good: Most Outlook Web App features are supported.
 
-  - Light:   The browser displays the light version of Outlook Web App
+- Light: The browser displays the light version of Outlook Web App
 
 ### Windows operating system and browser combination
 
@@ -189,9 +189,9 @@ In the table below, the following definitions apply:
 
 You can use the web browser on a tablet or smartphone to sign in to Outlook Web App. The available Outlook Web App features depends on the operating system and browser combination in use, as follows:
 
-  - Best:   All Outlook Web App features for smartphones and tablets are supported.
+- Best: All Outlook Web App features for smartphones and tablets are supported.
 
-  - Light:   The browser displays the light version of Outlook Web App.
+- Light: The browser displays the light version of Outlook Web App.
 
 ### Outlook Web App features available on tablets and smartphones
 
@@ -265,17 +265,17 @@ OWA for Android lets you interact with your Office 365 mailbox to get to your em
 
 With the OWA for Android app, you can:
 
-  - Get, organize, search your email.
+- Get, organize, search your email.
 
-  - Schedule meetings, locate rooms, see shared calendars and use your voice to get your schedule.
+- Schedule meetings, locate rooms, see shared calendars and use your voice to get your schedule.
 
-  - Sync People with your phone.
+- Sync People with your phone.
 
-  - Skip the administrator phone setup.
+- Skip the administrator phone setup.
 
-  - Keep your Office 365 business data secure.
+- Keep your Office 365 business data secure.
 
-  - Use the Remote Wipe feature.
+- Use the Remote Wipe feature.
 
 Learn more about the background behind OWA for Android on this week's Garage Series. See [The Garage Series Under the Hood: Evolving Exchange ActiveSync and OWA for Devices](https://blogs.office.com/2014/6/11/the-garage-series-under-the-hood-evolving-exchange-activesync-and-owa-for-devices)
 
@@ -286,18 +286,18 @@ Learn more about the background behind OWA for Android on this week's Garage Ser
 
 The following Outlook Web App features are currently unavailable in Exchange 2013. Some of these features may be included in a future release.
 
-  - **Search scope** The ability for Outlook Web App users to search their primary mailbox and their online archive simultaneously is no longer available in Exchange 2013. To search an online archive, users must first navigate to the archive and then conduct their search.
+- **Search scope**: The ability for Outlook Web App users to search their primary mailbox and their online archive simultaneously is no longer available in Exchange 2013. To search an online archive, users must first navigate to the archive and then conduct their search.
 
-  - **Distribution list moderation**: The ability to moderate distribution lists from Microsoft Outlook Web App isn't currently available in Exchange 2013.
+- **Distribution list moderation**: The ability to moderate distribution lists from Microsoft Outlook Web App isn't currently available in Exchange 2013.
 
-  - **Custom date on message flags**: The ability to set a custom date on a message flag isn't available in Outlook Web App 2013. You can use Outlook to set custom dates.
+- **Custom date on message flags**: The ability to set a custom date on a message flag isn't available in Outlook Web App 2013. You can use Outlook to set custom dates.
 
-  - **Reading pane at the bottom of the window**: The option to display the reading pane at the bottom of the Outlook Web App window isn't currently available in Exchange 2013.
+- **Reading pane at the bottom of the window**: The option to display the reading pane at the bottom of the Outlook Web App window isn't currently available in Exchange 2013.
 
-  - **Reply to embedded email messages**: The ability for users to reply to email messages sent as attachments isn't currently available in Exchange 2013.
+- **Reply to embedded email messages**: The ability for users to reply to email messages sent as attachments isn't currently available in Exchange 2013.
 
-  - **Search folders**: The ability for users to use Search folders isn't currently available in Exchange 2013.
+- **Search folders**: The ability for users to use Search folders isn't currently available in Exchange 2013.
 
-  - **Access to legacy public folders**: The ability for users to access public folders located on servers running previous versions of Exchange isn't currently available in Exchange 2013.
+- **Access to legacy public folders**: The ability for users to access public folders located on servers running previous versions of Exchange isn't currently available in Exchange 2013.
 
-  - **Show Recovery option**: The ability for users to work with recovery passwords for their mobile devices with Outlook Web App isn't currently available in Exchange 2013.
+- **Show Recovery option**: The ability for users to work with recovery passwords for their mobile devices with Outlook Web App isn't currently available in Exchange 2013.
