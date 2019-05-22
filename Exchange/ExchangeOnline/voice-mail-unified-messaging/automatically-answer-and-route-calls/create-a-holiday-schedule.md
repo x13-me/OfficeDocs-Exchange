@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 0c5c51e4-5b51-451b-ab93-2cebf644dc96
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Create a holiday schedule
+title: Create a holiday schedule in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Create a holiday schedule
+# Create a holiday schedule in Exchange Online
 
 You can define the dates and times your organization will be closed for holidays and other occasions. Between the start dates and the end dates you specify, callers who reach the Unified Messaging (UM) auto attendant will hear a holiday greeting you specify when you configure the holiday schedule. After the caller hears the holiday greeting you've specified, the non-business hours greeting and menu prompts will be played for the caller.
 

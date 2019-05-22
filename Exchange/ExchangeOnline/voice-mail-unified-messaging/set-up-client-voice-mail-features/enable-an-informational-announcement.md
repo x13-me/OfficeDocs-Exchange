@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: b69ed0e1-f978-498a-963e-42a047678db4
 ms.date: 12/9/2016
 ms.reviewer: 
-title: Enable an informational announcement for Outlook Voice Access users
+title: Enable an informational announcement for Outlook Voice Access users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Enable an informational announcement for Outlook Voice Access users
+# Enable an informational announcement for Outlook Voice Access users in Exchange Online
 
 You can enable an informational announcement on a Unified Messaging (UM) dial plan. Informational announcements are used for general announcements that change more frequently than the welcome greeting does, or for announcements that are required by corporate compliance policies.
 

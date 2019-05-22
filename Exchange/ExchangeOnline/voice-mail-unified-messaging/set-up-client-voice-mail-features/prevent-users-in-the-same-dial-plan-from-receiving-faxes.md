@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 4fc66414-c950-4bca-ac20-4e489f288d06
 ms.date: 12/9/2016
 ms.reviewer: 
-title: Prevent users in the same dial plan from receiving faxes
+title: Prevent users in the same dial plan from receiving faxes in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Prevent users in the same dial plan from receiving faxes
+# Prevent users in the same dial plan from receiving faxes in Exchange Online
 
 You can prevent UM-enabled users who are linked with a Unified Messaging (UM) dial plan from receiving fax messages. By default, users who are enabled for Unified Messaging and are linked with a UM dial plan can receive fax messages. However, there may be times when you want to prevent users who are associated with a specific UM dial plan from receiving faxes.
 

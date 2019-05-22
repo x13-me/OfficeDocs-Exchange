@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: a7fb9a09-fde9-447d-ad2c-95598405e99b
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Configure the recording idle time-out value
+title: Configure the recording idle time-out value in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Configure the recording idle time-out value
+# Configure the recording idle time-out value in Exchange Online
 
 You can specify the number of seconds of silence that the system allows when a voice message is being recorded before the call is ended. For most organizations, this value should be set to the default of 5 seconds.
 

@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 13db1242-4130-41fa-bde9-b4dff60fe1e6
 ms.date: 11/17/2014
 ms.reviewer: 
-title: UM dial plan procedures [EXO]
+title: UM dial plan procedures [EXO] in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# UM dial plan procedures [EXO]
+# UM dial plan procedures [EXO] in Exchange Online
 
 [Create a UM dial plan](create-um-dial-plan.md)
 

@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: b094e68e-c493-4576-a6b1-4c780e635405
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Set the number of previous voice mail PINs to recycle
+title: Set the number of previous voice mail PINs to recycle in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Set the number of previous voice mail PINs to recycle
+# Set the number of previous voice mail PINs to recycle in Exchange Online
 
 When Outlook Voice Access users dial in to an Outlook Voice Access number, they're prompted to enter their PIN so that the voice mail system can authenticate them. After they're authenticated, they can access the voice mail, email, calendaring, and personal contact information in their mailbox from any telephone.
 

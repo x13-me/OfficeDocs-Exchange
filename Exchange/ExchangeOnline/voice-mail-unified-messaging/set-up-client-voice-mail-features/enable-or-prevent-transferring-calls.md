@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: b80c57f1-394c-4608-8ad3-52a3e6d697db
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Enable or prevent transferring calls from Outlook Voice Access
+title: Enable or prevent transferring calls from Outlook Voice Access in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Enable or prevent transferring calls from Outlook Voice Access
+# Enable or prevent transferring calls from Outlook Voice Access in Exchange Online
 
 You can enable Outlook Voice Access users to transfer calls to a user who's associated with a Unified Messaging (UM) dial plan, or prevent them from doing so. By default, both this option and the **Leave voice messages without ringing a user's phone** option are enabled, so that Outlook Voice Access users can transfer calls to users in the same UM dial plan and leave voice messages for them. This setting only applies to Outlook Voice Access users who have entered their PIN and are authenticated.
 

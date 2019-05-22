@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 5ce8c877-35f3-4e55-a65e-5ca469aeae99
 ms.date: 6/24/2018
 ms.reviewer: 
-title: Setting up Outlook Voice Access
+title: Setting up Outlook Voice Access in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Setting up Outlook Voice Access
+# Setting up Outlook Voice Access in Exchange Online
 
 Microsoft Outlook Voice Access lets users who are enabled for Exchange Unified Messaging (UM) access their mailboxes by using analog, digital, or cellular telephones.
 

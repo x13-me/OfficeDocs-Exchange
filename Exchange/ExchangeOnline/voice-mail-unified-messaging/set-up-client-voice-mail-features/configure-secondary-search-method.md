@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 5cd4e0a0-d023-45a1-aa3c-b8dea6ec6d72
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Configure the secondary way for Outlook Voice Access users to search
+title: Configure the secondary way for Outlook Voice Access users to search in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Configure the secondary way for Outlook Voice Access users to search
+# Configure the secondary way for Outlook Voice Access users to search in Exchange Online
 
 When you create a dial plan, you can configure the primary and secondary dial by name methods or ways that callers can search for names. Callers use these dial by name methods to look up names to locate and contact a user when they call in to an Outlook Voice Access number or when they call in to a UM auto attendant that's associated with the dial plan. Callers can use touchtone inputs to locate a UM-enabled user.
 

@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 928a466d-cc0c-4160-bd4c-f0fc76b038d4
 ms.date: 7/12/2018
 ms.reviewer: 
-title: Fax advisor for Exchange UM
+title: Fax advisor for Unified Messaging in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Fax advisor for Exchange UM
+# Fax advisor for Unified Messaging in Exchange Online
 
 Microsoft Unified Messaging (UM) relies on certified fax partner solutions for enhanced fax functionality such as outbound fax or fax routing. By default, users aren't configured to allow incoming fax messages to be delivered to a UM-enabled user. Exchange servers send the fax requests to a certified fax partner solution. The fax partner's server receives the fax data and then sends it to the recipient's mailbox in an email message with the fax included as a .tif attachment. For details, see [Enable Voice Mail Users to Receive Faxes](https://technet.microsoft.com/library/451ab0ea-21e1-4c1f-ae62-4ba7cdfd1e4d.aspx).
 
