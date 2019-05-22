@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: ed7afc03-94af-4b23-8745-6a61f203c149
 ms.date: 11/17/2014
 ms.reviewer: 
-title: UM dial plans [ONP]
+title: UM dial plans [ONP] in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# UM dial plans [ONP]
+# UM dial plans [ONP] in Exchange Online
 
 Unified Messaging (UM) dial plans are the main component of Unified Messaging and are required to successfully deploy Unified Messaging voice mail on your network. The following sections discuss UM dial plans and how they're used in a UM deployment.
 

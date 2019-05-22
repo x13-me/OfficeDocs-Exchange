@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: a2272b7d-de88-4d3f-81e6-ad81f0ee6c5e
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Enable a customized business hours greeting
+title: Enable a customized business hours greeting in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Enable a customized business hours greeting
+# Enable a customized business hours greeting in Exchange Online
 
 You can enable a customized business hours greeting for a Unified Messaging (UM) auto attendant. The business hours greeting is the first thing callers hear when a UM auto attendant answers their call during business hours. You'll probably want to customize the greeting.
 

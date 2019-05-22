@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: c8da6cbe-3d22-4fff-8b5a-416b1c8adb6c
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Assign a UM mailbox policy
+title: Assign a UM mailbox policy in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Assign a UM mailbox policy
+# Assign a UM mailbox policy in Exchange Online
 
 When you enable a user for Unified Messaging (UM) and voice mail, you must select the UM mailbox policy that will be associated with the user's mailbox. You can change the UM mailbox policy associated with the user's mailbox after the user has been enabled for UM.
 

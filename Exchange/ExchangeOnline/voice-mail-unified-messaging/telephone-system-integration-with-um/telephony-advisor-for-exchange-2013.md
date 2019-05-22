@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: e9f760f2-5901-4ed2-95a5-724555cc700e
 ms.date: 6/24/2018
 ms.reviewer: 
-title: Telephony advisor for Exchange 2013
+title: Telephony advisor for Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Telephony advisor for Exchange 2013
+# Telephony advisor for Exchange Online
 
 Unified Messaging (UM) requires that you integrate Microsoft Exchange with the existing telephony system for your organization. A successful deployment requires you to make a careful analysis of your existing telephony infrastructure and to perform the correct planning steps to deploy Unified Messaging.
 

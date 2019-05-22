@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 7af6d094-199f-4134-a25d-9fc7e9c05fe1
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Prevent Message Waiting Indicator (MWI) on a UM IP gateway
+title: Prevent Message Waiting Indicator (MWI) on a UM IP gateway in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Prevent Message Waiting Indicator (MWI) on a UM IP gateway
+# Prevent Message Waiting Indicator (MWI) on a UM IP gateway in Exchange Online
 
 You can prevent voice mail notifications to users for calls received by a Unified Messaging (UM) IP gateway. If you enable this setting, the UM IP gateway can receive and send SIP NOTIFY messages for users. Message Waiting Indicator (MWI) is enabled by default and allows message waiting notifications to be sent to users, but you can turn it off depending on your needs.
 

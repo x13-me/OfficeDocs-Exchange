@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 64c13d17-a26a-4c9b-b495-bd69c716456a
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Configure the number of input failures before Outlook Voice Access users are disconnected
+title: Configure the number of input failures before Outlook Voice Access users are disconnected in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Configure the number of input failures before Outlook Voice Access users are disconnected
+# Configure the number of input failures before Outlook Voice Access users are disconnected in Exchange Online
 
 You can configure the number of times that users who call in to an Outlook Voice Access number can enter incorrect data before they're disconnected. This setting applies to both Outlook Voice Access users and unauthenticated callers who use directory search.
 

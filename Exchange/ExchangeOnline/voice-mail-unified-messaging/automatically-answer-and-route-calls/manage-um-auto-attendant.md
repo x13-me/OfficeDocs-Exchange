@@ -9,7 +9,7 @@ ms.author: chrisda
 ms.assetid: 4809ff56-ae34-4ce6-8e39-9193311c3f83
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Manage a UM auto attendant
+title: Manage a UM auto attendant in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -17,7 +17,7 @@ manager: dansimp
 
 ---
 
-# Manage a UM auto attendant
+# Manage a UM auto attendant in Exchange Online
 
 After you create a Unified Messaging (UM) auto attendant, you can view or configure a variety of settings. For example, you can add, remove, and edit extension numbers associated with the auto attendant. You can also enable or disable Automatic Speech Recognition (ASR) for the auto attendant and change the greetings used for business and non-business hours.
 

@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: fe3a8797-1230-49cb-a839-ccec238266b6
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Disable a UM IP gateway
+title: Disable a UM IP gateway in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Disable a UM IP gateway
+# Disable a UM IP gateway in Exchange Online
 
 By default, when you create a Unified Messaging (UM) IP gateway, the status of the UM IP gateway is enabled. After the UM IP gateway is created, you can disable the operation of the gateway by setting its status to disabled. After you disable the UM IP gateway, the Voice over IP (VoIP) gateway, IP Private Branch eXchange (PBX), or session border controller (SBC) that it's configured to use can no longer process incoming Unified Messaging calls.
 

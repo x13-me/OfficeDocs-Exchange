@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 2a3da11b-bb9b-4d4d-9238-6a1a47ef63f2
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Change an E.164 number
+title: Change an E.164 number in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Change an E.164 number
+# Change an E.164 number in Exchange Online
 
 When you enable a user for UM and link them to an E.164 dial plan, two EUM proxy addresses are created. One contains the user's extension number and the other contains the E.164 number for the user. The extension number is used when the user calls in to an Outlook Voice Access number.
 

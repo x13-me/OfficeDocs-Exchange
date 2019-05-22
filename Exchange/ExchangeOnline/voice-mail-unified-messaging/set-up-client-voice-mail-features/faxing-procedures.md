@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 6732a834-c9d2-4757-8ad9-44aeff6be9f7
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Faxing procedures
+title: Faxing procedures in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Faxing procedures
+# Faxing procedures in Exchange Online
 
 [Set the partner fax server URI to allow faxing](set-the-partner-fax-server-uri-to-allow-faxing.md)
 

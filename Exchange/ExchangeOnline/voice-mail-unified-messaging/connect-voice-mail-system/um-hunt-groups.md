@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 026129a1-b0b5-410a-bed6-2d49f85205b3
 ms.date: 6/24/2018
 ms.reviewer: 
-title: UM hunt groups
+title: UM hunt groups in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# UM hunt groups
+# UM hunt groups in Exchange Online
 
  A telephony hunt group provides a way to distribute telephone calls from a single number to multiple extensions or telephone numbers. In Unified Messaging (UM), a UM hunt group is a logical representation of a telephony hunt group, and it links a UM IP gateway to a UM dial plan.
 

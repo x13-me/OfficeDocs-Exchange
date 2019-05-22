@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: d3dcd488-bd57-44cc-bdd4-ddee42a69dde
 ms.date: 6/24/2018
 ms.reviewer: 
-title: Automatically answer and route incoming calls
+title: Automatically answer and route incoming calls in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Automatically answer and route incoming calls
+# Automatically answer and route incoming calls in Exchange Online
 
 Microsoft Exchange Unified Messaging (UM) enables you to create a single or multiple UM auto attendants, depending on the needs of your organization. Unlike other Unified Messaging components, such as UM dial plans and UM IP gateways, you aren't required to create UM auto attendants. However, auto attendants help internal and external callers locate users or departments that exist in an organization and transfer calls to them. This topic discusses the UM auto attendant feature found in Unified Messaging.
 

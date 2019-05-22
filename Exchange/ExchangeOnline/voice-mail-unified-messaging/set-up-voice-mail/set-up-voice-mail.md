@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 572991d6-0dc7-4a65-b716-ac6acdc5c9c6
 ms.date: 11/17/2014
 ms.reviewer: 
-title: Set up voice mail for users
+title: Set up voice mail for users in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# Set up voice mail for users
+# Set up voice mail for users in Exchange Online
 
 After you've connected your telephony network or integrated Microsoft Lync Server with Exchange Unified Messaging (UM) and created and configured the required UM components, you'll need to set up voice mail for your users.
 

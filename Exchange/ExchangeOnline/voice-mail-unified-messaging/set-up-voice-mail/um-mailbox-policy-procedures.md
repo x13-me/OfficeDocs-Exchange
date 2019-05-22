@@ -7,7 +7,7 @@ ms.author: chrisda
 ms.assetid: 37db12de-109f-4e81-9e6a-effab2c2171d
 ms.date: 11/17/2014
 ms.reviewer: 
-title: UM mailbox policy procedures
+title: UM mailbox policy procedures in Exchange Online
 ms.collection: exchange-online
 audience: ITPro
 ms.service: exchange-online
@@ -15,7 +15,7 @@ manager: dansimp
 
 ---
 
-# UM mailbox policy procedures
+# UM mailbox policy procedures in Exchange Online
 
 [Create a UM mailbox policy](create-um-mailbox-policy.md)
 
