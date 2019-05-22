@@ -706,7 +706,7 @@
         href: https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/create-custom-management-scope
       - name: Remove an In-Place eDiscovery search
         href: https://docs.microsoft.com/SharePoint/governance/create-and-run-queries-in-the-ediscovery-center
-      - name: Search for and delete messages - Admin help
+      - name: Search for and delete messages in Exchange 2013
         href: https://docs.microsoft.com/office365/SecurityCompliance/search-for-and-delete-messagesadmin-help
       - name: Reduce the size of a discovery mailbox in Exchange
         href: https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/reduce-discovery-mailbox-size
