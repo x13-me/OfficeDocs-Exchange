@@ -72,7 +72,7 @@ The following process describes the path messages take between an on-premises or
 Messages sent from the Exchange Online organization to recipients in the on-premises organization follow the reverse route.
 
 > [!NOTE]
-> Installing an Edge server and establishing an Edge subscription will impact your mail flow. This process automatically creates two send connectors for Internet mail flow, one configured to send e-mail to all Internet domains, and another to send e-mail from the Edge Transport server to the Hub Transport server. Please review the connectors and mail flow if this is not your intended mail flow scenario.
+> Installing an Edge server and establishing an Edge subscription will impact your mail flow. This process automatically creates two send connectors for Internet mail flow; one configured to send e-mail to all Internet domains, and another to send e-mail from the Edge Transport server to the Hub Transport server. Please review the connectors and mail flow if this is not your intended mail flow scenario.
 
 **Mail flow in a hybrid deployment with an Edge Transport server deployed**
 
