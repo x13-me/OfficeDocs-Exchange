@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can test the operation of Unified Messaging (UM) and related connected telephony equipment. When you perform the following procedure, the Client Access and Mailbox server tests the full end-to-end operation of the voice mail system. This includes the telephony components connected to the Client Access and Mailbox servers, including VoIP gateways, Private Branch eXchanges (PBXs), IP PBXs, and cabling.
 

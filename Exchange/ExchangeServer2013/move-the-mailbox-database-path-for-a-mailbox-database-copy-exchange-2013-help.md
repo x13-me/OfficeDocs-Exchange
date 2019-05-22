@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 After a mailbox database is created, you can move it to another volume, folder, location, or path by using either the EAC or the Shell. For step-by-step instructions about how to move the database path for a non-replicated mailbox database, see [Move a mailbox database path](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md).
 

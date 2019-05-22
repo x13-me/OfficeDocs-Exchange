@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Management role scopes determine what objects are made available to a user who can then change the objects using the cmdlets and parameters assigned to the user. If you're no longer using a scope, it can be removed. For more information about management role scopes in Microsoft Exchange Server 2013, see [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md).
 

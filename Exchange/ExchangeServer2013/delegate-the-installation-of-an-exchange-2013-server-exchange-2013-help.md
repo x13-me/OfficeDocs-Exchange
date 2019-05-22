@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Exchange Server 2013 lets you delegate the installation of Exchange servers to people who aren't members of the Exchange 2013 Organization Management role group. This is often helpful in large companies where the people who install and set up servers aren't the same people who manage services, like Exchange. If this sounds like something you want to do, this topic is for you.
 

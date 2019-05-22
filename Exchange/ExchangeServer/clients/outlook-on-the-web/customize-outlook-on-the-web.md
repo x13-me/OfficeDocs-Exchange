@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: Customize the Outlook on the web sign-in, language selection, and error pages in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

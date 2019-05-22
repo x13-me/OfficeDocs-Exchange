@@ -18,7 +18,7 @@ f1_keywords:
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can use the Queue Viewer in the Exchange Toolbox to view the properties of a message that is queued for delivery.
 

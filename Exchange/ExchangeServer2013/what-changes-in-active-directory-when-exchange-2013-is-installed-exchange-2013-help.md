@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 When you install Exchange 2013, changes are made to your Active Directory forest and domains. Exchange does this so that it can store information about the Exchange servers, mailboxes, and other objects related to Exchange in your organization. These changes are made for you when you run the Exchange 2013 Setup wizard or when you run the *PrepareSchema*, *PrepareAD*, and *PrepareDomains* commands (see how to use these commands in [Prepare Active Directory and domains](prepare-active-directory-and-domains-exchange-2013-help.md)) during Exchange 2013 command-line Setup. If you're curious about the changes that Exchange makes to Active Directory, this topic is for you. It explains what Exchange does at each step of Active Directory preparation.
 

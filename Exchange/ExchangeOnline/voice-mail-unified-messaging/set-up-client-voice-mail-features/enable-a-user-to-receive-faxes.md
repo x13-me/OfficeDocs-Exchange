@@ -9,7 +9,7 @@ ms.date: 12/9/2016
 ms.reviewer: 
 title: Enable a user to receive faxes
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

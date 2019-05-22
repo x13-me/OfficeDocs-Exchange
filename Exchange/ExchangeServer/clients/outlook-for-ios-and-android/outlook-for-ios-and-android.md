@@ -9,7 +9,7 @@ ms.date: 7/5/2018
 title: Outlook for iOS and Android
 ms.collection: exchange-server
 ms.reviewer: smithre4
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

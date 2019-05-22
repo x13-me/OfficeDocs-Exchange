@@ -11,7 +11,7 @@ title: Test mail flow by validating your Office 365 connectors
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: scotv
 

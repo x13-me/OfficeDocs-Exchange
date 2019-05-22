@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can synchronously search mailbox audit log entries for a mailbox and have the search results displayed in the Shell.
 

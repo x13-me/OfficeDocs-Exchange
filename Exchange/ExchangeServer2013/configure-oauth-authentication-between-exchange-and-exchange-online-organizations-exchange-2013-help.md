@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Configure OAuth authentication between Exchange and Exchange Online organizations
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Exchange 2013-only hybrid deployments configure OAuth authentication when using the Hybrid Configuration Wizard. For mixed Exchange 2013/2010 and Exchange 2013/2007 hybrid deployments, the new hybrid deployment OAuth-based authentication connection between Office 365 and on-premises Exchange organizations isn't configured by the Hybrid Configuration wizard. These deployments continue to use the federation trust process by default. However, certain Exchange 2013 features are only fully available across your organization by using the new Exchange OAuth authentication protocol.
 

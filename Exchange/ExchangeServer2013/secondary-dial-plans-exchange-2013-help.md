@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 When you enable a user for Unified Messaging (UM), you're required to assign one extension number and a UM mailbox policy that will link the user to a UM dial plan. After the user is enabled for UM, you can assign additional extension numbers for that user within the same dial plan but the extension numbers within that dial plan must be unique. In some deployments, a user may need to be assigned the same extension number in two separate dial plans. If this is the case, you can link the user to a secondary UM dial plan. This can be useful, for example, if the user has two physical phones or travels between locations.
 

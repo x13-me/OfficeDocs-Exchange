@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Specify the administrators and users who can install and manage add-ins for Outlook
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

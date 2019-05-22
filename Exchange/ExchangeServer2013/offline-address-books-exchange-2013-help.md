@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2010, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 An offline address book (OAB) is a copy of an address list collection that's been downloaded so a Microsoft Outlook user can access the address book while disconnected from the server. Microsoft Exchange generates the new OAB files and then compresses the files and places them on a local share. You can decide which address lists are made available to users who work offline, and you can also configure the method by which the address books are distributed.
 

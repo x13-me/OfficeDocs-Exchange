@@ -11,7 +11,7 @@ title: Search limits for In-Place eDiscovery in Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: Admin
+audience: Admin
 ms.service: exchange-online
 manager: dansimp
 

@@ -11,7 +11,7 @@ title: Plan Exchange 2016 integration with SharePoint and Skype for Business
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

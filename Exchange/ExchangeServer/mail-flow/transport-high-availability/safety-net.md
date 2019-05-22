@@ -9,7 +9,7 @@ ms.date: 7/10/2018
 ms.reviewer: 
 title: Safety Net in Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

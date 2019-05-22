@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # AD LDS directory exists in default location
 
-_**Applies to:** Exchange Server_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because the attempt to install Active Directory Lightweight Directory Services (AD LDS) failed.
 

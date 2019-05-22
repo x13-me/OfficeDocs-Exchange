@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The `Move Mailboxes` management role enables administrators to move mailboxes between servers in an organization and between servers in the local organization and another organization.
 

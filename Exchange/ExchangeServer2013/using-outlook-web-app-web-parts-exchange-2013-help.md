@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can use Microsoft Office Outlook Web App Web Parts to specify the mailbox to open, the folder within that mailbox to open, and the content view to use.
 

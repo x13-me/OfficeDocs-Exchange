@@ -11,7 +11,7 @@ ms.date: 12/20/2016
 ms.reviewer: 
 title: Exchange 2013 CU10 or later is required for coexistence with Exchange 2016 or later [E16E15CoexistenceMinVersionRequirement]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

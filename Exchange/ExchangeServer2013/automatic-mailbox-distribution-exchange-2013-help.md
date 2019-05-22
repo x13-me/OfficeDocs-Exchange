@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Automatic mailbox distribution
 
-_**Applies to:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 When you create or move a mailbox, or mail-enable an existing user, that mailbox needs to be stored in a mailbox database. In Microsoft Exchange Server 2013, you have the option of letting Exchange choose the database for you using automatic mailbox distribution.
 

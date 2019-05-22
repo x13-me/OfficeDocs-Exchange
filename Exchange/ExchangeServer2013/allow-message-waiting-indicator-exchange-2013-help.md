@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Allow Message Waiting Indicator
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Message Waiting Indicator (MWI) is a feature that's found in most legacy voice mail systems. It lets users know that they have new or unheard voice mail messages. In its most common form, this feature lights a lamp on a user's phone to indicate the presence of a new or unheard voice message.
 

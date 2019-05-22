@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Online, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 provides administrative functionality and other enhancements that improve the overall management of Transport Layer Security (TLS). As you work with this functionality, you need to learn about some TLS-related features and functionality. Some terms and concepts apply to more than one TLS-related feature. In this topic, a brief explanation of each feature is provided, which is intended to help you understand some differences and general terminology related to TLS and the Domain Security feature set:
 

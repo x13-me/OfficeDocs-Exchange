@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 This topic explains how to use the Shell to test the operation of your voice mail system. When you perform the following procedure, the Mailbox server running the Microsoft Exchange Unified Messaging service initiates a diagnostic Session Initiation Protocol (SIP) call, and then returns a health state variable of UM services.
 

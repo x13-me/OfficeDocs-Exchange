@@ -9,7 +9,7 @@ ms.date:
 ms.reviewer: 
 title: Provision recipients for offline address book downloads in Exchange Online
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

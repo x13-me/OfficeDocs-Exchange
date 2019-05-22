@@ -9,7 +9,7 @@ ms.date: 6/25/2018
 ms.reviewer: 
 title: Voice mail in Exchange Online Unified Messaging
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: serdars
 

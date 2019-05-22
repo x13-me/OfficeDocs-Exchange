@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Online, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Data loss prevention (DLP) includes sensitive information types that are ready for you to use in your DLP policies. This topic lists all the sensitive information types (80 in Exchange Online, 51 in Exchange Server 2013), and shows what a DLP policy looks for when it detects each type.
 

@@ -12,7 +12,7 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 description: Exchange Online is part of the Office 365 suite of products.
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

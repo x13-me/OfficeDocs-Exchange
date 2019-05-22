@@ -11,7 +11,7 @@ ms.date: 8/2/2018
 ms.reviewer: 
 title: UCMA 4.0, Core Runtime not installed [UcmaRedistMsi]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

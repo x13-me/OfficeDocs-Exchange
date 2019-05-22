@@ -12,7 +12,7 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 description: 'Summary: Use these procedures to move your Exchange 2010 public folders to Office 365.'
-ms.audience: ITPro
+audience: ITPro
 title: Use batch migration to migrate legacy public folders to Office 365 and Exchange Online
 
 ---

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The `Receive Connectors` management role enables administrators to manage transport Receive connector configuration, such as size limits on an individual server.
 

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 You can set options in Queue Viewer to adjust the number of items that are displayed on the page and adjust the auto-refresh interval. The auto-refresh interval determines how frequently the results in Queue Viewer are updated.
 

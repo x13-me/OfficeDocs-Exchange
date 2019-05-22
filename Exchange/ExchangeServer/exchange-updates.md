@@ -7,7 +7,7 @@ author: chrisda
 ms.prod: exchange-server-it-pro
 ms.collection: exchange-server
 description: 'Summary: Updates to Exchange Server and Exchange Online content.'
-ms.audience: ITPro
+audience: ITPro
 title: Exchange content updates
 
 ---

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013, Office 365 Enterprise_
+_**Applies to:** Exchange Server 2013_
 
 **Estimated time to complete: 5 minutes**
 

@@ -9,7 +9,7 @@ ms.date: 12/9/2016
 ms.reviewer: 
 title: Include text with the email message sent when a fax message is received
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

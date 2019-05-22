@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting OAB.Proxy Health Set
 
-_**Applies to:**: Exchange Server 2013, Project Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The OAB.Proxy health set monitors the availability of the offline address book (OAB) proxy infrastructure on the Client Access server (CAS).
 

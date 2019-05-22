@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting UM.CallRouter Health Set
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The Microsoft Exchange Unified Messaging (UM) Call Router health set monitors the overall health of the UM Call Router service.
 

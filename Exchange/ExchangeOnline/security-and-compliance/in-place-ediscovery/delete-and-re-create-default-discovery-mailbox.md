@@ -11,7 +11,7 @@ title: Delete and re-create the default discovery mailbox in Exchange
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: Admin
+audience: Admin
 ms.service: exchange-online
 manager: dansimp
 

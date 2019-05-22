@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Learn about the Outlook Web App, which was called Outlook Web Access in version of Microsoft Exchange earlier than 2010. This article provides a brief overview with links out to helpful information.
 

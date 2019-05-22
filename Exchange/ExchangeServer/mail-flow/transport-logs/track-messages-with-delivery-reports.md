@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: Track messages with delivery reports
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

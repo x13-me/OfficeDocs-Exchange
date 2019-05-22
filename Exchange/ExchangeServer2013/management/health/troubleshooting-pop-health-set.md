@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting POP Health Set
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The POP health set monitors the overall health and availability of the Microsoft Exchange POP3 service and POP3 client connectivity. The POP health set is closely related to the following health sets:
 

@@ -11,7 +11,7 @@ title: Recover Exchange server, recover lost Exchange Server, Lost Exchange Serv
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

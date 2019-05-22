@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Every day, information workers exchange sensitive information by email, including financial reports and data, customer and employee information, and confidential product information and specifications. In Microsoft Exchange Server 2013, Microsoft Outlook, and Microsoft Office Outlook Web App, users can apply Information Rights Management (IRM) protection to messages by applying an Active Directory Rights Management Services (AD RMS) rights policy template. This requires an AD RMS deployment in the organization. For more information about AD RMS, see [Active Directory Rights Management Services](https://go.microsoft.com/fwlink/p/?linkid=129823).
 

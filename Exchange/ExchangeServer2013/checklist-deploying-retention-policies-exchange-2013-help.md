@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Checklist: Deploying retention policies
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Use this checklist to deploy retention policies in your Microsoft Exchange Server 2013 organization. Before you start working with this checklist, make sure you're familiar with the concepts in the following topics:
 

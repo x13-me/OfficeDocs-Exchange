@@ -11,7 +11,7 @@ title: View statistics for public folders and public folder items
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

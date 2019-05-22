@@ -12,7 +12,7 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 description: 'Summary: Instructions for enabling on-premises Exchange Server users to access public folders in Exchange Online.'
-ms.audience: ITPro
+audience: ITPro
 title: Configure Exchange Online public folders for a hybrid deployment
 
 ---

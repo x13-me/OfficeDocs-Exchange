@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 **Summary:** Use the procedures in this article to simplify the URL that your organization users to access OWA in Exchange 2013.
 
