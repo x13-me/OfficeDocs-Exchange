@@ -10,7 +10,7 @@ ms.collection: exchange-server
 ms.date:
 ms.reviewer: 
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 title: Address lists in Exchange Server
 
 ---

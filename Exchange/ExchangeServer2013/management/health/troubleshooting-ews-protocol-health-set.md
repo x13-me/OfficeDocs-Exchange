@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting EWS.Protocol Health Set
 
-_**Applies to:** Exchange Server 2013, Project Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The EWS.Protocol health set monitors the Exchange Web Services (EWS) communications protocol on the Mailbox server. The EWS.Protocol health set is closely related to the following health sets:
 

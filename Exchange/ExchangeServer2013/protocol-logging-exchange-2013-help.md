@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Protocol logging records the SMTP conversations that occur between messaging servers as part of message delivery. These SMTP conversations occur on Send connectors and Receive connectors that exist in the Front End Transport service on Client Access servers, the Transport service on Mailbox servers, and the Mailbox Transport service on Mailbox servers. You can use protocol logging to diagnose mail flow problems.
 

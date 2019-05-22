@@ -1,6 +1,6 @@
 ---
-title: 'Mail flow rule conditions and exceptions (predicates) in Exchange 2013'
-TOCTitle: Mail flow rule conditions and exceptions (predicates)
+title: 'Transport rule conditions and exceptions (predicates) in Exchange 2013'
+TOCTitle: Transport rule conditions and exceptions (predicates)
 ms:assetid: c918ea00-1e68-4b8b-8d51-6966b4432e2d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dd638183(v=EXCHG.150)
 ms:contentKeyID: 49361079
@@ -12,23 +12,23 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Mail flow rule conditions and exceptions (predicates) in Exchange 2013
+# Transport rule conditions and exceptions (predicates) in Exchange 2013
 
  
 
 _**Applies to:** Exchange Server 2013_
 
-Conditions and exceptions in mail flow rules (also known as transport rules) identify the messages that the rule is applied to or not applied to. For example, if the rule adds a disclaimer to messages, you can configure the rule to only apply to messages that contain specific words, messages sent by specific users, or to all messages except those sent by the members of a specific group. Collectively, the conditions and exceptions in mail flow rules are also known as *predicates*, because for every condition, there's a corresponding exception that uses the exact same settings and syntax. The only difference is conditions specify messages to include, while exceptions specify messages to exclude.
+Conditions and exceptions in transport rules identify the messages that the rule is applied to or not applied to. For example, if the rule adds a disclaimer to messages, you can configure the rule to only apply to messages that contain specific words, messages sent by specific users, or to all messages except those sent by the members of a specific group. Collectively, the conditions and exceptions in transport rules are also known as *predicates*, because for every condition, there's a corresponding exception that uses the exact same settings and syntax. The only difference is conditions specify messages to include, while exceptions specify messages to exclude.
 
 Most conditions and exceptions have one property that requires one or more values. For example, the **The sender is** condition requires the sender of the message. Some conditions have two properties. For example, the **A message header includes any of these words** condition requires one property to specify the message header field, and a second property to specify the text to look for in the header field. Some conditions or exceptions don't have any properties. For example, the **Any attachment has executable content** condition simply looks for attachments in messages that have executable content.
 
-For more information about mail flow rules in Exchange Server 2013, see [Mail flow rules (transport rules) in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
+For more information about transport rules in Exchange Server 2013, see [Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 
-For more information about conditions and exceptions in mail flow rules in Exchange Online Protection or Exchange Online, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919235\(v=exchg.150\)) or [Mail flow rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/en-us/library/jj919234\(v=exchg.150\)).
+For more information about conditions and exceptions in transport rules in Exchange Online Protection or Exchange Online, see [Transport rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919235\(v=exchg.150\)) or [Transport rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/en-us/library/jj919234\(v=exchg.150\)).
 
-## Conditions and exceptions for mail flow rules on Mailbox servers
+## Conditions and exceptions for transport rules on Mailbox servers
 
-The tables in the following sections describe the conditions and exceptions that are available in mail flow rules on Mailbox servers. The properties types are described in the Property types section.
+The tables in the following sections describe the conditions and exceptions that are available in transport rules on Mailbox servers. The properties types are described in the Property types section.
 
 Senders
 
@@ -62,7 +62,7 @@ For conditions and exceptions that examine the sender's address, you can specify
 
 In the EAC, in the **Properties of this rule** section, click **Match sender address in message**. Note that you might need to click **More options** to see this setting. In the Exchange Management Shell, the parameter is *SenderAddressLocation*. The available values are:
 
-  - **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value, and is the way mail flow rules worked before Exchange 2013 Cumulative Update 1 (CU1).
+  - **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value, and is the way transport rules worked before Exchange 2013 Cumulative Update 1 (CU1).
 
   - **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field). Note that message envelope searching is only available for the following conditions (and the corresponding exceptions):
 
@@ -365,7 +365,7 @@ Return to top
 
 ## Attachments
 
-For more information about how mail flow rules inspect message attachments, see [Use transport rules to inspect message attachments in Exchange 2013](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md).
+For more information about how transport rules inspect message attachments, see [Use transport rules to inspect message attachments in Exchange 2013](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md).
 
 <table>
 <colgroup>
@@ -481,7 +481,7 @@ If you add a recipient condition from this section, that same message is rejecte
 
 Conversely, a recipient exception from this section *prevents* the rule action from being applied to *all* recipients of the message, not just for the detected recipients.
 
-**Note:** This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.
+**Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.
 
 <table>
 <colgroup>
@@ -528,7 +528,7 @@ Return to top
 
 The conditions in this section that look for values in the **To** and **Cc** fields behave like the conditions in the Any recipients section (*all* recipients of the message are affected by the rule, not just the detected recipients).
 
-**Note:** This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.
+**Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.
 
 <table>
 <colgroup>
@@ -620,7 +620,7 @@ The conditions in this section that look for values in the **To** and **Cc** fie
 <td><p><code>Size</code></p></td>
 <td><p>Messages where the total size (message plus attachments) is greater than or equal to the specified value.</p>
 <p>In the EAC, you can only specify the size in kilobytes (KB).</p>
-<p><strong>Note:</strong> Message size limits on mailboxes are evaluated before mail flow rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.</p></td>
+<p><strong>Note:</strong> Message size limits on mailboxes are evaluated before transport rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.</p></td>
 <td><p>Exchange 2013 or later</p></td>
 </tr>
 <tr class="odd">
@@ -825,9 +825,9 @@ Return to top
 
 Return to top
 
-## Conditions and exceptions for mail flow rules on Edge Transport servers
+## Conditions and exceptions for transport rules on Edge Transport servers
 
-The conditions and exceptions that are available in mail flow rules on Edge Transport servers are a small subset of what's available on Mailbox servers. There's no EAC on Edge Transport servers, so you can only manage mail flow rules in the Exchange Management Shell on the local Edge Transport server. The conditions and exceptions are described in the following table. The properties types are described in the Property types section.
+The conditions and exceptions that are available in transport rules on Edge Transport servers are a small subset of what's available on Mailbox servers. There's no EAC on Edge Transport servers, so you can only manage transport rules in the Exchange Management Shell on the local Edge Transport server. The conditions and exceptions are described in the following table. The properties types are described in the Property types section.
 
 <table>
 <colgroup>
@@ -1186,12 +1186,12 @@ Return to top
 
 ## For more information
 
-[Mail flow rules (transport rules) in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
+[Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 
-[Mail flow rule actions in Exchange 2013](mail-flow-rule-actions-in-exchange-2013-exchange-2013-help.md)
+[Transport rule actions in Exchange 2013](mail-flow-rule-actions-in-exchange-2013-exchange-2013-help.md)
 
-[Mail flow rule procedures in Exchange 2013](mail-flow-or-transport-rule-procedures-exchange-2013-help.md)
+[Transport rule procedures in Exchange 2013](mail-flow-or-transport-rule-procedures-exchange-2013-help.md)
 
-[Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919235\(v=exchg.150\)) for Exchange Online
+[Transport rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919235\(v=exchg.150\)) for Exchange Online
 
-[Mail flow rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/en-us/library/jj919234\(v=exchg.150\)) for Exchange Online Protection
+[Transport rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/en-us/library/jj919234\(v=exchg.150\)) for Exchange Online Protection

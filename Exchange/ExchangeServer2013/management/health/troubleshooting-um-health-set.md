@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting UM Health Set
 
-_**Applies to:**: Exchange Server 2013, Project Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The Unified Messaging (UM) health set monitors the overall health of the UM service in your organization.
 

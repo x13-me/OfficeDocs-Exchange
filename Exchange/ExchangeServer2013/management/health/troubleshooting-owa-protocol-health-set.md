@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting OWA.Protocol Health Set
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The OWA.Protocol health set monitors the Outlook Web App protocol on the Mailbox server.
 

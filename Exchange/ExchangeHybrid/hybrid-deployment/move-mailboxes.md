@@ -3,7 +3,7 @@ title: "Move mailboxes between on-premises and Exchange Online organizations in 
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 f1_keywords:
 - 'O365E_HRCMoveRequest_FL312271'

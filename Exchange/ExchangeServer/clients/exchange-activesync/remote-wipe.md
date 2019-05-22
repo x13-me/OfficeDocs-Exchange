@@ -9,7 +9,7 @@ ms.date: 7/5/2018
 ms.reviewer: 
 title: Perform a remote wipe on a mobile phone
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

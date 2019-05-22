@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # An incompatible operating system was found
 
-_**Applies to:** Exchange Server_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because it detected an incompatible operating system. You must install a compatible operating system on this computer before you install Exchange 2013. The following table shows the operating systems that are compatible with Exchange 2013.
 

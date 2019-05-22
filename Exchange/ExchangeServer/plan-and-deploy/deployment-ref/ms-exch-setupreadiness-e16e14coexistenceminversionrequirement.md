@@ -12,7 +12,7 @@ ms.date: 9/15/2015
 ms.reviewer: 
 title: Exchange 2010 SP3 RU11 or later is required for coexistence with Exchange 2016 [E16E14CoexistenceMinVersionRequirement]
 ms.collection: exchange-server
-ms.audience: Developer
+audience: Developer
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

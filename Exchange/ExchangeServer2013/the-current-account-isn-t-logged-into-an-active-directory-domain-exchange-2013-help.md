@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server_
+_**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 Setup can't continue because it detected that the current account isn't logged on to an Active Directory domain. You must log in using an Active Directory account that has the permissions required to install Exchange Server 2013.
 

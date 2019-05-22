@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 When you install Microsoft Exchange Server 2013 into an existing Microsoft Exchange Server 2010 or Microsoft Exchange Server 2007 organization, you need to understand how permissions will work in the new organization. Read the section below that applies to your organization.
 

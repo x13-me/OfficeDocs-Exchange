@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013, Exchange Server 2016_
+_**Applies to:** Exchange Server 2013_
 
 If the content of a public folder mailbox begins to exceed your mailbox quotas, you may need to move public folders to a different public folder mailbox. There are a couple ways to do this. To move one or more public folders that don't contain subfolders, you can use the **PublicFolderMoveRequest** cmdlets. If you need to move an entire public folder branch (which includes the parent public folder and all subfolders), you can use the `Move-PublicFolderBranch.ps1` script that's available when you install Exchange 2013.
 

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The `UM Prompts` management role enables administrators to create and manage custom Unified Messaging voice prompts in an organization.
 

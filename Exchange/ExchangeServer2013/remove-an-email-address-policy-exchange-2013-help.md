@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 By default, Exchange contains an email address policy that specifies the recipient's alias as the local part of the email address and uses the default accepted domain. The local part of an email address is the name that appears before the "at" sign (@).This email address policy applies to all users in the organization. You can't remove this email address policy.
 

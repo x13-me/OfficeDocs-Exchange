@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: 10/12/2018
 ms.reviewer: 
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Priority

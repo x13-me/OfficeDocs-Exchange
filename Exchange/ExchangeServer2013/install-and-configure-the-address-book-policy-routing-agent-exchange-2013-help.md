@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The Address Book Policy Routing agent is a Transport agent that runs on the Mailbox server that controls how recipients are resolved in your organization. When the ABP Routing agent is installed and configured, users that are assigned to different GALs appear as external recipients in that they can't view external recipients' contact cards.
 

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Recipient filtering is an anti-spam feature in Microsoft Exchange Server 2013 that relies on the RCPT TO SMTP header to determine what action, if any, to take on an inbound message. Recipient filtering is performed by the Recipient Filter agent.
 

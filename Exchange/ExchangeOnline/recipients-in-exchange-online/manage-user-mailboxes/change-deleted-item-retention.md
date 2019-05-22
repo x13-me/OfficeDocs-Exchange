@@ -11,7 +11,7 @@ title: Change how long permanently deleted items are kept for an Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

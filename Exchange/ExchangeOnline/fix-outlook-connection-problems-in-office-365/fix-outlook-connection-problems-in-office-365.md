@@ -18,7 +18,7 @@ search.appverid:
 - ZOL140
 - ZOL150
 - ZOL160
-ms.audience: Admin
+audience: Admin
 ms.custom: MiniMaven
 keywords:
 - fix outlook

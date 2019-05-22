@@ -11,7 +11,7 @@ title: Configure certificate based authentication in Exchange 2016
 ms.collection:
 - Strat_EX_Admin
 - exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

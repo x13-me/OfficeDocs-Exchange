@@ -8,7 +8,7 @@ ms.date: 07/23/2018
 title: Exchange Solution Reviewed Program (ESRP) Storage
 ms.collection: exchange-server
 ms.reviewer: mattgos
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

@@ -9,7 +9,7 @@ ms.date: 7/6/2018
 ms.reviewer: 
 title: Set up public folders in a new organization
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

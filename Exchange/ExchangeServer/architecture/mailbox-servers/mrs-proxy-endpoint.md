@@ -10,7 +10,7 @@ ms.collection: exchange-server
 ms.date: 7/3/2018
 ms.reviewer: 
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 title: Enable the MRS Proxy endpoint for remote moves
 
 ---

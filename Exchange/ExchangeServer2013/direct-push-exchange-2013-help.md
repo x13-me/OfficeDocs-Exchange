@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Direct Push is a feature that's built into Microsoft Exchange Server 2013. Direct Push keeps a mobile device current over a cellular or wireless network connection. It notifies the mobile device when new content is ready to be synchronized.
 

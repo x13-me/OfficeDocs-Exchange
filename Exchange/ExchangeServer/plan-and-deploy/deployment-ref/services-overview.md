@@ -9,7 +9,7 @@ ms.date: 7/31/2018
 ms.reviewer: 
 title: Overview of Exchange services on Exchange servers
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

@@ -14,7 +14,7 @@ mtps_version: v=EXCHG.150
 
 # Troubleshooting UM.Protocol Health Set
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 The UM.Protocol health set monitors the Unified Messaging (UM) protocol on the Mailbox server.
 

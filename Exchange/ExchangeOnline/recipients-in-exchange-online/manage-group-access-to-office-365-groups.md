@@ -11,7 +11,7 @@ title: Allow/Block guest access to Office 365 groups
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 ---
 

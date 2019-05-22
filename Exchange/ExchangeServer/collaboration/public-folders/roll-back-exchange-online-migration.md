@@ -10,7 +10,7 @@ ms.collection: exchange-server
 ms.date: 6/8/2018
 ms.reviewer: 
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 title: Roll back a public folder migration from Exchange Server to Exchange Online
 
 ---

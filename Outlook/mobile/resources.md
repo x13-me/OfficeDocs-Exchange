@@ -3,7 +3,7 @@ title: "Plan, deliver, and adopt Outlook for iOS and Android in your organizatio
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.prod: outlook
 ms.topic: get-started-article
 localization_priority: Normal

@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Sender filtering relies on the MAIL FROM: SMTP header to determine what action, if any, to take on an inbound email message. Sender filtering is provided by the Sender Filter agent.
 

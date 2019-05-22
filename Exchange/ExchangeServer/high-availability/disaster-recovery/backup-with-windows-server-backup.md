@@ -9,7 +9,7 @@ ms.date: 6/4/2018
 ms.reviewer: 
 title: Use Windows Server Backup to back up Exchange
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.prod: exchange-server-it-pro
 manager: dansimp
 

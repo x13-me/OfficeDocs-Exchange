@@ -3,7 +3,7 @@ title: "Hybrid Configuration wizard FAQs"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

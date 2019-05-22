@@ -9,7 +9,7 @@ ms.date: 3/5/2018
 ms.reviewer: 
 title: Telephone system integration with UM
 ms.collection: exchange-online
-ms.audience: ITPro
+audience: ITPro
 ms.service: exchange-online
 manager: dansimp
 

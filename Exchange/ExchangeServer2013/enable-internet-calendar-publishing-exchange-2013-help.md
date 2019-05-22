@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:** Exchange Online, Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 **Summary:** Use these procedures to enable OWA users in your Exchange 2013 organization to share calendar free/busy information with external organizations.
 

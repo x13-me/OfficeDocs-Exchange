@@ -8,7 +8,7 @@ ms.assetid: 1879fd5e-3d63-4264-9cc2-9c050c6ab3c5
 monikerRange: exchserver-2016 || exchserver-2019
 title: Release notes for Exchange Server
 ms.collection: exchange-server
-ms.audience: ITPro
+audience: ITPro
 ms.date: 6/8/2018
 ms.reviewer: 
 ms.prod: exchange-server-it-pro

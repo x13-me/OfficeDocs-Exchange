@@ -4,7 +4,7 @@ ms.author: danbrown
 author: DHB-MSFT
 ms.reviewer: 
 manager: dansimp
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.prod: exchange-server-it-pro
 localization_priority: Normal

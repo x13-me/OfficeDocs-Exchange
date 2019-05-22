@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 In Exchange 2010, the Microsoft Exchange system mailbox is an arbitration mailbox used to store organization-wide data such as administrator audit logs, metadata for eDiscovery searches, and Unified Messaging data, such as menus, dial plans, and custom greetings. The Microsoft Exchange system mailbox is named **SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}**; the display name is **Microsoft Exchange**.
 

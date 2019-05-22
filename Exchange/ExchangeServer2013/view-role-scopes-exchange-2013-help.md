@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Management role scopes determine what objects are made available to a user so that the objects can be changed using the cmdlets and parameters assigned to them. You can view scopes to determine what scopes have been added to your organization, the configuration of a specific scope, or what scopes are orphans.
 

@@ -14,23 +14,9 @@ mtps_version: v=EXCHG.150
 
 # Disjoint namespace scenarios
 
- 
-
 _**Applies to:** Exchange Server 2013_
 
 This topic provides information about the concept of disjoint namespaces and the supported scenarios for deploying Microsoft Exchange 2013 in a domain that has a disjoint namespace.
-
-**Contents**
-
-DNS and NetBIOS domain names
-
-Disjoint namespaces
-
-Exchange 2013 and disjoint namespaces
-
-Allow Exchange 2013 servers to access domain controllers that are disjoint
-
-View DNS and NetBIOS name-related information of a computer running Windows Server 2008
 
 ## DNS and NetBIOS domain names
 

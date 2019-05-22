@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
  
 
-_**Applies to:**: Exchange Server 2013_
+_**Applies to:** Exchange Server 2013_
 
 Management roles can be listed in a variety of ways, depending on the information you want. For example, you can choose to return only roles of a specific role type, roles that contain only specific cmdlets and parameters, or view the details of a specific management role. For more information about management roles in Microsoft Exchange Server 2013, see [Understanding management roles](understanding-management-roles-exchange-2013-help.md).
 
